@@ -1,0 +1,56 @@
+{
+  "_comment": "Standards-manual publication manifest. A manual goes LIVE (download + Scholar/DOI metadata) only when status == 'published' AND its PDF exists at data/manuals/<pdf>. 'pending_refresh' = the manual exists but predates a values change (the 2026-06-20 round-DOWN rounding rule and/or an open adjudication like the seaweed iAs hold) and must be REGENERATED with current values + defensibility-audited before publishing. Publishing a stale/contaminated standard on the indexed cert site is a Daubert self-harm (a defective number is multiplied by the transparent-derivation posture). Flip to 'published' is a one-line edit after regen+audit.",
+  "publisher": "Heavy Metal Tested & Certified, Paleo Foundation",
+  "manuals": [
+    {
+      "category": 6,
+      "title": "Seafood",
+      "slug": "seafood",
+      "edition": "2026",
+      "pdf": "HMTc-Seafood-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Firm cap-bound cells defensible (fish-marine-predatory Cd 50 / tHg 1000), but the manual predates the seaweed iAs hold — it likely still prints the iAs 2000 incomplete-pool artifact. Regenerate with current catalog (seaweed iAs held) before publishing."
+    },
+    {
+      "category": 30,
+      "title": "Culinary Oils and Fats",
+      "slug": "culinary-oils-and-fats",
+      "edition": "2026",
+      "pdf": "HMTc-Culinary-Oils-and-Fats-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Predates the round-DOWN rule + olive-oil clean/dirty adjudication. Regenerate + audit."
+    },
+    {
+      "category": 30,
+      "title": "Butter and Ghee",
+      "slug": "butter-and-ghee",
+      "edition": "2026",
+      "pdf": "HMTc-Butter-and-Ghee-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Predates the round-DOWN rule. Regenerate + audit (check for any literature-baseline values affected by rounding)."
+    },
+    {
+      "category": 34,
+      "title": "Herbs, Spices and Salt",
+      "slug": "herbs-spices-and-salt",
+      "edition": "2026",
+      "pdf": "HMTc-Herbs-Spices-and-Salt-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Spices Pb=600 is firm/cap-bound (defensible), but salt is still a Gate-1 hold (sea/rock/refined geology unresolved) — the manual may print provisional salt values. Regenerate after the salt adjudication."
+    },
+    {
+      "category": 0,
+      "title": "HMTc Program Manual (master)",
+      "slug": "program-manual",
+      "edition": "2026-v0",
+      "pdf": "HMTc-Program-Manual-2026-v0.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "v0 master volume; aggregates category chapters. Regenerate after the per-category manuals are refreshed."
+    }
+  ]
+}

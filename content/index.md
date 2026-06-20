@@ -14,6 +14,7 @@ The standard is set against the **complete** heavy-metals food-and-supply-chain 
 ## Start here
 
 - **[The Standards](standards/)** — published per subcategory, in each product's native basis, the moment it is defensibly ready. The live completeness ledger shows exactly how far the standard reaches today.
+- **[Program Manuals](manuals/)** — each category's full standard as a citable, downloadable PDF edition, published as it becomes ready.
 - **[Program Structure](program/structure)** — how a limit is set: the two pathways (clean and dirty), the native-basis pooling, the regulatory cap, and the five gates every analyte clears before it publishes.
 - **[Standards Briefings](briefings/)** — ten analytical briefings on what HMTc is, why four metals is no longer enough, what *Palmquist* changed, and the cost of staying uncertified.
 - **[Articles](articles/)** — analysis grounded in the independent literature index.
