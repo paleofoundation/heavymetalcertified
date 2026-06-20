@@ -1,0 +1,117 @@
+@use "../../styles/variables.scss" as *;
+
+.page-listing > p {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+ul.section-ul {
+  display: grid;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding-left: 0;
+}
+
+li.section-li {
+  margin: 0;
+
+  & > .section {
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-xs);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 1rem 1.1rem;
+    transition:
+      border-color var(--duration-fast) var(--ease-out),
+      box-shadow var(--duration-fast) var(--ease-out),
+      transform var(--duration-fast) var(--ease-out);
+  }
+
+  & > .section:hover {
+    border-color: var(--color-primary-200);
+    box-shadow: var(--shadow-sm);
+  }
+
+  & .desc {
+    min-width: 0;
+  }
+
+  & .desc > h3 {
+    font-size: 1.02rem;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  & .desc > h3 > a {
+    background-color: transparent;
+    border-bottom: 0;
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+  & .desc > h3 > a:hover {
+    color: var(--secondary);
+  }
+
+  & .summary {
+    color: var(--darkgray);
+    display: -webkit-box;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0.45rem 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  & .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.75rem 0 0;
+  }
+
+  & .meta > span {
+    background: var(--highlight);
+    border: 1px solid var(--color-primary-200);
+    border-radius: 999px;
+    color: var(--secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 0.22rem 0.48rem;
+  }
+
+  & > .section > .tags {
+    align-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  @media all and ($mobile) {
+    & > .section {
+      display: block;
+    }
+
+    & > .section > .tags {
+      display: none;
+    }
+  }
+}
+
+// modifications in popover context
+.popover .section {
+  display: block !important;
+
+  & > .tags {
+    display: none;
+  }
+}

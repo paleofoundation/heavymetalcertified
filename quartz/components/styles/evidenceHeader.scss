@@ -1,0 +1,80 @@
+.hmi-evidence-header {
+  margin: 0 0 1.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--lightgray);
+  border-left: 3px solid var(--secondary);
+  border-radius: 8px;
+  background: var(--highlight);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hmi-evidence-inline {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.hmi-evidence-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.65rem;
+}
+
+.hmi-evidence-key {
+  flex: 0 0 auto;
+  min-width: 7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.hmi-evidence-value {
+  color: var(--darkgray);
+}
+
+.hmi-evidence-value a,
+.hmi-evidence-inline a {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.hmi-evidence-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.hmi-evidence-badge {
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  color: var(--dark);
+}
+
+.hmi-evidence-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+}
+
+.hmi-evidence-links a {
+  font-family: var(--codeFont);
+  font-size: 0.78rem;
+  color: var(--secondary);
+  border-bottom: 1px dotted var(--secondary);
+  text-decoration: none;
+}
+
+.hmi-evidence-links a:hover {
+  background: var(--highlight);
+}

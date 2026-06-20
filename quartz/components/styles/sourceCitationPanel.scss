@@ -1,0 +1,49 @@
+.hmi-source-citation-panel {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 26%, var(--lightgray));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--light) 88%, var(--secondary) 12%);
+}
+
+.hmi-source-citation-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hmi-source-citation-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin: 0;
+
+  > div {
+    min-width: 0;
+  }
+
+  dt {
+    margin: 0 0 0.15rem;
+    color: var(--gray);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--dark);
+    font-size: 0.92rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .hmi-source-citation-facts {
+    grid-template-columns: 1fr;
+  }
+}

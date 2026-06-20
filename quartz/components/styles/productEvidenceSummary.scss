@@ -1,0 +1,201 @@
+.hmi-product-brief {
+  background: linear-gradient(180deg, var(--color-primary-50), rgba(255, 255, 255, 0.72));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin: 1.1rem 0 1.6rem;
+  padding: 1.25rem;
+}
+
+.hmi-product-brief-kicker {
+  color: var(--secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+
+.hmi-product-brief-kicker span + span::before {
+  color: var(--color-primary-300);
+  content: "/";
+  margin-right: 0.7rem;
+}
+
+.hmi-product-brief-grid {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.85fr);
+}
+
+.hmi-product-brief-main h2 {
+  color: var(--dark);
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 0 0 0.55rem;
+}
+
+.hmi-product-brief-main p {
+  color: var(--darkgray);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.hmi-product-brief-main p + p {
+  margin-top: 0.8rem;
+}
+
+.hmi-product-standards-note {
+  border-left: 3px solid var(--secondary);
+  padding-left: 0.85rem;
+}
+
+.hmi-product-facts {
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(139, 42, 74, 0.12);
+  border-radius: var(--radius-sm);
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+}
+
+.hmi-product-facts div {
+  border-bottom: 1px solid rgba(139, 42, 74, 0.12);
+  padding: 0.58rem 0;
+}
+
+.hmi-product-facts div:last-child {
+  border-bottom: 0;
+}
+
+.hmi-product-facts dt {
+  color: var(--gray);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.18rem;
+  text-transform: uppercase;
+}
+
+.hmi-product-facts dd {
+  color: var(--dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.hmi-product-chip-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.hmi-product-chip-group-muted {
+  margin-top: 0.55rem;
+}
+
+.hmi-product-chip-label {
+  color: var(--gray);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-right: 0.2rem;
+  text-transform: uppercase;
+}
+
+.hmi-product-chip {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(139, 42, 74, 0.18);
+  border-radius: 999px;
+  color: var(--darkgray);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.42rem 0.56rem;
+}
+
+.hmi-product-chip-group-muted .hmi-product-chip {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.hmi-product-brief-links {
+  border-top: 1px solid rgba(139, 42, 74, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.7rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.hmi-product-brief-links a {
+  background: rgba(139, 42, 74, 0.06);
+  border: 1px solid rgba(139, 42, 74, 0.18);
+  border-radius: var(--radius-sm);
+  color: var(--secondary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.55rem 0.7rem;
+}
+
+.hmi-product-brief-links a:hover {
+  background: rgba(139, 42, 74, 0.1);
+}
+
+body[data-slug^="products/"] article > p:first-of-type {
+  font-size: 1.02rem;
+  line-height: 1.62;
+}
+
+@media all and (min-width: 1200px) {
+  body[data-slug^="products/"] #quartz-root {
+    max-width: 1680px;
+  }
+
+  body[data-slug^="products/"] #quartz-root > #quartz-body {
+    column-gap: 1.75rem;
+    grid-template-columns: 310px minmax(0, 930px) 260px;
+  }
+}
+
+body[data-slug^="products/"] article h2 {
+  border-top: 1px solid var(--lightgray);
+  font-size: 1.45rem;
+  margin-top: 2.2rem;
+  padding-top: 1.25rem;
+}
+
+body[data-slug^="products/"] article table th,
+body[data-slug^="products/"] article table td {
+  font-size: 0.78rem;
+  line-height: 1.48;
+  padding-left: 0.55rem;
+  padding-right: 0.55rem;
+}
+
+@media all and (max-width: 900px) {
+  .hmi-product-brief-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .hmi-product-brief {
+    padding: 1rem;
+  }
+
+  .hmi-product-brief-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
