@@ -29,7 +29,7 @@ HMTc standard for **Shellfish (shrimp, crab, lobster, clams, oysters, mussels)**
 |---|---|---|---|---|---|
 | Pb | yes | — | as sold | READY FOR REVIEW (regulatory cap applies); distinct_sources=16; sens_band=stable; classi… | in development |
 | tAs | — | — | — | — | not in scope |
-| iAs | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| iAs | yes | — | as sold | PROVISIONAL: sensitivity unstable across parametric assumptions; distinct_sources=4; sen… | in development |
 | Cd | yes | — | as sold | READY FOR REVIEW (regulatory cap applies); distinct_sources=18; sens_band=stable; classi… | in development |
 | tHg | — | — | — | — | not in scope |
 | MeHg | — | — | — | — | not in scope |

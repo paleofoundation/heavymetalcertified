@@ -1,6 +1,6 @@
 ---
 title: "Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products) — HMTc Standard"
-type: standard
+type: standard-in-development
 category: 6
 category_name: "Seafood"
 product_slug: seaweed-kelp-foods
@@ -10,7 +10,7 @@ methodology_version: "HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Govern
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/seaweed-kelp-foods
 effective_date: 2026-06-20
-scholar_eligible: true
+scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 ---
 # Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products)
@@ -29,8 +29,8 @@ HMTc standard for **Seaweed/kelp foods (nori, wakame, kombu, dulse — as food p
 |---|---|---|---|---|---|
 | Pb | — | — | — | — | not in scope |
 | tAs | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
-| iAs | yes | **2000 ppb** (261.3 ppb prepared for feeding) | as sold | literature-baseline | published |
-| Cd | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| iAs | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| Cd | yes | — | as sold | READY FOR REVIEW; distinct_sources=5; sens_band=stable; classify=resolved/firm | in development |
 | tHg | — | — | — | — | not in scope |
 | MeHg | — | — | — | — | not in scope |
 | Ni | — | — | — | — | not in scope |
@@ -42,9 +42,11 @@ HMTc standard for **Seaweed/kelp foods (nori, wakame, kombu, dulse — as food p
 
 This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte.
 
-- **Published (firm limit in force):** iAs
-- **In scope, in development (no firm limit yet):** tAs, Cd
+- **Published (firm limit in force):** none yet
+- **In scope, in development (no firm limit yet):** tAs, iAs, Cd
 - **Out of scope for this subcategory:** Pb, tHg, MeHg, Ni, Cr-VI, Sn, Al
+
+> **Status: in development.** No analyte in this subcategory has cleared all five shipping gates yet. This page reports the current evidence state honestly; it is not yet a published standard. See [Program Structure](../program/structure) for how a subcategory reaches publication.
 
 ---
 

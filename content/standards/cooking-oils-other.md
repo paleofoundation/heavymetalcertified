@@ -30,7 +30,7 @@ HMTc standard for **Other cooking oils (canola, sunflower, coconut, avocado, ses
 | Pb | yes | — | as sold | PROVISIONAL: review sensitivity disagreement; distinct_sources=13; sens_band=provisional… | in development |
 | tAs | — | — | — | — | not in scope |
 | iAs | — | — | — | — | not in scope |
-| Cd | yes | — | as sold | PROVISIONAL: review sensitivity disagreement; distinct_sources=12; sens_band=provisional… | in development |
+| Cd | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
 | tHg | — | — | — | — | not in scope |
 | MeHg | — | — | — | — | not in scope |
 | Ni | yes | — | as sold | READY FOR REVIEW; distinct_sources=5; sens_band=stable; classify=resolved/firm | in development |

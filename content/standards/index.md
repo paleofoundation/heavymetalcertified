@@ -11,20 +11,20 @@ The Heavy Metal Tested & Certified (HMTc) standard is published **per subcategor
 - **Methodology:** HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)
 - **Standard version:** 2.2 (2026-06-09)
 - **Analyte panel (10):** Pb, tAs, iAs, Cd, tHg, MeHg, Ni, Cr-VI, Sn, Al
-- **Published today:** 3 firm analyte limits across 2 subcategories of 16 locked. The standard widens as the evidence base and governance review clear more cells.
+- **Published today:** 3 firm analyte limits across 2 subcategories of 15 locked. The standard widens as the evidence base and governance review clear more cells.
 
 ## Completeness by category
 
 | Category | Subcategories locked | Published | Progress |
 |---|---|---|---|
 | Grains, Cereals, and Rice Products (cat 3) | 2/12 | 0 | 0 of 12 subcategories published |
-| Seafood (cat 6) | 6/6 | 2 | 2 of 6 subcategories published |
+| Seafood (cat 6) | 5/6 | 1 | 1 of 6 subcategories published |
 | Dairy and Milk Products (cat 24) | 1/9 | 0 | 0 of 9 subcategories published |
 | Culinary Oils and Fats (cat 30) | 2/2 | 0 | 0 of 2 subcategories published |
 | Sweeteners and Syrups (cat 31) | 1/4 | 0 | 0 of 4 subcategories published |
 | Condiments, Sauces and Dressings (cat 32) | 1/5 | 0 | 0 of 5 subcategories published |
 | Chocolate, Cocoa and Confectionery (cat 33) | 1/3 | 0 | 0 of 3 subcategories published |
-| Herbs, Spices, Seasonings and Salt (cat 34) | 2/4 | 0 | 0 of 4 subcategories published |
+| Herbs, Spices, Seasonings and Salt (cat 34) | 2/4 | 1 | 1 of 4 subcategories published |
 
 ## Subcategory standards
 
@@ -39,8 +39,7 @@ The Heavy Metal Tested & Certified (HMTc) standard is published **per subcategor
 - [Fish — marine, non-predatory (sardines, anchovies, salmon, cod)](fish-marine-non-predatory) — in development
 - [Fish — marine, predatory (tuna, swordfish, shark, king mackerel)](fish-marine-predatory) — **2 published**
 - [Shellfish (shrimp, crab, lobster, clams, oysters, mussels)](shellfish) — in development
-- [Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products)](seaweed-kelp-foods) — **1 published**
-- [Canned seafood (with tin flag)](canned-seafood) — in development
+- [Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products)](seaweed-kelp-foods) — in development
 
 ### Dairy and Milk Products
 
@@ -65,7 +64,7 @@ The Heavy Metal Tested & Certified (HMTc) standard is published **per subcategor
 
 ### Herbs, Spices, Seasonings and Salt
 
-- [Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, oregano, cumin, chili powder, pepper)](spices) — in development
+- [Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, oregano, cumin, chili powder, pepper)](spices) — **1 published**
 - [Salt (table, sea, Himalayan)](salt) — in development
 
 ---

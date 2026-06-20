@@ -28,12 +28,12 @@ HMTc standard for **Olive oil** (Culinary Oils and Fats, category 30). Values ar
 | Analyte | In scope | Limit (native basis) | Basis | Rationale | Status |
 |---|---|---|---|---|---|
 | Pb | yes | — | as sold | READY FOR REVIEW (regulatory cap applies); distinct_sources=5; sens_band=stable; classif… | in development |
-| tAs | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| tAs | yes | — | as sold | PROVISIONAL: review sensitivity disagreement; distinct_sources=4; sens_band=provisional;… | in development |
 | iAs | — | — | — | — | not in scope |
 | Cd | yes | — | as sold | PROVISIONAL: review sensitivity disagreement; distinct_sources=2; sens_band=provisional;… | in development |
 | tHg | — | — | — | — | not in scope |
 | MeHg | — | — | — | — | not in scope |
-| Ni | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| Ni | yes | — | as sold | READY FOR REVIEW; distinct_sources=7; sens_band=stable; classify=resolved/firm | in development |
 | Cr-VI | — | — | — | — | not in scope |
 | Sn | — | — | — | — | not in scope |
 | Al | — | — | — | — | not in scope |

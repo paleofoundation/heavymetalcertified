@@ -1,6 +1,6 @@
 ---
 title: "Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, oregano, cumin, chili powder, pepper) — HMTc Standard"
-type: standard-in-development
+type: standard
 category: 34
 category_name: "Herbs, Spices, Seasonings and Salt"
 product_slug: spices
@@ -10,7 +10,7 @@ methodology_version: "HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Govern
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/spices
 effective_date: 2026-06-20
-scholar_eligible: false
+scholar_eligible: true
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 ---
 # Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, oregano, cumin, chili powder, pepper)
@@ -27,10 +27,10 @@ HMTc standard for **Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, 
 
 | Analyte | In scope | Limit (native basis) | Basis | Rationale | Status |
 |---|---|---|---|---|---|
-| Pb | yes | — | as sold | outlier-adjudication pending (held provisional until adjudicated) | in development |
+| Pb | yes | **600 ppb** (85.71 ppb prepared for feeding) | as sold | regulatory-alignment — cap: eu2023_pb_spice_fruit_600 | published |
 | tAs | yes | — | as sold | PROVISIONAL: review sensitivity disagreement; distinct_sources=12; sens_band=provisional… | in development |
 | iAs | — | — | — | — | not in scope |
-| Cd | yes | — | as sold | BLOCKED: pool internally inconsistent (p95/p10 > 1e4, likely mixed units — fix units bef… | in development |
+| Cd | yes | — | as sold | READY FOR REVIEW; distinct_sources=20; sens_band=stable; classify=resolved/firm | in development |
 | tHg | — | — | — | — | not in scope |
 | MeHg | — | — | — | — | not in scope |
 | Ni | — | — | — | — | not in scope |
@@ -42,11 +42,9 @@ HMTc standard for **Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, 
 
 This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte.
 
-- **Published (firm limit in force):** none yet
-- **In scope, in development (no firm limit yet):** Pb, tAs, Cd
+- **Published (firm limit in force):** Pb
+- **In scope, in development (no firm limit yet):** tAs, Cd
 - **Out of scope for this subcategory:** iAs, tHg, MeHg, Ni, Cr-VI, Sn, Al
-
-> **Status: in development.** No analyte in this subcategory has cleared all five shipping gates yet. This page reports the current evidence state honestly; it is not yet a published standard. See [Program Structure](../program/structure) for how a subcategory reaches publication.
 
 ---
 

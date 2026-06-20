@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-06-18T13:02:09.215Z",
-  "generated_commit": "befc1c2d17c5639bb5e9fff0418e885ef0072844",
+  "generated_at": "2026-06-20T15:16:38.987Z",
+  "generated_commit": "76732e87e627e02659deb75a00c8cad2dedbde0a",
   "methodology_version": "HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)",
   "standard_version": "2.2 (2026-06-09)",
   "panel": [
@@ -31,9 +31,9 @@
       "category": 6,
       "category_name": "Seafood",
       "subcategories_total": 6,
-      "subcategories_locked": 6,
-      "subcategories_published": 2,
-      "context": "2 of 6 subcategories published"
+      "subcategories_locked": 5,
+      "subcategories_published": 1,
+      "context": "1 of 6 subcategories published"
     },
     "24": {
       "category": 24,
@@ -80,8 +80,8 @@
       "category_name": "Herbs, Spices, Seasonings and Salt",
       "subcategories_total": 4,
       "subcategories_locked": 2,
-      "subcategories_published": 0,
-      "context": "0 of 4 subcategories published"
+      "subcategories_published": 1,
+      "context": "1 of 4 subcategories published"
     }
   },
   "rows": [
@@ -622,9 +622,9 @@
       ],
       "completeness_ledger": {
         "category": 6,
-        "published": 2,
+        "published": 1,
         "total": 6,
-        "context": "2 of 6 subcategories published"
+        "context": "1 of 6 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -875,9 +875,9 @@
       ],
       "completeness_ledger": {
         "category": 6,
-        "published": 2,
+        "published": 1,
         "total": 6,
-        "context": "2 of 6 subcategories published"
+        "context": "1 of 6 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -1130,9 +1130,9 @@
       ],
       "completeness_ledger": {
         "category": 6,
-        "published": 2,
+        "published": 1,
         "total": 6,
-        "context": "2 of 6 subcategories published"
+        "context": "1 of 6 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -1379,9 +1379,9 @@
       ],
       "completeness_ledger": {
         "category": 6,
-        "published": 2,
+        "published": 1,
         "total": 6,
-        "context": "2 of 6 subcategories published"
+        "context": "1 of 6 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -1432,14 +1432,14 @@
           "status": "in_development",
           "in_scope": true,
           "published_limit_ppb": null,
-          "precise_ppb": 34.2337,
+          "precise_ppb": 109.4872,
           "native_basis": "as_sold",
           "cross_basis_ppb": null,
           "cross_basis_label": null,
           "rationale_tag": null,
           "regulatory_cap_ppb": null,
           "regulatory_cap_source": "",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
+          "evidence_state_note": "PROVISIONAL: sensitivity unstable across parametric assumptions; distinct_sources=4; sens_band=needs_review; classify=resolved/provisional",
           "gates": {
             "pairing": false,
             "methodology": true,
@@ -1448,7 +1448,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending"
+            "gate3:classify-provisional (literature-baseline)"
           ]
         },
         "Cd": {
@@ -1618,12 +1618,11 @@
       "native_basis": "as_sold",
       "standard_version": "2.2 (2026-06-09)",
       "hmi_literature_link": "https://heavymetalindex.com/products/seaweed-kelp-foods",
-      "covered_analytes": [
-        "iAs"
-      ],
+      "covered_analytes": [],
       "uncovered_analytes": [
         "Pb",
         "tAs",
+        "iAs",
         "Cd",
         "tHg",
         "MeHg",
@@ -1634,9 +1633,9 @@
       ],
       "completeness_ledger": {
         "category": 6,
-        "published": 2,
+        "published": 1,
         "total": 6,
-        "context": "2 of 6 subcategories published"
+        "context": "1 of 6 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -1685,30 +1684,10 @@
           ]
         },
         "iAs": {
-          "status": "published",
-          "in_scope": true,
-          "published_limit_ppb": 2000,
-          "precise_ppb": 1829.1142,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": 261.302,
-          "cross_basis_label": "prepared_for_feeding",
-          "rationale_tag": "literature-baseline",
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "READY FOR REVIEW; distinct_sources=4; sens_band=stable; classify=resolved/firm",
-          "gates": {
-            "pairing": true,
-            "methodology": true,
-            "readiness": true,
-            "scope": true
-          },
-          "held_reasons": []
-        },
-        "Cd": {
           "status": "in_development",
           "in_scope": true,
           "published_limit_ppb": null,
-          "precise_ppb": 1241.3061,
+          "precise_ppb": 1829.1142,
           "native_basis": "as_sold",
           "cross_basis_ppb": null,
           "cross_basis_label": null,
@@ -1717,15 +1696,35 @@
           "regulatory_cap_source": "",
           "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
           "gates": {
-            "pairing": false,
+            "pairing": true,
             "methodology": true,
             "readiness": false,
             "scope": true
           },
           "held_reasons": [
-            "gate1:across_row_review_hook RESOLVED but Cd HELD",
-            "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:outlier-adjudication-pending"
+          ]
+        },
+        "Cd": {
+          "status": "in_development",
+          "in_scope": true,
+          "published_limit_ppb": null,
+          "precise_ppb": 1874.0873,
+          "native_basis": "as_sold",
+          "cross_basis_ppb": null,
+          "cross_basis_label": null,
+          "rationale_tag": null,
+          "regulatory_cap_ppb": null,
+          "regulatory_cap_source": "",
+          "evidence_state_note": "READY FOR REVIEW; distinct_sources=5; sens_band=stable; classify=resolved/firm",
+          "gates": {
+            "pairing": false,
+            "methodology": true,
+            "readiness": true,
+            "scope": true
+          },
+          "held_reasons": [
+            "gate1:across_row_review_hook RESOLVED but Cd HELD"
           ]
         },
         "tHg": {
@@ -1844,265 +1843,6 @@
           "published_limit_ppb": null,
           "precise_ppb": null,
           "native_basis": "",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        }
-      }
-    },
-    {
-      "product_slug": "canned-seafood",
-      "subcategory": "Canned seafood (with tin flag)",
-      "vertical": {
-        "category": 6,
-        "category_name": "Seafood"
-      },
-      "variant_type": "whole_row_platform",
-      "native_basis": "as_sold",
-      "standard_version": "2.2 (2026-06-09)",
-      "hmi_literature_link": "https://heavymetalindex.com/products/canned-seafood",
-      "covered_analytes": [],
-      "uncovered_analytes": [
-        "Pb",
-        "tAs",
-        "iAs",
-        "Cd",
-        "tHg",
-        "MeHg",
-        "Ni",
-        "Cr-VI",
-        "Sn",
-        "Al"
-      ],
-      "completeness_ledger": {
-        "category": 6,
-        "published": 2,
-        "total": 6,
-        "context": "2 of 6 subcategories published"
-      },
-      "analytes": {
-        "Pb": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": 162.3525,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "tAs": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": 3680.3985,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "iAs": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": null,
-          "native_basis": "",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "Cd": {
-          "status": "in_development",
-          "in_scope": true,
-          "published_limit_ppb": null,
-          "precise_ppb": 155.1101,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
-          "gates": {
-            "pairing": false,
-            "methodology": true,
-            "readiness": false,
-            "scope": true
-          },
-          "held_reasons": [
-            "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
-          ]
-        },
-        "tHg": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": 1500.4335,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "MeHg": {
-          "status": "in_development",
-          "in_scope": true,
-          "published_limit_ppb": null,
-          "precise_ppb": 30.5148,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
-          "gates": {
-            "pairing": false,
-            "methodology": true,
-            "readiness": false,
-            "scope": true
-          },
-          "held_reasons": [
-            "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
-          ]
-        },
-        "Ni": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": 240.9853,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "Cr-VI": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": null,
-          "native_basis": "",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
-          "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
-          "gates": {
-            "pairing": null,
-            "methodology": null,
-            "readiness": null,
-            "scope": false
-          },
-          "held_reasons": [
-            "gate4:out-of-scope"
-          ]
-        },
-        "Sn": {
-          "status": "in_development",
-          "in_scope": true,
-          "published_limit_ppb": null,
-          "precise_ppb": 136028.5549,
-          "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
-          "regulatory_cap_ppb": 250000,
-          "regulatory_cap_source": "codex_cxs193_sn_canned_250000",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
-          "gates": {
-            "pairing": false,
-            "methodology": true,
-            "readiness": false,
-            "scope": true
-          },
-          "held_reasons": [
-            "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
-          ]
-        },
-        "Al": {
-          "status": "in_development",
-          "in_scope": false,
-          "published_limit_ppb": null,
-          "precise_ppb": 21016.0123,
-          "native_basis": "as_sold",
           "cross_basis_ppb": null,
           "cross_basis_label": null,
           "rationale_tag": null,
@@ -2438,7 +2178,7 @@
           "rationale_tag": null,
           "regulatory_cap_ppb": null,
           "regulatory_cap_source": "",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
+          "evidence_state_note": "PROVISIONAL: review sensitivity disagreement; distinct_sources=4; sens_band=provisional; classify=resolved/provisional",
           "gates": {
             "pairing": false,
             "methodology": true,
@@ -2447,7 +2187,6 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending",
             "gate3:classify-provisional (literature-baseline)"
           ]
         },
@@ -2551,16 +2290,15 @@
           "rationale_tag": null,
           "regulatory_cap_ppb": null,
           "regulatory_cap_source": "",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
+          "evidence_state_note": "READY FOR REVIEW; distinct_sources=7; sens_band=stable; classify=resolved/firm",
           "gates": {
             "pairing": false,
             "methodology": true,
-            "readiness": false,
+            "readiness": true,
             "scope": true
           },
           "held_reasons": [
-            "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:outlier-adjudication-pending"
+            "gate1:across_row_review_hook unresolved (no RESOLVED marker)"
           ]
         },
         "Cr-VI": {
@@ -2739,7 +2477,7 @@
           "rationale_tag": null,
           "regulatory_cap_ppb": null,
           "regulatory_cap_source": "",
-          "evidence_state_note": "PROVISIONAL: review sensitivity disagreement; distinct_sources=12; sens_band=provisional; classify=resolved/provisional",
+          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
           "gates": {
             "pairing": false,
             "methodology": true,
@@ -2748,6 +2486,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
+            "gate3:outlier-adjudication-pending",
             "gate3:classify-provisional (literature-baseline)"
           ]
         },
@@ -3661,9 +3400,10 @@
       "native_basis": "as_sold",
       "standard_version": "2.2 (2026-06-09)",
       "hmi_literature_link": "https://heavymetalindex.com/products/spices",
-      "covered_analytes": [],
+      "covered_analytes": [
+        "Pb"
+      ],
       "uncovered_analytes": [
-        "Pb",
         "tAs",
         "iAs",
         "Cd",
@@ -3676,33 +3416,30 @@
       ],
       "completeness_ledger": {
         "category": 34,
-        "published": 0,
+        "published": 1,
         "total": 4,
-        "context": "0 of 4 subcategories published"
+        "context": "1 of 4 subcategories published"
       },
       "analytes": {
         "Pb": {
-          "status": "in_development",
+          "status": "published",
           "in_scope": true,
-          "published_limit_ppb": null,
+          "published_limit_ppb": 600,
           "precise_ppb": 600,
           "native_basis": "as_sold",
-          "cross_basis_ppb": null,
-          "cross_basis_label": null,
-          "rationale_tag": null,
+          "cross_basis_ppb": 85.7143,
+          "cross_basis_label": "prepared_for_feeding",
+          "rationale_tag": "regulatory-alignment",
           "regulatory_cap_ppb": 600,
           "regulatory_cap_source": "eu2023_pb_spice_fruit_600",
-          "evidence_state_note": "outlier-adjudication pending (held provisional until adjudicated)",
+          "evidence_state_note": "READY FOR REVIEW (regulatory cap applies; interim, occurrence characterization pending); distinct_sources=27; sens_band=stable; classify=resolved/firm",
           "gates": {
-            "pairing": false,
+            "pairing": true,
             "methodology": true,
-            "readiness": false,
+            "readiness": true,
             "scope": true
           },
-          "held_reasons": [
-            "gate1:across_row_review_hook ACTIVE",
-            "gate3:outlier-adjudication-pending"
-          ]
+          "held_reasons": []
         },
         "tAs": {
           "status": "in_development",
@@ -3723,7 +3460,7 @@
             "scope": true
           },
           "held_reasons": [
-            "gate1:across_row_review_hook ACTIVE",
+            "gate1:whole_row_platform RESOLVED hook does not name tAs and cell is not cap-bound",
             "gate3:classify-provisional (literature-baseline)"
           ]
         },
@@ -3753,14 +3490,14 @@
           "status": "in_development",
           "in_scope": true,
           "published_limit_ppb": null,
-          "precise_ppb": 623.2948,
+          "precise_ppb": 641.4659,
           "native_basis": "as_sold",
           "cross_basis_ppb": null,
           "cross_basis_label": null,
           "rationale_tag": null,
           "regulatory_cap_ppb": null,
           "regulatory_cap_source": "",
-          "evidence_state_note": "BLOCKED: pool internally inconsistent (p95/p10 > 1e4, likely mixed units — fix units before use); distinct_sources=21; sens_band=stable; classify=resolved/firm",
+          "evidence_state_note": "READY FOR REVIEW; distinct_sources=20; sens_band=stable; classify=resolved/firm",
           "gates": {
             "pairing": false,
             "methodology": true,
@@ -3768,7 +3505,7 @@
             "scope": true
           },
           "held_reasons": [
-            "gate1:across_row_review_hook ACTIVE"
+            "gate1:whole_row_platform RESOLVED hook does not name Cd and cell is not cap-bound"
           ]
         },
         "tHg": {
@@ -3931,9 +3668,9 @@
       ],
       "completeness_ledger": {
         "category": 34,
-        "published": 0,
+        "published": 1,
         "total": 4,
-        "context": "0 of 4 subcategories published"
+        "context": "1 of 4 subcategories published"
       },
       "analytes": {
         "Pb": {
@@ -3967,8 +3704,8 @@
           "cross_basis_ppb": null,
           "cross_basis_label": null,
           "rationale_tag": null,
-          "regulatory_cap_ppb": null,
-          "regulatory_cap_source": "",
+          "regulatory_cap_ppb": 500,
+          "regulatory_cap_source": "aunz_sch19_tas_salt_500",
           "evidence_state_note": "analyte not in this subcategory's primary_metals_of_concern (out of scope)",
           "gates": {
             "pairing": null,
@@ -4161,19 +3898,19 @@
     }
   ],
   "summary": {
-    "locked_rows": 16,
+    "locked_rows": 15,
     "rows_with_any_firm_analyte": 2,
-    "analyte_cells_total": 160,
+    "analyte_cells_total": 150,
     "analyte_cells_published": 3,
-    "analyte_cells_in_development": 157,
+    "analyte_cells_in_development": 147,
     "held_by_gate": {
-      "gate1_pairing": 43,
+      "gate1_pairing": 39,
       "gate2_methodology": 0,
-      "gate3_readiness": 11,
+      "gate3_readiness": 5,
       "gate4_scope": 0,
-      "classify_provisional": 14,
+      "classify_provisional": 11,
       "classify_pending": 5,
-      "not_in_scope": 114
+      "not_in_scope": 107
     }
   }
 }
