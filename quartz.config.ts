@@ -49,7 +49,7 @@ const config: QuartzConfig = {
       },
       colors: {
         // Palette derived from answerthis.io. Cool near-white background,
-        // dark cool-gray body text, burgundy accent (#8B2A4A) used sparingly
+        // dark cool-gray body text, verification-green accent (#176b43) used sparingly
         // on links, active states, and the citation tier pill. Replaces the
         // previous warm coffee/sienna palette.
         lightMode: {
@@ -62,9 +62,9 @@ const config: QuartzConfig = {
           gray: "#767067",
           darkgray: "#2a2d34",
           dark: "#1a1d24",
-          secondary: "#8B2A4A",
+          secondary: "#176b43",
           tertiary: "#6b6b6b",
-          highlight: "rgba(139, 42, 74, 0.06)",
+          highlight: "rgba(23, 107, 67, 0.06)",
           textHighlight: "#f0e68c55",
         },
         darkMode: {
@@ -75,9 +75,9 @@ const config: QuartzConfig = {
           gray: "#848484",
           darkgray: "#cfcfcf",
           dark: "#e8e6e1",
-          secondary: "#C76B8E",
+          secondary: "#4cae7a",
           tertiary: "#9aa0a8",
-          highlight: "rgba(199, 107, 142, 0.1)",
+          highlight: "rgba(76, 174, 122, 0.12)",
           textHighlight: "#b3aa0255",
         },
       },
