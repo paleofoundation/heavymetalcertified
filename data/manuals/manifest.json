@@ -43,14 +43,14 @@
       "evidence_note": "Spices Pb=600 is firm/cap-bound (defensible), but salt is still a Gate-1 hold (sea/rock/refined geology unresolved) — the manual may print provisional salt values. Regenerate after the salt adjudication."
     },
     {
-      "category": 0,
-      "title": "HMTc Program Manual (master)",
-      "slug": "program-manual",
-      "edition": "2026-v0",
-      "pdf": "HMTc-Program-Manual-2026-v0.pdf",
-      "status": "pending_refresh",
-      "doi": null,
-      "evidence_note": "v0 master volume; aggregates category chapters. Regenerate after the per-category manuals are refreshed."
+      "category": 1,
+      "title": "Infant and Child Foods",
+      "slug": "infant-and-child-foods",
+      "edition": "2026",
+      "pdf": "HMTc-Infant-and-Child-Foods-Program-Manual-2026.pdf",
+      "status": "published",
+      "doi": "10.5281/zenodo.20270512",
+      "evidence_note": "Standalone Infant and Child Foods Program Manual (the 384-page volume formerly mislabeled here as the 'master' aggregate). Defensibility-audited and publicly deposited on Zenodo (DOI 10.5281/zenodo.20270512); revision 2026-06-18 incorporates the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1. First category manual cleared for publication."
     }
   ]
 }

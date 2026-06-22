@@ -8,6 +8,10 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 
 Each category's Heavy Metal Tested & Certified standard is published as a citable, versioned program manual — the full standard plus the methodology and evidence-state notes — and is downloadable as a PDF. Manuals publish per category as each becomes defensibly ready; the live per-subcategory limits are always available in the [Standards index](../standards/).
 
+## Published editions
+
+- [Infant and Child Foods (2026)](infant-and-child-foods) — [PDF](/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026.pdf)
+
 ## In preparation
 
 These manuals are being brought to the current standard before publication (a manual is not published until every value in it is defensibly current):
@@ -16,4 +20,3 @@ These manuals are being brought to the current standard before publication (a ma
 - **Culinary Oils and Fats** — in preparation.
 - **Butter and Ghee** — in preparation.
 - **Herbs, Spices and Salt** — in preparation.
-- **HMTc Program Manual (master)** — in preparation.
