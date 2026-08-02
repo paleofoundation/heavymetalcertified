@@ -1,57 +1,49 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-// @ts-ignore — inline script resolved by Quartz's esbuild loader
-import citeScript from "./scripts/citeSuperscript.inline"
+import { pathToRoot, type FullSlug } from "../util/path"
 
-// The proof's right rail (.rail) for the cert site: the certificate-verify
-// affordance + a compact page-provenance note. renderPage wraps it in
-// <aside class="rail">. Styled by proof-design.scss (.rail …).
+// The v3 right rail (Heavy Metal Certified v3.dc.html 585–599): a "Connections"
+// list of blue cross-links, then the certificate Verify box. Emits `.hmtc-conn*`
+// / `.hmtc-verify*` markup styled to the comp in cert-chrome.scss. renderPage
+// wraps it in <aside class="rail">.
 
 export default (() => {
   const Rail: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-    const fm = (fileData.frontmatter ?? {}) as Record<string, unknown>
-    const updated = fm.updated ? String(fm.updated).slice(0, 10) : undefined
-    const effective = fm.effective_date ? String(fm.effective_date).slice(0, 10) : undefined
-    const version = fm.standard_version ? String(fm.standard_version) : undefined
+    const slug = (fileData.slug ?? "index") as FullSlug
+    const base = pathToRoot(slug)
+    const fm = (fileData.frontmatter ?? {}) as Record<string, any>
+
+    // Connections: repo-derived cross-links (content, not design). The literature
+    // baseline is the one-way citation to the index when the page carries it.
+    const conns: { label: string; href: string }[] = []
+    if (fm.hmi_literature_link) {
+      conns.push({ label: "Heavy Metal Index — literature baseline", href: String(fm.hmi_literature_link) })
+    }
+    conns.push({ label: "The standards register", href: `${base}/standards` })
+    conns.push({ label: "How limits are derived", href: `${base}/program/structure` })
+    conns.push({ label: "Verify a certificate", href: `${base}/verify` })
 
     return (
       <>
-        <div class="rail-verify">
-          <h4>Verify a certificate</h4>
-          <p>
+        <div class="hmtc-conn-head">Connections</div>
+        <div class="hmtc-conn-list">
+          {conns.map((c) => (
+            <a class="hmtc-conn-link" href={c.href}>
+              {c.label}
+            </a>
+          ))}
+        </div>
+        <div class="hmtc-verify">
+          <div class="hmtc-verify-title">Verify a certificate</div>
+          <p class="hmtc-verify-body">
             Check a lot number, certificate number or product code against the register. Public
             and open to regulators.
           </p>
-          <a class="rail-verify-cta" href="/verify">
+          <a class="hmtc-verify-cta" href={`${base}/verify`}>
             Look up a lot
           </a>
-        </div>
-        <div class="card">
-          <h4>Page provenance</h4>
-          <div class="meta">
-            {updated ? (
-              <>
-                Updated {updated}
-                <br />
-              </>
-            ) : null}
-            {effective ? (
-              <>
-                Effective {effective}
-                <br />
-              </>
-            ) : null}
-            {version ? (
-              <>
-                Version {version}
-                <br />
-              </>
-            ) : null}
-            Institute of Contaminant Standards
-          </div>
         </div>
       </>
     )
   }
-  Rail.afterDOMLoaded = citeScript
   return Rail
 }) satisfies QuartzComponentConstructor

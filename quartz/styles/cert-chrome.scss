@@ -579,3 +579,59 @@ footer.site-footer .site-footer-bottom p {
 // Quartz's auto folder/tag listing ("N items under this folder") is redundant —
 // the cert index pages carry their own generated content. Not in the design.
 .wiki-content .page-listing { display: none !important; }
+
+// ============================================================
+//  v3 LEFT RAIL — "On this page" numbered rails (585/641 in v3)
+// ============================================================
+aside.snav { position: sticky; top: 92px; padding: 34px 0 48px !important; }
+.hmtc-onpage-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #e8e1db;
+  margin-bottom: 4px;
+}
+.hmtc-onpage-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; }
+.hmtc-onpage-count { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #c3b9b9; }
+.hmtc-onpage-nav { display: flex; flex-direction: column; }
+.hmtc-rail {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0 7px 11px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-decoration: none;
+  border-left: 2px solid #e8e1db;
+  color: #3f3a3a;
+  background: none !important;
+}
+.hmtc-rail:hover { color: #9f2727; }
+.hmtc-rail.active { border-left-color: #9f2727; color: #9f2727; }
+.hmtc-rail-num { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.04em; color: #c3b9b9; flex: 0 0 auto; }
+.hmtc-rail.active .hmtc-rail-num { color: #9f2727; }
+.hmtc-rail-label { flex: 1; }
+
+// ============================================================
+//  v3 RIGHT RAIL — Connections + Verify box (585–599 in v3)
+// ============================================================
+aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; display: block; }
+.hmtc-conn-head {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #e8e1db;
+  margin-bottom: 12px;
+}
+.hmtc-conn-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 30px; }
+.hmtc-conn-link { font-size: 13.5px; color: #1c43ad; line-height: 1.45; text-decoration: none; background: none !important; }
+.hmtc-conn-link:hover { text-decoration: underline; }
+.hmtc-verify { border: 1px solid #f2dcda; background: #fbeceb; padding: 16px; }
+.hmtc-verify-title { font-family: Lora, serif; font-size: 17px; color: #9f2727; margin-bottom: 8px; }
+.hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: #5a4141; }
+.hmtc-verify-cta { display: inline-block; background: #9f2727; color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
+.hmtc-verify-cta:hover { background: #7f1f1f; }
