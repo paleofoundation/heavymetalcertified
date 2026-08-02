@@ -575,3 +575,7 @@ footer.site-footer .site-footer-bottom p {
 // which the hero band already shows. Suppress the redundant title (sections are
 // h2/h3, so they are untouched). The home is excluded (its content is the hero).
 .proof:not(.proof-home) .wiki-content h1:first-of-type { display: none !important; }
+
+// Quartz's auto folder/tag listing ("N items under this folder") is redundant —
+// the cert index pages carry their own generated content. Not in the design.
+.wiki-content .page-listing { display: none !important; }
