@@ -84,7 +84,13 @@ export function MegaMenu({ slug }: { slug: FullSlug }) {
 
             <div class="hmi-nav-panel" id={panelId} aria-labelledby={labelId}>
               <div class="hmi-nav-panel-inner">
-                <p class="hmi-nav-blurb">{panel.blurb}</p>
+                <div class="hmi-nav-lead">
+                  <div class="hmi-nav-title">{panel.panelLabel}</div>
+                  <p class="hmi-nav-blurb">{panel.blurb}</p>
+                  <a class="hmi-nav-all" href={resolveRelative(slug, panel.slug as SimpleSlug)}>
+                    {panel.allLabel} <span aria-hidden="true">→</span>
+                  </a>
+                </div>
                 <div class="hmi-nav-cols">
                   {panel.groups.map((group) => (
                     <div class="hmi-nav-col">
@@ -112,9 +118,6 @@ export function MegaMenu({ slug }: { slug: FullSlug }) {
                     </div>
                   ))}
                 </div>
-                <a class="hmi-nav-all" href={resolveRelative(slug, panel.slug as SimpleSlug)}>
-                  {panel.allLabel} <span aria-hidden="true">→</span>
-                </a>
               </div>
             </div>
           </li>

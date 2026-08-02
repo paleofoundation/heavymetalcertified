@@ -4,8 +4,6 @@ import { pathToRoot, type FullSlug } from "../util/path"
 import { i18n } from "../i18n"
 import { MegaMenu } from "./MegaMenu"
 import style from "./styles/topNav.scss"
-// @ts-ignore — inline script, resolved by Quartz's esbuild loader
-import script from "./scripts/topNav.inline"
 // @ts-ignore — homepage hero search (?q= handling) — no-ops off the index slug
 import homeSearchScript from "./scripts/homeSearch.inline"
 
@@ -85,6 +83,8 @@ export default (() => {
   }
 
   TopNav.css = style
-  TopNav.afterDOMLoaded = `${script}\n${homeSearchScript}`
+  // No disclosure JS: the mega-menu opens on pure-CSS hover (v3 behaviour). Only
+  // the homepage hero-search wiring ships here.
+  TopNav.afterDOMLoaded = homeSearchScript
   return TopNav
 }) satisfies QuartzComponentConstructor

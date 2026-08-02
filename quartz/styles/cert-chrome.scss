@@ -80,6 +80,43 @@ a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 25
 }
 
 // ============================================================
+//  QUARTZ BLEED-THROUGH HARDENING
+//  Quartz's base forces the header font (Lora) + weight 600 onto everything
+//  inside the top bar. Pin every chrome text element to its intended face and
+//  regular weight so no default shows through.
+// ============================================================
+.hmtc-wordmark { font-family: Lora, serif !important; font-weight: 400 !important; }
+.hmtc-nav .hmi-nav-top,
+.hmtc-nav .hmi-nav-count,
+.hmtc-search-label,
+.hmtc-login,
+.hmtc-apply,
+.hmtc-hb-crumb,
+.hmtc-hb-dek,
+.hmtc-hb-meta,
+.hmtc-hb-snap-k,
+footer.site-footer .site-footer-column a,
+footer.site-footer .site-footer-brand p {
+  font-family: Inter, system-ui, -apple-system, sans-serif !important;
+  font-weight: 400 !important;
+}
+// Mono labels stay IBM Plex Mono at regular weight.
+.hmtc-search-glyph, .hmtc-search-kbd,
+.hmtc-hb-badge, .hmtc-hb-stamp, .hmtc-hb-snap-v,
+.hmtc-nav .hmi-nav-colhead, .hmtc-nav .hmi-nav-all,
+footer.site-footer .site-footer-column h2,
+footer.site-footer .site-footer-bottom p {
+  font-family: "IBM Plex Mono", monospace !important;
+  font-weight: 500 !important;
+}
+// Lora display elements at regular weight (kill the 600 bleed).
+.hmtc-hb-title, .hmtc-hb-snap-head,
+footer.site-footer .site-footer-logo,
+.hmtc-nav .hmi-nav-panel .hmi-nav-title {
+  font-weight: 400 !important;
+}
+
+// ============================================================
 //  v3 HEADER (Heavy Metal Certified v3.dc.html 41–109)
 // ============================================================
 
@@ -226,13 +263,21 @@ header.hmi-topnav-shell::after {
   z-index: 79;
 }
 .hmtc-nav .hmi-nav-item:hover .hmi-nav-panel,
-.hmtc-nav .hmi-nav-panel.is-open { visibility: visible; }
+.hmtc-nav .hmi-nav-panel.is-open {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
 .hmtc-nav .hmi-nav-panel-inner {
   max-width: 1760px;
   margin: 0 auto;
   padding: 32px 48px 38px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
 }
-.hmtc-nav .hmi-nav-blurb { margin: 0 0 20px; font-size: 13px; line-height: 1.65; color: #736b6b; max-width: 60ch; }
+.hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
+.hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
+.hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
 .hmtc-nav .hmi-nav-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -265,7 +310,7 @@ header.hmi-topnav-shell::after {
 .hmtc-nav .hmi-nav-count { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #b7aeae; flex: 0 0 auto; }
 .hmtc-nav .hmi-nav-all {
   display: inline-block;
-  margin-top: 22px;
+  margin-top: 0;
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.06em;
@@ -279,6 +324,49 @@ header.hmi-topnav-shell::after {
 @media (max-width: 1149px) {
   .hmtc-search-label, .hmtc-search-kbd, .hmtc-login { display: none; }
   .hmtc-search { flex: 0 0 auto; width: 36px; justify-content: center; padding: 0; }
+
+  // Narrow bar: brand + actions on row 1, the nav becomes a single
+  // horizontally-scrolling strip on row 2 (v3's narrow pattern). No stacking,
+  // and the hover dropdowns are suppressed on touch.
+  header.hmi-topnav-shell::after { display: none; }
+  .hmtc-bar {
+    height: auto;
+    min-height: 58px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px 16px;
+  }
+  .hmtc-brand { flex: 1 1 auto; padding-right: 0; }
+  .hmtc-actions { order: 2; flex: 0 0 auto; }
+  .hmtc-spacer { display: none; }
+  // Override the index topNav.scss burger block (@media not $desktop forces
+  // .hmi-nav-list to column); this design uses a horizontal-scroll strip.
+  .hmtc-nav {
+    order: 3;
+    flex: 1 1 100% !important;
+    min-width: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid #f2ece7;
+    padding-top: 8px;
+  }
+  .hmtc-nav .hmi-nav-list {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 2px !important;
+  }
+  .hmtc-nav .hmi-nav-item {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    grid-template-columns: none !important;
+    border: 0 !important;
+  }
+  .hmtc-nav .hmi-nav-top { padding: 6px 12px !important; border-bottom: 2px solid transparent; }
+  .hmtc-nav .hmi-nav-toggle { display: none !important; }
+  .hmtc-nav .hmi-nav-panel { display: none !important; }
 }
 
 // ============================================================
@@ -450,3 +538,29 @@ footer.site-footer .site-footer-bottom p {
   footer.site-footer .site-footer-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; padding: 56px 24px 32px; }
   footer.site-footer .site-footer-bottom { padding: 22px 24px 32px; }
 }
+
+// ============================================================
+//  HOME FAQ — native <details> accordion (v3 collapsed rows, +/− sign)
+// ============================================================
+.hmtc-faq-list .hmtc-faq { border-top: 1px solid #e8e1db; }
+.hmtc-faq > summary {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 19px 0;
+  cursor: pointer;
+}
+.hmtc-faq > summary::-webkit-details-marker { display: none; }
+.hmtc-faq > summary::marker { content: ""; }
+.hmtc-faq > summary:hover { opacity: 0.72; }
+.hmtc-faq-sign { font-family: "IBM Plex Mono", monospace; font-size: 15px; line-height: 1.35; color: #9f2727; flex: 0 0 14px; }
+.hmtc-faq-sign::before { content: "+"; }
+.hmtc-faq[open] .hmtc-faq-sign::before { content: "\2212"; }
+.hmtc-faq-q { font-family: Lora, serif !important; font-weight: 400 !important; font-size: 20px; line-height: 1.35; color: #9f2727; flex: 1; }
+.hmtc-faq-a { padding: 2px 0 22px 30px; }
+.hmtc-faq-a p { font-size: 15.5px; line-height: 1.75; color: #3f3a3f; margin: 0; max-width: 70ch; }
+.wiki-content .hmtc-faq-a p a { color: #1c43ad; }
+.wiki-content .hmtc-faq-link { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9f2727; margin-top: 13px; text-decoration: none; }
+.wiki-content .hmtc-faq-link:hover { text-decoration: underline; }
+.hmtc-faq-end { border-top: 1px solid #e8e1db; }
