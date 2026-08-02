@@ -1,5 +1,7 @@
 footer.site-footer {
-  background: var(--secondary);
+  // Theme-stable deep red (#7f1f1f), darker than the hero ground (#9f2727) for
+  // separation — matches the v3 design. --burg-dark is defined in proof-design.scss.
+  background: var(--burg-dark, #7f1f1f);
   color: #fff;
   margin-top: 4rem;
   min-width: 0;

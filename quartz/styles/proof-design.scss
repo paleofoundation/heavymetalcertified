@@ -1,0 +1,255 @@
+// The approved design, verbatim from the hmi-real-content proof (proof.css).
+// This is the SOURCE OF TRUTH for the visual layer — renderPage.tsx emits the
+// matching HTML structure (.topnav / .snav / .wiki-content / .qa / .ev / .rail /
+// sup.cite) so the Quartz build renders identical to the proof. Do NOT
+// re-derive these rules in SCSS; edit the design here against the proof.
+//
+// Global resets from the proof (* / body / bare h-tags) are intentionally
+// omitted so Quartz's own base + search/popover UI keep working; only the proof's
+// scoped component rules + design tokens are adopted.
+
+// Heavy Metal Certified red family (v3 design artifact — theme-stable brand
+// grounds). --burg drives the hero band, active nav, table heads and snav
+// actives; --burg-dark (#7f1f1f) is the footer ground and button-hover; the two
+// tints are the verify/reuse-card surfaces. Recolored from the index burgundy
+// (#8b2a4a) per the "cert must read distinct from the index" decision.
+:root {
+  --burg: #9f2727; --burg-dark: #7f1f1f; --burg-tint: #fbeceb; --burg-tint2: #fdf4f3;
+  --ink: #2b1f1f; --body: #3f3a3a; --muted: #736b6b; --faint: #a9a1a1;
+  --line: #e8e1db; --line2: #f2ece7; --shade: #faf7f4;
+  --a: #9f2727; --b: #7f1f1f; --c: #a9a1a1; --d: #9f2727;
+  --radius: 3px; --radius-lg: 3px; --maxw: 1760px;
+}
+
+/* the proof grid owns layout — free .page's width + neutralise the base grid */
+.page.proof { max-width: none; padding: 0; }
+.page.proof > #quartz-body { display: block; max-width: none; }
+.snav .snav-further { margin-bottom: 4px; }
+.snav .snav-further > summary { list-style: none; }
+.snav .snav-further > summary::-webkit-details-marker { display: none; }
+.snav .snav-further[open] > summary.sec { background: var(--burg-tint); color: var(--burg); }
+/* H3 sub-sections stay hidden until their section is active (the proof's clean nav) */
+.snav .grp:not(.snav-further) > a.sub { display: none; }
+.snav .grp:not(.snav-further):has(.in-view) > a.sub { display: block; }
+/* The metal-page Overview group is the primary section nav and stays
+   expanded: its subsections always show, not only when scrolled into view. */
+.snav .grp.snav-overview > a.sub { display: block; }
+/* cross-reference counts group inside the snav */
+.snav .snav-counts { display: block; }
+
+/* homepage opts out of the 3-col grid: full-bleed bands, no snav/rail/title.
+   The column is un-constrained here so each .hmi-band can span the viewport;
+   .hmi-band-inner re-centers the content to --maxw (see home.scss). Doing it
+   this way rather than with a 100vw negative-margin trick avoids the scrollbar
+   overflow that 100vw causes on Windows. */
+.proof-home .snav, .proof-home .rail, .proof-home .page-header { display: none; }
+.proof-home .proof-layout { display: block; }
+.proof-home .proof-container { max-width: none; padding: 0; }
+.proof-home .proof-layout { padding: 0; }
+.proof-home .proof-main { max-width: none; margin: 0; }
+.proof-home .wiki-content { font-size: 16px; }
+/* The generic "See also" block is page-to-page apparatus; on the landing page it
+   renders as an unlabelled link list under the bands. */
+.proof-home .page-footer { display: none; }
+
+/* No pill on any internal link anywhere in the build, default OR hover —
+   overrides the Quartz base a.internal / tag-link background. The hero CTA
+   buttons opt out: they are internal links that carry a real button skin. */
+a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn),
+a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn) {
+  background: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover,
+a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):focus,
+a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover {
+  background: none !important;
+}
+
+/* ---------- top nav (white) ---------- */
+.proof .topnav, .topnav.proofnav { background: #fff; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 30; }
+.proofnav .inner { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; height: 68px; display: flex; align-items: center; gap: 30px; }
+.proofnav .brand { font-family: Lora, serif; font-weight: 600; font-size: 22px; color: var(--burg); display: flex; flex-direction: column; line-height: 1.15; }
+.proofnav .brand:hover { text-decoration: none; }
+.proofnav .brand .op { font-family: Inter, sans-serif; font-size: 11px; font-weight: 400; color: var(--muted); }
+.proofnav nav { display: flex; gap: 24px; }
+.proofnav nav a { color: var(--ink); font-size: 15px; font-weight: 500; }
+.proofnav nav a:hover { color: var(--burg); text-decoration: none; }
+.proofnav nav a.active { color: var(--burg); }
+.proofnav .right { margin-left: auto; display: flex; align-items: center; gap: 20px; color: var(--ink); }
+.proofnav .right a, .proofnav .right button { color: var(--ink); font-size: 15px; display: flex; align-items: center; gap: 6px; background: none; border: 0; cursor: pointer; font-family: inherit; }
+.proofnav .right a:hover, .proofnav .right button:hover { color: var(--burg); text-decoration: none; }
+.proofnav .ask { background: var(--burg); color: #fff !important; font-weight: 600; padding: 8px 16px; border-radius: 999px; }
+.proofnav .ask:hover { background: var(--burg-dark); }
+
+/* ---------- page grid (wide 3-col) ---------- */
+.proof-container { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
+.proof-layout { display: grid; grid-template-columns: 232px minmax(0, 1fr) 288px; gap: 44px; align-items: start; padding: 30px 0 70px; }
+
+/* left section nav */
+.snav { position: sticky; top: 88px; font-size: 14.5px; }
+.snav .grp { display: block; margin-bottom: 4px; }
+.snav a.sec { display: block; color: var(--body); padding: 8px 12px; border-radius: 8px; font-weight: 500; }
+.snav a.sec:hover { background: var(--shade); text-decoration: none; }
+.snav a.sec.active { background: var(--burg-tint); color: var(--burg); font-weight: 600; }
+.snav a.sub { display: block; color: var(--muted); padding: 5px 12px 5px 24px; font-size: 14px; }
+.snav a.sub:hover { color: var(--burg); text-decoration: none; }
+.snav a.sub.active { color: var(--burg); }
+.snav .divider { height: 1px; background: var(--line); margin: 14px 4px; }
+.snav a.icon { display: flex; align-items: center; gap: 10px; color: var(--body); padding: 8px 12px; border-radius: 8px; }
+.snav a.icon:hover { background: var(--shade); text-decoration: none; color: var(--burg); }
+.snav a.icon svg { width: 18px; height: 18px; color: var(--faint); flex: 0 0 auto; }
+.snav a.icon:hover svg { color: var(--burg); }
+.snav .navgrouplabel { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--faint); margin: 16px 0 5px; padding: 0 12px; font-weight: 600; }
+.snav a.icon .navcount { margin-left: auto; font-size: 12px; color: var(--muted); background: var(--shade); border-radius: 10px; padding: 1px 8px; font-weight: 500; }
+
+/* ---------- main content ---------- */
+.proof-main { min-width: 0; }
+.proof-main .breadcrumb { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+.proof-main .page-h { display: flex; align-items: center; gap: 12px; border-bottom: 1px dotted #cfcabf; padding-bottom: 14px; margin: 6px 0 4px; }
+.proof-main .page-h .chev { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; }
+.proof-main .page-h h1 { font-family: Lora, serif; font-size: 34px; margin: 0; color: var(--ink); font-weight: 600; }
+.proof-main .page-h .sym { color: var(--muted); font-weight: 400; }
+
+/* ---------- right sidebar ---------- */
+.rail { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 14px; }
+.rail .action { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; border: 1px solid var(--line); background: #fff; color: var(--body); font-weight: 500; font-size: 14.5px; padding: 11px; border-radius: 10px; cursor: pointer; }
+.rail .action:hover { border-color: var(--burg); color: var(--burg); text-decoration: none; }
+.rail .action svg { width: 18px; height: 18px; }
+.rail .card { background: var(--shade); border-radius: var(--radius-lg); padding: 20px; }
+.rail .card h4 { font-family: Lora, serif; font-size: 16px; color: var(--ink); margin: 0 0 9px; font-weight: 600; }
+.rail .card p { font-size: 13.5px; color: var(--body); line-height: 1.55; margin: 0 0 12px; }
+.rail .card p .em { color: var(--burg); font-weight: 600; }
+.rail .card .meta { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--muted); margin-top: 4px; padding-top: 13px; border-top: 1px solid var(--line); line-height: 1.7; }
+
+/* Certificate-verify box (cert-only): the signature right-rail affordance. */
+.rail .rail-verify { border: 1px solid #f2dcda; background: var(--burg-tint); padding: 16px; border-radius: var(--radius); }
+.rail .rail-verify h4 { font-family: Lora, serif; font-size: 17px; color: var(--burg); margin: 0 0 8px; font-weight: 600; }
+.rail .rail-verify p { font-size: 12.5px; color: #5a4141; line-height: 1.65; margin: 0 0 13px; }
+.rail .rail-verify-cta { display: inline-block; background: var(--burg); color: #fff; font-size: 12px; font-weight: 500; padding: 8px 13px; border-radius: var(--radius); }
+.rail .rail-verify-cta:hover { background: var(--burg-dark); text-decoration: none; color: #fff; }
+
+/* ---------- the article body, re-skinned ---------- */
+.wiki-content { font-size: 16px; color: var(--body); line-height: 1.72; }
+.wiki-content > *:first-child { margin-top: 0; }
+.wiki-content h2 { font-family: Lora, serif; font-size: 24px; color: var(--ink); font-weight: 600; margin: 42px 0 14px; padding-bottom: 8px; border-bottom: 1px dotted #cfcabf; scroll-margin-top: 86px; }
+.wiki-content h3 { font-family: Lora, serif; font-size: 19px; color: var(--ink); font-weight: 600; margin: 28px 0 10px; scroll-margin-top: 86px; }
+.wiki-content h4 { font-family: Lora, serif; font-size: 16.5px; color: var(--ink); font-weight: 600; margin: 22px 0 8px; }
+.wiki-content h2 a, .wiki-content h3 a { color: inherit; }
+.wiki-content p { margin: 0 0 1.05em; }
+// Plain burgundy links, no underline at rest. The legacy `article a` rule
+// (custom.scss) draws the underline with a `border-bottom`, not text-decoration,
+// so we must explicitly zero border-bottom here (default AND hover) — zeroing
+// text-decoration alone left the border showing. Underline returns on hover via
+// text-decoration. The more-specific source-citation superscript rule keeps its
+// dotted border, so citations are unaffected.
+.wiki-content a { color: var(--burg); text-decoration: none; border-bottom: none; }
+.wiki-content a:hover { text-decoration: underline; border-bottom: none; background: none; }
+/* in-article wikilinks read as plain burgundy text. Pill removal is handled by
+   the global a.internal rule (with !important) above. No default underline; the
+   `.wiki-content a:hover` rule above supplies underline-on-hover. */
+.wiki-content a.internal:hover { color: var(--burg-dark); }
+.wiki-content ul, .wiki-content ol { padding-left: 1.4em; margin: 0 0 1.05em; }
+.wiki-content li { margin-bottom: 0.45em; }
+.wiki-content blockquote { border-left: 3px solid var(--burg); margin: 0 0 1.1em; padding: 8px 18px; background: var(--burg-tint2); color: var(--body); }
+.wiki-content code { font-family: "IBM Plex Mono", monospace; font-size: 0.88em; background: var(--shade); padding: 1px 5px; border-radius: 4px; }
+.wiki-content hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
+.wiki-content table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 12px 0 22px; display: block; overflow-x: auto; }
+.wiki-content thead th { background: var(--burg); color: #fff; text-align: left; padding: 11px 13px; font-weight: 600; font-size: 13.5px; white-space: nowrap; }
+.wiki-content tbody td { padding: 10px 13px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.wiki-content tbody tr:hover { background: var(--burg-tint2); }
+
+.hmi-quick-read { background: var(--burg-tint2); border: 1px solid #f2dcda; border-left: 4px solid var(--burg); border-radius: 0 3px 3px 0; padding: 18px 22px; margin: 0 0 28px; }
+.hmi-quick-read-label { font-family: Inter, sans-serif; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em; color: var(--burg); margin-bottom: 9px; }
+.hmi-quick-read p { margin: 0 0 10px; }
+.hmi-quick-read ul { margin: 0 0 12px; }
+.hmi-pill-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.hmi-pill { background: #fff; border: 1px solid var(--burg); color: var(--burg); font-size: 12.5px; font-weight: 500; padding: 4px 12px; border-radius: 20px; }
+
+.wiki-content .footnotes, .wiki-content [data-footnotes], .wiki-content section.footnotes { font-size: 13.5px; color: var(--muted); border-top: 1px solid var(--line); margin-top: 34px; padding-top: 16px; }
+.wiki-content .footnotes a, .wiki-content [data-footnotes] a { color: var(--burg); }
+
+/* superscript inline citations */
+sup.cite { font-size: 11px; line-height: 0; white-space: nowrap; }
+sup.cite > a { color: var(--burg); font-weight: 500; text-decoration: none; font-family: inherit; font-size: 12px; margin-left: 1px; }
+sup.cite > a::before { content: "["; }
+sup.cite > a::after { content: "]"; }
+sup.cite > a:hover { color: var(--burg-dark); text-decoration: underline; }
+sup.cite { position: relative; }
+sup.cite .cite-card { display: none; position: absolute; bottom: 1.7em; left: 50%; transform: translateX(-50%); width: 300px; max-width: 80vw; background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.17); padding: 12px 14px; font-size: 12.5px; line-height: 1.5; color: var(--body); font-weight: 400; z-index: 40; text-align: left; white-space: normal; }
+sup.cite .cite-card .au { color: var(--muted); font-weight: 500; display: block; }
+sup.cite .cite-card .ti { color: var(--burg); font-family: Lora, serif; font-weight: 600; font-size: 13.5px; line-height: 1.35; display: block; margin-top: 2px; }
+sup.cite .cite-card .pub { color: var(--body); display: block; margin-top: 6px; }
+sup.cite .cite-card .go { color: #fff; background: var(--burg); border-radius: 6px; padding: 5px 11px; font-weight: 600; display: inline-block; margin-top: 10px; font-size: 12px; text-decoration: none; }
+sup.cite:hover .cite-card, sup.cite:focus-within .cite-card { display: block; }
+
+/* References — the numbered list of works this page's prose cites. The corpus
+   table under "Sources" is a different thing and stays a table. */
+ol.ref-list { padding-left: 1.6em; }
+ol.ref-list > li { margin-bottom: 10px; line-height: 1.55; font-size: 14.5px; }
+ol.ref-list > li:target { background: var(--burg-tint); border-radius: 6px; box-shadow: 0 0 0 6px var(--burg-tint); }
+ol.ref-list em { font-style: normal; color: var(--ink); font-weight: 500; }
+
+.coresec { scroll-margin-top: 24px; }
+section.hmi-evidence-header { background: var(--shade); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 0 0 18px; font-size: 13.5px; }
+section.hmi-evidence-header .hmi-evidence-row { display: flex; gap: 10px; margin: 3px 0; }
+section.hmi-evidence-header .hmi-evidence-key { color: var(--muted); min-width: 90px; font-weight: 600; font-size: 12px; }
+
+/* accordion overview (Q&A) */
+.qa { border-bottom: 1px solid var(--line); }
+.qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 18px 2px; font-family: Lora, serif; font-size: 20px; font-weight: 600; color: var(--ink); }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary .mk { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; transition: transform 0.2s; }
+.qa[open] summary .mk { transform: rotate(180deg); }
+.qa .ans { padding: 0 2px 20px 40px; color: var(--body); font-size: 15.5px; }
+.qa .ans p { margin: 0 0 0.8em; }
+.qa .qa-sub { border-bottom: 1px solid var(--line2); margin: 8px 0 0 6px; border-left: 2px solid var(--burg-tint); padding-left: 14px; }
+.qa .qa-sub > summary { font-size: 15.5px; padding: 11px 2px; color: var(--burg); }
+.qa .qa-sub > summary .mk { width: 22px; height: 22px; font-size: 13px; }
+.qa .qa-sub > .ans { padding-left: 36px; }
+
+/* collapsible references */
+details.disclose, details.hmi-references { margin: 38px 0 0; border: 0; }
+details.disclose > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: Lora, serif; font-size: 23px; font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px dotted #cfcabf; }
+details.disclose > summary::-webkit-details-marker { display: none; }
+details.disclose > summary .mk { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; font-size: 15px; transition: transform 0.2s; }
+details.disclose[open] > summary .mk { transform: rotate(180deg); }
+details.disclose .disclose-body { padding-top: 18px; }
+
+nav.hmi-related { margin-top: 34px; border-top: 1px solid var(--line); padding-top: 16px; }
+nav.hmi-related .hmi-related-title { font-family: Lora, serif; font-size: 18px; }
+nav.hmi-related ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 5px 14px; margin: 6px 0 14px; }
+nav.hmi-related a { color: var(--burg); font-size: 13.5px; }
+
+/* Update History — burgundy vertical timeline (pageHistoryTimeline.inline.ts
+   rebuilds the generated update-history table into this). */
+.hist-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 14px 0 2px; justify-content: flex-end; }
+.hist-tab { background: none; border: 1px solid transparent; border-radius: 6px; padding: 5px 12px; font-family: inherit; font-size: 13.5px; color: var(--burg); cursor: pointer; }
+.hist-tab:hover { background: var(--burg-tint); }
+.hist-tab-on { border-color: var(--burg); font-weight: 600; }
+.hist-item[hidden] { display: none; }
+ol.hist-timeline { list-style: none; margin: 18px 0 0; padding: 0 0 0 26px; position: relative; }
+ol.hist-timeline::before { content: ""; position: absolute; left: 5px; top: 7px; bottom: 7px; width: 2px; background: var(--burg-tint); }
+.hist-item { position: relative; padding: 0 0 22px; }
+.hist-item:last-child { padding-bottom: 2px; }
+.hist-item::before { content: ""; position: absolute; left: -25px; top: 4px; width: 11px; height: 11px; border-radius: 50%; background: #fff; border: 2px solid var(--burg); box-sizing: border-box; }
+.hist-item-latest::before { background: var(--burg); }
+.hist-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 3px; }
+.hist-date { color: var(--muted); font-size: 13px; }
+.hist-badge { font-size: 11px; font-weight: 600; color: var(--burg); background: var(--burg-tint); border-radius: 20px; padding: 1px 9px; letter-spacing: 0.02em; text-transform: capitalize; }
+/* Corrections read as the exception they are; minor stays quiet. */
+.hist-badge-correction { color: #fff; background: var(--burg); }
+.hist-badge-minor { color: var(--muted); background: var(--line); }
+.hist-title { color: var(--ink); font-family: Lora, serif; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.hist-commit { display: inline-block; margin-top: 4px; font-size: 12.5px; color: var(--burg); font-family: var(--codeFont, ui-monospace, monospace); }
+.hist-commit:hover { text-decoration: underline; }
+
+@media (max-width: 1080px) {
+  .proof-layout { grid-template-columns: 1fr; gap: 26px; }
+  .snav, .rail { position: static; }
+  .snav { display: flex; flex-wrap: wrap; gap: 6px; }
+  .snav .divider, .snav .navgrouplabel { display: none; }
+  .snav a.sub { display: none; }
+  .snav a.sec, .snav a.icon { border: 1px solid var(--line); border-radius: 8px; }
+}

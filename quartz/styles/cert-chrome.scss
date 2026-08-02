@@ -1,0 +1,452 @@
+// Heavy Metal Certified — v3 chrome/home support styles.
+// Loaded LAST (after custom.scss) so it wins on equal specificity. The chrome
+// itself is reproduced with v3's verbatim inline styles in the components and
+// content; this file carries only what inline styles cannot do: full-bleed
+// framing, hover states, and the narrow-viewport collapses.
+
+// ============================================================
+//  CONTENT TYPOGRAPHY — match the v3 body treatment
+// ============================================================
+// v3 sets every heading in Lora at REGULAR weight (400); Quartz's base renders
+// them at 600, which reads far too heavy against the design.
+.wiki-content h1,
+.wiki-content h2,
+.wiki-content h3,
+.wiki-content h4,
+.wiki-content h5,
+.wiki-content h6,
+article h1,
+article h2,
+article h3 {
+  font-family: Lora, serif;
+  font-weight: 400 !important;
+  color: #2b1f1f;
+}
+// The v3 section-heading treatment (30px Lora with an underline rule) — interior
+// pages only. The home carries its own inline-styled section headings.
+.proof:not(.proof-home) .wiki-content h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  border-bottom: 1px solid #e8e1db;
+  padding-bottom: 10px;
+  margin: 0 0 20px;
+}
+.proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
+
+// Content links are blue (#1c43ad); red is reserved for structural accents
+// (active nav, section-accent rules, hero grounds), per the v3 design.
+.wiki-content a,
+.wiki-content a.internal,
+.wiki-content a.external {
+  color: #1c43ad;
+}
+.wiki-content a:hover,
+.wiki-content a.internal:hover,
+.wiki-content a.external:hover {
+  color: #163a94;
+}
+
+// ---- Home: let the full-bleed v3 sections span the viewport ----
+// The home content renders inside .proof-main > .wiki-content; strip their
+// padding/max-width so the red hero and section grids reach the page edges.
+.proof-home {
+  .proof-main,
+  .wiki-content {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+  // v3 sections own their own max-width:1760 inner wrapper + padding.
+  .wiki-content > section {
+    max-width: none;
+  }
+}
+
+// ---- Hero CTA hover (v3 style-hover) ----
+a.hmtc-hero-btn { transition: background 0.12s ease; }
+a.hmtc-hero-btn--solid:hover { background: #fbeceb !important; color: #7f1f1f; text-decoration: none; }
+a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 255, 0.14); text-decoration: none; color: #fff; }
+
+// ---- Narrow-viewport collapses for the home grids (< 1150px) ----
+@media (max-width: 1149px) {
+  .hmtc-home-hero-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 34px !important; padding: 52px 24px 56px !important; }
+  .hmtc-home-h1 { font-size: 40px !important; }
+  .hmtc-prose-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 26px !important; }
+  .hmtc-panel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #what, #panel, #questions { padding-left: 24px !important; padding-right: 24px !important; }
+}
+@media (max-width: 640px) {
+  .hmtc-panel-grid { grid-template-columns: minmax(0, 1fr) !important; }
+}
+
+// ============================================================
+//  v3 HEADER (Heavy Metal Certified v3.dc.html 41–109)
+// ============================================================
+
+// The full-bleed shell renderPage emits; carries the sticky white ground.
+header.hmi-topnav-shell {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  background: #fffdfb;
+  border-bottom: 1px solid #e8e1db;
+}
+header.hmi-topnav-shell::after {
+  // v3's 2px progress rule under the header
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #f2ece7;
+}
+
+.hmtc-bar {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 22px;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 48px;
+  height: 68px;
+}
+
+.hmtc-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-decoration: none;
+  padding-right: 8px;
+  background: none !important;
+}
+.hmtc-mark { display: block; width: 36px; height: 42px; flex: 0 0 auto; }
+.hmtc-wordmark {
+  font-family: Lora, serif;
+  font-size: 22px;
+  line-height: 1.15;
+  color: #2b1f1f;
+  letter-spacing: -0.015em;
+}
+
+// Nav trigger row
+.hmtc-nav {
+  display: flex;
+  align-items: stretch;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: visible;
+  gap: 2px;
+}
+.hmtc-nav .hmi-nav-list {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hmtc-nav .hmi-nav-item { display: flex; align-items: stretch; position: static; }
+.hmtc-nav .hmi-nav-top {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  font-size: 13.5px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  color: #3f3a3a;
+  background: none !important;
+}
+.hmtc-nav .hmi-nav-top:hover,
+.hmtc-nav .hmi-nav-item:hover .hmi-nav-top,
+.hmtc-nav .hmi-nav-top.active {
+  color: #9f2727;
+  border-bottom-color: #9f2727;
+}
+// No chevron — the 2px underline is the whole affordance (v3).
+.hmtc-nav .hmi-nav-toggle { display: none; }
+
+.hmtc-spacer { flex: 1 1 auto; min-width: 0; }
+
+.hmtc-actions {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+  gap: 12px;
+}
+.hmtc-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 36px;
+  padding: 0 13px;
+  border: 1px solid #e6ded8;
+  border-radius: 3px;
+  background: #fbf8f5 !important;
+  flex: 0 1 320px;
+  min-width: 60px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.hmtc-search:hover { border-color: #c9bdb8; background: #fdfaf8 !important; }
+.hmtc-search-glyph { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #b7aeae; flex: 0 0 auto; }
+.hmtc-search-label { font-size: 12.5px; color: #a9a1a1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.hmtc-search-kbd { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: #b7aeae; border: 1px solid #ebe4de; border-radius: 2px; padding: 1px 4px; }
+.hmtc-login { font-size: 12.5px; color: #736b6b; flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
+.hmtc-login:hover { color: #9f2727; }
+.hmtc-apply {
+  font-size: 12.5px;
+  color: #fff !important;
+  background: #9f2727 !important;
+  border-radius: 3px;
+  padding: 8px 15px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.hmtc-apply:hover { background: #7f1f1f !important; }
+
+.hmtc-burger { display: none; }
+
+// Mega-menu panel — drop below the full-width header (v3 71–95)
+.hmtc-nav .hmi-nav-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  background: #fffdfb;
+  border-bottom: 1px solid #e8e1db;
+  box-shadow: 0 22px 44px -24px rgba(120, 30, 30, 0.26);
+  visibility: hidden;
+  z-index: 79;
+}
+.hmtc-nav .hmi-nav-item:hover .hmi-nav-panel,
+.hmtc-nav .hmi-nav-panel.is-open { visibility: visible; }
+.hmtc-nav .hmi-nav-panel-inner {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 32px 48px 38px;
+}
+.hmtc-nav .hmi-nav-blurb { margin: 0 0 20px; font-size: 13px; line-height: 1.65; color: #736b6b; max-width: 60ch; }
+.hmtc-nav .hmi-nav-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+.hmtc-nav .hmi-nav-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hmtc-nav .hmi-nav-colhead {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+  margin: 0 0 11px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #efe9e3;
+}
+.hmtc-nav .hmi-nav-col li a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 13.5px;
+  color: #3f3a3a;
+  text-decoration: none;
+  border-bottom: 1px dotted #f2ece7;
+  background: none !important;
+}
+.hmtc-nav .hmi-nav-col li a:hover { color: #9f2727; }
+.hmtc-nav .hmi-nav-count { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #b7aeae; flex: 0 0 auto; }
+.hmtc-nav .hmi-nav-all {
+  display: inline-block;
+  margin-top: 22px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9f2727;
+  text-decoration: none;
+  background: none !important;
+}
+.hmtc-nav .hmi-nav-all:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+
+@media (max-width: 1149px) {
+  .hmtc-search-label, .hmtc-search-kbd, .hmtc-login { display: none; }
+  .hmtc-search { flex: 0 0 auto; width: 36px; justify-content: center; padding: 0; }
+}
+
+// ============================================================
+//  v3 INTERIOR HERO BAND (Heavy Metal Certified v3.dc.html 331–367)
+// ============================================================
+.hmtc-heroband-shell { width: 100%; }
+.hmtc-heroband { background: #9f2727; color: #fff; width: 100%; }
+.hmtc-heroband-inner {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 34px 48px 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 72px;
+  align-items: start;
+}
+.hmtc-heroband-inner--full { grid-template-columns: minmax(0, 1fr); }
+.hmtc-hb-left { min-width: 0; }
+
+.hmtc-hb-crumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 18px;
+}
+.hmtc-hb-crumb a { color: rgba(255, 255, 255, 0.68) !important; text-decoration: none; background: none !important; }
+.hmtc-hb-crumb a:hover { color: #fff !important; text-decoration: underline; }
+.hmtc-hb-leaf { color: #fff; }
+
+.hmtc-hb-titlerow { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.hmtc-hb-title {
+  font-family: Lora, serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+  color: #fff;
+  margin: 0;
+}
+.hmtc-hb-badge {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 2px;
+  padding: 4px 9px;
+}
+.hmtc-hb-dek {
+  margin: 18px 0 0;
+  max-width: 72ch;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+}
+.hmtc-hb-meta {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  align-items: center;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hmtc-hb-stamp { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: rgba(255, 255, 255, 0.72); }
+
+.hmtc-hb-snap { border: 1px solid rgba(255, 255, 255, 0.22); align-self: start; }
+.hmtc-hb-snap-head {
+  padding: 12px 17px;
+  background: rgba(0, 0, 0, 0.13);
+  font-family: Lora, serif;
+  font-size: 16px;
+  color: #fff;
+}
+.hmtc-hb-snap-body { padding: 6px 17px 14px; }
+.hmtc-hb-snap-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.22);
+}
+.hmtc-hb-snap-k { font-size: 12.5px; color: rgba(255, 255, 255, 0.84); }
+.hmtc-hb-snap-v { font-family: "IBM Plex Mono", monospace; font-size: 14px; color: #fff; font-variant-numeric: tabular-nums; }
+
+@media (max-width: 1149px) {
+  .hmtc-heroband-inner { grid-template-columns: minmax(0, 1fr) !important; gap: 30px !important; padding: 28px 24px 34px !important; }
+  .hmtc-hb-title { font-size: 34px !important; }
+}
+
+// ============================================================
+//  v3 FOOTER (Heavy Metal Certified v3.dc.html 2573–2597)
+// ============================================================
+footer.site-footer { background: var(--burg-dark, #7f1f1f) !important; color: rgba(255, 255, 255, 0.76); margin-top: 0; }
+footer.site-footer .site-footer-inner {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 76px 56px 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr));
+  gap: 72px;
+  align-items: start;
+}
+// Let the four columns become direct grid items alongside the brand column.
+footer.site-footer .site-footer-nav { display: contents; }
+footer.site-footer .site-footer-brand { max-width: none; }
+footer.site-footer .site-footer-logo {
+  font-family: Lora, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 14px;
+  display: inline-block;
+  text-decoration: none;
+  background: none !important;
+}
+footer.site-footer .site-footer-brand p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 42ch;
+  margin: 0;
+}
+footer.site-footer .site-footer-column h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.52);
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 0 14px;
+  font-weight: 500;
+}
+footer.site-footer .site-footer-column ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+footer.site-footer .site-footer-column a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.76);
+  text-decoration: none;
+  background: none !important;
+}
+footer.site-footer .site-footer-column a:hover { color: #fff; }
+footer.site-footer .site-footer-bottom {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 22px 56px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  align-items: baseline;
+}
+footer.site-footer .site-footer-bottom p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+@media (max-width: 1149px) {
+  footer.site-footer .site-footer-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; padding: 56px 24px 32px; }
+  footer.site-footer .site-footer-bottom { padding: 22px 24px 32px; }
+}

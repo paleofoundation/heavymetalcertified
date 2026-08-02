@@ -1,46 +1,44 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/footer.scss"
 
+// The v3 footer (Heavy Metal Certified v3.dc.html 2573–2597): a 1.5fr brand
+// column + four link columns on a deep-red (#7f1f1f) ground, closed by a
+// two-line legal bar. Column labels follow the design; every href resolves to a
+// page that exists in this repo (or a one-way external), so nothing 404s.
 const footerSections = [
   {
-    title: "Explore",
+    title: "Standards",
     links: [
-      ["Products", "/products"],
-      ["Ingredients", "/ingredients"],
-      ["Metals", "/metals"],
-      ["Regulations", "/regulations"],
-      ["Sources", "/sources"],
+      ["All standards", "/standards"],
+      ["Infant & Child Foods", "/manuals/infant-and-child-foods"],
+      ["Program Manuals", "/manuals"],
+      ["The analyte panel", "/#panel"],
+      ["Standards Briefings", "/briefings"],
     ],
   },
   {
-    title: "Evidence",
+    title: "Methodology",
     links: [
-      ["Trust Center", "/trust"],
-      ["Coverage (PRISMA)", "/coverage"],
-      ["Audit dashboard", "/audits"],
-      ["Methodology", "/methodology"],
-      ["Editorial Standards", "/editorial-standards"],
-      ["Testing", "/testing"],
-      ["Update History", "/log"],
-      ["Contact", "/contact"],
+      ["How limits are derived", "/program/structure"],
+      ["Two remediation pathways", "/program/two-pathways"],
+      ["Native basis and conversion", "/program/structure"],
+      ["The five publication gates", "/program/structure"],
     ],
   },
   {
-    title: "Foundation",
+    title: "Institute",
     links: [
-      ["About", "/about"],
+      ["Institute of Contaminant Standards", "https://contaminantstandards.com"],
+      ["Heavy Metal Index", "https://heavymetalindex.com"],
       ["Paleo Foundation", "https://paleofoundation.com"],
-      ["WikiBiome", "https://wikibiome.com"],
-      ["Heavy Metal Tested", "https://heavymetaltested.com"],
     ],
   },
   {
-    title: "Legal",
+    title: "Verify & apply",
     links: [
-      ["Privacy Notice", "/privacy"],
-      ["Terms", "/terms"],
-      ["Licensing", "/licensing"],
-      ["Staff", "/staff"],
+      ["Verify a certificate", "/verify"],
+      ["Certified brands", "/brands"],
+      ["Apply for certification", "/apply"],
     ],
   },
 ]
@@ -51,17 +49,14 @@ export default (() => {
     return (
       <footer id="site-footer" class={`site-footer ${displayClass ?? ""}`}>
         <div class="site-footer-inner">
-          <section class="site-footer-brand" aria-label="Heavy Metal Index">
+          <section class="site-footer-brand" aria-label="Heavy Metal Certified">
             <a class="site-footer-logo" href="/">
-              Heavy Metal Index
+              Heavy Metal Certified
             </a>
             <p>
-              Public evidence index for heavy metals in foods, ingredients, regulations, and
-              source literature.
+              Published heavy-metal standards, set per subcategory in each product's native basis,
+              and derived from a pooled distribution of the peer-reviewed and agency literature.
             </p>
-            <button type="button" class="site-footer-ask" data-ask-index-trigger>
-              Ask the Index
-            </button>
           </section>
           <nav class="site-footer-nav" aria-label="Footer">
             {footerSections.map((section) => (
@@ -75,33 +70,10 @@ export default (() => {
                         <a
                           href={link}
                           {...(isExternal
-                            ? {
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                class: "site-footer-external",
-                              }
+                            ? { target: "_blank", rel: "noopener noreferrer", class: "site-footer-external" }
                             : {})}
                         >
                           {text}
-                          {isExternal && (
-                            <svg
-                              class="site-footer-external-icon"
-                              aria-hidden="true"
-                              width="12"
-                              height="12"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            >
-                              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                              <polyline points="15 3 21 3 21 9"></polyline>
-                              <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                          )}
-                          {isExternal && <span class="sr-only"> (opens in a new tab)</span>}
                         </a>
                       </li>
                     )
@@ -112,8 +84,8 @@ export default (() => {
           </nav>
         </div>
         <div class="site-footer-bottom">
-          <p>© {year} Paleo Foundation. Heavy Metal Index is a public reference project.</p>
-          <p>Reference only. Not medical, legal, regulatory, or product-certification advice.</p>
+          <p>© {year} Paleo Certified, Inc.</p>
+          <p>Operated by the Institute of Contaminant Standards.</p>
         </div>
       </footer>
     )

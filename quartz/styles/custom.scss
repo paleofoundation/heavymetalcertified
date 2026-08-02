@@ -1,4 +1,7 @@
 @use "./base.scss";
+@use "./proof-design.scss";
+@use "./home.scss";
+@use "./cert-chrome.scss";
 
 /* ============================================================
    Heavy Metal Index — custom styles
@@ -34,7 +37,7 @@
 
 :root {
   /* Brand colors */
-  --color-primary: #8b2a4a;
+  --color-primary: #9f2727;
   --color-secondary: #78716c;
   --color-accent: #aab8be;
   --color-background: #fdfdfc;
@@ -44,17 +47,17 @@
   --color-border: rgba(139, 42, 74, 0.15);
 
   /* Primary scale (burgundy) */
-  --color-primary-50: #f7f2f4;
-  --color-primary-100: #f2e3e8;
-  --color-primary-200: #ecc0cf;
-  --color-primary-300: #de91ab;
-  --color-primary-400: #cd5b80;
-  --color-primary-500: #b43660;
-  --color-primary-600: #8d2b4b;
-  --color-primary-700: #6e213a;
-  --color-primary-800: #4e182a;
-  --color-primary-900: #36111d;
-  --color-primary-950: #1d0c12;
+  --color-primary-50: #fdf4f3;
+  --color-primary-100: #fbeceb;
+  --color-primary-200: #f2dcda;
+  --color-primary-300: #e3a9a5;
+  --color-primary-400: #cf736d;
+  --color-primary-500: #b84640;
+  --color-primary-600: #9f2727;
+  --color-primary-700: #7f1f1f;
+  --color-primary-800: #631818;
+  --color-primary-900: #4a1212;
+  --color-primary-950: #2b0c0c;
 
   /* Secondary scale (warm gray) */
   --color-secondary-50: #f5f5f5;
@@ -138,7 +141,7 @@
    text-on-dark contrast holds. */
 
 :root[saved-theme="dark"] {
-  --color-primary: #c76b8e;
+  --color-primary: #e08a8a;
   --color-background: #141414;
   --color-text: #e8e6e1;
   --color-text-secondary: rgba(232, 230, 225, 0.72);
@@ -1970,7 +1973,7 @@ article > table {
 
 :root[saved-theme="dark"] footer.site-footer,
 :root[saved-theme="dark"] .hmi-home-corpus-counter {
-  background: #6e213a;
+  background: #7f1f1f;
 }
 
 /* -----------------------------------------------------------

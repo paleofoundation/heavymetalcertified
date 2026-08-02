@@ -31,6 +31,11 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import TopNav from "./TopNav"
+import Snav from "./Snav"
+import Rail from "./Rail"
+import DedicatedPages from "./DedicatedPages"
+import HeroBand from "./HeroBand"
 
 export {
   ArticleTitle,
@@ -66,4 +71,9 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  TopNav,
+  Snav,
+  Rail,
+  DedicatedPages,
+  HeroBand,
 }

@@ -1,0 +1,536 @@
+@use "sass:map";
+@use "../../styles/variables.scss" as *;
+
+// Global full-width sticky top bar.
+//
+// The OUTER shell (.hmi-topnav-shell) is emitted by renderPage.tsx as a
+// <header> that is a direct child of <body>, OUTSIDE #quartz-root, so it is
+// NOT constrained by .page's max-width and spans the full viewport. The bar's
+// own content is re-centered to the same max-width as .page via
+// .hmi-topnav-inner, so the wordmark lines up with the left sidebar and the
+// controls line up with the right sidebar.
+
+.hmi-topnav-shell {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--lightgray);
+  // Match the dark theme: keep the bar readable when the page flips to dark.
+  // White stays intentional (brief calls for a white bar), but the hairline
+  // and text tokens come from theme vars so it never goes invisible.
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+[saved-theme="dark"] .hmi-topnav-shell {
+  background-color: #ffffff;
+}
+
+.hmi-topnav {
+  width: 100%;
+}
+
+.hmi-topnav-inner {
+  // Must match .proof-container in proof-design.scss exactly (--maxw + 40px).
+  // These were 1500px/2rem against the page grid's 1480px/40px, so the wordmark
+  // sat 18px off the content edge — invisible until the full-width mega-menu
+  // drawer put a second edge next to it.
+  max-width: var(--maxw, 1480px);
+  margin: 0 auto;
+  padding: 0.55rem 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media all and not ($desktop) {
+    padding: 0.55rem 1rem;
+  }
+}
+
+// ---- Wordmark + operator sub-line --------------------------------------
+.hmi-topnav-brand {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  line-height: 1.1;
+  background-color: transparent !important; // override a.internal highlight
+  padding: 0;
+
+  &:hover .hmi-topnav-wordmark {
+    color: var(--secondary);
+  }
+
+  // Clean focus: no default browser box on click; a tidy burgundy ring only on
+  // keyboard navigation.
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+}
+
+.hmi-topnav-wordmark {
+  font-family: var(--titleFont, var(--headerFont));
+  font-size: 1.15rem;
+  font-weight: $boldWeight;
+  color: #1a1a1a;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.hmi-topnav-operator {
+  font-family: var(--bodyFont);
+  font-size: 0.7rem;
+  font-weight: $normalWeight;
+  color: #6b6b6b;
+  margin-top: 0.1rem;
+}
+
+// ---- Menu (taxonomy + controls) ----------------------------------------
+.hmi-topnav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  gap: 1.5rem;
+}
+
+// ---- Mega-menu ----------------------------------------------------------
+//
+// Disclosure model, in three layers that degrade cleanly:
+//
+//   DOM  — every panel is server-rendered on every page. Hidden with
+//          `visibility`, never `display:none`/`[hidden]`, so the contents stay
+//          in the HTML for crawlers AND leave the tab order when closed.
+//   CSS  — `:focus-within` opens a panel with no JS (the keyboard path), and
+//          `:hover` opens it ONLY on devices with a real pointer. Without that
+//          media gate a phone tap latches the panel open across the page.
+//   JS   — topNav.inline.ts adds `.hmi-nav--js`, which disables both CSS rules
+//          and takes over via `.is-open`, so hover intent and the two systems
+//          never fight.
+
+.hmi-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hmi-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hmi-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  // The panel is positioned against the sticky shell, not this item — see
+  // .hmi-nav-panel. A full-width drawer means the pointer path from any trigger
+  // to any panel link runs straight down and never crosses a sibling trigger,
+  // which is the diagonal-travel problem every anchored dropdown has.
+  position: static;
+}
+
+.hmi-nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  margin: 0;
+  color: #6b6b6b;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    color: var(--secondary);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+.hmi-nav-item.is-open > .hmi-nav-toggle svg {
+  transform: rotate(180deg);
+}
+
+.hmi-nav-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--lightgray);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.11);
+  z-index: 40;
+  transition: opacity 0.14s ease;
+
+  // Bridges the sub-pixel gap between the bar and the drawer so a slow pointer
+  // crossing the seam does not read as "left the panel".
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+  }
+}
+
+.hmi-nav-item.is-open > .hmi-nav-panel {
+  visibility: visible;
+  opacity: 1;
+}
+
+// No-JS paths. Disabled the moment the script boots (.hmi-nav--js).
+.hmi-nav:not(.hmi-nav--js) .hmi-nav-item:focus-within > .hmi-nav-panel {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hmi-nav:not(.hmi-nav--js) .hmi-nav-item:hover > .hmi-nav-panel {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.hmi-nav-panel-inner {
+  max-width: var(--maxw, 1480px);
+  margin: 0 auto;
+  padding: 1.6rem 40px 1.9rem;
+}
+
+.hmi-nav-blurb {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  color: #6b6b6b;
+  max-width: 46rem;
+}
+
+.hmi-nav-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem 3rem;
+  max-width: 46rem;
+}
+
+.hmi-nav-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hmi-nav-col li {
+  margin: 0;
+}
+
+.hmi-nav-colhead {
+  font-family: var(--headerFont);
+  font-size: 1.02rem;
+  font-weight: $semiBoldWeight;
+  color: var(--dark);
+  margin: 0 0 0.5rem;
+}
+
+.hmi-nav-col a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.34rem 0;
+  font-size: 0.93rem;
+  color: #333333;
+  background-color: transparent;
+
+  &:hover {
+    color: var(--secondary);
+    text-decoration: none;
+
+    .hmi-nav-childlabel {
+      text-decoration: underline;
+    }
+  }
+}
+
+.hmi-nav-count {
+  font-size: 0.79rem;
+  color: #9aa0a8;
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+
+.hmi-nav-all {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: $semiBoldWeight;
+  color: var(--secondary);
+  background-color: transparent;
+}
+
+.hmi-topnav-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hmi-nav-top,
+.hmi-topnav-utility {
+  font-family: var(--headerFont);
+  font-size: 0.92rem;
+  font-weight: $semiBoldWeight;
+  color: #333333;
+  background-color: transparent;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  &:hover {
+    color: var(--secondary);
+  }
+
+  &.active {
+    color: var(--secondary);
+    border-bottom-color: var(--secondary);
+  }
+}
+
+.hmi-topnav-utility {
+  font-weight: $normalWeight;
+  color: #6b6b6b;
+}
+
+// "Ask the Index" pill launcher.
+.hmi-topnav-ask {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--headerFont);
+  font-size: 0.88rem;
+  font-weight: $semiBoldWeight;
+  color: #ffffff;
+  background-color: var(--secondary);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
+  & svg {
+    stroke: #ffffff;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: var(--tertiary);
+    & svg {
+      stroke: #ffffff;
+    }
+  }
+}
+
+// ---- Mobile burger ------------------------------------------------------
+.hmi-topnav-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333333;
+  padding: 0.25rem;
+  margin-left: auto;
+}
+
+// Tablet + mobile: collapse the menu behind the burger.
+// ---- Grid spacing reconciliation ---------------------------------------
+// The original layout reserved $topSpacing (6rem) at the top of the sidebars
+// and page-header to clear the old in-flow header. With the header lifted to a
+// sticky full-width bar, that reservation becomes a dead gap and the sticky
+// sidebars would scroll UNDER the bar. Scope these corrections to pages that
+// actually render the bar (body:has(.hmi-topnav-shell)) so nothing else moves.
+//
+// $topSpacing is 6rem and the bar is ~3.5rem tall; we drop the reserved space
+// to a small breathing gap and offset the sticky sidebars by the bar height so
+// they pin just beneath it.
+$hmi-topnav-height: 3.6rem;
+
+body:has(.hmi-topnav-shell) {
+  & .page > #quartz-body {
+    & .sidebar {
+      padding-top: 1.5rem;
+      top: $hmi-topnav-height;
+      height: calc(100vh - #{$hmi-topnav-height});
+    }
+
+    // When the left rail's content genuinely exceeds the viewport (content-heavy
+    // metals pages with many sections), let it scroll on its own with a thin,
+    // unobtrusive scrollbar so the icon-nav + counts stay reachable. Normal-length
+    // pages (regulators, ingredients) fit and never show a scrollbar.
+    & .sidebar.left {
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--lightgray) transparent;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--lightgray);
+        border-radius: 4px;
+      }
+    }
+
+    & .page-header {
+      margin-top: 1.25rem;
+    }
+
+    @media all and ($mobile) {
+      & .sidebar.left {
+        top: 0;
+        height: unset;
+        padding-top: 1rem;
+      }
+      & .page-header {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+@media all and not ($desktop) {
+  .hmi-topnav-burger {
+    display: inline-flex;
+  }
+
+  .hmi-topnav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--lightgray);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 1rem 1rem 1rem;
+
+    &.open {
+      display: flex;
+    }
+  }
+
+  .hmi-topnav-inner {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .hmi-nav-list,
+  .hmi-topnav-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .hmi-nav-list {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--lightgray);
+    margin-bottom: 0.5rem;
+  }
+
+  // Inside the burger drawer the panels become in-flow accordions driven by the
+  // SAME `is-open` class the desktop drawer uses — one JS path, two
+  // presentations. Still `visibility`, never `display:none`: mobile-first
+  // Googlebot is the primary crawler and must see the panel contents here too.
+  .hmi-nav-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+  }
+
+  .hmi-nav-top {
+    width: 100%;
+    padding: 0.6rem 0;
+    border-bottom: none;
+    &.active {
+      border-bottom: none;
+    }
+  }
+
+  .hmi-nav-toggle {
+    // 44px touch target — the chevron is the only way to open a panel on touch,
+    // so it cannot be a 14px icon hitbox.
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .hmi-nav-panel {
+    position: static;
+    grid-column: 1 / -1;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: none;
+    border-bottom: none;
+    transition: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hmi-nav-item.is-open > .hmi-nav-panel {
+    max-height: none;
+  }
+
+  .hmi-nav-panel-inner {
+    padding: 0.2rem 0 0.9rem 0.75rem;
+  }
+
+  .hmi-nav-blurb {
+    display: none;
+  }
+
+  .hmi-nav-cols {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hmi-topnav-ask {
+    align-self: flex-start;
+  }
+}

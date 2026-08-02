@@ -1,0 +1,629 @@
+// Homepage layer.
+//
+// TOKEN RULE, and the reason this file exists separately: colour, borders and
+// layout width come from the *proof* tokens declared in proof-design.scss
+// (`--burg`, `--ink`, `--body`, `--muted`, `--line`, `--shade`, `--maxw`) —
+// the same system every other page on the site uses. Where proof has no token
+// (shadows, the type scale, `--radius-md`) use the existing Refine tokens from
+// custom.scss. Invent nothing; a third scale is how the homepage drifted onto
+// its own visual system in the first place.
+//
+// Specifically NOT `--secondary`: it is the same #8B2A4A in light mode but
+// flips to #C76B8E in dark, which is the bug custom.scss patches by hard-coding
+// #6e213a for the footer. `--burg` has no dark override, so a burgundy band
+// built on it is theme-stable by construction.
+//
+// FULL BLEED, without `100vw`: `100vw` includes the scrollbar and overflows on
+// Windows. Instead renderPage's `.proof-home` un-constrains the column (see
+// proof-design.scss) and each section is a band that re-centers its own inner
+// wrapper to `--maxw` — the same shell/inner shape the sticky TopNav uses, so
+// the band edges line up with the nav.
+
+// The sticky header carries a 32px bottom margin that gives content pages
+// breathing room above the breadcrumb. The burgundy band should butt against the
+// bar instead. Selected off `body[data-slug]` because the header is emitted
+// outside #quartz-root, where the `.proof-home` class cannot reach it.
+body[data-slug="index"] .hmi-topnav-shell {
+  margin-bottom: 0;
+}
+
+.hmi-band {
+  width: 100%;
+}
+
+.hmi-band-inner {
+  max-width: var(--maxw, 1480px);
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media (max-width: 700px) {
+    padding: 0 20px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Hero
+// ---------------------------------------------------------------------------
+.hmi-band--hero {
+  background: var(--burg);
+  color: #fff;
+  padding: 4.5rem 0 4rem;
+
+  @media (max-width: 700px) {
+    padding: 3rem 0 2.75rem;
+  }
+}
+
+.hmi-hero-kicker {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 0.9rem;
+}
+
+.hmi-band--hero h1 {
+  font-family: Lora, serif;
+  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  line-height: 1.14;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 1rem;
+  max-width: 20ch;
+}
+
+.hmi-hero-dek {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 1.4rem;
+  max-width: 62ch;
+}
+
+// Hero CTAs on the red ground: one solid (white on red) + ghost outlines.
+// Selectors are scoped `a.hmi-hero-btn` so they out-specify Quartz's base
+// `a.internal` background/padding (these links carry the `internal` class).
+.hmi-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1.4rem;
+}
+.hmi-hero-actions a.hmi-hero-btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hmi-hero-actions a.hmi-hero-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+  color: #fff;
+}
+.hmi-hero-actions a.hmi-hero-btn--solid {
+  background: #fff;
+  color: #9f2727;
+  border-color: #fff;
+}
+.hmi-hero-actions a.hmi-hero-btn--solid:hover {
+  background: #f6ecec;
+  color: #9f2727;
+}
+
+// The hero search reuses Quartz's own .search / .search-button / .search-bar
+// classes so search.inline.ts binds to it without a second implementation.
+// Only the skin changes here.
+.hmi-hero-search {
+  max-width: 46rem;
+}
+
+.hmi-hero-search .search-button {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  cursor: text;
+  text-align: left;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.hmi-hero-search-label {
+  flex: 1 1 auto;
+  padding: 1.05rem 1.25rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-family: inherit;
+}
+
+.hmi-hero-search-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4rem;
+  background: var(--burg-dark);
+  color: #fff;
+}
+
+// The search modal itself. Quartz's Search component is not in the layout, so
+// its stylesheet never loads and this is the only skin the hero search has —
+// including the default `display: none`, without which the raw input renders
+// under the button on page load.
+.hmi-hero-search.search > .search-container {
+  display: none;
+  backdrop-filter: none;
+  contain: none;
+  height: auto;
+  left: 0;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.hmi-hero-search {
+  position: relative;
+}
+
+.hmi-hero-search.search > .search-container.active {
+  display: block;
+}
+
+.hmi-hero-search.search > .search-container > .search-space {
+  margin: 0;
+  width: 100%;
+}
+
+.hmi-hero-search.search > .search-container > .search-space > * {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.hmi-hero-search.search > .search-container > .search-space > .search-bar {
+  border: 2px solid var(--burg);
+  box-sizing: border-box;
+  color: var(--ink);
+  font-size: 1.02rem;
+  min-height: 3.6rem;
+  padding: 0 1.25rem;
+
+  &:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.55);
+    outline-offset: 3px;
+  }
+}
+
+.hmi-hero-search.search > .search-container > .search-space > .search-layout {
+  border-color: var(--line);
+  margin-top: 0.65rem;
+  max-height: min(58vh, 460px);
+  overflow: auto;
+
+  &.display-results {
+    display: block;
+  }
+}
+
+.hmi-hero-search.search .search-layout > .results-container {
+  height: auto;
+  max-height: min(58vh, 460px);
+}
+
+.hmi-hero-search.search .result-card {
+  color: var(--ink);
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background: var(--burg-tint) !important;
+  }
+}
+
+.hmi-hero-search.search .result-card > h3.card-title {
+  color: var(--ink);
+  font-family: var(--bodyFont), sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.hmi-hero-search.search .result-card > p.card-description {
+  color: var(--body);
+  display: block;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin-top: 0.35rem;
+}
+
+.hmi-hero-search.search .highlight {
+  background: var(--burg-tint) !important;
+  border-radius: 0.2rem;
+  color: inherit;
+}
+
+.hmi-hero-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  list-style: none;
+  margin: 1.15rem 0 0;
+  padding: 0;
+}
+
+.hmi-hero-examples li {
+  margin: 0;
+}
+
+// Real anchors, not buttons: crawlable, shareable, keyboard-native, and they
+// work with JS off. They are also what makes the SearchAction in the homepage
+// JSON-LD an honest claim rather than a URL template nothing honours.
+.hmi-hero-examples a.hmi-chip {
+  display: inline-block;
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.88rem;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+}
+
+.hmi-hero-examples-label {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.85rem;
+  margin: 1.4rem 0 0;
+}
+
+// ---------------------------------------------------------------------------
+// Light bands below the hero
+// ---------------------------------------------------------------------------
+.hmi-band--light {
+  padding: 3.25rem 0;
+}
+
+.hmi-band--shade {
+  background: var(--shade);
+  padding: 3.25rem 0;
+}
+
+.hmi-band h2 {
+  font-family: Lora, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.hmi-band-lede {
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+  max-width: 70ch;
+}
+
+// Head-term explainer prose. The homepage owns "heavy metals in food" per the
+// IA plan's intent-ownership matrix; before this it carried no indexable prose
+// at all.
+.hmi-home-prose {
+  max-width: 68ch;
+
+  p {
+    color: var(--body);
+    line-height: 1.72;
+    margin: 0 0 1.1rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Most-referenced pages — three columns
+// ---------------------------------------------------------------------------
+.hmi-home-top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem 2.5rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hmi-home-top-col h3 {
+  font-family: Lora, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hmi-home-top-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hmi-home-top-col li {
+  margin: 0;
+}
+
+.hmi-home-top-col li a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.42rem 0;
+  color: var(--body);
+  background: transparent;
+
+  &:hover {
+    color: var(--burg);
+  }
+}
+
+.hmi-home-top-count {
+  font-size: 0.82rem;
+  color: var(--faint);
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+
+.hmi-home-top-all {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--burg);
+  background: transparent;
+}
+
+// ---------------------------------------------------------------------------
+// Change feed
+// ---------------------------------------------------------------------------
+.hmi-home-feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 74ch;
+}
+
+.hmi-home-feed li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line2);
+  margin: 0;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+.hmi-home-feed time {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.hmi-home-feed-what {
+  color: var(--body);
+  line-height: 1.5;
+}
+
+.hmi-home-feed-what a {
+  color: var(--burg);
+  background: transparent;
+}
+
+// ---------------------------------------------------------------------------
+// FAQ — <details>, so every answer ships in the static HTML. A JS-fetched
+// accordion is invisible to the crawlers this section exists for.
+// ---------------------------------------------------------------------------
+.hmi-home-faq {
+  max-width: 74ch;
+}
+
+.hmi-home-faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 0;
+}
+
+.hmi-home-faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 2rem 1rem 0;
+  position: relative;
+  font-family: Lora, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::after {
+    content: "+";
+    position: absolute;
+    right: 0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--burg);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+.hmi-home-faq details[open] > summary::after {
+  content: "−";
+}
+
+.hmi-home-faq-answer {
+  padding: 0 2rem 1.15rem 0;
+
+  p {
+    margin: 0 0 0.85rem;
+    color: var(--body);
+    line-height: 1.7;
+  }
+
+  a {
+    color: var(--burg);
+    background: transparent;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// How the Index is built
+// ---------------------------------------------------------------------------
+.hmi-home-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.75rem;
+  counter-reset: hmi-step;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hmi-home-step {
+  counter-increment: hmi-step;
+}
+
+.hmi-home-step h3 {
+  font-family: Lora, serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.45rem;
+
+  &::before {
+    content: counter(hmi-step);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.55rem;
+    border-radius: 50%;
+    background: var(--burg-tint);
+    color: var(--burg);
+    font-family: var(--bodyFont), sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+.hmi-home-step p {
+  color: var(--body);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin: 0 0 0.5rem;
+}
+
+.hmi-home-step a {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--burg);
+  background: transparent;
+}
+
+// ---------------------------------------------------------------------------
+// Corpus counter — inherited markup, re-skinned onto the band grid.
+// ---------------------------------------------------------------------------
+.hmi-home-corpus-counter {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.hmi-home-corpus-counter .hmi-home-corpus-counter-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+}
+
+.hmi-home-corpus-counter-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+  margin: 0;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 620px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hmi-home-corpus-counter-grid div {
+  margin: 0;
+}
+
+.hmi-home-corpus-counter-grid dt {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.35;
+  margin: 0 0 0.2rem;
+  order: 2;
+}
+
+.hmi-home-corpus-counter-grid dd {
+  font-family: Lora, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--burg);
+  margin: 0;
+  line-height: 1.1;
+  order: 1;
+}
+
+.hmi-home-corpus-counter-grid dd a {
+  color: inherit;
+  background: transparent;
+}
+
+.hmi-home-corpus-counter-meta {
+  font-size: 0.82rem;
+  color: var(--faint);
+  margin: 1.5rem 0 0;
+  max-width: 78ch;
+}
+
+.hmi-home-corpus-counter-meta a {
+  color: var(--muted);
+  background: transparent;
+}

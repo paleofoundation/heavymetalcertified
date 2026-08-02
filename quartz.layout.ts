@@ -54,7 +54,9 @@ const primaryNavFilter = (node: { slugSegment: string }) => {
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  // The global TopNav (wordmark + mega-menu + controls). renderPage.tsx lifts
+  // this into a full-bleed sticky <header> outside #quartz-root.
+  header: [Component.TopNav()],
   afterBody: [Component.Corrections(), Component.RelatedPages(), Component.CiteThisPage()],
   footer: Component.Footer(),
 };
@@ -64,73 +66,27 @@ export const sharedPageComponents: SharedLayout = {
 // Dense graph and backlink widgets are useful during corpus development,
 // but they compete with the primary reading path on public reference pages.
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [
-    Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-    Component.ArticleTitle(),
-    // Reading time disabled: a reference work is consulted, not read
-    // start-to-finish, so a "166 min read" estimate on a long synthesis
-    // page is misleading and discouraging rather than informative. The
-    // last-updated date is the meta that matters here.
-    Component.ContentMeta({ showReadingTime: false }),
-    Component.EvidenceHeader(),
-    Component.ProductEvidenceSummary(),
-    Component.BrandPreScreenTool(),
-    Component.SourceCitationPanel(),
-    Component.TagList(),
-  ],
+  // The v3 interior hero band (breadcrumb · title · kind badge · meta ·
+  // snapshot). renderPage.tsx lifts beforeBody into a full-width band above the
+  // 3-column shell; the home page opts out (it carries its own hero in content).
+  beforeBody: [Component.HeroBand()],
+  // Proof's curated left rail (.snav): per-page section nav + a compact
+  // cross-reference count group. Global navigation now lives in the TopNav.
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
-    Component.AskIndex(),
-    Component.Explorer({
-      title: "Index",
-      folderDefaultState: "collapsed",
-      useSavedState: false,
-      filterFn: primaryNavFilter,
-    }),
+    Component.Snav(),
+    Component.DedicatedPages(),
   ],
-  right: [Component.DesktopOnly(Component.TableOfContents())],
+  // Proof's right rail (.rail): the certificate-verify affordance and page
+  // provenance/actions.
+  right: [Component.Rail()],
 };
 
 // components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [
-    Component.Breadcrumbs(),
-    Component.ArticleTitle(),
-    Component.ContentMeta({ showReadingTime: false }),
-  ],
+  beforeBody: [Component.HeroBand()],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.AskIndex(),
-    Component.Explorer({
-      title: "Index",
-      folderDefaultState: "collapsed",
-      useSavedState: false,
-      filterFn: primaryNavFilter,
-    }),
+    Component.Snav(),
+    Component.DedicatedPages(),
   ],
-  right: [],
+  right: [Component.Rail()],
 };

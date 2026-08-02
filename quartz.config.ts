@@ -39,11 +39,10 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        // Inter throughout — modern reference register, Answerthis-aligned.
-        // Replaces the Source Serif Pro / Source Sans Pro pairing to match
-        // the sans-throughout brief. IBM Plex Mono retained for data fields,
-        // citation slugs, and code.
-        header: "Inter",
+        // v3 design: Lora (serif) for display/headings, Inter for body, IBM Plex
+        // Mono for labels, stamps and measured values. Setting header:Lora loads
+        // the Lora face the inline chrome/home styles reference.
+        header: "Lora",
         body: "Inter",
         code: "IBM Plex Mono",
       },
@@ -62,9 +61,13 @@ const config: QuartzConfig = {
           gray: "#767067",
           darkgray: "#2a2d34",
           dark: "#1a1d24",
-          secondary: "#176b43",
+          // HMTc red (#9f2727) — the v3 design accent, replacing the earlier
+          // verification-green. Drives links, active nav and component accents
+          // through var(--secondary); the theme-stable brand grounds (hero,
+          // footer, table heads) ride on proof-design.scss --burg.
+          secondary: "#9f2727",
           tertiary: "#6b6b6b",
-          highlight: "rgba(23, 107, 67, 0.06)",
+          highlight: "rgba(159, 39, 39, 0.06)",
           textHighlight: "#f0e68c55",
         },
         darkMode: {
@@ -75,9 +78,10 @@ const config: QuartzConfig = {
           gray: "#848484",
           darkgray: "#cfcfcf",
           dark: "#e8e6e1",
-          secondary: "#4cae7a",
+          // Lightened HMTc red for dark-mode AA on the near-black --light.
+          secondary: "#e08a8a",
           tertiary: "#9aa0a8",
-          highlight: "rgba(76, 174, 122, 0.12)",
+          highlight: "rgba(224, 138, 138, 0.12)",
           textHighlight: "#b3aa0255",
         },
       },

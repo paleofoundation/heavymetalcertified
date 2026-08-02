@@ -1,6 +1,5 @@
 import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
-import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
 import { JSResourceToScriptElement, StaticResources } from "../util/resources"
 import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
@@ -238,8 +237,10 @@ export function renderPage(
     right,
     footer: Footer,
   } = components
-  const Header = HeaderConstructor()
   const Body = BodyConstructor()
+  // The homepage carries its own full-bleed hero, so it opts out of the proof's
+  // 3-column grid (no snav/rail) and renders full-width.
+  const isHome = (slug as string) === "index"
 
   const LeftComponent = (
     <div class="left sidebar">
@@ -266,31 +267,60 @@ export function renderPage(
         <a href="#main-content" class="skip-to-content">
           Skip to content
         </a>
-        <div id="quartz-root" class="page">
+        {/*
+          Full-width shared header (the global TopNav). Lifted OUTSIDE
+          #quartz-root so it escapes .page's max-width + auto-margins and spans
+          the entire viewport as a sticky bar. The shared `header` array
+          (quartz.layout.ts sharedPageComponents.header) renders here; the bar
+          re-centers its own content to the page width internally
+          (.hmi-topnav-inner). Renders nothing if `header` is empty.
+        */}
+        {header.length > 0 && (
+          <header class="hmi-topnav-shell">
+            {header.map((HeaderComponent) => (
+              <HeaderComponent {...componentData} />
+            ))}
+          </header>
+        )}
+        {/*
+          The v3 interior hero band is a full-width red band that sits ABOVE the
+          3-column shell (not inside the centered .proof-main). beforeBody carries
+          the HeroBand component; it is lifted out here so it spans the viewport.
+          The home page carries its own full-bleed hero in content, so it opts out.
+        */}
+        {!isHome && beforeBody.length > 0 && (
+          <div class="hmtc-heroband-shell">
+            {beforeBody.map((BodyComponent) => (
+              <BodyComponent {...componentData} />
+            ))}
+          </div>
+        )}
+        <div id="quartz-root" class={isHome ? "page proof proof-home" : "page proof"}>
           <Body {...componentData}>
-            {LeftComponent}
-            <main class="center" id="main-content" tabindex={-1}>
-              <div class="page-header">
-                <Header {...componentData}>
-                  {header.map((HeaderComponent) => (
-                    <HeaderComponent {...componentData} />
-                  ))}
-                </Header>
-                <div class="popover-hint">
-                  {beforeBody.map((BodyComponent) => (
+            <div class="proof-container">
+              <div class="proof-layout">
+                <aside class="snav">
+                  {left.map((BodyComponent) => (
                     <BodyComponent {...componentData} />
                   ))}
-                </div>
+                </aside>
+                <main class="proof-main" id="main-content" tabindex={-1}>
+                  <div class="wiki-content">
+                    <Content {...componentData} />
+                  </div>
+                  <div class="page-footer">
+                    {afterBody.map((BodyComponent) => (
+                      <BodyComponent {...componentData} />
+                    ))}
+                  </div>
+                </main>
+                <aside class="rail">
+                  {right.map((BodyComponent) => (
+                    <BodyComponent {...componentData} />
+                  ))}
+                </aside>
               </div>
-              <Content {...componentData} />
-              <hr />
-              <div class="page-footer">
-                {afterBody.map((BodyComponent) => (
-                  <BodyComponent {...componentData} />
-                ))}
-              </div>
-            </main>
-            {RightComponent}
+            </div>
           </Body>
         </div>
         <Footer {...componentData} />
