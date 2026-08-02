@@ -635,3 +635,55 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 .hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: #5a4141; }
 .hmtc-verify-cta { display: inline-block; background: #9f2727; color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
 .hmtc-verify-cta:hover { background: #7f1f1f; }
+
+// ============================================================
+//  v3 BODY CONTENT — kill Quartz's default prose/table bleed
+//  Quartz base renders body at 1.1rem/#1a1d24 and table heads in the header
+//  font; the comp uses 16.5px/#3f3a3a body and IBM Plex Mono table heads.
+// ============================================================
+.proof:not(.proof-home) .wiki-content { color: #3f3a3a; }
+.proof:not(.proof-home) .wiki-content p,
+.proof:not(.proof-home) .wiki-content li {
+  font-size: 16.5px !important;
+  line-height: 1.78 !important;
+  color: #3f3a3a !important;
+}
+.proof:not(.proof-home) .wiki-content { color: #3f3a3a !important; }
+.wiki-content ul, .wiki-content ol { color: #3f3a3a; }
+.wiki-content strong, .wiki-content b { color: #2b1f1f; font-weight: 600; }
+
+// Burgundy table (CHROME-SPEC §2), red head in IBM Plex Mono.
+.wiki-content table {
+  width: 100%;
+  font-size: 13.5px;
+  border: 1px solid #e8e1db;
+  border-collapse: collapse;
+  margin: 12px 0 22px;
+  display: block;
+  overflow-x: auto;
+}
+.wiki-content thead tr { background: #9f2727; }
+.wiki-content thead th {
+  color: #fff !important;
+  text-align: left;
+  padding: 11px 15px !important;
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.wiki-content tbody td {
+  padding: 13px 15px !important;
+  vertical-align: top;
+  border-bottom: 1px solid #f2ece7;
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #3f3a3a;
+}
+.wiki-content tbody tr:nth-child(odd) { background: #fdfaf8; }
+.wiki-content tbody tr:hover { background: #fbeceb; }
+
+// Lead-in / caption copy (mono-adjacent) stays muted.
+.wiki-content blockquote { border-left: 3px solid #9f2727; background: #fbf5f7; padding: 18px 22px; margin: 0 0 28px; color: #5a4148; }
