@@ -60,15 +60,22 @@ export default (() => {
 
     // Snapshot rows, derived from frontmatter (native to each screen type).
     const rows: [string, string][] = []
-    if (fm.native_basis) rows.push(["Native basis", String(fm.native_basis)])
-    if (fm.standard_version) rows.push(["Standard version", String(fm.standard_version)])
-    if (fm.category_name) rows.push(["Category", String(fm.category_name)])
-    if (fm.cert_doi) rows.push(["DOI", String(fm.cert_doi)])
-    if (fm.section && type === "public-briefing") rows.push(["Series", String(fm.section)])
     const eff = iso(fm.effective_date)
-    if (eff) rows.push(["Effective", eff])
     if (type === "standard" || type === "standard-in-development") {
+      if (fm.native_basis) rows.push(["Native basis", String(fm.native_basis)])
+      if (fm.standard_version) rows.push(["Standard version", String(fm.standard_version)])
+      if (fm.category_name) rows.push(["Category", String(fm.category_name)])
       rows.push(["Analyte panel", "10 analytes"])
+      if (eff) rows.push(["Effective", eff])
+    } else if (type === "public-briefing") {
+      if (fm.section) rows.push(["Series", String(fm.section)])
+      const pub = iso(fm.briefing_date)
+      if (pub) rows.push(["Published", pub])
+      rows.push(["Document type", "Report"])
+    } else {
+      // manuals + other cited surfaces
+      if (fm.cert_doi) rows.push(["DOI", String(fm.cert_doi)])
+      if (eff) rows.push(["Effective", eff])
     }
     const snapshot = rows.slice(0, 4)
 
