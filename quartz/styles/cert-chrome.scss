@@ -564,3 +564,14 @@ footer.site-footer .site-footer-bottom p {
 .wiki-content .hmtc-faq-link { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9f2727; margin-top: 13px; text-decoration: none; }
 .wiki-content .hmtc-faq-link:hover { text-decoration: underline; }
 .hmtc-faq-end { border-top: 1px solid #e8e1db; }
+
+// ============================================================
+//  QUARTZ BLEED — hide the auto-appended heading anchor glyphs
+//  (rehype-autolink-headings adds <a role="anchor"> into every heading).
+// ============================================================
+.wiki-content a[role="anchor"] { display: none !important; }
+
+// Interior pages: the generated body repeats the page title as a leading <h1>,
+// which the hero band already shows. Suppress the redundant title (sections are
+// h2/h3, so they are untouched). The home is excluded (its content is the hero).
+.proof:not(.proof-home) .wiki-content h1:first-of-type { display: none !important; }
