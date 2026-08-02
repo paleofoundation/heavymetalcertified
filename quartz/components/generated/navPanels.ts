@@ -54,7 +54,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
       {
-        heading: "Pantry & fats",
+        heading: "Pantry and fats",
         children: [
           { label: "Salt", slug: "standards/salt" },
           { label: "Herbs & spices", slug: "standards/spices" },
@@ -117,7 +117,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
       {
-        heading: "Counsel & finance",
+        heading: "Counsel and finance",
         children: [
           { label: "After Palmquist", slug: "briefings/after-palmquist" },
           { label: "The Cost of Being Uncertified", slug: "briefings/brief-4-cost-of-being-uncertified" },
@@ -125,7 +125,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
       {
-        heading: "Retail & market",
+        heading: "Retail and market",
         children: [
           { label: "The Retailer as Anchor", slug: "briefings/brief-5-retailer-as-anchor" },
           { label: "The Premium Promise", slug: "briefings/brief-6-premium-promise" },
