@@ -175,64 +175,118 @@ for (const row of catalog.rows) {
   fs.writeFileSync(path.join(OUT_DIR, `${slug}.md`), fm + body.join("\n"), "utf8")
 }
 
-// ---- Standards index (completeness ledger) --------------------------------
+// ---- Standards register (ported v3 design: inline-HTML sections) -----------
+// Two sections: "The bound editions" (the published Program Manuals) and
+// "Subcategory standards" (every locked row, grouped by its real category and
+// linked to its page). The design mock is infant-formula-centric (25 aspirational
+// rows, 5 bound editions); this emits the design LAYOUT with repo TRUTH — the
+// catalog's locked rows and the manuals manifest's published set.
 const ledger = catalog.completeness_ledger || {}
-const idx = []
-idx.push("---")
-idx.push('title: "HMTc Standards"')
-idx.push("type: standards-index")
-idx.push("audience: [regulator, brand-legal, retailer-compliance, certifier]")
-idx.push("---")
-idx.push("")
-idx.push("# HMTc Standards")
-idx.push("")
-idx.push(
-  "The Heavy Metal Tested & Certified (HMTc) standard is published **per subcategory**, in each product form's native basis, the moment that subcategory is defensibly ready. Each analyte limit is held behind five shipping gates; an analyte renders a firm value only when it clears all five. This page is the live completeness ledger.",
-)
-idx.push("")
-idx.push(`- **Methodology:** ${catalog.methodology_version}`)
-idx.push(`- **Standard version:** ${catalog.standard_version}`)
-idx.push(`- **Analyte panel (10):** ${PANEL.join(", ")}`)
-idx.push(
-  `- **Published today:** ${firmCells} firm analyte limit${firmCells === 1 ? "" : "s"} across ${rowsWithFirm} subcategor${rowsWithFirm === 1 ? "y" : "ies"} of ${catalog.rows.length} locked. The standard widens as the evidence base and governance review clear more cells.`,
-)
-idx.push("")
-idx.push("## Completeness by category")
-idx.push("")
-idx.push("| Category | Subcategories locked | Published | Progress |")
-idx.push("|---|---|---|---|")
-for (const k of Object.keys(ledger).sort((a, b) => Number(a) - Number(b))) {
-  const e = ledger[k]
-  idx.push(
-    `| ${esc(e.category_name)} (cat ${e.category}) | ${e.subcategories_locked}/${e.subcategories_total} | ${e.subcategories_published} | ${esc(e.context)} |`,
+const H2 =
+  'style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px"'
+
+// Published manuals from the manifest (bound editions). Only status:published.
+let publishedManuals = []
+try {
+  const mm = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/manuals/manifest.json"), "utf8"))
+  publishedManuals = (mm.manuals || []).filter(
+    (m) => m.status === "published" && fs.existsSync(path.join(repoRoot, "data/manuals", m.pdf)),
   )
+} catch {
+  publishedManuals = []
 }
-idx.push("")
-idx.push("## Subcategory standards")
-idx.push("")
-// group rows by category
+const publishedCategories = Object.values(ledger).filter((e) => (e.subcategories_published || 0) > 0).length
+
+// Bound-editions list (or empty state).
+const editionRows = publishedManuals.length
+  ? publishedManuals
+      .map((m) => {
+        const meta = `${m.edition} Edition &middot; ${m.subcategories || "—"} subcategor${m.subcategories === 1 ? "y" : "ies"} &middot; ${m.pages ? m.pages + " pp" : "—"}`
+        return `    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0"><div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${m.title}</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">${meta}</div></div>
+      <a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>`
+      })
+      .join("\n")
+  : `    <div style="padding:16px 18px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:6px">No bound edition published yet</div><p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The subcategory standards below are in force and readable per page; the first bound category volume publishes once its every value is defensibly current.</p></div>`
+
+// Subcategory groups: every locked row, grouped by real category, each linked.
 const byCat = {}
 for (const row of catalog.rows) {
   ;(byCat[row.vertical.category] ??= { name: row.vertical.category_name, rows: [] }).rows.push(row)
 }
-for (const cat of Object.keys(byCat).sort((a, b) => Number(a) - Number(b))) {
-  idx.push(`### ${byCat[cat].name}`)
-  idx.push("")
-  for (const row of byCat[cat].rows) {
-    const pub = Object.values(row.analytes || {}).filter((a) => a.status === "published").length
-    const tag = pub > 0 ? `**${pub} published**` : "in development"
-    idx.push(`- [${row.subcategory}](${row.product_slug}) — ${tag}`)
-  }
-  idx.push("")
-}
-idx.push("---")
-idx.push("")
-idx.push(
-  "*The threshold-selection methodology (clean P97 / dirty P45, native-basis pooling, the regulatory cap, the five gates) is documented in [Program Structure](../program/structure). The evidence each standard is applied to lives on the independent [Heavy Metal Index](https://heavymetalindex.com); HMTc cites it one-way and never the reverse.*",
-)
-idx.push("")
+const catGroups = Object.keys(byCat)
+  .sort((a, b) => Number(a) - Number(b))
+  .map((cat) => {
+    const g = byCat[cat]
+    const basis = basisLabel(g.rows[0]?.native_basis)
+    const rowsHtml = g.rows
+      .map((row, i) => {
+        const pub = Object.values(row.analytes || {}).filter((a) => a.status === "published").length
+        const ident = `${g.name} 3.${i + 1}`
+        const right = `<span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">${ident}${pub > 0 ? ` &middot; ${pub} firm` : ""}</span>`
+        return `      <a href="/standards/${row.product_slug}" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>${row.subcategory}</span>${right}</a>`
+      })
+      .join("\n")
+    return `  <div style="margin-bottom:26px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">${g.name}</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">${basis}</span>
+    </div>
+    <div style="display:flex;flex-direction:column">
+${rowsHtml}
+    </div>
+  </div>`
+  })
+  .join("\n")
 
-fs.writeFileSync(path.join(OUT_DIR, "index.md"), idx.join("\n"), "utf8")
+const idxFront = [
+  "---",
+  'title: "HMTc Standards"',
+  "type: standards-index",
+  "audience: [regulator, brand-legal, retailer-compliance, certifier]",
+  `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own pooled distribution, its own limit, and its own page."`,
+  "snapshot:",
+  `  - { k: "Subcategory standards", v: "${catalog.rows.length}" }`,
+  `  - { k: "Firm analyte limits", v: "${firmCells}" }`,
+  `  - { k: "Analytes per row", v: "${PANEL.length}" }`,
+  `  - { k: "Published manuals", v: "${publishedManuals.length}" }`,
+  "connections:",
+  '  - { label: "Standards Briefings", href: "/briefings" }',
+  '  - { label: "How limits are derived", href: "/program/structure" }',
+  '  - { label: "Program Manuals", href: "/manuals" }',
+  '  - { label: "Verify a certificate", href: "/verify" }',
+  '  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }',
+  "rail_box:",
+  '  title: "Verify a certificate"',
+  '  body: "Check a lot number, certificate number or product code against the register. Public and open to regulators."',
+  '  cta_label: "Look up a lot"',
+  '  cta_href: "/verify"',
+  "---",
+  "",
+].join("\n")
+
+const idxBody = `<section id="edition" style="margin-bottom:52px">
+  <h2 ${H2}>The bound editions</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The web standards below and the Program Manuals are the same content at two granularities. The pages are per subcategory and always current; each manual is the citable bound edition of one category, carrying the governance policy, the lot testing schedule and the full derivation of every limit it publishes.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
+${editionRows}
+  </div>
+  <a href="/manuals" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;text-decoration:none">All program manuals &rarr;</a>
+</section>
+
+<section id="subcats">
+  <h2 ${H2}>Subcategory standards</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${catalog.rows.length} locked rows across ${Object.keys(byCat).length} categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
+  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">${firmCells} firm analyte limit${firmCells === 1 ? "" : "s"} across ${rowsWithFirm} subcategor${rowsWithFirm === 1 ? "y" : "ies"} so far</div>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
+  </div>
+${catGroups}
+</section>
+`
+
+fs.writeFileSync(path.join(OUT_DIR, "index.md"), idxFront + idxBody, "utf8")
 
 console.log(
   `build-standards-pages: wrote ${catalog.rows.length} row pages + index; ${firmCells} firm cells across ${rowsWithFirm} rows.`,
