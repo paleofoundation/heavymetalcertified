@@ -636,6 +636,10 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 .hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: #5a4141; }
 .hmtc-verify-cta { display: inline-block; background: #9f2727; color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
 .hmtc-verify-cta:hover { background: #7f1f1f; }
+// Muted dotted advisory box (rail_box variant: note) — e.g. "Needs confirmation".
+.hmtc-railnote { border: 1px dotted #e8e1db; background: #faf7f4; padding: 15px 18px; }
+.hmtc-railnote-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 7px; }
+.hmtc-railnote-body { font-size: 13px; line-height: 1.65; color: #a9a1a1; margin: 0; }
 
 // ============================================================
 //  v3 BODY CONTENT — kill Quartz's default prose/table bleed

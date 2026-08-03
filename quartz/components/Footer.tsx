@@ -21,6 +21,7 @@ const footerSections = [
     links: [
       ["How limits are derived", "/program/structure"],
       ["Two remediation pathways", "/program/two-pathways"],
+      ["Confidential Remediation Track", "/program/remediation"],
       ["Native basis and conversion", "/program/structure"],
       ["The five publication gates", "/program/structure"],
     ],
@@ -38,6 +39,7 @@ const footerSections = [
     links: [
       ["Verify a certificate", "/verify"],
       ["Certified brands", "/brands"],
+      ["Using the mark", "/mark"],
       ["Apply for certification", "/apply"],
     ],
   },

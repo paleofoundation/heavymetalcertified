@@ -20,6 +20,8 @@ const KIND: Record<string, string> = {
   apply: "Apply",
   brands: "Directory",
   portal: "Portal",
+  remediation: "Policy",
+  mark: "Mark",
   "articles-index": "Directory",
 }
 

@@ -150,6 +150,13 @@ export const navPanels: NavPanel[] = [
           { label: "Two remediation pathways", slug: "program/two-pathways" },
         ],
       },
+      {
+        heading: "Policy and the mark",
+        children: [
+          { label: "Confidential Remediation Track", slug: "program/remediation" },
+          { label: "Using the mark", slug: "mark" },
+        ],
+      },
     ],
     allLabel: "Program structure",
   },
@@ -174,7 +181,7 @@ export const navPanels: NavPanel[] = [
         children: [
           { label: "The certified-brand directory", slug: "brands" },
           { label: "Become a certified brand", slug: "apply" },
-          { label: "Scope of the mark", slug: "program/structure" },
+          { label: "Scope of the mark", slug: "mark" },
         ],
       },
     ],

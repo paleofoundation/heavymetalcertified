@@ -33,11 +33,14 @@ export default (() => {
     // ({ title, body, cta_label, cta_href }) — the brands directory, for one,
     // shows a "Report a misuse of the mark" box instead.
     const boxFm = fm.rail_box && typeof fm.rail_box === "object" ? (fm.rail_box as Record<string, any>) : null
+    // variant "note" is a muted dotted advisory (e.g. the remediation page's
+    // "Needs confirmation"); default is the red call-to-action box.
+    const variant = boxFm && boxFm.variant === "note" ? "note" : "cta"
     const box = boxFm
       ? {
           title: String(boxFm.title ?? "Verify a certificate"),
           body: String(boxFm.body ?? ""),
-          ctaLabel: String(boxFm.cta_label ?? "Look up a lot"),
+          ctaLabel: boxFm.cta_label != null ? String(boxFm.cta_label) : "",
           ctaHref: String(boxFm.cta_href ?? `${base}/verify`),
         }
       : {
@@ -46,6 +49,25 @@ export default (() => {
           ctaLabel: "Look up a lot",
           ctaHref: `${base}/verify`,
         }
+
+    if (variant === "note") {
+      return (
+        <>
+          <div class="hmtc-conn-head">Connections</div>
+          <div class="hmtc-conn-list">
+            {conns.map((c) => (
+              <a class="hmtc-conn-link" href={c.href}>
+                {c.label}
+              </a>
+            ))}
+          </div>
+          <div class="hmtc-railnote">
+            <div class="hmtc-railnote-label">{box.title}</div>
+            <p class="hmtc-railnote-body">{box.body}</p>
+          </div>
+        </>
+      )
+    }
 
     return (
       <>
@@ -60,9 +82,11 @@ export default (() => {
         <div class="hmtc-verify">
           <div class="hmtc-verify-title">{box.title}</div>
           <p class="hmtc-verify-body">{box.body}</p>
-          <a class="hmtc-verify-cta" href={box.ctaHref}>
-            {box.ctaLabel}
-          </a>
+          {box.ctaLabel ? (
+            <a class="hmtc-verify-cta" href={box.ctaHref}>
+              {box.ctaLabel}
+            </a>
+          ) : null}
         </div>
       </>
     )
