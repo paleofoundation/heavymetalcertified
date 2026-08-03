@@ -1,13 +1,17 @@
 #!/usr/bin/env node
-// import-briefings.mjs — import the 10 already-written Standards Briefings from the
-// workbench snapshot (data/briefings/*.md) into the cert site (content/briefings/).
+// import-briefings.mjs — import the 10 Standards Briefings from the workbench
+// snapshot (data/briefings/*.md) into the cert site (content/briefings/) in the
+// CANONICAL briefing design.
 //
-// The briefings were authored for the Program-Manual / typst pipeline; here they
-// become web pages, slug-preserved (plan 6.F), self-canonical, and Scholar-eligible
-// as article-length technical analyses (type: public-briefing → Head.tsx emits
-// technical-report citation_* metadata, never citation_journal_title).
+// Every briefing renders the same v3 design (Karen: "the data may change, but
+// the design should not"): a hero Page snapshot, an Abstract, the argument
+// prose, a structured References list, a Bibliographic record, and a Cite box.
+// The per-briefing data — abstract, the parsed reference rows, the series label
+// — lives in data/briefings/briefing-meta.json (produced from each briefing's
+// own text). The argument prose is passed through from the source unchanged.
 //
-// Frontmatter is normalized for the web; the body is passed through unchanged.
+// content/briefings/index.md is hand-authored (the ported design directory) and
+// is NOT emitted here.
 
 import fs from "node:fs"
 import path from "node:path"
@@ -15,6 +19,8 @@ import path from "node:path"
 const repoRoot = process.cwd()
 const SRC = path.join(repoRoot, "data/briefings")
 const OUT = path.join(repoRoot, "content/briefings")
+const META_FILE = path.join(repoRoot, "data/briefings/briefing-meta.json")
+const PDF_DIR = path.join(repoRoot, "content/static/briefings")
 fs.mkdirSync(OUT, { recursive: true })
 
 // 6.F mapping: file slug → { page title override, section }
@@ -31,6 +37,17 @@ const MAP = {
   "brief-6-premium-promise": { title: "The Premium Promise", section: "Positioning" },
 }
 
+// Parsed per-briefing metadata (abstract, references, series). Keyed by slug.
+let META = {}
+if (fs.existsSync(META_FILE)) {
+  try {
+    const arr = JSON.parse(fs.readFileSync(META_FILE, "utf8"))
+    for (const m of Array.isArray(arr) ? arr : arr.briefings || []) META[m.slug] = m
+  } catch (e) {
+    console.warn(`  WARNING: could not read ${META_FILE}: ${e.message}`)
+  }
+}
+
 function parse(text) {
   if (!text.startsWith("---")) return { fm: {}, body: text }
   const end = text.indexOf("\n---", 3)
@@ -45,7 +62,55 @@ function parse(text) {
   return { fm, body }
 }
 
+// The argument prose = the source body from its first "## " heading up to the
+// "## References" / "## Sources" section. What precedes the first heading is the
+// abstract source (rendered from META instead); the references section is
+// rendered structurally from META instead.
+function extractProse(body) {
+  const firstH2 = body.search(/^##\s/m)
+  let prose = firstH2 >= 0 ? body.slice(firstH2) : body
+  const refsIdx = prose.search(/^##\s+(References|Sources)\s*$/m)
+  if (refsIdx >= 0) prose = prose.slice(0, refsIdx)
+  return prose.trimEnd()
+}
+
+const H2 =
+  'style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px"'
+
+function styleAbstract(html) {
+  // Give each <p> the design's abstract treatment.
+  return String(html || "").replace(
+    /<p>/g,
+    '<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">',
+  )
+}
+
+function renderRefs(refs) {
+  if (!refs || !refs.length) return ""
+  const rows = refs
+    .map((r) => {
+      const titleEl = r.href
+        ? `<a href="${r.href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
+        : `<span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
+      const meta = r.meta_html
+        ? `<p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${r.meta_html}</p>`
+        : ""
+      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${meta}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
+    })
+    .join("\n")
+  return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this briefing&rsquo;s text, in first-appearance order. This is the record the prose above draws on; where a work carries a DOI or public URL its title links to the source.</p>
+  <div style="border-top:1px solid #e8e1db">
+${rows}
+  </div>`
+}
+
+function recordRow(label, value) {
+  return `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">${label}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${value}</span></div>`
+}
+
+console.log("import-briefings: rendering canonical briefing design")
 const imported = []
+const missingMeta = []
 for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const slug = file.replace(/\.md$/, "")
   const map = MAP[slug]
@@ -56,8 +121,18 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const { fm, body } = parse(fs.readFileSync(path.join(SRC, file), "utf8"))
   const title = map.title || fm.title || slug
   const subtitle = (fm.subtitle || "").replace(/\\/g, "").trim()
+  const m = META[slug]
+  if (!m) missingMeta.push(slug)
 
-  const out = [
+  const year = (fm.date && fm.date.match(/\d{4}/)) ? fm.date.match(/\d{4}/)[0] : "2026"
+  const seriesLabel = m?.series || "Briefing"
+  const briefNum = seriesLabel.match(/Brief\s+(\d+)/i)
+  const seriesName = briefNum ? `HMTc Standards Briefing ${briefNum[1]}` : "HMTc Standards Briefing"
+  const refCount = m?.references?.length || 0
+  const pdfRel = fs.existsSync(path.join(PDF_DIR, `${slug}.pdf`)) ? `/static/briefings/${slug}.pdf` : null
+
+  // ---- frontmatter (chrome the shared HeroBand + Rail read) ----------------
+  const front = [
     "---",
     `title: "${title.replace(/"/g, '\\"')}"`,
     subtitle ? `description: "${subtitle.replace(/"/g, '\\"').slice(0, 200)}"` : null,
@@ -70,13 +145,11 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     fm.date ? `updated: "${fm.date}"` : null,
     "scholar_eligible: true",
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
-    // Chrome the shared HeroBand + Rail read: the "Page snapshot" box and the
-    // right-rail "Connections" list, so every briefing matches the v3 design.
     "snapshot:",
-    `  - { k: "Section", v: "${map.section}" }`,
+    `  - { k: "Series number", v: "${seriesLabel}" }`,
     fm.date ? `  - { k: "Published", v: "${fm.date}" }` : null,
-    `  - { k: "Document type", v: "Technical report" }`,
-    `  - { k: "Publisher", v: "Paleo Certified, Inc." }`,
+    `  - { k: "Document type", v: "Report" }`,
+    `  - { k: "References", v: "${refCount}" }`,
     "connections:",
     '  - { label: "HMTc Standards register", href: "/standards" }',
     '  - { label: "How limits are derived", href: "/program/structure" }',
@@ -84,24 +157,81 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     '  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }',
     "---",
     "",
-    // a visible subtitle line (frontmatter description is for meta, not body)
-    subtitle ? `*${subtitle}*\n` : "",
-    body.trimEnd(),
-    "",
-  ]
-    .filter((l) => l !== null)
-    .join("\n")
+  ].filter((l) => l !== null)
 
-  fs.writeFileSync(path.join(OUT, `${slug}.md`), out, "utf8")
-  imported.push({ slug, title, section: map.section })
+  // ---- body: Abstract · prose · References · Bibliographic record · Cite ----
+  const abstractHtml = m?.abstract_html
+    ? styleAbstract(m.abstract_html)
+    : subtitle
+      ? `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0;max-width:72ch">${subtitle}</p>`
+      : ""
+  const prose = extractProse(body)
+
+  const recordRows = [
+    recordRow("Title", title),
+    subtitle ? recordRow("Subtitle", subtitle) : null,
+    recordRow("Author", (fm.author || "Karen Pendergrass").split(" ").reverse().join(", ").replace(/^, /, "")),
+    recordRow("ORCID", "0000-0002-2348-7259"),
+    recordRow("Author institution", "Heavy Metal Tested &amp; Certified, Paleo Foundation"),
+    recordRow("Publisher", "Paleo Certified, Inc. dba The Paleo Foundation"),
+    recordRow("Series", seriesName),
+    recordRow("Document type", "Technical report"),
+    fm.date ? recordRow("Publication date", fm.date) : null,
+    recordRow("Language", "en"),
+    recordRow("DOI", "not yet assigned"),
+  ].filter(Boolean).join("\n")
+  const licenseRowLast = `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">CC BY 4.0 (prose)</span></div>`
+
+  const downloadBtn = pdfRel
+    ? `  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px"><a href="${pdfRel}" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Download PDF</a></div>`
+    : ""
+
+  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitle : ""}</em> (${seriesName}). Paleo Certified, Inc. dba The Paleo Foundation.`
+
+  const bodyStr = `## Abstract
+
+${abstractHtml}
+
+${prose}
+
+## References
+
+${renderRefs(m?.references)}
+
+## Bibliographic record
+
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">The fields an indexing service reads. Title, named first author and year are the three that carry the record; a briefing missing any one of them is treated as carrying no metadata at all.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">
+${recordRows}
+${licenseRowLast}
+  </div>
+${downloadBtn}
+  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>
+  </div>
+
+## Cite this briefing
+
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this briefing</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">${citeStr}</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose CC BY 4.0. Direct reproduction of substantial portions requires written permission from Paleo Certified, Inc.</p>
+    </div>
+  </div>
+`
+
+  fs.writeFileSync(path.join(OUT, `${slug}.md`), front.join("\n") + "\n" + bodyStr, "utf8")
+  imported.push({ slug, title, section: map.section, refs: refCount })
 }
 
-// content/briefings/index.md is hand-authored (the ported v3 design directory:
-// the series list, peer-track preprints, and indexing policy). The generator no
-// longer emits it — it would clobber the ported layout on every run. The
-// per-briefing page loop above still runs.
-
-console.log(`import-briefings: imported ${imported.length} briefings into content/briefings/ (index.md hand-authored, not emitted)`)
+console.log(
+  `import-briefings: rendered ${imported.length} briefings in the canonical design (index.md hand-authored, not emitted)`,
+)
+if (missingMeta.length) {
+  console.warn(`  WARNING: no parsed metadata for: ${missingMeta.join(", ")} — abstract/references fell back to minimal.`)
+}
 if (imported.length !== Object.keys(MAP).length) {
   console.warn(`  WARNING: expected ${Object.keys(MAP).length}, imported ${imported.length}`)
 }

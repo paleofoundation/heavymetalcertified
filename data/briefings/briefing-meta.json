@@ -1,0 +1,758 @@
+[
+  {
+    "slug": "hmtc-primer",
+    "series": "Primer",
+    "abstract_html": "<p>This document describes the Heavy Metal Tested &amp; Certified (HMTc) program plainly and completely, for counsel and other professional readers who need an accurate picture before relying on the program or recommending it to a client. It is deliberately not a sales document. It states what the program is, how it works, what a licensee actually agrees to, and — with equal care — what the program does not do, where its commercial and structural conflicts lie, and how those are disclosed and mitigated. It is the first of two documents: this primer describes the program; a companion brief, <em>The Evidence a Jury Will See</em>, makes the case for why a brand would enroll and how the program bears on heavy-metal litigation. Read this one first. Nothing here should be a surprise later; that is the point of writing it this way.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, Paleo Certified, Inc. dba The Paleo Foundation, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>. Cited throughout: action levels and disclaimers (Part 2.1); analyte tiering and aggregate exposure (Part 2.2); status framework (Part 2.3); Confidential Remediation Track and discovery dynamics (Part 2.4); mark rules (Part 2.5); decision rules (Part 2.6); standards ratchet (Part 2.10); appeals and conflict mitigation (Part 2.12); methodological / AI disclosure (Part 3 methodological disclosure and Part 5.7); program-level adversarial read (Part 5.2); recognition framework (Part 5.5); licensing terms (Part 5.6).",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 2,
+        "title": "The Counterproductive Consequences of Public Exposé Testing",
+        "meta_html": "K. Pendergrass, peer-track preprints: <em>The Counterproductive Consequences of Public Exposé Testing</em>, doi: <a href=\"https://doi.org/10.5281/zenodo.19470572\">10.5281/zenodo.19470572</a>; <em>The Cost of Operating Without Credible Third-Party Heavy-Metal Certification</em>, doi: <a href=\"https://doi.org/10.5281/zenodo.18903738\">10.5281/zenodo.18903738</a>; <em>Certification as a Framework for Reducing Heavy Metal Exposure in Infant and Child Foods</em>, doi: <a href=\"https://doi.org/10.5281/zenodo.18905821\">10.5281/zenodo.18905821</a>.",
+        "href": "https://doi.org/10.5281/zenodo.19470572",
+        "type": "Preprint"
+      },
+      {
+        "n": 3,
+        "title": "General Requirements for the Competence of Testing and Calibration Laboratories",
+        "meta_html": "International Organization for Standardization, ISO/IEC 17025:2017.",
+        "href": "",
+        "type": "Standard"
+      }
+    ]
+  },
+  {
+    "slug": "brief-7-four-vs-eight",
+    "series": "Brief 1",
+    "abstract_html": "<p>In February 2021, a subcommittee of the House Committee on Oversight and Reform did the thing a congressional inquiry is built to do. It took a body of accumulating toxicological evidence, years in the making, and converted it into a public-policy artifact. The staff report was titled \"Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury,\" and it named four metals [1]. Industry anchored to those four. So did the regulators who drafted the FDA's Closer to Zero program [2], and so did the first generation of third-party heavy-metal certification.</p><p>That anchoring was rational in 2021. Four metals were what the subpoenaed data covered and what the headline could carry. But a certification mark is not a headline, and the thing about an anchor is that it holds you in place while the water moves. Five years on, the water has moved. The question this briefing puts to anyone who certifies, buys, or sells on a heavy-metals claim is narrow and uncomfortable: what does a four-metal certificate actually certify in 2026, when the regulators who write the rules your products ship under are already working from a list of eight?</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, Staff Report, Feb. 4, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 2,
+        "title": "Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods",
+        "meta_html": "U.S. Food and Drug Administration, action-plan scope covering lead, cadmium, inorganic arsenic, and mercury, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 3,
+        "title": "Commission Recommendation (EU) 2024/907 of 22 March 2024 on the monitoring of nickel in food",
+        "meta_html": "<em>Official Journal of the European Union</em>, L series, Mar. 26, 2024. ELI: <a href=\"http://data.europa.eu/eli/reco/2024/907/oj\">data.europa.eu/eli/reco/2024/907/oj</a>.",
+        "href": "http://data.europa.eu/eli/reco/2024/907/oj",
+        "type": "Government"
+      },
+      {
+        "n": 4,
+        "title": "Update of the risk assessment of nickel in food and drinking water",
+        "meta_html": "EFSA Panel on Contaminants in the Food Chain (CONTAM), <em>EFSA Journal</em> 2020;18(11):6268. doi: <a href=\"https://doi.org/10.2903/j.efsa.2020.6268\">10.2903/j.efsa.2020.6268</a>.",
+        "href": "https://doi.org/10.2903/j.efsa.2020.6268",
+        "type": "Government"
+      },
+      {
+        "n": 5,
+        "title": "Australia New Zealand Food Standards Code, Schedule 19 — Maximum levels of contaminants and natural toxicants",
+        "meta_html": "Food Standards Australia New Zealand, in force from Mar. 1, 2016 (aluminium in infant formula products; inorganic tin in canned foods).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 6,
+        "title": "National Food Safety Standard — Maximum Levels of Contaminants in Foods, GB 2762-2022",
+        "meta_html": "National Health Commission and State Administration for Market Regulation (People's Republic of China), in force June 30, 2023.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 7,
+        "title": "Regulation in India of Heavy Metals in Food Items: A Critical Analysis",
+        "meta_html": "M. Sadhya and M. Saha, <em>Environmental Analysis &amp; Ecology Studies</em>, 2023, reproducing the Food Safety and Standards (Contaminants, Toxins and Residues) Regulations 2011 (as amended 2020). doi: <a href=\"https://doi.org/10.31031/EAES.2023.11.000771\">10.31031/EAES.2023.11.000771</a>.",
+        "href": "https://doi.org/10.31031/EAES.2023.11.000771",
+        "type": "Journal"
+      },
+      {
+        "n": 8,
+        "title": "Hexavalent Chromium Maximum Contaminant Level (10 µg/L)",
+        "meta_html": "California State Water Resources Control Board, effective Oct. 1, 2024; California Office of Environmental Health Hazard Assessment Public Health Goal (0.02 µg/L), 2011.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 9,
+        "title": "Proposition 65 list (Safe Drinking Water and Toxic Enforcement Act of 1986)",
+        "meta_html": "California Office of Environmental Health Hazard Assessment: nickel and nickel compounds (carcinogen; soluble nickel compounds, reproductive toxicant); hexavalent-chromium compounds (carcinogen, 1987; developmental and reproductive toxicant, 2008).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 10,
+        "title": "Nickel Content of Food and Estimation of Dietary Intake",
+        "meta_html": "M.-A. Flyvholm, G. D. Nielsen, and A. Andersen, <em>Zeitschrift für Lebensmittel-Untersuchung und -Forschung</em> 1984;179(6):427–431.",
+        "href": "",
+        "type": "Journal"
+      },
+      {
+        "n": 11,
+        "title": "Association between nickel exposure and diabetes risk: an updated meta-analysis of observational studies",
+        "meta_html": "H. Lu, X. Shi, L. Han, X. Liu, and Q. Jiang, <em>Frontiers in Public Health</em> 2024;12:1463880. doi: <a href=\"https://doi.org/10.3389/fpubh.2024.1463880\">10.3389/fpubh.2024.1463880</a>.",
+        "href": "https://doi.org/10.3389/fpubh.2024.1463880",
+        "type": "Journal"
+      },
+      {
+        "n": 12,
+        "title": "Safety of aluminium from dietary intake — Scientific Opinion",
+        "meta_html": "EFSA Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food (AFC), <em>EFSA Journal</em> 2008;754:1–34.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 13,
+        "title": "The Health Effects of Aluminum Exposure",
+        "meta_html": "K. Klotz, W. Weistenhöfer, F. Neff, A. Hartwig, C. van Thriel, and H. Drexler, <em>Deutsches Ärzteblatt International</em> 2017;114(39):653–659. doi: <a href=\"https://doi.org/10.3238/arztebl.2017.0653\">10.3238/arztebl.2017.0653</a>.",
+        "href": "https://doi.org/10.3238/arztebl.2017.0653",
+        "type": "Journal"
+      },
+      {
+        "n": 14,
+        "title": "Commission Regulation (EU) No 380/2012 of 3 May 2012 amending Annex II to Regulation (EC) No 1333/2008 as regards the conditions of use and the use levels for aluminium-containing food additives",
+        "meta_html": "",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 15,
+        "title": "Prescription Infant Formulas Are Contaminated with Aluminium",
+        "meta_html": "J. Redgrove, I. Rodriguez, S. Mahadevan-Bava, and C. Exley, <em>International Journal of Environmental Research and Public Health</em> 2019;16(5):899.",
+        "href": "",
+        "type": "Journal"
+      },
+      {
+        "n": 16,
+        "title": "Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006",
+        "meta_html": "(inorganic tin: 200 mg/kg canned foods, 100 mg/kg canned beverages, 50 mg/kg canned infant and baby food).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 17,
+        "title": "General Standard for Contaminants and Toxins in Food and Feed",
+        "meta_html": "Codex Alimentarius Commission, CXS 193-1995 (inorganic tin in canned foods).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 18,
+        "title": "Occurrence of Tin in Foods and Dietary Exposure Assessment in Zhejiang Province, China",
+        "meta_html": "S. Ye, J. Chen, R. Zhang, et al., <em>Foods</em>, 2026 (n = 2,014 samples).",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 19,
+        "title": "Genetic and Epigenetic Mechanisms in Metal Carcinogenesis and Cocarcinogenesis: Nickel, Arsenic, and Chromium",
+        "meta_html": "K. Salnikow and A. Zhitkovich, <em>Chemical Research in Toxicology</em> 2008;21(1):28–44. doi: <a href=\"https://doi.org/10.1021/tx700198a\">10.1021/tx700198a</a>.",
+        "href": "https://doi.org/10.1021/tx700198a",
+        "type": "Journal"
+      },
+      {
+        "n": 20,
+        "title": "Adverse Human Health Effects of Chromium by Exposure Route: A Comprehensive Review Based on Toxicogenomic Approach",
+        "meta_html": "D. Y. Shin, S. M. Lee, Y. Jang, J. Lee, C. M. Lee, E.-M. Cho, and Y. R. Seo, <em>International Journal of Molecular Sciences</em> 2023;24(4):3410. doi: <a href=\"https://doi.org/10.3390/ijms24043410\">10.3390/ijms24043410</a>.",
+        "href": "https://doi.org/10.3390/ijms24043410",
+        "type": "Journal"
+      },
+      {
+        "n": 21,
+        "title": "Scientific Opinion on the risks to public health related to the presence of chromium in food and drinking water",
+        "meta_html": "EFSA Panel on Contaminants in the Food Chain (CONTAM), <em>EFSA Journal</em> 2014;12(3):3595. doi: <a href=\"https://doi.org/10.2903/j.efsa.2014.3595\">10.2903/j.efsa.2014.3595</a>.",
+        "href": "https://doi.org/10.2903/j.efsa.2014.3595",
+        "type": "Government"
+      },
+      {
+        "n": 22,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "MDL No. 3101, U.S. District Court for the Northern District of California (amended order striking aluminum and infant-formula references from the Master Complaint, Apr. 2, 2025).",
+        "href": "",
+        "type": "Litigation"
+      },
+      {
+        "n": 23,
+        "title": "Proposition 65 industry-wide settlement on hexavalent chromium in chrome-tanned leather footwear and gloves",
+        "meta_html": "Center for Environmental Health, Alameda County Superior Court (approved Apr. 2024).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 24,
+        "title": "People of the State of California v. McWane, Inc. (dba AB&I Foundry)",
+        "meta_html": "Complaint for Injunctive Relief and Civil Penalties (Proposition 65; hexavalent-chromium air emissions), Superior Court of California, County of Alameda, filed Feb. 15, 2022.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 25,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation, 2026.",
+        "href": "",
+        "type": "Report"
+      }
+    ]
+  },
+  {
+    "slug": "after-palmquist",
+    "series": "Brief 2",
+    "abstract_html": "<p>On February 24, 2026, a unanimous Supreme Court vacated a manufacturer's trial victory and returned a baby-food heavy-metal case to Texas state court. The 2026 Edition of the HMTc Infant and Child Foods Program Manual is published today. This briefing explains why the two events are connected, and what a defensible evidentiary posture now requires.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (2026) (No. 24-724), decided Feb. 24, 2026.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 2,
+        "title": "Palmquist v. Hain Celestial Group, Inc.",
+        "meta_html": "No. 23-40197 (5th Cir.).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 3,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, Staff Report, Feb. 4, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 4,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "MDL No. 3101, U.S. District Court for the Northern District of California (Transfer Order, J.P.M.L., 2024; Scheduling Order, 2025).",
+        "href": "",
+        "type": "Litigation"
+      },
+      {
+        "n": 5,
+        "title": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.19470572\">10.5281/zenodo.19470572</a>.",
+        "href": "https://doi.org/10.5281/zenodo.19470572",
+        "type": "Preprint"
+      },
+      {
+        "n": 6,
+        "title": "California Assembly Bill 899",
+        "meta_html": "(2023), amending the California Health and Safety Code (baby food heavy-metal testing and public disclosure).",
+        "href": "",
+        "type": "Legislation"
+      },
+      {
+        "n": 7,
+        "title": "Action Levels for Lead in Food Intended for Babies and Young Children: Guidance for Industry",
+        "meta_html": "U.S. Food and Drug Administration, Jan. 2025.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 8,
+        "title": "People v. Promix Nutrition",
+        "meta_html": "Consent Judgment, Proposition 65 settlement, California Office of the Attorney General.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 9,
+        "title": "Amazon.com Sued Over Alleged Sale of Contaminated Rice",
+        "meta_html": "Reuters, May 23, 2025.",
+        "href": "",
+        "type": "Industry"
+      },
+      {
+        "n": 10,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 11,
+        "title": "Litigation Cost Survey of Major Companies",
+        "meta_html": "Federal Judicial Center, 2008.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 12,
+        "title": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "meta_html": "International Organization for Standardization.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 13,
+        "title": "Use of Uncertainty Information in Compliance Assessment",
+        "meta_html": "EURACHEM/CITAC, 2nd ed., 2021; ILAC, \"Guidelines on Decision Rules and Statements of Conformity,\" ILAC-G8:09/2019.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 14,
+        "title": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.18903738\">10.5281/zenodo.18903738</a>.",
+        "href": "https://doi.org/10.5281/zenodo.18903738",
+        "type": "Preprint"
+      }
+    ]
+  },
+  {
+    "slug": "brief-4-cost-of-being-uncertified",
+    "series": "Brief 4",
+    "abstract_html": "<p><em>This briefing is written for the two people who decide whether a heavy-metals certificate is worth its price: the Chief Financial Officer and the General Counsel. It makes one argument, in numbers you can re-run with your own inputs &mdash; that a Supreme Court decision handed down this winter quietly created a cost most brands in this category have not yet written on any spreadsheet, and that the cost lives in five places at once.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (2026) (No. 24-724), decided Feb. 24, 2026; below, <em>Palmquist v. Hain Celestial Group, Inc.</em>, No. 23-40197 (5th Cir.).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 2,
+        "title": "Total Diet Study, FY2018–2020",
+        "meta_html": "U.S. Food and Drug Administration (toxic-element detection frequencies).",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 3,
+        "title": "Litigation Cost Survey of Major Companies",
+        "meta_html": "Federal Judicial Center / U.S. Courts, 2008 (mean outside legal fees approximately $2.0M per major case; discovery costs frequently exceeding $600,000).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 4,
+        "title": "People v. Promix Nutrition",
+        "meta_html": "Consent Judgment, Proposition 65 settlement, California Office of the Attorney General ($28,000 total; $25,000 attorneys' fees and related costs; $3,000 civil penalty).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 5,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, Staff Report, Feb. 4, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 6,
+        "title": "California Assembly Bill 899 (2023)",
+        "meta_html": "Baby-food heavy-metal testing and public disclosure; California Attorney General enforcement advisory, Mar. 6, 2026.",
+        "href": "",
+        "type": "Legislation"
+      },
+      {
+        "n": 7,
+        "title": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "meta_html": "International Organization for Standardization.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 8,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 9,
+        "title": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.18903738\">10.5281/zenodo.18903738</a>. Recall-economics and market-impact anchors (GMA/Covington/EY; Allianz; Thomsen &amp; McKenzie; Pozo &amp; Schroeder) are documented there; this briefing updates the argument for the post-<em>Palmquist</em> forum.",
+        "href": "https://doi.org/10.5281/zenodo.18903738",
+        "type": "Journal"
+      }
+    ]
+  },
+  {
+    "slug": "brief-5-retailer-as-anchor",
+    "series": "Brief 5",
+    "abstract_html": "<p><em>A Supreme Court decision in February changed where heavy-metal cases are tried and who stays in the room when they are. For retailers, and for private-label programs above all, it converted a peripheral legal risk into a structural one. This briefing is written for the people who run supplier qualification and retail compliance. It treats the change as what it is — an operating problem with an operating response — and it explains why the retailers who move first will set the terms for everyone who follows.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous; jurisdiction and removal). The retailer-repositioning and forum analysis is developed in K. Pendergrass, <em>After Palmquist</em>, the Paleo Foundation, 2026.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 2,
+        "title": "Total Diet Study, FY2018–2020",
+        "meta_html": "U.S. Food and Drug Administration (lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10%) — heavy metals are endemic to the food supply, not anomalies of a negligent supplier.",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 3,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "MDL No. 3101, U.S. District Court for the Northern District of California (approximately 345 pending claims as of late 2025).",
+        "href": "",
+        "type": "Litigation"
+      },
+      {
+        "n": 4,
+        "title": "Litigation Cost Survey of Major Companies",
+        "meta_html": "Federal Judicial Center / U.S. Courts, 2008 (mean outside legal fees approximately $2.0M per major case; discovery frequently exceeding $600,000).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 5,
+        "title": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.18903738\">10.5281/zenodo.18903738</a>. Channel-access economics, delisting/listing-suppression modeled at roughly 15% of annual revenue, and documented retailer/marketplace third-party-testing requirements (e.g., NSF/ANSI 173, ISO/IEC 17025, COA) are treated there.",
+        "href": "https://doi.org/10.5281/zenodo.18903738",
+        "type": "Journal"
+      },
+      {
+        "n": 6,
+        "title": "California Assembly Bill 899",
+        "meta_html": "(2023) (baby-food heavy-metal testing and public disclosure); Maryland \"Rudy's Law,\" HB 97 / SB 723 (2024) (testing and labeling); U.S. FDA, \"Closer to Zero\" action levels for foods for babies and young children.",
+        "href": "",
+        "type": "Legislation"
+      },
+      {
+        "n": 7,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, with the companion <em>HMTc Lot Testing Schedule</em> and the Supplier Intelligence System (independent risk-tiered surveillance, baseline testing, chain of custody, verifiable certification status, and anonymized cross-brand supplier-source alerts). doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      }
+    ]
+  },
+  {
+    "slug": "brief-6-premium-promise",
+    "series": "Brief 6",
+    "abstract_html": "<p><em>Premium food brands do not sell ingredients. They sell trust — a parent's belief that someone has already done the worrying. That belief is the most valuable thing such a brand owns, and the most fragile. This briefing is about what a Supreme Court case revealed about the gap between what premium brands promise and what they can prove, why that gap is most dangerous for the brands consumers trust most, and why the brands with the most to lose have the strongest reason to act.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous). The plaintiffs alleged neurodevelopmental injury from heavy metals in Earth's Best organic baby food (manufactured by the Hain Celestial Group) consumed in the first years of life. Forum and retailer analysis: K. Pendergrass, <em>After Palmquist</em>, the Paleo Foundation, 2026.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 2,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, Staff Report, Feb. 4, 2021 (finding that a major manufacturer had not tested finished products for heavy metals until 2019).",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 3,
+        "title": "Total Diet Study, FY2018–2020",
+        "meta_html": "U.S. Food and Drug Administration (lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10%) — heavy metals are endemic to the food supply, including organically grown food, because they originate in soil, water, and atmospheric deposition rather than in farming method.",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 4,
+        "title": "2025 Food and Health Survey",
+        "meta_html": "International Food Information Council (food-safety confidence; heavy metals among ranked consumer concerns); Gallup, food-safety and institutional-trust measures, 2024. Both are compiled in reference [6].",
+        "href": "",
+        "type": "Report"
+      },
+      {
+        "n": 5,
+        "title": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.19470572\">10.5281/zenodo.19470572</a> (selection dynamics by which the brands investing most in quality and transparency are the most exposed to public naming).",
+        "href": "https://doi.org/10.5281/zenodo.19470572",
+        "type": "Preprint"
+      },
+      {
+        "n": 6,
+        "title": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "meta_html": "K. Pendergrass, <em>Journal of Food Metallomics</em>, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.18903738\">10.5281/zenodo.18903738</a> (one-year cost of a single contamination-triggered event modeled at $1.6M–$6.6M for a brand at $5M revenue; consumer-confidence evidence).",
+        "href": "https://doi.org/10.5281/zenodo.18903738",
+        "type": "Preprint"
+      },
+      {
+        "n": 7,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>. Mark-usage rules and prohibited claims (\"heavy-metal free,\" \"no toxic metals,\" \"100% safe\"; the mark \"does not certify safety\"): Part 2.5. Action-levels-not-safety-thresholds framing: Part 2.1. Relationship to USDA Organic and the Non-GMO Project, which do not address heavy metals: Part 5.5. Consumer-facing claim discipline (specify dose, population, and limit): Part 2.5 and audience-layering conventions.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      }
+    ]
+  },
+  {
+    "slug": "brief-8-surveillance-protocol",
+    "series": "Brief 8",
+    "abstract_html": "<p><em>Two heavy-metal certifications can carry the same mark and mean opposite things in a deposition. One is a photograph. The other is a record. This briefing concerns the difference between them as evidence: why a one-time certificate invites the attacks a competent plaintiff's expert is trained to make, why a surveillance-based certificate resists them, and why the question is settled — for the defendant or against it — years before any complaint is filed.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "MDL No. 3101, U.S. District Court for the Northern District of California.",
+        "href": "",
+        "type": "Litigation"
+      },
+      {
+        "n": 2,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "Rule 702 / general-causation ruling (N.D. Cal., Dec. 2025) (excluding five of the plaintiffs' six general-causation experts). Counsel should consult the order directly for its exact holdings and any subsequent developments.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 3,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (Sotomayor, J.; unanimous).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 4,
+        "title": "Palmer v. Hoffman",
+        "meta_html": "318 U.S. 109 (1943) (a report prepared in anticipation of litigation, rather than in the regular course of business, lacks the trustworthiness on which the business-records exception rests); the principle is carried into the trustworthiness clause of Fed. R. Evid. 803(6)(E).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 5,
+        "title": "Fed. R. Evid. 803(6)",
+        "meta_html": "(records of a regularly conducted activity), including the requirement that the record be kept and made as a regular practice and the opponent's burden under 803(6)(E) to show a lack of trustworthiness.",
+        "href": "",
+        "type": "Legal"
+      },
+      {
+        "n": 6,
+        "title": "Cal. Evid. Code § 1271",
+        "meta_html": "(business-records exception; California is the forum of the consolidated baby-food litigation and of AB 899).",
+        "href": "",
+        "type": "Legal"
+      },
+      {
+        "n": 7,
+        "title": "Fed. R. Evid. 901",
+        "meta_html": "(authentication); ISO/IEC 17025:2017 accreditation and documented chain of custody as the means of authenticating an analytical result.",
+        "href": "",
+        "type": "Legal"
+      },
+      {
+        "n": 8,
+        "title": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "meta_html": "EURACHEM/CITAC and ILAC-G8 guidance on decision rules and statements of conformity under measurement uncertainty.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 9,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, Staff Report, Feb. 4, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 10,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, and the companion <em>HMTc Lot Testing Schedule</em>, the Paleo Foundation, 2026 (risk-tiered surveillance frequency, baseline testing, independent sampling, chain-of-custody, reflex triggers, measurement-uncertainty decision rules, and the prohibition on testing into compliance). doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 11,
+        "title": "California Assembly Bill 899 (2023)",
+        "meta_html": "(baby-food heavy-metal testing and public disclosure); Maryland \"Rudy's Law,\" HB 97 / SB 723 (2024) (testing and labeling); U.S. FDA, \"Closer to Zero\" action levels for lead and other elements in foods for babies and young children.",
+        "href": "",
+        "type": "Legislation"
+      }
+    ]
+  },
+  {
+    "slug": "brief-2-open-category",
+    "series": "Briefing",
+    "abstract_html": "<p><em>In 2009 there was no seal for the question shoppers most wanted answered about their food. A nonprofit with a butterfly changed that in about five years, and in doing so beat a thirty-year-old federal seal at a game the federal seal was never set up to play. This briefing is about how that happened, why it was not luck, and why the same opening is sitting wide open in heavy metals right now — the word unclaimed, the visual undefined, the demand already standing in the aisle.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "The Non-GMO Project and the Non-GMO Project Verified mark",
+        "meta_html": "(first verified products, 2010). Industry sales-tracking data (SPINS; Nielsen) reported Non-GMO Project Verified among the fastest-growing label claims in the natural and grocery channels through the 2010s. Figures are the program's and the trackers' and are cited here for the positioning pattern, not as an audited comparison of seal counts.",
+        "href": "",
+        "type": "Industry"
+      },
+      {
+        "n": 2,
+        "title": "National Organic Program",
+        "meta_html": "U.S. Department of Agriculture; the Organic Foods Production Act of 1990 and the USDA Organic seal (in use from 2002). USDA Organic certifies agricultural production methods and does not address heavy-metal contamination at the product level.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 3,
+        "title": "Total Diet Study, FY2018–2020",
+        "meta_html": "U.S. Food and Drug Administration (lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10%) — heavy metals are endemic to the food supply, including organically grown food, because they originate in soil, water, and atmospheric deposition rather than in farming method.",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 4,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026; California Assembly Bill 899 (2023) and Maryland \"Rudy's Law,\" HB 97 / SB 723 (2024) (baby-food heavy-metal testing and disclosure); U.S. House Oversight Subcommittee Staff Report, Feb. 4, 2021. Together these establish present, growing consumer-facing demand around the heavy-metals question.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 5,
+        "title": "Positioning: The Battle for Your Mind",
+        "meta_html": "A. Ries and J. Trout; A. Ries and J. Trout, <em>The 22 Immutable Laws of Marketing</em> (the Law of Leadership, the Law of the Category, the Law of Focus, the Law of Sacrifice, the Law of the Mind); L. Ries, <em>Visual Hammer</em> (the visual hammer as the image that drives the verbal position into memory). Concepts are referenced and paraphrased; the framing of this briefing is an application of them.",
+        "href": "",
+        "type": "Industry"
+      },
+      {
+        "n": 6,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>. Heavy-metal-specific scope and the recognition framework comparing HMTc to USDA Organic, the Non-GMO Project, the Clean Label Project, EWG, and Consumer Reports (Organic and Non-GMO have no heavy-metals scope; \"clean-label\" marks cover metals within a broad multi-contaminant scope): Part 5.5. Mark-usage rules, the focused single-concern claim, and the prohibition on safety-implying language (\"does not certify safety\"): Part 2.5 and Part 2.1.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      }
+    ]
+  },
+  {
+    "slug": "brief-3-what-organic-doesnt-say",
+    "series": "Briefing",
+    "abstract_html": "<p><em>Heavy metals in food are not, for the most part, something a manufacturer adds. They are something a plant takes up from the ground it grows in. That single fact sits underneath a gap that has gone mostly unnamed: between what a parent believes the organic seal promises and what the seal was actually built to certify. This briefing is about that gap — where it comes from, why it is no one's fault, and why the honest response to it is additive rather than adversarial.</em></p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026. The plaintiffs fed their son Earth's Best organic baby food (manufactured by the Hain Celestial Group) and alleged neurodevelopmental injury; causation is contested and is not the subject of this briefing.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 2,
+        "title": "National Organic Program; Organic Foods Production Act of 1990",
+        "meta_html": "U.S. Department of Agriculture. 7 U.S.C. § 6501 et seq. and 7 C.F.R. Part 205. Organic certification governs production methods and permitted inputs (prohibiting synthetic pesticides and fertilizers, genetically engineered seed, sewage sludge, and irradiation); it does not establish maximum levels for, or require testing of, heavy metals in finished products.",
+        "href": "",
+        "type": "Legislation"
+      },
+      {
+        "n": 3,
+        "title": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis",
+        "meta_html": "C. Dearing, Z. Ye, and G. Robertshaw. <em>F1000Research</em>, 2025. doi: <a href=\"https://doi.org/10.12688/f1000research.175538.1\">10.12688/f1000research.175538.1</a> (153 composite samples, Hawke's Bay, NZ; cadmium and nickel significantly lower in organic vegetables; no organic effect on lead or arsenic; samples exceeded Codex limits in several cases).",
+        "href": "https://doi.org/10.12688/f1000research.175538.1",
+        "type": "Journal"
+      },
+      {
+        "n": 4,
+        "title": "Cadmium and Lead in Cocoa Powder and Chocolate Products in the U.S. Market",
+        "meta_html": "E. Abt, J. Fong Sam, P. Gray, and L. Posnick Robin. <em>Food Additives &amp; Contaminants: Part B</em> (U.S. FDA, Center for Food Safety and Applied Nutrition), 2018. doi: <a href=\"https://doi.org/10.1080/19393210.2017.1420700\">10.1080/19393210.2017.1420700</a> (cadmium correlated with percent cocoa and varied by geographic origin; Latin American cocoa higher in cadmium than West African).",
+        "href": "https://doi.org/10.1080/19393210.2017.1420700",
+        "type": "Journal"
+      },
+      {
+        "n": 5,
+        "title": "Arsenic in Rice and Rice Products Risk Assessment",
+        "meta_html": "U.S. Food and Drug Administration. Includes the action level for inorganic arsenic in infant rice cereal (100 ppb). Arsenic uptake in rice reflects the flooded-paddy agronomy and the arsenic content of soil and irrigation water, independent of organic versus conventional production.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 6,
+        "title": "Total Diet Study, FY2018–2020",
+        "meta_html": "U.S. Food and Drug Administration. Lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10% — heavy metals are endemic to the food supply because they originate in soil, water, and atmospheric deposition.",
+        "href": "",
+        "type": "Dataset"
+      },
+      {
+        "n": 7,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass. 2026 Edition, the Paleo Foundation. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>. Heavy-metal-specific scope and complementarity with USDA Organic and the Non-GMO Project (which do not address heavy metals): Part 5.5. Independent lot surveillance against published limits: Part 4. Mark-usage rules and the prohibition on safety-implying or \"free-of\" claims (\"does not certify safety\"): Part 2.5 and Part 2.1.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 8,
+        "title": "Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses",
+        "meta_html": "M. Barański, D. Średnicka-Tober, et al. <em>British Journal of Nutrition</em>, 2014;112(5):794–811. doi: <a href=\"https://doi.org/10.1017/S0007114514001366\">10.1017/S0007114514001366</a> (organic crops associated with lower cadmium, attributed largely to the avoidance of cadmium-bearing synthetic phosphate fertilizers).",
+        "href": "https://doi.org/10.1017/S0007114514001366",
+        "type": "Journal"
+      }
+    ]
+  },
+  {
+    "slug": "defense-counsel-briefing",
+    "series": "Counsel",
+    "abstract_html": "<p>Two rulings in the space of ten weeks reset the heavy-metal docket for infant and child food. In December 2025, the court overseeing the federal multidistrict litigation excluded five of the plaintiffs' six general-causation experts under Rule 702. In February 2026, a unanimous Supreme Court vacated a manufacturer's defense verdict and sent the case back to state court. The first ruling made the plaintiffs' science harder to admit. The second made the defendant's preferred forum harder to reach. Read together, they point to the same place: more of these cases will be decided by state juries, on the strength of the documented record each side can put in front of them. This briefing is written for the counsel who will try those cases. It explains what that record now has to look like, what the Heavy Metal Tested &amp; Certified program was built to produce, and where the program defers to your judgment rather than substituting for it.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "In re: Baby Food Products Liability Litigation",
+        "meta_html": "MDL No. 3101, U.S. District Court for the Northern District of California.",
+        "href": "",
+        "type": "Litigation"
+      },
+      {
+        "n": 2,
+        "title": "Rule 702 / general-causation ruling, In re: Baby Food Products Liability Litigation",
+        "meta_html": "(N.D. Cal., Dec. 2025) (excluding five of plaintiffs' six general-causation experts). Counsel should consult the order directly for its exact holdings and any post-ruling developments.",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 3,
+        "title": "Hain Celestial Group, Inc. v. Palmquist",
+        "meta_html": "607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (Sotomayor, J.; unanimous; Thomas, J., concurring).",
+        "href": "",
+        "type": "Case"
+      },
+      {
+        "n": 4,
+        "title": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "meta_html": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff Report, Feb. 4, 2021.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 5,
+        "title": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "meta_html": "International Organization for Standardization; EURACHEM/CITAC and ILAC-G8 guidance on decision rules under measurement uncertainty.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 6,
+        "title": "HMTc Infant and Child Foods Program Manual",
+        "meta_html": "K. Pendergrass, 2026 Edition, the Paleo Foundation, 2026. doi: <a href=\"https://doi.org/10.5281/zenodo.20270512\">10.5281/zenodo.20270512</a>. Confidential Remediation Track and discovery dynamics: Part 2.4; decision rules under measurement uncertainty: Part 2.6; aggregate-exposure framing and analyte tiering: Part 2.2; program-level adversarial read: Part 5.2.",
+        "href": "https://doi.org/10.5281/zenodo.20270512",
+        "type": "Report"
+      },
+      {
+        "n": 7,
+        "title": "California Assembly Bill 899",
+        "meta_html": "(2023), amending the California Health and Safety Code (baby-food heavy-metal testing and public disclosure).",
+        "href": "",
+        "type": "Legislation"
+      },
+      {
+        "n": 8,
+        "title": "Maryland \"Rudy's Law\"",
+        "meta_html": "HB 97 / SB 723 (2024) (baby-food heavy-metal testing and labeling).",
+        "href": "",
+        "type": "Legislation"
+      }
+    ]
+  }
+]
