@@ -738,3 +738,7 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 // span the top. Force it to fill.
 header.hmi-topnav-shell { display: block; }
 .hmtc-bar { width: 100%; box-sizing: border-box; }
+
+// Body links are regular weight (the design never semibolds links). Belt-and-
+// suspenders over the base.scss fix in case a component rule re-bolds them.
+.wiki-content a { font-weight: 400 !important; }

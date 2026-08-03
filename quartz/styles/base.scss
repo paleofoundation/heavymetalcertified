@@ -82,7 +82,10 @@ strong {
 }
 
 a {
-  font-weight: $semiBoldWeight;
+  // v3 design: links are REGULAR weight. Quartz's base semibolds every link,
+  // which reads as heavy-weighted text throughout the body. Chrome links set
+  // their own weight; body links stay regular.
+  font-weight: 400;
   text-decoration: none;
   transition: color 0.2s ease;
   color: var(--secondary);
