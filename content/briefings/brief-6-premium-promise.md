@@ -26,6 +26,11 @@ connections:
 
 <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>Premium food brands do not sell ingredients. They sell trust — a parent's belief that someone has already done the worrying. That belief is the most valuable thing such a brand owns, and the most fragile. This briefing is about what a Supreme Court case revealed about the gap between what premium brands promise and what they can prove, why that gap is most dangerous for the brands consumers trust most, and why the brands with the most to lose have the strongest reason to act.</em></p>
 
+<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 6 &middot; June 2026</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">A premium brand sells trust, its most valuable and most fragile asset. After Palmquist the brands with the most to lose are the ones whose promise is still unproven &mdash; and they are the last to believe it.</p>
+</div>
+
 ## The promise and the gap
 
 The Earth's Best brand promise is that parents can trust what they feed their children. The Palmquists trusted that promise [1].

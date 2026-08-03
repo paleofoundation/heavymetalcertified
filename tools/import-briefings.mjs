@@ -48,6 +48,20 @@ if (fs.existsSync(META_FILE)) {
   }
 }
 
+// Hand-authored featured layer, kept separate from the auto-parsed META so a
+// re-parse never clobbers it. { <slug>: { claim: "..." } } drives the design's
+// "THE CLAIM" callout; an optional data/briefings/featured/<slug>.md replaces
+// the pass-through prose with a curated design body (tables, boxes, callouts).
+let FEAT = {}
+const FEAT_FILE = path.join(repoRoot, "data/briefings/briefing-featured.json")
+if (fs.existsSync(FEAT_FILE)) {
+  try {
+    FEAT = JSON.parse(fs.readFileSync(FEAT_FILE, "utf8"))
+  } catch (e) {
+    console.warn(`  WARNING: could not read ${FEAT_FILE}: ${e.message}`)
+  }
+}
+
 function parse(text) {
   if (!text.startsWith("---")) return { fm: {}, body: text }
   const end = text.indexOf("\n---", 3)
@@ -106,6 +120,16 @@ ${rows}
 
 function recordRow(label, value) {
   return `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">${label}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${value}</span></div>`
+}
+
+// The design's "THE CLAIM" lead callout — a red pill + kicker + the briefing's
+// one-sentence thesis in Lora. Rendered on every briefing that carries a claim.
+function renderClaim(text, seriesName, date) {
+  const kicker = `Technical report &middot; ${seriesName}${date ? " &middot; " + date : ""}`
+  return `<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">${kicker}</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">${text}</p>
+</div>`
 }
 
 console.log("import-briefings: rendering canonical briefing design")
@@ -167,6 +191,15 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
       : ""
   const prose = extractProse(body)
 
+  // Featured layer: a "THE CLAIM" callout (from the claim field) plus, when a
+  // curated body exists at data/briefings/featured/<slug>.md, the design's
+  // tables/boxes/callouts in place of the pass-through prose.
+  const claim = FEAT[slug]?.claim || null
+  const claimCallout = claim ? renderClaim(claim, seriesName, fm.date) : ""
+  const featuredPath = path.join(repoRoot, "data/briefings/featured", `${slug}.md`)
+  const featuredBody = fs.existsSync(featuredPath) ? fs.readFileSync(featuredPath, "utf8").trim() : null
+  const argument = featuredBody || prose
+
   const recordRows = [
     recordRow("Title", title),
     subtitle ? recordRow("Subtitle", subtitle) : null,
@@ -192,7 +225,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
 
 ${abstractHtml}
 
-${prose}
+${claimCallout ? claimCallout + "\n\n" : ""}${argument}
 
 ## References
 

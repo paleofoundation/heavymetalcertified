@@ -26,6 +26,11 @@ connections:
 
 <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>A Supreme Court decision in February changed where heavy-metal cases are tried and who stays in the room when they are. For retailers, and for private-label programs above all, it converted a peripheral legal risk into a structural one. This briefing is written for the people who run supplier qualification and retail compliance. It treats the change as what it is — an operating problem with an operating response — and it explains why the retailers who move first will set the terms for everyone who follows.</em></p>
 
+<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 5 &middot; June 2026</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Palmquist turned the retailer from a peripheral defendant into a permanent one. Supplier qualification against a published standard is the operating response &mdash; and the retailer that writes it first sets the requirement for the category.</p>
+</div>
+
 ## An inflection point on the loading dock
 
 Retailers used to be peripheral defendants in product-liability cases involving products they did not manufacture. Palmquist made them anchor defendants [1].
