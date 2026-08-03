@@ -23,13 +23,15 @@
 }
 
 // ============================================================
-//  PAGE GROUND — the design's warm greige
+//  PAGE GROUND — the design's warm near-white surface
 // ============================================================
-// The canonical design's page body is `background: #ede7e2` (a warm greige),
-// not Quartz's near-white --light (#fdfdfc). Content panels, the bib-record
-// box and tables keep their lighter fills, so they read as cards on this
-// ground. !important beats base.scss `body { background-color: var(--light) }`.
-body { background: #ede7e2 !important; }
+// The design's dominant surface is #fffdfb (66 uses across the file); #faf7f4
+// is the shaded-section variant (27 uses). The single `body { background:
+// #ede7e2 }` rule is an outermost fallback that content sits on top of and
+// hides — it is NOT the visible page colour, and an earlier version of this
+// file wrongly adopted it, tinting the whole page greige. #fffdfb is the
+// correct, design-true ground. !important beats base.scss's var(--light).
+body { background: #fffdfb !important; }
 
 // ============================================================
 //  CONTENT TYPOGRAPHY — match the v3 body treatment
