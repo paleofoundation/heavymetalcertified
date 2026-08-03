@@ -714,3 +714,27 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 }
 .proof:not(.proof-home) .wiki-content h2[id="references"] ~ p a,
 .proof:not(.proof-home) .wiki-content h2[id="sources"] ~ p a { color: #1c43ad !important; }
+
+// ============================================================
+//  MEGA-MENU FONT PINNING — kill Lora bleed into the panel
+//  Panel item labels + blurb must be Inter; title Lora; heads/all/count Mono.
+// ============================================================
+.hmtc-nav .hmi-nav-panel { font-family: Inter, system-ui, -apple-system, sans-serif; }
+.hmtc-nav .hmi-nav-blurb,
+.hmtc-nav .hmi-nav-col li a,
+.hmtc-nav .hmi-nav-childlabel {
+  font-family: Inter, system-ui, -apple-system, sans-serif !important;
+  font-weight: 400 !important;
+}
+.hmtc-nav .hmi-nav-title { font-family: Lora, serif !important; font-weight: 400 !important; }
+.hmtc-nav .hmi-nav-colhead,
+.hmtc-nav .hmi-nav-all,
+.hmtc-nav .hmi-nav-count {
+  font-family: "IBM Plex Mono", monospace !important;
+}
+
+// The header shell is a flex/quartz <header>; its inner bar was shrink-wrapping
+// to content (~1237px) instead of filling the 1760 max-width, so the nav didn't
+// span the top. Force it to fill.
+header.hmi-topnav-shell { display: block; }
+.hmtc-bar { width: 100%; box-sizing: border-box; }
