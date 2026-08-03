@@ -5,9 +5,21 @@ type: public-briefing
 section: "Litigation"
 briefing_slug: defense-counsel-briefing
 author: "Karen Pendergrass"
+orcid: 0000-0002-2348-7259
 briefing_date: "June 2026"
+updated: "June 2026"
 scholar_eligible: true
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
+snapshot:
+  - { k: "Section", v: "Litigation" }
+  - { k: "Published", v: "June 2026" }
+  - { k: "Document type", v: "Technical report" }
+  - { k: "Publisher", v: "Paleo Certified, Inc." }
+connections:
+  - { label: "HMTc Standards register", href: "/standards" }
+  - { label: "How limits are derived", href: "/program/structure" }
+  - { label: "All Standards Briefings", href: "/briefings" }
+  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
 *Heavy-Metal Litigation After Palmquist, and What Defense Counsel Can Build Before the Complaint*

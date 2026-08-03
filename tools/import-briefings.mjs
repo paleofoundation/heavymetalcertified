@@ -65,9 +65,23 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     `section: "${map.section}"`,
     `briefing_slug: ${slug}`,
     fm.author ? `author: "${fm.author.replace(/"/g, '\\"')}"` : `author: "Karen Pendergrass"`,
+    "orcid: 0000-0002-2348-7259",
     fm.date ? `briefing_date: "${fm.date}"` : null,
+    fm.date ? `updated: "${fm.date}"` : null,
     "scholar_eligible: true",
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
+    // Chrome the shared HeroBand + Rail read: the "Page snapshot" box and the
+    // right-rail "Connections" list, so every briefing matches the v3 design.
+    "snapshot:",
+    `  - { k: "Section", v: "${map.section}" }`,
+    fm.date ? `  - { k: "Published", v: "${fm.date}" }` : null,
+    `  - { k: "Document type", v: "Technical report" }`,
+    `  - { k: "Publisher", v: "Paleo Certified, Inc." }`,
+    "connections:",
+    '  - { label: "HMTc Standards register", href: "/standards" }',
+    '  - { label: "How limits are derived", href: "/program/structure" }',
+    '  - { label: "All Standards Briefings", href: "/briefings" }',
+    '  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }',
     "---",
     "",
     // a visible subtitle line (frontmatter description is for meta, not body)
