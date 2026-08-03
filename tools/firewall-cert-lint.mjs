@@ -76,8 +76,12 @@ if (fs.existsSync(CATALOG)) {
   if (fs.existsSync(stdDir)) {
     for (const f of fs.readdirSync(stdDir).filter((x) => x.endsWith(".md") && x !== "index.md")) {
       const text = fs.readFileSync(path.join(stdDir, f), "utf8")
-      const m = text.match(/\*\*\d[\d.,]*\s*ppb\*\*/g)
-      if (m) renderedFirm += m.length
+      // Legacy markdown-bold render (**N ppb**) and the current HTML render
+      // (a firm value carries an explicit data-firm-ppb marker) both count.
+      const md = text.match(/\*\*\d[\d.,]*\s*ppb\*\*/g)
+      if (md) renderedFirm += md.length
+      const html = text.match(/data-firm-ppb/g)
+      if (html) renderedFirm += html.length
     }
   }
   if (renderedFirm !== publishedCells.length) {

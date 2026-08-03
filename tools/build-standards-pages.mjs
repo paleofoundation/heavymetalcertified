@@ -54,6 +54,22 @@ function basisLabel(b) {
     }[b] || b
   )
 }
+// Canonical analyte tiering (matches /program/structure): Tier 1 metals carry no
+// safe threshold / bioaccumulate → no variance; everything else is Tier 2.
+const TIER1 = new Set(["Pb", "Cd", "iAs", "MeHg"])
+const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
+// Pathway label from the row's clean/dirty designation (variant_type).
+function pathwayLabel(vt) {
+  const v = String(vt || "").toLowerCase()
+  if (v.includes("dirty")) return "Dirty · P45"
+  return "Clean · P97"
+}
+// The v3 section-heading style, reused across the emitted body.
+const H2S =
+  'style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px"'
+const TH =
+  "style=\"text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase\""
+const TD = 'style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7'
 
 // ---- per-row standards pages ----------------------------------------------
 let rowsWithFirm = 0
@@ -71,10 +87,12 @@ for (const row of catalog.rows) {
   // Scholar eligibility: a row is a citable technical document ONLY once it
   // publishes at least one firm cell. An all-in-development row is a status
   // page, not a standard — emitting citation_* there would be an overclaim.
+  const subj = row.subcategory.replace(/"/g, "")
   const fm = [
     "---",
     `title: "${row.subcategory.replace(/"/g, '\\"')} — HMTc Standard"`,
     hasFirm ? "type: standard" : "type: standard-in-development",
+    `description: "The HMTc standard for ${subj} (${row.vertical.category_name}), stated in ${basisLabel(row.native_basis)}. Per-analyte limits publish as each analyte clears the five shipping gates; a cell with no firm number yet shows its evidence state honestly."`,
     `category: ${row.vertical.category}`,
     `category_name: "${row.vertical.category_name}"`,
     `product_slug: ${slug}`,
@@ -86,93 +104,118 @@ for (const row of catalog.rows) {
     `effective_date: ${today}`,
     hasFirm ? "scholar_eligible: true" : "scholar_eligible: false",
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
+    "snapshot:",
+    `  - { k: "Analytes published", v: "${published.length} / ${PANEL.length}" }`,
+    `  - { k: "Pathway", v: "${pathwayLabel(row.variant_type)}" }`,
+    `  - { k: "Native basis", v: "${basisLabel(row.native_basis)}" }`,
+    `  - { k: "Standard version", v: "${row.standard_version}" }`,
+    "connections:",
+    '  - { label: "How limits are derived", href: "/program/structure" }',
+    '  - { label: "Program Manuals", href: "/manuals" }',
+    '  - { label: "Verify a certificate", href: "/verify" }',
+    `  - { label: "Heavy Metal Index — literature baseline", href: "${row.hmi_literature_link}" }`,
     "---",
     "",
   ].join("\n")
 
-  const body = []
-  body.push(`# ${row.subcategory}`)
-  body.push("")
-  body.push(
-    `HMTc standard for **${row.subcategory}** (${row.vertical.category_name}, category ${row.vertical.category}). ` +
-      `Values are stated in the product's native basis — **${basisLabel(row.native_basis)}** — per the locked methodology. ` +
-      `The standard publishes per analyte; an analyte renders a firm limit only when it has cleared all five shipping gates.`,
-  )
-  body.push("")
-  body.push(`- **Standard version:** ${row.standard_version}`)
-  body.push(`- **Methodology:** ${catalog.methodology_version}`)
-  body.push(`- **Native basis:** ${basisLabel(row.native_basis)}`)
-  body.push(`- **Analyte panel:** ${PANEL.join(", ")}`)
-  body.push(
-    `- **Literature baseline:** [Heavy Metal Index — ${slug}](${row.hmi_literature_link}) ` +
-      `(the independent evidence this standard is applied to; one-way citation)`,
-  )
-  body.push("")
+  // Master Limit Table rows. Firm number renders ONLY for published cells (the
+  // firewall two-tier rule); in-development and out-of-scope cells stay em-dashed
+  // with their honest state note — never an invented number or pooled value.
+  const covered = PANEL.filter((a) => analytes[a]?.status === "published")
+  const inScopeNotPub = PANEL.filter((a) => analytes[a]?.in_scope && analytes[a]?.status !== "published")
+  const outScope = PANEL.filter((a) => analytes[a] && !analytes[a].in_scope)
 
-  // analyte table
-  body.push("## Per-analyte standard")
-  body.push("")
-  body.push("| Analyte | In scope | Limit (native basis) | Basis | Rationale | Status |")
-  body.push("|---|---|---|---|---|---|")
-  for (const a of PANEL) {
+  const tdMono = `${TD};white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace"`
+  const tdTier = `${TD};color:#736b6b"`
+  const tdLimit = `${TD};line-height:1.55;color:#3f3a3a"`
+  const tdPool = `${TD};font-family:'IBM Plex Mono',monospace;color:#3f3a3a"`
+  const tdRat = `${TD};color:#736b6b"`
+  const tdRatDev = `${TD};color:#736b6b;line-height:1.55"`
+  const tdStatPub = `${TD};font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727"`
+  const tdStatMuted = `${TD};font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1"`
+  const rowsHtml = PANEL.map((a, i) => {
     const cell = analytes[a]
+    const z = i % 2 === 0 ? ' style="background:#fdfaf8"' : ""
     if (!cell || !cell.in_scope) {
-      body.push(`| ${a} | — | — | — | — | not in scope |`)
-      continue
+      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdPool}>&mdash;</td><td ${tdRat}>&mdash;</td><td ${tdStatMuted}>not in scope</td></tr>`
     }
     if (cell.status === "published") {
-      const limit = `${cell.published_limit_ppb} ppb`
       const cross =
         cell.cross_basis_ppb != null
-          ? ` (${round(cell.cross_basis_ppb)} ppb ${basisLabel(cell.cross_basis_label)})`
+          ? `<span style="color:#a9a1a1"> &middot; ${round(cell.cross_basis_ppb)} ${basisLabel(cell.cross_basis_label)}</span>`
           : ""
-      const rationale =
-        cell.rationale_tag +
-        (cell.regulatory_cap_source ? ` — cap: ${esc(cell.regulatory_cap_source)}` : "")
-      body.push(
-        `| ${a} | yes | **${limit}**${cross} | ${basisLabel(cell.native_basis)} | ${esc(rationale)} | published |`,
-      )
-    } else {
-      // in development — honest state note, NO firm number
-      const note = cell.evidence_state_note ? esc(shortNote(cell.evidence_state_note)) : "evidence under review"
-      body.push(`| ${a} | yes | — | ${basisLabel(cell.native_basis)} | ${note} | in development |`)
+      const rat =
+        esc(cell.rationale_tag) +
+        (cell.regulatory_cap_source
+          ? `<br><span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#a9a1a1">${esc(cell.regulatory_cap_source)}</span>`
+          : "")
+      const pooled = cell.precise_ppb != null ? round(cell.precise_ppb) : "&mdash;"
+      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}><strong data-firm-ppb style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:#2b1f1f">${cell.published_limit_ppb}</strong>${cross}</td><td ${tdPool}>${pooled}</td><td ${tdRat}>${rat}</td><td ${tdStatPub}>published</td></tr>`
     }
-  }
-  body.push("")
+    const note = cell.evidence_state_note ? esc(shortNote(cell.evidence_state_note)) : "evidence under review"
+    return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdPool}>&mdash;</td><td ${tdRatDev}>${note}</td><td ${tdStatMuted}>in development</td></tr>`
+  }).join("\n")
 
-  // analyte-scope disclosure (gate 4 — travels with the mark)
-  const covered = PANEL.filter((a) => analytes[a]?.status === "published")
-  const inScopeNotPub = PANEL.filter(
-    (a) => analytes[a]?.in_scope && analytes[a]?.status !== "published",
-  )
-  const outScope = PANEL.filter((a) => analytes[a] && !analytes[a].in_scope)
-  body.push("## Analyte scope")
-  body.push("")
-  body.push(
-    `This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte.`,
-  )
-  body.push("")
-  body.push(`- **Published (firm limit in force):** ${covered.length ? covered.join(", ") : "none yet"}`)
-  body.push(
-    `- **In scope, in development (no firm limit yet):** ${inScopeNotPub.length ? inScopeNotPub.join(", ") : "none"}`,
-  )
-  body.push(`- **Out of scope for this subcategory:** ${outScope.length ? outScope.join(", ") : "none"}`)
-  body.push("")
+  const scopeRow = (label, val) =>
+    `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">${label}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${val}</span></div>`
 
-  if (!hasFirm) {
-    body.push("> **Status: in development.** No analyte in this subcategory has cleared all five shipping gates yet. This page reports the current evidence state honestly; it is not yet a published standard. See [Program Structure](../program/structure) for how a subcategory reaches publication.")
-    body.push("")
-  }
+  const devNote = !hasFirm
+    ? `  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-top:16px"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">No analyte in this subcategory has cleared all five shipping gates yet, so no firm limit is in force. This page reports the current evidence state honestly; it is not yet a published standard. See <a href="/program/structure" style="color:#1c43ad">Program structure</a> for how a subcategory reaches publication.</p></div>`
+    : ""
 
-  body.push("---")
-  body.push("")
-  body.push(
-    `*HMTc standards are living, versioned documents. This page reflects ${row.standard_version} as of ${today}. ` +
-      `Superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in [Program Structure](../program/structure).*`,
-  )
-  body.push("")
+  const body = `<section id="audiences" style="margin-bottom:52px">
+  <h2 ${H2S}>Who this standard is for</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Brand regulatory affairs and QA</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table and the derivation. Every numeric claim traces to a source page on the independent literature index.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Retailer quality and compliance</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table. The mark on a product means the brand tested at or below every value in it, in the product&rsquo;s native basis.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the pooled column and the rationale. Thresholds come from a pooled occurrence distribution of peer-reviewed and agency data, weighted by source N with a 50% relative-share cap.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Adversarial readers &mdash; plaintiff&rsquo;s experts, competing bodies</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the rationale column and the firm/in-development split. Every published value carries its pooled figure, its native basis, and the reason for any gap with the pool.</p></div>
+  </div>
+</section>
 
-  fs.writeFileSync(path.join(OUT_DIR, `${slug}.md`), fm + body.join("\n"), "utf8")
+<section id="limits" style="margin-bottom:52px">
+  <h2 ${H2S}>Master Limit Table</h2>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column is the engine output before the increment ladder, so the derivation stays re-derivable. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
+  <div style="overflow-x:auto">
+  <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse">
+    <thead>
+      <tr style="background:#9f2727;color:#fff">
+        <th ${TH}>Analyte</th><th ${TH}>Tier</th><th ${TH}>HMTc limit</th><th ${TH}>Pooled</th><th ${TH}>Rationale</th><th ${TH}>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+${rowsHtml}
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Published values round to the HMTc primary increment ladder &mdash; 1 &middot; 2 &middot; 3 &middot; 5 &middot; 10 &middot; 15 &middot; 20 &middot; 25 &middot; 50 &middot; 100 &middot; 200 &middot; 500 &middot; 1000 &middot; 1300 &middot; 1500 &middot; 2000 &middot; 5000 &middot; 10000 &mdash; so a brand has an unambiguous bin to test against.</p>
+${devNote}
+</section>
+
+<section id="scope" style="margin-bottom:52px">
+  <h2 ${H2S}>Analyte scope</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte. The panel is ${PANEL.join(", ")}.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px">
+${scopeRow("Published (firm limit in force)", covered.length ? covered.join(", ") : "none yet")}
+${scopeRow("In scope, in development (no firm limit yet)", inScopeNotPub.length ? inScopeNotPub.join(", ") : "none")}
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Out of scope for this subcategory</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${outScope.length ? outScope.join(", ") : "none"}</span></div>
+  </div>
+</section>
+
+<section id="cite">
+  <h2 ${H2S}>Cite this standard</h2>
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;${subj}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${row.vertical.category_name} standard, version ${row.standard_version}. Paleo Certified, Inc. dba The Paleo Foundation, 2026.</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="${row.hmi_literature_link}" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects ${row.standard_version} and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
+    </div>
+  </div>
+</section>
+`
+
+  fs.writeFileSync(path.join(OUT_DIR, `${slug}.md`), fm + body, "utf8")
 }
 
 // ---- Standards register (ported v3 design: inline-HTML sections) -----------

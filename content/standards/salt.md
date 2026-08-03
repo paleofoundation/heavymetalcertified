@@ -1,6 +1,7 @@
 ---
 title: "Salt (table, sea, Himalayan) — HMTc Standard"
 type: standard-in-development
+description: "The HMTc standard for Salt (table, sea, Himalayan) (Herbs, Spices, Seasonings and Salt), stated in as sold. Per-analyte limits publish as each analyte clears the five shipping gates; a cell with no firm number yet shows its evidence state honestly."
 category: 34
 category_name: "Herbs, Spices, Seasonings and Salt"
 product_slug: salt
@@ -9,45 +10,76 @@ standard_version: "2.2 (2026-06-09)"
 methodology_version: "HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)"
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/salt
-effective_date: 2026-06-20
+effective_date: 2026-08-03
 scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier]
+snapshot:
+  - { k: "Analytes published", v: "0 / 10" }
+  - { k: "Pathway", v: "Clean · P97" }
+  - { k: "Native basis", v: "as sold" }
+  - { k: "Standard version", v: "2.2 (2026-06-09)" }
+connections:
+  - { label: "How limits are derived", href: "/program/structure" }
+  - { label: "Program Manuals", href: "/manuals" }
+  - { label: "Verify a certificate", href: "/verify" }
+  - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com/products/salt" }
 ---
-# Salt (table, sea, Himalayan)
+<section id="audiences" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Who this standard is for</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Brand regulatory affairs and QA</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table and the derivation. Every numeric claim traces to a source page on the independent literature index.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Retailer quality and compliance</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table. The mark on a product means the brand tested at or below every value in it, in the product&rsquo;s native basis.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the pooled column and the rationale. Thresholds come from a pooled occurrence distribution of peer-reviewed and agency data, weighted by source N with a 50% relative-share cap.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Adversarial readers &mdash; plaintiff&rsquo;s experts, competing bodies</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the rationale column and the firm/in-development split. Every published value carries its pooled figure, its native basis, and the reason for any gap with the pool.</p></div>
+  </div>
+</section>
 
-HMTc standard for **Salt (table, sea, Himalayan)** (Herbs, Spices, Seasonings and Salt, category 34). Values are stated in the product's native basis — **as sold** — per the locked methodology. The standard publishes per analyte; an analyte renders a firm limit only when it has cleared all five shipping gates.
+<section id="limits" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, as sold. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column is the engine output before the increment ladder, so the derivation stays re-derivable. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
+  <div style="overflow-x:auto">
+  <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse">
+    <thead>
+      <tr style="background:#9f2727;color:#fff">
+        <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Pooled</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Rationale</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#fdfaf8"><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Pb</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 1</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">READY FOR REVIEW (regulatory cap applies); distinct_sources=3; sens_band=stable; classif…</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">in development</td></tr>
+      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">tAs</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr style="background:#fdfaf8"><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">iAs</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 1</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Cd</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 1</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">PROVISIONAL: sensitivity unstable across parametric assumptions; distinct_sources=2; sen…</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">in development</td></tr>
+      <tr style="background:#fdfaf8"><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">tHg</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">MeHg</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 1</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr style="background:#fdfaf8"><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Ni</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Cr-VI</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr style="background:#fdfaf8"><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Sn</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Al</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Tier 2</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;line-height:1.55;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">&mdash;</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">not in scope</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Published values round to the HMTc primary increment ladder &mdash; 1 &middot; 2 &middot; 3 &middot; 5 &middot; 10 &middot; 15 &middot; 20 &middot; 25 &middot; 50 &middot; 100 &middot; 200 &middot; 500 &middot; 1000 &middot; 1300 &middot; 1500 &middot; 2000 &middot; 5000 &middot; 10000 &mdash; so a brand has an unambiguous bin to test against.</p>
+  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-top:16px"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">No analyte in this subcategory has cleared all five shipping gates yet, so no firm limit is in force. This page reports the current evidence state honestly; it is not yet a published standard. See <a href="/program/structure" style="color:#1c43ad">Program structure</a> for how a subcategory reaches publication.</p></div>
+</section>
 
-- **Standard version:** 2.2 (2026-06-09)
-- **Methodology:** HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)
-- **Native basis:** as sold
-- **Analyte panel:** Pb, tAs, iAs, Cd, tHg, MeHg, Ni, Cr-VI, Sn, Al
-- **Literature baseline:** [Heavy Metal Index — salt](https://heavymetalindex.com/products/salt) (the independent evidence this standard is applied to; one-way citation)
+<section id="scope" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Analyte scope</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte. The panel is Pb, tAs, iAs, Cd, tHg, MeHg, Ni, Cr-VI, Sn, Al.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Published (firm limit in force)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">none yet</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">In scope, in development (no firm limit yet)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">Pb, Cd</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Out of scope for this subcategory</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">tAs, iAs, tHg, MeHg, Ni, Cr-VI, Sn, Al</span></div>
+  </div>
+</section>
 
-## Per-analyte standard
-
-| Analyte | In scope | Limit (native basis) | Basis | Rationale | Status |
-|---|---|---|---|---|---|
-| Pb | yes | — | as sold | READY FOR REVIEW (regulatory cap applies); distinct_sources=3; sens_band=stable; classif… | in development |
-| tAs | — | — | — | — | not in scope |
-| iAs | — | — | — | — | not in scope |
-| Cd | yes | — | as sold | PROVISIONAL: sensitivity unstable across parametric assumptions; distinct_sources=2; sen… | in development |
-| tHg | — | — | — | — | not in scope |
-| MeHg | — | — | — | — | not in scope |
-| Ni | — | — | — | — | not in scope |
-| Cr-VI | — | — | — | — | not in scope |
-| Sn | — | — | — | — | not in scope |
-| Al | — | — | — | — | not in scope |
-
-## Analyte scope
-
-This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte.
-
-- **Published (firm limit in force):** none yet
-- **In scope, in development (no firm limit yet):** Pb, Cd
-- **Out of scope for this subcategory:** tAs, iAs, tHg, MeHg, Ni, Cr-VI, Sn, Al
-
-> **Status: in development.** No analyte in this subcategory has cleared all five shipping gates yet. This page reports the current evidence state honestly; it is not yet a published standard. See [Program Structure](../program/structure) for how a subcategory reaches publication.
-
----
-
-*HMTc standards are living, versioned documents. This page reflects 2.2 (2026-06-09) as of 2026-06-20. Superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in [Program Structure](../program/structure).*
+<section id="cite">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2>
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;Salt (table, sea, Himalayan).&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Herbs, Spices, Seasonings and Salt standard, version 2.2 (2026-06-09). Paleo Certified, Inc. dba The Paleo Foundation, 2026.</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="https://heavymetalindex.com/products/salt" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects 2.2 (2026-06-09) and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
+    </div>
+  </div>
+</section>
