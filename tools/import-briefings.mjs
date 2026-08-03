@@ -82,30 +82,12 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   imported.push({ slug, title, section: map.section })
 }
 
-// briefings index, grouped by section
-const sections = [...new Set(imported.map((b) => b.section))]
-const idx = [
-  "---",
-  'title: "Standards Briefings"',
-  "type: briefings-index",
-  "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
-  "---",
-  "",
-  "# Standards Briefings",
-  "",
-  "Analytical briefings on what the Heavy Metal Tested & Certified standard is, why it is set the way it is, and what it changes for brands, retailers, and counsel. Each briefing is a citable technical analysis grounded in the [literature index](https://heavymetalindex.com) and the program's governing principles.",
-  "",
-]
-for (const section of sections) {
-  idx.push(`## ${section}`, "")
-  for (const b of imported.filter((x) => x.section === section)) {
-    idx.push(`- [${b.title}](${b.slug})`)
-  }
-  idx.push("")
-}
-fs.writeFileSync(path.join(OUT, "index.md"), idx.join("\n"), "utf8")
+// content/briefings/index.md is hand-authored (the ported v3 design directory:
+// the series list, peer-track preprints, and indexing policy). The generator no
+// longer emits it — it would clobber the ported layout on every run. The
+// per-briefing page loop above still runs.
 
-console.log(`import-briefings: imported ${imported.length} briefings into content/briefings/`)
+console.log(`import-briefings: imported ${imported.length} briefings into content/briefings/ (index.md hand-authored, not emitted)`)
 if (imported.length !== Object.keys(MAP).length) {
   console.warn(`  WARNING: expected ${Object.keys(MAP).length}, imported ${imported.length}`)
 }

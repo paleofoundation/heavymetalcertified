@@ -19,6 +19,7 @@ const KIND: Record<string, string> = {
   verify: "Lookup",
   apply: "Apply",
   brands: "Directory",
+  brand: "Certified brand",
   portal: "Portal",
   remediation: "Policy",
   mark: "Mark",
@@ -88,6 +89,7 @@ export default (() => {
     const snapshot = rows.slice(0, 4)
 
     const author = fm.author ? String(fm.author) : undefined
+    const orcid = fm.orcid ? String(fm.orcid) : undefined
     const updated = iso(fm.updated) ?? iso(fm.briefing_date) ?? eff
     const dek = fm.description ? String(fm.description) : undefined
     const hasSnapshot = snapshot.length > 0
@@ -114,7 +116,12 @@ export default (() => {
             {dek ? <p class="hmtc-hb-dek">{dek}</p> : null}
             {author || updated ? (
               <div class="hmtc-hb-meta">
-                {author ? <span>Author {author}</span> : null}
+                {author ? (
+                  <span>
+                    Author {author}
+                    {orcid ? ` · ORCID ${orcid}` : ""}
+                  </span>
+                ) : null}
                 {updated ? <span class="hmtc-hb-stamp">UPDATED {updated}</span> : null}
               </div>
             ) : null}

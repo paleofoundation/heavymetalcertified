@@ -36,7 +36,7 @@ rail_box:
     <a href="/apply" style="font-size:13px;color:#1c43ad">Apply to be the first &rarr;</a>
   </div>
   <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:10px">Specimen entry</div>
-  <div style="border:1px solid #e8e1db;background:#fffdfb">
+  <a href="/brands/specimen" style="display:block;border:1px solid #e8e1db;background:#fffdfb;text-decoration:none">
     <div style="display:grid;grid-template-columns:84px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:20px">
       <div style="width:84px;height:84px;border:1px solid #e8e1db;background:#faf7f4;display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#c3b9b9">Logo</div>
       <div style="min-width:0">
@@ -54,7 +54,7 @@ rail_box:
         <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Since</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-05</span></div>
       </div>
     </div>
-  </div>
+  </a>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">A specimen entry, shown so the register&rsquo;s shape is legible before it fills. Listing is a consequence of certification, not a purchasable placement; order and prominence are not for sale.</p>
 </section>
 
