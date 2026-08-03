@@ -5,6 +5,24 @@
 // framing, hover states, and the narrow-viewport collapses.
 
 // ============================================================
+//  BODY FONT — system sans, per the production handoff
+// ============================================================
+// The design specifies "system sans (body 16.5/1.78)", not Inter. The .dc.html
+// artifact renders as the OS system face (SF Pro on macOS); loading Inter as a
+// webfont here is exactly the font mismatch flagged on the references. Override
+// --bodyFont (base.scss uses var(--bodyFont)) so all body text is the system
+// face, matching what the design actually renders as.
+// !important on the custom property is deliberate: Quartz injects its own
+// `:root { --bodyFont: "Inter", ... }` from theme.typography into the <head>
+// AFTER this stylesheet, so a normal declaration here loses the cascade by
+// source order. A custom property flagged !important wins regardless of order,
+// which is the only reliable way to force the system face without editing the
+// Quartz config's googleFonts pipeline.
+:root {
+  --bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif !important;
+}
+
+// ============================================================
 //  CONTENT TYPOGRAPHY — match the v3 body treatment
 // ============================================================
 // v3 sets every heading in Lora at REGULAR weight (400); Quartz's base renders
@@ -97,7 +115,7 @@ a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 25
 .hmtc-hb-snap-k,
 footer.site-footer .site-footer-column a,
 footer.site-footer .site-footer-brand p {
-  font-family: Inter, system-ui, -apple-system, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif !important;
   font-weight: 400 !important;
 }
 // Mono labels stay IBM Plex Mono at regular weight.
@@ -687,8 +705,19 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
   line-height: 1.6 !important;
   color: #3f3a3a;
 }
-.wiki-content tbody tr:nth-child(odd) { background: #fdfaf8; }
-.wiki-content tbody tr:hover { background: #fbeceb; }
+// No global zebra or hover. The canonical design has neither — its tables sit
+// on the plain page ground with only the per-row bottom rule for separation.
+// The one table that IS shaded (the standards Master Limit Table) sets its
+// #fdfaf8 zebra inline in build-standards-pages.mjs, so it keeps its look
+// without a global rule painting a pink "pill" onto every other table.
+//
+// Quartz base (custom.scss) and the ported proof-design.scss each add a table
+// row-hover tint; the cert design has none, so neutralise it here. Loaded last
+// with equal specificity, so no !important is needed — which means the
+// standards table's inline zebra still wins at rest (inline beats a selector),
+// leaving that table's shading intact with no hover flicker.
+.wiki-content tbody tr:hover,
+article tbody tr:hover { background: none; }
 
 // Lead-in / caption copy (mono-adjacent) stays muted.
 .wiki-content blockquote { border-left: 3px solid #9f2727; background: #fbf5f7; padding: 18px 22px; margin: 0 0 28px; color: #5a4148; }
@@ -724,11 +753,11 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 //  MEGA-MENU FONT PINNING — kill Lora bleed into the panel
 //  Panel item labels + blurb must be Inter; title Lora; heads/all/count Mono.
 // ============================================================
-.hmtc-nav .hmi-nav-panel { font-family: Inter, system-ui, -apple-system, sans-serif; }
+.hmtc-nav .hmi-nav-panel { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif; }
 .hmtc-nav .hmi-nav-blurb,
 .hmtc-nav .hmi-nav-col li a,
 .hmtc-nav .hmi-nav-childlabel {
-  font-family: Inter, system-ui, -apple-system, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif !important;
   font-weight: 400 !important;
 }
 .hmtc-nav .hmi-nav-title { font-family: Lora, serif !important; font-weight: 400 !important; }

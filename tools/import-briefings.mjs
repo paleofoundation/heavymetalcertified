@@ -99,20 +99,51 @@ function styleAbstract(html) {
   )
 }
 
+// Primary legal / standards documents that do not sit in the Heavy Metal Index
+// corpus — their title is not a corpus link, and they carry the design's
+// "no source record" note.
+const NO_RECORD_TYPES = new Set(["Case", "Litigation", "Legal", "Standard"])
+function domainOf(href) {
+  if (!href) return ""
+  try {
+    return new URL(href).hostname.replace(/^www\./, "")
+  } catch {
+    return ""
+  }
+}
 function renderRefs(refs) {
   if (!refs || !refs.length) return ""
   const rows = refs
     .map((r) => {
-      const titleEl = r.href
+      const noRecord = NO_RECORD_TYPES.has(r.type)
+      const titleEl = r.href && !noRecord
         ? `<a href="${r.href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
         : `<span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
-      const meta = r.meta_html
-        ? `<p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${r.meta_html}</p>`
+      // The design meta is "{detail} · {domain}↗": clean citation text, then the
+      // linked domain with a superscript arrow. Strip any inline link the parse
+      // left in the detail so the domain is the single link.
+      const metaText = String(r.meta_html || "").replace(/<a\b[^>]*>(.*?)<\/a>/g, "$1")
+      const dom = domainOf(r.href)
+      const domLink = dom
+        ? `${metaText.trim() ? " &middot; " : ""}<a href="${r.href}" style="color:#736b6b">${dom}<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a>`
         : ""
-      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${meta}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
+      const meta =
+        metaText.trim() || dom
+          ? `<p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${metaText}${domLink}</p>`
+          : ""
+      // Type-appropriate wording: a standards body's document is not a "legal
+      // document", so an ISO/ASTM/AOAC entry gets its own note rather than the
+      // court-case one. Both say the same thing — named, but not a corpus row.
+      const noRecReason = r.type === "Standard"
+        ? "published standard, not corpus literature"
+        : "primary legal document, not corpus literature"
+      const noRecNote = noRecord
+        ? `<p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#c3b9b9;margin:6px 0 0">No source record &mdash; ${noRecReason}</p>`
+        : ""
+      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${meta}${noRecNote}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
     })
     .join("\n")
-  return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this briefing&rsquo;s text, in first-appearance order. This is the record the prose above draws on; where a work carries a DOI or public URL its title links to the source.</p>
+  return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this briefing&rsquo;s text, in first-appearance order. This is not the full evidence base for the underlying standard; it is only what the prose above draws on. Every range in the briefing is a model built on one of these published anchors. Where a work carries a DOI or a public URL, its title and domain link to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
   <div style="border-top:1px solid #e8e1db">
 ${rows}
   </div>`
