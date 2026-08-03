@@ -58,10 +58,16 @@ export default (() => {
     const sectionLabel = SECTION[seg]
     const sectionHref = `${base}/${seg}`
 
-    // Snapshot rows, derived from frontmatter (native to each screen type).
+    // Snapshot rows. An explicit `snapshot:` frontmatter array wins (used by the
+    // static pages ported from the comp); otherwise derive per screen type.
     const rows: [string, string][] = []
     const eff = iso(fm.effective_date)
-    if (type === "standard" || type === "standard-in-development") {
+    if (Array.isArray(fm.snapshot)) {
+      for (const r of fm.snapshot as any[]) {
+        if (Array.isArray(r)) rows.push([String(r[0]), String(r[1])])
+        else if (r && typeof r === "object") rows.push([String(r.k ?? r.label ?? ""), String(r.v ?? r.value ?? "")])
+      }
+    } else if (type === "standard" || type === "standard-in-development") {
       if (fm.native_basis) rows.push(["Native basis", String(fm.native_basis)])
       if (fm.standard_version) rows.push(["Standard version", String(fm.standard_version)])
       if (fm.category_name) rows.push(["Category", String(fm.category_name)])

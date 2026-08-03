@@ -12,15 +12,21 @@ export default (() => {
     const base = pathToRoot(slug)
     const fm = (fileData.frontmatter ?? {}) as Record<string, any>
 
-    // Connections: repo-derived cross-links (content, not design). The literature
-    // baseline is the one-way citation to the index when the page carries it.
-    const conns: { label: string; href: string }[] = []
-    if (fm.hmi_literature_link) {
-      conns.push({ label: "Heavy Metal Index — literature baseline", href: String(fm.hmi_literature_link) })
+    // Connections: an explicit `connections:` frontmatter array wins (the ported
+    // static pages set their own); otherwise repo-derived cross-links.
+    let conns: { label: string; href: string }[] = []
+    if (Array.isArray(fm.connections)) {
+      conns = (fm.connections as any[])
+        .map((c) => ({ label: String(c.label ?? c.text ?? ""), href: String(c.href ?? c.slug ?? "#") }))
+        .filter((c) => c.label)
+    } else {
+      if (fm.hmi_literature_link) {
+        conns.push({ label: "Heavy Metal Index — literature baseline", href: String(fm.hmi_literature_link) })
+      }
+      conns.push({ label: "The standards register", href: `${base}/standards` })
+      conns.push({ label: "How limits are derived", href: `${base}/program/structure` })
+      conns.push({ label: "Verify a certificate", href: `${base}/verify` })
     }
-    conns.push({ label: "The standards register", href: `${base}/standards` })
-    conns.push({ label: "How limits are derived", href: `${base}/program/structure` })
-    conns.push({ label: "Verify a certificate", href: `${base}/verify` })
 
     return (
       <>
