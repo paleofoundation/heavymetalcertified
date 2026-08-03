@@ -149,8 +149,23 @@ ${rows}
   </div>`
 }
 
+// Markdown emphasis (_x_ / *x*) -> <em> for HTML contexts (case names such as
+// _Palmquist_ must render italic, not as literal underscores). plain() strips
+// the markers for meta/SEO contexts. Both collapse whitespace runs so a stray
+// double space in a source subtitle does not survive into the page.
+function emph(s) {
+  return String(s || "").replace(/\s+/g, " ").replace(/[_*]([^_*\n]+)[_*]/g, "<em>$1</em>").trim()
+}
+function plain(s) {
+  return String(s || "").replace(/\s+/g, " ").replace(/[_*]([^_*\n]+)[_*]/g, "$1").trim()
+}
+
+// Bibliographic-record row. Label column is fixed (min 96px, up to its content
+// width) and the value column takes the rest and WRAPS — the old
+// `minmax(0,1fr) auto` let a long value (the subtitle) grow unbounded and
+// collapse the label to zero width, so "Subtitle" slid under its own value.
 function recordRow(label, value) {
-  return `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">${label}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${value}</span></div>`
+  return `    <div style="display:grid;grid-template-columns:minmax(96px,max-content) minmax(0,1fr);gap:24px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">${label}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.5;color:#9f2727;text-align:right">${value}</span></div>`
 }
 
 // The design's "THE CLAIM" lead callout — a red pill + kicker + the briefing's
@@ -175,7 +190,9 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   }
   const { fm, body } = parse(fs.readFileSync(path.join(SRC, file), "utf8"))
   const title = map.title || fm.title || slug
-  const subtitle = (fm.subtitle || "").replace(/\\/g, "").trim()
+  const subtitle = (fm.subtitle || "").replace(/\\/g, "").replace(/\s+/g, " ").trim()
+  const subtitleHtml = emph(subtitle) // <em> for display (hero dek, bib record, cite)
+  const subtitlePlain = plain(subtitle) // markers stripped, for the meta description
   const m = META[slug]
   if (!m) missingMeta.push(slug)
 
@@ -190,7 +207,8 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const front = [
     "---",
     `title: "${title.replace(/"/g, '\\"')}"`,
-    subtitle ? `description: "${subtitle.replace(/"/g, '\\"').slice(0, 200)}"` : null,
+    subtitle ? `description: "${subtitlePlain.replace(/"/g, '\\"').slice(0, 200)}"` : null,
+    subtitle ? `dek_html: "${subtitleHtml.replace(/"/g, '\\"')}"` : null,
     "type: public-briefing",
     `section: "${map.section}"`,
     `briefing_slug: ${slug}`,
@@ -218,7 +236,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const abstractHtml = m?.abstract_html
     ? styleAbstract(m.abstract_html)
     : subtitle
-      ? `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0;max-width:72ch">${subtitle}</p>`
+      ? `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0;max-width:72ch">${subtitleHtml}</p>`
       : ""
   const prose = extractProse(body)
 
@@ -233,7 +251,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
 
   const recordRows = [
     recordRow("Title", title),
-    subtitle ? recordRow("Subtitle", subtitle) : null,
+    subtitle ? recordRow("Subtitle", subtitleHtml) : null,
     recordRow("Author", (fm.author || "Karen Pendergrass").split(" ").reverse().join(", ").replace(/^, /, "")),
     recordRow("ORCID", "0000-0002-2348-7259"),
     recordRow("Author institution", "Heavy Metal Tested &amp; Certified, Paleo Foundation"),
@@ -250,7 +268,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     ? `  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px"><a href="${pdfRel}" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Download PDF</a></div>`
     : ""
 
-  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitle : ""}</em> (${seriesName}). Paleo Certified, Inc. dba The Paleo Foundation.`
+  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Paleo Certified, Inc. dba The Paleo Foundation.`
 
   const bodyStr = `## Abstract
 

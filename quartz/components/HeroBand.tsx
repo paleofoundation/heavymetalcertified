@@ -92,6 +92,10 @@ export default (() => {
     const orcid = fm.orcid ? String(fm.orcid) : undefined
     const updated = iso(fm.updated) ?? iso(fm.briefing_date) ?? eff
     const dek = fm.description ? String(fm.description) : undefined
+    // dek_html carries emphasis (e.g. an italic case name); render it as HTML.
+    // Falls back to the plain description. Both are author-generated, so the
+    // dangerouslySetInnerHTML is on trusted content only.
+    const dekHtml = fm.dek_html ? String(fm.dek_html) : undefined
     const hasSnapshot = snapshot.length > 0
 
     return (
@@ -113,7 +117,11 @@ export default (() => {
               <h1 class="hmtc-hb-title">{title}</h1>
               <span class="hmtc-hb-badge">{badge}</span>
             </div>
-            {dek ? <p class="hmtc-hb-dek">{dek}</p> : null}
+            {dekHtml ? (
+              <p class="hmtc-hb-dek" dangerouslySetInnerHTML={{ __html: dekHtml }} />
+            ) : dek ? (
+              <p class="hmtc-hb-dek">{dek}</p>
+            ) : null}
             {author || updated ? (
               <div class="hmtc-hb-meta">
                 {author ? (

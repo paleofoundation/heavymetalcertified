@@ -23,6 +23,15 @@
 }
 
 // ============================================================
+//  PAGE GROUND — the design's warm greige
+// ============================================================
+// The canonical design's page body is `background: #ede7e2` (a warm greige),
+// not Quartz's near-white --light (#fdfdfc). Content panels, the bib-record
+// box and tables keep their lighter fills, so they read as cards on this
+// ground. !important beats base.scss `body { background-color: var(--light) }`.
+body { background: #ede7e2 !important; }
+
+// ============================================================
 //  CONTENT TYPOGRAPHY — match the v3 body treatment
 // ============================================================
 // v3 sets every heading in Lora at REGULAR weight (400); Quartz's base renders
