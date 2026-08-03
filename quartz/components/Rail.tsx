@@ -28,6 +28,25 @@ export default (() => {
       conns.push({ label: "Verify a certificate", href: `${base}/verify` })
     }
 
+    // The call-to-action box under the connections. Defaults to the certificate
+    // Verify box; a page may override it with a `rail_box:` frontmatter object
+    // ({ title, body, cta_label, cta_href }) — the brands directory, for one,
+    // shows a "Report a misuse of the mark" box instead.
+    const boxFm = fm.rail_box && typeof fm.rail_box === "object" ? (fm.rail_box as Record<string, any>) : null
+    const box = boxFm
+      ? {
+          title: String(boxFm.title ?? "Verify a certificate"),
+          body: String(boxFm.body ?? ""),
+          ctaLabel: String(boxFm.cta_label ?? "Look up a lot"),
+          ctaHref: String(boxFm.cta_href ?? `${base}/verify`),
+        }
+      : {
+          title: "Verify a certificate",
+          body: "Check a lot number, certificate number or product code against the register. Public and open to regulators.",
+          ctaLabel: "Look up a lot",
+          ctaHref: `${base}/verify`,
+        }
+
     return (
       <>
         <div class="hmtc-conn-head">Connections</div>
@@ -39,13 +58,10 @@ export default (() => {
           ))}
         </div>
         <div class="hmtc-verify">
-          <div class="hmtc-verify-title">Verify a certificate</div>
-          <p class="hmtc-verify-body">
-            Check a lot number, certificate number or product code against the register. Public
-            and open to regulators.
-          </p>
-          <a class="hmtc-verify-cta" href={`${base}/verify`}>
-            Look up a lot
+          <div class="hmtc-verify-title">{box.title}</div>
+          <p class="hmtc-verify-body">{box.body}</p>
+          <a class="hmtc-verify-cta" href={box.ctaHref}>
+            {box.ctaLabel}
           </a>
         </div>
       </>
