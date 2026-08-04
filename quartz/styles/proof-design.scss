@@ -172,10 +172,13 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 
 /* superscript inline citations */
 sup.cite { font-size: 11px; line-height: 0; white-space: nowrap; }
-sup.cite > a { color: var(--burg); font-weight: 500; text-decoration: none; font-family: inherit; font-size: 12px; margin-left: 1px; }
+/* COMPONENTS.md §2 marker — burgundy, mono, padded, rounded. Scoped under
+   .wiki-content so it beats the blue `a.internal` content-link colour, which is
+   correct for prose links but must NOT reach the citation marker. */
+.wiki-content sup.cite > a, sup.cite > a { color: var(--burg); font-weight: 500; text-decoration: none; font-family: "IBM Plex Mono", monospace; font-size: 11px; margin-left: 1px; padding: 1px 3px; border-radius: 2px; }
 sup.cite > a::before { content: "["; }
 sup.cite > a::after { content: "]"; }
-sup.cite > a:hover { color: var(--burg-dark); text-decoration: underline; }
+.wiki-content sup.cite > a:hover, sup.cite > a:hover { color: var(--burg); background: var(--burg-tint2); text-decoration: none; }
 sup.cite { position: relative; }
 sup.cite .cite-card { display: none; position: absolute; bottom: 1.7em; left: 50%; transform: translateX(-50%); width: 300px; max-width: 80vw; background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.17); padding: 12px 14px; font-size: 12.5px; line-height: 1.5; color: var(--body); font-weight: 400; z-index: 40; text-align: left; white-space: normal; }
 sup.cite .cite-card .au { color: var(--muted); font-weight: 500; display: block; }

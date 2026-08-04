@@ -1,0 +1,17 @@
+{
+  "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs — never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md §3.5), including `absent: true` for markup that was removed.",
+  "viewport": { "width": 1440, "height": 1000 },
+  "pages": {
+    "/": [
+      { "sel": "body", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
+      { "sel": "header", "prop": "position", "want": "sticky" }
+    ],
+    "/articles/lead-and-cadmium-in-dark-chocolate": [
+      { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": "sup.cite > a", "prop": "color", "want": "#9f2727", "src": "COMPONENTS §2", "note": "the citation marker is the burgundy accent, NOT the blue link colour. If this reads #1c43ad an older internal-link rule is winning — delete it, do not out-specify (FIDELITY §1)." },
+      { "sel": "[id^=\"ref-\"]", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains", "note": "reference [N] marker is mono (COMPONENTS §2)" },
+      { "sel": "a[download]", "prop": "count", "want": 1, "note": "the Download PDF button must be present" }
+    ]
+  }
+}

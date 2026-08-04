@@ -22,6 +22,7 @@
     "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs",
     "serve": "./quartz/bootstrap-cli.mjs build --serve -d content -o public",
     "check": "tsc --noEmit",
+    "check:v3": "node tools/check-v3.mjs",
     "format": "npx prettier . --write",
     "release": "npm run build",
     "publish": "npm run release && npx vercel@latest --prod --yes"
