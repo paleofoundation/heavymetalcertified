@@ -23,6 +23,7 @@ const KIND: Record<string, string> = {
   portal: "Portal",
   remediation: "Policy",
   mark: "Mark",
+  article: "Analysis",
   "articles-index": "Directory",
 }
 
@@ -42,7 +43,10 @@ const SECTION: Record<string, string> = {
 function iso(v: unknown): string | undefined {
   if (!v) return undefined
   const s = String(v)
-  return s.length >= 10 ? s.slice(0, 10) : s
+  // Trim the time component only off a real ISO date ("2026-08-04T…"); human
+  // dates like "August 2026" (11 chars) must pass through intact, not get
+  // sliced to "August 202".
+  return /^\d{4}-\d{2}-\d{2}/.test(s) ? s.slice(0, 10) : s
 }
 
 export default (() => {

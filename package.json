@@ -19,7 +19,7 @@
     "briefings": "node tools/import-briefings.mjs",
     "lint:firewall": "node tools/firewall-cert-lint.mjs",
     "build": "./quartz/bootstrap-cli.mjs build -d content -o public",
-    "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs",
+    "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs",
     "serve": "./quartz/bootstrap-cli.mjs build --serve -d content -o public",
     "check": "tsc --noEmit",
     "format": "npx prettier . --write",
