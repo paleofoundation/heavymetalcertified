@@ -6,7 +6,7 @@ category_name: "Seafood"
 product_slug: canned-seafood
 native_basis: as_sold
 standard_version: "2.2 (2026-06-09)"
-methodology_version: "HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)"
+methodology_version: "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)"
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/canned-seafood
 effective_date: 2026-06-20
@@ -18,7 +18,7 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 HMTc standard for **Canned seafood (with tin flag)** (Seafood, category 6). Values are stated in the product's native basis — **as sold** — per the locked methodology. The standard publishes per analyte; an analyte renders a firm limit only when it has cleared all five shipping gates.
 
 - **Standard version:** 2.2 (2026-06-09)
-- **Methodology:** HMTc-10 / P97-clean / P45-dirty (CLAUDE.md Part 19, Governing Principles v2.0)
+- **Methodology:** HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)
 - **Native basis:** as sold
 - **Analyte panel:** Pb, tAs, iAs, Cd, tHg, MeHg, Ni, Cr-VI, Sn, Al
 - **Literature baseline:** [Heavy Metal Index — canned-seafood](https://heavymetalindex.com/products/canned-seafood) (the independent evidence this standard is applied to; one-way citation)

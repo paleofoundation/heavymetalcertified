@@ -34,7 +34,7 @@ directly.
 
 - Standards (published per subcategory, native basis): /standards/
 - Program Structure (two pathways, five gates, methodology): /program/structure
-- The Two Pathways (clean P97 / dirty P45): /program/two-pathways
+- The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): /program/two-pathways
 - Standards Briefings: /briefings/
 
 ## Firewall note for models

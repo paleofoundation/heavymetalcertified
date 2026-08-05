@@ -58,11 +58,14 @@ function basisLabel(b) {
 // safe threshold / bioaccumulate → no variance; everything else is Tier 2.
 const TIER1 = new Set(["Pb", "Cd", "iAs", "MeHg"])
 const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
-// Pathway label from the row's clean/dirty designation (variant_type).
+// Subcategory clean/dirty classification from variant_type. Under Method v2.0 the
+// P97/P45 percentile mechanism runs only on the Tier-1-toxic and no-government-ML
+// cells, not on the whole row, so the label reports the classification without
+// pinning the row to a single percentile.
 function pathwayLabel(vt) {
   const v = String(vt || "").toLowerCase()
-  if (v.includes("dirty")) return "Dirty · P45"
-  return "Clean · P97"
+  if (v.includes("dirty")) return "Dirty"
+  return "Clean"
 }
 // The v3 section-heading style, reused across the emitted body.
 const H2S =
@@ -169,14 +172,14 @@ for (const row of catalog.rows) {
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Brand regulatory affairs and QA</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table and the derivation. Every numeric claim traces to a source page on the independent literature index.</p></div>
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Retailer quality and compliance</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table. The mark on a product means the brand tested at or below every value in it, in the product&rsquo;s native basis.</p></div>
-    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the pooled column and the rationale. Thresholds come from a pooled occurrence distribution of peer-reviewed and agency data, weighted by source N with a 50% relative-share cap.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the HMTc-limit column and the rationale tag. Each limit is set to the strictest applicable government maximum by lookup, in the native basis; for the Tier-1 toxics (Pb, Cd, iAs, MeHg) and for cells no government regulates, the program&rsquo;s pooled occurrence distribution sets or tightens the value, never above the government maximum.</p></div>
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Adversarial readers &mdash; plaintiff&rsquo;s experts, competing bodies</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the rationale column and the firm/in-development split. Every published value carries its pooled figure, its native basis, and the reason for any gap with the pool.</p></div>
   </div>
 </section>
 
 <section id="limits" style="margin-bottom:52px">
   <h2 ${H2S}>Master Limit Table</h2>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column is the engine output before the increment ladder, so the derivation stays re-derivable. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column shows the program&rsquo;s occurrence figure for the analyte; the HMTc limit is the stricter of the applicable government maximum and &mdash; for Tier-1 toxics and cells no government regulates &mdash; that pooled figure, so the derivation stays re-derivable and the rationale tag names which bound. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse">
     <thead>
@@ -288,7 +291,7 @@ const idxFront = [
   'title: "HMTc Standards"',
   "type: standards-index",
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
-  `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own pooled distribution, its own limit, and its own page."`,
+  `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."`,
   "snapshot:",
   `  - { k: "Subcategory standards", v: "${catalog.rows.length}" }`,
   `  - { k: "Firm analyte limits", v: "${firmCells}" }`,

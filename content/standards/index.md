@@ -2,7 +2,7 @@
 title: "HMTc Standards"
 type: standards-index
 audience: [regulator, brand-legal, retailer-compliance, certifier]
-description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own pooled distribution, its own limit, and its own page."
+description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."
 snapshot:
   - { k: "Subcategory standards", v: "15" }
   - { k: "Firm analyte limits", v: "3" }

@@ -45,8 +45,9 @@ rail_box:
 </section>
 
 <section id="calibration" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Percentile calibration</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other &mdash; rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How a limit is set</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The default limit for any analyte is the strictest maximum level set by a credible government regulator &mdash; the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada &mdash; converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it. The percentile machinery below runs only where the program sets a number itself &mdash; the four Tier&nbsp;1 toxics, floored against the government maximum so the published value is the stricter of the two, and the cells no government regulates.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">For those occurrence-set cells, subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other &mdash; rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
@@ -71,7 +72,7 @@ rail_box:
     </div>
   </div>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The percentile is a calibration choice, disclosed as one. A brand certifies a row of ten analytes at once, so per-analyte limits set at a raw P90 would produce a joint pass rate near 35%. P97 and P45 are the values that deliver the program&rsquo;s stated row-level outcomes: roughly 90% of clean-subcategory brands and 30% of dirty-subcategory brands pass.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The percentile is a calibration choice, disclosed as one. A brand certifies a row of ten analytes at once, so per-analyte limits set at a raw P90 would produce a joint pass rate near 35%. P97 and P45 are the values that deliver the program&rsquo;s stated row-level outcomes: roughly 90% of clean-subcategory brands and 40% of dirty-subcategory brands pass, confirmed at 94% and 42% against FDA per-sample lot data.</p>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:20px 22px;margin-top:16px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:10px">Why we publish the pass rate</div>
@@ -96,7 +97,7 @@ rail_box:
         <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 01</span>
         <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Sufficient pool</span>
       </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Enough contributing sources for the pooled distribution to mean something, with no single survey exceeding 50% relative share.</p>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">For a cell the program sets from occurrence &mdash; the Tier&nbsp;1 toxics and the analytes no government regulates &mdash; enough contributing sources for the pooled distribution to mean something, with no single survey exceeding 50% relative share.</p>
     </div>
     <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
@@ -110,7 +111,7 @@ rail_box:
         <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 03</span>
         <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Regulatory ceiling loaded</span>
       </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The lowest applicable legal ceiling identified and expressed in the row&rsquo;s basis, so the published value can be floored against it.</p>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The strictest applicable government maximum identified and expressed in the row&rsquo;s basis. For most analytes it is the standard; for a Tier&nbsp;1 toxic it is the floor the occurrence value is capped against.</p>
     </div>
     <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
