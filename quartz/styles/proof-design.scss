@@ -155,10 +155,11 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 .wiki-content blockquote { border-left: 3px solid var(--burg); margin: 0 0 1.1em; padding: 8px 18px; background: var(--burg-tint2); color: var(--body); }
 .wiki-content code { font-family: "IBM Plex Mono", monospace; font-size: 0.88em; background: var(--shade); padding: 1px 5px; border-radius: 4px; }
 .wiki-content hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
-.wiki-content table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 12px 0 22px; display: block; overflow-x: auto; }
-.wiki-content thead th { background: var(--burg); color: #fff; text-align: left; padding: 11px 13px; font-weight: 600; font-size: 13.5px; white-space: nowrap; }
-.wiki-content tbody td { padding: 10px 13px; border-bottom: 1px solid var(--line); vertical-align: top; }
-.wiki-content tbody tr:hover { background: var(--burg-tint2); }
+// Table styling is CANONICAL in cert-chrome.scss (.wiki-content table — burgundy
+// #9f2727 head, IBM Plex Mono 10px/500 uppercase, per-row rule, no zebra/hover).
+// This block was a duplicate that lost the cascade (its thead th at weight 600 was
+// overridden). Removed per AGENTS.md §2 — delete the losing rule, do not out-specify.
+// Do not re-add table rules here; edit the canonical block in cert-chrome.scss.
 
 .hmi-quick-read { background: var(--burg-tint2); border: 1px solid #f2dcda; border-left: 4px solid var(--burg); border-radius: 0 3px 3px 0; padding: 18px 22px; margin: 0 0 28px; }
 .hmi-quick-read-label { font-family: Inter, sans-serif; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em; color: var(--burg); margin-bottom: 9px; }

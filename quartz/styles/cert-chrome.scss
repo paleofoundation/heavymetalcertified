@@ -684,7 +684,12 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 }
 .proof:not(.proof-home) .wiki-content { color: #3f3a3a !important; }
 .wiki-content ul, .wiki-content ol { color: #3f3a3a; }
-.wiki-content strong, .wiki-content b { color: #2b1f1f; font-weight: 600; }
+// SITEWIDE no-bold rule (design canon: CONTENT-RULES.md §"No bold"). The reading
+// surface carries no bold: emphasis is the type system's job (Lora headings, IBM Plex
+// Mono labels), never font-weight. Semantic <strong>/<b> and markdown **…** render at
+// normal weight. Enforced by tools/design-lint.mjs (build-blocking) and, on the
+// rendered page, by design/v3-acceptance.cert.json via `npm run check:v3`.
+strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
 
 // Burgundy table (CHROME-SPEC §2), red head in IBM Plex Mono.
 .wiki-content table {

@@ -165,3 +165,47 @@ habit wearing new clothes.
 
 Expected order, leverage descending: claim underline → citation marker + drawer →
 caption + caveat → grid-of-records → then F-16 for the emitted-prose components.
+
+---
+
+## 7. Sitewide invariants — no bold, one canonical table
+
+Two rules hold on every page, and both are enforced so a session cannot quietly drop
+them (the recurring failure §0 describes). They are invariants, not per-page choices.
+
+**No bold on the reading surface.** Emphasis is the type system's job — Lora for
+headings and titles, IBM Plex Mono for labels and measured values — never font-weight.
+Semantic `<strong>`/`<b>` and markdown `**…**` render at **normal weight (400)**; the
+only heavier weight allowed is **500**, reserved for mono labels and measured values
+(table `th`, snapshot values, the "See also" kicker). A number, a heading, or a phrase
+made to stand out with `font-weight: 600/700` is a defect, not a style choice. If a
+value truly needs to be picked out, that is a *component* decision (a shaded cell, a
+burgundy color, a badge), not a weight bump.
+
+**One canonical table.** The burgundy data table (`COMPONENTS.md §1`) is defined **once**,
+in `quartz/styles/cert-chrome.scss` (`.wiki-content table` — `#9f2727` head, IBM Plex
+Mono 10px/500 uppercase, per-row rule, no zebra, no hover). Do not add a second
+`.wiki-content table` block anywhere, and do not hand-roll a table's head styling inline
+in a generator when the canonical rule already covers it. When a duplicate is found, the
+fix is to **delete the loser, never out-specify it** (`FIDELITY.md §1` / `AGENTS.md §2`).
+The burgundy data table is for measured values in columns; a navigation registry
+("See also", downstream links) is **not** a data table — it is the grid-of-records
+(`COMPONENTS.md §8`).
+
+**How these are enforced (two tiers, both required).**
+
+1. `tools/design-lint.mjs` — deterministic, no browser, **build-blocking** in `prebuild`.
+   It scans generated content (`content/standards`, `content/regulations` hard; prose
+   surfaces advisory) for inline `font-weight: 600–900|bold` and raw `<strong>`/`<b>`,
+   and reports the table-canonicalization backlog. This is the always-runs floor: prose
+   canon does not block a build, a script does. Stage new surfaces with `--warn-only`
+   while a backlog drains, then flip to blocking at zero (the repo's standard convention).
+2. `npm run check:v3` — the rendered-truth gate (`FIDELITY.md`), assertions in
+   `design/v3-acceptance.cert.json`. It catches what a source scan cannot: a cascade
+   where the source is correct but an older rule wins in the browser. It needs a browser
+   (`npm i -D playwright` once) and runs in the release/deploy path. **Report its exit
+   code; "I checked the SCSS" is not a pass.**
+
+Neither tier alone is sufficient. The lint cannot see the cascade; the rendered gate is
+not always run. Together they make "the canon is quietly ignored" a build failure rather
+than a thing a reviewer has to notice.

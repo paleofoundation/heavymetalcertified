@@ -32,8 +32,15 @@ This is the load-bearing rule (`FIDELITY.md`). Reading your own SCSS back and re
 conformance is the failure mode: the source is correct, an older rule wins in the
 cascade, and the browser disagrees. So:
 
+- **Two gates, both required (`CONTENT-RULES.md §7`).** `tools/design-lint.mjs` runs in
+  `prebuild` — no browser, build-blocking — for the mechanical sitewide invariants: **no
+  bold on the reading surface** (no inline `font-weight:600–900`, no `<strong>`/`<b>`; 400,
+  or 500 for mono labels/values) and **one canonical `.wiki-content table`**. It is the
+  always-runs floor, because prose canon does not block a build but a script does. Run
+  `node tools/design-lint.mjs` after any content or generator change.
 - **Run `npm run check:v3` and report its exit code.** Do not claim a page matches the
-  canon until it passes. "I checked the CSS" is not a pass; the gate is.
+  canon until it passes. "I checked the CSS" is not a pass; the gate is. (Needs a browser
+  once: `npm i -D playwright`.)
 - When you change any page's presentation, **add or update its assertions** in
   `design/v3-acceptance.cert.json` (including `absent: true` for markup you removed).
 - **Delete the losing rule; do not out-specify it.** If a fix takes the form "add a more

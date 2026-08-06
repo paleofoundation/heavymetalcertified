@@ -153,7 +153,7 @@ for (const row of catalog.rows) {
           ? `<br><span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#a9a1a1">${esc(cell.regulatory_cap_source)}</span>`
           : "")
       const pooled = cell.precise_ppb != null ? round(cell.precise_ppb) : "&mdash;"
-      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}><strong data-firm-ppb style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:#2b1f1f">${cell.published_limit_ppb}</strong>${cross}</td><td ${tdPool}>${pooled}</td><td ${tdRat}>${rat}</td><td ${tdStatPub}>published</td></tr>`
+      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}><span data-firm-ppb style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:#2b1f1f">${cell.published_limit_ppb}</span>${cross}</td><td ${tdPool}>${pooled}</td><td ${tdRat}>${rat}</td><td ${tdStatPub}>published</td></tr>`
     }
     const note = cell.evidence_state_note ? esc(shortNote(cell.evidence_state_note)) : "evidence under review"
     return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdPool}>&mdash;</td><td ${tdRatDev}>${note}</td><td ${tdStatMuted}>in development</td></tr>`
