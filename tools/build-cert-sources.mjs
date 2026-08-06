@@ -43,12 +43,15 @@ function pagesToRender() {
 }
 
 function sourcesFor(page) {
-  // jurisdiction -> { binding:Set<analyte>, readacross:Set<analyte> }
+  // jurisdiction -> { binding, readacross, evaluated } sets of analytes. A
+  // government is a source whether its limit binds, supplies a read-across, or
+  // was one of the values weighed but not selected (a comparator). The full set
+  // is what "evaluated against each other" means and what the Derivation table
+  // shows; listing only the binders would understate the work behind the number.
   const used = new Map()
-  const add = (jur, analyte, role) => {
-    if (!jur || !REG[jur]) return
-    if (!used.has(jur)) used.set(jur, { binding: new Set(), readacross: new Set() })
-    used.get(jur)[role].add(analyte)
+  const ensure = (jur) => {
+    if (!used.has(jur)) used.set(jur, { binding: new Set(), readacross: new Set(), evaluated: new Set() })
+    return used.get(jur)
   }
   for (const v of page.variants) {
     const rec = JSON.parse(fs.readFileSync(path.join(COMPILED, `${v.record}.json`), "utf8"))
@@ -56,36 +59,65 @@ function sourcesFor(page) {
     for (const a of PANEL) {
       const c = cells[a]
       if (!c) continue
-      if (c.type === "gov") add(c.binding_jurisdiction, a, "binding")
-      else if (c.type === "read_across") add(c.source_jurisdiction, a, "readacross")
+      if (c.type === "gov") {
+        const binder = c.binding_jurisdiction
+        if (binder && REG[binder]) ensure(binder).binding.add(a)
+        // every other government that sets a value for this analyte is a comparator
+        if (c.per_country)
+          for (const jur of Object.keys(c.per_country)) {
+            if (jur === binder || !REG[jur]) continue
+            ensure(jur).evaluated.add(a)
+          }
+      } else if (c.type === "read_across") {
+        if (c.source_jurisdiction && REG[c.source_jurisdiction]) ensure(c.source_jurisdiction).readacross.add(a)
+      }
     }
   }
   return used
 }
 
 function humanList(analytes) {
-  const names = [...analytes].sort((a, b) => PANEL.indexOf(a) - PANEL.indexOf(b)).map((a) => ANALYTE_NAME[a])
-  if (names.length === 1) return names[0].charAt(0).toUpperCase() + names[0].slice(1)
-  const s = names.join(", ")
-  return s.charAt(0).toUpperCase() + s.slice(1)
+  // Analyte common-nouns stay lowercase — they sit mid-sentence after "Binds "/
+  // "Comparator for ", so the leading capital belongs to the role word, not here.
+  return [...analytes]
+    .sort((a, b) => PANEL.indexOf(a) - PANEL.indexOf(b))
+    .map((a) => ANALYTE_NAME[a])
+    .join(", ")
+}
+
+function roleText(u) {
+  const parts = []
+  if (u.binding.size) parts.push(`Binds ${humanList(u.binding)}`)
+  if (u.readacross.size) parts.push(`Read-across for ${humanList(u.readacross)}`)
+  // A government that binds or supplies an analyte in one variant is not also
+  // listed as a comparator for that same analyte (binding/read-across wins).
+  const evalOnly = [...u.evaluated].filter((a) => !u.binding.has(a) && !u.readacross.has(a))
+  if (evalOnly.length) parts.push(`Comparator for ${humanList(evalOnly)}`)
+  return parts.join("; ")
 }
 
 function sourcesBlock(used) {
-  const jurs = JUR_ORDER.filter((j) => used.has(j))
-  const rows = jurs.map((j, i) => {
-    const r = REG[j]
+  // Binding regulations first, then read-across suppliers, then comparators;
+  // stable within each tier by the canonical jurisdiction order.
+  const tier = (j) => {
     const u = used.get(j)
-    const parts = []
-    if (u.binding.size) parts.push(`${humanList(u.binding)} — binding maximum level${u.binding.size > 1 ? "s" : ""}`)
-    if (u.readacross.size) parts.push(`${humanList(u.readacross)} — read-across`)
-    return `| ${i + 1} | [${r.cite}](/regulations/${r.slug}) | ${r.year} | ${r.type} | ${parts.join("; ")} |`
-  }).join("\n")
+    return u.binding.size ? 0 : u.readacross.size ? 1 : 2
+  }
+  const jurs = JUR_ORDER.filter((j) => used.has(j)).sort(
+    (a, b) => tier(a) - tier(b) || JUR_ORDER.indexOf(a) - JUR_ORDER.indexOf(b),
+  )
+  const rows = jurs
+    .map((j, i) => {
+      const r = REG[j]
+      return `| ${i + 1} | [${r.cite}](/regulations/${r.slug}) | ${r.year} | ${r.type} | ${roleText(used.get(j))} |`
+    })
+    .join("\n")
   return `${BEGIN}
-## Sources
+## Source regulations
 
-The published government regulations this standard derives from. Each maximum level is a sovereign limit and each read-across the nearest applicable government value; follow a reference for the source document and its per-analyte limits. Mercury and, in non-dairy matrices, chromium carry no direct government limit for these products and are handled by the read-across and reflex-speciation rules described above.
+Every published government regulation weighed to set this standard, evaluated against each other. The strictest applicable maximum level binds each analyte; the rest are comparators, and where no government regulates the exact product the value is read across from the nearest government limit. Follow a reference for the source document and its per-analyte limits — the Derivation table above shows every value side by side.
 
-| # | Citation | Year | Type | Used on this page for |
+| # | Regulation | Year | Instrument | Role in this standard |
 | --- | --- | --- | --- | --- |
 ${rows}
 ${END}`
@@ -100,8 +132,11 @@ for (const page of pagesToRender()) {
   const reMarker = new RegExp(`\\n*${BEGIN}[\\s\\S]*?${END}\\n*`, "g")
   raw = raw.replace(reMarker, "\n") // strip prior block (idempotent)
   // Insert before the "Cite this standard" section; else before the version-history block; else append.
-  if (/<section id="cite"/.test(raw)) raw = raw.replace(/(<section id="cite")/, `${block}\n$1`)
-  else if (raw.includes("<!-- BEGIN: hmtc-version-history -->")) raw = raw.replace("<!-- BEGIN: hmtc-version-history -->", `${block}\n\n<!-- BEGIN: hmtc-version-history -->`)
+  // A blank line MUST precede the block: without it the markdown "## Source regulations" heading is
+  // absorbed into the preceding raw-HTML <section> block (CommonMark HTML-block continuation) and
+  // renders as literal "## ..." text. The \n\n on both sides guarantees the boundary.
+  if (/<section id="cite"/.test(raw)) raw = raw.replace(/\n*(<section id="cite")/, `\n\n${block}\n\n$1`)
+  else if (raw.includes("<!-- BEGIN: hmtc-version-history -->")) raw = raw.replace(/\n*(<!-- BEGIN: hmtc-version-history -->)/, `\n\n${block}\n\n$1`)
   else raw = `${raw.replace(/\n+$/, "")}\n\n${block}\n`
   fs.writeFileSync(absF, raw, "utf8")
   n++

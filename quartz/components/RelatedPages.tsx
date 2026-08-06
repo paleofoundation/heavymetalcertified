@@ -102,7 +102,13 @@ export default (() => {
       buckets.get(cat)!.push({ href: resolveRelative(mySlug, realSlug as never), label })
     }
 
-    const groups = GROUPS.map((g) => {
+    // On a standard page the regulations are the evidence the limits derive
+    // from — they are surfaced in the "Source regulations" block (the same design
+    // as the Heavy Metal Index source legend), not repeated here as lateral
+    // navigation (see the note atop this file: sources are evidence, not See-also).
+    const isStandard = String(fileData.frontmatter?.type ?? "") === "standard"
+    const activeGroups = GROUPS.filter((g) => !(isStandard && g.key === "regulations"))
+    const groups = activeGroups.map((g) => {
       const items = (buckets.get(g.key) ?? [])
         .sort((a, b) => a.label.localeCompare(b.label, undefined, { sensitivity: "base" }))
       const shown = items.slice(0, PER_GROUP_CAP)
