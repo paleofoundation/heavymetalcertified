@@ -3,9 +3,9 @@ type: public-briefing
 slug: hmtc-primer
 title: "What HMTc Is"
 subtitle: "A Neutral Primer for Counsel — What the Program Certifies, What a Licensee Signs, and What It Does Not Claim"
-overline: "A Program Primer · The Paleo Foundation"
+overline: "A Program Primer · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect and Chief Executive Officer, Paleo Certified, Inc. dba The Paleo Foundation"
+author_title: "Standards Architect and Chief Executive Officer, Institute of Contaminant Standards (ICS)"
 date: "June 2026"
 audience: [defense-counsel, brand-legal, regulator]
 ---
@@ -14,7 +14,7 @@ This document describes the Heavy Metal Tested & Certified (HMTc) program plainl
 
 ## What HMTc is, in one paragraph
 
-HMTc is a voluntary, fee-based, third-party certification program for finished infant and child food products, operated by Paleo Certified, Inc., a Florida corporation doing business as The Paleo Foundation. It tests certified products against per-category concentration limits for toxic heavy metals, on an ongoing surveillance basis, and authorizes a certification mark for products that meet those limits. The 2026 Edition of its Program Manual is the program's first bound publication (published May 18, 2026; DOI 10.5281/zenodo.20270512) [1]. Infant and child food is the first of a planned twenty-three-category framework; it is the only category certified today. The program is new, and this primer treats its youth as a fact to disclose, not a thing to manage.
+HMTc is a voluntary, fee-based, third-party certification program for finished infant and child food products, operated by the Institute of Contaminant Standards (ICS). It tests certified products against per-category concentration limits for toxic heavy metals, on an ongoing surveillance basis, and authorizes a certification mark for products that meet those limits. The 2026 Edition of its Program Manual is the program's first bound publication (published May 18, 2026; DOI 10.5281/zenodo.20270512) [1]. Infant and child food is the first of a planned twenty-three-category framework; it is the only category certified today. The program is new, and this primer treats its youth as a fact to disclose, not a thing to manage.
 
 ## What it certifies, and against what
 
@@ -103,11 +103,11 @@ HMTc is a young but unusually well-documented voluntary certification program: a
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program and the founder and Chief Executive Officer of Paleo Certified, Inc. dba The Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This primer is descriptive and is not legal advice. Where it characterizes the program, the controlling text is the 2026 Program Manual and the executed license agreement.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program and the founder and Chief Executive Officer of Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This primer is descriptive and is not legal advice. Where it characterizes the program, the controlling text is the 2026 Program Manual and the executed license agreement.*
 
 ## References
 
-[1] K. Pendergrass, *Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual*, 2026 Edition, Paleo Certified, Inc. dba The Paleo Foundation, 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Cited throughout: action levels and disclaimers (Part 2.1); analyte tiering and aggregate exposure (Part 2.2); status framework (Part 2.3); Confidential Remediation Track and discovery dynamics (Part 2.4); mark rules (Part 2.5); decision rules (Part 2.6); standards ratchet (Part 2.10); appeals and conflict mitigation (Part 2.12); methodological / AI disclosure (Part 3 methodological disclosure and Part 5.7); program-level adversarial read (Part 5.2); recognition framework (Part 5.5); licensing terms (Part 5.6).
+[1] K. Pendergrass, *Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual*, 2026 Edition, Institute of Contaminant Standards (ICS), 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Cited throughout: action levels and disclaimers (Part 2.1); analyte tiering and aggregate exposure (Part 2.2); status framework (Part 2.3); Confidential Remediation Track and discovery dynamics (Part 2.4); mark rules (Part 2.5); decision rules (Part 2.6); standards ratchet (Part 2.10); appeals and conflict mitigation (Part 2.12); methodological / AI disclosure (Part 3 methodological disclosure and Part 5.7); program-level adversarial read (Part 5.2); recognition framework (Part 5.5); licensing terms (Part 5.6).
 
 [2] Peer-track preprints: K. Pendergrass, *The Counterproductive Consequences of Public Exposé Testing*, doi: [10.5281/zenodo.19470572](https://doi.org/10.5281/zenodo.19470572); *The Cost of Operating Without Credible Third-Party Heavy-Metal Certification*, doi: [10.5281/zenodo.18903738](https://doi.org/10.5281/zenodo.18903738); *Certification as a Framework for Reducing Heavy Metal Exposure in Infant and Child Foods*, doi: [10.5281/zenodo.18905821](https://doi.org/10.5281/zenodo.18905821).
 

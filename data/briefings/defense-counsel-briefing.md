@@ -3,9 +3,9 @@ type: public-briefing
 slug: defense-counsel-briefing
 title: "The Evidence a Jury Will See"
 subtitle: "Heavy-Metal Litigation After Palmquist, and What Defense Counsel Can Build Before the Complaint"
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [defense-counsel, brand-legal, retailer-compliance]
 ---
@@ -40,7 +40,7 @@ Most certification, and most internal quality testing, produces snapshots. The l
 
 ## What HMTc is, and what it produces
 
-A word on the program itself, because the case above only holds if the certification behind it is real. Heavy Metal Tested & Certified is a voluntary, fee-based certification operated by the Paleo Foundation. It is kept deliberately separate from the Heavy Metal Index (heavymetalindex.com), the curated synthesis of the heavy-metals-in-food literature from which the program's limits are derived: the Index reports what the literature says, and the certification program sets thresholds that reference it. That separation is structural, and it matters in litigation — the standard is not the certifier's self-published justification but an independent evidence base the certifier happens to operate, with every claim traceable to a source.
+A word on the program itself, because the case above only holds if the certification behind it is real. Heavy Metal Tested & Certified is a voluntary, fee-based certification operated by the Institute of Contaminant Standards (ICS). It is kept deliberately separate from the Heavy Metal Index (heavymetalindex.com), the curated synthesis of the heavy-metals-in-food literature from which the program's limits are derived: the Index reports what the literature says, and the certification program sets thresholds that reference it. That separation is structural, and it matters in litigation — the standard is not the certifier's self-published justification but an independent evidence base the certifier happens to operate, with every claim traceable to a source.
 
 What the program certifies is a finished infant or child food product, tested against per-category limits for eight priority metals through a ten-analyte panel (the eight totals, plus speciated inorganic arsenic, methylmercury, and hexavalent chromium where the product or a reflex trigger requires it). The metals are tiered by toxicology, and the tiering is the defensible part. Lead, cadmium, inorganic arsenic, and methylmercury are Tier 1 — carcinogenic, neurotoxic, or bioaccumulative with no established safe threshold, and subject to zero tolerance for exceedance. Nickel, tin, aluminum, and chromium are Tier 2, with established tolerable intakes and a limited transitional allowance. If a plaintiff's expert asks why a nickel result received transitional treatment while a smaller lead exceedance triggered probation, the answer traces to the comparative toxicology of the two metals, not to administrative convenience. That traceability is engineered in on purpose.
 
@@ -94,11 +94,11 @@ The register that works with this audience is risk counseling, not salesmanship,
 
 The following are drafting starting points, to be adapted and sent under your own name and disclosure.
 
-> **To a peer who defends food brands.** [Name] — flagging this peer to peer; disclosure first, I work with the Paleo Foundation, which runs the Heavy Metal Tested & Certified program. After *Palmquist* pushed these cases into state court and the MDL's Daubert ruling narrowed the causation fight, I've started thinking about third-party certification less as a marketing seal and more as an evidence-generation protocol: contemporaneous, independent, continuous testing that produces the kind of record a state jury actually weighs. It maps to the testing your infant-food clients already owe under AB 899 and Maryland's law. If any of your matters touch this, happy to share what I've learned — fifteen minutes whenever suits.
+> **To a peer who defends food brands.** [Name] — flagging this peer to peer; disclosure first, I work with the Institute of Contaminant Standards (ICS), which runs the Heavy Metal Tested & Certified program. After *Palmquist* pushed these cases into state court and the MDL's Daubert ruling narrowed the causation fight, I've started thinking about third-party certification less as a marketing seal and more as an evidence-generation protocol: contemporaneous, independent, continuous testing that produces the kind of record a state jury actually weighs. It maps to the testing your infant-food clients already owe under AB 899 and Maryland's law. If any of your matters touch this, happy to share what I've learned — fifteen minutes whenever suits.
 
-> **To in-house or regulatory counsel at a brand.** [Name] — disclosure up front: I work with the Paleo Foundation, which operates the HMTc program. Between AB 899, Maryland, and the FDA action levels you're already building a testing-and-disclosure operation; HMTc standardizes it into one program, with limits set to the applicable government ceiling and tightened by the independent literature where a clean market beats it, and produces an independent, contemporaneous record that supports a due-care narrative if you're ever challenged. It is documentation and risk mitigation, not a liability shield, and I'd characterize it to you honestly on both counts. Worth a short call, and I can bring their team in.
+> **To in-house or regulatory counsel at a brand.** [Name] — disclosure up front: I work with the Institute of Contaminant Standards (ICS), which operates the HMTc program. Between AB 899, Maryland, and the FDA action levels you're already building a testing-and-disclosure operation; HMTc standardizes it into one program, with limits set to the applicable government ceiling and tightened by the independent literature where a clean market beats it, and produces an independent, contemporaneous record that supports a due-care narrative if you're ever challenged. It is documentation and risk mitigation, not a liability shield, and I'd characterize it to you honestly on both counts. Worth a short call, and I can bring their team in.
 
-> **A short referral.** [Name] — flagging the HMTc program for [client]. (Disclosure: I work with the Paleo Foundation, which runs it.) Independent heavy-metal certification, literature-backed limits, useful for both the compliance patchwork and the evidentiary record post-*Palmquist*. Glad to make an introduction if it's relevant.
+> **A short referral.** [Name] — flagging the HMTc program for [client]. (Disclosure: I work with the Institute of Contaminant Standards (ICS), which runs it.) Independent heavy-metal certification, literature-backed limits, useful for both the compliance patchwork and the evidentiary record post-*Palmquist*. Glad to make an introduction if it's relevant.
 
 ## The first step
 
@@ -106,7 +106,7 @@ The program offers a confidential evidentiary-posture review for a brand or reta
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the legal characterizations in it are the Foundation's and are offered for counsel's independent evaluation.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the legal characterizations in it are the Foundation's and are offered for counsel's independent evaluation.*
 
 ## References
 
@@ -120,7 +120,7 @@ The program offers a confidential evidentiary-posture review for a brand or reta
 
 [5] International Organization for Standardization, ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories; EURACHEM/CITAC and ILAC-G8 guidance on decision rules under measurement uncertainty.
 
-[6] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation, 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Confidential Remediation Track and discovery dynamics: Part 2.4; decision rules under measurement uncertainty: Part 2.6; aggregate-exposure framing and analyte tiering: Part 2.2; program-level adversarial read: Part 5.2.
+[6] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS), 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Confidential Remediation Track and discovery dynamics: Part 2.4; decision rules under measurement uncertainty: Part 2.6; aggregate-exposure framing and analyte tiering: Part 2.2; program-level adversarial read: Part 5.2.
 
 [7] California Assembly Bill 899 (2023), amending the California Health and Safety Code (baby-food heavy-metal testing and public disclosure).
 

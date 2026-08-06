@@ -3,9 +3,9 @@ type: public-briefing
 slug: after-palmquist
 title: "After Palmquist"
 subtitle: "Why a Federal Defense Verdict No Longer Ends a Heavy-Metal Lawsuit"
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "May 2026"
 audience: [brand-legal, retailer-compliance, regulator]
 ---
@@ -108,7 +108,7 @@ If you are general counsel or chief compliance officer at a brand or a retailer 
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at karen@paleofoundation.com.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at karen@paleofoundation.com.*
 
 ## References
 
@@ -130,7 +130,7 @@ If you are general counsel or chief compliance officer at a brand or a retailer 
 
 [9]  Reuters, "Amazon.com Sued Over Alleged Sale of Contaminated Rice," May 23, 2025.
 
-[10]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation, 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
+[10]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS), 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
 
 [11]  Federal Judicial Center, "Litigation Cost Survey of Major Companies," 2008.
 

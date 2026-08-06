@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-6-premium-promise
 title: "The Premium Promise"
 subtitle: "Premium Brands Sell Trust. \ After Palmquist, Trust Needs Proof."
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [premium-brand, brand-strategy, consumer-trust]
 ---
@@ -68,11 +68,11 @@ The brands with the most to lose have the strongest case for certification. They
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational; it characterizes a public legal matter and the Foundation's own program, and is offered for independent evaluation. Nothing in it is a statement about whether any product caused any injury.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational; it characterizes a public legal matter and the Foundation's own program, and is offered for independent evaluation. Nothing in it is a statement about whether any product caused any injury.*
 
 ## References
 
-[1] *Hain Celestial Group, Inc. v. Palmquist*, 607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous). The plaintiffs alleged neurodevelopmental injury from heavy metals in Earth's Best organic baby food (manufactured by the Hain Celestial Group) consumed in the first years of life. Forum and retailer analysis: K. Pendergrass, *After Palmquist*, the Paleo Foundation, 2026.
+[1] *Hain Celestial Group, Inc. v. Palmquist*, 607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous). The plaintiffs alleged neurodevelopmental injury from heavy metals in Earth's Best organic baby food (manufactured by the Hain Celestial Group) consumed in the first years of life. Forum and retailer analysis: K. Pendergrass, *After Palmquist*, the Institute of Contaminant Standards (ICS), 2026.
 
 [2] U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury," Staff Report, Feb. 4, 2021 (finding that a major manufacturer had not tested finished products for heavy metals until 2019).
 
@@ -84,4 +84,4 @@ The brands with the most to lose have the strongest case for certification. They
 
 [6] K. Pendergrass, "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification," *Journal of Food Metallomics*, 2026. doi: [10.5281/zenodo.18903738](https://doi.org/10.5281/zenodo.18903738) (one-year cost of a single contamination-triggered event modeled at $1.6M–$6.6M for a brand at $5M revenue; consumer-confidence evidence).
 
-[7] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Mark-usage rules and prohibited claims ("heavy-metal free," "no toxic metals," "100% safe"; the mark "does not certify safety"): Part 2.5. Action-levels-not-safety-thresholds framing: Part 2.1. Relationship to USDA Organic and the Non-GMO Project, which do not address heavy metals: Part 5.5. Consumer-facing claim discipline (specify dose, population, and limit): Part 2.5 and audience-layering conventions.
+[7] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS). doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Mark-usage rules and prohibited claims ("heavy-metal free," "no toxic metals," "100% safe"; the mark "does not certify safety"): Part 2.5. Action-levels-not-safety-thresholds framing: Part 2.1. Relationship to USDA Organic and the Non-GMO Project, which do not address heavy metals: Part 5.5. Consumer-facing claim discipline (specify dose, population, and limit): Part 2.5 and audience-layering conventions.

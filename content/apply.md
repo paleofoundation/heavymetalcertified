@@ -2,7 +2,7 @@
 title: Apply for certification
 type: apply
 audience: [brand-legal, retailer-compliance, certifier]
-description: "HMTc is administered by the Paleo Foundation alongside Certified Paleo, KETO Certified and Grain-Free Certified. Fees are annual and revenue-based; a brand may hold several programs on one application."
+description: "HMTc is administered by the Institute of Contaminant Standards (ICS) alongside Certified Paleo, KETO Certified and Grain-Free Certified. Fees are annual and revenue-based; a brand may hold several programs on one application."
 snapshot:
   - { k: "Standard timeline", v: "4–8 weeks" }
   - { k: "Subcategories open", v: "15" }
@@ -94,7 +94,7 @@ connections:
   </div>
   <div id="start" style="border:1px solid #eddede;background:#fdf4f3;padding:24px 26px;margin-top:28px">
     <div style="font-family:Lora,serif;font-size:24px;line-height:1.4;color:#2b1f1f;margin-bottom:10px">Start an application</div>
-    <p style="font-size:15px;line-height:1.72;color:#5a4141;margin:0 0 16px;max-width:70ch">Applications are administered through the Paleo Foundation portal, which also issues permissions letters and holds the lot record once a certificate is in force.</p>
+    <p style="font-size:15px;line-height:1.72;color:#5a4141;margin:0 0 16px;max-width:70ch">Applications are administered through the Institute of Contaminant Standards (ICS) portal, which also issues permissions letters and holds the lot record once a certificate is in force.</p>
     <div style="display:flex;gap:9px;flex-wrap:wrap">
       <a href="https://paleofoundation.com/apply" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Apply on paleofoundation.com</a>
       <a href="/portal" style="display:inline-block;color:#9f2727;background:#fffdfb;border:1px solid #eddede;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">See the brand portal</a>

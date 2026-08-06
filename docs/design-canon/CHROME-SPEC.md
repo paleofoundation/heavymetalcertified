@@ -322,7 +322,7 @@ Four columns: **Explore · Evidence · Institute · Legal.**
 > it also attributes copyright to the wrong entity. **Ship the repo's line verbatim:**
 >
 > ```
-> © {year} Paleo Certified, Inc.
+> © {year} Institute of Contaminant Standards (ICS)
 > Operated by the Institute of Contaminant Standards.
 > ```
 >

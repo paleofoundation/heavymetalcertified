@@ -3,7 +3,7 @@
 // preprint-style PDF at public/articles/<slug>.pdf, and let Head.tsx point
 // citation_pdf_url at it for Google Scholar. This is the Heavy Metal Certified
 // sibling of the Heavy Metal Index synthesis-PDF generator: SAME layout,
-// DIFFERENT entity posting (Heavy Metal Certified / Paleo Certified, Inc.,
+// DIFFERENT entity posting (Heavy Metal Certified / Institute of Contaminant Standards (ICS),
 // operated by the Institute of Contaminant Standards) and DIFFERENT on-brand
 // accent — the HMTc red (#9f2727, the v3 design accent) shows on the eyebrow,
 // title, section headings and the rule, where the Index build is monochrome.
@@ -26,7 +26,7 @@ const MUTE = "#555555"
 const FAINT = "#777777"
 const FOOT = "#999999"
 const ENTITY = "Heavy Metal Certified"
-const OWNER = "Paleo Certified, Inc."
+const OWNER = "Institute of Contaminant Standards (ICS)"
 
 function parse(md) {
   const m = md.match(/^---\n([\s\S]*?)\n---\n?/)

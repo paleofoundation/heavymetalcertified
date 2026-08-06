@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-8-surveillance-protocol
 title: "The Surveillance Protocol"
 subtitle: "Defensible Evidence Is Built Before Litigation, Not After"
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [defense-counsel, brand-legal, in-house-counsel]
 ---
@@ -107,7 +107,7 @@ That places the decision outside the ordinary sequence of litigation. By the tim
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the legal characterizations in it are the Foundation's and are offered for counsel's independent evaluation.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the legal characterizations in it are the Foundation's and are offered for counsel's independent evaluation.*
 
 ## References
 
@@ -129,6 +129,6 @@ That places the decision outside the ordinary sequence of litigation. By the tim
 
 [9] U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury," Staff Report, Feb. 4, 2021.
 
-[10] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, and the companion *HMTc Lot Testing Schedule*, the Paleo Foundation, 2026 (risk-tiered surveillance frequency, baseline testing, independent sampling, chain-of-custody, reflex triggers, measurement-uncertainty decision rules, and the prohibition on testing into compliance). doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
+[10] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, and the companion *HMTc Lot Testing Schedule*, the Institute of Contaminant Standards (ICS), 2026 (risk-tiered surveillance frequency, baseline testing, independent sampling, chain-of-custody, reflex triggers, measurement-uncertainty decision rules, and the prohibition on testing into compliance). doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
 
 [11] California Assembly Bill 899 (2023) (baby-food heavy-metal testing and public disclosure); Maryland "Rudy's Law," HB 97 / SB 723 (2024) (testing and labeling); U.S. FDA, "Closer to Zero" action levels for lead and other elements in foods for babies and young children.

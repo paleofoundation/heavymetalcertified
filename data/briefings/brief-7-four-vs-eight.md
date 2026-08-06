@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-7-four-vs-eight
 title: "Four Metals Is No Longer Enough"
 subtitle: "The Regulators Moved to Eight. Certification Stayed at Four."
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [brand-regulatory, brand-legal, toxicology-research]
 ---
@@ -60,7 +60,7 @@ The room has changed. The regulators are working from eight. The enforcement mac
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at karen@paleofoundation.com.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at karen@paleofoundation.com.*
 
 ## References
 
@@ -112,4 +112,4 @@ The room has changed. The regulators are working from eight. The enforcement mac
 
 [24]  *People of the State of California v. McWane, Inc. (dba AB&I Foundry)*, Complaint for Injunctive Relief and Civil Penalties (Proposition 65; hexavalent-chromium air emissions), Superior Court of California, County of Alameda, filed Feb. 15, 2022.
 
-[25]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation, 2026.
+[25]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS), 2026.

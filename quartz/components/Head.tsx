@@ -99,12 +99,12 @@ function CitationMetadata({
         <meta name="citation_author" content={author} />
         <meta
           name="citation_author_institution"
-          content="Heavy Metal Tested & Certified, Paleo Foundation"
+          content="Heavy Metal Tested & Certified, Institute of Contaminant Standards (ICS)"
         />
-        <meta name="citation_publisher" content="Paleo Foundation" />
+        <meta name="citation_publisher" content="Institute of Contaminant Standards (ICS)" />
         <meta
           name="citation_technical_report_institution"
-          content="Heavy Metal Tested & Certified, Paleo Foundation"
+          content="Heavy Metal Tested & Certified, Institute of Contaminant Standards (ICS)"
         />
         {pubDate && (
           <meta name="citation_publication_date" content={pubDate.replace(/-/g, "/")} />

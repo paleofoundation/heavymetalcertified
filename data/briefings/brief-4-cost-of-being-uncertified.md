@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-4-cost-of-being-uncertified
 title: "The Cost of Being Uncertified"
 subtitle: "Why _Palmquist_ Moved Heavy-Metal Certification \ From the Marketing Budget to the Balance Sheet"
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [brand-legal, brand-finance, retailer-compliance]
 ---
@@ -94,7 +94,7 @@ Certification is now a litigation-cost-reduction expense, a channel-access expen
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; nothing in it should be read as a representation about the outcome of any specific matter.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; nothing in it should be read as a representation about the outcome of any specific matter.*
 
 ## References
 
@@ -112,6 +112,6 @@ Certification is now a litigation-cost-reduction expense, a channel-access expen
 
 [7]  International Organization for Standardization, *ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories*.
 
-[8]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation, 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
+[8]  K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS), 2026. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512).
 
 [9]  K. Pendergrass, "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification," *Journal of Food Metallomics*, 2026. doi: [10.5281/zenodo.18903738](https://doi.org/10.5281/zenodo.18903738). Recall-economics and market-impact anchors (GMA/Covington/EY; Allianz; Thomsen & McKenzie; Pozo & Schroeder) are documented there; this briefing updates the argument for the post-*Palmquist* forum.

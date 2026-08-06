@@ -211,7 +211,7 @@ ${scopeRow("In scope, in development (no firm limit yet)", inScopeNotPub.length 
   <div style="border:1px solid #e8e1db;background:#fffdfb">
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
     <div style="padding:14px 15px">
-      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;${subj}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${row.vertical.category_name} standard, version ${row.standard_version}. Paleo Certified, Inc. dba The Paleo Foundation, 2026.</p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;${subj}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${row.vertical.category_name} standard, version ${row.standard_version}. Institute of Contaminant Standards (ICS), 2026.</p>
       <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="${row.hmi_literature_link}" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects ${row.standard_version} and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
     </div>
   </div>

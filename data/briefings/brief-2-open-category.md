@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-2-open-category
 title: "The Open Category"
 subtitle: "The Non-GMO Project Owned a Word Organic Never Did. \ Heavy Metals Is the Next One."
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [brand-strategy, marketing, category-positioning]
 ---
@@ -76,7 +76,7 @@ The category of heavy metals will be owned. The only question is by whom — and
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is a positioning analysis offered for independent evaluation; it is not a representation about any other certification program, each of which has its own legitimate scope.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is a positioning analysis offered for independent evaluation; it is not a representation about any other certification program, each of which has its own legitimate scope.*
 
 ## References
 
@@ -90,4 +90,4 @@ The category of heavy metals will be owned. The only question is by whom — and
 
 [5] A. Ries and J. Trout, *Positioning: The Battle for Your Mind*; A. Ries and J. Trout, *The 22 Immutable Laws of Marketing* (the Law of Leadership, the Law of the Category, the Law of Focus, the Law of Sacrifice, the Law of the Mind); L. Ries, *Visual Hammer* (the visual hammer as the image that drives the verbal position into memory). Concepts are referenced and paraphrased; the framing of this briefing is an application of them.
 
-[6] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Heavy-metal-specific scope and the recognition framework comparing HMTc to USDA Organic, the Non-GMO Project, the Clean Label Project, EWG, and Consumer Reports (Organic and Non-GMO have no heavy-metals scope; "clean-label" marks cover metals within a broad multi-contaminant scope): Part 5.5. Mark-usage rules, the focused single-concern claim, and the prohibition on safety-implying language ("does not certify safety"): Part 2.5 and Part 2.1.
+[6] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS). doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Heavy-metal-specific scope and the recognition framework comparing HMTc to USDA Organic, the Non-GMO Project, the Clean Label Project, EWG, and Consumer Reports (Organic and Non-GMO have no heavy-metals scope; "clean-label" marks cover metals within a broad multi-contaminant scope): Part 5.5. Mark-usage rules, the focused single-concern claim, and the prohibition on safety-implying language ("does not certify safety"): Part 2.5 and Part 2.1.

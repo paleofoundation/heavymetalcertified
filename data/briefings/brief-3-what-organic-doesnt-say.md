@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-3-what-organic-doesnt-say
 title: "What Organic Doesn't Say"
 subtitle: "Organic Certifies How Food Is Grown. \ Heavy Metals Are a Question It Was Never Built to Ask."
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [food-journalism, food-policy, brand-marketing]
 ---
@@ -64,7 +64,7 @@ Consumer trust is the real asset in this story, and it is more fragile than any 
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational; it discusses organic certification with respect and is not a representation that any product caused any injury or that any certification guarantees safety. Organic and heavy-metal certification address different questions and are complementary, not substitutable.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational; it discusses organic certification with respect and is not a representation that any product caused any injury or that any certification guarantees safety. Organic and heavy-metal certification address different questions and are complementary, not substitutable.*
 
 ## References
 
@@ -80,6 +80,6 @@ Consumer trust is the real asset in this story, and it is more fragile than any 
 
 [6] U.S. Food and Drug Administration, Total Diet Study, FY2018–2020 (lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10%) — heavy metals are endemic to the food supply because they originate in soil, water, and atmospheric deposition.
 
-[7] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Paleo Foundation. doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Heavy-metal-specific scope and complementarity with USDA Organic and the Non-GMO Project (which do not address heavy metals): Part 5.5. Independent lot surveillance against published limits: Part 4. Mark-usage rules and the prohibition on safety-implying or "free-of" claims ("does not certify safety"): Part 2.5 and Part 2.1.
+[7] K. Pendergrass, *HMTc Infant and Child Foods Program Manual*, 2026 Edition, the Institute of Contaminant Standards (ICS). doi: [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512). Heavy-metal-specific scope and complementarity with USDA Organic and the Non-GMO Project (which do not address heavy metals): Part 5.5. Independent lot surveillance against published limits: Part 4. Mark-usage rules and the prohibition on safety-implying or "free-of" claims ("does not certify safety"): Part 2.5 and Part 2.1.
 
 [8] M. Barański, D. Średnicka-Tober, et al., "Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses," *British Journal of Nutrition*, 2014;112(5):794–811. doi: [10.1017/S0007114514001366](https://doi.org/10.1017/S0007114514001366) (organic crops associated with lower cadmium, attributed largely to the avoidance of cadmium-bearing synthetic phosphate fertilizers).

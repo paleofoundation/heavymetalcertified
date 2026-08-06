@@ -30,14 +30,3 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 <section style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">About this edition</h2>
 <p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. A consolidated, version-pinned PDF of the full expanded manual is in preparation and will be linked here on release; until then each subcategory page is individually downloadable and citable.</p>
 <p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:80ch;margin:0">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>
-
-<!-- BEGIN: hmtc-page-history -->
-## Update history
-
-The most recent substantive edits to this document, classified **major** (a limit, scope, or method changed), **correction** (a published value or statement was wrong and has been fixed), or **minor** (wording changed without moving the underlying evidence). Each is dated and linked to its commit — the authoritative record — so a regulator can reconstruct exactly what this standard required on any date. Version-pinned DOIs will link here once Zenodo minting lands.
-
-| Commit | Date | Change | Description |
-| --- | --- | --- | --- |
-| [f6df5d0](https://github.com/paleofoundation/heavymetalcertified/commit/f6df5d0) | 2026-08-06 | major | Version history + dated Update-history for standards & regulations |
-| [45d7e9a](https://github.com/paleofoundation/heavymetalcertified/commit/45d7e9a) | 2026-06-22 | minor | Infant and Child Foods Program Manual goes live |
-<!-- END: hmtc-page-history -->

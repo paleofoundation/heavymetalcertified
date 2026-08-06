@@ -254,8 +254,8 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     subtitle ? recordRow("Subtitle", subtitleHtml) : null,
     recordRow("Author", (fm.author || "Karen Pendergrass").split(" ").reverse().join(", ").replace(/^, /, "")),
     recordRow("ORCID", "0000-0002-2348-7259"),
-    recordRow("Author institution", "Heavy Metal Tested &amp; Certified, Paleo Foundation"),
-    recordRow("Publisher", "Paleo Certified, Inc. dba The Paleo Foundation"),
+    recordRow("Author institution", "Heavy Metal Tested &amp; Certified, Institute of Contaminant Standards (ICS)"),
+    recordRow("Publisher", "Institute of Contaminant Standards (ICS)"),
     recordRow("Series", seriesName),
     recordRow("Document type", "Technical report"),
     fm.date ? recordRow("Publication date", fm.date) : null,
@@ -268,7 +268,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     ? `  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px"><a href="${pdfRel}" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Download PDF</a></div>`
     : ""
 
-  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Paleo Certified, Inc. dba The Paleo Foundation.`
+  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Institute of Contaminant Standards (ICS).`
 
   const bodyStr = `## Abstract
 
@@ -299,7 +299,7 @@ ${downloadBtn}
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this briefing</div>
     <div style="padding:14px 15px">
       <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">${citeStr}</p>
-      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose CC BY 4.0. Direct reproduction of substantial portions requires written permission from Paleo Certified, Inc.</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose CC BY 4.0. Direct reproduction of substantial portions requires written permission from Institute of Contaminant Standards (ICS)</p>
     </div>
   </div>
 `

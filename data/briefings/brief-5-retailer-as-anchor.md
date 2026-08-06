@@ -3,9 +3,9 @@ type: public-briefing
 slug: brief-5-retailer-as-anchor
 title: "The Retailer as Anchor"
 subtitle: "Palmquist Made Retailers Anchor Defendants. \ Supplier Qualification Is the Response."
-overline: "A Standards Briefing · The Paleo Foundation"
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
-author_title: "Standards Architect, the Paleo Foundation, Heavy Metal Tested & Certified (HMTc) Program"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "June 2026"
 audience: [retail-risk, retail-compliance, supply-chain]
 ---
@@ -72,11 +72,11 @@ Grove's point is the one to end on, because it is the one you can act on this qu
 
 ---
 
-*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Paleo Foundation. She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the characterizations in it are the Foundation's and are offered for independent evaluation.*
+*Karen Pendergrass is the Standards Architect of the Heavy Metal Tested & Certified program at the Institute of Contaminant Standards (ICS). She can be reached at [karen@paleofoundation.com](mailto:karen@paleofoundation.com). This briefing is informational and is not legal advice; the characterizations in it are the Foundation's and are offered for independent evaluation.*
 
 ## References
 
-[1] *Hain Celestial Group, Inc. v. Palmquist*, 607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous; jurisdiction and removal). The retailer-repositioning and forum analysis is developed in K. Pendergrass, *After Palmquist*, the Paleo Foundation, 2026.
+[1] *Hain Celestial Group, Inc. v. Palmquist*, 607 U.S. ___ (No. 24-724), decided Feb. 24, 2026 (unanimous; jurisdiction and removal). The retailer-repositioning and forum analysis is developed in K. Pendergrass, *After Palmquist*, the Institute of Contaminant Standards (ICS), 2026.
 
 [2] U.S. Food and Drug Administration, Total Diet Study, FY2018–2020 (lead detected in 15% of samples, arsenic 43%, cadmium 33%, mercury 10%) — heavy metals are endemic to the food supply, not anomalies of a negligent supplier.
 

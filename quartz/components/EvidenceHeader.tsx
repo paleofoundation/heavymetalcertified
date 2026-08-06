@@ -52,7 +52,7 @@ export default (() => {
           <a href="https://orcid.org/0000-0002-2348-7259" target="_blank" rel="noopener noreferrer">
             ORCID
           </a>
-          {" · Heavy Metal Index, Paleo Foundation"}
+          {" · Heavy Metal Index, Institute of Contaminant Standards (ICS)"}
         </span>
       </div>
     )

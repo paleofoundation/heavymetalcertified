@@ -10,7 +10,7 @@ standard_version: "2.2 (2026-06-09)"
 methodology_version: "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)"
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/seaweed-kelp-foods
-effective_date: 2026-08-05
+effective_date: 2026-08-06
 scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 snapshot:
@@ -78,7 +78,7 @@ connections:
   <div style="border:1px solid #e8e1db;background:#fffdfb">
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
     <div style="padding:14px 15px">
-      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products).&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Seafood standard, version 2.2 (2026-06-09). Paleo Certified, Inc. dba The Paleo Foundation, 2026.</p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;Seaweed/kelp foods (nori, wakame, kombu, dulse — as food products).&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Seafood standard, version 2.2 (2026-06-09). Institute of Contaminant Standards (ICS), 2026.</p>
       <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="https://heavymetalindex.com/products/seaweed-kelp-foods" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects 2.2 (2026-06-09) and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
     </div>
   </div>
