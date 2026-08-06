@@ -1,0 +1,15 @@
+{
+  "product_slug": "infant-formula-powder",
+  "current_version": "3.0",
+  "versions": [
+    {
+      "version": "3.0",
+      "date": "2026-08-05",
+      "status": "current",
+      "summary": "Initial government-limit standard (Method v2.0): the strictest sovereign maximum by lookup, converted to the as-sold powder basis; read-across for the cells no government regulates the exact product. Mercury 20 (China GB 2762 read-across), Cr-VI controlled via total-Cr + reflex speciation.",
+      "pdf": "/static/standards/HMTc-Infant-Formula-Powder-Standard-v3.0.pdf",
+      "doi": null,
+      "permalink": "/standards/infant-formula-powder"
+    }
+  ]
+}
