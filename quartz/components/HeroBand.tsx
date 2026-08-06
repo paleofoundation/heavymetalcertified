@@ -12,6 +12,7 @@ const KIND: Record<string, string> = {
   standard: "Standard",
   "standard-in-development": "Standard",
   "standards-index": "Register",
+  analyte: "Reference",
   "public-briefing": "Briefing",
   "briefings-index": "Directory",
   "manuals-index": "Library",
@@ -30,6 +31,7 @@ const KIND: Record<string, string> = {
 // First slug segment → breadcrumb section label + hub slug.
 const SECTION: Record<string, string> = {
   standards: "Standards",
+  analytes: "Analytes",
   briefings: "Briefings",
   manuals: "Manuals",
   program: "Program",

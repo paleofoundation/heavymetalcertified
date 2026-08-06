@@ -47,13 +47,14 @@ Every published government regulation weighed to set this standard, evaluated ag
 | # | Regulation | Year | Instrument | Role in this standard |
 | --- | --- | --- | --- | --- |
 | 1 | [Commission Regulation (EU) 2023/915](/regulations/eu-2023-915) | 2023 | Maximum levels | Binds lead, inorganic arsenic, cadmium, nickel |
-| 2 | [GB 2762 — National Food Safety Standard](/regulations/china-gb-2762) | 2022 | Maximum levels | Binds total chromium; Read-across for mercury; Comparator for lead |
+| 2 | [GB 2762 — National Food Safety Standard](/regulations/china-gb-2762) | 2022 | Maximum levels | Binds total chromium; Comparator for lead |
 | 3 | [FSSAI (Contaminants, Toxins and Residues) Regulations](/regulations/india-fssai) | 2011 | Maximum levels | Binds tin; Comparator for lead, cadmium |
 | 4 | [FSANZ Food Standards Code — Schedule 19](/regulations/au-nz-fsanz) | 2015 | Maximum levels | Binds aluminium; Comparator for lead |
 | 5 | [Contaminants in Food (retained Reg. 1881/2006)](/regulations/uk-1881-2006) | 2006 | Maximum levels | Comparator for lead, cadmium |
 | 6 | [Codex General Standard CXS 193-1995](/regulations/codex-cxs-193) | 1995 | Codex standard | Comparator for lead |
 | 7 | [Health Canada — List of Contaminants and Adulterating Substances](/regulations/canada-contaminants) | 2016 | Maximum/action levels | Comparator for lead |
 | 8 | [ANVISA RDC — Inorganic Contaminant Limits](/regulations/brazil-anvisa) | 2022 | Maximum levels | Comparator for lead, inorganic arsenic, cadmium |
+| 9 | [GSO 193 — Gulf Technical Regulation](/regulations/gso-193) | 2021 | Maximum levels | Comparator for lead, cadmium |
 <!-- END: hmtc-sources -->
 
 <section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;Infant formula (powder).&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version 3.0. Institute of Contaminant Standards (ICS), 2026. DOI: registration pending.</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the <a href="https://heavymetalindex.com/products/infant-formula-powder" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>
@@ -65,5 +66,6 @@ The dated editions of this standard. Each is kept at a stable permalink, so a re
 
 | Version | Date | Status | What changed |
 | --- | --- | --- | --- |
-| [v3.0](/static/standards/HMTc-Infant-Formula-Powder-Standard-v3.0.pdf) | 2026-08-05 | **current** | Initial government-limit standard (Method v2.0): the strictest sovereign maximum by lookup, converted to the as-sold powder basis; read-across for the cells no government regulates the exact product. Mercury 20 (China GB 2762 read-across), Cr-VI controlled via total-Cr + reflex speciation. |
+| v3.1 | 2026-08-06 | **current** | Register-completeness correction. Mercury tightened 20→15 and soy cadmium 20→10 (Israel FCS-2016, now the strictest applicable formula MLs). Compiler hardened (multilingual canned-gating, powder-scoped reconstitution, read-across as comparator) against a 7× expanded government register. |
+| [v3.0](/static/standards/HMTc-Infant-Formula-Powder-Standard-v3.0.pdf) | 2026-08-05 | superseded | Initial government-limit standard (Method v2.0): the strictest sovereign maximum by lookup, converted to the as-sold powder basis; read-across for the cells no government regulates the exact product. Mercury 20 (China GB 2762 read-across), Cr-VI controlled via total-Cr + reflex speciation. |
 <!-- END: hmtc-version-history -->

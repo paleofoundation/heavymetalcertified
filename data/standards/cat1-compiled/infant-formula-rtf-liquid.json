@@ -51,17 +51,42 @@
           "GSO": {
             "value": 10,
             "converted": false,
-            "id": "gso_pb_infant-formula-formula-for-special-medic_10"
+            "id": "gso193_2021_pb_infant_formula_formula_for_special_medical_purposes_intended_for_infants_10"
           },
           "KR": {
             "value": 10,
             "converted": false,
             "id": "kr_pb_infant-formula-follow-up-formula-cereal_10"
           },
+          "TH": {
+            "value": 10,
+            "converted": false,
+            "id": "th_moph414_2020_pb_formula_as_consumed_10"
+          },
+          "SG": {
+            "value": 10,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
+          },
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_pb_15_infant_formula_ready_to_eat_and_follow_up_formula_10"
+          },
           "IN": {
             "value": 20,
             "converted": false,
             "id": "in_pb_infant-formula-ready-to-use_20"
+          },
+          "CO": {
+            "value": 20,
+            "converted": false,
+            "id": "co_res4506_2013_pb_formula_ready_20"
+          },
+          "FJ": {
+            "value": 20,
+            "converted": true,
+            "id": "fj_fsr2009_pb_006_infant_formula_20"
           }
         }
       },
@@ -78,27 +103,37 @@
             "converted": false,
             "id": "eu2023_ias_formula_liquid_10"
           },
-          "KR": {
-            "value": 13,
-            "converted": true,
-            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_infant_and_toddler_formulas_ready_to_eat_10"
           },
           "BR": {
             "value": 20,
             "converted": false,
             "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          },
+          "KR": {
+            "value": 100,
+            "converted": true,
+            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
           }
         }
       },
       "tHg": {
-        "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "type": "gov",
+        "value": 4,
+        "value_exact": 4,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 4,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
@@ -118,13 +153,23 @@
             "converted": false,
             "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_5"
           },
+          "GSO": {
+            "value": 5,
+            "converted": false,
+            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_cows_milk_proteins_or_protein_hydrolys_5"
+          },
+          "IL": {
+            "value": 5,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+          },
           "BR": {
             "value": 10,
             "converted": false,
             "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
           },
           "IN": {
-            "value": 13,
+            "value": 100,
             "converted": true,
             "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
           }
@@ -137,7 +182,7 @@
         "source_id": "china_gb2762_cr_liquid_milk_300",
         "source_jurisdiction": "CN",
         "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
-        "basis_note": "face value (nearest government value)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       },
       "Ni": {
@@ -157,14 +202,14 @@
       },
       "Sn": {
         "type": "gov",
-        "value": 630,
-        "value_exact": 625,
+        "value": 5000,
+        "value_exact": 5000,
         "binding_jurisdiction": "IN",
         "binding_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
-        "basis_note": "÷8 as-sold→as-consumed",
+        "basis_note": "face value",
         "per_country": {
           "IN": {
-            "value": 630,
+            "value": 5000,
             "converted": true,
             "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
           }
@@ -230,15 +275,45 @@
             "converted": false,
             "id": "br_pb_pediatric-formula-for-enteral-nutrition_10"
           },
+          "GSO": {
+            "value": 10,
+            "converted": false,
+            "id": "gso193_2021_pb_infant_formula_formula_for_special_medical_purposes_intended_for_infants_10"
+          },
           "KR": {
             "value": 10,
             "converted": false,
             "id": "kr_pb_infant-formula-follow-up-formula-cereal_10"
           },
+          "TH": {
+            "value": 10,
+            "converted": false,
+            "id": "th_moph414_2020_pb_formula_as_consumed_10"
+          },
+          "SG": {
+            "value": 10,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
+          },
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_pb_15_infant_formula_ready_to_eat_and_follow_up_formula_10"
+          },
           "IN": {
             "value": 20,
             "converted": false,
             "id": "in_pb_infant-formula-ready-to-use_20"
+          },
+          "CO": {
+            "value": 20,
+            "converted": false,
+            "id": "co_res4506_2013_pb_formula_ready_20"
+          },
+          "FJ": {
+            "value": 20,
+            "converted": true,
+            "id": "fj_fsr2009_pb_006_infant_formula_20"
           }
         }
       },
@@ -255,36 +330,51 @@
             "converted": false,
             "id": "eu2023_ias_formula_liquid_10"
           },
-          "KR": {
-            "value": 13,
-            "converted": true,
-            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_infant_and_toddler_formulas_ready_to_eat_10"
           },
           "BR": {
             "value": 20,
             "converted": false,
             "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          },
+          "KR": {
+            "value": 100,
+            "converted": true,
+            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
           }
         }
       },
       "tHg": {
-        "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "type": "gov",
+        "value": 4,
+        "value_exact": 4,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 4,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
-        "value": 10,
-        "value_exact": 10,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_cd_formula_soy_liquid_10",
+        "value": 5,
+        "value_exact": 5,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5",
         "basis_note": "same basis",
         "per_country": {
+          "IL": {
+            "value": 5,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+          },
           "EU": {
             "value": 10,
             "converted": false,
@@ -300,8 +390,13 @@
             "converted": false,
             "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
           },
+          "GSO": {
+            "value": 10,
+            "converted": false,
+            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_soya_protein_isolates_alone_or_in_a_mi_10"
+          },
           "IN": {
-            "value": 13,
+            "value": 100,
             "converted": true,
             "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
           }
@@ -314,7 +409,7 @@
         "source_id": "china_gb2762_cr_liquid_milk_300",
         "source_jurisdiction": "CN",
         "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
-        "basis_note": "face value (nearest government value)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       },
       "Ni": {
@@ -334,14 +429,14 @@
       },
       "Sn": {
         "type": "gov",
-        "value": 630,
-        "value_exact": 625,
+        "value": 5000,
+        "value_exact": 5000,
         "binding_jurisdiction": "IN",
         "binding_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
-        "basis_note": "÷8 as-sold→as-consumed",
+        "basis_note": "face value",
         "per_country": {
           "IN": {
-            "value": 630,
+            "value": 5000,
             "converted": true,
             "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
           }

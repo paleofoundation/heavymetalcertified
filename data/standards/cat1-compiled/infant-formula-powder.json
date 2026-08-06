@@ -18,10 +18,20 @@
             "converted": false,
             "id": "eu2023_pb_formula_powder_20"
           },
+          "FJ": {
+            "value": 20,
+            "converted": false,
+            "id": "fj_fsr2009_pb_006_infant_formula_20"
+          },
           "UK": {
             "value": 50,
             "converted": false,
             "id": "uk_pb_infant-formulae-and-follow-on-formulae-m_50"
+          },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_pb_15_1_infant_formula_powder_50"
           },
           "CODEX": {
             "value": 80,
@@ -48,6 +58,26 @@
             "converted": true,
             "id": "br_pb_pediatric-formula-for-enteral-nutrition_10"
           },
+          "GSO": {
+            "value": 80,
+            "converted": true,
+            "id": "gso193_2021_pb_infant_formula_formula_for_special_medical_purposes_intended_for_infants_10"
+          },
+          "TH": {
+            "value": 80,
+            "converted": true,
+            "id": "th_moph414_2020_pb_formula_as_consumed_10"
+          },
+          "SG": {
+            "value": 80,
+            "converted": true,
+            "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
+          },
+          "CO": {
+            "value": 160,
+            "converted": true,
+            "id": "co_res4506_2013_pb_formula_ready_20"
+          },
           "IN": {
             "value": 200,
             "converted": false,
@@ -68,6 +98,11 @@
             "converted": false,
             "id": "eu2023_ias_formula_powder_20"
           },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
+          },
           "BR": {
             "value": 160,
             "converted": true,
@@ -76,14 +111,19 @@
         }
       },
       "tHg": {
-        "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "type": "gov",
+        "value": 15,
+        "value_exact": 15,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 15,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
@@ -102,6 +142,16 @@
             "value": 10,
             "converted": false,
             "id": "uk_cd_infant-formulae-and-follow-on-formulae-p_10"
+          },
+          "GSO": {
+            "value": 10,
+            "converted": false,
+            "id": "gso193_2021_cd_powdered_formulae_manufactured_from_cows_milk_proteins_or_protein_hydrol_10"
+          },
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10"
           },
           "BR": {
             "value": 80,
@@ -190,10 +240,20 @@
             "converted": false,
             "id": "eu2023_pb_formula_powder_20"
           },
+          "FJ": {
+            "value": 20,
+            "converted": false,
+            "id": "fj_fsr2009_pb_006_infant_formula_20"
+          },
           "UK": {
             "value": 50,
             "converted": false,
             "id": "uk_pb_infant-formulae-and-follow-on-formulae-m_50"
+          },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_pb_15_1_infant_formula_powder_50"
           },
           "CODEX": {
             "value": 80,
@@ -220,6 +280,26 @@
             "converted": true,
             "id": "br_pb_pediatric-formula-for-enteral-nutrition_10"
           },
+          "GSO": {
+            "value": 80,
+            "converted": true,
+            "id": "gso193_2021_pb_infant_formula_formula_for_special_medical_purposes_intended_for_infants_10"
+          },
+          "TH": {
+            "value": 80,
+            "converted": true,
+            "id": "th_moph414_2020_pb_formula_as_consumed_10"
+          },
+          "SG": {
+            "value": 80,
+            "converted": true,
+            "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
+          },
+          "CO": {
+            "value": 160,
+            "converted": true,
+            "id": "co_res4506_2013_pb_formula_ready_20"
+          },
           "IN": {
             "value": 200,
             "converted": false,
@@ -240,6 +320,11 @@
             "converted": false,
             "id": "eu2023_ias_formula_powder_20"
           },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
+          },
           "BR": {
             "value": 160,
             "converted": true,
@@ -248,23 +333,33 @@
         }
       },
       "tHg": {
-        "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "type": "gov",
+        "value": 15,
+        "value_exact": 15,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 15,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
-        "value": 20,
-        "value_exact": 20,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_cd_formula_soy_powder_20",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10",
         "basis_note": "same basis",
         "per_country": {
+          "IL": {
+            "value": 10,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10"
+          },
           "EU": {
             "value": 20,
             "converted": false,
@@ -274,6 +369,11 @@
             "value": 20,
             "converted": false,
             "id": "uk_cd_infant-formulae-and-follow-on-formulae-p_20"
+          },
+          "GSO": {
+            "value": 20,
+            "converted": false,
+            "id": "gso193_2021_cd_powdered_formulae_manufactured_from_soya_protein_isolates_alone_or_in_a__20"
           },
           "BR": {
             "value": 80,

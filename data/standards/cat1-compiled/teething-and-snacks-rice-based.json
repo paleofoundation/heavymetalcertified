@@ -38,10 +38,25 @@
             "converted": true,
             "id": "uk_pb_processed-cereal-based-foods-and-baby-fo_50"
           },
+          "BA": {
+            "value": 100,
+            "converted": true,
+            "id": "ba_pravilnik_2022_pb_3_1_7c_100"
+          },
           "IN": {
             "value": 200,
             "converted": true,
             "id": "in_pb_infant-milk-substitute-and-infant-foods_200"
+          },
+          "PY": {
+            "value": 200,
+            "converted": true,
+            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_pb_200"
+          },
+          "MERCOSUR": {
+            "value": 200,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_pb_200"
           }
         }
       },
@@ -63,10 +78,20 @@
             "converted": true,
             "id": "ca_ias_rice-based-foods-intended-specifically-f_100"
           },
+          "GSO": {
+            "value": 100,
+            "converted": true,
+            "id": "gso193_2021_ias_rice_for_baby_and_infant_food_100"
+          },
           "KR": {
             "value": 100,
             "converted": true,
             "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          },
+          "IL": {
+            "value": 100,
+            "converted": true,
+            "id": "il_fcs2016_ias_5_2_1_rice_used_for_production_of_food_for_infants_and_tod_100"
           },
           "EU": {
             "value": 150,
@@ -82,18 +107,39 @@
             "value": 200,
             "converted": true,
             "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          },
+          "TH": {
+            "value": 200,
+            "converted": true,
+            "id": "th_moph414_2020_ias_polished_rice_200"
+          },
+          "SG": {
+            "value": 200,
+            "converted": true,
+            "id": "sg_foodregs_2026_polished_rice_ias_200"
+          },
+          "PH": {
+            "value": 200,
+            "converted": true,
+            "id": "ph_pns194_2017_polished_rice_ias_200"
           }
         }
       },
       "tHg": {
         "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "value": 8,
+        "value_exact": 8,
+        "source_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
+        "source_jurisdiction": "IL",
+        "label": "government read-across — Israel FCS-2016 porridges & other foods for infants and toddlers, total-Hg 8 (the strictest applicable baby-food mercury ML; supersedes the looser China canned-complementary 20).",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "IL": {
+            "value": 30,
+            "converted": true,
+            "id": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
@@ -112,6 +158,11 @@
             "value": 40,
             "converted": true,
             "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "GSO": {
+            "value": 40,
+            "converted": true,
+            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
           },
           "BR": {
             "value": 50,
@@ -132,6 +183,41 @@
             "value": 100,
             "converted": true,
             "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          },
+          "CO": {
+            "value": 100,
+            "converted": true,
+            "id": "co_res4506_2013_cd_cereals_general_100"
+          },
+          "TH": {
+            "value": 100,
+            "converted": true,
+            "id": "th_moph414_2020_cd_cereal_grains_excl_wheat_rice_100"
+          },
+          "PY": {
+            "value": 100,
+            "converted": true,
+            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_cd_100"
+          },
+          "BA": {
+            "value": 100,
+            "converted": true,
+            "id": "ba_pravilnik_2022_cd_3_2_11_1_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_cd_100"
+          },
+          "IL": {
+            "value": 200,
+            "converted": true,
+            "id": "il_fcs2016_cd_5_1_wheat_and_rice_200"
+          },
+          "PH": {
+            "value": 400,
+            "converted": true,
+            "id": "ph_pns194_2017_polished_rice_cd_400"
           }
         }
       },
@@ -178,7 +264,7 @@
         "source_id": "aunz_sch19_al_formula_nonsoy_500",
         "source_jurisdiction": "AU-NZ",
         "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
-        "basis_note": "face value (nearest government value)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       }
     }

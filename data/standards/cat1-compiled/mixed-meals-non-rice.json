@@ -28,6 +28,11 @@
             "converted": true,
             "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
           },
+          "IL": {
+            "value": 40,
+            "converted": true,
+            "id": "il_fcs2016_pb_15_2_porridges_and_other_foods_for_infants_and_toddlers_r_40"
+          },
           "KR": {
             "value": 100,
             "converted": true,
@@ -37,6 +42,16 @@
             "value": 200,
             "converted": true,
             "id": "in_pb_infant-milk-substitute-and-infant-foods_200"
+          },
+          "SG": {
+            "value": 200,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_pb_200"
+          },
+          "EU": {
+            "value": 10000,
+            "converted": true,
+            "id": "eu2002_32_pb_complementary_feed_10000"
           }
         }
       },
@@ -53,6 +68,11 @@
             "converted": true,
             "id": "eu2023_ias_babyfood_20"
           },
+          "IL": {
+            "value": 25,
+            "converted": true,
+            "id": "il_fcs2016_ias_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_25"
+          },
           "BR": {
             "value": 150,
             "converted": true,
@@ -66,14 +86,19 @@
         }
       },
       "tHg": {
-        "type": "read_across",
-        "value": 20,
-        "value_exact": 20,
-        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
-        "source_jurisdiction": "CN",
-        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
-        "basis_note": "face value (nearest government value)",
-        "per_country": {}
+        "type": "gov",
+        "value": 8,
+        "value_exact": 8,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 8,
+            "converted": true,
+            "id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+          }
+        }
       },
       "Cd": {
         "type": "gov",
@@ -92,6 +117,16 @@
             "value": 40,
             "converted": true,
             "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "GSO": {
+            "value": 40,
+            "converted": true,
+            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
+          },
+          "IL": {
+            "value": 40,
+            "converted": true,
+            "id": "il_fcs2016_cd_14_4_porridges_and_other_foods_for_infants_and_toddlers_r_40"
           },
           "BR": {
             "value": 50,
@@ -153,7 +188,7 @@
         "source_id": "aunz_sch19_al_formula_nonsoy_500",
         "source_jurisdiction": "AU-NZ",
         "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
-        "basis_note": "face value (nearest government value)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       }
     }
