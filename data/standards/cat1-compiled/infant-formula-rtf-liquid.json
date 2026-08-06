@@ -1,0 +1,369 @@
+{
+  "slug": "infant-formula-rtf-liquid",
+  "name": "Infant formula (ready-to-feed, liquid)",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "cow": {
+      "Pb": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_formula_liquid_10",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_pb_formula_liquid_10"
+          },
+          "UK": {
+            "value": 10,
+            "converted": false,
+            "id": "uk_pb_infant-formulae-and-follow-on-formulae-m_10"
+          },
+          "CODEX": {
+            "value": 10,
+            "converted": false,
+            "id": "codex_pb_infant-formula-formula-for-special-medic_10"
+          },
+          "CA": {
+            "value": 10,
+            "converted": false,
+            "id": "ca_pb_infant-formula-all-types-two-former-limi_10"
+          },
+          "AU-NZ": {
+            "value": 10,
+            "converted": false,
+            "id": "aunz_sch19_pb_formula_10"
+          },
+          "CN": {
+            "value": 10,
+            "converted": false,
+            "id": "cn_pb_liquid-ready-to-feed-infant-formula_10"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_pb_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "GSO": {
+            "value": 10,
+            "converted": false,
+            "id": "gso_pb_infant-formula-formula-for-special-medic_10"
+          },
+          "KR": {
+            "value": 10,
+            "converted": false,
+            "id": "kr_pb_infant-formula-follow-up-formula-cereal_10"
+          },
+          "IN": {
+            "value": 20,
+            "converted": false,
+            "id": "in_pb_infant-formula-ready-to-use_20"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_formula_liquid_10",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_ias_formula_liquid_10"
+          },
+          "KR": {
+            "value": 13,
+            "converted": true,
+            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          },
+          "BR": {
+            "value": 20,
+            "converted": false,
+            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
+        "source_jurisdiction": "CN",
+        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 5,
+        "value_exact": 5,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_formula_cow_liquid_5",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 5,
+            "converted": false,
+            "id": "eu2023_cd_formula_cow_liquid_5"
+          },
+          "UK": {
+            "value": 5,
+            "converted": false,
+            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_5"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "IN": {
+            "value": 13,
+            "converted": true,
+            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 300,
+        "value_exact": 300,
+        "source_id": "china_gb2762_cr_liquid_milk_300",
+        "source_jurisdiction": "CN",
+        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_formula_liquid_100",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": false,
+            "id": "eu2024_ni_formula_liquid_100"
+          }
+        }
+      },
+      "Sn": {
+        "type": "gov",
+        "value": 630,
+        "value_exact": 625,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "basis_note": "÷8 as-sold→as-consumed",
+        "per_country": {
+          "IN": {
+            "value": 630,
+            "converted": true,
+            "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+          }
+        }
+      },
+      "Al": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "AU-NZ",
+        "binding_id": "aunz_sch19_al_formula_nonsoy_500",
+        "basis_note": "same basis",
+        "per_country": {
+          "AU-NZ": {
+            "value": 500,
+            "converted": false,
+            "id": "aunz_sch19_al_formula_nonsoy_500"
+          }
+        }
+      }
+    },
+    "soy": {
+      "Pb": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_formula_liquid_10",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_pb_formula_liquid_10"
+          },
+          "UK": {
+            "value": 10,
+            "converted": false,
+            "id": "uk_pb_infant-formulae-and-follow-on-formulae-m_10"
+          },
+          "CODEX": {
+            "value": 10,
+            "converted": false,
+            "id": "codex_pb_infant-formula-formula-for-special-medic_10"
+          },
+          "CA": {
+            "value": 10,
+            "converted": false,
+            "id": "ca_pb_infant-formula-all-types-two-former-limi_10"
+          },
+          "AU-NZ": {
+            "value": 10,
+            "converted": false,
+            "id": "aunz_sch19_pb_formula_10"
+          },
+          "CN": {
+            "value": 10,
+            "converted": false,
+            "id": "cn_pb_liquid-ready-to-feed-infant-formula_10"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_pb_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "KR": {
+            "value": 10,
+            "converted": false,
+            "id": "kr_pb_infant-formula-follow-up-formula-cereal_10"
+          },
+          "IN": {
+            "value": 20,
+            "converted": false,
+            "id": "in_pb_infant-formula-ready-to-use_20"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_formula_liquid_10",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_ias_formula_liquid_10"
+          },
+          "KR": {
+            "value": 13,
+            "converted": true,
+            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          },
+          "BR": {
+            "value": 20,
+            "converted": false,
+            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
+        "source_jurisdiction": "CN",
+        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_formula_soy_liquid_10",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_cd_formula_soy_liquid_10"
+          },
+          "UK": {
+            "value": 10,
+            "converted": false,
+            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_10"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "IN": {
+            "value": 13,
+            "converted": true,
+            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 300,
+        "value_exact": 300,
+        "source_id": "china_gb2762_cr_liquid_milk_300",
+        "source_jurisdiction": "CN",
+        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_formula_liquid_100",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": false,
+            "id": "eu2024_ni_formula_liquid_100"
+          }
+        }
+      },
+      "Sn": {
+        "type": "gov",
+        "value": 630,
+        "value_exact": 625,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "basis_note": "÷8 as-sold→as-consumed",
+        "per_country": {
+          "IN": {
+            "value": 630,
+            "converted": true,
+            "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+          }
+        }
+      },
+      "Al": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "AU-NZ",
+        "binding_id": "aunz_sch19_al_formula_soy_1000",
+        "basis_note": "same basis",
+        "per_country": {
+          "AU-NZ": {
+            "value": 1000,
+            "converted": false,
+            "id": "aunz_sch19_al_formula_soy_1000"
+          }
+        }
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

@@ -40,6 +40,11 @@ for (const m of manifest.manuals) {
 // Copy published PDFs into the served static dir + write a landing page each.
 if (published.length) fs.mkdirSync(STATIC_DIR, { recursive: true })
 for (const m of published) {
+  // A custom_landing manual renders its own rich landing page (a dedicated generator owns it) and
+  // does NOT ship the manifest PDF — used when the web edition has moved ahead of the consolidated
+  // PDF. Skip the stub write and the stale-PDF copy; it still appears in the index below, linking to
+  // its page instead of a download.
+  if (m.custom_landing) continue
   fs.copyFileSync(path.join(PDF_DIR, m.pdf), path.join(STATIC_DIR, m.pdf))
   const pdfUrl = `/static/manuals/${m.pdf}`
   const fm = [
@@ -94,7 +99,9 @@ const pubRows = published
         <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">${m.title}</div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">${meta}</div>
       </div>
-      <a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+      ${m.custom_landing
+        ? `<a href="/manuals/${m.slug}" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>`
+        : `<a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>`}
     </div>`
   })
   .join("\n")

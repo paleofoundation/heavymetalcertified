@@ -1,0 +1,123 @@
+{
+  "slug": "root-vegetable-purees-single-ingredient",
+  "name": "Root-vegetable purées (single-ingredient)",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_babyfood_cereal_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_pb_babyfood_cereal_20"
+          },
+          "US": {
+            "value": 20,
+            "converted": true,
+            "id": "fda2025_pb_root_baby_food_20"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_babyfood_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_ias_babyfood_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
+        "source_jurisdiction": "CN",
+        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 40,
+        "value_exact": 40,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_babyfood_cereal_40",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 40,
+            "converted": true,
+            "id": "eu2023_cd_babyfood_cereal_40"
+          },
+          "UK": {
+            "value": 40,
+            "converted": true,
+            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "AU-NZ": {
+            "value": 100,
+            "converted": true,
+            "id": "aunz_sch19_cd_root_tuber_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "not_material",
+        "value": null,
+        "control": "Reflex Cr-VI speciation: any total-Cr result >100 ug/kg triggers Cr-VI speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. No credible government sets a total-Cr ML for a non-dairy root-vegetable food; the dairy milk-powder read-across (China 2000) is not a defensible analogy for a non-dairy matrix.",
+        "reference_method": "IC-ICP-MS hexavalent-chromium speciation (EPA 218.6 or equivalent ISO/DIN method)"
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_babyfood_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu2024_ni_babyfood_500"
+          }
+        }
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 5000,
+        "value_exact": 5000,
+        "source_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "source_jurisdiction": "IN",
+        "label": "government read-across (India FSSAI \"Infant Milk substitute and Infant foods\" Sn 5000, the only non-canned tin ML in the register) applied at face value.",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

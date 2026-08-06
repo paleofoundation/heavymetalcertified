@@ -13,7 +13,7 @@
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "prebuild": "node tools/build-standards-pages.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs",
+    "prebuild": "node tools/build-cert-regulation-pages.mjs && node tools/build-cat1-standard-pages.mjs && node tools/build-cat1-manual.mjs && node tools/build-standards-pages.mjs && node tools/build-cert-page-history.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs",
     "standards": "node tools/build-standards-pages.mjs",
     "manuals": "node tools/build-manuals-page.mjs",
     "briefings": "node tools/import-briefings.mjs",

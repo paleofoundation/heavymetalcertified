@@ -1,0 +1,143 @@
+{
+  "slug": "fruit-purees-general",
+  "name": "Fruit purées (general)",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "US",
+        "binding_id": "fda2025_pb_baby_food_10",
+        "basis_note": "face value",
+        "per_country": {
+          "US": {
+            "value": 10,
+            "converted": true,
+            "id": "fda2025_pb_baby_food_10"
+          },
+          "BR": {
+            "value": 20,
+            "converted": true,
+            "id": "br_pb_transition-weaning-foods-for-infants-and_20"
+          },
+          "UK": {
+            "value": 50,
+            "converted": true,
+            "id": "uk_pb_processed-cereal-based-foods-and-baby-fo_50"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_babyfood_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_ias_babyfood_20"
+          },
+          "BR": {
+            "value": 150,
+            "converted": true,
+            "id": "br_ias_transition-weaning-foods-for-infants-and_150"
+          },
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "source_id": "cn_thg_canned-complementary-foods-for-infants-a_20",
+        "source_jurisdiction": "CN",
+        "label": "government read-across — China GB 2762 total-Hg 20 for canned complementary infant foods; no government sets a mercury ML for any infant-food form, so 20 is applied as the program-settled flat value (matches the deployed formula-powder standard).",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 40,
+        "value_exact": 40,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_babyfood_cereal_40",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 40,
+            "converted": true,
+            "id": "eu2023_cd_babyfood_cereal_40"
+          },
+          "UK": {
+            "value": 40,
+            "converted": true,
+            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "CN": {
+            "value": 60,
+            "converted": true,
+            "id": "cn_cd_cereal-based-complementary-foods-for-inf_60"
+          },
+          "BR": {
+            "value": 100,
+            "converted": true,
+            "id": "br_cd_transition-weaning-foods-for-infants-and_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "not_material",
+        "value": null,
+        "control": "reflex Cr(VI) speciation on any total-Cr result > 100 ppb; any quantifiable Cr(VI) fails",
+        "reference_method": "species-specific isotope-dilution HPLC-ICP-MS (per saraiva2021, infant-formula Cr-VI adjudication)"
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_babyfood_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu2024_ni_babyfood_500"
+          }
+        }
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 5000,
+        "value_exact": 5000,
+        "source_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "source_jurisdiction": "IN",
+        "label": "government read-across (India FSSAI \"Infant Milk substitute and Infant foods\" Sn 5000, the only non-canned tin ML in the register) applied at face value.",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
+        "basis_note": "face value (nearest government value)",
+        "per_country": {}
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

@@ -250,7 +250,9 @@ const editionRows = publishedManuals.length
         const meta = `${m.edition} Edition &middot; ${m.subcategories || "—"} subcategor${m.subcategories === 1 ? "y" : "ies"} &middot; ${m.pages ? m.pages + " pp" : "—"}`
         return `    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0"><div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${m.title}</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">${meta}</div></div>
-      <a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+      ${m.custom_landing
+        ? `<a href="/manuals/${m.slug}" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>`
+        : `<a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>`}
     </div>`
       })
       .join("\n")

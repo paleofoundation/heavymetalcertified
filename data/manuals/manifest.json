@@ -50,11 +50,13 @@
       "pdf": "HMTc-Infant-and-Child-Foods-Program-Manual-2026.pdf",
       "status": "published",
       "doi": "10.5281/zenodo.20270512",
-      "subcategories": 15,
-      "pages": 384,
+      "subcategories": 9,
+      "pages": 9,
       "published_date": "2026-05-18",
       "revised_date": "2026-06-18",
-      "evidence_note": "Standalone Infant and Child Foods Program Manual (the 384-page volume formerly mislabeled here as the 'master' aggregate). Defensibility-audited and publicly deposited on Zenodo (DOI 10.5281/zenodo.20270512); revision 2026-06-18 incorporates the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1. First category manual cleared for publication."
+      "evidence_note": "Standalone Infant and Child Foods Program Manual (the 384-page volume formerly mislabeled here as the 'master' aggregate). Defensibility-audited and publicly deposited on Zenodo (DOI 10.5281/zenodo.20270512); revision 2026-06-18 incorporates the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1. First category manual cleared for publication.",
+      "custom_landing": true,
+      "landing_note": "Web edition current (9 subcategories, 2026-08-06). The consolidated PDF predates the full-category expansion and is being regenerated; the per-subcategory pages are individually citable in the meantime."
     }
   ]
 }
