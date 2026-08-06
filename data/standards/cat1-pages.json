@@ -2,6 +2,48 @@
   "_doc": "Per-page metadata for the Cat-1 standard renderer (tools/build-cat1-standard-pages.mjs). Each page is one taxonomy row; variants list the compiled record(s) + variant key(s) that group onto it. Numbers come from data/standards/cat1-compiled/<record>.json; this file only carries display + wiring. PDFs are added once generated (cta appears when pdf is set).",
   "pages": [
     {
+      "slug": "infant-formula-powder",
+      "name": "Infant formula (powder)",
+      "variant_type": "whole_row_platform",
+      "description": "The Heavy Metal Tested & Certified standard for infant formula in powder form, stated as-sold. Every limit is the strictest maximum level any credible government sets, converted to the as-sold basis; where no government regulates the exact product, the limit is read across from the nearest government value.",
+      "version": "3.1 (2026-08-06)",
+      "hmi_link": "https://heavymetalindex.com/products/infant-formula-powder",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Program Manual — Infant and Child Foods",
+          "href": "/manuals/infant-and-child-foods"
+        },
+        {
+          "label": "Ready-to-feed (liquid) standard",
+          "href": "/standards/infant-formula-ready-to-feed"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/infant-formula-powder"
+        }
+      ],
+      "variants": [
+        {
+          "label": "cow",
+          "variant": "cow",
+          "record": "infant-formula-powder"
+        },
+        {
+          "label": "soy",
+          "variant": "soy",
+          "record": "infant-formula-powder"
+        }
+      ]
+    },
+    {
       "slug": "infant-formula-ready-to-feed",
       "name": "Infant formula (ready-to-feed, liquid)",
       "description": "The Heavy Metal Tested & Certified standard for ready-to-feed liquid infant formula, stated as-consumed. Every limit is the strictest maximum level any credible government sets for the liquid product form, converted to the as-consumed basis; where no government regulates the exact product, the limit is read across from the nearest government value.",
