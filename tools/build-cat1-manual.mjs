@@ -61,9 +61,12 @@ const fm = [
   "custom_page: true",
   "category: 1",
   "scholar_eligible: true",
-  "cert_doi: null",  // assigned on deposit; standards go via Crossref (Karen, 2026-08-06). NB confirm edition/DOI: the briefings cite Zenodo 10.5281/zenodo.20270512 ("2026 Edition", a real Book record) as the current Program Manual, but this is the newer 9-subcategory web edition — decide whether it re-deposits (new DOI) or is the same edition.
+  "cert_doi: null",  // the current 9-subcategory WEB edition has no DOI yet (Crossref go-forward; deposit pending). The DOI'd artifact is a SEPARATE, superseded 384-page ~15-subcategory deposited volume — concept DOI 10.5281/zenodo.20270511 → v0 20270512 (2026-05-18), latest 20771543 (2026-06-20). Full lineage: data/standards/version-history/infant-and-child-foods.json (rail_box + version-history table below are generated from it).
   "effective_date: 2026",
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
+  "rail_box:",
+  '  title: "Document versions"',
+  '  body: "Web edition current — nine subcategories, 2026-08-06 (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit; the earlier 384-page deposited editions stay citable on Zenodo. Full edition history below."',
   "---",
 ].join("\n")
 

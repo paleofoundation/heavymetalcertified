@@ -7,6 +7,9 @@ scholar_eligible: true
 cert_doi: null
 effective_date: 2026
 audience: [regulator, brand-legal, retailer-compliance, certifier]
+rail_box:
+  title: "Document versions"
+  body: "Web edition current — nine subcategories, 2026-08-06 (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit; the earlier 384-page deposited editions stay citable on Zenodo. Full edition history below."
 ---
 
 <section style="margin-bottom:44px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 14px">Infant and Child Foods — HMTc Program Manual</h1>
@@ -30,3 +33,17 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 <section style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">About this edition</h2>
 <p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. A consolidated, version-pinned PDF of the full expanded manual is in preparation and will be linked here on release; until then each subcategory page is individually downloadable and citable.</p>
 <p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:80ch;margin:0">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>
+
+<!-- BEGIN: hmtc-version-history -->
+## Version history
+
+The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date — the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+
+| Version | Date | Status | DOI | What changed |
+| --- | --- | --- | --- | --- |
+| 2026 web edition | 2026-08-06 | **current** | pending (Crossref) | Reorganized to the nine rendered subcategories under the government-limit default (Method v2.0). Consolidated PDF in preparation; a DOI is minted on deposit. |
+| 2026 deposit (rev.) | 2026-06-20 | superseded | [10.5281/zenodo.20771543](https://doi.org/10.5281/zenodo.20771543) | 384-page deposited volume; revision incorporating the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1. |
+| 2026 deposit (v0) | 2026-05-18 | superseded | [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512) | First public deposit of the standalone 384-page volume. |
+
+The concept DOI [10.5281/zenodo.20270511](https://doi.org/10.5281/zenodo.20270511) always resolves to the latest deposited edition.
+<!-- END: hmtc-version-history -->

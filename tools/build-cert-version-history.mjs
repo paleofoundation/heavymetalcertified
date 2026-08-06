@@ -25,21 +25,37 @@ const esc = (s) => String(s).replace(/\|/g, "\\|")
 const rx = (a, b) => new RegExp(`\\n*${a.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[\\s\\S]*?${b.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\n*`, "g")
 
 function versionBlock(rec) {
+  const noun = rec.document_noun || "standard"
+  // A DOI column appears only when at least one edition carries a DOI (real or
+  // pending) — so the 9 standard pages (records without DOIs) render unchanged,
+  // and the manual (records with two real Zenodo DOIs + one pending) gets it.
+  const hasDoi = rec.versions.some((v) => v.doi || v.doi_pending)
+  const head = hasDoi
+    ? "| Version | Date | Status | DOI | What changed |\n| --- | --- | --- | --- | --- |"
+    : "| Version | Date | Status | What changed |\n| --- | --- | --- | --- |"
   const rows = rec.versions
     .map((v) => {
-      const label = v.pdf ? `[v${v.version}](${v.pdf})` : `v${v.version}`
+      // `label` overrides the default `v<version>` (the manual uses edition
+      // labels, not "v1.0"); a `pdf` still links the label when one is served.
+      const base = v.label || `v${v.version}`
+      const label = v.pdf ? `[${base}](${v.pdf})` : base
       const status = v.status === "current" ? "**current**" : v.status || "superseded"
-      return `| ${label} | ${v.date} | ${status} | ${esc(v.summary || "")} |`
+      const doiCell = v.doi ? `[${v.doi}](https://doi.org/${v.doi})` : v.doi_pending || "—"
+      return hasDoi
+        ? `| ${label} | ${v.date} | ${status} | ${doiCell} | ${esc(v.summary || "")} |`
+        : `| ${label} | ${v.date} | ${status} | ${esc(v.summary || "")} |`
     })
     .join("\n")
+  const conceptNote = rec.concept_doi
+    ? `\n\nThe concept DOI [${rec.concept_doi}](https://doi.org/${rec.concept_doi}) always resolves to the latest deposited edition.`
+    : ""
   return `${BEGIN}
 ## Version history
 
-The dated editions of this standard. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the standard required on any date — the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+The dated editions of this ${noun}. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the ${noun} required on any date — the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
 
-| Version | Date | Status | What changed |
-| --- | --- | --- | --- |
-${rows}
+${head}
+${rows}${conceptNote}
 ${END}`
 }
 
@@ -60,7 +76,9 @@ for (const dir of TARGETS) {
     // Standards with a version record get the edition history appended.
     const slug = f.replace(/\.md$/, "")
     const recPath = path.join(VH_DIR, `${slug}.json`)
-    if (dir === "content/standards" && fs.existsSync(recPath)) {
+    // Any target file with a matching version record gets the edition history —
+    // the 9 standards plus the Program Manual (content/manuals/infant-and-child-foods.md).
+    if (fs.existsSync(recPath)) {
       const rec = JSON.parse(fs.readFileSync(recPath, "utf8"))
       raw = `${raw.replace(/\n+$/, "")}\n\n${versionBlock(rec)}\n`
       added++

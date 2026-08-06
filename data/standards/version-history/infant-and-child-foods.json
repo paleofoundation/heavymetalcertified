@@ -1,0 +1,38 @@
+{
+  "product_slug": "infant-and-child-foods",
+  "document_noun": "manual",
+  "current_version": "2026 web edition",
+  "concept_doi": "10.5281/zenodo.20270511",
+  "_note": "Lineage established by the manual-version-lineage workflow (2026-08-06). The deposited PDF is a 384-page ~15-subcategory volume with two Zenodo versions; the current site edition is a newer 9-subcategory web reorganization with no PDF/DOI yet. Do not serve the deposited PDF as the current download (stale-standard). Only these DOIs are real.",
+  "versions": [
+    {
+      "version": "2026 web edition",
+      "label": "2026 web edition",
+      "date": "2026-08-06",
+      "status": "current",
+      "doi": null,
+      "doi_pending": "pending (Crossref)",
+      "pdf": null,
+      "permalink": "/manuals/infant-and-child-foods",
+      "summary": "Reorganized to the nine rendered subcategories under the government-limit default (Method v2.0). Consolidated PDF in preparation; a DOI is minted on deposit."
+    },
+    {
+      "version": "2026 deposit (rev.)",
+      "label": "2026 deposit (rev.)",
+      "date": "2026-06-20",
+      "status": "superseded",
+      "doi": "10.5281/zenodo.20771543",
+      "pdf": null,
+      "summary": "384-page deposited volume; revision incorporating the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1."
+    },
+    {
+      "version": "2026 deposit (v0)",
+      "label": "2026 deposit (v0)",
+      "date": "2026-05-18",
+      "status": "superseded",
+      "doi": "10.5281/zenodo.20270512",
+      "pdf": null,
+      "summary": "First public deposit of the standalone 384-page volume."
+    }
+  ]
+}
