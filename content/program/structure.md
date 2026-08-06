@@ -54,7 +54,7 @@ rail_box:
         <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P97</span>
         <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Clean subcategory</span>
       </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The lower-burden form within a pair &mdash; non-rice cereal, cow-milk formula, above-ground vegetables. The limit sits at the 97th percentile of the pooled occurrence distribution.</p>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The lower-burden form within a pair &mdash; non-rice cereal, cow-milk formula, above-ground vegetables. Where the program sets this cell from occurrence rather than a government limit, the limit sits at the 97th percentile of the pooled distribution.</p>
     </div>
     <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
