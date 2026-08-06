@@ -101,9 +101,19 @@ function methodSection(subName, basisWord, pdfHref, version) {
   return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; the European Union, the United Kingdom, Codex Alimentarius, Health Canada, China, India, Brazil, the Gulf states (GSO), Australia/New Zealand, and the US FDA &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p>${dl}</section>`
 }
 
-function citeSection(subName, version, hmiLink) {
+function citeSection(subName, version, hmiLink, doi) {
   const hmi = hmiLink ? `<a href="${hmiLink}" style="color:${LINK}">Heavy Metal Index</a>` : "Heavy Metal Index"
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. DOI pending (Zenodo).</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  // A real DOI renders as a resolvable doi.org link. Until one is assigned the
+  // line reads "registration pending" — agency-neutral on purpose: the DOI
+  // self-identifies once minted, and hard-coding the agency in page text is
+  // exactly what went stale (the old "(Zenodo)" after the plan moved to
+  // Crossref). The registration agency lives in the deposit config, not on the
+  // public page. Standards are deposited as Crossref posted-content/reports; the
+  // already-published Program Manual and Journal articles keep their real Zenodo DOIs.
+  const doiText = doi
+    ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>`
+    : "DOI: registration pending."
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
 }
 
 // --- drive --------------------------------------------------------------------
@@ -118,6 +128,10 @@ for (const page of PAGES.pages) {
   const version = page.version || "1.0 (2026-08-06)"
   const vshort = version.split(" ")[0]
   const pdfHref = page.pdf || null
+  // Real DOI once deposited (Crossref, per the standards' go-forward plan);
+  // set per page in cat1-pages.json when assigned. Flows into both the citation
+  // <meta> (via cert_doi frontmatter → Head.tsx) and the visible cite line.
+  const certDoi = page.cert_doi || null
 
   const otherNote = variants.length > 1
     ? `Variants on this page: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the Master Limit Table shows both; the derivation above is for ${variants[0].label}.`
@@ -141,7 +155,7 @@ for (const page of PAGES.pages) {
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
     "effective_date: 2026-08-06",
     "scholar_eligible: true",
-    "cert_doi: null",
+    `cert_doi: ${certDoi ? JSON.stringify(certDoi) : "null"}`,
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "rail_box:",
     '  title: "Document versions"',
@@ -161,7 +175,7 @@ for (const page of PAGES.pages) {
     methodSection(page.name, basisWord, pdfHref, vshort),
     masterTable(variants, basisWord),
     derivationTable(variants[0], basisWord, page.name, otherNote),
-    citeSection(page.name, vshort, page.hmi_link),
+    citeSection(page.name, vshort, page.hmi_link, certDoi),
   ].join("\n")
 
   fs.writeFileSync(path.join(OUT, `${page.slug}.md`), `${fm}\n${body}\n`)

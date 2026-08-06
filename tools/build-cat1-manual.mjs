@@ -61,7 +61,7 @@ const fm = [
   "custom_page: true",
   "category: 1",
   "scholar_eligible: true",
-  "cert_doi: null",  // 9-subcategory edition supersedes the single-subcategory DOI 10.5281/zenodo.20270512; re-deposit pending
+  "cert_doi: null",  // assigned on deposit; standards go via Crossref (Karen, 2026-08-06). NB confirm edition/DOI: the briefings cite Zenodo 10.5281/zenodo.20270512 ("2026 Edition", a real Book record) as the current Program Manual, but this is the newer 9-subcategory web edition — decide whether it re-deposits (new DOI) or is the same edition.
   "effective_date: 2026",
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
   "---",
