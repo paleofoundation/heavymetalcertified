@@ -261,6 +261,32 @@ const byCat = {}
 for (const row of catalog.rows) {
   ;(byCat[row.vertical.category] ??= { name: row.vertical.category_name, rows: [] }).rows.push(row)
 }
+
+// Hand-authored custom standard pages (frontmatter `custom_page: true`) are NOT
+// generated from the catalog — they carry a bespoke derivation (e.g. the
+// government-limit infant-formula standard) that the catalog template cannot
+// render. This scan gives them a permanent home in the index without the
+// generator ever writing over them; they are listed alongside catalog rows.
+for (const f of fs.readdirSync(OUT_DIR)) {
+  if (!f.endsWith(".md") || f === "index.md") continue
+  const raw = fs.readFileSync(path.join(OUT_DIR, f), "utf8")
+  const end = raw.indexOf("\n---", 4)
+  const fm = end > 0 ? raw.slice(0, end) : ""
+  if (!/\bcustom_page:\s*true/.test(fm)) continue
+  const get = (k) => (fm.match(new RegExp(`^${k}:\\s*"?([^"\\n]+)"?`, "m")) || [])[1] || ""
+  const cat = get("category") || "0"
+  const slug = get("product_slug") || f.replace(/\.md$/, "")
+  const group = (byCat[cat] ??= { name: get("category_name") || "Other", rows: [] })
+  if (group.rows.some((r) => r.product_slug === slug)) continue
+  const firm = Number(get("firm_analytes")) || 0
+  group.rows.push({
+    vertical: { category: cat, category_name: group.name },
+    subcategory: get("subcategory") || get("title").replace(/ &mdash;.*| — HMTc.*/, ""),
+    product_slug: slug,
+    native_basis: get("native_basis") || "as_sold",
+    analytes: Object.fromEntries(Array.from({ length: firm }, (_, i) => [i, { status: "published" }])),
+  })
+}
 const catGroups = Object.keys(byCat)
   .sort((a, b) => Number(a) - Number(b))
   .map((cat) => {

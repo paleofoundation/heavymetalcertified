@@ -1,0 +1,880 @@
+{
+  "generated": "2026-08-05",
+  "instruments": [
+    {
+      "slug": "eu-2023-915",
+      "jurisdiction": "EU",
+      "name": "Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006",
+      "reference": "(EU) 2023/915 (consolidated 02023R0915 — EN — 08.10.2025 — 006.001)",
+      "body": "European Commission",
+      "year": 2023,
+      "status": "in-force",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02023R0915-20251008",
+      "verified": true,
+      "retrieved": "2026-08-05",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, and young-child formulae placed on the market as powder",
+          "source": "3.1.24.1"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, and young-child formulae placed on the market as liquid",
+          "source": "3.1.24.2."
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "ready to use",
+          "scope": "drinks for infants and young children placed on the market and labelled as such, liquid or reconstituted, except formula and food for special medical purposes",
+          "source": "3.1.25.1"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "baby food and processed cereal-based food for infants and young children, except covered infant drinks and formula/medical foods",
+          "source": "3.1.26."
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as powder and manufactured from cow's milk proteins or cow's milk protein hydrolysates",
+          "source": "3.2.17.1"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 5,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as liquid and manufactured from cow's milk proteins or cow's milk protein hydrolysates",
+          "source": "3.2.17.2."
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as powder and manufactured from soy protein isolates alone or mixed with cow's milk proteins",
+          "source": "3.2.17.3"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as liquid and manufactured from soy protein isolates alone or mixed with cow's milk proteins",
+          "source": "3.2.17.4."
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 20,
+          "basis": "ready to use",
+          "scope": "drinks for infants and young children labelled and placed on the market as such, liquid or reconstituted, except formula and young-child formulae",
+          "source": "3.2.19.1"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 40,
+          "basis": "product as placed on market",
+          "scope": "baby food and processed cereal-based food for infants and young children",
+          "source": "3.2.20."
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as powder",
+          "source": "3.4.2.1"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as liquid",
+          "source": "3.4.2.2"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "baby food for infants and young children",
+          "source": "3.4.3"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "rice commodity",
+          "scope": "rice destined for production of food for infants and young children",
+          "source": "3.4.1.5"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "canned infant formulae, canned follow-on formulae, and canned young-child formulae, except canned dried and canned powdered products",
+          "source": "3.5.3."
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "canned baby food and canned processed cereal-based food for infants and young children, except canned dried and canned powdered products",
+          "source": "3.5.4."
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 100,
+          "basis": "commodity",
+          "scope": "cereals except listed cereal-specific rows",
+          "source": "3.2.12.1."
+        },
+        {
+          "analyte": "tHg",
+          "value_ug_kg": 10,
+          "basis": "mg/kg as mercury",
+          "scope": "cereals including rice",
+          "source": "Reg 396/2005), not the 2023/915 contaminants framework."
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 800,
+          "basis": "product as placed on market",
+          "scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 3000,
+          "basis": "product as placed on market",
+          "scope": "pseudo cereals and millet",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 250,
+          "basis": "product as placed on market",
+          "scope": "infant/young-child formula, powder, except soy-isolate",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 400,
+          "basis": "product as placed on market",
+          "scope": "infant/young-child formula, powder, soy protein isolate",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "infant/young-child formula, liquid",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 3000,
+          "basis": "product as placed on market",
+          "scope": "processed cereal-based food for infants and young children",
+          "source": ""
+        },
+        {
+          "analyte": "Ni",
+          "value_ug_kg": 500,
+          "basis": "product as placed on market",
+          "scope": "baby food except juices",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "slug": "uk-1881-2006",
+      "jurisdiction": "UK",
+      "name": "Commission Regulation (EC) No 1881/2006 of 19 December 2006 setting maximum levels for certain contaminants in foodstuffs, as it forms part of retained/assimilated EU law in the United Kingdom (Great Britain), as amended",
+      "reference": "Retained Regulation (EC) No 1881/2006 (GB)",
+      "body": "UK Government (assimilated law; originally European Commission)",
+      "year": 2006,
+      "status": "in-force",
+      "url": "https://www.legislation.gov.uk/eur/2006/1881/pdfs/eur_20061881_2020-09-28_en.pdf",
+      "verified": true,
+      "retrieved": "",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 50,
+          "basis": "product as placed on market",
+          "scope": "Infant formulae and follow-on formulae, marketed as powder",
+          "source": "3.1.2 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formulae and follow-on formulae, marketed as liquid (ready-to-feed)",
+          "source": "3.1.2 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 50,
+          "basis": "product as placed on market",
+          "scope": "Processed cereal-based foods and baby foods for infants and young children (excluding drinks in point 3.1.5)",
+          "source": "3.1.3 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 50,
+          "basis": "product as placed on market",
+          "scope": "Foods for special medical purposes intended specifically for infants and young children, marketed as powder",
+          "source": "3.1.4 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "Foods for special medical purposes intended specifically for infants and young children, marketed as liquid",
+          "source": "3.1.4 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 30,
+          "basis": "as consumed",
+          "scope": "Drinks for infants and young children, labelled and sold as such, marketed as liquid or reconstituted per manufacturer instructions, includi",
+          "source": "3.1.5 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 1500,
+          "basis": "product as placed on market",
+          "scope": "Drinks for infants and young children, labelled and sold as such, to be prepared by infusion or decoction",
+          "source": "3.1.5 (as amended by Reg (EU) 2015/1005). Sources: https://www.legislation.gov.uk/eur/2015/1005"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "Infant formulae and follow-on formulae, powdered formulae manufactured from cows' milk proteins or protein hydrolysates",
+          "source": "3.2.19 (as amended by Reg (EU) No 488/2014). Sources: https://www.legislation.gov.uk/eur/2014/488/annexes"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 5,
+          "basis": "product as placed on market",
+          "scope": "Infant formulae and follow-on formulae, liquid formulae manufactured from cows' milk proteins or protein hydrolysates",
+          "source": "3.2.19 (as amended by Reg (EU) No 488/2014). Sources: https://www.legislation.gov.uk/eur/2014/488/annexes"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "Infant formulae and follow-on formulae, powdered formulae manufactured from soya protein isolates alone or mixed with cows' milk proteins",
+          "source": "3.2.19 (as amended by Reg (EU) No 488/2014). Sources: https://www.legislation.gov.uk/eur/2014/488/annexes"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "Infant formulae and follow-on formulae, liquid formulae manufactured from soya protein isolates alone or mixed with cows' milk proteins",
+          "source": "3.2.19 (as amended by Reg (EU) No 488/2014). Sources: https://www.legislation.gov.uk/eur/2014/488/annexes"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 40,
+          "basis": "product as placed on market",
+          "scope": "Processed cereal-based foods and baby foods for infants and young children",
+          "source": "3.2.20 (as amended by Reg (EU) No 488/2014). Sources: https://www.legislation.gov.uk/eur/2014/488/annexes"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "Rice destined for the production of food for infants and young children",
+          "source": "3.5.4 (as inserted by Reg (EU) 2015/1006). Sources: https://www.legislation.gov.uk/eur/2006/1881/annexes"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "Canned baby foods and canned processed cereal-based foods for infants and young children (excluding dried and powdered products)",
+          "source": "3.4.3 (original 1881/2006 text). Sources: https://www.legislation.gov.uk/eur/2006/1881/annexes"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "as consumed",
+          "scope": "Canned infant formulae and follow-on formulae, including infant milk and follow-on milk (excluding dried and powdered products)",
+          "source": "3.4.4 (original 1881/2006 text). Sources: https://www.legislation.gov.uk/eur/2006/1881/annexes"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "Canned dietary foods for special medical purposes intended specifically for infants (excluding dried and powdered products)",
+          "source": "3.4.5 (original 1881/2006 text). Sources: https://www.legislation.gov.uk/eur/2006/1881/annexes"
+        }
+      ]
+    },
+    {
+      "slug": "codex-cxs-193",
+      "jurisdiction": "CODEX",
+      "name": "General Standard for Contaminants and Toxins in Food and Feed",
+      "reference": "CXS 193-1995 (last amended 2025)",
+      "body": "Codex Alimentarius Commission (Food and Agriculture Organization / World Health Organization)",
+      "year": 1995,
+      "status": "in-force",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2Fstandards%2FCXS+193-1995%2FCXS_193e.pdf",
+      "verified": true,
+      "retrieved": "2026-08-04",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formula, formula for special medical purposes intended for infants and follow-up formula",
+          "source": "table, entry 'Infant formula, formula for special medical purposes intended for infants an. Sources: https://www.fsc.go.jp/fsciis/attachedFile/download?retrievalId=kai20250924so1&fileId=580"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "as sold",
+          "scope": "Cereal-based foods for infants and young children (up to 12 months and 12-36 months)",
+          "source": "table, entry 'Cereal-based foods for infants and young children' (current/Rev.2024). Sources: https://www.fsc.go.jp/fsciis/attachedFile/download?retrievalId=kai20250924so1&fileId=580"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Ready-to-eat meals for infants and young children (up to 12 months and 12-36 months); corresponds to canned baby foods CXS 73-1981",
+          "source": "table, entry 'Ready-to-eat meals for infants and young children' (current/Rev.2024). Sources: https://www.fsc.go.jp/fsciis/attachedFile/download?retrievalId=kai20250924so1&fileId=580"
+        }
+      ]
+    },
+    {
+      "slug": "canada-contaminants",
+      "jurisdiction": "CA",
+      "name": "List of Contaminants and Other Adulterating Substances in Foods — Part 2: Maximum Levels (incorporated by reference into Division 15 of the Food and Drug Regulations, C.R.C., c. 870)",
+      "reference": "Incorporated by reference under B.15.001, Division 15, Food and Drug Regulations (C.R.C., c. 870); list first established 2016-05-04 (SOR/2016-74); relevant modifications NOM/ADM C-2020-2 (Lead) and NOM/ADM C-2022-2 (inorganic Arsenic)",
+      "body": "Health Canada, Bureau of Chemical Safety, Food Directorate; enforced by the Canadian Food Inspection Agency (CFIA)",
+      "year": 2016,
+      "status": "in-force",
+      "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/chemical-contaminants/maximum-levels-chemical-contaminants-foods.html",
+      "verified": false,
+      "retrieved": "2026-08-03",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formula (all types); two former limits — concentrated/powdered 0.15 ppm and ready-to-serve 0.08 ppm — consolidated into one limit eff",
+          "source": ""
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "Rice-based foods intended specifically for infants and young children (e.g., infant rice cereal)",
+          "source": "article/canada-establishes-new-maximum-levels-arsenic-certain-foods"
+        }
+      ]
+    },
+    {
+      "slug": "china-gb-2762",
+      "jurisdiction": "CN",
+      "name": "National Food Safety Standard — Maximum Levels of Contaminants in Foods",
+      "reference": "GB 2762-2022",
+      "body": "National Health Commission (NHC) and State Administration for Market Regulation (SAMR)",
+      "year": 2022,
+      "status": "superseded-2026-09-02",
+      "url": "https://gdgrain.gd.gov.cn/attachment/0/536/536928/4294867.pdf",
+      "verified": true,
+      "retrieved": "2022-06-30",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 80,
+          "basis": "product as placed on market",
+          "scope": "Formula food for infants and young children (powdered infant/follow-up/toddler formula)",
+          "source": "Table 1 (Lead), Foods for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Liquid (ready-to-feed) infant formula",
+          "source": "Table 1 (Lead), footnote c. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 200,
+          "basis": "as consumed",
+          "scope": "Complementary/supplementary foods for infants and young children",
+          "source": "table. Ref: Table 1 (Lead), Foods for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 150,
+          "basis": "product as placed on market",
+          "scope": "Formulas for special medical purposes (FSMP), products for children 1-10 years old (FSMP for infants excluded from this row)",
+          "source": "Table 1 (Lead), Formulas for special medical purposes rows. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 500,
+          "basis": "product as placed on market",
+          "scope": "Formulas for special medical purposes (FSMP), products for children over 10 years old (FSMP for infants excluded)",
+          "source": "Table 1 (Lead), Formulas for special medical purposes rows. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 500,
+          "basis": "product as placed on market",
+          "scope": "Complementary food supplement (辅食营养补充品)",
+          "source": "Table 1 (Lead), Foods for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 60,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based complementary foods for infants and young children",
+          "source": "Table 2 (Cadmium), Foods for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "tHg",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "Canned complementary foods for infants and young children (no methylmercury limit set for this category)",
+          "source": "Table 3 (Mercury), total-mercury column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 200,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based complementary foods for infants and young children, excluding products with added algae",
+          "source": "Table 4 (Arsenic), inorganic-arsenic column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 300,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based complementary foods for infants and young children — products with added algae",
+          "source": "Table 4 (Arsenic), inorganic-arsenic column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "Canned complementary foods for infants and young children, excluding products made from aquatic products and animal liver",
+          "source": "Table 4 (Arsenic), inorganic-arsenic column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 300,
+          "basis": "product as placed on market",
+          "scope": "Canned complementary foods for infants and young children — products made from aquatic products and animal liver",
+          "source": "Table 4 (Arsenic), inorganic-arsenic column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "tAs",
+          "value_ug_kg": 500,
+          "basis": "product as placed on market",
+          "scope": "Complementary food supplement (辅食营养补充品)",
+          "source": "Table 4 (Arsenic), total-arsenic column, Foods intended for special dietary uses. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "Formula foods and complementary foods for infants and young children, packaged in tinplate (tinned-plate-sheet) containers only",
+          "source": "table footnote restricts the whole table to 'foods packaged in containers of tinned plate sheet'. Ref: Table 5 (Tin), footnote a. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "tAs",
+          "value_ug_kg": 500,
+          "basis": "product as placed on market",
+          "scope": "Milk powder and modified milk powder (general dairy category, distinct from infant formula)",
+          "source": "Table 4 (Arsenic), total-arsenic column, Milk and milk products. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Cr-total",
+          "value_ug_kg": 2000,
+          "basis": "product as placed on market",
+          "scope": "Milk powder and modified milk powder (general dairy category, distinct from infant formula); standard sets no hexavalent-chromium (Cr-VI) li",
+          "source": "Table 7 (Chromium), Milk and milk products. Sources: https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 150,
+          "basis": "product as placed on market",
+          "scope": "Formulas for special medical purposes (excl. infant FSMP), products for 1-10 year olds",
+          "source": "Table 1 (lead), 0.15 mg/kg calculated as solid product. PRIMARY (China_GB2762-2022_English_MAST.pdf, Table 1 cont., p.6). Ingested 2026-08-03."
+        }
+      ]
+    },
+    {
+      "slug": "india-fssai",
+      "jurisdiction": "IN",
+      "name": "Food Safety and Standards (Contaminants, Toxins and Residues) Regulations, 2011 — consolidated Compendium, Version IX",
+      "reference": "FSS (Contaminants, Toxins and Residues) Regulations, 2011, regulation 2.1 (Metal Contaminants); consolidated Compendium version IX dated 03.02.2026",
+      "body": "Food Safety and Standards Authority of India (FSSAI), Ministry of Health and Family Welfare",
+      "year": 2011,
+      "status": "in-force",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Contaminants_Regulations_03_02_2026_IX.pdf",
+      "verified": true,
+      "retrieved": "2026-08-04",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 200,
+          "basis": "as consumed",
+          "scope": "Infant Milk substitute and Infant foods",
+          "source": "Regulation 2.1.1(2), Metal Contaminants Table, item 1 (Lead), entry (ic). Sources: https://upload.indiacode.nic.in/showfile?actid=AC_CEN_39_65_00002_200634_1517807326101&type=regulation&filename=5.FSS+%28Contaminants%2C+Toxins+and+Residues%29+Regulation%2C+2011.pdf"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Infant formula (ready to use)",
+          "source": "Regulation 2.1.1(2), Metal Contaminants Table, item 1 (Lead), Codex-aligned 'Other foods' block (Version-II, 18.08.2017). Sources: https://upload.indiacode.nic.in/showfile?actid=AC_CEN_39_65_00002_200634_1517807326101&type=regulation&file FLAG 2026-08-03: NOT found in the FSSAI 2011 primary (which sets Infant Milk substitute/Infant foods Pb = 200, as-sold). This 20 (ready-to-use) is likely a later FSSAI amendment"
+        },
+        {
+          "analyte": "tAs",
+          "value_ug_kg": 50,
+          "basis": "as consumed",
+          "scope": "Infant Milk substitute and Infant foods",
+          "source": "Regulation 2.1.1(2), Metal Contaminants Table, item 3 (Arsenic). Sources: https://upload.indiacode.nic.in/showfile?actid=AC_CEN_39_65_00002_200634_1517807326101&type=regulation&filename=5.FSS+%28Contaminants%2C+Toxins+and+Residues%29+Regulation%2C+2011.pdf"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 100,
+          "basis": "as consumed",
+          "scope": "Infant Milk substitute and Infant foods",
+          "source": "Regulation 2.1.1(2), Metal Contaminants Table, item 6 (Cadmium), entry (i). Sources: https://upload.indiacode.nic.in/showfile?actid=AC_CEN_39_65_00002_200634_1517807326101&type=regulation&filename=5.FSS+%28Contaminants%2C+Toxins+and+Residues%29+Regulation%2C+2011.pdf"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 5000,
+          "basis": "as sold",
+          "scope": "Infant Milk substitute and Infant foods",
+          "source": "Regulation 2.1.1(2), Metal Contaminants Table, item 4 (Tin), entry (i-b). Sources: https://upload.indiacode.nic.in/showfile?actid=AC_CEN_39_65_00002_200634_1517807326101&type=regulation&filename=5.FSS+%28Contaminants%2C+Toxins+and+Residues%29+Regulation%2C+2011.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "brazil-anvisa",
+      "jurisdiction": "BR",
+      "name": "Resolução da Diretoria Colegiada (RDC) nº 722, de 1º de julho de 2022 (general principles, scope and analytical methods for maximum tolerated limits — LMT — of contaminants in food; revokes RDC nº 487/2021, which had replaced RDC nº 42/2013); numeric LMT tables set by the companion Instrução Normativa (IN) nº 160, de 1º de julho de 2022 (which itself consolidated and revoked IN nº 88/2021, IN nº 115/2021 and IN nº 152/2022), as amended by IN nº 351, de 18 de março de 2025",
+      "reference": "RDC nº 722/2022 (DOU nº 126, 6 jul. 2022, Seção 1); IN nº 160/2022 (Anexo I — metais); IN nº 351/2025 (altera Anexo I da IN 160/2022); base Mercosul: MERCOSUL/GMC/RES. Nº 12/11 as amended by Res. GMC Nº 18/21",
+      "body": "Agência Nacional de Vigilância Sanitária (ANVISA), Ministério da Saúde",
+      "year": 2022,
+      "status": "in-force",
+      "url": "https://www.fukumaadvogados.com.br/wp-content/uploads/2022/07/RDC-No-722-DE-01.07.2022-.pdf",
+      "verified": true,
+      "retrieved": "2022-07-06",
+      "infant_limits": [
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 150,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based foods for infant/young-child feeding (alimentos à base de cereais para alimentação infantil)",
+          "source": "Anexo I, item 1.1 (Arsênio), cereal-based infant foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 150,
+          "basis": "product as placed on market",
+          "scope": "Transition (weaning) foods for infants and young children (alimentos de transição)",
+          "source": "Anexo I, item 1.1 (Arsênio), transition foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Pediatric formula for enteral nutrition (fórmula pediátrica para nutrição enteral)",
+          "source": "Anexo I, item 1.1 (Arsênio), pediatric enteral formula row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Nutrient formulas for high-risk newborns (fórmulas de nutrientes para recém-nascidos de alto risco)",
+          "source": "Anexo I, item 1.1 (Arsênio), high-risk newborn formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Follow-up / follow-on infant formulas (fórmulas infantis de seguimento)",
+          "source": "Anexo I, item 1.1 (Arsênio), follow-up formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Infant formulas for special dietary/dietotherapeutic purposes (necessidades dietoterápicas específicas)",
+          "source": "Anexo I, item 1.1 (Arsênio), special-dietary infant formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Infant formulas for infants / starter (fórmulas infantis para lactentes)",
+          "source": "Anexo I, item 1.1 (Arsênio), infant formulas for lactentes row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Other foods specially formulated for infants and young children (outros alimentos especialmente formulados)",
+          "source": "Anexo I, item 1.1 (Arsênio), other specially-formulated infant foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 50,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based foods for infant/young-child feeding (alimentos à base de cereais)",
+          "source": "Anexo I, item 1.2 (Cádmio), cereal-based infant foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "Transition (weaning) foods for infants and young children (alimentos de transição)",
+          "source": "Anexo I, item 1.2 (Cádmio), transition foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Pediatric formula for enteral nutrition (fórmula pediátrica para nutrição enteral)",
+          "source": "Anexo I, item 1.2 (Cádmio), pediatric enteral formula row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Nutrient formulas for high-risk newborns (fórmulas de nutrientes para recém-nascidos de alto risco)",
+          "source": "Anexo I, item 1.2 (Cádmio), high-risk newborn formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Follow-up / follow-on infant formulas (fórmulas infantis de seguimento)",
+          "source": "Anexo I, item 1.2 (Cádmio), follow-up formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formulas for special dietary/dietotherapeutic purposes (necessidades dietoterápicas específicas)",
+          "source": "Anexo I, item 1.2 (Cádmio), special-dietary infant formulas row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formulas for infants / starter (fórmulas infantis para lactentes)",
+          "source": "Anexo I, item 1.2 (Cádmio), infant formulas for lactentes row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Cd",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Other foods specially formulated for infants and young children (outros alimentos especialmente formulados)",
+          "source": "Anexo I, item 1.2 (Cádmio), other specially-formulated infant foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "Cereal-based foods for infant/young-child feeding (alimentos à base de cereais)",
+          "source": "Anexo I, item 1.3 (Chumbo), cereal-based infant foods row — amended by IN 351/2025. Sources: https://legislacao.regoola.io/instrucao-normativa-in-no-351-de-18-de-marco-de-2025"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "Transition (weaning) foods for infants and young children (alimentos de transição)",
+          "source": "Anexo I, item 1.3 (Chumbo), transition foods row — amended by IN 351/2025. Sources: https://legislacao.regoola.io/instrucao-normativa-in-no-351-de-18-de-marco-de-2025"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Pediatric formula for enteral nutrition (fórmula pediátrica para nutrição enteral)",
+          "source": "Anexo I, item 1.3 (Chumbo), pediatric enteral formula row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Nutrient formulas for high-risk newborns (fórmulas de nutrientes para recém-nascidos de alto risco)",
+          "source": "Anexo I, item 1.3 (Chumbo), high-risk newborn formulas row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Follow-up / follow-on infant formulas (fórmulas infantis de seguimento)",
+          "source": "Anexo I, item 1.3 (Chumbo), follow-up formulas row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formulas for special dietary/dietotherapeutic purposes (necessidades dietoterápicas específicas)",
+          "source": "Anexo I, item 1.3 (Chumbo), special-dietary infant formulas row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formulas for infants / starter (fórmulas infantis para lactentes)",
+          "source": "Anexo I, item 1.3 (Chumbo), infant formulas for lactentes row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Other foods specially formulated for infants and young children (outros alimentos especialmente formulados)",
+          "source": "Anexo I, item 1.3 (Chumbo), other specially-formulated infant foods row (not amended by IN 351/2025). Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        },
+        {
+          "analyte": "Sn",
+          "value_ug_kg": 50000,
+          "basis": "product as placed on market",
+          "scope": "Canned infant foods (alimentos infantis enlatados)",
+          "source": "Anexo I, item 1.7 (Estanho), canned infant foods row. Sources: https://www.legisweb.com.br/legislacao/?id=433607"
+        }
+      ]
+    },
+    {
+      "slug": "gso-193",
+      "jurisdiction": "GSO",
+      "name": "GSO 193:2021 — Gulf Technical Regulation: Contaminants and toxins in food and feed (Edition 1, 01/07/2021)",
+      "reference": "GSO 193:2021",
+      "body": "GCC Standardization Organization (GSO)",
+      "year": 2021,
+      "status": "in-force",
+      "url": "https://www.gso.org.sa/store/standards/GSO:781074/GSO%20193:2021?lang=en",
+      "verified": true,
+      "retrieved": "2026-08-04",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "as consumed",
+          "scope": "Infant formula, formula for special medical purposes intended for infants, and follow-up formula (single ML; no powder/liquid or cow-milk/so",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "slug": "au-nz-fsanz",
+      "jurisdiction": "AU-NZ",
+      "name": "Australia New Zealand Food Standards Code – Standard 1.4.1 – Contaminants and Natural Toxicants, and Schedule 19 – Maximum Levels of Contaminants and Natural Toxicants",
+      "reference": "Standard 1.4.1: FRLI F2015L00408 (current compilation F2022C00972, No.2); Schedule 19: FRLI F2015L00454 (current compilation F2024C00908, No.6, up to Amendment No. 231)",
+      "body": "Food Standards Australia New Zealand (FSANZ); Standard made under the Food Standards Australia New Zealand Act 1991 (Cth); administered by the Department of Health, Disability and Ageing",
+      "year": 2015,
+      "status": "in-force",
+      "url": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/pdf",
+      "verified": true,
+      "retrieved": "2024-09-13",
+      "infant_limits": [
+        {
+          "analyte": "Al",
+          "value_ug_kg": 500,
+          "basis": "portion ordinarily consumed",
+          "scope": "infant formula, follow-on formula, and special medical purpose product for infants other than preterm-infant products",
+          "source": ""
+        },
+        {
+          "analyte": "Al",
+          "value_ug_kg": 1000,
+          "basis": "portion ordinarily consumed",
+          "scope": "soy-based infant formula products",
+          "source": ""
+        },
+        {
+          "analyte": "tAs",
+          "value_ug_kg": 1000,
+          "basis": "portion ordinarily consumed",
+          "scope": "cereal grains and milled cereal products except sweet corn",
+          "source": ""
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "portion ordinarily consumed",
+          "scope": "infant formula products",
+          "source": ""
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 200,
+          "basis": "portion ordinarily consumed",
+          "scope": "cereals except sweet corn, pulses, and legumes",
+          "source": ""
+        }
+      ]
+    },
+    {
+      "slug": "us-fda-c2z",
+      "jurisdiction": "US",
+      "name": "Guidance for Industry: Action Level for Inorganic Arsenic in Rice Cereals for Infants",
+      "reference": "FDA-2016-D-1099",
+      "body": "U.S. Food and Drug Administration (FDA), Human Foods Program / Center for Food Safety and Applied Nutrition",
+      "year": 2020,
+      "status": "guidance",
+      "url": "https://www.fda.gov/media/97234/download",
+      "verified": true,
+      "retrieved": "2020-08-03",
+      "infant_limits": [
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "dry infant cereal",
+          "scope": "dry infant cereals for children under 2",
+          "source": "PRIMARY-CONFIRMED 2026-08-03 vs official document."
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "as sold infant rice cereal",
+          "scope": "all types of infant rice cereals",
+          "source": "PRIMARY-CONFIRMED 2026-08-03 vs official document."
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 10,
+          "basis": "product as placed on market",
+          "scope": "Processed food packaged for babies and young children <2 yr: fruits, vegetables (excluding single-ingredient root vegetables), mixtures (gra",
+          "source": "PRIMARY-CONFIRMED 2026-08-03 vs official document."
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "product as placed on market",
+          "scope": "Processed food packaged for babies and young children <2 yr: single-ingredient root vegetables",
+          "source": "PRIMARY-CONFIRMED 2026-08-03 vs official document."
+        },
+        {
+          "analyte": "Pb",
+          "value_ug_kg": 20,
+          "basis": "as consumed",
+          "scope": "Processed food packaged for babies and young children <2 yr: dry infant cereals",
+          "source": "PRIMARY-CONFIRMED 2026-08-03 vs official document."
+        },
+        {
+          "analyte": "iAs",
+          "value_ug_kg": 100,
+          "basis": "product as placed on market",
+          "scope": "Rice cereals for infants (all types: white-rice, brown-rice, organic, conventional)",
+          "source": "register.gov/documents/2020/08/06/2020-17169/inorganic-arsenic-in-rice-cereals-for-infants-action-level-guidance-for-indu"
+        }
+      ]
+    }
+  ]
+}
