@@ -1,0 +1,15 @@
+{
+  "product_slug": "seaweed-kelp-foods",
+  "current_version": "1.0",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2026-08-07",
+      "status": "current",
+      "summary": "Initial publication. Government-limit standard (Method v2.0) for dried seaweed foods, stated as sold (dried). Ceilings are the strictest dried-seaweed sovereign maxima (Israel FCS-2016, Thailand, AU/NZ). Basis confirmed as-sold dried by adversarial audit (fresh-seaweed limits govern a different product form).",
+      "pdf": null,
+      "doi": null,
+      "permalink": "/standards/seaweed-kelp-foods"
+    }
+  ]
+}

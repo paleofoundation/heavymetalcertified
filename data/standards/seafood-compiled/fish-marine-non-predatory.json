@@ -1,0 +1,338 @@
+{
+  "slug": "fish-marine-non-predatory",
+  "name": "Marine non-predatory fish (sardine, anchovy, salmon, cod, herring, mackerel; fillet/muscle meat, fresh or frozen)",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 200,
+        "value_exact": 200,
+        "binding_jurisdiction": "FJ",
+        "binding_id": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200",
+        "basis_note": "face value",
+        "per_country": {
+          "FJ": {
+            "value": 200,
+            "converted": true,
+            "id": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200"
+          },
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_pb_fish_muscle_300"
+          },
+          "IN": {
+            "value": 300,
+            "converted": true,
+            "id": "in_fssai2016_pb_046_fish_300"
+          },
+          "GSO": {
+            "value": 300,
+            "converted": true,
+            "id": "gso193_2021_pb_fish_300"
+          },
+          "CR": {
+            "value": 300,
+            "converted": true,
+            "id": "cr_rtcr409_2008_pb_fish_general_300"
+          },
+          "GY": {
+            "value": 300,
+            "converted": true,
+            "id": "gy2023_pb_fish_general_ppm_300"
+          },
+          "PA": {
+            "value": 300,
+            "converted": true,
+            "id": "pa_res368_2009_pb_fish_300"
+          },
+          "TH": {
+            "value": 300,
+            "converted": true,
+            "id": "th_moph414_2020_pb_fish_300"
+          },
+          "PY": {
+            "value": 300,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_pb_300"
+          },
+          "PH": {
+            "value": 300,
+            "converted": true,
+            "id": "ph_pns194_2017_fish_pb_300"
+          },
+          "IL": {
+            "value": 300,
+            "converted": true,
+            "id": "il_fcs2016_pb_10_fish_and_fish_products_300"
+          },
+          "MERCOSUR": {
+            "value": 300,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_pb_300"
+          },
+          "VN": {
+            "value": 300,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_fish-fillets_300"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_pb_fish_500"
+          },
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom242_pb_fish_crustaceans_500"
+          },
+          "TT": {
+            "value": 2000,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_fish_fishery_products_pb_2000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu20251891_ias_fish_other_100",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": true,
+            "id": "eu20251891_ias_fish_other_100"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "PY",
+        "binding_id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_9_fish_and_fish_products_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_tas_1000"
+          },
+          "AU-NZ": {
+            "value": 2000,
+            "converted": true,
+            "id": "aunz_sch19_tas_fish_2000"
+          },
+          "IN": {
+            "value": 76000,
+            "converted": true,
+            "id": "in_fssai2016_tas_012_fish_and_crustaceans_76000"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 300,
+        "value_exact": 300,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_hg_fish_low_300",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_hg_fish_low_300"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_hg_fish_other_500"
+          },
+          "CR": {
+            "value": 500,
+            "converted": true,
+            "id": "cr_rtcr409_2008_thg_fish_general_500"
+          },
+          "GY": {
+            "value": 500,
+            "converted": true,
+            "id": "gy2023_thg_fish_general_ppm_500"
+          },
+          "PA": {
+            "value": 500,
+            "converted": true,
+            "id": "pa_res368_2009_thg_fishery_products_general_500"
+          },
+          "SG": {
+            "value": 500,
+            "converted": true,
+            "id": "sg_foodregs_2026_other_fish_fish_products_thg_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_except_predators_thg_500"
+          },
+          "IL": {
+            "value": 500,
+            "converted": true,
+            "id": "il_fcs2016_thg_9_fish_and_fish_products_except_listed_categories_500"
+          },
+          "FJ": {
+            "value": 500,
+            "converted": true,
+            "id": "fj_fsr2009_thg_002_all_other_species_of_fish_other_than_those_described_in_section_16_abo_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_except_predators_thg_500"
+          },
+          "UY": {
+            "value": 500,
+            "converted": true,
+            "id": "uy_rbn_thg_fish_muscle_0_5ppm"
+          },
+          "VN": {
+            "value": 500,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_thg_aquatic-products_500"
+          },
+          "GSO": {
+            "value": 1000,
+            "converted": true,
+            "id": "gso193_2021_thg_fishery_products_and_muscle_meat_of_fish_with_exception_mentioned_crusta_1000"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "MX",
+        "binding_id": "mx_nom242_mehg_other_500",
+        "basis_note": "face value",
+        "per_country": {
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom242_mehg_other_500"
+          },
+          "PH": {
+            "value": 500,
+            "converted": true,
+            "id": "ph_pns194_2017_fish_mehg_500"
+          },
+          "TT": {
+            "value": 500,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_fish_except_predatory_mehg_500"
+          },
+          "VN": {
+            "value": 500,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_mehg_fish-excluding-carnivorous-fish_500"
+          },
+          "TH": {
+            "value": 1000,
+            "converted": true,
+            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "GSO",
+        "binding_id": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50",
+        "basis_note": "face value",
+        "per_country": {
+          "GSO": {
+            "value": 50,
+            "converted": true,
+            "id": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50"
+          },
+          "CR": {
+            "value": 50,
+            "converted": true,
+            "id": "cr_rtcr409_2008_cd_fish_general_50"
+          },
+          "GY": {
+            "value": 50,
+            "converted": true,
+            "id": "gy2023_cd_fish_general_ppm_50"
+          },
+          "PA": {
+            "value": 50,
+            "converted": true,
+            "id": "pa_res368_2009_cd_fish_general_50"
+          },
+          "PY": {
+            "value": 50,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_other_cd_50"
+          },
+          "IL": {
+            "value": 50,
+            "converted": true,
+            "id": "il_fcs2016_cd_9_fish_and_fish_products_except_listed_categories_50"
+          },
+          "FJ": {
+            "value": 50,
+            "converted": true,
+            "id": "fj_fsr2009_cd_002_muscle_meat_of_fish_excluding_those_listed_below_50"
+          },
+          "MERCOSUR": {
+            "value": 50,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_other_cd_50"
+          },
+          "VN": {
+            "value": 50,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_cd_aquatic-products_50"
+          },
+          "IN": {
+            "value": 300,
+            "converted": true,
+            "id": "in_fssai2016_cd_016_fish_300"
+          },
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom242_cd_fishery_other_500"
+          },
+          "TH": {
+            "value": 1000,
+            "converted": true,
+            "id": "th_moph414_2020_cd_fish_1000"
+          }
+        }
+      },
+      "Sn": {
+        "type": "not_material",
+        "value": null,
+        "control": "canned-format gate: tin is regulated for seafood only as can/tinplate migration (MX 100000, CR/IN 200000 ug/kg, canned only); fresh/frozen fin-fish has no tin exposure pathway and no government sets a non-canned fish tin ML",
+        "reference_method": "ICP-MS total tin on the edible portion; applies only if the product is canned (routed to the canned-seafood subcategory)"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

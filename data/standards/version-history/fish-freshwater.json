@@ -1,0 +1,15 @@
+{
+  "product_slug": "fish-freshwater",
+  "current_version": "1.0",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2026-08-07",
+      "status": "current",
+      "summary": "Initial publication. Government-limit standard (Method v2.0) for freshwater finfish, as-consumed. Mercury bound to 300 (EU lower-mercury group, which lists trout) after adversarial audit corrected an initial 500.",
+      "pdf": null,
+      "doi": null,
+      "permalink": "/standards/fish-freshwater"
+    }
+  ]
+}

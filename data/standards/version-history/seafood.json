@@ -1,0 +1,20 @@
+{
+  "product_slug": "seafood",
+  "document_noun": "manual",
+  "current_version": "2026 web edition",
+  "concept_doi": null,
+  "_note": "Category-6 Seafood web edition; consolidated PDF + DOI pending Crossref deposit.",
+  "versions": [
+    {
+      "version": "2026 web edition",
+      "label": "2026 web edition",
+      "date": "2026-08-07",
+      "status": "current",
+      "doi": null,
+      "doi_pending": "pending (Crossref)",
+      "pdf": null,
+      "permalink": "/manuals/seafood",
+      "summary": "Initial publication of the seven-subcategory Seafood standard (marine predatory, marine non-predatory, freshwater, shellfish, cephalopods, seaweed & kelp foods, canned seafood) under the government-limit default (Method v2.0), with species-specific dual-mercury limits and adversarial-audit verification. Consolidated PDF in preparation; a DOI is minted on deposit."
+    }
+  ]
+}

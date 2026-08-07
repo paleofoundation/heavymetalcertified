@@ -65,10 +65,25 @@ for (const f of allMd) {
 // ---- 3. Firm-value integrity ------------------------------------------------
 if (fs.existsSync(CATALOG)) {
   const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"))
+  const stdDir0 = path.join(CONTENT, "standards")
+  // A catalog row SUPERSEDED by a hand-authored custom page (custom_page: true) is rendered by the
+  // deterministic government-limit renderer, not the catalog's gated firm-value template — its values
+  // are validated against the compiled records, not counted as catalog `data-firm-ppb` cells. Exclude
+  // its published cells from the firm-value expectation, or a stale catalog snapshot (e.g. the earlier
+  // partial-occurrence seafood rows) would report a phantom mismatch against the current custom pages.
+  const supersededByCustom = (slug) => {
+    const p = path.join(stdDir0, `${slug}.md`)
+    if (!fs.existsSync(p)) return false
+    const raw = fs.readFileSync(p, "utf8")
+    const end = raw.indexOf("\n---", 4)
+    return /\bcustom_page:\s*true/.test(end > 0 ? raw.slice(0, end) : raw)
+  }
   const publishedCells = catalog.rows.flatMap((r) =>
-    Object.entries(r.analytes || {})
-      .filter(([, a]) => a.status === "published")
-      .map(([k]) => `${r.product_slug}:${k}`),
+    supersededByCustom(r.product_slug)
+      ? []
+      : Object.entries(r.analytes || {})
+          .filter(([, a]) => a.status === "published")
+          .map(([k]) => `${r.product_slug}:${k}`),
   )
   // Count bold-firm ppb renders across standards pages.
   let renderedFirm = 0

@@ -74,10 +74,26 @@ const TH =
   "style=\"text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase\""
 const TD = 'style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7'
 
+// A catalog row is SUPERSEDED when a hand-authored custom page already exists for its slug
+// (frontmatter custom_page: true) — e.g. the government-limit seafood standards, which carry a
+// bespoke derivation the catalog template cannot render and whose numbers are current. The catalog
+// snapshot may still list the row from an earlier (partial-occurrence) methodology; the custom page
+// wins for BOTH the page file and the index listing, so this generator must not overwrite it nor
+// re-list a stale copy. The custom-page scan below (which reads firm_analytes from the page itself)
+// gives the superseded row its accurate index entry.
+const isSupersededByCustom = (slug) => {
+  const p = path.join(OUT_DIR, `${slug}.md`)
+  if (!fs.existsSync(p)) return false
+  const raw = fs.readFileSync(p, "utf8")
+  const end = raw.indexOf("\n---", 4)
+  return /\bcustom_page:\s*true/.test(end > 0 ? raw.slice(0, end) : raw)
+}
+
 // ---- per-row standards pages ----------------------------------------------
 let rowsWithFirm = 0
 let firmCells = 0
 for (const row of catalog.rows) {
+  if (isSupersededByCustom(row.product_slug)) continue
   const analytes = row.analytes || {}
   const published = Object.entries(analytes).filter(([, a]) => a.status === "published")
   const hasFirm = published.length > 0
@@ -261,6 +277,7 @@ const editionRows = publishedManuals.length
 // Subcategory groups: every locked row, grouped by real category, each linked.
 const byCat = {}
 for (const row of catalog.rows) {
+  if (isSupersededByCustom(row.product_slug)) continue // custom page re-lists it below with current data
   ;(byCat[row.vertical.category] ??= { name: row.vertical.category_name, rows: [] }).rows.push(row)
 }
 

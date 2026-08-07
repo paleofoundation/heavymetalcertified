@@ -1,0 +1,15 @@
+{
+  "product_slug": "shellfish",
+  "current_version": "1.0",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2026-08-07",
+      "status": "current",
+      "summary": "Initial publication. Government-limit standard (Method v2.0) for crustaceans and bivalve molluscs, as-consumed. Inorganic arsenic bound to the strictest EU 2025/1891 shellfish tier (100); cadmium to the strictest crustacean/bivalve ML (500). Cephalopods split to their own subcategory.",
+      "pdf": null,
+      "doi": null,
+      "permalink": "/standards/shellfish"
+    }
+  ]
+}

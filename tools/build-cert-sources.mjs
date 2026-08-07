@@ -13,14 +13,22 @@ import fs from "node:fs"
 import path from "node:path"
 
 const REPO = process.cwd()
-const COMPILED = path.join(REPO, "data/standards/cat1-compiled")
-const PAGES = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/cat1-pages.json"), "utf8"))
+const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
+// Category-driven when --pages is given (seafood and later categories); Cat-1 default otherwise.
+const PAGES_FILE = args.get("pages") || "data/standards/cat1-pages.json"
+const PAGES = JSON.parse(fs.readFileSync(path.join(REPO, PAGES_FILE), "utf8"))
+const META = PAGES._meta || null
+const COMPILED = path.join(REPO, "data/standards", META ? META.compiled_dir : "cat1-compiled")
 const STD_DIR = path.join(REPO, "content/standards")
+const REGDIR = path.join(REPO, "content/regulations")
 const BEGIN = "<!-- BEGIN: hmtc-sources -->"
 const END = "<!-- END: hmtc-sources -->"
 
-// jurisdiction -> regulation reference page + a short, recognizable citation + instrument type.
-const REG = {
+// jurisdiction -> regulation reference page slug + a short, recognizable citation + instrument type.
+// Superset across categories; a jurisdiction only appears in a page's table if its records reference it,
+// and its citation links only when the regulation page actually exists on disk (existsSync-gated below),
+// so no category can emit a broken link. A category may override entries via _meta.reg_overrides.
+const REG_BASE = {
   EU: { slug: "eu-2023-915", cite: "Commission Regulation (EU) 2023/915", year: 2023, type: "Maximum levels" },
   UK: { slug: "uk-1881-2006", cite: "Contaminants in Food (retained Reg. 1881/2006)", year: 2006, type: "Maximum levels" },
   CODEX: { slug: "codex-cxs-193", cite: "Codex General Standard CXS 193-1995", year: 1995, type: "Codex standard" },
@@ -31,13 +39,35 @@ const REG = {
   GSO: { slug: "gso-193", cite: "GSO 193 — Gulf Technical Regulation", year: 2021, type: "Maximum levels" },
   "AU-NZ": { slug: "au-nz-fsanz", cite: "FSANZ Food Standards Code — Schedule 19", year: 2015, type: "Maximum levels" },
   US: { slug: "us-fda-c2z", cite: "US FDA — Closer to Zero action levels", year: 2020, type: "Guidance action levels" },
+  // Seafood-set national instruments (regulation pages pending; citation renders as text until then).
+  CR: { slug: "costa-rica-rtcr-409", cite: "Costa Rica RTCR 409:2008 — Reglamento de límites de contaminantes", year: 2008, type: "Maximum levels" },
+  FJ: { slug: "fiji-fsr-2009", cite: "Fiji Food Safety Regulations", year: 2009, type: "Maximum levels" },
+  IL: { slug: "israel-fcs-2016", cite: "Israel Food Contaminants Standard (FCS)", year: 2016, type: "Maximum levels" },
+  MX: { slug: "mexico-nom-242", cite: "Mexico NOM-242-SSA1-2009", year: 2009, type: "Maximum levels" },
+  PY: { slug: "paraguay-decreto-1335", cite: "Paraguay Decreto 1335/2019", year: 2019, type: "Maximum levels" },
+  SG: { slug: "singapore-food-regs", cite: "Singapore Food Regulations", year: 2023, type: "Maximum levels" },
+  TH: { slug: "thailand-moph-414", cite: "Thailand MOPH Notification No. 414", year: 2020, type: "Maximum levels" },
+  VN: { slug: "vietnam-qcvn-8-2", cite: "Vietnam QCVN 8-2:2011/BYT", year: 2011, type: "Maximum levels" },
+  PA: { slug: "panama-res-368", cite: "Panama Resolución 368/2009", year: 2009, type: "Maximum levels" },
+  PH: { slug: "philippines-pns-194", cite: "Philippines PNS/BAFS 194:2017", year: 2017, type: "Maximum levels" },
+  TT: { slug: "trinidad-food-drugs", cite: "Trinidad & Tobago Food and Drugs Regulations", year: 2007, type: "Maximum levels" },
+  UY: { slug: "uruguay-rbn", cite: "Uruguay Reglamento Bromatológico Nacional", year: 1994, type: "Maximum levels" },
+  GY: { slug: "guyana-fisheries-2023", cite: "Guyana Fisheries Products Regulations", year: 2023, type: "Maximum levels" },
+  MA: { slug: "morocco-arrete-2410-22", cite: "Morocco Arrêté 2410-22", year: 2022, type: "Maximum levels" },
+  MERCOSUR: { slug: "mercosur-gmc-12-2011", cite: "MERCOSUR GMC Resolución 12/2011", year: 2011, type: "Maximum levels" },
+  EC: { slug: "ecuador-nte-inen-184", cite: "Ecuador NTE INEN 184", year: 2013, type: "Maximum levels" },
 }
-const JUR_ORDER = ["EU", "UK", "CODEX", "CA", "CN", "IN", "BR", "GSO", "AU-NZ", "US"]
-const ANALYTE_NAME = { Pb: "lead", iAs: "inorganic arsenic", tHg: "mercury", Cd: "cadmium", Cr: "total chromium", Ni: "nickel", Sn: "tin", Al: "aluminium" }
-const PANEL = ["Pb", "iAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
+const REG = { ...REG_BASE, ...(META && META.reg_overrides ? META.reg_overrides : {}) }
+const JUR_ORDER_BASE = ["EU", "UK", "CODEX", "CA", "CN", "IN", "BR", "GSO", "AU-NZ", "US"]
+// Any jurisdiction present in REG but not in the base order appends alphabetically by key.
+const JUR_ORDER = [...JUR_ORDER_BASE, ...Object.keys(REG).filter((j) => !JUR_ORDER_BASE.includes(j)).sort()]
+const ANALYTE_NAME = { Pb: "lead", iAs: "inorganic arsenic", tAs: "total arsenic", tHg: "total mercury", MeHg: "methylmercury", Cd: "cadmium", Cr: "total chromium", Ni: "nickel", Sn: "tin", Al: "aluminium" }
+const PANEL = META ? META.panel : ["Pb", "iAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
 
 function pagesToRender() {
-  const out = [{ slug: "infant-formula-powder", variants: [{ record: "infant-formula-powder", variant: "cow" }, { record: "infant-formula-powder", variant: "soy" }] }]
+  // Cat-1 injects the deployed formula-powder row (not in cat1-pages.json); category-driven
+  // pages files list every page explicitly, so no injection.
+  const out = META ? [] : [{ slug: "infant-formula-powder", variants: [{ record: "infant-formula-powder", variant: "cow" }, { record: "infant-formula-powder", variant: "soy" }] }]
   for (const p of PAGES.pages) out.push({ slug: p.slug, variants: p.variants })
   return out
 }
@@ -55,7 +85,7 @@ function sourcesFor(page) {
   }
   for (const v of page.variants) {
     const rec = JSON.parse(fs.readFileSync(path.join(COMPILED, `${v.record}.json`), "utf8"))
-    const cells = rec.variants[v.variant]
+    const cells = rec.variants[v.variant] || rec.variants[Object.keys(rec.variants)[0]]
     for (const a of PANEL) {
       const c = cells[a]
       if (!c) continue
@@ -109,7 +139,11 @@ function sourcesBlock(used) {
   const rows = jurs
     .map((j, i) => {
       const r = REG[j]
-      return `| ${i + 1} | [${r.cite}](/regulations/${r.slug}) | ${r.year} | ${r.type} | ${roleText(used.get(j))} |`
+      // Link the citation only when its regulation page exists; otherwise render the citation as
+      // plain text (no broken link). Seafood-set national instruments have no page yet.
+      const hasPage = fs.existsSync(path.join(REGDIR, `${r.slug}.md`))
+      const citeCell = hasPage ? `[${r.cite}](/regulations/${r.slug})` : r.cite
+      return `| ${i + 1} | ${citeCell} | ${r.year} | ${r.type} | ${roleText(used.get(j))} |`
     })
     .join("\n")
   return `${BEGIN}

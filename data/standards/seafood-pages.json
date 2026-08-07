@@ -1,0 +1,128 @@
+{
+  "_doc": "Per-page metadata for the Category-6 (Seafood) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/seafood-compiled/<record>.json (deterministic; no authored values). This file carries display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 6,
+    "category_name": "Seafood",
+    "volume_name": "Seafood",
+    "panel": ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Sn"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Sn"],
+    "tier_footnote": "Mercury is limited in both forms: total mercury (tHg) and methylmercury (MeHg) are separate ceilings that must both be met. Total arsenic (tAs) operates as a reflex screen to inorganic-arsenic (iAs) speciation, since most arsenic in seafood is non-toxic organic arsenobetaine. Tin (Sn) is material only for canned product, where it migrates from the can; for non-canned seafood it is controlled by screen, not limited.",
+    "reconstitution_note": false,
+    "compiled_dir": "seafood-compiled",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-07",
+    "default_version": "1.0 (2026-08-07)",
+    "reg_overrides": {
+      "EU": { "slug": "eu-2023-915", "cite": "Commission Regulation (EU) 2023/915 and (EU) 2025/1891", "year": 2023, "type": "Maximum levels" }
+    },
+    "manual_slug": "seafood",
+    "manual_method_note": "Seafood limits are taken at face value in each product&rsquo;s native basis; there is no reconstitution conversion. Mercury is limited in both forms &mdash; total mercury (Hg) and methylmercury (MeHg) are separate ceilings, set to the species-specific tier each government assigns (predatory fish carry the higher ceiling, lower-trophic species the lower). Tier&nbsp;1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier&nbsp;2 (tAs, Sn) carry the program&rsquo;s 150% transitional allowance. Total arsenic operates as a reflex screen to inorganic-arsenic speciation. Tin is material only for canned product, where it migrates from the can; for non-canned seafood it is controlled by screen, not assigned an invented number."
+  },
+  "pages": [
+    {
+      "slug": "fish-marine-predatory",
+      "name": "Marine predatory fish (tuna, swordfish, shark, king mackerel, marlin)",
+      "description": "The Heavy Metal Tested & Certified standard for marine predatory fish — tuna, swordfish, shark, king mackerel, marlin, billfish — stated as consumed (edible portion, wet weight). Predatory species carry the higher species-specific mercury ceiling every government sets for them; every limit is the strictest maximum level any credible government sets for the product, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/fish-marine-predatory",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Non-predatory fish standard", "href": "/standards/fish-marine-non-predatory" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-marine-predatory" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "fish-marine-predatory" }]
+    },
+    {
+      "slug": "fish-marine-non-predatory",
+      "name": "Marine non-predatory fish (sardine, anchovy, salmon, cod, herring, mackerel)",
+      "description": "The Heavy Metal Tested & Certified standard for marine non-predatory fish — sardine, anchovy, salmon, cod, herring, mackerel — as fillet or muscle meat, fresh or frozen, stated as consumed. These lower-trophic species carry the lower government mercury ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/fish-marine-non-predatory",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-marine-non-predatory" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "fish-marine-non-predatory" }]
+    },
+    {
+      "slug": "fish-freshwater",
+      "name": "Freshwater fish (tilapia, catfish, trout, carp)",
+      "description": "The Heavy Metal Tested & Certified standard for freshwater finfish — tilapia, catfish, trout, carp — stated as consumed. Trout is in the lower-mercury government group, which binds the subcategory mercury ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/fish-freshwater",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Marine non-predatory fish standard", "href": "/standards/fish-marine-non-predatory" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-freshwater" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "fish-freshwater" }]
+    },
+    {
+      "slug": "shellfish",
+      "name": "Shellfish (crustaceans and bivalve molluscs)",
+      "description": "The Heavy Metal Tested & Certified standard for shellfish — crustaceans (shrimp, crab, lobster) and bivalve molluscs (mussels, clams, oysters, scallops) — not canned, stated as consumed. Bivalves concentrate cadmium, and the cadmium ceiling reflects the strictest applicable government maximum; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/shellfish",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Cephalopods standard", "href": "/standards/cephalopods" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/shellfish" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "shellfish" }]
+    },
+    {
+      "slug": "cephalopods",
+      "name": "Cephalopods (octopus, squid, cuttlefish)",
+      "description": "The Heavy Metal Tested & Certified standard for cephalopods — octopus, squid, cuttlefish — not canned, stated as consumed. Cephalopods carry the strictest inorganic-arsenic ceiling in all of seafood (EU 2025/1891, 50 ppb); every limit is the strictest maximum level any credible government sets for the product, with a disclosed read-across for methylmercury where none regulates it.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/cephalopods",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Shellfish standard", "href": "/standards/shellfish" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/cephalopods" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "cephalopods" }]
+    },
+    {
+      "slug": "seaweed-kelp-foods",
+      "name": "Seaweed & kelp foods (nori, wakame, kombu, dulse)",
+      "description": "The Heavy Metal Tested & Certified standard for seaweed and kelp foods — nori, wakame, kombu, dulse — dried, stated as sold. Seaweed concentrates arsenic and heavy metals on drying, and the ceilings reflect the strictest government maximum for the dried product form; every limit is the strictest maximum level any credible government sets for dried seaweed.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/seaweed-kelp-foods",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/seaweed-kelp-foods" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "seaweed-kelp-foods" }]
+    },
+    {
+      "slug": "canned-seafood",
+      "name": "Canned seafood (canned tuna, canned fish)",
+      "description": "The Heavy Metal Tested & Certified standard for canned seafood — canned tuna and canned fish — stated as consumed. The metal ceilings are the general-fish government floor; the tin ceiling reflects the strictest canned-fishery maximum, because tin migrates from the can. A species-identified canned product (for example canned salmon) additionally meets its species subcategory where stricter.",
+      "version": "1.0 (2026-08-07)",
+      "hmi_link": "https://heavymetalindex.com/products/canned-seafood",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
+        { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/canned-seafood" }
+      ],
+      "variants": [{ "label": "all", "variant": "all", "record": "canned-seafood" }]
+    }
+  ]
+}

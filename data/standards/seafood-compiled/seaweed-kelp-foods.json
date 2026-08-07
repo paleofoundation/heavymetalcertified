@@ -1,0 +1,114 @@
+{
+  "slug": "seaweed-kelp-foods",
+  "name": "Seaweed / kelp foods (nori, wakame, kombu, dulse — dried, as sold)",
+  "native_basis": "as_sold",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 5000,
+        "value_exact": 5000,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_pb_8_1_dried_seaweed_5000",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 5000,
+            "converted": true,
+            "id": "il_fcs2016_pb_8_1_dried_seaweed_5000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "AU-NZ",
+        "binding_id": "aunz_sch19_ias_seaweed_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "AU-NZ": {
+            "value": 1000,
+            "converted": true,
+            "id": "aunz_sch19_ias_seaweed_1000"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_seaweed_ias_2000"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 5000,
+        "value_exact": 5000,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_tas_7_1_dried_seaweed_5000",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 5000,
+            "converted": true,
+            "id": "il_fcs2016_tas_7_1_dried_seaweed_5000"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 2500,
+        "value_exact": 2500,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_7_1_dried_seaweed_2500",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 2500,
+            "converted": true,
+            "id": "il_fcs2016_thg_7_1_dried_seaweed_2500"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "not_material",
+        "value": null,
+        "control": "Seaweed is a marine primary producer, not a predator; methylmercury does not biomagnify into algae, so MeHg is a negligible fraction of total mercury. Bounded by the tHg cell (Israel dried-seaweed tHg 2500): if tHg passes, MeHg is inherently far below any fish MeHg action level.",
+        "reference_method": "Total-mercury screen (EPA 7473 / ICP-MS); reflex MeHg speciation (GC-ICP-MS, e.g. EPA 3200 / DIN EN 16801) only on a tHg exceedance."
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 2000,
+        "value_exact": 2000,
+        "binding_jurisdiction": "TH",
+        "binding_id": "th_moph414_2020_cd_dried_seaweed_2000",
+        "basis_note": "face value",
+        "per_country": {
+          "TH": {
+            "value": 2000,
+            "converted": true,
+            "id": "th_moph414_2020_cd_dried_seaweed_2000"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_seaweed_cd_2000"
+          },
+          "IL": {
+            "value": 5000,
+            "converted": true,
+            "id": "il_fcs2016_cd_7_1_dried_seaweed_5000"
+          }
+        }
+      },
+      "Sn": {
+        "type": "not_material",
+        "value": null,
+        "control": "Tin is a can-migration analyte, not a matrix-accumulation analyte. Dried seaweed foods (nori, wakame, kombu, dulse) are sold in non-metal packaging; with no tinplate contact there is no tin source. Every government tin ML in the register is either canned-product-only or an 'any food' catch-all set for can migration.",
+        "reference_method": "Packaging control (non-tinplate); periodic ICP-MS tin verification on finished product."
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

@@ -1,0 +1,233 @@
+{
+  "slug": "cephalopods",
+  "name": "Cephalopods (octopus, squid, cuttlefish; not canned)",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 300,
+        "value_exact": 300,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_pb_10_3_octopus_and_squid_300",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 300,
+            "converted": true,
+            "id": "il_fcs2016_pb_10_3_octopus_and_squid_300"
+          },
+          "IN": {
+            "value": 1000,
+            "converted": true,
+            "id": "in_fssai2016_pb_063_cephalopods_1000"
+          },
+          "GSO": {
+            "value": 1000,
+            "converted": true,
+            "id": "gso193_2021_pb_cephalopods_1000"
+          },
+          "CR": {
+            "value": 1000,
+            "converted": true,
+            "id": "cr_rtcr409_2008_pb_cephalopods_1000"
+          },
+          "GY": {
+            "value": 1000,
+            "converted": true,
+            "id": "gy2023_pb_cephalopods_ppm_1000"
+          },
+          "PA": {
+            "value": 1000,
+            "converted": true,
+            "id": "pa_res368_2009_pb_cephalopods_1000"
+          },
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_pb_1000"
+          },
+          "FJ": {
+            "value": 1000,
+            "converted": true,
+            "id": "fj_fsr2009_pb_010_cephalopods_without_viscera_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_pb_1000"
+          },
+          "VN": {
+            "value": 1000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_cephalopod-mollusks-without-internal-organs_1000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu20251891_ias_cephalopods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 50,
+            "converted": true,
+            "id": "eu20251891_ias_cephalopods_50"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "PY",
+        "binding_id": "py_decreto1335_2019_cephalopod_molluscs_tas_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_tas_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_tas_1000"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 300,
+        "value_exact": 300,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_hg_fish_low_300",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_hg_fish_low_300"
+          },
+          "IN": {
+            "value": 500,
+            "converted": true,
+            "id": "in_fssai2016_thg_003_non_predatory_fish_crustaceans_cephalopods_molluscs_500"
+          },
+          "CR": {
+            "value": 500,
+            "converted": true,
+            "id": "cr_rtcr409_2008_thg_crust_ceph_bivalves_500"
+          },
+          "GY": {
+            "value": 500,
+            "converted": true,
+            "id": "gy2023_thg_cephalopods_ppm_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_thg_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_thg_500"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "mx_nom242_mehg_other_500",
+        "source_jurisdiction": "MX",
+        "label": "No government sets a cephalopod-specific methylmercury ML. Read across from the non-predatory / general fishery MeHg value (Mexico NOM-242, other fishery products, 500 ug/kg): cephalopods are not high-trophic mercury accumulators, so the non-predatory fish MeHg tier is the nearest defensible value. Comparator vs any direct cephalopod MeHg limit.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_cephalopods_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 1000,
+            "converted": true,
+            "id": "eu2023_cd_cephalopods_1000"
+          },
+          "CR": {
+            "value": 1000,
+            "converted": true,
+            "id": "cr_rtcr409_2008_cd_cephalopods_1000"
+          },
+          "GY": {
+            "value": 1000,
+            "converted": true,
+            "id": "gy2023_cd_cephalopods_ppm_1000"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_cd_9_3_shellfish_octopus_squid_and_cephalopods_1000"
+          },
+          "FJ": {
+            "value": 1000,
+            "converted": true,
+            "id": "fj_fsr2009_cd_005_cephalopods_without_viscera_1000"
+          },
+          "IN": {
+            "value": 2000,
+            "converted": true,
+            "id": "in_fssai2016_cd_018_cephalopods_2000"
+          },
+          "GSO": {
+            "value": 2000,
+            "converted": true,
+            "id": "gso193_2021_cd_cephalopods_2000"
+          },
+          "TH": {
+            "value": 2000,
+            "converted": true,
+            "id": "th_moph414_2020_cd_cephalopods_2000"
+          },
+          "PY": {
+            "value": 2000,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_cd_2000"
+          },
+          "PH": {
+            "value": 2000,
+            "converted": true,
+            "id": "ph_pns194_2017_cephalopods_cd_2000"
+          },
+          "MERCOSUR": {
+            "value": 2000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_cd_2000"
+          },
+          "VN": {
+            "value": 2000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_cd_cephalopod-mollusks-without-internal-organs_2000"
+          }
+        }
+      },
+      "Sn": {
+        "type": "not_material",
+        "value": null,
+        "control": "Tin is a can-migration analyte; not material for fresh/frozen cephalopods placed on market without a tinplate container. Every government Sn ML for fishery products is a canned-only limit. Reflex to the canned-seafood subcategory standard if the product is canned.",
+        "reference_method": "ICP-MS per EN 15763 / AOAC 2015.01; applies only if canned."
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}
