@@ -754,5 +754,75 @@
         "type": "Legislation"
       }
     ]
+  },
+  {
+    "slug": "the-prop-65-gap",
+    "series": "Brief 9",
+    "abstract_html": "<p>California is the one American jurisdiction that has written into law that these metals cause cancer or reproductive harm. Under Proposition 65 it lists lead, cadmium, inorganic arsenic, hexavalent chromium, and nickel — and then, as a right-to-know statute, sets no maximum level for any of them in food. For inorganic arsenic and nickel it adopts no oral safe-harbour at all. The federal government sets no food maximum level for most of them either, leaving the operative dietary references to European regulators. This briefing is precise about the space between naming a hazard and limiting it, because that space is where a certification does its job or fails to.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Proposition 65 List of Chemicals Known to the State to Cause Cancer or Reproductive Toxicity",
+        "meta_html": "California Office of Environmental Health Hazard Assessment (OEHHA), current list; lead, cadmium, inorganic arsenic compounds, hexavalent chromium, and nickel/nickel compounds all listed.",
+        "href": "https://oehha.ca.gov/proposition-65/proposition-65-list",
+        "type": "Government"
+      },
+      {
+        "n": 2,
+        "title": "Safe Drinking Water and Toxic Enforcement Act of 1986 (Proposition 65)",
+        "meta_html": "California Health & Safety Code §25249.5 et seq. A right-to-know warning statute; establishes a listing and warning obligation, not a food composition standard.",
+        "href": "",
+        "type": "Statute"
+      },
+      {
+        "n": 3,
+        "title": "Proposition 65 Safe Harbor Levels — No Significant Risk Levels and Maximum Allowable Dose Levels",
+        "meta_html": "OEHHA safe-harbour tables: lead oral MADL 0.5 µg/day and cancer NSRL 15 µg/day; cadmium oral MADL 4.1 µg/day; hexavalent chromium oral MADL 8.2 µg/day. Warning triggers in µg/day, not food maximum levels.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 4,
+        "title": "Nickel and Nickel Compounds — Proposition 65 Warnings Website fact sheet",
+        "meta_html": "OEHHA, February 2025. Listing scope and safe-harbour status; the only nickel safe-harbours are inhalation cancer NSRLs (Nickel Refinery Dust 0.8 µg/day, Nickel Subsulfide 0.4 µg/day). No oral safe-harbour for elemental nickel or nickel compounds.",
+        "href": "https://www.p65warnings.ca.gov/fact-sheets/nickel-and-nickel-compounds",
+        "type": "Government"
+      },
+      {
+        "n": 5,
+        "title": "Evidence on the Developmental and Reproductive Toxicity of Nickel and Nickel Compounds",
+        "meta_html": "OEHHA hazard-identification document, July 2018, underlying the soluble-nickel-compounds reproductive-toxicity listing effective 26 October 2018. Critical findings: reduced offspring viability and body weight from prenatal exposure.",
+        "href": "https://oehha.ca.gov/media/downloads/crnr/nihid072718.pdf",
+        "type": "Government"
+      },
+      {
+        "n": 6,
+        "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+        "meta_html": "European Commission, 2023 (consolidated). Binding food maximum levels for lead, cadmium, inorganic arsenic, and tin, including infant and child food categories.",
+        "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+        "type": "Regulation"
+      },
+      {
+        "n": 7,
+        "title": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
+        "meta_html": "European Commission, 2024. The EU's first binding nickel maximum levels in food; most entries apply from 1 July 2025, cereal limits from 1 July 2026.",
+        "href": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj",
+        "type": "Regulation"
+      },
+      {
+        "n": 8,
+        "title": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+        "meta_html": "EFSA Panel on Contaminants in the Food Chain (CONTAM), EFSA Journal 2020;18(11):6268. Chronic TDI 13 µg Ni/kg body weight/day; mean dietary exposure exceeds it, children most.",
+        "href": "https://doi.org/10.2903/j.efsa.2020.6268",
+        "type": "Government"
+      },
+      {
+        "n": 9,
+        "title": "Cadmium in food — Scientific Opinion of the Panel on Contaminants in the Food Chain",
+        "meta_html": "EFSA CONTAM Panel, EFSA Journal 2009;7(10):980. Tolerable weekly intake of 2.5 µg Cd/kg body weight; average dietary exposure at or near the TWI.",
+        "href": "",
+        "type": "Government"
+      }
+    ]
   }
 ]

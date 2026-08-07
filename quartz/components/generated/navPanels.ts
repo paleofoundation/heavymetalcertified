@@ -77,6 +77,35 @@ export const navPanels: NavPanel[] = [
     allLabel: "All 15 standards",
   },
   {
+    key: "analytes",
+    label: "Analytes",
+    panelLabel: "The analyte panel",
+    slug: "analytes",
+    blurb:
+      "Eight metals, ten analytes. Each page states, from the government and expert-body record and the occurrence data, why the metal is limited and why the program monitors it.",
+    groups: [
+      {
+        heading: "Tier 1 — zero-tolerance toxics",
+        children: [
+          { label: "Lead", slug: "analytes/lead" },
+          { label: "Cadmium", slug: "analytes/cadmium" },
+          { label: "Arsenic (iAs)", slug: "analytes/arsenic" },
+          { label: "Mercury (MeHg)", slug: "analytes/mercury" },
+        ],
+      },
+      {
+        heading: "Tier 2 — capped to the government limit",
+        children: [
+          { label: "Nickel", slug: "analytes/nickel" },
+          { label: "Tin", slug: "analytes/tin" },
+          { label: "Aluminum", slug: "analytes/aluminum" },
+          { label: "Chromium (Cr-VI)", slug: "analytes/chromium" },
+        ],
+      },
+    ],
+    allLabel: "All ten analytes",
+  },
+  {
     key: "manuals",
     label: "Manuals",
     panelLabel: "Program Manuals",
@@ -112,6 +141,7 @@ export const navPanels: NavPanel[] = [
         children: [
           { label: "What HMTc Is", slug: "briefings/hmtc-primer" },
           { label: "Four Metals Is No Longer Enough", slug: "briefings/brief-7-four-vs-eight" },
+          { label: "Named as a Hazard, Left Unlimited", slug: "briefings/the-prop-65-gap" },
           { label: "What Organic Doesn't Say", slug: "briefings/brief-3-what-organic-doesnt-say" },
           { label: "The Open Category", slug: "briefings/brief-2-open-category" },
         ],
@@ -133,7 +163,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
     ],
-    allLabel: "All 10 briefings",
+    allLabel: "All 11 briefings",
   },
   {
     key: "program",

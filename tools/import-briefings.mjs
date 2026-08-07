@@ -35,6 +35,7 @@ const MAP = {
   "brief-3-what-organic-doesnt-say": { title: "What Organic Doesn't Say", section: "Positioning" },
   "brief-5-retailer-as-anchor": { title: "The Retailer as Anchor", section: "Retailer" },
   "brief-6-premium-promise": { title: "The Premium Promise", section: "Positioning" },
+  "the-prop-65-gap": { title: "Named as a Hazard, Left Unlimited", section: "Scope & standards" },
 }
 
 // Parsed per-briefing metadata (abstract, references, series). Keyed by slug.
@@ -216,7 +217,9 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     "orcid: 0000-0002-2348-7259",
     fm.date ? `briefing_date: "${fm.date}"` : null,
     fm.date ? `updated: "${fm.date}"` : null,
-    "scholar_eligible: true",
+    // Scholar-eligible only when a PDF exists to be the citable artifact; a
+    // scholar-eligible page with no PDF emits a dangling citation_pdf_url.
+    `scholar_eligible: ${pdfRel ? "true" : "false"}`,
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
     "snapshot:",
     `  - { k: "Series number", v: "${seriesLabel}" }`,

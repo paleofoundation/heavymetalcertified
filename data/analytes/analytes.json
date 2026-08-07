@@ -9,6 +9,13 @@
       "species": "Total elemental lead",
       "thesis": "Lead is limited because its developmental neurotoxicity in young children has no demonstrated threshold — no agency can identify an intake or blood-lead level below which harm does not occur — so the governing frame is to minimize exposure as far as practicable, not to stay below a \"safe\" dose.",
       "toxicology_summary": "Lead is primarily a developmental neurotoxicant. EFSA (2010) identified developmental neurotoxicity in young children as the most sensitive critical endpoint, deriving a BMDL01 of 12 µg/L blood lead (dietary equivalent 0.50 µg/kg body weight per day), with cognitive deficits, behavioural change, and reduced IQ documented in cohort studies below that benchmark — the empirical basis for the \"no safe level\" position. Children are at materially higher risk than adults: they absorb 30–50% of ingested lead (versus 5–15% in adults), retain more of it, and are exposed during the developmental window for brain maturation. Lead accumulates in bone (half-life 10–30 years; roughly 90% of adult body burden) and mobilizes during pregnancy and lactation, delivering endogenous exposure to the fetus and nursing infant decades after intake. Secondary adult endpoints include cardiovascular effects (systolic blood pressure, BMDL01 36 µg/L) and renal effects (chronic kidney disease, BMDL10 15 µg/L). Developmental neurotoxicity remains the governing endpoint; the cardiovascular and renal reference points are supporting adult endpoints, not the basis of the limit.",
+      "toxicology_intro": "What the assessment bodies found when they examined lead, and why the governing frame is to minimize exposure rather than certify a product below a \"safe\" dose: the developmental endpoint that anchors regulation, the children and pregnancies it reaches, the carcinogenicity stated with route precision, and the unusual weight of agreement that no threshold exists.",
+      "toxicology": [
+        "The hazard that anchors dietary regulation of lead is developmental neurotoxicity in young children, and it behaves unlike almost any other food contaminant because no assessment body has been able to identify a threshold below which it does no harm. EFSA's 2010 CONTAM opinion selected developmental neurotoxicity as the most sensitive critical endpoint and derived a BMDL01 of 12 µg/L blood lead, corresponding to a dietary intake of roughly 0.50 µg/kg body weight per day; because cognitive deficits, behavioural change, and measurable IQ loss were documented in cohort studies at exposures below that benchmark, EFSA concluded it could not set a tolerable weekly intake that is health-protective. This is the empirical basis for the position, shared across the major bodies, that there is no safe level of lead for a developing child. The consequence for a certification programme is structural: the objective is not to keep a product under a reference dose that does not exist, but to drive the concentration in food as low as the supply chain can practicably reach.",
+        "The population lead reaches, and the reason a brand should treat it as a priority analyte, is defined by child and prenatal physiology. Children absorb 30 to 50 percent of the lead they ingest, against 5 to 15 percent in adults, and they take it in during the developmental window for brain maturation, so an identical concentration in food delivers a far larger internal dose to the population that can least tolerate it. Lead then accumulates in bone, with a half-life of 10 to 30 years and roughly 90 percent of the adult body burden held there, and that skeletal reservoir mobilizes during pregnancy and lactation, delivering endogenous lead across the placenta and into breast milk decades after the original exposure. The CDC's blood lead reference value of 3.5 µg/dL underscores the point: it is the 97.5th percentile of the US child distribution, a screening value that flags the most-exposed children, explicitly not a safe level, and adverse effects are established below 5 µg/dL, within the range where most US children already fall.",
+        "Lead is also a carcinogen, and stating how is a matter of credibility rather than emphasis. IARC classifies inorganic lead compounds as Group 2A, probably carcinogenic to humans, and organic lead compounds as Group 3; the US EPA classifies lead B2, a probable human carcinogen on animal evidence with inadequate human evidence. Crucially, neither body's food limits are cancer-driven. EPA declined to derive a quantitative cancer slope factor precisely because the neurodevelopmental endpoint dominates regulatory action, and EFSA's controlling reference point is the neurodevelopmental BMDL, not a cancer estimate. The honest framing is that lead's carcinogenicity is real and independently classified, but it is a supporting concern; the developmental neurotoxicity of low-dose oral exposure in children is what actually sets the ceilings, and a page that inflated the cancer basis to sell certification would misrepresent the record.",
+        "The most striking feature of the lead literature is the convergence on an absence. EFSA reports BMDLs without a tolerable weekly intake, JECFA withdrew its provisional tolerable weekly intake of 25 µg/kg body weight per week in 2011 on the finding that it was no longer health-protective, EPA's IRIS assessment derives no oral reference dose, and ATSDR sets no minimal risk levels, each for the same reason: the dose-response for developmental neurotoxicity has no identifiable threshold. Because no body will name a safe intake, the maximum levels in force are ALARA and technology-based ceilings rather than safety thresholds back-calculated from a reference dose. California's Proposition 65 sharpens the picture rather than softening it: lead is listed both as a carcinogen and as a reproductive and developmental toxicant, and unlike a right-to-know listing that sets no dietary number, Prop 65 carries an operative oral Maximum Allowable Dose Level of 0.5 µg/day for reproductive toxicity (and a 15 µg/day cancer No Significant Risk Level), a de-facto dietary labeling threshold that consumer products sold in California must respect. The science came first; the limits followed as minimize-exposure ceilings, and where a health-based safe dose might have appeared, every body left the space deliberately empty."
+      ],
       "why_limited": [
         {
           "agency": "EFSA (CONTAM Panel)",
@@ -69,6 +76,183 @@
       ],
       "how_regulated": "No regulator has set a health-based tolerable intake for lead — JECFA withdrew its PTWI, EFSA reports BMDLs without a TWI, EPA IRIS derives no oral RfD, and ATSDR sets no MRLs — so the maximum levels in force are ALARA/technology-based ceilings rather than safety thresholds derived from a reference dose. For infant and child foods the strictest in-force government maximum level governs each product: Commission Regulation (EU) 2023/915 sets 20 µg/kg for baby food and processed cereal-based food and for formula powder, and 10 µg/kg for liquid formula, on an as-placed-on-market basis (/regulations/eu-2023-915); Codex CXS 193 and FDA Closer to Zero sit near these values, with FDA's nonbinding baby-food action levels at 10 ppb (fruits, most vegetables, mixtures), 20 ppb (single-ingredient root vegetables), and 20 ppb (dry infant cereals) (/regulations/us-fda-c2z). Where no government regulates the exact product, the applicable value is read across from the nearest analogous government limit. The literature-native derivation and the full cross-jurisdiction table are maintained independently at the Index (https://heavymetalindex.com/metals/lead).",
       "hmtc_treatment": "HMTc classifies lead as a Tier 1 (zero-tolerance) toxic — one of the four metals (Pb, Cd, iAs, MeHg/tHg) with no established safe threshold — so it carries no 150% transitional allowance (that applies only to the Tier 2 metals Ni, Sn, Al, Cr-VI) and triggers no speciation reflex (those apply to arsenic, mercury, and chromium, not lead). Under Method v2.0 the Tier 1 lead limit is set as min(occurrence percentile, strictest government maximum level); in the published Infant and Child Foods standards it resolves to the EU 20 µg/kg maximum converted to the product's native as-sold basis (for example, teething biscuits and finger snacks). The program's regulatory hard-stop blocks certification of any product that violates an actual legal lead limit regardless of HMTc status, so the certified ceiling can only ever sit at or below every applicable sovereign limit.",
+      "occurrence": {
+        "intro": "How much lead food actually carries, and the ladder of action and reference values that a minimize-exposure regime is built on. The occurrence figures are drawn from a national total diet study; the complete occurrence corpus is maintained on the Heavy Metal Index.",
+        "tables": [
+          {
+            "caption": "Lead occurrence by food, US FDA Total Diet Study FY2018–2020, prepared-food (as-consumed) composite basis. Values are µg/kg (equivalent to ppb): the median (P50), the 95th percentile, and the single highest composite measured; nd marks a median below the reporting limit. These are population occurrence values, not safety thresholds or action levels. All-zero foods (most fruits, dairy, and plain meats) are omitted; whole milk is retained as a near-zero reference.",
+            "columns": [
+              "Food (FDA TDS)",
+              "Median P50 µg/kg",
+              "P95 µg/kg",
+              "Highest sample µg/kg"
+            ],
+            "mono": [
+              1,
+              2,
+              3
+            ],
+            "right": [
+              1,
+              2,
+              3
+            ],
+            "rows": [
+              [
+                "Raisins",
+                "7.8",
+                "15.2",
+                "16"
+              ],
+              [
+                "Bran cereal with raisins",
+                "5.2",
+                "14.9",
+                "16"
+              ],
+              [
+                "Chocolate cake with chocolate icing",
+                "7.8",
+                "13.7",
+                "16"
+              ],
+              [
+                "Cornbread, homemade",
+                "5.3",
+                "13.1",
+                "14"
+              ],
+              [
+                "Potato, baked with peel",
+                "nd",
+                "10.5",
+                "12"
+              ],
+              [
+                "Pickles, dill, cucumber",
+                "4.0",
+                "9.2",
+                "9.8"
+              ],
+              [
+                "Ham, cured, baked",
+                "nd",
+                "7.7",
+                "9.3"
+              ],
+              [
+                "Bread, whole wheat",
+                "4.3",
+                "6.7",
+                "7.3"
+              ],
+              [
+                "Peanut butter, creamy",
+                "5.6",
+                "6.1",
+                "6.1"
+              ],
+              [
+                "Bread, white, enriched",
+                "nd",
+                "5.6",
+                "23"
+              ],
+              [
+                "Collards, boiled",
+                "nd",
+                "5.3",
+                "5.9"
+              ],
+              [
+                "Apple juice, bottled",
+                "1.5",
+                "2.6",
+                "2.7"
+              ],
+              [
+                "Milk, whole, fluid",
+                "nd",
+                "nd",
+                "nd"
+              ]
+            ]
+          },
+          {
+            "caption": "The lead action and reference values that define the minimize-exposure regime. These are regulatory action levels, dietary interim reference levels, binding maximum levels, and warning thresholds, not occurrence data and not health-based safe intakes (no body has set a tolerable intake for lead). FDA action levels are nonbinding but enforcement-relevant.",
+            "columns": [
+              "Reference / action level",
+              "Value",
+              "What it represents"
+            ],
+            "mono": [
+              1
+            ],
+            "right": [
+              1
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "FDA Closer to Zero — fruits, most vegetables, mixtures",
+                "10 µg/kg",
+                "nonbinding baby-food action level"
+              ],
+              [
+                "FDA Closer to Zero — single-ingredient root vegetables",
+                "20 µg/kg",
+                "nonbinding baby-food action level"
+              ],
+              [
+                "FDA Closer to Zero — dry infant cereals",
+                "20 µg/kg",
+                "nonbinding baby-food action level"
+              ],
+              [
+                "FDA Interim Reference Level — children",
+                "2.2 µg/day",
+                "dietary intake benchmark, from CDC blood-lead reference value with a 10x factor"
+              ],
+              [
+                "FDA Interim Reference Level — women of childbearing age",
+                "8.8 µg/day",
+                "dietary intake benchmark"
+              ],
+              [
+                "EU Reg 2023/915 — baby food, cereal-based food, formula powder",
+                "20 µg/kg",
+                "binding maximum level (as placed on market)"
+              ],
+              [
+                "EU Reg 2023/915 — liquid infant formula",
+                "10 µg/kg",
+                "binding maximum level"
+              ],
+              [
+                "California Prop 65 MADL — reproductive toxicity, oral",
+                "0.5 µg/day",
+                "consumer-product warning threshold"
+              ],
+              [
+                "California Prop 65 NSRL — cancer, oral",
+                "15 µg/day",
+                "consumer-product warning threshold"
+              ],
+              [
+                "CDC blood lead reference value",
+                "3.5 µg/dL",
+                "97.5th-percentile child screening value, not a safe level"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Lead occurrence in the US food supply is dominated by plant matrices and the soil interface, not by the protein foods a consumer might intuitively worry about. The foods that carry the highest and most consistent lead in the national total diet data are dried fruit and raisin-containing cereals, root and tuber vegetables eaten with their peel, leafy greens, and grain and baked products, while fluid milk, plain meats, and most whole fruits sit at or below the reporting limit. The pattern reflects lead's route into food: it enters through roots, adheres to surfaces in contact with soil, and concentrates when a fruit is dried or a grain is milled and baked. That is why a category's lead profile tracks its ingredients and its soil and processing history far more than its label claims, and why sourcing and supplier control are the levers that actually move the number.",
+          "The reason to monitor lead even when a typical median reads low is that the distribution matters more than the average and the governing frame has no safe floor to fall back on. The same foods that read near the reporting limit at the median produce occasional composites several times higher, so a lot that passes on average can still carry a child-relevant dose in the tail, and there is no reference dose that makes such a lot acceptable by definition. Because every major body has declined to set a tolerable intake, the operative benchmarks are action levels, dietary reference levels, and binding maximum levels aimed at pushing exposure down rather than certifying it as safe. For a programme certifying foods eaten by infants and young children, the population that absorbs the most and can tolerate the least, that combination of a skewed distribution and an absent threshold is the entire case for testing lead lot by lot rather than trusting a category mean."
+        ],
+        "source_note": "Anchor occurrence dataset: US FDA Total Diet Study FY2018–2020 (A-tier government monitoring dataset), prepared-food composite basis, lead analyte. Regulatory benchmarks corroborated by FDA Closer to Zero (action levels and interim reference levels), Commission Regulation (EU) 2023/915 (binding maximum levels), the CDC blood lead reference value, and California OEHHA Proposition 65 (NSRL and MADL)."
+      },
+      "prop65_note": "Lead and lead compounds are listed under California Proposition 65 both as a carcinogen and as a reproductive/developmental toxicant. Unlike a right-to-know listing with no dietary number, lead carries operative oral safe-harbour values: a reproductive-toxicity Maximum Allowable Dose Level (MADL) of 0.5 µg/day and a cancer No Significant Risk Level (NSRL) of 15 µg/day. The 0.5 µg/day MADL functions as a de-facto dietary labeling threshold for consumer products sold in California; it is not a food-category ppb concentration limit.",
       "index_link_slug": "lead"
     },
     {
@@ -79,6 +263,13 @@
       "species": "Total elemental cadmium",
       "thesis": "Cadmium is limited because it is a cumulative nephrotoxicant with a biological half-life of 10 to 30 years that concentrates in the renal cortex, is classified by IARC as a Group 1 human carcinogen, and has no effective clinical treatment, so control is a prevention problem addressed by capping dietary intake.",
       "toxicology_summary": "The primary target organ is the kidney, specifically the proximal tubular cells of the renal cortex, where cadmium accumulates bound to metallothionein; the critical endpoint is renal tubular dysfunction, whose earliest detectable sign is increased urinary excretion of low-molecular-weight proteins (notably beta-2-microglobulin). A secondary endpoint is skeletal demineralization (osteomalacia, osteoporosis, and fracture), which in its severe polluted-population form produced itai-itai disease. Because the biological half-life is on the order of decades (10 to 30 years), body burden accumulates across the lifespan and there is no clinical treatment that removes accumulated cadmium, so the vulnerable windows — children aged 0.5 to 12 (mean dietary exposure ~60% higher than adults), women of reproductive age with low iron stores, pregnancy, and postmenopausal women — carry disproportionate weight. Cadmium is additionally an IARC Group 1 human carcinogen (occupational-inhalation basis) and a listed developmental and male reproductive toxicant.",
+      "toxicology_intro": "What the assessment bodies found when they examined cadmium, and why every one of them concluded that dietary intake has to be capped: the cumulative renal endpoint that anchors regulation, the populations that reach it fastest, and the carcinogenicity that does and does not apply to food.",
+      "toxicology": [
+        "The hazard that anchors dietary regulation is cumulative and renal. Cadmium is absorbed slowly from the gut, but once absorbed it is retained with a biological half-life measured in decades, commonly summarised as 10 to 30 years, and concentrates in the proximal tubular cells of the renal cortex, where it accumulates bound to metallothionein and progressively erodes tubular function. The critical endpoint is renal tubular dysfunction, whose earliest detectable sign is increased urinary excretion of low-molecular-weight proteins such as beta-2-microglobulin. EFSA's CONTAM Panel set a tolerable weekly intake of 2.5 µg/kg body weight, anchored on a BMDL5 of 4 µg urinary cadmium per gram of creatinine at the renal-cortex burden that peaks near age 55. This is not an academic reference: mean European dietary exposure sits at roughly 2.3 µg/kg body weight per week, close to the TWI, and the Panel concluded that population-level cadmium exposure should be reduced. Because there is no clinical treatment that removes accumulated cadmium, control is a prevention problem, addressed by capping intake rather than by managing a dose.",
+        "The intake that matters is lifetime intake, and it reaches some groups faster than others. Children aged 0.5 to 12 carry mean dietary cadmium exposure about 60 percent higher than adults simply because they eat more food relative to body weight, and when cocoa-product consumption is added their total dietary exposure can reach 96 percent of the JECFA provisional tolerable monthly intake, essentially saturating the international reference value from diet alone. Women of reproductive age with low iron stores absorb cadmium more efficiently, and iron deficiency compounded across pregnancies is part of why the disease that named cadmium's chronic toxicity fell almost entirely on women: of 196 officially recognised itai-itai cases in Japan's Jinzu River basin, 193 were women, most of them postmenopausal. Itai-itai is the severe endpoint of the same axis EFSA regulates against, renal tubular injury paired with skeletal demineralisation, the osteomalacia, osteoporosis and spontaneous fractures that give the disease its name. These are the windows a cadmium limit is built to protect.",
+        "Cadmium is also a carcinogen, and precision about the route is a matter of credibility. IARC classifies cadmium and its compounds in Group 1, carcinogenic to humans, but that classification rests on occupational cohorts inhaling cadmium dust and fume, not on people eating it. General-population dietary epidemiology has produced statistical associations with cancers of the lung, endometrium, bladder and breast, yet the major regulatory bodies have not translated those associations into a quantitative dose-response reference value for dietary cadmium. The honest statement is therefore two-part: the Group 1 designation is real and it is inhalation-anchored, while the dietary cancer signal is suggestive but not yet the basis of any food limit. The limits in force rest on the renal endpoint, not the cancer endpoint.",
+        "This is not the finding of a single body. EFSA, the US Agency for Toxic Substances and Disease Registry, JECFA and US EPA IRIS have each derived a dietary reference value anchored on the same renal tubular endpoint, and although they span about a factor of ten, with ATSDR's chronic oral minimal risk level of 0.1 µg/kg/day the tightest, EPA's oral reference dose of 1.0 µg/kg/day the most permissive, and EFSA's weekly and JECFA's monthly values between them, the spread reflects different methodological choices on overlapping data rather than disagreement about the underlying toxicology. California adds a further mark of concern, and unlike a listing-only status it carries a dietary-relevant number: Proposition 65 lists cadmium both as a carcinogen and as a developmental and male reproductive toxicant, and sets an oral Maximum Allowable Dose Level of 4.1 µg/day, controlled by the developmental endpoint. That convergence of independent hazard findings, together with EFSA's exposure exceedance, is what moved the European Union to set binding cadmium maximum levels across food commodities. The science came first; the limits followed."
+      ],
       "why_limited": [
         {
           "agency": "IARC",
@@ -125,6 +316,170 @@
       ],
       "how_regulated": "Binding food maximum levels, not the health-based reference values, are what govern a product. Under Method v2.0 the standard for a (product, analyte) is the strictest maximum level any credible government sets, converted to the row's native basis. For infant and child foods the EU (Commission Regulation (EU) 2023/915, /regulations/eu-2023-915) sets the governing cadmium MLs: baby food and processed cereal-based food for infants/young children 40 µg/kg; young-child drinks 20 µg/kg; cereals 100 µg/kg; infant/follow-on/young-child formula 5 µg/kg (cow-milk liquid, provision 3.2.17.2) / 10 µg/kg (cow-milk powder, 3.2.17.1) / 10 µg/kg (soy liquid, 3.2.17.4) / 20 µg/kg (soy powder, 3.2.17.3). Codex matrix MLs (CXS 193-1995: polished rice 0.4 mg/kg, quinoa 0.15 mg/kg, leafy vegetables 0.2, bivalve molluscs 2, cocoa powder 2.0) are aligned to the JECFA PTMI. US FDA Closer to Zero (/regulations/us-fda-c2z) has not yet set a cadmium action level (its lead action levels are in force; the cadmium document is pending), so no US federal food ML competes with the EU value for infant/child categories. Where no government regulates the exact product, the value is read across from the nearest analogous government limit rather than invented. See the per-product derivation tables (e.g. /regulations/eu-2023-915) for the government-by-government comparison; do not restate every number here.",
       "hmtc_treatment": "Cadmium is a Tier 1 (zero-tolerance) toxic in the HMTc program, grouped with lead, inorganic arsenic, and mercury as analytes with no established safe threshold. It therefore does NOT receive the 150% transitional allowance, which applies only to the Tier 2 metals (nickel, aluminium, tin, chromium) under the Status A–E framework. The certification species is total elemental cadmium, and cadmium carries no speciation trigger — the reflex-speciation controls apply to arsenic (inorganic), mercury (methyl), and chromium (hexavalent Cr-VI on total-chromium screening), not to cadmium. The HMTc cadmium limit is set by lookup to the strictest applicable government ML in the row's native basis (for example, 40 µg/kg as-sold for teething biscuits and finger snacks, binding on the EU value; formula subcategories take the EU formula-specific MLs with the 8:1 powder-to-liquid basis conversion applied only within infant formula). The regulatory hard-stop still wraps the published number: any actual legal-limit violation fails certification regardless of HMTc status. Grounded in the infant-and-child-foods manual method note and the teething-and-snacks standard master-limit and derivation tables.",
+      "occurrence": {
+        "intro": "How much cadmium food actually carries, and how close everyday dietary exposure runs to the health-based guidance value. The occurrence figures are drawn from a national total diet study and the exposure figures from the EFSA assessment that set the tolerable weekly intake; the complete occurrence corpus is on the Heavy Metal Index.",
+        "tables": [
+          {
+            "caption": "By-food cadmium occurrence, FDA Total Diet Study FY2018-2020, filtered to cadmium. Values are µg/kg (ppb) on an as-consumed (table-ready) prepared-food basis; the median (P50), 95th percentile (P95) and single highest measurement are shown across each food's TDS collections, with sample counts varying (n = 3 to 27). These are reported occurrence concentrations, not safety thresholds.",
+            "columns": [
+              "Food",
+              "n",
+              "P50 µg/kg",
+              "P95 µg/kg",
+              "Max µg/kg"
+            ],
+            "mono": [
+              2,
+              3,
+              4
+            ],
+            "right": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Potato chips",
+                "3",
+                "100",
+                "190",
+                "200"
+              ],
+              [
+                "Celery, raw",
+                "27",
+                "32",
+                "73",
+                "100"
+              ],
+              [
+                "Potato, baked with peel",
+                "27",
+                "41",
+                "65",
+                "66"
+              ],
+              [
+                "Lettuce, iceberg, raw",
+                "27",
+                "27",
+                "64",
+                "73"
+              ],
+              [
+                "Peanut butter, creamy",
+                "3",
+                "55",
+                "60",
+                "60"
+              ],
+              [
+                "Collard greens, boiled",
+                "27",
+                "22",
+                "53",
+                "65"
+              ],
+              [
+                "Peanuts, dry roasted",
+                "3",
+                "42",
+                "45",
+                "45"
+              ],
+              [
+                "Cereal, bran with raisins",
+                "3",
+                "42",
+                "44",
+                "44"
+              ],
+              [
+                "Bread, whole wheat",
+                "27",
+                "28",
+                "41",
+                "42"
+              ],
+              [
+                "Potato, peeled, boiled",
+                "27",
+                "25",
+                "38",
+                "42"
+              ],
+              [
+                "Bread, white, enriched",
+                "27",
+                "29",
+                "35",
+                "37"
+              ],
+              [
+                "Avocado, raw",
+                "27",
+                "5.4",
+                "30",
+                "59"
+              ],
+              [
+                "Rice, white, cooked",
+                "27",
+                "5.2",
+                "19",
+                "23"
+              ]
+            ]
+          },
+          {
+            "caption": "Dietary cadmium exposure versus the EFSA tolerable weekly intake of 2.5 µg/kg body weight per week. Mean exposures are from the EFSA CONTAM Panel (2009); the share is that mean expressed against the TWI. These are population exposure estimates, not thresholds.",
+            "columns": [
+              "Consumer group",
+              "Mean exposure µg/kg bw/week",
+              "Share of EFSA TWI",
+              "Note"
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1,
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "European adults, population mean",
+                "2.3",
+                "~92%",
+                "At the TWI; driven by cereal, potato and vegetable staples eaten in volume"
+              ],
+              [
+                "Regular bivalve-mollusc consumers",
+                "4.6",
+                "~184%",
+                "Roughly twofold over the TWI from a single high-concentration food habit"
+              ],
+              [
+                "Regular wild-mushroom consumers",
+                "4.3",
+                "~172%",
+                "Roughly twofold over the TWI"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Cadmium enters the food supply from three compounding sources: natural background in soils, anthropogenic loading from phosphate fertiliser and atmospheric deposition from metal refining, and biological concentration in filter-feeding marine invertebrates and in certain plant commodities. The by-food picture separates two things that are easy to conflate. The foods that drive population exposure, cereals, potatoes and other starchy roots, and leafy vegetables, do so because they are eaten in volume, not because they are the most contaminated. The foods with the highest concentrations, bivalve molluscs other than oysters, wild mushrooms, cocoa and chocolate, oilseeds and edible offal, matter most to the people who eat them regularly.",
+          "The reason to monitor cadmium at the category level rather than trust any single food is the combination of a decades-long half-life with staple exposure that already sits at the guidance value. There is no headroom to absorb a high-concentration habit: a diet built on staples reaches the tolerable weekly intake on its own, and regular consumption of shellfish, wild mushrooms, cocoa or organ meats carries a person past it, while children and iron-deficient women accumulate faster still. For a certifier, that is the case for treating cadmium as a metal to be capped by sourcing and ingredient selection across a category, not one to be waved through because a typical portion looks unremarkable."
+        ],
+        "source_note": "Anchor occurrence dataset: FDA Total Diet Study FY2018-2020 element results (A-tier government survey), filtered to cadmium. Exposure-versus-TWI figures are from the EFSA CONTAM Panel Scientific Opinion on cadmium in food (2009), the A-tier assessment that set the 2.5 µg/kg bw/week tolerable weekly intake."
+      },
+      "prop65_note": "Cadmium is listed under California Proposition 65 both as a carcinogen and as a developmental and male reproductive toxicant (reproductive-toxicity listing effective May 1, 1997). Unlike a listing-only status, it carries a dietary-relevant oral safe-harbour: a Maximum Allowable Dose Level (MADL) of 4.1 µg/day, controlled by the developmental endpoint (Ali et al. 1986 rat study). A separate No Significant Risk Level derived through the Prop 65 cancer pathway exists but is not yet ingested in-repo.",
       "index_link_slug": "cadmium"
     },
     {
@@ -135,6 +490,13 @@
       "species": "Inorganic (iAs), speciated",
       "thesis": "Inorganic arsenic is limited because it is an IARC Group 1 human carcinogen for which the major assessment bodies have declined to set any safe intake threshold, and current dietary exposures already sit at or above the cancer reference point EFSA derived in its 2024 reassessment.",
       "toxicology_summary": "Inorganic arsenic (the trivalent and pentavalent oxyanions) is a genotoxic Group 1 human carcinogen; the critical cancer endpoints are skin, lung, and bladder cancer, and EFSA's controlling reference point is anchored on skin cancer (squamous cell carcinoma). Its principal non-cancer effects are dermal (hyperpigmentation and palmar/plantar keratosis, the basis of the ATSDR chronic oral MRL), cardiovascular (atherosclerosis, blackfoot disease in highly exposed populations), and neurodevelopmental effects in children. The most vulnerable window is infancy and early childhood: EFSA reports children under three are exposed at two to three times adult per-kilogram rates, with rice-based first foods the dominant dietary source. Metabolically, methylation of inorganic arsenic to trivalent MMA(III) and DMA(III) is an activation step producing more reactive species rather than simple detoxification.",
+      "toxicology_intro": "Inorganic arsenic is regulated because its anchoring endpoint is cancer, and the bodies that have assessed it agree there is no dietary exposure at which that risk resolves to zero.",
+      "toxicology": [
+        "The endpoint that governs inorganic arsenic is cancer, and the assessment that now anchors regulation treats it as a substance without a safe intake. In its 2024 reassessment EFSA declined to set a health-based guidance value and instead selected a reference point, a BMDL05 of 0.06 µg iAs/kg body weight per day derived from skin cancer (squamous cell carcinoma), and applied a margin-of-exposure approach. That framing follows from mechanism. Inorganic arsenic does not form direct DNA adducts; it acts through oxidative stress, inhibition of DNA repair, and binding to vicinal sulfhydryl groups in proteins, and its metabolic methylation to the trivalent species MMA(III) and DMA(III) is now understood as an activation step that yields more reactive intermediates rather than a simple detoxification. Because the mechanism has no threshold below which the genotoxic insult disappears, the operative question is not whether an intake is safe but how narrow the margin between everyday exposure and the reference point has become, and for inorganic arsenic that margin has effectively closed.",
+        "The population that carries this risk most acutely is the youngest. Rice and rice-based foods are the dominant dietary source of inorganic arsenic for people not exposed through groundwater, and rice cereal is frequently an infant's first solid food, so the exposure concentrates in the developmental window where per-kilogram intake is highest. EFSA reports that children under three are exposed at roughly two to three times the adult per-kilogram rate. Beyond infancy the exposed groups include frequent rice consumers, people on gluten-free or otherwise rice-heavy diets, and private-well users in arsenic-affected geographies who fall outside the EPA drinking-water rule. The documented non-cancer effects across these populations are substantial in their own right: the dermal lesions (hyperpigmentation and palmar and plantar keratosis) that anchor the ATSDR chronic oral minimal risk level of 0.3 µg/kg/day, cardiovascular disease including the blackfoot disease observed in highly exposed Taiwanese cohorts, and neurodevelopmental effects in children.",
+        "The carcinogenicity is stated by IARC with unusual confidence and, critically, by the oral route. IARC classifies inorganic arsenic in Group 1, carcinogenic to humans (Monographs Volume 100C), with the strongest dose-response evidence for lung, skin, and bladder cancer at chronic exposures that include drinking water and food. This is the feature that distinguishes arsenic from metals whose established tumour sites are confined to occupational inhalation: ingested inorganic arsenic is itself the basis of the human cancer epidemiology, built on populations exposed to elevated arsenic through contaminated water and diet. The precision that matters for testing is the species. It is the inorganic fraction that carries the Group 1 designation; the organic arsenic that dominates most seafood, principally arsenobetaine, is not the endpoint of concern. A total-arsenic result therefore overstates the toxic fraction in fish while remaining the correct measurement to speciate in rice, where the inorganic form predominates, which is why credible testing for this analyte is defined as speciated inorganic arsenic rather than total arsenic.",
+        "What makes the regulatory posture defensible is the convergence. EFSA, JECFA, IARC, the US EPA, ATSDR, and the FDA have reached compatible conclusions from independent evidence bases. JECFA withdrew its provisional tolerable weekly intake of 15 µg/kg body weight in 2010 on the ground that cancer occurs at exposures below it; EFSA moved to a margin-of-exposure framing and, in 2024, lowered the reference point; the EPA finalized a major IRIS reassessment of inorganic arsenic in January 2025. Where a body has set a binding number it has done so downstream of that shared science: the EU maximum levels for inorganic arsenic across infant foods, juices, and rice categories, the FDA action levels of 100 µg/kg for infant rice cereal and 10 µg/kg for apple juice, and the EPA drinking-water maximum contaminant level of 10 µg/L. California's Proposition 65 lists inorganic arsenic compounds as known to the state to cause cancer, consistent with those classifications. The science came first and the binding limits followed; where a harmonized tolerable intake is deliberately absent, it is because these bodies concluded that no such safe threshold exists."
+      ],
       "why_limited": [
         {
           "agency": "IARC",
@@ -181,6 +543,81 @@
       ],
       "how_regulated": "Binding maximum levels in force come from the EU. Commission Regulation (EU) 2023/915 sets iAs maximum levels of 20 µg/kg for baby food for infants and young children, 10 µg/kg for infant/follow-on/young-child formula placed on the market as liquid and 20 µg/kg as powder, and 100 µg/kg for rice destined for production of infant and young-child food (with general-rice ceilings of 150 µg/kg white/non-parboiled milled rice, 250 µg/kg parboiled/husked rice and rice flour, and 300 µg/kg rice waffles/cakes/crackers) — see /regulations/eu-2023-915. In the US the FDA's action level for inorganic arsenic in infant rice cereals is 100 µg/kg; this is a non-binding guidance action level finalized in 2020, which predates and is now folded into the Closer to Zero initiative rather than being an enforceable ML or a C2Z-derived value — see /regulations/us-fda-c2z. Where no government regulates a given product×iAs cell, the HMTc program reads across from the nearest government value for an analogous product rather than leaving the cell blank. The internationally harmonized picture has no tolerable-intake anchor: JECFA withdrew its PTWI and both EFSA and JECFA now characterize risk through benchmark-dose reference points, not a safe daily intake. Full per-jurisdiction derivations sit on the cert /regulations/ pages; this page points outward to /metals/arsenic for the literature baseline rather than restating the numbers.",
       "hmtc_treatment": "Inorganic arsenic is a Tier 1 (zero-tolerance) analyte: one of the four toxics (with Pb, Cd, and Hg) treated as having no established safe threshold, so the 150% transitional allowance available to Tier 2 metals (Ni, Al, Sn, Cr) does not apply to it. Under Method v2.0 (government-limit default), the standard for each product is the strictest maximum level any credible government sets, converted to the product's native basis; because iAs is a Tier 1 toxic, where clean producers demonstrably beat the government floor the tighter pooled-occurrence value governs (min of occurrence percentile and strictest government ML). Speciation is intrinsic to the analyte definition rather than a reflex trigger: the certified analyte is inorganic arsenic specifically, quantified as speciated iAs by ICP-MS (HPLC-ICP-MS), and total-arsenic results are not interchangeable — this differs from the chromium reflex-speciation model, where total Cr is screened first and Cr(VI) speciation fires only above a trigger. Worked example: the Teething biscuits & finger snacks standard sets iAs at 100 µg/kg for rice-based products (binding FDA) and 20 µg/kg for non-rice products (binding EU 2023/915 baby food), both labeled Tier 1. Grounded in /standards/teething-and-snacks and /manuals/infant-and-child-foods (Tier 1 zero-tolerance; Tier 2 150% allowance).",
+      "occurrence": {
+        "intro": "How much inorganic arsenic food actually carries, and how close everyday dietary exposure runs to the reference point that anchors the cancer assessment.",
+        "tables": [
+          {
+            "caption": "Inorganic-arsenic-speciated composites from the FDA Total Diet Study, FY2018-2020 (prepared, as-consumed basis, µg/kg wet weight). These are the only two composites the study speciated for inorganic arsenic; its other arsenic results are reported as total arsenic and overstate the inorganic fraction. Values describe occurrence, not regulatory thresholds.",
+            "columns": [
+              "Food (iAs-speciated composite)",
+              "Median µg/kg",
+              "Range µg/kg",
+              "Highest composite µg/kg"
+            ],
+            "mono": [
+              1,
+              2,
+              3
+            ],
+            "right": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "Rice, white, enriched, cooked",
+                "41.6",
+                "41.6 (n=1)",
+                "41.6"
+              ],
+              [
+                "Rice cereal, crisped",
+                "90.4",
+                "85.8–103",
+                "103"
+              ]
+            ]
+          },
+          {
+            "caption": "Estimated chronic dietary exposure to inorganic arsenic (µg/kg body weight per day) against EFSA's controlling reference point, a BMDL05 of 0.06 µg/kg bw/day for skin cancer (2024). Ranges span EU dietary surveys; values are exposure estimates, not thresholds.",
+            "columns": [
+              "Population (EFSA assessment)",
+              "Mean consumer µg/kg bw/day",
+              "95th percentile µg/kg bw/day",
+              "Relation to the 0.06 reference point"
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1,
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Adults, EU (EFSA 2024)",
+                "0.03–0.15",
+                "0.07–0.33",
+                "Margin of exposure 2 to 0.4 (mean) and 0.9 to 0.2 (P95); an MOE below 1 is a health concern"
+              ],
+              [
+                "Adults, EU (EFSA 2009)",
+                "0.13–0.56",
+                "0.37–1.22",
+                "Children under 3 exposed at 2 to 3 times the adult per-kg rate"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Rice and rice-based foods drive dietary inorganic arsenic because flooded-paddy cultivation mobilizes arsenite into the grain, and the bran layer concentrates it, so brown rice runs higher than white rice from the same source. Rice cereal is often an infant's first solid food, which places the exposure in the most vulnerable window, and rice-derived ingredients such as rice flour, rice syrup, and rice protein carry the inorganic fraction into processed and free-from products where a shopper would not expect it. The FDA speciated inorganic arsenic specifically in rice and rice cereal in its Total Diet Study because that is where the inorganic form dominates; for most other foods, and for seafood especially, a total-arsenic result overstates the toxic fraction because organic species prevail.",
+          "The reason to monitor is structural rather than alarmist. There is no exposure at which the cancer risk resolves, and the current assessment places typical adult intake near the reference point and much of the population above it, so modest shifts in rice content or ingredient sourcing move a product across a line that matters. Total-arsenic testing cannot substitute for speciation, and the exposed population is disproportionately infants. Certification that verifies the inorganic fraction by speciation, against both the regulatory action levels and the tightest demonstrated occurrence, is the control that a total-arsenic number cannot provide."
+        ],
+        "source_note": "Anchor dataset: FDA Total Diet Study FY2018-2020 Elements Data, an A-tier US government dataset, inorganic-arsenic-speciated composites; corroborated by EFSA's 2024 (controlling) and 2009 dietary exposure assessments for inorganic arsenic."
+      },
+      "prop65_note": "Inorganic arsenic compounds are listed under California Proposition 65 as chemicals known to the state to cause cancer. A cancer No Significant Risk Level (NSRL) governs when a consumer-product warning is required; the specific oral NSRL value is not yet recorded in the Index.",
       "index_link_slug": "arsenic"
     },
     {
@@ -191,6 +628,13 @@
       "species": "Methylmercury, speciated",
       "thesis": "Methylmercury crosses the blood-brain barrier and the placenta and accumulates in developing neural tissue, so with the prenatal and early-postnatal windows the most vulnerable and no safe threshold established for developmental neurotoxicity, dietary exposure is limited to protect the developing brain.",
       "toxicology_summary": "The critical target is the developing central nervous system: methylmercury (MeHg) crosses the placenta and blood-brain barrier and produces developmental neurotoxicity (deficits in verbal, visuospatial, and memory function) at fetal exposures well below those that cause overt symptoms in adults, which makes in-utero and early-postnatal life the governing exposure windows. Adult toxicity (paresthesia, ataxia, visual-field constriction, dysarthria) occurs only at substantially higher exposure. Long-term exposure is tracked through hair mercury, a validated biomarker roughly 250x the simultaneous whole-blood concentration because MeHg binds preferentially to cysteine in keratin. Cardiovascular and thyroid-cancer endpoints remain contested and are not treated by the literature as an established basis for limits. See the Heavy Metal Index literature baseline at heavymetalindex.com/metals/mercury-methyl.",
+      "toxicology_intro": "Why regulators across the US, EU, and international expert bodies place binding and advisory limits on mercury in food, and why the certification species is methylmercury.",
+      "toxicology": [
+        "The endpoint that anchors every modern dietary mercury limit is developmental neurotoxicity from methylmercury (MeHg), the organometallic form that biomagnifies up aquatic food chains. Methylmercury crosses the blood-brain barrier and the placenta, binds cysteine residues on glutathione and other thiols, accumulates in the developing brain, and induces oxidative stress, glutamate excitotoxicity, and disruption of cellular calcium homeostasis. Because the fetal brain is affected at exposures well below those that produce any symptom in the exposed adult, the guidance values are set against the developing central nervous system rather than the adult. EFSA derived a tolerable weekly intake of 1.3 µg/kg body weight per week, calibrated against the Faroe Islands birth-cohort dose-response, and this is not a comfortable-headroom limit: frequent consumers of predatory fish can, on the wiki's reading of the literature, approach or exceed the weekly reference even when eating fish in normal serving sizes.",
+        "The population the metal reaches is defined by transplacental transfer and by the developmental window. The fetus, the breastfed infant, and the young child are the principal at-risk groups, and in-utero exposure is the most consequential window because it coincides with brain maturation. The dose-response comes from two long-running prospective cohorts: the Faroe Islands study, where mercury came from pilot-whale meat and found consistent associations between cord-blood mercury and neurodevelopmental deficits (verbal, visuospatial, and memory) at ages 7 and 14 at maternal-hair mercury around 10 µg/g, and the Seychelles study, where mercury came from ocean fish at lower maternal-hair levels and found no comparable adverse association. It is this contrast, not a single threshold, that regulators translate into the FDA/EPA joint fish-consumption advice targeting pregnant women, women who might become pregnant, and children. Long-term exposure is tracked through hair mercury, a validated biomarker roughly 250 times the simultaneous whole-blood level because methylmercury binds preferentially to cysteine in keratin.",
+        "Carcinogenicity is not the basis for any of these limits, and the frame must be stated precisely. None of the EPA IRIS, EFSA, JECFA, or ATSDR dietary reference values for mercury rests on a cancer endpoint; the methylmercury reference values are anchored on developmental neurotoxicity, and the separate inorganic-mercury reference dose on renal toxicity. A thyroid-cancer signal has been examined in meta-analysis, but the evidence base is small and suggestive rather than established, and cardiovascular associations remain contested; neither is treated by the literature as a basis for limits. The routes and species must also be kept distinct. Adult methylmercury neurotoxicity (paresthesia, ataxia, visual-field constriction, dysarthria, the Minamata syndrome) appears only at substantially higher exposure than the developmental endpoint. Inorganic mercury salts are primarily nephrotoxic by the oral route, with autoimmune kidney effects anchoring a separate EPA reference dose; elemental mercury is primarily neurotoxic by inhalation (tremor, erethism) and is an occupational and dental-amalgam exposure, not a food-borne one. The dietary limit is a methylmercury limit.",
+        "The weight of agreement across bodies is unusual. The methylmercury reference values converge to within a factor of about 2.3 when expressed on a common daily basis: the EPA IRIS oral RfD of 0.1 µg/kg/day (equivalently 0.7 µg/kg/week, the most conservative), the EFSA TWI of 1.3 µg/kg/week, and the JECFA PTWI of 1.6 µg/kg/week, all anchored on the same Faroe and Seychelles developmental-neurotoxicity endpoint. This is the most harmonized of the heavy-metal regulatory landscapes covered by the underlying literature. The binding limits followed the science: the EU sets species-specific mercury maximum levels for fishery products under Reg. 2023/915, Codex carries methylmercury guideline levels for fish, and the FDA maintains a 1.0 ppm action level for methylmercury in fish. Where limits have not followed, the gap is visible rather than hidden: the major Western regulators (EU, FDA) set no mercury maximum level for any infant-food form (China's GB 2762 is the exception, carrying a total-mercury limit for canned complementary infant foods), which is much of where a certification program has to reason from the toxicology rather than transcribe a statute."
+      ],
       "why_limited": [
         {
           "agency": "EFSA (CONTAM Panel)",
@@ -230,6 +674,130 @@
       ],
       "how_regulated": "In-force maximum levels are almost entirely on fishery products rather than infant and child foods. The EU (Reg. 2023/915) sets species-specific mercury maximum levels for fishery products, applied as total Hg on the assumption that MeHg dominates fishery matrices; the listed-predatory-species ceiling of 1.0 mg/kg governs the cert fish-marine-predatory standard (tHg 1000 ppb, tag regulatory-alignment, id eu2023_hg_predatory_fish_1000). Codex CXS-193 carries methylmercury guideline levels for fish. The FDA action level of 1.0 ppm methylmercury in fish is nonbinding but enforcement-relevant, and the FDA/EPA joint consumption advisory adds nonbinding best/good/avoid tiers; both are documented in the Index synthesis (heavymetalindex.com/metals/mercury-methyl) rather than on a cert regulation page, because no HMTc fish standard binds to the FDA fish action level and there is no cert page that transcribes it. Critically, no government sets a mercury maximum level for any infant-food form, so across those categories HMTc reads across from China GB 2762 (total-Hg 20 for canned complementary infant foods) as a program-settled flat 20 ppb. See the cert regulation pages /regulations/eu-2023-915, /regulations/codex-cxs-193, and /regulations/china-gb-2762 for the side-by-side derivation of the values that actually bind; do not restate the Index synthesis, which is linked outward at heavymetalindex.com/metals/mercury-methyl.",
       "hmtc_treatment": "Mercury is carried as two analytes on the 10-analyte panel (Pb, tAs, iAs, Cd, tHg, MeHg, Ni, Cr-VI, Sn, Al), and methylmercury is the certification species — speciated. MeHg is a Tier 1 zero-tolerance toxic with no established safe threshold, so it does not receive the 150% transitional allowance granted to Tier 2 metals (Ni, Al, Sn, Cr); for Tier 1 toxics the standard is min(pooled occurrence percentile, strictest government maximum), meaning occurrence data can tighten the value below the government floor but never raise it above it. Speciation is a reflex, analogous to the total-chromium-to-Cr(VI) trigger: total mercury (tHg by TDA-AAS/CV-AFS) is the routine lot screen, and speciated MeHg by GC-ICP-MS or LC-ICP-MS is the confirmatory measurement wherever a result must distinguish MeHg from inorganic Hg. Where MeHg is the material analyte (fish and seafood) it is the binding Tier-1 value; where inorganic Hg dominates and MeHg is not material (infant grain and dairy foods, where MeHg is recorded 'not in scope'), tHg governs via the 20 ppb read-across. Grounded in manuals/infant-and-child-foods.md (Tier framework), standards/teething-and-snacks.md (mercury 20 ppb read-across; Cr(VI) reflex speciation model), and the seafood standards (standards/fish-marine-predatory.md, standards/canned-seafood.md) where MeHg is the in-development Tier-1 analyte.",
+      "occurrence": {
+        "intro": "How much mercury food actually carries, and why it is concentrated almost entirely in one part of the supply.",
+        "tables": [
+          {
+            "caption": "Total mercury (tHg) in the everyday prepared-food supply, µg/kg wet weight, from the FDA Total Diet Study FY2018-2020 (table-ready composites). All-zero foods are omitted; values are occurrence measurements from a government dataset, not certification thresholds. The TDS composite design under-samples large predatory fish, so the mercury-relevant signal appears in the second table.",
+            "columns": [
+              "Food (FDA TDS)",
+              "Median P50 µg/kg",
+              "P95 µg/kg",
+              "Max µg/kg"
+            ],
+            "mono": [
+              1,
+              2,
+              3
+            ],
+            "right": [
+              1,
+              2,
+              3
+            ],
+            "minWidth": "32rem",
+            "rows": [
+              [
+                "Fish sticks or patties, frozen (n=3)",
+                "6.0",
+                "9.42",
+                "9.8"
+              ],
+              [
+                "Cornbread, homemade (n=3)",
+                "2.9",
+                "4.07",
+                "4.2"
+              ],
+              [
+                "Crisped rice cereal (n=3)",
+                "3.0",
+                "3.99",
+                "4.1"
+              ],
+              [
+                "Flour tortilla (n=27)",
+                "0",
+                "0",
+                "3.4"
+              ],
+              [
+                "Chocolate cake with icing (n=27)",
+                "0",
+                "1.57",
+                "1.9"
+              ],
+              [
+                "Raisins (n=3)",
+                "1.3",
+                "1.57",
+                "1.6"
+              ],
+              [
+                "White rice, cooked (n=27)",
+                "0",
+                "0",
+                "1.4"
+              ],
+              [
+                "Collard greens, boiled (n=27)",
+                "0",
+                "1.3",
+                "1.4"
+              ],
+              [
+                "Avocado, raw (n=27)",
+                "0",
+                "1.07",
+                "1.3"
+              ]
+            ]
+          },
+          {
+            "caption": "Methylmercury (MeHg) by fish tier, µg/kg wet weight, from the FDA/EPA joint fish-consumption advice as recorded on the Index mercury page, benchmarked against the EFSA TWI of 1.3 µg/kg bw/week (developmental-neurotoxicity endpoint). Tier ranges reflect where mercury concentrates in the food supply; these are occurrence ranges, not certification thresholds.",
+            "columns": [
+              "FDA/EPA fish tier",
+              "MeHg low µg/kg",
+              "MeHg high µg/kg",
+              "Species and serving guidance"
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1,
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Best Choices",
+                "0",
+                "100",
+                "salmon, sardines, anchovies, tilapia, shrimp, trout, pollock, oysters, scallops; 2-3 servings/week"
+              ],
+              [
+                "Good Choices",
+                "100",
+                "500",
+                "light canned tuna (100-300), halibut, mahi-mahi, snapper; 1 serving/week"
+              ],
+              [
+                "Choices to Avoid",
+                "500",
+                "1500",
+                "swordfish, shark, king mackerel, Gulf tilefish, bigeye tuna, marlin, orange roughy; avoid"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Mercury occurrence is governed by trophic position rather than by food category in general. In the everyday non-seafood supply, total mercury sits at or near the reporting floor across dairy, meat, grains, produce, and packaged foods; the few detectable readings are low and offer no meaningful exposure. The signal lives in fish, and within fish it lives in the largest, longest-lived predatory species, which biomagnify methylmercury over their lifespan to concentrations far above their prey and the surrounding water. This is why a by-food survey of prepared composites looks almost empty while the fish tiers span more than an order of magnitude.",
+          "The practical consequence for a certification program is that mercury risk is almost entirely a fish-and-seafood question, and the most consequential exposure falls on the prenatal window. Because concentration tracks species and size, the lever that moves exposure is species selection, not portion trimming alone; substituting lower-trophic species for apex predators changes the delivered dose more than any other single choice. A fish-containing product is where mercury needs to be measured and controlled, and it is measured as the species that carries the developmental risk, methylmercury."
+        ],
+        "source_note": "Anchor dataset for the by-food table is the FDA Total Diet Study FY2018-2020 elemental results (A-tier government dataset). The fish-tier table draws on the FDA/EPA joint fish-consumption advice (A-tier) as recorded on the Heavy Metal Index mercury pages; corroborated by EFSA CONTAM (2012)."
+      },
       "index_link_slug": "mercury-methyl"
     },
     {
@@ -240,6 +808,13 @@
       "species": "Total elemental nickel",
       "thesis": "Nickel is limited because EFSA's 2020 reassessment set a chronic tolerable daily intake of 13 µg Ni/kg body weight/day on a reproductive-developmental endpoint that mean European dietary intake already exceeds, and because sensitized individuals react to oral doses far below that; contamination is largely controllable through sourcing and process control.",
       "toxicology_summary": "The chronic dietary concern is reproductive and developmental: EFSA's TDI is anchored on increased post-implantation loss (with reduced fetal weight and viability) in rats, making women planning or during pregnancy, and children and toddlers with higher per-kilogram intake, the sensitive windows. A separate, more acute concern is systemic contact dermatitis (eczematous flare-up) in nickel-sensitized individuals, who react to oral nickel well below the chronic TDI. Nickel compounds are also respiratory carcinogens (lung and nasal cancer) but this is an occupational-inhalation endpoint documented in refinery, plating and stainless-steel cohorts; typical dietary nickel intake has not been associated with cancer outcomes. See the Heavy Metal Index nickel page for the full literature synthesis.",
+      "toxicology_intro": "What the assessment bodies found when they examined nickel, and why it warrants a limit: the dietary endpoint that anchors regulation, the sensitized population it reaches at far lower doses, and the carcinogenicity that does — and does not — apply to food.",
+      "toxicology": [
+        "The hazard that anchors dietary regulation is reproductive and developmental. Across multi-generation rat studies the most sensitive and consistently reproduced effect of oral nickel is increased post-implantation loss, accompanied by reduced fetal weight and reduced offspring viability. EFSA's 2020 reassessment set the chronic tolerable daily intake at 13 µg Ni/kg body weight per day from a BMDL10 of 1.3 mg/kg, a value it lowered substantially from its earlier reference under revised benchmark-dose methodology. This is the endpoint governments regulate against, and it is not academic: EFSA found that mean dietary nickel exposure across European member states already exceeds the tolerable intake, with toddlers and young children the most exposed on a body-weight basis.",
+        "A second, lower-dose endpoint reaches a far larger population. Nickel is among the most common contact allergens, sensitizing an estimated 8 to 19 percent of adults and 13 to 18 percent of women, and once a person is sensitized, oral doses well below the chronic tolerable intake can provoke systemic contact dermatitis; EFSA set the acute reference at a LOAEL of 4.3 µg Ni/kg body weight for eczematous flare-ups in sensitized volunteers. Systemic Nickel Allergy Syndrome, which affects roughly one in five nickel-allergic patients, extends the picture beyond the skin: controlled and open-label low-nickel-diet trials report symptom improvement in nickel-sensitized patients with chronic dermatitis, irritable bowel syndrome, refractory reflux, recurrent aphthous stomatitis, and endometriosis-associated gastrointestinal symptoms, and a nickel-free diet has been shown to nearly double Helicobacter pylori eradication when added to standard therapy. The evidence ranges from double-blind oral-challenge studies to small pilots; its breadth is the point, because it means dietary nickel is a clinically active exposure for a population much wider than the reproductive endpoint alone describes.",
+        "Nickel is also a carcinogen, and being precise about how is a matter of credibility. The US National Toxicology Program lists nickel compounds as known human carcinogens and metallic nickel as reasonably anticipated to be one, and IARC classifies nickel compounds in Group 1. The tumour sites — lung and nasal-sinus — were established in occupational cohorts inhaling nickel dust and fume, not in people eating nickel; typical dietary nickel intake has not been associated with cancer. The program states that plainly rather than blur an inhalation hazard into a food-safety claim the record does not support.",
+        "These are not the finding of a single body. EFSA, the US Agency for Toxic Substances and Disease Registry (which derives route- and duration-specific minimal risk levels), the National Toxicology Program, and IARC independently characterise nickel's reproductive, sensitization, and carcinogenic hazards, and they converge. California adds a further mark of concern: its Proposition 65 programme lists soluble nickel compounds as reproductive and developmental toxicants and nickel compounds as carcinogens, yet — as a right-to-know statute that sets no food standard — it adopts no oral safe-harbour and no dietary limit, so the operative dietary reference defaults to EFSA's tolerable intake while the United States sets no maximum level in food at all. That convergence of hazard findings, together with EFSA's exposure exceedance, is what moved the European Union to adopt its first binding nickel maximum levels in food in 2024. The science came first; the limits followed, and where they have not yet followed, the gap is visible."
+      ],
       "why_limited": [
         {
           "agency": "EFSA (CONTAM Panel)",
@@ -286,6 +861,144 @@
       ],
       "how_regulated": "The binding maximum level in force for infant and child foods is the EU's, adopted under Method v2.0 (government-limit default) as the strictest sovereign limit by lookup. The EU is effectively the only jurisdiction that regulates nickel in food (limits introduced by Reg (EU) 2024/1987 amending 2023/915, Annex 3.6): liquid infant formula 100, non-soy formula powder 250, soy-isolate formula powder 400, baby food except juices 500, cereals 800, and processed cereal-based baby food / pseudocereals and millet 3000 µg/kg (see cert /regulations/eu-2023-915). No US/FDA, Codex, UK, Canada, China, India, Brazil or AU/NZ nickel food ML exists, so the EU value governs across the program and, where no government regulates the exact product, a disclosed read-across from the nearest EU value is applied rather than an invented number. For teething and finger snacks the EU processed-cereal-based value (3000 µg/kg) binds; the law's own formulation split (250 cow-milk vs 400 soy powder) is adopted verbatim per Method v2.0 rather than derived. Do not restate the full derivation table — see the cert standards pages and /regulations/ for the side-by-side.",
       "hmtc_treatment": "Nickel is a Tier 2 analyte in the HMTc program (with Al, Sn, Cr), not a Tier 1 zero-tolerance toxic. Under Method v2.0 the government limit is adopted directly for Tier 2 metals (occurrence pooling is reserved for Tier 1 toxics and no-ML cells), and Tier 2 analytes carry the program's 150% transitional allowance under the Status A–E framework (Status B = public transitional certification), giving brands a defined runway to reach the government floor. The certification species is Total elemental nickel; nickel carries NO speciation trigger — unlike arsenic (iAs), mercury (MeHg/tHg) and chromium (reflex Cr-VI speciation above 100 ppb). The regulatory hard-stop still applies: any actual legal-limit violation blocks certification regardless of HMTc status. The program frames nickel as largely controllable through ingredient sourcing and process control.",
+      "occurrence": {
+        "intro": "How much nickel food actually carries, and how close everyday dietary exposure runs to the health-based guidance value. This is the empirical basis for carrying nickel in the panel, drawn from a national total diet study; the complete occurrence corpus is on the Heavy Metal Index.",
+        "tables": [
+          {
+            "caption": "Nickel by food group — BfR MEAL Study (Germany, 2022), 840 food pools. Values are µg/kg (ppb), upper-bound, ready-to-eat basis: the group mean and the single highest item measured. These are population occurrence values, not safety thresholds.",
+            "columns": [
+              "Food group",
+              "Mean µg/kg",
+              "Range µg/kg",
+              "Highest single item"
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1
+            ],
+            "rows": [
+              [
+                "Legumes, nuts, oil seeds & spices",
+                "1,583",
+                "60–5,350",
+                "cashew nuts 5,350"
+              ],
+              [
+                "Coffee, cocoa & tea",
+                "1,488",
+                "13–11,050",
+                "cocoa powder 11,050"
+              ],
+              [
+                "Sugar & confectionery",
+                "601",
+                "30–2,800",
+                "dark chocolate 2,800"
+              ],
+              [
+                "Meat-alternative / vegan products",
+                "386",
+                "48–1,000",
+                "soy protein extrudate 1,000"
+              ],
+              [
+                "Grains & grain products",
+                "359",
+                "20–1,975",
+                "chia seeds 1,975"
+              ],
+              [
+                "Infant & toddler foods",
+                "185",
+                "20–1,040",
+                "porridge / millet powder 1,040"
+              ],
+              [
+                "Fruit & fruit products",
+                "112",
+                "16–1,080",
+                "dried fruit 1,080"
+              ],
+              [
+                "Sauces & condiments",
+                "111",
+                "10–565",
+                "soy sauce 565"
+              ],
+              [
+                "Vegetables",
+                "84",
+                "17–340",
+                "vegetable crisps 340"
+              ],
+              [
+                "Milk & dairy",
+                "48",
+                "6–295",
+                "ice cream 295"
+              ],
+              [
+                "Fish & seafood",
+                "30",
+                "16–165",
+                "shellfish 165"
+              ],
+              [
+                "Meat",
+                "27",
+                "16–60",
+                "liver sausage 60"
+              ]
+            ]
+          },
+          {
+            "caption": "Dietary nickel intake against the EFSA tolerable daily intake of 13 µg/kg body weight per day. BfR MEAL Study, upper-bound; the share of the tolerable intake reached by the median (P50) and high (P95) consumer.",
+            "columns": [
+              "Population",
+              "Median (P50)",
+              "High (P95)",
+              ""
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1,
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Adults & adolescents",
+                "11%",
+                "24%",
+                ""
+              ],
+              [
+                "Children, 0.5–<5 y",
+                "42%",
+                "82%",
+                "~2% already exceed the TDI"
+              ],
+              [
+                "Children, 1–<2 y (highest)",
+                "45%",
+                "84%",
+                "the most-exposed subgroup"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Grains and grain products are the single largest contributor to children's nickel intake, followed by sugar and confectionery, dairy, and dedicated infant and toddler foods — every one a category the program certifies. Cocoa, nuts, seeds and soy carry the highest concentrations per kilogram, so a product built on those ingredients inherits nickel as a leading concern.",
+          "The exposure sits exactly where the program works. Child dietary nickel already reaches the majority of the tolerable intake, a measurable fraction of young children exceed it, and the foods driving that intake are child-food staples rather than exotic exposures. That is the empirical case for quantifying nickel in every certified lot rather than treating it as a trace afterthought."
+        ],
+        "source_note": "German Federal Institute for Risk Assessment (BfR), Communication 033/2022 — a government total diet study of 840 nationwide food pools (evidence tier A). EFSA's 2020 pan-European reassessment reaches the same conclusion: mean dietary nickel exposure across Member States exceeds the tolerable intake, children most of all."
+      },
       "index_link_slug": "nickel"
     },
     {
@@ -296,6 +1009,13 @@
       "species": "Total elemental tin",
       "thesis": "Inorganic tin migrating from tinplate cans produces only an acute gastrointestinal effect, with a wide margin between regulated canned-food concentrations and the dose that reliably irritates the gut in controlled human challenge, so its maximum level functions chiefly as a sentinel for can-lining integrity rather than a guard against chronic or cumulative toxicity.",
       "toxicology_summary": "The critical endpoint for ingested inorganic tin (the form that dissolves from tinplate into acidic canned foods) is local acute gastrointestinal irritation — nausea, vomiting, abdominal cramps — acting on the gut mucosa; inorganic tin is poorly absorbed (roughly 5 percent, with more than 90 percent excreted in feces) and does not accumulate systemically. Controlled human single-dose challenges placed the robust symptomatic threshold at approximately 1,000 to 1,400 ppm tin in canned fruit juices, well above the canned-product caps set in any major jurisdiction; that robust threshold is the basis for the \"wide margin\" framing. Regulators nonetheless set maximum levels lower, near the range at which the most sensitive individuals have reported gastrointestinal effects — the JECFA evaluation records irritation in some individuals at concentrations near 150 mg/kg in beverages and 250 mg/kg in other canned foods — so the maximum levels sit at that sensitive-individual reported-effect floor rather than at the robust controlled threshold. Organotin compounds are a structurally separate and far more toxic class (lipophilic, well-absorbed, with immune, central-nervous-system and reproductive endpoints at exposures about three orders of magnitude lower), but they arise mainly from seafood and PVC contact materials rather than from the canned-food pathway that the certification's total-elemental-tin measure targets. The principal vulnerable group is infants and young children fed canned baby food, whom EU 2023/915 protects with a 50 mg/kg cap set at one-quarter of the general canned-food cap.",
+      "toxicology_intro": "What the assessment bodies found when they examined inorganic tin, and why a canned-food limit exists despite a wide margin of safety: the acute endpoint that anchors regulation, the narrow population it reaches, and the carcinogenicity question that, for tin, has no answer to give.",
+      "toxicology": [
+        "The endpoint that anchors every tin limit is acute, local, and reversible. Inorganic tin, the stannous (Sn2+) and stannic (Sn4+) forms that dissolve from a tinplate lining into acidic canned food, is poorly absorbed: roughly 5 percent is taken up from the gut and more than 90 percent is excreted in the feces, so it does not build a systemic body burden the way lead or cadmium do. Its toxic action is direct irritation of the gastric and intestinal mucosa, producing nausea, vomiting, and diarrhea. Controlled single-dose human challenges placed the robust symptomatic threshold at approximately 1,000 to 1,400 ppm (mg/kg) tin in canned fruit juice, and ATSDR derived an intermediate-duration oral minimal risk level of 0.3 mg Sn/kg body weight per day from a stannous-chloride NOAEL of 32 mg/kg/day with a hundredfold uncertainty factor. The distinguishing fact about tin, stated plainly, is that the regulated canned-food caps sit well below the concentration that reliably irritates the gut; the limit is precautionary headroom, not a line drawn at the effect level.",
+        "The population that regulation reaches is narrow and the concern is bounded. Because tin occurrence is a packaging phenomenon rather than an intrinsic property of food, the exposed group is whoever eats acidic products from tinplate cans: canned tomato products, fruit and fruit juice, pickled vegetables, and canned beverages, with the dissolution rate governed by content acidity, the presence or absence of an internal lacquer, oxygen, and storage time and temperature. Infants and young children fed canned baby food are the one group given specific protection, because intake normalized to body weight is far higher in a small child; EU 2023/915 sets the canned infant and young-child limit at 50 mg/kg, one-quarter of the general canned-food cap. Even there the concern is a single acute gastrointestinal event rather than a cumulative burden. The chronic effects identified in the supporting animal literature, anemia and reversible liver and kidney changes, appear only at sustained doses far above any realistic dietary intake.",
+        "On carcinogenicity, precision means acknowledging an absence. IARC has never evaluated inorganic tin; no monograph assigns it a carcinogenicity group, and the regulatory record identifies no genotoxic, carcinogenic, developmental, or reproductive endpoint on which a limit could rest. This is the honest opposite of the nickel or cadmium case, and it is worth stating rather than blurring. The one place tin toxicology turns serious is a structurally separate class: the organotin compounds, tributyltin and its relatives, are lipophilic, well absorbed, and immunotoxic, neurotoxic, and reproductively toxic at exposures roughly three orders of magnitude lower, reflected in ATSDR's chronic oral MRL of 0.0003 mg/kg/day for tributyltin oxide against 0.3 mg/kg/day for inorganic tin. But organotins arise from seafood and PVC contact materials, not from the tinplate-can pathway, and they are not what a total-elemental-tin certification measure in canned food is detecting.",
+        "These readings converge. ATSDR, the JECFA evaluation that underlies the Codex maximum levels, the European Commission in EU 2023/915, and EFSA's tolerable-upper-intake opinion all anchor tin regulation on the same acute gastrointestinal endpoint, and none invokes a chronic, cumulative, or carcinogenic basis; the numbers differ only in conservatism, with Codex at 250 and 150 mg/kg for canned foods and beverages and the EU tighter at 200 and 100 mg/kg. Tin's absence from other registers is itself informative: no jurisdiction has found a carcinogenic or reproductive-toxicity basis to list it, and it does not appear on California's Proposition 65 roster, while the United States sets no food action level for tin at all. What this leaves is a limit that functions as a sentinel; an elevated total-tin result flags a corroding, under-lacquered, or over-stored can, a packaging-integrity signal rather than a systemic health hazard. The science came first, and the limits followed it honestly, including where the science declined to find a chronic hazard to guard against."
+      ],
       "why_limited": [
         {
           "agency": "ATSDR",
@@ -342,6 +1062,117 @@
       ],
       "how_regulated": "Binding maximum levels are concentration caps on canned product. EU 2023/915 sets the strictest published caps (200 mg/kg canned food other than beverages, 100 mg/kg canned beverages, 50 mg/kg canned infant/baby foods and formulas) and generally governs; Codex CXS 193-1995 is looser (250 and 150 mg/kg, JECFA-derived). The US FDA sets no action level for tin in food, addressing it instead through Total Diet Study surveillance and food-contact-material guidance — so where the strictest sovereign limit must be found for a non-canned or infant product, the standard reads across from the nearest government value rather than inventing one. In the HMTc infant-and-child-food standards the binding value is the strictest government ML converted to the row's native basis (for example, India FSSAI binds the teething-and-snacks Sn row at 5,000 µg/kg as-sold). See the cert /regulations/ derivation pages — eu-2023-915, codex-cxs-193, india-fssai, and us-fda-c2z — for the side-by-side sovereign comparison; the standard pages, not this page, carry the full number set.",
       "hmtc_treatment": "Tin is a Tier 2 analyte, certified as \"total elemental tin\" under the program's 150% transitional allowance within the Status A–E framework, rather than as a zero-tolerance Tier 1 toxic — a treatment consistent with its acute-only, high-margin, non-cumulative gastrointestinal endpoint. No speciation trigger applies to tin in the certification program: unlike arsenic (reflex to iAs), mercury (MeHg), or chromium (reflex hexavalent-chromium speciation on total-Cr above 100 ppb), tin is measured and limited as total elemental tin. Its operational role is a sentinel for packaging and can-lining integrity — an elevated total-tin result flags a corroding, under-lacquered, or long-stored can rather than a systemic health hazard. Grounded in standards/teething-and-snacks.md (Sn listed Tier 2, HMTc limit 5,000 ppb bound by India FSSAI; the Tier note reads \"Tier 2 (Ni, Al, Sn, Cr) carry a 150% transitional allowance under the program's Status A–E framework\") and the infant-and-child-foods.md manual method note (\"Tier 2 (Ni, Al, Sn, Cr) carry the program's 150% transitional allowance\").",
+      "occurrence": {
+        "intro": "How much tin food actually carries, and how the regulated caps relate to the dose that produces an effect. Tin occurrence is a packaging story rather than a food story, and the numbers separate cleanly along that line; the complete occurrence corpus is on the Heavy Metal Index.",
+        "tables": [
+          {
+            "caption": "Tin by food matrix, compiled on the Heavy Metal Index from ATSDR 2005 (Biego et al. 1999 survey data, Tables 6-2/6-3) and canned-beverage measurement studies (Tarigan et al. 2016). Values are mg/kg wet weight. These are population occurrence values, not safety thresholds; tin occurrence tracks the can rather than the food, so the same product can read orders of magnitude apart in a lacquered versus an unlacquered container.",
+            "columns": [
+              "Food matrix",
+              "Condition or format",
+              "Reported tin (mg/kg)"
+            ],
+            "mono": [
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Canned fruit & vegetables",
+                "unlacquered / mixed cans (survey)",
+                "24–156"
+              ],
+              [
+                "Canned food, general",
+                "unlacquered cans",
+                "up to 100"
+              ],
+              [
+                "Canned food, general",
+                "lacquered cans",
+                "below 25"
+              ],
+              [
+                "Canned beverages",
+                "carbonated, beer, juice",
+                "2.5–5.8"
+              ],
+              [
+                "Canned alcoholic beverages",
+                "—",
+                "~4.5"
+              ],
+              [
+                "Non-canned foods",
+                "not metal-packaged",
+                "below 2"
+              ],
+              [
+                "Meat, milk, dairy, bread, pasta",
+                "non-canned staples",
+                "≤0.003"
+              ]
+            ]
+          },
+          {
+            "caption": "Regulated canned-food tin caps set against the doses that produce an effect, showing the margin that makes a tin maximum level a can-integrity sentinel rather than a health threshold. Values are mg/kg; these are regulatory limits and reported effect concentrations, not occurrence data.",
+            "columns": [
+              "Reference point",
+              "Tin concentration (mg/kg)",
+              "Basis"
+            ],
+            "mono": [
+              1
+            ],
+            "right": [
+              1
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Historical poisoning outbreaks",
+                "250–7,300",
+                "Benoy 1971 (1967 Kuwait to 1890 canned cherries)"
+              ],
+              [
+                "Robust acute-GI threshold, controlled human challenge",
+                "1,000–1,400",
+                "Benoy 1971"
+              ],
+              [
+                "GI effects reported in sensitive individuals",
+                "150–250",
+                "JECFA evaluation (beverages / other canned foods)"
+              ],
+              [
+                "Codex maximum level, canned food (non-beverage)",
+                "250",
+                "CXS 193-1995"
+              ],
+              [
+                "EU maximum level, canned food (non-beverage)",
+                "200",
+                "EU 2023/915"
+              ],
+              [
+                "Codex / EU maximum level, canned beverages",
+                "150 / 100",
+                "CXS 193-1995 / EU 2023/915"
+              ],
+              [
+                "EU maximum level, canned infant & baby food",
+                "50",
+                "EU 2023/915"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "The pattern in the occurrence data has a single driver, which is contact between food acid and an exposed tin surface. Light-colored fruits and juices were historically packed in unlacquered tinplate precisely because dissolved tin reacts with anthocyanin pigments and preserves product color, which is why that category sits at the top of every survey. Modern lacquered linings interrupt the food-to-tin reaction, and the great majority of cans now carry them, which is why routine canned product reads far lower than the historical record and why anything outside a metal can, whether fresh, frozen, glass-packed, or pouched, carries only trace tin indistinguishable from background.",
+          "The reason to measure tin at all is therefore not that the food is intrinsically hazardous but that an elevated result is diagnostic. Rising tin signals a corroding, under-lacquered, or over-stored can, and it is that packaging failure, rather than a chronic toxicological threat, that the maximum level is built to catch before it approaches the range at which the most sensitive individuals report gastrointestinal effects. For the certification program the value is a sentinel of supply-chain and packaging control, which is why tin is carried as a Tier 2 analyte rather than a zero-tolerance toxic; the acute, reversible, high-margin nature of the endpoint is what earns it that treatment."
+        ],
+        "source_note": "Anchor dataset: ATSDR 2005 Toxicological Profile for Tin and Tin Compounds (A-tier US government report), carrying the Biego et al. 1999 by-matrix occurrence survey; corroborated by Tarigan et al. 2016 (canned beverages, B-tier) and the Benoy et al. 1971 controlled human-challenge dose-response (A-tier). Regulatory caps from EU 2023/915 and Codex CXS 193-1995."
+      },
       "index_link_slug": "tin"
     },
     {
@@ -352,6 +1183,13 @@
       "species": "Total elemental aluminum",
       "thesis": "Aluminium is limited because chronic dietary intake accumulates against a low tolerable weekly intake derived from animal neurotoxic, reproductive, and developmental endpoints — corroborated in humans by dialysis encephalopathy and osteomalacia — with renally impaired people, frequent antacid users, and formula-fed infants the most exposed; the resulting body burden is controllable through water treatment and process controls.",
       "toxicology_summary": "Aluminium is a non-essential metal whose principal toxicological targets are the nervous system (neurotoxicity) and bone. Because gastrointestinal absorption is low (typically less than 1 percent) and excretion is renal, the clearest human disease — dialysis encephalopathy (progressive dementia, dysarthria, myoclonus, seizures) and dialysis osteomalacia — arose in hemodialysis patients whose impaired renal excretion and parenteral dialysate route bypassed the GI barrier, making these the proof-of-concept anchor for aluminium's neuro- and bone toxicity (ATSDR 2008). For the general oral-exposure population the regulatory tolerable weekly intake rests on animal neurotoxic, reproductive, and developmental endpoints rather than robust human dietary-cohort data; EFSA judged that this TWI is likely exceeded in a significant part of the European population. The most vulnerable are individuals with impaired renal function (reduced excretion drives body-burden accumulation), frequent users of aluminium-containing antacids (100 to 1000 mg Al/day), and infants on soy-based formula (higher aluminium than milk-based formula or breast milk).",
+      "toxicology_intro": "Why food-safety authorities regulate dietary aluminium, and why the anchor is the nervous system and bone rather than cancer.",
+      "toxicology": [
+        "The endpoint that anchors regulation is chronic, cumulative, and neurological. The EFSA AFC Panel (2008) set a tolerable weekly intake of 1 mg Al/kg body weight, derived not from one pivotal study but by integrating neurotoxic, reproductive, and developmental effects seen across multiple animal studies, with safety factors for interspecies extrapolation and human variability. Aluminium is poorly absorbed from the gut (typically under 1 percent, roughly 0.1 percent from a mixed diet) and is cleared renally, so body burden is governed far more by kidney function than by any single meal. The limit nonetheless bites because exposure is cumulative: aluminium enters the food supply through additives and processing at a scale that, EFSA concluded, causes the tolerable weekly intake to be exceeded in a significant part of the population. It is a weekly-intake problem, not a single-dose one.",
+        "The metal reaches three populations that the reference values are built to protect. People with impaired renal function accumulate aluminium because reduced excretion is the rate-limiting step on body burden. Frequent users of aluminium-containing antacids take in far more than diet delivers, with typical antacid aluminium of 100 to 1000 mg per day dwarfing dietary intake of roughly 5 to 15 mg per day. And formula-fed infants are exposed above the breastfed baseline, soy-based formula more than milk-based. The human proof-of-concept sits in this group: dialysis encephalopathy, presenting as progressive dementia with dysarthria, myoclonus, and seizures, and dialysis osteomalacia, presenting as bone pain and fractures, appeared in 1970s and 1980s hemodialysis patients exposed to aluminium-contaminated dialysate and resolved once dialysate water was treated. That episode is the empirical anchor that aluminium can produce neurological and bone disease at sufficient body burden.",
+        "Route precision is the honest core of the aluminium story. The strongest human disease arose through a parenteral route, contaminated dialysate entering the circulation directly, in patients who could not excrete the metal, not through ordinary oral diet in people with normal kidneys. Those routes reach body burdens that oral dietary exposure does not achieve at any reasonable intake. That distinction bounds the claim: for the general oral-exposure population the dose-response evidence for aluminium disease is weaker than for lead, cadmium, mercury, or arsenic, and the tolerable weekly intake rests largely on animal extrapolation. Aluminium is not regulated as a dietary carcinogen; the decades-long investigation of a link to Alzheimer's disease has not produced consensus, and the dominant view is that aluminium is not a primary causal factor. The defensible position is a real but bounded neuro-and-bone signal, anchored by the dialysis evidence, with the food-safety concern resting on cumulative intake rather than on any single toxic dose.",
+        "The agreement across bodies is what makes the case durable. EFSA's tolerable weekly intake of 1 mg/kg (2008), JECFA's provisional tolerable weekly intake of 2 mg/kg (74th meeting, 2011, WHO TRS 966), and the US ATSDR chronic oral minimal risk level of 1 mg/kg/day are three independent derivations from the same evidence base of animal endpoints plus the dialysis disease record. They genuinely differ, with EFSA the more conservative, which is itself a signal of independent evaluation rather than one body copying another. Aluminium is also unusual in that almost no government sets a per-food maximum concentration; control is exercised through these intake-based reference values, with Australia and New Zealand's FSANZ infant-formula limit the lone food maximum level in force. The science came first and the intake limits followed; where per-food limits do not exist, the gap is stated plainly rather than papered over, which is exactly the posture a certification standard has to be able to defend."
+      ],
       "why_limited": [
         {
           "agency": "EFSA",
@@ -384,6 +1222,101 @@
       ],
       "how_regulated": "Aluminium is unusual among the HMTc analytes in that almost no government sets a per-food concentration maximum level: the derivation tables on the cert standard pages (see /standards/teething-and-snacks and /standards/infant-formula-powder) show blank Al cells for the EU (/regulations/eu-2023-915), UK (/regulations/uk-1881-2006), Codex (/regulations/codex-cxs-193), Canada, China (/regulations/china-gb-2762), India (/regulations/india-fssai), Brazil, and the US FDA (/regulations/us-fda-c2z). The only government aluminium food ML in any jurisdiction is Australia/New Zealand FSANZ Food Standards Code Schedule 19 (/regulations/au-nz-fsanz): 500 µg/kg for infant formula, follow-on formula, and special-medical-purpose products for infants other than preterm products, and 1000 µg/kg for soy-based infant formula, both on a portion-ordinarily-consumed basis. Everywhere else, control is exercised through intake-based reference values rather than a food ML — EFSA's TWI (1 mg Al/kg b.w./week, 2008), JECFA's current PTWI (2 mg Al/kg b.w./week, 74th JECFA meeting 2011), and ATSDR's oral MRL (1 mg Al/kg/day) — which govern total weekly intake, not the concentration in a single food. EFSA and JECFA are separate bodies and their reference values genuinely differ (EFSA 1, JECFA 2). Because no government regulates most product-analyte cells for aluminium, HMTc governs by read-across from the FSANZ value; see the /regulations/ pages for the maximum-level derivations and the Index page (/metals/aluminum) for the intake-based reference values.",
       "hmtc_treatment": "Aluminium (certification species: total elemental aluminium; no speciation trigger, unlike As→iAs, Hg→MeHg, or Cr→Cr-VI) is a Tier 2 analyte in the HMTc program, grouped with Ni, Sn, and Cr. Tier 2 analytes carry a 150% transitional allowance under the program's Status A-E framework, distinguishing them from the Tier 1 zero-tolerance toxics (Pb, Cd, iAs, Hg) that have no established safe threshold. Because only FSANZ Schedule 19 sets any government aluminium ML, HMTc limits are set by disclosed read-across from that value: the teething-and-snacks standard applies 500 µg/kg at face value on an as-sold basis (the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product), while the infant-formula-powder standard converts the FSANZ portion-consumed values at the 8:1 powder-to-liquid ratio to 4000 µg/kg (non-soy) and 8000 µg/kg (soy-based). The Status A-E tiering, the 150% Tier-2 transitional allowance, the regulatory hard-stop, basis conversion, and lot testing operate downstream of the limit regardless of how the number is set.",
+      "occurrence": {
+        "intro": "How much aluminium food actually carries, and how close ordinary intake runs to the tolerable weekly limit.",
+        "tables": [
+          {
+            "caption": "Reported total aluminium in Brazilian commercial infant foods (de Paiva et al. 2020; total Al by ICP-OES on as-sold product, µg/kg). Values are measured occurrence in a category survey, not certification thresholds.",
+            "columns": [
+              "Food group (Brazilian infant-food survey)",
+              "Total Al (µg/kg)",
+              "Note"
+            ],
+            "mono": [
+              1
+            ],
+            "right": [
+              1
+            ],
+            "rows": [
+              [
+                "Petit-suisse (fresh cheese)",
+                "4170",
+                "highest single category measured"
+              ],
+              [
+                "Soy-based infant drink",
+                "2860",
+                "soy protein base"
+              ],
+              [
+                "Mixed-vegetable salty puree",
+                "2310-2760",
+                "high-fibre plant matrix"
+              ],
+              [
+                "Chocolate milk drink",
+                "2175",
+                "cocoa and dairy matrix"
+              ],
+              [
+                "Fruit puree",
+                "1900-2500",
+                "bioaccessible fraction as low as 0.5%"
+              ]
+            ]
+          },
+          {
+            "caption": "Estimated dietary aluminium intake versus the EFSA tolerable weekly intake of 1 mg Al/kg bw/week (EFSA AFC Panel 2008). Figures are EFSA range and point estimates, not measured percentiles, and describe intake rather than any per-food limit.",
+            "columns": [
+              "Population",
+              "Typical intake (mg/kg bw/wk)",
+              "High intake (mg/kg bw/wk)",
+              "Relative to EFSA TWI (1 mg/kg bw/wk)"
+            ],
+            "mono": [
+              1,
+              2
+            ],
+            "right": [
+              1,
+              2
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Adult (European diet)",
+                "0.2",
+                "1.5",
+                "high consumers ~150% of TWI"
+              ],
+              [
+                "Infant, milk-based formula",
+                "0.3",
+                "0.9",
+                "up to ~90% of TWI"
+              ],
+              [
+                "Infant, soy-based formula",
+                "1.1",
+                "—",
+                "~110%, exceeds TWI"
+              ],
+              [
+                "Infant, breast-fed",
+                "<0.07",
+                "—",
+                "under ~7% of TWI"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Aluminium in food is dominated by deliberate additives and by processing, not by the raw commodity. Aluminium-based leavening agents, anti-caking agents, and colorants are the largest food-borne contributors, supplemented by aluminium leached from cookware and packaging during prolonged contact with acidic foods and by aluminium carried in specific ingredients such as whey-protein hydrolysates and fruit components used in infant products. Concentrations therefore track formulation and manufacturing practice far more than geography, and within a single product category the cleanest and most contaminated items can differ by more than an order of magnitude.",
+          "Two features make aluminium worth monitoring even though a single serving is rarely acutely hazardous. First, the toxicological concern is cumulative: intake accrues against a low tolerable weekly value that expert bodies already judge to be exceeded across a meaningful share of the population, so category-level occurrence, not any one lot, is the operative signal. Second, total aluminium overstates the absorbed dose to a degree that varies enormously with the food matrix, because plant fibre and dairy protein bind aluminium and lower its bioaccessibility while low-fibre and high-polyphenol matrices raise it; the populations that combine high occurrence with high intake and low excretion capacity, formula-fed infants and people with impaired renal function, are the ones the reference values are set to protect."
+        ],
+        "source_note": "Occurrence anchored on de Paiva et al. 2020 (Journal of Food Composition and Analysis, A-tier), a 95-sample survey of Brazilian commercial infant foods; intake-versus-TWI figures from the EFSA AFC Panel 2008 Scientific Opinion (A-tier). Both are routed to the Index aluminium page (/metals/aluminum)."
+      },
       "index_link_slug": "aluminum"
     },
     {
@@ -394,6 +1327,13 @@
       "species": "Total; Cr(VI) on trigger",
       "thesis": "Trivalent chromium is a low-toxicity form assumed to dominate in food and long treated as an essential trace element, whereas hexavalent chromium is an IARC Group 1 carcinogen (established on occupational-inhalation evidence and assessed by US EPA as likely carcinogenic by the oral route), so chromium is limited only where a credible hexavalent-chromium pathway exists.",
       "toxicology_summary": "The two chromium species sit on opposite toxicological footings. Trivalent chromium (Cr(III)) showed no adverse effects even at the highest doses in chronic animal studies; EFSA derived a tolerable daily intake of 300 µg Cr(III)/kg body weight per day and concluded current dietary Cr(III) exposure does not raise a public-health concern. Hexavalent chromium (Cr(VI)) is the high-concern species: it enters cells through sulfate/phosphate transporters and is reduced intracellularly through Cr(V)/Cr(IV) intermediates, generating reactive oxygen species and DNA damage (a mutagenic mode of action). The critical oral target organ is the gastrointestinal tract, with small-intestinal adenomas/carcinomas and diffuse epithelial (duodenal) hyperplasia in the pivotal NTP drinking-water bioassay; the most susceptible groups are infants and neonates under 30 months and individuals with chronically elevated stomach pH, because reduced gastric reduction of Cr(VI) to Cr(III) raises the systemically available Cr(VI) dose.",
+      "toxicology_intro": "What the assessment bodies found when they examined chromium, why the answer depends entirely on which chromium they meant, and why that species distinction is what governs whether a dietary limit applies at all.",
+      "toxicology": [
+        "Chromium is two toxicologically different substances sharing a name, and regulation turns on which one is present. Trivalent chromium (Cr(III)), the form that dominates food, produced no adverse effect even at the highest doses tested in chronic animal studies; EFSA derived a tolerable daily intake of 300 µg Cr(III)/kg body weight per day and concluded that current dietary Cr(III) exposure does not raise a public-health concern. Hexavalent chromium (Cr(VI)) is the species of concern. It enters cells through sulfate and phosphate transporters and is reduced intracellularly through Cr(V) and Cr(IV) intermediates, generating reactive oxygen species and DNA damage in a mutagenic mode of action. When Cr(VI) is ingested the gastrointestinal tract is the critical oral target: the pivotal NTP drinking-water bioassay produced small-intestinal adenomas and carcinomas and diffuse epithelial hyperplasia of the duodenum, and the US EPA's 2024 IRIS assessment anchored a chronic oral reference dose of 9 × 10⁻⁴ mg/kg-day on that duodenal lesion. Chromium is not regulated in food the way lead or cadmium are because the two species are not interchangeable, and the dose that reaches tissue depends on how much ingested Cr(VI) survives reduction to Cr(III) before absorption.",
+        "The populations that carry the most risk are defined by that reduction chemistry. Ingested Cr(VI) is partially reduced to Cr(III) in saliva and gastric fluid before systemic absorption, so anything that lowers gastric reducing capacity raises the internal Cr(VI) dose per unit ingested. EPA's IRIS assessment names neonates and infants under 30 months, individuals with chronically elevated stomach pH, people with DNA-repair-deficient or CFTR-mutated backgrounds, the developing fetus, and the elderly as groups for whom the standard reference values may under-protect. Infants are doubly exposed: their gastric pH is higher and less acidic than an adult's, which reduces the efficiency of Cr(VI)-to-Cr(III) conversion and elevates the systemically available dose per unit of Cr(VI) ingested. EFSA's 2014 opinion reached a parallel conclusion from the exposure side, finding low concern for average consumers but a potential concern at upper-bound 95th-percentile Cr(VI) exposure through drinking water for infants, toddlers, and other children. That concern was framed around water rather than food, because food is largely a reducing medium in which Cr(VI) does not persist.",
+        "The carcinogenicity classification is where imprecision does the most damage, so it must be stated by route. IARC classifies hexavalent chromium compounds as Group 1, carcinogenic to humans, but that classification rests on sufficient human evidence for lung and nasal or nasal-sinus cancer in workers who inhaled chromate dust and fume in chromate production, pigment production, and chromium plating; metallic chromium and trivalent chromium are Group 3, not classifiable. The canonical Group 1 tumour sites are therefore inhalation-route occupational cancers, not dietary ones. By the oral route the evidence is weaker and species-specific: the US EPA's 2024 IRIS review assessed Cr(VI) as likely to be carcinogenic to humans by ingestion, a lower weight-of-evidence descriptor than the carcinogenic to humans it applies to inhalation, and derived an oral cancer slope factor of 0.16 (mg/kg-day)⁻¹ (0.27 with age-dependent adjustment factors) from oral-cavity squamous-cell tumours in the animal bioassay. EFSA's margin-of-exposure calculation used the same animal record, with a neoplastic BMDL10 of 1.0 mg Cr(VI)/kg body weight per day for combined small-intestinal adenomas and carcinomas and a non-neoplastic BMDL10 of 0.11 mg/kg body weight per day for duodenal epithelial hyperplasia. The honest summary is that Cr(VI) is a confirmed human carcinogen by inhalation and a plausible oral carcinogen on animal data, and that trivalent chromium carries neither classification.",
+        "These are not the finding of a single body. EFSA, the US EPA, IARC, and California's OEHHA independently characterise chromium along the same species line and converge: the hazard lives in the hexavalent form, the trivalent form does not warrant a dietary limit, and the oral Cr(VI) hazard is real but bounded by the chemistry of the gut. California adds a right-to-know mark of concern without setting a food standard: Proposition 65 lists hexavalent chromium as a carcinogen (1987) and as a developmental and male and female reproductive toxicant (2008), with an oral Maximum Allowable Dose Level of 8.2 µg/day and an inhalation cancer No Significant Risk Level of 0.001 µg/day, both warning thresholds rather than maximum permitted concentrations, and trivalent chromium is not listed at all. The practical consequence explains why no government sets a chromium maximum level in any food: measured chromium in finished food is overwhelmingly trivalent, EFSA found no food Cr(VI) occurrence data and assumed all food chromium was Cr(III), and reported food Cr(VI) is frequently a method artifact of digestion rather than a real exposure. The certification program follows that evidence rather than inventing a number, limiting chromium only where a credible hexavalent pathway exists, through reflex Cr(VI) speciation above a total-chromium trigger. The science drew the species line first; the limits, where they exist, follow it, and where food is concerned the gap is that there is no food limit to follow, a gap the evidence supports leaving visible."
+      ],
       "why_limited": [
         {
           "agency": "IARC",
@@ -426,6 +1366,171 @@
       ],
       "how_regulated": "No government sets a chromium maximum level — total or hexavalent — in any food matrix. In the infant-and-child-foods derivation every sovereign column (EU, UK, Codex, Health Canada, China GB 2762, India FSSAI, Brazil ANVISA, FSANZ, US FDA) is blank for chromium, and direct inspection confirms neither Commission Regulation (EU) 2023/915 (/regulations/eu-2023-915) nor US FDA Closer to Zero (/regulations/us-fda-c2z) carries a chromium entry. The only enforceable Cr(VI)-specific instruments sit in adjacent domains — California's drinking-water Maximum Contaminant Level of 10 µg/L for hexavalent chromium (SWRCB, adopted 2024, effective 1 Oct 2024; an earlier 2014 MCL at the same value was invalidated in 2017 on an inadequate economic-feasibility record before this re-adoption) and the Prop 65 safe-harbor levels above — alongside non-speciated total-chromium drinking-water MCLs (US EPA 100 µg/L; California 50 µg/L); none is a food limit. Because a government-limit lookup returns nothing for food, the standard does not adopt or invent a number: chromium is a no-ML, controlled cell, and the literature baseline is reported one-way at the Heavy Metal Index metal page rather than derived on the certification site.",
       "hmtc_treatment": "Total chromium is a Tier 2 analyte (Tier 2 metals carry the program's 150% transitional allowance under the Status A–E framework), but in infant-and-child-food matrices it is registered 'not material' (n/m) — no standalone numeric ceiling, because no government regulates it and finished food chromium is overwhelmingly trivalent. Instead of an invented number, chromium is controlled by reflex hexavalent-chromium speciation: total chromium is reported, and mandatory Cr(VI) speciation is triggered on any total-chromium result above 100 µg/kg (ppb), with any quantifiable Cr(VI) a hard fail. This control language is confirmed verbatim in tools/standards/cat1-config.json and the compiled Cat-1 standards; it preserves the Tier-1-style zero-tolerance posture for the carcinogenic species while treating trivalent chromium as the low-toxicity, essentially-assumed form.",
+      "occurrence": {
+        "intro": "How much chromium food actually carries, and why the number needs a caveat before it can be read. The occurrence data below are total chromium, not hexavalent chromium; the two must not be conflated, and the certification program treats the total value as a screen rather than a hazard measurement.",
+        "tables": [
+          {
+            "caption": "Total chromium by food — US FDA Total Diet Study FY2018–2020 elemental-analysis summary. Values are µg/kg (ppb) on a prepared, ready-to-eat composite basis: the median (P50), the 95th percentile, and the single highest sample. Reporting limits are 25–50 µg/kg, so a median shown as <50 is a non-detect; n is small (3 subsamples) for several items. These are TOTAL chromium (metal species Cr), not Cr(VI), and are population occurrence values, not safety thresholds.",
+            "columns": [
+              "Food (FDA TDS composite)",
+              "Median P50 µg/kg",
+              "95th pct µg/kg",
+              "Highest sample µg/kg"
+            ],
+            "mono": [
+              1,
+              2,
+              3
+            ],
+            "right": [
+              1,
+              2,
+              3
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "Cheese, American, processed",
+                "300",
+                "390",
+                "400"
+              ],
+              [
+                "Cake, chocolate with chocolate icing",
+                "300",
+                "300",
+                "300"
+              ],
+              [
+                "Fish sticks / patties, frozen, oven-cooked",
+                "200",
+                "380",
+                "400"
+              ],
+              [
+                "Cereal, bran with raisins",
+                "100",
+                "280",
+                "300"
+              ],
+              [
+                "Cereal, oat ring",
+                "50",
+                "275",
+                "300"
+              ],
+              [
+                "Cereal, corn flakes",
+                "67",
+                "75.1",
+                "76"
+              ],
+              [
+                "Cereal, crisped rice",
+                "54",
+                "95.4",
+                "100"
+              ],
+              [
+                "Raisins",
+                "56",
+                "95.6",
+                "100"
+              ],
+              [
+                "Milk, chocolate, reduced fat, fluid",
+                "29",
+                "39.5",
+                "43"
+              ],
+              [
+                "Tortilla, flour",
+                "<50",
+                "92.8",
+                "200"
+              ],
+              [
+                "Beef, ground, pan-cooked",
+                "<50",
+                "100",
+                "600"
+              ],
+              [
+                "Cauliflower, fresh/frozen, boiled",
+                "<50",
+                "<50",
+                "600"
+              ]
+            ]
+          },
+          {
+            "caption": "Health-based guidance values and safe-harbor levels for chromium, by species and route. These are reference points regulators derived, not occurrence and not food maximum levels; the trivalent and hexavalent values are not interchangeable, and the route (oral vs inhalation) is load-bearing. Sources: EFSA (2014), US EPA IRIS (2024), and California OEHHA Proposition 65 as compiled on the Heavy Metal Index.",
+            "columns": [
+              "Reference value / limit",
+              "Value",
+              "Route / species",
+              "Basis"
+            ],
+            "mono": [
+              1
+            ],
+            "right": [
+              1
+            ],
+            "minWidth": "42rem",
+            "rows": [
+              [
+                "EFSA tolerable daily intake, Cr(III)",
+                "300 µg/kg bw/day",
+                "oral, trivalent",
+                "NOAEL 286 mg/kg bw/day; no health concern from food"
+              ],
+              [
+                "US EPA chronic oral RfD, Cr(VI)",
+                "9 × 10⁻⁴ mg/kg-day",
+                "oral, hexavalent",
+                "duodenal diffuse epithelial hyperplasia, female mice (NTP 2008)"
+              ],
+              [
+                "US EPA oral cancer slope factor, Cr(VI)",
+                "0.16 (mg/kg-day)⁻¹",
+                "oral, hexavalent",
+                "oral-cavity squamous-cell tumours; 0.27 with age adjustment"
+              ],
+              [
+                "EFSA BMDL10, neoplastic, Cr(VI)",
+                "1.0 mg/kg bw/day",
+                "oral, hexavalent",
+                "small-intestinal adenomas / carcinomas, mice"
+              ],
+              [
+                "EFSA BMDL10, non-neoplastic, Cr(VI)",
+                "0.11 mg/kg bw/day",
+                "oral, hexavalent",
+                "duodenal epithelial hyperplasia, male mice"
+              ],
+              [
+                "Prop 65 MADL, reproductive",
+                "8.2 µg/day",
+                "oral, hexavalent",
+                "warning threshold, not a food maximum level"
+              ],
+              [
+                "Prop 65 NSRL, cancer",
+                "0.001 µg/day",
+                "inhalation, hexavalent",
+                "warning threshold, not a food maximum level"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Total chromium in the FDA Total Diet Study is broadly but modestly distributed, and the pattern tracks processing and contact more than any single ingredient. The highest and most consistent central values fall on processed and cooked items — processed cheese, baked goods and confectionery, fish portions, and fortified cereals — consistent with chromium's ubiquity and with contact from chromated stainless steel and other chromate-bearing materials in equipment, packaging, and storage. Fresh produce sits largely below the study's reporting limit, punctuated by occasional high single samples that pull maxima well above the typical central value without moving the median. Every one of these values is total chromium, overwhelmingly trivalent, because hexavalent chromium is oxidatively unstable in most food matrices and the routine digestion methods behind occurrence surveys reduce any Cr(VI) to Cr(III) before it is counted.",
+          "This is why total-chromium occurrence, however complete, cannot be read as a hexavalent-chromium exposure signal, and why the program does not set a limit off it. The monitoring question that matters is narrower: in which matrices, and under which processing or water-contact conditions, can hexavalent chromium survive to reach the consumer. The program answers that by holding total chromium as a first-pass screen and triggering reflex hexavalent-chromium speciation above a defined total-chromium threshold, so effort concentrates where a credible Cr(VI) pathway exists rather than being spent treating an essential trace element as a contaminant. Occurrence data anchor the screen; speciation, not the total number, anchors the hazard call."
+        ],
+        "source_note": "Anchor occurrence dataset: US FDA Total Diet Study FY2018–2020 elemental-analysis summary (analyte 'Chromium' = total Cr, A-tier US government survey), prepared/ready-to-eat composites at a 25–50 µg/kg reporting limit. Corroborated by the Heavy Metal Index chromium and hexavalent-chromium metal pages, which catalog the total-Cr occurrence corpus and note that reported food Cr(VI) is largely a method artifact."
+      },
+      "prop65_note": "Hexavalent chromium (Cr-VI) specifically — not total or trivalent chromium — is listed under California Proposition 65 as a carcinogen (February 27, 1987) and separately as a developmental and male and female reproductive toxicant (December 19, 2008). Associated safe-harbor levels are an oral Maximum Allowable Dose Level of 8.2 µg/day (reproductive toxicity) and an inhalation cancer No Significant Risk Level of 0.001 µg/day. Both are warning thresholds, not food maximum levels, and neither sets a permitted concentration in any food. Trivalent chromium is not Prop 65-listed.",
       "index_link_slug": "chromium"
     }
   ]

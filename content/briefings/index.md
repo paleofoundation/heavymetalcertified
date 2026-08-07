@@ -51,6 +51,20 @@ connections:
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
+    <a href="/briefings/the-prop-65-gap" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 9</span>
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Named as a Hazard, Left Unlimited</span>
+        <span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
+        </span>
+      </span>
+      <span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">August 2026</span>
+      </span>
+    </a>
     <a href="/briefings/after-palmquist" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 2</span>
       <span style="min-width:0">
