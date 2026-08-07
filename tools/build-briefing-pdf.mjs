@@ -79,6 +79,22 @@ async function build(slug) {
   console.log(`briefing-pdf: wrote ${OUT}/${slug}.pdf (${(entry.references || []).length} refs)`)
 }
 
-const slugs = process.argv.slice(2)
-const targets = slugs.length ? slugs : ["the-prop-65-gap"]
-for (const s of targets) await build(s)
+const args = process.argv.slice(2)
+const targets = args.includes("--all")
+  ? META.map((m) => m.slug)
+  : args.length
+    ? args
+    : ["the-prop-65-gap"]
+let ok = 0
+const failed = []
+for (const s of targets) {
+  try {
+    await build(s)
+    ok++
+  } catch (err) {
+    failed.push(s)
+    console.error(`briefing-pdf: FAILED on ${s}: ${err.message}`)
+  }
+}
+console.log(`briefing-pdf: ${ok}/${targets.length} rendered${failed.length ? `; failed: ${failed.join(", ")}` : ""}`)
+if (failed.length) process.exitCode = 1
