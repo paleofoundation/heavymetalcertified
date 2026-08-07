@@ -4,6 +4,10 @@ import { pathToRoot, type FullSlug } from "../util/path"
 import { i18n } from "../i18n"
 import { MegaMenu } from "./MegaMenu"
 import style from "./styles/topNav.scss"
+// @ts-ignore — mega-menu disclosure: hover intent, click-outside + Escape to close,
+// full keyboard nav. Adds `.hmi-nav--js` to switch the CSS-only :hover/:focus-within
+// fallback off (that fallback is what leaves a click-opened panel stuck open).
+import topNavScript from "./scripts/topNav.inline"
 // @ts-ignore — homepage hero search (?q= handling) — no-ops off the index slug
 import homeSearchScript from "./scripts/homeSearch.inline"
 
@@ -83,8 +87,11 @@ export default (() => {
   }
 
   TopNav.css = style
-  // No disclosure JS: the mega-menu opens on pure-CSS hover (v3 behaviour). Only
-  // the homepage hero-search wiring ships here.
-  TopNav.afterDOMLoaded = homeSearchScript
+  // afterDOMLoaded is a single slot, so ship both behaviours here, each IIFE-wrapped
+  // to isolate scope: the mega-menu disclosure JS (topNav.inline — hover intent,
+  // click-outside + Escape to close, keyboard nav; sets `.hmi-nav--js` to disable the
+  // CSS-only fallback that leaves click-opened panels stuck open) and the homepage
+  // hero-search wiring.
+  TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();`
   return TopNav
 }) satisfies QuartzComponentConstructor
