@@ -31,3 +31,45 @@ out of sync with their generators (a `git diff` appears the moment anyone runs
 `content/standards/` on its own commit — deliberately out of scope for the analyte
 pilot, which touches only `content/analytes/`, the analyte data, the generator, and
 the nav.
+
+## 2026-08-08 — briefings up-to-dateness audit: taxonomy-count drift vs published manual (Karen's call)
+
+Full audit of all 11 briefings (`data/briefings/*.md` + `featured/`). `hmtc-primer`
+read in full; the rest swept for the high-risk staleness vectors (methodology
+framework language, percentile framing, category/metal/analyte counts, banned
+superlatives, non-profit misstatements, entity naming).
+
+**Clean bill — current and internally consistent:**
+- Methodology matches Method v2.0 (government-limit default; Tier-1 "stricter-of"
+  occurrence; P97/P45). No stale P90/P10/80th-percentile/"30 percent" framing anywhere.
+- 8 metals / 10 analytes; Tier 1 = Pb, Cd, iAs, MeHg; Tier 2 = Ni, Sn, Al, Cr-VI;
+  statuses A–E; 150% Tier-2 allowance — all correct and consistent across briefings.
+- No banned superlatives ("first and only", etc.). The only "nonprofit" strings refer
+  to the Non-GMO Project (a factual historical reference), not to ICS/HMTc.
+- Entity naming, DOI (`zenodo.20270512` = 2026 Edition), USPTO serial, ISO 17025 —
+  consistent and unchanged.
+
+**One systematic staleness finding — awaiting Karen's decision (deliberately NOT auto-fixed):**
+Three briefings state a **"23-category framework"** —
+`data/briefings/hmtc-primer.md:17`, `after-palmquist.md:63`,
+`defense-counsel-briefing.md:47` — and `hmtc-primer.md:23` alone states Category 1 has
+**"Fifteen specific product chapters."**
+
+The current canonical taxonomy
+(`heavy-metal-index/data/taxonomy/hmtc-v2.json`, v2.2 dated 2026-06-09) has **35
+categories** and recut **Category 1 to 9 subcategories.**
+
+Not auto-corrected because these figures match the **published, DOI'd 2026 Program
+Manual** (`zenodo.20270512`), which the primer names as "the controlling text."
+Flipping the briefings to 35/9 while the cited manual says 23/15 would make these
+defense-counsel documents contradict their own controlling source — the exact attack
+surface they are written to avoid. Reconciliation is a positioning + manual-versioning
+call for Karen:
+- (a) update the published manual's framework scope, then propagate 23→35 and 15→9; or
+- (b) reframe to version-proof phrasing ("a multi-category framework, infant and child
+  food first") that pins no number — removes the maintenance liability entirely; or
+- (c) leave as-is (conservative understatement; not a false claim).
+
+Recommendation: (b) for the framework count; hold 15→9 for the Cat-1 chapters until the
+9-subcategory web edition of the manual ships. Everything else in the briefings is
+current.
