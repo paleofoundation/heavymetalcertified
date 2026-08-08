@@ -73,3 +73,12 @@ call for Karen:
 Recommendation: (b) for the framework count; hold 15→9 for the Cat-1 chapters until the
 9-subcategory web edition of the manual ships. Everything else in the briefings is
 current.
+
+**Resolved 2026-08-08 (option b), per Karen's delegation.** All three briefings reworded
+to "a planned multi-category framework" and the primer's chapter count dropped ("the
+product-subcategory chapters …") — accurate, non-contradicting, maintenance-free. Source
++ generated `content/briefings/` updated via `import-briefings`. **Still open:** the three
+briefing PDFs (`hmtc-primer`, `after-palmquist`, `defense-counsel-briefing`) were NOT
+regenerated — that needs `npm i -D @react-pdf/renderer` + `build-briefing-pdf.mjs`, which
+is risky here (cert `node_modules` is symlinked to the index's, and the repo has parallel
+WIP). Regenerate those three PDFs in a clean pass so the downloads match the pages.
