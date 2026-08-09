@@ -85,6 +85,12 @@ export const navPanels: NavPanel[] = [
       "Eight metals, ten analytes. Each page states, from the government and expert-body record and the occurrence data, why the metal is limited and why the program monitors it.",
     groups: [
       {
+        heading: "Start here",
+        children: [
+          { label: "The Big 8 — eight metals, not four", slug: "big-8" },
+        ],
+      },
+      {
         heading: "Tier 1 — zero-tolerance toxics",
         children: [
           { label: "Lead", slug: "analytes/lead" },
@@ -176,6 +182,7 @@ export const navPanels: NavPanel[] = [
       {
         heading: "How it works",
         children: [
+          { label: "The Big 8 — why eight metals", slug: "big-8" },
           { label: "Program structure & gates", slug: "program/structure" },
           { label: "Two remediation pathways", slug: "program/two-pathways" },
         ],
