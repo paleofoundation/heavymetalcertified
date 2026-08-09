@@ -792,3 +792,16 @@ header.hmi-topnav-shell { display: block; }
 // Body links are regular weight (the design never semibolds links). Belt-and-
 // suspenders over the base.scss fix in case a component rule re-bolds them.
 .wiki-content a { font-weight: 400 !important; }
+
+// Inline numeric citations: authored as [n] in prose, superscripted sitewide by
+// the SuperscriptCitations transformer. Reference-list markers, links, and code
+// are skipped by the transformer, so this only styles true inline citations.
+sup.hmtc-cite {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.66em;
+  font-weight: 400;
+  line-height: 0;
+  color: #9f2727;
+  white-space: nowrap;
+  margin-left: 0.5px;
+}

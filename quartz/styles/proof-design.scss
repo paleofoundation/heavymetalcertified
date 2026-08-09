@@ -54,17 +54,24 @@
 
 /* No pill on any internal link anywhere in the build, default OR hover —
    overrides the Quartz base a.internal / tag-link background. The hero CTA
-   buttons opt out: they are internal links that carry a real button skin. */
+   buttons opt out: they are internal links that carry a real button skin.
+   NB: these are intentionally NOT !important. The `:not()` chain already
+   outranks the Quartz base `a.internal` rule on specificity, so the pill is
+   removed from prose links — while any link that sets its OWN background /
+   padding inline (card links: analyte panel, product cards, etc.) keeps it,
+   because an inline style outranks a non-!important rule. The previous
+   !important form clobbered those cards to transparent-over-grid + zero
+   padding, which read as a "weird background colour" on card grids. */
 a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn),
 a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn) {
-  background: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
+  background: none;
+  border-radius: 0;
+  padding: 0;
 }
 a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover,
 a.internal:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):focus,
 a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover {
-  background: none !important;
+  background: none;
 }
 
 /* ---------- top nav (white) ---------- */

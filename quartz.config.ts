@@ -108,7 +108,12 @@ const config: QuartzConfig = {
       Plugin.AutoLink(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      // Latex plugin removed: prose uses bare "$" for dollar amounts, which
+      // remark-math/KaTeX was parsing as inline math (rendering $-delimited
+      // spans as italic serif formulae). No page uses real $$…$$ math.
+      // Superscript inline [n] citation markers sitewide (skips bibliography
+      // markers, links, code, and data-no-cite regions).
+      Plugin.SuperscriptCitations(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
