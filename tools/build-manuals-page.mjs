@@ -25,13 +25,20 @@ const STATIC_DIR = path.join(repoRoot, "content/static/manuals")
 const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8"))
 fs.mkdirSync(OUT_DIR, { recursive: true })
 
+// A manual's live download is its served `download_pdf` (a consolidated PDF committed
+// under content/static/manuals/) when present, else the copied `pdf`. It counts as
+// published when either exists — so a custom_landing manual whose web edition has moved
+// ahead of the deposited volume goes live on the served v2, not on the stale deposit.
+const servedDownload = (m) =>
+  m.download_pdf && fs.existsSync(path.join(STATIC_DIR, m.download_pdf)) ? `/static/manuals/${m.download_pdf}` : null
+
 const published = []
 const pending = []
 for (const m of manifest.manuals) {
-  const pdfPath = path.join(PDF_DIR, m.pdf)
-  const live = m.status === "published" && fs.existsSync(pdfPath)
-  if (m.status === "published" && !fs.existsSync(pdfPath)) {
-    console.warn(`  WARNING: ${m.slug} is status:published but PDF missing at ${m.pdf} — listing as pending.`)
+  const depositExists = fs.existsSync(path.join(PDF_DIR, m.pdf))
+  const live = m.status === "published" && (servedDownload(m) || depositExists)
+  if (m.status === "published" && !servedDownload(m) && !depositExists) {
+    console.warn(`  WARNING: ${m.slug} is status:published but neither a served download_pdf nor data/manuals/${m.pdf} exists — listing as pending.`)
   }
   if (live) published.push(m)
   else pending.push(m)
@@ -94,14 +101,25 @@ const edition = primary ? primary.edition : "2026"
 const pubRows = published
   .map((m) => {
     const meta = `${m.edition} Edition &middot; ${num(m.subcategories)} subcategor${m.subcategories === 1 ? "y" : "ies"} &middot; ${num(m.pages)} pp`
+    const dl = servedDownload(m)
+    const btnStyle = `font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap`
+    // Title links to the landing page for a custom_landing manual; the button is the live
+    // download (served v2 when present), so the row offers the download IN ADDITION to the
+    // title's page link — matching the /standards card.
+    const title = m.custom_landing
+      ? `<a href="/manuals/${m.slug}" style="color:#2b1f1f;text-decoration:none">${m.title}</a>`
+      : m.title
+    const button = dl
+      ? `<a href="${dl}" download="download" style="${btnStyle}">Download PDF</a>`
+      : m.custom_landing
+        ? `<a href="/manuals/${m.slug}" style="${btnStyle}">Read the standard</a>`
+        : `<a href="/static/manuals/${m.pdf}" download="download" style="${btnStyle}">Download PDF</a>`
     return `    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0">
-        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">${m.title}</div>
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">${title}</div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">${meta}</div>
       </div>
-      ${m.custom_landing
-        ? `<a href="/manuals/${m.slug}" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>`
-        : `<a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>`}
+      ${button}
     </div>`
   })
   .join("\n")

@@ -48,15 +48,15 @@
       "slug": "infant-and-child-foods",
       "edition": "2026",
       "pdf": "HMTc-Infant-and-Child-Foods-Program-Manual-2026.pdf",
+      "download_pdf": "HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf",
       "status": "published",
-      "doi": "10.5281/zenodo.20270512",
+      "doi": null,
       "subcategories": 9,
       "pages": 9,
-      "published_date": "2026-05-18",
-      "revised_date": "2026-06-18",
-      "evidence_note": "Standalone Infant and Child Foods Program Manual (the 384-page volume formerly mislabeled here as the 'master' aggregate). Defensibility-audited and publicly deposited on Zenodo (DOI 10.5281/zenodo.20270512); revision 2026-06-18 incorporates the Expedited Baseline (Governance §4.5) and Lot Testing Schedule v2.1. First category manual cleared for publication.",
+      "published_date": "2026-08-06",
+      "evidence_note": "SERVED artifact is the consolidated v2 (download_pdf): the current nine-subcategory Method v2.0 standard, rendered to content/static/manuals/ by tools/build-cat1-manual-pdf.mjs from the SAME compiled records the web edition reads, so the download cannot drift from the master matrix. `pdf` is the earlier 384-page single-subcategory DEPOSITED volume (Zenodo concept 10.5281/zenodo.20270511; v0 20270512 2026-05-18, rev 20771543 2026-06-20) — kept in data/manuals for the record and to satisfy the presence gate, but NEVER served against this 9-subcategory edition (serving a stale standard is a Daubert self-harm). The deposited editions and their DOIs stay citable in the version-history edition table on the manual page; the current v2 has no DOI yet (Crossref deposit pending), which is expected.",
       "custom_landing": true,
-      "landing_note": "Web edition current (9 subcategories, 2026-08-06). The consolidated PDF predates the full-category expansion and is being regenerated; the per-subcategory pages are individually citable in the meantime."
+      "landing_note": "Web edition current (9 subcategories, 2026-08-06, Method v2.0). The consolidated v2 PDF is generated from the same data and is downloadable here; the earlier 384-page deposited editions remain citable on Zenodo via the edition record."
     }
   ]
 }

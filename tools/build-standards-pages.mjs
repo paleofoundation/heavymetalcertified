@@ -248,12 +248,19 @@ const H2 =
   'style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px"'
 
 // Published manuals from the manifest (bound editions). Only status:published.
+// A manual's live download is its served `download_pdf` when present (a consolidated
+// PDF committed under content/static/manuals/ — used when the web edition has moved
+// ahead of the deposited volume); otherwise the copied `pdf`. A manual counts as
+// published when either exists, so it never depends solely on the archival deposit.
+const STATIC_MANUALS = path.join(repoRoot, "content/static/manuals")
+const servedDownload = (m) =>
+  m.download_pdf && fs.existsSync(path.join(STATIC_MANUALS, m.download_pdf)) ? `/static/manuals/${m.download_pdf}` : null
+const manualLive = (m) =>
+  m.status === "published" && (servedDownload(m) || fs.existsSync(path.join(repoRoot, "data/manuals", m.pdf)))
 let publishedManuals = []
 try {
   const mm = JSON.parse(fs.readFileSync(path.join(repoRoot, "data/manuals/manifest.json"), "utf8"))
-  publishedManuals = (mm.manuals || []).filter(
-    (m) => m.status === "published" && fs.existsSync(path.join(repoRoot, "data/manuals", m.pdf)),
-  )
+  publishedManuals = (mm.manuals || []).filter(manualLive)
 } catch {
   publishedManuals = []
 }
@@ -264,11 +271,20 @@ const editionRows = publishedManuals.length
   ? publishedManuals
       .map((m) => {
         const meta = `${m.edition} Edition &middot; ${m.subcategories || "—"} subcategor${m.subcategories === 1 ? "y" : "ies"} &middot; ${m.pages ? m.pages + " pp" : "—"}`
+        // Title links to the landing page for a custom_landing manual; the button is the
+        // live download. When a served download_pdf exists the button downloads it (so the
+        // card offers Download-PDF IN ADDITION to the title's page link); otherwise fall
+        // back to "Read the standard" (custom_landing) or the copied pdf.
+        const dl = servedDownload(m)
+        const btnStyle = `font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap`
+        const button = dl
+          ? `<a href="${dl}" download="download" style="${btnStyle}">Download PDF</a>`
+          : m.custom_landing
+            ? `<a href="/manuals/${m.slug}" style="${btnStyle}">Read the standard</a>`
+            : `<a href="/static/manuals/${m.pdf}" download="download" style="${btnStyle}">Download PDF</a>`
         return `    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0"><div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${m.custom_landing ? `<a href="/manuals/${m.slug}" style="color:#2b1f1f;text-decoration:none">${m.title}</a>` : m.title}</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">${meta}</div></div>
-      ${m.custom_landing
-        ? `<a href="/manuals/${m.slug}" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>`
-        : `<a href="/static/manuals/${m.pdf}" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>`}
+      ${button}
     </div>`
       })
       .join("\n")

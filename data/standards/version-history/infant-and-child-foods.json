@@ -12,9 +12,9 @@
       "status": "current",
       "doi": null,
       "doi_pending": "pending (Crossref)",
-      "pdf": null,
+      "pdf": "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf",
       "permalink": "/manuals/infant-and-child-foods",
-      "summary": "Reorganized to the nine rendered subcategories under the government-limit default (Method v2.0). Consolidated PDF in preparation; a DOI is minted on deposit."
+      "summary": "Reorganized to the nine rendered subcategories under the government-limit default (Method v2.0). Consolidated, version-pinned PDF now published (v2); a DOI is minted on deposit."
     },
     {
       "version": "2026 deposit (rev.)",
