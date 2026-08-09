@@ -1,0 +1,59 @@
+{
+  "_note": "Editorial sidecar for tools/build-cert-regulation-pages.mjs. The register (infant-instruments.json) is exported from the Heavy Metal Index regulatory register and MUST NOT carry editorial prose — a re-export would clobber it. This file holds the small set of things the generator cannot derive from the register: each instrument's legal NATURE (binding law / guidance / reference standard), and the CURATED, one-way cert→index cross-links (the firewall permits outbound citations to heavymetalindex.com only; the cert site never imports index pages). Every field is optional; the generator produces a complete page from data alone when an entry is absent. index_regulator/index_deepdives hrefs were verified 200 on 2026-08-09.",
+  "instruments": {
+    "eu-2023-915": {
+      "nature": "binding",
+      "index_regulator": { "label": "European Commission on the Heavy Metal Index", "href": "https://heavymetalindex.com/regulators/eu-commission" },
+      "index_deepdives": [
+        { "label": "EFSA — the tolerable intakes these levels rest on", "href": "https://heavymetalindex.com/regulators/efsa" },
+        { "label": "EU nickel maximum levels — Reg. (EU) 2024/1987", "href": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels" }
+      ],
+      "scope_extra": "It is the broadest infant and child food set tracked here and, alongside Brazil, the most complete: six of the eight HMTc metals carry a level, and it is the only tracked instrument to set an infant-relevant nickel level."
+    },
+    "uk-1881-2006": {
+      "nature": "binding",
+      "index_regulator": { "label": "European Commission on the Heavy Metal Index", "href": "https://heavymetalindex.com/regulators/eu-commission" },
+      "scope_extra": "It is the pre-2023 EU contaminants framework assimilated into Great Britain law at withdrawal, so its levels track the earlier EU text rather than the current Regulation (EU) 2023/915."
+    },
+    "codex-cxs-193": {
+      "nature": "reference-standard",
+      "index_regulator": { "label": "Codex Alimentarius on the Heavy Metal Index", "href": "https://heavymetalindex.com/regulators/codex" },
+      "index_deepdives": [
+        { "label": "JECFA — the FAO/WHO expert body behind the Codex levels", "href": "https://heavymetalindex.com/regulators/jecfa" }
+      ],
+      "scope_extra": "Codex levels are not law in any single country; they are the FAO/WHO baseline that national limits are written against and measured by, which is why a low Codex count can still anchor a global reading."
+    },
+    "canada-contaminants": {
+      "nature": "binding",
+      "scope_extra": "Health Canada carries contaminant limits by reference under the Food and Drug Regulations rather than in a single consolidated table, so its tracked infant and child food set is narrow."
+    },
+    "china-gb-2762": {
+      "nature": "binding",
+      "scope_extra": "GB 2762 is unusual in tracking total arsenic and total chromium alongside the inorganic-arsenic and lead levels most bodies set, so it appears in comparisons where few others do."
+    },
+    "india-fssai": {
+      "nature": "binding",
+      "scope_extra": "The FSSAI set is one of the few tracked instruments to carry a total-arsenic and a tin level for infant and child food, and its lead level sits above the 10 µg/kg most bodies converge on."
+    },
+    "brazil-anvisa": {
+      "nature": "binding",
+      "scope_extra": "ANVISA RDC 722/2022 is, with the EU, the broadest infant and child food set tracked here, covering the same six metals across a wide span of product categories."
+    },
+    "gso-193": {
+      "nature": "regional-standard",
+      "scope_extra": "GSO 193 is the Gulf Standardization Organization contaminants standard adopted across the GCC states; only its infant and child food lead level is tracked here."
+    },
+    "au-nz-fsanz": {
+      "nature": "binding",
+      "scope_extra": "The Australia New Zealand Food Standards Code is the only tracked instrument to set an infant-relevant aluminium level, and it states arsenic as total rather than inorganic."
+    },
+    "us-fda-c2z": {
+      "nature": "guidance",
+      "index_regulator": { "label": "US FDA on the Heavy Metal Index", "href": "https://heavymetalindex.com/regulators/us-fda" },
+      "index_deepdives": [
+        { "label": "FDA Closer to Zero — 10 ppb lead action level for baby food", "href": "https://heavymetalindex.com/regulations/fda-ctz-Pb-babyfood-10ppb" }
+      ],
+      "scope_extra": "Closer to Zero action levels are guidance, not binding maximum levels: they signal the concentration at which the FDA may act, and the United States sets no binding food maximum level for these metals."
+    }
+  }
+}
