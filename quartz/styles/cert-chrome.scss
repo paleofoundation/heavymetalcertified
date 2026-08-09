@@ -379,6 +379,14 @@ header.hmi-topnav-shell::after {
     -webkit-overflow-scrolling: touch;
     border-top: 1px solid #f2ece7;
     padding-top: 8px;
+    // This same <nav> also carries .hmi-topnav-menu, and topNav.scss's
+    // `@media not $desktop` block sets that class to position:absolute +
+    // display:none (its burger pattern). Unreset, it lifts the strip out of
+    // the bar's flex flow: it stops wrapping to row 2 and only the first item
+    // stays on-screen, the rest overflowing off the right edge with no burger
+    // to reach them. This design keeps the nav in flow as a scroll strip.
+    position: static !important;
+    display: flex !important;
   }
   .hmtc-nav .hmi-nav-list {
     display: flex !important;
@@ -392,8 +400,12 @@ header.hmi-topnav-shell::after {
     flex: 0 0 auto !important;
     grid-template-columns: none !important;
     border: 0 !important;
+    // topNav.scss's mobile rules set width:100% on the item and its link (for a
+    // vertical burger drawer). Left unreset, each strip item stretches to the
+    // full viewport so only one shows at a time. Hug the label instead.
+    width: auto !important;
   }
-  .hmtc-nav .hmi-nav-top { padding: 6px 12px !important; border-bottom: 2px solid transparent; }
+  .hmtc-nav .hmi-nav-top { padding: 6px 12px !important; border-bottom: 2px solid transparent; width: auto !important; }
   .hmtc-nav .hmi-nav-toggle { display: none !important; }
   .hmtc-nav .hmi-nav-panel { display: none !important; }
 }

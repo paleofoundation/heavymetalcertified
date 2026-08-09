@@ -186,7 +186,11 @@ const cssVars = [
 
 let mermaidImport = undefined
 document.addEventListener("nav", async () => {
-  const center = document.querySelector(".center") as HTMLElement
+  // This build's page shell has no `.center` element (the cert layout uses
+  // `.proof-main`/`.wiki-content`), so guard rather than dereference null —
+  // otherwise every page load throws an uncaught `querySelectorAll of null`.
+  const center = document.querySelector(".center") as HTMLElement | null
+  if (!center) return
   const nodes = center.querySelectorAll("code.mermaid") as NodeListOf<HTMLElement>
   if (nodes.length === 0) return
 
