@@ -26,12 +26,15 @@ const KIND: Record<string, string> = {
   mark: "Mark",
   article: "Analysis",
   "articles-index": "Directory",
+  regulation: "Regulation reference",
+  "regulation-index": "Record of law",
 }
 
 // First slug segment → breadcrumb section label + hub slug.
 const SECTION: Record<string, string> = {
   standards: "Standards",
   analytes: "Analytes",
+  regulations: "Regulation references",
   briefings: "Briefings",
   manuals: "Manuals",
   program: "Program",
@@ -66,6 +69,12 @@ export default (() => {
     const isHub = !String(slug).includes("/")
     const sectionLabel = SECTION[seg]
     const sectionHref = `${base}/${seg}`
+    // The breadcrumb leaf. A page may set a short `breadcrumb_leaf` (e.g. the
+    // instrument reference "GB 2762-2022") when its full title is long; the leaf
+    // otherwise falls back to the title. The section crumb is dropped when it
+    // would just repeat the leaf (a section hub linking to itself).
+    const leaf = fm.breadcrumb_leaf ? String(fm.breadcrumb_leaf) : title
+    const showSection = Boolean(sectionLabel) && !isHub && sectionLabel !== leaf
 
     // Snapshot rows. An explicit `snapshot:` frontmatter array wins (used by the
     // static pages ported from the comp); otherwise derive per screen type.
@@ -103,6 +112,20 @@ export default (() => {
     // dangerouslySetInnerHTML is on trusted content only.
     const dekHtml = fm.dek_html ? String(fm.dek_html) : undefined
     const hasSnapshot = snapshot.length > 0
+    // The snapshot box title. Defaults to "Page snapshot"; a regulation detail
+    // page overrides it with "Instrument".
+    const snapTitle = fm.snapshot_title ? String(fm.snapshot_title) : "Page snapshot"
+    // Explicit meta stamps (e.g. "PRIMARY-VERIFIED · 2022-06-30"). When present
+    // they replace the derived author/updated row. A single optional action link
+    // (e.g. "Primary source ↗") may sit at the end of the meta row.
+    const heroMeta: string[] = Array.isArray(fm.hero_meta) ? (fm.hero_meta as any[]).map(String) : []
+    const heroAction =
+      fm.hero_action && typeof fm.hero_action === "object"
+        ? {
+            label: String((fm.hero_action as any).label ?? ""),
+            href: String((fm.hero_action as any).href ?? "#"),
+          }
+        : null
 
     return (
       <section class="hmtc-heroband">
@@ -110,14 +133,14 @@ export default (() => {
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">
               <a href={base || "/"}>HMTc</a>
-              {sectionLabel && !isHub ? (
+              {showSection ? (
                 <>
                   <span>/</span>
                   <a href={sectionHref}>{sectionLabel}</a>
                 </>
               ) : null}
               <span>/</span>
-              <span class="hmtc-hb-leaf">{title}</span>
+              <span class="hmtc-hb-leaf">{leaf}</span>
             </nav>
             <div class="hmtc-hb-titlerow">
               <h1 class="hmtc-hb-title">{title}</h1>
@@ -128,21 +151,32 @@ export default (() => {
             ) : dek ? (
               <p class="hmtc-hb-dek">{dek}</p>
             ) : null}
-            {author || updated ? (
+            {heroMeta.length || author || updated || (heroAction && heroAction.label) ? (
               <div class="hmtc-hb-meta">
-                {author ? (
-                  <span>
-                    Author {author}
-                    {orcid ? ` · ORCID ${orcid}` : ""}
-                  </span>
+                {heroMeta.length ? (
+                  heroMeta.map((s) => <span class="hmtc-hb-stamp">{s}</span>)
+                ) : (
+                  <>
+                    {author ? (
+                      <span>
+                        Author {author}
+                        {orcid ? ` · ORCID ${orcid}` : ""}
+                      </span>
+                    ) : null}
+                    {updated ? <span class="hmtc-hb-stamp">UPDATED {updated}</span> : null}
+                  </>
+                )}
+                {heroAction && heroAction.label ? (
+                  <a class="hmtc-hb-action" href={heroAction.href}>
+                    {heroAction.label}
+                  </a>
                 ) : null}
-                {updated ? <span class="hmtc-hb-stamp">UPDATED {updated}</span> : null}
               </div>
             ) : null}
           </div>
           {hasSnapshot ? (
             <div class="hmtc-hb-snap">
-              <div class="hmtc-hb-snap-head">Page snapshot</div>
+              <div class="hmtc-hb-snap-head">{snapTitle}</div>
               <div class="hmtc-hb-snap-body">
                 {snapshot.map(([k, v]) => (
                   <div class="hmtc-hb-snap-row">

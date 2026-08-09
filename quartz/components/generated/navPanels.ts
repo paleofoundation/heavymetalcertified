@@ -106,6 +106,43 @@ export const navPanels: NavPanel[] = [
     allLabel: "All ten analytes",
   },
   {
+    key: "regulations",
+    label: "Regulations",
+    panelLabel: "Regulation references",
+    slug: "regulations",
+    blurb:
+      "The sovereign instruments the HMTc standards cite. Each records the primary-source maximum levels a standard adopts when that jurisdiction binds a limit — a record of law, never an HMTc threshold.",
+    groups: [
+      {
+        heading: "EU & international",
+        children: [
+          { label: "European Union (EU 2023/915)", slug: "regulations/eu-2023-915" },
+          { label: "United Kingdom (1881/2006)", slug: "regulations/uk-1881-2006" },
+          { label: "Codex (CXS 193)", slug: "regulations/codex-cxs-193" },
+          { label: "Gulf States (GSO 193)", slug: "regulations/gso-193" },
+        ],
+      },
+      {
+        heading: "National limits",
+        children: [
+          { label: "China (GB 2762)", slug: "regulations/china-gb-2762" },
+          { label: "India (FSSAI)", slug: "regulations/india-fssai" },
+          { label: "Brazil (ANVISA)", slug: "regulations/brazil-anvisa" },
+          { label: "Australia & NZ (FSANZ)", slug: "regulations/au-nz-fsanz" },
+          { label: "Canada (contaminants list)", slug: "regulations/canada-contaminants" },
+        ],
+      },
+      {
+        heading: "United States",
+        children: [
+          { label: "US FDA (Closer to Zero)", slug: "regulations/us-fda-c2z" },
+          { label: "California (Prop 65)", slug: "regulations/ca-prop65" },
+        ],
+      },
+    ],
+    allLabel: "All 11 references",
+  },
+  {
     key: "manuals",
     label: "Manuals",
     panelLabel: "Program Manuals",
