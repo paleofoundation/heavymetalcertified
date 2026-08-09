@@ -25,7 +25,7 @@ rail_box:
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The web standards below and the Program Manuals are the same content at two granularities. The pages are per subcategory and always current; each manual is the citable bound edition of one category, carrying the governance policy, the lot testing schedule and the full derivation of every limit it publishes.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid #f2ece7">
-      <div style="min-width:0"><div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Infant and Child Foods</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">2026 Edition &middot; 9 subcategories &middot; 9 pp</div></div>
+      <div style="min-width:0"><div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/infant-and-child-foods" style="color:#2b1f1f;text-decoration:none">Infant and Child Foods</a></div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">2026 Edition &middot; 9 subcategories &middot; 9 pp</div></div>
       <a href="/manuals/infant-and-child-foods" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>
     </div>
   </div>
