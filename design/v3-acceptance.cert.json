@@ -19,6 +19,32 @@
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": ".hmi-related-title", "prop": "font-weight", "want": "500", "note": "See also is a label, not bold." }
+    ],
+    "/regulations/eu-2023-915": [
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1", "note": "the sitewide sticky top-bar; a regulation reference page carries the same chrome as every content page (v3 is not type-gated)." },
+      { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "src": "CHROME-SPEC §1.4", "note": "the burgundy record-of-law hero band. The #9f2727 accent must survive the cascade here and at the table head." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Regulation reference' KIND badge (HeroBand, type: regulation)." },
+      { "sel": ".hmtc-hb-title", "prop": "font-family", "want": "Lora", "match": "contains", "note": "hero title is the Lora display serif." },
+      { "sel": ".wiki-content thead tr", "prop": "count", "want": 1, "note": "the one canonical limits table. A regulation page renders exactly one <thead> (grouped-by-analyte maximum levels)." },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
+      { "sel": ".wiki-content thead th", "prop": "color", "want": "#ffffff", "note": "table-head labels are white on burgundy." },
+      { "sel": ".wiki-content thead th", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains", "note": "table-head labels are the mono UI face (COMPONENTS §1)." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": "aside.snav", "prop": "position", "want": "sticky", "note": "the 'On this page' rail sticks below the top-bar." },
+      { "sel": "aside.snav", "prop": "top", "want": "92px" },
+      { "sel": "sup.hmtc-cite", "prop": "count", "want": 0, "src": "COMPONENTS §2", "note": "a reference page RECORDS law; it carries no inline citation superscripts (unlike a briefing/article). The citation-marker COLOUR canon (#9f2727, not link blue) is asserted on /articles, the surface that cites. If a sup.hmtc-cite appears here, a bracketed [N] leaked into transcribed provision text — investigate the register export, do not restyle." },
+      { "sel": "sup.cite > a", "prop": "count", "want": 0 }
+    ],
+    "/regulations": [
+      { "sel": "header", "prop": "height", "want": "68px" },
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "note": "the register index carries the same burgundy hero band as an instrument page." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Record of law' KIND badge (HeroBand, type: regulation-index)." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
     ]
   }
 }
