@@ -1,0 +1,41 @@
+{
+  "note": "Accepted layout-liveness findings + per-component shipped-asset snapshot (ratchet). Findings: draining backlog, do not grow. componentAssets: dropping one flags ASSET_REGRESSION. Re-run --update-baseline after intended changes.",
+  "accepted": [
+    "STALE_GATE_ENTRY::CiteThisPage"
+  ],
+  "componentAssets": {
+    "Head": [],
+    "TopNav": [
+      "./scripts/homeSearch.inline",
+      "./scripts/topNav.inline",
+      "./styles/topNav.scss"
+    ],
+    "Corrections": [
+      "./scripts/corrections.inline",
+      "./styles/corrections.scss"
+    ],
+    "RelatedPages": [
+      "./styles/relatedPages.scss"
+    ],
+    "CiteThisPage": [
+      "./scripts/citeThisPage.inline",
+      "./styles/citeThisPage.scss"
+    ],
+    "Footer": [
+      "./styles/footer.scss"
+    ],
+    "HeroBand": [],
+    "Snav": [
+      "./scripts/snavScrollSpy.inline"
+    ],
+    "DedicatedPages": [
+      "./styles/dedicatedPages.scss"
+    ],
+    "Rail": [],
+    "Body": [
+      "./scripts/clipboard.inline",
+      "./styles/clipboard.scss"
+    ],
+    "MegaMenu": []
+  }
+}
