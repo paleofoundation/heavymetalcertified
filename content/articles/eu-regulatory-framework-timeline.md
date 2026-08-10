@@ -1,0 +1,108 @@
+---
+title: "How EU Heavy-Metal Limits Evolved From 2001 to 2023/915"
+description: "The EU's food heavy-metal limits tightened across six regulations from EC 466/2001 through EC 1881/2006 to the consolidated EU 2023/915. Here is the timeline."
+dek_html: "The EU's enforceable metal limits are not a fixed number but a <em>moving</em> trajectory — six instruments since 2001, each tighter or broader than the last."
+type: article
+section: "Analysis"
+author: "Karen Pendergrass"
+orcid: 0000-0002-2348-7259
+date: "August 2026"
+updated: "August 2026"
+scholar_eligible: true
+scholar_pdf: true
+audience: [regulator, brand-legal, brand-finance, retailer-compliance]
+snapshot:
+  - { k: "Document type", v: "Research analysis" }
+  - { k: "Published", v: "August 2026" }
+  - { k: "Metals", v: "Lead, Cadmium, Mercury, Arsenic" }
+  - { k: "References", v: "8" }
+connections:
+  - { label: "Heavy Metal Index — the finding", href: "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline" }
+  - { label: "EU 2023/915 — current framework", href: "/regulations/eu-2023-915" }
+  - { label: "Lead — analyte review", href: "/analytes/lead" }
+  - { label: "Cadmium — analyte review", href: "/analytes/cadmium" }
+---
+
+<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Research analysis &middot; Heavy Metal Certified &middot; August 2026</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The EU's heavy-metal maximum levels have tightened and broadened across six regulations since 2001 &mdash; from EC 466/2001 through the sixteen-year EC 1881/2006 to the consolidated EU 2023/915 &mdash; so any standard that defaults to the strictest government limit inherits a floor that moves with the law, not a number fixed once.</p>
+</div>
+
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px"><a href="/articles/eu-regulatory-framework-timeline.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;padding:10px 16px;border-radius:3px;text-decoration:none">Download PDF</a></div>
+
+## Abstract
+
+The European Union's enforceable heavy-metal limits in food have evolved through six major regulations since 2001, each tightening existing caps, adding new analyte coverage, or recalibrating to updated science. The line runs from Commission Regulation (EC) No 466/2001, which first harmonized member-state limits, through the sixteen-year workhorse EC 1881/2006 and its amendments, to the consolidated Regulation (EU) 2023/915 that governs today. The direction of travel is one way: limits get stricter and categories get finer, never looser. For certification this matters because a standard whose default is the strictest maximum level set by a credible government regulator inherits the EU's trajectory whenever the EU is the strictest cell — the certification floor moves as the law moves. That is why the [Heavy Metal Certified](/regulations/eu-2023-915) limit tables are a living lookup keyed to the current instrument rather than a number fixed once and forgotten. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline), the independent literature reference this analysis cites one way.
+
+## Six Instruments, One Direction
+
+The EU's food heavy-metal maximum levels are not a single statute but a lineage. Since 2001, six major instruments have carried the framework forward, each building on its predecessor with tighter limits, wider analyte coverage, or recalibration to updated EFSA scientific opinions.
+
+The line begins with Commission Regulation (EC) No 466/2001, effective March 2001, which replaced a patchwork of member-state-specific limits with one EU-wide framework and set baseline maximum levels for lead, cadmium, mercury and other contaminants across major food matrices <sup class="cite"><a href="#ref-1">1</a></sup>. It ran for five years before being recast as Commission Regulation (EC) No 1881/2006, which became the load-bearing EU reference for the next sixteen years <sup class="cite"><a href="#ref-2">2</a></sup>. In May 2023 the framework was recast once more as Commission Regulation (EU) 2023/915, the instrument in force today <sup class="cite"><a href="#ref-3">3</a></sup>. Across all three generations the direction of travel does not reverse: caps tighten and categories multiply.
+
+## The Sixteen-Year Workhorse and Its Amendments
+
+EC 1881/2006 did most of the framework's work, and it did not stand still. A series of amendments tightened existing limits and added analytes the original text never covered.
+
+Regulation (EU) 488/2014 tightened cadmium maximum levels for cocoa, chocolate and infant cereal-based foods, and is the source of the 0.010 mg/kg cadmium cap for cow-milk-based infant formula powder that anchors most pre-2023 infant-formula [cadmium](/analytes/cadmium) literature <sup class="cite"><a href="#ref-4">4</a></sup>. Regulation (EU) 2015/1006 introduced inorganic arsenic limits for rice and rice-based products for the first time — 0.10 mg/kg for rice destined for infant and young-child food, 0.20 mg/kg for non-parboiled milled rice, and 0.30 mg/kg for rice waffles, cakes and crackers; before this amendment the EU had no food-specific inorganic-arsenic cap at all <sup class="cite"><a href="#ref-5">5</a></sup>. Regulation (EU) 2021/1317 tightened [lead](/analytes/lead) across drinking water, fruits, vegetables, fishery products and infant foods, and set the 0.020 mg/kg lead cap for processed cereal-based and baby foods; a companion instrument, Regulation (EU) 2021/1323, did the same for cadmium in cereals <sup class="cite"><a href="#ref-6">6</a></sup>. Regulation (EU) 2022/617 rewrote [mercury](/analytes/mercury) limits for fishery products around a 0.5 mg/kg general default rising to 1.0 mg/kg for listed predatory species including tuna, swordfish, shark and marlin, and remains the operative EU seafood-mercury framework today <sup class="cite"><a href="#ref-7">7</a></sup>.
+
+## The 2023 Recast: Structure, Not Rollback
+
+When Regulation (EU) 2023/915 superseded EC 1881/2006 in May 2023, it did not loosen the framework. Most maximum levels carried forward unchanged from the final amended EC 1881/2006 text; the recast was primarily a structural reorganization that consolidated sixteen years of amendments into one clean instrument <sup class="cite"><a href="#ref-3">3</a></sup>. Mercury in fishery products is the notable carve-out: the per-species regime set by Regulation (EU) 2022/617 remained the operative seafood-mercury framework rather than being rewritten by the recast <sup class="cite"><a href="#ref-7">7</a></sup>.
+
+The practical upshot is that a number can be identical across framework versions or different, depending on the matrix. The 0.020 mg/kg lead cap for processed cereal-based infant foods entered force under 2021/1317 and survives unchanged in 2023/915; other caps moved when the recast absorbed a tightening amendment. A limit's value and the instrument that carries it are two separate facts.
+
+## Reading a Cited EU Limit Correctly
+
+For anyone comparing a measured concentration against "the EU limit", the framework's history is a trap. A source that names the EU lead maximum for infant foods means different things depending on when it was written — EC 466/2001 before 2007, the original or amended EC 1881/2006 through 2023, or EU 2023/915 after the recast. The numerical value may or may not have changed in between.
+
+The discipline is to separate two questions. The current binding EU cap for a matrix and analyte is whatever the current operative framework says — EU 2023/915, or EU 2022/617 for fish mercury <sup class="cite"><a href="#ref-3">3</a></sup><sup class="cite"><a href="#ref-7">7</a></sup>. The historical cap a pre-recast source compared against is context, not the live limit: superseded frameworks such as EC 466/2001 and EC 1881/2006 remain accurate as the regulatory backdrop those authors worked in, but they are not the number in force now <sup class="cite"><a href="#ref-1">1</a></sup><sup class="cite"><a href="#ref-2">2</a></sup>. A reported measurement stays valid as evidence regardless of which framework was current when it was published; only the comparison cap has an expiry date.
+
+## What this means for certification
+
+A certification standard that pins its limits to government regulators has to treat this timeline as a live input, not a historical footnote. The Heavy Metal Certified default for any product and analyte is the strictest maximum level set by a credible government regulator, converted to the product's own basis. Because the EU is frequently the strictest regulator for a given matrix and metal, its tightening trajectory moves the certification floor whenever the EU occupies that cell — and it tends to move in one direction, downward.
+
+That is why the program's limit tables are a living lookup keyed to the current instrument rather than a single number fixed at launch. When the EU recast EC 1881/2006 into [EU 2023/915](/regulations/eu-2023-915), or when a future amendment tightens a cap, the certification limit for any affected cell updates with it. For the four Tier-1 toxics — [lead](/analytes/lead), [cadmium](/analytes/cadmium), inorganic arsenic and methylmercury — the standard may set the stricter of that government maximum and the cleaner end of the occurrence evidence; the other metals adopt the government limit directly. The framework's own history is the argument for the design: a standard keyed to a fixed number would have gone quietly stale at each amendment, while one that re-reads the current instrument tracks the law without being rewritten. The finding is not that the EU is uniquely strict; it is that its limits move, and a standard that defaults to the strictest government cell has to move with them.
+
+## Frequently asked questions
+
+### How many regulations make up the EU heavy-metal framework?
+
+Six major instruments since 2001. The line runs from Commission Regulation (EC) No 466/2001, through the sixteen-year workhorse EC 1881/2006 and its amendments — covering cadmium, inorganic arsenic, lead and mercury updates — to the consolidated Regulation (EU) 2023/915 in force since May 2023. Each built on its predecessor with tighter limits or new analyte coverage.
+
+### What is the current EU regulation for heavy metals in food?
+
+Regulation (EU) 2023/915, effective May 2023, is the current EU framework for heavy metals in food; it recast and replaced EC 1881/2006. Mercury in fishery products is governed by the per-species regime of Regulation (EU) 2022/617, which the 2023 recast left in place rather than rewriting.
+
+### Did the 2023/915 recast make EU metal limits stricter?
+
+Mostly it kept them. Most maximum levels carried forward unchanged from the final amended EC 1881/2006 text, so the recast was chiefly a structural reorganization rather than a fresh round of tightening. The tightening had already happened in the amendments the recast absorbed, such as the 2021 lead and cadmium updates.
+
+### How does the EU timeline affect a heavy-metal certification standard?
+
+A standard whose default is the strictest maximum level set by a credible government regulator inherits the EU's trajectory wherever the EU is the strictest cell. Because EU limits tighten over time and rarely loosen, the certification floor moves down with them, which is why such a standard is a living lookup keyed to the current regulation rather than a number fixed once.
+
+
+## References
+
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this analysis&rsquo;s text, in first-appearance order. This is not the full evidence base for the finding; it is what the prose above draws on. The complete occurrence record and per-source pages live on the Heavy Metal Index &mdash; this analysis links to them rather than re-hosting them. Where a work carries a DOI its title links to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
+  <div style="border-top:1px solid #e8e1db">
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-1" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[1]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EC) No 466/2001 — original EU contaminants framework</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union. Effective March 2001, superseded December 2006. First EU-wide harmonized maximum levels for lead, cadmium, mercury and other contaminants, replacing member-state-specific limits.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-2" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[2]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EC) No 1881/2006 — omnibus contaminants regulation</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union. Effective March 2007, superseded May 2023. The load-bearing EU contaminants reference for sixteen years, amended repeatedly to tighten limits and add analytes.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-3" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[3]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EU) 2023/915 — current consolidated maximum levels</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union. Effective May 2023. Full recast superseding EC 1881/2006; most maximum levels carried forward unchanged in a structural reorganization.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-4" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[4]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EU) No 488/2014 — cadmium maximum levels amendment</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union, 2014. Tightened cadmium limits for cocoa, chocolate and infant cereal-based foods; source of the 0.010 mg/kg cap for cow-milk-based infant formula powder.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-5" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[5]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EU) 2015/1006 — inorganic arsenic in rice</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union, 2015. Introduced the EU's first food-specific inorganic-arsenic limits for rice and rice-based products, from 0.10 to 0.30 mg/kg by product type.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-6" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[6]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EU) 2021/1317 — lead maximum levels amendment</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union, 2021. Tightened lead limits across many matrices including infant foods; set the 0.020 mg/kg cap for processed cereal-based and baby foods. Companion instrument EU 2021/1323 did the same for cadmium in cereals.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-7" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[7]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Commission Regulation (EU) 2022/617 — mercury in fishery products</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">European Union, 2022. Per-species mercury maximum levels for fishery products: 0.5 mg/kg general default, up to 1.0 mg/kg for listed predatory species. Remains the operative EU seafood-mercury framework.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Legislation</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-8" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[8]</span><div style="min-width:0"><a href="https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">Heavy Metal Index — EU regulatory framework timeline (synthesis with full anchor-source records)</a><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">The independent synthesis this analysis reframes, mapping all six EU instruments and carrying the full anchor-source regulation records. &middot; <a href="https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline" style="color:#736b6b">heavymetalindex.com<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Reference</span></div>
+  </div>
+
+## Cite this analysis
+
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this analysis</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. (2026). <em style="font-style:normal">How EU Heavy-Metal Limits Evolved From 2001 to 2023/915</em>. Heavy Metal Certified, Institute of Contaminant Standards (ICS). https://heavymetalcertified.com/articles/eu-regulatory-framework-timeline</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose under CC BY 4.0. The underlying evidence base is the independent Heavy Metal Index, cited one way; this analysis applies that evidence to the certification question.</p>
+    </div>
+  </div>

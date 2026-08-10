@@ -1,0 +1,118 @@
+---
+title: "Lead Chromate in Turmeric: Why Lot Testing Catches Adulteration"
+description: "Lead chromate added to turmeric and cinnamon is deliberate adulteration, not soil uptake. Finished-lot testing and a 1:1 lead-to-chromium ratio expose it."
+dek_html: "The bright yellow in some turmeric is <em>lead chromate</em>, an industrial pigment added by hand — a contamination pathway no organic seal or process audit was built to catch."
+type: article
+section: "Analysis"
+author: "Karen Pendergrass"
+orcid: 0000-0002-2348-7259
+date: "August 2026"
+updated: "August 2026"
+scholar_eligible: true
+scholar_pdf: true
+audience: [regulator, brand-legal, brand-finance, retailer-compliance]
+snapshot:
+  - { k: "Document type", v: "Research analysis" }
+  - { k: "Published", v: "August 2026" }
+  - { k: "Metals", v: "Lead, Chromium" }
+  - { k: "References", v: "8" }
+connections:
+  - { label: "Heavy Metal Index — the finding", href: "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants" }
+  - { label: "Lead — analyte review", href: "/analytes/lead" }
+  - { label: "Chromium — analyte review", href: "/analytes/chromium" }
+  - { label: "Spices standard", href: "/standards/spices" }
+---
+
+<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Research analysis &middot; Heavy Metal Certified &middot; August 2026</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Lead chromate added to turmeric and cinnamon during processing is deliberate economic adulteration &mdash; a non-agricultural pathway that reaches infants at concentrations orders of magnitude above any soil-uptake source, which only finished-lot testing, guided by the near 1:1 lead-to-chromium signature, reliably catches.</p>
+</div>
+
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px"><a href="/articles/spice-adulteration-lead-infants.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;padding:10px 16px;border-radius:3px;text-decoration:none">Download PDF</a></div>
+
+## Abstract
+
+Lead in turmeric and some cinnamon is not soil uptake — it is deliberate economic adulteration with lead chromate (PbCrO4), a cheap industrial pigment added during polishing to brighten color, and it reaches infants through the purees and cereals parents buy expecting safety. The signature is chemical: because lead chromate carries one atom of lead for each atom of chromium, adulterated samples sit near a 1:1 lead-to-chromium molar ratio, while environmental contamination sits well below one. The concentrations are categorically higher than any agricultural pathway — adulterated turmeric has reached 2,935 µg/g of lead, and the 2023–2024 cinnamon applesauce recall left 566 children with elevated blood lead. The certification consequence is direct: this pathway is invisible to a process audit or an organic seal and untouched by clean-sourcing, so a credible [spices standard](/standards/spices) has to test the product itself, lot by lot, reading the paired lead-and-chromium result as the tell. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants), the independent literature reference this analysis cites one way.
+
+## A Deliberate Pathway, Not a Soil One
+
+The heavy-metal problems certification usually confronts are agricultural: arsenic drawn from flooded paddy soils, cadmium from cocoa-growing volcanic soils, mercury biomagnified up the marine food chain. Lead chromate in spices is none of these. It is an industrial pigment — lead chromate, PbCrO4, among the cheapest yellow colorants made — introduced into food on purpose.
+
+In the turmeric supply chains of South Asia, polishers add lead-chromate-based yellow pigment to dried roots during polishing to brighten dull color, mask poor-quality roots, and cut polishing time. Forsyth and colleagues traced the practice through 152 interviews across the Bangladesh turmeric chain and found it had persisted for more than thirty years, set off by a 1988 flood that damaged crop quality and by imports of brighter Indian turmeric that reset consumer color expectations <sup class="cite"><a href="#ref-1">1</a></sup>. The practice is not clandestine — pigment waste bags sit in the open at polishing mills — yet none of the 43 polishers interviewed knew the pigment contained lead. The contamination is a business decision made at one identifiable control point, which is exactly why, in principle, a single intervention can remove it.
+
+## The Lead-to-Chromium Signature
+
+What makes the adulteration pathway legible to a laboratory is its stoichiometry. Lead chromate is one atom of lead bound to one atom of chromium, so material deliberately colored with it carries lead and chromium in a molar ratio near one to one. Environmental lead — from soil, dust, or water — arrives without that paired chromium and sits at a ratio well below one.
+
+Forsyth's South Asia survey put numbers to the tell. Across 356 turmeric samples from 23 cities in India, Pakistan, Sri Lanka, and Nepal, samples above 18 µg/g of lead averaged a lead-to-chromium molar ratio of 0.92 (SD 0.30) — the lead-chromate fingerprint — while samples below 15 µg/g averaged 0.44 (SD 0.30), consistent with ordinary environmental contamination <sup class="cite"><a href="#ref-2">2</a></sup>. For a certifier this is the useful part: measuring [chromium](/analytes/chromium) alongside [lead](/analytes/lead) does more than check two limits — the ratio between them separates a deliberately adulterated lot from a merely dusty one.
+
+## It Reaches Infants
+
+The demographic the pathway reaches is the one certification most wants to protect. In the 2023–2024 cinnamon applesauce episode, lead chromate in the cinnamon used for infant and toddler pouches drove lead to 1.9–3.0 ppm in the spice; investigators identified 566 children with elevated blood lead, a median level of 7.2 µg/dL, a range up to 39.3 µg/dL, and 55% of cases in children under two <sup class="cite"><a href="#ref-3">3</a></sup>. A single product line produced hundreds of documented childhood poisonings.
+
+The base rate is not negligible. A scoping review of 2,235 commercial turmeric samples from 22 countries across six continents put the overall adulteration rate at 20.0% — one product in five — with similar rates in the spice channel (20.4%) and the supplement channel (22.0%) <sup class="cite"><a href="#ref-4">4</a></sup>. Adulteration is episodic and geographically variable, invisible to visual inspection, and therefore cannot be sourced or processed away.
+
+## Concentrations in a Different Class
+
+The concentrations set this pathway apart from anything the agricultural literature records. Adulterated turmeric in the Forsyth survey exceeded 1,000 µg/g of lead in Patna, Karachi, and Peshawar, peaking at 2,935 µg/g in Karachi <sup class="cite"><a href="#ref-2">2</a></sup>; the pigments themselves ran to a median near 20,000 µg/g and a maximum of 115,500 µg/g — roughly 11.55% lead by weight <sup class="cite"><a href="#ref-1">1</a></sup>. Modeled child blood-lead increases from Bihar turmeric alone reached 345–790 µg/L, more than ten times the CDC blood-lead reference value of 35 µg/L <sup class="cite"><a href="#ref-2">2</a></sup>.
+
+This is not confined to producing countries. A survey of 127 ground-turmeric products from US retail found a mean lead of 1,410 ppb and a maximum of 7,590 ppb — 76 times the FDA action level of 100 ppb — even though FDA Import Alert 99-42 has authorized detention of lead-contaminated spice imports since the 1990s <sup class="cite"><a href="#ref-5">5</a></sup><sup class="cite"><a href="#ref-6">6</a></sup>. Independent epidemiology points the same way: among 1,635 Georgian children aged five to seven, spice use was an independent predictor of elevated blood lead, and 39.8% carried levels at or above 3.5 µg/dL <sup class="cite"><a href="#ref-7">7</a></sup>.
+
+## Enforcement Can Reverse It
+
+Because the contamination is a decision rather than a soil process, enforcement can reverse it quickly. After the Bangladesh supply-chain investigation was published, the national food-safety authority declared turmeric adulteration a prosecutable act, fined offending traders, deployed handheld XRF analyzers to field-test turmeric for lead and chromium at markets and mills, and ran public education campaigns. Lead-contaminated turmeric fell from 47% of samples in 2019 to 5% in early 2020, 2.3% by that fall, and 0% in early 2021 <sup class="cite"><a href="#ref-4">4</a></sup>.
+
+The field test that broke the practice measured the same two elements a certifier does — lead and chromium — which is the practical lesson: the adulteration is detectable at the point of intake, and detection is what removes it.
+
+## What this means for certification
+
+Spice lead is the case that separates finished-product testing from process assurance. A [spices](/standards/spices) supplier can hold an organic certificate, pass a facility audit, and document a clean growing region, and none of that touches a pigment added by a polisher three steps up the chain. The only controls the evidence supports are laboratory testing of incoming spice material and supplier qualification that traces origin and processing history; the cinnamon applesauce recall is what not testing looks like.
+
+A certification standard should therefore treat spices as a test-the-product category and set its number the way the program sets every limit — at the strictest maximum level set by a credible government regulator, converted to the product's own basis. [Lead](/analytes/lead) is one of the four Tier-1 toxics — lead, cadmium, inorganic arsenic, and methylmercury — the program treats most strictly, so its spice ceiling can be set to the stricter of that government maximum and the cleaner end of the occurrence evidence. Hexavalent [chromium](/analytes/chromium) is a Tier-2 analyte that adopts its government limit directly — but chromium earns its place on a spice panel less as a second limit than as a co-marker: a lead result shadowed by chromium near a one-to-one molar ratio is the signature of deliberate lead-chromate adulteration, and a lot-by-lot test is what surfaces it.
+
+## Frequently asked questions
+
+### Is the lead in turmeric from soil, or is it added deliberately?
+
+The high-concentration cases are deliberate. Polishers in parts of South Asia add lead chromate — a cheap yellow industrial pigment — to dried turmeric to brighten its color, a practice documented across the Bangladesh supply chain for more than thirty years. Ordinary environmental uptake also occurs, but it produces far lower lead levels than adulteration does.
+
+### How can you tell lead chromate adulteration from environmental lead?
+
+By the ratio of lead to chromium. Lead chromate (PbCrO4) contains one atom of each, so adulterated samples sit near a 1:1 lead-to-chromium molar ratio, while environmental contamination sits well below one. In one South Asian survey, high-lead turmeric averaged a ratio of 0.92 versus 0.44 for low-lead, environmentally contaminated samples.
+
+### How did lead get into the recalled cinnamon applesauce?
+
+Through lead chromate in the cinnamon. In the 2023–2024 recall of cinnamon applesauce pouches marketed to infants and toddlers, lead reached 1.9 to 3.0 ppm in the spice, and investigators identified 566 children with elevated blood lead, with 55% of cases in children under two. It was the same deliberate-adulteration mechanism seen in turmeric.
+
+### Can an organic seal or facility audit catch spice adulteration?
+
+No. Adulteration with an industrial pigment happens at a polishing mill and is invisible to visual inspection, so a growing-region claim, an organic certificate, or a process audit does not detect it. The only controls the evidence supports are laboratory testing of each incoming spice lot and supplier qualification that traces origin and processing history.
+
+### How much lead has been found in adulterated turmeric?
+
+Levels far above any agricultural source. Adulterated turmeric in a South Asian survey reached 2,935 µg/g of lead, and the pigments themselves reached 115,500 µg/g. Even US retail turmeric has been measured at up to 7,590 ppb — 76 times the FDA action level of 100 ppb.
+
+
+## References
+
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this analysis&rsquo;s text, in first-appearance order. This is not the full evidence base for the finding; it is what the prose above draws on. The complete occurrence record and per-source pages live on the Heavy Metal Index &mdash; this analysis links to them rather than re-hosting them. Where a work carries a DOI its title links to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
+  <div style="border-top:1px solid #e8e1db">
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-1" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[1]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Lead chromate pigments in the Bangladesh turmeric supply chain</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Forsyth et al., 2019. Traced lead-chromate adulteration through 152 supply-chain interviews across seven of nine major turmeric-producing districts; pigment samples reached a median near 20,000 µg/g and a maximum of 115,500 µg/g lead.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-2" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[2]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Evidence of turmeric adulteration with lead chromate across South Asia</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Forsyth et al., 2024. Across 356 samples from 23 cities, high-lead turmeric averaged a 0.92 lead-to-chromium molar ratio confirming lead chromate; lead peaked at 2,935 µg/g and modeled child blood-lead increases reached 345–790 µg/L.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-3" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[3]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Lead and chromium exposure after contaminated cinnamon applesauce, United States</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Troeschel et al., 2024. CDC investigation of lead-chromate-contaminated cinnamon in infant applesauce pouches; 566 children with elevated blood lead, median 7.2 µg/dL, 55% of cases under two years.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Government</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-4" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[4]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">A scoping review of turmeric adulteration across six continents</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Gafner et al., 2026. Reviewed 2,235 turmeric samples from 22 countries; overall adulteration rate 20.0%, and documented Bangladesh enforcement cutting contaminated samples from 47% to 0% within two years.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-5" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[5]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Ground turmeric as a source of lead exposure in the United States</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Lech et al., 2020. Surveyed 127 US retail ground-turmeric products; mean lead 1,410 ppb and a maximum of 7,590 ppb, 76 times the FDA action level.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-6" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[6]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Import Alert 99-42: detention of lead-contaminated spice imports</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">U.S. Food and Drug Administration. Authorizes detention without physical examination of spices due to lead contamination; active since the 1990s.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Government</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-7" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[7]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Blood lead levels in children aged 5–7 in the Republic of Georgia</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Rylander et al., 2025. Among 1,635 children, spice use independently predicted elevated blood lead (OR ≈ 1.47); 39.8% had levels at or above 3.5 µg/dL.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-8" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[8]</span><div style="min-width:0"><a href="https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">Heavy Metal Index — spice adulteration with lead chromate reaching infants (synthesis with full anchor-source records)</a><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page. &middot; <a href="https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants" style="color:#736b6b">heavymetalindex.com<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Reference</span></div>
+  </div>
+
+## Cite this analysis
+
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this analysis</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. (2026). <em style="font-style:normal">Lead Chromate in Turmeric: Why Lot Testing Catches Adulteration</em>. Heavy Metal Certified, Institute of Contaminant Standards (ICS). https://heavymetalcertified.com/articles/spice-adulteration-lead-infants</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose under CC BY 4.0. The underlying evidence base is the independent Heavy Metal Index, cited one way; this analysis applies that evidence to the certification question.</p>
+    </div>
+  </div>

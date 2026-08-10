@@ -1,0 +1,120 @@
+---
+title: "Why Organ Meats Need Their Own Cadmium and Lead Limits"
+description: "Liver and kidney concentrate cadmium far above skeletal muscle, so offal is a distinct exposure pathway. Muscle-meat data cannot set a safe organ-meat limit."
+dek_html: "Cadmium is stored in the <em>liver</em> and <em>kidney</em> across an animal's lifetime, so offal carries a heavier cadmium load than muscle-meat surveillance ever records."
+type: article
+section: "Analysis"
+author: "Karen Pendergrass"
+orcid: 0000-0002-2348-7259
+date: "August 2026"
+updated: "August 2026"
+scholar_eligible: true
+scholar_pdf: true
+audience: [regulator, brand-legal, brand-finance, retailer-compliance]
+snapshot:
+  - { k: "Document type", v: "Research analysis" }
+  - { k: "Published", v: "August 2026" }
+  - { k: "Metals", v: "Cadmium, Lead, Mercury" }
+  - { k: "References", v: "8" }
+connections:
+  - { label: "Heavy Metal Index — the finding", href: "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation" }
+  - { label: "Cadmium — analyte review", href: "/analytes/cadmium" }
+  - { label: "Lead — analyte review", href: "/analytes/lead" }
+  - { label: "Mixed-meals standard", href: "/standards/mixed-meals" }
+---
+
+<div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Research analysis &middot; Heavy Metal Certified &middot; August 2026</span></div>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Because the liver and kidney store cadmium across an animal's lifetime, offal carries cadmium &mdash; and, in some supply chains, lead &mdash; well above skeletal muscle, so muscle-meat surveillance cannot bound an organ-meat product, and offal has to be certified against its own cadmium and lead ceilings.</p>
+</div>
+
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px"><a href="/articles/organ-meat-cadmium-lead-accumulation.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;padding:10px 16px;border-radius:3px;text-decoration:none">Download PDF</a></div>
+
+## Abstract
+
+Liver and kidney carry cadmium at roughly two to two-and-a-half times the level of skeletal muscle from the same animal, because both organs store [cadmium](/analytes/cadmium) across the animal's lifetime while muscle has no comparable storage route. In a balanced 315-sample bovine survey, cadmium rose from a muscle mean of 0.030 mg/kg to 0.056 mg/kg in liver and 0.073 mg/kg in kidney, and the ordering repeats in broiler chicken and under controlled experimental dosing. Offal is therefore a distinct dietary exposure pathway, not an extension of muscle, and a muscle occurrence value cannot stand in for a liver or kidney value. For certification this means an organ-meat product needs cadmium and lead ceilings built on offal-specific data; using muscle-meat surveillance to reassure a buyer understates the cadmium load by roughly the same two-to-two-and-a-half-fold factor. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation), the independent literature reference this analysis cites one way.
+
+## Liver and Kidney Store Cadmium for Life
+
+Absorbed cadmium is carried to the liver, where it induces and binds metallothionein, a low-molecular-weight metal-binding protein; the cadmium-metallothionein complex is then filtered by the kidney and retained in the proximal tubule. Liver and kidney therefore concentrate and store cadmium across an animal's lifetime, with a biological half-life measured in years, while skeletal muscle has no comparable storage mechanism and holds cadmium only at low steady-state levels.<sup class="cite"><a href="#ref-1">1</a></sup>
+
+The occurrence data track the physiology. In a balanced survey of 315 imported frozen bovine samples in Sohag, Egypt — 105 each of muscle, liver, and kidney, measured by atomic absorption spectrophotometry — cadmium rose from a muscle mean of 0.030 mg/kg wet weight to 0.056 mg/kg in liver and 0.073 mg/kg in kidney, so kidney cadmium was roughly 2.4 times muscle cadmium and liver roughly 1.9 times, at the mean.<sup class="cite"><a href="#ref-1">1</a></sup> Because the survey held species, market, and method constant across a balanced tissue design, the differential is a property of tissue physiology rather than of any single contaminated site.
+
+## The Signal Repeats Across Species and Methods
+
+The cadmium pattern is not an artefact of one dataset. A 360-sample survey of Egyptian commercial broiler chicken, measuring twelve metals by ICP-MS across six brands, found liver cadmium of 0.027 to 0.104 mg/kg wet weight consistently above chest-muscle cadmium of 0.014 to 0.054 mg/kg — the same liver-over-muscle ordering, from a different species, laboratory, and province.<sup class="cite"><a href="#ref-2">2</a></sup>
+
+A 28-day controlled feeding trial isolates the effect under known dosing. Broiler chickens fed graded cadmium showed liver cadmium exceeding muscle cadmium by roughly sevenfold at the highest dose (liver 43.36 against muscle 6.57 mg/kg dry basis), confirming the direction the surveys can only infer; it is a small preprint with deliberate high-dose feeding, so its absolute values are not retail baselines, but the liver-over-muscle direction is robust.<sup class="cite"><a href="#ref-3">3</a></sup>
+
+Two further studies sample liver as the routine monitored matrix and supply organ-specific baselines. A twenty-year Netherlands post-mortem programme found liver lead reaching an upper reference bound of 4.6 mg/kg dry weight in Heck cattle while liver cadmium sat mostly below the 0.1 mg/kg limit of quantification — a reminder that liver is the accumulation sink, but the absolute load still depends on environmental exposure.<sup class="cite"><a href="#ref-4">4</a></sup> An Iranian abattoir survey of sheep liver reported cadmium at 0.07 µg/g wet weight, below typical EU maximum levels for liver.<sup class="cite"><a href="#ref-5">5</a></sup>
+
+## Lead and Mercury Do Not Follow the Same Rule
+
+Lead partitions differently, and the honest reading says so. Lead in the body is dominated by bone, which acts as the long-term reservoir, so soft-tissue lead in liver, kidney, and brain reflects recent exposure rather than lifetime accumulation in one dedicated organ. The tissue that shows the highest lead therefore depends on the supply chain.
+
+The anchor datasets bear this out by disagreeing. A 108-sample multi-organ survey of Bangladeshi broiler chicken found lead concentrated in the metabolically active organs, reaching 4.6 mg/kg fresh weight in brain — roughly six times the FAO/WHO maximum — against a muscle minimum near 0.33 mg/kg, with the contamination attributed to tannery-waste-derived feed.<sup class="cite"><a href="#ref-6">6</a></sup> The Egyptian broiler survey inverts the hierarchy: chest-muscle lead ran 2.560 to 5.552 µg/g wet weight, several times higher than liver lead at 0.146 to 0.952 µg/g, consistent with feed-associated contamination loading onto muscle rather than physiological organ accumulation.<sup class="cite"><a href="#ref-2">2</a></sup> In the balanced bovine survey, lead was near-uniform across tissues (muscle 0.684, liver 0.763, kidney 0.716 mg/kg).<sup class="cite"><a href="#ref-1">1</a></sup>
+
+Mercury runs opposite again. In the one dataset that measured it across tissues, total mercury was highest in muscle (mean 0.312 mg/kg) and lowest in kidney (0.167 mg/kg), because methylmercury binds to sulfhydryl groups in muscle protein.<sup class="cite"><a href="#ref-1">1</a></sup> The lesson is analyte-specific: the assumption that offal is uniformly higher in heavy metals holds for cadmium, is contingent for lead, and is reversed for mercury.
+
+## Muscle Surveillance Cannot Bound Offal
+
+National residue-monitoring programmes and most published meat surveys report muscle values, because muscle is the dominant edible fraction by mass. Offal enters these datasets inconsistently: liver appears in veterinary and environmental monitoring but is under-represented in retail food-safety surveys relative to how often it is eaten, and kidney, gizzard, heart, and brain are rarer still. The tissue with the higher cadmium concentration is thus the tissue least likely to appear in a routine surveillance stream.
+
+The regulatory architecture partly acknowledges this: maximum levels for cadmium and lead in liver and kidney are set separately from, and looser than, the muscle limits, precisely because the offal baseline is understood to be higher.<sup class="cite"><a href="#ref-7">7</a></sup> But a looser category-specific limit is not the same as characterisation, and it can be actively misleading. In the bovine survey no liver or kidney sample exceeded its cadmium limit (0.50 mg/kg for liver, 1.0 mg/kg for kidney), while 22.9 percent of muscle samples exceeded the tighter 0.05 mg/kg muscle limit — so limit-compliance data on offal can read as reassuring even though absolute cadmium per gram is higher.<sup class="cite"><a href="#ref-1">1</a></sup>
+
+A formulator who applies a muscle occurrence value to an offal-containing product — liverwurst, pâté, mixed-organ purées, or blended [mixed-meal](/standards/mixed-meals) meat products — inherits the muscle distribution rather than the offal distribution and understates cadmium exposure by roughly two to two-and-a-half times at the mean. Using the bovine means, a 100 g serving of kidney carries about 7.3 µg of cadmium and a serving of liver about 5.6 µg, against about 3.0 µg for muscle.<sup class="cite"><a href="#ref-1">1</a></sup>
+
+## What this means for certification
+
+A certification standard cannot treat offal as an extension of muscle. A cadmium result on muscle does not bound the cadmium result on liver or kidney from the same animal, so any product whose formula includes organ meat must be characterised against liver and kidney occurrence data directly, with cadmium as the priority analyte because it carries the stable organ-accumulation signal.
+
+Under the [Heavy Metal Certified](/standards/mixed-meals) approach, the default limit for any product and analyte is the strictest maximum level set by a credible government regulator, converted to the product's own basis. Both [cadmium](/analytes/cadmium) and [lead](/analytes/lead) are Tier-1 toxics — the four analytes (lead, cadmium, inorganic arsenic, methylmercury) for which the programme may set the stricter of that government maximum and the cleaner end of the occurrence evidence. For an offal product, that occurrence evidence is the offal distribution, not the muscle distribution; lead should still be tested, but interpreted with the understanding that its tissue rank is supply-chain dependent and cannot be predicted from physiology alone.
+
+The practical instruction is narrow. An organ-meat or organ-containing product needs its own cadmium and lead ceilings, benchmarked against liver and kidney data; muscle-meat surveillance used to reassure a buyer about offal understates the load. This is not a claim that organ meat is unsafe — the anchor studies' own hazard quotients stayed below 1.0 at modelled consumption — but that offal is a quantitatively distinct exposure pathway, and the number that certifies it must come from that distribution.
+
+## Frequently asked questions
+
+### Do organ meats contain more cadmium than muscle meat?
+
+Yes, for cadmium. Liver and kidney store cadmium over an animal's lifetime, so they carry roughly two to two-and-a-half times the cadmium of skeletal muscle from the same animal. In a balanced bovine survey, cadmium rose from a 0.030 mg/kg muscle mean to 0.056 mg/kg in liver and 0.073 mg/kg in kidney, and the pattern repeats in chicken and under controlled experimental dosing.
+
+### Why do liver and kidney accumulate cadmium?
+
+Absorbed cadmium is carried to the liver, where it binds metallothionein; the cadmium-metallothionein complex is then filtered by the kidney and retained in the proximal tubule. Both organs store cadmium for the animal's lifetime, with a biological half-life measured in years, while skeletal muscle has no comparable storage route. This is why the differential appears across species and geographies rather than only at contaminated sites.
+
+### Is lead also higher in organ meats?
+
+Not reliably. Lead is dominated by bone, and soft-tissue lead reflects recent exposure, so its tissue distribution is supply-chain dependent. One survey found lead highest in chicken brain and kidney, another found it highest in chest muscle, and a third found it near-uniform across tissues. Lead should still be tested in offal, but its distribution cannot be predicted from physiology the way cadmium's can.
+
+### Can muscle-meat test results certify organ-meat products?
+
+No. A cadmium result on muscle does not bound the cadmium result on liver or kidney from the same animal, and offal typically carries more. A formulator who applies a muscle value to liverwurst, pâté, or a blended organ-meat product understates cadmium exposure by roughly two to two-and-a-half times. Organ-containing products must be characterised against liver and kidney occurrence data directly.
+
+### Is it true that all heavy metals are higher in offal?
+
+No — it is analyte-specific. Cadmium is reliably higher in liver and kidney; lead depends on the supply chain; and total mercury was actually highest in muscle in the one survey that measured it across tissues, because methylmercury binds to muscle protein. Treating offal as uniformly higher in every metal is inaccurate.
+
+
+## References
+
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this analysis&rsquo;s text, in first-appearance order. This is not the full evidence base for the finding; it is what the prose above draws on. The complete occurrence record and per-source pages live on the Heavy Metal Index &mdash; this analysis links to them rather than re-hosting them. Where a work carries a DOI its title links to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
+  <div style="border-top:1px solid #e8e1db">
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-1" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[1]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Cadmium, Lead and Mercury in Imported Bovine Muscle, Liver and Kidney, Sohag, Egypt</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Rabeey et al., 2025. Balanced 315-sample survey of imported bovine muscle, liver and kidney; cadmium rose from a 0.030 mg/kg muscle mean to 0.056 in liver and 0.073 in kidney, with total mercury highest in muscle.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-2" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[2]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Twelve-Metal ICP-MS Survey of Egyptian Broiler Muscle and Liver</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Kamaly and Sharkawy, 2023. ICP-MS survey of 360 Egyptian broiler samples; liver cadmium (0.027–0.104 mg/kg) above chest-muscle cadmium (0.014–0.054 mg/kg), while chest-muscle lead ran far above liver lead.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-3" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[3]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Controlled Graded-Dose Feeding of Cadmium, Lead and Chromium in Broiler Tissues</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Morshed et al., 2024. Research Square preprint; 28-day graded-dose feeding trial in which liver cadmium exceeded muscle cadmium by roughly sevenfold at the top dose (liver 43.36 vs muscle 6.57 mg/kg dry basis).</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-4" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[4]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Twenty-Year Monitoring of Trace Metals in the Liver of Free-Living Dutch Herbivores</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Marcelino et al., 2026. Twenty-year Netherlands post-mortem programme; liver lead up to 4.6 mg/kg dry weight in Heck cattle while liver cadmium sat mostly below the 0.1 mg/kg limit of quantification.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-5" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[5]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Lead, Cadmium and Chromium in Sheep Liver from a Tabriz Abattoir</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Khatemeh and Imani Baran, 2022. Abattoir survey of sheep liver in Tabriz, Iran; uninfected liver cadmium 0.07 µg/g wet weight, below typical EU maximum levels for liver.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-6" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[6]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Heavy Metals Across Six Edible Body Parts of Bangladeshi Broiler Chicken</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Hossain et al., 2023. 108-sample multi-organ broiler survey; lead lowest in muscle (0.33 mg/kg) and highest in brain (4.6 mg/kg), attributed to tannery-waste-derived feed.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Journal</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-7" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[7]</span><div style="min-width:0"><span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal</span><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">Category-specific maximum levels set cadmium and lead ceilings for liver and kidney separately from, and looser than, the muscle limits, on the understanding that the offal baseline is higher.</p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Standard</span></div>
+    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-8" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[8]</span><div style="min-width:0"><a href="https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)</a><p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">The independent literature synthesis this analysis reframes, carrying the full anchor-source records for the organ-versus-muscle cadmium and lead evidence. &middot; <a href="https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation" style="color:#736b6b">heavymetalindex.com<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></p></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">Reference</span></div>
+  </div>
+
+## Cite this analysis
+
+  <div style="border:1px solid #e8e1db;background:#fffdfb">
+    <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this analysis</div>
+    <div style="padding:14px 15px">
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. (2026). <em style="font-style:normal">Why Organ Meats Need Their Own Cadmium and Lead Limits</em>. Heavy Metal Certified, Institute of Contaminant Standards (ICS). https://heavymetalcertified.com/articles/organ-meat-cadmium-lead-accumulation</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose under CC BY 4.0. The underlying evidence base is the independent Heavy Metal Index, cited one way; this analysis applies that evidence to the certification question.</p>
+    </div>
+  </div>
