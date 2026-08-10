@@ -107,6 +107,13 @@ const config: QuartzConfig = {
       // CrawlLinks so the inserted links are resolved + counted in the graph.
       Plugin.AutoLink(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      // Fold each "## Frequently asked questions" section's question headings into
+      // the canonical `.qa` accordion (native <details>) and emit the
+      // `data-hmi-faq` contract that postbuild-cert-faq-jsonld reads for FAQPage
+      // schema. After CrawlLinks so links inside answers are resolved, and after
+      // GitHubFlavoredMarkdown (rehype-slug) so each question <h3> has its id.
+      // See collapsibleQuestions.ts.
+      Plugin.CollapsibleQuestions(),
       Plugin.Description(),
       // Latex plugin removed: prose uses bare "$" for dollar amounts, which
       // remark-math/KaTeX was parsing as inline math (rendering $-delimited

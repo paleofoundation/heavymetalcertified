@@ -56,17 +56,17 @@ The fourth is independence. When the manufacturer draws its own samples and pays
 
 Consider the cross-examination a snapshot invites.
 
-**Q.** Your company chose which lots to send to the laboratory?
+Q. Your company chose which lots to send to the laboratory?
 
-**A.** Yes.
+A. Yes.
 
-**Q.** And which of the laboratory's reports to keep in the certification file?
+Q. And which of the laboratory's reports to keep in the certification file?
 
-**A.** Yes.
+A. Yes.
 
-**Q.** The lot my client's son consumed — was it among the lots you tested?
+Q. The lot my client's son consumed — was it among the lots you tested?
 
-**A.** I don't know.
+A. I don't know.
 
 Nothing in that exchange requires an expert. Each answer is true, and each is damaging, because the snapshot cannot supply the missing terms: the lots not chosen, the results not kept, the lot actually eaten.
 
