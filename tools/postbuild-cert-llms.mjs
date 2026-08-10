@@ -24,7 +24,7 @@ directly.
 
 ## The network
 
-- The program is independently governed by The Institute for Contaminant Standards
+- The program is independently governed by the Institute of Contaminant Standards
   (contaminantstandards.com) — the institution behind the program.
 - The scientific evidence the standards are applied to is reported independently at
   the Heavy Metal Index (heavymetalindex.com), an independent literature reference.

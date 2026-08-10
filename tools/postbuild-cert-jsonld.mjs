@@ -29,7 +29,7 @@ const orgGraph = {
   parentOrganization: {
     "@type": "Organization",
     "@id": `${PARENT_BASE}/#organization`,
-    name: "The Institute for Contaminant Standards",
+    name: "Institute of Contaminant Standards",
     url: PARENT_BASE,
   },
 }
