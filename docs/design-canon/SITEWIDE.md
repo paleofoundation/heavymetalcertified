@@ -121,7 +121,7 @@ what "sitewide" actually means, and it is where drift is invisible today:
 ```
 header    height 68px · background #fffdfb · border-bottom 1px #e8e1db
 wordmark  Lora 22px #8b2a4a · letter-spacing -0.015em
-section   h2 Lora 30px #2b1f24 · border-bottom 1px #e8e1db · padding-bottom 10px
+section   h2 Lora 30px #2b1f24 · border-bottom 1px #e8e1db · margin-top 52px · padding-bottom 10px · margin-bottom 20px
 body      16.5px · line-height 1.78 · #3f3a3f
 footer    background #4a1526 · color rgba(255,255,255,0.76)
 link      #1c43ad

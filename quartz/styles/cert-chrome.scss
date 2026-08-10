@@ -53,12 +53,23 @@ article h3 {
 }
 // The v3 section-heading treatment (30px Lora with an underline rule) — interior
 // pages only. The home carries its own inline-styled section headings.
+//
+// In the v3 proof each section is a `<section style="margin-bottom:52px">`
+// wrapper with the h2 at `margin:0 0 20px` (top:0) — the 52px space ABOVE a
+// heading comes from the wrapper, not the heading. Quartz renders markdown
+// `##` as a flat h2 with no section wrapper, so copying `0 0 20px` verbatim
+// left headings with zero top margin, crowding the preceding paragraph. Move
+// the proof's 52px inter-section gap onto the heading's top margin to restore
+// the design's 52-above / 20-below rhythm. Adjacent-sibling margin collapse
+// folds the preceding paragraph's own bottom margin into the 52px rather than
+// adding to it. This matches the index site's proof-design.scss, which already
+// carries `margin: 52px 0 20px` for the same reason.
 .proof:not(.proof-home) .wiki-content h2 {
   font-size: 30px;
   line-height: 1.2;
   border-bottom: 1px solid #e8e1db;
   padding-bottom: 10px;
-  margin: 0 0 20px;
+  margin: 52px 0 20px;
 }
 .proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
 

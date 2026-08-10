@@ -141,7 +141,7 @@ Recurring compositions, exact:
 header       sticky · 68px · #fffdfb · border-bottom 1px #e8e1db
              inner: max-width 1760 · padding 0 48px · gap 22px
 wordmark     Lora 22px #8b2a4a · letter-spacing -0.015em · line-height 1.15
-section h2   Lora 30px #2b1f24 · border-bottom 1px #e8e1db · pb 10px · mb 20px
+section h2   Lora 30px #2b1f24 · border-bottom 1px #e8e1db · mt 52px · pb 10px · mb 20px
 body copy    16.5px · line-height 1.78 · #3f3a3f
 caption      11.5px · line-height 1.55 · #a9a1a2
 callout      border-left 3px #8b2a4a · background #fbf5f7 · padding 18px 22px

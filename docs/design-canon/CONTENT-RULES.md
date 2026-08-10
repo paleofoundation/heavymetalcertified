@@ -72,7 +72,7 @@ Current content → v3 component (all specs in `COMPONENTS.md`).
 | "Researched by" block | attribution | hero meta row (inline, real ORCID link) | 2 |
 | page snapshot card | orient before reading | hero **snapshot box**, square, dotted rows, tabular-nums | 2 |
 | related links | lateral navigation | rail **Connections** | 2 |
-| section headings | structure | Lora 30px, `border-bottom 1px #e8e1db`, `pb 10px` | 2 |
+| section headings | structure | Lora 30px, `border-bottom 1px #e8e1db`, `mt 52px`, `pb 10px`, `mb 20px` | 2 |
 | icons, dividers, non-evidence spacing | — | **leave alone** | 3 |
 
 **Rule for anything not in this table:** it is unmapped. Objection, not silence.
