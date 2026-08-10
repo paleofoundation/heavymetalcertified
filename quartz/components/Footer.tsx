@@ -31,7 +31,7 @@ const footerSections = [
     links: [
       ["Institute of Contaminant Standards", "https://contaminantstandards.com"],
       ["Heavy Metal Index", "https://heavymetalindex.com"],
-      ["Institute of Contaminant Standards (ICS)", "https://paleofoundation.com"],
+      ["Paleo Foundation", "https://paleofoundation.com"],
     ],
   },
   {
@@ -86,7 +86,7 @@ export default (() => {
           </nav>
         </div>
         <div class="site-footer-bottom">
-          <p>© {year} Institute of Contaminant Standards (ICS)</p>
+          <p>© {year} Paleo Certified, Inc.</p>
           <p>Operated by the Institute of Contaminant Standards.</p>
         </div>
       </footer>
