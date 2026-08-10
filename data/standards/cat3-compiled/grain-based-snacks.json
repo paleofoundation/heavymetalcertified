@@ -215,10 +215,19 @@
         "reference_method": null
       },
       "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no grain-product aluminium ML in any jurisdiction. Leavened/baked-snack Al is permitted-additive-derived, regulated by additive ADI.",
-        "reference_method": null
+        "type": "gov",
+        "value": 100000,
+        "value_exact": 100000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "basis_note": "China GB 2760-2024 baked/fried-flour/batter Al residue 100 mg/kg (dry, as Al)",
+        "per_country": {
+          "CN": {
+            "value": 100000,
+            "converted": false,
+            "id": "cn_gb2760_2024_al_baked_foods_100000"
+          }
+        }
       }
     }
   },

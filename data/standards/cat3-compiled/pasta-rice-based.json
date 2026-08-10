@@ -184,10 +184,15 @@
         "reference_method": null
       },
       "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no grain-product aluminium ML in any jurisdiction.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 1500,
+        "value_exact": 1500,
+        "source_id": null,
+        "source_jurisdiction": null,
+        "label": "occurrence: Western extruded rice pasta, no alum-firming (background; provisional)",
+        "basis_kind": "occurrence",
+        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
+        "per_country": {}
       }
     }
   },

@@ -225,10 +225,14 @@
         "reference_method": null
       },
       "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no grain-product aluminium ML in any jurisdiction.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "label": "read-across: China GB 2760-2024 baked-foods Al 100 mg/kg (leavened/additive subset)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       }
     }
   },
