@@ -370,13 +370,14 @@ header.hmi-topnav-shell::after {
   .hmtc-actions { order: 2; flex: 0 0 auto; }
   .hmtc-spacer { display: none; }
   // Override the index topNav.scss burger block (@media not $desktop forces
-  // .hmi-nav-list to column); this design uses a horizontal-scroll strip.
+  // .hmi-nav-list to column); this design wraps the nav to as many rows as it
+  // needs, so every top-level item stays visible (no burger, no off-screen
+  // horizontal scroll that hid items past the fold once the bar held 8 panels).
   .hmtc-nav {
     order: 3;
     flex: 1 1 100% !important;
     min-width: 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: visible;
     border-top: 1px solid #f2ece7;
     padding-top: 8px;
     // This same <nav> also carries .hmi-topnav-menu, and topNav.scss's
@@ -391,9 +392,9 @@ header.hmi-topnav-shell::after {
   .hmtc-nav .hmi-nav-list {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-    gap: 2px !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible;
+    gap: 4px 10px !important;
   }
   .hmtc-nav .hmi-nav-item {
     display: flex !important;
