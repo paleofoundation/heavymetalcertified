@@ -57,6 +57,16 @@
       "evidence_note": "SERVED artifact is the consolidated v2 (download_pdf): the current nine-subcategory Method v2.0 standard, rendered to content/static/manuals/ by tools/build-cat1-manual-pdf.mjs from the SAME compiled records the web edition reads, so the download cannot drift from the master matrix. `pdf` is the earlier 384-page single-subcategory DEPOSITED volume (Zenodo concept 10.5281/zenodo.20270511; v0 20270512 2026-05-18, rev 20771543 2026-06-20) — kept in data/manuals for the record and to satisfy the presence gate, but NEVER served against this 9-subcategory edition (serving a stale standard is a Daubert self-harm). The deposited editions and their DOIs stay citable in the version-history edition table on the manual page; the current v2 has no DOI yet (Crossref deposit pending), which is expected.",
       "custom_landing": true,
       "landing_note": "Web edition current (9 subcategories, 2026-08-06, Method v2.0). The consolidated v2 PDF is generated from the same data and is downloadable here; the earlier 384-page deposited editions remain citable on Zenodo via the edition record."
+    },
+    {
+      "category": 3,
+      "title": "Grains, Cereals, and Rice Products",
+      "slug": "grains-cereals-rice",
+      "edition": "2026",
+      "pdf": "HMTc-Grains-Cereals-Rice-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Web edition current (12 subcategories, full HMTc 10-analyte panel, Method v2.0 government-limit default; 2026-08-10). Rice inorganic-arsenic axis verified against EU 2023/915 (milled 150 / parboiled-husked / rice-flour 250 / rice products 300 / rice drinks 30). Consolidated version-pinned PDF in preparation."
     }
   ]
 }

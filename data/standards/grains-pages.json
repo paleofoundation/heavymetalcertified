@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "category": 3,
+    "category_name": "Grains, Cereals, and Rice Products",
+    "volume_name": "Grains, Cereals, and Rice Products",
+    "panel": ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr-VI", "Ni", "Sn", "Al"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Cr-VI", "Ni", "Sn", "Al"],
+    "tier_footnote": "Inorganic arsenic (iAs) is the arsenic species that binds on rice: rice hyperaccumulates arsenic, and every government that regulates it does so by product form (milled 150, parboiled/husked/rice-flour 250, rice products 300, rice drinks 30). Non-rice cereals do not hyperaccumulate arsenic, so iAs is not-material there and total arsenic (tAs) carries the government cereal ceiling instead. Mercury is limited as total mercury (tHg); methylmercury (MeHg), which no government regulates in grain, is bounded by the total-mercury ceiling. Hexavalent chromium (Cr-VI) is controlled by reflex speciation on total chromium, not an invented number. Tin (Sn) is material only for canned product, which routes to the canned-goods category. Aluminium (Al) has no government grain maximum in any jurisdiction.",
+    "reconstitution_note": false,
+    "compiled_dir": "cat3-compiled",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-10",
+    "default_version": "1.0 (2026-08-10)",
+    "reg_overrides": {
+      "EU": {
+        "slug": "eu-2023-915",
+        "cite": "Commission Regulation (EU) 2023/915 (as amended by (EU) 2023/465 for rice drinks) and (EU) 2024/1987 for nickel",
+        "year": 2023,
+        "type": "Maximum levels"
+      }
+    },
+    "manual_slug": "grains-cereals-rice",
+    "manual_method_note": "Grain, cereal, and rice limits are taken at face value in each product&rsquo;s native basis (as sold for solids; as consumed for rice beverages); there is no reconstitution conversion. The rice / non-rice split is the clean / dirty structure, and it falls straight out of the government limits themselves: every rice subcategory carries a binding inorganic-arsenic maximum level set by product form (EU 2023/915), while non-rice cereals resolve inorganic arsenic as not-material because arsenic does not hyperaccumulate in them. Total arsenic (tAs) carries the government cereal / rice total-arsenic ceiling as an independent limit; the inorganic fraction is the toxic species and binds first on rice. Tier&nbsp;1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier&nbsp;2 (tAs, Cr-VI, Ni, Sn, Al) carry the program&rsquo;s 150% transitional allowance. Methylmercury is bounded by the total-mercury ceiling; hexavalent chromium is controlled by reflex speciation on total chromium; tin is material only for canned product (routed to the canned-goods category); aluminium has no government grain maximum. The rice inorganic-arsenic maximum for products destined for infants and young children (100 ppb) is stricter and is set in the Infant and Child Foods volume, not here."
+  },
+  "_doc": "Per-page metadata for the Category-3 (Grains, Cereals, and Rice Products) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat3-compiled/<record>.json (deterministic; frozen derivations from the Heavy Metal Index compiler, every cell tracing to a named regulatory_limits.csv row). This file carries display + wiring + the category _meta block only; no numbers are authored here.",
+  "pages": [
+    {
+      "slug": "flour-non-rice",
+      "name": "Flour — wheat, corn, and other non-rice",
+      "description": "The Heavy Metal Tested & Certified standard for non-rice flour — wheat, corn, and other cereal flours — stated as sold. Non-rice cereals do not hyperaccumulate arsenic, so inorganic arsenic is controlled by reflex speciation while total arsenic carries the government cereal ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/flour-non-rice",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Bread and baked goods standard", "href": "/standards/bread-and-baked-goods" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/flour-non-rice" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "flour-non-rice" }]
+    },
+    {
+      "slug": "bread-and-baked-goods",
+      "name": "Bread and baked goods — non-rice",
+      "description": "The Heavy Metal Tested & Certified standard for non-rice bread and baked goods, stated as sold. Arsenic is controlled as total arsenic against the government cereal-products ceiling, with inorganic arsenic on reflex screen; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/bread-and-baked-goods",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Flour standard", "href": "/standards/flour-non-rice" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/bread-and-baked-goods" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "bread-and-baked-goods" }]
+    },
+    {
+      "slug": "pasta-wheat-based",
+      "name": "Pasta — wheat-based",
+      "description": "The Heavy Metal Tested & Certified standard for wheat-based pasta (durum, semolina), stated as sold. A non-rice cereal product: inorganic arsenic is not-material and total arsenic carries the government wheat ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/pasta-wheat-based",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice-based pasta standard", "href": "/standards/pasta-rice-based" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/pasta-wheat-based" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "pasta-wheat-based" }]
+    },
+    {
+      "slug": "breakfast-cereal-non-rice",
+      "name": "Breakfast cereal — non-rice",
+      "description": "The Heavy Metal Tested & Certified standard for non-rice breakfast cereal (corn, wheat, oat), stated as sold. Inorganic arsenic is not-material for non-rice cereals; total arsenic carries the government cereal ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/breakfast-cereal-non-rice",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice-based breakfast cereal standard", "href": "/standards/breakfast-cereal-rice-based" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/breakfast-cereal-non-rice" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "breakfast-cereal-non-rice" }]
+    },
+    {
+      "slug": "other-grain-products",
+      "name": "Other grain products — oat, millet, quinoa, barley",
+      "description": "The Heavy Metal Tested & Certified standard for other grain products — oat, millet, quinoa, barley — stated as sold. The cadmium ceiling reflects the strictest EU cereal maximum (barley and rye at 50 ppb); every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/other-grain-products",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Flour standard", "href": "/standards/flour-non-rice" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/other-grain-products" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "other-grain-products" }]
+    },
+    {
+      "slug": "grain-based-snacks",
+      "name": "Grain-based snacks — crackers, biscuits, cookies, popcorn, pretzels",
+      "description": "The Heavy Metal Tested & Certified standard for non-rice grain-based snacks — crackers, biscuits, cookies, popcorn, pretzels — stated as sold. Total arsenic carries the government cereal-products ceiling; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/grain-based-snacks",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice snacks and crackers standard", "href": "/standards/rice-snacks-crackers" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/grain-based-snacks" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "grain-based-snacks" }]
+    },
+    {
+      "slug": "rice-bulk-grain",
+      "name": "Rice — bulk grain (white, brown, wild)",
+      "description": "The Heavy Metal Tested & Certified standard for bulk rice grain — white, brown, and wild rice — stated as sold. Rice hyperaccumulates inorganic arsenic; the subcategory adopts the strictest EU rice-form maximum (non-parboiled milled rice, 150 ppb), which holds brown and wild rice to the tighter milled-rice ceiling. Every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/rice-bulk-grain",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice snacks and crackers standard", "href": "/standards/rice-snacks-crackers" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/rice-bulk-grain" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "rice-bulk-grain" }]
+    },
+    {
+      "slug": "pasta-rice-based",
+      "name": "Pasta — rice-based",
+      "description": "The Heavy Metal Tested & Certified standard for rice-based pasta, stated as sold. Rice pasta is a rice-flour product and carries the EU rice-flour inorganic-arsenic maximum (250 ppb); every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/pasta-rice-based",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Wheat-based pasta standard", "href": "/standards/pasta-wheat-based" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/pasta-rice-based" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "pasta-rice-based" }]
+    },
+    {
+      "slug": "rice-noodles",
+      "name": "Rice noodles",
+      "description": "The Heavy Metal Tested & Certified standard for rice noodles and rice vermicelli, stated as sold. A rice-flour product, carrying the EU rice-flour inorganic-arsenic maximum (250 ppb); every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/rice-noodles",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice-based pasta standard", "href": "/standards/pasta-rice-based" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/rice-noodles" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "rice-noodles" }]
+    },
+    {
+      "slug": "breakfast-cereal-rice-based",
+      "name": "Breakfast cereal — rice-based",
+      "description": "The Heavy Metal Tested & Certified standard for rice-based breakfast cereal — puffed rice, rice flakes, crisped rice — stated as sold. As a finished rice product it carries the EU rice-products inorganic-arsenic maximum (300 ppb); infant rice cereal is a distinct product held to the stricter 100 ppb infant maximum in the Infant and Child Foods volume. Every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/breakfast-cereal-rice-based",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Non-rice breakfast cereal standard", "href": "/standards/breakfast-cereal-non-rice" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/breakfast-cereal-rice-based" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "breakfast-cereal-rice-based" }]
+    },
+    {
+      "slug": "rice-snacks-crackers",
+      "name": "Rice snacks and crackers — rice cakes, wafers",
+      "description": "The Heavy Metal Tested & Certified standard for rice snacks and crackers — rice cakes and rice wafers — stated as sold. These are the EU-enumerated rice products carrying the 300 ppb inorganic-arsenic maximum; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/rice-snacks-crackers",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice bulk grain standard", "href": "/standards/rice-bulk-grain" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/rice-snacks-crackers" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "rice-snacks-crackers" }]
+    },
+    {
+      "slug": "rice-beverages-rice-milk",
+      "name": "Rice beverages — rice milk",
+      "description": "The Heavy Metal Tested & Certified standard for rice beverages (rice milk), stated as consumed. The EU sets a dedicated inorganic-arsenic maximum for non-alcoholic rice drinks (30 ppb), which is the binding arsenic control; every limit is the strictest maximum level any credible government sets for the product.",
+      "version": "1.0 (2026-08-10)",
+      "hmi_link": "https://heavymetalindex.com/products/rice-beverages-rice-milk",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "Program Manual — Grains, Cereals & Rice", "href": "/manuals/grains-cereals-rice" },
+        { "label": "Rice bulk grain standard", "href": "/standards/rice-bulk-grain" },
+        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/rice-beverages-rice-milk" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "rice-beverages-rice-milk" }]
+    }
+  ]
+}

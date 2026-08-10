@@ -54,6 +54,23 @@ export const navPanels: NavPanel[] = [
         ],
       },
       {
+        heading: "Grains, cereals & rice",
+        children: [
+          { label: "Rice (bulk grain)", slug: "standards/rice-bulk-grain" },
+          { label: "Rice pasta", slug: "standards/pasta-rice-based" },
+          { label: "Rice noodles", slug: "standards/rice-noodles" },
+          { label: "Rice breakfast cereal", slug: "standards/breakfast-cereal-rice-based" },
+          { label: "Rice snacks & crackers", slug: "standards/rice-snacks-crackers" },
+          { label: "Rice beverages (rice milk)", slug: "standards/rice-beverages-rice-milk" },
+          { label: "Flour (non-rice)", slug: "standards/flour-non-rice" },
+          { label: "Bread & baked goods", slug: "standards/bread-and-baked-goods" },
+          { label: "Pasta (wheat)", slug: "standards/pasta-wheat-based" },
+          { label: "Breakfast cereal (non-rice)", slug: "standards/breakfast-cereal-non-rice" },
+          { label: "Other grain products", slug: "standards/other-grain-products" },
+          { label: "Grain-based snacks", slug: "standards/grain-based-snacks" },
+        ],
+      },
+      {
         heading: "Pantry and fats",
         children: [
           { label: "Salt", slug: "standards/salt" },
@@ -66,15 +83,13 @@ export const navPanels: NavPanel[] = [
       {
         heading: "Other categories",
         children: [
-          { label: "Rice-based breakfast cereal", slug: "standards/breakfast-cereal-rice-based" },
-          { label: "Non-rice breakfast cereal", slug: "standards/breakfast-cereal-non-rice" },
           { label: "Chocolate", slug: "standards/chocolate" },
           { label: "Honey", slug: "standards/honey" },
           { label: "Vinegar", slug: "standards/vinegar" },
         ],
       },
     ],
-    allLabel: "All 15 standards",
+    allLabel: "All standards",
   },
   {
     key: "analytes",
