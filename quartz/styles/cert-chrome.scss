@@ -699,6 +699,43 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 .hmtc-railnote-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 7px; }
 .hmtc-railnote-body { font-size: 13px; line-height: 1.65; color: #a9a1a1; margin: 0; }
 
+// Discreet rail Share popup (Copy link / X / LinkedIn / Reddit / Email).
+// Behavior in components/scripts/railShare.inline.ts; markup from Rail.tsx's
+// ShareBlock. Understated — a thin mono trigger below the Verify CTA — so it
+// never reads as a loud social bar. Brand glyphs are monochrome (currentColor),
+// not full-colour logos, to sit inside the reading canon. The menu opens UPWARD
+// because the toggle is the last element in the rail.
+.hmtc-share { position: relative; margin-top: 22px; }
+.hmtc-share-toggle {
+  display: flex; align-items: center; gap: 9px; width: 100%;
+  border: 1px solid #e8e1db; background: #fff; color: #5a4141;
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.06em;
+  text-transform: uppercase; line-height: 1;
+  padding: 10px 12px; border-radius: 3px; cursor: pointer;
+}
+.hmtc-share-toggle:hover,
+.hmtc-share-toggle[aria-expanded="true"] { border-color: #9f2727; color: #9f2727; }
+.hmtc-share-toggle svg { width: 15px; height: 15px; flex: 0 0 auto; }
+.hmtc-share-menu {
+  position: absolute; bottom: calc(100% + 6px); left: 0; right: 0; z-index: 30;
+  background: #fff; border: 1px solid #e8e1db; border-radius: 3px;
+  box-shadow: 0 10px 30px rgba(31, 20, 20, 0.12);
+  padding: 6px; display: flex; flex-direction: column; gap: 2px;
+}
+.hmtc-share-menu[hidden] { display: none; }
+.hmtc-share-menu .share-item {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  background: none; border: 0; padding: 9px 11px; border-radius: 3px;
+  font-family: inherit; font-size: 13px; color: #5a4141; cursor: pointer;
+  text-decoration: none;
+}
+.hmtc-share-menu .share-item:hover { background: #faf7f4; color: #9f2727; text-decoration: none; }
+.hmtc-share-menu .share-item svg { width: 16px; height: 16px; flex: 0 0 auto; }
+.hmtc-share-status {
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; color: #a9a1a1;
+  padding: 3px 11px 2px; min-height: 1.2em;
+}
+
 // ============================================================
 //  v3 BODY CONTENT — kill Quartz's default prose/table bleed
 //  Quartz base renders body at 1.1rem/#1a1d24 and table heads in the header
