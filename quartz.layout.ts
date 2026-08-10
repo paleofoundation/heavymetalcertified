@@ -57,7 +57,7 @@ export const sharedPageComponents: SharedLayout = {
   // The global TopNav (wordmark + mega-menu + controls). renderPage.tsx lifts
   // this into a full-bleed sticky <header> outside #quartz-root.
   header: [Component.TopNav()],
-  afterBody: [Component.Corrections(), Component.RelatedPages(), Component.CiteThisPage()],
+  afterBody: [Component.Corrections(), Component.CiteThisPage()],
   footer: Component.Footer(),
 };
 
