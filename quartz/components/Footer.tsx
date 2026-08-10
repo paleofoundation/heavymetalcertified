@@ -20,6 +20,7 @@ const footerSections = [
     title: "Methodology",
     links: [
       ["How limits are derived", "/program/structure"],
+      ["The standards ratchet", "/program/ratchet"],
       ["Two remediation pathways", "/program/two-pathways"],
       ["Confidential Remediation Track", "/program/remediation"],
       ["Native basis and conversion", "/program/structure"],
