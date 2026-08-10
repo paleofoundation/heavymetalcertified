@@ -78,6 +78,7 @@ function bindingLabel(cell) {
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
   }
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
+  if (cell.type === "subsumed") return `governed by total mercury (&le;&nbsp;${cell.binding_tHg}&nbsp;&micro;g/kg)`
   return "&mdash;"
 }
 
@@ -91,7 +92,12 @@ function limitDisplay(analyte, variants) {
 
 // --- Master Limit Table -------------------------------------------------------
 function masterTable(variants, basisWord, tierNote) {
-  const rows = PANEL.map((a, i) => {
+  // A `subsumed` mercury cell (MeHg governed by the total-mercury ceiling) is not
+  // an independent pass/fail ceiling, so it is not a row in the Master Limit
+  // Table — mercury appears once, as total mercury. It is retained in the
+  // derivation table with its provenance and a footnote.
+  const shown = PANEL.filter((a) => variants[0].cells[a]?.type !== "subsumed")
+  const rows = shown.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
@@ -122,14 +128,15 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       return `<td style="padding:9px 10px;text-align:right;font-family:'IBM Plex Mono',monospace;color:${color}">${pc.value}${conv}</td>`
     }).join("")
     let hmtc, binds
-    if (!c || c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
+    if (c && c.type === "subsumed") { hmtc = "&le;&nbsp;tHg&sup4;"; binds = "governed by total mercury" }
+    else if (!c || c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "read_across") { hmtc = `${c.value}&sup2;`; binds = "read-across" }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
     else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; read-across: no government sets this analyte for this exact product; the value is read across from the nearest government value for an analogous product. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${otherNote || ""}`
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; read-across: no government sets this analyte for this exact product; the value is read across from the nearest government value for an analogous product. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. &sup4; methylmercury is a component of total mercury (MeHg &le; tHg); no government sets a methylmercury limit for this product below the binding total-mercury ceiling, so it is governed by and bounded by that ceiling and no separate methylmercury number is published. ${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
@@ -144,7 +151,7 @@ function citeSection(subName, version, hmiLink, doi, volume) {
 }
 
 // --- drive --------------------------------------------------------------------
-const tier1Names = (META.tier1 || []).map((a) => (a === "tHg" ? "Hg" : a)).filter((v, i, arr) => arr.indexOf(v) === i).join(", ")
+const tier1Names = (META.tier1 || []).map((a) => (a === "tHg" || a === "MeHg" ? "Hg" : a)).filter((v, i, arr) => arr.indexOf(v) === i).join(", ")
 const tier2Names = (META.tier2 || []).join(", ")
 const tierNote = `Tier 1 (${tier1Names}) are zero-tolerance toxics with no established safe threshold. Tier 2 (${tier2Names}) carry a 150% transitional allowance under the program&rsquo;s Status A&ndash;E framework. ${META.tier_footnote || ""}`.trim()
 
@@ -156,6 +163,10 @@ for (const page of DOC.pages) {
     return { label: v.label, cells, native_basis: rec.native_basis }
   })
   const basisWord = variants[0].native_basis === "as_sold" ? "as-sold" : "as-consumed"
+  // Firm ceilings = analytes carrying a standalone numeric limit (gov or read-across).
+  // Excludes `subsumed` (methylmercury governed by total mercury) and `not_material`
+  // (controlled analytes), so the count matches the rows the Master Limit Table shows.
+  const firmCount = PANEL.filter((a) => { const c = variants[0].cells[a]; return c && (c.type === "gov" || c.type === "read_across") && c.value != null }).length
   const version = page.version || META.default_version
   const vshort = version.split(" ")[0]
   const certDoi = page.cert_doi || null
@@ -173,7 +184,7 @@ for (const page of DOC.pages) {
     `product_slug: ${page.slug}`,
     "custom_page: true",
     `subcategory: "${page.name}"`,
-    `firm_analytes: ${PANEL.length}`,
+    `firm_analytes: ${firmCount}`,
     `native_basis: ${variants[0].native_basis}`,
     `standard_version: "${version}"`,
     `methodology_version: "${META.methodology_version}"`,
@@ -187,7 +198,7 @@ for (const page of DOC.pages) {
     '  title: "Document versions"',
     `  body: "v${vshort} · ${META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     "snapshot:",
-    `  - { k: "Analytes limited", v: "${PANEL.length} / ${PANEL.length}" }`,
+    `  - { k: "Analytes limited", v: "${firmCount} / ${PANEL.length}" }`,
     '  - { k: "Method", v: "Strictest government ML" }',
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,

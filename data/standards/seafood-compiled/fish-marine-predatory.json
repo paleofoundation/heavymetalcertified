@@ -176,43 +176,17 @@
         }
       },
       "MeHg": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "MX",
-        "binding_id": "mx_nom242_mehg_tuna_group_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "MX": {
-            "value": 1000,
-            "converted": true,
-            "id": "mx_nom242_mehg_tuna_group_1000"
-          },
-          "TH": {
-            "value": 1000,
-            "converted": true,
-            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
-          },
-          "PH": {
-            "value": 1000,
-            "converted": true,
-            "id": "ph_pns194_2017_predatory_fish_mehg_1000"
-          },
-          "TT": {
-            "value": 1000,
-            "converted": true,
-            "id": "tt_fooddrugs_2007_predatory_fish_mehg_1000"
-          },
-          "VN": {
-            "value": 1000,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_mehg_carnivorous-fish-shark-swordfish-tuna-pike-etc_1000"
-          },
-          "GSO": {
-            "value": 1200,
-            "converted": true,
-            "id": "gso193_2021_mehg_tuna_1200"
-          }
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 1000,
+        "binding_tHg_source": "EU",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (1000 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "gov",
+          "value": 1000,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_tuna_group_1000"
         }
       },
       "Cd": {

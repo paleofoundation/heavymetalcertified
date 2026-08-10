@@ -246,43 +246,17 @@
         }
       },
       "MeHg": {
-        "type": "gov",
-        "value": 500,
-        "value_exact": 500,
-        "binding_jurisdiction": "MX",
-        "binding_id": "mx_nom242_mehg_other_500",
-        "basis_note": "face value",
-        "per_country": {
-          "MX": {
-            "value": 500,
-            "converted": true,
-            "id": "mx_nom242_mehg_other_500"
-          },
-          "PH": {
-            "value": 500,
-            "converted": true,
-            "id": "ph_pns194_2017_fish_mehg_500"
-          },
-          "TT": {
-            "value": 500,
-            "converted": true,
-            "id": "tt_fooddrugs_2007_fish_except_predatory_mehg_500"
-          },
-          "VN": {
-            "value": 500,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_mehg_fish-excluding-carnivorous-fish_500"
-          },
-          "TH": {
-            "value": 1000,
-            "converted": true,
-            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
-          },
-          "GSO": {
-            "value": 1200,
-            "converted": true,
-            "id": "gso193_2021_mehg_tuna_1200"
-          }
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 500,
+        "binding_tHg_source": "CR",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (500 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "gov",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
         }
       },
       "Cd": {

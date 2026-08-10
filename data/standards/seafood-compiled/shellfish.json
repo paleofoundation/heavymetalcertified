@@ -206,23 +206,17 @@
         }
       },
       "MeHg": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda_cpg540600_mehg_fish_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "US": {
-            "value": 1000,
-            "converted": true,
-            "id": "fda_cpg540600_mehg_fish_1000"
-          },
-          "GSO": {
-            "value": 1000,
-            "converted": true,
-            "id": "gso193_2021_mehg_crustaceans_and_crabs_1000"
-          }
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 500,
+        "binding_tHg_source": "EU",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (500 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "gov",
+          "value": 1000,
+          "source_jurisdiction": "US",
+          "source_id": "fda_cpg540600_mehg_fish_1000"
         }
       },
       "Cd": {

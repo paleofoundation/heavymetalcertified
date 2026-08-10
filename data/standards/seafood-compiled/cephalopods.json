@@ -9,10 +9,15 @@
         "type": "gov",
         "value": 300,
         "value_exact": 300,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_pb_10_3_octopus_and_squid_300",
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_cephalopods_300",
         "basis_note": "face value",
         "per_country": {
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_pb_cephalopods_300"
+          },
           "IL": {
             "value": 300,
             "converted": true,
@@ -141,14 +146,18 @@
         }
       },
       "MeHg": {
-        "type": "read_across",
-        "value": 500,
-        "value_exact": 500,
-        "source_id": "mx_nom242_mehg_other_500",
-        "source_jurisdiction": "MX",
-        "label": "No government sets a cephalopod-specific methylmercury ML. Read across from the non-predatory / general fishery MeHg value (Mexico NOM-242, other fishery products, 500 ug/kg): cephalopods are not high-trophic mercury accumulators, so the non-predatory fish MeHg tier is the nearest defensible value. Comparator vs any direct cephalopod MeHg limit.",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 300,
+        "binding_tHg_source": "EU",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (300 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "read_across",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
+        }
       },
       "Cd": {
         "type": "gov",
