@@ -106,6 +106,11 @@ const config: QuartzConfig = {
       // Auto-link first prose mention of unambiguous metals; must run before
       // CrawlLinks so the inserted links are resolved + counted in the graph.
       Plugin.AutoLink(),
+      // Auto-link first prose mention of a SIBLING PROPERTY (Heavy Metal Index,
+      // Institute of Contaminant Standards) out to it — the cross-property
+      // authority signal. Firewall-allowed directions only (cert→index,
+      // cert→ICS). Runs before CrawlLinks alongside AutoLink.
+      Plugin.CrossPropertyLink(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       // Latex plugin removed: prose uses bare "$" for dollar amounts, which

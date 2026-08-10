@@ -13,11 +13,12 @@
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "prebuild": "node tools/build-cert-regulation-pages.mjs && node tools/build-cat1-standard-pages.mjs && node tools/build-cat1-manual.mjs && node tools/build-category-standard-pages.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-manual.mjs --pages=data/standards/seafood-pages.json && node tools/build-standards-pages.mjs && node tools/build-cert-sources.mjs && node tools/build-cert-sources.mjs --pages=data/standards/seafood-pages.json && node tools/build-cert-version-history.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/build-cert-analyte-pages.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs",
+    "prebuild": "node tools/build-cert-regulation-pages.mjs && node tools/build-cat1-standard-pages.mjs && node tools/build-cat1-manual.mjs && node tools/build-category-standard-pages.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-manual.mjs --pages=data/standards/seafood-pages.json && node tools/build-standards-pages.mjs && node tools/build-cert-sources.mjs && node tools/build-cert-sources.mjs --pages=data/standards/seafood-pages.json && node tools/build-cert-version-history.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/build-cert-analyte-pages.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs && node tools/crosslink-lint.mjs",
     "standards": "node tools/build-standards-pages.mjs",
     "manuals": "node tools/build-manuals-page.mjs",
     "briefings": "node tools/import-briefings.mjs",
     "lint:firewall": "node tools/firewall-cert-lint.mjs",
+    "lint:crosslink": "node tools/crosslink-lint.mjs",
     "build": "./quartz/bootstrap-cli.mjs build -d content -o public",
     "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs",
     "serve": "./quartz/bootstrap-cli.mjs build --serve -d content -o public",
