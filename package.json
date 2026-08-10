@@ -13,7 +13,7 @@
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
-    "prebuild": "node tools/build-cert-regulation-pages.mjs && node tools/build-cat1-standard-pages.mjs && node tools/build-cat1-manual.mjs && node tools/build-category-standard-pages.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-manual.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-standard-pages.mjs --pages=data/standards/grains-pages.json && node tools/build-category-manual.mjs --pages=data/standards/grains-pages.json && node tools/build-standards-pages.mjs && node tools/build-cert-sources.mjs && node tools/build-cert-sources.mjs --pages=data/standards/seafood-pages.json && node tools/build-cert-sources.mjs --pages=data/standards/grains-pages.json && node tools/build-cert-version-history.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/build-cert-analyte-pages.mjs && node tools/build-cert-articles.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs && node tools/claim-discipline-lint.mjs && node tools/briefings-index-lint.mjs",
+    "prebuild": "node tools/build-cert-regulation-pages.mjs && node tools/build-cat1-standard-pages.mjs && node tools/build-cat1-manual.mjs && node tools/build-category-standard-pages.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-manual.mjs --pages=data/standards/seafood-pages.json && node tools/build-category-standard-pages.mjs --pages=data/standards/grains-pages.json && node tools/build-category-manual.mjs --pages=data/standards/grains-pages.json && node tools/build-standards-pages.mjs && node tools/build-cert-sources.mjs && node tools/build-cert-sources.mjs --pages=data/standards/seafood-pages.json && node tools/build-cert-sources.mjs --pages=data/standards/grains-pages.json && node tools/build-cert-version-history.mjs && node tools/import-briefings.mjs && node tools/build-manuals-page.mjs && node tools/build-cert-analyte-pages.mjs && node tools/build-cert-articles.mjs && node tools/firewall-cert-lint.mjs && node tools/method-drift-lint.mjs && node tools/claim-discipline-lint.mjs && node tools/briefings-index-lint.mjs && node tools/audit-transformer-parity.mjs --warn-only",
     "standards": "node tools/build-standards-pages.mjs",
     "manuals": "node tools/build-manuals-page.mjs",
     "briefings": "node tools/import-briefings.mjs",
@@ -26,7 +26,8 @@
     "check:v3": "node tools/check-v3.mjs",
     "format": "npx prettier . --write",
     "release": "npm run build",
-    "publish": "npm run release && npx vercel@latest --prod --yes"
+    "publish": "npm run release && npx vercel@latest --prod --yes",
+    "lint:transformer-parity": "node tools/audit-transformer-parity.mjs"
   },
   "engines": {
     "npm": ">=10.9.2",
