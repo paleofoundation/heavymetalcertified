@@ -218,6 +218,57 @@ export const navPanels: NavPanel[] = [
     allLabel: "All 11 briefings",
   },
   {
+    key: "research",
+    label: "Research",
+    panelLabel: "Research analyses",
+    slug: "articles",
+    blurb:
+      "Analyses that apply the independent literature to the certification question — one per Heavy Metal Index finding, each citing the index one way.",
+    extraPrefixes: ["articles"],
+    groups: [
+      {
+        heading: "Seafood & mercury",
+        children: [
+          { label: "Farmed vs wild fish", slug: "articles/aquaculture-vs-wild-contamination-differential" },
+          { label: "Cooking & methylmercury", slug: "articles/cooking-does-not-reduce-mehg" },
+          { label: "Climate & fish mercury", slug: "articles/climate-fish-mehg-projections" },
+          { label: "Mining-impacted fish", slug: "articles/mining-impacted-freshwater-fish" },
+          { label: "Cadmium in shellfish", slug: "articles/bivalve-cadmium-amplification" },
+          { label: "Selenium & mercury", slug: "articles/se-hg-molar-ratio-certification-debate" },
+          { label: "Subsistence fishing", slug: "articles/subsistence-fishing-mehg-disparity" },
+          { label: "Arsenic speciation", slug: "articles/organoarsenical-inertness-assumption" },
+        ],
+      },
+      {
+        heading: "Infant, plant & pantry",
+        children: [
+          { label: "Lead & cadmium in chocolate", slug: "articles/lead-and-cadmium-in-dark-chocolate" },
+          { label: "Infant formula metals", slug: "articles/infant-formula-metal-amplification" },
+          { label: "Breastmilk pathway", slug: "articles/breastmilk-heavy-metal-exposure-pathway" },
+          { label: "Lead in spices", slug: "articles/spice-adulteration-lead-infants" },
+          { label: "Seaweed cadmium & arsenic", slug: "articles/seaweed-cd-as-contamination" },
+          { label: "Nickel in plant staples", slug: "articles/dietary-nickel-plant-staple-accumulation" },
+          { label: "Rice arsenic vs cadmium", slug: "articles/climate-metals-tradeoffs" },
+          { label: "Tin in canned food", slug: "articles/tin-canned-food-acidic-matrix-migration" },
+        ],
+      },
+      {
+        heading: "Systems & certification",
+        children: [
+          { label: "Organic isn't protective", slug: "articles/organic-certification-not-protective" },
+          { label: "Combined exposure", slug: "articles/combined-exposure-underprotection" },
+          { label: "Supplements", slug: "articles/supplement-botanical-lead-pathway" },
+          { label: "Organ meats", slug: "articles/organ-meat-cadmium-lead-accumulation" },
+          { label: "Metals in tea", slug: "articles/tea-multi-metal-bioaccumulation" },
+          { label: "Cookware leaching", slug: "articles/cookware-utensil-metal-leaching-pathway" },
+          { label: "Wastewater-irrigated crops", slug: "articles/wastewater-irrigation-multimetal-crop-pathway" },
+          { label: "EU limits timeline", slug: "articles/eu-regulatory-framework-timeline" },
+        ],
+      },
+    ],
+    allLabel: "All 24 analyses",
+  },
+  {
     key: "program",
     label: "Program",
     panelLabel: "The program",
