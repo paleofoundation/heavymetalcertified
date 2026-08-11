@@ -35,108 +35,117 @@ async function loadFonts() {
   const f = (rel) => readFile(p("tools/pdf/fonts", rel))
   return [
     { name: "Lora", data: await f("Lora-Regular.ttf"), weight: 400, style: "normal" },
+    { name: "Lora", data: await f("Lora-Bold.ttf"), weight: 700, style: "normal" },
     { name: "Inter", data: await f("Inter-Regular.ttf"), weight: 400, style: "normal" },
     { name: "Inter", data: await f("Inter-SemiBold.ttf"), weight: 600, style: "normal" },
     { name: "IBM Plex Mono", data: await f("IBMPlexMono-Medium.ttf"), weight: 500, style: "normal" },
   ]
 }
 
-// ---- favicon source: red mark centered on a white square -------------------
-async function buildIcon() {
-  const size = 512
-  const pad = 60
-  const innerH = size - pad * 2
-  const innerW = Math.round(innerH * markAspect)
-  const markPng = await sharp(p("content/static/hmtc-mark-red.svg"))
-    .resize({ width: innerW, height: innerH, fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
-    .png()
-    .toBuffer()
-  await sharp({
-    create: { width: size, height: size, channels: 4, background: "#ffffff" },
-  })
-    .composite([{ input: markPng, gravity: "centre" }])
-    .png()
-    .toFile(p("quartz/static/icon.png"))
-  console.log("wrote quartz/static/icon.png (512x512, red mark on white)")
+const div = (style, children) => ({ type: "div", props: { style, children } })
+const text = (style, value) => ({ type: "div", props: { style, children: value } })
+
+// The mark SVG ships as white linework on a #7f1f1f plaque; strip the plaque so
+// only the white linework renders (subtle logo directly on the card, no dark box).
+async function whiteMarkNoPlaque() {
+  const raw = await readFile(p("content/static/hmtc-mark-white.svg"), "utf8")
+  return raw.replace(/fill="#7f1f1f"/g, 'fill="none"')
 }
 
-// ---- default social card: white mark + wordmark on brand red ---------------
+// ---- favicon: white ampersand on the brand red (legible at 16-48px) --------
+async function buildIcon() {
+  const size = 512
+  const fonts = await loadFonts()
+  const tree = div(
+    {
+      width: size,
+      height: size,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      background: RED,
+      borderRadius: 104,
+    },
+    text(
+      { fontFamily: "Lora", fontWeight: 700, fontSize: 380, color: "#ffffff", lineHeight: 1, marginTop: -18 },
+      "&",
+    ),
+  )
+  const svg = await satori(tree, { width: size, height: size, fonts })
+  await sharp(Buffer.from(svg)).png().toFile(p("quartz/static/icon.png"))
+  console.log("wrote quartz/static/icon.png (512x512, white ampersand on red)")
+}
+
+// ---- default social card: content-forward, subtle mark, no plaque ----------
 async function buildOgImage() {
   const W = 1200
   const H = 630
-  // Rasterize the white mark at 2x display size for a crisp composite.
-  const dispH = 400
-  const dispW = Math.round(dispH * markAspect)
-  const markPng = await sharp(p("content/static/hmtc-mark-white.svg"))
-    .resize({ width: dispW * 2, height: dispH * 2, fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
+  // Small, subtle white mark (plaque removed) as a letterhead — the wordmark and
+  // tagline carry the card, not the logo.
+  const markH = 66
+  const markW = Math.round(markH * markAspect)
+  const markPng = await sharp(Buffer.from(await whiteMarkNoPlaque()))
+    .resize({ width: markW * 3, height: markH * 3, fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
     .png()
     .toBuffer()
   const markDataUri = `data:image/png;base64,${markPng.toString("base64")}`
 
   const fonts = await loadFonts()
-  const div = (style, children) => ({ type: "div", props: { style, children } })
-  const text = (style, value) => ({ type: "div", props: { style, children: value } })
 
   const tree = div(
     {
       width: W,
       height: H,
       display: "flex",
-      alignItems: "center",
-      gap: 60,
+      flexDirection: "column",
+      justifyContent: "center",
       background: RED,
-      padding: "0 84px",
+      padding: "0 92px",
       fontFamily: "Inter",
     },
     [
-      { type: "img", props: { src: markDataUri, width: dispW, height: dispH, style: { flex: "0 0 auto" } } },
-      div({ display: "flex", flexDirection: "column", justifyContent: "center", flex: 1, minWidth: 0 }, [
-        text(
-          {
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            fontSize: 21,
-            letterSpacing: 3,
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.72)",
-            marginBottom: 18,
-          },
-          "Heavy Metal Tested & Certified",
-        ),
-        text(
-          { fontFamily: "Lora", fontWeight: 400, fontSize: 60, lineHeight: 1.08, color: "#ffffff" },
-          "Heavy Metal Certified",
-        ),
-        text(
-          {
-            fontFamily: "Inter",
-            fontWeight: 400,
-            fontSize: 27,
-            lineHeight: 1.4,
-            color: "rgba(255,255,255,0.92)",
-            marginTop: 22,
-            maxWidth: 560,
-          },
-          "Published heavy-metal standards — the strictest limit any government sets, in each product's native basis.",
-        ),
-        text(
-          {
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            fontSize: 20,
-            letterSpacing: 1,
-            color: "rgba(255,255,255,0.7)",
-            marginTop: 34,
-          },
-          "heavymetalcertified.com",
-        ),
-      ]),
+      { type: "img", props: { src: markDataUri, width: markW, height: markH, style: { marginBottom: 40 } } },
+      text(
+        { fontFamily: "Lora", fontWeight: 400, fontSize: 82, lineHeight: 1.03, color: "#ffffff" },
+        "Heavy Metal Certified",
+      ),
+      text(
+        {
+          fontFamily: "Inter",
+          fontWeight: 400,
+          fontSize: 31,
+          lineHeight: 1.4,
+          color: "rgba(255,255,255,0.9)",
+          marginTop: 26,
+          maxWidth: 900,
+        },
+        "The strictest heavy-metal limit any government sets — published per subcategory, in each product's native basis.",
+      ),
+      div(
+        {
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+          marginTop: 52,
+          paddingTop: 26,
+          borderTop: "1px solid rgba(255,255,255,0.22)",
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 500,
+          fontSize: 20,
+          letterSpacing: 1,
+        },
+        [
+          text({ color: "rgba(255,255,255,0.82)" }, "heavymetalcertified.com"),
+          text({ color: "rgba(255,255,255,0.55)" }, "Institute of Contaminant Standards"),
+        ],
+      ),
     ],
   )
 
   const svg = await satori(tree, { width: W, height: H, fonts })
   await sharp(Buffer.from(svg)).png().toFile(p("quartz/static/og-image.png"))
-  console.log("wrote quartz/static/og-image.png (1200x630, white mark on red)")
+  console.log("wrote quartz/static/og-image.png (1200x630, content-forward, subtle mark)")
 }
 
 await buildIcon()
