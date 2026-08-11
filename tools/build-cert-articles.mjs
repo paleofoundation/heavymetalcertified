@@ -136,6 +136,9 @@ function build(spec) {
     `updated: "${date}"`,
     "scholar_eligible: true",
     "scholar_pdf: true",
+    // The PDF edition is declared in frontmatter and rendered by the right-rail
+    // (Rail.tsx reads `pdf`); the download card is NOT emitted inline in the body.
+    `pdf: "/articles/${slug}.pdf"`,
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
     "snapshot:",
     `  - { k: "Document type", v: "Research analysis" }`,
@@ -156,8 +159,6 @@ function build(spec) {
 
   const body = [
     renderClaim(spec.claim, date),
-    "",
-    `<div style="display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px"><a href="/articles/${slug}.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;padding:10px 16px;border-radius:3px;text-decoration:none">Download PDF</a></div>`,
     "",
     "## Abstract",
     "",

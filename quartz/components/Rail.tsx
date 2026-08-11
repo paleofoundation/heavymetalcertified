@@ -45,6 +45,33 @@ const SHARE_ITEMS: { key: string; label: string; external: boolean }[] = [
   { key: "facebook", label: "Share on Facebook", external: true },
   { key: "email", label: "Email a link", external: false },
 ]
+// The PDF-edition card. Driven entirely by the page's `pdf` frontmatter (an
+// absolute href like "/articles/<slug>.pdf" or "/static/briefings/<slug>.pdf");
+// the generators emit `pdf:` and NO inline body copy, so the download affordance
+// lives in one place — the rail — sitewide. Discreet by design so it does not
+// compete with the red Verify CTA: a mono label and a red download link, not a
+// second solid button. Canon-clean (no bold, #9f2727 accent).
+function PdfCard({ href }: { href: string }) {
+  return (
+    <div class="hmtc-pdf">
+      <div class="hmtc-pdf-label">PDF edition</div>
+      <a class="hmtc-pdf-link" href={href} download>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+        </svg>
+        <span>Download PDF</span>
+      </a>
+    </div>
+  )
+}
+
 function ShareRow({ hrefs }: { hrefs: Record<string, string> }) {
   return (
     <div class="hmtc-share">
@@ -74,6 +101,12 @@ export default (() => {
     // so a shared link is always the production page, not a relative or local one.
     const canonical = cfg?.baseUrl ? `https://${cfg.baseUrl}/${simplifySlug(slug)}` : ""
     const shareTitle = String(fm.title ?? "")
+    // The page's PDF edition, declared in frontmatter by the generators. An
+    // absolute href resolves the same locally and in production.
+    const pdfHref =
+      typeof fm.pdf === "string" && fm.pdf.trim() && fm.pdf.trim().toLowerCase() !== "null"
+        ? fm.pdf.trim()
+        : ""
     const enc = encodeURIComponent
     const shareHrefs: Record<string, string> = {
       x: `https://twitter.com/intent/tweet?url=${enc(canonical)}&text=${enc(shareTitle)}`,
@@ -132,6 +165,7 @@ export default (() => {
               </a>
             ))}
           </div>
+          {pdfHref ? <PdfCard href={pdfHref} /> : null}
           <div class="hmtc-railnote">
             <div class="hmtc-railnote-label">{box.title}</div>
             <p class="hmtc-railnote-body">{box.body}</p>
@@ -151,6 +185,7 @@ export default (() => {
             </a>
           ))}
         </div>
+        {pdfHref ? <PdfCard href={pdfHref} /> : null}
         <div class="hmtc-verify">
           <div class="hmtc-verify-title">{box.title}</div>
           <p class="hmtc-verify-body">{box.body}</p>

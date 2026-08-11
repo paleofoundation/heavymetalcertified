@@ -10,6 +10,7 @@ date: "August 2026"
 updated: "August 2026"
 scholar_eligible: true
 scholar_pdf: true
+pdf: "/articles/lead-and-cadmium-in-dark-chocolate.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Document type", v: "Research analysis" }
@@ -27,8 +28,6 @@ connections:
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Research analysis &middot; Heavy Metal Certified &middot; August 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">A decade of Proposition 65 pressure measurably lowered lead in United States dark chocolate but left cadmium untouched — because lead is a processing-side contaminant a manufacturer can control and cadmium is a soil-side one it cannot. Certifying chocolate honestly therefore means holding both metals to account, not the one that has already moved.</p>
 </div>
-
-<div style="display:flex;gap:9px;flex-wrap:wrap;margin:0 0 44px"><a href="/articles/lead-and-cadmium-in-dark-chocolate.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;padding:10px 16px;border-radius:3px;text-decoration:none">Download PDF</a></div>
 
 ## Abstract
 

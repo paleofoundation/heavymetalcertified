@@ -705,6 +705,15 @@ aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; displ
 .hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: #5a4141; }
 .hmtc-verify-cta { display: inline-block; background: #9f2727; color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
 .hmtc-verify-cta:hover { background: #7f1f1f; }
+// PDF-edition card (Rail.tsx PdfCard) — the single home for the download
+// affordance, driven by the page's `pdf` frontmatter; no inline body copy.
+// Discreet on purpose: a mono label + a red download link, not a second solid
+// CTA competing with Verify. Canon-clean (no bold, #9f2727 accent).
+.hmtc-pdf { border: 1px solid #e8e1db; background: #fffdfb; padding: 14px 16px; margin-bottom: 30px; }
+.hmtc-pdf-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 10px; }
+.hmtc-pdf-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: #9f2727; text-decoration: none; background: none !important; }
+.hmtc-pdf-link:hover { color: #7f1f1f; text-decoration: underline; }
+.hmtc-pdf-link svg { width: 14px; height: 14px; display: block; flex: 0 0 auto; }
 // Muted dotted advisory box (rail_box variant: note) — e.g. "Needs confirmation".
 .hmtc-railnote { border: 1px dotted #e8e1db; background: #faf7f4; padding: 15px 18px; }
 .hmtc-railnote-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 7px; }
