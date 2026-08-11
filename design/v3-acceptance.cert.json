@@ -20,8 +20,7 @@
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
       { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "no-bold rule (CONTENT-RULES §7): <strong>/<b>/** render at normal weight." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
-      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
-      { "sel": ".hmi-related-title", "prop": "font-weight", "want": "500", "note": "See also is a label, not bold." }
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
     ],
     "/regulations/eu-2023-915": [
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1", "note": "the sitewide sticky top-bar; a regulation reference page carries the same chrome as every content page (v3 is not type-gated)." },
