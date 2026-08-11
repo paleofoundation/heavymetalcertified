@@ -233,6 +233,12 @@ export default (() => {
             <meta property="og:image" content={ogImageDefaultPath} />
             <meta property="og:image:url" content={ogImageDefaultPath} />
             <meta name="twitter:image" content={ogImageDefaultPath} />
+            {/* Explicit dimensions of the branded default card (static/og-image.png,
+                built by tools/build-cert-brand-assets.mjs). Scrapers that require
+                og:image:width/height — LinkedIn, Slack — need these to render the
+                preview at all rather than dropping to a bare-URL card. */}
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
             <meta
               property="og:image:type"
               content={`image/${(getFileExtension(ogImageDefaultPath) ?? "png").replace(/^\./, "")}`}
