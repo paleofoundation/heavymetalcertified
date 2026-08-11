@@ -1,0 +1,16 @@
+{
+  "_doc": "Per-analyte toxicology anchors + display metadata for the standards-page 'Occurrence & Derivation Rationale' section. Each `tox_anchor` is a faithful compression of the lead paragraph of the corresponding /analytes/<page> page (the published rationale surface), so the derivation prose stays grounded in — and consistent with — that page. `page` is the analyte-page slug for the one-way 'why it is limited' link. Hand-authored; re-check against content/analytes/<page>.md when a rationale page changes.",
+  "_source": "content/analytes/{aluminum,arsenic,cadmium,chromium,lead,mercury,nickel,tin}.md lead paragraphs",
+  "analytes": {
+    "Pb":    { "name": "Lead",                 "page": "lead",     "tox_anchor": "lead's developmental neurotoxicity in young children has no demonstrated threshold, so the governing frame is to minimize exposure as far as practicable rather than to meet a safe dose" },
+    "Cd":    { "name": "Cadmium",              "page": "cadmium",  "tox_anchor": "cadmium is a cumulative nephrotoxicant with a renal half-life of 10 to 30 years and an IARC Group 1 carcinogen with no clinical treatment, so control is a matter of capping intake" },
+    "iAs":   { "name": "Inorganic arsenic",    "page": "arsenic",  "tox_anchor": "inorganic arsenic is an IARC Group 1 human carcinogen for which the assessment bodies have set no safe intake threshold, with dietary exposures already at or above the cancer reference point" },
+    "tAs":   { "name": "Total arsenic",        "page": "arsenic",  "tox_anchor": "total arsenic is regulated because its inorganic fraction is an IARC Group 1 carcinogen for which no safe intake threshold has been set" },
+    "tHg":   { "name": "Total mercury",        "page": "mercury",  "tox_anchor": "mercury is regulated because its methylmercury fraction crosses the placenta and accumulates in developing neural tissue, with no safe threshold established for developmental neurotoxicity" },
+    "MeHg":  { "name": "Methylmercury",        "page": "mercury",  "tox_anchor": "methylmercury crosses the blood-brain barrier and the placenta and accumulates in developing neural tissue, with no safe threshold established for developmental neurotoxicity" },
+    "Ni":    { "name": "Nickel",               "page": "nickel",   "tox_anchor": "nickel carries a chronic tolerable daily intake (EFSA 2020) that the most-exposed young children can exceed, and sensitized individuals react to oral doses well below it" },
+    "Sn":    { "name": "Tin",                  "page": "tin",      "tox_anchor": "inorganic tin from can linings produces an acute gastrointestinal effect, so its maximum level functions chiefly as a sentinel for can-lining integrity" },
+    "Al":    { "name": "Aluminium",            "page": "aluminum", "tox_anchor": "aluminium accumulates against a low tolerable weekly intake derived from neurotoxic, reproductive, and developmental endpoints, corroborated in humans by dialysis encephalopathy and osteomalacia" },
+    "Cr-VI": { "name": "Hexavalent chromium",  "page": "chromium", "tox_anchor": "hexavalent chromium is an IARC Group 1 carcinogen assessed by US EPA as likely carcinogenic by the oral route, distinct from the low-toxicity trivalent form assumed to dominate in food" }
+  }
+}

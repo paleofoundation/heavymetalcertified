@@ -13,11 +13,14 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
 
 const REPO = process.cwd()
 const COMPILED = path.join(REPO, "data/standards/cat1-compiled")
 const PAGES = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/cat1-pages.json"), "utf8"))
 const OUT = path.join(REPO, "content/standards")
+const OCC = loadOccurrenceEvidence(path.join(REPO, "data/standards"))
+const TOX = loadToxAnchors(path.join(REPO, "data/standards"))
 
 const JUR2REG = { EU: "eu-2023-915", UK: "uk-1881-2006", CODEX: "codex-cxs-193", CA: "canada-contaminants", CN: "china-gb-2762", IN: "india-fssai", BR: "brazil-anvisa", GSO: "gso-193", "AU-NZ": "au-nz-fsanz", US: "us-fda-c2z" }
 const JUR_LABEL = { EU: "EU", UK: "UK", CODEX: "Codex", CA: "Canada", CN: "China", IN: "India", BR: "Brazil", GSO: "GSO", "AU-NZ": "AU/NZ", US: "FDA", "US-CA": "US-CA", "US-WA": "US-WA", EC: "Ecuador", MX: "Mexico", TR: "Türkiye", international: "Intl" }
@@ -171,10 +174,18 @@ for (const page of PAGES.pages) {
     "---",
   ].join("\n")
 
+  // Occurrence keyed by the compiled RECORD slug (== aggregate product_slug),
+  // which for a grouped multi-variant page differs from page.slug.
+  const occSection = occurrenceRationaleSection({
+    evidence: OCC, toxAnchors: TOX, rowSlug: page.variants[0].record,
+    analytes: PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a)),
+  })
+
   const body = [
     methodSection(page.name, basisWord, pdfHref, vshort),
     masterTable(variants, basisWord),
     derivationTable(variants[0], basisWord, page.name, otherNote),
+    occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi),
   ].join("\n")
 

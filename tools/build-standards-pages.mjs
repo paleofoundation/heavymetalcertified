@@ -26,12 +26,15 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCatalogAnalyte, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
 
 const repoRoot = process.cwd()
 const CATALOG = path.join(repoRoot, "data/standards/hmtc_standards_catalog.json")
 const OUT_DIR = path.join(repoRoot, "content/standards")
 
 const catalog = JSON.parse(fs.readFileSync(CATALOG, "utf8"))
+const OCC = loadOccurrenceEvidence(path.join(repoRoot, "data/standards"))
+const TOX = loadToxAnchors(path.join(repoRoot, "data/standards"))
 fs.mkdirSync(OUT_DIR, { recursive: true })
 
 const PANEL = catalog.panel
@@ -182,6 +185,11 @@ for (const row of catalog.rows) {
     ? `  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-top:16px"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">No analyte in this subcategory has cleared all five shipping gates yet, so no firm limit is in force. This page reports the current evidence state honestly; it is not yet a published standard. See <a href="/program/structure" style="color:#1c43ad">Program structure</a> for how a subcategory reaches publication.</p></div>`
     : ""
 
+  const occSection = occurrenceRationaleSection({
+    evidence: OCC, toxAnchors: TOX, rowSlug: slug,
+    analytes: PANEL.map((a) => descriptorFromCatalogAnalyte(analytes[a], a)),
+  })
+
   const body = `<section id="audiences" style="margin-bottom:52px">
   <h2 ${H2S}>Who this standard is for</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>
@@ -221,6 +229,8 @@ ${scopeRow("In scope, in development (no firm limit yet)", inScopeNotPub.length 
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Out of scope for this subcategory</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">${outScope.length ? outScope.join(", ") : "none"}</span></div>
   </div>
 </section>
+
+${occSection}
 
 <section id="cite">
   <h2 ${H2S}>Cite this standard</h2>

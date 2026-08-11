@@ -15,6 +15,7 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -25,6 +26,8 @@ const META = DOC._meta
 const COMPILED = path.join(REPO, "data/standards", META.compiled_dir)
 const OUT = path.join(REPO, "content/standards")
 const REGDIR = path.join(REPO, "content/regulations")
+const OCC = loadOccurrenceEvidence(path.join(REPO, "data/standards"))
+const TOX = loadToxAnchors(path.join(REPO, "data/standards"))
 
 const ACCENT = "#9f2727", LINK = "#1c43ad"
 const PANEL = META.panel
@@ -196,10 +199,19 @@ for (const page of DOC.pages) {
     "---",
   ].join("\n")
 
+  // Occurrence is keyed by the compiled RECORD slug (== aggregate product_slug),
+  // which for a multi-variant page differs from the grouped page slug. Use the
+  // primary variant's record, matching the derivation table above it.
+  const occSection = occurrenceRationaleSection({
+    evidence: OCC, toxAnchors: TOX, rowSlug: page.variants[0].record,
+    analytes: PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a)),
+  })
+
   const body = [
     methodSection(page.name, basisWord),
     masterTable(variants, basisWord, tierNote),
     derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note),
+    occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi, META.volume_name),
   ].join("\n")
 
