@@ -45,7 +45,7 @@ const matrix = `<div style="overflow-x:auto"><table style="width:100%;font-size:
 // Working Download-PDF affordance (mirrors the briefing/standard download button), rendered only
 // when the served PDF is actually present, so the page never links a file that is not there.
 const downloadBlock = pdfServed
-  ? `<div style="margin:0 0 6px"><a href="${PDF_HREF}" download style="display:inline-block;background:${ACCENT};color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;text-decoration:none;padding:11px 18px;border-radius:4px">&#8595; Download the manual (PDF, 2026 v2)</a> <span style="font-size:11.5px;color:#a9a1a1">Consolidated, version-pinned, self-contained — every value on this page with its full government-by-government derivation.</span></div>`
+  ? `<div style="margin:0 0 6px"><a href="${PDF_HREF}" download style="display:inline-block;background:${ACCENT};color:#fff;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.02em;text-decoration:none;padding:11px 18px;border-radius:4px">&#8595; Download the full Program Manual (PDF, 2026 v2)</a> <span style="font-size:11.5px;color:#a9a1a1">The complete five-part manual — governance and certification-status framework, the standards with their full derivations, and the lot-testing schedule — version-pinned and self-contained.</span></div>`
   : `<p style="font-size:12.5px;color:#a9a1a1;margin:0">A consolidated, version-pinned PDF of the full expanded manual is in preparation and will be linked here on release.</p>`
 
 const editionPdfLine = pdfServed

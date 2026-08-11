@@ -168,7 +168,7 @@ rail_box:
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">D</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Suspension</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Mark usage withdrawn pending remediation. Reinstatement requires a fresh baseline.</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Mark usage withdrawn pending remediation. Reinstatement requires a completed CAPA with verified effectiveness, a run of consecutive compliant lots set by the Program Operator, and restored data integrity &mdash; not a fresh baseline.</td>
       </tr>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">E</td>
