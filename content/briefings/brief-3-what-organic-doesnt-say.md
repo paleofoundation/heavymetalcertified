@@ -10,6 +10,7 @@ orcid: 0000-0002-2348-7259
 briefing_date: "June 2026"
 updated: "June 2026"
 scholar_eligible: true
+pdf: "/static/briefings/brief-3-what-organic-doesnt-say.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Briefing" }
@@ -117,7 +118,6 @@ Consumer trust is the real asset in this story, and it is more fragile than any 
     <div style="display:grid;grid-template-columns:minmax(96px,max-content) minmax(0,1fr);gap:24px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">DOI</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.5;color:#9f2727;text-align:right">not yet assigned</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">CC BY 4.0 (prose)</span></div>
   </div>
-  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px"><a href="/static/briefings/brief-3-what-organic-doesnt-say.pdf" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Download PDF</a></div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>

@@ -11,7 +11,10 @@
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
       { "sel": "sup.cite > a", "prop": "color", "want": "#9f2727", "src": "COMPONENTS §2", "note": "the citation marker is the burgundy accent, NOT the blue link colour. If this reads #1c43ad an older internal-link rule is winning — delete it, do not out-specify (FIDELITY §1)." },
       { "sel": "[id^=\"ref-\"]", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains", "note": "reference [N] marker is mono (COMPONENTS §2)" },
-      { "sel": "a[download]", "prop": "count", "want": 1, "note": "the Download PDF button must be present" }
+      { "sel": ".wiki-content a[download]", "prop": "count", "want": 0, "note": "the PDF-edition download is no longer inline in the reading surface; the generators emit `pdf:` frontmatter and NO body card (CONTENT-RULES §3.5 presentation change)." },
+      { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the Download PDF affordance now lives in the right rail (Rail.tsx PdfCard), driven by the page's `pdf` frontmatter — one home for it sitewide." },
+      { "sel": "[data-cite-panel]", "prop": "count", "want": 1, "note": "the citation-detail panel (SourceCitationPanel) is mounted in the rail; citationPanel.inline.ts fills and reveals it on inline-citation click." },
+      { "sel": ".hmtc-cite-panel", "prop": "display", "want": "none", "note": "the panel is hidden until a citation is clicked." }
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },

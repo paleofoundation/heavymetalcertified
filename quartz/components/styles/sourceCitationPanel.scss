@@ -1,49 +1,96 @@
-.hmi-source-citation-panel {
-  margin: 1rem 0 1.5rem;
-  padding: 1rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 26%, var(--lightgray));
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--light) 88%, var(--secondary) 12%);
+// Citation-detail panel (SourceCitationPanel.tsx + citationPanel.inline.ts).
+// Sits at the top of the right rail, hidden until an inline citation is clicked.
+// Canon-clean: no bold (emphasis is Lora + IBM Plex Mono), #9f2727 accent,
+// #1c43ad for the outbound source link, warm near-white ground (#fffdfb).
+.hmtc-cite-panel {
+  border: 1px solid #e8e1db;
+  background: #fffdfb;
+  margin-bottom: 26px;
+  // A soft lift so an opened panel reads as surfaced over the rail.
+  box-shadow: 0 8px 24px rgba(43, 31, 31, 0.09);
+}
+.hmtc-cite-panel[hidden] {
+  display: none;
 }
 
-.hmi-source-citation-kicker {
-  margin: 0 0 0.75rem;
-  color: var(--secondary);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+.hmtc-cite-panel-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e8e1db;
+  background: #fdf4f3;
+}
+.hmtc-cite-panel-kicker {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  color: #9f2727;
+}
+.hmtc-cite-panel-close {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 18px;
+  padding: 0 2px;
+  color: #a9a1a1;
+}
+.hmtc-cite-panel-close:hover {
+  color: #9f2727;
 }
 
-.hmi-source-citation-facts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem 1.25rem;
-  margin: 0;
-
-  > div {
-    min-width: 0;
-  }
-
-  dt {
-    margin: 0 0 0.15rem;
-    color: var(--gray);
-    font-size: 0.76rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  dd {
-    margin: 0;
-    color: var(--dark);
-    font-size: 0.92rem;
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-  }
+.hmtc-cite-panel-body {
+  padding: 14px 15px 16px;
+}
+.hmtc-cite-panel-num {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: #9f2727;
+  margin-bottom: 8px;
+}
+.hmtc-cite-panel-title {
+  font-family: Lora, serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #2b1f1f;
+  margin: 0 0 9px;
+}
+.hmtc-cite-panel-title a {
+  color: #1c43ad;
+  text-decoration: none;
+}
+.hmtc-cite-panel-title a:hover {
+  text-decoration: underline;
+}
+.hmtc-cite-panel-detail {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #736b6b;
+  margin: 0 0 10px;
+}
+.hmtc-cite-panel-kind {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+}
+.hmtc-cite-panel-go {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: #9f2727;
+  text-decoration: none;
+}
+.hmtc-cite-panel-go:hover {
+  text-decoration: underline;
 }
 
-@media all and (max-width: 700px) {
-  .hmi-source-citation-facts {
-    grid-template-columns: 1fr;
-  }
+// The wired inline citation reads as interactive.
+sup.cite > a[href^="#ref-"],
+sup.hmtc-cite[data-cite-panel-wired] {
+  cursor: pointer;
 }

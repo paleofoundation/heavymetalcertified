@@ -220,6 +220,9 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     // Scholar-eligible only when a PDF exists to be the citable artifact; a
     // scholar-eligible page with no PDF emits a dangling citation_pdf_url.
     `scholar_eligible: ${pdfRel ? "true" : "false"}`,
+    // The PDF edition is declared in frontmatter and rendered by the right-rail
+    // (Rail.tsx reads `pdf`); no inline download card in the body.
+    pdfRel ? `pdf: "${pdfRel}"` : null,
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
     "snapshot:",
     `  - { k: "Series number", v: "${seriesLabel}" }`,
@@ -267,11 +270,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   ].filter(Boolean).join("\n")
   const licenseRowLast = `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">CC BY 4.0 (prose)</span></div>`
 
-  const downloadBtn = pdfRel
-    ? `  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px"><a href="${pdfRel}" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Download PDF</a></div>`
-    : ""
-
-  const citeStr = `Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Institute of Contaminant Standards (ICS).`
+  const citeStr =`Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Institute of Contaminant Standards (ICS).`
 
   const bodyStr = `## Abstract
 
@@ -290,7 +289,6 @@ ${renderRefs(m?.references)}
 ${recordRows}
 ${licenseRowLast}
   </div>
-${downloadBtn}
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>

@@ -78,7 +78,11 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   // Proof's right rail (.rail): the certificate-verify affordance and page
   // provenance/actions.
-  right: [Component.Rail()],
+  // SourceCitationPanel renders a hidden citation-detail panel at the top of the
+  // rail and ships citationPanel.inline.ts (a component's inline script only
+  // ships when it is in the layout); clicking an inline citation opens it with
+  // that source's record from the page's References list. Rail carries the rest.
+  right: [Component.SourceCitationPanel(), Component.Rail()],
 };
 
 // components for pages that display lists of pages (e.g. tags or folders)
@@ -88,5 +92,9 @@ export const defaultListPageLayout: PageLayout = {
     Component.Snav(),
     Component.DedicatedPages(),
   ],
-  right: [Component.Rail()],
+  // SourceCitationPanel renders a hidden citation-detail panel at the top of the
+  // rail and ships citationPanel.inline.ts (a component's inline script only
+  // ships when it is in the layout); clicking an inline citation opens it with
+  // that source's record from the page's References list. Rail carries the rest.
+  right: [Component.SourceCitationPanel(), Component.Rail()],
 };
