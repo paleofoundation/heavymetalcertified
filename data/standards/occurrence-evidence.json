@@ -1,12 +1,12 @@
 {
   "schema": "hmtc.cert-occurrence-evidence.v1",
-  "generated_from_commit": "02df62441",
-  "source_commit_date": "2026-08-10T20:25:50+03:00",
+  "generated_from_commit": "16152fc2a",
+  "source_commit_date": "2026-08-11T05:57:50+03:00",
   "method": "HMTc Method v2.0 (government-limit default; selective occurrence pooling for Tier-1 toxics and no-ML cells)",
   "firewall_note": "HMT&C occurrence + derivation asset. Renders on heavymetalcertified.com only. The derivation (pooled percentile -> limit -> rationale) must never appear on a heavymetalindex.com URL. Occurrence findings are literature, cited one-way to the index source pages.",
   "counts": {
     "cells": 757,
-    "with_occurrence": 603,
+    "with_occurrence": 601,
     "not_material": 50,
     "not_material_with_contradiction": 22
   },
@@ -22165,6 +22165,106 @@
         "contradiction": null
       }
     },
+    "infant-food-storage-items|Pb": {
+      "row_slug": "infant-food-storage-items",
+      "analyte": "Pb",
+      "row_label": "Infant food-storage items (milk storage bags/containers)",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 10,
+          "source_id": "eu_10_2011_pb_sml_nd",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "infant-food-storage-items|Cd": {
+      "row_slug": "infant-food-storage-items",
+      "analyte": "Cd",
+      "row_label": "Infant food-storage items (milk storage bags/containers)",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 2,
+          "source_id": "eu_10_2011_cd_sml_nd",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "infant-food-storage-items|Ni": {
+      "row_slug": "infant-food-storage-items",
+      "analyte": "Ni",
+      "row_label": "Infant food-storage items (milk storage bags/containers)",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 20,
+          "source_id": "eu_10_2011_ni_sml",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "infant-food-storage-items|Al": {
+      "row_slug": "infant-food-storage-items",
+      "analyte": "Al",
+      "row_label": "Infant food-storage items (milk storage bags/containers)",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 1000,
+          "source_id": "eu_10_2011_al_sml",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
     "infant-formula|Pb": {
       "row_slug": "infant-formula",
       "analyte": "Pb",
@@ -36272,8 +36372,8 @@
       "row_label": "Olive oil",
       "occurrence": {
         "has_data": true,
-        "n_studies": 7,
-        "n_samples": 57,
+        "n_studies": 6,
+        "n_samples": 47,
         "unit": "ppb",
         "sources": [
           {
@@ -36289,7 +36389,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.4737
+            "pool_share": 0.5
           },
           {
             "id": "zhu2011-edible-vegetable-oils-china-8-metals",
@@ -36304,22 +36404,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.2105
-          },
-          {
-            "id": "luka2019-northern-cyprus-olive-oil-metals",
-            "cite": "Luka 2019",
-            "title": "Investigation of trace metals in different varieties of olive oils from northern Cyprus and their variation in accumulation using ICP-MS and multivariate techniques",
-            "year": 2019,
-            "publication": "Environmental Earth Sciences",
-            "doi": "10.1007/s12665-019-8581-9",
-            "doi_url": "https://doi.org/10.1007/s12665-019-8581-9",
-            "source_url": "https://heavymetalindex.com/sources/luka2019-northern-cyprus-olive-oil-metals",
-            "n": 15,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": 0.1754
+            "pool_share": 0.3
           },
           {
             "id": "lin2024-edible-oils-taiwan-12-metals",
@@ -36334,7 +36419,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0877
+            "pool_share": 0.125
           },
           {
             "id": "charfi2026-olive-oil-packaging-heavy-metals-phthalates",
@@ -36385,29 +36470,29 @@
         "note": "",
         "central": {
           "stat": "pooled median",
-          "value_ppb": 1.3
+          "value_ppb": 0.8
         },
         "upper": {
-          "p95_ppb": 422.2,
-          "p100_ppb": 733.3
+          "p95_ppb": 13.4,
+          "p100_ppb": 14.9
         },
         "range_ppb": [
           0.1,
-          733.3
+          14.9
         ],
         "pool": {
           "p10": 0.1,
-          "p50": 1.3,
-          "p90": 193.3,
-          "p95": 422.2,
-          "p97": 608,
-          "p100": 733.3,
-          "pooled_n": 57,
-          "distinct_sources": 4,
+          "p50": 0.8,
+          "p90": 12.5,
+          "p95": 13.4,
+          "p97": 13.9,
+          "p100": 14.9,
+          "pooled_n": 47,
+          "distinct_sources": 3,
           "role": "independent_clean_by_default",
           "target_label": "independent_p97",
-          "target_value": 608,
-          "sens_band": "provisional"
+          "target_value": 13.9,
+          "sens_band": "stable"
         },
         "n_samples_basis": "certified-market pool"
       },
@@ -36415,9 +36500,9 @@
         "government_ml": null,
         "percentile": {
           "label": "P97",
-          "value_ppb": 608,
+          "value_ppb": 13.9,
           "role": "independent_clean_by_default",
-          "sens_band": "provisional"
+          "sens_band": "stable"
         },
         "rationale_tag": "literature-baseline",
         "not_material": null,
@@ -36925,8 +37010,8 @@
       "row_label": "Pacifiers and sucking/teething aids",
       "occurrence": {
         "has_data": true,
-        "n_studies": 4,
-        "n_samples": 200,
+        "n_studies": 3,
+        "n_samples": 192,
         "unit": "ppb",
         "sources": [
           {
@@ -36954,21 +37039,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -37018,8 +37088,8 @@
       "row_label": "Pacifiers and sucking/teething aids",
       "occurrence": {
         "has_data": true,
-        "n_studies": 4,
-        "n_samples": 200,
+        "n_studies": 3,
+        "n_samples": 192,
         "unit": "ppb",
         "sources": [
           {
@@ -37047,21 +37117,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -37135,8 +37190,8 @@
       "row_label": "Pacifiers and sucking/teething aids",
       "occurrence": {
         "has_data": true,
-        "n_studies": 2,
-        "n_samples": 128,
+        "n_studies": 1,
+        "n_samples": 120,
         "unit": "ppb",
         "sources": [
           {
@@ -37149,21 +37204,6 @@
             "doi_url": "https://doi.org/10.22034/ehpr.2026.554453.1004",
             "source_url": "https://heavymetalindex.com/sources/seifi2026-iran-toys-pb-cr-hg",
             "n": 120,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -42566,7 +42606,7 @@
       "occurrence": {
         "has_data": true,
         "n_studies": 3,
-        "n_samples": 20,
+        "n_samples": 10,
         "unit": "ppb",
         "sources": [
           {
@@ -42597,7 +42637,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.2
+            "pool_share": 0.4
           },
           {
             "id": "wu2021-edible-salt-soy-sauce-pb-cd",
@@ -42612,34 +42652,34 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.05
+            "pool_share": 0.1
           }
         ],
         "note": "",
         "central": {
           "stat": "pooled median",
-          "value_ppb": 243.7
+          "value_ppb": 125.8
         },
         "upper": {
-          "p95_ppb": 7654.4,
-          "p100_ppb": 7664.1
+          "p95_ppb": 179,
+          "p100_ppb": 186
         },
         "range_ppb": [
-          119.7,
-          7664.1
+          42.3,
+          186
         ],
         "pool": {
-          "p10": 119.7,
-          "p50": 243.7,
-          "p90": 7271.4,
-          "p95": 7654.4,
-          "p97": 7658.3,
-          "p100": 7664.1,
-          "pooled_n": 20,
+          "p10": 42.3,
+          "p50": 125.8,
+          "p90": 172,
+          "p95": 179,
+          "p97": 181.8,
+          "p100": 186,
+          "pooled_n": 10,
           "distinct_sources": 3,
           "role": "independent_clean_by_default",
           "target_label": "independent_p97",
-          "target_value": 7658.3,
+          "target_value": 181.8,
           "sens_band": "stable"
         },
         "n_samples_basis": "certified-market pool"
@@ -42652,11 +42692,11 @@
         },
         "percentile": {
           "label": "P97",
-          "value_ppb": 7658.3,
+          "value_ppb": 181.8,
           "role": "independent_clean_by_default",
           "sens_band": "stable"
         },
-        "rationale_tag": "regulatory-alignment",
+        "rationale_tag": "literature-baseline",
         "not_material": null,
         "contradiction": null
       }
@@ -46090,7 +46130,7 @@
       "occurrence": {
         "has_data": true,
         "n_studies": 13,
-        "n_samples": 2227,
+        "n_samples": 1727,
         "unit": "ppb",
         "sources": [
           {
@@ -46102,14 +46142,14 @@
             "doi": "10.3390/foods14030451",
             "doi_url": "https://doi.org/10.3390/foods14030451",
             "source_url": "https://heavymetalindex.com/sources/garofalo2025-seafood-cd-pb-hg-italy-10yr",
-            "n": 1500,
+            "n": 904,
             "range_ppb": [
-              50,
-              5600
+              60,
+              1600
             ],
-            "median_ppb": 50,
+            "median_ppb": 60,
             "unit": "ppb",
-            "pool_share": 0.2245
+            "pool_share": 0.2895
           },
           {
             "id": "valencia2021-canacao-bay-oyster-pb-cd",
@@ -46124,7 +46164,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0961
+            "pool_share": 0.1239
           },
           {
             "id": "shue2012-bivalves-tapeng-taiwan",
@@ -46139,7 +46179,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0323
+            "pool_share": 0.0417
           },
           {
             "id": "romero-estevez2020-bivalves-santa-rosa-ecuador",
@@ -46154,7 +46194,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0225
+            "pool_share": 0.029
           },
           {
             "id": "de-anda-montanez2023-baja-red-crab-elements",
@@ -46169,7 +46209,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "onyegeme-okerenta2023-shellfish-nigeria",
@@ -46184,7 +46224,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "raju2021-bivalves-cagayan-philippines",
@@ -46199,7 +46239,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "helcom2017-core-indicator-metals-baltic",
@@ -46214,7 +46254,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "chou-uthe1993-cadmium-american-lobster-belledune",
@@ -46229,7 +46269,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "nielsen1975-nz-molluscs-heavy-metals",
@@ -46244,7 +46284,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0022
+            "pool_share": 0.0029
           },
           {
             "id": "rajeshkumar2018-taihu-lake-fish-oyster-metals",
@@ -46259,7 +46299,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0018
+            "pool_share": 0.0023
           },
           {
             "id": "singhato2025-thailand-seafood-heavy-metals",
@@ -46274,7 +46314,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0013
+            "pool_share": 0.0017
           },
           {
             "id": "fera2015-uk-tds-metals",
@@ -46289,39 +46329,39 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0004
+            "pool_share": 0.0006
           }
         ],
         "note": "",
         "central": {
           "stat": "pooled median",
-          "value_ppb": 131.2
+          "value_ppb": 149.9
         },
         "upper": {
-          "p95_ppb": 4757.2,
+          "p95_ppb": 5294.3,
           "p100_ppb": 21665.9
         },
         "range_ppb": [
-          38.2,
+          30,
           21665.9
         ],
         "pool": {
-          "p10": 38.2,
-          "p50": 131.2,
-          "p90": 3228.7,
-          "p95": 4757.2,
-          "p97": 5944.4,
+          "p10": 30,
+          "p50": 149.9,
+          "p90": 3657.2,
+          "p95": 5294.3,
+          "p97": 6581.2,
           "p100": 21665.9,
-          "pooled_n": 2227,
+          "pooled_n": 1727,
           "distinct_sources": 18,
           "role": "independent_clean_by_default",
           "target_label": "independent_p97",
-          "target_value": 5944.4,
+          "target_value": 6581.2,
           "sens_band": "stable"
         },
-        "observed_max_ppb": 5600,
-        "observed_min_ppb": 50,
-        "observed_median_ppb": 50,
+        "observed_max_ppb": 1600,
+        "observed_min_ppb": 60,
+        "observed_median_ppb": 60,
         "n_samples_basis": "certified-market pool"
       },
       "derivation": {
@@ -46332,7 +46372,7 @@
         },
         "percentile": {
           "label": "P97",
-          "value_ppb": 5944.4,
+          "value_ppb": 6581.2,
           "role": "independent_clean_by_default",
           "sens_band": "stable"
         },
@@ -46456,7 +46496,7 @@
       "occurrence": {
         "has_data": true,
         "n_studies": 13,
-        "n_samples": 903,
+        "n_samples": 893,
         "unit": "ppb",
         "sources": [
           {
@@ -46490,7 +46530,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.2655
+            "pool_share": 0.2723
           },
           {
             "id": "shue2012-bivalves-tapeng-taiwan",
@@ -46505,7 +46545,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0893
+            "pool_share": 0.0916
           },
           {
             "id": "romero-estevez2020-bivalves-santa-rosa-ecuador",
@@ -46520,7 +46560,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0124
+            "pool_share": 0.0127
           },
           {
             "id": "singhato2025-thailand-seafood-heavy-metals",
@@ -46535,7 +46575,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "onyegeme-okerenta2023-shellfish-nigeria",
@@ -46550,7 +46590,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "raju2021-bivalves-cagayan-philippines",
@@ -46565,7 +46605,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "helcom2017-core-indicator-metals-baltic",
@@ -46580,7 +46620,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "chou-uthe1993-cadmium-american-lobster-belledune",
@@ -46595,7 +46635,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "nielsen1975-nz-molluscs-heavy-metals",
@@ -46610,7 +46650,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0062
+            "pool_share": 0.0064
           },
           {
             "id": "rajeshkumar2018-taihu-lake-fish-oyster-metals",
@@ -46625,7 +46665,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.005
+            "pool_share": 0.0051
           },
           {
             "id": "fera2015-uk-tds-metals",
@@ -46640,7 +46680,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0012
+            "pool_share": 0.0013
           },
           {
             "id": "de-anda-montanez2023-baja-red-crab-elements",
@@ -46661,28 +46701,28 @@
         "note": "",
         "central": {
           "stat": "pooled median",
-          "value_ppb": 318.8
+          "value_ppb": 328.1
         },
         "upper": {
-          "p95_ppb": 2936.3,
-          "p100_ppb": 10272.5
+          "p95_ppb": 2968.9,
+          "p100_ppb": 6953.8
         },
         "range_ppb": [
           110,
-          10272.5
+          6953.8
         ],
         "pool": {
           "p10": 110,
-          "p50": 318.8,
-          "p90": 2529.3,
-          "p95": 2936.3,
-          "p97": 3065.8,
-          "p100": 10272.5,
-          "pooled_n": 903,
+          "p50": 328.1,
+          "p90": 2600.2,
+          "p95": 2968.9,
+          "p97": 3102.7,
+          "p100": 6953.8,
+          "pooled_n": 893,
           "distinct_sources": 16,
           "role": "independent_clean_by_default",
           "target_label": "independent_p97",
-          "target_value": 3065.8,
+          "target_value": 3102.7,
           "sens_band": "stable"
         },
         "observed_max_ppb": 3200,
@@ -46698,7 +46738,7 @@
         },
         "percentile": {
           "label": "P97",
-          "value_ppb": 3065.8,
+          "value_ppb": 3102.7,
           "role": "independent_clean_by_default",
           "sens_band": "stable"
         },
@@ -46714,7 +46754,7 @@
       "occurrence": {
         "has_data": true,
         "n_studies": 8,
-        "n_samples": 1260,
+        "n_samples": 760,
         "unit": "ppb",
         "sources": [
           {
@@ -46733,7 +46773,7 @@
             ],
             "median_ppb": 60,
             "unit": "ppb",
-            "pool_share": 0.3968
+            "pool_share": 0.5
           },
           {
             "id": "bjerregaard2023-mercury-mussels-denmark",
@@ -46748,7 +46788,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.1087
+            "pool_share": 0.2635
           },
           {
             "id": "harding2018-bay-fundy-methylmercury",
@@ -46766,7 +46806,7 @@
             ],
             "median_ppb": 20.1,
             "unit": "ppb",
-            "pool_share": 0.0095
+            "pool_share": 0.0231
           },
           {
             "id": "singhato2025-thailand-seafood-heavy-metals",
@@ -46781,7 +46821,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.004
+            "pool_share": 0.0096
           },
           {
             "id": "chou-uthe1993-cadmium-american-lobster-belledune",
@@ -46796,7 +46836,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.004
+            "pool_share": 0.0096
           },
           {
             "id": "pawlaczyk2020-mercury-canned-fish-poland",
@@ -46811,7 +46851,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0024
+            "pool_share": 0.0058
           },
           {
             "id": "fera2015-uk-tds-metals",
@@ -46826,7 +46866,7 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0008
+            "pool_share": 0.0019
           },
           {
             "id": "nielsen1975-nz-molluscs-heavy-metals",
@@ -46841,34 +46881,34 @@
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
-            "pool_share": 0.0008
+            "pool_share": 0.0019
           }
         ],
         "note": "",
         "central": {
           "stat": "pooled median",
-          "value_ppb": 1.4
+          "value_ppb": 21.8
         },
         "upper": {
-          "p95_ppb": 296.9,
+          "p95_ppb": 436.7,
           "p100_ppb": 1607
         },
         "range_ppb": [
-          0,
+          0.1,
           1607
         ],
         "pool": {
-          "p10": 0,
-          "p50": 1.4,
-          "p90": 199.1,
-          "p95": 296.9,
-          "p97": 376.5,
+          "p10": 0.1,
+          "p50": 21.8,
+          "p90": 329,
+          "p95": 436.7,
+          "p97": 544.4,
           "p100": 1607,
-          "pooled_n": 1260,
+          "pooled_n": 760,
           "distinct_sources": 11,
           "role": "independent_clean_by_default",
           "target_label": "independent_p97",
-          "target_value": 376.5,
+          "target_value": 544.4,
           "sens_band": "stable"
         },
         "observed_max_ppb": 520,
@@ -46884,11 +46924,11 @@
         },
         "percentile": {
           "label": "P97",
-          "value_ppb": 376.5,
+          "value_ppb": 544.4,
           "role": "independent_clean_by_default",
           "sens_band": "stable"
         },
-        "rationale_tag": "literature-baseline",
+        "rationale_tag": "regulatory-alignment",
         "not_material": null,
         "contradiction": null
       }
@@ -53326,6 +53366,106 @@
           "sens_band": "stable"
         },
         "rationale_tag": "literature-baseline",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "teething-toys-teethers|Pb": {
+      "row_slug": "teething-toys-teethers",
+      "analyte": "Pb",
+      "row_label": "Teething toys/teethers",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 23000,
+          "source_id": "eu_2009_48_cat3_pb_toy_migration",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "teething-toys-teethers|Cd": {
+      "row_slug": "teething-toys-teethers",
+      "analyte": "Cd",
+      "row_label": "Teething toys/teethers",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 17000,
+          "source_id": "eu_2009_48_cat3_cd_toy_migration",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "teething-toys-teethers|Cr-VI": {
+      "row_slug": "teething-toys-teethers",
+      "analyte": "Cr-VI",
+      "row_label": "Teething toys/teethers",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 53,
+          "source_id": "eu_2009_48_cat3_crvi_toy_migration",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "teething-toys-teethers|tAs": {
+      "row_slug": "teething-toys-teethers",
+      "analyte": "tAs",
+      "row_label": "Teething toys/teethers",
+      "occurrence": {
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
+        "unit": "ppb",
+        "sources": [],
+        "note": "",
+        "n_samples_basis": "sum of reported study samples"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 47000,
+          "source_id": "eu_2009_48_cat3_tas_toy_migration",
+          "jurisdiction": "EU"
+        },
+        "percentile": null,
+        "rationale_tag": "no-data",
         "not_material": null,
         "contradiction": null
       }
@@ -60142,31 +60282,6 @@
         "contradiction": null
       }
     },
-    "infant-food-storage-items|Pb": {
-      "row_slug": "infant-food-storage-items",
-      "analyte": "Pb",
-      "row_label": "Infant food-storage items (milk storage bags/containers)",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 10,
-          "source_id": "eu_10_2011_pb_sml_nd",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
     "infant-food-storage-items|tAs": {
       "row_slug": "infant-food-storage-items",
       "analyte": "tAs",
@@ -60192,31 +60307,6 @@
         "contradiction": null
       }
     },
-    "infant-food-storage-items|Cd": {
-      "row_slug": "infant-food-storage-items",
-      "analyte": "Cd",
-      "row_label": "Infant food-storage items (milk storage bags/containers)",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 2,
-          "source_id": "eu_10_2011_cd_sml_nd",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
     "infant-food-storage-items|tHg": {
       "row_slug": "infant-food-storage-items",
       "analyte": "tHg",
@@ -60234,56 +60324,6 @@
         "government_ml": {
           "value_ppb": 10,
           "source_id": "eu_10_2011_thg_sml_nd",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "infant-food-storage-items|Ni": {
-      "row_slug": "infant-food-storage-items",
-      "analyte": "Ni",
-      "row_label": "Infant food-storage items (milk storage bags/containers)",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 20,
-          "source_id": "eu_10_2011_ni_sml",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "infant-food-storage-items|Al": {
-      "row_slug": "infant-food-storage-items",
-      "analyte": "Al",
-      "row_label": "Infant food-storage items (milk storage bags/containers)",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 1000,
-          "source_id": "eu_10_2011_al_sml",
           "jurisdiction": "EU"
         },
         "percentile": null,
@@ -60326,8 +60366,8 @@
       "row_label": "Pacifiers and sucking/teething aids",
       "occurrence": {
         "has_data": true,
-        "n_studies": 2,
-        "n_samples": 128,
+        "n_studies": 1,
+        "n_samples": 120,
         "unit": "ppb",
         "sources": [
           {
@@ -60340,21 +60380,6 @@
             "doi_url": "https://doi.org/10.22034/ehpr.2026.554453.1004",
             "source_url": "https://heavymetalindex.com/sources/seifi2026-iran-toys-pb-cr-hg",
             "n": 120,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -60457,8 +60482,8 @@
       "row_label": "Pacifiers and sucking/teething aids",
       "occurrence": {
         "has_data": true,
-        "n_studies": 3,
-        "n_samples": 146,
+        "n_studies": 2,
+        "n_samples": 138,
         "unit": "ppb",
         "sources": [
           {
@@ -60486,21 +60511,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -60575,8 +60585,8 @@
       "row_label": "Sippy cups and toddler drinkware components",
       "occurrence": {
         "has_data": true,
-        "n_studies": 3,
-        "n_samples": 146,
+        "n_studies": 2,
+        "n_samples": 138,
         "unit": "ppb",
         "sources": [
           {
@@ -60589,21 +60599,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -60645,28 +60640,12 @@
       "analyte": "tAs",
       "row_label": "Sippy cups and toddler drinkware components",
       "occurrence": {
-        "has_data": true,
-        "n_studies": 1,
-        "n_samples": 8,
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
         "unit": "ppb",
-        "sources": [
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          }
-        ],
-        "note": "routed-source occurrence (no pooled distribution built for this cell)",
+        "sources": [],
+        "note": "",
         "n_samples_basis": "sum of reported study samples"
       },
       "derivation": {
@@ -60687,8 +60666,8 @@
       "row_label": "Sippy cups and toddler drinkware components",
       "occurrence": {
         "has_data": true,
-        "n_studies": 3,
-        "n_samples": 146,
+        "n_studies": 2,
+        "n_samples": 138,
         "unit": "ppb",
         "sources": [
           {
@@ -60701,21 +60680,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -60757,28 +60721,12 @@
       "analyte": "tHg",
       "row_label": "Sippy cups and toddler drinkware components",
       "occurrence": {
-        "has_data": true,
-        "n_studies": 1,
-        "n_samples": 8,
+        "has_data": false,
+        "n_studies": 0,
+        "n_samples": null,
         "unit": "ppb",
-        "sources": [
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          }
-        ],
-        "note": "routed-source occurrence (no pooled distribution built for this cell)",
+        "sources": [],
+        "note": "",
         "n_samples_basis": "sum of reported study samples"
       },
       "derivation": {
@@ -60865,8 +60813,8 @@
       "row_label": "Sippy cups and toddler drinkware components",
       "occurrence": {
         "has_data": true,
-        "n_studies": 2,
-        "n_samples": 26,
+        "n_studies": 1,
+        "n_samples": 18,
         "unit": "ppb",
         "sources": [
           {
@@ -60879,21 +60827,6 @@
             "doi_url": "https://doi.org/10.5897/JECE2020.0465",
             "source_url": "https://heavymetalindex.com/sources/mohammed2020-tt-toys-baby-items",
             "n": 18,
-            "range_ppb": null,
-            "median_ppb": null,
-            "unit": "ppb",
-            "pool_share": null
-          },
-          {
-            "id": "masu2016-pacifiers-sippy-cups-my",
-            "cite": "Masu 2016",
-            "title": "Comparative Testing: Baby Pacifier and Sippy Cups",
-            "year": 2016,
-            "publication": "Malaysian Association of Standards Users (Standards Users), Petaling Jaya, Malaysia. Comparative testing report (undated; filename year 2016).",
-            "doi": null,
-            "doi_url": null,
-            "source_url": "https://heavymetalindex.com/sources/masu2016-pacifiers-sippy-cups-my",
-            "n": 8,
             "range_ppb": null,
             "median_ppb": null,
             "unit": "ppb",
@@ -60911,81 +60844,6 @@
           "jurisdiction": "EU",
           "label": "bounded by the total-chromium specific-migration limit (not detectable)",
           "basis_kind": "read-across"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "teething-toys-teethers|Pb": {
-      "row_slug": "teething-toys-teethers",
-      "analyte": "Pb",
-      "row_label": "Teething toys/teethers",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 23000,
-          "source_id": "eu_2009_48_cat3_pb_toy_migration",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "teething-toys-teethers|tAs": {
-      "row_slug": "teething-toys-teethers",
-      "analyte": "tAs",
-      "row_label": "Teething toys/teethers",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 47000,
-          "source_id": "eu_2009_48_cat3_tas_toy_migration",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "teething-toys-teethers|Cd": {
-      "row_slug": "teething-toys-teethers",
-      "analyte": "Cd",
-      "row_label": "Teething toys/teethers",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 17000,
-          "source_id": "eu_2009_48_cat3_cd_toy_migration",
-          "jurisdiction": "EU"
         },
         "percentile": null,
         "rationale_tag": null,
@@ -61060,31 +60918,6 @@
         "government_ml": {
           "value_ppb": 28130000,
           "source_id": "eu_2009_48_cat3_al_toy_migration",
-          "jurisdiction": "EU"
-        },
-        "percentile": null,
-        "rationale_tag": null,
-        "not_material": null,
-        "contradiction": null
-      }
-    },
-    "teething-toys-teethers|Cr-VI": {
-      "row_slug": "teething-toys-teethers",
-      "analyte": "Cr-VI",
-      "row_label": "Teething toys/teethers",
-      "occurrence": {
-        "has_data": false,
-        "n_studies": 0,
-        "n_samples": null,
-        "unit": "ppb",
-        "sources": [],
-        "note": "",
-        "n_samples_basis": "sum of reported study samples"
-      },
-      "derivation": {
-        "government_ml": {
-          "value_ppb": 53,
-          "source_id": "eu_2009_48_cat3_crvi_toy_migration",
           "jurisdiction": "EU"
         },
         "percentile": null,
