@@ -13,6 +13,7 @@ connections:
   - { label: "Confidential remediation", href: "/program/remediation" }
   - { label: "Program structure", href: "/program/structure" }
   - { label: "Using the mark", href: "/mark" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
   - { label: "Trust Center", href: "/trust" }
 rail_box:
   variant: note
@@ -79,3 +80,5 @@ HMTc cannot promise that every product will pass. It can make the process more p
 [Begin with Private Readiness](/readiness) when the brand does not yet know whether the product should enter formal certification.
 
 [Review Confidential Remediation](/program/remediation) when a pre-certification product needs a controlled improvement path.
+
+[Review what happens to your data](/what-happens-to-your-data) before submitting formal records.

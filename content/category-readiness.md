@@ -24,6 +24,27 @@ A technical standards page can exist while one or more analyte cells, methods, l
 
 The commercial readiness map must therefore use a stricter definition than page publication.
 
+## Current commercial readiness map
+
+<!-- BEGIN: generated-category-readiness -->
+
+_As of 2026-08-12. This table is generated from `data/category-readiness.json`; it is the commercial-state source of truth._
+
+| Category | Current state | Why |
+|---|---|---|
+| Infant and Child Foods | Private Readiness only | Technical standards and a program manual are published; the complete commercial opening record has not been declared. |
+| Grains, Cereals, and Rice Products | Private Readiness only | Technical standards are published; the complete commercial opening record has not been declared. |
+| Seafood | Private Readiness only | Technical standards are published; the complete commercial opening record has not been declared. |
+| Infant and Child Contact Products (Ages 0–5) | Private Readiness only | Technical standards are published; the complete commercial opening record has not been declared. |
+| Culinary Oils and Fats | Private Readiness only | Technical standards are published; the complete commercial opening record has not been declared. |
+| Chocolate, Cocoa and Confectionery | Private Readiness only | A technical standard is published; the complete commercial opening record has not been declared. |
+| Condiments, Sauces and Dressings | Private Readiness only | A technical standard is published; the complete commercial opening record has not been declared. |
+| Dairy and Milk Products | Private Readiness only | A technical standard is published; the complete commercial opening record has not been declared. |
+| Herbs, Spices, Seasonings and Salt | Private Readiness only | Technical standards are published; the complete commercial opening record has not been declared. |
+| Sweeteners and Syrups | Private Readiness only | A technical standard is published; the complete commercial opening record has not been declared. |
+
+<!-- END: generated-category-readiness -->
+
 ## Readiness states
 
 | State | Meaning | What a brand can do |

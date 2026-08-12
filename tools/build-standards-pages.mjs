@@ -38,7 +38,12 @@ const TOX = loadToxAnchors(path.join(repoRoot, "data/standards"))
 fs.mkdirSync(OUT_DIR, { recursive: true })
 
 const PANEL = catalog.panel
-const today = new Date().toISOString().slice(0, 10)
+
+function editionDate(version) {
+  const match = String(version || "").match(/\((\d{4}-\d{2}-\d{2})\)/)
+  if (!match) throw new Error(`standard version is missing its edition date: ${version || "(blank)"}`)
+  return match[1]
+}
 
 function fmList(arr) {
   return `[${(arr || []).join(", ")}]`
@@ -67,8 +72,8 @@ const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
 // pinning the row to a single percentile.
 function pathwayLabel(vt) {
   const v = String(vt || "").toLowerCase()
-  if (v.includes("dirty")) return "Dirty"
-  return "Clean"
+  if (v.includes("dirty")) return "Category Improvement"
+  return "Lower-Burden"
 }
 // The v3 section-heading style, reused across the emitted body.
 const H2S =
@@ -123,7 +128,7 @@ for (const row of catalog.rows) {
     `methodology_version: "${catalog.methodology_version}"`,
     `variant_type: ${row.variant_type}`,
     `hmi_literature_link: ${row.hmi_literature_link}`,
-    `effective_date: ${today}`,
+    `effective_date: ${editionDate(row.standard_version)}`,
     hasFirm ? "scholar_eligible: true" : "scholar_eligible: false",
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "snapshot:",
@@ -332,6 +337,7 @@ for (const f of fs.readdirSync(OUT_DIR)) {
     analytes: Object.fromEntries(Array.from({ length: firm }, (_, i) => [i, { status: "published" }])),
   })
 }
+const totalStandardRows = Object.values(byCat).reduce((total, group) => total + group.rows.length, 0)
 const catGroups = Object.keys(byCat)
   .sort((a, b) => Number(a) - Number(b))
   .map((cat) => {
@@ -341,7 +347,7 @@ const catGroups = Object.keys(byCat)
       .map((row, i) => {
         const pub = Object.values(row.analytes || {}).filter((a) => a.status === "published").length
         const ident = `${g.name} 3.${i + 1}`
-        const right = `<span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">${ident}${pub > 0 ? ` &middot; ${pub} firm` : ""}</span>`
+        const right = `<span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">${ident}${pub > 0 ? ` &middot; ${pub} firm` : ""}</span>`
         return `      <a href="/standards/${row.product_slug}" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>${row.subcategory}</span>${right}</a>`
       })
       .join("\n")
@@ -364,7 +370,7 @@ const idxFront = [
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
   `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."`,
   "snapshot:",
-  `  - { k: "Subcategory standards", v: "${catalog.rows.length}" }`,
+  `  - { k: "Subcategory standards", v: "${totalStandardRows}" }`,
   `  - { k: "Firm analyte limits", v: "${firmCells}" }`,
   `  - { k: "Analytes per row", v: "${PANEL.length}" }`,
   `  - { k: "Published manuals", v: "${publishedManuals.length}" }`,
@@ -394,7 +400,7 @@ ${editionRows}
 
 <section id="subcats">
   <h2 ${H2}>Subcategory standards</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${catalog.rows.length} locked rows across ${Object.keys(byCat).length} categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${totalStandardRows} standard rows across ${Object.keys(byCat).length} categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">${firmCells} firm analyte limit${firmCells === 1 ? "" : "s"} across ${rowsWithFirm} subcategor${rowsWithFirm === 1 ? "y" : "ies"} so far</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>

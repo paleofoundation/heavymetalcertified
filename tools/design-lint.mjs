@@ -42,8 +42,8 @@ const ALL_BLOCKING = process.argv.includes("--all")
 // The reading surface where "no bolded text anywhere" is enforced hard. These are
 // the data pages a regulator / brand-legal reader audits.
 const BLOCKING_DIRS = ["standards", "regulations"]
-// Prose surfaces held to the same rule, advisory until their backlog is drained.
-const ADVISORY_DIRS = ["briefings", "articles", "program", "brands"]
+// Every other Markdown page is part of the same reading surface. It remains
+// advisory without --all for local triage; the release and CI commands use --all.
 
 const INLINE_BOLD = /font-weight:\s*(?:bold|[6-9]00)\b/i
 const STRONG_TAG = /<strong[\s>]/i
@@ -58,8 +58,7 @@ function scopeOf(file) {
   const rel = path.relative(CONTENT, file)
   const top = rel.split(path.sep)[0]
   if (BLOCKING_DIRS.includes(top)) return "blocking"
-  if (ADVISORY_DIRS.includes(top)) return "advisory"
-  return null // chrome/index/etc. — out of scope for the reading-surface rule
+  return "advisory"
 }
 
 function lint(file) {
@@ -82,8 +81,11 @@ function lint(file) {
     if (B_TAG.test(line)) sink.push(`${rel}:${n}  <b> tag (canon: no bold; render at normal weight)`)
   })
 
-  // Canonical-table advisory: a hand-rolled table head instead of .wiki-content table.
-  if (/<thead[\s>][\s\S]*?background:/i.test(lines.join("\n")) || /<tr[^>]*style="[^"]*background:#9f2727/i.test(lines.join("\n"))) {
+  // Canonical-table advisory: only inspect markup inside <thead>. The previous
+  // expression could run past </thead> and count an unrelated zebra body row.
+  const html = lines.join("\n")
+  const tableHeads = html.match(/<thead[\s>][\s\S]*?<\/thead>/gi) ?? []
+  if (tableHeads.some((head) => /background\s*:/i.test(head))) {
     tableBacklog++
   }
 }
@@ -117,7 +119,7 @@ if (blocking.length) {
 }
 
 console.log(
-  `design-lint: OK — ${scanned} reading-surface page(s) scanned, no bold in ${BLOCKING_DIRS.join("/")}` +
+  `design-lint: OK — ${scanned} reading-surface page(s) scanned` +
     (advisory.length ? ` (${advisory.length} advisory)` : "") +
     ".",
 )

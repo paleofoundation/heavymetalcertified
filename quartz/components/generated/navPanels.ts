@@ -280,7 +280,7 @@ export const navPanels: NavPanel[] = [
         heading: "How it works",
         children: [
           { label: "Program structure & gates", slug: "program/structure" },
-          { label: "Two remediation pathways", slug: "program/two-pathways" },
+          { label: "Category calibration pathways", slug: "program/two-pathways" },
         ],
       },
       {
@@ -296,10 +296,10 @@ export const navPanels: NavPanel[] = [
   {
     key: "brands",
     label: "Brands",
-    panelLabel: "Certified brands",
+    panelLabel: "Certified products",
     slug: "brands",
     blurb:
-      "Every brand carrying the mark, and the route to check any single certificate. The directory is a published list, not a census.",
+      "An optional directory of certified products and the route to check any single certificate. The directory is not an authoritative census.",
     groups: [
       {
         heading: "Look up a certificate",
@@ -312,8 +312,8 @@ export const navPanels: NavPanel[] = [
       {
         heading: "The mark",
         children: [
-          { label: "The certified-brand directory", slug: "brands" },
-          { label: "Become a certified brand", slug: "apply" },
+          { label: "The certified-products directory", slug: "brands" },
+          { label: "Apply for product certification", slug: "apply" },
           { label: "Scope of the mark", slug: "mark" },
         ],
       },

@@ -33,7 +33,10 @@ jobs:
         run: npm ci
 
       - name: Enforce the design-source canon
-        run: node tools/design-lint.mjs
+        run: node tools/design-lint.mjs --all
+
+      - name: Enforce the public brand direction
+        run: npm run lint:brand-direction
 
       - name: Type-check
         run: npm run check
@@ -48,3 +51,6 @@ jobs:
 
       - name: Verify computed styles against the v3 acceptance specification
         run: npm run check:v3
+
+      - name: Audit every rendered route at desktop and mobile widths
+        run: npm run check:routes

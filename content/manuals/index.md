@@ -6,7 +6,7 @@ description: "The bound, citable edition of a category's standards. Each manual 
 snapshot:
   - { k: "Published manuals", v: "1" }
   - { k: "Subcategory standards", v: "9" }
-  - { k: "Pages", v: "9" }
+  - { k: "Pages", v: "35" }
   - { k: "Current edition", v: "2026" }
 connections:
   - { label: "The subcategory standards register", href: "/standards" }
@@ -16,7 +16,7 @@ connections:
 rail_box:
   variant: note
   title: "Cite the manual"
-  body: "Pendergrass, K. HMTc Infant and Child Foods Program Manual. 2026 Edition. Institute of Contaminant Standards (ICS), 2026. doi:10.5281/zenodo.20270512"
+  body: "Pendergrass, K. HMTc Infant and Child Foods Program Manual. 2026 Edition. Institute of Contaminant Standards (ICS), 2026."
 ---
 <section id="published" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Published editions</h2>
@@ -24,10 +24,10 @@ rail_box:
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:20px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0">
-        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Infant and Child Foods</div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">2026 Edition &middot; 9 subcategories &middot; 9 pp</div>
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/infant-and-child-foods" style="color:#2b1f1f;text-decoration:none">Infant and Child Foods</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">2026 Edition &middot; 9 subcategories &middot; 35 pp</div>
       </div>
-      <a href="/manuals/infant-and-child-foods" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Read the standard</a>
+      <a href="/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
     </div>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">
@@ -36,9 +36,7 @@ rail_box:
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">ORCID</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">0000-0002-2348-7259</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Publisher</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">Institute of Contaminant Standards (ICS)</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Edition</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Published</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-05-18</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Revised</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-06-18</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">DOI</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">10.5281/zenodo.20270512</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Published</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-08-06</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">CC BY 4.0 (prose)</span></div>
   </div>
 </section>
@@ -103,6 +101,10 @@ rail_box:
     </div>
     <div style="background:#fffdfb;padding:16px 18px">
       <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Herbs, Spices and Salt</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
+    </div>
+    <div style="background:#fffdfb;padding:16px 18px">
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Grains, Cereals, and Rice Products</div>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
     </div>
   </div>

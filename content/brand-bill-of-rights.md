@@ -13,6 +13,8 @@ connections:
   - { label: "Private Readiness", href: "/readiness" }
   - { label: "What if we do not pass?", href: "/what-if-we-dont-pass" }
   - { label: "Trust Center", href: "/trust" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
+  - { label: "Standard stability", href: "/standard-stability" }
   - { label: "Apply for certification", href: "/apply" }
 rail_box:
   variant: note
@@ -35,14 +37,14 @@ A brand should not have to surrender procedural control in order to learn whethe
 | 7. Receive a rule-based decision | Certification is decided against the published standard and governing edition, not a negotiated threshold created after the result is known. |
 | 8. Receive a scientifically defined confirmation route | Borderline, disputed, or analytically incomplete results follow predefined confirmation and uncertainty rules; testing into compliance is prohibited. |
 | 9. Appeal a determination | The brand can use a published appeal process, including a route that is not controlled solely by the original decision-maker. |
-| 10. Receive notice of ordinary standards changes | A versioned standard does not silently change. The final Stability Covenant should define redlines, notice, transition, impact, and emergency changes. |
+| 10. Receive notice of ordinary standards changes | A versioned standard does not silently change. An ordinary change record identifies the redline, reason, publication and effective dates, transition, and treatment of existing certificates. Urgent corrections follow the separately identified correction route. |
 | 11. Know that payment does not purchase a pass | Fees purchase evaluation and services. They do not create a right to certification or compensation tied to the brand's desired outcome. |
 | 12. Keep private certification data out of HMI | Applicant, supplier, formulation, laboratory, CAPA, and surveillance files do not enter the public Heavy Metal Index merely because the same institution operates both systems. |
 | 13. Receive precise communication boundaries | Certified products receive approved and prohibited claim language, product scope, mark-use controls, limitations, and a verification record. |
 | 14. Receive a defined improvement route | A product not yet certifiable receives a known route to confirmation, root-cause investigation, corrective action, sourcing or formulation change, and reassessment where applicable. |
 | 15. Receive the decision record | The brand receives the standard edition, evidence relied upon, laboratory record, decision, status, certificate scope, and material limitations needed to substantiate what it says. |
 | 16. Exit without a fictional public failure | A brand may stop Private Readiness or withdraw an uncertified application without being placed in a public failed-applicant registry, subject to legal and contractual obligations. |
-| 17. Know how nonessential data are disposed of | The final data-governance policy should define retention, deletion, legal holds, archive, account closure, and records that must remain for program integrity. |
+| 17. Know how nonessential data are disposed of | Before formal intake, the applicable notice and agreement identify retention, deletion, legal holds, archive, account closure, and the records that must remain for program integrity. The public readiness check stores and transmits no answers. |
 | 18. Be treated consistently | A product that meets the same published requirements receives the same decision regardless of brand size, commercial importance, or participation in another program. |
 
 ## Rights do not eliminate responsibilities
@@ -59,11 +61,11 @@ Before a formal sample is submitted, the brand should be able to answer the foll
 |---|---|
 | Which standard applies? | Published standard and written scope confirmation. |
 | What will this cost? | Itemized written quote. |
-| What happens to our records? | Data notice, agreement, and Trust Center. |
+| What happens to our records? | [Data lifecycle](/what-happens-to-your-data), applicable notice and agreement, and Trust Center. |
 | What happens at every result class? | Program Manual and result-consequence matrix. |
 | What can become public? | Visibility and verification rules. |
 | What can we say if certified? | Claims and mark-use guide. |
-| What happens when the standard changes? | Version record and Stability Covenant. |
+| What happens when the standard changes? | [Standard stability and change control](/standard-stability) and the applicable version record. |
 | Who hears an appeal? | Published appeals procedure. |
 
 When any answer is missing, the correct action is to close the governance gap before asking a brand to rely on it.
@@ -71,3 +73,5 @@ When any answer is missing, the correct action is to close the governance gap be
 [Begin with Private Readiness](/readiness).
 
 [Review the Trust Center](/trust).
+
+[Review the data lifecycle](/what-happens-to-your-data) and [standard-stability rules](/standard-stability).

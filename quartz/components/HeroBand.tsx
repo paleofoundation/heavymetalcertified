@@ -20,7 +20,7 @@ const KIND: Record<string, string> = {
   verify: "Lookup",
   apply: "Apply",
   brands: "Directory",
-  brand: "Certified brand",
+  brand: "Product profile",
   portal: "Portal",
   remediation: "Policy",
   mark: "Mark",

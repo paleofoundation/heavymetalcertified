@@ -16,6 +16,8 @@ export const brandPanel: NavPanel = {
     "brand-bill-of-rights",
     "trust",
     "category-readiness",
+    "what-happens-to-your-data",
+    "standard-stability",
     "apply",
   ],
   blurb:
@@ -35,17 +37,17 @@ export const brandPanel: NavPanel = {
       children: [
         { label: "What if we do not pass?", slug: "what-if-we-dont-pass" },
         { label: "Cost and timing", slug: "cost-and-timing" },
+        { label: "What happens to your data", slug: "what-happens-to-your-data" },
         { label: "Brand Bill of Rights", slug: "brand-bill-of-rights" },
-        { label: "Trust Center", slug: "trust" },
       ],
     },
     {
       heading: "Prove and verify",
       children: [
         { label: "Standards register", slug: "standards" },
+        { label: "Standard stability", slug: "standard-stability" },
         { label: "Using the mark", slug: "mark" },
         { label: "Verify a certificate", slug: "verify" },
-        { label: "Certified-brand directory", slug: "brands" },
       ],
     },
   ],

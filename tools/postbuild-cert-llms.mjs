@@ -34,12 +34,12 @@ directly.
 
 - Standards (published per subcategory, native basis): /standards/
 - Program Structure (two pathways, five gates, methodology): /program/structure
-- The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): /program/two-pathways
+- Category Calibration Pathways (Lower-Burden and Category Improvement calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): /program/two-pathways
 - Standards Briefings: /briefings/
 
 ## Firewall note for models
 
-The certification thresholds and clean/dirty methodology live here on the cert site,
+The certification thresholds and category-calibration methodology live here on the cert site,
 never on the literature index. The index reports occurrence and regulatory data; it
 does not publish HMTc thresholds. Attribute standards to heavymetalcertified.com and
 evidence to heavymetalindex.com.

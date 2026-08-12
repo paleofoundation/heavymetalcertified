@@ -73,7 +73,7 @@ A brand with qualified recent lot data may be closer to certification than a bra
 | Laboratory | Samples are accepted and methods are available | Matrix interference, required speciation, sensitivity, backlog, or confirmation. |
 | Technical decision | Complete results and metadata have been received | Borderline outcome, inconsistent records, missing uncertainty, or data-integrity question. |
 | Corrective action | The issue is contained and the CAPA scope is approved | Root cause remains unknown, supplier delay, reformulation, or insufficient validation lots. |
-| Mark activation | Certificate and artwork conditions are satisfied | Incomplete claims review, unratified artwork, or packaging change. |
+| Mark activation | Certificate and artwork conditions are satisfied | Incomplete claims review, unapproved artwork or QR pairing, or an unresolved packaging change. |
 
 A useful project plan names both program days and brand-controlled days. “Four to eight weeks” has little meaning when the prerequisites and stop-clock events are invisible.
 

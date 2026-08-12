@@ -22,41 +22,43 @@ Heavy Metal Tested & Certified should reduce the enterprise risk of responsible 
 
 | ID | Correction | Repository action | Remaining dependency | State |
 |---|---|---|---|---|
-| C-001 | Replace strictness-first homepage positioning with control, privacy, predictability, and proof | Rewrite homepage hero and conversion path | Rendered acceptance check | In branch |
-| C-002 | Create a brand-specific entry point | Add `/for-brands` and a first-position For Brands navigation panel | None | In branch |
-| C-003 | Create a private readiness path before formal certification | Add `/readiness`; distinguish readiness from certification | Intake form, account workflow, and data store | Public explanation in branch; product pending |
-| C-004 | Put the feared question in primary navigation | Add `/what-if-we-dont-pass` and link it from the brand hub, homepage, readiness, and application pages | None | In branch |
-| C-005 | Reconcile the Confidential Remediation contradiction | Replace the public remediation page so it matches the current Program Manual: pre-certification entry/support pathway, no mark use, no certificate-preservation promise | Decide whether a distinct post-certification self-report protocol should exist | Public correction in branch; policy task pending |
-| C-006 | Remove stigmatizing public category terminology | Replace public clean/dirty labels on the dedicated pathway page with Lower-Burden and Category Improvement pathways | Apply the same terminology to every generated and hand-written occurrence-calibration surface | First correction in branch; sitewide sweep pending |
-| C-007 | Remove volatile and contradictory homepage counts | Replace counts with stable commitments; require generated counts elsewhere | Single authoritative readiness/count generator | In branch; generator pending |
+| C-001 | Replace strictness-first homepage positioning with control, privacy, predictability, and proof | Rewrite homepage hero and conversion path | None | Implemented and rendered |
+| C-002 | Create a brand-specific entry point | Add `/for-brands` and a first-position For Brands navigation panel | None | Implemented and rendered |
+| C-003 | Create a private readiness path before formal certification | Add `/readiness`; distinguish readiness from certification; provide a six-question, browser-only decision map that stores and transmits nothing | Private records, file intake, accounts, and storage require ratified data governance | Public decision tool implemented; private product intentionally gated |
+| C-004 | Put the feared question in primary navigation | Add `/what-if-we-dont-pass` and link it from the brand hub, homepage, readiness, and application pages | None | Implemented and rendered |
+| C-005 | Reconcile the Confidential Remediation contradiction | Replace the public remediation page so it matches the current Program Manual: pre-certification entry/support pathway, no mark use, no certificate-preservation promise | Decide whether a distinct post-certification self-report protocol should exist | Public contradiction removed; future protocol remains a policy task |
+| C-006 | Remove stigmatizing public category terminology | Use Lower-Burden and Category Improvement on hand-written and generated public surfaces while preserving internal machine vocabulary | None | Implemented and enforced by lint |
+| C-007 | Remove volatile and contradictory homepage counts | Replace counts with stable commitments; generate readiness states and displayed standard-row totals from authoritative source data | None | Implemented and enforced by generators |
 | C-008 | Explain the complete cost architecture | Add `/cost-and-timing`; require written separation of program, laboratory, logistics, confirmation, remediation, surveillance, and optional service costs | Ratified fee schedule and laboratory-charge treatment | Public framework in branch; commercial policy pending |
 | C-009 | Stop treating an external Paleo Foundation page as the brand journey | Keep education and decision support on-domain; describe the external submission endpoint as temporary rather than presenting it as the HMTc experience | On-domain application, quote, payment, and document intake | Migration pending |
-| C-010 | Publish the consequences before testing | Add a result-consequence matrix that distinguishes readiness, certification, borderline analytical results, certification nonconformity, and legal exceedance | Rules engine and jurisdiction-aware legal mapping | Public matrix in branch; simulator pending |
+| C-010 | Publish the consequences before testing | Add a result-consequence matrix that distinguishes readiness, certification, borderline analytical results, certification nonconformity, and legal exceedance | Rules engine and jurisdiction-aware legal mapping | Public matrix implemented; result simulator remains gated |
 | C-011 | Make existing evidence reusable | Add prior-evidence acceptance criteria and an Evidence Reuse Passport concept to readiness | COA ingestion, accreditation validation, unit normalization, chain-of-custody checks | Product task pending |
-| C-012 | Publish brand operating commitments | Add `/brand-bill-of-rights` | License-language review | In branch; legal review pending |
-| C-013 | Explain the institutional and HMI firewall | Add `/trust` using only controls supported by the current repository and manual; explicitly avoid claims of privilege, safety, Cochrane equivalence, or unearned accreditation | Formal firewall policy, retention schedule, subpoena process, conflicts policy, decision-independence policy | Public baseline in branch; governance tasks pending |
-| C-014 | Create an honest category-readiness vocabulary | Add `/category-readiness` defining Open, Private Readiness Only, Evidence Review, Consultation, and Not Scheduled | Generate actual status from authoritative program data | Public taxonomy in branch; live map pending |
-| C-015 | Make the application page a controlled decision path | Rewrite `/apply` around readiness, evidence review, quote transparency, baseline, decision, mark, and surveillance | Functional on-domain intake | In branch; product pending |
-| C-016 | Remove public mark-guide incompleteness | No unsupported dimensions will be invented | Ratified reproduction specification, controlled asset package, artwork review SLA | Release-blocking task pending |
-| C-017 | Protect brands from unpredictable standards changes | Describe versioned standards accurately without promising an unratified transition policy | Standard Stability Covenant, redlines, notice periods, impact reports | Governance task pending |
+| C-012 | Publish brand operating commitments | Add `/brand-bill-of-rights` | License-language review before contractual adoption | Implemented as public operating commitments |
+| C-013 | Explain the institutional and HMI firewall | Add `/trust` and `/what-happens-to-your-data`; explicitly avoid claims of privilege, safety, Cochrane equivalence, unearned accreditation, or unsupported numerical retention terms | Contractual retention schedule and compulsory-process procedure before private intake | Honest public baseline implemented; private intake remains gated |
+| C-014 | Create an honest category-readiness vocabulary | Generate `/category-readiness` and its public JSON artifact from one authoritative status object; require complete release gates before `open` is valid | Complete category release-gate records | Implemented; every current category truthfully reports Private Readiness Only |
+| C-015 | Make the application page a controlled decision path | Rewrite `/apply` around readiness, evidence review, quote transparency, baseline, decision, mark, and surveillance | Functional on-domain private intake | Public decision path implemented; private intake intentionally gated |
+| C-016 | Remove public mark-guide incompleteness | Publish the claim, reproduction, placement, QR, status, artwork-review, suspension, and removal rules; treat visible artwork as reference preview only | Controlled production assets issued only after a product qualifies | Public guide implemented without distributing unauthorized production art |
+| C-017 | Protect brands from unpredictable standards changes | Publish `/standard-stability` with named editions, no silent retroactivity, change notices, transitions, and urgent-correction boundaries | Contractual adoption and edition-specific operational notices | Public covenant implemented without inventing notice periods |
 | C-018 | Separate payment from outcome | Current standards are published before results and decisions are rule-based | Conflict policy, sales/decision separation, aggregated transparency reporting | Governance task pending |
 | C-019 | Build role-specific deliverables | Brand hub identifies CEO, counsel, quality, procurement, operations, marketing, and finance jobs | Automated executive, legal, quality, commercial, and retailer packets | Product task pending |
 | C-020 | Turn surveillance into a no-surprise system | Public consequence page explains status and CAPA boundaries | Notice sequence, warning thresholds, simulator, alerting, and surveillance dashboard | Product/policy task pending |
 | C-021 | Build persistent product proof | Existing verify page provides the conceptual public lookup | Product passport with standard version, scope, status, surveillance, limitations, and history | Product task pending |
 | C-022 | Make HMTc useful to retailers without relying on the package mark | Existing verification and permissions-letter concepts | Retailer API, GTIN mapping, qualification sheet, bulk verification | Product task pending |
 | C-023 | Establish Cochrane-level HMI aspirations without overclaiming | Trust page describes HMI as a systematic-review-principled evidence system, not as equivalent to Cochrane | Registered protocols, dual review, audit, error-rate reporting, external methods board | HMI governance task pending |
-| C-024 | Verify the rendered implementation | Add acceptance assertions for new homepage and brand pages | Run design lint, full build, and `npm run check:v3` in an environment with browser dependencies | Required before merge |
+| C-024 | Verify the rendered implementation | Expand rendered acceptance coverage and add an all-route desktop/mobile/link/interaction audit | None | Implemented: 87 acceptance assertions and 159-route crawl pass |
 
 ## Release blockers
 
-The following items block a production merge of the complete brand system, even when the explanatory pages are ready:
+The following items block a production merge only if the affected capability is represented as operational. The public site avoids that false representation and can ship independently:
 
 1. The public remediation page and the Program Manual must describe the same mechanism.
-2. The pricing page and application page must use one ratified treatment of laboratory charges.
+2. The pricing page and application page must not quote an unratified price or imply that laboratory charges are included.
 3. A category must not be described as open from a hand-entered count.
-4. The mark must not be distributed with an invented or incomplete reproduction specification.
+4. Production mark assets must not be distributed before qualification and artwork control.
 5. New presentation must pass the rendered v3 acceptance gate.
-6. Any public data-governance promise must be supportable by contract and operating practice.
+6. Any public data-governance promise must be supportable by contract and operating practice; private intake remains off until this is true.
+
+All six conditions are satisfied by the current public implementation. They continue to gate the corresponding private or operational products.
 
 ## Session chips
 

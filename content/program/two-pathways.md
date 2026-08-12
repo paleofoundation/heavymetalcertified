@@ -62,6 +62,6 @@ Documented geographic, seasonal, origin, and process variation belongs in the ev
 
 A firm occurrence-set value should publish only after the required evidence, analytical, product-definition, and governance gates are complete. The standard should identify the pathway, data, conversion, uncertainty, governing maximum, rationale, edition, and review date.
 
-Neither pathway is a permanent resting place. ALARA review and the program ratchet are intended to tighten a value as the category distribution and commercial feasibility improve. A later edition should preserve a version record and give certificate holders a defined transition under the final Standard Stability Covenant.
+Neither pathway is a permanent resting place. ALARA review and the program ratchet are intended to tighten a value as the category distribution and commercial feasibility improve. A later edition preserves a version record and gives certificate holders the transition published under the [standard-stability rules](/standard-stability).
 
 For the broader program explanation, see [Program structure](/program/structure). For the product-specific values and their evidence, see the [Standards register](/standards).

@@ -13,6 +13,7 @@ connections:
   - { label: "What if the product does not pass?", href: "/what-if-we-dont-pass" }
   - { label: "Cost and timing", href: "/cost-and-timing" }
   - { label: "Category readiness", href: "/category-readiness" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
   - { label: "Apply for certification", href: "/apply" }
 rail_box:
   title: "Readiness is not certification"
@@ -24,6 +25,8 @@ rail_box:
 Private Readiness is the controlled first stage for a brand that wants to understand its position before entering a formal certification decision.
 
 It is not certification. It creates no certificate, no public applicant status, and no right to display the mark. Its purpose is to identify the applicable standard, determine whether current evidence can be reused, expose genuine gaps, and give the brand a rational next decision.
+
+The readiness check above runs only in this browser. It stores and transmits no answers, creates no account, and sends no product information to HMTc. A formal intake is a separate step with its own notice and agreement.
 
 ## The six-question starting point
 

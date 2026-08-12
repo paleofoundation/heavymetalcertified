@@ -13,6 +13,8 @@ connections:
   - { label: "What if the product does not pass?", href: "/what-if-we-dont-pass" }
   - { label: "Cost and timing", href: "/cost-and-timing" }
   - { label: "Brand Bill of Rights", href: "/brand-bill-of-rights" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
+  - { label: "Standard stability", href: "/standard-stability" }
   - { label: "Trust Center", href: "/trust" }
 rail_box:
   title: "Begin with readiness"
@@ -44,7 +46,7 @@ The certification mark is the visible output. The larger product is the control 
 |---|---|---|
 | We already test several metals | [Private Readiness](/readiness) | An evidence-reuse review showing what qualifies, what is missing, and which new tests are genuinely necessary. |
 | We have supplier COAs but limited finished-product data | [Private Readiness](/readiness) | A separation of supplier evidence, formulation risk, and finished-product certification requirements. |
-| A retailer has requested proof | [For retailers and verification](/verify) | A clear view of what a certificate establishes, what documents issue, and what the retailer can verify. |
+| A retailer has requested proof | [For retailers and verification](/verify) | The verification schema now; product-specific, current-status proof after an eligible certificate exists. |
 | We are preparing a launch | [Apply for certification](/apply) | A critical path covering standard eligibility, evidence, baseline lots, laboratory work, decision, claims, and artwork. |
 | We have a result that concerns us | [What if we do not pass?](/what-if-we-dont-pass) | The distinction among a readiness gap, borderline analytical result, certification nonconformity, and legal exceedance. |
 | We have many SKUs | [Private Readiness](/readiness) | A portfolio sequence that starts with likely quick certifications rather than allowing one difficult SKU to hold the portfolio. |
@@ -89,3 +91,5 @@ The more credible promise is narrower and more useful:
 [Check readiness privately](/readiness) when the first question is how far the current program is from certification.
 
 [Review the formal certification path](/apply) when the product category, evidence, budget, and production lots are ready for an actual decision.
+
+[Review the data lifecycle](/what-happens-to-your-data) and [standard-stability rules](/standard-stability) before formal intake.

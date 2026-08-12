@@ -12,6 +12,8 @@ connections:
   - { label: "Heavy Metal Index", href: "https://heavymetalindex.com" }
   - { label: "Program structure", href: "/program/structure" }
   - { label: "Brand Bill of Rights", href: "/brand-bill-of-rights" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
+  - { label: "Standard stability", href: "/standard-stability" }
   - { label: "Using the mark", href: "/mark" }
   - { label: "Verify a certificate", href: "/verify" }
 rail_box:
@@ -88,8 +90,10 @@ HMI can credibly describe itself as being built around systematic-review princip
 
 The program should preserve a record of what standard and edition governed each decision. Corrections should be public when they alter public content. Appeals should be reviewed under published rules and should not be decided solely by the people responsible for the appealed determination.
 
-A full Standard Stability Covenant remains to be ratified. It should cover redlines, notice, transition, emergency changes, existing certificates, retesting, cost treatment, and pre-effective-date impact analysis.
+The current stability rule binds each decision to its named edition, prohibits silent retroactivity, and carries existing certifications through a published transition when limits tighten. Each substantive change record still must state its redline, reason, notice, effective date, transition, existing-certificate treatment, retesting, cost treatment, and correction or appeal route.
 
 [Read the Brand Bill of Rights](/brand-bill-of-rights) for the operating commitments a brand should receive.
 
 [Review the program structure](/program/structure) for the current technical decision system.
+
+[Review standard stability and change control](/standard-stability) for the rule that governs later editions.

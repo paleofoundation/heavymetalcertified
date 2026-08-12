@@ -3,71 +3,16 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import script from "./scripts/citeThisPage.inline"
 import style from "./styles/citeThisPage.scss"
 
-// Per-page "Cite this page" footer block. Visible only on public reference
-// pages (ingredients/, products/, metals/, regulations/, synthesis/,
-// sources/, mitigation/, supply-chain/, testing/, microbiome/, health/,
-// methodology, editorial-standards, roadmap, errata, coverage, licensing,
-// curators, trust). Hidden on the homepage, the chat surface, and any
-// staff/internal page.
-//
-// Reveals the canonical citation, a "Copy citation" button, and a download
-// link to /api/evidence-packet?slug=<slug>&download=1 for brand-legal and
-// regulatory readers who need a signed manifest of the page as published.
+// Cert-native per-page citation block. The original inherited Index component
+// pointed certification pages at heavymetalindex.com and promised an evidence
+// packet endpoint that does not exist on this deploy. The cert surface cites
+// itself; underlying evidence remains a one-way outbound link to HMI.
 
-const PUBLIC_PREFIXES = [
-  "ingredients/",
-  "products/",
-  "metals/",
-  "regulations/",
-  "synthesis/",
-  "sources/",
-  "mitigation/",
-  "supply-chain/",
-  "testing/",
-  "microbiome/",
-  "health/",
-]
-const PUBLIC_EXACT = new Set([
-  "methodology",
-  "editorial-standards",
-  "errata",
-  "licensing",
-  "curators",
-  "roadmap",
-  "coverage",
-  "trust",
-])
-const PRIVATE_PREFIXES = [
-  "app/",
-  "certification/",
-  "courses/",
-  "lint/",
-  "queries/",
-  "tags/",
-  "staff/",
-  "workbench/",
-  "audits/",
-  "batch-reports/",
-  "studies/",
-  "advisory/",
-]
-const HIDDEN_EXACT = new Set([
-  "index",
-  "ask",
-  "log",
-  "contact",
-  "about",
-  "overview",
-  "privacy",
-  "terms",
-  "sprint-status",
-  "synthesis",
-])
+const PUBLIC_PREFIXES = ["regulations/"]
+const PUBLIC_EXACT = new Set(["trust"])
 
 function isCitable(slug: string | undefined): boolean {
   if (!slug) return false
-  if (PRIVATE_PREFIXES.some((p) => slug.startsWith(p))) return false
-  if (HIDDEN_EXACT.has(slug)) return false
   if (PUBLIC_EXACT.has(slug)) return true
   return PUBLIC_PREFIXES.some((p) => slug.startsWith(p))
 }
@@ -89,13 +34,12 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const frontmatter = fileData.frontmatter as Record<string, unknown> | undefined
   const title = frontmatter?.title ? String(frontmatter.title) : (slug as string)
   const wikiDoi = frontmatter ? frontmatterString(frontmatter.wiki_doi) : undefined
-  const canonicalUrl = `https://heavymetalindex.com/${slug}`
-  const packetUrl = `/api/evidence-packet?slug=${encodeURIComponent(slug as string)}&download=1`
+  const canonicalUrl = `https://heavymetalcertified.com/${slug}`
   const today = todayIsoDate()
 
   const citationLine = wikiDoi
-    ? `Heavy Metal Index. "${title}". ${canonicalUrl} (DOI: ${wikiDoi}). Retrieved ${today}. CC BY 4.0.`
-    : `Heavy Metal Index. "${title}". ${canonicalUrl}. Retrieved ${today}. CC BY 4.0.`
+    ? `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl} (DOI: ${wikiDoi}). Retrieved ${today}.`
+    : `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl}. Retrieved ${today}.`
 
   // Year for reference-manager records: prefer the page's updated/established
   // year, fall back to the retrieval year.
@@ -103,7 +47,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     ? frontmatterString(frontmatter.updated) ?? frontmatterString(frontmatter.established)
     : undefined
   const year = (updated ?? today).slice(0, 4)
-  const shareText = `${title} — Heavy Metal Index`
+  const shareText = `${title} — Heavy Metal Tested & Certified`
 
   return (
     <aside
@@ -120,22 +64,13 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <div>
           <span class="hmi-cite-label">Cite this page.</span>{" "}
           <span class="hmi-cite-meta">
-            Prose CC BY 4.0. Structured data EU database rights reserved (
-            <a href="/licensing">licensing</a>).
+            Identify the named page, cert program, canonical URL, and retrieval date.
           </span>
         </div>
         <div class="hmi-cite-actions">
           <button type="button" data-hmi-cite-toggle aria-expanded="true">
             Hide citation
           </button>
-          <a
-            class="hmi-cite-download"
-            href={packetUrl}
-            download
-            title="Download a JSON evidence packet — pins this page at its current git commit for litigation, regulatory, or peer-review use."
-          >
-            Download evidence packet
-          </a>
         </div>
       </div>
       <div data-hmi-cite-detail>
@@ -176,13 +111,9 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           </a>
         </div>
         <p class="hmi-cite-note">
-          The evidence packet is a JSON manifest pinning this page to its current
-          published git commit, with the SHA-256 of the body and the contributing
-          source list. It is designed for use as a litigation exhibit, regulatory
-          submission, or peer-review supplementary record. See{" "}
-          <a href="/methodology">methodology</a> and{" "}
-          <a href="/errata">errata</a> for how the underlying evidence is selected
-          and corrected.
+          Certification rules, regulatory records, and source evidence are different layers. See the{" "}
+          <a href="/trust">Trust Center</a> for the boundary and the{" "}
+          <a href="/standard-stability">standard-stability record</a> for corrections and later editions.
         </p>
       </div>
     </aside>

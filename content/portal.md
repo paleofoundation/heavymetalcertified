@@ -1,126 +1,71 @@
 ---
-title: Brand portal
+title: Brand Control Room — Specimen
 type: portal
 noindex: true
-audience: [certifier]
-description: "Certificates, permissions letters and the lot record for every product this brand holds. Remediation is confidential to this account and is never published or surfaced in the public register."
+audience: [brand-legal, retailer-compliance, certifier]
+description: "A nonfunctional specimen of the future account surface for readiness, evidence, product-specific certificates, lots, CAPA, mark rights, people, and audit history."
 snapshot:
-  - { k: "Certificates in force", v: "3" }
-  - { k: "Lots this period", v: "12" }
-  - { k: "Open remediation items", v: "1" }
-  - { k: "Seats used", v: "3 / 5" }
+  - { k: "Account access", v: "Not yet available" }
+  - { k: "Displayed records", v: "Illustrative only" }
+  - { k: "Readiness", v: "Pre-certification" }
+  - { k: "Certificates", v: "Product-specific" }
 connections:
-  - { label: "Standards in force for this account", href: "/standards" }
-  - { label: "Public register", href: "/verify" }
-  - { label: "Standards briefings", href: "/briefings" }
+  - { label: "Private Readiness", href: "/readiness" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
+  - { label: "What if a product does not pass?", href: "/what-if-we-dont-pass" }
+  - { label: "Verify a certificate", href: "/verify" }
+  - { label: "Using the mark", href: "/mark" }
+rail_box:
+  variant: note
+  title: "This is a design specimen"
+  body: "No account, certificate, laboratory result, CAPA, user, or date shown here is real."
 ---
 
-<div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:32px">
-  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Specimen account &middot; noindex &middot; authenticated</div>
-  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">No brands are certified yet. This screen shows the shape of the account a brand receives on issue. Signed in as <span style="color:#736b6b">regulatory@&lt;brand&gt;.com</span> &middot; Administrator &middot; 3 of 5 seats.</p>
-</div>
+This page is a nonfunctional design specimen for the future Brand Control Room. It does not authenticate users, accept files, create an applicant record, issue a certificate, or display live program data.
 
-<section id="certificates" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Certificates</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">One certificate per product per subcategory standard. A product sold in two forms holds two certificates, because the standard and the basis differ.</p>
-  <div style="overflow-x:auto">
-  <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:46rem">
-    <thead><tr style="background:#9f2727;color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Product</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Standard</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Basis</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Status</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Valid through</th></tr></thead>
-    <tbody>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Stage 1 Infant Formula, Powder</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Part 3.1 — powder, non-soy</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">powder as placed on market</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">A — full</span></td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-05-18</td></tr>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Stage 2 Infant Formula, Powder</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Part 3.1 — powder, non-soy</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">powder as placed on market</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">A — full</span></td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-05-18</td></tr>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Oat &amp; Banana Baby Cereal</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Part 3.6 — dry, non-rice</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">dry as sold</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#fff;background:#9f2727;border:1px solid #9f2727">B — transitional</span></td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-01-30</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Specimen rows. Status A is full certification; B is a transitional variance available on Tier&nbsp;2 metals only; C is probation with the mark suspended.</p>
-</section>
+The specimen exists to publish the information architecture before software is described as operational.
 
-<section id="documents" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Documents and letters</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Everything the brand needs to answer a retailer questionnaire or a regulator without going through us: the permissions letter that authorises mark usage, the certificate itself, the laboratory reports behind it, and the edition of the standard in force when it was issued.</p>
-  <div style="border:1px solid #e8e1db;background:#fffdfb">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:15px 18px;border-bottom:1px solid #f2ece7"><div style="min-width:0"><div style="font-size:14.5px;line-height:1.5;color:#2b1f1f">Permissions letter — Stage 1 Infant Formula, Powder</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">PDF · issued 2026-05-18 · expires 2027-05-18</div></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;border:1px dotted #e8e1db;background:#faf7f4;border-radius:2px;padding:5px 10px;white-space:nowrap">Issued per product</span></div>
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:15px 18px;border-bottom:1px solid #f2ece7"><div style="min-width:0"><div style="font-size:14.5px;line-height:1.5;color:#2b1f1f">Certificate of conformity — all products</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">PDF · signed · names standard, panel and basis</div></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;border:1px dotted #e8e1db;background:#faf7f4;border-radius:2px;padding:5px 10px;white-space:nowrap">Issued on certification</span></div>
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:15px 18px;border-bottom:1px solid #f2ece7"><div style="min-width:0"><div style="font-size:14.5px;line-height:1.5;color:#2b1f1f">Laboratory reports — 12 lots, current period</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">ZIP · ISO/IEC 17025 accredited</div></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;border:1px dotted #e8e1db;background:#faf7f4;border-radius:2px;padding:5px 10px;white-space:nowrap">Issued per lot</span></div>
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:15px 18px"><div style="min-width:0"><div style="font-size:14.5px;line-height:1.5;color:#2b1f1f">HMTc Infant and Child Foods Program Manual</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">PDF · 2026 Edition · the edition in force at issue</div></div><a href="/manuals/infant-and-child-foods" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Open</a></div>
-  </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">The permissions letter is the document a retailer&rsquo;s compliance team actually asks for. It names the product, the standard edition, the analyte panel and the basis, and it expires with the certificate.</p>
-</section>
+## One account, two legally different stages
 
-<section id="lotrecord" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Lot record</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">The brand&rsquo;s own view carries measured values. The public register does not &mdash; it states conformity only. This asymmetry is deliberate: the evidence is auditable on request without publishing a competitor&rsquo;s process data.</p>
-  <div style="overflow-x:auto">
-  <table style="width:100%;font-size:13px;border:1px solid #e8e1db;min-width:44rem">
-    <thead><tr style="background:#fdf4f3;color:#9f2727;border-bottom:1px solid #f2dcda"><th style="text-align:left;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Lot</th><th style="text-align:left;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Sampled</th><th style="text-align:left;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Laboratory</th><th style="text-align:left;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Highest analyte</th><th style="text-align:left;padding:10px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Headroom</th></tr></thead>
-    <tbody>
-      <tr><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">L2604-118A</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">2026-04-28</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Accredited third party</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">Pb</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#9f2727">62% below</td></tr>
-      <tr><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">L2605-131B</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">2026-05-11</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Accredited third party</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">Pb</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#9f2727">58% below</td></tr>
-      <tr><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">L2606-144A</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">2026-06-02</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Accredited third party</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">Cd</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#9f2727">41% below</td></tr>
-      <tr><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">L2607-159C</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">2026-07-19</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Accredited third party</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#3f3a3a">Cd</td><td style="padding:12px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#9f2727">19% below</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Headroom is the margin between the lot result and the published limit. A lot trending toward zero headroom triggers a surveillance notice before it becomes an exceedance.</p>
-</section>
+| Stage | What the Control Room must show | What it must never imply |
+|---|---|---|
+| Private Readiness | Product scope, evidence inventory, Evidence Reuse Passport, gaps, portfolio sequence, cost and timing assumptions, recommended route | That the brand applied, failed certification, holds a certificate, or may use the mark. |
+| Confidential Remediation | Pre-certification CAPA, milestones, evidence, legal-limit confirmation, support record | That remediation privately preserves a certificate; no certificate exists in this track. |
+| Formal Certification | Accepted scope, governing standard and edition, work order, sample plan, evidence, decision and appeal record | That paying a fee purchases an outcome or that a partial panel certifies a product. |
+| Surveillance and Renewal | Later lots, status, change control, trends, CAPA, mark authorization, renewal and transition notices | That self-reporting automatically keeps a certificate active. Status follows the published consequence rules. |
 
-<section id="remediation" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Remediation</h2>
-  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:20px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The Confidential Remediation Track exists so that a brand which finds a problem is better off telling us than concealing it. Nothing in this section is published, disclosed to a retailer, or reflected in the public register while an item is open and on schedule. A brand that reports and remediates keeps its certificate; a brand that conceals loses it.</p>
-  </div>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
-    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:10px"><div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Cadmium trend — Oat &amp; Banana Baby Cereal</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">Open · on schedule</span></div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px;max-width:74ch">Headroom on cadmium narrowed across three consecutive lots without exceeding the published limit. Opened by the brand under the surveillance protocol rather than triggered by a failure, which is what the track is for.</p>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Opened</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-07-22</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Trigger</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">trend, not exceedance</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certificate impact</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none while on schedule</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Corrective action due</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-09-30</span></div>
-    </div>
-    <div style="padding:17px 19px">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:10px"><div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Supplier substitution — oat groats, secondary mill</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#a9a1a1;background:#faf7f4;border:1px solid #e8e1db">Closed</span></div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px;max-width:74ch">Secondary mill introduced without a heavy-metal specification in the supply agreement. Specification added, incoming lots tested, and the mill re-qualified.</p>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Opened</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-03-04</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Closed</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">2026-04-19</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certificate impact</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none</span></div>
-    </div>
-  </div>
-</section>
+## Control Room modules
 
-<section id="brandpage" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Public brand page</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Every certified brand has one public page. It is what a consumer reaches by scanning the mark and what a retailer links to in a vendor record. The brand controls the description and the imagery; it does not control the certificate status, the standard named, or the lot conformity history.</p>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:14px 18px;border-bottom:1px solid #e8e1db;background:#fbf8f5">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Live &middot; public</div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#a9a1a1;white-space:nowrap">heavymetalcertified.com/brands/&lt;slug&gt;</div>
-    </div>
-    <div style="padding:16px 18px 14px">
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Public URL</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">/brands/&lt;slug&gt;</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certified products listed</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">3</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Standards named</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">Part 3.1, Part 3.6</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Measured lot values shown</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">no</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Brand-controlled fields</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">description, imagery</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Program-controlled fields</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">status, standard, history</span></div>
-    </div>
-  </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">The split is the point: a brand can tell its own story, but it cannot edit the finding. The certificate status, the standard named and the lot conformity history are program-controlled and render the same whether the brand likes them or not.</p>
-</section>
+| Module | Record it must control |
+|---|---|
+| Portfolio | Exact product, form, formulation family, market, intended consumer, facility, category and current stage. |
+| Evidence Passport | Each laboratory report or COA, acceptance criteria, accepted scope, qualification, rejection reason and missing work. |
+| Work and cost | Quote lines, assumptions, dependencies, authorizations, laboratory charges, logistics, confirmation and remediation costs. |
+| Samples and lots | Product and lot identity, custody, reserve samples, laboratory, method, reporting basis, result status and decision link. |
+| Certificates | Product-specific certificate, governing editions, dates, status, public verification fields and authorized claims. |
+| CAPA | Trigger, investigation, root cause, action, owner, evidence, deadline, verification and closure. |
+| Mark rights | Approved asset, product and form, markets, scope line, QR destination, artwork versions, approval and removal notices. |
+| People and permissions | Named users, role, least-privilege access, invitation, removal, review and authentication history. |
+| Audit history | Who viewed, changed, approved, exported, corrected or disclosed a record and why. |
 
-<section id="seats">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Seats and access</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Regulatory, quality and legal all need the certificate record, and they should not share one login. Seats are per person; the audit trail records who downloaded which letter and when.</p>
-  <div style="overflow-x:auto">
-  <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:40rem">
-    <thead><tr style="background:#9f2727;color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Person</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Role</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Can</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Last active</th></tr></thead>
-    <tbody>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">regulatory@&lt;brand&gt;.com</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">Administrator</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Everything, including seats and billing</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">2026-08-02</td></tr>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">qa@&lt;brand&gt;.com</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">Quality</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Documents, lot record, remediation</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">2026-07-31</td></tr>
-      <tr><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">counsel@&lt;brand&gt;.com</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">Viewer</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b">Documents and letters only</td><td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#a9a1a1">2026-06-14</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Three of five seats are in use. Additional seats beyond the plan allowance are billed annually. This is a specimen account; no invitations are sent.</p>
-</section>
+## Example state model
+
+The future interface should not collapse every event into “pass” or “fail.” It should display the stage and consequence separately.
+
+| Example event | Stage | Certificate effect | Public effect |
+|---|---|---|---|
+| Existing report lacks lot identity | Private Readiness | None; no certificate exists | None. |
+| Pre-certification baseline is not certifiable but remains within applicable legal limits | Confidential Remediation may be available | None; no certificate exists | No failed-applicant listing. |
+| Formal result is borderline under the uncertainty rule | Certification decision | Pending confirmation under the published rule | No result is represented as final before confirmation. |
+| Certified product has a later nonconformity | Surveillance | Status, release and mark consequences follow the program rules | Verification changes only as the governing status and disclosure rules require. |
+| Result may exceed an applicable legal limit | Any stage | Certification workflow stops or escalates | Law, recall, regulator and contractual duties control; confidentiality does not override them. |
+
+## Data boundary before software opens
+
+The Control Room should not accept private records until the agreement and data notice define access, processors, purpose, retention, deletion, export, correction, legal holds, compulsory process, regulator requests, audit logging, account closure, and the Heavy Metal Index firewall.
+
+The product UI is not the policy. The controls must exist in the governing terms and technical enforcement together.
+
+[Review the current data boundary](/what-happens-to-your-data).
+
+[Use the on-device readiness check](/readiness) without creating an account.

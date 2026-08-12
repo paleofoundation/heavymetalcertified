@@ -74,7 +74,7 @@ export default (() => {
             <span class="hmtc-search-kbd" aria-hidden="true">/</span>
           </a>
           <a class="hmtc-login" href={`${baseDir}/portal`}>
-            Log in
+            Control Room preview
           </a>
           <a class="hmtc-apply" href={`${baseDir}/readiness`}>
             Check readiness
