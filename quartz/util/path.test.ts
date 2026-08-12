@@ -361,3 +361,23 @@ describe("resolveRelative", () => {
     assert.strictEqual(path.resolveRelative("abc/def" as FullSlug, "ghi/" as SimpleSlug), "../ghi/")
   })
 })
+
+describe("canonicalUrl", () => {
+  test("keeps the root slash", () => {
+    assert.strictEqual(path.canonicalUrl("heavymetalcertified.com", "/"), "https://heavymetalcertified.com/")
+  })
+
+  test("removes a folder trailing slash", () => {
+    assert.strictEqual(
+      path.canonicalUrl("heavymetalcertified.com", "standards/"),
+      "https://heavymetalcertified.com/standards",
+    )
+  })
+
+  test("does not create double slashes", () => {
+    assert.strictEqual(
+      path.canonicalUrl("/heavymetalcertified.com/", "/briefings/after-palmquist/"),
+      "https://heavymetalcertified.com/briefings/after-palmquist",
+    )
+  })
+})

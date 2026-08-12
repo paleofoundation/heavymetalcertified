@@ -10,6 +10,9 @@ orcid: 0000-0002-2348-7259
 briefing_date: "August 2026"
 updated: "August 2026"
 scholar_eligible: true
+scholar_pdf: true
+scholar_pdf_url: "https://heavymetalcertified.com/briefings/the-big-8.pdf"
+pdf: "/briefings/the-big-8.pdf"
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 snapshot:
   - { k: "Series number", v: "Brief 3" }

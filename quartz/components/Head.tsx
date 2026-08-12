@@ -1,5 +1,5 @@
 import { i18n } from "../i18n"
-import { FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
+import { canonicalUrl, FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -28,6 +28,28 @@ function frontmatterBoolean(value: unknown): boolean {
   if (typeof value === "boolean") return value
   if (typeof value === "string") return ["true", "yes", "1"].includes(value.trim().toLowerCase())
   return false
+}
+
+// Scholar accepts a year or a complete date, not display dates such as
+// "May 2026". Preserve a full source date; otherwise emit its known year.
+function normalizeCitationDate(value: unknown): string | undefined {
+  const raw = frontmatterString(value)
+  if (!raw) return undefined
+  if (/^\d{4}$/.test(raw)) return raw
+
+  const iso = raw.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})$/)
+  if (iso) return `${iso[1]}/${iso[2].padStart(2, "0")}/${iso[3].padStart(2, "0")}`
+
+  const monthDay = raw.match(
+    /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})$/i,
+  )
+  if (monthDay) {
+    const month = new Date(`${monthDay[1]} 1, 2000`).getMonth() + 1
+    return `${monthDay[3]}/${String(month).padStart(2, "0")}/${monthDay[2].padStart(2, "0")}`
+  }
+
+  const year = raw.match(/\b(19|20)\d{2}\b/)
+  return year?.[0]
 }
 
 // og:type — "article" for substantive documents (briefings, standards,
@@ -94,10 +116,11 @@ function CitationMetadata({
   if (isSourcePage) {
     const citationTitle = frontmatterString(frontmatter.title) ?? title
     const authors = frontmatterStringArray(frontmatter.authors)
-    const publicationDate =
+    const publicationDate = normalizeCitationDate(
       frontmatterString(frontmatter.year) ??
       frontmatterString(frontmatter.published) ??
-      frontmatterString(frontmatter.created)
+      frontmatterString(frontmatter.created),
+    )
     const publication = frontmatterString(frontmatter.publication)
     const doi = frontmatterString(frontmatter.doi)
     const canonicalSourceUrl = frontmatterString(frontmatter.access_url)
@@ -129,14 +152,22 @@ function CitationMetadata({
   const isScholarEligible = frontmatterBoolean(frontmatter.scholar_eligible)
   if (isScholarEligible) {
     const citationTitle = frontmatterString(frontmatter.title) ?? title
-    const pubDate =
+    const pubDate = normalizeCitationDate(
       frontmatterString(frontmatter.effective_date) ??
       frontmatterString(frontmatter.briefing_date) ??
       frontmatterString(frontmatter.updated) ??
-      frontmatterString(frontmatter.created)
+      frontmatterString(frontmatter.created),
+    )
     const certDoi = frontmatterString(frontmatter.cert_doi) ?? frontmatterString(frontmatter.doi)
     const author = frontmatterString(frontmatter.author) ?? "Pendergrass, Karen"
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
+    const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
+    const pdfUrl = configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
+    const reportNumber =
+      frontmatterString(frontmatter.standard_version) ??
+      frontmatterString(frontmatter.briefing_slug) ??
+      frontmatterString(frontmatter.edition) ??
+      slugStr
     return (
       <>
         <meta name="citation_title" content={citationTitle} />
@@ -150,12 +181,13 @@ function CitationMetadata({
           name="citation_technical_report_institution"
           content="Heavy Metal Tested & Certified, Institute of Contaminant Standards (ICS)"
         />
-        {pubDate && (
-          <meta name="citation_publication_date" content={pubDate.replace(/-/g, "/")} />
-        )}
+        {pubDate && <meta name="citation_publication_date" content={pubDate} />}
+        {reportNumber && <meta name="citation_technical_report_number" content={reportNumber} />}
+        <meta name="citation_language" content="en" />
         <meta name="citation_abstract_html_url" content={socialUrl} />
         <meta name="citation_fulltext_html_url" content={socialUrl} />
-        {hasPdf && <meta name="citation_pdf_url" content={`${socialUrl}.pdf`} />}
+        {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
+        {pdfUrl && <link rel="alternate" type="application/pdf" href={pdfUrl} />}
         {certDoi && <meta name="citation_doi" content={certDoi} />}
       </>
     )
@@ -186,15 +218,14 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
     const iconPath = joinSegments(baseDir, "static/icon.png")
 
-    // Url of current page. simplifySlug strips the trailing `index` so the
-    // homepage canonicalizes to `/` (not `/index`) and folder pages to `/foo/`
-    // (not `/foo/index`) — matching the served URL. A cross-domain canonical or
+    // Url of current page. simplifySlug strips `index`; canonicalUrl then
+    // normalizes folders to Vercel's final slashless 200 URL. A cross-domain canonical or
     // a self-canonical pointing at a non-served path is the duplicate-content
     // defect that folded the old paleofoundation.com↔heavymetaltested.com pair.
     const socialUrl =
       fileData.slug === "404"
         ? url.toString()
-        : joinSegments(url.toString(), simplifySlug(fileData.slug!))
+        : canonicalUrl(cfg.baseUrl ?? "example.com", simplifySlug(fileData.slug!))
 
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
@@ -219,7 +250,7 @@ export default (() => {
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="og:site_name" content={cfg.pageTitle}></meta>
+        <meta property="og:site_name" content={cfg.pageTitle}></meta>
         <meta property="og:title" content={title} />
         <meta property="og:type" content={ogType} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -257,9 +288,14 @@ export default (() => {
 
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
-        {frontmatterBoolean(fileData.frontmatter?.noindex) && (
-          <meta name="robots" content="noindex, nofollow" />
-        )}
+        <meta
+          name="robots"
+          content={
+            fileData.slug === "404" || frontmatterBoolean(fileData.frontmatter?.noindex)
+              ? "noindex, nofollow"
+              : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+          }
+        />
         <CitationMetadata
           frontmatter={fileData.frontmatter}
           slug={fileData.slug}

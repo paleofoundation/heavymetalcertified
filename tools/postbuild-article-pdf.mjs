@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Postbuild: render each cert Article (content/articles/<slug>.md) to a clean
-// preprint-style PDF at public/articles/<slug>.pdf, and let Head.tsx point
+// Postbuild: render each citable Article and Standards Briefing to a clean
+// preprint-style PDF beside its HTML page, and let Head.tsx point
 // citation_pdf_url at it for Google Scholar. This is the Heavy Metal Certified
 // sibling of the Heavy Metal Index synthesis-PDF generator: SAME layout,
 // DIFFERENT entity posting (Heavy Metal Certified / Institute of Contaminant Standards (ICS),
@@ -16,8 +16,10 @@ import { readFileSync, readdirSync, createWriteStream, mkdirSync, existsSync } f
 import { join } from "node:path"
 
 const BASE = "https://heavymetalcertified.com"
-const SRC = "content/articles"
-const OUT = "public/articles"
+const JOBS = [
+  { src: "content/articles", out: "public/articles", path: "articles", label: "RESEARCH ANALYSIS" },
+  { src: "content/briefings", out: "public/briefings", path: "briefings", label: "STANDARDS BRIEFING" },
+]
 
 // Brand tokens — the cert-side rebrand of the Index generator.
 const RED = "#9f2727" // HMTc red (quartz.config secondary); the accent that must show
@@ -55,14 +57,14 @@ function stripInline(s) {
     .replace(/\\([\\`*_{}[\]()#+\-.!])/g, "$1")
 }
 
-function renderOne(file) {
+function renderOne(file, job) {
   const slug = file.replace(/\.md$/, "")
-  const { fm, body } = parse(readFileSync(join(SRC, file), "utf8"))
+  const { fm, body } = parse(readFileSync(join(job.src, file), "utf8"))
   const title = fm.title || slug
   const author = fm.author || "Karen Pendergrass"
   const orcid = fm.orcid || "0000-0002-2348-7259"
   const date = fm.date || fm.briefing_date || fm.updated || ""
-  const url = `${BASE}/articles/${slug}`
+  const url = `${BASE}/${job.path}/${slug}`
   const doi = fm.doi && fm.doi.toLowerCase() !== "null" ? fm.doi : null
 
   return new Promise((resolve, reject) => {
@@ -77,7 +79,7 @@ function renderOne(file) {
         Keywords: "heavy metals, food safety, contamination, certification",
       },
     })
-    const stream = createWriteStream(join(OUT, `${slug}.pdf`))
+    const stream = createWriteStream(join(job.out, `${slug}.pdf`))
     doc.pipe(stream)
     stream.on("finish", resolve)
     stream.on("error", reject)
@@ -88,7 +90,7 @@ function renderOne(file) {
       .font("Helvetica-Bold")
       .fontSize(8)
       .fillColor(RED)
-      .text(`${ENTITY.toUpperCase()}  ·  RESEARCH ANALYSIS`, { characterSpacing: 1.2 })
+      .text(`${ENTITY.toUpperCase()}  ·  ${job.label}`, { characterSpacing: 1.2 })
     doc.moveDown(0.35)
 
     doc.font("Helvetica-Bold").fontSize(17).fillColor(RED).text(title, { lineGap: 2 })
@@ -199,22 +201,24 @@ function renderOne(file) {
 }
 
 async function main() {
-  if (!existsSync(SRC)) {
-    console.log("article-pdf: no content/articles dir; skipping")
-    return
-  }
-  mkdirSync(OUT, { recursive: true })
-  const files = readdirSync(SRC).filter((f) => f.endsWith(".md") && f !== "index.md")
-  let n = 0
-  for (const f of files) {
-    try {
-      await renderOne(f)
-      n++
-    } catch (err) {
-      console.error(`article-pdf: failed on ${f}:`, err.message)
+  for (const job of JOBS) {
+    if (!existsSync(job.src)) {
+      console.log(`scholar-pdf: no ${job.src} dir; skipping`)
+      continue
     }
+    mkdirSync(job.out, { recursive: true })
+    const files = readdirSync(job.src).filter((f) => f.endsWith(".md") && f !== "index.md")
+    let n = 0
+    for (const f of files) {
+      try {
+        await renderOne(f, job)
+        n++
+      } catch (err) {
+        console.error(`scholar-pdf: failed on ${job.path}/${f}:`, err.message)
+      }
+    }
+    console.log(`scholar-pdf: rendered ${n}/${files.length} ${job.path} PDFs`)
   }
-  console.log(`article-pdf: rendered ${n}/${files.length} cert article PDFs`)
 }
 
 main()

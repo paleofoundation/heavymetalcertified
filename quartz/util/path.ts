@@ -212,6 +212,19 @@ export function joinSegments(...args: string[]): string {
   return joined
 }
 
+/** Build the final public URL for a Quartz slug.
+ *
+ * SimpleSlug permits trailing slashes, while Vercel redirects clean folder
+ * URLs to their slashless form. Canonicals and sitemaps must name the final
+ * 200 URL instead of the URL immediately before that redirect. The site root
+ * is the sole exception and always retains `/`.
+ */
+export function canonicalUrl(baseUrl: string, slug: string): string {
+  const base = stripSlashes(baseUrl)
+  const pathname = stripSlashes(slug)
+  return pathname ? `https://${base}/${pathname}` : `https://${base}/`
+}
+
 export function getAllSegmentPrefixes(tags: string): string[] {
   const segments = tags.split("/")
   const results: string[] = []

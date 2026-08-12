@@ -22,6 +22,7 @@ User-agent: *
 Allow: /
 
 Sitemap: ${SITE}/sitemap.xml
+Sitemap: ${SITE}/sitemap-scholarly.xml
 `
 
 fs.mkdirSync(PUBLIC, { recursive: true })
