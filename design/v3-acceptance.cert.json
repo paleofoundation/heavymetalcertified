@@ -110,6 +110,7 @@
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": "aside.snav", "prop": "position", "want": "sticky", "note": "the 'On this page' rail sticks below the top-bar." },
       { "sel": "aside.snav", "prop": "top", "want": "92px" },
+      { "sel": ".hmi-cite-page", "prop": "count", "want": 0, "note": "the Index-only citation/evidence-packet widget must stay absent from the certification site" },
       { "sel": "sup.hmtc-cite", "prop": "count", "want": 0, "src": "COMPONENTS §2", "note": "a reference page RECORDS law; it carries no inline citation superscripts (unlike a briefing/article). The citation-marker COLOUR canon (#9f2727, not link blue) is asserted on /articles, the surface that cites. If a sup.hmtc-cite appears here, a bracketed [N] leaked into transcribed provision text — investigate the register export, do not restyle." },
       { "sel": "sup.cite > a", "prop": "count", "want": 0 }
     ],

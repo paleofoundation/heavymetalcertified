@@ -209,7 +209,10 @@ header.hmi-topnav-shell::after {
   letter-spacing: -0.015em;
 }
 
-// Nav trigger row
+// Desktop nav trigger row. The component stylesheet already owns the accessible
+// burger + accordion treatment below 1200px; keeping desktop rules scoped here
+// prevents them from defeating that mobile behavior.
+@media (min-width: 1200px) {
 .hmtc-nav {
   display: flex;
   align-items: stretch;
@@ -246,6 +249,7 @@ header.hmi-topnav-shell::after {
 }
 // No chevron — the 2px underline is the whole affordance (v3).
 .hmtc-nav .hmi-nav-toggle { display: none; }
+}
 
 .hmtc-spacer { flex: 1 1 auto; min-width: 0; }
 
@@ -288,9 +292,12 @@ header.hmi-topnav-shell::after {
 }
 .hmtc-apply:hover { background: #7f1f1f !important; }
 
-.hmtc-burger { display: none; }
+@media (min-width: 1200px) {
+  .hmtc-burger { display: none; }
+}
 
 // Mega-menu panel — drop below the full-width header (v3 71–95)
+@media (min-width: 1200px) {
 .hmtc-nav .hmi-nav-panel {
   position: absolute;
   left: 0;
@@ -360,66 +367,32 @@ header.hmi-topnav-shell::after {
   background: none !important;
 }
 .hmtc-nav .hmi-nav-all:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+}
 
-@media (max-width: 1149px) {
+@media (max-width: 1199px) {
   .hmtc-search-label, .hmtc-search-kbd, .hmtc-login { display: none; }
   .hmtc-search { flex: 0 0 auto; width: 36px; justify-content: center; padding: 0; }
 
-  // Narrow bar: brand + actions on row 1, the nav becomes a single
-  // horizontally-scrolling strip on row 2 (v3's narrow pattern). No stacking,
-  // and the hover dropdowns are suppressed on touch.
+  // Keep the closed mobile header to one row. The shared TopNav component
+  // supplies the burger-controlled drawer and in-flow disclosure panels.
   header.hmi-topnav-shell::after { display: none; }
   .hmtc-bar {
-    height: auto;
+    height: 58px;
     min-height: 58px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     padding: 10px 20px;
-    gap: 10px 16px;
+    gap: 16px;
+    position: relative;
   }
   .hmtc-brand { flex: 1 1 auto; padding-right: 0; }
-  .hmtc-actions { order: 2; flex: 0 0 auto; }
+  .hmtc-actions { flex: 0 0 auto; }
   .hmtc-spacer { display: none; }
-  // Override the index topNav.scss burger block (@media not $desktop forces
-  // .hmi-nav-list to column); this design wraps the nav to as many rows as it
-  // needs, so every top-level item stays visible (no burger, no off-screen
-  // horizontal scroll that hid items past the fold once the bar held 8 panels).
-  .hmtc-nav {
-    order: 3;
-    flex: 1 1 100% !important;
-    min-width: 0;
-    overflow-x: visible;
-    border-top: 1px solid #f2ece7;
-    padding-top: 8px;
-    // This same <nav> also carries .hmi-topnav-menu, and topNav.scss's
-    // `@media not $desktop` block sets that class to position:absolute +
-    // display:none (its burger pattern). Unreset, it lifts the strip out of
-    // the bar's flex flow: it stops wrapping to row 2 and only the first item
-    // stays on-screen, the rest overflowing off the right edge with no burger
-    // to reach them. This design keeps the nav in flow as a scroll strip.
-    position: static !important;
-    display: flex !important;
-  }
-  .hmtc-nav .hmi-nav-list {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    overflow-x: visible;
-    gap: 4px 10px !important;
-  }
-  .hmtc-nav .hmi-nav-item {
-    display: flex !important;
-    flex: 0 0 auto !important;
-    grid-template-columns: none !important;
-    border: 0 !important;
-    // topNav.scss's mobile rules set width:100% on the item and its link (for a
-    // vertical burger drawer). Left unreset, each strip item stretches to the
-    // full viewport so only one shows at a time. Hug the label instead.
-    width: auto !important;
-  }
-  .hmtc-nav .hmi-nav-top { padding: 6px 12px !important; border-bottom: 2px solid transparent; width: auto !important; }
-  .hmtc-nav .hmi-nav-toggle { display: none !important; }
-  .hmtc-nav .hmi-nav-panel { display: none !important; }
+}
+
+@media (max-width: 520px) {
+  .hmtc-bar { padding: 8px 12px; gap: 8px; }
+  .hmtc-wordmark, .hmtc-search { display: none; }
 }
 
 // ============================================================

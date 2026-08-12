@@ -237,6 +237,10 @@ export default (() => {
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
+        {/* Vercel serves this one document for nested misses too. Without a
+            root base, the 404 header's relative links resolve under the missing
+            pathname (for example /missing/verify). */}
+        {fileData.slug === "404" && <base href="/" />}
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
             <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -557,7 +557,7 @@ async function fillDocument(data: ContentIndex) {
 }
 
 async function setupSearchForPage(currentSlug: FullSlug) {
-  const data = await fetchData
+  const data = await getContentIndex()
   const searchElement = document.getElementsByClassName("search")
   for (const element of searchElement) {
     await setupSearch(element, currentSlug, data)
