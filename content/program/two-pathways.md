@@ -1,6 +1,6 @@
 ---
-title: "Category Calibration Pathways"
-description: "Most HMTc limits use the strictest applicable government maximum. Where the program sets an occurrence-based value for a Tier-1 toxic or an unregulated cell, it uses a Lower-Burden Pathway near P97 or a Category Improvement Pathway near P45."
+title: "Government-Limit Method"
+description: "How HMTc sets each initial certification limit from a sovereign government maximum, handles product-form splits and read-across, and keeps external occurrence evidence outside pass/fail decisions."
 type: program
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 connections:
@@ -10,58 +10,36 @@ connections:
   - { label: "Heavy Metal Index", href: "https://heavymetalindex.com" }
 ---
 
-Most HMTc limits are not calibrated from market occurrence. The government-limit default applies first: the program uses the strictest maximum level set by a credible government regulator, converted to the product's native basis. Where the law splits a limit by formulation, the standard adopts that split and cites it.
+HMTc uses a government-limit-only initial-setting method. For each product-analyte cell, the program identifies the strictest applicable maximum level published by a credible sovereign government, expresses it in the product's native basis, and cites the controlling instrument. Certification status is calculated by MaxPoL against the current published HMTc limit. Nothing else selects the starting number or determines pass/fail; after publication, only the separate [Standards Ratchet](/program/ratchet) may lower it.
 
-The category calibration pathways apply only where HMTc sets an occurrence-based value itself: the four Tier-1 toxics when the market can beat the government maximum, and analyte-product cells for which no government maximum exists. For a Tier-1 toxic, the occurrence value is constrained by the applicable government maximum so that the published result is the stricter value.
+## The selection sequence
 
-## Lead with the intended market effect
+| Step | Rule | Required public record |
+|---|---|---|
+| 1. Define the cell | Fix the product form, intended consumer, analyte species, unit, and native basis. | Scope and basis statement. |
+| 2. Find applicable sovereign values | Review credible government instruments for the exact cell. | Named regulation and source. |
+| 3. Select the strictest applicable value | Use the lowest applicable government maximum after permitted basis treatment. | Numeric limit and regulatory rationale. |
+| 4. Preserve government formulation splits | If the government rule differs by product form or formulation, carry that split into the standard. | Split-specific citation and scope. |
+| 5. Resolve an unregulated exact cell | Use a disclosed read-across from the nearest applicable sovereign value, or mark the analyte n/m with a documented control method. | Read-across map or n/m rationale. |
 
-Where an occurrence-set cell is used, the program is trying to produce one of two outcomes.
+The 8:1 powder-to-liquid conversion is confined to infant formula. Other categories use the applicable government value in their native product basis without an invented conversion.
 
-| Pathway | Category condition | Occurrence calibration | Intended effect |
-|---|---|---|---|
-| Lower-Burden Category Pathway | Better-controlled product is already common and the highest-burden tail is the principal target | Near P97 for the relevant occurrence-set cell | Preserve commercial accessibility while excluding the adverse tail and leaving room for later tightening. |
-| Category Improvement Pathway | Contamination is structurally more prevalent because of commodity, soil, geography, formulation, or process | Near P45 for the relevant occurrence-set cell | Reward the cleaner portion of the present category, fail a meaningful majority, and create a practical reformulation or sourcing signal. |
+## Read-across is regulatory, not statistical
 
-The percentile is the calibration mechanism, not the health claim. The government-limit default, applicable toxicology, legal ceiling, analytical capability, product basis, and program ratchet remain separate controls.
+A read-across does not estimate a value from a market distribution. It maps an unregulated exact cell to the nearest relevant sovereign maximum using product form, matrix, intended consumer, exposure pathway, analyte species, and basis. The standards page must identify both the source cell and why the mapping is appropriate.
 
-## Why the Category Improvement Pathway is not a loophole
+If no defensible sovereign analogue exists and the analyte is not material in the matrix, HMTc publishes an n/m determination with the required screening, documentation, or reflex control. If neither conclusion is supportable, the cell remains in development and no firm certification value is published.
 
-A high percentile in a structurally higher-burden category can certify nearly the entire current market. That would ratify the status quo rather than change it.
+## What occurrence evidence does—and does not do
 
-A lower percentile is more selective in that setting. The Category Improvement Pathway is intended to distinguish the cleaner operators within a difficult category and create a commercial reason for suppliers, formulations, and processes to improve. It does not authorize a value above an applicable government maximum.
+Heavy Metal Index occurrence evidence may describe category burden, identify research gaps, inform surveillance, and help prioritize supplier or process investigation. It does not set or select the initial certification limit and never determines a product's status. An applicant's own results likewise cannot change its divisor. Eligible program-wide HMTc certified-lot results have one distinct role after publication: they feed the pre-published Standards Ratchet.
 
-The correct public framing is therefore not that the program lowers its standard for a difficult category. It is that the program uses a more selective occurrence position where a lenient position would allow most current product to qualify.
+The prior category-calibration pathways and their percentile-selected values are retired. They are not part of the current Program Manual and must not be used to explain a published standard.
 
-## The occurrence calculation remains selective
+## ALARA and change control
 
-The pathway label does not pin every analyte in a product row to one percentile. Under the current method:
+ALARA remains an operating obligation. It is implemented through ongoing surveillance, CAPA, supplier and process improvement, the measurable-improvement requirements attached to Status B, and the endogenous Standards Ratchet. ALARA does not select the initial government anchor; it can tighten a later edition only through the published ratchet rule.
 
-| Cell type | Governing basis |
-|---|---|
-| Tier-2 analyte with an applicable government maximum | Government limit directly |
-| Tier-1 toxic with an occurrence value below the strictest government maximum | Stricter occurrence value |
-| Tier-1 toxic where the government maximum is already stricter | Government maximum |
-| Cell with no government maximum and sufficient occurrence evidence | Applicable occurrence-set pathway |
-| Cell with no material exposure pathway under the method | Published not-material or process-screen determination under the governing rules |
-| Cell without sufficient evidence or completed governance | Held in development; no firm value published |
+The regulatory crosswalk is reviewed on a defined cycle and when a sovereign government publishes, revises, or withdraws a relevant maximum. Government-source changes and ratchet changes are both versioned, cited to their respective provenance, and transitioned under the [standard-stability rules](/standard-stability). A ratcheted HMTc limit may sit below its original sovereign anchor without waiting for a regulator to act.
 
-This is why a product row may contain regulatory-alignment, literature-baseline, precautionary, and feasibility-driven rationales at the same time.
-
-## Independent rows
-
-A product form with no defensible paired comparator defaults to the Lower-Burden Category Pathway for any occurrence-set cell unless the evidence and governance record support a different classification. The classification is a category-level decision, not a brand waiver and not a result chosen after seeing one applicant's data.
-
-## The evidence pool
-
-An occurrence percentile estimates a population, so the population must match the market in which certification will operate. The pool is the certification-relevant market, defined by regulatory equivalence and comparable oversight rather than geography alone.
-
-Documented geographic, seasonal, origin, and process variation belongs in the evidence record and distribution. It does not create an unpublished brand-specific threshold.
-
-## Publication and change control
-
-A firm occurrence-set value should publish only after the required evidence, analytical, product-definition, and governance gates are complete. The standard should identify the pathway, data, conversion, uncertainty, governing maximum, rationale, edition, and review date.
-
-Neither pathway is a permanent resting place. ALARA review and the program ratchet are intended to tighten a value as the category distribution and commercial feasibility improve. A later edition preserves a version record and gives certificate holders the transition published under the [standard-stability rules](/standard-stability).
-
-For the broader program explanation, see [Program structure](/program/structure). For the product-specific values and their evidence, see the [Standards register](/standards).
+For the broader program explanation, see [Program structure](/program/structure). For product-specific values and their sources, see the [Standards register](/standards).

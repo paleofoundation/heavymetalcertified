@@ -68,7 +68,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "Oat, millet, quinoa and barley do not hyperaccumulate inorganic arsenic; no government sets an iAs ML for any of these grains. Clean counterpart to the rice subcategories.",
+        "control": "No loaded government source sets an iAs ML for oat, millet, quinoa, or barley; rice-specific iAs limits are not transferred to these distinct matrices.",
         "reference_method": null
       },
       "tAs": {
@@ -220,15 +220,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 5000,
-        "value_exact": 5000,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "occurrence: plain oat/millet/quinoa/barley (UK FERA TDS 2.3-3.7 mg/kg; provisional)",
-        "basis_kind": "occurrence",
-        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible sovereign government sets an aluminium contaminant maximum for plain oat, millet, quinoa, or barley products. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this exact cell; natural background remains a surveillance signal.",
+        "reference_method": "Screen total Al by ICP-MS and document any aluminium-containing additive use; investigate elevated results and comply with all additive rules in markets of sale."
       }
     }
   },

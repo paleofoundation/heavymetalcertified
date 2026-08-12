@@ -1,7 +1,7 @@
 ---
 title: "Why Today's Fish Mercury Limits Are Calibrated to a Moving Baseline"
 description: "Climate warming is projected to raise methylmercury in marine fish 5 to 30 percent by 2100, so fixed regulatory mercury limits lose stringency over time."
-dek_html: "Ocean warming and deoxygenation are projected to lift <em>methylmercury</em> in pelagic fish over the coming decades, which means a limit frozen at today's occurrence quietly loses its bite as the baseline rises."
+dek_html: "Ocean warming and deoxygenation are projected to lift <em>methylmercury</em> in pelagic fish over the coming decades, increasing exceedance pressure and making continuous surveillance essential."
 type: article
 section: "Analysis"
 author: "Karen Pendergrass"
@@ -26,18 +26,18 @@ connections:
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Research analysis &middot; Heavy Metal Certified &middot; August 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Climate warming and ocean deoxygenation are projected to raise methylmercury in commercial marine fish by 5 to 30 percent by 2100 &mdash; so a mercury limit calibrated to today's occurrence loses stringency as the baseline shifts upward, and periodic recalibration matters more than any single number.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Climate warming and ocean deoxygenation are projected to raise methylmercury in commercial marine fish by 5 to 30 percent by 2100 &mdash; a surveillance warning for provenance and lot testing, not a replacement formula for sovereign-government limits.</p>
 </div>
 
 ## Abstract
 
-Yes — climate change is projected to increase methylmercury in commercially harvested marine fish. Three converging studies find that ocean warming and deoxygenation expand the low-oxygen zones where microbes methylate mercury, raising methylmercury in upper-trophic pelagic fish such as tuna and swordfish by roughly 5 to 30 percent by 2100 under high-emission scenarios. The mechanism is now traced to particle-phase methylation in the upper 400 metres of the water column, which responds to climate forcing on a shorter timescale than deep-ocean processes. The certification consequence is structural: present-day fish mercury limits — the FDA action level, the EFSA and EPA reference values — are calibrated against today's occurrence distribution, so a threshold frozen at one year quietly loses stringency as the baseline rises, and the lot-level exceedance rate climbs even with the same fishery and product. A standard for [mercury](/analytes/mercury) in fish should therefore be built to be recalibrated on a regular horizon, not set once. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/climate-fish-mehg-projections), the independent literature reference this analysis cites one way.
+Yes — climate change is projected to increase methylmercury in commercially harvested marine fish. Three converging studies find that ocean warming and deoxygenation expand the low-oxygen zones where microbes methylate mercury, raising methylmercury in upper-trophic pelagic fish such as tuna and swordfish by roughly 5 to 30 percent by 2100 under high-emission scenarios. The mechanism is now traced to particle-phase methylation in the upper 400 metres of the water column, which responds to climate forcing on a shorter timescale than deep-ocean processes. The certification consequence is operational: rising background concentrations may increase lot-level exceedances, so fish provenance, testing, and regulatory monitoring must remain active. The projection does not directly recalculate an HMTc limit; the published value changes when the strictest applicable sovereign maximum changes or when the separate certified-lot Standards Ratchet qualifies. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/climate-fish-mehg-projections), the independent literature reference this analysis cites one way.
 
 ## A Baseline That Moves
 
 The methylmercury concentration in upper-trophic marine fish is not a fixed quantity. Three converging publications — a global biogeochemical review, a coupled climate-ocean model, and a stable-isotope mechanistic study — establish that ocean warming, deoxygenation, and the expansion of oxygen-minimum zones are projected to raise methylmercury in commercially harvested pelagic fish by roughly 5 to 30 percent by 2100 under high-emission scenarios <sup class="cite"><a href="#ref-1">1</a></sup>. The review anchoring the frame projects that climate warming alone lifts fish methylmercury 10 to 30 percent against the present-day baseline, and sets the public-health scale of the problem at roughly $117 billion a year in global losses from mercury exposure, chiefly IQ loss and cardiovascular disease from dietary methylmercury <sup class="cite"><a href="#ref-1">1</a></sup>.
 
-The consequence for any threshold is structural rather than toxicological. The dose-response for methylmercury neurotoxicity has not changed; what changes is dietary exposure for a fixed consumption pattern. A limit set against today's occurrence distribution captures a larger fraction of lots as that distribution shifts upward, so a fishery, supplier, and product that pass in 2026 can drift toward and past the same threshold over the following decades without anything about the product itself changing.
+The consequence for any threshold is structural rather than toxicological. The dose-response for methylmercury neurotoxicity has not changed; what changes is dietary exposure for a fixed consumption pattern. As today's occurrence distribution shifts upward, a larger fraction of lots moves toward and past a fixed ceiling, so a fishery, supplier, and product that pass in 2026 can face more exceedances over the following decades without a new contamination event.
 
 ## The Coupled-Model Projection
 
@@ -66,11 +66,9 @@ None of these is wrong on its own toxicological terms. The point is that each wa
 
 ## What this means for certification
 
-The lesson for a certification standard is that a threshold is a maintenance commitment, not a one-time number. For fish mercury, the occurrence distribution the limit is calibrated against is projected to drift upward on a regulatory-relevant horizon, so a standard that certifies a lot as clean today has to be built to be re-examined as the baseline moves.
+The projection is a surveillance warning: a changing marine baseline may increase exceedances and should trigger closer review of fish provenance, sampling, and new sovereign action. External climate or occurrence projections do not directly recalculate an HMTc limit; a published value changes when the governing sovereign ceiling changes or when the certified-lot Standards Ratchet independently qualifies.
 
-The [Heavy Metal Certified](/analytes/mercury) default for any product and analyte is the strictest maximum level set by a credible government regulator, converted to the product's own basis. Because [methylmercury](/analytes/mercury) is one of the four Tier-1 toxics — with lead, cadmium, and inorganic arsenic — the program may set the stricter of that government limit and the cleaner end of the occurrence evidence, rather than adopting the government number by default. That discipline matters most for [predatory marine fish](/standards/fish-marine-predatory) such as tuna, swordfish, and marlin, the upper-trophic species where the projected increase concentrates; [non-predatory marine species](/standards/fish-marine-non-predatory) sit lower in the distribution and respond proportionally.
-
-The forward-looking part is the recalibration commitment. Because the baseline is shifting, the honest instrument re-examines fish-mercury limits on a regular horizon — the literature points to something on the order of five to fifteen years — and ratchets toward lower levels as cleaner sourcing becomes demonstrable, rather than freezing a single number and letting its effective stringency erode. The finding is not that fish are becoming unsafe; it is that the number certifying them is calibrated to a baseline that will not hold, so the standard has to be designed to move with it.
+Initial HMTc limits follow the same rule for every analyte: the strictest applicable credible sovereign-government maximum in the product's native basis. If the exact cell is unregulated, HMTc must disclose a sovereign read-across or an n/m control; external HMI occurrence evidence never supplies the number or determines certification status. Any later tightening follows the [Standards Ratchet](/program/ratchet) using eligible HMTc certified-lot data.
 
 ## Frequently asked questions
 
@@ -84,7 +82,7 @@ A coupled climate-ocean model projects a 5 to 20 percent increase in methylmercu
 
 ### Why does a fixed fish mercury limit lose stringency over time?
 
-A limit is calibrated against the mercury occurrence distribution of its era. If that distribution shifts upward, as the projections indicate, a threshold frozen at one calibration year captures a larger fraction of lots over time. The same fishery, supplier, and product can drift toward and past the limit without anything about the product changing, so the limit's effective stringency erodes as the baseline rises.
+A fixed numeric ceiling does not become looser mathematically, but a rising fish methylmercury distribution moves more lots toward and over it. For HMTc that is a surveillance and sourcing warning; the compliance value changes only through an updated sovereign maximum or the separate certified-lot Standards Ratchet.
 
 ### Which fish are most affected by rising methylmercury?
 

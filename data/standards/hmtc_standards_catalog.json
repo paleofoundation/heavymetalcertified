@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-06-20T15:16:38.987Z",
   "generated_commit": "76732e87e627e02659deb75a00c8cad2dedbde0a",
-  "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+  "methodology_version": "HMTc Method v2.0 — government-limit-only; sovereign maximums, disclosed read-across, or n/m",
   "standard_version": "2.2 (2026-06-09)",
   "panel": [
     "Pb",
@@ -16,8 +16,8 @@
     "Sn",
     "Al"
   ],
-  "firewall": "workbench-side; feeds the heavymetalcertified.com certification site only; never rendered on or imported into heavymetalindex.com. Contains percentile-derived values and clean/dirty designations forbidden under wiki/ per CLAUDE.md Part 2 / Part 19.",
-  "gating_note": "A subcategory analyte cell emits a firm published_limit_ppb ONLY when all 5 shipping gates pass AND classifyCell returns confidence 'firm'. Any gate failure or provisional/pending classification emits status 'in_development' with no firm value.",
+  "firewall": "Certification-plane catalog. Initial values are government-limit-only: the strictest applicable credible sovereign maximum in native basis, disclosed sovereign read-across, or an n/m control. External HMI occurrence evidence is contextual only and never selects a value or status. Later tightening may occur only under the certified-lot Standards Ratchet.",
+  "gating_note": "A subcategory-analyte cell emits a firm published_limit_ppb only after the applicable sovereign source, native basis, species, product-form fit, and any read-across or n/m control are documented and approved. External occurrence completeness is not a publication gate.",
   "completeness_ledger": {
     "3": {
       "category": 3,
@@ -1010,7 +1010,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "Ni": {
@@ -1448,7 +1448,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "Cd": {
@@ -2187,7 +2187,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "iAs": {
@@ -2232,7 +2232,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tHg": {
@@ -2487,7 +2487,7 @@
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
             "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tHg": {
@@ -2741,7 +2741,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook ACTIVE",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tHg": {
@@ -2996,7 +2996,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook ACTIVE",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tHg": {
@@ -3185,7 +3185,7 @@
           "held_reasons": [
             "gate1:across_row_review_hook ACTIVE",
             "gate3:outlier-adjudication-pending",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tAs": {
@@ -3208,7 +3208,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook ACTIVE",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "iAs": {
@@ -3461,7 +3461,7 @@
           },
           "held_reasons": [
             "gate1:whole_row_platform RESOLVED hook does not name tAs and cell is not cap-bound",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "iAs": {
@@ -3759,7 +3759,7 @@
           },
           "held_reasons": [
             "gate1:across_row_review_hook unresolved (no RESOLVED marker)",
-            "gate3:classify-provisional (literature-baseline)"
+            "gate3:government-source-or-read-across-pending"
           ]
         },
         "tHg": {

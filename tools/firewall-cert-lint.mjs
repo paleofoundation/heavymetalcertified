@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // firewall-cert-lint.mjs — the cert-side firewall (the INVERSE of the index lint).
 //
-// The cert site is ALLOWED to publish thresholds, clean/dirty pathways, and
-// percentile methodology — that is its job. The firewall risks on this side are
+// The cert site is ALLOWED to publish HMTc limits, sovereign-source crosswalks,
+// regulatory read-across, and status methodology — that is its job. The firewall risks on this side are
 // different, and build-blocking:
 //
 //   1. NO CORPUS. The cert site must never re-host the literature index's

@@ -39,9 +39,10 @@ read in full; the rest swept for the high-risk staleness vectors (methodology
 framework language, percentile framing, category/metal/analyte counts, banned
 superlatives, non-profit misstatements, entity naming).
 
-**Clean bill — current and internally consistent:**
-- Methodology matches Method v2.0 (government-limit default; Tier-1 "stricter-of"
-  occurrence; P97/P45). No stale P90/P10/80th-percentile/"30 percent" framing anywhere.
+**Superseded finding (June 2026):**
+- The selective-occurrence description recorded here was retired by the August 2026
+  Program Manual. The current method is government-limit-only; occurrence evidence is
+  contextual and never selects a certification value.
 - 8 metals / 10 analytes; Tier 1 = Pb, Cd, iAs, MeHg; Tier 2 = Ni, Sn, Al, Cr-VI;
   statuses A–E; 150% Tier-2 allowance — all correct and consistent across briefings.
 - No banned superlatives ("first and only", etc.). The only "nonprofit" strings refer

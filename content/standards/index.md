@@ -2,10 +2,10 @@
 title: "HMTc Standards"
 type: standards-index
 audience: [regulator, brand-legal, retailer-compliance, certifier]
-description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."
+description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. Initial values come from the strictest applicable sovereign government maximum or a disclosed regulatory read-across; later tightening follows the Standards Ratchet; occurrence evidence is context only."
 snapshot:
   - { k: "Subcategory standards", v: "44" }
-  - { k: "Firm analyte limits", v: "1" }
+  - { k: "Firm analyte limits", v: "299" }
   - { k: "Analytes per row", v: "10" }
   - { k: "Published manuals", v: "1" }
 connections:
@@ -36,7 +36,7 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Subcategory standards</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">44 standard rows across 10 categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">1 firm analyte limit across 1 subcategory so far</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">299 firm analyte limits across 37 subcategories so far</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
   </div>
   <div style="margin-bottom:26px">

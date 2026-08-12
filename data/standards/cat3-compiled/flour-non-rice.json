@@ -73,7 +73,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "Inorganic arsenic does not hyperaccumulate in wheat, corn, or other non-rice cereals as it does in rice; no government sets an iAs ML for any non-rice grain or flour in any jurisdiction. This subcategory is the clean counterpart to the rice-based flour/pasta subcategories, where iAs is the binding Tier-1 analyte.",
+        "control": "Inorganic arsenic does not hyperaccumulate in wheat, corn, or other non-rice cereals as it does in rice; no loaded government source sets an iAs ML for a non-rice grain or flour. Rice-specific iAs limits are not transferred to this distinct matrix.",
         "reference_method": "iAs by HPLC-ICP-MS (EN 16802) on any lot flagged for arsenic screening; non-rice grain occurrence is characteristically < LOQ."
       },
       "tAs": {

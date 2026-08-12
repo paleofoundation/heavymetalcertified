@@ -19,7 +19,8 @@
 // are authored, reconciled cert-plane content (data/manuals/cat1-manual/*.md) whose
 // governance/lot-testing values are checked by tools/audit-cat1-manual-consistency.mjs
 // against the /program pages and the governance source. FIREWALL: government-limit
-// only — no percentile-selection arithmetic anywhere (audited).
+// only — no retired P97/P45 initial-setting arithmetic; the separate P80
+// Standards Ratchet remains required (audited).
 //
 // LOCAL-ONLY, COMMITTED ARTIFACT. Like build-briefing-pdf.mjs, this needs
 // @react-pdf/renderer (present in node_modules, deliberately NOT in package.json so
@@ -338,7 +339,7 @@ function Cover() {
     h(View, { key: "r", style: s.ruleBurgundy }),
     h(Text, { key: "t", style: s.coverTitle }, "Infant and Child Foods"),
     h(Text, { key: "sub", style: s.coverSub }, "Category 1 · Ages 0–5 · 2026 Edition"),
-    h(Text, { key: "meth", style: s.coverMethod }, "Government-limit default — Method v2.0"),
+    h(Text, { key: "meth", style: s.coverMethod }, "Government-limit-only — Method v2.0"),
     h(View, { key: "auth", style: s.coverBlock }, [
       h(Text, { key: "l", style: s.label }, "Author & publisher"),
       h(Text, { key: "t", style: s.coverText }, "Karen Pendergrass · ORCID 0000-0002-2348-7259\nInstitute of Contaminant Standards (ICS) · Heavy Metal Tested & Certified"),

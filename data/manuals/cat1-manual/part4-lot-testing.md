@@ -9,7 +9,7 @@ Two independent axes govern every testing decision:
 1. Certification status — the SKU's current standing (A, B, C, D, E), assigned from measured performance.
 2. Product risk tier — the exposure weight of the food category itself (High, Moderate, Lower), independent of any measured result.
 
-Status is determined exclusively by MaxPoL — the highest Percent-of-Limit among all analytes, where PoL = (Result ÷ Applicable Limit) × 100%. MaxPoL is government-limit-relative in every instance; applicable limits are set under the HMTc Standards methodology on the government-limit default (Method v2.0). The contextual literature evidence base that informs Standards development is published and maintained independently by the Institute of Contaminant Standards at heavymetalindex.com; this manual references it outbound only, does not re-host, mirror, or reproduce it, and asserts no cross-domain canonical relationship. It sets no limit and determines no status.
+Status is determined exclusively by MaxPoL — the highest Percent-of-Limit among all analytes, where PoL = (Result ÷ Current Published HMTc Limit) × 100%. Initial limits are set under the government-limit-only Method v2.0; a later edition may be lower after the Standards Ratchet in Section 2.10 fires. The contextual literature evidence base is published and maintained independently by the Institute of Contaminant Standards at heavymetalindex.com; this manual references it outbound only, does not re-host, mirror, or reproduce it, and asserts no cross-domain canonical relationship. It sets no initial limit and determines no status.
 
 ## 4.1 Product Risk Tiers
 

@@ -41,7 +41,7 @@ These counts describe the audited build and are verification evidence, not publi
 1. The certification site contained a citation component that named `HeavyMetalIndex.com`, asserted Index licensing, and linked to nonexistent Index routes. It now emits certification-native citations and real certification-site links.
 2. Directory, verification, and portal pages looked more operational than their data supported. They now show an honest zero-product/inactive/specimen state.
 3. Public copy mixed product certification with brand-wide certification. Product scope is now explicit and linted.
-4. Public pages exposed internal clean/dirty calibration vocabulary. User-facing terminology is now Lower-Burden and Category Improvement, with machine vocabulary retained only internally.
+4. Public pages exposed the retired clean/dirty calibration vocabulary. Those certification roles and their replacement marketing labels are removed; occurrence comparisons remain descriptive, and neither public nor machine-readable evidence assigns a percentile-based certification role.
 5. Standards-register totals omitted custom rows while displaying them. The displayed count is now generated from the complete register.
 6. The mark page lacked a usable control system and implied downloadable assets. It now functions as a claims and reproduction guide without releasing production art.
 7. Generated table headers carried divergent inline styles across the site. Generation now canonicalizes them so the design system has one source of truth.

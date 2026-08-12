@@ -20,6 +20,7 @@ const footerSections = [
     title: "Methodology",
     links: [
       ["How limits are derived", "/program/structure"],
+      ["The standards ratchet", "/program/ratchet"],
       ["Standard stability", "/standard-stability"],
       ["Confidential Remediation Track", "/program/remediation"],
       ["What happens to your data", "/what-happens-to-your-data"],
@@ -56,8 +57,8 @@ export default (() => {
               Heavy Metal Certified
             </a>
             <p>
-              Published heavy-metal standards, set per subcategory in each product's native basis,
-              and derived from a pooled distribution of the peer-reviewed and agency literature.
+              Published heavy-metal standards, set per subcategory from the strictest applicable
+              sovereign government maximum in each product's native basis.
             </p>
           </section>
           <nav class="site-footer-nav" aria-label="Footer">

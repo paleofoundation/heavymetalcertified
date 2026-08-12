@@ -68,7 +68,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "Corn/wheat/oat breakfast cereals do not hyperaccumulate arsenic; no non-rice grain iAs ML exists. Clean counterpart to rice-based breakfast cereal (row 6).",
+        "control": "No loaded government source sets an iAs ML for corn-, wheat-, or oat-based breakfast cereal; the rice-based cereal rule is matrix-specific and is not transferred to this row.",
         "reference_method": null
       },
       "tAs": {

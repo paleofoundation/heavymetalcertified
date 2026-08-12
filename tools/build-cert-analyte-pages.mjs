@@ -10,7 +10,7 @@
 // Firewall (CLAUDE.md Part 2): these are INDEPENDENT REFERENCE pages, not HMTc
 // marketing. The cert site APPLIES the science; heavymetalindex.com REPORTS the
 // literature. So: neutral reference register, one-way link out to the Index metal
-// page for the deep literature baseline, and NO scholar_eligible (they are not
+// page for the deep literature context, and NO scholar_eligible (they are not
 // citable technical-report standards — emitting citation_* would overclaim).
 //
 // Content is assembled + adversarially verified + self-repaired by the
@@ -164,14 +164,14 @@ function pageBody(a) {
 
   const hmtc = `<section id="hmtc" style="margin-bottom:52px">${H2("How the HMTc program treats it")}${PROSE(linkify(a.hmtc_treatment))}</section>`
 
-  const baseline = `<section id="baseline" style="margin-bottom:20px">${H2("Literature baseline")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0">The complete peer-reviewed and regulatory literature for ${esc(a.name.toLowerCase())} is maintained independently at the <a href="${idxUrl}" style="color:${LINK}">Heavy Metal Index</a>. That reference reports what the literature says; this certification site applies it. The two are kept editorially separate by design.</p></section>`
+  const baseline = `<section id="baseline" style="margin-bottom:20px">${H2("Literature context")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0">The complete peer-reviewed and regulatory literature for ${esc(a.name.toLowerCase())} is maintained independently at the <a href="${idxUrl}" style="color:${LINK}">Heavy Metal Index</a>. That reference reports what the literature says and provides category context; it does not set an HMTc limit or status. The two properties are kept editorially separate by design.</p></section>`
 
   const occ = occurrenceSection(a)
   return [header, why, tox, occ, reg, hmtc, baseline].filter(Boolean).join("\n")
 }
 
 function frontmatter(a) {
-  const desc = `Why ${a.name} (${a.sym}) is limited in infant and child foods: the government and expert-body assessments behind the maximum levels, the toxicological basis, and how the Heavy Metal Tested & Certified program treats the analyte. Reference page; the literature baseline is maintained independently at the Heavy Metal Index.`
+  const desc = `Why ${a.name} (${a.sym}) is limited in infant and child foods: the government and expert-body assessments behind the maximum levels, the toxicological basis, and how the Heavy Metal Tested & Certified program treats the analyte. Reference page; literature context is maintained independently at the Heavy Metal Index.`
   return [
     "---",
     `title: "${a.name} (${a.sym}) — HMTc analyte"`,

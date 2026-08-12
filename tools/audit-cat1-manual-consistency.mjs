@@ -11,7 +11,8 @@
 //      in their reconciled form (status bands, CAPA windows, tiers, baseline, triggers).
 //   B. FORBIDDEN variants absent — no superseded value, wrong governing body, retired
 //      remediation mechanism, or stale count anywhere in the manual content.
-//   C. FIREWALL — no percentile-selection arithmetic (government-limit only).
+//   C. FIREWALL — no retired P97/P45 initial-setting arithmetic. P80 is required
+//      in the separate post-publication Standards Ratchet.
 //   D. CROSS-PART agreement — the values that appear in more than one Part agree.
 //   E. CROSS-SOURCE — the live /program pages agree with the manual on the same facts
 //      (no "fifteen subcategories", no Status-D "fresh baseline" error).
@@ -55,12 +56,17 @@ const GOLD = [
   ["part2-program.md", "50% reflex speciation trigger", /50%/],
   ["part2-program.md", "80% PoL Tier-1 warning", /80%/],
   ["part2-program.md", "Status D reinstatement — no fresh baseline", /does not require a fresh baseline/],
+  ["part2-program.md", "ratchet uses combined Status A + Status B trigger pool", /combined Status A \+ Status B trigger pool/],
+  ["part2-program.md", "ratchet P80 trigger at 80% for two reviews", /P80[\s\S]{0,160}80%[\s\S]{0,160}two consecutive annual reviews|two consecutive annual reviews[\s\S]{0,400}P80[\s\S]{0,120}80%/i],
+  ["part2-program.md", "ratchet breadth trigger at 50% of SKUs and 60% of limit", /50% of SKUs[\s\S]{0,120}60%/i],
+  ["part2-program.md", "ratchet 20% maximum reduction", /may lower a limit by more than 20%|20% reduction per event/i],
+  ["part2-program.md", "ratchet transition 12–18 months", /transition[\s\S]{0,60}12-18 months/i],
   ["part2-program.md", "Confidential Remediation Track — mark-gated", /Mark[\s\S]{0,120}(not be used|shall not be used)[\s\S]{0,120}Status A or B/i],
   ["part4-lot-testing.md", "nine subcategories", /nine subcategor/i],
   ["part4-lot-testing.md", "frequency matrix present", /Testing-Frequency Matrix|Certification Status/i],
   ["part4-lot-testing.md", "C-Low brand's own sampling", /Low[\s\S]{0,120}own accredited/i],
   ["part4-lot-testing.md", "C-High third-party sampling", /High[\s\S]{0,120}third-party sampling/i],
-  ["part5-backmatter.md", "government-limit default method", /government-limit default/i],
+  ["part5-backmatter.md", "government-limit-only method", /government-limit-only/i],
   ["part5-backmatter.md", "glossary MaxPoL", /MaxPoL/],
   ["part1-why.md", "limits do not derive from the Index", /Limits do not derive from the Heavy Metal Index|traces to a named sovereign/i],
 ]
@@ -71,7 +77,7 @@ ok(`A. golden values: ${GOLD.length} required governance/lot-testing facts check
 
 // ── B/C. forbidden variants + firewall (absent in ALL content) ───────────────
 const FORBIDDEN = [
-  ["FIREWALL percentile-selection", /percentile|\bP97\b|\bP45\b|\bpooled\b|\bP\d{2}\b/i],
+  ["FIREWALL retired P97/P45 initial setting", /\bP97\b|\bP45\b|clean-subcategory percentile|dirty-subcategory percentile|pooled occurrence (?:limit|threshold|selection)/i],
   ["FIREWALL pass-rate arithmetic", /\b9[04]\/[34]0\b|\b94%\b.*\b42%\b/],
   ["stale 'fifteen subcategories'", /fifteen subcategor/i],
   ["miscounted 'ten-analyte' panel", /ten-analyte|eleven analyte|eleventh/i],
@@ -91,7 +97,7 @@ for (const m of all.matchAll(/fresh baseline/gi)) {
   const ctx = all.slice(Math.max(0, m.index - 22), m.index)
   if (!/does not require a /i.test(ctx)) fail.push(`FORBIDDEN: bare "fresh baseline" (must be "does not require a fresh baseline")`)
 }
-ok(`B/C. forbidden variants + firewall: ${FORBIDDEN.length} patterns clean; government-limit only`)
+ok(`B/C. forbidden variants + firewall: ${FORBIDDEN.length} patterns clean; government-only initial setting and P80 ratchet remain distinct`)
 
 // ── D. cross-part agreement (a fact stated in >1 Part must match) ────────────
 // Band correctness (the 151-175 / 176-200 integers) is enforced by the forbidden

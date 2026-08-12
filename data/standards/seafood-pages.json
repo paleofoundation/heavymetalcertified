@@ -10,7 +10,7 @@
     "tier_footnote": "Mercury is limited in both forms: total mercury (tHg) and methylmercury (MeHg) are separate ceilings that must both be met. Total arsenic (tAs) operates as a reflex screen to inorganic-arsenic (iAs) speciation, since most arsenic in seafood is non-toxic organic arsenobetaine. Tin (Sn) is material only for canned product, where it migrates from the can; for non-canned seafood it is controlled by screen, not limited.",
     "reconstitution_note": false,
     "compiled_dir": "seafood-compiled",
-    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "methodology_version": "Method v2.0 — government-limit-only (CLAUDE.md Part 19, Governing Principles v2.0)",
     "effective_date": "2026-08-07",
     "default_version": "1.0 (2026-08-07)",
     "reg_overrides": {
@@ -31,7 +31,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Non-predatory fish standard", "href": "/standards/fish-marine-non-predatory" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-marine-predatory" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/fish-marine-predatory" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "fish-marine-predatory" }]
     },
@@ -46,7 +46,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-marine-non-predatory" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/fish-marine-non-predatory" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "fish-marine-non-predatory" }]
     },
@@ -61,7 +61,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Marine non-predatory fish standard", "href": "/standards/fish-marine-non-predatory" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/fish-freshwater" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/fish-freshwater" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "fish-freshwater" }]
     },
@@ -76,7 +76,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Cephalopods standard", "href": "/standards/cephalopods" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/shellfish" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/shellfish" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "shellfish" }]
     },
@@ -91,7 +91,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Shellfish standard", "href": "/standards/shellfish" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/cephalopods" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/cephalopods" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "cephalopods" }]
     },
@@ -105,7 +105,7 @@
         { "label": "How limits are derived", "href": "/program/structure" },
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/seaweed-kelp-foods" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/seaweed-kelp-foods" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "seaweed-kelp-foods" }]
     },
@@ -120,7 +120,7 @@
         { "label": "Regulation references (source documents)", "href": "/regulations" },
         { "label": "Program Manual — Seafood", "href": "/manuals/seafood" },
         { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
-        { "label": "Heavy Metal Index — literature baseline", "href": "https://heavymetalindex.com/products/canned-seafood" }
+        { "label": "Heavy Metal Index — descriptive occurrence evidence", "href": "https://heavymetalindex.com/products/canned-seafood" }
       ],
       "variants": [{ "label": "all", "variant": "all", "record": "canned-seafood" }]
     }

@@ -74,13 +74,9 @@ One narrow trimming exception is worth naming precisely so it is not overstated:
 
 ## What this means for certification
 
-The finding collapses into a single operational rule: the methylmercury measured on the raw product is the methylmercury a consumer eats. Nothing between the loading dock and the dinner plate lowers it. That has two consequences for how a heavy-metal certification treats fish and seafood.
+Because cooking does not remove methylmercury, HMTc does not credit a lot with an unsupported preparation reduction. The applicable sovereign fish category and basis control the value, while species and processing occurrence evidence informs category characterization, sourcing, and surveillance.
 
-First, verification must be performed on the product as sold. Because no processing step reduces methylmercury, there is no cooked or canned "as-consumed" allowance to net against a raw measurement — the number on the [mercury](/analytes/mercury) test report is the number that reaches the household. A standard cannot credit a brand for cooking, smoking, or canning, and it should benchmark predatory species and canned products against their own occurrence distributions rather than a pooled seafood average that hides the high-mercury tail. This is why the predatory-fish and canned-seafood categories each carry their own subcategory standard.
-
-Second, consumer messaging must never imply that cooking lowers the risk. A certification mark that reassures a household about a tuna-heavy diet because the fish is well cooked would endorse a documented misconception and leave the real exposure pathway unaddressed. The honest message is that species selection at sourcing, not preparation, is the lever.
-
-On the number itself: the default limit for any product and analyte is the strictest maximum level set by a credible government regulator, converted to the product's own basis. Because methylmercury is one of the four Tier-1 toxics the program treats most strictly — alongside lead, cadmium, and inorganic arsenic — the ceiling for [predatory fish](/standards/fish-marine-predatory) and [canned seafood](/standards/canned-seafood) is set to the stricter of that government maximum and the cleaner end of the methylmercury occurrence evidence, measured on the product as it is sold.
+Initial HMTc limits follow the same rule for every analyte: the strictest applicable credible sovereign-government maximum in the product's native basis. If the exact cell is unregulated, HMTc must disclose a sovereign read-across or an n/m control; external HMI occurrence evidence never supplies the number or determines certification status. Any later tightening follows the [Standards Ratchet](/program/ratchet) using eligible HMTc certified-lot data.
 
 ## Frequently asked questions
 

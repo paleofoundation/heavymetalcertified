@@ -24,7 +24,7 @@ const orgGraph = {
   alternateName: "HMTc",
   url: CERT_BASE,
   description:
-    "The certification program and published standards for heavy metals in food and the supply chain. Standards are set against the complete literature and published per subcategory.",
+    "The certification program and published standards for heavy metals in food and the supply chain. Initial limits compile the strictest applicable credible sovereign-government maximum per product and analyte; later tightening follows the certified-lot Standards Ratchet.",
   // the reverse edge: this program is governed by the parent standards body.
   parentOrganization: {
     "@type": "Organization",

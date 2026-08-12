@@ -12,8 +12,8 @@
 //   C. The rendered PDF's own text contains every master-matrix value and every
 //      derivation HMTc value, and contains no "NaN" (proves the render emitted the
 //      data, not a layout artifact). Skipped with a notice if pdftotext is absent.
-//   D. Firewall: neither the lib output nor the PDF text carries percentile-selection
-//      arithmetic (P97/P45/pooled/percentile) — the manual is government-limit only.
+//   D. Firewall: neither the lib output nor the PDF text carries retired P97/P45
+//      initial-setting arithmetic. P80 is required in the post-publication ratchet.
 //
 // The PDF is rendered directly from the same lib (masterMatrix/allDerivations), so
 // A+B prove the PDF's source equals the web edition and C proves the render is faithful.
@@ -145,14 +145,14 @@ if (pdfText) {
   note(`C. PDF text check skipped (pdftotext not available) — parity proven structurally by A+B`)
 }
 
-// ── D. firewall: government-limit only, no percentile-selection arithmetic ────
-const FORBIDDEN = [/percentile/i, /\bP\d{2}\b/, /\bpooled\b/i, /P97|P45/]
+// ── D. firewall: government-only initial setting; no retired P97/P45 math ─────
+const FORBIDDEN = [/\bP97\b/i, /\bP45\b/i, /clean-subcategory percentile/i, /dirty-subcategory percentile/i, /pooled occurrence (?:limit|threshold|selection)/i]
 const libDump = JSON.stringify(masterMatrix()) + JSON.stringify(ROWS.map((r) => pageDerivation(r.slug)))
 for (const rx of FORBIDDEN) {
   if (rx.test(libDump)) fail.push(`FIREWALL: lib output matches forbidden ${rx} (manual must be government-limit only)`)
   if (pdfText && rx.test(pdfText)) fail.push(`FIREWALL: PDF text matches forbidden ${rx} (manual must be government-limit only)`)
 }
-note(`D. firewall: no percentile-selection arithmetic in the manual`)
+note(`D. firewall: no retired P97/P45 initial-setting arithmetic in the manual; P80 ratchet permitted`)
 
 // ── verdict ──────────────────────────────────────────────────────────────────
 if (fail.length) {

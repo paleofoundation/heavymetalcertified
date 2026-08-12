@@ -68,7 +68,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "Wheat pasta does not hyperaccumulate arsenic; no non-rice grain iAs ML exists. Clean counterpart to rice-based pasta (row 4), where iAs binds.",
+        "control": "No loaded government source sets an iAs ML for wheat pasta; the rice-based pasta rule is matrix-specific and is not transferred to this row.",
         "reference_method": null
       },
       "tAs": {
@@ -225,15 +225,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1500,
-        "value_exact": 1500,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "occurrence: plain pasta, no Al-additive pathway (UK FERA TDS ~1040 ppb; provisional)",
-        "basis_kind": "occurrence",
-        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible sovereign government sets an aluminium contaminant maximum for plain wheat pasta. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this exact cell; naturally present or additive-derived Al remains a surveillance and formulation-control issue.",
+        "reference_method": "Screen total Al by ICP-MS and document any aluminium-containing additive use; investigate elevated results and comply with all additive rules in markets of sale."
       }
     }
   },

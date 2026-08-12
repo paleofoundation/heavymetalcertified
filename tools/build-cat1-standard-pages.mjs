@@ -73,7 +73,7 @@ function masterTable(variants, basisWord) {
 }
 
 // --- Derivation (per-country) table -------------------------------------------
-function derivationTable(primary, basisWord, subName, otherNote) {
+function derivationTable(primary, basisWord, subName, otherNote, reconstitutes) {
   // Which jurisdiction columns to show: canonical order, only those that appear in any cell.
   const present = new Set()
   for (const a of PANEL) { const c = primary.cells[a]; if (c.per_country) Object.keys(c.per_country).forEach((j) => present.add(j)) }
@@ -84,7 +84,7 @@ function derivationTable(primary, basisWord, subName, otherNote) {
     const tds = cols.map((j) => {
       const pc = c.per_country && c.per_country[j]
       if (!pc) return `<td style="padding:9px 10px;text-align:right;color:#d8cfca">&mdash;</td>`
-      const conv = pc.converted ? "&sup1;" : ""
+      const conv = reconstitutes && pc.converted ? "&sup1;" : ""
       const strict = c.type === "gov" && c.binding_jurisdiction === j
       const color = strict ? `${ACCENT};font-weight:400` : "#736b6b"
       return `<td style="padding:9px 10px;text-align:right;font-family:'IBM Plex Mono',monospace;color:${color}">${pc.value}${conv}</td>`
@@ -95,13 +95,14 @@ function derivationTable(primary, basisWord, subName, otherNote) {
     else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${JUR_LABEL[c.binding_jurisdiction] || c.binding_jurisdiction}</a>` : (JUR_LABEL[c.binding_jurisdiction] || c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a].label}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. &sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). &sup2; read-across: no government sets this analyte for this exact product; the value is read across from the nearest government value for an analogous product. &sup3; not material in this matrix: controlled by reflex speciation, not a standalone number. ${otherNote || ""}`
+  const conversionNote = reconstitutes ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio within infant formula only. " : ""
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${conversionNote}&sup2; read-across: no government sets this analyte for this exact product; the value is read across from the nearest government value for an analogous product. &sup3; not material in this matrix: controlled by reflex speciation, not a standalone number. ${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
 function methodSection(subName, basisWord, pdfHref, version) {
   const dl = pdfHref ? `<div style="margin:4px 0 0"><a href="${pdfHref}" style="display:inline-block;background:${ACCENT};color:#fff;font-family:&#39;IBM Plex Mono&#39;,monospace;font-size:12px;letter-spacing:.04em;text-decoration:none;padding:11px 18px;border-radius:4px">&#8595; Download this standard (PDF, v${version})</a> <span style="font-size:11.5px;color:#a9a1a1">Versioned, citable, self-contained.</span></div>` : ""
-  return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; the European Union, the United Kingdom, Codex Alimentarius, Health Canada, China, India, Brazil, the Gulf states (GSO), Australia/New Zealand, and the US FDA &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p>${dl}</section>`
+  return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The initial standard for each analyte is the strictest applicable maximum level set by a credible sovereign government &mdash; the European Union, the United Kingdom, Codex Alimentarius member governments, Health Canada, China, India, Brazil, the Gulf states (GSO), Australia/New Zealand, and the US FDA &mdash; expressed in ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, with the 8:1 conversion confined to infant formula and an explicit read-across where no government regulates the exact product. A certified product must also comply with every law in its markets of sale.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where no government regulates the exact product-analyte cell, a firm starting value requires disclosed read-across from the nearest applicable sovereign value or an n/m determination with its control method. Heavy Metal Index occurrence evidence does not select the initial value. After publication, the <a href="/program/ratchet" style="color:${LINK};text-decoration:none">ALARA Standards Ratchet</a> may lower it from the sovereign anchor when eligible HMTc certified-lot results meet the published two-cycle trigger.</p>${dl}</section>`
 }
 
 function citeSection(subName, version, hmiLink, doi) {
@@ -116,7 +117,7 @@ function citeSection(subName, version, hmiLink, doi) {
   const doiText = doi
     ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>`
     : "DOI: registration pending."
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">Contextual literature for every analyte is maintained independently at the ${hmi}. It informs category understanding and surveillance priorities but does not set an HMTc limit or status.</p></section>`
 }
 
 // --- drive --------------------------------------------------------------------
@@ -153,7 +154,7 @@ for (const page of PAGES.pages) {
     "firm_analytes: 8",
     `native_basis: ${variants[0].native_basis}`,
     `standard_version: "${version}"`,
-    'methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"',
+    'methodology_version: "Method v2.0 — government-limit-only (CLAUDE.md Part 19, Governing Principles v2.0)"',
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
     "effective_date: 2026-08-06",
@@ -184,7 +185,7 @@ for (const page of PAGES.pages) {
   const body = [
     methodSection(page.name, basisWord, pdfHref, vshort),
     masterTable(variants, basisWord),
-    derivationTable(variants[0], basisWord, page.name, otherNote),
+    derivationTable(variants[0], basisWord, page.name, otherNote, page.slug === "infant-formula-powder"),
     occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi),
   ].join("\n")

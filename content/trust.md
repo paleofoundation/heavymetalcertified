@@ -90,7 +90,7 @@ HMI can credibly describe itself as being built around systematic-review princip
 
 The program should preserve a record of what standard and edition governed each decision. Corrections should be public when they alter public content. Appeals should be reviewed under published rules and should not be decided solely by the people responsible for the appealed determination.
 
-The current stability rule binds each decision to its named edition, prohibits silent retroactivity, and carries existing certifications through a published transition when limits tighten. Each substantive change record still must state its redline, reason, notice, effective date, transition, existing-certificate treatment, retesting, cost treatment, and correction or appeal route.
+The current stability rule binds each decision to its named edition, prohibits silent retroactivity, and carries existing Status A certifications through the published transition when the Standards Ratchet tightens a value. Government-source changes, ratchet changes, and corrections each preserve their distinct provenance. Every substantive change record states its source or ratchet calculation, redline, reason, notice, effective date, transition, existing-certificate treatment, retesting, cost treatment, and correction or appeal route.
 
 [Read the Brand Bill of Rights](/brand-bill-of-rights) for the operating commitments a brand should receive.
 

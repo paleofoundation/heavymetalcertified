@@ -204,15 +204,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "occurrence: plain milled/husked rice (UK FERA TDS ~590 ppb; provisional)",
-        "basis_kind": "occurrence",
-        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible sovereign government sets an aluminium contaminant maximum for plain milled or husked rice. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this exact cell; natural background remains a surveillance signal.",
+        "reference_method": "Screen total Al by ICP-MS; investigate elevated results for soil, processing, or additive contributions and comply with all market laws."
       }
     }
   },

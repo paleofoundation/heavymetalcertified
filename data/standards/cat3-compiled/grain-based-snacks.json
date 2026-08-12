@@ -68,7 +68,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "Non-rice grain snacks do not hyperaccumulate arsenic; no non-rice grain iAs ML exists. Clean counterpart to rice snacks/crackers (row 8).",
+        "control": "No loaded government source sets an iAs ML for non-rice grain snacks; the rice snack/cracker rule is matrix-specific and is not transferred to this row.",
         "reference_method": null
       },
       "tAs": {

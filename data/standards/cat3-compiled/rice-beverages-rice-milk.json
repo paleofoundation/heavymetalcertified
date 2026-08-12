@@ -69,15 +69,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "precautionary read-across: plant-milk Al (soy 758 ppb as-consumed; provisional)",
-        "basis_kind": "precautionary",
-        "basis_note": "precautionary cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible sovereign government sets an aluminium contaminant maximum for a rice-based beverage. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this exact cell; external plant-milk occurrence cannot supply the number.",
+        "reference_method": "Screen total Al by ICP-MS on the as-consumed beverage and document aluminium-containing additives or processing aids; investigate elevated results and comply with all market laws."
       }
     }
   },

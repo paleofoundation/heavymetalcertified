@@ -225,7 +225,7 @@ ${biblio}
 <section id="versioning" style="margin-bottom:52px">
   <h2 ${H2}>Editions and revisions</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited the ${edition} edition must still be able to reach exactly what it cited.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit go through the Standards Ratchet Mechanism, which caps how far a limit can move in one step and requires a stated trigger. Limits tighten as the evidence base and analytical feasibility improve; they do not loosen because a brand found them inconvenient.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Initial limits and regulatory-source changes remain traceable to the strictest applicable sovereign government maximum or a disclosed read-across. After publication, the ALARA <a href="/program/ratchet">Standards Ratchet</a> may lower a limit when eligible HMTc certified-lot results meet the published trigger for two consecutive annual reviews. Every event is versioned and carries a 12–18 month transition.</p>
 </section>
 
 <section id="forthcoming">

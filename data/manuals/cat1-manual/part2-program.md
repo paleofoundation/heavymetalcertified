@@ -2,13 +2,13 @@
 
 This Part sets out the governance architecture of the Heavy Metal Tested & Certified (HMTc) Program for Infant and Child Foods: how a product enters the Program, how its certification status is determined and maintained, and the corrective, evidentiary, and data-integrity obligations that attach to each status. The Program is published and administered by the Institute of Contaminant Standards (ICS). Except where a defined term states otherwise, every requirement in this Part is normative, and the Program Operator issues binding determinations under it.
 
-Certification status is governed by a single metric, MaxPoL, defined in Section 2.1. Status is limit-relative: it is computed from measured lot results against the applicable government limit under the government-limit default (Method v2.0), and by nothing else. No distribution of measured values, market aggregate, or external dataset sets a limit or determines a status.
+Certification status is governed by a single metric, MaxPoL, defined in Section 2.1. Status is limit-relative: it is computed from measured lot results against the current published HMTc limit, and by nothing else. Under Method v2.0 the initial limit is government-limit-only; after publication, only the separate Standards Ratchet in Section 2.10 may lower it using eligible HMTc certified-lot data. External occurrence evidence and applicant-specific results never select the initial limit or directly determine a status.
 
 ## 2.1 Program Flow and Analyte Tiering
 
 ### The governing metric: MaxPoL
 
-For each compliance analyte, Percent-of-Limit (PoL) = (measured result ÷ applicable limit) × 100. The applicable limit is the governing regulatory limit for that analyte in the product's market of sale, applied under the government-limit default. MaxPoL (Maximum Percent-of-Limit) is the highest PoL among all compliance analytes in a lot. Certification status is a function of MaxPoL only. A limit is never derived from the distribution of measured values; it is the government limit, and MaxPoL measures a lot against it.
+For each compliance analyte, Percent-of-Limit (PoL) = (measured result ÷ current published HMTc limit) × 100. The initial HMTc limit is the governing government-limit-only value for that analyte and product; a ratcheted edition may publish a lower current limit under Section 2.10. MaxPoL (Maximum Percent-of-Limit) is the highest PoL among all compliance analytes in a lot. Certification status is a function of MaxPoL only. The initial limit is never derived from a distribution of measured values, and an individual applicant's results never alter the divisor.
 
 ### Program flow
 
@@ -112,7 +112,7 @@ Confidentiality has defined limits: enrolment and its documentation never delay 
 
 ## 2.5 The Evidence Base: heavymetalindex.com
 
-The Heavy Metal Index (heavymetalindex.com) is contextual evidence only. It never sets a limit, supplies no selection statistic, and never determines a status. Every limit value in this Program traces to a named sovereign government maximum (Section 2.1 and Part 5); certification status is computed solely from measured lot results against that applicable limit (MaxPoL). The Index may inform category context and prioritization; it carries no compliance weight of its own.
+The Heavy Metal Index (heavymetalindex.com) is contextual evidence only. It never sets an initial limit, supplies no selection statistic, and never determines a status. Every initial limit value in this Program traces to a named sovereign government maximum (Section 2.1 and Part 5); certification status is computed solely from measured lot results against the current published HMTc limit (MaxPoL). The Index may inform category context and prioritization; it carries no compliance weight of its own. The Section 2.10 ratchet uses eligible HMTc certified-lot data, not Index evidence.
 
 The reference is one-way and outbound. The Program cites the Index; the Index does not endorse the Program. This manual does not re-host, mirror, or reproduce Index content, and asserts no cross-domain canonical relationship with it. The Institute of Contaminant Standards maintains the Index as a separate property.
 
@@ -171,3 +171,31 @@ Any lot violating an applicable regulatory limit (as distinct from an HMTc actio
 ## 2.9 Appeals
 
 A licensee may appeal a determination made under this Part. Appeals proceed in two tiers. A Tier 1 appeal is reviewed internally by the Program Operator. A Tier 2 appeal is referred to an independent three-reviewer body; a Tier 2 reversal binds the Program Operator and applies retroactively to the affected determination. The Program Operator publishes the filing and review windows for each tier and applies them uniformly.
+
+## 2.10 Standards Ratchet (ALARA)
+
+The government limit sets the starting anchor. After publication, the Standards Ratchet may lower the HMTc limit from that anchor as the certified market demonstrates sustained, broad-based improvement. The ratchet is endogenous: it uses eligible HMTc certified-lot results, not Heavy Metal Index occurrence evidence and not one applicant's private baseline in isolation.
+
+### Trigger conditions
+
+For a given analyte, the ratchet fires only when both conditions below hold for two consecutive annual reviews:
+
+1. The 80th percentile (P80) of the combined Status A + Status B trigger pool is at or below 80% of the current published HMTc limit.
+2. At least 50% of SKUs in that trigger pool have qualifying lots at or below 60% of the current published HMTc limit.
+
+The trigger pool combines Status A and Status B results to prevent status-classification withholding. No single licensee may contribute more than 25% of the SKUs in an analyte's trigger pool; any excess is excluded by random selection before the trigger is calculated. These controls require industry-wide movement rather than one dominant participant's performance.
+
+### New limit and step cap
+
+When the trigger fires, the new limit is the greater of:
+
+1. the actual P80 of certified Status A lot results for the analyte; or
+2. 80% of the current published HMTc limit.
+
+The second term is a step cap: no ratchet event may lower a limit by more than 20%. Residual tightening may be considered at a later annual review only if the two-condition trigger is met again.
+
+### Transition and accountability
+
+The transition from announcement to enforcement is 12–18 months. Existing Status A certifications are grandfathered through the transition. Status B and Status C SKUs re-evaluate at their next CAPA cycle against the more stringent of the old and new limits. Status D and Status E products receive no transition protection. A licensee that exits and re-enters within 24 months is evaluated against the standard in effect at re-entry.
+
+At each annual review, the Program Operator publishes the current trigger-pool P80, current limit, projected next-cycle limit, and expected announcement and enforcement timing. Forecasts are projections, not commitments. A forecast that differs from the eventual limit by more than 25% triggers review of the projection method.

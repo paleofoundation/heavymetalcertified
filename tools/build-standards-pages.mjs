@@ -2,27 +2,27 @@
 // build-standards-pages.mjs — render the gated HMTc standards catalog into the
 // cert site's Standards cornerstone.
 //
-// INPUT  : data/standards/hmtc_standards_catalog.json  (the workbench-derived,
-//          gated export — produced in the heavy-metal-index repo by
-//          tools/standards/build-standards-catalog.mjs and snapshotted here;
-//          eventually delivered via the gated standards API).
+// INPUT  : data/standards/hmtc_standards_catalog.json  (the certification-side
+//          gated publication catalog. Firm initial values resolve only to a
+//          sovereign-government maximum or disclosed sovereign read-across).
 // OUTPUT : content/standards/index.md                  (completeness ledger + nav)
 //          content/standards/<product_slug>.md          (one per locked row)
 //
 // FIREWALL POSTURE (the whole point):
-//   - This is the CERT plane. Percentile-derived values + clean/dirty designations
-//     are ALLOWED to render here and ONLY here. They never go on heavymetalindex.com.
+//   - This is the CERT plane. Initial compliance values are government-limit-only.
+//     External Index occurrence evidence remains contextual and never selects a
+//     value or status. A later tightening may come only from eligible HMTc
+//     certified-lot data under the published Standards Ratchet.
 //   - A firm published_limit_ppb renders ONLY for an analyte cell with
 //     status === "published". Every other cell renders its honest evidence_state_note
 //     + the gate that holds it, and NO number (the two-tier firm/in-development model).
-//   - Every value renders in its native_basis, with the rationale_tag and (when the
-//     cap binds) the regulatory_cap_source. The cross-basis is shown as secondary.
+//   - Every value renders in its native_basis, with its sovereign-government
+//     source or disclosed read-across. The cross-basis is shown as secondary.
 //   - One-way citation OUT to the index literature link; the index never reads back.
 //
-// HONEST-SURFACE GATE (plan 6.F / S1): today only 3 analyte cells across 2 rows are
-// firm. The Standards index therefore leads with the completeness ledger and frames
-// itself as "publishing per-subcategory as each becomes defensibly ready," not as a
-// finished authority surface. Transparency, not concealment, satisfies the gate.
+// HONEST-SURFACE GATE: the Standards index counts firm cells from both the catalog
+// and the government-limit custom pages. It must never publish a catalog-only count
+// while listing current custom standards below it.
 
 import fs from "node:fs"
 import path from "node:path"
@@ -66,15 +66,8 @@ function basisLabel(b) {
 // safe threshold / bioaccumulate → no variance; everything else is Tier 2.
 const TIER1 = new Set(["Pb", "Cd", "iAs", "MeHg"])
 const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
-// Subcategory clean/dirty classification from variant_type. Under Method v2.0 the
-// P97/P45 percentile mechanism runs only on the Tier-1-toxic and no-government-ML
-// cells, not on the whole row, so the label reports the classification without
-// pinning the row to a single percentile.
-function pathwayLabel(vt) {
-  const v = String(vt || "").toLowerCase()
-  if (v.includes("dirty")) return "Category Improvement"
-  return "Lower-Burden"
-}
+// Method v2.0 (August 2026) is government-limit-only. Legacy variant labels can
+// remain in source data for product taxonomy, but never describe limit selection.
 // The v3 section-heading style, reused across the emitted body.
 const H2S =
   'style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px"'
@@ -133,14 +126,14 @@ for (const row of catalog.rows) {
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "snapshot:",
     `  - { k: "Analytes published", v: "${published.length} / ${PANEL.length}" }`,
-    `  - { k: "Pathway", v: "${pathwayLabel(row.variant_type)}" }`,
+    `  - { k: "Limit method", v: "Government-limit-only" }`,
     `  - { k: "Native basis", v: "${basisLabel(row.native_basis)}" }`,
     `  - { k: "Standard version", v: "${row.standard_version}" }`,
     "connections:",
     '  - { label: "How limits are derived", href: "/program/structure" }',
     '  - { label: "Program Manuals", href: "/manuals" }',
     '  - { label: "Verify a certificate", href: "/verify" }',
-    `  - { label: "Heavy Metal Index — literature baseline", href: "${row.hmi_literature_link}" }`,
+    `  - { label: "Heavy Metal Index — literature context", href: "${row.hmi_literature_link}" }`,
     "---",
     "",
   ].join("\n")
@@ -155,7 +148,7 @@ for (const row of catalog.rows) {
   const tdMono = `${TD};white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace"`
   const tdTier = `${TD};color:#736b6b"`
   const tdLimit = `${TD};line-height:1.55;color:#3f3a3a"`
-  const tdPool = `${TD};font-family:'IBM Plex Mono',monospace;color:#3f3a3a"`
+  const tdSource = `${TD};font-family:'IBM Plex Mono',monospace;color:#3f3a3a"`
   const tdRat = `${TD};color:#736b6b"`
   const tdRatDev = `${TD};color:#736b6b;line-height:1.55"`
   const tdStatPub = `${TD};font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727"`
@@ -164,23 +157,15 @@ for (const row of catalog.rows) {
     const cell = analytes[a]
     const z = i % 2 === 0 ? ' style="background:#fdfaf8"' : ""
     if (!cell || !cell.in_scope) {
-      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdPool}>&mdash;</td><td ${tdRat}>&mdash;</td><td ${tdStatMuted}>not in scope</td></tr>`
+      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdSource}>&mdash;</td><td ${tdRat}>&mdash;</td><td ${tdStatMuted}>not in scope</td></tr>`
     }
     if (cell.status === "published") {
-      const cross =
-        cell.cross_basis_ppb != null
-          ? `<span style="color:#a9a1a1"> &middot; ${round(cell.cross_basis_ppb)} ${basisLabel(cell.cross_basis_label)}</span>`
-          : ""
-      const rat =
-        esc(cell.rationale_tag) +
-        (cell.regulatory_cap_source
-          ? `<br><span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#a9a1a1">${esc(cell.regulatory_cap_source)}</span>`
-          : "")
-      const pooled = cell.precise_ppb != null ? round(cell.precise_ppb) : "&mdash;"
-      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}><span data-firm-ppb style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:#2b1f1f">${cell.published_limit_ppb}</span>${cross}</td><td ${tdPool}>${pooled}</td><td ${tdRat}>${rat}</td><td ${tdStatPub}>published</td></tr>`
+      const source = cell.regulatory_cap_source ? esc(cell.regulatory_cap_source) : "disclosed read-across required"
+      const rationale = cell.rationale_tag === "read-across" ? "regulatory read-across" : "sovereign maximum"
+      return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}><span data-firm-ppb style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:#2b1f1f">${cell.published_limit_ppb}</span></td><td ${tdSource}>${source}</td><td ${tdRat}>${rationale}</td><td ${tdStatPub}>published</td></tr>`
     }
     const note = cell.evidence_state_note ? esc(shortNote(cell.evidence_state_note)) : "evidence under review"
-    return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdPool}>&mdash;</td><td ${tdRatDev}>${note}</td><td ${tdStatMuted}>in development</td></tr>`
+    return `      <tr${z}><td ${tdMono}>${a}</td><td ${tdTier}>${tierOf(a)}</td><td ${tdLimit}>&mdash;</td><td ${tdSource}>&mdash;</td><td ${tdRatDev}>${note}</td><td ${tdStatMuted}>in development</td></tr>`
   }).join("\n")
 
   const scopeRow = (label, val) =>
@@ -199,21 +184,21 @@ for (const row of catalog.rows) {
   <h2 ${H2S}>Who this standard is for</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
-    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Brand regulatory affairs and QA</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table and the derivation. Every numeric claim traces to a source page on the independent literature index.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Brand regulatory affairs and QA</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table and provenance. Initial values trace to a sovereign source or disclosed read-across; any later tightening traces to the published Standards Ratchet record.</p></div>
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Retailer quality and compliance</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the Master Limit Table. The mark on a product means the brand tested at or below every value in it, in the product&rsquo;s native basis.</p></div>
-    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the HMTc-limit column and the rationale tag. Each limit is set to the strictest applicable government maximum by lookup, in the native basis; for the Tier-1 toxics (Pb, Cd, iAs, MeHg) and for cells no government regulates, the program&rsquo;s pooled occurrence distribution sets or tightens the value, never above the government maximum.</p></div>
-    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Adversarial readers &mdash; plaintiff&rsquo;s experts, competing bodies</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the rationale column and the firm/in-development split. Every published value carries its pooled figure, its native basis, and the reason for any gap with the pool.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Regulators &mdash; FDA, EFSA, state AGs</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the HMTc-limit, government-source, and basis columns. Each numeric limit is the strictest applicable sovereign maximum in the native basis or a disclosed regulatory read-across.</p></div>
+    <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Adversarial readers &mdash; plaintiff&rsquo;s experts, competing bodies</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Read the source and firm/in-development columns. An unregulated exact cell cannot receive a firm number from occurrence evidence; it requires disclosed read-across or an n/m determination.</p></div>
   </div>
 </section>
 
 <section id="limits" style="margin-bottom:52px">
   <h2 ${H2S}>Master Limit Table</h2>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column shows the program&rsquo;s occurrence figure for the analyte; the HMTc limit is the stricter of the applicable government maximum and &mdash; for Tier-1 toxics and cells no government regulates &mdash; that pooled figure, so the derivation stays re-derivable and the rationale tag names which bound. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates and resolves to a sovereign government maximum or disclosed read-across; every other analyte shows its honest evidence state and no number. Occurrence evidence is contextual only and has no role in selecting the value or status. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse">
     <thead>
       <tr style="background:#9f2727;color:#fff">
-        <th ${TH}>Analyte</th><th ${TH}>Tier</th><th ${TH}>HMTc limit</th><th ${TH}>Pooled</th><th ${TH}>Rationale</th><th ${TH}>Status</th>
+        <th ${TH}>Analyte</th><th ${TH}>Tier</th><th ${TH}>HMTc limit</th><th ${TH}>Government source</th><th ${TH}>Basis</th><th ${TH}>Status</th>
       </tr>
     </thead>
     <tbody>
@@ -243,7 +228,7 @@ ${occSection}
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
     <div style="padding:14px 15px">
       <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;${subj}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${row.vertical.category_name} standard, version ${row.standard_version}. Institute of Contaminant Standards (ICS), 2026.</p>
-      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="${row.hmi_literature_link}" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects ${row.standard_version} and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">Contextual occurrence evidence lives on the independent <a href="${row.hmi_literature_link}" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse, and it does not set the limit. HMTc standards are living, versioned documents; this page reflects ${row.standard_version} and superseded versions remain at stable URLs so prior citations resolve. The government-limit-only methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
     </div>
   </div>
 </section>
@@ -329,6 +314,10 @@ for (const f of fs.readdirSync(OUT_DIR)) {
   const group = (byCat[cat] ??= { name: get("category_name") || "Other", rows: [] })
   if (group.rows.some((r) => r.product_slug === slug)) continue
   const firm = Number(get("firm_analytes")) || 0
+  if (firm > 0) {
+    rowsWithFirm += 1
+    firmCells += firm
+  }
   group.rows.push({
     vertical: { category: cat, category_name: group.name },
     subcategory: get("subcategory") || get("title").replace(/ &mdash;.*| — HMTc.*/, ""),
@@ -368,7 +357,7 @@ const idxFront = [
   'title: "HMTc Standards"',
   "type: standards-index",
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
-  `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."`,
+  `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. Initial values come from the strictest applicable sovereign government maximum or a disclosed regulatory read-across; later tightening follows the Standards Ratchet; occurrence evidence is context only."`,
   "snapshot:",
   `  - { k: "Subcategory standards", v: "${totalStandardRows}" }`,
   `  - { k: "Firm analyte limits", v: "${firmCells}" }`,

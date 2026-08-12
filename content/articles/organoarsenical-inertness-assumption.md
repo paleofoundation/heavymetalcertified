@@ -73,11 +73,9 @@ The common thread is that the same total-arsenic number carries a different mean
 
 ## What this means for certification
 
-The certification consequence is specific, and Heavy Metal Certified already builds to it. The certified arsenic analyte is [inorganic arsenic](/analytes/arsenic), quantified as speciated inorganic arsenic by HPLC-ICP-MS; a total-arsenic result is not interchangeable with it. That choice is exactly what this evidence supports. Total arsenic overstates the toxic fraction in arsenobetaine-dominated [marine fish](/standards/fish-marine-non-predatory), and it can understate risk where the inorganic fraction is high, as in [kelp](/standards/seaweed-kelp-foods), or where uncharacterised arsenolipids make up much of the total, as in algae-derived ingredients.
+The certification consequence is speciation discipline: total arsenic is not interchangeable with inorganic arsenic. HMTc applies the applicable sovereign value to the regulated species and matrix, and an unregulated exact cell requires disclosed sovereign read-across or an n/m control rather than an inference from an external occurrence distribution.
 
-How the number is set follows the program's general rule. The default limit for any product and analyte is the strictest maximum level set by a credible government regulator, converted to the product's own basis. Inorganic arsenic is one of the four Tier-1 toxics — with lead, cadmium and methylmercury — so for arsenic the standard may set the stricter of that government limit and the cleaner end of the occurrence evidence, rather than the government floor alone.
-
-The harder discipline the finding demands is what not to assume. Contesting the inertness of arsenobetaine does not license treating every organic arsenic form as dangerous, any more than the old view licensed treating them all as safe; the honest posture is that speciation and matrix context are what make an arsenic result meaningful. For a matrix whose organoarsenical profile is poorly characterised — a new algae-protein ingredient, say, tested only for total arsenic — the defensible response is to flag the uncertainty and require speciated data, not to wave the product through on the strength of an "organic, therefore harmless" label. The finding does not say seafood is dangerous or that fish should be avoided; high fish consumption remains a net benefit for most people. It says the number that certifies arsenic has to be the inorganic fraction, read in the context of the food it came from.
+Initial HMTc limits follow the same rule for every analyte: the strictest applicable credible sovereign-government maximum in the product's native basis. If the exact cell is unregulated, HMTc must disclose a sovereign read-across or an n/m control; external HMI occurrence evidence never supplies the number or determines certification status. Any later tightening follows the [Standards Ratchet](/program/ratchet) using eligible HMTc certified-lot data.
 
 ## Frequently asked questions
 
@@ -99,7 +97,7 @@ Not reliably. A validated HPLC-ICP-MS method found that the kelp Laminaria digit
 
 ### How should a certification standard test arsenic?
 
-By limiting speciated inorganic arsenic rather than total arsenic, since total arsenic overstates risk in fish and can understate it in kelp or algae ingredients. The certified analyte is inorganic arsenic, measured by HPLC-ICP-MS, and the limit adopts the strictest maximum level set by a credible government regulator. Because inorganic arsenic is a Tier-1 toxic, the standard may take the stricter of that limit and the cleaner end of the occurrence evidence.
+By limiting speciated inorganic arsenic rather than total arsenic, since total arsenic overstates risk in fish and can understate it in kelp or algae ingredients. The certified analyte is inorganic arsenic, measured by HPLC-ICP-MS, and the limit adopts the strictest maximum level set by a credible government regulator. Initial HMTc limits instead follow the same rule for every analyte: the strictest applicable credible sovereign-government maximum in the product's native basis. External HMI occurrence evidence provides category context and surveillance signals only; it never selects the initial limit or certification status. Any later tightening follows the [Standards Ratchet](/program/ratchet) using eligible HMTc certified-lot data.
 
 
 ## References

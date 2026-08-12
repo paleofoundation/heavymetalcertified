@@ -41,6 +41,10 @@ const ANALYTE = {
   Sn: "Tin (Sn)", Al: "Aluminium (Al)", U: "Uranium (U)", Sb: "Antimony (Sb)",
 }
 const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
+const isRetiredOccurrenceCell = (cell) => cell && cell.type === "read_across"
+  && (cell.basis_kind === "occurrence" || cell.basis_kind === "precautionary")
+const isResolvedCell = (cell) => cell && !isRetiredOccurrenceCell(cell)
+  && ["gov", "read_across", "not_material", "special"].includes(cell.type)
 
 // Jurisdiction display labels + optional regulation-page slugs. A header/link renders only when the
 // regulation page actually exists on disk (existsSync-gated), so no category can emit a broken link.
@@ -76,6 +80,7 @@ function bindingLabel(cell) {
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${txt}</a>` : txt
   }
   if (cell.type === "read_across") {
+    if (isRetiredOccurrenceCell(cell)) return "in development — sovereign read-across required"
     const href = reg(cell.source_jurisdiction)
     const label = esc(cell.label && cell.label.length < 90 ? cell.label : `government read-across (${jlabel(cell.source_jurisdiction)})`)
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
@@ -87,7 +92,9 @@ function bindingLabel(cell) {
 // Collapse one analyte across variants into a single display value ("X" or "X lab1 / Y lab2").
 function limitDisplay(analyte, variants) {
   const parts = variants.map((v) => ({ label: v.label, val: v.cells[analyte] }))
-  const vals = parts.map((p) => (!p.val ? "&mdash;" : p.val.value == null ? (p.val.type === "not_material" ? "n/m" : "&mdash;") : String(p.val.value)))
+  const vals = parts.map((p) => (!p.val || isRetiredOccurrenceCell(p.val)
+    ? "&mdash;"
+    : p.val.value == null ? (p.val.type === "not_material" ? "n/m" : "&mdash;") : String(p.val.value)))
   if (vals.every((x) => x === vals[0])) return vals[0]
   return parts.map((p, i) => `${vals[i]} ${p.label}`).join(" / ")
 }
@@ -99,7 +106,7 @@ function masterTable(variants, basisWord, tierNote) {
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
-  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
+  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. A numeric cell publishes only when it resolves to a sovereign government maximum or disclosed read-across. A dash marks a cell still awaiting that basis; occurrence evidence cannot fill it. A brand must meet every firm value and control on a like-for-like basis.</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------
@@ -126,24 +133,25 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
     }).join("")
     let hmtc, binds
     if (!c || c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
-    else if (c.type === "read_across") { hmtc = `${c.value}&sup2;`; binds = c.basis_kind === "occurrence" ? "occurrence" : c.basis_kind === "precautionary" ? "precautionary" : "read-across" }
+    else if (c.type === "read_across" && isRetiredOccurrenceCell(c)) { hmtc = "&mdash;"; binds = "in development" }
+    else if (c.type === "read_across") { hmtc = `${c.value}&sup2;`; binds = "read-across" }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
     else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government sets this analyte for this exact product form: the value is read across from the nearest government limit for an analogous product, or &mdash; where the Binds column reads occurrence or precautionary &mdash; taken from measured occurrence data or set as a precautionary near-neighbour value; the ratchet tightens it as surveillance warrants. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${otherNote || ""}`
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government sets this analyte for this exact product form: the value is read across from the nearest applicable sovereign government limit and the mapping is disclosed. A dash in the HMTc column means no valid read-across is yet published. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
 function methodSection(subName, basisWord) {
-  return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; among them the European Union, Codex Alimentarius, the US FDA, Australia/New Zealand, the Gulf states (GSO), and the national authorities of every jurisdiction that regulates the product &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p></section>`
+  return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The initial standard for each analyte is the strictest applicable maximum level set by a credible sovereign government &mdash; among them the European Union, Codex Alimentarius member governments, the US FDA, Australia/New Zealand, the Gulf states (GSO), and national authorities that regulate the product &mdash; expressed in ${esc(subName)}&rsquo;s own ${basisWord} basis. The 8:1 powder-to-liquid conversion is confined to infant formula. A certified product must also comply with every law in its markets of sale.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where no government regulates the exact product-analyte cell, a firm starting value requires disclosed read-across from the nearest applicable sovereign value or an n/m determination with its control method. Heavy Metal Index occurrence evidence does not select the initial value. After publication, the <a href="/program/ratchet" style="color:${LINK};text-decoration:none">ALARA Standards Ratchet</a> may lower it from the sovereign anchor when eligible HMTc certified-lot results meet the published two-cycle trigger.</p></section>`
 }
 
 function citeSection(subName, version, hmiLink, doi, volume) {
   const hmi = hmiLink ? `<a href="${hmiLink}" style="color:${LINK}">Heavy Metal Index</a>` : "Heavy Metal Index"
   const doiText = doi ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>` : "DOI: registration pending."
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${esc(volume)} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${esc(volume)} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">Contextual literature for every analyte is maintained independently at the ${hmi}. It informs category understanding and surveillance priorities but does not set an HMTc limit or status.</p></section>`
 }
 
 // --- drive --------------------------------------------------------------------
@@ -162,6 +170,7 @@ for (const page of DOC.pages) {
   const version = page.version || META.default_version
   const vshort = version.split(" ")[0]
   const certDoi = page.cert_doi || null
+  const resolvedCount = PANEL.filter((analyte) => variants.every((variant) => isResolvedCell(variant.cells[analyte]))).length
   const otherNote = variants.length > 1
     ? `Variants on this page: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the Master Limit Table shows both; the derivation above is for ${variants[0].label}.`
     : ""
@@ -176,7 +185,7 @@ for (const page of DOC.pages) {
     `product_slug: ${page.slug}`,
     "custom_page: true",
     `subcategory: "${page.name}"`,
-    `firm_analytes: ${PANEL.length}`,
+    `firm_analytes: ${resolvedCount}`,
     `native_basis: ${variants[0].native_basis}`,
     `standard_version: "${version}"`,
     `methodology_version: "${META.methodology_version}"`,
@@ -190,7 +199,7 @@ for (const page of DOC.pages) {
     '  title: "Document versions"',
     `  body: "v${vshort} · ${META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     "snapshot:",
-    `  - { k: "Analytes limited", v: "${PANEL.length} / ${PANEL.length}" }`,
+    `  - { k: "Analytes resolved", v: "${resolvedCount} / ${PANEL.length}" }`,
     '  - { k: "Method", v: "Strictest government ML" }',
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,

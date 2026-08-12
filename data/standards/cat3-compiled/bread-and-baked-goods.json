@@ -68,7 +68,7 @@
       "iAs": {
         "type": "not_material",
         "value": null,
-        "control": "No government sets an iAs ML for non-rice baked goods; wheat/other-grain baked products do not hyperaccumulate arsenic. Clean counterpart to rice-based products.",
+        "control": "No loaded government source sets an iAs ML for non-rice baked goods; rice-specific iAs limits are not transferred to wheat or other-grain baked products.",
         "reference_method": null
       },
       "tAs": {

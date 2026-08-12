@@ -184,15 +184,19 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1500,
-        "value_exact": 1500,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "occurrence: Western extruded rice pasta, no alum-firming (background; provisional)",
-        "basis_kind": "occurrence",
-        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "gov",
+        "value": 200000,
+        "value_exact": 200000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "cn_gb2760_2024_al_starch_noodles_vermicelli_200000",
+        "basis_note": "face value",
+        "per_country": {
+          "CN": {
+            "value": 200000,
+            "converted": true,
+            "id": "cn_gb2760_2024_al_starch_noodles_vermicelli_200000"
+          }
+        }
       }
     }
   },

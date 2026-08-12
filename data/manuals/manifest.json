@@ -1,5 +1,5 @@
 {
-  "_comment": "Standards-manual publication manifest. A manual goes LIVE (download + Scholar/DOI metadata) only when status == 'published' AND its PDF exists at data/manuals/<pdf>. 'pending_refresh' = the manual exists but predates a values change (the 2026-06-20 round-DOWN rounding rule and/or an open adjudication like the seaweed iAs hold) and must be REGENERATED with current values + defensibility-audited before publishing. Publishing a stale/contaminated standard on the indexed cert site is a Daubert self-harm (a defective number is multiplied by the transparent-derivation posture). Flip to 'published' is a one-line edit after regen+audit.",
+  "_comment": "Standards-manual publication manifest. A manual goes LIVE (download + Scholar/DOI metadata) only when status == 'published' AND its PDF exists at data/manuals/<pdf>. 'pending_refresh' means the manual predates the August 2026 government-limit-only method, contains an unresolved government-source adjudication, or both. It must be regenerated and defensibility-audited before publication. Flip to 'published' is a one-line edit after regeneration and audit.",
   "publisher": "Heavy Metal Tested & Certified, Paleo Foundation",
   "manuals": [
     {
@@ -10,7 +10,7 @@
       "pdf": "HMTc-Seafood-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Firm cap-bound cells defensible (fish-marine-predatory Cd 50 / tHg 1000), but the manual predates the seaweed iAs hold — it likely still prints the iAs 2000 incomplete-pool artifact. Regenerate with current catalog (seaweed iAs held) before publishing."
+      "evidence_note": "Predates the August 2026 government-limit-only method and includes an unresolved seaweed iAs cell. Regenerate and audit every value for a sovereign source, disclosed read-across, or n/m determination before publication."
     },
     {
       "category": 30,
@@ -20,7 +20,7 @@
       "pdf": "HMTc-Culinary-Oils-and-Fats-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Predates the round-DOWN rule + olive-oil clean/dirty adjudication. Regenerate + audit."
+      "evidence_note": "Predates the August 2026 government-limit-only method. Regenerate and audit every value for a sovereign source, disclosed read-across, or n/m determination before publication."
     },
     {
       "category": 30,
@@ -30,7 +30,7 @@
       "pdf": "HMTc-Butter-and-Ghee-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Predates the round-DOWN rule. Regenerate + audit (check for any literature-baseline values affected by rounding)."
+      "evidence_note": "Predates the August 2026 government-limit-only method. Regenerate and audit every value for a sovereign source, disclosed read-across, or n/m determination."
     },
     {
       "category": 34,
@@ -40,7 +40,7 @@
       "pdf": "HMTc-Herbs-Spices-and-Salt-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Spices Pb=600 is firm/cap-bound (defensible), but salt is still a Gate-1 hold (sea/rock/refined geology unresolved) — the manual may print provisional salt values. Regenerate after the salt adjudication."
+      "evidence_note": "Predates the August 2026 government-limit-only method and includes an unresolved salt matrix-scope adjudication. Regenerate and audit every value for a sovereign source, disclosed read-across, or n/m determination before publication."
     },
     {
       "category": 1,
@@ -66,7 +66,7 @@
       "pdf": "HMTc-Grains-Cereals-Rice-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Web edition current (12 subcategories, full HMTc 10-analyte panel, Method v2.0 government-limit default; 2026-08-10). Rice inorganic-arsenic axis verified against EU 2023/915 (milled 150 / parboiled-husked / rice-flour 250 / rice products 300 / rice drinks 30). Consolidated version-pinned PDF in preparation."
+      "evidence_note": "Web edition current (12 subcategories, full HMTc 10-analyte panel, Method v2.0 government-limit-only; 2026-08-10). Rice inorganic-arsenic axis verified against EU 2023/915 (milled 150 / parboiled-husked / rice-flour 250 / rice products 300 / rice drinks 30). Consolidated version-pinned PDF in preparation."
     }
   ]
 }

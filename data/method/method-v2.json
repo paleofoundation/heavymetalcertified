@@ -1,51 +1,46 @@
 {
-  "_purpose": "Canonical machine-readable statement of HMTc Method v2.0 — the SINGLE SOURCE OF TRUTH for how the program's method is described across heavymetalcertified.com. When the method changes, edit THIS file. The drift lint (tools/method-drift-lint.mjs, build-blocking in prebuild) fails the build if any page's prose regresses to a retired framing or asserts pooling as the universal method without the government-limit-default anchor. This is the sibling of the Part-2 'silent threshold deviation' guard, for prose.",
+  "_purpose": "Canonical machine-readable statement of HMTc Method v2.0. This is the single source of truth for how limit selection and post-publication tightening are described across heavymetalcertified.com. The August 2026 Program Manual controls: initial certification limits are government-limit-only; the retired P97/P45 pathways never select a compliance value; the separate Standards Ratchet may later tighten a published limit from eligible HMTc certified-lot data.",
   "version": "v2.0",
-  "label": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
-  "ratified": "2026-08-03",
-  "authority": "CLAUDE.md Part 19",
+  "label": "HMTc Method v2.0 — government-limit-only",
+  "ratified": "2026-08-11",
+  "authority": "HMTc Infant and Child Foods Program Manual 2026, Parts 1, 2, and 5",
+  "supersedes": "The selective-occurrence variant previously described under the same version label, including P97/P45 selection and literature-baseline rationale tags.",
   "statement": {
-    "default": "The default limit for any (product, analyte) is the strictest maximum level set by a credible government regulator (EU, Codex, FDA, WHO/JECFA, FSANZ, Health Canada), converted to the row's native basis — a lookup, not a computation.",
-    "formulation_split": "Where the law splits a limit by formulation, the standard adopts the law's own split and cites it.",
-    "selective_occurrence_tier1": "The four Tier-1 toxics (Pb, Cd, iAs, MeHg) are set to min(occurrence percentile, strictest government ML).",
-    "selective_occurrence_no_ml": "Cells no government regulates use the occurrence value (or a not-material / process-screen determination) as the sole basis.",
-    "tier2": "Tier-2 metals (Ni, Sn, Al, Cr-VI) adopt the government limit directly; occurrence is not computed unless no ML exists.",
-    "occurrence_calibration": "Where an occurrence cell is computed, a cleaner subcategory sits near P97 and a more contaminated one near P45; targets ~90% clean / ~40% dirty row-pass (measured 94% / 42% on FDA 2026 lot data), rolling up to ~80% program-monitored average.",
-    "pool": "The pool is the certification-relevant market: regulatory-equivalence, not geography.",
-    "instrument": "Certify against the subcategory split, never the element-wise-max envelope.",
-    "unchanged_downstream": "The 150% Tier-2 transitional allowance, Status A-E, the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged."
+    "default": "For each product and analyte, use the strictest applicable maximum level set by a credible sovereign government, converted to the product's native basis.",
+    "formulation_split": "Where a government instrument splits a limit by product form or formulation, adopt that split and cite it.",
+    "unregulated_cell": "Where no government regulates the exact cell, use a disclosed read-across from the nearest applicable sovereign value; where the analyte is not material in the matrix, publish an n/m determination with its control method.",
+    "occurrence_boundary": "Heavy Metal Index occurrence evidence is contextual only. It may support category characterization, prioritization, surveillance, and review, but it has no role in initial limit selection or certification status.",
+    "status": "Status is determined from MaxPoL against the current published HMTc limit and by nothing else. The initial published limit is government-derived; a later ratcheted limit may be lower.",
+    "basis": "The 8:1 powder-to-liquid conversion applies only within infant formula. Other product forms take the government value in the applicable native basis without an invented conversion.",
+    "alara": "ALARA remains an enforceable operating principle implemented through surveillance, CAPA, Status B improvement obligations, supplier and process controls, and the separate Standards Ratchet; it is not an initial occurrence-based limit-selection formula.",
+    "ratchet": "After publication, the Standards Ratchet uses eligible HMTc certified-lot results. It fires for an analyte only when, for two consecutive annual reviews, the P80 of the capped combined Status A and Status B trigger pool is at or below 80% of the current limit and at least 50% of SKUs in that pool have qualifying lots at or below 60% of the current limit. The new limit is the greater of the Status A P80 or 80% of the current limit, so no event lowers a limit by more than 20%; transition is 12–18 months."
   },
-  "tier1_analytes": ["Pb", "Cd", "iAs", "MeHg"],
-  "tier2_analytes": ["Ni", "Sn", "Al", "Cr-VI"],
-  "rationale_tags": ["literature-baseline", "regulatory-alignment", "precautionary", "feasibility-driven"],
+  "tier1_analytes": ["Pb", "Cd", "iAs", "tHg"],
+  "tier2_analytes": ["Ni", "Sn", "Al", "Cr"],
+  "rationale_tags": ["regulatory-alignment", "read-across", "not-material"],
   "lint": {
     "forbidden": [
-      { "re": "P97-clean\\s*/\\s*P45-dirty", "why": "v1.0 universal-method label; occurrence is now selective (edit data/method/method-v2.json label)" },
-      { "re": "Clean\\s*[\\u00b7.]\\s*P97", "why": "pins a whole subcategory to P97; under v2.0 the percentile mechanism is selective" },
-      { "re": "Dirty\\s*[\\u00b7.]\\s*P45", "why": "pins a whole subcategory to P45; under v2.0 the percentile mechanism is selective" },
-      { "re": "monitored,?\\s+not\\s+limited", "why": "retired framing — every analyte has a limit" },
-      { "re": "\\b30%[^.<]{0,70}(dirty|dirty-subcategory)", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },
-      { "re": "(dirty|dirty-subcategory)[^.<]{0,70}\\b30%", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },
-      { "re": "correlation of 0\\.6", "why": "retired assumption; measured cross-analyte correlation is ~0.27, calibration anchored to measured lot data" }
-    ],
-    "requires_anchor": {
-      "window": 320,
-      "phrases": [
-        "derived from a pooled",
-        "pooled distribution of",
-        "pooled occurrence distribution",
-        "synthesis of the published literature",
-        "occurrence distribution for each",
-        "at the 97th percentile of the pooled",
-        "from the published-literature occurrence"
-      ],
-      "anchors": [
-        "government", "strictest", "lookup", "Tier-1", "Tier 1", "Tier 1",
-        "selective", "no government", "unregulated", "regulates",
-        "tighten", "tightens", "tightened", "beats the law", "beat the law",
-        "occurrence-set", "occurrence-based", "sets a number itself", "the program sets", "the four Tier"
-      ],
-      "why": "a pooling/percentile phrase with no government-limit-default anchor within the window reads as the retired v1.0 universal method (this is exactly how the homepage drifted); either the claim is wrong, or it needs its v2.0 scoping stated close enough that a hostile reader cannot quote it out of context"
-    }
+      { "re": "literature[ -]baseline", "why": "The retired literature-baseline framing implies that external occurrence evidence selects certification limits; call it descriptive occurrence evidence and state the firewall." },
+      { "re": "occurrence evidence underlying (?:these )?certification limits", "why": "External occurrence evidence does not underlie or select initial certification limits." },
+      { "re": "certification standard applies those findings", "why": "The standard does not apply Index findings to select compliance values." },
+      { "re": "standards are set against the complete literature", "why": "Initial standards compile sovereign-government maxima; literature is descriptive context only." },
+      { "re": "\\bP97\\b", "why": "P97 limit selection is retired; occurrence evidence is contextual only." },
+      { "re": "\\bP45\\b", "why": "P45 limit selection is retired; occurrence evidence is contextual only." },
+      { "re": "selective[- ]occurrence", "why": "Selective occurrence is retired; the current method is government-limit-only." },
+      { "re": "occurrence[- ]set", "why": "Occurrence no longer sets a certification value." },
+      { "re": "occurrence[- ]tighten(?:ed|ing)?", "why": "Occurrence no longer tightens a certification value." },
+      { "re": "cleaner end of (?:the )?(?:[^.\\n]{0,160})?occurrence", "why": "The retired cleaner-occurrence pathway may not select an initial limit." },
+      { "re": "stricter of (?:[^.\\n]{0,220})government(?:[^.\\n]{0,220})occurrence", "why": "Initial limits are government-limit-only; external occurrence evidence cannot be the second arm of a minimum rule." },
+      { "re": "occurrence[- ]based limits", "why": "HMTc compliance limits are government-derived initially and may later be ratcheted only from eligible certified-lot data." },
+      { "re": "occurrence synthesis(?:[^.\\n]{0,160})tight", "why": "External occurrence synthesis does not tighten HMTc limits." },
+      { "re": "where no government sets a number(?:[^.\\n]{0,160})program sets one", "why": "An unregulated exact cell requires disclosed sovereign read-across or an n/m control; occurrence cannot invent a number." },
+      { "re": "(?:limit|threshold|ceiling)(?:[^.\\n]{0,100})calibrated (?:against|to)(?:[^.\\n]{0,100})occurrence", "why": "Current HMTc limit selection is not calibrated to an external occurrence distribution." },
+      { "re": "benchmark(?:ed|ing)?(?:[^.\\n]{0,120})occurrence distribution", "why": "Occurrence distributions may characterize categories, but may not determine HMTc compliance values." },
+      { "re": "number that certifies(?:[^.\\n]{0,160})come from(?:[^.\\n]{0,100})distribution", "why": "Certification values come from the current sovereign-government method or the later certified-lot ratchet, not external distributions." },
+      { "re": "literature-baseline", "why": "The literature-baseline limit rationale is retired; literature is contextual only." },
+      { "re": "min\\s*\\([^)]{0,120}occurrence", "why": "The retired min(occurrence, government limit) formula is no longer part of HMTc Method v2.0." },
+      { "re": "(?:limits?|thresholds?)\\s+(?:are\\s+)?(?:derived|set|selected)\\s+from\\s+(?:the\\s+)?(?:Index|literature|occurrence)", "why": "Certification values derive from sovereign government limits, not the Index, literature, or occurrence distributions." },
+      { "re": "(?:the\\s+)?(?:Index|occurrence\\s+(?:evidence|data|distribution))\\s+(?:sets?|selects?|tightens?|determines?)\\s+(?:the\\s+)?(?:limits?|thresholds?|values?)", "why": "The Index and occurrence evidence are contextual only and may not select a compliance value." }
+    ]
   }
 }

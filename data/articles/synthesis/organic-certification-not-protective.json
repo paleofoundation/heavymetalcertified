@@ -39,7 +39,7 @@
     },
     {
       "h2": "What this means for certification",
-      "body": "For a certification program the lesson is that an organic seal and a heavy-metal certification are complementary instruments answering different questions, and neither can stand in for the other. Organic certifies which synthetic inputs and practices were used; a heavy-metal certification tests the finished product against occurrence-based limits. A buyer who reads 'organic' as 'low in heavy metals' is mis-reading what the seal certifies, and a brand that markets it that way is making a claim the literature does not support.\n\nThe instrument that does answer the buyer's question sets each limit from the strictest maximum level set by a credible government regulator, converted to the product's own basis. Because [cadmium](/analytes/cadmium) is one of the four Tier-1 toxics — lead, cadmium, inorganic arsenic and methylmercury — the program may set the ceiling to the stricter of that government maximum and the cleaner end of the occurrence evidence for the category; the Tier-2 metals (nickel, tin, aluminium and hexavalent chromium) adopt the government limit directly. Applied to [dark chocolate](/standards/chocolate), that means the standard certifies against measured cadmium in the finished product, which is precisely the signal an organic seal does not carry. Occurrence testing of the finished product, not organic status, is the relevant evidence of heavy-metal safety."
+      "body": "Organic and heavy-metal certification answer different questions. HMTc verifies the finished lot against the current published HMTc values; an organic seal neither substitutes for that testing nor predicts the result. Applied to [dark chocolate](/standards/chocolate), that means the certificate speaks to measured cadmium in the finished product, which is precisely the signal an organic seal does not carry.\n\nInitial HMTc limits follow the same rule for every analyte: the strictest applicable credible sovereign-government maximum in the product's native basis. If the exact cell is unregulated, HMTc must disclose a sovereign read-across or an n/m control; external HMI occurrence evidence never supplies the number or determines certification status. Any later tightening follows the [Standards Ratchet](/program/ratchet) using eligible HMTc certified-lot data."
     }
   ],
   "faq": [
@@ -57,7 +57,7 @@
     },
     {
       "q": "Does a heavy-metal certification replace an organic seal?",
-      "a": "No. They answer different questions and are complementary rather than interchangeable. Organic certifies which synthetic inputs and practices were used, while a heavy-metal certification tests the finished product against occurrence-based limits. Neither one substitutes for the other."
+      "a": "No. They answer different questions and are complementary rather than interchangeable. HMTc verifies the finished lot against the current published HMTc values; it does not replace an organic certification's separate claims about production practices."
     },
     {
       "q": "Is organic always higher in heavy metals?",

@@ -42,17 +42,11 @@ The panel therefore covers eight priority metals through ten analyte determinati
 
 ## How limits are set
 
-Every standard states the product’s native basis, analyte species, units, method, governing edition, source rationale, and regulatory ceiling. Where a government maximum is the controlling rule, the page identifies it. Where occurrence evidence is used, the pooled method and sensitivity record govern rather than a percentile copied from one study.
+Every standard states the product's native basis, analyte species, units, governing edition, regulatory source, and rationale. Each numeric limit is the strictest applicable maximum set by a credible sovereign government, expressed in the product's native basis. Where the government rule splits by product form or formulation, HMTc adopts that split and cites it.
 
-For paired product forms, the public names describe the pathway without stigmatizing the category:
+Where no government regulates the exact product-analyte cell, the standard either discloses a read-across from the nearest applicable sovereign value or records an n/m determination and its control method. The 8:1 powder-to-liquid conversion is used only within infant formula. No occurrence distribution, program result, or brand result selects the initial certification value.
 
-| Pathway | Calibration role | Public interpretation |
-|---|---|---|
-| Lower-Burden Category Pathway | Uses the upper tail of the better-controlled product-form distribution for an occurrence-set cell | Preserves access for products that already reflect stronger category control while excluding the adverse tail. |
-| Category Improvement Pathway | Uses a more selective point within a structurally higher-burden product-form distribution | Recognizes that the category is difficult while distinguishing operators that have materially improved control. |
-| Independent row | Uses the standard independent-row method when no defensible paired form exists | Avoids forcing an artificial pairing. |
-
-No final HMTc value may exceed the lowest applicable loaded regulatory ceiling expressed in the row’s native basis. Full methodology and cell-level rationale belong in the versioned standards and manuals.
+The Heavy Metal Index remains useful for category context, surveillance priorities, and research gaps, but it carries no compliance weight. Full methodology and cell-level rationale belong in the versioned standards and manuals.
 
 ## Publication and commercial readiness are different gates
 
@@ -111,7 +105,7 @@ Decision records preserve the evidence, rule, reviewer action, rationale, correc
 
 ## Standard change control
 
-The edition named in the decision and certificate governs that decision. A later edition does not silently rewrite a past lot. Substantive changes are versioned, explained, and carried through a published transition; limits tighten as evidence and analytical feasibility support improvement rather than loosening for convenience.
+The edition named in the decision and certificate governs that decision. A later edition does not silently rewrite a past lot. Substantive changes are versioned, explained, and carried through a published transition. Initial limits and regulatory-source changes remain traceable to a sovereign government maximum or disclosed read-across. Separately, the ALARA [Standards Ratchet](/program/ratchet) may lower a published limit from that anchor when the capped HMTc certified-lot pool meets the published two-cycle trigger. Surveillance, CAPA, and supplier and process controls continue between revisions.
 
 [Read the complete stability and change-control rule](/standard-stability).
 

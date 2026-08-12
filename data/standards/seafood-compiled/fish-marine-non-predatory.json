@@ -334,5 +334,5 @@
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
-  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+  "method": "HMTc Method v2.0 (government-limit-only, formula-only 8:1 where applicable, read-across)"
 }
