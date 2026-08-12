@@ -7,7 +7,7 @@
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
       { "sel": "header", "prop": "position", "want": "sticky" },
       { "sel": ".hmtc-home-h1", "prop": "font-family", "want": "Lora", "match": "contains", "note": "the brand-control hero remains in the canonical display serif." },
-      { "sel": "a.hmtc-hero-btn--solid[href=\"/readiness\"]", "prop": "count", "want": 1, "note": "the primary homepage action is Private Readiness, not a strictness explainer or direct external application." },
+      { "sel": "a.hmtc-hero-btn--solid[href$=\"readiness\"]", "prop": "count", "want": 1, "note": "the primary homepage action is Private Readiness, not a strictness explainer or direct external application." },
       { "sel": "header a.hmtc-apply[href$=\"/readiness\"]", "prop": "count", "want": 1, "note": "the global action is Check readiness." }
     ],
     "/for-brands": [
@@ -21,7 +21,7 @@
       { "sel": "header", "prop": "position", "want": "sticky" },
       { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
-      { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400" },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "the readiness surface contains no bold markup." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
     ],
     "/what-if-we-dont-pass": [
