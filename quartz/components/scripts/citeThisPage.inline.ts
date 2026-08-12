@@ -1,9 +1,8 @@
 export {} // module scope — keeps locals out of the global namespace
 
-// Wires the "Cite this page" footer block on every public Heavy Metal Index
-// page. The block reveals (a) the canonical citation, (b) a download link to
-// /api/evidence-packet?slug=<slug>&download=1 (brand-legal / regulatory
-// exhibit), and (c) a "Copy citation" button.
+// Wires the "Cite this page" footer block on Heavy Metal Certified reference
+// pages. Markup is rendered server-side; this script handles citation exports,
+// the toggle, and clipboard interaction.
 //
 // Markup is rendered server-side by Quartz.CiteThisPage (TSX); this script
 // only handles the toggle + clipboard interaction.
@@ -82,7 +81,7 @@ function bind(root: HTMLElement) {
   const doi = d.citeDoi ?? ""
   const today = d.citeToday ?? ""
   const slug = d.citeSlug ?? "page"
-  const key = `heavymetalindex-${slug.replace(/[^a-z0-9]+/gi, "-").replace(/(^-|-$)/g, "")}`
+  const key = `heavymetalcertified-${slug.replace(/[^a-z0-9]+/gi, "-").replace(/(^-|-$)/g, "")}`
 
   const download = (filename: string, text: string, mime: string) => {
     const blob = new Blob([text], { type: mime })
@@ -102,7 +101,7 @@ function bind(root: HTMLElement) {
       const lines = [
         `@misc{${key},`,
         `  title        = {${title}},`,
-        `  author       = {{Heavy Metal Index}},`,
+        `  author       = {{Heavy Metal Certified}},`,
         `  organization = {Institute of Contaminant Standards (ICS)},`,
         `  year         = {${year}},`,
         ...(doi ? [`  doi          = {${doi}},`] : []),
@@ -122,7 +121,7 @@ function bind(root: HTMLElement) {
       const lines = [
         "TY  - ELEC",
         `TI  - ${title}`,
-        "AU  - Heavy Metal Index",
+        "AU  - Heavy Metal Certified",
         "PB  - Institute of Contaminant Standards (ICS)",
         `PY  - ${year}`,
         ...(doi ? [`DO  - ${doi}`] : []),

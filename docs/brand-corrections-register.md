@@ -45,7 +45,7 @@ Heavy Metal Tested & Certified should reduce the enterprise risk of responsible 
 | C-021 | Build persistent product proof | Existing verify page provides the conceptual public lookup | Product passport with standard version, scope, status, surveillance, limitations, and history | Product task pending |
 | C-022 | Make HMTc useful to retailers without relying on the package mark | Existing verification and permissions-letter concepts | Retailer API, GTIN mapping, qualification sheet, bulk verification | Product task pending |
 | C-023 | Establish Cochrane-level HMI aspirations without overclaiming | Trust page describes HMI as a systematic-review-principled evidence system, not as equivalent to Cochrane | Registered protocols, dual review, audit, error-rate reporting, external methods board | HMI governance task pending |
-| C-024 | Verify the rendered implementation | Expand rendered acceptance coverage and add an all-route desktop/mobile/link/interaction audit | None | Implemented: 87 acceptance assertions and 159-route crawl pass |
+| C-024 | Verify the rendered implementation | Expand rendered acceptance coverage and add an all-route desktop/mobile/link/interaction audit | None | Implemented: 87 acceptance assertions and 158-route crawl pass |
 
 ## Release blockers
 

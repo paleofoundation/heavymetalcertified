@@ -6,3 +6,4 @@ public/
 .vercel
 tsconfig.tsbuildinfo
 .quartz-cache/
+.env*

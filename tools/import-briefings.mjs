@@ -202,7 +202,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const briefNum = seriesLabel.match(/Brief\s+(\d+)/i)
   const seriesName = briefNum ? `HMTc Standards Briefing ${briefNum[1]}` : "HMTc Standards Briefing"
   const refCount = m?.references?.length || 0
-  const pdfRel = fs.existsSync(path.join(PDF_DIR, `${slug}.pdf`)) ? `/static/briefings/${slug}.pdf` : null
+  const pdfRel = fs.existsSync(path.join(PDF_DIR, `${slug}.pdf`)) ? `/briefings/${slug}.pdf` : null
 
   // ---- frontmatter (chrome the shared HeroBand + Rail read) ----------------
   const front = [
@@ -220,6 +220,8 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     // Scholar-eligible only when a PDF exists to be the citable artifact; a
     // scholar-eligible page with no PDF emits a dangling citation_pdf_url.
     `scholar_eligible: ${pdfRel ? "true" : "false"}`,
+    pdfRel ? "scholar_pdf: true" : null,
+    pdfRel ? `scholar_pdf_url: "https://heavymetalcertified.com${pdfRel}"` : null,
     // The PDF edition is declared in frontmatter and rendered by the right-rail
     // (Rail.tsx reads `pdf`); no inline download card in the body.
     pdfRel ? `pdf: "${pdfRel}"` : null,

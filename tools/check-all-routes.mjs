@@ -73,7 +73,14 @@ function serve() {
         return res.end("403")
       }
       let file = path.join(root, safe)
-      if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, "index.html")
+      if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
+        const indexFile = path.join(file, "index.html")
+        file = fs.existsSync(indexFile)
+          ? indexFile
+          : fs.existsSync(`${file}.html`)
+            ? `${file}.html`
+            : indexFile
+      }
       else if (!fs.existsSync(file) && fs.existsSync(`${file}.html`)) file = `${file}.html`
       if (!fs.existsSync(file) || !fs.statSync(file).isFile()) {
         res.statusCode = 404

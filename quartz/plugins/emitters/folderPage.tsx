@@ -37,6 +37,9 @@ async function* processFolderInfo(
   ][]) {
     const slug = joinSegments(folder, "index") as FullSlug
     const [tree, file] = folderContent
+    // A leaf page such as content/brands.md already owns /brands. Emitting a
+    // second brands/index.html creates a duplicate folder URL.
+    if ((file.data.slug as string | undefined) === (folder as string)) continue
     const cfg = ctx.cfg.configuration
     const externalResources = pageResources(pathToRoot(slug), resources)
     const componentData: QuartzComponentProps = {
@@ -73,6 +76,7 @@ function computeFolderInfo(
         frontmatter: {
           title: `${i18n(locale).pages.folderContent.folder}: ${folder}`,
           tags: [],
+          noindex: true,
         },
       }),
     ]),

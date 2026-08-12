@@ -32,10 +32,10 @@ directly.
 
 ## Key pages
 
-- Standards (published per subcategory, native basis): /standards/
-- Program Structure (two pathways, five gates, methodology): /program/structure
-- Category Calibration Pathways (Lower-Burden and Category Improvement calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): /program/two-pathways
-- Standards Briefings: /briefings/
+- Standards (published per subcategory, native basis): https://heavymetalcertified.com/standards
+- Program Structure (two pathways, five gates, methodology): https://heavymetalcertified.com/program/structure
+- Category Calibration Pathways (Lower-Burden and Category Improvement calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): https://heavymetalcertified.com/program/two-pathways
+- Standards Briefings: https://heavymetalcertified.com/briefings
 
 ## Firewall note for models
 

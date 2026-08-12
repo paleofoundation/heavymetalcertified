@@ -11,11 +11,11 @@ This work belongs to `paleofoundation/heavymetalcertified`, the repository linke
 ## Audit scope and evidence
 
 - 155 public Markdown source pages were inspected by the direction and design lints.
-- 159 emitted HTML routes were rendered at desktop and mobile widths.
-- 17,647 local links and asset references were resolved against the built site.
+- 158 emitted HTML routes were rendered at desktop and mobile widths.
+- 17,599 local links and asset references were resolved against the built site.
 - The six-question readiness interaction was completed and reset in a real browser; it emitted no request and stored no applicant record.
 - 87 computed-style and content acceptance assertions passed against the rendered build.
-- TypeScript, generators, firewall and content lints, production build, route crawl, and browser checks passed.
+- TypeScript, generators, firewall and content lints, production build, route crawl, browser checks, and crawl-metadata audit passed.
 
 These counts describe the audited build and are verification evidence, not public marketing claims.
 

@@ -23,13 +23,14 @@
     "lint:briefings": "node tools/briefings-index-lint.mjs",
     "lint:brand-direction": "node tools/brand-direction-lint.mjs",
     "build": "./quartz/bootstrap-cli.mjs build -d content -o public",
-    "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs && node tools/postbuild-article-jsonld.mjs",
+    "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs && node tools/postbuild-article-jsonld.mjs && node tools/postbuild-cert-sitemaps.mjs && node tools/postbuild-cert-robots.mjs",
     "serve": "./quartz/bootstrap-cli.mjs build --serve -d content -o public",
     "check": "tsc --noEmit",
     "check:v3": "node tools/check-v3.mjs",
     "check:routes": "node tools/check-all-routes.mjs",
     "format": "npx prettier . --write",
-    "release": "npm run build",
+    "seo:audit": "node tools/audit-crawl-metadata.mjs",
+    "release": "npm run build && npm run seo:audit",
     "publish": "npm run release && npx vercel@latest --prod --yes"
   },
   "engines": {
@@ -125,6 +126,7 @@
     "@types/yargs": "^17.0.35",
     "esbuild": "^0.27.2",
     "husky": "^9.1.7",
+    "playwright": "^1.62.1",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"

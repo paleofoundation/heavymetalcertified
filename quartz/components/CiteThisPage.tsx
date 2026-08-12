@@ -14,7 +14,7 @@ const PUBLIC_EXACT = new Set(["trust"])
 function isCitable(slug: string | undefined): boolean {
   if (!slug) return false
   if (PUBLIC_EXACT.has(slug)) return true
-  return PUBLIC_PREFIXES.some((p) => slug.startsWith(p))
+  return PUBLIC_PREFIXES.some((p) => slug.startsWith(p) && !slug.endsWith("/index"))
 }
 
 function frontmatterString(value: unknown): string | undefined {
@@ -33,12 +33,17 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 
   const frontmatter = fileData.frontmatter as Record<string, unknown> | undefined
   const title = frontmatter?.title ? String(frontmatter.title) : (slug as string)
-  const wikiDoi = frontmatter ? frontmatterString(frontmatter.wiki_doi) : undefined
+  const certDoi = frontmatter
+    ? frontmatterString(frontmatter.cert_doi) ??
+      frontmatterString(frontmatter.doi) ??
+      frontmatterString(frontmatter.wiki_doi)
+    : undefined
+  const sourceUrl = frontmatter ? frontmatterString(frontmatter.source_url) : undefined
   const canonicalUrl = `https://heavymetalcertified.com/${slug}`
   const today = todayIsoDate()
 
-  const citationLine = wikiDoi
-    ? `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl} (DOI: ${wikiDoi}). Retrieved ${today}.`
+  const citationLine = certDoi
+    ? `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
     : `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl}. Retrieved ${today}.`
 
   // Year for reference-manager records: prefer the page's updated/established
@@ -48,6 +53,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     : undefined
   const year = (updated ?? today).slice(0, 4)
   const shareText = `${title} — Heavy Metal Tested & Certified`
+  const isRegulation = Boolean(slug?.startsWith("regulations/"))
 
   return (
     <aside
@@ -56,7 +62,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
       data-cite-title={title}
       data-cite-url={canonicalUrl}
       data-cite-year={year}
-      data-cite-doi={wikiDoi ?? ""}
+      data-cite-doi={certDoi ?? ""}
       data-cite-today={today}
       data-cite-slug={slug as string}
     >
@@ -64,13 +70,20 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <div>
           <span class="hmi-cite-label">Cite this page.</span>{" "}
           <span class="hmi-cite-meta">
-            Identify the named page, cert program, canonical URL, and retrieval date.
+            {isRegulation
+              ? "A published reference to the underlying government instrument."
+              : "Identify the named page, cert program, canonical URL, and retrieval date."}
           </span>
         </div>
         <div class="hmi-cite-actions">
           <button type="button" data-hmi-cite-toggle aria-expanded="true">
             Hide citation
           </button>
+          {sourceUrl && (
+            <a class="hmi-cite-download" href={sourceUrl} target="_blank" rel="noopener noreferrer">
+              Open primary source ↗
+            </a>
+          )}
         </div>
       </div>
       <div data-hmi-cite-detail>
@@ -111,9 +124,22 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           </a>
         </div>
         <p class="hmi-cite-note">
-          Certification rules, regulatory records, and source evidence are different layers. See the{" "}
-          <a href="/trust">Trust Center</a> for the boundary and the{" "}
-          <a href="/standard-stability">standard-stability record</a> for corrections and later editions.
+          {isRegulation ? (
+            <>
+              This page records a regulatory source; it does not create or replace the cited law,
+              rule, or guidance. See the <a href="/program/structure">program methodology</a>, or{" "}
+              <a href={`mailto:karen@paleofoundation.com?subject=${encodeURIComponent(`Correction: ${title}`)}`}>
+                report a correction
+              </a>.
+            </>
+          ) : (
+            <>
+              Certification rules, regulatory records, and source evidence are different layers.
+              See the <a href="/trust">Trust Center</a> for the boundary and the{" "}
+              <a href="/standard-stability">standard-stability record</a> for corrections and later
+              editions.
+            </>
+          )}
         </p>
       </div>
     </aside>
