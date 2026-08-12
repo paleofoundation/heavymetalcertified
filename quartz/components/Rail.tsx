@@ -1,5 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { pathToRoot, simplifySlug, type FullSlug } from "../util/path"
+import { canonicalUrl, pathToRoot, simplifySlug, type FullSlug } from "../util/path"
 
 // The v3 right rail (Heavy Metal Certified v3.dc.html 585–599): a "Connections"
 // list of blue cross-links, then the certificate Verify box, then a discreet
@@ -99,7 +99,7 @@ export default (() => {
 
     // Absolute canonical URL for the share icons (matches Head.tsx's socialUrl),
     // so a shared link is always the production page, not a relative or local one.
-    const canonical = cfg?.baseUrl ? `https://${cfg.baseUrl}/${simplifySlug(slug)}` : ""
+    const canonical = cfg?.baseUrl ? canonicalUrl(cfg.baseUrl, simplifySlug(slug)) : ""
     const shareTitle = String(fm.title ?? "")
     // The page's PDF edition, declared in frontmatter by the generators. An
     // absolute href resolves the same locally and in production.

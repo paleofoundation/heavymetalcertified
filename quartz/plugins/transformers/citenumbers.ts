@@ -42,7 +42,9 @@ export const SuperscriptCitations: QuartzTransformerPlugin = () => {
               const tag = (el.tagName ?? "").toLowerCase()
               const optedOut = (el.properties ?? {}).dataNoCite !== undefined
               if (SKIP_TAGS.has(tag) || optedOut) {
-                visit(el, "text", (t: Text) => skip.add(t))
+                visit(el, "text", (t: Text) => {
+                  skip.add(t)
+                })
               }
             })
 

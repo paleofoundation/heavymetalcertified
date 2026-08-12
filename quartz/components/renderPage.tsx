@@ -27,7 +27,9 @@ export function pageResources(
   staticResources: StaticResources,
 ): StaticResources {
   const contentIndexPath = joinSegments(baseDir, "static/contentIndex.json")
-  const contentIndexScript = `const fetchData = fetch("${contentIndexPath}").then(data => data.json())`
+  // The content index is ~1.6 MB raw and only search/explorer/graph need it.
+  // Keep one memoized promise, but do not start the request on every page load.
+  const contentIndexScript = `const getContentIndex=(()=>{let request;return()=>request??=fetch("${contentIndexPath}").then(data=>data.json())})()`
 
   const resources: StaticResources = {
     css: [
@@ -241,22 +243,6 @@ export function renderPage(
   // The homepage carries its own full-bleed hero, so it opts out of the proof's
   // 3-column grid (no snav/rail) and renders full-width.
   const isHome = (slug as string) === "index"
-
-  const LeftComponent = (
-    <div class="left sidebar">
-      {left.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
-      ))}
-    </div>
-  )
-
-  const RightComponent = (
-    <div class="right sidebar">
-      {right.map((BodyComponent) => (
-        <BodyComponent {...componentData} />
-      ))}
-    </div>
-  )
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"

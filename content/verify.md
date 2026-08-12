@@ -23,11 +23,12 @@ connections:
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:8px">Certificate number</div><p style="font-size:13px;line-height:1.6;color:#736b6b;margin:0 0 12px">On the license and in the brand&rsquo;s permissions letter.</p><div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#a9a1a1;border:1px dotted #e8e1db;background:#faf7f4;padding:8px 10px">HMTC-IF-0001</div></div>
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:8px">Product code</div><p style="font-size:13px;line-height:1.6;color:#736b6b;margin:0 0 12px">The GTIN or UPC as sold at retail.</p><div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#a9a1a1;border:1px dotted #e8e1db;background:#faf7f4;padding:8px 10px">0 12345 67890 5</div></div>
   </div>
-  <div style="display:flex;align-items:stretch;border:2px solid #9f2727;max-width:38rem;overflow:hidden;background:#fffdfb">
-    <input type="text" placeholder="Lot, certificate or product code" style="flex:1 1 auto;min-width:0;border:0;outline:none;font:inherit;font-size:15px;padding:13px 15px;color:#2b1f1f;background:transparent" />
-    <button type="button" style="border:0;background:#9f2727;color:#fff;font:inherit;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:0 20px;cursor:pointer">Verify</button>
+  <label for="certificate-lookup" style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#736b6b;margin:0 0 7px">Certificate lookup</label>
+  <div style="display:flex;align-items:stretch;border:2px solid #c9bdb8;max-width:38rem;overflow:hidden;background:#faf7f4">
+    <input id="certificate-lookup" name="certificate_lookup" type="text" autocomplete="off" placeholder="Lot, certificate or product code" aria-describedby="certificate-lookup-status" disabled style="flex:1 1 auto;min-width:0;border:0;outline:none;font:inherit;font-size:15px;padding:13px 15px;color:#736b6b;background:transparent" />
+    <button type="button" disabled aria-disabled="true" style="border:0;background:#736b6b;color:#fff;font:inherit;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:0 20px;cursor:not-allowed">Pending</button>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:12px 0 0">The register is not browsable. A query must identify a single product or certificate; there is no wildcard search and no multi-brand listing, which is a deliberate constraint on membership enumeration rather than a limitation of the interface.</p>
+  <p id="certificate-lookup-status" role="status" style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:12px 0 0">Lookup will open when the first certificate is issued. The register will require one exact lot, certificate or product code; it will not support wildcard or multi-brand browsing.</p>
 </section>
 
 <section id="record" style="margin-bottom:52px">
