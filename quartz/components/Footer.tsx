@@ -10,28 +10,30 @@ const footerSections = [
     title: "Standards",
     links: [
       ["All standards", "/standards"],
-      ["Infant & Child Foods", "/manuals/infant-and-child-foods"],
-      ["Program Manuals", "/manuals"],
-      ["The analyte panel", "/#panel"],
-      ["Standards Briefings", "/briefings"],
+      ["Program manuals", "/manuals"],
+      ["Infant & Child Foods", "/standards#infant-child-foods"],
+      ["Seafood", "/standards#seafood"],
+      ["Grains, cereals & rice", "/standards#grains-cereals-rice"],
     ],
   },
   {
-    title: "Methodology",
+    title: "Method & evidence",
     links: [
+      ["Method overview", "/method"],
       ["How limits are derived", "/program/structure"],
       ["Standard stability", "/standard-stability"],
-      ["Confidential Remediation Track", "/program/remediation"],
-      ["What happens to your data", "/what-happens-to-your-data"],
-      ["Category readiness", "/category-readiness"],
+      ["Regulatory register", "/regulations"],
+      ["Research library", "/articles"],
     ],
   },
   {
-    title: "Institute",
+    title: "Certification",
     links: [
-      ["Institute of Contaminant Standards (ICS)", "https://contaminantstandards.com"],
-      ["Heavy Metal Index", "https://heavymetalindex.com"],
-      ["Paleo Foundation", "https://paleofoundation.com"],
+      ["Certification overview", "/certification"],
+      ["For brands", "/for-brands"],
+      ["Category readiness", "/category-readiness"],
+      ["Cost & timing", "/cost-and-timing"],
+      ["Brand Control Room", "/portal"],
     ],
   },
   {
@@ -41,6 +43,7 @@ const footerSections = [
       ["Certified products directory", "/brands"],
       ["Using the mark", "/mark"],
       ["Apply for certification", "/apply"],
+      ["Institute of Contaminant Standards", "https://contaminantstandards.com"],
     ],
   },
 ]
@@ -86,8 +89,8 @@ export default (() => {
           </nav>
         </div>
         <div class="site-footer-bottom">
-          <p>© {year} Paleo Certified, Inc.</p>
-          <p>Operated by the Institute of Contaminant Standards (ICS).</p>
+          <p>© {year} Institute of Contaminant Standards (ICS)</p>
+          <p>Operated by the Institute of Contaminant Standards.</p>
         </div>
       </footer>
     )

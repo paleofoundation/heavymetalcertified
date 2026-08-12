@@ -1,27 +1,31 @@
 import { resolveRelative, type SimpleSlug, type FullSlug } from "../util/path"
 import { navPanels, type NavPanel } from "./generated/navPanels"
-import { brandPanel } from "./generated/brandPanel"
 
 // One top-level navigation item and its disclosure panel.
 //
 // Three properties this markup is built to guarantee, in order of importance:
 //
-// 1. Crawlable. Every panel is server-rendered in full on every page. All hrefs
-//    and their link text are in the initial HTML, and the panel is hidden with
-//    `visibility`, never `display:none` or `[hidden]`. Search and answer engines
-//    do not need to click in order to discover the applicant and evidence paths.
+// 1. **Crawlable.** Every panel is server-rendered in full on every page. All
+//    Every curated href and its link text are in the initial HTML, and the panel is
+//    hidden with `visibility`, never `display:none` or `[hidden]`. Googlebot,
+//    GPTBot, ClaudeBot and PerplexityBot do not click, so a panel whose contents
+//    arrive on interaction is a panel they never see
+//    (docs/architecture/wiki-ia-redesign-plan.md §4).
 //
-// 2. Usable on touch. The label is a real link to the hub; a separate chevron
-//    button owns the disclosure. Tapping the label navigates and tapping the
-//    chevron opens the panel.
+// 2. **Usable on touch.** The label is a real link to the hub; a separate
+//    chevron button owns the disclosure. Tapping "Metals" goes to /metals/,
+//    tapping the chevron opens the panel. This is what avoids the standard
+//    mega-menu failure where the first tap is sacrificed to a hover state that
+//    a touch device then latches open over the page.
 //
-// 3. Links, not commands. `aria-expanded` + `aria-controls` on a button beside
-//    a list of anchors implements the disclosure-navigation pattern without
-//    misrepresenting ordinary navigation as an application menu.
+// 3. **Links, not commands.** `aria-expanded` + `aria-controls` on a button
+//    beside a list of anchors — the disclosure-navigation pattern. Deliberately
+//    not `role="menu"`/`menuitem`, which makes screen readers announce
+//    navigation as an application command set.
 //
-// Evidence panels come from generated/navPanels.ts. The applicant journey is
-// maintained separately in generated/brandPanel.ts because it is a decision
-// architecture, not an inventory generated from standards or editorial data.
+// Contents come from quartz/components/generated/navPanels.ts, which is built
+// from the editorial seed by tools/build-nav-panels.mjs and fails the build if
+// any slug does not resolve.
 
 function Chevron() {
   return (
@@ -52,11 +56,9 @@ export function isPanelActive(currentSlug: string, panel: NavPanel): boolean {
 
 export function MegaMenu({ slug }: { slug: FullSlug }) {
   const current = (slug ?? "") as string
-  const panels = [brandPanel, ...navPanels.filter((panel) => panel.key !== "brands")]
-
   return (
     <ul class="hmi-nav-list">
-      {panels.map((panel) => {
+      {navPanels.map((panel) => {
         const active = isPanelActive(current, panel)
         const panelId = `hmi-panel-${panel.key}`
         const labelId = `hmi-navlabel-${panel.key}`
@@ -102,12 +104,6 @@ export function MegaMenu({ slug }: { slug: FullSlug }) {
                             <li>
                               <a href={href}>
                                 <span class="hmi-nav-childlabel">{child.label}</span>
-                                {child.count ? (
-                                  <span class="hmi-nav-count">
-                                    {child.count.toLocaleString("en-US")}
-                                    <span class="hmi-sr-only"> pages</span>
-                                  </span>
-                                ) : null}
                               </a>
                             </li>
                           )

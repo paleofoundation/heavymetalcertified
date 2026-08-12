@@ -8,7 +8,33 @@
       { "sel": "header", "prop": "position", "want": "sticky" },
       { "sel": ".hmtc-home-h1", "prop": "font-family", "want": "Lora", "match": "contains", "note": "the brand-control hero remains in the canonical display serif." },
       { "sel": "a.hmtc-hero-btn--solid[href$=\"readiness\"]", "prop": "count", "want": 1, "note": "the primary homepage action is Private Readiness, not a strictness explainer or direct external application." },
-      { "sel": "header a.hmtc-apply[href$=\"/readiness\"]", "prop": "count", "want": 1, "note": "the global action is Check readiness." }
+      { "sel": "header a.hmtc-apply[href$=\"/apply\"]", "prop": "count", "want": 1, "note": "the global action is the direct certification application." },
+      { "sel": ".hmi-nav-item", "prop": "count", "want": 3, "note": "The primary IA has exactly three authority doors." },
+      { "sel": ".hmi-nav-colhead", "prop": "count", "want": 9, "note": "Each of the three panels has exactly three populated groups." },
+      { "sel": ".hmi-nav-count", "prop": "count", "want": 0, "note": "Counts were removed from the orientation layer." },
+      { "sel": ".hmi-nav-item:first-child > .hmi-nav-panel .hmi-nav-lead > *", "prop": "count", "want": 3, "note": "Panel rail order remains title, blurb, all-link." },
+      { "sel": ".hmtc-site-search .search-button", "prop": "count", "want": 1, "note": "The header mounts the real Quartz site search once." },
+      { "sel": ".search-container", "prop": "display", "want": "block", "key": "/", "note": "Slash opens the real search modal." },
+      { "sel": ".search-container", "prop": "display", "want": "none", "key": "Escape", "note": "Escape dismisses search and restores focus." },
+      { "sel": "footer.site-footer .site-footer-column h2", "prop": "count", "want": 4 },
+      { "sel": ".hmtc-burger", "prop": "display", "want": "none", "viewport": { "width": 1150, "height": 900 }, "note": "1150px is the desktop breakpoint." },
+      { "sel": "html", "prop": "no-horizontal-overflow", "want": true, "viewport": { "width": 1150, "height": 900 } },
+      { "sel": ".hmtc-burger", "prop": "display", "want": "flex", "viewport": { "width": 1149, "height": 900 }, "note": "Below 1150px the primary nav becomes a drawer." },
+      { "sel": ".hmtc-nav", "prop": "visibility", "want": "visible", "viewport": { "width": 1149, "height": 900 }, "click": ".hmtc-burger", "note": "The mobile drawer opens without a second nav row." },
+      { "sel": ".hmtc-site-search", "prop": "order", "want": "1", "viewport": { "width": 1149, "height": 900 }, "note": "Search is first inside the drawer." },
+      { "sel": "html", "prop": "no-horizontal-overflow", "want": true, "viewport": { "width": 1149, "height": 900 } },
+      { "sel": ".hmtc-wordmark", "prop": "display", "want": "none", "viewport": { "width": 419, "height": 820 }, "note": "Below 420px the visual brand collapses to its mark; the anchor keeps the full accessible name." },
+      { "sel": "html", "prop": "no-horizontal-overflow", "want": true, "viewport": { "width": 419, "height": 820 } }
+    ],
+    "/method": [
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hub-card", "prop": "count", "want": 13 },
+      { "sel": ".hmtc-hub-grid", "prop": "background-color", "want": "#e8e1db", "note": "Navigation registries use the canonical 1px-gap grid." }
+    ],
+    "/certification": [
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hub-card", "prop": "count", "want": 14 },
+      { "sel": ".hmtc-hub-card", "prop": "border-radius", "want": "0px" }
     ],
     "/for-brands": [
       { "sel": "header", "prop": "height", "want": "68px" },

@@ -157,10 +157,8 @@ footer.site-footer .site-footer-logo,
 }
 
 // ============================================================
-//  v3 HEADER (Heavy Metal Certified v3.dc.html 41–109)
+//  THREE-DOOR HEADER AND MEGA MENU
 // ============================================================
-
-// The full-bleed shell renderPage emits; carries the sticky white ground.
 header.hmi-topnav-shell {
   position: sticky;
   top: 0;
@@ -169,7 +167,6 @@ header.hmi-topnav-shell {
   border-bottom: 1px solid #e8e1db;
 }
 header.hmi-topnav-shell::after {
-  // v3's 2px progress rule under the header
   content: "";
   position: absolute;
   left: 0;
@@ -185,19 +182,18 @@ header.hmi-topnav-shell::after {
   flex-wrap: nowrap;
   gap: 22px;
   max-width: 1760px;
+  height: 68px;
   margin: 0 auto;
   padding: 0 48px;
-  height: 68px;
 }
-
 .hmtc-brand {
   display: flex;
   align-items: center;
   gap: 11px;
   flex: 0 0 auto;
+  padding-right: 8px;
   white-space: nowrap;
   text-decoration: none;
-  padding-right: 8px;
   background: none !important;
 }
 .hmtc-mark { display: block; width: 36px; height: 42px; flex: 0 0 auto; }
@@ -209,143 +205,175 @@ header.hmi-topnav-shell::after {
   letter-spacing: -0.015em;
 }
 
-// Desktop nav trigger row. The component stylesheet already owns the accessible
-// burger + accordion treatment below 1200px; keeping desktop rules scoped here
-// prevents them from defeating that mobile behavior.
-@media (min-width: 1200px) {
 .hmtc-nav {
   display: flex;
   align-items: stretch;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   min-width: 0;
-  overflow: visible;
-  gap: 2px;
+  gap: 12px;
 }
 .hmtc-nav .hmi-nav-list {
   display: flex;
   align-items: stretch;
   gap: 2px;
+  flex: 0 1 auto;
+  min-width: 0;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.hmtc-nav .hmi-nav-item { display: flex; align-items: stretch; position: static; }
+.hmtc-nav .hmi-nav-item { display: flex; align-items: stretch; position: static; margin: 0; }
 .hmtc-nav .hmi-nav-top {
   display: flex;
   align-items: center;
   padding: 0 14px;
   font-size: 13.5px;
+  color: #3f3a3a;
   text-decoration: none;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
-  color: #3f3a3a;
   background: none !important;
 }
 .hmtc-nav .hmi-nav-top:hover,
-.hmtc-nav .hmi-nav-item:hover .hmi-nav-top,
+.hmtc-nav .hmi-nav-item.is-open > .hmi-nav-top,
 .hmtc-nav .hmi-nav-top.active {
   color: #9f2727;
   border-bottom-color: #9f2727;
 }
-// No chevron — the 2px underline is the whole affordance (v3).
 .hmtc-nav .hmi-nav-toggle { display: none; }
-}
-
 .hmtc-spacer { flex: 1 1 auto; min-width: 0; }
+
+header .hmtc-site-search {
+  align-self: center;
+  flex: 0 1 230px;
+  min-width: 76px;
+  max-width: 230px;
+}
+header .hmtc-site-search > .search-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  height: 36px;
+  padding: 0 13px;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif;
+  font-size: 12.5px;
+  border: 1px solid #e6ded8;
+  border-radius: 3px;
+  background: #fbf8f5;
+}
+header .hmtc-site-search > .search-button:hover { border-color: #c9bdb8; background: #fdfaf8; }
+header .hmtc-site-search > .search-button .search-button-glyph {
+  flex: 0 0 auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: #b7aeae;
+}
+header .hmtc-site-search > .search-button p {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: #736b6b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+header .hmtc-site-search > .search-button kbd {
+  margin-left: auto;
+  padding: 1px 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: #b7aeae;
+  border: 1px solid #ebe4de;
+  border-radius: 2px;
+  background: transparent;
+}
+header .hmtc-site-search .search-space > input,
+header .hmtc-site-search .search-space > .search-layout,
+header .hmtc-site-search .search-layout > div { border-radius: 3px; }
 
 .hmtc-actions {
   display: flex;
   align-items: center;
-  flex: 0 1 auto;
-  min-width: 0;
+  flex: 0 0 auto;
   gap: 12px;
 }
-.hmtc-search {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  height: 36px;
-  padding: 0 13px;
-  border: 1px solid #e6ded8;
-  border-radius: 3px;
-  background: #fbf8f5 !important;
-  flex: 0 1 320px;
-  min-width: 60px;
-  overflow: hidden;
-  text-decoration: none;
-}
-.hmtc-search:hover { border-color: #c9bdb8; background: #fdfaf8 !important; }
-.hmtc-search-glyph { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #b7aeae; flex: 0 0 auto; }
-.hmtc-search-label { font-size: 12.5px; color: #a9a1a1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
-.hmtc-search-kbd { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: #b7aeae; border: 1px solid #ebe4de; border-radius: 2px; padding: 1px 4px; }
-.hmtc-login { font-size: 12.5px; color: #736b6b; flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
-.hmtc-login:hover { color: #9f2727; }
-.hmtc-apply {
-  font-size: 12.5px;
-  color: #fff !important;
-  background: #9f2727 !important;
-  border-radius: 3px;
-  padding: 8px 15px;
+header .hmtc-verify,
+header .hmtc-login,
+header .hmtc-mobile-verify {
   flex: 0 0 auto;
+  font-size: 12.5px;
   white-space: nowrap;
   text-decoration: none;
+  background: none !important;
+}
+header .hmtc-verify {
+  padding: 7px 12px;
+  color: #9f2727;
+  border: 1px solid #d7b9b5;
+  border-radius: 3px;
+}
+header .hmtc-verify:hover { color: #7f1f1f; border-color: #9f2727; }
+header .hmtc-login { color: #736b6b; }
+header .hmtc-login:hover { color: #9f2727; }
+.hmtc-apply {
+  flex: 0 0 auto;
+  padding: 8px 15px;
+  font-size: 12.5px;
+  color: #fff !important;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 3px;
+  background: #9f2727 !important;
 }
 .hmtc-apply:hover { background: #7f1f1f !important; }
+.hmtc-mobile-verify,
+.hmtc-burger { display: none; }
 
-@media (min-width: 1200px) {
-  .hmtc-burger { display: none; }
-}
-
-// Mega-menu panel — drop below the full-width header (v3 71–95)
-@media (min-width: 1200px) {
+// Full-width desktop panel. The trigger remains a real hub link; the separate
+// disclosure control appears only in the touch drawer.
 .hmtc-nav .hmi-nav-panel {
   position: absolute;
   left: 0;
   right: 0;
   top: 70px;
+  z-index: 79;
   background: #fffdfb;
   border-bottom: 1px solid #e8e1db;
   box-shadow: 0 22px 44px -24px rgba(120, 30, 30, 0.26);
-  visibility: hidden;
-  z-index: 79;
-}
-.hmtc-nav .hmi-nav-item:hover .hmi-nav-panel,
-.hmtc-nav .hmi-nav-panel.is-open {
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 .hmtc-nav .hmi-nav-panel-inner {
-  max-width: 1760px;
-  margin: 0 auto;
-  padding: 32px 48px 38px;
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 56px;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 32px 48px 38px;
 }
-.hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
-.hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
-.hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
+.hmtc-nav .hmi-nav-lead { padding-right: 40px; border-right: 1px solid #efe9e3; }
+.hmtc-nav .hmi-nav-title { margin-bottom: 10px; font-family: Lora, serif; font-size: 20px; color: #9f2727; }
+.hmtc-nav .hmi-nav-blurb { max-width: none; margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
 .hmtc-nav .hmi-nav-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
+  max-width: none;
 }
-.hmtc-nav .hmi-nav-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hmtc-nav .hmi-nav-col ul { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.hmtc-nav .hmi-nav-col li { margin: 0; }
 .hmtc-nav .hmi-nav-colhead {
+  margin: 0 0 11px;
+  padding-bottom: 9px;
   font-family: "IBM Plex Mono", monospace;
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #a9a1a1;
-  margin: 0 0 11px;
-  padding-bottom: 9px;
   border-bottom: 1px solid #efe9e3;
 }
 .hmtc-nav .hmi-nav-col li a {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
   padding: 6px 0;
   font-size: 13.5px;
   color: #3f3a3a;
@@ -354,10 +382,9 @@ header.hmi-topnav-shell::after {
   background: none !important;
 }
 .hmtc-nav .hmi-nav-col li a:hover { color: #9f2727; }
-.hmtc-nav .hmi-nav-count { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #b7aeae; flex: 0 0 auto; }
 .hmtc-nav .hmi-nav-all {
   display: inline-block;
-  margin-top: 0;
+  margin: 0;
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.06em;
@@ -367,32 +394,210 @@ header.hmi-topnav-shell::after {
   background: none !important;
 }
 .hmtc-nav .hmi-nav-all:hover { text-decoration: underline; text-underline-offset: 0.18em; }
-}
 
-@media (max-width: 1199px) {
-  .hmtc-search-label, .hmtc-search-kbd, .hmtc-login { display: none; }
-  .hmtc-search { flex: 0 0 auto; width: 36px; justify-content: center; padding: 0; }
-
-  // Keep the closed mobile header to one row. The shared TopNav component
-  // supplies the burger-controlled drawer and in-flow disclosure panels.
-  header.hmi-topnav-shell::after { display: none; }
+@media (max-width: 1149px) {
   .hmtc-bar {
-    height: 58px;
-    min-height: 58px;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 16px;
     position: relative;
+    align-items: center;
+    gap: 12px;
+    height: 68px;
+    padding: 0 24px;
   }
-  .hmtc-brand { flex: 1 1 auto; padding-right: 0; }
-  .hmtc-actions { flex: 0 0 auto; }
+  .hmtc-brand { flex: 1 1 auto; min-width: 0; padding-right: 0; }
+  .hmtc-mobile-verify {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 0 11px;
+    color: #9f2727;
+    border: 1px solid #d7b9b5;
+    border-radius: 3px;
+  }
+  .hmtc-burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    color: #3f3a3a;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+  }
+  .hmtc-burger:focus-visible { outline: 2px solid #9f2727; outline-offset: 2px; }
+
+  .hmtc-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 68px;
+    z-index: 78;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: calc(100vh - 68px);
+    padding: 18px 24px 24px;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    background: #fffdfb;
+    border-bottom: 1px solid #e8e1db;
+    box-shadow: 0 22px 44px -24px rgba(120, 30, 30, 0.26);
+  }
+  .hmtc-nav.open { visibility: visible; opacity: 1; pointer-events: auto; }
+  header .hmtc-site-search {
+    order: 1;
+    align-self: stretch;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 14px;
+  }
+  header .hmtc-site-search > .search-button { height: 42px; }
+  .hmtc-nav .hmi-nav-list {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    border-bottom: 1px solid #e8e1db;
+  }
+  .hmtc-nav .hmi-nav-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    width: 100%;
+    border-top: 1px solid #f2ece7;
+  }
+  .hmtc-nav .hmi-nav-top {
+    width: 100%;
+    min-height: 48px;
+    padding: 0;
+    border-bottom: 0;
+  }
+  .hmtc-nav .hmi-nav-top.active { border-bottom: 0; }
+  .hmtc-nav .hmi-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    color: #736b6b;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+  }
+  .hmtc-nav .hmi-nav-toggle svg { transition: transform 0.14s ease; }
+  .hmtc-nav .hmi-nav-item.is-open > .hmi-nav-toggle svg { transform: rotate(180deg); }
+  .hmtc-nav .hmi-nav-panel {
+    position: static;
+    grid-column: 1 / -1;
+    max-height: 0;
+    overflow: hidden;
+    border: 0;
+    box-shadow: none;
+  }
+  .hmtc-nav .hmi-nav-item.is-open > .hmi-nav-panel { max-height: 1200px; }
+  .hmtc-nav .hmi-nav-panel-inner {
+    display: block;
+    padding: 0 0 20px 14px;
+  }
+  .hmtc-nav .hmi-nav-lead { padding: 0; border: 0; }
+  .hmtc-nav .hmi-nav-title,
+  .hmtc-nav .hmi-nav-blurb { display: none; }
+  .hmtc-nav .hmi-nav-all { margin: 2px 0 16px; }
+  .hmtc-nav .hmi-nav-cols { grid-template-columns: 1fr; gap: 18px; }
   .hmtc-spacer { display: none; }
+  .hmtc-actions {
+    order: 3;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 18px;
+  }
+  .hmtc-actions .hmtc-verify { display: none; }
+  .hmtc-actions .hmtc-login,
+  .hmtc-actions .hmtc-apply {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+  }
+  .hmtc-actions .hmtc-login { flex: 1 1 auto; border: 1px solid #e6ded8; border-radius: 3px; }
+  .hmtc-actions .hmtc-apply { flex: 1 1 auto; }
 }
 
-@media (max-width: 520px) {
-  .hmtc-bar { padding: 8px 12px; gap: 8px; }
-  .hmtc-wordmark, .hmtc-search { display: none; }
+@media (max-width: 419px) {
+  .hmtc-bar { padding: 0 16px; }
+  .hmtc-wordmark { display: none; }
+  .hmtc-mark { width: 32px; height: 38px; }
+  .hmtc-nav { padding-right: 16px; padding-left: 16px; }
+}
+
+// ============================================================
+//  ORIENTATION HUBS — Tier-2 grid-of-records
+// ============================================================
+.hmtc-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 22px;
+  background: #e8e1db;
+  border: 1px solid #e8e1db;
+}
+.hmtc-hub-grid--compact { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.wiki-content .hmtc-hub-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 18px;
+  padding: 20px 21px;
+  color: #3f3a3a;
+  text-decoration: none;
+  background: #fffdfb;
+}
+.wiki-content .hmtc-hub-card:hover { color: #3f3a3a; background: #fbf8f5; }
+.hmtc-hub-kicker {
+  grid-column: 1;
+  margin-bottom: 7px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+}
+.hmtc-hub-title {
+  grid-column: 1;
+  margin-bottom: 7px;
+  font-family: Lora, serif;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #9f2727;
+}
+.hmtc-hub-copy {
+  grid-column: 1;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #736b6b;
+}
+.hmtc-hub-arrow {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #9f2727;
+}
+@media (max-width: 720px) {
+  .hmtc-hub-grid,
+  .hmtc-hub-grid--compact { grid-template-columns: minmax(0, 1fr); }
 }
 
 // ============================================================
