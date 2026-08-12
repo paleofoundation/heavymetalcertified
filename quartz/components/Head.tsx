@@ -221,7 +221,7 @@ export default (() => {
     // Url of current page. simplifySlug strips `index`; canonicalUrl then
     // normalizes folders to Vercel's final slashless 200 URL. A cross-domain canonical or
     // a self-canonical pointing at a non-served path is the duplicate-content
-    // defect that folded the old paleofoundation.com↔heavymetaltested.com pair.
+    // defect that folded the old paleofoundation.com↔certification-site pair.
     const socialUrl =
       fileData.slug === "404"
         ? url.toString()

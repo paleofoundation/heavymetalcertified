@@ -5,7 +5,80 @@
     "/": [
       { "sel": "body", "prop": "background-color", "want": "#fffdfb" },
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
-      { "sel": "header", "prop": "position", "want": "sticky" }
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-home-h1", "prop": "font-family", "want": "Lora", "match": "contains", "note": "the brand-control hero remains in the canonical display serif." },
+      { "sel": "a.hmtc-hero-btn--solid[href$=\"readiness\"]", "prop": "count", "want": 1, "note": "the primary homepage action is Private Readiness, not a strictness explainer or direct external application." },
+      { "sel": "header a.hmtc-apply[href$=\"/readiness\"]", "prop": "count", "want": 1, "note": "the global action is Check readiness." }
+    ],
+    "/for-brands": [
+      { "sel": "header", "prop": "height", "want": "68px" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/readiness": [
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".hmtc-readiness-check", "prop": "count", "want": 1, "note": "the on-device readiness decision tool is mounted once, before the explanatory article." },
+      { "sel": ".hmtc-readiness-check select", "prop": "count", "want": 6, "note": "the private starting point remains a six-question check." },
+      { "sel": ".hmtc-readiness-check__actions button[type=\"submit\"]", "prop": "background-color", "want": "#9f2727" },
+      { "sel": "[data-readiness-result]", "prop": "display", "want": "none", "note": "the decision map is hidden until a complete form is submitted." },
+      { "sel": ".wiki-content #show-us-what-you-already-know", "prop": "count", "want": 1, "note": "the evidence-reuse destination uses Quartz's generated heading anchor without exposing source syntax." },
+      { "sel": ".snav a[href=\"#show-us-what-you-already-know\"]", "prop": "count", "want": 1, "note": "the page rail links to the rendered evidence-reuse heading." },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "the readiness surface contains no bold markup." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
+    ],
+    "/what-if-we-dont-pass": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/trust": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/what-happens-to-your-data": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/standard-stability": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/category-readiness": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content #current-commercial-readiness-map + p + .table-container tbody tr", "prop": "count", "want": 10, "note": "one generated row per authoritative category state." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
+    ],
+    "/mark": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content img[src$=\"hmtc-mark-red.svg\"]", "prop": "count", "want": 1 },
+      { "sel": ".wiki-content img[src$=\"hmtc-mark-white.svg\"]", "prop": "count", "want": 1 },
+      { "sel": ".wiki-content a[download]", "prop": "count", "want": 0, "note": "public previews do not expose production artwork as a self-service license." }
+    ],
+    "/portal": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content form", "prop": "count", "want": 0, "note": "the control-room specimen is explicitly nonfunctional." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
+    ],
+    "/brands": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content [data-certified-product]", "prop": "count", "want": 0, "note": "the public directory does not invent certificate holders before any exist." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
+    ],
+    "/verify": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".wiki-content form", "prop": "count", "want": 0, "note": "lookup remains visibly inactive until the first certificate exists." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 }
     ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },

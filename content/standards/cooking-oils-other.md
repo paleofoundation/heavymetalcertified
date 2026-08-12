@@ -10,12 +10,12 @@ standard_version: "2.2 (2026-06-09)"
 methodology_version: "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)"
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/cooking-oils-other
-effective_date: 2026-08-11
+effective_date: 2026-06-09
 scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 snapshot:
   - { k: "Analytes published", v: "0 / 10" }
-  - { k: "Pathway", v: "Clean" }
+  - { k: "Pathway", v: "Lower-Burden" }
   - { k: "Native basis", v: "as sold" }
   - { k: "Standard version", v: "2.2 (2026-06-09)" }
 connections:
@@ -41,7 +41,7 @@ connections:
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse">
     <thead>
-      <tr style="background:#9f2727;color:#fff">
+      <tr>
         <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Pooled</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Rationale</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Status</th>
       </tr>
     </thead>

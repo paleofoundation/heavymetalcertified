@@ -11,12 +11,10 @@ import topNavScript from "./scripts/topNav.inline"
 // @ts-ignore — homepage hero search (?q= handling) — no-ops off the index slug
 import homeSearchScript from "./scripts/homeSearch.inline"
 
-// The v3 global header, reproduced from Heavy Metal Certified v3.dc.html
-// (lines 41–109). renderPage.tsx lifts this into a full-bleed sticky
-// <header class="hmi-topnav-shell">; the shell carries the white ground +
-// bottom rule (see cert-chrome.scss). Left→right: brand (mark + wordmark),
-// the five mega-menu triggers, a flex spacer, then the actions group
-// (certificate lookup · Log in · Apply).
+// The v3 global header. renderPage.tsx lifts this into a full-bleed sticky
+// <header class="hmi-topnav-shell">; the shell carries the white ground and
+// bottom rule. Left to right: brand, brand-first and evidence mega-menu triggers,
+// flex spacer, then certificate lookup, Log in, and Check readiness.
 
 export default (() => {
   const TopNav: QuartzComponent = (props: QuartzComponentProps) => {
@@ -76,10 +74,10 @@ export default (() => {
             <span class="hmtc-search-kbd" aria-hidden="true">/</span>
           </a>
           <a class="hmtc-login" href={`${baseDir}/portal`}>
-            Portal preview
+            Control Room preview
           </a>
-          <a class="hmtc-apply" href={`${baseDir}/apply`}>
-            Apply
+          <a class="hmtc-apply" href={`${baseDir}/readiness`}>
+            Check readiness
           </a>
         </div>
       </div>
@@ -87,11 +85,6 @@ export default (() => {
   }
 
   TopNav.css = style
-  // afterDOMLoaded is a single slot, so ship both behaviours here, each IIFE-wrapped
-  // to isolate scope: the mega-menu disclosure JS (topNav.inline — hover intent,
-  // click-outside + Escape to close, keyboard nav; sets `.hmi-nav--js` to disable the
-  // CSS-only fallback that leaves click-opened panels stuck open) and the homepage
-  // hero-search wiring.
   TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();`
   return TopNav
 }) satisfies QuartzComponentConstructor

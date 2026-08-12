@@ -1,104 +1,99 @@
 ---
-title: Apply for certification
+title: Start with Readiness or Apply for Certification
 type: apply
 audience: [brand-legal, retailer-compliance, certifier]
-description: "HMTc is administered by the Institute of Contaminant Standards (ICS) alongside Certified Paleo, KETO Certified and Grain-Free Certified. Fees are annual and revenue-based; a brand may hold several programs on one application."
+description: "Choose the correct entry stage, confirm category and product scope, reuse qualified evidence, receive an itemized quote, complete the baseline, and enter surveillance only after a supported certification decision."
 snapshot:
-  - { k: "Standard timeline", v: "4–8 weeks" }
-  - { k: "Subcategories open", v: "15" }
-  - { k: "Term options", v: "1 / 2 / 3 yr" }
-  - { k: "Programs bundlable", v: "4" }
+  - { k: "Standard target", v: "4–8 weeks" }
+  - { k: "Initial baseline", v: "3 lots" }
+  - { k: "Certification scope", v: "Per product" }
+  - { k: "Best first step", v: "Readiness" }
 connections:
-  - { label: "Which standard applies to my product", href: "/standards" }
-  - { label: "Verify an existing certificate", href: "/verify" }
-  - { label: "Brand portal", href: "/portal" }
-  - { label: "Fee calculator on paleofoundation.com", href: "https://paleofoundation.com/pricing" }
+  - { label: "Private Readiness", href: "/readiness" }
+  - { label: "What if the product does not pass?", href: "/what-if-we-dont-pass" }
+  - { label: "Cost and timing", href: "/cost-and-timing" }
+  - { label: "Category readiness", href: "/category-readiness" }
+  - { label: "Standards register", href: "/standards" }
+rail_box:
+  title: "Choose the correct entry stage"
+  body: "Readiness is nonpublic planning. Formal certification is a product decision under the governing standard."
+  cta_label: "Check readiness first"
+  cta_href: "/readiness"
 ---
 
-<section id="process" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The process</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Three stages. The audit is the long one, and it is long because the panel is ten analytes across every subcategory a brand sells into, tested by an accredited laboratory rather than declared.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
-    <div style="background:#fffdfb;padding:19px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:8px">Step 01</div><div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Apply</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">One application covers the brand and every product in it. Name the subcategories you sell into; that determines which standards apply.</p></div>
-    <div style="background:#fffdfb;padding:19px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:8px">Step 02</div><div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Audit</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Four to eight weeks. Ingredient and formulation review, then the ten-analyte panel run at an accredited laboratory on each product form.</p></div>
-    <div style="background:#fffdfb;padding:19px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:8px">Step 03</div><div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Approve</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Licensing and permissions letters issue per product, the public brand page goes live, and lot surveillance begins.</p></div>
-  </div>
-</section>
+A brand should not be pushed into a formal certification decision merely because it has expressed interest. The correct entry stage depends on whether the applicable category is open, whether the product form is clear, whether existing evidence is usable, and whether the brand understands the cost and consequence rules.
 
-<section id="artwork" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Artwork</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
-    <div style="background:#fffdfb;padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px"><img src="/static/hmtc-mark-red.svg" alt="HMTc mark, burgundy on light" width="72" height="84" style="display:block;width:72px;height:84px" /><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;text-align:center">Primary &middot; on light</div></div>
-    <div style="background:#7f1f1f;padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px"><img src="/static/hmtc-mark-white.svg" alt="HMTc mark, white on dark" width="72" height="84" style="display:block;width:72px;height:84px" /><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);text-align:center">Reversed &middot; on dark</div></div>
-  </div>
-  <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:16px">
-    <a href="/static/hmtc-mark-red.svg" download style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Primary SVG</a>
-    <a href="/static/hmtc-mark-white.svg" download style="display:inline-block;color:#9f2727;background:#fffdfb;border:1px solid #f2dcda;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Reversed SVG</a>
-  </div>
-  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No reproduction spec published yet</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Program Manual Part 2.5 governs <em style="font-style:normal;color:#736b6b">who</em> may display the mark and <em style="font-style:normal;color:#736b6b">what</em> may be claimed alongside it, but sets no minimum size, clear space or color-reproduction rules. Those belong in a mark usage guide that does not exist yet. Until it does, this page states no dimensions rather than inventing them &mdash; a printer following a fabricated spec would be following nothing.</p>
-  </div>
-</section>
+## Choose the entry stage
 
-<section id="eligibility" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Eligibility</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A product is eligible when a published subcategory standard exists for its form. Standards publish per subcategory, never as a category-wide release, so a subcategory can open long before the rest of its category does. An application is not charged until the standard for that subcategory publishes.</p>
-  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:20px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">There is no pass-by-declaration route. A brand cannot certify by attesting that it meets the standard; it certifies by testing to it at an accredited laboratory and submitting the results. That is the whole difference between this mark and a self-affixed claim.</p>
-  </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">HMTc can be held alone or bundled with Certified Paleo, KETO Certified and Grain-Free Certified on a single application. Bundling reduces audit duplication but does not change the analyte panel or the thresholds.</p>
-</section>
+| Entry | Use it when | What it creates | Mark use |
+|---|---|---|---|
+| Private Readiness | The brand wants to understand eligibility, evidence, gaps, portfolio sequence, cost drivers, or intervention needs before formal testing | A private decision packet; no certification status | Not permitted |
+| Confidential Remediation | A pre-certification product is not yet certifiable, remains within applicable legal limits, and needs a controlled improvement pathway | A private support and corrective-action record; no certificate | Not permitted |
+| Formal Certification | The category is open, the product and form are in scope, the evidence and production lots are ready, and the written quote and rules are accepted | A product-specific certification decision under the governing edition | Permitted only if the resulting status authorizes it |
+| Surveillance and Renewal | The product is already certified and must maintain the truth of the claim | Ongoing lot record, status control, CAPA, verification, and renewal | Status-dependent |
 
-<section id="calculator" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Fee inputs</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">The live quote calculator asks four questions. Fees are annual, quoted in USD, and scale with the applicant&rsquo;s gross annual revenue so that certification stays reachable for a small brand.</p>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
-    <div style="padding:18px 20px;border-bottom:1px solid #e8e1db"><div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727">01</span><span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;flex:1">Which certifications?</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1">Select all that apply</span></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Certified Paleo</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">KETO Certified</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Grain-Free Certified</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Heavy Metal Tested</span></div></div>
-    <div style="padding:18px 20px;border-bottom:1px solid #e8e1db"><div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727">02</span><span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;flex:1">How many years?</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1">Select one</span></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">1 yr — standard</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">2 yr — save 10%</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">3 yr — save 20%</span></div></div>
-    <div style="padding:18px 20px;border-bottom:1px solid #e8e1db"><div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727">03</span><span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;flex:1">Gross annual revenue?</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1">Revenue band</span></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Band determines the annual fee</span></div></div>
-    <div style="padding:18px 20px;border-bottom:1px solid #e8e1db"><div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727">04</span><span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;flex:1">Is this a rush order?</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1">Select one</span></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">No rush</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">10 business days +$5,000</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">3 business days +$10,000</span></div></div>
-    <div style="padding:14px 20px;background:#fbf8f5;font-size:11.5px;line-height:1.55;color:#736b6b">Rush surcharges are flat: +$5,000 for ten business days, +$10,000 for three. Multi-year terms take 10% off at two years and 20% at three.</div>
-  </div>
-  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Revenue bands not reproduced here</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The dollar figure per revenue band is computed by the calculator on paleofoundation.com and is not published as a table. It is deliberately absent rather than estimated &mdash; a fee schedule a brand budgets against cannot be a guess.</p>
-  </div>
-  <p style="margin:16px 0 0"><a href="https://paleofoundation.com/pricing" style="display:inline-block;background:#9f2727;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 15px;border-radius:3px;text-decoration:none">Open the live fee calculator &#8599;</a></p>
-</section>
+## Before formal samples are submitted
 
-<section id="included" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">What the fee covers</h2>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:20px">
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Ingredient and formulation review</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Ten-analyte panel, per product form</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certification marks and marketing assets</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Permissions letter per certified product</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Public brand page in the register</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Lot surveillance and trend notices</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Confidential Remediation Track access</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Support through the certification period</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">included</span></div>
-  </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Renewal reminders go out sixty, thirty and ten days before a certificate lapses. Renewal for a brand in good standing is a short-form process; the analyte panel is re-run, but the audit is not repeated from zero.</p>
-</section>
+The brand should receive written confirmation of:
 
-<section id="questions">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Questions</h2>
-  <div class="hmtc-faq-list">
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">Can I certify several products on one application?</span></summary><div class="hmtc-faq-a"><p>Yes. Certification covers the brand, and a single application can include many products. Each product still receives its own certificate against the standard for its subcategory and basis, because those differ per product form.</p></div></details>
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">How long does it take?</span></summary><div class="hmtc-faq-a"><p>Four to eight weeks from submission for standard processing. Rush options run ten business days for an additional $5,000 or three business days for $10,000, for time-sensitive launches.</p></div></details>
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">What happens when the certificate expires?</span></summary><div class="hmtc-faq-a"><p>Renewal reminders go out sixty, thirty and ten days before expiry. Renewal is streamlined for a brand in good standing, and multi-year renewals carry the same 10% and 20% discounts.</p></div></details>
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">Are there discounts for small brands?</span></summary><div class="hmtc-faq-a"><p>Pricing is revenue-based rather than flat, so a company with lower gross annual revenue pays a lower annual fee. That is the mechanism by which certification stays reachable rather than a separate discount.</p></div></details>
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">Which programs can be combined?</span></summary><div class="hmtc-faq-a"><p>Certified Paleo, KETO Certified and Grain-Free Certified can be held together, and Heavy Metal Tested can be added for eligible product categories. Bundling reduces duplicated audit work; it does not relax any threshold.</p></div></details>
-    <details class="hmtc-faq"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">What if my subcategory has no published standard yet?</span></summary><div class="hmtc-faq-a"><p>Register interest in it. Standards publish per subcategory the moment each is defensibly ready, never as a category-wide release, so a subcategory can publish long before the rest of its category. An application is not charged until the standard for that subcategory publishes.</p></div></details>
-    <div class="hmtc-faq-end"></div>
+| Required confirmation | Why it matters |
+|---|---|
+| Product, form, intended consumer, and markets | Determines the scope, basis, regulatory comparators, and methods. |
+| Category readiness state | Prevents a technical page from being mistaken for an operational certification pathway. |
+| Governing standard and edition | Identifies the actual rule that will control the decision. |
+| Required analytes, speciation, lots, and sample plan | Defines the analytical work and prevents scope expansion after submission. |
+| Existing evidence accepted for reuse | Shows which prior investment reduces new work and which records are readiness-only. |
+| Laboratory and logistics route | Shows who samples, who ships, who tests, and how custody is preserved. |
+| Complete cost treatment | Separates program, laboratory, logistics, confirmation, remediation, surveillance, renewal, and optional charges. |
+| Result-consequence rules | Shows the confirmation, status, mark, public, and legal boundaries before results. |
+| Data notice and agreement | Identifies confidentiality, access, retention, legal exceptions, and HMI firewall. |
+
+If these are not known, the appropriate route is [Private Readiness](/readiness), not formal certification.
+
+## The certification path
+
+| Stage | Program action | Brand action | Output |
+|---|---|---|---|
+| 1. Scope | Confirm product classification, standard, basis, category readiness, and markets | Supply accurate product, formula, form, intended-use, facility, and market information | Written scope record |
+| 2. Evidence | Review existing tests and records under acceptance criteria | Supply complete laboratory, lot, method, custody, unit, and formulation records | Evidence Reuse Passport and gap map |
+| 3. Quote and agreement | State every expected cost class, dependency, decision rule, and data term | Approve scope, quote, agreement, and sample plan | Authorized certification work order |
+| 4. Baseline | Coordinate required testing and technical review across the minimum baseline | Make eligible production lots available and preserve identity and custody | Complete analytical record |
+| 5. Decision | Apply the governing standard, uncertainty rule, status framework, and appeal route | Respond to factual questions; do not negotiate a threshold after the result | Product-specific decision |
+| 6. Issue and maintain | Issue certificate and controlled mark rights where authorized; begin surveillance | Use the mark only within scope, report changes, complete surveillance, and execute CAPA | Verifiable, maintained certification record |
+
+The current published target for standard processing is four to eight weeks after a complete submission and accepted samples. That target excludes time controlled by missing records, product reclassification, unavailable lots, laboratory method questions, borderline confirmation, corrective action, reformulation, or brand delay.
+
+## Existing evidence is reviewed before new testing is ordered
+
+A qualified existing result may satisfy part of the baseline or reduce the new analytical scope. A record can also be useful for readiness without being sufficient for certification.
+
+The review considers laboratory accreditation and scope, analyte and species, method, sensitivity, matrix, sample and lot identity, recency, chain of custody, measurement uncertainty, units, reporting basis, and completeness. The program should test only the genuine gap while preserving the standard required for a certification decision.
+
+[See the complete readiness and evidence-reuse process](/readiness).
+
+## Cost treatment
+
+The written quote must identify whether each component is included, separately billed, conditional, or not expected. The website does not ask a brand to infer laboratory-charge treatment from a generic fee label.
+
+[Review the complete cost and timing architecture](/cost-and-timing).
+
+## What happens when the first result is not a pass
+
+A private readiness gap creates no public certification failure. A borderline result follows the published confirmation rule. A certification nonconformity and an applicable legal exceedance are separate determinations. A certified-product event follows the governing status, CAPA, mark-use, and verification rules.
+
+The program does not publish a failed-applicant registry, but confidentiality does not override law, recall, reporting, legal process, or contractual duties.
+
+[Read the complete result-consequence matrix](/what-if-we-dont-pass).
+
+## Current submission endpoint
+
+The brand decision journey, standards, readiness, consequences, cost architecture, and governance record belong on HeavyMetalCertified.com. The present administrative submission endpoint remains on the existing application system while a fully on-domain intake and applicant account are built.
+
+<div id="start" style="border:1px solid #eddede;background:#fdf4f3;padding:24px 26px;margin-top:28px">
+  <div style="font-family:Lora,serif;font-size:24px;line-height:1.4;color:#2b1f1f;margin-bottom:10px">Choose the safest next step</div>
+  <p style="font-size:15px;line-height:1.72;color:#5a4141;margin:0 0 16px;max-width:72ch">Begin with Private Readiness when scope, existing evidence, category availability, likely intervention, or cost is uncertain. Use the current submission endpoint only when the brand is ready to provide formal application information.</p>
+  <div style="display:flex;gap:9px;flex-wrap:wrap">
+    <a href="/readiness" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Check readiness privately</a>
+    <a href="https://paleofoundation.com/apply" style="display:inline-block;color:#9f2727;background:#fffdfb;border:1px solid #eddede;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Open current submission system</a>
   </div>
-  <div id="start" style="border:1px solid #eddede;background:#fdf4f3;padding:24px 26px;margin-top:28px">
-    <div style="font-family:Lora,serif;font-size:24px;line-height:1.4;color:#2b1f1f;margin-bottom:10px">Start an application</div>
-    <p style="font-size:15px;line-height:1.72;color:#5a4141;margin:0 0 16px;max-width:70ch">Applications are administered through the Institute of Contaminant Standards (ICS) portal, which also issues permissions letters and holds the lot record once a certificate is in force.</p>
-    <div style="display:flex;gap:9px;flex-wrap:wrap">
-      <a href="https://paleofoundation.com/apply" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Apply on paleofoundation.com</a>
-      <a href="/portal" style="display:inline-block;color:#9f2727;background:#fffdfb;border:1px solid #eddede;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">See the brand portal</a>
-    </div>
-  </div>
-</section>
+</div>

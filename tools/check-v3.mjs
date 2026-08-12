@@ -25,7 +25,10 @@ function serve() {
     const server = createServer((req, res) => {
       let p = decodeURIComponent(req.url.split("?")[0])
       let f = join(ROOT, p)
-      if (existsSync(f) && statSync(f).isDirectory()) f = join(f, "index.html")
+      if (existsSync(f) && statSync(f).isDirectory()) {
+        const indexFile = join(f, "index.html")
+        f = existsSync(indexFile) ? indexFile : existsSync(f + ".html") ? f + ".html" : indexFile
+      }
       else if (!existsSync(f) && existsSync(f + ".html")) f = f + ".html" // cleanUrls
       if (!existsSync(f)) { res.statusCode = 404; return res.end("404") }
       res.setHeader("content-type", TYPES[extname(f)] || "application/octet-stream")

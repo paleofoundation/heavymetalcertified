@@ -3,8 +3,18 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import script from "./scripts/citeThisPage.inline"
 import style from "./styles/citeThisPage.scss"
 
+// Cert-native per-page citation block. The original inherited Index component
+// pointed certification pages at heavymetalindex.com and promised an evidence
+// packet endpoint that does not exist on this deploy. The cert surface cites
+// itself; underlying evidence remains a one-way outbound link to HMI.
+
+const PUBLIC_PREFIXES = ["regulations/"]
+const PUBLIC_EXACT = new Set(["trust"])
+
 function isCitable(slug: string | undefined): boolean {
-  return Boolean(slug?.startsWith("regulations/") && !slug.endsWith("/index"))
+  if (!slug) return false
+  if (PUBLIC_EXACT.has(slug)) return true
+  return PUBLIC_PREFIXES.some((p) => slug.startsWith(p) && !slug.endsWith("/index"))
 }
 
 function frontmatterString(value: unknown): string | undefined {
@@ -24,15 +34,17 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const frontmatter = fileData.frontmatter as Record<string, unknown> | undefined
   const title = frontmatter?.title ? String(frontmatter.title) : (slug as string)
   const certDoi = frontmatter
-    ? frontmatterString(frontmatter.cert_doi) ?? frontmatterString(frontmatter.doi)
+    ? frontmatterString(frontmatter.cert_doi) ??
+      frontmatterString(frontmatter.doi) ??
+      frontmatterString(frontmatter.wiki_doi)
     : undefined
   const sourceUrl = frontmatter ? frontmatterString(frontmatter.source_url) : undefined
   const canonicalUrl = `https://heavymetalcertified.com/${slug}`
   const today = todayIsoDate()
 
   const citationLine = certDoi
-    ? `Heavy Metal Certified. "${title}". ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
-    : `Heavy Metal Certified. "${title}". ${canonicalUrl}. Retrieved ${today}.`
+    ? `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
+    : `Institute of Contaminant Standards. "${title}." Heavy Metal Tested & Certified. ${canonicalUrl}. Retrieved ${today}.`
 
   // Year for reference-manager records: prefer the page's updated/established
   // year, fall back to the retrieval year.
@@ -40,7 +52,8 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     ? frontmatterString(frontmatter.updated) ?? frontmatterString(frontmatter.established)
     : undefined
   const year = (updated ?? today).slice(0, 4)
-  const shareText = `${title} — Heavy Metal Certified`
+  const shareText = `${title} — Heavy Metal Tested & Certified`
+  const isRegulation = Boolean(slug?.startsWith("regulations/"))
 
   return (
     <aside
@@ -57,7 +70,9 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <div>
           <span class="hmi-cite-label">Cite this page.</span>{" "}
           <span class="hmi-cite-meta">
-            A published reference to the underlying government instrument.
+            {isRegulation
+              ? "A published reference to the underlying government instrument."
+              : "Identify the named page, cert program, canonical URL, and retrieval date."}
           </span>
         </div>
         <div class="hmi-cite-actions">
@@ -109,12 +124,22 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
           </a>
         </div>
         <p class="hmi-cite-note">
-          This page records a regulatory source; it does not create or replace the
-          cited law, rule, or guidance. See the{" "}
-          <a href="/program/structure">program methodology</a>, or{" "}
-          <a href={`mailto:karen@paleofoundation.com?subject=${encodeURIComponent(`Correction: ${title}`)}`}>
-            report a correction
-          </a>.
+          {isRegulation ? (
+            <>
+              This page records a regulatory source; it does not create or replace the cited law,
+              rule, or guidance. See the <a href="/program/structure">program methodology</a>, or{" "}
+              <a href={`mailto:karen@paleofoundation.com?subject=${encodeURIComponent(`Correction: ${title}`)}`}>
+                report a correction
+              </a>.
+            </>
+          ) : (
+            <>
+              Certification rules, regulatory records, and source evidence are different layers.
+              See the <a href="/trust">Trust Center</a> for the boundary and the{" "}
+              <a href="/standard-stability">standard-stability record</a> for corrections and later
+              editions.
+            </>
+          )}
         </p>
       </div>
     </aside>

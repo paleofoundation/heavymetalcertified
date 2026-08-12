@@ -20,10 +20,10 @@ const footerSections = [
     title: "Methodology",
     links: [
       ["How limits are derived", "/program/structure"],
-      ["Two remediation pathways", "/program/two-pathways"],
+      ["Standard stability", "/standard-stability"],
       ["Confidential Remediation Track", "/program/remediation"],
-      ["Native basis and conversion", "/program/structure"],
-      ["The five publication gates", "/program/structure"],
+      ["What happens to your data", "/what-happens-to-your-data"],
+      ["Category readiness", "/category-readiness"],
     ],
   },
   {
@@ -38,7 +38,7 @@ const footerSections = [
     title: "Verify & apply",
     links: [
       ["Verify a certificate", "/verify"],
-      ["Certified brands", "/brands"],
+      ["Certified products directory", "/brands"],
       ["Using the mark", "/mark"],
       ["Apply for certification", "/apply"],
     ],

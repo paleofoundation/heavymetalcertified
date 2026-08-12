@@ -21,6 +21,8 @@ import Search from "./Search"
 import Footer from "./Footer"
 import ProductEvidenceSummary from "./ProductEvidenceSummary"
 import BrandPreScreenTool from "./BrandPreScreenTool"
+import BrandReadinessCheck from "./BrandReadinessCheck"
+import ReadinessPage from "./ReadinessPage"
 import SourceCitationPanel from "./SourceCitationPanel"
 import EvidenceHeader from "./EvidenceHeader"
 import RelatedPages from "./RelatedPages"
@@ -60,6 +62,8 @@ export {
   Footer,
   ProductEvidenceSummary,
   BrandPreScreenTool,
+  BrandReadinessCheck,
+  ReadinessPage,
   SourceCitationPanel,
   EvidenceHeader,
   RelatedPages,
