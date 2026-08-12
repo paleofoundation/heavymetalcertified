@@ -1,5 +1,5 @@
 ---
-title: Brand portal
+title: Brand portal specimen
 type: portal
 noindex: true
 audience: [certifier]
@@ -16,8 +16,8 @@ connections:
 ---
 
 <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:32px">
-  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Specimen account &middot; noindex &middot; authenticated</div>
-  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">No brands are certified yet. This screen shows the shape of the account a brand receives on issue. Signed in as <span style="color:#736b6b">regulatory@&lt;brand&gt;.com</span> &middot; Administrator &middot; 3 of 5 seats.</p>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Public specimen &middot; noindex &middot; not a live account</div>
+  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">No brands are certified yet. This public preview shows the shape of the authenticated account a brand receives on issue. The names, records, dates and account activity below are illustrative; no session is active and no private brand data is displayed.</p>
 </div>
 
 <section id="certificates" style="margin-bottom:52px">

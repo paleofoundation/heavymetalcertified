@@ -57,7 +57,11 @@ export const sharedPageComponents: SharedLayout = {
   // The global TopNav (wordmark + mega-menu + controls). renderPage.tsx lifts
   // this into a full-bleed sticky <header> outside #quartz-root.
   header: [Component.TopNav()],
-  afterBody: [Component.Corrections(), Component.CiteThisPage()],
+  // The Index's CiteThisPage widget does not belong on the certification
+  // surface: it advertised Index canonicals, missing Index-only routes and an
+  // API this static deployment does not provide. Citation metadata remains in
+  // Head.tsx and page sharing remains in the right rail.
+  afterBody: [Component.Corrections()],
   footer: Component.Footer(),
 };
 

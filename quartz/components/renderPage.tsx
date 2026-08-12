@@ -27,7 +27,9 @@ export function pageResources(
   staticResources: StaticResources,
 ): StaticResources {
   const contentIndexPath = joinSegments(baseDir, "static/contentIndex.json")
-  const contentIndexScript = `const fetchData = fetch("${contentIndexPath}").then(data => data.json())`
+  // The content index is ~1.6 MB raw and only search/explorer/graph need it.
+  // Keep one memoized promise, but do not start the request on every page load.
+  const contentIndexScript = `const getContentIndex=(()=>{let request;return()=>request??=fetch("${contentIndexPath}").then(data=>data.json())})()`
 
   const resources: StaticResources = {
     css: [
