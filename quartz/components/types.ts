@@ -1,4 +1,4 @@
-import { ComponentType, JSX } from "preact"
+import { ComponentChildren, ComponentType, JSX } from "preact"
 import { StaticResources, StringResource } from "../util/resources"
 import { QuartzPluginData } from "../plugins/vfile"
 import { GlobalConfiguration } from "../cfg"
@@ -10,7 +10,7 @@ export type QuartzComponentProps = {
   externalResources: StaticResources
   fileData: QuartzPluginData
   cfg: GlobalConfiguration
-  children: (QuartzComponent | JSX.Element)[]
+  children: ComponentChildren
   tree: Node
   allFiles: QuartzPluginData[]
   displayClass?: "mobile-only" | "desktop-only"

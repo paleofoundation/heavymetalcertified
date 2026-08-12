@@ -27,7 +27,6 @@ const GROUPS: { key: string; label: string }[] = [
   { key: "regulations", label: "Regulations" },
 ]
 const GROUP_KEYS = new Set(GROUPS.map((g) => g.key))
-const PER_GROUP_CAP = 8
 
 function categoryOf(slug: string): string {
   return (slug ?? "").split("/")[0]
@@ -55,7 +54,7 @@ function inboundIndex(allFiles: QuartzComponentProps["allFiles"]): Map<string, S
 }
 
 export default (() => {
-  const DedicatedPages: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
+  const DedicatedPages: QuartzComponent = ({ fileData, allFiles }: QuartzComponentProps) => {
     const mySlug = fileData.slug
     if (!mySlug) return null
     const simple = simplifySlug(mySlug)
