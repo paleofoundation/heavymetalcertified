@@ -3,6 +3,7 @@ import { classNames } from "../util/lang"
 import { pathToRoot, type FullSlug } from "../util/path"
 import { i18n } from "../i18n"
 import { MegaMenu } from "./MegaMenu"
+import Search from "./Search"
 import style from "./styles/topNav.scss"
 // @ts-ignore — mega-menu disclosure: hover intent, click-outside + Escape to close,
 // full keyboard nav. Adds `.hmi-nav--js` to switch the CSS-only :hover/:focus-within
@@ -11,10 +12,21 @@ import topNavScript from "./scripts/topNav.inline"
 // @ts-ignore — homepage hero search (?q= handling) — no-ops off the index slug
 import homeSearchScript from "./scripts/homeSearch.inline"
 
-// The v3 global header. renderPage.tsx lifts this into a full-bleed sticky
-// <header class="hmi-topnav-shell">; the shell carries the white ground and
-// bottom rule. Left to right: brand, brand-first and evidence mega-menu triggers,
-// flex spacer, then certificate lookup, Log in, and Check readiness.
+const HeaderSearch = Search({
+  enablePreview: true,
+  buttonLabel: "Search",
+  placeholder: "Search standards, methods, analytes, or brands",
+  shortcutLabel: "/",
+  className: "hmtc-site-search",
+})
+
+// The v3 global header, reproduced from Heavy Metal Certified v3.dc.html
+// (lines 41–109). renderPage.tsx lifts this into a full-bleed sticky
+// <header class="hmi-topnav-shell">; the shell carries the white ground +
+// bottom rule (see cert-chrome.scss). Desktop: brand, the three authority
+// doors, a flex spacer, then Search · Verify · Log in · Apply. Below 1150px
+// the primary nav becomes an in-flow drawer: Search first, three accordions,
+// then Log in · Apply; Verify remains available in the closed bar.
 
 export default (() => {
   const TopNav: QuartzComponent = (props: QuartzComponentProps) => {
@@ -36,10 +48,14 @@ export default (() => {
           <span class="hmtc-wordmark">{wordmark}</span>
         </a>
 
+        <a class="hmtc-mobile-verify" href={`${baseDir}/verify`}>
+          Verify
+        </a>
+
         <button
           type="button"
           class="hmi-topnav-burger hmtc-burger"
-          aria-label="Toggle navigation"
+          aria-label="Open navigation"
           aria-expanded="false"
           aria-controls="hmi-topnav-menu"
         >
@@ -63,28 +79,30 @@ export default (() => {
 
         <nav id="hmi-topnav-menu" class="hmi-topnav-menu hmi-nav hmtc-nav" aria-label="Primary">
           <MegaMenu slug={slug} />
+          <div class="hmtc-spacer" aria-hidden="true" />
+          <HeaderSearch {...props} />
+          <div class="hmtc-actions">
+            <a class="hmtc-verify" href={`${baseDir}/verify`}>
+              Verify
+            </a>
+            <a class="hmtc-login" href={`${baseDir}/portal`}>
+              Log in
+            </a>
+            <a class="hmtc-apply" href={`${baseDir}/apply`}>
+              Apply
+            </a>
+          </div>
         </nav>
-
-        <div class="hmtc-spacer" />
-
-        <div class="hmtc-actions">
-          <a class="hmtc-search" href={`${baseDir}/verify`} aria-label="Look up a lot, brand or standard">
-            <span class="hmtc-search-glyph" aria-hidden="true">&#8981;</span>
-            <span class="hmtc-search-label">Look up a lot, brand or standard</span>
-            <span class="hmtc-search-kbd" aria-hidden="true">/</span>
-          </a>
-          <a class="hmtc-login" href={`${baseDir}/portal`}>
-            Control Room preview
-          </a>
-          <a class="hmtc-apply" href={`${baseDir}/readiness`}>
-            Check readiness
-          </a>
-        </div>
       </div>
     )
   }
 
-  TopNav.css = style
-  TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();`
+  TopNav.css = `${style}\n${HeaderSearch.css ?? ""}`
+  // afterDOMLoaded is a single slot, so ship both behaviours here, each IIFE-wrapped
+  // to isolate scope: the mega-menu disclosure JS (topNav.inline — hover intent,
+  // click-outside + Escape to close, keyboard nav; sets `.hmi-nav--js` to disable the
+  // CSS-only fallback that leaves click-opened panels stuck open) and the homepage
+  // hero-search wiring.
+  TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();(()=>{${HeaderSearch.afterDOMLoaded ?? ""}})();`
   return TopNav
 }) satisfies QuartzComponentConstructor

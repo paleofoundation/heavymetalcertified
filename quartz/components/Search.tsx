@@ -7,26 +7,29 @@ import { i18n } from "../i18n"
 
 export interface SearchOptions {
   enablePreview: boolean
+  buttonLabel: string
+  placeholder: string
+  shortcutLabel?: string
+  className?: string
 }
 
 const defaultOptions: SearchOptions = {
   enablePreview: true,
+  buttonLabel: "Search",
+  placeholder: "Search for something",
 }
 
 export default ((userOpts?: Partial<SearchOptions>) => {
   const Search: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const opts = { ...defaultOptions, ...userOpts }
-    const searchPlaceholder = i18n(cfg.locale).components.search.searchBarPlaceholder
+    const searchPlaceholder = userOpts?.placeholder ?? i18n(cfg.locale).components.search.searchBarPlaceholder
+    const buttonLabel = userOpts?.buttonLabel ?? i18n(cfg.locale).components.search.title
     return (
-      <div class={classNames(displayClass, "search")}>
-        <button class="search-button">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
-            <g class="search-path" fill="none">
-              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-              <circle cx="8" cy="8" r="7" />
-            </g>
-          </svg>
-          <p>{i18n(cfg.locale).components.search.title}</p>
+      <div class={classNames(displayClass, "search", opts.className ?? "")}>
+        <button class="search-button" type="button" aria-label={buttonLabel}>
+          <span class="search-button-glyph" aria-hidden="true">&#8981;</span>
+          <p>{buttonLabel}</p>
+          {opts.shortcutLabel ? <kbd aria-hidden="true">{opts.shortcutLabel}</kbd> : null}
         </button>
         <div class="search-container">
           <div class="search-space">

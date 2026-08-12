@@ -246,6 +246,14 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
   let currentHover: HTMLInputElement | null = null
   async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
+    const target = e.target as HTMLElement | null
+    const isTyping = Boolean(target?.closest("input, textarea, select, [contenteditable='true']"))
+    if (e.key === "/" && !e.metaKey && !e.ctrlKey && !e.altKey && !e.shiftKey && !isTyping) {
+      e.preventDefault()
+      const searchBarOpen = container.classList.contains("active")
+      if (!searchBarOpen) showSearch("basic")
+      return
+    }
     if (e.key === "k" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
       e.preventDefault()
       const searchBarOpen = container.classList.contains("active")

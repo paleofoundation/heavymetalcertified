@@ -311,6 +311,17 @@ for (const row of catalog.rows) {
   if (isSupersededByCustom(row.product_slug)) continue // custom page re-lists it below with current data
   ;(byCat[row.vertical.category] ??= { name: row.vertical.category_name, rows: [] }).rows.push(row)
 }
+// Stable category anchors used by the Standards mega-menu and footer. These
+// are keyed to the locked category identifiers rather than derived from
+// display copy, so a punctuation or editorial title change cannot break the
+// global navigation.
+const CATEGORY_ANCHORS = {
+  "1": "infant-child-foods",
+  "3": "grains-cereals-rice",
+  "6": "seafood",
+  "30": "culinary-oils-fats",
+  "34": "herbs-spices-salt",
+}
 
 // Hand-authored custom standard pages (frontmatter `custom_page: true`) are NOT
 // generated from the catalog — they carry a bespoke derivation (e.g. the
@@ -342,6 +353,7 @@ const catGroups = Object.keys(byCat)
   .sort((a, b) => Number(a) - Number(b))
   .map((cat) => {
     const g = byCat[cat]
+    const anchor = CATEGORY_ANCHORS[cat] ?? `category-${cat}`
     const basis = basisLabel(g.rows[0]?.native_basis)
     const rowsHtml = g.rows
       .map((row, i) => {
@@ -351,7 +363,7 @@ const catGroups = Object.keys(byCat)
         return `      <a href="/standards/${row.product_slug}" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>${row.subcategory}</span>${right}</a>`
       })
       .join("\n")
-    return `  <div style="margin-bottom:26px">
+    return `  <div id="${anchor}" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">${g.name}</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">${basis}</span>

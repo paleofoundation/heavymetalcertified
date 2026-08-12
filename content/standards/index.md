@@ -39,7 +39,7 @@ rail_box:
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">1 firm analyte limit across 1 subcategory so far</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="infant-child-foods" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Infant and Child Foods</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -56,7 +56,7 @@ rail_box:
       <a href="/standards/teething-and-snacks" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Teething biscuits & finger snacks</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Infant and Child Foods 3.9 &middot; 8 firm</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="grains-cereals-rice" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Grains, Cereals, and Rice Products</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -76,7 +76,7 @@ rail_box:
       <a href="/standards/rice-snacks-crackers" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Rice snacks and crackers — rice cakes, wafers</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Grains, Cereals, and Rice Products 3.12 &middot; 10 firm</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="seafood" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Seafood</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as consumed</span>
@@ -91,7 +91,7 @@ rail_box:
       <a href="/standards/shellfish" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Shellfish (crustaceans and bivalve molluscs)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Seafood 3.7 &middot; 7 firm</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="category-9" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Infant and Child Contact Products (Ages 0-5)</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -107,7 +107,7 @@ rail_box:
       <a href="/standards/teething-toys-teethers" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Teething toys/teethers</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Infant and Child Contact Products (Ages 0-5) 3.8 &middot; 8 firm</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="category-24" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Dairy and Milk Products</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -116,7 +116,7 @@ rail_box:
       <a href="/standards/butter-and-ghee" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Butter and ghee</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Dairy and Milk Products 3.1</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="culinary-oils-fats" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Culinary Oils and Fats</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -126,7 +126,7 @@ rail_box:
       <a href="/standards/cooking-oils-other" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Other cooking oils (canola, sunflower, coconut, avocado, sesame)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Culinary Oils and Fats 3.2</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="category-31" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Sweeteners and Syrups</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -135,7 +135,7 @@ rail_box:
       <a href="/standards/honey" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Honey and syrups (maple, agave, molasses)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Sweeteners and Syrups 3.1</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="category-32" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Condiments, Sauces and Dressings</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -144,7 +144,7 @@ rail_box:
       <a href="/standards/vinegar" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Vinegar</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Condiments, Sauces and Dressings 3.1</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="category-33" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Chocolate, Cocoa and Confectionery</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
@@ -153,7 +153,7 @@ rail_box:
       <a href="/standards/chocolate" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Cocoa/chocolate products (cocoa powder, dark chocolate, milk chocolate, chocolate chips)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:1 1 10rem;min-width:0;max-width:14rem">Chocolate, Cocoa and Confectionery 3.1</span></a>
     </div>
   </div>
-  <div style="margin-bottom:26px">
+  <div id="herbs-spices-salt" style="margin-bottom:26px;scroll-margin-top:92px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Herbs, Spices, Seasonings and Salt</span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
