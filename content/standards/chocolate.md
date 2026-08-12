@@ -24,6 +24,10 @@ connections:
   - { label: "Verify a certificate", href: "/verify" }
   - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com/products/chocolate" }
 ---
+
+<!-- BEGIN: HMTC:PANEL-AUDIT -->
+<section data-panel-audit="incomplete" style="margin:0 0 40px;padding:18px 20px;border:1px solid #e6c8c4;border-left:4px solid #9f2727;background:#fdf4f3"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#9f2727;margin:0 0 8px">Standards completeness flag</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:84ch">This standard is incomplete against the required ten-analyte panel: 0 of 10 required numeric limits are published. Missing rows: Total chromium (Cr). Rows without numeric limits: Lead (Pb), Cadmium (Cd), Total arsenic (tAs), Inorganic arsenic (iAs), Total mercury (tHg), Nickel (Ni), Tin (Sn), Aluminum (Al), Hexavalent chromium (Cr-VI). Regulatory silence does not establish immateriality. Do not treat this page as certification-ready until every required value is resolved through the governed standards method.</p><p style="font-size:12.5px;line-height:1.65;margin:10px 0 0"><a href="/standards/completeness-audit" style="color:#1c43ad">See the complete panel audit</a></p></section>
+<!-- END: HMTC:PANEL-AUDIT -->
 <section id="audiences" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Who this standard is for</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>

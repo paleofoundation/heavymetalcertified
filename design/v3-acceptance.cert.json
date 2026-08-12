@@ -18,9 +18,12 @@
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
-      { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "no-bold rule (CONTENT-RULES §7): <strong>/<b>/** render at normal weight." },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "no-bold rule (CONTENT-RULES §7): standards pages carry no semantic bold on the reading surface." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
-      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "count", "want": 1, "note": "a standard without ten numeric required limits carries one visible completeness flag." },
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "border-left-color", "want": "#9f2727", "src": "COMPONENTS §9", "note": "the standards gap is a caveat callout, not a success or neutral card." },
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "background-color", "want": "#fdf4f3", "src": "COMPONENTS §9" }
     ],
     "/regulations/eu-2023-915": [
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1", "note": "the sitewide sticky top-bar; a regulation reference page carries the same chrome as every content page (v3 is not type-gated)." },
@@ -47,6 +50,10 @@
       { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Record of law' KIND badge (HeroBand, type: regulation-index)." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/analytes": [
+      { "sel": "article a[data-slug=\"analytes/inorganic-arsenic\"]", "prop": "count", "want": 1, "note": "the panel exposes the species-specific inorganic-arsenic reference page." },
+      { "sel": "article a[data-slug=\"analytes/hexavalent-chromium\"]", "prop": "count", "want": 1, "note": "the panel exposes the species-specific hexavalent-chromium reference page." }
     ]
   }
 }

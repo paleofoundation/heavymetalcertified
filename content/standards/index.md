@@ -20,6 +20,10 @@ rail_box:
   cta_label: "Look up a lot"
   cta_href: "/verify"
 ---
+
+<!-- BEGIN: HMTC:PANEL-AUDIT -->
+<section data-panel-audit="summary" style="margin:0 0 40px;padding:18px 20px;border:1px solid #e6c8c4;border-left:4px solid #9f2727;background:#fdf4f3"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#9f2727;margin:0 0 8px">Ten-analyte completeness audit</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:84ch">44 of 44 standards in this preview are incomplete. A dash, monitored-only entry, or “not material” designation does not count as a numeric limit.</p><p style="font-size:12.5px;line-height:1.65;margin:10px 0 0"><a href="/standards/completeness-audit" style="color:#1c43ad">Open the page-by-page findings</a></p></section>
+<!-- END: HMTC:PANEL-AUDIT -->
 <section id="edition" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The bound editions</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The web standards below and the Program Manuals are the same content at two granularities. The pages are per subcategory and always current; each manual is the citable bound edition of one category, carrying the governance policy, the lot testing schedule and the full derivation of every limit it publishes.</p>

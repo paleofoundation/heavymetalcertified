@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// build-cert-analyte-pages.mjs — dedicated reference pages for the 8 HMTc analytes.
+// build-cert-analyte-pages.mjs — dedicated reference pages for the HMTc panel.
 //
 // Purpose: the homepage "analyte panel" advertises eight metals with real
 // toxicological/regulatory substance, and every card used to dead-end. These are
@@ -22,15 +22,48 @@ import path from "node:path"
 
 const REPO = process.cwd()
 const DATA = JSON.parse(fs.readFileSync(path.join(REPO, "data/analytes/analytes.json"), "utf8"))
+const SPECIES = JSON.parse(fs.readFileSync(path.join(REPO, "data/analytes/species-pages.json"), "utf8"))
 const OUT = path.join(REPO, "content/analytes")
 fs.mkdirSync(OUT, { recursive: true })
 
 const ACCENT = "#9f2727"
 const LINK = "#1c43ad"
 
-// The HMTc analytes California has listed under Proposition 65 (see
-// content/regulations/ca-prop65.md). Cr-VI maps to the chromium page, iAs to arsenic.
-const PROP65_LISTED = new Set(["lead", "cadmium", "arsenic", "chromium", "nickel"])
+// The exact HMTc analytes California has listed under Proposition 65 (see
+// content/regulations/ca-prop65.md). Total As and total Cr do not inherit their
+// species-specific listings now that iAs and Cr(VI) have dedicated pages.
+const PROP65_LISTED = new Set(["lead", "cadmium", "inorganic-arsenic", "hexavalent-chromium", "nickel"])
+
+function applyOverrides(source, overrides = {}) {
+  const page = structuredClone(source)
+  const { toxicology_replace_tail, occurrence_prose_replace_tail, ...fields } = overrides
+  Object.assign(page, fields)
+  if (toxicology_replace_tail && Array.isArray(page.toxicology) && page.toxicology.length) {
+    page.toxicology = [...page.toxicology.slice(0, -1), toxicology_replace_tail]
+  }
+  if (occurrence_prose_replace_tail && Array.isArray(page.occurrence?.prose) && page.occurrence.prose.length) {
+    page.occurrence = {
+      ...page.occurrence,
+      prose: [...page.occurrence.prose.slice(0, -1), occurrence_prose_replace_tail],
+    }
+  }
+  return page
+}
+
+const BASE_ANALYTES = DATA.analytes.map((a) => applyOverrides(a, SPECIES.page_overrides?.[a.slug]))
+const ANALYTES = [
+  ...BASE_ANALYTES,
+  ...(SPECIES.species_pages || []).map((definition) => {
+    const source = DATA.analytes.find((a) => a.slug === definition.base_slug)
+    if (!source) throw new Error(`Unknown base analyte: ${definition.base_slug}`)
+    const base = applyOverrides(
+      source,
+      definition.inherit_page_overrides === false ? {} : SPECIES.page_overrides?.[definition.base_slug],
+    )
+    const { base_slug: _baseSlug, inherit_page_overrides: _inheritPageOverrides, ...overrides } = definition
+    return applyOverrides(base, overrides)
+  }),
+]
 
 const esc = (s) =>
   String(s == null ? "" : s)
@@ -193,21 +226,21 @@ function frontmatter(a) {
     `  - { label: "Heavy Metal Index — ${a.name} literature", href: "https://heavymetalindex.com/metals/${a.index_link_slug}" }`,
     "rail_box:",
     '  title: "The analyte panel"',
-    '  body: "Eight metals, ten analytes. Each page states why the metal is limited from the government record; the maximum levels themselves live on the standards, and the deep literature on the Heavy Metal Index."',
+    '  body: "Eight metals, ten required analytes. Total-element and species-specific results are not interchangeable; limits live on the standards, and the deep literature on the Heavy Metal Index."',
     "---",
   ].join("\n")
 }
 
 // Per-analyte pages.
 let n = 0
-for (const a of DATA.analytes) {
+for (const a of ANALYTES) {
   fs.writeFileSync(path.join(OUT, `${a.slug}.md`), `${frontmatter(a)}\n${pageBody(a)}\n`, "utf8")
   n++
 }
 
 // The /analytes index — a linked panel mirroring the homepage cards.
 function indexPage() {
-  const cards = DATA.analytes
+  const cards = ANALYTES
     .map(
       (a) =>
         `<a href="/analytes/${a.slug}" style="display:block;background:#fffdfb;border:1px solid #eee7e2;padding:20px 21px;text-decoration:none"><div style="font-family:Lora,serif;font-size:20px;line-height:1.25;color:${ACCENT}">${esc(a.name)}</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;margin-top:5px">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p style="font-size:12.5px;line-height:1.6;color:#736b6b;margin:11px 0 0">${linkify(a.thesis)}</p></a>`,
@@ -222,7 +255,7 @@ function indexPage() {
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
     "---",
   ].join("\n")
-  const body = `<section style="margin-bottom:32px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 12px">The analyte panel</h1><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Eight metals, ten analytes: arsenic and mercury are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#eee7e2;border:1px solid #eee7e2">${cards}</div>`
+  const body = `<section style="margin-bottom:32px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 12px">The analyte panel</h1><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Eight metals, ten required analytes: each metal is reported as a total-element result, with separate inorganic-arsenic and hexavalent-chromium limits. Total and species-specific results are not interchangeable. Each page states, from the government and expert-body record, why the analyte is limited. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#eee7e2;border:1px solid #eee7e2">${cards}</div>`
   fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${body}\n`, "utf8")
 }
 indexPage()

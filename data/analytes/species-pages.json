@@ -1,0 +1,42 @@
+{
+  "page_overrides": {
+    "arsenic": {
+      "name": "Total arsenic",
+      "sym": "tAs",
+      "species": "Total elemental arsenic (tAs)",
+      "thesis": "Total arsenic and inorganic arsenic are separate required measurements. Total arsenic provides the mass-balance and contamination screen; speciated inorganic arsenic provides the hazard-specific result. Neither measurement can substitute for the other, and the absence of a product-specific government maximum does not make either analyte immaterial.",
+      "occurrence_prose_replace_tail": "Occurrence and exposure evidence must be assigned to the arsenic species the source actually measured. Total-arsenic occurrence cannot be treated as an inorganic-arsenic result, and inorganic-arsenic occurrence does not eliminate the need for a total-arsenic control. HMTc therefore requires a numeric total-arsenic ceiling and a separate numeric inorganic-arsenic ceiling for every product standard. Until both values are derived and published, the affected standard is incomplete.",
+      "how_regulated": "Government arsenic limits are species- and matrix-specific. Many of the principal infant-food, juice, and rice limits apply to inorganic arsenic rather than total arsenic, so an iAs ceiling cannot be relabeled as a total-arsenic ceiling. Where no directly applicable total-arsenic food maximum exists, regulatory silence is recorded as a gap and HMTc must derive a numeric program limit through its governed standards method. A dash, an n/m designation, or the separate iAs value does not satisfy the total-arsenic row.",
+      "hmtc_treatment": "HMTc treats total arsenic and inorganic arsenic as two required, non-substitutable analytes. Every product-category standard must publish a numeric total-arsenic limit and a separate numeric iAs limit in the product's native basis. Total-arsenic screening does not replace speciation, and a species-specific iAs result does not replace the total measurement. Where no directly applicable government ceiling exists, the unresolved value must be derived through the governed evidence-pooling and standards-setting process; the page remains visibly flagged incomplete until both limits are numeric."
+    },
+    "chromium": {
+      "thesis": "Total chromium and hexavalent chromium are separate required measurements. Cr(VI) is an IARC Group 1 carcinogen on occupational-inhalation evidence and is assessed by US EPA as likely carcinogenic by the oral route; the absence of a food-specific government maximum is an evidence and standards gap, not proof that chromium is immaterial.",
+      "toxicology_replace_tail": "EFSA, the US EPA, IARC, and California OEHHA converge on the same species distinction: Cr(VI) carries the principal hazard while Cr(III) is much less toxic. That distinction does not justify omitting either measurement. Total chromium provides the mass-balance and contamination signal; speciated Cr(VI) provides the hazard-specific result. Where food law supplies no numeric ceiling, HMTc must derive and disclose a program limit through its governed standards method rather than label the analyte not material.",
+      "occurrence_prose_replace_tail": "Total-chromium occurrence cannot be read as a Cr(VI) exposure estimate, but it remains a required control rather than a substitute or a reason to omit chromium. HMTc therefore requires a numeric total-chromium ceiling and a separate numeric Cr(VI) ceiling for every product standard. Occurrence evidence anchors the total-chromium control; species-specific evidence anchors the Cr(VI) control. Until both values are derived and published, the affected standard is incomplete.",
+      "how_regulated": "No government food code currently supplies a comprehensive pair of maximum levels for total chromium and Cr(VI) across HMTc product matrices. Adjacent enforceable instruments include California's 10 µg/L drinking-water maximum contaminant level for Cr(VI), the US EPA and California total-chromium drinking-water limits, and Proposition 65 safe-harbor levels; those are not food concentration limits and cannot be copied into a food row without a documented conversion and applicability judgment. Regulatory silence is recorded as a gap. It is not evidence that chromium is immaterial and it does not satisfy the requirement for a numeric HMTc limit.",
+      "hmtc_treatment": "HMTc treats total chromium and hexavalent chromium as two required, non-substitutable analytes. Every product-category standard must publish a numeric total-Cr limit and a separate numeric Cr(VI) limit in the product's native basis. A total-Cr screen, a reflex-speciation trigger, a dash, or an n/m designation does not satisfy either missing value. Where no directly applicable government ceiling exists, the limits remain unresolved until the governed evidence-pooling and standards-setting process derives auditable values; the page is visibly flagged incomplete in the meantime."
+    }
+  },
+  "species_pages": [
+    {
+      "base_slug": "arsenic",
+      "inherit_page_overrides": false,
+      "slug": "inorganic-arsenic",
+      "name": "Inorganic arsenic",
+      "sym": "iAs",
+      "species": "Inorganic arsenic (iAs), speciated",
+      "occurrence_prose_replace_tail": "Inorganic-arsenic occurrence cannot be inferred from a total-arsenic result, and the species-specific result does not eliminate the need for a total-arsenic control. HMTc therefore requires a numeric inorganic-arsenic ceiling and a separate numeric total-arsenic ceiling for every product standard. Until both values are derived and published, the affected standard is incomplete.",
+      "hmtc_treatment": "HMTc treats inorganic arsenic and total arsenic as two required, non-substitutable analytes. Every product-category standard must publish a numeric iAs limit and a separate numeric total-arsenic limit in the product's native basis. Speciation is intrinsic to the iAs result rather than an optional reflex step, and a total-arsenic result cannot satisfy it. Where no directly applicable government ceiling exists, the unresolved value must be derived through the governed evidence-pooling and standards-setting process; the page remains visibly flagged incomplete until both limits are numeric.",
+      "index_link_slug": "arsenic-inorganic"
+    },
+    {
+      "base_slug": "chromium",
+      "slug": "hexavalent-chromium",
+      "name": "Hexavalent chromium",
+      "sym": "Cr(VI)",
+      "species": "Hexavalent chromium (Cr(VI)), speciated",
+      "thesis": "Hexavalent chromium is a species-specific required analyte because it is an IARC Group 1 carcinogen on occupational-inhalation evidence and US EPA assesses it as likely carcinogenic by the oral route. A total-chromium result cannot establish the Cr(VI) concentration, and the lack of a food-specific government maximum does not establish immateriality.",
+      "index_link_slug": "chromium-hexavalent"
+    }
+  ]
+}

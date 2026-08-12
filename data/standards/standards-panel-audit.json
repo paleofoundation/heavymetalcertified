@@ -1,0 +1,2027 @@
+{
+  "generated_on": "2026-08-12",
+  "panel_version": "2026-08-11",
+  "completion_rule": "Every required analyte must have a numeric HMTc limit in the product's native basis. Missing rows, dashes, monitored-only entries, not-in-scope entries, and not-material designations are incomplete.",
+  "required_analytes": [
+    {
+      "key": "Pb",
+      "label": "Lead",
+      "kind": "total element"
+    },
+    {
+      "key": "Cd",
+      "label": "Cadmium",
+      "kind": "total element"
+    },
+    {
+      "key": "tAs",
+      "label": "Total arsenic",
+      "kind": "total element"
+    },
+    {
+      "key": "iAs",
+      "label": "Inorganic arsenic",
+      "kind": "species-specific"
+    },
+    {
+      "key": "tHg",
+      "label": "Total mercury",
+      "kind": "total element"
+    },
+    {
+      "key": "Ni",
+      "label": "Nickel",
+      "kind": "total element"
+    },
+    {
+      "key": "Sn",
+      "label": "Tin",
+      "kind": "total element"
+    },
+    {
+      "key": "Al",
+      "label": "Aluminum",
+      "kind": "total element"
+    },
+    {
+      "key": "Cr",
+      "label": "Total chromium",
+      "kind": "total element"
+    },
+    {
+      "key": "Cr-VI",
+      "label": "Hexavalent chromium",
+      "kind": "species-specific"
+    }
+  ],
+  "summary": {
+    "pages_audited": 44,
+    "complete": 0,
+    "incomplete": 44,
+    "missing_rows": 89,
+    "non_numeric_rows": 122,
+    "not_material_rows": 48,
+    "extreme_value_reviews": 10,
+    "government_default_pages": 44,
+    "selective_occurrence_pages": 8
+  },
+  "methodology_counts": {
+    "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)": 8,
+    "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)": 26,
+    "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)": 8,
+    "Strictest government maximum level worldwide, adopt-lowest (Method v3.0)": 2
+  },
+  "methodology_finding": "The preview declares a government-limit-default method on every standard page, while the locked HMTc standards math uses P97 for clean subcategories and P45 for dirty subcategories, with the final value capped at the lowest applicable loaded regulatory ceiling. The public method text and generators require governance reconciliation.",
+  "pages": [
+    {
+      "slug": "baby-cereals-dry",
+      "path": "/standards/baby-cereals-dry",
+      "source_file": "content/standards/baby-cereals-dry.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "bread-and-baked-goods",
+      "path": "/standards/bread-and-baked-goods",
+      "source_file": "content/standards/bread-and-baked-goods.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "breakfast-cereal-non-rice",
+      "path": "/standards/breakfast-cereal-non-rice",
+      "source_file": "content/standards/breakfast-cereal-non-rice.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "breakfast-cereal-rice-based",
+      "path": "/standards/breakfast-cereal-rice-based",
+      "source_file": "content/standards/breakfast-cereal-rice-based.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "butter-and-ghee",
+      "path": "/standards/butter-and-ghee",
+      "source_file": "content/standards/butter-and-ghee.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "canned-seafood",
+      "path": "/standards/canned-seafood",
+      "source_file": "content/standards/canned-seafood.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Sn"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Sn",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "extreme-limit-review",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "cephalopods",
+      "path": "/standards/cephalopods",
+      "source_file": "content/standards/cephalopods.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "chocolate",
+      "path": "/standards/chocolate",
+      "source_file": "content/standards/chocolate.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "cooking-oils-other",
+      "path": "/standards/cooking-oils-other",
+      "source_file": "content/standards/cooking-oils-other.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "diapers-and-components",
+      "path": "/standards/diapers-and-components",
+      "source_file": "content/standards/diapers-and-components.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "Ni",
+        "Sn",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "feeding-accessories-child-sized",
+      "path": "/standards/feeding-accessories-child-sized",
+      "source_file": "content/standards/feeding-accessories-child-sized.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Sn",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [],
+      "warnings": [
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "fish-freshwater",
+      "path": "/standards/fish-freshwater",
+      "source_file": "content/standards/fish-freshwater.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "fish-marine-non-predatory",
+      "path": "/standards/fish-marine-non-predatory",
+      "source_file": "content/standards/fish-marine-non-predatory.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "fish-marine-predatory",
+      "path": "/standards/fish-marine-predatory",
+      "source_file": "content/standards/fish-marine-predatory.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "flour-non-rice",
+      "path": "/standards/flour-non-rice",
+      "source_file": "content/standards/flour-non-rice.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "fruit-juice-not-canned",
+      "path": "/standards/fruit-juice-not-canned",
+      "source_file": "content/standards/fruit-juice-not-canned.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "fruit-purees",
+      "path": "/standards/fruit-purees",
+      "source_file": "content/standards/fruit-purees.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "grain-based-snacks",
+      "path": "/standards/grain-based-snacks",
+      "source_file": "content/standards/grain-based-snacks.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "honey",
+      "path": "/standards/honey",
+      "source_file": "content/standards/honey.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "infant-bottle-nipples",
+      "path": "/standards/infant-bottle-nipples",
+      "source_file": "content/standards/infant-bottle-nipples.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Sn",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [],
+      "warnings": [
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "infant-bottles",
+      "path": "/standards/infant-bottles",
+      "source_file": "content/standards/infant-bottles.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Sn",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [],
+      "warnings": [
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "infant-food-storage-items",
+      "path": "/standards/infant-food-storage-items",
+      "source_file": "content/standards/infant-food-storage-items.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Sn",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb"
+      ],
+      "extreme_value_review": [],
+      "warnings": [
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "infant-formula-powder",
+      "path": "/standards/infant-formula-powder",
+      "source_file": "content/standards/infant-formula-powder.md",
+      "methodology_version": "Strictest government maximum level worldwide, adopt-lowest (Method v3.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "tHg",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "legacy-panel-denominator"
+      ]
+    },
+    {
+      "slug": "infant-formula-ready-to-feed",
+      "path": "/standards/infant-formula-ready-to-feed",
+      "source_file": "content/standards/infant-formula-ready-to-feed.md",
+      "methodology_version": "Strictest government maximum level worldwide, adopt-lowest (Method v3.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Cr",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "legacy-panel-denominator"
+      ]
+    },
+    {
+      "slug": "mixed-meals",
+      "path": "/standards/mixed-meals",
+      "source_file": "content/standards/mixed-meals.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "non-root-vegetable-purees",
+      "path": "/standards/non-root-vegetable-purees",
+      "source_file": "content/standards/non-root-vegetable-purees.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "olive-oil",
+      "path": "/standards/olive-oil",
+      "source_file": "content/standards/olive-oil.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "other-grain-products",
+      "path": "/standards/other-grain-products",
+      "source_file": "content/standards/other-grain-products.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "pacifiers-and-sucking-teething-aids",
+      "path": "/standards/pacifiers-and-sucking-teething-aids",
+      "source_file": "content/standards/pacifiers-and-sucking-teething-aids.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 8,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [
+        {
+          "key": "Sn",
+          "value": "180000",
+          "largest": 180000
+        }
+      ],
+      "warnings": [
+        "extreme-limit-review",
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "pasta-rice-based",
+      "path": "/standards/pasta-rice-based",
+      "source_file": "content/standards/pasta-rice-based.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "pasta-wheat-based",
+      "path": "/standards/pasta-wheat-based",
+      "source_file": "content/standards/pasta-wheat-based.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 6,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "iAs",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "iAs",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "rice-beverages-rice-milk",
+      "path": "/standards/rice-beverages-rice-milk",
+      "source_file": "content/standards/rice-beverages-rice-milk.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 2,
+      "required_limits": 10,
+      "numeric": [
+        "iAs",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "n/m"
+        },
+        {
+          "key": "Cd",
+          "value": "n/m"
+        },
+        {
+          "key": "tAs",
+          "value": "n/m"
+        },
+        {
+          "key": "tHg",
+          "value": "n/m"
+        },
+        {
+          "key": "Ni",
+          "value": "n/m"
+        },
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "rice-bulk-grain",
+      "path": "/standards/rice-bulk-grain",
+      "source_file": "content/standards/rice-bulk-grain.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "rice-noodles",
+      "path": "/standards/rice-noodles",
+      "source_file": "content/standards/rice-noodles.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "200000",
+          "largest": 200000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "rice-snacks-crackers",
+      "path": "/standards/rice-snacks-crackers",
+      "source_file": "content/standards/rice-snacks-crackers.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Al"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn",
+        "Cr-VI"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [
+        {
+          "key": "Al",
+          "value": "100000",
+          "largest": 100000
+        }
+      ],
+      "warnings": [
+        "not-material-is-incomplete",
+        "extreme-limit-review",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "root-vegetable-purees",
+      "path": "/standards/root-vegetable-purees",
+      "source_file": "content/standards/root-vegetable-purees.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "salt",
+      "path": "/standards/salt",
+      "source_file": "content/standards/salt.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "seaweed-kelp-foods",
+      "path": "/standards/seaweed-kelp-foods",
+      "source_file": "content/standards/seaweed-kelp-foods.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "shellfish",
+      "path": "/standards/shellfish",
+      "source_file": "content/standards/shellfish.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 5,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg"
+      ],
+      "missing": [
+        "Ni",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Sn",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Sn"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "sippy-cups-toddler-drinkware",
+      "path": "/standards/sippy-cups-toddler-drinkware",
+      "source_file": "content/standards/sippy-cups-toddler-drinkware.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Sn",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [],
+      "warnings": [
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "spices",
+      "path": "/standards/spices",
+      "source_file": "content/standards/spices.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 1,
+      "required_limits": 10,
+      "numeric": [
+        "Pb"
+      ],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    },
+    {
+      "slug": "teething-and-snacks",
+      "path": "/standards/teething-and-snacks",
+      "source_file": "content/standards/teething-and-snacks.md",
+      "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+      "complete": false,
+      "numeric_limits": 7,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "missing": [
+        "tAs",
+        "Cr-VI"
+      ],
+      "non_numeric": [
+        {
+          "key": "Cr",
+          "value": "n/m"
+        }
+      ],
+      "not_material": [
+        "Cr"
+      ],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": [
+        "not-material-is-incomplete",
+        "legacy-panel-denominator",
+        "published-completeness-claim-conflicts-with-table",
+        "published-count-does-not-match-required-panel",
+        "firm-ceiling-claim-conflicts-with-table"
+      ]
+    },
+    {
+      "slug": "teething-toys-teethers",
+      "path": "/standards/teething-toys-teethers",
+      "source_file": "content/standards/teething-toys-teethers.md",
+      "methodology_version": "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 8,
+      "required_limits": 10,
+      "numeric": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr-VI"
+      ],
+      "missing": [
+        "iAs",
+        "Cr"
+      ],
+      "non_numeric": [],
+      "not_material": [],
+      "duplicates": [
+        "Pb",
+        "Cd"
+      ],
+      "extreme_value_review": [
+        {
+          "key": "Sn",
+          "value": "180000",
+          "largest": 180000
+        }
+      ],
+      "warnings": [
+        "extreme-limit-review",
+        "duplicate-analyte-row"
+      ]
+    },
+    {
+      "slug": "vinegar",
+      "path": "/standards/vinegar",
+      "source_file": "content/standards/vinegar.md",
+      "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+      "complete": false,
+      "numeric_limits": 0,
+      "required_limits": 10,
+      "numeric": [],
+      "missing": [
+        "Cr"
+      ],
+      "non_numeric": [
+        {
+          "key": "Pb",
+          "value": "—"
+        },
+        {
+          "key": "Cd",
+          "value": "—"
+        },
+        {
+          "key": "tAs",
+          "value": "—"
+        },
+        {
+          "key": "iAs",
+          "value": "—"
+        },
+        {
+          "key": "tHg",
+          "value": "—"
+        },
+        {
+          "key": "Ni",
+          "value": "—"
+        },
+        {
+          "key": "Sn",
+          "value": "—"
+        },
+        {
+          "key": "Al",
+          "value": "—"
+        },
+        {
+          "key": "Cr-VI",
+          "value": "—"
+        }
+      ],
+      "not_material": [],
+      "duplicates": [],
+      "extreme_value_review": [],
+      "warnings": []
+    }
+  ]
+}
