@@ -10,6 +10,13 @@ import style from "./styles/topNav.scss"
 import topNavScript from "./scripts/topNav.inline"
 // @ts-ignore — homepage hero search (?q= handling) — no-ops off the index slug
 import homeSearchScript from "./scripts/homeSearch.inline"
+import searchStyle from "./styles/search.scss"
+// @ts-ignore — the FlexSearch modal behaviour; iterates every `.search` element,
+// opens the overlay on the button, reads the prebuilt contentIndex via the
+// global getContentIndex(). Ships here because Quartz only emits css/
+// afterDOMLoaded for components in a layout slot — a nested <Search/> call
+// would never get its resources emitted, so TopNav carries them itself.
+import searchScript from "./scripts/search.inline"
 
 // The v3 global header, reproduced from Heavy Metal Certified v3.dc.html
 // (lines 41–109). renderPage.tsx lifts this into a full-bleed sticky
@@ -70,11 +77,40 @@ export default (() => {
         <div class="hmtc-spacer" />
 
         <div class="hmtc-actions">
-          <a class="hmtc-search" href={`${baseDir}/verify`} aria-label="Look up a lot, brand or standard">
-            <span class="hmtc-search-glyph" aria-hidden="true">&#8981;</span>
-            <span class="hmtc-search-label">Look up a lot, brand or standard</span>
-            <span class="hmtc-search-kbd" aria-hidden="true">/</span>
-          </a>
+          {/*
+            Site search. This is Quartz's `.search` markup rendered INLINE in the
+            bar (not a nested <Search/> component call): the search.inline.ts
+            handler iterates every `.search` element, so this block is wired by
+            the searchScript bundle carried on TopNav below. The DOM shape must
+            stay `.search > .search-button + .search-container > .search-space >
+            .search-bar + .search-layout`. The button keeps the retired
+            `.hmtc-search` pill's glyph/label/kbd so the bar looks unchanged; the
+            "/" hint is now honest (search.inline.ts opens on "/").
+          */}
+          <div class="search hmtc-topnav-search" role="search">
+            <button
+              type="button"
+              class="search-button"
+              aria-label="Search standards, briefings and analytes"
+            >
+              <span class="hmtc-search-glyph" aria-hidden="true">&#8981;</span>
+              <span class="hmtc-search-label">Search standards, briefings, analytes</span>
+              <span class="hmtc-search-kbd" aria-hidden="true">/</span>
+            </button>
+            <div class="search-container">
+              <div class="search-space">
+                <input
+                  autocomplete="off"
+                  class="search-bar"
+                  name="search"
+                  type="text"
+                  aria-label="Search"
+                  placeholder="Search standards, briefings, analytes, regulations…"
+                />
+                <div class="search-layout" data-preview="true"></div>
+              </div>
+            </div>
+          </div>
           <a class="hmtc-login" href={`${baseDir}/portal`}>
             Portal preview
           </a>
@@ -86,12 +122,14 @@ export default (() => {
     )
   }
 
-  TopNav.css = style
-  // afterDOMLoaded is a single slot, so ship both behaviours here, each IIFE-wrapped
-  // to isolate scope: the mega-menu disclosure JS (topNav.inline — hover intent,
+  TopNav.css = [style, searchStyle]
+  // afterDOMLoaded is a single slot, so ship every behaviour here, each IIFE-wrapped
+  // to isolate scope (inline scripts are bundled with imports inlined, so wrapping
+  // is safe): the mega-menu disclosure JS (topNav.inline — hover intent,
   // click-outside + Escape to close, keyboard nav; sets `.hmi-nav--js` to disable the
-  // CSS-only fallback that leaves click-opened panels stuck open) and the homepage
-  // hero-search wiring.
-  TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();`
+  // CSS-only fallback that leaves click-opened panels stuck open); the homepage
+  // hero-search `?q=` wiring; and the FlexSearch modal (search.inline) that powers
+  // the top-bar `.search` pill.
+  TopNav.afterDOMLoaded = `(()=>{${topNavScript}})();(()=>{${homeSearchScript}})();(()=>{${searchScript}})();`
   return TopNav
 }) satisfies QuartzComponentConstructor

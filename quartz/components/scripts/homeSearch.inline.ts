@@ -13,8 +13,14 @@
 // slug, so every `?q=` variant self-canonicalizes to `/`.
 
 function runQuery(q: string) {
-  const button = document.querySelector<HTMLButtonElement>(".hmi-hero-search .search-button")
-  const bar = document.querySelector<HTMLInputElement>(".hmi-hero-search .search-bar")
+  // Prefer a homepage hero search if one is present; otherwise drive the global
+  // top-bar search (the only search element the current minimal homepage ships).
+  // This is what lets a shared `/?q=cadmium` deep link actually open search and
+  // run the query rather than land on a silent homepage.
+  const scope =
+    document.querySelector(".hmi-hero-search") ?? document.querySelector(".hmtc-topnav-search")
+  const button = scope?.querySelector<HTMLButtonElement>(".search-button")
+  const bar = scope?.querySelector<HTMLInputElement>(".search-bar")
   if (!button || !bar) return
   button.click()
   bar.value = q

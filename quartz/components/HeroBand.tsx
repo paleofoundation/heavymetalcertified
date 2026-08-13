@@ -28,6 +28,8 @@ const KIND: Record<string, string> = {
   "articles-index": "Directory",
   regulation: "Regulation reference",
   "regulation-index": "Record of law",
+  comparison: "Comparison",
+  guide: "Guide",
 }
 
 // First slug segment → breadcrumb section label + hub slug.

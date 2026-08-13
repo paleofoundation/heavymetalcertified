@@ -290,6 +290,15 @@ export const navPanels: NavPanel[] = [
           { label: "Using the mark", slug: "mark" },
         ],
       },
+      {
+        heading: "Choosing HMTc",
+        children: [
+          { label: "Certification comparison", slug: "compare" },
+          { label: "For brands", slug: "for-brands" },
+          { label: "For retailers", slug: "for-retailers" },
+          { label: "For legal & QA", slug: "for-legal-qa" },
+        ],
+      },
     ],
     allLabel: "Program structure",
   },

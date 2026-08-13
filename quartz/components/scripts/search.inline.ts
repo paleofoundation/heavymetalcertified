@@ -246,6 +246,23 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
 
   let currentHover: HTMLInputElement | null = null
   async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
+    // "/" opens search (the bar shows a "/" hint). Ignore it while the visitor is
+    // typing in a field or when a modifier is held, so it never steals a literal
+    // slash from an input, a browser find, or a shortcut.
+    if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey && !e.isComposing) {
+      const target = e.target as HTMLElement | null
+      const typing =
+        !!target &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.tagName === "SELECT" ||
+          target.isContentEditable)
+      if (!typing && !container.classList.contains("active")) {
+        e.preventDefault()
+        showSearch("basic")
+        return
+      }
+    }
     if (e.key === "k" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
       e.preventDefault()
       const searchBarOpen = container.classList.contains("active")

@@ -10,6 +10,7 @@ const footerSections = [
     title: "Standards",
     links: [
       ["All standards", "/standards"],
+      ["Certification comparison", "/compare"],
       ["Infant & Child Foods", "/manuals/infant-and-child-foods"],
       ["Program Manuals", "/manuals"],
       ["The analyte panel", "/#panel"],
