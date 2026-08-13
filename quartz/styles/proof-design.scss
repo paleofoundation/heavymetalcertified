@@ -207,17 +207,33 @@ section.hmi-evidence-header { background: var(--shade); border: 1px solid var(--
 section.hmi-evidence-header .hmi-evidence-row { display: flex; gap: 10px; margin: 3px 0; }
 section.hmi-evidence-header .hmi-evidence-key { color: var(--muted); min-width: 90px; font-weight: 600; font-size: 12px; }
 
-/* accordion overview (Q&A) */
+/* accordion overview (Q&A) — the v3 FAQ accordion, recoloured to the cert
+   palette (#9f2727 = var(--burg); the index ships the same rules at #8b2a4a).
+   Emitted by CollapsibleQuestions: a Lora question at weight 400 (NO bold —
+   design canon) baseline-aligned against a mono "+" marker that flips to "−"
+   when open, and a left-ruled answer. Replaces the pre-v3 bold-600 summary +
+   rotating-circle marker this block used to carry. */
 .qa { border-bottom: 1px solid var(--line); }
-.qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 14px; padding: 18px 2px; font-family: Lora, serif; font-size: 20px; font-weight: 600; color: var(--ink); }
+.qa summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 14px; padding: 18px 0; font-family: Lora, serif; font-size: 21px; font-weight: 400; color: var(--burg); line-height: 1.35; }
 .qa summary::-webkit-details-marker { display: none; }
-.qa summary .mk { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; transition: transform 0.2s; }
-.qa[open] summary .mk { transform: rotate(180deg); }
-.qa .ans { padding: 0 2px 20px 40px; color: var(--body); font-size: 15.5px; }
+// The marker is a bare mono "+" that becomes "−" on open — no ring, no box, no
+// rotation. The .mk span is emitted empty by CollapsibleQuestions; the glyph is
+// this ::before, so collapsed/open is a pure style state. Mono so "+" and "−"
+// share an advance width and the question text does not shift on toggle.
+.qa summary .mk { display: flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 0.8em; color: var(--burg); font-family: "IBM Plex Mono", monospace; font-size: 18px; font-weight: 400; line-height: 1; }
+.qa summary .mk::before { content: "+"; }
+.qa[open] summary .mk::before { content: "\2212"; } /* U+2212 MINUS SIGN */
+// The heading's own autolink anchor rides inside the <summary> (the transformer
+// folds the h3's children in), so keep it hover-only rather than persistently
+// visible on every question, while deep-linking still works.
+.qa summary a[role="anchor"] { opacity: 0; transition: opacity 0.15s ease; }
+.qa summary:hover a[role="anchor"],
+.qa summary a[role="anchor"]:focus-visible { opacity: 0.5; }
+.qa .ans { margin: 12px 0 20px 30px; padding: 0 2px 0 16px; border-left: 2px solid #f2dcda; color: var(--body); font-size: 15.5px; line-height: 1.72; }
 .qa .ans p { margin: 0 0 0.8em; }
 .qa .qa-sub { border-bottom: 1px solid var(--line2); margin: 8px 0 0 6px; border-left: 2px solid var(--burg-tint); padding-left: 14px; }
 .qa .qa-sub > summary { font-size: 15.5px; padding: 11px 2px; color: var(--burg); }
-.qa .qa-sub > summary .mk { width: 22px; height: 22px; font-size: 13px; }
+.qa .qa-sub > summary .mk { font-size: 14px; } /* nested marker inherits the +/− ::before, just smaller */
 .qa .qa-sub > .ans { padding-left: 36px; }
 
 /* collapsible references */
