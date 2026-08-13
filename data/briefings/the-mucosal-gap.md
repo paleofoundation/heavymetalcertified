@@ -1,0 +1,67 @@
+---
+type: public-briefing
+slug: the-mucosal-gap
+title: "The Mucosal Gap"
+subtitle: "Menstrual and Intimate-Care Products Touch the Body's Most Absorptive Surface, and No Government Limits the Metals They Contain. HMTc Tests for Them Anyway."
+overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
+author: "Karen Pendergrass"
+author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
+date: "August 2026"
+audience: [brand-regulatory, brand-legal, retailer-compliance, toxicology-research]
+---
+
+Almost everything a regulator has ever written about heavy metals in a consumer product assumes the metal is eaten, or that it sits on skin. Menstrual and intimate-care products are neither case. A tampon, a cup, a disc, and a menstrual pad rest against the vulvovaginal mucosa, and the internal ones stay there for hours at a time. The vaginal mucosa is one of the most permeable surfaces of the human body, and unlike the gut it drains a fraction of what crosses it straight into the systemic circulation without the liver's first pass. That combination, a highly permeable surface in prolonged contact, is exactly the exposure route the contaminant rulebook was not written for. In 2024 a peer-reviewed study measured lead, cadmium, and arsenic in every brand of tampon it tested. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction. This briefing is about that gap, and about what a certification program can honestly do inside it.
+
+## The vaginal mucosa is not skin
+
+Contaminant regulation treats the body as either a gut or a skin. Food limits assume the metal is swallowed, buffered by stomach acid, and subject to the fractional absorption of the gastrointestinal tract; cosmetic limits assume the metal sits on intact skin, whose outer keratin layer is a genuine barrier that most metals cross slowly and incompletely. The vulvovaginal mucosa is neither. It is a thin, non-keratinised, richly vascularised epithelium kept moist and, during menstruation, in continuous contact with an absorbent or collecting device. Clinical medicine uses the vaginal route for systemic drug delivery for precisely this reason: it is highly permeable, and a portion of what is absorbed reaches the bloodstream without the first-pass hepatic metabolism that would clear an equivalent oral dose [4]. A limit calibrated to skin contact, or to a fraction of a swallowed dose, does not describe what this surface does with a metal held against it for four to eight hours.
+
+The exposure geometry compounds the point. An internal device is not an incidental touch; it is an occlusive, prolonged, mucosal contact repeated for several days every month across decades of a person's life. A mechanistic model of lead released from a worn tampon has been published, and it is careful to show that only a small fraction of the lead released reaches tissue in its baseline scenario [3]. That honesty cuts both ways: it establishes that a real, quantifiable pathway from product to tissue exists, while showing that the magnitude depends on release rate, permeability, and wear time rather than on product content alone. The route is real. What crosses it is the open question the evidence has only begun to measure.
+
+## What the 2024 tampon study found, and what it did not
+
+The anchor evidence is Shearston and colleagues, published in Environment International in 2024 [1]. The study digested thirty tampons spanning fourteen brands and eighteen product lines bought in the United States, the European Union, and the United Kingdom, and measured sixteen metals and metalloids by mass spectrometry. Lead was present in every one of the sixty subsamples, at a median of one hundred seventy-three micrograms per kilogram and a maximum of four hundred sixty-eight. Cadmium was present in every subsample; total arsenic in all but three. The authors found higher lead in non-organic than in organic tampons and higher cadmium, cobalt, and lead in products bought in the United States than in Europe, and reported that no product category was consistently lower across all metals. A systematic review prepared for the United States Food and Drug Administration's device centre in the same year reached the same qualitative conclusion across the wider literature [2].
+
+What that evidence establishes is presence: these metals are in these products, measurably, across brands and markets, not as an outlier but as the ordinary case. What it does not establish is dose. The Shearston figures are total content per unit mass of the product, obtained by dissolving the whole tampon; they are not a measurement of how much metal leaves the product during use, crosses the mucosa, and reaches a body. The study did not speciate arsenic or mercury, so the reported arsenic is total arsenic rather than the more toxic inorganic fraction, and chromium and mercury were below the detection limit in most samples. The honest reading is neither dismissal nor alarm. Presence is established and the absorptive route is established; the exposure that results is not yet quantified, and a certification program has to be built to be correct under both the optimistic and the pessimistic reading of that uncertainty.
+
+## A rulebook that never measured content
+
+The reason no number exists to look up is structural, not accidental. Tampons, pads, cups, and discs are regulated as medical devices: in the United States under 21 CFR Part 884 as Class II obstetrical and gynecological devices [5], and in the European Union under the Medical Devices Regulation 2017/745 [6]. Device law asks whether a material is biocompatible, and it answers that question through the ISO 10993 series, which evaluates a device for biological reactivity, sensitisation, and the release of constituents under simulated-use extraction [7]. Biocompatibility testing can, in principle, flag a leachable metal. It is not, and was never intended to be, a numeric ceiling on how much lead or cadmium a finished tampon may contain. A product can pass its biocompatibility file and still carry the lead the 2024 study measured, because the file was never asked that question.
+
+The cosmetic side of the category has the opposite problem. Feminine wipes, deodorants, douches, and intimate washes are cosmetics, and several governments do set trace-metal limits for cosmetics. But those limits were written for skin. The one place a government has drawn a stricter cosmetic line for a mucosal-contact product is oral care: Germany's technically-avoidable-contaminant guidance sets lead in toothpaste at five hundred micrograms per kilogram against two thousand for general cosmetics, because toothpaste meets mucosa and is partly swallowed [8]. No regulator has extended that logic to the vaginal mucosa, which is more permeable than the oral. The result across the whole category is a single gap with two shapes: for devices, the most absorptive route in consumer use has no content rulebook at all; for cosmetics, it borrows a rulebook written for a less absorptive surface.
+
+## What HMTc requires
+
+HMTc closes the gap in the two ways the two product families allow, and it never invents a number to paper over the difference. For the device forms, tampons, pads, cups, discs, and period underwear, there is no sovereign content limit to align to, so the standard does not manufacture one. It requires instead that every certified lot be tested for the full analyte panel by mass spectrometry, sampled component by component, with the tampon applicator tested as a distinct component, and it holds every metal the literature has actually measured in these products, lead, cadmium, arsenic, mercury, nickel, chromium, and, from the broadest published screen, aluminium and tin, under a mandatory analytical control with a defined escalation rule rather than a permissive ceiling [10]. Antimony, which leaches from the polyester used in some applicators and cups, is monitored on those components even though it sits outside the certified panel. The posture is deliberate: where the science shows a metal is present and no lawful limit exists, the defensible act is to measure it every lot and drive it down, not to publish a comfortable-looking threshold the evidence cannot support.
+
+For the cosmetic forms, a sovereign limit does exist, and the standard reads across to it, choosing the stricter mucosal-contact value wherever a government has drawn one. Lead is held at the mucosal-contact tier, five hundred micrograms per kilogram, rather than the general-cosmetic two thousand, on the explicit ground that the vaginal mucosa is more permeable than the oral mucosa that tier was written for [8]. Cadmium, arsenic, and mercury are held at the strictest general-cosmetic sovereign values, and nickel at the only cosmetic nickel content limit any government publishes [9]. Inorganic arsenic and hexavalent chromium are enforced by reflex speciation on any elevated total result. The one determination the program makes in the other direction is methylmercury, which has no formation pathway in a fibre, polymer, or aqueous product and is bounded by the total-mercury control; it is recorded as not material, and that determination is tested against the evidence every time the standard is rebuilt, so it cannot quietly become an excuse.
+
+## Safety, and only safety
+
+It is worth stating plainly what the mark does and does not assert, because a category this sensitive is easy to overclaim in either direction. The Heavy Metal Tested and Certified mark certifies heavy-metal safety, and nothing else. It is not a statement that a product performs well, that it is healthy, that it is free of every other chemical of concern, or that products without the mark are dangerous. It is a statement that the product's metal content was measured against the strictest limit the exposure route can be shown to warrant, and met it. The framing is harm reduction, not fear. The evidence does not support telling anyone that menstrual products are unsafe; it supports the more modest and more useful claim that the metals are present, the route is real, the rulebook is empty, and a person is entitled to choose a product whose metal content was actually checked by someone with no incentive to find it clean.
+
+## Why a brand certifies
+
+For a brand, the gap is a liability that testing converts into a differentiator. This is a category with unusually high public salience, a peer-reviewed study that reached national coverage, and no regulatory floor to point to when a customer, a retailer, or a plaintiff's expert asks what a product contains. A certificate that rests on per-lot mass-spectrometry testing against a published, exposure-appropriate standard is the record that answers that question before it is asked, and it is a record the brand controls rather than one assembled adversarially after a headline. Certifying does not require conceding that a product was ever unsafe. It requires only measuring what no regulator has required the brand to measure, in the one category where the exposure route makes that measurement most worth having.
+
+## Common questions
+
+### Does the HMTc mark mean a menstrual or intimate-care product is free of heavy metals?
+
+No. No analytical method can certify the absence of an element, and the program does not claim to. The mark means the product was tested, lot by lot, and that every metal was either below the strictest limit its exposure route warrants or, where no lawful limit exists, held under a mandatory control that measures it every lot and drives it down. It is a statement about testing and limits, not about zero.
+
+### Does this briefing say tampons are dangerous?
+
+No. It says that lead, cadmium, and arsenic have been measured in tampons across brands and markets, that the vaginal mucosa is an unusually absorptive route, and that no government limits the metal content of these products. Presence measured in a product is not the same as an absorbed dose that causes harm, and the published exposure model is explicit that only a fraction of released lead reaches tissue in its baseline case [3]. The case for testing rests on the combination of established presence, a real absorptive pathway, and an empty rulebook, not on a claim of demonstrated harm.
+
+### Why certify against a standard when there is no legal limit to meet?
+
+Because there is no legal limit to meet. In a category a government already regulates, a certificate that merely restates the legal floor adds little. Here the floor is absent for the device forms and borrowed from skin for the cosmetic ones, so a program that tests every lot against an exposure-appropriate standard is providing the only measurement in the category rather than duplicating a regulator's.
+
+### Is the vaginal route really more absorptive than skin?
+
+Yes, and it is established enough that medicine relies on it. The vaginal mucosa is used clinically to deliver drugs systemically precisely because it is thin, non-keratinised, richly vascularised, and drains partly around the liver's first-pass metabolism [4]. Intact skin, by contrast, is a keratinised barrier most metals cross slowly. A limit calibrated to skin understates what the mucosal route can do with the same metal.
+
+## References
+
+Rendered from the briefing metadata.

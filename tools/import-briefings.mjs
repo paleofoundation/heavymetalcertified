@@ -37,6 +37,7 @@ const MAP = {
   "brief-6-premium-promise": { title: "The Premium Promise", section: "Positioning" },
   "the-prop-65-gap": { title: "Named as a Hazard, Left Unlimited", section: "Scope & standards" },
   "supplements-child-protective": { title: "The Child Eats the Adult's Supplement", section: "Scope & standards" },
+  "the-mucosal-gap": { title: "The Mucosal Gap", section: "Scope & standards" },
 }
 
 // Parsed per-briefing metadata (abstract, references, series). Keyed by slug.
