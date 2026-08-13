@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-08-13",
+  "default_state": "not_scheduled",
+  "_note": "Commercial-state source of truth for category readiness. A category is 'open' only when its FULL pathway is operational (limits, methods, laboratory capacity, decision rules, agreements, mark controls, surveillance, verification) — never merely because a standards page exists. 'private_readiness_only' requires a published technical standard a brand can be ready against; a category whose standard is still in development is 'evidence_review', not private-readiness. States are set from the on-disk standards data (content/standards/*.md `type` + firm analytes) and data/manuals/manifest.json, verified 2026-08-13; regenerate content/category-readiness.md with tools/build-category-readiness.mjs after any change.",
+  "states": {
+    "open": "Open for certification",
+    "private_readiness_only": "Private Readiness only",
+    "evidence_review": "Evidence review underway",
+    "consultation": "Public consultation",
+    "not_scheduled": "Not yet scheduled",
+    "paused": "Paused"
+  },
+  "categories": [
+    {
+      "name": "Infant and Child Foods",
+      "state": "private_readiness_only",
+      "note": "Technical standards for all nine subcategories are published and the category Program Manual is published; the complete commercial opening record — laboratory route, mark controls, surveillance and agreements — has not been declared."
+    },
+    {
+      "name": "Grains, Cereals, and Rice Products",
+      "state": "private_readiness_only",
+      "note": "Technical standards for all twelve subcategories carry firm analyte limits; the bound category manual is being regenerated before publication, and the commercial opening record has not been declared."
+    },
+    {
+      "name": "Seafood",
+      "state": "private_readiness_only",
+      "note": "Technical standards for all seven subcategories carry firm limits; the bound category manual is being regenerated ahead of an unresolved methylmercury adjudication, and the commercial opening record has not been declared."
+    },
+    {
+      "name": "Infant and Child Contact Products (Ages 0–5)",
+      "state": "private_readiness_only",
+      "note": "Technical standards are published on a migration basis; several analyte cells remain scoped by design, no bound category manual is published, and the commercial opening record has not been declared."
+    },
+    {
+      "name": "Herbs, Spices, Seasonings and Salt",
+      "state": "private_readiness_only",
+      "note": "The spices standard is published with a firm lead limit; salt and the remaining members are still in development, so readiness across the category is partial."
+    },
+    {
+      "name": "Dairy and Milk Products",
+      "state": "evidence_review",
+      "note": "The category standard is in development — no firm analyte limits are published yet, so there is no complete standard to enter readiness against."
+    },
+    {
+      "name": "Culinary Oils and Fats",
+      "state": "evidence_review",
+      "note": "Category standards are in development — no firm analyte limits are published yet."
+    },
+    {
+      "name": "Chocolate, Cocoa and Confectionery",
+      "state": "evidence_review",
+      "note": "The category standard is in development — no firm analyte limits are published yet."
+    },
+    {
+      "name": "Condiments, Sauces and Dressings",
+      "state": "evidence_review",
+      "note": "The category standard is in development — no firm analyte limits are published yet."
+    },
+    {
+      "name": "Sweeteners and Syrups",
+      "state": "evidence_review",
+      "note": "The category standard is in development — no firm analyte limits are published yet."
+    }
+  ]
+}
