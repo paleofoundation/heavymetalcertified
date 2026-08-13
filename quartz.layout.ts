@@ -11,7 +11,16 @@ export const sharedPageComponents: SharedLayout = {
   // surface: it advertised Index canonicals, missing Index-only routes and an
   // API this static deployment does not provide. Citation metadata remains in
   // Head.tsx and page sharing remains in the right rail.
-  afterBody: [Component.Corrections()],
+  //
+  // SourceCitationPanel is a fixed slide-over (scrim + right-anchored dialog) that
+  // fills and reveals on inline-citation click, reading the source's record from
+  // the page's References list; mounting it also ships citationPanel.inline.ts (a
+  // component's inline script only ships when it is in the layout). It is mounted
+  // HERE, in the always-rendered top-level afterBody slot — NOT in the right rail
+  // (its prior home at b6aadf4). The rail is display:none on mobile, and a fixed
+  // overlay nested under a display:none ancestor would never render there; afterBody
+  // renders on every page and at every width. The homepage opts out internally.
+  afterBody: [Component.SourceCitationPanel(), Component.Corrections()],
   footer: Component.Footer(),
 };
 
@@ -31,12 +40,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DedicatedPages(),
   ],
   // Proof's right rail (.rail): the certificate-verify affordance and page
-  // provenance/actions.
-  // SourceCitationPanel renders a hidden citation-detail panel at the top of the
-  // rail and ships citationPanel.inline.ts (a component's inline script only
-  // ships when it is in the layout); clicking an inline citation opens it with
-  // that source's record from the page's References list. Rail carries the rest.
-  right: [Component.SourceCitationPanel(), Component.Rail()],
+  // provenance/actions. The citation slide-over is no longer mounted here — it
+  // moved to the top-level afterBody slot (see sharedPageComponents) so the fixed
+  // overlay renders at every width, including where the rail is display:none.
+  right: [Component.Rail()],
 };
 
 // components for pages that display lists of pages (e.g. tags or folders)
@@ -46,9 +53,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Snav(),
     Component.DedicatedPages(),
   ],
-  // SourceCitationPanel renders a hidden citation-detail panel at the top of the
-  // rail and ships citationPanel.inline.ts (a component's inline script only
-  // ships when it is in the layout); clicking an inline citation opens it with
-  // that source's record from the page's References list. Rail carries the rest.
-  right: [Component.SourceCitationPanel(), Component.Rail()],
+  // The citation slide-over is mounted top-level (afterBody), not here — see the
+  // note in defaultContentPageLayout / sharedPageComponents.
+  right: [Component.Rail()],
 };

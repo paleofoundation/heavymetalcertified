@@ -13,8 +13,10 @@
       { "sel": "[id^=\"ref-\"]", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains", "note": "reference [N] marker is mono (COMPONENTS §2)" },
       { "sel": ".wiki-content a[download]", "prop": "count", "want": 0, "note": "the PDF-edition download is no longer inline in the reading surface; the generators emit `pdf:` frontmatter and NO body card (CONTENT-RULES §3.5 presentation change)." },
       { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the Download PDF affordance now lives in the right rail (Rail.tsx PdfCard), driven by the page's `pdf` frontmatter — one home for it sitewide." },
-      { "sel": "[data-cite-panel]", "prop": "count", "want": 1, "note": "the citation-detail panel (SourceCitationPanel) is mounted in the rail; citationPanel.inline.ts fills and reveals it on inline-citation click." },
-      { "sel": ".hmtc-cite-panel", "prop": "display", "want": "none", "note": "the panel is hidden until a citation is clicked." }
+      { "sel": "[data-cite-panel]", "prop": "count", "want": 1, "note": "the citation slide-over (SourceCitationPanel) is mounted top-level (quartz.layout.ts afterBody, NOT the rail — so the fixed overlay renders at every width); citationPanel.inline.ts fills and reveals it on inline-citation click. This is the layout-liveness assertion: if 0, the mount was dropped and the inline script never ships." },
+      { "sel": ".hmtc-cite-panel", "prop": "position", "want": "fixed", "note": "the panel is a right-anchored fixed slide-over, not an in-rail card." },
+      { "sel": ".hmtc-cite-panel", "prop": "visibility", "want": "hidden", "note": "closed state: the panel is off-screen (transform: translateX(100%)) and visibility:hidden until a citation is clicked — NOT display:none, which would kill the slide transition." },
+      { "sel": ".hmtc-cite-scrim", "prop": "count", "want": 1, "note": "the backdrop scrim sibling that the drawer slides in over." }
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },

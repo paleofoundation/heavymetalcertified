@@ -55,55 +55,73 @@ column `line-height 1.55` `#3f3a3f`; a trailing link column in mono 11.5px.
 
 ---
 
-## 2. Citation superscript → source drawer
+## 2. Citation superscript → source drawer — *landed (cert slide-over)*
 
-**The single most-repeated affordance in the corpus, and today it is a bare `[1]`.**
+**The single most-repeated affordance in the corpus.** On the cert it now opens a
+right-side slide-over dialog. Interaction pattern after Examine's study-sheet; the
+colours are the cert brand system (#9f2727), **not** Examine's purple and not the
+Index's #8b2a4a burgundy this spec was first written in.
 
 Reader need: check what a number rests on without leaving the sentence.
-Data: source frontmatter + `data/evidence/values.jsonl` + the file hash already stored.
-Today: a superscript that jumps to a footnote list at the bottom of the page.
+Data (cert): **the page's own rendered `## References` grid row** — the one-way
+firewall keeps source pages OUT of the cert, so there is no `values.jsonl`, no
+`source_id`, and no stored file hash here (contrast the Index build, which has all
+three). The reference row is the single source of a citation's title, meta line
+(authors · year · journal · DOI **and** a plain-language blurb of what the study
+was about), source type, and outbound link.
+Today (before this): a superscript that jumped to a footnote list at the page bottom.
 
-**Marker** — `sup`, IBM Plex Mono 11px; the anchor `#8b2a4a`, `padding 1px 3px`,
-`border-radius 2px`, hover `background #f6ecf0` with no underline.
+**Marker** — `sup`, IBM Plex Mono ~11px; the wired marker reads as interactive
+(`cursor: pointer`) at every width. Colour is the cert accent `#9f2727` (asserted on
+`sup.cite > a` in `design/v3-acceptance.cert.json`; if it reads `#1c43ad`, an internal-
+link rule is winning — delete it, do not out-specify). Both corpus shapes are wired:
+`sup.cite > a[href="#ref-N"]` (articles) and `sup.hmtc-cite` carrying `[N]` (briefings);
+the plain-`[N]` marker is given `role="button"` + `tabindex="0"` so it is keyboard-
+operable and focus can return to it.
 
-**Drawer** — right-side panel, `width min(520px, 94vw)`, full height, `background #fffdfb`,
-`box-shadow -10px 0 44px rgba(74,21,38,0.24)`, scrim `rgba(45,15,26,0.42)`.
+**Drawer** — right-anchored `role="dialog" aria-modal="true"` panel over a scrim.
+`position: fixed`, `inset-block: 0; right: 0`, full `100vh`, `width min(550px, 100vw)`
+(full width ≤480px), `overflow-y: auto`, `background #fffdfb`, `border-left 1px #e8e1db`,
+`box-shadow -10px 0 44px rgba(74,21,38,0.24)`. Closed state is `transform: translateX(100%)`
++ `visibility: hidden`; open adds `.is-open` → `translateX(0)` + `visibility: visible`,
+a ~220ms ease slide. Scrim is a fixed sibling `rgba(45,15,26,0.42)`. **`prefers-reduced-
+motion` drops the transition** (show/hide, no slide).
 
-- Header: `padding 22px 26px 18px`, `border-bottom 1px #e8e1db`. Kicker `SOURCE RECORD [n]`
-  mono 10px `0.14em` uppercase `#8b2a4a`. Title Lora 21px `line-height 1.3` `#2b1f24`.
-  Meta 12.5px `#736b6e`. Close `×` 22px `#b7aeb0`, hover `#8b2a4a`.
-- Body `padding 20px 26px 34px`. **Two value sections, in this order** — the first is
-  conditional, the second always renders.
+Behaviour (`citationPanel.inline.ts`): the marker click is `preventDefault`-ed (no
+`#ref-N` jump — the reader's scroll is preserved); body scroll is locked while open
+(record `scrollY`, `body { overflow: hidden }` + scrollbar-width compensation, restored
+on close); focus moves to the close button and Tab is trapped inside; focus returns to
+the triggering marker on close. Dismiss three ways: the `×` button, `Esc`, or a scrim
+click.
 
-  **`USED ON THIS PAGE`** — mono 9.5px `0.14em` uppercase `#8b2a4a`, dotted key–value
-  rows at `padding 10px 0`, uncapped. Renders **only** when the marker carries a
-  `value_id`. When it does not, this section is **absent entirely** — no empty state, no
-  placeholder. An empty "used on this page" reads as *this source supports nothing here*,
-  which is false.
+- Header: a slim sticky bar, `border-bottom 1px #e8e1db`, tint `#fdf4f3`, carrying only
+  the close control. Close `×` ~22px `#a9a1a1`, hover `#9f2727`.
+- Body `padding ~24px 26px 40px`, the **honest document record** built from the
+  reference row, in order:
+  - Kicker `SOURCE RECORD [n]` — mono 10px `0.14em` uppercase `#9f2727`.
+  - Title — Lora ~21px `line-height 1.3`. Carries `id="hmtc-cite-panel-title"`
+    (the dialog's `aria-labelledby`). Plain `#2b1f1f` serif, or, when the row carries a
+    URL, an outbound `#1c43ad` link (`target=_blank rel=noopener noreferrer`).
+  - Meta / blurb — 13.5px `line-height 1.7` `#736b6b` (the row's authors · year · journal
+    · DOI + plain-language blurb).
+  - Source type — mono 10px `0.12em` uppercase `#a9a1a1`.
+  - Actions: filled *Open source record →* (`#9f2727`, `9px 15px`, radius 3px, white mono
+    label, hover `#6f2139`) when the row links out; outlined *Copy citation* (`#9f2727`
+    on `1px #e8e1db`, hover tint `#fdf4f3`).
 
-  **`VALUES EXTRACTED FROM THIS DOCUMENT · <n>`** — mono 9.5px `0.14em` uppercase
-  `#a9a1a2`, same rows, `max-height 220px` `overflow auto`. Filtered from
-  `values.jsonl` by `source_id`, which exists today. The count is not decoration: it
-  tells the reader whether the document is rich or thin before they scroll it.
+**DEFERRED — not faked against absent data.** The canon spec's two value sections
+(**`USED ON THIS PAGE`**, gated on a marker `value_id`; **`VALUES EXTRACTED FROM THIS
+DOCUMENT · <n>`**, filtered from `values.jsonl` by `source_id`) and the **document-
+integrity hash** block do **not** render on the cert: it has no `values.jsonl`, no
+`source_id`, and no stored file hash to fill them honestly. An empty "used on this page"
+would read as *this source supports nothing here* (false); a fabricated hash would be
+worse. So the cert drawer builds the document record and stops there — no empty states,
+no placeholders.
 
-  **Why this order and these labels.** The page↔value join does not exist, so the
-  document — not the page — is what this drawer can honestly be *about*. Its load-bearing
-  content is document identity: title, meta, integrity hash, and the route to the source
-  record. The value list is corroborating detail underneath that, and capping it says so.
-  When the join lands, the first section appears above and nothing else moves.
-
-  **The upgrade path is one scoped ask, not F-16:** can the citation marker be emitted
-  carrying the `value_id` it annotates? That is a marker-attribute question, not a
-  page-level index. Log it as its own finding.
-- **Document integrity** block: `background #fbf5f7`, `border 1px #eddfe4`, `padding 15px 17px`,
-  `margin-top 24px`. Label mono 9.5px `0.12em` uppercase `#8b2a4a`. Hash mono 11px
-  `line-height 1.75` `#5a4148` `word-break: break-all`.
-- Note 14px `line-height 1.72`. Then three actions: filled *Open source record*
-  (`#8b2a4a`, `9px 15px`, radius 3px, hover `#6f2139`), outlined *Original document* and
-  *Copy citation* (`#8b2a4a` on `1px #eddfe4`, hover `#fbf5f7`).
-
-**This is what makes the Index an index rather than an article.** The hash is already in
-the evidence tree; not surfacing it is the largest unforced loss in the current build.
+**The upgrade path is one scoped ask, not F-16** (logged to the outstanding ledger):
+mint a `values.jsonl` for the cert corpus and emit the `value_id` a marker annotates as
+a marker attribute. When that data lands, the value sections slot in above the meta line
+and nothing else moves. Until then, this is the complete, honest component.
 
 ---
 
@@ -314,7 +332,9 @@ One component per commit, in this order — leverage descending:
 
 1. ~~Burgundy table~~ *(landed)*
 2. ~~Claim underline~~ *(deferred — no `data-claim` exists to match; see §3)*
-3. Citation marker + source drawer — the affordance that defines the product
+3. ~~Citation marker + source drawer~~ *(landed on the cert as a right-side slide-over
+   dialog; the value sections + integrity hash are deferred for want of `values.jsonl` /
+   `source_id` / a stored file hash — see §2)*
 4. Caption + caveat callout — cheap, and they stop misreadings; both have a second
    state/position (§9–10) and the absent-state caveat is the higher-value half, since
    it covers 735 pages that would otherwise render nothing

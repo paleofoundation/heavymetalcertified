@@ -1,32 +1,102 @@
-// Citation-detail panel (SourceCitationPanel.tsx + citationPanel.inline.ts).
-// Sits at the top of the right rail, hidden until an inline citation is clicked.
-// Canon-clean: no bold (emphasis is Lora + IBM Plex Mono), #9f2727 accent,
-// #1c43ad for the outbound source link, warm near-white ground (#fffdfb).
-.hmtc-cite-panel {
-  border: 1px solid #e8e1db;
-  background: #fffdfb;
-  margin-bottom: 26px;
-  // A soft lift so an opened panel reads as surfaced over the rail.
-  box-shadow: 0 8px 24px rgba(43, 31, 31, 0.09);
-}
-.hmtc-cite-panel[hidden] {
-  display: none;
+// Citation-detail slide-over (SourceCitationPanel.tsx + citationPanel.inline.ts).
+//
+// A right-anchored, full-viewport-height source drawer over a dark scrim. Click an
+// inline citation [n] and the clicked source's full record slides in from the right;
+// the record is read from the page's own "## References" list (the one-way firewall
+// keeps source pages OUT of the cert — citations link OUT to the Heavy Metal Index /
+// DOI, never the reverse). Interaction pattern after Examine's study-sheet; colours
+// are the cert brand system, not Examine's purple.
+//
+// Canon-clean: NO BOLD anywhere — emphasis is Lora (serif titles) + IBM Plex Mono
+// (mono kickers/labels) + colour, never font-weight. #9f2727 accent (kicker, marker,
+// close-hover), #6f2139 filled-action hover, #1c43ad outbound link, warm near-white
+// ground (#fffdfb), #e8e1db borders, #fdf4f3 header tint.
+//
+// The box-shadow is the ONE sanctioned exception to the no-box-shadow assertion:
+// CHROME-SPEC.md §1.2 (lines 111–113) exempts modals and the source drawer, echoed
+// at CHROME-SPEC.md:401 and :504.
+
+// Inert wrapper — the scrim and panel are each position:fixed, so this contributes
+// no layout footprint of its own.
+.hmtc-cite-overlay {
+  display: contents;
 }
 
+// Scrim — a fixed wash behind the panel; a click on it dismisses.
+.hmtc-cite-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(45, 15, 26, 0.42);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 220ms ease,
+    visibility 0s linear 220ms;
+}
+.hmtc-cite-scrim.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 220ms ease,
+    visibility 0s;
+}
+
+// Panel — right-anchored, full height, slides in from the right.
+.hmtc-cite-panel {
+  position: fixed;
+  inset-block: 0;
+  right: 0;
+  z-index: 1201;
+  height: 100vh;
+  width: min(550px, 100vw);
+  overflow-y: auto;
+  background: #fffdfb;
+  border-left: 1px solid #e8e1db;
+  box-shadow: -10px 0 44px rgba(74, 21, 38, 0.24);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition:
+    transform 220ms ease,
+    visibility 0s linear 220ms;
+}
+.hmtc-cite-panel.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  transition:
+    transform 220ms ease,
+    visibility 0s;
+}
+
+// Full-width on phones (≤480px). The panel is mounted top-level (afterBody), not
+// in the rail, so it renders here regardless of the rail's responsive state. Drop
+// the left border at full width so the box is exactly the viewport (no 1px overhang).
+@media (max-width: 480px) {
+  .hmtc-cite-panel {
+    width: 100vw;
+    border-left: none;
+  }
+}
+
+// Reduced motion: show/hide with no slide.
+@media (prefers-reduced-motion: reduce) {
+  .hmtc-cite-scrim,
+  .hmtc-cite-panel {
+    transition: none;
+  }
+}
+
+// Header — a slim sticky bar carrying the dismiss control, tinted so the drawer
+// reads as surfaced. Sticks to the top while the record scrolls.
 .hmtc-cite-panel-top {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 14px;
+  justify-content: flex-end;
+  padding: 12px 16px 12px 26px;
   border-bottom: 1px solid #e8e1db;
   background: #fdf4f3;
-}
-.hmtc-cite-panel-kicker {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 9.5px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #9f2727;
 }
 .hmtc-cite-panel-close {
   appearance: none;
@@ -34,62 +104,117 @@
   background: none;
   cursor: pointer;
   line-height: 1;
-  font-size: 18px;
-  padding: 0 2px;
+  font-size: 22px;
+  padding: 0 4px;
   color: #a9a1a1;
+  transition: color 0.2s ease;
 }
-.hmtc-cite-panel-close:hover {
+.hmtc-cite-panel-close:hover,
+.hmtc-cite-panel-close:focus-visible {
   color: #9f2727;
 }
 
+// Body — the honest document record: kicker · title · meta+blurb · type · actions.
+// (The "USED ON THIS PAGE" / "VALUES EXTRACTED FROM THIS DOCUMENT" / integrity-hash
+// sections in the canon spec are DEFERRED — cert carries no values.jsonl / source_id
+// / file-hash to fill them; see docs/design-canon/COMPONENTS.md §2.)
 .hmtc-cite-panel-body {
-  padding: 14px 15px 16px;
+  padding: 24px 26px 40px;
 }
-.hmtc-cite-panel-num {
+.hmtc-cite-panel-kicker {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: #9f2727;
-  margin-bottom: 8px;
+  margin: 0 0 12px;
 }
 .hmtc-cite-panel-title {
   font-family: Lora, serif;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 21px;
+  line-height: 1.3;
   color: #2b1f1f;
-  margin: 0 0 9px;
+  margin: 0 0 12px;
 }
-.hmtc-cite-panel-title a {
+// Title-as-outbound-link is the #1c43ad blue; scoped two-class so it beats the
+// global `article a` / `a` cascade under main. No border-bottom.
+.hmtc-cite-panel-body .hmtc-cite-panel-title a {
   color: #1c43ad;
   text-decoration: none;
+  border-bottom: none;
 }
-.hmtc-cite-panel-title a:hover {
+.hmtc-cite-panel-body .hmtc-cite-panel-title a:hover {
   text-decoration: underline;
 }
 .hmtc-cite-panel-detail {
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 13.5px;
+  line-height: 1.7;
   color: #736b6b;
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 }
 .hmtc-cite-panel-kind {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 9.5px;
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #a9a1a1;
-}
-.hmtc-cite-panel-go {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 12.5px;
-  color: #9f2727;
-  text-decoration: none;
-}
-.hmtc-cite-panel-go:hover {
-  text-decoration: underline;
+  margin: 0 0 22px;
 }
 
-// The wired inline citation reads as interactive.
+.hmtc-cite-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+// Filled primary action — route to the source record. #9f2727 → #6f2139 hover,
+// white mono label. Two-class scope + explicit resets so no global `a` rule wins.
+.hmtc-cite-panel-body .hmtc-cite-panel-go {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #9f2727;
+  padding: 9px 15px;
+  border: 1px solid #9f2727;
+  border-radius: 3px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.hmtc-cite-panel-body .hmtc-cite-panel-go:hover,
+.hmtc-cite-panel-body .hmtc-cite-panel-go:focus-visible {
+  background: #6f2139;
+  border-color: #6f2139;
+  color: #ffffff;
+}
+// Outlined secondary action — copy the citation. #9f2727 on a hairline, tint on hover.
+.hmtc-cite-panel-copy {
+  appearance: none;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9f2727;
+  background: none;
+  padding: 9px 15px;
+  border: 1px solid #e8e1db;
+  border-radius: 3px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.hmtc-cite-panel-copy:hover,
+.hmtc-cite-panel-copy:focus-visible {
+  background: #fdf4f3;
+  border-color: #9f2727;
+}
+
+// The wired inline citation reads as interactive at every width.
 sup.cite > a[href^="#ref-"],
 sup.hmtc-cite[data-cite-panel-wired] {
   cursor: pointer;

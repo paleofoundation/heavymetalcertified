@@ -82,3 +82,28 @@ briefing PDFs (`hmtc-primer`, `after-palmquist`, `defense-counsel-briefing`) wer
 regenerated — that needs `npm i -D @react-pdf/renderer` + `build-briefing-pdf.mjs`, which
 is risky here (cert `node_modules` is symlinked to the index's, and the repo has parallel
 WIP). Regenerate those three PDFs in a clean pass so the downloads match the pages.
+
+## 2026-08-13 — citation drawer: value sections + integrity hash deferred (needs values.jsonl + a marker value_id)
+
+Logged while shipping the citation source drawer as a right-side slide-over dialog
+(`SourceCitationPanel.tsx` / `citationPanel.inline.ts` / `sourceCitationPanel.scss`,
+mount moved to `quartz.layout.ts` afterBody). The drawer builds the **honest document
+record** from the page's own `## References` grid row — kicker `SOURCE RECORD [n]`,
+title, meta+blurb, source type, and an outbound link to the row's DOI / Heavy Metal
+Index URL. That is the complete, shippable component today.
+
+**Deferred, deliberately NOT faked (`docs/design-canon/COMPONENTS.md` §2):** the canon
+drawer spec also calls for two value sections — `USED ON THIS PAGE` (gated on a marker
+`value_id`) and `VALUES EXTRACTED FROM THIS DOCUMENT · <n>` (filtered from
+`values.jsonl` by `source_id`) — plus a **document-integrity hash** block. The cert
+corpus has **no `values.jsonl`, no `source_id`, and no stored file hash** (the one-way
+firewall keeps source pages out of the cert), so there is nothing to fill these
+honestly. An empty "used on this page" would read as *this source supports nothing
+here* (false); a fabricated hash would be worse. So the drawer stops at the document
+record — no empty states, no placeholders.
+
+**Upgrade path — one scoped ask, not F-16:** mint a `values.jsonl` for the cert corpus
+and emit, as a marker attribute, the `value_id` a citation annotates (a marker-attribute
+question, not a page-level index). When that data lands, the value sections slot in
+above the meta line and nothing else moves. Its own project; out of scope for this
+presentation-layer rebuild.
