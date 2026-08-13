@@ -23,7 +23,7 @@ const HeaderSearch = Search({
 // The v3 global header, reproduced from Heavy Metal Certified v3.dc.html
 // (lines 41–109). renderPage.tsx lifts this into a full-bleed sticky
 // <header class="hmi-topnav-shell">; the shell carries the white ground +
-// bottom rule (see cert-chrome.scss). Desktop: brand, the three authority
+// bottom rule (see cert-chrome.scss). Desktop: brand, the three primary
 // doors, a flex spacer, then Search · Verify · Log in · Apply. Below 1150px
 // the primary nav becomes an in-flow drawer: Search first, three accordions,
 // then Log in · Apply; Verify remains available in the closed bar.

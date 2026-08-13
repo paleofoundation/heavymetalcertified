@@ -17,13 +17,13 @@ const footerSections = [
     ],
   },
   {
-    title: "Method & evidence",
+    title: "Research",
     links: [
-      ["Method overview", "/method"],
-      ["How limits are derived", "/program/structure"],
-      ["Standard stability", "/standard-stability"],
-      ["Regulatory register", "/regulations"],
       ["Research library", "/articles"],
+      ["Standards briefings", "/briefings"],
+      ["Regulatory register", "/regulations"],
+      ["Method overview", "/method"],
+      ["How initial limits are set", "/program/structure"],
     ],
   },
   {
@@ -59,8 +59,8 @@ export default (() => {
               Heavy Metal Certified
             </a>
             <p>
-              Published heavy-metal standards, set per subcategory in each product's native basis,
-              and derived from a pooled distribution of the peer-reviewed and agency literature.
+              Published, product-specific heavy-metal standards anchored to sovereign government
+              limits, with independent certification and continuing verification.
             </p>
           </section>
           <nav class="site-footer-nav" aria-label="Footer">

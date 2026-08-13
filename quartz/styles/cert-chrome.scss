@@ -113,10 +113,13 @@ a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 25
   .hmtc-home-h1 { font-size: 40px !important; }
   .hmtc-prose-grid { grid-template-columns: minmax(0, 1fr) !important; gap: 26px !important; }
   .hmtc-panel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-  #what, #panel, #questions { padding-left: 24px !important; padding-right: 24px !important; }
+  .hmtc-home-library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #what, #panel, #about, #questions { padding-left: 24px !important; padding-right: 24px !important; }
+  #library > div { padding-left: 24px !important; padding-right: 24px !important; }
 }
 @media (max-width: 640px) {
   .hmtc-panel-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  .hmtc-home-library-grid { grid-template-columns: minmax(0, 1fr) !important; }
 }
 
 // ============================================================

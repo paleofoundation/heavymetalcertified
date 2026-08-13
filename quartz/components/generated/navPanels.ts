@@ -110,26 +110,53 @@ export const navPanels: NavPanel[] = [
     "allLabel": "Browse all standards"
   },
   {
-    "key": "method",
-    "label": "Method & Evidence",
-    "panelLabel": "Method & evidence",
-    "slug": "method",
-    "blurb": "See how limits are set, what the ten-analyte panel measures, and which public evidence supports the program.",
+    "key": "research",
+    "label": "Research",
+    "panelLabel": "Research & evidence",
+    "slug": "articles",
+    "blurb": "Read the research, standards briefings, regulatory record, and public methods behind the program.",
     "extraPrefixes": [
+      "method",
       "analytes",
       "regulations",
       "articles",
       "briefings",
-      "program/structure"
+      "program/structure",
+      "standard-stability"
     ],
     "groups": [
       {
-        "heading": "Standard-setting",
+        "heading": "Research",
         "children": [
           {
-            "label": "How limits are set",
-            "slug": "program/structure",
-            "anchor": "calibration"
+            "label": "Research library",
+            "slug": "articles"
+          },
+          {
+            "label": "Standards briefings",
+            "slug": "briefings"
+          },
+          {
+            "label": "Regulatory register",
+            "slug": "regulations"
+          },
+          {
+            "label": "The evidence base",
+            "slug": "method",
+            "anchor": "evidence-base"
+          }
+        ]
+      },
+      {
+        "heading": "Methods",
+        "children": [
+          {
+            "label": "Method overview",
+            "slug": "method"
+          },
+          {
+            "label": "How initial limits are set",
+            "slug": "program/structure"
           },
           {
             "label": "Native basis",
@@ -142,26 +169,22 @@ export const navPanels: NavPanel[] = [
             "anchor": "gates"
           },
           {
-            "label": "Two remediation pathways",
-            "slug": "program/two-pathways"
-          },
-          {
-            "label": "Confidential Remediation Track",
-            "slug": "program/remediation"
+            "label": "Standard stability",
+            "slug": "standard-stability"
           }
         ]
       },
       {
-        "heading": "Measures",
+        "heading": "Analytes",
         "children": [
+          {
+            "label": "All ten analytes",
+            "slug": "analytes"
+          },
           {
             "label": "The Big 8",
             "slug": "method",
             "anchor": "measures"
-          },
-          {
-            "label": "All ten analytes",
-            "slug": "analytes"
           },
           {
             "label": "Lead",
@@ -180,31 +203,9 @@ export const navPanels: NavPanel[] = [
             "slug": "analytes/mercury"
           }
         ]
-      },
-      {
-        "heading": "Evidence & policy",
-        "children": [
-          {
-            "label": "Regulatory register",
-            "slug": "regulations"
-          },
-          {
-            "label": "Research library",
-            "slug": "articles"
-          },
-          {
-            "label": "Standards briefings",
-            "slug": "briefings"
-          },
-          {
-            "label": "The evidence base",
-            "slug": "method",
-            "anchor": "evidence-base"
-          }
-        ]
       }
     ],
-    "allLabel": "Understand the method"
+    "allLabel": "Browse research articles"
   },
   {
     "key": "certification",
