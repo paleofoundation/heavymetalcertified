@@ -1,44 +1,89 @@
 @use "../../styles/variables.scss" as *;
 
 .search {
-  min-width: fit-content;
-  max-width: 14rem;
-  @media all and ($mobile) {
-    flex-grow: 0.3;
-  }
+  // Cert search entry point. Exactly one `.search` ships on this site — the
+  // top-bar pill in TopNav (`.search.hmtc-topnav-search`). The trigger look is
+  // ported from the retired `.hmtc-search` chrome (cert-chrome.scss) so the bar
+  // is visually unchanged; only the behaviour is new (the button opens the modal
+  // below instead of linking to /verify). The trigger is scoped to
+  // `.hmtc-topnav-search` so a future hero `.search` can define its own button
+  // (home.scss already does) without inheriting the bar pill. The modal overlay
+  // (`.search-container` and down) is context-independent and shared.
+  &.hmtc-topnav-search {
+    flex: 0 1 320px;
+    min-width: 60px;
+    max-width: 320px;
 
-  & > .search-button {
-    background-color: transparent;
-    border: 1px var(--lightgray) solid;
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: inherit;
-    height: 2rem;
-    padding: 0 1rem 0 0;
-    display: flex;
-    align-items: center;
-    text-align: inherit;
-    cursor: pointer;
-    white-space: nowrap;
-    width: 100%;
+    & > .search-button {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: 100%;
+      height: 36px;
+      padding: 0 13px;
+      border: 1px solid #e6ded8;
+      border-radius: 3px;
+      background: #fbf8f5;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
 
-    & > p {
-      display: inline;
-      color: var(--gray);
-      text-wrap: unset;
+      &:hover {
+        border-color: #c9bdb8;
+        background: #fdfaf8;
+      }
+
+      & > .hmtc-search-glyph {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: #b7aeae;
+        flex: 0 0 auto;
+      }
+
+      & > .hmtc-search-label {
+        font-size: 12.5px;
+        color: #a9a1a1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+      }
+
+      & > .hmtc-search-kbd {
+        margin-left: auto;
+        flex: 0 0 auto;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        color: #b7aeae;
+        border: 1px solid #ebe4de;
+        border-radius: 2px;
+        padding: 1px 4px;
+      }
     }
 
-    & svg {
-      cursor: pointer;
-      width: 18px;
-      min-width: 18px;
-      margin: 0 0.5rem;
+    // Collapse to a 36px icon square where the actions bar tightens, matching
+    // the retired `.hmtc-search` behaviour (cert-chrome.scss @1199px / @520px).
+    @media (max-width: 1199px) {
+      flex: 0 0 auto;
+      max-width: none;
 
-      .search-path {
-        stroke: var(--darkgray);
-        stroke-width: 1.5px;
-        transition: stroke 0.5s ease;
+      & > .search-button {
+        width: 36px;
+        justify-content: center;
+        padding: 0;
+
+        & > .hmtc-search-label,
+        & > .hmtc-search-kbd {
+          display: none;
+        }
       }
+    }
+    @media (max-width: 520px) {
+      display: none;
     }
   }
 

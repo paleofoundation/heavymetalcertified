@@ -28,6 +28,8 @@ const KIND: Record<string, string> = {
   "articles-index": "Directory",
   regulation: "Regulation reference",
   "regulation-index": "Record of law",
+  comparison: "Comparison",
+  guide: "Guide",
   rationale: "Rationale",
   "rationale-index": "Directory",
 }
