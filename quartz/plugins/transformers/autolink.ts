@@ -71,7 +71,32 @@ const SKIP_TAGS = new Set([
   "h4",
   "h5",
   "h6",
+  // Tables are dense reference grids (the standards Master Limit / Derivation
+  // tables, the Sources and Version tables): autolinking the analyte column and
+  // jurisdiction cells reads as clutter, not navigation. Blocking the <table>
+  // cascades to every <thead>/<tbody>/<tr>/<th>/<td>/<caption> via walk().
+  "table",
 ])
+
+// A container is "card-like" — a callout, admonition, flag, or content card —
+// when it carries the standards completeness-flag marker (data-panel-audit, the
+// one such container this corpus emits today) or a class in the callout/card/flag
+// family. Autolinking analyte and regulation names inside these visual boxes reads
+// as clutter — the names are already the box's whole subject — so suppress it there
+// while keeping it in ordinary reading prose. Applied as an ancestor guard in
+// walk(): a card-like element blocks its entire subtree, just like a SKIP_TAG. Kept
+// deliberately narrow (a marker attribute + hyphen-delimited family keywords) so it
+// never blocks an ordinary <div>/<section> prose wrapper.
+const CARD_CLASS_RE = /(?:^|-)(?:callout|admonition|flag|card|aside|note)(?:$|-)/i
+
+function isCardLike(node: any): boolean {
+  const props = node.properties
+  if (!props) return false
+  if (props.dataPanelAudit !== undefined) return true
+  const cn = props.className
+  const tokens = Array.isArray(cn) ? cn : typeof cn === "string" ? cn.split(/\s+/) : []
+  return tokens.some((t: unknown) => typeof t === "string" && CARD_CLASS_RE.test(t))
+}
 
 function normalize(slug: string): string {
   return slug
@@ -109,7 +134,7 @@ function walk(node: any, blocked: boolean, repl: (t: Text) => ElementContent[] |
       out.push(...(replaced ?? [child]))
     } else {
       if (child.type === "element") {
-        walk(child, blocked || SKIP_TAGS.has(child.tagName), repl)
+        walk(child, blocked || SKIP_TAGS.has(child.tagName) || isCardLike(child), repl)
       }
       out.push(child)
     }
