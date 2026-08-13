@@ -33,6 +33,7 @@ directly.
 ## Key pages
 
 - Standards (published per subcategory, native basis): https://heavymetalcertified.com/standards
+- Data & downloads (the published standards as machine-readable JSON + CSV, with schema.org Dataset markup): https://heavymetalcertified.com/data
 - Program Structure (two pathways, five gates, methodology): https://heavymetalcertified.com/program/structure
 - The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): https://heavymetalcertified.com/program/two-pathways
 - Standards Briefings: https://heavymetalcertified.com/briefings
