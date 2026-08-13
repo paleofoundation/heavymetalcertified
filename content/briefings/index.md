@@ -251,3 +251,18 @@ connections:
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Three fields are load-bearing: the title, the full name of at least the first author, and the year of publication. A record missing any one of the three is treated as carrying no metadata whatsoever &mdash; there is no partial credit. The series column above reports which briefings clear that bar today.</p>
   </div>
 </section>
+
+<section id="why-we-limit" style="margin-top:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Why we limit each metal</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 16px;max-width:84ch">Where the briefings above make the case for the program, the <a href="/why-we-limit" style="color:#1c43ad">why-we-limit</a> pages make the case for each metal: the toxicological basis, which foods carry it and roughly how much, the people the exposure reaches, and why a certification limit is warranted. One synthesis page per metal on the panel.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px 20px">
+    <a href="/why-we-limit/lead" style="font-size:14px;color:#1c43ad;text-decoration:none">Lead</a>
+    <a href="/why-we-limit/cadmium" style="font-size:14px;color:#1c43ad;text-decoration:none">Cadmium</a>
+    <a href="/why-we-limit/arsenic" style="font-size:14px;color:#1c43ad;text-decoration:none">Inorganic arsenic</a>
+    <a href="/why-we-limit/mercury" style="font-size:14px;color:#1c43ad;text-decoration:none">Methylmercury</a>
+    <a href="/why-we-limit/nickel" style="font-size:14px;color:#1c43ad;text-decoration:none">Nickel</a>
+    <a href="/why-we-limit/tin" style="font-size:14px;color:#1c43ad;text-decoration:none">Tin</a>
+    <a href="/why-we-limit/aluminum" style="font-size:14px;color:#1c43ad;text-decoration:none">Aluminium</a>
+    <a href="/why-we-limit/chromium" style="font-size:14px;color:#1c43ad;text-decoration:none">Chromium</a>
+  </div>
+</section>

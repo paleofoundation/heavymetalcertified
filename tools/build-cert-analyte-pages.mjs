@@ -183,6 +183,9 @@ function frontmatter(a) {
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
     "connections:",
     `  - { label: "The analyte panel", href: "/analytes" }`,
+    // The one-way "why we limit" rationale synthesis for this metal — the authored,
+    // question-intent companion to this neutral reference page.
+    `  - { label: "Why we limit ${a.name.toLowerCase()}", href: "/why-we-limit/${a.slug}" }`,
     `  - { label: "The standards register", href: "/standards" }`,
     `  - { label: "Regulation references (source documents)", href: "/regulations" }`,
     // California Prop 65 listing cross-link, only for the analytes California has
@@ -222,7 +225,7 @@ function indexPage() {
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
     "---",
   ].join("\n")
-  const body = `<section style="margin-bottom:32px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 12px">The analyte panel</h1><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Eight metals, ten analytes: arsenic and mercury are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#eee7e2;border:1px solid #eee7e2">${cards}</div>`
+  const body = `<section style="margin-bottom:32px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 12px">The analyte panel</h1><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Eight metals, ten analytes: arsenic and mercury are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited. For the plain-language rationale — the toxicological basis, the exposure reality, and the case for a certification limit, metal by metal — see <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#eee7e2;border:1px solid #eee7e2">${cards}</div>`
   fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${body}\n`, "utf8")
 }
 indexPage()

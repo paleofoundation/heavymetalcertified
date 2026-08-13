@@ -8,6 +8,7 @@ description: "Why Cadmium (Cd) is limited in infant and child foods: the governm
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 connections:
   - { label: "The analyte panel", href: "/analytes" }
+  - { label: "Why we limit cadmium", href: "/why-we-limit/cadmium" }
   - { label: "The standards register", href: "/standards" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "California Proposition 65 listing", href: "/regulations/ca-prop65" }

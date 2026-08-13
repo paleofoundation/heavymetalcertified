@@ -8,6 +8,7 @@ description: "Why Aluminum (Al) is limited in infant and child foods: the govern
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 connections:
   - { label: "The analyte panel", href: "/analytes" }
+  - { label: "Why we limit aluminum", href: "/why-we-limit/aluminum" }
   - { label: "The standards register", href: "/standards" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "Heavy Metal Index — Aluminum literature", href: "https://heavymetalindex.com/metals/aluminum" }

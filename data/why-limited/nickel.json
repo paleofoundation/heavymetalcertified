@@ -1,0 +1,82 @@
+{
+  "slug": "nickel",
+  "order": 5,
+  "name": "Nickel",
+  "sym": "Ni",
+  "species": "Total elemental nickel",
+  "metals": ["Nickel"],
+  "index_slug": "nickel",
+  "analyte_slug": "nickel",
+  "date": "August 2026",
+  "title": "Why is nickel limited in food? The certification rationale",
+  "description": "Why HMTc limits nickel in food: mean dietary intake already exceeds EFSA's tolerable daily intake, the most-exposed young children exceed it further, and sensitized people react well below it.",
+  "dek": "Nickel is the metal where ordinary diets already run over the tolerable intake — and the most-exposed children run over it further.",
+  "lead_answer": "HMTc limits nickel because EFSA's 2020 reassessment set a chronic tolerable daily intake of 13 µg/kg body weight per day on a reproductive-developmental endpoint that mean dietary intake already exceeds, the most-exposed young children exceed it further, and nickel-sensitized people react to oral doses well below it — and the contamination is largely controllable through sourcing.",
+  "brief": "Nickel is limited in food because exposure has already overtaken the guidance value. When EFSA reassessed nickel in 2020 it set a chronic tolerable daily intake of 13 µg/kg body weight per day, and found that average European dietary intake already exceeds it, with the most-exposed young children exceeding it by more. A separate acute concern applies to the substantial fraction of people who are nickel-sensitized, who can react to oral doses far below the chronic value. Because nickel enters food mainly through plant uptake and is controllable through sourcing and process control, a certification limit that adopts the strictest government ceiling and holds the cleaner part of the market to it is a workable lever.",
+  "snapshot": [
+    { "k": "Critical endpoint", "v": "Reproductive/developmental; contact allergy" },
+    { "k": "EFSA 2020 TDI", "v": "13 µg/kg bw/day" },
+    { "k": "Exposure status", "v": "Mean intake exceeds the TDI" },
+    { "k": "HMTc tier", "v": "Tier 2" }
+  ],
+  "sections": [
+    {
+      "h2": "The health basis for limiting nickel",
+      "body": "Nickel's dietary regulation rests on two distinct endpoints. For chronic exposure, EFSA's 2020 CONTAM opinion established a tolerable daily intake of 13 µg nickel/kg body weight per day, anchored on a BMDL10 of 1.3 mg/kg body weight per day for increased post-implantation loss in animal studies — a reproductive and developmental endpoint. The finding that made this a live regulatory concern is the exposure comparison: mean dietary intake in Europe already exceeds the tolerable intake, and the most-exposed young children exceed it further. For acute exposure, EFSA identified eczematous flare-up reactions in nickel-sensitized people — systemic contact dermatitis — as the critical effect, with a reference point (a LOAEL of 4.3 µg/kg body weight) far below the chronic value, which matters because nickel sensitization is common.\n\nNickel compounds are also classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, on inhalation evidence for lung and nasal cancer — a route distinct from the dietary endpoints. The full agency record is on [the nickel analyte reference](/analytes/nickel)."
+    },
+    {
+      "h2": "Who the exposure reaches",
+      "body": "Two populations are most affected. The first is young children, whose intake per unit of body weight is highest and who therefore sit furthest above the tolerable intake on the chronic endpoint. The second is the large group of nickel-sensitized individuals, for whom an oral dose well under the chronic guidance value can trigger a systemic dermatitis flare. Because a program certifying infant and child foods is aimed squarely at the first group, and because the plant staples that carry nickel recur through a child's diet, keeping the number down is a direct benefit to the eaters the standard is written for."
+    },
+    {
+      "h2": "Where nickel shows up in food",
+      "body": "Nickel enters food chiefly through plant uptake, so it concentrates in plant staples: legumes and pulses, whole grains and oats, nuts, soy, and cocoa and chocolate. These are exactly the ingredients that anchor many infant and child foods and plant-forward diets, which is why nickel exposure tracks the diet's reliance on them. A secondary route is leaching from nickel-bearing stainless steel during cooking and processing, which can add to the food's own load.\n\nThe per-category occurrence figures and the derivation behind each limit are on the [standards register](/standards); the complete occurrence corpus is on [the Heavy Metal Index](https://heavymetalindex.com/metals/nickel)."
+    },
+    {
+      "h2": "Why a certification limit is warranted",
+      "body": "When mean intake already exceeds the tolerable value, the useful response is not another safe-dose claim but a push on the controllable sources — and nickel is largely controllable through sourcing and process control. The EU set its first binding nickel maximum levels in food in 2024, a risk-management response to the EFSA exceedance finding, with category limits ranging from 0.10 mg/kg for liquid infant formula to higher values for cereals and seaweed.\n\nHMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computing an occurrence value only where no government sets one, and applies the program's 150% transitional allowance so a category can move onto the standard on a defined path to the firm limit. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
+    }
+  ],
+  "related_findings": [
+    { "label": "Dietary nickel in plant staples", "href": "/articles/dietary-nickel-plant-staple-accumulation", "note": "Legumes, whole grains, oats and cocoa carry the bulk of dietary nickel." },
+    { "label": "Multi-metal bioaccumulation in tea", "href": "/articles/tea-multi-metal-bioaccumulation", "note": "The tea plant takes up nickel along with several other metals." },
+    { "label": "Metal leaching from cookware and utensils", "href": "/articles/cookware-utensil-metal-leaching-pathway", "note": "Nickel-bearing stainless steel can add to a food's own load." }
+  ],
+  "faq": [
+    {
+      "q": "Why is nickel limited in food now?",
+      "a": "Because exposure has overtaken the guidance value. EFSA's 2020 reassessment set a tolerable daily intake of 13 µg/kg body weight per day, and found that mean dietary intake in Europe already exceeds it, with the most-exposed young children exceeding it further. The EU set its first binding nickel food limits in 2024 in response."
+    },
+    {
+      "q": "Which foods are highest in nickel?",
+      "a": "Plant staples: legumes and pulses, whole grains and oats, nuts, soy, and cocoa and chocolate. Nickel enters through plant uptake, so plant-forward and many infant and child foods carry the most. Cooking in nickel-bearing stainless steel can add a further amount."
+    },
+    {
+      "q": "Why does nickel matter for people with a nickel allergy?",
+      "a": "Nickel-sensitized people can experience a systemic contact dermatitis flare from oral nickel at doses well below the chronic tolerable intake. EFSA identified this acute reaction as a separate critical effect, with a reference point far below the chronic value, which matters because nickel sensitization is common."
+    },
+    {
+      "q": "Is nickel a carcinogen?",
+      "a": "Nickel compounds are classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, but on inhalation evidence for lung and nasal cancer — an occupational route distinct from the reproductive-developmental and contact-allergy endpoints that drive its regulation in food."
+    },
+    {
+      "q": "How does HMTc set its nickel limit?",
+      "a": "HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computes an occurrence value only where no government regulates the cell, and applies a 150% transitional allowance so a category can move onto the standard on a defined path. A regulatory hard-stop blocks any product over a legal limit."
+    }
+  ],
+  "connections": [
+    { "label": "Nickel — the analyte reference", "href": "/analytes/nickel" },
+    { "label": "Grain products — the standard", "href": "/standards/other-grain-products" },
+    { "label": "Why we limit each metal", "href": "/why-we-limit" },
+    { "label": "How limits are derived", "href": "/program/structure" },
+    { "label": "Heavy Metal Index — nickel literature", "href": "https://heavymetalindex.com/metals/nickel" }
+  ],
+  "keywords": [
+    "why is nickel limited in food",
+    "nickel tolerable daily intake",
+    "nickel in food allergy",
+    "dietary nickel plant staples",
+    "EFSA nickel 2020",
+    "nickel certification limit"
+  ]
+}

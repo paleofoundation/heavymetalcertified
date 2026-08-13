@@ -8,6 +8,7 @@ description: "Why Tin (Sn) is limited in infant and child foods: the government 
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 connections:
   - { label: "The analyte panel", href: "/analytes" }
+  - { label: "Why we limit tin", href: "/why-we-limit/tin" }
   - { label: "The standards register", href: "/standards" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "Heavy Metal Index — Tin literature", href: "https://heavymetalindex.com/metals/tin" }

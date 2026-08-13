@@ -43,7 +43,7 @@ const ALL_BLOCKING = process.argv.includes("--all")
 // the data pages a regulator / brand-legal reader audits.
 const BLOCKING_DIRS = ["standards", "regulations"]
 // Prose surfaces held to the same rule, advisory until their backlog is drained.
-const ADVISORY_DIRS = ["briefings", "articles", "program", "brands"]
+const ADVISORY_DIRS = ["briefings", "articles", "program", "brands", "why-we-limit"]
 
 const INLINE_BOLD = /font-weight:\s*(?:bold|[6-9]00)\b/i
 const STRONG_TAG = /<strong[\s>]/i

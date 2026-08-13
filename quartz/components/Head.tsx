@@ -69,6 +69,7 @@ const OG_ARTICLE_TYPES = new Set([
   "metal",
   "analyte",
   "article",
+  "rationale",
   "manual",
 ])
 const OG_ARTICLE_PREFIXES = [
