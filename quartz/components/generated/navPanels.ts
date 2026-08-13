@@ -88,6 +88,21 @@ export const navPanels: NavPanel[] = [
           { label: "Vinegar", slug: "standards/vinegar" },
         ],
       },
+      {
+        heading: "Pet foods (human-grade)",
+        children: [
+          { label: "Dry pet food (kibble)", slug: "standards/pet-food-dry-kibble" },
+          { label: "Canned / wet pet food", slug: "standards/pet-food-canned-wet" },
+          { label: "Semi-moist pet food", slug: "standards/pet-food-semi-moist" },
+          { label: "Raw pet food", slug: "standards/pet-food-raw" },
+          { label: "Freeze-dried / dehydrated", slug: "standards/pet-food-freeze-dried" },
+          { label: "Treats & snacks", slug: "standards/pet-treats-snacks" },
+          { label: "Chews (incl. dental)", slug: "standards/pet-chews-dental" },
+          { label: "Toppers, mixers & broths", slug: "standards/pet-toppers-mixers-broths" },
+          { label: "Milk replacers & liquids", slug: "standards/pet-milk-replacers-specialty-liquids" },
+          { label: "Fish / marine-protein diets", slug: "standards/pet-food-fish-marine-protein" },
+        ],
+      },
     ],
     allLabel: "All standards",
   },
@@ -193,6 +208,7 @@ export const navPanels: NavPanel[] = [
         children: [
           { label: "What HMTc Is", slug: "briefings/hmtc-primer" },
           { label: "Four Metals Is No Longer Enough", slug: "briefings/brief-7-four-vs-eight" },
+          { label: "Heavy Metals in Pet Food", slug: "briefings/heavy-metals-in-pet-food" },
           { label: "Named as a Hazard, Left Unlimited", slug: "briefings/the-prop-65-gap" },
           { label: "What Organic Doesn't Say", slug: "briefings/brief-3-what-organic-doesnt-say" },
           { label: "The Open Category", slug: "briefings/brief-2-open-category" },
@@ -215,7 +231,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
     ],
-    allLabel: "All 11 briefings",
+    allLabel: "All 12 briefings",
   },
   {
     key: "research",
