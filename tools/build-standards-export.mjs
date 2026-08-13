@@ -454,11 +454,15 @@ function isoDay(iso) {
   return String(iso).slice(0, 10)
 }
 function safeGitCommit() {
+  // Vercel shallow-clones the repo, so `git rev-parse` may report shallow or
+  // fail; fall back to the commit SHA Vercel injects into the build env so the
+  // version stamp is populated on production deploys and a cited snapshot stays
+  // reconstructible by commit.
   try {
     const shallow = execSync("git rev-parse --is-shallow-repository", { cwd: repoRoot, stdio: ["ignore", "pipe", "ignore"] }).toString().trim()
-    if (shallow === "true") return null
-    return execSync("git rev-parse HEAD", { cwd: repoRoot, stdio: ["ignore", "pipe", "ignore"] }).toString().trim()
+    if (shallow !== "true") return execSync("git rev-parse HEAD", { cwd: repoRoot, stdio: ["ignore", "pipe", "ignore"] }).toString().trim()
   } catch {
-    return null
+    /* fall through to the env fallback */
   }
+  return process.env.VERCEL_GIT_COMMIT_SHA || null
 }
