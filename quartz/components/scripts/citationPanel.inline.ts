@@ -1,10 +1,10 @@
-// Citation-detail panel — click an inline citation, read that source's full
-// record in the right rail.
+// Citation-detail slide-over — click an inline citation, read that source's full
+// record in a right-anchored drawer over a scrim.
 //
 // Cert pages carry no source pages of their own (the one-way firewall: citations
-// link OUT to the Heavy Metal Index), so a citation's "full details" live in the
-// page's own "## References" list. This script indexes that list and, when an
-// inline citation is clicked, fills and reveals the rail panel (rendered hidden
+// link OUT to the Heavy Metal Index / DOI), so a citation's "full details" live in
+// the page's own "## References" list. This script indexes that list and, when an
+// inline citation is clicked, fills and reveals the overlay panel (rendered hidden
 // by SourceCitationPanel.tsx) with the matching entry.
 //
 // Two citation shapes exist across the corpus and both are wired:
@@ -14,9 +14,14 @@
 //                            wraps as <sup class="hmtc-cite">[N]</sup>; its
 //                            reference rows carry no id.
 // So references are indexed by the "[N]" grid-row signature, id-independent, and
-// citations are matched by number rather than by anchor. Render-time DOM only —
-// the build and content are untouched. Falls back to the ordinary anchor jump
-// wherever the rail is collapsed (narrow viewports) so nothing is ever dead.
+// citations are matched by number rather than by anchor. Render-time DOM only — the
+// build and content are untouched.
+//
+// The drawer is a modal: it opens at every width (no rail gate), preventing the
+// #ref-N anchor jump so the reader's scroll is preserved; it locks body scroll,
+// moves focus to the close button, traps Tab inside, restores focus to the marker
+// on close, and dismisses on the × button, Esc, or a scrim click. The slide is
+// disabled under prefers-reduced-motion (handled in sourceCitationPanel.scss).
 
 type CitationPanelRef = {
   num: string
@@ -68,32 +73,73 @@ function indexCitationPanelReferences(content: Element): Map<string, CitationPan
   return map
 }
 
-function railVisible(): boolean {
-  const rail = document.querySelector("aside.rail")
-  // getClientRects() is empty when the rail is display:none (narrow viewports),
-  // so citations fall back to the plain #ref-N anchor jump there.
-  return !!(rail && (rail as HTMLElement).getClientRects().length > 0)
+// --- overlay state -----------------------------------------------------------
+// Module-scoped and alive for the SPA session. Document-level listeners are bound
+// once (globalsBound); the afterBody panel survives micromorph across navs, so its
+// per-open handlers must not re-stack — they are bound to `document`, not the node.
+
+let lastTrigger: HTMLElement | null = null
+let savedScrollY = 0
+let globalsBound = false
+
+function scrimEl(): HTMLElement | null {
+  return document.querySelector("[data-cite-panel-scrim]")
+}
+
+function focusablesIn(panel: HTMLElement): HTMLElement[] {
+  return Array.from(
+    panel.querySelectorAll<HTMLElement>(
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+    ),
+  ).filter((el) => el.offsetParent !== null || el === document.activeElement)
 }
 
 function closePanel(panel: HTMLElement) {
-  panel.hidden = true
+  const wasOpen = panel.classList.contains("is-open")
   panel.classList.remove("is-open")
   panel.setAttribute("aria-hidden", "true")
+  scrimEl()?.classList.remove("is-open")
+
+  // Release the scroll lock (mirror of the pin in openPanel).
+  const body = document.body
+  body.style.position = ""
+  body.style.top = ""
+  body.style.left = ""
+  body.style.right = ""
+  body.style.overflow = ""
+  body.style.paddingRight = ""
+
+  if (wasOpen) {
+    // Restore the exact offset with no smooth animation (scroll-behavior is smooth
+    // sitewide), and return focus to the marker without nudging the page.
+    const prevBehavior = document.documentElement.style.scrollBehavior
+    document.documentElement.style.scrollBehavior = "auto"
+    window.scrollTo(0, savedScrollY)
+    document.documentElement.style.scrollBehavior = prevBehavior
+    if (lastTrigger && document.contains(lastTrigger)) {
+      lastTrigger.focus({ preventScroll: true })
+    }
+  }
+  lastTrigger = null
 }
 
-function openPanel(panel: HTMLElement, ref: CitationPanelRef) {
+function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLElement | null) {
   const body = panel.querySelector("[data-cite-panel-body]") as HTMLElement | null
   if (!body) return
 
   const frag = document.createDocumentFragment()
 
-  const num = document.createElement("div")
-  num.className = "hmtc-cite-panel-num"
-  num.textContent = `[${ref.num}]`
-  frag.appendChild(num)
+  // Kicker — SOURCE RECORD [n].
+  const kicker = document.createElement("div")
+  kicker.className = "hmtc-cite-panel-kicker"
+  kicker.textContent = `Source record [${ref.num}]`
+  frag.appendChild(kicker)
 
+  // Title — the drawer's accessible name (aria-labelledby). Outbound #1c43ad link
+  // when the row carries a URL; plain dark serif otherwise.
   const title = document.createElement("div")
   title.className = "hmtc-cite-panel-title"
+  title.id = "hmtc-cite-panel-title"
   if (ref.href) {
     const a = document.createElement("a")
     a.href = ref.href
@@ -108,6 +154,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef) {
   }
   frag.appendChild(title)
 
+  // Meta / plain-language blurb (authors · year · journal · DOI + what it studied).
   if (ref.detail) {
     const p = document.createElement("p")
     p.className = "hmtc-cite-panel-detail"
@@ -115,6 +162,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef) {
     frag.appendChild(p)
   }
 
+  // Source type.
   if (ref.kind) {
     const kind = document.createElement("div")
     kind.className = "hmtc-cite-panel-kind"
@@ -122,20 +170,72 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef) {
     frag.appendChild(kind)
   }
 
+  // Actions: filled outbound route (when the row links out) + copy citation.
+  const actions = document.createElement("div")
+  actions.className = "hmtc-cite-panel-actions"
+
   if (ref.href && /^https?:\/\//.test(ref.href)) {
     const go = document.createElement("a")
     go.className = "hmtc-cite-panel-go"
     go.href = ref.href
     go.target = "_blank"
     go.rel = "noopener noreferrer"
-    go.textContent = "Read source →"
-    frag.appendChild(go)
+    go.textContent = "Open source record →"
+    actions.appendChild(go)
   }
 
+  const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.detail]
+    .filter(Boolean)
+    .join(" ")
+    .trim()
+  if (copyText && navigator.clipboard) {
+    const copy = document.createElement("button")
+    copy.type = "button"
+    copy.className = "hmtc-cite-panel-copy"
+    copy.textContent = "Copy citation"
+    copy.addEventListener("click", () => {
+      navigator.clipboard.writeText(copyText).then(
+        () => {
+          copy.textContent = "Copied"
+          window.setTimeout(() => {
+            copy.textContent = "Copy citation"
+          }, 1600)
+        },
+        () => {},
+      )
+    })
+    actions.appendChild(copy)
+  }
+
+  if (actions.childElementCount > 0) frag.appendChild(actions)
+
   body.replaceChildren(frag)
-  panel.hidden = false
+
+  // Remember what to return focus to, and lock the underlying page in place —
+  // jump-free. This build scrolls <html>, and overflow:hidden on the root resets
+  // scroll to 0; so pin <body> at its current offset with position:fixed instead.
+  // The page stays visually put and cannot scroll while the modal is open, and the
+  // fixed scrim/panel are unaffected (position:fixed is viewport-relative — <body>
+  // being fixed does not become their containing block). Compensate for any
+  // vanished scrollbar so nothing shifts horizontally.
+  lastTrigger = trigger || (document.activeElement as HTMLElement | null)
+  savedScrollY = window.scrollY
+  const scrollbar = window.innerWidth - document.documentElement.clientWidth
+  const pageBody = document.body
+  pageBody.style.position = "fixed"
+  pageBody.style.top = `-${savedScrollY}px`
+  pageBody.style.left = "0"
+  pageBody.style.right = "0"
+  pageBody.style.overflow = "hidden"
+  if (scrollbar > 0) pageBody.style.paddingRight = `${scrollbar}px`
+
+  scrimEl()?.classList.add("is-open")
   panel.classList.add("is-open")
   panel.setAttribute("aria-hidden", "false")
+
+  // Move focus into the drawer without nudging the page.
+  const closeBtn = panel.querySelector("[data-cite-panel-close]") as HTMLElement | null
+  closeBtn?.focus({ preventScroll: true })
 }
 
 function wireCitations(
@@ -156,38 +256,112 @@ function wireCitations(
     if (!ref) return // no matching entry — leave the default behaviour intact
     el.dataset.citePanelWired = "1"
     el.style.cursor = "pointer"
+
+    // The bracketed [N] marker is a plain <sup>: make it a real, focusable control
+    // so keyboard readers can open it and focus can return here on close. The
+    // anchor shape is already focusable and keyboard-activatable (Enter → click).
+    if (!isAnchor) {
+      el.setAttribute("tabindex", "0")
+      el.setAttribute("role", "button")
+      el.setAttribute("aria-label", `Open source record ${num}`)
+    }
+
     el.addEventListener("click", (e) => {
-      if (!railVisible()) return // narrow viewport: let the anchor jump happen
+      // preventDefault: no native #ref-N anchor jump. stopPropagation: keep the event
+      // away from the SPA router's window-level click handler, which otherwise
+      // scrollIntoView()s the reference row and pushStates the #ref-N hash — it does
+      // NOT check defaultPrevented (spa.inline.ts). Together they preserve the scroll.
       e.preventDefault()
-      openPanel(panel, ref)
+      e.stopPropagation()
+      openPanel(panel, ref, el)
     })
+    if (!isAnchor) {
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault()
+          e.stopPropagation()
+          openPanel(panel, ref, el)
+        }
+      })
+    }
   })
 }
 
-let escBound = false
+function bindGlobals() {
+  if (globalsBound) return
+  globalsBound = true
+
+  // Esc to dismiss + Tab trapped inside the open drawer. Bound once on document
+  // (the afterBody panel persists through micromorph, so node-level rebinds would
+  // stack); state is read live from the DOM each keystroke.
+  document.addEventListener("keydown", (e) => {
+    const panel = document.querySelector("[data-cite-panel]") as HTMLElement | null
+    if (!panel || !panel.classList.contains("is-open")) return
+
+    if (e.key === "Escape") {
+      e.preventDefault()
+      closePanel(panel)
+      return
+    }
+    if (e.key === "Tab") {
+      const f = focusablesIn(panel)
+      if (f.length === 0) {
+        e.preventDefault()
+        return
+      }
+      const first = f[0]
+      const last = f[f.length - 1]
+      const active = document.activeElement as HTMLElement | null
+      if (!active || !panel.contains(active)) {
+        e.preventDefault()
+        first.focus({ preventScroll: true })
+      } else if (e.shiftKey && active === first) {
+        e.preventDefault()
+        last.focus({ preventScroll: true })
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault()
+        first.focus({ preventScroll: true })
+      }
+    }
+  })
+
+  // Close if the drawer is open when the reader navigates away, so the scroll lock
+  // never survives a page change.
+  document.addEventListener("prenav", () => {
+    const panel = document.querySelector("[data-cite-panel]") as HTMLElement | null
+    if (panel && panel.classList.contains("is-open")) closePanel(panel)
+  })
+}
 
 function setupCitationPanel() {
   const content = document.querySelector(".wiki-content")
   const panel = document.querySelector("[data-cite-panel]") as HTMLElement | null
   if (!content || !panel) return
 
-  // Fresh page: start closed.
-  closePanel(panel)
+  // Fresh page: start closed, scroll lock fully released.
+  panel.classList.remove("is-open")
+  panel.setAttribute("aria-hidden", "true")
+  scrimEl()?.classList.remove("is-open")
+  const body = document.body
+  body.style.position = ""
+  body.style.top = ""
+  body.style.left = ""
+  body.style.right = ""
+  body.style.overflow = ""
+  body.style.paddingRight = ""
+  lastTrigger = null
 
+  // Idempotent per-node wiring for the close button and scrim (property assignment
+  // never stacks, even though these nodes survive micromorph).
   const closeBtn = panel.querySelector("[data-cite-panel-close]") as HTMLElement | null
   if (closeBtn) closeBtn.onclick = () => closePanel(panel)
+  const scrim = scrimEl()
+  if (scrim) scrim.onclick = () => closePanel(panel)
 
   const refs = indexCitationPanelReferences(content)
   if (refs.size > 0) wireCitations(content, refs, panel)
 
-  if (!escBound) {
-    document.addEventListener("keydown", (e) => {
-      if (e.key !== "Escape") return
-      const p = document.querySelector("[data-cite-panel]") as HTMLElement | null
-      if (p && !p.hidden) closePanel(p)
-    })
-    escBound = true
-  }
+  bindGlobals()
 }
 
 document.addEventListener("nav", setupCitationPanel)
