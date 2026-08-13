@@ -8,7 +8,7 @@ breadcrumb_leaf: "For retailers"
 snapshot_title: "For retailers"
 snapshot:
   - { k: "Metals covered", v: "8" }
-  - { k: "Conventional food marks", v: "4" }
+  - { k: "Conventional four-metal marks", v: "4" }
   - { k: "Lot surveillance", v: "continuous" }
   - { k: "Certificate lookup", v: "public" }
 connections:
@@ -30,7 +30,7 @@ A retailer that names HMTc on an approved-certification list anchors its private
 
 ## What HMTc adds over the marks you already accept
 
-- [Certification comparison](/compare) &mdash; HMTc against NSF/ANSI 173, USP Verified, Clean Label Project and the rest, metal by metal. As of August 2026 it is the only food certification covering all eight metals.
+- [Certification comparison](/compare) &mdash; HMTc against NSF/ANSI 173, USP Verified, Clean Label Project and the rest, metal by metal. As of August 2026 it is the only third-party certification covering all eight metals.
 - [Four metals is no longer enough](/briefings/brief-7-four-vs-eight) &mdash; the regulatory movement (EU nickel, Codex tin, California hexavalent chromium) turning a four-metal panel into a shrinking floor.
 - [The Retailer as Anchor](/briefings/brief-5-retailer-as-anchor) &mdash; how a retailer&rsquo;s approved list moves a whole category, and the exposure of anchoring to the wrong standard.
 

@@ -29,7 +29,7 @@ const PAGES = [
     slug: "compare",
     headline: "Heavy-metal certification comparison",
     description:
-      "How heavy-metal certifications compare on coverage: HMTc sets a published limit for all eight priority metals, where conventional food marks screen the big four and NSF/ANSI 173 reaches five.",
+      "How heavy-metal certifications compare on coverage: HMTc sets a published limit for all eight priority metals across consumer packaged goods, where conventional four-metal marks screen the big four and NSF/ANSI 173 reaches five.",
     datePublished: "2026-08-13",
     dateModified: "2026-08-13",
     keywords: [
