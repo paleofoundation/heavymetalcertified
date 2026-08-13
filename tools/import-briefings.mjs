@@ -36,6 +36,7 @@ const MAP = {
   "brief-5-retailer-as-anchor": { title: "The Retailer as Anchor", section: "Retailer" },
   "brief-6-premium-promise": { title: "The Premium Promise", section: "Positioning" },
   "the-prop-65-gap": { title: "Named as a Hazard, Left Unlimited", section: "Scope & standards" },
+  "supplements-child-protective": { title: "The Child Eats the Adult's Supplement", section: "Scope & standards" },
 }
 
 // Parsed per-briefing metadata (abstract, references, series). Keyed by slug.

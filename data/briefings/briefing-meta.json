@@ -824,5 +824,68 @@
         "type": "Government"
       }
     ]
+  },
+  {
+    "slug": "supplements-child-protective",
+    "series": "Brief 10",
+    "abstract_html": "<p>A dietary supplement is one of the few consumer products a household shares across a fifty-kilogram difference in body weight: the gummy multivitamin, the greens powder, the protein, the syrup, the melatonin all cross the line between adult and child in ordinary use. The heavy-metal limits that govern these products were written for the adult. On a per-kilogram basis, a serving that clears an adult intake reference delivers four to five times that dose to a fifteen-kilogram child, and the child's developing system is the most sensitive to it.</p><p>HMTc responds by holding every certified supplement, adult-labeled or not, to the strictest maximum level any credible government sets for the metal in an infant-or-young-child food: lead at ten micrograms per kilogram against an adult supplement floor that begins at one thousand, cadmium at five against three hundred, inorganic arsenic a hundred and fifty times below the USP adult figure, and nickel, tin, and aluminium held at infant-food limits in a framework that sets no supplement limit for them at all. The over-compliance is stated plainly, including its cost to adult-only brands, because the shared bottle is the ordinary case and the child is the binding one.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "USP General Chapter <2232>: Elemental Contaminants in Dietary Supplements",
+        "meta_html": "United States Pharmacopeia. Oral permitted daily exposure: lead 5 µg/day, cadmium 5 µg/day, inorganic arsenic 15 µg/day, mercury 15 µg/day (methylmercury 2 µg/day). Computed for an adult consumer; on USP's ≤10 g/day serving assumption the lead limit is 500 µg/kg. Sets no limit for nickel, tin, aluminium, or chromium.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 2,
+        "title": "Sovereign dietary-supplement heavy-metal maximum levels (Thailand, GCC, Israel, Vietnam)",
+        "meta_html": "Thailand MOPH Notification 414 (lead 1000 µg/kg); GSO 193:2021, Israel FCS-2016, and Vietnam QCVN 8-2:2011 (lead 3000 µg/kg). Adult food-supplement contaminant limits; none set with a child's body weight in the denominator.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 3,
+        "title": "ASEAN and Singapore health-supplement contaminant guidelines",
+        "meta_html": "ASEAN Traditional Medicines and Health Supplements Working Group and Singapore HSA: lead permitted at 10000 µg/kg (10 ppm). The laxest published supplement lead limits.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 4,
+        "title": "Proposition 65 Safe Harbor Levels — Maximum Allowable Dose Levels",
+        "meta_html": "California OEHHA. Lead oral MADL 0.5 µg/day on the reproductive/developmental endpoint, ten times below the adult USP daily figure. A warning trigger in µg/day, not a food maximum level. See also the briefing 'Named as a Hazard, Left Unlimited'.",
+        "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels",
+        "type": "Government"
+      },
+      {
+        "n": 5,
+        "title": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+        "meta_html": "European Commission, 2023. Infant-formula maximum levels: cadmium 5 µg/kg and inorganic arsenic 10 µg/kg — the anchors HMTc reads across to supplement cadmium and inorganic arsenic.",
+        "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+        "type": "Regulation"
+      },
+      {
+        "n": 6,
+        "title": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
+        "meta_html": "European Commission, 2024. Liquid infant/young-child-formula nickel maximum 100 µg/kg — the anchor HMTc reads across to supplement nickel, a metal the adult supplement framework does not limit.",
+        "href": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj",
+        "type": "Regulation"
+      },
+      {
+        "n": 7,
+        "title": "Australia New Zealand Food Standards Code, Standard 1.4.1 — Contaminants and Natural Toxicants",
+        "meta_html": "FSANZ. Infant-formula lead maximum 10 µg/kg and non-soy infant-formula aluminium maximum 500 µg/kg — the strictest sovereign infant lead limit and the only government food aluminium limit anywhere, both read across by HMTc to supplements.",
+        "href": "",
+        "type": "Standard"
+      },
+      {
+        "n": 8,
+        "title": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+        "meta_html": "EFSA CONTAM Panel, EFSA Journal 2020;18(11):6268. Chronic TDI 13 µg Ni/kg body weight/day; mean dietary exposure exceeds it, children most — the basis for treating supplement nickel as material despite the adult framework's silence.",
+        "href": "https://doi.org/10.2903/j.efsa.2020.6268",
+        "type": "Government"
+      }
+    ]
   }
 ]

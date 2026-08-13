@@ -7,10 +7,10 @@ orcid: 0000-0002-2348-7259
 updated: 2026-06-18
 description: "Analytical briefings on what the HMTc standard changes, and for whom. Each is a citable technical report with a named author, a publisher of record, and a downloadable edition — written for the people who decide whether a certificate is worth its price."
 snapshot:
-  - { k: "Briefings in series", v: "14" }
+  - { k: "Briefings in series", v: "16" }
   - { k: "Peer-track preprints", v: "3" }
   - { k: "Deposited with a DOI", v: "3" }
-  - { k: "Date confirmed", v: "13 of 13" }
+  - { k: "Date confirmed", v: "16 of 16" }
 connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "Program Manuals", href: "/manuals" }
@@ -20,7 +20,7 @@ connections:
 
 <section id="series" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The series</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Thirteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Sixteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/briefings/hmtc-primer" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Primer</span>
@@ -98,6 +98,20 @@ connections:
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Named as a Hazard, Left Unlimited</span>
         <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">California lists five of these metals for cancer or reproductive harm, then sets no limit for any of them in food. That gap is the space certification fills.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
+        </span>
+      </span>
+      <span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">August 2026</span>
+      </span>
+    </a>
+    <a href="/briefings/supplements-child-protective" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 10</span>
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The Child Eats the Adult's Supplement</span>
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Supplement limits are written for a 70-kilogram adult; the child eats from the same bottle. HMTc certifies every supplement to the limit that protects the child &mdash; and says what that costs.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
