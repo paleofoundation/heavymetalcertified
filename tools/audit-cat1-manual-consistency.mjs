@@ -115,11 +115,32 @@ ok(`D. cross-part agreement: Status-C bands and containment timing consistent ac
 // ── E. cross-source: live /program + briefing pages agree with the manual ────
 // NOTE on scope: structure.md's "fifteen subcategory standards … across eight
 // categories" is a correct PROGRAM-WIDE count (15 catalog rows / 8 categories), NOT
-// the Cat-1 taxonomy (nine) — so it is deliberately NOT flagged here. remediation.md's
-// post-certification self-report track ("certificate held" for an ALREADY-certified
-// brand that self-reports) is a distinct, real feature, not a contradiction of the
-// manual's §4.3 pre-certification entry track — also not flagged. What IS checked are
-// the genuine factual defects the reconciliation confirmed against the Governance Policy.
+// the Cat-1 taxonomy (nine) — so it is deliberately NOT flagged here.
+//
+// CERTIFICATE-RETENTION GUARD. Program Manual Part 2.4 defines the Confidential
+// Remediation Track as a PRE-certification entry pathway and states in terms that it is
+// "not a post-certification mechanism"; the Mark may not be used until a SKU reaches
+// Status A or B (§A golden value above; §B forbids "certificate held"/"certificate
+// unaffected" in the manual). There is no ratified post-certification voluntary-
+// disclosure protocol under which an already-certified brand self-reports and KEEPS its
+// certificate. So the live /program + /portal pages must not promise certificate
+// retention for a remediation item — the retired "certificate held / certificate
+// unaffected / certificate intact" framing. A prior note here exempted remediation.md on
+// the theory that a post-cert "certificate held" track was "a distinct, real feature"; it
+// was not, and that exemption is what let the promise ship untraceable. If HMTc later
+// ratifies such a protocol, cite its section on the page and relax this guard
+// deliberately — do not delete it silently.
+const PAGES_NO_RETAIN = [
+  ["content/program/structure.md", path.join(PROG, "structure.md")],
+  ["content/program/remediation.md", path.join(PROG, "remediation.md")],
+  ["content/portal.md", path.join(REPO, "content/portal.md")],
+]
+for (const [rel, abs] of PAGES_NO_RETAIN) {
+  const t = norm(read(abs))
+  if (!t) { fail.push(`CROSS-SOURCE: ${rel} not found`); continue }
+  const m = t.match(/certificate (is )?held|certificate unaffected|certificate intact/i)
+  if (m) fail.push(`CROSS-SOURCE: ${rel} promises certificate retention for a remediation item ("${m[0]}") — Part 2.4 is pre-certification only; no ratified post-cert self-report protocol exists`)
+}
 const structure = read(path.join(PROG, "structure.md"))
 const primer = read(path.join(REPO, "data/briefings/hmtc-primer.md"))
 if (structure) {
