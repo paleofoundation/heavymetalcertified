@@ -71,19 +71,21 @@ None of this rests on novel toxicology or on limits invented for the purpose. Ev
 
 ## Frequently asked questions
 
-<div style="border-top:1px solid #e8e1db;padding-top:8px">
-<p style="font-family:Lora,serif;font-size:18px;color:#2b1f1f;margin:22px 0 6px">Is pet food regulated for heavy metals at all?</p>
-<p style="font-size:15px;line-height:1.7;color:#3f3a3a;margin:0 0 4px;max-width:72ch">Yes, but as animal feed rather than as food. The EU's Directive 2002/32, the FDA's Center for Veterinary Medicine, AAFCO's model regulations, and national pet-feed standards set maximum levels for several metals, generally far higher than the limits the same governments set for human food. Some metals, including chromium, nickel, and aluminium, are not addressed by AAFCO or NRC at all.</p>
+### Is pet food regulated for heavy metals at all?
 
-<p style="font-family:Lora,serif;font-size:18px;color:#2b1f1f;margin:22px 0 6px">What does &ldquo;human-grade&rdquo; heavy-metal certification mean here?</p>
-<p style="font-size:15px;line-height:1.7;color:#3f3a3a;margin:0 0 4px;max-width:72ch">For each pet-food subcategory and metal, HMTc certifies to the strictest maximum level a credible government sets for the nearest human food, not the laxer feed limit. The feed floor is disclosed beside every certified value so the voluntary over-compliance is visible.</p>
+Yes, but as animal feed rather than as food. The EU's Directive 2002/32, the FDA's Center for Veterinary Medicine, AAFCO's model regulations, and national pet-feed standards set maximum levels for several metals, generally far higher than the limits the same governments set for human food. Some metals, including chromium, nickel, and aluminium, are not addressed by AAFCO or NRC at all.
 
-<p style="font-family:Lora,serif;font-size:18px;color:#2b1f1f;margin:22px 0 6px">Which metals matter most in pet food?</p>
-<p style="font-size:15px;line-height:1.7;color:#3f3a3a;margin:0 0 4px;max-width:72ch">Lead in game-meat and raw diets, arsenic in grain- and rice-based diets, mercury in fish-based cat food, and cadmium in organ- and marine-heavy diets are the best-documented signals in the published surveys. Aluminium, nickel, and chromium recur in dry foods against no governing limit.</p>
+### What does &ldquo;human-grade&rdquo; heavy-metal certification mean here?
 
-<p style="font-family:Lora,serif;font-size:18px;color:#2b1f1f;margin:22px 0 6px">Why are pets more exposed than people?</p>
-<p style="font-size:15px;line-height:1.7;color:#3f3a3a;margin:0 0 4px;max-width:72ch">A companion animal eats one manufactured diet for its whole life, has a small body mass that raises the dose per kilogram, and cannot vary its food. Lead, cadmium, and methylmercury accumulate rather than clear, so a lifelong sole-source diet concentrates the exposure.</p>
-</div>
+For each pet-food subcategory and metal, HMTc certifies to the strictest maximum level a credible government sets for the nearest human food, not the laxer feed limit. The feed floor is disclosed beside every certified value so the voluntary over-compliance is visible.
+
+### Which metals matter most in pet food?
+
+Lead in game-meat and raw diets, arsenic in grain- and rice-based diets, mercury in fish-based cat food, and cadmium in organ- and marine-heavy diets are the best-documented signals in the published surveys. Aluminium, nickel, and chromium recur in dry foods against no governing limit.
+
+### Why are pets more exposed than people?
+
+A companion animal eats one manufactured diet for its whole life, has a small body mass that raises the dose per kilogram, and cannot vary its food. Lead, cadmium, and methylmercury accumulate rather than clear, so a lifelong sole-source diet concentrates the exposure.
 
 ## References
 
@@ -109,17 +111,5 @@ None of this rests on novel toxicology or on limits invented for the purpose. Ev
   "inLanguage": "en",
   "isAccessibleForFree": true,
   "about": ["pet food", "heavy metals", "lead", "cadmium", "arsenic", "mercury", "food safety", "animal feed regulation"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Is pet food regulated for heavy metals at all?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but as animal feed rather than as food. The EU's Directive 2002/32, the FDA's Center for Veterinary Medicine, AAFCO's model regulations, and national pet-feed standards set maximum levels for several metals, generally far higher than the limits the same governments set for human food. Some metals, including chromium, nickel, and aluminium, are not addressed by AAFCO or NRC at all." } },
-    { "@type": "Question", "name": "What does human-grade heavy-metal certification mean here?", "acceptedAnswer": { "@type": "Answer", "text": "For each pet-food subcategory and metal, HMTc certifies to the strictest maximum level a credible government sets for the nearest human food, not the laxer feed limit. The feed floor is disclosed beside every certified value so the voluntary over-compliance is visible." } },
-    { "@type": "Question", "name": "Which metals matter most in pet food?", "acceptedAnswer": { "@type": "Answer", "text": "Lead in game-meat and raw diets, arsenic in grain- and rice-based diets, mercury in fish-based cat food, and cadmium in organ- and marine-heavy diets are the best-documented signals in published surveys. Aluminium, nickel, and chromium recur in dry foods against no governing limit." } },
-    { "@type": "Question", "name": "Why are pets more exposed than people?", "acceptedAnswer": { "@type": "Answer", "text": "A companion animal eats one manufactured diet for its whole life, has a small body mass that raises the dose per kilogram, and cannot vary its food. Lead, cadmium, and methylmercury accumulate rather than clear, so a lifelong sole-source diet concentrates the exposure." } }
-  ]
 }
 </script>
