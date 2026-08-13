@@ -8,6 +8,7 @@ description: "Why Chromium (Cr) is limited in infant and child foods: the govern
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 connections:
   - { label: "The analyte panel", href: "/analytes" }
+  - { label: "Why we limit chromium", href: "/why-we-limit/chromium" }
   - { label: "The standards register", href: "/standards" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "California Proposition 65 listing", href: "/regulations/ca-prop65" }

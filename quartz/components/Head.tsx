@@ -69,6 +69,7 @@ const OG_ARTICLE_TYPES = new Set([
   "metal",
   "analyte",
   "article",
+  "rationale",
   "manual",
   // Wayfinding / SEO surfaces authored as substantive documents: the
   // certification-comparison asset and the audience entry-path guides.

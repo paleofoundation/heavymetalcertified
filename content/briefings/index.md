@@ -7,10 +7,10 @@ orcid: 0000-0002-2348-7259
 updated: 2026-06-18
 description: "Analytical briefings on what the HMTc standard changes, and for whom. Each is a citable technical report with a named author, a publisher of record, and a downloadable edition — written for the people who decide whether a certificate is worth its price."
 snapshot:
-  - { k: "Briefings in series", v: "12" }
+  - { k: "Briefings in series", v: "13" }
   - { k: "Peer-track preprints", v: "3" }
   - { k: "Deposited with a DOI", v: "3" }
-  - { k: "Date confirmed", v: "3 of 12" }
+  - { k: "Date confirmed", v: "13 of 13" }
 connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "Program Manuals", href: "/manuals" }
@@ -20,7 +20,7 @@ connections:
 
 <section id="series" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The series</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Twelve briefings. Each has its own stable URL, its own bibliographic record, and its own PDF edition &mdash; the three things a citation needs to survive.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Thirteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/briefings/hmtc-primer" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Primer</span>
@@ -31,8 +31,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -46,8 +46,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -88,8 +88,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">May 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -120,8 +120,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -135,8 +135,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -150,8 +150,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -164,8 +164,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -179,8 +179,8 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
@@ -194,54 +194,24 @@ connections:
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">June 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">PDF &middot; linked</span>
       </span>
     </a>
-    <div style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7">
+    <a href="/briefings/heavy-metals-in-fertilizers" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Analysis</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Heavy Metals in Fertilizers, 1960&ndash;2025</span>
-        <span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The cadmium in the crop arrives in the phosphate rock, the sludge, and the irrigation water &mdash; and the governments that regulate the input reason in decades. Why a finished-product, four-metal test is blind to the pathway.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Supply chain</span>
         </span>
       </span>
       <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#c3b9b9;margin-top:6px">In preparation</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">August 2026</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Indexable</span>
       </span>
-    </div>
-    <div style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Analysis</span>
-      <span style="min-width:0">
-        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Heavy Metals, Microbial Metallomics, and the US Obesity Epidemic</span>
-        <span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Mechanism</span>
-        </span>
-      </span>
-      <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#c3b9b9;margin-top:6px">In preparation</span>
-      </span>
-    </div>
-    <div style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Analysis</span>
-      <span style="min-width:0">
-        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The Cost of Operating Without Credible Third-Party Heavy-Metal Certification</span>
-        <span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:9px">
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Finance</span>
-          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Deposited</span>
-        </span>
-      </span>
-      <span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Date unread</span>
-        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;margin-top:6px">Preprint below</span>
-      </span>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -279,5 +249,20 @@ connections:
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Every briefing therefore emits the full <span style="font-family:'IBM Plex Mono',monospace;font-size:14px">citation_*</span> set and a matching JSON-LD record, and sits at its own stable URL with its abstract readable immediately, without a sign-in, an interstitial or a scroll. The PDF edition is linked from the HTML record rather than standing alone, because an unlinked PDF is indexed as though it carried no metadata at all.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Three fields are load-bearing: the title, the full name of at least the first author, and the year of publication. A record missing any one of the three is treated as carrying no metadata whatsoever &mdash; there is no partial credit. The series column above reports which briefings clear that bar today.</p>
+  </div>
+</section>
+
+<section id="why-we-limit" style="margin-top:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Why we limit each metal</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 16px;max-width:84ch">Where the briefings above make the case for the program, the <a href="/why-we-limit" style="color:#1c43ad">why-we-limit</a> pages make the case for each metal: the toxicological basis, which foods carry it and roughly how much, the people the exposure reaches, and why a certification limit is warranted. One synthesis page per metal on the panel.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px 20px">
+    <a href="/why-we-limit/lead" style="font-size:14px;color:#1c43ad;text-decoration:none">Lead</a>
+    <a href="/why-we-limit/cadmium" style="font-size:14px;color:#1c43ad;text-decoration:none">Cadmium</a>
+    <a href="/why-we-limit/arsenic" style="font-size:14px;color:#1c43ad;text-decoration:none">Inorganic arsenic</a>
+    <a href="/why-we-limit/mercury" style="font-size:14px;color:#1c43ad;text-decoration:none">Methylmercury</a>
+    <a href="/why-we-limit/nickel" style="font-size:14px;color:#1c43ad;text-decoration:none">Nickel</a>
+    <a href="/why-we-limit/tin" style="font-size:14px;color:#1c43ad;text-decoration:none">Tin</a>
+    <a href="/why-we-limit/aluminum" style="font-size:14px;color:#1c43ad;text-decoration:none">Aluminium</a>
+    <a href="/why-we-limit/chromium" style="font-size:14px;color:#1c43ad;text-decoration:none">Chromium</a>
   </div>
 </section>

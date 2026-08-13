@@ -1,4 +1,5 @@
 import { FullSlug, joinSegments } from "../../util/path"
+import { STATIC_ASSET_HASH } from "../../util/staticHash"
 import { QuartzEmitterPlugin } from "../types"
 
 // @ts-ignore
@@ -337,7 +338,10 @@ export const ComponentResources: QuartzEmitterPlugin = () => {
 
       yield write({
         ctx,
-        slug: "index" as FullSlug,
+        // Content/build-hashed filename (index.<hash>.css) so a browser can never
+        // render new markup against an index.css it cached from a prior deploy.
+        // renderPage.tsx links this same name via STATIC_ASSET_HASH.
+        slug: `index.${STATIC_ASSET_HASH}` as FullSlug,
         ext: ".css",
         content: transform({
           filename: "index.css",

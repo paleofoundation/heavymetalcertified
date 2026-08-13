@@ -8,6 +8,7 @@ description: "Why Mercury (Hg) is limited in infant and child foods: the governm
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 connections:
   - { label: "The analyte panel", href: "/analytes" }
+  - { label: "Why we limit mercury", href: "/why-we-limit/mercury" }
   - { label: "The standards register", href: "/standards" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "Heavy Metal Index — Mercury literature", href: "https://heavymetalindex.com/metals/mercury-methyl" }

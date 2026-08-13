@@ -26,10 +26,10 @@
         },
         {
           "agency": "JECFA (Joint FAO/WHO Expert Committee on Food Additives)",
-          "document": "72nd JECFA meeting; Evaluation of Certain Contaminants in Food, WHO Technical Report Series 959",
+          "document": "73rd JECFA meeting (June 2010); Evaluation of Certain Contaminants in Food, WHO Technical Report Series 960",
           "finding": "Withdrew the provisional tolerable weekly intake (PTWI) of 25 µg/kg b.w./week, concluding it could no longer be considered health-protective because the dose-response relationship for developmental neurotoxicity has no identifiable threshold.",
           "year": "2011",
-          "source_trace": "wiki/metals/lead.md References entry 4 and vetted homepage thesis (WHO TRS 959 published 2011; 72nd meeting held Feb 2010). Year retained as 2011 per verifier; the lead.md body/table '2010' strings are a separate Index reconciliation, not a defect on this page."
+          "source_trace": "wiki/metals/lead.md References entry 4 and vetted homepage thesis. The lead PTWI was withdrawn at the JECFA 73rd meeting (Geneva, 8–17 June 2010, contaminants), reported in WHO Technical Report Series 960 (published 2011); the 72nd meeting (Rome, Feb 2010) covered food additives, not lead — the earlier 72nd/TRS 959 attribution was a meeting-number error, corrected 2026-08. Year field is the report publication year (2011)."
         },
         {
           "agency": "IARC",
@@ -522,9 +522,9 @@
         {
           "agency": "JECFA",
           "document": "Safety Evaluation of Certain Food Additives (Arsenic), 82nd Meeting of JECFA — WHO Food Additives Series 73",
-          "finding": "At its 72nd meeting (2010) JECFA withdrew the provisional tolerable weekly intake of 15 µg iAs/kg bw/week on the basis that inorganic arsenic causes cancer at exposures below the PTWI. The later 82nd-meeting monograph (WHO Food Additives Series 73, 2017) retained a benchmark-dose (BMDL) framework rather than a threshold PTWI, working from a BMDL0.5 of 3.0 µg/kg bw/day calculated for lung cancer.",
+          "finding": "At its 73rd meeting (June 2010) JECFA withdrew the provisional tolerable weekly intake of 15 µg iAs/kg bw/week on the basis that inorganic arsenic causes cancer at exposures below the PTWI. The later 82nd-meeting monograph (WHO Food Additives Series 73, 2017) retained a benchmark-dose (BMDL) framework rather than a threshold PTWI, working from a BMDL0.5 of 3.0 µg/kg bw/day calculated for lung cancer.",
           "year": "2017",
-          "source_trace": "Source record wiki/sources/jecfa-82nd-arsenic.md (frontmatter: 'Safety Evaluation of Certain Food Additives (Arsenic), 82nd Meeting of JECFA', WHO Food Additives Series 73, year 2017); Index /metals/arsenic Regulatory limits table (PTWI withdrawn at JECFA 72nd meeting, 2010); BMDL0.5 3.0 µg/kg bw/day for lung cancer from the efsa2024 source record. Document (WHO FAS 73 = 82nd meeting, 2017) and withdrawal event (72nd meeting, 2010) now disentangled."
+          "source_trace": "Source record wiki/sources/jecfa-82nd-arsenic.md (frontmatter: 'Safety Evaluation of Certain Food Additives (Arsenic), 82nd Meeting of JECFA', WHO Food Additives Series 73, year 2017); Index /metals/arsenic Regulatory limits table (iAs PTWI withdrawn at the JECFA 73rd meeting, June 2010, contaminants — WHO Technical Report Series 960; the earlier 72nd-meeting attribution was a meeting-number error, corrected 2026-08); BMDL0.5 3.0 µg/kg bw/day for lung cancer from the efsa2024 source record. Document (WHO FAS 73 = 82nd meeting, 2017) and withdrawal event (73rd meeting, June 2010) now disentangled."
         },
         {
           "agency": "US EPA",

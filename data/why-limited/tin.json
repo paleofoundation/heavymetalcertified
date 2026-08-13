@@ -1,0 +1,80 @@
+{
+  "slug": "tin",
+  "order": 6,
+  "name": "Tin",
+  "sym": "Sn",
+  "species": "Total elemental tin (inorganic)",
+  "metals": ["Tin"],
+  "index_slug": "tin",
+  "analyte_slug": "tin",
+  "date": "August 2026",
+  "title": "Why is tin limited in food? The certification rationale",
+  "description": "Why HMTc limits tin in food: inorganic tin from can linings causes an acute gastrointestinal effect, not chronic harm — so its limit works chiefly as a sentinel for can-lining integrity.",
+  "dek": "Tin is the honest outlier on the panel: its limit guards against an acute stomach upset from failing can linings, not chronic toxicity or cancer.",
+  "lead_answer": "HMTc limits tin because inorganic tin migrating from can linings can cause an acute gastrointestinal effect at high concentrations — but there is a wide margin to that dose and no chronic or carcinogenic basis, so the limit functions chiefly as a sentinel for can-lining integrity rather than a guard against cumulative harm.",
+  "brief": "Tin is the panel's honest outlier, and the rationale says so plainly. Inorganic tin migrating from tinplate cans is poorly absorbed and acts locally, producing an acute gastrointestinal upset — nausea and cramping — only at high concentrations, with a wide margin between regulated canned-food levels and the dose that reliably irritates the gut. It has no chronic or carcinogenic basis and has never been evaluated by IARC. What the tin limit actually does is act as a sentinel: an elevated tin reading is the signal that a can's protective lining has failed and the food is dissolving the tinplate. HMTc carries tin for that reason — to catch a packaging failure — not because trace tin is a chronic hazard.",
+  "snapshot": [
+    { "k": "Critical endpoint", "v": "Acute gastrointestinal irritation" },
+    { "k": "Chronic / cancer basis", "v": "None; not IARC-evaluated" },
+    { "k": "Function of the limit", "v": "Can-lining integrity sentinel" },
+    { "k": "HMTc tier", "v": "Tier 2" }
+  ],
+  "sections": [
+    {
+      "h2": "The health basis for limiting tin",
+      "body": "Inorganic tin is unusual on this panel because its toxicity is acute and local, not chronic and cumulative. It is poorly absorbed — on the order of 5 percent, with over 90 percent excreted in faeces — so it does not build up in tissue; instead it irritates the gut lining directly at high concentration. Controlled human single-dose challenges established the acute symptomatic threshold at roughly 1,000 to 1,400 mg/kg in canned products, and ATSDR derived an intermediate-duration oral minimal risk level of 0.3 mg/kg/day. IARC has never evaluated inorganic tin: there is no carcinogenicity or genotoxicity classification, and the regulated endpoint is the acute gastrointestinal effect alone.\n\nThat honest framing is the point. A rationale that implied tin was a chronic hazard on the order of lead or cadmium would misrepresent the record. The full toxicological detail, including the species distinction between inorganic tin and the more toxic organotins, is on [the tin analyte reference](/analytes/tin)."
+    },
+    {
+      "h2": "Who the exposure reaches",
+      "body": "Because the effect is an acute gastrointestinal irritation rather than a developmental or carcinogenic one, tin does not single out the fetus or the young child in the way the Tier-1 toxics do. Anyone eating a canned food in which the tin concentration has climbed high enough can experience the effect. The infant-food case is handled by a tighter regulatory figure — the EU caps canned infant formula and baby food at 50 mg/kg, well below the general canned-food limit — recognising both the smaller body and the expectation that foods for infants carry a wider safety margin."
+    },
+    {
+      "h2": "Where tin shows up in food",
+      "body": "Tin is a packaging story, not a food story. It enters food almost entirely by migration from the tinplate of cans, and the migration is driven by acidity and by whether the can is lacquered: acidic foods — canned tomatoes, fruit, and juices — in unlacquered or damaged cans dissolve tin from the lining fastest, while the same food in a fully lacquered can carries very little. Uncanned foods contribute almost nothing.\n\nThat is why an elevated tin number is read as a can-integrity signal. The per-category occurrence figures and the derivation behind each limit are on the [standards register](/standards); the complete occurrence corpus is on [the Heavy Metal Index](https://heavymetalindex.com/metals/tin)."
+    },
+    {
+      "h2": "Why a certification limit is warranted",
+      "body": "The value of a tin limit is diagnostic. Because tin in food comes from the can rather than the crop, a reading near the regulatory cap is direct evidence that a can's protective lining has failed and the food is in prolonged contact with bare tinplate — a defect that often travels with other migration and spoilage problems. Governments set the caps for the acute effect: Codex allows 250 mg/kg in canned foods other than beverages and 150 mg/kg in canned beverages; the EU sets the stricter figures of 200 mg/kg, 100 mg/kg for beverages, and 50 mg/kg for canned infant and baby foods.\n\nHMTc treats tin as a Tier-2 metal and adopts the strictest existing government maximum level directly, so a certified canned product is verified to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
+    }
+  ],
+  "related_findings": [
+    { "label": "Tin migration in acidic canned food", "href": "/articles/tin-canned-food-acidic-matrix-migration", "note": "How acidity and can lining drive tin from the tinplate into the food." }
+  ],
+  "faq": [
+    {
+      "q": "Is tin in canned food dangerous?",
+      "a": "Only at high concentrations, and only as an acute effect. Inorganic tin from can linings is poorly absorbed and can cause a temporary gastrointestinal upset — nausea and cramping — when it climbs high enough, with a wide margin to that dose. It has no chronic or carcinogenic basis and has never been evaluated by IARC."
+    },
+    {
+      "q": "Why does HMTc test tin if it is not a chronic hazard?",
+      "a": "Because an elevated tin reading is a reliable signal that a can's protective lining has failed and the food is dissolving the bare tinplate. The tin limit works as a sentinel for can-lining integrity, catching a packaging defect that often travels with other migration and spoilage problems."
+    },
+    {
+      "q": "Which foods carry the most tin?",
+      "a": "Acidic foods in unlacquered or damaged cans: canned tomatoes, fruit and juices dissolve tin from the lining fastest. The same food in a fully lacquered can carries very little, and uncanned foods contribute almost nothing. Tin in food is a packaging story rather than a crop one."
+    },
+    {
+      "q": "What are the limits for tin in canned food?",
+      "a": "Codex allows 250 mg/kg in canned foods other than beverages and 150 mg/kg in canned beverages; the EU sets stricter figures of 200 mg/kg, 100 mg/kg for beverages, and 50 mg/kg for canned infant and baby foods. These are set for the acute gastrointestinal effect, not a chronic one."
+    },
+    {
+      "q": "How does HMTc set its tin limit?",
+      "a": "HMTc treats tin as a Tier-2 metal and adopts the strictest existing government maximum level directly, verified by lot testing. A certified canned product is confirmed to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact."
+    }
+  ],
+  "connections": [
+    { "label": "Tin — the analyte reference", "href": "/analytes/tin" },
+    { "label": "Canned seafood — the standard", "href": "/standards/canned-seafood" },
+    { "label": "Why we limit each metal", "href": "/why-we-limit" },
+    { "label": "How limits are derived", "href": "/program/structure" },
+    { "label": "Heavy Metal Index — tin literature", "href": "https://heavymetalindex.com/metals/tin" }
+  ],
+  "keywords": [
+    "why is tin limited in food",
+    "tin in canned food",
+    "tin can lining migration",
+    "inorganic tin gastrointestinal",
+    "tin maximum level canned",
+    "tin certification limit"
+  ]
+}

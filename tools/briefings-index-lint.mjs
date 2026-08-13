@@ -63,7 +63,64 @@ function main() {
     process.exit(1)
   }
 
-  console.log(`briefings-index-lint: ${pages.length} briefing pages clean — every page is linked from the index.`)
+  // ---- Reverse gate: no empty placeholder cards on a public index ----------
+  // The orphan check above guards page→index (no unlinked page). This block
+  // guards index→page: a public series card must never advertise content that
+  // does not exist. Two failure modes shipped before and both are gated here:
+  //
+  //   A. PLACEHOLDER CARD. A series row hand-authored as a bare <div> (no href)
+  //      instead of an <a> — an "In preparation" / "Deposited" card with no page
+  //      behind it. That is thin/empty content on the surface a crawler and a
+  //      regulator read as the series manifest, and a "Deposited" placeholder is
+  //      a dangling-DOI landmine. Every series row MUST be a link to a real page.
+  //   B. BROKEN / UNPOPULATED DATE. The "Date unread" token is the design's
+  //      unfilled date variable; it renders as a broken field on a citable index.
+  //      A card either carries a real date or it is not ready to ship.
+  //
+  // The series row is identified by its canonical grid signature so the check
+  // does not depend on card wording.
+  const rowSigRe = /grid-template-columns:52px minmax\(0,1fr\) 190px/g
+  const errors = []
+
+  // A. A series-row grid that opens on a <div> (or any non-<a>) is a placeholder.
+  for (const m of indexText.matchAll(/<(\w+)\b[^>]*grid-template-columns:52px minmax\(0,1fr\) 190px/g)) {
+    if (m[1].toLowerCase() !== "a") {
+      errors.push(
+        `placeholder card: a series row is a <${m[1]}> with no page link. Every card must be an <a href="/briefings/<slug>"> to a real page — a public index must not advertise content that does not exist.`,
+      )
+    }
+  }
+
+  // A′. Every series-card link must resolve to an existing briefing page (a card
+  //     linking a non-existent slug is a 404 waiting to be crawled).
+  for (const m of indexText.matchAll(/<a\b[^>]*href="\/briefings\/([a-z0-9][a-z0-9-]*)"[^>]*grid-template-columns:52px minmax\(0,1fr\) 190px/g)) {
+    const slug = m[1]
+    if (!pages.includes(slug)) {
+      errors.push(`dangling card: series card links /briefings/${slug} but content/briefings/${slug}.md does not exist.`)
+    }
+  }
+
+  // B. The unpopulated-date token must not survive onto the public index.
+  const unread = (indexText.match(/Date unread/g) || []).length
+  if (unread) {
+    errors.push(
+      `broken date: "${unread}" card(s) still show the unfilled "Date unread" token. Populate each card's real publication date (from the briefing's briefing_date) or the field renders broken.`,
+    )
+  }
+
+  if (errors.length) {
+    console.error(`briefings-index-lint: ${errors.length} index-card violation(s) in content/briefings/index.md:`)
+    for (const e of errors) console.error(`  ✗ ${e}`)
+    console.error(
+      `\nEach series card either points to a WRITTEN page with a real date, or it is REMOVED — nothing thin ships between those two states.`,
+    )
+    process.exit(1)
+  }
+
+  const cardCount = (indexText.match(rowSigRe) || []).length
+  console.log(
+    `briefings-index-lint: ${pages.length} briefing pages clean — every page is linked, every one of ${cardCount} series cards points to a real page with a populated date.`,
+  )
 }
 
 main()

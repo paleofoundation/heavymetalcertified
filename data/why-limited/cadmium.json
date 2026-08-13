@@ -1,0 +1,84 @@
+{
+  "slug": "cadmium",
+  "order": 2,
+  "name": "Cadmium",
+  "sym": "Cd",
+  "species": "Total elemental cadmium",
+  "metals": ["Cadmium"],
+  "index_slug": "cadmium",
+  "analyte_slug": "cadmium",
+  "date": "August 2026",
+  "title": "Why is cadmium limited in food? The certification rationale",
+  "description": "Why HMTc limits cadmium in food: a cumulative kidney toxicant with a decades-long half-life and no clinical treatment, classified a human carcinogen, whose intake builds across a lifetime.",
+  "dek": "Cadmium is not cleared — it accumulates in the kidney for decades — so the only control is to keep intake low across a lifetime.",
+  "lead_answer": "HMTc limits cadmium because it is a cumulative kidney toxicant with a biological half-life of 10 to 30 years and no effective clinical treatment, so once the body burden builds there is no way to reverse it — control is entirely a matter of capping how much enters the diet.",
+  "brief": "Cadmium is limited in food because it is not cleared from the body. It concentrates in the kidney cortex with a half-life measured in decades, is classified by IARC as a human carcinogen, and has no medical treatment once the burden accumulates. Because the effect is cumulative, a diet that is only slightly above the guidance value for years is the real risk, not a single high meal. That makes it a prevention problem: the intake has to be capped, and a certification limit is the mechanism that verifies a product does not add avoidably to a lifetime load.",
+  "snapshot": [
+    { "k": "Critical endpoint", "v": "Renal tubular dysfunction; cancer" },
+    { "k": "Biological half-life", "v": "10–30 years" },
+    { "k": "IARC classification", "v": "Group 1 (carcinogenic)" },
+    { "k": "HMTc tier", "v": "Tier 1 (zero-tolerance)" }
+  ],
+  "sections": [
+    {
+      "h2": "The health basis for limiting cadmium",
+      "body": "Cadmium's defining property for a food-safety regime is that the body cannot get rid of it. It concentrates in the renal cortex with a biological half-life of 10 to 30 years, so intake integrates over a working lifetime toward a kidney burden that eventually shows as tubular dysfunction. The EFSA CONTAM Panel set a tolerable weekly intake of 2.5 µg/kg body weight in 2009, anchored on a BMDL5 of 4 µg cadmium per gram of urinary creatinine with renal tubular dysfunction as the critical endpoint; JECFA expresses its guidance as a provisional tolerable monthly intake of 25 µg/kg body weight, deliberately using a monthly averaging window to reflect that decades-long half-life.\n\nCadmium is also an IARC Group 1 human carcinogen, established on occupational-inhalation evidence, with general-population dietary epidemiology showing associations with several cancers, and it has no effective clinical treatment once accumulated. The agency-by-agency assessment, including the ATSDR and US EPA reference values and the California Proposition 65 listing, is on [the cadmium analyte reference](/analytes/cadmium)."
+    },
+    {
+      "h2": "Who the exposure reaches",
+      "body": "Because cadmium accumulates, the population it reaches is broad and the timescale is long: the concern is not an acute dose but the slow approach to a kidney burden that everyone with a lifelong dietary intake shares. Absorption rises when iron stores are low, so women of reproductive age and others with depleted iron take up a larger fraction of what they eat, and smokers carry an additional non-dietary load. For a program certifying foods eaten early and often — infant cereals, purees, and the cocoa and grain products that recur through childhood — the case is that any avoidable contribution to a burden that never clears is worth removing while the child is young."
+    },
+    {
+      "h2": "Where cadmium shows up in food",
+      "body": "Cadmium enters food through the plant root and up the food chain into organs that filter and store it. The foods that carry it most consistently are shellfish and bivalve molluscs, organ meats such as liver and kidney, cocoa and dark chocolate, leafy greens, oilseeds and sunflower products, cereals and grains, and some seaweeds. Bivalves and cocoa are notable because the plant or animal concentrates cadmium from a low-level environmental background into a food eaten in quantity.\n\nThe per-category occurrence figures and the Method v2.0 derivation behind each certification limit are on the [standards register](/standards); the complete occurrence corpus and the per-source records are on [the Heavy Metal Index](https://heavymetalindex.com/metals/cadmium)."
+    },
+    {
+      "h2": "Why a certification limit is warranted",
+      "body": "For a cumulative toxicant, the arithmetic favours acting on every source rather than any one meal: a diet that runs a little above the guidance value for years is the exposure that matters, and no single lot looks alarming on its own. Governments set binding maximum levels — the EU regulates cadmium tightly in baby food, chocolate, cereals and vegetables — but those are ceilings a product must not exceed, not a verified statement that a specific lot is below them.\n\nHMTc classifies cadmium as one of four Tier-1 zero-tolerance toxics and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked by lot testing, with a regulatory hard-stop that blocks certification of any product over an applicable legal limit. Where the cleaner half of a category already beats the government ceiling, the certificate holds products to that tighter number rather than the law's floor. How the limit is derived is set out under [how limits are derived](/program/structure)."
+    }
+  ],
+  "related_findings": [
+    { "label": "Bivalve cadmium amplification", "href": "/articles/bivalve-cadmium-amplification", "note": "Oysters, mussels and scallops concentrate cadmium from seawater into an edible tissue." },
+    { "label": "Cadmium and arsenic in seaweed", "href": "/articles/seaweed-cd-as-contamination", "note": "Some seaweeds carry cadmium and arsenic well above the matrices they replace in a diet." },
+    { "label": "Organ-meat cadmium and lead accumulation", "href": "/articles/organ-meat-cadmium-lead-accumulation", "note": "Liver and kidney store both metals over an animal's life." },
+    { "label": "Lead and cadmium in dark chocolate", "href": "/articles/lead-and-cadmium-in-dark-chocolate", "note": "Cadmium enters cocoa at the plant, and a decade of pressure moved lead but not cadmium." },
+    { "label": "Multi-metal bioaccumulation in tea", "href": "/articles/tea-multi-metal-bioaccumulation", "note": "The tea plant takes up cadmium along with several other metals." }
+  ],
+  "faq": [
+    {
+      "q": "Why is cadmium dangerous in food if the amounts are small?",
+      "a": "Because cadmium is not cleared from the body. It builds up in the kidney with a half-life of 10 to 30 years, so small amounts eaten repeatedly integrate into a lifetime burden that eventually causes kidney damage. There is no clinical treatment to remove an accumulated load, which is why intake is capped rather than treated."
+    },
+    {
+      "q": "What is the tolerable intake for cadmium?",
+      "a": "EFSA set a tolerable weekly intake of 2.5 µg/kg body weight in 2009, based on renal tubular dysfunction; JECFA expresses its guidance as a provisional tolerable monthly intake of 25 µg/kg body weight, using a monthly window to reflect cadmium's long half-life. Mean dietary exposure in some populations approaches these values."
+    },
+    {
+      "q": "Which foods are highest in cadmium?",
+      "a": "Shellfish and bivalve molluscs, organ meats such as liver and kidney, cocoa and dark chocolate, leafy greens, oilseeds and sunflower products, cereals and grains, and some seaweeds. These are foods where a plant or animal concentrates environmental cadmium into a food eaten in quantity."
+    },
+    {
+      "q": "Is cadmium a carcinogen?",
+      "a": "Yes. IARC classifies cadmium and its compounds as Group 1, carcinogenic to humans, on the basis of occupational inhalation studies, with general-population dietary epidemiology showing associations with several cancers. California lists it under Proposition 65 as a developmental and male reproductive toxicant."
+    },
+    {
+      "q": "How does HMTc set its cadmium limit?",
+      "a": "HMTc treats cadmium as a Tier-1 zero-tolerance toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing. Where the cleaner part of a category already beats the government ceiling, the certificate holds to that tighter number."
+    }
+  ],
+  "connections": [
+    { "label": "Cadmium — the analyte reference", "href": "/analytes/cadmium" },
+    { "label": "Cadmium in chocolate — the standard", "href": "/standards/chocolate" },
+    { "label": "Why we limit each metal", "href": "/why-we-limit" },
+    { "label": "How limits are derived", "href": "/program/structure" },
+    { "label": "Heavy Metal Index — cadmium literature", "href": "https://heavymetalindex.com/metals/cadmium" }
+  ],
+  "keywords": [
+    "why is cadmium limited in food",
+    "cadmium in chocolate",
+    "cadmium kidney toxicity",
+    "cadmium biological half-life",
+    "cadmium carcinogen food",
+    "cadmium certification limit"
+  ]
+}
