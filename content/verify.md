@@ -5,12 +5,13 @@ audience: [regulator, consumer, retailer-compliance]
 description: "Check a lot number, a certificate number or a product code against the register. One query returns one record — what it was certified against, on which analyte panel, in which basis, and whether that certificate is in force today."
 snapshot:
   - { k: "Certificates in force", v: "0" }
-  - { k: "Standards available", v: "15" }
+  - { k: "Standards", v: "Published" }
   - { k: "Register opened", v: "pending" }
   - { k: "Lookup routes", v: "3" }
 connections:
   - { label: "The standard this certifies against", href: "/standards" }
-  - { label: "Mark usage and scope", href: "/program/structure" }
+  - { label: "The brand's rights in the program", href: "/brand-bill-of-rights" }
+  - { label: "Category readiness", href: "/category-readiness" }
   - { label: "Apply for certification", href: "/apply" }
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
@@ -89,3 +90,61 @@ connections:
   </div>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Requests for the full lot-level record behind a certificate &mdash; including laboratory reports and chain of custody &mdash; are handled directly. The program does not require a subpoena to produce its own conformity evidence to a regulator.</p>
 </section>
+
+<div id="trust"></div>
+
+## Trust and institutional independence
+
+Trust in a certification program does not come from asserting that the system is independent. It comes from showing which institution performs which function, which information may cross each boundary, which rules are published before a result, and which claims the program refuses to make.
+
+| Institution | Function | Boundary |
+|---|---|---|
+| Heavy Metal Index | Public evidence record for regulations, occurrence data, methods, uncertainty, and corrections | Does not certify products, endorse applicants, or receive private certification files. |
+| Institute of Contaminant Standards (ICS) | Publishes and administers the program, standards governance, and manuals | Keeps evidence governance and commercial certification decisions distinguishable and auditable. |
+| Heavy Metal Tested & Certified | Applies the governing standard to a product, issues status, licenses the mark, and runs surveillance | Does not turn a product-level result into a blanket brand, safety, or zero-metals claim. |
+| Accredited laboratory | Produces analytical results under ISO/IEC 17025 for the analyte and matrix | Does not set the standard or decide the commercial meaning of the mark. |
+| Applicant or certificate holder | Supplies accurate product, formula, lot, and change information and meets legal and program duties | Payment and participation create no right to a passing decision. |
+
+The evidence citation runs one way: HMTc may cite the public Heavy Metal Index; the Index does not endorse HMTc, an applicant, or a certified product.
+
+<div id="your-data"></div>
+
+## The firewall — what happens to your data
+
+A brand's private certification data and the public evidence record sit on opposite sides of a firewall. A certification client cannot suppress or veto a public Index conclusion because it is commercially inconvenient; an Index editor cannot reach a private certification file merely because the same parent institution operates both systems.
+
+| Information | Permitted destination | Prohibited use |
+|---|---|---|
+| Public regulations, studies, surveys, analytical sources | The Index and, by citation, HMTc | Reframing a client's private data as public evidence. |
+| Private application, formulation, supplier, readiness records | The controlled certification file | Entry into the public Index without a separately governed lawful basis. |
+| Private laboratory results and CAPA records | The controlled certification and surveillance file | Disclosure as another brand's benchmark or supplier intelligence. |
+| Public certificate status and scope | The verification surface | Implying non-listed products, prior lots, other forms, or the whole brand are certified. |
+| Aggregated program information | Only under a separately defined aggregation and privacy rule | Publishing a group so small that a participant can be identified. |
+
+Private readiness and certification records can be protected as confidential business information under contract and access controls. That is not attorney–client privilege, work-product protection, or immunity from legal process: the program does not promise to conceal information from a regulator, delay a recall, override a reporting duty, defeat a subpoena, or relieve a brand of a contractual notice.
+
+<div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin:22px 0">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Stated to the limit of what is enforced</div>
+  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The complete operational firewall still depends on a ratified data-governance policy covering role-based access, retention, deletion, legal holds, compulsory process, and audit logging. This page describes the boundary the contracts and systems enforce today, and claims no architecture beyond it.</p>
+</div>
+
+## Fees do not buy a passing decision
+
+The standard is published before a brand submits a result, and the analytes, basis, decision rules, and mark scope are not negotiated after the number is known. A program fee pays for evaluation and program services; it does not purchase a certification outcome, and no fee tier changes a threshold. The program makes no stronger organizational-independence claim than its ratified controls support.
+
+## What the certification does not establish
+
+The mark is a product-specific statement that the named product was evaluated under the named standard, edition, panel, basis, and period. These are the claims it deliberately does not make:
+
+| Claim not made | Reason |
+|---|---|
+| Heavy metal free | Analytical testing cannot support absolute absence. |
+| No toxic metals | The panel, methods, and quantitation limits have a defined scope. |
+| Safe under every use condition | Certification is not a complete individual or population risk assessment. |
+| Every product from the brand is certified | Certification is product- and form-specific. |
+| Every past or future lot conforms | Certification and surveillance are time- and evidence-bounded. |
+| Private records are legally privileged | Contractual confidentiality and legal privilege are different doctrines. |
+| The certifier holds an accreditation not actually awarded | Laboratory accreditation and certification-scheme accreditation are separate claims. |
+| Certification removes regulatory duties | A private mark cannot displace law, regulator authority, or contract. |
+
+[See the brand's rights in the program](/brand-bill-of-rights). [Read how limits are derived and how they change](/program/structure).
