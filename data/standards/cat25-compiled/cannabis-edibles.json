@@ -1,0 +1,184 @@
+{
+  "slug": "cannabis-edibles",
+  "name": "Cannabis edibles",
+  "native_basis": "as_sold",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "US-MA",
+        "binding_id": "ma2020_pb_cannabis_all_uses_500",
+        "basis_note": "face value",
+        "per_country": {
+          "US-MA": {
+            "value": 500,
+            "converted": true,
+            "id": "ma2020_pb_cannabis_all_uses_500"
+          },
+          "US-MD": {
+            "value": 500,
+            "converted": true,
+            "id": "md2025_pb_cannabis_edible_500"
+          },
+          "US-CO": {
+            "value": 1000,
+            "converted": true,
+            "id": "co2022_pb_cannabis_oral_rectal_vaginal_1000"
+          },
+          "US-NV": {
+            "value": 1200,
+            "converted": true,
+            "id": "nv2020_pb_cannabis_1200"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "US-CO",
+        "binding_id": "co2022_cd_cannabis_oral_rectal_vaginal_500",
+        "basis_note": "face value",
+        "per_country": {
+          "US-CO": {
+            "value": 500,
+            "converted": true,
+            "id": "co2022_cd_cannabis_oral_rectal_vaginal_500"
+          },
+          "US-MA": {
+            "value": 500,
+            "converted": true,
+            "id": "ma2020_cd_cannabis_all_uses_500"
+          },
+          "US-MD": {
+            "value": 500,
+            "converted": true,
+            "id": "md2025_cd_cannabis_edible_500"
+          },
+          "US-NV": {
+            "value": 820,
+            "converted": true,
+            "id": "nv2020_cd_cannabis_820"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "US-MA",
+        "binding_id": "ma2020_tas_cannabis_all_uses_500",
+        "basis_note": "face value",
+        "per_country": {
+          "US-MA": {
+            "value": 500,
+            "converted": true,
+            "id": "ma2020_tas_cannabis_all_uses_500"
+          },
+          "US-CO": {
+            "value": 1500,
+            "converted": true,
+            "id": "co2022_tas_cannabis_oral_rectal_vaginal_1500"
+          },
+          "US-MD": {
+            "value": 1500,
+            "converted": true,
+            "id": "md2025_tas_cannabis_edible_1500"
+          },
+          "US-NV": {
+            "value": 2000,
+            "converted": true,
+            "id": "nv2020_tas_cannabis_2000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "control",
+        "value": null,
+        "control": "Cannabis regulations set arsenic limits without speciation; these are recorded as total arsenic. Total As is measured on every lot and bounds the inorganic fraction; any elevated result triggers iAs speciation.",
+        "reference_method": "Total As by ICP-MS; inorganic arsenic by HPLC-ICP-MS on an elevated total-As result.",
+        "bounded_by": "tAs"
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 400,
+        "value_exact": 400,
+        "binding_jurisdiction": "US-NV",
+        "binding_id": "nv2020_thg_cannabis_400",
+        "basis_note": "face value",
+        "per_country": {
+          "US-NV": {
+            "value": 400,
+            "converted": true,
+            "id": "nv2020_thg_cannabis_400"
+          },
+          "US-MA": {
+            "value": 500,
+            "converted": true,
+            "id": "ma2020_thg_cannabis_all_uses_500"
+          },
+          "US-CO": {
+            "value": 1500,
+            "converted": true,
+            "id": "co2022_thg_cannabis_oral_rectal_vaginal_1500"
+          },
+          "US-MD": {
+            "value": 3000,
+            "converted": true,
+            "id": "md2025_thg_cannabis_edible_3000"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "Cannabis has no methylmercury bioaccumulation pathway. Total Hg is measured on every lot and bounds the methylmercury fraction.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS; reflex MeHg speciation only on an anomalous total-Hg result.",
+        "bounded_by": "tHg"
+      },
+      "Ni": {
+        "type": "control",
+        "value": null,
+        "control": "Nickel is a mandatory total-panel result because cannabis can accumulate Ni and inhalation hardware can release it, but no loaded sovereign cannabis rule sets a finished-product total-Ni maximum. Report every result, investigate source and route, and do not represent this cell as a numeric government limit.",
+        "reference_method": "Total Ni by ICP-MS; for inhaled products, aerosol-emissions testing separates plant/extract contamination from hardware release.",
+        "bounded_by": null
+      },
+      "Sn": {
+        "type": "control",
+        "value": null,
+        "control": "No loaded sovereign cannabis rule sets a total-tin maximum. Total Sn remains mandatory surveillance, with any quantifiable result investigated for packaging, solder, catalyst, or device contact.",
+        "reference_method": "Total Sn by ICP-MS; organotin speciation when the formulation, elastomer, catalyst, or packaging pathway makes organotin plausible.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "control",
+        "value": null,
+        "control": "No loaded sovereign cannabis rule sets a total-aluminium maximum. Total Al remains mandatory surveillance and elevated results trigger soil, processing-aid, excipient, or device-source investigation.",
+        "reference_method": "Total Al by ICP-MS with route-appropriate blank and device controls.",
+        "bounded_by": null
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 1100000,
+        "value_exact": 1100000,
+        "source_id": "md2025_cr_total_cannabis_oral_1100000",
+        "source_jurisdiction": "US-MD",
+        "label": "Sovereign oral-route read-across from Maryland's total-chromium cannabis limit (1100000 ug/kg); Maryland expressly excludes edible products from the direct row, so this is disclosed as read-across rather than direct governance.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is mandatory. Inhaled products and any anomalous total-Cr result require Cr(VI) speciation; any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by validated species-specific IC-ICP-MS with matrix-specific recovery controls.",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

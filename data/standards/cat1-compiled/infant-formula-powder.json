@@ -85,46 +85,6 @@
           }
         }
       },
-      "iAs": {
-        "type": "gov",
-        "value": 20,
-        "value_exact": 20,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_ias_formula_powder_20",
-        "basis_note": "same basis",
-        "per_country": {
-          "EU": {
-            "value": 20,
-            "converted": false,
-            "id": "eu2023_ias_formula_powder_20"
-          },
-          "IL": {
-            "value": 50,
-            "converted": false,
-            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
-          },
-          "BR": {
-            "value": 160,
-            "converted": true,
-            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
-          }
-        }
-      },
-      "tHg": {
-        "type": "gov",
-        "value": 15,
-        "value_exact": 15,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
-        "basis_note": "same basis",
-        "per_country": {
-          "IL": {
-            "value": 15,
-            "converted": false,
-            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
-          }
-        }
-      },
       "Cd": {
         "type": "gov",
         "value": 10,
@@ -165,20 +125,82 @@
           }
         }
       },
-      "Cr": {
+      "tAs": {
         "type": "gov",
-        "value": 2000,
-        "value_exact": 2000,
-        "binding_jurisdiction": "CN",
-        "binding_id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
         "basis_note": "same basis",
         "per_country": {
-          "CN": {
-            "value": 2000,
+          "IN": {
+            "value": 50,
             "converted": false,
-            "id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "CN": {
+            "value": 500,
+            "converted": false,
+            "id": "cn_tas_milk-powder-and-modified-milk-powder-gen_500"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_1_infant_and_toddler_formulas_powder_1000"
           }
         }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_formula_powder_20",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": false,
+            "id": "eu2023_ias_formula_powder_20"
+          },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
+          },
+          "BR": {
+            "value": 160,
+            "converted": true,
+            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 15,
+        "value_exact": 15,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 15,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
+        "bounded_by": "tHg"
       },
       "Ni": {
         "type": "gov",
@@ -224,6 +246,28 @@
             "id": "aunz_sch19_al_formula_nonsoy_500"
           }
         }
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 2000,
+        "value_exact": 2000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000",
+        "basis_note": "same basis",
+        "per_country": {
+          "CN": {
+            "value": 2000,
+            "converted": false,
+            "id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+          }
+        }
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     },
     "soy": {
@@ -307,46 +351,6 @@
           }
         }
       },
-      "iAs": {
-        "type": "gov",
-        "value": 20,
-        "value_exact": 20,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_ias_formula_powder_20",
-        "basis_note": "same basis",
-        "per_country": {
-          "EU": {
-            "value": 20,
-            "converted": false,
-            "id": "eu2023_ias_formula_powder_20"
-          },
-          "IL": {
-            "value": 50,
-            "converted": false,
-            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
-          },
-          "BR": {
-            "value": 160,
-            "converted": true,
-            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
-          }
-        }
-      },
-      "tHg": {
-        "type": "gov",
-        "value": 15,
-        "value_exact": 15,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
-        "basis_note": "same basis",
-        "per_country": {
-          "IL": {
-            "value": 15,
-            "converted": false,
-            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
-          }
-        }
-      },
       "Cd": {
         "type": "gov",
         "value": 10,
@@ -387,20 +391,82 @@
           }
         }
       },
-      "Cr": {
+      "tAs": {
         "type": "gov",
-        "value": 2000,
-        "value_exact": 2000,
-        "binding_jurisdiction": "CN",
-        "binding_id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
         "basis_note": "same basis",
         "per_country": {
-          "CN": {
-            "value": 2000,
+          "IN": {
+            "value": 50,
             "converted": false,
-            "id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "CN": {
+            "value": 500,
+            "converted": false,
+            "id": "cn_tas_milk-powder-and-modified-milk-powder-gen_500"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_1_infant_and_toddler_formulas_powder_1000"
           }
         }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_formula_powder_20",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": false,
+            "id": "eu2023_ias_formula_powder_20"
+          },
+          "IL": {
+            "value": 50,
+            "converted": false,
+            "id": "il_fcs2016_ias_14_1_infant_and_toddler_formulas_powder_50"
+          },
+          "BR": {
+            "value": 160,
+            "converted": true,
+            "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 15,
+        "value_exact": 15,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 15,
+            "converted": false,
+            "id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
+        "bounded_by": "tHg"
       },
       "Ni": {
         "type": "gov",
@@ -446,6 +512,28 @@
             "id": "aunz_sch19_al_formula_soy_1000"
           }
         }
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 2000,
+        "value_exact": 2000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000",
+        "basis_note": "same basis",
+        "per_country": {
+          "CN": {
+            "value": 2000,
+            "converted": false,
+            "id": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+          }
+        }
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     }
   },

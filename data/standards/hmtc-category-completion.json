@@ -1,0 +1,5664 @@
+{
+  "generated_on": "2026-08-12",
+  "method": "HMTc government-limit-only initial standard; exact sovereign maximum, then disclosed sovereign read-across, then explicit control/no-numeric determination",
+  "canonical_panel": {
+    "totals": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "tHg",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "core_species": [
+      "iAs",
+      "Cr-VI"
+    ],
+    "conditional_species": [
+      "MeHg"
+    ],
+    "compiled_order": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ]
+  },
+  "categories": [
+    {
+      "category": 1,
+      "name": "Infant and Child Foods",
+      "config": "tools/standards/cat1-config.json",
+      "output_directory": "data/workbench/standards/cat1-compiled",
+      "planned_rows": 14,
+      "compiled_rows": 14,
+      "compiled_variants": 16,
+      "unresolved_rows": [],
+      "status": "all-rows-resolved-with-controls",
+      "total_cells": 128,
+      "numeric_total_cells": 117,
+      "controlled_total_cells": 11,
+      "numeric_species_cells": 16,
+      "controlled_species_cells": 32,
+      "type_counts": {
+        "gov": 104,
+        "control": 42,
+        "read_across": 29,
+        "subsumed": 1
+      },
+      "defects": [],
+      "note": "Formula powder and ready-to-feed rows each retain cow/non-soy and soy variants.",
+      "rows": [
+        {
+          "slug": "infant-formula-powder",
+          "variants": 2,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 16,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "cow": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_formula_powder_20"
+              },
+              "Cd": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_formula_cow_powder_10"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_formula_powder_20"
+              },
+              "tHg": {
+                "display": "15",
+                "type": "gov",
+                "value": 15,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "250",
+                "type": "gov",
+                "value": 250,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_powder_250"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "4000",
+                "type": "gov",
+                "value": 4000,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "2000",
+                "type": "gov",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            },
+            "soy": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_formula_powder_20"
+              },
+              "Cd": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_formula_powder_20"
+              },
+              "tHg": {
+                "display": "15",
+                "type": "gov",
+                "value": 15,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "400",
+                "type": "gov",
+                "value": 400,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_soy_powder_400"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "8000",
+                "type": "gov",
+                "value": 8000,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_soy_1000"
+              },
+              "Cr": {
+                "display": "2000",
+                "type": "gov",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "cn_crtotal_milk-powder-and-modified-milk-powder-gen_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fruit-juice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_infant_drinks_ready_20"
+              },
+              "Cd": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_cd_17_1_beverages_juices_and_nectars_10"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_nonalcoholic_beverages_excluding_juices_tas_50"
+              },
+              "iAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2023_ias_apple_juice_10"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_17_1_beverages_juices_and_nectars_10"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "250",
+                "type": "gov",
+                "value": 250,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_juice_250"
+              },
+              "Sn": {
+                "display": "5000 RA",
+                "type": "read_across",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "infant-formula-rtf-liquid",
+          "variants": 2,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 16,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "cow": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_formula_liquid_10"
+              },
+              "Cd": {
+                "display": "5",
+                "type": "gov",
+                "value": 5,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_formula_cow_liquid_5"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_formula_liquid_10"
+              },
+              "tHg": {
+                "display": "4",
+                "type": "gov",
+                "value": 4,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            },
+            "soy": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_formula_liquid_10"
+              },
+              "Cd": {
+                "display": "5",
+                "type": "gov",
+                "value": 5,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_formula_liquid_10"
+              },
+              "tHg": {
+                "display": "4",
+                "type": "gov",
+                "value": 4,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_soy_1000"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "root-vegetable-purees-single-ingredient",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_baby_food_tas_100"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000 RA",
+                "type": "read_across",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "baby-cereals-dry-rice-based",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "fda2020_ias_infant_rice_cereal_100"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "3000",
+                "type": "gov",
+                "value": 3000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_processed_cereal_babyfood_3000"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "baby-cereals-dry-non-rice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "3000",
+                "type": "gov",
+                "value": 3000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_processed_cereal_babyfood_3000"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "non-root-vegetable-purees",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2025_pb_baby_food_10"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "mixed-meals-rice-containing",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2025_pb_baby_food_10"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8",
+                "type": "gov",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "mixed-meals-non-rice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2025_pb_baby_food_10"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8",
+                "type": "gov",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "teething-and-snacks-rice-based",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "fda2020_ias_infant_rice_cereal_100"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "3000",
+                "type": "gov",
+                "value": 3000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_processed_cereal_babyfood_3000"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "teething-and-snacks-non-rice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "in_tas_infant-milk-substitute-and-infant-foods_50"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "3000",
+                "type": "gov",
+                "value": 3000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_processed_cereal_babyfood_3000"
+              },
+              "Sn": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fruit-purees-general",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2025_pb_baby_food_10"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_baby_food_tas_100"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000 RA",
+                "type": "read_across",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "meat-and-poultry-purees",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "fda2025_pb_baby_food_10"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_baby_food_tas_100"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000 RA",
+                "type": "read_across",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fish-containing-baby-foods",
+          "variants": 1,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 8,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_babyfood_cereal_20"
+              },
+              "Cd": {
+                "display": "40",
+                "type": "gov",
+                "value": 40,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_babyfood_cereal_40"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_baby_food_tas_100"
+              },
+              "iAs": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_babyfood_20"
+              },
+              "tHg": {
+                "display": "8 RA",
+                "type": "read_across",
+                "value": 8,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "IL",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_babyfood_500"
+              },
+              "Sn": {
+                "display": "5000 RA",
+                "type": "read_across",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "in_sn_infant-milk-substitute-and-infant-foods_5000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000 RA",
+                "type": "read_across",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 3,
+      "name": "Grains, Cereals, and Rice Products",
+      "config": "tools/standards/cat3-config.json",
+      "output_directory": "data/workbench/standards/cat3-compiled",
+      "planned_rows": 12,
+      "compiled_rows": 12,
+      "compiled_variants": 12,
+      "unresolved_rows": [],
+      "status": "all-rows-resolved-with-controls",
+      "total_cells": 96,
+      "numeric_total_cells": 75,
+      "controlled_total_cells": 21,
+      "numeric_species_cells": 6,
+      "controlled_species_cells": 30,
+      "type_counts": {
+        "gov": 65,
+        "control": 51,
+        "read_across": 16
+      },
+      "defects": [],
+      "note": null,
+      "rows": [
+        {
+          "slug": "flour-non-rice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cereals_general_100"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_wheat_derivatives_except_oil_tas_200"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000 RA",
+                "type": "read_across",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "bread-and-baked-goods",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cereals_general_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_tas_300"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000",
+                "type": "gov",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "pasta-wheat-based",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 6,
+          "controlled_total_cells": 2,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cereals_general_100"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_wheat_derivatives_except_oil_tas_200"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "pasta-rice-based",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_cd_rice_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_tas_300"
+              },
+              "iAs": {
+                "display": "250",
+                "type": "gov",
+                "value": 250,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_parboiled_husked_flour_250"
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_durum_rice_1500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "200000",
+                "type": "gov",
+                "value": 200000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_starch_noodles_vermicelli_200000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "breakfast-cereal-non-rice",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cereals_general_100"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_wheat_derivatives_except_oil_tas_200"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000 RA",
+                "type": "read_across",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "breakfast-cereal-rice-based",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_cd_rice_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_tas_300"
+              },
+              "iAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_products_300"
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_durum_rice_1500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000 RA",
+                "type": "read_across",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "rice-bulk-grain",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 6,
+          "controlled_total_cells": 2,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_cd_rice_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_tas_300"
+              },
+              "iAs": {
+                "display": "150",
+                "type": "gov",
+                "value": 150,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_milled_150"
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_durum_rice_1500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "rice-snacks-crackers",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_cd_rice_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_tas_300"
+              },
+              "iAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_products_300"
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_durum_rice_1500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000 RA",
+                "type": "read_across",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "rice-noodles",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_cd_rice_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_rice_derivatives_except_oil_tas_300"
+              },
+              "iAs": {
+                "display": "250",
+                "type": "gov",
+                "value": 250,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_parboiled_husked_flour_250"
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_durum_rice_1500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "200000",
+                "type": "gov",
+                "value": 200000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_starch_noodles_vermicelli_200000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "rice-beverages-rice-milk",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 1,
+          "controlled_total_cells": 7,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cd": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "iAs": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "eu2023_ias_rice_drinks_30"
+              },
+              "tHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "other-grain-products",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 6,
+          "controlled_total_cells": 2,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_barley_rye_50"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_tas_300"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        },
+        {
+          "slug": "grain-based-snacks",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "cu_nc877_2012_pb_processed_cereals_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cereals_general_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_tas_300"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tHg": {
+                "display": "30",
+                "type": "gov",
+                "value": 30,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "800",
+                "type": "gov",
+                "value": 800,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_cereals_800"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "100000",
+                "type": "gov",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "cn_gb2760_2024_al_baked_foods_100000"
+              },
+              "Cr": {
+                "display": "2000 RA",
+                "type": "read_across",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 6,
+      "name": "Seafood",
+      "config": "tools/standards/seafood-config.json",
+      "output_directory": "data/workbench/standards/cat1-compiled",
+      "planned_rows": 7,
+      "compiled_rows": 7,
+      "compiled_variants": 7,
+      "unresolved_rows": [],
+      "status": "all-rows-resolved-with-controls",
+      "total_cells": 56,
+      "numeric_total_cells": 50,
+      "controlled_total_cells": 6,
+      "numeric_species_cells": 7,
+      "controlled_species_cells": 14,
+      "type_counts": {
+        "gov": 40,
+        "control": 14,
+        "read_across": 17,
+        "subsumed": 6
+      },
+      "defects": [],
+      "note": "Includes the six locked seafood rows plus the separately compiled cephalopod row.",
+      "rows": [
+        {
+          "slug": "seaweed-kelp-foods",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_pb_8_1_dried_seaweed_5000"
+              },
+              "Cd": {
+                "display": "2000",
+                "type": "gov",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "th_moph414_2020_cd_dried_seaweed_2000"
+              },
+              "tAs": {
+                "display": "5000",
+                "type": "gov",
+                "value": 5000,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_tas_7_1_dried_seaweed_5000"
+              },
+              "iAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_ias_seaweed_1000"
+              },
+              "tHg": {
+                "display": "2500",
+                "type": "gov",
+                "value": 2500,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_7_1_dried_seaweed_2500"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "30000",
+                "type": "gov",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000 RA",
+                "type": "read_across",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "shellfish",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_pb_062_crustaceans_500"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_crustaceans_500"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_crabs_prawns_shrimps_100"
+              },
+              "tHg": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu2023_hg_fish_general_500"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "EU",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000 RA",
+                "type": "read_across",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cephalopods",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_cephalopods_300"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_cephalopods_1000"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cephalopod_molluscs_tas_1000"
+              },
+              "iAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_cephalopods_50"
+              },
+              "tHg": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_hg_fish_low_300"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "EU",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000 RA",
+                "type": "read_across",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fish-freshwater",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_fish_other_100"
+              },
+              "tHg": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_hg_fish_low_300"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "EU",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000",
+                "type": "gov",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "canned-seafood",
+          "variants": 1,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 8,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "cr_rtcr409_2008_pb_tuna_bonito_200"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_canned_fish_meat_extract_hydrolysed_protein_tas_1000"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_fish_other_100"
+              },
+              "tHg": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "cr_rtcr409_2008_thg_fish_general_500"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "CR",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "100000",
+                "type": "gov",
+                "value": 100000,
+                "unit": "ug/kg",
+                "source": "mx_nom242_sn_canned_100000"
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000",
+                "type": "gov",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fish-marine-non-predatory",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_fish_other_100"
+              },
+              "tHg": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "eu2023_hg_fish_low_300"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "EU",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000",
+                "type": "gov",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "fish-marine-predatory",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "cr_rtcr409_2008_pb_tuna_bonito_200"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "cr_rtcr409_2008_cd_fish_general_50"
+              },
+              "tAs": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu20251891_ias_fish_other_100"
+              },
+              "tHg": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu2023_hg_fish_high_1000"
+              },
+              "MeHg": {
+                "display": "bounded by tHg",
+                "type": "subsumed",
+                "source": "EU",
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "30000 RA",
+                "type": "read_across",
+                "value": 30000,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_seaweed_30000"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "12000 RA",
+                "type": "read_across",
+                "value": 12000,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 7,
+      "name": "Oils, Condiments, and Specialty Foods",
+      "config": "tools/standards/cat7-config.json",
+      "output_directory": "data/workbench/standards/cat7-compiled",
+      "planned_rows": 12,
+      "compiled_rows": 8,
+      "compiled_variants": 8,
+      "unresolved_rows": [
+        "condiments-general",
+        "snacks-general",
+        "canned-foods-general",
+        "mixed-meals-prepared-foods"
+      ],
+      "status": "partial-scope-resolved",
+      "total_cells": 64,
+      "numeric_total_cells": 29,
+      "controlled_total_cells": 35,
+      "numeric_species_cells": 1,
+      "controlled_species_cells": 23,
+      "type_counts": {
+        "gov": 30,
+        "control": 58
+      },
+      "defects": [],
+      "note": "Eight scope-locked rows compile. Four broad rows remain blocked on the taxonomy/product-basis splits recorded in the Step-0 lock.",
+      "rows": [
+        {
+          "slug": "olive-oil",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 2,
+          "controlled_total_cells": 6,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "80",
+                "type": "gov",
+                "value": 80,
+                "unit": "ug/kg",
+                "source": "gso193_2021_pb_edible_fats_and_oils_80"
+              },
+              "Cd": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "codex_tas_named-vegetable-oils_100"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cooking-oils-other",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 2,
+          "controlled_total_cells": 6,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "80",
+                "type": "gov",
+                "value": 80,
+                "unit": "ug/kg",
+                "source": "gso193_2021_pb_edible_fats_and_oils_80"
+              },
+              "Cd": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "codex_tas_named-vegetable-oils_100"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "butter-and-ghee",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 4,
+          "controlled_total_cells": 4,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_pb_dairy-fat-products_20"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_cd_dairy-fat-products_1000"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_tas_dairy-fat-products_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_dairy-fat-products_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "honey",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 4,
+          "controlled_total_cells": 4,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_pb_23_honey_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_honey_cd_100"
+              },
+              "tAs": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_honey_tas_300"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_honey_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "vinegar",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 4,
+          "controlled_total_cells": 4,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_pb_vinegar_500"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_cd_vinegar_1000"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_tas_vinegar_200"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_vinegar_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "chocolate",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "mx_nom186_2013_pb_cocoa_butter_100"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2023_cd_chocolate_lowcocoa_100"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_chocolate_less_40_cocoa_tas_200"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_cacao-and-cacao-products-including-chocolate_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "2500",
+                "type": "gov",
+                "value": 2500,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_chocolate_milk_low_2500"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "spices",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 4,
+          "controlled_total_cells": 4,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "600",
+                "type": "gov",
+                "value": 600,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_spice_fruit_600"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_cd_spices-including-curry-powder_1000"
+              },
+              "tAs": {
+                "display": "1500",
+                "type": "gov",
+                "value": 1500,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_dried_herbs_spices_mustard_tas_1500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_spices-including-curry-powder_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "salt",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 4,
+          "controlled_total_cells": 4,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu2023_pb_salt_1000"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_cd_015_salt_food_grade_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "eu20251891_tas_salt_500"
+              },
+              "iAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_ias_12_salt_500"
+              },
+              "tHg": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2022_617_hg_salt_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 9,
+      "name": "Infant and Child Contact Products",
+      "config": "tools/standards/cat9-config.json",
+      "output_directory": "data/workbench/standards/cat9-compiled",
+      "planned_rows": 8,
+      "compiled_rows": 8,
+      "compiled_variants": 8,
+      "unresolved_rows": [],
+      "status": "all-rows-resolved-with-controls",
+      "total_cells": 64,
+      "numeric_total_cells": 56,
+      "controlled_total_cells": 8,
+      "numeric_species_cells": 8,
+      "controlled_species_cells": 16,
+      "type_counts": {
+        "read_across": 18,
+        "not_material": 23,
+        "gov": 45,
+        "special": 1,
+        "control": 1
+      },
+      "defects": [],
+      "note": null,
+      "rows": [
+        {
+          "slug": "pacifiers-and-sucking-teething-aids",
+          "variants": 1,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 8,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "23000 RA",
+                "type": "read_across",
+                "value": 23000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_pb_toy_migration"
+              },
+              "Cd": {
+                "display": "17000 RA",
+                "type": "read_across",
+                "value": 17000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_cd_toy_migration"
+              },
+              "tAs": {
+                "display": "47000 RA",
+                "type": "read_across",
+                "value": 47000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_tas_toy_migration"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "94000 RA",
+                "type": "read_across",
+                "value": 94000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_thg_toy_migration"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "930000 RA",
+                "type": "read_across",
+                "value": 930000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_ni_toy_migration"
+              },
+              "Sn": {
+                "display": "180000000 RA",
+                "type": "read_across",
+                "value": 180000000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_sn_toy_migration"
+              },
+              "Al": {
+                "display": "28130000 RA",
+                "type": "read_across",
+                "value": 28130000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_al_toy_migration"
+              },
+              "Cr": {
+                "display": "60000 RA",
+                "type": "read_across",
+                "value": 60000,
+                "unit": "ug/kg",
+                "source": "astm_f963_crtotal_soluble"
+              },
+              "Cr-VI": {
+                "display": "53 RA",
+                "type": "read_across",
+                "value": 53,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_crvi_toy_migration"
+              }
+            }
+          }
+        },
+        {
+          "slug": "teething-toys-teethers",
+          "variants": 1,
+          "status": "numeric-total-panel",
+          "numeric_total_cells": 8,
+          "controlled_total_cells": 0,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "23000",
+                "type": "gov",
+                "value": 23000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_pb_toy_migration"
+              },
+              "Cd": {
+                "display": "17000",
+                "type": "gov",
+                "value": 17000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_cd_toy_migration"
+              },
+              "tAs": {
+                "display": "47000",
+                "type": "gov",
+                "value": 47000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_tas_toy_migration"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "94000",
+                "type": "gov",
+                "value": 94000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_thg_toy_migration"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "930000",
+                "type": "gov",
+                "value": 930000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_ni_toy_migration"
+              },
+              "Sn": {
+                "display": "180000000",
+                "type": "gov",
+                "value": 180000000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_sn_toy_migration"
+              },
+              "Al": {
+                "display": "28130000",
+                "type": "gov",
+                "value": 28130000,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_al_toy_migration"
+              },
+              "Cr": {
+                "display": "60000",
+                "type": "gov",
+                "value": 60000,
+                "unit": "ug/kg",
+                "source": "astm_f963_crtotal_soluble"
+              },
+              "Cr-VI": {
+                "display": "53",
+                "type": "gov",
+                "value": 53,
+                "unit": "ug/kg",
+                "source": "eu_2009_48_cat3_crvi_toy_migration"
+              }
+            }
+          }
+        },
+        {
+          "slug": "infant-bottles",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_pb_sml_nd"
+              },
+              "Cd": {
+                "display": "2",
+                "type": "gov",
+                "value": 2,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_cd_sml_nd"
+              },
+              "tAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_tas_sml_nd"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_thg_sml_nd"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_ni_sml"
+              },
+              "Sn": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_al_sml"
+              },
+              "Cr": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              },
+              "Cr-VI": {
+                "display": "10 RA",
+                "type": "read_across",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              }
+            }
+          }
+        },
+        {
+          "slug": "infant-bottle-nipples",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_pb_sml_nd"
+              },
+              "Cd": {
+                "display": "2",
+                "type": "gov",
+                "value": 2,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_cd_sml_nd"
+              },
+              "tAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_tas_sml_nd"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_thg_sml_nd"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_ni_sml"
+              },
+              "Sn": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_al_sml"
+              },
+              "Cr": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              },
+              "Cr-VI": {
+                "display": "10 RA",
+                "type": "read_across",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              }
+            }
+          }
+        },
+        {
+          "slug": "sippy-cups-toddler-drinkware",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_pb_sml_nd"
+              },
+              "Cd": {
+                "display": "2",
+                "type": "gov",
+                "value": 2,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_cd_sml_nd"
+              },
+              "tAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_tas_sml_nd"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_thg_sml_nd"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_ni_sml"
+              },
+              "Sn": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_al_sml"
+              },
+              "Cr": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              },
+              "Cr-VI": {
+                "display": "10 RA",
+                "type": "read_across",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              }
+            }
+          }
+        },
+        {
+          "slug": "infant-food-storage-items",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_pb_sml_nd"
+              },
+              "Cd": {
+                "display": "2",
+                "type": "gov",
+                "value": 2,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_cd_sml_nd"
+              },
+              "tAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_tas_sml_nd"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_thg_sml_nd"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_ni_sml"
+              },
+              "Sn": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_al_sml"
+              },
+              "Cr": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              },
+              "Cr-VI": {
+                "display": "10 RA",
+                "type": "read_across",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              }
+            }
+          }
+        },
+        {
+          "slug": "feeding-accessories-child-sized",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_pb_sml_nd"
+              },
+              "Cd": {
+                "display": "2",
+                "type": "gov",
+                "value": 2,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_cd_sml_nd"
+              },
+              "tAs": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_tas_sml_nd"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_thg_sml_nd"
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_ni_sml"
+              },
+              "Sn": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_al_sml"
+              },
+              "Cr": {
+                "display": "10",
+                "type": "gov",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              },
+              "Cr-VI": {
+                "display": "10 RA",
+                "type": "read_across",
+                "value": 10,
+                "unit": "ug/kg",
+                "source": "eu_10_2011_crtotal_sml_nd"
+              }
+            }
+          }
+        },
+        {
+          "slug": "diapers-and-components",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_2018_1513_pb_consumer_textiles_1mgkg"
+              },
+              "Cd": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_2018_1513_cd_consumer_textiles_1mgkg"
+              },
+              "tAs": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_2018_1513_tas_consumer_textiles_1mgkg"
+              },
+              "iAs": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "MeHg": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Ni": {
+                "display": "0.5 µg/cm²/week special",
+                "type": "special",
+                "value": 0.5,
+                "unit": "µg/cm²/week",
+                "source": "regulations/eu-nickel-directive-94-27-ec"
+              },
+              "Sn": {
+                "display": "1000000",
+                "type": "gov",
+                "value": 1000000,
+                "unit": "ug/kg",
+                "source": "eu_reach_entry20_dot_skin_contact_articles_0_1pct"
+              },
+              "Al": {
+                "display": "n/m",
+                "type": "not_material",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr-VI"
+              },
+              "Cr-VI": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "eu_2018_1513_cr_vi_consumer_textiles_1mgkg"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 24,
+      "name": "Dairy and Milk Products",
+      "config": "tools/standards/cat24-config.json",
+      "output_directory": "data/workbench/standards/cat24-compiled",
+      "planned_rows": 8,
+      "compiled_rows": 8,
+      "compiled_variants": 8,
+      "unresolved_rows": [],
+      "status": "all-rows-resolved-with-controls",
+      "total_cells": 64,
+      "numeric_total_cells": 56,
+      "controlled_total_cells": 8,
+      "numeric_species_cells": 1,
+      "controlled_species_cells": 23,
+      "type_counts": {
+        "gov": 24,
+        "control": 31,
+        "read_across": 33
+      },
+      "defects": [],
+      "note": null,
+      "rows": [
+        {
+          "slug": "dairy-milk-cow",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "in_fssai2016_pb_057_secondary_milk_products_as_consumed_20"
+              },
+              "Cd": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_fluid_milk_dairy_no_addition_cd_50"
+              },
+              "tAs": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_fluid_milk_dairy_no_addition_tas_50"
+              },
+              "iAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_ias_1_1_dairy_products_100"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-milk-goat-sheep",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20 RA",
+                "type": "read_across",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_pb_1_1_dairy_products_20"
+              },
+              "Cd": {
+                "display": "50 RA",
+                "type": "read_across",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_cd_1_1_dairy_products_50"
+              },
+              "tAs": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_tas_1_1_dairy_products_1000"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_1_1_dairy_products_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-milk-camel",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20 RA",
+                "type": "read_across",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_pb_1_1_dairy_products_20"
+              },
+              "Cd": {
+                "display": "50 RA",
+                "type": "read_across",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_cd_1_1_dairy_products_50"
+              },
+              "tAs": {
+                "display": "1000 RA",
+                "type": "read_across",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_tas_1_1_dairy_products_1000"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_1_1_dairy_products_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-cheese",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_pb_cheese-products_20"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cheeses_cd_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_cheeses_tas_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_cheese-products_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-yogurt-cultured",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20",
+                "type": "gov",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_pb_fermented-milk-products_20"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_cd_fermented-milk-products_1000"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_tas_fermented-milk-products_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_fermented-milk-products_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300",
+                "type": "gov",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-cream",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_milk_cream_pb_100"
+              },
+              "Cd": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_milk_cream_cd_200"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_milk_cream_tas_100"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_1_1_dairy_products_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-milk-powders",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "20 RA",
+                "type": "read_across",
+                "value": 20,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_pb_1_1_dairy_products_20"
+              },
+              "Cd": {
+                "display": "1000",
+                "type": "gov",
+                "value": 1000,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_cd_powder-milk-products_1000"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "china_gb2762_tas_milk_powder_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "50",
+                "type": "gov",
+                "value": 50,
+                "unit": "ug/kg",
+                "source": "vn_qcvn8_2_2011_thg_powder-milk-products_50"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "250 RA",
+                "type": "read_across",
+                "value": 250,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_powder_250"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "2000",
+                "type": "gov",
+                "value": 2000,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_milk_powder_2000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "dairy-condensed-evaporated",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 7,
+          "controlled_total_cells": 1,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_condensed_milk_dulce_de_leche_pb_200"
+              },
+              "Cd": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "py_decreto1335_2019_condensed_milk_dulce_de_leche_cd_100"
+              },
+              "tAs": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "sg_foodregs_2026_milk_products_tins_tas_100"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_fcs2016_thg_1_1_dairy_products_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "100 RA",
+                "type": "read_across",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "eu2024_ni_formula_liquid_100"
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "500 RA",
+                "type": "read_across",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "aunz_sch19_al_formula_nonsoy_500"
+              },
+              "Cr": {
+                "display": "300 RA",
+                "type": "read_across",
+                "value": 300,
+                "unit": "ug/kg",
+                "source": "china_gb2762_cr_liquid_milk_300"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": 25,
+      "name": "Cannabis, Hemp, and CBD Products",
+      "config": "tools/standards/cat25-config.json",
+      "output_directory": "data/workbench/standards/cat25-compiled",
+      "planned_rows": 6,
+      "compiled_rows": 5,
+      "compiled_variants": 5,
+      "unresolved_rows": [
+        "cannabis-vape-hardware"
+      ],
+      "status": "partial-scope-resolved",
+      "total_cells": 40,
+      "numeric_total_cells": 25,
+      "controlled_total_cells": 15,
+      "numeric_species_cells": 0,
+      "controlled_species_cells": 15,
+      "type_counts": {
+        "gov": 23,
+        "control": 30,
+        "read_across": 2
+      },
+      "defects": [],
+      "note": "Five route-defined material/product rows compile. Vape hardware remains blocked on the lock's reserved aerosol-release/shared-hardware architecture decision.",
+      "rows": [
+        {
+          "slug": "cannabis-flower",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "us_ca_dcc_2026_pb_inhalable_cannabis_0_5ugg"
+              },
+              "Cd": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "us_ca_dcc_2026_cd_inhalable_cannabis_0_2ugg"
+              },
+              "tAs": {
+                "display": "200",
+                "type": "gov",
+                "value": 200,
+                "unit": "ug/kg",
+                "source": "us_ca_dcc_2026_tas_inhalable_cannabis_0_2ugg"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "us_ca_dcc_2026_thg_inhalable_cannabis_0_1ugg"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "600",
+                "type": "gov",
+                "value": 600,
+                "unit": "ug/kg",
+                "source": "md2025_cr_total_cannabis_inhalation_600"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cannabis-edibles",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_pb_cannabis_all_uses_500"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "co2022_cd_cannabis_oral_rectal_vaginal_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_tas_cannabis_all_uses_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "400",
+                "type": "gov",
+                "value": 400,
+                "unit": "ug/kg",
+                "source": "nv2020_thg_cannabis_400"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "1100000 RA",
+                "type": "read_across",
+                "value": 1100000,
+                "unit": "ug/kg",
+                "source": "md2025_cr_total_cannabis_oral_1100000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cannabis-tinctures-oils",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_pb_cannabis_all_uses_500"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "co2022_cd_cannabis_oral_rectal_vaginal_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_tas_cannabis_all_uses_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "400",
+                "type": "gov",
+                "value": 400,
+                "unit": "ug/kg",
+                "source": "nv2020_thg_cannabis_400"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "1100000",
+                "type": "gov",
+                "value": 1100000,
+                "unit": "ug/kg",
+                "source": "md2025_cr_total_cannabis_oral_1100000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cannabis-topicals",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_pb_cannabis_all_uses_500"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_cd_cannabis_all_uses_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_tas_cannabis_all_uses_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "400",
+                "type": "gov",
+                "value": 400,
+                "unit": "ug/kg",
+                "source": "nv2020_thg_cannabis_400"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "1100000",
+                "type": "gov",
+                "value": 1100000,
+                "unit": "ug/kg",
+                "source": "md2025_cr_total_cannabis_cutaneous_1100000"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        },
+        {
+          "slug": "cannabis-concentrates",
+          "variants": 1,
+          "status": "resolved-with-controls",
+          "numeric_total_cells": 5,
+          "controlled_total_cells": 3,
+          "defects": [],
+          "limits": {
+            "both": {
+              "Pb": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_pb_cannabis_all_uses_500"
+              },
+              "Cd": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_cd_cannabis_all_uses_500"
+              },
+              "tAs": {
+                "display": "500",
+                "type": "gov",
+                "value": 500,
+                "unit": "ug/kg",
+                "source": "ma2020_tas_cannabis_all_uses_500"
+              },
+              "iAs": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tAs"
+              },
+              "tHg": {
+                "display": "100",
+                "type": "gov",
+                "value": 100,
+                "unit": "ug/kg",
+                "source": "il_imcgmp152_2016_thg_cannabis_100"
+              },
+              "MeHg": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "tHg"
+              },
+              "Ni": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Sn": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Al": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": null
+              },
+              "Cr": {
+                "display": "600 RA",
+                "type": "read_across",
+                "value": 600,
+                "unit": "ug/kg",
+                "source": "md2025_cr_total_cannabis_inhalation_600"
+              },
+              "Cr-VI": {
+                "display": "control",
+                "type": "control",
+                "source": null,
+                "bounded_by": "Cr"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "policy_blocked_categories": [
+    {
+      "category": 26,
+      "name": "Peptides, SARMs, and Research Chemicals",
+      "plannedRows": 4,
+      "unresolvedRows": [
+        "peptides-injectable-hormones",
+        "sarms-oral",
+        "aas-injectable",
+        "research-chem-raw-powders"
+      ],
+      "reason": "No lawful product-specific sovereign maximum exists, and the parenteral/oral dose-basis method is not yet governed. Occurrence or a health-based calculation cannot replace the missing government anchor under the current initial-limit rule."
+    }
+  ],
+  "totals": {
+    "compiled_categories": 7,
+    "compiled_rows": 62,
+    "compiled_variants": 64,
+    "numeric_total_cells": 408,
+    "controlled_total_cells": 104,
+    "defects": 0
+  }
+}

@@ -246,43 +246,17 @@
         }
       },
       "MeHg": {
-        "type": "gov",
-        "value": 500,
-        "value_exact": 500,
-        "binding_jurisdiction": "MX",
-        "binding_id": "mx_nom242_mehg_other_500",
-        "basis_note": "face value",
-        "per_country": {
-          "MX": {
-            "value": 500,
-            "converted": true,
-            "id": "mx_nom242_mehg_other_500"
-          },
-          "PH": {
-            "value": 500,
-            "converted": true,
-            "id": "ph_pns194_2017_fish_mehg_500"
-          },
-          "TT": {
-            "value": 500,
-            "converted": true,
-            "id": "tt_fooddrugs_2007_fish_except_predatory_mehg_500"
-          },
-          "VN": {
-            "value": 500,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_mehg_fish-excluding-carnivorous-fish_500"
-          },
-          "TH": {
-            "value": 1000,
-            "converted": true,
-            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
-          },
-          "GSO": {
-            "value": 1200,
-            "converted": true,
-            "id": "gso193_2021_mehg_tuna_1200"
-          }
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 500,
+        "binding_tHg_source": "CR",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (500 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "gov",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
         }
       },
       "Cd": {
@@ -360,6 +334,16 @@
           }
         }
       },
+      "Ni": {
+        "type": "read_across",
+        "value": 30000,
+        "value_exact": 30000,
+        "source_id": "eu2024_ni_seaweed_30000",
+        "source_jurisdiction": "EU",
+        "label": "Sovereign marine-food read-across from the EU seaweed nickel maximum level (30000 ug/kg) where no species-specific seafood nickel limit exists. Seaweed retains its directly applicable value; other seafood rows disclose the matrix transfer.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
       "Sn": {
         "type": "gov",
         "value": 100000,
@@ -384,6 +368,38 @@
             "id": "cr_rtcr409_2008_sn_canned_200000"
           }
         }
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "Conservative finished-food read-across from the AU-NZ infant-formula aluminium maximum (500 ug/kg). No sovereign seafood-specific aluminium maximum is loaded; total Al remains tested and this transfer is disclosed rather than derived from occurrence data.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 12000,
+        "value_exact": 12000,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_fssai2016_crtotal_001_all_fishery_products_12000",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 12000,
+            "converted": true,
+            "id": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+          }
+        }
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     }
   },

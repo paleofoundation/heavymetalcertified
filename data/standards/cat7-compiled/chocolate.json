@@ -1,0 +1,234 @@
+{
+  "slug": "chocolate",
+  "name": "Cocoa and chocolate products",
+  "native_basis": "as_sold",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "MX",
+        "binding_id": "mx_nom186_2013_pb_cocoa_butter_100",
+        "basis_note": "face value",
+        "per_country": {
+          "MX": {
+            "value": 100,
+            "converted": true,
+            "id": "mx_nom186_2013_pb_cocoa_butter_100"
+          },
+          "PY": {
+            "value": 200,
+            "converted": true,
+            "id": "py_decreto1335_2019_chocolate_less_40_cocoa_pb_200"
+          },
+          "MERCOSUR": {
+            "value": 200,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_chocolate_less_40_cocoa_pb_200"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_pb_14_cocoa_powder_1000"
+          },
+          "UY": {
+            "value": 1000,
+            "converted": true,
+            "id": "uy_rbn_pb_sweetened_chocolate_1mgkg"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_cocoa_powder_dry_fat_free_pb_2000"
+          },
+          "VN": {
+            "value": 2000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_cacao-and-cacao-products-including-chocolate_2000"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_chocolate_lowcocoa_100",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": true,
+            "id": "eu2023_cd_chocolate_lowcocoa_100"
+          },
+          "GSO": {
+            "value": 100,
+            "converted": true,
+            "id": "gso193_2021_cd_milk_chocolate_with_30_total_dry_cocoa_solids_100"
+          },
+          "MA": {
+            "value": 100,
+            "converted": true,
+            "id": "ma_2410_2022_cd_3_2_7_produits_specifiques_a_base_de_cacao_et_de_chocolat_chocolat_au_lait_a_100"
+          },
+          "PY": {
+            "value": 200,
+            "converted": true,
+            "id": "py_decreto1335_2019_chocolate_less_40_cocoa_cd_200"
+          },
+          "MERCOSUR": {
+            "value": 200,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_chocolate_less_40_cocoa_cd_200"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_cd_chocolate_500"
+          },
+          "SG": {
+            "value": 500,
+            "converted": true,
+            "id": "sg_foodregs_2026_cocoa_cocoa_products_salt_cd_500"
+          },
+          "IL": {
+            "value": 500,
+            "converted": true,
+            "id": "il_fcs2016_cd_13_cocoa_chocolate_and_cocoa_chocolate_products_500"
+          },
+          "TH": {
+            "value": 800,
+            "converted": true,
+            "id": "th_moph414_2020_cd_chocolate_50_70_cocoa_800"
+          },
+          "VN": {
+            "value": 1000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_cd_cacao-and-cacao-products-including-chocolate_1000"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 200,
+        "value_exact": 200,
+        "binding_jurisdiction": "PY",
+        "binding_id": "py_decreto1335_2019_chocolate_less_40_cocoa_tas_200",
+        "basis_note": "face value",
+        "per_country": {
+          "PY": {
+            "value": 200,
+            "converted": true,
+            "id": "py_decreto1335_2019_chocolate_less_40_cocoa_tas_200"
+          },
+          "MERCOSUR": {
+            "value": 200,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_chocolate_less_40_cocoa_tas_200"
+          },
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom186_2013_tas_chocolate_products_500"
+          },
+          "SG": {
+            "value": 1000,
+            "converted": true,
+            "id": "sg_foodregs_2026_cocoa_powder_dry_fat_free_tas_1000"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_13_cocoa_powder_1000"
+          },
+          "VN": {
+            "value": 1000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_tas_cacao-and-cacao-products-including-chocolate_1000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "control",
+        "value": null,
+        "control": "No separate sovereign inorganic-arsenic maximum is loaded for this non-rice product. Total As is mandatory; elevated results trigger iAs speciation, and the iAs result is evaluated within the total-As control.",
+        "reference_method": "iAs by HPLC-ICP-MS (EN 16802 or equivalent).",
+        "bounded_by": "tAs"
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "VN",
+        "binding_id": "vn_qcvn8_2_2011_thg_cacao-and-cacao-products-including-chocolate_50",
+        "basis_note": "face value",
+        "per_country": {
+          "VN": {
+            "value": 50,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_thg_cacao-and-cacao-products-including-chocolate_50"
+          },
+          "IL": {
+            "value": 200,
+            "converted": true,
+            "id": "il_fcs2016_thg_13_cocoa_powder_200"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "This non-marine row has no methylmercury bioaccumulation pathway. Total Hg is mandatory and bounds MeHg; products containing fish or another marine ingredient must route to the applicable seafood/speciation standard.",
+        "reference_method": "Total Hg screen; MeHg by GC-ICP-MS / HPLC-ICP-MS if a marine ingredient or anomalous total-Hg result creates a pathway.",
+        "bounded_by": "tHg"
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 2500,
+        "value_exact": 2500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_chocolate_milk_low_2500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 2500,
+            "converted": true,
+            "id": "eu2024_ni_chocolate_milk_low_2500"
+          }
+        }
+      },
+      "Sn": {
+        "type": "control",
+        "value": null,
+        "control": "Tin is primarily a tinplate-migration analyte. Non-canned products require total-Sn surveillance and packaging verification; canned versions route to the canned-food standard.",
+        "reference_method": "Total Sn by ICP-MS plus packaging declaration.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign finished-product aluminium maximum is loaded for this product form. Total Al remains mandatory, with additive, processing-aid, soil, and equipment sources investigated.",
+        "reference_method": "Total Al by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign total-chromium maximum is loaded for this product form. Total Cr remains mandatory and any elevated result triggers species investigation.",
+        "reference_method": "Total Cr by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Cr(VI) by validated alkaline extraction and IC-ICP-MS (EPA 3060A/EPA 6800 or equivalent).",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

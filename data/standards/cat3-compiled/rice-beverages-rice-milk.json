@@ -6,10 +6,11 @@
   "variants": {
     "both": {
       "Pb": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no government sets a lead ML specific to rice-based drinks; the EU 2023/915 beverage lead framework does not enumerate a rice-drink row. Lead is material in a rice-derived beverage but unregulated by ML; literature-baseline governs. iAs is the binding Tier-1 analyte for this subcategory.",
-        "reference_method": "Pb by ICP-MS on the as-consumed liquid."
+        "reference_method": "Pb by ICP-MS on the as-consumed liquid.",
+        "bounded_by": null
       },
       "iAs": {
         "type": "gov",
@@ -27,56 +28,69 @@
         }
       },
       "tAs": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "No government sets a total-arsenic ML for a rice-based beverage in any jurisdiction; the binding arsenic control for this subcategory is the inorganic-arsenic ML (30 ug/kg, EU 2023/915 non-alcoholic rice drinks). A dry \"rice and derivatives\" total-arsenic ceiling is not comparable at face value to a dilute as-consumed beverage, and total arsenic adds no ceiling beyond the inorganic-arsenic limit here.",
-        "reference_method": "tAs by ICP-MS on the as-consumed liquid; speciate to iAs on any elevated total-arsenic result."
+        "reference_method": "tAs by ICP-MS on the as-consumed liquid; speciate to iAs on any elevated total-arsenic result.",
+        "bounded_by": null
       },
       "tHg": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Mercury does not accumulate in a rice-derived beverage; the only cereal mercury MLs are dry-basis and no government sets a rice-drink mercury ML. Not a material contaminant in this matrix.",
-        "reference_method": null
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "No government sets a methylmercury ML for a rice-based beverage in any jurisdiction; methylmercury maximum levels exist only for fish and seafood. Mercury does not accumulate in a rice-derived beverage and is not a material contaminant in this matrix.",
-        "reference_method": null
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "Cd": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no government sets a cadmium ML specific to rice-based drinks. Material but unregulated by ML; literature-baseline governs.",
-        "reference_method": "Cd by ICP-MS on the as-consumed liquid."
+        "reference_method": "Cd by ICP-MS on the as-consumed liquid.",
+        "bounded_by": null
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Cr-VI (hexavalent chromium): No total-Cr ML for rice beverages; reflex speciation control on the as-consumed liquid.",
-        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance."
+        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance.",
+        "bounded_by": null
       },
       "Ni": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "The EU 2024/1987 nickel MLs are scoped to cereal grains as commodities and to juices/nectars, not to a rice-based drink; no government sets a rice-drink nickel ML. Not a binding cell.",
-        "reference_method": null
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "Sn": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Canned-only analyte; carton-packed rice milk is not tinplate-packaged.",
-        "reference_method": null
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "Al": {
+        "type": "control",
+        "value": null,
+        "control": "No credible sovereign government sets an aluminium contaminant maximum for a rice-based beverage. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this exact cell; external plant-milk occurrence cannot supply the number.",
+        "reference_method": "Screen total Al by ICP-MS on the as-consumed beverage and document aluminium-containing additives or processing aids; investigate elevated results and comply with all market laws.",
+        "bounded_by": null
+      },
+      "Cr": {
         "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "precautionary read-across: plant-milk Al (soy 758 ppb as-consumed; provisional)",
-        "basis_kind": "precautionary",
-        "basis_note": "precautionary cross-source value (no government ML for this product form)",
+        "value": 2000,
+        "value_exact": 2000,
+        "source_id": "china_gb2762_cr_milk_powder_2000",
+        "source_jurisdiction": "CN",
+        "label": "Conservative sovereign read-across from China GB 2762 total chromium 2000 ug/kg for milk powder to dry cereal/grain products. The matrix differs, so the source remains explicitly classified as read-across; Cr(VI) is controlled separately by reflex speciation.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       }
     }

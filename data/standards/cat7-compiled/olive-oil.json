@@ -1,0 +1,165 @@
+{
+  "slug": "olive-oil",
+  "name": "Olive oil",
+  "native_basis": "as_sold",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 80,
+        "value_exact": 80,
+        "binding_jurisdiction": "GSO",
+        "binding_id": "gso193_2021_pb_edible_fats_and_oils_80",
+        "basis_note": "face value",
+        "per_country": {
+          "GSO": {
+            "value": 80,
+            "converted": true,
+            "id": "gso193_2021_pb_edible_fats_and_oils_80"
+          },
+          "TH": {
+            "value": 80,
+            "converted": true,
+            "id": "th_moph414_2020_pb_edible_fats_oils_80"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_fssai2016_pb_045_edible_fats_and_oils_edible_fats_and_oils_not_covered_by_individual_st_100"
+          },
+          "PY": {
+            "value": 100,
+            "converted": true,
+            "id": "py_decreto1335_2019_fats_oils_margarine_pb_100"
+          },
+          "FJ": {
+            "value": 100,
+            "converted": true,
+            "id": "fj_fsr2009_pb_002_named_animal_fats_named_vegetable_oils_olive_oils_and_olive_pumice_oil_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fats_oils_margarine_pb_100"
+          },
+          "VN": {
+            "value": 100,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_animal-fats-and-oils_100"
+          }
+        }
+      },
+      "Cd": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign cadmium maximum is loaded for this product form. Total Cd remains mandatory on every lot; the cell cannot receive an occurrence-derived number.",
+        "reference_method": "Total Cd by ICP-MS.",
+        "bounded_by": null
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "CODEX",
+        "binding_id": "codex_tas_named-vegetable-oils_100",
+        "basis_note": "face value",
+        "per_country": {
+          "CODEX": {
+            "value": 100,
+            "converted": true,
+            "id": "codex_tas_named-vegetable-oils_100"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_fssai2016_tas_001_edible_fats_and_oils_edible_fats_and_oils_not_covered_by_individual_st_100"
+          },
+          "TH": {
+            "value": 100,
+            "converted": true,
+            "id": "th_moph414_2020_tas_edible_fats_oils_100"
+          },
+          "PY": {
+            "value": 100,
+            "converted": true,
+            "id": "py_decreto1335_2019_fats_oils_margarine_tas_100"
+          },
+          "FJ": {
+            "value": 100,
+            "converted": true,
+            "id": "fj_fsr2009_tas_001_edible_fats_and_oils_named_animal_fats_named_vegetable_oils_olive_oils_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fats_oils_margarine_tas_100"
+          },
+          "VN": {
+            "value": 100,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_tas_animal-fats-and-oils_100"
+          }
+        }
+      },
+      "iAs": {
+        "type": "control",
+        "value": null,
+        "control": "No separate sovereign inorganic-arsenic maximum is loaded for this non-rice product. Total As is mandatory; elevated results trigger iAs speciation, and the iAs result is evaluated within the total-As control.",
+        "reference_method": "iAs by HPLC-ICP-MS (EN 16802 or equivalent).",
+        "bounded_by": "tAs"
+      },
+      "tHg": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign total-mercury maximum is loaded for this product form. Total Hg remains mandatory on every lot.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS.",
+        "bounded_by": null
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "This non-marine row has no methylmercury bioaccumulation pathway. Total Hg is mandatory and bounds MeHg; products containing fish or another marine ingredient must route to the applicable seafood/speciation standard.",
+        "reference_method": "Total Hg screen; MeHg by GC-ICP-MS / HPLC-ICP-MS if a marine ingredient or anomalous total-Hg result creates a pathway.",
+        "bounded_by": "tHg"
+      },
+      "Ni": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign nickel maximum is loaded for this product form. Total Ni remains mandatory and is reported as surveillance, not converted into an occurrence-selected certification value.",
+        "reference_method": "Total Ni by ICP-MS.",
+        "bounded_by": null
+      },
+      "Sn": {
+        "type": "control",
+        "value": null,
+        "control": "Tin is primarily a tinplate-migration analyte. Non-canned products require total-Sn surveillance and packaging verification; canned versions route to the canned-food standard.",
+        "reference_method": "Total Sn by ICP-MS plus packaging declaration.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign finished-product aluminium maximum is loaded for this product form. Total Al remains mandatory, with additive, processing-aid, soil, and equipment sources investigated.",
+        "reference_method": "Total Al by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign total-chromium maximum is loaded for this product form. Total Cr remains mandatory and any elevated result triggers species investigation.",
+        "reference_method": "Total Cr by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Cr(VI) by validated alkaline extraction and IC-ICP-MS (EPA 3060A/EPA 6800 or equivalent).",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

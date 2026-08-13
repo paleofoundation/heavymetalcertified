@@ -1,0 +1,158 @@
+{
+  "slug": "meat-and-poultry-purees",
+  "name": "Meat and poultry purées for infants and young children",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "US",
+        "binding_id": "fda2025_pb_baby_food_10",
+        "basis_note": "face value",
+        "per_country": {
+          "US": {
+            "value": 10,
+            "converted": true,
+            "id": "fda2025_pb_baby_food_10"
+          },
+          "UK": {
+            "value": 50,
+            "converted": true,
+            "id": "uk_pb_processed-cereal-based-foods-and-baby-fo_50"
+          },
+          "SG": {
+            "value": 200,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_pb_200"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 40,
+        "value_exact": 40,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_babyfood_cereal_40",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 40,
+            "converted": true,
+            "id": "eu2023_cd_babyfood_cereal_40"
+          },
+          "UK": {
+            "value": 40,
+            "converted": true,
+            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "GSO": {
+            "value": 40,
+            "converted": true,
+            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "SG",
+        "binding_id": "sg_foodregs_2026_baby_food_tas_100",
+        "basis_note": "face value",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_babyfood_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_ias_babyfood_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 8,
+        "value_exact": 8,
+        "source_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
+        "source_jurisdiction": "IL",
+        "label": "Sovereign infant-food read-across from Israel's 8 ug/kg total-mercury maximum for porridges and other foods for infants and toddlers.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
+        "bounded_by": "tHg"
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_babyfood_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu2024_ni_babyfood_500"
+          }
+        }
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 5000,
+        "value_exact": 5000,
+        "source_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "source_jurisdiction": "IN",
+        "label": "India FSSAI non-canned infant-food total-tin maximum (5000 ug/kg), applied at face value.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "Conservative sovereign infant-food read-across from the AU-NZ non-soy infant-formula aluminium maximum (500 ug/kg).",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "control",
+        "value": null,
+        "control": "Total Cr remains mandatory. Any result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails; no sovereign meat-purée total-Cr maximum is loaded.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by validated alkaline extraction and IC-ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

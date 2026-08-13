@@ -66,10 +66,11 @@
         }
       },
       "iAs": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
-        "control": "Corn/wheat/oat breakfast cereals do not hyperaccumulate arsenic; no non-rice grain iAs ML exists. Clean counterpart to rice-based breakfast cereal (row 6).",
-        "reference_method": null
+        "control": "No loaded government source sets an iAs ML for corn-, wheat-, or oat-based breakfast cereal; the rice-based cereal rule is matrix-specific and is not transferred to this row.",
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "tAs": {
         "type": "gov",
@@ -122,10 +123,11 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "No government sets a methylmercury ML for any grain, cereal, or rice product in any jurisdiction; methylmercury maximum levels exist only for fish and seafood. Mercury in this matrix is controlled by the total-mercury ML (30 ug/kg, Israel FCS-2016), which bounds the methylmercury fraction. Rice can accumulate trace methylmercury via paddy-soil methylation in point-source-contaminated growing regions, but that fraction is bounded by the total-mercury control and no methylmercury ML exists to look up.",
-        "reference_method": "MeHg by GC-ICP-MS / EN 16801 only on a lot whose total mercury approaches the tHg ML; grain MeHg is characteristically < LOQ."
+        "reference_method": "MeHg by GC-ICP-MS / EN 16801 only on a lot whose total mercury approaches the tHg ML; grain MeHg is characteristically < LOQ.",
+        "bounded_by": null
       },
       "Cd": {
         "type": "gov",
@@ -198,10 +200,11 @@
         }
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Cr-VI (hexavalent chromium): No total-Cr ML for cereal products; reflex speciation control.",
-        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance."
+        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance.",
+        "bounded_by": null
       },
       "Ni": {
         "type": "gov",
@@ -219,10 +222,11 @@
         }
       },
       "Sn": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Canned-only analyte; boxed breakfast cereal not sold in tinplate.",
-        "reference_method": null
+        "reference_method": "Mandatory total-element screen by ICP-MS; apply species-specific HPLC-ICP-MS for arsenic or GC/HPLC-ICP-MS for methylmercury when the stated control triggers.",
+        "bounded_by": null
       },
       "Al": {
         "type": "read_across",
@@ -231,6 +235,16 @@
         "source_id": "cn_gb2760_2024_al_baked_foods_100000",
         "source_jurisdiction": "CN",
         "label": "read-across: China GB 2760-2024 baked-foods Al 100 mg/kg (leavened/additive subset)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 2000,
+        "value_exact": 2000,
+        "source_id": "china_gb2762_cr_milk_powder_2000",
+        "source_jurisdiction": "CN",
+        "label": "Conservative sovereign read-across from China GB 2762 total chromium 2000 ug/kg for milk powder to dry cereal/grain products. The matrix differs, so the source remains explicitly classified as read-across; Cr(VI) is controlled separately by reflex speciation.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
       }

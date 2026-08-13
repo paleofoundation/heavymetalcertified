@@ -1,0 +1,344 @@
+{
+  "slug": "salt",
+  "name": "Food-grade salt",
+  "native_basis": "as_sold",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_salt_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 1000,
+            "converted": true,
+            "id": "eu2023_pb_salt_1000"
+          },
+          "GSO": {
+            "value": 1000,
+            "converted": true,
+            "id": "gso193_2021_pb_salt_food_grade_1000"
+          },
+          "AU-NZ": {
+            "value": 2000,
+            "converted": true,
+            "id": "aunz_sch19_pb_salt_2000"
+          },
+          "IN": {
+            "value": 2000,
+            "converted": true,
+            "id": "in_fssai2016_pb_060_salt_food_grade_2000"
+          },
+          "CO": {
+            "value": 2000,
+            "converted": true,
+            "id": "co_res4506_2013_pb_food_grade_salt_2000"
+          },
+          "TH": {
+            "value": 2000,
+            "converted": true,
+            "id": "th_moph414_2020_pb_food_grade_salt_2000"
+          },
+          "PY": {
+            "value": 2000,
+            "converted": true,
+            "id": "py_decreto1335_2019_food_grade_salt_pb_2000"
+          },
+          "TT": {
+            "value": 2000,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_food_grade_salt_pb_2000"
+          },
+          "IL": {
+            "value": 2000,
+            "converted": true,
+            "id": "il_fcs2016_pb_13_salt_2000"
+          },
+          "FJ": {
+            "value": 2000,
+            "converted": true,
+            "id": "fj_fsr2009_pb_004_salt_2000"
+          },
+          "MERCOSUR": {
+            "value": 2000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_food_grade_salt_pb_2000"
+          },
+          "VN": {
+            "value": 2000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_salt_2000"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_fssai2016_cd_015_salt_food_grade_500",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 500,
+            "converted": true,
+            "id": "in_fssai2016_cd_015_salt_food_grade_500"
+          },
+          "GSO": {
+            "value": 500,
+            "converted": true,
+            "id": "gso193_2021_cd_salt_food_grade_500"
+          },
+          "CO": {
+            "value": 500,
+            "converted": true,
+            "id": "co_res4506_2013_cd_food_grade_salt_500"
+          },
+          "TH": {
+            "value": 500,
+            "converted": true,
+            "id": "th_moph414_2020_cd_food_grade_salt_500"
+          },
+          "SG": {
+            "value": 500,
+            "converted": true,
+            "id": "sg_foodregs_2026_cocoa_cocoa_products_salt_cd_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_food_grade_salt_cd_500"
+          },
+          "TT": {
+            "value": 500,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_food_grade_salt_cd_500"
+          },
+          "IL": {
+            "value": 500,
+            "converted": true,
+            "id": "il_fcs2016_cd_12_salt_500"
+          },
+          "FJ": {
+            "value": 500,
+            "converted": true,
+            "id": "fj_fsr2009_cd_001_salt_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_food_grade_salt_cd_500"
+          },
+          "VN": {
+            "value": 500,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_cd_common-salt_500"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu20251891_tas_salt_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu20251891_tas_salt_500"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_tas_salt_500"
+          },
+          "IN": {
+            "value": 500,
+            "converted": true,
+            "id": "in_fssai2016_tas_011_salt_food_grade_500"
+          },
+          "GSO": {
+            "value": 500,
+            "converted": true,
+            "id": "gso193_2021_tas_salt_food_grade_500"
+          },
+          "CO": {
+            "value": 500,
+            "converted": true,
+            "id": "co_res4506_2013_tas_food_grade_salt_500"
+          },
+          "TH": {
+            "value": 500,
+            "converted": true,
+            "id": "th_moph414_2020_tas_food_grade_salt_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_food_grade_salt_tas_500"
+          },
+          "TT": {
+            "value": 500,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_food_grade_salt_tas_500"
+          },
+          "FJ": {
+            "value": 500,
+            "converted": true,
+            "id": "fj_fsr2009_tas_002_salt_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_food_grade_salt_tas_500"
+          },
+          "VN": {
+            "value": 500,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_tas_common-salt_500"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_12_salt_1000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_ias_12_salt_500",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 500,
+            "converted": true,
+            "id": "il_fcs2016_ias_12_salt_500"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2022_617_hg_salt_100",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": true,
+            "id": "eu2022_617_hg_salt_100"
+          },
+          "AU-NZ": {
+            "value": 100,
+            "converted": true,
+            "id": "aunz_sch19_hg_salt_100"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_fssai2016_thg_002_salt_food_grade_100"
+          },
+          "GSO": {
+            "value": 100,
+            "converted": true,
+            "id": "gso193_2021_thg_salt_food_grade_100"
+          },
+          "CO": {
+            "value": 100,
+            "converted": true,
+            "id": "co_res4506_2013_thg_food_grade_salt_100"
+          },
+          "TH": {
+            "value": 100,
+            "converted": true,
+            "id": "th_moph414_2020_thg_food_grade_salt_100"
+          },
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_salt_thg_100"
+          },
+          "TT": {
+            "value": 100,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_food_grade_salt_thg_100"
+          },
+          "IL": {
+            "value": 100,
+            "converted": true,
+            "id": "il_fcs2016_thg_12_salt_100"
+          },
+          "FJ": {
+            "value": 100,
+            "converted": true,
+            "id": "fj_fsr2009_thg_003_salt_100"
+          },
+          "VN": {
+            "value": 100,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_thg_salt_100"
+          },
+          "NZ": {
+            "value": 70000,
+            "converted": true,
+            "id": "nz_hsr002552_2026_thg_eye_product_mercurial_preservatives_0_007pct"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "control",
+        "value": null,
+        "control": "This non-marine row has no methylmercury bioaccumulation pathway. Total Hg is mandatory and bounds MeHg; products containing fish or another marine ingredient must route to the applicable seafood/speciation standard.",
+        "reference_method": "Total Hg screen; MeHg by GC-ICP-MS / HPLC-ICP-MS if a marine ingredient or anomalous total-Hg result creates a pathway.",
+        "bounded_by": "tHg"
+      },
+      "Ni": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign nickel maximum is loaded for this product form. Total Ni remains mandatory and is reported as surveillance, not converted into an occurrence-selected certification value.",
+        "reference_method": "Total Ni by ICP-MS.",
+        "bounded_by": null
+      },
+      "Sn": {
+        "type": "control",
+        "value": null,
+        "control": "Tin is primarily a tinplate-migration analyte. Non-canned products require total-Sn surveillance and packaging verification; canned versions route to the canned-food standard.",
+        "reference_method": "Total Sn by ICP-MS plus packaging declaration.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign finished-product aluminium maximum is loaded for this product form. Total Al remains mandatory, with additive, processing-aid, soil, and equipment sources investigated.",
+        "reference_method": "Total Al by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr": {
+        "type": "control",
+        "value": null,
+        "control": "No exact sovereign total-chromium maximum is loaded for this product form. Total Cr remains mandatory and any elevated result triggers species investigation.",
+        "reference_method": "Total Cr by ICP-MS.",
+        "bounded_by": null
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Cr(VI) by validated alkaline extraction and IC-ICP-MS (EPA 3060A/EPA 6800 or equivalent).",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

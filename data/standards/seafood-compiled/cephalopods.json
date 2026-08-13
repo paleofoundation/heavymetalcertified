@@ -9,10 +9,15 @@
         "type": "gov",
         "value": 300,
         "value_exact": 300,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_pb_10_3_octopus_and_squid_300",
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_cephalopods_300",
         "basis_note": "face value",
         "per_country": {
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_pb_cephalopods_300"
+          },
           "IL": {
             "value": 300,
             "converted": true,
@@ -141,14 +146,18 @@
         }
       },
       "MeHg": {
-        "type": "read_across",
-        "value": 500,
-        "value_exact": 500,
-        "source_id": "mx_nom242_mehg_other_500",
-        "source_jurisdiction": "MX",
-        "label": "No government sets a cephalopod-specific methylmercury ML. Read across from the non-predatory / general fishery MeHg value (Mexico NOM-242, other fishery products, 500 ug/kg): cephalopods are not high-trophic mercury accumulators, so the non-predatory fish MeHg tier is the nearest defensible value. Comparator vs any direct cephalopod MeHg limit.",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 300,
+        "binding_tHg_source": "EU",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (300 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "read_across",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
+        }
       },
       "Cd": {
         "type": "gov",
@@ -220,11 +229,49 @@
           }
         }
       },
+      "Ni": {
+        "type": "read_across",
+        "value": 30000,
+        "value_exact": 30000,
+        "source_id": "eu2024_ni_seaweed_30000",
+        "source_jurisdiction": "EU",
+        "label": "Sovereign marine-food read-across from the EU seaweed nickel maximum level (30000 ug/kg) where no species-specific seafood nickel limit exists. Seaweed retains its directly applicable value; other seafood rows disclose the matrix transfer.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
       "Sn": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Tin is a can-migration analyte; not material for fresh/frozen cephalopods placed on market without a tinplate container. Every government Sn ML for fishery products is a canned-only limit. Reflex to the canned-seafood subcategory standard if the product is canned.",
-        "reference_method": "ICP-MS per EN 15763 / AOAC 2015.01; applies only if canned."
+        "reference_method": "ICP-MS per EN 15763 / AOAC 2015.01; applies only if canned.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "Conservative finished-food read-across from the AU-NZ infant-formula aluminium maximum (500 ug/kg). No sovereign seafood-specific aluminium maximum is loaded; total Al remains tested and this transfer is disclosed rather than derived from occurrence data.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 12000,
+        "value_exact": 12000,
+        "source_id": "in_fssai2016_crtotal_001_all_fishery_products_12000",
+        "source_jurisdiction": "IN",
+        "label": "India FSSAI total-chromium maximum for all fishery products (12000 ug/kg); directly applicable to fishery rows and used as the nearest sovereign marine-food read-across for seaweed.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     }
   },

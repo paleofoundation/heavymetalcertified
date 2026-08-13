@@ -1,0 +1,158 @@
+{
+  "slug": "fish-containing-baby-foods",
+  "name": "Fish-containing baby foods",
+  "native_basis": "as_consumed",
+  "canned": false,
+  "variants": {
+    "both": {
+      "Pb": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_pb_babyfood_cereal_20",
+        "basis_note": "Direct EU maximum for baby food for infants and young children (20 ug/kg). The explicit lookup avoids treating the regulation's 'except ... formula' wording as a product-scope exclusion.",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": false,
+            "id": "eu2023_pb_babyfood_cereal_20"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 40,
+        "value_exact": 40,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_babyfood_cereal_40",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 40,
+            "converted": true,
+            "id": "eu2023_cd_babyfood_cereal_40"
+          },
+          "UK": {
+            "value": 40,
+            "converted": true,
+            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "GSO": {
+            "value": 40,
+            "converted": true,
+            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "SG",
+        "binding_id": "sg_foodregs_2026_baby_food_tas_100",
+        "basis_note": "face value",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_babyfood_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_ias_babyfood_20"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 8,
+        "value_exact": 8,
+        "source_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
+        "source_jurisdiction": "IL",
+        "label": "Sovereign infant-food read-across from Israel's 8 ug/kg total-mercury maximum. This is stricter than the seafood mercury tier and therefore governs the finished baby food.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "MeHg": {
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 8,
+        "binding_tHg_source": "IL",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (8 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "read_across",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
+        }
+      },
+      "Ni": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_babyfood_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu2024_ni_babyfood_500"
+          }
+        }
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 5000,
+        "value_exact": 5000,
+        "source_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+        "source_jurisdiction": "IN",
+        "label": "India FSSAI non-canned infant-food total-tin maximum (5000 ug/kg), applied at face value.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "Conservative sovereign infant-food read-across from the AU-NZ non-soy infant-formula aluminium maximum (500 ug/kg).",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 12000,
+        "value_exact": 12000,
+        "source_id": "in_fssai2016_crtotal_001_all_fishery_products_12000",
+        "source_jurisdiction": "IN",
+        "label": "India FSSAI total-chromium maximum for all fishery products (12000 ug/kg), read across to the fish component of the finished baby food.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
+      }
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "method": "HMTc Method v2.0 (government-limit default, 8:1 basis, read-across)"
+}

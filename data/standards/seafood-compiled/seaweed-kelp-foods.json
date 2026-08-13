@@ -71,10 +71,11 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Seaweed is a marine primary producer, not a predator; methylmercury does not biomagnify into algae, so MeHg is a negligible fraction of total mercury. Bounded by the tHg cell (Israel dried-seaweed tHg 2500): if tHg passes, MeHg is inherently far below any fish MeHg action level.",
-        "reference_method": "Total-mercury screen (EPA 7473 / ICP-MS); reflex MeHg speciation (GC-ICP-MS, e.g. EPA 3200 / DIN EN 16801) only on a tHg exceedance."
+        "reference_method": "Total-mercury screen (EPA 7473 / ICP-MS); reflex MeHg speciation (GC-ICP-MS, e.g. EPA 3200 / DIN EN 16801) only on a tHg exceedance.",
+        "bounded_by": null
       },
       "Cd": {
         "type": "gov",
@@ -101,11 +102,59 @@
           }
         }
       },
+      "Ni": {
+        "type": "gov",
+        "value": 30000,
+        "value_exact": 30000,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_seaweed_30000",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 30000,
+            "converted": true,
+            "id": "eu2024_ni_seaweed_30000"
+          },
+          "CH": {
+            "value": 30000,
+            "converted": true,
+            "id": "ch_vhk_2026_ni_seetang_30000"
+          }
+        }
+      },
       "Sn": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
         "control": "Tin is a can-migration analyte, not a matrix-accumulation analyte. Dried seaweed foods (nori, wakame, kombu, dulse) are sold in non-metal packaging; with no tinplate contact there is no tin source. Every government tin ML in the register is either canned-product-only or an 'any food' catch-all set for can migration.",
-        "reference_method": "Packaging control (non-tinplate); periodic ICP-MS tin verification on finished product."
+        "reference_method": "Packaging control (non-tinplate); periodic ICP-MS tin verification on finished product.",
+        "bounded_by": null
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 500,
+        "value_exact": 500,
+        "source_id": "aunz_sch19_al_formula_nonsoy_500",
+        "source_jurisdiction": "AU-NZ",
+        "label": "Conservative finished-food read-across from the AU-NZ infant-formula aluminium maximum (500 ug/kg). No sovereign seafood-specific aluminium maximum is loaded; total Al remains tested and this transfer is disclosed rather than derived from occurrence data.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 12000,
+        "value_exact": 12000,
+        "source_id": "in_fssai2016_crtotal_001_all_fishery_products_12000",
+        "source_jurisdiction": "IN",
+        "label": "India FSSAI total-chromium maximum for all fishery products (12000 ug/kg); directly applicable to fishery rows and used as the nearest sovereign marine-food read-across for seaweed.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     }
   },

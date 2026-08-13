@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "source_repository": "heavy-metal-index",
+  "source_commit": "d9fc2f9c9c0f2f1f7d97389447e83e9e2bab31db",
+  "source_report": "data/workbench/standards/hmtc-category-completion.json",
+  "source_generated_on": "2026-08-12",
+  "categories": [
+    {
+      "category": 1,
+      "rows": 14,
+      "status": "all-rows-resolved-with-controls"
+    },
+    {
+      "category": 3,
+      "rows": 12,
+      "status": "all-rows-resolved-with-controls"
+    },
+    {
+      "category": 6,
+      "rows": 7,
+      "status": "all-rows-resolved-with-controls"
+    },
+    {
+      "category": 7,
+      "rows": 8,
+      "status": "partial-scope-resolved"
+    },
+    {
+      "category": 9,
+      "rows": 8,
+      "status": "all-rows-resolved-with-controls"
+    },
+    {
+      "category": 24,
+      "rows": 8,
+      "status": "all-rows-resolved-with-controls"
+    },
+    {
+      "category": 25,
+      "rows": 5,
+      "status": "partial-scope-resolved"
+    }
+  ],
+  "records_copied": 62
+}

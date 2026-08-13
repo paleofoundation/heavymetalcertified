@@ -50,46 +50,6 @@
           }
         }
       },
-      "iAs": {
-        "type": "gov",
-        "value": 20,
-        "value_exact": 20,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_ias_babyfood_20",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 20,
-            "converted": true,
-            "id": "eu2023_ias_babyfood_20"
-          },
-          "KR": {
-            "value": 100,
-            "converted": true,
-            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-          },
-          "BR": {
-            "value": 150,
-            "converted": true,
-            "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
-          },
-          "CN": {
-            "value": 200,
-            "converted": true,
-            "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
-          }
-        }
-      },
-      "tHg": {
-        "type": "read_across",
-        "value": 8,
-        "value_exact": 8,
-        "source_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
-        "source_jurisdiction": "IL",
-        "label": "government read-across — Israel FCS-2016 porridges & other foods for infants and toddlers, total-Hg 8 (the strictest applicable baby-food mercury ML; supersedes the looser China canned-complementary 20).",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
       "Cd": {
         "type": "gov",
         "value": 40,
@@ -130,11 +90,72 @@
           }
         }
       },
-      "Cr": {
-        "type": "not_material",
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": true,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_babyfood_20",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_ias_babyfood_20"
+          },
+          "KR": {
+            "value": 100,
+            "converted": true,
+            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          },
+          "BR": {
+            "value": 150,
+            "converted": true,
+            "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
+          },
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tHg": {
+        "type": "read_across",
+        "value": 8,
+        "value_exact": 8,
+        "source_id": "il_fcs2016_thg_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_8",
+        "source_jurisdiction": "IL",
+        "label": "government read-across — Israel FCS-2016 porridges & other foods for infants and toddlers, total-Hg 8 (the strictest applicable baby-food mercury ML; supersedes the looser China canned-complementary 20).",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "MeHg": {
+        "type": "control",
         "value": null,
-        "control": "Total-Cr reflex speciation: any lot with total Cr >100 ug/kg triggers hexavalent-chromium (Cr-VI) speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. Non-dairy grain matrix — the only register Cr value (China milk powder 2000) is a dairy analogy and is not read across.",
-        "reference_method": "Cr-VI by IC-ICP-MS (EPA 6800 / EN 15192 isotope-dilution speciation) on any total-Cr exceedance."
+        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
+        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
+        "bounded_by": "tHg"
       },
       "Ni": {
         "type": "gov",
@@ -175,6 +196,20 @@
         "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
+      },
+      "Cr": {
+        "type": "control",
+        "value": null,
+        "control": "Total-Cr reflex speciation: any lot with total Cr >100 ug/kg triggers hexavalent-chromium (Cr-VI) speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. Non-dairy grain matrix — the only register Cr value (China milk powder 2000) is a dairy analogy and is not read across.",
+        "reference_method": "Cr-VI by IC-ICP-MS (EPA 6800 / EN 15192 isotope-dilution speciation) on any total-Cr exceedance.",
+        "bounded_by": null
+      },
+      "Cr-VI": {
+        "type": "control",
+        "value": null,
+        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
+        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
+        "bounded_by": "Cr"
       }
     }
   },
