@@ -16,25 +16,20 @@ function setupTopNav() {
   const menu = document.getElementById("hmi-topnav-menu")
   if (!burger || !menu) return
 
-  const closeBurger = (restoreFocus = false) => {
-    const wasOpen = menu.classList.contains("open")
+  const closeBurger = () => {
     menu.classList.remove("open")
     burger.setAttribute("aria-expanded", "false")
-    burger.setAttribute("aria-label", "Open navigation")
-    if (restoreFocus && wasOpen) burger.focus()
   }
 
   const toggleBurger = (e: Event) => {
     e.stopPropagation()
     const isOpen = menu.classList.toggle("open")
     burger.setAttribute("aria-expanded", isOpen ? "true" : "false")
-    burger.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation")
   }
 
   // ---- Mega-menu -------------------------------------------------------
   const items = Array.from(menu.querySelectorAll<HTMLLIElement>(".hmi-nav-item"))
   menu.classList.add("hmi-nav--js")
-  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches
 
   let openTimer: number | undefined
   let closeTimer: number | undefined
@@ -139,19 +134,15 @@ function setupTopNav() {
     const toggle = item.querySelector<HTMLButtonElement>(".hmi-nav-toggle")
     const click = onToggleClick(item)
 
-    if (canHover) {
-      item.addEventListener("pointerenter", enter)
-      item.addEventListener("pointerleave", leave)
-    }
+    item.addEventListener("pointerenter", enter)
+    item.addEventListener("pointerleave", leave)
     item.addEventListener("keydown", keydown)
     item.addEventListener("focusout", focusout)
     toggle?.addEventListener("click", click)
 
     bound.push(() => {
-      if (canHover) {
-        item.removeEventListener("pointerenter", enter)
-        item.removeEventListener("pointerleave", leave)
-      }
+      item.removeEventListener("pointerenter", enter)
+      item.removeEventListener("pointerleave", leave)
       item.removeEventListener("keydown", keydown)
       item.removeEventListener("focusout", focusout)
       toggle?.removeEventListener("click", click)
@@ -177,10 +168,7 @@ function setupTopNav() {
   }
 
   const onDocKeydown = (e: KeyboardEvent) => {
-    if (e.key === "Escape") {
-      closeAll()
-      closeBurger(true)
-    }
+    if (e.key === "Escape") closeAll()
   }
 
   burger.addEventListener("click", toggleBurger)

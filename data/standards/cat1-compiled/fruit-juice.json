@@ -73,11 +73,6 @@
             "converted": true,
             "id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_pb_50"
           },
-          "VN": {
-            "value": 50,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_pb_vegetable-and-fruit-juice-including-nectar-ins_50"
-          },
           "KR": {
             "value": 100,
             "converted": true,
@@ -92,76 +87,6 @@
             "value": 300,
             "converted": true,
             "id": "sg_foodregs_2026_fruit_vegetable_juice_excl_lime_lemon_pb_300"
-          },
-          "UY": {
-            "value": 300,
-            "converted": true,
-            "id": "uy_rbn_pb_citrus_fruit_juices_0_3mgkg"
-          }
-        }
-      },
-      "Cd": {
-        "type": "gov",
-        "value": 10,
-        "value_exact": 10,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_cd_17_1_beverages_juices_and_nectars_10",
-        "basis_note": "face value",
-        "per_country": {
-          "IL": {
-            "value": 10,
-            "converted": true,
-            "id": "il_fcs2016_cd_17_1_beverages_juices_and_nectars_10"
-          },
-          "EU": {
-            "value": 20,
-            "converted": true,
-            "id": "eu2023_cd_infant_drinks_ready_20"
-          },
-          "PY": {
-            "value": 20,
-            "converted": true,
-            "id": "py_decreto1335_2019_nonalcoholic_beverages_excluding_juices_cd_20"
-          },
-          "MERCOSUR": {
-            "value": 20,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_cd_20"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "PY",
-        "binding_id": "py_decreto1335_2019_nonalcoholic_beverages_excluding_juices_tas_50",
-        "basis_note": "face value",
-        "per_country": {
-          "PY": {
-            "value": 50,
-            "converted": true,
-            "id": "py_decreto1335_2019_nonalcoholic_beverages_excluding_juices_tas_50"
-          },
-          "MERCOSUR": {
-            "value": 50,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_tas_50"
-          },
-          "TT": {
-            "value": 100,
-            "converted": true,
-            "id": "tt_fooddrugs_2007_div6_fruit_juice_except_apple_tas_100"
-          },
-          "SG": {
-            "value": 200,
-            "converted": true,
-            "id": "sg_foodregs_2026_fruit_vegetable_juice_excl_lime_lemon_tas_200"
-          },
-          "IL": {
-            "value": 1000,
-            "converted": true,
-            "id": "il_fcs2016_tas_16_2_fruit_and_vegetable_juices_including_nectars_1000"
           }
         }
       },
@@ -210,12 +135,41 @@
           }
         }
       },
-      "MeHg": {
-        "type": "control",
+      "Cd": {
+        "type": "gov",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_cd_17_1_beverages_juices_and_nectars_10",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 10,
+            "converted": true,
+            "id": "il_fcs2016_cd_17_1_beverages_juices_and_nectars_10"
+          },
+          "EU": {
+            "value": 20,
+            "converted": true,
+            "id": "eu2023_cd_infant_drinks_ready_20"
+          },
+          "PY": {
+            "value": 20,
+            "converted": true,
+            "id": "py_decreto1335_2019_nonalcoholic_beverages_excluding_juices_cd_20"
+          },
+          "MERCOSUR": {
+            "value": 20,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_cd_20"
+          }
+        }
+      },
+      "Cr": {
+        "type": "not_material",
         "value": null,
-        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
-        "bounded_by": "tHg"
+        "control": "Chromium is not material in a non-dairy fruit-juice matrix and no government sets a Cr ML for juice; the only food Cr limits in the register are dairy (China milk powder 2000, liquid milk 300). Cr-VI is the toxic species and is controlled by reflex speciation: any total-Cr result above 100 ppb triggers Cr-VI speciation, and any quantifiable Cr-VI fails.",
+        "reference_method": "Total Cr by ICP-MS; reflex Cr-VI speciation by IC-ICP-MS (e.g. EPA 218.6 / EN 15192) on any total-Cr > 100 ppb"
       },
       "Ni": {
         "type": "gov",
@@ -240,18 +194,7 @@
         "source_jurisdiction": "IN",
         "label": "government read-across (India FSSAI \"Infant Milk substitute and Infant foods\" Sn 5000, the only non-canned tin ML in the register) applied at face value.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {
-          "CL": {
-            "value": 150000,
-            "converted": true,
-            "id": "cl_decreto977_1996_sn_blackcurrant_small_fruit_nectars_150000"
-          },
-          "UY": {
-            "value": 150000,
-            "converted": true,
-            "id": "uy_rbn_sn_citrus_juices_not_canned_150mgkg"
-          }
-        }
+        "per_country": {}
       },
       "Al": {
         "type": "read_across",
@@ -262,20 +205,6 @@
         "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
         "per_country": {}
-      },
-      "Cr": {
-        "type": "control",
-        "value": null,
-        "control": "Chromium is not material in a non-dairy fruit-juice matrix and no government sets a Cr ML for juice; the only food Cr limits in the register are dairy (China milk powder 2000, liquid milk 300). Cr-VI is the toxic species and is controlled by reflex speciation: any total-Cr result above 100 ppb triggers Cr-VI speciation, and any quantifiable Cr-VI fails.",
-        "reference_method": "Total Cr by ICP-MS; reflex Cr-VI speciation by IC-ICP-MS (e.g. EPA 218.6 / EN 15192) on any total-Cr > 100 ppb",
-        "bounded_by": null
-      },
-      "Cr-VI": {
-        "type": "control",
-        "value": null,
-        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
-        "bounded_by": "Cr"
       }
     }
   },

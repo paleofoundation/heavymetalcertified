@@ -16,13 +16,11 @@ const KIND: Record<string, string> = {
   "public-briefing": "Briefing",
   "briefings-index": "Directory",
   "manuals-index": "Library",
-  method: "Method",
-  certification: "Certification",
   program: "Program",
   verify: "Lookup",
   apply: "Apply",
   brands: "Directory",
-  brand: "Product profile",
+  brand: "Certified brand",
   portal: "Portal",
   remediation: "Policy",
   mark: "Mark",
@@ -45,8 +43,6 @@ const SECTION: Record<string, string> = {
   apply: "Apply",
   brands: "Brands",
   portal: "Brands",
-  method: "Method & evidence",
-  certification: "Certification",
 }
 
 function iso(v: unknown): string | undefined {

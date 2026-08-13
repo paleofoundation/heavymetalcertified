@@ -87,76 +87,6 @@
             "value": 20,
             "converted": true,
             "id": "fj_fsr2009_pb_006_infant_formula_20"
-          },
-          "VN": {
-            "value": 20,
-            "converted": false,
-            "id": "vn_qcvn8_2_2011_pb_formulae-for-young-children-aged-under-36-mont_20"
-          }
-        }
-      },
-      "Cd": {
-        "type": "gov",
-        "value": 5,
-        "value_exact": 5,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_cd_formula_cow_liquid_5",
-        "basis_note": "same basis",
-        "per_country": {
-          "EU": {
-            "value": 5,
-            "converted": false,
-            "id": "eu2023_cd_formula_cow_liquid_5"
-          },
-          "UK": {
-            "value": 5,
-            "converted": false,
-            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_5"
-          },
-          "GSO": {
-            "value": 5,
-            "converted": false,
-            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_cows_milk_proteins_or_protein_hydrolys_5"
-          },
-          "IL": {
-            "value": 5,
-            "converted": false,
-            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
-          },
-          "BR": {
-            "value": 10,
-            "converted": false,
-            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
-          },
-          "IN": {
-            "value": 100,
-            "converted": true,
-            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "IN",
-        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
-        "basis_note": "face value",
-        "per_country": {
-          "IN": {
-            "value": 50,
-            "converted": true,
-            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
-          },
-          "SG": {
-            "value": 100,
-            "converted": true,
-            "id": "sg_foodregs_2026_infant_formula_tas_100"
-          },
-          "IL": {
-            "value": 1000,
-            "converted": false,
-            "id": "il_fcs2016_tas_14_infant_and_toddler_formulas_ready_to_eat_1000"
           }
         }
       },
@@ -205,12 +135,55 @@
           }
         }
       },
-      "MeHg": {
-        "type": "control",
-        "value": null,
-        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
-        "bounded_by": "tHg"
+      "Cd": {
+        "type": "gov",
+        "value": 5,
+        "value_exact": 5,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_formula_cow_liquid_5",
+        "basis_note": "same basis",
+        "per_country": {
+          "EU": {
+            "value": 5,
+            "converted": false,
+            "id": "eu2023_cd_formula_cow_liquid_5"
+          },
+          "UK": {
+            "value": 5,
+            "converted": false,
+            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_5"
+          },
+          "GSO": {
+            "value": 5,
+            "converted": false,
+            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_cows_milk_proteins_or_protein_hydrolys_5"
+          },
+          "IL": {
+            "value": 5,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 300,
+        "value_exact": 300,
+        "source_id": "china_gb2762_cr_liquid_milk_300",
+        "source_jurisdiction": "CN",
+        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Ni": {
         "type": "gov",
@@ -256,23 +229,6 @@
             "id": "aunz_sch19_al_formula_nonsoy_500"
           }
         }
-      },
-      "Cr": {
-        "type": "read_across",
-        "value": 300,
-        "value_exact": 300,
-        "source_id": "china_gb2762_cr_liquid_milk_300",
-        "source_jurisdiction": "CN",
-        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
-      "Cr-VI": {
-        "type": "control",
-        "value": null,
-        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
-        "bounded_by": "Cr"
       }
     },
     "soy": {
@@ -358,76 +314,6 @@
             "value": 20,
             "converted": true,
             "id": "fj_fsr2009_pb_006_infant_formula_20"
-          },
-          "VN": {
-            "value": 20,
-            "converted": false,
-            "id": "vn_qcvn8_2_2011_pb_formulae-for-young-children-aged-under-36-mont_20"
-          }
-        }
-      },
-      "Cd": {
-        "type": "gov",
-        "value": 5,
-        "value_exact": 5,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5",
-        "basis_note": "same basis",
-        "per_country": {
-          "IL": {
-            "value": 5,
-            "converted": false,
-            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
-          },
-          "EU": {
-            "value": 10,
-            "converted": false,
-            "id": "eu2023_cd_formula_soy_liquid_10"
-          },
-          "UK": {
-            "value": 10,
-            "converted": false,
-            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_10"
-          },
-          "BR": {
-            "value": 10,
-            "converted": false,
-            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
-          },
-          "GSO": {
-            "value": 10,
-            "converted": false,
-            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_soya_protein_isolates_alone_or_in_a_mi_10"
-          },
-          "IN": {
-            "value": 100,
-            "converted": true,
-            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "IN",
-        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
-        "basis_note": "face value",
-        "per_country": {
-          "IN": {
-            "value": 50,
-            "converted": true,
-            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
-          },
-          "SG": {
-            "value": 100,
-            "converted": true,
-            "id": "sg_foodregs_2026_infant_formula_tas_100"
-          },
-          "IL": {
-            "value": 1000,
-            "converted": false,
-            "id": "il_fcs2016_tas_14_infant_and_toddler_formulas_ready_to_eat_1000"
           }
         }
       },
@@ -476,12 +362,55 @@
           }
         }
       },
-      "MeHg": {
-        "type": "control",
-        "value": null,
-        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
-        "bounded_by": "tHg"
+      "Cd": {
+        "type": "gov",
+        "value": 5,
+        "value_exact": 5,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5",
+        "basis_note": "same basis",
+        "per_country": {
+          "IL": {
+            "value": 5,
+            "converted": false,
+            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+          },
+          "EU": {
+            "value": 10,
+            "converted": false,
+            "id": "eu2023_cd_formula_soy_liquid_10"
+          },
+          "UK": {
+            "value": 10,
+            "converted": false,
+            "id": "uk_cd_infant-formulae-and-follow-on-formulae-l_10"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_cd_pediatric-formula-for-enteral-nutrition_10"
+          },
+          "GSO": {
+            "value": 10,
+            "converted": false,
+            "id": "gso193_2021_cd_liquid_formulae_manufactured_from_soya_protein_isolates_alone_or_in_a_mi_10"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "read_across",
+        "value": 300,
+        "value_exact": 300,
+        "source_id": "china_gb2762_cr_liquid_milk_300",
+        "source_jurisdiction": "CN",
+        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Ni": {
         "type": "gov",
@@ -527,23 +456,6 @@
             "id": "aunz_sch19_al_formula_soy_1000"
           }
         }
-      },
-      "Cr": {
-        "type": "read_across",
-        "value": 300,
-        "value_exact": 300,
-        "source_id": "china_gb2762_cr_liquid_milk_300",
-        "source_jurisdiction": "CN",
-        "label": "government read-across (China GB 2762 liquid milk total-Cr 300 → liquid formula; basis-matched dairy analogy)",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
-      "Cr-VI": {
-        "type": "control",
-        "value": null,
-        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
-        "bounded_by": "Cr"
       }
     }
   },

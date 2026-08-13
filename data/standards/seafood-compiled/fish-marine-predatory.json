@@ -176,17 +176,43 @@
         }
       },
       "MeHg": {
-        "type": "subsumed",
-        "value": null,
-        "subsumed_by": "tHg",
-        "binding_tHg": 1000,
-        "binding_tHg_source": "EU",
-        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (1000 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
-        "candidate": {
-          "type": "gov",
-          "value": 1000,
-          "source_jurisdiction": "MX",
-          "source_id": "mx_nom242_mehg_tuna_group_1000"
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "MX",
+        "binding_id": "mx_nom242_mehg_tuna_group_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "MX": {
+            "value": 1000,
+            "converted": true,
+            "id": "mx_nom242_mehg_tuna_group_1000"
+          },
+          "TH": {
+            "value": 1000,
+            "converted": true,
+            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
+          },
+          "PH": {
+            "value": 1000,
+            "converted": true,
+            "id": "ph_pns194_2017_predatory_fish_mehg_1000"
+          },
+          "TT": {
+            "value": 1000,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_predatory_fish_mehg_1000"
+          },
+          "VN": {
+            "value": 1000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_mehg_carnivorous-fish-shark-swordfish-tuna-pike-etc_1000"
+          },
+          "GSO": {
+            "value": 1200,
+            "converted": true,
+            "id": "gso193_2021_mehg_tuna_1200"
+          }
         }
       },
       "Cd": {
@@ -244,49 +270,11 @@
           }
         }
       },
-      "Ni": {
-        "type": "read_across",
-        "value": 30000,
-        "value_exact": 30000,
-        "source_id": "eu2024_ni_seaweed_30000",
-        "source_jurisdiction": "EU",
-        "label": "Sovereign marine-food read-across from the EU seaweed nickel maximum level (30000 ug/kg) where no species-specific seafood nickel limit exists. Seaweed retains its directly applicable value; other seafood rows disclose the matrix transfer.",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
       "Sn": {
-        "type": "control",
+        "type": "not_material",
         "value": null,
         "control": "Tin is a can-migration analyte only: it enters food by dissolution from tinplate can walls, and fresh, frozen, or otherwise non-canned predatory fish (whole, fillet, loin, or portion) has no tin source. No government sets a tin ML for non-canned fish anywhere in the register; every seafood tin limit is scoped to canned/tinplate product and is excluded by the compiler's canned-gate for this non-canned subcategory. Canned predatory-fish products are certified under the canned-seafood subcategory, where the governing tin ceiling is the canned-food ML (Codex CXS 193 / GSO / India canned foods 250000 ug/kg; Chile canned fish and shellfish 250000 ug/kg). For non-canned product, tin is controlled by screen, not limited: any result above the reporting limit is investigated as evidence of unintended metal contact rather than an inherent property of the fish.",
-        "reference_method": "Total Sn by ICP-MS or ICP-OES (e.g. AOAC 985.16 / EN 15764); screen threshold for non-canned product set at the method LOQ, with any quantifiable tin triggering a packaging/contact-material investigation.",
-        "bounded_by": null
-      },
-      "Al": {
-        "type": "read_across",
-        "value": 500,
-        "value_exact": 500,
-        "source_id": "aunz_sch19_al_formula_nonsoy_500",
-        "source_jurisdiction": "AU-NZ",
-        "label": "Conservative finished-food read-across from the AU-NZ infant-formula aluminium maximum (500 ug/kg). No sovereign seafood-specific aluminium maximum is loaded; total Al remains tested and this transfer is disclosed rather than derived from occurrence data.",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
-      "Cr": {
-        "type": "read_across",
-        "value": 12000,
-        "value_exact": 12000,
-        "source_id": "in_fssai2016_crtotal_001_all_fishery_products_12000",
-        "source_jurisdiction": "IN",
-        "label": "India FSSAI total-chromium maximum for all fishery products (12000 ug/kg); directly applicable to fishery rows and used as the nearest sovereign marine-food read-across for seaweed.",
-        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
-      },
-      "Cr-VI": {
-        "type": "control",
-        "value": null,
-        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
-        "bounded_by": "Cr"
+        "reference_method": "Total Sn by ICP-MS or ICP-OES (e.g. AOAC 985.16 / EN 15764); screen threshold for non-canned product set at the method LOQ, with any quantifiable tin triggering a packaging/contact-material investigation."
       }
     }
   },

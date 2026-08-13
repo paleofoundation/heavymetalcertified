@@ -10,40 +10,37 @@ const footerSections = [
     title: "Standards",
     links: [
       ["All standards", "/standards"],
-      ["Program manuals", "/manuals"],
-      ["Infant & Child Foods", "/standards#infant-child-foods"],
-      ["Seafood", "/standards#seafood"],
-      ["Grains, cereals & rice", "/standards#grains-cereals-rice"],
+      ["Infant & Child Foods", "/manuals/infant-and-child-foods"],
+      ["Program Manuals", "/manuals"],
+      ["The analyte panel", "/#panel"],
+      ["Standards Briefings", "/briefings"],
     ],
   },
   {
-    title: "Research",
+    title: "Methodology",
     links: [
-      ["Research library", "/articles"],
-      ["Standards briefings", "/briefings"],
-      ["Regulatory register", "/regulations"],
-      ["Method overview", "/method"],
-      ["How initial limits are set", "/program/structure"],
+      ["How limits are derived", "/program/structure"],
+      ["Two remediation pathways", "/program/two-pathways"],
+      ["Confidential Remediation Track", "/program/remediation"],
+      ["Native basis and conversion", "/program/structure"],
+      ["The five publication gates", "/program/structure"],
     ],
   },
   {
-    title: "Certification",
+    title: "Institute",
     links: [
-      ["Certification overview", "/certification"],
-      ["For brands", "/for-brands"],
-      ["Category readiness", "/category-readiness"],
-      ["Cost & timing", "/cost-and-timing"],
-      ["Brand Control Room", "/portal"],
+      ["Institute of Contaminant Standards (ICS)", "https://contaminantstandards.com"],
+      ["Heavy Metal Index", "https://heavymetalindex.com"],
+      ["Paleo Foundation", "https://paleofoundation.com"],
     ],
   },
   {
     title: "Verify & apply",
     links: [
       ["Verify a certificate", "/verify"],
-      ["Certified products directory", "/brands"],
+      ["Certified brands", "/brands"],
       ["Using the mark", "/mark"],
       ["Apply for certification", "/apply"],
-      ["Institute of Contaminant Standards", "https://contaminantstandards.com"],
     ],
   },
 ]
@@ -59,8 +56,8 @@ export default (() => {
               Heavy Metal Certified
             </a>
             <p>
-              Published, product-specific heavy-metal standards anchored to sovereign government
-              limits, with independent certification and continuing verification.
+              Published heavy-metal standards, set per subcategory in each product's native basis,
+              and derived from a pooled distribution of the peer-reviewed and agency literature.
             </p>
           </section>
           <nav class="site-footer-nav" aria-label="Footer">
@@ -89,8 +86,8 @@ export default (() => {
           </nav>
         </div>
         <div class="site-footer-bottom">
-          <p>© {year} Institute of Contaminant Standards (ICS)</p>
-          <p>Operated by the Institute of Contaminant Standards.</p>
+          <p>© {year} Paleo Certified, Inc.</p>
+          <p>Operated by the Institute of Contaminant Standards (ICS).</p>
         </div>
       </footer>
     )

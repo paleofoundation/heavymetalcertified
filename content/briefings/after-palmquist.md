@@ -10,9 +10,7 @@ orcid: 0000-0002-2348-7259
 briefing_date: "May 2026"
 updated: "May 2026"
 scholar_eligible: true
-scholar_pdf: true
-scholar_pdf_url: "https://heavymetalcertified.com/briefings/after-palmquist.pdf"
-pdf: "/briefings/after-palmquist.pdf"
+pdf: "/static/briefings/after-palmquist.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Brief 2" }

@@ -149,7 +149,7 @@ export default (() => {
         }
       : {
           title: "Verify a certificate",
-          body: "Check a lot number, certificate number or product code against the product register when the first certificate is issued.",
+          body: "Check a lot number, certificate number or product code against the register. Public and open to regulators.",
           ctaLabel: "Look up a lot",
           ctaHref: `${base}/verify`,
         }

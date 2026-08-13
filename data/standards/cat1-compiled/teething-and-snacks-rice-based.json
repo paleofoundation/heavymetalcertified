@@ -60,121 +60,6 @@
           }
         }
       },
-      "Cd": {
-        "type": "gov",
-        "value": 40,
-        "value_exact": 40,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_cd_babyfood_cereal_40",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 40,
-            "converted": true,
-            "id": "eu2023_cd_babyfood_cereal_40"
-          },
-          "UK": {
-            "value": 40,
-            "converted": true,
-            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
-          },
-          "GSO": {
-            "value": 40,
-            "converted": true,
-            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
-          },
-          "BR": {
-            "value": 50,
-            "converted": true,
-            "id": "br_cd_cereal-based-foods-for-infant-young-chil_50"
-          },
-          "CN": {
-            "value": 60,
-            "converted": true,
-            "id": "cn_cd_cereal-based-complementary-foods-for-inf_60"
-          },
-          "AU-NZ": {
-            "value": 100,
-            "converted": true,
-            "id": "aunz_sch19_cd_rice_100"
-          },
-          "IN": {
-            "value": 100,
-            "converted": true,
-            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
-          },
-          "CO": {
-            "value": 100,
-            "converted": true,
-            "id": "co_res4506_2013_cd_cereals_general_100"
-          },
-          "TH": {
-            "value": 100,
-            "converted": true,
-            "id": "th_moph414_2020_cd_cereal_grains_excl_wheat_rice_100"
-          },
-          "PY": {
-            "value": 100,
-            "converted": true,
-            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_cd_100"
-          },
-          "BA": {
-            "value": 100,
-            "converted": true,
-            "id": "ba_pravilnik_2022_cd_3_2_11_1_100"
-          },
-          "MERCOSUR": {
-            "value": 100,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_cd_100"
-          },
-          "VN": {
-            "value": 100,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_cd_cereal-excluding-wheat-rice-mash-and-germs_100"
-          },
-          "IL": {
-            "value": 200,
-            "converted": true,
-            "id": "il_fcs2016_cd_5_1_wheat_and_rice_200"
-          },
-          "PH": {
-            "value": 400,
-            "converted": true,
-            "id": "ph_pns194_2017_polished_rice_cd_400"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "IN",
-        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
-        "basis_note": "face value",
-        "per_country": {
-          "IN": {
-            "value": 50,
-            "converted": true,
-            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
-          },
-          "PY": {
-            "value": 300,
-            "converted": true,
-            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_tas_300"
-          },
-          "MERCOSUR": {
-            "value": 300,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_tas_300"
-          },
-          "IL": {
-            "value": 1000,
-            "converted": true,
-            "id": "il_fcs2016_tas_5_2_rice_1000"
-          }
-        }
-      },
       "iAs": {
         "type": "gov",
         "value": 100,
@@ -256,12 +141,91 @@
           }
         }
       },
-      "MeHg": {
-        "type": "control",
+      "Cd": {
+        "type": "gov",
+        "value": 40,
+        "value_exact": 40,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_babyfood_cereal_40",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 40,
+            "converted": true,
+            "id": "eu2023_cd_babyfood_cereal_40"
+          },
+          "UK": {
+            "value": 40,
+            "converted": true,
+            "id": "uk_cd_processed-cereal-based-foods-and-baby-fo_40"
+          },
+          "GSO": {
+            "value": 40,
+            "converted": true,
+            "id": "gso193_2021_cd_processed_cereal_based_foods_and_baby_foods_for_infants_and_young_childr_40"
+          },
+          "BR": {
+            "value": 50,
+            "converted": true,
+            "id": "br_cd_cereal-based-foods-for-infant-young-chil_50"
+          },
+          "CN": {
+            "value": 60,
+            "converted": true,
+            "id": "cn_cd_cereal-based-complementary-foods-for-inf_60"
+          },
+          "AU-NZ": {
+            "value": 100,
+            "converted": true,
+            "id": "aunz_sch19_cd_rice_100"
+          },
+          "IN": {
+            "value": 100,
+            "converted": true,
+            "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
+          },
+          "CO": {
+            "value": 100,
+            "converted": true,
+            "id": "co_res4506_2013_cd_cereals_general_100"
+          },
+          "TH": {
+            "value": 100,
+            "converted": true,
+            "id": "th_moph414_2020_cd_cereal_grains_excl_wheat_rice_100"
+          },
+          "PY": {
+            "value": 100,
+            "converted": true,
+            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_cd_100"
+          },
+          "BA": {
+            "value": 100,
+            "converted": true,
+            "id": "ba_pravilnik_2022_cd_3_2_11_1_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_cd_100"
+          },
+          "IL": {
+            "value": 200,
+            "converted": true,
+            "id": "il_fcs2016_cd_5_1_wheat_and_rice_200"
+          },
+          "PH": {
+            "value": 400,
+            "converted": true,
+            "id": "ph_pns194_2017_polished_rice_cd_400"
+          }
+        }
+      },
+      "Cr": {
+        "type": "not_material",
         "value": null,
-        "control": "Methylmercury is not a distinct accumulation pathway in non-marine infant foods. Total mercury is measured on every lot and bounds the methylmercury fraction; reflex MeHg speciation is required when source materials include fish or another credible methylation pathway.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS when the matrix contains fish or total Hg approaches the category ceiling.",
-        "bounded_by": "tHg"
+        "control": "Total-Cr reflex speciation: any lot with total Cr >100 ug/kg triggers hexavalent-chromium (Cr-VI) speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. Non-dairy grain matrix — the only register Cr value (China milk powder 2000) is a dairy analogy and is not read across.",
+        "reference_method": "Cr-VI by IC-ICP-MS (EPA 6800 / EN 15192 isotope-dilution speciation) on any total-Cr exceedance."
       },
       "Ni": {
         "type": "gov",
@@ -301,27 +265,7 @@
         "source_jurisdiction": "AU-NZ",
         "label": "government read-across (AU-NZ Schedule 19 infant-formula Al 500, the only government aluminium ML in any jurisdiction) applied at face value; the 8:1 reconstitution factor is formula-specific and is not applied to a non-formula product.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {
-          "CN": {
-            "value": 200000,
-            "converted": true,
-            "id": "cn_gb2760_2024_al_starch_noodles_vermicelli_200000"
-          }
-        }
-      },
-      "Cr": {
-        "type": "control",
-        "value": null,
-        "control": "Total-Cr reflex speciation: any lot with total Cr >100 ug/kg triggers hexavalent-chromium (Cr-VI) speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. Non-dairy grain matrix — the only register Cr value (China milk powder 2000) is a dairy analogy and is not read across.",
-        "reference_method": "Cr-VI by IC-ICP-MS (EPA 6800 / EN 15192 isotope-dilution speciation) on any total-Cr exceedance.",
-        "bounded_by": null
-      },
-      "Cr-VI": {
-        "type": "control",
-        "value": null,
-        "control": "Total chromium is measured on every lot. Any total-Cr result at or above 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192 or equivalent).",
-        "bounded_by": "Cr"
+        "per_country": {}
       }
     }
   },

@@ -25,10 +25,7 @@ function serve() {
     const server = createServer((req, res) => {
       let p = decodeURIComponent(req.url.split("?")[0])
       let f = join(ROOT, p)
-      if (existsSync(f) && statSync(f).isDirectory()) {
-        const indexFile = join(f, "index.html")
-        f = existsSync(indexFile) ? indexFile : existsSync(f + ".html") ? f + ".html" : indexFile
-      }
+      if (existsSync(f) && statSync(f).isDirectory()) f = join(f, "index.html")
       else if (!existsSync(f) && existsSync(f + ".html")) f = f + ".html" // cleanUrls
       if (!existsSync(f)) { res.statusCode = 404; return res.end("404") }
       res.setHeader("content-type", TYPES[extname(f)] || "application/octet-stream")
@@ -65,13 +62,7 @@ async function main() {
     await page.goto(`http://127.0.0.1:${PORT}${path}`, { waitUntil: "networkidle" }).catch(() => {})
     for (const a of assertions) {
       checked++
-      if (a.viewport) await page.setViewportSize(a.viewport)
-      if (a.click) await page.click(a.click)
-      if (a.key) await page.keyboard.press(a.key)
       const got = await page.evaluate(({ sel, prop }) => {
-        if (prop === "no-horizontal-overflow") {
-          return document.documentElement.scrollWidth <= document.documentElement.clientWidth
-        }
         const els = document.querySelectorAll(sel)
         if (prop === "count") return els.length
         if (prop === "absent") return els.length === 0
@@ -80,7 +71,7 @@ async function main() {
       }, a)
       const label = `${path} · ${a.sel} · ${a.prop}`
       let ok
-      if (a.prop === "count" || a.prop === "no-horizontal-overflow") ok = got === a.want
+      if (a.prop === "count") ok = got === a.want
       else if (a.prop === "absent") ok = got === (a.want !== false)
       else if (got == null) ok = false
       else if (a.match === "contains") ok = String(got).toLowerCase().includes(String(a.want).toLowerCase())

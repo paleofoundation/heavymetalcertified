@@ -8,7 +8,7 @@
 Lead (Pb), arsenic (As), mercury (Hg), cadmium (Cd), chromium (Cr), nickel (Ni), tin (Sn), aluminium (Al).
 
 ## Method
-Adversarial search for any existing third-party certification/seal program that sets published limits against all eight. A single counterexample refutes the claim. HMTc / heavymetalcertified.com (the claimant's own program) was excluded as self-referential.
+Adversarial search for any existing third-party certification/seal program that sets published limits against all eight. A single counterexample refutes the claim. HMTc / heavymetaltested.com (the claimant's own program) was excluded as self-referential.
 
 ## Comparable programs — none cover all eight
 | Program | Metals covered | Ni/Sn/Al/Cr? | Cert seal? |

@@ -6,7 +6,7 @@ import { navPanels, type NavPanel } from "./generated/navPanels"
 // Three properties this markup is built to guarantee, in order of importance:
 //
 // 1. **Crawlable.** Every panel is server-rendered in full on every page. All
-//    Every curated href and its link text are in the initial HTML, and the panel is
+//    68 hrefs and their link text are in the initial HTML, and the panel is
 //    hidden with `visibility`, never `display:none` or `[hidden]`. Googlebot,
 //    GPTBot, ClaudeBot and PerplexityBot do not click, so a panel whose contents
 //    arrive on interaction is a panel they never see
@@ -104,6 +104,12 @@ export function MegaMenu({ slug }: { slug: FullSlug }) {
                             <li>
                               <a href={href}>
                                 <span class="hmi-nav-childlabel">{child.label}</span>
+                                {child.count ? (
+                                  <span class="hmi-nav-count">
+                                    {child.count.toLocaleString("en-US")}
+                                    <span class="hmi-sr-only"> pages</span>
+                                  </span>
+                                ) : null}
                               </a>
                             </li>
                           )

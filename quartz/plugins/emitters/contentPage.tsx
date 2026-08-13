@@ -7,7 +7,7 @@ import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot } from "../../util/path"
 import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
-import { Content, ReadinessPage } from "../../components"
+import { Content } from "../../components"
 import { styleText } from "util"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
@@ -53,7 +53,6 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
     ...userOpts,
   }
 
-  const readinessPage = ReadinessPage()
   const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } = opts
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
@@ -67,7 +66,6 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         Body,
         ...header,
         ...beforeBody,
-        readinessPage,
         pageBody,
         ...afterBody,
         ...left,
@@ -87,10 +85,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
 
         // only process home page, non-tag pages, and non-index pages
         if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
-        const pageOpts = file.data.slug === "readiness"
-          ? { ...opts, pageBody: readinessPage }
-          : opts
-        yield processContent(ctx, tree, file.data, allFiles, pageOpts, resources)
+        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
       }
 
       if (!containsIndex) {
@@ -119,10 +114,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         if (!changedSlugs.has(slug)) continue
         if (slug.endsWith("/index") || slug.startsWith("tags/")) continue
 
-        const pageOpts = file.data.slug === "readiness"
-          ? { ...opts, pageBody: readinessPage }
-          : opts
-        yield processContent(ctx, tree, file.data, allFiles, pageOpts, resources)
+        yield processContent(ctx, tree, file.data, allFiles, opts, resources)
       }
     },
   }

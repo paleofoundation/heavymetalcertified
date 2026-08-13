@@ -1,118 +1,257 @@
 ---
-title: Program Structure
+title: Program structure
 type: program
 audience: [regulator, brand-legal, retailer-compliance, certifier]
-description: "How product scope, the eight-metal ten-analyte panel, standards, testing, decisions, statuses, remediation, surveillance, mark rights, and change control fit together."
+description: "How a limit is set, how a product is tested against it, and what happens when a lot fails. The rules are published in advance so that neither the program nor a brand can decide them after the result is known."
 snapshot:
   - { k: "Priority metals", v: "8" }
   - { k: "Analytes tested", v: "10" }
   - { k: "Certification statuses", v: "5" }
-  - { k: "Baseline lots", v: "3 minimum" }
+  - { k: "Baseline lots required", v: "3" }
 connections:
-  - { label: "Standards register", href: "/standards" }
-  - { label: "Program Manual", href: "/manuals" }
-  - { label: "What if a product does not pass?", href: "/what-if-we-dont-pass" }
-  - { label: "Private Readiness and remediation", href: "/program/remediation" }
-  - { label: "Standard stability", href: "/standard-stability" }
+  - { label: "The subcategory standards register", href: "/standards" }
+  - { label: "Program Manual, 2026 Edition", href: "/manuals" }
+  - { label: "Verify a certificate", href: "/verify" }
+  - { label: "Institute of Contaminant Standards", href: "https://contaminantstandards.com" }
 rail_box:
-  title: "The decision is product-specific"
-  body: "A result, status, certificate, and mark authorization attach to the named product and form—not the whole brand."
-  cta_label: "Check readiness first"
-  cta_href: "/readiness"
+  title: "Apply"
+  body: "Fifteen subcategory standards are locked across eight categories, with more in development."
+  cta_label: "Start an application"
+  cta_href: "/apply"
 ---
 
-Heavy Metal Tested & Certified is a controlled sequence: define the product, identify the governing rule, review existing evidence, test the genuine gap, make a product-specific decision, control the claim, and maintain the record.
+<section id="tiers" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Analyte tiering</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Eight priority metals, tested as ten analytes because arsenic and mercury are speciated and chromium is speciated on trigger. Each metal is assigned to a tier by its toxicological profile, and the tier determines whether any exceedance can ever be tolerated.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
+    <div style="background:#fffdfb;padding:19px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
+        <span style="font-family:Lora,serif;font-size:20px;color:#2b1f1f">Tier 1</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Pb &middot; Cd &middot; iAs &middot; MeHg</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px">Carcinogenic with no established safe threshold, neurotoxic with no established safe threshold, or bioaccumulative with long biological half-lives in children. Any confirmed result above 100% of the limit escalates immediately.</p>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Variance available</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none</span></div>
+    </div>
+    <div style="background:#fffdfb;padding:19px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
+        <span style="font-family:Lora,serif;font-size:20px;color:#2b1f1f">Tier 2</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Ni &middot; Sn &middot; Al &middot; Cr</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px">Established tolerable daily intakes, shorter biological half-lives, or primarily acute rather than chronic toxicity. Controllable through sourcing and process.</p>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Variance available</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">to 150%</span></div>
+    </div>
+  </div>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Speciation upgrades chromium to Tier&nbsp;1 treatment when a credible hexavalent pathway exists. Cr(III) is an essential nutrient and is assumed in food; Cr(VI) is an IARC Group&nbsp;1 carcinogen by ingestion.</p>
+</section>
 
-## Product scope comes first
+<section id="calibration" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How a limit is set</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The default limit for any analyte is the strictest maximum level set by a credible government regulator &mdash; the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada &mdash; converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it. The percentile machinery below runs only where the program sets a number itself &mdash; the four Tier&nbsp;1 toxics, floored against the government maximum so the published value is the stricter of the two, and the cells no government regulates.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">For those occurrence-set cells, subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other &mdash; rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P97</span>
+        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Clean subcategory</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The lower-burden form within a pair &mdash; non-rice cereal, cow-milk formula, above-ground vegetables. Where the program sets this cell from occurrence rather than a government limit, the limit sits at the 97th percentile of the pooled distribution.</p>
+    </div>
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P45</span>
+        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Dirty subcategory</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The structurally higher-burden form &mdash; rice cereal, soy formula, root vegetables, fish-containing. A far tighter percentile, because the point is to separate the better operators within a hard category rather than bless the category.</p>
+    </div>
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P97</span>
+        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Independent row</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">A subcategory with no within-pair partner defaults to P97.</p>
+    </div>
+  </div>
+  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The percentile is a calibration choice, disclosed as one. A brand certifies a row of ten analytes at once, so per-analyte limits set at a raw P90 would produce a joint pass rate near 35%. For the occurrence-set cells only &mdash; the Tier-1 toxics floored against the government maximum, and the cells no government regulates &mdash; P97 and P45 are the values that deliver the program&rsquo;s stated row-level outcomes: roughly 90% of clean-subcategory brands and 40% of dirty-subcategory brands pass, confirmed at 94% and 42% against FDA per-sample lot data. A subcategory whose every published limit binds on a government maximum has no percentile-set cell, and this calibration does not touch it &mdash; infant formula powder is one, with all eight of its published values set by government lookup.</p>
+  </div>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:20px 22px;margin-top:16px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:10px">Why we publish the pass rate</div>
+    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0 0 14px;max-width:74ch">We are not aware of another certifier that publishes this number, and disclosing it invites an obvious reading: that the threshold was set to a commercial outcome rather than a health one. The reading is worth answering directly, because the alternative &mdash; not saying it &mdash; does not make the calibration disappear. It only makes it undiscoverable.</p>
+    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0 0 14px;max-width:74ch">Every percentile-based standard in food safety embeds a pass rate. Codex maximum levels, EU regulation 2023/915 and FDA action levels are all set against achievability, using occurrence data and explicit statements about what industry can meet. The choice is never whether a pass rate exists; it is whether the body setting the limit tells you what it is.</p>
+    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0;max-width:74ch">The health-based floor is separate and binds first: no published value ever exceeds the lowest applicable regulatory ceiling in that basis. The calibration operates only in the space beneath that ceiling, where the literature alone does not determine a single number. Where the ceiling binds, the rationale tag reads <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9f2727">regulatory-alignment</span> and where an occurrence pool exists beneath a binding ceiling the pooled value is shown so the gap is visible. On infant formula powder no cell is occurrence-set: every published value binds directly on a government maximum &mdash; lead on the EU&rsquo;s 20 ppb.</p>
+  </div>
+</section>
 
-The program does not certify an abstract brand or a broad category name. Scope identifies the product, form, native basis, intended consumer, formula or material split, production facilities, markets, and governing standard edition before formal samples are accepted.
+<section id="basis" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Native basis</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Every standard is published in the form the product is actually sold in: powder as placed on market, ready-to-feed as consumed, dry cereal as sold, pur&eacute;e as consumed. A brand ships and tests in one form, and the mark matches that form.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Sources reporting in another basis are converted inward during pooling, using documented factors &mdash; never the reverse. Where a cross-basis equivalent is shown next to a published value it is a reading convenience for audiences working in other units, not a second standard a brand may choose between.</p>
+</section>
 
-Powder, ready-to-feed, dry-as-sold, as-consumed, and contact-product migration bases are not interchangeable. A certificate and mark authorization travel with one defined scope.
+<section id="gates" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Publication gates</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A per-analyte value publishes only when it clears every gate below. A cell that fails any one of them stays unpublished rather than shipping with a caveat.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
+    <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 01</span>
+        <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Sufficient pool</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">For a cell the program sets from occurrence &mdash; the Tier&nbsp;1 toxics and the analytes no government regulates &mdash; enough contributing sources for the pooled distribution to mean something, with no single survey exceeding 50% relative share.</p>
+    </div>
+    <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 02</span>
+        <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Native basis resolved</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Every contributing source converted into the row&rsquo;s native basis using a documented factor, with the conversion recorded.</p>
+    </div>
+    <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 03</span>
+        <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Regulatory ceiling loaded</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The strictest applicable government maximum identified and expressed in the row&rsquo;s basis. For most analytes it is the standard; for a Tier&nbsp;1 toxic it is the floor the occurrence value is capped against.</p>
+    </div>
+    <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 04</span>
+        <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Analytical feasibility</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The value must be measurable. Where the limit of quantitation binds above the pooled value, the limit is feasibility-driven and says so.</p>
+    </div>
+    <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:7px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">Gate 05</span>
+        <span style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f">Rationale tagged</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Exactly one of literature-baseline, regulatory-alignment, feasibility-driven or precautionary. An untagged value does not publish.</p>
+    </div>
+  </div>
+  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Gate names not quoted verbatim</div>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">These are the program&rsquo;s stated publication conditions, drawn from the manual&rsquo;s methodology sections. The manual refers to &ldquo;publication gates&rdquo; without a single numbered list, so the names here are descriptive rather than quoted. Confirm against the Governance Policy before this ships.</p>
+  </div>
+</section>
 
-## Eight priority metals, ten analyte determinations
+<section id="statuses" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The five statuses</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Defined in Program Manual Part 2.3. A status attaches to a product, not to a brand, and it is visible on the certificate.</p>
+  <div style="overflow-x:auto">
+  <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:42rem;border-collapse:collapse">
+    <thead><tr style="background:#9f2727;color:#fff">
+      <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Status</th>
+      <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Meaning</th>
+      <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Mark usable</th>
+      <th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Condition</th>
+    </tr></thead>
+    <tbody>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">A</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Certified (Full Compliance)</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">yes</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">At or below every value in the Master Limit Table, all ten analytes, native basis.</td>
+      </tr>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">B</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Certified (Transitional)</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">yes, disclosed</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">A Tier 2 metal up to 150% of limit, under Part 2.3 conditions, with a defined end date and corrective action.</td>
+      </tr>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">C</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Probation</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">suspended</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Confirmed Tier 1 exceedance, or transitional conditions unmet. Elevated surveillance applies.</td>
+      </tr>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">D</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Suspension</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Mark usage withdrawn pending remediation. Reinstatement requires a completed CAPA with verified effectiveness, a run of consecutive compliant lots set by the Program Operator, and restored data integrity &mdash; not a fresh baseline.</td>
+      </tr>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">E</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Revocation</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Certification terminated. Concealment of a known exceedance is grounds.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Transitional certification is available on Tier&nbsp;2 metals only, up to 150% of the applicable limit, under the conditions in Part 2.3. No transitional exceedance exists for a Tier&nbsp;1 metal at any margin.</p>
+</section>
 
-| Tier | Priority metals | Decision consequence |
-|---|---|---|
-| Tier 1 | Lead, cadmium, inorganic arsenic, mercury | No transitional variance. A confirmed exceedance above the applicable certification limit escalates under the status rules. |
-| Tier 2 | Nickel, aluminium, tin, chromium | A bounded transitional route may be available only under the published Status B conditions. |
+<section id="surveillance" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Lot surveillance</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Certification is continuous. Every SKU entering the program is tested across a minimum of three production lots to establish a baseline before any status is assigned at all &mdash; a single passing lot certifies nothing.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Baseline before any status</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">3 lots minimum</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status A</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">routine protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status B</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">elevated protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status C</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">probation protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Speciation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">on reflex trigger</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Chain of custody</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">documented per lot</span></div>
+  </div>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Surveillance intensity follows status: routine for A, elevated for B, probation protocol for C. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
+  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The Confidential Remediation Track exists so a brand that finds a problem is better off reporting it than concealing it. An item opened and kept on schedule is not published, not disclosed to retailers, and not reflected in the public register. A brand that conceals loses its certificate.</p>
+  </div>
+</section>
 
-Arsenic and mercury require species-aware control, and chromium requires speciation when a credible hexavalent pathway or reflex trigger exists. Total arsenic cannot substitute for inorganic arsenic, total mercury cannot substitute for methylmercury when the latter governs, and total chromium does not erase a required Cr(VI) determination.
+<section id="pathways" style="margin-bottom:52px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Two remediation pathways</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">When a lot falls short, a brand chooses how the correction is handled. Both routes require the same corrective action and the same re-testing; what differs is who sees it, and what the brand gets in return for that visibility.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
+    <div style="background:#fffdfb;padding:19px">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+        <span style="font-family:Lora,serif;font-size:20px;line-height:1.3;color:#2b1f1f">Confidential track</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">default</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 14px">The finding, the affected lots and the corrective action stay between the brand and the program while the item is open and on schedule. Nothing appears in the public register, nothing is disclosed to retailers, and the certificate is unaffected.</p>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:6px">What the brand gets</div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Visible in register</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">no</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Disclosed to retailers</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">no</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certificate held</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">yes</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Corrective action</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Re-testing</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
+    </div>
+    <div style="background:#fffdfb;padding:19px">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+        <span style="font-family:Lora,serif;font-size:20px;line-height:1.3;color:#2b1f1f">Public track</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">elective</span>
+      </div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 14px">The brand elects to publish the finding and its remediation on its own brand page. The record shows what was found, what was done and when it closed &mdash; a documented history of catching and fixing a problem rather than an unexplained gap.</p>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:6px">What the brand gets</div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Visible in register</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">yes, with outcome</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Citable by the brand</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">yes</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Retailer questionnaire</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">answers itself</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Corrective action</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Re-testing</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
+    </div>
+  </div>
+  <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:16px">
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Neither route is a way out of the corrective action. The choice is about disclosure, and it exists because a program that punished self-reporting would simply stop being told anything &mdash; which would make the mark worth less, not more.</p>
+  </div>
+  <a href="/program/remediation" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">The Confidential Remediation Track &rarr;</a>
+</section>
 
-The panel therefore covers eight priority metals through ten analyte determinations: lead, cadmium, total arsenic, inorganic arsenic, total mercury, methylmercury, nickel, aluminium, tin, and chromium with required Cr(VI) reflex control.
-
-## How limits are set
-
-Every standard states the product’s native basis, analyte species, units, method, governing edition, source rationale, and regulatory ceiling. Where a government maximum is the controlling rule, the page identifies it. Where occurrence evidence is used, the pooled method and sensitivity record govern rather than a percentile copied from one study.
-
-For paired product forms, the public names describe the pathway without stigmatizing the category:
-
-| Pathway | Calibration role | Public interpretation |
-|---|---|---|
-| Lower-Burden Category Pathway | Uses the upper tail of the better-controlled product-form distribution for an occurrence-set cell | Preserves access for products that already reflect stronger category control while excluding the adverse tail. |
-| Category Improvement Pathway | Uses a more selective point within a structurally higher-burden product-form distribution | Recognizes that the category is difficult while distinguishing operators that have materially improved control. |
-| Independent row | Uses the standard independent-row method when no defensible paired form exists | Avoids forcing an artificial pairing. |
-
-No final HMTc value may exceed the lowest applicable loaded regulatory ceiling expressed in the row’s native basis. Full methodology and cell-level rationale belong in the versioned standards and manuals.
-
-## Publication and commercial readiness are different gates
-
-A technical page may exist before a category can accept a formal certification submission. Commercial opening additionally requires complete analyte limits, methods, qualified laboratory capacity, sampling, decision rules, agreements, cost treatment, data notice, mark controls, surveillance, verification, and governance.
-
-The [Category Readiness map](/category-readiness) is authoritative for commercial availability. A technical standards page is not an invitation to submit samples or pay a certification fee.
-
-## Baseline and evidence reuse
-
-Formal certification normally requires at least three eligible production lots before a status is assigned. A single favorable lot certifies nothing.
-
-Qualified existing laboratory evidence can receive prior-data credit only after record-level review of laboratory accreditation and scope, analyte and species, method, sensitivity, matrix, lot identity, recency, custody, reporting basis, uncertainty, and completeness. Evidence useful for planning may still be insufficient for a certification decision.
-
-## The five product statuses
-
-| Status | Meaning | Mark use |
-|---|---|---|
-| A — Certified, Full | Every governing analyte determination is at or below the applicable certification limit under the decision rule. | Permitted within approved product scope. |
-| B — Certified, Transitional | Only eligible Tier 2 conditions fall within the bounded transitional range; no Tier 1 exceedance or hard stop exists; required corrective action and end date apply. | Permitted only with required transitional disclosure and current authorization. |
-| C — Probation | A confirmed nonconformity, repeated transitional condition, systemic control failure, or unmet corrective-action condition requires probation controls. | Not permitted on new production; lot release follows the governing rule. |
-| D — Suspension | A severe nonconformity, hard stop, or unresolved control failure suspends certification. | Not permitted. |
-| E — Revocation | Certification is terminated under the revocation rule. | Not permitted. |
-
-Status attaches to the product, not the brand. Borderline and confirmation rules are applied before a result is represented as final.
-
-## Pre-certification remediation and post-certification surveillance
-
-These are different systems and must not be blended.
-
-| Situation | Correct route | Certificate consequence |
-|---|---|---|
-| A product has not been certified and readiness or baseline evidence shows a gap | Private Readiness or, when the manual conditions are met, Confidential Remediation | No certificate exists and no mark may be used. |
-| A certified product produces a later warning, nonconformity, or change | Surveillance, confirmation, status control and CAPA | Consequences follow the published status, release, mark, verification, legal, and appeal rules. |
-
-The current Confidential Remediation Track is a pre-certification entry and support pathway only. It does not create a hidden certified status and does not promise to preserve a certificate after a later surveillance event.
-
-Confidential business treatment never delays a recall, overrides a reporting duty, defeats legal process, or prevents a regulator request.
-
-## Surveillance and record control
-
-After certification, the program maintains product and lot identity, sampling and custody, laboratory evidence, method and sensitivity, status, trend, change control, CAPA, mark authorization, verification, appeal, renewal, and transition history.
-
-Surveillance intensity follows product status and risk. A favorable later lot does not erase an earlier result; each event remains tied to its date, standard edition, lot, and decision.
-
-## Mark and public verification
-
-Only an authorized Status A or B product may display the mark, and the claim must stay within the product, form, analyte panel, standard, edition, status, and period shown by the certificate.
-
-Optional directory visibility is not the same as authoritative verification. A certificate or product code used with the mark must resolve to the product-specific verification record when lookup is active.
-
-## Fees, decisions, corrections, and appeals
-
-A fee pays for evaluation and program services. It does not purchase an outcome, change a threshold, convert an incomplete panel into a certificate, or prevent a required status action.
-
-Decision records preserve the evidence, rule, reviewer action, rationale, correction history, and appeal. Public errors are corrected publicly when they affect a public record. Appeals follow the published route and do not silently rewrite the original audit history.
-
-## Standard change control
-
-The edition named in the decision and certificate governs that decision. A later edition does not silently rewrite a past lot. Substantive changes are versioned, explained, and carried through a published transition; limits tighten as evidence and analytical feasibility support improvement rather than loosening for convenience.
-
-[Read the complete stability and change-control rule](/standard-stability).
-
-[Review the consequence matrix before formal testing](/what-if-we-dont-pass).
+<section id="governance">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Governance</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The program is operated and governed by the Institute of Contaminant Standards (ICS), which sets how limits are established without testing products or selling marks itself.</p>
+  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">The Institute of Contaminant Standards</div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Governs how limits are set. It does not test products, sell marks, or publish threshold values or brand-level data itself &mdash; that separation is what lets it arbitrate.</p>
+    </div>
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Technical Committee</div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Toxicology, food-safety and analytical-chemistry experts with documented independence from licensees. Reviews methodology and recommends metal reclassification between tiers. It reports recommendations; it does not render binding decisions.</p>
+    </div>
+    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
+      <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">Independent Appeals Committee</div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Holds binding review authority on contested certification decisions. The Program Operator retains final authority on classification and methodology, subject to that review.</p>
+    </div>
+  </div>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit run through the Standards Ratchet Mechanism, which requires a stated trigger and caps how far a limit may move in a single step. Limits tighten as evidence and analytical feasibility improve.</p>
+</section>
