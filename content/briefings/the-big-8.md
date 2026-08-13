@@ -89,6 +89,18 @@ Two properties of the panel are worth stating precisely. First, the four origina
 
 On coverage the defensible claim is narrow and, within its scope, strong. As of this writing, and on a documented competitive scan, HMTc is the only food certification that sets a published limit for all eight metals; the nearest programs stop at the four or, in the case of NSF/ANSI 173, at five with hexavalent chromium added, and the pharmaceutical elemental-impurity standard ICH Q3D reaches seven but excludes aluminium and is a drug standard rather than a food seal [14][15]. Aluminium is the universal gap: no other food or supplement certification sets a limit for it. What HMTc does not claim is to sit below every government on every metal. The program's method is to adopt the strictest existing limit set by a credible government regulator for each product-analyte pair, converted to the product's native basis, and to state where its own threshold is tighter and why. The comprehensiveness claim is about how many metals are covered, not about being lower than the law everywhere.
 
+The scan, in one view:
+
+| Standard | What it is | Metals with a published limit |
+|---|---|---|
+| Heavy Metal Tested &amp; Certified | Food certification | All eight — Pb, As, Cd, Hg, Cr, Ni, Sn, Al |
+| NSF/ANSI 173 | Dietary-supplement standard | Five — the original four plus hexavalent chromium [14] |
+| ICH Q3D · USP ⟨232⟩ | Pharmaceutical elemental-impurity standard | Seven of the eight — but not aluminium, and a drug standard rather than a food seal [15] |
+| Voluntary food and purity marks | Retail and third-party food seals | The original four — lead, arsenic, cadmium, mercury |
+| USDA Organic · Non-GMO Project | Production and genetic scope | None — silent on metals |
+
+Aluminium is the line every one of them stops short of; nickel and tin fall only inside a drug standard. Among food certifications, the panel of eight is HMTc's alone.
+
 ## Closing
 
 The 2021 report told the industry which four metals to test. It did not tell the industry to stop at four, and the regulators who read it did not. A standard that still ends where that one document ended is not cautious; it is simply out of date with the law it invokes. Certifying against eight metals is not a claim to have gone beyond the science. It is the more modest and more defensible thing: keeping the certificate level with where regulators already stand, so that the brand displaying it is not the one left explaining the difference.
