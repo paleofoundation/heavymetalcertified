@@ -7,10 +7,10 @@ orcid: 0000-0002-2348-7259
 updated: 2026-06-18
 description: "Analytical briefings on what the HMTc standard changes, and for whom. Each is a citable technical report with a named author, a publisher of record, and a downloadable edition — written for the people who decide whether a certificate is worth its price."
 snapshot:
-  - { k: "Briefings in series", v: "16" }
+  - { k: "Briefings in series", v: "17" }
   - { k: "Peer-track preprints", v: "3" }
   - { k: "Deposited with a DOI", v: "3" }
-  - { k: "Date confirmed", v: "16 of 16" }
+  - { k: "Date confirmed", v: "17 of 17" }
 connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "Program Manuals", href: "/manuals" }
@@ -20,7 +20,7 @@ connections:
 
 <section id="series" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The series</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Sixteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Seventeen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/briefings/hmtc-primer" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Primer</span>
@@ -72,6 +72,20 @@ connections:
         <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Gray-market peptides, SARMs, and steroids are made outside every framework that controls elemental impurities in medicines. The case for testing, with or without certification.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Harm reduction</span>
+        </span>
+      </span>
+      <span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">August 2026</span>
+      </span>
+    </a>
+    <a href="/briefings/no-limit-is-not-no-standard" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Cat 26</span>
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">No Limit Is Not No Standard</span>
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">No government limits the metals in peptides, SARMs, or research chemicals. Why an all-control standard &mdash; mandatory testing, no invented number &mdash; is the right response, and why the vacuum is the hazard.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Standard-setting</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Governance</span>
         </span>
       </span>
       <span>
