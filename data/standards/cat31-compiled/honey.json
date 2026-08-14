@@ -21,6 +21,10 @@
             "value": 100,
             "id": "il_fcs2016_pb_23_honey_100"
           },
+          "HK": {
+            "value": 100,
+            "id": "hk_cap132v_pb_sugar-based-candies-and-honey_100"
+          },
           "MERCOSUR": {
             "value": 300,
             "id": "mercosur_gmc12_2011_honey_pb_300"
@@ -56,6 +60,10 @@
           "PY": {
             "value": 100,
             "id": "py_decreto1335_2019_honey_cd_100"
+          },
+          "HK": {
+            "value": 600,
+            "id": "hk_cap132v_cd_morels-morchella-importuna-shingled-hedgehogs-sarcodon_600"
           },
           "VN": {
             "value": 1000,

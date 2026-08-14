@@ -112,13 +112,14 @@
         "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
       },
       "Ni": {
-        "type": "control",
-        "value": null,
-        "control": "No credible sovereign government sets a nickel maximum level for edible fungi in any jurisdiction; the EU 2024/1987 nickel regulation enumerates vegetables, legumes, nuts, and cereals but deliberately does not list fungi. Under the government-limit-only method HMTc publishes no standalone numeric nickel limit for this matrix; nickel is monitored on the mandatory total-element panel.",
-        "reference_method": "Total-element screen by ICP-MS on every lot; investigate any elevated nickel result against grower substrate and provenance.",
-        "bounded_by": null,
-        "regulatory_basis": null,
-        "jurisdictions_checked": null
+        "type": "read_across",
+        "value": 400,
+        "value_exact": 400,
+        "source_id": "eu2024_ni_fruiting_veg_400",
+        "source_jurisdiction": "EU",
+        "label": "Surveillance read-across (not a fungi government limit): no credible sovereign sets a nickel maximum level for edible fungi in any jurisdiction — the EU 2024/1987 nickel regulation enumerates tree nuts, vegetables (incl. herbs/seaweed), legumes, oilseeds, cocoa, baby food, and juices but deliberately does not list fungi. HMTc nonetheless publishes a documented nickel surveillance ceiling by disclosed read-across from the nearest applicable sovereign value, the EU 2024/1987 fruiting-vegetable nickel ML (400 ug/kg, wet weight), rather than leaving nickel with no numeric ceiling. This is a surveillance value on the honest read-across basis, not a claimed sovereign fungi limit.",
+        "basis_note": "face value (nearest sovereign value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Sn": {
         "type": "not_material",

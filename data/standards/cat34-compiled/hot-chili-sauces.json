@@ -6,20 +6,25 @@
   "native_basis": "as_consumed",
   "native_basis_label": "sauce as placed on the market (as-consumed liquid)",
   "canned": false,
-  "scope_note": "Covers hot sauces and chili sauces. Routed here (not Cat 32 Condiments) because their lead and chromium are chili-borne, the same lead-chromate adulteration platform as turmeric. Contaminant limits bind the finished-sauce (liquid, as-consumed) sovereign limits; total chromium and Cr-VI are adulteration screens. Soy sauce and fish sauce route to Cat 32.",
+  "scope_note": "Covers hot sauces and chili sauces. Routed here (not Cat 32 Condiments) because their lead and chromium are chili-borne, the same lead-chromate adulteration platform as turmeric. Classified as a compound condiment under China GB 2762-2022/2025, lead binds the GB 'condiments excluding spices' limit (1000) and inorganic arsenic binds the GB compound-condiment limit (100); total arsenic stays at the general savoury-sauce limit (1000) because GB's general-condiment total-As line excludes compound condiments. Total chromium and Cr-VI are adulteration screens. Soy sauce and fish sauce route to Cat 32.",
   "cells": {
     "Pb": {
       "analyte": "Pb",
       "provenance": "regulatory-alignment",
       "cell_kind": "gov",
-      "value": 2000,
-      "value_exact": 2000,
-      "binding_jurisdiction": "SG",
-      "binding_id": "sg_foodregs_2026_tomato_ketchup_sauces_pb_2000",
-      "basis": "sauce as consumed (liquid), general savoury-sauce category (Singapore 'tomato ketchup and other sauces' / Vietnam 'sauce', both 2000). Lead in a hot/chili sauce is chili-borne (the same adulteration platform as turmeric). DOCUMENTED EXCLUSION: Colombia Res. 4506/2013 sets a stricter Pb 1000 for 'mango hot sauce and canned mangoes' (co_res4506_2013_pb_mango_hot_sauce_canned_1000) — that is a FRUIT-PRODUCT entry (a mango/fruit sauce bundled with canned mangoes; fruit-borne lead, canned-fruit basis), a different product class and contamination platform, so it does not govern a bottled chili/pepper sauce and is not adopted. This exclusion is a product-class judgement, not the mechanical canned-token filter.",
-      "binding_page": "regulations/singapore-food-regulations-heavy-metals-2026",
-      "binding_url": "",
+      "value": 1000,
+      "value_exact": 1000,
+      "binding_jurisdiction": "CN",
+      "binding_id": "china_gb2762_pb_condiments_excl_spices_1000",
+      "basis": "sauce as consumed (liquid). A chili/hot sauce is a compound condiment (semi-solid fu he tiao wei liao), which China GB 2762-2022/2025 caps under 'condiments excluding spices' at lead 1.0 mg/kg (1000 ug/kg) — the strictest sovereign reaching a bottled chili sauce and stricter than the general savoury-sauce sovereigns (Singapore 'tomato ketchup and other sauces' 2000 / Vietnam 'sauce' 2000), which are retained as concurring context. Lead in a hot/chili sauce is chili-borne (the same adulteration platform as turmeric). DOCUMENTED EXCLUSION: Colombia Res. 4506/2013 sets a Pb 1000 for 'mango hot sauce and canned mangoes' (co_res4506_2013_pb_mango_hot_sauce_canned_1000) — that is a FRUIT-PRODUCT entry (a mango/fruit sauce bundled with canned mangoes; fruit-borne lead, canned-fruit basis), a different product class and contamination platform, so it does not govern a bottled chili/pepper sauce and is not adopted (and no longer needed as a Pb-1000 justification now that the GB compound-condiment line binds directly). This exclusion is a product-class judgement, not the mechanical canned-token filter.",
+      "binding_page": "regulations/china-gb-2762-2022-contaminants",
+      "binding_url": "https://gain.fas.usda.gov/#/search",
       "concurring": [
+        {
+          "id": "china_gb2762_pb_condiments_excl_spices_1000",
+          "value": 1000,
+          "jurisdiction": "CN"
+        },
         {
           "id": "sg_foodregs_2026_tomato_ketchup_sauces_pb_2000",
           "value": 2000,
@@ -80,15 +85,23 @@
     },
     "iAs": {
       "analyte": "iAs",
-      "type": "not_material",
-      "provenance": "not-material",
-      "value": null,
-      "basis_class": "speciation-bounded",
-      "bounded_by": "tAs",
-      "rationale": "No inorganic-arsenic maximum level for sauces; the total-arsenic sauce limit (1000 ug/kg) bounds the inorganic fraction (iAs <= tAs).",
-      "reference_method": "Total-arsenic screen; reflex speciation on elevation.",
-      "regulatory_basis": "Bounded by the total-As sauce standard (1000); no inorganic-As sauce ML anywhere",
-      "jurisdictions_checked": "Singapore; Vietnam; EU; FDA"
+      "provenance": "regulatory-alignment",
+      "cell_kind": "gov",
+      "value": 100,
+      "value_exact": 100,
+      "binding_jurisdiction": "CN",
+      "binding_id": "china_gb2762_ias_compound_condiment_100",
+      "basis": "sauce as consumed (liquid); inorganic arsenic. A chili/hot sauce is a compound condiment (semi-solid fu he tiao wei liao); China GB 2762-2022/2025 sets a compound-condiment inorganic-arsenic limit of 0.1 mg/kg (100 ug/kg), which binds the sauce directly (species inorganic As matches; as-sold mass ~ as-consumed mass for a non-reconstituted bottled sauce, no basis conflation). Consistent with the bouillon-seasoning-blends iAs treatment. This compound-condiment classification is also why no GB total-As limit reaches the sauce (GB's general-condiment total-As 0.5 line explicitly excludes compound condiments), so the tAs cell correctly stays 1000. Supersedes the earlier not-material verdict, which the 2026-08-14 adversarial audit confirmed FALSE.",
+      "binding_page": "regulations/china-gb-2762-2022-contaminants",
+      "binding_url": "https://gain.fas.usda.gov/#/search",
+      "concurring": [
+        {
+          "id": "china_gb2762_ias_compound_condiment_100",
+          "value": 100,
+          "jurisdiction": "CN"
+        }
+      ],
+      "stricter_unselected": []
     },
     "tHg": {
       "analyte": "tHg",

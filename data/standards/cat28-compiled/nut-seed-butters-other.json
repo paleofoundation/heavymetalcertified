@@ -9,12 +9,22 @@
     "both": {
       "Pb": {
         "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_pb_6_oilseeds_and_olives_1000",
+        "value": 200,
+        "value_exact": 200,
+        "binding_jurisdiction": "CN",
+        "binding_id": "china_gb2762_pb_nuts_and_seeds_200",
         "basis_note": "face value",
         "per_country": {
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "china_gb2762_pb_nuts_and_seeds_200"
+          },
+          "BR": {
+            "value": 800,
+            "converted": true,
+            "id": "br_in160_2022_pb_tree_nuts_800"
+          },
           "IL": {
             "value": 1000,
             "converted": true,
@@ -33,24 +43,6 @@
             "value": 100,
             "jurisdiction": "IN",
             "scope": "Vegetable oils, edible (oils of arachis, babasu, coconut, co"
-          },
-          {
-            "id": "py_decreto1335_2019_pulses_except_soybean_pb_200",
-            "value": 200,
-            "jurisdiction": "PY",
-            "scope": "pulses, dried legume seeds, except soybean"
-          },
-          {
-            "id": "mercosur_gmc12_2011_pulses_except_soybean_pb_200",
-            "value": 200,
-            "jurisdiction": "MERCOSUR",
-            "scope": "pulses, dried legume seeds, except soybean"
-          },
-          {
-            "id": "eu2023_pb_spice_seed_900",
-            "value": 900,
-            "jurisdiction": "EU",
-            "scope": "seed spices"
           }
         ]
       },
@@ -66,12 +58,17 @@
       },
       "tAs": {
         "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_tas_5_3_oilseeds_1000",
+        "value": 800,
+        "value_exact": 800,
+        "binding_jurisdiction": "BR",
+        "binding_id": "br_in160_2022_tas_tree_nuts_800",
         "basis_note": "face value",
         "per_country": {
+          "BR": {
+            "value": 800,
+            "converted": true,
+            "id": "br_in160_2022_tas_tree_nuts_800"
+          },
           "IL": {
             "value": 1000,
             "converted": true,

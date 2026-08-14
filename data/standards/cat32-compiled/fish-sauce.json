@@ -134,11 +134,11 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "control",
+        "provenance_tag": "control",
         "value": null,
-        "rationale": "No sovereign total-chromium ML exists for fish sauce; the only food chromium MLs in the register are dairy. Rebuttable and audited each build.",
-        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
+        "rationale": "A sovereign total-chromium context does exist for the source commodity: Hong Kong Cap 132V sets total chromium at 1000 ug/kg for fish (hk_cap132v_crtotal_fish_1000), and fish sauce is a fermented marine (fish-derived) product, so the fish total-chromium ML is the nearest sovereign analog. Because a real source pathway exists, the cell is held under a reflex screen disclosed against the Hong Kong fish total-chromium ML (1000) rather than declared not-material; any total-chromium exceedance triggers Cr(VI) speciation.",
+        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation (EPA 3060A + EPA 6800 / EN 15192) on any total-Cr exceedance.",
         "audit": {
           "same_form": [],
           "other_form": []

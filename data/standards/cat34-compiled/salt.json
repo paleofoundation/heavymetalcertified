@@ -13,7 +13,7 @@
       "provenance": "regulatory-alignment",
       "cell_kind": "form_split",
       "basis": "food-grade salt as placed on the market (dry)",
-      "instrument": "EU Reg. 2023/915 — lead in salt, split refined (general food-grade) vs unrefined (fleur de sel, grey salt, manually harvested). The strictest sovereign salt-lead limit; Codex STAN 193 sets 2 mg/kg, so the EU refined value governs.",
+      "instrument": "EU Reg. 2023/915 splits salt lead refined (general food-grade, 1000) vs unrefined (fleur de sel, grey salt, manually harvested, 2000). China GB 2762-2022/2025 places edible salt UNDER condiments (excluding spices) with a single lead limit of 1.0 mg/kg (1000 ug/kg) and NO refined/unrefined split (the former separate GB 2762-2017 salt-lead 2.0 line was dropped in the 2022 revision), so the GB condiment-excluding-spices line caps the unrefined form at 1000 as well. Certification applies 1000 to all edible salt.",
       "forms": [
         {
           "form": "refined / general food-grade salt (table salt)",
@@ -44,13 +44,18 @@
         },
         {
           "form": "unrefined salt (fleur de sel, grey salt, manually harvested sea salt)",
-          "value": 2000,
-          "value_exact": 2000,
-          "binding_jurisdiction": "EU",
-          "binding_id": "eu2023_pb_salt_unrefined_2000",
-          "binding_page": "regulations/eu2023-contaminants-maximum-levels",
-          "binding_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R0915",
+          "value": 1000,
+          "value_exact": 1000,
+          "binding_jurisdiction": "CN",
+          "binding_id": "china_gb2762_pb_condiments_excl_spices_1000",
+          "binding_page": "regulations/china-gb-2762-2022-contaminants",
+          "binding_url": "https://gain.fas.usda.gov/#/search",
           "concurring": [
+            {
+              "id": "china_gb2762_pb_condiments_excl_spices_1000",
+              "value": 1000,
+              "jurisdiction": "CN"
+            },
             {
               "id": "eu2023_pb_salt_unrefined_2000",
               "value": 2000,
@@ -61,15 +66,7 @@
         }
       ],
       "strictest_form_value": 1000,
-      "stricter_unselected": [
-        {
-          "id": "hk_cap132v_pb_salt-food-grade-other-than-salt-from-marshes-food-grade_1000",
-          "value": 1000,
-          "jurisdiction": "HK",
-          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
-          "scope": "Salt, food grade, other than salt from marshes, food grade"
-        }
-      ],
+      "stricter_unselected": [],
       "value": null
     },
     "Cd": {
