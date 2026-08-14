@@ -82,3 +82,25 @@ briefing PDFs (`hmtc-primer`, `after-palmquist`, `defense-counsel-briefing`) wer
 regenerated — that needs `npm i -D @react-pdf/renderer` + `build-briefing-pdf.mjs`, which
 is risky here (cert `node_modules` is symlinked to the index's, and the repo has parallel
 WIP). Regenerate those three PDFs in a clean pass so the downloads match the pages.
+
+## 2026-08-14 — Cat 26 tin (Sn) Q3D PDE anchor corrupted in all 5 compiled records (FIXED)
+
+Surfaced by the Cat 26 number-derivation analysis (see
+`docs/methodology/2026-08-14-cat26-number-derivation.md`). The tin toxicological
+escalation anchor `tox_anchor.pde_ug_day` in `data/standards/cat26-compiled/*.json` was
+wrong in every file — `6400` (parenteral ×3), `64000` (`sarms-oral`), `64`
+(`peptides-nasal-sublingual`) — none matching any ICH Q3D(R2) value. Correct route values
+are parenteral **600**, oral **6000**, inhalation/mucosal **60** µg/day (the class-3
+10× oral:parenteral:inhalation cascade).
+
+Why no lint caught it: the anchor is an **internal escalation flag** — tin renders as
+`control`, so no product-content number is published and no page output depends on it.
+The corrupt value silently made the tin investigation trigger ~10× too lenient (implied
+Sn intake compared against 6400/64000 instead of 600/6000). Every other Cat 26 anchor
+verified correct against Q3D(R2) for its route; `Cd`=2 mucosal and `Cr-VI`=3 are
+deliberate conservative `min()` choices, not errors.
+
+**Fixed** in a dedicated commit (route-appropriate values, cert-side only). **Still open:**
+the identical corruption exists in the `heavy-metal-index` compiled source (the one-way
+index→cert copy origin, currently on the `codex/methodology-sync` dead-lane) and should be
+reconciled there separately so a future re-copy does not re-introduce it.
