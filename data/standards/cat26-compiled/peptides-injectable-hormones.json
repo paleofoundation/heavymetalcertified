@@ -160,7 +160,7 @@
       "tox_anchor": {
         "kind": "ICH-Q3D-PDE",
         "route": "parenteral",
-        "pde_ug_day": 6400,
+        "pde_ug_day": 600,
         "framework": "ICH Q3D / USP <232> permitted daily exposure",
         "ich_element": "Sn",
         "ich_class": "3",

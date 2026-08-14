@@ -160,7 +160,7 @@
       "tox_anchor": {
         "kind": "ICH-Q3D-PDE",
         "route": "mucosal (nasal / sublingual)",
-        "pde_ug_day": 64,
+        "pde_ug_day": 60,
         "framework": "ICH Q3D / USP <232> permitted daily exposure",
         "ich_element": "Sn",
         "ich_class": "3",
