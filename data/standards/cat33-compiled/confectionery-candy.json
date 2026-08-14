@@ -40,15 +40,11 @@
     },
     "Cd": {
       "analyte": "Cd",
-      "type": "not_material",
-      "provenance": "not-material",
+      "provenance": "control",
       "value": null,
-      "basis_class": "no-migration-pathway",
-      "bounded_by": null,
-      "rationale": "Sugar confectionery (hard candy, caramels, chews) has no cadmium source or migration route: there is no cocoa and no soil-uptake plant tissue at the confection level. The documented cadmium contamination platform for this category is cocoa (certified under the chocolate row, which carries the EU cocoa-solids cadmium form_split). The known imported/ethnic-candy adulteration hazard is lead (and to a lesser extent arsenic), not cadmium. Rebuttable: if a routed source reports cadmium measured in a non-cocoa confection, re-adjudicate.",
-      "reference_method": "Ingredient screen; cocoa-based confections route to the chocolate row.",
-      "regulatory_basis": "No candy cadmium ML in any jurisdiction; cadmium pathway is cocoa (routed to chocolate)",
-      "jurisdictions_checked": "EU 2023/915; Codex; FDA; MERCOSUR; Singapore; Paraguay"
+      "rationale": "No jurisdiction sets a cadmium maximum level for candy or confectionery (cadmium MLs exist only for cocoa/chocolate/cocoa-paste, routed to the chocolate row, and for fruiting vegetables). For plain sugar/gelatin/pectin confections there is no cadmium source or migration route, and lead is the dominant imported/ethnic-candy hazard. But this subcategory scopes in chili- and tamarind-containing ethnic sweets, and chili (Capsicum) and tamarind are soil-uptake plant tissues that accumulate cadmium from soil into the edible fruit/powder (peer-reviewed Capsicum Cd soil-to-fruit transfer: Environ Sci Pollut Res 2019 PMID 31728951; BMC Plant Biol 2023; Int J Phytoremediation 2025) — so a genuine cadmium source exists in a defining, in-scope ingredient. A categorical not-material claim would be false for exactly the products a plaintiff would cite, so cadmium is screened, not dismissed: a mandatory reflex Cd screen (ICP-MS) is triggered whenever the confection contains chili, spice, or tamarind plant tissue. No sovereign candy Cd number exists to align to, so there is no numeric ceiling. Plain sugar/gelatin/pectin confections with no plant-tissue ingredient carry no cadmium pathway; cocoa-based confections route to the chocolate row (EU cocoa-solids Cd form_split).",
+      "reference_method": "Reflex Cd screen (ICP-MS) on any confection containing chili, spice or tamarind plant tissue; ingredient screen otherwise; no sovereign candy Cd ML.",
+      "trigger": "mandatory Cd screen when the confection contains chili, spice or tamarind (or other soil-uptake plant-tissue) ingredients; cocoa-containing confections route to the chocolate row"
     },
     "tAs": {
       "analyte": "tAs",

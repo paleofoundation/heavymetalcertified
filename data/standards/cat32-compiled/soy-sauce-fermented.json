@@ -10,13 +10,17 @@
       "Pb": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 2000,
-        "value_exact": 2000,
-        "binding_jurisdiction": "SG",
-        "binding_id": "sg_foodregs_2026_tomato_ketchup_sauces_pb_2000",
-        "binding_scope": "tomato ketchup and other sauces",
-        "binding_instrument": "regulations/singapore-food-regulations-heavy-metals-2026",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "china_gb2762_pb_condiments_excl_spices_1000",
+        "binding_scope": "Condiments excluding spices (tiao wei pin, xiang xin liao lei chu wai); includes soy sauce, compound/blended condiments, and edible salt (GB 2762-2022 Table 1, Lead; Appendix A.1)",
+        "binding_instrument": "regulations/china-gb-2762-2022-contaminants",
         "per_country": {
+          "CN": {
+            "value": 1000,
+            "id": "china_gb2762_pb_condiments_excl_spices_1000"
+          },
           "SG": {
             "value": 2000,
             "id": "sg_foodregs_2026_tomato_ketchup_sauces_pb_2000"
@@ -34,13 +38,17 @@
       "Cd": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "VN",
-        "binding_id": "vn_qcvn8_2_2011_cd_sauce_1000",
-        "binding_scope": "Sauce",
-        "binding_instrument": "regulations/vietnam-qcvn-8-2-2011-heavy-metal-food-limits",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "UY",
+        "binding_id": "uy_rbn_general_cd_liquid_foods_0_1mgkg",
+        "binding_scope": "liquid foods in general except categories with particular limits",
+        "binding_instrument": "regulations/uruguay-rbn-5th-edition-heavy-metal-limits",
         "per_country": {
+          "UY": {
+            "value": 100,
+            "id": "uy_rbn_general_cd_liquid_foods_0_1mgkg"
+          },
           "VN": {
             "value": 1000,
             "id": "vn_qcvn8_2_2011_cd_sauce_1000"
@@ -54,13 +62,17 @@
       "tAs": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "SG",
-        "binding_id": "sg_foodregs_2026_tomato_ketchup_sauces_tas_1000",
-        "binding_scope": "tomato ketchup and other sauces",
-        "binding_instrument": "regulations/singapore-food-regulations-heavy-metals-2026",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "UY",
+        "binding_id": "uy_rbn_general_tas_liquid_foods_0_1mgkg",
+        "binding_scope": "liquid foods in general except categories with particular limits",
+        "binding_instrument": "regulations/uruguay-rbn-5th-edition-heavy-metal-limits",
         "per_country": {
+          "UY": {
+            "value": 100,
+            "id": "uy_rbn_general_tas_liquid_foods_0_1mgkg"
+          },
           "SG": {
             "value": 1000,
             "id": "sg_foodregs_2026_tomato_ketchup_sauces_tas_1000"
@@ -129,11 +141,11 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "control",
+        "provenance_tag": "control",
         "value": null,
-        "rationale": "No sovereign total-chromium ML exists for soy sauce; the only food chromium MLs in the register are dairy. Rebuttable and audited each build.",
-        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
+        "rationale": "A sovereign total-chromium context does exist for the source commodity: Hong Kong Cap 132V sets total chromium at 1000 ug/kg for pulses (hk_cap132v_crtotal_pulses_1000), and soy sauce is a soybean (pulse/legume) ferment, so the pulse total-chromium ML is the nearest sovereign analog. An acidic, fermented product in prolonged stainless-steel contact also leaches chromium alongside nickel. Because a real source and migration pathway exists, the cell is held under a reflex screen disclosed against the Hong Kong pulses total-chromium ML (1000) — matching the sibling vinegar chromium control — rather than declared not-material; any total-chromium exceedance triggers Cr(VI) speciation.",
+        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation (EPA 3060A + EPA 6800 / EN 15192) on any total-Cr exceedance.",
         "audit": {
           "same_form": [],
           "other_form": []
@@ -183,7 +195,7 @@
     "ratchet"
   ],
   "version": "v1.0 (2026-08-13, initial compilation)",
-  "lineage_note": "Soy sauce is a fermented seasoning SAUCE, so the Vietnam QCVN 8-2 generic 'Sauce' MLs govern directly (Pb 2000, Cd 1000, tAs 1000, tHg 50) — corroborated by the Singapore 'tomato ketchup and other sauces' finished-sauce ML (Pb 2000 / tAs 1000). These are loose ceilings flagged for the occurrence ratchet; soy sauce has a documented lead-contamination history (e.g. Hong Kong recalls). Nickel is held under a soy-accumulation screen because soybeans concentrate nickel (EU regulates soybean nickel at 15000) and no sovereign sets a sauce nickel ML.",
+  "lineage_note": "Soy sauce is a fermented seasoning SAUCE. Lead is governed by China GB 2762 'Condiments excluding spices' (Pb 1000; china_gb2762_pb_condiments_excl_spices_1000), whose Appendix A.1 explicitly places soy sauce and compound/blended condiments under this line — stricter than the Vietnam QCVN 8-2 generic 'Sauce' Pb 2000. Cadmium and total arsenic are governed by the stricter Uruguay RBN general limit for LIQUID foods (Cd 100, tAs 100; uy_rbn_general_cd_liquid_foods_0_1mgkg / uy_rbn_general_tas_liquid_foods_0_1mgkg), a pourable soy sauce being a liquid food; these bind below the Vietnam 'Sauce' Cd 1000 / tAs 1000 and the Singapore 'tomato ketchup and other sauces' tAs 1000. Total mercury is the Vietnam 'Sauce' value (tHg 50). Soy sauce has a documented lead-contamination history (e.g. Hong Kong recalls), so the ratchet still applies. Nickel is held under a soy-accumulation screen because soybeans concentrate nickel (EU regulates soybean nickel at 15000) and no sovereign sets a sauce nickel ML. Total chromium is held under a reflex screen disclosed against the Hong Kong Cap 132V pulses total-chromium ML (1000), soy sauce being a pulse/legume ferment.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat32-config.json",
   "verify": {

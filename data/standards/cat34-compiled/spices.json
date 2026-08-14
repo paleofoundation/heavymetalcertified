@@ -119,7 +119,15 @@
         }
       ],
       "strictest_form_value": 600,
-      "stricter_unselected": [],
+      "stricter_unselected": [
+        {
+          "id": "china_gb2762_pb_spices_1500",
+          "value": 1500,
+          "jurisdiction": "CN",
+          "basis": "product as placed on market",
+          "scope": "Spices (xiang xin liao), except cinnamon, Sichuan pepper, and spice mixtures (GB 2762-2022 Table 1, Lead)"
+        }
+      ],
       "value": null
     },
     "Cd": {

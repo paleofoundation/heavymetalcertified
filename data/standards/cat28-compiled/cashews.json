@@ -8,14 +8,24 @@
   "variants": {
     "both": {
       "Pb": {
-        "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": "il_fcs2016_pb_6_oilseeds_and_olives_1000",
-        "source_jurisdiction": "IL",
-        "label": "read-across from Israel FCS-2016 oilseeds and olives Pb 1000 ug/kg (nearest sovereign nut/seed lead anchor; no tree-nut-specific Pb ML exists)",
-        "basis_note": "face value (nearest sovereign value; comparator vs any direct limit)",
-        "per_country": {}
+        "type": "gov",
+        "value": 200,
+        "value_exact": 200,
+        "binding_jurisdiction": "CN",
+        "binding_id": "china_gb2762_pb_nuts_and_seeds_200",
+        "basis_note": "face value",
+        "per_country": {
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "china_gb2762_pb_nuts_and_seeds_200"
+          },
+          "BR": {
+            "value": 800,
+            "converted": true,
+            "id": "br_in160_2022_pb_tree_nuts_800"
+          }
+        }
       },
       "iAs": {
         "type": "not_material",
@@ -28,14 +38,19 @@
         "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Israel FCS-2016; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Codex CXS 193; FDA; AU/NZ Sch 19; China GB 2762"
       },
       "tAs": {
-        "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": "il_fcs2016_tas_5_3_oilseeds_1000",
-        "source_jurisdiction": "IL",
-        "label": "read-across from Israel FCS-2016 oilseeds tAs 1000 ug/kg (nearest sovereign nut/seed total-arsenic anchor)",
-        "basis_note": "face value (nearest sovereign value; comparator vs any direct limit)",
-        "per_country": {}
+        "type": "gov",
+        "value": 800,
+        "value_exact": 800,
+        "binding_jurisdiction": "BR",
+        "binding_id": "br_in160_2022_tas_tree_nuts_800",
+        "basis_note": "face value",
+        "per_country": {
+          "BR": {
+            "value": 800,
+            "converted": true,
+            "id": "br_in160_2022_tas_tree_nuts_800"
+          }
+        }
       },
       "tHg": {
         "type": "read_across",

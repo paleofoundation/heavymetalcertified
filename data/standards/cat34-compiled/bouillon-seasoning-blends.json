@@ -6,19 +6,32 @@
   "native_basis": "as_sold",
   "native_basis_label": "dry seasoning blend as placed on the market (dry)",
   "canned": false,
-  "scope_note": "Covers bouillon/stock cubes and powdered seasoning blends (dry rubs, gravy and seasoning packets). No sovereign sets a blend-specific ML, so lead, cadmium, total arsenic and total mercury read across the nearest applicable sovereign scope — the spice-blend / curry-powder limits (curry powder is the archetypal, explicitly-regulated seasoning blend). Chromium is screened as a lead-chromate adulteration co-marker for chili/paprika-forward blends. Salt-dominant bouillon cubes additionally sit at or below the food-grade-salt lead ceiling.",
+  "scope_note": "Covers bouillon/stock cubes and powdered seasoning blends (dry rubs, gravy and seasoning packets). China GB 2762-2022/2025 classifies a bouillon cube / powdered seasoning blend as a compound condiment (Appendix A.1 lists solid bouillon and chicken essence/powder), so lead binds the GB 'condiments excluding spices' limit (1000) and inorganic arsenic binds the GB compound-condiment limit (100), both directly on-point. Cadmium, total arsenic and total mercury, for which GB sets no binding compound-condiment line, read across the nearest applicable sovereign scope — the spice-blend / curry-powder limits (curry powder is the archetypal, explicitly-regulated seasoning blend). Chromium is screened as a lead-chromate adulteration co-marker for chili/paprika-forward blends. Salt-dominant bouillon cubes additionally sit at or below the food-grade-salt lead ceiling.",
   "cells": {
     "Pb": {
       "analyte": "Pb",
-      "provenance": "read-across",
-      "value": 2000,
-      "value_exact": 2000,
-      "source_id": "vn_qcvn8_2_2011_pb_spices-including-curry-powder_2000",
-      "source_jurisdiction": "VN",
-      "source_scope": "Spices (including curry powder)",
-      "binding_page": "regulations/vietnam-qcvn-8-2-2011-heavy-metal-food-limits",
-      "binding_url": "",
-      "label": "no bouillon/seasoning-blend-specific ML exists; read across the nearest applicable sovereign — the spice-blend / curry-powder scope (Vietnam QCVN 8-2:2011 lead 2000 ug/kg; Singapore dried herbs and spices concurs at 2000). A seasoning blend is compositionally a spice blend (curry powder is the archetype)."
+      "provenance": "regulatory-alignment",
+      "cell_kind": "gov",
+      "value": 1000,
+      "value_exact": 1000,
+      "binding_jurisdiction": "CN",
+      "binding_id": "china_gb2762_pb_condiments_excl_spices_1000",
+      "basis": "dry seasoning blend as placed on the market (as-sold mass basis). A bouillon cube / powdered seasoning blend is a compound condiment (fu he tiao wei liao): China GB 2762-2022/2025 Appendix A.1 explicitly places solid bouillon (gu ti tang liao) and chicken essence/powder under compound condiments, which fall under 'condiments excluding spices' at lead 1.0 mg/kg (1000 ug/kg) — the strictest sovereign reaching this blend and directly on-point (species Pb, as-sold mass basis, no conflation). The looser spice-blend / curry-powder scope (Vietnam QCVN 8-2:2011 lead 2000) is retained as concurring context and is bounded by the GB condiment line.",
+      "binding_page": "regulations/china-gb-2762-2022-contaminants",
+      "binding_url": "https://gain.fas.usda.gov/#/search",
+      "concurring": [
+        {
+          "id": "china_gb2762_pb_condiments_excl_spices_1000",
+          "value": 1000,
+          "jurisdiction": "CN"
+        },
+        {
+          "id": "vn_qcvn8_2_2011_pb_spices-including-curry-powder_2000",
+          "value": 2000,
+          "jurisdiction": "VN"
+        }
+      ],
+      "stricter_unselected": []
     },
     "Cd": {
       "analyte": "Cd",
@@ -46,15 +59,23 @@
     },
     "iAs": {
       "analyte": "iAs",
-      "type": "not_material",
-      "provenance": "not-material",
-      "value": null,
-      "basis_class": "speciation-bounded",
-      "bounded_by": "tAs",
-      "rationale": "No inorganic-arsenic maximum level for seasoning blends; the total-arsenic curry-powder limit (1000 ug/kg) bounds the inorganic fraction.",
-      "reference_method": "Total-arsenic screen; reflex speciation on elevation.",
-      "regulatory_basis": "Bounded by the read-across total-As curry-powder standard (1000); no inorganic-As blend ML anywhere",
-      "jurisdictions_checked": "Singapore; Vietnam; EU; FDA"
+      "provenance": "regulatory-alignment",
+      "cell_kind": "gov",
+      "value": 100,
+      "value_exact": 100,
+      "binding_jurisdiction": "CN",
+      "binding_id": "china_gb2762_ias_compound_condiment_100",
+      "basis": "dry seasoning blend (as-sold mass basis); inorganic arsenic. China GB 2762-2022/2025 sets a compound-condiment (fu he tiao wei liao) inorganic-arsenic limit of 0.1 mg/kg (100 ug/kg); Appendix A.1 defines compound condiment to include solid bouillon (gu ti tang liao) and chicken essence/powder, so this limit binds a bouillon cube / seasoning blend directly. Species (inorganic As) and as-sold dry mass basis both match — no speciation or basis conflation. Supersedes the earlier not-material verdict ('no inorganic-As blend ML anywhere'), which the 2026-08-14 adversarial audit confirmed FALSE against the primary GB 2762 text.",
+      "binding_page": "regulations/china-gb-2762-2022-contaminants",
+      "binding_url": "https://gain.fas.usda.gov/#/search",
+      "concurring": [
+        {
+          "id": "china_gb2762_ias_compound_condiment_100",
+          "value": 100,
+          "jurisdiction": "CN"
+        }
+      ],
+      "stricter_unselected": []
     },
     "tHg": {
       "analyte": "tHg",

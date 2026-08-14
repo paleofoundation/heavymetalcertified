@@ -25,6 +25,10 @@
             "value": 500,
             "id": "py_decreto1335_2019_tomato_concentrates_pb_500"
           },
+          "CN": {
+            "value": 1000,
+            "id": "china_gb2762_pb_condiments_excl_spices_1000"
+          },
           "IN": {
             "value": 1500,
             "id": "in_fssai2016_pb_036_processed_tomato_concentrates_1500"
@@ -62,6 +66,12 @@
               "value": 50,
               "jurisdiction": "IL",
               "scope": "Fruiting vegetables (including tomato, cucumber, pepper, and similar vegetables)"
+            },
+            {
+              "id": "hk_cap132v_pb_tomatoes-preserved-by-heat-treatment-and-hermetically-s_50",
+              "value": 50,
+              "jurisdiction": "HK",
+              "scope": "Tomatoes, preserved by heat treatment and hermetically sealed"
             }
           ]
         }
@@ -69,13 +79,17 @@
       "Cd": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "VN",
-        "binding_id": "vn_qcvn8_2_2011_cd_sauce_1000",
-        "binding_scope": "Sauce",
-        "binding_instrument": "regulations/vietnam-qcvn-8-2-2011-heavy-metal-food-limits",
+        "value": 200,
+        "value_exact": 200,
+        "binding_jurisdiction": "UY",
+        "binding_id": "uy_rbn_general_cd_solid_foods_0_2mgkg",
+        "binding_scope": "solid foods in general except categories with particular limits",
+        "binding_instrument": "regulations/uruguay-rbn-5th-edition-heavy-metal-limits",
         "per_country": {
+          "UY": {
+            "value": 200,
+            "id": "uy_rbn_general_cd_solid_foods_0_2mgkg"
+          },
           "VN": {
             "value": 1000,
             "id": "vn_qcvn8_2_2011_cd_sauce_1000"
@@ -95,6 +109,18 @@
               "value": 50,
               "jurisdiction": "IN",
               "scope": "Fruiting vegetables other than cucurbits (excluding tomatoes and edible fungi)"
+            },
+            {
+              "id": "vn_qcvn8_2_2011_cd_fruit-vegetables-excluding-tomatoes-and-mushro_50",
+              "value": 50,
+              "jurisdiction": "VN",
+              "scope": "Fruit vegetables (excluding tomatoes and mushrooms)"
+            },
+            {
+              "id": "hk_cap132v_cd_fruiting-vegetables-other-than-cucurbits-and-tomatoes_50",
+              "value": 50,
+              "jurisdiction": "HK",
+              "scope": "Fruiting vegetables, other than Cucurbits and tomatoes"
             }
           ]
         }
@@ -124,6 +150,10 @@
           "VN": {
             "value": 1000,
             "id": "vn_qcvn8_2_2011_tas_sauce_1000"
+          },
+          "UY": {
+            "value": 1000,
+            "id": "uy_rbn_general_tas_solid_foods_1mgkg"
           }
         },
         "audit": {
@@ -190,11 +220,11 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "control",
+        "provenance_tag": "control",
         "value": null,
-        "rationale": "No sovereign total-chromium ML exists for tomato condiments; the only food chromium MLs in the register are dairy. Rebuttable and audited each build.",
-        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
+        "rationale": "A sovereign total-chromium context does exist for the source commodity: Hong Kong Cap 132V sets total chromium at 500 ug/kg for vegetables other than pulses (hk_cap132v_crtotal_vegetables-other-than-pulses_500), and tomato condiments are a fruiting-vegetable product, so the vegetable total-chromium ML is the nearest sovereign analog. Because a real source pathway exists, the cell is held under a reflex screen disclosed against the Hong Kong vegetables total-chromium ML (500) rather than declared not-material; any total-chromium exceedance triggers Cr(VI) speciation.",
+        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation (EPA 3060A + EPA 6800 / EN 15192) on any total-Cr exceedance.",
         "audit": {
           "same_form": [],
           "other_form": []
@@ -251,14 +281,14 @@
     "ratchet"
   ],
   "version": "v1.0 (2026-08-13, initial compilation)",
-  "lineage_note": "Ketchup and salsa are certified against the stricter tomato-CONCENTRATE lead and total-arsenic MLs (Pb/tAs 500, Paraguay/MERCOSUR) rather than the looser finished-ketchup (Singapore 2000) or generic-sauce (Vietnam 'Sauce' Pb 2000 / tAs 1000) MLs — a protective, government-cited choice; the finished-ketchup, generic-sauce, and canned/preserved whole-tomato MLs (Pb 50) are retained in the per-country audit trail as different product forms. Cadmium (1000) and total mercury (50) are governed by the Vietnam generic 'Sauce' category (no tomato-specific value exists — tomatoes are explicitly carved OUT of the fruiting-vegetable cadmium ML). Nickel reads across from the EU fruiting-vegetable Ni ML (400) because tomatoes are fruiting vegetables. Canned tomato condiments fall under the canned-food tin ML and are out of this bottled subcategory's scope.",
+  "lineage_note": "Ketchup and salsa are certified against the stricter tomato-CONCENTRATE lead and total-arsenic MLs (Pb/tAs 500, Paraguay/MERCOSUR) rather than the looser finished-ketchup (Singapore 2000) or generic-sauce (Vietnam 'Sauce' Pb 2000 / tAs 1000) MLs — a protective, government-cited choice; the finished-ketchup, generic-sauce, and canned/preserved whole-tomato MLs (Pb 50) are retained in the per-country audit trail as different product forms. Cadmium is governed by the stricter Uruguay RBN general limit for SOLID foods (Cd 200; uy_rbn_general_cd_solid_foods_0_2mgkg), a semisolid tomato condiment being a solid food; this binds below the Vietnam 'Sauce' Cd 1000, and no tomato-specific cadmium value exists (tomatoes are explicitly carved OUT of the fruiting-vegetable cadmium ML). Total mercury (50) is governed by the Vietnam generic 'Sauce' category. Nickel reads across from the EU fruiting-vegetable Ni ML (400) because tomatoes are fruiting vegetables. Total chromium is held under a reflex screen disclosed against the Hong Kong Cap 132V vegetables-other-than-pulses total-chromium ML (500), tomato being a fruiting vegetable. Canned tomato condiments fall under the canned-food tin ML and are out of this bottled subcategory's scope.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat32-config.json",
   "verify": {
     "defects": [],
     "warnings": [
-      "tomato-condiments[default].Pb: informational — stricter rows exist for a different product form (TH 50 [preserved tomatoes]; GSO 50 [Preserved tomatoes]; IL 50 [Fruiting vegetables (including tomato, c])",
-      "tomato-condiments[default].Cd: informational — stricter rows exist for a different product form (PH 50 [fruiting vegetables excluding tomatoes a]; IN 50 [Fruiting vegetables other than cucurbits])"
+      "tomato-condiments[default].Pb: informational — stricter rows exist for a different product form (TH 50 [preserved tomatoes]; GSO 50 [Preserved tomatoes]; IL 50 [Fruiting vegetables (including tomato, c]; HK 50 [Tomatoes, preserved by heat treatment an])",
+      "tomato-condiments[default].Cd: informational — stricter rows exist for a different product form (PH 50 [fruiting vegetables excluding tomatoes a]; IN 50 [Fruiting vegetables other than cucurbits]; VN 50 [Fruit vegetables (excluding tomatoes and]; HK 50 [Fruiting vegetables, other than Cucurbit])"
     ],
     "status": "PASS"
   }

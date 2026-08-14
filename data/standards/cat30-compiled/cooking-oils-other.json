@@ -25,6 +25,10 @@
             "value": 80,
             "id": "th_moph414_2020_pb_edible_fats_oils_80"
           },
+          "HK": {
+            "value": 80,
+            "id": "hk_cap132v_pb_edible-fats-and-oils_80"
+          },
           "EU": {
             "value": 100,
             "id": "eu2023_pb_fats_oils_100"
@@ -209,7 +213,7 @@
         "type": "not_material",
         "provenance_tag": "not-material",
         "value": null,
-        "rationale": "No sovereign maximum level exists for total chromium in edible oils. Chromium is not lipophilic and does not partition into a refined lipid matrix; the only food chromium MLs in the register are dairy. Rebuttable and audited against the register each build.",
+        "rationale": "No sovereign sets a total-chromium maximum level for an edible oil or fat in any jurisdiction. Chromium is not lipophilic and does not partition into a refined lipid matrix. Total-chromium food MLs do exist for other matrices (for example HK Cap. 132V meat, vegetables, cereals, pulses and fish; dairy milk powder and liquid milk; gelatin/collagen and fishery products), but none is an oil or fat. Rebuttable and audited against the register each build.",
         "reference_method": "Total Cr by ICP-MS as a screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
         "audit": {
           "same_form": [],
@@ -242,7 +246,7 @@
         "type": "not_material",
         "provenance_tag": "not-material",
         "value": null,
-        "rationale": "No sovereign aluminium ML exists for edible oils (the only government aluminium food ML in any jurisdiction is AU-NZ infant-formula Al 500). Aluminium does not partition into a refined lipid matrix and a plant oil has no aluminium uptake or migration pathway. Rebuttable and audited against the register each build.",
+        "rationale": "No sovereign sets an aluminium maximum level for an edible oil or fat in any jurisdiction. Aluminium does not partition into a refined lipid matrix and a plant oil has no aluminium uptake or migration pathway. Aluminium food limits that exist elsewhere are not contaminant MLs reaching an oil: China's GB 2762 eliminated aluminium as a contaminant and aluminium in food is instead governed as a GB 2760 permitted additive under its ADI (finished-product residue caps such as baked foods 100000 and starch noodles/vermicelli 200000), and the AU-NZ aluminium limits are infant-formula-specific (Schedule 19 non-soy 500 / soy 1000). None is an edible oil. Rebuttable and audited against the register each build.",
         "reference_method": null,
         "audit": {
           "same_form": [],

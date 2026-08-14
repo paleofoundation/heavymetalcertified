@@ -35,6 +35,16 @@
             "converted": true,
             "id": "py_decreto1335_2019_leguminous_vegetables_pb_100"
           },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_pb_legume-vegetables_100"
+          },
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "china_gb2762_pb_nuts_and_seeds_200"
+          },
           "IN": {
             "value": 200,
             "converted": true,
@@ -139,12 +149,17 @@
       },
       "Cd": {
         "type": "gov",
-        "value": 40,
-        "value_exact": 40,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_cd_pulses_40",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "PA",
+        "binding_id": "pa_decreto467_2007_cd_cereals_legumes_leguminous_vegetables",
         "basis_note": "face value",
         "per_country": {
+          "PA": {
+            "value": 10,
+            "converted": true,
+            "id": "pa_decreto467_2007_cd_cereals_legumes_leguminous_vegetables"
+          },
           "EU": {
             "value": 40,
             "converted": true,
@@ -189,26 +204,28 @@
             "value": 100,
             "converted": true,
             "id": "vn_qcvn8_2_2011_cd_legumes_100"
+          },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_cd_legume-vegetables_100"
+          },
+          "CN": {
+            "value": 200,
+            "converted": true,
+            "id": "china_gb2762_cd_beans_legumes_200"
           }
-        },
-        "stricter_unselected": [
-          {
-            "id": "pa_decreto467_2007_cd_cereals_legumes_leguminous_vegetables",
-            "value": 10,
-            "jurisdiction": "PA",
-            "scope": "cereals, legumes, and leguminous vegetables"
-          }
-        ]
+        }
       },
       "Cr-VI": {
         "type": "not_material",
         "value": null,
         "basis_class": "speciation-bounded",
-        "control": "No government sets a total-chromium or hexavalent-chromium maximum level for any legume, pulse, peanut, or soy product in any jurisdiction. Chromium in this plant matrix is dominated by nutritionally-essential Cr(III), and Cr(VI) reduces to Cr(III) in the organic-rich matrix. Firm control: reflex speciation - any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails; Cr(VI) is never a panel number.",
+        "control": "No government sets a hexavalent-chromium (Cr(VI)) maximum level for any legume, pulse, peanut, or soy product in any jurisdiction; Cr(VI) is never a published food ML in this domain. Total chromium IS regulated for part of this family: Hong Kong Cap 132V sets a total-Cr ML of 1000 ug/kg for pulses and China GB 2762 sets 1000 ug/kg for beans and legumes (these bind the dried-pulse and soy total-Cr cells), while no sovereign sets a total-Cr ML for peanuts. Chromium in this plant matrix is dominated by nutritionally-essential Cr(III), and Cr(VI) reduces to Cr(III) in the organic-rich matrix; Cr(VI) is therefore bounded by the governing total-Cr ceiling. Firm control: reflex speciation - any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails; Cr(VI) is never a panel number.",
         "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail.",
         "bounded_by": "Cr-total",
-        "regulatory_basis": "No regulatory total-Cr or Cr(VI) ML for legume/pulse/peanut/soy products in any jurisdiction; the only register total-Cr MLs are for dairy powder, drinking water, and fertiliser.",
-        "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Israel FCS-2016; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; GSO 193; FDA; AU/NZ Sch 19; China GB 2762"
+        "regulatory_basis": "No regulatory Cr(VI) ML for any legume/pulse/peanut/soy product in any jurisdiction. Total chromium is regulated for pulses and beans (Hong Kong Cap 132V pulses total-Cr 1000 ug/kg; China GB 2762 beans and legumes total-Cr 1000 ug/kg), which bind the dried-pulse and soy subcategories; no sovereign sets a total-Cr ML for peanuts. Cr(VI) is bounded by the governing total-Cr ceiling.",
+        "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Israel FCS-2016; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; GSO 193; FDA; AU/NZ Sch 19; China GB 2762; Hong Kong Cap 132V"
       },
       "Ni": {
         "type": "gov",
@@ -253,13 +270,32 @@
         "jurisdictions_checked": null
       },
       "Cr": {
-        "type": "control",
-        "value": null,
-        "control": "No credible sovereign government sets a total-chromium contaminant maximum for legumes, pulses, peanuts, or soy products in any jurisdiction (the only register total-Cr MLs are for dairy powder, drinking water, and fertiliser). Under the government-limit-only method HMTc publishes no standalone numeric total-Cr limit for this matrix; total chromium is monitored and hexavalent chromium is controlled by reflex speciation (see Cr-VI).",
-        "reference_method": "Total-Cr screen by ICP-MS on every lot; investigate any elevated total-Cr result and reflex-speciate per the Cr-VI control.",
-        "bounded_by": null,
-        "regulatory_basis": null,
-        "jurisdictions_checked": null
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "china_gb2762_crtotal_beans_legumes_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "CN": {
+            "value": 1000,
+            "converted": true,
+            "id": "china_gb2762_crtotal_beans_legumes_1000"
+          },
+          "HK": {
+            "value": 1000,
+            "converted": true,
+            "id": "hk_cap132v_crtotal_pulses_1000"
+          }
+        },
+        "stricter_unselected": [
+          {
+            "id": "hk_cap132v_crtotal_vegetables-other-than-pulses_500",
+            "value": 500,
+            "jurisdiction": "HK",
+            "scope": "Vegetables, other than pulses"
+          }
+        ]
       }
     }
   },

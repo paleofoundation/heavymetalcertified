@@ -157,11 +157,10 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "control",
         "value": null,
-        "basis_class": "speciation-bounded",
-        "control": "No government sets a methylmercury ML for edible fungi in any jurisdiction; methylmercury maximum levels exist only for fish and seafood. Cultivated mushrooms grow on controlled substrate and are not a mercury-methylation matrix; any mercury present is bounded by the total-mercury ceiling (Israel FCS-2016 mushrooms tHg 30 ug/kg). No methylmercury ML exists to look up.",
-        "reference_method": "MeHg by GC-ICP-MS / EN 16801 only on a lot whose total mercury approaches the tHg ceiling; cultivated-mushroom methylmercury is characteristically < LOQ.",
+        "control": "No government sets a methylmercury maximum level for edible fungi in any jurisdiction; methylmercury MLs exist only for fish and seafood, so no number can be looked up. Fungi are documented to bioconcentrate substrate mercury, and cultivated mushrooms grown on a contaminated substrate are not a zero-methylation matrix, so methylmercury is treated as a control determination (not dismissed as not-material) for consistency with the wild-mushroom cell and to remove a plaintiff-exploitable asymmetry. The methylmercury fraction is controlled by and bounded by the total-mercury ceiling for mushrooms (Israel FCS-2016 mushrooms tHg 30 ug/kg): any lot approaching the tHg ceiling reflex-speciates for methylmercury.",
+        "reference_method": "MeHg by GC-ICP-MS / EN 16801 on any cultivated-mushroom lot whose total mercury approaches the tHg 30 ug/kg ceiling; cultivated-mushroom methylmercury is characteristically < LOQ, but a substrate-driven elevated total-mercury result must be characterised.",
         "bounded_by": "tHg",
         "regulatory_basis": "No regulatory MeHg ML for edible fungi in any jurisdiction; methylmercury MLs are scoped to fish and seafood only. Total mercury is bounded by Israel FCS-2016 mushrooms tHg 30 ug/kg.",
         "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
@@ -227,13 +226,14 @@
         "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
       },
       "Ni": {
-        "type": "control",
-        "value": null,
-        "control": "No credible sovereign government sets a nickel maximum level for edible fungi in any jurisdiction; the EU 2024/1987 nickel regulation enumerates vegetables, legumes, nuts, and cereals but deliberately does not list fungi. Under the government-limit-only method HMTc publishes no standalone numeric nickel limit for this matrix; nickel is monitored on the mandatory total-element panel.",
-        "reference_method": "Total-element screen by ICP-MS on every lot; investigate any elevated nickel result against grower substrate and provenance.",
-        "bounded_by": null,
-        "regulatory_basis": null,
-        "jurisdictions_checked": null
+        "type": "read_across",
+        "value": 400,
+        "value_exact": 400,
+        "source_id": "eu2024_ni_fruiting_veg_400",
+        "source_jurisdiction": "EU",
+        "label": "Surveillance read-across (not a fungi government limit): no credible sovereign sets a nickel maximum level for edible fungi in any jurisdiction — the EU 2024/1987 nickel regulation enumerates tree nuts, vegetables (incl. herbs/seaweed), legumes, oilseeds, cocoa, baby food, and juices but deliberately does not list fungi. HMTc nonetheless publishes a documented nickel surveillance ceiling by disclosed read-across from the nearest applicable sovereign value, the EU 2024/1987 fruiting-vegetable nickel ML (400 ug/kg, wet weight), rather than leaving nickel with no numeric ceiling. This is a surveillance value on the honest read-across basis, not a claimed sovereign fungi limit.",
+        "basis_note": "face value (nearest sovereign value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Sn": {
         "type": "not_material",

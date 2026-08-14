@@ -30,13 +30,17 @@
       "Cd": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "VN",
-        "binding_id": "vn_qcvn8_2_2011_cd_vinegar_1000",
-        "binding_scope": "Vinegar",
-        "binding_instrument": "regulations/vietnam-qcvn-8-2-2011-heavy-metal-food-limits",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "UY",
+        "binding_id": "uy_rbn_general_cd_liquid_foods_0_1mgkg",
+        "binding_scope": "liquid foods in general except categories with particular limits",
+        "binding_instrument": "regulations/uruguay-rbn-5th-edition-heavy-metal-limits",
         "per_country": {
+          "UY": {
+            "value": 100,
+            "id": "uy_rbn_general_cd_liquid_foods_0_1mgkg"
+          },
           "VN": {
             "value": 1000,
             "id": "vn_qcvn8_2_2011_cd_vinegar_1000"
@@ -50,13 +54,17 @@
       "tAs": {
         "type": "gov",
         "provenance_tag": "regulatory-alignment",
-        "value": 200,
-        "value_exact": 200,
-        "binding_jurisdiction": "VN",
-        "binding_id": "vn_qcvn8_2_2011_tas_vinegar_200",
-        "binding_scope": "Vinegar",
-        "binding_instrument": "regulations/vietnam-qcvn-8-2-2011-heavy-metal-food-limits",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "UY",
+        "binding_id": "uy_rbn_general_tas_liquid_foods_0_1mgkg",
+        "binding_scope": "liquid foods in general except categories with particular limits",
+        "binding_instrument": "regulations/uruguay-rbn-5th-edition-heavy-metal-limits",
         "per_country": {
+          "UY": {
+            "value": 100,
+            "id": "uy_rbn_general_tas_liquid_foods_0_1mgkg"
+          },
           "VN": {
             "value": 200,
             "id": "vn_qcvn8_2_2011_tas_vinegar_200"
@@ -175,7 +183,7 @@
     "ratchet"
   ],
   "version": "v1.0 (2026-08-13, initial compilation)",
-  "lineage_note": "Vietnam QCVN 8-2 is the only sovereign that sets vinegar MLs (Pb 500, Cd 1000, tAs 200, tHg 50), so it governs directly. Hidden-hazard flag for the ratchet, NOT a missing limit: the FDA has issued balsamic- and wine-vinegar lead warning letters (grape-derived lead concentrated during must reduction, compounded historically by lead-bearing equipment), and measured balsamic lead can approach or exceed 500 ug/kg — so ALARA and the occurrence ratchet drive tightening after publication even though the sovereign ceiling is the correct initial value. Nickel and total chromium are held under a stainless-steel-migration screen because an acidic food in prolonged stainless contact leaches both.",
+  "lineage_note": "Vietnam QCVN 8-2 sets vinegar-specific MLs (Pb 500, tHg 50) and governs those cells directly. Cadmium and total arsenic are governed instead by the stricter Uruguay RBN general limit for LIQUID foods (Cd 100, tAs 100; uy_rbn_general_cd_liquid_foods_0_1mgkg / uy_rbn_general_tas_liquid_foods_0_1mgkg) — a national catch-all that binds every liquid food without a particular limit and is tighter than the Vietnam vinegar values (Cd 1000, tAs 200). Hidden-hazard flag for the ratchet, NOT a missing limit: the FDA has issued balsamic- and wine-vinegar lead warning letters (grape-derived lead concentrated during must reduction, compounded historically by lead-bearing equipment), and measured balsamic lead can approach or exceed 500 ug/kg — so ALARA and the occurrence ratchet drive tightening after publication even though the sovereign ceiling is the correct initial value. Nickel and total chromium are held under a stainless-steel-migration screen because an acidic food in prolonged stainless contact leaches both.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat32-config.json",
   "verify": {
