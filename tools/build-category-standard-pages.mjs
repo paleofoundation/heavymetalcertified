@@ -170,8 +170,49 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
-function methodSection(subName, basisWord) {
-  return `<section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; among them the European Union, Codex Alimentarius, the US FDA, Australia/New Zealand, the Gulf states (GSO), and the national authorities of every jurisdiction that regulates the product &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p></section>`
+function methodSection(subName, basisWord, methodProse) {
+  const H = `<h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2>`
+  // A category whose method is not the strictest-government-ML default (e.g. Cat 16's
+  // child-protective over-compliance) supplies its own prose via META.method_prose.
+  if (Array.isArray(methodProse) && methodProse.length) {
+    const paras = methodProse.map((p) => `<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">${p}</p>`).join("")
+    return `<section id="method" style="margin-bottom:52px">${H}${paras}</section>`
+  }
+  return `<section id="method" style="margin-bottom:52px">${H}<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; among them the European Union, Codex Alimentarius, the US FDA, Australia/New Zealand, the Gulf states (GSO), and the national authorities of every jurisdiction that regulates the product &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p></section>`
+}
+
+// Child-protective anchor derivation (Cat 16): no government regulates a supplement to a
+// child-safe level, so the per-country matrix does not apply. This shows, per analyte, the
+// sovereign infant-and-child-food anchor the limit is read across from, the HMTc value, and
+// the disclosed (never-selected) adult floor — the whole defensibility of the over-compliance.
+function childAnchorDerivation(primary, subName) {
+  const adultFloor = (cell) => {
+    const af = cell.adult_floor
+    if (!af) return "&mdash;"
+    // parts are already HTML-safe (numeric values + fixed jurisdiction labels), so no esc()
+    const parts = []
+    const s = af.strictest_supplement_ml, l = af.laxest_supplement_ml
+    if (s) parts.push(`${esc(jlabel(s.jurisdiction))} ${s.value}${l && l.value !== s.value ? `&ndash;${l.value}` : ""}`)
+    if (af.usp_2232 && af.usp_2232.conc_equiv_ug_per_kg_at_10g != null) parts.push(`USP &lt;2232&gt; ${af.usp_2232.conc_equiv_ug_per_kg_at_10g}`)
+    if (af.prop65_madl && af.prop65_madl.madl_ug_per_day != null) parts.push(`Prop 65 ${af.prop65_madl.madl_ug_per_day}&thinsp;&micro;g/day`)
+    return parts.length ? parts.join(" &middot; ") : "&mdash;"
+  }
+  const body = PANEL.map((a) => {
+    const c = primary.cells[a]
+    let anchor, hmtc, floor, basis
+    if (c && c.type === "read_across") {
+      anchor = esc(`${jlabel(c.source_jurisdiction)} — ${c.analog_scope || "infant/child food"}`)
+      hmtc = String(c.value); floor = adultFloor(c); basis = "child-protective read-across"
+    } else if (c && c.type === "control") {
+      anchor = "no infant-food ML exists"; hmtc = "control"; floor = "&mdash;"; basis = "mandatory control &mdash; screened every lot"
+    } else if (c && c.type === "subsumed") {
+      anchor = `&le; ${esc(c.subsumed_by || "parent total")}`; hmtc = "bounded"; floor = "&mdash;"; basis = "bounded by parent total"
+    } else if (c && c.type === "not_material") {
+      anchor = "&mdash;"; hmtc = "n/m"; floor = "&mdash;"; basis = "not material"
+    } else { anchor = "&mdash;"; hmtc = "&mdash;"; floor = "&mdash;"; basis = "&mdash;" }
+    return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:9px 12px;color:#736b6b;font-size:12px">${anchor}</td><td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#a9a1a1">${floor}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${basis}</td></tr>`
+  }).join("")
+  return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; the child anchor, and the adult floor it overrides</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">No government regulates a dietary supplement to a child-safe heavy-metal level. Each HMTc limit for ${esc(subName)} is read across from the strictest sovereign infant-and-child-food maximum level for the analyte &mdash; the child anchor named below &mdash; and applied to all supplements as a voluntary over-compliance. The adult floor column discloses the laxer sovereign supplement limit, USP &lt;2232&gt; oral concentration, and California Prop 65 dose that HMTc declines to use. It is shown, and never selected.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:52rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Child-protective anchor</th><th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Adult floor (disclosed, not used)</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Basis</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Adult floor values in &micro;g/kg unless marked. Supplement ML is the strictest&ndash;laxest sovereign food-supplement maximum on the register; USP &lt;2232&gt; is the oral permitted-daily-exposure concentration at a 10&thinsp;g/day intake; Prop 65 is the California developmental safe-harbour dose. HMTc holds every supplement to the child anchor instead.</p></section>`
 }
 
 function citeSection(subName, version, hmiLink, doi, volume) {
@@ -243,10 +284,13 @@ for (const page of DOC.pages) {
     analytes: PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a)),
   })
 
+  const derivation = META.derivation_mode === "child_anchor"
+    ? childAnchorDerivation(variants[0], page.name)
+    : derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note)
   const body = [
-    methodSection(page.name, basisWord),
+    methodSection(page.name, basisWord, META.method_prose),
     masterTable(variants, basisWord, tierNote, firmCount),
-    derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note),
+    derivation,
     occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi, META.volume_name),
   ].join("\n")

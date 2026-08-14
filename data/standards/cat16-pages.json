@@ -1,0 +1,698 @@
+{
+  "_doc": "Per-page metadata for the Category-16 (Dietary Supplements (Human)) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat16-compiled/<record>.json (deterministic; no authored values). Display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 16,
+    "category_name": "Dietary Supplements (Human)",
+    "volume_name": "Dietary Supplements (Human)",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat16-compiled",
+    "method_label": "Strictest child-food ML",
+    "methodology_version": "Method v2.0 — child-protective over-compliance (strictest sovereign infant-and-child-food ML, applied to all supplements)",
+    "derivation_mode": "child_anchor",
+    "method_prose": [
+      "No government sets a heavy-metal maximum level for a dietary supplement that protects a child. The adult frameworks that exist &mdash; sovereign food-supplement limits (lead 1000&ndash;10000&thinsp;&micro;g/kg), USP &lt;2232&gt; elemental-contaminant PDEs computed for an adult consumer, California Proposition&nbsp;65 warning doses &mdash; are written for a 60&ndash;70&thinsp;kg adult. HMTc instead holds every supplement, adult- or child-labelled, to the strictest sovereign infant-and-child-food maximum level for each analyte, because children routinely consume adult supplements (gummies, protein powders, greens, melatonin drops) and body-weight-normalised exposure makes the child the binding safety case.",
+      "Every value on this page is therefore a child-protective read-across, disclosed as such: the anchor is a real sovereign infant-food limit, named in the derivation below, applied to supplements as a voluntary over-compliance. The laxer adult floor is disclosed on every analyte and never selects the number. Where no government sets an infant-and-child-food limit for an analyte &mdash; total and hexavalent chromium, methylmercury &mdash; no number is invented: the analyte is placed under mandatory control with reflex speciation."
+    ],
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "supplements-oral-solids-tablets",
+      "name": "Oral solids: tablets/caplets",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: tablets/caplets (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-tablets"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-capsules",
+      "name": "Oral solids: capsules",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: capsules (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-capsules"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-softgels",
+      "name": "Oral solids: softgels/gelcaps",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: softgels/gelcaps (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-softgels"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-gummies",
+      "name": "Oral solids: gummies/chewables",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: gummies/chewables (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-gummies"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-lozenges",
+      "name": "Oral solids: lozenges",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: lozenges (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-lozenges"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-powders",
+      "name": "Oral solids: powders (bulk tubs, sachets, stick packs)",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: powders (bulk tubs, sachets, stick packs) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-powders"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-effervescent",
+      "name": "Oral solids: effervescent tablets",
+      "description": "The Heavy Metal Tested & Certified standard for Oral solids: effervescent tablets (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-effervescent"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-tinctures",
+      "name": "Oral liquids: tinctures/drops",
+      "description": "The Heavy Metal Tested & Certified standard for Oral liquids: tinctures/drops (Dietary Supplements (Human)), stated as consumed. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-tinctures"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-syrups",
+      "name": "Oral liquids: syrups",
+      "description": "The Heavy Metal Tested & Certified standard for Oral liquids: syrups (Dietary Supplements (Human)), stated as consumed. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-syrups"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-shots",
+      "name": "Oral liquids: liquid shots",
+      "description": "The Heavy Metal Tested & Certified standard for Oral liquids: liquid shots (Dietary Supplements (Human)), stated as consumed. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-shots"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-droppers",
+      "name": "Oral liquids: droppers",
+      "description": "The Heavy Metal Tested & Certified standard for Oral liquids: droppers (Dietary Supplements (Human)), stated as consumed. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-droppers"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-teas-labeled",
+      "name": "Food-like forms: teas (when labeled as supplement)",
+      "description": "The Heavy Metal Tested & Certified standard for Food-like forms: teas (when labeled as supplement) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-teas-labeled"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-bars-labeled",
+      "name": "Food-like forms: bars (when labeled as supplement)",
+      "description": "The Heavy Metal Tested & Certified standard for Food-like forms: bars (when labeled as supplement) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-bars-labeled"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-vitamin-mineral",
+      "name": "Ingredient class — vitamin/mineral (single, multi-mineral, multi-vitamin/mineral)",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — vitamin/mineral (single, multi-mineral, multi-vitamin/mineral) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-vitamin-mineral"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-botanicals-herbs",
+      "name": "Ingredient class — botanicals/herbs/traditional formulas",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — botanicals/herbs/traditional formulas (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-botanicals-herbs"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-amino-acids-isolates",
+      "name": "Ingredient class — amino acids & isolates",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — amino acids & isolates (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-amino-acids-isolates"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-enzymes",
+      "name": "Ingredient class — enzymes",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — enzymes (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-enzymes"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-probiotics",
+      "name": "Ingredient class — live microbials/probiotics",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — live microbials/probiotics (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-probiotics"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-algae-seaweed-based",
+      "name": "Ingredient class — algae/seaweed-based",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — algae/seaweed-based (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-algae-seaweed-based"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-protein-collagen-powders",
+      "name": "Ingredient class — protein/collagen powders",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — protein/collagen powders (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-protein-collagen-powders"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oil-based",
+      "name": "Ingredient class — oil-based supplements (fish oil/omega-3 and similar)",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — oil-based supplements (fish oil/omega-3 and similar) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oil-based"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-clay-mineral-earth",
+      "name": "Ingredient class — clay/mineral/earth-derived (bentonite, diatomaceous earth, zeolite, shilajit)",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — clay/mineral/earth-derived (bentonite, diatomaceous earth, zeolite, shilajit) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-clay-mineral-earth"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-mushroom-fungal",
+      "name": "Ingredient class — mushroom/fungal extracts (lion's mane, reishi, cordyceps, chaga)",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — mushroom/fungal extracts (lion's mane, reishi, cordyceps, chaga) (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-mushroom-fungal"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-greens-superfood",
+      "name": "Ingredient class — greens/superfood blends",
+      "description": "The Heavy Metal Tested & Certified standard for Ingredient class — greens/superfood blends (Dietary Supplements (Human)), stated as sold. Every limit is read across from the strictest sovereign infant-and-child-food maximum level for the analyte and applied to all supplements as a voluntary child-protective over-compliance; the laxer adult supplement floor (sovereign supplement MLs, USP <2232>, Prop 65) is disclosed and never selected.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-greens-superfood"
+        }
+      ]
+    }
+  ]
+}
