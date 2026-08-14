@@ -73,6 +73,11 @@
             "converted": true,
             "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
           },
+          "HK": {
+            "value": 80,
+            "converted": true,
+            "id": "hk_cap132v_pb_infant-formula-and-follow-up-formula_10"
+          },
           "CO": {
             "value": 160,
             "converted": true,
@@ -107,6 +112,36 @@
             "value": 160,
             "converted": true,
             "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "same basis",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": false,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "CN": {
+            "value": 500,
+            "converted": false,
+            "id": "cn_tas_milk-powder-and-modified-milk-powder-gen_500"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_1_infant_and_toddler_formulas_powder_1000"
           }
         }
       },
@@ -295,6 +330,11 @@
             "converted": true,
             "id": "sg_foodregs_2026_infant_formula_as_consumed_pb_10"
           },
+          "HK": {
+            "value": 80,
+            "converted": true,
+            "id": "hk_cap132v_pb_infant-formula-and-follow-up-formula_10"
+          },
           "CO": {
             "value": 160,
             "converted": true,
@@ -329,6 +369,36 @@
             "value": 160,
             "converted": true,
             "id": "br_ias_pediatric-formula-for-enteral-nutrition_20"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "same basis",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": false,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": false,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "CN": {
+            "value": 500,
+            "converted": false,
+            "id": "cn_tas_milk-powder-and-modified-milk-powder-gen_500"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_1_infant_and_toddler_formulas_powder_1000"
           }
         }
       },

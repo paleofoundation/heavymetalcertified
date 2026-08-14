@@ -62,6 +62,11 @@
             "value": 200,
             "converted": true,
             "id": "vn_qcvn8_2_2011_pb_cereal_200"
+          },
+          "HK": {
+            "value": 200,
+            "converted": true,
+            "id": "hk_cap132v_pb_cereal-grains-other-than-buckwheat-ca-ihua-and-quinoa_200"
           }
         }
       },
@@ -89,6 +94,11 @@
             "converted": true,
             "id": "mercosur_gmc12_2011_wheat_derivatives_except_oil_tas_200"
           },
+          "HK": {
+            "value": 500,
+            "converted": true,
+            "id": "hk_cap132v_tas_cereals-other-than-rice_500"
+          },
           "AU-NZ": {
             "value": 1000,
             "converted": true,
@@ -103,21 +113,16 @@
       },
       "tHg": {
         "type": "gov",
-        "value": 30,
-        "value_exact": 30,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30",
-        "basis_note": "face value",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_thg_rice-husked-rice-polished-rice-maize-maize-flour-wheat_20",
+        "basis_note": "HK Cap 132V grain total mercury 20 ug/kg (0.02 mg/kg; rice, husked/polished rice, maize, maize flour, wheat, wheat flour) — the strictest sovereign grain total-Hg limit; supersedes the looser Israel FCS-2016 cereals-and-cereal-products 30. The EU 2018/73 'cereals' 10 is a pesticide-residue MRL, not a contaminant ML, and is excluded.",
         "per_country": {
-          "IL": {
-            "value": 30,
-            "converted": true,
-            "id": "il_fcs2016_thg_4_cereals_and_cereal_products_including_wheat_and_rice_30"
-          },
-          "GSO": {
-            "value": 1000,
-            "converted": true,
-            "id": "gso193_2021_thg_wheat_pink_kernels_1000"
+          "HK": {
+            "value": 20,
+            "converted": false,
+            "id": "hk_cap132v_thg_rice-husked-rice-polished-rice-maize-maize-flour-wheat_20"
           }
         }
       },
@@ -194,14 +199,34 @@
             "value": 100,
             "converted": true,
             "id": "vn_qcvn8_2_2011_cd_cereal-excluding-wheat-rice-mash-and-germs_100"
+          },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_cd_cereals-other-than-buckwheat-ca-ihua-quinoa-wheat-and-r_100"
+          }
+        }
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "CN",
+        "binding_id": "china_gb2762_crtotal_grains_1000",
+        "basis_note": "China GB 2762-2022 Table 7 grains and milled-grain-products total chromium 1.0 mg/kg (total Cr, not Cr-VI); corroborated by HK Cap 132V Cereals Cr-total 1000.",
+        "per_country": {
+          "CN": {
+            "value": 1000,
+            "converted": false,
+            "id": "china_gb2762_crtotal_grains_1000"
           }
         }
       },
       "Cr-VI": {
         "type": "not_material",
         "value": null,
-        "control": "Cr-VI (hexavalent chromium): No total-Cr ML for cereal products; reflex speciation control.",
-        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance."
+        "control": "Cr(VI) (hexavalent chromium): reflex-speciation control on the total-chromium result (see the separate total-Cr cell, governed by China GB 2762-2022 grains/milled-grain-products total Cr 1.0 mg/kg). No jurisdiction sets a Cr(VI)-specific food maximum level; chromium in the cereal/rice matrix is dominated by nutritionally-essential Cr(III) and any Cr(VI) reduces to Cr(III) in the matrix. Reflex control: any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails.",
+        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail."
       },
       "Ni": {
         "type": "gov",
@@ -225,15 +250,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1500,
-        "value_exact": 1500,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "occurrence: plain pasta, no Al-additive pathway (UK FERA TDS ~1040 ppb; provisional)",
-        "basis_kind": "occurrence",
-        "basis_note": "occurrence / cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible regulator sets an aluminium CONTAMINANT maximum level for grains, cereals, or rice products, and China GB 2762 (the contaminant standard) does not regulate aluminium. Aluminium present in leavened, baked, or alum-firmed grain products is permitted-additive residue (China GB 2760-2024 food-additive use limits, e.g. baked foods 100 mg/kg / starch noodles and vermicelli 200 mg/kg, calculated as Al), governed by additive ADI and the JECFA/EFSA provisional tolerable weekly intake, not by a per-food contaminant ML. An additive-use residue cap is not a contaminant government limit and is not published as one; background aluminium in plain grain is soil-derived. Managed by intake vs the TWI, not a lookup.",
+        "reference_method": "Managed by intake vs JECFA/EFSA TWI; periodic total-Al screen (ICP-MS); no per-food contaminant ML to look up."
       }
     }
   },

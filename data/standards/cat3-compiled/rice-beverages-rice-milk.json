@@ -50,11 +50,17 @@
         "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no government sets a cadmium ML specific to rice-based drinks. Material but unregulated by ML; literature-baseline governs.",
         "reference_method": "Cd by ICP-MS on the as-consumed liquid."
       },
+      "Cr": {
+        "type": "not_material",
+        "value": null,
+        "control": "No jurisdiction sets a total-chromium maximum level for a rice-derived beverage; the grain total-Cr limits (China GB 2762-2022, 1.0 mg/kg) are dry-grain basis and do not read across to an as-consumed liquid. Reflex total-Cr screen on the liquid.",
+        "reference_method": "Total-Cr by ICP-MS on the as-consumed liquid; no sovereign rice-beverage total-Cr ML."
+      },
       "Cr-VI": {
         "type": "not_material",
         "value": null,
-        "control": "Cr-VI (hexavalent chromium): No total-Cr ML for rice beverages; reflex speciation control on the as-consumed liquid.",
-        "reference_method": "Total-Cr by ICP-MS; Cr(VI) by EN 15192 / EPA 6800 on exceedance."
+        "control": "Cr(VI) (hexavalent chromium): reflex-speciation control on the total-chromium result (see the separate total-Cr cell, governed by China GB 2762-2022 grains/milled-grain-products total Cr 1.0 mg/kg). No jurisdiction sets a Cr(VI)-specific food maximum level; chromium in the as-consumed rice-beverage liquid is dominated by nutritionally-essential Cr(III) and any Cr(VI) reduces to Cr(III) in the matrix. Reflex control: any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails.",
+        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail."
       },
       "Ni": {
         "type": "not_material",
@@ -69,15 +75,10 @@
         "reference_method": null
       },
       "Al": {
-        "type": "read_across",
-        "value": 1000,
-        "value_exact": 1000,
-        "source_id": null,
-        "source_jurisdiction": null,
-        "label": "precautionary read-across: plant-milk Al (soy 758 ppb as-consumed; provisional)",
-        "basis_kind": "precautionary",
-        "basis_note": "precautionary cross-source value (no government ML for this product form)",
-        "per_country": {}
+        "type": "not_material",
+        "value": null,
+        "control": "No credible regulator sets an aluminium CONTAMINANT maximum level for grains, cereals, or rice products, and China GB 2762 (the contaminant standard) does not regulate aluminium. Aluminium present in leavened, baked, or alum-firmed grain products is permitted-additive residue (China GB 2760-2024 food-additive use limits, e.g. baked foods 100 mg/kg / starch noodles and vermicelli 200 mg/kg, calculated as Al), governed by additive ADI and the JECFA/EFSA provisional tolerable weekly intake, not by a per-food contaminant ML. An additive-use residue cap is not a contaminant government limit and is not published as one; background aluminium in plain grain is soil-derived. Managed by intake vs the TWI, not a lookup.",
+        "reference_method": "Managed by intake vs JECFA/EFSA TWI; periodic total-Al screen (ICP-MS); no per-food contaminant ML to look up."
       }
     }
   },

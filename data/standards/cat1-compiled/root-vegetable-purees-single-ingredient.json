@@ -43,6 +43,11 @@
             "converted": true,
             "id": "ph_pns194_2017_root_tuber_vegetables_pb_100"
           },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_pb_root-and-tuber-vegetables_100"
+          },
           "SG": {
             "value": 200,
             "converted": true,
@@ -62,6 +67,22 @@
             "value": 20,
             "converted": true,
             "id": "eu2023_ias_babyfood_20"
+          }
+        }
+      },
+      "tAs": {
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "government read-across — India FSSAI total-arsenic 50 for 'Infant Milk substitute and Infant foods' (register row in_tas_infant-milk-substitute-and-infant-foods_50), the strictest infant/baby total-arsenic ML in the register. Mandatory total-As cell; iAs cannot satisfy the total-As requirement (iAs <= tAs). Applied as a government read-across for this root-vegetable purée matrix.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
           }
         }
       },
@@ -107,14 +128,28 @@
             "value": 100,
             "converted": true,
             "id": "ph_pns194_2017_root_tuber_vegetables_cd_100"
+          },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_cd_root-and-tuber-vegetables_100"
           }
         }
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "Reflex Cr-VI speciation: any total-Cr result >100 ug/kg triggers Cr-VI speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. No credible government sets a total-Cr ML for a non-dairy root-vegetable food; the dairy milk-powder read-across (China 2000) is not a defensible analogy for a non-dairy matrix.",
-        "reference_method": "IC-ICP-MS hexavalent-chromium speciation (EPA 218.6 or equivalent ISO/DIN method)"
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_crtotal_vegetables-other-than-pulses_500",
+        "basis_note": "government read-across — Hong Kong Cap 132V total-chromium 500 for 'Vegetables, other than pulses' (register row hk_cap132v_crtotal_vegetables-other-than-pulses_500), the on-point sovereign total-Cr ML for a non-dairy vegetable matrix (supersedes the prior not-material determination and the weak dairy milk-powder analogy). ADDITIONAL CONTROL retained: reflex Cr-VI speciation — any total-Cr result >100 µg/kg triggers hexavalent-chromium speciation (EPA 218.6 / EN 15192 or equivalent IC-ICP-MS), and any quantifiable Cr-VI fails; Cr-VI is never a panel number.",
+        "per_country": {
+          "HK": {
+            "value": 500,
+            "converted": false,
+            "id": "hk_cap132v_crtotal_vegetables-other-than-pulses_500"
+          }
+        }
       },
       "Ni": {
         "type": "gov",
