@@ -1,0 +1,99 @@
+{
+  "_doc": "Per-page metadata for the Category-30 (Culinary Oils and Fats) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat30-compiled/<record>.json (deterministic; no authored values). Display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 30,
+    "category_name": "Culinary Oils and Fats",
+    "volume_name": "Culinary Oils and Fats",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat30-compiled",
+    "method_label": "Strictest government ML",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "cooking-oils-other",
+      "name": "Cooking oils, other (canola, sunflower, coconut, avocado, sesame)",
+      "description": "The Heavy Metal Tested & Certified standard for Cooking oils, other (canola, sunflower, coconut, avocado, sesame) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cooking-oils-other"
+        }
+      ]
+    },
+    {
+      "slug": "olive-oil",
+      "name": "Olive oil (virgin, refined, pomace)",
+      "description": "The Heavy Metal Tested & Certified standard for Olive oil (virgin, refined, pomace) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "olive-oil"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "_doc": "Per-page metadata for the Category-27 (Legumes and Pulses) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat27-compiled/<record>.json (deterministic; no authored values). Display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 27,
+    "category_name": "Legumes and Pulses",
+    "volume_name": "Legumes and Pulses",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat27-compiled",
+    "method_label": "Strictest government ML",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "legumes-pulses-other",
+      "name": "Legumes and pulses (dried — lentils, chickpeas, dry beans, split peas, other)",
+      "description": "The Heavy Metal Tested & Certified standard for Legumes and pulses (dried — lentils, chickpeas, dry beans, split peas, other) (Legumes and Pulses), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "legumes-pulses-other"
+        }
+      ]
+    },
+    {
+      "slug": "peanut-butter",
+      "name": "Peanut butter (ground peanuts, with or without added salt/oil)",
+      "description": "The Heavy Metal Tested & Certified standard for Peanut butter (ground peanuts, with or without added salt/oil) (Legumes and Pulses), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "peanut-butter"
+        }
+      ]
+    },
+    {
+      "slug": "peanuts",
+      "name": "Peanuts (groundnuts, whole and shelled)",
+      "description": "The Heavy Metal Tested & Certified standard for Peanuts (groundnuts, whole and shelled) (Legumes and Pulses), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "peanuts"
+        }
+      ]
+    },
+    {
+      "slug": "soy-products",
+      "name": "Soy products (soybeans, edamame, tofu, tempeh, soy flour, and other whole-soy foods)",
+      "description": "The Heavy Metal Tested & Certified standard for Soy products (soybeans, edamame, tofu, tempeh, soy flour, and other whole-soy foods) (Legumes and Pulses), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "soy-products"
+        }
+      ]
+    }
+  ]
+}

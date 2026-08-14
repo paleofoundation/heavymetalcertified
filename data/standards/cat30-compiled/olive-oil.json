@@ -1,0 +1,273 @@
+{
+  "slug": "olive-oil",
+  "name": "Olive oil (virgin, refined, pomace)",
+  "category": 30,
+  "category_name": "Culinary Oils and Fats",
+  "native_basis": "as placed on market",
+  "canned": false,
+  "variants": {
+    "default": {
+      "Pb": {
+        "type": "gov",
+        "provenance_tag": "regulatory-alignment",
+        "value": 80,
+        "value_exact": 80,
+        "binding_jurisdiction": "GSO",
+        "binding_id": "gso193_2021_pb_edible_fats_and_oils_80",
+        "binding_scope": "Edible fats and oils",
+        "binding_instrument": "regulations/gso-193-2021-contaminants-toxins-food-feed",
+        "per_country": {
+          "GSO": {
+            "value": 80,
+            "id": "gso193_2021_pb_edible_fats_and_oils_80"
+          },
+          "TH": {
+            "value": 80,
+            "id": "th_moph414_2020_pb_edible_fats_oils_80"
+          },
+          "EU": {
+            "value": 100,
+            "id": "eu2023_pb_fats_oils_100"
+          },
+          "IN": {
+            "value": 100,
+            "id": "in_fssai2016_pb_045_edible_fats_and_oils_edible_fats_and_oils_not_covered_by_individual_st_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "id": "mercosur_gmc12_2011_fats_oils_margarine_pb_100"
+          },
+          "SG": {
+            "value": 100,
+            "id": "sg_foodregs_2026_edible_oils_fats_pb_100"
+          },
+          "IL": {
+            "value": 100,
+            "id": "il_fcs2016_pb_2_fats_oils_and_fat_emulsions_water_in_oil_type_100"
+          },
+          "PY": {
+            "value": 100,
+            "id": "py_decreto1335_2019_fats_oils_margarine_pb_100"
+          },
+          "VN": {
+            "value": 100,
+            "id": "vn_qcvn8_2_2011_pb_animal-fats-and-oils_100"
+          },
+          "PA": {
+            "value": 100,
+            "id": "pa_decreto467_2007_pb_vegetable_oils_except_cocoa_butter"
+          },
+          "FJ": {
+            "value": 200,
+            "id": "fj_fsr2009_pb_001_edible_fats_and_oils_200"
+          }
+        },
+        "audit": {
+          "same_form": [],
+          "other_form": [
+            {
+              "id": "th_moph414_2020_pb_fat_spreads_blended_40",
+              "value": 40,
+              "jurisdiction": "TH",
+              "scope": "fat spreads and blended spreads"
+            },
+            {
+              "id": "sg_foodregs_2026_fat_spreads_blended_spreads_pb_40",
+              "value": 40,
+              "jurisdiction": "SG",
+              "scope": "fat spreads and blended spreads"
+            }
+          ]
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "provenance_tag": "regulatory-alignment",
+        "value": 30,
+        "value_exact": 30,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_cd_2_fats_oils_and_fat_emulsions_water_in_oil_type_30",
+        "binding_scope": "Fats, oils, and fat emulsions (water-in-oil type)",
+        "binding_instrument": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+        "per_country": {
+          "IL": {
+            "value": 30,
+            "id": "il_fcs2016_cd_2_fats_oils_and_fat_emulsions_water_in_oil_type_30"
+          }
+        },
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "provenance_tag": "regulatory-alignment",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "CODEX",
+        "binding_id": "codex_tas_named-vegetable-oils_100",
+        "binding_scope": "Named vegetable oils",
+        "binding_instrument": "regulations/codex-fats-oils-contaminants",
+        "per_country": {
+          "CODEX": {
+            "value": 100,
+            "id": "codex_tas_named-vegetable-oils_100"
+          },
+          "IN": {
+            "value": 100,
+            "id": "in_fssai2016_tas_001_edible_fats_and_oils_edible_fats_and_oils_not_covered_by_individual_st_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "id": "mercosur_gmc12_2011_fats_oils_margarine_tas_100"
+          },
+          "SG": {
+            "value": 100,
+            "id": "sg_foodregs_2026_edible_oils_fats_tas_100"
+          },
+          "TH": {
+            "value": 100,
+            "id": "th_moph414_2020_tas_edible_fats_oils_100"
+          },
+          "PY": {
+            "value": 100,
+            "id": "py_decreto1335_2019_fats_oils_margarine_tas_100"
+          },
+          "VN": {
+            "value": 100,
+            "id": "vn_qcvn8_2_2011_tas_animal-fats-and-oils_100"
+          },
+          "IL": {
+            "value": 1000,
+            "id": "il_fcs2016_tas_2_fats_oils_and_fat_emulsions_water_in_oil_type_1000"
+          }
+        },
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "iAs": {
+        "type": "subsumed",
+        "provenance_tag": "regulatory-alignment",
+        "value": null,
+        "subsumed_by": "tAs",
+        "binding_total": 100,
+        "binding_total_source": "CODEX",
+        "label": "Inorganic arsenic is a component of total arsenic (iAs <= tAs). The iAs value (100 ug/kg) is not below the binding total arsenic ceiling (100 ug/kg), so inorganic arsenic is governed by and bounded by the total arsenic ceiling; no separate iAs ceiling is published. It is enforced by reflex speciation whenever tAs is elevated.",
+        "candidate": {
+          "type": "gov",
+          "value": 100,
+          "source_jurisdiction": "IL",
+          "source_id": "il_fcs2016_ias_2_fats_oils_and_fat_emulsions_water_in_oil_type_100"
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "provenance_tag": "regulatory-alignment",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_thg_2_fats_oils_and_fat_emulsions_water_in_oil_type_20",
+        "binding_scope": "Fats, oils, and fat emulsions (water-in-oil type)",
+        "binding_instrument": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+        "per_country": {
+          "IL": {
+            "value": 20,
+            "id": "il_fcs2016_thg_2_fats_oils_and_fat_emulsions_water_in_oil_type_20"
+          }
+        },
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "MeHg": {
+        "type": "not_material",
+        "provenance_tag": "not-material",
+        "value": null,
+        "rationale": "Methylmercury forms by microbial methylation in aquatic systems and bioaccumulates in fish; a pressed or extracted plant oil has no methylation pathway and no mercury source. No government sets a methylmercury limit for a culinary oil.",
+        "reference_method": null,
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "Ni": {
+        "type": "control",
+        "provenance_tag": "control",
+        "value": null,
+        "rationale": "No sovereign maximum level exists for nickel in culinary oils or fats. Nickel can enter a fat as residual hydrogenation catalyst (Raney nickel) in any hardened or partially hydrogenated fraction; virgin and refined liquid oils are not hydrogenated. Because a real exposure pathway exists, the cell is held under a reflex screen rather than declared not-material (the pathway would rebut a not-material determination).",
+        "reference_method": "Total nickel by ICP-MS on each lot; any hydrogenated or partially hydrogenated oil is monitored under ALARA against the tightest available food nickel context.",
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "Cr": {
+        "type": "not_material",
+        "provenance_tag": "not-material",
+        "value": null,
+        "rationale": "No sovereign maximum level exists for total chromium in edible oils. Chromium is not lipophilic and does not partition into a refined lipid matrix; the only food chromium MLs in the register are dairy (milk powder, liquid milk). Rebuttable and audited against the register each build.",
+        "reference_method": "Total Cr by ICP-MS as a screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "Cr-VI": {
+        "type": "control",
+        "provenance_tag": "control",
+        "value": null,
+        "rationale": "Hexavalent chromium is never a panel number for a food; it is the toxic species obtained by reflex speciation. Any lot whose total-chromium screen exceeds the reflex trigger is speciated, and any quantifiable Cr(VI) fails.",
+        "reference_method": "IC-ICP-MS Cr(VI) speciation (EPA 3060A alkaline digestion + EPA 6800 / EN 15192) on any total-Cr exceedance.",
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "Sn": {
+        "type": "not_material",
+        "provenance_tag": "not-material",
+        "value": null,
+        "rationale": "Tin migrates into food only from tinplate cans; culinary oils are sold in glass, PET, or lined containers, not tinplate. No non-canned tin pathway exists for oils. A canned oil would fall under the canned-food tin ML and is out of this subcategory's scope.",
+        "reference_method": null,
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      },
+      "Al": {
+        "type": "not_material",
+        "provenance_tag": "not-material",
+        "value": null,
+        "rationale": "No sovereign aluminium ML exists for edible oils (the only government aluminium food ML in any jurisdiction is AU-NZ infant-formula Al 500). Aluminium does not partition into a refined lipid matrix and a plant oil has no aluminium uptake or migration pathway. Rebuttable and audited against the register each build.",
+        "reference_method": null,
+        "audit": {
+          "same_form": [],
+          "other_form": []
+        }
+      }
+    }
+  },
+  "method": "HMTc Method v2.0 (government-limit default; face value, no reconstitution; read-across / control / not-material for unregulated cells; no occurrence percentiles)",
+  "provenance_vocabulary": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "version": "v1.0 (2026-08-13, initial compilation)",
+  "lineage_note": "Initial Cat-30 government-limit standard. Edible-oil MLs (EU 2023/915, Codex named-vegetable-oils, GSO 193:2021, Thailand MOPH 414, India FSSAI, Israel FCS) govern Pb/Cd/tAs/iAs/tHg at face value; nickel is held under a hydrogenation-catalyst screen (no sovereign oil Ni ML); Al/Sn/total-Cr not-material; Cr-VI reflex control; MeHg not-material (no marine methylation pathway in a plant oil).",
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat30-config.json",
+  "verify": {
+    "defects": [],
+    "warnings": [
+      "olive-oil[default].Pb: informational — stricter rows exist for a different product form (TH 40 [fat spreads and blended spreads]; SG 40 [fat spreads and blended spreads])"
+    ],
+    "status": "PASS"
+  }
+}

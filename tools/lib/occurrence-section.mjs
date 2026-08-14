@@ -325,6 +325,19 @@ export function descriptorFromCompiledCell(cell, analyte) {
     d.isNotMaterial = true
     d.notMaterialProse = cell.control || cell.rationale || ""
     d.notMaterialMethod = cell.reference_method || null
+  } else if (cell.type === "control") {
+    // Mandatory nonnumeric control: no sovereign ML exists but a real pathway does, so the
+    // analyte is screened, not capped with an invented number. Render it through the
+    // no-standalone-limit path with the compiler's own control rationale + reference method.
+    d.isNotMaterial = true
+    d.notMaterialProse = cell.rationale || cell.control || ""
+    d.notMaterialMethod = cell.reference_method || null
+  } else if (cell.type === "subsumed") {
+    // A species governed by and bounded by its parent total (iAs <= tAs, MeHg <= tHg): no
+    // separate ceiling is published; enforced by reflex speciation.
+    d.isNotMaterial = true
+    d.notMaterialProse = cell.label || cell.rationale || ""
+    d.notMaterialMethod = cell.reference_method || null
   } else if (cell.type === "special") {
     if (v != null) d.limitPpb = v
     d.readAcrossLabel = cell.label || ""

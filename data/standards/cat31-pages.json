@@ -1,0 +1,153 @@
+{
+  "_doc": "Per-page metadata for the Category-31 (Sweeteners and Syrups) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat31-compiled/<record>.json (deterministic; no authored values). Display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 31,
+    "category_name": "Sweeteners and Syrups",
+    "volume_name": "Sweeteners and Syrups",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat31-compiled",
+    "method_label": "Strictest government ML",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "honey",
+      "name": "Honey",
+      "description": "The Heavy Metal Tested & Certified standard for Honey (Sweeteners and Syrups), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "honey"
+        }
+      ]
+    },
+    {
+      "slug": "refined-sugar",
+      "name": "Refined sugar (white, dextrose)",
+      "description": "The Heavy Metal Tested & Certified standard for Refined sugar (white, dextrose) (Sweeteners and Syrups), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "refined-sugar"
+        }
+      ]
+    },
+    {
+      "slug": "rice-grain-syrup",
+      "name": "Rice and grain syrup (brown rice syrup, glucose/malt syrup)",
+      "description": "The Heavy Metal Tested & Certified standard for Rice and grain syrup (brown rice syrup, glucose/malt syrup) (Sweeteners and Syrups), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "rice-grain-syrup"
+        }
+      ]
+    },
+    {
+      "slug": "syrups-maple-agave-molasses",
+      "name": "Syrups (maple, agave, molasses)",
+      "description": "The Heavy Metal Tested & Certified standard for Syrups (maple, agave, molasses) (Sweeteners and Syrups), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "syrups-maple-agave-molasses"
+        }
+      ]
+    }
+  ]
+}

@@ -42,6 +42,18 @@ const ANALYTE = {
 }
 const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
 
+// A cell is "firm" (carries a standalone published ceiling) only when it resolves to a
+// number via a sovereign lookup, a disclosed read-across, or a special-basis limit.
+// control / subsumed / not_material cells are governed but carry NO standalone number, so
+// they must not be counted as firm ceilings (the count feeds the honest master-table note,
+// the front-matter firm_analytes, and the /standards index "N firm" badge).
+const isFirm = (cell) => !!(cell && cell.value != null && (cell.type === "gov" || cell.type === "read_across" || cell.type === "special"))
+// Native basis arrives as as_sold / as_consumed (cat1, seafood, grains, cat16) OR as a free
+// string ("as placed on market", "as sold", "as consumed") from the newer per-category
+// compilers. Normalise both to the display word and the front-matter token.
+const basisWordOf = (nb) => (String(nb || "").toLowerCase().includes("consum") ? "as-consumed" : "as-sold")
+const normBasis = (nb) => (basisWordOf(nb) === "as-consumed" ? "as_consumed" : "as_sold")
+
 // Jurisdiction display labels + optional regulation-page slugs. A header/link renders only when the
 // regulation page actually exists on disk (existsSync-gated), so no category can emit a broken link.
 const JUR_LABEL = {
@@ -81,25 +93,42 @@ function bindingLabel(cell) {
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
   }
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
+  if (cell.type === "control") return "mandatory control — no government ML; screened every lot (see note)"
+  if (cell.type === "subsumed") return `bounded by ${esc(cell.subsumed_by || "parent total")} — reflex speciation (see note)`
   return "&mdash;"
 }
 
 // Collapse one analyte across variants into a single display value ("X" or "X lab1 / Y lab2").
 function limitDisplay(analyte, variants) {
   const parts = variants.map((v) => ({ label: v.label, val: v.cells[analyte] }))
-  const vals = parts.map((p) => (!p.val ? "&mdash;" : p.val.value == null ? (p.val.type === "not_material" ? "n/m" : "&mdash;") : String(p.val.value)))
+  const vals = parts.map((p) => {
+    if (!p.val) return "&mdash;"
+    if (p.val.value == null) {
+      if (p.val.type === "not_material") return "n/m"
+      if (p.val.type === "control") return "control"
+      if (p.val.type === "subsumed") return "bounded"
+      return "&mdash;"
+    }
+    return String(p.val.value)
+  })
   if (vals.every((x) => x === vals[0])) return vals[0]
   return parts.map((p, i) => `${vals[i]} ${p.label}`).join(" / ")
 }
 
 // --- Master Limit Table -------------------------------------------------------
-function masterTable(variants, basisWord, tierNote) {
+function masterTable(variants, basisWord, tierNote, firmCount) {
   const rows = PANEL.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
-  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
+  // Honest cap note: a fully-numeric category (seafood, grains) states every analyte carries a
+  // firm ceiling; a partially-numeric category states the firm count and that the rest are
+  // governed controls with no standalone number — never overclaiming a ceiling that isn't there.
+  const capNote = firmCount >= PANEL.length
+    ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
+    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remainder are governed by mandatory control or reflex-speciation screening with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
+  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------
@@ -108,7 +137,7 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
   for (const a of PANEL) { const c = primary.cells[a]; if (c && c.per_country) Object.keys(c.per_country).forEach((j) => present.add(j)) }
   const cols = JUR_ORDER.filter((j) => present.has(j)).concat([...present].filter((j) => !JUR_ORDER.includes(j)))
   const th = cols.map((j) => { const h = reg(j); const lbl = jlabel(j); return `<th style="text-align:right;padding:9px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">${h ? `<a href="${h}" style="color:#fff;text-decoration:underline;text-underline-offset:2px">${lbl}</a>` : lbl}</th>` }).join("")
-  let anyConv = false
+  let anyConv = false, anyControl = false, anySubsumed = false
   const body = PANEL.map((a) => {
     const c = primary.cells[a]
     const tds = cols.map((j) => {
@@ -125,14 +154,19 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       return `<td style="padding:9px 10px;text-align:right;font-family:'IBM Plex Mono',monospace;color:${color}">${pc.value}${conv}</td>`
     }).join("")
     let hmtc, binds
-    if (!c || c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
+    if (!c) { hmtc = "&mdash;"; binds = "&mdash;" }
+    else if (c.type === "control") { hmtc = "control&sup4;"; binds = "screened"; anyControl = true }
+    else if (c.type === "subsumed") { hmtc = "bounded&sup5;"; binds = `&le; ${esc(c.subsumed_by || "total")}`; anySubsumed = true }
+    else if (c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "read_across") { hmtc = `${c.value}&sup2;`; binds = c.basis_kind === "occurrence" ? "occurrence" : c.basis_kind === "precautionary" ? "precautionary" : "read-across" }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
     else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government sets this analyte for this exact product form: the value is read across from the nearest government limit for an analogous product, or &mdash; where the Binds column reads occurrence or precautionary &mdash; taken from measured occurrence data or set as a precautionary near-neighbour value; the ratchet tightens it as surveillance warrants. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${otherNote || ""}`
+  const ctrlNote = anyControl ? "&sup4; no sovereign maximum exists for this analyte in this product, but a credible exposure pathway does &mdash; it is screened on every lot under ALARA against the tightest analogous reference, not assigned an invented number. " : ""
+  const subNote = anySubsumed ? "&sup5; a species governed by and bounded by its parent total (for example inorganic arsenic &le; total arsenic); no separate ceiling is published and reflex speciation enforces it whenever the total is elevated. " : ""
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government sets this analyte for this exact product form: the value is read across from the nearest government limit for an analogous product, or &mdash; where the Binds column reads occurrence or precautionary &mdash; taken from measured occurrence data or set as a precautionary near-neighbour value; the ratchet tightens it as surveillance warrants. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${ctrlNote}${subNote}${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
@@ -155,10 +189,12 @@ let n = 0
 for (const page of DOC.pages) {
   const variants = page.variants.map((v) => {
     const rec = JSON.parse(fs.readFileSync(path.join(COMPILED, `${v.record}.json`), "utf8"))
-    const cells = rec.variants[v.variant] || rec.variants[Object.keys(rec.variants)[0]]
+    const vmap = rec.variants || { both: rec.cells }
+    const cells = vmap[v.variant] || vmap[Object.keys(vmap)[0]]
     return { label: v.label, cells, native_basis: rec.native_basis }
   })
-  const basisWord = variants[0].native_basis === "as_sold" ? "as-sold" : "as-consumed"
+  const basisWord = basisWordOf(variants[0].native_basis)
+  const firmCount = PANEL.filter((a) => isFirm(variants[0].cells[a])).length
   const version = page.version || META.default_version
   const vshort = version.split(" ")[0]
   const certDoi = page.cert_doi || null
@@ -176,8 +212,8 @@ for (const page of DOC.pages) {
     `product_slug: ${page.slug}`,
     "custom_page: true",
     `subcategory: "${page.name}"`,
-    `firm_analytes: ${PANEL.length}`,
-    `native_basis: ${variants[0].native_basis}`,
+    `firm_analytes: ${firmCount}`,
+    `native_basis: ${normBasis(variants[0].native_basis)}`,
     `standard_version: "${version}"`,
     `methodology_version: "${META.methodology_version}"`,
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
@@ -190,8 +226,8 @@ for (const page of DOC.pages) {
     '  title: "Document versions"',
     `  body: "v${vshort} · ${META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     "snapshot:",
-    `  - { k: "Analytes limited", v: "${PANEL.length} / ${PANEL.length}" }`,
-    '  - { k: "Method", v: "Strictest government ML" }',
+    `  - { k: "Analytes limited", v: "${firmCount} / ${PANEL.length}" }`,
+    `  - { k: "Method", v: "${META.method_label || "Strictest government ML"}" }`,
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,
     "connections:",
@@ -209,7 +245,7 @@ for (const page of DOC.pages) {
 
   const body = [
     methodSection(page.name, basisWord),
-    masterTable(variants, basisWord, tierNote),
+    masterTable(variants, basisWord, tierNote, firmCount),
     derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note),
     occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi, META.volume_name),
