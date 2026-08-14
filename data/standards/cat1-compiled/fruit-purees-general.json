@@ -18,10 +18,20 @@
             "converted": true,
             "id": "fda2025_pb_baby_food_10"
           },
+          "PA": {
+            "value": 10,
+            "converted": true,
+            "id": "pa_decreto467_2007_pb_fruits"
+          },
           "BR": {
             "value": 20,
             "converted": true,
             "id": "br_pb_transition-weaning-foods-for-infants-and_20"
+          },
+          "HK": {
+            "value": 20,
+            "converted": true,
+            "id": "hk_cap132v_pb_ready-to-eat-complementary-food-other-than-cereal-based_20"
           },
           "MA": {
             "value": 30,
@@ -73,6 +83,11 @@
             "converted": true,
             "id": "mercosur_gmc12_2011_fresh_fruits_excluding_berries_small_fruits_pb_100"
           },
+          "VN": {
+            "value": 100,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_tropical-fruits_100"
+          },
           "SG": {
             "value": 200,
             "converted": true,
@@ -82,11 +97,6 @@
             "value": 7000,
             "converted": true,
             "id": "tt_fooddrugs_2007_div6_fresh_fruits_pb_7000"
-          },
-          "EU": {
-            "value": 10000,
-            "converted": true,
-            "id": "eu2002_32_pb_complementary_feed_10000"
           }
         }
       },
@@ -117,6 +127,47 @@
             "value": 200,
             "converted": true,
             "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tAs": {
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "government read-across — India FSSAI total-arsenic 50 for 'Infant Milk substitute and Infant foods' (register row in_tas_infant-milk-substitute-and-infant-foods_50), the strictest infant/baby total-arsenic ML in the register (Singapore baby-food tAs 100 is looser). Mandatory total-As cell; iAs cannot satisfy the total-As requirement (iAs <= tAs). Applied as a government read-across for this fruit-purée matrix, which India's infant-foods scope does not name directly.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
+          },
+          "PY": {
+            "value": 300,
+            "converted": true,
+            "id": "py_decreto1335_2019_fresh_fruits_excluding_berries_small_fruits_tas_300"
+          },
+          "MERCOSUR": {
+            "value": 300,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fresh_fruits_excluding_berries_small_fruits_tas_300"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_3_fruits_and_vegetables_including_mushrooms_edible_pla_1000"
+          },
+          "VN": {
+            "value": 1000,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_tas_dried-vegetables-and-fruits_1000"
+          },
+          "TT": {
+            "value": 2000,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_div6_fresh_fruits_tas_2000"
           }
         }
       },

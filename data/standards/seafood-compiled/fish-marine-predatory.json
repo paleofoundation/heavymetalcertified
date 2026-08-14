@@ -1,37 +1,71 @@
 {
   "slug": "fish-marine-predatory",
   "name": "Marine predatory fish (tuna, swordfish, shark, king mackerel, marlin, billfish)",
+  "category": 6,
+  "category_name": "Seafood",
   "native_basis": "as_consumed",
+  "native_basis_label": "edible portion, as consumed (wet weight)",
   "canned": false,
+  "scope_note": "Marine predatory finfish (tuna, swordfish, shark, king mackerel, marlin, billfish), fresh or frozen, edible portion. Lead binds the muscle-meat-of-fish 200 line; total mercury binds the EU higher-mercury-fish 1000 ceiling (not the general 500). MeHg is bounded by tHg. Total chromium binds HK fish 1000 (India all-fishery 12000 concurs, looser). Ni and Al are screened (no sovereign ML); Sn and Cr-VI are not-material. Canned predatory fish route to the canned-seafood subcategory.",
   "variants": {
     "both": {
       "Pb": {
         "type": "gov",
         "value": 200,
         "value_exact": 200,
-        "binding_jurisdiction": "CR",
-        "binding_id": "cr_rtcr409_2008_pb_tuna_bonito_200",
+        "binding_jurisdiction": "FJ",
+        "binding_id": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200",
         "basis_note": "face value",
         "per_country": {
-          "CR": {
+          "FJ": {
             "value": 200,
             "converted": true,
-            "id": "cr_rtcr409_2008_pb_tuna_bonito_200"
+            "id": "fj_fsr2009_pb_007_muscle_meat_of_fish_excluding_those_listed_below_200"
           },
           "EU": {
             "value": 300,
             "converted": true,
             "id": "eu2023_pb_fish_muscle_300"
           },
+          "IN": {
+            "value": 300,
+            "converted": true,
+            "id": "in_fssai2016_pb_046_fish_300"
+          },
+          "GSO": {
+            "value": 300,
+            "converted": true,
+            "id": "gso193_2021_pb_fish_300"
+          },
+          "CR": {
+            "value": 300,
+            "converted": true,
+            "id": "cr_rtcr409_2008_pb_fish_general_300"
+          },
+          "GY": {
+            "value": 300,
+            "converted": true,
+            "id": "gy2023_pb_fish_general_ppm_300"
+          },
           "PA": {
             "value": 300,
             "converted": true,
             "id": "pa_res368_2009_pb_fish_300"
           },
+          "TH": {
+            "value": 300,
+            "converted": true,
+            "id": "th_moph414_2020_pb_fish_300"
+          },
           "PY": {
             "value": 300,
             "converted": true,
             "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_pb_300"
+          },
+          "PH": {
+            "value": 300,
+            "converted": true,
+            "id": "ph_pns194_2017_fish_pb_300"
           },
           "IL": {
             "value": 300,
@@ -48,10 +82,145 @@
             "converted": true,
             "id": "vn_qcvn8_2_2011_pb_fish-fillets_300"
           },
-          "FJ": {
-            "value": 400,
+          "HK": {
+            "value": 300,
             "converted": true,
-            "id": "fj_fsr2009_pb_008_muscle_meat_of_bonito_sarda_sarda_horse_mackerel_or_scad_trachurus_tra_400"
+            "id": "hk_cap132v_pb_fish_300"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_pb_fish_500"
+          },
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom242_pb_fish_crustaceans_500"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_fish_crustaceans_molluscs_pb_2000"
+          },
+          "TT": {
+            "value": 2000,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_fish_fishery_products_pb_2000"
+          }
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "GSO",
+        "binding_id": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50",
+        "basis_note": "face value",
+        "per_country": {
+          "GSO": {
+            "value": 50,
+            "converted": true,
+            "id": "gso193_2021_cd_muscle_meat_of_fish_with_exception_mentioned_50"
+          },
+          "CR": {
+            "value": 50,
+            "converted": true,
+            "id": "cr_rtcr409_2008_cd_fish_general_50"
+          },
+          "GY": {
+            "value": 50,
+            "converted": true,
+            "id": "gy2023_cd_fish_general_ppm_50"
+          },
+          "PA": {
+            "value": 50,
+            "converted": true,
+            "id": "pa_res368_2009_cd_fish_general_50"
+          },
+          "PY": {
+            "value": 50,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_other_cd_50"
+          },
+          "IL": {
+            "value": 50,
+            "converted": true,
+            "id": "il_fcs2016_cd_9_fish_and_fish_products_except_listed_categories_50"
+          },
+          "FJ": {
+            "value": 50,
+            "converted": true,
+            "id": "fj_fsr2009_cd_002_muscle_meat_of_fish_excluding_those_listed_below_50"
+          },
+          "MERCOSUR": {
+            "value": 50,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_other_cd_50"
+          },
+          "VN": {
+            "value": 100,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_cd_anchovy-tuna-two-striped-bream-eel-mullet-japa_100"
+          },
+          "HK": {
+            "value": 100,
+            "converted": true,
+            "id": "hk_cap132v_cd_fish_100"
+          },
+          "IN": {
+            "value": 300,
+            "converted": true,
+            "id": "in_fssai2016_cd_016_fish_300"
+          },
+          "MX": {
+            "value": 500,
+            "converted": true,
+            "id": "mx_nom242_cd_fishery_other_500"
+          },
+          "TH": {
+            "value": 1000,
+            "converted": true,
+            "id": "th_moph414_2020_cd_fish_1000"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "SG",
+        "binding_id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "SG": {
+            "value": 1000,
+            "converted": true,
+            "id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
+          },
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_9_fish_and_fish_products_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_tas_1000"
+          },
+          "AU-NZ": {
+            "value": 2000,
+            "converted": true,
+            "id": "aunz_sch19_tas_fish_2000"
+          },
+          "IN": {
+            "value": 76000,
+            "converted": true,
+            "id": "in_fssai2016_tas_012_fish_and_crustaceans_76000"
           }
         }
       },
@@ -67,31 +236,11 @@
             "value": 100,
             "converted": true,
             "id": "eu20251891_ias_fish_other_100"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "PY",
-        "binding_id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "PY": {
-            "value": 1000,
-            "converted": true,
-            "id": "py_decreto1335_2019_fish_raw_frozen_refrigerated_tas_1000"
           },
-          "IL": {
-            "value": 1000,
+          "HK": {
+            "value": 100,
             "converted": true,
-            "id": "il_fcs2016_tas_9_fish_and_fish_products_1000"
-          },
-          "MERCOSUR": {
-            "value": 1000,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_fish_raw_frozen_refrigerated_tas_1000"
+            "id": "hk_cap132v_ias_fish_100"
           }
         }
       },
@@ -101,180 +250,64 @@
         "value_exact": 1000,
         "binding_jurisdiction": "EU",
         "binding_id": "eu2023_hg_fish_high_1000",
-        "basis_note": "face value",
+        "basis_note": "edible portion, wet weight; total mercury. Predatory species (tuna, swordfish, shark, marlin, king mackerel) bind the EU 2023/915 higher-mercury-fish ceiling of 1000; the general 500 does not apply to these listed higher-mercury species.",
         "per_country": {
           "EU": {
             "value": 1000,
-            "converted": true,
+            "converted": false,
             "id": "eu2023_hg_fish_high_1000"
-          },
-          "AU-NZ": {
-            "value": 1000,
-            "converted": true,
-            "id": "aunz_sch19_hg_fish_listed_1000"
-          },
-          "IN": {
-            "value": 1000,
-            "converted": true,
-            "id": "in_fssai2016_thg_004_predatory_fish_tuna_marlin_sword_fish_elasmobranch_1000"
-          },
-          "CR": {
-            "value": 1000,
-            "converted": true,
-            "id": "cr_rtcr409_2008_thg_listed_predatory_fish_1000"
-          },
-          "GY": {
-            "value": 1000,
-            "converted": true,
-            "id": "gy2023_thg_tuna_marlin_bonito_rays_tunas_ppm_1000"
-          },
-          "PA": {
-            "value": 1000,
-            "converted": true,
-            "id": "pa_res368_2009_thg_listed_fish_1000"
-          },
-          "SG": {
-            "value": 1000,
-            "converted": true,
-            "id": "sg_foodregs_2026_predatory_fish_thg_1000"
-          },
-          "PY": {
-            "value": 1000,
-            "converted": true,
-            "id": "py_decreto1335_2019_predatory_fish_thg_1000"
-          },
-          "IL": {
-            "value": 1000,
-            "converted": true,
-            "id": "il_fcs2016_thg_9_1_pike_tuna_anchovy_sardines_swordfish_shark_and_other_1000"
-          },
-          "MA": {
-            "value": 1000,
-            "converted": true,
-            "id": "ma_2410_2022_thg_3_3_2_chair_musculaire_des_poissons_listes_au_point_3_3_2_notamment_baudroie_1000"
-          },
-          "FJ": {
-            "value": 1000,
-            "converted": true,
-            "id": "fj_fsr2009_thg_001_sharks_all_species_tuna_thunnus_spp_little_tuna_euthynnus_spp_bonito_s_1000"
-          },
-          "MERCOSUR": {
-            "value": 1000,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_predatory_fish_thg_1000"
-          },
-          "VN": {
-            "value": 1000,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_thg_frogfish-catfish-tuna-eel-cardinal-fish-cod-fl_1000"
-          },
-          "GSO": {
-            "value": 1200,
-            "converted": true,
-            "id": "gso193_2021_thg_tuna_1200"
           }
         }
       },
       "MeHg": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "MX",
-        "binding_id": "mx_nom242_mehg_tuna_group_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "MX": {
-            "value": 1000,
-            "converted": true,
-            "id": "mx_nom242_mehg_tuna_group_1000"
-          },
-          "TH": {
-            "value": 1000,
-            "converted": true,
-            "id": "th_moph414_2020_mehg_predator_fish_other_1000"
-          },
-          "PH": {
-            "value": 1000,
-            "converted": true,
-            "id": "ph_pns194_2017_predatory_fish_mehg_1000"
-          },
-          "TT": {
-            "value": 1000,
-            "converted": true,
-            "id": "tt_fooddrugs_2007_predatory_fish_mehg_1000"
-          },
-          "VN": {
-            "value": 1000,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_mehg_carnivorous-fish-shark-swordfish-tuna-pike-etc_1000"
-          },
-          "GSO": {
-            "value": 1200,
-            "converted": true,
-            "id": "gso193_2021_mehg_tuna_1200"
-          }
-        }
+        "type": "not_material",
+        "value": null,
+        "control": "Methylmercury is the organomercury speciation of total mercury and is arithmetically bounded by it (MeHg <= tHg). The binding total-mercury ceiling for this subcategory (total mercury ceiling) is equal to or stricter than the lowest applicable sovereign methylmercury ML for this product, so passing the total-mercury limit guarantees methylmercury compliance and no separate methylmercury ceiling is published. Audit-affirmed.",
+        "reference_method": "Total-mercury screen; reflex MeHg speciation is optional and cannot exceed the tHg ceiling."
       },
-      "Cd": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "CR",
-        "binding_id": "cr_rtcr409_2008_cd_fish_general_50",
-        "basis_note": "face value",
-        "per_country": {
-          "CR": {
-            "value": 50,
-            "converted": true,
-            "id": "cr_rtcr409_2008_cd_fish_general_50"
-          },
-          "GSO": {
-            "value": 100,
-            "converted": true,
-            "id": "gso193_2021_cd_muscle_meat_of_fish_mackerel_tuna_and_bichique_100"
-          },
-          "GY": {
-            "value": 100,
-            "converted": true,
-            "id": "gy2023_cd_tuna_marlin_bonito_rays_tunas_ppm_100"
-          },
-          "PA": {
-            "value": 100,
-            "converted": true,
-            "id": "pa_res368_2009_cd_listed_fish_100"
-          },
-          "PY": {
-            "value": 100,
-            "converted": true,
-            "id": "py_decreto1335_2019_fish_cadmium_exception_group_010_cd_100"
-          },
-          "FJ": {
-            "value": 100,
-            "converted": true,
-            "id": "fj_fsr2009_cd_003_muscle_meat_of_bonito_sarda_sarda_horse_mackerel_or_scad_trachurus_tra_100"
-          },
-          "MERCOSUR": {
-            "value": 100,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_fish_cadmium_exception_group_010_cd_100"
-          },
-          "VN": {
-            "value": 100,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_cd_anchovy-tuna-two-striped-bream-eel-mullet-japa_100"
-          },
-          "IL": {
-            "value": 250,
-            "converted": true,
-            "id": "il_fcs2016_cd_9_1_pike_tuna_anchovy_sardines_swordfish_shark_and_other_250"
-          }
-        }
+      "Ni": {
+        "type": "not_material",
+        "value": null,
+        "control": "No jurisdiction sets a nickel maximum level for fish or fishery products anywhere in the register or worldwide (EU 2024/1987 nickel covers plant foods and seaweed only, not animal seafood). Nickel is screened rather than assigned an invented or mis-based number.",
+        "reference_method": "Total-nickel screen (ICP-MS); no sovereign fish/fishery Ni ML."
       },
       "Sn": {
         "type": "not_material",
         "value": null,
-        "control": "Tin is a can-migration analyte only: it enters food by dissolution from tinplate can walls, and fresh, frozen, or otherwise non-canned predatory fish (whole, fillet, loin, or portion) has no tin source. No government sets a tin ML for non-canned fish anywhere in the register; every seafood tin limit is scoped to canned/tinplate product and is excluded by the compiler's canned-gate for this non-canned subcategory. Canned predatory-fish products are certified under the canned-seafood subcategory, where the governing tin ceiling is the canned-food ML (Codex CXS 193 / GSO / India canned foods 250000 ug/kg; Chile canned fish and shellfish 250000 ug/kg). For non-canned product, tin is controlled by screen, not limited: any result above the reporting limit is investigated as evidence of unintended metal contact rather than an inherent property of the fish.",
-        "reference_method": "Total Sn by ICP-MS or ICP-OES (e.g. AOAC 985.16 / EN 15764); screen threshold for non-canned product set at the method LOQ, with any quantifiable tin triggering a packaging/contact-material investigation."
+        "control": "Fresh/frozen seafood has no tinplate contact; inorganic tin is a can-migration analyte. A full register Sn sweep shows every seafood tin ML is canned/tinplate-migration scope; no sovereign sets a non-canned seafood tin matrix limit. Canned product is certified under the canned-seafood subcategory tin limit.",
+        "reference_method": "Packaging control (non-tinplate); ICP-MS per-lot screen; escalate to the canned-seafood Sn limit if packaged in tinplate."
+      },
+      "Al": {
+        "type": "not_material",
+        "value": null,
+        "control": "No credible regulator sets an aluminium contaminant maximum level for seafood in any checked jurisdiction. Aluminium in seafood is background; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI, not by a per-food maximum level.",
+        "reference_method": "Total-aluminium screen (ICP-MS); managed by intake vs the EFSA/JECFA TWI; no per-food seafood contaminant ML to align to."
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_crtotal_fish_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "HK": {
+            "value": 1000,
+            "converted": true,
+            "id": "hk_cap132v_crtotal_fish_1000"
+          },
+          "IN": {
+            "value": 12000,
+            "converted": true,
+            "id": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+          }
+        }
+      },
+      "Cr-VI": {
+        "type": "not_material",
+        "value": null,
+        "control": "Hexavalent chromium is the Cr(VI) speciation of chromium and is bounded by the total-chromium government limit (Cr-VI <= total Cr), which binds at 1000 for fish here. No jurisdiction sets a Cr-VI food maximum level, and in a reducing animal-tissue matrix Cr(VI) is reduced to Cr(III), so there is no chromate pathway in seafood (unlike lead-chromate-adulterated spices). Rebuttable if a routed source reports hexavalent chromium.",
+        "reference_method": "Bounded by the total-chromium government limit; reflex Cr-VI speciation only on anomalously elevated total chromium."
       }
     }
   },

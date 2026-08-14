@@ -1,8 +1,12 @@
 {
   "slug": "shellfish",
-  "name": "Shellfish (crustaceans and bivalve molluscs, not canned)",
+  "name": "Shellfish (crustaceans and bivalve molluscs — shrimp, crab, lobster, clams, oysters, mussels; not canned)",
+  "category": 6,
+  "category_name": "Seafood",
   "native_basis": "as_consumed",
+  "native_basis_label": "edible portion, as consumed (wet weight)",
   "canned": false,
+  "scope_note": "Shellfish (crustaceans — shrimp, crab, lobster; and bivalve molluscs — clams, oysters, mussels), fresh or frozen, not canned. Lead and cadmium bind the stricter crustacean 500 across the whole subcategory; inorganic arsenic binds the EU crabs/prawns/shrimps 100; total mercury binds the crustaceans/molluscs general 500. MeHg bounded by tHg; total Cr binds HK 1000 (crustaceans and oysters; India all-fishery 12000 concurs); Ni/Al screened; Sn/Cr-VI not-material. Cephalopods are certified in their own subcategory; canned shellfish route to the canned-seafood subcategory.",
   "variants": {
     "both": {
       "Pb": {
@@ -73,155 +77,25 @@
             "converted": true,
             "id": "vn_qcvn8_2_2011_pb_crustaceans-except-for-brown-crab-meat-head-an_500"
           },
+          "HK": {
+            "value": 500,
+            "converted": true,
+            "id": "hk_cap132v_pb_crustaceans_500"
+          },
           "EU": {
             "value": 1500,
             "converted": true,
             "id": "eu2023_pb_bivalve_1500"
           },
+          "AU-NZ": {
+            "value": 2000,
+            "converted": true,
+            "id": "aunz_sch19_pb_molluscs_2000"
+          },
           "SG": {
             "value": 2000,
             "converted": true,
             "id": "sg_foodregs_2026_fish_crustaceans_molluscs_pb_2000"
-          }
-        }
-      },
-      "iAs": {
-        "type": "gov",
-        "value": 100,
-        "value_exact": 100,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu20251891_ias_crabs_prawns_shrimps_100",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 100,
-            "converted": true,
-            "id": "eu20251891_ias_crabs_prawns_shrimps_100"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "SG",
-        "binding_id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "SG": {
-            "value": 1000,
-            "converted": true,
-            "id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
-          },
-          "PY": {
-            "value": 1000,
-            "converted": true,
-            "id": "py_decreto1335_2019_bivalve_molluscs_tas_1000"
-          },
-          "MERCOSUR": {
-            "value": 1000,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_bivalve_molluscs_tas_1000"
-          },
-          "AU-NZ": {
-            "value": 2000,
-            "converted": true,
-            "id": "aunz_sch19_tas_crustacea_2000"
-          },
-          "IN": {
-            "value": 76000,
-            "converted": true,
-            "id": "in_fssai2016_tas_012_fish_and_crustaceans_76000"
-          },
-          "MX": {
-            "value": 80000,
-            "converted": true,
-            "id": "mx_nom242_tas_crustaceans_bivalves_80000"
-          }
-        }
-      },
-      "tHg": {
-        "type": "gov",
-        "value": 500,
-        "value_exact": 500,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_hg_fish_general_500",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 500,
-            "converted": true,
-            "id": "eu2023_hg_fish_general_500"
-          },
-          "AU-NZ": {
-            "value": 500,
-            "converted": true,
-            "id": "aunz_sch19_hg_fish_other_500"
-          },
-          "IN": {
-            "value": 500,
-            "converted": true,
-            "id": "in_fssai2016_thg_003_non_predatory_fish_crustaceans_cephalopods_molluscs_500"
-          },
-          "CR": {
-            "value": 500,
-            "converted": true,
-            "id": "cr_rtcr409_2008_thg_crust_ceph_bivalves_500"
-          },
-          "GY": {
-            "value": 500,
-            "converted": true,
-            "id": "gy2023_thg_crustaceans_ppm_500"
-          },
-          "PA": {
-            "value": 500,
-            "converted": true,
-            "id": "pa_res368_2009_thg_fishery_products_general_500"
-          },
-          "PY": {
-            "value": 500,
-            "converted": true,
-            "id": "py_decreto1335_2019_bivalve_molluscs_thg_500"
-          },
-          "MA": {
-            "value": 500,
-            "converted": true,
-            "id": "ma_2410_2022_thg_3_3_1_produits_de_la_peche_et_chair_musculaire_de_poissons_a_l_exclusion_des_500"
-          },
-          "MERCOSUR": {
-            "value": 500,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_bivalve_molluscs_thg_500"
-          },
-          "VN": {
-            "value": 500,
-            "converted": true,
-            "id": "vn_qcvn8_2_2011_thg_crustaceans-except-for-brown-crab-meat-head-an_500"
-          },
-          "GSO": {
-            "value": 1000,
-            "converted": true,
-            "id": "gso193_2021_thg_fishery_products_and_muscle_meat_of_fish_with_exception_mentioned_crusta_1000"
-          }
-        }
-      },
-      "MeHg": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda_cpg540600_mehg_fish_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "US": {
-            "value": 1000,
-            "converted": true,
-            "id": "fda_cpg540600_mehg_fish_1000"
-          },
-          "GSO": {
-            "value": 1000,
-            "converted": true,
-            "id": "gso193_2021_mehg_crustaceans_and_crabs_1000"
           }
         }
       },
@@ -293,6 +167,11 @@
             "converted": true,
             "id": "vn_qcvn8_2_2011_cd_crustaceans-except-for-brown-crab-meat-head-an_500"
           },
+          "MX": {
+            "value": 2000,
+            "converted": true,
+            "id": "mx_nom242_cd_molluscs_2000"
+          },
           "TH": {
             "value": 2000,
             "converted": true,
@@ -302,14 +181,173 @@
             "value": 2000,
             "converted": true,
             "id": "ph_pns194_2017_marine_bivalve_molluscs_cd_2000"
+          },
+          "HK": {
+            "value": 2000,
+            "converted": true,
+            "id": "hk_cap132v_cd_crustaceans_2000"
           }
         }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "AU-NZ",
+        "binding_id": "aunz_sch19_tas_molluscs_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "AU-NZ": {
+            "value": 1000,
+            "converted": true,
+            "id": "aunz_sch19_tas_molluscs_1000"
+          },
+          "SG": {
+            "value": 1000,
+            "converted": true,
+            "id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
+          },
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_bivalve_molluscs_tas_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_bivalve_molluscs_tas_1000"
+          },
+          "IN": {
+            "value": 76000,
+            "converted": true,
+            "id": "in_fssai2016_tas_012_fish_and_crustaceans_76000"
+          },
+          "MX": {
+            "value": 80000,
+            "converted": true,
+            "id": "mx_nom242_tas_crustaceans_bivalves_80000"
+          }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu20251891_ias_crabs_prawns_shrimps_100",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 100,
+            "converted": true,
+            "id": "eu20251891_ias_crabs_prawns_shrimps_100"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_hg_fish_general_500",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 500,
+            "converted": true,
+            "id": "eu2023_hg_fish_general_500"
+          },
+          "AU-NZ": {
+            "value": 500,
+            "converted": true,
+            "id": "aunz_sch19_hg_fish_other_500"
+          },
+          "GY": {
+            "value": 500,
+            "converted": true,
+            "id": "gy2023_thg_crustaceans_ppm_500"
+          },
+          "PA": {
+            "value": 500,
+            "converted": true,
+            "id": "pa_res368_2009_thg_fishery_products_general_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_bivalve_molluscs_thg_500"
+          },
+          "MA": {
+            "value": 500,
+            "converted": true,
+            "id": "ma_2410_2022_thg_3_3_1_produits_de_la_peche_et_chair_musculaire_de_poissons_a_l_exclusion_des_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_bivalve_molluscs_thg_500"
+          },
+          "VN": {
+            "value": 500,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_thg_crustaceans-except-for-brown-crab-meat-head-an_500"
+          },
+          "GSO": {
+            "value": 1000,
+            "converted": true,
+            "id": "gso193_2021_thg_fishery_products_and_muscle_meat_of_fish_with_exception_mentioned_crusta_1000"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "not_material",
+        "value": null,
+        "control": "Methylmercury is the organomercury speciation of total mercury and is arithmetically bounded by it (MeHg <= tHg). The binding total-mercury ceiling for this subcategory (500) is equal to or stricter than the lowest applicable sovereign methylmercury ML for this product, so passing the total-mercury limit guarantees methylmercury compliance and no separate methylmercury ceiling is published. Audit-affirmed.",
+        "reference_method": "Total-mercury screen; reflex MeHg speciation is optional and cannot exceed the tHg ceiling."
+      },
+      "Ni": {
+        "type": "not_material",
+        "value": null,
+        "control": "No jurisdiction sets a nickel maximum level for fish or fishery products anywhere in the register or worldwide (EU 2024/1987 nickel covers plant foods and seaweed only, not animal seafood). Nickel is screened rather than assigned an invented or mis-based number.",
+        "reference_method": "Total-nickel screen (ICP-MS); no sovereign fish/fishery Ni ML."
       },
       "Sn": {
         "type": "not_material",
         "value": null,
-        "control": "Tin is a can-migration analyte; not material for fresh/frozen shellfish placed on market without a tinplate container. Every government Sn ML for fishery products is a canned-only limit (MX/CR/IN 100-200 mg/kg). Reflex to the canned-seafood subcategory standard if the product is canned.",
-        "reference_method": "ICP-MS per EN 15763 / AOAC 2015.01"
+        "control": "Fresh/frozen seafood has no tinplate contact; inorganic tin is a can-migration analyte. A full register Sn sweep shows every seafood tin ML is canned/tinplate-migration scope; no sovereign sets a non-canned seafood tin matrix limit. Canned product is certified under the canned-seafood subcategory tin limit.",
+        "reference_method": "Packaging control (non-tinplate); ICP-MS per-lot screen; escalate to the canned-seafood Sn limit if packaged in tinplate."
+      },
+      "Al": {
+        "type": "not_material",
+        "value": null,
+        "control": "No credible regulator sets an aluminium contaminant maximum level for seafood in any checked jurisdiction. Aluminium in seafood is background; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI, not by a per-food maximum level.",
+        "reference_method": "Total-aluminium screen (ICP-MS); managed by intake vs the EFSA/JECFA TWI; no per-food seafood contaminant ML to align to."
+      },
+      "Cr": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_crtotal_crabs-prawns-and-shrimps_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "HK": {
+            "value": 1000,
+            "converted": true,
+            "id": "hk_cap132v_crtotal_crabs-prawns-and-shrimps_1000"
+          },
+          "IN": {
+            "value": 12000,
+            "converted": true,
+            "id": "in_fssai2016_crtotal_001_all_fishery_products_12000"
+          }
+        }
+      },
+      "Cr-VI": {
+        "type": "not_material",
+        "value": null,
+        "control": "Hexavalent chromium is the Cr(VI) speciation of chromium and is bounded by the total-chromium government limit (Cr-VI <= total Cr), which binds at 1000 for crustaceans/oysters here. No jurisdiction sets a Cr-VI food maximum level, and in a reducing animal-tissue matrix Cr(VI) is reduced to Cr(III), so there is no chromate pathway in seafood (unlike lead-chromate-adulterated spices). Rebuttable if a routed source reports hexavalent chromium.",
+        "reference_method": "Bounded by the total-chromium government limit; reflex Cr-VI speciation only on anomalously elevated total chromium."
       }
     }
   },

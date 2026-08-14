@@ -73,6 +73,11 @@
             "converted": false,
             "id": "il_fcs2016_pb_15_infant_formula_ready_to_eat_and_follow_up_formula_10"
           },
+          "HK": {
+            "value": 10,
+            "converted": false,
+            "id": "hk_cap132v_pb_infant-formula-and-follow-up-formula_10"
+          },
           "IN": {
             "value": 20,
             "converted": false,
@@ -87,6 +92,11 @@
             "value": 20,
             "converted": true,
             "id": "fj_fsr2009_pb_006_infant_formula_20"
+          },
+          "VN": {
+            "value": 20,
+            "converted": false,
+            "id": "vn_qcvn8_2_2011_pb_formulae-for-young-children-aged-under-36-mont_20"
           }
         }
       },
@@ -117,6 +127,27 @@
             "value": 100,
             "converted": true,
             "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          }
+        }
+      },
+      "tAs": {
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "government read-across — India FSSAI total-arsenic 50 for 'Infant Milk substitute and Infant foods' (register row in_tas_infant-milk-substitute-and-infant-foods_50). DISCLOSED CROSS-BASIS (medium confidence): the India ML is set on the powder / product-as-such (as_sold) basis, and is applied at face value to this ready-to-feed liquid (as_consumed) form. The 8:1 reconstitution factor is not applied because it inflates a total-arsenic ceiling that is already the strictest infant total-As ML worldwide; face value is the conservative (stricter) choice on a liquid basis. Mandatory total-As cell; iAs cannot satisfy the total-As requirement.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_infant_and_toddler_formulas_ready_to_eat_1000"
           }
         }
       },
@@ -300,6 +331,11 @@
             "converted": false,
             "id": "il_fcs2016_pb_15_infant_formula_ready_to_eat_and_follow_up_formula_10"
           },
+          "HK": {
+            "value": 10,
+            "converted": false,
+            "id": "hk_cap132v_pb_infant-formula-and-follow-up-formula_10"
+          },
           "IN": {
             "value": 20,
             "converted": false,
@@ -314,6 +350,11 @@
             "value": 20,
             "converted": true,
             "id": "fj_fsr2009_pb_006_infant_formula_20"
+          },
+          "VN": {
+            "value": 20,
+            "converted": false,
+            "id": "vn_qcvn8_2_2011_pb_formulae-for-young-children-aged-under-36-mont_20"
           }
         }
       },
@@ -344,6 +385,27 @@
             "value": 100,
             "converted": true,
             "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
+          }
+        }
+      },
+      "tAs": {
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "government read-across — India FSSAI total-arsenic 50 for 'Infant Milk substitute and Infant foods' (register row in_tas_infant-milk-substitute-and-infant-foods_50). DISCLOSED CROSS-BASIS (medium confidence): the India ML is set on the powder / product-as-such (as_sold) basis, and is applied at face value to this ready-to-feed liquid (as_consumed) form. The 8:1 reconstitution factor is not applied because it inflates a total-arsenic ceiling that is already the strictest infant total-As ML worldwide; face value is the conservative (stricter) choice on a liquid basis. Mandatory total-As cell; iAs cannot satisfy the total-As requirement.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_infant_formula_tas_100"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": false,
+            "id": "il_fcs2016_tas_14_infant_and_toddler_formulas_ready_to_eat_1000"
           }
         }
       },

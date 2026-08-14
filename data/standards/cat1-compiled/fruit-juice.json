@@ -48,6 +48,11 @@
             "converted": true,
             "id": "ma_2410_2022_pb_3_1_19_jus_de_fruits_jus_de_fruits_concentres_reconstitues_et_nectars_de_frui_30"
           },
+          "HK": {
+            "value": 30,
+            "converted": true,
+            "id": "hk_cap132v_pb_fruit-juices-other-than-fruit-juices-exclusively-from-b_30"
+          },
           "US": {
             "value": 50,
             "converted": true,
@@ -73,6 +78,11 @@
             "converted": true,
             "id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_pb_50"
           },
+          "VN": {
+            "value": 50,
+            "converted": true,
+            "id": "vn_qcvn8_2_2011_pb_vegetable-and-fruit-juice-including-nectar-ins_50"
+          },
           "KR": {
             "value": 100,
             "converted": true,
@@ -87,6 +97,11 @@
             "value": 300,
             "converted": true,
             "id": "sg_foodregs_2026_fruit_vegetable_juice_excl_lime_lemon_pb_300"
+          },
+          "UY": {
+            "value": 300,
+            "converted": true,
+            "id": "uy_rbn_pb_citrus_fruit_juices_0_3mgkg"
           }
         }
       },
@@ -117,6 +132,42 @@
             "value": 200,
             "converted": true,
             "id": "il_fcs2016_ias_16_2_fruit_and_vegetable_juices_including_nectars_200"
+          }
+        }
+      },
+      "tAs": {
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "government read-across — India FSSAI total-arsenic 50 for 'Infant Milk substitute and Infant foods' (register row in_tas_infant-milk-substitute-and-infant-foods_50), the strictest infant/baby total-arsenic ML in the register (Singapore fruit-and-vegetable-juice tAs 200 is looser). Mandatory total-As cell; iAs cannot satisfy the total-As requirement (iAs <= tAs). Applied as a government read-across for this juice matrix, which India's infant-foods scope does not name directly.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {
+          "PY": {
+            "value": 100,
+            "converted": true,
+            "id": "py_decreto1335_2019_fruit_juices_nectars_tas_100"
+          },
+          "TT": {
+            "value": 100,
+            "converted": true,
+            "id": "tt_fooddrugs_2007_div6_fruit_juice_except_apple_tas_100"
+          },
+          "MERCOSUR": {
+            "value": 100,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_fruit_juices_nectars_tas_100"
+          },
+          "SG": {
+            "value": 200,
+            "converted": true,
+            "id": "sg_foodregs_2026_fruit_vegetable_juice_excl_lime_lemon_tas_200"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_16_2_fruit_and_vegetable_juices_including_nectars_1000"
           }
         }
       },
@@ -194,7 +245,18 @@
         "source_jurisdiction": "IN",
         "label": "government read-across (India FSSAI \"Infant Milk substitute and Infant foods\" Sn 5000, the only non-canned tin ML in the register) applied at face value.",
         "basis_note": "face value (nearest government value; comparator vs any direct limit)",
-        "per_country": {}
+        "per_country": {
+          "CL": {
+            "value": 150000,
+            "converted": true,
+            "id": "cl_decreto977_1996_sn_blackcurrant_small_fruit_nectars_150000"
+          },
+          "UY": {
+            "value": 150000,
+            "converted": true,
+            "id": "uy_rbn_sn_citrus_juices_not_canned_150mgkg"
+          }
+        }
       },
       "Al": {
         "type": "read_across",

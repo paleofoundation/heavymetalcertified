@@ -28,6 +28,11 @@
             "converted": true,
             "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
           },
+          "HK": {
+            "value": 20,
+            "converted": true,
+            "id": "hk_cap132v_pb_cereal-based-food-intended-to-be-consumed-principally-b_20"
+          },
           "IL": {
             "value": 40,
             "converted": true,
@@ -47,11 +52,6 @@
             "value": 200,
             "converted": true,
             "id": "sg_foodregs_2026_baby_food_pb_200"
-          },
-          "EU": {
-            "value": 10000,
-            "converted": true,
-            "id": "eu2002_32_pb_complementary_feed_10000"
           }
         }
       },
@@ -82,6 +82,31 @@
             "value": 200,
             "converted": true,
             "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": true,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
+          },
+          "IL": {
+            "value": 1000,
+            "converted": true,
+            "id": "il_fcs2016_tas_14_2_porridges_and_other_foods_for_infants_and_toddlers_r_1000"
           }
         }
       },
@@ -146,10 +171,19 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "Total chromium not materially present in a meat-and-grain infant meal and no government sets a Cr ML for this matrix; the China milk-powder Cr 2000 is a dairy read-across that does not transfer to a non-dairy meal. Reflex control: any total-Cr result >100 ppb triggers Cr-VI speciation, and any quantifiable Cr-VI fails.",
-        "reference_method": "Total Cr by ICP-MS (screen); on any total-Cr >100 ppb, Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (SW-846 6800)"
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_crtotal_vegetables-other-than-pulses_500",
+        "basis_note": "government read-across (component) — Hong Kong Cap 132V total-chromium 500 for 'Vegetables, other than pulses' (register row hk_cap132v_crtotal_vegetables-other-than-pulses_500), applied as the strictest on-point sovereign total-Cr limit for a component of a meat-and-grain infant meal (supersedes the prior not-material determination and the weak dairy milk-powder analogy; the HK cereals Cr is 1000, so the vegetable component at 500 is the stricter binding value). ADDITIONAL CONTROL retained: reflex Cr-VI speciation — any total-Cr result >100 µg/kg triggers hexavalent-chromium speciation (EPA 3060A alkaline extraction + IC-ICP-MS, SW-846 6800), and any quantifiable Cr-VI fails; Cr-VI is never a panel number.",
+        "per_country": {
+          "HK": {
+            "value": 500,
+            "converted": false,
+            "id": "hk_cap132v_crtotal_vegetables-other-than-pulses_500"
+          }
+        }
       },
       "Ni": {
         "type": "gov",

@@ -33,6 +33,11 @@
             "converted": true,
             "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
           },
+          "HK": {
+            "value": 20,
+            "converted": true,
+            "id": "hk_cap132v_pb_cereal-based-food-intended-to-be-consumed-principally-b_20"
+          },
           "UK": {
             "value": 50,
             "converted": true,
@@ -77,6 +82,26 @@
             "value": 200,
             "converted": true,
             "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": true,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "SG": {
+            "value": 100,
+            "converted": true,
+            "id": "sg_foodregs_2026_baby_food_tas_100"
           }
         }
       },

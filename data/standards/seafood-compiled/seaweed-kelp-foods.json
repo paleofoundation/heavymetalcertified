@@ -1,8 +1,12 @@
 {
   "slug": "seaweed-kelp-foods",
   "name": "Seaweed / kelp foods (nori, wakame, kombu, dulse — dried, as sold)",
+  "category": 6,
+  "category_name": "Seafood",
   "native_basis": "as_sold",
+  "native_basis_label": "edible dried seaweed as placed on the market (DRY-WEIGHT basis, mg/kg dry matter) — never numerically compared to the wet-weight animal-seafood ppb",
   "canned": false,
+  "scope_note": "Edible dried seaweed/kelp food products (nori, wakame, kombu, dulse) sold as dried, on a DRY-WEIGHT basis (mg/kg DM) — these numbers must never be numerically compared against the wet-weight animal-seafood ppb. Cadmium (500) and total mercury (100) bind the French CSHPF edible-seaweed maxima (confirmed tightenings from 2000 and 2500). Lead 5000 and total arsenic 5000 bind the Israel dried-seaweed lines; inorganic arsenic 1000 binds FSANZ (HK concurs). Nickel binds EU 2024/1987 seaweed 30000; tin binds the French CSHPF seaweed 5000. MeHg and Cr-VI are not-material (speciation-bounded); aluminium and total chromium are screened (no on-scope sovereign ML). Seaweed used as a dietary supplement (>=80% dried seaweed) routes to the supplements category.",
   "variants": {
     "both": {
       "Pb": {
@@ -17,26 +21,31 @@
             "value": 5000,
             "converted": true,
             "id": "il_fcs2016_pb_8_1_dried_seaweed_5000"
+          },
+          "FR": {
+            "value": 5000,
+            "converted": true,
+            "id": "fr_cshpf_seaweed_pb_5000"
           }
         }
       },
-      "iAs": {
+      "Cd": {
         "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "AU-NZ",
-        "binding_id": "aunz_sch19_ias_seaweed_1000",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "FR",
+        "binding_id": "fr_cshpf_seaweed_cd_500",
         "basis_note": "face value",
         "per_country": {
-          "AU-NZ": {
-            "value": 1000,
+          "FR": {
+            "value": 500,
             "converted": true,
-            "id": "aunz_sch19_ias_seaweed_1000"
+            "id": "fr_cshpf_seaweed_cd_500"
           },
-          "SG": {
-            "value": 2000,
+          "IL": {
+            "value": 5000,
             "converted": true,
-            "id": "sg_foodregs_2026_seaweed_ias_2000"
+            "id": "il_fcs2016_cd_7_1_dried_seaweed_5000"
           }
         }
       },
@@ -55,14 +64,49 @@
           }
         }
       },
-      "tHg": {
+      "iAs": {
         "type": "gov",
-        "value": 2500,
-        "value_exact": 2500,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_thg_7_1_dried_seaweed_2500",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "AU-NZ",
+        "binding_id": "aunz_sch19_ias_seaweed_1000",
         "basis_note": "face value",
         "per_country": {
+          "AU-NZ": {
+            "value": 1000,
+            "converted": true,
+            "id": "aunz_sch19_ias_seaweed_1000"
+          },
+          "HK": {
+            "value": 1000,
+            "converted": true,
+            "id": "hk_cap132v_ias_seaweed_1000"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_seaweed_ias_2000"
+          },
+          "FR": {
+            "value": 3000,
+            "converted": true,
+            "id": "fr_cshpf_seaweed_ias_3000"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 100,
+        "value_exact": 100,
+        "binding_jurisdiction": "FR",
+        "binding_id": "fr_cshpf_seaweed_thg_100",
+        "basis_note": "face value",
+        "per_country": {
+          "FR": {
+            "value": 100,
+            "converted": true,
+            "id": "fr_cshpf_seaweed_thg_100"
+          },
           "IL": {
             "value": 2500,
             "converted": true,
@@ -73,39 +117,61 @@
       "MeHg": {
         "type": "not_material",
         "value": null,
-        "control": "Seaweed is a marine primary producer, not a predator; methylmercury does not biomagnify into algae, so MeHg is a negligible fraction of total mercury. Bounded by the tHg cell (Israel dried-seaweed tHg 2500): if tHg passes, MeHg is inherently far below any fish MeHg action level.",
-        "reference_method": "Total-mercury screen (EPA 7473 / ICP-MS); reflex MeHg speciation (GC-ICP-MS, e.g. EPA 3200 / DIN EN 16801) only on a tHg exceedance."
+        "control": "No jurisdiction sets a seaweed methylmercury ML (all sovereign MeHg limits are fish/fishery scope), and seaweed is a marine primary producer into which methylmercury does not biomagnify (it biomagnifies up the food chain, not into algae), so MeHg is a negligible fraction of total mercury and is bounded by the tHg ceiling (tightened to France CSHPF 100 DM).",
+        "reference_method": "Total-mercury screen; reflex MeHg speciation cannot exceed the tHg ceiling."
       },
-      "Cd": {
+      "Ni": {
         "type": "gov",
-        "value": 2000,
-        "value_exact": 2000,
-        "binding_jurisdiction": "TH",
-        "binding_id": "th_moph414_2020_cd_dried_seaweed_2000",
+        "value": 30000,
+        "value_exact": 30000,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2024_ni_seaweed_30000",
         "basis_note": "face value",
         "per_country": {
-          "TH": {
-            "value": 2000,
+          "EU": {
+            "value": 30000,
             "converted": true,
-            "id": "th_moph414_2020_cd_dried_seaweed_2000"
+            "id": "eu2024_ni_seaweed_30000"
           },
-          "SG": {
-            "value": 2000,
+          "CH": {
+            "value": 30000,
             "converted": true,
-            "id": "sg_foodregs_2026_seaweed_cd_2000"
-          },
-          "IL": {
-            "value": 5000,
-            "converted": true,
-            "id": "il_fcs2016_cd_7_1_dried_seaweed_5000"
+            "id": "ch_vhk_2026_ni_seetang_30000"
           }
         }
       },
       "Sn": {
+        "type": "gov",
+        "value": 5000,
+        "value_exact": 5000,
+        "binding_jurisdiction": "FR",
+        "binding_id": "fr_cshpf_seaweed_sn_5000",
+        "basis_note": "face value",
+        "per_country": {
+          "FR": {
+            "value": 5000,
+            "converted": true,
+            "id": "fr_cshpf_seaweed_sn_5000"
+          }
+        }
+      },
+      "Al": {
         "type": "not_material",
         "value": null,
-        "control": "Tin is a can-migration analyte, not a matrix-accumulation analyte. Dried seaweed foods (nori, wakame, kombu, dulse) are sold in non-metal packaging; with no tinplate contact there is no tin source. Every government tin ML in the register is either canned-product-only or an 'any food' catch-all set for can migration.",
-        "reference_method": "Packaging control (non-tinplate); periodic ICP-MS tin verification on finished product."
+        "control": "No credible regulator sets an aluminium contaminant ML for seaweed. Seaweed accumulates aluminium from seawater/sediment as background; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI, not by a per-food maximum level.",
+        "reference_method": "Total-aluminium screen (ICP-MS); managed by intake vs the EFSA/JECFA TWI; no seaweed contaminant Al ML to align to."
+      },
+      "Cr": {
+        "type": "not_material",
+        "value": null,
+        "control": "No jurisdiction sets a total-chromium maximum level for seaweed or edible algae (the HK Cap 132V total-Cr limits are animal-seafood scope; the China GB 2762 total-Cr limits are cereals/beans plant scope — neither is on-scope for a marine macroalga). Chromium(III) is an essential nutrient; trace chromium in seaweed is geologic uptake. Screened as the substrate for reflex Cr-VI speciation.",
+        "reference_method": "Total-chromium screen (ICP-MS); substrate for reflex Cr-VI speciation; no on-scope sovereign seaweed total-Cr ML."
+      },
+      "Cr-VI": {
+        "type": "not_material",
+        "value": null,
+        "control": "Cr-VI is bounded by the total-chromium screen (Cr-VI <= total Cr); no jurisdiction sets a Cr-VI food ML and there is no chromate pathway in seaweed (no lead-chromate adulteration as in spices), so any trace chromium is geologic chromium(III). Rebuttable if a routed source reports hexavalent chromium in seaweed.",
+        "reference_method": "Bounded by the total-chromium screen; reflex Cr-VI speciation only on anomalously elevated total chromium."
       }
     }
   },

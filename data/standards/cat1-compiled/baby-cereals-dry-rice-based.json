@@ -33,6 +33,11 @@
             "converted": true,
             "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
           },
+          "HK": {
+            "value": 20,
+            "converted": true,
+            "id": "hk_cap132v_pb_cereal-based-food-intended-to-be-consumed-principally-b_20"
+          },
           "UK": {
             "value": 50,
             "converted": true,
@@ -87,6 +92,31 @@
             "value": 200,
             "converted": true,
             "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "IN",
+        "binding_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "IN": {
+            "value": 50,
+            "converted": true,
+            "id": "in_tas_infant-milk-substitute-and-infant-foods_50"
+          },
+          "PY": {
+            "value": 300,
+            "converted": true,
+            "id": "py_decreto1335_2019_cereals_excluding_wheat_rice_oils_tas_300"
+          },
+          "MERCOSUR": {
+            "value": 300,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cereals_excluding_wheat_rice_oils_tas_300"
           }
         }
       },
@@ -151,10 +181,19 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "No government sets a total-chromium ML for any non-dairy infant food; the dairy milk-powder read-across (China 2000) is a weak analogy for a grain cereal. Cr(III) is nutritionally essential and Cr(VI) reduces to Cr(III) in-matrix, so total-Cr is not a material toxic in this matrix. Firm control: reflex speciation — any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails.",
-        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) speciation by EPA 3060A alkaline digestion + IC-ICP-MS (or equivalent); LOQ-level quantifiable Cr(VI) = fail."
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "HK",
+        "binding_id": "hk_cap132v_crtotal_cereals_1000",
+        "basis_note": "government read-across — Hong Kong Cap 132V total-chromium 1000 for 'Cereals' (register row hk_cap132v_crtotal_cereals_1000), the on-point sovereign total-Cr ML for a grain-cereal matrix (supersedes the prior not-material determination and the weak dairy milk-powder analogy). ADDITIONAL CONTROL retained: reflex Cr-VI speciation — any total-Cr result >= 100 µg/kg triggers hexavalent-chromium speciation by EPA 3060A alkaline digestion + IC-ICP-MS (or equivalent), and any quantifiable Cr-VI fails; Cr-VI is never a panel number.",
+        "per_country": {
+          "HK": {
+            "value": 1000,
+            "converted": false,
+            "id": "hk_cap132v_crtotal_cereals_1000"
+          }
+        }
       },
       "Ni": {
         "type": "gov",
