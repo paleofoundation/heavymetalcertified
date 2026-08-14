@@ -1,0 +1,342 @@
+{
+  "_doc": "Per-page metadata for the Category-24 (Dairy and Milk Products) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat24-compiled/<record>.json — frozen copies of the index repo's deterministic government-limit compiler (tools/standards/compile-cat24.mjs); no values are authored here. This file carries display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 24,
+    "category_name": "Dairy and Milk Products",
+    "volume_name": "Dairy and Milk Products",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier_footnote": "Inorganic arsenic (iAs) and hexavalent chromium (Cr-VI) operate as reflex speciation screens — total arsenic and total chromium are measured on every lot and bound them. Methylmercury (MeHg) has no bioaccumulation pathway in dairy and is bounded by total mercury. Tin (Sn) is material only for canned product (condensed and evaporated milks), where it migrates from the can; for all other dairy forms it is controlled by screen, not assigned an invented number. Nickel and aluminium carry disclosed read-across limits where no government sets a general-dairy maximum. Dairy has no legislated reconstitution ratio, so every limit is taken at face value in the product's native basis.",
+    "reconstitution_note": false,
+    "compiled_dir": "cat24-compiled",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "effective_date": "2026-08-13",
+    "default_version": "1.0 (2026-08-13)",
+    "reg_overrides": {
+      "EU": {
+        "slug": "eu-2023-915",
+        "cite": "Commission Regulation (EU) 2023/915",
+        "year": 2023,
+        "type": "Maximum levels"
+      }
+    },
+    "manual_slug": null,
+    "manual_method_note": "Dairy limits are taken at face value in each product's native basis; there is no reconstitution conversion (dairy has no legislated reconstitution ratio, unlike infant formula). Product forms — liquid milk, cheese, powder, condensed, butterfat — are kept distinct: non-concentrated liquid forms share the general fluid-milk sovereign pool, while concentrated forms carry their own higher form-specific government maximums. Tier 1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier 2 (tAs, Ni, Sn, Al, Cr, Cr-VI) carry the program's 150% transitional allowance. Inorganic arsenic and hexavalent chromium are reflex speciation screens; methylmercury has no pathway in dairy; tin is material only for canned product."
+  },
+  "pages": [
+    {
+      "slug": "dairy-milk-cow",
+      "name": "Liquid milk — cow",
+      "description": "The Heavy Metal Tested & Certified standard for liquid cow's milk — raw, pasteurized, and UHT fluid milk — stated as consumed. Every numeric limit is the strictest maximum level any credible government sets for fluid milk; where no government regulates the exact analyte, a disclosed read-across from the nearest sovereign value applies.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-milk-cow",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Camel milk standard",
+          "href": "/standards/dairy-milk-camel"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-milk-cow"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-milk-cow"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-milk-goat-sheep",
+      "name": "Liquid milk — goat, sheep, and other ruminant",
+      "description": "The Heavy Metal Tested & Certified standard for goat, sheep, and other ruminant fluid milk, stated as consumed. Sovereign fluid-milk contaminant maximums are species-agnostic, so this standard shares the general fluid-milk pool with cow's milk; every limit is the strictest government maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-milk-goat-sheep",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Camel milk standard",
+          "href": "/standards/dairy-milk-camel"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-milk-goat-sheep"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-milk-goat-sheep"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-milk-camel",
+      "name": "Camel milk",
+      "description": "The Heavy Metal Tested & Certified standard for camel milk sold as a general beverage, stated as consumed. No government sets camel-milk-specific maximums, so the species-agnostic fluid-milk sovereign limits apply as a disclosed same-matrix government limit; camel-milk infant formula is out of scope and routes to the infant-foods standard.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-milk-camel",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-milk-camel"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-milk-camel"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-cheese",
+      "name": "Cheese",
+      "description": "The Heavy Metal Tested & Certified standard for cheese of all styles, stated as sold. Cheese carries its own government maximum levels, which reflect the concentration of the cheese matrix; every limit is the strictest such sovereign maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-cheese",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-cheese"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-cheese"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-yogurt-cultured",
+      "name": "Yogurt and cultured dairy",
+      "description": "The Heavy Metal Tested & Certified standard for yogurt and cultured dairy, stated as consumed. Culturing adds no metals, so this standard shares the general fluid-milk sovereign pool; every limit is the strictest government maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-yogurt-cultured",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-yogurt-cultured"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-yogurt-cultured"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-cream",
+      "name": "Cream",
+      "description": "The Heavy Metal Tested & Certified standard for dairy cream, stated as consumed. Lead, cadmium, arsenic, and mercury are not fat-partitioned, so cream shares the general fluid-milk sovereign pool rather than a looser cream-specific catch-all; every limit is the strictest government maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-cream",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-cream"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-cream"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-milk-powders",
+      "name": "Milk powders — whole, skim, and specialty",
+      "description": "The Heavy Metal Tested & Certified standard for milk powders — whole, skim, and specialty — stated as sold on a powder basis. Powder carries its own government maximum levels reflecting the concentrated matrix; there is no reconstitution conversion. Every limit is the strictest such sovereign maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-milk-powders",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-milk-powders"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-milk-powders"
+        }
+      ]
+    },
+    {
+      "slug": "dairy-condensed-evaporated",
+      "name": "Condensed and evaporated milks",
+      "description": "The Heavy Metal Tested & Certified standard for condensed and evaporated milks, stated as sold in the can. These concentrated, canned products carry their own government maximums, and the canned-food tin maximum applies directly because tin migrates from the can; every other limit is the strictest sovereign maximum, with a disclosed read-across where none regulates the exact analyte.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/dairy-condensed-evaporated",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "Liquid milk — cow standard",
+          "href": "/standards/dairy-milk-cow"
+        },
+        {
+          "label": "Liquid milk — goat, sheep, and other ruminant standard",
+          "href": "/standards/dairy-milk-goat-sheep"
+        },
+        {
+          "label": "Heavy Metal Index — literature baseline",
+          "href": "https://heavymetalindex.com/products/dairy-condensed-evaporated"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "dairy-condensed-evaporated"
+        }
+      ]
+    }
+  ]
+}
