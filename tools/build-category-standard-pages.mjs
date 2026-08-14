@@ -47,12 +47,43 @@ const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
 // control / subsumed / not_material cells are governed but carry NO standalone number, so
 // they must not be counted as firm ceilings (the count feeds the honest master-table note,
 // the front-matter firm_analytes, and the /standards index "N firm" badge).
-const isFirm = (cell) => !!(cell && cell.value != null && (cell.type === "gov" || cell.type === "read_across" || cell.type === "special"))
+const isFirm = (cell) => !!(cell && cell.value != null && (cell.type === "gov" || cell.type === "read_across" || cell.type === "special" || cell.type === "form_split"))
 // Native basis arrives as as_sold / as_consumed (cat1, seafood, grains, cat16) OR as a free
 // string ("as placed on market", "as sold", "as consumed") from the newer per-category
 // compilers. Normalise both to the display word and the front-matter token.
 const basisWordOf = (nb) => (String(nb || "").toLowerCase().includes("consum") ? "as-consumed" : "as-sold")
 const normBasis = (nb) => (basisWordOf(nb) === "as-consumed" ? "as_consumed" : "as_sold")
+
+// The newer per-category compilers (Cat 33 Chocolate, Cat 34 Herbs/Spices/Salt) emit a flat
+// `cells` object using cell_kind / provenance fields (not `type`) and a `form_split` cell whose
+// limit varies by product sub-form. Normalise a cells-record into the canonical cell model the
+// renderer consumes so one generator serves both schemas. `type` present == already canonical.
+function normalizeCell(c) {
+  if (!c || c.type) return c
+  const kind = c.cell_kind, prov = c.provenance
+  if (kind === "form_split") {
+    const vals = (c.forms || []).map((f) => f.value).filter((v) => v != null)
+    return { type: "form_split", value: c.value ?? c.strictest_form_value ?? (vals.length ? Math.min(...vals) : null), forms: c.forms || [], binding_jurisdiction: (c.forms && c.forms[0] && c.forms[0].binding_jurisdiction) || c.binding_jurisdiction }
+  }
+  if (kind === "gov" || (prov === "regulatory-alignment" && c.value != null)) {
+    return { type: "gov", value: c.value, binding_jurisdiction: c.binding_jurisdiction, binding_id: c.binding_id, concurring: c.concurring || [] }
+  }
+  if (prov === "read-across") {
+    return { type: "read_across", value: c.value, source_jurisdiction: c.source_jurisdiction, label: c.label, analog_scope: c.source_scope }
+  }
+  if (prov === "control") {
+    return { type: "control", value: null, rationale: c.rationale, reference_method: c.reference_method }
+  }
+  return { type: "control", value: c.value ?? null, rationale: c.rationale || c.label || "" }
+}
+const normalizeCells = (cells) => Object.fromEntries(Object.entries(cells || {}).map(([a, c]) => [a, normalizeCell(c)]))
+// min–max range across a form_split cell's forms
+const formRange = (cell) => {
+  const vs = (cell.forms || []).map((f) => f.value).filter((v) => v != null)
+  if (!vs.length) return cell.value != null ? String(cell.value) : "&mdash;"
+  const mn = Math.min(...vs), mx = Math.max(...vs)
+  return mn === mx ? String(mn) : `${mn}&ndash;${mx}`
+}
 
 // Jurisdiction display labels + optional regulation-page slugs. A header/link renders only when the
 // regulation page actually exists on disk (existsSync-gated), so no category can emit a broken link.
@@ -95,6 +126,7 @@ function bindingLabel(cell) {
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
   if (cell.type === "control") return "mandatory control — no government ML; screened every lot (see note)"
   if (cell.type === "subsumed") return `bounded by ${esc(cell.subsumed_by || "parent total")} — reflex speciation (see note)`
+  if (cell.type === "form_split") return "strictest government ML, set by product form (see derivation)"
   return "&mdash;"
 }
 
@@ -103,6 +135,7 @@ function limitDisplay(analyte, variants) {
   const parts = variants.map((v) => ({ label: v.label, val: v.cells[analyte] }))
   const vals = parts.map((p) => {
     if (!p.val) return "&mdash;"
+    if (p.val.type === "form_split") return formRange(p.val)
     if (p.val.value == null) {
       if (p.val.type === "not_material") return "n/m"
       if (p.val.type === "control") return "control"
@@ -221,6 +254,51 @@ function citeSection(subName, version, hmiLink, doi, volume) {
   return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${esc(volume)} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
 }
 
+// Binding derivation (Cat 33 Chocolate, Cat 34 Herbs/Spices/Salt): the compiler emits the
+// binding sovereign limit and the jurisdictions that concur, not a full per-country matrix, and
+// some analytes carry a form-specific limit (cocoa content, refined vs unrefined salt, spice
+// botanical part). Show the binding value/jurisdiction per analyte, then break out every
+// form-specific limit so a certifier can read the exact ceiling for the product's sub-form.
+function cellsBindingDerivation(primary, subName) {
+  const splits = []
+  const body = PANEL.map((a) => {
+    const c = primary.cells[a]
+    let hmtc, binds, basis
+    if (!c) { hmtc = "&mdash;"; binds = "&mdash;"; basis = "&mdash;" }
+    else if (c.type === "form_split") {
+      splits.push({ a, cell: c })
+      hmtc = formRange(c); binds = "by product form (below)"; basis = "sovereign ML, form-specific"
+    } else if (c.type === "gov") {
+      hmtc = String(c.value)
+      const extra = Array.isArray(c.concurring) && c.concurring.length > 1 ? ` &middot; +${c.concurring.length - 1} concurring` : ""
+      const h = reg(c.binding_jurisdiction)
+      binds = (h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(c.binding_jurisdiction))}</a>` : esc(jlabel(c.binding_jurisdiction))) + extra
+      basis = "direct sovereign ML"
+    } else if (c.type === "read_across") {
+      hmtc = String(c.value); binds = esc(jlabel(c.source_jurisdiction)); basis = "disclosed read-across"
+    } else if (c.type === "control") {
+      hmtc = "control"; binds = "screened every lot"; basis = "mandatory control &mdash; no government ML"
+    } else if (c.type === "not_material") {
+      hmtc = "n/m"; binds = c.bounded_by ? `&le; ${esc(c.bounded_by)}` : "controlled"; basis = "not material in this matrix"
+    } else if (c.type === "subsumed") {
+      hmtc = "bounded"; binds = `&le; ${esc(c.subsumed_by || "total")}`; basis = "bounded by parent total"
+    } else { hmtc = c.value != null ? String(c.value) : "&mdash;"; binds = "&mdash;"; basis = "&mdash;" }
+    return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:12px">${binds}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${basis}</td></tr>`
+  }).join("")
+  const splitBlocks = splits.map(({ a, cell }) => {
+    const rows = (cell.forms || []).map((f) => {
+      const h = reg(f.binding_jurisdiction)
+      const jur = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(f.binding_jurisdiction))}</a>` : esc(jlabel(f.binding_jurisdiction))
+      return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:8px 12px;color:#3f3a3a;font-size:12.5px">${esc(f.form)}</td><td style="padding:8px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${f.value}</td><td style="padding:8px 12px;color:#736b6b;font-size:11.5px">${jur}</td></tr>`
+    }).join("")
+    return `<div style="margin:0 0 18px"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9a8f8f;margin:0 0 8px">${ANALYTE[a] || a} &mdash; limit by product form</div><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:34rem;border-collapse:collapse"><thead><tr style="background:#fbf7f5"><th style="text-align:left;padding:8px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;color:#736b6b">Product form</th><th style="text-align:right;padding:8px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;color:#736b6b">HMTc (&micro;g/kg)</th><th style="text-align:left;padding:8px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;color:#736b6b">Binding jurisdiction</th></tr></thead><tbody>${rows}</tbody></table></div></div>`
+  }).join("")
+  const splitSection = splitBlocks
+    ? `<h3 style="font-family:Lora,serif;font-weight:400;font-size:19px;color:#2b1f1f;margin:26px 0 12px">Form-specific limits</h3><p style="font-size:13px;line-height:1.65;color:#736b6b;max-width:84ch;margin:0 0 16px">Where a government sets the maximum by product sub-form, the HMTc column above shows the range and the exact ceiling for each form is listed here. A certified product meets the ceiling for its own form.</p>${splitBlocks}`
+    : ""
+  return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; the binding sovereign limit</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">For ${esc(subName)}, each HMTc limit is the strictest maximum level any credible government sets for the product, named in the Binding column with the count of jurisdictions that concur at that value. Where no government regulates the analyte, the cell is a mandatory control or a not-material determination, never an invented number.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:44rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binding</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Basis</th></tr></thead><tbody>${body}</tbody></table></div>${splitSection}</section>`
+}
+
 // --- drive --------------------------------------------------------------------
 const tier1Names = (META.tier1 || []).map((a) => (a === "tHg" ? "Hg" : a)).filter((v, i, arr) => arr.indexOf(v) === i).join(", ")
 const tier2Names = (META.tier2 || []).join(", ")
@@ -230,7 +308,7 @@ let n = 0
 for (const page of DOC.pages) {
   const variants = page.variants.map((v) => {
     const rec = JSON.parse(fs.readFileSync(path.join(COMPILED, `${v.record}.json`), "utf8"))
-    const vmap = rec.variants || { both: rec.cells }
+    const vmap = rec.variants || { both: normalizeCells(rec.cells) }
     const cells = vmap[v.variant] || vmap[Object.keys(vmap)[0]]
     return { label: v.label, cells, native_basis: rec.native_basis }
   })
@@ -286,7 +364,9 @@ for (const page of DOC.pages) {
 
   const derivation = META.derivation_mode === "child_anchor"
     ? childAnchorDerivation(variants[0], page.name)
-    : derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note)
+    : META.derivation_mode === "cells_binding"
+      ? cellsBindingDerivation(variants[0], page.name)
+      : derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note)
   const body = [
     methodSection(page.name, basisWord, META.method_prose),
     masterTable(variants, basisWord, tierNote, firmCount),

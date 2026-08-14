@@ -5,7 +5,7 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."
 snapshot:
   - { k: "Subcategory standards", v: "15" }
-  - { k: "Firm analyte limits", v: "1" }
+  - { k: "Firm analyte limits", v: "0" }
   - { k: "Analytes per row", v: "10" }
   - { k: "Published manuals", v: "1" }
 connections:
@@ -36,7 +36,7 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Subcategory standards</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">15 locked rows across 16 categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">1 firm analyte limit across 1 subcategory so far</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">0 firm analyte limits across 0 subcategories so far</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
   </div>
   <div style="margin-bottom:26px">
@@ -273,7 +273,9 @@ rail_box:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
     </div>
     <div style="display:flex;flex-direction:column">
-      <a href="/standards/chocolate" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Cocoa/chocolate products (cocoa powder, dark chocolate, milk chocolate, chocolate chips)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Chocolate, Cocoa and Confectionery 3.1</span></a>
+      <a href="/standards/chocolate" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Cocoa and chocolate products (cocoa powder, dark, milk, chips)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Chocolate, Cocoa and Confectionery 3.1 &middot; 5 firm</span></a>
+      <a href="/standards/confectionery-candy" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Candy and confectionery (hard candy, caramels, imported/ethnic sweets)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Chocolate, Cocoa and Confectionery 3.2 &middot; 2 firm</span></a>
+      <a href="/standards/gummies-jellies" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Gummies and jelly sweets</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Chocolate, Cocoa and Confectionery 3.3 &middot; 2 firm</span></a>
     </div>
   </div>
   <div style="margin-bottom:26px">
@@ -282,8 +284,10 @@ rail_box:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as sold</span>
     </div>
     <div style="display:flex;flex-direction:column">
-      <a href="/standards/spices" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Herbs/spices/dried seasonings (turmeric, cinnamon, paprika, oregano, cumin, chili powder, pepper)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.1 &middot; 1 firm</span></a>
-      <a href="/standards/salt" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Salt (table, sea, Himalayan)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.2</span></a>
+      <a href="/standards/bouillon-seasoning-blends" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Bouillon/stock cubes and powdered seasoning blends (dry rubs, gravy/seasoning packets)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.1 &middot; 4 firm</span></a>
+      <a href="/standards/hot-chili-sauces" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Hot sauce and chili sauces</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.2 &middot; 4 firm</span></a>
+      <a href="/standards/salt" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Salt (table, sea, Himalayan)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.3 &middot; 5 firm</span></a>
+      <a href="/standards/spices" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Herbs, spices, and dried seasonings (turmeric, cinnamon, paprika, chili powder, pepper)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.4 &middot; 4 firm</span></a>
     </div>
   </div>
 </section>

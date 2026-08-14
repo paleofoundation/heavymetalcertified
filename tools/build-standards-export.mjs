@@ -196,7 +196,9 @@ function buildCompiledStandard(page, compiledSubdir, extra) {
     if (!rec) continue
     methodNote = methodNote || rec.method
     nativeBasis = nativeBasis || rec.native_basis
-    const variantObj = rec.variants[v.variant] || rec.variants[Object.keys(rec.variants)[0]] || {}
+    // Cat 33/34 emit a flat `cells` object (no `variants`); treat it as the sole "both" variant.
+    const rvars = rec.variants || { both: rec.cells }
+    const variantObj = rvars[v.variant] || rvars[Object.keys(rvars)[0]] || {}
     const analytes = {}
     for (const [analyte, cell] of Object.entries(variantObj)) {
       analytes[analyte] = normalizeCompiledCell(cell, rec.native_basis)
@@ -243,7 +245,41 @@ function normalizeCompiledCell(cell, nativeBasis) {
       controlling_instrument: cell.source_id ?? null,
     }
   }
-  // default: gov
+  // cells-schema (Cat 33/34): cell_kind / provenance instead of `type`.
+  if (cell.cell_kind === "form_split") {
+    return {
+      status: "published",
+      value_ppb: cell.value ?? cell.strictest_form_value ?? null,
+      native_basis: nativeBasis,
+      control_basis: "government-limit-form-split",
+      rationale: "Strictest applicable government maximum level; the ceiling is set by product sub-form (each form's exact value is on the page derivation).",
+      controlling_jurisdiction: (cell.forms && cell.forms[0] && cell.forms[0].binding_jurisdiction) ?? null,
+      forms: (cell.forms || []).map((f) => ({ form: f.form, value_ppb: f.value, jurisdiction: f.binding_jurisdiction ?? null })),
+    }
+  }
+  if (cell.type == null && cell.provenance === "control") {
+    return {
+      status: "control",
+      value_ppb: null,
+      native_basis: nativeBasis,
+      control_basis: "controlled-screen",
+      rationale: trimText(cell.rationale),
+      reference_method: cell.reference_method ?? null,
+    }
+  }
+  if (cell.type == null && cell.provenance === "read-across") {
+    return {
+      status: "published",
+      value_ppb: cell.value ?? null,
+      value_exact_ppb: cell.value_exact ?? null,
+      native_basis: nativeBasis,
+      control_basis: "government-read-across",
+      rationale: cell.label ?? null,
+      controlling_jurisdiction: cell.source_jurisdiction ?? null,
+      controlling_instrument: cell.source_id ?? null,
+    }
+  }
+  // default: gov (variants-schema `type: gov`, or cells-schema `cell_kind: gov`)
   return {
     status: "published",
     value_ppb: cell.value ?? null,

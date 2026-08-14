@@ -316,6 +316,13 @@ export function descriptorFromCompiledCell(cell, analyte) {
     d.rationaleTag = "regulatory-alignment"
     if (v != null) d.limitPpb = v
     d.governmentMl = { value_ppb: v, source: cell.binding_id || "", jurisdiction: cell.binding_jurisdiction || null }
+  } else if (cell.type === "form_split") {
+    // A form-specific sovereign limit: the strictest form value is the binding floor for the
+    // occurrence rationale. Treat as a government cell so the block reads honestly.
+    d.basisKind = "government"
+    d.rationaleTag = "regulatory-alignment"
+    if (v != null) d.limitPpb = v
+    d.governmentMl = { value_ppb: v, source: "", jurisdiction: cell.binding_jurisdiction || null }
   } else if (cell.type === "read_across") {
     if (v != null) d.limitPpb = v
     if (cell.basis_kind === "occurrence") { d.basisKind = "occurrence"; d.rationaleTag = "literature-baseline" }

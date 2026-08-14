@@ -1,0 +1,154 @@
+{
+  "_doc": "Per-page metadata for the Category-34 (Herbs, Spices, Seasonings and Salt) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat34-compiled/<record>.json (deterministic; no authored values). Display + wiring + the category _meta block only.",
+  "_meta": {
+    "category": 34,
+    "category_name": "Herbs, Spices, Seasonings and Salt",
+    "volume_name": "Herbs, Spices, Seasonings and Salt",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat34-compiled",
+    "method_label": "Strictest government ML",
+    "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
+    "derivation_mode": "cells_binding",
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "bouillon-seasoning-blends",
+      "name": "Bouillon/stock cubes and powdered seasoning blends (dry rubs, gravy/seasoning packets)",
+      "description": "The Heavy Metal Tested & Certified standard for Bouillon/stock cubes and powdered seasoning blends (dry rubs, gravy/seasoning packets) (Herbs, Spices, Seasonings and Salt), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "bouillon-seasoning-blends"
+        }
+      ]
+    },
+    {
+      "slug": "hot-chili-sauces",
+      "name": "Hot sauce and chili sauces",
+      "description": "The Heavy Metal Tested & Certified standard for Hot sauce and chili sauces (Herbs, Spices, Seasonings and Salt), stated as consumed. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "hot-chili-sauces"
+        }
+      ]
+    },
+    {
+      "slug": "salt",
+      "name": "Salt (table, sea, Himalayan)",
+      "description": "The Heavy Metal Tested & Certified standard for Salt (table, sea, Himalayan) (Herbs, Spices, Seasonings and Salt), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "salt"
+        }
+      ]
+    },
+    {
+      "slug": "spices",
+      "name": "Herbs, spices, and dried seasonings (turmeric, cinnamon, paprika, chili powder, pepper)",
+      "description": "The Heavy Metal Tested & Certified standard for Herbs, spices, and dried seasonings (turmeric, cinnamon, paprika, chili powder, pepper) (Herbs, Spices, Seasonings and Salt), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "spices"
+        }
+      ]
+    }
+  ]
+}
