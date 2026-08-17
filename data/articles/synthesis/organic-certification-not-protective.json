@@ -7,13 +7,33 @@
   "metals": ["Cadmium", "Lead", "Arsenic", "Nickel", "Aluminium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["organic certification heavy metals", "does organic mean lower heavy metals", "organic dark chocolate cadmium", "organic vs conventional cadmium", "heavy metal certification vs organic", "organic baby food lead and cadmium"],
+  "published": "2026-08-10",
+  "keywords": [
+    "organic certification heavy metals",
+    "does organic mean lower heavy metals",
+    "organic dark chocolate cadmium",
+    "organic vs conventional cadmium",
+    "heavy metal certification vs organic",
+    "organic baby food lead and cadmium"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/organic-certification-not-protective",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Chocolate standard", "href": "/standards/chocolate" },
-    { "label": "Worked example: lead and cadmium in dark chocolate", "href": "/articles/lead-and-cadmium-in-dark-chocolate" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Chocolate standard",
+      "href": "/standards/chocolate"
+    },
+    {
+      "label": "Worked example: lead and cadmium in dark chocolate",
+      "href": "/articles/lead-and-cadmium-in-dark-chocolate"
+    }
   ],
   "abstract": "Organic certification is not a heavy-metal safety signal. It regulates the inputs and farming practices a producer may use, not the soil-borne lead, cadmium and arsenic a crop takes up — and across seven peer-reviewed organic-versus-conventional datasets it fails to predict a food's metal load. The two largest direct comparisons, US infant foods (n=564) and European flaxseed, return statistical nulls for both lead and cadmium; three matrices, most clearly [US dark chocolate](/articles/lead-and-cadmium-in-dark-chocolate), show the organic segment running higher in cadmium; one New Zealand vegetable dataset runs the other way. The certification consequence is that an organic seal and a heavy-metal certification answer different questions and are complementary rather than interchangeable: organic status constrains synthetic inputs, while only finished-product occurrence testing constrains the contamination outcome a buyer actually cares about. A purchaser who reads 'organic' as 'low in heavy metals' is mis-reading what that seal certifies. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/organic-certification-not-protective), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -65,13 +85,114 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Organic production standards without heavy-metal occurrence monitoring", "meta": "USDA National Organic Program (7 CFR Part 205) and EU Regulation 2018/848 regulate permitted inputs and farming practice; neither sets an occurrence limit or monitoring requirement for lead, cadmium, arsenic or mercury in the certified product.", "type": "Legislation" },
-    { "n": 2, "title": "Lead and cadmium in a large sample of US infant formula and baby foods", "meta": "Gardener et al., 2019. Across 564 US products, organic certification showed no significant association with cadmium (p=0.65) or lead (p=0.28); rice-containing products carried the highest levels regardless of organic status.", "type": "Journal" },
-    { "n": 3, "title": "Toxic elements in organic versus conventional European flaxseed", "meta": "Brum et al., 2025. Lead and cadmium did not differ significantly between organic and conventional flaxseed; aluminium and nickel ran significantly lower in the organic samples (p=0.0312 and p=0.0142).", "type": "Journal" },
-    { "n": 4, "title": "Multi-year heavy-metal analysis of US dark chocolate and cocoa products", "meta": "Hands et al., 2024. Across 72 US products analysed by ICP-MS, organic-certified items carried significantly higher cadmium than conventional (p=0.02); dataset medians were 50 ppb lead and 239 ppb cadmium.", "type": "Journal" },
-    { "n": 5, "title": "Cadmium and lead in fresh and processed Polish tomatoes", "meta": "Grochowska-Niedworok et al., 2020. Organic tomatoes showed higher dry-mass cadmium than conventional; the sole EU exceedance was a canned concentrate at 0.064 mg/kg against the 0.050 mg/kg limit.", "type": "Journal" },
-    { "n": 6, "title": "Inorganic contaminants in commercial tahini on the Italian market", "meta": "Potortì et al., 2026. Of seven brands, the single organic sample exceeded EU 2023/915 limits for cadmium (0.35 mg/kg) and lead (0.50 mg/kg) and was the only one with detectable arsenic; the six conventional samples were at or below the limit of quantification.", "type": "Journal" },
-    { "n": 7, "title": "Heavy metals in organic and non-organic vegetables after Cyclone Gabrielle", "meta": "Dearing et al., 2025. In 153 New Zealand composites, organic vegetables ran significantly lower in cadmium (p=0.003) and nickel (p<0.001); mercury was below detection throughout.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index — organic certification is not protective (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective", "meta": "The independent literature synthesis this analysis reframes, carrying all seven anchor sources and their per-record pages.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Organic production standards without heavy-metal occurrence monitoring",
+      "meta": "USDA National Organic Program (7 CFR Part 205) and EU Regulation 2018/848 regulate permitted inputs and farming practice; neither sets an occurrence limit or monitoring requirement for lead, cadmium, arsenic or mercury in the certified product.",
+      "type": "Legislation"
+    },
+    {
+      "n": 2,
+      "title": "Lead and cadmium contamination in a large sample of United States infant formulas and baby foods",
+      "meta": "Across 564 US products, organic certification showed no significant association with cadmium (p=0.65) or lead (p=0.28); rice-containing products carried the highest levels regardless of organic status.",
+      "type": "Journal",
+      "doi": "10.1016/j.scitotenv.2018.09.026",
+      "href": "https://doi.org/10.1016/j.scitotenv.2018.09.026",
+      "authors": "Gardener, Hannah; Bowen, Jaclyn; Callan, Sean P.",
+      "year": 2019,
+      "journal": "Science of The Total Environment",
+      "volume": "651",
+      "issue": null,
+      "pages": "822-827",
+      "cite_key": "gardener2019-pb-cd-us-infant-formula-baby-foods",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Assessment of Essential Elements and Potentially Toxic Elements (PTEs) in Organic and Conventional Flaxseeds: Implications for Dietary Exposure and Food Safety",
+      "meta": "Lead and cadmium did not differ significantly between organic and conventional flaxseed; aluminium and nickel ran significantly lower in the organic samples (p=0.0312 and p=0.0142).",
+      "type": "Journal",
+      "doi": "10.3390/app15137004",
+      "href": "https://doi.org/10.3390/app15137004",
+      "authors": "Brum, Rodrigo de Lima; Siedzik, Katarzyna; Alejandro-Vega, Samuel, et al.",
+      "year": 2025,
+      "journal": "Applied Sciences",
+      "volume": "15",
+      "issue": "13",
+      "pages": "7004",
+      "cite_key": "brum2025-flaxseeds-ptes-organic-conventional",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA",
+      "meta": "Across 72 US products analysed by ICP-MS, organic-certified items carried significantly higher cadmium than conventional (p=0.02); dataset medians were 50 ppb lead and 239 ppb cadmium.",
+      "type": "Journal",
+      "doi": "10.3389/fnut.2024.1366231",
+      "href": "https://doi.org/10.3389/fnut.2024.1366231",
+      "authors": "Hands, Jacob M.; Anderson, Mark L.; Cooperman, Tod, et al.",
+      "year": 2024,
+      "journal": "Frontiers in Nutrition",
+      "volume": "11",
+      "issue": null,
+      "pages": null,
+      "cite_key": "hands2024-multiyear-dark-chocolate-cocoa-usa",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Assessment of cadmium and lead content in tomatoes and tomato products",
+      "meta": "Organic tomatoes showed higher dry-mass cadmium than conventional; the sole EU exceedance was a canned concentrate at 0.064 mg/kg against the 0.050 mg/kg limit.",
+      "type": "Journal",
+      "doi": "10.32394/rpzh.2020.0126",
+      "href": "https://doi.org/10.32394/rpzh.2020.0126",
+      "authors": "Grochowska-Niedworok, Elżbieta; Nieć, Joanna; Baranowska, Renata",
+      "year": 2020,
+      "journal": "Roczniki Państwowego Zakładu Higieny",
+      "volume": "71",
+      "issue": "3",
+      "pages": "313-319",
+      "cite_key": "grochowska-niedworok2020-cadmium-lead-tomatoes-poland",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Chemical Composition and Nutritional Quality of Commercial Tahini",
+      "meta": "Of seven brands, the single organic sample exceeded EU 2023/915 limits for cadmium (0.35 mg/kg) and lead (0.50 mg/kg) and was the only one with detectable arsenic; the six conventional samples were at or below the limit of quantification.",
+      "type": "Journal",
+      "doi": "10.3390/app16031400",
+      "href": "https://doi.org/10.3390/app16031400",
+      "authors": "Potortì, Angela Giorgia; Albergamo, Ambrogina; Nava, Vincenzo, et al.",
+      "year": 2026,
+      "journal": "Applied Sciences",
+      "volume": "16",
+      "issue": "3",
+      "pages": "1400",
+      "cite_key": "potorti2026-tahini-quality-safety-inorganic-elements",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis.",
+      "meta": "In 153 New Zealand composites, organic vegetables ran significantly lower in cadmium (p=0.003) and nickel (p<0.001); mercury was below detection throughout.",
+      "type": "Journal",
+      "doi": "10.12688/f1000research.175538.1",
+      "href": "https://doi.org/10.12688/f1000research.175538.1",
+      "authors": "Dearing, Chey; Ye, Zhijing; Robertshaw, Glen",
+      "year": 2025,
+      "journal": "F1000Research",
+      "volume": "14",
+      "issue": null,
+      "pages": "1461",
+      "cite_key": "dearing2025-nz-organic-nonorganic-vegetables-cyclone",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — organic certification is not protective (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective",
+      "meta": "The independent literature synthesis this analysis reframes, carrying all seven anchor sources and their per-record pages.",
+      "type": "Reference"
+    }
   ]
 }

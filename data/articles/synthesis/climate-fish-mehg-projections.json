@@ -7,13 +7,34 @@
   "metals": ["Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["methylmercury in fish", "climate change mercury fish", "mercury in tuna", "fish mercury limit", "ocean warming methylmercury", "seafood mercury certification", "FDA mercury action level"],
+  "published": "2026-08-10",
+  "keywords": [
+    "methylmercury in fish",
+    "climate change mercury fish",
+    "mercury in tuna",
+    "fish mercury limit",
+    "ocean warming methylmercury",
+    "seafood mercury certification",
+    "FDA mercury action level"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Predatory marine fish standard", "href": "/standards/fish-marine-predatory" },
-    { "label": "Non-predatory marine fish standard", "href": "/standards/fish-marine-non-predatory" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Predatory marine fish standard",
+      "href": "/standards/fish-marine-predatory"
+    },
+    {
+      "label": "Non-predatory marine fish standard",
+      "href": "/standards/fish-marine-non-predatory"
+    }
   ],
   "abstract": "Yes — climate change is projected to increase methylmercury in commercially harvested marine fish. Three converging studies find that ocean warming and deoxygenation expand the low-oxygen zones where microbes methylate mercury, raising methylmercury in upper-trophic pelagic fish such as tuna and swordfish by roughly 5 to 30 percent by 2100 under high-emission scenarios. The mechanism is now traced to particle-phase methylation in the upper 400 metres of the water column, which responds to climate forcing on a shorter timescale than deep-ocean processes. The certification consequence is structural: present-day fish mercury limits — the FDA action level, the EFSA and EPA reference values — are calibrated against today's occurrence distribution, so a threshold frozen at one year quietly loses stringency as the baseline rises, and the lot-level exceedance rate climbs even with the same fishery and product. A standard for [mercury](/analytes/mercury) in fish should therefore be built to be recalibrated on a regular horizon, not set once. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/climate-fish-mehg-projections), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +78,84 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Global-change effects on the biogeochemical mercury cycle and fish methylmercury", "meta": "Sonke et al., 2023. Global biogeochemical review projecting that climate warming raises fish methylmercury 10 to 30 percent, and setting mercury's public-health burden near $117 billion a year in IQ loss and cardiovascular disease.", "type": "Journal", "href": "https://doi.org/10.1007/s13280-023-01855-y" },
-    { "n": 2, "title": "Climate-driven changes in global marine mercury cycling to 2100", "meta": "Wang et al., 2023. Coupled climate-biogeochemistry model projecting a 5 to 20 percent rise in upper-trophic pelagic-fish methylmercury under RCP8.5, driven by oxygen-minimum-zone expansion.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2202488120" },
-    { "n": 3, "title": "Mercury isotopes show marine particles as the source of methylmercury in pelagic fish", "meta": "Motta et al., 2022. Stable-isotope evidence that pelagic-fish methylmercury traces to particle-phase methylation in the upper 400 metres, not deep anoxic basins.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2208183119" },
-    { "n": 4, "title": "US FDA action level for mercury in fish", "meta": "United States Food and Drug Administration. Action level of 1.0 ppm total mercury (about 0.7 ppm methylmercury) in fish, set in 1979 and unchanged in operative form since.", "type": "Government" },
-    { "n": 5, "title": "EFSA tolerable weekly intake for methylmercury", "meta": "European Food Safety Authority. Tolerable weekly intake of 1.3 µg per kg body weight per week for methylmercury, established 2012.", "type": "Government" },
-    { "n": 6, "title": "US EPA reference dose for methylmercury", "meta": "United States Environmental Protection Agency. Reference dose of 0.1 µg per kg body weight per day for methylmercury, established 2001.", "type": "Government" },
-    { "n": 7, "title": "WHO/FAO provisional tolerable weekly intake for methylmercury", "meta": "Joint FAO/WHO Expert Committee on Food Additives (JECFA). Provisional tolerable weekly intake of 1.6 µg per kg body weight per week for methylmercury, 2003.", "type": "Government" },
-    { "n": 8, "title": "Heavy Metal Index — climate change and marine fish methylmercury projections (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source — the biogeochemical review, the coupled-model projection, and the isotope mechanism — and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Global change effects on biogeochemical mercury cycling",
+      "meta": "Global biogeochemical review projecting that climate warming raises fish methylmercury 10 to 30 percent, and setting mercury's public-health burden near $117 billion a year in IQ loss and cardiovascular disease.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1007/s13280-023-01855-y",
+      "doi": "10.1007/s13280-023-01855-y",
+      "authors": "Sonke, Jeroen E.; Angot, Hélène; Zhang, Yanxu, et al.",
+      "year": 2023,
+      "journal": "Ambio",
+      "volume": "52",
+      "issue": "5",
+      "pages": "853-876",
+      "cite_key": "sonke2023-mercury-global-change",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Climate-driven changes of global marine mercury cycles in 2100",
+      "meta": "Coupled climate-biogeochemistry model projecting a 5 to 20 percent rise in upper-trophic pelagic-fish methylmercury under RCP8.5, driven by oxygen-minimum-zone expansion.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2202488120",
+      "doi": "10.1073/pnas.2202488120",
+      "authors": "Wang, Yujuan; Wu, Peipei; Zhang, Yanxu",
+      "year": 2023,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "120",
+      "issue": "2",
+      "pages": null,
+      "cite_key": "wang2023-climate-marine-mercury",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Mercury isotopic evidence for the importance of particles as a source of mercury to marine organisms",
+      "meta": "Stable-isotope evidence that pelagic-fish methylmercury traces to particle-phase methylation in the upper 400 metres, not deep anoxic basins.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2208183119",
+      "doi": "10.1073/pnas.2208183119",
+      "authors": "Motta, Laura C.; Blum, Joel D.; Popp, Brian N., et al.",
+      "year": 2022,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "119",
+      "issue": "44",
+      "pages": null,
+      "cite_key": "motta2022-marine-hg-isotopes",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "US FDA action level for mercury in fish",
+      "meta": "United States Food and Drug Administration. Action level of 1.0 ppm total mercury (about 0.7 ppm methylmercury) in fish, set in 1979 and unchanged in operative form since.",
+      "type": "Government"
+    },
+    {
+      "n": 5,
+      "title": "EFSA tolerable weekly intake for methylmercury",
+      "meta": "European Food Safety Authority. Tolerable weekly intake of 1.3 µg per kg body weight per week for methylmercury, established 2012.",
+      "type": "Government"
+    },
+    {
+      "n": 6,
+      "title": "US EPA reference dose for methylmercury",
+      "meta": "United States Environmental Protection Agency. Reference dose of 0.1 µg per kg body weight per day for methylmercury, established 2001.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "WHO/FAO provisional tolerable weekly intake for methylmercury",
+      "meta": "Joint FAO/WHO Expert Committee on Food Additives (JECFA). Provisional tolerable weekly intake of 1.6 µg per kg body weight per week for methylmercury, 2003.",
+      "type": "Government"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — climate change and marine fish methylmercury projections (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source — the biogeochemical review, the coupled-model projection, and the isotope mechanism — and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }
