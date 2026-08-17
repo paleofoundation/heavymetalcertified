@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "dry botanical as sold (loose material, tea bags, sachets, pyramids), reported on the as-sold dry article; this is the lot the applicant packages and the auditor samples",
   "scope_note": "Dried botanical infusion material other than Camellia sinensis, as sold: chamomile, peppermint, spearmint, rooibos, honeybush, hibiscus, lemongrass, lemon balm, ginger, liquorice root, chrysanthemum, kuding (broadleaf holly leaf), yerba mate, guayusa and blends of those, in loose and bagged formats. Camellia sinensis material routes to the true-tea row and matcha to the matcha row. An infusion carrying a Supplement Facts panel routes to Category 16 (Dietary Supplements) by the taxonomy boundary rule, which removes most single-herb medicinal preparations from this row. A ready-to-drink bottled herbal infusion is a different product form in a different basis: it is assessed in the as-consumed liquid basis against the applicable ready-to-drink beverage cell, never by applying this row's dry-material ceiling to a brewed liquid, and never by applying a ready-to-drink ceiling to this row's dry material.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]sold|product as placed on market|edible part|dry matter|dry weight",
   "basis_guard_note": "This row publishes a dry-commodity ceiling in the as-sold basis (the article the applicant packages and the lot the auditor samples), so every named anchor must itself be a dry-commodity as-sold or as-placed-on-market cell. The guard refuses the ready-to-drink beverage cells: Hong Kong Cap 132V Note 11 restricts its beverage entries to beverages that are, or are reconstituted to be, ready to drink, and applying a ready-to-drink ceiling to a dry leaf, bean or powder would be a basis conflation in the strict direction, not a standard.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -38,10 +40,32 @@
       "type": "control",
       "value": null,
       "provenance": "control",
-      "rationale": "No credible sovereign sets a cadmium maximum level for dried herbal or botanical infusion material. Hong Kong Cap 132V, the only credible instrument that names infusion botanicals at all, sets lead values for them but no cadmium value; EU 2023/915, Codex CXS 193, FSANZ Schedule 19 and Health Canada set no cadmium cell for herbal infusions or for tea. The EU leaf-vegetable cadmium cell (100 ug/kg) was considered and rejected: it is a fresh-weight edible-portion value for a vegetable eaten whole, and carrying it onto a dried botanical would require an invented drying factor of roughly an order of magnitude. No near-neighbour read-across is supportable, so the fail-safe disposition is a control: cadmium testing is mandatory on every certified lot and no ceiling is invented from occurrence data.",
+      "rationale": "No credible sovereign sets a cadmium maximum level for dried herbal or botanical infusion material. Hong Kong Cap 132V, the only credible instrument that names infusion botanicals at all, sets lead values for them but no cadmium value; EU 2023/915, Codex CXS 193, FSANZ Schedule 19 and Health Canada set no cadmium cell for herbal infusions or for tea. Two EU cells reach the nearest commodities and both were considered and rejected: the leaf-vegetable cadmium cell (100 ug/kg, eu2023_cd_leaf_vegetables_100) and the spinaches, similar leaves, mustard seedlings and fresh herbs cell (200 ug/kg, eu2023_cd_spinach_herbs_200), which is the closest sovereign cadmium cell to this commodity that exists. Both are fresh-weight edible-portion values for a plant eaten whole while fresh, and carrying either onto a dried botanical sold as sold would require an invented drying factor of roughly an order of magnitude; the register records both on a wet-weight basis and this row's basis guard refuses them for that reason. No near-neighbour read-across is supportable, so the fail-safe disposition is a control: cadmium testing is mandatory on every certified lot and no ceiling is invented from occurrence data.",
       "reference_method": "Cadmium by ICP-MS on every certified lot, reported on the certificate. A result above 10 ug/kg in a ready-to-drink form, or above 100 ug/kg in a dry form, escalates to an ingredient-origin and process-water investigation and is a Standards Ratchet surveillance input under Governance Policy section 12.",
       "bounded_by": null,
-      "companion_ml": null
+      "companion_ml": null,
+      "companion_ids": [
+        "eu2023_cd_leaf_vegetables_100",
+        "eu2023_cd_spinach_herbs_200"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_cd_leaf_vegetables_100",
+          "value": 100,
+          "jurisdiction": "EU",
+          "metal_species": "Cd",
+          "basis": "wet weight",
+          "scope": "leaf vegetables, general"
+        },
+        {
+          "id": "eu2023_cd_spinach_herbs_200",
+          "value": 200,
+          "jurisdiction": "EU",
+          "metal_species": "Cd",
+          "basis": "wet weight",
+          "scope": "spinaches and similar leaves, mustard seedlings, and fresh herbs"
+        }
+      ]
     },
     "tAs": {
       "type": "control",
@@ -86,10 +110,41 @@
       "type": "control",
       "value": null,
       "provenance": "control",
-      "rationale": "No credible sovereign sets a nickel maximum level for dried herbal or botanical infusion material. EU 2024/1987 is the only comprehensive sovereign nickel instrument; its cells cover cereals, pulses, oilseeds, tree nuts, vegetables, cocoa and chocolate, infant formula, baby food and fruit and vegetable juices, and none of them covers this commodity. The juice and nectar cell (250 ug/kg) is written in a ready-to-drink basis and cannot be applied to a dry commodity, and the dry-commodity cells that do exist are written for other plant families. Nickel is a Tier-2 analyte on the mandatory eight-total panel.",
+      "rationale": "No credible sovereign sets a nickel maximum level for dried herbal or botanical infusion material. EU 2024/1987 is the only comprehensive sovereign nickel instrument; its cells cover cereals, pulses, oilseeds, tree nuts, vegetables, cocoa and chocolate, infant formula, baby food and fruit and vegetable juices, and none of them is written for dried infusion material. The two cells that come closest are named and rejected rather than passed over: the fresh-herbs cell (1200 ug/kg, eu2024_ni_fresh_herbs_1200) and the leafy-vegetables-except-fresh-herbs cell (500 ug/kg, eu2024_ni_leafy_veg_500). Both are recorded in the register on a wet-weight basis for a plant sold fresh, and this row certifies the dried commodity as sold, so adopting either would require a drying factor that no instrument supplies; this row's basis guard refuses them on that ground. The juice and nectar cell (250 ug/kg) is written in a ready-to-drink basis and cannot be applied to a dry commodity, and the dry-commodity cells that do exist are written for other plant families. Nickel is a Tier-2 analyte on the mandatory eight-total panel.",
       "reference_method": "Total nickel by ICP-MS on every certified lot in the as-sold dry basis, reported on the certificate. An elevated result escalates to a soil, cultivar and stainless-equipment investigation.",
       "bounded_by": null,
-      "companion_ml": null
+      "companion_ml": null,
+      "companion_ids": [
+        "eu2024_ni_fresh_herbs_1200",
+        "eu2024_ni_leafy_veg_500",
+        "eu2024_ni_juice_250"
+      ],
+      "companions": [
+        {
+          "id": "eu2024_ni_fresh_herbs_1200",
+          "value": 1200,
+          "jurisdiction": "EU",
+          "metal_species": "Ni",
+          "basis": "wet weight",
+          "scope": "fresh herbs"
+        },
+        {
+          "id": "eu2024_ni_leafy_veg_500",
+          "value": 500,
+          "jurisdiction": "EU",
+          "metal_species": "Ni",
+          "basis": "wet weight",
+          "scope": "leafy vegetables except fresh herbs"
+        },
+        {
+          "id": "eu2024_ni_juice_250",
+          "value": 250,
+          "jurisdiction": "EU",
+          "metal_species": "Ni",
+          "basis": "product as placed on market",
+          "scope": "fruit/vegetable juices and nectars, general"
+        }
+      ]
     },
     "Sn": {
       "type": "control",
@@ -98,7 +153,20 @@
       "rationale": "No credible sovereign sets a tin maximum level for dried herbal or botanical infusion material. The exclusion is written into the instrument itself: EU 2023/915 Annex I section 3.5 scopes its inorganic-tin maximum levels to canned beverages and canned foods and expressly excepts canned dried and canned powdered products, and the Codex, FSANZ and Hong Kong canned-food cells carry the same carve-out. There is therefore no sovereign number for a dry beverage commodity and no supportable read-across, because the canned-liquid cells are written in a ready-to-drink basis. Tin is nonetheless on the mandatory eight-total panel.",
       "reference_method": "Total tin by ICP-MS on every certified lot in the as-sold dry basis, reported on the certificate. Where the applicant also sells a canned ready-to-drink form of this product, that form is verified separately against the canned-beverage tin maximum level in the as-consumed basis.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_beverages_100000"
+      "companion_ml": "eu2023_sn_canned_beverages_100000",
+      "companion_ids": [
+        "eu2023_sn_canned_beverages_100000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_beverages_100000",
+          "value": 100000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned beverages, including canned fruit and vegetable juices, except ca"
+        }
+      ]
     },
     "Al": {
       "type": "control",
@@ -130,6 +198,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

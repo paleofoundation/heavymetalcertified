@@ -9,6 +9,8 @@
   "native_basis": "as_consumed",
   "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
   "scope_note": "Ready-to-drink formulated sports, isotonic, electrolyte, hydration and energy beverages, carbonated and still, in every packaging format including aluminium cans, and their powder or tablet forms assessed as reconstituted to the label serving. A product carrying a Supplement Facts panel routes to Category 16 (Dietary Supplements) by the taxonomy boundary rule, which removes most pre-workout powders from this row. A plain or lightly flavoured water with no formulated load routes to the flavoured-water row. This row is a FORMULATED ready-to-drink beverage, not water with flavour: the packaged-drinking-water quality standards relied on for the flavoured-water row are not applicable here, because the product carries a substantial dissolved load (sweetener systems, electrolyte salts, acidulants, stimulants, botanical extracts, colours and juice concentrates) that those instruments do not contemplate. The boundary is stated so the difference in published ceilings between this row and the flavoured-water row is legible as an applicability judgement rather than an inconsistency.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]consumed|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|single-strength|bottled water|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a ready-to-drink liquid ceiling, so every named anchor must itself be written in a wet as-consumed (or as-placed-on-market liquid, or packaged-drinking-water) basis. The guard refuses any dry-commodity as-sold cell, any feed-basis cell, any food-contact migration limit and any article-content limit, because applying a dry leaf, bean or powder maximum level to a brewed or reconstituted liquid would be exactly the basis conflation Method v2.0 forbids. No brewing, dilution or reconstitution factor is invented in either direction.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -36,36 +38,42 @@
           "id": "fda2004_juice_haccp_pb_50",
           "value": 50,
           "jurisdiction": "US",
+          "basis": "ready-to-drink juice",
           "scope": "ready-to-drink fruit juices including fruit nect"
         },
         {
           "id": "eu2023_pb_fruit_juice_other_30",
           "value": 30,
           "jurisdiction": "EU",
+          "basis": "wet weight or reconstituted juice",
           "scope": "fruit juices, fruit juices from concentrate, con"
         },
         {
           "id": "eu2023_pb_fruit_juice_berry_50",
           "value": 50,
           "jurisdiction": "EU",
+          "basis": "wet weight or reconstituted juice",
           "scope": "fruit juices, fruit juices from concentrate, con"
         },
         {
           "id": "hk_cap132v_pb_fruit-juices-other-than-fruit-juices-exclusively-from-b_30",
           "value": 30,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Fruit juices, other than fruit juices exclusivel"
         },
         {
           "id": "hk_cap132v_pb_fruit-juices-exclusively-from-berries-and-other-small-f_50",
           "value": 50,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Fruit juices exclusively from berries and other "
         },
         {
           "id": "hk_cap132v_pb_grape-juice_40",
           "value": 40,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Grape juice"
         }
       ],
@@ -196,6 +204,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

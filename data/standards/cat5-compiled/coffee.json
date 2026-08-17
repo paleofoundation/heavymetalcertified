@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "dry commodity as sold (green beans, roasted whole beans, ground coffee, coffee pods and capsules assessed on their coffee fill, instant coffee solids), reported on the as-sold article; this is the lot the applicant packages and the auditor samples",
   "scope_note": "Coffee as a dry commodity: green and roasted Coffea arabica and canephora beans, ground coffee, single-serve pods and capsules assessed on the coffee fill rather than the hardware, and instant or freeze-dried coffee solids. A mushroom coffee or any coffee carrying a Supplement Facts panel routes to Category 16 by the taxonomy boundary rule. Coffee-flavoured dairy and plant beverages route to Category 24 or the plant-milk rows respectively. Hong Kong Cap 132V writes the product-form split for this commodity itself, setting Coffee beans at 500 ug/kg lead in the as-sold basis and Coffee beverages at 200 ug/kg in the as-consumed basis under its Note 11; HMTc preserves the split. An applicant selling canned or bottled ready-to-drink coffee is assessed on that product form in the as-consumed liquid basis against the 200 ug/kg beverage cell; an applicant selling beans, grounds, pods or instant solids is assessed in this row's dry basis. Neither number is converted into the other basis, and no brew-strength or extraction factor is invented in either direction. The capsule or pod hardware itself is a food-contact article and is governed by Category 9, not here.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]sold|product as placed on market|edible part|dry matter|dry weight",
   "basis_guard_note": "This row publishes a dry-commodity ceiling in the as-sold basis (the article the applicant packages and the lot the auditor samples), so every named anchor must itself be a dry-commodity as-sold or as-placed-on-market cell. The guard refuses the ready-to-drink beverage cells: Hong Kong Cap 132V Note 11 restricts its beverage entries to beverages that are, or are reconstituted to be, ready to drink, and applying a ready-to-drink ceiling to a dry leaf, bean or powder would be a basis conflation in the strict direction, not a standard.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -104,7 +106,20 @@
       "rationale": "No credible sovereign sets a tin maximum level for dry coffee. The exclusion is written into the instrument itself: EU 2023/915 Annex I section 3.5 scopes its inorganic-tin maximum levels to canned beverages and canned foods and expressly excepts canned dried and canned powdered products, and the Codex, FSANZ and Hong Kong canned-food cells carry the same carve-out. There is therefore no sovereign number for a dry beverage commodity and no supportable read-across, because the canned-liquid cells are written in a ready-to-drink basis. Tin is nonetheless on the mandatory eight-total panel.",
       "reference_method": "Total tin by ICP-MS on every certified lot in the as-sold dry basis, reported on the certificate. Where the applicant also sells a canned ready-to-drink form of this product, that form is verified separately against the canned-beverage tin maximum level in the as-consumed basis.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_beverages_100000"
+      "companion_ml": "eu2023_sn_canned_beverages_100000",
+      "companion_ids": [
+        "eu2023_sn_canned_beverages_100000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_beverages_100000",
+          "value": 100000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned beverages, including canned fruit and vegetable juices, except ca"
+        }
+      ]
     },
     "Al": {
       "type": "control",
@@ -136,6 +151,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

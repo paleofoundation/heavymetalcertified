@@ -5,10 +5,12 @@
   "category_name": "Beverages",
   "anchor": "Per-form sovereign beverage cells in the as-consumed liquid basis (EU 2023/915 juice and rice-drink cells, Codex CXS 193 fruit juices, EU 2024/1987 beverage nickel, EU canned-beverage tin, Hong Kong Cap 132V's named carbonated, tea, coffee and wine beverage entries, and the US and Hong Kong packaged-drinking-water quality standards), with dry leaf, bean and powder commodities anchored separately in their own as-sold basis and never converted between the two",
   "provisional_scaffold": false,
-  "cross_reference": "RETIRED placement. The taxonomy retires this row in favour of the Category 3 (Grains and Rice) rice-beverage row, which is where the rice inorganic-arsenic hazard is governed alongside the other rice forms. The slug is retained here for continuity of routing and citation, and the standard compiled here is held identical to the Category 3 rice-beverage row: the same EU 2023/915 non-alcoholic rice-based drinks cell binds inorganic arsenic in both. If the two ever diverge, the Category 3 row governs and this row is the defect.",
+  "cross_reference": "RETIRED placement. The taxonomy retires this row in favour of the Category 3 (Grains and Rice) rice-beverage row, which is where the rice inorganic-arsenic hazard is governed alongside the other rice forms, and the slug is retained here for continuity of routing and citation. Until that row is recompiled, the standard compiled here is the governing HMTc standard for a rice-based plant drink. The Category 3 record at data/workbench/standards/cat3-compiled/rice-beverages-rice-milk.json is a superseded pre-Method-v2.0 build and is not authoritative: its aluminium cell publishes 1000 ug/kg with the basis_kind precautionary and no register id, which is an occurrence-derived number of exactly the kind the government-limit-only method retires; its lead cell rests on a literature-baseline rationale, which is likewise retired; and its panel omits total chromium. The two rows agree on the cell that matters most for this form, inorganic arsenic at 30 ug/kg from EU 2023/915 section 3.4.1.6 (eu2023_ias_rice_drinks_30), and they diverge on most of the remainder because this row was compiled under Method v2.0 and that one was not. No precedence is given to the superseded record: where the two differ, this row governs, and the divergence is closed by recompiling the Category 3 row under Method v2.0, never by importing a retired occurrence-derived value or a retired rationale tag into this one.",
   "native_basis": "as_consumed",
   "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
   "scope_note": "Ready-to-drink rice-based milk alternatives and any plant-based drink containing rice, rice syrup or rice protein at any inclusion level. The row is retired to Category 3; see cross_reference. Rice-based infant and young-child drinks route to Category 1, and several regulators advise against rice drinks for young children altogether, which is a labelling and advisory matter outside this numeric standard.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]consumed|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|single-strength|bottled water|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a ready-to-drink liquid ceiling, so every named anchor must itself be written in a wet as-consumed (or as-placed-on-market liquid, or packaged-drinking-water) basis. The guard refuses any dry-commodity as-sold cell, any feed-basis cell, any food-contact migration limit and any article-content limit, because applying a dry leaf, bean or powder maximum level to a brewed or reconstituted liquid would be exactly the basis conflation Method v2.0 forbids. No brewing, dilution or reconstitution factor is invented in either direction.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -38,10 +40,32 @@
       "type": "control",
       "value": null,
       "provenance": "control",
-      "rationale": "No credible sovereign sets a cadmium maximum level for a rice-based plant drink. EU 2023/915, Codex CXS 193, FSANZ Schedule 19, Health Canada and Hong Kong Cap 132V set no cadmium maximum level for a plant-based drink, and none of them sets a cadmium cell for dairy milk either, so the dairy-milk analog relied on for lead and total mercury in this row supplies nothing for cadmium. The sovereign cadmium cells for the dry source seeds, grains and nuts (for example soy beans at 200 ug/kg) are as-sold dry-commodity values and cannot be carried into a ready-to-drink liquid without an invented dilution factor. No near-neighbour read-across is supportable, so the fail-safe disposition is a control: cadmium testing is mandatory on every certified lot and no ceiling is invented from occurrence data.",
+      "rationale": "No credible sovereign sets a cadmium maximum level for a rice-based plant drink. EU 2023/915, Codex CXS 193, FSANZ Schedule 19, Health Canada and Hong Kong Cap 132V set no cadmium maximum level for a plant-based drink, and none of them sets a cadmium cell for dairy milk either, so the dairy-milk analog relied on for lead and total mercury in this row supplies nothing for cadmium. The sovereign cadmium cells for the dry source seeds, grains and nuts (for example soy beans at 200 ug/kg) are as-sold dry-commodity values and cannot be carried into a ready-to-drink liquid without an invented dilution factor. The rice-commodity cadmium cells are named and rejected specifically, because they are the ones an auditor scanning this row will find: FSANZ Schedule 19 sets 100 ug/kg for rice on the portion-ordinarily-consumed basis (aunz_sch19_cd_rice_100), and EU 2023/915 section 3.2.12.3 sets 150 ug/kg for rice, quinoa, wheat bran and wheat gluten on a commodity basis (eu2023_cd_rice_quinoa_wheatbran_150). Both are written for the grain and not for the dilute aqueous extract sold as a drink, and carrying either onto a ready-to-drink liquid would require a dilution factor that no instrument supplies, so neither is adopted. No near-neighbour read-across is supportable, so the fail-safe disposition is a control: cadmium testing is mandatory on every certified lot and no ceiling is invented from occurrence data.",
       "reference_method": "Cadmium by ICP-MS on every certified lot, reported on the certificate. A result above 10 ug/kg in a ready-to-drink form, or above 100 ug/kg in a dry form, escalates to an ingredient-origin and process-water investigation and is a Standards Ratchet surveillance input under Governance Policy section 12.",
       "bounded_by": null,
-      "companion_ml": null
+      "companion_ml": null,
+      "companion_ids": [
+        "aunz_sch19_cd_rice_100",
+        "eu2023_cd_rice_quinoa_wheatbran_150"
+      ],
+      "companions": [
+        {
+          "id": "aunz_sch19_cd_rice_100",
+          "value": 100,
+          "jurisdiction": "AU-NZ",
+          "metal_species": "Cd",
+          "basis": "portion ordinarily consumed",
+          "scope": "rice"
+        },
+        {
+          "id": "eu2023_cd_rice_quinoa_wheatbran_150",
+          "value": 150,
+          "jurisdiction": "EU",
+          "metal_species": "Cd",
+          "basis": "commodity",
+          "scope": "rice, quinoa, wheat bran, and wheat gluten"
+        }
+      ]
     },
     "tAs": {
       "type": "control",
@@ -73,6 +97,7 @@
           "id": "eu2023_ias_fruit_juice_20",
           "value": 20,
           "jurisdiction": "EU",
+          "basis": "wet weight or reconstituted juice",
           "scope": "fruit juices, concentrated fruit juices as recon"
         }
       ],
@@ -174,6 +199,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

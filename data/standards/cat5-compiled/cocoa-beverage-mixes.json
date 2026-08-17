@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "dry powder as sold, reported on the as-sold article, which is the basis EU 2023/915 and EU 2024/1987 use for the cocoa-powder cells that bind this row (product as placed on the market)",
   "scope_note": "Dry powders sold to be reconstituted into a beverage: unsweetened cocoa powder sold for drinking, sweetened cocoa powder, powdered drinking chocolate and hot-chocolate mixes, and malted drink powders whose characterising ingredient is cocoa or malt. Includes fat-reduced cocoa powder. Excludes eating chocolate and chocolate confectionery, which are a different product form; excludes ready-to-drink chocolate and malted milk beverages, which are liquid dairy or plant drinks and route to Category 24 or the plant-milk rows; excludes any mix carrying a Supplement Facts panel, which routes to Category 16. The row is certified in the as-sold dry powder basis because that is the article the applicant packages and the lot the auditor samples, and because the binding instruments are themselves written in that basis; no reconstitution factor is applied to convert the ceiling into an as-consumed beverage value.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]sold|product as placed on market|edible part|dry matter|dry weight|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a dry-commodity ceiling in the as-sold basis (the article the applicant packages and the lot the auditor samples), so every named anchor must itself be a dry-commodity as-sold or as-placed-on-market cell. The guard refuses the ready-to-drink beverage cells: Hong Kong Cap 132V Note 11 restricts its beverage entries to beverages that are, or are reconstituted to be, ready to drink, and applying a ready-to-drink ceiling to a dry leaf, bean or powder would be a basis conflation in the strict direction, not a standard. This row's guard additionally admits the FSANZ basis phrase (portion ordinarily consumed), which binds the cadmium cell. That phrase denotes the edible portion of the food as listed rather than a prepared serving, so for a powder consumed in its entirety it coincides with the as-sold dry article this row publishes, and no reconstitution or dilution factor is applied. The admission is narrow and row-specific: it is not extended to the other dry rows in this category, none of which has an FSANZ anchor.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -60,18 +62,21 @@
           "id": "eu2023_cd_chocolate_lowcocoa_100",
           "value": 100,
           "jurisdiction": "EU",
+          "basis": "product as placed on market",
           "scope": "milk chocolate with less than 30 percent total d"
         },
         {
           "id": "eu2023_cd_chocolate_midcocoa_300",
           "value": 300,
           "jurisdiction": "EU",
+          "basis": "product as placed on market",
           "scope": "chocolate with less than 50 percent total dry co"
         },
         {
           "id": "hk_cap132v_cd_chocolates-containing-or-declaring-30-total-cocoa-solid_300",
           "value": 300,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Chocolates containing or declaring < 30% total c"
         }
       ],
@@ -138,12 +143,14 @@
           "id": "eu2024_ni_chocolate_milk_low_2500",
           "value": 2500,
           "jurisdiction": "EU",
+          "basis": "product as placed on market",
           "scope": "milk chocolate < 30 % dry cocoa solids"
         },
         {
           "id": "eu2024_ni_chocolate_7000",
           "value": 7000,
           "jurisdiction": "EU",
+          "basis": "product as placed on market",
           "scope": "milk chocolate >= 30 % dry cocoa solids, and cho"
         }
       ],
@@ -157,7 +164,20 @@
       "rationale": "No credible sovereign sets a tin maximum level for a dry cocoa or malted beverage powder. The exclusion is written into the instrument itself: EU 2023/915 Annex I section 3.5 scopes its inorganic-tin maximum levels to canned beverages and canned foods and expressly excepts canned dried and canned powdered products, and the Codex, FSANZ and Hong Kong canned-food cells carry the same carve-out. There is therefore no sovereign number for a dry beverage commodity and no supportable read-across, because the canned-liquid cells are written in a ready-to-drink basis. Tin is nonetheless on the mandatory eight-total panel.",
       "reference_method": "Total tin by ICP-MS on every certified lot in the as-sold dry basis, reported on the certificate. Where the applicant also sells a canned ready-to-drink form of this product, that form is verified separately against the canned-beverage tin maximum level in the as-consumed basis.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_beverages_100000"
+      "companion_ml": "eu2023_sn_canned_beverages_100000",
+      "companion_ids": [
+        "eu2023_sn_canned_beverages_100000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_beverages_100000",
+          "value": 100000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned beverages, including canned fruit and vegetable juices, except ca"
+        }
+      ]
     },
     "Al": {
       "type": "control",
@@ -189,6 +209,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

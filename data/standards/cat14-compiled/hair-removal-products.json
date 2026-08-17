@@ -9,6 +9,8 @@
   "native_basis": "finished_cosmetic_as_sold",
   "native_basis_label": "finished cosmetic as placed on market — total element content per unit mass of undiluted product as sold (µg/kg). Not a dietary basis, not a migration or leachate basis, and no use-pattern dilution credit.",
   "scope_note": "Chemical depilatories applied to skin, left for a short prescribed contact time, then wiped and rinsed: thioglycolate and sulphide creams, lotions, gels and mousses, and depilatory bars. Contact is brief but the preparation is highly alkaline and disrupts the stratum corneum, which raises dermal availability of any metal present; the panel is nonetheless anchored on the same finished-cosmetic basis because no sovereign instrument sets a depilatory-specific contaminant limit, and HMTc does not invent one. Wax strips and epilating devices are articles, not cosmetics, and are out of scope for this row. Category 14 boundary rules apply: the product must be applied to skin or hair and intentionally rinsed off. A baby or infant shampoo or body wash routes to Category 2 (Infant Personal Care) and takes the child-protective treatment there; a leave-in conditioner or any leave-on preparation routes to Category 13; an intimate wash routes to Category 15, where the mucosal-contact pathway overrides the rinse-off classification and pulls the stricter mucosal tier.",
+  "material": null,
+  "components": null,
   "basis_guard": "^(cosmetic product; source unit|finished cosmetic|final cosmetic product|cosmetic as sold|unintentional trace presence in marketed cosmetic)",
   "basis_guard_note": "Every named anchor must carry a FINISHED-COSMETIC total-content basis. The guard is drawn to admit the five basis phrasings the sovereign cosmetic instruments actually use ('cosmetic product; source unit ...', 'finished cosmetic ...', 'final cosmetic product ...', 'cosmetic as sold ...', 'unintentional trace presence in marketed cosmetic product') and to exclude three families that would be basis conflations: colour-additive and colourant purity specifications (21 CFR 73/74 and the national colourant profiles), which are raw-material ingredient specs and not finished-product maxima; the EU REACH tattoo and permanent-make-up mixture limits, which govern a mixture injected into the dermis; and every dietary, migration, leachate, textile-extraction and article limit. A cell whose named id fails the guard resolves to a GAP and fails the build, so the ingredient-spec trap cannot ship unnoticed.",
   "method": "HMTc Method v2.0 (government-limit default): each numeric cell is the strictest applicable sovereign finished-cosmetic maximum for the product as placed on market, selected by minimum over a named multi-jurisdiction candidate set; unregulated cells are controls with a mandatory method and escalation rule, never invented numbers; never occurrence-derived.",
@@ -88,22 +90,11 @@
       ],
       "stricter_unselected": [
         {
-          "id": "wa_tfca_pb_toothpaste_1000",
-          "value": 1000,
-          "jurisdiction": "US-WA",
-          "scope": "toothpaste"
-        },
-        {
           "id": "de_bvl2017_pb_toothpaste_500",
           "value": 500,
           "jurisdiction": "DE",
+          "basis": "cosmetic product; source unit mg/kg",
           "scope": "toothpaste"
-        },
-        {
-          "id": "eu_reach_2020_2081_pb_tattoo_pmu_700",
-          "value": 700,
-          "jurisdiction": "EU",
-          "scope": "mixtures for use for tattooing or permanent make"
         }
       ],
       "label": "strictest applicable sovereign finished-cosmetic lead maximum — Germany BVL 2017 general-cosmetic tier (2.0 mg/kg = 2000 µg/kg), taken as the minimum over eleven named finished-cosmetic instruments",
@@ -246,7 +237,20 @@
       "rationale": "No jurisdiction sets an inorganic-arsenic content limit for any cosmetic, rinse-off or leave-on: every cosmetic arsenic instrument in the register is written for total arsenic, and there is no near-neighbour cosmetic cell to read across from. A not-material determination is not supportable either, because inorganic arsenic is genuinely material in this matrix — clays, muds, pumice, volcanic ash, sea salts and mineral pigments carry arsenic predominantly in inorganic form, and inorganic arsenic is the toxic fraction. The cell is therefore a control, which is the fail-safe: testing is mandatory, no ceiling is invented, and the species is bounded by identity below the published total-arsenic ceiling.",
       "reference_method": "Total arsenic by ICP-MS after microwave digestion on every certified lot. Reflex HPLC-ICP-MS inorganic-arsenic speciation is ordered whenever the total-arsenic screen exceeds half the published total-arsenic ceiling, and unconditionally whenever the formulation carries a clay, mud, pumice, mineral-abrasive, sea-salt or mineral-pigment raw material. Quantified inorganic arsenic is held under ALARA against the manufacturer's established process capability, escalates to CAPA and raw-material traceback on an unexplained step change, and fails the lot if inorganic arsenic alone reaches the published total-arsenic ceiling.",
       "bounded_by": null,
-      "companion_ml": "de_bvl2017_tas_cosmetics_general_500"
+      "companion_ml": "de_bvl2017_tas_cosmetics_general_500",
+      "companion_ids": [
+        "de_bvl2017_tas_cosmetics_general_500"
+      ],
+      "companions": [
+        {
+          "id": "de_bvl2017_tas_cosmetics_general_500",
+          "value": 500,
+          "jurisdiction": "DE",
+          "metal_species": "tAs",
+          "basis": "cosmetic product; source unit mg/kg",
+          "scope": "cosmetic products in general except theater, fan, or carnival make-up"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",
@@ -356,14 +360,7 @@
           "jurisdiction": "KR"
         }
       ],
-      "stricter_unselected": [
-        {
-          "id": "eu_reach_2020_2081_ni_tattoo_pmu_5000",
-          "value": 5000,
-          "jurisdiction": "EU",
-          "scope": "mixtures for use for tattooing or permanent make"
-        }
-      ],
+      "stricter_unselected": [],
       "label": "the only sovereign finished-cosmetic nickel content limit — Korea MFDS Notice 2024-9 Article 6(2), cosmetic products other than eye makeup and colour cosmetics (10 µg/g = 10000 µg/kg)",
       "substantiation": "Korea is the only jurisdiction in the register that sets a nickel content limit for finished cosmetics, and it tiers it by form: 10 µg/g for cosmetic products other than eye makeup and colour cosmetics, 30 µg/g for colour makeup, 35 µg/g for eye makeup. Every Category 14 form is a cleansing, conditioning, shaving, depilatory or hair-colouring preparation and none is an eye-makeup or colour-makeup product in the MFDS product taxonomy, so the strictest of the three tiers — 10 µg/g — is the directly applicable one, not a read-across. Korea MFDS Notice 2025-63 carries the same 10 µg/g value for the same scope and corroborates it; it is not named as a candidate because its register note contradicts its own value (the note reads '1 microgram/g = 1000 ug/kg' against a stored value of 10000 µg/kg), and a litigation-facing citation should not carry that discrepancy forward. The EU REACH restriction on nickel in tattoo and permanent-make-up mixtures (5000 µg/kg) is stricter but governs a mixture injected into the dermis, a different form on a different basis, and is held out by this row's basis_guard. Nickel is a leading contact sensitiser, so the programme additionally holds it under ALARA post-publication and treats the published ceiling as an outer bound rather than a target."
     },

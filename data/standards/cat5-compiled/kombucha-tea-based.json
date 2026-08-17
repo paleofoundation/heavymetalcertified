@@ -9,6 +9,8 @@
   "native_basis": "as_consumed",
   "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
   "scope_note": "Ready-to-drink kombucha and other tea-substrate ferments: sweetened Camellia sinensis or herbal-infusion base fermented with a bacterial and yeast consortium, with or without added juice, botanicals or carbonation, in bottle, can and keg formats. Non-tea ferments route to the fermented-beverage row; dairy ferments route to Category 24; a kombucha carrying a Supplement Facts panel routes to Category 16. The row sits at the intersection of two hazard routes and both are carried in the control cells: the tea substrate brings the leaf's accumulated aluminium and lead into the liquid through extraction, and the ferment then holds a pH 2.5 to 3.5 matrix against vessels, seals and taps for one to three weeks, which is a live equipment-leaching condition. This row is certified in the as-consumed liquid basis; the dry tea leaf used as substrate is a separate product form certified in the true-tea row's as-sold basis, and no extraction factor is invented to convert between the two.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]consumed|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|single-strength|bottled water|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a ready-to-drink liquid ceiling, so every named anchor must itself be written in a wet as-consumed (or as-placed-on-market liquid, or packaged-drinking-water) basis. The guard refuses any dry-commodity as-sold cell, any feed-basis cell, any food-contact migration limit and any article-content limit, because applying a dry leaf, bean or powder maximum level to a brewed or reconstituted liquid would be exactly the basis conflation Method v2.0 forbids. No brewing, dilution or reconstitution factor is invented in either direction.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -159,6 +161,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

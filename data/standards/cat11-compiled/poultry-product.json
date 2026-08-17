@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "as sold, raw or cooked edible portion (wet weight); bone and inedible fat excluded; no dry-to-wet or reconstitution conversion is performed",
   "scope_note": "Muscle meat, skin and attached edible fat of domestic poultry — chicken, turkey, duck, goose, guinea fowl and farmed quail — in fresh, chilled, frozen, whole-bird, portioned, ground/minced and plain cooked forms with no added non-meat ingredients. Poultry edible offal (liver, gizzard, heart) is a separately-tested sub-lot against the sovereign poultry-offal maximum levels and never anchors this muscle-meat row. Breaded, marinated, cured, comminuted and further-processed poultry (nuggets, deli turkey, chicken sausage) routes to the processed-meats row; canned chicken routes to the canned-meats row; poultry marketed for ages 0-5 routes to Category 1. Wild game birds route to the game-meats row. Eggs are a separate row.",
+  "material": null,
+  "components": null,
   "basis_guard": "(wet weight|portion ordinarily consumed|product as placed on market|food as listed|as sold|as consumed|commodity|edible part|fresh weight)",
   "basis_guard_note": "Category 11 is a dietary as-sold wet-weight category. The guard admits only register rows whose basis is a food-matrix content basis (wet weight, portion ordinarily consumed, product as placed on market, commodity, edible part, food as listed in the Cap 132V schedule). It rejects, by construction, food-contact specific-migration limits, toy and article element-migration limits, animal-feed 12%-moisture bases, dry-matter fertiliser limits, colour-additive ingredient purity specifications, and drinking-water statutory limits. A migration or purity-specification number is not a maximum level for a food and must never anchor a meat, poultry, or egg row.",
   "method": "HMTc Method v2.0 (government-limit-only initial setting: the strictest applicable sovereign maximum level for this exact product form in its native basis; disclosed read-across where the exact cell is unregulated; control where neither a sovereign number nor a supportable near-neighbour analogue exists; never occurrence-derived)",
@@ -25,25 +27,25 @@
       "value": 100,
       "value_exact": 100,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "AU-NZ",
-      "binding_id": "aunz_sch19_pb_meat_100",
+      "binding_jurisdiction": "HK",
+      "binding_id": "hk_cap132v_pb_meat-of-poultry_100",
       "basis": "as sold, edible portion (wet weight)",
-      "binding_page": "regulations/au-nz-food-standards-code-schedule-19-contaminants",
+      "binding_page": "regulations/hong-kong-cap-132v-metallic-contamination",
       "candidates": [
-        {
-          "id": "aunz_sch19_pb_meat_100",
-          "value": 100,
-          "jurisdiction": "AU-NZ"
-        },
         {
           "id": "hk_cap132v_pb_meat-of-poultry_100",
           "value": 100,
           "jurisdiction": "HK"
+        },
+        {
+          "id": "aunz_sch19_pb_meat_100",
+          "value": 100,
+          "jurisdiction": "AU-NZ"
         }
       ],
       "stricter_unselected": [],
       "label": "strictest applicable sovereign poultry-meat lead maximum level; FSANZ Schedule 19 and Hong Kong Cap. 132V agree at 100 ug/kg",
-      "substantiation": "FSANZ Schedule 19 sets 0.1 mg/kg lead for meat of cattle, sheep, pig and poultry excluding offal, and Hong Kong Cap. 132V sets 0.1 mg/kg for meat of poultry. The corresponding EU Regulation (EU) 2023/915 and Codex CXS 193-1995 poultry-meat lead rows are absent from this register and are therefore not named and not assigned a value from memory; they are recorded as register gaps. Ingesting them can only lower this cell or leave it unchanged, never raise it, and this cell must be re-derived when they land. Hong Kong's edible-offal-of-poultry lead maximum level is also 0.1 mg/kg but is a different product scope and governs offal sub-lots, not this row."
+      "substantiation": "FSANZ Schedule 19 sets 0.1 mg/kg lead for meat of cattle, sheep, pig and poultry excluding offal, and Hong Kong Cap. 132V sets 0.1 mg/kg for meat of poultry. The corresponding EU Regulation (EU) 2023/915 and Codex CXS 193-1995 poultry-meat lead rows are absent from this register and are therefore not named and not assigned a value from memory; they are recorded as register gaps. Ingesting them can only lower this cell or leave it unchanged, never raise it, and this cell must be re-derived when they land. Hong Kong's edible-offal-of-poultry lead maximum level is also 0.1 mg/kg but is a different product scope and governs offal sub-lots, not this row. BASIS OF THE BINDING INSTRUMENT, DISCLOSED: the two concurring instruments are written on DIFFERENT bases. FSANZ Schedule 19 states its maximum level for the portion ordinarily consumed (an as-consumed basis); Hong Kong Cap. 132V states the identical 0.1 mg/kg as-sold, for the edible portion after removal of bones and fat (Cap. 132V Part 2 Note 1). Because this row publishes an as-sold ceiling, the Hong Kong as-sold row is named as the binding instrument and the FSANZ row is disclosed as an independent sovereign value concurring at the same number. The published ceiling therefore rests on an instrument written in this row's own basis, and no as-consumed value is relabelled as-sold. The number is unaffected: both instruments sit at 100 ug/kg, so the strictest-applicable selection is identical either way."
     },
     "Cd": {
       "type": "gov",
@@ -147,7 +149,20 @@
       "rationale": "Inorganic tin in food is a tinplate-packaging pathway: tin migrates into the food from the internal surface of an unlacquered or damaged tinplate can, which is why every credible sovereign tin maximum level on the register is written against canned food rather than against the food itself. Fresh, chilled, frozen and modified-atmosphere-packed poultry is not packed in tinplate, so the pathway that the canned-food maximum levels exist to control is absent and no sovereign number governs the cell. A lot of this product form that is retorted or packed in a metal can is not certified against this row at all: it is certified against the canned-meats row, whose tin cell carries the binding canned-foods maximum level. No tin ceiling is invented for the non-canned form.",
       "reference_method": "Total tin by ICP-MS on every certified lot. Any quantifiable tin in a lot declared as non-metal-packed triggers a packaging and contact-surface investigation (can or closure liner, tinned equipment, solder) before release, and re-routes the lot to the canned-meats row if metal packaging is found.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_foods_200000"
+      "companion_ml": "eu2023_sn_canned_foods_200000",
+      "companion_ids": [
+        "eu2023_sn_canned_foods_200000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_foods_200000",
+          "value": 200000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned foods other than canned beverages, except canned dried and canned"
+        }
+      ]
     },
     "Al": {
       "type": "control",
@@ -181,16 +196,26 @@
       "substantiation": "Hong Kong Cap. 132V Part 2 Schedule sets 1 mg/kg chromium for meat of poultry. Adopted at face value but published as a screen: total chromium in a food is dominated by trivalent chromium and is not the health-relevant analyte."
     },
     "Cr-VI": {
-      "type": "not_material",
+      "type": "control",
       "value": null,
-      "provenance": "not-material",
-      "rationale": "Hexavalent chromium is not stable in this matrix. Raw and cooked poultry muscle tissue is a wet, reducing, protein- and thiol-rich medium; Cr(VI) is reduced to Cr(III) by tissue reductants (cysteine, glutathione, ascorbate) and by the acid and heat of digestion and cooking, so a Cr(VI) figure reported on such a matrix is an artifact of the extraction chemistry of the total-chromium screen rather than a measurement of a species that persists in the food. The determination follows the same reference-method adjudication recorded for the hexavalent-chromium cell in the infant-formula category (data/workbench standards Cr-VI adjudication), applied here to an animal-tissue matrix. Hexavalent chromium is in any event a species of, and bounded by, the published total-chromium screen (Cr-VI <= total Cr).",
-      "reference_method": "Not measured routinely. Bounded by the total-chromium screen (Cr cell). Alkaline-extraction Cr(VI) determination (IC-ICP-MS) is reflex-triggered only where the total-chromium screen exceeds the published screen value, in which case the investigation is directed at stainless-steel contact surfaces, grinders, and brine or marinade equipment rather than at the raw material.",
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a hexavalent-chromium content limit for any food, and no near-neighbour read-across is supportable: every credible Cr(VI) instrument on the register is an article, textile, leather, toy-migration, tattoo-ink, fertiliser or electrical-equipment limit written in a non-food basis, and applying one to a poultry-meat matrix would be the basis conflation this row's basis guard exists to reject. No ceiling is invented. THIS CELL WAS PREVIOUSLY CARRIED AS A NOT-MATERIAL DETERMINATION AND THAT DETERMINATION IS WITHDRAWN FOR POULTRY, for two independent reasons. First, the reference-method evidence behind the reduction argument does not reach this matrix. That argument (Cr(VI) is reduced to Cr(III) by tissue reductants and does not persist, so a reported Cr(VI) figure is an artifact of the extraction chemistry) rests on saraiva2021, species-specific isotope-dilution HPLC-ICP-MS, in which Cr(VI) was unquantified in every sample and spiked Cr(VI) was reduced essentially completely during workup. That study covers bovine meat, infant formula milk and semi-skimmed milk. It does not cover poultry. A not-material claim is an affirmative claim and may not be extended by analogy to a matrix the underlying method study never examined; it continues to support the beef, pork and lamb rows, where the matrix was directly measured. Second, the routed corpus contradicts the claim for this exact row. mahmud2011-crvi-chicken-pakistan (peer-reviewed, B-tier) reports author-declared Cr(VI) means of 0.233 to 1.266 mg/kg across chicken meat parts (leg muscle highest at 1.266 mg/kg) and 0.323 to 1.433 mg/kg across bones (head bone highest). The muscle-meat figures alone reach 1.27 times this row's own total-chromium screen of 1 mg/kg, and the row is scoped to muscle meat, so the exceedance does not depend on the bone values.  The paper and attributes them to a documented mechanical supply-chain pathway: chrome-tanned leather offcuts fed to poultry as cheap protein, carrying residual hexavalent chromium from K2CrO4 and K2Cr2O7 tanning liquors. The routed occurrence pool for poultry-product|Cr-VI is not quarantined and carries a stable sensitivity band. The programme records openly that mahmud2011 is weak evidence of SPECIATION: muffle-furnace ashing and nitric-acid digestion followed by atomic absorption calibrated against potassium dichromate, with no chromatographic separation and no speciation-preservation validation, measures total chromium irrespective of oxidation state, and the reported values sit in the same range as the total-chromium screen, which is what a total-chromium measurement mislabelled as Cr(VI) would look like. That caveat is why this cell does not publish a number derived from those values, and it could not in any case: occurrence never selects an HMTc limit. But the FEED-INPUT PATHWAY the paper documents is not an analytical artifact, and the correct response to a real pathway measured by an inadequate method is to require an adequate method, not to declare the analyte not material. Under the programme's fail-safe rule a cell in this position is a control.",
+      "reference_method": "Hexavalent chromium determined on every certified lot by alkaline-extraction ion chromatography with isotope-dilution ICP-MS (EN 15192, or EPA 3060A extraction with EPA 6800 speciated isotope-dilution mass spectrometry). That method family corrects for Cr(III)/Cr(VI) interconversion during sample preparation and is the only family the programme accepts as evidence of chromium speciation in a food matrix; an uncorrected acid-digestion or dry-ashing workup with AAS or ICP-MS finish is not accepted, because such a workup measures its own reduction. Certification additionally requires a supplier feed-input declaration for every lot, covering the feed formulation of the flock of origin across the rearing period and affirming that no chrome-tanned leather meal, tannery-waste protein, hydrolysed leather protein or other tannery-derived protein source was used. Escalation: any Cr(VI) result quantifiable above the method limit of quantitation, and any feed-input declaration that is absent, incomplete, or discloses a tannery-derived protein source, blocks release and opens a supply-chain investigation of the feed mill and the protein-ingredient supply chain. This mirrors the bespoke supply-chain trigger the game-meats row carries for the ammunition lead pathway: where a mechanical contamination pathway is documented for a specific product form, the programme names it and tests for it rather than reasoning it away from matrix chemistry. Total chromium continues to run as the companion screen, and a total-chromium result above the published screen value independently triggers the same investigation.",
       "bounded_by": "Cr",
-      "substantiation": null,
-      "basis_class": "speciation-bounded",
-      "regulatory_basis": "No credible sovereign government sets a hexavalent-chromium content limit for any food. Every credible Cr(VI) instrument on the register is an article, textile, leather, toy-migration, tattoo-ink, fertiliser or electrical-equipment limit in a non-food basis, and applying one to a food matrix would be a basis conflation the compiler's basis guard rejects. Total chromium is regulated for meat and poultry by Hong Kong Cap. 132V and is published here as a screen.",
-      "jurisdictions_checked": "EU (Regulation (EU) 2023/915; Regulation (EU) 10/2011; Directive 2009/48/EC; REACH restrictions); UK; Codex CXS 193-1995; US FDA; FSANZ Schedule 19; Health Canada; Hong Kong Cap. 132V Part 2 Schedule — none sets a hexavalent-chromium content limit for food."
+      "companion_ml": "hk_cap132v_crtotal_meat-of-poultry_1000",
+      "companion_ids": [
+        "hk_cap132v_crtotal_meat-of-poultry_1000"
+      ],
+      "companions": [
+        {
+          "id": "hk_cap132v_crtotal_meat-of-poultry_1000",
+          "value": 1000,
+          "jurisdiction": "HK",
+          "metal_species": "Cr-total",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
+          "scope": "Meat of poultry"
+        }
+      ]
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",

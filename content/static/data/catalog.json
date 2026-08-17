@@ -6,8 +6,8 @@
   "name": "Heavy Metal Tested & Certified — standards open data",
   "url": "https://heavymetalcertified.com/data",
   "description": "Machine-readable HMTc certification standards: the published limit per product subcategory, variant, and analyte, with basis, control, controlling jurisdiction and instrument. Set by Method v2.0. The literature evidence is reported independently at heavymetalindex.com.",
-  "generated_at": "2026-08-17T10:59:21.380Z",
-  "generated_commit": "a06f0e778be9f0aaf25ebee59a69507f05c3a1fe",
+  "generated_at": "2026-08-17T11:29:53.144Z",
+  "generated_commit": "017722fadeb304b53ee854f3be7d3a946eaf2962",
   "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
   "license": {
     "terms": "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
@@ -21,21 +21,21 @@
       "name": "Heavy Metal Tested & Certified — published standards",
       "description": "The HMTc certification limits per product subcategory, variant, and analyte: the published limit in ppb on the row's native basis, the control basis (government-limit default, government read-across, or controlled screen), the controlling jurisdiction and instrument, and — for government-limit cells — the per-country table of sovereign limits the value was selected from. Values are set by Method v2.0 (strictest applicable government maximum level, selective occurrence for Tier-1 toxics and unregulated cells).",
       "landing_page": "https://heavymetalcertified.com/data",
-      "version": "2026-08-17+a06f0e778be9",
+      "version": "2026-08-17+017722fadeb3",
       "date_modified": "2026-08-17",
       "standard_count": 309,
-      "firm_analyte_cells": 1708,
+      "firm_analyte_cells": 1709,
       "unit": "ppb (µg/kg)",
       "distributions": [
         {
           "format": "application/json",
           "content_url": "https://heavymetalcertified.com/static/data/standards.json",
-          "content_size": 2977577
+          "content_size": 3041986
         },
         {
           "format": "text/csv",
           "content_url": "https://heavymetalcertified.com/static/data/standards.csv",
-          "content_size": 1168982
+          "content_size": 1209750
         }
       ]
     }

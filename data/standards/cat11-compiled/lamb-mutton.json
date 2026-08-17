@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "as sold, raw or cooked edible portion (wet weight); bone and inedible fat excluded; no dry-to-wet or reconstitution conversion is performed",
   "scope_note": "Muscle meat and attached edible fat of domestic sheep (Ovis aries) at any age: lamb, hogget and mutton, in fresh, chilled, frozen, ground/minced, primal and sub-primal, and plain cooked forms with no added non-meat ingredients. Goat (Capra hircus) is covered by the same sovereign rows, which enumerate goat alongside sheep, and is certified on this row. Ovine and caprine edible offal is a separately-tested sub-lot against the sovereign offal maximum levels and never anchors this row. Merguez, lamb sausage and other formulated products route to the processed-meats row; canned mutton routes to the canned-meats row; wild sheep and goat species route to the game-meats row.",
+  "material": null,
+  "components": null,
   "basis_guard": "(wet weight|portion ordinarily consumed|product as placed on market|food as listed|as sold|as consumed|commodity|edible part|fresh weight)",
   "basis_guard_note": "Category 11 is a dietary as-sold wet-weight category. The guard admits only register rows whose basis is a food-matrix content basis (wet weight, portion ordinarily consumed, product as placed on market, commodity, edible part, food as listed in the Cap 132V schedule). It rejects, by construction, food-contact specific-migration limits, toy and article element-migration limits, animal-feed 12%-moisture bases, dry-matter fertiliser limits, colour-additive ingredient purity specifications, and drinking-water statutory limits. A migration or purity-specification number is not a maximum level for a food and must never anchor a meat, poultry, or egg row.",
   "method": "HMTc Method v2.0 (government-limit-only initial setting: the strictest applicable sovereign maximum level for this exact product form in its native basis; disclosed read-across where the exact cell is unregulated; control where neither a sovereign number nor a supportable near-neighbour analogue exists; never occurrence-derived)",
@@ -25,25 +27,25 @@
       "value": 100,
       "value_exact": 100,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "AU-NZ",
-      "binding_id": "aunz_sch19_pb_meat_100",
+      "binding_jurisdiction": "HK",
+      "binding_id": "hk_cap132v_pb_meat-of-cattle-pig-goat-and-sheep_100",
       "basis": "as sold, edible portion (wet weight)",
-      "binding_page": "regulations/au-nz-food-standards-code-schedule-19-contaminants",
+      "binding_page": "regulations/hong-kong-cap-132v-metallic-contamination",
       "candidates": [
-        {
-          "id": "aunz_sch19_pb_meat_100",
-          "value": 100,
-          "jurisdiction": "AU-NZ"
-        },
         {
           "id": "hk_cap132v_pb_meat-of-cattle-pig-goat-and-sheep_100",
           "value": 100,
           "jurisdiction": "HK"
+        },
+        {
+          "id": "aunz_sch19_pb_meat_100",
+          "value": 100,
+          "jurisdiction": "AU-NZ"
         }
       ],
       "stricter_unselected": [],
       "label": "strictest applicable sovereign muscle-meat lead maximum level; FSANZ Schedule 19 and Hong Kong Cap. 132V agree at 100 ug/kg",
-      "substantiation": "Two credible sovereign instruments regulate this exact cell and agree: FSANZ Australia New Zealand Food Standards Code Schedule 19 sets 0.1 mg/kg for meat of cattle, sheep, pig and poultry excluding offal, and Hong Kong Cap. 132V Part 2 sets 0.1 mg/kg for meat of cattle, pig, goat and sheep. The corresponding EU Regulation (EU) 2023/915 and Codex CXS 193-1995 muscle-meat lead rows are ABSENT from this register and are therefore not named and not assigned a value from memory; they are recorded as register gaps for ingestion through the verified regulatory-fetch pathway. Because Method v2.0 selects the strictest applicable value, ingesting them can only lower this cell or leave it unchanged, never raise it, and this cell must be re-derived when they land. The looser edible-offal lead maximum levels (Hong Kong 0.15-0.20 mg/kg, FSANZ 0.5 mg/kg) are a DIFFERENT product scope and are deliberately not used to anchor this muscle-meat row: Ovine offal is a separately-tested sub-lot governed by the offal maximum levels of its own species."
+      "substantiation": "Two credible sovereign instruments regulate this exact cell and agree: FSANZ Australia New Zealand Food Standards Code Schedule 19 sets 0.1 mg/kg for meat of cattle, sheep, pig and poultry excluding offal, and Hong Kong Cap. 132V Part 2 sets 0.1 mg/kg for meat of cattle, pig, goat and sheep. The corresponding EU Regulation (EU) 2023/915 and Codex CXS 193-1995 muscle-meat lead rows are ABSENT from this register and are therefore not named and not assigned a value from memory; they are recorded as register gaps for ingestion through the verified regulatory-fetch pathway. Because Method v2.0 selects the strictest applicable value, ingesting them can only lower this cell or leave it unchanged, never raise it, and this cell must be re-derived when they land. The looser edible-offal lead maximum levels (Hong Kong 0.15-0.20 mg/kg, FSANZ 0.5 mg/kg) are a DIFFERENT product scope and are deliberately not used to anchor this muscle-meat row: Ovine offal is a separately-tested sub-lot governed by the offal maximum levels of its own species. BASIS OF THE BINDING INSTRUMENT, DISCLOSED: the two concurring instruments are written on DIFFERENT bases. FSANZ Schedule 19 states its maximum level for the portion ordinarily consumed (an as-consumed basis); Hong Kong Cap. 132V states the identical 0.1 mg/kg as-sold, for the edible portion after removal of bones and fat (Cap. 132V Part 2 Note 1). Because this row publishes an as-sold ceiling, the Hong Kong as-sold row is named as the binding instrument and the FSANZ row is disclosed as an independent sovereign value concurring at the same number. The published ceiling therefore rests on an instrument written in this row's own basis, and no as-consumed value is relabelled as-sold. The number is unaffected: both instruments sit at 100 ug/kg, so the strictest-applicable selection is identical either way."
     },
     "Cd": {
       "type": "gov",
@@ -147,7 +149,20 @@
       "rationale": "Inorganic tin in food is a tinplate-packaging pathway: tin migrates into the food from the internal surface of an unlacquered or damaged tinplate can, which is why every credible sovereign tin maximum level on the register is written against canned food rather than against the food itself. Fresh, chilled, frozen and vacuum- or modified-atmosphere-packed red meat is not packed in tinplate, so the pathway that the canned-food maximum levels exist to control is absent and no sovereign number governs the cell. A lot of this product form that is retorted or packed in a metal can is not certified against this row at all: it is certified against the canned-meats row, whose tin cell carries the binding canned-foods maximum level. No tin ceiling is invented for the non-canned form.",
       "reference_method": "Total tin by ICP-MS on every certified lot. Any quantifiable tin in a lot declared as non-metal-packed triggers a packaging and contact-surface investigation (can or closure liner, tinned equipment, solder) before release, and re-routes the lot to the canned-meats row if metal packaging is found.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_foods_200000"
+      "companion_ml": "eu2023_sn_canned_foods_200000",
+      "companion_ids": [
+        "eu2023_sn_canned_foods_200000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_foods_200000",
+          "value": 200000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned foods other than canned beverages, except canned dried and canned"
+        }
+      ]
     },
     "Al": {
       "type": "control",

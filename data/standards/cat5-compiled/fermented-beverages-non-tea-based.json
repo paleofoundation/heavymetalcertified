@@ -8,7 +8,9 @@
   "cross_reference": null,
   "native_basis": "as_consumed",
   "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
-  "scope_note": "Ready-to-drink fermented non-dairy beverages whose ferment substrate is not tea: water kefir, kvass, fermented juice and vegetable drinks, drinking vinegars and shrubs, switchel, tepache, and low- and no-alcohol fermented fruit and grain beverages, plus wine, cider, perry and beer where an applicant certifies them. Dairy kefir and other cultured dairy drinks route to Category 24; kombucha and any tea-substrate ferment route to the kombucha row; a fermented drink carrying a Supplement Facts panel routes to Category 16. The row's distinctive hazard is process rather than agronomic: fermentation drives the matrix to pH 2.5 to 3.8 and holds it there for days to weeks in contact with vessels, seals, taps and tubing, which makes equipment leaching a first-order route for lead, nickel and chromium, and that is why the lot-testing and escalation obligations in the control cells are written around equipment and not only around ingredients.",
+  "scope_note": "Ready-to-drink fermented non-dairy beverages whose ferment substrate is not tea: water kefir, kvass, fermented juice and vegetable drinks, drinking vinegars and shrubs, switchel, tepache, and low- and no-alcohol fermented fruit and grain beverages. Wine, cider, perry and beer are OUT of this row's scope and are not certifiable under it; they are held in development. The reason is stated plainly because it is a limitation and not a boundary of convenience: the only credible-set lead value this register carries for any of those four forms is the Hong Kong Cap 132V Wine cell (hk_cap132v_pb_wine_200), and the EU 2023/915 wine, cider, perry and fruit-wine lead cells are absent from the register. Selecting a strictest applicable value out of a pool that is known to be missing an instrument is not an execution of the government-limit-only method, so no ceiling is published for those forms. The absence is logged as a register gap; when those cells are ingested through the verified regulatory-fetch pathway the row is recompiled and the four forms are admitted against the strictest applicable value rather than against the residue of an incomplete pool. Dairy kefir and other cultured dairy drinks route to Category 24; kombucha and any tea-substrate ferment route to the kombucha row; a fermented drink carrying a Supplement Facts panel routes to Category 16. The row's distinctive hazard is process rather than agronomic: fermentation drives the matrix to pH 2.5 to 3.8 and holds it there for days to weeks in contact with vessels, seals, taps and tubing, which makes equipment leaching a first-order route for lead, nickel and chromium, and that is why the lot-testing and escalation obligations in the control cells are written around equipment and not only around ingredients.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]consumed|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|single-strength|bottled water|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a ready-to-drink liquid ceiling, so every named anchor must itself be written in a wet as-consumed (or as-placed-on-market liquid, or packaged-drinking-water) basis. The guard refuses any dry-commodity as-sold cell, any feed-basis cell, any food-contact migration limit and any article-content limit, because applying a dry leaf, bean or powder maximum level to a brewed or reconstituted liquid would be exactly the basis conflation Method v2.0 forbids. No brewing, dilution or reconstitution factor is invented in either direction.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -30,46 +32,52 @@
       "basis": "as consumed, ready-to-drink fermented beverage (read across from the Hong Kong wine cell)",
       "source_page": "regulations/hong-kong-cap-132v-metallic-contamination",
       "source_scope": "Wine",
-      "label": "No credible sovereign has written a lead maximum level for a non-tea fermented beverage as a class. Hong Kong Cap 132V's Wine cell (200 ug/kg, as consumed) is the only credible sovereign lead value written for any fermented beverage, and it is adopted by disclosed read-across as the row ceiling.",
+      "label": "No credible sovereign has written a lead maximum level for a non-tea fermented beverage as a class. Hong Kong Cap 132V's Wine cell (200 ug/kg, as consumed) is the only credible sovereign lead value this register carries for any fermented beverage, and it is adopted by disclosed read-across as the row ceiling for the non-alcoholic and low-alcohol ferments in scope. Wine itself is not certifiable under this row; see the scope note.",
       "stricter_unselected": [
         {
           "id": "fda2004_juice_haccp_pb_50",
           "value": 50,
           "jurisdiction": "US",
+          "basis": "ready-to-drink juice",
           "scope": "ready-to-drink fruit juices including fruit nect"
         },
         {
           "id": "eu2023_pb_fruit_juice_other_30",
           "value": 30,
           "jurisdiction": "EU",
+          "basis": "wet weight or reconstituted juice",
           "scope": "fruit juices, fruit juices from concentrate, con"
         },
         {
           "id": "eu2023_pb_fruit_juice_berry_50",
           "value": 50,
           "jurisdiction": "EU",
+          "basis": "wet weight or reconstituted juice",
           "scope": "fruit juices, fruit juices from concentrate, con"
         },
         {
           "id": "hk_cap132v_pb_fruit-juices-other-than-fruit-juices-exclusively-from-b_30",
           "value": 30,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Fruit juices, other than fruit juices exclusivel"
         },
         {
           "id": "hk_cap132v_pb_fruit-juices-exclusively-from-berries-and-other-small-f_50",
           "value": 50,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Fruit juices exclusively from berries and other "
         },
         {
           "id": "hk_cap132v_pb_grape-juice_40",
           "value": 40,
           "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
           "scope": "Grape juice"
         }
       ],
-      "substantiation": "The candidate set and the rejections, stated plainly because this is the cell most open to attack. The audit scan flags the entire juice and nectar lead family as stricter and unselected: the EU and Codex fruit-juice cells (30 ug/kg), the Hong Kong grape-juice cell (40 ug/kg), the EU and Hong Kong berry and small-fruit juice cells (50 ug/kg) and the US FDA Juice HACCP hazard-control level (50 ug/kg). All were considered and all are rejected on the same two grounds: a finished ferment is not a fruit juice, a juice from concentrate or a nectar within those instruments' scope, and fermentation is precisely the step that changes the matrix and opens the equipment-leaching route, so an unfermented-input cell does not describe the certified product. The packaged-drinking-water standards (5 to 10 ug/kg) govern water sold as water. That leaves the Wine cell, which is a genuine sovereign value for a fermented fruit beverage in the identical as-consumed basis. HMTc adopts it and does not conceal that it is weak: because the acid ferment sits against equipment for weeks, this cell carries mandatory lot testing with an equipment and closure investigation on any result above 30 ug/kg, it is a declared Standards Ratchet priority under Governance Policy section 12, and the absence of an EU wine and cider lead cell from the register is reported as a register gap rather than filled by an occurrence value. Where an applicant certifies wine, cider or perry specifically and a stricter sovereign cell for that named commodity is later ingested, that cell supersedes this read-across."
+      "substantiation": "The candidate set and the rejections, stated plainly because this is the cell most open to attack. The audit scan flags the entire juice and nectar lead family as stricter and unselected: the EU and Codex fruit-juice cells (30 ug/kg), the Hong Kong grape-juice cell (40 ug/kg), the EU and Hong Kong berry and small-fruit juice cells (50 ug/kg) and the US FDA Juice HACCP hazard-control level (50 ug/kg). All were considered and all are rejected on the same two grounds: a finished ferment is not a fruit juice, a juice from concentrate or a nectar within those instruments' scope, and fermentation is precisely the step that changes the matrix and opens the equipment-leaching route, so an unfermented-input cell does not describe the certified product. The packaged-drinking-water standards (5 to 10 ug/kg) govern water sold as water. That leaves the Wine cell, which is a genuine sovereign value for a fermented fruit beverage in the identical as-consumed basis. HMTc adopts it for the ferments this row certifies and does not conceal two things about it. It is weak: because the acid ferment sits against equipment for weeks, this cell carries mandatory lot testing with an equipment and closure investigation on any result above 30 ug/kg, and it is a declared Standards Ratchet priority under Governance Policy section 12. And it is drawn from a pool the register is known to be missing entries from: the EU 2023/915 wine, cider, perry and fruit-wine lead cells are not in the register, their absence is logged as a register gap, and it is filled neither by an occurrence value nor by recollection of the instrument. That gap is why wine, cider, perry and beer are excluded from this row's scope rather than certified against 200 ug/kg, and it also qualifies this read-across for the forms that remain: if any of the missing cells is stricter than 200 ug/kg it becomes the nearest applicable sovereign value for a fermented beverage and supersedes this anchor at the next recompilation. Until then the read-across is published with that qualification on its face rather than as a settled ceiling."
     },
     "Cd": {
       "type": "control",
@@ -196,6 +204,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

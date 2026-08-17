@@ -9,6 +9,8 @@
   "native_basis": "as_consumed",
   "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
   "scope_note": "Ready-to-drink carbonated and still soft drinks: colas, lemon-lime and other flavoured carbonates, root beer, ginger ale, tonic water, bitter lemon, sodas containing a minor juice fraction, and their post-mix syrup and concentrate forms assessed as dispensed or reconstituted to the label dilution. Every packaging format including aluminium cans, PET, glass and post-mix bag-in-box. A carbonated water with no formulated load routes to the flavoured-water row; a sports, isotonic or energy formulation routes to the sports and energy drink row; a fruit juice or nectar routes to the juice rows; a fermented soft drink routes to the fermented-beverage row. This row is a FORMULATED ready-to-drink beverage, not water with flavour: the packaged-drinking-water quality standards relied on for the flavoured-water row are not applicable here, because the product carries a substantial dissolved load (sweetener systems, electrolyte salts, acidulants, stimulants, botanical extracts, colours and juice concentrates) that those instruments do not contemplate. The boundary is stated so the difference in published ceilings between this row and the flavoured-water row is legible as an applicability judgement rather than an inconsistency.",
+  "material": null,
+  "components": null,
   "basis_guard": "as[ _]consumed|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|single-strength|bottled water|portion ordinarily consumed",
   "basis_guard_note": "This row publishes a ready-to-drink liquid ceiling, so every named anchor must itself be written in a wet as-consumed (or as-placed-on-market liquid, or packaged-drinking-water) basis. The guard refuses any dry-commodity as-sold cell, any feed-basis cell, any food-contact migration limit and any article-content limit, because applying a dry leaf, bean or powder maximum level to a brewed or reconstituted liquid would be exactly the basis conflation Method v2.0 forbids. No brewing, dilution or reconstitution factor is invented in either direction.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
@@ -21,24 +23,40 @@
   ],
   "cells": {
     "Pb": {
-      "type": "gov",
+      "type": "read_across",
       "value": 200,
       "value_exact": 200,
-      "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "HK",
-      "binding_id": "hk_cap132v_pb_carbonated-beverages_200",
-      "basis": "as consumed, ready-to-drink carbonated beverage (or concentrate as dispensed)",
-      "binding_page": "regulations/hong-kong-cap-132v-metallic-contamination",
-      "candidates": [
-        {
-          "id": "hk_cap132v_pb_carbonated-beverages_200",
-          "value": 200,
-          "jurisdiction": "HK"
-        }
-      ],
+      "provenance": "read-across",
+      "source_id": "hk_cap132v_pb_carbonated-beverages_200",
+      "source_jurisdiction": "HK",
+      "basis": "as consumed, ready-to-drink carbonated or still soft drink, or concentrate as dispensed or reconstituted to the label dilution (read across from the Hong Kong carbonated-beverage cell)",
+      "source_page": "regulations/hong-kong-cap-132v-metallic-contamination",
+      "source_scope": "Carbonated beverages",
+      "label": "Hong Kong Cap 132V Part 2 item 9 sets lead in Carbonated beverages at 0.2 mg/kg = 200 ug/kg, with Note 11 scoping the cell to beverages that are, or are reconstituted to be, ready to drink. That cell directly governs the carbonated forms in this row and is the nearest applicable sovereign value for the still soft drinks the row also admits, which share the formulation, the process and the packaging but not the carbonation. It is adopted by disclosed read-across so that a single ceiling governs both forms.",
       "stricter_unselected": [],
-      "label": "Hong Kong Cap 132V Part 2 item 9 sets lead in Carbonated beverages at 0.2 mg/kg = 200 ug/kg, with Note 11 scoping the cell to beverages that are, or are reconstituted to be, ready to drink. This is a DIRECT sovereign maximum level for this row's exact product form and basis and it binds.",
-      "substantiation": "Direct regulatory lookup, applied as written including to the still soft drinks in scope, which share the formulation and process but not the carbonation. Two disclosures belong here. First, no other credible sovereign regulates this product form at all: the EU, Codex, FSANZ and Health Canada write no soft-drink lead cell, so 200 ug/kg is the whole of the applicable law and there is no stricter applicable value to select. Second, the stricter beverage cells that exist are inapplicable and were rejected as such rather than quietly ignored: the EU and Codex fruit-juice cells (30 ug/kg) are scoped to fruit juices, juices from concentrate and nectars, which a cola carrying a few percent juice is not, and the packaged-drinking-water quality standards (5 to 10 ug/kg) govern water sold as water. HMTc will not reach past an instrument's scope to publish a better-looking number, and it does not pretend 200 ug/kg is a strong ceiling: this cell is a declared Standards Ratchet priority under Governance Policy section 12."
+      "substantiation": "The provenance is recorded as read-across and not as regulatory-alignment because this row's scope is wider than the instrument's. For a cola, a tonic water or a ginger ale the Hong Kong cell is a direct sovereign maximum level for the exact product form; for a still soft drink it is the nearest applicable analog, and the tag follows the weaker of the two rather than the stronger. The sibling sports and energy drink row adopts the same anchor for the same still and carbonated mix and carries the same tag, so the two rows are consistent on their face. Three disclosures belong here. First, no other credible sovereign regulates this product form at all: the EU, Codex, FSANZ and Health Canada write no soft-drink lead cell, so 200 ug/kg is the whole of the applicable law and there is no stricter applicable value to select. Second, the stricter beverage cells that exist are inapplicable and were rejected as such rather than quietly ignored: the EU and Codex fruit-juice cells (30 ug/kg) are scoped to fruit juices, juices from concentrate and nectars, which a cola carrying a few percent juice is not, and the packaged-drinking-water quality standards (5 to 10 ug/kg) govern water sold as water. HMTc will not reach past an instrument's scope to publish a better-looking number. Third, HMTc does not pretend 200 ug/kg is a strong ceiling: this cell is a declared Standards Ratchet priority, and Governance Policy section 12 is the only route by which certified-lot evidence may lower it.",
+      "companion_ids": [
+        "eu2023_pb_fruit_juice_other_30",
+        "hk_cap132v_pb_fruit-juices-other-than-fruit-juices-exclusively-from-b_30"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_pb_fruit_juice_other_30",
+          "value": 30,
+          "jurisdiction": "EU",
+          "metal_species": "Pb",
+          "basis": "wet weight or reconstituted juice",
+          "scope": "fruit juices, fruit juices from concentrate, concentrated fruit juices, "
+        },
+        {
+          "id": "hk_cap132v_pb_fruit-juices-other-than-fruit-juices-exclusively-from-b_30",
+          "value": 30,
+          "jurisdiction": "HK",
+          "metal_species": "Pb",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg",
+          "scope": "Fruit juices, other than fruit juices exclusively from berries and other"
+        }
+      ]
     },
     "Cd": {
       "type": "control",
@@ -165,6 +183,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat5-config.json",
-  "version": "cat5-v1.0 (2026-08-17)",
+  "version": "cat5-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

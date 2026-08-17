@@ -9,6 +9,8 @@
   "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
   "native_basis_label": "finished cosmetic as placed on market (total content, ug/kg of product as sold)",
   "scope_note": "Play and dress-up cosmetics marketed for children aged 0-5: pressed and loose eye shadows, blushes, pretend lipsticks and glosses sold as a make-up set or as children's colour cosmetics. INGESTION-ADJACENT for the same reasons as face paint - pigmented, worn for hours, touched and transferred hand-to-mouth by a child with no reliable hygiene behaviour. CARVE-OUTS DECLINED: BVL 2017's lead carve-out at 5.0 mg/kg expressly names make-up powder, rouge, eye shadow, eyeliner and kajal, which is this row's form list, and Korea MFDS's colour-cosmetic nickel tier at 30 ug/g reaches it; neither is adopted, and each cell reads across the same instrument's general tier. ARSENIC IS DIFFERENT AND THE DIFFERENCE IS PRESERVED: BVL's arsenic exception is narrower than its lead exception - it reaches only theatrical, fan and carnival make-up, not everyday decorative cosmetics - so the general 0.5 mg/kg arsenic tier binds this row DIRECTLY as a government limit, with no read-across needed. Preserving that asymmetry rather than flattening the two analytes into one treatment is what the instrument actually says. A pretend lipstick or gloss sold within a children's make-up set whose designed contact surface is the lips routes to the children's lip-balm rows instead, because those take the stricter swallowed-product tier.",
+  "material": null,
+  "components": null,
   "basis_guard": "cosmetic",
   "basis_guard_note": "Every named anchor must carry a FINISHED-COSMETIC basis. The guard exists to keep three foreign bases out of these cells: (1) the 21 CFR 73/74 colour-additive ingredient specifications, which are purity limits for one raw material (iron oxides, ultramarines, henna, bismuth citrate, talc-bearing pigments) and not a ceiling on the finished product; (2) the EU Toy Safety Directive 2009/48 and ASTM F963 element-MIGRATION limits, which measure what leaches out of an article and are numerically incomparable to a total-content limit; and (3) food maximum levels expressed as-consumed or on an edible-portion basis. A cell whose named anchor fails the guard resolves to a GAP and fails the build rather than shipping a conflated number.",
   "method": "HMTc Method v2.0 (government-limit default) as applied to a child-scoped cosmetic category: every numeric cell is the strictest applicable sovereign finished-cosmetic maximum in the row's native total-content basis, or a disclosed read-across of a stricter sovereign tier from the same instrument where that instrument writes an adult-market loosening carve-out that HMTc declines to adopt for a product marketed to ages 0-5. No cell is occurrence-derived.",
@@ -31,14 +33,7 @@
       "source_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
       "source_scope": "cosmetic products in general except listed higher-lead make-up categories",
       "label": "Germany BVL 2017 general-cosmetic lead tier (2.0 mg/kg), read across in place of the same instrument's adult decorative-cosmetics carve-out",
-      "stricter_unselected": [
-        {
-          "id": "eu_reach_2020_2081_pb_tattoo_pmu_700",
-          "value": 700,
-          "jurisdiction": "EU",
-          "scope": "mixtures for use for tattooing or permanent make"
-        }
-      ],
+      "stricter_unselected": [],
       "substantiation": "DISCLOSED REFUSAL OF A LOOSENING CARVE-OUT. BVL 2017 writes an explicit higher-lead tier of 5.0 mg/kg for make-up powder, rouge, eye shadow, eyeliner and kajal - which is precisely this row's form list, and by the letter of the instrument that is the exact cell for this product form. HMTc does not adopt it for a product marketed to ages 0-5. The carve-out exists because adult decorative cosmetics carry heavy pigment loads, not because a child's exposure justifies more lead; a 0-5 child's face paint or play make-up is transferred hand-to-mouth and licked, so the ingestion pathway is materially larger than the adult use the carve-out was written for. The cell therefore binds the SAME instrument's general-cosmetic tier at 2.0 mg/kg, which is stricter, is a real published sovereign number, and is disclosed here as a read-across rather than presented as a direct regulation of this form. This is over-compliance in the protective direction and it satisfies the Category 2 floor rule: the corresponding Category 13 adult row binds 5.0 mg/kg, so the child row is stricter and can never be the looser of the two. STRICTER-UNSELECTED DISPOSITION: the compiler's audit scan surfaces EU REACH Regulation 2020/2081 lead at 700 ug/kg for tattoo and permanent-make-up mixtures. It is not adopted. That instrument governs a mixture deposited INTRADERMALLY; its basis is a different exposure route with no skin-barrier attenuation, and its product class (tattoo and PMU inks) is not a surface-applied cosmetic. Borrowing an intradermal-injection ceiling for a wash-off surface cosmetic would be a route conflation in the opposite direction from the usual one, and it is not compelled by any instrument's scope."
     },
     "Cd": {
@@ -118,7 +113,20 @@
       "rationale": "No jurisdiction anywhere in the register speciates arsenic in a cosmetic product. Every sovereign cosmetic instrument - Germany BVL 2017, Health Canada, China NMPA 2015, Taiwan MOHW 2024, Korea MFDS, the ASEAN Cosmetic Directive and its national transpositions, India, Kenya, the EAEU - regulates arsenic as a TOTAL element, so there is no sovereign inorganic-arsenic cell for this or any adjacent cosmetic form. Nor is a near-neighbour read-across supportable: the only inorganic-arsenic maximum levels in the register are dietary (rice, fish oils, marine products), expressed on an as-consumed or whole-commodity food basis that is not comparable to a finished-cosmetic total-content basis, and importing one would be exactly the basis conflation this row's basis guard exists to prevent. Inorganic arsenic is nonetheless material rather than not-material in this category: arsenic in talc, mica, zinc oxide, titanium dioxide, iron oxides and clay-derived raw materials is predominantly inorganic, and mineral raw materials are present by design in four of this category's sixteen rows. The cell is therefore a control, not a not-material determination, and inorganic arsenic can never substitute for the total-arsenic cell.",
       "reference_method": "Speciated inorganic arsenic by HPLC-ICP-MS (EN 16802 or AOAC 2016.03, matrix-validated for the product form) on every certified lot, reported alongside the total-arsenic determination. No separate inorganic-arsenic ceiling is published; the lot is judged against the total-arsenic ceiling, which bounds inorganic arsenic by identity. ESCALATION: where inorganic arsenic is the majority of the reported total arsenic, or where the reported inorganic arsenic is above the manufacturer's trailing twelve-month distribution for the same form, the lot triggers mandatory raw-material traceback to the mineral or botanical component and a documented corrective-action plan before certification.",
       "bounded_by": "tAs",
-      "companion_ml": "de_bvl2017_tas_cosmetics_general_500"
+      "companion_ml": "de_bvl2017_tas_cosmetics_general_500",
+      "companion_ids": [
+        "de_bvl2017_tas_cosmetics_general_500"
+      ],
+      "companions": [
+        {
+          "id": "de_bvl2017_tas_cosmetics_general_500",
+          "value": 500,
+          "jurisdiction": "DE",
+          "metal_species": "tAs",
+          "basis": "cosmetic product; source unit mg/kg",
+          "scope": "cosmetic products in general except theater, fan, or carnival make-up"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",
@@ -183,14 +191,7 @@
       "source_page": "regulations/korea-mfds-2025-63-cosmetics-safety-standards",
       "source_scope": "cosmetic products other than eye makeup or color makeup products",
       "label": "Korea MFDS non-colour-cosmetic nickel tier (10 ug/g), read across in place of the colour-cosmetic tier",
-      "stricter_unselected": [
-        {
-          "id": "eu_reach_2020_2081_ni_tattoo_pmu_5000",
-          "value": 5000,
-          "jurisdiction": "EU",
-          "scope": "mixtures for use for tattooing or permanent make"
-        }
-      ],
+      "stricter_unselected": [],
       "substantiation": "DISCLOSED REFUSAL OF A LOOSENING CARVE-OUT. Korea MFDS tiers cosmetic nickel at 10 ug/g for cosmetics other than eye or colour make-up, 30 ug/g for colour make-up and 35 ug/g for eye make-up. This form is a colour cosmetic, so the letter of the instrument gives 30 ug/g. HMTc does not adopt the colour-cosmetic loosening for ages 0-5: nickel is a leading paediatric contact sensitiser, sensitisation is lifelong once established, and the tier exists to accommodate adult pigment loads rather than to describe a tolerable childhood exposure. The cell reads across the same instrument's 10 ug/g tier. The corresponding Category 13 adult row binds 30 ug/g, so the child row is three times stricter and satisfies the Category 2 floor rule. STRICTER-UNSELECTED DISPOSITION: the audit scan surfaces EU REACH 2020/2081 nickel at 5000 ug/kg for tattoo and permanent-make-up mixtures; it is not adopted, for the intradermal-route reason recorded in the lead cell of this row."
     },
     "Sn": {

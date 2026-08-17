@@ -9,6 +9,8 @@
   "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
   "native_basis_label": "Finished leave-on cosmetic, TOTAL CONTENT as placed on market (ug/kg of product as sold), on the technically-unavoidable-impurity basis every instrument in this family uses. Not a migration/leachate basis, not a dietary basis, not an ingredient purity specification.",
   "scope_note": "In scope: eye shadows (pressed, loose and cream), pencil, liquid, gel and cake eyeliners, mascara, brow pencils, powders, gels and pomades, false-lash adhesives, and lash and brow conditioning serums. Out of scope: traditional kohl, kajal and surma (row 16), permanent eyeliner and microblading pigments (row 14), and eye creams, which are leave-on skin care (row 3). This row straddles the German lead split: eye shadow, eyeliner and kajal sit in the table's higher-lead group at 5000 ug/kg, while mascara, brow products, lash adhesives and lash serums are not listed there and take the general branch at 2000. The row binds at the general branch, which is the strictest value applicable to any form in it. Two hard stops sit alongside the numbers on this row. First, the mercurial eye-preservative allowances in the register (Hong Kong and India at 70 ppm, South Africa at 65 ppm, New Zealand at 0.007 percent) are permissions for the deliberate use of thiomersal or phenylmercuric salts; HMTc does not adopt them and a product relying on an organomercurial preservative is outside this standard, whatever the total-mercury result. Second, lash and brow growth serums containing prostaglandin analogues are drug products in the United States and several other markets rather than cosmetics; their metal cells are governed here, but their marketability is a separate regulatory question this standard does not resolve. Nickel aggregates the same way the lead cell does: eye shadows, liners, mascara and brow colour sit inside the Korean eye-makeup class at 35000 ug/kg, while lash adhesives and lash and brow serums are treatment products taking the 'other cosmetics' branch at 10000, so the row binds at 10000 — the Korean eye-makeup branch is preserved on the traditional-eye-cosmetics row, where every form does fall inside it.",
+  "material": null,
+  "components": null,
   "basis_guard": "^(?!.*(color additive ingredient specification|colou?rant impurity|colourant impurity profile|colorant impurity))(?=.*(cosmetic|finished topical product)).*",
   "basis_guard_note": "Every named anchor must sit on a FINISHED-COSMETIC (or finished topical product) total-content basis. The guard refuses two families outright. (1) Colour-additive and ingredient purity specifications: the US 21 CFR 73/74 rows, the New Zealand HSR002552 and Singapore ACD carbon-black colourant profiles, the India Cosmetics Rules permitted-colour specification and the Brazil ANVISA RDC 628/2022 organic-colorant specification all bound the purity of ONE raw material, not the maximum for the finished product. Anchoring a finished-product ceiling on a raw-material purity spec is a basis conflation and would be an audit blocker; each of them is also looser than the value that binds here. (2) The EU REACH tattoo and permanent-make-up mixture basis, which is an intradermally introduced mixture and belongs only to the tattoo-inks row. Dietary maximum levels and article migration/extraction limits fail the guard for the same reason.",
   "method": "HMTc Method v2.0, government-limit-only initial setting: every numeric cell is the strictest applicable sovereign maximum for this exact leave-on cosmetic form expressed as total content of the finished product as placed on market, or a disclosed read-across where the exact cell is unregulated, or a substantiated not-material determination, or a control. No cell is occurrence-derived, no cell is precautionary or feasibility-adjusted, and no cell is anchored on an ingredient or colour-additive purity specification.",
@@ -182,7 +184,20 @@
       "rationale": "No jurisdiction publishes an inorganic-arsenic maximum for a finished cosmetic. Every instrument in this family regulates TOTAL arsenic, and the register records the family's arsenic rows as tAs for exactly that reason. A total-element ceiling cannot be converted into a species ceiling, species never satisfy totals, and there is no near-neighbour cosmetic inorganic-arsenic cell anywhere to read across from, so no number is invented here. Inorganic arsenic is nevertheless the health-relevant fraction and it is the fraction that travels with the mineral raw materials this category depends on (talc, kaolin, clays, iron oxides, ultramarines, titanium dioxide, zinc oxide), so speciation is mandatory rather than optional.",
       "reference_method": "Arsenic speciation by HPLC-ICP-MS, or an equivalent validated speciation method, on the finished product, reported on the certificate alongside the mandatory total-arsenic result. Inorganic arsenic is bounded above by the published total-arsenic ceiling by identity. Escalation: an inorganic-arsenic result that alone reaches the published total-arsenic ceiling is a hard stop; an inorganic fraction that rises materially against the SKU's own established baseline triggers raw-material traceback and CAPA.",
       "bounded_by": "tAs",
-      "companion_ml": "de_bvl2017_tas_cosmetics_general_500"
+      "companion_ml": "de_bvl2017_tas_cosmetics_general_500",
+      "companion_ids": [
+        "de_bvl2017_tas_cosmetics_general_500"
+      ],
+      "companions": [
+        {
+          "id": "de_bvl2017_tas_cosmetics_general_500",
+          "value": 500,
+          "jurisdiction": "DE",
+          "metal_species": "tAs",
+          "basis": "cosmetic product; source unit mg/kg",
+          "scope": "cosmetic products in general except theater, fan, or carnival make-up"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",
@@ -315,7 +330,20 @@
       "rationale": "No jurisdiction publishes a hexavalent-chromium maximum for a topically applied finished cosmetic. The only Cr(VI) instrument in this instrument family is the EU tattoo and permanent-make-up restriction (REACH Annex XVII entry 75, Appendix 13, 500 ug/kg), which governs a mixture introduced INTRADERMALLY, not a dermal cosmetic; reading it across would substitute one exposure route and one instrument family for another, which is the stretch this method forbids. The remaining sovereign Cr(VI) values in the register are article extraction limits for textiles and leather, a migration basis that cannot anchor a total-content cell. A not-material determination is NOT available here: Cr(VI) in a pigmented cosmetic matrix is not a method artifact, and the EU legislated a Cr(VI) limit for tattoo mixtures precisely because the species occurs in inorganic pigments. The cell is therefore a control.",
       "reference_method": "Hexavalent chromium by alkaline extraction and IC-ICP-MS or an equivalent validated speciation method (EPA 3060A-type digestion), run on every lot alongside the mandatory total-chromium screen. Cr(VI) cannot exceed total chromium by identity. Escalation: any Cr(VI) result above the method reporting limit triggers pigment and raw-material traceback and CAPA; a result at or above 500 ug/kg — cited here as the EU tattoo-mixture escalation reference and expressly NOT as this row's ceiling — is a hard stop pending root-cause closure.",
       "bounded_by": "Cr",
-      "companion_ml": "eu_reach_2020_2081_crvi_tattoo_pmu_500"
+      "companion_ml": "eu_reach_2020_2081_crvi_tattoo_pmu_500",
+      "companion_ids": [
+        "eu_reach_2020_2081_crvi_tattoo_pmu_500"
+      ],
+      "companions": [
+        {
+          "id": "eu_reach_2020_2081_crvi_tattoo_pmu_500",
+          "value": 500,
+          "jurisdiction": "EU",
+          "metal_species": "Cr-VI",
+          "basis": "mixture for tattooing or permanent make-up by weight; source unit percent by weight",
+          "scope": "mixtures for use for tattooing or permanent make-up"
+        }
+      ]
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",

@@ -3,12 +3,14 @@
   "name": "Caps/closures",
   "category": 23,
   "category_name": "Food-Contact Consumer Goods and Kitchenware",
-  "anchor": "EU food-contact framework Regulation 1935/2004 with Regulation (EU) 10/2011 Annex II specific migration limits as the only element-migration instrument in the register; polymer-surface rows anchor it directly or by disclosed read-across, and metal, alloy, ceramic-glaze, vitreous-enamel and glass rows are controls because their dedicated release regimes are not yet ingested.",
+  "anchor": "EU food-contact framework Regulation 1935/2004 with Regulation (EU) 10/2011 Annex II specific migration limits as the only element-migration instrument in the register expressed in the food-contact FOOD basis (the register's other migration instruments — the EU 2009/48 toy Categories I to III and the ASTM F963 soluble limits — are in the toy article-extraction basis and are barred from every row of this category). Rows whose principal food-contact surface is a polymer anchor it directly, or by disclosed read-across where the instrument's own scope article excludes or does not reach the material or where the taxonomy row also carries a non-plastic configuration. Metal, alloy, ceramic-glaze, vitreous-enamel and glass rows, and the two water-treatment-device rows, are controls because their dedicated release regimes (Directive 84/500/EEC as amended by 2005/31/EC, the metals-and-alloys release regime, and the drinking-water device route) are not in the register in their own jurisdictions' rows. Where one taxonomy row carries both a polymer and a metal configuration, the published cells take the metal-article control and the plastics value is disclosed as a film-only companion.",
   "provisional_scaffold": false,
   "cross_reference": null,
   "native_basis": "specific element migration into food or food simulant (µg/kg food), Reg (EU) 10/2011 Annex II convention",
   "native_basis_label": "specific element migration INTO FOOD OR A FOOD SIMULANT from the polymeric food-contact surface, µg/kg of food, determined by the Reg (EU) 10/2011 Annex III to V simulant, temperature and contact-time conventions. This is a MIGRATION basis and not a total-content basis: no cell on this row limits how much of an element the material CONTAINS, and no cell on this row is expressed per kg of material.",
   "scope_note": "Reg (EU) 10/2011 Art. 2(1)(d) expressly brings plastic layers and plastic coatings forming the gaskets in caps and closures within its scope, so the sealing compound and liner, which are the food-contact surface of a closed pack, are governed directly. Where a closure's food-contact surface is BARE metal, that surface falls to the metal-article release control regime under the component plan and is not represented by the gasket result.",
+  "material": "Moulded polypropylene or HDPE closures; metal twist, lug and crown closures with plasticised PVC or PVC-free sealing compound; induction-seal liners; dispensing fitments.",
+  "components": "Sample and report separately: (1) sealing compound or liner food-contact face; (2) exposed metal shell interior, including any lacquer and the cut edge at the knurl or lug; (3) induction-seal foil and its heat-seal lacquer; (4) dispensing fitment, valve and any elastomeric slit valve; (5) tamper band and any printed interior surface; (6) plasticiser-bearing compound formulations, tested against fatty simulant where the pack contains fat.",
   "basis_guard": "specific migration into food",
   "basis_guard_note": "Only an instrument expressed as specific element migration into food or a food simulant may anchor a cell on this row. The guard exists to reject the three foreign bases that surround this category and would otherwise look plausible: the FOOD basis (canned-food tin maximum levels, which limit the contents and not the article), the MATERIAL-CONTENT basis (CPSIA total lead in substrate, EU REACH Annex XVII cadmium percent-by-weight restrictions, RoHS homogeneous-material limits, Japan Notice 370 and Korea MFDS percent-by-weight lead in food-contact metals), and the ARTICLE-EXTRACTION basis of the toy regime (EU 2009/48 Annex II Part III and ASTM F963 soluble limits, which are element migration from scraped-off or coated TOY material into 0.07 M hydrochloric acid, expressed per kg of MATERIAL, not per kg of food). Any of those would fail this guard and resolve to a gap rather than publish in the wrong basis.",
   "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum for this exact product form expressed as specific element migration into food or a food simulant; a disclosed read-across from the nearest applicable sovereign value in the same basis where the food-contact material family is expressly excluded from or not reached by that instrument; a substantiated not-material determination; or a control. No cell is occurrence-derived, and no cell borrows a value across a basis.",
@@ -155,7 +157,20 @@
       "rationale": "Regulation (EU) 10/2011 Annex II lists no tin entry, and no credible sovereign sets a tin migration or release ceiling for a closure. Tin is retained as a mandatory determination because tinplate shells, tin-bearing solder in legacy crowns and tin stabilisers in PVC sealing compound are live pathways in this row. The canned-food tin maximum level is disclosed as a FOOD-basis companion on the contents of the packed product and is never published as this row's migration ceiling.",
       "reference_method": "EN 1186 / EN 13130 food-simulant migration testing on the finished article under its worst foreseeable use conditions (simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V; for repeat-use articles the third successive migration result governs), with ICP-MS determination of the element in the simulant.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_foods_200000"
+      "companion_ml": "eu2023_sn_canned_foods_200000",
+      "companion_ids": [
+        "eu2023_sn_canned_foods_200000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_foods_200000",
+          "value": 200000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned foods other than canned beverages, except canned dried and canned"
+        }
+      ]
     },
     "Al": {
       "type": "gov",

@@ -9,6 +9,8 @@
   "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
   "native_basis_label": "Finished leave-on cosmetic, TOTAL CONTENT as placed on market (ug/kg of product as sold), on the technically-unavoidable-impurity basis every instrument in this family uses. Not a migration/leachate basis, not a dietary basis, not an ingredient purity specification.",
   "scope_note": "In scope: organic (chemical) UV-filter sunscreen lotions, creams, gels, sticks, sprays and mousses, after-sun leave-on preparations, sunless self-tanning lotions and mousses, and airbrush tanning solutions. Out of scope: mineral-UV-filter sunscreens (row 17), children's and infant sunscreens (Category 2), and rinse-off after-sun washes (Category 14). Regulatory framing: in the European Union and most markets a sunscreen is a cosmetic under Regulation 1223/2009 and the German BVL orientation values apply to it as a finished cosmetic, which is the basis this row uses; in the United States a sunscreen is an over-the-counter drug under the 21 CFR 352 monograph, which specifies permitted UV filters and their concentrations but publishes no finished-product heavy-metal contaminant ceiling. The cosmetic finished-product basis is therefore the operative one and it is stated rather than assumed. No instrument in the family adjusts a contaminant ceiling for applied dose or reapplication frequency, and HMTc does not convert this concentration ceiling into an exposure limit. Pressurised and airbrush forms: the ceiling applies to the product as placed on market, i.e. the contents of the container including propellant, tested as dispensed. A concentrate-basis laboratory result is never compared to an as-placed-on-market ceiling; where only the concentrate was analysed the basis is recorded and the lot is retested as dispensed. No invented concentrate-to-as-packed conversion factor is used anywhere in this category.",
+  "material": null,
+  "components": null,
   "basis_guard": "^(?!.*(color additive ingredient specification|colou?rant impurity|colourant impurity profile|colorant impurity))(?=.*(cosmetic|finished topical product)).*",
   "basis_guard_note": "Every named anchor must sit on a FINISHED-COSMETIC (or finished topical product) total-content basis. The guard refuses two families outright. (1) Colour-additive and ingredient purity specifications: the US 21 CFR 73/74 rows, the New Zealand HSR002552 and Singapore ACD carbon-black colourant profiles, the India Cosmetics Rules permitted-colour specification and the Brazil ANVISA RDC 628/2022 organic-colorant specification all bound the purity of ONE raw material, not the maximum for the finished product. Anchoring a finished-product ceiling on a raw-material purity spec is a basis conflation and would be an audit blocker; each of them is also looser than the value that binds here. (2) The EU REACH tattoo and permanent-make-up mixture basis, which is an intradermally introduced mixture and belongs only to the tattoo-inks row. Dietary maximum levels and article migration/extraction limits fail the guard for the same reason.",
   "method": "HMTc Method v2.0, government-limit-only initial setting: every numeric cell is the strictest applicable sovereign maximum for this exact leave-on cosmetic form expressed as total content of the finished product as placed on market, or a disclosed read-across where the exact cell is unregulated, or a substantiated not-material determination, or a control. No cell is occurrence-derived, no cell is precautionary or feasibility-adjusted, and no cell is anchored on an ingredient or colour-additive purity specification.",
@@ -177,7 +179,20 @@
       "rationale": "No jurisdiction publishes an inorganic-arsenic maximum for a finished cosmetic. Every instrument in this family regulates TOTAL arsenic, and the register records the family's arsenic rows as tAs for exactly that reason. A total-element ceiling cannot be converted into a species ceiling, species never satisfy totals, and there is no near-neighbour cosmetic inorganic-arsenic cell anywhere to read across from, so no number is invented here. Inorganic arsenic is nevertheless the health-relevant fraction and it is the fraction that travels with the mineral raw materials this category depends on (talc, kaolin, clays, iron oxides, ultramarines, titanium dioxide, zinc oxide), so speciation is mandatory rather than optional.",
       "reference_method": "Arsenic speciation by HPLC-ICP-MS, or an equivalent validated speciation method, on the finished product, reported on the certificate alongside the mandatory total-arsenic result. Inorganic arsenic is bounded above by the published total-arsenic ceiling by identity. Escalation: an inorganic-arsenic result that alone reaches the published total-arsenic ceiling is a hard stop; an inorganic fraction that rises materially against the SKU's own established baseline triggers raw-material traceback and CAPA.",
       "bounded_by": "tAs",
-      "companion_ml": "de_bvl2017_tas_cosmetics_general_500"
+      "companion_ml": "de_bvl2017_tas_cosmetics_general_500",
+      "companion_ids": [
+        "de_bvl2017_tas_cosmetics_general_500"
+      ],
+      "companions": [
+        {
+          "id": "de_bvl2017_tas_cosmetics_general_500",
+          "value": 500,
+          "jurisdiction": "DE",
+          "metal_species": "tAs",
+          "basis": "cosmetic product; source unit mg/kg",
+          "scope": "cosmetic products in general except theater, fan, or carnival make-up"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",
@@ -310,7 +325,20 @@
       "rationale": "No jurisdiction publishes a hexavalent-chromium maximum for a topically applied finished cosmetic. The only Cr(VI) instrument in this instrument family is the EU tattoo and permanent-make-up restriction (REACH Annex XVII entry 75, Appendix 13, 500 ug/kg), which governs a mixture introduced INTRADERMALLY, not a dermal cosmetic; reading it across would substitute one exposure route and one instrument family for another, which is the stretch this method forbids. The remaining sovereign Cr(VI) values in the register are article extraction limits for textiles and leather, a migration basis that cannot anchor a total-content cell. A not-material determination is NOT available here: Cr(VI) in a pigmented cosmetic matrix is not a method artifact, and the EU legislated a Cr(VI) limit for tattoo mixtures precisely because the species occurs in inorganic pigments. The cell is therefore a control.",
       "reference_method": "Hexavalent chromium by alkaline extraction and IC-ICP-MS or an equivalent validated speciation method (EPA 3060A-type digestion), run on every lot alongside the mandatory total-chromium screen. Cr(VI) cannot exceed total chromium by identity. Escalation: any Cr(VI) result above the method reporting limit triggers pigment and raw-material traceback and CAPA; a result at or above 500 ug/kg — cited here as the EU tattoo-mixture escalation reference and expressly NOT as this row's ceiling — is a hard stop pending root-cause closure.",
       "bounded_by": "Cr",
-      "companion_ml": "eu_reach_2020_2081_crvi_tattoo_pmu_500"
+      "companion_ml": "eu_reach_2020_2081_crvi_tattoo_pmu_500",
+      "companion_ids": [
+        "eu_reach_2020_2081_crvi_tattoo_pmu_500"
+      ],
+      "companions": [
+        {
+          "id": "eu_reach_2020_2081_crvi_tattoo_pmu_500",
+          "value": 500,
+          "jurisdiction": "EU",
+          "metal_species": "Cr-VI",
+          "basis": "mixture for tattooing or permanent make-up by weight; source unit percent by weight",
+          "scope": "mixtures for use for tattooing or permanent make-up"
+        }
+      ]
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",

@@ -9,6 +9,8 @@
   "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
   "native_basis_label": "finished cosmetic as placed on market (total content, ug/kg of product as sold)",
   "scope_note": "Dentifrices marketed for ages 0-5, fluoride and non-fluoride, including training pastes and gels. This is the swallowed form of the category: a 0-5 child has not reliably learned to spit, so a substantial fraction of each application is ingested, and that is precisely why Germany BVL 2017 and Washington State both write a dedicated toothpaste tier stricter than their general cosmetic limits. CROSS-CATEGORY BOUNDARY: Category 20 (Oral Care) carries the ADULT dentifrice row and both use the same toothpaste-tier instruments; this child row binds the same 0.5 mg/kg lead tier as the adult row and is therefore never the looser of the two, satisfying the Category 2 floor rule. Category 20 additionally carries mouthwash, whitening products and the non-formulation oral articles (toothbrushes, floss, irrigators, tongue cleaners, denture care); none of those is in scope here, and none of them is a cosmetic formulation to which a toothpaste ceiling could be stretched. INSTRUMENT-SCOPE NOTE: every numeric cell in this row names a TOOTHPASTE-SCOPED register row wherever one exists, so no scope stretching is required; only nickel, for which no sovereign publishes a toothpaste-scoped limit, is reached by a disclosed read-across.",
+  "material": null,
+  "components": null,
   "basis_guard": "cosmetic|product as sold",
   "basis_guard_note": "Every named anchor must carry a FINISHED-COSMETIC basis. The guard exists to keep three foreign bases out of these cells: (1) the 21 CFR 73/74 colour-additive ingredient specifications, which are purity limits for one raw material (iron oxides, ultramarines, henna, bismuth citrate, talc-bearing pigments) and not a ceiling on the finished product; (2) the EU Toy Safety Directive 2009/48 and ASTM F963 element-MIGRATION limits, which measure what leaches out of an article and are numerically incomparable to a total-content limit; and (3) food maximum levels expressed as-consumed or on an edible-portion basis. A cell whose named anchor fails the guard resolves to a GAP and fails the build rather than shipping a conflated number. The toothpaste rows widen the guard by one phrase, 'product as sold', because that is the basis string Washington State's Toxic-Free Cosmetics Act uses for its statutory toothpaste lead limit; it is a finished-dentifrice total-content basis in the same family as the BVL cosmetic basis, not a migration or dietary basis.",
   "method": "HMTc Method v2.0 (government-limit default) as applied to a child-scoped cosmetic category: every numeric cell is the strictest applicable sovereign finished-cosmetic maximum in the row's native total-content basis, or a disclosed read-across of a stricter sovereign tier from the same instrument where that instrument writes an adult-market loosening carve-out that HMTc declines to adopt for a product marketed to ages 0-5. No cell is occurrence-derived.",
@@ -92,7 +94,20 @@
       "rationale": "No jurisdiction anywhere in the register speciates arsenic in a cosmetic product. Every sovereign cosmetic instrument - Germany BVL 2017, Health Canada, China NMPA 2015, Taiwan MOHW 2024, Korea MFDS, the ASEAN Cosmetic Directive and its national transpositions, India, Kenya, the EAEU - regulates arsenic as a TOTAL element, so there is no sovereign inorganic-arsenic cell for this or any adjacent cosmetic form. Nor is a near-neighbour read-across supportable: the only inorganic-arsenic maximum levels in the register are dietary (rice, fish oils, marine products), expressed on an as-consumed or whole-commodity food basis that is not comparable to a finished-cosmetic total-content basis, and importing one would be exactly the basis conflation this row's basis guard exists to prevent. Inorganic arsenic is nonetheless material rather than not-material in this category: arsenic in talc, mica, zinc oxide, titanium dioxide, iron oxides and clay-derived raw materials is predominantly inorganic, and mineral raw materials are present by design in four of this category's sixteen rows. The cell is therefore a control, not a not-material determination, and inorganic arsenic can never substitute for the total-arsenic cell.",
       "reference_method": "Speciated inorganic arsenic by HPLC-ICP-MS (EN 16802 or AOAC 2016.03, matrix-validated for the product form) on every certified lot, reported alongside the total-arsenic determination. No separate inorganic-arsenic ceiling is published; the lot is judged against the total-arsenic ceiling, which bounds inorganic arsenic by identity. ESCALATION: where inorganic arsenic is the majority of the reported total arsenic, or where the reported inorganic arsenic is above the manufacturer's trailing twelve-month distribution for the same form, the lot triggers mandatory raw-material traceback to the mineral or botanical component and a documented corrective-action plan before certification.",
       "bounded_by": "tAs",
-      "companion_ml": "de_bvl2017_tas_toothpaste_500"
+      "companion_ml": "de_bvl2017_tas_toothpaste_500",
+      "companion_ids": [
+        "de_bvl2017_tas_toothpaste_500"
+      ],
+      "companions": [
+        {
+          "id": "de_bvl2017_tas_toothpaste_500",
+          "value": 500,
+          "jurisdiction": "DE",
+          "metal_species": "tAs",
+          "basis": "cosmetic product; source unit mg/kg",
+          "scope": "toothpaste"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",

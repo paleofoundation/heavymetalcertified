@@ -9,6 +9,8 @@
   "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
   "native_basis_label": "Finished leave-on cosmetic, TOTAL CONTENT as placed on market (ug/kg of product as sold), on the technically-unavoidable-impurity basis every instrument in this family uses. Not a migration/leachate basis, not a dietary basis, not an ingredient purity specification.",
   "scope_note": "In scope: permanent tattoo inks and permanent-make-up pigments, including permanent eyeliner, microblading, scalp micropigmentation, areola and paramedical pigments, together with temporary topical tattoo products — transfer and decal tattoos, henna-style and jagua body art, and airbrush tattoo colours. Out of scope: topical body and theatrical paint (row 6) and needles, cartridges, tubes and grips, which are articles rather than mixtures and are not certified against a mixture ceiling. This row is the one place in Category 13 where the exposure route is INTRADERMAL rather than dermal, and it is governed by a distinct instrument family: EU REACH Annex XVII entry 75 with its Appendix 13 concentration limits, which apply to a mixture placed into the dermis rather than onto the stratum corneum. Because the taxonomy row also carries the temporary topical forms, which are cosmetics rather than intradermal mixtures and are not covered by the REACH entry, each cell names both the applicable REACH value and the applicable finished-cosmetic value and binds at the strictest of them. The result is mixed by analyte: REACH is stricter for lead and supplies the only nickel and Cr(VI) values, while the German cosmetic tier is stricter for cadmium and mercury. Three cells have no number from either instrument. Tin has no REACH row in the register and whether the entry's appendix sets a tin value has not been verified against the instrument, which is recorded as a register gap rather than filled from memory; aluminium and total chromium are unregulated in both families. All three are controls.",
+  "material": null,
+  "components": null,
   "basis_guard": "^(?!.*(color additive ingredient specification|colou?rant impurity|colourant impurity profile|colorant impurity))(?=.*(mixture for tattooing|permanent make-up|cosmetic|finished topical product)).*",
   "basis_guard_note": "This is the only row in the category whose guard admits the EU tattoo and permanent-make-up MIXTURE basis, because it is the only row whose product form that instrument governs. The guard admits two bases and no others: the intradermal tattoo and permanent-make-up mixture basis (EU REACH Annex XVII entry 75, Appendix 13) for the row's permanent forms, and the finished-cosmetic total-content basis for the row's temporary topical forms. Both express a total mass fraction of the product as placed on market, so naming them in one cell mixes exposure routes but NOT bases, and the label on each cell records which instrument governs which form. Colour-additive and ingredient purity specifications, dietary maximum levels, and the textile and leather Cr(VI) extraction limits are all refused: the last of those is a migration basis and cannot anchor a total-content cell even though it is the only other sovereign Cr(VI) family in the register.",
   "method": "HMTc Method v2.0, government-limit-only initial setting: every numeric cell is the strictest applicable sovereign maximum for this exact leave-on cosmetic form expressed as total content of the finished product as placed on market, or a disclosed read-across where the exact cell is unregulated, or a substantiated not-material determination, or a control. No cell is occurrence-derived, no cell is precautionary or feasibility-adjusted, and no cell is anchored on an ingredient or colour-additive purity specification.",
@@ -137,7 +139,20 @@
       "rationale": "Neither instrument governing this row speciates arsenic. The EU tattoo and permanent-make-up entry sets a total-arsenic concentration limit and the register records it as tAs for that reason, and no jurisdiction publishes an inorganic-arsenic maximum for a tattoo mixture, a permanent-make-up pigment or any finished cosmetic. A total cannot be converted into a species and species never satisfy totals, so no number is invented. Inorganic arsenic matters more here than anywhere else in the category, because the mineral and metal-oxide pigments that carry it are placed permanently into the dermis rather than onto it, so speciation is mandatory.",
       "reference_method": "Arsenic speciation by HPLC-ICP-MS, or an equivalent validated speciation method, on the finished ink or pigment, reported on the certificate alongside the mandatory total-arsenic result. Inorganic arsenic is bounded above by the published 500 ug/kg total-arsenic ceiling by identity. Escalation: an inorganic-arsenic result that alone reaches the published total-arsenic ceiling is a hard stop; an inorganic fraction rising materially against the pigment's established baseline triggers pigment-lot traceback and CAPA.",
       "bounded_by": "tAs",
-      "companion_ml": "eu_reach_2020_2081_tas_tattoo_pmu_500"
+      "companion_ml": "eu_reach_2020_2081_tas_tattoo_pmu_500",
+      "companion_ids": [
+        "eu_reach_2020_2081_tas_tattoo_pmu_500"
+      ],
+      "companions": [
+        {
+          "id": "eu_reach_2020_2081_tas_tattoo_pmu_500",
+          "value": 500,
+          "jurisdiction": "EU",
+          "metal_species": "tAs",
+          "basis": "mixture for tattooing or permanent make-up by weight; source unit percent by weight",
+          "scope": "mixtures for use for tattooing or permanent make-up"
+        }
+      ]
     },
     "tHg": {
       "type": "gov",

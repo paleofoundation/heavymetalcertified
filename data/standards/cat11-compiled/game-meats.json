@@ -9,6 +9,8 @@
   "native_basis": "as_sold",
   "native_basis_label": "as sold, raw or cooked edible portion (wet weight); bone, shot channel and inedible fat excluded; no dry-to-wet or reconstitution conversion is performed",
   "scope_note": "Muscle meat and attached edible fat of wild-harvested and farmed game mammals sold for human consumption: deer and other cervids (venison), bison and other non-domestic bovids, wild boar, rabbit and hare. Game birds route to the poultry row and wild aquatic species to Category 6. Game edible offal is a separately-tested sub-lot against the sovereign offal maximum levels of the nearest domestic analogue and never anchors this row. LEAD AMMUNITION IS THIS ROW'S DEFINING HAZARD: fragmenting lead projectiles deposit metallic lead along the wound channel far beyond the visible fragment, and carcasses processed by grinding disperse it through the batch. That pathway is the reason lot testing is mandatory and lead is the priority analyte on this row; it does not license a different number, because Method v2.0 forbids occurrence-derived values.",
+  "material": null,
+  "components": null,
   "basis_guard": "(wet weight|portion ordinarily consumed|product as placed on market|food as listed|as sold|as consumed|commodity|edible part|fresh weight)",
   "basis_guard_note": "Category 11 is a dietary as-sold wet-weight category. The guard admits only register rows whose basis is a food-matrix content basis (wet weight, portion ordinarily consumed, product as placed on market, commodity, edible part, food as listed in the Cap 132V schedule). It rejects, by construction, food-contact specific-migration limits, toy and article element-migration limits, animal-feed 12%-moisture bases, dry-matter fertiliser limits, colour-additive ingredient purity specifications, and drinking-water statutory limits. A migration or purity-specification number is not a maximum level for a food and must never anchor a meat, poultry, or egg row.",
   "method": "HMTc Method v2.0 (government-limit-only initial setting: the strictest applicable sovereign maximum level for this exact product form in its native basis; disclosed read-across where the exact cell is unregulated; control where neither a sovereign number nor a supportable near-neighbour analogue exists; never occurrence-derived)",
@@ -125,7 +127,20 @@
       "rationale": "Inorganic tin in food is a tinplate-packaging pathway: tin migrates into the food from the internal surface of an unlacquered or damaged tinplate can, which is why every credible sovereign tin maximum level on the register is written against canned food rather than against the food itself. Fresh, chilled, frozen and vacuum-packed game meat is not packed in tinplate, so the pathway that the canned-food maximum levels exist to control is absent and no sovereign number governs the cell. A lot of this product form that is retorted or packed in a metal can is not certified against this row at all: it is certified against the canned-meats row, whose tin cell carries the binding canned-foods maximum level. No tin ceiling is invented for the non-canned form.",
       "reference_method": "Total tin by ICP-MS on every certified lot. Any quantifiable tin in a lot declared as non-metal-packed triggers a packaging and contact-surface investigation (can or closure liner, tinned equipment, solder) before release, and re-routes the lot to the canned-meats row if metal packaging is found.",
       "bounded_by": null,
-      "companion_ml": "eu2023_sn_canned_foods_200000"
+      "companion_ml": "eu2023_sn_canned_foods_200000",
+      "companion_ids": [
+        "eu2023_sn_canned_foods_200000"
+      ],
+      "companions": [
+        {
+          "id": "eu2023_sn_canned_foods_200000",
+          "value": 200000,
+          "jurisdiction": "EU",
+          "metal_species": "Sn",
+          "basis": "product as placed on market",
+          "scope": "canned foods other than canned beverages, except canned dried and canned"
+        }
+      ]
     },
     "Al": {
       "type": "control",
