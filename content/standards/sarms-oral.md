@@ -13,7 +13,7 @@ standard_version: "1.0 (2026-08-14)"
 methodology_version: "Method v2.0 — no-regulatory-anchor control form (no sovereign product limit exists; every analyte tested under mandatory control)"
 variant_type: whole_row_platform
 effective_date: 2026-08-14
-scholar_eligible: true
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:

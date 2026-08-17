@@ -7,13 +7,33 @@
   "metals": ["Lead", "Cadmium", "Arsenic", "Mercury", "Nickel", "Aluminium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["combined heavy metal exposure", "cumulative dietary metal risk", "single-metal limits underprotection", "hazard index heavy metals diet", "eight-metal panel certification", "EFSA cadmium arsenic exposure"],
+  "published": "2026-08-10",
+  "keywords": [
+    "combined heavy metal exposure",
+    "cumulative dietary metal risk",
+    "single-metal limits underprotection",
+    "hazard index heavy metals diet",
+    "eight-metal panel certification",
+    "EFSA cadmium arsenic exposure"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection" },
-    { "label": "Mixed-meals standard", "href": "/standards/mixed-meals" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Arsenic — analyte review", "href": "/analytes/arsenic" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection"
+    },
+    {
+      "label": "Mixed-meals standard",
+      "href": "/standards/mixed-meals"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Arsenic — analyte review",
+      "href": "/analytes/arsenic"
+    }
   ],
   "abstract": "Regulatory limits for heavy metals in food are almost all set one metal at a time — a limit for lead, a separate limit for cadmium, another for inorganic arsenic — yet a real diet delivers those metals together. Recent population data show that a consumer can sit at or below every single-metal reference value and still carry a combined exposure that exceeds the health-protective threshold: in the cleanest-diet jurisdiction studied, the average adult's cumulative hazard index is already above one for neurotoxic and renal endpoints. The certification consequence is direct. A standard that certifies against one metal at a time can pass a product that is quietly adding to an already-saturated combined load, so the honest instrument is an eight-metal panel scored across a whole-diet framing rather than a stack of independent single-metal checks. That is how the [Heavy Metal Certified](/standards/mixed-meals) mixed-meals standard is built. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/combined-exposure-underprotection), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,11 +77,52 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Cumulative risk assessment of the dietary heavy-metal and aluminium exposure of Finnish adults", "meta": "Suomi and Tuominen, 2023. First cumulative dietary risk assessment of a six-metal mixture (Cd, Pb, inorganic As, MeHg, Ni, Al) in 1,295 Finnish adults; cumulative hazard index above 1 for neurotoxicity and kidney effects across all adult age groups, and above 1 for over 95 percent of women under 45.", "type": "Journal", "href": "https://doi.org/10.1007/s11356-023-27879-x" },
-    { "n": 2, "title": "Cadmium dietary exposure assessment, 91st meeting addendum", "meta": "Joint FAO/WHO Expert Committee on Food Additives, 2022. Carried the 2010 provisional tolerable monthly intake of 25 µg per kilogram of body weight forward without revision; updated 2019 cocoa occurrence data pushed total dietary cadmium in children aged 0.5 to 12 years to as high as 96 percent of the PTMI in some subpopulations.", "type": "Government" },
-    { "n": 3, "title": "Update of the risk assessment of inorganic arsenic in food", "meta": "EFSA CONTAM Panel, 2024. Scientific Opinion adopted November 2023 classifying inorganic arsenic as a genotoxic carcinogen; a BMDL05 of 0.06 µg per kilogram of body weight per day yields adult margins of exposure of 2 to 0.4 for mean consumers and 0.9 to 0.2 at the 95th percentile, all below the threshold margin of 1.", "type": "Government" },
-    { "n": 4, "title": "Maximum levels for certain contaminants in food", "meta": "European Union. Commission Regulation (EU) 2023/915 sets single-metal maximum levels for lead, cadmium, arsenic and mercury in food, one metal and category at a time.", "type": "Legislation" },
-    { "n": 5, "title": "Action level for inorganic arsenic in infant rice cereal", "meta": "U.S. Food and Drug Administration. A single-metal action level for inorganic arsenic in infant rice cereal, one of the single-metal reference values the combined-exposure critique addresses.", "type": "Government" },
-    { "n": 6, "title": "Heavy Metal Index — combined-exposure underprotection (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for Suomi 2023, JECFA 2022 and EFSA 2024.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection" }
+    {
+      "n": 1,
+      "title": "Cumulative risk assessment of the dietary heavy metal and aluminum exposure of Finnish adults",
+      "meta": "First cumulative dietary risk assessment of a six-metal mixture (Cd, Pb, inorganic As, MeHg, Ni, Al) in 1,295 Finnish adults; cumulative hazard index above 1 for neurotoxicity and kidney effects across all adult age groups, and above 1 for over 95 percent of women under 45.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1007/s10661-023-11427-y",
+      "doi": "10.1007/s10661-023-11427-y",
+      "authors": "Suomi, Johanna; Tuominen, Pirkko",
+      "year": 2023,
+      "journal": "Environmental Monitoring and Assessment",
+      "volume": "195",
+      "issue": "7",
+      "pages": null,
+      "cite_key": "suomi2023-finland-dietary-metals-cumulative",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Cadmium dietary exposure assessment, 91st meeting addendum",
+      "meta": "Joint FAO/WHO Expert Committee on Food Additives, 2022. Carried the 2010 provisional tolerable monthly intake of 25 µg per kilogram of body weight forward without revision; updated 2019 cocoa occurrence data pushed total dietary cadmium in children aged 0.5 to 12 years to as high as 96 percent of the PTMI in some subpopulations.",
+      "type": "Government"
+    },
+    {
+      "n": 3,
+      "title": "Update of the risk assessment of inorganic arsenic in food",
+      "meta": "EFSA CONTAM Panel, 2024. Scientific Opinion adopted November 2023 classifying inorganic arsenic as a genotoxic carcinogen; a BMDL05 of 0.06 µg per kilogram of body weight per day yields adult margins of exposure of 2 to 0.4 for mean consumers and 0.9 to 0.2 at the 95th percentile, all below the threshold margin of 1.",
+      "type": "Government"
+    },
+    {
+      "n": 4,
+      "title": "Maximum levels for certain contaminants in food",
+      "meta": "European Union. Commission Regulation (EU) 2023/915 sets single-metal maximum levels for lead, cadmium, arsenic and mercury in food, one metal and category at a time.",
+      "type": "Legislation"
+    },
+    {
+      "n": 5,
+      "title": "Action level for inorganic arsenic in infant rice cereal",
+      "meta": "U.S. Food and Drug Administration. A single-metal action level for inorganic arsenic in infant rice cereal, one of the single-metal reference values the combined-exposure critique addresses.",
+      "type": "Government"
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — combined-exposure underprotection (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for Suomi 2023, JECFA 2022 and EFSA 2024.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection"
+    }
   ]
 }

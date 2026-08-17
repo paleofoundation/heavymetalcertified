@@ -7,13 +7,34 @@
   "metals": ["Arsenic"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["organic arsenic in seafood", "arsenobetaine toxicity", "total vs inorganic arsenic", "arsenic speciation testing", "inorganic arsenic seafood limit", "arsenic in seaweed", "arsenolipids in microalgae"],
+  "published": "2026-08-10",
+  "keywords": [
+    "organic arsenic in seafood",
+    "arsenobetaine toxicity",
+    "total vs inorganic arsenic",
+    "arsenic speciation testing",
+    "inorganic arsenic seafood limit",
+    "arsenic in seaweed",
+    "arsenolipids in microalgae"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption" },
-    { "label": "Arsenic — analyte review", "href": "/analytes/arsenic" },
-    { "label": "Seaweed & kelp foods standard", "href": "/standards/seaweed-kelp-foods" },
-    { "label": "Marine fish (non-predatory) standard", "href": "/standards/fish-marine-non-predatory" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption"
+    },
+    {
+      "label": "Arsenic — analyte review",
+      "href": "/analytes/arsenic"
+    },
+    {
+      "label": "Seaweed & kelp foods standard",
+      "href": "/standards/seaweed-kelp-foods"
+    },
+    {
+      "label": "Marine fish (non-predatory) standard",
+      "href": "/standards/fish-marine-non-predatory"
+    }
   ],
   "abstract": "For decades, food-arsenic risk assessment has rested on the assumption that organoarsenicals — chiefly arsenobetaine, the dominant arsenic species in marine fish and shellfish — are biologically inert and pass through the body unchanged. That assumption is now contested on three independent fronts: biomonitoring studies that read seafood-derived dimethylarsinic acid as if it measured inorganic-arsenic methylation, in vitro digestion work showing organic arsenicals partly convert to inorganic As(V) in the stomach, and a large Japanese cohort in which serum arsenic that is roughly 98 percent arsenobetaine tracked hypertension risk. None of these refutes inertness outright, but together they show that total arsenic is a poor proxy for arsenic risk. The certification consequence is direct: a defensible standard limits speciated [inorganic arsenic](/analytes/arsenic) rather than total arsenic, and reads an arsenic result in the context of its food matrix instead of assuming every organic form is harmless. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -65,13 +86,104 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Seafood arsenosugars and arsenolipids confound urinary methylation-efficiency biomonitoring", "meta": "Davydiuk et al., 2023. Arsenosugars and arsenolipids from seafood are metabolised to urinary DMA by a route independent of inorganic-arsenic methylation, so %DMA methylation indices can underestimate inorganic-arsenic exposure in seafood-eating populations.", "type": "Journal" },
-    { "n": 2, "title": "Conversion of seafood organoarsenicals to inorganic As(V) during simulated digestion", "meta": "Liu et al., 2023. Organic arsenicals in crab and scallop showed a two- to three-fold increase in the inorganic As(V) fraction after in vitro gastrointestinal digestion, via a pH-dependent free-radical oxidation.", "type": "Journal" },
-    { "n": 3, "title": "Serum arsenic and prospective hypertension risk in a Japanese cohort", "meta": "Kagawa et al., 2023. In the J-MICC Daiko cohort (n=2,709), serum total arsenic — about 98 percent arsenobetaine by population survey — was associated with dose-dependent hypertension risk after adjustment for fish-consumption frequency and cardiovascular risk factors.", "type": "Journal" },
-    { "n": 4, "title": "First detection of an arsenosugar phospholipid in the microalga Chlamydomonas reinhardtii", "meta": "Raab et al., 2024. First report of the arsenolipid AsSugPhytol in any organism; about 57 percent of total arsenic in Chlamydomonas reinhardtii exists as arsenolipids, which standard acid digestion may under-recover.", "type": "Journal" },
-    { "n": 5, "title": "A novel arsenobetaine amide identified in several mushroom species", "meta": "Walenta et al., 2024. Discovery of a previously unreported arsenobetaine amide in four mushroom species, extending known organoarsenical diversity to terrestrial fungi.", "type": "Journal" },
-    { "n": 6, "title": "Validated HPLC-ICP-MS determination of inorganic arsenic in seaweed", "meta": "Sim et al., 2024. A validated method found that Laminaria digitata carries more than 50 percent of its total arsenic as inorganic arsenic, showing seaweed is not a low-inorganic-arsenic matrix by default.", "type": "Journal" },
-    { "n": 7, "title": "Maximum levels for inorganic arsenic in seaweed and other foods", "meta": "European Union. Commission Regulation (EU) 2023/915 sets specific inorganic-arsenic maximum levels for seaweed products among other food categories.", "type": "Legislation" },
-    { "n": 8, "title": "Heavy Metal Index — the organoarsenical inertness assumption (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source — Davydiuk, Liu, Kagawa, Raab, Walenta, Sim and others — and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Effects of Dietary Intake of Arsenosugars and Other Organic Arsenic Species on Studies of Arsenic Methylation Efficiency in Humans",
+      "meta": "Arsenosugars and arsenolipids from seafood are metabolised to urinary DMA by a route independent of inorganic-arsenic methylation, so %DMA methylation indices can underestimate inorganic-arsenic exposure in seafood-eating populations.",
+      "type": "Journal",
+      "doi": "10.1021/envhealth.3c00090",
+      "href": "https://doi.org/10.1021/envhealth.3c00090",
+      "authors": "Davydiuk, Tetiana; Tao, Jeffrey; Lu, Xiufen, et al.",
+      "year": 2023,
+      "journal": "Environment &amp; Health",
+      "volume": "1",
+      "issue": "4",
+      "pages": "236-248",
+      "cite_key": "davydiuk2023-effects-of-dietary-intake-of-arsenosugars-and-other",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Transformation of arsenic species from seafood consumption during in vitro digestion",
+      "meta": "Organic arsenicals in crab and scallop showed a two- to three-fold increase in the inorganic As(V) fraction after in vitro gastrointestinal digestion, via a pH-dependent free-radical oxidation.",
+      "type": "Journal",
+      "doi": "10.3389/fnut.2023.1207732",
+      "href": "https://doi.org/10.3389/fnut.2023.1207732",
+      "authors": "Liu, Bei; Sui, Jianxin; Feng, Ruixue, et al.",
+      "year": 2023,
+      "journal": "Frontiers in Nutrition",
+      "volume": "10",
+      "issue": null,
+      "pages": null,
+      "cite_key": "liu2023-arsenic-seafood-digestion",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Elevated arsenic level in fasting serum via ingestion of fish meat increased the risk of hypertension in humans and mice",
+      "meta": "In the J-MICC Daiko cohort (n=2,709), serum total arsenic — about 98 percent arsenobetaine by population survey — was associated with dose-dependent hypertension risk after adjustment for fish-consumption frequency and cardiovascular risk factors.",
+      "type": "Journal",
+      "doi": "10.1093/ehjopen/oead074",
+      "href": "https://doi.org/10.1093/ehjopen/oead074",
+      "authors": "Kagawa, Takumi; Ohgami, Nobutaka; He, Tingchao, et al.",
+      "year": 2023,
+      "journal": "European Heart Journal Open",
+      "volume": "3",
+      "issue": "5",
+      "pages": null,
+      "cite_key": "kagawa2023-fish-arsenic-hypertension-japan",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "First detection of an arsenosugar phospholipid in the microalga Chlamydomonas reinhardtii",
+      "meta": "Raab et al., 2024. First report of the arsenolipid AsSugPhytol in any organism; about 57 percent of total arsenic in Chlamydomonas reinhardtii exists as arsenolipids, which standard acid digestion may under-recover.",
+      "type": "Journal"
+    },
+    {
+      "n": 5,
+      "title": "Arsenobetaine amide: a novel arsenic species detected in several mushroom species",
+      "meta": "Discovery of a previously unreported arsenobetaine amide in four mushroom species, extending known organoarsenical diversity to terrestrial fungi.",
+      "type": "Journal",
+      "doi": "10.1007/s00216-024-05132-z",
+      "href": "https://doi.org/10.1007/s00216-024-05132-z",
+      "authors": "Walenta, Martin; Raab, Andrea; Braeuer, Simone, et al.",
+      "year": 2024,
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "volume": "416",
+      "issue": "6",
+      "pages": "1399-1405",
+      "cite_key": "walenta2024-arsenic-speciation-mushrooms",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Inorganic arsenic in seaweed: a fast HPLC-ICP-MS method without coelution of arsenosugars",
+      "meta": "A validated method found that Laminaria digitata carries more than 50 percent of its total arsenic as inorganic arsenic, showing seaweed is not a low-inorganic-arsenic matrix by default.",
+      "type": "Journal",
+      "doi": "10.1007/s00216-024-05250-8",
+      "href": "https://doi.org/10.1007/s00216-024-05250-8",
+      "authors": "Sim, Rebecca; Weyer, Marta; Pétursdóttir, Ásta H.",
+      "year": 2024,
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "volume": "416",
+      "issue": "12",
+      "pages": "3033-3044",
+      "cite_key": "sim2024-inorganic-arsenic-seaweed-hplc",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 7,
+      "title": "Maximum levels for inorganic arsenic in seaweed and other foods",
+      "meta": "European Union. Commission Regulation (EU) 2023/915 sets specific inorganic-arsenic maximum levels for seaweed products among other food categories.",
+      "type": "Legislation"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — the organoarsenical inertness assumption (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source — Davydiuk, Liu, Kagawa, Raab, Walenta, Sim and others — and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

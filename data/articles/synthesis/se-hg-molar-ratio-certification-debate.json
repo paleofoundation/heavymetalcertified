@@ -7,13 +7,33 @@
   "metals": ["Mercury", "Methylmercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["selenium mercury ratio", "Se:Hg molar ratio", "methylmercury fish limit", "selenium health benefit value", "mercury in tuna certification", "predator fish mercury standard"],
+  "published": "2026-08-10",
+  "keywords": [
+    "selenium mercury ratio",
+    "Se:Hg molar ratio",
+    "methylmercury fish limit",
+    "selenium health benefit value",
+    "mercury in tuna certification",
+    "predator fish mercury standard"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
-    { "label": "Canned seafood standard", "href": "/standards/canned-seafood" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Predatory fish standard",
+      "href": "/standards/fish-marine-predatory"
+    },
+    {
+      "label": "Canned seafood standard",
+      "href": "/standards/canned-seafood"
+    }
   ],
   "abstract": "The selenium-to-mercury molar ratio (Se:Hg) has been proposed as a basis for relaxing methylmercury ceilings on selenium-rich [predator fish](/standards/fish-marine-predatory), but the current evidence does not support doing so. The argument holds that when selenium exceeds mercury in molar terms the mercury is bound as an inert selenide and the neurotoxic cascade is blunted, and most commercial species — bluefin tuna among them — sit above a Se:Hg ratio of one. What the framework cannot yet supply is a validated dose-response translating a given ratio into a defined ceiling adjustment, and no regulator — EFSA, JECFA, EPA or FDA — has adopted one. For a certification program the consequence is caution: methylmercury is a Tier-1 toxic, and a credible standard should verify methylmercury directly against the strictest government maximum rather than infer safety from a ratio whose protective claim is still contested. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,11 +77,82 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Selenium Health Benefit Values and the selenium-mercury interaction in seafood", "meta": "Ralston and Raymond, 2014. Formalized the Selenium Health Benefit Value framework, in which mercury bound to selenium as inert selenide withholds dietary selenium from selenoprotein synthesis, so methylmercury neurotoxicity is proposed to scale with the selenium-to-mercury deficit rather than absolute mercury.", "type": "Journal" },
-    { "n": 2, "title": "Atlantic bluefin tuna: selenium, mercury and risk-benefit for consumers", "meta": "Chamorro et al., 2024. Reports that Atlantic bluefin tuna typically carries a selenium-to-mercury molar ratio above one despite high absolute mercury.", "type": "Journal" },
-    { "n": 3, "title": "Experimental mechanisms of methylmercury-induced neurotoxicity", "meta": "Farina et al., 2011. Reviews the experimental methylmercury neurotoxicity literature; the selenium-mercury interaction is one contributing factor among several, not necessarily the dominant one.", "type": "Journal" },
-    { "n": 4, "title": "Absolute methylmercury reference values maintained by the major food-safety authorities", "meta": "EFSA, JECFA, US EPA and US FDA. All four express methylmercury reference values, such as provisional tolerable weekly intakes and reference doses, in absolute concentration terms; none has incorporated a selenium-to-mercury adjustment into the threshold.", "type": "Government" },
-    { "n": 5, "title": "Stable mercury isotopes and the transport of mercury into marine food webs", "meta": "Dietz et al., 2025. Stable mercury isotope fractionation distinguishes mercury from different source pools; a research capability relevant to source attribution, not a routine compliance method.", "type": "Journal" },
-    { "n": 6, "title": "Heavy Metal Index — selenium-mercury molar ratio and the case for relaxing methylmercury ceilings (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page for the selenium-mercury debate.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Selenium Health Benefit Values: Updated Criteria for Mercury Risk Assessments",
+      "meta": "Formalized the Selenium Health Benefit Value framework, in which mercury bound to selenium as inert selenide withholds dietary selenium from selenoprotein synthesis, so methylmercury neurotoxicity is proposed to scale with the selenium-to-mercury deficit rather than absolute mercury.",
+      "type": "Journal",
+      "doi": "10.1007/s12011-015-0516-z",
+      "href": "https://doi.org/10.1007/s12011-015-0516-z",
+      "authors": "Ralston, Nicholas V. C.; Ralston, Carla R.; Raymond, Laura J.",
+      "year": 2016,
+      "journal": "Biological Trace Element Research",
+      "volume": "171",
+      "issue": "2",
+      "pages": "262-269",
+      "cite_key": "ralston2014-selenium-hbv-methylmercury-seafood",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Health benefits of bluefin tuna consumption: (Thunnus thynnus) as a case study",
+      "meta": "Reports that Atlantic bluefin tuna typically carries a selenium-to-mercury molar ratio above one despite high absolute mercury.",
+      "type": "Journal",
+      "doi": "10.3389/fnut.2024.1340121",
+      "href": "https://doi.org/10.3389/fnut.2024.1340121",
+      "authors": "Chamorro, F.; Cassani, L.; Garcia-Oliveira, P., et al.",
+      "year": 2024,
+      "journal": "Frontiers in Nutrition",
+      "volume": "11",
+      "issue": null,
+      "pages": null,
+      "cite_key": "chamorro2024-bluefin-tuna-mercury-review",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 3,
+      "title": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+      "meta": "Reviews the experimental methylmercury neurotoxicity literature; the selenium-mercury interaction is one contributing factor among several, not necessarily the dominant one.",
+      "type": "Journal",
+      "doi": "10.1016/j.lfs.2011.05.019",
+      "href": "https://doi.org/10.1016/j.lfs.2011.05.019",
+      "authors": "Farina, Marcelo; Rocha, João B.T.; Aschner, Michael",
+      "year": 2011,
+      "journal": "Life Sciences",
+      "volume": "89",
+      "issue": "15-16",
+      "pages": "555-563",
+      "cite_key": "farina-rocha-aschner-2011-mehg-mechanism",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Absolute methylmercury reference values maintained by the major food-safety authorities",
+      "meta": "EFSA, JECFA, US EPA and US FDA. All four express methylmercury reference values, such as provisional tolerable weekly intakes and reference doses, in absolute concentration terms; none has incorporated a selenium-to-mercury adjustment into the threshold.",
+      "type": "Government"
+    },
+    {
+      "n": 5,
+      "title": "Stable isotopes unveil ocean transport of legacy mercury into Arctic food webs",
+      "meta": "Stable mercury isotope fractionation distinguishes mercury from different source pools; a research capability relevant to source attribution, not a routine compliance method.",
+      "type": "Journal",
+      "doi": "10.1038/s41467-025-60356-6",
+      "href": "https://doi.org/10.1038/s41467-025-60356-6",
+      "authors": "Søndergaard, Jens; Elberling, Bo; Sonne, Christian, et al.",
+      "year": 2025,
+      "journal": "Nature Communications",
+      "volume": "16",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "dietz2025-arctic-mercury-isotopes-greenland",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — selenium-mercury molar ratio and the case for relaxing methylmercury ceilings (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page for the selenium-mercury debate.",
+      "type": "Reference"
+    }
   ]
 }

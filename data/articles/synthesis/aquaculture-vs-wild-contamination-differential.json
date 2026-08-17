@@ -7,13 +7,33 @@
   "metals": ["Mercury", "Cadmium", "Arsenic", "Lead"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["methylmercury in farmed fish", "farmed vs wild fish mercury", "methylmercury in salmon", "aquaculture mercury levels", "fish mercury certification", "wild-caught fish methylmercury"],
+  "published": "2026-08-10",
+  "keywords": [
+    "methylmercury in farmed fish",
+    "farmed vs wild fish mercury",
+    "methylmercury in salmon",
+    "aquaculture mercury levels",
+    "fish mercury certification",
+    "wild-caught fish methylmercury"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Non-predatory marine fish standard", "href": "/standards/fish-marine-non-predatory" },
-    { "label": "Predatory marine fish standard", "href": "/standards/fish-marine-predatory" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Non-predatory marine fish standard",
+      "href": "/standards/fish-marine-non-predatory"
+    },
+    {
+      "label": "Predatory marine fish standard",
+      "href": "/standards/fish-marine-predatory"
+    }
   ],
   "abstract": "Farmed fish raised in controlled-feed aquaculture carry systematically lower methylmercury than wild-caught fish of the same species — in the freshwater evidence, 2.9 to 6.2 times lower across trophic classes. This is not luck: their feed is formulated to exclude high-methylmercury fish-meal, they are harvested young, and much of their protein comes from low-trophic forage species or plants, so they never run up the lifetime biomagnification of [methylmercury](/analytes/mercury) that loads a wild fish. Because the gap is driven by feed regime and lifespan rather than species, \"farmed salmon\" and \"wild salmon\" sold under one label are two different methylmercury populations. The certification consequence is direct: a credible standard cannot assign one seafood-wide methylmercury value; it has to verify methylmercury per subcategory, distinguishing documented-farmed from wild-caught. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,11 +81,63 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers", "meta": "Wu et al., 2025. Analysis of roughly 13,000 fish-mercury samples across 164 Chinese sites (2005–2020) finding freshwater wild fish carry methylmercury 2.9 to 6.2 times higher than freshwater farmed fish across trophic classes.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2424001122" },
-    { "n": 2, "title": "Global fishing patterns amplify human exposures to methylmercury", "meta": "Li et al., 2024. Models catch-weighted methylmercury for 1,774 marine species, showing fisheries economics favour large, long-lived apex predators that raise human methylmercury exposure.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2405898121" },
-    { "n": 3, "title": "Risk-benefit assessment of mercury, lead, cadmium and arsenic in inland fish from Latvian lakes", "meta": "Rusko et al., 2026. Survey of 460 wild fish across seven freshwater species finding methylmercury the dominant mercury form, with some samples exceeding the EU 0.5 mg/kg cap.", "type": "Journal", "href": "https://doi.org/10.3390/foods15091516" },
-    { "n": 4, "title": "European Union maximum level for mercury in fish", "meta": "European Union. A 0.5 mg/kg wet-weight mercury maximum applied to many fish species, which some wild inland samples exceed.", "type": "Legislation" },
-    { "n": 5, "title": "Aquaculture chain-of-custody certification frameworks (ASC, BAP, GlobalG.A.P. Aquaculture)", "meta": "Aquaculture Stewardship Council, Best Aquaculture Practices, and GlobalG.A.P. Aquaculture. Traceability frameworks documenting farm, species, feed regime and harvest data from harvest through processing.", "type": "Standard" },
-    { "n": 6, "title": "Heavy Metal Index — aquaculture vs wild contamination differential (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential" }
+    {
+      "n": 1,
+      "title": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "meta": "Analysis of roughly 13,000 fish-mercury samples across 164 Chinese sites (2005–2020) finding freshwater wild fish carry methylmercury 2.9 to 6.2 times higher than freshwater farmed fish across trophic classes.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2421921122",
+      "doi": "10.1073/pnas.2421921122",
+      "authors": "Wu, Mengjie; Wu, Xinda; Saiz-Lopez, Alfonso, et al.",
+      "year": 2025,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "122",
+      "issue": "13",
+      "pages": null,
+      "cite_key": "wu2025-climate-meghan-freshwater-fish-china",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 2,
+      "title": "Global fishing patterns amplify human exposures to methylmercury",
+      "meta": "Models catch-weighted methylmercury for 1,774 marine species, showing fisheries economics favour large, long-lived apex predators that raise human methylmercury exposure.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2405898121",
+      "doi": "10.1073/pnas.2405898121",
+      "authors": "Li, Mi-Ling; Thackray, Colin P.; Lam, Vicky W. Y., et al.",
+      "year": 2024,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "121",
+      "issue": "40",
+      "pages": null,
+      "cite_key": "li2024-global-fisheries-mehg",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 3,
+      "title": "Risk-benefit assessment of mercury, lead, cadmium and arsenic in inland fish from Latvian lakes",
+      "meta": "Rusko et al., 2026. Survey of 460 wild fish across seven freshwater species finding methylmercury the dominant mercury form, with some samples exceeding the EU 0.5 mg/kg cap.",
+      "type": "Journal",
+      "href": "https://doi.org/10.3390/foods15091516"
+    },
+    {
+      "n": 4,
+      "title": "European Union maximum level for mercury in fish",
+      "meta": "European Union. A 0.5 mg/kg wet-weight mercury maximum applied to many fish species, which some wild inland samples exceed.",
+      "type": "Legislation"
+    },
+    {
+      "n": 5,
+      "title": "Aquaculture chain-of-custody certification frameworks (ASC, BAP, GlobalG.A.P. Aquaculture)",
+      "meta": "Aquaculture Stewardship Council, Best Aquaculture Practices, and GlobalG.A.P. Aquaculture. Traceability frameworks documenting farm, species, feed regime and harvest data from harvest through processing.",
+      "type": "Standard"
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — aquaculture vs wild contamination differential (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential"
+    }
   ]
 }

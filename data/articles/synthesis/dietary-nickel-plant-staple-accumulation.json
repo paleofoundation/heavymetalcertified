@@ -7,13 +7,34 @@
   "metals": ["Nickel"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["dietary nickel in food", "nickel in cocoa and chocolate", "nickel in oats and cereals", "nickel in legumes and nuts", "nickel tolerable daily intake", "nickel food certification", "EFSA nickel exposure"],
+  "published": "2026-08-10",
+  "keywords": [
+    "dietary nickel in food",
+    "nickel in cocoa and chocolate",
+    "nickel in oats and cereals",
+    "nickel in legumes and nuts",
+    "nickel tolerable daily intake",
+    "nickel food certification",
+    "EFSA nickel exposure"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation" },
-    { "label": "Nickel — analyte review", "href": "/analytes/nickel" },
-    { "label": "Chocolate standard", "href": "/standards/chocolate" },
-    { "label": "Breakfast cereal (non-rice) standard", "href": "/standards/breakfast-cereal-non-rice" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation"
+    },
+    {
+      "label": "Nickel — analyte review",
+      "href": "/analytes/nickel"
+    },
+    {
+      "label": "Chocolate standard",
+      "href": "/standards/chocolate"
+    },
+    {
+      "label": "Breakfast cereal (non-rice) standard",
+      "href": "/standards/breakfast-cereal-non-rice"
+    }
   ],
   "abstract": "Dietary nickel is not a contamination signal. It concentrates in a fixed, predictable set of plant staples — cocoa and chocolate, soybeans and other legumes, oats and whole-grain cereals, and peanuts and tree nuts — because those crops take nickel up from soil and store it in their seeds and grain fractions as ordinary physiology, so a multi-milligram-per-kilogram nickel result in cocoa or cashews is the commodity's botanical baseline, not evidence of pollution. Six independent datasets across four decades and five jurisdictions produce the same food ranking, and the European occurrence assessment found background diets reaching or exceeding the nickel tolerable daily intake for young children with no pollution source anywhere in the picture. The certification consequence is direct: nickel is a Tier-2 metal whose baseline is intrinsic to the crop, so a [nickel](/analytes/nickel) standard must reflect that intrinsic distribution, and a single nickel result cannot by itself be read as contamination. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +78,94 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Scientific opinion on dietary nickel exposure in the European population", "meta": "EFSA CONTAM Panel, 2015. Integrated 44,585 occurrence records from fifteen Member States; cocoa, soy, legumes, nuts and grains dominate nickel occurrence, and background exposure met or exceeded the 2.8 µg/kg bw/day tolerable daily intake for young age classes with no pollution source.", "type": "Government" },
-    { "n": 2, "title": "Nickel content of food and estimation of the dietary intake in the Danish diet", "meta": "Flyvholm et al., 1984. Compiled 2,221 food samples and modeled the Danish average diet, producing the same commodity ranking (cocoa, soy, walnuts, peanuts, oats) four decades before EFSA, with oatmeal the standout per-gram contributor.", "type": "Journal" },
-    { "n": 3, "title": "Nickel in cereal grains and cereal-based products on the Polish market", "meta": "Mania et al., 2020. Measured 56 Polish cereal products; whole and less-refined fractions carried the nickel (grains mean 1.16 mg/kg) while refined flour fell below the limit of quantification, and cereal grains supplied about 13 percent of the 2020 tolerable intake for adults.", "type": "Journal" },
-    { "n": 4, "title": "Cadmium, lead, chromium and nickel in nuts on the Polish market", "meta": "Ćwieląg-Drabek et al., 2025. Measured 69 nut samples; nickel was the most abundant of the four toxic elements, averaging 6.434 mg/kg in cashews and about 4 in peanuts, with a single peanut sample at 11.20 mg/kg.", "type": "Journal" },
-    { "n": 5, "title": "Nickel in muscle meat from official controls in Italy", "meta": "Manfredi et al., 2025. Measured 809 muscle-meat samples; means of 0.016 mg/kg (poultry), 0.010 (beef), and 0.009 (pork), with meat supplying under 1 percent of the nickel tolerable daily intake across all age groups.", "type": "Journal" },
-    { "n": 6, "title": "Nickel in a total-diet study of Zhejiang Province, China", "meta": "Han et al., 2024. Measured 2,628 food samples; beans were the clear outlier (mean 3.094 mg/kg, n=5), and children aged 0 to 6 were the only segment modeling an exceedance (21.57 µg/kg bw/day) under a high-concentration, high-consumption scenario.", "type": "Journal" },
-    { "n": 7, "title": "National food safety standard: maximum levels of contaminants in food (GB 2762-2022)", "meta": "China. Sets a 1 mg/kg nickel limit that all five bean samples in the Zhejiang total-diet study exceeded, illustrating a ceiling set below an intrinsic plant content.", "type": "Standard" },
-    { "n": 8, "title": "Heavy Metal Index — dietary nickel as an intrinsic plant-staple trait (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Scientific opinion on dietary nickel exposure in the European population",
+      "meta": "EFSA CONTAM Panel, 2015. Integrated 44,585 occurrence records from fifteen Member States; cocoa, soy, legumes, nuts and grains dominate nickel occurrence, and background exposure met or exceeded the 2.8 µg/kg bw/day tolerable daily intake for young age classes with no pollution source.",
+      "type": "Government"
+    },
+    {
+      "n": 2,
+      "title": "Nickel content of food and estimation of dietary intake",
+      "meta": "Compiled 2,221 food samples and modeled the Danish average diet, producing the same commodity ranking (cocoa, soy, walnuts, peanuts, oats) four decades before EFSA, with oatmeal the standout per-gram contributor.",
+      "type": "Journal",
+      "doi": "10.1007/BF01043419",
+      "href": "https://doi.org/10.1007/BF01043419",
+      "authors": "Flyvholm, Mari-Ann; Nielsen, Gitte Dalsgaard; Andersen, Allan",
+      "year": 1984,
+      "journal": "Zeitschrift f�r Lebensmittel-Untersuchung und -Forschung",
+      "volume": "179",
+      "issue": "6",
+      "pages": "427-431",
+      "cite_key": "flyvholm1984-nickel-content-food-dietary-intake",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Assessment of exposure to nickel intake with selected cereal grains and cereal-based products",
+      "meta": "Measured 56 Polish cereal products; whole and less-refined fractions carried the nickel (grains mean 1.16 mg/kg) while refined flour fell below the limit of quantification, and cereal grains supplied about 13 percent of the 2020 tolerable intake for adults.",
+      "type": "Journal",
+      "doi": "10.32394/rpzh.2020.0142",
+      "href": "https://doi.org/10.32394/rpzh.2020.0142",
+      "authors": "Mania, Monika; Rebeniak, Małgorzata; Orshulyak, Oksana, et al.",
+      "year": 2020,
+      "journal": "Roczniki Państwowego Zakładu Higieny",
+      "volume": "71",
+      "issue": "4",
+      "pages": "371-376",
+      "cite_key": "mania2020-nickel-cereal-grains-poland",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Cadmium, lead, chromium and nickel in nuts on the Polish market",
+      "meta": "Ćwieląg-Drabek et al., 2025. Measured 69 nut samples; nickel was the most abundant of the four toxic elements, averaging 6.434 mg/kg in cashews and about 4 in peanuts, with a single peanut sample at 11.20 mg/kg.",
+      "type": "Journal"
+    },
+    {
+      "n": 5,
+      "title": "Dietary exposure assessment to nickel through the consumption of poultry, beef, and pork meat for different age groups in the Italian population",
+      "meta": "Measured 809 muscle-meat samples; means of 0.016 mg/kg (poultry), 0.010 (beef), and 0.009 (pork), with meat supplying under 1 percent of the nickel tolerable daily intake across all age groups.",
+      "type": "Journal",
+      "doi": "10.4081/ijfs.2025.13840",
+      "href": "https://doi.org/10.4081/ijfs.2025.13840",
+      "authors": "Manfredi, Alessio; Varrà, Maria Olga; Zanardi, Emanuela, et al.",
+      "year": 2025,
+      "journal": "Italian Journal of Food Safety",
+      "volume": "14",
+      "issue": "4",
+      "pages": null,
+      "cite_key": "manfredi2025-nickel-meat-italy",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Occurrence and Exposure Assessment of Nickel in Zhejiang Province, China",
+      "meta": "Measured 2,628 food samples; beans were the clear outlier (mean 3.094 mg/kg, n=5), and children aged 0 to 6 were the only segment modeling an exceedance (21.57 µg/kg bw/day) under a high-concentration, high-consumption scenario.",
+      "type": "Journal",
+      "doi": "10.3390/toxics12030169",
+      "href": "https://doi.org/10.3390/toxics12030169",
+      "authors": "Han, Junde; Zhang, Ronghua; Tang, Jun, et al.",
+      "year": 2024,
+      "journal": "Toxics",
+      "volume": "12",
+      "issue": "3",
+      "pages": "169",
+      "cite_key": "han2024-nickel-zhejiang-china",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "National food safety standard: maximum levels of contaminants in food (GB 2762-2022)",
+      "meta": "China. Sets a 1 mg/kg nickel limit that all five bean samples in the Zhejiang total-diet study exceeded, illustrating a ceiling set below an intrinsic plant content.",
+      "type": "Standard"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — dietary nickel as an intrinsic plant-staple trait (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

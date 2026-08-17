@@ -7,13 +7,33 @@
   "metals": ["Lead", "Cadmium", "Mercury", "Arsenic"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["EU heavy metal limits", "EU 2023/915 maximum levels", "EC 1881/2006 contaminants", "EU food contaminants regulation timeline", "EU lead cadmium mercury limits", "heavy metal certification EU standard"],
+  "published": "2026-08-10",
+  "keywords": [
+    "EU heavy metal limits",
+    "EU 2023/915 maximum levels",
+    "EC 1881/2006 contaminants",
+    "EU food contaminants regulation timeline",
+    "EU lead cadmium mercury limits",
+    "heavy metal certification EU standard"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline" },
-    { "label": "EU 2023/915 — current framework", "href": "/regulations/eu-2023-915" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline"
+    },
+    {
+      "label": "EU 2023/915 — current framework",
+      "href": "/regulations/eu-2023-915"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    }
   ],
   "abstract": "The European Union's enforceable heavy-metal limits in food have evolved through six major regulations since 2001, each tightening existing caps, adding new analyte coverage, or recalibrating to updated science. The line runs from Commission Regulation (EC) No 466/2001, which first harmonized member-state limits, through the sixteen-year workhorse EC 1881/2006 and its amendments, to the consolidated Regulation (EU) 2023/915 that governs today. The direction of travel is one way: limits get stricter and categories get finer, never looser. For certification this matters because a standard whose default is the strictest maximum level set by a credible government regulator inherits the EU's trajectory whenever the EU is the strictest cell — the certification floor moves as the law moves. That is why the [Heavy Metal Certified](/regulations/eu-2023-915) limit tables are a living lookup keyed to the current instrument rather than a number fixed once and forgotten. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +77,54 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Commission Regulation (EC) No 466/2001 — original EU contaminants framework", "meta": "European Union. Effective March 2001, superseded December 2006. First EU-wide harmonized maximum levels for lead, cadmium, mercury and other contaminants, replacing member-state-specific limits.", "type": "Legislation" },
-    { "n": 2, "title": "Commission Regulation (EC) No 1881/2006 — omnibus contaminants regulation", "meta": "European Union. Effective March 2007, superseded May 2023. The load-bearing EU contaminants reference for sixteen years, amended repeatedly to tighten limits and add analytes.", "type": "Legislation" },
-    { "n": 3, "title": "Commission Regulation (EU) 2023/915 — current consolidated maximum levels", "meta": "European Union. Effective May 2023. Full recast superseding EC 1881/2006; most maximum levels carried forward unchanged in a structural reorganization.", "type": "Legislation" },
-    { "n": 4, "title": "Commission Regulation (EU) No 488/2014 — cadmium maximum levels amendment", "meta": "European Union, 2014. Tightened cadmium limits for cocoa, chocolate and infant cereal-based foods; source of the 0.010 mg/kg cap for cow-milk-based infant formula powder.", "type": "Legislation" },
-    { "n": 5, "title": "Commission Regulation (EU) 2015/1006 — inorganic arsenic in rice", "meta": "European Union, 2015. Introduced the EU's first food-specific inorganic-arsenic limits for rice and rice-based products, from 0.10 to 0.30 mg/kg by product type.", "type": "Legislation" },
-    { "n": 6, "title": "Commission Regulation (EU) 2021/1317 — lead maximum levels amendment", "meta": "European Union, 2021. Tightened lead limits across many matrices including infant foods; set the 0.020 mg/kg cap for processed cereal-based and baby foods. Companion instrument EU 2021/1323 did the same for cadmium in cereals.", "type": "Legislation" },
-    { "n": 7, "title": "Commission Regulation (EU) 2022/617 — mercury in fishery products", "meta": "European Union, 2022. Per-species mercury maximum levels for fishery products: 0.5 mg/kg general default, up to 1.0 mg/kg for listed predatory species. Remains the operative EU seafood-mercury framework.", "type": "Legislation" },
-    { "n": 8, "title": "Heavy Metal Index — EU regulatory framework timeline (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline", "meta": "The independent synthesis this analysis reframes, mapping all six EU instruments and carrying the full anchor-source regulation records.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Commission Regulation (EC) No 466/2001 — original EU contaminants framework",
+      "meta": "European Union. Effective March 2001, superseded December 2006. First EU-wide harmonized maximum levels for lead, cadmium, mercury and other contaminants, replacing member-state-specific limits.",
+      "type": "Legislation"
+    },
+    {
+      "n": 2,
+      "title": "Commission Regulation (EC) No 1881/2006 — omnibus contaminants regulation",
+      "meta": "European Union. Effective March 2007, superseded May 2023. The load-bearing EU contaminants reference for sixteen years, amended repeatedly to tighten limits and add analytes.",
+      "type": "Legislation"
+    },
+    {
+      "n": 3,
+      "title": "Commission Regulation (EU) 2023/915 — current consolidated maximum levels",
+      "meta": "European Union. Effective May 2023. Full recast superseding EC 1881/2006; most maximum levels carried forward unchanged in a structural reorganization.",
+      "type": "Legislation"
+    },
+    {
+      "n": 4,
+      "title": "Commission Regulation (EU) No 488/2014 — cadmium maximum levels amendment",
+      "meta": "European Union, 2014. Tightened cadmium limits for cocoa, chocolate and infant cereal-based foods; source of the 0.010 mg/kg cap for cow-milk-based infant formula powder.",
+      "type": "Legislation"
+    },
+    {
+      "n": 5,
+      "title": "Commission Regulation (EU) 2015/1006 — inorganic arsenic in rice",
+      "meta": "European Union, 2015. Introduced the EU's first food-specific inorganic-arsenic limits for rice and rice-based products, from 0.10 to 0.30 mg/kg by product type.",
+      "type": "Legislation"
+    },
+    {
+      "n": 6,
+      "title": "Commission Regulation (EU) 2021/1317 — lead maximum levels amendment",
+      "meta": "European Union, 2021. Tightened lead limits across many matrices including infant foods; set the 0.020 mg/kg cap for processed cereal-based and baby foods. Companion instrument EU 2021/1323 did the same for cadmium in cereals.",
+      "type": "Legislation"
+    },
+    {
+      "n": 7,
+      "title": "Commission Regulation (EU) 2022/617 — mercury in fishery products",
+      "meta": "European Union, 2022. Per-species mercury maximum levels for fishery products: 0.5 mg/kg general default, up to 1.0 mg/kg for listed predatory species. Remains the operative EU seafood-mercury framework.",
+      "type": "Legislation"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — EU regulatory framework timeline (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline",
+      "meta": "The independent synthesis this analysis reframes, mapping all six EU instruments and carrying the full anchor-source regulation records.",
+      "type": "Reference"
+    }
   ]
 }

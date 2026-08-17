@@ -7,13 +7,34 @@
   "metals": ["Lead", "Cadmium", "Chromium", "Nickel", "Arsenic"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["wastewater irrigation heavy metals", "heavy metals in leafy greens", "multi-metal contamination crops", "lead cadmium chromium nickel vegetables", "sewage effluent irrigation", "heavy metal panel certification", "peri-urban vegetable contamination"],
+  "published": "2026-08-10",
+  "keywords": [
+    "wastewater irrigation heavy metals",
+    "heavy metals in leafy greens",
+    "multi-metal contamination crops",
+    "lead cadmium chromium nickel vegetables",
+    "sewage effluent irrigation",
+    "heavy metal panel certification",
+    "peri-urban vegetable contamination"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Leafy-green (non-root vegetable) standard", "href": "/standards/non-root-vegetable-purees" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Leafy-green (non-root vegetable) standard",
+      "href": "/standards/non-root-vegetable-purees"
+    }
   ],
   "abstract": "Irrigating with untreated municipal wastewater or sewage-receiving effluent is a single upstream pathway that raises several heavy metals &mdash; lead, cadmium, total chromium and nickel &mdash; together in the same edible crop, and the co-elevation concentrates most strongly in [leafy greens](/standards/non-root-vegetable-purees) grown on peri-urban plots across the Global South. Five studies from Nigeria, Malawi, India, Burkina Faso and a thirteen-country lead meta-analysis converge on the same mechanism: because one water source carries the metals simultaneously, they co-vary in the crop, so a plot does not have a lead problem or a cadmium problem in isolation &mdash; it has a wastewater problem that surfaces as all of them at once. The certification consequence is direct: a single-analyte test on a wastewater-sourced leafy green characterises none of its co-elevated siblings, so the finished crop should be screened against a full multi-metal panel with irrigation provenance treated as a category-level risk descriptor. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,12 +82,98 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Meta-analysis of lead across the wastewater, irrigated soil and crop nexus", "meta": "Ali et al., 2022. PRISMA random-effects meta-analysis of 24 studies across 13 countries; half of untreated irrigation waters exceeded the 0.5 mg/L lead standard and edible-part lead exceeded WHO limits in every wastewater-grown crop, with heterogeneity of I-squared = 98 percent.", "type": "Journal" },
-    { "n": 2, "title": "Heavy metals and health risk in wastewater-irrigated spinach, Bauchi, Nigeria", "meta": "Adebayo et al., 2020. A single wastewater-grown African spinach sample carrying cadmium, total chromium, nickel and lead elevated together, with lead at 6.60 mg/kg above the 2.50 mg/kg comparison limit.", "type": "Journal" },
-    { "n": 3, "title": "Heavy-metal accumulation in wastewater-irrigated vegetables, Blantyre, Malawi", "meta": "Chiutula et al., 2025. 64 percent of vegetable samples exceeded the chromium limit and every species exceeded the lead limit, while the wastewater and soil read below limits at the sampling time.", "type": "Journal" },
-    { "n": 4, "title": "Uptake of arsenic by irrigated vegetables in a controlled greenhouse dose-response, Burkina Faso", "meta": "Clair-Caliot et al., 2021. A 168-pot arsenate-irrigation experiment isolating the water as the transfer vector; edible-part arsenic ranked leafy above root above fruit and pod vegetables.", "type": "Journal" },
-    { "n": 5, "title": "Heavy metals in soil and vegetables on wastewater-irrigated farmland, Hisar, India", "meta": "Pal et al., 2017. Spinach carried the highest cadmium and nickel and cabbage the highest lead on domestic-wastewater-irrigated farmland, reproducing the leafy multi-metal signal in a fourth country.", "type": "Journal" },
-    { "n": 6, "title": "WHO/FAO food and irrigation-water limits for lead, cadmium and chromium", "meta": "World Health Organization and Food and Agriculture Organization. Food comparison limits of cadmium 0.2, chromium 2.3 and lead 0.3 mg/kg dry weight, and the 0.5 mg/L lead irrigation-water standard cited across these studies.", "type": "Standard" },
-    { "n": 7, "title": "Heavy Metal Index — wastewater-irrigation multi-metal crop pathway (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus",
+      "meta": "PRISMA random-effects meta-analysis of 24 studies across 13 countries; half of untreated irrigation waters exceeded the 0.5 mg/L lead standard and edible-part lead exceeded WHO limits in every wastewater-grown crop, with heterogeneity of I-squared = 98 percent.",
+      "type": "Journal",
+      "doi": "10.3389/fpubh.2022.977721",
+      "href": "https://doi.org/10.3389/fpubh.2022.977721",
+      "authors": "Ali, Adane Sirage; Bayih, Argaw Ambelu; Gari, Sirak Robele",
+      "year": 2022,
+      "journal": "Frontiers in Public Health",
+      "volume": "10",
+      "issue": null,
+      "pages": null,
+      "cite_key": "ali2022-lead-wastewater-crops-meta",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Levels of heavy metals and their health risk assessment from wastewater irrigated spinach in railway quarters, Bauchi, Bauchi state, Nigeria",
+      "meta": "A single wastewater-grown African spinach sample carrying cadmium, total chromium, nickel and lead elevated together, with lead at 6.60 mg/kg above the 2.50 mg/kg comparison limit.",
+      "type": "Journal",
+      "doi": "10.33545/26646781.2020.v2.i2a.22",
+      "href": "https://doi.org/10.33545/26646781.2020.v2.i2a.22",
+      "authors": "Adebayo, RK; Hassan, UF; Adamu, HM, et al.",
+      "year": 2020,
+      "journal": "International Journal of Advanced Chemistry Research",
+      "volume": "2",
+      "issue": "2",
+      "pages": "12-17",
+      "cite_key": "adebayo2020-wastewater-irrigated-spinach",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Assessment of Heavy Metal Accumulation in Wastewater–Receiving Soil–Exotic and Indigenous Vegetable Systems and Its Potential Health Risks: A Case Study from Blantyre, Malawi",
+      "meta": "Chiutula et al., 2025. 64 percent of vegetable samples exceeded the chromium limit and every species exceeded the lead limit, while the wastewater and soil read below limits at the sampling time.",
+      "type": "Journal",
+      "doi": "10.3390/ijerph22111614",
+      "href": "https://doi.org/10.3390/ijerph22111614",
+      "authors": "Chiutula, Chimwemwe; Mtewa, Andrew G.; Abraham, Amon, et al.",
+      "year": 2025,
+      "journal": "International Journal of Environmental Research and Public Health",
+      "volume": "22",
+      "issue": "11",
+      "pages": "1614",
+      "cite_key": "chiutula2025-wastewater-vegetables-malawi",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Uptake of Arsenic by Irrigated Vegetables and Cooked Food Products in Burkina Faso",
+      "meta": "A 168-pot arsenate-irrigation experiment isolating the water as the transfer vector; edible-part arsenic ranked leafy above root above fruit and pod vegetables.",
+      "type": "Journal",
+      "doi": "10.3389/frwa.2021.667308",
+      "href": "https://doi.org/10.3389/frwa.2021.667308",
+      "authors": "Clair-Caliot, Guillaume; Marks, Sara J.; Hug, Stephan J., et al.",
+      "year": 2021,
+      "journal": "Frontiers in Water",
+      "volume": "3",
+      "issue": null,
+      "pages": null,
+      "cite_key": "clair-caliot2021-arsenic-irrigated-vegetables-burkina",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "HEAVY METALS IN SOIL AND VEGETABLES AND THEIR EFFECT ON HEALTH",
+      "meta": "Spinach carried the highest cadmium and nickel and cabbage the highest lead on domestic-wastewater-irrigated farmland, reproducing the leafy multi-metal signal in a fourth country.",
+      "type": "Journal",
+      "doi": "10.29121/IJOEST.v2.i1.2017.03",
+      "href": "https://doi.org/10.29121/IJOEST.v2.i1.2017.03",
+      "authors": "Pal, Jitender",
+      "year": 2019,
+      "journal": "International Journal of Engineering Science Technologies",
+      "volume": "2",
+      "issue": "1",
+      "pages": "17-27",
+      "cite_key": "pal2017-wastewater-vegetables-heavy-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "WHO/FAO food and irrigation-water limits for lead, cadmium and chromium",
+      "meta": "World Health Organization and Food and Agriculture Organization. Food comparison limits of cadmium 0.2, chromium 2.3 and lead 0.3 mg/kg dry weight, and the 0.5 mg/L lead irrigation-water standard cited across these studies.",
+      "type": "Standard"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — wastewater-irrigation multi-metal crop pathway (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

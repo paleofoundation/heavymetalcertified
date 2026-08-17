@@ -7,13 +7,33 @@
   "metals": ["Cadmium", "Lead"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["cadmium in shellfish", "cadmium in mussels", "cadmium in oysters", "bivalve cadmium limit", "shellfish heavy metal certification", "EU cadmium limit shellfish"],
+  "published": "2026-08-10",
+  "keywords": [
+    "cadmium in shellfish",
+    "cadmium in mussels",
+    "cadmium in oysters",
+    "bivalve cadmium limit",
+    "shellfish heavy metal certification",
+    "EU cadmium limit shellfish"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Shellfish standard", "href": "/standards/shellfish" },
-    { "label": "Cephalopods standard", "href": "/standards/cephalopods" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Shellfish standard",
+      "href": "/standards/shellfish"
+    },
+    {
+      "label": "Cephalopods standard",
+      "href": "/standards/cephalopods"
+    }
   ],
   "abstract": "Cadmium concentrations in bivalve molluscs — mussels, clams, oysters, scallops — run one to two orders of magnitude higher than cadmium in fish muscle taken from the same waters. The cause is not contamination but biology: bivalves filter hundreds of litres of seawater a day and concentrate dissolved and particle-bound cadmium into soft tissue that has no route to excrete it. Because the bivalve and finfish distributions are separated by a factor of ten to a hundred, a single cadmium threshold applied across all seafood is not scientifically supportable — it would either exclude nearly every clean bivalve or wave through finfish that should be flagged. The honest instrument is a per-subcategory ceiling built on the bivalve-specific evidence, which is exactly how EU law and the [Heavy Metal Certified](/standards/shellfish) shellfish standard are structured. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,12 +77,88 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Single-particle ICP-MS characterisation of cadmium nanoparticle forms in mussels", "meta": "Bao et al., 2024. Distinguishes nanoparticle-bound from dissolved cadmium in mussel tissue; a load-bearing distinction because bioavailability differs by form.", "type": "Journal" },
-    { "n": 2, "title": "Trace metals in mussels and clams of Faro Lake, Sicily", "meta": "Bruno et al., 2024. Lagoon mussel and clam cadmium values approaching the EU bivalve cap in specific sub-locations.", "type": "Journal" },
-    { "n": 3, "title": "Heavy metals in Mediterranean mussels and consumer health risk", "meta": "Dogruyol et al., 2024. Mediterranean mussel survey reporting cadmium at consumer-relevant concentrations for weekly-intake risk modelling.", "type": "Journal" },
-    { "n": 4, "title": "Cadmium and mercury transfer in an Arctic marine food web", "meta": "Rohonczy et al., 2024. Species-level accumulation showing why pooled shellfish means hide the high-cadmium tail.", "type": "Journal" },
-    { "n": 5, "title": "Mercury and trace metals in Portuguese coastal seafood", "meta": "Cardoso et al., 2023. Coastal finfish cadmium typically below the EU 0.05 mg/kg fin-fish maximum, fixing the finfish reference distribution.", "type": "Journal" },
-    { "n": 6, "title": "Maximum levels for cadmium in bivalve molluscs and cephalopods", "meta": "European Union. Commission Regulation (EU) 2023/915. 1.0 mg/kg for bivalves and cephalopods without viscera; 0.05 mg/kg default for fish muscle.", "type": "Legislation" },
-    { "n": 7, "title": "Heavy Metal Index — bivalve cadmium amplification (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification", "meta": "The independent literature synthesis this analysis reframes, with every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Single-particle ICP-MS characterisation of cadmium nanoparticle forms in mussels",
+      "meta": "Bao et al., 2024. Distinguishes nanoparticle-bound from dissolved cadmium in mussel tissue; a load-bearing distinction because bioavailability differs by form.",
+      "type": "Journal"
+    },
+    {
+      "n": 2,
+      "title": "Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health",
+      "meta": "Lagoon mussel and clam cadmium values approaching the EU bivalve cap in specific sub-locations.",
+      "type": "Journal",
+      "doi": "10.3389/ftox.2024.1494977",
+      "href": "https://doi.org/10.3389/ftox.2024.1494977",
+      "authors": "Bruno, Fabio; Nava, Vincenzo; Zappalà, Sebastiano, et al.",
+      "year": 2024,
+      "journal": "Frontiers in Toxicology",
+      "volume": "6",
+      "issue": null,
+      "pages": null,
+      "cite_key": "bruno2024-metals-mussels-clams-faro-lake-sicily",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria",
+      "meta": "Mediterranean mussel survey reporting cadmium at consumer-relevant concentrations for weekly-intake risk modelling.",
+      "type": "Journal",
+      "doi": "10.1007/s12011-024-04084-w",
+      "href": "https://doi.org/10.1007/s12011-024-04084-w",
+      "authors": "Dogruyol, Hande; Mol, Suhendan; Ulusoy, Şafak, et al.",
+      "year": 2024,
+      "journal": "Biological Trace Element Research",
+      "volume": "202",
+      "issue": "11",
+      "pages": "5177-5189",
+      "cite_key": "dogruyol2024-mediterranean-mussels-health-risk",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada",
+      "meta": "Species-level accumulation showing why pooled shellfish means hide the high-cadmium tail.",
+      "type": "Journal",
+      "doi": "10.1007/s11356-024-32268-3",
+      "href": "https://doi.org/10.1007/s11356-024-32268-3",
+      "authors": "Rohonczy, Jillian; Chételat, John; Robinson, Stacey A., et al.",
+      "year": 2024,
+      "journal": "Environmental Science and Pollution Research",
+      "volume": "31",
+      "issue": "13",
+      "pages": "20586-20600",
+      "cite_key": "rohonczy2024-arctic-foodweb-cd-hg",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 5,
+      "title": "Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment",
+      "meta": "Coastal finfish cadmium typically below the EU 0.05 mg/kg fin-fish maximum, fixing the finfish reference distribution.",
+      "type": "Journal",
+      "doi": "10.1007/s11356-023-29495-5",
+      "href": "https://doi.org/10.1007/s11356-023-29495-5",
+      "authors": "Cardoso, Patrícia Gonçalves; Morais, Hugo; Crespo, Daniel, et al.",
+      "year": 2023,
+      "journal": "Environmental Science and Pollution Research",
+      "volume": "30",
+      "issue": "45",
+      "pages": "101121-101132",
+      "cite_key": "cardoso2023-mercury-portuguese-coast-seafood",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Maximum levels for cadmium in bivalve molluscs and cephalopods",
+      "meta": "European Union. Commission Regulation (EU) 2023/915. 1.0 mg/kg for bivalves and cephalopods without viscera; 0.05 mg/kg default for fish muscle.",
+      "type": "Legislation"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — bivalve cadmium amplification (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification",
+      "meta": "The independent literature synthesis this analysis reframes, with every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }
