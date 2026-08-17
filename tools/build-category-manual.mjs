@@ -8,6 +8,7 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { renderStruggleSection } from "./lib/struggle-section.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -15,6 +16,7 @@ const DOC = JSON.parse(fs.readFileSync(path.join(REPO, args.get("pages")), "utf8
 const META = DOC._meta
 const COMPILED = path.join(REPO, "data/standards", META.compiled_dir)
 const OUT = path.join(REPO, `content/manuals/${META.manual_slug}.md`)
+const OCC = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/occurrence-evidence.json"), "utf8"))
 
 const SHORT = { Pb: "Pb", iAs: "iAs", tAs: "tAs", tHg: "Hg", MeHg: "MeHg", Cd: "Cd", Cr: "Cr", "Cr-VI": "Cr-VI", Ni: "Ni", Sn: "Sn", Al: "Al" }
 const PANEL = META.panel
@@ -64,6 +66,11 @@ const fm = [
   "---",
 ].join("\n")
 
+const struggleSection = renderStruggleSection({
+  compiledDir: COMPILED, occurrence: OCC, categoryDirName: META.compiled_dir,
+  categoryName: META.category_name, LINK, ACCENT,
+})
+
 const body = `
 <section style="margin-bottom:44px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 14px">${META.category_name} — HMTc Program Manual</h1>
 <p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 14px">The complete Heavy Metal Tested &amp; Certified standard for Category&nbsp;${META.category}, ${META.category_name}, edition 2026. Every limit on every subcategory is the strictest maximum level set by any credible government worldwide, converted to the product&rsquo;s native basis, with a disclosed read-across from the nearest government value where no government regulates the exact product. Nothing is invented; every number traces to a named sovereign limit in the <a href="/regulations" style="color:${LINK};text-decoration:none">regulation references</a>.</p>
@@ -72,6 +79,9 @@ const body = `
 <section style="margin-bottom:44px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">Master limit matrix — all ${numWord} subcategories</h2>
 <p style="font-size:11.5px;color:#a9a1a1;margin:0 0 12px">All values ppb (µg/kg) in each row&rsquo;s native basis. Click any subcategory for its full government-by-government derivation. <span style="font-weight:500">n/m</span> = not material in the matrix; controlled by screen or reflex speciation, not a number.</p>
 ${matrix}</section>
+
+${struggleSection}
+
 
 <section style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">About this edition</h2>
 <p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. A consolidated, version-pinned PDF of the full manual is in preparation and will be linked here on release; until then each subcategory page is individually citable.</p>
