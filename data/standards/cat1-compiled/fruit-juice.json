@@ -107,17 +107,12 @@
       },
       "iAs": {
         "type": "gov",
-        "value": 10,
-        "value_exact": 10,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2023_ias_apple_juice_10",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_ias_fruit_juice_20",
         "basis_note": "face value",
         "per_country": {
-          "US": {
-            "value": 10,
-            "converted": true,
-            "id": "fda2023_ias_apple_juice_10"
-          },
           "EU": {
             "value": 20,
             "converted": true,

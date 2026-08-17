@@ -30,7 +30,7 @@ const ACCENT = "#9f2727", LINK = "#1c43ad"
 
 const th = (t) => `<th style="text-align:${t.a || "right"};padding:9px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.06em">${t.t}</th>`
 
-// The nine subcategory rows + eight display values each, from the shared lib — the same arrays the
+// The nine subcategory rows + nine display values each, from the shared lib — the same arrays the
 // PDF renders, so the download can never drift from this table.
 const rows = masterMatrix()
 let bodyRows = ""
@@ -76,7 +76,7 @@ const fm = [
 const body = `
 <section style="margin-bottom:44px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 14px">Infant and Child Foods — HMTc Program Manual</h1>
 <p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 14px">The complete Heavy Metal Tested &amp; Certified standard for Category&nbsp;1, Infant and Child Foods (ages 0–5), edition 2026. Every limit on every subcategory is the strictest maximum level set by any credible government worldwide, converted to the product&rsquo;s native basis, with a disclosed read-across from the nearest government value where no government regulates the exact product. Nothing is invented; every number traces to a named sovereign limit in the <a href="/regulations" style="color:${LINK};text-decoration:none">regulation references</a>.</p>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 18px">Method: <a href="/program/structure" style="color:${LINK};text-decoration:none">government-limit default (Method v2.0)</a>. The 8:1 powder-to-liquid basis conversion applies only within infant formula; every other subcategory takes government limits at face value. Tier&nbsp;1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier&nbsp;2 (Ni, Al, Sn, Cr) carry the program&rsquo;s 150% transitional allowance. Where an analyte is not regulated for a product and is not material in that matrix, it is controlled — total-chromium screening with reflex hexavalent-chromium speciation, any quantifiable Cr(VI) a hard fail — rather than assigned an invented number.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 18px">Method: <a href="/program/structure" style="color:${LINK};text-decoration:none">government-limit default (Method v2.0)</a>. The 8:1 powder-to-liquid basis conversion applies only within infant formula; every other subcategory takes government limits at face value. Tier&nbsp;1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier&nbsp;2 (tAs, Ni, Al, Sn, Cr) carry the program&rsquo;s 150% transitional allowance. Arsenic is limited in both forms — total arsenic (tAs) and inorganic arsenic (iAs) are separate ceilings that must both be met, and the species result never replaces the parent total. Where an analyte is not regulated for a product and is not material in that matrix, it is controlled — total-chromium screening with reflex hexavalent-chromium speciation, any quantifiable Cr(VI) a hard fail — rather than assigned an invented number.</p>
 ${downloadBlock}</section>
 
 <section style="margin-bottom:44px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">Master limit matrix — all nine subcategories</h2>

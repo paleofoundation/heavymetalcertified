@@ -9,15 +9,10 @@
         "type": "gov",
         "value": 10,
         "value_exact": 10,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2025_pb_baby_food_10",
+        "binding_jurisdiction": "BR",
+        "binding_id": "br_pb_other-foods-specially-formulated-for-inf_10",
         "basis_note": "face value",
         "per_country": {
-          "US": {
-            "value": 10,
-            "converted": true,
-            "id": "fda2025_pb_baby_food_10"
-          },
           "EU": {
             "value": 20,
             "converted": true,
@@ -37,6 +32,11 @@
             "value": 200,
             "converted": true,
             "id": "sg_foodregs_2026_baby_food_pb_200"
+          },
+          "BR": {
+            "value": 10,
+            "converted": false,
+            "id": "br_pb_other-foods-specially-formulated-for-inf_10"
           }
         }
       },

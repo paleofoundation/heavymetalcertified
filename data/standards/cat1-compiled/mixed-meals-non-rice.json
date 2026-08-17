@@ -9,24 +9,19 @@
         "type": "gov",
         "value": 10,
         "value_exact": 10,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2025_pb_baby_food_10",
+        "binding_jurisdiction": "BR",
+        "binding_id": "br_pb_other-foods-specially-formulated-for-inf_10",
         "basis_note": "face value",
         "per_country": {
-          "US": {
-            "value": 10,
-            "converted": true,
-            "id": "fda2025_pb_baby_food_10"
-          },
           "CODEX": {
             "value": 20,
             "converted": true,
             "id": "codex_pb_cereal-based-foods-for-infants-and-young_20"
           },
           "BR": {
-            "value": 20,
-            "converted": true,
-            "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
+            "value": 10,
+            "converted": false,
+            "id": "br_pb_other-foods-specially-formulated-for-inf_10"
           },
           "HK": {
             "value": 20,
