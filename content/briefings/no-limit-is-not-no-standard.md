@@ -9,7 +9,7 @@ author: "Karen Pendergrass"
 orcid: 0000-0002-2348-7259
 briefing_date: "August 2026"
 updated: "August 2026"
-scholar_eligible: true
+scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier, educator]
 snapshot:
   - { k: "Topic", v: "Peptides, SARMs, research chemicals (Category 26)" }

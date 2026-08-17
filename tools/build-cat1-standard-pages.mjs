@@ -157,7 +157,8 @@ for (const page of PAGES.pages) {
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
     "effective_date: 2026-08-06",
-    "scholar_eligible: true",
+    // Normative certification specification, not a scholarly work (2026-08-17).
+    "scholar_eligible: false",
     `cert_doi: ${certDoi ? JSON.stringify(certDoi) : "null"}`,
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "rail_box:",

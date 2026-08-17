@@ -13,7 +13,7 @@ standard_version: "1.1 (2026-08-14)"
 methodology_version: "Method v2.0 — government-limit default (route-split sovereign cannabis action levels; CLAUDE.md Part 19)"
 variant_type: whole_row_platform
 effective_date: 2026-08-14
-scholar_eligible: true
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
