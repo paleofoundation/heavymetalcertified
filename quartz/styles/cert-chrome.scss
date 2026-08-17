@@ -298,21 +298,59 @@ header.hmi-topnav-shell::after {
 
 // Mega-menu panel — drop below the full-width header (v3 71–95)
 @media (min-width: 1200px) {
+// The drawer is capped to the space between the bar and the bottom of the
+// window and scrolls internally past that. Without the cap it grows to its
+// content: the Standards panel reached 1053px against a 900px window, putting
+// the last group's entries below the fold with no way to reach them, since an
+// absolutely-positioned drawer neither scrolls itself nor extends the page.
+// This is a standing guarantee rather than a fix sized to today's taxonomy —
+// the panel grows every time a category publishes.
 .hmtc-nav .hmi-nav-panel {
   position: absolute;
   left: 0;
   right: 0;
   top: 70px;
+  // The panel's top edge sits 102px below the window: a 32px rule above
+  // .hmtc-bar plus this rule's own 70px. Subtracting 130px keeps the bottom
+  // edge clear of the window rather than flush against it, and stays correct
+  // if the bar is ever measured from a different origin.
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  // Reserve the scrollbar gutter whether or not the panel scrolls. Without it
+  // the column count and the scrollbar feed each other: a scrollbar narrows the
+  // grid, the narrower grid drops a column, the extra row makes the panel tall
+  // enough to need the scrollbar. Both states are self-consistent, so which one
+  // renders comes down to layout order.
+  scrollbar-gutter: stable;
   background: #fffdfb;
   border-bottom: 1px solid #e8e1db;
   box-shadow: 0 22px 44px -24px rgba(120, 30, 30, 0.26);
   visibility: hidden;
   z-index: 79;
 }
-.hmtc-nav .hmi-nav-item:hover .hmi-nav-panel,
-.hmtc-nav .hmi-nav-panel.is-open {
-  visibility: visible !important;
-  opacity: 1 !important;
+
+// Opened by the script, which puts `is-open` on the item (never on the panel).
+// The previous `.hmi-nav-panel.is-open` matched nothing, so hover was the only
+// working path and topNav.inline.ts's hover intent, Escape and arrow keys were
+// all inert. The hover fallback is now gated the same way topNav.scss gates
+// its own — off once the script boots, and only where hovering is real — so a
+// pointer crossing the bar no longer flashes every panel on its way past.
+.hmtc-nav .hmi-nav-item.is-open > .hmi-nav-panel {
+  visibility: visible;
+  opacity: 1;
+}
+// `.hmtc-nav` and `.hmi-nav` are the same <nav>, so these are compound, not
+// descendant, selectors.
+.hmtc-nav.hmi-nav:not(.hmi-nav--js) .hmi-nav-item:focus-within > .hmi-nav-panel {
+  visibility: visible;
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hmtc-nav.hmi-nav:not(.hmi-nav--js) .hmi-nav-item:hover > .hmi-nav-panel {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .hmtc-nav .hmi-nav-panel-inner {
   max-width: 1760px;
@@ -325,10 +363,23 @@ header.hmi-topnav-shell::after {
 .hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
 .hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
 .hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
+// Groups lay out across the available width rather than in a fixed three, so a
+// panel with more groups than fit in one row is what makes the drawer tall.
+// Standards has five; at three per row it wrapped to a second row and that row
+// was the part that fell off the bottom of the window. `auto-fit` keeps every
+// group on one row wherever the width allows and drops to fewer columns when it
+// does not, with the panel's own max-height as the backstop.
 .hmtc-nav .hmi-nav-cols {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  // 160px rather than 170px so the five Standards groups still fit on one row
+  // once the reserved scrollbar gutter is taken out of the available width.
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px 36px;
+  align-items: start;
+  // topNav.scss caps this at 46rem for the index site's two-column panels.
+  // Left standing it holds the grid to three columns however wide the drawer
+  // is, which is what forced Standards' five groups onto a second row.
+  max-width: none;
 }
 .hmtc-nav .hmi-nav-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .hmtc-nav .hmi-nav-colhead {
