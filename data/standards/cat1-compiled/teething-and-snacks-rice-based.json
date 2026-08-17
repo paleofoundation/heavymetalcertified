@@ -66,18 +66,14 @@
         }
       },
       "iAs": {
-        "type": "gov",
-        "value": 100,
-        "value_exact": 100,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2020_ias_infant_rice_cereal_100",
-        "basis_note": "face value",
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "source_id": "eu2023_ias_babyfood_20",
+        "source_jurisdiction": "EU",
+        "label": "Held to the strictest sovereign infant inorganic-arsenic ceiling: EU baby-food iAs 20 (Regulation (EU) 2023/915 point 3.4.3), adopted as a protective read-across across the HMTc Infant and Child Foods category (ages 0-5). EU's 'baby food' term is drafted narrowly (Directive 2006/125/EC excludes processed cereal-based food, and the limit is set for infants up to 24 months); HMTc applies the tightest sovereign inorganic-arsenic number to every food in this 0-5 category. Total arsenic is separately capped at 50 (India FSSAI); iAs <= tAs.",
+        "basis_note": "protective read-across (category-wide infant iAs floor)",
         "per_country": {
-          "US": {
-            "value": 100,
-            "converted": true,
-            "id": "fda2020_ias_infant_rice_cereal_100"
-          },
           "CA": {
             "value": 100,
             "converted": true,
@@ -99,9 +95,9 @@
             "id": "il_fcs2016_ias_5_2_1_rice_used_for_production_of_food_for_infants_and_tod_100"
           },
           "EU": {
-            "value": 150,
-            "converted": true,
-            "id": "eu2023_ias_rice_milled_150"
+            "value": 20,
+            "converted": false,
+            "id": "eu2023_ias_babyfood_20"
           },
           "BR": {
             "value": 150,

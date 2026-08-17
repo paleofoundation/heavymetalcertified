@@ -6,8 +6,8 @@
   "unit": "ppb (µg/kg)",
   "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
   "standard_version": "2.2 (2026-06-09)",
-  "generated_at": "2026-08-17T12:38:28.847Z",
-  "generated_commit": "e5bf7de76f6e6cc5671d0097506ab2ac1241b6d0",
+  "generated_at": "2026-08-17T15:04:49.313Z",
+  "generated_commit": "41bb065e5fa00d83f4ca15983d4b7c6eda92a3d6",
   "license": {
     "terms": "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
     "attribution": "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite the standard's page_url and standard_version.",
@@ -95,41 +95,14 @@
             },
             "iAs": {
               "status": "published",
-              "value_ppb": 100,
-              "value_exact_ppb": 100,
+              "value_ppb": 20,
+              "value_exact_ppb": 20,
               "native_basis": "as_sold",
-              "basis_note": "face value",
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2020_ias_infant_rice_cereal_100",
-              "per_country": {
-                "US": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "fda2020_ias_infant_rice_cereal_100"
-                },
-                "CA": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "ca_ias_rice-based-foods-intended-specifically-f_100"
-                },
-                "KR": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-                },
-                "BR": {
-                  "value": 150,
-                  "converted": true,
-                  "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
-                },
-                "CN": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
-                }
-              }
+              "basis_note": "protective read-across (category-wide infant iAs floor)",
+              "control_basis": "government-read-across",
+              "rationale": "Held to the strictest sovereign infant inorganic-arsenic ceiling: EU baby-food iAs 20 (Regulation (EU) 2023/915 point 3.4.3), adopted as a protective read-across across the HMTc Infant and Child Foods category (ages 0-5). EU's 'baby food' term is drafted narrowly (Directive 2006/125/EC excludes processed cereal-based food, and the limit is set for infants up to 24 months); HMTc applies the tightest sovereign inorganic-arsenic number to every food in this 0-5 category. Total arsenic is separately capped at 50 (India FSSAI); iAs <= tAs.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_ias_babyfood_20"
             },
             "tAs": {
               "status": "published",
@@ -358,33 +331,11 @@
               "value_ppb": 20,
               "value_exact_ppb": 20,
               "native_basis": "as_sold",
-              "basis_note": "face value",
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "basis_note": "protective read-across (category-wide infant iAs floor)",
+              "control_basis": "government-read-across",
+              "rationale": "Held to the strictest sovereign infant inorganic-arsenic ceiling: EU baby-food iAs 20 (Regulation (EU) 2023/915 point 3.4.3), adopted as a protective read-across across the HMTc Infant and Child Foods category (ages 0-5). EU's 'baby food' term is drafted narrowly (Directive 2006/125/EC excludes processed cereal-based food, and the limit is set for infants up to 24 months); HMTc applies the tightest sovereign inorganic-arsenic number to every food in this 0-5 category. Total arsenic is separately capped at 50 (India FSSAI); iAs <= tAs.",
               "controlling_jurisdiction": "EU",
-              "controlling_instrument": "eu2023_ias_babyfood_20",
-              "per_country": {
-                "EU": {
-                  "value": 20,
-                  "converted": true,
-                  "id": "eu2023_ias_babyfood_20"
-                },
-                "KR": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-                },
-                "BR": {
-                  "value": 150,
-                  "converted": true,
-                  "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
-                },
-                "CN": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
-                }
-              }
+              "controlling_instrument": "eu2023_ias_babyfood_20"
             },
             "tAs": {
               "status": "published",
@@ -670,20 +621,15 @@
             },
             "iAs": {
               "status": "published",
-              "value_ppb": 10,
-              "value_exact_ppb": 10,
+              "value_ppb": 20,
+              "value_exact_ppb": 20,
               "native_basis": "as_consumed",
               "basis_note": "face value",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2023_ias_apple_juice_10",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_ias_fruit_juice_20",
               "per_country": {
-                "US": {
-                  "value": 10,
-                  "converted": true,
-                  "id": "fda2023_ias_apple_juice_10"
-                },
                 "EU": {
                   "value": 20,
                   "converted": true,
@@ -841,14 +787,9 @@
               "basis_note": "face value",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2025_pb_baby_food_10",
+              "controlling_jurisdiction": "PA",
+              "controlling_instrument": "pa_decreto467_2007_pb_fruits",
               "per_country": {
-                "US": {
-                  "value": 10,
-                  "converted": true,
-                  "id": "fda2025_pb_baby_food_10"
-                },
                 "PA": {
                   "value": 10,
                   "converted": true,
@@ -1577,19 +1518,19 @@
             },
             "Cd": {
               "status": "published",
-              "value_ppb": 10,
-              "value_exact_ppb": 10,
+              "value_ppb": 20,
+              "value_exact_ppb": 20,
               "native_basis": "as_sold",
               "basis_note": "same basis",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "IL",
-              "controlling_instrument": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_cd_formula_soy_powder_20",
               "per_country": {
                 "IL": {
-                  "value": 10,
+                  "value": 20,
                   "converted": false,
-                  "id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10"
+                  "id": "il_fcs2016_cd_14_3_infant_and_toddler_formulas_from_soy_or_containing_s_20"
                 },
                 "EU": {
                   "value": 20,
@@ -1910,7 +1851,7 @@
                 },
                 "IN": {
                   "value": 100,
-                  "converted": true,
+                  "converted": false,
                   "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
                 }
               }
@@ -1957,7 +1898,7 @@
               "per_country": {
                 "IN": {
                   "value": 5000,
-                  "converted": true,
+                  "converted": false,
                   "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
                 }
               }
@@ -2149,19 +2090,19 @@
             },
             "Cd": {
               "status": "published",
-              "value_ppb": 5,
-              "value_exact_ppb": 5,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "same basis",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "IL",
-              "controlling_instrument": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_cd_formula_soy_liquid_10",
               "per_country": {
                 "IL": {
-                  "value": 5,
+                  "value": 10,
                   "converted": false,
-                  "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+                  "id": "il_fcs2016_cd_14_2_infant_and_toddler_formulas_from_soy_or_containing_s_10"
                 },
                 "EU": {
                   "value": 10,
@@ -2185,7 +2126,7 @@
                 },
                 "IN": {
                   "value": 100,
-                  "converted": true,
+                  "converted": false,
                   "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
                 }
               }
@@ -2232,7 +2173,7 @@
               "per_country": {
                 "IN": {
                   "value": 5000,
-                  "converted": true,
+                  "converted": false,
                   "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
                 }
               }
@@ -2285,23 +2226,18 @@
               "basis_note": "face value",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2025_pb_baby_food_10",
+              "controlling_jurisdiction": "BR",
+              "controlling_instrument": "br_pb_other-foods-specially-formulated-for-inf_10",
               "per_country": {
-                "US": {
-                  "value": 10,
-                  "converted": true,
-                  "id": "fda2025_pb_baby_food_10"
-                },
                 "CODEX": {
                   "value": 20,
                   "converted": true,
                   "id": "codex_pb_cereal-based-foods-for-infants-and-young_20"
                 },
                 "BR": {
-                  "value": 20,
-                  "converted": true,
-                  "id": "br_pb_cereal-based-foods-for-infant-young-chil_20"
+                  "value": 10,
+                  "converted": false,
+                  "id": "br_pb_other-foods-specially-formulated-for-inf_10"
                 },
                 "HK": {
                   "value": 20,
@@ -2552,14 +2488,9 @@
               "basis_note": "face value",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2025_pb_baby_food_10",
+              "controlling_jurisdiction": "BR",
+              "controlling_instrument": "br_pb_other-foods-specially-formulated-for-inf_10",
               "per_country": {
-                "US": {
-                  "value": 10,
-                  "converted": true,
-                  "id": "fda2025_pb_baby_food_10"
-                },
                 "EU": {
                   "value": 20,
                   "converted": true,
@@ -2579,6 +2510,11 @@
                   "value": 200,
                   "converted": true,
                   "id": "sg_foodregs_2026_baby_food_pb_200"
+                },
+                "BR": {
+                  "value": 10,
+                  "converted": false,
+                  "id": "br_pb_other-foods-specially-formulated-for-inf_10"
                 }
               }
             },
@@ -3035,76 +2971,14 @@
             },
             "iAs": {
               "status": "published",
-              "value_ppb": 100,
-              "value_exact_ppb": 100,
+              "value_ppb": 20,
+              "value_exact_ppb": 20,
               "native_basis": "as_sold",
-              "basis_note": "face value",
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "US",
-              "controlling_instrument": "fda2020_ias_infant_rice_cereal_100",
-              "per_country": {
-                "US": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "fda2020_ias_infant_rice_cereal_100"
-                },
-                "CA": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "ca_ias_rice-based-foods-intended-specifically-f_100"
-                },
-                "GSO": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "gso193_2021_ias_rice_for_baby_and_infant_food_100"
-                },
-                "KR": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-                },
-                "IL": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "il_fcs2016_ias_5_2_1_rice_used_for_production_of_food_for_infants_and_tod_100"
-                },
-                "EU": {
-                  "value": 150,
-                  "converted": true,
-                  "id": "eu2023_ias_rice_milled_150"
-                },
-                "BR": {
-                  "value": 150,
-                  "converted": true,
-                  "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
-                },
-                "CN": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
-                },
-                "TH": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "th_moph414_2020_ias_polished_rice_200"
-                },
-                "SG": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "sg_foodregs_2026_polished_rice_ias_200"
-                },
-                "PH": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "ph_pns194_2017_polished_rice_ias_200"
-                },
-                "HK": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "hk_cap132v_ias_polished-rice_200"
-                }
-              }
+              "basis_note": "protective read-across (category-wide infant iAs floor)",
+              "control_basis": "government-read-across",
+              "rationale": "Held to the strictest sovereign infant inorganic-arsenic ceiling: EU baby-food iAs 20 (Regulation (EU) 2023/915 point 3.4.3), adopted as a protective read-across across the HMTc Infant and Child Foods category (ages 0-5). EU's 'baby food' term is drafted narrowly (Directive 2006/125/EC excludes processed cereal-based food, and the limit is set for infants up to 24 months); HMTc applies the tightest sovereign inorganic-arsenic number to every food in this 0-5 category. Total arsenic is separately capped at 50 (India FSSAI); iAs <= tAs.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_ias_babyfood_20"
             },
             "tAs": {
               "status": "published",
@@ -3368,33 +3242,11 @@
               "value_ppb": 20,
               "value_exact_ppb": 20,
               "native_basis": "as_sold",
-              "basis_note": "face value",
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "basis_note": "protective read-across (category-wide infant iAs floor)",
+              "control_basis": "government-read-across",
+              "rationale": "Held to the strictest sovereign infant inorganic-arsenic ceiling: EU baby-food iAs 20 (Regulation (EU) 2023/915 point 3.4.3), adopted as a protective read-across across the HMTc Infant and Child Foods category (ages 0-5). EU's 'baby food' term is drafted narrowly (Directive 2006/125/EC excludes processed cereal-based food, and the limit is set for infants up to 24 months); HMTc applies the tightest sovereign inorganic-arsenic number to every food in this 0-5 category. Total arsenic is separately capped at 50 (India FSSAI); iAs <= tAs.",
               "controlling_jurisdiction": "EU",
-              "controlling_instrument": "eu2023_ias_babyfood_20",
-              "per_country": {
-                "EU": {
-                  "value": 20,
-                  "converted": true,
-                  "id": "eu2023_ias_babyfood_20"
-                },
-                "KR": {
-                  "value": 100,
-                  "converted": true,
-                  "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-                },
-                "BR": {
-                  "value": 150,
-                  "converted": true,
-                  "id": "br_ias_cereal-based-foods-for-infant-young-chil_150"
-                },
-                "CN": {
-                  "value": 200,
-                  "converted": true,
-                  "id": "cn_ias_cereal-based-complementary-foods-for-inf_200"
-                }
-              }
+              "controlling_instrument": "eu2023_ias_babyfood_20"
             },
             "tAs": {
               "status": "published",
@@ -41933,15 +41785,19 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 50,
-              "value_exact_ppb": 50,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "strictest applicable sovereign maximum (face value)",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "VN",
-              "controlling_instrument": "vn_qcvn8_2_2011_thg_fluid-milk-products_50",
+              "controlling_jurisdiction": "HK",
+              "controlling_instrument": "hk_cap132v_thg_secondary-milk-products_10",
               "per_country": {
+                "HK": {
+                  "value": 10,
+                  "id": "hk_cap132v_thg_secondary-milk-products_10"
+                },
                 "VN": {
                   "value": 50,
                   "id": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"
@@ -42148,15 +42004,19 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 50,
-              "value_exact_ppb": 50,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "strictest applicable sovereign maximum (face value)",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "VN",
-              "controlling_instrument": "vn_qcvn8_2_2011_thg_fluid-milk-products_50",
+              "controlling_jurisdiction": "HK",
+              "controlling_instrument": "hk_cap132v_thg_secondary-milk-products_10",
               "per_country": {
+                "HK": {
+                  "value": 10,
+                  "id": "hk_cap132v_thg_secondary-milk-products_10"
+                },
                 "VN": {
                   "value": 50,
                   "id": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"
@@ -42363,15 +42223,19 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 50,
-              "value_exact_ppb": 50,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "strictest applicable sovereign maximum (face value)",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "VN",
-              "controlling_instrument": "vn_qcvn8_2_2011_thg_fluid-milk-products_50",
+              "controlling_jurisdiction": "HK",
+              "controlling_instrument": "hk_cap132v_thg_secondary-milk-products_10",
               "per_country": {
+                "HK": {
+                  "value": 10,
+                  "id": "hk_cap132v_thg_secondary-milk-products_10"
+                },
                 "VN": {
                   "value": 50,
                   "id": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"
@@ -42578,15 +42442,19 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 50,
-              "value_exact_ppb": 50,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "strictest applicable sovereign maximum (face value)",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "VN",
-              "controlling_instrument": "vn_qcvn8_2_2011_thg_fluid-milk-products_50",
+              "controlling_jurisdiction": "HK",
+              "controlling_instrument": "hk_cap132v_thg_secondary-milk-products_10",
               "per_country": {
+                "HK": {
+                  "value": 10,
+                  "id": "hk_cap132v_thg_secondary-milk-products_10"
+                },
                 "VN": {
                   "value": 50,
                   "id": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"
@@ -42952,15 +42820,19 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 50,
-              "value_exact_ppb": 50,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as_consumed",
               "basis_note": "strictest applicable sovereign maximum (face value)",
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "VN",
-              "controlling_instrument": "vn_qcvn8_2_2011_thg_fluid-milk-products_50",
+              "controlling_jurisdiction": "HK",
+              "controlling_instrument": "hk_cap132v_thg_secondary-milk-products_10",
               "per_country": {
+                "HK": {
+                  "value": 10,
+                  "id": "hk_cap132v_thg_secondary-milk-products_10"
+                },
                 "VN": {
                   "value": 50,
                   "id": "vn_qcvn8_2_2011_thg_fluid-milk-products_50"

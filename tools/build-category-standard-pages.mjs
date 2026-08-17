@@ -380,7 +380,9 @@ for (const page of DOC.pages) {
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
     `effective_date: ${META.effective_date}`,
-    "scholar_eligible: true",
+    // Normative certification specification, not a scholarly work; carries no
+    // Highwire citation_* metadata (settled 2026-08-17, CLAUDE.md Part 2).
+    "scholar_eligible: false",
     `cert_doi: ${certDoi ? JSON.stringify(certDoi) : "null"}`,
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "rail_box:",

@@ -7,13 +7,34 @@
   "metals": ["Mercury", "Lead", "Cadmium", "Chromium", "Nickel"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["mercury in freshwater fish", "mining-impacted fish heavy metals", "multi-metal fish contamination", "freshwater fish certification standard", "methylmercury tilapia and bass", "watershed provenance fish testing", "artisanal gold mining fish mercury"],
+  "published": "2026-08-10",
+  "keywords": [
+    "mercury in freshwater fish",
+    "mining-impacted fish heavy metals",
+    "multi-metal fish contamination",
+    "freshwater fish certification standard",
+    "methylmercury tilapia and bass",
+    "watershed provenance fish testing",
+    "artisanal gold mining fish mercury"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Freshwater fish standard", "href": "/standards/fish-freshwater" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Freshwater fish standard",
+      "href": "/standards/fish-freshwater"
+    }
   ],
   "abstract": "Freshwater fish taken from watersheds disturbed by artisanal gold mining, industrial effluent, or dam impoundment carry heavy metals well above the levels found in fish from unaltered waters, and the load is not mercury alone — industrial and legacy-mining systems co-elevate lead, cadmium, chromium and nickel in the same fillet. Ten independent datasets across six continents, spanning 2022 to 2025, converge on this pattern through three distinct drivers: mercury amalgamation in informal gold mining, multi-metal industrial discharge, and reservoir biogeochemistry that methylates inorganic mercury into the bioaccumulating form. The certification consequence is that commercial-market fish advisories — calibrated against averaged marine supply chains and predatory-fish methylmercury — are the wrong instrument, screening the wrong contamination source against the wrong population. A [freshwater-fish standard](/standards/fish-freshwater) has to test the multi-metal signature and treat watershed provenance as a determinant of load, because a mining-watershed fish is a different distribution than the market average. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +78,104 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Mercury in carnivorous freshwater fish from the gold-mining basin of La Mojana, Colombia", "meta": "Fuentes-López et al., 2025. Mean total mercury of 0.31 mg/kg wet weight across 326 fish of nine species, with hazard quotients above 1 for frequent consumers including pregnant women and young children.", "type": "Journal" },
-    { "n": 2, "title": "Total mercury in tilapia from mining and non-mining reaches of the Kafue River, Zambia", "meta": "Shumba et al., 2025. Mining-area tilapia muscle averaged 0.015 mg/kg total mercury against 0.007 mg/kg in non-mining controls, a statistically significant contrast that still fell below FDA and WHO/FAO limits.", "type": "Journal" },
-    { "n": 3, "title": "Multi-metal contamination of Nile tilapia in an industrial-effluent canal of the Eastern Nile Delta, Egypt", "meta": "Shaalan, 2024. Nile tilapia from an industrial canal carried lead 33.4, cadmium 2.3 and mercury 10.4 mg/kg with elevated chromium and nickel, five metals co-elevated 10 to 1000 times above applicable food-safety limits.", "type": "Journal" },
-    { "n": 4, "title": "Mercury and methylmercury in freshwater bass from the Almadén mining district, Spain", "meta": "Barquero et al., 2024. Largemouth bass from the historic Almadén mercury district carried total mercury up to 7.61 mg/kg decades after active mining ceased.", "type": "Journal" },
-    { "n": 5, "title": "Reservoir stratification and smallmouth bass mercury along the Snake River", "meta": "Willacker et al., 2023. Reservoir-reach bass carried 76 percent more mercury than free-flowing-reach bass, with 52 to 80 percent exceeding consumption benchmarks in impounded reaches against 6 to 17 percent in free-flowing reaches.", "type": "Journal" },
-    { "n": 6, "title": "Probability-based national assessment of mercury in United States river fish", "meta": "Stahl et al., 2023. EPA National Rivers and Streams Assessment; every sampled fillet contained detectable mercury and 23.5 to 26.0 percent of the river-kilometer population exceeded human-health screening levels for average consumers, essentially unchanged over five years.", "type": "Journal" },
-    { "n": 7, "title": "Maximum levels for heavy metals in fish (Codex CXS 193; Commission Regulation (EU) 2023/915)", "meta": "Codex Alimentarius and the European Union. Product-specific maximum levels for metals in fish, the regulatory mechanism separate from the population-level consumption advisories issued by the FDA and EPA.", "type": "Legislation" },
-    { "n": 8, "title": "Heavy Metal Index — mining-impacted freshwater fish (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish", "meta": "The independent literature synthesis this analysis reframes, carrying all ten anchor sources spanning six continents and three contamination drivers, each with its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Mercury in carnivorous freshwater fish from the gold-mining basin of La Mojana, Colombia",
+      "meta": "Fuentes-López et al., 2025. Mean total mercury of 0.31 mg/kg wet weight across 326 fish of nine species, with hazard quotients above 1 for frequent consumers including pregnant women and young children.",
+      "type": "Journal"
+    },
+    {
+      "n": 2,
+      "title": "Assessment of total mercury (Hg) in soil, sediment, and tilapia fish (Oreochromis niloticus) and health risk assessment among residents of Kitwe mining area, Zambia",
+      "meta": "Mining-area tilapia muscle averaged 0.015 mg/kg total mercury against 0.007 mg/kg in non-mining controls, a statistically significant contrast that still fell below FDA and WHO/FAO limits.",
+      "type": "Journal",
+      "doi": "10.1007/s11356-025-36506-0",
+      "href": "https://doi.org/10.1007/s11356-025-36506-0",
+      "authors": "Chisanga, Musonda; M’kandawire, Ethel; Choongo, Kennedy, et al.",
+      "year": 2025,
+      "journal": "Environmental Science and Pollution Research",
+      "volume": "32",
+      "issue": "23",
+      "pages": "13904-13917",
+      "cite_key": "shumba2025-tilapia-mercury-zambia-mining",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 3,
+      "title": "Hazardous effects of heavy metal pollution on Nile tilapia in the aquatic ecosystem of the Eastern Delta in Egypt",
+      "meta": "Nile tilapia from an industrial canal carried lead 33.4, cadmium 2.3 and mercury 10.4 mg/kg with elevated chromium and nickel, five metals co-elevated 10 to 1000 times above applicable food-safety limits.",
+      "type": "Journal",
+      "doi": "10.1186/s12917-024-04367-3",
+      "href": "https://doi.org/10.1186/s12917-024-04367-3",
+      "authors": "Shaalan, Walaa M.",
+      "year": 2024,
+      "journal": "BMC Veterinary Research",
+      "volume": "20",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "shaalan2024-nile-tilapia-heavy-metals-egypt",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "A preliminary assessment of mercury, methylmercury and other potentially toxic elements in largemouth bass (Micropterus salmoides) from the Almadén mining district",
+      "meta": "Largemouth bass from the historic Almadén mercury district carried total mercury up to 7.61 mg/kg decades after active mining ceased.",
+      "type": "Journal",
+      "doi": "10.1007/s10653-024-02326-3",
+      "href": "https://doi.org/10.1007/s10653-024-02326-3",
+      "authors": "Barquero, J. I.; Hidalgo, J. J.; Esbrí, J. M., et al.",
+      "year": 2025,
+      "journal": "Environmental Geochemistry and Health",
+      "volume": "47",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "barquero2024-mercury-bass-almaden-spain",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Reservoir Stratification Modulates the Influence of Impoundments on Fish Mercury Concentrations along an Arid Land River System",
+      "meta": "Reservoir-reach bass carried 76 percent more mercury than free-flowing-reach bass, with 52 to 80 percent exceeding consumption benchmarks in impounded reaches against 6 to 17 percent in free-flowing reaches.",
+      "type": "Journal",
+      "doi": "10.1021/acs.est.3c04646",
+      "href": "https://doi.org/10.1021/acs.est.3c04646",
+      "authors": "Willacker, James J.; Eagles-Smith, Collin A.; Chandler, James A., et al.",
+      "year": 2023,
+      "journal": "Environmental Science &amp; Technology",
+      "volume": "57",
+      "issue": "50",
+      "pages": "21313-21326",
+      "cite_key": "willacker2023-mercury-fish-snake-river",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Contaminants in fish from U.S. rivers: Probability-based national assessments",
+      "meta": "EPA National Rivers and Streams Assessment; every sampled fillet contained detectable mercury and 23.5 to 26.0 percent of the river-kilometer population exceeded human-health screening levels for average consumers, essentially unchanged over five years.",
+      "type": "Journal",
+      "doi": "10.1016/j.scitotenv.2022.160557",
+      "href": "https://doi.org/10.1016/j.scitotenv.2022.160557",
+      "authors": "Stahl, Leanne L.; Snyder, Blaine D.; McCarty, Harry B., et al.",
+      "year": 2023,
+      "journal": "Science of The Total Environment",
+      "volume": "861",
+      "issue": null,
+      "pages": "160557",
+      "cite_key": "stahl2023-us-river-fish-mercury",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "Maximum levels for heavy metals in fish (Codex CXS 193; Commission Regulation (EU) 2023/915)",
+      "meta": "Codex Alimentarius and the European Union. Product-specific maximum levels for metals in fish, the regulatory mechanism separate from the population-level consumption advisories issued by the FDA and EPA.",
+      "type": "Legislation"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — mining-impacted freshwater fish (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish",
+      "meta": "The independent literature synthesis this analysis reframes, carrying all ten anchor sources spanning six continents and three contamination drivers, each with its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

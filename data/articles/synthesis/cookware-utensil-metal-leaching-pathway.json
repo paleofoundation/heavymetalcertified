@@ -7,13 +7,34 @@
   "metals": ["Lead", "Cadmium", "Nickel", "Chromium", "Aluminium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["heavy metals from cookware", "lead leaching from aluminium cookware", "cadmium from cooking utensils", "food contact materials heavy metals", "post-harvest contamination pathway", "cookware metal migration", "informal cookware lead"],
+  "published": "2026-08-10",
+  "keywords": [
+    "heavy metals from cookware",
+    "lead leaching from aluminium cookware",
+    "cadmium from cooking utensils",
+    "food contact materials heavy metals",
+    "post-harvest contamination pathway",
+    "cookware metal migration",
+    "informal cookware lead"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Aluminium — analyte review", "href": "/analytes/aluminum" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Aluminium — analyte review",
+      "href": "/analytes/aluminum"
+    }
   ],
   "abstract": "Yes — the vessel a food is cooked in can itself add [lead](/analytes/lead), cadmium, nickel, chromium and aluminium to that food at the cooking step, independent of how clean the raw ingredient was. Five independent studies from Pakistan, Saudi Arabia, Iraq, Nigeria and Thailand converge on this point: in one experiment the same cut of meat cooked in six different pots ended with cadmium spanning roughly 0.005 to 0.4 ppm and lead spanning about 0.6 to 1.0 ppm, driven by vessel choice alone, while new non-anodized aluminium released lead rising to 5.66 mg/L into an acidic liquid over two hours. The transfer is conditional — acidic, long-cooked, degraded or informally manufactured vessels drive it, and neutral short cooking of plain rice showed little. For certification the consequence is direct: a food certification verifies the finished product, so a clean ingredient is necessary but not sufficient, and cookware belongs to a materials standard distinct from food-content limits. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,11 +78,92 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Leaching of hazardous elements from Pakistani cookware during cooking", "meta": "Sultan et al., 2023. New non-anodized aluminium cookware released lead rising to 5.66 mg/L into 4% acetic acid over 2 h and 1.20 ppm lead into meat cooked 1 h, against roughly thousand-fold lower release into neutral water.", "type": "Journal" },
-    { "n": 2, "title": "Heavy metals in one cut of meat cooked in six different utensils", "meta": "Mahdi et al., 2024. The same meat cooked in six vessels ended with cadmium 0.005 to 0.4 ppm and lead 0.6 to 1.0 ppm, driven by vessel choice alone.", "type": "Journal" },
-    { "n": 3, "title": "Metals released from imported aluminium cookware sold in Riyadh", "meta": "Alrajhi and Idriss, 2021. Boiling distilled water 30 min in 46 imported aluminium pots released lead 0.099 to 0.184 mg/L and total arsenic 0.012 to 0.164 mg/L, with cadmium detected in 10.86% of samples.", "type": "Journal" },
-    { "n": 4, "title": "Toxic metals in informally manufactured Nigerian cookware and its leaching potential", "meta": "Abdulrasheed et al., 2026. Informal cookware carried mean lead 136 mg/kg (up to 439) and nickel 181 mg/kg, yet neutral-water boiling for 1 to 3 h released all metals below the 0.01 mg/L detection limit.", "type": "Journal" },
-    { "n": 5, "title": "Aluminium and heavy metals in cooked rice from Thai markets by ICP-MS", "meta": "Rittirong and Saenboonruang, 2018. Rice cooked in five vessel types and four water chemistries showed no substantial metal increase over raw grain (aluminium 76.50 versus 76.83 mg/kg).", "type": "Journal" },
-    { "n": 6, "title": "Heavy Metal Index — cookware and utensils as a metal-leaching pathway (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Assessing Leaching of Potentially Hazardous Elements from Cookware during Cooking: A Serious Public Health Concern",
+      "meta": "New non-anodized aluminium cookware released lead rising to 5.66 mg/L into 4% acetic acid over 2 h and 1.20 ppm lead into meat cooked 1 h, against roughly thousand-fold lower release into neutral water.",
+      "type": "Journal",
+      "doi": "10.3390/toxics11070640",
+      "href": "https://doi.org/10.3390/toxics11070640",
+      "authors": "Ali Sultan, Saif Ali; Ahmed Khan, Fawad; Wahab, Abdul, et al.",
+      "year": 2023,
+      "journal": "Toxics",
+      "volume": "11",
+      "issue": "7",
+      "pages": "640",
+      "cite_key": "sultan2023-cookware-metal-leaching",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Detection of some heavy metals in meat cooked in different utensils",
+      "meta": "The same meat cooked in six vessels ended with cadmium 0.005 to 0.4 ppm and lead 0.6 to 1.0 ppm, driven by vessel choice alone.",
+      "type": "Journal",
+      "doi": "10.54153/sjpas.2024.v6i3(2).870",
+      "href": "https://doi.org/10.54153/sjpas.2024.v6i3(2).870",
+      "authors": "Mahdi, Manal S.; Farhan, Naseer M.; Mouhamad, Raghad S.",
+      "year": 2024,
+      "journal": "Samarra Journal of Pure and Applied Science",
+      "volume": "6",
+      "issue": "3(2)",
+      "pages": "62-69",
+      "cite_key": "mahdi2024-meat-cooked-utensils-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "INVESTIGATION OF METALS RELEASED FROM IMPORTED COOKWARE COLLECTED FROM A LOCAL MARKET IN RIYADH, SAUDI ARABIA",
+      "meta": "Boiling distilled water 30 min in 46 imported aluminium pots released lead 0.099 to 0.184 mg/L and total arsenic 0.012 to 0.164 mg/L, with cadmium detected in 10.86% of samples.",
+      "type": "Journal",
+      "doi": "10.20937/RICA.53561",
+      "href": "https://doi.org/10.20937/RICA.53561",
+      "authors": "Mohammed Alrajhi, Ibrahim; Idriss, Hajo",
+      "year": 2020,
+      "journal": "Revista Internacional de Contaminación Ambiental",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "cite_key": "alrajhi2021-imported-cookware-metal-release",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Preliminary assessment of toxic metals in cookware, moulding materials and soils from manufacturing sites in southwest Nigeria, with evaluation of cookware leaching potential",
+      "meta": "Informal cookware carried mean lead 136 mg/kg (up to 439) and nickel 181 mg/kg, yet neutral-water boiling for 1 to 3 h released all metals below the 0.01 mg/L detection limit.",
+      "type": "Journal",
+      "doi": "10.1186/s13065-026-01720-5",
+      "href": "https://doi.org/10.1186/s13065-026-01720-5",
+      "authors": "Abdulrasheed, Zainab Adetohun; Adie, Gilbert Umaye; Iniaghe, Paschal Okiroro",
+      "year": 2026,
+      "journal": "BMC Chemistry",
+      "volume": "20",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "abdulrasheed2026-nigeria-cookware-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Quantification of aluminum and heavy metal contents in cooked rice samples from Thailand markets using inductively coupled plasma mass spectrometry (ICP-MS) and potential health risk assessment",
+      "meta": "Rice cooked in five vessel types and four water chemistries showed no substantial metal increase over raw grain (aluminium 76.50 versus 76.83 mg/kg).",
+      "type": "Journal",
+      "doi": "10.9755/ejfa.2018.v30.i5.1680",
+      "href": "https://doi.org/10.9755/ejfa.2018.v30.i5.1680",
+      "authors": "Saenboonruang, Anawat Rittirong, Kiadtisak",
+      "year": 2018,
+      "journal": "Emirates Journal of Food and Agriculture",
+      "volume": null,
+      "issue": null,
+      "pages": "372",
+      "cite_key": "rittirong2018-cooked-rice-utensil-metals-thailand",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — cookware and utensils as a metal-leaching pathway (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

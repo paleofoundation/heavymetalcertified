@@ -7,13 +7,34 @@
   "metals": ["Cadmium", "Arsenic", "Lead"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["cadmium in seaweed", "inorganic arsenic in kelp", "heavy metals in seaweed", "seaweed heavy metal certification", "arsenic speciation seaweed", "kelp supplement cadmium", "EFSA seaweed heavy metals"],
+  "published": "2026-08-10",
+  "keywords": [
+    "cadmium in seaweed",
+    "inorganic arsenic in kelp",
+    "heavy metals in seaweed",
+    "seaweed heavy metal certification",
+    "arsenic speciation seaweed",
+    "kelp supplement cadmium",
+    "EFSA seaweed heavy metals"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Arsenic — analyte review", "href": "/analytes/arsenic" },
-    { "label": "Seaweed & kelp standard", "href": "/standards/seaweed-kelp-foods" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Arsenic — analyte review",
+      "href": "/analytes/arsenic"
+    },
+    {
+      "label": "Seaweed & kelp standard",
+      "href": "/standards/seaweed-kelp-foods"
+    }
   ],
   "abstract": "Edible seaweed and kelp are a systematic dietary pathway for cadmium and arsenic. Three independent A-tier datasets — a New Zealand kelp survey, a 43-site Salish Sea assessment, and the EFSA CONTAM Panel's full European exposure opinion — converge on the same result: commercial seaweed products carry elevated cadmium and arsenic that conventional terrestrial-food surveillance does not capture. The cause is biology, not pollution. Brown algae concentrate cadmium from seawater by a factor of roughly 100,000 to 1,000,000, so even a clean-water harvest yields a high-cadmium product, and arsenic co-accumulates through the same physiology. For certification this means a [seaweed standard](/standards/seaweed-kelp-foods) cannot lean on total arsenic; because the toxic hazard is the inorganic fraction, it has to measure cadmium and speciated inorganic arsenic directly. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,12 +82,68 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Trace-element composition of New Zealand Ecklonia radiata kelp across twelve sites", "meta": "Nepper-Davidsen et al., 2023. Mean total arsenic 49 ppm and cadmium 1.2 ppm dry weight in North Island kelp, with significant temporal variation in arsenic.", "type": "Journal" },
-    { "n": 2, "title": "Heavy metals in edible Salish Sea brown seaweeds across forty-three harvest sites", "meta": "Hahn et al., 2022. Cadmium exceeded international limits at every site; bull kelp averaged 5.69 mg/kg and a lead spike reached 13.2 mg/kg dry weight near industry.", "type": "Journal" },
-    { "n": 3, "title": "EFSA scientific opinion on heavy metals and iodine in seaweeds and halophytes as food", "meta": "EFSA CONTAM Panel, 2023. Assessed 2,093 cadmium and 920 inorganic-arsenic occurrence points; kombu and kelp among the highest inorganic-arsenic food matrices in the EU.", "type": "Government" },
-    { "n": 4, "title": "Maximum levels for contaminants in food", "meta": "European Union. Commission Regulation (EU) 2023/915. The EU framework setting category maximum levels for cadmium, lead and arsenic in food.", "type": "Legislation" },
-    { "n": 5, "title": "US FDA Closer to Zero action plan and inorganic-arsenic guidance", "meta": "US Food and Drug Administration. Action on inorganic arsenic in infant rice cereal, with no seaweed-specific product limit in force.", "type": "Government" },
-    { "n": 6, "title": "California Proposition 65 exposure warnings for cadmium and arsenic", "meta": "California Office of Environmental Health Hazard Assessment. Warning-level exposure enforcement, the main operative US pressure on seaweed heavy-metal content.", "type": "Legislation" },
-    { "n": 7, "title": "Heavy Metal Index — seaweed as a cadmium and arsenic pathway (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "High spatial and temporal variation in biomass composition of the novel aquaculture target Ecklonia radiata",
+      "meta": "Mean total arsenic 49 ppm and cadmium 1.2 ppm dry weight in North Island kelp, with significant temporal variation in arsenic.",
+      "type": "Journal",
+      "doi": "10.1007/s10811-023-02969-2",
+      "href": "https://doi.org/10.1007/s10811-023-02969-2",
+      "authors": "Nepper-Davidsen, Jacob; Glasson, Christopher R. K.; Lawton, Rebecca J., et al.",
+      "year": 2023,
+      "journal": "Journal of Applied Phycology",
+      "volume": "35",
+      "issue": "4",
+      "pages": "1755-1768",
+      "cite_key": "nepper-davidsen2023-kelp-biomass-composition-nz",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Chemical contaminant levels in edible seaweeds of the Salish Sea and implications for their consumption",
+      "meta": "Cadmium exceeded international limits at every site; bull kelp averaged 5.69 mg/kg and a lead spike reached 13.2 mg/kg dry weight near industry.",
+      "type": "Journal",
+      "doi": "10.1371/journal.pone.0269269",
+      "href": "https://doi.org/10.1371/journal.pone.0269269",
+      "authors": "Hahn, Jennifer L.; Van Alstyne, Kathryn L.; Gaydos, Joseph K., et al.",
+      "year": 2022,
+      "journal": "PLOS ONE",
+      "volume": "17",
+      "issue": "9",
+      "pages": "e0269269",
+      "cite_key": "hahn2022-salish-seaweed-contaminants",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "EFSA scientific opinion on heavy metals and iodine in seaweeds and halophytes as food",
+      "meta": "EFSA CONTAM Panel, 2023. Assessed 2,093 cadmium and 920 inorganic-arsenic occurrence points; kombu and kelp among the highest inorganic-arsenic food matrices in the EU.",
+      "type": "Government"
+    },
+    {
+      "n": 4,
+      "title": "Maximum levels for contaminants in food",
+      "meta": "European Union. Commission Regulation (EU) 2023/915. The EU framework setting category maximum levels for cadmium, lead and arsenic in food.",
+      "type": "Legislation"
+    },
+    {
+      "n": 5,
+      "title": "US FDA Closer to Zero action plan and inorganic-arsenic guidance",
+      "meta": "US Food and Drug Administration. Action on inorganic arsenic in infant rice cereal, with no seaweed-specific product limit in force.",
+      "type": "Government"
+    },
+    {
+      "n": 6,
+      "title": "California Proposition 65 exposure warnings for cadmium and arsenic",
+      "meta": "California Office of Environmental Health Hazard Assessment. Warning-level exposure enforcement, the main operative US pressure on seaweed heavy-metal content.",
+      "type": "Legislation"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — seaweed as a cadmium and arsenic pathway (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

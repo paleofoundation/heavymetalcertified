@@ -23,6 +23,33 @@ const META_FILE = path.join(repoRoot, "data/briefings/briefing-meta.json")
 const PDF_DIR = path.join(repoRoot, "content/static/briefings")
 fs.mkdirSync(OUT, { recursive: true })
 
+// Editorial scholar-eligibility (settled 2026-08-17). scholar_eligible is a
+// claim that a page is an original scholarly work — an evidence review,
+// methodological analysis, or regulatory-gap study with an author, abstract and
+// references. It is NOT the same as "a PDF exists": postbuild-article-pdf now
+// generates a PDF for every briefing, so PDF existence no longer discriminates.
+//
+// It is also a firewall control (CLAUDE.md Part 2): a certifier tagging its own
+// sales briefs ("The Premium Promise", "The Cost of Being Uncertified") as
+// peer-citable technical reports is exactly the overclaim a plaintiff's expert
+// would exploit. So the marketing, program-explainer and litigation-strategy
+// briefs are deliberately NOT scholar-eligible, even though they render and
+// download identically.
+//
+// Scholarly = evidence reviews and methodological/regulatory analyses that
+// contribute to the general literature, not documents whose subject is the HMTc
+// program itself. Edit this set to reclassify; nothing else needs to change.
+const SCHOLARLY_BRIEFINGS = new Set([
+  "heavy-metals-in-fertilizers",
+  "heavy-metals-in-pet-food",
+  "heavy-metals-in-peptides-and-sarms",
+  "the-mucosal-gap",
+  "the-big-8",
+  "the-prop-65-gap",
+  "supplements-child-protective",
+  "brief-3-what-organic-doesnt-say",
+])
+
 // 6.F mapping: file slug → { page title override, section }
 const MAP = {
   "brief-4-cost-of-being-uncertified": { title: "The Cost of Being Uncertified", section: "Business case" },
@@ -204,7 +231,10 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const briefNum = seriesLabel.match(/Brief\s+(\d+)/i)
   const seriesName = briefNum ? `HMTc Standards Briefing ${briefNum[1]}` : "HMTc Standards Briefing"
   const refCount = m?.references?.length || 0
-  const pdfRel = fs.existsSync(path.join(PDF_DIR, `${slug}.pdf`)) ? `/briefings/${slug}.pdf` : null
+  // Every briefing gets a generated PDF at postbuild (postbuild-article-pdf),
+  // so the download artifact always exists regardless of a hand-made static one.
+  const pdfRel = `/briefings/${slug}.pdf`
+  const isScholar = SCHOLARLY_BRIEFINGS.has(slug)
 
   // ---- frontmatter (chrome the shared HeroBand + Rail read) ----------------
   const front = [
@@ -219,14 +249,13 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     "orcid: 0000-0002-2348-7259",
     fm.date ? `briefing_date: "${fm.date}"` : null,
     fm.date ? `updated: "${fm.date}"` : null,
-    // Scholar-eligible only when a PDF exists to be the citable artifact; a
-    // scholar-eligible page with no PDF emits a dangling citation_pdf_url.
-    `scholar_eligible: ${pdfRel ? "true" : "false"}`,
-    pdfRel ? "scholar_pdf: true" : null,
-    pdfRel ? `scholar_pdf_url: "https://heavymetalcertified.com${pdfRel}"` : null,
-    // The PDF edition is declared in frontmatter and rendered by the right-rail
-    // (Rail.tsx reads `pdf`); no inline download card in the body.
-    pdfRel ? `pdf: "${pdfRel}"` : null,
+    // scholar_eligible is editorial (SCHOLARLY_BRIEFINGS above), not PDF-gated.
+    `scholar_eligible: ${isScholar}`,
+    isScholar ? "scholar_pdf: true" : null,
+    isScholar ? `scholar_pdf_url: "https://heavymetalcertified.com${pdfRel}"` : null,
+    // The download button (Rail.tsx reads `pdf`) shows for every briefing — the
+    // PDF exists — independent of the scholarly claim.
+    `pdf: "${pdfRel}"`,
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
     "snapshot:",
     `  - { k: "Series number", v: "${seriesLabel}" }`,

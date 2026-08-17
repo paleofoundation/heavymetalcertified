@@ -201,7 +201,7 @@
           },
           "IN": {
             "value": 100,
-            "converted": true,
+            "converted": false,
             "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
           }
         }
@@ -241,7 +241,7 @@
         "per_country": {
           "IN": {
             "value": 5000,
-            "converted": true,
+            "converted": false,
             "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
           }
         }
@@ -426,16 +426,16 @@
       },
       "Cd": {
         "type": "gov",
-        "value": 5,
-        "value_exact": 5,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5",
+        "value": 10,
+        "value_exact": 10,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_formula_soy_liquid_10",
         "basis_note": "same basis",
         "per_country": {
           "IL": {
-            "value": 5,
+            "value": 10,
             "converted": false,
-            "id": "il_fcs2016_cd_14_infant_and_toddler_formulas_ready_to_eat_5"
+            "id": "il_fcs2016_cd_14_2_infant_and_toddler_formulas_from_soy_or_containing_s_10"
           },
           "EU": {
             "value": 10,
@@ -459,7 +459,7 @@
           },
           "IN": {
             "value": 100,
-            "converted": true,
+            "converted": false,
             "id": "in_cd_infant-milk-substitute-and-infant-foods_100"
           }
         }
@@ -499,7 +499,7 @@
         "per_country": {
           "IN": {
             "value": 5000,
-            "converted": true,
+            "converted": false,
             "id": "in_sn_infant-milk-substitute-and-infant-foods_5000"
           }
         }

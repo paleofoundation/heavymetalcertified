@@ -7,13 +7,34 @@
   "metals": ["Cadmium", "Lead", "Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["cadmium in organ meats", "cadmium in liver and kidney", "heavy metals in offal", "organ meat heavy metal limit", "lead in chicken liver", "cadmium metallothionein kidney", "offal food safety certification"],
+  "published": "2026-08-10",
+  "keywords": [
+    "cadmium in organ meats",
+    "cadmium in liver and kidney",
+    "heavy metals in offal",
+    "organ meat heavy metal limit",
+    "lead in chicken liver",
+    "cadmium metallothionein kidney",
+    "offal food safety certification"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Mixed-meals standard", "href": "/standards/mixed-meals" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Mixed-meals standard",
+      "href": "/standards/mixed-meals"
+    }
   ],
   "abstract": "Liver and kidney carry cadmium at roughly two to two-and-a-half times the level of skeletal muscle from the same animal, because both organs store [cadmium](/analytes/cadmium) across the animal's lifetime while muscle has no comparable storage route. In a balanced 315-sample bovine survey, cadmium rose from a muscle mean of 0.030 mg/kg to 0.056 mg/kg in liver and 0.073 mg/kg in kidney, and the ordering repeats in broiler chicken and under controlled experimental dosing. Offal is therefore a distinct dietary exposure pathway, not an extension of muscle, and a muscle occurrence value cannot stand in for a liver or kidney value. For certification this means an organ-meat product needs cadmium and lead ceilings built on offal-specific data; using muscle-meat surveillance to reassure a buyer understates the cadmium load by roughly the same two-to-two-and-a-half-fold factor. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,13 +82,105 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Cadmium, Lead and Mercury in Imported Bovine Muscle, Liver and Kidney, Sohag, Egypt", "meta": "Rabeey et al., 2025. Balanced 315-sample survey of imported bovine muscle, liver and kidney; cadmium rose from a 0.030 mg/kg muscle mean to 0.056 in liver and 0.073 in kidney, with total mercury highest in muscle.", "type": "Journal", "href": "https://doi.org/10.1038/s41598-025-29927-x" },
-    { "n": 2, "title": "Twelve-Metal ICP-MS Survey of Egyptian Broiler Muscle and Liver", "meta": "Kamaly and Sharkawy, 2023. ICP-MS survey of 360 Egyptian broiler samples; liver cadmium (0.027–0.104 mg/kg) above chest-muscle cadmium (0.014–0.054 mg/kg), while chest-muscle lead ran far above liver lead.", "type": "Journal", "href": "https://doi.org/10.1007/s11356-023-27826-w" },
-    { "n": 3, "title": "Controlled Graded-Dose Feeding of Cadmium, Lead and Chromium in Broiler Tissues", "meta": "Morshed et al., 2024. Research Square preprint; 28-day graded-dose feeding trial in which liver cadmium exceeded muscle cadmium by roughly sevenfold at the top dose (liver 43.36 vs muscle 6.57 mg/kg dry basis).", "type": "Journal", "href": "https://doi.org/10.21203/rs.3.rs-4210575/v1" },
-    { "n": 4, "title": "Twenty-Year Monitoring of Trace Metals in the Liver of Free-Living Dutch Herbivores", "meta": "Marcelino et al., 2026. Twenty-year Netherlands post-mortem programme; liver lead up to 4.6 mg/kg dry weight in Heck cattle while liver cadmium sat mostly below the 0.1 mg/kg limit of quantification.", "type": "Journal", "href": "https://doi.org/10.3389/fvets.2026.1751586" },
-    { "n": 5, "title": "Lead, Cadmium and Chromium in Sheep Liver from a Tabriz Abattoir", "meta": "Khatemeh and Imani Baran, 2022. Abattoir survey of sheep liver in Tabriz, Iran; uninfected liver cadmium 0.07 µg/g wet weight, below typical EU maximum levels for liver.", "type": "Journal", "href": "https://doi.org/10.30466/vrf.2020.135702.3043" },
-    { "n": 6, "title": "Heavy Metals Across Six Edible Body Parts of Bangladeshi Broiler Chicken", "meta": "Hossain et al., 2023. 108-sample multi-organ broiler survey; lead lowest in muscle (0.33 mg/kg) and highest in brain (4.6 mg/kg), attributed to tannery-waste-derived feed.", "type": "Journal", "href": "https://doi.org/10.1371/journal.pone.0279043" },
-    { "n": 7, "title": "Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal", "meta": "Category-specific maximum levels set cadmium and lead ceilings for liver and kidney separately from, and looser than, the muscle limits, on the understanding that the offal baseline is higher.", "type": "Standard" },
-    { "n": 8, "title": "Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for the organ-versus-muscle cadmium and lead evidence.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation" }
+    {
+      "n": 1,
+      "title": "Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt",
+      "meta": "Balanced 315-sample survey of imported bovine muscle, liver and kidney; cadmium rose from a 0.030 mg/kg muscle mean to 0.056 in liver and 0.073 in kidney, with total mercury highest in muscle.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1038/s41598-025-29927-x",
+      "doi": "10.1038/s41598-025-29927-x",
+      "authors": "Rabeey, Mohammed Ashry; Sabala, Rana Fahmi; Zakaria, Amira Ibrahim, et al.",
+      "year": 2025,
+      "journal": "Scientific Reports",
+      "volume": "15",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "rabeey2025-bovine-hg-pb-cd-egypt",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Health risk assessment of metals in chicken meat and liver in Egypt",
+      "meta": "ICP-MS survey of 360 Egyptian broiler samples; liver cadmium (0.027–0.104 mg/kg) above chest-muscle cadmium (0.014–0.054 mg/kg), while chest-muscle lead ran far above liver lead.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1007/s10661-023-11365-9",
+      "doi": "10.1007/s10661-023-11365-9",
+      "authors": "Kamaly, Heba F.; Sharkawy, Ahmed A.",
+      "year": 2023,
+      "journal": "Environmental Monitoring and Assessment",
+      "volume": "195",
+      "issue": "7",
+      "pages": null,
+      "cite_key": "kamaly2023-egypt-poultry-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Heavy Metals Accumulation in Different Organs of Poultry and Hypothetical Risk Analysis: Evidence from Experimental Feeding with Assorted Metal Feed",
+      "meta": "Research Square preprint; 28-day graded-dose feeding trial in which liver cadmium exceeded muscle cadmium by roughly sevenfold at the top dose (liver 43.36 vs muscle 6.57 mg/kg dry basis).",
+      "type": "Preprint",
+      "href": "https://doi.org/10.21203/rs.3.rs-4210575/v1",
+      "doi": "10.21203/rs.3.rs-4210575/v1",
+      "authors": "Morshed, A. J. M.; Islam, Md. Samrat Mohay Menul; Hossain, A. H. Rashadul, et al.",
+      "year": 2024,
+      "journal": "Research Square Platform LLC",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "cite_key": "morshed2024-heavy-metals-poultry-organs-bangladesh",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Monitoring trace minerals and heavy metals in liver of free-living large herbivores in the Netherlands",
+      "meta": "Twenty-year Netherlands post-mortem programme; liver lead up to 4.6 mg/kg dry weight in Heck cattle while liver cadmium sat mostly below the 0.1 mg/kg limit of quantification.",
+      "type": "Journal",
+      "href": "https://doi.org/10.3389/fvets.2026.1751586",
+      "doi": "10.3389/fvets.2026.1751586",
+      "authors": "Marcelino, Inês; Monti, Gustavo; Cornelissen, Perry, et al.",
+      "year": 2026,
+      "journal": "Frontiers in Veterinary Science",
+      "volume": "13",
+      "issue": null,
+      "pages": null,
+      "cite_key": "marcelino2026-liver-trace-metals-netherlands-herbivores",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Lead, Cadmium and Chromium in Sheep Liver from a Tabriz Abattoir",
+      "meta": "Khatemeh and Imani Baran, 2022. Abattoir survey of sheep liver in Tabriz, Iran; uninfected liver cadmium 0.07 µg/g wet weight, below typical EU maximum levels for liver.",
+      "type": "Journal",
+      "href": "https://doi.org/10.30466/vrf.2020.135702.3043"
+    },
+    {
+      "n": 6,
+      "title": "Human health risk assessment of edible body parts of chicken through heavy metals and trace elements quantitative analysis",
+      "meta": "Hossain et al., 2023. 108-sample multi-organ broiler survey; lead lowest in muscle (0.33 mg/kg) and highest in brain (4.6 mg/kg), attributed to tannery-waste-derived feed.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1371/journal.pone.0279043",
+      "doi": "10.1371/journal.pone.0279043",
+      "authors": "Hossain, Easmin; Nesha, Meherun; Chowdhury, Muhammed Alamgir Zaman, et al.",
+      "year": 2023,
+      "journal": "PLOS ONE",
+      "volume": "18",
+      "issue": "3",
+      "pages": "e0279043",
+      "cite_key": "hossain2023-bangladesh-chicken-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal",
+      "meta": "Category-specific maximum levels set cadmium and lead ceilings for liver and kidney separately from, and looser than, the muscle limits, on the understanding that the offal baseline is higher.",
+      "type": "Standard"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for the organ-versus-muscle cadmium and lead evidence.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation"
+    }
   ]
 }

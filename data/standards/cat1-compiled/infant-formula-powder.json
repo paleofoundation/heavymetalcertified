@@ -419,16 +419,16 @@
       },
       "Cd": {
         "type": "gov",
-        "value": 10,
-        "value_exact": 10,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10",
+        "value": 20,
+        "value_exact": 20,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_cd_formula_soy_powder_20",
         "basis_note": "same basis",
         "per_country": {
           "IL": {
-            "value": 10,
+            "value": 20,
             "converted": false,
-            "id": "il_fcs2016_cd_14_1_infant_and_toddler_formulas_powder_10"
+            "id": "il_fcs2016_cd_14_3_infant_and_toddler_formulas_from_soy_or_containing_s_20"
           },
           "EU": {
             "value": 20,

@@ -45,15 +45,35 @@ function plain(s) {
 }
 const q = (s) => String(s || "").replace(/"/g, '\\"')
 
+// citation_abstract is a meta-tag value, so markdown link syntax has to come out
+// or the abstract Scholar reads contains raw "[text](url)" noise.
+const abstractText = (s) =>
+  plain(
+    String(s || "")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/\[\[[^\]|]*\|([^\]]+)\]\]/g, "$1")
+      .replace(/\[\[([^\]]+)\]\]/g, "$1"),
+  )
+
 // A reference row in the canonical grid. The [N] number carries id="ref-N" so the
 // inline <sup class="cite"><a href="#ref-N"> citations resolve.
 //
-// LINK POLICY (integrity): only the one-way Heavy Metal Index synthesis reference
-// (type "Reference") is hyperlinked. Primary studies, laws and standards are NAMED
-// but NOT linked — their DOI-linked source records live on the Index, which this
-// article cites one way. This is deliberate: a study DOI supplied by a drafting
-// pass cannot be verified against the on-disk synthesis (which links sources by
-// wiki-link, not raw DOI), so we do not publish an unverifiable external link.
+// LINK POLICY (integrity). The original policy named primary studies without
+// linking them, because "a study DOI supplied by a drafting pass cannot be
+// verified against the on-disk synthesis". That precondition no longer holds:
+// each Journal/Preprint reference is now resolved to a specific Heavy Metal Index
+// source record (via the paired synthesis page's `anchor_sources`), and that
+// record's DOI is verified against Crossref under a two-factor gate — Crossref
+// title identity with the corpus record, or the cite-key author appearing in
+// Crossref's author list. Only references carrying a `doi` that passed that gate
+// are hyperlinked, and their `title`, `authors`, `journal`, `year`, `volume` and
+// `pages` are Crossref's authoritative values rather than a drafting paraphrase.
+//
+// A reference WITHOUT a `doi` field failed verification or has no corpus record.
+// It is still NAMED but NOT linked, exactly as before — the rule remains that an
+// unverifiable external link is never published. Legislation, Standard and
+// Government references are named, not linked, because they are primary
+// instruments rather than corpus records.
 function domainOf(href) {
   if (!href) return ""
   try {
@@ -66,11 +86,33 @@ function renderRefs(refs) {
   if (!refs || !refs.length) return ""
   const rows = refs
     .map((r) => {
-      const linkable = r.href && r.type === "Reference"
-      const titleEl = linkable
-        ? `<a href="${r.href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
+      // A verified DOI (see LINK POLICY above) or the one-way Index synthesis
+      // reference may be linked; nothing else is.
+      const href = r.doi ? `https://doi.org/${r.doi}` : r.type === "Reference" ? r.href : null
+      const titleEl = href
+        ? `<a href="${href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
         : `<span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
-      const dom = linkable ? domainOf(r.href) : ""
+
+      // Formal citation line, from Crossref's authoritative record. Present only
+      // for verified works, so a reader can tell a verified citation from a named
+      // one at a glance.
+      let cite = ""
+      if (r.doi) {
+        const vol = r.volume ? ` ${r.volume}` : ""
+        const iss = r.volume && r.issue ? `(${r.issue})` : ""
+        const pp = r.pages ? `:${r.pages}` : ""
+        const where = r.journal ? `${r.journal}${vol}${iss}${pp}` : ""
+        // join with ". " but never produce ".." when a segment already ends in "."
+        const bits = [r.authors, where, r.year ? `(${r.year})` : ""]
+          .filter(Boolean)
+          .map((b) => b.replace(/\.\s*$/, ""))
+          .join(". ")
+        cite =
+          `<p style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.65;color:#5a4141;margin:6px 0 0">${bits}. ` +
+          `<a href="https://doi.org/${r.doi}" style="color:#1c43ad;text-decoration:none">doi:${r.doi}</a></p>`
+      }
+
+      const dom = !r.doi && r.type === "Reference" && r.href ? domainOf(r.href) : ""
       const domLink = dom
         ? ` &middot; <a href="${r.href}" style="color:#736b6b">${dom}<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a>`
         : ""
@@ -78,10 +120,18 @@ function renderRefs(refs) {
         r.meta || domLink
           ? `<p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${r.meta || ""}${domLink}</p>`
           : ""
-      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-${r.n}" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${meta}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
+      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-${r.n}" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${cite}${meta}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
     })
     .join("\n")
-  return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this analysis&rsquo;s text, in first-appearance order. This is not the full evidence base for the finding; it is what the prose above draws on. The complete occurrence record and per-source pages live on the Heavy Metal Index &mdash; this analysis links to them rather than re-hosting them. Where a work carries a DOI its title links to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
+  const verified = refs.filter((r) => r.doi).length
+  const lede =
+    `Works cited in this analysis&rsquo;s text, in first-appearance order. This is not the full evidence base for the finding; it is what the prose above draws on. ` +
+    `The complete occurrence record and per-source pages live on the Heavy Metal Index &mdash; this analysis links to them rather than re-hosting them. ` +
+    (verified
+      ? `${verified} of ${refs.length} references carry a DOI verified against Crossref and are linked to it; `
+      : ``) +
+    `works without a verified DOI, and primary legal instruments and published standards, are named but not linked.`
+  return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${lede}</p>
   <div style="border-top:1px solid #e8e1db">
 ${rows}
   </div>`
@@ -134,8 +184,16 @@ function build(spec) {
     "orcid: 0000-0002-2348-7259",
     `date: "${date}"`,
     `updated: "${date}"`,
+    // Verifiable first-publication date (read from git once, committed as spec
+    // data). Gives Scholar a full YYYY-MM-DD instead of a bare year.
+    spec.published ? `published: "${spec.published}"` : null,
     "scholar_eligible: true",
     "scholar_pdf: true",
+    // Scholar reads these off the page: the abstract, and the author keywords.
+    spec.abstract ? `scholar_abstract: "${q(abstractText(spec.abstract))}"` : null,
+    Array.isArray(spec.keywords) && spec.keywords.length
+      ? `keywords: [${spec.keywords.map((k) => `"${q(k)}"`).join(", ")}]`
+      : null,
     // The PDF edition is declared in frontmatter and rendered by the right-rail
     // (Rail.tsx reads `pdf`); the download card is NOT emitted inline in the body.
     `pdf: "/articles/${slug}.pdf"`,

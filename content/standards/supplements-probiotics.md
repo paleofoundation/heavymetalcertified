@@ -13,7 +13,7 @@ standard_version: "1.0 (2026-08-14)"
 methodology_version: "Method v2.0 — child-protective over-compliance (strictest sovereign infant-and-child-food ML, applied to all supplements)"
 variant_type: whole_row_platform
 effective_date: 2026-08-14
-scholar_eligible: true
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
