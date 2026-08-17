@@ -102,6 +102,7 @@ const JUR_LABEL = {
   MX: "Mexico", TR: "Türkiye", CR: "Costa Rica", FJ: "Fiji", IL: "Israel", PA: "Panama",
   PY: "Paraguay", SG: "Singapore", TH: "Thailand", VN: "Vietnam", GY: "Guyana", MA: "Morocco",
   PH: "Philippines", TT: "Trinidad & Tobago", UY: "Uruguay", MERCOSUR: "Mercosur", international: "Intl",
+  HK: "Hong Kong",
 }
 const JUR2REG = {
   EU: "eu-2023-915", UK: "uk-1881-2006", CODEX: "codex-cxs-193", CA: "canada-contaminants",
@@ -128,8 +129,9 @@ function bindingLabel(cell) {
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${txt}</a>` : txt
   }
   if (cell.type === "read_across") {
-    const href = reg(cell.source_jurisdiction)
-    const label = esc(cell.label && cell.label.length < 90 ? cell.label : `government read-across (${jlabel(cell.source_jurisdiction)})`)
+    const sj = cell.source_jurisdiction || cell.binding_jurisdiction
+    const href = reg(sj)
+    const label = esc(cell.label && cell.label.length < 90 ? cell.label : `government read-across (${jlabel(sj)})`)
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
   }
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
@@ -288,7 +290,7 @@ function cellsBindingDerivation(primary, subName) {
       binds = (h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(c.binding_jurisdiction))}</a>` : esc(jlabel(c.binding_jurisdiction))) + extra
       basis = "direct sovereign ML"
     } else if (c.type === "read_across") {
-      hmtc = String(c.value); binds = esc(jlabel(c.source_jurisdiction)); basis = "disclosed read-across"
+      hmtc = String(c.value); binds = esc(jlabel(c.source_jurisdiction || c.binding_jurisdiction)); basis = "disclosed read-across"
     } else if (c.type === "control") {
       hmtc = "control"; binds = "screened every lot"; basis = "mandatory control &mdash; no government ML"
     } else if (c.type === "screen") {

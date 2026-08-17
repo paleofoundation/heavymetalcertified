@@ -34,7 +34,7 @@ rail_box:
 
 <section id="subcats">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Subcategory standards</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">15 locked rows across 19 categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">15 locked rows across 20 categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">0 firm analyte limits across 0 subcategories so far</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
@@ -341,6 +341,15 @@ rail_box:
       <a href="/standards/hot-chili-sauces" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Hot sauce and chili sauces</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.2 &middot; 5 firm</span></a>
       <a href="/standards/salt" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Salt (table, sea, Himalayan)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.3 &middot; 5 firm</span></a>
       <a href="/standards/spices" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Herbs, spices, and dried seasonings (turmeric, cinnamon, paprika, chili powder, pepper)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Herbs, Spices, Seasonings and Salt 3.4 &middot; 4 firm</span></a>
+    </div>
+  </div>
+  <div style="margin-bottom:26px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:9px;border-bottom:1px solid #e8e1db;margin-bottom:11px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727">Prepared and Packaged Meals</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae">as consumed</span>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <a href="/standards/bone-broth" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:6px 0;font-size:13.5px;color:#1c43ad;border-bottom:1px dotted #f2ece7;text-decoration:none"><span>Bone broth</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;text-align:right;flex:0 0 auto;max-width:14rem">Prepared and Packaged Meals 3.1 &middot; 3 firm</span></a>
     </div>
   </div>
 </section>

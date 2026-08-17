@@ -1,0 +1,180 @@
+{
+  "slug": "bone-broth",
+  "name": "Bone broth (long-simmered animal-bone stock)",
+  "category": 35,
+  "category_name": "Prepared and Packaged Meals",
+  "anchor": "composite; per-component regulatory anchors apply",
+  "provisional_scaffold": true,
+  "cross_reference": "Category 11 (Meat, Poultry, and Eggs) for the animal-bone basis. Placement is PROVISIONAL pending Karen's ratification (candidate alternative: a standalone Category 11 subcategory); recorded as a human-gated outstanding-ledger item.",
+  "native_basis": "as_consumed",
+  "native_basis_label": "as consumed / ready-to-drink broth (wet weight)",
+  "scope_note": "Long-simmered stock made by extracting connective tissue and marrow from animal BONE (beef, chicken, pork). Mechanistically distinct from a vegetable or muscle-meat stock: bone is the body's principal lead reservoir, and lead partitions from bone into the broth during prolonged (often acidulated) simmering, so lead is the priority analyte and a generic stock limit understates the hazard. Certified as its own row, not the generic soups-broths-stocks row. Fish-bone broth (rare) inherits the Category 6 seafood ceilings for arsenic/mercury.",
+  "method": "HMTc Method v2.0 (government-limit default; COMPOSITE — disclosed read-across from strictest applicable principal-component sovereign ML; never occurrence-derived)",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "read_across",
+      "value": 100,
+      "value_exact": 100,
+      "provenance": "read-across",
+      "binding_component": "muscle meat (cattle/sheep/pig/poultry)",
+      "binding_id": "aunz_sch19_pb_meat_100",
+      "binding_jurisdiction": "AU-NZ",
+      "basis": "read-across from the strictest credible animal-derived lead ML (as consumed)",
+      "components": [
+        {
+          "component": "muscle meat (cattle/sheep/pig/poultry)",
+          "source_id": "aunz_sch19_pb_meat_100",
+          "value": 100,
+          "jurisdiction": "AU-NZ",
+          "basis": "portion ordinarily consumed"
+        },
+        {
+          "component": "edible offal (lead-accumulating tissue analog)",
+          "source_id": "aunz_sch19_pb_offal_500",
+          "value": 500,
+          "jurisdiction": "AU-NZ",
+          "basis": "portion ordinarily consumed"
+        }
+      ],
+      "label": "the muscle-meat lead ML (FSANZ, 100 ug/kg) binds; the looser offal ML (500) is disclosed and DELIBERATELY NOT adopted despite bone being a lead-accumulating tissue analogous to offal",
+      "stricter_unselected": [],
+      "substantiation": "Lead is the priority analyte and a NOT-MATERIAL determination is REJECTED on the bone-leaching evidence. Bone is the body's principal lead reservoir (the skeleton holds the large majority of an animal's lifetime lead burden), and published analyses have reported measurably elevated lead in bone broth relative to the water it is made from, consistent with lead partitioning from bone into the broth during prolonged (and frequently vinegar-acidulated) simmering. No credible regulator sets a maximum level for bone broth, bone, gelatin, or collagen at a credible tier (the only gelatin/meat-extract MLs on record are non-credible-tier and far looser, 2000-7000 ug/kg, so they are not used). The nearest credible animal-derived anchor is therefore adopted by read-across: the muscle-meat lead ML (100 ug/kg). Because bone is a lead-accumulating tissue, the looser edible-offal ML (500 ug/kg) is the closer tissue analog, but it is deliberately NOT adopted — the leaching pathway makes the stricter, more-protective muscle-meat anchor the correct ceiling, and the offal limit is disclosed only to make the choice auditable. The bone-leaching evidence drives MANDATORY lot-testing surveillance and a ratchet trigger; it does not license a fabricated occurrence value (Method v2.0 forbids occurrence-derivation). If a certified lot's bone-broth lead exceeds this read-across ceiling, that is a surveillance signal, not a basis for loosening the standard toward the offal limit."
+    },
+    "Cd": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "binding_component": "muscle meat (cattle/sheep/pig/poultry)",
+      "binding_id": "eu2023_cd_meat_50",
+      "binding_jurisdiction": "EU",
+      "basis": "read-across from the credible animal-derived cadmium ML (as consumed)",
+      "components": [
+        {
+          "component": "muscle meat (cattle/sheep/pig/poultry)",
+          "source_id": "eu2023_cd_meat_50",
+          "value": 50,
+          "jurisdiction": "EU",
+          "basis": "wet weight"
+        }
+      ],
+      "label": "cadmium also accumulates in bone; the EU muscle-meat cadmium ML (50 ug/kg) is the nearest credible animal-derived anchor",
+      "stricter_unselected": [],
+      "substantiation": "Cadmium, like lead, accumulates in bone and soft tissue; the same leaching logic applies at lower magnitude. The muscle-meat cadmium ML (EU 2023/915, 50 ug/kg) is the nearest credible animal-derived anchor. Lot-testing surveillance applies alongside lead."
+    },
+    "tAs": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible regulator sets a total-arsenic ML for meat, bone, or animal-derived stock; terrestrial animal tissue is a low-arsenic matrix. Total arsenic is reported as a screen; the toxic inorganic fraction is not material (iAs cell). A fish-bone broth would inherit the Category 6 seafood arsenic ceilings.",
+      "reference_method": "Total arsenic by ICP-MS; screen, not a health limit.",
+      "bounded_by": "iAs",
+      "companion_ml": null
+    },
+    "iAs": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "There is no inorganic-arsenic source in a terrestrial-animal bone broth (no rice, no marine bioaccumulation). Inorganic arsenic is bounded by the total-arsenic screen. Fish-bone broth (rare) inherits the Category 6 seafood inorganic-arsenic ceiling.",
+      "reference_method": "Bounded by the total-arsenic screen (tAs cell); no reflex iAs speciation for terrestrial bone broth.",
+      "bounded_by": "tAs",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No credible regulator sets an inorganic-arsenic content limit for meat, bone, or terrestrial animal-derived stock; inorganic-arsenic MLs are scoped to rice, cereals, and seafood. iAs is a species of and bounded by total arsenic (iAs <= tAs), controlled through the total-arsenic screen.",
+      "jurisdictions_checked": "EU 2023/915; Codex CXS 193; US FDA; FSANZ (AU-NZ Sch 19); Health Canada; UK; HK Cap 132V — none set an inorganic-arsenic content limit for meat/bone/terrestrial animal stock."
+    },
+    "tHg": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "binding_component": "meat of animal (bone broth is a long-simmered animal-bone/meat stock)",
+      "binding_id": "hk_cap132v_thg_meat-of-animal_50",
+      "binding_jurisdiction": "HK",
+      "basis": "read-across from the sovereign terrestrial-animal-meat total-mercury ML (as consumed)",
+      "components": [
+        {
+          "component": "meat of animal (bone broth is a long-simmered animal-bone/meat stock)",
+          "source_id": "hk_cap132v_thg_meat-of-animal_50",
+          "value": 50,
+          "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg"
+        }
+      ],
+      "label": "Hong Kong Cap 132V sets a total-mercury ML of 50 ug/kg for meat of animal (edible portion after removal of bone and fat); admitted to the credible-regulator set (2026-08-17 ruling), it binds bone broth's mercury cell. Terrestrial animal meat/bone is not a mercury-bioaccumulation matrix, but a sovereign meat ML now exists, so the cell is a disclosed read-across rather than a bare screen. A fish-derived bone broth additionally inherits the Category 6 seafood mercury ceiling; the stricter applicable value binds.",
+      "stricter_unselected": [],
+      "substantiation": "HK Cap 132V Part 2 item 12 (Mercury, expressed as total mercury), Meat of animal = 0.05 mg/kg = 50 ug/kg. Methylmercury (MeHg) remains bounded by this total (MeHg <= tHg) and is reflex-speciated on an elevated total-mercury result."
+    },
+    "MeHg": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Methylmercury has no formation pathway in a terrestrial-animal bone broth and is a component of total mercury (MeHg <= tHg). It is bounded by the total-mercury cell. Only a seafood-derived bone broth carries a methylmercury pathway, and that inherits the Category 6 seafood ceiling.",
+      "reference_method": "Bounded by the total-mercury cell (tHg).",
+      "bounded_by": "tHg",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No credible regulator sets a methylmercury content limit for meat, bone, or terrestrial animal-derived stock; methylmercury MLs are scoped to fish and seafood. MeHg is a species of and bounded by total mercury (MeHg <= tHg), now a disclosed read-across of 50 ug/kg (HK Cap 132V meat of animal).",
+      "jurisdictions_checked": "EU 2023/915; Codex CXS 193; US FDA CPG 540.600; FSANZ; Health Canada; UK; HK Cap 132V — none set a methylmercury limit for a terrestrial-animal bone broth."
+    },
+    "Ni": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible regulator sets a nickel ML for meat or animal-derived stock (the EU 2024/1252 nickel MLs are plant-matrix: cereals, vegetables, pulses). Nickel is reported on the panel as a screen; Tier-2 analyte.",
+      "reference_method": "Total nickel by ICP-MS; screen, not a health limit.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Sn": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "Inorganic tin is a tinplate/canned-food pathway; carton (RTD), frozen, and refrigerated bone broth have no tin source. A CANNED bone broth is governed by the canned-foods tin ML (Codex CXS 193, 250 mg/kg = 250000 ug/kg). Total tin is reported; a non-canned signal triggers packaging investigation.",
+      "reference_method": "Total tin by ICP-MS; canned forms verified against the canned-foods tin ML.",
+      "bounded_by": null,
+      "companion_ml": "codex_cxs193_sn_canned_250000"
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible regulator sets an aluminium ML for bone broth or animal-derived stock. Reported as an investigate-the-line screen (cookware, packaging).",
+      "reference_method": "Total aluminium by ICP-MS; screen, not a health limit.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible regulator sets a total-chromium ML for bone broth. Reported as a stainless-equipment-leaching screen; the toxic species is not material (Cr-VI cell).",
+      "reference_method": "Total chromium by ICP-MS; equipment-leaching tripwire.",
+      "bounded_by": "Cr-VI",
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Hexavalent chromium is reduced to Cr-III in a cooked, wet, protein-rich broth; a Cr-VI result is an artifact of the total-chromium screen. No credible regulator sets a Cr-VI food ML.",
+      "reference_method": "Cr-VI not measured routinely; total chromium (Cr cell) bounds any hexavalent fraction.",
+      "bounded_by": "Cr",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No credible regulator sets a hexavalent-chromium content limit for any food; Cr(VI) reduces to Cr(III) in a cooked, wet, protein-rich broth and any Cr(VI) signal is an artifact of the total-chromium screen. Cr(VI) is a species of and bounded by total chromium (Cr-VI <= total Cr).",
+      "jurisdictions_checked": "EU 2023/915; Codex CXS 193; US FDA; FSANZ; Health Canada; UK; HK Cap 132V — none set a hexavalent-chromium content limit for food."
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat35-config.json",
+  "version": "cat35-v1.0 (2026-08-13)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}
