@@ -238,7 +238,7 @@ rail_box:
 
 <section id="governance">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Governance</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The program is operated and governed by the Institute of Contaminant Standards (ICS), which sets how limits are established without testing products or selling marks itself.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The program is operated and governed by the <a href="https://contaminantstandards.com" style="color:#1c43ad">Institute of Contaminant Standards (ICS)</a>, which sets how limits are established without testing products or selling marks itself.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
       <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">The Institute of Contaminant Standards</div>
