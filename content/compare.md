@@ -49,8 +49,8 @@ Every certification below screens the &ldquo;big four&rdquo; &mdash; lead, cadmi
 The big four are settled ground. What separates a four-metal mark from an eight-metal one is whether the certification measures the metals no conventional panel reaches.
 
 - Chromium &mdash; among the other marks, only NSF/ANSI 173 (dietary supplements) adds hexavalent chromium, an IARC Group 1 carcinogen by ingestion. HMTc screens total chromium and speciates hexavalent chromium where a credible pathway exists. There is no general food maximum level for it.
-- Nickel &mdash; not covered by the conventional four-metal marks. The EU set its first binding food nickel limits in 2024 (Regulation 2024/1987); HMTc carries a nickel limit on every certified product.
-- Tin &mdash; not covered by the conventional four-metal marks. Codex (CXS 193) and the ANZ Food Standards Code limit tin as a packaging-integrity sentinel; HMTc carries it for the same reason.
+- Nickel &mdash; not covered by the conventional four-metal marks. The EU set its first binding food nickel limits in 2024 (Regulation 2024/1987); nickel is measured on every certified product, and carries a published ceiling in every subcategory where a credible government maximum or a disclosed read-across supports one.
+- Tin &mdash; not covered by the conventional four-metal marks. Codex (CXS 193) and the ANZ Food Standards Code limit tin as a packaging-integrity sentinel; HMTc measures it on the same rationale, and publishes a tin ceiling for the subcategories where a government maximum reaches the product form.
 - Aluminium &mdash; the universal gap. No food or supplement certification sets an aluminium action level, and even ICH Q3D &mdash; 24 elements, the broadest elemental-impurity standard for pharmaceuticals &mdash; deliberately excludes it. HMTc is the only certification in this comparison that publishes an aluminium limit.
 
 <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin:26px 0">
