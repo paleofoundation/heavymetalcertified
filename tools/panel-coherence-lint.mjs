@@ -54,10 +54,10 @@ for (const dir of fs.readdirSync(BASE).filter((d) => d.endsWith("-compiled"))) {
 
 // (2) Golden values — TEMPORARY; see header. record -> variant -> analyte -> expected value.
 const GOLDEN = {
-  "baby-cereals-dry-rice-based": { both: { iAs: 50 } },
-  "teething-and-snacks-rice-based": { both: { iAs: 50 } },
-  "baby-cereals-dry-non-rice": { both: { iAs: 50 } },
-  "teething-and-snacks-non-rice": { both: { iAs: 50 } },
+  "baby-cereals-dry-rice-based": { both: { iAs: 20 } },
+  "teething-and-snacks-rice-based": { both: { iAs: 20 } },
+  "baby-cereals-dry-non-rice": { both: { iAs: 20 } },
+  "teething-and-snacks-non-rice": { both: { iAs: 20 } },
   "infant-formula-powder": { soy: { Cd: 20 } },
   "infant-formula-rtf-liquid": { soy: { Cd: 10 } },
 }
