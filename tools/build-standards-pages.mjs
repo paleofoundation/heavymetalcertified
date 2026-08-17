@@ -124,7 +124,8 @@ for (const row of catalog.rows) {
     `variant_type: ${row.variant_type}`,
     `hmi_literature_link: ${row.hmi_literature_link}`,
     `effective_date: ${today}`,
-    hasFirm ? "scholar_eligible: true" : "scholar_eligible: false",
+    // Normative certification specification; never a scholarly work (2026-08-17).
+    "scholar_eligible: false",
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "snapshot:",
     `  - { k: "Analytes published", v: "${published.length} / ${PANEL.length}" }`,

@@ -9,15 +9,10 @@
         "type": "gov",
         "value": 10,
         "value_exact": 10,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2025_pb_baby_food_10",
+        "binding_jurisdiction": "PA",
+        "binding_id": "pa_decreto467_2007_pb_fruits",
         "basis_note": "face value",
         "per_country": {
-          "US": {
-            "value": 10,
-            "converted": true,
-            "id": "fda2025_pb_baby_food_10"
-          },
           "PA": {
             "value": 10,
             "converted": true,

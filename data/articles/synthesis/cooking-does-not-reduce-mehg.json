@@ -7,13 +7,34 @@
   "metals": ["Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["does cooking remove mercury from fish", "methylmercury heat stable", "cooking does not reduce mercury", "mercury in canned tuna", "methylmercury protein binding", "seafood mercury certification", "how to reduce mercury in fish"],
+  "published": "2026-08-10",
+  "keywords": [
+    "does cooking remove mercury from fish",
+    "methylmercury heat stable",
+    "cooking does not reduce mercury",
+    "mercury in canned tuna",
+    "methylmercury protein binding",
+    "seafood mercury certification",
+    "how to reduce mercury in fish"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Predatory fish standard", "href": "/standards/fish-marine-predatory" },
-    { "label": "Canned seafood standard", "href": "/standards/canned-seafood" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Predatory fish standard",
+      "href": "/standards/fish-marine-predatory"
+    },
+    {
+      "label": "Canned seafood standard",
+      "href": "/standards/canned-seafood"
+    }
   ],
   "abstract": "No — cooking does not reduce the methylmercury in fish, and neither does smoking, pickling, frying, or canning. Methylmercury is bound covalently to cysteine residues in muscle protein through one of the strongest bonds in biochemistry, and heat denatures the surrounding protein without cleaving that bond, so the metal stays in the cooked flesh and is absorbed at more than ninety percent when eaten. Comparative measurements across dozens of species and preparation forms show the methylmercury content essentially unchanged from raw to smoked, fresh to canned. The certification consequence is exact: the [methylmercury](/analytes/mercury) measured on the raw product is the dose a consumer receives, so verification has to be performed on the product as sold, and consumer messaging must never imply that thorough cooking lowers the risk. Species selection at sourcing, not any kitchen practice, is the only lever that meaningfully lowers exposure. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,12 +78,68 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Mechanisms of methylmercury neurotoxicity and cysteine–protein binding", "meta": "Farina et al., 2011. Establishes that methylmercury binds covalently to cysteine thiol groups in muscle protein and is absorbed across the mammalian intestine at more than 90 percent bioavailability.", "type": "Journal" },
-    { "n": 2, "title": "Methylmercury versus total mercury across fish species and preparation forms in the BfR MEAL study", "meta": "German Federal Institute for Risk Assessment (BfR), 2024. Measured total and methylmercury in pooled ready-to-eat fish across more than 30 species and preparation forms; the methylmercury-to-total ratio clusters between 76 and 113 percent and does not shift with cooking, smoking, or pickling.", "type": "Government" },
-    { "n": 3, "title": "Total mercury in canned tuna sold in Quito, Ecuador", "meta": "Aguilar-Miranda et al., 2024. Total mercury across 60 canned-tuna samples in three brands (means 0.14, 0.25, 0.41 mg/kg; literature range 0.005 to about 1.47 mg/kg); reports that roughly 89 percent of canned-tuna total mercury is methylmercury, unchanged by canning.", "type": "Journal" },
-    { "n": 4, "title": "FDA–EPA advice about eating fish: Best Choices, Good Choices, and Choices to Avoid", "meta": "United States Food and Drug Administration and Environmental Protection Agency. Species-stratified meal-frequency guidance operationalising methylmercury exposure reduction through species selection and consumption frequency.", "type": "Government" },
-    { "n": 5, "title": "US EPA reference dose for methylmercury", "meta": "United States Environmental Protection Agency. Reference dose of 0.1 µg methylmercury per kg body weight per day, used to calibrate the safe upper bound of dietary exposure.", "type": "Government" },
-    { "n": 6, "title": "EFSA provisional tolerable weekly intake for methylmercury", "meta": "European Food Safety Authority. Provisional tolerable weekly intake of 1.3 µg methylmercury per kg body weight per week for the safe upper bound of dietary exposure.", "type": "Government" },
-    { "n": 7, "title": "Heavy Metal Index — cooking does not reduce methylmercury (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg", "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for the mechanism and the comparative cooked-versus-raw measurements.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+      "meta": "Establishes that methylmercury binds covalently to cysteine thiol groups in muscle protein and is absorbed across the mammalian intestine at more than 90 percent bioavailability.",
+      "type": "Journal",
+      "doi": "10.1016/j.lfs.2011.05.019",
+      "href": "https://doi.org/10.1016/j.lfs.2011.05.019",
+      "authors": "Farina, Marcelo; Rocha, João B.T.; Aschner, Michael",
+      "year": 2011,
+      "journal": "Life Sciences",
+      "volume": "89",
+      "issue": "15-16",
+      "pages": "555-563",
+      "cite_key": "farina-rocha-aschner-2011-mehg-mechanism",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Methylmercury versus total mercury across fish species and preparation forms in the BfR MEAL study",
+      "meta": "German Federal Institute for Risk Assessment (BfR), 2024. Measured total and methylmercury in pooled ready-to-eat fish across more than 30 species and preparation forms; the methylmercury-to-total ratio clusters between 76 and 113 percent and does not shift with cooking, smoking, or pickling.",
+      "type": "Government"
+    },
+    {
+      "n": 3,
+      "title": "Total mercury exposure through canned tuna in water sold in Quito, Ecuador",
+      "meta": "Total mercury across 60 canned-tuna samples in three brands (means 0.14, 0.25, 0.41 mg/kg; literature range 0.005 to about 1.47 mg/kg); reports that roughly 89 percent of canned-tuna total mercury is methylmercury, unchanged by canning.",
+      "type": "Journal",
+      "doi": "10.1038/s41598-024-79430-y",
+      "href": "https://doi.org/10.1038/s41598-024-79430-y",
+      "authors": "Aguilar-Miranda, Adriana; Fernández, Lenys; Yánez-Jácome, Gabriela S., et al.",
+      "year": 2024,
+      "journal": "Scientific Reports",
+      "volume": "14",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "aguilar-miranda2024-thg-canned-tuna-ecuador",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "FDA–EPA advice about eating fish: Best Choices, Good Choices, and Choices to Avoid",
+      "meta": "United States Food and Drug Administration and Environmental Protection Agency. Species-stratified meal-frequency guidance operationalising methylmercury exposure reduction through species selection and consumption frequency.",
+      "type": "Government"
+    },
+    {
+      "n": 5,
+      "title": "US EPA reference dose for methylmercury",
+      "meta": "United States Environmental Protection Agency. Reference dose of 0.1 µg methylmercury per kg body weight per day, used to calibrate the safe upper bound of dietary exposure.",
+      "type": "Government"
+    },
+    {
+      "n": 6,
+      "title": "EFSA provisional tolerable weekly intake for methylmercury",
+      "meta": "European Food Safety Authority. Provisional tolerable weekly intake of 1.3 µg methylmercury per kg body weight per week for the safe upper bound of dietary exposure.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — cooking does not reduce methylmercury (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg",
+      "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for the mechanism and the comparative cooked-versus-raw measurements.",
+      "type": "Reference"
+    }
   ]
 }

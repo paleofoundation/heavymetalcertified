@@ -14,7 +14,7 @@ methodology_version: "Method v2.0 — strictest credible government limit per an
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/kitchen-countertop-cleaners
 effective_date: 2026-08-13
-scholar_eligible: true
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:

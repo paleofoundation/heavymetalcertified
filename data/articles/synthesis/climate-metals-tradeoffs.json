@@ -7,13 +7,34 @@
   "metals": ["Arsenic", "Cadmium", "Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["arsenic cadmium trade-off in rice", "alternate wetting and drying cadmium", "rice irrigation heavy metals", "climate-smart rice arsenic", "cadmium in rice grain", "multi-metal food certification", "climate adaptation heavy metals food"],
+  "published": "2026-08-10",
+  "keywords": [
+    "arsenic cadmium trade-off in rice",
+    "alternate wetting and drying cadmium",
+    "rice irrigation heavy metals",
+    "climate-smart rice arsenic",
+    "cadmium in rice grain",
+    "multi-metal food certification",
+    "climate adaptation heavy metals food"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs" },
-    { "label": "Arsenic — analyte review", "href": "/analytes/arsenic" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Rice & bulk grain standard", "href": "/standards/rice-bulk-grain" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs"
+    },
+    {
+      "label": "Arsenic — analyte review",
+      "href": "/analytes/arsenic"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Rice & bulk grain standard",
+      "href": "/standards/rice-bulk-grain"
+    }
   ],
   "abstract": "Yes — in rice, the water management that lowers one toxic metal tends to raise another. Soil redox chemistry, set in practice by the irrigation regime, drives inorganic arsenic and cadmium in opposite directions: continuously flooded paddies push arsenic into the grain while suppressing cadmium, and the drier, water-saving regimes promoted as climate adaptation do the reverse. Field experiments at the University of Delaware measured grain arsenic falling by roughly 30 to 50 percent under alternate wetting and drying, while the driest paddies breached the Codex cadmium maximum of 0.4 mg/kg in both study years. The certification consequence is direct: a standard that limits only arsenic rewards a grower for draining the field even as cadmium climbs past its own ceiling. Only a standard that caps every relevant metal at once — the structure of the [Heavy Metal Certified rice standard](/standards/rice-bulk-grain) — stops one number being optimized at the expense of another. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/climate-metals-tradeoffs), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,12 +78,78 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Controlling exposure to arsenic and cadmium from rice via irrigation management", "meta": "Limmer and Seyfferth, 2024. Across six irrigation treatments in University of Delaware paddy mesocosms, grain inorganic arsenic (~20–90 µg/kg dw) and cadmium (~10–150 µg/kg dw) moved in opposite directions; alternate wetting and drying cut arsenic by 30–50% while keeping cadmium below the EU 100 µg/kg limit in most replicates.", "type": "Journal", "href": "https://doi.org/10.1021/acs.est.4c02310" },
-    { "n": 2, "title": "Arsenic, mercury and cadmium in rice grain across variably flooded paddies", "meta": "Seyfferth et al., 2025. Across a soil redox gradient from roughly −177 to +623 mV, the driest paddies exceeded the Codex 0.4 mg/kg cadmium maximum for polished grain in both study years while grain arsenic stayed within limits.", "type": "Journal", "href": "https://doi.org/10.1029/2025GH001410" },
-    { "n": 3, "title": "Codex maximum level for cadmium in polished rice", "meta": "Codex Alimentarius. Maximum level of 0.4 mg/kg for cadmium in polished rice.", "type": "Standard" },
-    { "n": 4, "title": "EU maximum level for cadmium in polished rice", "meta": "European Union. Commission Regulation (EU) 2023/915. 100 µg/kg (0.10 mg/kg) maximum for cadmium in polished rice.", "type": "Legislation" },
-    { "n": 5, "title": "Climate change and methylmercury in Chinese freshwater fish", "meta": "Wu et al., 2025. From ~13,000 fish-mercury samples across 164 Chinese sites, freshwater wild fish carried methylmercury 2.9–6.2× above farmed fish (mean 30.9 µg/kg ww); climate-scenario modelling projects a ~60% rise by 2031–2060, driven mainly by solar-radiation-enhanced methylation.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2424001122" },
-    { "n": 6, "title": "FDA Closer to Zero action plan and EU maximum levels for toxic elements in foods for infants and young children", "meta": "US Food and Drug Administration and European Union. Programme and maximum levels governing toxic elements, including arsenic and cadmium, in infant and young-child foods such as rice cereal.", "type": "Government" },
-    { "n": 7, "title": "Heavy Metal Index — climate adaptation and heavy-metal trade-offs (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying the three anchor studies and their per-record source pages.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs" }
+    {
+      "n": 1,
+      "title": "Controlling exposure to As and Cd from rice via irrigation management",
+      "meta": "Across six irrigation treatments in University of Delaware paddy mesocosms, grain inorganic arsenic (~20–90 µg/kg dw) and cadmium (~10–150 µg/kg dw) moved in opposite directions; alternate wetting and drying cut arsenic by 30–50% while keeping cadmium below the EU 100 µg/kg limit in most replicates.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1007/s10653-024-02116-x",
+      "doi": "10.1007/s10653-024-02116-x",
+      "authors": "Limmer, Matt A.; Seyfferth, Angelia L.",
+      "year": 2024,
+      "journal": "Environmental Geochemistry and Health",
+      "volume": "46",
+      "issue": "9",
+      "pages": null,
+      "cite_key": "limmer2024-arsenic-cadmium-rice-irrigation",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Concentrations and Health Implications of As, Hg, and Cd and Micronutrients in Rice and Emissions of CH<sub>4</sub> From Variably Flooded Paddies",
+      "meta": "Across a soil redox gradient from roughly −177 to +623 mV, the driest paddies exceeded the Codex 0.4 mg/kg cadmium maximum for polished grain in both study years while grain arsenic stayed within limits.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1029/2025GH001410",
+      "doi": "10.1029/2025GH001410",
+      "authors": "Seyfferth, Angelia L.; Limmer, Matt A.; Jackson, Brian P., et al.",
+      "year": 2025,
+      "journal": "GeoHealth",
+      "volume": "9",
+      "issue": "8",
+      "pages": null,
+      "cite_key": "seyfferth2025-rice-water-management-as-hg-cd",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 3,
+      "title": "Codex maximum level for cadmium in polished rice",
+      "meta": "Codex Alimentarius. Maximum level of 0.4 mg/kg for cadmium in polished rice.",
+      "type": "Standard"
+    },
+    {
+      "n": 4,
+      "title": "EU maximum level for cadmium in polished rice",
+      "meta": "European Union. Commission Regulation (EU) 2023/915. 100 µg/kg (0.10 mg/kg) maximum for cadmium in polished rice.",
+      "type": "Legislation"
+    },
+    {
+      "n": 5,
+      "title": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "meta": "From ~13,000 fish-mercury samples across 164 Chinese sites, freshwater wild fish carried methylmercury 2.9–6.2× above farmed fish (mean 30.9 µg/kg ww); climate-scenario modelling projects a ~60% rise by 2031–2060, driven mainly by solar-radiation-enhanced methylation.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2421921122",
+      "doi": "10.1073/pnas.2421921122",
+      "authors": "Wu, Mengjie; Wu, Xinda; Saiz-Lopez, Alfonso, et al.",
+      "year": 2025,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "122",
+      "issue": "13",
+      "pages": null,
+      "cite_key": "wu2025-climate-meghan-freshwater-fish-china",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 6,
+      "title": "FDA Closer to Zero action plan and EU maximum levels for toxic elements in foods for infants and young children",
+      "meta": "US Food and Drug Administration and European Union. Programme and maximum levels governing toxic elements, including arsenic and cadmium, in infant and young-child foods such as rice cereal.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — climate adaptation and heavy-metal trade-offs (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying the three anchor studies and their per-record source pages.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs"
+    }
   ]
 }

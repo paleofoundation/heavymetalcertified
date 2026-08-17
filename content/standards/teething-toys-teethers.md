@@ -13,15 +13,15 @@ standard_version: "1.0 (2026-08-10)"
 methodology_version: "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)"
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/teething-toys-teethers
-effective_date: 2026-08-17
-scholar_eligible: true
+effective_date: 2026-08-14
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"
   body: "v1.0 &middot; 2026-08-10 &middot; current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises."
 snapshot:
-  - { k: "Analytes limited", v: "8 / 10" }
+  - { k: "Analytes limited", v: "8 / 11" }
   - { k: "Method", v: "Strictest government limit, correct basis" }
   - { k: "Governing basis", v: "toy migration" }
   - { k: "Standard version", v: "1.0 (2026-08-10)" }

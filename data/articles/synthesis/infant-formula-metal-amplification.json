@@ -7,13 +7,34 @@
   "metals": ["Aluminum", "Lead", "Cadmium", "Arsenic", "Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["aluminum in infant formula", "heavy metals in infant formula", "soy formula heavy metals", "infant formula lead and cadmium", "infant formula heavy metal testing", "aluminum vs breastmilk", "infant formula certification"],
+  "published": "2026-08-10",
+  "keywords": [
+    "aluminum in infant formula",
+    "heavy metals in infant formula",
+    "soy formula heavy metals",
+    "infant formula lead and cadmium",
+    "infant formula heavy metal testing",
+    "aluminum vs breastmilk",
+    "infant formula certification"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification" },
-    { "label": "Aluminum — analyte review", "href": "/analytes/aluminum" },
-    { "label": "Infant formula (powder) standard", "href": "/standards/infant-formula-powder" },
-    { "label": "Infant formula (ready-to-feed) standard", "href": "/standards/infant-formula-ready-to-feed" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification"
+    },
+    {
+      "label": "Aluminum — analyte review",
+      "href": "/analytes/aluminum"
+    },
+    {
+      "label": "Infant formula (powder) standard",
+      "href": "/standards/infant-formula-powder"
+    },
+    {
+      "label": "Infant formula (ready-to-feed) standard",
+      "href": "/standards/infant-formula-ready-to-feed"
+    }
   ],
   "abstract": "Manufactured infant formula carries a heavy-metal profile dominated by [aluminum](/analytes/aluminum), running roughly ten to forty times the aluminum concentration of breastmilk, together with detectable lead and cadmium in most products. Prepared formula measures around 100 to 760 µg/L of aluminum against roughly 15 to 30 µg/L in breastmilk, and the load rises further in soy-based and powdered formats — a pattern reproduced across surveys in Canada, Pakistan, the United Kingdom, Brazil, and a global review. Because an infant fed formula as a sole diet receives this load across the developmental window, per-serving surveillance built for varied adult diets understates the exposure for exactly the population that matters. The certification consequence is direct: an infant-formula standard has to carry the full analyte panel, aluminum included, and rely on lot-level finished-product testing, because the load varies with base — soy versus dairy — and format — powder versus ready-to-feed — rather than with the recipe on paper. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/infant-formula-metal-amplification), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,13 +82,124 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Aluminum in United Kingdom infant formulas by graphite-furnace atomic absorption", "meta": "Burrell and Exley, 2010. Aluminum in UK ready-made formula 175.5–700.4 µg/L and reconstituted powders 333.3–629.0 µg/L, about ten to forty times the breastmilk level of 15–30 µg/L.", "type": "Journal" },
-    { "n": 2, "title": "The aluminum content of United Kingdom infant formulas on repeat survey", "meta": "Chuchu et al., 2013. Thirty UK products resurveyed three years later; aluminum had not fallen, with two soy-based powders highest at 656 and 756 µg/L.", "type": "Journal" },
-    { "n": 3, "title": "Lead, cadmium and aluminum in Canadian infant formulae by format and protein source", "meta": "Dabeka et al., 2011 (Health Canada). Powdered soy-based formula aluminum mean 733 ng/g versus 177 ng/g for milk-based; every manufacturer could produce milk-based formula below 50 ng/g aluminum.", "type": "Journal" },
-    { "n": 4, "title": "Toxic elements in imported milk- and soy-based infant formulae sold in Pakistan", "meta": "Kazi et al., 2009. Soy-based formula higher than milk-based on all three metals (dry-powder basis): aluminum 2270 versus 1018.5 µg/kg, cadmium 11.7 versus 7.86 µg/kg, lead 109.4 versus 64.2 µg/kg.", "type": "Journal" },
-    { "n": 5, "title": "Heavy metals in processed baby foods and infant formulas worldwide: a scoping review", "meta": "Collado-Lopez et al., 2025. Across 251 infant formulas, lead detected in 74%, cadmium 61%, arsenic 63%, mercury 42%; cadmium in 91% of soy-based versus 44% of cow-based items.", "type": "Journal" },
-    { "n": 6, "title": "Trace elements and in vitro bioaccessibility in soy-based beverages", "meta": "Milani et al., 2023. Aluminum rose with processing: isolate-protein soy beverage mean 758 µg/L versus 176 µg/L for whole-soybean.", "type": "Journal" },
-    { "n": 7, "title": "Total aluminum and in vitro bioaccessibility in Brazilian infant foods", "meta": "de Paiva et al., 2020. Soy-based drink aluminum up to 2860 µg/kg; bioaccessible fraction 0.5–48% of total; three daily portions could reach the full infant aluminum provisional tolerable weekly intake.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index — infant formula metal amplification (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification", "meta": "The independent literature synthesis this analysis reframes, carrying all seven anchor sources and their per-record pages.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "There is (still) too much aluminium in infant formulas",
+      "meta": "Aluminum in UK ready-made formula 175.5–700.4 µg/L and reconstituted powders 333.3–629.0 µg/L, about ten to forty times the breastmilk level of 15–30 µg/L.",
+      "type": "Journal",
+      "doi": "10.1186/1471-2431-10-63",
+      "href": "https://doi.org/10.1186/1471-2431-10-63",
+      "authors": "Burrell, Shelle-Ann M; Exley, Christopher",
+      "year": 2010,
+      "journal": "BMC Pediatrics",
+      "volume": "10",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "burrell2010-aluminium-in-infant-formulas",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "The aluminium content of infant formulas remains too high",
+      "meta": "Thirty UK products resurveyed three years later; aluminum had not fallen, with two soy-based powders highest at 656 and 756 µg/L.",
+      "type": "Journal",
+      "doi": "10.1186/1471-2431-13-162",
+      "href": "https://doi.org/10.1186/1471-2431-13-162",
+      "authors": "Chuchu, Nancy; Patel, Bhavini; Sebastian, Blaise, et al.",
+      "year": 2013,
+      "journal": "BMC Pediatrics",
+      "volume": "13",
+      "issue": "1",
+      "pages": null,
+      "cite_key": "chuchu2013-aluminium-in-infant-formulas",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Lead, cadmium and aluminum in Canadian infant formulae, oral electrolytes and glucose solutions",
+      "meta": "Dabeka et al., 2011 (Health Canada). Powdered soy-based formula aluminum mean 733 ng/g versus 177 ng/g for milk-based; every manufacturer could produce milk-based formula below 50 ng/g aluminum.",
+      "type": "Journal",
+      "doi": "10.1080/19393210.2011.571795",
+      "href": "https://doi.org/10.1080/19393210.2011.571795",
+      "authors": "Dabeka, Robert; Fouquet, Andre; Belisle, Stephane, et al.",
+      "year": 2011,
+      "journal": "Food Additives &amp; Contaminants: Part A",
+      "volume": "28",
+      "issue": "6",
+      "pages": "744-753",
+      "cite_key": "dabeka2011-canada-infant-formula-lead-cadmium-aluminum",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Determination of toxic elements in infant formulae by using electrothermal atomic absorption spectrometer",
+      "meta": "Soy-based formula higher than milk-based on all three metals (dry-powder basis): aluminum 2270 versus 1018.5 µg/kg, cadmium 11.7 versus 7.86 µg/kg, lead 109.4 versus 64.2 µg/kg.",
+      "type": "Journal",
+      "doi": "10.1016/j.fct.2009.03.025",
+      "href": "https://doi.org/10.1016/j.fct.2009.03.025",
+      "authors": "Kazi, Tasneem G.; Jalbani, Nusrat; Baig, Jameel A., et al.",
+      "year": 2009,
+      "journal": "Food and Chemical Toxicology",
+      "volume": "47",
+      "issue": "7",
+      "pages": "1425-1429",
+      "cite_key": "kazi2009-toxic-elements-in-infant-formulae",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Concentrations of Heavy Metals in Processed Baby Foods and Infant Formulas Worldwide: A Scoping Review",
+      "meta": "Across 251 infant formulas, lead detected in 74%, cadmium 61%, arsenic 63%, mercury 42%; cadmium in 91% of soy-based versus 44% of cow-based items.",
+      "type": "Journal",
+      "doi": "10.1093/nutrit/nuaf138",
+      "href": "https://doi.org/10.1093/nutrit/nuaf138",
+      "authors": "Collado-López, Sonia; Rodríguez Hernández, María Fernanda; Mariscal-Moreno, Rosa María, et al.",
+      "year": 2026,
+      "journal": "Nutrition Reviews",
+      "volume": "84",
+      "issue": "2",
+      "pages": "448-461",
+      "cite_key": "collado-lopez2025-heavy-metals-baby-food-formula",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "Trace Elements in Soy-Based Beverages: A Comprehensive Study of Total Content and In Vitro Bioaccessibility",
+      "meta": "Aluminum rose with processing: isolate-protein soy beverage mean 758 µg/L versus 176 µg/L for whole-soybean.",
+      "type": "Journal",
+      "doi": "10.3390/ijerph20064986",
+      "href": "https://doi.org/10.3390/ijerph20064986",
+      "authors": "Milani, Raquel Fernanda; Mauri, Adriana Aparecida; Sanches, Vitor Lacerda, et al.",
+      "year": 2023,
+      "journal": "International Journal of Environmental Research and Public Health",
+      "volume": "20",
+      "issue": "6",
+      "pages": "4986",
+      "cite_key": "milani2023-trace-elements-soy-based-beverages",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "Aluminium in infant foods: Total content, effect of in vitro digestion on bioaccessible fraction and preliminary exposure assessment",
+      "meta": "Soy-based drink aluminum up to 2860 µg/kg; bioaccessible fraction 0.5–48% of total; three daily portions could reach the full infant aluminum provisional tolerable weekly intake.",
+      "type": "Journal",
+      "doi": "10.1016/j.jfca.2020.103493",
+      "href": "https://doi.org/10.1016/j.jfca.2020.103493",
+      "authors": "de Paiva, Esther Lima; Medeiros, Camila; Andrekowisk Fioravanti, Maria Isabel, et al.",
+      "year": 2020,
+      "journal": "Journal of Food Composition and Analysis",
+      "volume": "90",
+      "issue": null,
+      "pages": "103493",
+      "cite_key": "de-paiva-2020-aluminium-infant-foods-bioaccessibility",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — infant formula metal amplification (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification",
+      "meta": "The independent literature synthesis this analysis reframes, carrying all seven anchor sources and their per-record pages.",
+      "type": "Reference"
+    }
   ]
 }

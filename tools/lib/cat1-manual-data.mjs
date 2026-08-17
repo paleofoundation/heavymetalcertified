@@ -22,9 +22,14 @@ const PAGES = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/cat1-pa
 // ── analyte panel ────────────────────────────────────────────────────────────
 // Order and column labels are the web master matrix's (build-cat1-manual.mjs).
 // `full`/`tier` are the derivation renderer's (build-cat1-standard-pages.mjs).
+// Nine cells: the eight-total laboratory panel required by the canonical analyte contract
+// (Pb, Cd, tAs, tHg, Ni, Sn, Al, total Cr) plus iAs, Cat 1's core species cell. A species
+// cell is additional to its parent total and never substitutes for it, so tAs and iAs both
+// appear. This array must stay in step with PANEL in build-cat1-standard-pages.mjs.
 export const ANALYTES = [
   { key: "Pb", col: "Lead", full: "Lead (Pb)", tier: "Tier 1" },
   { key: "iAs", col: "iAs", full: "Inorganic arsenic (iAs)", tier: "Tier 1" },
+  { key: "tAs", col: "tAs", full: "Total arsenic (tAs)", tier: "Tier 2" },
   { key: "tHg", col: "Hg", full: "Mercury (tHg)", tier: "Tier 1" },
   { key: "Cd", col: "Cd", full: "Cadmium (Cd)", tier: "Tier 1" },
   { key: "Cr", col: "Cr", full: "Total chromium (Cr)", tier: "Tier 2" },
@@ -65,7 +70,7 @@ export const ROWS = PAGES.pages.map((p) => ({ slug: p.slug, name: p.name, varian
 const cell = (c) => (c == null ? "—" : c.value == null ? (c.type === "not_material" ? "n/m" : "—") : String(c.value))
 
 // ── master matrix ────────────────────────────────────────────────────────────
-// One row's eight display values + basis. Split cells ("250 cow / 400 soy",
+// One row's nine display values + basis. Split cells ("250 cow / 400 soy",
 // "100 rice-based / 20 non-rice") are produced exactly as the web renderer does:
 // collapse to one value when every variant agrees, else join "<value> <label>".
 export function masterRow(row) {

@@ -7,13 +7,34 @@
   "metals": ["Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["subsistence fishing mercury", "methylmercury exposure", "fish consumption advisory", "freshwater fish methylmercury", "vulnerable populations mercury", "provenance-aware fish standards", "methylmercury in fish"],
+  "published": "2026-08-10",
+  "keywords": [
+    "subsistence fishing mercury",
+    "methylmercury exposure",
+    "fish consumption advisory",
+    "freshwater fish methylmercury",
+    "vulnerable populations mercury",
+    "provenance-aware fish standards",
+    "methylmercury in fish"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" },
-    { "label": "Freshwater fish standard", "href": "/standards/fish-freshwater" },
-    { "label": "Marine predatory fish standard", "href": "/standards/fish-marine-predatory" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    },
+    {
+      "label": "Freshwater fish standard",
+      "href": "/standards/fish-freshwater"
+    },
+    {
+      "label": "Marine predatory fish standard",
+      "href": "/standards/fish-marine-predatory"
+    }
   ],
   "abstract": "Regulatory fish-consumption advice — the FDA-EPA advisory, the EFSA dietary methylmercury opinion, and their national equivalents — is calibrated to how a typical Western shopper eats market-purchased seafood, at ordinary frequencies and species mixes. It does not describe the global subsistence-fishing consumer, who eats freshwater or pelagic fish caught daily from local waters and, on the converging evidence of three recent A-tier studies, routinely carries methylmercury above the thresholds that advice is built against. A global model estimates that 84 to 99 percent of subsistence-fishing entities are likely to exceed methylmercury exposure thresholds at typical subsistence consumption rates. For certification the consequence is a boundary: a food certificate acts on commercial market products, so subsistence exposure sits outside what any certificate can promise — while the same evidence argues for provenance-aware [freshwater](/standards/fish-freshwater) and predatory-fish standards where market fish originate in affected waters. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,12 +82,78 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Global fishing patterns amplify human exposures to methylmercury", "meta": "Li et al., 2024. Largest global dataset of methylmercury extracted from ocean fisheries; catch-weighted concentrations span two orders of magnitude and tropical and subtropical fisheries account for over 70 percent of the total; estimates 84 to 99 percent of subsistence-fishing entities exceed methylmercury exposure thresholds.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2405898121" },
-    { "n": 2, "title": "US EPA methylmercury Reference Dose", "meta": "United States Environmental Protection Agency. Reference Dose of 0.1 µg/kg body weight per day for methylmercury, the intake threshold against which Li 2024 evaluates catch-weighted exposure.", "type": "Government" },
-    { "n": 3, "title": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers", "meta": "Wu et al., 2025. About 13,000 fish mercury samples across 164 China sites, 2005-2020; freshwater wild fish carry 2.9 to 6.2 times the methylmercury of farmed fish; freshwater fish supplied 51 percent of China's fish methylmercury intake in 2011, with concentrations projected to rise about 60 percent by 2031-2060.", "type": "Journal", "href": "https://doi.org/10.1073/pnas.2424001122" },
-    { "n": 4, "title": "Systematic review and spatiotemporal assessment of mercury concentration in fish from the Tapajós River Basin", "meta": "Auzier-Guimarães et al., 2025. PRISMA review of 36 studies (1992-2022), 143 fish species, from a gold-mining-impacted Amazon basin; 89 percent of 129 food-fish species show a Target Hazard Quotient above 1 at the local consumption rate of 116.25 g per capita per day.", "type": "Journal", "href": "https://doi.org/10.1021/acsenvironau.4c00053" },
-    { "n": 5, "title": "FDA-EPA advice about eating fish", "meta": "US Food and Drug Administration and Environmental Protection Agency. Joint fish-consumption advice calibrated to US average consumption and market-purchased retail species mixes.", "type": "Government" },
-    { "n": 6, "title": "EFSA opinion on chronic dietary exposure to methylmercury", "meta": "European Food Safety Authority. Chronic dietary methylmercury exposure assessment based on European-population intake data.", "type": "Government" },
-    { "n": 7, "title": "Heavy Metal Index — subsistence-fishing methylmercury disparity (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for Li 2024, Wu 2025 and Auzier-Guimarães 2025.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity" }
+    {
+      "n": 1,
+      "title": "Global fishing patterns amplify human exposures to methylmercury",
+      "meta": "Largest global dataset of methylmercury extracted from ocean fisheries; catch-weighted concentrations span two orders of magnitude and tropical and subtropical fisheries account for over 70 percent of the total; estimates 84 to 99 percent of subsistence-fishing entities exceed methylmercury exposure thresholds.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2405898121",
+      "doi": "10.1073/pnas.2405898121",
+      "authors": "Li, Mi-Ling; Thackray, Colin P.; Lam, Vicky W. Y., et al.",
+      "year": 2024,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "121",
+      "issue": "40",
+      "pages": null,
+      "cite_key": "li2024-global-fisheries-mehg",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 2,
+      "title": "US EPA methylmercury Reference Dose",
+      "meta": "United States Environmental Protection Agency. Reference Dose of 0.1 µg/kg body weight per day for methylmercury, the intake threshold against which Li 2024 evaluates catch-weighted exposure.",
+      "type": "Government"
+    },
+    {
+      "n": 3,
+      "title": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "meta": "About 13,000 fish mercury samples across 164 China sites, 2005-2020; freshwater wild fish carry 2.9 to 6.2 times the methylmercury of farmed fish; freshwater fish supplied 51 percent of China's fish methylmercury intake in 2011, with concentrations projected to rise about 60 percent by 2031-2060.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1073/pnas.2421921122",
+      "doi": "10.1073/pnas.2421921122",
+      "authors": "Wu, Mengjie; Wu, Xinda; Saiz-Lopez, Alfonso, et al.",
+      "year": 2025,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "volume": "122",
+      "issue": "13",
+      "pages": null,
+      "cite_key": "wu2025-climate-meghan-freshwater-fish-china",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 4,
+      "title": "Systematic Review and Spatiotemporal Assessment of Mercury Concentration in Fish from the Tapajós River Basin: Implications for Environmental and Human Health",
+      "meta": "PRISMA review of 36 studies (1992-2022), 143 fish species, from a gold-mining-impacted Amazon basin; 89 percent of 129 food-fish species show a Target Hazard Quotient above 1 at the local consumption rate of 116.25 g per capita per day.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1021/acsenvironau.4c00053",
+      "doi": "10.1021/acsenvironau.4c00053",
+      "authors": "Guimarães, Karen L. Auzier; do Nascimento Andrade, Sarah J.; Liscano-Carreño, Ahieska A., et al.",
+      "year": 2025,
+      "journal": "ACS Environmental Au",
+      "volume": "5",
+      "issue": "1",
+      "pages": "86-100",
+      "cite_key": "auzier-guimaraes2025-mercury-tapajos-fish",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "FDA-EPA advice about eating fish",
+      "meta": "US Food and Drug Administration and Environmental Protection Agency. Joint fish-consumption advice calibrated to US average consumption and market-purchased retail species mixes.",
+      "type": "Government"
+    },
+    {
+      "n": 6,
+      "title": "EFSA opinion on chronic dietary exposure to methylmercury",
+      "meta": "European Food Safety Authority. Chronic dietary methylmercury exposure assessment based on European-population intake data.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Index — subsistence-fishing methylmercury disparity (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying the full anchor-source records for Li 2024, Wu 2025 and Auzier-Guimarães 2025.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity"
+    }
   ]
 }
