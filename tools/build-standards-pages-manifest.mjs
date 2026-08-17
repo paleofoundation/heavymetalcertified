@@ -72,9 +72,11 @@ const panel = PANEL_ORDER.filter((a) => records.some((r) => {
   return a in cells
 }))
 
-// Prose is assembled from the config's own documentation fields rather than written here, so the page
-// and the derivation report cannot tell different stories about how the limits were set.
-const methodProse = [cat.method_note, cfg && cfg._doc]
+// Prose comes from the config's PUBLIC method fields, so the page and the derivation report cannot
+// tell different stories about how the limits were set. The config's `_doc` is deliberately excluded:
+// it is internal staff documentation (it names the firewall, the compiler, and the file layout) and
+// publishing it would put staff-facing text on a public certification page.
+const methodProse = [cat.method_note, cat.public_prose]
   .filter((s) => typeof s === "string" && s.trim().length > 40)
   .map((s) => s.trim())
 
