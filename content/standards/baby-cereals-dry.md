@@ -14,7 +14,7 @@ methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 1
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/baby-cereals-dry
 effective_date: 2026-08-06
-scholar_eligible: true
+scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
