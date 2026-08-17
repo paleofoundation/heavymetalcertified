@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """
+SUPERSEDED IN PART: the iAs=50 (parent-bound) assignments below were replaced the same day by
+2026-08-17b-cat1-ias-category-floor-20.py (iAs=20, owner decision). Running --check will report those
+4 iAs cells as not-at-target — that is expected. The soy-Cd and converted-flag corrections here remain
+current.
+
 Cat-1 arsenic + soy-cadmium scope corrections — deterministic, idempotent patch-as-code.
 
 WHY THIS EXISTS AS A CERT-SIDE TRANSFORM (not an upstream recompile):

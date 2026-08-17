@@ -58,6 +58,7 @@ const GOLDEN = {
   "teething-and-snacks-rice-based": { both: { iAs: 20 } },
   "baby-cereals-dry-non-rice": { both: { iAs: 20 } },
   "teething-and-snacks-non-rice": { both: { iAs: 20 } },
+  "fruit-juice": { both: { iAs: 20 } },
   "infant-formula-powder": { soy: { Cd: 20 } },
   "infant-formula-rtf-liquid": { soy: { Cd: 10 } },
 }
@@ -79,4 +80,4 @@ if (fail.length) {
   for (const f of fail) console.error(`  ✗ ${f}`)
   process.exit(1)
 }
-console.log(`panel-coherence-lint: OK — ${variantsChecked} compiled variant(s) coherent (species <= parent total), 6 Cat-1 golden values intact.`)
+console.log(`panel-coherence-lint: OK — ${variantsChecked} compiled variant(s) coherent (species <= parent total), Cat-1 golden values intact.`)
