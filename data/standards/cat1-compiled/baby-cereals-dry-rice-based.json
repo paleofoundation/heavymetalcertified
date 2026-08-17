@@ -61,12 +61,13 @@
         }
       },
       "iAs": {
-        "type": "gov",
-        "value": 100,
-        "value_exact": 100,
-        "binding_jurisdiction": "US",
-        "binding_id": "fda2020_ias_infant_rice_cereal_100",
-        "basis_note": "face value",
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "Inorganic arsenic bounded by the parent total-arsenic ceiling. Total arsenic is capped at 50 by India FSSAI row in_tas_infant-milk-substitute-and-infant-foods_50, and iAs <= tAs by definition, so the operative inorganic-arsenic ceiling is 50. The tightest sovereign iAs ceiling written for infant rice cereal (US FDA / Health Canada, 100) is looser and is retained as the species reference.",
+        "basis_note": "parent-bound (iAs <= tAs)",
         "per_country": {
           "US": {
             "value": 100,

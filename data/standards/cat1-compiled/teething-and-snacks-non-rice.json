@@ -56,23 +56,14 @@
         }
       },
       "iAs": {
-        "type": "gov",
-        "value": 20,
-        "value_exact": 20,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_ias_babyfood_20",
-        "basis_note": "face value",
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+        "source_jurisdiction": "IN",
+        "label": "Inorganic arsenic bounded by the parent total-arsenic ceiling. Total arsenic is capped at 50 by India FSSAI row in_tas_infant-milk-substitute-and-infant-foods_50, and iAs <= tAs, so the operative inorganic-arsenic ceiling is 50. The EU 'baby food' iAs 20 does not apply: Regulation (EU) 2023/915 point 3.4.3 uses the Directive 2006/125/EC definition, which excludes processed cereal-based food. No sovereign sets a covering inorganic-arsenic ceiling below 50.",
+        "basis_note": "parent-bound (iAs <= tAs)",
         "per_country": {
-          "EU": {
-            "value": 20,
-            "converted": true,
-            "id": "eu2023_ias_babyfood_20"
-          },
-          "KR": {
-            "value": 100,
-            "converted": true,
-            "id": "kr_ias_infant-formula-follow-up-formula-cereal_100"
-          },
           "BR": {
             "value": 150,
             "converted": true,
