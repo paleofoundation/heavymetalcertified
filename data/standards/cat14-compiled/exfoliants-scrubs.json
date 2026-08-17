@@ -24,14 +24,19 @@
   "cells": {
     "Pb": {
       "type": "gov",
-      "value": 2000,
-      "value_exact": 2000,
+      "value": 1000,
+      "value_exact": 1000,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "DE",
-      "binding_id": "de_bvl2017_pb_cosmetics_general_2000",
+      "binding_jurisdiction": "US-WA",
+      "binding_id": "wa_tfca_pb_cosmetics_general_1000",
       "basis": "finished cosmetic as placed on market — total element content per unit mass of undiluted product as sold (µg/kg). Not a dietary basis, not a migration or leachate basis, and no use-pattern dilution credit.",
-      "binding_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
+      "binding_page": "regulations/washington-tfca-cosmetics-pb-1ppm",
       "candidates": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA"
+        },
         {
           "id": "de_bvl2017_pb_cosmetics_general_2000",
           "value": 2000,
@@ -107,7 +112,7 @@
           "scope": "toothpaste"
         }
       ],
-      "label": "strictest applicable sovereign finished-cosmetic lead maximum — Germany BVL 2017 general-cosmetic tier (2.0 mg/kg = 2000 µg/kg), taken as the minimum over eleven named finished-cosmetic instruments",
+      "label": "the Washington Toxic-Free Cosmetics Act finished-cosmetic lead cap (RCW 70A.560.020, 1 ppm = 1000 ug/kg, including impurity lead), the strictest applicable sovereign finished-cosmetic lead maximum; the German BVL 2017 general-cosmetic value (2000) is retained as a disclosed looser candidate",
       "substantiation": "BVL 2017 Table 1 (German Federal Office of Consumer Protection and Food Safety, with the Länder cosmetics working group) publishes the technically avoidable heavy-metal content of cosmetic products in general; lead is 2.0 mg/kg, and a content above the table is treated as technically avoidable under good manufacturing practice. Its status is a federal-authority guidance value rather than a statute, and it is disclosed as such, but it is the strictest published sovereign finished-cosmetic lead maximum and Method v2.0 takes the strictest applicable value. The named comparator set shows how far the binding sits below the field: Health Canada, China NMPA 2015 and Taiwan MOHW 2024 are five times looser at 10 mg/kg; Korea, ASEAN and its Singapore, Malaysia and Indonesia transpositions, and Kenya KS 2937:2021 are ten times looser at 20 mg/kg; Australia's Customs (Prohibited Imports) Regulations threshold is 125 times looser at 250 mg/kg. Two sovereign cosmetic lead values in the register are stricter than the binding — the BVL 2017 toothpaste tier at 500 µg/kg and Washington State's Toxics-Free Cosmetics Act toothpaste limit at 1000 µg/kg — and the compiler's stricter-unselected audit flags both on every row of this category. Neither is applicable. Both are scoped by their own instruments to toothpaste, a dentifrice that sits on the oral mucosa and is partly swallowed; that ingestion pathway is the stated reason the toothpaste tier is tighter. Categories 20 and 2 carry the dentifrice forms and use those instruments. A shampoo, body wash, scrub or depilatory has no ingestion pathway inside either instrument's scope, so reading a toothpaste tier onto a hair or body rinse-off product would have HMTc inventing a stricter number that no government set for this form. Method v2.0 forbids that as squarely as it forbids inventing a looser one: applicability is a real constraint, and the strictest APPLICABLE value governs. The compiler's audit also flags EU REACH Annex XVII entry 75, which sets 700 µg/kg for lead in mixtures placed on the market for tattooing and permanent make-up. That value is stricter than the binding and is deliberately not adopted: the instrument governs a mixture INJECTED INTO THE DERMIS, on a 'mixture for tattooing or permanent make-up by weight' basis, and a rinse-off shampoo or body wash is not such a mixture on any reading of the entry. The row is held out by this row's basis_guard as well as on scope. It is surfaced rather than filtered out of the scan so that the record shows it was found and disposed of, not missed. Colour-additive and colourant purity specifications (21 CFR 73 and 74, the New Zealand and Singapore carbon-black colourant profiles, the India Cosmetics Rules 2020 permitted-colours entries, the Brazil ANVISA RDC 628/2022 organic-colorant entries) are raw-material ingredient specifications, not finished-product maxima. They are held out of every cell by this row's basis_guard, and none of them is in any case stricter than the binding for this analyte. This row additionally names the two sovereign tiers written for mineral-bearing cosmetics, so that the record shows they were evaluated rather than passed over: EAEU TR CU 009/2011 sets 5 mg/kg for perfumery-cosmetic products containing more than 1 percent natural plant or natural mineral raw material, and Korea MFDS Notice 2024-9 carves powder products using clay as a raw material out of its 20 µg/g tier and gives them 50 µg/g. Both are LOOSER accommodations for the geogenic metal load of mineral raw materials, at 2.5 and 25 times the binding. Method v2.0 takes the strictest applicable value, so neither relaxes this row: a clay, pumice or salt scrub is certified at 2000 µg/kg like every other rinse-off form. Adopting the mineral accommodation would be selecting a number for convenience, which is the precise failure this method forbids."
     },
     "Cd": {

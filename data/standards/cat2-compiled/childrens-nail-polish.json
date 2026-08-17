@@ -24,14 +24,19 @@
   "cells": {
     "Pb": {
       "type": "gov",
-      "value": 2000,
-      "value_exact": 2000,
+      "value": 1000,
+      "value_exact": 1000,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "DE",
-      "binding_id": "de_bvl2017_pb_cosmetics_general_2000",
+      "binding_jurisdiction": "US-WA",
+      "binding_id": "wa_tfca_pb_cosmetics_general_1000",
       "basis": "finished cosmetic as placed on market (total content, ug/kg of product as sold)",
-      "binding_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
+      "binding_page": "regulations/washington-tfca-cosmetics-pb-1ppm",
       "candidates": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA"
+        },
         {
           "id": "de_bvl2017_pb_cosmetics_general_2000",
           "value": 2000,
@@ -54,7 +59,7 @@
         }
       ],
       "stricter_unselected": [],
-      "label": "strictest applicable sovereign finished-cosmetic lead limit (Germany BVL 2017 Table 1, technically avoidable heavy-metal contents)",
+      "label": "the Washington Toxic-Free Cosmetics Act finished-cosmetic lead cap (RCW 70A.560.020, 1 ppm = 1000 ug/kg, including impurity lead), the strictest applicable sovereign finished-cosmetic lead maximum; the German BVL 2017 general-cosmetic value (2000) is retained as a disclosed looser candidate",
       "substantiation": "Germany's BVL 2017 Table 1 is the strictest sovereign finished-cosmetic lead limit in the register at 2.0 mg/kg, roughly five times stricter than Health Canada (10 mg/kg), China NMPA 2015 (10 mg/kg) and Taiwan MOHW 2024 (10 mg/kg), which are named alongside it so the derivation shows the full sovereign spread rather than one convenient number. BVL is issued by a German federal authority and defines what counts as technically avoidable under Article 17 of EU Regulation 1223/2009, which is binding EU law; it is not a trade-association guideline. The US FDA draft cosmetic lead guidance (10 mg/kg) is gated as draft and is looser in any case. STRICTER-UNSELECTED DISPOSITION: the compiler audit scan surfaces EU REACH Regulation 2020/2081 lead at 700 ug/kg (and nickel at 5000 ug/kg) for tattoo and permanent-make-up mixtures, both stricter than this row's bindings. Neither is adopted. That instrument governs a mixture deposited INTRADERMALLY, bypassing the skin barrier entirely; it is a different exposure route, a different product class and a different risk basis from a surface-applied children's cosmetic, and no instrument scope compels borrowing it. It is recorded here rather than suppressed so the reader can see that the candidate was examined and rejected on stated grounds."
     },
     "Cd": {

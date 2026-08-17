@@ -70,6 +70,13 @@
           "jurisdiction": "DE",
           "basis": "cosmetic product; source unit mg/kg",
           "scope": "cosmetic products in general except listed highe"
+        },
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA",
+          "basis": "finished cosmetic as sold; lead present at 1 ppm (1000 ug/kg) or above, including as an impurity",
+          "scope": "cosmetic products (RCW 69.04.011 cosmetic defini"
         }
       ],
       "label": "Germany BVL 2017: the higher branch of the lead table, 5000 ug/kg, which names kajal expressly and is the exact cell for this product form.",

@@ -24,14 +24,19 @@
   "cells": {
     "Pb": {
       "type": "gov",
-      "value": 2000,
-      "value_exact": 2000,
+      "value": 1000,
+      "value_exact": 1000,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "DE",
-      "binding_id": "de_bvl2017_pb_cosmetics_general_2000",
+      "binding_jurisdiction": "US-WA",
+      "binding_id": "wa_tfca_pb_cosmetics_general_1000",
       "basis": "Finished cosmetic total content as placed on market (ug/kg of product as sold); technically-unavoidable-impurity basis. Not migration, not leachate, not dietary, not an ingredient purity specification.",
-      "binding_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
+      "binding_page": "regulations/washington-tfca-cosmetics-pb-1ppm",
       "candidates": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA"
+        },
         {
           "id": "de_bvl2017_pb_cosmetics_general_2000",
           "value": 2000,
@@ -84,7 +89,7 @@
         }
       ],
       "stricter_unselected": [],
-      "label": "Strictest applicable sovereign lead maximum for a mineral-base adult dusting powder: Germany BVL 2017 general cosmetic orientation value, 2000 ug/kg.",
+      "label": "the Washington Toxic-Free Cosmetics Act finished-cosmetic lead cap (RCW 70A.560.020, 1 ppm = 1000 ug/kg, including impurity lead), the strictest applicable sovereign finished-cosmetic lead maximum; the German BVL 2017 general-cosmetic value (2000) is retained as a disclosed looser candidate",
       "substantiation": "Every form-specific sovereign instrument for this product form was surveyed and named so the derivation shows they were considered rather than missed: India IS 3959:2004 skin powders, 20000 ug/kg, and its ECO Mark tier, 10000; the EAEU TR CU 009/2011 natural-plant-or-mineral-raw-material tier, 5000, which does reach a talc base. All are looser than the German general cosmetic value of 2000 ug/kg, which therefore binds. The Korean clay-powder branch (50000) is both looser and scoped to clay rather than talc. A mineral-base dusting powder is not one of the make-up categories the German table lists at 5000, so the general branch is the applicable cell. No colour-additive or ingredient purity specification is used as an anchor: the US 21 CFR 73/74 cosmetic-use specifications (10000-20000 ug/kg), the India permitted-colour specification (20000), the Brazil ANVISA RDC 628/2022 organic-colorant specification (20000) and the New Zealand / Singapore carbon-black colourant profiles (10000) bound one raw material's purity rather than the finished product, they are refused by this row's basis guard, and every one of them is looser than the binding value in any event."
     },
     "Cd": {

@@ -24,14 +24,19 @@
   "cells": {
     "Pb": {
       "type": "gov",
-      "value": 2000,
-      "value_exact": 2000,
+      "value": 1000,
+      "value_exact": 1000,
       "provenance": "regulatory-alignment",
-      "binding_jurisdiction": "DE",
-      "binding_id": "de_bvl2017_pb_cosmetics_general_2000",
+      "binding_jurisdiction": "US-WA",
+      "binding_id": "wa_tfca_pb_cosmetics_general_1000",
       "basis": "Finished cosmetic total content as placed on market (ug/kg of product as sold); technically-unavoidable-impurity basis. Not migration, not leachate, not dietary, not an ingredient purity specification.",
-      "binding_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
+      "binding_page": "regulations/washington-tfca-cosmetics-pb-1ppm",
       "candidates": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA"
+        },
         {
           "id": "de_bvl2017_pb_cosmetics_general_2000",
           "value": 2000,
@@ -74,7 +79,7 @@
         }
       ],
       "stricter_unselected": [],
-      "label": "Germany BVL 2017: the general cosmetic branch, 2000 ug/kg, which is the strictest branch applicable to any form in this row.",
+      "label": "the Washington Toxic-Free Cosmetics Act finished-cosmetic lead cap (RCW 70A.560.020, 1 ppm = 1000 ug/kg, including impurity lead), the strictest applicable sovereign finished-cosmetic lead maximum; the German BVL 2017 general-cosmetic value (2000) is retained as a disclosed looser candidate",
       "substantiation": "Both branches of the German lead table are named so the split is visible in the derivation: the higher make-up branch at 5000 ug/kg covers make-up powder and rouge, and the general branch at 2000 covers the liquid and cream foundations, concealers and tinted products the higher branch does not list. The next instruments are China NMPA 2015, Health Canada and Taiwan MOHW 2024 at 10000, then Korea, Singapore, the ASEAN transpositions and Kenya at 20000. The compiler selects the strictest named value, 2000 ug/kg, which is the correct row-level ceiling because it is the government value for the row's unlisted forms and is protective of the listed ones. Binding at 5000 instead would let a liquid foundation ship at two and a half times the value Germany sets for it. No colour-additive or ingredient purity specification is used as an anchor: the US 21 CFR 73/74 cosmetic-use specifications (10000-20000 ug/kg), the India permitted-colour specification (20000), the Brazil ANVISA RDC 628/2022 organic-colorant specification (20000) and the New Zealand / Singapore carbon-black colourant profiles (10000) bound one raw material's purity rather than the finished product, they are refused by this row's basis guard, and every one of them is looser than the binding value in any event."
     },
     "Cd": {

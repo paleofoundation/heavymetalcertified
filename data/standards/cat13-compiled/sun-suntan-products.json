@@ -68,7 +68,15 @@
           "jurisdiction": "KE"
         }
       ],
-      "stricter_unselected": [],
+      "stricter_unselected": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA",
+          "basis": "finished cosmetic as sold; lead present at 1 ppm (1000 ug/kg) or above, including as an impurity",
+          "scope": "cosmetic products (RCW 69.04.011 cosmetic defini"
+        }
+      ],
       "label": "Strictest applicable sovereign lead maximum for a finished cosmetic: Germany BVL 2017 general cosmetic orientation value, 2000 ug/kg.",
       "substantiation": "Applicable sovereign maxima surveyed for this exact form: Germany BVL 2017 general cosmetic orientation value, 2000 ug/kg; China NMPA 2015, 10000; Health Canada, 10000; Taiwan MOHW 2024, 10000; Korea MFDS Notice 2025-63, 20000; Singapore HSA 2024 and the ASEAN directive with its Indonesian and Malaysian transpositions, 20000; Kenya KS 2937:2021, 20000. Looser and therefore non-binding: the EAEU natural-raw-material tier (5000), the Korean clay-powder tier (50000), the India IS 3959:2004 skin-powder rows (20000 and 10000) and the Australian customs value (250000). The German value binds. Its own scope excludes the make-up categories the same table lists at 5000 ug/kg (make-up powder, rouge, eye shadow, eyeliner, kajal and theatrical make-up); none of those forms falls in this row, so the general branch is the applicable cell. The US FDA draft lead guidance for lip and externally applied cosmetics (10000) carries draft status in the register, is gated out by the compiler, and is looser in any case. No colour-additive or ingredient purity specification is used as an anchor: the US 21 CFR 73/74 cosmetic-use specifications (10000-20000 ug/kg), the India permitted-colour specification (20000), the Brazil ANVISA RDC 628/2022 organic-colorant specification (20000) and the New Zealand / Singapore carbon-black colourant profiles (10000) bound one raw material's purity rather than the finished product, they are refused by this row's basis guard, and every one of them is looser than the binding value in any event."
     },

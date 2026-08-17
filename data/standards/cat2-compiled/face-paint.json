@@ -23,18 +23,29 @@
   ],
   "cells": {
     "Pb": {
-      "type": "read_across",
-      "value": 2000,
-      "value_exact": 2000,
-      "provenance": "read-across",
-      "source_id": "de_bvl2017_pb_cosmetics_general_2000",
-      "source_jurisdiction": "DE",
+      "type": "gov",
+      "value": 1000,
+      "value_exact": 1000,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "US-WA",
+      "binding_id": "wa_tfca_pb_cosmetics_general_1000",
       "basis": "finished cosmetic as placed on market (total content, ug/kg of product as sold)",
-      "source_page": "regulations/germany-bvl-2017-technically-avoidable-heavy-metals-cosmetics",
-      "source_scope": "cosmetic products in general except listed higher-lead make-up categories",
-      "label": "Germany BVL 2017 general-cosmetic lead tier (2.0 mg/kg), read across in place of the same instrument's adult decorative-cosmetics carve-out",
+      "binding_page": "regulations/washington-tfca-cosmetics-pb-1ppm",
+      "candidates": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA"
+        },
+        {
+          "id": "de_bvl2017_pb_cosmetics_general_2000",
+          "value": 2000,
+          "jurisdiction": "DE"
+        }
+      ],
       "stricter_unselected": [],
-      "substantiation": "DISCLOSED REFUSAL OF A LOOSENING CARVE-OUT. BVL 2017 writes an explicit higher-lead tier of 5.0 mg/kg for make-up powder, rouge, eye shadow, eyeliner, kajal, and theatrical, fan or carnival make-up - a list that plainly reaches a children's face paint, and by the letter of the instrument that is the exact cell for this product form. HMTc does not adopt it for a product marketed to ages 0-5. The carve-out exists because adult decorative cosmetics carry heavy pigment loads, not because a child's exposure justifies more lead; a 0-5 child's face paint or play make-up is transferred hand-to-mouth and licked, so the ingestion pathway is materially larger than the adult use the carve-out was written for. The cell therefore binds the SAME instrument's general-cosmetic tier at 2.0 mg/kg, which is stricter, is a real published sovereign number, and is disclosed here as a read-across rather than presented as a direct regulation of this form. This is over-compliance in the protective direction and it satisfies the Category 2 floor rule: the corresponding Category 13 adult row binds 5.0 mg/kg, so the child row is stricter and can never be the looser of the two. STRICTER-UNSELECTED DISPOSITION: the compiler's audit scan surfaces EU REACH Regulation 2020/2081 lead at 700 ug/kg for tattoo and permanent-make-up mixtures. It is not adopted. That instrument governs a mixture deposited INTRADERMALLY; its basis is a different exposure route with no skin-barrier attenuation, and its product class (tattoo and PMU inks) is not a surface-applied cosmetic. Borrowing an intradermal-injection ceiling for a wash-off surface cosmetic would be a route conflation in the opposite direction from the usual one, and it is not compelled by any instrument's scope."
+      "label": "the Washington Toxic-Free Cosmetics Act finished-cosmetic lead cap (RCW 70A.560.020, 1 ppm = 1000 ug/kg, including impurity lead), the strictest applicable sovereign finished-cosmetic lead maximum; the German BVL 2017 general-cosmetic value (2000) is retained as a disclosed looser candidate",
+      "substantiation": null
     },
     "Cd": {
       "type": "gov",

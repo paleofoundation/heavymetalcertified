@@ -95,6 +95,13 @@
           "jurisdiction": "DE",
           "basis": "cosmetic product; source unit mg/kg",
           "scope": "toothpaste"
+        },
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA",
+          "basis": "finished cosmetic as sold; lead present at 1 ppm (1000 ug/kg) or above, including as an impurity",
+          "scope": "cosmetic products (RCW 69.04.011 cosmetic defini"
         }
       ],
       "label": "strictest applicable sovereign finished-cosmetic lead maximum — Germany BVL 2017 general-cosmetic tier (2.0 mg/kg = 2000 µg/kg), taken as the minimum over eleven named finished-cosmetic instruments",

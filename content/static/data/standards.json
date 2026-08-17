@@ -6,8 +6,8 @@
   "unit": "ppb (µg/kg)",
   "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
   "standard_version": "2.2 (2026-06-09)",
-  "generated_at": "2026-08-17T11:34:07.912Z",
-  "generated_commit": "7367336d97ca18cec9b38298006e6e7012a4abd6",
+  "generated_at": "2026-08-17T12:38:28.847Z",
+  "generated_commit": "e5bf7de76f6e6cc5671d0097506ab2ac1241b6d0",
   "license": {
     "terms": "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
     "attribution": "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite the standard's page_url and standard_version.",
@@ -3552,14 +3552,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -3692,14 +3692,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -3832,14 +3832,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -3972,14 +3972,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -4392,14 +4392,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -4532,14 +4532,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -4952,14 +4952,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "Germany BVL 2017 general-cosmetic lead tier (2.0 mg/kg), read across in place of the same instrument's adult decorative-cosmetics carve-out",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "control_basis": "government-limit",
+              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -5092,14 +5092,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -5512,14 +5512,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished cosmetic product as placed on the market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, never a migration or leachate number, never a colour-additive or raw-material purity specification, and never a dietary basis.",
               "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "Germany BVL 2017 general-cosmetic lead tier (2.0 mg/kg), read across in place of the same instrument's adult decorative-cosmetics carve-out",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "control_basis": "government-limit",
+              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -18431,14 +18431,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -18571,14 +18571,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -18711,14 +18711,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -18851,14 +18851,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -18991,14 +18991,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19131,14 +19131,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19271,14 +19271,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19411,14 +19411,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19551,14 +19551,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19691,14 +19691,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19831,14 +19831,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -19971,14 +19971,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -20111,14 +20111,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -20251,14 +20251,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished leave-on cosmetic as placed on market — total heavy-metal content per unit mass of the product as sold (ug/kg). Total content, not a migration or leachate value, and not a dietary basis. No reconstitution, dilution, or in-use concentration conversion is applied: the ceiling is compared to the product in the form the consumer buys it.",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -20951,14 +20951,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21091,14 +21091,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21231,14 +21231,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21371,14 +21371,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21511,14 +21511,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21651,14 +21651,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -21791,14 +21791,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -22071,14 +22071,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -22211,14 +22211,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -22351,14 +22351,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",
@@ -22491,14 +22491,14 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 2000,
-              "value_exact_ppb": 2000,
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "finished_cosmetic_as_sold",
               "basis_note": null,
               "control_basis": "government-limit",
               "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": "DE",
-              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+              "controlling_jurisdiction": "US-WA",
+              "controlling_instrument": "wa_tfca_pb_cosmetics_general_1000"
             },
             "Cd": {
               "status": "published",

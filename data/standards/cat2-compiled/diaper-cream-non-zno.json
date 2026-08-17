@@ -53,7 +53,15 @@
           "jurisdiction": "TW"
         }
       ],
-      "stricter_unselected": [],
+      "stricter_unselected": [
+        {
+          "id": "wa_tfca_pb_cosmetics_general_1000",
+          "value": 1000,
+          "jurisdiction": "US-WA",
+          "basis": "finished cosmetic as sold; lead present at 1 ppm (1000 ug/kg) or above, including as an impurity",
+          "scope": "cosmetic products (RCW 69.04.011 cosmetic defini"
+        }
+      ],
       "label": "strictest applicable sovereign finished-cosmetic lead limit (Germany BVL 2017 Table 1, technically avoidable heavy-metal contents)",
       "substantiation": "Germany's BVL 2017 Table 1 is the strictest sovereign finished-cosmetic lead limit in the register at 2.0 mg/kg, roughly five times stricter than Health Canada (10 mg/kg), China NMPA 2015 (10 mg/kg) and Taiwan MOHW 2024 (10 mg/kg), which are named alongside it so the derivation shows the full sovereign spread rather than one convenient number. BVL is issued by a German federal authority and defines what counts as technically avoidable under Article 17 of EU Regulation 1223/2009, which is binding EU law; it is not a trade-association guideline. The US FDA draft cosmetic lead guidance (10 mg/kg) is gated as draft and is looser in any case."
     },
