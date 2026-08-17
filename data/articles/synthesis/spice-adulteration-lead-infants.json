@@ -7,13 +7,34 @@
   "metals": ["Lead", "Chromium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["lead in turmeric", "lead chromate adulteration", "turmeric heavy metal testing", "spice adulteration infants", "lead cinnamon applesauce recall", "lead chromium ratio turmeric", "spice certification lead testing"],
+  "published": "2026-08-10",
+  "keywords": [
+    "lead in turmeric",
+    "lead chromate adulteration",
+    "turmeric heavy metal testing",
+    "spice adulteration infants",
+    "lead cinnamon applesauce recall",
+    "lead chromium ratio turmeric",
+    "spice certification lead testing"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Chromium — analyte review", "href": "/analytes/chromium" },
-    { "label": "Spices standard", "href": "/standards/spices" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Chromium — analyte review",
+      "href": "/analytes/chromium"
+    },
+    {
+      "label": "Spices standard",
+      "href": "/standards/spices"
+    }
   ],
   "abstract": "Lead in turmeric and some cinnamon is not soil uptake — it is deliberate economic adulteration with lead chromate (PbCrO4), a cheap industrial pigment added during polishing to brighten color, and it reaches infants through the purees and cereals parents buy expecting safety. The signature is chemical: because lead chromate carries one atom of lead for each atom of chromium, adulterated samples sit near a 1:1 lead-to-chromium molar ratio, while environmental contamination sits well below one. The concentrations are categorically higher than any agricultural pathway — adulterated turmeric has reached 2,935 µg/g of lead, and the 2023–2024 cinnamon applesauce recall left 566 children with elevated blood lead. The certification consequence is direct: this pathway is invisible to a process audit or an organic seal and untouched by clean-sourcing, so a credible [spices standard](/standards/spices) has to test the product itself, lot by lot, reading the paired lead-and-chromium result as the tell. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -65,13 +86,104 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Lead chromate pigments in the Bangladesh turmeric supply chain", "meta": "Forsyth et al., 2019. Traced lead-chromate adulteration through 152 supply-chain interviews across seven of nine major turmeric-producing districts; pigment samples reached a median near 20,000 µg/g and a maximum of 115,500 µg/g lead.", "type": "Journal" },
-    { "n": 2, "title": "Evidence of turmeric adulteration with lead chromate across South Asia", "meta": "Forsyth et al., 2024. Across 356 samples from 23 cities, high-lead turmeric averaged a 0.92 lead-to-chromium molar ratio confirming lead chromate; lead peaked at 2,935 µg/g and modeled child blood-lead increases reached 345–790 µg/L.", "type": "Journal" },
-    { "n": 3, "title": "Lead and chromium exposure after contaminated cinnamon applesauce, United States", "meta": "Troeschel et al., 2024. CDC investigation of lead-chromate-contaminated cinnamon in infant applesauce pouches; 566 children with elevated blood lead, median 7.2 µg/dL, 55% of cases under two years.", "type": "Government" },
-    { "n": 4, "title": "A scoping review of turmeric adulteration across six continents", "meta": "Gafner et al., 2026. Reviewed 2,235 turmeric samples from 22 countries; overall adulteration rate 20.0%, and documented Bangladesh enforcement cutting contaminated samples from 47% to 0% within two years.", "type": "Journal" },
-    { "n": 5, "title": "Ground turmeric as a source of lead exposure in the United States", "meta": "Lech et al., 2020. Surveyed 127 US retail ground-turmeric products; mean lead 1,410 ppb and a maximum of 7,590 ppb, 76 times the FDA action level.", "type": "Journal" },
-    { "n": 6, "title": "Import Alert 99-42: detention of lead-contaminated spice imports", "meta": "U.S. Food and Drug Administration. Authorizes detention without physical examination of spices due to lead contamination; active since the 1990s.", "type": "Government" },
-    { "n": 7, "title": "Blood lead levels in children aged 5–7 in the Republic of Georgia", "meta": "Rylander et al., 2025. Among 1,635 children, spice use independently predicted elevated blood lead (OR ≈ 1.47); 39.8% had levels at or above 3.5 µg/dL.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index — spice adulteration with lead chromate reaching infants (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Turmeric means “yellow” in Bengali: Lead chromate pigments added to turmeric threaten public health across Bangladesh",
+      "meta": "Traced lead-chromate adulteration through 152 supply-chain interviews across seven of nine major turmeric-producing districts; pigment samples reached a median near 20,000 µg/g and a maximum of 115,500 µg/g lead.",
+      "type": "Journal",
+      "doi": "10.1016/j.envres.2019.108722",
+      "href": "https://doi.org/10.1016/j.envres.2019.108722",
+      "authors": "Forsyth, Jenna E.; Nurunnahar, Syeda; Islam, Sheikh Shariful, et al.",
+      "year": 2019,
+      "journal": "Environmental Research",
+      "volume": "179",
+      "issue": null,
+      "pages": "108722",
+      "cite_key": "forsyth2019-turmeric-lead-chromate-bangladesh",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Evidence of turmeric adulteration with lead chromate across South Asia",
+      "meta": "Across 356 samples from 23 cities, high-lead turmeric averaged a 0.92 lead-to-chromium molar ratio confirming lead chromate; lead peaked at 2,935 µg/g and modeled child blood-lead increases reached 345–790 µg/L.",
+      "type": "Journal",
+      "doi": "10.1016/j.scitotenv.2024.175003",
+      "href": "https://doi.org/10.1016/j.scitotenv.2024.175003",
+      "authors": "Forsyth, Jenna E.; Mistree, Dinsha; Nash, Emily, et al.",
+      "year": 2024,
+      "journal": "Science of The Total Environment",
+      "volume": "949",
+      "issue": null,
+      "pages": "175003",
+      "cite_key": "forsyth2024-turmeric-lead-chromate-south-asia",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Lead and chromium exposure after contaminated cinnamon applesauce, United States",
+      "meta": "Troeschel et al., 2024. CDC investigation of lead-chromate-contaminated cinnamon in infant applesauce pouches; 566 children with elevated blood lead, median 7.2 µg/dL, 55% of cases under two years.",
+      "type": "Government"
+    },
+    {
+      "n": 4,
+      "title": "A scoping review of turmeric adulteration based on data from six continents",
+      "meta": "Reviewed 2,235 turmeric samples from 22 countries; overall adulteration rate 20.0%, and documented Bangladesh enforcement cutting contaminated samples from 47% to 0% within two years.",
+      "type": "Journal",
+      "doi": "10.1080/13880209.2025.2606229",
+      "href": "https://doi.org/10.1080/13880209.2025.2606229",
+      "authors": "Gafner, Stefan; Orhan, Nilüfer; Kahraman, Çiğdem, et al.",
+      "year": 2026,
+      "journal": "Pharmaceutical Biology",
+      "volume": "64",
+      "issue": "1",
+      "pages": "87-107",
+      "cite_key": "gafner2026-turmeric-adulteration-six-continents",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Ground Turmeric as a Source of Lead Exposure in the United States",
+      "meta": "Surveyed 127 US retail ground-turmeric products; mean lead 1,410 ppb and a maximum of 7,590 ppb, 76 times the FDA action level.",
+      "type": "Journal",
+      "doi": "10.1177/0033354917700109",
+      "href": "https://doi.org/10.1177/0033354917700109",
+      "authors": "Cowell, Whitney; Ireland, Thomas; Vorhees, Donna, et al.",
+      "year": 2017,
+      "journal": "Public Health Reports®",
+      "volume": "132",
+      "issue": "3",
+      "pages": "289-293",
+      "cite_key": "lech2020-turmeric-lead-united-states",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 6,
+      "title": "Import Alert 99-42: detention of lead-contaminated spice imports",
+      "meta": "U.S. Food and Drug Administration. Authorizes detention without physical examination of spices due to lead contamination; active since the 1990s.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "Blood Lead Levels in Children 5 to 7 Years of Age from the Republic of Georgia: A Feasibility Study on Lead Surveillance Using Volumetric Absorptive Microsampling",
+      "meta": "Among 1,635 children, spice use independently predicted elevated blood lead (OR ≈ 1.47); 39.8% had levels at or above 3.5 µg/dL.",
+      "type": "Journal",
+      "doi": "10.1289/EHP15788",
+      "href": "https://doi.org/10.1289/EHP15788",
+      "authors": "Rylander, Charlotta; Anda, Erik Eik; Cirtiu, Ciprian Mihai, et al.",
+      "year": 2025,
+      "journal": "Environmental Health Perspectives",
+      "volume": "133",
+      "issue": "5",
+      "pages": null,
+      "cite_key": "rylander2025-georgia-children-blood-lead",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — spice adulteration with lead chromate reaching infants (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

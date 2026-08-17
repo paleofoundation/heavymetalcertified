@@ -7,13 +7,34 @@
   "metals": ["Tin"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["tin in canned food", "inorganic tin food contamination", "unlacquered can tin migration", "tin maximum level canned food", "acidic canned fruit tin", "EU tin limit 200 mg/kg", "tin certification standard"],
+  "published": "2026-08-10",
+  "keywords": [
+    "tin in canned food",
+    "inorganic tin food contamination",
+    "unlacquered can tin migration",
+    "tin maximum level canned food",
+    "acidic canned fruit tin",
+    "EU tin limit 200 mg/kg",
+    "tin certification standard"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration",
   "connections": [
-    { "label": "Heavy Metal Index &mdash; the finding", "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration" },
-    { "label": "Tin &mdash; analyte review", "href": "/analytes/tin" },
-    { "label": "Canned seafood standard", "href": "/standards/canned-seafood" },
-    { "label": "EU Regulation 2023/915", "href": "/regulations/eu-2023-915" }
+    {
+      "label": "Heavy Metal Index &mdash; the finding",
+      "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration"
+    },
+    {
+      "label": "Tin &mdash; analyte review",
+      "href": "/analytes/tin"
+    },
+    {
+      "label": "Canned seafood standard",
+      "href": "/standards/canned-seafood"
+    },
+    {
+      "label": "EU Regulation 2023/915",
+      "href": "/regulations/eu-2023-915"
+    }
   ],
   "abstract": "Inorganic tin in food is not an agricultural or geogenic contaminant like lead, cadmium, arsenic and mercury; it is a packaging contaminant. It dissolves from the bare tinplate wall of unlacquered (plain) cans into the acidic food they hold &mdash; canned tomato, canned fruit, citrus juice &mdash; and it is essentially absent from the fresh commodity, which carries around 0.03 mg/kg. Its adverse effect is acute gastrointestinal irritation from direct contact with the gut wall, not chronic systemic toxicity, and symptoms appear only in the hundreds to low thousands of mg/kg, three to four orders of magnitude above the parts-per-billion maximum levels that govern lead and cadmium. For certification, the consequence is that [tin](/analytes/tin) is a Tier-2 metal whose risk lives in one packaging format and one matrix chemistry, so a standard should scope it to unlacquered-can acidic products rather than treat it like the soil-borne toxics. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +78,84 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Tin in Canned Food: Occurrence and Effect", "meta": "Blunden & Wallace, 2003. Industry-sponsored review compiling the dissolution literature: fresh food near 0.03 mg/kg tin versus about 76.6 mg/kg in unlacquered cans, with roughly 20% of European food cans internally unlacquered.", "type": "Journal" },
-    { "n": 2, "title": "Tin and Iron Migration From Metallic Cans Into Foodstuffs During Storage", "meta": "Buculei et al., 2012. Romanian storage experiment; canned tomato paste rose to roughly 9 to 23 mg/kg tin over about 36 months while near-neutral matrices stayed below 1.2 mg/kg.", "type": "Journal" },
-    { "n": 3, "title": "The Toxicity of Tin in Canned Fruit Juices and Solid Foods", "meta": "Benoy, Hooper & Schneider, 1971. Controlled human and animal dose study; five volunteers showed nausea and diarrhoea only at 1,370 mg/kg tin, with no effect at 730 mg/kg and below, via local gut-mucosa irritation rather than systemic uptake.", "type": "Journal" },
-    { "n": 4, "title": "Opinion on Acute Risks Posed by Tin in Canned Foods", "meta": "European Commission Scientific Committee on Food, 2002. Derived the 200 mg/kg general, 100 mg/kg beverage and 50 mg/kg infant maximum levels from the acute gastrointestinal endpoint.", "type": "Government" },
-    { "n": 5, "title": "Maximum Levels for Inorganic Tin in Canned Food", "meta": "European Union. Commission Regulation (EU) 2023/915. Carries forward 200 mg/kg for general canned food, 100 mg/kg for canned beverages and 50 mg/kg for canned infant and young-child food.", "type": "Legislation" },
-    { "n": 6, "title": "Recommended Maximum Level for Tin in Canned Solid Foods", "meta": "Codex Alimentarius. General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995). Recommends 250 mg/kg for canned solid foods, higher than the EU 200 mg/kg general limit.", "type": "Standard" },
-    { "n": 7, "title": "Lead, Cadmium, Arsenic, Mercury and Tin in Fruit and Fruit Products: Exposure Assessment", "meta": "Mania et al., 2021. Polish national survey of 69 canned fruit products: mean near 70 mg/kg tin, 90th percentile 140 mg/kg, maximum 206 mg/kg in canned pears.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index &mdash; tin as a can-format-and-acidity contaminant (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Tin in canned food: a review and understanding of occurrence and effect",
+      "meta": "Industry-sponsored review compiling the dissolution literature: fresh food near 0.03 mg/kg tin versus about 76.6 mg/kg in unlacquered cans, with roughly 20% of European food cans internally unlacquered.",
+      "type": "Journal",
+      "doi": "10.1016/S0278-6915(03)00217-5",
+      "href": "https://doi.org/10.1016/S0278-6915(03)00217-5",
+      "authors": "Blunden, Steve; Wallace, Tony",
+      "year": 2003,
+      "journal": "Food and Chemical Toxicology",
+      "volume": "41",
+      "issue": "12",
+      "pages": "1651-1662",
+      "cite_key": "blunden2003-tin-canned-food-review",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Tin and Iron Migration From Metallic Cans Into Foodstuffs During Storage",
+      "meta": "Buculei et al., 2012. Romanian storage experiment; canned tomato paste rose to roughly 9 to 23 mg/kg tin over about 36 months while near-neutral matrices stayed below 1.2 mg/kg.",
+      "type": "Journal"
+    },
+    {
+      "n": 3,
+      "title": "The toxicity of tin in canned fruit juices and solid foods",
+      "meta": "Controlled human and animal dose study; five volunteers showed nausea and diarrhoea only at 1,370 mg/kg tin, with no effect at 730 mg/kg and below, via local gut-mucosa irritation rather than systemic uptake.",
+      "type": "Journal",
+      "doi": "10.1016/0015-6264(71)90152-0",
+      "href": "https://doi.org/10.1016/0015-6264(71)90152-0",
+      "authors": "Benoy, Christine J.; Hooper, Patricia A.; Schneider, R.",
+      "year": 1971,
+      "journal": "Food and Cosmetics Toxicology",
+      "volume": "9",
+      "issue": "5",
+      "pages": "645-656",
+      "cite_key": "benoy1971-tin-toxicity-canned-fruit-juices",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Opinion on Acute Risks Posed by Tin in Canned Foods",
+      "meta": "European Commission Scientific Committee on Food, 2002. Derived the 200 mg/kg general, 100 mg/kg beverage and 50 mg/kg infant maximum levels from the acute gastrointestinal endpoint.",
+      "type": "Government"
+    },
+    {
+      "n": 5,
+      "title": "Maximum Levels for Inorganic Tin in Canned Food",
+      "meta": "European Union. Commission Regulation (EU) 2023/915. Carries forward 200 mg/kg for general canned food, 100 mg/kg for canned beverages and 50 mg/kg for canned infant and young-child food.",
+      "type": "Legislation"
+    },
+    {
+      "n": 6,
+      "title": "Recommended Maximum Level for Tin in Canned Solid Foods",
+      "meta": "Codex Alimentarius. General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995). Recommends 250 mg/kg for canned solid foods, higher than the EU 200 mg/kg general limit.",
+      "type": "Standard"
+    },
+    {
+      "n": 7,
+      "title": "The content of lead, cadmium, arsenic, mercury and tin in fruit and their products based on monitoring studies – exposure assessment",
+      "meta": "Polish national survey of 69 canned fruit products: mean near 70 mg/kg tin, 90th percentile 140 mg/kg, maximum 206 mg/kg in canned pears.",
+      "type": "Journal",
+      "doi": "10.32394/rpzh.2021.0188",
+      "href": "https://doi.org/10.32394/rpzh.2021.0188",
+      "authors": "Mania, Monika; Rebeniak, Małgorzata; Chabros, Ewelina, et al.",
+      "year": 2021,
+      "journal": "Roczniki Państwowego Zakładu Higieny",
+      "volume": "72",
+      "issue": "4",
+      "pages": "353-360",
+      "cite_key": "mania2021-lead-cadmium-arsenic-mercury-tin-fruit-poland",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index &mdash; tin as a can-format-and-acidity contaminant (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

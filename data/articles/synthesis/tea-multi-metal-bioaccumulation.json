@@ -7,13 +7,34 @@
   "metals": ["Aluminium", "Lead", "Cadmium", "Arsenic", "Chromium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["heavy metals in tea", "tea leaf to infusion transfer", "lead in tea", "cadmium in tea", "aluminium in tea", "tea heavy metal certification", "tea infusion vs dry leaf"],
+  "published": "2026-08-10",
+  "keywords": [
+    "heavy metals in tea",
+    "tea leaf to infusion transfer",
+    "lead in tea",
+    "cadmium in tea",
+    "aluminium in tea",
+    "tea heavy metal certification",
+    "tea infusion vs dry leaf"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation" },
-    { "label": "Aluminium &mdash; analyte review", "href": "/analytes/aluminum" },
-    { "label": "Lead &mdash; analyte review", "href": "/analytes/lead" },
-    { "label": "Cadmium &mdash; analyte review", "href": "/analytes/cadmium" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation"
+    },
+    {
+      "label": "Aluminium &mdash; analyte review",
+      "href": "/analytes/aluminum"
+    },
+    {
+      "label": "Lead &mdash; analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Cadmium &mdash; analyte review",
+      "href": "/analytes/cadmium"
+    }
   ],
   "abstract": "Heavy-metal exposure from tea is governed by the leaf-to-infusion transfer fraction &mdash; the share of each metal that actually leaches from the leaf into the brewed cup &mdash; not by the dry-leaf totals that national surveillance and product standards almost always report. Because only the infusion is consumed, dry-leaf figures systematically misstate the dose: brewing carries roughly a sixth of the leaf lead and aluminium into the cup, most of it staying in the spent leaf, while cadmium can transfer at nearly half the leaf load from some origins. Across eight datasets the leaf-basis and infusion-basis pictures can even point in opposite directions, so a dry-leaf number and a cup number cannot be compared without applying a transfer fraction. The certification consequence is direct: a tea standard has to measure the infusion-relevant fraction under a disclosed brewing protocol, or model transfer metal by metal, because the metric has to match the exposure. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +78,124 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Per-metal leaching fractions in green tea infusions across geographic origins", "meta": "Brzezicha-Cirocka et al., 2016. Brewed 41 green teas of Chinese, Indian and Japanese origin; lead leached at 16.9% and cadmium at 17.6 to 46.3% depending on origin, the only corpus source giving explicit per-metal transfer fractions.", "type": "Journal" },
-    { "n": 2, "title": "Heavy metals in tea herb and infusion: a systematic review of transfer and reduction", "meta": "Kazeminia et al., 2023. Systematic review reporting black-tea infusion concentrations roughly six to ten times lower than the dry herb, with extracted lead rising two to three times as steeping went from three to ten minutes.", "type": "Journal" },
-    { "n": 3, "title": "National reconnaissance of trace metals in tea across Chinese growing regions", "meta": "Li et al., 2021. 225 paired soil and plant samples from 45 gardens in 15 provinces; young-leaf means of 0.66 mg/kg lead, 0.06 mg/kg cadmium and 0.91 mg/kg chromium, with mature-leaf lead rising to 13.6 mg/kg.", "type": "Journal" },
-    { "n": 4, "title": "Heavy-metal contamination and health risk in tea across China: a meta-analysis", "meta": "Hu et al., 2023. Meta-analysis of 227 papers reporting national means of 1.09 mg/kg lead, 0.14 mg/kg cadmium and 1.17 mg/kg total chromium, all below Chinese leaf limits with pollution rates under three percent, and about 80% of young-leaf lead attributed to atmospheric deposition.", "type": "Journal" },
-    { "n": 5, "title": "Aluminium and heavy metals in green tea leaves versus infusion, Jiangxi, China", "meta": "Li et al., 2015. Mean leaf aluminium of 487.57 mg/kg, more than twenty times the next metal; lead, cadmium, copper and aluminium mainly remained in the leaf, with infusion concentrations falling on successive brews.", "type": "Journal" },
-    { "n": 6, "title": "Aluminium accumulation and infusion hazard index in tea, Puan County, Guizhou", "meta": "Zhang et al., 2018. Mature-leaf aluminium of 4,300 to 10,400 mg/kg against 250 to 660 in young leaf; 38.46% of mature-tea infusions carried a hazard index above one, driven by aluminium and manganese, while all leaf-basis toxic metals sat below Chinese limits.", "type": "Journal" },
-    { "n": 7, "title": "Direct measurement of arsenic, lead and cadmium in green-tea infusions", "meta": "Jurowski et al., 2023. Measured brewed infusions directly, reporting means of 0.891 µg/L lead, 0.325 µg/L total arsenic and 0.214 µg/L cadmium, within the provisional tolerable weekly intake even at 21 to 70 cups per week.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index — tea multi-metal bioaccumulation (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page across eight datasets spanning leaf-basis and infusion-basis tea metals.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Monitoring of essential and heavy metals in green tea from different geographical origins",
+      "meta": "Brewed 41 green teas of Chinese, Indian and Japanese origin; lead leached at 16.9% and cadmium at 17.6 to 46.3% depending on origin, the only corpus source giving explicit per-metal transfer fractions.",
+      "type": "Journal",
+      "doi": "10.1007/s10661-016-5157-y",
+      "href": "https://doi.org/10.1007/s10661-016-5157-y",
+      "authors": "Brzezicha-Cirocka, Justyna; Grembecka, Małgorzata; Szefer, Piotr",
+      "year": 2016,
+      "journal": "Environmental Monitoring and Assessment",
+      "volume": "188",
+      "issue": "3",
+      "pages": null,
+      "cite_key": "brzezicha-cirocka2016-green-tea-geographic-origins",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "HEAVY METALS AND THEIR ADVERSE EFFECTS: SOURCES, RISKS, AND STRATEGIES TO REDUCE ACCUMULATION IN TEA HERB - A SYSTEMATIC REVIEW",
+      "meta": "Systematic review reporting black-tea infusion concentrations roughly six to ten times lower than the dry herb, with extracted lead rising two to three times as steeping went from three to ten minutes.",
+      "type": "Journal",
+      "doi": "10.34302/crpjfst/2023.15.4.3",
+      "href": "https://doi.org/10.34302/crpjfst/2023.15.4.3",
+      "authors": "",
+      "year": 2023,
+      "journal": "Carpathian Journal of Food Science and Technology",
+      "volume": null,
+      "issue": null,
+      "pages": "25-42",
+      "cite_key": "kazeminia2023-tea-heavy-metals-review",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 3,
+      "title": "Occurrence, accumulation, and risk assessment of trace metals in tea (Camellia sinensis): A national reconnaissance",
+      "meta": "Li et al., 2021. 225 paired soil and plant samples from 45 gardens in 15 provinces; young-leaf means of 0.66 mg/kg lead, 0.06 mg/kg cadmium and 0.91 mg/kg chromium, with mature-leaf lead rising to 13.6 mg/kg.",
+      "type": "Journal",
+      "doi": "10.1016/j.scitotenv.2021.148354",
+      "href": "https://doi.org/10.1016/j.scitotenv.2021.148354",
+      "authors": "Li, Wenbing; Cheng, Haiyan; Mu, Yinjun, et al.",
+      "year": 2021,
+      "journal": "Science of The Total Environment",
+      "volume": "792",
+      "issue": null,
+      "pages": "148354",
+      "cite_key": "li2021-china-national-tea-reconnaissance",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 4,
+      "title": "Current Status and Health Risk Assessment of Heavy Metals Contamination in Tea across China",
+      "meta": "Meta-analysis of 227 papers reporting national means of 1.09 mg/kg lead, 0.14 mg/kg cadmium and 1.17 mg/kg total chromium, all below Chinese leaf limits with pollution rates under three percent, and about 80% of young-leaf lead attributed to atmospheric deposition.",
+      "type": "Journal",
+      "doi": "10.3390/toxics11080662",
+      "href": "https://doi.org/10.3390/toxics11080662",
+      "authors": "Hu, Chenglin; Zhang, Xiuying; Zhan, Nan, et al.",
+      "year": 2023,
+      "journal": "Toxics",
+      "volume": "11",
+      "issue": "8",
+      "pages": "662",
+      "cite_key": "hu2023-china-tea-heavy-metals",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 5,
+      "title": "A comparison of the potential health risk of aluminum and heavy metals in tea leaves and tea infusion of commercially available green tea in Jiangxi, China",
+      "meta": "Mean leaf aluminium of 487.57 mg/kg, more than twenty times the next metal; lead, cadmium, copper and aluminium mainly remained in the leaf, with infusion concentrations falling on successive brews.",
+      "type": "Journal",
+      "doi": "10.1007/s10661-015-4445-2",
+      "href": "https://doi.org/10.1007/s10661-015-4445-2",
+      "authors": "Li, Lanhai; Fu, Qing-Long; Achal, Varenyam, et al.",
+      "year": 2015,
+      "journal": "Environmental Monitoring and Assessment",
+      "volume": "187",
+      "issue": "5",
+      "pages": null,
+      "cite_key": "li2015-green-tea-jiangxi-al-heavy-metals",
+      "verified_basis": "title-identity"
+    },
+    {
+      "n": 6,
+      "title": "Accumulation of Heavy Metals in Tea Leaves and Potential Health Risk Assessment: A Case Study from Puan County, Guizhou Province, China",
+      "meta": "Mature-leaf aluminium of 4,300 to 10,400 mg/kg against 250 to 660 in young leaf; 38.46% of mature-tea infusions carried a hazard index above one, driven by aluminium and manganese, while all leaf-basis toxic metals sat below Chinese limits.",
+      "type": "Journal",
+      "doi": "10.3390/ijerph15010133",
+      "href": "https://doi.org/10.3390/ijerph15010133",
+      "authors": "Zhang, Jian; Yang, Ruidong; Chen, Rong, et al.",
+      "year": 2018,
+      "journal": "International Journal of Environmental Research and Public Health",
+      "volume": "15",
+      "issue": "1",
+      "pages": "133",
+      "cite_key": "zhang2018-tea-puan-guizhou-heavy-metals",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 7,
+      "title": "The Control and Comprehensive Safety Assessment of Heavy Metal Impurities (As, Pb, and Cd) in Green Tea Camellia sinensis (L.) Samples (Infusions) Available in Poland",
+      "meta": "Measured brewed infusions directly, reporting means of 0.891 µg/L lead, 0.325 µg/L total arsenic and 0.214 µg/L cadmium, within the provisional tolerable weekly intake even at 21 to 70 cups per week.",
+      "type": "Journal",
+      "doi": "10.1007/s12011-023-03665-5",
+      "href": "https://doi.org/10.1007/s12011-023-03665-5",
+      "authors": "Jurowski, Kamil; Kondratowicz-Pietruszka, Elżbieta; Krośniak, Mirosław",
+      "year": 2024,
+      "journal": "Biological Trace Element Research",
+      "volume": "202",
+      "issue": "1",
+      "pages": "387-396",
+      "cite_key": "jurowski2023-heavy-metals-green-tea-poland",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — tea multi-metal bioaccumulation (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page across eight datasets spanning leaf-basis and infusion-basis tea metals.",
+      "type": "Reference"
+    }
   ]
 }

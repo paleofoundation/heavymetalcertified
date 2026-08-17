@@ -7,13 +7,33 @@
   "metals": ["Lead", "Cadmium", "Arsenic", "Mercury", "Aluminum", "Chromium"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["heavy metals in breast milk", "breastmilk lead exposure", "breastmilk vs formula metal exposure", "maternal diet heavy metals", "infant formula heavy metals", "infant heavy metal exposure pathway"],
+  "published": "2026-08-10",
+  "keywords": [
+    "heavy metals in breast milk",
+    "breastmilk lead exposure",
+    "breastmilk vs formula metal exposure",
+    "maternal diet heavy metals",
+    "infant formula heavy metals",
+    "infant heavy metal exposure pathway"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Cadmium — analyte review", "href": "/analytes/cadmium" },
-    { "label": "Infant formula (powder) standard", "href": "/standards/infant-formula-powder" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Cadmium — analyte review",
+      "href": "/analytes/cadmium"
+    },
+    {
+      "label": "Infant formula (powder) standard",
+      "href": "/standards/infant-formula-powder"
+    }
   ],
   "abstract": "Human breastmilk carries measurable concentrations of lead, cadmium, arsenic and mercury — and, in specific settings, aluminum and chromium — and the load passed to a breastfed infant is set by the mother's cumulative body burden and current diet rather than by anything intrinsic to the milk. That makes breastmilk a genuine infant heavy-metal exposure pathway, mechanistically distinct from [infant formula](/standards/infant-formula-powder), where the metal load enters through the ingredient supply chain and process water and can in principle be sourced, screened and limited. The certification consequence is a boundary line: a product certification reaches manufactured foods like formula, but breastmilk is not a product — it is not sold, not sampled by food-monitoring programs, and cannot be specified or reformulated. It is characterized only by the biomonitoring literature, and the lever that moves it is maternal exposure reduction, not a product limit. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -57,13 +77,114 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Arsenic, cadmium, lead and mercury in human milk and infant formula across the U.S. market: a systematic review", "meta": "Thoerig et al., 2025. Systematic review treating human milk and infant formula as two separate matrices; finds per-serving human-milk concentrations of arsenic, cadmium, lead and mercury generally lower than reconstituted formula.", "type": "Journal" },
-    { "n": 2, "title": "Maternal dietary intake and heavy-metal concentrations in Korean breast milk", "meta": "Moon et al., 2025. Cohort of 209 lactating Korean mothers; cadmium detected in 99% of samples, mercury 97%, total arsenic 89%, lead 79%; total arsenic was the largest hazard-quotient contributor and tracked maternal seafood intake.", "type": "Journal" },
-    { "n": 3, "title": "Human milk as a biomonitor of maternal toxic-metal exposure: sources and transfer mechanisms", "meta": "Katrynska et al., 2026. Review of 112 primary studies framing human milk as a biomonitor of maternal exposure; documents bone, kidney and adipose accumulation, lactation-stage dynamics, and maternal determinants including smoking, marine-fish intake and dental amalgam.", "type": "Journal" },
-    { "n": 4, "title": "Breastmilk lead and infant language development in a São Paulo cohort", "meta": "Naspolini et al., 2024. Prospective cohort of 185 mother-infant pairs; infants exposed to lead through breastmilk showed significantly lower language-development trajectories at 10 to 16 months, at concentrations lower than most prior studies.", "type": "Journal" },
-    { "n": 5, "title": "Prenatal heavy-metal exposure and birth outcomes in a Chinese e-waste region", "meta": "Chen et al., 2023. Cohort of 102 mothers in a Taizhou e-waste district; 34.3% had breastmilk chromium above the WHO permissible range, and maternal-milk cadmium was inversely associated with female birth weight within WHO permissible milk limits.", "type": "Journal" },
-    { "n": 6, "title": "FDA Total Diet Study and Closer to Zero infant-food action plan", "meta": "U.S. Food and Drug Administration. National food-monitoring and infant-food programs that sample commercial matrices, including manufactured infant formula, but not human breastmilk.", "type": "Government" },
-    { "n": 7, "title": "Environmental and maternal determinants of heavy-metal content in breast milk: a systematic review", "meta": "Aisyiah et al., 2025. PROSPERO-registered review of 9 primary studies across seven countries; independently reaches the biomonitor framing and links breastmilk metal concentrations to seafood, canned-food and water intake, smoking and industrial residence.", "type": "Journal" },
-    { "n": 8, "title": "Heavy Metal Index — breastmilk as a heavy-metal exposure pathway (synthesis with full anchor-source records)", "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.", "type": "Reference" }
+    {
+      "n": 1,
+      "title": "Assessment of arsenic, cadmium, lead, mercury, and per- and polyfluoroalkyl substances concentrations in human milk and infant formula in the United States: a systematic review",
+      "meta": "Systematic review treating human milk and infant formula as two separate matrices; finds per-serving human-milk concentrations of arsenic, cadmium, lead and mercury generally lower than reconstituted formula.",
+      "type": "Journal",
+      "doi": "10.1016/j.ajcnut.2025.07.039",
+      "href": "https://doi.org/10.1016/j.ajcnut.2025.07.039",
+      "authors": "Thoerig, Rachel C; O’Connor, Lauren E; Spill, Maureen K, et al.",
+      "year": 2025,
+      "journal": "The American Journal of Clinical Nutrition",
+      "volume": "122",
+      "issue": "4",
+      "pages": "1006-1026",
+      "cite_key": "thoerig2025-toxic-elements-pfas-human-milk-formula-systematic-review",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "The Association Between Maternal Dietary Intake and the Risk of Heavy Metals in Human Breast Milk in Korea",
+      "meta": "Cohort of 209 lactating Korean mothers; cadmium detected in 99% of samples, mercury 97%, total arsenic 89%, lead 79%; total arsenic was the largest hazard-quotient contributor and tracked maternal seafood intake.",
+      "type": "Journal",
+      "doi": "10.3390/toxics13050381",
+      "href": "https://doi.org/10.3390/toxics13050381",
+      "authors": "Moon, Nalae; Heo, Su Ji; Park, Seungyoung, et al.",
+      "year": 2025,
+      "journal": "Toxics",
+      "volume": "13",
+      "issue": "5",
+      "pages": "381",
+      "cite_key": "moon2025-maternal-diet-heavy-metals-breast-milk-korea",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 3,
+      "title": "Human Milk as a Biomonitor of Toxic Metal Exposure: Sources, Transfer Mechanisms, and Implications for Infant Health—A Review",
+      "meta": "Review of 112 primary studies framing human milk as a biomonitor of maternal exposure; documents bone, kidney and adipose accumulation, lactation-stage dynamics, and maternal determinants including smoking, marine-fish intake and dental amalgam.",
+      "type": "Journal",
+      "doi": "10.3390/nu18101527",
+      "href": "https://doi.org/10.3390/nu18101527",
+      "authors": "Katryńska, Danuta; Bzikowska-Jura, Agnieszka; Goc, Zofia, et al.",
+      "year": 2026,
+      "journal": "Nutrients",
+      "volume": "18",
+      "issue": "10",
+      "pages": "1527",
+      "cite_key": "katrynska2026-human-milk-biomonitor-toxic-metals-review",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Lead contamination in human milk affects infants’ language trajectory: results from a prospective cohort study",
+      "meta": "Prospective cohort of 185 mother-infant pairs; infants exposed to lead through breastmilk showed significantly lower language-development trajectories at 10 to 16 months, at concentrations lower than most prior studies.",
+      "type": "Journal",
+      "doi": "10.3389/fpubh.2024.1450570",
+      "href": "https://doi.org/10.3389/fpubh.2024.1450570",
+      "authors": "Naspolini, Nathalia Ferrazzo; Vanzele, Pedro A. R.; Tótolo, Pedro, et al.",
+      "year": 2024,
+      "journal": "Frontiers in Public Health",
+      "volume": "12",
+      "issue": null,
+      "pages": null,
+      "cite_key": "naspolini2024-human-milk-sao-paulo",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Prenatal Exposure to Heavy Metals and Adverse Birth Outcomes: Evidence From an E‐Waste Area in China",
+      "meta": "Cohort of 102 mothers in a Taizhou e-waste district; 34.3% had breastmilk chromium above the WHO permissible range, and maternal-milk cadmium was inversely associated with female birth weight within WHO permissible milk limits.",
+      "type": "Journal",
+      "doi": "10.1029/2023GH000897",
+      "href": "https://doi.org/10.1029/2023GH000897",
+      "authors": "Chen, Chen; Ma, Chaochen; Li, Qiyao, et al.",
+      "year": 2023,
+      "journal": "GeoHealth",
+      "volume": "7",
+      "issue": "11",
+      "pages": null,
+      "cite_key": "chen2023-breast-milk-ewaste-china",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 6,
+      "title": "FDA Total Diet Study and Closer to Zero infant-food action plan",
+      "meta": "U.S. Food and Drug Administration. National food-monitoring and infant-food programs that sample commercial matrices, including manufactured infant formula, but not human breastmilk.",
+      "type": "Government"
+    },
+    {
+      "n": 7,
+      "title": "Heavy Metal Content  in Breast Milk and Contributing Environmental and Maternal Factors: A Systematic Review",
+      "meta": "PROSPERO-registered review of 9 primary studies across seven countries; independently reaches the biomonitor framing and links breastmilk metal concentrations to seafood, canned-food and water intake, smoking and industrial residence.",
+      "type": "Journal",
+      "doi": "10.33860/jbc.v7i2.4042",
+      "href": "https://doi.org/10.33860/jbc.v7i2.4042",
+      "authors": "Aisyiah, Aisyiah; Rahfiludin, Mohammad Zen; Agushybana, Farid, et al.",
+      "year": 2025,
+      "journal": "Jurnal Bidan Cerdas",
+      "volume": "7",
+      "issue": "2",
+      "pages": "212-222",
+      "cite_key": "aisyiah2025-heavy-metals-breast-milk-systematic-review",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 8,
+      "title": "Heavy Metal Index — breastmilk as a heavy-metal exposure pathway (synthesis with full anchor-source records)",
+      "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page.",
+      "type": "Reference"
+    }
   ]
 }

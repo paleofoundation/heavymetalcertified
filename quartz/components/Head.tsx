@@ -48,6 +48,16 @@ function normalizeCitationDate(value: unknown): string | undefined {
     return `${monthDay[3]}/${String(month).padStart(2, "0")}/${monthDay[2].padStart(2, "0")}`
   }
 
+  // "August 2026" -> "2026/08". Scholar accepts YYYY/MM; a bare year is a much
+  // weaker signal, and inventing a day we do not know would be worse than either.
+  const monthYear = raw.match(
+    /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})$/i,
+  )
+  if (monthYear) {
+    const month = new Date(`${monthYear[1]} 1, 2000`).getMonth() + 1
+    return `${monthYear[2]}/${String(month).padStart(2, "0")}`
+  }
+
   const year = raw.match(/\b(19|20)\d{2}\b/)
   return year?.[0]
 }
@@ -158,6 +168,7 @@ function CitationMetadata({
   if (isScholarEligible) {
     const citationTitle = frontmatterString(frontmatter.title) ?? title
     const pubDate = normalizeCitationDate(
+      frontmatterString(frontmatter.published) ??
       frontmatterString(frontmatter.effective_date) ??
       frontmatterString(frontmatter.briefing_date) ??
       frontmatterString(frontmatter.updated) ??
@@ -165,14 +176,22 @@ function CitationMetadata({
     )
     const certDoi = frontmatterString(frontmatter.cert_doi) ?? frontmatterString(frontmatter.doi)
     const author = frontmatterString(frontmatter.author) ?? "Pendergrass, Karen"
+    const abstract = frontmatterString(frontmatter.scholar_abstract) ??
+      frontmatterString(frontmatter.socialDescription) ??
+      frontmatterString(frontmatter.description)
+    const keywordList = frontmatterStringArray(frontmatter.keywords)
+    const keywords = keywordList.length ? keywordList.join(", ") : undefined
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
     const pdfUrl = configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
+    // A URL path is not a report number; emitting one as `citation_technical_
+    // report_number` publishes malformed bibliographic metadata. When no real
+    // document identifier exists the tag is omitted instead.
     const reportNumber =
+      frontmatterString(frontmatter.report_number) ??
       frontmatterString(frontmatter.standard_version) ??
-      frontmatterString(frontmatter.briefing_slug) ??
       frontmatterString(frontmatter.edition) ??
-      slugStr
+      undefined
     return (
       <>
         <meta name="citation_title" content={citationTitle} />
@@ -189,8 +208,13 @@ function CitationMetadata({
         {pubDate && <meta name="citation_publication_date" content={pubDate} />}
         {reportNumber && <meta name="citation_technical_report_number" content={reportNumber} />}
         <meta name="citation_language" content="en" />
+        {abstract && <meta name="citation_abstract" content={abstract} />}
+        {keywords && <meta name="citation_keywords" content={keywords} />}
         <meta name="citation_abstract_html_url" content={socialUrl} />
         <meta name="citation_fulltext_html_url" content={socialUrl} />
+        {/* Every scholar-eligible document is free to read in full — no paywall,
+            no registration. Scholar treats this as an inclusion signal. */}
+        <meta name="citation_fulltext_world_readable" content="true" />
         {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
         {pdfUrl && <link rel="alternate" type="application/pdf" href={pdfUrl} />}
         {certDoi && <meta name="citation_doi" content={certDoi} />}

@@ -7,13 +7,34 @@
   "metals": ["Lead", "Arsenic", "Cadmium", "Mercury"],
   "section": "Analysis",
   "date": "August 2026",
-  "keywords": ["heavy metals in supplements", "lead in ayurvedic medicine", "herbal supplement contamination", "dietary supplement heavy metal testing", "lead in herbal supplements", "supplement finished-product certification", "arsenic in botanical supplements"],
+  "published": "2026-08-10",
+  "keywords": [
+    "heavy metals in supplements",
+    "lead in ayurvedic medicine",
+    "herbal supplement contamination",
+    "dietary supplement heavy metal testing",
+    "lead in herbal supplements",
+    "supplement finished-product certification",
+    "arsenic in botanical supplements"
+  ],
   "synthesis_url": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway",
   "connections": [
-    { "label": "Heavy Metal Index — the finding", "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway" },
-    { "label": "Lead — analyte review", "href": "/analytes/lead" },
-    { "label": "Arsenic — analyte review", "href": "/analytes/arsenic" },
-    { "label": "Mercury — analyte review", "href": "/analytes/mercury" }
+    {
+      "label": "Heavy Metal Index — the finding",
+      "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway"
+    },
+    {
+      "label": "Lead — analyte review",
+      "href": "/analytes/lead"
+    },
+    {
+      "label": "Arsenic — analyte review",
+      "href": "/analytes/arsenic"
+    },
+    {
+      "label": "Mercury — analyte review",
+      "href": "/analytes/mercury"
+    }
   ],
   "abstract": "Dietary supplements and traditional herbal preparations are a heavy-metal exposure pathway that behaves unlike the conventional food supply chain, in both magnitude and oversight. Contamination in this category spans several orders of magnitude: a mainstream Rhodiola rosea capsule bought online in the United States added on the order of 200 ng of arsenic per serving, while internet-purchased Ayurvedic capsules in two independent clinical cases carried [lead](/analytes/lead) at 23,043 and 40,657 mg/kg — roughly a million times the low-ppb action limits that govern food — and produced clinical lead poisoning requiring chelation. The enforcement framework is fragmented across nine divergent pharmacopoeias and, because supplements are regulated as foods rather than drugs, largely unenforced at the finished product. That combination — the most extreme contamination tail under the weakest oversight — is exactly the setting where independent, finished-product certification adds the most value. The full anchor-source evidence base lives on the [Heavy Metal Index](https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway), the independent literature reference this analysis cites one way.",
   "sections": [
@@ -61,11 +82,82 @@
     }
   ],
   "references": [
-    { "n": 1, "title": "Heavy metals, biomarkers and pesticide residues in Rhodiola rosea supplements on the U.S. market", "meta": "Porwollik and Jafari, 2026. First peer-reviewed survey of ten Rhodiola rosea products by ICP-MS; every one of the seven capsules carried detectable arsenic, cobalt and lead, with total arsenic to 393 ppb, lead to 88 ppb and cobalt to 733 ppb.", "type": "Journal", "href": "https://doi.org/10.1371/journal.pone.0341070" },
-    { "n": 2, "title": "Comparison of permitted heavy-metal limits for herbal medicines across nine pharmacopoeias", "meta": "Inada, 2023. Documents several-fold variation in allowable lead, cadmium, mercury and arsenic limits for herbal medicines across nine major pharmacopoeias, with the WHO guidelines acting only as a floor.", "type": "Journal", "href": "https://doi.org/10.1007/s43441-023-00532-2" },
-    { "n": 3, "title": "Lead poisoning from an Ayurvedic preparation: a further Italian clinical case", "meta": "Ciocan et al., 2021. Blood lead of 102 µg/dL after oral Ayurvedic medication; product samples reached 23,043 mg/kg lead and 145,711 mg/kg mercury, roughly 44 and 300,000 times the worst regional soil, indicating intentional metal addition.", "type": "Journal", "href": "https://doi.org/10.23749/mdl.v112i2.10576" },
-    { "n": 4, "title": "Lead poisoning from an internet-purchased Ayurvedic diabetes capsule in Kerala", "meta": "Thomas et al., 2024. Blood lead of 121.20 µg/dL; state drug-analyst testing found 40,657 mg/kg lead in the capsule, about 4,066 times the Ayurvedic Pharmacopoeia of India permissible limit, requiring chelation.", "type": "Journal", "href": "https://doi.org/10.1530/edm-23-0066" },
-    { "n": 5, "title": "Ayurvedic Pharmacopoeia of India permissible lead limit for herbal preparations", "meta": "Ayurvedic Pharmacopoeia of India. Sets a 10 ppm (10 mg/kg) permissible lead limit for Ayurvedic preparations, the benchmark the Kerala capsule exceeded roughly 4,066-fold.", "type": "Standard" },
-    { "n": 6, "title": "Heavy Metal Index — supplements and botanicals as a distinct heavy-metal pathway (synthesis with full anchor-source records)", "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page with ingest receipts and extracted values.", "type": "Reference", "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway" }
+    {
+      "n": 1,
+      "title": "The quality and safety of Rhodiola rosea supplements on the U.S. market: An analysis of biomarkers, heavy metals, and pesticide residues",
+      "meta": "First peer-reviewed survey of ten Rhodiola rosea products by ICP-MS; every one of the seven capsules carried detectable arsenic, cobalt and lead, with total arsenic to 393 ppb, lead to 88 ppb and cobalt to 733 ppb.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1371/journal.pone.0341070",
+      "doi": "10.1371/journal.pone.0341070",
+      "authors": "Porwollik, Steffen; Jafari, Mahtab",
+      "year": 2026,
+      "journal": "PLOS One",
+      "volume": "21",
+      "issue": "1",
+      "pages": "e0341070",
+      "cite_key": "porwollik2026-rhodiola-supplements-us-market",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 2,
+      "title": "Comparison of Regulations for Arsenic and Heavy Metals in Herbal Medicines Using Pharmacopoeias of Nine Counties/Regions",
+      "meta": "Documents several-fold variation in allowable lead, cadmium, mercury and arsenic limits for herbal medicines across nine major pharmacopoeias, with the WHO guidelines acting only as a floor.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1007/s43441-023-00532-2",
+      "doi": "10.1007/s43441-023-00532-2",
+      "authors": "Inada, Isa; Kiuchi, Fumiyuki; Urushihara, Hisashi",
+      "year": 2023,
+      "journal": "Therapeutic Innovation &amp; Regulatory Science",
+      "volume": "57",
+      "issue": "5",
+      "pages": "963-974",
+      "cite_key": "inada2023-herbal-medicine-heavy-metal-regulations",
+      "verified_basis": "author-agreement"
+    },
+    {
+      "n": 3,
+      "title": "Lead poisoning from Ayurvedic treatment: a further case.",
+      "meta": "Blood lead of 102 µg/dL after oral Ayurvedic medication; product samples reached 23,043 mg/kg lead and 145,711 mg/kg mercury, roughly 44 and 300,000 times the worst regional soil, indicating intentional metal addition.",
+      "type": "Journal",
+      "href": "https://doi.org/10.23749/mdl.v112i2.10576",
+      "doi": "10.23749/mdl.v112i2.10576",
+      "authors": "Ciocan, Catalina; Mansour, Ihab; Beneduce, Alessandro, et al.",
+      "year": 2021,
+      "journal": "La Medicina del Lavoro",
+      "volume": "112",
+      "issue": "2",
+      "pages": "162-167",
+      "cite_key": "ciocan2021-ayurvedic-lead-hg-poisoning",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 4,
+      "title": "Case of lead poisoning secondary to intake of herbal medicine for diabetes mellitus in a tertiary care hospital in Kerala",
+      "meta": "Blood lead of 121.20 µg/dL; state drug-analyst testing found 40,657 mg/kg lead in the capsule, about 4,066 times the Ayurvedic Pharmacopoeia of India permissible limit, requiring chelation.",
+      "type": "Journal",
+      "href": "https://doi.org/10.1530/edm-23-0066",
+      "doi": "10.1530/edm-23-0066",
+      "authors": "Thomas, Junith; Sebastian, Rohini; Anil Kumar, C R, et al.",
+      "year": 2024,
+      "journal": "Endocrinology, Diabetes &amp; Metabolism Case Reports",
+      "volume": "2024",
+      "issue": "2",
+      "pages": null,
+      "cite_key": "thomas2024-lead-poisoning-ayurvedic-herbal",
+      "verified_basis": "title+author"
+    },
+    {
+      "n": 5,
+      "title": "Ayurvedic Pharmacopoeia of India permissible lead limit for herbal preparations",
+      "meta": "Ayurvedic Pharmacopoeia of India. Sets a 10 ppm (10 mg/kg) permissible lead limit for Ayurvedic preparations, the benchmark the Kerala capsule exceeded roughly 4,066-fold.",
+      "type": "Standard"
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — supplements and botanicals as a distinct heavy-metal pathway (synthesis with full anchor-source records)",
+      "meta": "The independent literature synthesis this analysis reframes, carrying every anchor source and its per-record page with ingest receipts and extracted values.",
+      "type": "Reference",
+      "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway"
+    }
   ]
 }
