@@ -10,7 +10,9 @@ orcid: 0000-0002-2348-7259
 briefing_date: "August 2026"
 updated: "August 2026"
 scholar_eligible: true
-pdf: "/static/briefings/the-prop-65-gap.pdf"
+scholar_pdf: true
+scholar_pdf_url: "https://heavymetalcertified.com/briefings/the-prop-65-gap.pdf"
+pdf: "/briefings/the-prop-65-gap.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Brief 9" }

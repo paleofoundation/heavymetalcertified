@@ -1,0 +1,197 @@
+{
+  "slug": "dried-fruit",
+  "name": "Dried fruit",
+  "category": 4,
+  "category_name": "Fruits, Vegetables, and Produce",
+  "anchor": "Per-produce-class sovereign maximum levels for lead and cadmium (EU Reg. 2023/915 and Switzerland VHK 817.022.15; Hong Kong Cap. 132V Part 2; AU-NZ Schedule 19; MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019; Israel MOH FCS-2016), nickel under EU Reg. 2024/1987, total and inorganic arsenic under MERCOSUR and Israel MOH FCS-2016, and total mercury under Hong Kong Cap. 132V and Israel MOH FCS-2016.",
+  "provisional_scaffold": false,
+  "cross_reference": null,
+  "native_basis": "as_sold_dry",
+  "native_basis_label": "dried fruit as offered to the consumer, dry as-sold basis, no reconstitution conversion applied",
+  "scope_note": "Sun-dried, tunnel-dried, osmotically dried, freeze-dried and vacuum-dried whole or cut fruit sold as such: raisins and sultanas, prunes, dried apricots, figs, dates, dried apples, dried mango and papaya, dried cranberries and cherries, and freeze-dried fruit pieces. Water content is roughly 15 to 25 percent against 80 to 90 percent for the fresh commodity, so a fresh wet-weight maximum level is between four and six times stricter than its own intent when applied to this row at face value. THE BASIS IS THE CONTROLLING FACT FOR THIS ROW. Only maximum levels written for the dried commodity on an as-offered or as-placed-on-market basis are named, enforced by the basis_guard. AU-NZ Schedule 19 is expressly excluded even though its fruit lead maximum level of 100 ug/kg is far stricter than the binding value, because Schedule 19 calculates dried and dehydrated foods on the pre-drying basis and is therefore a fresh-equivalent number rather than a dry as-sold number. OUT OF SCOPE: dried leafy vegetables, dried herbs and dried spices (Category 34); dried mushrooms (Category 29); fruit leathers, strips, purees, gummies and other manufactured fruit confections (fruit-snacks row); dried pulses, nuts and seeds (Categories 27 and 28); products marketed for ages 0 to 5 (Category 1).",
+  "basis_guard": "product as offered to consumer|product as placed on market",
+  "basis_guard_note": "This row is a concentrated product in a dry or as-offered basis, so the guard admits only maximum levels expressed for the product as offered to the consumer or as placed on the market and rejects every fresh wet-weight and portion-ordinarily-consumed maximum level. That is deliberate: applying a fresh wet-weight value at face value to a dried product would silently mix bases, and converting between them would require an invented reconstitution factor, which Method v2.0 confines to infant formula.",
+  "method": "HMTc Method v2.0 (government-limit-only; the strictest applicable sovereign maximum level for the row's product form in the row's native basis, a disclosed read-across where the exact cell is unregulated, a substantiated not-material determination, or a control; never occurrence-derived)",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "gov",
+      "value": 800,
+      "value_exact": 800,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "MERCOSUR",
+      "binding_id": "mercosur_gmc12_2011_dried_fruits_pb_800",
+      "basis": "dried fruit as offered to the consumer (dry as-sold)",
+      "binding_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "candidates": [
+        {
+          "id": "mercosur_gmc12_2011_dried_fruits_pb_800",
+          "value": 800,
+          "jurisdiction": "MERCOSUR"
+        },
+        {
+          "id": "py_decreto1335_2019_dried_fruits_pb_800",
+          "value": 800,
+          "jurisdiction": "PY"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "MERCOSUR GMC Res. 12/2011 and its Paraguayan enactment Decreto 1335/2019 set lead for dried fruits at 800 ug/kg on a product-as-offered-to-consumer basis, the only sovereign lead maximum level written for this exact cell in this exact basis.",
+      "substantiation": "R1 direct maximum level. The value is looser than the 100 ug/kg fresh-fruit lead ceiling and that is the honest arithmetic of the basis, not a concession: a lawful fresh grape at 100 ug/kg becomes a raisin at roughly 400 ug/kg on the dry basis, so a 100 ug/kg dried-fruit ceiling would be a number manufactured by a basis error rather than one compelled by any instrument. Stricter fruit lead maximum levels exist (Hong Kong, AU-NZ, Switzerland, MERCOSUR and Israel all set 100 ug/kg for fresh fruit) and are deliberately not carried across the basis change; the basis_guard makes that mechanical."
+    },
+    "Cd": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "source_id": "mercosur_gmc12_2011_fresh_fruits_excluding_berries_small_fruits_cd_50",
+      "source_jurisdiction": "MERCOSUR",
+      "basis": "MERCOSUR fresh-fruit cadmium maximum level applied at face value to the dried product as offered (conservative direction, disclosed)",
+      "source_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "source_scope": "fresh fruits excluding berries and small fruits",
+      "label": "MERCOSUR GMC Res. 12/2011 writes dried-fruit maximum levels for lead and total arsenic but none for cadmium, so the exact cell is unregulated; the nearest applicable sovereign value is the same instrument's fresh-fruit cadmium maximum level of 50 ug/kg for the same commodity, applied at face value to the dry product.",
+      "stricter_unselected": [],
+      "substantiation": "R2 disclosed read-across within one instrument and one commodity. Face value is the conservative direction here: holding a product with roughly one fifth the water content of the fresh commodity to the fresh cadmium ceiling is approximately five times stricter in fresh-equivalent terms, so the read-across cannot understate contamination. No dry-basis cadmium maximum level for dried fruit exists in any credible jurisdiction, and Israel MOH FCS-2016 lists dried fruits as a separate category (3.1) without a cadmium entry, so its 50 ug/kg general fruits-and-vegetables cadmium row cannot be assumed to reach the dried product and is not relied on."
+    },
+    "tAs": {
+      "type": "gov",
+      "value": 800,
+      "value_exact": 800,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "MERCOSUR",
+      "binding_id": "mercosur_gmc12_2011_dried_fruits_tas_800",
+      "basis": "dried fruit as offered to the consumer (dry as-sold)",
+      "binding_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "candidates": [
+        {
+          "id": "mercosur_gmc12_2011_dried_fruits_tas_800",
+          "value": 800,
+          "jurisdiction": "MERCOSUR"
+        },
+        {
+          "id": "py_decreto1335_2019_dried_fruits_tas_800",
+          "value": 800,
+          "jurisdiction": "PY"
+        },
+        {
+          "id": "il_fcs2016_tas_3_1_dried_fruits_and_vegetables_including_mushrooms_edib_5000",
+          "value": 5000,
+          "jurisdiction": "IL"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019 set total arsenic for dried fruits at 800 ug/kg; Israel MOH FCS-2016 category 3.1 sets 5000 ug/kg for dried fruits and vegetables.",
+      "substantiation": "R1 direct maximum levels for the dried commodity in the dry as-sold basis. MERCOSUR binds. The inorganic-arsenic species limit for this row (300 ug/kg) is far stricter and is the operative arsenic constraint; total arsenic is reported for its own sake and is never satisfied by the species cell."
+    },
+    "iAs": {
+      "type": "gov",
+      "value": 300,
+      "value_exact": 300,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "IL",
+      "binding_id": "il_fcs2016_ias_3_1_dried_fruits_and_vegetables_including_mushrooms_edib_300",
+      "basis": "dried fruit as offered to the consumer (dry as-sold)",
+      "binding_page": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+      "candidates": [
+        {
+          "id": "il_fcs2016_ias_3_1_dried_fruits_and_vegetables_including_mushrooms_edib_300",
+          "value": 300,
+          "jurisdiction": "IL"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "Israel MOH FCS-2016 category 3.1 sets inorganic arsenic for dried fruits and vegetables at 300 ug/kg, the only sovereign inorganic-arsenic maximum level written for a dried produce commodity.",
+      "substantiation": "R1 direct maximum level for the dried commodity in the dry as-sold basis. Israel's fresh fruits-and-vegetables inorganic-arsenic row (60 ug/kg) is stricter but sits in the fresh basis and is a different category of the same instrument, so the dried row is the applicable cell; the instrument's own five-fold step between them is the regulator's basis treatment, not an HMTc adjustment."
+    },
+    "tHg": {
+      "type": "gov",
+      "value": 150,
+      "value_exact": 150,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "IL",
+      "binding_id": "il_fcs2016_thg_3_1_dried_fruits_and_vegetables_including_mushrooms_edib_150",
+      "basis": "dried fruit as offered to the consumer (dry as-sold)",
+      "binding_page": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+      "candidates": [
+        {
+          "id": "il_fcs2016_thg_3_1_dried_fruits_and_vegetables_including_mushrooms_edib_150",
+          "value": 150,
+          "jurisdiction": "IL"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "Israel MOH FCS-2016 category 3.1 sets total mercury for dried fruits and vegetables at 150 ug/kg, the only sovereign total-mercury maximum level written for a dried produce commodity.",
+      "substantiation": "R1 direct maximum level in the dry as-sold basis. The same instrument's fresh row is 30 ug/kg; the five-fold step between the fresh and dried categories is the regulator's own basis treatment and is exactly why the fresh value is not carried into this row."
+    },
+    "MeHg": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "No credible sovereign government sets a methylmercury maximum level for any fruit, vegetable or other terrestrial plant food in any jurisdiction; every methylmercury maximum level in the register is scoped to fish, shellfish and other aquatic animals, where microbial methylation in sediment and water is the documented pathway. Field-grown produce has no aquatic methylation compartment, and mercury taken up by root and leaf tissue is predominantly inorganic Hg(II). Methylmercury is therefore a component of, and bounded by, the published total-mercury ceiling for this row (Israel MOH FCS-2016 category 3.1, 150 ug/kg), and no separate methylmercury number is published.",
+      "reference_method": "Methylmercury by GC-ICP-MS or EN 16801, required only on a lot whose total mercury reaches 60 percent of the published total-mercury ceiling; any quantifiable methylmercury on such a lot is investigated and the lot is held pending root-cause analysis.",
+      "bounded_by": "tHg",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No jurisdiction sets a methylmercury maximum level for produce; methylmercury maximum levels exist only for aquatic species (HK Cap. 132V item 11; US FDA CPG 540.600). Total mercury for this row is published and bounds the species.",
+      "jurisdictions_checked": "EU Reg. 2023/915; EU Reg. 2024/1987 (nickel); Switzerland VHK 817.022.15 (2026 metal/metalloid annex); Hong Kong Cap. 132V Part 2 Schedule; AU-NZ Food Standards Code Schedule 19; MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019; Israel MOH FCS-2016; Codex CXS 193-1995; US FDA (21 CFR, action levels)"
+    },
+    "Ni": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a nickel maximum level for fruit in any form, dried or fresh. EU Reg. 2024/1987 enumerates vegetable, cereal, pulse, nut, seed, cocoa, seaweed and juice classes and sets no fruit maximum level at all, and the Swiss VHK nickel rows mirror it. There is therefore no same-commodity value to read across from, and a vegetable wet-weight nickel maximum level could not be carried into this row's dry as-sold basis in any event. HMTc publishes no nickel number for dried fruit.",
+      "reference_method": "Total nickel by ICP-MS on every lot. Investigate any result that is an outlier against the applicant's own dried-fruit lot history, with attention to stainless-steel dicing and dehydrator contact, and record the drying ratio so results can be compared on a fresh-equivalent basis for surveillance.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Sn": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Every tin maximum level in the register is scoped to canned product: EU Reg. 2023/915 sets 200000 ug/kg for canned foods and 100000 ug/kg for canned beverages, Codex CXS 193-1995 and AU-NZ Schedule 19 set 250000 ug/kg for canned foods, and Hong Kong Cap. 132V sets 250000 ug/kg for canned food other than canned beverages. Those limits regulate one contamination pathway, dissolution of tin from tinplate into the packed food. This row is not packed in tinplate, so the pathway that every sovereign tin limit addresses is physically absent and any tin present is dietary background rather than packaging migration. The EU tin maximum levels expressly exclude canned dried and canned powdered products from their own scope, which is the regulator's own recognition that tin dissolution from tinplate is a wet-pack phenomenon; even a canned dried fruit therefore falls outside every sovereign tin maximum level. Hermetically sealed tinplate presentations of this commodity route to the canned-foods row in Category 7 and carry the canned-foods tin maximum level there.",
+      "reference_method": "Total tin by ICP-MS on every lot as part of the mandatory eight-totals panel; a result above 50 ug/kg is investigated for a metal-contact source in harvest, wash, transport or packing before the lot is released.",
+      "bounded_by": null,
+      "substantiation": null,
+      "basis_class": "no-migration-pathway",
+      "regulatory_basis": "No jurisdiction sets a tin maximum level for non-canned produce; all tin maximum levels in the register are conditioned on a canned (tinplate) presentation, and the EU rows expressly exclude canned dried and canned powdered products from even that scope.",
+      "jurisdictions_checked": "EU Reg. 2023/915; EU Reg. 2024/1987 (nickel); Switzerland VHK 817.022.15 (2026 metal/metalloid annex); Hong Kong Cap. 132V Part 2 Schedule; AU-NZ Food Standards Code Schedule 19; MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019; Israel MOH FCS-2016; Codex CXS 193-1995; US FDA (21 CFR, action levels)"
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets an aluminium contaminant maximum level for any fruit, vegetable or produce form in any jurisdiction. The register's aluminium limits are drinking-water and bottled-water parameters, infant-formula maximum levels, a food-contact plastics specific migration limit, toy migration limits, and permitted-additive levels for baked and starch foods; none of them regulates aluminium as a contaminant of produce. Aluminium is also the third most abundant element in the earth's crust and appears in produce largely as soil-derived and root-associated mineral content rather than as process contamination, so no near-neighbour read-across is supportable either. Under the government-limit-only method HMTc publishes no standalone aluminium number for this row.",
+      "reference_method": "Total aluminium by ICP-MS on every lot, reported to the applicant. Document any aluminium-containing processing aid, packaging contact or anti-caking agent, comply with the additive rules of every market of sale, and investigate any result that is an outlier against the applicant's own lot history.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a total-chromium maximum level for this product form. The only dietary total-chromium maximum levels in the register are Hong Kong Cap. 132V item 7 for vegetables (500 ug/kg) and pulses, cereals, meat, fish and dairy powder rows under the same item, plus drinking-water and color-additive specifications. The Hong Kong vegetable row does not reach fruit, no jurisdiction writes a total-chromium maximum level for fruit, and a wet-weight vegetable value could not be carried into this row's dry as-sold basis. Under the government-limit-only method HMTc publishes no standalone total-chromium number for this row; total chromium is screened on every lot and hexavalent chromium is controlled by reflex speciation.",
+      "reference_method": "Total chromium by ICP-MS on every lot; investigate any elevated result against soil, irrigation water and processing-equipment provenance and reflex-speciate per the Cr-VI control.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a hexavalent-chromium maximum level for any food in any jurisdiction, and this row has no published total-chromium parent to bound the species against (the only total-chromium food maximum level in the register, Hong Kong Cap. 132V item 7, is scoped to vegetables and does not reach this product form). With neither a species limit nor a published parent, HMTc publishes no hexavalent-chromium number and controls the species by mandatory reflex speciation.",
+      "reference_method": "Total chromium by ICP-MS on every lot. Any total-chromium result at or above 100 ug/kg triggers Cr(VI) speciation by EN 15192 or EPA 6800 IC-ICP-MS isotope dilution; any quantifiable Cr(VI) at LOQ fails the lot and the lot is held pending root-cause analysis.",
+      "bounded_by": "Cr (total chromium, itself a control for this row)",
+      "companion_ml": null
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat4-config.json",
+  "version": "cat4-v1.0 (2026-08-17)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}

@@ -190,7 +190,7 @@ Analysis from the certification program, grounded in the independent evidence ba
 
 ## Program briefings
 
-The [Standards Briefings](../briefings/) are the program's positioning analysis: what HMTc is, why the analyte panel grew, what *Palmquist* changed for brand legal and finance, and the business case for certification.
+The [Standards Briefings](../briefings) are the program's positioning analysis: what HMTc is, why the analyte panel grew, what *Palmquist* changed for brand legal and finance, and the business case for certification.
 
 ---
 

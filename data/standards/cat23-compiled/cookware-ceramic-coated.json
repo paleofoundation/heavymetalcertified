@@ -1,0 +1,130 @@
+{
+  "slug": "cookware-ceramic-coated",
+  "name": "Ceramic-coated cookware",
+  "category": 23,
+  "category_name": "Food-Contact Consumer Goods and Kitchenware",
+  "anchor": "EU food-contact framework Regulation 1935/2004 with Regulation (EU) 10/2011 Annex II specific migration limits as the only element-migration instrument in the register; polymer-surface rows anchor it directly or by disclosed read-across, and metal, alloy, ceramic-glaze, vitreous-enamel and glass rows are controls because their dedicated release regimes are not yet ingested.",
+  "provisional_scaffold": false,
+  "cross_reference": null,
+  "native_basis": "element release from the glaze, enamel or glass into food or food simulant (µg/kg food)",
+  "native_basis_label": "element RELEASE FROM THE GLAZE, VITREOUS ENAMEL OR GLASS NETWORK INTO FOOD OR A FOOD SIMULANT, µg/kg of food, determined by the 4 percent (v/v) acetic acid filled-article or contact-surface extraction convention used for this material family, with decoration within 20 mm of the lip determined separately. This is the glaze-and-glass RELEASE basis; it is deliberately NOT the Reg (EU) 10/2011 plastics-simulant convention, and a plastics specific migration limit is never substituted for a release limit on this family.",
+  "scope_note": "Cookware whose food-contact surface is an INORGANIC coating: a sol-gel or vitreous enamel layer rather than a polymer. That places the row in the glaze-and-enamel release family, not the plastics family, and the applicable lead-and-cadmium release regime for that family (EU 84/500/EEC and its amendments, and the FDA compliance-policy guide route) is absent from the register. The row is therefore a control and the gap is recorded; the plastics migration limits are not substituted, because a fired inorganic coating and a polymer film are different material families extracted by different methods. Coloured enamel interiors are the configuration of concern, since frit colourants are the element source.",
+  "basis_guard": "element release from the glaze, enamel or glass into food",
+  "basis_guard_note": "Only an instrument expressed as specific element migration into food or a food simulant may anchor a cell on this row. The guard exists to reject the three foreign bases that surround this category and would otherwise look plausible: the FOOD basis (canned-food tin maximum levels, which limit the contents and not the article), the MATERIAL-CONTENT basis (CPSIA total lead in substrate, EU REACH Annex XVII cadmium percent-by-weight restrictions, RoHS homogeneous-material limits, Japan Notice 370 and Korea MFDS percent-by-weight lead in food-contact metals), and the ARTICLE-EXTRACTION basis of the toy regime (EU 2009/48 Annex II Part III and ASTM F963 soluble limits, which are element migration from scraped-off or coated TOY material into 0.07 M hydrochloric acid, expressed per kg of MATERIAL, not per kg of food). Any of those would fail this guard and resolve to a gap rather than publish in the wrong basis. On this control row the guard is declaratory as well as operative: it records the only basis in which a future ingested instrument would be allowed to supply this row's numbers, so that a content limit, a food limit, a water limit or a plastics specific migration limit cannot later be dropped in as this row's release ceiling. The plastics clause is deliberately absent from this guard: a Reg (EU) 10/2011 value named here would fail the guard and resolve to a gap.",
+  "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum for this exact product form expressed as specific element migration into food or a food simulant; a disclosed read-across from the nearest applicable sovereign value in the same basis where the food-contact material family is expressly excluded from or not reached by that instrument; a substantiated not-material determination; or a control. No cell is occurrence-derived, and no cell borrows a value across a basis.",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Lead is the dominant pathway for this material family: lead-fluxed and lead-bisilicate glazes, lead-bearing on-glaze enamels and applied decoration, and under-fired or acid-attacked glaze surfaces all release lead into acidic food. It is the single cell where the absent release regime matters most, and the gap is recorded rather than papered over with a plastics value. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cd": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Cadmium is the co-dominant pathway: cadmium sulfoselenide red, orange and yellow glaze and enamel pigments release cadmium into acidic food, and the absent release regime is a joint lead-and-cadmium regime for exactly that reason. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "tAs": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Arsenic occurs as a glass fining and opacifying residue and as a trace impurity of frit and colourant raw materials. Determined as the total element. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "iAs": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "Arsenic released from a glaze, enamel or glass network is inorganic by construction, so it cannot be bounded below the total-arsenic result, and this row's total-arsenic cell is itself a control with no sovereign ceiling to bound it. A speciation-bounded not-material determination is therefore unavailable and the fail-safe applies. No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration. Inorganic-arsenic speciation by HPLC-ICP-MS on the acid extract wherever total arsenic is detected.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "tHg": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Mercury has no functional role in glazes or glass batches and appears only as a trace raw-material impurity, but it remains a mandatory panel determination. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "MeHg": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Methylmercury is formed by microbial methylation in aquatic food chains. A glaze, an enamel and a glass network are fired inorganic matrices with no organic carbon and no methylation pathway, and no credible sovereign sets a methylmercury requirement for any food-contact material. Total mercury remains a mandatory control on this row; methylmercury is not material and never substitutes for it.",
+      "reference_method": "Total-mercury release determination per the tHg control; reflex methylmercury speciation only where total mercury is detected in the acid extract.",
+      "bounded_by": null,
+      "substantiation": null,
+      "basis_class": "no-migration-pathway",
+      "regulatory_basis": "No credible sovereign sets a methylmercury requirement for a ceramic, enamelled or glass food-contact article in any basis. A fired inorganic matrix supplies no methyl donor.",
+      "jurisdictions_checked": "EU (Reg (EU) 1935/2004 framework + Annex I material families; Reg (EU) 10/2011 Annex II element list, as amended by 2016/1416 and 2020/1245); UK (retained Reg 10/2011); US (FDA food-contact substances, 21 CFR 174-190: no element migration ceiling for these elements); Codex (no food-contact-material standard); AU-NZ (FSANZ Food Standards Code 1.4.3 and 3.2.2: no element migration ceiling); Canada (Food and Drugs Act s.4 / letter-of-no-objection route, no numeric element migration ceiling); Hong Kong (Cap 132 subsidiary legislation: food limits only)."
+    },
+    "Ni": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Nickel occurs in glaze and enamel colourants (nickel oxide greys and browns) and in the ground-coat of vitreous enamel over steel. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Sn": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Tin occurs as tin oxide, a standard glaze and enamel opacifier, and in tin-vanadium and tin-chrome pink pigments, so tin is a genuine constituent of this material family rather than an impurity. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Aluminium is a structural constituent of every alumino-silicate glaze and body and of glass batches, so an aluminium release determination on this family measures the network itself; it is retained as a mandatory determination and no ceiling is invented for it. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded. Total chromium is retained as a screening determination. Chromium is a standard glaze and enamel colourant (chrome greens, tin-chrome pinks, iron-chrome browns), but total chromium is not the health-relevant quantity: the species cell is. Ceramic-coated and enamelled cookware sits in the glaze-release family rather than the plastics family, so it inherits this family's absent regime; coloured interior enamel is tested colour by colour and after abrasion and thermal-shock conditioning.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "Hexavalent chromium is the health-relevant chromium species and it is a live concern on this family: chromate and dichromate raw materials are used in glaze and enamel colourants, and oxidising firing atmospheres can retain chromium in the hexavalent state at the glaze surface. No credible sovereign sets a hexavalent-chromium release ceiling for a glazed, enamelled or glass food-contact article, and this row's total-chromium cell is itself a control, so no published parent bounds the species. The fail-safe applies. No credible sovereign release ceiling for this material family is present in the HMTc regulatory register. Glazed ceramic, vitreous enamel, glass and applied decoration are governed in the real world by a dedicated lead-and-cadmium release regime (EU Council Directive 84/500/EEC as amended by 2005/31/EC for ceramic articles, and the US FDA compliance-policy guides on lead in ceramicware and decorated glassware), and by California Proposition 65 consent judgments on tableware. None of those instruments has been ingested into data/evidence/regulatory_limits.csv, and this build refuses to substitute the plastics specific migration limits for a glaze-release limit: the two are different extractions on different material families and the substitution would be a basis conflation. The cell is a control until the release regime is ingested through the verified regulatory-fetch pathway, and the gap is recorded.",
+      "reference_method": "Release testing on the filled or contact-surface article using 4 percent (v/v) acetic acid at the article's stated use temperature and duration (the release convention used for glazed, enamelled and glass food-contact articles), ICP-MS determination in the extract, with a separate determination on any decoration lying within 20 mm of the lip or on any interior decoration. Hexavalent-chromium speciation by ion-chromatography ICP-MS on the acid extract, performed on every chromium-coloured glaze, enamel or decoration irrespective of the total-chromium result.",
+      "bounded_by": null,
+      "companion_ml": null
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat23-config.json",
+  "version": "cat23-v1.0 (2026-08-17)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}

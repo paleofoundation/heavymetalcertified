@@ -1,0 +1,203 @@
+{
+  "slug": "fruit-snacks",
+  "name": "Fruit snacks",
+  "category": 4,
+  "category_name": "Fruits, Vegetables, and Produce",
+  "anchor": "Per-produce-class sovereign maximum levels for lead and cadmium (EU Reg. 2023/915 and Switzerland VHK 817.022.15; Hong Kong Cap. 132V Part 2; AU-NZ Schedule 19; MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019; Israel MOH FCS-2016), nickel under EU Reg. 2024/1987, total and inorganic arsenic under MERCOSUR and Israel MOH FCS-2016, and total mercury under Hong Kong Cap. 132V and Israel MOH FCS-2016.",
+  "provisional_scaffold": false,
+  "cross_reference": null,
+  "native_basis": "as_sold",
+  "native_basis_label": "manufactured fruit snack as offered to the consumer, as-sold basis across a wide moisture range (roughly 15 percent for a fruit leather to 80 percent for a puree pouch)",
+  "scope_note": "Manufactured fruit-based snack and spread forms: fruit leathers, strips and rolls, fruit bars whose predominant ingredient is fruit, fruit-puree pouches and cups, fruit gummies and chews formulated from fruit puree or concentrate, and compotes, jellies, jams and marmalades. Products whose predominant ingredient is grain, dairy, nut or confectionery sugar rather than fruit route out (Category 7 snacks-general, Category 33 confectionery, Category 3 grains). Fruit-based ice cream and other frozen dairy desserts route to Category 24. Fruit juices and nectars route to Category 5. Products marketed for ages 0 to 5, including infant and toddler fruit purees and pouches, route to Category 1 by the taxonomy boundary rule, which removes the largest single fruit-puree market from this row. THE ROW'S MOISTURE RANGE IS WHY ONLY AS-OFFERED MAXIMUM LEVELS ARE NAMED: MERCOSUR GMC Res. 12/2011 writes a maximum level for exactly this product class (compotes, jellies, jams, marmalades and other fruit or vegetable sweets) on a product-as-offered-to-consumer basis, and that instrument governs lead and total arsenic here. Where MERCOSUR is silent, the cell reads across from a same-commodity fresh fruit-and-vegetable maximum level at face value, which is conservative for the concentrated members of the row and approximately basis-matched for the puree members.",
+  "basis_guard": "product as offered to consumer|product as placed on market",
+  "basis_guard_note": "This row is a concentrated product in a dry or as-offered basis, so the guard admits only maximum levels expressed for the product as offered to the consumer or as placed on the market and rejects every fresh wet-weight and portion-ordinarily-consumed maximum level. That is deliberate: applying a fresh wet-weight value at face value to a dried product would silently mix bases, and converting between them would require an invented reconstitution factor, which Method v2.0 confines to infant formula.",
+  "method": "HMTc Method v2.0 (government-limit-only; the strictest applicable sovereign maximum level for the row's product form in the row's native basis, a disclosed read-across where the exact cell is unregulated, a substantiated not-material determination, or a control; never occurrence-derived)",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "gov",
+      "value": 200,
+      "value_exact": 200,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "MERCOSUR",
+      "binding_id": "mercosur_gmc12_2011_fruit_vegetable_jams_sweets_pb_200",
+      "basis": "manufactured fruit snack as offered to the consumer",
+      "binding_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "candidates": [
+        {
+          "id": "mercosur_gmc12_2011_fruit_vegetable_jams_sweets_pb_200",
+          "value": 200,
+          "jurisdiction": "MERCOSUR"
+        },
+        {
+          "id": "py_decreto1335_2019_fruit_vegetable_jams_sweets_pb_200",
+          "value": 200,
+          "jurisdiction": "PY"
+        }
+      ],
+      "stricter_unselected": [
+        {
+          "id": "py_decreto1335_2019_fruit_based_ice_cream_pb_70",
+          "value": 70,
+          "jurisdiction": "PY",
+          "scope": "fruit-based ice cream"
+        },
+        {
+          "id": "mercosur_gmc12_2011_fruit_based_ice_cream_pb_70",
+          "value": 70,
+          "jurisdiction": "MERCOSUR",
+          "scope": "fruit-based ice cream"
+        }
+      ],
+      "label": "MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019 set lead at 200 ug/kg for compotes, jellies, jams, marmalades and other fruit or vegetable sweets, the sovereign class that this taxonomy row names as fruit snacks, on a product-as-offered-to-consumer basis.",
+      "substantiation": "R1 direct maximum level for the manufactured product class in the row's own basis. Fresh-fruit lead maximum levels of 100 ug/kg exist in five jurisdictions and are not carried into this row: the row spans moisture contents from 15 to 80 percent, so no single fresh wet-weight value can be applied to it without an invented basis conversion, and MERCOSUR's own decision to write a separate looser value for fruit sweets is the regulator's treatment of that same concentration effect. Hong Kong Cap. 132V item 9 independently writes a maximum level for jams, jellies and marmalades at 400 ug/kg, which corroborates that sovereign regulators treat this product class as its own cell rather than as fresh fruit, but it is deliberately NOT named as an anchor: Cap 132V expresses every value on a single 'food as listed in the Schedule' basis that the register cannot distinguish from the fresh wet-weight as-sold rows of the same instrument, so it fails this row's basis guard. Naming it produced a hard compile failure, which is the guard performing its function; it is cited here as corroboration only, and it is looser than the binding value in any case. AUDIT DISPOSITIONS: the scan surfaces MERCOSUR and Paraguay 'fruit-based ice cream' at 70 ug/kg, which is a frozen dessert rather than a fruit snack (no frozen-dessert row exists anywhere in the taxonomy, recorded as a taxonomy gap), The broader register review additionally surfaces Hong Kong 'Canned chestnuts and canned chestnuts puree' at 50 ug/kg, a canned tree-nut product routing to Category 28; it was matched only by an over-broad 'puree' token in an earlier draft of this row's audit_scope, which has been narrowed to 'fruit puree' so the scan no longer reports a false positive."
+    },
+    "Cd": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "source_id": "mercosur_gmc12_2011_fresh_fruits_excluding_berries_small_fruits_cd_50",
+      "source_jurisdiction": "MERCOSUR",
+      "basis": "MERCOSUR fresh-fruit cadmium maximum level applied at face value to the manufactured snack as offered (conservative direction, disclosed)",
+      "source_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "source_scope": "fresh fruits excluding berries and small fruits",
+      "label": "MERCOSUR writes no cadmium maximum level for fruit sweets, so the exact cell is unregulated; the nearest applicable sovereign value is the same instrument's fresh-fruit cadmium maximum level of 50 ug/kg for the same commodity, applied at face value.",
+      "stricter_unselected": [],
+      "substantiation": "R2 disclosed read-across within one instrument and one commodity. Face value is conservative for the concentrated members of the row (a fruit leather held to the fresh-fruit ceiling is several times stricter in fresh-equivalent terms) and approximately basis-matched for the puree members, so the read-across cannot understate contamination in either direction."
+    },
+    "tAs": {
+      "type": "gov",
+      "value": 300,
+      "value_exact": 300,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "MERCOSUR",
+      "binding_id": "mercosur_gmc12_2011_fruit_vegetable_jams_sweets_tas_300",
+      "basis": "manufactured fruit snack as offered to the consumer",
+      "binding_page": "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants",
+      "candidates": [
+        {
+          "id": "mercosur_gmc12_2011_fruit_vegetable_jams_sweets_tas_300",
+          "value": 300,
+          "jurisdiction": "MERCOSUR"
+        },
+        {
+          "id": "py_decreto1335_2019_fruit_vegetable_jams_sweets_tas_300",
+          "value": 300,
+          "jurisdiction": "PY"
+        }
+      ],
+      "stricter_unselected": [
+        {
+          "id": "py_decreto1335_2019_fruit_based_ice_cream_tas_100",
+          "value": 100,
+          "jurisdiction": "PY",
+          "scope": "fruit-based ice cream"
+        },
+        {
+          "id": "mercosur_gmc12_2011_fruit_based_ice_cream_tas_100",
+          "value": 100,
+          "jurisdiction": "MERCOSUR",
+          "scope": "fruit-based ice cream"
+        }
+      ],
+      "label": "MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019 set total arsenic at 300 ug/kg for compotes, jellies, jams, marmalades and other fruit or vegetable sweets.",
+      "substantiation": "R1 direct maximum level for the manufactured product class in the row's own basis. Total arsenic is never satisfied by the inorganic-arsenic cell; both are reported. AUDIT DISPOSITION: the scan surfaces MERCOSUR and Paraguay 'fruit-based ice cream' total arsenic at 100 ug/kg, a frozen dessert form outside this row."
+    },
+    "iAs": {
+      "type": "read_across",
+      "value": 60,
+      "value_exact": 60,
+      "provenance": "read-across",
+      "source_id": "il_fcs2016_ias_3_fruits_and_vegetables_including_mushrooms_edible_pla_60",
+      "source_jurisdiction": "IL",
+      "basis": "Israel fresh fruits-and-vegetables inorganic-arsenic maximum level applied at face value to the manufactured snack as offered (conservative direction, disclosed)",
+      "source_page": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+      "source_scope": "Fruits and vegetables, including mushrooms, edible plants, and herbs",
+      "label": "No jurisdiction sets an inorganic-arsenic maximum level for manufactured fruit snacks; the nearest applicable sovereign value is Israel MOH FCS-2016 category 3 for fruits and vegetables, 60 ug/kg, the only inorganic-arsenic maximum level any credible government writes for this commodity.",
+      "stricter_unselected": [],
+      "substantiation": "R2 disclosed read-across from the same commodity. Israel writes a separate dried-produce inorganic-arsenic row at 300 ug/kg; the fresh row is named instead because it is the conservative direction and because this row's moisture range straddles both categories, so choosing the looser dried value would be selecting for convenience rather than for applicability. Inorganic arsenic never satisfies the total-arsenic cell."
+    },
+    "tHg": {
+      "type": "read_across",
+      "value": 30,
+      "value_exact": 30,
+      "provenance": "read-across",
+      "source_id": "il_fcs2016_thg_3_fruits_and_vegetables_including_mushrooms_edible_pla_30",
+      "source_jurisdiction": "IL",
+      "basis": "Israel fresh fruits-and-vegetables total-mercury maximum level applied at face value to the manufactured snack as offered (conservative direction, disclosed)",
+      "source_page": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+      "source_scope": "Fruits and vegetables, including mushrooms, edible plants, and herbs",
+      "label": "No jurisdiction sets a total-mercury maximum level for manufactured fruit snacks; the nearest applicable sovereign value is Israel MOH FCS-2016 category 3 for fruits and vegetables, 30 ug/kg.",
+      "stricter_unselected": [],
+      "substantiation": "R2 disclosed read-across from the same commodity, conservative direction. The same instrument's dried-produce total-mercury row is 150 ug/kg; the fresh row is named because it is the stricter of the two applicable categories and this row straddles both."
+    },
+    "MeHg": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "No credible sovereign government sets a methylmercury maximum level for any fruit, vegetable or other terrestrial plant food in any jurisdiction; every methylmercury maximum level in the register is scoped to fish, shellfish and other aquatic animals, where microbial methylation in sediment and water is the documented pathway. Field-grown produce has no aquatic methylation compartment, and mercury taken up by root and leaf tissue is predominantly inorganic Hg(II). Methylmercury is therefore a component of, and bounded by, the published total-mercury ceiling for this row (read-across from Israel MOH FCS-2016 category 3, 30 ug/kg), and no separate methylmercury number is published.",
+      "reference_method": "Methylmercury by GC-ICP-MS or EN 16801, required only on a lot whose total mercury reaches 60 percent of the published total-mercury ceiling; any quantifiable methylmercury on such a lot is investigated and the lot is held pending root-cause analysis.",
+      "bounded_by": "tHg",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No jurisdiction sets a methylmercury maximum level for produce; methylmercury maximum levels exist only for aquatic species (HK Cap. 132V item 11; US FDA CPG 540.600). Total mercury for this row is published and bounds the species.",
+      "jurisdictions_checked": "EU Reg. 2023/915; EU Reg. 2024/1987 (nickel); Switzerland VHK 817.022.15 (2026 metal/metalloid annex); Hong Kong Cap. 132V Part 2 Schedule; AU-NZ Food Standards Code Schedule 19; MERCOSUR GMC Res. 12/2011 and Paraguay Decreto 1335/2019; Israel MOH FCS-2016; Codex CXS 193-1995; US FDA (21 CFR, action levels)"
+    },
+    "Ni": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a nickel maximum level for fruit in any form or for manufactured fruit snacks. EU Reg. 2024/1987 enumerates vegetable, cereal, pulse, nut, seed, cocoa, seaweed and juice classes and writes no fruit maximum level, so there is no same-commodity value to read across from. HMTc publishes no nickel number for this row.",
+      "reference_method": "Total nickel by ICP-MS on every lot. Investigate any result that is an outlier against the applicant's own lot history, with attention to stainless-steel evaporator, extruder and depositor contact, which is the plausible process source in this row.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Sn": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "Tin in this row is a packaging-migration analyte rather than a property of the food. Every sovereign tin maximum level in the register is conditioned on a canned (tinplate) presentation, and fruit snacks are a manufactured packaged form in which a hermetically sealed tinplate or metal-lined presentation cannot be excluded across the row (jams and compotes in particular are still packed in cans in some markets), while leathers, pouches, cups and gummies have no tinplate contact at all. Because the row's presentation determines whether any sovereign tin limit applies at all, HMTc publishes no standalone tin number for the row and instead makes the screen mandatory with an escalation to the canned-foods maximum level whenever the certified presentation is tinplate.",
+      "reference_method": "Total tin by ICP-MS on every lot. Where the certified presentation is a tinplate can or a metal-lined closure, the canned-foods maximum level (EU Reg. 2023/915, 200000 ug/kg) applies as a regulatory hard stop and the lot is additionally tested at end of shelf life; where the presentation is glass, pouch or plastic, any result above 50 ug/kg is investigated for a metal-contact source.",
+      "bounded_by": null,
+      "companion_ml": "eu2023_sn_canned_foods_200000"
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets an aluminium contaminant maximum level for any fruit, vegetable or produce form in any jurisdiction. The register's aluminium limits are drinking-water and bottled-water parameters, infant-formula maximum levels, a food-contact plastics specific migration limit, toy migration limits, and permitted-additive levels for baked and starch foods; none of them regulates aluminium as a contaminant of produce. Aluminium is also the third most abundant element in the earth's crust and appears in produce largely as soil-derived and root-associated mineral content rather than as process contamination, so no near-neighbour read-across is supportable either. Under the government-limit-only method HMTc publishes no standalone aluminium number for this row.",
+      "reference_method": "Total aluminium by ICP-MS on every lot, reported to the applicant. Document any aluminium-containing processing aid, packaging contact or anti-caking agent, comply with the additive rules of every market of sale, and investigate any result that is an outlier against the applicant's own lot history.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a total-chromium maximum level for this product form. The only dietary total-chromium maximum levels in the register are Hong Kong Cap. 132V item 7 for vegetables (500 ug/kg) and pulses, cereals, meat, fish and dairy powder rows under the same item, plus drinking-water and color-additive specifications. The Hong Kong vegetable row does not reach fruit or manufactured fruit snacks, and no jurisdiction writes a total-chromium maximum level for either. Under the government-limit-only method HMTc publishes no standalone total-chromium number for this row; total chromium is screened on every lot and hexavalent chromium is controlled by reflex speciation.",
+      "reference_method": "Total chromium by ICP-MS on every lot; investigate any elevated result against soil, irrigation water and processing-equipment provenance and reflex-speciate per the Cr-VI control.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign government sets a hexavalent-chromium maximum level for any food in any jurisdiction, and this row has no published total-chromium parent to bound the species against (the only total-chromium food maximum level in the register, Hong Kong Cap. 132V item 7, is scoped to vegetables and does not reach this product form). With neither a species limit nor a published parent, HMTc publishes no hexavalent-chromium number and controls the species by mandatory reflex speciation.",
+      "reference_method": "Total chromium by ICP-MS on every lot. Any total-chromium result at or above 100 ug/kg triggers Cr(VI) speciation by EN 15192 or EPA 6800 IC-ICP-MS isotope dilution; any quantifiable Cr(VI) at LOQ fails the lot and the lot is held pending root-cause analysis.",
+      "bounded_by": "Cr (total chromium, itself a control for this row)",
+      "companion_ml": null
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat4-config.json",
+  "version": "cat4-v1.0 (2026-08-17)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}

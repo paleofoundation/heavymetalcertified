@@ -1,0 +1,205 @@
+{
+  "slug": "vegetable-juices-non-root",
+  "name": "Vegetable juices, non-root",
+  "category": 5,
+  "category_name": "Beverages",
+  "anchor": "Per-form sovereign beverage cells in the as-consumed liquid basis (EU 2023/915 juice and rice-drink cells, Codex CXS 193 fruit juices, EU 2024/1987 beverage nickel, EU canned-beverage tin, Hong Kong Cap 132V's named carbonated, tea, coffee and wine beverage entries, and the US and Hong Kong packaged-drinking-water quality standards), with dry leaf, bean and powder commodities anchored separately in their own as-sold basis and never converted between the two",
+  "provisional_scaffold": false,
+  "cross_reference": null,
+  "native_basis": "as_consumed",
+  "native_basis_label": "ready-to-drink liquid, as consumed (wet weight, single strength); a concentrate or a powder-to-liquid product is assessed as reconstituted to single strength per the manufacturer's own directions, which is the basis EU 2023/915 and Codex CXS 193 write into their juice cells and Hong Kong Cap 132V Note 11 writes into its beverage entries",
+  "scope_note": "Single-strength ready-to-drink vegetable juices and vegetable-juice blends whose vegetable content contains no root or tuber vegetable: tomato, cucumber, celery, capsicum, cabbage and other brassicas, and leafy greens such as kale, spinach and lettuce. A juice containing beet, carrot, celeriac, parsnip, ginger, turmeric or any other root or tuber routes to the root-vegetable-containing row, which carries a different cadmium anchor family. A blend of fruit and non-root vegetable juice is certified in this row where the vegetable fraction predominates and in the fruit-juice rows where the fruit fraction does, and where an apple fraction is present the apple-containing row's inorganic-arsenic ceiling additionally applies. Fermented vegetable drinks route to the fermented-beverage row.",
+  "basis_guard": "as[ _]consumed|as[ _]sold|wet weight|reconstituted|ready.to.drink|product as placed on market|\\bjuice\\b|portion ordinarily consumed",
+  "basis_guard_note": "This row's anchors span two wet bases and the guard is drawn to admit exactly those two and nothing else. The lead, arsenic, nickel and tin anchors are ready-to-drink beverage cells (as consumed, wet weight, or as placed on market). The cadmium anchor is a fresh-weight edible-portion vegetable-commodity cell (as sold), because no credible sovereign has written a cadmium cell for vegetable juice and the source commodity is the nearest applicable value. Both are wet, edible-portion bases and are compared at face value with NO concentration, reconstitution or dry-matter factor applied in either direction; the treatment is disclosed on the cadmium cell itself. The guard refuses dry-matter, feed, migration and article-content bases outright.",
+  "method": "HMTc Method v2.0 (government-limit-only): the strictest applicable sovereign maximum level for this exact beverage form and analyte in the row's declared native basis, with disclosed read-across where the exact cell is unregulated, a substantiated not-material determination where a species is bounded or is a method artifact, and a control where no defensible sovereign number and no supportable near-neighbour exist. Never occurrence-derived. Ready-to-drink and dry-commodity bases are never mixed and no brewing, dilution or reconstitution factor is invented.",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "read_across",
+      "value": 30,
+      "value_exact": 30,
+      "provenance": "read-across",
+      "source_id": "eu2023_pb_fruit_juice_other_30",
+      "source_jurisdiction": "EU",
+      "basis": "wet weight, single-strength ready-to-drink juice (read across from the EU fruit-juice cell)",
+      "source_page": "regulations/eu2023-contaminants-maximum-levels",
+      "source_scope": "fruit juices, fruit juices from concentrate, concentrated fruit juices, and fruit nectars other than exclusively from berries and other small fruits",
+      "label": "No credible sovereign has written a lead maximum level for vegetable juice: EU 2023/915 section 3.1.19, Codex CXS 193 and Hong Kong Cap 132V all scope their juice lead cells to FRUIT juices and nectars. The nearest applicable sovereign value is therefore the EU fruit-juice lead cell (30 ug/kg) in the identical single-strength ready-to-drink basis, and it is adopted by disclosed read-across.",
+      "stricter_unselected": [],
+      "substantiation": "The alternative candidate set was the source-vegetable commodity cells, and every one of them is looser: Hong Kong Cap 132V sets fruiting vegetables (cucurbit and non-cucurbit) at 50 ug/kg and leafy vegetables other than spinach at 300 ug/kg, EU 2023/915 sets leaf vegetables at 300 ug/kg, and FSANZ Schedule 19 sets vegetables except brassicas at 100 ug/kg. Adopting the beverage-form cell at 30 ug/kg is both the nearer form analog (a juice read across to a juice, with no basis change) and the more protective choice, and the looser commodity cells are disclosed here so the selection is auditable rather than asserted. No occurrence data was consulted in selecting the value; the number is the EU's, unchanged."
+    },
+    "Cd": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "binding_component": "fruiting vegetables, cucurbits (cucumber, courgette, melon)",
+      "binding_id": "hk_cap132v_cd_fruiting-vegetables-cucurbits_50",
+      "binding_jurisdiction": "HK",
+      "binding_page": "regulations/hong-kong-cap-132v-metallic-contamination",
+      "basis": "fresh-weight edible portion of the source vegetable, read across to the single-strength juice at face value with no concentration or dilution factor applied",
+      "components": [
+        {
+          "component": "fruiting vegetables, cucurbits (cucumber, courgette, melon)",
+          "source_id": "hk_cap132v_cd_fruiting-vegetables-cucurbits_50",
+          "value": 50,
+          "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg"
+        },
+        {
+          "component": "fruiting vegetables other than cucurbits and tomatoes (capsicum, aubergine)",
+          "source_id": "hk_cap132v_cd_fruiting-vegetables-other-than-cucurbits-and-tomatoes_50",
+          "value": 50,
+          "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg"
+        },
+        {
+          "component": "leaf vegetables (kale, spinach, lettuce)",
+          "source_id": "eu2023_cd_leaf_vegetables_100",
+          "value": 100,
+          "jurisdiction": "EU",
+          "basis": "wet weight"
+        },
+        {
+          "component": "vegetables not otherwise specified (includes tomatoes)",
+          "source_id": "hk_cap132v_cd_vegetables-other-than-those-vegetables-specified-in-thi_100",
+          "value": 100,
+          "jurisdiction": "HK",
+          "basis": "food as listed in Cap 132V Part 2 Schedule; source unit mg/kg"
+        }
+      ],
+      "label": "No credible sovereign has written a cadmium maximum level for vegetable juice, so the cell is anchored on the strictest applicable sovereign cadmium cell across the vegetable families this row covers. The Hong Kong Cap 132V fruiting-vegetable cells (50 ug/kg) bind; the general vegetable cell that covers tomatoes (100 ug/kg) and the EU leaf-vegetable cell (100 ug/kg) are disclosed and not adopted.",
+      "stricter_unselected": [],
+      "substantiation": "Cadmium enters a vegetable juice through the vegetable, so the source-commodity cell is the nearest applicable sovereign value and the read-across is a form change (whole vegetable to its juice) rather than a basis change: both cells are wet, edible-portion values and no concentration factor is invented in either direction. That treatment is stated on the face of the cell. The row ceiling is the strictest applicable value across the families in scope (50 ug/kg), which is deliberate over-compliance for a tomato or leafy-green juice whose own commodity cell is 100 ug/kg; the looser cells are named in the candidate set so the choice is auditable. Regulators themselves set juice cells stricter than the parent-commodity cell where they have written both (EU fruit juice lead 30 ug/kg against fruit lead 100 ug/kg), so a face-value commodity read-across is, if anything, permissive rather than aggressive, and cadmium therefore also carries a mandatory lot-testing and Standards Ratchet surveillance obligation. No occurrence data selected the number."
+    },
+    "tAs": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign sets a total-arsenic maximum level for a non-root vegetable juice. Regulators write beverage arsenic limits on the inorganic species (EU 2023/915 section 3.4.4 fruit juices at 20 ug/kg and section 3.4.1.6 non-alcoholic rice-based drinks at 30 ug/kg; the US FDA apple-juice action level at 10 ug/kg) and write unspeciated arsenic limits only in the packaged-water and public-water-supply schedules, which are Category 8 instruments. The inorganic-arsenic ceiling in this row carries the health-relevant fraction. Total arsenic is therefore mandatory on every lot as the parent screen and no total-arsenic ceiling is invented.",
+      "reference_method": "Total arsenic by ICP-MS on every certified lot. Inorganic-arsenic speciation (HPLC-ICP-MS) is reflexed whenever total arsenic exceeds 50 percent of this row's inorganic-arsenic ceiling, or 20 ug/kg where this row publishes no inorganic-arsenic number. Species never substitute for the total: the iAs result does not satisfy the tAs reporting requirement.",
+      "bounded_by": "iAs",
+      "companion_ml": null
+    },
+    "iAs": {
+      "type": "read_across",
+      "value": 20,
+      "value_exact": 20,
+      "provenance": "read-across",
+      "source_id": "eu2023_ias_fruit_juice_20",
+      "source_jurisdiction": "EU",
+      "basis": "wet weight, single-strength ready-to-drink juice (read across from the EU fruit-juice cell)",
+      "source_page": "regulations/eu2023-contaminants-maximum-levels",
+      "source_scope": "fruit juices, concentrated fruit juices as reconstituted, and fruit nectars",
+      "label": "No credible sovereign has written an inorganic-arsenic maximum level for vegetable juice. The nearest applicable sovereign value is the EU 2023/915 section 3.4.4 fruit-juice cell (20 ug/kg) in the identical single-strength ready-to-drink basis, adopted by disclosed read-across.",
+      "stricter_unselected": [],
+      "substantiation": "Arsenic reaches a non-root vegetable juice through irrigation water and soil rather than through the fruit-versus-vegetable distinction, so a beverage-form arsenic cell reads across cleanly with no basis change. The US FDA apple-juice action level (10 ug/kg) was considered and rejected as inapplicable: it is scoped to a single named fruit commodity that this row excludes. The EU non-alcoholic rice-based drinks cell (30 ug/kg) was considered and rejected as both looser and scoped to a rice hazard this row does not carry."
+    },
+    "tHg": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign sets a total-mercury maximum level for a non-root vegetable juice. The sovereign mercury values in this basis family are the packaged-drinking-water quality standards (US 21 CFR 165.110 total mercury at 2 ug/kg; Hong Kong Cap 132V packaged drinking water, written for inorganic mercury at 6 ug/kg) and the fish and seafood methylmercury and total-mercury ceilings, none of which governs this product form. Mercury has no identified enrichment pathway in this supply chain, but the analyte is on the mandatory eight-total panel, so testing is mandatory and no ceiling is invented.",
+      "reference_method": "Total mercury by ICP-MS (or dedicated amalgamation AAS) on every certified lot, reported on the certificate. A detection above 5 ug/kg escalates to an ingredient and process-water investigation and reflexes methylmercury speciation.",
+      "bounded_by": "MeHg",
+      "companion_ml": null
+    },
+    "MeHg": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Methylmercury has no formation pathway in a non-root vegetable juice: there is no marine bioaccumulation step in the supply chain and no anaerobic, sulfate-reducing methylation environment in the product or its process. Methylmercury is a component of total mercury (MeHg <= tHg) and is governed by and bounded by the total-mercury cell; no separate methylmercury ceiling is published.",
+      "reference_method": "Bounded by the total-mercury cell (tHg). Methylmercury speciation (HPLC-ICP-MS or GC-ICP-MS) is reflexed only on an elevated total-mercury result; it is not a routine lot test for this form.",
+      "bounded_by": "tHg",
+      "substantiation": null,
+      "basis_class": "speciation-bounded",
+      "regulatory_basis": "No credible sovereign sets a methylmercury limit for any beverage, leaf, bean or beverage powder. Methylmercury maximum levels are scoped to fish, seafood and other marine matrices (EU 2023/915 section 3.3, US FDA CPG 540.600, Hong Kong Cap 132V fish entries). Methylmercury is a species of and bounded by total mercury (MeHg <= tHg), which this row controls directly.",
+      "jurisdictions_checked": "EU 2023/915 (and EU 2024/1987 for nickel, EU 2025/1891 for arsenic in seafood); Codex CXS 193-1995; US FDA (21 CFR 165.110 bottled-water quality standards, Juice HACCP guidance, Closer to Zero action levels); FSANZ Food Standards Code Schedule 19; Health Canada List of Contaminants and Other Adulterating Substances; UK retained maximum levels; Hong Kong Cap 132V (Food Adulteration (Metallic Contamination) Regulations) — none sets a methylmercury limit for this product form."
+    },
+    "Ni": {
+      "type": "gov",
+      "value": 250,
+      "value_exact": 250,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "EU",
+      "binding_id": "eu2024_ni_juice_250",
+      "basis": "product as placed on market, ready-to-drink liquid",
+      "binding_page": "regulations/eu-2024-1987-nickel-maximum-levels",
+      "candidates": [
+        {
+          "id": "eu2024_ni_juice_250",
+          "value": 250,
+          "jurisdiction": "EU"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "EU 2024/1987 writes its 250 ug/kg nickel cell for fruit AND vegetable juices and nectars generally, so this is a direct sovereign maximum level for a vegetable juice, not a read-across.",
+      "substantiation": "Direct regulatory lookup; the instrument names vegetable juices explicitly and applies from 1 July 2025. The listed 1000 ug/kg band is written for passion fruit, cocoa fruit, small fruits and berries and coconut water, none of which is a vegetable juice, so it is not applicable to this row. Nickel is a Tier-2 analyte."
+    },
+    "Sn": {
+      "type": "gov",
+      "value": 100000,
+      "value_exact": 100000,
+      "provenance": "regulatory-alignment",
+      "binding_jurisdiction": "EU",
+      "binding_id": "eu2023_sn_canned_beverages_100000",
+      "basis": "product as placed on market, ready-to-drink liquid (inorganic tin)",
+      "binding_page": "regulations/eu2023-contaminants-maximum-levels",
+      "candidates": [
+        {
+          "id": "eu2023_sn_canned_beverages_100000",
+          "value": 100000,
+          "jurisdiction": "EU"
+        },
+        {
+          "id": "hk_cap132v_sn_canned-beverages_150000",
+          "value": 150000,
+          "jurisdiction": "HK"
+        }
+      ],
+      "stricter_unselected": [],
+      "label": "EU 2023/915 Annex I section 3.5.2 sets inorganic tin in canned beverages, including canned fruit and vegetable juices, at 100 mg/kg = 100000 ug/kg; Hong Kong Cap 132V sets canned beverages at 150000 ug/kg. The EU value is the strictest applicable and binds. This is a direct sovereign maximum level on the beverage-in-a-can form, not a read-across.",
+      "substantiation": "Tin in a beverage is a tinplate and can-lining migration pathway, so the government instruments are written on the canned form and the canned form is where the hazard sits. The EU cell (100000 ug/kg) directly governs every canned or tinplate-packaged product in this row and is adopted as the row ceiling for all packaging formats; a carton, PET, glass or pouch format has no tin source and complies trivially, so no separate non-canned cell is published. The looser Hong Kong canned-beverage cell (150000) and the canned-foods cells for solid foods (EU 200000; Codex, FSANZ and Hong Kong 250000) are disclosed and deliberately not adopted: EU writes a stricter cell specifically for beverages and HMTc preserves that product-form split. Tin is a Tier-2 analyte; an elevated result in a non-canned format is a packaging-integrity signal."
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign sets an aluminium maximum level for a non-root vegetable juice. The only sovereign aluminium values in a dietary basis are the packaged-drinking-water quality standards (US 21 CFR 165.110 secondary allowable level 200 ug/kg, EU 2020/2184, Health Canada 2900 ug/kg), which govern water sold as water and are Category 8 instruments, and the FSANZ infant-formula aluminium limits, which are Category 1 and are excluded from this category's anchor set by the taxonomy boundary rule. In this form aluminium is a packaging and processing signal (aluminium cans and can linings, closures, filter aids, additive carry-over) rather than a raw-material contaminant. ",
+      "reference_method": "Total aluminium by ICP-MS on every certified lot, reported on the certificate. A result that departs materially from the applicant's own documented process baseline escalates to a packaging, can-lining and processing-aid investigation. This is a process-control tripwire, not a numeric standard: no ceiling is published because no credible sovereign maximum exists for this cell.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No credible sovereign sets a total-chromium maximum level for a non-root vegetable juice. The only sovereign chromium values reachable from this basis family are the packaged-drinking-water quality standards (US 21 CFR 165.110 at 100 ug/kg, Hong Kong Cap 132V packaged drinking water at 50 ug/kg), which govern water sold as water and are Category 8 instruments, and the public-water-system maximum contaminant levels (US EPA, Health Canada), which are water-utility instruments and not food law at all. Total chromium in this form is dominated by benign Cr(III) and is reported as a stainless-steel equipment and process-water leaching screen, not as a health limit; the health-relevant species is addressed in the Cr-VI cell.",
+      "reference_method": "Total chromium by ICP-MS on every certified lot, reported on the certificate. An elevated result triggers the Cr(VI) speciation reflex and an equipment, process-water and ingredient investigation.",
+      "bounded_by": "Cr-VI",
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "not_material",
+      "value": null,
+      "provenance": "not-material",
+      "rationale": "Hexavalent chromium is not stable in a non-root vegetable juice. At the pH of this product form (typically pH 3.9 to 4.6 for tomato-based juices and mildly acidic for other non-root vegetable juices, with organic acids and ascorbate present) Cr(VI) is reduced to Cr(III) by the organic acids, sugars, ascorbate and polyphenols present in the matrix, so a positive Cr(VI) result is an artifact of the total-chromium determination rather than a species present in the beverage as consumed. The reference-method basis for this determination is the in-house species arbitration at data/workbench/standards/2026-07-31-chromium-formula-adjudication.md, which found that the superseded ion-exchange plus electrothermal-AAS methods that generated the historical Cr(VI) values in liquid food matrices are not reproduced by the modern reference method: saraiva2021 (species-specific isotope dilution HPLC-ICP-MS, limit of quantification 0.049 ug/kg) quantified no Cr(VI) in any milk or formula sample while resolving Cr(III) and total chromium at single-digit ug/kg. That adjudication was drawn on a near-neutral aqueous food matrix; the acidic beverage matrices in this row are a more strongly reducing environment still, so the artifact conclusion carries a fortiori. The health-relevant species is controlled through the total-chromium cell and the reflex rule below, and this determination is a method finding, not an occurrence-derived value: no number is taken from it.",
+      "reference_method": "Hexavalent chromium is not a routine lot test. Total chromium (Cr cell) bounds any hexavalent fraction; a Cr(VI)-specific method (IC-ICP-MS, EN 15192 adapted to the liquid matrix) is reflexed where the total-chromium screen is elevated AND the finished-product pH is above 5.0, and a confirmed detection blocks certification pending a process and equipment investigation.",
+      "bounded_by": "Cr",
+      "substantiation": null,
+      "basis_class": "method-artifact",
+      "regulatory_basis": "No credible sovereign sets a hexavalent-chromium content limit for any food or beverage; every sovereign chromium value in a dietary or packaged-water basis is written for total chromium (US 21 CFR 165.110 chromium 100 ug/kg; Hong Kong Cap 132V packaged drinking water 50 ug/kg). Cr(VI) is a species of and bounded by total chromium (Cr-VI <= total Cr).",
+      "jurisdictions_checked": "EU 2023/915 (and EU 2024/1987 for nickel, EU 2025/1891 for arsenic in seafood); Codex CXS 193-1995; US FDA (21 CFR 165.110 bottled-water quality standards, Juice HACCP guidance, Closer to Zero action levels); FSANZ Food Standards Code Schedule 19; Health Canada List of Contaminants and Other Adulterating Substances; UK retained maximum levels; Hong Kong Cap 132V (Food Adulteration (Metallic Contamination) Regulations) — none sets a hexavalent-chromium limit for a food or beverage."
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat5-config.json",
+  "version": "cat5-v1.0 (2026-08-17)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}

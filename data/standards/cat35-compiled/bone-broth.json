@@ -9,6 +9,8 @@
   "native_basis": "as_consumed",
   "native_basis_label": "as consumed / ready-to-drink broth (wet weight)",
   "scope_note": "Long-simmered stock made by extracting connective tissue and marrow from animal BONE (beef, chicken, pork). Mechanistically distinct from a vegetable or muscle-meat stock: bone is the body's principal lead reservoir, and lead partitions from bone into the broth during prolonged (often acidulated) simmering, so lead is the priority analyte and a generic stock limit understates the hazard. Certified as its own row, not the generic soups-broths-stocks row. Fish-bone broth (rare) inherits the Category 6 seafood ceilings for arsenic/mercury.",
+  "basis_guard": null,
+  "basis_guard_note": null,
   "method": "HMTc Method v2.0 (government-limit default; COMPOSITE — disclosed read-across from strictest applicable principal-component sovereign ML; never occurrence-derived)",
   "provenance_tags_allowed": [
     "regulatory-alignment",
@@ -26,6 +28,7 @@
       "binding_component": "muscle meat (cattle/sheep/pig/poultry)",
       "binding_id": "aunz_sch19_pb_meat_100",
       "binding_jurisdiction": "AU-NZ",
+      "binding_page": "regulations/au-nz-food-standards-code-schedule-19-contaminants",
       "basis": "read-across from the strictest credible animal-derived lead ML (as consumed)",
       "components": [
         {
@@ -55,6 +58,7 @@
       "binding_component": "muscle meat (cattle/sheep/pig/poultry)",
       "binding_id": "eu2023_cd_meat_50",
       "binding_jurisdiction": "EU",
+      "binding_page": "regulations/eu-2023-915-cadmium",
       "basis": "read-across from the credible animal-derived cadmium ML (as consumed)",
       "components": [
         {
@@ -98,6 +102,7 @@
       "binding_component": "meat of animal (bone broth is a long-simmered animal-bone/meat stock)",
       "binding_id": "hk_cap132v_thg_meat-of-animal_50",
       "binding_jurisdiction": "HK",
+      "binding_page": "regulations/hong-kong-cap-132v-metallic-contamination",
       "basis": "read-across from the sovereign terrestrial-animal-meat total-mercury ML (as consumed)",
       "components": [
         {
@@ -175,6 +180,6 @@
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat35-config.json",
-  "version": "cat35-v1.0 (2026-08-13)",
+  "version": "cat35-v1.1 (2026-08-17)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

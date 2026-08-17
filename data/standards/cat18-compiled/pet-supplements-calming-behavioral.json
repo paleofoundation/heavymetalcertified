@@ -1,0 +1,201 @@
+{
+  "slug": "pet-supplements-calming-behavioral",
+  "name": "Calming/behavioral supplements",
+  "category": 18,
+  "category_name": "Pet Supplements",
+  "anchor": "No sovereign government sets a heavy-metal maximum for a pet supplement in a human-food basis. The only instruments that reach the exact cell are animal-feed instruments (EU Directive 2002/32/EC complementary feed for pet animals, mineral feed and trace-element feed additives under Regulation (EC) No 1831/2003; FDA CVM compliance policy; China's draft pet-feed guidance), and NASC's quality guidelines, which are voluntary and non-binding and therefore not a sovereign source at all. HMTc treats the feed instruments as a disclosed floor and anchors every published cell on the strictest applicable AS-SOLD child-protective human-food sovereign maximum, following Category 17's human-grade over-compliance and Category 16's child-protective supplement rule together. Where no as-sold sovereign value exists in any jurisdiction (aluminium, total chromium, hexavalent chromium, methylmercury) the cell is a control: mandatory testing with a published method and escalation rule, and no invented ceiling.",
+  "provisional_scaffold": false,
+  "cross_reference": null,
+  "native_basis": "as_sold",
+  "native_basis_label": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+  "scope_note": "Calming and behavioural supplements for companion animals: amino-acid actives (L-theanine, L-tryptophan), milk-protein hydrolysates, melatonin, and botanical calmatives including chamomile, valerian, passionflower and hemp-derived material, in as-sold chew, powder, capsule or liquid form. Hemp and other Cannabis-derived material is a documented cadmium and lead hyperaccumulator, which is the reason HMTc runs a separate cannabis category; where a calming supplement is hemp-derived, that occurrence history informs sampling frequency and never the ceiling. Boundary rules from the HMTc taxonomy govern placement: the product must be intended for animal consumption as a supplement rather than as the sole or primary diet; anything bearing an AAFCO nutritional adequacy statement routes to Category 17 (Pet Foods); and a dental chew routes to Category 17 (pet chews), because its primary function is food or treat rather than supplementation.",
+  "basis_guard": "\\bas_sold\\b",
+  "basis_guard_note": "Every named anchor must be a register row the register itself classifies basis_class=as_sold. A pet supplement is dosed as sold: a scoop of powder, a chew, a capsule, a pump of neat oil. It is never reconstituted, and the 8:1 powder-to-liquid conversion is confined to infant formula (CLAUDE.md Part 19), so no conversion is available to make a ready-to-feed liquid maximum comparable to an as-sold concentrate. The guard therefore blocks (a) every liquid/ready-to-feed limb of a form-split infant instrument, which the register classifies as_consumed, (b) the AU-NZ Schedule 19 'portion ordinarily consumed' rows, and (c) every animal-feed instrument, whose basis is a 12%-moisture feed basis with no as_sold classification. Where a government instrument writes its own powder/liquid split (EU 2023/915 formula lead, cadmium and inorganic arsenic; EU 2024/1987 formula nickel; Israel FCS-2016 formula mercury), the guard mechanically selects the powder limb, which is what Method v2.0 step 4 requires: preserve the product-form split the government rule itself writes. Choosing the stricter liquid limb for an as-sold concentrate would be a silent basis conversion in the strict direction, which is still a conflation.",
+  "method": "HMTc Method v2.0 (government-limit default), pet-supplement double over-compliance form: the exact cell's only sovereign maximum is an animal-feed instrument, which is disclosed as a floor and never used; every published value is a disclosed read-across to the strictest applicable as-sold child-protective human-food sovereign maximum in the product's native as-sold basis, or a control where no as-sold sovereign value exists. Never occurrence-derived.",
+  "provenance_tags_allowed": [
+    "regulatory-alignment",
+    "read-across",
+    "not-material",
+    "control",
+    "ratchet"
+  ],
+  "cells": {
+    "Pb": {
+      "type": "read_across",
+      "value": 10,
+      "value_exact": 10,
+      "provenance": "read-across",
+      "source_id": "us_pb_processed-food-packaged-for-babies-and-y_10",
+      "source_jurisdiction": "US",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/us-infant-food-contaminants",
+      "source_scope": "Processed food packaged for babies and young children <2 yr: fruits, vegetables (excluding single-ingredient root vegetables), mixtures (gra",
+      "label": "Child-protective, human-grade read-across to the strictest as-sold sovereign lead ceiling for a finished packaged food intended for a small consumer (US FDA action level for processed food packaged for babies and young children under two years, applied to the product as packaged). Adopted without any dilution or concentration allowance.",
+      "stricter_unselected": [],
+      "substantiation": "No sovereign government sets a lead maximum for a pet supplement as such. The as-sold child-food lead ceilings on the register run from the US FDA finished-packaged-food action level (the strictest, and the value adopted here) up to the EU 2023/915 baby-food and powdered-formula limbs and the Codex as-sold cereal-based infant-food maximum (eu2023_pb_babyfood_cereal_20, eu2023_pb_formula_powder_20, codex_pb_cereal-based-foods-for-infants-and-young_20, uk_pb_infant-formulae-and-follow-on-formulae-m_50). HMTc adopts the strictest of them. The US instrument is not form-split, so no powder/liquid limb question arises: it governs the finished product as packaged, which is exactly the basis a pet supplement is sold and dosed in. The instrument type is stated plainly rather than dressed up: it is a final FDA guidance action level, the threshold FDA applies when assessing whether a food for babies and young children is adulterated, and it is the strictest as-sold sovereign lead value for a child food in any jurisdiction. Because it sits at or below every binding as-sold instrument in the same family, adopting it means the certification value is at or below the EU, UK and Codex binding maxima as well, so nothing turns on whether guidance or regulation is the stronger instrument. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "Cd": {
+      "type": "read_across",
+      "value": 10,
+      "value_exact": 10,
+      "provenance": "read-across",
+      "source_id": "eu2023_cd_formula_cow_powder_10",
+      "source_jurisdiction": "EU",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/eu-2023-915-cadmium",
+      "source_scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as powder and manufactured from cow's milk proteins or cow's milk protein hydrolysates",
+      "label": "Child-protective, human-grade read-across to the powder limb of the EU 2023/915 cadmium maximum for infant, follow-on, medical-purpose and young-child formula placed on the market as powder — the strictest as-sold sovereign cadmium ceiling for a dry child-food concentrate.",
+      "stricter_unselected": [
+        {
+          "id": "il_fcs2016_cd_1_milk_5",
+          "value": 5,
+          "jurisdiction": "IL",
+          "scope": "Milk"
+        }
+      ],
+      "substantiation": "EU 2023/915 writes its own powder/liquid split for formula cadmium. A pet supplement is an as-sold concentrate, so the powder limb is the applicable limb; the liquid limb (eu2023_cd_formula_cow_liquid_5, uk_cd_infant-formulae-and-follow-on-formulae-l_5) governs a ready-to-feed liquid and the register classifies it as_consumed, so applying it here would be a silent basis conversion of the kind Method v2.0 step 4 forbids even when it runs in the strict direction. The UK powder limb (uk_cd_infant-formulae-and-follow-on-formulae-p_10) and the GSO and Israeli powder rows sit at the same value; the EU as-sold baby-food cadmium row (eu2023_cd_babyfood_cereal_40) and the soy powder limb (eu2023_cd_formula_soy_powder_20) are laxer. Stricter-unselected audit disposition for this cell. The widened audit scan surfaces the Israeli fluid-milk cadmium ceiling il_fcs2016_cd_1_milk_5, and none is adopted. The general rule, stated once in _category.method_note and applied identically wherever it arises: the register's basis_class records whether a limit is written on the product as sold or as consumed, but it does not record how much water the commodity contains. A fresh vegetable and fluid milk are roughly seven-eighths to nine-tenths water, so their ceilings pass the as-sold basis guard while a face-value comparison against an as-sold dry concentrate understates them by close to an order of magnitude; on the dry-matter basis this row is sold in, each is looser than the anchor adopted here rather than stricter. They are also raw whole-commodity ceilings, and this category does not read a whole-commodity ceiling across to a concentrated dosage form. The reasoning is applicability reasoning only: no conversion is performed and no converted number is published anywhere in this category. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "tAs": {
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "source_id": "in_tas_infant-milk-substitute-and-infant-foods_50",
+      "source_jurisdiction": "IN",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/in-infant-food-contaminants",
+      "source_scope": "Infant Milk substitute and Infant foods",
+      "label": "Child-protective, human-grade read-across to the FSSAI total-arsenic maximum for infant milk substitute and infant foods, which the register records on an as-sold basis (the source column is parts per million by weight with no reconstitution basis stated). Total arsenic is a total-element cell in its own right and additionally gates the inorganic-arsenic speciation reflex; the toxic species is limited separately.",
+      "stricter_unselected": [],
+      "substantiation": "No regulator in the default credible set sets a total-arsenic maximum for any child food: the EU, UK, Codex, US, Canadian and FSANZ instruments regulate inorganic arsenic only. The as-sold sovereign child-food total-arsenic rows are FSSAI (the strictest, adopted here), the Singapore Food Agency baby-food and infant-formula rows (sg_foodregs_2026_baby_food_tas_100, sg_foodregs_2026_infant_formula_tas_100), a Chinese milk-powder row and the Israeli formula-powder row (il_fcs2016_tas_14_1_infant_and_toddler_formulas_powder_1000). FSSAI is admitted to this category's credible-regulator set for that reason and it makes the standard stricter, not more convenient. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "iAs": {
+      "type": "read_across",
+      "value": 20,
+      "value_exact": 20,
+      "provenance": "read-across",
+      "source_id": "eu2023_ias_formula_powder_20",
+      "source_jurisdiction": "EU",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/eu2023-contaminants-maximum-levels",
+      "source_scope": "infant formulae, follow-on formulae, food for special medical purposes intended for infants and young children, and young-child formulae placed on the market as powder",
+      "label": "Child-protective, human-grade read-across to the powder limb of the EU 2023/915 inorganic-arsenic maximum for infant, follow-on, medical-purpose and young-child formula placed on the market as powder — the strictest as-sold sovereign inorganic-arsenic ceiling for a dry child-food concentrate.",
+      "stricter_unselected": [
+        {
+          "id": "il_fcs2016_ias_1_milk_10",
+          "value": 10,
+          "jurisdiction": "IL",
+          "scope": "Milk"
+        }
+      ],
+      "substantiation": "EU 2023/915 writes its own powder/liquid split for formula inorganic arsenic, and the EU as-sold baby-food row (eu2023_ias_babyfood_20) sits at the same value, so the powder limb and the general as-sold baby-food limb agree. The liquid limb (eu2023_ias_formula_liquid_10) governs a ready-to-feed liquid, is classified as_consumed, and is not applicable to an as-sold concentrate. The rice-specific child-food rows (fda2020_ias_infant_rice_cereal_100, us_ias_rice-cereals-for-infants-all-types-white_100, ca_ias_rice-based-foods-intended-specifically-f_100, uk_ias_rice-destined-for-the-production-of-food_100) are laxer and commodity-scoped. Rice-derived carriers (rice maltodextrin, rice flour, rice hull) are a recognised inorganic-arsenic route into supplement dosage forms and are held to this ceiling, not to the rice-commodity ceiling. Stricter-unselected audit disposition for this cell. The widened audit scan surfaces the Israeli fluid-milk inorganic-arsenic ceiling il_fcs2016_ias_1_milk_10, and none is adopted. The general rule, stated once in _category.method_note and applied identically wherever it arises: the register's basis_class records whether a limit is written on the product as sold or as consumed, but it does not record how much water the commodity contains. A fresh vegetable and fluid milk are roughly seven-eighths to nine-tenths water, so their ceilings pass the as-sold basis guard while a face-value comparison against an as-sold dry concentrate understates them by close to an order of magnitude; on the dry-matter basis this row is sold in, each is looser than the anchor adopted here rather than stricter. They are also raw whole-commodity ceilings, and this category does not read a whole-commodity ceiling across to a concentrated dosage form. The reasoning is applicability reasoning only: no conversion is performed and no converted number is published anywhere in this category. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "tHg": {
+      "type": "read_across",
+      "value": 15,
+      "value_exact": 15,
+      "provenance": "read-across",
+      "source_id": "il_fcs2016_thg_14_1_infant_and_toddler_formulas_powder_15",
+      "source_jurisdiction": "IL",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/israel-moh-fcs-2016-heavy-metals-tin-food-guidelines",
+      "source_scope": "Infant and toddler formulas, powder",
+      "label": "Child-protective, human-grade read-across to the powder limb of the Israel Ministry of Health FCS-2016 total-mercury maximum for infant and toddler formula — the only as-sold sovereign total-mercury ceiling written for a dry child-food concentrate.",
+      "stricter_unselected": [
+        {
+          "id": "il_fcs2016_thg_1_milk_10",
+          "value": 10,
+          "jurisdiction": "IL",
+          "scope": "Milk"
+        },
+        {
+          "id": "hk_cap132v_thg_vegetables-other-than-edible-fungi_10",
+          "value": 10,
+          "jurisdiction": "HK",
+          "scope": "Vegetables, other than edible fungi"
+        },
+        {
+          "id": "hk_cap132v_thg_milk_10",
+          "value": 10,
+          "jurisdiction": "HK",
+          "scope": "Milk"
+        },
+        {
+          "id": "hk_cap132v_thg_secondary-milk-products_10",
+          "value": 10,
+          "jurisdiction": "HK",
+          "scope": "Secondary milk products"
+        }
+      ],
+      "substantiation": "Israel is the only sovereign on the register that sets a total-mercury maximum for a child food at all, and it writes its own powder / ready-to-eat split; the powder limb is the applicable limb for an as-sold concentrate, and the ready-to-eat limb (il_fcs2016_thg_14_infant_and_toddler_formulas_ready_to_eat_4) is classified as_consumed. Israel's Ministry of Health is admitted to this category's credible-regulator set for that reason. Every other sovereign mercury maximum on the register is fish-scoped or feed-basis. The EU, UK, Codex, US, Canadian and FSANZ child-food instruments set no mercury maximum at all, so declining Israel would leave the cell without any sovereign anchor. Stricter-unselected audit disposition for this cell. The widened audit scan surfaces the Hong Kong Cap. 132V fresh-vegetable, fluid-milk and secondary-milk-product mercury ceilings hk_cap132v_thg_vegetables-other-than-edible-fungi_10, hk_cap132v_thg_milk_10 and hk_cap132v_thg_secondary-milk-products_10, and the Israeli fluid-milk mercury ceiling il_fcs2016_thg_1_milk_10, and none is adopted. The general rule, stated once in _category.method_note and applied identically wherever it arises: the register's basis_class records whether a limit is written on the product as sold or as consumed, but it does not record how much water the commodity contains. A fresh vegetable and fluid milk are roughly seven-eighths to nine-tenths water, so their ceilings pass the as-sold basis guard while a face-value comparison against an as-sold dry concentrate understates them by close to an order of magnitude; on the dry-matter basis this row is sold in, each is looser than the anchor adopted here rather than stricter. They are also raw whole-commodity ceilings, and this category does not read a whole-commodity ceiling across to a concentrated dosage form. The reasoning is applicability reasoning only: no conversion is performed and no converted number is published anywhere in this category. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "MeHg": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No sovereign government sets a methylmercury maximum for any supplement, and every methylmercury maximum on the register is scoped to fish and fishery products at values far above the total-mercury ceiling this row already carries, so no read-across from them would bind anything: methylmercury is a component of total mercury and cannot exceed it. A not-material determination is not available for this row either, because marine and freshwater material (fish oil, krill, algal and seaweed material, marine collagen, fish-derived palatants and flavourings) is common enough in pet supplement formulation that a categorical 'no methylation pathway' claim would be false for part of the row. Control is the fail-safe and is what is published.",
+      "reference_method": "Total mercury on every lot by EPA 7473 thermal decomposition/amalgamation AAS or ICP-MS, against the published total-mercury ceiling. Reflex methylmercury speciation by GC-ICP-MS or HPLC-ICP-MS whenever the formulation declares marine or freshwater-derived material of any kind, or whenever total mercury reaches half the published ceiling. Any total-mercury exceedance fails certification.",
+      "bounded_by": "tHg",
+      "companion_ml": "hk_cap132v_mehg_fish-other-than-those-fish-specified-in-this-item-fish_500"
+    },
+    "Ni": {
+      "type": "read_across",
+      "value": 250,
+      "value_exact": 250,
+      "provenance": "read-across",
+      "source_id": "eu2024_ni_formula_powder_250",
+      "source_jurisdiction": "EU",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/eu-2024-1987-nickel-maximum-levels",
+      "source_scope": "infant/young-child formula, powder, except soy-isolate",
+      "label": "Child-protective, human-grade read-across to the powder limb of the EU 2024/1987 nickel maximum for infant and young-child formula placed on the market as powder, except soy protein isolate — the strictest as-sold sovereign nickel ceiling for a dry child-food concentrate.",
+      "stricter_unselected": [],
+      "substantiation": "EU 2024/1987 is the only instrument in any jurisdiction that sets nickel maxima for food, and it writes its own powder/liquid and soy/non-soy splits. The powder limb is the applicable limb for an as-sold concentrate; the liquid limb (eu2024_ni_formula_liquid_100) is classified as_consumed and governs ready-to-feed liquid. The soy powder limb (eu2024_ni_formula_soy_powder_400), the baby-food limb (eu2024_ni_babyfood_500) and the processed-cereal limb (eu2024_ni_processed_cereal_babyfood_3000) are all laxer, so the non-soy powder limb is the strictest applicable as-sold value. Nickel matters disproportionately here because plant-protein, legume, cocoa, seed and mineral-carrier raw materials are the principal dietary nickel sources and EFSA reports European intakes already at or above the tolerable level. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "Sn": {
+      "type": "read_across",
+      "value": 5000,
+      "value_exact": 5000,
+      "provenance": "read-across",
+      "source_id": "in_sn_infant-milk-substitute-and-infant-foods_5000",
+      "source_jurisdiction": "IN",
+      "basis": "the supplement as sold (as-packaged concentrate) — dry weight for powders, chews, tablets and capsules, neat liquid for oils and drops; no reconstitution, dilution, or as-fed conversion is applied",
+      "source_page": "regulations/in-infant-food-contaminants",
+      "source_scope": "Infant Milk substitute and Infant foods",
+      "label": "Child-protective, human-grade read-across to the FSSAI tin maximum for infant milk substitute and infant foods — the only as-sold, non-canned sovereign child-food tin ceiling on the register.",
+      "stricter_unselected": [],
+      "substantiation": "Tin in food is overwhelmingly a can-migration analyte: every other child-food tin maximum on the register is scoped to canned product (eu2023_sn_canned_infant_formula_50000, eu2023_sn_canned_babyfood_cereal_50000, uk_sn_canned-baby-foods-and-canned-processed-c_50000 and their equivalents) and the general canned-food ceiling is eu2023_sn_canned_foods_200000. A pet supplement in a tub, bottle, sachet, blister or soft-chew pouch has no tin-coated contact surface and therefore no migration pathway, so the non-canned FSSAI row is the applicable analog rather than any canned ceiling. Any quantifiable tin on a non-canned lot is treated as a packaging or contact-material finding and triggers a container investigation before release. A pet supplement genuinely packed in a tin-coated container is a different container class and is certified against the canned-food tin ceiling instead. The animal-feed floor that legally governs this cell is disclosed and never used: in the EU a pet supplement is complementary feed for pet animals or a feed additive under Directive 2002/32/EC and Regulation (EC) No 1831/2003 (register rows eu2002_32_pb_complementary_feed_10000, eu2002_32_cd_pet_complementary_feed_2000, eu2002_32_tas_complementary_feed_4000, eu2002_32_thg_mineral_feed_200, eu2002_32_pb_mineral_feed_15000, eu2002_32_cd_mineral_feed_materials_2000, eu2002_32_tas_mineral_feed_12000 and the trace-element and binder/anti-caking additive rows), with China's draft pet-feed guidance in the same range; the human food-supplement floor (eu2023_cd_food_supplements_1000, th_moph414_2020_pb_food_supplement_1000, il_fcs2016_pb_17_dietary_supplements_3000, gso193_2021_thg_food_supplements_100, asean2017_pb_health_supplements_10000, hsa2024_pb_health_supplements_10000) is likewise disclosed and never used. Both floors are structurally unreachable by this compiler: the feed rows carry a 12%-moisture feed basis with no as_sold classification and are blocked by the row's basis guard, and the audit scan drops any row whose basis names feed."
+    },
+    "Al": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No government anywhere sets an aluminium contaminant maximum for a food on an as-sold basis. The only sovereign food aluminium numbers on the register are the FSANZ Schedule 19 infant-formula rows, which are written on a 'portion ordinarily consumed' reconstituted basis the register classifies as_consumed and which no permitted conversion makes comparable to an as-sold concentrate, and the Chinese GB 2760 baked-goods and starch-noodle rows, which are permitted food-additive residue allowances for alum firming and leavening agents rather than contaminant ceilings. The remaining aluminium rows are drinking-water guideline values and a plastics food-contact specific migration limit, both different matrices in different bases. Adopting the reconstituted FSANZ value for an as-sold powder would be a silent eight-fold basis conversion in the strict direction; adopting an additive-residue allowance as a contaminant ceiling would misdescribe the instrument. Neither is supportable, so no number is invented and testing is mandatory instead. This is the same disposition HMTc Category 17 publishes for aluminium in pet foods.",
+      "reference_method": "Total aluminium on every lot by ICP-MS after closed-vessel microwave acid digestion. Results are trended per SKU and per raw-material lot; a step change against the SKU's own established baseline, or any result attributable to a declared aluminium-bearing processing aid, anti-caking agent, colour lake or clay/zeolite carrier, triggers a formulation and raw-material investigation before release. Aluminium results are reported on the certificate rather than suppressed.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No government sets a total-chromium maximum for any child food or any supplement. The as-sold total-chromium rows in the widened credible set are the Hong Kong Cap. 132V per-commodity rows for vegetables, pulses, cereals, meat, poultry, fish and shellfish (hk_cap132v_crtotal_vegetables-other-than-pulses_500 and its siblings) and the FSSAI and Swiss gelatin ingredient specifications (in_fssai2015_crtotal_gelatin_10000, ch_vhk_2026_cr-total_gelatine_10000). None is adopted. The Hong Kong rows are raw whole-commodity ceilings, mostly written on wet commodities, and reading one across to a concentrated extract or dried botanical would silently change the concentration basis. The gelatin rows are purity specifications for one food ingredient, reflecting chrome-tanned hide processing rather than a finished-product contaminant ceiling, and they sit so far above any plausible finished-product result that publishing one would replace a real control with a number no product would ever breach. Declining them is therefore the stricter disposition, not the laxer one: what is published instead is mandatory total-chromium measurement on every lot, a reflex to hexavalent-chromium speciation, and a zero-tolerance failure rule on the species that actually carries the hazard. Trivalent chromium is nutritionally essential and the health-relevant species is hexavalent chromium, controlled separately. No number is invented; total chromium is measured on every lot and gates the hexavalent-chromium reflex.",
+      "reference_method": "Total chromium on every lot by ICP-MS after closed-vessel microwave acid digestion. Any total-chromium result at or above the reflex trigger set in the category's testing schedule, and any total-chromium result that is elevated against the SKU's own baseline, requires hexavalent-chromium speciation before release.",
+      "bounded_by": null,
+      "companion_ml": null
+    },
+    "Cr-VI": {
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No government sets a hexavalent-chromium maximum for any food, any supplement or any pet product. Every hexavalent-chromium row on the register is a migration limit for toys, a drinking-water maximum contaminant level, or a content limit for textiles, leather, fertiliser and electrical equipment, all of which are different matrices in different bases and none of which is a dietary ceiling. A not-material determination is deliberately not claimed: the method-artifact argument that hexavalent chromium reduces to trivalent chromium holds in an acidic reducing food matrix, but this category routinely contains dry alkaline mineral and geologic carriers (bentonite, kaolin, zeolite, diatomaceous earth, calcium and magnesium salts) in which hexavalent chromium is not reliably reduced, so the claim would not be substantiable across the row. Control is the fail-safe and is what is published: hexavalent chromium is bounded by total chromium, which is measured on every lot, and any quantifiable hexavalent chromium fails certification.",
+      "reference_method": "Total chromium on every lot by ICP-MS. Hexavalent chromium by EPA 3060A alkaline digestion with IC-ICP-MS, EPA 6800 or EN 15192, run on any lot that trips the total-chromium reflex trigger and on any lot whose formulation declares a mineral, clay, zeolite or geologic carrier. Quantifiable hexavalent chromium at the method limit of quantification is a certification failure, not a deviation.",
+      "bounded_by": "Cr",
+      "companion_ml": null
+    }
+  },
+  "generated_from": "data/evidence/regulatory_limits.csv",
+  "config": "tools/standards/cat18-config.json",
+  "version": "cat18-v1.0 (2026-08-17)",
+  "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
+}

@@ -119,18 +119,34 @@ const reg = (j) => {
   if (slug && fs.existsSync(path.join(REGDIR, `${slug}.md`))) return `/regulations/${slug}`
   return null
 }
+// JUR2REG maps a whole JURISDICTION to one regulation page, which is only ever right when a
+// jurisdiction has a single relevant instrument. It is wrong the moment a category leaves food law:
+// a bottled-water cell bound by the EU Drinking Water Directive, a toy cell bound by the Toy Safety
+// Directive, and a food-contact cell bound by the plastics SML regulation would all have linked to
+// the EU food-contaminants regulation. Citing an instrument the cell was not derived from is a
+// defensibility hole, so a cell that names its OWN instrument is linked to that instrument or to
+// nothing at all — never to a jurisdiction stand-in. Cells from older compilers carry no page and
+// keep the jurisdiction fallback, so existing food pages are unaffected.
+const regForCell = (cell, jurisdiction) => {
+  const page = cell && (cell.binding_page || cell.source_page)
+  if (page) {
+    const slug = String(page).replace(/^regulations\//, "")
+    return fs.existsSync(path.join(REGDIR, `${slug}.md`)) ? `/regulations/${slug}` : null
+  }
+  return reg(jurisdiction)
+}
 const jlabel = (j) => JUR_LABEL[j] || j
 
 // --- binding-basis label per cell ---------------------------------------------
 function bindingLabel(cell) {
   if (cell.type === "gov") {
-    const href = reg(cell.binding_jurisdiction)
+    const href = regForCell(cell, cell.binding_jurisdiction)
     const txt = `strictest government ML (${jlabel(cell.binding_jurisdiction)})`
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${txt}</a>` : txt
   }
   if (cell.type === "read_across") {
     const sj = cell.source_jurisdiction || cell.binding_jurisdiction
-    const href = reg(sj)
+    const href = regForCell(cell, sj)
     const label = esc(cell.label && cell.label.length < 90 ? cell.label : `government read-across (${jlabel(sj)})`)
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
   }
@@ -215,7 +231,7 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       hmtc = `${c.value}&sup2;`; binds = "read-across"
     }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
-    else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    else { hmtc = String(c.value); const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
@@ -295,7 +311,7 @@ function cellsBindingDerivation(primary, subName) {
     } else if (c.type === "gov") {
       hmtc = String(c.value)
       const extra = Array.isArray(c.concurring) && c.concurring.length > 1 ? ` &middot; +${c.concurring.length - 1} concurring` : ""
-      const h = reg(c.binding_jurisdiction)
+      const h = regForCell(c, c.binding_jurisdiction)
       binds = (h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(c.binding_jurisdiction))}</a>` : esc(jlabel(c.binding_jurisdiction))) + extra
       basis = "direct sovereign ML"
     } else if (c.type === "read_across") {
@@ -313,7 +329,7 @@ function cellsBindingDerivation(primary, subName) {
   }).join("")
   const splitBlocks = splits.map(({ a, cell }) => {
     const rows = (cell.forms || []).map((f) => {
-      const h = reg(f.binding_jurisdiction)
+      const h = regForCell(f, f.binding_jurisdiction)
       const jur = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(f.binding_jurisdiction))}</a>` : esc(jlabel(f.binding_jurisdiction))
       return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:8px 12px;color:#3f3a3a;font-size:12.5px">${esc(f.form)}</td><td style="padding:8px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${f.value}</td><td style="padding:8px 12px;color:#736b6b;font-size:11.5px">${jur}</td></tr>`
     }).join("")
