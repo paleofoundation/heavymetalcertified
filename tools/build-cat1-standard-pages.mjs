@@ -30,8 +30,29 @@ const ANALYTE = {
   tHg: { label: "Mercury (tHg)", tier: "Tier 1" }, Cd: { label: "Cadmium (Cd)", tier: "Tier 1" },
   Cr: { label: "Total chromium (Cr)", tier: "Tier 2" }, Ni: { label: "Nickel (Ni)", tier: "Tier 2" },
   Sn: { label: "Tin (Sn)", tier: "Tier 2" }, Al: { label: "Aluminium (Al)", tier: "Tier 2" },
+  tAs: { label: "Total arsenic (tAs)", tier: "Tier 2" },
 }
-const PANEL = ["Pb", "iAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
+// The canonical analyte contract (heavy-metal-index docs/governance/hmtc-governing-principles.md,
+// "Canonical analyte contract"; CLAUDE.md Part 19) requires the eight-total laboratory panel — Pb,
+// Cd, tAs, tHg, Ni, Sn, Al, total Cr — on every certification row, with species cells ADDITIONAL
+// to, never substituted for, their parent total: "A category compiler that substitutes iAs for
+// tAs, MeHg for tHg, or Cr-VI for total Cr is incomplete." Cat 1 adds iAs as the core species
+// cell, so the rendered panel is nine cells, not eight.
+//
+// tAs was previously missing from this array while every compiled Cat-1 record carried a tAs cell,
+// so a published ceiling (India FSSAI tAs 50, row in_tas_infant-milk-substitute-and-infant-foods_50)
+// was silently dropped from all nine standard pages at render time. Ordering keeps the two arsenic
+// cells adjacent, matching seafood / grains / cat16 / cat27-29; the tier follows every other
+// category's _meta, where tAs is Tier 2 and iAs is Tier 1.
+const PANEL = ["Pb", "iAs", "tAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
+
+// A cell is "firm" (carries a standalone published ceiling) only when it resolves to a number via a
+// sovereign lookup, a disclosed read-across, or a special-basis limit. control / not_material cells
+// are governed and still mandatorily tested, but carry NO standalone number, so they must not be
+// counted as firm ceilings. The count feeds the master-table cap note, the front-matter
+// firm_analytes, and the /standards index "N firm" badge. Kept byte-identical to isFirm() in
+// build-category-standard-pages.mjs so both renderers agree.
+const isFirm = (cell) => !!(cell && cell.value != null && (cell.type === "gov" || cell.type === "read_across" || cell.type === "special" || cell.type === "form_split"))
 const ACCENT = "#9f2727", LINK = "#1c43ad"
 
 const reg = (j) => JUR2REG[j] ? `/regulations/${JUR2REG[j]}` : null
@@ -63,13 +84,20 @@ function limitDisplay(analyte, variants) {
 }
 
 // --- Master Limit Table -------------------------------------------------------
-function masterTable(variants, basisWord) {
+function masterTable(variants, basisWord, firmCount) {
   const rows = PANEL.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a].label}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${ANALYTE[a].tier}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
-  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Tier 1 (Pb, Cd, iAs, Hg) are zero-tolerance toxics with no established safe threshold. Tier 2 (Ni, Al, Sn, Cr) carry a 150% transitional allowance under the program&rsquo;s Status A&ndash;E framework. Total chromium is limited as shown; hexavalent chromium is controlled through it &mdash; mandatory Cr-VI speciation on any total-chromium result above 100 ppb, and any quantifiable Cr-VI fails.</p></section>`
+  // Honest cap note: only a fully-numeric subcategory may state that every analyte carries a firm
+  // ceiling. A partially-numeric one states the firm count and that the remainder are governed
+  // controls with no standalone number, so the page never overclaims a ceiling it does not
+  // publish. Matches the wording in build-category-standard-pages.mjs.
+  const capNote = firmCount >= PANEL.length
+    ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
+    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remainder are governed by mandatory control or reflex-speciation screening with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
+  return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Tier 1 (Pb, Cd, iAs, Hg) are zero-tolerance toxics with no established safe threshold. Tier 2 (tAs, Ni, Al, Sn, Cr) carry a 150% transitional allowance under the program&rsquo;s Status A&ndash;E framework. Arsenic is limited in both forms: total arsenic (tAs) and inorganic arsenic (iAs) are separate ceilings that must both be met, and the species result never replaces the parent total. Total chromium is limited as shown; hexavalent chromium is controlled through it &mdash; mandatory Cr-VI speciation on any total-chromium result above 100 ppb, and any quantifiable Cr-VI fails.</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------
@@ -140,6 +168,8 @@ for (const page of PAGES.pages) {
     ? `Variants on this page: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the Master Limit Table shows both; the derivation above is for ${variants[0].label}.`
     : ""
 
+  const firmCount = PANEL.filter((a) => isFirm(variants[0].cells[a])).length
+
   const fm = [
     "---",
     `title: "${page.name} — HMTc Standard"`,
@@ -150,7 +180,7 @@ for (const page of PAGES.pages) {
     `product_slug: ${page.slug}`,
     "custom_page: true",
     `subcategory: "${page.name}"`,
-    "firm_analytes: 8",
+    `firm_analytes: ${firmCount}`,
     `native_basis: ${variants[0].native_basis}`,
     `standard_version: "${version}"`,
     'methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"',
@@ -165,7 +195,7 @@ for (const page of PAGES.pages) {
     `  body: "v${vshort} · 2026-08-06 · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     ...(pdfHref ? [`  cta_label: "Download v${vshort} (PDF)"`, `  cta_href: "${pdfHref}"`] : []),
     "snapshot:",
-    '  - { k: "Analytes limited", v: "8 / 8" }',
+    `  - { k: "Analytes limited", v: "${firmCount} / ${PANEL.length}" }`,
     '  - { k: "Method", v: "Strictest government ML" }',
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,
@@ -183,7 +213,7 @@ for (const page of PAGES.pages) {
 
   const body = [
     methodSection(page.name, basisWord, pdfHref, vshort),
-    masterTable(variants, basisWord),
+    masterTable(variants, basisWord, firmCount),
     derivationTable(variants[0], basisWord, page.name, otherNote),
     occSection,
     citeSection(page.name, vshort, page.hmi_link, certDoi),

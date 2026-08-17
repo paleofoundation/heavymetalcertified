@@ -345,7 +345,7 @@ function Cover() {
     ]),
     h(View, { key: "ed", style: s.coverBlock }, [
       h(Text, { key: "l", style: s.label }, "Edition"),
-      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE} · five parts · nine subcategories · eight analytes (Pb, iAs, Hg, Cd, Cr, Ni, Sn, Al)`),
+      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE} · five parts · nine subcategories · nine analytes (Pb, iAs, tAs, Hg, Cd, Cr, Ni, Sn, Al)`),
     ]),
     h(View, { key: "ab", style: s.abstractBox }, [
       h(Text, { key: "l", style: s.abstractLabel }, "About this manual"),
