@@ -6,8 +6,8 @@
   "unit": "ppb (µg/kg)",
   "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
   "standard_version": "2.2 (2026-06-09)",
-  "generated_at": "2026-08-17T11:29:53.144Z",
-  "generated_commit": "017722fadeb304b53ee854f3be7d3a946eaf2962",
+  "generated_at": "2026-08-17T11:34:07.912Z",
+  "generated_commit": "7367336d97ca18cec9b38298006e6e7012a4abd6",
   "license": {
     "terms": "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
     "attribution": "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite the standard's page_url and standard_version.",
@@ -29124,36 +29124,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29165,14 +29165,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29261,36 +29261,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29302,14 +29302,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29398,36 +29398,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29439,14 +29439,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29535,36 +29535,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29576,14 +29576,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29672,36 +29672,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29713,14 +29713,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29809,36 +29809,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29850,14 +29850,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -29946,36 +29946,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -29987,14 +29987,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30083,36 +30083,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30124,14 +30124,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30220,36 +30220,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30261,14 +30261,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30357,36 +30357,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30398,14 +30398,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30494,36 +30494,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30535,14 +30535,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30631,36 +30631,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30672,14 +30672,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
@@ -30768,36 +30768,36 @@
           "analytes": {
             "Pb": {
               "status": "published",
-              "value_ppb": 10000,
-              "value_exact_ppb": 10000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (10 mg/kg lead in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_pb_cosmetics_10"
-            },
-            "Cd": {
-              "status": "published",
-              "value_ppb": 5000,
-              "value_exact_ppb": 5000,
-              "native_basis": "as_sold_product_content",
-              "basis_note": null,
-              "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (5 mg/kg cadmium in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_cd_cosmetics_5"
-            },
-            "tAs": {
-              "status": "published",
               "value_ppb": 2000,
               "value_exact_ppb": 2000,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (2 mg/kg total arsenic in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_tas_cosmetics_2"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_pb_cosmetics_general_2000"
+            },
+            "Cd": {
+              "status": "published",
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_cd_cosmetics_general_100"
+            },
+            "tAs": {
+              "status": "published",
+              "value_ppb": 500,
+              "value_exact_ppb": 500,
+              "native_basis": "as_sold_product_content",
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_tas_cosmetics_general_500"
             },
             "iAs": {
               "status": "not_material",
@@ -30809,14 +30809,14 @@
             },
             "tHg": {
               "status": "published",
-              "value_ppb": 1000,
-              "value_exact_ppb": 1000,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as_sold_product_content",
               "basis_note": null,
               "control_basis": "government-read-across",
-              "rationale": "disclosed read-across from China NMPA 2015 Safety and Technical Standards for Cosmetics Table 2 (1 mg/kg total mercury in a finished consumer-chemical product), the nearest applicable sovereign maximum level on a finished consumer-chemical product in this row's native basis",
-              "controlling_jurisdiction": "CN",
-              "controlling_instrument": "cn_nmpa2015_thg_cosmetics_1"
+              "rationale": "disclosed read-across from the German BVL 2017 orientation value for this analyte in a finished cosmetic product, the strictest coherent sovereign consumer-chemical regime applicable to a fabric-care product in this row's native as-sold product-content basis",
+              "controlling_jurisdiction": "DE",
+              "controlling_instrument": "de_bvl2017_thg_cosmetics_general_100"
             },
             "MeHg": {
               "status": "not_material",
