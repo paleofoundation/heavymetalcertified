@@ -26,7 +26,10 @@
       { "re": "monitored,?\\s+not\\s+limited", "why": "retired framing — every analyte has a limit" },
       { "re": "\\b30%[^.<]{0,70}(dirty|dirty-subcategory)", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },
       { "re": "(dirty|dirty-subcategory)[^.<]{0,70}\\b30%", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },
-      { "re": "correlation of 0\\.6", "why": "retired assumption; measured cross-analyte correlation is ~0.27, calibration anchored to measured lot data" }
+      { "re": "correlation of 0\\.6", "why": "retired assumption; measured cross-analyte correlation is ~0.27, calibration anchored to measured lot data" },
+      { "re": "taken from measured occurrence data", "why": "retired occurrence-selected numeric pathway; under v2.0 every number comes from a named sovereign instrument and occurrence carries no compliance weight" },
+      { "re": "precautionary near-neighbour", "why": "retired precautionary numeric pathway; an unregulated cell resolves to a disclosed read-across, an n/m determination, or a control, never an invented precautionary value" },
+      { "re": "reads occurrence or precautionary", "why": "references retired provenance tags as if they were live; the v2.0 vocabulary is regulatory-alignment, read-across, not-material, control, ratchet" }
     ],
     "requires_anchor": {
       "window": 320,

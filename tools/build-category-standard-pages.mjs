@@ -119,18 +119,34 @@ const reg = (j) => {
   if (slug && fs.existsSync(path.join(REGDIR, `${slug}.md`))) return `/regulations/${slug}`
   return null
 }
+// JUR2REG maps a whole JURISDICTION to one regulation page, which is only ever right when a
+// jurisdiction has a single relevant instrument. It is wrong the moment a category leaves food law:
+// a bottled-water cell bound by the EU Drinking Water Directive, a toy cell bound by the Toy Safety
+// Directive, and a food-contact cell bound by the plastics SML regulation would all have linked to
+// the EU food-contaminants regulation. Citing an instrument the cell was not derived from is a
+// defensibility hole, so a cell that names its OWN instrument is linked to that instrument or to
+// nothing at all — never to a jurisdiction stand-in. Cells from older compilers carry no page and
+// keep the jurisdiction fallback, so existing food pages are unaffected.
+const regForCell = (cell, jurisdiction) => {
+  const page = cell && (cell.binding_page || cell.source_page)
+  if (page) {
+    const slug = String(page).replace(/^regulations\//, "")
+    return fs.existsSync(path.join(REGDIR, `${slug}.md`)) ? `/regulations/${slug}` : null
+  }
+  return reg(jurisdiction)
+}
 const jlabel = (j) => JUR_LABEL[j] || j
 
 // --- binding-basis label per cell ---------------------------------------------
 function bindingLabel(cell) {
   if (cell.type === "gov") {
-    const href = reg(cell.binding_jurisdiction)
+    const href = regForCell(cell, cell.binding_jurisdiction)
     const txt = `strictest government ML (${jlabel(cell.binding_jurisdiction)})`
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${txt}</a>` : txt
   }
   if (cell.type === "read_across") {
     const sj = cell.source_jurisdiction || cell.binding_jurisdiction
-    const href = reg(sj)
+    const href = regForCell(cell, sj)
     const label = esc(cell.label && cell.label.length < 90 ? cell.label : `government read-across (${jlabel(sj)})`)
     return href ? `<a href="${href}" style="color:${LINK};text-decoration:none">${label}</a>` : label
   }
@@ -204,15 +220,24 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
     else if (c.type === "control") { hmtc = "control&sup4;"; binds = "screened"; anyControl = true }
     else if (c.type === "subsumed") { hmtc = "bounded&sup5;"; binds = `&le; ${esc(c.subsumed_by || "total")}`; anySubsumed = true }
     else if (c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
-    else if (c.type === "read_across") { hmtc = `${c.value}&sup2;`; binds = c.basis_kind === "occurrence" ? "occurrence" : c.basis_kind === "precautionary" ? "precautionary" : "read-across" }
+    else if (c.type === "read_across") {
+      // Method v2.0 retired the occurrence-selected and precautionary numeric pathways. A record
+      // still carrying one is a methodology regression, not something to render: fail the build
+      // rather than publish a page asserting a derivation the programme no longer performs.
+      if (c.basis_kind === "occurrence" || c.basis_kind === "precautionary") {
+        console.error(`build-category-standard-pages: ${subName} / ${a} carries retired basis_kind "${c.basis_kind}" — Method v2.0 permits only regulatory-alignment, read-across, not-material, control and ratchet. Recompile the record.`)
+        process.exit(1)
+      }
+      hmtc = `${c.value}&sup2;`; binds = "read-across"
+    }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
-    else { hmtc = String(c.value); const h = reg(c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    else { hmtc = String(c.value); const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
   const ctrlNote = anyControl ? "&sup4; no sovereign maximum exists for this analyte in this product, but a credible exposure pathway does &mdash; it is screened on every lot under ALARA against the tightest analogous reference, not assigned an invented number. " : ""
   const subNote = anySubsumed ? "&sup5; a species governed by and bounded by its parent total (for example inorganic arsenic &le; total arsenic); no separate ceiling is published and reflex speciation enforces it whenever the total is elevated. " : ""
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government sets this analyte for this exact product form: the value is read across from the nearest government limit for an analogous product, or &mdash; where the Binds column reads occurrence or precautionary &mdash; taken from measured occurrence data or set as a precautionary near-neighbour value; the ratchet tightens it as surveillance warrants. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${ctrlNote}${subNote}${otherNote || ""}`
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government regulates this analyte for this exact product form: the value is a disclosed read-across from the nearest applicable government maximum, and the derivation names the instrument it comes from. It is never taken from occurrence data. After publication the standards ratchet may tighten it, using certified-lot results only. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${ctrlNote}${subNote}${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
@@ -286,7 +311,7 @@ function cellsBindingDerivation(primary, subName) {
     } else if (c.type === "gov") {
       hmtc = String(c.value)
       const extra = Array.isArray(c.concurring) && c.concurring.length > 1 ? ` &middot; +${c.concurring.length - 1} concurring` : ""
-      const h = reg(c.binding_jurisdiction)
+      const h = regForCell(c, c.binding_jurisdiction)
       binds = (h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(c.binding_jurisdiction))}</a>` : esc(jlabel(c.binding_jurisdiction))) + extra
       basis = "direct sovereign ML"
     } else if (c.type === "read_across") {
@@ -304,7 +329,7 @@ function cellsBindingDerivation(primary, subName) {
   }).join("")
   const splitBlocks = splits.map(({ a, cell }) => {
     const rows = (cell.forms || []).map((f) => {
-      const h = reg(f.binding_jurisdiction)
+      const h = regForCell(f, f.binding_jurisdiction)
       const jur = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${esc(jlabel(f.binding_jurisdiction))}</a>` : esc(jlabel(f.binding_jurisdiction))
       return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:8px 12px;color:#3f3a3a;font-size:12.5px">${esc(f.form)}</td><td style="padding:8px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${f.value}</td><td style="padding:8px 12px;color:#736b6b;font-size:11.5px">${jur}</td></tr>`
     }).join("")

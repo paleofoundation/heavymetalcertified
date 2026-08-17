@@ -9,8 +9,8 @@ author: "Karen Pendergrass"
 orcid: 0000-0002-2348-7259
 briefing_date: "May 2026"
 updated: "May 2026"
-scholar_eligible: true
-pdf: "/static/briefings/after-palmquist.pdf"
+scholar_eligible: false
+pdf: "/briefings/after-palmquist.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Brief 2" }

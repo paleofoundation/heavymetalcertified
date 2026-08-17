@@ -325,14 +325,34 @@ for (const f of fs.readdirSync(OUT_DIR)) {
   const group = (byCat[cat] ??= { name: get("category_name") || "Other", rows: [] })
   if (group.rows.some((r) => r.product_slug === slug)) continue
   const firm = Number(get("firm_analytes")) || 0
+  // "Analytes limited: N / M" is rendered into each page's own snapshot, so M is the page's real
+  // panel width. Reading it back is what lets the index report the canonical eleven-cell panel
+  // instead of the ten the retired catalog froze.
+  const panelSize = Number((raw.match(/Analytes limited",\s*v:\s*"\d+\s*\/\s*(\d+)"/) || [])[1]) || 0
   group.rows.push({
     vertical: { category: cat, category_name: group.name },
     subcategory: get("subcategory") || get("title").replace(/ &mdash;.*| — HMTc.*/, ""),
     product_slug: slug,
     native_basis: get("native_basis") || "as_sold",
+    panel_size: panelSize,
     analytes: Object.fromEntries(Array.from({ length: firm }, (_, i) => [i, { status: "published" }])),
   })
 }
+// The headline counts must describe the standards actually in force, not the rows of
+// hmtc_standards_catalog.json. That catalog is a frozen snapshot of the retired
+// occurrence-selected export (its generator now exits with a RETIRED notice), so reading it left the
+// index announcing 15 subcategory standards and 0 firm limits while several hundred
+// government-anchored pages were published and linked in the body of the same page. byCat is built
+// above from every page in force, including every custom_page, so it is the honest denominator.
+const inForceRows = Object.values(byCat).reduce((n, g) => n + g.rows.length, 0)
+const inForceFirmCells = Object.values(byCat).reduce(
+  (n, g) => n + g.rows.reduce((m, r) => m + Object.values(r.analytes || {}).filter((a) => a.status === "published").length, 0), 0)
+const inForceRowsWithFirm = Object.values(byCat).reduce(
+  (n, g) => n + g.rows.filter((r) => Object.values(r.analytes || {}).some((a) => a.status === "published")).length, 0)
+// Panel width is the widest panel any page in force publishes; the retired catalog froze it at 10,
+// but the canonical HMTc panel is eight totals plus three species controls.
+const inForcePanel = Math.max(PANEL.length, ...Object.values(byCat).flatMap((g) => g.rows.map((r) => r.panel_size || 0)))
+
 const catGroups = Object.keys(byCat)
   .sort((a, b) => Number(a) - Number(b))
   .map((cat) => {
@@ -365,9 +385,9 @@ const idxFront = [
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
   `description: "A category-wide limit is the wrong instrument. Rice-based cereal and non-rice cereal do not carry the same arsenic risk; soy formula and cow-milk formula do not carry the same cadmium risk. Each subcategory gets its own limit and its own page. A limit defaults to the strictest applicable government maximum; occurrence tightens it only for the Tier-1 toxics and the cells no government regulates."`,
   "snapshot:",
-  `  - { k: "Subcategory standards", v: "${catalog.rows.length}" }`,
-  `  - { k: "Firm analyte limits", v: "${firmCells}" }`,
-  `  - { k: "Analytes per row", v: "${PANEL.length}" }`,
+  `  - { k: "Subcategory standards", v: "${inForceRows}" }`,
+  `  - { k: "Firm analyte limits", v: "${inForceFirmCells}" }`,
+  `  - { k: "Analytes per row", v: "${inForcePanel}" }`,
   `  - { k: "Published manuals", v: "${publishedManuals.length}" }`,
   "connections:",
   '  - { label: "Standards Briefings", href: "/briefings" }',
@@ -395,9 +415,9 @@ ${editionRows}
 
 <section id="subcats">
   <h2 ${H2}>Subcategory standards</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${catalog.rows.length} locked rows across ${Object.keys(byCat).length} categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">${inForceRows} locked rows across ${Object.keys(byCat).length} categories. Each publishes in the native basis of its own product form, and each has its own page. Numbering restarts per category, so a citation names both &mdash; <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Seafood 3.1</span> and <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727">Culinary Oils and Fats 3.1</span> are different standards.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">${firmCells} firm analyte limit${firmCells === 1 ? "" : "s"} across ${rowsWithFirm} subcategor${rowsWithFirm === 1 ? "y" : "ies"} so far</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">${inForceFirmCells} firm analyte limit${inForceFirmCells === 1 ? "" : "s"} across ${inForceRowsWithFirm} subcategor${inForceRowsWithFirm === 1 ? "y" : "ies"}</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Every row below is locked and has its own page. An analyte renders a firm limit only once it clears all five shipping gates; a row with no firm cell yet is in force as a page but shows its per-analyte state as in development. The standard widens as the evidence base and governance review clear more cells.</p>
   </div>
 ${catGroups}
