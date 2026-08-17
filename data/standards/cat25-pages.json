@@ -1,0 +1,85 @@
+{
+  "_doc": "Per-page metadata for the Category-25 (Cannabis, Hemp, and CBD Products) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat25-compiled/<record>.json (frozen derivations from the index repo's deterministic compiler, tools/standards/compile-cat25.mjs); nothing numeric is authored here. Five route rows are published; the vape cartridge-fill and vape hardware/aerosol facets of taxonomy row 6 are reserved and are intentionally NOT listed here.",
+  "_meta": {
+    "category": 25,
+    "category_name": "Cannabis, Hemp, and CBD Products",
+    "volume_name": "Cannabis, Hemp, and CBD Products",
+    "panel": ["Pb", "Cd", "tAs", "iAs", "tHg", "MeHg", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat25-compiled",
+    "method_label": "Strictest sovereign cannabis action level (route-applicable)",
+    "methodology_version": "Method v2.0 — government-limit default (route-split sovereign cannabis action levels; CLAUDE.md Part 19)",
+    "derivation_mode": "cells_binding",
+    "method_prose": [
+      "Cannabis has no uniform federal contaminant limit. Its heavy-metal ceilings are the route-split action levels of the credible sovereign cannabis programs — California (DCC 2026), Colorado (2022), Massachusetts (2020), Maryland (2025), Nevada (2020), and Israel (IMC-GMP 152, 2016). For each analyte the HMTc limit is the strictest maximum any of these governments sets for the product's administration route. The route basis is never conflated: the strict inhaled arsenic and cadmium action levels are never applied to an edible or a topical, and a permissive topical lead level is never applied to inhaled flower. It is a lookup, not a computation; occurrence never selects a value.",
+      "Four analytes bind directly to a sovereign action level — lead, cadmium, total arsenic, and total mercury. Total chromium is recorded as a screening ceiling rather than a health limit: it is dominated by benign trivalent chromium while the health-relevant species is hexavalent chromium, so the total-chromium action level is non-protective as a ceiling and any quantifiable Cr(VI) fails certification. Nickel, tin, and aluminium, which no cannabis program regulates for content, are held under mandatory analytical control; inorganic arsenic, methylmercury, and hexavalent chromium are enforced by reflex speciation against their measured total. Certification is heavy-metal safety only and does not endorse the efficacy or the legality of these products."
+    ],
+    "effective_date": "2026-08-14",
+    "default_version": "1.1 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "cannabis-flower",
+      "name": "Cannabis flower and dried herb",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for cannabis flower and dried herb (Cannabis, Hemp, and CBD Products), evaluated on the finished inhalable product as sold. Each limit is the strictest sovereign cannabis heavy-metal action level applicable to the inhalation route; total chromium is a screening ceiling with hexavalent chromium as the binding control, and inorganic arsenic, methylmercury and Cr(VI) are enforced by reflex speciation.",
+      "version": "1.1 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "cannabis-flower" }]
+    },
+    {
+      "slug": "cannabis-edibles",
+      "name": "Cannabis edibles",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for cannabis edibles (Cannabis, Hemp, and CBD Products), evaluated on the finished edible product as sold. Each limit is the strictest sovereign cannabis heavy-metal action level applicable to the ingestion route; total chromium is a screening ceiling with hexavalent chromium as the binding control, and inorganic arsenic, methylmercury and Cr(VI) are enforced by reflex speciation.",
+      "version": "1.1 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "cannabis-edibles" }]
+    },
+    {
+      "slug": "cannabis-tinctures-oils",
+      "name": "Cannabis tinctures and sublingual oils",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for cannabis tinctures and sublingual oils (Cannabis, Hemp, and CBD Products), evaluated on the finished oral/sublingual liquid as sold. Each limit is the strictest sovereign cannabis heavy-metal action level applicable to the ingestion route; total chromium is a screening ceiling with hexavalent chromium as the binding control, and inorganic arsenic, methylmercury and Cr(VI) are enforced by reflex speciation.",
+      "version": "1.1 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "cannabis-tinctures-oils" }]
+    },
+    {
+      "slug": "cannabis-topicals",
+      "name": "Cannabis topicals",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for cannabis topicals (Cannabis, Hemp, and CBD Products), evaluated on the finished topical/transdermal product as sold. Each limit is the strictest sovereign cannabis heavy-metal action level applicable to the dermal route; total chromium is a screening ceiling with hexavalent chromium as the binding control, and inorganic arsenic, methylmercury and Cr(VI) are enforced by reflex speciation.",
+      "version": "1.1 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "cannabis-topicals" }]
+    },
+    {
+      "slug": "cannabis-concentrates",
+      "name": "Cannabis concentrates and extracts",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for cannabis concentrates and extracts (Cannabis, Hemp, and CBD Products), evaluated on the finished concentrate/extract as sold. Because a concentrate may be ingested, inhaled, or applied, each limit is the strictest sovereign cannabis heavy-metal action level across those routes; total chromium is a screening ceiling with hexavalent chromium as the binding control, and inorganic arsenic, methylmercury and Cr(VI) are enforced by reflex speciation.",
+      "version": "1.1 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "both", "record": "cannabis-concentrates" }]
+    }
+  ]
+}

@@ -65,6 +65,15 @@ function normalizeCell(c) {
     const vals = (c.forms || []).map((f) => f.value).filter((v) => v != null)
     return { type: "form_split", value: c.value ?? c.strictest_form_value ?? (vals.length ? Math.min(...vals) : null), forms: c.forms || [], binding_jurisdiction: (c.forms && c.forms[0] && c.forms[0].binding_jurisdiction) || c.binding_jurisdiction }
   }
+  // A screening ceiling (total chromium: dominated by benign Cr(III); the health-relevant species
+  // is Cr(VI)). The compiler records the sovereign value on the cell but flags screen:true because
+  // it is non-protective as a total-element ceiling — the binding health control is Cr(VI). Checked
+  // BEFORE the gov branch (a screen cell is also regulatory-alignment) so it never renders as a firm
+  // ceiling. Carries a value for the derivation, but isFirm() excludes it, so it is not counted or
+  // displayed as a standalone HMTc limit.
+  if (c.screen === true) {
+    return { type: "screen", value: c.value, binding_jurisdiction: c.binding_jurisdiction, binding_id: c.binding_id, screen_note: c.screen_note, binding_control: c.binding_control }
+  }
   if (kind === "gov" || (prov === "regulatory-alignment" && c.value != null)) {
     return { type: "gov", value: c.value, binding_jurisdiction: c.binding_jurisdiction, binding_id: c.binding_id, concurring: c.concurring || [] }
   }
@@ -125,6 +134,7 @@ function bindingLabel(cell) {
   }
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
   if (cell.type === "control") return "mandatory control — no government ML; screened every lot (see note)"
+  if (cell.type === "screen") return "screening ceiling — Cr(VI) is the binding health control (see note)"
   if (cell.type === "subsumed") return `bounded by ${esc(cell.subsumed_by || "parent total")} — reflex speciation (see note)`
   if (cell.type === "form_split") return "strictest government ML, set by product form (see derivation)"
   return "&mdash;"
@@ -136,6 +146,7 @@ function limitDisplay(analyte, variants) {
   const vals = parts.map((p) => {
     if (!p.val) return "&mdash;"
     if (p.val.type === "form_split") return formRange(p.val)
+    if (p.val.type === "screen") return "screen"
     if (p.val.value == null) {
       if (p.val.type === "not_material") return "n/m"
       if (p.val.type === "control") return "control"
@@ -280,6 +291,8 @@ function cellsBindingDerivation(primary, subName) {
       hmtc = String(c.value); binds = esc(jlabel(c.source_jurisdiction)); basis = "disclosed read-across"
     } else if (c.type === "control") {
       hmtc = "control"; binds = "screened every lot"; basis = "mandatory control &mdash; no government ML"
+    } else if (c.type === "screen") {
+      hmtc = "screen"; binds = "Cr(VI) binds"; basis = `screening ceiling (${esc(jlabel(c.binding_jurisdiction))} action level ${c.value != null ? esc(String(c.value)) + "&thinsp;&micro;g/kg " : ""}&mdash; non-protective for total Cr); any quantifiable Cr(VI) fails`
     } else if (c.type === "not_material") {
       hmtc = "n/m"; binds = c.bounded_by ? `&le; ${esc(c.bounded_by)}` : "controlled"; basis = "not material in this matrix"
     } else if (c.type === "subsumed") {

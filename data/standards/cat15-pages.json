@@ -1,0 +1,145 @@
+{
+  "_doc": "Per-page metadata for the Category-15 (Feminine Care) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat15-compiled/<record>.json (frozen derivations from the index repo's deterministic compiler, tools/standards/compile-cat15.mjs); nothing numeric is authored here. The category splits into two instrument families in the same mucosal basis: DEVICE forms (no sovereign content ML anywhere → every cell a mandatory control or substantiated not-material) and COSMETIC forms (sovereign mucosal-contact cosmetic limits apply).",
+  "_meta": {
+    "category": 15,
+    "category_name": "Feminine Care",
+    "volume_name": "Feminine Care",
+    "panel": ["Pb", "Cd", "tAs", "iAs", "tHg", "MeHg", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier_footnote": "",
+    "reconstitution_note": false,
+    "compiled_dir": "cat15-compiled",
+    "method_label": "Sovereign mucosal-contact cosmetic ML (cosmetic forms); mandatory control (device forms)",
+    "methodology_version": "Method v2.0 — government-limit default, mucosal basis (CLAUDE.md Part 19)",
+    "derivation_mode": "cells_binding",
+    "method_prose": [
+      "Feminine-care products contact the vulvovaginal mucosa, which is markedly more permeable and bioavailable than intact skin; the standard is written on a mucosal basis and never on a dermal or dietary basis. The category splits into two instrument families that share this basis but are never conflated. Device forms — tampons, pads, cups, discs, period underwear — are regulated as medical devices for biocompatibility (21 CFR Part 884; EU MDR 2017/745; ISO 10993), but no government sets a numeric heavy-metal content limit for the finished device in any jurisdiction, so every panel analyte resolves to a mandatory analytical control or a substantiated not-material determination, never an invented number.",
+      "Cosmetic forms — feminine wipes, deodorants, douches, intimate washes — are cosmetics, so sovereign cosmetic contaminant limits apply, adopted at the strictest mucosal-contact tier a government draws. Lead reads across the German BVL 2017 toothpaste tier (500 µg/kg, stricter than the general-cosmetic 2000 because vaginal mucosa is more permeable than the oral mucosa that limit was written for); cadmium (100), total arsenic (500) and total mercury (100) bind the strictest general-cosmetic value directly; and nickel binds the only sovereign cosmetic nickel content limit (Korea MFDS 2025, 10000). Occurrence establishes materiality — a metal a routed survey measures present cannot be recorded not-material — but never sets the number."
+    ],
+    "effective_date": "2026-08-14",
+    "default_version": "1.0 (2026-08-14)"
+  },
+  "pages": [
+    {
+      "slug": "menstrual-tampons",
+      "name": "Menstrual tampons",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual tampons (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis; the applicator is tested as a distinct component). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "menstrual-tampons" }]
+    },
+    {
+      "slug": "menstrual-pads",
+      "name": "Menstrual pads and liners",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual pads, panty liners, intralabial and reusable pads (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "menstrual-pads" }]
+    },
+    {
+      "slug": "menstrual-cups",
+      "name": "Menstrual cups",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual cups (silicone, latex, and other polymers) (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis, prolonged internal contact). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "menstrual-cups" }]
+    },
+    {
+      "slug": "menstrual-discs",
+      "name": "Menstrual discs",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual discs (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis, prolonged internal contact). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "menstrual-discs" }]
+    },
+    {
+      "slug": "period-underwear-reusable-garments",
+      "name": "Period underwear and reusable garments",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for period underwear and reusable menstrual garments (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "period-underwear-reusable-garments" }]
+    },
+    {
+      "slug": "menstrual-intimate-products-other",
+      "name": "Other menstrual and intimate products",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for other menstrual and intimate products evaluated case by case (Feminine Care), on the total heavy-metal content of the finished article as placed on market (mucosal basis). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "menstrual-intimate-products-other" }]
+    },
+    {
+      "slug": "feminine-wipes",
+      "name": "Feminine wipes and towelettes",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for feminine wipes and towelettes (Feminine Care), evaluated on the finished product as placed on market at the sovereign mucosal-contact cosmetic tier. Lead reads across the German BVL 2017 toothpaste tier (500 µg/kg); cadmium, total arsenic and total mercury bind the strictest general-cosmetic value and nickel the only sovereign cosmetic nickel limit; the remaining analytes are mandatory controls or substantiated not-material determinations.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "feminine-wipes" }]
+    },
+    {
+      "slug": "feminine-deodorants",
+      "name": "Feminine deodorants",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for feminine deodorants, leave-on and rinse-off (Feminine Care), evaluated on the finished product as placed on market at the sovereign mucosal-contact cosmetic tier. Lead reads across the German BVL 2017 toothpaste tier (500 µg/kg); cadmium, total arsenic and total mercury bind the strictest general-cosmetic value and nickel the only sovereign cosmetic nickel limit; the remaining analytes are mandatory controls or substantiated not-material determinations.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "feminine-deodorants" }]
+    },
+    {
+      "slug": "douches-vaginal-irrigation",
+      "name": "Douches and vaginal irrigation solutions",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for douches and vaginal irrigation solutions and apparatus components (Feminine Care), evaluated on the finished product as placed on market at the sovereign mucosal-contact cosmetic tier. Lead reads across the German BVL 2017 toothpaste tier (500 µg/kg); cadmium, total arsenic and total mercury bind the strictest general-cosmetic value and nickel the only sovereign cosmetic nickel limit; the remaining analytes are mandatory controls or substantiated not-material determinations.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "douches-vaginal-irrigation" }]
+    },
+    {
+      "slug": "intimate-washes-cleansers",
+      "name": "Intimate washes and cleansers",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for intimate washes and cleansers (Feminine Care), evaluated on the finished product as placed on market at the sovereign mucosal-contact cosmetic tier. Lead reads across the German BVL 2017 toothpaste tier (500 µg/kg); cadmium, total arsenic and total mercury bind the strictest general-cosmetic value and nickel the only sovereign cosmetic nickel limit; the remaining analytes are mandatory controls or substantiated not-material determinations.",
+      "version": "1.0 (2026-08-14)",
+      "connections": [
+        { "label": "How limits are derived", "href": "/program/structure" },
+        { "label": "Regulation references (source documents)", "href": "/regulations" },
+        { "label": "All HMTc standards", "href": "/standards" }
+      ],
+      "variants": [{ "label": "all", "variant": "default", "record": "intimate-washes-cleansers" }]
+    }
+  ]
+}
