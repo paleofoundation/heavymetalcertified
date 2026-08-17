@@ -9,8 +9,8 @@ author: "Karen Pendergrass"
 orcid: 0000-0002-2348-7259
 briefing_date: "June 2026"
 updated: "June 2026"
-scholar_eligible: true
-pdf: "/static/briefings/brief-5-retailer-as-anchor.pdf"
+scholar_eligible: false
+pdf: "/briefings/brief-5-retailer-as-anchor.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Brief 5" }

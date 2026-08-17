@@ -9,7 +9,10 @@ author: "Karen Pendergrass"
 orcid: 0000-0002-2348-7259
 briefing_date: "August 2026"
 updated: "August 2026"
-scholar_eligible: false
+scholar_eligible: true
+scholar_pdf: true
+scholar_pdf_url: "https://heavymetalcertified.com/briefings/the-mucosal-gap.pdf"
+pdf: "/briefings/the-mucosal-gap.pdf"
 audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 snapshot:
   - { k: "Series number", v: "Brief 11" }
