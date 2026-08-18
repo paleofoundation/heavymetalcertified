@@ -87,12 +87,20 @@ tAs is 50 (India) on all records — unchanged.
 the golden block in `tools/panel-coherence-lint.mjs` and close this ticket. The species≤total check
 stays permanently.
 
+## Decided
+
+- **ALUMINIUM on dry cereals — DECIDED 2026-08-18 (Karen): keep Al 500 as a protective read-across.**
+  Al 500 is AU-NZ's infant-*formula* limit (the strictest sovereign infant aluminium number),
+  read across to all infant foods. Dry cereals run ~13,000-18,000 ppb, so few certify on Al. The
+  only government limit that names solid foods is China GB 2760-2024 (`cn_gb2760_2024_al_baked_foods_100000`,
+  100,000 ppb — an adult food-additive residue allowance, 200x looser); it was **considered and
+  rejected** as under-protective for infants. So the current read-across stands unchanged (value
+  500, no data change), and the disclosure is reframed from "under review" to a deliberate
+  protective standard on `/hard-to-meet` and the manual struggle sections. The excess is largely
+  from aluminium-based leavening, which brands can reformulate away. No compiled-data change.
+
 ## Deferred (separate tickets, flagged, not in this change)
 
-- **ALUMINIUM on dry cereals** — the same class of defect as arsenic, and a bigger cliff. Al 500 is
-  AU-NZ's infant-*formula* limit (the only sovereign Al number), read across to dry cereals whose
-  natural Al runs ~13,000-18,000 ppb, so essentially no dry cereal certifies on Al. Needs the same
-  scope/basis decision the owner made for arsenic. Disclosed at `/hard-to-meet` as "under review."
 - **Soy formula chromium 2000 → 1000** (bean-matrix read-across); blocked on register drift + GB
   2762 Appendix A. A tightening, safe to defer.
 - **Cr-VI panel gap:** Cat-1 records carry no Cr-VI cell; the canonical contract requires it.

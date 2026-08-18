@@ -51,8 +51,8 @@ For these products, certification is not a matter of ordinary care in manufactur
 Grains and cereals carry a high natural aluminium background. Dry infant cereals &mdash; rice-based and non-rice alike &mdash; commonly run in the tens of thousands of ppb, against an aluminium limit of 500 ppb. On the occurrence literature, few dry cereals clear it.
 
 <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin:22px 0">
-  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:9px">Under review</div>
-  <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The aluminium limit is read across from the only aluminium maximum any government sets &mdash; an infant-formula standard &mdash; because no jurisdiction regulates aluminium in solid food. Applying a formula limit to a dry cereal is a basis question the program is reviewing, and the aluminium figure for dry cereals may change. It is disclosed here as a current challenge, not a settled one.</p>
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:9px">A protective standard, by design</div>
+  <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">No government sets an aluminium limit for solid infant food. The standard holds these products to the strictest sovereign infant aluminium ceiling &mdash; the AU-NZ infant-formula limit, 500 ppb &mdash; as a protective read-across, rather than to the only limit that names solid foods: China&rsquo;s 100,000 ppb allowance for aluminium-based additives in baked goods, an adult food-additive residue level two hundred times looser. Much of the aluminium in infant cereals comes from aluminium-based leavening; a brand can reformulate it away with aluminium-free baking powder. This is a deliberate choice, not an unsettled one.</p>
 </div>
 
 ## How to read the challenge
