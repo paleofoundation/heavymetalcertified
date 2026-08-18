@@ -22,6 +22,9 @@ import {
   Page,
   View,
   Text,
+  Link,
+  Svg,
+  Path,
   StyleSheet,
   renderToFile,
 } from "@react-pdf/renderer"
@@ -316,7 +319,14 @@ function buildModel(fm, body, cfg) {
     masthead: cfg.masthead,
     dateLabel: monthYear(updated || established),
     title,
-    authorLine: "Karen Pendergrass · ORCID 0000-0002-2348-7259 · Heavy Metal Tested & Certified, Institute of Contaminant Standards",
+    // The ORCID iD is shown as the official green iD glyph linked to the record
+    // (the journal-byline convention), not the spelled-out number; the
+    // identifier lives on the link target. Rendered as a row in ScholarlyDocument.
+    authorLine: {
+      name: "Karen Pendergrass",
+      affil: "Heavy Metal Tested & Certified, Institute of Contaminant Standards",
+      orcid: "0000-0002-2348-7259",
+    },
     gradeLine: grade && GRADE_LABEL[grade] ? `Confidence grade ${grade} — ${GRADE_LABEL[grade]} (preprint)` : null,
     citeAs,
     keywords,
@@ -349,6 +359,9 @@ const s = StyleSheet.create({
   ruleFaint: { borderTopWidth: 0.75, borderTopColor: RULE_MED, marginTop: 16, marginBottom: 14 },
   title: { fontFamily: "Lora", fontSize: 20, color: INK_TITLE, lineHeight: 1.2, letterSpacing: -0.2, marginBottom: 10 },
   authorLine: { fontFamily: "IBMPlexMono", fontSize: 7.6, color: MUTE, letterSpacing: 0.3, marginBottom: 4 },
+  authorRow: { flexDirection: "row", alignItems: "center", marginBottom: 4 },
+  authorText: { fontFamily: "IBMPlexMono", fontSize: 7.6, color: MUTE, letterSpacing: 0.3 },
+  orcidBadge: { marginHorizontal: 3 },
   gradeLine: { fontFamily: "IBMPlexMono", fontSize: 7.6, color: BURGUNDY, letterSpacing: 0.3, marginBottom: 12 },
 
   frontRow: { flexDirection: "row", gap: 30, marginBottom: 18 },
@@ -551,6 +564,36 @@ function BackMatter(m) {
   ])
 }
 
+// The official ORCID iD icon (green disc + "iD") drawn with react-pdf vector
+// primitives and wrapped in a Link to the record, so a reader clicks the glyph
+// to reach the ORCID profile — the customary journal-PDF treatment, replacing
+// the spelled-out identifier.
+function OrcidBadge(orcid, key) {
+  const SIZE = 8.5
+  return h(
+    Link,
+    { key, src: `https://orcid.org/${orcid}`, style: s.orcidBadge },
+    h(Svg, { width: SIZE, height: SIZE, viewBox: "0 0 256 256" }, [
+      h(Path, {
+        key: "disc",
+        fill: "#A6CE39",
+        d: "M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z",
+      }),
+      h(Path, { key: "i", fill: "#FFFFFF", d: "M86.3,186.2H70.9V79.1h15.4v48.4V186.2z" }),
+      h(Path, {
+        key: "d",
+        fill: "#FFFFFF",
+        d: "M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z",
+      }),
+      h(Path, {
+        key: "dot",
+        fill: "#FFFFFF",
+        d: "M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z",
+      }),
+    ]),
+  )
+}
+
 function ScholarlyDocument(m) {
   const children = [
     h(View, { key: "mr", style: s.mastheadRow }, [
@@ -558,7 +601,11 @@ function ScholarlyDocument(m) {
       m.dateLabel ? h(Text, { key: "d", style: s.mastheadDate }, m.dateLabel) : null,
     ]),
     h(Text, { key: "t", style: s.title }, m.title),
-    h(Text, { key: "a", style: s.authorLine }, m.authorLine),
+    h(View, { key: "a", style: s.authorRow }, [
+      h(Text, { key: "n", style: s.authorText }, `${m.authorLine.name} ·`),
+      OrcidBadge(m.authorLine.orcid, "orcid"),
+      h(Text, { key: "aff", style: s.authorText }, `· ${m.authorLine.affil}`),
+    ]),
     m.gradeLine ? h(Text, { key: "g", style: s.gradeLine }, m.gradeLine) : null,
     h(View, { key: "rule", style: s.ruleBurgundy }),
     h(FrontMatter, { key: "fm", ...m }),

@@ -57,6 +57,24 @@ function stripInline(s) {
     .replace(/\\([\\`*_{}[\]()#+\-.!])/g, "$1")
 }
 
+// The official ORCID iD icon (green disc + white "iD") drawn as vector paths at
+// (x,y) sized `size` pt; the caller adds the link annotation over the same box.
+// Even-odd fill on the white glyph keeps the "D" counter transparent so the green
+// disc shows through. This replaces the spelled-out identifier in the byline.
+function drawOrcidIcon(doc, x, y, size) {
+  const DISC =
+    "M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"
+  const GLYPH =
+    "M86.3,186.2H70.9V79.1h15.4v48.4V186.2z " +
+    "M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z " +
+    "M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z"
+  doc.save()
+  doc.translate(x, y).scale(size / 256)
+  doc.path(DISC).fill("#A6CE39")
+  doc.path(GLYPH).fill("#FFFFFF", "even-odd")
+  doc.restore()
+}
+
 function renderOne(file, job) {
   const slug = file.replace(/\.md$/, "")
   const { fm, body } = parse(readFileSync(join(job.src, file), "utf8"))
@@ -95,13 +113,22 @@ function renderOne(file, job) {
 
     doc.font("Helvetica-Bold").fontSize(17).fillColor(RED).text(title, { lineGap: 2 })
     doc.moveDown(0.4)
-    doc
-      .font("Helvetica")
-      .fontSize(9)
-      .fillColor(MUTE)
-      .text(
-        `${author}  ·  ORCID ${orcid}  ·  ${ENTITY}${date ? "  ·  " + date : ""}`,
-      )
+    // Byline: name · [ORCID iD icon, linked] · entity · date. The icon replaces
+    // the spelled-out identifier; it is drawn inline and given a link annotation.
+    doc.font("Helvetica").fontSize(9).fillColor(MUTE)
+    const bylineY = doc.y
+    const bylineX = doc.page.margins.left
+    const bylinePre = `${author}  ·  `
+    const bylinePost = `  ·  ${ENTITY}${date ? "  ·  " + date : ""}`
+    doc.text(bylinePre, bylineX, bylineY, { lineBreak: false })
+    const iconSize = 9
+    const iconX = bylineX + doc.widthOfString(bylinePre)
+    const iconY = bylineY + 1
+    drawOrcidIcon(doc, iconX, iconY, iconSize)
+    doc.link(iconX, iconY, iconSize, iconSize, `https://orcid.org/${orcid}`)
+    doc.fillColor(MUTE).text(bylinePost, iconX + iconSize, bylineY, { lineBreak: false })
+    doc.x = bylineX
+    doc.y = bylineY + doc.currentLineHeight()
     doc.moveDown(0.3)
     doc
       .font("Helvetica-Oblique")
