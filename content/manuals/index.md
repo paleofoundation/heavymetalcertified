@@ -109,7 +109,8 @@ rail_box:
     </div>
     <div style="background:#fffdfb;padding:16px 18px">
       <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/pet-foods" style="color:#2b1f1f;text-decoration:none">Pet Foods</a></div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; PDF in preparation</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; Provisional PDF (pre-DOI)</div>
+      <a href="/static/manuals/HMTc-Pet-Foods-Program-Manual-2026.pdf" download="download" style="display:inline-block;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none">Download provisional PDF</a>
     </div>
     <div style="background:#fffdfb;padding:16px 18px">
       <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/dairy-and-milk-products" style="color:#2b1f1f;text-decoration:none">Dairy and Milk Products</a></div>

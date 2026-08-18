@@ -139,16 +139,25 @@ const biblio = primary
 // linked to that live page and labelled "Web edition · PDF in preparation" — honest, and NOT a
 // download or citation claim (the Daubert gate is on the deposited PDF + DOI, not on linking the
 // web edition). One without a landing page stays plain "In preparation" text.
+// A pending manual may carry a PROVISIONAL PDF (served now, ahead of a DOI deposit). When one is
+// present the card offers the download and says so honestly ("Provisional PDF · pre-DOI"); this is
+// NOT a published/citation claim (still no bibliographic record, no DOI, no Scholar metadata — those
+// belong to the published list only). A pending manual with a landing page but no PDF links the web
+// edition; one with neither stays plain "In preparation" text.
 const forthcomingCards = pending
   .map((m) => {
     const hasLanding = fs.existsSync(path.join(OUT_DIR, `${m.slug}.md`))
+    const dl = servedDownload(m)
     const heading = hasLanding
       ? `<a href="/manuals/${m.slug}" style="color:#2b1f1f;text-decoration:none">${m.title}</a>`
       : m.title
-    const label = hasLanding ? "Web edition &middot; PDF in preparation" : "In preparation"
+    const label = dl ? "Web edition &middot; Provisional PDF (pre-DOI)" : hasLanding ? "Web edition &middot; PDF in preparation" : "In preparation"
+    const dlLink = dl
+      ? `\n      <a href="${dl}" download="download" style="display:inline-block;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none">Download provisional PDF</a>`
+      : ""
     return `    <div style="background:#fffdfb;padding:16px 18px">
       <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${heading}</div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">${label}</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">${label}</div>${dlLink}
     </div>`
   })
   .join("\n")

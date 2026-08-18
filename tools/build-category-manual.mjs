@@ -50,6 +50,16 @@ const matrix = `<div style="overflow-x:auto"><table style="width:100%;font-size:
 const n = DOC.pages.length
 const numWord = { 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve" }[n] || String(n)
 
+// A provisional PDF edition is offered ONLY when the config names one AND the file is present under
+// content/static/manuals/. It is deliberately NOT a DOI/published claim — the values are current and
+// identical to this page, the deposit/registration just hasn't happened yet. Manuals without a
+// download_pdf keep the "in preparation" language unchanged.
+const pdfFile = META.download_pdf && fs.existsSync(path.join(REPO, "content/static/manuals", META.download_pdf)) ? META.download_pdf : null
+const pdfHref = pdfFile ? `/static/manuals/${pdfFile}` : null
+const railBody = pdfFile
+  ? `Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A provisional PDF edition (values current, DOI pending) can be downloaded below; a version-pinned, DOI-registered edition follows. Full edition history below.`
+  : `Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below.`
+
 const fm = [
   "---",
   `title: "${META.category_name} — HMTc Program Manual"`,
@@ -62,7 +72,7 @@ const fm = [
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
   "rail_box:",
   '  title: "Document versions"',
-  `  body: "Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below."`,
+  `  body: "${railBody}"`,
   "---",
 ].join("\n")
 
@@ -84,7 +94,8 @@ ${struggleSection}
 
 
 <section style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px">About this edition</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. A consolidated, version-pinned PDF of the full manual is in preparation and will be linked here on release; until then each subcategory page is individually citable.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. ${pdfFile ? `A provisional PDF edition of the full manual is available now &mdash; its values are current and identical to these pages; a version-pinned, DOI-registered edition is in preparation.` : `A consolidated, version-pinned PDF of the full manual is in preparation and will be linked here on release; until then each subcategory page is individually citable.`}</p>
+${pdfFile ? `<p style="margin:0 0 14px"><a href="${pdfHref}" download="download" style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:${ACCENT};border-radius:2px;padding:9px 16px;text-decoration:none">Download the provisional PDF</a> <span style="font-size:11px;color:#a9a1a1;margin-left:6px">Provisional edition &middot; pre-DOI &middot; ${META.effective_date}</span></p>` : ""}
 <p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:80ch;margin:0">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>
 `
 

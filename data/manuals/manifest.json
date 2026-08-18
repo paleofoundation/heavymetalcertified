@@ -74,9 +74,10 @@
       "slug": "pet-foods",
       "edition": "2026",
       "pdf": "HMTc-Pet-Foods-Program-Manual-2026.pdf",
+      "download_pdf": "HMTc-Pet-Foods-Program-Manual-2026.pdf",
       "status": "pending_refresh",
       "doi": null,
-      "evidence_note": "Web edition current (10 subcategories, Method v2.0 human-grade over-compliance; 2026-08-13). Pet food is legally feed; every value is the strictest human-food sovereign maximum for the nearest analog (feed floor disclosed, never selected), matching the live /standards/pet-food-* pages cell-for-cell. Rendered from the same cat17-compiled records the bespoke standard pages read (tools/standards/build-cert-cat17-pages.mjs). Consolidated version-pinned PDF in preparation."
+      "evidence_note": "Web edition current (10 subcategories, Method v2.0 human-grade over-compliance; 2026-08-13). Pet food is legally feed; every value is the strictest human-food sovereign maximum for the nearest analog (feed floor disclosed, never selected), matching the live /standards/pet-food-* pages cell-for-cell. Rendered from the same cat17-compiled records the bespoke standard pages read (tools/standards/build-cert-cat17-pages.mjs). A PROVISIONAL PDF edition (tools/build-cat17-manual-pdf.mjs) is served for download NOW at Karen's direction (a brand requested the standard); status stays pending_refresh because no DOI-registered deposit exists yet — the served PDF carries an explicit provisional/pre-DOI notice and makes no citation/DOI claim."
     },
     {
       "category": 24,
