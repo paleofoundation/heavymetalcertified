@@ -1,14 +1,16 @@
 // Scroll-to-top button — quartz/components/styles/scrolltotop.scss
 //
 // A floating, fixed bottom-right circle carrying a scroll-progress ring. Ported
-// from microbiomemedicine.com; colours bound to the site's own --secondary /
-// --light / --darkgray tokens so it is burgundy on the Index and HMTc-red on
-// Certified, and adapts to dark mode, with no per-site values here.
+// from microbiomemedicine.com. Colours bind to the site's own --secondary token,
+// so the circle is burgundy on the Index and HMTc-red on Certified with no
+// per-site values here.
 //
-// The "3-dimensionality + movement" the brief asks for lives on this element:
-// a soft two-layer drop shadow floats it off the page, it lifts and deepens its
-// shadow on hover, a tinted ripple grows behind it on hover, and the ring fills
-// as the reader scrolls.
+// A SOLID brand-coloured circle (not a pale tint) so it reads clearly against
+// the sites' warm near-white page grounds — an earlier pale-wash version was
+// effectively invisible on the cream background. White chevron + white progress
+// ring for contrast on the brand fill. The "3-dimensionality + movement" the
+// brief asks for lives here: a two-layer drop shadow floats it off the page, it
+// lifts on hover, a light ripple grows behind it, and the ring fills as you scroll.
 
 .scroll-to-top {
   position: fixed;
@@ -19,22 +21,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   padding: 0;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
   overflow: visible;
 
-  // A pale wash of the brand accent over the page ground, so it reads as a
-  // light chip rather than a solid dot (matches the reference).
-  background: color-mix(in srgb, var(--secondary) 9%, var(--light));
+  // Solid brand fill — clearly visible on the warm near-white page ground.
+  background: var(--secondary);
 
-  // Two-layer elevation: a tight contact shadow + a soft cast shadow.
+  // Two-layer elevation, tuned to stand off a light page.
   box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.1),
-    0 6px 18px rgba(0, 0, 0, 0.14);
+    0 2px 6px rgba(0, 0, 0, 0.2),
+    0 10px 26px rgba(0, 0, 0, 0.24);
 
   // Hidden until the reader has scrolled; the script toggles `.visible`.
   opacity: 0;
@@ -43,7 +44,8 @@
   transition:
     opacity 0.28s ease,
     transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.28s ease;
+    box-shadow 0.28s ease,
+    background 0.15s ease;
 
   &.visible {
     opacity: 1;
@@ -51,13 +53,13 @@
     pointer-events: auto;
   }
 
-  // Ripple that grows from the centre on hover (ported behaviour).
+  // Light ripple that grows from the centre on hover.
   &::after {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background: color-mix(in srgb, var(--secondary) 16%, transparent);
+    background: rgba(255, 255, 255, 0.18);
     transform: scale(0.1);
     opacity: 0;
     transition: transform 0.4s cubic-bezier(0.77, 0, 0.2, 0.85), opacity 0.4s ease;
@@ -65,10 +67,11 @@
   }
 
   &:hover {
-    transform: translateY(-3px) scale(1.04);
+    transform: translateY(-3px) scale(1.05);
+    background: color-mix(in srgb, var(--secondary) 88%, #000);
     box-shadow:
-      0 2px 4px rgba(0, 0, 0, 0.12),
-      0 12px 28px rgba(0, 0, 0, 0.2);
+      0 3px 8px rgba(0, 0, 0, 0.22),
+      0 16px 34px rgba(0, 0, 0, 0.3);
 
     &::after {
       transform: scale(1);
@@ -88,21 +91,20 @@
   svg {
     position: relative;
     z-index: 1;
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     overflow: visible;
   }
 
-  // Faint full ring the progress arc fills over.
+  // Faint full ring the progress arc fills over (white on the brand fill).
   .stt-track {
-    stroke: color-mix(in srgb, var(--secondary) 22%, transparent);
+    stroke: rgba(255, 255, 255, 0.28);
   }
 
-  // The progress arc. The path is drawn starting at 12 o'clock and running
-  // clockwise, so as the script drives the offset from 150 (empty) toward 0
-  // the arc fills clockwise from the top.
+  // The progress arc — white, high-contrast on the brand fill. Drawn from 12
+  // o'clock clockwise; the script drives the offset from 150 (empty) to 0 (full).
   .stt-progress {
-    stroke: var(--secondary);
+    stroke: #ffffff;
     stroke-linecap: round;
     stroke-dasharray: 150 150;
     stroke-dashoffset: 150;
@@ -110,7 +112,7 @@
   }
 
   .stt-arrow {
-    stroke: var(--darkgray);
+    stroke: #ffffff;
     fill: none;
   }
 }
@@ -119,12 +121,12 @@
   .scroll-to-top {
     right: 1rem;
     bottom: 1rem;
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
 
     svg {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
     }
   }
 }
