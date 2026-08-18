@@ -135,13 +135,22 @@ const biblio = primary
   </div>`
   : `  <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:18px 20px;margin-bottom:16px"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No manual published yet</div><p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The first category manual publishes here once its every value is defensibly current and it has been deposited with a DOI.</p></div>`
 
+// A pending manual whose web edition is already rendered (content/manuals/<slug>.md exists) is
+// linked to that live page and labelled "Web edition · PDF in preparation" — honest, and NOT a
+// download or citation claim (the Daubert gate is on the deposited PDF + DOI, not on linking the
+// web edition). One without a landing page stays plain "In preparation" text.
 const forthcomingCards = pending
-  .map(
-    (m) => `    <div style="background:#fffdfb;padding:16px 18px">
-      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${m.title}</div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
-    </div>`,
-  )
+  .map((m) => {
+    const hasLanding = fs.existsSync(path.join(OUT_DIR, `${m.slug}.md`))
+    const heading = hasLanding
+      ? `<a href="/manuals/${m.slug}" style="color:#2b1f1f;text-decoration:none">${m.title}</a>`
+      : m.title
+    const label = hasLanding ? "Web edition &middot; PDF in preparation" : "In preparation"
+    return `    <div style="background:#fffdfb;padding:16px 18px">
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">${heading}</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">${label}</div>
+    </div>`
+  })
   .join("\n")
 
 const pubIntro =

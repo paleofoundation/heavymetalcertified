@@ -67,6 +67,26 @@
       "status": "pending_refresh",
       "doi": null,
       "evidence_note": "Web edition current (12 subcategories, full HMTc 10-analyte panel, Method v2.0 government-limit default; 2026-08-10). Rice inorganic-arsenic axis verified against EU 2023/915 (milled 150 / parboiled-husked / rice-flour 250 / rice products 300 / rice drinks 30). Consolidated version-pinned PDF in preparation."
+    },
+    {
+      "category": 17,
+      "title": "Pet Foods",
+      "slug": "pet-foods",
+      "edition": "2026",
+      "pdf": "HMTc-Pet-Foods-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Web edition current (10 subcategories, Method v2.0 human-grade over-compliance; 2026-08-13). Pet food is legally feed; every value is the strictest human-food sovereign maximum for the nearest analog (feed floor disclosed, never selected), matching the live /standards/pet-food-* pages cell-for-cell. Rendered from the same cat17-compiled records the bespoke standard pages read (tools/standards/build-cert-cat17-pages.mjs). Consolidated version-pinned PDF in preparation."
+    },
+    {
+      "category": 24,
+      "title": "Dairy and Milk Products",
+      "slug": "dairy-and-milk-products",
+      "edition": "2026",
+      "pdf": "HMTc-Dairy-and-Milk-Products-Program-Manual-2026.pdf",
+      "status": "pending_refresh",
+      "doi": null,
+      "evidence_note": "Web edition current (8 subcategories, Method v2.0 government-limit default; 2026-08-13). Every value matches the live /standards/dairy-* pages cell-for-cell. Consolidated version-pinned PDF in preparation."
     }
   ]
 }

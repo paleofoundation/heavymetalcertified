@@ -14,7 +14,7 @@ methodology_version: "Method v2.0 — human-grade over-compliance (CLAUDE.md Par
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/pet-food-raw
 effective_date: 2026-08-13
-scholar_eligible: false
+scholar_eligible: true
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:

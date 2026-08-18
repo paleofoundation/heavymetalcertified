@@ -88,8 +88,8 @@ rail_box:
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A manual publishes when every subcategory in its category has a defensible standard. Categories in progress publish subcategory by subcategory on the web first.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
     <div style="background:#fffdfb;padding:16px 18px">
-      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Seafood</div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/seafood" style="color:#2b1f1f;text-decoration:none">Seafood</a></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; PDF in preparation</div>
     </div>
     <div style="background:#fffdfb;padding:16px 18px">
       <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Culinary Oils and Fats</div>
@@ -104,8 +104,16 @@ rail_box:
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
     </div>
     <div style="background:#fffdfb;padding:16px 18px">
-      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f">Grains, Cereals, and Rice Products</div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">In preparation</div>
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/grains-cereals-rice" style="color:#2b1f1f;text-decoration:none">Grains, Cereals, and Rice Products</a></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; PDF in preparation</div>
+    </div>
+    <div style="background:#fffdfb;padding:16px 18px">
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/pet-foods" style="color:#2b1f1f;text-decoration:none">Pet Foods</a></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; PDF in preparation</div>
+    </div>
+    <div style="background:#fffdfb;padding:16px 18px">
+      <div style="font-size:14.5px;line-height:1.45;color:#2b1f1f"><a href="/manuals/dairy-and-milk-products" style="color:#2b1f1f;text-decoration:none">Dairy and Milk Products</a></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:5px">Web edition &middot; PDF in preparation</div>
     </div>
   </div>
 </section>

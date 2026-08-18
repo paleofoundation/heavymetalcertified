@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 17 (Pet Foods) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up — the Cat-17 /standards/ subcategory pages are bespoke (custom_page:true, variant_type:whole_row_platform) and are rendered in the index repo by tools/standards/build-cert-cat17-pages.mjs from data/workbench/standards/cat17-compiled. The compiled records under data/standards/cat17-compiled/ here are a render-into-cert copy of that authoritative source; the manual re-presents the SAME numbers already live on /standards/pet-food-*.",
+    "category": 17,
+    "category_name": "Pet Foods",
+    "volume_name": "Pet Foods",
+    "panel": ["Pb", "Cd", "tAs", "iAs", "tHg", "MeHg", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "compiled_dir": "cat17-compiled",
+    "methodology_version": "Method v2.0 — human-grade over-compliance (CLAUDE.md Part 19; feed floor disclosed, never selected)",
+    "effective_date": "2026-08-13",
+    "default_version": "1.0 (2026-08-13)",
+    "manual_slug": "pet-foods",
+    "manual_method_note": "Pet food is legally feed, not food: its heavy-metal ceilings are set by feed law &mdash; EU Directive 2002/32/EC, FDA Center for Veterinary Medicine guidance, and the AAFCO model regulations &mdash; whose maximum levels run well above the corresponding human-food limits. HMTc does not certify to that feed floor. Each analyte is set to the strictest applicable human-food sovereign maximum for the nearest human-food analog, adopted as a voluntary human-grade over-compliance; the feed floor is disclosed on every row and never selects the number. Basis is never conflated &mdash; dry, as-sold products (kibble, semi-moist, freeze-dried, treats, chews) read across only from dry human analogs, and wet, as-consumed products (canned, raw, toppers, milk replacers, fish-based diets) only from as-consumed analogs, with no wet-to-dry conversion. Tier&nbsp;1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier&nbsp;2 (tAs, Ni, Cr, Al, Sn) carry the program&rsquo;s 150% transitional allowance. Inorganic arsenic and hexavalent chromium operate as reflex speciation screens bounded by total arsenic and total chromium; methylmercury has no terrestrial biomagnification pathway and is bounded by total mercury; tin is material only for canned product, where it migrates from the tin-coated can, and is controlled by screen &mdash; not assigned an invented number &mdash; on every non-canned form."
+  },
+  "pages": [
+    { "slug": "pet-food-dry-kibble", "name": "Complete & balanced dry (kibble)", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-dry-kibble" }] },
+    { "slug": "pet-food-canned-wet", "name": "Complete & balanced canned / wet", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-canned-wet" }] },
+    { "slug": "pet-food-semi-moist", "name": "Semi-moist pet foods", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-semi-moist" }] },
+    { "slug": "pet-food-raw", "name": "Raw pet foods (frozen / chilled raw diets)", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-raw" }] },
+    { "slug": "pet-food-freeze-dried", "name": "Freeze-dried / dehydrated (including freeze-dried raw)", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-freeze-dried" }] },
+    { "slug": "pet-food-fish-marine-protein", "name": "Fish-based / marine-protein complete diets", "variants": [{ "label": "all", "variant": "both", "record": "pet-food-fish-marine-protein" }] },
+    { "slug": "pet-treats-snacks", "name": "Pet treats / snacks", "variants": [{ "label": "all", "variant": "both", "record": "pet-treats-snacks" }] },
+    { "slug": "pet-chews-dental", "name": "Pet chews (including dental chews)", "variants": [{ "label": "all", "variant": "both", "record": "pet-chews-dental" }] },
+    { "slug": "pet-toppers-mixers-broths", "name": "Toppers / mixers / broths", "variants": [{ "label": "all", "variant": "both", "record": "pet-toppers-mixers-broths" }] },
+    { "slug": "pet-milk-replacers-specialty-liquids", "name": "Milk replacers and specialty pet liquids", "variants": [{ "label": "all", "variant": "both", "record": "pet-milk-replacers-specialty-liquids" }] }
+  ]
+}
