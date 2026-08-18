@@ -528,6 +528,18 @@ header.hmi-topnav-shell::after {
   color: rgba(255, 255, 255, 0.8);
 }
 .hmtc-hb-stamp { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: rgba(255, 255, 255, 0.72); }
+// ORCID iD shown as the official green iD glyph (journal-byline convention), not
+// the spelled-out number: no underline, collapses to the icon's box.
+.hmtc-hb-orcid {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  .orcid-id-icon { display: block; width: 16px; height: 16px; }
+  &:hover { opacity: 0.82; }
+}
 // Optional action link at the end of the meta row (e.g. "Primary source ↗",
 // "The standards register"). Ghost button on the red band; matches the v3 comp.
 .hmtc-hb-action {
