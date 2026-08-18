@@ -233,6 +233,32 @@
   border-color: #6f2139;
   color: #ffffff;
 }
+// Outlined secondary link — the original document, when the filled action has been
+// promoted to the Heavy Metal Index source record (Tier B). Same outlined metrics
+// as the copy button so the row reads as one control set; two-class scope + resets
+// so the global `article a` cascade cannot win. No border-bottom, no bold.
+.hmtc-cite-panel-body .hmtc-cite-panel-alt {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9f2727;
+  background: none;
+  padding: 9px 15px;
+  border: 1px solid #e8e1db;
+  border-radius: 3px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.hmtc-cite-panel-body .hmtc-cite-panel-alt:hover,
+.hmtc-cite-panel-body .hmtc-cite-panel-alt:focus-visible {
+  background: #fdf4f3;
+  border-color: #9f2727;
+  color: #9f2727;
+}
 // Outlined secondary action — copy the citation. #9f2727 on a hairline, tint on hover.
 .hmtc-cite-panel-copy {
   appearance: none;

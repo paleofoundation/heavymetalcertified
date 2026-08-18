@@ -82,6 +82,20 @@ let lastTrigger: HTMLElement | null = null
 let savedScrollY = 0
 let globalsBound = false
 
+// Tier B — the DOI → Heavy Metal Index source-page map, fetched once per session
+// from the PUBLIC Index open-data surface. This is the one-way direction the
+// firewall allows (cert consumes the published Index like any reader; it never
+// reads Index private data), and it only ever enhances: every panel works fully
+// with `sourcesMap` still null. `citationOpenSeq` guards the async upgrade so a
+// late-arriving map only patches the drawer if it is still open for that citation.
+type CitationSourceRec = { slug: string; tier?: string | null; year?: number | null }
+type CitationSourcesMap = Record<string, CitationSourceRec>
+const HMI_SITE = "https://heavymetalindex.com"
+const HMI_SOURCES_URL = `${HMI_SITE}/static/data/sources.json`
+let sourcesMap: CitationSourcesMap | null = null
+let sourcesMapPromise: Promise<CitationSourcesMap | null> | null = null
+let citationOpenSeq = 0
+
 function scrimEl(): HTMLElement | null {
   return document.querySelector("[data-cite-panel-scrim]")
 }
@@ -151,6 +165,104 @@ function citationGoLabel(href: string): string {
   return "Open the source →"
 }
 
+// --- Tier B: corpus deep-linking ---------------------------------------------
+// Normalize a DOI to the bare, lowercased key the Index map uses. DOIs are
+// case-insensitive, so both sides must lowercase; this mirrors normalizeDoi in
+// the Index's tools/build-open-data.mjs so a citation's DOI and the map key agree.
+function citationNormalizeDoi(raw: string | null | undefined): string | null {
+  if (!raw) return null
+  let s = String(raw).trim().replace(/^["']|["']$/g, "").trim().toLowerCase()
+  s = s
+    .replace(/^https?:\/\/(dx\.)?doi\.org\//, "")
+    .replace(/^doi:\s*/, "")
+    .trim()
+    .replace(/[).,;>\]]+$/, "")
+  return /^10\.\d{4,9}\/\S+$/.test(s) ? s : null
+}
+
+// A citation's DOI comes from its outbound href (a doi.org link) first, else from
+// a DOI printed in the reference detail line (unlinked gov/standard rows).
+function citationExtractDoi(ref: CitationPanelRef): string | null {
+  const fromHref = citationNormalizeDoi(ref.href)
+  if (fromHref) return fromHref
+  const m = `${ref.href} ${ref.detail}`.match(/\b10\.\d{4,9}\/[^\s"'<>)\]]+/i)
+  return m ? citationNormalizeDoi(m[0]) : null
+}
+
+// Fetch the public Index map once per SPA session. Enhancement-only: any failure
+// (offline, CORS, 404 before the Index has deployed the file) resolves to null and
+// the panel simply keeps its Tier A behaviour.
+function loadSourcesMap(): Promise<CitationSourcesMap | null> {
+  if (sourcesMapPromise) return sourcesMapPromise
+  sourcesMapPromise = fetch(HMI_SOURCES_URL, { mode: "cors", credentials: "omit" })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => {
+      sourcesMap = j && j.by_doi ? (j.by_doi as CitationSourcesMap) : null
+      return sourcesMap
+    })
+    .catch(() => null)
+  return sourcesMapPromise
+}
+
+// Resolve a citation to its Index source-page URL, or null when the DOI is not in
+// the corpus (or the map has not loaded yet).
+function citationHmiDeepLink(map: CitationSourcesMap | null, ref: CitationPanelRef): string | null {
+  if (!map) return null
+  const doi = citationExtractDoi(ref)
+  if (!doi) return null
+  const rec = map[doi]
+  return rec && rec.slug ? `${HMI_SITE}/sources/${rec.slug}` : null
+}
+
+function citationActionLink(href: string, label: string, variant: "primary" | "alt"): HTMLAnchorElement {
+  const a = document.createElement("a")
+  a.className = variant === "primary" ? "hmtc-cite-panel-go" : "hmtc-cite-panel-alt"
+  a.href = href
+  a.target = "_blank"
+  a.rel = "noopener noreferrer"
+  a.textContent = label
+  return a
+}
+
+function citationCopyButton(copyText: string): HTMLButtonElement {
+  const copy = document.createElement("button")
+  copy.type = "button"
+  copy.className = "hmtc-cite-panel-copy"
+  copy.textContent = "Copy citation"
+  copy.addEventListener("click", () => {
+    navigator.clipboard.writeText(copyText).then(
+      () => {
+        copy.textContent = "Copied"
+        window.setTimeout(() => {
+          copy.textContent = "Copy citation"
+        }, 1600)
+      },
+      () => {},
+    )
+  })
+  return copy
+}
+
+// Build (or rebuild, on async upgrade) the panel's action row. With a corpus deep
+// link the filled action goes to the Index source record and the original document
+// drops to a secondary outlined action; without one it falls back to Tier A (the
+// row's own outbound link, or the evidence base when the row is unlinked).
+function citationRenderActions(actions: HTMLElement, ref: CitationPanelRef, deepLink: string | null) {
+  const kids: Node[] = []
+  const hasExternal = !!ref.href && /^https?:\/\//.test(ref.href)
+  if (deepLink) {
+    kids.push(citationActionLink(deepLink, "View on the Heavy Metal Index →", "primary"))
+    if (hasExternal) kids.push(citationActionLink(ref.href, citationGoLabel(ref.href), "alt"))
+  } else if (hasExternal) {
+    kids.push(citationActionLink(ref.href, citationGoLabel(ref.href), "primary"))
+  } else {
+    kids.push(citationActionLink(HMI_SITE, "Explore the evidence base →", "primary"))
+  }
+  const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.detail].filter(Boolean).join(" ").trim()
+  if (copyText && navigator.clipboard) kids.push(citationCopyButton(copyText))
+  actions.replaceChildren(...kids)
+}
+
 function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLElement | null) {
   const body = panel.querySelector("[data-cite-panel-body]") as HTMLElement | null
   if (!body) return
@@ -206,50 +318,24 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
     frag.appendChild(p)
   }
 
-  // Actions: one guaranteed way to go deeper (no dead ends) + copy citation. When
-  // the row links out, the filled action routes there, labelled by destination.
-  // When it does not (e.g. an unlinked government report), the fallback opens the
-  // Heavy Metal Index evidence base — the one-way link the firewall allows.
+  // Actions: the primary way deeper + copy. Tier B — when the citation's DOI is in
+  // the Heavy Metal Index corpus, the filled action routes to that source's Index
+  // record (richer than a raw DOI landing: our extracted values, routing, tier) and
+  // the original document drops to a secondary action. Consults the PUBLIC Index
+  // open-data map (the one-way direction the firewall allows); the panel is fully
+  // functional with the map absent, and upgrades in place if it arrives mid-open.
+  const seq = ++citationOpenSeq
   const actions = document.createElement("div")
   actions.className = "hmtc-cite-panel-actions"
-
-  const go = document.createElement("a")
-  go.className = "hmtc-cite-panel-go"
-  go.target = "_blank"
-  go.rel = "noopener noreferrer"
-  if (ref.href && /^https?:\/\//.test(ref.href)) {
-    go.href = ref.href
-    go.textContent = citationGoLabel(ref.href)
-  } else {
-    go.href = "https://heavymetalindex.com"
-    go.textContent = "Explore the evidence base →"
-  }
-  actions.appendChild(go)
-
-  const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.detail]
-    .filter(Boolean)
-    .join(" ")
-    .trim()
-  if (copyText && navigator.clipboard) {
-    const copy = document.createElement("button")
-    copy.type = "button"
-    copy.className = "hmtc-cite-panel-copy"
-    copy.textContent = "Copy citation"
-    copy.addEventListener("click", () => {
-      navigator.clipboard.writeText(copyText).then(
-        () => {
-          copy.textContent = "Copied"
-          window.setTimeout(() => {
-            copy.textContent = "Copy citation"
-          }, 1600)
-        },
-        () => {},
-      )
+  citationRenderActions(actions, ref, citationHmiDeepLink(sourcesMap, ref))
+  frag.appendChild(actions)
+  if (!sourcesMap) {
+    loadSourcesMap().then(() => {
+      if (seq !== citationOpenSeq || !panel.classList.contains("is-open")) return
+      const dl = citationHmiDeepLink(sourcesMap, ref)
+      if (dl) citationRenderActions(actions, ref, dl)
     })
-    actions.appendChild(copy)
   }
-
-  if (actions.childElementCount > 0) frag.appendChild(actions)
 
   body.replaceChildren(frag)
 
@@ -401,7 +487,11 @@ function setupCitationPanel() {
   if (scrim) scrim.onclick = () => closePanel(panel)
 
   const refs = indexCitationPanelReferences(content)
-  if (refs.size > 0) wireCitations(content, refs, panel)
+  if (refs.size > 0) {
+    wireCitations(content, refs, panel)
+    // Warm the corpus deep-link map now so it is usually ready by the first open.
+    void loadSourcesMap()
+  }
 
   bindGlobals()
 }
