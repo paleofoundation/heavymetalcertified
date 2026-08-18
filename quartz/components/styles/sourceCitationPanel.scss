@@ -161,6 +161,48 @@
   margin: 0 0 22px;
 }
 
+// Authority badge — the "how much weight does this carry" tell, elevated from a
+// tiny gray label to a bordered pill right under the kicker where a regulator or
+// opposing expert looks first. The tier class weights it: binding law and peer-
+// reviewed science read in the brand red; a preprint / industry source reads muted.
+.hmtc-cite-panel-authority {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9f2727;
+  border: 1px solid #f2dcda;
+  background: #fdf4f3;
+  border-radius: 2px;
+  padding: 4px 9px;
+  margin: 0 0 16px;
+}
+.hmtc-cite-panel-authority.tier-preprint,
+.hmtc-cite-panel-authority.tier-industry,
+.hmtc-cite-panel-authority.tier-data {
+  color: #8a7f7f;
+  border-color: #e8e1db;
+  background: #faf7f4;
+}
+
+// The finding, framed and front-and-centre — the substance the reader clicked to
+// verify. Larger and darker than the old gray meta line; the label frames it.
+.hmtc-cite-panel-finding-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+  margin: 0 0 7px;
+}
+.hmtc-cite-panel-finding {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #3f3a3a;
+  margin: 0 0 22px;
+}
+
 .hmtc-cite-panel-actions {
   display: flex;
   flex-wrap: wrap;

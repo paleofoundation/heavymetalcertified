@@ -123,6 +123,34 @@ function closePanel(panel: HTMLElement) {
   lastTrigger = null
 }
 
+// The authority tell — how much weight a citation carries, at a glance. The row's
+// own kind label (Government, Journal, Preprint, Case, …) IS the signal; this maps
+// it to a broad tier class so the badge can read stronger for binding law / peer-
+// reviewed science than for a preprint, without inventing a rating the data lacks.
+function citationAuthorityTier(kind: string): string {
+  const k = kind.toLowerCase()
+  if (/govern|regulation|legislation|statute|directive|law/.test(k)) return "law"
+  if (/standard/.test(k)) return "standard"
+  if (/peer|journal|study/.test(k)) return "peer"
+  if (/assess|review|synthesis|opinion|evaluation|monograph/.test(k)) return "expert"
+  if (/case|litig|legal|court|docket/.test(k)) return "case"
+  if (/preprint/.test(k)) return "preprint"
+  if (/data/.test(k)) return "data"
+  if (/industry/.test(k)) return "industry"
+  return "report"
+}
+
+// Label the outbound action by where it actually goes, so the reader knows before
+// they click. Tier B will route corpus-literature citations to their Heavy Metal
+// Index source page; the heavymetalindex.com branch already labels that correctly.
+function citationGoLabel(href: string): string {
+  if (/(^|\/\/|\.)heavymetalindex\.com/.test(href)) return "View on the Heavy Metal Index →"
+  if (/doi\.org|zenodo\.org/.test(href)) return "Open the DOI →"
+  if (/\.gov(\/|$|:)|europa\.eu|eur-lex|efsa\.|who\.int|fao\.org|legislation\.gov|oehha|fsanz|foodstandards/.test(href))
+    return "Open the official document →"
+  return "Open the source →"
+}
+
 function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLElement | null) {
   const body = panel.querySelector("[data-cite-panel-body]") as HTMLElement | null
   if (!body) return
@@ -134,6 +162,16 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   kicker.className = "hmtc-cite-panel-kicker"
   kicker.textContent = `Source record [${ref.num}]`
   frag.appendChild(kicker)
+
+  // Authority badge — the "how much weight does this carry" tell, up top where a
+  // regulator or opposing expert looks first. The row's kind IS the label; the tier
+  // class weights the styling (binding law / peer-reviewed read stronger).
+  if (ref.kind) {
+    const authority = document.createElement("div")
+    authority.className = `hmtc-cite-panel-authority tier-${citationAuthorityTier(ref.kind)}`
+    authority.textContent = ref.kind
+    frag.appendChild(authority)
+  }
 
   // Title — the drawer's accessible name (aria-labelledby). Outbound #1c43ad link
   // when the row carries a URL; plain dark serif otherwise.
@@ -154,35 +192,39 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   }
   frag.appendChild(title)
 
-  // Meta / plain-language blurb (authors · year · journal · DOI + what it studied).
+  // The finding, front and centre — what this source actually establishes, so the
+  // reader can verify the claim without leaving. This is the substance; the title
+  // above is only which document it came from.
   if (ref.detail) {
+    const label = document.createElement("div")
+    label.className = "hmtc-cite-panel-finding-label"
+    label.textContent = "What it establishes"
+    frag.appendChild(label)
     const p = document.createElement("p")
-    p.className = "hmtc-cite-panel-detail"
+    p.className = "hmtc-cite-panel-finding"
     p.textContent = ref.detail
     frag.appendChild(p)
   }
 
-  // Source type.
-  if (ref.kind) {
-    const kind = document.createElement("div")
-    kind.className = "hmtc-cite-panel-kind"
-    kind.textContent = ref.kind
-    frag.appendChild(kind)
-  }
-
-  // Actions: filled outbound route (when the row links out) + copy citation.
+  // Actions: one guaranteed way to go deeper (no dead ends) + copy citation. When
+  // the row links out, the filled action routes there, labelled by destination.
+  // When it does not (e.g. an unlinked government report), the fallback opens the
+  // Heavy Metal Index evidence base — the one-way link the firewall allows.
   const actions = document.createElement("div")
   actions.className = "hmtc-cite-panel-actions"
 
+  const go = document.createElement("a")
+  go.className = "hmtc-cite-panel-go"
+  go.target = "_blank"
+  go.rel = "noopener noreferrer"
   if (ref.href && /^https?:\/\//.test(ref.href)) {
-    const go = document.createElement("a")
-    go.className = "hmtc-cite-panel-go"
     go.href = ref.href
-    go.target = "_blank"
-    go.rel = "noopener noreferrer"
-    go.textContent = "Open source record →"
-    actions.appendChild(go)
+    go.textContent = citationGoLabel(ref.href)
+  } else {
+    go.href = "https://heavymetalindex.com"
+    go.textContent = "Explore the evidence base →"
   }
+  actions.appendChild(go)
 
   const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.detail]
     .filter(Boolean)
