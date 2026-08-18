@@ -6,7 +6,7 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 updated: 2026-08-02
 ---
 
-<section style="background:#9f2727;color:#fff;width:100%" data-no-cite>
+<section style="background:linear-gradient(180deg,#8c2222 0,#9f2727 150px),#9f2727;color:#fff;width:100%" data-no-cite>
   <div style="max-width:1760px;margin:0 auto;padding:96px 48px 88px;display:grid;grid-template-columns:minmax(0,1.35fr) 400px;gap:96px;align-items:start" class="hmtc-home-hero-grid">
     <div style="min-width:0">
       <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:20px">Published standard &middot; 2026 Edition</div>

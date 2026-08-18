@@ -1,0 +1,20 @@
+{
+  "panel_version": "2026-08-11",
+  "unit_expectation": "ppb (µg/kg), expressed in each product row's native basis",
+  "required": [
+    { "key": "Pb", "label": "Lead", "kind": "total element" },
+    { "key": "Cd", "label": "Cadmium", "kind": "total element" },
+    { "key": "tAs", "label": "Total arsenic", "kind": "total element" },
+    { "key": "iAs", "label": "Inorganic arsenic", "kind": "species-specific" },
+    { "key": "tHg", "label": "Total mercury", "kind": "total element" },
+    { "key": "Ni", "label": "Nickel", "kind": "total element" },
+    { "key": "Sn", "label": "Tin", "kind": "total element" },
+    { "key": "Al", "label": "Aluminum", "kind": "total element" },
+    { "key": "Cr", "label": "Total chromium", "kind": "total element" },
+    { "key": "Cr-VI", "label": "Hexavalent chromium", "kind": "species-specific" }
+  ],
+  "completion_rule": "Every required analyte must have a numeric HMTc limit in the product's native basis. Missing rows, dashes, monitored-only entries, not-in-scope entries, and not-material designations are incomplete.",
+  "additional_reportable_species": [
+    { "key": "MeHg", "label": "Methylmercury", "note": "May be required by a category; it does not replace total mercury." }
+  ]
+}

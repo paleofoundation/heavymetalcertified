@@ -7,6 +7,13 @@
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
       { "sel": "header", "prop": "position", "want": "sticky" }
     ],
+    "/analytes": [
+      { "sel": "article a[data-slug=\"analytes/inorganic-arsenic\"]", "prop": "count", "want": 1, "note": "the species-specific iAs reference page is present in the ten-analyte panel" },
+      { "sel": "article a[data-slug=\"analytes/hexavalent-chromium\"]", "prop": "count", "want": 1, "note": "the species-specific Cr(VI) reference page is present in the ten-analyte panel" }
+    ],
+    "/regulations": [
+      { "sel": ".hmi-related-title", "prop": "font-weight", "want": "500", "note": "See also is a label, not bold; assert it on a page where the conditional component renders." }
+    ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
       { "sel": "sup.cite > a", "prop": "color", "want": "#9f2727", "src": "COMPONENTS §2", "note": "the citation marker is the burgundy accent, NOT the blue link colour. If this reads #1c43ad an older internal-link rule is winning — delete it, do not out-specify (FIDELITY §1)." },
@@ -14,11 +21,13 @@
       { "sel": "a[download]", "prop": "count", "want": 1, "note": "the Download PDF button must be present" }
     ],
     "/standards/infant-formula-powder": [
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "count", "want": 1, "note": "an incomplete ten-analyte standard must carry one visible audit flag" },
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "border-left-color", "want": "#9f2727" },
+      { "sel": "[data-panel-audit=\"incomplete\"]", "prop": "background-color", "want": "#fdf4f3" },
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
       { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "no-bold rule (CONTENT-RULES §7): <strong>/<b>/** render at normal weight." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
-      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
-      { "sel": ".hmi-related-title", "prop": "font-weight", "want": "500", "note": "See also is a label, not bold." }
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
     ]
   }
 }

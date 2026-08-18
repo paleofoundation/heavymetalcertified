@@ -45,7 +45,10 @@ body[data-slug="index"] .hmi-topnav-shell {
 // Hero
 // ---------------------------------------------------------------------------
 .hmi-band--hero {
-  background: var(--burg);
+  // Very subtle depth: a slightly darker band across the top (nearest the nav)
+  // fading to the base red — a restrained take on refinedesign.ai's
+  // darker-overlay-behind-the-header. Base --burg preserved as fallback + endpoint.
+  background: linear-gradient(180deg, color-mix(in srgb, var(--burg) 88%, #000) 0, var(--burg) 140px), var(--burg);
   color: #fff;
   padding: 4.5rem 0 4rem;
 

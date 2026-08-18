@@ -45,6 +45,19 @@
   font-weight: 600;
 }
 
+// ORCID iD shown as the official green iD glyph (journal-byline convention),
+// not the spelled-out number: no underline, aligned with the byline text.
+.hmi-evidence-orcid {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: text-bottom;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  .orcid-id-icon { display: block; width: 15px; height: 15px; }
+  &:hover { opacity: 0.82; }
+}
+
 .hmi-evidence-badges {
   display: inline-flex;
   flex-wrap: wrap;

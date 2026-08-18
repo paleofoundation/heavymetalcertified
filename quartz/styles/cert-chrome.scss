@@ -156,6 +156,14 @@ header.hmi-topnav-shell {
   z-index: 80;
   background: #fffdfb;
   border-bottom: 1px solid #e8e1db;
+  // Very subtle depth: the sticky bar lifts off the page once you scroll (a
+  // restrained take on refinedesign.ai's darker-band-behind-the-header). The
+  // `.scrolled` class is toggled on <body> by scrolltotop.inline.ts. Flat at
+  // rest, so the design canon is untouched until the reader actually moves.
+  transition: box-shadow 0.25s ease;
+}
+body.scrolled header.hmi-topnav-shell {
+  box-shadow: 0 1px 0 rgba(159, 39, 39, 0.06), 0 6px 16px rgba(26, 29, 36, 0.08);
 }
 header.hmi-topnav-shell::after {
   // v3's 2px progress rule under the header
@@ -414,7 +422,7 @@ header.hmi-topnav-shell::after {
 //  v3 INTERIOR HERO BAND (Heavy Metal Certified v3.dc.html 331–367)
 // ============================================================
 .hmtc-heroband-shell { width: 100%; }
-.hmtc-heroband { background: #9f2727; color: #fff; width: 100%; }
+.hmtc-heroband { background: linear-gradient(180deg, #8c2222 0, #9f2727 120px), #9f2727; color: #fff; width: 100%; }
 .hmtc-heroband-inner {
   max-width: 1760px;
   margin: 0 auto;
@@ -480,6 +488,18 @@ header.hmi-topnav-shell::after {
   color: rgba(255, 255, 255, 0.8);
 }
 .hmtc-hb-stamp { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: rgba(255, 255, 255, 0.72); }
+// ORCID iD shown as the official green iD glyph (journal-byline convention), not
+// the spelled-out number: no underline, collapses to the icon's box.
+.hmtc-hb-orcid {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+  .orcid-id-icon { display: block; width: 16px; height: 16px; }
+  &:hover { opacity: 0.82; }
+}
 
 .hmtc-hb-snap { border: 1px solid rgba(255, 255, 255, 0.22); align-self: start; }
 .hmtc-hb-snap-head {

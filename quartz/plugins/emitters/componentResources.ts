@@ -5,8 +5,11 @@ import { QuartzEmitterPlugin } from "../types"
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
+// @ts-ignore
+import scrollToTopScript from "../../components/scripts/scrolltotop.inline"
 import styles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
+import scrollToTopStyle from "../../components/styles/scrolltotop.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import {
@@ -84,6 +87,15 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     componentResources.afterDOMLoaded.push(popoverScript)
     componentResources.css.push(popoverStyle)
   }
+
+  // Scroll-to-top button. Its markup is rendered body-level (after <Footer> in
+  // renderPage.tsx) so no page layout can hide it — the home page hides the
+  // afterBody `.page-footer`, and position:fixed does not escape a display:none
+  // ancestor, so a layout mount would vanish there. Because it lives outside the
+  // layout arrays, its script + CSS are shipped here, unconditionally, the same
+  // way the popover behaviour is.
+  componentResources.afterDOMLoaded.push(scrollToTopScript)
+  componentResources.css.push(scrollToTopStyle)
 
   if (cfg.analytics?.provider === "google") {
     const tagId = cfg.analytics.tagId
