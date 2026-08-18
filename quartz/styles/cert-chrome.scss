@@ -25,13 +25,25 @@
 // ============================================================
 //  PAGE GROUND — the design's warm near-white surface
 // ============================================================
-// The design's dominant surface is #fffdfb (66 uses across the file); #faf7f4
-// is the shaded-section variant (27 uses). The single `body { background:
-// #ede7e2 }` rule is an outermost fallback that content sits on top of and
-// hides — it is NOT the visible page colour, and an earlier version of this
-// file wrongly adopted it, tinting the whole page greige. #fffdfb is the
-// correct, design-true ground. !important beats base.scss's var(--light).
-body { background: #fffdfb !important; }
+// The design stacks two near-whites: the content canvas is #faf7f4 (cream),
+// and cards, panels and the analyte-panel cells sit ON that canvas at #fffdfb
+// (white). Walking the design's nesting, the ground directly behind the
+// analyte-panel cards is `main > div[background:#faf7f4]`; the cards are
+// #fffdfb. That #faf7f4-behind-#fffdfb pairing is ΔE 2.12 — the visible
+// separation that makes the panel read as cards on a surface.
+//
+// An earlier revision of this rule read the palette by frequency (#fffdfb has
+// the most uses, because there are many cards) and concluded #fffdfb was the
+// page ground, forcing the whole body to #fffdfb. That collapsed the design's
+// two levels into one: canvas #fffdfb == card #fffdfb, ΔE 0, and the analyte
+// panel stopped standing out from its background. The canvas is #faf7f4, not
+// #fffdfb; the cards keep their own explicit #fffdfb and now separate from it.
+//
+// (#ede7e2 is the design's outermost body, mostly covered by the #faf7f4
+// canvas wrapper; #faf7f4 is what content actually sits on.) !important beats
+// base.scss's var(--light); dropping it in favour of the --light token is the
+// architectural follow-up tracked in OI-20260817-cert-two-color-systems.
+body { background: #faf7f4 !important; }
 
 // ============================================================
 //  CONTENT TYPOGRAPHY — match the v3 body treatment

@@ -3,7 +3,8 @@
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
     "/": [
-      { "sel": "body", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": "body", "prop": "background-color", "want": "#faf7f4", "src": "design nesting: main > div[background:#faf7f4] is the content canvas that the analyte cards sit on" },
+      { "sel": ".hmtc-panel-grid a", "prop": "background-color", "want": "#fffdfb", "note": "cards stay white on the cream canvas; #faf7f4/#fffdfb is ΔE 2.12 — if this ever equals body, the panel has lost its separation" },
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
       { "sel": "header", "prop": "position", "want": "sticky" }
     ],
