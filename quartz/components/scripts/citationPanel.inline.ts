@@ -28,6 +28,7 @@ type CitationPanelRef = {
   title: string
   href: string
   detail: string
+  citation: string
   kind: string
 }
 
@@ -54,21 +55,34 @@ function indexCitationPanelReferences(content: Element): Map<string, CitationPan
     let title = ""
     let href = ""
     let detail = ""
+    let citation = ""
     if (mid) {
       const titleLink = mid.querySelector(":scope > a") as HTMLAnchorElement | null
       const titleSpan = mid.querySelector(":scope > span") as HTMLElement | null
       title = citationPanelTextOf(titleLink) || citationPanelTextOf(titleSpan)
       href = titleLink?.getAttribute("href") || ""
-      const p = mid.querySelector("p")
-      detail = citationPanelTextOf(p)
+
+      // A row's middle cell carries up to two <p>s: a monospace bibliographic line
+      // (authors · journal · year · DOI) and a prose line stating what the source
+      // establishes. "What it establishes" must show the FINDING, not the bib line —
+      // so the monospace <p> is the citation and the last non-monospace <p> is the
+      // finding. Unlinked/older rows collapse both into a single prose <p>, which
+      // then serves as the finding with no separate citation byline.
+      const ps = Array.from(mid.querySelectorAll(":scope > p")) as HTMLElement[]
+      const isMono = (p: HTMLElement) => /monospace|IBM Plex Mono/i.test(p.getAttribute("style") || "")
+      const bibP = ps.find(isMono) || null
+      const findingP = [...ps].reverse().find((p) => p !== bibP) || bibP
+      detail = citationPanelTextOf(findingP)
+      citation = bibP && bibP !== findingP ? citationPanelTextOf(bibP) : ""
+
       if (!href) {
-        // Unlinked title (legal document, standard): fall back to any external
-        // link the detail line carries (e.g. the doi.org domain link).
-        const doiLink = p?.querySelector('a[href^="http"]') as HTMLAnchorElement | null
+        // Unlinked title (legal document, standard): fall back to any external link
+        // either <p> carries (e.g. the doi.org domain link).
+        const doiLink = mid.querySelector('p a[href^="http"]') as HTMLAnchorElement | null
         href = doiLink?.getAttribute("href") || ""
       }
     }
-    map.set(num, { num, title, href, detail, kind: citationPanelTextOf(kindEl) })
+    map.set(num, { num, title, href, detail, citation, kind: citationPanelTextOf(kindEl) })
   })
   return map
 }
@@ -258,7 +272,12 @@ function citationRenderActions(actions: HTMLElement, ref: CitationPanelRef, deep
   } else {
     kids.push(citationActionLink(HMI_SITE, "Explore the evidence base →", "primary"))
   }
-  const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.detail].filter(Boolean).join(" ").trim()
+  // Copy a proper citation (title + bibliographic line), not the finding gloss;
+  // fall back to the finding when a row carries no separate bib line.
+  const copyText = [ref.num ? `[${ref.num}]` : "", ref.title, ref.citation || ref.detail]
+    .filter(Boolean)
+    .join(" ")
+    .trim()
   if (copyText && navigator.clipboard) kids.push(citationCopyButton(copyText))
   actions.replaceChildren(...kids)
 }
@@ -303,6 +322,16 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
     title.textContent = ref.title
   }
   frag.appendChild(title)
+
+  // Bibliographic byline — authors · journal · year · DOI, the citation itself.
+  // Sits between the title (which document) and "What it establishes" (the finding)
+  // so the record reads as a study sheet and the finding line is never the bib line.
+  if (ref.citation) {
+    const cite = document.createElement("div")
+    cite.className = "hmtc-cite-panel-detail"
+    cite.textContent = ref.citation
+    frag.appendChild(cite)
+  }
 
   // The finding, front and centre — what this source actually establishes, so the
   // reader can verify the claim without leaving. This is the substance; the title
