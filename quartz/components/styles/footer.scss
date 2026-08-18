@@ -109,9 +109,11 @@ footer.site-footer {
   text-transform: uppercase;
 }
 
-.site-footer-column li + li {
-  margin-top: 0.7rem;
-}
+// Row spacing between footer links is owned by the column's flex `gap: 9px`
+// (cert-chrome.scss, matching the design's `flex-direction:column;gap:9px`).
+// This file's older per-item `margin-top: 0.7rem` stacked ON TOP of that gap,
+// rendering 20.2px between links where the design is 9px. Removed so the gap
+// is the single source of row spacing.
 
 .site-footer-column a {
   color: rgba(255, 255, 255, 0.82) !important;
