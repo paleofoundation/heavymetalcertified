@@ -24,14 +24,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">This document describes the Heavy Metal Tested &amp; Certified (HMTc) program plainly and completely, for counsel and other professional readers who need an accurate picture before relying on the program or recommending it to a client. It is deliberately not a sales document. It states what the program is, how it works, what a licensee actually agrees to, and — with equal care — what the program does not do, where its commercial and structural conflicts lie, and how those are disclosed and mitigated. It is the first of two documents: this primer describes the program; a companion brief, <em>The Evidence a Jury Will See</em>, makes the case for why a brand would enroll and how the program bears on heavy-metal litigation. Read this one first. Nothing here should be a surprise later; that is the point of writing it this way.</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing &middot; June 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">This is a complete and neutral description of the program &mdash; what it certifies, what a licensee signs, and, with equal care, what it does not claim and where its conflicts lie. Nothing here should be a surprise later.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">This document describes the Heavy Metal Tested &amp; Certified (HMTc) program plainly and completely, for counsel and other professional readers who need an accurate picture before relying on the program or recommending it to a client. It is deliberately not a sales document. It states what the program is, how it works, what a licensee actually agrees to, and — with equal care — what the program does not do, where its commercial and structural conflicts lie, and how those are disclosed and mitigated. It is the first of two documents: this primer describes the program; a companion brief, <em>The Evidence a Jury Will See</em>, makes the case for why a brand would enroll and how the program bears on heavy-metal litigation. Read this one first. Nothing here should be a surprise later; that is the point of writing it this way.</p>
 
 ## What HMTc is, in one paragraph
 

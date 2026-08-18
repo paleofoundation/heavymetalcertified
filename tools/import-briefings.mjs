@@ -305,11 +305,11 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
 
   const citeStr =`Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Institute of Contaminant Standards (ICS).`
 
-  const bodyStr = `## Abstract
+  const bodyStr = `${claimCallout ? claimCallout + "\n\n" : ""}## Abstract
 
 ${abstractHtml}
 
-${claimCallout ? claimCallout + "\n\n" : ""}${argument}
+${argument}
 
 ## References
 

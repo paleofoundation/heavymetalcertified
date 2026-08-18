@@ -24,14 +24,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">On February 24, 2026, a unanimous Supreme Court vacated a manufacturer's trial victory and returned a baby-food heavy-metal case to Texas state court. The 2026 Edition of the HMTc Infant and Child Foods Program Manual is published today. This briefing explains why the two events are connected, and what a defensible evidentiary posture now requires.</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 2 &middot; May 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">A manufacturer won a heavy-metal case at trial, and the win was erased &mdash; not on the science, but on the courthouse. After Palmquist these cases are tried before state juries, with the retailer anchored in the room.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">On February 24, 2026, a unanimous Supreme Court vacated a manufacturer's trial victory and returned a baby-food heavy-metal case to Texas state court. The 2026 Edition of the HMTc Infant and Child Foods Program Manual is published today. This briefing explains why the two events are connected, and what a defensible evidentiary posture now requires.</p>
 
 ## The decision
 

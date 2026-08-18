@@ -24,14 +24,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">In February 2021, a subcommittee of the House Committee on Oversight and Reform did the thing a congressional inquiry is built to do. It took a body of accumulating toxicological evidence, years in the making, and converted it into a public-policy artifact. The staff report was titled "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury," and it named four metals [1]. Industry anchored to those four. So did the regulators who drafted the FDA's Closer to Zero program [2], and so did the first generation of third-party heavy-metal certification.</p><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">That anchoring was rational in 2021. Four metals were what the subpoenaed data covered and what the headline could carry. But a certification mark is not a headline, and the thing about an anchor is that it holds you in place while the water moves. Five years on, the water has moved. The question this briefing puts to anyone who certifies, buys, or sells on a heavy-metals claim is narrow and uncomfortable: what does a four-metal certificate actually certify in 2026, when the regulators who write the rules your products ship under are already working from a list of eight?</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 1 &middot; June 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The regulators moved to eight metals. A certificate that stayed at four certifies the past &mdash; and hands the brands wearing it a blind spot they pay for without being told it is there.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">In February 2021, a subcommittee of the House Committee on Oversight and Reform did the thing a congressional inquiry is built to do. It took a body of accumulating toxicological evidence, years in the making, and converted it into a public-policy artifact. The staff report was titled "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury," and it named four metals [1]. Industry anchored to those four. So did the regulators who drafted the FDA's Closer to Zero program [2], and so did the first generation of third-party heavy-metal certification.</p><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">That anchoring was rational in 2021. Four metals were what the subpoenaed data covered and what the headline could carry. But a certification mark is not a headline, and the thing about an anchor is that it holds you in place while the water moves. Five years on, the water has moved. The question this briefing puts to anyone who certifies, buys, or sells on a heavy-metals claim is narrow and uncomfortable: what does a four-metal certificate actually certify in 2026, when the regulators who write the rules your products ship under are already working from a list of eight?</p>
 
 ## While the frame held still
 

@@ -24,14 +24,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>In 2009 there was no seal for the question shoppers most wanted answered about their food. A nonprofit with a butterfly changed that in about five years, and in doing so beat a thirty-year-old federal seal at a game the federal seal was never set up to play. This briefing is about how that happened, why it was not luck, and why the same opening is sitting wide open in heavy metals right now — the word unclaimed, the visual undefined, the demand already standing in the aisle.</em></p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing &middot; June 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The heavy-metals category will be owned the way non-GMO was &mdash; by whoever plants the word and the picture first. Right now the word is unclaimed, the visual is empty, and the demand is already standing in the aisle.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>In 2009 there was no seal for the question shoppers most wanted answered about their food. A nonprofit with a butterfly changed that in about five years, and in doing so beat a thirty-year-old federal seal at a game the federal seal was never set up to play. This briefing is about how that happened, why it was not luck, and why the same opening is sitting wide open in heavy metals right now — the word unclaimed, the visual undefined, the demand already standing in the aisle.</em></p>
 
 ## The word Organic never owned
 

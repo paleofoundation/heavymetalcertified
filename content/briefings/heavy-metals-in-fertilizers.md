@@ -26,14 +26,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The heavy metals a laboratory finds in a finished food are, more often than a factory audit implies, an inheritance from the field. Cadmium arrives in the phosphate rock that fertilizer is made from; cadmium, lead, and nickel arrive again in the sewage-sludge and compost amendments spread as soil conditioners; and where irrigation runs on municipal wastewater, several metals arrive together in the water itself. None of this is a manufacturing defect. It is the slow loading of agricultural soil across the decades of intensive fertilization that followed 1960, and the crop draws the metal back out of the soil years or decades later. The governments that regulate these inputs — Canada, the European Union, the United States, China — do not write product-concentration caps in isolation; they reason in cumulative kilograms per hectare over a forty-five-year horizon, precisely because the contamination persists. This briefing traces that upstream pathway and the standards written to govern it, and sets out why a finished-product certificate that tests only the food, only for four metals, and only once is measuring the end of a process it never looked up.</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing &middot; August 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The metal in the food is the tail of a process that began in the soil, often before the crop was planted. The governments that regulate the fertilizer reason in decades and in cumulative loading. A certificate that tests the product once, for four metals, is blind to a pathway it never measured.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The heavy metals a laboratory finds in a finished food are, more often than a factory audit implies, an inheritance from the field. Cadmium arrives in the phosphate rock that fertilizer is made from; cadmium, lead, and nickel arrive again in the sewage-sludge and compost amendments spread as soil conditioners; and where irrigation runs on municipal wastewater, several metals arrive together in the water itself. None of this is a manufacturing defect. It is the slow loading of agricultural soil across the decades of intensive fertilization that followed 1960, and the crop draws the metal back out of the soil years or decades later. The governments that regulate these inputs — Canada, the European Union, the United States, China — do not write product-concentration caps in isolation; they reason in cumulative kilograms per hectare over a forty-five-year horizon, precisely because the contamination persists. This briefing traces that upstream pathway and the standards written to govern it, and sets out why a finished-product certificate that tests only the food, only for four metals, and only once is measuring the end of a process it never looked up.</p>
 
 ## The field, not the factory
 

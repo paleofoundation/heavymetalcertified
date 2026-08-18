@@ -27,14 +27,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A dog or a cat eats one manufactured food, from one recipe, every day for a decade or more. It is the closest thing in the household to an infant on formula: a sole-source diet, delivered to a small body, without the dietary variety that dilutes any single exposure. Yet the heavy-metal limits that govern that food are not the limits that govern food for people. Pet food is regulated as animal feed, and feed limits are written with a wide margin above the human-food maxima the same governments enforce. This briefing sets out what the published literature actually measures in commercial pet food, why each metal matters for a companion animal, and why the Heavy Metal Tested &amp; Certified program certifies pet food to the stricter human-food limit rather than the feed floor it is legally allowed to meet.</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; Category 17 &middot; August 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Feed law lets a complete pet food carry up to 5,000 &micro;g/kg of lead and 2,000 &micro;g/kg of cadmium. The human food it is made from is held to a small fraction of that. HMTc certifies pets to the human number.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A dog or a cat eats one manufactured food, from one recipe, every day for a decade or more. It is the closest thing in the household to an infant on formula: a sole-source diet, delivered to a small body, without the dietary variety that dilutes any single exposure. Yet the heavy-metal limits that govern that food are not the limits that govern food for people. Pet food is regulated as animal feed, and feed limits are written with a wide margin above the human-food maxima the same governments enforce. This briefing sets out what the published literature actually measures in commercial pet food, why each metal matters for a companion animal, and why the Heavy Metal Tested &amp; Certified program certifies pet food to the stricter human-food limit rather than the feed floor it is legally allowed to meet.</p>
 
 ## Two rulebooks for the same bowl
 

@@ -27,14 +27,14 @@ connections:
   - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
-## Abstract
-
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The convention that heavy-metal safety means four metals, lead, cadmium, arsenic, and mercury, traces to a single document: the 2021 staff report of a United States House Oversight subcommittee on baby food. In the years since, the regulatory floor has moved past four. The European Union now sets binding food limits for nickel, the Australia New Zealand Food Standards Code limits aluminium and tin, and the expert bodies that regulators rely on, EFSA, JECFA, and IARC, have each assessed the hazard of metals the four-metal frame leaves out. This briefing explains why the Heavy Metal Tested &amp; Certified program certifies against eight metals, expressed as ten analytes once inorganic arsenic, methylmercury, and hexavalent chromium are split out, and why a mark still frozen at four now leaves an exposure that the brand, not the certifier, absorbs.</p>
-
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 3 &middot; August 2026</span></div>
   <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The four-metal standard is an inheritance from one 2021 congressional report. Regulators have since moved to eight. A certificate that still stops at four is silent on the metals the law now names, and it is the brand that carries the silence.</p>
 </div>
+
+## Abstract
+
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The convention that heavy-metal safety means four metals, lead, cadmium, arsenic, and mercury, traces to a single document: the 2021 staff report of a United States House Oversight subcommittee on baby food. In the years since, the regulatory floor has moved past four. The European Union now sets binding food limits for nickel, the Australia New Zealand Food Standards Code limits aluminium and tin, and the expert bodies that regulators rely on, EFSA, JECFA, and IARC, have each assessed the hazard of metals the four-metal frame leaves out. This briefing explains why the Heavy Metal Tested &amp; Certified program certifies against eight metals, expressed as ten analytes once inorganic arsenic, methylmercury, and hexavalent chromium are split out, and why a mark still frozen at four now leaves an exposure that the brand, not the certifier, absorbs.</p>
 
 ## Where the big four came from
 
