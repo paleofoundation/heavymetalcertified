@@ -99,22 +99,41 @@ export function renderStruggleSection({ compiledDir, occurrence, categoryDirName
     }
   }
 
-  const H2 = `font-family:Lora,serif;font-weight:400;font-size:28px;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 18px`
-  const head = `<section style="margin-bottom:44px"><h2 style="${H2}">What is likely to struggle to meet this standard</h2>`
+  // v3 canonical section chrome (canvas isManual #hard). Lora 400 30px h2 with the
+  // hairline underline; the section id feeds the "On this page" rail. NO bold — the
+  // analyte name is a Lora accordion heading, never a font-weight lead-in.
+  const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
+  const head = `<section style="margin-bottom:52px"><h2 id="hard" style="${H2}">What is likely to struggle to meet this standard</h2>`
 
   if (byAnalyte.size === 0) {
-    return `${head}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 12px">On the published occurrence literature to date, no subcategory in ${esc(categoryName)} shows a systematic gap between typical market levels and the limit &mdash; the limit being the strictest government maximum for each product (Method v2.0). Certification is decided on a product&rsquo;s own tested result, not on a distribution; individual lots or suppliers can still exceed a limit.</p><p style="font-size:12px;line-height:1.6;color:#a9a1a1;max-width:80ch;margin:0">See <a href="/hard-to-meet" style="color:${LINK};text-decoration:none">the cross-category summary</a> of the ingredients that most often struggle.</p></section>`
+    return `${head}<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px">On the published occurrence literature to date, no subcategory in ${esc(categoryName)} shows a systematic gap between typical market levels and the limit &mdash; the limit being the strictest government maximum for each product (Method v2.0). Certification is decided on a product&rsquo;s own tested result, not on a distribution; individual lots or suppliers can still exceed a limit.</p><p style="font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0">See <a href="/hard-to-meet" style="color:${LINK}">the cross-category summary</a> of the ingredients that most often struggle.</p></section>`
   }
 
-  // order analytes by worst ratio, render one paragraph each
+  // Analyte pages for the "Analyte page →" link inside each accordion panel.
+  const ANALYTE_PAGE = { iAs: "/analytes/arsenic", tAs: "/analytes/arsenic", Al: "/analytes/aluminum", tHg: "/analytes/mercury", MeHg: "/analytes/mercury", Cd: "/analytes/cadmium", Pb: "/analytes/lead", Ni: "/analytes/nickel", Sn: "/analytes/tin" }
+
+  // One accordion row per analyte, worst ratio first — the canvas hardRows shape:
+  // a Lora summary carrying a +/− sign and the analyte name; the panel holds the
+  // mechanism prose, a mono multiplier · subcategory grid, and the analyte link.
   const order = [...byAnalyte.entries()].sort((a, b) => Math.max(...b[1].map((x) => x.ratio)) - Math.max(...a[1].map((x) => x.ratio)))
-  const blocks = order.map(([an, list]) => {
+  const rows = order.map(([an, list], i) => {
     list.sort((a, b) => b.ratio - a.ratio)
-    const items = list.map((x) => `${esc(x.name)} (typically ~${showRatio(x.ratio)}&times; the ${x.limit} ppb limit${x.thin ? ", thin data" : ""})`).join("; ")
-    return `<p style="font-size:13.5px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 14px"><span style="font-weight:500">${MECHANISM[an].name}.</span> ${MECHANISM[an].why} In this category: ${items}.</p>`
+    const items = list.map((x) =>
+      `<span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap;font-variant-numeric:tabular-nums">~${showRatio(x.ratio)}&times;</span><span style="font-size:13.5px;line-height:1.55;color:#736b6b">${esc(x.name)} <span style="color:#a9a1a1">(the ${x.limit} ppb limit)</span>${x.thin ? `<span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#c3b9b9"> thin data</span>` : ""}</span>`,
+    ).join("")
+    const link = ANALYTE_PAGE[an]
+      ? `<a href="${ANALYTE_PAGE[an]}" style="display:inline-block;margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:${LINK};text-decoration:none">Analyte page &rarr;</a>`
+      : ""
+    return `<details class="hmtc-mhard"${i === 0 ? " open" : ""}>
+<summary class="hmtc-mhard-sum"><span class="hmtc-mhard-sign" aria-hidden="true"></span><span class="hmtc-mhard-name">${esc(MECHANISM[an].name)}</span></summary>
+<div class="hmtc-mhard-panel">
+<p style="font-size:15.5px;line-height:1.76;color:#3f3a3a;margin:0 0 16px;max-width:78ch">${MECHANISM[an].why}</p>
+<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:7px 16px;align-items:baseline">${items}</div>${link}
+</div>
+</details>`
   }).join("\n")
 
-  const intro = `<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:80ch;margin:0 0 16px">These subcategories carry a natural or process background that runs above the limit &mdash; the limit being the strictest government maximum for the product, never a percentile of market data (Method v2.0). A product is not disqualified by this: only its own tested result decides certification, and a well-sourced lot can sit well below the market. What the pooled occurrence literature shows is where the work is &mdash; which ingredients demand exceptional sourcing.</p>`
-  const foot = `<p style="font-size:12px;line-height:1.6;color:#a9a1a1;max-width:80ch;margin:14px 0 0">Multipliers are the ratio of the pooled occurrence median to the published limit; occurrence characterises the market only and carries no compliance weight. See <a href="/hard-to-meet" style="color:${LINK};text-decoration:none">the cross-category summary</a>.</p>`
-  return `${head}${intro}${blocks}\n${foot}</section>`
+  const intro = `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 22px">These subcategories carry a natural or process background that runs above the limit &mdash; the limit being the strictest government maximum for the product, never a percentile of market data (Method v2.0). A product is not disqualified by this: only its own tested result decides certification, and a well-sourced lot can sit well below the market. What the pooled occurrence literature shows is where the work is &mdash; which ingredients demand exceptional sourcing.</p>`
+  const foot = `<p style="font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:18px 0 0">Multipliers are the ratio of the pooled occurrence median to the published limit; occurrence characterises the market only and carries no compliance weight. See <a href="/hard-to-meet" style="color:${LINK}">the cross-category summary</a>.</p>`
+  return `${head}${intro}<div class="hmtc-mhard-list">${rows}</div>${foot}</section>`
 }

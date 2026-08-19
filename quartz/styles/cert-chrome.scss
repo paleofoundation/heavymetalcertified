@@ -930,3 +930,38 @@ sup.hmtc-cite {
   white-space: nowrap;
   margin-left: 0.5px;
 }
+
+// ============================================================
+//  PROGRAM-MANUAL "What will struggle" accordion (canvas isManual #hard).
+//  A no-JS <details> per analyte: a Lora summary carrying a +/- sign and the
+//  analyte name; the panel holds the mechanism prose + a multiplier grid.
+//  Emitted by tools/lib/struggle-section.mjs on every Program Manual page, so
+//  the styling lives here once (canonical). Values ported from the approved
+//  Claude Design canvas; the sign flips on [open]. No bold — the analyte name
+//  is Lora, not a font-weight lead-in.
+// ============================================================
+.hmtc-mhard-list { border-bottom: 1px solid #e8e1db; margin: 0 0 4px; }
+.hmtc-mhard { border-top: 1px solid #e8e1db; }
+.hmtc-mhard-sum {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr);
+  gap: 0 32px;
+  align-items: baseline;
+  padding: 26px 0;
+}
+.hmtc-mhard-sum::-webkit-details-marker { display: none; }
+.hmtc-mhard-sign,
+.hmtc-mhard-name { font-family: Lora, serif; font-size: 22px; color: #9f2727; }
+.hmtc-mhard-sign { line-height: 1.3; }
+.hmtc-mhard-name { line-height: 1.34; }
+.hmtc-mhard-sign::before { content: "+"; }
+.hmtc-mhard[open] .hmtc-mhard-sign::before { content: "\2212"; } // minus
+.hmtc-mhard-panel { padding: 0 0 28px 46px; }
+// The panel prose is 15.5px, tighter than the 16.5px reading-surface default; the
+// sitewide p rule is !important, so match it here to keep the panel copy at spec.
+.proof:not(.proof-home) .wiki-content .hmtc-mhard-panel p {
+  font-size: 15.5px !important;
+  line-height: 1.76 !important;
+}

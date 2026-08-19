@@ -40,8 +40,9 @@ const WARN_ONLY = process.argv.includes("--warn-only")
 const ALL_BLOCKING = process.argv.includes("--all")
 
 // The reading surface where "no bolded text anywhere" is enforced hard. These are
-// the data pages a regulator / brand-legal reader audits.
-const BLOCKING_DIRS = ["standards", "regulations"]
+// the data pages a regulator / brand-legal reader audits. Program manuals are the
+// bound, citable editions of the standards — the same audience, the same hard rule.
+const BLOCKING_DIRS = ["standards", "regulations", "manuals"]
 // Prose surfaces held to the same rule, advisory until their backlog is drained.
 const ADVISORY_DIRS = ["briefings", "articles", "program", "brands", "why-we-limit"]
 
@@ -99,6 +100,37 @@ function walk(dir, cb) {
 
 walk(CONTENT, lint)
 
+// ---- Program-manual structural conformance ---------------------------------
+// Every Program Manual page must be the canonical v3 shape emitted by
+// tools/lib/manual-page.mjs: hero + rails driven by frontmatter (never a
+// hand-rolled hero), and the canonical body sections. This catches a hand-edited
+// or off-generator manual that would otherwise drift silently from the design.
+// See docs/design-canon/MANUAL-PAGE.md and [[project_manual_v3_canonical_design]].
+const MANUALS = path.join(CONTENT, "manuals")
+let manualsChecked = 0
+if (fs.existsSync(MANUALS)) {
+  for (const f of fs.readdirSync(MANUALS)) {
+    if (!f.endsWith(".md") || f === "index.md") continue // index.md is the manuals-index page, not a manual
+    manualsChecked++
+    const rel = path.relative(repoRoot, path.join(MANUALS, f))
+    const raw = fs.readFileSync(path.join(MANUALS, f), "utf8")
+    const fmEnd = raw.indexOf("\n---", 3)
+    const fm = fmEnd === -1 ? "" : raw.slice(0, fmEnd)
+    const body = fmEnd === -1 ? raw : raw.slice(fmEnd)
+    // The hero title is the HeroBand (frontmatter `title`); a body <h1> is the old
+    // duplicate-title defect.
+    if (/<h1[\s>]/i.test(body)) blocking.push(`${rel}  hand-rolled <h1> in body — the manual hero is the HeroBand (frontmatter title); remove it (regenerate via tools/lib/manual-page.mjs)`)
+    // Frontmatter must drive the hero dek, the page-snapshot card, and the rail.
+    for (const key of ["description:", "snapshot:", "connections:"]) {
+      if (!new RegExp(`(^|\\n)${key}`).test(fm)) blocking.push(`${rel}  frontmatter missing \`${key}\` (canonical manual hero/rail contract; regenerate via tools/lib/manual-page.mjs)`)
+    }
+    // The canonical body sections, each an <h2> carrying the anchor id.
+    for (const id of ["scope", "matrix", "hard", "edition"]) {
+      if (!new RegExp(`<h2 id="${id}"`).test(body)) blocking.push(`${rel}  missing canonical section <h2 id="${id}"> (regenerate via tools/lib/manual-page.mjs)`)
+    }
+  }
+}
+
 // ---- Report -----------------------------------------------------------------
 if (advisory.length) {
   console.warn(`design-lint: ${advisory.length} advisory no-bold finding(s) (non-blocking):`)
@@ -118,6 +150,7 @@ if (blocking.length) {
 
 console.log(
   `design-lint: OK — ${scanned} reading-surface page(s) scanned, no bold in ${BLOCKING_DIRS.join("/")}` +
+    `; ${manualsChecked} program manual(s) conform to the canonical v3 shape` +
     (advisory.length ? ` (${advisory.length} advisory)` : "") +
     ".",
 )
