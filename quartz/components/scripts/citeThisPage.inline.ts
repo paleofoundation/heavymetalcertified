@@ -54,7 +54,7 @@ function bind(root: HTMLElement) {
       const text = citationText.innerText.trim()
       const ok = await copyText(text)
       if (copyStatus) {
-        copyStatus.textContent = ok ? "Copied." : "Copy failed — select and copy manually."
+        copyStatus.textContent = ok ? "Copied." : "Copy failed. Select and copy manually."
         copyStatus.dataset.state = ok ? "ok" : "error"
         setTimeout(() => {
           copyStatus.textContent = ""

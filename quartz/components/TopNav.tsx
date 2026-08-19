@@ -34,7 +34,7 @@ export default (() => {
 
     return (
       <div class={classNames(displayClass, "hmtc-bar")}>
-        <a class="hmtc-brand" href={baseDir} aria-label={`${wordmark} — home`}>
+        <a class="hmtc-brand" href={baseDir} aria-label={`${wordmark} home`}>
           <img
             class="hmtc-mark"
             src={`${baseDir}/static/hmtc-mark-red.svg`}

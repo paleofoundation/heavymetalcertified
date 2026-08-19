@@ -131,6 +131,27 @@ if (fs.existsSync(MANUALS)) {
   }
 }
 
+// ---- Hand-maintained nav copy: no em dashes --------------------------------
+// The sitewide language rule (docs/design-canon/CONTENT-RULES.md §7, "Avoid em
+// dashes") is enforced at the content layer by tools/dedash-content.mjs, but that
+// sweep only touches content/**. The mega-menu copy in
+// quartz/components/generated/navPanels.ts is hand-maintained (build-nav-panels is
+// NOT in prebuild — see [[project_cert_nav_hand_maintained]]), renders on EVERY
+// page, and is therefore the one hand-authored surface most likely to reintroduce
+// an em dash site-wide. It is pure menu copy (headings + blurbs), never citation
+// text, so zero em dashes is the rule; rephrase with a colon/comma if one creeps in.
+const NAVPANELS = path.join(repoRoot, "quartz/components/generated/navPanels.ts")
+let navPanelsChecked = 0
+if (fs.existsSync(NAVPANELS)) {
+  navPanelsChecked = 1
+  const rel = path.relative(repoRoot, NAVPANELS)
+  fs.readFileSync(NAVPANELS, "utf8")
+    .split("\n")
+    .forEach((line, i) => {
+      if (/—|&mdash;/.test(line)) blocking.push(`${rel}:${i + 1}  em dash in nav copy — ${line.trim().slice(0, 90)} (canon: no em dashes; use a colon or comma)`)
+    })
+}
+
 // ---- Report -----------------------------------------------------------------
 if (advisory.length) {
   console.warn(`design-lint: ${advisory.length} advisory no-bold finding(s) (non-blocking):`)
@@ -151,6 +172,7 @@ if (blocking.length) {
 console.log(
   `design-lint: OK — ${scanned} reading-surface page(s) scanned, no bold in ${BLOCKING_DIRS.join("/")}` +
     `; ${manualsChecked} program manual(s) conform to the canonical v3 shape` +
+    (navPanelsChecked ? `; nav copy clean of em dashes` : "") +
     (advisory.length ? ` (${advisory.length} advisory)` : "") +
     ".",
 )

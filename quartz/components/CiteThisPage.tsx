@@ -40,7 +40,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     ? frontmatterString(frontmatter.updated) ?? frontmatterString(frontmatter.established)
     : undefined
   const year = (updated ?? today).slice(0, 4)
-  const shareText = `${title} — Heavy Metal Certified`
+  const shareText = `${title}, Heavy Metal Certified`
 
   return (
     <aside

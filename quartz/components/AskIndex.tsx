@@ -34,7 +34,7 @@ const AskIndex: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
                 Ask the Index
               </div>
               <div class="ask-index-subtitle">
-                Ask a question about heavy metals in food. Every answer is grounded in cited Heavy Metal Index pages — no outside knowledge, no hallucination. If the corpus doesn't carry evidence on your question, you'll see a "no evidence loaded" reply rather than a guess.
+                Ask a question about heavy metals in food. Every answer is grounded in cited Heavy Metal Index pages: no outside knowledge, no hallucination. If the corpus doesn't carry evidence on your question, you'll see a "no evidence loaded" reply rather than a guess.
               </div>
             </div>
             <button type="button" class="ask-index-close" aria-label="Close Ask the Index">

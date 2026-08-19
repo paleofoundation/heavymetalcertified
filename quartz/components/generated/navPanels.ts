@@ -40,7 +40,7 @@ export const navPanels: NavPanel[] = [
     panelLabel: "Standards",
     slug: "standards",
     blurb:
-      "Subcategory standards, each in its product's native basis. Published per subcategory the moment each is defensibly ready — never as a category-wide release.",
+      "Subcategory standards, each in its product's native basis. Published per subcategory the moment each is defensibly ready, never as a category-wide release.",
     groups: [
       {
         heading: "Seafood",
@@ -115,7 +115,7 @@ export const navPanels: NavPanel[] = [
       "Eight metals, ten analytes. Each page states, from the government and expert-body record and the occurrence data, why the metal is limited and why the program monitors it.",
     groups: [
       {
-        heading: "Tier 1 — zero-tolerance toxics",
+        heading: "Tier 1: zero-tolerance toxics",
         children: [
           { label: "Lead", slug: "analytes/lead" },
           { label: "Cadmium", slug: "analytes/cadmium" },
@@ -124,7 +124,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
       {
-        heading: "Tier 2 — capped to the government limit",
+        heading: "Tier 2: capped to the government limit",
         children: [
           { label: "Nickel", slug: "analytes/nickel" },
           { label: "Tin", slug: "analytes/tin" },
@@ -141,7 +141,7 @@ export const navPanels: NavPanel[] = [
     panelLabel: "Regulation references",
     slug: "regulations",
     blurb:
-      "The sovereign instruments the HMTc standards cite. Each records the primary-source maximum levels a standard adopts when that jurisdiction binds a limit — a record of law, never an HMTc threshold.",
+      "The sovereign instruments the HMTc standards cite. Each records the primary-source maximum levels a standard adopts when that jurisdiction binds a limit: a record of law, never an HMTc threshold.",
     groups: [
       {
         heading: "EU & international",
@@ -239,7 +239,7 @@ export const navPanels: NavPanel[] = [
     panelLabel: "Research analyses",
     slug: "articles",
     blurb:
-      "Analyses that apply the independent literature to the certification question — one per Heavy Metal Index finding, each citing the index one way.",
+      "Analyses that apply the independent literature to the certification question: one per Heavy Metal Index finding, each citing the index one way.",
     extraPrefixes: ["articles"],
     groups: [
       {

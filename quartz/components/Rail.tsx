@@ -125,7 +125,7 @@ export default (() => {
         .filter((c) => c.label)
     } else {
       if (fm.hmi_literature_link) {
-        conns.push({ label: "Heavy Metal Index — literature baseline", href: String(fm.hmi_literature_link) })
+        conns.push({ label: "Heavy Metal Index: literature baseline", href: String(fm.hmi_literature_link) })
       }
       conns.push({ label: "The standards register", href: `${base}/standards` })
       conns.push({ label: "How limits are derived", href: `${base}/program/structure` })

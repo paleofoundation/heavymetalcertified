@@ -38,7 +38,7 @@ const productTocLabels = new Map([
   ["Source Evidence Inventory", "Source evidence"],
   ["Extracted Formula Concentration Rows", "Structured values"],
   ["Structured Concentration Rows", "Structured values"],
-  ["Broad Product Context — Author-Scope Index", "Broad product context"],
+  ["Broad Product Context: Author-Scope Index", "Broad product context"],
   ["Broad Product Context", "Broad product context"],
   ["Internal Standards Boundary", "Standards boundary"],
   ["Evidence Used For This Row", "Evidence used"],
