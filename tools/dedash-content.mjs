@@ -27,14 +27,15 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { dedashText, DASH } from "./lib/dedash.mjs"
 
 const repoRoot = process.cwd()
 const CONTENT = path.join(repoRoot, "content")
 const CHECK = process.argv.includes("--check")
 
-// A spaced em dash: the em dash char (or &mdash;) with any surrounding spaces/&nbsp;.
-const DASH = /(?:\s|&nbsp;)*(?:—|&mdash;)(?:\s|&nbsp;)*/g
-const CONT = /^(and|but|so|or|nor|yet|including|with|because|though|although)\b/i
+// The em-dash → colon/comma transform (dedashText) and the DASH matcher are shared
+// with the JSON-LD sweep; see tools/lib/dedash.mjs. This file owns only the content
+// -file masking of exempt spans (citation reference-rows and code) below.
 // Private-use sentinels for masked (citation) spans — never occur in content, so
 // unmasking cannot collide with ordinary numbers in prose ("20 ppb").
 const M0 = ""
@@ -42,45 +43,6 @@ const M1 = ""
 const REF_ROW = /<div style="display:grid;grid-template-columns:42px minmax\(0,1fr\) 128px[\s\S]*?<\/span><\/div>/g
 const FENCE = /```[\s\S]*?```/g
 const INLINE_CODE = /`[^`\n]*`/g
-
-function dedashText(text) {
-  const ms = [...text.matchAll(DASH)]
-  if (!ms.length) return text
-  // Skip a standalone em dash that IS an element's whole content (>—<): that is a
-  // "no value" placeholder in a table cell, not prose — leave it exactly as is.
-  const skip = ms.map((m) => text[m.index - 1] === ">" && text[m.index + m[0].length] === "<")
-  const paired = new Array(ms.length).fill(false)
-  for (let i = 0; i + 1 < ms.length; i++) {
-    if (paired[i] || skip[i]) continue
-    let j = i + 1
-    while (j < ms.length && skip[j]) j++ // pair against the next NON-placeholder dash
-    if (j >= ms.length) break
-    const endA = ms[i].index + ms[i][0].length
-    const startB = ms[j].index
-    const between = text.slice(endA, startB)
-    // Two dashes in one clause (no sentence break or tag between) read as a
-    // parenthetical aside → set it off with commas, not two colons. Window is wide
-    // enough to catch a long regulator-list parenthetical ("… sets — the EU, the
-    // UK, Codex, … — converted into …").
-    if (startB - endA < 200 && !/[.;:!?<>]/.test(between)) {
-      paired[i] = true
-      paired[j] = true
-    }
-  }
-  let out = ""
-  let last = 0
-  ms.forEach((m, i) => {
-    let rep
-    if (skip[i]) rep = m[0] // placeholder — unchanged
-    else {
-      const after = text.slice(m.index + m[0].length)
-      rep = paired[i] ? ", " : CONT.test(after) ? ", " : ": "
-    }
-    out += text.slice(last, m.index) + rep
-    last = m.index + m[0].length
-  })
-  return out + text.slice(last)
-}
 
 function dedashFile(raw) {
   const masks = []
