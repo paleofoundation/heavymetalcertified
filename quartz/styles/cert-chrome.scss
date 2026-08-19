@@ -743,6 +743,20 @@ aside.snav { position: sticky; top: 92px; padding: 34px 0 48px !important; }
 //  v3 RIGHT RAIL — Connections + Verify box (585–599 in v3)
 // ============================================================
 aside.rail { position: sticky; top: 92px; padding: 38px 0 48px !important; display: block; }
+
+// Below the 3-column collapse breakpoint the shell becomes a single column
+// (proof-design.scss:275 `.proof-layout { grid-template-columns: 1fr }`) and the
+// rails stack in normal flow. They MUST NOT stay sticky there, or the pinned left
+// "On this page" rail scrolls OVER the content beneath it. proof-design's media
+// rule sets `.snav,.rail{position:static}`, but the higher-specificity
+// `aside.snav`/`aside.rail` sticky above wins even inside that query — so restore
+// static here at matching specificity and the same 1080px breakpoint.
+@media (max-width: 1080px) {
+  aside.snav,
+  aside.rail {
+    position: static;
+  }
+}
 .hmtc-conn-head {
   font-family: "IBM Plex Mono", monospace;
   font-size: 9.5px;
