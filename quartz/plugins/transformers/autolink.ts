@@ -71,6 +71,12 @@ const SKIP_TAGS = new Set([
   "h4",
   "h5",
   "h6",
+  // A <details> summary is a heading-like control (e.g. the Program Manual
+  // "What will struggle" accordion's analyte name). Autolinking it turns the
+  // header into a blue link — off-design and inconsistent (some analyte names
+  // match a term and some do not). Links belong in the accordion's prose, not
+  // its header, so block the summary subtree like a heading.
+  "summary",
   // Tables are dense reference grids (the standards Master Limit / Derivation
   // tables, the Sources and Version tables): autolinking the analyte column and
   // jurisdiction cells reads as clutter, not navigation. Blocking the <table>
