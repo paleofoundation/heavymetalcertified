@@ -208,54 +208,101 @@ for (const a of DATA.analytes) {
   n++
 }
 
-// The /analytes index — "the analyte panel" page, in the canonical v3 design
-// (Heavy Metal Certified v3.dc.html). The hero band, the "On this page" rail, and
-// the Connections / rail box are driven ENTIRELY by frontmatter (HeroBand / Snav /
-// Rail) — NO hand-rolled hero in content. The body is two v3 sections: the metal
-// card grid (the panel) and how the panel is applied. Card copy is compact via the
-// .hmtc-apanel component in cert-chrome.scss (the sitewide 16.5px <p> rule would
-// otherwise blow the cards up). See [[project_manual_v3_canonical_design]].
+// The /analytes index — "the analyte panel" page, ported VERBATIM from the approved
+// Claude Design canvas `isAnalytes` screen (Heavy Metal Certified v3.dc.html). The
+// hero band, "On this page" rail, and Connections/rail are driven by frontmatter
+// (HeroBand / Snav / Rail) — no hand-rolled hero. Body = four sections: Scope of the
+// panel, The panel at a glance (Analyte·Symbol·Reported-as·Tier table), Tier 1
+// (accordion), Tier 2 (accordion). The Tier accordions reuse the .hmtc-mhard
+// component in cert-chrome.scss. See [[project_manual_v3_canonical_design]].
+const H2S = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
+// Tier per metal (the toxic-species tier the canvas assigns): Pb·Cd·As·Hg = Tier 1,
+// Ni·Sn·Al·Cr = Tier 2.
+const ANALYTE_TIER = { lead: 1, cadmium: 1, arsenic: 1, mercury: 1, nickel: 2, tin: 2, aluminum: 2, chromium: 2 }
+
+function tierPill(t) {
+  return t === 1
+    ? `<span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 7px">Tier 1</span>`
+    : `<span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a7f7f;border:1px solid #e8e1db;background:#faf7f4;border-radius:2px;padding:3px 7px">Tier 2</span>`
+}
+
+// One <details> accordion per analyte (canvas tier1Rows/tier2Rows). Reuses the
+// .hmtc-mhard component: a +/− sign + Lora name summary, then meta · why · Reference.
+function analyteAccordion(list, openState) {
+  return list
+    .map(
+      (a) => `<details class="hmtc-mhard"${openState ? " open" : ""}>
+<summary class="hmtc-mhard-sum"><span class="hmtc-mhard-sign" aria-hidden="true"></span><span class="hmtc-mhard-name">${esc(a.name)}</span></summary>
+<div class="hmtc-mhard-panel">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;color:#a9a1a1;margin-bottom:10px">${esc(a.sym)} &middot; ${esc(a.species)}</div>
+<p>${esc(a.thesis)}</p>
+<a href="/analytes/${a.slug}" style="display:inline-block;margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:${LINK};text-decoration:none">Reference page &rarr;</a>
+</div>
+</details>`,
+    )
+    .join("\n")
+}
+
 function indexPage() {
-  const H2S = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
-  const cards = DATA.analytes
+  const tier1 = DATA.analytes.filter((a) => ANALYTE_TIER[a.slug] === 1)
+  const tier2 = DATA.analytes.filter((a) => ANALYTE_TIER[a.slug] === 2)
+  // "The panel at a glance" table — canonical burgundy head (from .wiki-content
+  // thead, not inline), first column tinted, symbol mono-red, tier pill.
+  const tblRows = DATA.analytes
     .map(
       (a) =>
-        `<a class="hmtc-apanel-card" href="/analytes/${a.slug}"><div class="hmtc-apanel-name">${esc(a.name)}</div><div class="hmtc-apanel-meta">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p>${esc(a.thesis)}</p><span class="hmtc-apanel-go">Reference &rarr;</span></a>`,
+        `<tr><td style="background:#fdf4f3;white-space:nowrap"><a href="/analytes/${a.slug}" style="color:${LINK};text-decoration:none">${esc(a.name)}</a></td><td style="font-family:'IBM Plex Mono',monospace;color:#9f2727;border-left:1px solid #f4eee9">${esc(a.sym)}</td><td style="border-left:1px solid #f4eee9">${esc(a.species)}</td><td style="border-left:1px solid #f4eee9;white-space:nowrap">${tierPill(ANALYTE_TIER[a.slug])}</td></tr>`,
     )
     .join("")
+
   const fm = [
     "---",
     'title: "The analyte panel"',
     "type: analyte",
     "custom_page: true",
-    'breadcrumb_leaf: "The analyte panel"',
-    'description: "The ten analytes the Heavy Metal Tested & Certified program quantifies on every certified product — eight metals, with arsenic and mercury each in total and speciated form — and why each is limited."',
+    'breadcrumb_leaf: "Analytes"',
+    'description: "The ten analytes the Heavy Metal Tested & Certified program quantifies, and why each is limited — one reference page per metal, drawn from the government and expert-body record."',
+    "updated: 2026-08-18",
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
+    'hero_action: { label: "Maximum levels in force", href: "/standards" }',
     "snapshot:",
     '  - { k: "Metals", v: "8" }',
-    '  - { k: "Analytes", v: "10" }',
-    '  - { k: "Speciated", v: "Arsenic · Mercury" }',
-    '  - { k: "Hexavalent Cr", v: "on trigger" }',
+    '  - { k: "Analytes quantified", v: "10" }',
+    '  - { k: "Tier 1 — zero-tolerance", v: "4" }',
+    '  - { k: "Reference pages", v: "8" }',
     "connections:",
     '  - { label: "The standards register", href: "/standards" }',
-    '  - { label: "Why we limit each metal", href: "/why-we-limit" }',
-    '  - { label: "Regulation references (source documents)", href: "/regulations" }',
-    '  - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" }',
-    "rail_box:",
-    '  title: "The panel"',
-    '  body: "Eight metals, expressed as ten analytes: arsenic and mercury each in total and speciated form, chromium with hexavalent speciation on trigger. Every certified product is tested against the full panel, in every subcategory."',
+    '  - { label: "How limits are derived", href: "/program/structure" }',
+    '  - { label: "Verify a certificate", href: "/verify" }',
+    '  - { label: "All Program Manuals", href: "/manuals" }',
     "---",
   ].join("\n")
-  const panel =
-    `<section id="panel" style="margin-bottom:52px"><h2 style="${H2S}">The ten-analyte panel</h2>` +
-    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 22px">Eight metals, ten analytes — arsenic and mercury are each reported in total and speciated form, and chromium is screened as total with hexavalent speciation on trigger. Each card states, from the government and expert-body record, why the metal is limited; the maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>, the plain-language rationale is under <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>, and the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p>` +
-    `<div class="hmtc-apanel">${cards}</div></section>`
-  const structure =
-    `<section id="structure" style="margin-bottom:20px"><h2 style="${H2S}">How the panel is applied</h2>` +
-    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 18px">Every certified product is tested against the full panel — all ten analytes — in every subcategory, in that subcategory&rsquo;s native basis. A certificate names the standard edition, the analyte panel, and the basis, so a limit can be read back exactly as it was applied.</p>` +
-    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 18px">The panel is toxicologically tiered. The four Tier&nbsp;1 toxics &mdash; lead, cadmium, inorganic arsenic, and mercury &mdash; are zero-tolerance, with no transitional allowance. The Tier&nbsp;2 analytes &mdash; total arsenic, nickel, aluminium, tin, and chromium &mdash; carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>` +
-    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0">Arsenic and mercury are quantified in both total and toxic-species form &mdash; inorganic arsenic and methylmercury &mdash; and the species result never replaces the parent total. Chromium is screened as total chromium, with hexavalent-chromium speciation triggered on a material result; any quantifiable Cr(VI) is a hard fail.</p></section>`
-  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${panel}\n${structure}\n`, "utf8")
+
+  const scope = `<section style="margin-bottom:52px">
+<h2 id="scope-panel" style="${H2S}">Scope of the panel</h2>
+<p style="font-size:17.5px;line-height:1.72;color:#2b1f1f;margin:0 0 18px;max-width:74ch">Eight metals, ten analytes: <a href="/analytes/arsenic" style="color:${LINK}">arsenic</a> and <a href="/analytes/mercury" style="color:${LINK}">mercury</a> are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited.</p>
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 4px;max-width:74ch">For the plain-language rationale &mdash; the toxicological basis, the exposure reality, and the case for a certification limit, metal by metal &mdash; see <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p>
+</section>`
+
+  const glance = `<section style="margin-bottom:52px">
+<h2 id="panel" style="${H2S}">The panel at a glance</h2>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Tier&nbsp;1 analytes are zero-tolerance; Tier&nbsp;2 analytes are capped to the government limit and carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>
+<div style="overflow-x:auto;border:1px solid #e8e1db"><table style="width:100%;border-collapse:collapse;min-width:44rem"><thead><tr><th>Analyte</th><th>Symbol</th><th>Reported as</th><th>Tier</th></tr></thead><tbody>${tblRows}</tbody></table></div>
+</section>`
+
+  const t1 = `<section style="margin-bottom:52px">
+<h2 id="tier1" style="${H2S}">Tier 1 &mdash; zero-tolerance toxics</h2>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">No transitional allowance applies to these four analytes. A lot that exceeds the limit cannot be certified while that result stands.</p>
+<div class="hmtc-mhard-list">${analyteAccordion(tier1, false)}</div>
+</section>`
+
+  const t2 = `<section style="margin-bottom:20px">
+<h2 id="tier2" style="${H2S}">Tier 2 &mdash; capped to the government limit</h2>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are held to the strictest sovereign maximum level for the product, and carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>
+<div class="hmtc-mhard-list">${analyteAccordion(tier2, true)}</div>
+</section>`
+
+  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${scope}\n${glance}\n${t1}\n${t2}\n`, "utf8")
 }
 indexPage()
 
