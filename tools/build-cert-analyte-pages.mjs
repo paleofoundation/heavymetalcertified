@@ -208,25 +208,54 @@ for (const a of DATA.analytes) {
   n++
 }
 
-// The /analytes index — a linked panel mirroring the homepage cards.
+// The /analytes index — "the analyte panel" page, in the canonical v3 design
+// (Heavy Metal Certified v3.dc.html). The hero band, the "On this page" rail, and
+// the Connections / rail box are driven ENTIRELY by frontmatter (HeroBand / Snav /
+// Rail) — NO hand-rolled hero in content. The body is two v3 sections: the metal
+// card grid (the panel) and how the panel is applied. Card copy is compact via the
+// .hmtc-apanel component in cert-chrome.scss (the sitewide 16.5px <p> rule would
+// otherwise blow the cards up). See [[project_manual_v3_canonical_design]].
 function indexPage() {
+  const H2S = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
   const cards = DATA.analytes
     .map(
       (a) =>
-        `<a href="/analytes/${a.slug}" style="display:block;background:#fffdfb;border:1px solid #eee7e2;padding:20px 21px;text-decoration:none"><div style="font-family:Lora,serif;font-size:20px;line-height:1.25;color:${ACCENT}">${esc(a.name)}</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#b7aeae;margin-top:5px">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p style="font-size:12.5px;line-height:1.6;color:#736b6b;margin:11px 0 0">${linkify(a.thesis)}</p></a>`,
+        `<a class="hmtc-apanel-card" href="/analytes/${a.slug}"><div class="hmtc-apanel-name">${esc(a.name)}</div><div class="hmtc-apanel-meta">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p>${esc(a.thesis)}</p><span class="hmtc-apanel-go">Reference &rarr;</span></a>`,
     )
     .join("")
   const fm = [
     "---",
-    'title: "The analyte panel — HMTc"',
+    'title: "The analyte panel"',
     "type: analyte",
     "custom_page: true",
-    'description: "The ten analytes the Heavy Metal Tested & Certified program quantifies, and why each is limited — one reference page per metal, drawn from the government and expert-body record."',
+    'breadcrumb_leaf: "The analyte panel"',
+    'description: "The ten analytes the Heavy Metal Tested & Certified program quantifies on every certified product — eight metals, with arsenic and mercury each in total and speciated form — and why each is limited."',
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
+    "snapshot:",
+    '  - { k: "Metals", v: "8" }',
+    '  - { k: "Analytes", v: "10" }',
+    '  - { k: "Speciated", v: "Arsenic · Mercury" }',
+    '  - { k: "Hexavalent Cr", v: "on trigger" }',
+    "connections:",
+    '  - { label: "The standards register", href: "/standards" }',
+    '  - { label: "Why we limit each metal", href: "/why-we-limit" }',
+    '  - { label: "Regulation references (source documents)", href: "/regulations" }',
+    '  - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" }',
+    "rail_box:",
+    '  title: "The panel"',
+    '  body: "Eight metals, expressed as ten analytes: arsenic and mercury each in total and speciated form, chromium with hexavalent speciation on trigger. Every certified product is tested against the full panel, in every subcategory."',
     "---",
   ].join("\n")
-  const body = `<section style="margin-bottom:32px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:34px;line-height:1.15;color:#2b1f1f;margin:0 0 12px">The analyte panel</h1><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Eight metals, ten analytes: arsenic and mercury are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited. For the plain-language rationale — the toxicological basis, the exposure reality, and the case for a certification limit, metal by metal — see <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p></section><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:#eee7e2;border:1px solid #eee7e2">${cards}</div>`
-  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${body}\n`, "utf8")
+  const panel =
+    `<section id="panel" style="margin-bottom:52px"><h2 style="${H2S}">The ten-analyte panel</h2>` +
+    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 22px">Eight metals, ten analytes — arsenic and mercury are each reported in total and speciated form, and chromium is screened as total with hexavalent speciation on trigger. Each card states, from the government and expert-body record, why the metal is limited; the maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>, the plain-language rationale is under <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>, and the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p>` +
+    `<div class="hmtc-apanel">${cards}</div></section>`
+  const structure =
+    `<section id="structure" style="margin-bottom:20px"><h2 style="${H2S}">How the panel is applied</h2>` +
+    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 18px">Every certified product is tested against the full panel — all ten analytes — in every subcategory, in that subcategory&rsquo;s native basis. A certificate names the standard edition, the analyte panel, and the basis, so a limit can be read back exactly as it was applied.</p>` +
+    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 18px">The panel is toxicologically tiered. The four Tier&nbsp;1 toxics &mdash; lead, cadmium, inorganic arsenic, and mercury &mdash; are zero-tolerance, with no transitional allowance. The Tier&nbsp;2 analytes &mdash; total arsenic, nickel, aluminium, tin, and chromium &mdash; carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>` +
+    `<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0">Arsenic and mercury are quantified in both total and toxic-species form &mdash; inorganic arsenic and methylmercury &mdash; and the species result never replaces the parent total. Chromium is screened as total chromium, with hexavalent-chromium speciation triggered on a material result; any quantifiable Cr(VI) is a hard fail.</p></section>`
+  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${panel}\n${structure}\n`, "utf8")
 }
 indexPage()
 
