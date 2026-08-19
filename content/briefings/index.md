@@ -5,7 +5,7 @@ audience: [regulator, brand-legal, brand-finance, retailer-compliance]
 author: Karen Pendergrass
 orcid: 0000-0002-2348-7259
 updated: 2026-06-18
-description: "Analytical briefings on what the HMTc standard changes, and for whom. Each is a citable technical report with a named author, a publisher of record, and a downloadable edition — written for the people who decide whether a certificate is worth its price."
+description: "Analytical briefings on what the HMTc standard changes, and for whom. Each is a citable technical report with a named author, a publisher of record, and a downloadable edition: written for the people who decide whether a certificate is worth its price."
 snapshot:
   - { k: "Briefings in series", v: "19" }
   - { k: "Peer-track preprints", v: "3" }
@@ -15,18 +15,18 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "Program Manuals", href: "/manuals" }
   - { label: "How limits are derived", href: "/program/structure" }
-  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <section id="series" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The series</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Nineteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition &mdash; the things a citation needs to survive.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Nineteen briefings. Each has its own stable URL and its own bibliographic record, and most carry a downloadable PDF edition: the things a citation needs to survive.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/briefings/hmtc-primer" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Primer</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">HMTc Primer</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">A neutral primer for counsel — what the program certifies, what a licensee signs, and what it does not claim.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">A neutral primer for counsel: what the program certifies, what a licensee signs, and what it does not claim.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Orientation</span>
         </span>
       </span>
@@ -40,7 +40,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 1</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Four Metals Is No Longer Enough</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The regulators moved to eight metals. Certification stayed at four — and the gap is now a line in a regulation your products ship under.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The regulators moved to eight metals. Certification stayed at four, and the gap is now a line in a regulation your products ship under.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
@@ -55,7 +55,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Cat 17</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Heavy Metals in Pet Food</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Pet food is legally held to feed limits, not food limits &mdash; and the literature shows why that gap matters. The case for certifying pets to human-grade standards.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Pet food is legally held to feed limits, not food limits, and the literature shows why that gap matters. The case for certifying pets to human-grade standards.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Pet foods</span>
         </span>
@@ -69,7 +69,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">FSIS</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Before the Meat Label Prints</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">USDA approves every meat, poultry, and egg label before it prints, and objects to a purity word it cannot verify. Why the mark &mdash; a published measurement, not an adjective &mdash; is built to pass the review a &ldquo;clean&rdquo; seal fails.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">USDA approves every meat, poultry, and egg label before it prints, and objects to a purity word it cannot verify. Why the mark, a published measurement, not an adjective, is built to pass the review a &ldquo;clean&rdquo; seal fails.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Using the mark</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
@@ -97,7 +97,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Cat 26</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">No Limit Is Not No Standard</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">No government limits the metals in peptides, SARMs, or research chemicals. Why an all-control standard &mdash; mandatory testing, no invented number &mdash; is the right response, and why the vacuum is the hazard.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">No government limits the metals in peptides, SARMs, or research chemicals. Why an all-control standard, mandatory testing, no invented number, is the right response, and why the vacuum is the hazard.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Standard-setting</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Governance</span>
         </span>
@@ -111,7 +111,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 3</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The Big 8</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The original standard tested four metals. Regulators added four more &mdash; this is the case for each, and why a four-metal mark now leaves exposure uncovered.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The original standard tested four metals. Regulators added four more: this is the case for each, and why a four-metal mark now leaves exposure uncovered.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
@@ -139,7 +139,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 10</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The Child Eats the Adult's Supplement</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Supplement limits are written for a 70-kilogram adult; the child eats from the same bottle. HMTc certifies every supplement to the limit that protects the child &mdash; and says what that costs.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Supplement limits are written for a 70-kilogram adult; the child eats from the same bottle. HMTc certifies every supplement to the limit that protects the child, and says what that costs.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
@@ -228,7 +228,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 8</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The Surveillance Protocol</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Defensible evidence is built before litigation, not after — the surveillance protocol that produces it.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Defensible evidence is built before litigation, not after: the surveillance protocol that produces it.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Operations</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Testing</span>
         </span>
@@ -287,7 +287,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Analysis</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Heavy Metals in Fertilizers, 1960&ndash;2025</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The cadmium in the crop arrives in the phosphate rock, the sludge, and the irrigation water &mdash; and the governments that regulate the input reason in decades. Why a finished-product, four-metal test is blind to the pathway.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The cadmium in the crop arrives in the phosphate rock, the sludge, and the irrigation water, and the governments that regulate the input reason in decades. Why a finished-product, four-metal test is blind to the pathway.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Supply chain</span>
         </span>
       </span>
@@ -329,10 +329,10 @@ connections:
 
 <section id="scholar">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Indexing policy</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Briefings and standards are the only surfaces on this site that carry scholarly citation metadata. Application, fee and directory pages deliberately do not &mdash; asserting scholarly status on a transactional page is an overclaim that gets a whole domain dismissed, and the separation is enforced by the firewall crawler rather than left to editorial judgment.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Briefings and standards are the only surfaces on this site that carry scholarly citation metadata. Application, fee and directory pages deliberately do not: asserting scholarly status on a transactional page is an overclaim that gets a whole domain dismissed, and the separation is enforced by the firewall crawler rather than left to editorial judgment.</p>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Every briefing therefore emits the full <span style="font-family:'IBM Plex Mono',monospace;font-size:14px">citation_*</span> set and a matching JSON-LD record, and sits at its own stable URL with its abstract readable immediately, without a sign-in, an interstitial or a scroll. The PDF edition is linked from the HTML record rather than standing alone, because an unlinked PDF is indexed as though it carried no metadata at all.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Three fields are load-bearing: the title, the full name of at least the first author, and the year of publication. A record missing any one of the three is treated as carrying no metadata whatsoever &mdash; there is no partial credit. The series column above reports which briefings clear that bar today.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Three fields are load-bearing: the title, the full name of at least the first author, and the year of publication. A record missing any one of the three is treated as carrying no metadata whatsoever: there is no partial credit. The series column above reports which briefings clear that bar today.</p>
   </div>
 </section>
 

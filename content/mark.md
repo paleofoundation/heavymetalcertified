@@ -2,7 +2,7 @@
 title: Using the mark
 type: mark
 audience: [regulator, brand-legal, retailer-compliance, certifier]
-description: "A certification mark is not a logo. It is a legal instrument that says a specific product was tested to a stated threshold, on a stated panel, in a stated basis — and its scope must travel with it wherever it appears."
+description: "A certification mark is not a logo. It is a legal instrument that says a specific product was tested to a stated threshold, on a stated panel, in a stated basis, and its scope must travel with it wherever it appears."
 snapshot:
   - { k: "USPTO serial", v: "99307306" }
   - { k: "Licensed per", v: "product" }
@@ -64,7 +64,7 @@ rail_box:
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No reproduction spec published yet</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Program Manual Part 2.5 governs <em style="font-style:normal;color:#736b6b">who</em> may display the mark and <em style="font-style:normal;color:#736b6b">what</em> may be claimed alongside it, but sets no minimum size, clear space or color-reproduction rules. Those belong in a mark usage guide that does not exist yet. Until it does, this page states no dimensions rather than inventing them &mdash; a printer following a fabricated spec would be following nothing.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Program Manual Part 2.5 governs <em style="font-style:normal;color:#736b6b">who</em> may display the mark and <em style="font-style:normal;color:#736b6b">what</em> may be claimed alongside it, but sets no minimum size, clear space or color-reproduction rules. Those belong in a mark usage guide that does not exist yet. Until it does, this page states no dimensions rather than inventing them: a printer following a fabricated spec would be following nothing.</p>
   </div>
 </section>
 
@@ -72,15 +72,15 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Who may display it</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Mark usage is gated on certification status, per SKU. It is not a brand-level entitlement, and it does not survive a status change.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status A &mdash; Certified (Full)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status B &mdash; Certified (Transitional)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status C &mdash; Probation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status D &mdash; Suspension</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status E &mdash; Revocation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status A: Certified (Full)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status B: Certified (Transitional)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status C: Probation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status D: Suspension</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status E: Revocation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">In Confidential Remediation Track</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Granted per</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">SKU, not brand</span></div>
   </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand must hold at least one SKU at Status&nbsp;A or&nbsp;B before any use of the mark is permitted. Products inside the Confidential Remediation Track may not display it &mdash; the Track protects the record, not the right to advertise.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand must hold at least one SKU at Status&nbsp;A or&nbsp;B before any use of the mark is permitted. Products inside the Confidential Remediation Track may not display it: the Track protects the record, not the right to advertise.</p>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Program Manual Part 2.5 &sect;6.1.</p>
 </section>
 
@@ -95,7 +95,7 @@ rail_box:
       <div style="padding:9px 0;border-bottom:1px dotted #f2ece7;font-size:13.5px;line-height:1.6;color:#3f3a3a">&ldquo;100% safe from heavy metals&rdquo;</div>
       <div style="padding:9px 0;border-bottom:1px dotted #f2ece7;font-size:13.5px;line-height:1.6;color:#3f3a3a">Any language implying absolute safety or zero risk</div>
       <div style="padding:9px 0;border-bottom:1px dotted #f2ece7;font-size:13.5px;line-height:1.6;color:#3f3a3a">Any language implying the mark indicates absence of heavy metals</div>
-      <div style="padding:9px 0;font-size:13.5px;line-height:1.6;color:#3f3a3a">&ldquo;Certified by the Institute of Contaminant Standards&rdquo; &mdash; the Institute governs, it does not certify</div>
+      <div style="padding:9px 0;font-size:13.5px;line-height:1.6;color:#3f3a3a">&ldquo;Certified by the Institute of Contaminant Standards&rdquo;: the Institute governs, it does not certify</div>
     </div>
     <div style="background:#fffdfb;padding:19px">
       <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:10px">Supportable</div>
@@ -111,11 +111,11 @@ rail_box:
 
 <section id="arbitrage" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Dropping and re-entry</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand that pulls the mark during a bad period cannot quietly restore it on the first good lot. Without this rule, selective display would let a brand hide an exceedance and then present an unbroken certification record &mdash; the mark would signal luck rather than sustained compliance.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand that pulls the mark during a bad period cannot quietly restore it on the first good lot. Without this rule, selective display would let a brand hide an exceedance and then present an unbroken certification record: the mark would signal luck rather than sustained compliance.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:16px">
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Re-entry to mark usage requires <strong style="font-weight:600">three consecutive passing lot results</strong> at Status&nbsp;A or&nbsp;B levels, and closure of any open CAPA associated with that SKU. This applies whether the mark came off voluntarily or by enforcement.</p>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Program Manual Part 2.5 &sect;6.3 &mdash; anti-arbitrage.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Program Manual Part 2.5 &sect;6.3: anti-arbitrage.</p>
 </section>
 
 <section id="visibility" style="margin-bottom:52px">
@@ -123,16 +123,16 @@ rail_box:
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand may opt out of publicly displaying its certified SKUs in any program registry or consumer-facing surface. The decision to show or hide a certified SKU rests entirely with the brand, and it is set per SKU rather than per account.</p>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">What this means for the register</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The public register is therefore not a census of certified products. A product may be certified and deliberately absent from it. That is why certificate lookup is single-record and keyed to a lot, certificate number or product code &mdash; a browsable list could never be complete, and presenting one as complete would be the misleading part.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The public register is therefore not a census of certified products. A product may be certified and deliberately absent from it. That is why certificate lookup is single-record and keyed to a lot, certificate number or product code: a browsable list could never be complete, and presenting one as complete would be the misleading part.</p>
   </div>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin-top:12px">Program Manual Part 2.5 &sect;6.4.</p>
 </section>
 
 <section id="control">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Control and non-discrimination</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Federal certification-mark registration is in process with the USPTO under Lanham Act &sect;1054; the EU filing is parallel and also pending. A registered certification mark carries obligations a trademark does not &mdash; the owner must control how the mark is used, may not produce the goods it certifies, and may not refuse to certify a product that meets the standard. The program commits to operating under those obligations now, while registration is pending, rather than treating them as something that begins on the day a certificate issues.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Federal certification-mark registration is in process with the USPTO under Lanham Act &sect;1054; the EU filing is parallel and also pending. A registered certification mark carries obligations a trademark does not: the owner must control how the mark is used, may not produce the goods it certifies, and may not refuse to certify a product that meets the standard. The program commits to operating under those obligations now, while registration is pending, rather than treating them as something that begins on the day a certificate issues.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:20px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The published standard is the only gate. Any product that tests at or below every value in the Master Limit Table for its subcategory, on the stated panel and basis, is certified &mdash; regardless of who makes it, whether they hold other Institute of Contaminant Standards (ICS) programs, or what they sell alongside it. The fee pays for the audit. It does not buy the outcome, and no fee tier changes a threshold.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The published standard is the only gate. Any product that tests at or below every value in the Master Limit Table for its subcategory, on the stated panel and basis, is certified: regardless of who makes it, whether they hold other Institute of Contaminant Standards (ICS) programs, or what they sell alongside it. The fee pays for the audit. It does not buy the outcome, and no fee tier changes a threshold.</p>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:20px">
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Standard is the only gate</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">yes</span></div>
@@ -143,7 +143,7 @@ rail_box:
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Proposed commitment, not yet in the manual</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Unlike &sect;&sect;6.1&ndash;6.4 above, this section is not reproduced from Program Manual Part&nbsp;2.5. The manual contains no non-discrimination provision. The commitments here are drafted from the obligations that attach to a registered certification mark, and each is binding on the program once published &mdash; they belong in the Governance Policy before this page ships.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">Unlike &sect;&sect;6.1&ndash;6.4 above, this section is not reproduced from Program Manual Part&nbsp;2.5. The manual contains no non-discrimination provision. The commitments here are drafted from the obligations that attach to a registered certification mark, and each is binding on the program once published: they belong in the Governance Policy before this page ships.</p>
   </div>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A denial can be appealed to the Independent Appeals Committee, whose review is binding on the program operator. That route exists precisely so that a refusal can be tested by someone who does not answer to the party who issued it.</p>
 </section>

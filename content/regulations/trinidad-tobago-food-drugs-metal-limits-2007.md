@@ -10,7 +10,7 @@ regulation_slug: trinidad-tobago-food-drugs-metal-limits-2007
 snapshot_title: Instrument
 snapshot:
   - { k: "Jurisdiction", v: "TT" }
-  - { k: "In force", v: "—" }
+  - { k: "In force", v: ": " }
   - { k: "Analytes", v: "5" }
   - { k: "Limits recorded", v: "51" }
 hero_meta:

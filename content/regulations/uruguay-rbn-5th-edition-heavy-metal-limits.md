@@ -10,7 +10,7 @@ regulation_slug: uruguay-rbn-5th-edition-heavy-metal-limits
 snapshot_title: Instrument
 snapshot:
   - { k: "Jurisdiction", v: "UY" }
-  - { k: "In force", v: "—" }
+  - { k: "In force", v: ": " }
   - { k: "Analytes", v: "6" }
   - { k: "Limits recorded", v: "23" }
 hero_meta:

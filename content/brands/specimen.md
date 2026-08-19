@@ -23,7 +23,7 @@ rail_box:
 
 <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:32px">
   <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Specimen brand page &middot; noindex</div>
-  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">No brands are certified yet. This shows the shape of the public page a brand receives on issue &mdash; what the program controls and what the brand controls. Every value below is illustrative.</p>
+  <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">No brands are certified yet. This shows the shape of the public page a brand receives on issue: what the program controls and what the brand controls. Every value below is illustrative.</p>
 </div>
 
 <div style="margin-bottom:40px">
@@ -109,21 +109,21 @@ rail_box:
     <tbody>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Stage 1 Infant Formula, Powder</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.1 &mdash; powder, non-soy</a></td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.1: powder, non-soy</a></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">powder as placed on market</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">Compliant</span></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-05-18</td>
       </tr>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Stage 2 Follow-on Formula, Powder</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.1 &mdash; powder, non-soy</a></td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.1: powder, non-soy</a></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">powder as placed on market</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">Compliant</span></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-05-18</td>
       </tr>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Oat Baby Cereal, Dry</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.6 &mdash; dry, non-rice</a></td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b"><a href="/standards" style="color:#1c43ad">Part 3.6: dry, non-rice</a></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">dry as sold</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:2px;padding:3px 8px;white-space:nowrap;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda">Compliant</span></td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">2027-01-30</td>
@@ -131,7 +131,7 @@ rail_box:
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:14px 0 0">Specimen rows. Status B is a transitional variance on a Tier&nbsp;2 metal, disclosed rather than hidden &mdash; a real certification state with a defined end date, not a failure.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:14px 0 0">Specimen rows. Status B is a transitional variance on a Tier&nbsp;2 metal, disclosed rather than hidden: a real certification state with a defined end date, not a failure.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:16px 20px;margin-top:16px">
     <p style="font-size:14px;line-height:1.72;color:#5a4141;margin:0;max-width:78ch">Each product above was tested at or below every value in the standard named beside it, in that product&rsquo;s native basis, on the ten-analyte panel, by an accredited laboratory. The mark does not certify that a product is safe and does not extend to products not listed. <a href="/mark" style="color:#1c43ad">Full scope of the mark &rarr;</a></p>
   </div>
@@ -173,7 +173,7 @@ rail_box:
     </div>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:18px 20px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:9px">Approved boilerplate &mdash; copy verbatim</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:9px">Approved boilerplate: copy verbatim</div>
     <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.75;color:#2b1f1f;margin:0;background:#faf7f4;border:1px solid #f2ece7;border-radius:2px;padding:13px 15px">&lt;Brand name&gt; holds Heavy Metal Tested &amp; Certified status for three products under the HMTc Infant and Child Foods Standard, 2026 Edition. Each is tested at an accredited laboratory on a ten-analyte panel, in the product&rsquo;s native basis, against limits published in advance by the program. Certification attests to measurement against a stated threshold; it is not a determination of safety.</p>
     <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:12px 0 0">Reproduce this paragraph as written. Edits that drop the final sentence convert a conformity statement into a safety claim, which breaches mark usage under Part 2.5 and is the most common way a certified brand loses the right to display the mark.</p>
   </div>
@@ -186,7 +186,7 @@ rail_box:
     <div style="min-width:0">
       <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
         <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Brand-supplied copy</div>
-        <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">This section is written by the brand and is the only part of the page it controls. It is visually distinguished from the certification record above so a reader can tell marketing from conformity &mdash; which protects the brand as much as the reader, since a claim made here can never be mistaken for one the program made.</p>
+        <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">This section is written by the brand and is the only part of the page it controls. It is visually distinguished from the certification record above so a reader can tell marketing from conformity: which protects the brand as much as the reader, since a claim made here can never be mistaken for one the program made.</p>
       </div>
     </div>
   </div>

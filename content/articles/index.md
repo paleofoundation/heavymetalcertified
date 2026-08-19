@@ -13,14 +13,14 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/lead-and-cadmium-in-dark-chocolate" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Lead and Cadmium in Dark Chocolate: A Decade of Divergence</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">One metal fell under a decade of Proposition 65 pressure; the other did not — and where each enters the cocoa supply chain explains why.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">One metal fell under a decade of Proposition 65 pressure; the other did not, and where each enters the cocoa supply chain explains why.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium</span>
     </a>
     <a href="/articles/breastmilk-heavy-metal-exposure-pathway" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Breastmilk Is an Infant Metal Pathway No Food Standard Reaches</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Breastmilk carries measurable lead, cadmium, arsenic and mercury set by maternal body burden and diet — an infant exposure pathway no food certification reaches.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Breastmilk carries measurable lead, cadmium, arsenic and mercury set by maternal body burden and diet: an infant exposure pathway no food certification reaches.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Arsenic</span>
     </a>
@@ -41,7 +41,7 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/mining-impacted-freshwater-fish" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Freshwater Fish From Mining Watersheds Need a Multi-Metal Standard</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Fish from mining-impacted, industrial and dammed freshwaters carry mercury, lead, cadmium, chromium and nickel — a multi-metal load market fish advisories miss.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Fish from mining-impacted, industrial and dammed freshwaters carry mercury, lead, cadmium, chromium and nickel: a multi-metal load market fish advisories miss.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Mercury &middot; Lead &middot; Cadmium</span>
     </a>
@@ -76,7 +76,7 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/supplement-botanical-lead-pathway" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Supplements Are the Least-Policed Heavy-Metal Exposure Pathway</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Dietary supplements and herbal remedies can carry lead thousands of times above food limits under weaker enforcement — the case for finished-product testing.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Dietary supplements and herbal remedies can carry lead thousands of times above food limits under weaker enforcement: the case for finished-product testing.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Arsenic &middot; Cadmium</span>
     </a>
@@ -90,21 +90,21 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/cooking-does-not-reduce-mehg" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Cooking Never Lowers the Methylmercury in Fish</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Cooking, smoking, and canning do not reduce the methylmercury in fish — it is bound to muscle protein and heat-stable, so the raw number is the dose eaten.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Cooking, smoking, and canning do not reduce the methylmercury in fish: it is bound to muscle protein and heat-stable, so the raw number is the dose eaten.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Mercury</span>
     </a>
     <a href="/articles/aquaculture-vs-wild-contamination-differential" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Farmed Fish Carry Less Methylmercury Than Wild-Caught</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Farmed fish carry methylmercury 2.9 to 6.2 times lower than wild-caught of the same species — because feed regime, not species alone, sets the number.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Farmed fish carry methylmercury 2.9 to 6.2 times lower than wild-caught of the same species, because feed regime, not species alone, sets the number.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Mercury &middot; Cadmium &middot; Arsenic</span>
     </a>
     <a href="/articles/subsistence-fishing-mehg-disparity" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Fish-Consumption Advice Misses Subsistence Mercury Exposure</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Fish-consumption advice is calibrated to market-fish meals, so subsistence fishers face methylmercury above its thresholds — beyond certification's reach.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Fish-consumption advice is calibrated to market-fish meals, so subsistence fishers face methylmercury above its thresholds: beyond certification's reach.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Mercury</span>
     </a>
@@ -146,7 +146,7 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/combined-exposure-underprotection" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Single-Metal Limits Underprotect the Whole Diet</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Heavy-metal limits are set one metal at a time, but a real diet delivers several at once — so full per-metal compliance can still leave combined exposure unsafe.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Heavy-metal limits are set one metal at a time, but a real diet delivers several at once, so full per-metal compliance can still leave combined exposure unsafe.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Arsenic</span>
     </a>
@@ -160,7 +160,7 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/tin-canned-food-acidic-matrix-migration" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Tin in Canned Food Comes From the Can, Not the Crop</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Inorganic tin in food migrates from unlacquered cans into acidic contents, not from soil &mdash; and its acute gut-irritant threshold sits far above lead and cadmium limits.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Inorganic tin in food migrates from unlacquered cans into acidic contents, not from soil, and its acute gut-irritant threshold sits far above lead and cadmium limits.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Tin</span>
     </a>
@@ -183,10 +183,10 @@ Analysis from the certification program, grounded in the independent evidence ba
 
 ## Evidence anchors on the index
 
-- Lead in food — the occurrence record and the metal review: [heavymetalindex.com/metals/lead](https://heavymetalindex.com/metals/lead)
-- Cadmium — distribution and exposure: [heavymetalindex.com/metals/cadmium](https://heavymetalindex.com/metals/cadmium)
-- Inorganic arsenic — speciation and the rice/seaweed signal: [heavymetalindex.com/metals/arsenic](https://heavymetalindex.com/metals/arsenic)
-- Mercury — total versus methylmercury in seafood: [heavymetalindex.com/metals/mercury](https://heavymetalindex.com/metals/mercury)
+- Lead in food: the occurrence record and the metal review: [heavymetalindex.com/metals/lead](https://heavymetalindex.com/metals/lead)
+- Cadmium: distribution and exposure: [heavymetalindex.com/metals/cadmium](https://heavymetalindex.com/metals/cadmium)
+- Inorganic arsenic: speciation and the rice/seaweed signal: [heavymetalindex.com/metals/arsenic](https://heavymetalindex.com/metals/arsenic)
+- Mercury: total versus methylmercury in seafood: [heavymetalindex.com/metals/mercury](https://heavymetalindex.com/metals/mercury)
 
 ## Program briefings
 

@@ -1,7 +1,7 @@
 ---
 title: "Heavy Metals in Pet Food"
 description: "Pet food is legally held to feed limits, not food limits, and the published literature shows why that gap matters. The case for certifying pets to human-grade heavy-metal standards."
-dek_html: "Pet food is legally held to feed limits, not food limits &mdash; and the literature shows why that gap matters."
+dek_html: "Pet food is legally held to feed limits, not food limits, and the literature shows why that gap matters."
 type: public-briefing
 section: "Scope & standards"
 briefing_slug: heavy-metals-in-pet-food
@@ -24,7 +24,7 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "The analyte panel", href: "/analytes" }
   - { label: "All Standards Briefings", href: "/briefings" }
-  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
@@ -38,7 +38,7 @@ connections:
 
 ## Two rulebooks for the same bowl
 
-In law, pet food is feed, not food. In the European Union it is governed by Directive 2002/32 on undesirable substances in animal feed; in the United States by the Food and Drug Administration's Center for Veterinary Medicine and the model regulations of the Association of American Feed Control Officials; and in the national instruments of exporting countries. Those frameworks set maximum levels for the same metals human-food law addresses, but at a different height. Directive 2002/32 permits a complete pet feed to contain lead up to 5,000 &micro;g/kg, cadmium up to 2,000 &micro;g/kg, and total arsenic up to 2,000 &micro;g/kg on a 12-percent-moisture basis [6]. China's Hygienical Standard for Pet Feed sets lead at 5, cadmium at 2, chromium at 5, mercury at 0.3, and arsenic at 10 mg/kg [2] — the same lax band, expressed per kilogram. Japan's pet-food standard sits in the same range.
+In law, pet food is feed, not food. In the European Union it is governed by Directive 2002/32 on undesirable substances in animal feed; in the United States by the Food and Drug Administration's Center for Veterinary Medicine and the model regulations of the Association of American Feed Control Officials; and in the national instruments of exporting countries. Those frameworks set maximum levels for the same metals human-food law addresses, but at a different height. Directive 2002/32 permits a complete pet feed to contain lead up to 5,000 &micro;g/kg, cadmium up to 2,000 &micro;g/kg, and total arsenic up to 2,000 &micro;g/kg on a 12-percent-moisture basis [6]. China's Hygienical Standard for Pet Feed sets lead at 5, cadmium at 2, chromium at 5, mercury at 0.3, and arsenic at 10 mg/kg [2]: the same lax band, expressed per kilogram. Japan's pet-food standard sits in the same range.
 
 The human-food maxima the same governments enforce are far lower. The European Union limits cadmium in meat to 50 &micro;g/kg and in pulses to 40 &micro;g/kg; Israel limits inorganic arsenic in meat to 20 &micro;g/kg and lead in dairy to 20 &micro;g/kg; the strictest national limits for lead in muscle meat sit near 100 &micro;g/kg [7]. Between the feed ceiling a pet food may legally meet and the food ceiling its human-grade equivalent must meet lies a gap of ten to fifty times, and nothing in feed law asks a brand to close it.
 

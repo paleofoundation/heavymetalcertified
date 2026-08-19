@@ -2,7 +2,7 @@
 title: Verify a certificate
 type: verify
 audience: [regulator, consumer, retailer-compliance]
-description: "Check a lot number, a certificate number or a product code against the register. One query returns one record — what it was certified against, on which analyte panel, in which basis, and whether that certificate is in force today."
+description: "Check a lot number, a certificate number or a product code against the register. One query returns one record: what it was certified against, on which analyte panel, in which basis, and whether that certificate is in force today."
 snapshot:
   - { k: "Certificates in force", v: "0" }
   - { k: "Standards available", v: "15" }
@@ -12,7 +12,7 @@ connections:
   - { label: "The standard this certifies against", href: "/standards" }
   - { label: "Mark usage and scope", href: "/program/structure" }
   - { label: "Apply for certification", href: "/apply" }
-  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <section id="lookup" style="margin-bottom:52px">
@@ -34,12 +34,12 @@ connections:
 <section id="record" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The record</h2>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px;margin-bottom:20px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Specimen &mdash; no certificates issued yet</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Specimen: no certificates issued yet</div>
     <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The register opens with the first certificate issued against a published subcategory standard. The record below shows the shape a real result takes, with a placeholder holder name. It is a specimen, not a certified product.</p>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:14px 18px;border-bottom:1px solid #e8e1db;background:#fdf4f3">
-      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:6px">Certificate in force</div><div style="font-family:Lora,serif;font-size:20px;line-height:1.3;color:#2b1f1f">&lt;Brand name&gt; &mdash; Stage&nbsp;1 Infant Formula, Powder</div></div>
+      <div><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:6px">Certificate in force</div><div style="font-family:Lora,serif;font-size:20px;line-height:1.3;color:#2b1f1f">&lt;Brand name&gt;: Stage&nbsp;1 Infant Formula, Powder</div></div>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#9f2727;border:1px solid #9f2727;border-radius:2px;padding:3px 8px;white-space:nowrap">Conformant</span>
     </div>
     <div style="padding:16px 18px 14px">
@@ -63,7 +63,7 @@ connections:
 
 <section id="lots" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Lot surveillance</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Certification is continuous, not a single pass. Each lot tested under the program appears here with its date, its laboratory and the panel run &mdash; the contemporaneous, independent record that makes a certificate defensible years later.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Certification is continuous, not a single pass. Each lot tested under the program appears here with its date, its laboratory and the panel run: the contemporaneous, independent record that makes a certificate defensible years later.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:44rem">
     <thead><tr style="background:#9f2727;color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Lot</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Sampled</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Laboratory</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Panel run</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Outcome</th></tr></thead>
@@ -75,7 +75,7 @@ connections:
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Specimen rows. Outcome is stated as conformity to the standard in force at the sampling date, never as a measured concentration &mdash; per-lot values are the brand&rsquo;s confidential data and are not published.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Specimen rows. Outcome is stated as conformity to the standard in force at the sampling date, never as a measured concentration: per-lot values are the brand&rsquo;s confidential data and are not published.</p>
 </section>
 
 <section id="regulators">
@@ -87,5 +87,5 @@ connections:
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">The gap, named</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Where a limit sits tighter or looser than the literature strictly supports, the standard says so and says why. Nothing is asserted as settled that is not.</p></div>
     <div style="background:#fffdfb;padding:18px 19px"><div style="font-family:Lora,serif;font-size:18px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">The conformity record</div><p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0">Lot-level laboratory reports and chain of custody are produced to a regulator on request, without a subpoena.</p></div>
   </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Requests for the full lot-level record behind a certificate &mdash; including laboratory reports and chain of custody &mdash; are handled directly. The program does not require a subpoena to produce its own conformity evidence to a regulator.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Requests for the full lot-level record behind a certificate, including laboratory reports and chain of custody, are handled directly. The program does not require a subpoena to produce its own conformity evidence to a regulator.</p>
 </section>

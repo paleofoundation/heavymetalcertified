@@ -192,6 +192,18 @@ The burgundy data table is for measured values in columns; a navigation registry
 ("See also", downstream links) is **not** a data table — it is the grid-of-records
 (`COMPONENTS.md §8`).
 
+**Avoid em dashes** (the sitewide language agreement, per the Index `docs/writing-style`:
+this holds for all of the projects, not just the Index). Use commas, semicolons, colons,
+periods, or parentheticals instead. Em dashes are permitted only inside direct quotes and
+citation text (a cited work's own title/detail). This is enforced at the content layer, not
+by hand: `tools/dedash-content.mjs` runs last in `prebuild` and rewrites every em dash in
+generated + authored prose to context-appropriate punctuation (a colon for the dominant
+"term — expansion" use, commas for a parenthetical aside or before a coordinating
+conjunction), leaving standalone "no value" table placeholders (`>—<`) and masked citation
+rows untouched; `node tools/dedash-content.mjs --check` then fails the build if any em dash
+survives in non-citation prose. So do not chase em dashes by hand and do not fight the
+sweep: fix the generator/source prose if a replacement reads wrong, and let the sweep run.
+
 **How these are enforced (two tiers, both required).**
 
 1. `tools/design-lint.mjs` — deterministic, no browser, **build-blocking** in `prebuild`.

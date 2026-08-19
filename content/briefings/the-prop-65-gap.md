@@ -23,12 +23,12 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "All Standards Briefings", href: "/briefings" }
-  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
 ---
 
 ## Abstract
 
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">California is the one American jurisdiction that has written into law that these metals cause cancer or reproductive harm. Under Proposition 65 it lists lead, cadmium, inorganic arsenic, hexavalent chromium, and nickel — and then, as a right-to-know statute, sets no maximum level for any of them in food. For inorganic arsenic and nickel it adopts no oral safe-harbour at all. The federal government sets no food maximum level for most of them either, leaving the operative dietary references to European regulators. This briefing is precise about the space between naming a hazard and limiting it, because that space is where a certification does its job or fails to.</p>
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">California is the one American jurisdiction that has written into law that these metals cause cancer or reproductive harm. Under Proposition 65 it lists lead, cadmium, inorganic arsenic, hexavalent chromium, and nickel, and then, as a right-to-know statute, sets no maximum level for any of them in food. For inorganic arsenic and nickel it adopts no oral safe-harbour at all. The federal government sets no food maximum level for most of them either, leaving the operative dietary references to European regulators. This briefing is precise about the space between naming a hazard and limiting it, because that space is where a certification does its job or fails to.</p>
 
 ## What Proposition 65 is, and is not
 
@@ -52,7 +52,7 @@ The result is a jurisdiction that named five metals as hazards and left the conc
 
 This is the space the Heavy Metal Tested and Certified program was built to occupy, and it is worth stating without embellishment. Where a government has judged a metal a hazard but set no dietary limit, HMTc does not invent one. It adopts the strictest maximum level any credible government has set for that product and analyte anywhere in the world, converts it to the product's native basis, and certifies each lot against it. Where a government limit exists, the standard cites it; where the only sovereign act is a hazard listing with no number attached, the program supplies the number the listing implies but never states, drawn from the tightest limit a peer regulator has been willing to set. The listing says the hazard is real. The certification says how much is too much, and holds the product to it.
 
-A Proposition 65 listing, in the end, is a government telling the public that a metal is dangerous and then handing the public a warning label instead of a limit. It is an honest half of the job. The other half — the number, measured the same way every time, published in advance, traceable to the sovereign act behind it — is the half a certification exists to do. The metals are already named. The gap is already there. What remains is to close it.
+A Proposition 65 listing, in the end, is a government telling the public that a metal is dangerous and then handing the public a warning label instead of a limit. It is an honest half of the job. The other half, the number, measured the same way every time, published in advance, traceable to the sovereign act behind it, is the half a certification exists to do. The metals are already named. The gap is already there. What remains is to close it.
 
 ## References
 
@@ -88,7 +88,7 @@ A Proposition 65 listing, in the end, is a government telling the public that a 
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change: worth doing for the documents most likely to be cited.</p>
   </div>
 
 ## Cite this briefing

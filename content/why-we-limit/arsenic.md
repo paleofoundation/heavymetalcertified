@@ -1,7 +1,7 @@
 ---
 title: "Why is arsenic limited in food? The certification rationale"
-description: "Why HMTc limits inorganic arsenic in food: a human carcinogen with no safe intake, whose dietary exposure already sits at the cancer reference point — and which rice delivers straight to the infant pl"
-dek_html: "Inorganic arsenic is a carcinogen with no safe intake, and everyday diets — especially rice-based infant foods — already reach the point the cancer assessment is anchored to."
+description: "Why HMTc limits inorganic arsenic in food: a human carcinogen with no safe intake, whose dietary exposure already sits at the cancer reference point, and which rice delivers straight to the infant pl"
+dek_html: "Inorganic arsenic is a carcinogen with no safe intake, and everyday diets, especially rice-based infant foods, already reach the point the cancer assessment is anchored to."
 type: rationale
 custom_page: true
 section: "Why we limit"
@@ -16,19 +16,19 @@ snapshot:
   - { k: "Threshold", v: "None; genotoxic" }
   - { k: "HMTc tier", v: "Tier 1 (zero-tolerance)" }
 connections:
-  - { label: "Arsenic — the analyte reference", href: "/analytes/arsenic" }
-  - { label: "Rice — the standard", href: "/standards/rice-bulk-grain" }
+  - { label: "Arsenic: the analyte reference", href: "/analytes/arsenic" }
+  - { label: "Rice: the standard", href: "/standards/rice-bulk-grain" }
   - { label: "Why we limit each metal", href: "/why-we-limit" }
   - { label: "How limits are derived", href: "/program/structure" }
-  - { label: "Heavy Metal Index — arsenic literature", href: "https://heavymetalindex.com/metals/arsenic" }
+  - { label: "Heavy Metal Index: arsenic literature", href: "https://heavymetalindex.com/metals/arsenic" }
 rail_box:
   title: "Why we limit each metal"
-  body: "One page per metal on the panel, each answering why HMTc limits it in food — the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index."
+  body: "One page per metal on the panel, each answering why HMTc limits it in food: the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index."
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE RATIONALE</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Certification rationale &middot; Heavy Metal Certified &middot; August 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">HMTc limits inorganic arsenic because it is an IARC Group 1 human carcinogen for which the assessment bodies have set no safe intake threshold, and ordinary dietary exposure already sits at or above the reference point EFSA uses to anchor the cancer risk — so there is no headroom to give away.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">HMTc limits inorganic arsenic because it is an IARC Group 1 human carcinogen for which the assessment bodies have set no safe intake threshold, and ordinary dietary exposure already sits at or above the reference point EFSA uses to anchor the cancer risk, so there is no headroom to give away.</p>
 </div>
 
 ## In brief
@@ -37,9 +37,9 @@ Inorganic arsenic is limited in food because it is a genotoxic human carcinogen 
 
 ## The health basis for limiting arsenic
 
-Inorganic arsenic is an IARC Group 1 human carcinogen, with the strongest dose-response evidence for skin, lung and bladder cancer, and it is genotoxic — the mechanism that leads assessment bodies not to set a safe threshold. In its 2024 reassessment, EFSA concluded inorganic arsenic is a genotoxic carcinogen and, rather than deriving a tolerable intake, selected a Reference Point of BMDL05 = 0.06 µg inorganic arsenic per kg body weight per day for skin cancer — and reported that dietary exposure across Europe already sits at or above that point. The Joint FAO/WHO Expert Committee on Food Additives had already withdrawn the earlier provisional tolerable weekly intake of 15 µg/kg body weight at its 73rd meeting in June 2010 (WHO Technical Report Series 960), on the finding that arsenic causes cancer at exposures below it.
+Inorganic arsenic is an IARC Group 1 human carcinogen, with the strongest dose-response evidence for skin, lung and bladder cancer, and it is genotoxic: the mechanism that leads assessment bodies not to set a safe threshold. In its 2024 reassessment, EFSA concluded inorganic arsenic is a genotoxic carcinogen and, rather than deriving a tolerable intake, selected a Reference Point of BMDL05 = 0.06 µg inorganic arsenic per kg body weight per day for skin cancer, and reported that dietary exposure across Europe already sits at or above that point. The Joint FAO/WHO Expert Committee on Food Additives had already withdrawn the earlier provisional tolerable weekly intake of 15 µg/kg body weight at its 73rd meeting in June 2010 (WHO Technical Report Series 960), on the finding that arsenic causes cancer at exposures below it.
 
-Because only the inorganic fraction carries this risk, the analyte is measured as total arsenic and speciated to inorganic where a food form warrants it — organoarsenicals in seafood are largely inert. The full agency record, including the US EPA IRIS reassessment and the ATSDR profile, is on [the arsenic analyte reference](/analytes/arsenic).
+Because only the inorganic fraction carries this risk, the analyte is measured as total arsenic and speciated to inorganic where a food form warrants it: organoarsenicals in seafood are largely inert. The full agency record, including the US EPA IRIS reassessment and the ATSDR profile, is on [the arsenic analyte reference](/analytes/arsenic).
 
 ## Who the exposure reaches
 
@@ -47,13 +47,13 @@ The population most exposed to inorganic arsenic per unit of body weight is infa
 
 ## Where arsenic shows up in food
 
-Inorganic arsenic concentrates in rice and rice products — including rice cereal, rice cakes, rice milk and rice-based snacks — and in some seaweeds; it also appears in certain fruit juices and follows drinking-water contamination into prepared foods. The signal is dominated by the rice matrix, which is why the certification standard treats rice-based categories distinctly from other grains.
+Inorganic arsenic concentrates in rice and rice products, including rice cereal, rice cakes, rice milk and rice-based snacks, and in some seaweeds; it also appears in certain fruit juices and follows drinking-water contamination into prepared foods. The signal is dominated by the rice matrix, which is why the certification standard treats rice-based categories distinctly from other grains.
 
 The per-category occurrence figures and the derivation behind each limit are on the [standards register](/standards); the complete occurrence corpus, and the speciation evidence separating inorganic from organic arsenic, are on [the Heavy Metal Index](https://heavymetalindex.com/metals/arsenic).
 
 ## Why a certification limit is warranted
 
-When the assessment bodies decline to name a safe intake and current exposure already reaches the cancer reference point, there is no margin to certify against — the objective is to hold the number as low as the supply chain can reach. Governments have moved: the EU and Codex set maximum levels for inorganic arsenic in rice and rice destined for infant food, and the FDA has proposed action levels for infant rice cereal. These are ceilings; they do not verify a given lot.
+When the assessment bodies decline to name a safe intake and current exposure already reaches the cancer reference point, there is no margin to certify against: the objective is to hold the number as low as the supply chain can reach. Governments have moved: the EU and Codex set maximum levels for inorganic arsenic in rice and rice destined for infant food, and the FDA has proposed action levels for infant rice cereal. These are ceilings; they do not verify a given lot.
 
 HMTc classifies inorganic arsenic as one of four Tier-1 zero-tolerance toxics, applies its speciation reflex where total arsenic could otherwise overstate the inorganic load, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked lot by lot. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure).
 
@@ -95,11 +95,11 @@ HMTc treats inorganic arsenic as a Tier-1 zero-tolerance toxic, speciates total 
 
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 12px;max-width:84ch">This page synthesises three surfaces that carry the underlying evidence, and links to them rather than re-hosting them:</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb">
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The government and expert-body assessments, agency by agency, with the toxicological reference points — <a href="/analytes/arsenic" style="color:#1c43ad">the Inorganic arsenic analyte reference</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Reference</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The certification limits in force, and the Method v2.0 derivation behind each — <a href="/standards" style="color:#1c43ad">the HMTc standards register</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Standard</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus — <a href="https://heavymetalindex.com/metals/arsenic" style="color:#1c43ad">Inorganic arsenic on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The government and expert-body assessments, agency by agency, with the toxicological reference points: <a href="/analytes/arsenic" style="color:#1c43ad">the Inorganic arsenic analyte reference</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Reference</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The certification limits in force, and the Method v2.0 derivation behind each: <a href="/standards" style="color:#1c43ad">the HMTc standards register</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Standard</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus: <a href="https://heavymetalindex.com/metals/arsenic" style="color:#1c43ad">Inorganic arsenic on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:12px 0 0">The Heavy Metal Index is an independent literature reference; this certification site cites it one way and applies its evidence to the certification question. The Index never cites back — that is what keeps it a disinterested source.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:12px 0 0">The Heavy Metal Index is an independent literature reference; this certification site cites it one way and applies its evidence to the certification question. The Index never cites back: that is what keeps it a disinterested source.</p>
 
 
 ## Cite this page

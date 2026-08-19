@@ -7,7 +7,7 @@ connections:
   - { label: "All standards", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Program Manuals", href: "/manuals" }
-  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com/data" }
+  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com/data" }
 rail_box:
   title: "Machine-readable"
   body: "The download files carry schema.org Dataset markup and a version stamp, so answer engines and QA systems can cite the exact limit and reconstruct the snapshot."
@@ -21,12 +21,12 @@ The published HMTc standards are available as machine-readable, versioned files.
 
 ## The dataset
 
-### Published standards — `standards.json` / `standards.csv`
+### Published standards, `standards.json` / `standards.csv`
 
-One record per published standard — a live standard page under `/standards/`. For each standard the file reports, per variant and per analyte: the published limit in ppb on the row's native basis, the control basis, the controlling jurisdiction and the specific government instrument that sets it, and — for government-limit cells — the full per-country table of the sovereign limits the value was selected from.
+One record per published standard, a live standard page under `/standards/`. For each standard the file reports, per variant and per analyte: the published limit in ppb on the row's native basis, the control basis, the controlling jurisdiction and the specific government instrument that sets it, and, for government-limit cells, the full per-country table of the sovereign limits the value was selected from.
 
-- [`/static/data/standards.json`](/static/data/standards.json) — nested, one object per standard, keyed by variant then analyte.
-- [`/static/data/standards.csv`](/static/data/standards.csv) — tidy/long, one row per standard × variant × analyte.
+- [`/static/data/standards.json`](/static/data/standards.json): nested, one object per standard, keyed by variant then analyte.
+- [`/static/data/standards.csv`](/static/data/standards.csv): tidy/long, one row per standard × variant × analyte.
 
 Per-analyte field schema (JSON):
 
@@ -34,7 +34,7 @@ Per-analyte field schema (JSON):
 |-------|---------|
 | `status` | `published` (a firm limit applies), `not_material` (a controlled screen, no numeric limit), or `in_development` |
 | `value_ppb` | the published limit in ppb, on the row's `native_basis`; `null` for non-numeric states |
-| `native_basis` | the basis the limit is stated on — `as_sold`, `as_consumed`, etc. |
+| `native_basis` | the basis the limit is stated on: `as_sold`, `as_consumed`, etc. |
 | `control_basis` | `government-limit` (the Method v2.0 default), `government-read-across` (nearest government value where none regulates the exact analyte), `controlled-screen`, or `regulatory-alignment` |
 | `controlling_jurisdiction` | the jurisdiction whose limit binds |
 | `controlling_instrument` | the identifier of the specific government instrument |
@@ -44,11 +44,11 @@ The CSV carries the scalar fields; the nested `per_country` provenance is in the
 
 ## How limits are set
 
-Every limit defaults to the strictest applicable government maximum level any credible regulator sets for the product, converted to the row's native basis (Method v2.0, a lookup — not a novel computation). Where no government regulates the exact analyte for a product, the nearest government value is read across and disclosed as such. Occurrence data tightens a limit only for the Tier-1 toxics and for cells no government regulates. The full method is on the [program structure](/program/structure) page.
+Every limit defaults to the strictest applicable government maximum level any credible regulator sets for the product, converted to the row's native basis (Method v2.0, a lookup: not a novel computation). Where no government regulates the exact analyte for a product, the nearest government value is read across and disclosed as such. Occurrence data tightens a limit only for the Tier-1 toxics and for cells no government regulates. The full method is on the [program structure](/program/structure) page.
 
 ## Evidence base (one-way)
 
-These files publish the certification standards. The measured heavy-metal occurrence evidence the standards are checked against is reported independently by the Heavy Metal Index and cited one way — every record carries an `hmi_literature_link` to the corresponding literature page, and the Index's own machine-readable occurrence data is published at [heavymetalindex.com/data](https://heavymetalindex.com/data). The Index does not publish HMTc limits; the certifier does not restate the literature. Keeping the evidence and the standard on separate surfaces is what lets each stand on its own.
+These files publish the certification standards. The measured heavy-metal occurrence evidence the standards are checked against is reported independently by the Heavy Metal Index and cited one way: every record carries an `hmi_literature_link` to the corresponding literature page, and the Index's own machine-readable occurrence data is published at [heavymetalindex.com/data](https://heavymetalindex.com/data). The Index does not publish HMTc limits; the certifier does not restate the literature. Keeping the evidence and the standard on separate surfaces is what lets each stand on its own.
 
 ## Versioning and reconstructibility
 

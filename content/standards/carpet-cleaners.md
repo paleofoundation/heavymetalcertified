@@ -1,5 +1,5 @@
 ---
-title: "Carpet cleaners — HMTc Standard"
+title: "Carpet cleaners: HMTc Standard"
 type: standard
 custom_page: true
 firm_analytes: 4
@@ -10,7 +10,7 @@ product_slug: carpet-cleaners
 subcategory: "Carpet cleaners"
 governing_basis: "No sovereign sets heavy-metal maximums for hard-surface / incidental-dermal cleaning products; the eco-label and disclosure regimes (EPA Safer Choice, Green Seal GS-8, CA SB 258, NY Household Cleaner Disclosure Act) are ingredient-disclosure and eco-labeling regimes, not heavy-metal MLs. The toxic panel (Pb/tAs/Cd/tHg) is read across from the nearest applicable coherent sovereign regime (China NMPA 2015 mandatory cosmetic trace-metal limits), conservative because a cosmetic is prolonged leave-on skin contact and a hard-surface cleaner is incidental dermal. Basis: total content in the product as placed on the market."
 standard_version: "1.0 (2026-08-13)"
-methodology_version: "Method v2.0 — strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)"
+methodology_version: "Method v2.0: strictest credible government limit per analyte, in the correct basis (CLAUDE.md Part 19)"
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/carpet-cleaners
 effective_date: 2026-08-13
@@ -28,7 +28,7 @@ snapshot:
 connections:
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
-  - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com/products/carpet-cleaners" }
+  - { label: "Heavy Metal Index: literature baseline", href: "https://heavymetalindex.com/products/carpet-cleaners" }
 ---
 <section id="method" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How every number on this page is set</h2>
 <p style="font-size:14px;line-height:1.7;color:#5a4141;margin:0 0 20px;max-width:84ch;padding:13px 16px;background:#fdf4f3;border-left:3px solid #9f2727"><span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#9f2727;margin-bottom:5px">What this standard covers</span>Carpet shampoos and extraction cleaners (rinse/extract off; incidental-dermal exposure).</p>
@@ -46,7 +46,7 @@ connections:
       <tr><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Mercury, total (tHg)</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;font-size:12px">Tier 1</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;text-align:right;white-space:nowrap">1</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;font-size:12.5px">total mercury content, product as placed on the market (mg/kg)</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;font-size:12.5px">China (read-across)</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;font-size:12px">read-across</td></tr>
 </tbody></table></div></section>
 
-<section id="controls" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Screened by method &mdash; no government limit</h2>
+<section id="controls" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Screened by method: no government limit</h2>
 <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">No sovereign sets a heavy-metal maximum for these analytes in a household cleaning product, yet each is a real or plausible contaminant of the class. Rather than invent a number, the standard publishes the analytical method and the escalation rule for each: certification measures the analyte and escalates an out-of-band lot to ALARA review, not to a pass/fail against a fabricated threshold. This is an honest control, not a silent gap.</p>
 <div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:46rem;border-collapse:collapse">
 <thead><tr style="background:#9f2727;color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analytical method</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Escalation rule</th></tr></thead>
@@ -67,7 +67,7 @@ connections:
       <tr style="background:#fdfaf8"><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f;white-space:nowrap">Tin (Sn)</td><td style="padding:11px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;font-size:12.5px;line-height:1.6">Inorganic tin has no source in a hard-surface cleaning formulation (no tinplate/canned-food pathway). Organotin is a DISTINCT species (biocide/stabiliser) restricted by <a href="https://heavymetalindex.com/regulations/eu-reach-2009-annex-xvii-entry-20-organotin" style="color:#1c43ad">REACH Annex XVII entry 20</a> and screened separately where a formulation could carry it; it does not bound, and is not bounded by, this inorganic-tin cell. No jurisdiction sets an inorganic-tin limit for cleaning products, and no routed occurrence source measured tin.</td></tr>
 </tbody></table></div></section>
 
-<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government value, side by side</h2>
+<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation: every government value, side by side</h2>
 <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">Each row lists the government value(s) weighed for this analyte in the total-content basis, converted to mg/kg; the HMTc limit is the strictest of them (or the disclosed read-across where no direct sovereign limit exists).</p>
 <div style="overflow-x:auto"><table style="width:100%;font-size:13px;border:1px solid #e8e1db;min-width:44rem;border-collapse:collapse">
 <thead><tr style="background:#9f2727;color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Government value(s) considered (mg/kg)</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binds</th></tr></thead>

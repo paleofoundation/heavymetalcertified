@@ -30,15 +30,15 @@ A retailer that names HMTc on an approved-certification list anchors its private
 
 ## What HMTc adds over the marks you already accept
 
-- [Certification comparison](/compare) &mdash; HMTc against NSF/ANSI 173, USP Verified, Clean Label Project and the rest, metal by metal. As of August 2026 it is the only third-party certification covering all eight metals.
-- [Four metals is no longer enough](/briefings/brief-7-four-vs-eight) &mdash; the regulatory movement (EU nickel, Codex tin, California hexavalent chromium) turning a four-metal panel into a shrinking floor.
-- [The Retailer as Anchor](/briefings/brief-5-retailer-as-anchor) &mdash; how a retailer&rsquo;s approved list moves a whole category, and the exposure of anchoring to the wrong standard.
+- [Certification comparison](/compare): HMTc against NSF/ANSI 173, USP Verified, Clean Label Project and the rest, metal by metal. As of August 2026 it is the only third-party certification covering all eight metals.
+- [Four metals is no longer enough](/briefings/brief-7-four-vs-eight): the regulatory movement (EU nickel, Codex tin, California hexavalent chromium) turning a four-metal panel into a shrinking floor.
+- [The Retailer as Anchor](/briefings/brief-5-retailer-as-anchor): how a retailer&rsquo;s approved list moves a whole category, and the exposure of anchoring to the wrong standard.
 
 ## Verifying and monitoring the mark
 
-- [Verify a certificate](/verify) &mdash; check a supplier&rsquo;s lot, certificate, or product code against the public register.
-- [The certified-brand directory](/brands) &mdash; the published list of brands carrying the mark.
-- [The Surveillance Protocol](/briefings/brief-8-surveillance-protocol) &mdash; the continuous lot testing and chain of custody behind a certificate, so the seal still means something after the first passing lot.
-- [The standards a product is held to](/standards) &mdash; the numeric limits, per subcategory, in each product&rsquo;s native basis.
+- [Verify a certificate](/verify): check a supplier&rsquo;s lot, certificate, or product code against the public register.
+- [The certified-brand directory](/brands): the published list of brands carrying the mark.
+- [The Surveillance Protocol](/briefings/brief-8-surveillance-protocol): the continuous lot testing and chain of custody behind a certificate, so the seal still means something after the first passing lot.
+- [The standards a product is held to](/standards): the numeric limits, per subcategory, in each product&rsquo;s native basis.
 
 <p style="font-size:13px;line-height:1.6;color:#a9a1a1;border-top:1px solid #e8e1db;padding-top:14px;margin-top:32px">Reading for a different role? <a href="/for-brands">For brands</a> routes founders and marketing leads; <a href="/for-legal-qa">For legal &amp; QA</a> routes regulatory, quality, and legal teams.</p>
