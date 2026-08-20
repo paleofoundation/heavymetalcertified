@@ -13,7 +13,7 @@ snapshot:
   - { k: "Sampling", v: "per-lot chain of custody" }
 connections:
   - { label: "How every limit is derived", href: "/program/structure" }
-  - { label: "The Evidence a Jury Will See", href: "/briefings/defense-counsel-briefing" }
+  - { label: "The certification record under challenge", href: "/briefings/defense-counsel-briefing" }
   - { label: "The standards register", href: "/standards" }
   - { label: "For brands", href: "/for-brands" }
   - { label: "For retailers", href: "/for-retailers" }
@@ -26,7 +26,9 @@ rail_box:
 
 ## Start here for due diligence
 
-Regulatory and quality teams check whether a certification&rsquo;s scientific basis is traceable to the literature; legal teams price it as litigation insurance and ask whether it would survive a plaintiff&rsquo;s expert. HMTc is built for that reading: every published limit traces to a named government maximum or a documented occurrence pool, in the product&rsquo;s native basis, and the derivation is published rather than self-asserted. This page routes you to the record.
+Regulatory and quality teams check whether a certification&rsquo;s scientific basis is traceable to the literature; legal teams ask whether it would survive a plaintiff&rsquo;s expert. What HMTc provides for that reading is a documented control record: what a company tested, what it found, what it controlled, what it corrected, and how the correction was independently verified. Every published limit traces to a named government maximum or a documented occurrence pool, in the product&rsquo;s native basis, and the derivation is published rather than self-asserted. This page routes you to the record.
+
+HMTc is not legal advice, and it does not determine a brand&rsquo;s reporting, recall, disclosure, or contractual obligations. It provides a documented, independently verified control record. It does not promise a legal outcome.
 
 ## How the limits are set, and traced
 
@@ -37,8 +39,8 @@ Regulatory and quality teams check whether a certification&rsquo;s scientific ba
 
 ## The defensibility record
 
-- [The Evidence a Jury Will See](/briefings/defense-counsel-briefing): what a certificate, a lab report, and a chain of custody look like under challenge.
-- [After Palmquist](/briefings/after-palmquist): the litigation context that makes an uncovered metal a liability.
+- [The certification record under challenge](/briefings/defense-counsel-briefing): what a certificate, a lab report, and a chain of custody look like under challenge.
+- [After Palmquist](/briefings/after-palmquist): a procedural forum ruling, not a decision on causation, negligence, testing duties, or certification, and why an uncovered metal is still a liability in the environment it describes.
 - [How HMTc compares](/compare): the coverage claim, scoped and dated, so the comparison is defensible rather than promotional.
 - [Two remediation pathways](/program/two-pathways): what happens when a lot falls short, and the record it leaves.
 
