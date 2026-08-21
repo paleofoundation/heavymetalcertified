@@ -7,7 +7,7 @@ updated: 2026-08-20
 breadcrumb_leaf: "Requirements"
 snapshot_title: "Requirements"
 snapshot:
-  - { k: "Guides published", v: "1" }
+  - { k: "Guides published", v: "2" }
   - { k: "Scope", v: "category-specific law" }
   - { k: "HMTc role", v: "helps, does not replace" }
 connections:
@@ -31,5 +31,6 @@ The boundary is the same on every guide: a certification helps a brand act on ma
 ## Published guides
 
 - [California baby-food testing and disclosure (AB 899)](/requirements/california-baby-food-testing): monthly testing of each production aggregate for arsenic, cadmium, lead, and mercury, and public website disclosure of the results since January 1, 2025. Infant formula is excluded.
+- [Maryland baby-food testing and disclosure (Rudy's Law)](/requirements/maryland-baby-food-testing): monthly testing of each production aggregate for the same four metals from 2025, and public website disclosure from 2026, with a QR code on the label of a product subject to an actionable limit. Infant formula is excluded.
 
 Further category guides are added as each is verified against its primary source. For the instrument-level record of the sovereign limits a standard adopts, see the [regulation references](/regulations).
