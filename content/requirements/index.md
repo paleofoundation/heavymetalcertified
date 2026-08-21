@@ -7,7 +7,7 @@ updated: 2026-08-20
 breadcrumb_leaf: "Requirements"
 snapshot_title: "Requirements"
 snapshot:
-  - { k: "Guides published", v: "2" }
+  - { k: "Guides published", v: "6" }
   - { k: "Scope", v: "category-specific law" }
   - { k: "HMTc role", v: "helps, does not replace" }
 connections:
@@ -30,7 +30,11 @@ The boundary is the same on every guide: a certification helps a brand act on ma
 
 ## Published guides
 
+- [Heavy-metal testing requirements for baby-food brands](/requirements/baby-food-heavy-metals): the overview of the federal layer (the FDA's non-binding lead action levels; no federal testing mandate) and the widening state patchwork (California, Maryland, Virginia, Illinois, with more phasing in). Start here for the whole baby-food picture.
 - [California baby-food testing and disclosure (AB 899)](/requirements/california-baby-food-testing): monthly testing of each production aggregate for arsenic, cadmium, lead, and mercury, and public website disclosure of the results since January 1, 2025. Infant formula is excluded.
-- [Maryland baby-food testing and disclosure (Rudy's Law)](/requirements/maryland-baby-food-testing): monthly testing of each production aggregate for the same four metals from 2025, and public website disclosure from 2026, with a QR code on the label of a product subject to an actionable limit. Infant formula is excluded.
+- [Maryland baby-food testing and disclosure (Rudy's Law)](/requirements/maryland-baby-food-testing): monthly testing from 2025 and public website disclosure from 2026, with a QR code on the label of a product subject to an actionable limit. Infant formula is excluded.
+- [Heavy-metal controls for supplements](/requirements/supplements-heavy-metals): no federal numeric limit specific to supplements; the USP General Chapter <2232> consensus standard for the four metals, and California Proposition 65 as the practical enforcement driver. Supplements were clarified out of the baby-food laws.
+- [Heavy-metal testing for private-label manufacturers](/requirements/private-label-manufacturers): the statutory duty sits with the maker while the exposure is shared with the retailer whose name is on the pack. How a co-packer's testing becomes a claim its retail customer can verify.
+- [Heavy-metal readiness for retailers](/requirements/retailers): why the state laws and the litigation environment make heavy-metal certification a supplier-qualification and risk-management question, and how an independently verified claim beats a supplier self-report.
 
 Further category guides are added as each is verified against its primary source. For the instrument-level record of the sovereign limits a standard adopts, see the [regulation references](/regulations).
