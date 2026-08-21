@@ -17,6 +17,7 @@ connections:
   - { label: "Corrective action", href: "/program/corrective-action" }
   - { label: "Apply for certification", href: "/apply" }
   - { label: "What the mark says", href: "/mark" }
+  - { label: "California baby-food testing (AB 899)", href: "/requirements/california-baby-food-testing" }
   - { label: "What happens to your data", href: "/what-happens-to-your-data" }
   - { label: "For legal & QA", href: "/for-legal-qa" }
 rail_box:

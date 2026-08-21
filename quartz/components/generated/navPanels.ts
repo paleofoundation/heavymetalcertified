@@ -313,6 +313,7 @@ export const navPanels: NavPanel[] = [
           { label: "Certification comparison", slug: "compare" },
           { label: "For brands", slug: "for-brands" },
           { label: "For retailers", slug: "for-retailers" },
+          { label: "Requirements by category", slug: "requirements" },
           { label: "What happens to your data", slug: "what-happens-to-your-data" },
           { label: "For legal & QA", slug: "for-legal-qa" },
         ],
