@@ -130,7 +130,7 @@ rail_box:
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">Gate names not quoted verbatim</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">These are the program&rsquo;s stated publication conditions, drawn from the manual&rsquo;s methodology sections. The manual refers to &ldquo;publication gates&rdquo; without a single numbered list, so the names here are descriptive rather than quoted. Confirm against the Governance Policy before this ships.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">These are the program&rsquo;s stated publication conditions, drawn from the manual&rsquo;s methodology sections. The manual refers to &ldquo;publication gates&rdquo; without a single numbered list, so the names here are descriptive rather than quoted.</p>
   </div>
 </section>
 
@@ -195,7 +195,7 @@ rail_box:
   </div>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Surveillance intensity follows status: routine for A, elevated for B, probation protocol for C. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The Confidential Remediation Track exists so a brand that finds a problem is better off reporting it than concealing it. An item opened and kept on schedule is not published, not disclosed to retailers, and not reflected in the public register. A brand that conceals loses its certificate.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The readiness and corrective-action pathways exist so a brand that finds a problem is better off reporting it than concealing it. While a self-reported item is open and on schedule, its register visibility and retailer disclosure follow the published status rules; a released lot confirmed above its applicable limit on product represented as certified is never shielded from a required register status change or from retailer, withdrawal, or recall action. A brand that conceals a known exceedance loses its certificate.</p>
   </div>
 </section>
 
@@ -208,11 +208,11 @@ rail_box:
         <span style="font-family:Lora,serif;font-size:20px;line-height:1.3;color:#2b1f1f">Confidential track</span>
         <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">default</span>
       </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 14px">The finding, the affected lots and the corrective action stay between the brand and the program while the item is open and on schedule. Nothing appears in the public register, nothing is disclosed to retailers, and the certificate is unaffected.</p>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 14px">The finding, the affected lots and the corrective action stay between the brand and the program while the item is open and on schedule. Register visibility, retailer disclosure, and the effect on the certificate all follow the published status rules, according to whether the affected lot was released and whether the product is currently represented as certified; a released lot confirmed above its applicable limit is never shielded from a required register status change or from retailer, withdrawal, or recall action.</p>
       <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:6px">What the brand gets</div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Visible in register</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">no</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Disclosed to retailers</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">no</span></div>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certificate held</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">yes</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Visible in register</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">per status rules</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Disclosed to retailers</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">per status rules</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certificate effect</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">per status rules</span></div>
       <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Corrective action</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
       <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Re-testing</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">required</span></div>
     </div>
@@ -233,7 +233,7 @@ rail_box:
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:16px">
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Neither route is a way out of the corrective action. The choice is about disclosure, and it exists because a program that punished self-reporting would simply stop being told anything: which would make the mark worth less, not more.</p>
   </div>
-  <a href="/program/remediation" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">The Confidential Remediation Track &rarr;</a>
+  <a href="/program/remediation" style="display:inline-block;background:#9f2727;color:#fff;font-size:12.5px;padding:9px 15px;border-radius:3px;text-decoration:none">Readiness and corrective action &rarr;</a>
 </section>
 
 <section id="governance">

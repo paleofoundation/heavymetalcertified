@@ -296,13 +296,14 @@ export const navPanels: NavPanel[] = [
         heading: "How it works",
         children: [
           { label: "Program structure & gates", slug: "program/structure" },
-          { label: "Two remediation pathways", slug: "program/two-pathways" },
+          { label: "The two limit pathways", slug: "program/two-pathways" },
         ],
       },
       {
-        heading: "Policy and the mark",
+        heading: "Readiness and the mark",
         children: [
-          { label: "Confidential Remediation Track", slug: "program/remediation" },
+          { label: "The readiness pathway", slug: "program/readiness" },
+          { label: "Corrective action", slug: "program/corrective-action" },
           { label: "Using the mark", slug: "mark" },
         ],
       },
@@ -312,6 +313,7 @@ export const navPanels: NavPanel[] = [
           { label: "Certification comparison", slug: "compare" },
           { label: "For brands", slug: "for-brands" },
           { label: "For retailers", slug: "for-retailers" },
+          { label: "What happens to your data", slug: "what-happens-to-your-data" },
           { label: "For legal & QA", slug: "for-legal-qa" },
         ],
       },

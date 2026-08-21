@@ -13,11 +13,12 @@ snapshot:
   - { k: "Mark integrity", v: "conforming product only" }
 connections:
   - { label: "Find my product standard", href: "/standards" }
+  - { label: "The readiness pathway", href: "/program/readiness" }
+  - { label: "Corrective action", href: "/program/corrective-action" }
   - { label: "Apply for certification", href: "/apply" }
   - { label: "What the mark says", href: "/mark" }
-  - { label: "How limits are derived", href: "/program/structure" }
+  - { label: "What happens to your data", href: "/what-happens-to-your-data" }
   - { label: "For legal & QA", href: "/for-legal-qa" }
-  - { label: "Data and confidentiality", href: "/for-legal-qa" }
 rail_box:
   title: "Find your standard first"
   body: "Read the number your product will be held to before you spend anything on testing. No company name is required to look up a standard."
