@@ -55,7 +55,7 @@ const GOLD = [
   ["part2-program.md", "50% reflex speciation trigger", /50%/],
   ["part2-program.md", "80% PoL Tier-1 warning", /80%/],
   ["part2-program.md", "Status D reinstatement — no fresh baseline", /does not require a fresh baseline/],
-  ["part2-program.md", "Confidential Remediation Track — mark-gated", /Mark[\s\S]{0,120}(not be used|shall not be used)[\s\S]{0,120}Status A or B/i],
+  ["part2-program.md", "Confidential Remediation Track — mark-gated to Status A", /Mark[\s\S]{0,140}(not be used|shall not be used)[\s\S]{0,140}Status A\b/i],
   ["part4-lot-testing.md", "nine subcategories", /nine subcategor/i],
   ["part4-lot-testing.md", "frequency matrix present", /Testing-Frequency Matrix|Certification Status/i],
   ["part4-lot-testing.md", "C-Low brand's own sampling", /Low[\s\S]{0,120}own accredited/i],

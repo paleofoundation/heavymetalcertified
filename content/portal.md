@@ -33,7 +33,7 @@ connections:
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Specimen rows. Status A is full certification; B is a transitional variance available on Tier&nbsp;2 metals only; C is probation with the mark suspended.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Specimen rows. Status A is full certification and the only status that displays the mark; B is a transitional variance available on Tier&nbsp;2 metals only, tracked and flagged transitional in the register with the mark withheld until full compliance; C is probation with the mark suspended.</p>
 </section>
 
 <section id="documents" style="margin-bottom:52px">

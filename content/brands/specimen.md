@@ -131,7 +131,7 @@ rail_box:
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:14px 0 0">Specimen rows. Status B is a transitional variance on a Tier&nbsp;2 metal, disclosed rather than hidden: a real certification state with a defined end date, not a failure.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:14px 0 0">Specimen rows. Status B is a transitional variance on a Tier&nbsp;2 metal, disclosed rather than hidden: a real, tracked program state with a defined end date and mandatory corrective action, not a failure. During it the Certification Mark is withheld until the product returns to full compliance.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:16px 20px;margin-top:16px">
     <p style="font-size:14px;line-height:1.72;color:#5a4141;margin:0;max-width:78ch">Each product above was tested at or below every value in the standard named beside it, in that product&rsquo;s native basis, on the ten-analyte panel, by an accredited laboratory. The mark does not certify that a product is safe and does not extend to products not listed. <a href="/mark" style="color:#1c43ad">Full scope of the mark &rarr;</a></p>
   </div>

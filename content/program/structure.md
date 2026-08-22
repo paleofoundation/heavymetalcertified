@@ -154,9 +154,9 @@ rail_box:
       </tr>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">B</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Certified (Transitional)</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">yes, disclosed</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">A Tier 2 metal up to 150% of limit, under Part 2.3 conditions, with a defined end date and corrective action.</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Transitional (mark withheld)</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no, until Status A</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">A Tier 2 metal up to 150% of limit, under Part 2.3 conditions, with a defined end date and corrective action. Tracked and flagged transitional in the register; the mark is not displayed until the product returns to Status A.</td>
       </tr>
       <tr>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">C</td>
@@ -179,7 +179,7 @@ rail_box:
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Transitional certification is available on Tier&nbsp;2 metals only, up to 150% of the applicable limit, under the conditions in Part 2.3. No transitional exceedance exists for a Tier&nbsp;1 metal at any margin.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Transitional handling is available on Tier&nbsp;2 metals only, up to 150% of the applicable limit, under the conditions in Part 2.3; during it the product is tracked and flagged transitional in the register, and the mark is withheld until the product returns to Status A. The mark is never displayed above the published limit. No transitional exceedance exists for a Tier&nbsp;1 metal at any margin.</p>
 </section>
 
 <section id="surveillance" style="margin-bottom:52px">

@@ -62,8 +62,8 @@ Status is assigned from MaxPoL and the Tier 1/Tier 2 classification of any excee
 | Status | Designation | MaxPoL / trigger | Mark use |
 |---|---|---|---|
 | A | Certified — Full Compliance | MaxPoL ≤ 100% for all analytes | Permitted, unrestricted |
-| B | Certified — Transitional | 101–150%, exceedance limited to Tier 2 only, no Tier 1 above 100%, no hard-stop | Permitted, flagged transitional in the registry |
-| C | Probation | 151–200% for any analyte; or any Tier 1 above 100% at any margin; or repeated Status B without improvement; or systemic control failure; or unmet transitional conditions | Not on new production; lot-by-lot release only where that lot tests at A/B level |
+| B | Transitional (mark withheld) | 101–150%, exceedance limited to Tier 2 only, no Tier 1 above 100%, no hard-stop | Withheld until Status A; the SKU is tracked and flagged transitional in the registry, and the mark is not displayed on product, packaging, or marketing |
+| C | Probation | 151–200% for any analyte; or any Tier 1 above 100% at any margin; or repeated Status B without improvement; or systemic control failure; or unmet transitional conditions | Not on new production; lot-by-lot release only where that lot tests at Status A level (at or below every published limit) |
 | D | Suspension | Above 200% MaxPoL for any analyte; or any hard-stop (regulatory-limit violation or data-integrity failure); or failure to execute testing, CAPA, or directives on probation | Prohibited; Mark removed from all units and marketing immediately |
 | E | Revocation | Persistent suspension without correction; severe or repeated nonconformance; willful misconduct or data fraud | Permanently prohibited; license terminated |
 
@@ -86,12 +86,12 @@ Revocation is permanent and terminates the license. Re-entry is by full re-appli
 
 ## 2.3 Transitional Variance (Status B)
 
-Status B is a time-limited, conditional certification for a Tier 2 exceedance. All of the following conditions must hold:
+Status B is a time-limited, conditional transitional state for a Tier 2 exceedance, during which the Certification Mark is withheld. All of the following conditions must hold:
 
 - MaxPoL is above 100% but no greater than 150%.
 - The exceedance is limited to Tier 2 metals; no Tier 1 metal exceeds 100%.
 - No other hard-stop condition is triggered.
-- The Certification Mark is permitted, flagged transitional in the registry.
+- The Certification Mark is withheld until the SKU returns to Status A (at or below every published limit); the SKU is tracked and flagged transitional in the registry, and the mark is not displayed on product, packaging, or marketing while the SKU is in Status B.
 - Surveillance is elevated: monthly independent sampling minimum, with every-lot testing where a risk assessment requires it.
 - A CAPA is mandatory: opened within 10 business days, with a detailed plan within 30 calendar days, and VOE demonstrating a measurable reduction across subsequent lots.
 - A default 12-month period applies to reach Status A; the Program Operator may extend for documented complexity.
@@ -104,7 +104,7 @@ The Confidential Remediation Track is an entry and support pathway for brands wh
 
 - Confidentiality. Enrolment status, test data, CAPA documents, and remediation progress are treated as confidential business information under the license agreement.
 - Support. Enrolled brands receive confidential remediation support — reformulation and technical assistance — together with supplier intelligence and access to the Program's testing infrastructure.
-- Mark-use rule (hard). The Certification Mark shall not be used on any product, packaging, or marketing until at least one SKU achieves Status A or B.
+- Mark-use rule (hard). The Certification Mark shall not be used on any product, packaging, or marketing until at least one SKU achieves Status A. A SKU in the transitional band (Status B) is tracked and flagged transitional in the registry but does not display the mark until it returns to Status A.
 - Interaction with prior-data credit. The Track is not available together with the Expedited Baseline (prior-data credit) pathway.
 - Timelines. The Track uses the standard governance CAPA windows (Section 2.8); it carries no separate remediation windows.
 
