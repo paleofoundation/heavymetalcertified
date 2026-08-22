@@ -15,14 +15,14 @@ connections:
   - { label: "Institute of Contaminant Standards", href: "https://contaminantstandards.com" }
 rail_box:
   title: "Apply"
-  body: "Fifteen subcategory standards are locked across eight categories, with more in development."
+  body: "348 subcategory standards are in force across 34 categories, and 320 already carry a firm limit, with more clearing each edition."
   cta_label: "Start an application"
   cta_href: "/apply"
 ---
 
 <section id="tiers" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Analyte tiering</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Eight priority metals, tested as ten analytes because arsenic and mercury are speciated and chromium is speciated on trigger. Each metal is assigned to a tier by its toxicological profile, and the tier determines whether any exceedance can ever be tolerated.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Eight priority metals, tested as ten analytes because arsenic and chromium are speciated to the toxic form; methylmercury is a conditional eleventh, speciated by reflex on trigger and bounded by the total-mercury limit. Each metal is assigned to a tier by its toxicological profile, and the tier determines whether any exceedance can ever be tolerated.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
     <div style="background:#fffdfb;padding:19px">
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">

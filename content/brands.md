@@ -32,7 +32,7 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The register</h2>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:18px 20px;margin-bottom:20px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No brands certified yet</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0 0 12px;max-width:76ch">The register opens with the first certificate issued against a published subcategory standard. Fifteen standards are published and open for application; no brand has completed the three-lot baseline yet. This is an empty register, not a hidden one: when it fills, it fills here.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0 0 12px;max-width:76ch">The register opens with the first certificate issued against a published subcategory standard. 348 subcategory standards are in force and open for application; no brand has completed the three-lot baseline yet. This is an empty register, not a hidden one: when it fills, it fills here.</p>
     <a href="/apply" style="font-size:13px;color:#1c43ad">Apply to be the first &rarr;</a>
   </div>
   <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:10px">Specimen entry</div>
