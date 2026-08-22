@@ -44,6 +44,7 @@ const KIND: Record<string, string> = {
   standard: "Standard",
   "standard-in-development": "Standard",
   "standards-index": "Register",
+  "standards-finder": "Guided lookup",
   analyte: "Reference",
   "public-briefing": "Briefing",
   "briefings-index": "Directory",

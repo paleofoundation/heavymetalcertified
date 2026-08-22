@@ -43,6 +43,13 @@ export const navPanels: NavPanel[] = [
       "Subcategory standards, each in its product's native basis. Published per subcategory the moment each is defensibly ready, never as a category-wide release.",
     groups: [
       {
+        heading: "Find your standard",
+        children: [
+          { label: "Standards Finder (guided lookup)", slug: "standards/finder" },
+          { label: "Full register, by category", slug: "standards" },
+        ],
+      },
+      {
         heading: "Seafood",
         children: [
           { label: "Marine fish, predatory", slug: "standards/fish-marine-predatory" },

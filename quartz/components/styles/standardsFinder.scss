@@ -1,0 +1,340 @@
+// Standards Finder — the guided lookup on /standards/finder.
+//
+// Cert design canon (docs/design-canon): #9f2727 accent via --secondary, Lora /
+// IBM Plex Mono / system sans, no bold on the reading surface (weights 400, or 500
+// for mono labels and measured values only), no gradient, radius 2-3px, no shadow
+// outside modals. Colours are theme tokens so the tool is dark-mode aware. The
+// analyte panel is rendered as a plain <table> so it inherits the canonical
+// burgundy-header table from cert-chrome.scss and is not restyled here.
+
+.hmtc-finder {
+  border: 1px solid var(--lightgray);
+  border-radius: 3px;
+  margin: 0 0 1.6rem;
+  padding: 1.25rem 1.35rem 1.4rem;
+}
+
+.hmtc-finder-intro {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 1.1rem;
+  max-width: 70ch;
+}
+
+// ── Controls ──────────────────────────────────────────────────────────────
+.hmtc-finder-controls {
+  display: grid;
+  gap: 0.85rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin-bottom: 1.2rem;
+}
+
+.hmtc-finder-field {
+  color: var(--gray);
+  display: grid;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hmtc-finder-field.is-hidden {
+  display: none;
+}
+
+.hmtc-finder-field select {
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: var(--dark);
+  font: inherit;
+  font-family: var(--bodyFont, system-ui, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.6rem 0.65rem;
+  text-transform: none;
+  width: 100%;
+}
+
+.hmtc-finder-report {
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  display: grid;
+  gap: 0.55rem;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0.8rem 0.9rem;
+}
+
+.hmtc-finder-report legend {
+  color: var(--gray);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.hmtc-finder-report-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+
+.hmtc-finder-report label {
+  align-items: center;
+  color: var(--dark);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.9rem;
+  gap: 0.4rem;
+}
+
+// ── Status / loading ──────────────────────────────────────────────────────
+.hmtc-finder-status {
+  background: var(--highlight);
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  color: var(--gray);
+  font-size: 0.88rem;
+  padding: 0.75rem 0.85rem;
+}
+
+.hmtc-finder-status.is-error {
+  color: var(--secondary);
+}
+
+// ── Result ────────────────────────────────────────────────────────────────
+.hmtc-finder-result {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.hmtc-finder-block {
+  border: 1px solid var(--lightgray);
+  border-radius: 3px;
+  padding: 0.95rem 1.05rem 1.05rem;
+}
+
+.hmtc-finder-kicker {
+  color: var(--secondary);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.55rem;
+  text-transform: uppercase;
+}
+
+.hmtc-finder-lead {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.8rem;
+  justify-content: space-between;
+}
+
+.hmtc-finder-title {
+  color: var(--dark);
+  font-family: Lora, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hmtc-finder-block p {
+  color: var(--darkgray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0.6rem 0 0;
+}
+
+.hmtc-finder-block p.hmtc-finder-note {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+// Status chip (eligibility, market).
+.hmtc-finder-chip {
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hmtc-finder-chip.is-firm {
+  background: var(--highlight);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.hmtc-finder-chip.is-partial,
+.hmtc-finder-chip.is-forming {
+  color: var(--gray);
+}
+
+// Dotted key-value rows (the canon primitive).
+.hmtc-finder-kv {
+  display: grid;
+  gap: 0;
+  margin: 0.5rem 0 0;
+}
+
+.hmtc-finder-kv > div {
+  border-bottom: 1px dotted var(--lightgray);
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 0.5rem 0;
+}
+
+.hmtc-finder-kv dt {
+  color: var(--darkgray);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.hmtc-finder-kv dd {
+  color: var(--secondary);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: right;
+}
+
+// Panel table. The Finder mounts in the afterBody slot, which renders outside
+// .wiki-content, so the canonical burgundy-header table rule (cert-chrome.scss
+// .wiki-content table) does not reach it. These declarations reproduce that exact
+// canon here, scoped to the Finder: #9f2727 head, IBM Plex Mono 10px/500 uppercase,
+// per-row rule, no zebra, no hover, no bold. This is not a second `.wiki-content
+// table` block, so it does not violate the one-canonical-table rule.
+.hmtc-finder-panel {
+  margin-top: 0.4rem;
+}
+
+.hmtc-finder-panel table {
+  border: 1px solid var(--lightgray);
+  border-collapse: collapse;
+  display: block;
+  font-size: 0.84rem;
+  margin-top: 0.4rem;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.hmtc-finder-panel thead tr {
+  background: var(--secondary);
+}
+
+.hmtc-finder-panel thead th {
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.hmtc-finder-panel tbody td {
+  border-bottom: 1px solid var(--lightgray);
+  color: var(--darkgray);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  padding: 0.7rem 0.9rem;
+  vertical-align: top;
+}
+
+.hmtc-finder-panel tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.hmtc-finder-panel td a {
+  color: var(--secondary);
+}
+
+// A muted state label inside a table cell (in development, controlled screen).
+.hmtc-finder-cellstate {
+  color: var(--gray);
+  font-family: var(--bodyFont, system-ui, sans-serif);
+  font-size: 0.78rem;
+}
+
+// Tightest-limits / flags list.
+.hmtc-finder-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.7rem 0 0;
+}
+
+.hmtc-finder-tag {
+  border: 1px solid var(--lightgray);
+  border-radius: 2px;
+  color: var(--darkgray);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+}
+
+.hmtc-finder-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0.85rem 0 0;
+}
+
+.hmtc-finder-links a {
+  color: var(--secondary);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+// Route recommendation.
+.hmtc-finder-route {
+  border-left: 3px solid var(--secondary);
+  border-radius: 0 3px 3px 0;
+  padding: 0.15rem 0 0.15rem 0.95rem;
+}
+
+.hmtc-finder-disclaimer {
+  border-top: 1px solid var(--lightgray);
+  color: var(--gray);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 1.1rem 0 0;
+  padding-top: 0.85rem;
+}
+
+.hmtc-finder-fallback {
+  color: var(--gray);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0.6rem 0 0;
+}
+
+@media all and (max-width: 520px) {
+  .hmtc-finder {
+    padding: 1rem;
+  }
+}

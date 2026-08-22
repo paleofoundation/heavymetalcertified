@@ -20,7 +20,12 @@ export const sharedPageComponents: SharedLayout = {
   // (its prior home at b6aadf4). The rail is display:none on mobile, and a fixed
   // overlay nested under a display:none ancestor would never render there; afterBody
   // renders on every page and at every width. The homepage opts out internally.
-  afterBody: [Component.SourceCitationPanel(), Component.Corrections()],
+  // StandardsFinder renders inside .wiki-content (renderPage lifts afterBody there),
+  // right after the page body, and self-gates to null on every page except the one
+  // with `type: standards-finder`. Mounting it here ships its inline script site-wide;
+  // the script no-ops unless it finds the [data-standards-finder] root, so it only
+  // activates on /standards/finder. Degrades to a /standards link with JS off.
+  afterBody: [Component.StandardsFinder(), Component.SourceCitationPanel(), Component.Corrections()],
   footer: Component.Footer(),
 };
 
