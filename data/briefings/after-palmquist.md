@@ -86,7 +86,7 @@ The first is litigation-cost reduction. The expected one-year loss from a public
 
 The second is channel-access value. Certification is becoming a precondition for shelf space and marketplace listing at major retailers independent of any lawsuit at all. The dollar value of channel access is brand-specific. For a brand whose growth depends on entry into a national retailer's private-label or premium tier, the value is the discounted revenue of that channel.
 
-The third is insurance-premium effect. Product liability carriers are repricing in real time as *Palmquist* filters through their underwriting models. Several major carriers are evaluating reduced-premium endorsements for suppliers certified to recognized third-party heavy-metal standards. The dollar value of premium reduction is carrier-specific and policy-specific, but the direction is consistent: certified suppliers pay less than uncertified suppliers for the same coverage. A brand's broker can model the specific number.
+The third is insurance-premium effect. Product-liability underwriters are repricing heavy-metal exposure as *Palmquist* filters through their models, and a documented third-party program is the kind of supplier-qualification signal underwriting increasingly rewards. The direction is toward lower premiums for documented programs, but any magnitude is carrier-specific, policy-specific, and not yet published; a brand's broker can model the specific number. This component is directional: no published magnitude is asserted.
 
 Certification is a litigation-cost-reduction expense, a channel-access expense, and an insurance-premium expense. *Palmquist* raised the value of all three.
 

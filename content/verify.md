@@ -5,7 +5,7 @@ audience: [regulator, consumer, retailer-compliance]
 description: "Check a lot number, a certificate number or a product code against the register. One query returns one record: what it was certified against, on which analyte panel, in which basis, and whether that certificate is in force today."
 snapshot:
   - { k: "Certificates in force", v: "0" }
-  - { k: "Standards available", v: "15" }
+  - { k: "Standards available", v: "348" }
   - { k: "Register opened", v: "pending" }
   - { k: "Lookup routes", v: "3" }
 connections:

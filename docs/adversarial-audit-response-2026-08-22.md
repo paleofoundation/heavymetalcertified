@@ -85,6 +85,11 @@ These are the audit's real teeth on this repo: places where we contradict oursel
 claim we have already told ourselves not to make. Each is small, local, and closeable without
 touching the business model. None is a matter of taste.
 
+> **Update 2026-08-23:** §3.1, §3.2 and §3.3 are **fixed in this PR** (edits made at the
+> source — `data/briefings/after-palmquist.md`, `data/standards/cat26-pages.json`, and
+> `content/verify.md` — then regenerated and dedashed; all build-blocking lints pass). §3.6 is
+> **reclassified** below (not a defect). §3.4, §3.5 and §3.7 are left for a decision — see notes.
+
 ### 3.1 Unsubstantiated insurance-premium claim — contradicts our own claim discipline
 `content/briefings/after-palmquist.md:110`:
 > "**Several major carriers are evaluating reduced-premium endorsements** for suppliers certified
@@ -100,6 +105,8 @@ to prevent — the lint just doesn't cover this pattern (it only catches superio
 **Recommended fix:** reword `:110` to match `brief-4` ("underwriters are repricing this exposure;
 the direction is toward lower premiums for documented programs, magnitude carrier-specific and
 unpublished"), and drop the flat "pay less … for the same coverage." Optionally extend the lint.
+**Status: fixed in this PR** (source `data/briefings/after-palmquist.md`; regenerated). The briefing
+PDF was not rebuilt — same open item as `docs/findings.md` 2026-08-08.
 
 ### 3.2 The mark's prohibited-claims list bans exactly what the SARM/peptide pages say
 `content/mark.md:97` (and `:109`) prohibit: *"Any language implying the mark indicates absence of
@@ -110,6 +117,11 @@ A hostile reader lands `mark.md` and the SARM page side by side and quotes them 
 other. **Recommended fix:** reword the two `:32` sentences to the compliant form ("the mark
 speaks solely to measured heavy-metal content against the panel on the tested lot"), and consider
 whether "Certification here is heavy-metal safety only" should read "heavy-metal content only."
+**Status: fixed in this PR** — the `absence` clause on all 5 cat26 pages (aas-injectable, sarms-oral,
+peptides ×2, research-chem) now reads "the mark speaks solely to the heavy-metal content measured on
+the tested lot against the panel" (source `data/standards/cat26-pages.json`). The "heavy-metal safety
+only" wording is **left** for the §4.3 sitewide safety-language decision, so these 5 pages stay
+consistent with the other 212.
 
 ### 3.3 `/verify` still advertises "15" standards while the rest of the site says 348
 `content/verify.md:8`: `{ k: "Standards available", v: "15" }`. Everywhere else now says 348
@@ -120,6 +132,9 @@ still carries the stale figure from the retired 15-row food catalog. A regulator
 doubt" the audit opens with (I.1). **Recommended fix:** update `verify.md:8` to the same basis as
 the other pages (or delete the stat if "available to certify against" is meant to differ from "in
 force" — but then say which, consistently).
+**Status: fixed in this PR** — `verify.md:8` now reads 348, matching `/standards`. Caveat: this is a
+hand-maintained number (like the homepage snapshot) and will drift again as pages are added; the
+durable fix is to compute it the way `build-standards-pages.mjs` computes the `/standards` count.
 
 ### 3.4 The machine catalog (15 rows) no longer matches the site (348)
 `data/standards/hmtc_standards_catalog.json` still reports `locked_rows: 15`, `analyte_cells_
@@ -137,12 +152,16 @@ to an accredited lab … disciplined by the lab market"). Both can't be the buye
 **Recommended fix:** pick one (pass-through is the more defensible and the more common
 certification-body posture) and align both pages.
 
-### 3.6 `standards/index.md` still labels the panel "11"; the homepage was unified to "10"
-`standards/index.md:9`: `{ k: "Analytes per row", v: "11" }` vs `index.md:27` "Certified analyte
-panel: 10". The homepage explains the reconciliation (8 metals + iAs + Cr-VI = 10 certified;
-MeHg a conditional 11th, `index.md:51`), so "11" isn't wrong — but the `4a8d0f0` commit claimed
-to "unify analyte-panel definition" and left this label on the other basis. **Recommended fix:**
-match the homepage ("10", or "10 + conditional MeHg").
+### 3.6 `standards/index.md` labels the panel "11", the homepage "10" — RECLASSIFIED: not a defect
+`standards/index.md:9` shows "Analytes per row: 11"; `index.md:27` shows "Certified analyte panel:
+10". On closer inspection this is **not** a missed hand-edit (my first read was wrong):
+`build-standards-pages.mjs:354` computes the `/standards` figure as `Math.max(panel widths across all
+in-force pages)` — a deliberate "widest panel any page publishes" definition (11, because some pages
+carry an 11th conditional cell), whereas the homepage states the *certified* panel (10, with MeHg a
+named conditional 11th). Both are correct on their own definition; they only look inconsistent because
+the two labels read alike. **Recommendation (optional, not urgent):** relabel one so the definitions
+are legible — e.g. `/standards` → "Widest panel: 11" or "Panel: 10 (+1 conditional)". No change made;
+a wording call, not a correctness bug.
 
 ### 3.7 Small numeric drift in the committed pages (likely stale, verify before "fixing")
 Computed from front-matter: the 348 pages sum to **1,793** firm limits (homepage says **1,794**),
@@ -221,9 +240,10 @@ is what actually answers it (§4.8).
 
 ## 6. Recommended sequencing
 
-1. **Today, cheap, no business decision:** §3.1 (insurance claim), §3.2 (mark self-contradiction),
-   §3.3 (`/verify` 15→348), §3.6 (panel label). Optionally §3.7 (regenerate stale pages).
-2. **This week, one small decision each:** §3.4 (catalog re-sync), §3.5 (lab-cost wording).
+1. **Done in this PR:** §3.1 (insurance claim), §3.2 (mark self-contradiction), §3.3 (`/verify`
+   15→348). §3.6 reclassified (not a defect). All build-blocking lints pass.
+2. **This week, one small decision each (not done — need your call):** §3.4 (catalog re-sync),
+   §3.5 (lab-cost wording), §3.7 (regenerate stale pages + fix the 1,793/1,794 homepage drift).
 3. **With counsel / as strategy:** §4 — especially §4.2 (SARMs scope) and §4.1 (zero-limit
    numeric anchor), which are the two items a brand GC or regulator hits first.
 4. **Separately:** attach the HMI repo and run the §5 pass; close "Infinity%" first if real.

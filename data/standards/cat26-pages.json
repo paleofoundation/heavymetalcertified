@@ -40,7 +40,7 @@
     "derivation_mode": "cells_binding",
     "method_prose": [
       "No government sets a heavy-metal content limit for this class. Peptides, SARMs, and research chemicals are sold outside any drug-approval or dietary-supplement framework, so the sovereign maximum-level lookup that anchors every other HMTc standard returns nothing here. HMTc does not answer that gap by inventing a number. Every analyte on the panel is placed under mandatory control &mdash; measured on every lot by validated ICP-MS with reflex inorganic-arsenic speciation &mdash; and escalated against route-appropriate toxicological anchors (ICH Q3D / USP &lt;232&gt; permitted daily exposures), which flag a lot for investigation and are never used as a product-content ceiling.",
-      "Certification here is heavy-metal safety only. HMTc does not endorse, approve, or vouch for the efficacy or the legality of these products; the mark speaks solely to the absence of a detectable heavy-metal burden on the tested lot. Where the chemistry rules an analyte out of the matrix entirely, it is recorded as a substantiated not-material determination rather than a control."
+      "Certification here is heavy-metal safety only. HMTc does not endorse, approve, or vouch for the efficacy or the legality of these products; the mark speaks solely to the heavy-metal content measured on the tested lot against the panel. Where the chemistry rules an analyte out of the matrix entirely, it is recorded as a substantiated not-material determination rather than a control."
     ],
     "effective_date": "2026-08-14",
     "default_version": "1.0 (2026-08-14)"
