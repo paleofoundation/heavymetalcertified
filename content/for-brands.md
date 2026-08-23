@@ -164,7 +164,7 @@ No. The program distinguishes an HMTc-standard nonconformity from a result that 
 
 ### Can we enter with laboratory data we already have?
 
-Potentially. Existing reports are reviewed for analytical method, laboratory competence, sample identity, units, limits of quantification, analyte coverage, and suitability for the intended decision. Existing data may reduce duplication, but it does not automatically replace official certification evidence.
+Potentially, and for the certification baseline the allowance is specific. Every product enters the program through a three-lot baseline, and up to two of those three production lots may be credited to qualifying prior results, so a brand that already runs a mature, accredited testing program does not pay to repeat work it has already done. The baseline is completed with a single new full-panel lot run for the program. Prior results qualify only where they come from an ISO/IEC 17025-accredited laboratory, are quantified at or below the program's reporting limit, were produced within the preceding twelve months, are supplied as structured data under chain of custody, are expressed in or convertible to the product's native basis, and are credited only for the analytes they actually measured. The completing lot is sampled independently and covers the full panel, including any analyte the prior data did not, so existing data reduces duplicated work without replacing the independent evidence a certification decision rests on.
 
 ### Does applying create a certification claim?
 
