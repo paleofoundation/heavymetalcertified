@@ -55,6 +55,10 @@ Heavy Metal Tested & Certified is the layer that turns a test into a checkable c
 
 The evidence the limits are applied to is compiled separately and openly at the [Heavy Metal Index](https://heavymetalindex.com), a public reference to the published literature on heavy metals in food. The certification reads from that reference; the reference does not endorse the certification. That separation is deliberate: it lets anyone trace a limit back to its sources without the science depending on the program that uses it.
 
+## Heavy metals by product
+
+Category guides explain where the metals come from in a specific product and how a limit is set for it: [baby food](/heavy-metals-in-baby-food), [protein powder](/heavy-metals-in-protein-powder), [supplements](/heavy-metals-in-supplements), [dark chocolate](/heavy-metals-in-dark-chocolate), and [rice](/heavy-metals-in-rice).
+
 ## Common questions
 
 <div class="hmtc-faq-list">
