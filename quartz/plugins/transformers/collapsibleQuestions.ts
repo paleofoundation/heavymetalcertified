@@ -1,20 +1,37 @@
 import { QuartzTransformerPlugin } from "../types"
 import { Root, Element, ElementContent, Text } from "hast"
 
-// Build-time: folds the "## Frequently asked questions" section's question
-// headings into collapsed `<details class="qa">` accordions — the canonical v3
-// FAQ pattern (a burgundy "+" that becomes "−" on open; the glyph is a CSS
-// ::before on an empty .mk span, styled in proof-design.scss).
+// Build-time: folds a questions-and-answers section's question headings into
+// collapsed `<details class="qa">` accordions — the canonical v3 FAQ pattern (a
+// burgundy "+" that becomes "−" on open; the glyph is a CSS ::before on an empty
+// .mk span, styled in proof-design.scss).
 //
-// Ported from the Heavy Metal Index (quartz/plugins/transformers/
-// collapsibleQuestions.ts). ONE deliberate change for the cert: the index folds
-// EVERY question-style <h3> site-wide, because on the index question headings
-// only ever appear under an FAQ section. On the cert, the synthesis articles use
-// question-phrased <h3> headings as ordinary narrative section headings, so a
-// blanket fold would silently collapse 20-plus articles. This version instead
-// folds ONLY the <h3> questions that live inside a "## Frequently asked
-// questions" (<h2>) section — matching both the authored FAQ convention and the
-// task's intent ("fold the FAQ section into the canonical accordion").
+// Ported from the Heavy Metal Index. ONE deliberate difference from the index:
+// the index folds EVERY question-style <h3> site-wide, because on the index
+// question headings only ever appear under an FAQ section. On the cert, the
+// synthesis articles use question-phrased <h3> headings as ordinary narrative
+// section headings, so a blanket fold would silently collapse 20-plus articles.
+//
+// This version therefore folds a section's question-<h3>s only when the section's
+// own <h2> NAMES itself a questions section, so the fold tracks authorial intent
+// rather than heading punctuation:
+//
+//   - Literal FAQ heading ("## Frequently asked questions"): folded whenever the
+//     section contains at least one question-<h3>. This is the original, exact
+//     behaviour and the ~34 briefing/article/why-we-limit FAQs rely on it.
+//   - Broad questions heading (an <h2> whose text carries the word "questions" or
+//     "FAQ" — e.g. "Questions brands ask before entering", "Common questions"):
+//     folded only when the section is PREDOMINANTLY questions (at least two
+//     question-<h3>s, and questions are at least half of the section's <h3>s).
+//     The majority guard means a narrative section that merely mentions questions
+//     ("Why heavy metals are a retailer question") is never folded — such a
+//     section has no question-<h3>s, so the guard fails and the section is left
+//     verbatim. It also leaves alone a "Common questions" section authored as
+//     raw-HTML .hmtc-faq accordions (no markdown question-<h3>s to fold).
+//
+// The name gate is what keeps this safe on the cert: a synthesis article's
+// narrative "## How exposure happens" section keeps its question-phrased <h3>s
+// as headings, because its <h2> does not name a questions section.
 //
 // Why build-time and not a client script: the collapsible AND its answer must be
 // in the static HTML so (1) crawlers/LLM bots see the answer without clicking,
@@ -34,7 +51,13 @@ import { Root, Element, ElementContent, Text } from "hast"
 // question <h3> already carries its slug id and any inline links are resolved.
 
 const HEADINGS = new Set(["h1", "h2", "h3"])
-const FAQ_HEADING = /^frequently asked questions$/i
+// Exact legacy trigger — unconditional fold, preserved byte-for-byte.
+const FAQ_LITERAL = /^frequently asked questions$/i
+// Broad trigger — any <h2> that names itself a questions/FAQ section. Requires
+// the plural "questions" (or "FAQ"/"FAQs") as a whole word, so a narrative
+// heading using the singular "question" does not match; the section is then also
+// held to the majority-questions structural guard below.
+const FAQ_BROAD = /\b(questions|faqs?)\b/i
 
 function textOf(node: ElementContent | Root): string {
   if (node.type === "text") return (node as Text).value
@@ -44,12 +67,15 @@ function textOf(node: ElementContent | Root): string {
   return ""
 }
 
-function isFaqSectionHeading(node: ElementContent): node is Element {
-  return (
-    node.type === "element" &&
-    node.tagName === "h2" &&
-    FAQ_HEADING.test(textOf(node).trim())
-  )
+// Classify an <h2> as a questions-section heading: "literal" for the exact FAQ
+// heading (legacy behaviour), "broad" for any other questions/FAQ heading, or
+// null for anything that is not an <h2> questions heading.
+function faqHeadingMode(node: ElementContent): "literal" | "broad" | null {
+  if (node.type !== "element" || (node as Element).tagName !== "h2") return null
+  const t = textOf(node).trim()
+  if (FAQ_LITERAL.test(t)) return "literal"
+  if (FAQ_BROAD.test(t)) return "broad"
+  return null
 }
 
 function isQuestionHeading(node: ElementContent): node is Element {
@@ -62,7 +88,7 @@ function isQuestionHeading(node: ElementContent): node is Element {
 
 // Fold each question-h3 (plus the flow content that follows it, up to the next
 // heading) in `children` into a `<details class="qa">`. `children` is the slice
-// of nodes that make up the FAQ section body — never the whole document.
+// of nodes that make up the questions-section body — never the whole document.
 function foldQuestions(children: ElementContent[]): ElementContent[] {
   const out: ElementContent[] = []
   for (let i = 0; i < children.length; i++) {
@@ -120,10 +146,23 @@ function foldQuestions(children: ElementContent[]): ElementContent[] {
   return out
 }
 
-// Locate the "Frequently asked questions" <h2> among a container's children and
-// fold the question-h3 items in its section (the run of siblings up to the next
-// <h2>). Recurses first so a nested container is handled, though in practice the
-// FAQ heading sits at the content root's top level.
+// Decide whether a questions-section should be folded, given its mode and the
+// question/h3 makeup of its body. Literal FAQ sections fold on a single question
+// (legacy). Broad sections fold only when predominantly questions.
+function shouldFold(mode: "literal" | "broad", section: ElementContent[]): boolean {
+  const h3Count = section.filter(
+    (n) => n.type === "element" && (n as Element).tagName === "h3",
+  ).length
+  const qCount = section.filter(isQuestionHeading).length
+  if (mode === "literal") return qCount >= 1
+  return qCount >= 2 && qCount * 2 >= h3Count
+}
+
+// Walk a container's children, folding the question-h3 items inside every
+// questions-section (each headed by an <h2> that faqHeadingMode recognises, up to
+// the next <h2>). Recurses first so nested containers are handled, though in
+// practice the FAQ heading sits at the content root's top level. Handles any
+// number of questions-sections in one container; the <h2> headings stay in place.
 function transform(node: Root | Element): void {
   if (!("children" in node) || !node.children) return
   const children = node.children as ElementContent[]
@@ -131,22 +170,31 @@ function transform(node: Root | Element): void {
     if (child.type === "element") transform(child as Element)
   }
 
-  const faqIdx = children.findIndex(isFaqSectionHeading)
-  if (faqIdx === -1) return
+  const out: ElementContent[] = []
+  for (let i = 0; i < children.length; i++) {
+    const heading = children[i]
+    const mode = faqHeadingMode(heading)
+    if (!mode) {
+      out.push(heading)
+      continue
+    }
 
-  // Section body: everything after the FAQ <h2> up to (but not including) the
-  // next <h2>. The <h2> heading itself is left in place.
-  let end = faqIdx + 1
-  while (end < children.length) {
-    const n = children[end]
-    if (n.type === "element" && (n as Element).tagName === "h2") break
-    end++
+    // Section body: everything after this <h2> up to (but not including) the
+    // next <h2>. The <h2> heading itself is left in place.
+    let end = i + 1
+    while (end < children.length) {
+      const n = children[end]
+      if (n.type === "element" && (n as Element).tagName === "h2") break
+      end++
+    }
+    const section = children.slice(i + 1, end)
+
+    out.push(heading)
+    out.push(...(shouldFold(mode, section) ? foldQuestions(section) : section))
+    i = end - 1
   }
-  const section = children.slice(faqIdx + 1, end)
-  if (!section.some(isQuestionHeading)) return
 
-  const folded = foldQuestions(section)
-  children.splice(faqIdx + 1, end - (faqIdx + 1), ...(folded as typeof children))
+  children.splice(0, children.length, ...out)
 }
 
 export const CollapsibleQuestions: QuartzTransformerPlugin = () => {
