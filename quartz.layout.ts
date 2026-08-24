@@ -25,7 +25,17 @@ export const sharedPageComponents: SharedLayout = {
   // with `type: standards-finder`. Mounting it here ships its inline script site-wide;
   // the script no-ops unless it finds the [data-standards-finder] root, so it only
   // activates on /standards/finder. Degrades to a /standards link with JS off.
-  afterBody: [Component.StandardsFinder(), Component.SourceCitationPanel(), Component.Corrections()],
+  //
+  // FeeCalculator renders NOTHING; its DOM lives inline in content/apply.md. It is
+  // mounted here only to ship feeCalculator.inline.ts site-wide (a component's inline
+  // script is emitted whenever the component is in the layout, independent of render).
+  // The script no-ops unless it finds the [data-fee-calculator] root, i.e. only on /apply.
+  afterBody: [
+    Component.StandardsFinder(),
+    Component.FeeCalculator(),
+    Component.SourceCitationPanel(),
+    Component.Corrections(),
+  ],
   footer: Component.Footer(),
 };
 
