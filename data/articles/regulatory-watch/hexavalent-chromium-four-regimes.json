@@ -1,0 +1,76 @@
+{
+  "slug": "hexavalent-chromium-four-regimes",
+  "article_kind": "regulatory-watch",
+  "title": "Hexavalent Chromium: Four Regulatory Regimes That Must Not Be Confused",
+  "seoTitle": "Hexavalent Chromium Limits: Four Regimes Explained | HMTc",
+  "description": "California water, Australian guidance, OSHA workplace rules and ECHA's proposed REACH restriction govern Cr(VI) in four non-interchangeable ways.",
+  "socialDescription": "Why a drinking-water MCL, a health guideline, an occupational air limit and a proposed chemicals restriction cannot be collapsed into one chromium(VI) standard.",
+  "dek": "The same species name appears in water, workplace air and chemicals law, but the legal object, measurement basis and regulated actor change completely from regime to regime.",
+  "claim": "A chromium(VI) number has no regulatory meaning until its medium, species method, averaging basis, legal mechanism and regulated actor are identified. California water, Australian guidance, OSHA workplace air and ECHA's proposed REACH restriction answer four different questions.",
+  "metals": ["Chromium(VI)", "Total chromium"],
+  "section": "Regulatory Watch",
+  "date": "August 2026",
+  "published": "2026-08-24",
+  "report_number": "HMTc-RW-2026-004",
+  "modified": "2026-08-24",
+  "evidence_verified": "2026-08-24",
+  "series": "Regulatory Watch",
+  "series_url": "/articles/regulatory-watch",
+  "scholar_eligible": true,
+  "scholar_pdf": true,
+  "keywords": ["hexavalent chromium limits", "chromium VI drinking water limit", "California Cr6 MCL", "OSHA hexavalent chromium PEL", "ECHA chromium VI restriction", "total chromium vs hexavalent chromium"],
+  "jurisdictions": ["California", "United States", "Australia", "European Union"],
+  "instruments": ["California SWRCB DDW-21-003", "Australian Drinking Water Guidelines", "OSHA 29 CFR 1910.1026", "ECHA chromium(VI) Annex XV restriction proposal"],
+  "event_ids": ["rw-2026-12-echa-crvi-restriction", "rw-2026-15-california-crvi-water"],
+  "isBasedOn": [
+    {"name": "California SWRCB Cr(VI) MCL", "url": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html"},
+    {"name": "OSHA chromium(VI) standard", "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026"},
+    {"name": "ECHA chromium(VI) proposal", "url": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health"},
+    {"name": "HMI Cr(VI) water regulation", "url": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl"}
+  ],
+  "citation": ["https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html", "https://www.nhmrc.gov.au/about-us/publications/australian-drinking-water-guidelines", "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026", "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health", "https://heavymetalindex.com/metals/chromium-hexavalent"],
+  "related_standard_urls": ["/standards", "/standards/mineral-water", "/standards/food-packaging-flexible-pouches-films"],
+  "connections": [
+    {"label": "Regulatory Watch — living tracker", "href": "/articles/regulatory-watch"},
+    {"label": "Chromium analyte guide", "href": "/analytes/chromium"},
+    {"label": "California Cr(VI) — HMI evidence", "href": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl"},
+    {"label": "Cr(VI) evidence review", "href": "https://heavymetalindex.com/metals/chromium-hexavalent"}
+  ],
+  "abstract": "Hexavalent chromium is governed through different legal mechanisms that cannot be compared as if they were alternative product limits. California's State Water Resources Control Board sets an enforceable drinking-water maximum contaminant level and phases compliance by system size. Australia's drinking-water guideline is a health-based national guideline rather than the same kind of state enforcement instrument. OSHA's federal standard regulates occupational airborne exposure over a workday and includes workplace controls. ECHA's 2025 Annex XV work is a proposed REACH restriction addressing chromium(VI) substances and uses; it remains non-final. Each regime differs in medium, unit, averaging basis, responsible actor, legal status and analytical method. Total chromium is also a separate analyte and cannot be converted into chromium(VI) by assumption. HMTc should use these regimes as water, workplace, supply-chain or monitoring controls in their proper domains, not as interchangeable finished-food thresholds.",
+  "sections": [
+    {
+      "h2": "Regime One: California's Enforceable Drinking-Water MCL",
+      "body": "California's SWRCB rule establishes an enforceable maximum contaminant level specifically for hexavalent chromium in drinking water and applies to covered community and nontransient-noncommunity water systems <sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>. The regulation took effect in 2024, with compliance dates phased by system size from 2026 through 2028. The HMI record preserves the species as Cr-VI and the medium as drinking water <sup class=\"cite\"><a href=\"#ref-2\">2</a></sup>. That is the complete legal object. It is not a finished-food maximum, not a workplace exposure limit and not a Proposition 65 warning threshold. A food manufacturer may care because water enters the facility and product, but the legal duty first attaches to the public water system under the drinking-water rule."
+    },
+    {
+      "h2": "Regime Two: Australia's National Drinking-Water Guideline",
+      "body": "The Australian Drinking Water Guidelines also address hexavalent chromium and explain when total-chromium screening should lead to species-specific analysis <sup class=\"cite\"><a href=\"#ref-3\">3</a></sup>. The document is a national health and water-management guideline. It is not identical in legal mechanism to California's state MCL, even where both concern water and both use concentration units. The comparison should therefore carry at least four labels: jurisdiction, enforceability, species and medium. For a global facility program the Australian value can guide water-risk review in its market context, but it should not be described as a California compliance alternative or copied into a food standard."
+    },
+    {
+      "h2": "Regime Three: OSHA's Occupational Air Standard",
+      "body": "OSHA's chromium(VI) standard regulates employee exposure in workplace air under 29 CFR 1910.1026 <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. Its exposure limit is an airborne concentration averaged over a working period and is accompanied by exposure determination, regulated-area, engineering-control, respiratory-protection, hygiene, medical-surveillance and recordkeeping duties. A value expressed per cubic meter of air over a workday cannot be compared directly with a value expressed per liter of drinking water. The target is also different: OSHA protects workers performing covered operations, while a drinking-water MCL protects consumers of supplied water. A supplier audit may need both controls, but one cannot substitute for the other."
+    },
+    {
+      "h2": "Regime Four: ECHA's Proposed REACH Restriction",
+      "body": "ECHA submitted Annex XV work on chromium(VI) substances in 2025 and opened the restriction process to consultation <sup class=\"cite\"><a href=\"#ref-5\">5</a></sup>. This is a chemicals-market mechanism addressing substances and specified uses under REACH. As of the evidence-verification date it remains a proposal/consultation, so it cannot be written into a current compliance statement as an adopted general restriction. It can support substitution planning, supplier mapping and contract readiness. It cannot support a claim that all covered uses are already prohibited. The status must be rechecked after committee opinions and any Commission adoption."
+    },
+    {
+      "h2": "The Species Firewall: Total Chromium Is Not Cr(VI)",
+      "body": "The four regimes share one analytical danger. Many occurrence datasets and food standards report total chromium. None of that authorizes a conversion to chromium(VI). Chromium changes oxidation state during preparation, and methods designed for total digestion can destroy the very species distinction a Cr(VI) question requires. A certificate of analysis must name the analyte and the method. For HMTc, a total-chromium food result belongs to the total-chromium evidence cell; a Cr(VI) result belongs to a species-specific cell only when a species-preserving method supports it. The regulatory control then follows its domain: water source, workplace, chemical use or product evidence. That is what prevents four legitimate regimes from becoming one illegitimate number."
+    }
+  ],
+  "faq": [
+    {"q": "Is total chromium the same as hexavalent chromium?", "a": "No. Total chromium includes chromium species without identifying how much is Cr(VI). A species-specific claim requires a method that preserves and measures hexavalent chromium."},
+    {"q": "Can OSHA's chromium(VI) limit be compared with a drinking-water MCL?", "a": "Not directly. OSHA regulates airborne workplace exposure over time; a drinking-water MCL regulates concentration in supplied water. The medium, unit, averaging basis and regulated actor are different."},
+    {"q": "Is ECHA's chromium(VI) restriction already binding?", "a": "The event tracked here is an Annex XV proposal under the REACH restriction process. It remains non-final as of 24 August 2026 and should be used for readiness, not described as an adopted general ban."},
+    {"q": "Does a California Cr(VI) water result set a finished-food limit?", "a": "No. It governs covered drinking-water systems. A manufacturer may need to control incoming water and product contribution, but the MCL does not become a finished-food concentration limit."}
+  ],
+  "references": [
+    {"n": 1, "title": "California SWRCB hexavalent chromium MCL regulation", "href": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html", "meta": "Official rule hub with adoption, effective and phased compliance information.", "type": "Government", "official": true},
+    {"n": 2, "title": "Heavy Metal Index — California hexavalent-chromium drinking-water MCL", "href": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl", "meta": "Neutral species-, medium- and date-specific regulation record.", "type": "Reference"},
+    {"n": 3, "title": "Australian Drinking Water Guidelines", "href": "https://www.nhmrc.gov.au/about-us/publications/australian-drinking-water-guidelines", "meta": "Official NHMRC guideline publication and updates.", "type": "Government", "official": true},
+    {"n": 4, "title": "OSHA 29 CFR 1910.1026, Chromium (VI)", "href": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026", "meta": "Official federal occupational-exposure standard.", "type": "Legislation", "official": true},
+    {"n": 5, "title": "ECHA proposes restrictions on chromium(VI) substances", "href": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health", "meta": "Official Annex XV proposal notice and process status.", "type": "Government", "official": true},
+    {"n": 6, "title": "Heavy Metal Index — hexavalent chromium evidence review", "href": "https://heavymetalindex.com/metals/chromium-hexavalent", "meta": "Independent evidence review with the species firewall.", "type": "Reference"}
+  ]
+}

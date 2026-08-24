@@ -1,0 +1,1539 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-24",
+  "source_repository": "Heavy Metal Index",
+  "firewall": "Neutral verified facts and evidence links only. No certification impact or threshold recommendation.",
+  "intakes": [
+    {
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "intake_date": "2026-08-24",
+      "sha256": "c49959ee9cbe3e71f7cbd2e170a7cf32491bf36ba2e0c4bdbd1df85912bf3c2c",
+      "cluster_count": 21,
+      "fitness_classification": "Useful for discovery and prioritization; not independently sufficient to support a legal claim, legal status, date, numerical limit, or certification consequence."
+    }
+  ],
+  "event_count": 21,
+  "events": [
+    {
+      "event_id": "rw-2026-01-eu-ias-seafood",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 1,
+      "title": "EU adds inorganic-arsenic maximum levels for fish and seafood",
+      "instrument_ids": [
+        "eu-2025-1891-inorganic-arsenic-fish-seafood"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Commission"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "iAs",
+        "tAs"
+      ],
+      "product_scopes": [
+        "fish",
+        "crustaceans",
+        "bivalve molluscs",
+        "cephalopods",
+        "salt"
+      ],
+      "event_type": "limit-change",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-09-17",
+        "published": "2025-09-18",
+        "effective": "2025-10-08",
+        "transition": null,
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Commission Regulation (EU) 2025/1891",
+          "url": "https://eur-lex.europa.eu/eli/reg/2025/1891/oj",
+          "kind": "primary-law"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/eu-2025-1891-inorganic-arsenic-fish-seafood"
+        ],
+        "sources": [
+          "sources/europeancommission2025-inorganic-arsenic-fish-seafood"
+        ],
+        "regulatory_limit_ids": [
+          "eu20251891_ias_fish_other_100",
+          "eu20251891_ias_cephalopods_50",
+          "eu20251891_tas_salt_500"
+        ]
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Official Journal instrument and HMI limit rows verified; iAs and total-arsenic salt rows remain distinct."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "eu-food-limits-arsenic-seafood-nickel-deadlines"
+      ],
+      "summary": "Regulation (EU) 2025/1891 amended the EU contaminant framework with species-specific inorganic-arsenic maximum levels for aquatic foods and restated a separate total-arsenic limit for salt.",
+      "obligations": [
+        "maximum-level"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-02-eu-nickel-deadlines",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 2,
+      "title": "EU nickel maximum levels reach their second application date",
+      "instrument_ids": [
+        "eu-2024-1987-nickel-maximum-levels"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Commission"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "Ni"
+      ],
+      "product_scopes": [
+        "nuts",
+        "vegetables",
+        "pulses",
+        "oilseeds",
+        "cereals",
+        "cocoa",
+        "infant formula",
+        "baby food",
+        "juice",
+        "seaweed"
+      ],
+      "event_type": "limit-change",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2024-07-16",
+        "published": "2024-07-17",
+        "effective": "2024-08-06",
+        "transition": "2026-07-01",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Commission Regulation (EU) 2024/1987",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj/eng",
+          "kind": "primary-law"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/eu-2024-1987-nickel-maximum-levels"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": [
+          "eu2024_ni_tree_nuts_3500",
+          "eu2024_ni_cereals_800",
+          "eu2024_ni_formula_powder_250"
+        ]
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Most rows applied from 2025-07-01; specified cereal rows apply from 2026-07-01."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "eu-food-limits-arsenic-seafood-nickel-deadlines"
+      ],
+      "summary": "The EU nickel instrument is already in force; its cereal-group transition ended on 1 July 2026, later than the application date for most other listed foods.",
+      "obligations": [
+        "maximum-level",
+        "transition-deadline"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-03-china-gb2762-2025",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 3,
+      "title": "China publishes GB 2762-2025 with a September 2026 effective date",
+      "instrument_ids": [
+        "china-gb-2762-2025-contaminants"
+      ],
+      "jurisdictions": [
+        "China"
+      ],
+      "authorities": [
+        "National Health Commission",
+        "State Administration for Market Regulation"
+      ],
+      "domains": [
+        "food-contaminants",
+        "market-access"
+      ],
+      "analytes": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "MeHg",
+        "Sn",
+        "Cr-total",
+        "Ni"
+      ],
+      "product_scopes": [
+        "foods placed on the Chinese market"
+      ],
+      "event_type": "limit-change",
+      "status": "adopted-not-effective",
+      "dates": {
+        "adopted": "2025-09-25",
+        "published": "2025-09-25",
+        "effective": "2026-09-02",
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-09-03"
+      },
+      "official_sources": [
+        {
+          "title": "NHC/SAMR Announcement No. 6 of 2025",
+          "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+          "kind": "official-announcement"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/china-gb-2762-2022-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Official announcement and preserved standard confirm publication and effective date. The existing 2022 HMI page records the scheduled supersession; no 2025 numerical value is duplicated here."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "GB 2762-2025 has been published and is scheduled to replace GB 2762-2022 on 2 September 2026; it is not treated as currently binding before that date.",
+      "obligations": [
+        "future-maximum-level",
+        "market-access"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-04-gso-2783",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 4,
+      "title": "Claimed GSO 2783 contaminant standard requires primary verification",
+      "instrument_ids": [
+        "gso-2783-claimed"
+      ],
+      "jurisdictions": [
+        "Gulf Cooperation Council"
+      ],
+      "authorities": [
+        "GCC Standardization Organization"
+      ],
+      "domains": [
+        "food-contaminants",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "product_scopes": [
+        "foods in Gulf markets"
+      ],
+      "event_type": "alignment",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": null,
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-01"
+      },
+      "official_sources": [],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/gso-193-2021-contaminants-toxins-food-feed"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "unverified",
+        "verified_on": "2026-08-24",
+        "confidence": "low",
+        "notes": "The intake's GSO 2783 identity, legal status, scope, and claimed changes were not confirmed from an accessible official instrument. Existing GSO 193:2021 coverage remains separate."
+      },
+      "disposition": "unverified-gap",
+      "article_slugs": [
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "Primary verification is still required before any claimed GSO 2783 requirement is presented as law.",
+      "obligations": [],
+      "gaps": [
+        "Obtain the official GSO 2783 record or licensed text and confirm whether it amends, replaces, or merely cross-references GSO 193:2021."
+      ],
+      "public_eligible": false
+    },
+    {
+      "event_id": "rw-2026-05-us-state-baby-food",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 5,
+      "title": "US states add baby-food testing and disclosure duties",
+      "instrument_ids": [
+        "virginia-code-3.2-5125.1",
+        "illinois-public-act-sb0073",
+        "vermont-act-110-h536"
+      ],
+      "jurisdictions": [
+        "United States - Virginia",
+        "United States - Illinois",
+        "United States - Vermont"
+      ],
+      "authorities": [
+        "Virginia General Assembly",
+        "Illinois General Assembly",
+        "Vermont General Assembly"
+      ],
+      "domains": [
+        "food-contaminants",
+        "testing",
+        "disclosure"
+      ],
+      "analytes": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg"
+      ],
+      "product_scopes": [
+        "baby food",
+        "infant formula where state text applies"
+      ],
+      "event_type": "disclosure",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-08-15",
+        "published": null,
+        "effective": "2026-01-01",
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-12-01"
+      },
+      "official_sources": [
+        {
+          "title": "Virginia Code section 3.2-5125.1",
+          "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
+          "kind": "primary-law"
+        },
+        {
+          "title": "Illinois SB0073 bill status and Public Act record",
+          "url": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html",
+          "kind": "primary-law"
+        },
+        {
+          "title": "Vermont H.536 / Act 110 status",
+          "url": "https://legislature.vermont.gov/bill/status/2026/H.536",
+          "kind": "primary-law"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/us-infant-food-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "The cluster is limited to the three official state records cited. Other state claims in the intake remain outside this verified summary."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "us-baby-food-heavy-metal-laws-states-fda"
+      ],
+      "summary": "Virginia, Illinois, and Vermont official records show state-level testing, disclosure, and product-scope duties that operate alongside federal FDA guidance.",
+      "obligations": [
+        "testing",
+        "disclosure",
+        "qr-code",
+        "maximum-level"
+      ],
+      "gaps": [
+        "Reconcile any additional state bills mentioned by secondary trackers before adding them to the public comparison."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-06-india-2026-amendment",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 6,
+      "title": "Claimed 2026 India contaminant amendment remains partially verified",
+      "instrument_ids": [
+        "india-fssai-2026-claimed-amendment"
+      ],
+      "jurisdictions": [
+        "India"
+      ],
+      "authorities": [
+        "Food Safety and Standards Authority of India"
+      ],
+      "domains": [
+        "food-contaminants",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "product_scopes": [
+        "foods placed on the Indian market"
+      ],
+      "event_type": "limit-change",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": null,
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-15"
+      },
+      "official_sources": [
+        {
+          "title": "FSSAI contaminants compendium, 3 February 2026",
+          "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Contaminants_Regulations_03_02_2026_IX.pdf",
+          "kind": "official-consolidation"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/india-fssai-2016-heavy-metals-third-amendment",
+          "regulations/india-fssai-2015-chromium-gelatin-amendment"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "partial-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "medium",
+        "notes": "The current official compendium is available, but the roundup's claimed 14 May 2026 amendment identity and fish-oil detail were not confirmed."
+      },
+      "disposition": "unverified-gap",
+      "article_slugs": [
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "India's current official consolidated contaminant rules are available; the specific amendment described in the intake still requires instrument-level confirmation.",
+      "obligations": [],
+      "gaps": [
+        "Confirm the amendment number, gazette date, effective date, product scope, and exact species from an official FSSAI instrument."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-07-korea-taiwan-hong-kong",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 7,
+      "title": "Korea, Taiwan, and Hong Kong update Asian testing and contaminant controls",
+      "instrument_ids": [
+        "korea-mfds-notice-2025-56",
+        "taiwan-fda-method-2026",
+        "hong-kong-cap-132v-2025"
+      ],
+      "jurisdictions": [
+        "South Korea",
+        "Taiwan",
+        "Hong Kong"
+      ],
+      "authorities": [
+        "Korea Ministry of Food and Drug Safety",
+        "Taiwan Food and Drug Administration",
+        "Hong Kong Centre for Food Safety"
+      ],
+      "domains": [
+        "food-contaminants",
+        "testing",
+        "market-access"
+      ],
+      "analytes": [
+        "Cd",
+        "Pb",
+        "MeHg",
+        "heavy-metals-multiple"
+      ],
+      "product_scopes": [
+        "cocoa and chocolate",
+        "foods tested by the amended method",
+        "foods in Cap. 132V"
+      ],
+      "event_type": "testing-method",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-08-26",
+        "published": "2025-08-26",
+        "effective": "2025-09-05",
+        "transition": "2027-03-06",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Korea MFDS Notice 2025-56",
+          "url": "https://www.mfds.go.kr/law/board/boardDetail.do?brdId=data0008&menuKey=28&seq=15091",
+          "kind": "official-notice"
+        },
+        {
+          "title": "Taiwan FDA amended analytical method",
+          "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s",
+          "kind": "official-method"
+        },
+        {
+          "title": "Hong Kong CFS metallic contamination amendment hub",
+          "url": "https://www.cfs.gov.hk/english/whatsnew/whatsnew_fstr/whatsnew_fstr_PA_Food_Adulteration_Metallic_Contamination_2.html",
+          "kind": "official-guidance"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/korea-mfds-food-code-heavy-metals",
+          "regulations/hong-kong-cap-132v-metallic-contamination"
+        ],
+        "sources": [
+          "sources/hongkong2025-cap-132v-metallic-contamination"
+        ],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Three official sources support separate changes; the combined event must not imply a common legal instrument or common effective date."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "market-access-rules-gulf-asia",
+        "testing-disclosure-packaging-rules"
+      ],
+      "summary": "Korea added a cadmium criterion for cocoa/chocolate, Taiwan amended an official analytical method, and Hong Kong brought an expanded Cap. 132V schedule into operation with a grace period.",
+      "obligations": [
+        "maximum-level",
+        "testing-method",
+        "market-access",
+        "transition-deadline"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-08-codex-cac48",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 8,
+      "title": "Codex CAC48 adopts lead maximum levels for dried spices and herbs",
+      "instrument_ids": [
+        "codex-cac48-2025",
+        "codex-cxs-193-1995"
+      ],
+      "jurisdictions": [
+        "International"
+      ],
+      "authorities": [
+        "Codex Alimentarius Commission"
+      ],
+      "domains": [
+        "food-contaminants",
+        "alignment"
+      ],
+      "analytes": [
+        "Pb"
+      ],
+      "product_scopes": [
+        "dried bark spices",
+        "dried culinary herbs"
+      ],
+      "event_type": "alignment",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-11-10",
+        "published": "2025-11-10",
+        "effective": "2025-11-10",
+        "transition": null,
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "FAO/WHO report on CAC48 adopted standards",
+          "url": "https://www.fao.org/newsroom/detail/fao-who-48th-session-of-the-codex-alimentarius-commission-adopts-new-standards/",
+          "kind": "official-commission-report"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/codex-cxs-193-1995-tin-canned-foods",
+          "regulations/codex-infant-food-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Codex adoption is an international standard, not automatically domestic binding law."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026"
+      ],
+      "summary": "CAC48 adopted lead maximum levels for dried bark spices and dried culinary herbs for incorporation into Codex CXS 193.",
+      "obligations": [
+        "international-standard",
+        "alignment"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-09-brazil-mercosur",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 9,
+      "title": "Brazil consolidates contaminant limits while Mercosur replacement work remains a gap",
+      "instrument_ids": [
+        "anvisa-in-351-2025",
+        "mercosur-replacement-claimed"
+      ],
+      "jurisdictions": [
+        "Brazil",
+        "Mercosur"
+      ],
+      "authorities": [
+        "ANVISA",
+        "MERCOSUR"
+      ],
+      "domains": [
+        "food-contaminants",
+        "alignment"
+      ],
+      "analytes": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "Sn"
+      ],
+      "product_scopes": [
+        "infant foods",
+        "foods covered by Brazil's contaminant framework"
+      ],
+      "event_type": "limit-change",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-03-18",
+        "published": "2025-03-19",
+        "effective": "2025-09-18",
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-11-01"
+      },
+      "official_sources": [
+        {
+          "title": "ANVISA contaminant legislation hub",
+          "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/contaminantes",
+          "kind": "official-regulator-hub"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/br-infant-food-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": [
+          "br_pb_cereal-based-foods-for-infant-young-chil_20"
+        ]
+      },
+      "verification": {
+        "state": "partial-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "medium",
+        "notes": "Brazil's consolidated instrument and HMI rows are preserved. The intake's claimed Mercosur replacement instrument was not confirmed as adopted."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026"
+      ],
+      "summary": "Brazil's infant-food contaminant framework is covered in HMI; a claimed future Mercosur consolidation remains explicitly unverified.",
+      "obligations": [
+        "maximum-level"
+      ],
+      "gaps": [
+        "Confirm the Mercosur draft or adopted instrument number and status before describing regional replacement."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-10-canada-aluminum-additives",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 10,
+      "title": "Canada revises permitted uses of aluminum-based food additives",
+      "instrument_ids": [
+        "health-canada-m-faa-25-03"
+      ],
+      "jurisdictions": [
+        "Canada"
+      ],
+      "authorities": [
+        "Health Canada"
+      ],
+      "domains": [
+        "food-additives",
+        "market-access"
+      ],
+      "analytes": [
+        "Al"
+      ],
+      "product_scopes": [
+        "foods using specified aluminum-based additives"
+      ],
+      "event_type": "market-restriction",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2025-09-15",
+        "published": "2025-09-15",
+        "effective": "2025-10-20",
+        "transition": "2028-01-01",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Health Canada Notice of Modification M-FAA-25-03",
+          "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true",
+          "kind": "official-notice"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "This is an additive-use authorization change, not a contaminant concentration limit and not a direct contaminant-limit row."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "testing-disclosure-packaging-rules"
+      ],
+      "summary": "Health Canada modified permitted uses of certain aluminum-based food additives; most changes took effect in October 2025 and one removal has a 2028 transition.",
+      "obligations": [
+        "market-access",
+        "formulation",
+        "transition-deadline"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 11,
+      "title": "Claimed Vietnam contaminant amendment requires primary verification",
+      "instrument_ids": [
+        "vietnam-2025-claimed-amendment"
+      ],
+      "jurisdictions": [
+        "Vietnam"
+      ],
+      "authorities": [
+        "Vietnam Ministry of Health"
+      ],
+      "domains": [
+        "food-contaminants",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "product_scopes": [
+        "foods placed on the Vietnamese market"
+      ],
+      "event_type": "limit-change",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": null,
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-15"
+      },
+      "official_sources": [],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "unverified",
+        "verified_on": "2026-08-24",
+        "confidence": "low",
+        "notes": "No official instrument matching the intake's amendment identity and claims was located."
+      },
+      "disposition": "unverified-gap",
+      "article_slugs": [
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "The claimed Vietnam development is held as a verification gap and is not published as a legal change.",
+      "obligations": [],
+      "gaps": [
+        "Obtain the official Vietnamese instrument and verify scope, status, dates, species, units, and basis."
+      ],
+      "public_eligible": false
+    },
+    {
+      "event_id": "rw-2026-12-echa-crvi-restriction",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 12,
+      "title": "ECHA submits a proposed restriction for chromium(VI) substances",
+      "instrument_ids": [
+        "echa-annex-xv-crvi-2025"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Chemicals Agency"
+      ],
+      "domains": [
+        "chemicals",
+        "occupational-exposure",
+        "market-access"
+      ],
+      "analytes": [
+        "Cr-VI"
+      ],
+      "product_scopes": [
+        "chromium(VI) substances and specified uses under REACH"
+      ],
+      "event_type": "market-restriction",
+      "status": "consultation",
+      "dates": {
+        "adopted": null,
+        "published": "2025-04-29",
+        "effective": null,
+        "transition": null,
+        "consultation_close": "2026-08-17",
+        "next_review": "2026-10-01"
+      },
+      "official_sources": [
+        {
+          "title": "ECHA proposes restrictions on chromium(VI) substances",
+          "url": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health",
+          "kind": "official-proposal-notice"
+        },
+        {
+          "title": "ECHA restriction consultations",
+          "url": "https://echa.europa.eu/previous-consultations-on-restriction-proposals",
+          "kind": "official-register"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "The Annex XV restriction remains a proposal/consultation and is not represented as binding law."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "hexavalent-chromium-four-regimes"
+      ],
+      "summary": "ECHA's chromium(VI) Annex XV work is a REACH restriction proposal under consultation, not a food limit, drinking-water MCL, or occupational PEL.",
+      "obligations": [
+        "consultation",
+        "proposed-market-restriction"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-13-fda-closer-to-zero",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 13,
+      "title": "FDA publishes large infant-formula testing results and schedules 2026 contaminant work",
+      "instrument_ids": [
+        "fda-infant-formula-testing-2026",
+        "fda-human-foods-priorities-2026"
+      ],
+      "jurisdictions": [
+        "United States"
+      ],
+      "authorities": [
+        "US Food and Drug Administration"
+      ],
+      "domains": [
+        "testing",
+        "risk-assessment",
+        "food-contaminants"
+      ],
+      "analytes": [
+        "tAs",
+        "Pb",
+        "Cd",
+        "tHg"
+      ],
+      "product_scopes": [
+        "infant formula",
+        "foods for babies and young children"
+      ],
+      "event_type": "monitoring",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": "2026-04-29",
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-12-15"
+      },
+      "official_sources": [
+        {
+          "title": "FDA infant-formula product testing results",
+          "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
+          "kind": "official-results"
+        },
+        {
+          "title": "FDA 2026 Human Foods Program priority deliverables",
+          "url": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
+          "kind": "official-program-plan"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/us-infant-food-contaminants",
+          "regulations/fda2025-lead-processed-baby-foods"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Testing results and planned work do not themselves create a new binding limit."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "us-baby-food-heavy-metal-laws-states-fda",
+        "testing-disclosure-packaging-rules"
+      ],
+      "summary": "FDA released infant-formula testing data and identified 2026 work toward cadmium and inorganic-arsenic action levels; neither item is treated as a new binding limit.",
+      "obligations": [
+        "monitoring",
+        "future-guidance-work"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-14-epa-lcri",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 14,
+      "title": "EPA Lead and Copper Rule Improvements move toward 2027 compliance",
+      "instrument_ids": [
+        "epa-lcri-2024"
+      ],
+      "jurisdictions": [
+        "United States"
+      ],
+      "authorities": [
+        "US Environmental Protection Agency"
+      ],
+      "domains": [
+        "drinking-water",
+        "testing",
+        "disclosure"
+      ],
+      "analytes": [
+        "Pb",
+        "Cu"
+      ],
+      "product_scopes": [
+        "public water systems"
+      ],
+      "event_type": "disclosure",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2024-10-08",
+        "published": "2024-10-30",
+        "effective": "2024-12-30",
+        "transition": "2027-11-01",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "EPA Lead and Copper Rule Improvements",
+          "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements",
+          "kind": "official-rule-hub"
+        },
+        {
+          "title": "EPA compliance-date fact sheet",
+          "url": "https://www.epa.gov/system/files/documents/2024-10/final_lcrr_fact-sheet_compliance-dates.pdf",
+          "kind": "official-guidance"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "The rule is effective, but the principal compliance date is in 2027; this drinking-water duty is not a food concentration limit."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "testing-disclosure-packaging-rules"
+      ],
+      "summary": "EPA's LCRI establishes drinking-water inventory, monitoring, communication, and replacement duties with a major 2027 compliance date.",
+      "obligations": [
+        "testing",
+        "inventory",
+        "disclosure",
+        "transition-deadline"
+      ],
+      "gaps": [
+        "The intake's separate chromium risk-assessment and MATS claims require their own instrument-level verification and are not included in this event summary."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-15-california-crvi-water",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 15,
+      "title": "California hexavalent-chromium drinking-water compliance phases by system size",
+      "instrument_ids": [
+        "ca-swrcb-hexavalent-chromium-mcl"
+      ],
+      "jurisdictions": [
+        "United States - California"
+      ],
+      "authorities": [
+        "California State Water Resources Control Board"
+      ],
+      "domains": [
+        "drinking-water",
+        "testing"
+      ],
+      "analytes": [
+        "Cr-VI"
+      ],
+      "product_scopes": [
+        "community and nontransient-noncommunity water systems"
+      ],
+      "event_type": "testing-method",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2024-04-17",
+        "published": "2024-07-24",
+        "effective": "2024-10-01",
+        "transition": "2028-10-01",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "California SWRCB hexavalent chromium MCL",
+          "url": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html",
+          "kind": "official-rule-hub"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/ca-swrcb-hexavalent-chromium-mcl"
+        ],
+        "sources": [
+          "sources/swrcb-hexavalent-chromium-mcl-2024"
+        ],
+        "regulatory_limit_ids": [
+          "ca_swrcb_crvi_drinking_water_10"
+        ]
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Cr-VI is retained as a speciated analyte and not converted from total chromium."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "hexavalent-chromium-four-regimes"
+      ],
+      "summary": "California's enforceable Cr(VI) drinking-water MCL is in force, with system-size compliance dates running from 2026 through 2028.",
+      "obligations": [
+        "maximum-contaminant-level",
+        "testing",
+        "transition-deadline"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-16-eu-packaging-mercury",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 16,
+      "title": "EU packaging composition and mercury-product restrictions cross 2025-2026 deadlines",
+      "instrument_ids": [
+        "eu-reg-2025-40-ppwr",
+        "eu-reg-2024-1849-mercury"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Parliament",
+        "Council of the European Union",
+        "European Commission"
+      ],
+      "domains": [
+        "packaging",
+        "consumer-products",
+        "market-access"
+      ],
+      "analytes": [
+        "Pb",
+        "Cd",
+        "tHg",
+        "Cr-VI"
+      ],
+      "product_scopes": [
+        "packaging",
+        "dental amalgam",
+        "specified mercury-containing lamps"
+      ],
+      "event_type": "market-restriction",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2024-12-19",
+        "published": "2025-01-22",
+        "effective": "2025-02-11",
+        "transition": "2026-08-12",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "EU Packaging and Packaging Waste Regulation overview",
+          "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
+          "kind": "official-regulator-overview"
+        },
+        {
+          "title": "Regulation (EU) 2024/1849 on mercury",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1849/oj/eng",
+          "kind": "primary-law"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Two separate legal instruments are grouped only as a deadline watch. Packaging composition and mercury-added products are not food contaminant limits."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "testing-disclosure-packaging-rules"
+      ],
+      "summary": "The PPWR generally applies from 12 August 2026, while the revised Mercury Regulation phases restrictions across dental amalgam and specified lamps on separate dates.",
+      "obligations": [
+        "packaging-composition",
+        "market-restriction",
+        "transition-deadline"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-17-eu-lead-ammunition",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 17,
+      "title": "EU lead ammunition and fishing-tackle restriction remains proposed",
+      "instrument_ids": [
+        "echa-lead-outdoor-shooting-fishing"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Chemicals Agency",
+        "European Commission"
+      ],
+      "domains": [
+        "chemicals",
+        "environment",
+        "market-access"
+      ],
+      "analytes": [
+        "Pb"
+      ],
+      "product_scopes": [
+        "civilian outdoor ammunition",
+        "fishing tackle"
+      ],
+      "event_type": "market-restriction",
+      "status": "proposed",
+      "dates": {
+        "adopted": null,
+        "published": "2025-02-20",
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-11-01"
+      },
+      "official_sources": [
+        {
+          "title": "ECHA lead in shot, bullets and fishing weights",
+          "url": "https://echa.europa.eu/hot-topics/lead-in-shot-bullets-and-fishing-weights",
+          "kind": "official-restriction-record"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "The outdoor-shooting/fishing measure remains a proposed REACH restriction; the separate wetland gunshot restriction is already in force and must not be conflated with it."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026"
+      ],
+      "summary": "ECHA and Commission records support an ongoing proposed restriction for lead in outdoor shooting and fishing; it is not represented as an adopted general ban.",
+      "obligations": [
+        "proposed-market-restriction"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-18-uk-eu-sps",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 18,
+      "title": "UK and EU prepare a dynamically aligned SPS area",
+      "instrument_ids": [
+        "uk-eu-sps-common-understanding-2025"
+      ],
+      "jurisdictions": [
+        "United Kingdom",
+        "European Union"
+      ],
+      "authorities": [
+        "UK Government",
+        "European Commission"
+      ],
+      "domains": [
+        "food-safety",
+        "alignment",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-multiple"
+      ],
+      "product_scopes": [
+        "agri-food products and relevant food-safety legislation"
+      ],
+      "event_type": "alignment",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": "2025-05-19",
+        "effective": null,
+        "transition": "2027-06-30",
+        "consultation_close": "2026-04-23",
+        "next_review": "2026-12-01"
+      },
+      "official_sources": [
+        {
+          "title": "UK-EU Summit Common Understanding",
+          "url": "https://www.gov.uk/government/publications/ukeu-summit-key-documentation/uk-eu-summit-common-understanding-html",
+          "kind": "official-joint-understanding"
+        },
+        {
+          "title": "SPS agreement: preparing your business",
+          "url": "https://www.gov.uk/government/publications/sps-agreement-preparing-your-business/sps-agreement-preparing-your-business",
+          "kind": "official-guidance"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "high",
+        "notes": "Negotiations remain ongoing. Dynamic alignment is an intended architecture, not yet a final binding contaminant instrument."
+      },
+      "disposition": "full-article",
+      "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "The UK and EU are negotiating a common SPS area based on dynamic alignment, with official business guidance targeting mid-2027 while preserving that exact timing and exceptions remain subject to negotiation.",
+      "obligations": [
+        "future-alignment",
+        "business-readiness"
+      ],
+      "gaps": [],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-19-china-pipeline",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 19,
+      "title": "China food-safety standards pipeline remains active",
+      "instrument_ids": [
+        "china-nhc-food-standards-consultations-2026"
+      ],
+      "jurisdictions": [
+        "China"
+      ],
+      "authorities": [
+        "National Health Commission"
+      ],
+      "domains": [
+        "food-safety",
+        "consultation",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "product_scopes": [
+        "foods and food-safety national standards under consultation"
+      ],
+      "event_type": "alignment",
+      "status": "consultation",
+      "dates": {
+        "adopted": null,
+        "published": "2026-04-17",
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-15"
+      },
+      "official_sources": [
+        {
+          "title": "NHC public consultation list",
+          "url": "https://www.nhc.gov.cn/wjw/zqyj/list.shtml",
+          "kind": "official-consultation-register"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "medium",
+        "notes": "The official register supports an active standards pipeline. It does not support the intake's unverified details for individual draft metal limits."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "China's official NHC consultation register shows continuing food-safety standards work; individual draft contaminant claims require instrument-level verification before publication.",
+      "obligations": [
+        "consultation-monitoring"
+      ],
+      "gaps": [
+        "Extract and verify any metal-specific draft only when its official consultation attachment is identified."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-20-thailand-food-contact",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 20,
+      "title": "Claimed Thailand 2025 food-contact change requires primary verification",
+      "instrument_ids": [
+        "thailand-2025-food-contact-claimed"
+      ],
+      "jurisdictions": [
+        "Thailand"
+      ],
+      "authorities": [
+        "Thailand Food and Drug Administration"
+      ],
+      "domains": [
+        "food-contact",
+        "testing",
+        "market-access"
+      ],
+      "analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "product_scopes": [
+        "food packaging and food-contact materials"
+      ],
+      "event_type": "testing-method",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": null,
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-15"
+      },
+      "official_sources": [
+        {
+          "title": "Thailand MOPH Notification No. 435 on plastic food packaging",
+          "url": "https://exfood.fda.moph.go.th/law/data/announ_moph/P435_E.pdf",
+          "kind": "existing-primary-law"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "partial-primary",
+        "verified_on": "2026-08-24",
+        "confidence": "medium",
+        "notes": "Existing official packaging rules are accessible, but no official 2025 change matching the intake's claimed migration update was identified."
+      },
+      "disposition": "unverified-gap",
+      "article_slugs": [
+        "testing-disclosure-packaging-rules",
+        "market-access-rules-gulf-asia"
+      ],
+      "summary": "Thailand has official food-packaging rules, but the specific 2025 change described in the discovery document remains unverified.",
+      "obligations": [],
+      "gaps": [
+        "Identify the 2025 notification number and official text before stating a new migration limit or method requirement."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-21-echa-organotin-rumor",
+      "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
+      "cluster": 21,
+      "title": "No official ECHA organotin restriction dossier identified",
+      "instrument_ids": [
+        "echa-organotin-claimed"
+      ],
+      "jurisdictions": [
+        "European Union"
+      ],
+      "authorities": [
+        "European Chemicals Agency"
+      ],
+      "domains": [
+        "chemicals",
+        "market-access"
+      ],
+      "analytes": [
+        "organotin"
+      ],
+      "product_scopes": [
+        "consumer products claimed in the intake"
+      ],
+      "event_type": "market-restriction",
+      "status": "monitor-only",
+      "dates": {
+        "adopted": null,
+        "published": null,
+        "effective": null,
+        "transition": null,
+        "consultation_close": null,
+        "next_review": "2026-10-15"
+      },
+      "official_sources": [
+        {
+          "title": "ECHA registry of restriction intentions",
+          "url": "https://www.echa.europa.eu/registry-of-restriction-intentions",
+          "kind": "official-register"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "unverified",
+        "verified_on": "2026-08-24",
+        "confidence": "low",
+        "notes": "The official restriction-intentions register did not substantiate the claimed new organotin dossier."
+      },
+      "disposition": "unverified-gap",
+      "article_slugs": [],
+      "summary": "No new ECHA organotin restriction claim is published; the cluster remains a monitored verification gap.",
+      "obligations": [],
+      "gaps": [
+        "Re-check ECHA CHEM and the restriction-intentions registry at the next review date."
+      ],
+      "public_eligible": false
+    }
+  ]
+}

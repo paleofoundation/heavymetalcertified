@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "generated": "2026-08-24",
+  "source_snapshot": "data/regulations/cert-regulatory-watch-snapshot.json",
+  "impact_count": 21,
+  "impacts": [
+    {
+      "event_id": "rw-2026-01-eu-ias-seafood",
+      "impact_class": "current-binding-limit-change",
+      "affected_analytes": [
+        "iAs",
+        "tAs"
+      ],
+      "affected_product_categories": [
+        "fish",
+        "crustaceans",
+        "bivalve molluscs",
+        "cephalopods",
+        "salt"
+      ],
+      "deadline": "2025-10-08",
+      "analyte_urls": [
+        "/analytes/inorganic-arsenic",
+        "/analytes/arsenic"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/canned-seafood",
+        "/standards/shellfish",
+        "/standards/fish-marine-non-predatory",
+        "/standards/fish-marine-predatory"
+      ],
+      "rationale": "The verified in-force instrument has structured HMI limit rows. Existing standards can be compared through the normal compiled-regulation process without copying numbers into this tracker.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": true
+    },
+    {
+      "event_id": "rw-2026-02-eu-nickel-deadlines",
+      "impact_class": "current-binding-limit-change",
+      "affected_analytes": [
+        "Ni"
+      ],
+      "affected_product_categories": [
+        "nuts",
+        "vegetables",
+        "pulses",
+        "oilseeds",
+        "cereals",
+        "cocoa",
+        "infant formula",
+        "baby food",
+        "juice",
+        "seaweed"
+      ],
+      "deadline": "2026-07-01",
+      "analyte_urls": [
+        "/analytes/nickel"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/baby-cereals-dry",
+        "/standards/infant-formula-powder",
+        "/standards/rice-bulk-grain",
+        "/standards/chocolate"
+      ],
+      "rationale": "The verified in-force instrument has structured HMI limit rows. Existing standards can be compared through the normal compiled-regulation process without copying numbers into this tracker.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": true
+    },
+    {
+      "event_id": "rw-2026-03-china-gb2762-2025",
+      "impact_class": "future-binding-limit-candidate",
+      "affected_analytes": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "tHg",
+        "MeHg",
+        "Sn",
+        "Cr-total",
+        "Ni"
+      ],
+      "affected_product_categories": [
+        "foods placed on the Chinese market"
+      ],
+      "deadline": "2026-09-02",
+      "analyte_urls": [
+        "/analytes/lead",
+        "/analytes/cadmium",
+        "/analytes/arsenic",
+        "/analytes/inorganic-arsenic",
+        "/analytes/mercury",
+        "/analytes/methylmercury",
+        "/analytes/tin",
+        "/analytes/chromium",
+        "/analytes/nickel"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The instrument is adopted with a future application date. It belongs in readiness and governance review, not in the current-limit compiler before that date.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": true
+    },
+    {
+      "event_id": "rw-2026-04-gso-2783",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "affected_product_categories": [
+        "foods in Gulf markets"
+      ],
+      "deadline": "2026-10-01",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-05-us-state-baby-food",
+      "impact_class": "disclosure-reporting-requirement",
+      "affected_analytes": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "tHg"
+      ],
+      "affected_product_categories": [
+        "baby food",
+        "infant formula where state text applies"
+      ],
+      "deadline": "2026-01-01",
+      "analyte_urls": [
+        "/analytes/lead",
+        "/analytes/cadmium",
+        "/analytes/arsenic",
+        "/analytes/mercury"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/baby-cereals-dry",
+        "/standards/infant-formula-powder"
+      ],
+      "rationale": "The verified change creates testing, disclosure, inventory, or communication duties that may affect evidence packages and market claims even where the concentration limit is unchanged.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-06-india-2026-amendment",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "affected_product_categories": [
+        "foods placed on the Indian market"
+      ],
+      "deadline": "2026-10-15",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-07-korea-taiwan-hong-kong",
+      "impact_class": "testing-panel-or-analytical-method-change",
+      "affected_analytes": [
+        "Cd",
+        "Pb",
+        "MeHg",
+        "heavy-metals-multiple"
+      ],
+      "affected_product_categories": [
+        "cocoa and chocolate",
+        "foods tested by the amended method",
+        "foods in Cap. 132V"
+      ],
+      "deadline": "2027-03-06",
+      "analyte_urls": [
+        "/analytes/cadmium",
+        "/analytes/lead",
+        "/analytes/methylmercury"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/chocolate"
+      ],
+      "rationale": "The verified change affects what must be measured or how evidence is produced; it does not by itself establish a new certification concentration limit.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": true
+    },
+    {
+      "event_id": "rw-2026-08-codex-cac48",
+      "impact_class": "supply-chain-or-market-access-consequence",
+      "affected_analytes": [
+        "Pb"
+      ],
+      "affected_product_categories": [
+        "dried bark spices",
+        "dried culinary herbs"
+      ],
+      "deadline": "2025-11-10",
+      "analyte_urls": [
+        "/analytes/lead"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-09-brazil-mercosur",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "Pb",
+        "Cd",
+        "iAs",
+        "Sn"
+      ],
+      "affected_product_categories": [
+        "infant foods",
+        "foods covered by Brazil's contaminant framework"
+      ],
+      "deadline": "2025-09-18",
+      "analyte_urls": [
+        "/analytes/lead",
+        "/analytes/cadmium",
+        "/analytes/inorganic-arsenic",
+        "/analytes/tin"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/baby-cereals-dry",
+        "/standards/infant-formula-powder"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-10-canada-aluminum-additives",
+      "impact_class": "supply-chain-or-market-access-consequence",
+      "affected_analytes": [
+        "Al"
+      ],
+      "affected_product_categories": [
+        "foods using specified aluminum-based additives"
+      ],
+      "deadline": "2028-01-01",
+      "analyte_urls": [
+        "/analytes/aluminum"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "affected_product_categories": [
+        "foods placed on the Vietnamese market"
+      ],
+      "deadline": "2026-10-15",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-12-echa-crvi-restriction",
+      "impact_class": "context-with-no-direct-hmtc-change",
+      "affected_analytes": [
+        "Cr-VI"
+      ],
+      "affected_product_categories": [
+        "chromium(VI) substances and specified uses under REACH"
+      ],
+      "deadline": "2026-08-17",
+      "analyte_urls": [
+        "/analytes/hexavalent-chromium"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-13-fda-closer-to-zero",
+      "impact_class": "context-with-no-direct-hmtc-change",
+      "affected_analytes": [
+        "tAs",
+        "Pb",
+        "Cd",
+        "tHg"
+      ],
+      "affected_product_categories": [
+        "infant formula",
+        "foods for babies and young children"
+      ],
+      "deadline": "2026-12-15",
+      "analyte_urls": [
+        "/analytes/arsenic",
+        "/analytes/lead",
+        "/analytes/cadmium",
+        "/analytes/mercury"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/baby-cereals-dry",
+        "/standards/infant-formula-powder"
+      ],
+      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-14-epa-lcri",
+      "impact_class": "disclosure-reporting-requirement",
+      "affected_analytes": [
+        "Pb",
+        "Cu"
+      ],
+      "affected_product_categories": [
+        "public water systems"
+      ],
+      "deadline": "2027-11-01",
+      "analyte_urls": [
+        "/analytes/lead"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The verified change creates testing, disclosure, inventory, or communication duties that may affect evidence packages and market claims even where the concentration limit is unchanged.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-15-california-crvi-water",
+      "impact_class": "testing-panel-or-analytical-method-change",
+      "affected_analytes": [
+        "Cr-VI"
+      ],
+      "affected_product_categories": [
+        "community and nontransient-noncommunity water systems"
+      ],
+      "deadline": "2028-10-01",
+      "analyte_urls": [
+        "/analytes/hexavalent-chromium"
+      ],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The verified change affects what must be measured or how evidence is produced; it does not by itself establish a new certification concentration limit.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": true
+    },
+    {
+      "event_id": "rw-2026-16-eu-packaging-mercury",
+      "impact_class": "supply-chain-or-market-access-consequence",
+      "affected_analytes": [
+        "Pb",
+        "Cd",
+        "tHg",
+        "Cr-VI"
+      ],
+      "affected_product_categories": [
+        "packaging",
+        "dental amalgam",
+        "specified mercury-containing lamps"
+      ],
+      "deadline": "2026-08-12",
+      "analyte_urls": [
+        "/analytes/lead",
+        "/analytes/cadmium",
+        "/analytes/mercury",
+        "/analytes/hexavalent-chromium"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/food-packaging-flexible-pouches-films"
+      ],
+      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-17-eu-lead-ammunition",
+      "impact_class": "context-with-no-direct-hmtc-change",
+      "affected_analytes": [
+        "Pb"
+      ],
+      "affected_product_categories": [
+        "civilian outdoor ammunition",
+        "fishing tackle"
+      ],
+      "deadline": "2026-11-01",
+      "analyte_urls": [
+        "/analytes/lead"
+      ],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/canned-seafood",
+        "/standards/shellfish",
+        "/standards/fish-marine-non-predatory",
+        "/standards/fish-marine-predatory"
+      ],
+      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-18-uk-eu-sps",
+      "impact_class": "context-with-no-direct-hmtc-change",
+      "affected_analytes": [
+        "heavy-metals-multiple"
+      ],
+      "affected_product_categories": [
+        "agri-food products and relevant food-safety legislation"
+      ],
+      "deadline": "2027-06-30",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-19-china-pipeline",
+      "impact_class": "context-with-no-direct-hmtc-change",
+      "affected_analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "affected_product_categories": [
+        "foods and food-safety national standards under consultation"
+      ],
+      "deadline": "2026-10-15",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-20-thailand-food-contact",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "heavy-metals-unspecified"
+      ],
+      "affected_product_categories": [
+        "food packaging and food-contact materials"
+      ],
+      "deadline": "2026-10-15",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards",
+        "/standards/food-packaging-flexible-pouches-films"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-21-echa-organotin-rumor",
+      "impact_class": "insufficient-evidence",
+      "affected_analytes": [
+        "organotin"
+      ],
+      "affected_product_categories": [
+        "consumer products claimed in the intake"
+      ],
+      "deadline": "2026-10-15",
+      "analyte_urls": [],
+      "related_standard_urls": [
+        "/standards"
+      ],
+      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "governance_queue": false
+    }
+  ]
+}

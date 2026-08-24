@@ -106,6 +106,7 @@ const OG_ARTICLE_PREFIXES = [
 function isArticlePage(frontmatter: Record<string, unknown> | undefined, slug: string | undefined): boolean {
   if (slug === "index" || slug === "404" || slug === undefined) return false
   const fmType = frontmatterString(frontmatter?.type)?.toLowerCase()
+  if (fmType === "article-series") return false
   if (fmType && OG_ARTICLE_TYPES.has(fmType)) return true
   if (frontmatterBoolean(frontmatter?.scholar_eligible)) return true
   return OG_ARTICLE_PREFIXES.some((p) => slug.startsWith(p))
