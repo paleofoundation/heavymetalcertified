@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 // firewall-cert-lint.mjs — the cert-side firewall (the INVERSE of the index lint).
 //
-// The cert site is ALLOWED to publish thresholds, clean/dirty pathways, and
-// percentile methodology — that is its job. The firewall risks on this side are
-// different, and build-blocking:
+// The cert site is ALLOWED to publish thresholds — that is its job. It is NOT
+// allowed to publish the percentile-selection method (P97/P45, clean/dirty
+// two-pathways framing): that is an internal derivation step, confined to the one
+// retired-methodology page and enforced by tools/retired-methodology-lint.mjs
+// (2026-08-24). The firewall risks on this side are different, and build-blocking:
 //
 //   1. NO CORPUS. The cert site must never re-host the literature index's
 //      content (the WikiBiome / paleofoundation cannibalization lesson). No

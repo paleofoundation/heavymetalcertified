@@ -20273,7 +20273,7 @@
         "not_material": {
           "basis_class": "natural-accumulator",
           "bounded_by": null,
-          "rationale": "Aluminium in honey is low natural/environmental background. The best modern reference-method source (naccari2025, ICP-MS, n=38) measures honey Al at 4.5-6.0 mg/kg, consistent with the wider literature (typical 0.1-5 mg/kg; country maxima ~29). The pooled p97 of ~152 mg/kg is a method-inflation artifact, not ubiquitous mineral content: the pool is dominated by an ICP-OES source (tomczyk2020) and reconstruction tails, and honey is not among EFSA's high-Al foods. No credible regulator sets an aluminium ML for honey; dietary Al is TWI-managed. The pool requires reference-method restriction (logged as an outstanding item); the not-material determination rests on the ~5 mg/kg reference value, not the inflated 152.",
+          "rationale": "Aluminium in honey is low natural/environmental background. The best modern reference-method source (naccari2025, ICP-MS, n=38) measures honey Al at 4.5-6.0 mg/kg, consistent with the wider literature (typical 0.1-5 mg/kg; country maxima ~29). The pooled upper value of ~152 mg/kg is a method-inflation artifact, not ubiquitous mineral content: the pool is dominated by an ICP-OES source (tomczyk2020) and reconstruction tails, and honey is not among EFSA's high-Al foods. No credible regulator sets an aluminium ML for honey; dietary Al is TWI-managed. The pool requires reference-method restriction (logged as an outstanding item); the not-material determination rests on the ~5 mg/kg reference value, not the inflated 152.",
           "regulatory_basis": "No Al ML for honey in any jurisdiction; real ICP-MS occurrence ~5 mg/kg (pool p97 method-inflated)",
           "jurisdictions_checked": "EU 2023/915 (no Al); Codex; FSANZ; EFSA; JECFA",
           "reference_method": null
@@ -36239,7 +36239,7 @@
         "not_material": {
           "basis_class": "refined-partition",
           "bounded_by": null,
-          "rationale": "Cadmium partitions into the aqueous/protein/press-cake fraction, not the triacylglycerol lipid; alkali refining, degumming and bleaching strip residual metals from oil. The in-house pool is a stable two-source pool at ~3 ug/kg (p50 2.97, p97 3.18), at the analytical floor. No credible regulator sets a Cd maximum level for vegetable or olive oils (Codex CXS 210/19 list only Pb and As; EU 2023/915 sets Cd for oilseeds-as-such, not the pressed oil).",
+          "rationale": "Cadmium partitions into the aqueous/protein/press-cake fraction, not the triacylglycerol lipid; alkali refining, degumming and bleaching strip residual metals from oil. The in-house pool is a stable two-source pool at ~3 ug/kg (median 2.97, upper 3.18), at the analytical floor. No credible regulator sets a Cd maximum level for vegetable or olive oils (Codex CXS 210/19 list only Pb and As; EU 2023/915 sets Cd for oilseeds-as-such, not the pressed oil).",
           "regulatory_basis": "No Cd ML for vegetable/olive oils in any credible jurisdiction; residual ~3 ug/kg at analytical floor",
           "jurisdictions_checked": "EU 2023/915; Codex CXS 193/210/19; FSANZ Sch 19; Health Canada",
           "reference_method": null

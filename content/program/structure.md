@@ -46,40 +46,12 @@ rail_box:
 
 <section id="calibration" style="margin-bottom:52px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How a limit is set</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The default limit for any analyte is the strictest maximum level set by a credible government regulator, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it. The percentile machinery below runs only where the program sets a number itself: the four Tier&nbsp;1 toxics, floored against the government maximum so the published value is the stricter of the two, and the cells no government regulates.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">For those occurrence-set cells, subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other: rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
-    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
-      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P97</span>
-        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Clean subcategory</span>
-      </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The lower-burden form within a pair: non-rice cereal, cow-milk formula, above-ground vegetables. Where the program sets this cell from occurrence rather than a government limit, the limit sits at the 97th percentile of the pooled distribution.</p>
-    </div>
-    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
-      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P45</span>
-        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Dirty subcategory</span>
-      </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">The structurally higher-burden form: rice cereal, soy formula, root vegetables, fish-containing. A far tighter percentile, because the point is to separate the better operators within a hard category rather than bless the category.</p>
-    </div>
-    <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
-      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#9f2727;white-space:nowrap">P97</span>
-        <span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f">Independent row</span>
-      </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">A subcategory with no within-pair partner defaults to P97.</p>
-    </div>
-  </div>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The default limit for any analyte is the strictest maximum level set by a credible government regulator, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The program sets a number itself in only two places: the four Tier&nbsp;1 toxics, where a clean market can beat the law, and the cells no government regulates at all. In those cells the value is derived from the certification-relevant occurrence distribution and floored against the government maximum, so the published value is the stricter of the two and never exceeds the lowest applicable government ceiling in that basis.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The percentile is a calibration choice, disclosed as one. A brand certifies a row of ten analytes at once, so per-analyte limits set at a raw P90 would produce a joint pass rate near 35%. For the occurrence-set cells only, the Tier-1 toxics floored against the government maximum, and the cells no government regulates, P97 and P45 are the values that deliver the program&rsquo;s stated row-level outcomes: roughly 90% of clean-subcategory brands and 40% of dirty-subcategory brands pass, confirmed at 94% and 42% against FDA per-sample lot data. A subcategory whose every published limit binds on a government maximum has no percentile-set cell, and this calibration does not touch it: infant formula powder is one, with all eight of its published values set by government lookup.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The health-based floor binds first: no published value ever exceeds the lowest applicable regulatory ceiling in that basis. Where the ceiling binds, the rationale tag reads <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9f2727">regulatory-alignment</span>; where an occurrence value sits beneath a binding ceiling it is shown so the gap between the literature baseline and the published limit stays visible. On infant formula powder no cell is occurrence-set: every published value binds directly on a government maximum, lead on the EU&rsquo;s 20 ppb.</p>
   </div>
-  <div style="border:1px solid #e8e1db;background:#fffdfb;padding:20px 22px;margin-top:16px">
-    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin-bottom:10px">Why we publish the pass rate</div>
-    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0 0 14px;max-width:74ch">We are not aware of another certifier that publishes this number, and disclosing it invites an obvious reading: that the threshold was set to a commercial outcome rather than a health one. The reading is worth answering directly, because the alternative, not saying it, does not make the calibration disappear. It only makes it undiscoverable.</p>
-    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0 0 14px;max-width:74ch">Every percentile-based standard in food safety embeds a pass rate. Codex maximum levels, EU regulation 2023/915 and FDA action levels are all set against achievability, using occurrence data and explicit statements about what industry can meet. The choice is never whether a pass rate exists; it is whether the body setting the limit tells you what it is.</p>
-    <p style="font-size:15px;line-height:1.75;color:#3f3a3a;margin:0;max-width:74ch">The health-based floor is separate and binds first: no published value ever exceeds the lowest applicable regulatory ceiling in that basis. The calibration operates only in the space beneath that ceiling, where the literature alone does not determine a single number. Where the ceiling binds, the rationale tag reads <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9f2727">regulatory-alignment</span> and where an occurrence pool exists beneath a binding ceiling the pooled value is shown so the gap is visible. On infant formula powder no cell is occurrence-set: every published value binds directly on a government maximum: lead on the EU&rsquo;s 20 ppb.</p>
-  </div>
+  <p style="font-size:13px;line-height:1.6;color:#a9a1a1;max-width:72ch;margin:14px 0 0">Earlier editions leaned more heavily on occurrence-derived values; that presentation has been retired in favour of the government-limit default. <a href="/program/two-pathways" style="color:#1c43ad;text-decoration:none">The earlier framing, for the record →</a></p>
 </section>
 
 <section id="basis" style="margin-bottom:52px">
