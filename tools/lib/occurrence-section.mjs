@@ -11,9 +11,16 @@
 // plus data/standards/analyte-tox-anchors.json.
 //
 // FIREWALL (this is the CERT plane): the occurrence FINDINGS are cited one-way to
-// the public index source pages; the DERIVATION (pooled percentile -> limit ->
+// the public index source pages; the DERIVATION (occurrence value -> limit ->
 // rationale) renders here and only here. Nothing this module emits may appear on
 // a heavymetalindex.com URL.
+//
+// PERCENTILE FIREWALL (2026-08-24): the percentile-SELECTION labels (P97/P45) and
+// the clean/dirty two-pathways framing are an INTERNAL derivation mechanism and
+// must NOT render on any public cert surface — the sole exception is the dedicated
+// retired-methodology page (content/program/two-pathways.md), enforced by
+// tools/retired-methodology-lint.mjs. This module therefore renders the occurrence
+// VALUE and the government-vs-occurrence reasoning, never the percentile label.
 //
 // DESIGN CANON (docs/design-canon/CONTENT-RULES.md — BLOCKING on content/standards):
 //   - NO bold: no <strong>/<b>, no font-weight >= 600. Emphasis is the type system.
@@ -114,7 +121,6 @@ export function analyteOccurrenceBlock(opts) {
       // figures. The measured-maximum clause is added only when a per-study max
       // is known AND does not contradict P95 (never pool.p100, a fitted tail).
       const med = conc(occ.pool.p50)
-      const p95 = conc(occ.pool.p95)
       const showMax = obsMax != null && (occ.pool.p95 == null || occ.pool.p95 <= obsMax)
       const maxClause = showMax ? `, with a measured maximum of ${conc(obsMax)}` : ""
       const sampTxt = nSamp != null ? ` across ${nSamp} certified-market samples` : ""
@@ -123,9 +129,9 @@ export function analyteOccurrenceBlock(opts) {
       const medFig = medZero ? "median &lt;floor" : `median ${med}`
       occHtml =
         `<p style="${S.p}">${nStud} ${studyWord} in the certified-market pool measured ${esc(nameLc)} in ${esc(category)}${sampTxt}. `
-        + `The pooled distribution centres on ${medProse} and reaches ${p95} at the 95th percentile${maxClause}. `
+        + `The pooled distribution centres on ${medProse}${maxClause}. `
         + `${cites}.</p>`
-      occHtml += `<div style="${S.figs}">${nStud} ${studyWord} · ${nSamp} samples · ${medFig} · P95 ${p95}</div>`
+      occHtml += `<div style="${S.figs}">${nStud} ${studyWord} · ${nSamp} samples · ${medFig}</div>`
     } else {
       // not-material or no-pool cell: the corpus DOES hold measurements of the
       // analyte in this matrix — the "the category contains this metal" evidence.
@@ -159,7 +165,6 @@ export function analyteOccurrenceBlock(opts) {
   // ---- 2. THE LIMIT + RATIONALE ----
   let ratHtml = ""
   const whyLink = tox && tox.page ? ` <a href="/analytes/${esc(tox.page)}" style="${S.a}">Why ${esc(nameLc)} is limited →</a>` : ""
-  const twoPath = `<a href="/program/two-pathways" style="${S.a}">the two pathways</a>`
 
   const tag = opts.rationaleTag || der.rationale_tag || null
   const stripDot = (s) => esc(String(s || "").replace(/\.\s*$/, ""))
@@ -203,7 +208,7 @@ export function analyteOccurrenceBlock(opts) {
     let govClause = ""
     if (govMl && govMl.value_ppb != null) govClause = ` The strictest applicable government maximum level is ${conc(govMl.value_ppb)}${tag ? ` (${esc(tag)})` : ""}, which the certification limit will adopt.`
     else if (noGov && p) govClause = ` No government sets a maximum level; the limit will be set from the certified-market occurrence distribution.`
-    const poolClause = p && p.value_ppb != null && pctOk ? ` The certified-market pool's ${p.label} is ${pPct(p)}.` : ""
+    const poolClause = p && p.value_ppb != null && pctOk ? ` The certified-market occurrence value is ${pPct(p)}.` : ""
     ratHtml = `<p style="${S.p}">No firm HMTc limit is published for ${esc(nameLc)} in ${esc(category)} yet; the cell is in development pending the shipping gates.${govClause}${poolClause}${whyLink}</p>`
   } else if (opts.basisKind === "read_across" || (der.read_across && opts.basisKind !== "government")) {
     const label = opts.readAcrossLabel || (der.read_across ? der.read_across.label : "")
@@ -221,13 +226,10 @@ export function analyteOccurrenceBlock(opts) {
   } else if (noGov && der.percentile) {
     // confirmed no government limit — the program sets the number from occurrence
     const p = der.percentile
-    const pathway = p.label === "P45"
-      ? `the dirty-subcategory pathway (P45), calibrated to admit roughly the cleaner 40% of an endemic category and put the rest on notice`
-      : `the clean-subcategory pathway (P97), calibrated to admit roughly the cleanest 90% of the market and exclude the contaminated tail`
     const prov = p.sens_band === "provisional" ? " The value is held provisional pending a wider reference-method pool." : ""
     ratHtml =
       `<p style="${S.p}">No government sets a maximum level for ${esc(nameLc)} in ${esc(category)}. It is the program's role to set a limit where no government has, because ${esc((tox && tox.tox_anchor) || "the analyte carries a toxicological basis for control")}. `
-      + `HMTc sets ${esc(fmtLimit(opts, der))} from the certified-market occurrence distribution — ${pathway} (${twoPath}).${prov}${whyLink}</p>`
+      + `HMTc sets ${esc(fmtLimit(opts, der))} from the certified-market occurrence distribution.${prov}${whyLink}</p>`
   } else if (govMl) {
     // Method v2.0: government-limit default, with selective occurrence for the
     // Tier-1 toxics and no-ML cells. The LEAD is driven by the authoritative
@@ -241,23 +243,23 @@ export function analyteOccurrenceBlock(opts) {
     const poolGov = () => {
       if (!p || p.value_ppb == null || !pctOk) return ""
       const px = pPct(p)
-      if (govTxt == null) return ` The certified-market pool's ${p.label} is ${px}.`
+      if (govTxt == null) return ` The certified-market occurrence value is ${px}.`
       if (p.value_ppb >= gov.value_ppb && tag === "regulatory-alignment")
-        return ` The certified-market pool's ${p.label} is ${px}, at or above the government ceiling of ${govTxt}, so the government maximum binds.`
+        return ` The certified-market occurrence value is ${px}, at or above the government ceiling of ${govTxt}, so the government maximum binds.`
       if (p.value_ppb <= gov.value_ppb && tag === "literature-baseline")
-        return ` The pooled ${p.label} is ${px}, below the government ceiling of ${govTxt}, so the tighter occurrence value binds and the ratchet keeps room to work.`
-      return ` The certified-market pool's ${p.label} is ${px}, against a government ceiling of ${govTxt}.`
+        return ` The pooled occurrence value is ${px}, below the government ceiling of ${govTxt}, so the tighter occurrence value binds and the ratchet keeps room to work.`
+      return ` The certified-market occurrence value is ${px}, against a government ceiling of ${govTxt}.`
     }
     let lead, numClause = ""
     if (tag === "literature-baseline" && p) {
       lead = "the certified-market occurrence value, which beats the strictest government ceiling — HMTc certifies to the cleaner number and the ratchet keeps room to work"
       numClause = poolGov()
     } else if (tag === "precautionary") {
-      lead = "a precautionary value set below both the pooled occurrence percentile and the strictest government ceiling"
-      if (p && p.value_ppb != null && govTxt) numClause = ` Pooled ${p.label} ${conc(p.value_ppb)}; government ceiling ${govTxt}.`
+      lead = "a precautionary value set below both the pooled occurrence value and the strictest government ceiling"
+      if (p && p.value_ppb != null && govTxt) numClause = ` Pooled occurrence value ${conc(p.value_ppb)}; government ceiling ${govTxt}.`
     } else if (tag === "feasibility-driven") {
       lead = "held above the tightest achievable value on documented feasibility grounds, with a sunset plan to tighten"
-      if (p && p.value_ppb != null) numClause = ` Pooled ${p.label} ${conc(p.value_ppb)}.`
+      if (p && p.value_ppb != null) numClause = ` Pooled occurrence value ${conc(p.value_ppb)}.`
     } else {
       lead = "the strictest applicable government maximum level for this product form, adopted under Method v2.0 as the default certification standard"
       numClause = poolGov()
@@ -271,7 +273,7 @@ export function analyteOccurrenceBlock(opts) {
     const p = der.percentile
     const tagTxt = tag ? ` (${esc(tag)})` : ""
     const disp = fmtLimit(opts, der)
-    const numClause = p && p.value_ppb != null && pctOk ? ` The certified-market pool's ${p.label} is ${pPct(p)}.` : ""
+    const numClause = p && p.value_ppb != null && pctOk ? ` The certified-market occurrence value is ${pPct(p)}.` : ""
     ratHtml = disp ? `<p style="${S.p}">HMTc sets ${esc(disp)}${tagTxt} under Method v2.0.${numClause}${whyLink}</p>` : ""
   }
 

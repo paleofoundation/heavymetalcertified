@@ -10,7 +10,7 @@ standard_version: "2.2 (2026-06-09)"
 methodology_version: "HMTc-10 / Method v2.0: government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)"
 variant_type: independent
 hmi_literature_link: https://heavymetalindex.com/products/butter-and-ghee
-effective_date: 2026-08-17
+effective_date: 2026-08-24
 scholar_eligible: false
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 snapshot:

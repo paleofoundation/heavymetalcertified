@@ -303,7 +303,6 @@ export const navPanels: NavPanel[] = [
         heading: "How it works",
         children: [
           { label: "Program structure & gates", slug: "program/structure" },
-          { label: "The two limit pathways", slug: "program/two-pathways" },
         ],
       },
       {
