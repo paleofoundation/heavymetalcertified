@@ -38,9 +38,9 @@ directly.
 - The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): https://heavymetalcertified.com/program/two-pathways
 - Standards Briefings: https://heavymetalcertified.com/briefings
 - Research: https://heavymetalcertified.com/articles
-- Regulatory Watch hub (21 verified or explicitly gapped story clusters): https://heavymetalcertified.com/articles/regulatory-watch
-- Regulatory Watch JSON: https://heavymetalcertified.com/static/data/regulatory-watch.json
-- Regulatory Watch CSV: https://heavymetalcertified.com/static/data/regulatory-watch.csv
+- Regulatory Watch Q2 2026 compliance brief (verified public events, action owners, deadlines, and direct law-to-HMTc comparisons): https://heavymetalcertified.com/articles/regulatory-watch
+- Regulatory Watch verified JSON (includes impact classes and comparison records): https://heavymetalcertified.com/static/data/regulatory-watch.json
+- Regulatory Watch verified CSV (operational action register): https://heavymetalcertified.com/static/data/regulatory-watch.csv
 
 ## Guides (what heavy metals mean in a product, and how testing and certification work)
 

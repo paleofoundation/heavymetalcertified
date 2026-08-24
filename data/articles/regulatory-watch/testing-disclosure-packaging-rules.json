@@ -21,7 +21,7 @@
   "keywords": ["heavy metal testing requirements", "baby food heavy metal disclosure", "heavy metal packaging limits", "EU PPWR heavy metals", "FDA infant formula testing", "lead service line disclosure", "aluminum food additive rules"],
   "jurisdictions": ["United States", "Virginia", "Illinois", "Vermont", "California", "European Union", "Canada", "Taiwan", "Hong Kong"],
   "instruments": ["US state baby-food acts", "FDA infant-formula testing", "EPA Lead and Copper Rule Improvements", "California Cr(VI) MCL", "Regulation (EU) 2025/40", "Regulation (EU) 2024/1849", "Health Canada M-FAA-25-03", "Taiwan FDA analytical method"],
-  "event_ids": ["rw-2026-05-us-state-baby-food", "rw-2026-07-korea-taiwan-hong-kong", "rw-2026-10-canada-aluminum-additives", "rw-2026-13-fda-closer-to-zero", "rw-2026-14-epa-lcri", "rw-2026-15-california-crvi-water", "rw-2026-16-eu-packaging-mercury", "rw-2026-20-thailand-food-contact"],
+  "event_ids": ["rw-2026-05-us-state-baby-food", "rw-2026-07-korea-taiwan-hong-kong", "rw-2026-10-canada-aluminum-additives", "rw-2026-13-fda-closer-to-zero", "rw-2026-14-epa-lcri", "rw-2026-15-california-crvi-water", "rw-2026-16-eu-packaging-mercury"],
   "isBasedOn": [
     {"name": "FDA infant-formula testing results", "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"},
     {"name": "EPA Lead and Copper Rule Improvements", "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements"},
@@ -48,7 +48,7 @@
     },
     {
       "h2": "Packaging Composition Is Its Own Regime",
-      "body": "The EU Packaging and Packaging Waste Regulation entered into force in February 2025 and generally applies from 12 August 2026 <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. It covers packaging across materials and origins, including composition and substances-of-concern controls. A packaging rule is not a food contaminant limit: it attaches to the package and can use different sampling, concentration and derogation concepts. The correct control links the finished-food standard to a separate packaging bill of materials, supplier declaration, migration or composition evidence where applicable, and market date. Thailand's existing plastic-food-packaging rule demonstrates the same domain distinction, while the claimed 2025 Thai change stays in an evidence gap until its official instrument is identified."
+      "body": "The EU Packaging and Packaging Waste Regulation entered into force in February 2025 and generally applies from 12 August 2026 <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. It covers packaging across materials and origins, including composition and substances-of-concern controls. A packaging rule is not a food contaminant limit: it attaches to the package and can use different sampling, concentration and derogation concepts. The correct control links the finished-food standard to a separate packaging bill of materials, supplier declaration, migration or composition evidence where applicable, and market date. Unsupported packaging-change leads are kept outside the public brief until an official instrument establishes the new requirement."
     },
     {
       "h2": "Product Restrictions and Formulation Rules Need Separate Timelines",

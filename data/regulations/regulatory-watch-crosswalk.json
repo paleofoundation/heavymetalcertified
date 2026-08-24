@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "description": "Explicit, auditable mappings from neutral HMI regulatory-limit records to published HMTc standard cells. A mapping authorizes comparison only; it never changes a standard.",
+  "mappings": [
+    {
+      "event_id": "rw-2026-01-eu-ias-seafood",
+      "regulatory_limit_id": "eu20251891_ias_fish_other_100",
+      "standard_slug": "fish-marine-non-predatory",
+      "variant": "both",
+      "analyte": "iAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Representative comparison for non-listed marine finfish on wet-weight/as-consumed edible portion."
+    },
+    {
+      "event_id": "rw-2026-01-eu-ias-seafood",
+      "regulatory_limit_id": "eu20251891_ias_cephalopods_50",
+      "standard_slug": "cephalopods",
+      "variant": "both",
+      "analyte": "iAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Cephalopod edible portion without viscera; wet-weight/as-consumed comparison."
+    },
+    {
+      "event_id": "rw-2026-01-eu-ias-seafood",
+      "regulatory_limit_id": "eu20251891_tas_salt_500",
+      "standard_slug": "salt",
+      "variant": null,
+      "analyte": "tAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Food-grade salt as placed on the market; total arsenic remains distinct from inorganic arsenic."
+    },
+    {
+      "event_id": "rw-2026-02-eu-nickel-deadlines",
+      "regulatory_limit_id": "eu2024_ni_tree_nuts_3500",
+      "standard_slug": "nuts-seeds-other",
+      "variant": "both",
+      "analyte": "Ni",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Tree nuts in the EU 3,500 µg/kg tier; excluded high-nickel nuts route to a separate HMTc row."
+    },
+    {
+      "event_id": "rw-2026-02-eu-nickel-deadlines",
+      "regulatory_limit_id": "eu2024_ni_cereals_800",
+      "standard_slug": "flour-non-rice",
+      "variant": "both",
+      "analyte": "Ni",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Representative non-rice cereal comparison on product-as-placed/as-sold basis."
+    },
+    {
+      "event_id": "rw-2026-02-eu-nickel-deadlines",
+      "regulatory_limit_id": "eu2024_ni_formula_powder_250",
+      "standard_slug": "infant-formula-powder",
+      "variant": "cow",
+      "analyte": "Ni",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Powder formula except soy-protein-isolate formula, which has a separate EU tier and HMTc variant."
+    },
+    {
+      "event_id": "rw-2026-09-brazil-mercosur",
+      "regulatory_limit_id": "br_pb_cereal-based-foods-for-infant-young-chil_20",
+      "standard_slug": "baby-cereals-dry-non-rice",
+      "published_standard_url": "/standards/baby-cereals-dry",
+      "variant": "both",
+      "analyte": "Pb",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Brazil's in-force infant cereal lead component, separate from the non-binding MERCOSUR project in the same story cluster."
+    },
+    {
+      "event_id": "rw-2026-06-india-2026-amendment",
+      "regulatory_limit_id": "in_fssai2026_ias_fish_oils_100",
+      "standard_slug": "supplements-oil-based",
+      "variant": "both",
+      "analyte": "iAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Fish-oil supplement as sold. HMTc's voluntary child-protective read-across is compared transparently with India's future legal maximum."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_tas_health_supplements_5000",
+      "standard_slug": "supplements-oral-solids-capsules",
+      "variant": "both",
+      "analyte": "tAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Solid health-supplement comparison on mg/kg/as-sold basis; the rule's separate mg/L application is not converted here."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_ias_health_supplements_1500",
+      "standard_slug": "supplements-oral-solids-capsules",
+      "variant": "both",
+      "analyte": "iAs",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Solid health-supplement comparison; total and inorganic arsenic remain separate cells."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_seaweed_bivalve_3000",
+      "standard_slug": "supplements-algae-seaweed-based",
+      "variant": "both",
+      "analyte": "Cd",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Health supplements containing seaweed ingredients; no conversion is made for liquid products."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_other_1000",
+      "standard_slug": "supplements-oral-solids-capsules",
+      "variant": "both",
+      "analyte": "Cd",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Solid health supplements outside the seaweed/bivalve cadmium tier."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_pb_health_supplements_10000",
+      "standard_slug": "supplements-oral-solids-capsules",
+      "variant": "both",
+      "analyte": "Pb",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Solid health-supplement comparison on mg/kg/as-sold basis."
+    },
+    {
+      "event_id": "rw-2026-11-vietnam-amendment",
+      "regulatory_limit_id": "vn_qcvn20_2024_thg_health_supplements_500",
+      "standard_slug": "supplements-oral-solids-capsules",
+      "variant": "both",
+      "analyte": "tHg",
+      "basis_relation": "same-mass-fraction",
+      "scope_note": "Solid health-supplement total-mercury comparison on mg/kg/as-sold basis."
+    }
+  ]
+}

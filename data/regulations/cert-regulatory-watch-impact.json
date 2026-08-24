@@ -1,8 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated": "2026-08-24",
+  "quarter": "2026-Q2",
+  "quarter_start": "2026-04-01",
+  "quarter_end": "2026-06-30",
   "source_snapshot": "data/regulations/cert-regulatory-watch-snapshot.json",
+  "crosswalk": "data/regulations/regulatory-watch-crosswalk.json",
   "impact_count": 21,
+  "comparison_count": 14,
   "impacts": [
     {
       "event_id": "rw-2026-01-eu-ias-seafood",
@@ -12,26 +17,98 @@
         "tAs"
       ],
       "affected_product_categories": [
-        "fish",
-        "crustaceans",
-        "bivalve molluscs",
-        "cephalopods",
-        "salt"
+        "Marine non-predatory fish (sardine, anchovy, salmon, cod, herring, mackerel; fillet/muscle meat, fresh or frozen)",
+        "Cephalopods (octopus, squid, cuttlefish; not canned)",
+        "Salt (table, sea, Himalayan)"
       ],
       "deadline": "2025-10-08",
-      "analyte_urls": [
-        "/analytes/inorganic-arsenic",
-        "/analytes/arsenic"
-      ],
+      "deadline_state": "passed",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
       "related_standard_urls": [
-        "/standards",
-        "/standards/canned-seafood",
-        "/standards/shellfish",
         "/standards/fish-marine-non-predatory",
-        "/standards/fish-marine-predatory"
+        "/standards/cephalopods",
+        "/standards/salt"
       ],
-      "rationale": "The verified in-force instrument has structured HMI limit rows. Existing standards can be compared through the normal compiled-regulation process without copying numbers into this tracker.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "comparisons": [
+        {
+          "event_id": "rw-2026-01-eu-ias-seafood",
+          "regulatory_limit_id": "eu20251891_ias_fish_other_100",
+          "jurisdiction": "EU",
+          "analyte": "iAs",
+          "product_scope": "muscle meat of fish, species other than those listed under Annex I 3.4.5.2",
+          "regulatory_value_ug_kg": 100,
+          "regulatory_basis": "wet weight",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "fish-marine-non-predatory",
+          "hmtc_standard_name": "Marine non-predatory fish (sardine, anchovy, salmon, cod, herring, mackerel; fillet/muscle meat, fresh or frozen)",
+          "hmtc_standard_url": "/standards/fish-marine-non-predatory",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 100,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "edible portion, as consumed (wet weight)",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Representative comparison for non-listed marine finfish on wet-weight/as-consumed edible portion.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2025-1891-inorganic-arsenic-fish-seafood"
+        },
+        {
+          "event_id": "rw-2026-01-eu-ias-seafood",
+          "regulatory_limit_id": "eu20251891_ias_cephalopods_50",
+          "jurisdiction": "EU",
+          "analyte": "iAs",
+          "product_scope": "cephalopods",
+          "regulatory_value_ug_kg": 50,
+          "regulatory_basis": "wet weight",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "cephalopods",
+          "hmtc_standard_name": "Cephalopods (octopus, squid, cuttlefish; not canned)",
+          "hmtc_standard_url": "/standards/cephalopods",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 50,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "edible portion, as consumed (wet weight)",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Cephalopod edible portion without viscera; wet-weight/as-consumed comparison.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2025-1891-inorganic-arsenic-fish-seafood"
+        },
+        {
+          "event_id": "rw-2026-01-eu-ias-seafood",
+          "regulatory_limit_id": "eu20251891_tas_salt_500",
+          "jurisdiction": "EU",
+          "analyte": "tAs",
+          "product_scope": "salt",
+          "regulatory_value_ug_kg": 500,
+          "regulatory_basis": "product as placed on market",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "salt",
+          "hmtc_standard_name": "Salt (table, sea, Himalayan)",
+          "hmtc_standard_url": "/standards/salt",
+          "hmtc_variant": null,
+          "hmtc_value_ug_kg": 500,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "food-grade salt as placed on the market (dry)",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Food-grade salt as placed on the market; total arsenic remains distinct from inorganic arsenic.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2025-1891-inorganic-arsenic-fish-seafood"
+        }
+      ],
+      "comparison_summary": {
+        "mapped": 3,
+        "hmtc_stricter": 0,
+        "equal": 3,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "3 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
       "governance_queue": true
     },
     {
@@ -41,30 +118,98 @@
         "Ni"
       ],
       "affected_product_categories": [
-        "nuts",
-        "vegetables",
-        "pulses",
-        "oilseeds",
-        "cereals",
-        "cocoa",
-        "infant formula",
-        "baby food",
-        "juice",
-        "seaweed"
+        "Nuts and seeds (general tree nuts and non-sunflower oilseeds — almonds, pistachios, hazelnuts, pecans, macadamias, sesame, flax, pumpkin, other)",
+        "Flour (wheat, corn, other — non-rice)",
+        "Infant formula (powder)"
       ],
       "deadline": "2026-07-01",
-      "analyte_urls": [
-        "/analytes/nickel"
-      ],
+      "deadline_state": "passed",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
       "related_standard_urls": [
-        "/standards",
-        "/standards/baby-cereals-dry",
-        "/standards/infant-formula-powder",
-        "/standards/rice-bulk-grain",
-        "/standards/chocolate"
+        "/standards/nuts-seeds-other",
+        "/standards/flour-non-rice",
+        "/standards/infant-formula-powder"
       ],
-      "rationale": "The verified in-force instrument has structured HMI limit rows. Existing standards can be compared through the normal compiled-regulation process without copying numbers into this tracker.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "comparisons": [
+        {
+          "event_id": "rw-2026-02-eu-nickel-deadlines",
+          "regulatory_limit_id": "eu2024_ni_tree_nuts_3500",
+          "jurisdiction": "EU",
+          "analyte": "Ni",
+          "product_scope": "tree nuts except chestnuts, pine nuts, walnuts, Brazil nuts, cashew nuts",
+          "regulatory_value_ug_kg": 3500,
+          "regulatory_basis": "edible part",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "nuts-seeds-other",
+          "hmtc_standard_name": "Nuts and seeds (general tree nuts and non-sunflower oilseeds — almonds, pistachios, hazelnuts, pecans, macadamias, sesame, flax, pumpkin, other)",
+          "hmtc_standard_url": "/standards/nuts-seeds-other",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 3500,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Tree nuts in the EU 3,500 µg/kg tier; excluded high-nickel nuts route to a separate HMTc row.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels"
+        },
+        {
+          "event_id": "rw-2026-02-eu-nickel-deadlines",
+          "regulatory_limit_id": "eu2024_ni_cereals_800",
+          "jurisdiction": "EU",
+          "analyte": "Ni",
+          "product_scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+          "regulatory_value_ug_kg": 800,
+          "regulatory_basis": "product as placed on market",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "flour-non-rice",
+          "hmtc_standard_name": "Flour (wheat, corn, other — non-rice)",
+          "hmtc_standard_url": "/standards/flour-non-rice",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 800,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Representative non-rice cereal comparison on product-as-placed/as-sold basis.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels"
+        },
+        {
+          "event_id": "rw-2026-02-eu-nickel-deadlines",
+          "regulatory_limit_id": "eu2024_ni_formula_powder_250",
+          "jurisdiction": "EU",
+          "analyte": "Ni",
+          "product_scope": "infant/young-child formula, powder, except soy-isolate",
+          "regulatory_value_ug_kg": 250,
+          "regulatory_basis": "product as placed on market",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "infant-formula-powder",
+          "hmtc_standard_name": "Infant formula (powder)",
+          "hmtc_standard_url": "/standards/infant-formula-powder",
+          "hmtc_variant": "cow",
+          "hmtc_value_ug_kg": 250,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Powder formula except soy-protein-isolate formula, which has a separate EU tier and HMTc variant.",
+          "regulation_url": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels"
+        }
+      ],
+      "comparison_summary": {
+        "mapped": 3,
+        "hmtc_stricter": 0,
+        "equal": 3,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "3 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
       "governance_queue": true
     },
     {
@@ -81,44 +226,61 @@
         "Cr-total",
         "Ni"
       ],
-      "affected_product_categories": [
-        "foods placed on the Chinese market"
-      ],
+      "affected_product_categories": [],
       "deadline": "2026-09-02",
-      "analyte_urls": [
-        "/analytes/lead",
-        "/analytes/cadmium",
-        "/analytes/arsenic",
-        "/analytes/inorganic-arsenic",
-        "/analytes/mercury",
-        "/analytes/methylmercury",
-        "/analytes/tin",
-        "/analytes/chromium",
-        "/analytes/nickel"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The instrument is adopted with a future application date. It belongs in readiness and governance review, not in the current-limit compiler before that date.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Prepare for the adopted effective date. 0 mapped HMTc comparisons are available; no threshold changes automatically.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the effective date",
+        "owner": "Regulatory and laboratory operations"
+      },
       "governance_queue": true
     },
     {
       "event_id": "rw-2026-04-gso-2783",
-      "impact_class": "insufficient-evidence",
+      "impact_class": "context-with-no-direct-hmtc-change",
       "affected_analytes": [
-        "heavy-metals-unspecified"
+        "tAs",
+        "iAs",
+        "tHg",
+        "Cd",
+        "Pb",
+        "Sn"
       ],
-      "affected_product_categories": [
-        "foods in Gulf markets"
-      ],
-      "deadline": "2026-10-01",
-      "analyte_urls": [],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -130,43 +292,89 @@
         "tAs",
         "tHg"
       ],
-      "affected_product_categories": [
-        "baby food",
-        "infant formula where state text applies"
-      ],
+      "affected_product_categories": [],
       "deadline": "2026-01-01",
-      "analyte_urls": [
-        "/analytes/lead",
-        "/analytes/cadmium",
-        "/analytes/arsenic",
-        "/analytes/mercury"
-      ],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/baby-cereals-dry",
-        "/standards/infant-formula-powder"
-      ],
-      "rationale": "The verified change creates testing, disclosure, inventory, or communication duties that may affect evidence packages and market claims even where the concentration limit is unchanged.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "passed",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review testing records, public disclosure, inventory, and communication duties even when the certification concentration limit is unchanged.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
       "governance_queue": false
     },
     {
       "event_id": "rw-2026-06-india-2026-amendment",
-      "impact_class": "insufficient-evidence",
+      "impact_class": "future-binding-limit-candidate",
       "affected_analytes": [
-        "heavy-metals-unspecified"
+        "Pb",
+        "Cd",
+        "iAs",
+        "tAs"
       ],
       "affected_product_categories": [
-        "foods placed on the Indian market"
+        "Ingredient class — oil-based supplements (fish oil/omega-3 and similar)"
       ],
-      "deadline": "2026-10-15",
-      "analyte_urls": [],
+      "deadline": "2026-12-01",
+      "deadline_state": "upcoming",
+      "q2_relevance": "q2-development",
+      "q2_date_fields": [
+        "adopted",
+        "published"
+      ],
       "related_standard_urls": [
-        "/standards"
+        "/standards/supplements-oil-based"
       ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
-      "governance_queue": false
+      "comparisons": [
+        {
+          "event_id": "rw-2026-06-india-2026-amendment",
+          "regulatory_limit_id": "in_fssai2026_ias_fish_oils_100",
+          "jurisdiction": "IN",
+          "analyte": "iAs",
+          "product_scope": "Fish oils",
+          "regulatory_value_ug_kg": 100,
+          "regulatory_basis": "product as placed on market",
+          "legal_status": "adopted maximum level effective 2026-12-01",
+          "hmtc_standard_slug": "supplements-oil-based",
+          "hmtc_standard_name": "Ingredient class — oil-based supplements (fish oil/omega-3 and similar)",
+          "hmtc_standard_url": "/standards/supplements-oil-based",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 10,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Fish-oil supplement as sold. HMTc's voluntary child-protective read-across is compared transparently with India's future legal maximum.",
+          "regulation_url": "https://heavymetalindex.com/regulations/india-fssai-2026-contaminants-amendment"
+        }
+      ],
+      "comparison_summary": {
+        "mapped": 1,
+        "hmtc_stricter": 1,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Prepare for the adopted effective date. 1 mapped HMTc comparison is available; no threshold changes automatically.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the effective date",
+        "owner": "Regulatory and laboratory operations"
+      },
+      "governance_queue": true
     },
     {
       "event_id": "rw-2026-07-korea-taiwan-hong-kong",
@@ -177,23 +385,27 @@
         "MeHg",
         "heavy-metals-multiple"
       ],
-      "affected_product_categories": [
-        "cocoa and chocolate",
-        "foods tested by the amended method",
-        "foods in Cap. 132V"
-      ],
+      "affected_product_categories": [],
       "deadline": "2027-03-06",
-      "analyte_urls": [
-        "/analytes/cadmium",
-        "/analytes/lead",
-        "/analytes/methylmercury"
-      ],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/chocolate"
-      ],
-      "rationale": "The verified change affects what must be measured or how evidence is produced; it does not by itself establish a new certification concentration limit.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review the laboratory specification and evidence package; the event changes measurement or compliance procedure, not a certification concentration limit by itself.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the listed date",
+        "owner": "Regulatory and quality operations"
+      },
       "governance_queue": true
     },
     {
@@ -202,24 +414,32 @@
       "affected_analytes": [
         "Pb"
       ],
-      "affected_product_categories": [
-        "dried bark spices",
-        "dried culinary herbs"
-      ],
+      "affected_product_categories": [],
       "deadline": "2025-11-10",
-      "analyte_urls": [
-        "/analytes/lead"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "passed",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review formulation, packaging, authorization, or market-entry documentation for the named jurisdiction; no threshold changes automatically.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
       "governance_queue": false
     },
     {
       "event_id": "rw-2026-09-brazil-mercosur",
-      "impact_class": "insufficient-evidence",
+      "impact_class": "context-with-no-direct-hmtc-change",
       "affected_analytes": [
         "Pb",
         "Cd",
@@ -227,23 +447,52 @@
         "Sn"
       ],
       "affected_product_categories": [
-        "infant foods",
-        "foods covered by Brazil's contaminant framework"
+        "Baby cereals / grain products, dry (non-rice)"
       ],
-      "deadline": "2025-09-18",
-      "analyte_urls": [
-        "/analytes/lead",
-        "/analytes/cadmium",
-        "/analytes/inorganic-arsenic",
-        "/analytes/tin"
-      ],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
       "related_standard_urls": [
-        "/standards",
-        "/standards/baby-cereals-dry",
-        "/standards/infant-formula-powder"
+        "/standards/baby-cereals-dry"
       ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "comparisons": [
+        {
+          "event_id": "rw-2026-09-brazil-mercosur",
+          "regulatory_limit_id": "br_pb_cereal-based-foods-for-infant-young-chil_20",
+          "jurisdiction": "BR",
+          "analyte": "Pb",
+          "product_scope": "Cereal-based foods for infant/young-child feeding (alimentos à base de cereais)",
+          "regulatory_value_ug_kg": 20,
+          "regulatory_basis": "product as placed on market",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "baby-cereals-dry-non-rice",
+          "hmtc_standard_name": "Baby cereals / grain products, dry (non-rice)",
+          "hmtc_standard_url": "/standards/baby-cereals-dry",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 20,
+          "hmtc_cell_type": "gov",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "equal",
+          "scope_note": "Brazil's in-force infant cereal lead component, separate from the non-binding MERCOSUR project in the same story cluster.",
+          "regulation_url": "https://heavymetalindex.com/regulations/br-infant-food-contaminants"
+        }
+      ],
+      "comparison_summary": {
+        "mapped": 1,
+        "hmtc_stricter": 0,
+        "equal": 1,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -252,37 +501,194 @@
       "affected_analytes": [
         "Al"
       ],
-      "affected_product_categories": [
-        "foods using specified aluminum-based additives"
-      ],
+      "affected_product_categories": [],
       "deadline": "2028-01-01",
-      "analyte_urls": [
-        "/analytes/aluminum"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review formulation, packaging, authorization, or market-entry documentation for the named jurisdiction; no threshold changes automatically.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the listed date",
+        "owner": "Regulatory and quality operations"
+      },
       "governance_queue": false
     },
     {
       "event_id": "rw-2026-11-vietnam-amendment",
-      "impact_class": "insufficient-evidence",
+      "impact_class": "current-binding-limit-change",
       "affected_analytes": [
-        "heavy-metals-unspecified"
+        "tAs",
+        "iAs",
+        "Cd",
+        "Pb",
+        "tHg"
       ],
       "affected_product_categories": [
-        "foods placed on the Vietnamese market"
+        "Oral solids: capsules",
+        "Ingredient class — algae/seaweed-based"
       ],
-      "deadline": "2026-10-15",
-      "analyte_urls": [],
+      "deadline": "2025-08-01",
+      "deadline_state": "passed",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
       "related_standard_urls": [
-        "/standards"
+        "/standards/supplements-oral-solids-capsules",
+        "/standards/supplements-algae-seaweed-based"
       ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
-      "governance_queue": false
+      "comparisons": [
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_tas_health_supplements_5000",
+          "jurisdiction": "VN",
+          "analyte": "tAs",
+          "product_scope": "Health supplements",
+          "regulatory_value_ug_kg": 5000,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-oral-solids-capsules",
+          "hmtc_standard_name": "Oral solids: capsules",
+          "hmtc_standard_url": "/standards/supplements-oral-solids-capsules",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 50,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Solid health-supplement comparison on mg/kg/as-sold basis; the rule's separate mg/L application is not converted here.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        },
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_ias_health_supplements_1500",
+          "jurisdiction": "VN",
+          "analyte": "iAs",
+          "product_scope": "Health supplements",
+          "regulatory_value_ug_kg": 1500,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-oral-solids-capsules",
+          "hmtc_standard_name": "Oral solids: capsules",
+          "hmtc_standard_url": "/standards/supplements-oral-solids-capsules",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 10,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Solid health-supplement comparison; total and inorganic arsenic remain separate cells.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        },
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_seaweed_bivalve_3000",
+          "jurisdiction": "VN",
+          "analyte": "Cd",
+          "product_scope": "Health supplements containing ingredients from seaweed or bivalve molluscs",
+          "regulatory_value_ug_kg": 3000,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-algae-seaweed-based",
+          "hmtc_standard_name": "Ingredient class — algae/seaweed-based",
+          "hmtc_standard_url": "/standards/supplements-algae-seaweed-based",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 5,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Health supplements containing seaweed ingredients; no conversion is made for liquid products.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        },
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_other_1000",
+          "jurisdiction": "VN",
+          "analyte": "Cd",
+          "product_scope": "Health supplements not containing ingredients from seaweed or bivalve molluscs",
+          "regulatory_value_ug_kg": 1000,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-oral-solids-capsules",
+          "hmtc_standard_name": "Oral solids: capsules",
+          "hmtc_standard_url": "/standards/supplements-oral-solids-capsules",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 5,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Solid health supplements outside the seaweed/bivalve cadmium tier.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        },
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_pb_health_supplements_10000",
+          "jurisdiction": "VN",
+          "analyte": "Pb",
+          "product_scope": "Health supplements",
+          "regulatory_value_ug_kg": 10000,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-oral-solids-capsules",
+          "hmtc_standard_name": "Oral solids: capsules",
+          "hmtc_standard_url": "/standards/supplements-oral-solids-capsules",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 10,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Solid health-supplement comparison on mg/kg/as-sold basis.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        },
+        {
+          "event_id": "rw-2026-11-vietnam-amendment",
+          "regulatory_limit_id": "vn_qcvn20_2024_thg_health_supplements_500",
+          "jurisdiction": "VN",
+          "analyte": "tHg",
+          "product_scope": "Health supplements",
+          "regulatory_value_ug_kg": 500,
+          "regulatory_basis": "finished product as sold; source unit mg/kg or mg/L",
+          "legal_status": "maximum level",
+          "hmtc_standard_slug": "supplements-oral-solids-capsules",
+          "hmtc_standard_name": "Oral solids: capsules",
+          "hmtc_standard_url": "/standards/supplements-oral-solids-capsules",
+          "hmtc_variant": "both",
+          "hmtc_value_ug_kg": 4,
+          "hmtc_cell_type": "read_across",
+          "hmtc_basis": "as_sold",
+          "basis_relation": "same-mass-fraction",
+          "relation": "hmtc-stricter",
+          "scope_note": "Solid health-supplement total-mercury comparison on mg/kg/as-sold basis.",
+          "regulation_url": "https://heavymetalindex.com/regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        }
+      ],
+      "comparison_summary": {
+        "mapped": 6,
+        "hmtc_stricter": 6,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "6 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
+      "governance_queue": true
     },
     {
       "event_id": "rw-2026-12-echa-crvi-restriction",
@@ -290,18 +696,27 @@
       "affected_analytes": [
         "Cr-VI"
       ],
-      "affected_product_categories": [
-        "chromium(VI) substances and specified uses under REACH"
-      ],
+      "affected_product_categories": [],
       "deadline": "2026-08-17",
-      "analyte_urls": [
-        "/analytes/hexavalent-chromium"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "passed",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -313,24 +728,29 @@
         "Cd",
         "tHg"
       ],
-      "affected_product_categories": [
-        "infant formula",
-        "foods for babies and young children"
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "q2-development",
+      "q2_date_fields": [
+        "published"
       ],
-      "deadline": "2026-12-15",
-      "analyte_urls": [
-        "/analytes/arsenic",
-        "/analytes/lead",
-        "/analytes/cadmium",
-        "/analytes/mercury"
-      ],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/baby-cereals-dry",
-        "/standards/infant-formula-powder"
-      ],
-      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -340,18 +760,27 @@
         "Pb",
         "Cu"
       ],
-      "affected_product_categories": [
-        "public water systems"
-      ],
+      "affected_product_categories": [],
       "deadline": "2027-11-01",
-      "analyte_urls": [
-        "/analytes/lead"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The verified change creates testing, disclosure, inventory, or communication duties that may affect evidence packages and market claims even where the concentration limit is unchanged.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review testing records, public disclosure, inventory, and communication duties even when the certification concentration limit is unchanged.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the listed date",
+        "owner": "Regulatory and quality operations"
+      },
       "governance_queue": false
     },
     {
@@ -360,18 +789,27 @@
       "affected_analytes": [
         "Cr-VI"
       ],
-      "affected_product_categories": [
-        "community and nontransient-noncommunity water systems"
-      ],
+      "affected_product_categories": [],
       "deadline": "2028-10-01",
-      "analyte_urls": [
-        "/analytes/hexavalent-chromium"
-      ],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The verified change affects what must be measured or how evidence is produced; it does not by itself establish a new certification concentration limit.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review the laboratory specification and evidence package; the event changes measurement or compliance procedure, not a certification concentration limit by itself.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the listed date",
+        "owner": "Regulatory and quality operations"
+      },
       "governance_queue": true
     },
     {
@@ -383,24 +821,27 @@
         "tHg",
         "Cr-VI"
       ],
-      "affected_product_categories": [
-        "packaging",
-        "dental amalgam",
-        "specified mercury-containing lamps"
-      ],
+      "affected_product_categories": [],
       "deadline": "2026-08-12",
-      "analyte_urls": [
-        "/analytes/lead",
-        "/analytes/cadmium",
-        "/analytes/mercury",
-        "/analytes/hexavalent-chromium"
-      ],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/food-packaging-flexible-pouches-films"
-      ],
-      "rationale": "The verified change affects formulation, packaging, authorization, alignment, or access to a jurisdiction. It should inform market-readiness review, not silently rewrite a standard.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "deadline_state": "passed",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Review formulation, packaging, authorization, or market-entry documentation for the named jurisdiction; no threshold changes automatically.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
+      },
       "governance_queue": false
     },
     {
@@ -409,23 +850,27 @@
       "affected_analytes": [
         "Pb"
       ],
-      "affected_product_categories": [
-        "civilian outdoor ammunition",
-        "fishing tackle"
-      ],
-      "deadline": "2026-11-01",
-      "analyte_urls": [
-        "/analytes/lead"
-      ],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/canned-seafood",
-        "/standards/shellfish",
-        "/standards/fish-marine-non-predatory",
-        "/standards/fish-marine-predatory"
-      ],
-      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -434,16 +879,29 @@
       "affected_analytes": [
         "heavy-metals-multiple"
       ],
-      "affected_product_categories": [
-        "agri-food products and relevant food-safety legislation"
-      ],
+      "affected_product_categories": [],
       "deadline": "2027-06-30",
-      "analyte_urls": [],
-      "related_standard_urls": [
-        "/standards"
+      "deadline_state": "upcoming",
+      "q2_relevance": "q2-development",
+      "q2_date_fields": [
+        "consultation_close"
       ],
-      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -452,16 +910,29 @@
       "affected_analytes": [
         "heavy-metals-unspecified"
       ],
-      "affected_product_categories": [
-        "foods and food-safety national standards under consultation"
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "q2-development",
+      "q2_date_fields": [
+        "published"
       ],
-      "deadline": "2026-10-15",
-      "analyte_urls": [],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The event is verified context, monitoring, or a non-final proposal. It is visible for planning but has no direct program change at this stage.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Monitor the verified non-final or contextual development. It does not create a current HMTc threshold change.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "monitor",
+        "label": "Monitor official status",
+        "owner": "Regulatory affairs"
+      },
       "governance_queue": false
     },
     {
@@ -470,17 +941,27 @@
       "affected_analytes": [
         "heavy-metals-unspecified"
       ],
-      "affected_product_categories": [
-        "food packaging and food-contact materials"
-      ],
-      "deadline": "2026-10-15",
-      "analyte_urls": [],
-      "related_standard_urls": [
-        "/standards",
-        "/standards/food-packaging-flexible-pouches-films"
-      ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Excluded from public reporting until an official primary record verifies the claimed instrument.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "hold",
+        "label": "Do not rely on this claim",
+        "owner": "Evidence verification"
+      },
       "governance_queue": false
     },
     {
@@ -489,16 +970,27 @@
       "affected_analytes": [
         "organotin"
       ],
-      "affected_product_categories": [
-        "consumer products claimed in the intake"
-      ],
-      "deadline": "2026-10-15",
-      "analyte_urls": [],
-      "related_standard_urls": [
-        "/standards"
-      ],
-      "rationale": "The neutral record is incomplete or only partially verified, so no program action can be inferred until the named evidence gap is closed.",
-      "what_does_not_change": "No published HMTc threshold changes automatically. Numerical revisions require the existing evidence compiler and governance approval.",
+      "affected_product_categories": [],
+      "deadline": null,
+      "deadline_state": "none",
+      "q2_relevance": "background",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "Excluded from public reporting until an official primary record verifies the claimed instrument.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "hold",
+        "label": "Do not rely on this claim",
+        "owner": "Evidence verification"
+      },
       "governance_queue": false
     }
   ]

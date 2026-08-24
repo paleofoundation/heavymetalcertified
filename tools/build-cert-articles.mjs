@@ -303,7 +303,7 @@ function writeIndex(built) {
 
 <section style="margin:40px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">Regulatory Watch</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">A living evidence-to-action series. Start with the <a href="/articles/regulatory-watch">21-cluster tracker</a>, then use the citable analyses for questions that require a full legal and certification treatment.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">A verified evidence-to-action series. Start with the <a href="/articles/regulatory-watch">Q2 2026 compliance brief</a> for actions, deadlines and direct standard comparisons, then use the citable analyses for full legal treatment.</p>
   <div style="display:flex;flex-direction:column">
 ${watchRows}
   </div>

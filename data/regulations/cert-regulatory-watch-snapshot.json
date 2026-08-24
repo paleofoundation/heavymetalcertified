@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated": "2026-08-24",
   "source_repository": "Heavy Metal Index",
   "firewall": "Neutral verified facts and evidence links only. No certification impact or threshold recommendation.",
@@ -249,9 +249,9 @@
       "event_id": "rw-2026-04-gso-2783",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 4,
-      "title": "Claimed GSO 2783 contaminant standard requires primary verification",
+      "title": "GSO publishes active GSO 2783:2025 heavy-metals-in-food record",
       "instrument_ids": [
-        "gso-2783-claimed"
+        "gso-2783-2025"
       ],
       "jurisdictions": [
         "Gulf Cooperation Council"
@@ -264,45 +264,61 @@
         "market-access"
       ],
       "analytes": [
-        "heavy-metals-unspecified"
+        "tAs",
+        "iAs",
+        "tHg",
+        "Cd",
+        "Pb",
+        "Sn"
       ],
       "product_scopes": [
-        "foods in Gulf markets"
+        "foods within the GSO technical-regulation scope"
       ],
       "event_type": "alignment",
       "status": "monitor-only",
       "dates": {
         "adopted": null,
-        "published": null,
+        "published": "2025-10-29",
         "effective": null,
         "transition": null,
         "consultation_close": null,
         "next_review": "2026-10-01"
       },
-      "official_sources": [],
+      "official_sources": [
+        {
+          "title": "GSO 2783:2025 official catalog record",
+          "url": "https://www.gso.org.sa/store/standards/GSO:990231/GSO%202783:2025?lang=en",
+          "kind": "official-standard-record"
+        }
+      ],
       "hmi_routes": {
         "regulations": [
+          "regulations/gso-2783-2025-heavy-metals-food",
           "regulations/gso-193-2021-contaminants-toxins-food-feed"
         ],
-        "sources": [],
+        "sources": [
+          "sources/gso2025-2783-heavy-metals-food-catalog"
+        ],
         "regulatory_limit_ids": []
       },
       "verification": {
-        "state": "unverified",
+        "state": "verified-primary",
         "verified_on": "2026-08-24",
-        "confidence": "low",
-        "notes": "The intake's GSO 2783 identity, legal status, scope, and claimed changes were not confirmed from an accessible official instrument. Existing GSO 193:2021 coverage remains separate."
+        "confidence": "high",
+        "notes": "The official GSO record verifies the identity, active catalog status, publication date, technical-regulation class, broad scope, and listed analytes. The licensed tables and member-state implementing dates are not inferred from the catalog."
       },
-      "disposition": "unverified-gap",
+      "disposition": "hub-only",
       "article_slugs": [
         "market-access-rules-gulf-asia"
       ],
-      "summary": "Primary verification is still required before any claimed GSO 2783 requirement is presented as law.",
-      "obligations": [],
-      "gaps": [
-        "Obtain the official GSO 2783 record or licensed text and confirm whether it amends, replaces, or merely cross-references GSO 193:2021."
+      "summary": "GSO's official catalog verifies GSO 2783:2025 as an active technical-regulation record published on 29 October 2025 for heavy metals in food; national adoption dates must still be checked by GCC member state.",
+      "obligations": [
+        "market-access-monitoring"
       ],
-      "public_eligible": false
+      "gaps": [
+        "Licensed table transcription and member-state implementation dates remain internal follow-up items and are not public legal claims."
+      ],
+      "public_eligible": true
     },
     {
       "event_id": "rw-2026-05-us-state-baby-food",
@@ -400,9 +416,9 @@
       "event_id": "rw-2026-06-india-2026-amendment",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 6,
-      "title": "Claimed 2026 India contaminant amendment remains partially verified",
+      "title": "India adopts fish-oil inorganic-arsenic and pulse-flour changes for December 2026",
       "instrument_ids": [
-        "india-fssai-2026-claimed-amendment"
+        "india-fssai-2026-contaminants-amendment-17"
       ],
       "jurisdictions": [
         "India"
@@ -412,54 +428,66 @@
       ],
       "domains": [
         "food-contaminants",
+        "testing",
         "market-access"
       ],
       "analytes": [
-        "heavy-metals-unspecified"
+        "Pb",
+        "Cd",
+        "iAs",
+        "tAs"
       ],
       "product_scopes": [
-        "foods placed on the Indian market"
+        "pulse flours",
+        "fish oils"
       ],
       "event_type": "limit-change",
-      "status": "monitor-only",
+      "status": "adopted-not-effective",
       "dates": {
-        "adopted": null,
-        "published": null,
-        "effective": null,
+        "adopted": "2026-05-14",
+        "published": "2026-05-25",
+        "effective": "2026-12-01",
         "transition": null,
         "consultation_close": null,
-        "next_review": "2026-10-15"
+        "next_review": "2026-12-02"
       },
       "official_sources": [
         {
-          "title": "FSSAI contaminants compendium, 3 February 2026",
-          "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Contaminants_Regulations_03_02_2026_IX.pdf",
-          "kind": "official-consolidation"
+          "title": "FSSAI Amendment 17 official register",
+          "url": "https://www.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php",
+          "kind": "official-regulation-register"
         }
       ],
       "hmi_routes": {
         "regulations": [
-          "regulations/india-fssai-2016-heavy-metals-third-amendment",
-          "regulations/india-fssai-2015-chromium-gelatin-amendment"
+          "regulations/india-fssai-2026-contaminants-amendment",
+          "regulations/india-fssai-2016-heavy-metals-third-amendment"
         ],
-        "sources": [],
-        "regulatory_limit_ids": []
+        "sources": [
+          "sources/indiafssai2026-contaminants-amendment-17"
+        ],
+        "regulatory_limit_ids": [
+          "in_fssai2026_ias_fish_oils_100"
+        ]
       },
       "verification": {
-        "state": "partial-primary",
+        "state": "verified-primary",
         "verified_on": "2026-08-24",
-        "confidence": "medium",
-        "notes": "The current official compendium is available, but the roundup's claimed 14 May 2026 amendment identity and fish-oil detail were not confirmed."
+        "confidence": "high",
+        "notes": "The final Gazette text and official FSSAI Amendment 17 register verify the 1 December 2026 effective date, pulse-flour scope changes, 0.1 mg/kg iAs fish-oil maximum, and total-arsenic screening sequence."
       },
-      "disposition": "unverified-gap",
+      "disposition": "full-article",
       "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
         "market-access-rules-gulf-asia"
       ],
-      "summary": "India's current official consolidated contaminant rules are available; the specific amendment described in the intake still requires instrument-level confirmation.",
-      "obligations": [],
-      "gaps": [
-        "Confirm the amendment number, gazette date, effective date, product scope, and exact species from an official FSSAI instrument."
+      "summary": "FSSAI Amendment 17 applies from 1 December 2026, extends existing lead and cadmium pulse limits to pulse flours, and applies a 0.1 mg/kg inorganic-arsenic maximum to fish oils with total arsenic used only as the first screen.",
+      "obligations": [
+        "future-maximum-level",
+        "testing-sequence",
+        "market-access"
       ],
+      "gaps": [],
       "public_eligible": true
     },
     {
@@ -630,10 +658,10 @@
       "event_id": "rw-2026-09-brazil-mercosur",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 9,
-      "title": "Brazil consolidates contaminant limits while Mercosur replacement work remains a gap",
+      "title": "Brazil's infant-food limits are in force while MERCOSUR Project 07/23 remains under consultation",
       "instrument_ids": [
         "anvisa-in-351-2025",
-        "mercosur-replacement-claimed"
+        "mercosur-project-resolution-07-23"
       ],
       "jurisdictions": [
         "Brazil",
@@ -655,13 +683,13 @@
       ],
       "product_scopes": [
         "infant foods",
-        "foods covered by Brazil's contaminant framework"
+        "foods within the proposed MERCOSUR contaminant framework"
       ],
       "event_type": "limit-change",
-      "status": "in-force",
+      "status": "consultation",
       "dates": {
         "adopted": "2025-03-18",
-        "published": "2025-03-19",
+        "published": "2025-08-29",
         "effective": "2025-09-18",
         "transition": null,
         "consultation_close": null,
@@ -672,34 +700,42 @@
           "title": "ANVISA contaminant legislation hub",
           "url": "https://www.gov.br/anvisa/pt-br/assuntos/alimentos/contaminantes",
           "kind": "official-regulator-hub"
+        },
+        {
+          "title": "MERCOSUR SGT No. 3 Meeting Record 03/25",
+          "url": "https://documentos.mercosur.int/simfiles/docreuniones/108594_SGT3_2025_ACTA03_PT.pdf",
+          "kind": "official-intergovernmental-record"
         }
       ],
       "hmi_routes": {
         "regulations": [
-          "regulations/br-infant-food-contaminants"
+          "regulations/br-infant-food-contaminants",
+          "regulations/mercosur-project-07-23-metal-contaminants",
+          "regulations/mercosur-gmc-res-12-2011-inorganic-contaminants"
         ],
-        "sources": [],
+        "sources": [
+          "sources/mercosur2025-sgt3-project-07-23-metals"
+        ],
         "regulatory_limit_ids": [
           "br_pb_cereal-based-foods-for-infant-young-chil_20"
         ]
       },
       "verification": {
-        "state": "partial-primary",
+        "state": "verified-primary",
         "verified_on": "2026-08-24",
-        "confidence": "medium",
-        "notes": "Brazil's consolidated instrument and HMI rows are preserved. The intake's claimed Mercosur replacement instrument was not confirmed as adopted."
+        "confidence": "high",
+        "notes": "Brazil's IN 351/2025 component is in force. The official MERCOSUR record verifies Project 07/23 and its internal-consultation status, so the combined event remains non-binding at the regional level."
       },
       "disposition": "hub-only",
       "article_slugs": [
         "worldwide-heavy-metal-regulatory-watch-2026"
       ],
-      "summary": "Brazil's infant-food contaminant framework is covered in HMI; a claimed future Mercosur consolidation remains explicitly unverified.",
+      "summary": "Brazil's amended infant-food lead limit is already in force; the official MERCOSUR record separately shows Project Resolution 07/23, intended to replace regional contaminant resolutions, still in internal consultation.",
       "obligations": [
-        "maximum-level"
+        "current-maximum-level",
+        "consultation-monitoring"
       ],
-      "gaps": [
-        "Confirm the Mercosur draft or adopted instrument number and status before describing regional replacement."
-      ],
+      "gaps": [],
       "public_eligible": true
     },
     {
@@ -772,9 +808,10 @@
       "event_id": "rw-2026-11-vietnam-amendment",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 11,
-      "title": "Claimed Vietnam contaminant amendment requires primary verification",
+      "title": "Vietnam's QCVN 20-1:2024/BYT health-supplement metal limits are in force",
       "instrument_ids": [
-        "vietnam-2025-claimed-amendment"
+        "vietnam-circular-12-2024-tt-byt",
+        "vietnam-qcvn-20-1-2024-byt"
       ],
       "jurisdictions": [
         "Vietnam"
@@ -784,46 +821,72 @@
       ],
       "domains": [
         "food-contaminants",
+        "health-supplements",
         "market-access"
       ],
       "analytes": [
-        "heavy-metals-unspecified"
+        "tAs",
+        "iAs",
+        "Cd",
+        "Pb",
+        "tHg"
       ],
       "product_scopes": [
-        "foods placed on the Vietnamese market"
+        "health supplements",
+        "health supplements containing seaweed or bivalve ingredients"
       ],
       "event_type": "limit-change",
-      "status": "monitor-only",
+      "status": "in-force",
       "dates": {
-        "adopted": null,
-        "published": null,
-        "effective": null,
+        "adopted": "2024-07-18",
+        "published": "2024-08-05",
+        "effective": "2025-08-01",
         "transition": null,
         "consultation_close": null,
-        "next_review": "2026-10-15"
+        "next_review": null
       },
-      "official_sources": [],
+      "official_sources": [
+        {
+          "title": "Vietnam Official Gazette record for Circular 12/2024/TT-BYT",
+          "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+          "kind": "primary-law"
+        }
+      ],
       "hmi_routes": {
-        "regulations": [],
-        "sources": [],
-        "regulatory_limit_ids": []
+        "regulations": [
+          "regulations/vietnam-qcvn-20-1-2024-health-supplements"
+        ],
+        "sources": [
+          "sources/vietnammoh2024-qcvn20-1-health-supplements"
+        ],
+        "regulatory_limit_ids": [
+          "vn_qcvn20_2024_tas_health_supplements_5000",
+          "vn_qcvn20_2024_ias_health_supplements_1500",
+          "vn_qcvn20_2024_cd_health_supplements_seaweed_bivalve_3000",
+          "vn_qcvn20_2024_cd_health_supplements_other_1000",
+          "vn_qcvn20_2024_pb_health_supplements_10000",
+          "vn_qcvn20_2024_thg_health_supplements_500"
+        ]
       },
       "verification": {
-        "state": "unverified",
+        "state": "verified-primary",
         "verified_on": "2026-08-24",
-        "confidence": "low",
-        "notes": "No official instrument matching the intake's amendment identity and claims was located."
+        "confidence": "high",
+        "notes": "The signed Official Gazette PDF verifies the instrument, 1 August 2025 effective date, health-supplement scope, separate total/inorganic arsenic values, conditional cadmium tiers, lead, and total mercury limits."
       },
-      "disposition": "unverified-gap",
+      "disposition": "full-article",
       "article_slugs": [
+        "worldwide-heavy-metal-regulatory-watch-2026",
         "market-access-rules-gulf-asia"
       ],
-      "summary": "The claimed Vietnam development is held as a verification gap and is not published as a legal change.",
-      "obligations": [],
-      "gaps": [
-        "Obtain the official Vietnamese instrument and verify scope, status, dates, species, units, and basis."
+      "summary": "Circular 12/2024/TT-BYT made QCVN 20-1:2024/BYT effective on 1 August 2025 for health supplements, with separate total- and inorganic-arsenic limits, conditional cadmium tiers, lead, and total-mercury limits.",
+      "obligations": [
+        "maximum-level",
+        "speciation-testing",
+        "market-access"
       ],
-      "public_eligible": false
+      "gaps": [],
+      "public_eligible": true
     },
     {
       "event_id": "rw-2026-12-echa-crvi-restriction",
@@ -1472,7 +1535,7 @@
       "gaps": [
         "Identify the 2025 notification number and official text before stating a new migration limit or method requirement."
       ],
-      "public_eligible": true
+      "public_eligible": false
     },
     {
       "event_id": "rw-2026-21-echa-organotin-rumor",
@@ -1534,6 +1597,219 @@
         "Re-check ECHA CHEM and the restriction-intentions registry at the next review date."
       ],
       "public_eligible": false
+    }
+  ],
+  "regulatory_limit_count": 15,
+  "regulatory_limits": [
+    {
+      "regulatory_limit_id": "eu2024_ni_tree_nuts_3500",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "Ni",
+      "value_ug_kg": 3500,
+      "basis": "edible part",
+      "basis_class": null,
+      "product_scope": "tree nuts except chestnuts, pine nuts, walnuts, Brazil nuts, cashew nuts",
+      "regulation_route": "regulations/eu-2024-1987-nickel-maximum-levels",
+      "official_url": "http://data.europa.eu/eli/reg/2024/1987/oj",
+      "notes": "Applies from 2025-07-01."
+    },
+    {
+      "regulatory_limit_id": "eu2024_ni_cereals_800",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "Ni",
+      "value_ug_kg": 800,
+      "basis": "product as placed on market",
+      "basis_class": null,
+      "product_scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+      "regulation_route": "regulations/eu-2024-1987-nickel-maximum-levels",
+      "official_url": "http://data.europa.eu/eli/reg/2024/1987/oj",
+      "notes": "Applies from 2026-07-01."
+    },
+    {
+      "regulatory_limit_id": "eu2024_ni_formula_powder_250",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "Ni",
+      "value_ug_kg": 250,
+      "basis": "product as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "infant/young-child formula, powder, except soy-isolate",
+      "regulation_route": "regulations/eu-2024-1987-nickel-maximum-levels",
+      "official_url": "http://data.europa.eu/eli/reg/2024/1987/oj",
+      "notes": "Applies from 2025-07-01."
+    },
+    {
+      "regulatory_limit_id": "ca_swrcb_crvi_drinking_water_10",
+      "jurisdiction": "US-CA",
+      "authority": "CA SWRCB",
+      "legal_status": "maximum contaminant level",
+      "analyte": "Cr-VI",
+      "value_ug_kg": 10,
+      "basis": "drinking water",
+      "basis_class": null,
+      "product_scope": "drinking water",
+      "regulation_route": "regulations/ca-swrcb-hexavalent-chromium-mcl",
+      "official_url": null,
+      "notes": "Hexavalent chromium MCL."
+    },
+    {
+      "regulatory_limit_id": "br_pb_cereal-based-foods-for-infant-young-chil_20",
+      "jurisdiction": "BR",
+      "authority": "ANVISA",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 20,
+      "basis": "product as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "Cereal-based foods for infant/young-child feeding (alimentos à base de cereais)",
+      "regulation_route": "regulations/br-infant-food-contaminants",
+      "official_url": "https://legislacao.regoola.io/instrucao-normativa-in-no-351-de-18-de-marco-de-2025",
+      "notes": "Worldwide-ingest 2026-08-03 (verified). Basis detail: as placed on market (as sold); total lead. Ref: IN 160/2022, Anexo I, item 1.3 (Chumbo), cereal-based infant foods row — amended by IN 351/2025. Sources: https://legislacao.regoola.io/instrucao-normativa-in-no-351-de-18-de-marco-de-2025;https://regoola.io/anvisa-in-351-2025-novos-limites-contami CORRECTED 2026-08-03: was 20 (secondary); Brazil IN 88/2021 Annex I item 1.3 lead = 0.05 mg/kg = 50 (as sold). Adjacent Cd/iAs cereal rows in the same table independentl; PRIMARY-CONFIRMED 2026-08-03 vs official document. | CORRECTED 2026-08-05 against ANVISA IN 160/2022 Anexo I secao 1.3 Chumbo, consolidated text incorporating IN no 351, de 18/03/2025 (Redacao dada): LMT = 0,02 mg/kg = 20 ug/kg. Prior value was the pre-2025 figure. Primary: raw/regulatory/br/brazil-anvisa-in-160-2022-consolidated-with-in-351-2025.pdf"
+    },
+    {
+      "regulatory_limit_id": "eu20251891_ias_fish_other_100",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "iAs",
+      "value_ug_kg": 100,
+      "basis": "wet weight",
+      "basis_class": null,
+      "product_scope": "muscle meat of fish, species other than those listed under Annex I 3.4.5.2",
+      "regulation_route": "regulations/eu-2025-1891-inorganic-arsenic-fish-seafood",
+      "official_url": "http://data.europa.eu/eli/reg/2025/1891/oj",
+      "notes": "Annex I section 3.4.5.1; inorganic arsenic is sum of As(III) and As(V); wet-weight value 0.10 mg/kg normalized to 100 ug/kg."
+    },
+    {
+      "regulatory_limit_id": "eu20251891_ias_cephalopods_50",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "iAs",
+      "value_ug_kg": 50,
+      "basis": "wet weight",
+      "basis_class": null,
+      "product_scope": "cephalopods",
+      "regulation_route": "regulations/eu-2025-1891-inorganic-arsenic-fish-seafood",
+      "official_url": "http://data.europa.eu/eli/reg/2025/1891/oj",
+      "notes": "Annex I section 3.4.8; value applies to the animal without viscera; wet-weight value 0.050 mg/kg normalized to 50 ug/kg."
+    },
+    {
+      "regulatory_limit_id": "eu20251891_tas_salt_500",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "legal_status": "maximum level",
+      "analyte": "tAs",
+      "value_ug_kg": 500,
+      "basis": "product as placed on market",
+      "basis_class": null,
+      "product_scope": "salt",
+      "regulation_route": "regulations/eu-2025-1891-inorganic-arsenic-fish-seafood",
+      "official_url": "http://data.europa.eu/eli/reg/2025/1891/oj",
+      "notes": "Annex I section 3.4.9 is restated in Regulation (EU) 2025/1891; total arsenic, not inorganic arsenic; value 0.50 mg/kg normalized to 500 ug/kg. The source page for EU 2023/915 already transcribed this value; this row loads the missing structured limit."
+    },
+    {
+      "regulatory_limit_id": "in_fssai2026_ias_fish_oils_100",
+      "jurisdiction": "IN",
+      "authority": "Food Safety and Standards Authority of India",
+      "legal_status": "adopted maximum level effective 2026-12-01",
+      "analyte": "iAs",
+      "value_ug_kg": 100,
+      "basis": "product as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "Fish oils",
+      "regulation_route": "regulations/india-fssai-2026-contaminants-amendment",
+      "official_url": "https://www.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php",
+      "notes": "Amendment 17; source value 0.1 mg/kg. Total arsenic is permitted as a screen, but the enforceable species is inorganic arsenic. Follow-up iAs testing is required when total arsenic exceeds 0.1 mg/kg. Not active before 2026-12-01."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_tas_health_supplements_5000",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "tAs",
+      "value_ug_kg": 5000,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 5.0 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_ias_health_supplements_1500",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "iAs",
+      "value_ug_kg": 1500,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 1.5 mg/kg or mg/L. Monitor iAs when total arsenic exceeds 1.5 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_seaweed_bivalve_3000",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 3000,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements containing ingredients from seaweed or bivalve molluscs",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 3.0 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_cd_health_supplements_other_1000",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 1000,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements not containing ingredients from seaweed or bivalve molluscs",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 1.0 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_pb_health_supplements_10000",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 10000,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 10.0 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "vn_qcvn20_2024_thg_health_supplements_500",
+      "jurisdiction": "VN",
+      "authority": "Vietnam Ministry of Health",
+      "legal_status": "maximum level",
+      "analyte": "tHg",
+      "value_ug_kg": 500,
+      "basis": "finished product as sold; source unit mg/kg or mg/L",
+      "basis_class": "as_sold",
+      "product_scope": "Health supplements",
+      "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
+      "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+      "notes": "QCVN 20-1:2024/BYT Table 1; source value 0.5 mg/kg or mg/L."
     }
   ]
 }
