@@ -26,11 +26,14 @@ import fs from "node:fs"
 import path from "node:path"
 
 const repoRoot = process.cwd()
-const SPEC_DIR = path.join(repoRoot, "data/articles/synthesis")
+const SPEC_DIRS = [
+  { dir: path.join(repoRoot, "data/articles/synthesis"), kind: "synthesis" },
+  { dir: path.join(repoRoot, "data/articles/regulatory-watch"), kind: "regulatory-watch" },
+]
 const OUT = path.join(repoRoot, "content/articles")
 const BASE = "https://heavymetalcertified.com"
 
-if (!fs.existsSync(SPEC_DIR)) {
+if (!SPEC_DIRS.some(({ dir }) => fs.existsSync(dir))) {
   console.log("build-cert-articles: no data/articles/synthesis dir; nothing to build.")
   process.exit(0)
 }
@@ -88,7 +91,11 @@ function renderRefs(refs) {
     .map((r) => {
       // A verified DOI (see LINK POLICY above) or the one-way Index synthesis
       // reference may be linked; nothing else is.
-      const href = r.doi ? `https://doi.org/${r.doi}` : r.type === "Reference" ? r.href : null
+      const href = r.doi
+        ? `https://doi.org/${r.doi}`
+        : r.type === "Reference" || r.official === true
+          ? r.href
+          : null
       const titleEl = href
         ? `<a href="${href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
         : `<span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
@@ -112,7 +119,7 @@ function renderRefs(refs) {
           `<a href="https://doi.org/${r.doi}" style="color:#1c43ad;text-decoration:none">doi:${r.doi}</a></p>`
       }
 
-      const dom = !r.doi && r.type === "Reference" && r.href ? domainOf(r.href) : ""
+      const dom = !r.doi && href ? domainOf(href) : ""
       const domLink = dom
         ? ` &middot; <a href="${r.href}" style="color:#736b6b">${dom}<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a>`
         : ""
@@ -176,19 +183,37 @@ function build(spec) {
   const front = [
     "---",
     `title: "${q(title)}"`,
+    spec.seoTitle ? `seoTitle: "${q(plain(spec.seoTitle))}"` : null,
     spec.description ? `description: "${q(plain(spec.description)).slice(0, 200)}"` : null,
+    spec.socialDescription ? `socialDescription: "${q(plain(spec.socialDescription)).slice(0, 300)}"` : null,
     spec.dek ? `dek_html: "${q(emph(spec.dek))}"` : null,
     "type: article",
     `section: "${q(spec.section || "Analysis")}"`,
     `author: "Karen Pendergrass"`,
     "orcid: 0000-0002-2348-7259",
     `date: "${date}"`,
-    `updated: "${date}"`,
+    `updated: "${spec.modified || date}"`,
+    spec.evidence_verified ? `evidence_verified: "${spec.evidence_verified}"` : null,
     // Verifiable first-publication date (read from git once, committed as spec
     // data). Gives Scholar a full YYYY-MM-DD instead of a bare year.
     spec.published ? `published: "${spec.published}"` : null,
-    "scholar_eligible: true",
-    "scholar_pdf: true",
+    spec.report_number ? `report_number: "${q(spec.report_number)}"` : null,
+    `scholar_eligible: ${spec.scholar_eligible === false ? "false" : "true"}`,
+    `scholar_pdf: ${spec.scholar_pdf === false ? "false" : "true"}`,
+    spec.series ? `series: "${q(spec.series)}"` : null,
+    spec.series_url ? `series_url: "${q(spec.series_url)}"` : null,
+    Array.isArray(spec.jurisdictions) && spec.jurisdictions.length
+      ? `jurisdictions: [${spec.jurisdictions.map((item) => `"${q(item)}"`).join(", ")}]`
+      : null,
+    Array.isArray(spec.instruments) && spec.instruments.length
+      ? `instruments: [${spec.instruments.map((item) => `"${q(item)}"`).join(", ")}]`
+      : null,
+    Array.isArray(spec.event_ids) && spec.event_ids.length
+      ? `event_ids: [${spec.event_ids.map((item) => `"${q(item)}"`).join(", ")}]`
+      : null,
+    Array.isArray(spec.related_standard_urls) && spec.related_standard_urls.length
+      ? `related_standard_urls: [${spec.related_standard_urls.map((item) => `"${q(item)}"`).join(", ")}]`
+      : null,
     // Scholar reads these off the page: the abstract, and the author keywords.
     spec.abstract ? `scholar_abstract: "${q(abstractText(spec.abstract))}"` : null,
     Array.isArray(spec.keywords) && spec.keywords.length
@@ -196,7 +221,7 @@ function build(spec) {
       : null,
     // The PDF edition is declared in frontmatter and rendered by the right-rail
     // (Rail.tsx reads `pdf`); the download card is NOT emitted inline in the body.
-    `pdf: "/articles/${slug}.pdf"`,
+    spec.scholar_pdf === false ? null : `pdf: "/articles/${slug}.pdf"`,
     "audience: [regulator, brand-legal, brand-finance, retailer-compliance]",
     "snapshot:",
     `  - { k: "Document type", v: "Research analysis" }`,
@@ -233,7 +258,7 @@ function build(spec) {
   ].join("\n")
 
   fs.writeFileSync(path.join(OUT, `${slug}.md`), front.join("\n") + "\n" + body, "utf8")
-  return { slug, title, description: plain(spec.description || spec.dek || ""), metals: Array.isArray(spec.metals) ? spec.metals : [] }
+  return { slug, title, description: plain(spec.description || spec.dek || ""), metals: Array.isArray(spec.metals) ? spec.metals : [], kind: spec.article_kind || "synthesis" }
 }
 
 // content/articles/index.md — GENERATED here so every synthesis-coverage article
@@ -261,7 +286,9 @@ function writeIndex(built) {
       "One metal fell under a decade of Proposition 65 pressure; the other did not — and where each enters the cocoa supply chain explains why.",
     metals: ["Lead", "Cadmium"],
   }
-  const rest = [...built].sort((a, b) => a.title.localeCompare(b.title))
+  const watch = built.filter((item) => item.kind === "regulatory-watch").sort((a, b) => a.title.localeCompare(b.title))
+  const rest = built.filter((item) => item.kind !== "regulatory-watch").sort((a, b) => a.title.localeCompare(b.title))
+  const watchRows = watch.map((a) => card(a.slug, a.title, a.description, a.metals)).join("\n")
   const rows = [chocolate, ...rest].map((a) => card(a.slug, a.title, a.description, a.metals)).join("\n")
   const front = [
     "---",
@@ -272,11 +299,19 @@ function writeIndex(built) {
     "---",
     "",
   ].join("\n")
-  const body = `Analysis from the certification program, grounded in the independent evidence base. Every article cites the [Heavy Metal Index](https://heavymetalindex.com) one way: the index reports what the literature says, and these articles apply that evidence to the certification question. The index never cites back, which is what keeps it a disinterested reference. The full occurrence record and per-source pages live on the index; these articles link to it rather than re-hosting it.
+  const body = `Analysis from the certification program, grounded in the independent evidence base. Every article cites the [Heavy Metal Index](https://heavymetalindex.com) one way: the index reports what the literature says, and these articles apply that evidence to the certification question. The index never cites back, which is what keeps it a disinterested reference. The full occurrence and regulatory records live on the index; these articles link to them rather than re-hosting them.
+
+<section style="margin:40px 0 8px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">Regulatory Watch</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">A living evidence-to-action series. Start with the <a href="/articles/regulatory-watch">21-cluster tracker</a>, then use the citable analyses for questions that require a full legal and certification treatment.</p>
+  <div style="display:flex;flex-direction:column">
+${watchRows}
+  </div>
+</section>
 
 <section style="margin:40px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">Analyses</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${built.length + 1} analyses, each a citable page with a named author, a downloadable edition, and a one-way link to the Index finding it covers.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${rest.length + 1} evidence analyses, each a citable page with a named author, a downloadable edition, and a one-way link to the Index finding it covers.</p>
   <div style="display:flex;flex-direction:column">
 ${rows}
   </div>
@@ -300,12 +335,13 @@ The [Standards Briefings](../briefings) are the program's positioning analysis: 
   fs.writeFileSync(path.join(OUT, "index.md"), front + body, "utf8")
 }
 
-const specs = fs.readdirSync(SPEC_DIR).filter((f) => f.endsWith(".json"))
 const built = []
-for (const f of specs) {
+for (const { dir, kind } of SPEC_DIRS) {
+  if (!fs.existsSync(dir)) continue
+  for (const f of fs.readdirSync(dir).filter((name) => name.endsWith(".json"))) {
   let spec
   try {
-    spec = JSON.parse(fs.readFileSync(path.join(SPEC_DIR, f), "utf8"))
+    spec = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))
   } catch (e) {
     console.error(`build-cert-articles: bad JSON in ${f}: ${e.message}`)
     process.exit(1)
@@ -314,9 +350,11 @@ for (const f of specs) {
     console.error(`build-cert-articles: ${f} missing slug/title`)
     process.exit(1)
   }
-  built.push(build(spec))
+    if (!spec.article_kind) spec.article_kind = kind
+    built.push(build(spec))
+  }
 }
 writeIndex(built)
 console.log(
-  `build-cert-articles: stamped ${built.length} synthesis-coverage article(s) + generated index.md (chocolate long-form listed first; its .md untouched).`,
+  `build-cert-articles: stamped ${built.length} research article(s) across ${SPEC_DIRS.length} spec families + generated index.md.`,
 )

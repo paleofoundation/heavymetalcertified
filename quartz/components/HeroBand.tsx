@@ -58,6 +58,7 @@ const KIND: Record<string, string> = {
   remediation: "Policy",
   mark: "Mark",
   article: "Analysis",
+  "article-series": "Living tracker",
   "articles-index": "Directory",
   regulation: "Regulation reference",
   "regulation-index": "Record of law",

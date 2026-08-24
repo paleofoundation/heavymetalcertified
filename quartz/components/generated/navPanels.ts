@@ -250,6 +250,18 @@ export const navPanels: NavPanel[] = [
     extraPrefixes: ["articles"],
     groups: [
       {
+        heading: "Regulatory Watch",
+        children: [
+          { label: "Living regulatory tracker", slug: "articles/regulatory-watch" },
+          { label: "Worldwide watch 2026", slug: "articles/worldwide-heavy-metal-regulatory-watch-2026" },
+          { label: "US baby-food laws", slug: "articles/us-baby-food-heavy-metal-laws-states-fda" },
+          { label: "EU arsenic & nickel", slug: "articles/eu-food-limits-arsenic-seafood-nickel-deadlines" },
+          { label: "Four Cr(VI) regimes", slug: "articles/hexavalent-chromium-four-regimes" },
+          { label: "Gulf & Asia market access", slug: "articles/market-access-rules-gulf-asia" },
+          { label: "Testing, disclosure & packaging", slug: "articles/testing-disclosure-packaging-rules" },
+        ],
+      },
+      {
         heading: "Seafood & mercury",
         children: [
           { label: "Farmed vs wild fish", slug: "articles/aquaculture-vs-wild-contamination-differential" },

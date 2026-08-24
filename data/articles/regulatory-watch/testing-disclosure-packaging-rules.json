@@ -1,0 +1,77 @@
+{
+  "slug": "testing-disclosure-packaging-rules",
+  "article_kind": "regulatory-watch",
+  "title": "Testing, Disclosure, and Packaging Rules Beyond Concentration Limits",
+  "seoTitle": "Heavy Metal Testing, Disclosure and Packaging Rules | HMTc",
+  "description": "Heavy-metal compliance now includes testing methods, QR disclosures, water inventories, packaging composition, formulation and product restrictions.",
+  "socialDescription": "Why passing a concentration limit is no longer the complete compliance answer: evidence production, public disclosure, packaging and market-access duties now matter too.",
+  "dek": "A passing laboratory number can still sit inside a non-compliant evidence package when the wrong method was used, the disclosure was missing, the water-system duty was ignored or the packaging rule was never mapped.",
+  "claim": "Concentration limits answer only one compliance question. The 2025-2026 rule set also governs how evidence is produced, what is disclosed, what packaging may contain, how water systems communicate risk and which formulations or products may enter a market.",
+  "metals": ["Lead", "Cadmium", "Arsenic", "Mercury", "Chromium(VI)", "Aluminum"],
+  "section": "Regulatory Watch",
+  "date": "August 2026",
+  "published": "2026-08-24",
+  "report_number": "HMTc-RW-2026-006",
+  "modified": "2026-08-24",
+  "evidence_verified": "2026-08-24",
+  "series": "Regulatory Watch",
+  "series_url": "/articles/regulatory-watch",
+  "scholar_eligible": true,
+  "scholar_pdf": true,
+  "keywords": ["heavy metal testing requirements", "baby food heavy metal disclosure", "heavy metal packaging limits", "EU PPWR heavy metals", "FDA infant formula testing", "lead service line disclosure", "aluminum food additive rules"],
+  "jurisdictions": ["United States", "Virginia", "Illinois", "Vermont", "California", "European Union", "Canada", "Taiwan", "Hong Kong"],
+  "instruments": ["US state baby-food acts", "FDA infant-formula testing", "EPA Lead and Copper Rule Improvements", "California Cr(VI) MCL", "Regulation (EU) 2025/40", "Regulation (EU) 2024/1849", "Health Canada M-FAA-25-03", "Taiwan FDA analytical method"],
+  "event_ids": ["rw-2026-05-us-state-baby-food", "rw-2026-07-korea-taiwan-hong-kong", "rw-2026-10-canada-aluminum-additives", "rw-2026-13-fda-closer-to-zero", "rw-2026-14-epa-lcri", "rw-2026-15-california-crvi-water", "rw-2026-16-eu-packaging-mercury", "rw-2026-20-thailand-food-contact"],
+  "isBasedOn": [
+    {"name": "FDA infant-formula testing results", "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"},
+    {"name": "EPA Lead and Copper Rule Improvements", "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements"},
+    {"name": "EU Packaging and Packaging Waste Regulation overview", "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en"},
+    {"name": "Health Canada M-FAA-25-03", "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true"}
+  ],
+  "citation": ["https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results", "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements", "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html", "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en", "https://eur-lex.europa.eu/eli/reg/2024/1849/oj/eng", "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true"],
+  "related_standard_urls": ["/standards/baby-cereals-dry", "/standards/infant-formula-powder", "/standards/mineral-water", "/standards/food-packaging-flexible-pouches-films", "/standards/food-storage-plastic-containers"],
+  "connections": [
+    {"label": "Regulatory Watch — living tracker", "href": "/articles/regulatory-watch"},
+    {"label": "Infant formula powder standard", "href": "/standards/infant-formula-powder"},
+    {"label": "Food packaging standard", "href": "/standards/food-packaging-flexible-pouches-films"},
+    {"label": "Download tracker JSON", "href": "/static/data/regulatory-watch.json"}
+  ],
+  "abstract": "Heavy-metal compliance is increasingly expressed through duties that do not look like maximum concentration tables. US state baby-food laws add testing and consumer-disclosure requirements. FDA's infant-formula results expand the occurrence evidence available for policy and surveillance without creating a new limit. EPA's Lead and Copper Rule Improvements combine inventories, monitoring, communication and replacement, while California separately phases chromium(VI) water compliance. Taiwan's official method update changes how evidence is produced. The EU Packaging and Packaging Waste Regulation sets composition and design duties and generally applies from 12 August 2026; the revised EU Mercury Regulation restricts separate product categories on its own timetable. Health Canada modifies permitted uses of aluminum-based additives, affecting formulation and market access rather than contaminant limits. Certification programs should therefore maintain an obligation graph that links every concentration result to its method, lot, disclosure, packaging, water and market context.",
+  "sections": [
+    {
+      "h2": "Testing Is a Legal Object, Not a Back-Office Detail",
+      "body": "A concentration result is only as useful as the method and sample identity that produced it. Taiwan's official analytical-method amendment is a regulatory event even where it leaves a product maximum unchanged <sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>. FDA's infant-formula release is an evidence event: the agency published product testing results that can support occurrence review and future policy, but the dataset does not itself create a new binding concentration <sup class=\"cite\"><a href=\"#ref-2\">2</a></sup>. State baby-food laws add another layer by requiring testing or records as part of sale and disclosure duties. The compliance record must therefore join the result to the lot, product form, basis, analyte species, laboratory, method, detection capability and legally required cadence. A PDF result detached from those fields is not a complete evidence package."
+    },
+    {
+      "h2": "Disclosure Can Be Mandatory Even When the Product Passes",
+      "body": "Virginia, Illinois and Vermont illustrate why a passing result and a compliant market record are separate outcomes. A covered product may need public access to test information, a QR pathway or a retained record even when every measured concentration is below the applicable limit. EPA's Lead and Copper Rule Improvements use the same broader regulatory logic in drinking water: inventories, monitoring, customer communication and replacement duties accompany concentration controls <sup class=\"cite\"><a href=\"#ref-3\">3</a></sup>. The regulated actor and medium differ, but the operational lesson is shared. Compliance includes producing and communicating evidence, not merely obtaining a number."
+    },
+    {
+      "h2": "Packaging Composition Is Its Own Regime",
+      "body": "The EU Packaging and Packaging Waste Regulation entered into force in February 2025 and generally applies from 12 August 2026 <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. It covers packaging across materials and origins, including composition and substances-of-concern controls. A packaging rule is not a food contaminant limit: it attaches to the package and can use different sampling, concentration and derogation concepts. The correct control links the finished-food standard to a separate packaging bill of materials, supplier declaration, migration or composition evidence where applicable, and market date. Thailand's existing plastic-food-packaging rule demonstrates the same domain distinction, while the claimed 2025 Thai change stays in an evidence gap until its official instrument is identified."
+    },
+    {
+      "h2": "Product Restrictions and Formulation Rules Need Separate Timelines",
+      "body": "The EU Mercury Regulation restricts dental amalgam and specified mercury-containing lamps on dates that do not come from the PPWR and do not regulate food concentration <sup class=\"cite\"><a href=\"#ref-5\">5</a></sup>. Health Canada's M-FAA-25-03 modifies permitted uses of aluminum-based food additives, with most changes effective in October 2025 and a later transition for one use <sup class=\"cite\"><a href=\"#ref-6\">6</a></sup>. These are supply-chain and formulation events. The compliance file should identify the affected material or additive, supplier or formula owner, final-use category, market, transition date and replacement plan. Calling either event a tighter heavy-metal limit would point the business to the wrong owner and the wrong evidence."
+    },
+    {
+      "h2": "Build an Obligation Graph Around the Standard",
+      "body": "The useful data model has a standard at the center and typed edges around it. One edge connects the legal concentration ceiling and analyte species. Another connects the required analytical method and method capability. Others connect lot testing, public disclosure, water-system evidence, packaging composition, formulation authorization, supplier declarations and market transitions. Each edge has its own authority, status, date and artifact. HMTc can use that graph to show which operational requirements are supported by a certification evidence package and which remain the brand's separate legal responsibility. It can also state what does not change: monitoring results do not become limits, packaging controls do not become food values, and no event edits a published threshold outside the normal evidence compiler and governance process."
+    }
+  ],
+  "faq": [
+    {"q": "Can a product pass its heavy-metal limit and still be non-compliant?", "a": "Yes. It may fail a testing-cadence, record, QR disclosure, packaging, water-system, formulation or transition requirement even when its concentration result passes."},
+    {"q": "Did FDA's infant-formula results create a new legal limit?", "a": "No. They are official monitoring evidence. New binding or guidance values require a separate agency instrument with the correct legal status."},
+    {"q": "Are EU packaging heavy-metal controls the same as food contaminant limits?", "a": "No. Packaging composition and food concentration are separate legal objects with different materials, evidence and possible derogations."},
+    {"q": "How should certification handle these non-limit duties?", "a": "By preserving typed evidence links and operational checklists around the standard while keeping legal responsibility clear. A testing or disclosure duty can change the evidence package without changing the numeric standard."}
+  ],
+  "references": [
+    {"n": 1, "title": "Taiwan FDA amended analytical method", "href": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s", "meta": "Official method document effective in 2026.", "type": "Government", "official": true},
+    {"n": 2, "title": "FDA infant-formula product testing results", "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results", "meta": "Official monitoring results, not a new limit instrument.", "type": "Government", "official": true},
+    {"n": 3, "title": "EPA Lead and Copper Rule Improvements", "href": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements", "meta": "Official rule hub covering inventories, replacement, monitoring and communication.", "type": "Government", "official": true},
+    {"n": 4, "title": "European Commission — Packaging and Packaging Waste Regulation", "href": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en", "meta": "Official overview with entry-into-force and general application dates.", "type": "Government", "official": true},
+    {"n": 5, "title": "Regulation (EU) 2024/1849 on mercury", "href": "https://eur-lex.europa.eu/eli/reg/2024/1849/oj/eng", "meta": "Official Journal instrument for dental amalgam and specified mercury-added products.", "type": "Legislation", "official": true},
+    {"n": 6, "title": "Health Canada Notice of Modification M-FAA-25-03", "href": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true", "meta": "Official permitted-use and transition notice for aluminum-based additives.", "type": "Government", "official": true},
+    {"n": 7, "title": "Heavy Metal Index — regulations", "href": "https://heavymetalindex.com/regulations", "meta": "Neutral instrument and regulatory-limit evidence layer.", "type": "Reference"}
+  ]
+}

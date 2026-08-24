@@ -16,6 +16,8 @@ const footerSections = [
       ["Program Manuals", "/manuals"],
       ["The analyte panel", "/#panel"],
       ["Standards Briefings", "/briefings"],
+      ["Research analyses", "/articles"],
+      ["Regulatory Watch", "/articles/regulatory-watch"],
     ],
   },
   {
