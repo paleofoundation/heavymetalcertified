@@ -33,6 +33,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [
     Component.StandardsFinder(),
     Component.FeeCalculator(),
+    Component.ApplyForm(),
     Component.SourceCitationPanel(),
     Component.Corrections(),
   ],
