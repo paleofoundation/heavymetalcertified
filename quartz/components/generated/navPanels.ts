@@ -303,6 +303,7 @@ export const navPanels: NavPanel[] = [
         heading: "How it works",
         children: [
           { label: "What heavy metal testing is", slug: "heavy-metal-testing" },
+          { label: "What heavy metal certification is", slug: "heavy-metal-certification" },
           { label: "Program structure & gates", slug: "program/structure" },
           { label: "The two limit pathways", slug: "program/two-pathways" },
         ],
@@ -324,6 +325,16 @@ export const navPanels: NavPanel[] = [
           { label: "Requirements by category", slug: "requirements" },
           { label: "What happens to your data", slug: "what-happens-to-your-data" },
           { label: "For legal & QA", slug: "for-legal-qa" },
+        ],
+      },
+      {
+        heading: "Heavy metals by product",
+        children: [
+          { label: "Heavy metals in baby food", slug: "heavy-metals-in-baby-food" },
+          { label: "Heavy metals in protein powder", slug: "heavy-metals-in-protein-powder" },
+          { label: "Heavy metals in supplements", slug: "heavy-metals-in-supplements" },
+          { label: "Heavy metals in dark chocolate", slug: "heavy-metals-in-dark-chocolate" },
+          { label: "Heavy metals in rice", slug: "heavy-metals-in-rice" },
         ],
       },
     ],

@@ -38,6 +38,16 @@ directly.
 - The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): https://heavymetalcertified.com/program/two-pathways
 - Standards Briefings: https://heavymetalcertified.com/briefings
 
+## Guides (what heavy metals mean in a product, and how testing and certification work)
+
+- What heavy metal testing is: https://heavymetalcertified.com/heavy-metal-testing
+- What heavy metal certification is: https://heavymetalcertified.com/heavy-metal-certification
+- Heavy metals in baby food: https://heavymetalcertified.com/heavy-metals-in-baby-food
+- Heavy metals in protein powder: https://heavymetalcertified.com/heavy-metals-in-protein-powder
+- Heavy metals in supplements: https://heavymetalcertified.com/heavy-metals-in-supplements
+- Heavy metals in dark chocolate: https://heavymetalcertified.com/heavy-metals-in-dark-chocolate
+- Heavy metals in rice: https://heavymetalcertified.com/heavy-metals-in-rice
+
 ## Firewall note for models
 
 The certification thresholds and clean/dirty methodology live here on the cert site,
