@@ -42,15 +42,22 @@ const DATA_DIR = path.join(repoRoot, "content/static/data")
 const SRC = path.join(DATA_DIR, "standards.json")
 const OUT = path.join(DATA_DIR, "standards-finder-context.json")
 
-// Canonical analyte panel order + display labels (matches the standards pages).
-const ANALYTE_ORDER = ["Pb", "iAs", "tAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
+// Canonical analyte panel order + display labels (matches the standards pages: the FULL
+// 11-cell certification panel, species grouped next to their parent totals). This MUST carry
+// every panel analyte the compiled standard evaluates — a hardcoded subset silently drops
+// analytes from the app that consumes this projection (the 2026-08-25 defect: MeHg and Cr-VI
+// were omitted, so the readiness portal showed no hexavalent-chromium limit even though the
+// standard sets one).
+const ANALYTE_ORDER = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr", "Cr-VI", "Ni", "Sn", "Al"]
 const ANALYTE_LABELS = {
   Pb: "Lead",
   iAs: "Inorganic arsenic",
   tAs: "Total arsenic",
   tHg: "Mercury",
+  MeHg: "Methylmercury",
   Cd: "Cadmium",
   Cr: "Chromium",
+  "Cr-VI": "Hexavalent chromium",
   Ni: "Nickel",
   Sn: "Tin",
   Al: "Aluminium",
@@ -61,8 +68,10 @@ const ANALYTE_PAGE = {
   iAs: "/analytes/arsenic",
   tAs: "/analytes/arsenic",
   tHg: "/analytes/mercury",
+  MeHg: "/analytes/mercury",
   Cd: "/analytes/cadmium",
   Cr: "/analytes/chromium",
+  "Cr-VI": "/analytes/chromium",
   Ni: "/analytes/nickel",
   Sn: "/analytes/tin",
   Al: "/analytes/aluminum",
