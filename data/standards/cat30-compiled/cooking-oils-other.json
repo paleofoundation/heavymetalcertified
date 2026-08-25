@@ -188,66 +188,95 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "subsumed",
+        "provenance_tag": "regulatory-alignment",
         "value": null,
-        "rationale": "Methylmercury forms by microbial methylation in aquatic systems and bioaccumulates in fish; a pressed or extracted plant oil has no methylation pathway and no mercury source. No government sets a methylmercury limit for a culinary oil.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
+        "subsumed_by": "tHg",
+        "binding_total": 20,
+        "binding_total_source": "IL",
+        "label": "Methylmercury is a component of total mercury (MeHg <= tHg). The MeHg value (20 ug/kg) is not below the binding total mercury ceiling (20 ug/kg), so methylmercury is governed by and bounded by the total mercury ceiling; no separate MeHg ceiling is published. It is enforced by reflex speciation whenever tHg is elevated.",
+        "candidate": {
+          "type": "read_across",
+          "value": 20,
+          "source_jurisdiction": "IL",
+          "source_id": "il_fcs2016_thg_2_fats_oils_and_fat_emulsions_water_in_oil_type_20"
         }
       },
       "Ni": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "No sovereign maximum level exists for nickel in culinary oils or fats. Nickel can enter a fat as residual hydrogenation catalyst (Raney nickel) in any hardened or partially hydrogenated fraction; virgin and refined liquid oils are not hydrogenated. Because a real exposure pathway exists, the cell is held under a reflex screen rather than declared not-material.",
-        "reference_method": "Total nickel by ICP-MS on each lot; any hydrogenated or partially hydrogenated oil is monitored under ALARA against the tightest available food nickel context.",
+        "type": "read_across",
+        "provenance_tag": "read-across",
+        "value": 100,
+        "value_exact": 100,
+        "source_id": "eu2024_ni_formula_liquid_100",
+        "source_jurisdiction": "EU",
+        "source_scope": "infant/young-child formula, liquid",
+        "binding_instrument": "regulations/eu-2024-1987-nickel-maximum-levels",
+        "label": "No government sets a nickel maximum level for an edible oil or fat in any jurisdiction. This reads across the nearest applicable sovereign nickel ML on the oil's own product-as-placed-on-market (liquid) basis: EU Reg 2024/1987 nickel in infant and young-child formula (liquid form), 100 ug/kg. The more permissive EU fruiting-vegetable nickel ML (400 ug/kg) was rejected because it would admit oil at concentrations reported in contaminated samples. Nickel can also enter a fat as residual hydrogenation catalyst (Raney nickel) in any hardened or partially hydrogenated fraction; this ceiling caps that pathway too. Disclosed as a read-across, not direct EU governance of oil.",
+        "per_country": {},
         "audit": {
           "same_form": [],
           "other_form": []
         }
       },
       "Cr": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign sets a total-chromium maximum level for an edible oil or fat in any jurisdiction. Chromium is not lipophilic and does not partition into a refined lipid matrix. Total-chromium food MLs do exist for other matrices (for example HK Cap. 132V meat, vegetables, cereals, pulses and fish; dairy milk powder and liquid milk; gelatin/collagen and fishery products), but none is an oil or fat. Rebuttable and audited against the register each build.",
-        "reference_method": "Total Cr by ICP-MS as a screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
+        "type": "read_across",
+        "provenance_tag": "read-across",
+        "value": 300,
+        "value_exact": 300,
+        "source_id": "china_gb2762_cr_liquid_milk_300",
+        "source_jurisdiction": "CN",
+        "source_scope": "raw, pasteurized, sterilized, modified and fermented milk (GB 2762-2022 Table 7, section 4.7); total Cr, not Cr-VI",
+        "binding_instrument": "regulations/china-gb-2762-2022-contaminants",
+        "label": "No government sets a total-chromium maximum level for an edible oil or fat in any jurisdiction. This reads across the strictest real food total-chromium ML on the matching liquid, product-as-placed-on-market basis: China GB 2762-2022 total chromium in liquid milk, 300 ug/kg (test method GB 5009.123). Clean commercial cooking oil sits well below this ceiling; grossly contaminated oil fails. This total-chromium ceiling is the reflex-speciation screen for the hexavalent-chromium control below. GB 2762-2025 supersedes GB 2762-2022 on 2026-09-02; re-verify this value against the 2025 revision at that time.",
+        "per_country": {},
         "audit": {
           "same_form": [],
           "other_form": []
         }
       },
       "Cr-VI": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "Hexavalent chromium is never a panel number for a food; it is the toxic species obtained by reflex speciation. Any lot whose total-chromium screen exceeds the reflex trigger is speciated, and any quantifiable Cr(VI) fails.",
-        "reference_method": "IC-ICP-MS Cr(VI) speciation (EPA 3060A alkaline digestion + EPA 6800 / EN 15192) on any total-Cr exceedance.",
+        "type": "read_across",
+        "provenance_tag": "read-across",
+        "value": 10,
+        "value_exact": 10,
+        "source_id": "ca_swrcb_crvi_drinking_water_10",
+        "source_jurisdiction": "US-CA",
+        "source_scope": "drinking water",
+        "binding_instrument": "regulations/ca-swrcb-hexavalent-chromium-mcl",
+        "label": "No government sets a hexavalent-chromium maximum level for any food in any jurisdiction. This reads across the strictest drinking-water (oral-intake) Cr(VI) limit as a conservative species ceiling: the California State Water Resources Control Board Cr(VI) MCL, 10 ug/L (about 11 ug/kg at an oil density of 0.91, applied at 10 as slightly conservative). That MCL is a feasibility-set enforceable limit, not a health-based no-effect level; it is adopted only as the strictest real sovereign oral-intake Cr(VI) number. The value sits far below the total-chromium screen (300 ug/kg), so the species constraint holds. In a lipid food matrix hexavalent chromium reduces to trivalent chromium, so any total-chromium exceedance is reflex-speciated by IC-ICP-MS (EPA 3060A alkaline digestion + EPA 6800 / EN 15192) and any quantifiable Cr(VI) above 10 ug/kg fails.",
+        "per_country": {},
         "audit": {
           "same_form": [],
           "other_form": []
         }
       },
       "Sn": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "Tin migrates into food only from tinplate cans; culinary oils are sold in glass, PET, or lined containers, not tinplate. No non-canned tin pathway exists for oils.",
-        "reference_method": null,
+        "type": "read_across",
+        "provenance_tag": "read-across",
+        "value": 200000,
+        "value_exact": 200000,
+        "source_id": "eu2023_sn_canned_foods_200000",
+        "source_jurisdiction": "EU",
+        "source_scope": "canned foods other than canned beverages, except canned dried and canned powdered products",
+        "binding_instrument": "regulations/eu2023-contaminants-maximum-levels",
+        "label": "No government sets a tin maximum level for an edible oil or fat. The only tin pathway in a bottled oil is migration from tin or tinplate packaging. This reads across the EU Reg 2023/915 inorganic-tin maximum level for canned foods other than beverages, 200000 ug/kg, on the identical product-as-placed-on-market basis: the sovereign instrument purpose-built to bound tin migrating from a metal contact surface into the food it holds. Real oil sits far below it; grossly tin-contaminated oil from failed packaging is caught.",
+        "per_country": {},
         "audit": {
           "same_form": [],
           "other_form": []
         }
       },
       "Al": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign sets an aluminium maximum level for an edible oil or fat in any jurisdiction. Aluminium does not partition into a refined lipid matrix and a plant oil has no aluminium uptake or migration pathway. Aluminium food limits that exist elsewhere are not contaminant MLs reaching an oil: China's GB 2762 eliminated aluminium as a contaminant and aluminium in food is instead governed as a GB 2760 permitted additive under its ADI (finished-product residue caps such as baked foods 100000 and starch noodles/vermicelli 200000), and the AU-NZ aluminium limits are infant-formula-specific (Schedule 19 non-soy 500 / soy 1000). None is an edible oil. Rebuttable and audited against the register each build.",
-        "reference_method": null,
+        "type": "read_across",
+        "provenance_tag": "read-across",
+        "value": 1000,
+        "value_exact": 1000,
+        "source_id": "eu_10_2011_al_sml",
+        "source_jurisdiction": "EU",
+        "source_scope": "plastic food-contact materials and articles",
+        "binding_instrument": "regulations/eu-10-2011-food-contact-plastics-sml",
+        "label": "No government sets an aluminium maximum level for an edible oil or fat. The demonstrated aluminium pathway in a bottled oil is migration from packaging. This reads across the EU Reg 10/2011 aluminium specific-migration limit, 1000 ug/kg, the sovereign instrument that bounds aluminium migrating into food from a contact material (derived against the EFSA aluminium tolerable weekly intake). The specific-migration limit is applied at face value as a conservative total-content ceiling, disclosed as the nearest sovereign anchor, not direct total-content governance of oil.",
+        "per_country": {},
         "audit": {
           "same_form": [],
           "other_form": []
@@ -263,8 +292,8 @@
     "control",
     "ratchet"
   ],
-  "version": "v1.0 (2026-08-13, initial compilation)",
-  "lineage_note": "Initial Cat-30 government-limit standard. Edible-oil MLs (EU 2023/915, Codex named-vegetable-oils, GSO 193:2021, Thailand MOPH 414, India FSSAI, Israel FCS) govern Pb/Cd/tAs/iAs/tHg at face value; nickel is held under a hydrogenation-catalyst screen (no sovereign oil Ni ML); Al/Sn/total-Cr not-material; Cr-VI reflex control; MeHg not-material (no marine methylation pathway in a plant oil).",
+  "version": "v1.1 (2026-08-25, full-panel numeric completion)",
+  "lineage_note": "Cat-30 government-limit standard, full-panel numeric completion (2026-08-25). Edible-oil MLs (EU 2023/915, Codex named-vegetable-oils, GSO 193:2021, Thailand MOPH 414, India FSSAI, Israel FCS) govern Pb/Cd/tAs/iAs/tHg at face value. The five previously-unregulated cells now carry adversarially-verified numeric read-across ceilings, each disclosed as a read-across to the nearest applicable sovereign instrument on the matching product-as-placed-on-market basis: Ni 100 (EU 2024/1987 formula-liquid), total-Cr 300 (China GB2762 liquid-milk), Cr-VI 10 (California SWRCB drinking-water MCL, conservative oral-intake species ceiling below the total-Cr screen), Sn 200000 (EU 2023/915 canned-food inorganic-tin, the packaging-migration pathway), Al 1000 (EU 10/2011 aluminium migration limit, the packaging-migration pathway). MeHg is bounded by the binding total-mercury ceiling (MeHg<=tHg by identity). Every panel analyte terminates in a testable ceiling; no null control/not-material cells remain (founder rule 2026-08-25).",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat30-config.json",
   "verify": {

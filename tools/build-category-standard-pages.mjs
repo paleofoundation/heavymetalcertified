@@ -185,11 +185,19 @@ function masterTable(variants, basisWord, tierNote, firmCount) {
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
   // Honest cap note: a fully-numeric category (seafood, grains) states every analyte carries a
-  // firm ceiling; a partially-numeric category states the firm count and that the rest are
-  // governed controls with no standalone number — never overclaiming a ceiling that isn't there.
+  // firm ceiling. Otherwise the remainder splits into two distinct, non-interchangeable kinds, and
+  // the note must not conflate them: a SUBSUMED (bounded) cell is a toxic species bounded by its
+  // parent total (iAs by tAs, MeHg by tHg) and enforced by reflex speciation — it carries an
+  // enforceable ceiling; a CONTROL / not-material cell carries no standalone number at all. When the
+  // only non-firm cells are bounded species, every analyte still has an enforceable ceiling, and the
+  // note says so rather than implying an analyte is unspecified.
+  const boundedCount = PANEL.filter((a) => { const c = variants[0].cells[a]; return c && c.type === "subsumed" }).length
+  const controlCount = PANEL.filter((a) => { const c = variants[0].cells[a]; return c && (c.type === "control" || c.type === "not_material") }).length
   const capNote = firmCount >= PANEL.length
     ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
-    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remainder are governed by mandatory control or reflex-speciation screening with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
+    : controlCount === 0
+    ? `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals and enforced by reflex speciation, so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
+    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals via reflex speciation, and ` : ""}the remaining ${controlCount} are governed by mandatory control or reflex-speciation screening with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
   return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 

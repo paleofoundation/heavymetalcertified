@@ -6,8 +6,8 @@
   "unit": "ppb (µg/kg)",
   "methodology_version": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
   "standard_version": "2.2 (2026-06-09)",
-  "generated_at": "2026-08-18T18:15:27.034Z",
-  "generated_commit": "740f00da57e26d8808ae3febe4f2c18784cf61ea",
+  "generated_at": "2026-08-25T07:01:29.767Z",
+  "generated_commit": "a0534f9bd8a9188c6d074564ee0be981a7e7aa39",
   "license": {
     "terms": "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
     "attribution": "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite the standard's page_url and standard_version.",
@@ -15,7 +15,7 @@
   },
   "evidence_basis": "Literature occurrence evidence the standards are checked against is reported independently at https://heavymetalindex.com and cited one-way; see each record's hmi_literature_link.",
   "standard_count": 309,
-  "firm_analyte_cells": 1709,
+  "firm_analyte_cells": 1719,
   "standards": [
     {
       "product_slug": "baby-cereals-dry",
@@ -47109,58 +47109,70 @@
               }
             },
             "MeHg": {
-              "status": "not_material",
+              "status": "published",
               "value_ppb": null,
+              "value_exact_ppb": null,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-limit",
+              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "controlling_jurisdiction": null,
+              "controlling_instrument": null
             },
             "Ni": {
               "status": "published",
-              "value_ppb": null,
-              "value_exact_ppb": null,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as placed on market",
               "basis_note": null,
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": null,
-              "controlling_instrument": null
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a nickel maximum level for an edible oil or fat in any jurisdiction. This reads across the nearest applicable sovereign nickel ML on the oil's own product-as-placed-on-market (liquid) basis: EU Reg 2024/1987 nickel in infant and young-child formula (liquid form), 100 ug/kg. The more permissive EU fruiting-vegetable nickel ML (400 ug/kg) was rejected because it would admit oil at concentrations reported in contaminated samples. Nickel can also enter a fat as residual hydrogenation catalyst (Raney nickel) in any hardened or partially hydrogenated fraction; this ceiling caps that pathway too. Disclosed as a read-across, not direct EU governance of oil.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2024_ni_formula_liquid_100"
             },
             "Cr": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 300,
+              "value_exact_ppb": 300,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": "Total Cr by ICP-MS as a screen; reflex Cr(VI) speciation on any total-Cr exceedance."
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a total-chromium maximum level for an edible oil or fat in any jurisdiction. This reads across the strictest real food total-chromium ML on the matching liquid, product-as-placed-on-market basis: China GB 2762-2022 total chromium in liquid milk, 300 ug/kg (test method GB 5009.123). Clean commercial cooking oil sits well below this ceiling; grossly contaminated oil fails. This total-chromium ceiling is the reflex-speciation screen for the hexavalent-chromium control below. GB 2762-2025 supersedes GB 2762-2022 on 2026-09-02; re-verify this value against the 2025 revision at that time.",
+              "controlling_jurisdiction": "CN",
+              "controlling_instrument": "china_gb2762_cr_liquid_milk_300"
             },
             "Cr-VI": {
               "status": "published",
-              "value_ppb": null,
-              "value_exact_ppb": null,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as placed on market",
               "basis_note": null,
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": null,
-              "controlling_instrument": null
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a hexavalent-chromium maximum level for any food in any jurisdiction. This reads across the strictest drinking-water (oral-intake) Cr(VI) limit as a conservative species ceiling: the California State Water Resources Control Board Cr(VI) MCL, 10 ug/L (about 11 ug/kg at an oil density of 0.91, applied at 10 as slightly conservative). That MCL is a feasibility-set enforceable limit, not a health-based no-effect level; it is adopted only as the strictest real sovereign oral-intake Cr(VI) number. The value sits far below the total-chromium screen (300 ug/kg), so the species constraint holds. In a lipid food matrix hexavalent chromium reduces to trivalent chromium, so any total-chromium exceedance is reflex-speciated by IC-ICP-MS (EPA 3060A alkaline digestion + EPA 6800 / EN 15192) and any quantifiable Cr(VI) above 10 ug/kg fails.",
+              "controlling_jurisdiction": "US-CA",
+              "controlling_instrument": "ca_swrcb_crvi_drinking_water_10"
             },
             "Sn": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 200000,
+              "value_exact_ppb": 200000,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a tin maximum level for an edible oil or fat. The only tin pathway in a bottled oil is migration from tin or tinplate packaging. This reads across the EU Reg 2023/915 inorganic-tin maximum level for canned foods other than beverages, 200000 ug/kg, on the identical product-as-placed-on-market basis: the sovereign instrument purpose-built to bound tin migrating from a metal contact surface into the food it holds. Real oil sits far below it; grossly tin-contaminated oil from failed packaging is caught.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_sn_canned_foods_200000"
             },
             "Al": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets an aluminium maximum level for an edible oil or fat. The demonstrated aluminium pathway in a bottled oil is migration from packaging. This reads across the EU Reg 10/2011 aluminium specific-migration limit, 1000 ug/kg, the sovereign instrument that bounds aluminium migrating into food from a contact material (derived against the EFSA aluminium tolerable weekly intake). The specific-migration limit is applied at face value as a conservative total-content ceiling, disclosed as the nearest sovereign anchor, not direct total-content governance of oil.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu_10_2011_al_sml"
             }
           }
         }
@@ -47336,58 +47348,70 @@
               }
             },
             "MeHg": {
-              "status": "not_material",
+              "status": "published",
               "value_ppb": null,
+              "value_exact_ppb": null,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-limit",
+              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
+              "controlling_jurisdiction": null,
+              "controlling_instrument": null
             },
             "Ni": {
               "status": "published",
-              "value_ppb": null,
-              "value_exact_ppb": null,
+              "value_ppb": 100,
+              "value_exact_ppb": 100,
               "native_basis": "as placed on market",
               "basis_note": null,
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": null,
-              "controlling_instrument": null
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a nickel maximum level for an edible oil or fat in any jurisdiction. This reads across the nearest applicable sovereign nickel ML on olive oil's own product-as-placed-on-market (liquid) basis: EU Reg 2024/1987 nickel in infant and young-child formula (liquid form), 100 ug/kg. The more permissive EU fruiting-vegetable nickel ML (400 ug/kg) was the alternative food-type sibling; it was rejected because it would admit oil at concentrations the primary literature flags as contaminated (ground-harvest samples reported at 220-330 ug/kg). Disclosed as a read-across, not direct EU governance of oil; clean commercial olive oil clears 100 ug/kg with headroom (Kabaran 2020 Cyprus n=27 mean 30, max 54; Llorent-Martinez 2014 virgin olive oil below detection).",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2024_ni_formula_liquid_100"
             },
             "Cr": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 300,
+              "value_exact_ppb": 300,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": "Total Cr by ICP-MS as a screen; reflex Cr(VI) speciation on any total-Cr exceedance."
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a total-chromium maximum level for an edible oil or fat in any jurisdiction. This reads across the strictest real food total-chromium ML on the matching liquid, product-as-placed-on-market basis: China GB 2762-2022 total chromium in liquid milk, 300 ug/kg (test method GB 5009.123). Clean commercial olive oil passes (Kabaran 2020 Cyprus n=27 mean 124, max 218; Llorent-Martinez 2014 virgin olive oil below detection); grossly contaminated oil fails. This total-chromium ceiling is the reflex-speciation screen for the hexavalent-chromium control below. GB 2762-2025 supersedes GB 2762-2022 on 2026-09-02; re-verify this value against the 2025 revision at that time.",
+              "controlling_jurisdiction": "CN",
+              "controlling_instrument": "china_gb2762_cr_liquid_milk_300"
             },
             "Cr-VI": {
               "status": "published",
-              "value_ppb": null,
-              "value_exact_ppb": null,
+              "value_ppb": 10,
+              "value_exact_ppb": 10,
               "native_basis": "as placed on market",
               "basis_note": null,
-              "control_basis": "government-limit",
-              "rationale": "Strictest applicable government maximum level, converted to the row's native basis (Method v2.0 default).",
-              "controlling_jurisdiction": null,
-              "controlling_instrument": null
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a hexavalent-chromium maximum level for any food in any jurisdiction. This reads across the strictest drinking-water (oral-intake) Cr(VI) limit as a conservative species ceiling: the California State Water Resources Control Board Cr(VI) MCL, 10 ug/L (about 11 ug/kg at an oil density of 0.91, applied at 10 as slightly conservative). That MCL is a feasibility-set enforceable limit, not a health-based no-effect level (the California Public Health Goal is far lower); it is adopted only as the strictest real sovereign oral-intake Cr(VI) number. The value sits far below the total-chromium screen (300 ug/kg), so the species constraint holds. In a lipid food matrix hexavalent chromium reduces to trivalent chromium, so any total-chromium exceedance is reflex-speciated by IC-ICP-MS (EPA 3060A alkaline digestion + EPA 6800 / EN 15192) and any quantifiable Cr(VI) above 10 ug/kg fails.",
+              "controlling_jurisdiction": "US-CA",
+              "controlling_instrument": "ca_swrcb_crvi_drinking_water_10"
             },
             "Sn": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 200000,
+              "value_exact_ppb": 200000,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets a tin maximum level for an edible oil or fat. The only tin pathway in a bottled oil is migration from tin or tinplate packaging (Charfi 2026 measures 20 ug/kg from a tin container versus 120 ug/kg or below for glass and PET). This reads across the EU Reg 2023/915 inorganic-tin maximum level for canned foods other than beverages, 200000 ug/kg, on the identical product-as-placed-on-market basis: the sovereign instrument purpose-built to bound tin migrating from a metal contact surface into the food it holds. Real oil sits far below it; grossly tin-contaminated oil from failed packaging is caught.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu2023_sn_canned_foods_200000"
             },
             "Al": {
-              "status": "not_material",
-              "value_ppb": null,
+              "status": "published",
+              "value_ppb": 1000,
+              "value_exact_ppb": 1000,
               "native_basis": "as placed on market",
-              "control_basis": "controlled-screen",
-              "rationale": null,
-              "reference_method": null
+              "basis_note": null,
+              "control_basis": "government-read-across",
+              "rationale": "No government sets an aluminium maximum level for an edible oil or fat. The demonstrated aluminium pathway in a bottled oil is migration from packaging (Charfi 2026: 670 ug/kg from aluminium containers versus 120 ug/kg or below for glass and PET). This reads across the EU Reg 10/2011 aluminium specific-migration limit, 1000 ug/kg, the sovereign instrument that bounds aluminium migrating into food from a contact material (derived against the EFSA aluminium tolerable weekly intake). The specific-migration limit is applied at face value as a conservative total-content ceiling; the elevated case arose from aluminium metal containers, and the migration limit is disclosed as the nearest sovereign anchor, not direct total-content governance of oil.",
+              "controlling_jurisdiction": "EU",
+              "controlling_instrument": "eu_10_2011_al_sml"
             }
           }
         }
