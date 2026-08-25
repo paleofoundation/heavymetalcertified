@@ -4,9 +4,7 @@
   "category": 6,
   "category_name": "Seafood",
   "native_basis": "as_consumed",
-  "native_basis_label": "edible portion, as consumed (wet weight)",
   "canned": false,
-  "scope_note": "Cephalopods (octopus, squid, cuttlefish), fresh or frozen, not canned. Lead binds EU cephalopods 300; cadmium binds EU cephalopods 1000; inorganic arsenic binds the EU cephalopods 50; total mercury binds the EU lower-mercury 300. MeHg bounded by tHg; total Cr binds India all-fishery 12000 (the only on-scope sovereign for molluscan cephalopods; HK regulates fish/crustaceans/oysters, not cephalopods); Ni/Al screened; Sn/Cr-VI not-material. Canned cephalopods route to the canned-seafood subcategory.",
   "variants": {
     "both": {
       "Pb": {
@@ -72,6 +70,95 @@
             "converted": true,
             "id": "vn_qcvn8_2_2011_pb_cephalopod-mollusks-without-internal-organs_1000"
           }
+        }
+      },
+      "iAs": {
+        "type": "gov",
+        "value": 50,
+        "value_exact": 50,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu20251891_ias_cephalopods_50",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 50,
+            "converted": true,
+            "id": "eu20251891_ias_cephalopods_50"
+          }
+        }
+      },
+      "tAs": {
+        "type": "gov",
+        "value": 1000,
+        "value_exact": 1000,
+        "binding_jurisdiction": "PY",
+        "binding_id": "py_decreto1335_2019_cephalopod_molluscs_tas_1000",
+        "basis_note": "face value",
+        "per_country": {
+          "PY": {
+            "value": 1000,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_tas_1000"
+          },
+          "MERCOSUR": {
+            "value": 1000,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_tas_1000"
+          }
+        }
+      },
+      "tHg": {
+        "type": "gov",
+        "value": 300,
+        "value_exact": 300,
+        "binding_jurisdiction": "EU",
+        "binding_id": "eu2023_hg_fish_low_300",
+        "basis_note": "face value",
+        "per_country": {
+          "EU": {
+            "value": 300,
+            "converted": true,
+            "id": "eu2023_hg_fish_low_300"
+          },
+          "IN": {
+            "value": 500,
+            "converted": true,
+            "id": "in_fssai2016_thg_003_non_predatory_fish_crustaceans_cephalopods_molluscs_500"
+          },
+          "CR": {
+            "value": 500,
+            "converted": true,
+            "id": "cr_rtcr409_2008_thg_crust_ceph_bivalves_500"
+          },
+          "GY": {
+            "value": 500,
+            "converted": true,
+            "id": "gy2023_thg_cephalopods_ppm_500"
+          },
+          "PY": {
+            "value": 500,
+            "converted": true,
+            "id": "py_decreto1335_2019_cephalopod_molluscs_thg_500"
+          },
+          "MERCOSUR": {
+            "value": 500,
+            "converted": true,
+            "id": "mercosur_gmc12_2011_cephalopod_molluscs_thg_500"
+          }
+        }
+      },
+      "MeHg": {
+        "type": "subsumed",
+        "value": null,
+        "subsumed_by": "tHg",
+        "binding_tHg": 300,
+        "binding_tHg_source": "EU",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (300 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "read_across",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
         }
       },
       "Cd": {
@@ -149,124 +236,15 @@
           }
         }
       },
-      "tAs": {
-        "type": "gov",
-        "value": 1000,
-        "value_exact": 1000,
-        "binding_jurisdiction": "AU-NZ",
-        "binding_id": "aunz_sch19_tas_molluscs_1000",
-        "basis_note": "face value",
-        "per_country": {
-          "AU-NZ": {
-            "value": 1000,
-            "converted": true,
-            "id": "aunz_sch19_tas_molluscs_1000"
-          },
-          "SG": {
-            "value": 1000,
-            "converted": true,
-            "id": "sg_foodregs_2026_fish_crustaceans_molluscs_tas_1000"
-          },
-          "PY": {
-            "value": 1000,
-            "converted": true,
-            "id": "py_decreto1335_2019_cephalopod_molluscs_tas_1000"
-          },
-          "MERCOSUR": {
-            "value": 1000,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_cephalopod_molluscs_tas_1000"
-          },
-          "MX": {
-            "value": 80000,
-            "converted": true,
-            "id": "mx_nom242_tas_crustaceans_bivalves_80000"
-          },
-          "IN": {
-            "value": 86000,
-            "converted": true,
-            "id": "in_fssai2016_tas_013_molluscs_86000"
-          }
-        }
-      },
-      "iAs": {
-        "type": "gov",
-        "value": 50,
-        "value_exact": 50,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu20251891_ias_cephalopods_50",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 50,
-            "converted": true,
-            "id": "eu20251891_ias_cephalopods_50"
-          }
-        }
-      },
-      "tHg": {
-        "type": "gov",
-        "value": 300,
-        "value_exact": 300,
-        "binding_jurisdiction": "EU",
-        "binding_id": "eu2023_hg_fish_low_300",
-        "basis_note": "face value",
-        "per_country": {
-          "EU": {
-            "value": 300,
-            "converted": true,
-            "id": "eu2023_hg_fish_low_300"
-          },
-          "IN": {
-            "value": 500,
-            "converted": true,
-            "id": "in_fssai2016_thg_003_non_predatory_fish_crustaceans_cephalopods_molluscs_500"
-          },
-          "CR": {
-            "value": 500,
-            "converted": true,
-            "id": "cr_rtcr409_2008_thg_crust_ceph_bivalves_500"
-          },
-          "GY": {
-            "value": 500,
-            "converted": true,
-            "id": "gy2023_thg_cephalopods_ppm_500"
-          },
-          "PY": {
-            "value": 500,
-            "converted": true,
-            "id": "py_decreto1335_2019_cephalopod_molluscs_thg_500"
-          },
-          "MERCOSUR": {
-            "value": 500,
-            "converted": true,
-            "id": "mercosur_gmc12_2011_cephalopod_molluscs_thg_500"
-          }
-        }
-      },
-      "MeHg": {
-        "type": "not_material",
-        "value": null,
-        "control": "Methylmercury is the organomercury speciation of total mercury and is arithmetically bounded by it (MeHg <= tHg). The binding total-mercury ceiling for this subcategory (300) is equal to or stricter than the lowest applicable sovereign methylmercury ML for this product, so passing the total-mercury limit guarantees methylmercury compliance and no separate methylmercury ceiling is published. Audit-affirmed.",
-        "reference_method": "Total-mercury screen; reflex MeHg speciation is optional and cannot exceed the tHg ceiling."
-      },
       "Ni": {
-        "type": "not_material",
-        "value": null,
-        "control": "No jurisdiction sets a nickel maximum level for fish or fishery products anywhere in the register or worldwide (EU 2024/1987 nickel covers plant foods and seaweed only, not animal seafood). Nickel is screened rather than assigned an invented or mis-based number.",
-        "reference_method": "Total-nickel screen (ICP-MS); no sovereign fish/fishery Ni ML."
-      },
-      "Sn": {
-        "type": "not_material",
-        "value": null,
-        "control": "Fresh/frozen seafood has no tinplate contact; inorganic tin is a can-migration analyte. A full register Sn sweep shows every seafood tin ML is canned/tinplate-migration scope; no sovereign sets a non-canned seafood tin matrix limit. Canned product is certified under the canned-seafood subcategory tin limit.",
-        "reference_method": "Packaging control (non-tinplate); ICP-MS per-lot screen; escalate to the canned-seafood Sn limit if packaged in tinplate."
-      },
-      "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "No credible regulator sets an aluminium contaminant maximum level for seafood in any checked jurisdiction. Aluminium in seafood is background; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI, not by a per-food maximum level.",
-        "reference_method": "Total-aluminium screen (ICP-MS); managed by intake vs the EFSA/JECFA TWI; no per-food seafood contaminant ML to align to."
+        "type": "read_across",
+        "value": 2000,
+        "value_exact": 2000,
+        "source_id": "eu2024_ni_husked_rice_2000",
+        "source_jurisdiction": "EU",
+        "label": "No government sets a nickel ML for animal seafood (EU 2024/1987 nickel covers plant foods and seaweed only). Read-across to the nearest whole-food nickel ceiling (EU 2024/1987 husked rice, 2000) that accommodates observed seafood nickel occurrence; clean product passes, grossly nickel-elevated product fails.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Cr": {
         "type": "gov",
@@ -284,10 +262,34 @@
         }
       },
       "Cr-VI": {
-        "type": "not_material",
-        "value": null,
-        "control": "Hexavalent chromium is the Cr(VI) speciation of chromium and is bounded by the total-chromium government limit (Cr-VI <= total Cr), which binds at 12000 (India all-fishery) here. No jurisdiction sets a Cr-VI food maximum level, and in a reducing animal-tissue matrix Cr(VI) is reduced to Cr(III), so there is no chromate pathway in seafood (unlike lead-chromate-adulterated spices). Rebuttable if a routed source reports hexavalent chromium.",
-        "reference_method": "Bounded by the total-chromium government limit; reflex Cr-VI speciation only on anomalously elevated total chromium."
+        "type": "read_across",
+        "value": 10,
+        "value_exact": 10,
+        "source_id": "ca_swrcb_crvi_drinking_water_10",
+        "source_jurisdiction": "US-CA",
+        "label": "No government sets a hexavalent-chromium ML for food. Read-across to the California SWRCB drinking-water Cr(VI) MCL (10) as a conservative oral-intake species ceiling, kept below the total-chromium value. In a reducing animal-tissue matrix Cr(VI) reduces to Cr(III), so clean product passes and a chromate-contaminated sample fails.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 200000,
+        "value_exact": 200000,
+        "source_id": "eu2023_sn_canned_foods_200000",
+        "source_jurisdiction": "EU",
+        "label": "Tin is a can-migration analyte; no government sets a tin ML for non-canned seafood (every seafood tin ML is canned/tinplate-only). Read-across to the EU 2023/915 general canned-food inorganic-tin ML (200000) as a packaging-migration baseline; fresh/frozen cephalopods have no tin source and pass. Canned product is certified under the canned-seafood subcategory.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "label": "No government sets an aluminium contaminant ML for food; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI. Read-across to the nearest food aluminium instrument (China GB 2760 baked-foods aluminium, 100000) as a monitor/baseline ceiling; clean product passes while gross contamination fails. Flagged monitor/baseline, not per-lot-critical.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       }
     }
   },

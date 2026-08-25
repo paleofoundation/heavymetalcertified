@@ -4,9 +4,7 @@
   "category": 6,
   "category_name": "Seafood",
   "native_basis": "as_sold",
-  "native_basis_label": "edible dried seaweed as placed on the market (DRY-WEIGHT basis, mg/kg dry matter) — never numerically compared to the wet-weight animal-seafood ppb",
   "canned": false,
-  "scope_note": "Edible dried seaweed/kelp food products (nori, wakame, kombu, dulse) sold as dried, on a DRY-WEIGHT basis (mg/kg DM) — these numbers must never be numerically compared against the wet-weight animal-seafood ppb. Cadmium (500) and total mercury (100) bind the French CSHPF edible-seaweed maxima (confirmed tightenings from 2000 and 2500). Lead 5000 and total arsenic 5000 bind the Israel dried-seaweed lines; inorganic arsenic 1000 binds FSANZ (HK concurs). Nickel binds EU 2024/1987 seaweed 30000; tin binds the French CSHPF seaweed 5000. MeHg and Cr-VI are not-material (speciation-bounded); aluminium and total chromium are screened (no on-scope sovereign ML). Seaweed used as a dietary supplement (>=80% dried seaweed) routes to the supplements category.",
   "variants": {
     "both": {
       "Pb": {
@@ -26,41 +24,6 @@
             "value": 5000,
             "converted": true,
             "id": "fr_cshpf_seaweed_pb_5000"
-          }
-        }
-      },
-      "Cd": {
-        "type": "gov",
-        "value": 500,
-        "value_exact": 500,
-        "binding_jurisdiction": "FR",
-        "binding_id": "fr_cshpf_seaweed_cd_500",
-        "basis_note": "face value",
-        "per_country": {
-          "FR": {
-            "value": 500,
-            "converted": true,
-            "id": "fr_cshpf_seaweed_cd_500"
-          },
-          "IL": {
-            "value": 5000,
-            "converted": true,
-            "id": "il_fcs2016_cd_7_1_dried_seaweed_5000"
-          }
-        }
-      },
-      "tAs": {
-        "type": "gov",
-        "value": 5000,
-        "value_exact": 5000,
-        "binding_jurisdiction": "IL",
-        "binding_id": "il_fcs2016_tas_7_1_dried_seaweed_5000",
-        "basis_note": "face value",
-        "per_country": {
-          "IL": {
-            "value": 5000,
-            "converted": true,
-            "id": "il_fcs2016_tas_7_1_dried_seaweed_5000"
           }
         }
       },
@@ -94,6 +57,21 @@
           }
         }
       },
+      "tAs": {
+        "type": "gov",
+        "value": 5000,
+        "value_exact": 5000,
+        "binding_jurisdiction": "IL",
+        "binding_id": "il_fcs2016_tas_7_1_dried_seaweed_5000",
+        "basis_note": "face value",
+        "per_country": {
+          "IL": {
+            "value": 5000,
+            "converted": true,
+            "id": "il_fcs2016_tas_7_1_dried_seaweed_5000"
+          }
+        }
+      },
       "tHg": {
         "type": "gov",
         "value": 100,
@@ -115,10 +93,48 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "No jurisdiction sets a seaweed methylmercury ML (all sovereign MeHg limits are fish/fishery scope), and seaweed is a marine primary producer into which methylmercury does not biomagnify (it biomagnifies up the food chain, not into algae), so MeHg is a negligible fraction of total mercury and is bounded by the tHg ceiling (tightened to France CSHPF 100 DM).",
-        "reference_method": "Total-mercury screen; reflex MeHg speciation cannot exceed the tHg ceiling."
+        "subsumed_by": "tHg",
+        "binding_tHg": 100,
+        "binding_tHg_source": "FR",
+        "label": "Methylmercury is a component of total mercury (MeHg ≤ tHg). No government sets a methylmercury limit for this product below the binding total-mercury ceiling (100 µg/kg), so methylmercury is governed by and bounded by the total-mercury ceiling; no separate methylmercury ceiling is published.",
+        "candidate": {
+          "type": "read_across",
+          "value": 500,
+          "source_jurisdiction": "MX",
+          "source_id": "mx_nom242_mehg_other_500"
+        }
+      },
+      "Cd": {
+        "type": "gov",
+        "value": 500,
+        "value_exact": 500,
+        "binding_jurisdiction": "FR",
+        "binding_id": "fr_cshpf_seaweed_cd_500",
+        "basis_note": "face value",
+        "per_country": {
+          "FR": {
+            "value": 500,
+            "converted": true,
+            "id": "fr_cshpf_seaweed_cd_500"
+          },
+          "TH": {
+            "value": 2000,
+            "converted": true,
+            "id": "th_moph414_2020_cd_dried_seaweed_2000"
+          },
+          "SG": {
+            "value": 2000,
+            "converted": true,
+            "id": "sg_foodregs_2026_seaweed_cd_2000"
+          },
+          "IL": {
+            "value": 5000,
+            "converted": true,
+            "id": "il_fcs2016_cd_7_1_dried_seaweed_5000"
+          }
+        }
       },
       "Ni": {
         "type": "gov",
@@ -140,38 +156,45 @@
           }
         }
       },
-      "Sn": {
-        "type": "gov",
-        "value": 5000,
-        "value_exact": 5000,
-        "binding_jurisdiction": "FR",
-        "binding_id": "fr_cshpf_seaweed_sn_5000",
-        "basis_note": "face value",
-        "per_country": {
-          "FR": {
-            "value": 5000,
-            "converted": true,
-            "id": "fr_cshpf_seaweed_sn_5000"
-          }
-        }
-      },
-      "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "No credible regulator sets an aluminium contaminant ML for seaweed. Seaweed accumulates aluminium from seawater/sediment as background; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI, not by a per-food maximum level.",
-        "reference_method": "Total-aluminium screen (ICP-MS); managed by intake vs the EFSA/JECFA TWI; no seaweed contaminant Al ML to align to."
-      },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "No jurisdiction sets a total-chromium maximum level for seaweed or edible algae (the HK Cap 132V total-Cr limits are animal-seafood scope; the China GB 2762 total-Cr limits are cereals/beans plant scope — neither is on-scope for a marine macroalga). Chromium(III) is an essential nutrient; trace chromium in seaweed is geologic uptake. Screened as the substrate for reflex Cr-VI speciation.",
-        "reference_method": "Total-chromium screen (ICP-MS); substrate for reflex Cr-VI speciation; no on-scope sovereign seaweed total-Cr ML."
+        "type": "read_across",
+        "value": 2000,
+        "value_exact": 2000,
+        "source_id": "china_gb2762_cr_milk_powder_2000",
+        "source_jurisdiction": "CN",
+        "label": "No government sets a total-chromium ML for seaweed. Read-across to the nearest food total-chromium ML on an as-sold dry basis (China GB 2762 milk powder, 2000) as a monitor/baseline. Total chromium in edible seaweed is predominantly non-toxic Cr(III) from mineral accumulation, so the binding health control is hexavalent chromium (Cr-VI); total chromium is monitored, not a per-lot pass/fail.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       },
       "Cr-VI": {
-        "type": "not_material",
-        "value": null,
-        "control": "Cr-VI is bounded by the total-chromium screen (Cr-VI <= total Cr); no jurisdiction sets a Cr-VI food ML and there is no chromate pathway in seaweed (no lead-chromate adulteration as in spices), so any trace chromium is geologic chromium(III). Rebuttable if a routed source reports hexavalent chromium in seaweed.",
-        "reference_method": "Bounded by the total-chromium screen; reflex Cr-VI speciation only on anomalously elevated total chromium."
+        "type": "read_across",
+        "value": 10,
+        "value_exact": 10,
+        "source_id": "ca_swrcb_crvi_drinking_water_10",
+        "source_jurisdiction": "US-CA",
+        "label": "No government sets a hexavalent-chromium ML for food. Read-across to the California SWRCB drinking-water Cr(VI) MCL (10) as a conservative oral-intake species ceiling, kept below the total-chromium value. Marine chromium is Cr(III); Cr(VI) in seaweed is negligible, so clean product passes and a chromate-contaminated sample fails.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Sn": {
+        "type": "read_across",
+        "value": 200000,
+        "value_exact": 200000,
+        "source_id": "eu2023_sn_canned_foods_200000",
+        "source_jurisdiction": "EU",
+        "label": "Tin is a can-migration analyte; dried seaweed foods are sold in non-metal packaging with no tinplate contact, and no government sets a tin ML for seaweed. Read-across to the EU 2023/915 general canned-food inorganic-tin ML (200000) as a packaging-migration baseline; with no tin source clean product passes, and a mispackaged or contaminated sample fails.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
+      },
+      "Al": {
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "label": "No government sets an aluminium contaminant ML for food; dietary aluminium is managed by weekly intake against the EFSA/JECFA TWI. Read-across to the nearest food aluminium instrument (China GB 2760 baked-foods aluminium, 100000) as a monitor/baseline ceiling. Seaweed accumulates aluminium naturally; this ceiling flags gross contamination while clean product passes. Flagged monitor/baseline, not per-lot-critical.",
+        "basis_note": "face value (nearest government value; comparator vs any direct limit)",
+        "per_country": {}
       }
     }
   },

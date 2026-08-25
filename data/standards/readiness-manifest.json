@@ -3,10 +3,10 @@
   "ruling": "Certification-Readiness Ruling (2026-08-25): every analyte carries a limit-of-record; a category is ready only when COMPLETE + REGISTERED (production DOI) + CORRECTED.",
   "totals": {
     "records": 107,
-    "complete": 10,
+    "complete": 17,
     "registered": 0,
     "ready": 0,
-    "empty_cells": 459
+    "empty_cells": 426
   },
   "categories": [
     {
@@ -15,113 +15,73 @@
       "records": [
         {
           "slug": "canned-seafood",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "cephalopods",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "fish-freshwater",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "fish-marine-non-predatory",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "fish-marine-predatory",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "seaweed-kelp-foods",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Cr",
-            "Cr-VI",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "shellfish",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "MeHg",
-            "Ni",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         }
       ],
-      "complete": false,
+      "complete": true,
       "registered": false,
       "ready": false,
-      "incomplete_records": 7,
-      "empty_cell_total": 33
+      "incomplete_records": 0,
+      "empty_cell_total": 0
     },
     {
       "category": 15,
