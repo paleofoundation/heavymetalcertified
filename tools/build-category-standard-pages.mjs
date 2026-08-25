@@ -153,7 +153,7 @@ function bindingLabel(cell) {
   if (cell.type === "not_material") return "not material — controlled analyte (see note)"
   if (cell.type === "control") return "mandatory control — no government ML; screened every lot (see note)"
   if (cell.type === "screen") return "screening ceiling — Cr(VI) is the binding health control (see note)"
-  if (cell.type === "subsumed") return `bounded by ${esc(cell.subsumed_by || "parent total")} — reflex speciation (see note)`
+  if (cell.type === "subsumed") return `&le; total ${esc(cell.subsumed_by || "parent total")}, measured every lot (see note)`
   if (cell.type === "form_split") return "strictest government ML, set by product form (see derivation)"
   return "&mdash;"
 }
@@ -168,7 +168,7 @@ function limitDisplay(analyte, variants) {
     if (p.val.value == null) {
       if (p.val.type === "not_material") return "n/m"
       if (p.val.type === "control") return "control"
-      if (p.val.type === "subsumed") return "bounded"
+      if (p.val.type === "subsumed") return p.val.binding_total != null ? `&le;&#8201;${p.val.binding_total}` : "bounded"
       return "&mdash;"
     }
     return String(p.val.value)
@@ -196,8 +196,8 @@ function masterTable(variants, basisWord, tierNote, firmCount) {
   const capNote = firmCount >= PANEL.length
     ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
     : controlCount === 0
-    ? `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals and enforced by reflex speciation, so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
-    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals via reflex speciation, and ` : ""}the remaining ${controlCount} are governed by mandatory control or reflex-speciation screening with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
+    ? `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
+    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
   return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
@@ -226,7 +226,7 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
     let hmtc, binds
     if (!c) { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "control") { hmtc = "control&sup4;"; binds = "screened"; anyControl = true }
-    else if (c.type === "subsumed") { hmtc = "bounded&sup5;"; binds = `&le; ${esc(c.subsumed_by || "total")}`; anySubsumed = true }
+    else if (c.type === "subsumed") { hmtc = (c.binding_total != null ? `&le;&#8201;${c.binding_total}` : "bounded") + "&sup5;"; binds = `species &le; ${esc(c.subsumed_by || "total")}`; anySubsumed = true }
     else if (c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "read_across") {
       // Method v2.0 retired the occurrence-selected and precautionary numeric pathways. A record
@@ -244,8 +244,8 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
   const ctrlNote = anyControl ? "&sup4; no sovereign maximum exists for this analyte in this product, but a credible exposure pathway does &mdash; it is screened on every lot under ALARA against the tightest analogous reference, not assigned an invented number. " : ""
-  const subNote = anySubsumed ? "&sup5; a species governed by and bounded by its parent total (for example inorganic arsenic &le; total arsenic); no separate ceiling is published and reflex speciation enforces it whenever the total is elevated. " : ""
-  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government regulates this analyte for this exact product form: the value is a disclosed read-across from the nearest applicable government maximum, and the derivation names the instrument it comes from. It is never taken from occurrence data. After publication the standards ratchet may tighten it, using certified-lot results only. &sup3; not material in this matrix: controlled by reflex speciation or packaging control, not a standalone number. ${ctrlNote}${subNote}${otherNote || ""}`
+  const subNote = anySubsumed ? "&sup5; a toxic species governed by and bounded by its parent total (for example inorganic arsenic &le; total arsenic): the species can never exceed the total, so the total ceiling is the species ceiling. The total metal is measured on every lot and the species is established at baseline; no separate species ceiling is published. On ongoing lots the species is speciated whenever the total exceeds its limit. " : ""
+  const foot = `All values &micro;g/kg (ppb), ${basisWord} basis. ${convNote}&sup2; no government regulates this analyte for this exact product form: the value is a disclosed read-across from the nearest applicable government maximum, and the derivation names the instrument it comes from. It is never taken from occurrence data. After publication the standards ratchet may tighten it, using certified-lot results only. &sup3; not material in this matrix: measured but with no standalone number, controlled by packaging control or by the total-metal screen, not an invented value. ${ctrlNote}${subNote}${otherNote || ""}`
   return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Derivation &mdash; every government&rsquo;s number, side by side</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The full derivation for ${esc(subName)}. Each row lists every government maximum level in force worldwide, converted to the ${basisWord} basis; the HMTc limit is the strictest of them, and the last column names which sovereign law binds. A blank cell means that government sets no limit for this analyte in this product.</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:56rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th>${th}<th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binds</th></tr></thead><tbody>${body}</tbody></table></div><p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${foot}</p></section>`
 }
 
