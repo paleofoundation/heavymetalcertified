@@ -23,7 +23,11 @@ import searchScript from "./scripts/search.inline"
 // <header class="hmi-topnav-shell">; the shell carries the white ground +
 // bottom rule (see cert-chrome.scss). Left→right: brand (mark + wordmark),
 // the five mega-menu triggers, a flex spacer, then the actions group
-// (certificate lookup · Log in · Apply).
+// (certificate lookup · Log in · Get started).
+  // The Log in / Get started pair points off-site at the brand app
+  // (app.heavymetalcertified.com): Get started is the onboarding front
+  // door for new brands, Log in is the returning-account entry. Absolute
+  // URLs — they cross the app subdomain, so are NOT resolveRelative'd.
 
 export default (() => {
   const TopNav: QuartzComponent = (props: QuartzComponentProps) => {
@@ -111,11 +115,11 @@ export default (() => {
               </div>
             </div>
           </div>
-          <a class="hmtc-login" href={`${baseDir}/portal`}>
-            Portal preview
+          <a class="hmtc-login" href="https://app.heavymetalcertified.com/login">
+            Log in
           </a>
-          <a class="hmtc-apply" href={`${baseDir}/apply`}>
-            Apply
+          <a class="hmtc-apply" href="https://app.heavymetalcertified.com/hmt/get-started">
+            Get started
           </a>
         </div>
       </div>
