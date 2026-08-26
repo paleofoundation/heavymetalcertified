@@ -341,9 +341,13 @@ export function descriptorFromCompiledCell(cell, analyte) {
     d.notMaterialMethod = cell.reference_method || null
   } else if (cell.type === "subsumed") {
     // A species governed by and bounded by its parent total (iAs <= tAs, MeHg <= tHg): no
-    // separate ceiling is published; enforced by reflex speciation.
+    // separate ceiling is published. Generate baseline-correct prose here rather than
+    // inheriting the compiled label, so the manual reads correctly even for records not yet
+    // recompiled: the total is MEASURED every lot (baseline), and the species is speciated only
+    // on an ongoing total exceedance ("reflex" is the ongoing regime, never the baseline).
     d.isNotMaterial = true
-    d.notMaterialProse = cell.label || cell.rationale || ""
+    const total = cell.subsumed_by || "its parent total"
+    d.notMaterialProse = `${analyte} is a component of ${total} and bounded by it (${analyte} <= ${total}), so the ${total} ceiling is the ${analyte} ceiling; no separate ${analyte} number is published. ${total} is measured on every lot, and ${analyte} is speciated only when ${total} exceeds its limit.`
     d.notMaterialMethod = cell.reference_method || null
   } else if (cell.type === "special") {
     if (v != null) d.limitPpb = v
