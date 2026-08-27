@@ -18,7 +18,6 @@ updated: 2026-08-02
         <a href="https://app.heavymetalcertified.com/hmt/get-started" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#7f1f1f;background:#fff;border:1px solid #fff;border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn hmtc-hero-btn--solid">Get Started</a>
         <a href="/briefings/the-big-8" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.38);border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn">The Big 8</a>
         <a href="/standards" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.38);border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn">Standards</a>
-        <a href="/program/structure" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.38);border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn">How limits are derived</a>
       </div>
     </div>
     <div style="border:1px solid rgba(255,255,255,.22)">
