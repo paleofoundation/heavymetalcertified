@@ -3,10 +3,10 @@
   "ruling": "Certification-Readiness Ruling (2026-08-25): every analyte carries a limit-of-record; a category is ready only when COMPLETE + REGISTERED (production DOI) + CORRECTED.",
   "totals": {
     "records": 107,
-    "complete": 55,
+    "complete": 56,
     "registered": 0,
     "ready": 0,
-    "empty_cells": 213
+    "empty_cells": 203
   },
   "categories": [
     {
@@ -1175,22 +1175,11 @@
         },
         {
           "slug": "rice-beverages-rice-milk",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "Pb",
-            "tAs",
-            "tHg",
-            "MeHg",
-            "Cd",
-            "Cr",
-            "Cr-VI",
-            "Ni",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
@@ -1221,11 +1210,11 @@
           "doi": null
         }
       ],
-      "complete": false,
+      "complete": true,
       "registered": false,
       "ready": false,
-      "incomplete_records": 1,
-      "empty_cell_total": 10
+      "incomplete_records": 0,
+      "empty_cell_total": 0
     },
     {
       "category": "cat17",
