@@ -32,9 +32,9 @@ type CitationPanelRef = {
   kind: string
 }
 
-// The reference rows both generators emit share this exact grid signature. Keying
-// off it (rather than id="ref-N") indexes briefings — whose rows carry no id —
-// and articles alike.
+// Legacy fallback: the reference rows the generators used to emit share this exact
+// grid signature. Rows now also carry an explicit data-ref-* contract (below), which
+// is preferred; this selector still indexes any un-migrated row, id-independent.
 const ROW_SELECTOR = 'div[style*="grid-template-columns:42px minmax(0,1fr) 128px"]'
 const NUM_RE = /^\[(\d{1,3})\]$/
 
@@ -42,47 +42,85 @@ function citationPanelTextOf(el: Element | null | undefined): string {
   return (el?.textContent || "").replace(/\s+/g, " ").trim()
 }
 
+// The canonical reference-row contract (COMPONENTS.md §2). Every reference row —
+// whatever its visual grid — carries data-ref-n, and its parts are marked so the
+// drawer never has to guess: [data-ref-title] (the work), [data-ref-overview] (the
+// plain-language blurb of what the reference is about / establishes — the substance
+// the reader wants), [data-ref-cite] (the bibliographic line), plus data-ref-type
+// and data-ref-href attributes. This is format-agnostic: a 2-column row, a 3-column
+// row, or a converted list item all resolve identically. `detail` is the overview
+// (falls back to the bib line when a row carries no blurb); `citation` is the bib.
+function refFromDataRow(row: HTMLElement): { num: string; ref: CitationPanelRef } | null {
+  const num = (row.getAttribute("data-ref-n") || "").trim()
+  if (!num) return null
+  const titleEl = row.querySelector("[data-ref-title]") as HTMLElement | null
+  const titleLink = titleEl?.querySelector("a") as HTMLAnchorElement | null
+  const title = citationPanelTextOf(titleEl)
+  const overview = citationPanelTextOf(row.querySelector("[data-ref-overview]"))
+  const citation = citationPanelTextOf(row.querySelector("[data-ref-cite]"))
+  let href = (row.getAttribute("data-ref-href") || "").trim() || titleLink?.getAttribute("href") || ""
+  if (!/^https?:/.test(href)) {
+    const outLink = row.querySelector('a[href^="http"]') as HTMLAnchorElement | null
+    href = outLink?.getAttribute("href") || href
+  }
+  const kind = (row.getAttribute("data-ref-type") || "").trim() || citationPanelTextOf(row.querySelector("[data-ref-kind]"))
+  // Overview is the finding shown as "What it establishes"; the bib line is the
+  // secondary byline. When a row has no overview, the bib line stands in as detail
+  // so the drawer is never empty.
+  return {
+    num,
+    ref: { num, title, href, detail: overview || citation, citation: overview ? citation : "", kind },
+  }
+}
+
+// Legacy heuristic path — a grid row with a "[N]" cell and up to two <p>s, split by
+// monospace (bib) vs prose (finding). Only used for rows lacking the data-ref-*
+// contract.
+function refFromLegacyRow(row: Element): { num: string; ref: CitationPanelRef } | null {
+  const numSpan = row.children[0]
+  const m = citationPanelTextOf(numSpan).match(NUM_RE)
+  if (!m) return null
+  const num = m[1]
+  const mid = row.children[1] as Element | undefined
+  const kindEl = row.children[2] as Element | undefined
+
+  let title = ""
+  let href = ""
+  let detail = ""
+  let citation = ""
+  if (mid) {
+    const titleLink = mid.querySelector(":scope > a") as HTMLAnchorElement | null
+    const titleSpan = mid.querySelector(":scope > span") as HTMLElement | null
+    title = citationPanelTextOf(titleLink) || citationPanelTextOf(titleSpan)
+    href = titleLink?.getAttribute("href") || ""
+
+    const ps = Array.from(mid.querySelectorAll(":scope > p")) as HTMLElement[]
+    const isMono = (p: HTMLElement) => /monospace|IBM Plex Mono/i.test(p.getAttribute("style") || "")
+    const bibP = ps.find(isMono) || null
+    const findingP = [...ps].reverse().find((p) => p !== bibP) || bibP
+    detail = citationPanelTextOf(findingP)
+    citation = bibP && bibP !== findingP ? citationPanelTextOf(bibP) : ""
+
+    if (!href) {
+      const doiLink = mid.querySelector('p a[href^="http"]') as HTMLAnchorElement | null
+      href = doiLink?.getAttribute("href") || ""
+    }
+  }
+  return { num, ref: { num, title, href, detail, citation, kind: citationPanelTextOf(kindEl) } }
+}
+
 function indexCitationPanelReferences(content: Element): Map<string, CitationPanelRef> {
   const map = new Map<string, CitationPanelRef>()
+  // Primary — the explicit data-ref-* contract.
+  content.querySelectorAll<HTMLElement>("[data-ref-n]").forEach((row) => {
+    const got = refFromDataRow(row)
+    if (got && !map.has(got.num)) map.set(got.num, got.ref)
+  })
+  // Fallback — any legacy grid row not already captured.
   content.querySelectorAll(ROW_SELECTOR).forEach((row) => {
-    const numSpan = row.children[0]
-    const m = citationPanelTextOf(numSpan).match(NUM_RE)
-    if (!m) return
-    const num = m[1]
-    const mid = row.children[1] as Element | undefined
-    const kindEl = row.children[2] as Element | undefined
-
-    let title = ""
-    let href = ""
-    let detail = ""
-    let citation = ""
-    if (mid) {
-      const titleLink = mid.querySelector(":scope > a") as HTMLAnchorElement | null
-      const titleSpan = mid.querySelector(":scope > span") as HTMLElement | null
-      title = citationPanelTextOf(titleLink) || citationPanelTextOf(titleSpan)
-      href = titleLink?.getAttribute("href") || ""
-
-      // A row's middle cell carries up to two <p>s: a monospace bibliographic line
-      // (authors · journal · year · DOI) and a prose line stating what the source
-      // establishes. "What it establishes" must show the FINDING, not the bib line —
-      // so the monospace <p> is the citation and the last non-monospace <p> is the
-      // finding. Unlinked/older rows collapse both into a single prose <p>, which
-      // then serves as the finding with no separate citation byline.
-      const ps = Array.from(mid.querySelectorAll(":scope > p")) as HTMLElement[]
-      const isMono = (p: HTMLElement) => /monospace|IBM Plex Mono/i.test(p.getAttribute("style") || "")
-      const bibP = ps.find(isMono) || null
-      const findingP = [...ps].reverse().find((p) => p !== bibP) || bibP
-      detail = citationPanelTextOf(findingP)
-      citation = bibP && bibP !== findingP ? citationPanelTextOf(bibP) : ""
-
-      if (!href) {
-        // Unlinked title (legal document, standard): fall back to any external link
-        // either <p> carries (e.g. the doi.org domain link).
-        const doiLink = mid.querySelector('p a[href^="http"]') as HTMLAnchorElement | null
-        href = doiLink?.getAttribute("href") || ""
-      }
-    }
-    map.set(num, { num, title, href, detail, citation, kind: citationPanelTextOf(kindEl) })
+    if ((row as HTMLElement).getAttribute("data-ref-n")) return
+    const got = refFromLegacyRow(row)
+    if (got && !map.has(got.num)) map.set(got.num, got.ref)
   })
   return map
 }

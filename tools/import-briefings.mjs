@@ -78,6 +78,23 @@ if (fs.existsSync(META_FILE)) {
   }
 }
 
+// Authored reference overviews, kept separate from the auto-parsed META (mirroring
+// FEAT) so re-parsing the source briefings never clobbers them. Shape:
+// { "<slug>": { "<n>": "plain-language blurb of what reference n is about" } }.
+// COMPONENTS.md §2 requires each reference row to carry this blurb; the citation
+// drawer shows it as "What it establishes" (the substance), with the bibliographic
+// line demoted to a secondary byline. Faithful description only — no fabricated
+// findings (CLAUDE.md Part 2 / verify-don't-fabricate).
+let OVERVIEWS = {}
+const OVERVIEWS_FILE = path.join(repoRoot, "data/briefings/reference-overviews.json")
+if (fs.existsSync(OVERVIEWS_FILE)) {
+  try {
+    OVERVIEWS = JSON.parse(fs.readFileSync(OVERVIEWS_FILE, "utf8"))
+  } catch (e) {
+    console.warn(`  WARNING: could not read ${OVERVIEWS_FILE}: ${e.message}`)
+  }
+}
+
 // Hand-authored featured layer, kept separate from the auto-parsed META so a
 // re-parse never clobbers it. { <slug>: { claim: "..." } } drives the design's
 // "THE CLAIM" callout; an optional data/briefings/featured/<slug>.md replaces
@@ -147,8 +164,15 @@ function renderRefs(refs) {
     .map((r) => {
       const noRecord = NO_RECORD_TYPES.has(r.type)
       const titleEl = r.href && !noRecord
-        ? `<a href="${r.href}" style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
-        : `<span style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
+        ? `<a href="${r.href}" data-ref-title style="font-size:16.5px;line-height:1.4;color:#1c43ad;text-decoration:none">${r.title}</a>`
+        : `<span data-ref-title style="font-size:16.5px;line-height:1.4;color:#2b1f1f">${r.title}</span>`
+      // The plain-language blurb of what the reference is about / establishes
+      // (COMPONENTS.md §2: the reference row is the single source of the citation's
+      // "plain-language blurb of what the study was about"). It is the substance the
+      // drawer shows as "What it establishes"; carried on [data-ref-overview].
+      const overviewHtml = r.overview
+        ? `<p data-ref-overview style="font-size:14px;line-height:1.62;color:#3f3a3a;margin:6px 0 0;max-width:74ch">${emph(r.overview)}</p>`
+        : ""
       // The design meta is "{detail} · {domain}↗": clean citation text, then the
       // linked domain with a superscript arrow. Strip any inline link the parse
       // left in the detail so the domain is the single link.
@@ -159,7 +183,7 @@ function renderRefs(refs) {
         : ""
       const meta =
         metaText.trim() || dom
-          ? `<p style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${metaText}${domLink}</p>`
+          ? `<p data-ref-cite style="font-size:13.5px;line-height:1.6;color:#736b6b;margin:6px 0 0">${metaText}${domLink}</p>`
           : ""
       // Type-appropriate wording: a standards body's document is not a "legal
       // document", so an ISO/ASTM/AOAC entry gets its own note rather than the
@@ -170,7 +194,8 @@ function renderRefs(refs) {
       const noRecNote = noRecord
         ? `<p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#c3b9b9;margin:6px 0 0">No source record &mdash; ${noRecReason}</p>`
         : ""
-      return `    <div style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${meta}${noRecNote}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
+      const hrefAttr = r.href && !noRecord ? ` data-ref-href="${r.href}"` : ""
+      return `    <div data-ref-n="${r.n}" data-ref-type="${r.type || ""}"${hrefAttr} style="display:grid;grid-template-columns:42px minmax(0,1fr) 128px;gap:16px;align-items:start;padding:14px 0;border-bottom:1px dotted #f2ece7"><span id="ref-${r.n}" style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#9f2727;white-space:nowrap">[${r.n}]</span><div style="min-width:0">${titleEl}${overviewHtml}${meta}${noRecNote}</div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9a1a1;text-align:right;white-space:nowrap">${r.type || ""}</span></div>`
     })
     .join("\n")
   return `  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Works cited in this briefing&rsquo;s text, in first-appearance order. This is not the full evidence base for the underlying standard; it is only what the prose above draws on. Every range in the briefing is a model built on one of these published anchors. Where a work carries a DOI or a public URL, its title and domain link to it; primary legal documents and published standards are named but not linked to a corpus record.</p>
@@ -211,6 +236,7 @@ function renderClaim(text, seriesName, date) {
 console.log("import-briefings: rendering canonical briefing design")
 const imported = []
 const missingMeta = []
+const refsMissingOverview = []
 for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const slug = file.replace(/\.md$/, "")
   const map = MAP[slug]
@@ -225,6 +251,18 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
   const subtitlePlain = plain(subtitle) // markers stripped, for the meta description
   const m = META[slug]
   if (!m) missingMeta.push(slug)
+
+  // Attach the authored plain-language overview to each reference by number, so
+  // renderRefs can emit the [data-ref-overview] blurb the citation drawer reads.
+  const ovMap = OVERVIEWS[slug] || {}
+  if (m?.references) {
+    for (const r of m.references) {
+      const ov = ovMap[String(r.n)]
+      if (ov && !r.overview) r.overview = ov
+    }
+    const missingOv = m.references.filter((r) => !r.overview).map((r) => r.n)
+    if (missingOv.length) refsMissingOverview.push(`${slug}: [${missingOv.join(", ")}]`)
+  }
 
   const year = (fm.date && fm.date.match(/\d{4}/)) ? fm.date.match(/\d{4}/)[0] : "2026"
   const seriesLabel = m?.series || "Briefing"
@@ -347,6 +385,11 @@ console.log(
 )
 if (missingMeta.length) {
   console.warn(`  WARNING: no parsed metadata for: ${missingMeta.join(", ")} — abstract/references fell back to minimal.`)
+}
+if (refsMissingOverview.length) {
+  console.warn(
+    `  WARNING: references without an authored overview (drawer falls back to the bibliographic line):\n    ${refsMissingOverview.join("\n    ")}`,
+  )
 }
 if (imported.length !== Object.keys(MAP).length) {
   console.warn(`  WARNING: expected ${Object.keys(MAP).length}, imported ${imported.length}`)
