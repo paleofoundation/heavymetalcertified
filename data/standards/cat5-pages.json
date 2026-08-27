@@ -75,9 +75,13 @@
     {
       "slug": "coffee",
       "name": "Coffee",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for coffee in Beverages, evaluated on dry commodity as sold (green beans, roasted whole beans, ground coffee, coffee pods and capsules assessed on their coffee fill, instant coffee solids), reported on the as-sold article; this is the lot the applicant packages and the auditor samples. Seven of eleven panel analytes carry a numeric ceiling drawn from the strictest applicable government maximum level, three toxic species (inorganic arsenic, methylmercury, hexavalent chromium) are bounded by their parent total under reflex speciation, and aluminium alone remains a monitored baseline pending a documented method limit of quantification.",
-      "version": "1.1 (2026-08-27)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for coffee in Beverages, evaluated on dry commodity as sold (green beans, roasted whole beans, ground coffee, coffee pods and capsules assessed on their coffee fill, instant coffee solids), reported on the as-sold article; this is the lot the applicant packages and the auditor samples. Every panel analyte carries a limit: eight numeric ceilings drawn from the strictest applicable government maximum level or a disclosed read-across, and three toxic species (inorganic arsenic, methylmercury, hexavalent chromium) bounded by their parent total under reflex speciation. The ready-to-drink coffee beverage is certified separately in its own as-consumed basis.",
+      "version": "1.2 (2026-08-27)",
       "connections": [
+        {
+          "label": "Ready-to-drink coffee standard",
+          "href": "/standards/coffee-ready-to-drink"
+        },
         {
           "label": "How limits are derived",
           "href": "/program/structure"
@@ -96,6 +100,37 @@
           "label": "all",
           "variant": "default",
           "record": "coffee"
+        }
+      ]
+    },
+    {
+      "slug": "coffee-ready-to-drink",
+      "name": "Coffee, ready-to-drink",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for ready-to-drink coffee in Beverages (canned and bottled coffee, cold-brew and nitro coffee, ready-to-drink coffee drinks), evaluated on the liquid as consumed at single strength. Every panel analyte carries a limit: eight numeric ceilings (Hong Kong's direct coffee-beverage lead limit, the drinking-water quality standards read across for the water-borne metals, and the canned-beverage tin limit) plus three species bounded by their parent total. The dry coffee commodity is certified separately in its own as-sold basis; the two bases are never mixed.",
+      "version": "1.0 (2026-08-27)",
+      "connections": [
+        {
+          "label": "Dry coffee standard",
+          "href": "/standards/coffee"
+        },
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "coffee-ready-to-drink"
         }
       ]
     },
