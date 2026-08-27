@@ -151,13 +151,15 @@
         }
       },
       "MeHg": {
-        "type": "control",
+        "type": "subsumed",
         "value": null,
-        "control": "No government sets a methylmercury maximum level for edible fungi in any jurisdiction; methylmercury MLs exist only for fish and seafood, so no number can be looked up. Fungi are documented to bioconcentrate substrate mercury, and cultivated mushrooms grown on a contaminated substrate are not a zero-methylation matrix, so methylmercury is treated as a control determination (not dismissed as not-material) for consistency with the wild-mushroom cell and to remove a plaintiff-exploitable asymmetry. The methylmercury fraction is controlled by and bounded by the total-mercury ceiling for mushrooms (Israel FCS-2016 mushrooms tHg 30 ug/kg): any lot approaching the tHg ceiling reflex-speciates for methylmercury.",
-        "reference_method": "MeHg by GC-ICP-MS / EN 16801 on any cultivated-mushroom lot whose total mercury approaches the tHg 30 ug/kg ceiling; cultivated-mushroom methylmercury is characteristically < LOQ, but a substrate-driven elevated total-mercury result must be characterised.",
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
         "bounded_by": "tHg",
-        "regulatory_basis": "No regulatory MeHg ML for edible fungi in any jurisdiction; methylmercury MLs are scoped to fish and seafood only. Total mercury is bounded by Israel FCS-2016 mushrooms tHg 30 ug/kg.",
-        "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Cd": {
         "type": "gov",
@@ -221,14 +223,15 @@
         ]
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
+        "bounded_by": "Cr",
         "basis_class": "speciation-bounded",
-        "control": "No government sets a total-chromium or hexavalent-chromium maximum level for edible fungi in any jurisdiction. Chromium in the fungal matrix is dominated by nutritionally-essential Cr(III), and Cr(VI) reduces to Cr(III) in the organic-rich matrix. Firm control: reflex speciation - any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails; Cr(VI) is never a panel number.",
-        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail.",
-        "bounded_by": "Cr-total",
-        "regulatory_basis": "No regulatory total-Cr or Cr(VI) ML for edible fungi in any jurisdiction; the only register total-Cr MLs are for dairy powder, drinking water, and fertiliser.",
-        "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "read_across",
@@ -241,32 +244,43 @@
         "per_country": {}
       },
       "Sn": {
-        "type": "not_material",
-        "value": null,
-        "basis_class": "no-migration-pathway",
-        "control": "Every government tin maximum level in the register is scoped to canned / tin-coated product; tin migrates from tinplate, and that packaging-migration pathway is the contamination these MLs regulate (India even sets a canned-mushroom Sn ML of 250000 ug/kg). Fresh cultivated and wild mushrooms are not sold in tinplate, so that pathway is absent; any tin present is dietary background rather than tinplate migration. Canned mushrooms route to the canned-foods category and carry the tin ML there.",
-        "reference_method": "Mandatory total-element screen by ICP-MS; tin is screened but not a binding numeric ceiling for fresh, non-canned product.",
-        "bounded_by": null,
-        "regulatory_basis": "Tin MLs (incl. India canned mushrooms 250000 ug/kg) apply to canned product only; no fresh-fungi Sn ML exists in any jurisdiction.",
-        "jurisdictions_checked": "EU 2023/915; EU 2024/1987; Switzerland VHK 2026; MERCOSUR GMC 12/2011; Paraguay Decreto 1335/2019; Israel FCS-2016; Codex; FDA; China GB 2762"
+        "type": "read_across",
+        "value": 250000,
+        "value_exact": 250000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_any_food_sn_250000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "any food",
+        "label": "Sn 250000 ug/kg: disclosed read-across from SG sg_foodregs_2026_any_food_sn_250000 (any food). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_any_food_sn_250000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "control",
-        "value": null,
-        "control": "No credible sovereign government sets an aluminium contaminant maximum for edible fungi. Under the government-limit-only method HMTc publishes no standalone numeric Al limit for this matrix; naturally present aluminium remains a surveillance issue governed by the additive rules of the markets of sale.",
-        "reference_method": "Screen total Al by ICP-MS and document any aluminium-containing processing aid; investigate elevated results and comply with all additive rules in markets of sale.",
-        "bounded_by": null,
-        "regulatory_basis": null,
-        "jurisdictions_checked": null
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
-        "type": "control",
-        "value": null,
-        "control": "No credible sovereign government sets a total-chromium contaminant maximum for edible fungi in any jurisdiction (the only register total-Cr MLs are for dairy powder, drinking water, and fertiliser). Under the government-limit-only method HMTc publishes no standalone numeric total-Cr limit for this matrix; total chromium is monitored and hexavalent chromium is controlled by reflex speciation (see Cr-VI).",
-        "reference_method": "Total-Cr screen by ICP-MS on every lot; investigate any elevated total-Cr result and reflex-speciate per the Cr-VI control.",
-        "bounded_by": null,
-        "regulatory_basis": null,
-        "jurisdictions_checked": null
+        "type": "read_across",
+        "value": 1000,
+        "value_exact": 1000,
+        "provenance": "read-across",
+        "source_id": "china_gb2762_crtotal_grains_1000",
+        "source_jurisdiction": "CN",
+        "basis": "food as placed on market",
+        "source_scope": "grains and grain products including cereals and milled grain products",
+        "label": "Cr 1000 ug/kg: disclosed read-across from CN china_gb2762_crtotal_grains_1000 (grains and grain products including cereals and ). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (china_gb2762_crtotal_grains_1000). Nearest applicable sovereign Cr ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },
