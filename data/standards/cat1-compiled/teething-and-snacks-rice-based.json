@@ -273,10 +273,17 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "Total-Cr reflex speciation: any lot with total Cr >100 ug/kg triggers hexavalent-chromium (Cr-VI) speciation; any quantifiable Cr-VI fails. Cr-VI is never a panel number. Non-dairy grain matrix — the only register Cr value (China milk powder 2000) is a dairy analogy and is not read across.",
-        "reference_method": "Cr-VI by IC-ICP-MS (EPA 6800 / EN 15192 isotope-dilution speciation) on any total-Cr exceedance."
+        "type": "read_across",
+        "value": 1000,
+        "value_exact": 1000,
+        "provenance": "read-across",
+        "source_id": "china_gb2762_crtotal_grains_1000",
+        "source_jurisdiction": "CN",
+        "basis": "food as placed on market",
+        "source_scope": "grains and grain products including cereals and milled grain products",
+        "label": "Cr 1000 ug/kg: disclosed read-across from CN china_gb2762_crtotal_grains_1000 (grains and grain products including cereals and ). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (china_gb2762_crtotal_grains_1000). Nearest applicable sovereign Cr ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "gov",
