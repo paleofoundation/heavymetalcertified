@@ -91,10 +91,15 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "No government sets a methylmercury ML for any grain, cereal, or rice product in any jurisdiction; methylmercury maximum levels exist only for fish and seafood. Mercury in this matrix is controlled by the total-mercury ML (30 ug/kg, Israel FCS-2016), which bounds the methylmercury fraction. Rice can accumulate trace methylmercury via paddy-soil methylation in point-source-contaminated growing regions, but that fraction is bounded by the total-mercury control and no methylmercury ML exists to look up.",
-        "reference_method": "MeHg by GC-ICP-MS / EN 16801 only on a lot whose total mercury approaches the tHg ML; grain MeHg is characteristically < LOQ."
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
+        "bounded_by": "tHg",
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Cd": {
         "type": "gov",
@@ -172,10 +177,15 @@
         }
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "Cr(VI) (hexavalent chromium): reflex-speciation control on the total-chromium result (see the separate total-Cr cell, governed by China GB 2762-2022 grains/milled-grain-products total Cr 1.0 mg/kg). No jurisdiction sets a Cr(VI)-specific food maximum level; chromium in the cereal/rice matrix is dominated by nutritionally-essential Cr(III) and any Cr(VI) reduces to Cr(III) in the matrix. Reflex control: any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails.",
-        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail."
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
+        "bounded_by": "Cr",
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "gov",
@@ -193,16 +203,30 @@
         }
       },
       "Sn": {
-        "type": "not_material",
-        "value": null,
-        "control": "Canned-only analyte; boxed rice cereal not sold in tinplate.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 250000,
+        "value_exact": 250000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_any_food_sn_250000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "any food",
+        "label": "Sn 250000 ug/kg: disclosed read-across from SG sg_foodregs_2026_any_food_sn_250000 (any food). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_any_food_sn_250000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "No credible regulator sets an aluminium CONTAMINANT maximum level for grains, cereals, or rice products, and China GB 2762 (the contaminant standard) does not regulate aluminium. Aluminium present in leavened, baked, or alum-firmed grain products is permitted-additive residue (China GB 2760-2024 food-additive use limits, e.g. baked foods 100 mg/kg / starch noodles and vermicelli 200 mg/kg, calculated as Al), governed by additive ADI and the JECFA/EFSA provisional tolerable weekly intake, not by a per-food contaminant ML. An additive-use residue cap is not a contaminant government limit and is not published as one; background aluminium in plain grain is soil-derived. Managed by intake vs the TWI, not a lookup.",
-        "reference_method": "Managed by intake vs JECFA/EFSA TWI; periodic total-Al screen (ICP-MS); no per-food contaminant ML to look up."
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },
