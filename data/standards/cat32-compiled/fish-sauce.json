@@ -123,59 +123,67 @@
         }
       },
       "Ni": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign nickel ML exists for fish sauce and fish are not nickel accumulators (the EU nickel regulation sets no fish ML). No concentration pathway comparable to a soybean or a hydrogenated fat operates. Rebuttable and audited each build.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 20,
+        "value_exact": 20,
+        "provenance": "read-across",
+        "source_id": "eu20202184_ni_drinking_water_20",
+        "source_jurisdiction": "EU",
+        "basis": "water intended for human consumption",
+        "source_scope": "water intended for human consumption",
+        "label": "Ni 20 ug/kg: disclosed read-across from EU eu20202184_ni_drinking_water_20 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu20202184_ni_drinking_water_20). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "A sovereign total-chromium context does exist for the source commodity: Hong Kong Cap 132V sets total chromium at 1000 ug/kg for fish (hk_cap132v_crtotal_fish_1000), and fish sauce is a fermented marine (fish-derived) product, so the fish total-chromium ML is the nearest sovereign analog. Because a real source pathway exists, the cell is held under a reflex screen disclosed against the Hong Kong fish total-chromium ML (1000) rather than declared not-material; any total-chromium exceedance triggers Cr(VI) speciation.",
-        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation (EPA 3060A + EPA 6800 / EN 15192) on any total-Cr exceedance.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "nhmrc2025_crvi_drinking_water_50",
+        "source_jurisdiction": "AU",
+        "basis": "drinking water",
+        "source_scope": "drinking water",
+        "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+        "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr-VI": {
-        "type": "control",
-        "provenance_tag": "control",
+        "type": "subsumed",
         "value": null,
-        "rationale": "Hexavalent chromium is never a panel number for a food; it is the reflex-speciation species. Any total-chromium exceedance is speciated, and any quantifiable Cr(VI) fails.",
-        "reference_method": "IC-ICP-MS Cr(VI) speciation on any total-Cr exceedance.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
+        "bounded_by": "Cr",
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Sn": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "Tin migrates only from tinplate cans; fish sauce is sold in glass or plastic, not tinplate. No non-canned tin pathway exists.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "eu2023_sn_canned_beverages_100000",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "canned beverages, including canned fruit and vegetable juices, except canned dried and canned powdered products",
+        "label": "Sn 100000 ug/kg: disclosed read-across from EU eu2023_sn_canned_beverages_100000 (canned beverages, including canned fruit and veg). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2023_sn_canned_beverages_100000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign aluminium ML exists for fish sauce and no aluminium pathway operates. Rebuttable and audited each build.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 200,
+        "value_exact": 200,
+        "provenance": "read-across",
+        "source_id": "eu20202184_al_drinking_water_200",
+        "source_jurisdiction": "EU",
+        "basis": "water intended for human consumption",
+        "source_scope": "water intended for human consumption",
+        "label": "Al 200 ug/kg: disclosed read-across from EU eu20202184_al_drinking_water_200 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu20202184_al_drinking_water_200). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

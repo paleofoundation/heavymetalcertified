@@ -3,10 +3,10 @@
   "ruling": "Certification-Readiness Ruling (2026-08-25): every analyte carries a limit-of-record; a category is ready only when COMPLETE + REGISTERED (production DOI) + CORRECTED.",
   "totals": {
     "records": 107,
-    "complete": 56,
+    "complete": 60,
     "registered": 0,
     "ready": 0,
-    "empty_cells": 203
+    "empty_cells": 172
   },
   "categories": [
     {
@@ -891,17 +891,11 @@
       "records": [
         {
           "slug": "fish-sauce",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "Ni",
-            "Cr",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
@@ -911,72 +905,43 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "iAs",
-            "MeHg",
-            "Ni",
-            "Cr",
-            "Cr-VI",
-            "Sn",
-            "Al"
+            "Ni"
           ],
           "doi": null
         },
         {
           "slug": "soy-sauce-fermented",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "iAs",
-            "MeHg",
-            "Ni",
-            "Cr",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "tomato-condiments",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "iAs",
-            "MeHg",
-            "Cr",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         },
         {
           "slug": "vinegar",
-          "complete": false,
+          "complete": true,
           "registered": false,
-          "corrected": false,
+          "corrected": true,
           "ready": false,
-          "empty_cells": [
-            "iAs",
-            "MeHg",
-            "Ni",
-            "Cr",
-            "Cr-VI",
-            "Sn",
-            "Al"
-          ],
+          "empty_cells": [],
           "doi": null
         }
       ],
       "complete": false,
       "registered": false,
       "ready": false,
-      "incomplete_records": 5,
-      "empty_cell_total": 32
+      "incomplete_records": 1,
+      "empty_cell_total": 1
     },
     {
       "category": "cat1",
