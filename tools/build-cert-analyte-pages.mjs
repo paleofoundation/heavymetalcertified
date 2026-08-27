@@ -28,6 +28,96 @@ fs.mkdirSync(OUT, { recursive: true })
 const ACCENT = "#9f2727"
 const LINK = "#1c43ad"
 
+// ── Government maximum-levels register (worldwide) ────────────────────────────
+// The same firewall-clean snapshot the /regulations pages render (HMI exports it,
+// it is committed here, this build reads the local copy; one-way HMI -> cert). Each
+// instrument carries { slug -> /regulations/<slug>, jurisdiction, authority, name,
+// primary_url, limits[] } and each limit row { analyte, value_ug_kg, basis, scope,
+// status, url, notes }. It is the source for the per-analyte "Government maximum
+// levels" comparison section: what the LAW says, never an HMTc threshold (Part 2).
+const REG_SNAPSHOT = path.join(REPO, "data/regulations/cert-regulation-snapshot.json")
+const REG = fs.existsSync(REG_SNAPSHOT)
+  ? JSON.parse(fs.readFileSync(REG_SNAPSHOT, "utf8"))
+  : { instruments: [] }
+
+// analyte code -> [{ inst, l }] across every instrument in the register. Codes are
+// the register's own vocabulary (Pb, tAs, iAs, Cd, tHg, MeHg, iHg, Ni, Al, Sn, Cr,
+// Cr-total, Cr-VI, ...); an analyte PAGE maps to one or more of them (arsenic ->
+// iAs+tAs, mercury -> tHg+MeHg+iHg, chromium -> Cr-total+Cr+Cr-VI).
+const LIMITS_BY_CODE = (() => {
+  const m = new Map()
+  for (const inst of REG.instruments || []) {
+    for (const l of inst.limits || []) {
+      if (typeof l.value_ug_kg !== "number") continue
+      if (!m.has(l.analyte)) m.set(l.analyte, [])
+      m.get(l.analyte).push({ inst, l })
+    }
+  }
+  return m
+})()
+
+// Which register code(s) each analyte page draws, in the order they render, with
+// the speciation-correct display label. Arsenic and mercury split by species so a
+// total limit is never compared against a speciated one; chromium separates total
+// chromium from any hexavalent-chromium (Cr-VI) food limit.
+const PAGE_CODES = {
+  lead: [{ code: "Pb", label: "Lead (Pb)" }],
+  cadmium: [{ code: "Cd", label: "Cadmium (Cd)" }],
+  arsenic: [
+    { code: "iAs", label: "Inorganic arsenic (iAs)" },
+    { code: "tAs", label: "Total arsenic (tAs)" },
+  ],
+  mercury: [
+    { code: "tHg", label: "Total mercury (tHg)" },
+    { code: "MeHg", label: "Methylmercury (MeHg)" },
+    { code: "iHg", label: "Inorganic mercury (iHg)" },
+  ],
+  nickel: [{ code: "Ni", label: "Nickel (Ni)" }],
+  tin: [{ code: "Sn", label: "Tin (Sn)" }],
+  aluminum: [{ code: "Al", label: "Aluminum (Al)" }],
+  chromium: [
+    { code: "Cr-total", label: "Total chromium (Cr)" },
+    { code: "Cr", label: "Chromium (Cr, unspeciated)" },
+    { code: "Cr-VI", label: "Hexavalent chromium (Cr-VI)" },
+  ],
+}
+
+// Human-readable jurisdiction names for the register's ISO-ish jurisdiction codes,
+// so the comparison scans as places, not codes. Any unmapped code falls back to
+// the code itself (honest — never invents a country).
+const JURISDICTION_NAMES = {
+  "AU-NZ": "Australia & New Zealand", BA: "Bosnia & Herzegovina", BR: "Brazil",
+  CA: "Canada", CH: "Switzerland", CL: "Chile", CN: "China", CO: "Colombia",
+  CODEX: "Codex Alimentarius", CR: "Costa Rica", CU: "Cuba", EC: "Ecuador",
+  EU: "European Union", FJ: "Fiji", GSO: "Gulf (GSO)", GY: "Guyana",
+  HK: "Hong Kong", IL: "Israel", IN: "India", JP: "Japan", MA: "Morocco",
+  MERCOSUR: "Mercosur", MX: "Mexico", PA: "Panama", PH: "Philippines",
+  PY: "Paraguay", SG: "Singapore", TH: "Thailand", TR: "Türkiye",
+  TT: "Trinidad & Tobago", UK: "United Kingdom", US: "United States",
+  UY: "Uruguay", VN: "Vietnam",
+}
+const jurName = (code) => JURISDICTION_NAMES[code] || String(code || "").trim()
+
+// A short citation handle for an instrument, for the Instrument column: cut the
+// descriptive tail of the (often verbose) official name at the first structural
+// separator, cap the length, and fall back to the jurisdiction code when the name
+// is empty or a bare number. Ported from build-cert-regulation-pages.mjs so the
+// two surfaces name the same instrument the same way.
+function shortHandle(ref, jur) {
+  let r = String(ref || "").trim()
+  r = r.split(/\s+—\s+|\s+–\s+|\s+-\s+/)[0].trim()
+  const head = r.split(/\s+(?:of|on)\s+/i)[0].trim()
+  if (head.length >= 14) r = head
+  r = r.replace(/[;,]\s*$/, "").trim()
+  if (r.length > 46) r = r.slice(0, 45).trim() + "…"
+  if (r.length < 4 || /^[\d.]+$/.test(r)) return jur
+  return r
+}
+
+// µg/kg value formatted with thousands separators so 250000 reads as 250,000 and
+// the column is scannable; preserves any decimal the register carries.
+const fmtVal = (v) => Number(v).toLocaleString("en-US", { maximumFractionDigits: 3 })
+
 // The HMTc analytes California has listed under Proposition 65 (see
 // content/regulations/ca-prop65.md). Cr-VI maps to the chromium page, iAs to arsenic.
 const PROP65_LISTED = new Set(["lead", "cadmium", "arsenic", "chromium", "nickel"])
@@ -139,6 +229,135 @@ function occurrenceSection(a) {
   return parts.join("")
 }
 
+// One instrument's contribution to a species: min/max limit, scope list, link. The
+// register carries many limit rows per instrument (one per product class); the
+// analyte page compares at the instrument level, then links out to /regulations/<slug>
+// for the full per-matrix breakdown, so a 700-row national register does not have to
+// be re-dumped here.
+function instrumentSummary(rows) {
+  const vals = rows.map((r) => r.l.value_ug_kg)
+  const scopes = [...new Set(rows.map((r) => String(r.l.scope || "").trim()).filter(Boolean))]
+  return { min: Math.min(...vals), max: Math.max(...vals), scopes, n: rows.length }
+}
+
+// The comparison table for one species (register code): one row per instrument,
+// sorted by strictest value ascending, so the tightest regimes rise to the top and
+// the µg/kg column reads as a like-for-like ladder. Columns: Jurisdiction,
+// Instrument (-> /regulations/<slug>), Product scope, Limit µg/kg.
+function govLimitsTable(pairs) {
+  // Group the analyte's rows by instrument slug.
+  const byInst = new Map()
+  for (const p of pairs) {
+    if (!byInst.has(p.inst.slug)) byInst.set(p.inst.slug, { inst: p.inst, rows: [] })
+    byInst.get(p.inst.slug).rows.push(p)
+  }
+  const instRows = [...byInst.values()].map(({ inst, rows }) => ({ inst, ...instrumentSummary(rows) }))
+  instRows.sort((x, y) => x.min - y.min || jurName(x.inst.jurisdiction).localeCompare(jurName(y.inst.jurisdiction)))
+
+  const thBase = `text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase`
+  const head =
+    `<tr style="background:${ACCENT};color:#fff">` +
+    `<th style="${thBase}">Jurisdiction</th>` +
+    `<th style="${thBase}">Instrument</th>` +
+    `<th style="${thBase}">Product scope</th>` +
+    `<th style="${thBase};text-align:right;white-space:nowrap">Limit &micro;g/kg</th></tr>`
+  const body = instRows
+    .map((r, i) => {
+      const zebra = i % 2 ? ";background:#fbf7f5" : ""
+      const jn = jurName(r.inst.jurisdiction)
+      const jcell =
+        jn === r.inst.jurisdiction
+          ? esc(jn)
+          : `${esc(jn)} <span style="color:#b7aeae">(${esc(r.inst.jurisdiction)})</span>`
+      // Product scope: list the actual product classes when an instrument sets only
+      // a few for this analyte (the sparse metals and most non-EU registers), else a
+      // count — the full list is on the linked instrument page either way.
+      const scopeCell =
+        r.scopes.length === 0
+          ? "&mdash;"
+          : r.scopes.length <= 3
+            ? esc(r.scopes.join("; "))
+            : `${r.scopes.length} product classes`
+      const limitCell = r.min === r.max ? fmtVal(r.min) : `${fmtVal(r.min)} &ndash; ${fmtVal(r.max)}`
+      const handle = shortHandle(r.inst.name, r.inst.jurisdiction)
+      const instCell = `<a href="/regulations/${esc(r.inst.slug)}" style="color:${LINK}">${esc(handle)}</a>`
+      return (
+        `<tr style="border-bottom:1px solid #f2ece7${zebra}">` +
+        `<td style="padding:10px 12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#2b1f1f;line-height:1.5;vertical-align:top;white-space:nowrap">${jcell}</td>` +
+        `<td style="padding:10px 12px;font-size:12.5px;line-height:1.55;vertical-align:top">${instCell}</td>` +
+        `<td style="padding:10px 12px;font-size:13px;color:#2b1f1f;line-height:1.55;vertical-align:top">${scopeCell}</td>` +
+        `<td style="padding:10px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f;white-space:nowrap;line-height:1.6;vertical-align:top;font-variant-numeric:tabular-nums">${limitCell}</td>` +
+        `</tr>`
+      )
+    })
+    .join("")
+  return {
+    html: `<div style="overflow-x:auto"><table style="width:100%;font-size:13px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead>${head}</thead><tbody>${body}</tbody></table></div>`,
+    nInstruments: instRows.length,
+    nJurisdictions: new Set(instRows.map((r) => r.inst.jurisdiction)).size,
+    min: Math.min(...instRows.map((r) => r.min)),
+    max: Math.max(...instRows.map((r) => r.max)),
+  }
+}
+
+// Speciation note per page: why a total and a speciated limit are not comparable,
+// rendered under the sub-heading. Empty for single-species metals.
+const SPECIATION_NOTE = {
+  iAs: "Inorganic arsenic is the toxicologically governing species and the basis most food limits are now set on. It is bounded by total arsenic (iAs ≤ tAs); an inorganic-arsenic limit is not comparable to a total-arsenic limit for the same product.",
+  tAs: "Total arsenic includes the less-toxic organic forms and is the older basis; where a jurisdiction sets both, the inorganic-arsenic limit governs.",
+  tHg: "Total mercury is the general limit basis for most foods.",
+  MeHg: "Methylmercury is the toxicologically governing species in fish and seafood and is bounded by total mercury (MeHg ≤ tHg); a methylmercury limit is not comparable to a total-mercury limit for the same product.",
+  iHg: "Inorganic mercury limits are set for a narrow set of matrices and are distinct from both total mercury and methylmercury.",
+  "Cr-total": "These are limits on total chromium. Food-specific hexavalent-chromium (Cr-VI) maximum levels are rare; where a jurisdiction regulates only total chromium, Cr-VI is controlled downstream, not by a separate food limit.",
+  Cr: "Reported by the instrument as chromium without a stated oxidation state; read as total chromium.",
+  "Cr-VI": "Hexavalent chromium, the toxicologically governing species, is bounded by total chromium (Cr-VI ≤ total Cr).",
+}
+
+// "Government maximum levels" — the comparison of what governments limit this
+// analyte to, for what, at what value, in one normalized unit (µg/kg = ppb).
+// Reports the LAW (Part 2 firewall: never an HMTc threshold). Renders only for the
+// register codes the page maps to; a code with no rows is skipped, so a sparse
+// analyte (aluminium, chromium) shows what exists without a manufactured gap.
+function govLimitsSection(a) {
+  const codes = PAGE_CODES[a.slug] || []
+  const present = codes.filter((c) => (LIMITS_BY_CODE.get(c.code) || []).length > 0)
+  if (!present.length) return ""
+  const multi = present.length > 1
+
+  const parts = [
+    `<section id="gov-limits" style="margin-bottom:52px">`,
+    H2("Government maximum levels"),
+    `<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 20px">The maximum levels credible governments set for ${esc(a.name.toLowerCase())} in food, drawn from the worldwide contaminant register. Every value is shown in &micro;g/kg (equivalent to ppb), normalized to one unit so the limits can be compared directly, each in the basis its instrument states and linked to the source instrument. This is the government record; the Heavy Metal Tested &amp; Certified program applies these limits, it does not set them, and the certification thresholds are not shown on this page.</p>`,
+  ]
+
+  for (const { code, label } of present) {
+    const pairs = LIMITS_BY_CODE.get(code)
+    const t = govLimitsTable(pairs)
+    if (multi) {
+      parts.push(
+        `<h3 style="font-family:Lora,serif;font-weight:400;font-size:21px;line-height:1.2;color:#2b1f1f;margin:28px 0 8px">${esc(label)}</h3>`,
+      )
+      if (SPECIATION_NOTE[code]) {
+        parts.push(
+          `<p style="font-size:13px;line-height:1.65;color:#736b6b;max-width:84ch;margin:0 0 12px">${esc(SPECIATION_NOTE[code])}</p>`,
+        )
+      }
+    }
+    const range = t.min === t.max ? `${fmtVal(t.min)}` : `${fmtVal(t.min)} to ${fmtVal(t.max)}`
+    parts.push(
+      `<p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:0 0 10px">${esc(label)}: ${t.nInstruments} instrument${t.nInstruments === 1 ? "" : "s"} across ${t.nJurisdictions} jurisdiction${t.nJurisdictions === 1 ? "" : "s"}; values range ${range} &micro;g/kg. One row per instrument, sorted by the strictest limit it sets; a range spans the instrument's product classes.</p>`,
+    )
+    parts.push(t.html)
+    if (multi) parts.push(`<div style="height:20px"></div>`)
+  }
+
+  parts.push(
+    `<p style="font-size:12px;line-height:1.6;color:#a9a1a2;max-width:84ch;margin:16px 0 0">Each instrument's full per-product-class breakdown, with every provision, is on its <a href="/regulations" style="color:${LINK}">regulation reference</a> page (linked in the Instrument column). The complete cross-jurisdiction derivation is maintained independently on the <a href="https://heavymetalindex.com/metals/${a.index_link_slug}" style="color:${LINK}">Heavy Metal Index</a>.</p>`,
+  )
+  parts.push(`</section>`)
+  return parts.join("")
+}
+
 function pageBody(a) {
   const idxUrl = `https://heavymetalindex.com/metals/${a.index_link_slug}`
   const header = `<section style="margin-bottom:40px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:38px;line-height:1.1;color:#2b1f1f;margin:0 0 8px">${esc(a.name)}</h1><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:#b7aeae;margin:0 0 18px">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p style="font-size:17px;line-height:1.7;color:#3f3a3a;margin:0;max-width:80ch">${linkify(a.thesis)}</p></section>`
@@ -167,7 +386,8 @@ function pageBody(a) {
   const baseline = `<section id="baseline" style="margin-bottom:20px">${H2("Literature baseline")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0">The complete peer-reviewed and regulatory literature for ${esc(a.name.toLowerCase())} is maintained independently at the <a href="${idxUrl}" style="color:${LINK}">Heavy Metal Index</a>. That reference reports what the literature says; this certification site applies it. The two are kept editorially separate by design.</p></section>`
 
   const occ = occurrenceSection(a)
-  return [header, why, tox, occ, reg, hmtc, baseline].filter(Boolean).join("\n")
+  const gov = govLimitsSection(a)
+  return [header, why, tox, occ, reg, gov, hmtc, baseline].filter(Boolean).join("\n")
 }
 
 function frontmatter(a) {
