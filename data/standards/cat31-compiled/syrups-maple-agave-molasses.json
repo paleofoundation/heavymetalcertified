@@ -147,15 +147,15 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "subsumed",
         "value": null,
-        "rationale": "No methylation pathway and no mercury source in a sugar syrup. Total mercury is governed (50, Vietnam).",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
+        "bounded_by": "tHg",
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "control",
@@ -191,15 +191,17 @@
         }
       },
       "Sn": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "Tin migrates only from tinplate cans; these syrups are sold in glass/plastic, not tinplate. No non-canned tin pathway exists.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 250000,
+        "value_exact": 250000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_any_food_sn_250000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "any food",
+        "label": "Sn 250000 ug/kg: disclosed read-across from SG sg_foodregs_2026_any_food_sn_250000 (any food). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_any_food_sn_250000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
         "type": "not_material",

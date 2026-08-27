@@ -6,7 +6,7 @@
     "complete": 60,
     "registered": 0,
     "ready": 0,
-    "empty_cells": 172
+    "empty_cells": 159
   },
   "categories": [
     {
@@ -819,12 +819,9 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "iAs",
-            "MeHg",
             "Ni",
             "Cr",
             "Cr-VI",
-            "Sn",
             "Al"
           ],
           "doi": null
@@ -836,11 +833,9 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Ni",
             "Cr",
             "Cr-VI",
-            "Sn",
             "Al"
           ],
           "doi": null
@@ -852,12 +847,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "tAs",
-            "MeHg",
-            "Ni",
-            "Cr",
-            "Cr-VI",
-            "Sn",
             "Al"
           ],
           "doi": null
@@ -869,11 +858,9 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Ni",
             "Cr",
             "Cr-VI",
-            "Sn",
             "Al"
           ],
           "doi": null
@@ -883,7 +870,7 @@
       "registered": false,
       "ready": false,
       "incomplete_records": 4,
-      "empty_cell_total": 26
+      "empty_cell_total": 13
     },
     {
       "category": 32,
