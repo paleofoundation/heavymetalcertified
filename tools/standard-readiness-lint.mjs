@@ -55,15 +55,16 @@ function panelOf(meta, rec) {
   return Object.keys(cells)
 }
 
-// A standard carries a PRODUCTION DOI if its content page frontmatter has a doi: field that is a
-// real DOI (10.<prefix>/...) and is NOT the DataCite test prefix (10.5072 / 10.82XXX sandbox). The
-// assigned production prefix is configured via DATACITE_PREFIX; a test DOI never satisfies REGISTERED.
+// A standard carries a PRODUCTION DOI if its content page frontmatter has a `cert_doi:` (the field
+// mint-dois.mjs writes; `doi:` accepted as a fallback) that is a real DOI (10.<prefix>/...) and is
+// NOT the DataCite test/sandbox prefix (10.5072 / 10.82XXX). The assigned production prefix is
+// configured via DATACITE_PREFIX; a test DOI never satisfies REGISTERED.
 const TEST_PREFIXES = ["10.5072", "10.82"] // datacite sandbox families
 function productionDoi(slug) {
   const f = path.join(CONTENT, `${slug}.md`)
   if (!fs.existsSync(f)) return null
   const s = fs.readFileSync(f, "utf8")
-  const m = s.match(/^doi:\s*"?(10\.\d{4,9}\/[^\s"']+)"?/mi)
+  const m = s.match(/^(?:cert_doi|doi):\s*"?(10\.\d{4,9}\/[^\s"']+)"?/mi)
   if (!m) return null
   const doi = m[1]
   if (TEST_PREFIXES.some((p) => doi.startsWith(p))) return null
