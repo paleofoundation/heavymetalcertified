@@ -188,13 +188,31 @@
       "substantiation": "Direct regulatory lookup against the general as-sold food catch-alls. Every product-specific tin limit in the register is a canned or tinplate container-migration cell written in a ready-to-drink or wet basis (the EU, Codex, MERCOSUR and Vietnam canned-beverage and canned-food cells, 100000 to 250000), and each excludes dried and powdered products by its own text; applying any of them to a dry commodity would be a basis conflation. The only sovereign tin numbers that reach dry coffee as sold are the general food catch-alls, which converge on 250000. Tin is a Tier-2 analyte with no raw-material source in coffee; an elevated result is a packaging-integrity signal, and where the applicant also sells a canned ready-to-drink coffee that form is verified separately against the canned-beverage tin cell in the as-consumed basis. Register-sourced, not occurrence-derived."
     },
     "Al": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No sovereign sets an aluminium maximum level for coffee, and no analogous dry-food aluminium contaminant cell exists: the only sovereign aluminium values are the packaged-drinking-water quality standards (a litre-of-water basis, Category 8) and the FSANZ infant-formula limits (Category 1), neither of which is applicable to a dry commodity, and Method v2.0 forbids deriving a ceiling from occurrence data. Aluminium nonetheless carries a real exposure pathway here (acidic tropical soils mobilise plant-available aluminium, and single-serve capsules are predominantly aluminium), so under the Certification-Readiness Ruling this cell is a baseline-monitor screen rather than a not-material determination. It is the one cell on this panel that cannot yet resolve to a firm limit-of-record: a testable numeric baseline of the form '< X ug/kg by ICP-MS' requires the accredited laboratory's documented method reporting limit, which is not yet in the register. Until that number is recorded the cell is a mandatory-monitored control and no ceiling is invented.",
-      "reference_method": "Total aluminium by ICP-MS on every certified lot, reported on the certificate in the as-sold dry basis, established as a baseline-monitor limit-of-record at the laboratory's documented reporting limit once provided. A result that departs materially from the applicant's documented origin and process baseline escalates to a soil, cultivar, capsule-packaging and processing-aid investigation. This is a process-control tripwire pending a documented method limit of quantification, not an invented numeric standard.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 100000,
+      "value_exact": 100000,
+      "provenance": "read-across",
+      "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+      "source_jurisdiction": "CN",
+      "basis": "product as placed on market; dry sample, calculated as Al",
+      "source_page": "regulations/china-gb-2760-2024-food-additives",
+      "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+      "label": "Aluminium 100000 ug/kg (100 mg/kg) is a disclosed read-across from China GB 2760-2024, the strictest sovereign as-sold residual-aluminium ceiling for a dry food (baked foods). No sovereign sets an aluminium contaminant maximum level for coffee or any dry beverage commodity; the only as-sold dry-food aluminium ceilings in force are the GB 2760 residual-aluminium limits for foods where aluminium-containing additives are permitted. A ready-to-drink coffee is held instead to the far stricter drinking-water aluminium read-across (200 ug/kg, EU 2020/2184) in the as-consumed basis.",
+      "stricter_unselected": [],
+      "substantiation": "Disclosed read-across, not direct governance and not itself a contaminant limit. Aluminium in food is regulated almost entirely as a permitted-additive residue rather than as a contaminant: the only as-sold dry-food aluminium ceilings in force are China GB 2760-2024 residual-aluminium limits (baked foods 100 mg/kg; starch noodles and vermicelli 200 mg/kg), and the only other sovereign aluminium values are the drinking-water quality standards (a litre-of-water basis) and the infant-formula limits. Coffee uses no aluminium additive, so 100 mg/kg is adopted as the nearest applicable as-sold dry-food aluminium ceiling and is a conservative upper backstop, disclosed as such rather than presented as a coffee-specific government limit. The as-consumed ready-to-drink form is a water-based beverage and is held to the drinking-water aluminium read-across (EU 2020/2184, 200 ug/kg) in its own basis; the two bases are never mixed and no brewing or dilution factor is invented between them. Aluminium is a Tier-2 analyte measured every lot; an elevated result escalates to a soil, cultivar, capsule-packaging and processing-aid investigation.",
+      "companion_ids": [
+        "eu20202184_al_drinking_water_200"
+      ],
+      "companions": [
+        {
+          "id": "eu20202184_al_drinking_water_200",
+          "value": 200,
+          "jurisdiction": "EU",
+          "metal_species": "Al",
+          "basis": "water intended for human consumption",
+          "scope": "water intended for human consumption"
+        }
+      ]
     },
     "Cr": {
       "type": "read_across",
