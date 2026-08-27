@@ -85,6 +85,25 @@ article h3 {
 }
 .proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
 
+// Breathing room above the FIRST section. The v3 sections carry their
+// inter-section rhythm as inline `margin-bottom:52px`, so every section after
+// the first sits 52px below its predecessor. The first section has nothing
+// above it supplying that gap, and Quartz's base rule
+// `.wiki-content > *:first-child { margin-top: 0 }` (proof-design.scss) zeroes
+// it, so the opening heading crowded the title block above it (the gap read as
+// smaller than every other section gap on the page). Restore the same 52px
+// above the first section so the first heading matches the page's rhythm. Home
+// is full-bleed and excluded; the red hero band is a layout element, never a
+// `.wiki-content` body section, so it is unaffected. Quartz wraps the body in
+// `article.popover-hint`, so the first section is `.wiki-content > article >
+// section:first-child` (not a direct child). Use padding-top, not margin-top:
+// a top margin would collapse up through the zero-margin article/wiki-content
+// wrappers and not render, whereas padding reliably produces the 52px gap.
+.proof:not(.proof-home) .wiki-content > article > section:first-child,
+.proof:not(.proof-home) .wiki-content > section:first-child {
+  padding-top: 52px;
+}
+
 // Content links are blue (#1c43ad); red is reserved for structural accents
 // (active nav, section-accent rules, hero grounds), per the v3 design.
 .wiki-content a,

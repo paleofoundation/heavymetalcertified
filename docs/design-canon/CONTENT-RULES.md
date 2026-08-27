@@ -221,3 +221,69 @@ sweep: fix the generator/source prose if a replacement reads wrong, and let the 
 Neither tier alone is sufficient. The lint cannot see the cascade; the rendered gate is
 not always run. Together they make "the canon is quietly ignored" a build failure rather
 than a thing a reviewer has to notice.
+
+---
+
+## 8. One idea per paragraph — the reading-surface paragraph cap
+
+The reading surface is the prose a person actually reads in `<p>` blocks: `method_prose`,
+the method and derivation intros, narrative sections. Those had drifted to 300, 600, even
+**1,038-word** single unbroken paragraphs (one block for an entire section). Karen's
+verdict on one of them: *"there are so many words there, I refuse to read them."* That is
+the whole failure. A wall of text is not more rigorous. It is less usable and, on the
+surfaces that now matter most, less **retrievable**.
+
+**The rule. One idea per paragraph. On the reading surface a paragraph targets 40–100
+words and never exceeds ~120 words (roughly five to six sentences). A block longer than
+that is split at its natural idea boundaries** — the shift from mechanism to worked
+example, from claim to consequence, from one analyte to the next. Split by regrouping
+whole sentences; **never reword to hit a count.** These are legally-defensible numbers and
+citations: the transformation adds paragraph breaks and changes nothing else.
+
+**This is not in tension with the scholarly register.** The register we write in —
+Cochrane review, EFSA scientific opinion, WHO monograph — is dense in *vocabulary and
+citation*, not in *paragraph length*. Those bodies paragraph by idea; an EFSA opinion does
+not run a thousand words without a break. Density lives in the precision of each sentence
+and the provenance behind it, not in the size of the block. A wall of text actively
+*weakens* the defensibility case §7 protects: when each claim sits in its own paragraph it
+is independently quotable, auditable, and citable; buried in a 1,000-word block the
+load-bearing sentence (the exact ML, the exact instrument) is unfindable.
+
+**Why it matters more now than it used to — SEO and LLMO converge on the same shape.**
+
+- *Search (SEO).* The optimal paragraph is three to five sentences on a single topic;
+  blocks past ~600 characters are flagged to break up; content pitched at a grade 6–8
+  reading level averages SERP position ~3.2 against ~8.4 for graduate-level density. White
+  space and short paragraphs are ranking-adjacent signals, not decoration.
+- *Answer engines (LLMO / AEO).* Retrieval runs at the *passage* level, not the page: a
+  model pulls the 100–300-word section that semantically matches a query, and the
+  extractable "answer blocks" that get cited are ~40–60 words placed right after a heading.
+  The mechanism is **chunking** — a model lifts meaning from self-contained, one-idea
+  blocks. A 1,000-word paragraph is a single low-precision chunk mixing a dozen ideas: the
+  worst possible unit for a system trying to quote one answer and attribute it to us. Being
+  the operator of the canonical reference is worth nothing if the reference is un-chunkable.
+
+The same edit therefore serves three readers at once: the person gets breathing room, the
+search engine gets scannable structure, the answer engine gets clean attributable chunks.
+There is no trade-off to manage.
+
+**Enforcement (the §7 two-tier pattern).** `tools/lint-method-prose-length.mjs` scans the
+authored prose in `data/standards/*.json` `method_prose` arrays and reports every element
+over 120 words with its file, location, and word count. It runs in `prebuild`, staged
+`--warn-only` while the initial backlog drained (2026-08-27) and flipping to build-blocking
+at zero per the repo convention. The lint governs the *authored source*, so the fix is
+always to split the source prose (regroup its sentences), never to fight the renderer. The
+generator already emits one `<p>` per array element, so splitting the source is the entire
+change.
+
+**Out of scope.** Dense reference *legends* — the mono 10.5px table footnotes that
+enumerate every marker (`¹…⁵`) — are reference apparatus, read by lookup not by flow. The
+paragraph cap does not apply to them; if one grows unwieldy the fix is a definition list or
+a notes table, not a word count.
+
+**Research basis.** SEO: [Paragraph Length and Readability](https://www.jamilhosain.com/paragraph-length-and-readability-optimization/),
+[Content Readability in SEO](https://wellows.com/blog/content-readability-in-seo/),
+[Ideal Content Length for SEO](https://www.clickrank.ai/ideal-content-length-for-seo/).
+LLMO/AEO: [Content Chunking & AI Extractability (Lumar)](https://www.lumar.io/blog/best-practice/content-chunking-ai-extractability-geo-aeo-explainer/),
+[Answer Engine Optimization (Frase)](https://www.frase.io/blog/what-is-answer-engine-optimization-the-complete-guide-to-getting-cited-by-ai),
+[LLM-Optimized Content Structures (Averi)](https://www.averi.ai/how-to/llm%E2%80%91optimized-content-structures-tables-faqs-snippets).
