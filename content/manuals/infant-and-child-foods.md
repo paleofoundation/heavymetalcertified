@@ -6,7 +6,10 @@ category: 1
 breadcrumb_leaf: "Infant and Child Foods"
 description: "The complete Heavy Metal Tested & Certified standard for Category 1, Infant and Child Foods (ages 0–5), edition 2026."
 scholar_eligible: true
-cert_doi: null
+# KEEP the existing Zenodo deposit (DataCite-registered, prefix 10.5281) — do not re-mint under the
+# new prefix; re-minting fragments citations. The tool's own-field check skips this item. On a future
+# revision, the new-prefix version DOI links IsNewVersionOf this. (DOI ledger, 2026-08-27.)
+cert_doi: "10.5281/zenodo.20771543"
 effective_date: "2026"
 updated: "2026-08-06"
 author: "Karen Pendergrass"
