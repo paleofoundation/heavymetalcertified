@@ -85,22 +85,26 @@ article h3 {
 }
 .proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
 
-// Breathing room above the FIRST section. The v3 sections carry their
-// inter-section rhythm as inline `margin-bottom:52px`, so every section after
-// the first sits 52px below its predecessor. The first section has nothing
-// above it supplying that gap, and Quartz's base rule
-// `.wiki-content > *:first-child { margin-top: 0 }` (proof-design.scss) zeroes
-// it, so the opening heading crowded the title block above it (the gap read as
-// smaller than every other section gap on the page). Restore the same 52px
-// above the first section so the first heading matches the page's rhythm. Home
-// is full-bleed and excluded; the red hero band is a layout element, never a
-// `.wiki-content` body section, so it is unaffected. Quartz wraps the body in
-// `article.popover-hint`, so the first section is `.wiki-content > article >
-// section:first-child` (not a direct child). Use padding-top, not margin-top:
-// a top margin would collapse up through the zero-margin article/wiki-content
-// wrappers and not render, whereas padding reliably produces the 52px gap.
-.proof:not(.proof-home) .wiki-content > article > section:first-child,
-.proof:not(.proof-home) .wiki-content > section:first-child {
+// Breathing room below the hero band AND three-column top-line alignment.
+//
+// The v3 interior grid (.proof-layout) lays out the left rail (.snav "On this
+// page"), the center content, and the right rail (.rail "Connections") as three
+// columns that start at the same top (align-items:start). Their first horizontal
+// lines are deliberately tuned to land at ~the same Y so they read as one line
+// straight across the open page: the rails carry a top spacer that drops their
+// header dividers to meet the first section-heading's underline in the center.
+//
+// The breathing room the first heading needs therefore belongs to the WHOLE row,
+// not the center column. An earlier fix padded only the first center section
+// (padding-top:52px), which dropped the center heading ~40px BELOW the two rail
+// dividers and broke that alignment. The correct lever is the grid's own top
+// padding: it was 30px (which read as cramped under the hero), so lift it to 52px
+// (matching the inter-section rhythm). Every column moves down together, so the
+// first heading gets its 52px of air AND the three first-lines stay aligned. This
+// holds on every interior page that uses the grid (standards, briefings,
+// manuals, regulations, analytes, ...), which is the point. Home is full-bleed
+// and keeps its own `.proof-home .proof-layout { padding: 0 }` override.
+.proof:not(.proof-home) .proof-layout {
   padding-top: 52px;
 }
 
