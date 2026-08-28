@@ -239,21 +239,15 @@
         }
       },
       "MeHg": {
-        "type": "control",
+        "type": "subsumed",
         "value": null,
-        "control": "This class carries a credible methylmercury methylation and biomagnification pathway (marine algae, seaweed, fish oil, marine-derived material). Methylmercury is measured on every lot by species-specific speciation, not only reflexively, and is bounded by the child-protective total-mercury ceiling; any methylmercury above the bounding total-mercury result triggers investigation and any exceedance of the total-mercury ceiling fails.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS on every lot; MeHg by species-specific GC-ICP-MS / HPLC-ICP-MS on every lot of this class.",
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
         "bounded_by": "tHg",
-        "adult_floor": {
-          "strictest_supplement_ml": null,
-          "laxest_supplement_ml": null,
-          "supplement_mls": [],
-          "usp_2232": {
-            "pde_ug_per_day": 2,
-            "conc_equiv_ug_per_kg_at_10g": 200
-          },
-          "prop65_madl": null
-        }
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Cd": {
         "type": "read_across",

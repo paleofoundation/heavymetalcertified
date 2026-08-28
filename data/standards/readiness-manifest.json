@@ -6,7 +6,7 @@
     "complete": 68,
     "registered": 0,
     "ready": 0,
-    "empty_cells": 128
+    "empty_cells": 104
   },
   "categories": [
     {
@@ -195,7 +195,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -208,7 +207,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -221,7 +219,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -234,7 +231,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -247,7 +243,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -260,7 +255,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -273,7 +267,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -286,7 +279,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -299,7 +291,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -312,7 +303,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -325,7 +315,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -338,7 +327,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -351,7 +339,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -364,7 +351,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -377,7 +363,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -390,7 +375,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -403,7 +387,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -416,7 +399,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -429,7 +411,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -442,7 +423,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -455,7 +435,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -468,7 +447,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -481,7 +459,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -494,7 +471,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "MeHg",
             "Cr-VI",
             "Cr"
           ],
@@ -505,7 +481,7 @@
       "registered": false,
       "ready": false,
       "incomplete_records": 24,
-      "empty_cell_total": 72
+      "empty_cell_total": 48
     },
     {
       "category": 24,
