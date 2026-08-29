@@ -108,6 +108,19 @@ article h3 {
   padding-top: 52px;
 }
 
+// Markdown pages whose center opens with a heading (not a raw <section>, not a
+// badge) render that heading with the interior h2 rule's inter-section top
+// margin (52px), which drops its underline ~40px below the rail dividers. The
+// raw-section pages don't have this because their inline first heading already
+// carries margin-top:0. Zero the FIRST heading's top margin here so a markdown
+// page's opening heading lands on the same three-column line as everything else;
+// its breathing room comes from the grid's top padding above, not this margin.
+.proof:not(.proof-home) .wiki-content > article > h1:first-child,
+.proof:not(.proof-home) .wiki-content > article > h2:first-child,
+.proof:not(.proof-home) .wiki-content > article > h3:first-child {
+  margin-top: 0;
+}
+
 // Content links are blue (#1c43ad); red is reserved for structural accents
 // (active nav, section-accent rules, hero grounds), per the v3 design.
 .wiki-content a,

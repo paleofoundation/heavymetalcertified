@@ -141,7 +141,14 @@ function occurrenceSection(a) {
 
 function pageBody(a) {
   const idxUrl = `https://heavymetalindex.com/metals/${a.index_link_slug}`
-  const header = `<section style="margin-bottom:40px"><h1 style="font-family:Lora,serif;font-weight:400;font-size:38px;line-height:1.1;color:#2b1f1f;margin:0 0 8px">${esc(a.name)}</h1><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:#b7aeae;margin:0 0 18px">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</div><p style="font-size:17px;line-height:1.7;color:#3f3a3a;margin:0;max-width:80ch">${linkify(a.thesis)}</p></section>`
+  // The reference-page lead: a briefings-style badge row (matching the "THE CLAIM"
+  // treatment on Standards Briefings) rather than a second <h1>. The page's real
+  // <h1> is the hero band title (HeroBand.tsx `.hmtc-hb-title`); repeating the
+  // element name here as an <h1> was a duplicate heading and, having no underline,
+  // gave the center column no top line to align with the left/right rail dividers.
+  // The badge is a bordered block at the top of the column, so it lands on the
+  // shared three-column line the way a section heading does on standards pages.
+  const header = `<section style="margin-bottom:40px"><div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE ANALYTE</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:#b7aeae">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</span></div><p style="font-size:17px;line-height:1.7;color:#3f3a3a;margin:0;max-width:80ch">${linkify(a.thesis)}</p></section>`
 
   const why = `<section id="why-limited" style="margin-bottom:52px">${H2("Why it is limited")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The government and expert-body assessments that underpin limiting ${esc(a.name.toLowerCase())} in food, and what each concluded. The maximum levels in force apply these findings; this page is the rationale, not the certification threshold.</p>${whyLimitedTable(a.why_limited || [])}</section>`
 
