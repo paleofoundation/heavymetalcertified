@@ -191,15 +191,17 @@
         "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign aluminium ML exists for rice/grain syrup and no aluminium pathway operates. Rebuttable and audited each build.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

@@ -156,15 +156,17 @@
         "filled_by": "completeness-sweep"
       },
       "Ni": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "No sovereign nickel ML exists for these condiments, but mustard is a brassica seed and mayonnaise and vinaigrettes are oil emulsions that carry any nickel from the oil fraction (residual hydrogenation catalyst in a hardened component). Held under a reflex screen.",
-        "reference_method": "Total nickel by ICP-MS on each lot; monitored under ALARA against the tightest available food nickel context.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 800,
+        "value_exact": 800,
+        "provenance": "read-across",
+        "source_id": "eu2024_ni_cereals_800",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+        "label": "Ni 800 ug/kg: disclosed read-across from EU eu2024_ni_cereals_800 (cereals except durum/rice/husked-rice/pseudocere). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2024_ni_cereals_800). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
         "type": "read_across",

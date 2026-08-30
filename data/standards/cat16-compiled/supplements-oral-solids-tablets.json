@@ -329,21 +329,15 @@
         }
       },
       "Cr-VI": {
-        "type": "control",
+        "type": "subsumed",
         "value": null,
-        "control": "Hexavalent chromium reduces to Cr(III) in a reducing supplement matrix and carries no stable burden; it is bounded by total chromium, measured on every lot. Any total-Cr result at or above 100 µg/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails certification. California lists Cr(VI) under Proposition 65 (oral MADL 8.2 µg/day) but sets no food concentration limit.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A alkaline extraction with IC-ICP-MS (EPA 6800 / EN 15192) on a total-Cr exceedance; LOQ-level quantifiable Cr(VI) = fail.",
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
         "bounded_by": "Cr",
-        "adult_floor": {
-          "strictest_supplement_ml": null,
-          "laxest_supplement_ml": null,
-          "supplement_mls": [],
-          "usp_2232": null,
-          "prop65_madl": {
-            "madl_ug_per_day": 8.2,
-            "endpoint": "oral"
-          }
-        }
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "read_across",
@@ -388,12 +382,17 @@
         "adult_floor": null
       },
       "Cr": {
-        "type": "control",
-        "value": null,
-        "control": "No government sets a total-chromium maximum level for any infant-and-child food, so no child-protective numeric anchor exists and none is invented. Total chromium is measured on every lot as a mandatory surveillance control and gates the hexavalent-chromium reflex. Cr(III) is nutritionally essential; the toxic species is Cr(VI), controlled separately. No adult supplement total-chromium ML exists.",
-        "reference_method": "Total Cr by ICP-MS after microwave acid digestion.",
-        "bounded_by": null,
-        "adult_floor": null
+        "type": "read_across",
+        "value": 1000,
+        "value_exact": 1000,
+        "provenance": "read-across",
+        "source_id": "china_gb2762_crtotal_grains_1000",
+        "source_jurisdiction": "CN",
+        "basis": "food as placed on market",
+        "source_scope": "grains and grain products including cereals and milled grain products",
+        "label": "Cr 1000 ug/kg: disclosed read-across from CN china_gb2762_crtotal_grains_1000 (grains and grain products including cereals and ). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (china_gb2762_crtotal_grains_1000). Nearest applicable sovereign Cr ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },
