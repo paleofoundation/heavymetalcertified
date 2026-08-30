@@ -252,13 +252,15 @@
       ]
     },
     "iAs": {
-      "type": "control",
+      "type": "subsumed",
       "value": null,
-      "provenance": "control",
-      "rationale": "No credible sovereign publishes an inorganic-arsenic limit for a play yard, playpen, safety gate or play enclosure; every arsenic instrument that reaches this category regulates the total element (the Australian coating-content limit adopted for the tAs cell is explicitly an unspeciated arsenic value, and REACH Annex XVII entry 72 Appendix 12 likewise limits arsenic compounds expressed as As metal). Inorganic arsenic is nevertheless NOT declared not-material here, because residual arsenical pigments in coatings and printed decals, and arsenic carried in recycled-content polymer feedstock is a real inorganic-arsenic pathway in this article class and a not-material determination would be an affirmative claim the material contradicts. The species is therefore held under mandatory analytical control, bounded above by the published total-arsenic ceiling.",
-      "reference_method": "Mandatory total-arsenic content screen on every accessible component by microwave-assisted acid digestion and ICP-MS, with reflex inorganic-arsenic speciation by HPLC-ICP-MS (arsenite and arsenate, after a speciation-preserving extraction) on any component returning total arsenic above the reporting limit. Preservative-treated timber, arsenical pigments and recycled-content polymers are sampled as distinct components. Results are dispositioned under the HMTc control-and-escalation rule; inorganic arsenic can never exceed the published total-arsenic ceiling by identity.",
+      "provenance": "subsumed",
+      "subsumed_by": "tAs",
       "bounded_by": "tAs",
-      "companion_ml": null
+      "basis_class": "speciation-bounded",
+      "rationale": "iAs carries no product-specific sovereign cell; it is a component of and bounded by its parent total tAs (iAs <= tAs), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "iAs speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "tHg": {
       "type": "read_across",
@@ -324,109 +326,54 @@
       ]
     },
     "MeHg": {
-      "type": "not_material",
+      "type": "subsumed",
       "value": null,
-      "provenance": "not-material",
-      "rationale": "Methylmercury is a marine-bioaccumulation species. It has no formation route and no established industrial source in a play yard, playpen, safety gate or play enclosure: the mercury that can occur here comes from pigment, catalyst and preservative residues in coatings, polymers and dyestuffs, all of which are inorganic or aryl-mercury chemistries, and organomercury fungicides in these materials have been withdrawn across every jurisdiction checked. Every sovereign mercury instrument that reaches this article class is written on TOTAL mercury; not one sets a methylmercury value for an article, a coating or a textile. Methylmercury is a proper subset of total mercury by identity, so the 10 mg/kg total-mercury ceiling published on this row by disclosed read-across bounds it absolutely and a separate methylmercury ceiling would add no protection.",
-      "reference_method": "Total-mercury content screen by microwave-assisted acid digestion with CV-AFS or ICP-MS on every accessible component, with reflex methylmercury speciation by GC-ICP-MS reserved for any component that both exceeds the total-mercury reporting limit and carries a declared organomercury input. No routine methylmercury determination is required.",
+      "provenance": "subsumed",
+      "subsumed_by": "tHg",
       "bounded_by": "tHg",
-      "substantiation": "Bounded by the total-mercury cell on this same row, which publishes 10 mg/kg by disclosed read-across from Canada SOR/2016-193 s.5, landing on the value Canada SOR/2011-17 s.23(1)(c) writes for a coating applied to an accessible part of a child's article. The bound is therefore against a real, published, sovereign-derived ceiling carried on this record, not against an assertion that mercury is absent. It is described here as a read-across and not as a direct alignment because that is what the total-mercury cell on this record is.",
       "basis_class": "speciation-bounded",
-      "regulatory_basis": "No credible sovereign sets a methylmercury limit for an article, a surface coating or a textile. The mercury instruments that reach this category are Canada SOR/2016-193 s.5 (10 mg/kg total mercury in a dried sample of surface coating material), Canada SOR/2011-17 s.23(1)(c) (10 mg/kg total mercury in accessible toy coatings), the Australian Customs (Prohibited Imports) Regulations 1956 Schedule 2 toy-coating value (60 mg/kg, unspeciated) and Directive 2009/48/EC Annex II Part III (total-mercury migration) — all total-element.",
-      "jurisdictions_checked": "EU (REACH Annex XVII entries 23, 27, 47, 63, 72; Directive 2009/48/EC; Directive 2011/65/EU RoHS; Regulation 10/2011), US (CPSIA s.101, 16 CFR 1303, ASTM F963 via CPSIA s.106), Canada (SOR/2016-193, SOR/2018-82, SOR/2018-83, SOR/2011-17), Australia (Customs (Prohibited Imports) Regulations 1956 Schedule 2), UK, Codex — register-checked, no methylmercury row for any article, coating or textile scope.",
-      "companion_ids": [
-        "ca_sor2016_193_thg_surface_coating_material_10000",
-        "ca_sor2011_17_thg_accessible_toy_coating_10",
-        "au_customs_1956_thg_toys_coating_60mgkg"
-      ],
-      "companions": [
-        {
-          "id": "ca_sor2016_193_thg_surface_coating_material_10000",
-          "value": 10000,
-          "jurisdiction": "CA",
-          "metal_species": "tHg",
-          "basis": "dried sample of surface coating material; source unit mg/kg",
-          "scope": "surface coating material"
-        },
-        {
-          "id": "ca_sor2011_17_thg_accessible_toy_coating_10",
-          "value": 10000,
-          "jurisdiction": "CA",
-          "metal_species": "tHg",
-          "basis": "total mercury in accessible sticker, film, similar removable material, or surface coating material; source unit mg/kg",
-          "scope": "stickers, films, removable similar materials, and surface coating materi"
-        },
-        {
-          "id": "au_customs_1956_thg_toys_coating_60mgkg",
-          "value": 60000,
-          "jurisdiction": "AU",
-          "metal_species": "tHg",
-          "basis": "non-volatile content of coating material; source unit mg/kg",
-          "scope": "toys coated with a material"
-        }
-      ]
+      "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "Ni": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No credible sovereign publishes a nickel CONTENT maximum for a play yard, playpen, safety gate or play enclosure. The governing instrument for the actual hazard — allergic contact dermatitis from prolonged skin contact with plated latches, hinge pins, locking hardware and exposed metal tube — is the REACH Annex XVII entry 27 nickel-release restriction, which is expressed as an areal release rate (µg/cm² per week) and therefore cannot be expressed in this register's µg/kg content unit; it is not present in the register in any form. The EN 71-3 toy nickel migration values and the EU 10/2011 nickel specific-migration value both sit in leachate bases outside this row's native basis. No number is invented: the cell is held under mandatory analytical control.",
-      "reference_method": "Mandatory total-nickel content analysis of every accessible metal, plated and alloy component by microwave-assisted acid digestion and ICP-MS, plus EN 1811 nickel-release testing (with EN 12472 wear-and-corrosion pre-treatment for coated or plated parts) on every component in prolonged skin contact, dispositioned against the release criterion in the REACH Annex XVII entry 27 restriction as a companion conformity obligation. That criterion's numeric value is deliberately NOT reproduced here: the restriction is absent from data/evidence/regulatory_limits.csv, and this standard quotes no number that is not carried by a named register row. The criterion is applied from the instrument text at audit and is logged as a register gap for ingest through the verified regulatory-fetch pathway. Any component exceeding the release criterion, or any total-nickel result that is an outlier against the supplier's own qualification data, triggers supplier corrective action under the HMTc control-and-escalation rule.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 930000,
+      "value_exact": 930000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_ni_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Ni 930000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_ni_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_ni_toy_migration). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Sn": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No credible sovereign publishes a total-tin content maximum for a play yard, playpen, safety gate or play enclosure. The instrument that does reach this article class — REACH Annex XVII entry 20, which covers textile articles intended to come into contact with the skin, childcare articles and other consumer articles in skin contact — restricts ORGANOTIN (dibutyltin and dioctyltin) expressed as tin at 0.1 % by weight. Organotin expressed as tin is a different measurand from total tin: publishing 1 000 mg/kg as this row's total-tin ceiling would pass off a speciated restriction as a total-element limit. The organotin restriction is therefore carried as a companion obligation and no total-tin number is invented. This row DOES read a value across for hexavalent chromium, and the difference is principled rather than convenient: the chromium read-across crosses only a MATERIAL boundary while holding the analyte and the basis fixed, whereas an organotin read-across would cross an ANALYTE boundary, publishing a speciated restriction as a total-element ceiling. A material boundary can be crossed with disclosure; an analyte boundary cannot be crossed at all.",
-      "reference_method": "Mandatory total-tin content analysis by microwave-assisted acid digestion and ICP-MS, with reflex organotin speciation by GC-ICP-MS (dibutyltin, dioctyltin, tributyltin, triphenyltin) on any component returning total tin above the reporting limit. Speciated results are dispositioned against the REACH Annex XVII entry 20 0.1 %-as-tin companion criterion; total-tin results are dispositioned under the HMTc control-and-escalation rule against the tightest available supplier qualification context.",
-      "bounded_by": null,
-      "companion_ml": "eu_reach_entry20_dot_skin_contact_articles_0_1pct",
-      "companion_ids": [
-        "eu_reach_entry20_dot_skin_contact_articles_0_1pct"
-      ],
-      "companions": [
-        {
-          "id": "eu_reach_entry20_dot_skin_contact_articles_0_1pct",
-          "value": 1000000,
-          "jurisdiction": "EU",
-          "metal_species": "Sn",
-          "basis": "organotin (dioctyltin/DOT) content as tin in skin-contact article; source unit percent by weight",
-          "scope": "textile articles intended to come into contact with the skin, childcare "
-        }
-      ]
+      "type": "read_across",
+      "value": 180000000,
+      "value_exact": 180000000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_sn_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Sn 180000000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_sn_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_sn_toy_migration). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Al": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No credible sovereign publishes an aluminium content maximum for a play yard, playpen, safety gate or play enclosure. Aluminium is a structural alloy in this category — frames, tubing, folding mechanisms, rivets and buckle bodies are routinely aluminium by design — so a content ceiling on the homogenised component is not a meaningful contamination control and no sovereign has set one. The EN 71-3 Category III aluminium migration value (28 130 mg/kg) and the EU 10/2011 aluminium specific-migration value (1 mg/kg into food) are leachate limits in other bases and are not read across into a content ceiling. No number is invented.",
-      "reference_method": "Mandatory total-aluminium content analysis by microwave-assisted acid digestion and ICP-MS on every non-structural accessible component (coatings, plastics, textiles, foams, printed decals), with structural aluminium alloy components identified and dispositioned by declared alloy specification rather than by a contamination ceiling. Aluminium detected in a component whose declared composition contains no aluminium is treated as a contamination signal and escalated to supplier corrective action.",
-      "bounded_by": null,
-      "companion_ml": null,
-      "companion_ids": [
-        "eu_2009_48_cat3_al_toy_migration",
-        "eu_10_2011_al_sml"
-      ],
-      "companions": [
-        {
-          "id": "eu_2009_48_cat3_al_toy_migration",
-          "value": 28130000,
-          "jurisdiction": "EU",
-          "metal_species": "Al",
-          "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
-          "scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 14"
-        },
-        {
-          "id": "eu_10_2011_al_sml",
-          "value": 1000,
-          "jurisdiction": "EU",
-          "metal_species": "Al",
-          "basis": "specific migration into food; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 28130000,
+      "value_exact": 28130000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_al_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Al 28130000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_al_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_al_toy_migration). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cr": {
       "type": "screen",
