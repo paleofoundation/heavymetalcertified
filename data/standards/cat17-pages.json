@@ -1,0 +1,325 @@
+{
+  "_doc": "Per-page metadata for Category-17 (Pet Foods) standard renderer (tools/build-category-standard-pages.mjs). Numbers come from data/standards/cat17-compiled/<record>.json; no values authored here. Reconstructed 2026-08-30 to re-render pages after the completeness sweep filled Ni/Sn/Al.",
+  "_meta": {
+    "category": 17,
+    "category_name": "Pet Foods",
+    "volume_name": "Pet Foods",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr",
+      "Cr-VI"
+    ],
+    "tier_footnote": "Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast. Inorganic arsenic and hexavalent chromium are reflex-speciation screens bounded by total arsenic and total chromium; methylmercury is bounded by total mercury. Nickel, tin and aluminium carry disclosed read-across limits where no government sets a general pet-food maximum.",
+    "reconstitution_note": false,
+    "compiled_dir": "cat17-compiled",
+    "methodology_version": "Method v2.0: human-grade over-compliance (CLAUDE.md Part 19; feed floor disclosed, never selected)",
+    "method_label": "HMTc human-grade over-compliance: the strictest human-food sovereign maximum for the nearest analog, applied to a legally-feed product; the feed-law floor is disclosed for contrast and never selected.",
+    "effective_date": "2026-08-13",
+    "default_version": "1.0 (2026-08-13)"
+  },
+  "pages": [
+    {
+      "slug": "pet-chews-dental",
+      "name": "Pet chews (including dental chews)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for pet chews (including dental chews), stated as sold. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-chews-dental",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-chews-dental"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-canned-wet",
+      "name": "Canned / wet pet food (complete & balanced)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for canned / wet pet food (complete & balanced), stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-canned-wet",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-canned-wet"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-dry-kibble",
+      "name": "Dry pet food (complete & balanced kibble)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for dry pet food (complete & balanced kibble), stated as sold. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-dry-kibble",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-dry-kibble"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-fish-marine-protein",
+      "name": "Fish-based / marine-protein pet diets",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for fish-based / marine-protein pet diets, stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-fish-marine-protein",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-fish-marine-protein"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-freeze-dried",
+      "name": "Freeze-dried / dehydrated pet food (including freeze-dried raw)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for freeze-dried / dehydrated pet food (including freeze-dried raw), stated as sold. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-freeze-dried",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-freeze-dried"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-raw",
+      "name": "Raw pet food (frozen / chilled raw diets)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for raw pet food (frozen / chilled raw diets), stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-raw",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-raw"
+        }
+      ]
+    },
+    {
+      "slug": "pet-food-semi-moist",
+      "name": "Semi-moist pet food",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for semi-moist pet food, stated as sold. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-food-semi-moist",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-semi-moist"
+        }
+      ]
+    },
+    {
+      "slug": "pet-milk-replacers-specialty-liquids",
+      "name": "Pet milk replacers & specialty liquids",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for pet milk replacers & specialty liquids, stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-milk-replacers-specialty-liquids",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-milk-replacers-specialty-liquids"
+        }
+      ]
+    },
+    {
+      "slug": "pet-toppers-mixers-broths",
+      "name": "Pet toppers, mixers & broths",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for pet toppers, mixers & broths, stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-toppers-mixers-broths",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-toppers-mixers-broths"
+        }
+      ]
+    },
+    {
+      "slug": "pet-treats-snacks",
+      "name": "Pet treats & snacks",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for pet treats & snacks, stated as sold. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-13)",
+      "hmi_link": "https://heavymetalindex.com/products/pet-treats-snacks",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-treats-snacks"
+        }
+      ]
+    }
+  ]
+}
