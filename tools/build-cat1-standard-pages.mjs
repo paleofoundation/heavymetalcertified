@@ -14,6 +14,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
+import { renderRiskFlagForStandard } from "./lib/struggle-section.mjs"
 
 const REPO = process.cwd()
 const COMPILED = path.join(REPO, "data/standards/cat1-compiled")
@@ -212,11 +213,16 @@ for (const page of PAGES.pages) {
     analytes: PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a)),
   })
 
+  const riskFlag = renderRiskFlagForStandard({
+    slug: page.variants[0].record, name: page.name, cells: variants[0].cells,
+    occurrence: OCC, categoryDirName: "cat1-compiled", LINK, ACCENT,
+  })
   const body = [
     methodSection(page.name, basisWord, pdfHref, vshort),
     masterTable(variants, basisWord, firmCount),
     derivationTable(variants[0], basisWord, page.name, otherNote),
     occSection,
+    riskFlag,
     citeSection(page.name, vshort, page.hmi_link, certDoi),
   ].join("\n")
 
