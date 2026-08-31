@@ -21,7 +21,7 @@
 // each standard's own page, keeping only what the guided lookup renders. "Known
 // challenges" is kept HONEST and data-grounded: the tightest published limits, the
 // controlled-screen and in-development flags, and pointers to the standard page's own
-// "What is likely to struggle to meet this standard" section and to /hard-to-meet.
+// "Risk Flag" section and to /hard-to-meet.
 // It does not fabricate per-matrix prose.
 //
 // Determinism: no wall-clock stamp. Provenance is carried from standards.json's own

@@ -16,6 +16,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
+import { renderRiskFlagForStandard } from "./lib/struggle-section.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -419,11 +420,16 @@ for (const page of DOC.pages) {
     : META.derivation_mode === "cells_binding"
       ? cellsBindingDerivation(variants[0], page.name)
       : derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note)
+  const riskFlag = renderRiskFlagForStandard({
+    slug: page.variants[0].record, name: page.name, cells: variants[0].cells,
+    occurrence: OCC, categoryDirName: META.compiled_dir, LINK, ACCENT,
+  })
   const body = [
     methodSection(page.name, basisWord, META.method_prose),
     masterTable(variants, basisWord, tierNote, firmCount),
     derivation,
     occSection,
+    riskFlag,
     citeSection(page.name, vshort, page.hmi_link, certDoi, META.volume_name),
   ].join("\n")
 
