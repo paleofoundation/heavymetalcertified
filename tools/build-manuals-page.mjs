@@ -204,6 +204,14 @@ ${pubRows}
 ${biblio}
 </section>
 
+<section id="forthcoming" style="margin-bottom:52px">
+  <h2 ${H2}>Forthcoming</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A manual publishes when every subcategory in its category has a defensible standard. Categories in progress publish subcategory by subcategory on the web first.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
+${forthcomingCards}
+  </div>
+</section>
+
 <section id="inside" style="margin-bottom:52px">
   <h2 ${H2}>What is inside</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Five parts. The standards themselves are Part 3; everything around them exists so a reader can check them.</p>
@@ -244,14 +252,6 @@ ${biblio}
   <h2 ${H2}>Editions and revisions</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited the ${edition} edition must still be able to reach exactly what it cited.</p>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit go through the Standards Ratchet Mechanism, which caps how far a limit can move in one step and requires a stated trigger. Limits tighten as the evidence base and analytical feasibility improve; they do not loosen because a brand found them inconvenient.</p>
-</section>
-
-<section id="forthcoming">
-  <h2 ${H2}>Forthcoming</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A manual publishes when every subcategory in its category has a defensible standard. Categories in progress publish subcategory by subcategory on the web first.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
-${forthcomingCards}
-  </div>
 </section>
 `
 
