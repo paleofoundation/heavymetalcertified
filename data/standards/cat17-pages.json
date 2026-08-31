@@ -126,6 +126,33 @@
       ]
     },
     {
+      "slug": "pet-food-fermentation-derived-protein",
+      "name": "Fermentation-derived / single-cell protein ingredients (precision-fermented, cultured, yeast-biomass proteins)",
+      "description": "The Heavy Metal Tested & Certified human-grade standard for precision-fermented, cultured, and single-cell / yeast-biomass protein ingredients used in pet food, stated as sold on a dry powder basis. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
+      "version": "1.0 (2026-08-31)",
+      "connections": [
+        {
+          "label": "How limits are derived",
+          "href": "/program/structure"
+        },
+        {
+          "label": "Regulation references (source documents)",
+          "href": "/regulations"
+        },
+        {
+          "label": "All HMTc standards",
+          "href": "/standards"
+        }
+      ],
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-food-fermentation-derived-protein"
+        }
+      ]
+    },
+    {
       "slug": "pet-food-fish-marine-protein",
       "name": "Fish-based / marine-protein pet diets",
       "description": "The Heavy Metal Tested & Certified human-grade standard for fish-based / marine-protein pet diets, stated as consumed. Pet food is legally feed; HMTc voluntarily certifies each analyte to the strictest human-food sovereign maximum for the nearest analog, with the laxer feed-law floor disclosed for contrast.",
