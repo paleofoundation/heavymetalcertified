@@ -26,7 +26,7 @@ for (const f of fs.readdirSync(CONTENT)) {
   const fmMatch = src.match(/^---\n([\s\S]*?)\n---/)
   if (!fmMatch) continue
   let fm = fmMatch[1]
-  const rel = `/standards/${slug}.pdf`
+  const rel = `/static/standards/${slug}.pdf`
   // Remove any prior injected keys (idempotent), then set them fresh.
   fm = fm.split("\n").filter((l) => !/^(pdf|scholar_pdf|scholar_pdf_url):/.test(l)).join("\n")
   fm += `\npdf: "${rel}"\nscholar_pdf: true\nscholar_pdf_url: "${BASE}${rel}"`
