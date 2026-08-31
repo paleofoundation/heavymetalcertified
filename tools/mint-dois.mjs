@@ -66,6 +66,8 @@ import matter from "gray-matter"
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content")
 const DATA = path.join(REPO, "data/standards")
+const FREEZE_ROOT = process.env.HMTC_FREEZE_ROOT || path.join(REPO, "static/standards") // frozen per-version snapshots (fanned out from the index build)
+const VERSION_HISTORY = path.join(DATA, "version-history") // per-standard edition register (concept/version chain + change log)
 const today = new Date().toISOString().slice(0, 10)
 const BASE_URL = "https://heavymetalcertified.com"
 const ORCID = "0000-0002-2348-7259" // K. Pendergrass
@@ -220,6 +222,29 @@ candidates.sort((a, b) =>
   a.slug.localeCompare(b.slug))
 const batch = candidates.slice(0, limit === Infinity ? candidates.length : limit)
 
+// --- freeze + version-chain binding -----------------------------------------------------------
+// Bind a standard's DOI to its tamper-evident frozen snapshot. The freeze module
+// (index tools/standards/freeze-standard-version.mjs) writes static/standards/<slug>/v<ver>/manifest.json
+// = { sha256, timestamp_utc (RFC-3161), version, ... }; it fans out to cert. Graceful: no manifest
+// -> the concept DOI still mints, and the hash binds on the next mint once the edition is frozen.
+function freezeRecordFor(slug, version) {
+  try {
+    const dir = path.join(FREEZE_ROOT, slug)
+    if (!fs.existsSync(dir)) return null
+    const vdirs = fs.readdirSync(dir).filter((d) => /^v/i.test(d)).sort()
+    if (!vdirs.length) return null
+    const want = version != null ? `v${String(version).replace(/^v/i, "")}` : null
+    const vdir = (want && vdirs.includes(want)) ? want : vdirs[vdirs.length - 1] // matching edition, else latest
+    const manifest = JSON.parse(fs.readFileSync(path.join(dir, vdir, "manifest.json"), "utf8"))
+    return manifest && manifest.sha256 ? manifest : null
+  } catch { return null }
+}
+// The per-standard edition register (data/standards/version-history/<slug>.json) carries each
+// edition's version DOI; used to emit the concept<->version chain relations.
+function versionHistoryFor(slug) {
+  try { return JSON.parse(fs.readFileSync(path.join(VERSION_HISTORY, `${slug}.json`), "utf8")) } catch { return null }
+}
+
 // --- build one DataCite JSON:API payload -------------------------------------------------------
 function buildPayload(c) {
   const suffix = `hmtc.${c.t.suffix}.${c.category != null ? `${c.category}.` : ""}${c.slug}`
@@ -229,6 +254,24 @@ function buildPayload(c) {
   if (c.hmiLink) {
     const u = String(c.hmiLink)
     related.push({ relatedIdentifier: u, relatedIdentifierType: /^10\.\d/.test(u) ? "DOI" : "URL", relationType: "References" })
+  }
+  // Bind the tamper-evident frozen snapshot: the version PDF's SHA-256 becomes a permanent
+  // alternateIdentifier and the version-pinned landing an IsSupplementedBy relation. The hash plus
+  // the RFC-3161 timestamp recorded in the freeze manifest are the tamper-evidence behind this DOI.
+  const alternateIdentifiers = []
+  const freeze = freezeRecordFor(c.slug, c.version)
+  if (freeze) {
+    alternateIdentifiers.push({ alternateIdentifier: freeze.sha256, alternateIdentifierType: "SHA-256" })
+    related.push({ relatedIdentifier: `${BASE_URL}/${c.t.landing}/${c.slug}/v${String(freeze.version).replace(/^v/i, "")}`, relatedIdentifierType: "URL", relationType: "IsSupplementedBy" })
+  }
+  // Concept<->version chain from the edition register: the concept DOI HasVersion each minted
+  // edition. (A per-edition version DOI additionally carries IsVersionOf the concept + IsNewVersionOf
+  // the prior edition; that is emitted by the version-mint path once editions are minted.)
+  const hist = versionHistoryFor(c.slug)
+  if (hist && Array.isArray(hist.versions)) {
+    for (const v of hist.versions) {
+      if (v.doi && /^10\.\d/.test(String(v.doi))) related.push({ relatedIdentifier: String(v.doi), relatedIdentifierType: "DOI", relationType: "HasVersion" })
+    }
   }
   const types = { resourceTypeGeneral: c.t.rtGeneral }
   if (c.t.rtText) types.resourceType = c.t.rtText
@@ -242,6 +285,9 @@ function buildPayload(c) {
     types,
     url,
     rightsList: RIGHTS,
+    dates: [{ date: today, dateType: "Issued" }], // the real mint date; DataCite's immutable server-side registered/created timestamp is the tamper-evident anchor. Never backdated.
+    container: { type: "Series", title: "Heavy Metal Tested & Certified" },
+    ...(alternateIdentifiers.length ? { alternateIdentifiers } : {}),
     ...(c.version ? { version: String(c.version).replace(/\s*\(.*$/, "").trim() } : {}),
     ...(related.length ? { relatedIdentifiers: related } : {}),
     ...(c.description ? { descriptions: [{ description: String(c.description).slice(0, 2000), descriptionType: "Abstract" }] } : {}),
