@@ -16,12 +16,11 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { CERT_BASE, CERT_ORGANIZATION_ID, personEntity } from "./lib/entity-graph.mjs"
 
 const repoRoot = process.cwd()
 const SPEC_DIRS = [path.join(repoRoot, "data/articles/synthesis"), path.join(repoRoot, "data/articles/regulatory-watch")]
 const PUBLIC = path.join(repoRoot, "public/articles")
-const CERT_BASE = "https://heavymetalcertified.com"
-const ORCID = "https://orcid.org/0000-0002-2348-7259"
 
 if (!SPEC_DIRS.some((dir) => fs.existsSync(dir))) {
   console.log("postbuild-article-jsonld: no spec dir; skipping.")
@@ -59,16 +58,10 @@ function articleGraph(spec) {
     inLanguage: "en",
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    author: {
-      "@type": "Person",
-      name: "Karen Pendergrass",
-      url: ORCID,
-      sameAs: ORCID,
-      identifier: "0000-0002-2348-7259",
-    },
+    author: personEntity(),
     publisher: {
       "@type": "Organization",
-      "@id": `${CERT_BASE}/#organization`,
+      "@id": CERT_ORGANIZATION_ID,
       name: "Heavy Metal Tested & Certified",
     },
     license: "https://creativecommons.org/licenses/by/4.0/",

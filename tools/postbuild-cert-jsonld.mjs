@@ -12,53 +12,48 @@
 import fs from "node:fs"
 import path from "node:path"
 
+import {
+  CERT_BASE,
+  CERT_ORGANIZATION,
+  CERT_ORGANIZATION_ID,
+  CERT_SERVICE_ID,
+  CERT_WEBSITE_ID,
+  ICS_ORGANIZATION,
+  KAREN_PERSON,
+} from "./lib/entity-graph.mjs"
+
 const PUBLIC = path.join(process.cwd(), "public")
-const CERT_BASE = "https://heavymetalcertified.com"
-const PARENT_BASE = "https://contaminantstandards.com"
 
 const orgGraph = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${CERT_BASE}/#organization`,
-      name: "Heavy Metal Tested & Certified",
-      alternateName: "HMTc",
-      url: CERT_BASE,
-      description:
-        "The certification program and published standards for heavy metals in food and the supply chain. Standards are set against the complete literature and published per subcategory.",
-      // the reverse edge: this program is governed by the parent standards body.
-      parentOrganization: {
-        "@type": "Organization",
-        "@id": `${PARENT_BASE}/#organization`,
-        name: "Institute of Contaminant Standards",
-        url: PARENT_BASE,
-      },
-    },
+    ICS_ORGANIZATION,
+    CERT_ORGANIZATION,
+    KAREN_PERSON,
     // WebSite node names the entity + head terms for the search/AI graph and lets
     // Google treat the domain as one site rather than a bag of pages.
     {
       "@type": "WebSite",
-      "@id": `${CERT_BASE}/#website`,
+      "@id": CERT_WEBSITE_ID,
       name: "Heavy Metal Tested & Certified",
       alternateName: "HMTc",
       url: CERT_BASE,
       description:
         "Published heavy-metal testing limits for the Big 8 and third-party certification for food and supply-chain products.",
       inLanguage: "en",
-      publisher: { "@id": `${CERT_BASE}/#organization` },
+      publisher: { "@id": CERT_ORGANIZATION_ID },
     },
     // Service node puts the transactional head terms ("heavy metal testing and
     // certification") into structured data, mapped to the actual program.
     {
       "@type": "Service",
-      "@id": `${CERT_BASE}/#certification`,
+      "@id": CERT_SERVICE_ID,
       serviceType: "Heavy metal testing and certification",
       name: "Heavy Metal Tested & Certified (HMTc) certification",
       url: `${CERT_BASE}/for-brands`,
       description:
         "Third-party certification of food, supplements, and supply-chain products against published numeric heavy-metal limits, verified by accredited-laboratory testing on a ten-analyte panel in the product's native basis.",
-      provider: { "@id": `${CERT_BASE}/#organization` },
+      provider: { "@id": CERT_ORGANIZATION_ID },
       areaServed: "US",
     },
   ],
@@ -73,7 +68,7 @@ if (!fs.existsSync(homepage)) {
 let html = fs.readFileSync(homepage, "utf8")
 const tag = `<script type="application/ld+json">${JSON.stringify(orgGraph)}</script>`
 
-if (html.includes(`${CERT_BASE}/#website`)) {
+if (html.includes(CERT_WEBSITE_ID)) {
   console.log("postbuild-cert-jsonld: homepage graph already present; skipping.")
 } else {
   html = html.replace("</head>", `${tag}</head>`)
