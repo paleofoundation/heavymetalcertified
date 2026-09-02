@@ -237,7 +237,12 @@ async function main() {
     const files = readdirSync(job.src).filter((f) => {
       if (!f.endsWith(".md") || f === "index.md") return false
       const { fm } = parse(readFileSync(join(job.src, f), "utf8"))
-      return /^(true|yes|1)$/i.test(String(fm.scholar_pdf || ""))
+      // Render for every page that advertises a download (`pdf:` points at
+      // <job.path>/<slug>.pdf, which only this step produces) as well as every
+      // scholar-tagged page. import-briefings emits `pdf:` for all briefings;
+      // rendering only the scholar subset left nine live download links at 404.
+      const advertised = typeof fm.pdf === "string" && fm.pdf === `/${job.path}/${f.replace(/\.md$/, "")}.pdf`
+      return advertised || /^(true|yes|1)$/i.test(String(fm.scholar_pdf || ""))
     })
     let n = 0
     for (const f of files) {

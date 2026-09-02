@@ -61,6 +61,7 @@ const methodNoteHtml =
 const page = renderManualPage({
   title: "Infant and Child Foods — HMTc Program Manual",
   category: 1,
+  manualSlug: "infant-and-child-foods",
   categoryName: "Infant and Child Foods",
   description:
     "The complete Heavy Metal Tested & Certified standard for Category 1, Infant and Child Foods (ages 0–5), edition 2026.",

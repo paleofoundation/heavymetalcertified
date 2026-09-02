@@ -141,7 +141,16 @@ export function renderManualFrontmatter({
   effectiveDate = "2026",
   updated,
   certDoi = null,
+  manualSlug = null,
+  reportNumber = null,
 }) {
+  // Google Scholar indexes these pages as technical reports
+  // (citation_technical_report_institution), and a technical report needs a
+  // document identifier or the record is malformed. The number is stable across
+  // editions (the edition date is carried by citation_publication_date) and
+  // mirrors the DOI-manifest suffix scheme (hmtc.std.<cat>.<slug>).
+  const reportNo =
+    reportNumber ?? (manualSlug ? `hmtc.manual.${category}.${manualSlug}` : `hmtc.manual.${category}`)
   const lines = [
     "---",
     `title: ${yq(title)}`,
@@ -157,6 +166,7 @@ export function renderManualFrontmatter({
     "scholar_eligible: true",
     `cert_doi: ${certDoi == null ? "null" : yq(certDoi)}`,
     `effective_date: ${yq(effectiveDate)}`,
+    `report_number: ${yq(reportNo)}`,
     ...(updated ? [`updated: ${yq(updated)}`] : []),
     `author: ${yq(author)}`,
     `orcid: ${yq(orcid)}`,

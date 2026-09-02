@@ -48,15 +48,14 @@ function normalizeCitationDate(value: unknown): string | undefined {
     return `${monthDay[3]}/${String(month).padStart(2, "0")}/${monthDay[2].padStart(2, "0")}`
   }
 
-  // "August 2026" -> "2026/08". Scholar accepts YYYY/MM; a bare year is a much
-  // weaker signal, and inventing a day we do not know would be worse than either.
+  // "August 2026" -> "2026". Scholar's inclusion guidelines document exactly two
+  // forms for citation_publication_date: YYYY/MM/DD, or a bare YYYY when the full
+  // date is unknown. "YYYY/MM" is not one of them (the release audit rejects it),
+  // and inventing a day we do not know would be worse than a bare year.
   const monthYear = raw.match(
     /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})$/i,
   )
-  if (monthYear) {
-    const month = new Date(`${monthYear[1]} 1, 2000`).getMonth() + 1
-    return `${monthYear[2]}/${String(month).padStart(2, "0")}`
-  }
+  if (monthYear) return monthYear[2]
 
   const year = raw.match(/\b(19|20)\d{2}\b/)
   return year?.[0]
@@ -186,13 +185,22 @@ function CitationMetadata({
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
     const pdfUrl = configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
     // A URL path is not a report number; emitting one as `citation_technical_
-    // report_number` publishes malformed bibliographic metadata. When no real
-    // document identifier exists the tag is omitted instead.
+    // report_number` publishes malformed bibliographic metadata. Every
+    // scholar-eligible page is tagged as a technical report of the Institute
+    // (citation_technical_report_institution below), and Scholar treats a
+    // technical report without a number as a malformed record, so when no
+    // explicit identifier is set the page gets a stable series number in the
+    // same scheme the DOI manifest and the manuals use: hmtc.<section>.<slug>
+    // (e.g. hmtc.articles.tea-multi-metal-bioaccumulation). It never changes
+    // across editions; the edition is carried by citation_publication_date.
+    const slugParts = slugStr.split("/").filter(Boolean)
+    const seriesNumber =
+      slugParts.length >= 2 ? `hmtc.${slugParts[0]}.${slugParts[slugParts.length - 1]}` : undefined
     const reportNumber =
       frontmatterString(frontmatter.report_number) ??
       frontmatterString(frontmatter.standard_version) ??
       frontmatterString(frontmatter.edition) ??
-      undefined
+      seriesNumber
     return (
       <>
         <meta name="citation_title" content={citationTitle} />
