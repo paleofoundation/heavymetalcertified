@@ -35,22 +35,22 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat26-compiled",
-    "method_label": "Mandatory control (no government ML)",
-    "methodology_version": "Method v2.0 — no-regulatory-anchor control form (no sovereign product limit exists; every analyte tested under mandatory control)",
+    "method_label": "ICH Q3D(R2) elemental-impurity ceiling (route-based)",
+    "methodology_version": "Method v2.1 — ICH Q3D(R2) route-based elemental-impurity ceiling (Table A.2.2 Option-1 concentrations; oral vs parenteral)",
     "derivation_mode": "cells_binding",
     "method_prose": [
-      "No government sets a heavy-metal content limit for this class. Peptides, SARMs, and research chemicals are sold outside any drug-approval or dietary-supplement framework, so the sovereign maximum-level lookup that anchors every other HMTc standard returns nothing here. HMTc does not answer that gap by inventing a number. Every analyte on the panel is placed under mandatory control &mdash; measured on every lot by validated ICP-MS with reflex inorganic-arsenic speciation &mdash; and escalated against route-appropriate toxicological anchors (ICH Q3D / USP &lt;232&gt; permitted daily exposures), which flag a lot for investigation and are never used as a product-content ceiling.",
-      "Certification here is heavy-metal safety only. HMTc does not endorse, approve, or vouch for the efficacy or the legality of these products; the mark speaks solely to the heavy-metal content measured on the tested lot against the panel. Where the chemistry rules an analyte out of the matrix entirely, it is recorded as a substantiated not-material determination rather than a control."
+      "These products sit outside the food and dietary-supplement frameworks, but they are elemental-impurity-governed as pharmaceuticals. ICH Q3D(R2), harmonized across the US, EU, and Japan and enforceable through USP &lt;232&gt;-&lt;233&gt;, sets permitted daily exposures for elemental impurities in drug products and, in Table A.2.2, the corresponding route-based concentration limits (Option 1, for daily intakes of 10 grams or less). HMTc adopts those Table A.2.2 concentrations as the binding ceiling for this class, applied by route: oral products (SARMs, orally-dosed research chemicals) take the oral limits; injectable, nasal, and sublingual products take the stricter parenteral limits. Aluminium, which ICH Q3D does not address, is bound by the FDA large-volume-parenteral limit (21 CFR 201.323) on injectables.",
+      "Every analyte is measured on every lot by validated ICP-MS with reflex inorganic-arsenic speciation. Inorganic arsenic and methylmercury are bounded by their parent totals, and hexavalent chromium by total chromium (ICH Q3D governs chromium as the total element). Certification here is heavy-metal safety only: HMTc does not endorse, approve, or vouch for the efficacy or the legality of these products; the mark speaks solely to an elemental-impurity burden held within the ICH Q3D ceiling on the tested lot."
     ],
-    "effective_date": "2026-08-14",
-    "default_version": "1.0 (2026-08-14)"
+    "effective_date": "2026-09-02",
+    "default_version": "1.1 (2026-09-02)"
   },
   "pages": [
     {
       "slug": "peptides-injectable-hormones",
       "name": "Injectable peptide hormones (GLP-1 analogs, GH secretagogues, synthetic peptides)",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Injectable peptide hormones (GLP-1 analogs, GH secretagogues, synthetic peptides) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. No government sets a heavy-metal content limit for this class; every analyte is measured on every lot under mandatory control and escalated against route-appropriate toxicological anchors, never a product-content ceiling. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
-      "version": "1.0 (2026-08-14)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Injectable peptide hormones (GLP-1 analogs, GH secretagogues, synthetic peptides) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. Every analyte is held to the ICH Q3D(R2) elemental-impurity limit for the parenteral route (the harmonized pharmaceutical standard, enforceable via USP <232>), measured on every lot by ICP-MS. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
+      "version": "1.1 (2026-09-02)",
       "connections": [
         {
           "label": "How limits are derived",
@@ -76,8 +76,8 @@
     {
       "slug": "sarms-oral",
       "name": "Oral SARMs",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Oral SARMs (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. No government sets a heavy-metal content limit for this class; every analyte is measured on every lot under mandatory control and escalated against route-appropriate toxicological anchors, never a product-content ceiling. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
-      "version": "1.0 (2026-08-14)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Oral SARMs (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. Every analyte is held to the ICH Q3D(R2) elemental-impurity limit for the oral route (the harmonized pharmaceutical standard, enforceable via USP <232>), measured on every lot by ICP-MS. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
+      "version": "1.1 (2026-09-02)",
       "connections": [
         {
           "label": "How limits are derived",
@@ -103,8 +103,8 @@
     {
       "slug": "aas-injectable",
       "name": "Injectable anabolic-androgenic steroids (AAS)",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Injectable anabolic-androgenic steroids (AAS) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. No government sets a heavy-metal content limit for this class; every analyte is measured on every lot under mandatory control and escalated against route-appropriate toxicological anchors, never a product-content ceiling. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
-      "version": "1.0 (2026-08-14)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Injectable anabolic-androgenic steroids (AAS) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. Every analyte is held to the ICH Q3D(R2) elemental-impurity limit for the parenteral route (the harmonized pharmaceutical standard, enforceable via USP <232>), measured on every lot by ICP-MS. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
+      "version": "1.1 (2026-09-02)",
       "connections": [
         {
           "label": "How limits are derived",
@@ -130,8 +130,8 @@
     {
       "slug": "research-chem-raw-powders",
       "name": "Raw AAS / peptide powders (pre-formulation)",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Raw AAS / peptide powders (pre-formulation) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. No government sets a heavy-metal content limit for this class; every analyte is measured on every lot under mandatory control and escalated against route-appropriate toxicological anchors, never a product-content ceiling. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
-      "version": "1.0 (2026-08-14)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Raw AAS / peptide powders (pre-formulation) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. Every analyte is held to the ICH Q3D(R2) elemental-impurity limit for the oral route (the harmonized pharmaceutical standard, enforceable via USP <232>), measured on every lot by ICP-MS. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
+      "version": "1.1 (2026-09-02)",
       "connections": [
         {
           "label": "How limits are derived",
@@ -157,8 +157,8 @@
     {
       "slug": "peptides-nasal-sublingual",
       "name": "Nasal/sublingual/troche gray-market peptide preparations (mucosal route)",
-      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Nasal/sublingual/troche gray-market peptide preparations (mucosal route) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. No government sets a heavy-metal content limit for this class; every analyte is measured on every lot under mandatory control and escalated against route-appropriate toxicological anchors, never a product-content ceiling. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
-      "version": "1.0 (2026-08-14)",
+      "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for Nasal/sublingual/troche gray-market peptide preparations (mucosal route) (Peptides, SARMs, and Research Chemicals), evaluated on the finished product as sold. Every analyte is held to the ICH Q3D(R2) elemental-impurity limit for the parenteral route (the harmonized pharmaceutical standard, enforceable via USP <232>), measured on every lot by ICP-MS. Certification is heavy-metal safety only and does not endorse the efficacy or legality of these products.",
+      "version": "1.1 (2026-09-02)",
       "connections": [
         {
           "label": "How limits are derived",
