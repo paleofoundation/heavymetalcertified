@@ -23,207 +23,143 @@
   ],
   "cells": {
     "Pb": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Lead is the element a filter is most often bought to remove, and it is simultaneously a possible device contribution from leaded brass fittings, bronze bodies and soldered joints in the wetted path. Both directions are tested: net contribution against a matched influent blank, and removal performance against the challenge influent. The sovereign drinking-water parametric value disclosed as this cell's companion is a limit on the WATER as delivered; it is not the device's release ceiling and is not published as one. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_pb_drinking_water_5",
-      "companion_ids": [
-        "eu20202184_pb_drinking_water_5"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_pb_drinking_water_5",
-          "value": 5,
-          "jurisdiction": "EU",
-          "metal_species": "Pb",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 5,
+      "value_exact": 5,
+      "provenance": "read-across",
+      "source_id": "eu20202184_pb_drinking_water_5",
+      "source_jurisdiction": "EU",
+      "basis": "water intended for human consumption",
+      "source_scope": "water intended for human consumption",
+      "label": "Pb 5 ug/kg: disclosed read-across from EU eu20202184_pb_drinking_water_5 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu20202184_pb_drinking_water_5). Nearest applicable sovereign Pb ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cd": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Cadmium can be contributed by cadmium-plated or cadmium-brazed wetted components and is a target of reduction claims. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_cd_drinking_water_5",
-      "companion_ids": [
-        "eu20202184_cd_drinking_water_5"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_cd_drinking_water_5",
-          "value": 5,
-          "jurisdiction": "EU",
-          "metal_species": "Cd",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 2,
+      "value_exact": 2,
+      "provenance": "read-across",
+      "source_id": "nhmrc2025_cd_drinking_water_2",
+      "source_jurisdiction": "AU",
+      "basis": "drinking water",
+      "source_scope": "drinking water",
+      "label": "Cd 2 ug/kg: disclosed read-across from AU nhmrc2025_cd_drinking_water_2 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (nhmrc2025_cd_drinking_water_2). Nearest applicable sovereign Cd ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "tAs": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Arsenic is a principal reduction target for point-of-use devices and an impurity route in copper-alloy wetted parts. Determined as the total element. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_tas_drinking_water_10",
-      "companion_ids": [
-        "eu20202184_tas_drinking_water_10"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_tas_drinking_water_10",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "tAs",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 10,
+      "value_exact": 10,
+      "provenance": "read-across",
+      "source_id": "eu20202184_tas_drinking_water_10",
+      "source_jurisdiction": "EU",
+      "basis": "water intended for human consumption",
+      "source_scope": "water intended for human consumption",
+      "label": "tAs 10 ug/kg: disclosed read-across from EU eu20202184_tas_drinking_water_10 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu20202184_tas_drinking_water_10). Nearest applicable sovereign tAs ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "iAs": {
-      "type": "control",
+      "type": "subsumed",
       "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Inorganic arsenic is the species that matters in water and is essentially the whole of the arsenic present, so it is determined in its own right rather than bounded: this row's total-arsenic cell is itself a control with no sovereign device ceiling, so no published parent could bound the species. The US EPA arsenic maximum contaminant level disclosed as this cell's companion is a WATER-basis limit on the treated supply. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "epa_mcl_ias_drinking_water_10",
-      "companion_ids": [
-        "epa_mcl_ias_drinking_water_10"
-      ],
-      "companions": [
-        {
-          "id": "epa_mcl_ias_drinking_water_10",
-          "value": 10,
-          "jurisdiction": "US",
-          "metal_species": "iAs",
-          "basis": "drinking water",
-          "scope": "drinking water (public water systems)"
-        }
-      ]
+      "provenance": "subsumed",
+      "subsumed_by": "tAs",
+      "bounded_by": "tAs",
+      "basis_class": "speciation-bounded",
+      "rationale": "iAs carries no product-specific sovereign cell; it is a component of and bounded by its parent total tAs (iAs <= tAs), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "iAs speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "tHg": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Mercury is a reduction target for some media and has no functional role in the wetted path; determined as the total element. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_thg_drinking_water_1",
-      "companion_ids": [
-        "eu20202184_thg_drinking_water_1"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_thg_drinking_water_1",
-          "value": 1,
-          "jurisdiction": "EU",
-          "metal_species": "tHg",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 1,
+      "value_exact": 1,
+      "provenance": "read-across",
+      "source_id": "eu20202184_thg_drinking_water_1",
+      "source_jurisdiction": "EU",
+      "basis": "water intended for human consumption",
+      "source_scope": "water intended for human consumption",
+      "label": "tHg 1 ug/kg: disclosed read-across from EU eu20202184_thg_drinking_water_1 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu20202184_thg_drinking_water_1). Nearest applicable sovereign tHg ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "MeHg": {
-      "type": "control",
+      "type": "subsumed",
       "value": null,
-      "provenance": "control",
-      "rationale": "Methylmercury on this row FAILS SAFE TO A CONTROL rather than to a not-material determination, and the reason is specific to this material family. Total mercury on this row is itself a control with no published number, so no published parent bounds the species; a not-material determination here would rest entirely on the pathway argument, with no numeric backstop. That argument is weaker on this row than anywhere else in this category. A granular or block activated-carbon bed, an ion-exchange resin bed and a wetted mineral or ceramic medium are permanently wetted, carbon-rich and colonisable, and this row's own conditioning, rated-capacity and change-out requirements concede that the media change biologically and temporally in service. A biofilm-colonised bed operating at or beyond rated capacity, holding the inorganic mercury it has removed, is the one configuration in Category 23 where an anaerobic microbial methylation niche is physically available. HMTc therefore does not assert that methylmercury is immaterial here; it mandates the determination instead, with no number invented and no sovereign parametric value republished as a device release ceiling. Directive (EU) 2020/2184 Annex I and the US EPA National Primary Drinking Water Regulations both state mercury as the TOTAL element, so no sovereign methylmercury value exists to anchor even if one were wanted, and methylmercury never substitutes for the total-mercury determination.",
-      "reference_method": "Reflex methylmercury speciation by GC-ICP-MS, or by distillation-ethylation GC-CVAFS, on the device effluent wherever total mercury is detected, performed on conditioned media at END OF RATED CAPACITY as well as at first draw and after the manufacturer's conditioning volume, in each case against a matched influent blank so that any net contribution by the device is resolved separately from what the device removes. Spent media at and beyond rated capacity are sampled as their own lot, and a stagnation draw after the longest stand time the instructions permit is included.",
-      "bounded_by": null,
-      "companion_ml": null
+      "provenance": "subsumed",
+      "subsumed_by": "tHg",
+      "bounded_by": "tHg",
+      "basis_class": "speciation-bounded",
+      "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "Ni": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Nickel is contributed by nickel-plated and stainless wetted fittings and by some KDF-type redox alloy media, which are copper-zinc alloys whose impurity profile must be verified. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_ni_drinking_water_20",
-      "companion_ids": [
-        "eu20202184_ni_drinking_water_20"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_ni_drinking_water_20",
-          "value": 20,
-          "jurisdiction": "EU",
-          "metal_species": "Ni",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 20,
+      "value_exact": 20,
+      "provenance": "read-across",
+      "source_id": "eu20202184_ni_drinking_water_20",
+      "source_jurisdiction": "EU",
+      "basis": "water intended for human consumption",
+      "source_scope": "water intended for human consumption",
+      "label": "Ni 20 ug/kg: disclosed read-across from EU eu20202184_ni_drinking_water_20 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu20202184_ni_drinking_water_20). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Sn": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Tin can be contributed by tin-bearing solder in the wetted path. No sovereign drinking-water parametric value for tin exists in the credible set, so this cell carries no companion at all and is a pure control.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 100000,
+      "value_exact": 100000,
+      "provenance": "read-across",
+      "source_id": "eu2023_sn_canned_beverages_100000",
+      "source_jurisdiction": "EU",
+      "basis": "product as placed on market",
+      "source_scope": "canned beverages, including canned fruit and vegetable juices, except canned dried and canned powdered products",
+      "label": "Sn 100000 ug/kg: disclosed read-across from EU eu2023_sn_canned_beverages_100000 (canned beverages, including canned fruit and veg). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu2023_sn_canned_beverages_100000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Al": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Aluminium is a device-contribution risk from activated-alumina arsenic-selective media, from alum-containing media and from aluminium housings, and it is the one element a metal-removal device can readily ADD; the net-contribution test against the matched influent blank is the operative determination. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_al_drinking_water_200",
-      "companion_ids": [
-        "eu20202184_al_drinking_water_200"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_al_drinking_water_200",
-          "value": 200,
-          "jurisdiction": "EU",
-          "metal_species": "Al",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 200,
+      "value_exact": 200,
+      "provenance": "read-across",
+      "source_id": "eu20202184_al_drinking_water_200",
+      "source_jurisdiction": "EU",
+      "basis": "water intended for human consumption",
+      "source_scope": "water intended for human consumption",
+      "label": "Al 200 ug/kg: disclosed read-across from EU eu20202184_al_drinking_water_200 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu20202184_al_drinking_water_200). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cr": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling. Total chromium is retained as a screening determination for stainless and plated wetted parts; the health-relevant determination is the hexavalent-chromium cell, because chromium(III) in water is the benign species. Fresh unconditioned media are the expected worst case on this row, and spent media past rated capacity are the second; the conditioning instruction and the change-out interval are part of what is certified, not advisory text.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes.",
-      "bounded_by": null,
-      "companion_ml": "eu20202184_crtotal_drinking_water_25",
-      "companion_ids": [
-        "eu20202184_crtotal_drinking_water_25"
-      ],
-      "companions": [
-        {
-          "id": "eu20202184_crtotal_drinking_water_25",
-          "value": 25,
-          "jurisdiction": "EU",
-          "metal_species": "Cr-total",
-          "basis": "water intended for human consumption",
-          "scope": "water intended for human consumption"
-        }
-      ]
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "source_id": "nhmrc2025_crvi_drinking_water_50",
+      "source_jurisdiction": "AU",
+      "basis": "drinking water",
+      "source_scope": "drinking water",
+      "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+      "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cr-VI": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "Hexavalent chromium is the health-relevant chromium species, is a named reduction target for anion-exchange and reverse-osmosis devices, and can be contributed by chromate-passivated wetted parts. No credible sovereign sets a hexavalent-chromium release ceiling for a treatment device, and this row's total-chromium cell is itself a control, so no published parent bounds the species. The fail-safe applies, and reduction performance is verified separately from net contribution. A drinking-water treatment device is an intervention whose purpose is to REMOVE metals, so the certification question is not whether the effluent meets a food limit but whether the device itself contributes any element to the water it treats. No credible sovereign sets a release ceiling for a treatment device or its media: the EU regulates materials in contact with water intended for human consumption through the Art. 11 hygiene-requirement and positive-list route of Directive (EU) 2020/2184 rather than through element release values, the US route is the SDWA lead-free content definition plus NSF/ANSI 61 conformity, and neither is a sovereign element release ceiling in this register. Regulation (EU) 10/2011 does not reach the media at all: Art. 2(2)(a) expressly excludes ion exchange resins from its scope. The cell is therefore a control with mandatory net-contribution testing against a matched influent blank, and the sovereign drinking-water parametric value is disclosed as a companion obligation in the WATER basis, never republished as a device release ceiling.",
-      "reference_method": "Device-effluent extraction testing on the conditioned device: influent of defined composition passed through the device at rated flow, effluent sampled at first draw, after the manufacturer's conditioning volume, and at rated capacity, with ICP-MS determination of each element in the effluent and comparison against the matched influent blank so that any net contribution by the device is resolved separately from what the device removes. Hexavalent-chromium speciation by ion-chromatography ICP-MS on both effluent and matched influent, per EPA Method 218.7 conventions.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 10,
+      "value_exact": 10,
+      "provenance": "read-across",
+      "source_id": "us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl",
+      "source_jurisdiction": "US-CA",
+      "basis": "drinking water; source unit mg/L",
+      "source_scope": "public water systems in California",
+      "label": "Cr-VI 10 ug/kg: disclosed read-across from US-CA us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl (public water systems in California). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
+      "substantiation": "Disclosed read-across, register-verified (us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",
