@@ -23,17 +23,10 @@
   ],
   "cells": {
     "Pb": {
-      "type": "read_across",
-      "value": 1000000,
-      "value_exact": 1000000,
-      "provenance": "read-across",
-      "source_id": "kr_mfds2024_29_pb_metal_food_contact_1000000",
-      "source_jurisdiction": "KR",
-      "basis": "metals used for manufacturing or repair of food-contact surface; source unit percent by weight",
-      "source_scope": "metals used for manufacturing or repair of food-contact surface of utensils, containers and packages, including solder",
-      "label": "Pb 1000000 ug/kg: disclosed read-across from KR kr_mfds2024_29_pb_metal_food_contact_1000000 (metals used for manufacturing or repair of food-). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
-      "substantiation": "Disclosed read-across, register-verified (kr_mfds2024_29_pb_metal_food_contact_1000000). Nearest applicable sovereign Pb ceiling for this product form. Not occurrence-derived.",
-      "filled_by": "completeness-sweep"
+      "type": "control",
+      "value": null,
+      "provenance": "control",
+      "rationale": "No sovereign sets a food-RELEASE (migration) lead limit for bare-metal food-contact articles in the register. The KR MFDS metal-FCM value is an alloy-COMPOSITION spec (percent by weight), not a release-into-food limit, so it is not adopted here. Proper source: China GB 4806.9-2016 metal-FCM migration limits / CoE CM/Res(2013)9 (pending addition to the register)."
     },
     "Cd": {
       "type": "read_across",
