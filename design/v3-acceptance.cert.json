@@ -19,6 +19,23 @@
       { "sel": ".hmtc-cite-panel", "prop": "visibility", "want": "hidden", "note": "closed state: the panel is off-screen (transform: translateX(100%)) and visibility:hidden until a citation is clicked — NOT display:none, which would kill the slide transition." },
       { "sel": ".hmtc-cite-scrim", "prop": "count", "want": 1, "note": "the backdrop scrim sibling that the drawer slides in over." }
     ],
+    "/articles/regulatory-watch": [
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "note": "the living Research tracker reuses the canonical interior hero band." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the article-series type renders the Living tracker badge." },
+      { "sel": ".wiki-content [data-event-id]", "prop": "count", "want": 19, "note": "all primary-verified public events have exactly one visible tracker card; unsupported leads remain private." },
+      { "sel": "aside.rail a[download]", "prop": "count", "want": 0, "note": "the tracker is a CollectionPage, not a Scholar/PDF document." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/articles/worldwide-heavy-metal-regulatory-watch-2026": [
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727" },
+      { "sel": "sup.cite > a", "prop": "color", "want": "#9f2727", "note": "canonical burgundy inline citations." },
+      { "sel": "[id^=\"ref-\"]", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains" },
+      { "sel": ".wiki-content a[download]", "prop": "count", "want": 0 },
+      { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the citable analysis exposes one PDF in the rail." },
+      { "sel": "[data-cite-panel]", "prop": "count", "want": 1 }
+    ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
       { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "no-bold rule (CONTENT-RULES §7): <strong>/<b>/** render at normal weight." },

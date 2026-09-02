@@ -234,7 +234,11 @@ async function main() {
       continue
     }
     mkdirSync(job.out, { recursive: true })
-    const files = readdirSync(job.src).filter((f) => f.endsWith(".md") && f !== "index.md")
+    const files = readdirSync(job.src).filter((f) => {
+      if (!f.endsWith(".md") || f === "index.md") return false
+      const { fm } = parse(readFileSync(join(job.src, f), "utf8"))
+      return /^(true|yes|1)$/i.test(String(fm.scholar_pdf || ""))
+    })
     let n = 0
     for (const f of files) {
       try {

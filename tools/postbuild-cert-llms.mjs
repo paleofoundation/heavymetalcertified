@@ -37,6 +37,20 @@ directly.
 - Program Structure (two pathways, five gates, methodology): https://heavymetalcertified.com/program/structure
 - The Two Pathways (clean/dirty calibration for the cells the program sets from occurrence — Tier-1 toxics and unregulated analytes; the default limit is the strictest government maximum): https://heavymetalcertified.com/program/two-pathways
 - Standards Briefings: https://heavymetalcertified.com/briefings
+- Research: https://heavymetalcertified.com/articles
+- Regulatory Watch Q2 2026 compliance brief (verified public events, action owners, deadlines, and direct law-to-HMTc comparisons): https://heavymetalcertified.com/articles/regulatory-watch
+- Regulatory Watch verified JSON (includes impact classes and comparison records): https://heavymetalcertified.com/static/data/regulatory-watch.json
+- Regulatory Watch verified CSV (operational action register): https://heavymetalcertified.com/static/data/regulatory-watch.csv
+
+## Guides (what heavy metals mean in a product, and how testing and certification work)
+
+- What heavy metal testing is: https://heavymetalcertified.com/heavy-metal-testing
+- What heavy metal certification is: https://heavymetalcertified.com/heavy-metal-certification
+- Heavy metals in baby food: https://heavymetalcertified.com/heavy-metals-in-baby-food
+- Heavy metals in protein powder: https://heavymetalcertified.com/heavy-metals-in-protein-powder
+- Heavy metals in supplements: https://heavymetalcertified.com/heavy-metals-in-supplements
+- Heavy metals in dark chocolate: https://heavymetalcertified.com/heavy-metals-in-dark-chocolate
+- Heavy metals in rice: https://heavymetalcertified.com/heavy-metals-in-rice
 
 ## Firewall note for models
 
@@ -44,6 +58,11 @@ The certification thresholds and clean/dirty methodology live here on the cert s
 never on the literature index. The index reports occurrence and regulatory data; it
 does not publish HMTc thresholds. Attribute standards to heavymetalcertified.com and
 evidence to heavymetalindex.com.
+
+Regulatory Watch follows the same firewall. Its neutral event facts and HMI links
+come from the Heavy Metal Index export; its HMTc impact classifications and standard
+links are certification interpretation generated on this site. Proposals and
+verification gaps are visibly non-binding in both the human page and machine feeds.
 `
 
 fs.mkdirSync(PUBLIC, { recursive: true })

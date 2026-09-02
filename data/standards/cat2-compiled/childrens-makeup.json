@@ -118,26 +118,15 @@
       "substantiation": "BVL 2017 sets total arsenic at 0.5 mg/kg for cosmetic products in general. Its only exception is theatrical, fan or carnival make-up at 2.5 mg/kg, which does not reach this row. China NMPA (2 mg/kg), Taiwan MOHW (3 mg/kg) and Health Canada (3 mg/kg) are named for spread. Arsenic is reported as TOTAL arsenic; the inorganic species is controlled in its own cell and can never substitute for this one."
     },
     "iAs": {
-      "type": "control",
+      "type": "subsumed",
       "value": null,
-      "provenance": "control",
-      "rationale": "No jurisdiction anywhere in the register speciates arsenic in a cosmetic product. Every sovereign cosmetic instrument - Germany BVL 2017, Health Canada, China NMPA 2015, Taiwan MOHW 2024, Korea MFDS, the ASEAN Cosmetic Directive and its national transpositions, India, Kenya, the EAEU - regulates arsenic as a TOTAL element, so there is no sovereign inorganic-arsenic cell for this or any adjacent cosmetic form. Nor is a near-neighbour read-across supportable: the only inorganic-arsenic maximum levels in the register are dietary (rice, fish oils, marine products), expressed on an as-consumed or whole-commodity food basis that is not comparable to a finished-cosmetic total-content basis, and importing one would be exactly the basis conflation this row's basis guard exists to prevent. Inorganic arsenic is nonetheless material rather than not-material in this category: arsenic in talc, mica, zinc oxide, titanium dioxide, iron oxides and clay-derived raw materials is predominantly inorganic, and mineral raw materials are present by design in four of this category's sixteen rows. The cell is therefore a control, not a not-material determination, and inorganic arsenic can never substitute for the total-arsenic cell.",
-      "reference_method": "Speciated inorganic arsenic by HPLC-ICP-MS (EN 16802 or AOAC 2016.03, matrix-validated for the product form) on every certified lot, reported alongside the total-arsenic determination. No separate inorganic-arsenic ceiling is published; the lot is judged against the total-arsenic ceiling, which bounds inorganic arsenic by identity. ESCALATION: where inorganic arsenic is the majority of the reported total arsenic, or where the reported inorganic arsenic is above the manufacturer's trailing twelve-month distribution for the same form, the lot triggers mandatory raw-material traceback to the mineral or botanical component and a documented corrective-action plan before certification.",
+      "provenance": "subsumed",
+      "subsumed_by": "tAs",
       "bounded_by": "tAs",
-      "companion_ml": "de_bvl2017_tas_cosmetics_general_500",
-      "companion_ids": [
-        "de_bvl2017_tas_cosmetics_general_500"
-      ],
-      "companions": [
-        {
-          "id": "de_bvl2017_tas_cosmetics_general_500",
-          "value": 500,
-          "jurisdiction": "DE",
-          "metal_species": "tAs",
-          "basis": "cosmetic product; source unit mg/kg",
-          "scope": "cosmetic products in general except theater, fan, or carnival make-up"
-        }
-      ]
+      "basis_class": "speciation-bounded",
+      "rationale": "iAs carries no product-specific sovereign cell; it is a component of and bounded by its parent total tAs (iAs <= tAs), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "iAs speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "tHg": {
       "type": "gov",
@@ -180,16 +169,15 @@
       "substantiation": "BVL 2017 sets mercury at 0.1 mg/kg for cosmetic products in general, ten times stricter than the cluster of sovereigns that all landed on 1 mg/kg: US FDA 21 CFR 700.13 (a binding adulteration rule, not guidance), Health Canada, Hong Kong Cap. 640, China NMPA and Taiwan MOHW. All are named so the record shows that the binding value is the strict tail of a well-populated distribution rather than a lone outlier. Mercury is reported as TOTAL mercury; methylmercury is bounded by this ceiling and is treated in its own cell."
     },
     "MeHg": {
-      "type": "not_material",
+      "type": "subsumed",
       "value": null,
-      "provenance": "not-material",
-      "rationale": "Methylmercury is a component of total mercury and cannot exceed it (MeHg <= tHg by identity), so the binding total-mercury ceiling on this row bounds it arithmetically. Methylmercury is produced by microbial methylation of inorganic mercury in anoxic aquatic and sediment systems and reaches humans by bioaccumulation through aquatic food chains. Neither the pathway nor the exposure route exists here: a finished cosmetic contains no anoxic aquatic compartment and no microbial methylating community, and the product is applied topically rather than eaten. Mercury compounds are prohibited as cosmetic ingredients under EU Regulation 1223/2009 Annex II and are limited only as an unavoidable trace by the instruments named in the total-mercury cell, and every one of those instruments regulates mercury as a total element or as elemental mercury. No separate methylmercury ceiling is published; mercury on this row is governed entirely by the total-mercury cell.",
-      "reference_method": "No routine methylmercury determination is required. Total mercury is determined on every certified lot by microwave-assisted acid digestion with ICP-MS or by direct thermal-decomposition amalgamation atomic absorption, and the total-mercury ceiling bounds methylmercury by identity. RE-OPENING RULE: the applicability determination is re-opened, and methylmercury speciation (US EPA 1630 or an equivalent matrix-validated procedure) is performed, whenever the formulation declares a marine-derived raw material - algal or seaweed extract, marine collagen, fish or krill oil, marine-sourced squalane - since that is the only credible route by which organomercury could enter a cosmetic supply chain.",
+      "provenance": "subsumed",
+      "subsumed_by": "tHg",
       "bounded_by": "tHg",
-      "substantiation": "Speciation-bounded and matrix-justified. The determination is rebuttable and is re-opened by the marine-raw-material rule in the reference method; it is not a claim that mercury is absent, only that the organomercury species has no formation pathway or supply-chain entry point in this matrix and is bounded by the published total-mercury ceiling.",
       "basis_class": "speciation-bounded",
-      "regulatory_basis": "No jurisdiction sets a methylmercury limit for a cosmetic product. Every sovereign cosmetic mercury instrument checked regulates mercury as a total element (or, in the US case, expressly as elemental mercury), because the cosmetic exposure route is dermal with incidental oral transfer and the cosmetic raw-material supply chain contains no organomercury source. The register's only methylmercury maximum levels are dietary limits on predator fish, tuna, shark, marlin, alfonsino and other marine animals, all on a fresh or frozen edible-portion food basis with no comparability to a finished cosmetic.",
-      "jurisdictions_checked": "Germany BVL 2017 Table 1 (technically avoidable heavy-metal contents in cosmetics); EU Regulation 1223/2009 Annexes II and III; US FDA 21 CFR 700.13; Washington State Toxic-Free Cosmetics Act; Health Canada Guidance on Heavy Metal Impurities in Cosmetics; China NMPA Safety and Technical Standards for Cosmetics 2015; Korea MFDS cosmetic trace-contaminant standards (2024 Notice No. 9 and the 2025 revision); Taiwan MOHW 2024; Hong Kong Cap. 640; ASEAN Cosmetic Directive 2019 and its Indonesian (BPOM 16/2024), Malaysian (NPRA 2022), Singaporean (HSA 2024) and Thai transpositions; India Cosmetics Rules 2020; Kenya KS 2937:2021; EAEU TR CU 009/2011; Sri Lanka SLS 187:2025 (draft, gated)."
+      "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "Ni": {
       "type": "read_across",
@@ -206,40 +194,56 @@
       "substantiation": "DISCLOSED REFUSAL OF A LOOSENING CARVE-OUT. Korea MFDS tiers cosmetic nickel at 10 ug/g for cosmetics other than eye or colour make-up, 30 ug/g for colour make-up and 35 ug/g for eye make-up. This form is a colour cosmetic, so the letter of the instrument gives 30 ug/g. HMTc does not adopt the colour-cosmetic loosening for ages 0-5: nickel is a leading paediatric contact sensitiser, sensitisation is lifelong once established, and the tier exists to accommodate adult pigment loads rather than to describe a tolerable childhood exposure. The cell reads across the same instrument's 10 ug/g tier. The corresponding Category 13 adult row binds 30 ug/g, so the child row is three times stricter and satisfies the Category 2 floor rule. STRICTER-UNSELECTED DISPOSITION: the audit scan surfaces EU REACH 2020/2081 nickel at 5000 ug/kg for tattoo and permanent-make-up mixtures; it is not adopted, for the intradermal-route reason recorded in the lead cell of this row."
     },
     "Sn": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No sovereign publishes a tin content limit for a finished cosmetic. The register's tin values are of two incompatible kinds. The food maximum levels (canned foods and beverages, 50-250 mg/kg) are dietary as-consumed limits set for tinplate migration into food and have no relationship to a topical product. The EU values are either Toy Safety Directive 2009/48 element-MIGRATION limits, which measure what leaches from an article under simulated mouthing and are numerically incomparable to a total-content number, or REACH entry 20, which caps ORGANOTIN species (dibutyltin and dioctyltin) at 0.1% in skin-contact and childcare articles and is a species limit, not a total-tin ceiling. Substituting any of these would be a basis or species conflation, so no number is published and the cell is a control.",
-      "reference_method": "Total tin by microwave-assisted acid digestion and ICP-MS on the finished product, every certified lot. Result reported and trended lot over lot. Where the product carries a polymeric applicator, dispensing component or wipe substrate, that component is digested and analysed separately and is additionally screened for dibutyltin and dioctyltin by GC-MS against the EU REACH entry-20 0.1% article limit, which does apply to a skin-contact childcare article as an article limit even though it does not bind the cosmetic formulation. ESCALATION: any lot above the manufacturer's trailing twelve-month distribution for the same form, or any organotin detection on a polymeric component, triggers raw-material traceback and a documented corrective-action plan.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 3750000,
+      "value_exact": 3750000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat2_sn_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Sn 3750000 ug/kg: disclosed read-across from EU eu_2009_48_cat2_sn_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_sn_toy_migration). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Al": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No sovereign publishes an aluminium limit for a finished cosmetic. The only aluminium values in the register are EU Toy Safety Directive 2009/48 element-MIGRATION limits, a different basis entirely. The regulatory silence is not an oversight: aluminium is an INTENTIONALLY ADDED functional ingredient across this category - alumina is the standard surface coating on cosmetic-grade titanium dioxide and zinc oxide, aluminium starch octenylsuccinate is a routine powder and emulsion texturiser, and aluminium lakes are the standard insolubilised form of organic colourants - so no jurisdiction treats aluminium as a contaminant to be capped in a cosmetic. Because aluminium is present by design, a not-material determination would be false and an invented ceiling would be arbitrary; the cell is a control.",
-      "reference_method": "Total aluminium by microwave-assisted acid digestion and ICP-MS on the finished product, every certified lot. The applicant declares the intended functional aluminium contribution from named ingredients and its expected mass fraction; the measured total is reconciled against that declaration. ESCALATION: measured total aluminium materially above the declared functional contribution indicates an undeclared aluminium-bearing raw material or a contaminated mineral input and triggers raw-material traceback, ingredient-declaration review and a documented corrective-action plan before certification.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 560000,
+      "value_exact": 560000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat2_al_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Al 560000 ug/kg: disclosed read-across from EU eu_2009_48_cat2_al_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_al_toy_migration). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cr": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No sovereign publishes a total-chromium limit for a finished cosmetic. The three total-chromium values in the register (Mexico NOM-252 toy and school-article materials, Australia Customs 1956 toy coatings, ASTM F963 toys and children's articles, all at 60 mg/kg) are bioavailable-soluble MIGRATION limits on articles, not total-content limits on a cosmetic formulation, and reading one across would be the basis conflation this row's guard exists to prevent. Total chromium would in any case be a poor standalone ceiling: chromium in a cosmetic matrix is dominated by trivalent chromium, which is an essential trace element of low toxicity, so a total-chromium number would be non-protective against the species that actually matters. Total chromium is therefore controlled as a screening determination that gates the hexavalent-chromium cell, and no ceiling is published.",
-      "reference_method": "Total chromium by microwave-assisted acid digestion and ICP-MS on the finished product, every certified lot. Reported as a screening total only and explicitly not as a health-protective ceiling. ESCALATION: any total-chromium result above the matrix-validated method reporting limit triggers mandatory hexavalent-chromium speciation on the same lot under the Cr(VI) cell's method; a total-chromium result above the manufacturer's trailing twelve-month distribution for the same form additionally triggers raw-material traceback to the pigment or mineral component.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 50,
+      "value_exact": 50,
+      "provenance": "read-across",
+      "source_id": "nhmrc2025_crvi_drinking_water_50",
+      "source_jurisdiction": "AU",
+      "basis": "drinking water",
+      "source_scope": "drinking water",
+      "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+      "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cr-VI": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "No sovereign publishes a hexavalent-chromium limit for a finished cosmetic. The only Cr(VI) value in the cosmetic instrument family is EU REACH Regulation 2020/2081 at 500 ug/kg, which is scoped to mixtures used for TATTOOING AND PERMANENT MAKE-UP - deposited intradermally, bypassing the skin barrier entirely - and is therefore a different exposure route, a different product class and a different risk basis; it is not read across onto a surface-applied children's cosmetic. The remaining Cr(VI) values are EU Toy Safety Directive 2009/48 element-migration limits on toy materials, a different basis again. A NOT-MATERIAL determination was considered and rejected for this category. The method-artifact argument - that Cr(VI) is reduced to Cr(III) in a reducing, organic, aqueous matrix - holds for some cosmetic forms but is not supportable category-wide here: mineral raw materials - talc, mica, zinc oxide, titanium dioxide, iron oxides and clay-derived fillers - are present in this form by design, and hexavalent chromium is stable in dry mineral and pigment matrices, so the reduction argument that supports a method-artifact determination in an aqueous organic matrix is unavailable here. Control is the correct fail-safe: testing is mandatory, the method and escalation rule are published, and no ceiling is fabricated.",
-      "reference_method": "Hexavalent chromium by alkaline digestion and ion chromatography with post-column derivatisation (US EPA 3060A with 7199, or an equivalent matrix-validated procedure), performed on every lot whose total-chromium screen is above the method reporting limit, and on every lot of a mineral- or pigment-bearing form regardless of the screen result. ESCALATION: any Cr(VI) detected above the matrix-validated method reporting limit triggers mandatory raw-material traceback to the pigment or mineral component, a supplier certificate of analysis for Cr(VI) on that raw material, and a documented corrective-action plan before the lot may be certified.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 5,
+      "value_exact": 5,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat2_crvi_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Cr-VI 5 ug/kg: disclosed read-across from EU eu_2009_48_cat2_crvi_toy_migration (toys (accessible toy material); pacifiers/soothe). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_crvi_toy_migration). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",

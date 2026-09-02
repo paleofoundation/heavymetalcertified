@@ -224,20 +224,15 @@
         }
       },
       "iAs": {
-        "type": "control",
-        "provenance_tag": "control",
+        "type": "subsumed",
         "value": null,
-        "rationale": "Inorganic arsenic is the toxic fraction of total arsenic; no jurisdiction sets an inorganic-arsenic content limit for any feminine-care product. It is governed by reflex speciation: whenever total arsenic is elevated, inorganic arsenic is speciated by HPLC-ICP-MS, and the inorganic fraction is held under ALARA and bounded by the total-arsenic ceiling (bounded by the total-arsenic cosmetic ceiling).",
-        "reference_method": "Reflex HPLC-ICP-MS inorganic-arsenic speciation triggered by an elevated total-arsenic screen.",
-        "materiality_basis": null,
-        "basis_class": "",
-        "bounded_by": "",
-        "regulatory_basis": "",
-        "jurisdictions_checked": "",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "provenance": "subsumed",
+        "subsumed_by": "tAs",
+        "bounded_by": "tAs",
+        "basis_class": "speciation-bounded",
+        "rationale": "iAs carries no product-specific sovereign cell; it is a component of and bounded by its parent total tAs (iAs <= tAs), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "iAs speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "tHg": {
         "type": "gov",
@@ -317,20 +312,15 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "subsumed",
         "value": null,
-        "rationale": "Methylmercury forms by microbial methylation in aquatic food webs and bioaccumulates in fish muscle; an aqueous or leave-on intimate cosmetic has no methylation pathway and no dietary mercury source. Intimate-product metal surveys measure TOTAL mercury, not methylmercury, so no routed source reports methylmercury (the not-material integrity gate is speciation-aware). Any mercury present is governed by and bounded by the total-mercury control/ceiling. No jurisdiction sets a methylmercury limit for a menstrual or intimate-care product.",
-        "reference_method": null,
-        "materiality_basis": null,
-        "basis_class": "speciation-bounded",
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
         "bounded_by": "tHg",
-        "regulatory_basis": "No MeHg ML for any menstrual/intimate-care product in any jurisdiction; methylmercury MLs are scoped to fish and seafood only.",
-        "jurisdictions_checked": "21 CFR 884 & EU MDR 2017/745 (device biocompatibility, no content ML); Germany BVL 2017, Health Canada, China NMPA 2015, ASEAN 2019, Korea MFDS 2024/2025, FDA 21 CFR 700 (cosmetic contaminant limits — none set MeHg)",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "gov",
@@ -354,68 +344,56 @@
         }
       },
       "Cr": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "No jurisdiction sets a total-chromium content limit for cosmetics; chromium can enter an intimate cosmetic as a trace contaminant of colorants and mineral raw materials. Held under a reflex screen (test every lot; ALARA), not declared not-material.",
-        "reference_method": "Total chromium by ICP-MS on each lot; reflex Cr(VI) speciation on any elevated total-chromium result.",
-        "materiality_basis": null,
-        "basis_class": "",
-        "bounded_by": "",
-        "regulatory_basis": "",
-        "jurisdictions_checked": "",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "nhmrc2025_crvi_drinking_water_50",
+        "source_jurisdiction": "AU",
+        "basis": "drinking water",
+        "source_scope": "drinking water",
+        "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+        "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr-VI": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "Hexavalent chromium is never a panel number; it is the toxic species obtained by reflex speciation. No jurisdiction sets a Cr(VI) content limit for any feminine-care product. Any lot whose total-chromium screen is elevated is speciated for Cr(VI); any quantifiable Cr(VI) fails.",
-        "reference_method": "Reflex IC-ICP-MS Cr(VI) speciation (EPA 3060A alkaline extraction + EPA 6800 / EN 15192) on an elevated total-chromium screen.",
-        "materiality_basis": null,
-        "basis_class": "",
-        "bounded_by": "",
-        "regulatory_basis": "",
-        "jurisdictions_checked": "",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 5,
+        "value_exact": 5,
+        "provenance": "read-across",
+        "source_id": "eu_2009_48_cat2_crvi_toy_migration",
+        "source_jurisdiction": "EU",
+        "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+        "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+        "label": "Cr-VI 5 ug/kg: disclosed read-across from EU eu_2009_48_cat2_crvi_toy_migration (toys (accessible toy material); pacifiers/soothe). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
+        "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_crvi_toy_migration). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Sn": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No jurisdiction sets a tin content limit for any cosmetic, and an aqueous surfactant or leave-on intimate cosmetic has no tin source: tin migrates into a product only from tinplate/can contact, which is absent for a bottled, tubed, or sachet cosmetic. No routed source reports tin in a feminine-cosmetic product. Rebuttable and audited against the register and routed corpus each build.",
-        "reference_method": null,
-        "materiality_basis": null,
-        "basis_class": "no-migration-pathway",
-        "bounded_by": "",
-        "regulatory_basis": "No cosmetic tin ML in any jurisdiction; no tinplate-contact pathway for a bottled/sachet intimate cosmetic.",
-        "jurisdictions_checked": "Germany BVL 2017; Health Canada; China NMPA 2015; ASEAN 2019; Korea MFDS 2024/2025; FDA 21 CFR 700",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 3750000,
+        "value_exact": 3750000,
+        "provenance": "read-across",
+        "source_id": "eu_2009_48_cat2_sn_toy_migration",
+        "source_jurisdiction": "EU",
+        "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+        "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+        "label": "Sn 3750000 ug/kg: disclosed read-across from EU eu_2009_48_cat2_sn_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_sn_toy_migration). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "No jurisdiction sets an aluminium content limit for cosmetics; aluminium is a ubiquitous trace constituent of cosmetic raw materials and may be present at higher levels in feminine deodorants. This control governs CONTAMINANT aluminium under a reflex screen (ALARA on the mucosal route); a product formulated with an intentional aluminium active is out of scope for the aluminium contaminant cell and evaluated separately.",
-        "reference_method": "Total aluminium by ICP-MS on each lot; held under ALARA against the tightest available context.",
-        "materiality_basis": null,
-        "basis_class": "",
-        "bounded_by": "",
-        "regulatory_basis": "",
-        "jurisdictions_checked": "",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 560000,
+        "value_exact": 560000,
+        "provenance": "read-across",
+        "source_id": "eu_2009_48_cat2_al_toy_migration",
+        "source_jurisdiction": "EU",
+        "basis": "element migration from liquid or sticky toy material (Category II); source unit mg/kg",
+        "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+        "label": "Al 560000 ug/kg: disclosed read-across from EU eu_2009_48_cat2_al_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_al_toy_migration). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

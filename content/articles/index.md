@@ -4,11 +4,60 @@ type: articles-index
 description: "Research analyses from the Heavy Metal Tested & Certified program. Each one covers a finding from the independent Heavy Metal Index, cited one way, and applies it to the certification question."
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 ---
-Analysis from the certification program, grounded in the independent evidence base. Every article cites the [Heavy Metal Index](https://heavymetalindex.com) one way: the index reports what the literature says, and these articles apply that evidence to the certification question. The index never cites back, which is what keeps it a disinterested reference. The full occurrence record and per-source pages live on the index; these articles link to it rather than re-hosting it.
+Analysis from the certification program, grounded in the independent evidence base. Every article cites the [Heavy Metal Index](https://heavymetalindex.com) one way: the index reports what the literature says, and these articles apply that evidence to the certification question. The index never cites back, which is what keeps it a disinterested reference. The full occurrence and regulatory records live on the index; these articles link to them rather than re-hosting them.
+
+<section style="margin:40px 0 8px">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">Regulatory Watch</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">A verified evidence-to-action series. Start with the <a href="/articles/regulatory-watch">Q2 2026 compliance brief</a> for actions, deadlines and direct standard comparisons, then use the citable analyses for full legal treatment.</p>
+  <div style="display:flex;flex-direction:column">
+    <a href="/articles/eu-food-limits-arsenic-seafood-nickel-deadlines" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">EU Food Limits: Inorganic Arsenic in Seafood and Nickel Deadlines</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">EU inorganic-arsenic limits now cover named seafood groups, while nickel limits use a two-stage application calendar that reached cereals in July 2026.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Inorganic arsenic &middot; Total arsenic &middot; Nickel</span>
+    </a>
+    <a href="/articles/hexavalent-chromium-four-regimes" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Hexavalent Chromium: Four Regulatory Regimes That Must Not Be Confused</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">California water, Australian guidance, OSHA workplace rules and ECHA's proposed REACH restriction govern Cr(VI) in four non-interchangeable ways.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Chromium(VI) &middot; Total chromium</span>
+    </a>
+    <a href="/articles/market-access-rules-gulf-asia" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">New Market-Access Rules Across the Gulf and Asia</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Verified Gulf and Asian heavy-metal rules now support deadlines for China and India, plus direct HMTc comparisons for India and Vietnam.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Arsenic</span>
+    </a>
+    <a href="/articles/testing-disclosure-packaging-rules" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Testing, Disclosure, and Packaging Rules Beyond Concentration Limits</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Heavy-metal compliance now includes testing methods, QR disclosures, water inventories, packaging composition, formulation and product restrictions.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Arsenic</span>
+    </a>
+    <a href="/articles/us-baby-food-heavy-metal-laws-states-fda" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">US Baby-Food Heavy-Metal Laws: States Move Ahead of FDA</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Virginia, Illinois and Vermont add baby-food testing, disclosure and product duties while FDA guidance and federal action-level work follow another path.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Arsenic</span>
+    </a>
+    <a href="/articles/worldwide-heavy-metal-regulatory-watch-2026" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Worldwide Heavy Metal Regulatory Watch 2026</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">A verified 2026 map of heavy-metal limits, testing duties, disclosure laws, market deadlines and direct comparisons with published HMTc standards.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Lead &middot; Cadmium &middot; Inorganic arsenic</span>
+    </a>
+  </div>
+</section>
 
 <section style="margin:40px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">Analyses</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">24 analyses, each a citable page with a named author, a downloadable edition, and a one-way link to the Index finding it covers.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">24 evidence analyses, each a citable page with a named author, a downloadable edition, and a one-way link to the Index finding it covers.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/articles/lead-and-cadmium-in-dark-chocolate" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">

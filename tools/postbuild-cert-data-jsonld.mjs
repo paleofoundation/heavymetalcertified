@@ -12,14 +12,24 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import {
+  CERT_BASE,
+  CERT_ORGANIZATION_ID,
+  ICS_ORGANIZATION_ID,
+} from "./lib/entity-graph.mjs"
 
 const PUBLIC = path.join(process.cwd(), "public")
 const CATALOG = path.join(process.cwd(), "content/static/data/catalog.json")
-const CERT_BASE = "https://heavymetalcertified.com"
 
 const PUBLISHER = {
   "@type": "Organization",
-  "@id": `${CERT_BASE}/#organization`,
+  "@id": CERT_ORGANIZATION_ID,
+  name: "Heavy Metal Tested & Certified",
+}
+
+const CREATOR = {
+  "@type": "Organization",
+  "@id": ICS_ORGANIZATION_ID,
   name: "Institute of Contaminant Standards",
 }
 
@@ -45,7 +55,7 @@ const datasets = (catalog.datasets || []).map((d) => ({
   version: d.version,
   dateModified: d.date_modified,
   isAccessibleForFree: true,
-  creator: PUBLISHER,
+  creator: CREATOR,
   publisher: PUBLISHER,
   ...(d.unit ? { unitText: d.unit } : {}),
   distribution: (d.distributions || []).map((dist) => ({

@@ -86,7 +86,7 @@ export function renderMatrix({ analytes, rows, tier1Labels = [], tier2Labels = [
     ? `<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px 12px;margin-top:16px;padding-top:15px;border-top:1px solid ${BORDER}">${legendRows.join("")}</div>`
     : ""
 
-  const defaultNote = `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix; controlled by reflex speciation, not a number.`
+  const defaultNote = `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix: measured but with no standalone number, controlled by the total-metal screen or packaging control, not an invented value.`
   return `<section style="margin-bottom:52px">
 <h2 id="matrix" style="${H2}">Master limit matrix</h2>
 <p style="font-size:13.5px;line-height:1.7;color:${MUTE};margin:0 0 20px;max-width:84ch">${note || defaultNote}</p>

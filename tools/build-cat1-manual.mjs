@@ -88,7 +88,7 @@ const page = renderManualPage({
     rows,
     tier1Labels,
     tier2Labels,
-    note: `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Split cells show the formulation or matrix variants (cow/soy, rice/non-rice). Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix; controlled by reflex speciation, not a number.`,
+    note: `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Split cells show the formulation or matrix variants (cow/soy, rice/non-rice). Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix: measured but with no standalone number, controlled by the total-metal screen or packaging control, not an invented value.`,
   },
   struggleHtml,
   editionPdfLine,

@@ -72,52 +72,17 @@
         }
       },
       "tAs": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "Total arsenic in rice/grain syrup is dominated by the rice-derived fraction, and the toxic species (inorganic arsenic) is the binding control at 150 ug/kg (read-across from the EU milled-rice iAs ML). The generic refined-sugar total-arsenic ML (100, MERCOSUR/Paraguay) is deliberately NOT applied here because it is incoherent with the rice-derived inorganic-arsenic load (inorganic <= total by identity, so a 100 total cannot coexist with a 150 inorganic control). Total arsenic is measured as a screen; the inorganic-arsenic ceiling governs.",
-        "reference_method": "Total As by ICP-MS as a screen; inorganic As by HPLC-ICP-MS is the binding measurement (150 ug/kg).",
-        "audit": {
-          "same_form": [],
-          "other_form": [
-            {
-              "id": "sg_foodregs_2026_refined_white_sugar_dextrose_tas_1000",
-              "value": 1000,
-              "jurisdiction": "SG",
-              "scope": "refined white sugar with sulphated ash not more than 0.03%, anhydrous dextrose, and dextrose monohydrate"
-            },
-            {
-              "id": "sg_foodregs_2026_other_sugars_syrups_tas_1000",
-              "value": 1000,
-              "jurisdiction": "SG",
-              "scope": "other sugars including sugar syrups"
-            },
-            {
-              "id": "py_decreto1335_2019_sugars_tas_100",
-              "value": 100,
-              "jurisdiction": "PY",
-              "scope": "sugars"
-            },
-            {
-              "id": "il_fcs2016_tas_11_sugar_1000",
-              "value": 1000,
-              "jurisdiction": "IL",
-              "scope": "Sugar"
-            },
-            {
-              "id": "mercosur_gmc12_2011_sugars_tas_100",
-              "value": 100,
-              "jurisdiction": "MERCOSUR",
-              "scope": "sugars"
-            },
-            {
-              "id": "vn_qcvn8_2_2011_tas_sugar_1000",
-              "value": 1000,
-              "jurisdiction": "VN",
-              "scope": "Sugar"
-            }
-          ]
-        }
+        "type": "read_across",
+        "value": 1000,
+        "value_exact": 1000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_other_sugars_syrups_tas_1000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "other sugars including sugar syrups",
+        "label": "tAs 1000 ug/kg: disclosed read-across from SG sg_foodregs_2026_other_sugars_syrups_tas_1000 (other sugars including sugar syrups). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_other_sugars_syrups_tas_1000). Nearest applicable sovereign tAs ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "iAs": {
         "type": "read_across",
@@ -165,70 +130,78 @@
         }
       },
       "MeHg": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
+        "type": "subsumed",
         "value": null,
-        "rationale": "No methylation pathway and no mercury source in a grain syrup. Total mercury is governed (50, Vietnam).",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
+        "bounded_by": "tHg",
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
-        "type": "control",
-        "provenance_tag": "control",
-        "value": null,
-        "rationale": "No sovereign nickel ML exists for rice/grain syrup, but rice and cereal grains accumulate nickel (EU regulates husked-rice Ni at 2000), so a source pathway exists. Held under a reflex screen rather than declared not-material.",
-        "reference_method": "Total nickel by ICP-MS on each lot; monitored under ALARA against the tightest available food nickel context.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 800,
+        "value_exact": 800,
+        "provenance": "read-across",
+        "source_id": "eu2024_ni_cereals_800",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+        "label": "Ni 800 ug/kg: disclosed read-across from EU eu2024_ni_cereals_800 (cereals except durum/rice/husked-rice/pseudocere). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2024_ni_cereals_800). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign total-chromium ML exists for rice/grain syrup; the only food chromium MLs in the register are dairy. Rebuttable and audited each build.",
-        "reference_method": "Total Cr by ICP-MS screen; reflex Cr(VI) speciation on any total-Cr exceedance.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 1000,
+        "value_exact": 1000,
+        "provenance": "read-across",
+        "source_id": "china_gb2762_crtotal_grains_1000",
+        "source_jurisdiction": "CN",
+        "basis": "food as placed on market",
+        "source_scope": "grains and grain products including cereals and milled grain products",
+        "label": "Cr 1000 ug/kg: disclosed read-across from CN china_gb2762_crtotal_grains_1000 (grains and grain products including cereals and ). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (china_gb2762_crtotal_grains_1000). Nearest applicable sovereign Cr ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr-VI": {
-        "type": "control",
-        "provenance_tag": "control",
+        "type": "subsumed",
         "value": null,
-        "rationale": "Hexavalent chromium is never a panel number for a food; it is the reflex-speciation species. Any total-chromium exceedance is speciated, and any quantifiable Cr(VI) fails.",
-        "reference_method": "IC-ICP-MS Cr(VI) speciation (EPA 3060A + EPA 6800 / EN 15192) on any total-Cr exceedance.",
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
+        "bounded_by": "Cr",
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Sn": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "Tin migrates only from tinplate cans; these syrups are sold in glass/plastic, not tinplate. No non-canned tin pathway exists.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 250000,
+        "value_exact": 250000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_any_food_sn_250000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "any food",
+        "label": "Sn 250000 ug/kg: disclosed read-across from SG sg_foodregs_2026_any_food_sn_250000 (any food). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_any_food_sn_250000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "not_material",
-        "provenance_tag": "not-material",
-        "value": null,
-        "rationale": "No sovereign aluminium ML exists for rice/grain syrup and no aluminium pathway operates. Rebuttable and audited each build.",
-        "reference_method": null,
-        "audit": {
-          "same_form": [],
-          "other_form": []
-        }
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

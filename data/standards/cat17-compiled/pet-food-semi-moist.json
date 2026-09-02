@@ -405,12 +405,15 @@
         ]
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "Methylmercury forms by microbial methylation in aquatic food chains and biomagnifies in fish; there is no methylmercury pathway in terrestrial cereal, pulse, or tuber crops. It is bounded by total mercury, which is measured on every lot.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; reflex MeHg speciation (GC-ICP-MS) only on an elevated total-Hg result.",
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
         "bounded_by": "tHg",
-        "feed_floor": null
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "read_across",
@@ -433,20 +436,30 @@
         "feed_floor": null
       },
       "Sn": {
-        "type": "not_material",
-        "value": null,
-        "control": "Tin is a can-migration analyte: it enters food by dissolution from tin-coated can walls. Dry, non-tinplate pet food (kibble, semi-moist, freeze-dried, treats, chews) has no tin source. Every human-food tin maximum is scoped to canned/tin-coated product; a canned pet product is certified under the canned-wet tin read-across instead.",
-        "reference_method": "Total Sn by ICP-MS; any quantifiable tin on a non-canned product triggers a packaging/contact-material investigation.",
-        "bounded_by": null,
-        "feed_floor": null
+        "type": "read_across",
+        "value": 250000,
+        "value_exact": 250000,
+        "provenance": "read-across",
+        "source_id": "sg_foodregs_2026_any_food_sn_250000",
+        "source_jurisdiction": "SG",
+        "basis": "product as sold or imported",
+        "source_scope": "any food",
+        "label": "Sn 250000 ug/kg: disclosed read-across from SG sg_foodregs_2026_any_food_sn_250000 (any food). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (sg_foodregs_2026_any_food_sn_250000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "control",
-        "value": null,
-        "control": "No government sets an aluminium contaminant maximum for general (non-infant) human foods; aluminium is a ubiquitous crustal element with no established food maximum for adult foods, and the only human-food aluminium numbers on the books are permitted food-additive residue limits (e.g. alum firming agents), which are not contaminant maxima. Aluminium is measured on every lot as a mandatory surveillance control rather than limited to a number no sovereign sets as a contaminant ceiling.",
-        "reference_method": "Total Al by ICP-MS after microwave acid digestion.",
-        "bounded_by": null,
-        "feed_floor": null
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
         "type": "read_across",
@@ -478,12 +491,15 @@
         ]
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "Hexavalent chromium is a measurement artifact in a reducing food matrix: it reduces to Cr(III) in the presence of organic matter and gastric conditions, so a food does not carry a stable Cr(VI) burden. It is bounded by total chromium, which is measured on every lot; any total-Cr result at or above the reflex trigger prompts Cr(VI) speciation, and any quantifiable Cr(VI) fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A with IC-ICP-MS / EN 15192 or equivalent on a total-Cr exceedance.",
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
         "bounded_by": "Cr",
-        "feed_floor": null
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

@@ -3,11 +3,43 @@
 Tracks every HMTc artifact awaiting a DOI, so that when the **DataCite** prefix lands, minting is
 systematic and each assigned DOI is recorded in one place. Registrar is **DataCite** (not Crossref).
 
-- **Registrar:** DataCite
-- **Prefix:** ⬜ pending assignment from DataCite (as of 2026-08-18)
-- **DOI is stored in:** each page's `cert_doi` front-matter field (currently `null` everywhere), which
-  renders the resolvable `https://doi.org/…` cite line and the citation `<meta>`. Fill it in after minting, then rebuild.
+- **Registrar:** DataCite. **Membership APPROVED 2026-08-27** (onboarding complete).
+- **Prefix:** 🟨 read the auto-assigned prefix from DataCite Fabrica after creating the repository.
+  Recommendation (ratified by the 2026-08-27 preflight audit): **two repositories = two free prefixes** —
+  one for `heavymetalcertified` (standards/manuals), one for `heavymetalindex` (wiki pages) — which
+  reinforces the Part 1 firewall at no marginal cost (flat membership covers ≤100k DOIs/yr). The
+  universal `10.5072` test prefix is **retired**; a test repository gets its own assigned prefix.
+- **Minting tool:** `tools/mint-dois.mjs` (built + audit-hardened 2026-08-27). Env-gated
+  (`DATACITE_USER`/`PASSWORD`/`PREFIX`/`MODE`); dry-run + `--emit` + `--manifest` without credentials.
+- **DOI is stored in:** each page's `cert_doi` front-matter field (the tool writes it, inserting the
+  line if absent), which renders the resolvable `https://doi.org/…` cite line and the citation `<meta>`.
+  `standard-readiness-lint.mjs` reads `cert_doi` (fixed 2026-08-27 — it previously read a `doi:` field
+  no standard carries, so minting would have flipped **zero** REGISTERED gates).
 - **Status legend:** ⬜ pending · 🟨 metadata prepared · 🟦 submitted to DataCite · ✅ minted + `cert_doi` filled
+
+## Preflight audit + corrected first batch (2026-08-27)
+
+A six-agent adversarial audit returned NO-GO on the naive "mint everything" plan and caught defects
+now fixed in the tooling:
+
+- **Non-standards excluded** — `finder.md` (type `standards-finder`), `standards-index`, and
+  `butter-and-ghee.md` (type `standard-in-development`, 0/10 analytes) no longer mint. Only
+  `type: standard` pages are eligible. (`scholar_eligible` is the Scholar-indexing-subset flag, not a
+  publish signal — it is deliberately NOT gated on for standards.)
+- **Zenodo skip corrected** — the deposited-edition skip now reads the item's OWN frontmatter
+  (`deposited_doi`/`zenodo_doi`/`concept_doi`/`doi`), not a whole-body substring, so complete standards
+  that merely CITE a Zenodo source paper (beef-product, baby-talcum-powder) are no longer false-skipped.
+- **Write-back is total** — inserts `cert_doi:` when absent; a no-op write hard-aborts (prevents minting
+  an irreversible findable DOI that never gets persisted).
+- **Completeness gate** — default is **COMPLETE-only** (per `readiness-manifest.json`): **42 standards**
+  are complete and mint-ready now (c1:2, c3:11, c6:7, c15:10, c27:4, c28:6, c30:2). The rest mint as the
+  empty-cell backlog drains. `--include-incomplete` mints all 348 (REGISTERED is independent of COMPLETE).
+- **Test-prefix guard** — a sandbox DOI is never written into `cert_doi`; `DATACITE_MODE=live` required to persist.
+- **Default is standards-only** — manuals/articles/briefings (`--types=all`) are held until their Zenodo
+  reconciliation is recorded (see Open decisions), so the infant/seafood/grains Zenodo editions are not re-minted.
+- **Versioning** — the minted `cert_doi` is the **concept DOI** (stable slug, points to current version,
+  carries `version`); per-revision version DOIs (`IsNewVersionOf` chain) are added on first revision.
+  Minting the concept DOI now does not foreclose the concept-DOI model.
 
 ## Summary
 
@@ -107,10 +139,32 @@ Version handling: mint a base DOI per item; on revision, either update the same 
 4. Paste each returned DOI into the corresponding page's `cert_doi` front-matter, mark the row ✅
    here, and rebuild. The cite line and `<meta>` then resolve live.
 
-## Open decisions (yours)
+## Decisions (resolved 2026-08-27; per CLAUDE.md `wwsaid`)
 
-- **Articles & manuals with Zenodo history** — keep the existing Zenodo DOIs, or re-mint under the
-  DataCite prefix for a single registrar? (Re-minting changes the citable identifier.)
-- **Briefings** — DOI-worthy scholarly outputs, or public explainers that stay DOI-free?
-- **Suffix scheme** — approve the scheme above or adjust.
-- **Versioning policy** — same-DOI-updated vs versioned-DOI for living standards.
+- **Zenodo manuals/preprints** — **KEEP, do not re-mint.** They are already DataCite-registered with
+  deposited PDFs; re-minting fragments citations. Record each existing Zenodo DOI in a `deposited_doi:`
+  frontmatter field so the tool keeps it, then link the new-prefix landing page via `IsNewVersionOf`
+  (if the standard revised) or `IsIdenticalTo` (if mirrored unchanged). Never `IsVariantFormOf`.
+- **Suffix scheme** — adopted: `hmtc.std.<cat>.<slug>`, `hmtc.manual.<slug>`, `hmtc.article.<slug>`,
+  `hmtc.brief.<slug>`, sanitized to `[a-z0-9._-]`.
+- **Versioning** — concept DOI now; version DOI per material revision (ceiling/analyte/basis change),
+  chained `IsNewVersionOf`/`IsPreviousVersionOf` with the `version` field. Typo/format fixes reuse the DOI.
+- **Briefings** — the `scholar_eligible` subset gets DOIs (Text), as part of the pubs batch.
+
+## Remaining sequence (pubs batch + landing pages)
+
+Before minting manuals/articles/briefings (`--types=all`):
+1. Record `deposited_doi:` on the infant/seafood/grains manuals and the JFM preprint articles that
+   already have Zenodo DOIs, and wire the `IsNewVersionOf`/`IsIdenticalTo` relatedIdentifier.
+2. Confirm every DOI'd landing page renders the DOI hyperlink + citation + schema.org JSON-LD
+   (DataCite's landing-page obligation) and add a build-lint that fails when a page carries a DOI in
+   frontmatter but does not render it. Same lint on the Index side.
+3. Reconcile the 6 COMPLETE readiness-manifest records whose slug does not match a content
+   `product_slug` (currently held conservatively; 48 complete records → 42 matched).
+
+## Open (genuinely yours — DataCite Fabrica, authenticated)
+
+- Create the repository/repositories and read the assigned **prefix(es)**; generate **Repository
+  credentials**; place `DATACITE_USER`/`PASSWORD`/`PREFIX` in the environment (a gitignored `.env` or
+  the app secret store) — never in source, never pasted into chat. Start with a **test** repository
+  (`DATACITE_MODE=test`) for the Cat-1 sandbox rehearsal, then production.

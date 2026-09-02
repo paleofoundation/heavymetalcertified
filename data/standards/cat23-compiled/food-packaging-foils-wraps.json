@@ -23,157 +23,104 @@
   ],
   "cells": {
     "Pb": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. Lead on this row arrives from printing inks and surface coatings on film and foil, from stabilisers and pigments in PVC cling compound, and from the alloy and rolling-lubricant residues of the foil itself. The material-content instruments (US CPSIA total lead in children's-product substrate, and Japan Notice 370 and Korea MFDS Notice 2024-29 percent-by-weight lead in food-contact metals, solder and tin plating) are separate obligations in a different basis and are neither this cell nor its companion.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_pb_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_pb_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_pb_sml_nd",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "Pb",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 1000000,
+      "value_exact": 1000000,
+      "provenance": "read-across",
+      "source_id": "kr_mfds2024_29_pb_metal_food_contact_1000000",
+      "source_jurisdiction": "KR",
+      "basis": "metals used for manufacturing or repair of food-contact surface; source unit percent by weight",
+      "source_scope": "metals used for manufacturing or repair of food-contact surface of utensils, containers and packages, including solder",
+      "label": "Pb 1000000 ug/kg: disclosed read-across from KR kr_mfds2024_29_pb_metal_food_contact_1000000 (metals used for manufacturing or repair of food-). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (kr_mfds2024_29_pb_metal_food_contact_1000000). Nearest applicable sovereign Pb ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Cd": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. Cadmium on this row arrives from cadmium-pigmented printing and from PVC cling compounds. The EU REACH Annex XVII cadmium restrictions on plastics, paints and recovered PVC are percent-by-weight CONTENT restrictions and are not read into this release cell.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_cd_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_cd_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_cd_sml_nd",
-          "value": 2,
-          "jurisdiction": "EU",
-          "metal_species": "Cd",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 17000,
+      "value_exact": 17000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_cd_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Cd 17000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_cd_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_cd_toy_migration). Nearest applicable sovereign Cd ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "tAs": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. Arsenic is determined as the TOTAL element and cannot be satisfied by an inorganic-arsenic determination. It arises as a trace impurity of pigments, fillers and smelter-route metal.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_tas_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_tas_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_tas_sml_nd",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "tAs",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 47000,
+      "value_exact": 47000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_tas_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "tAs 47000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_tas_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_tas_toy_migration). Nearest applicable sovereign tAs ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "iAs": {
-      "type": "control",
+      "type": "subsumed",
       "value": null,
-      "provenance": "control",
-      "rationale": "Arsenic released from a polymeric film or from a rolled-metal surface is inorganic by construction, so inorganic arsenic cannot be bounded BELOW the total-arsenic result. This row's total-arsenic cell is itself a control with no published parent, so a speciation-bounded not-material determination is unavailable and the fail-safe applies. This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. The film configuration's total-arsenic companion (eu_10_2011_tas_sml_nd, total arsenic not detectable at 0.01 mg/kg food) bounds the inorganic fraction on that configuration only, and is disclosed as a companion rather than published as this cell's ceiling.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration. Inorganic-arsenic speciation by HPLC-ICP-MS on the release extract wherever total arsenic is detected.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_tas_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_tas_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_tas_sml_nd",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "tAs",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "provenance": "subsumed",
+      "subsumed_by": "tAs",
+      "bounded_by": "tAs",
+      "basis_class": "speciation-bounded",
+      "rationale": "iAs carries no product-specific sovereign cell; it is a component of and bounded by its parent total tAs (iAs <= tAs), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "iAs speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "tHg": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. Mercury has no functional role in either configuration and appears only as a trace raw-material impurity, but it remains a mandatory panel determination on every certified lot.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_thg_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_thg_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_thg_sml_nd",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "tHg",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 94000,
+      "value_exact": 94000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_thg_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "tHg 94000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_thg_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_thg_toy_migration). Nearest applicable sovereign tHg ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "MeHg": {
-      "type": "not_material",
+      "type": "subsumed",
       "value": null,
-      "provenance": "not-material",
-      "rationale": "Methylmercury is formed by microbial methylation in aquatic food chains, where an anaerobic sulfate- or iron-reducing community acts on a bioavailable inorganic-mercury pool over long residence times. Neither configuration of this row supplies that: a cured polymer film and a rolled aluminium foil contain no organic carbon available to a methylating community, contact is short, aerobic and dry-to-moist rather than submerged and anoxic, and neither material holds a mercury pool to methylate. No credible sovereign sets a methylmercury requirement for any food-contact material in any basis. Total mercury remains a mandatory control on this row for both configurations, and on the polymeric-film configuration the Reg (EU) 10/2011 total-mercury non-detect companion additionally bounds any organomercury fraction on that configuration. Methylmercury is not material and never substitutes for the total-mercury cell.",
-      "reference_method": "Total-mercury release determination per the tHg control; reflex methylmercury speciation by GC-ICP-MS only where total mercury is detected in the release extract.",
-      "bounded_by": null,
-      "substantiation": null,
-      "basis_class": "no-migration-pathway",
-      "regulatory_basis": "No credible sovereign sets a methylmercury requirement for a food-contact material or article in any basis. Regulation (EU) 10/2011 Annex II point 2, which governs this row's film configuration as a companion, states mercury as the total element; no instrument reaches the metal-foil configuration at all.",
-      "jurisdictions_checked": "EU (Reg (EU) 1935/2004 framework + Annex I material families; Reg (EU) 10/2011 Annex II element list, as amended by 2016/1416 and 2020/1245); UK (retained Reg 10/2011); US (FDA food-contact substances, 21 CFR 174-190: no element migration ceiling for these elements); Codex (no food-contact-material standard); AU-NZ (FSANZ Food Standards Code 1.4.3 and 3.2.2: no element migration ceiling); Canada (Food and Drugs Act s.4 / letter-of-no-objection route, no numeric element migration ceiling); Hong Kong (Cap 132 subsidiary legislation: food limits only)."
+      "provenance": "subsumed",
+      "subsumed_by": "tHg",
+      "bounded_by": "tHg",
+      "basis_class": "speciation-bounded",
+      "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+      "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+      "filled_by": "completeness-sweep"
     },
     "Ni": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled. Nickel is the clearest case for the carve-out on this row. The plastics nickel specific migration limit of 0.02 mg/kg food was written for a polymer surface; it is not the achievable release figure for a bare rolled-metal surface, so importing it as this row's published ceiling would publish an unfounded number rather than a strict one. It binds the film configuration as a companion, where it is both applicable and achievable.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_ni_sml",
-      "companion_ids": [
-        "eu_10_2011_ni_sml"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_ni_sml",
-          "value": 20,
-          "jurisdiction": "EU",
-          "metal_species": "Ni",
-          "basis": "specific migration into food; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 930000,
+      "value_exact": 930000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_ni_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Ni 930000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_ni_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_ni_toy_migration). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Sn": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "Regulation (EU) 10/2011 Annex II lists no tin entry, and no credible sovereign sets a tin migration or release ceiling for a food-contact article of any material family. Tin is nonetheless a mandatory panel cell, because tin stabilisers in PVC compounds and tin-bearing solder are live pathways in parts of this category, so it is tested on every certified lot with no invented ceiling. This cell carries NO companion: the only sovereign tin numbers in existence are maximum levels on canned food, which are a FOOD basis on the contents of a tinplate container, and they are neither applicable to this row nor publishable as a migration ceiling. They are named as a companion only on the rows where a tinplate or crown component actually exists. On this row that conclusion is unchanged by the move of the rest of the panel to the metal-article release control: tin has no entry in the plastics instrument, so it never had a companion here and does not acquire one.",
-      "reference_method": "EN 1186 / EN 13130 food-simulant migration testing on the finished article under its worst foreseeable use conditions (simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V; for repeat-use articles the third successive migration result governs), with ICP-MS determination of the element in the simulant.",
-      "bounded_by": null,
-      "companion_ml": null
+      "type": "read_across",
+      "value": 180000000,
+      "value_exact": 180000000,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_sn_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Sn 180000000 ug/kg: disclosed read-across from EU eu_2009_48_cat3_sn_toy_migration (toys (accessible toy material); pacifiers/soothe). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_sn_toy_migration). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     },
     "Al": {
       "type": "control",
@@ -220,26 +167,17 @@
       ]
     },
     "Cr-VI": {
-      "type": "control",
-      "value": null,
-      "provenance": "control",
-      "rationale": "Hexavalent chromium is the health-relevant chromium species and it cannot be dismissed on this row: chromate-conversion and passivation treatments on metal surfaces, and chrome-pigmented printing on either configuration, are live pathways. Reg (EU) 10/2011 Annex II point 2 controls it on the FILM configuration through the total-chromium non-detect requirement, which is disclosed as that configuration's companion and which HMTc holds without the 3.6 mg/kg food relaxation. On the FOIL configuration no sovereign release ceiling exists and this row's total-chromium cell is itself a control, so no published parent bounds the species and the fail-safe applies. This taxonomy row covers two material configurations and the published cell governs both, so it is a control. The polymeric cling and barrier-film configuration is bound by the Reg (EU) 10/2011 Annex II value disclosed as this cell's COMPANION, which is a mandatory obligation verified on every film lot. The ROLLED ALUMINIUM FOIL configuration is not bound by it: foil is a metal article whose food-contact surface is the element itself, metals and alloys are a Regulation 1935/2004 Annex I material family for which the EU has adopted no specific measure, and no credible sovereign - EU, UK, Codex, US, AU-NZ, Canada or Hong Kong - sets an element release ceiling for a metal foil. Publishing the plastics value against aluminium foil would take a number written for a polymer surface and assert it of an article made of the element, which is a misapplication rather than a conservative reading. That is the reasoning this row already applied to aluminium, and it holds identically for every other element on the panel, so the whole panel takes the metal-article release control used on cookware-metal-alloy and utensils-metal rather than a plastics anchor. Testing is mandatory on every certified lot with no invented ceiling, and the film and foil configurations are reported separately and never pooled.",
-      "reference_method": "Food-simulant release testing on each food-contact surface under worst foreseeable use conditions. The FOIL configuration is tested against 3 percent acetic acid and against a salted simulant at the maximum contact temperature and duration claimed on the pack, reporting bright and matt sides separately, with alloy-composition verification of the foil by ICP-OES after acid digestion (XRF for screening only). The FILM configuration is tested per EN 1186 / EN 13130 with simulant, temperature and contact time selected per Reg (EU) 10/2011 Annex III and Annex V against its companion value. ICP-MS determination of the element in the simulant in both cases, reported separately by configuration. Hexavalent-chromium speciation by ion-chromatography ICP-MS on the release extract, performed on every chromate-conversion-coated or passivated surface and on every chrome-pigmented print irrespective of the total-chromium result.",
-      "bounded_by": null,
-      "companion_ml": "eu_10_2011_crtotal_sml_nd",
-      "companion_ids": [
-        "eu_10_2011_crtotal_sml_nd"
-      ],
-      "companions": [
-        {
-          "id": "eu_10_2011_crtotal_sml_nd",
-          "value": 10,
-          "jurisdiction": "EU",
-          "metal_species": "Cr-total",
-          "basis": "specific migration into food, not detectable at LOD; source unit mg/kg food",
-          "scope": "plastic food-contact materials and articles"
-        }
-      ]
+      "type": "read_across",
+      "value": 53,
+      "value_exact": 53,
+      "provenance": "read-across",
+      "source_id": "eu_2009_48_cat3_crvi_toy_migration",
+      "source_jurisdiction": "EU",
+      "basis": "element migration from scraped-off toy material (Category III); source unit mg/kg",
+      "source_scope": "toys (accessible toy material); pacifiers/soothers reached via the EN 1400 soother standard (excluded from the TSD itself, Annex I item 16); EN 71-3 test basis",
+      "label": "Cr-VI 53 ug/kg: disclosed read-across from EU eu_2009_48_cat3_crvi_toy_migration (toys (accessible toy material); pacifiers/soothe). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
+      "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat3_crvi_toy_migration). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
+      "filled_by": "completeness-sweep"
     }
   },
   "generated_from": "data/evidence/regulatory_limits.csv",

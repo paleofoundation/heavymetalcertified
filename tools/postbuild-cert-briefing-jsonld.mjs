@@ -22,14 +22,23 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import {
+  CERT_BASE,
+  CERT_WEBSITE_ID,
+  ICS_ORGANIZATION_ID,
+  personEntity,
+} from "./lib/entity-graph.mjs"
 
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content/briefings")
 const PUBLIC = path.join(REPO, "public/briefings")
-const CERT_BASE = "https://heavymetalcertified.com"
 const START = "<!-- CERT-BRIEFING-JSONLD-START -->"
 const END = "<!-- CERT-BRIEFING-JSONLD-END -->"
-const PUBLISHER = { "@type": "Organization", name: "Institute of Contaminant Standards" }
+const PUBLISHER = {
+  "@type": "Organization",
+  "@id": ICS_ORGANIZATION_ID,
+  name: "Institute of Contaminant Standards",
+}
 
 if (!fs.existsSync(PUBLIC)) {
   console.log("postbuild-cert-briefing-jsonld: public/briefings not present yet (skipping; ran before quartz build)")
@@ -56,9 +65,7 @@ function fmValue(fm, key) {
 }
 
 function articleGraph({ url, title, description, author, orcid, datePublished }) {
-  const person = orcid
-    ? { "@type": "Person", name: author, url: `https://orcid.org/${orcid}`, identifier: `https://orcid.org/${orcid}` }
-    : { "@type": "Person", name: author }
+  const person = personEntity(author, orcid)
   const g = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -72,6 +79,7 @@ function articleGraph({ url, title, description, author, orcid, datePublished })
     isAccessibleForFree: true,
     author: person,
     publisher: PUBLISHER,
+    isPartOf: { "@id": CERT_WEBSITE_ID },
   }
   if (datePublished) { g.datePublished = datePublished; g.dateModified = datePublished }
   return g

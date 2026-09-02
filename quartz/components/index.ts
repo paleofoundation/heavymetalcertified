@@ -22,6 +22,8 @@ import Footer from "./Footer"
 import ProductEvidenceSummary from "./ProductEvidenceSummary"
 import BrandPreScreenTool from "./BrandPreScreenTool"
 import StandardsFinder from "./StandardsFinder"
+import FeeCalculator from "./FeeCalculator"
+import ApplyForm from "./ApplyForm"
 import SourceCitationPanel from "./SourceCitationPanel"
 import EvidenceHeader from "./EvidenceHeader"
 import RelatedPages from "./RelatedPages"
@@ -62,6 +64,8 @@ export {
   ProductEvidenceSummary,
   BrandPreScreenTool,
   StandardsFinder,
+  FeeCalculator,
+  ApplyForm,
   SourceCitationPanel,
   EvidenceHeader,
   RelatedPages,

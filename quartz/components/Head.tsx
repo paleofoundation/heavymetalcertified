@@ -106,6 +106,7 @@ const OG_ARTICLE_PREFIXES = [
 function isArticlePage(frontmatter: Record<string, unknown> | undefined, slug: string | undefined): boolean {
   if (slug === "index" || slug === "404" || slug === undefined) return false
   const fmType = frontmatterString(frontmatter?.type)?.toLowerCase()
+  if (fmType === "article-series") return false
   if (fmType && OG_ARTICLE_TYPES.has(fmType)) return true
   if (frontmatterBoolean(frontmatter?.scholar_eligible)) return true
   return OG_ARTICLE_PREFIXES.some((p) => slug.startsWith(p))
@@ -232,13 +233,30 @@ export default (() => {
     externalResources,
     ctx,
   }: QuartzComponentProps) => {
+    // <title> strategy for search + AI answer engines:
+    //   1. An explicit `seoTitle` frontmatter wins verbatim (hand-tuned head-term
+    //      landing pages, homepage).
+    //   2. Otherwise the page title gains the program-name suffix (cfg.pageTitleSuffix)
+    //      so every interior page carries the brand + "heavy metal tested / certified"
+    //      head terms — UNLESS the title already names the brand, which would double it.
+    const seoTitleOverride = frontmatterString(fileData.frontmatter?.seoTitle)
+    const baseTitle =
+      frontmatterString(fileData.frontmatter?.title) ?? i18n(cfg.locale).propertyDefaults.title
     const titleSuffix = cfg.pageTitleSuffix ?? ""
+    const titleAlreadyBranded = /heavy metal (tested|certified)|hmtc/i.test(baseTitle)
     const title =
-      (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
-    const description =
-      fileData.frontmatter?.socialDescription ??
-      fileData.frontmatter?.description ??
+      seoTitleOverride ?? (titleAlreadyBranded ? baseTitle : baseTitle + titleSuffix)
+    // Two descriptions, deliberately:
+    //   metaDescription  → the SERP snippet (<meta name="description">). Prefer the
+    //     page's own `description`, which we keep ~150–160 chars and keyword-forward.
+    //   socialDescription → OG / Twitter cards, where a longer, richer line reads
+    //     well. Falls back to `description` so single-field pages are unchanged.
+    const socialDescription =
+      frontmatterString(fileData.frontmatter?.socialDescription) ??
+      frontmatterString(fileData.frontmatter?.description) ??
       unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
+    const metaDescription =
+      frontmatterString(fileData.frontmatter?.description) ?? socialDescription
 
     const { css, js, additionalHead } = externalResources
 
@@ -283,14 +301,16 @@ export default (() => {
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:site_name" content={cfg.pageTitle}></meta>
+        {/* Full program name (not the shorter masthead wordmark) so social +
+            entity graphs read the brand that carries the head terms. */}
+        <meta property="og:site_name" content="Heavy Metal Tested & Certified"></meta>
         <meta property="og:title" content={title} />
         <meta property="og:type" content={ogType} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image:alt" content={description} />
+        <meta name="twitter:description" content={socialDescription} />
+        <meta property="og:description" content={socialDescription} />
+        <meta property="og:image:alt" content={socialDescription} />
 
         {!usesCustomOgImage && (
           <>
@@ -320,7 +340,7 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
-        <meta name="description" content={description} />
+        <meta name="description" content={metaDescription} />
         <meta
           name="robots"
           content={

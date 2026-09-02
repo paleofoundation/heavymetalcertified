@@ -6,10 +6,17 @@
   "variants": {
     "both": {
       "Pb": {
-        "type": "not_material",
-        "value": null,
-        "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no government sets a lead ML specific to rice-based drinks; the EU 2023/915 beverage lead framework does not enumerate a rice-drink row. Lead is material in a rice-derived beverage but unregulated by ML; literature-baseline governs. iAs is the binding Tier-1 analyte for this subcategory.",
-        "reference_method": "Pb by ICP-MS on the as-consumed liquid."
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_pb_50",
+        "source_jurisdiction": "MERCOSUR",
+        "basis": "product as offered to consumer",
+        "source_scope": "non-alcoholic beverages excluding juices",
+        "label": "Pb 50 ug/kg: disclosed read-across from MERCOSUR mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_pb_50 (non-alcoholic beverages excluding juices). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_pb_50). Nearest applicable sovereign Pb ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "iAs": {
         "type": "gov",
@@ -27,58 +34,119 @@
         }
       },
       "tAs": {
-        "type": "not_material",
-        "value": null,
-        "control": "No government sets a total-arsenic ML for a rice-based beverage in any jurisdiction; the binding arsenic control for this subcategory is the inorganic-arsenic ML (30 ug/kg, EU 2023/915 non-alcoholic rice drinks). A dry \"rice and derivatives\" total-arsenic ceiling is not comparable at face value to a dilute as-consumed beverage, and total arsenic adds no ceiling beyond the inorganic-arsenic limit here.",
-        "reference_method": "tAs by ICP-MS on the as-consumed liquid; speciate to iAs on any elevated total-arsenic result."
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_tas_50",
+        "source_jurisdiction": "MERCOSUR",
+        "basis": "product as offered to consumer",
+        "source_scope": "non-alcoholic beverages excluding juices",
+        "label": "tAs 50 ug/kg: disclosed read-across from MERCOSUR mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_tas_50 (non-alcoholic beverages excluding juices). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (mercosur_gmc12_2011_nonalcoholic_beverages_excluding_juices_tas_50). Nearest applicable sovereign tAs ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "tHg": {
-        "type": "not_material",
-        "value": null,
-        "control": "Mercury does not accumulate in a rice-derived beverage; the only cereal mercury MLs are dry-basis and no government sets a rice-drink mercury ML. Not a material contaminant in this matrix.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 1,
+        "value_exact": 1,
+        "provenance": "read-across",
+        "source_id": "eu20202184_thg_drinking_water_1",
+        "source_jurisdiction": "EU",
+        "basis": "water intended for human consumption",
+        "source_scope": "water intended for human consumption",
+        "label": "tHg 1 ug/kg: disclosed read-across from EU eu20202184_thg_drinking_water_1 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu20202184_thg_drinking_water_1). Nearest applicable sovereign tHg ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "No government sets a methylmercury ML for a rice-based beverage in any jurisdiction; methylmercury maximum levels exist only for fish and seafood. Mercury does not accumulate in a rice-derived beverage and is not a material contaminant in this matrix.",
-        "reference_method": null
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
+        "bounded_by": "tHg",
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Cd": {
-        "type": "not_material",
-        "value": null,
-        "control": "Confirmed no-ML (standards-no-ml-confirmed.csv): no government sets a cadmium ML specific to rice-based drinks. Material but unregulated by ML; literature-baseline governs.",
-        "reference_method": "Cd by ICP-MS on the as-consumed liquid."
+        "type": "read_across",
+        "value": 2,
+        "value_exact": 2,
+        "provenance": "read-across",
+        "source_id": "nhmrc2025_cd_drinking_water_2",
+        "source_jurisdiction": "AU",
+        "basis": "drinking water",
+        "source_scope": "drinking water",
+        "label": "Cd 2 ug/kg: disclosed read-across from AU nhmrc2025_cd_drinking_water_2 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (nhmrc2025_cd_drinking_water_2). Nearest applicable sovereign Cd ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "No jurisdiction sets a total-chromium maximum level for a rice-derived beverage; the grain total-Cr limits (China GB 2762-2022, 1.0 mg/kg) are dry-grain basis and do not read across to an as-consumed liquid. Reflex total-Cr screen on the liquid.",
-        "reference_method": "Total-Cr by ICP-MS on the as-consumed liquid; no sovereign rice-beverage total-Cr ML."
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "nhmrc2025_crvi_drinking_water_50",
+        "source_jurisdiction": "AU",
+        "basis": "drinking water",
+        "source_scope": "drinking water",
+        "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+        "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr-VI": {
-        "type": "not_material",
-        "value": null,
-        "control": "Cr(VI) (hexavalent chromium): reflex-speciation control on the total-chromium result (see the separate total-Cr cell, governed by China GB 2762-2022 grains/milled-grain-products total Cr 1.0 mg/kg). No jurisdiction sets a Cr(VI)-specific food maximum level; chromium in the as-consumed rice-beverage liquid is dominated by nutritionally-essential Cr(III) and any Cr(VI) reduces to Cr(III) in the matrix. Reflex control: any total-Cr result >= 100 ug/kg triggers Cr(VI) speciation, and any quantifiable Cr(VI) fails.",
-        "reference_method": "Total-Cr screen by ICP-MS; on any result >= 100 ug/kg, Cr(VI) by EN 15192 / EPA 6800 IC-ICP-MS isotope-dilution; LOQ-level quantifiable Cr(VI) = fail."
+        "type": "read_across",
+        "value": 10,
+        "value_exact": 10,
+        "provenance": "read-across",
+        "source_id": "us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl",
+        "source_jurisdiction": "US-CA",
+        "basis": "drinking water; source unit mg/L",
+        "source_scope": "public water systems in California",
+        "label": "Cr-VI 10 ug/kg: disclosed read-across from US-CA us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl (public water systems in California). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
+        "substantiation": "Disclosed read-across, register-verified (us_ca_swrcb_2024_cr-vi_chromium-hexavalent_mcl_10ugl). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
-        "type": "not_material",
-        "value": null,
-        "control": "The EU 2024/1987 nickel MLs are scoped to cereal grains as commodities and to juices/nectars, not to a rice-based drink; no government sets a rice-drink nickel ML. Not a binding cell.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 250,
+        "value_exact": 250,
+        "provenance": "read-across",
+        "source_id": "eu2024_ni_juice_250",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "fruit/vegetable juices and nectars, general",
+        "label": "Ni 250 ug/kg: disclosed read-across from EU eu2024_ni_juice_250 (fruit/vegetable juices and nectars, general). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2024_ni_juice_250). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Sn": {
-        "type": "not_material",
-        "value": null,
-        "control": "Canned-only analyte; carton-packed rice milk is not tinplate-packaged.",
-        "reference_method": null
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "eu2023_sn_canned_beverages_100000",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "canned beverages, including canned fruit and vegetable juices, except canned dried and canned powdered products",
+        "label": "Sn 100000 ug/kg: disclosed read-across from EU eu2023_sn_canned_beverages_100000 (canned beverages, including canned fruit and veg). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2023_sn_canned_beverages_100000). Nearest applicable sovereign Sn ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Al": {
-        "type": "not_material",
-        "value": null,
-        "control": "No credible regulator sets an aluminium CONTAMINANT maximum level for grains, cereals, or rice products, and China GB 2762 (the contaminant standard) does not regulate aluminium. Aluminium present in leavened, baked, or alum-firmed grain products is permitted-additive residue (China GB 2760-2024 food-additive use limits, e.g. baked foods 100 mg/kg / starch noodles and vermicelli 200 mg/kg, calculated as Al), governed by additive ADI and the JECFA/EFSA provisional tolerable weekly intake, not by a per-food contaminant ML. An additive-use residue cap is not a contaminant government limit and is not published as one; background aluminium in plain grain is soil-derived. Managed by intake vs the TWI, not a lookup.",
-        "reference_method": "Managed by intake vs JECFA/EFSA TWI; periodic total-Al screen (ICP-MS); no per-food contaminant ML to look up."
+        "type": "read_across",
+        "value": 200,
+        "value_exact": 200,
+        "provenance": "read-across",
+        "source_id": "eu20202184_al_drinking_water_200",
+        "source_jurisdiction": "EU",
+        "basis": "water intended for human consumption",
+        "source_scope": "water intended for human consumption",
+        "label": "Al 200 ug/kg: disclosed read-across from EU eu20202184_al_drinking_water_200 (water intended for human consumption). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu20202184_al_drinking_water_200). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       }
     }
   },

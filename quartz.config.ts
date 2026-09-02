@@ -18,7 +18,12 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Heavy Metal Certified",
-    pageTitleSuffix: "",
+    // Appended to every interior page's <title> for brand + keyword context in
+    // the SERP (the program name literally carries the "heavy metal tested" and
+    // "certified" head terms). Head.tsx skips the suffix when a page already
+    // names the brand or supplies an explicit `seoTitle`. Pipe, not em dash, to
+    // stay clear of the dedash content/JSON-LD lint.
+    pageTitleSuffix: " | Heavy Metal Tested & Certified",
     enableSPA: true,
     enablePopovers: true,
     // Cert site gets its OWN analytics property — never reuse the index's GA tag

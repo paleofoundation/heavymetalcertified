@@ -16,14 +16,13 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { CERT_BASE, CERT_ORGANIZATION_ID, personEntity } from "./lib/entity-graph.mjs"
 
 const repoRoot = process.cwd()
-const SPEC_DIR = path.join(repoRoot, "data/articles/synthesis")
+const SPEC_DIRS = [path.join(repoRoot, "data/articles/synthesis"), path.join(repoRoot, "data/articles/regulatory-watch")]
 const PUBLIC = path.join(repoRoot, "public/articles")
-const CERT_BASE = "https://heavymetalcertified.com"
-const ORCID = "https://orcid.org/0000-0002-2348-7259"
 
-if (!fs.existsSync(SPEC_DIR)) {
+if (!SPEC_DIRS.some((dir) => fs.existsSync(dir))) {
   console.log("postbuild-article-jsonld: no spec dir; skipping.")
   process.exit(0)
 }
@@ -47,7 +46,8 @@ const strip = (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/[_*]([^_*\
 
 function articleGraph(spec) {
   const url = `${CERT_BASE}/articles/${spec.slug}`
-  const date = isoDate(spec.date)
+  const date = isoDate(spec.published || spec.date)
+  const modified = isoDate(spec.modified || spec.date)
   const g = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -58,30 +58,39 @@ function articleGraph(spec) {
     inLanguage: "en",
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    author: {
-      "@type": "Person",
-      name: "Karen Pendergrass",
-      url: ORCID,
-      sameAs: ORCID,
-      identifier: "0000-0002-2348-7259",
-    },
+    author: personEntity(),
     publisher: {
       "@type": "Organization",
-      "@id": `${CERT_BASE}/#organization`,
+      "@id": CERT_ORGANIZATION_ID,
       name: "Heavy Metal Tested & Certified",
     },
     license: "https://creativecommons.org/licenses/by/4.0/",
     isAccessibleForFree: true,
   }
-  if (date) {
-    g.datePublished = date
-    g.dateModified = date
-  }
+  if (date) g.datePublished = date
+  if (modified) g.dateModified = modified
   if (Array.isArray(spec.keywords) && spec.keywords.length) g.keywords = spec.keywords.join(", ")
   // The one-way provenance edge: this analysis is based on the independent Index
   // synthesis finding. isBasedOn is the schema.org way to say so.
-  if (spec.synthesis_url) g.isBasedOn = { "@type": "WebPage", url: spec.synthesis_url }
+  const based = Array.isArray(spec.isBasedOn) ? spec.isBasedOn : spec.synthesis_url ? [spec.synthesis_url] : []
+  if (based.length) g.isBasedOn = based.map((item) => ({ "@type": "CreativeWork", url: typeof item === "string" ? item : item.url, name: typeof item === "string" ? undefined : item.name }))
+  if (Array.isArray(spec.citation) && spec.citation.length) g.citation = spec.citation.map((item) => typeof item === "string" ? item : item.url)
+  if (spec.series_url) g.isPartOf = { "@type": "CollectionPage", "@id": `${CERT_BASE}${spec.series_url}#collection`, url: `${CERT_BASE}${spec.series_url}`, name: spec.series || "Regulatory Watch" }
+  if (Array.isArray(spec.metals) && spec.metals.length) g.about = spec.metals.map((name) => ({ "@type": "Thing", name }))
+  const mentions = [...(spec.jurisdictions || []), ...(spec.instruments || [])]
+  if (mentions.length) g.mentions = mentions.map((name) => ({ "@type": "Thing", name }))
   return g
+}
+
+function breadcrumbGraph(spec) {
+  const url = `${CERT_BASE}/articles/${spec.slug}`
+  const items = [
+    { "@type": "ListItem", position: 1, name: "Home", item: CERT_BASE },
+    { "@type": "ListItem", position: 2, name: "Research", item: `${CERT_BASE}/articles` },
+  ]
+  if (spec.series_url) items.push({ "@type": "ListItem", position: 3, name: spec.series || "Regulatory Watch", item: `${CERT_BASE}${spec.series_url}` })
+  items.push({ "@type": "ListItem", position: items.length + 1, name: strip(spec.title), item: url })
+  return { "@context": "https://schema.org", "@type": "BreadcrumbList", "@id": `${url}#breadcrumbs`, itemListElement: items }
 }
 
 function faqGraph(spec) {
@@ -101,8 +110,10 @@ function faqGraph(spec) {
 
 let injected = 0
 let missing = 0
-for (const f of fs.readdirSync(SPEC_DIR).filter((x) => x.endsWith(".json"))) {
-  const spec = JSON.parse(fs.readFileSync(path.join(SPEC_DIR, f), "utf8"))
+for (const dir of SPEC_DIRS) {
+ if (!fs.existsSync(dir)) continue
+ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json"))) {
+  const spec = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))
   const htmlPath = path.join(PUBLIC, `${spec.slug}.html`)
   if (!fs.existsSync(htmlPath)) {
     console.warn(`  no built HTML for ${spec.slug} (${path.relative(repoRoot, htmlPath)}); skipping.`)
@@ -114,13 +125,14 @@ for (const f of fs.readdirSync(SPEC_DIR).filter((x) => x.endsWith(".json"))) {
     // already injected (idempotent re-run)
     continue
   }
-  const graphs = [articleGraph(spec), faqGraph(spec)].filter(Boolean)
+  const graphs = [articleGraph(spec), faqGraph(spec), breadcrumbGraph(spec)].filter(Boolean)
   const tag = graphs
     .map((g) => `<script type="application/ld+json">${JSON.stringify(g)}</script>`)
     .join("")
   html = html.replace("</head>", `${tag}</head>`)
   fs.writeFileSync(htmlPath, html, "utf8")
   injected++
+ }
 }
 console.log(
   `postbuild-article-jsonld: injected Article + FAQPage JSON-LD into ${injected} article page(s)` +

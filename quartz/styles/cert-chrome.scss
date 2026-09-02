@@ -85,6 +85,42 @@ article h3 {
 }
 .proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
 
+// Breathing room below the hero band AND three-column top-line alignment.
+//
+// The v3 interior grid (.proof-layout) lays out the left rail (.snav "On this
+// page"), the center content, and the right rail (.rail "Connections") as three
+// columns that start at the same top (align-items:start). Their first horizontal
+// lines are deliberately tuned to land at ~the same Y so they read as one line
+// straight across the open page: the rails carry a top spacer that drops their
+// header dividers to meet the first section-heading's underline in the center.
+//
+// The breathing room the first heading needs therefore belongs to the WHOLE row,
+// not the center column. An earlier fix padded only the first center section
+// (padding-top:52px), which dropped the center heading ~40px BELOW the two rail
+// dividers and broke that alignment. The correct lever is the grid's own top
+// padding: it was 30px (which read as cramped under the hero), so lift it to 52px
+// (matching the inter-section rhythm). Every column moves down together, so the
+// first heading gets its 52px of air AND the three first-lines stay aligned. This
+// holds on every interior page that uses the grid (standards, briefings,
+// manuals, regulations, analytes, ...), which is the point. Home is full-bleed
+// and keeps its own `.proof-home .proof-layout { padding: 0 }` override.
+.proof:not(.proof-home) .proof-layout {
+  padding-top: 52px;
+}
+
+// Markdown pages whose center opens with a heading (not a raw <section>, not a
+// badge) render that heading with the interior h2 rule's inter-section top
+// margin (52px), which drops its underline ~40px below the rail dividers. The
+// raw-section pages don't have this because their inline first heading already
+// carries margin-top:0. Zero the FIRST heading's top margin here so a markdown
+// page's opening heading lands on the same three-column line as everything else;
+// its breathing room comes from the grid's top padding above, not this margin.
+.proof:not(.proof-home) .wiki-content > article > h1:first-child,
+.proof:not(.proof-home) .wiki-content > article > h2:first-child,
+.proof:not(.proof-home) .wiki-content > article > h3:first-child {
+  margin-top: 0;
+}
+
 // Content links are blue (#1c43ad); red is reserved for structural accents
 // (active nav, section-accent rules, hero grounds), per the v3 design.
 .wiki-content a,

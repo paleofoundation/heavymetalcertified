@@ -212,10 +212,17 @@
         }
       },
       "Cr": {
-        "type": "not_material",
-        "value": null,
-        "control": "Chromium is not material in a non-dairy fruit-juice matrix and no government sets a Cr ML for juice; the only food Cr limits in the register are dairy (China milk powder 2000, liquid milk 300). Cr-VI is the toxic species and is controlled by reflex speciation: any total-Cr result above 100 ppb triggers Cr-VI speciation, and any quantifiable Cr-VI fails.",
-        "reference_method": "Total Cr by ICP-MS; reflex Cr-VI speciation by IC-ICP-MS (e.g. EPA 218.6 / EN 15192) on any total-Cr > 100 ppb"
+        "type": "read_across",
+        "value": 50,
+        "value_exact": 50,
+        "provenance": "read-across",
+        "source_id": "nhmrc2025_crvi_drinking_water_50",
+        "source_jurisdiction": "AU",
+        "basis": "drinking water",
+        "source_scope": "drinking water",
+        "label": "Cr 50 ug/kg: disclosed read-across from AU nhmrc2025_crvi_drinking_water_50 (drinking water). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell.",
+        "substantiation": "Disclosed read-across, register-verified (nhmrc2025_crvi_drinking_water_50). Nearest applicable sovereign Cr ceiling for this product form. The source instrument writes the drinking-water chromium ceiling on the hexavalent species; it is adopted here as the total-chromium ceiling and disclosed as such, with the hexavalent fraction bound more tightly in the Cr-VI cell. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
         "type": "gov",

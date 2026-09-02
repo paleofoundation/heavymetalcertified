@@ -325,20 +325,28 @@
         ]
       },
       "MeHg": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "There is no methylmercury biomagnification pathway in terrestrial meat; bounded by total mercury, measured on every lot.",
-        "reference_method": "Total Hg by EPA 7473 or ICP-MS; reflex MeHg speciation only on an elevated total-Hg result.",
+        "provenance": "subsumed",
+        "subsumed_by": "tHg",
         "bounded_by": "tHg",
-        "feed_floor": null
+        "basis_class": "speciation-bounded",
+        "rationale": "MeHg carries no product-specific sovereign cell; it is a component of and bounded by its parent total tHg (MeHg <= tHg), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "MeHg speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       },
       "Ni": {
-        "type": "control",
-        "value": null,
-        "control": "No government sets a nickel maximum for meat or meat products; total nickel is measured on every lot as a mandatory surveillance control.",
-        "reference_method": "Total Ni by ICP-MS.",
-        "bounded_by": null,
-        "feed_floor": null
+        "type": "read_across",
+        "value": 800,
+        "value_exact": 800,
+        "provenance": "read-across",
+        "source_id": "eu2024_ni_cereals_800",
+        "source_jurisdiction": "EU",
+        "basis": "product as placed on market",
+        "source_scope": "cereals except durum/rice/husked-rice/pseudocereal/oat rows",
+        "label": "Ni 800 ug/kg: disclosed read-across from EU eu2024_ni_cereals_800 (cereals except durum/rice/husked-rice/pseudocere). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (eu2024_ni_cereals_800). Nearest applicable sovereign Ni ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Sn": {
         "type": "read_across",
@@ -355,12 +363,17 @@
         "feed_floor": null
       },
       "Al": {
-        "type": "control",
-        "value": null,
-        "control": "No government sets an aluminium contaminant maximum for general (non-infant) human foods; the only human-food aluminium numbers are permitted additive-residue limits, not contaminant maxima. Aluminium is measured on every lot as a mandatory surveillance control.",
-        "reference_method": "Total Al by ICP-MS after microwave acid digestion.",
-        "bounded_by": null,
-        "feed_floor": null
+        "type": "read_across",
+        "value": 100000,
+        "value_exact": 100000,
+        "provenance": "read-across",
+        "source_id": "cn_gb2760_2024_al_baked_foods_100000",
+        "source_jurisdiction": "CN",
+        "basis": "product as placed on market; dry sample, calculated as Al",
+        "source_scope": "baked foods (bread, pastries, cakes, biscuits, cookies, crackers); deep-fried flour products; batter, breading, and frying powder",
+        "label": "Al 100000 ug/kg: disclosed read-across from CN cn_gb2760_2024_al_baked_foods_100000 (baked foods (bread, pastries, cakes, biscuits, c). Filled by the completeness sweep; nearest applicable sovereign for this matrix and basis.",
+        "substantiation": "Disclosed read-across, register-verified (cn_gb2760_2024_al_baked_foods_100000). Nearest applicable sovereign Al ceiling for this product form. Not occurrence-derived.",
+        "filled_by": "completeness-sweep"
       },
       "Cr": {
         "type": "read_across",
@@ -392,12 +405,15 @@
         ]
       },
       "Cr-VI": {
-        "type": "not_material",
+        "type": "subsumed",
         "value": null,
-        "control": "Hexavalent chromium reduces to Cr(III) in a reducing meat matrix and carries no stable burden; bounded by total chromium, measured on every lot. Any quantifiable Cr(VI) on a total-Cr exceedance fails certification.",
-        "reference_method": "Total Cr by ICP-MS; Cr(VI) by EPA 3060A with IC-ICP-MS / EN 15192 on a total-Cr exceedance.",
+        "provenance": "subsumed",
+        "subsumed_by": "Cr",
         "bounded_by": "Cr",
-        "feed_floor": null
+        "basis_class": "speciation-bounded",
+        "rationale": "Cr-VI carries no product-specific sovereign cell; it is a component of and bounded by its parent total Cr (Cr-VI <= Cr), an enforceable ceiling via reflex speciation rather than an empty cell.",
+        "reference_method": "Cr-VI speciation reflexed when the parent total reaches min(species limit, 50 percent of the parent-total limit); the species never substitutes for the parent-total report.",
+        "filled_by": "completeness-sweep"
       }
     }
   },
