@@ -48,18 +48,28 @@ function cellState(c) {
   return "EMPTY"
 }
 
+// Compiled records come in two shapes: variant-keyed (`variants.default` / first variant) and
+// top-level `cells` (cat4, cat5, cat11, cat21, cat23 ... every category compiled by the generalized
+// pipeline). Both must be read, or the manifest silently omits the larger half of the corpus.
+function cellsOf(rec) {
+  if (rec.variants && typeof rec.variants === "object") {
+    const vs = rec.variants
+    return vs.default || Object.values(vs)[0] || {}
+  }
+  if (rec.cells && typeof rec.cells === "object") return rec.cells
+  return null
+}
+
 function panelOf(meta, rec) {
   if (meta && Array.isArray(meta.panel) && meta.panel.length) return meta.panel
-  const vs = rec.variants || {}
-  const cells = vs.default || Object.values(vs)[0] || {}
-  return Object.keys(cells)
+  return Object.keys(cellsOf(rec) || {})
 }
 
 // A standard carries a PRODUCTION DOI if its content page frontmatter has a `cert_doi:` (the field
 // mint-dois.mjs writes; `doi:` accepted as a fallback) that is a real DOI (10.<prefix>/...) and is
 // NOT the DataCite test/sandbox prefix (10.5072 / 10.82XXX). The assigned production prefix is
 // configured via DATACITE_PREFIX; a test DOI never satisfies REGISTERED.
-const TEST_PREFIXES = ["10.5072", "10.82"] // datacite sandbox families
+const TEST_PREFIXES = ["10.5072", "10.82", "10.84435"] // datacite sandbox families + the issued sandbox prefix
 function productionDoi(slug) {
   const f = path.join(CONTENT, `${slug}.md`)
   if (!fs.existsSync(f)) return null
@@ -79,10 +89,9 @@ for (const dir of fs.readdirSync(DATA).filter((d) => d.endsWith("-compiled"))) {
   for (const f of fs.readdirSync(path.join(DATA, dir)).filter((x) => x.endsWith(".json") && !x.startsWith("derivation"))) {
     let rec
     try { rec = JSON.parse(fs.readFileSync(path.join(DATA, dir, f), "utf8")) } catch { continue }
-    if (!rec.variants) continue
+    const cells = cellsOf(rec)
+    if (!cells) continue
     const slug = rec.slug || f.replace(/\.json$/, "")
-    const vs = rec.variants
-    const cells = vs.default || Object.values(vs)[0] || {}
     const panel = panelOf(meta, rec)
     const empties = panel.filter((a) => cellState(cells[a]) === "EMPTY")
     const complete = empties.length === 0
