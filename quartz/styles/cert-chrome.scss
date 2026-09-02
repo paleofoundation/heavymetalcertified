@@ -178,6 +178,7 @@ a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 25
 .hmtc-nav .hmi-nav-count,
 .hmtc-search-label,
 .hmtc-login,
+.hmtc-topnav-verify,
 .hmtc-apply,
 .hmtc-hb-crumb,
 .hmtc-hb-dek,
@@ -336,6 +337,11 @@ header.hmi-topnav-shell::after {
 .hmtc-search-kbd { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: #b7aeae; border: 1px solid #ebe4de; border-radius: 2px; padding: 1px 4px; }
 .hmtc-login { font-size: 12.5px; color: #736b6b; flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
 .hmtc-login:hover { color: #9f2727; }
+// Verify a certificate: a plain text link at the same weight as Log in (a second
+// filled control would compete with Get started). Distinct from .hmtc-verify,
+// which is the right-rail "Found an error?" box, not a nav control.
+.hmtc-topnav-verify { font-size: 12.5px; color: #736b6b; flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
+.hmtc-topnav-verify:hover { color: #9f2727; }
 .hmtc-apply {
   font-size: 12.5px;
   color: #fff !important;

@@ -5,8 +5,8 @@ import { navPanels, type NavPanel } from "./generated/navPanels"
 //
 // Three properties this markup is built to guarantee, in order of importance:
 //
-// 1. **Crawlable.** Every panel is server-rendered in full on every page. All
-//    68 hrefs and their link text are in the initial HTML, and the panel is
+// 1. **Crawlable.** Every panel is server-rendered in full on every page. Every
+//    href and its link text are in the initial HTML, and the panel is
 //    hidden with `visibility`, never `display:none` or `[hidden]`. Googlebot,
 //    GPTBot, ClaudeBot and PerplexityBot do not click, so a panel whose contents
 //    arrive on interaction is a panel they never see

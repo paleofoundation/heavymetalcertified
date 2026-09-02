@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { pathToRoot, type FullSlug } from "../util/path"
+import { pathToRoot, resolveRelative, type SimpleSlug, type FullSlug } from "../util/path"
 import { i18n } from "../i18n"
 import { MegaMenu } from "./MegaMenu"
 import style from "./styles/topNav.scss"
@@ -22,8 +22,8 @@ import searchScript from "./scripts/search.inline"
 // (lines 41–109). renderPage.tsx lifts this into a full-bleed sticky
 // <header class="hmi-topnav-shell">; the shell carries the white ground +
 // bottom rule (see cert-chrome.scss). Left→right: brand (mark + wordmark),
-// the five mega-menu triggers, a flex spacer, then the actions group
-// (certificate lookup · Log in · Get started).
+// the three mega-menu doors (Standards · Method & Evidence · Certification), a
+// flex spacer, then the actions group (search · Verify · Log in · Get started).
   // The Log in / Get started pair points off-site at the brand app
   // (app.heavymetalcertified.com): Get started is the onboarding front
   // door for new brands, Log in is the returning-account entry. Absolute
@@ -115,6 +115,12 @@ export default (() => {
               </div>
             </div>
           </div>
+          {/* Verify a certificate: the signature public-trust action (retailers,
+              auditors, and consumers checking a mark). On-site page, so resolved
+              relative to the current slug, unlike the off-site Log in / Get started. */}
+          <a class="hmtc-topnav-verify" href={resolveRelative(slug, "verify" as SimpleSlug)}>
+            Verify
+          </a>
           <a class="hmtc-login" href="https://app.heavymetalcertified.com/login">
             Log in
           </a>

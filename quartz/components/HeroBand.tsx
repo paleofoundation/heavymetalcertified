@@ -66,6 +66,8 @@ const KIND: Record<string, string> = {
   guide: "Guide",
   rationale: "Rationale",
   "rationale-index": "Directory",
+  method: "Method",
+  certification: "Certification",
 }
 
 // First slug segment → breadcrumb section label + hub slug.
