@@ -93,6 +93,7 @@ const page = renderManualPage({
     { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" },
   ],
   pdfHref,
+  manualSlug: META.manual_slug,
   pdfLabel: `Download PDF · ${META.effective_date}`,
   railBody,
   effectiveDate: String(META.effective_date),

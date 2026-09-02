@@ -18,12 +18,22 @@ function walk(dir) {
   });
 }
 
+// A tag ends at the first ">" that is OUTSIDE a quoted attribute value. A
+// description such as "USP <2232>" is legal HTML inside content="..." (only <
+// and & must be escaped in attribute values), so the naive [^>]* scan truncated
+// the tag and reported 23 supplement standards as missing their description.
 function tags(html, name) {
-  return html.match(new RegExp(`<${name}\\b[^>]*>`, "gi")) ?? [];
+  return (
+    html.match(new RegExp(`<${name}\\b(?:[^>"']|"[^"]*"|'[^']*')*>`, "gi")) ??
+    []
+  );
 }
 
 function attribute(tag, name) {
-  return tag.match(new RegExp(`\\b${name}=["']([^"']*)["']`, "i"))?.[1];
+  const m = tag.match(
+    new RegExp(`\\b${name}=(?:"([^"]*)"|'([^']*)')`, "i"),
+  );
+  return m ? (m[1] ?? m[2]) : undefined;
 }
 
 function selectedAttribute(
