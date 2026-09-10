@@ -23,7 +23,7 @@
 
 /* the proof grid owns layout — free .page's width + neutralise the base grid */
 .page.proof { max-width: none; padding: 0; }
-.page.proof > #quartz-body { display: block; max-width: none; }
+.page.proof > #quartz-body { display: block; max-width: none; padding: 0; }
 .snav .snav-further { margin-bottom: 4px; }
 .snav .snav-further > summary { list-style: none; }
 .snav .snav-further > summary::-webkit-details-marker { display: none; }
@@ -91,10 +91,11 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 .proofnav .ask:hover { background: var(--burg-dark); }
 
 /* ---------- page grid (wide 3-col) ---------- */
-.proof-container { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; }
-.proof-layout { display: grid; grid-template-columns: 232px minmax(0, 1fr) 288px; gap: 44px; align-items: start; padding: 30px 0 70px; }
+.proof-container { max-width: var(--maxw); box-sizing: border-box; margin: 0 auto; padding: 0 48px; }
+.proof-layout { display: grid; grid-template-columns: 264px minmax(0, 1fr) 340px; gap: 0; align-items: start; padding: 30px 0 70px; }
 
 /* left section nav */
+.proof:not(.proof-home) .proof-layout > :is(.snav, .proof-main, .rail) { min-width: 0; padding-inline: 28px; }
 .snav { position: sticky; top: 88px; font-size: 14.5px; }
 .snav .grp { display: block; margin-bottom: 4px; }
 .snav a.sec { display: block; color: var(--body); padding: 8px 12px; border-radius: 8px; font-weight: 500; }
@@ -272,7 +273,9 @@ ol.hist-timeline::before { content: ""; position: absolute; left: 5px; top: 7px;
 .hist-commit { display: inline-block; margin-top: 4px; font-size: 12.5px; color: var(--burg); font-family: var(--codeFont, ui-monospace, monospace); }
 .hist-commit:hover { text-decoration: underline; }
 
-@media (max-width: 1080px) {
+@media (max-width: 1149px) {
+  .proof-container { padding-inline: 24px; }
+  .proof:not(.proof-home) .proof-layout > :is(.snav, .proof-main, .rail) { padding-inline: 0; }
   .proof-layout { grid-template-columns: 1fr; gap: 26px; }
   .snav, .rail { position: static; }
   .snav { display: flex; flex-wrap: wrap; gap: 6px; }

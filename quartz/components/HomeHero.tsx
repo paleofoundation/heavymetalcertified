@@ -1,0 +1,25 @@
+export function HomeHero({ fm }: { fm: Record<string, any> }) {
+  const rows: string[][] = Array.isArray(fm.home_snapshot) ? fm.home_snapshot : []
+  return (
+    <section class="hmtc-home-hero" aria-label="Heavy Metal Certified" data-no-cite>
+      <div class="hmtc-home-hero-grid">
+        <div class="hmtc-home-copy">
+          <h1 class="hmtc-home-title">Published standards<br /><span>for heavy metals.</span></h1>
+          <p class="hmtc-home-dek">Product-specific limits for eight priority metals. Independent laboratory testing and ongoing lot surveillance support every certification.</p>
+          <nav class="hmtc-home-actions" aria-label="Explore certification">
+            <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Get Started <span aria-hidden="true">↗</span></a>
+            <a class="hmtc-home-action" href="/briefings/the-big-8">The Big 8 <span aria-hidden="true">→</span></a>
+          </nav>
+        </div>
+        <aside class="hmtc-home-sidebar" aria-label="Program snapshot">
+          <section class="hmtc-home-snapshot" aria-label="Program snapshot">
+            <div class="hmtc-home-snapshot-inner"><h2>Program at a glance</h2>
+            <p class="hmtc-home-snapshot-date">As of {fm.home_snapshot_date}</p>
+            <dl>{rows.map(([label,value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+            <a href="/standards">Explore the standards register <span aria-hidden="true">→</span></a></div>
+          </section>
+        </aside>
+      </div>
+    </section>
+  )
+}

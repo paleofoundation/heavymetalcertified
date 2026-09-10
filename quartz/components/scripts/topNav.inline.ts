@@ -53,15 +53,19 @@ function setupTopNav() {
   // fire again for every descendant. The paired timers are what stop a pointer
   // travelling across the bar from flashing five panels on its way to the Ask
   // pill.
-  const onEnter = (item: HTMLLIElement) => () => {
+  const canHover = () => window.matchMedia("(min-width: 1200px) and (hover: hover) and (pointer: fine)").matches
+  const onEnter = (item: HTMLLIElement) => (e: PointerEvent) => {
+    if (e.pointerType === "touch" || !canHover()) return
     clearTimers()
     openTimer = window.setTimeout(() => {
+      if (!canHover()) return
       closeAll(item)
       setOpen(item, true)
     }, OPEN_DELAY)
   }
 
   const onLeave = () => {
+    if (!canHover()) return
     clearTimers()
     closeTimer = window.setTimeout(() => closeAll(), CLOSE_DELAY)
   }
@@ -81,12 +85,13 @@ function setupTopNav() {
 
   const onItemKeydown = (item: HTMLLIElement, index: number) => (e: KeyboardEvent) => {
     const toggle = item.querySelector<HTMLButtonElement>(".hmi-nav-toggle")
+    const trigger = toggle?.getClientRects().length ? toggle : item.querySelector<HTMLAnchorElement>(".hmi-nav-top")
     switch (e.key) {
       case "Escape":
         if (isOpen(item)) {
           e.preventDefault()
           setOpen(item, false)
-          toggle?.focus()
+          trigger?.focus()
         }
         break
       case "ArrowDown":
@@ -101,7 +106,7 @@ function setupTopNav() {
         if (isOpen(item)) {
           e.preventDefault()
           setOpen(item, false)
-          toggle?.focus()
+          trigger?.focus()
         }
         break
       case "ArrowRight":
@@ -120,6 +125,9 @@ function setupTopNav() {
   }
 
   const onItemFocusOut = (item: HTMLLIElement) => (e: FocusEvent) => {
+    // In the stacked drawer, collapsing on pointer-down moves the next link
+    // before pointer-up and can cancel its click. Close via explicit controls.
+    if (!window.matchMedia("(min-width: 1200px)").matches) return
     const to = e.relatedTarget as Node | null
     if (to && item.contains(to)) return
     setOpen(item, false)

@@ -1,9 +1,10 @@
 .hmi-cite-page {
+  scroll-margin-top: 100px;
   margin: 2rem 0 0.5rem;
   padding: 0.85rem 1rem;
   border: 1px solid var(--lightgray);
   border-left: 3px solid var(--secondary);
-  border-radius: 8px;
+  border-radius: 3px;
   background: var(--highlight);
   font-size: 0.9rem;
 
@@ -16,7 +17,7 @@
   }
 
   .hmi-cite-label {
-    font-weight: 600;
+    font-weight: 400;
     color: var(--dark);
   }
 
@@ -38,7 +39,7 @@
     background: var(--light);
     color: var(--dark);
     border: 1px solid var(--lightgray);
-    border-radius: 6px;
+    border-radius: 3px;
     padding: 0.35rem 0.7rem;
     cursor: pointer;
     text-decoration: none;
@@ -46,6 +47,7 @@
     &:hover { background: var(--lightgray); }
   }
 
+  [data-hmi-cite-detail][hidden] { display: none; }
   [data-hmi-cite-detail] {
     margin-top: 0.85rem;
     display: flex;
@@ -57,7 +59,7 @@
     background: var(--lightgray);
     color: var(--dark);
     padding: 0.6rem 0.75rem;
-    border-radius: 6px;
+    border-radius: 3px;
     font-family: var(--codeFont, ui-monospace, monospace);
     font-size: 0.82rem;
     white-space: pre-wrap;
@@ -66,6 +68,7 @@
 
   .hmi-cite-detail-copy {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.65rem;
   }
@@ -96,7 +99,7 @@
 
   .hmi-cite-share-label {
     font-size: 0.78rem;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--gray);
     text-transform: uppercase;
     letter-spacing: 0.06em;

@@ -1,3 +1,5 @@
+import { documentPdf } from "./documentMetadata"
+import { currentDocumentDoi } from "./DocumentDoi"
 import { i18n } from "../i18n"
 import { canonicalUrl, FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
@@ -174,7 +176,7 @@ function CitationMetadata({
       frontmatterString(frontmatter.updated) ??
       frontmatterString(frontmatter.created),
     )
-    const certDoi = frontmatterString(frontmatter.cert_doi) ?? frontmatterString(frontmatter.doi)
+    const certDoi = currentDocumentDoi(slugStr, frontmatter)
     const author = frontmatterString(frontmatter.author) ?? "Pendergrass, Karen"
     const abstract = frontmatterString(frontmatter.scholar_abstract) ??
       frontmatterString(frontmatter.socialDescription) ??
@@ -183,7 +185,8 @@ function CitationMetadata({
     const keywords = keywordList.length ? keywordList.join(", ") : undefined
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
-    const pdfUrl = configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
+    const currentPdf = documentPdf(frontmatter, slugStr)
+    const pdfUrl = currentPdf ? `https://heavymetalcertified.com${currentPdf}` : configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
     // A URL path is not a report number; emitting one as `citation_technical_
     // report_number` publishes malformed bibliographic metadata. Every
     // scholar-eligible page is tagged as a technical report of the Institute
