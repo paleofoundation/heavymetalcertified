@@ -34,6 +34,7 @@
     ],
     "tier_footnote": "",
     "reconstitution_note": false,
+    "speciation_defining": false,
     "compiled_dir": "cat30-compiled",
     "method_label": "Strictest government ML",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
@@ -44,6 +45,7 @@
     {
       "slug": "cooking-oils-other",
       "name": "Cooking oils, other (canola, sunflower, coconut, avocado, sesame)",
+      "hmi_link": "https://heavymetalindex.com/products/cooking-oils-other",
       "description": "The Heavy Metal Tested & Certified standard for Cooking oils, other (canola, sunflower, coconut, avocado, sesame) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
       "version": "1.0 (2026-08-14)",
       "connections": [
@@ -71,6 +73,7 @@
     {
       "slug": "olive-oil",
       "name": "Olive oil (virgin, refined, pomace)",
+      "hmi_link": "https://heavymetalindex.com/products/olive-oil",
       "description": "The Heavy Metal Tested & Certified standard for Olive oil (virgin, refined, pomace) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
       "version": "1.0 (2026-08-14)",
       "connections": [

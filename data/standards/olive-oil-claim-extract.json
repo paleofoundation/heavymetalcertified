@@ -1,0 +1,22 @@
+{
+  "_doc": "S-DOI-OLIVE-1 claim-table extract. Eight totals always numeric; iAs/MeHg omitted (totals-only); Cr-VI published numeric ≤ Cr. Not a mint record.",
+  "slug": "olive-oil",
+  "mission": "S-DOI-OLIVE-1",
+  "mint": "HOLD",
+  "speciation_defining": false,
+  "claim_table": [
+    { "analyte": "Pb", "value_ppb": 80, "kind": "gov_floor", "jurisdiction": "GSO" },
+    { "analyte": "Cd", "value_ppb": 30, "kind": "gov_floor", "jurisdiction": "IL" },
+    { "analyte": "tAs", "value_ppb": 100, "kind": "gov_floor", "jurisdiction": "CODEX" },
+    { "analyte": "tHg", "value_ppb": 20, "kind": "gov_floor", "jurisdiction": "IL" },
+    { "analyte": "Ni", "value_ppb": 100, "kind": "disclosed_read_across", "jurisdiction": "EU" },
+    { "analyte": "Sn", "value_ppb": 200000, "kind": "disclosed_read_across", "jurisdiction": "EU" },
+    { "analyte": "Al", "value_ppb": 1000, "kind": "disclosed_read_across", "jurisdiction": "EU" },
+    { "analyte": "Cr", "value_ppb": 300, "kind": "disclosed_read_across", "jurisdiction": "CN" },
+    { "analyte": "Cr-VI", "value_ppb": 10, "kind": "disclosed_read_across", "jurisdiction": "US-CA", "parent": "Cr", "parent_value_ppb": 300 }
+  ],
+  "omitted_from_claim_table": [
+    { "analyte": "iAs", "reason": "totals-only; speciation not defining; compiled subsumed binding_total=100 ≤ tAs 100" },
+    { "analyte": "MeHg", "reason": "totals-only; speciation not defining; compiled subsumed binding_total=20 ≤ tHg 20" }
+  ]
+}

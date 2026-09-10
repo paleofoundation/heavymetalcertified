@@ -16,6 +16,9 @@
 import fs from "node:fs"
 import path from "node:path"
 import { renderScholarlyPdf } from "./pdf/scholarly-pdf.mjs"
+import {
+  SPECIES, isTotalsOnlySlug, isFirmClaimCell, speciesParentViolations,
+} from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const OUT = path.join(REPO, "content/static/standards")
@@ -57,7 +60,11 @@ function cellRow([k, label, tier], c) {
     const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
     return `| ${label} | Tier ${tier} | ${fmtNum(c.value)} | ${basis} |`
   }
-  if (t === "subsumed") return `| ${label} | Tier ${tier} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
+  if (t === "subsumed") {
+    const n = c.value ?? c.binding_total
+    if (n != null) return `| ${label} | Tier ${tier} | ${fmtNum(n)} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
+    return `| ${label} | Tier ${tier} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
+  }
   if (t === "control") return `| ${label} | Tier ${tier} | control | measured every lot; no human-food maximum |`
   if (t === "not_material") return `| ${label} | Tier ${tier} | n/m | not material in this matrix |`
   return `| ${label} | Tier ${tier} | — | — |`
@@ -68,7 +75,11 @@ function derivRow([k, label, tier], c) {
     const src = c.type === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : "government maximum level"
     return `| ${label} | ${fmtNum(c.value)} | ${src} |`
   }
-  if (c.type === "subsumed") return `| ${label} | ≤ ${c.subsumed_by || c.bounded_by} | ${(c.rationale || "bounded by parent total").replace(/\|/g, "/")} |`
+  if (c.type === "subsumed") {
+    const n = c.value ?? c.binding_total
+    const shown = n != null ? fmtNum(n) : `≤ ${c.subsumed_by || c.bounded_by}`
+    return `| ${label} | ${shown} | ${(c.label || c.rationale || "bounded by parent total").replace(/\|/g, "/")} |`
+  }
   if (c.type === "control") return `| ${label} | control | ${(c.control || c.rationale || "mandatory surveillance control").replace(/\|/g, "/")} |`
   if (c.type === "not_material") return `| ${label} | n/m | ${(c.control || c.rationale || "not material").replace(/\|/g, "/")} |`
   return `| ${label} | — | — |`
@@ -92,6 +103,15 @@ async function build(slug) {
   const pagePath = path.join(CONTENT, `${slug}.md`)
   const pfm = fs.existsSync(pagePath) ? readFm(fs.readFileSync(pagePath, "utf8")) : {}
   const cells = cellsOf(rec)
+  const caps = speciesParentViolations(cells)
+  if (caps.length) {
+    throw new Error(`${slug} species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+  }
+  const claimAnalytes = ANALYTES.filter(([k]) => {
+    if (!SPECIES.includes(k)) return true
+    if (isTotalsOnlySlug(slug)) return isFirmClaimCell(cells[k])
+    return true
+  })
   const title = (pfm.title || `${rec.name || slug}: HMTc Standard`).replace(/:?\s*HMTc Standard.*$/i, "").trim()
   const basisLabel = (rec.native_basis || pfm.native_basis) === "as_sold" ? "as sold" : (rec.native_basis || pfm.native_basis) === "as_consumed" ? "as consumed" : (pfm.native_basis || "as placed on market")
   const dek = (pfm.description || `The Heavy Metal Tested & Certified certification standard for ${title}, stated ${basisLabel}. Every analyte is set to the strictest applicable government maximum for the nearest analog; the derivation is disclosed for each cell.`).replace(/&amp;/g, "&")
@@ -99,7 +119,7 @@ async function build(slug) {
   const version = pfm.standard_version || rec.standard_version || "1.0"
   const eff = pfm.effective_date || rec.effective_date || "2026"
 
-  const limitRows = ANALYTES.map((a) => cellRow(a, cells[a[0]])).join("\n")
+  const limitRows = claimAnalytes.map((a) => cellRow(a, cells[a[0]])).join("\n")
   const derivRows = ANALYTES.map((a) => derivRow(a, cells[a[0]])).join("\n")
 
   const body = [

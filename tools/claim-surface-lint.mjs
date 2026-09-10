@@ -25,7 +25,7 @@ import path from "node:path"
 import {
   evaluateClaimSurface, loadCompiledRecords, isRiceInfantCereal, isRiceCerealCanary,
   isBannedLimitText, classifyPanelHeader, parseMasterLimitRows, requiredPanelSize,
-  requiredClaimSurface,
+  requiredClaimSurface, isTotalsOnlySlug, speciesParentViolations, CLAIM_TOTALS,
 } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
@@ -55,6 +55,13 @@ for (const row of compiled) {
   if (isRiceCerealCanary(row.slug) && ev.claim_empty.length) {
     add(fail, `compiled ${row.slug}: claim-surface empty ${ev.claim_empty.join(", ")}`)
   }
+  const caps = speciesParentViolations(row.cells)
+  if (caps.length) {
+    add(fail, `compiled ${row.slug}: species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+  }
+  if (isTotalsOnlySlug(row.slug) && ev.claim_empty.length) {
+    add(fail, `compiled ${row.slug}: totals-only claim-surface empty ${ev.claim_empty.join(", ")}`)
+  }
 }
 
 if (fs.existsSync(CONTENT)) {
@@ -67,10 +74,15 @@ if (fs.existsSync(CONTENT)) {
     const rec = bySlug.get(slug)
     const rice = isRiceCerealCanary(slug) || [...bySlug.values()].some((r) => r.slug.startsWith(slug) && isRiceCerealCanary(r.slug))
     const riceIas = isRiceInfantCereal(slug) || [...bySlug.values()].some((r) => r.slug.startsWith(slug) && isRiceInfantCereal(r.slug))
+    const totalsOnly = isTotalsOnlySlug(slug)
     const cells = rec?.cells || {}
     const required = requiredForPage(slug, cells)
     const need = requiredPanelSize(slug, rec?.name)
     const claimsFull = /Every analyte carries a firm ceiling/i.test(raw)
+    const caps = speciesParentViolations(cells)
+    if (caps.length) {
+      add(fail, `${slug}: species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+    }
 
     for (const h of classifyPanelHeader(header, { slug, name: rec?.name, required: need })) {
       const msg = `${slug}: header "${h.text}" (${h.n}/${h.m} < required ${h.required} claim-surface)`
@@ -81,13 +93,30 @@ if (fs.existsSync(CONTENT)) {
     for (const row of rows) {
       const banned = isBannedLimitText(row.limit)
       if (!banned) continue
-      const onClaim = required.has(row.key) || (rice && row.key === "iAs")
+      const onClaim = required.has(row.key) || (rice && row.key === "iAs") || (totalsOnly && (required.has(row.key) || row.key === "iAs" || row.key === "MeHg"))
       if (!onClaim) continue
       const msg = `${slug}: LIMIT ${row.key}="${row.limit}" (${banned})`
-      if (rice || claimsFull || STRICT_CORPUS || banned === "monitored" || (banned === "subsumed" && rice)) {
+      if (rice || totalsOnly || claimsFull || STRICT_CORPUS || banned === "monitored" || (banned === "subsumed" && rice)) {
         add(fail, msg)
       } else {
         add(warn, msg)
+      }
+    }
+
+    if (totalsOnly) {
+      for (const key of CLAIM_TOTALS) {
+        const tr = rows.find((r) => r.key === key)
+        if (!tr) add(fail, `${slug}: totals-only Master Limit Table missing ${key}`)
+        else if (isBannedLimitText(tr.limit) || !/\d/.test(tr.limit)) {
+          add(fail, `${slug}: totals-only ${key} LIMIT is not numeric ("${tr.limit}")`)
+        }
+      }
+      for (const sp of ["iAs", "MeHg"]) {
+        const tr = rows.find((r) => r.key === sp)
+        if (!tr) continue
+        if (isBannedLimitText(tr.limit) || !/\d/.test(tr.limit)) {
+          add(fail, `${slug}: totals-only ${sp} on claim table is not numeric ("${tr.limit}") — omit or publish ≤ parent`)
+        }
       }
     }
 

@@ -17,6 +17,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
 import { renderRiskFlagForStandard } from "./lib/struggle-section.mjs"
+import { SPECIES, speciesParentViolations } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -169,7 +170,7 @@ function limitDisplay(analyte, variants) {
     if (p.val.value == null) {
       if (p.val.type === "not_material") return "n/m"
       if (p.val.type === "control") return "control"
-      if (p.val.type === "subsumed") return p.val.binding_total != null ? `&le;&#8201;${p.val.binding_total}` : "bounded"
+      if (p.val.type === "subsumed") return p.val.binding_total != null ? String(p.val.binding_total) : "bounded"
       return "&mdash;"
     }
     return String(p.val.value)
@@ -179,8 +180,18 @@ function limitDisplay(analyte, variants) {
 }
 
 // --- Master Limit Table -------------------------------------------------------
-function masterTable(variants, basisWord, tierNote, firmCount) {
-  const rows = PANEL.map((a, i) => {
+function claimPanelOf(cells) {
+  // Totals-only categories (olive oil / culinary oils): speciation is not a
+  // defining pathway. Omit iAs/MeHg unless they already carry a firm numeric ML.
+  // Cr-VI stays when it is a published number ≤ total Cr.
+  if (META.speciation_defining === false) {
+    return PANEL.filter((a) => !SPECIES.includes(a) || isFirm(cells[a]))
+  }
+  return PANEL
+}
+
+function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
+  const rows = claimPanel.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
@@ -192,13 +203,13 @@ function masterTable(variants, basisWord, tierNote, firmCount) {
   // enforceable ceiling; a CONTROL / not-material cell carries no standalone number at all. When the
   // only non-firm cells are bounded species, every analyte still has an enforceable ceiling, and the
   // note says so rather than implying an analyte is unspecified.
-  const boundedCount = PANEL.filter((a) => { const c = variants[0].cells[a]; return c && c.type === "subsumed" }).length
-  const controlCount = PANEL.filter((a) => { const c = variants[0].cells[a]; return c && (c.type === "control" || c.type === "not_material") }).length
-  const capNote = firmCount >= PANEL.length
+  const boundedCount = claimPanel.filter((a) => { const c = variants[0].cells[a]; return c && c.type === "subsumed" }).length
+  const controlCount = claimPanel.filter((a) => { const c = variants[0].cells[a]; return c && (c.type === "control" || c.type === "not_material") }).length
+  const capNote = firmCount >= claimPanel.length
     ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
     : controlCount === 0
-    ? `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
-    : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
+    ? `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
+    : `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
   return `<section id="limits" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
@@ -227,7 +238,12 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
     let hmtc, binds
     if (!c) { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "control") { hmtc = "control&sup4;"; binds = "screened"; anyControl = true }
-    else if (c.type === "subsumed") { hmtc = (c.binding_total != null ? `&le;&#8201;${c.binding_total}` : "bounded") + "&sup5;"; binds = `species &le; ${esc(c.subsumed_by || "total")}`; anySubsumed = true }
+    else if (c.type === "subsumed") {
+      const n = c.binding_total != null ? c.binding_total : c.value
+      hmtc = (n != null ? String(n) : "bounded") + "&sup5;"
+      binds = `species &le; ${esc(c.subsumed_by || "total")}`
+      anySubsumed = true
+    }
     else if (c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "read_across") {
       // Method v2.0 retired the occurrence-selected and precautionary numeric pathways. A record
@@ -364,7 +380,13 @@ for (const page of DOC.pages) {
     return { label: v.label, cells, native_basis: rec.native_basis }
   })
   const basisWord = basisWordOf(variants[0].native_basis)
-  const firmCount = PANEL.filter((a) => isFirm(variants[0].cells[a])).length
+  const caps = speciesParentViolations(variants[0].cells)
+  if (caps.length) {
+    console.error(`build-category-standard-pages: ${page.slug} species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+    process.exit(1)
+  }
+  const claimPanel = claimPanelOf(variants[0].cells)
+  const firmCount = claimPanel.filter((a) => isFirm(variants[0].cells[a])).length
   const version = page.version || META.default_version
   const vshort = version.split(" ")[0]
   const certDoi = page.cert_doi || null
@@ -398,7 +420,7 @@ for (const page of DOC.pages) {
     '  title: "Document versions"',
     `  body: "v${vshort} · ${META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     "snapshot:",
-    `  - { k: "Analytes limited", v: "${firmCount} / ${PANEL.length}" }`,
+    `  - { k: "Analytes limited", v: "${firmCount} / ${claimPanel.length}" }`,
     `  - { k: "Method", v: "${META.method_label || "Strictest government ML"}" }`,
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,
@@ -426,7 +448,7 @@ for (const page of DOC.pages) {
   })
   const body = [
     methodSection(page.name, basisWord, META.method_prose),
-    masterTable(variants, basisWord, tierNote, firmCount),
+    masterTable(variants, basisWord, tierNote, firmCount, claimPanel),
     derivation,
     occSection,
     riskFlag,

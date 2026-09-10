@@ -56,6 +56,7 @@
 //   node tools/mint-dois.mjs --emit                  # + write JSON payloads (needs DATACITE_PREFIX in env)
 //   node tools/mint-dois.mjs --manifest              # + write data/standards/doi-manifest.csv (human sign-off)
 //   node tools/mint-dois.mjs --types=standards --category=1   # scope
+//   node tools/mint-dois.mjs --types=standards --slug=olive-oil  # one standard (Elon PASS + creds still required)
 //   node tools/mint-dois.mjs --include-incomplete    # also mint standards with empty analyte cells
 //   node tools/mint-dois.mjs --live                  # deposit (requires credentials in env)
 //   node tools/mint-dois.mjs --live --state=register # deposit as Registered (not yet Findable) for QC
@@ -111,6 +112,7 @@ const doManifest = args.includes("--manifest")
 const includeIncomplete = args.includes("--include-incomplete")
 const limit = num(args.find((a) => a.startsWith("--limit=")))
 const onlyCategory = valOf(args.find((a) => a.startsWith("--category=")))
+const onlySlug = valOf(args.find((a) => a.startsWith("--slug=")))
 // Default to STANDARDS ONLY. Manuals/articles/briefings carry Zenodo deposit history that must be
 // reconciled deliberately (keep the Zenodo DOI, link via IsNewVersionOf/IsIdenticalTo — see the
 // DOI ledger) before minting, and the deposited-edition skip is only reliable once each such item
@@ -196,6 +198,7 @@ for (const [typeName, t] of Object.entries(TYPES)) {
     let fm
     try { fm = matter(raw).data } catch { skips.push([`${typeName}/${file}`, "frontmatter-parse-error"]); continue }
     const slug = fm.product_slug || file.replace(/\.md$/, "")
+    if (onlySlug && slug !== onlySlug) continue
     const rel = `${typeName}/${slug}`
 
     // Already deposited (its own record carries a DOI) → keep, never re-mint.

@@ -17,6 +17,33 @@ systematic and each assigned DOI is recorded in one place. Registrar is **DataCi
   no standard carries, so minting would have flipped **zero** REGISTERED gates).
 - **Status legend:** ⬜ pending · 🟨 metadata prepared · 🟦 submitted to DataCite · ✅ minted + `cert_doi` filled
 
+## S-DOI-OLIVE-1 — olive-oil (2026-09-10) · **MINT HOLD**
+
+Karen P0 for Kasandrinos. Cert-side claim surface is prepared; **do not mint DataCite in this PR.**
+
+| Gate | Status |
+|---|---|
+| 8 totals numeric (Pb 80, Cd 30, tAs 100, tHg 20, Ni 100, Sn 200000, Al 1000, Cr 300) | ✅ |
+| Totals-only claim table (iAs/MeHg omitted — speciation not defining) | ✅ |
+| Cr-VI 10 ≤ Cr 300 (published numeric) | ✅ |
+| Species≤parent kill-gate (`claim-surface` + `panel-coherence`) | ✅ |
+| Page + freeze PDF honest (no bounded/blank claim cells) | ✅ page+PDF in this PR |
+| Readiness COMPLETE for `olive-oil` | ✅ compiled |
+| REGISTERED (production DataCite DOI) | ❌ **MINT HOLD** |
+| Elon PASS | ❌ required before `--live` |
+| DataCite creds (`DATACITE_USER` / `PASSWORD` / `PREFIX`) | ❌ not in this environment |
+| HMI `ELON_BRIDGE` STATUS | ⬜ cert-side status is `docs/S-DOI-OLIVE-1.md` (HMI repo not in this PR) |
+
+**Remaining mint steps (Elon, after this PR is merged and `check:v3` passes):**
+
+1. Confirm DataCite Fabrica repository credentials and assigned prefix in the deploy environment (`DATACITE_MODE=live`).
+2. Elon **PASS** the olive-oil mint (human gate — this agent must not `--live`).
+3. Dry-run: `node tools/mint-dois.mjs --types=standards --slug=olive-oil`
+4. Live mint: `node tools/mint-dois.mjs --types=standards --slug=olive-oil --live` with `DATACITE_MODE=live`.
+5. Confirm `cert_doi` write-back on `content/standards/olive-oil.md` and a resolvable `https://doi.org/…` cite line.
+
+Default remains **MINT HOLD**. A claim-surface FAIL is still never mintable.
+
 ## Preflight audit + corrected first batch (2026-08-27)
 
 A six-agent adversarial audit returned NO-GO on the naive "mint everything" plan and caught defects
