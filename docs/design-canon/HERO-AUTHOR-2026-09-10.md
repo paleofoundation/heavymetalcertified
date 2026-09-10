@@ -1,13 +1,15 @@
-# HMTc hero and author update
+# Homepage and author sidebar: 10 September 2026
 
-Requested September 10: parallel yesterday’s HMI hero and author/sidebar improvements. This updates the older flat hero specification for these components while preserving the HMTc #9f2727 accent, Lora headings, system body font, measured-value typography, and 3px geometry.
+The requested reference is the live Heavy Metal Index homepage and article layout, with the HMTc palette retained. The homepage carries no author identity.
 
-The homepage uses a lighter central panel and a darker author panel, with the existing dated program snapshot below it. Interior pages keep their content and original snapshot data, adding the same author card only when frontmatter names Karen. Explicit other authors are retained. The new biography uses the HMI author identity verified September 9, ORCID 0000-0002-2348-7259, and the approved photograph.
+The homepage has an open, weight-400 Lora title, short description, two actions, and one warm-white program ledger. A restrained radial tint and soft ledger shadow add depth. There is no framed copy panel, logo masthead, numbered evidence strip, author portrait, ORCID, or DOI in this hero.
 
-DOI records are edition-aware. The current Infant and Child Foods manual has no DOI per data/manuals/manifest.json. Its existing Zenodo DOI 10.5281/zenodo.20771543 is shown only as an earlier, superseded deposited edition. A cited source DOI is never promoted to the DOI of the HMTc page. No identifiers were minted.
+Interior mastheads and the reading surface share a 1760px maximum width, 48px outer gutters, and columns of 264px / flexible / 340px with 28px internal insets. The title occupies the center band; the author sits in the right sidebar. Both grids collapse together at 1149px.
 
-This review starts from the published GitHub main (c1d41c2), excluding unpublished standards changes in the separate Desktop checkout. Review publishing uses private Sites access; changing the public domain requires a separate release decision.
+Author attribution is a 72px portrait, Author label, name and official ORCID icon, with the update date below. Hovering or focusing the portrait reveals the biography, affiliations, full ORCID, and profile link. Escape dismisses the disclosure without moving focus. Touch users can open the biography page directly. At narrow widths the portrait becomes 64px and the author appears below the introduction.
 
-Citation metadata uses the same edition-aware DOI lookup as the visible card, preventing citation importers from attaching the superseded identifier to the current edition. Published standards already cite Pendergrass, K.; they receive the same author card even when the generator omits author frontmatter. Institutional and sovereign-reference pages remain unassigned to a person.
+Document DOI records are quiet, hairline-separated sidebar metadata. They link only an actual deposited edition. The superseded infant/child manual DOI is explicitly labeled as an earlier edition; it is not presented as the current web edition DOI. IDs belonging to cited source papers are never attributed to the page author.
 
-The complete default build was run successfully. Its prebuild regenerates unrelated scientific content, so those generated changes were restored. `build:design-review` compiles the exact committed content without re-running the evidence generators, then runs the complete postbuild metadata/PDF pipeline. No standard values or evidence sources change in this review.
+Scientific source content and dated snapshot values remain those of the published source. The isolated branch and owner-only Sites review preserve the public site until publication is approved.
+
+Validation: production-content build with postbuild, TypeScript, design-lint, rendered v3 acceptance checks, and visual comparison of homepage and interior author placement. See design/v3-acceptance.cert.json for enforced absence of homepage attribution and collapsed biography state.

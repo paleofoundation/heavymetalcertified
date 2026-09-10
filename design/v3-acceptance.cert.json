@@ -8,11 +8,14 @@
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
       { "sel": "header", "prop": "position", "want": "sticky" },
       { "sel": ".hmtc-home-hero", "prop": "background-color", "want": "#9f2727" },
-      { "sel": ".hmtc-home-copy", "prop": "border-radius", "want": "3px" },
+      { "sel": ".hmtc-home-copy", "prop": "border-width", "want": "0px" },
       { "sel": ".hmtc-home-title", "prop": "color", "want": "#ffffff" },
+      { "sel": "header.hmi-topnav-shell", "prop": "margin", "want": "0px" },
+      { "sel": ".hmtc-home-snapshot", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": ".hmtc-home-evidence, .hmtc-home-masthead", "prop": "count", "want": 0 },
       { "sel": ".hmtc-home-h1", "prop": "absent", "want": true },
-      { "sel": ".hmtc-home-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-home-sidebar a[href=\"https://orcid.org/0000-0002-2348-7259\"]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-hero .hmtc-author-card", "prop": "count", "want": 0 },
+      { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
     ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
@@ -141,7 +144,12 @@
     ],
     "/briefings/the-big-8": [
       { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-hb-sidebar .hmtc-author-orcid", "prop": "count", "want": 1 }
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-orcid", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-author-portrait img", "prop": "width", "want": "72px" },
+      { "sel": ".hmtc-author-popover", "prop": "visibility", "want": "hidden" },
+      { "sel": ".hmtc-author-card", "prop": "border-width", "want": "0px" },
+      { "sel": "aside.rail", "prop": "padding-left", "want": "28px" },
+      { "sel": "aside.snav", "prop": "padding-left", "want": "28px" }
     ],
     "/authors/karen-pendergrass": [
       { "sel": ".hmtc-profile-image", "prop": "width", "want": "200px" },

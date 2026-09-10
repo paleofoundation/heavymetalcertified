@@ -1,3 +1,5 @@
+// @ts-ignore Quartz bundles .inline scripts as strings.
+import authorCardScript from "./scripts/authorCard.inline"
 import { AuthorCard, isKarenAuthor } from "./authorIdentity"
 import { DocumentDoi } from "./DocumentDoi"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -173,7 +175,8 @@ export default (() => {
 
     return (
       <section class="hmtc-heroband">
-        <div class={hasSidebar ? "hmtc-heroband-inner" : "hmtc-heroband-inner hmtc-heroband-inner--full"}>
+        <div class="hmtc-heroband-inner">
+          <div class="hmtc-hb-context" aria-hidden="true"><span>Heavy Metal Certified</span><span>{sectionLabel ?? badge}</span></div>
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">
               <a href={base || "/"}>HMTc</a>
@@ -221,7 +224,7 @@ export default (() => {
                         ) : null}
                       </span>
                     ) : null}
-                    {updated ? <span class="hmtc-hb-stamp">UPDATED {updated}</span> : null}
+                    {updated && !hasAuthorCard ? <span class="hmtc-hb-stamp">UPDATED {updated}</span> : null}
                   </>
                 )}
                 {heroAction && heroAction.label ? (
@@ -233,7 +236,7 @@ export default (() => {
             ) : null}
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
-          {hasAuthorCard && <AuthorCard />}
+          {hasAuthorCard && <AuthorCard updated={updated} />}
           {hasSnapshot ? (
             <div class="hmtc-hb-snap">
               <div class="hmtc-hb-snap-head">{snapTitle}</div>
@@ -253,5 +256,6 @@ export default (() => {
       </section>
     )
   }
+  HeroBand.afterDOMLoaded = authorCardScript
   return HeroBand
 }) satisfies QuartzComponentConstructor
