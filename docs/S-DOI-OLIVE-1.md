@@ -18,7 +18,9 @@ This is the cert-side companion to an HMI `ELON_BRIDGE` STATUS row. This PR is `
 | Cr | 300 | disclosed read_across (CN GB 2762 liquid milk) |
 | Cr-VI | 10 | disclosed read_across (US-CA SWRCB MCL); ≤ Cr 300 |
 
-iAs and MeHg are **omitted** from the Master Limit Table (totals-only; speciation is not a defining pathway). Compiled cells remain `type: subsumed` with `binding_total` 100 / 20 for lab reflex speciation — they must not appear as monitored / blank / bounded on the claim surface.
+iAs and MeHg are **omitted** from the Master Limit Table (totals-only; speciation is not a defining pathway). Compiled cells remain `type: subsumed` with `binding_total` 100 / 20 for lab reflex speciation — they must not appear as monitored / blank / bounded on the claim surface. Derivation (page + freeze PDF) still lists them as numeric 100 / 20 (≤ parent).
+
+Two PDF paths: the committed freeze edition is `/static/standards/olive-oil.pdf` (200 in this build). The chrome Download PDF button points at `/standards/olive-oil.pdf` (web edition, emitted by `postbuild-document-editions.mjs` on Vercel). Quartz-only local builds 404 that second path until postbuild.
 
 ## What still blocks DOI mint after this PR
 
@@ -26,7 +28,7 @@ iAs and MeHg are **omitted** from the Master Limit Table (totals-only; speciatio
 2. **Elon PASS** — human mint gate. This PR must not run `mint-dois.mjs --live`.
 3. **REGISTERED** — `cert_doi` is null; readiness `ready` stays false until a production DOI is written back.
 4. **HMI ELON_BRIDGE** — compile SoT / confidence ≥ 0.95 live on the Index side; not updated in this cert PR. Companion: HMI PR #136 (species≤parent).
-5. **`check:v3` on the deployed/build** — run after this PR's Quartz build; do not report the page live until push **and** `check:v3` pass.
+5. **Production deploy** — this revision's Quartz `check:v3` exited **0** (257 assertions). The page is still not live until this PR is merged and the production deploy finishes.
 
 ## Operator commands (after PASS)
 

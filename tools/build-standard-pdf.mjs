@@ -112,8 +112,9 @@ async function build(slug) {
     if (isTotalsOnlySlug(slug)) return isFirmClaimCell(cells[k])
     return true
   })
-  const title = (pfm.title || `${rec.name || slug}: HMTc Standard`).replace(/:?\s*HMTc Standard.*$/i, "").trim()
-  const basisLabel = (rec.native_basis || pfm.native_basis) === "as_sold" ? "as sold" : (rec.native_basis || pfm.native_basis) === "as_consumed" ? "as consumed" : (pfm.native_basis || "as placed on market")
+  const title = (pfm.title || `${rec.name || slug}: HMTc Standard`).replace(/\s*[—–\-:]*\s*HMTc Standard.*$/i, "").trim()
+  const basisRaw = String(pfm.native_basis || rec.native_basis || "as placed on market").toLowerCase().replace(/[_-]/g, " ")
+  const basisLabel = /\bsold\b/.test(basisRaw) ? "as sold" : /\bconsumed\b/.test(basisRaw) ? "as consumed" : (basisRaw || "as placed on market")
   const dek = (pfm.description || `The Heavy Metal Tested & Certified certification standard for ${title}, stated ${basisLabel}. Every analyte is set to the strictest applicable government maximum for the nearest analog; the derivation is disclosed for each cell.`).replace(/&amp;/g, "&")
   const catName = pfm.category_name || rec.category_name || ""
   const version = pfm.standard_version || rec.standard_version || "1.0"

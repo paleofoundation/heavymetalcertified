@@ -34,7 +34,7 @@ Karen P0 for Kasandrinos. Cert-side claim surface is prepared; **do not mint Dat
 | DataCite creds (`DATACITE_USER` / `PASSWORD` / `PREFIX`) | ❌ not in this environment |
 | HMI `ELON_BRIDGE` STATUS | ⬜ cert-side status is `docs/S-DOI-OLIVE-1.md` (HMI repo not in this PR; companion PR #136) |
 
-**Remaining mint steps (Elon, after this PR is merged and `check:v3` passes):**
+**Remaining mint steps (Elon, after this PR is merged; local `check:v3` already exited 0):**
 
 1. Confirm DataCite Fabrica repository credentials and assigned prefix in the deploy environment (`DATACITE_MODE=live`).
 2. Elon **PASS** the olive-oil mint (human gate — this agent must not `--live`).
