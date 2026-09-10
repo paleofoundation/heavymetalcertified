@@ -25,8 +25,9 @@
 //
 // ── Safety gates baked in after the preflight audit ──
 //   * ELIGIBILITY: standards must be type:standard with a real category and must NOT be
-//     type:standard-in-development / standards-finder / scholar_eligible:false. Manuals/
-//     articles/briefings must be scholar_eligible:true.
+//     type:standard-in-development / standards-finder. `scholar_eligible` is NOT a mint
+//     gate for standards (it is the Scholar-indexing subset flag; generators default every
+//     standard to false). Manuals/articles/briefings must be scholar_eligible:true.
 //   * COMPLETENESS: standards default to COMPLETE-only (per data/standards/readiness-manifest.json);
 //     `--include-incomplete` overrides. A scaffold is never minted (CLAUDE.md Part 19).
 //   * DEPOSITED-EDITION SKIP is by the item's OWN frontmatter (zenodo_doi/deposited_doi/

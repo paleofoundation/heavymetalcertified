@@ -68,7 +68,7 @@ now fixed in the tooling:
 | Standards — Cat 12 · Household Cleaning and Dishwashing | Standard | 21 | `/standards/*` | ⬜ pending | |
 | Standards — Cat 13 · Cosmetics and Personal Care — Leave-on | Standard | 19 | `/standards/*` | ⬜ pending | |
 | Standards — Cat 14 · Cosmetics and Personal Care — Rinse-off | Standard | 12 | `/standards/*` | ⬜ pending | |
-| Standards — Cat 15 · Feminine Care | Standard | 10 | `/standards/*` | ⬜ pending | |
+| Standards — Cat 15 · Feminine Care | Standard | 10 | `/standards/*` | ⬜ pending — see holdup below | |
 | Standards — Cat 16 · Dietary Supplements (Human) | Standard | 24 | `/standards/*` | ⬜ pending | |
 | Standards — Cat 17 · Pet Foods | Standard | 10 | `/standards/*` | ⬜ pending | |
 | Standards — Cat 18 · Pet Supplements | Standard | 7 | `/standards/*` | ⬜ pending | |
@@ -92,6 +92,31 @@ now fixed in the tooling:
 
 Cat 1 is finalized (arsenic, FDA-action-level, aluminium decisions all landed) and is the natural
 first batch to mint once the prefix arrives.
+
+### Cat 15 · Feminine Care — mint holdup (2026-09-10)
+
+All 10 Cat 15 pages (`menstrual-tampons` and the rest) are **COMPLETE** in
+`data/standards/readiness-manifest.json` and pass every *code* gate in `tools/mint-dois.mjs`
+(type `standard`, category set, title + `effective_date` → publicationYear, no brand-denylist
+hit, `cert_doi: null`). They still render **DOI: registration pending** because the
+**REGISTERED** gate is open: no production `cert_doi` has been written back.
+
+The holdup that stops a final mint *review* (Karen / Elon Grok Bot reading the tool's own
+safety-gate list) is the stale **ELIGIBILITY** comment that treated `scholar_eligible:false`
+as disqualifying. Every Cat 15 page — and every other `type: standard` page — carries
+`scholar_eligible: false` because the generators hardcode it. The code never gated standards
+on that flag (commit `7085299`); the header did. An LLM mint pass that follows the header
+skips the whole category. The header now matches the code.
+
+A second, content-level **CORRECTED** risk remains for the six *device* forms (tampons, pads,
+cups, discs, period underwear, other): their compiled `method` / `lineage_note` require
+mandatory control and “no number is invented,” but the completeness sweep filled nine
+analytes with cosmetic / drinking-water / toy-migration read-across. That is not a
+`mint-dois` skip; it is a method-coherence hold before a production mint of those six.
+Cosmetic forms (wipes, deodorants, douches, intimate washes) are not in that contradiction.
+
+Do not mint until `DATACITE_MODE=live` with the production prefix (the tool defaults to
+**test** and will not persist a sandbox DOI). This investigation did not mint.
 
 ## Minting projects — Manuals, Articles, Briefings
 
