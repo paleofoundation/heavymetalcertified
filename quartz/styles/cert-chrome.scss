@@ -188,7 +188,7 @@ footer.site-footer .site-footer-brand p {
 }
 // Mono labels stay IBM Plex Mono at regular weight.
 .hmtc-search-glyph, .hmtc-search-kbd,
-.hmtc-hb-badge, .hmtc-hb-stamp, .hmtc-hb-snap-v,
+.hmtc-hb-badge, .hmtc-hb-stamp,
 .hmtc-nav .hmi-nav-colhead, .hmtc-nav .hmi-nav-all,
 footer.site-footer .site-footer-column h2,
 footer.site-footer .site-footer-bottom p {
@@ -601,15 +601,16 @@ header.hmi-topnav-shell::after {
 }
 .hmtc-hb-snap-body { padding: 0; }
 .hmtc-hb-snap-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
   gap: 14px;
   padding: 10px 0;
+  line-height: 1.5;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.22);
 }
-.hmtc-hb-snap-k { font-size: 12.5px; color: rgba(255, 255, 255, 0.84); }
-.hmtc-hb-snap-v { font-family: "IBM Plex Mono", monospace; font-size: 14px; color: #fff; font-variant-numeric: tabular-nums; }
+.hmtc-hb-snap-k { min-width: 0; font-size: 12.5px; color: rgba(255, 255, 255, 0.84); }
+.hmtc-hb-snap-v { min-width: 0; font: 400 12.5px/1.5 "IBM Plex Mono", monospace; color: #fff; font-variant-numeric: tabular-nums; text-align: right; overflow-wrap: anywhere; }
 
 @media (max-width: 1149px) {
   .hmtc-heroband-inner { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 0; }
@@ -1088,14 +1089,12 @@ sup.hmtc-cite {
   .hmtc-home-snapshot-inner { padding: 24px; }
 }
 
-.hmtc-subject-caption { display: flex; flex-direction: column; gap: 12px; align-self: stretch; }
+.hmtc-subject-caption { display: flex; flex-direction: column; gap: 12px; align-self: stretch; margin-top: auto; }
 .hmtc-element-mark { width: 180px; height: 180px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; box-shadow: 0 0 0 14px #ffffff05, 0 0 0 28px #ffffff04; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; color: #fff1eb; }
 .hmtc-element-symbol { font: 400 88px/1 Lora,serif; letter-spacing: -.06em; }
 .hmtc-element-number { font: 12px/1.6 "IBM Plex Mono",monospace; color: #ffffffaa; }
-.hmtc-subject-seal { object-fit: contain; margin: 16px 0; opacity: .9; }
 .hmtc-document-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 42px; }
 .hmtc-document-actions > a, .hmtc-follow > summary { box-sizing: border-box; display: inline-flex; align-items: center; gap: 16px; border: 0; border-radius: 3px; padding: 13px 15px; background: #7f1f1f; color: #fff; font: 400 13px/1.45 var(--bodyFont); text-decoration: none; cursor: pointer; }
-.hmtc-document-actions > .hmtc-document-pdf { background: #fffdfb; color: #7f1f1f; }
 .hmtc-document-actions > a:hover, .hmtc-follow > summary:hover { box-shadow: inset 0 0 0 1px #ffffff66; }
 .hmtc-document-actions a:focus-visible, .hmtc-follow summary:focus-visible, .hmtc-follow button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .hmtc-follow { position: relative; }

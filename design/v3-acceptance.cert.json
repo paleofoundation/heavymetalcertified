@@ -25,6 +25,22 @@
       { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
     ],
+    "/articles/aquaculture-vs-wild-contamination-differential": [
+      { "sel": ".hmtc-hb-context img", "prop": "absent", "want": true },
+      { "sel": ".hmtc-subject-seal", "prop": "absent", "want": true },
+      { "sel": ".hmtc-document-actions > a:first-child", "prop": "background-color", "want": "#7f1f1f" },
+      { "sel": ".hmtc-document-pdf", "prop": "background-color", "want": "#7f1f1f" },
+      { "sel": ".hmtc-document-pdf", "prop": "color", "want": "#ffffff" },
+      { "sel": ".hmtc-follow > summary", "prop": "background-color", "want": "#7f1f1f" },
+      { "sel": ".hmtc-hb-snap-row", "prop": "display", "want": "grid" },
+      { "sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12.5px" },
+      { "sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12.5px" },
+      { "sel": ".hmtc-hb-snap-v", "prop": "font-weight", "want": "400" },
+      { "sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
+      { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "font-size", "want": "12.5px" },
+      { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
+      { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 }
+    ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
       { "sel": "sup.cite > a", "prop": "color", "want": "#9f2727", "src": "COMPONENTS §2", "note": "the citation marker is the burgundy accent, NOT the blue link colour. If this reads #1c43ad an older internal-link rule is winning — delete it, do not out-specify (FIDELITY §1)." },

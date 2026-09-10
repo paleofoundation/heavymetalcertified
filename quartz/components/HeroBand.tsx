@@ -160,7 +160,7 @@ export default (() => {
       <section class="hmtc-heroband">
         <div class="hmtc-heroband-inner">
           <div class="hmtc-hb-context">
-            {element ? <div class="hmtc-element-mark" role="img" aria-label={`${element.name}, ${element.symbol}, atomic number ${element.number}`}><span class="hmtc-element-symbol">{element.symbol}</span><span class="hmtc-element-number">{element.number}</span></div> : <img class="hmtc-subject-seal" src="/static/hmtc-mark-white.svg" alt="Heavy Metal Tested and Certified" width="144" height="144" />}
+            {element && <div class="hmtc-element-mark" role="img" aria-label={`${element.name}, ${element.symbol}, atomic number ${element.number}`}><span class="hmtc-element-symbol">{element.symbol}</span><span class="hmtc-element-number">{element.number}</span></div>}
             <div class="hmtc-subject-caption"><span>Heavy Metal Certified</span><span>{element?.name ?? sectionLabel ?? badge}</span></div>
           </div>
           <div class="hmtc-hb-left">
