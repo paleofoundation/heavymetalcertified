@@ -32,7 +32,7 @@ Karen P0 for Kasandrinos. Cert-side claim surface is prepared; **do not mint Dat
 | REGISTERED (production DataCite DOI) | ❌ **MINT HOLD** |
 | Elon PASS | ❌ required before `--live` |
 | DataCite creds (`DATACITE_USER` / `PASSWORD` / `PREFIX`) | ❌ not in this environment |
-| HMI `ELON_BRIDGE` STATUS | ⬜ cert-side status is `docs/S-DOI-OLIVE-1.md` (HMI repo not in this PR) |
+| HMI `ELON_BRIDGE` STATUS | ⬜ cert-side status is `docs/S-DOI-OLIVE-1.md` (HMI repo not in this PR; companion PR #136) |
 
 **Remaining mint steps (Elon, after this PR is merged and `check:v3` passes):**
 

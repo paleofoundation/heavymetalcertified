@@ -2,7 +2,7 @@
 
 **STATUS:** claim-complete on page + freeze PDF. Physics caps wired. **Do not mint DataCite.** Elon must PASS.
 
-This is the cert-side companion to an HMI `ELON_BRIDGE` STATUS row. This PR is `paleofoundation/heavymetalcertified` only; it does not write HMI `ELON_BRIDGE`.
+This is the cert-side companion to an HMI `ELON_BRIDGE` STATUS row. This PR is `paleofoundation/heavymetalcertified` only; it does not write HMI `ELON_BRIDGE`. Index-side species≤parent kill-gate + rice proof is `paleofoundation/heavymetalindex` PR #136 — this cert PR independently wires the same physics cap so freeze PDFs cannot print species>parent. HMI was not cloned in this workspace (GitHub API 404 from here).
 
 ## Claim table extract (olive-oil)
 
@@ -25,8 +25,8 @@ iAs and MeHg are **omitted** from the Master Limit Table (totals-only; speciatio
 1. **DataCite credentials** — `DATACITE_USER`, `DATACITE_PASSWORD`, `DATACITE_PREFIX` are not present here; prefix is still unread from Fabrica (`docs/DOI-MINTING-LEDGER.md`).
 2. **Elon PASS** — human mint gate. This PR must not run `mint-dois.mjs --live`.
 3. **REGISTERED** — `cert_doi` is null; readiness `ready` stays false until a production DOI is written back.
-4. **HMI ELON_BRIDGE** — compile SoT / confidence ≥ 0.95 live on the Index side; not updated in this cert PR.
-5. **`check:v3` on the deployed/build** — run after merge; do not report the page live until push **and** `check:v3` pass.
+4. **HMI ELON_BRIDGE** — compile SoT / confidence ≥ 0.95 live on the Index side; not updated in this cert PR. Companion: HMI PR #136 (species≤parent).
+5. **`check:v3` on the deployed/build** — run after this PR's Quartz build; do not report the page live until push **and** `check:v3` pass.
 
 ## Operator commands (after PASS)
 
