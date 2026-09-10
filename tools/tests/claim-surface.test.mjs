@@ -4,6 +4,7 @@ import {
   cellState, numericCeiling, isRiceInfantCereal, isRiceCerealCanary, requiredClaimSurface,
   evaluateClaimSurface, isBannedLimitText, classifyPanelHeader,
   analyteKeyFromLabel, parseMasterLimitRows, claimSurfaceFailReason,
+  speciesParentViolations, isTotalsOnlySlug, claimTableAnalytes, isFirmClaimCell,
 } from "../lib/claim-surface.mjs"
 
 test("subsumed + value:null is EMPTY, not COMPLETE", () => {
@@ -93,6 +94,49 @@ test("incomplete panel headers: 7/8 and N/M published-limit fail; rice N-of-M be
   assert.ok(e.some((h) => h.kind === "warn"))
   const f = classifyPanelHeader("5 of 11 analytes carry a firm ceiling", { slug: "plant-milks-rice-based" })
   assert.ok(f.every((h) => h.kind === "warn"))
+})
+
+test("species ≤ parent kill-gate: Cr-VI 10 ≤ Cr 300 passes; iAs > tAs fails", () => {
+  assert.deepEqual(speciesParentViolations({
+    "Cr-VI": { type: "read_across", value: 10 }, Cr: { type: "read_across", value: 300 },
+    iAs: { type: "subsumed", value: null, binding_total: 100 }, tAs: { type: "gov", value: 100 },
+  }), [])
+  const hits = speciesParentViolations({ iAs: { type: "gov", value: 100 }, tAs: { type: "gov", value: 50 } })
+  assert.equal(hits.length, 1)
+  assert.equal(hits[0].species, "iAs")
+  const ev = evaluateClaimSurface({
+    slug: "rice-bulk-grain",
+    cells: {
+      Pb: { value: 200 }, tAs: { value: 50 }, Cd: { value: 100 }, tHg: { value: 20 },
+      Ni: { value: 1500 }, Sn: { value: 250000 }, Al: { value: 100000 }, Cr: { value: 1000 },
+      iAs: { type: "gov", value: 100 },
+    },
+  })
+  assert.equal(ev.complete, false)
+  assert.match(claimSurfaceFailReason(ev), /species>parent/)
+})
+
+test("olive-oil totals-only: omit non-firm iAs/MeHg; keep numeric Cr-VI; eight totals required", () => {
+  assert.equal(isTotalsOnlySlug("olive-oil"), true)
+  assert.equal(isTotalsOnlySlug("rice-bulk-grain"), false)
+  const cells = {
+    Pb: { type: "gov", value: 80 }, Cd: { type: "gov", value: 30 }, tAs: { type: "gov", value: 100 },
+    tHg: { type: "gov", value: 20 }, Ni: { type: "read_across", value: 100 }, Sn: { type: "read_across", value: 200000 },
+    Al: { type: "read_across", value: 1000 }, Cr: { type: "read_across", value: 300 },
+    "Cr-VI": { type: "read_across", value: 10 },
+    iAs: { type: "subsumed", value: null, binding_total: 100 },
+    MeHg: { type: "subsumed", value: null, binding_total: 20 },
+  }
+  const table = claimTableAnalytes("olive-oil", cells, ["Pb", "Cd", "tAs", "iAs", "tHg", "MeHg", "Ni", "Cr", "Cr-VI", "Sn", "Al"])
+  assert.deepEqual(table, ["Pb", "Cd", "tAs", "tHg", "Ni", "Cr", "Cr-VI", "Sn", "Al"])
+  assert.equal(isFirmClaimCell(cells.iAs), false)
+  assert.equal(isFirmClaimCell(cells["Cr-VI"]), true)
+  const ev = evaluateClaimSurface({ slug: "olive-oil", cells, panel: table })
+  assert.equal(ev.complete, true)
+  assert.deepEqual(ev.claim_empty, [])
+  assert.ok(ev.required.includes("Cr-VI"))
+  assert.ok(!ev.required.includes("iAs"))
+  assert.ok(!ev.required.includes("MeHg"))
 })
 
 test("Master Limit Table parser reads the HMTc limit column", () => {

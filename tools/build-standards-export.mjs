@@ -222,6 +222,17 @@ function buildCompiledStandard(page, compiledSubdir, extra) {
 }
 
 function normalizeCompiledCell(cell, nativeBasis) {
+  if (cell.type === "subsumed") {
+    return {
+      status: "bounded_by_parent",
+      value_ppb: null,
+      binding_total_ppb: cell.binding_total ?? null,
+      subsumed_by: cell.subsumed_by ?? null,
+      native_basis: nativeBasis,
+      control_basis: "bounded-by-parent-total",
+      rationale: trimText(cell.label) || `${cell.subsumed_by || "parent"} ceiling binds; no separate species ML is published.`,
+    }
+  }
   if (cell.type === "not_material") {
     return {
       status: "not_material",

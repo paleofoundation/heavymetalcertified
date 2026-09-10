@@ -17,20 +17,16 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { speciesParentViolations, cellMaps as claimCellMaps } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const BASE = path.join(REPO, "data/standards")
-const PAIRS = [["iAs", "tAs"], ["MeHg", "tHg"], ["Cr-VI", "Cr"]]
 
 const fail = []
 let variantsChecked = 0
 
-// Compiled schemas differ by vintage: cat1/seafood use { variants: { key: cells } }; the newer
-// per-category compilers emit a flat { cells }. Normalise both to a list of cell-maps.
 function cellMaps(j) {
-  if (j && j.variants && typeof j.variants === "object") return Object.entries(j.variants)
-  if (j && j.cells && typeof j.cells === "object") return [["-", j.cells]]
-  return []
+  return claimCellMaps(j)
 }
 
 for (const dir of fs.readdirSync(BASE).filter((d) => d.endsWith("-compiled"))) {
@@ -42,11 +38,8 @@ for (const dir of fs.readdirSync(BASE).filter((d) => d.endsWith("-compiled"))) {
     for (const [vk, cells] of cellMaps(j)) {
       if (!cells || typeof cells !== "object") continue
       variantsChecked++
-      for (const [sp, tot] of PAIRS) {
-        const a = cells[sp], b = cells[tot]
-        if (a && b && a.value != null && b.value != null && Number(a.value) > Number(b.value)) {
-          fail.push(`${dir}/${fn.replace(".json", "")}[${vk}]: ${sp}=${a.value} > ${tot}=${b.value} — a species cell cannot exceed its parent total`)
-        }
+      for (const h of speciesParentViolations(cells)) {
+        fail.push(`${dir}/${fn.replace(".json", "")}[${vk}]: ${h.species}=${h.species_value} > ${h.parent}=${h.parent_value} — a species cell cannot exceed its parent total`)
       }
     }
   }

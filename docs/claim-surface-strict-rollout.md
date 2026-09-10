@@ -25,6 +25,11 @@ node tools/claim-surface-lint.mjs
 `N/M analytes with a published limit` headers where N is below the required
 claim-surface panel (8 totals; 9 on rice / infant cereal).
 
+Totals-only culinary oils (`olive-oil`, `cooking-oils-other`) are also
+fail-closed: the eight totals must be numeric on the Master Limit Table;
+iAs/MeHg must be omitted or numeric ≤ parent (never bounded/monitored/blank);
+any published species > parent total fails. See `docs/S-DOI-OLIVE-1.md`.
+
 `tools/mint-dois.mjs` refuses claim-surface FAIL. `--include-incomplete` cannot
 override that. **No DOI is minted by this change.**
 

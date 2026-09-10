@@ -86,7 +86,15 @@ export function analyteOccurrenceBlock(opts) {
   const name = (tox && tox.name) || analyte
   const nameLc = name.charAt(0).toLowerCase() + name.slice(1)
   const category = cell.row_label ? cell.row_label.replace(/\s*\(.*?\)\s*$/, "") : "this category"
-  const isNM = opts.isNotMaterial || !!der.not_material
+  // Compiled / generator cell is authoritative for whether a standalone limit
+  // exists. A stale occurrence-export `not_material` ledger must not overwrite
+  // a firm gov / read-across ceiling (olive-oil Cd 30 and tHg 20 were the
+  // canary: claim table numeric, occurrence still said "no standalone limit").
+  const compiledFirm = opts.limitPpb != null
+    || opts.basisKind === "government"
+    || opts.basisKind === "read_across"
+    || (opts.governmentMl && opts.governmentMl.value_ppb != null)
+  const isNM = compiledFirm ? false : (opts.isNotMaterial || !!der.not_material)
 
   // ---- 1. OCCURRENCE EVIDENCE ----
   let occHtml = ""

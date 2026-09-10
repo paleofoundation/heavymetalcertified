@@ -86,6 +86,15 @@
       { "sel": "#hmi-panel-manuals, #hmi-panel-regulations, #hmi-panel-briefings", "prop": "absent", "want": true },
       { "sel": "#subcats", "prop": "count", "want": 1 }
     ],
+    "/standards/olive-oil": [
+      { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "olive-oil Master Limit Table uses the canonical burgundy head." },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": "#limits", "prop": "count", "want": 1, "note": "claim surface is the Master Limit Table." },
+      { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "freeze PDF is wired; Download PDF lives in the rail." },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 }
+    ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
       { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "The published source has no strong tags. Assert absence; generated prose is outside this design review." },
@@ -267,6 +276,11 @@
           {"sel": ".wiki-content table", "prop": "display", "want": "table"},
           {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
           {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/standards/olive-oil": [
+          {"sel": ".wiki-content table", "prop": "display", "want": "table"},
+          {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
+          {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}
         ]
       }
     },
@@ -322,6 +336,11 @@
           {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
         ],
         "/standards/infant-formula-powder": [
+          {"sel": ".wiki-content table", "prop": "display", "want": "table"},
+          {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
+          {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/standards/olive-oil": [
           {"sel": ".wiki-content table", "prop": "display", "want": "table"},
           {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
           {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}

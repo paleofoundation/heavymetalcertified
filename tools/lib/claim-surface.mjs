@@ -15,6 +15,14 @@ import path from "node:path"
 
 export const CLAIM_TOTALS = Object.freeze(["Pb", "tAs", "Cd", "tHg", "Ni", "Sn", "Al", "Cr"])
 export const SPECIES = Object.freeze(["iAs", "MeHg", "Cr-VI"])
+export const SPECIES_PARENT = Object.freeze([
+  ["iAs", "tAs"],
+  ["MeHg", "tHg"],
+  ["Cr-VI", "Cr"],
+])
+// Culinary oils: totals define the pathway. Speciation is reflex only — iAs/MeHg
+// must not appear as monitored/blank/subsumed-empty on the claim table.
+export const TOTALS_ONLY_SLUGS = Object.freeze(["olive-oil", "cooking-oils-other"])
 export const NULLISH_KINDS = Object.freeze([
   "subsumed", "monitored", "control", "not_material", "not-material",
 ])
@@ -98,6 +106,53 @@ export function isRiceCerealCanary(slug, name = "") {
   return false
 }
 
+export function isTotalsOnlySlug(slug) {
+  return TOTALS_ONLY_SLUGS.includes(String(slug || "").toLowerCase())
+}
+
+export function isFirmClaimCell(c) {
+  if (!c || typeof c !== "object") return false
+  if (numericCeiling(c) == null) return false
+  const t = cellKind(c)
+  return t === "gov" || t === "read_across" || t === "special" || t === "form_split"
+}
+
+// Physics cap: a published numeric species ceiling cannot exceed its parent total.
+// Uses the cell's own `value` (not parent inheritance / binding_total) — the
+// wf2uta7ck rice defect was iAs 100 vs tAs 50 on the published cells.
+export function speciesParentViolations(cells) {
+  const map = cells && typeof cells === "object" ? cells : {}
+  const hits = []
+  for (const [sp, tot] of SPECIES_PARENT) {
+    const a = map[sp] && isFirmNumeric(map[sp].value) ? Number(map[sp].value) : null
+    const b = map[tot] && isFirmNumeric(map[tot].value) ? Number(map[tot].value) : null
+    if (a != null && b != null && a > b) {
+      hits.push({ species: sp, parent: tot, species_value: a, parent_value: b })
+    }
+  }
+  return hits
+}
+
+export function speciesParentFailReason(cells) {
+  const hits = speciesParentViolations(cells)
+  if (!hits.length) return null
+  return hits.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")
+}
+
+// Claim-table rows: eight totals always. Species only when they carry a firm
+// numeric ML, or (non-totals-only) when the page still lists them. Totals-only
+// slugs omit non-defining subsumed iAs/MeHg so they cannot render as blank.
+export function claimTableAnalytes(slug, cells = {}, panel) {
+  const map = cells && typeof cells === "object" ? cells : {}
+  const list = Array.isArray(panel) && panel.length ? [...panel] : [...CLAIM_TOTALS, ...SPECIES]
+  return list.filter((a) => {
+    if (CLAIM_TOTALS.includes(a)) return true
+    if (!SPECIES.includes(a)) return true
+    if (isTotalsOnlySlug(slug)) return isFirmClaimCell(map[a])
+    return true
+  })
+}
+
 export function requiredClaimSurface(slug, cells = {}, name = "") {
   const req = [...CLAIM_TOTALS]
   if (isRiceInfantCereal(slug, name)) {
@@ -127,7 +182,8 @@ export function evaluateClaimSurface({ slug, name = "", cells, panel }) {
   const rice = isRiceInfantCereal(slug, name)
   const iAsNumeric = numericCeiling(map.iAs) != null
   const riceMissingIas = rice && !iAsNumeric
-  const complete = claimEmpty.length === 0 && !riceMissingIas
+  const speciesParentHits = speciesParentViolations(map)
+  const complete = claimEmpty.length === 0 && !riceMissingIas && speciesParentHits.length === 0
   return {
     slug,
     name,
@@ -139,6 +195,7 @@ export function evaluateClaimSurface({ slug, name = "", cells, panel }) {
     rice,
     rice_missing_ias: riceMissingIas,
     iAs_numeric: iAsNumeric,
+    species_parent_hits: speciesParentHits,
   }
 }
 
@@ -276,6 +333,9 @@ export function loadCompiledRecords(dataDir) {
 
 export function claimSurfaceFailReason(ev) {
   if (ev.rice_missing_ias) return "rice/infant cereal missing numeric iAs"
+  if (ev.species_parent_hits && ev.species_parent_hits.length) {
+    return `species>parent: ${ev.species_parent_hits.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`
+  }
   if (ev.claim_empty.length) return `claim-surface empty: ${ev.claim_empty.join(", ")}`
   return null
 }
