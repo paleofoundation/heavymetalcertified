@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "dnf install -y nss nspr mesa-libgbm && npm ci",
-  "buildCommand": "npm run build:design-review",
+  "buildCommand": "node tools/design-lint.mjs && npm run build:design-review",
   "outputDirectory": "public",
   "framework": null,
   "cleanUrls": true,
