@@ -15,7 +15,6 @@ export const HMI_WEBSITE_ID = `${HMI_BASE}/#website`
 export const TECRID_BASE = "https://tecrid.com"
 export const TECRID_WEBSITE_ID = `${TECRID_BASE}/#website`
 export const TECRID_SERVICE_ID = `${TECRID_BASE}/#service`
-export const LEGACY_HMTC_BASE = "https://heavymetaltested.com"
 export const ICS_LINKEDIN_URL = "https://www.linkedin.com/company/institute-of-contaminant-standards"
 export const HMTC_LINKEDIN_URL = "https://www.linkedin.com/company/heavy-metal-tested-certified"
 export const HMTC_FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61593815109297"
@@ -60,7 +59,7 @@ export const CERT_ORGANIZATION = {
   name: "Heavy Metal Tested & Certified",
   alternateName: ["HMTc", "Heavy Metal Certified", "Heavy Metal Tested"],
   url: CERT_BASE,
-  sameAs: [LEGACY_HMTC_BASE, HMTC_LINKEDIN_URL, HMTC_FACEBOOK_URL],
+  sameAs: [HMTC_LINKEDIN_URL, HMTC_FACEBOOK_URL],
   description:
     "The standards and certification organization for third-party heavy-metal testing of food, supplements, and supply-chain products.",
   parentOrganization: { "@id": ICS_ORGANIZATION_ID },
