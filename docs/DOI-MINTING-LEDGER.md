@@ -17,9 +17,9 @@ systematic and each assigned DOI is recorded in one place. Registrar is **DataCi
   no standard carries, so minting would have flipped **zero** REGISTERED gates).
 - **Status legend:** ⬜ pending · 🟨 metadata prepared · 🟦 submitted to DataCite · ✅ minted + `cert_doi` filled
 
-## S-DOI-OLIVE-1 — olive-oil (2026-09-10) · **MINT HOLD**
+## S-DOI-OLIVE-1 — olive-oil (2026-09-10) · **Elon PASS pending Claude live mint**
 
-Karen P0 for Kasandrinos. Cert-side claim surface is prepared; **do not mint DataCite in this PR.**
+Karen P0 for Kasandrinos. Elon PASS issued 2026-09-10 (`docs/ELON_BRIDGE.md` ORDER S-DOI-OLIVE-MINT-1). Claude Desktop executes live mint; this agent must not `--live`.
 
 | Gate | Status |
 |---|---|
@@ -27,22 +27,24 @@ Karen P0 for Kasandrinos. Cert-side claim surface is prepared; **do not mint Dat
 | Totals-only claim table (iAs/MeHg omitted — speciation not defining) | ✅ |
 | Cr-VI 10 ≤ Cr 300 (published numeric) | ✅ |
 | Species≤parent kill-gate (`claim-surface` + `panel-coherence`) | ✅ |
-| Page + freeze PDF honest (no bounded/blank claim cells) | ✅ page+PDF in this PR |
+| Page + freeze PDF honest (no bounded/blank claim cells) | ✅ PR #75 / `7ae4633` on `main` |
 | Readiness COMPLETE for `olive-oil` | ✅ compiled |
-| REGISTERED (production DataCite DOI) | ❌ **MINT HOLD** |
-| Elon PASS | ❌ required before `--live` |
-| DataCite creds (`DATACITE_USER` / `PASSWORD` / `PREFIX`) | ❌ not in this environment |
-| HMI `ELON_BRIDGE` STATUS | ⬜ cert-side status is `docs/S-DOI-OLIVE-1.md` (HMI repo not in this PR; companion PR #136) |
+| REGISTERED (production DataCite DOI) | ❌ pending Claude live mint |
+| Elon PASS | ✅ PASS 2026-09-10 — Claude live mint pending |
+| DataCite creds (`DATACITE_USER` / `PASSWORD` / `PREFIX`) | ❌ not in this environment (Claude Desktop) |
+| Cert `ELON_BRIDGE` ORDER | ✅ `docs/ELON_BRIDGE.md` S-DOI-OLIVE-MINT-1 |
+| HMI compile SoT | ⬜ confidence ≥ 0.95 on Index; companion HMI PR #136 |
 
-**Remaining mint steps (Elon, after this PR is merged; local `check:v3` already exited 0):**
+**Remaining mint steps (Claude Desktop, ORDER S-DOI-OLIVE-MINT-1):**
 
-1. Confirm DataCite Fabrica repository credentials and assigned prefix in the deploy environment (`DATACITE_MODE=live`).
-2. Elon **PASS** the olive-oil mint (human gate — this agent must not `--live`).
-3. Dry-run: `node tools/mint-dois.mjs --types=standards --slug=olive-oil`
-4. Live mint: `node tools/mint-dois.mjs --types=standards --slug=olive-oil --live` with `DATACITE_MODE=live`.
-5. Confirm `cert_doi` write-back on `content/standards/olive-oil.md` and a resolvable `https://doi.org/…` cite line.
+1. `git pull origin main` (must include PR #75 / `7ae4633+`).
+2. claim-surface + panel-coherence + readiness `--strict` must exit 0; mint dry-run COMPLETE.
+3. Confidence ≥ 0.95 every published claim cell or STOP.
+4. Live mint: `DATACITE_MODE=live node tools/mint-dois.mjs --types=standards --slug=olive-oil --live`.
+5. Write `cert_doi` on the page; regenerate freeze+web PDFs so the DOI appears; update this ledger to MINTED.
+6. commit+push `main`; wait Production; live-verify page+PDF+doi.org.
 
-Default remains **MINT HOLD**. A claim-surface FAIL is still never mintable.
+Do not mint any other slug. No test prefix in `cert_doi`. A claim-surface FAIL is still never mintable.
 
 ## Preflight audit + corrected first batch (2026-08-27)
 
