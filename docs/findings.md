@@ -104,3 +104,25 @@ deliberate conservative `min()` choices, not errors.
 the identical corruption exists in the `heavy-metal-index` compiled source (the one-way
 index→cert copy origin, currently on the `codex/methodology-sync` dead-lane) and should be
 reconciled there separately so a future re-copy does not re-introduce it.
+
+## 2026-09-10 — Analyte evidence tables expanded into tall, clipped rows (FIXED)
+
+The Lead page's assessment table combined `display:block` on the table with
+non-wrapping agency names. Its anonymous inner table squeezed the assessment and
+conclusion columns, producing a 502px first row at a 1344px viewport. Quartz already
+supplies a scrolling `.table-container`, so scrolling on the table itself was
+redundant. A separate mobile rule repeated the block layout and pinned the first
+column over the other text (including a white-on-white header).
+
+Restore native table layout, remove table-level padding and obsolete mobile scroll/
+sticky rules, and allow agency names to wrap. The user requested this repair;
+the analyte generator and its eight published documents receive only the same
+presentation edit. All scientific text, numbers, links and 24 tables are preserved.
+
+Validation: direct Quartz build, `node tools/design-lint.mjs`, `npm run check`, and
+`npm run check:v3` all exit 0 (244 rendered assertions, including desktop/mobile
+table coverage). Browser inspection covered all eight analytes and the 12-column
+infant-formula comparison at 1440px and 390px, with no page-level horizontal overflow.
+Lead's first assessment row is 243px at 1344px; horizontal scrolling reaches the
+conclusions on mobile. The acceptance runner now supports scoped responsive groups
+so a desktop pass cannot conceal a conflicting mobile rule.

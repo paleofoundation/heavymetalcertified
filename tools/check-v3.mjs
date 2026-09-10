@@ -57,8 +57,13 @@ async function main() {
   const browser = await chromium.launch()
   const failures = []
   let checked = 0
-  for (const [path, assertions] of Object.entries(spec.pages || {})) {
-    const page = await browser.newPage({ viewport: spec.viewport || { width: 1440, height: 1000 } })
+  const cases = [spec, ...(spec.responsive || [])].flatMap(group =>
+    Object.entries(group.pages || {}).map(([path, assertions]) => ({
+      path, assertions, viewport: group.viewport || spec.viewport || { width: 1440, height: 1000 },
+    })),
+  )
+  for (const { path, assertions, viewport } of cases) {
+    const page = await browser.newPage({ viewport })
     await page.goto(`http://127.0.0.1:${PORT}${path}`, { waitUntil: "networkidle" }).catch(() => {})
     for (const a of assertions) {
       checked++
@@ -69,7 +74,7 @@ async function main() {
         if (!els[0]) return null
         return getComputedStyle(els[0])[prop]
       }, a)
-      const label = `${path} · ${a.sel} · ${a.prop}`
+      const label = `${path} (${viewport.width}px) · ${a.sel} · ${a.prop}`
       let ok
       if (a.prop === "count") ok = got === a.want
       else if (a.prop === "absent") ok = got === (a.want !== false)

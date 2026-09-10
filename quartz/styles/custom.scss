@@ -1828,27 +1828,9 @@ a.hmi-staff-card:hover {
     grid-template-columns: 1fr;
   }
 
-  article table {
-    display: block;
-    margin-left: -0.25rem;
-    max-width: 100%;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    -webkit-overflow-scrolling: touch;
-  }
-
   article table th,
   article table td {
     min-width: 8rem;
-  }
-
-  article table th:first-child,
-  article table td:first-child {
-    background: var(--light);
-    left: 0;
-    min-width: 3.75rem;
-    position: sticky;
-    z-index: 1;
   }
 
   .hmi-quick-read {

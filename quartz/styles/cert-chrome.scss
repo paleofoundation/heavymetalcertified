@@ -860,14 +860,13 @@ aside.rail { position: sticky; top: 92px; padding: 38px 28px 48px; display: bloc
 strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
 
 // Burgundy table (CHROME-SPEC §2), red head in IBM Plex Mono.
+// Keep native table sizing; Quartz's .table-container owns horizontal scrolling.
 .wiki-content table {
   width: 100%;
   font-size: 13.5px;
   border: 1px solid #e8e1db;
   border-collapse: collapse;
   margin: 12px 0 22px;
-  display: block;
-  overflow-x: auto;
 }
 .wiki-content thead tr { background: #9f2727; }
 .wiki-content thead th {

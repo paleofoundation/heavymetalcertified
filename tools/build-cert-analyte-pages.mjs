@@ -67,7 +67,7 @@ function whyLimitedTable(rows) {
   const body = rows
     .map((r, i) => {
       const zebra = i % 2 ? ";background:#fbf7f5" : ""
-      return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#2b1f1f;white-space:nowrap">${esc(r.agency)}</td><td style="padding:10px 12px;color:#736b6b;font-size:12.5px">${esc(r.year || "—")}</td><td style="padding:10px 12px;color:#5a4141;font-size:13px">${esc(r.document || "—")}</td><td style="padding:10px 12px;color:#3f3a3a;font-size:13px;line-height:1.6">${linkify(r.finding)}</td></tr>`
+      return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#2b1f1f">${esc(r.agency)}</td><td style="padding:10px 12px;color:#736b6b;font-size:12.5px">${esc(r.year || "—")}</td><td style="padding:10px 12px;color:#5a4141;font-size:13px">${esc(r.document || "—")}</td><td style="padding:10px 12px;color:#3f3a3a;font-size:13px;line-height:1.6">${linkify(r.finding)}</td></tr>`
     })
     .join("")
   return `<div style="overflow-x:auto"><table style="width:100%;font-size:13px;border:1px solid #e8e1db;min-width:52rem;border-collapse:collapse"><thead>${head}</thead><tbody>${body}</tbody></table></div>`

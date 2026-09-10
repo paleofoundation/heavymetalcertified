@@ -210,5 +210,123 @@
     "/compare": [
       { "sel": ".hmtc-author-card", "prop": "count", "want": 1 }
     ]
-  }
+  },
+  "responsive": [
+    {
+      "viewport": {"width": 1440, "height": 1000},
+      "pages": {
+        "/analytes/lead": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/cadmium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/arsenic": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/mercury": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/nickel": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/tin": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/aluminum": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/chromium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/standards/infant-formula-powder": [
+          {"sel": ".wiki-content table", "prop": "display", "want": "table"},
+          {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
+          {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}
+        ]
+      }
+    },
+    {
+      "viewport": {"width": 390, "height": 844},
+      "pages": {
+        "/analytes/lead": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/cadmium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/arsenic": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/mercury": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/nickel": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/tin": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/aluminum": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/chromium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/standards/infant-formula-powder": [
+          {"sel": ".wiki-content table", "prop": "display", "want": "table"},
+          {"sel": ".wiki-content table", "prop": "padding", "want": "0px"},
+          {"sel": ".wiki-content table th:first-child", "prop": "position", "want": "static"}
+        ]
+      }
+    }
+  ]
 }
