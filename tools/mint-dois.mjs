@@ -29,6 +29,9 @@
 //     articles/briefings must be scholar_eligible:true.
 //   * COMPLETENESS: standards default to COMPLETE-only (per data/standards/readiness-manifest.json);
 //     `--include-incomplete` overrides. A scaffold is never minted (CLAUDE.md Part 19).
+//   * CLAIM-SURFACE: tools/claim-surface-lint.mjs must PASS. A monitored / subsumed / dash /
+//     empty LIMIT, an incomplete N/M header, or a rice/infant/baby-cereal standard missing
+//     numeric iAs aborts every mint path (including --include-incomplete). ORDER S-DOI-FORCE-1.
 //   * DEPOSITED-EDITION SKIP is by the item's OWN frontmatter (zenodo_doi/deposited_doi/
 //     concept_doi), never a body substring — so a standard that merely CITES a Zenodo source
 //     paper is not false-skipped.
@@ -61,7 +64,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import crypto from "node:crypto"
-import matter from "gray-matter"
+import { assertClaimSurfaceClean } from "./claim-surface-lint.mjs"
 
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content")
@@ -128,6 +131,15 @@ const credentialsReady =
   DATACITE_USER && !DATACITE_USER.startsWith("PENDING") &&
   DATACITE_PASSWORD && DATACITE_PREFIX && !DATACITE_PREFIX.startsWith("PENDING")
 const live = wantLive && credentialsReady
+
+// ORDER S-DOI-FORCE-1: refuse every mint path while the claim surface is not numeric.
+// Runs before gray-matter / DataCite work so a FAIL cannot mint even if credentials are present.
+const claimSurface = assertClaimSurfaceClean({ label: "mint-dois" })
+if (!claimSurface.ok) {
+  console.error("mint-dois: REFUSING — claim-surface-lint FAIL. No DOI will be minted.")
+  process.exit(1)
+}
+const { default: matter } = await import("gray-matter")
 
 const HAS_DOI = /10\.\d{4,9}\/\S+/
 const isTestPrefix = (doi) => TEST_PREFIXES.some((p) => String(doi).startsWith(p))
