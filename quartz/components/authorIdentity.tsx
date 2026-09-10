@@ -3,7 +3,7 @@ export const KAREN = {
   name: "Karen Pendergrass",
   orcid: "0000-0002-2348-7259",
   profile: "/authors/karen-pendergrass",
-  portrait: "/static/authors/karen-pendergrass.webp",
+  portrait: "/static/authors/karen-pendergrass-red.png",
   affiliations: [
     { name: "Institute of Contaminant Standards", url: "https://contaminantstandards.com/" },
     { name: "Paleo Foundation", url: "https://paleofoundation.com/" },
