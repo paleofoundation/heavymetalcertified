@@ -1,3 +1,5 @@
+import { documentPdf } from "./documentMetadata"
+import { KAREN } from "./authorIdentity"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { canonicalUrl, pathToRoot, simplifySlug, type FullSlug } from "../util/path"
 
@@ -103,10 +105,14 @@ export default (() => {
     const shareTitle = String(fm.title ?? "")
     // The page's PDF edition, declared in frontmatter by the generators. An
     // absolute href resolves the same locally and in production.
-    const pdfHref =
-      typeof fm.pdf === "string" && fm.pdf.trim() && fm.pdf.trim().toLowerCase() !== "null"
-        ? fm.pdf.trim()
-        : ""
+    if (fm.type === "author-profile") return <section class="hmtc-profile-links" aria-label="Research profiles"><h2>Research profiles</h2>
+      <a href={`https://orcid.org/${KAREN.orcid}`}>ORCID record ↗</a>
+      <a href={`https://www.wikibiome.com/researchers/${KAREN.orcid}`}>WikiBiome researcher profile ↗</a>
+      <a href="#public-works">Selected public works</a>
+      <a href="#heavy-metal-index-syntheses">Heavy Metal Index syntheses</a>
+      <a href="https://heavymetalindex.com/contact">Contact the Index</a>
+    </section>
+    const pdfHref = documentPdf(fm, String(slug))
     const enc = encodeURIComponent
     const shareHrefs: Record<string, string> = {
       x: `https://twitter.com/intent/tweet?url=${enc(canonical)}&text=${enc(shareTitle)}`,

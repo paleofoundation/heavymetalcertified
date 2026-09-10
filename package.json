@@ -1,6 +1,6 @@
 {
   "name": "heavymetalcertified",
-  "description": "Heavy Metal Certified — the published standards and certification authority surface for the Heavy Metal Tested & Certified (HMTc) program. Separate deploy from the independent literature index (heavymetalindex.com).",
+  "description": "Heavy Metal Certified \u2014 the published standards and certification authority surface for the Heavy Metal Tested & Certified (HMTc) program. Separate deploy from the independent literature index (heavymetalindex.com).",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -27,7 +27,7 @@
     "regulatory:watch:build": "node tools/build-cert-regulatory-watch.mjs",
     "regulatory:watch:check": "node tools/check-regulatory-watch.mjs",
     "build": "./quartz/bootstrap-cli.mjs build -d content -o public",
-    "postbuild": "node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-data-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs && node tools/postbuild-article-jsonld.mjs && node tools/postbuild-regulatory-watch-jsonld.mjs && node tools/postbuild-cert-page-jsonld.mjs && node tools/postbuild-cert-briefing-jsonld.mjs && node tools/postbuild-why-limited-jsonld.mjs && node tools/postbuild-cert-faq-jsonld.mjs && node tools/postbuild-cert-dedash-jsonld.mjs && node tools/postbuild-cert-sitemaps.mjs && node tools/postbuild-cert-robots.mjs && node tools/postbuild-cert-search-index.mjs",
+    "postbuild": "playwright install --only-shell chromium && node tools/postbuild-cert-jsonld.mjs && node tools/postbuild-cert-data-jsonld.mjs && node tools/postbuild-cert-llms.mjs && node tools/postbuild-article-pdf.mjs && node tools/postbuild-article-jsonld.mjs && node tools/postbuild-regulatory-watch-jsonld.mjs && node tools/postbuild-cert-page-jsonld.mjs && node tools/postbuild-cert-briefing-jsonld.mjs && node tools/postbuild-why-limited-jsonld.mjs && node tools/postbuild-cert-faq-jsonld.mjs && node tools/postbuild-cert-dedash-jsonld.mjs && node tools/postbuild-cert-sitemaps.mjs && node tools/postbuild-cert-robots.mjs && node tools/postbuild-cert-search-index.mjs && node tools/postbuild-document-editions.mjs",
     "serve": "./quartz/bootstrap-cli.mjs build --serve -d content -o public",
     "test": "tsx --test",
     "check": "tsc --noEmit",

@@ -8,6 +8,10 @@ export {} // module scope — keeps locals out of the global namespace
 // only handles the toggle + clipboard interaction.
 
 const READY_ATTR = "data-hmi-cite-ready"
+const escapeBibtex = (value: string) => value.replace(/[\\{}&%$#_~^]/g, character => ({
+  "\\": "\\textbackslash{}", "{": "\\{", "}": "\\}", "&": "\\&", "%": "\\%",
+  "$": "\\$", "#": "\\#", "_": "\\_", "~": "\\textasciitilde{}", "^": "\\textasciicircum{}",
+})[character] ?? character)
 
 async function copyText(text: string): Promise<boolean> {
   try {
@@ -75,6 +79,7 @@ function bind(root: HTMLElement) {
   }
 
   const d = root.dataset
+  const author = d.citeAuthor ?? "Heavy Metal Certified"
   const title = d.citeTitle ?? ""
   const url = d.citeUrl ?? ""
   const year = d.citeYear ?? ""
@@ -100,8 +105,8 @@ function bind(root: HTMLElement) {
     bibtexButton.addEventListener("click", () => {
       const lines = [
         `@misc{${key},`,
-        `  title        = {${title}},`,
-        `  author       = {{Heavy Metal Certified}},`,
+        `  title        = {{${escapeBibtex(title)}}},`,
+        `  author       = {${author === "Karen Pendergrass" ? "Pendergrass, Karen" : `{${escapeBibtex(author)}}`}},`,
         `  organization = {Institute of Contaminant Standards (ICS)},`,
         `  year         = {${year}},`,
         ...(doi ? [`  doi          = {${doi}},`] : []),
@@ -121,7 +126,7 @@ function bind(root: HTMLElement) {
       const lines = [
         "TY  - ELEC",
         `TI  - ${title}`,
-        "AU  - Heavy Metal Certified",
+        `AU  - ${author === "Karen Pendergrass" ? "Pendergrass, Karen" : author}`,
         "PB  - Institute of Contaminant Standards (ICS)",
         `PY  - ${year}`,
         ...(doi ? [`DO  - ${doi}`] : []),

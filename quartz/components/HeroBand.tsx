@@ -1,6 +1,10 @@
+import { pageElement, pageSnapshot } from "./documentMetadata"
+import { DocumentActions } from "./DocumentActions"
+// @ts-ignore Quartz bundles the browser script as text.
+import documentActionsScript from "./scripts/documentActions.inline"
 // @ts-ignore Quartz bundles .inline scripts as strings.
 import authorCardScript from "./scripts/authorCard.inline"
-import { AuthorCard, isKarenAuthor } from "./authorIdentity"
+import { AuthorCard, AuthorProfileHero, isKarenAuthor } from "./authorIdentity"
 import { DocumentDoi } from "./DocumentDoi"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { pathToRoot, type FullSlug } from "../util/path"
@@ -54,6 +58,7 @@ const KIND: Record<string, string> = {
   "public-briefing": "Briefing",
   "briefings-index": "Directory",
   "manuals-index": "Library",
+  manual: "Manual",
   program: "Program",
   verify: "Lookup",
   apply: "Apply",
@@ -120,32 +125,10 @@ export default (() => {
     const leaf = fm.breadcrumb_leaf ? String(fm.breadcrumb_leaf) : title
     const showSection = Boolean(sectionLabel) && !isHub && sectionLabel !== leaf
 
-    // Snapshot rows. An explicit `snapshot:` frontmatter array wins (used by the
-    // static pages ported from the comp); otherwise derive per screen type.
-    const rows: [string, string][] = []
+    if (type === "author-profile") return <AuthorProfileHero />
     const eff = iso(fm.effective_date)
-    if (Array.isArray(fm.snapshot)) {
-      for (const r of fm.snapshot as any[]) {
-        if (Array.isArray(r)) rows.push([String(r[0]), String(r[1])])
-        else if (r && typeof r === "object") rows.push([String(r.k ?? r.label ?? ""), String(r.v ?? r.value ?? "")])
-      }
-    } else if (type === "standard" || type === "standard-in-development") {
-      if (fm.native_basis) rows.push(["Native basis", String(fm.native_basis)])
-      if (fm.standard_version) rows.push(["Standard version", String(fm.standard_version)])
-      if (fm.category_name) rows.push(["Category", String(fm.category_name)])
-      rows.push(["Analyte panel", "10 analytes"])
-      if (eff) rows.push(["Effective", eff])
-    } else if (type === "public-briefing") {
-      if (fm.section) rows.push(["Series", String(fm.section)])
-      const pub = iso(fm.briefing_date)
-      if (pub) rows.push(["Published", pub])
-      rows.push(["Document type", "Report"])
-    } else {
-      // manuals + other cited surfaces
-      // DOI belongs to its own edition-aware right-sidebar record.
-      if (eff) rows.push(["Effective", eff])
-    }
-    const snapshot = rows.filter(([label]) => !/^doi$/i.test(label)).slice(0, 4)
+    const snapshot = pageSnapshot(fm, String(slug), badge)
+    const element = pageElement(String(slug))
     const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/")
 
     const author = fm.author ? String(fm.author) : undefined
@@ -168,7 +151,7 @@ export default (() => {
     const heroAction =
       fm.hero_action && typeof fm.hero_action === "object"
         ? {
-            label: String((fm.hero_action as any).label ?? ""),
+            label: /download|pdf/i.test(String((fm.hero_action as any).label ?? "")) ? "" : String((fm.hero_action as any).label ?? ""),
             href: String((fm.hero_action as any).href ?? "#"),
           }
         : null
@@ -176,7 +159,10 @@ export default (() => {
     return (
       <section class="hmtc-heroband">
         <div class="hmtc-heroband-inner">
-          <div class="hmtc-hb-context" aria-hidden="true"><span>Heavy Metal Certified</span><span>{sectionLabel ?? badge}</span></div>
+          <div class="hmtc-hb-context">
+            {element ? <div class="hmtc-element-mark" role="img" aria-label={`${element.name}, ${element.symbol}, atomic number ${element.number}`}><span class="hmtc-element-symbol">{element.symbol}</span><span class="hmtc-element-number">{element.number}</span></div> : <img class="hmtc-subject-seal" src="/static/hmtc-mark-white.svg" alt="Heavy Metal Tested and Certified" width="144" height="144" />}
+            <div class="hmtc-subject-caption"><span>Heavy Metal Certified</span><span>{element?.name ?? sectionLabel ?? badge}</span></div>
+          </div>
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">
               <a href={base || "/"}>HMTc</a>
@@ -234,6 +220,7 @@ export default (() => {
                 ) : null}
               </div>
             ) : null}
+            <DocumentActions fm={fm} slug={String(slug)} />
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
           {hasAuthorCard && <AuthorCard updated={updated} />}
@@ -256,6 +243,6 @@ export default (() => {
       </section>
     )
   }
-  HeroBand.afterDOMLoaded = authorCardScript
+  HeroBand.afterDOMLoaded = [authorCardScript, documentActionsScript].join("\n")
   return HeroBand
 }) satisfies QuartzComponentConstructor

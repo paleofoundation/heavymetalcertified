@@ -7,11 +7,6 @@ export const sharedPageComponents: SharedLayout = {
   // The global TopNav (wordmark + mega-menu + controls). renderPage.tsx lifts
   // this into a full-bleed sticky <header> outside #quartz-root.
   header: [Component.TopNav()],
-  // The Index's CiteThisPage widget does not belong on the certification
-  // surface: it advertised Index canonicals, missing Index-only routes and an
-  // API this static deployment does not provide. Citation metadata remains in
-  // Head.tsx and page sharing remains in the right rail.
-  //
   // SourceCitationPanel is a fixed slide-over (scrim + right-anchored dialog) that
   // fills and reveals on inline-citation click, reading the source's record from
   // the page's References list; mounting it also ships citationPanel.inline.ts (a
@@ -31,6 +26,7 @@ export const sharedPageComponents: SharedLayout = {
   // script is emitted whenever the component is in the layout, independent of render).
   // The script no-ops unless it finds the [data-fee-calculator] root, i.e. only on /apply.
   afterBody: [
+    Component.CiteThisPage(),
     Component.StandardsFinder(),
     Component.FeeCalculator(),
     Component.ApplyForm(),

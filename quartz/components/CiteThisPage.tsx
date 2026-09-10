@@ -1,11 +1,9 @@
+import { currentDocumentDoi, isDocument } from "./documentMetadata"
+import { KAREN, isKarenAuthor } from "./authorIdentity"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 // @ts-ignore
 import script from "./scripts/citeThisPage.inline"
 import style from "./styles/citeThisPage.scss"
-
-function isCitable(slug: string | undefined): boolean {
-  return Boolean(slug?.startsWith("regulations/") && !slug.endsWith("/index"))
-}
 
 function frontmatterString(value: unknown): string | undefined {
   if (value === undefined || value === null) return undefined
@@ -19,32 +17,32 @@ function todayIsoDate(): string {
 
 const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const slug = fileData.slug
-  if (!isCitable(slug)) return null
-
   const frontmatter = fileData.frontmatter as Record<string, unknown> | undefined
+  if (!slug || !frontmatter || !isDocument(frontmatter, slug)) return null
   const title = frontmatter?.title ? String(frontmatter.title) : (slug as string)
-  const certDoi = frontmatter
-    ? frontmatterString(frontmatter.cert_doi) ?? frontmatterString(frontmatter.doi)
-    : undefined
+  const certDoi = currentDocumentDoi(slug, frontmatter)
+  const author = isKarenAuthor(frontmatter, slug) ? KAREN.name : String(frontmatter.author ?? "Heavy Metal Certified")
   const sourceUrl = frontmatter ? frontmatterString(frontmatter.source_url) : undefined
   const canonicalUrl = `https://heavymetalcertified.com/${slug}`
   const today = todayIsoDate()
 
   const citationLine = certDoi
-    ? `Heavy Metal Certified. "${title}". ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
-    : `Heavy Metal Certified. "${title}". ${canonicalUrl}. Retrieved ${today}.`
+    ? `${author}. "${title}". ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
+    : `${author}. "${title}". ${canonicalUrl}. Retrieved ${today}.`
 
   // Year for reference-manager records: prefer the page's updated/established
   // year, fall back to the retrieval year.
   const updated = frontmatter
     ? frontmatterString(frontmatter.updated) ?? frontmatterString(frontmatter.established)
     : undefined
-  const year = (updated ?? today).slice(0, 4)
+  const year = (updated ?? today).match(/\b(19|20)\d{2}\b/)?.[0] ?? today.slice(0, 4)
   const shareText = `${title}, Heavy Metal Certified`
 
   return (
     <aside
+      id="hmtc-page-citation"
       class="hmi-cite-page"
+      data-cite-author={author}
       aria-label="Cite this page"
       data-cite-title={title}
       data-cite-url={canonicalUrl}
@@ -57,7 +55,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         <div>
           <span class="hmi-cite-label">Cite this page.</span>{" "}
           <span class="hmi-cite-meta">
-            A published reference to the underlying government instrument.
+            The current web edition, with reference-manager exports.
           </span>
         </div>
         <div class="hmi-cite-actions">
@@ -108,14 +106,7 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
             Email
           </a>
         </div>
-        <p class="hmi-cite-note">
-          This page records a regulatory source; it does not create or replace the
-          cited law, rule, or guidance. See the{" "}
-          <a href="/program/structure">program methodology</a>, or{" "}
-          <a href={`mailto:karen@paleofoundation.com?subject=${encodeURIComponent(`Correction: ${title}`)}`}>
-            report a correction
-          </a>.
-        </p>
+        <p class="hmi-cite-note">Cite this web edition by its title and URL. A DOI is included when the current edition has a deposited record. Earlier-edition DOIs remain identified separately in the sidebar.</p>
       </div>
     </aside>
   )

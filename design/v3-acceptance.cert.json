@@ -111,7 +111,7 @@
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": "aside.snav", "prop": "position", "want": "sticky", "note": "the 'On this page' rail sticks below the top-bar." },
       { "sel": "aside.snav", "prop": "top", "want": "92px" },
-      { "sel": ".hmi-cite-page", "prop": "count", "want": 0, "note": "the Index-only citation/evidence-packet widget must stay absent from the certification site" },
+      { "sel": "#hmtc-page-citation", "prop": "count", "want": 1, "note": "The page citation apparatus now covers HMTc documents; underlying-source DOIs remain distinct from this web edition." },
       { "sel": "sup.hmtc-cite", "prop": "count", "want": 0, "src": "COMPONENTS §2", "note": "a reference page RECORDS law; it carries no inline citation superscripts (unlike a briefing/article). The citation-marker COLOUR canon (#9f2727, not link blue) is asserted on /articles, the surface that cites. If a sup.hmtc-cite appears here, a bracketed [N] leaked into transcribed provision text — investigate the register export, do not restyle." },
       { "sel": "sup.cite > a", "prop": "count", "want": 0 }
     ],
@@ -148,15 +148,28 @@
       { "sel": ".hmtc-author-portrait img", "prop": "width", "want": "72px" },
       { "sel": ".hmtc-author-popover", "prop": "visibility", "want": "hidden" },
       { "sel": ".hmtc-author-card", "prop": "border-width", "want": "0px" },
+      { "sel": ".hmtc-author-popover", "prop": "width", "want": "340px" },
+      { "sel": ".hmtc-author-popover-heading img", "prop": "width", "want": "56px" },
+      { "sel": ".hmtc-document-actions a[download]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-follow", "prop": "count", "want": 1 },
+      { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 },
       { "sel": "aside.rail", "prop": "padding-left", "want": "28px" },
       { "sel": "aside.snav", "prop": "padding-left", "want": "28px" }
     ],
     "/authors/karen-pendergrass": [
-      { "sel": ".hmtc-profile-image", "prop": "width", "want": "200px" },
-      { "sel": ".wiki-content a[href=\"https://orcid.org/0000-0002-2348-7259\"]", "prop": "count", "want": 2 }
+      { "sel": ".hmtc-profile-portrait img", "prop": "width", "want": "236px" },
+      { "sel": ".author-works > li", "prop": "count", "want": 7 }
+    ],
+    "/analytes/lead": [
+      { "sel": ".hmtc-element-mark", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-element-symbol", "prop": "font-family", "want": "Lora", "match": "contains" },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 },
+      { "sel": ".hmtc-document-actions a[download]", "prop": "count", "want": 1 },
+      { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 }
     ],
     "/compare": [
-      { "sel": ".hmtc-author-card", "prop": "absent", "want": true }
+      { "sel": ".hmtc-author-card", "prop": "count", "want": 1 }
     ]
   }
 }
