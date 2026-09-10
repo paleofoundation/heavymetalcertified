@@ -23,7 +23,7 @@
 
 /* the proof grid owns layout — free .page's width + neutralise the base grid */
 .page.proof { max-width: none; padding: 0; }
-.page.proof > #quartz-body { display: block; max-width: none; }
+.page.proof > #quartz-body { display: block; max-width: none; padding: 0; }
 .snav .snav-further { margin-bottom: 4px; }
 .snav .snav-further > summary { list-style: none; }
 .snav .snav-further > summary::-webkit-details-marker { display: none; }
