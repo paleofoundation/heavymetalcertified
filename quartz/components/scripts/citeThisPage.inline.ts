@@ -111,7 +111,7 @@ function bind(root: HTMLElement) {
         `  year         = {${year}},`,
         ...(doi ? [`  doi          = {${doi}},`] : []),
         `  howpublished = {\\url{${url}}},`,
-        `  note         = {Retrieved ${today}. CC BY 4.0.},`,
+        `  note         = {Retrieved ${today}.},`,
         `  url          = {${url}}`,
         `}`,
       ]
@@ -132,7 +132,6 @@ function bind(root: HTMLElement) {
         ...(doi ? [`DO  - ${doi}`] : []),
         `UR  - ${url}`,
         `Y2  - ${today}`,
-        "N1  - CC BY 4.0",
         "ER  - ",
       ]
       download(`${key}.ris`, lines.join("\n") + "\n", "application/x-research-info-systems")
