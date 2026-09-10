@@ -35,7 +35,8 @@
     "format": "npx prettier . --write",
     "seo:audit": "node tools/audit-crawl-metadata.mjs",
     "release": "npm run build && npm run seo:audit",
-    "publish": "npm run release && npx vercel@latest --prod --yes"
+    "publish": "npm run release && npx vercel@latest --prod --yes",
+    "build:design-review": "./quartz/bootstrap-cli.mjs build -d content -o public && npm run postbuild"
   },
   "engines": {
     "npm": ">=10.9.2",

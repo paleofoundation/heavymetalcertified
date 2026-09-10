@@ -1,12 +1,19 @@
 {
-  "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs — never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md §3.5), including `absent: true` for markup that was removed.",
+  "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs \u2014 never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md \u00a73.5), including `absent: true` for markup that was removed.",
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
     "/": [
       { "sel": "body", "prop": "background-color", "want": "#faf7f4", "src": "design nesting: main > div[background:#faf7f4] is the content canvas that the analyte cards sit on" },
       { "sel": ".hmtc-panel-grid a", "prop": "background-color", "want": "#fffdfb", "note": "cards stay white on the cream canvas; #faf7f4/#fffdfb is ΔE 2.12 — if this ever equals body, the panel has lost its separation" },
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
-      { "sel": "header", "prop": "position", "want": "sticky" }
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-home-hero", "prop": "background-color", "want": "#9f2727" },
+      { "sel": ".hmtc-home-copy", "prop": "border-radius", "want": "3px" },
+      { "sel": ".hmtc-home-title", "prop": "color", "want": "#ffffff" },
+      { "sel": ".hmtc-home-h1", "prop": "absent", "want": true },
+      { "sel": ".hmtc-home-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-sidebar a[href=\"https://orcid.org/0000-0002-2348-7259\"]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
     ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
@@ -17,7 +24,10 @@
       { "sel": "[data-cite-panel]", "prop": "count", "want": 1, "note": "the citation slide-over (SourceCitationPanel) is mounted top-level (quartz.layout.ts afterBody, NOT the rail — so the fixed overlay renders at every width); citationPanel.inline.ts fills and reveals it on inline-citation click. This is the layout-liveness assertion: if 0, the mount was dropped and the inline script never ships." },
       { "sel": ".hmtc-cite-panel", "prop": "position", "want": "fixed", "note": "the panel is a right-anchored fixed slide-over, not an in-rail card." },
       { "sel": ".hmtc-cite-panel", "prop": "visibility", "want": "hidden", "note": "closed state: the panel is off-screen (transform: translateX(100%)) and visibility:hidden until a citation is clicked — NOT display:none, which would kill the slide transition." },
-      { "sel": ".hmtc-cite-scrim", "prop": "count", "want": 1, "note": "the backdrop scrim sibling that the drawer slides in over." }
+      { "sel": ".hmtc-cite-scrim", "prop": "count", "want": 1, "note": "the backdrop scrim sibling that the drawer slides in over." },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-orcid", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
     ],
     "/articles/regulatory-watch": [
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
@@ -38,9 +48,10 @@
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
-      { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "no-bold rule (CONTENT-RULES §7): <strong>/<b>/** render at normal weight." },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "The published source has no strong tags. Assert absence; generated prose is outside this design review." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
-      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 }
     ],
     "/manuals/infant-and-child-foods": [
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1", "note": "a Program Manual carries the same sitewide chrome as every content page." },
@@ -59,7 +70,11 @@
       { "sel": ".wiki-content a[download]", "prop": "count", "want": 0, "note": "the manual PDF is not inline in the body; it is the right-rail PdfCard (from `pdf` frontmatter)." },
       { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the Download PDF affordance is the right-rail PdfCard — one home for it sitewide." },
       { "sel": "aside.snav", "prop": "position", "want": "sticky", "note": "the 'On this page' rail sticks below the top-bar." },
-      { "sel": "aside.snav", "prop": "top", "want": "92px" }
+      { "sel": "aside.snav", "prop": "top", "want": "92px" },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-orcid", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-document-doi[aria-label=\"Earlier deposited edition\"] a[href=\"https://doi.org/10.5281/zenodo.20771543\"]", "prop": "count", "want": 1 },
+      { "sel": "meta[name=\"citation_doi\"]", "prop": "absent", "want": true, "note": "The current web edition must not inherit a superseded deposit DOI." }
     ],
     "/analytes": [
       { "sel": "header", "prop": "height", "want": "68px", "note": "the analyte panel page carries the same sitewide chrome as every content page." },
@@ -123,6 +138,17 @@
       { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Directory' KIND badge (HeroBand, type: rationale-index)." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/briefings/the-big-8": [
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-orcid", "prop": "count", "want": 1 }
+    ],
+    "/authors/karen-pendergrass": [
+      { "sel": ".hmtc-profile-image", "prop": "width", "want": "200px" },
+      { "sel": ".wiki-content a[href=\"https://orcid.org/0000-0002-2348-7259\"]", "prop": "count", "want": 2 }
+    ],
+    "/compare": [
+      { "sel": ".hmtc-author-card", "prop": "absent", "want": true }
     ]
   }
 }

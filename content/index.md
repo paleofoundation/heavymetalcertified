@@ -5,34 +5,16 @@ description: "Heavy Metal Tested & Certified (HMTc) publishes numeric heavy-meta
 socialDescription: "The published standards and certification authority for the Heavy Metal Tested & Certified (HMTc) program: numeric heavy-metal limits set to the strictest applicable government maximum and tightened by the peer-reviewed literature for the toxics that beat it, published per subcategory in each product's native basis."
 type: home
 audience: [regulator, brand-legal, retailer-compliance, certifier]
-updated: 2026-08-02
+updated: 2026-09-10
+home_snapshot_date: "22 August 2026"
+home_snapshot:
+  - ["Subcategory standards in force", "348"]
+  - ["Carrying a firm limit", "320"]
+  - ["Firm analyte limits", "1,794"]
+  - ["Certified analyte panel", "10"]
+  - ["Priority metals", "8"]
+  - ["Current edition", "2026"]
 ---
-
-<section style="background:linear-gradient(180deg,#8c2222 0,#9f2727 150px),#9f2727;color:#fff;width:100%" data-no-cite>
-  <div style="max-width:1760px;margin:0 auto;padding:96px 48px 88px;display:grid;grid-template-columns:minmax(0,1.35fr) 400px;gap:96px;align-items:start" class="hmtc-home-hero-grid">
-    <div style="min-width:0">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:20px">Published standard &middot; 2026 Edition</div>
-      <h1 style="font-family:Lora,serif;font-weight:400;font-size:43px;line-height:1.08;letter-spacing:-.02em;color:#fff;margin:0 0 16px;max-width:26ch" class="hmtc-home-h1">Published Heavy-Metal Limits for the Big 8, and Certification Against Them</h1>
-      <p style="font-size:16.5px;line-height:1.78;color:rgba(255,255,255,.88);margin:0 0 34px;max-width:72ch">Heavy Metal Tested &amp; Certified (HMTc) publishes numeric limits for all eight priority metals, including metals most food certifications do not address, and certifies products against them.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a href="https://app.heavymetalcertified.com/hmt/get-started" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#7f1f1f;background:#fff;border:1px solid #fff;border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn hmtc-hero-btn--solid">Get Started</a>
-        <a href="/briefings/the-big-8" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.38);border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn">The Big 8</a>
-        <a href="/standards" style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.38);border-radius:2px;padding:8px 14px;text-decoration:none" class="hmtc-hero-btn">Standards</a>
-      </div>
-    </div>
-    <div style="border:1px solid rgba(255,255,255,.22)">
-      <div style="padding:12px 17px;background:rgba(0,0,0,.13);font-family:Lora,serif;font-size:16px;color:#fff">Program snapshot <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.66)">&middot; as of 22 Aug 2026</span></div>
-      <div style="padding:6px 17px 14px">
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Subcategory standards in force</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">348</span></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Carrying a firm limit</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">320</span></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Firm analyte limits</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">1,794</span></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Certified analyte panel</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">10</span></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Priority metals</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">8</span></div>
-        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dotted rgba(255,255,255,.22)"><span style="font-size:12.5px;color:rgba(255,255,255,.84)">Current edition</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#fff;font-variant-numeric:tabular-nums">2026</span></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="what" style="max-width:1760px;margin:0 auto;padding:72px 48px 72px" data-no-cite>
   <div style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:96px;align-items:start" class="hmtc-prose-grid">

@@ -1,3 +1,5 @@
+import { AuthorCard, isKarenAuthor } from "./authorIdentity"
+import { DocumentDoi } from "./DocumentDoi"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { pathToRoot, type FullSlug } from "../util/path"
 
@@ -41,6 +43,7 @@ const OrcidIdIcon = () => (
 
 // Screen type → the kind badge (v3 KIND map). Keyed on frontmatter `type`.
 const KIND: Record<string, string> = {
+  "author-profile": "Author profile",
   standard: "Standard",
   "standard-in-development": "Standard",
   "standards-index": "Register",
@@ -137,10 +140,11 @@ export default (() => {
       rows.push(["Document type", "Report"])
     } else {
       // manuals + other cited surfaces
-      if (fm.cert_doi) rows.push(["DOI", String(fm.cert_doi)])
+      // DOI belongs to its own edition-aware right-sidebar record.
       if (eff) rows.push(["Effective", eff])
     }
-    const snapshot = rows.slice(0, 4)
+    const snapshot = rows.filter(([label]) => !/^doi$/i.test(label)).slice(0, 4)
+    const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/")
 
     const author = fm.author ? String(fm.author) : undefined
     const orcid = fm.orcid ? String(fm.orcid) : undefined
@@ -151,6 +155,7 @@ export default (() => {
     // dangerouslySetInnerHTML is on trusted content only.
     const dekHtml = fm.dek_html ? String(fm.dek_html) : undefined
     const hasSnapshot = snapshot.length > 0
+    const hasSidebar = hasSnapshot || hasAuthorCard || Boolean(fm.cert_doi) || String(slug) === "manuals/infant-and-child-foods"
     // The snapshot box title. Defaults to "Page snapshot"; a regulation detail
     // page overrides it with "Instrument".
     const snapTitle = fm.snapshot_title ? String(fm.snapshot_title) : "Page snapshot"
@@ -168,7 +173,7 @@ export default (() => {
 
     return (
       <section class="hmtc-heroband">
-        <div class={hasSnapshot ? "hmtc-heroband-inner" : "hmtc-heroband-inner hmtc-heroband-inner--full"}>
+        <div class={hasSidebar ? "hmtc-heroband-inner" : "hmtc-heroband-inner hmtc-heroband-inner--full"}>
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">
               <a href={base || "/"}>HMTc</a>
@@ -196,7 +201,7 @@ export default (() => {
                   heroMeta.map((s) => <span class="hmtc-hb-stamp">{s}</span>)
                 ) : (
                   <>
-                    {author ? (
+                    {author && !hasAuthorCard ? (
                       <span>
                         Author {author}
                         {orcid ? (
@@ -227,6 +232,8 @@ export default (() => {
               </div>
             ) : null}
           </div>
+          {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
+          {hasAuthorCard && <AuthorCard />}
           {hasSnapshot ? (
             <div class="hmtc-hb-snap">
               <div class="hmtc-hb-snap-head">{snapTitle}</div>
@@ -240,6 +247,8 @@ export default (() => {
               </div>
             </div>
           ) : null}
+          <DocumentDoi slug={String(slug)} fm={fm} />
+          </aside>}
         </div>
       </section>
     )

@@ -7,3 +7,4 @@ public/
 tsconfig.tsbuildinfo
 .quartz-cache/
 .env*
+dist/
