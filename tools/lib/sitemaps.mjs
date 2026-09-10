@@ -92,7 +92,8 @@ export function writeSitemaps(publicDir, { minMain = 50, minScholarly = 10 } = {
   fs.writeFileSync(mainPath, mainXml, "utf8")
   fs.writeFileSync(scholarPath, scholarXml, "utf8")
 
-  const errors = validateDeclaredSitemaps(publicDir, { minMain, minScholarly })
+  // robots.txt is written by a later postbuild step; this check is XML-only.
+  const errors = validateSitemapFiles(publicDir, { minMain, minScholarly })
   if (errors.length) {
     const err = new Error(`sitemap write produced an invalid declared sitemap:\n${errors.join("\n")}`)
     err.errors = errors
@@ -101,21 +102,16 @@ export function writeSitemaps(publicDir, { minMain = 50, minScholarly = 10 } = {
   return { mainPath, scholarPath, indexable, scholarly }
 }
 
-export function validateDeclaredSitemaps(
+export function validateSitemapFiles(
   publicDir,
   { minMain = 50, minScholarly = 10 } = {},
 ) {
   const errors = []
-  const required = ["robots.txt", "sitemap.xml", "sitemap-scholarly.xml"]
-  for (const name of required) {
-    if (!fs.existsSync(path.join(publicDir, name))) {
-      errors.push(`missing public/${name}`)
-    }
-  }
-
   const mainPath = path.join(publicDir, "sitemap.xml")
   const scholarPath = path.join(publicDir, "sitemap-scholarly.xml")
-  const robotsPath = path.join(publicDir, "robots.txt")
+
+  if (!fs.existsSync(mainPath)) errors.push("missing public/sitemap.xml")
+  if (!fs.existsSync(scholarPath)) errors.push("missing public/sitemap-scholarly.xml")
 
   if (fs.existsSync(mainPath)) {
     const xml = fs.readFileSync(mainPath, "utf8")
@@ -144,17 +140,27 @@ export function validateDeclaredSitemaps(
     }
   }
 
-  if (fs.existsSync(robotsPath)) {
-    const robots = fs.readFileSync(robotsPath, "utf8")
-    for (const sitemap of [
-      `${CERT_ORIGIN}/sitemap.xml`,
-      `${CERT_ORIGIN}/sitemap-scholarly.xml`,
-    ]) {
-      if (!robots.includes(`Sitemap: ${sitemap}`)) {
-        errors.push(`robots.txt: missing ${sitemap}`)
-      }
+  return errors
+}
+
+export function validateDeclaredSitemaps(
+  publicDir,
+  { minMain = 50, minScholarly = 10 } = {},
+) {
+  const errors = validateSitemapFiles(publicDir, { minMain, minScholarly })
+  const robotsPath = path.join(publicDir, "robots.txt")
+  if (!fs.existsSync(robotsPath)) {
+    errors.push("missing public/robots.txt")
+    return errors
+  }
+  const robots = fs.readFileSync(robotsPath, "utf8")
+  for (const sitemap of [
+    `${CERT_ORIGIN}/sitemap.xml`,
+    `${CERT_ORIGIN}/sitemap-scholarly.xml`,
+  ]) {
+    if (!robots.includes(`Sitemap: ${sitemap}`)) {
+      errors.push(`robots.txt: missing ${sitemap}`)
     }
   }
-
   return errors
 }
