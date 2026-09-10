@@ -50,6 +50,7 @@ const KIND: Record<string, string> = {
   "briefings-index": "Directory",
   "manuals-index": "Library",
   program: "Program",
+  about: "About",
   verify: "Lookup",
   apply: "Apply",
   brands: "Directory",

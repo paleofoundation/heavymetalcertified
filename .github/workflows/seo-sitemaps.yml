@@ -1,0 +1,24 @@
+# Lightweight gate for the robots-declared sitemaps. The full HTML walk that
+# proves public/sitemap.xml shipped runs in Vercel postbuild
+# (tools/lint-declared-sitemaps.mjs). This workflow catches generator regressions
+# without requiring a Quartz build.
+
+name: SEO sitemap gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  sitemap-unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Sitemap writer unit tests
+        run: node --test tools/tests/sitemaps.test.mjs
+      - name: Claim-discipline lint
+        run: node tools/claim-discipline-lint.mjs

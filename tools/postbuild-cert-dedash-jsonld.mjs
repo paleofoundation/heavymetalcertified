@@ -7,7 +7,7 @@
 // DataCatalog, …) are injected in POSTBUILD by a set of generators
 // (postbuild-article-jsonld, postbuild-cert-faq-jsonld, postbuild-why-limited-jsonld,
 // postbuild-cert-briefing-jsonld, postbuild-cert-page-jsonld, postbuild-cert-data-jsonld,
-// postbuild-cert-jsonld), and several of those read from spec .json sources the
+// postbuild-cert-jsonld, postbuild-standards-jsonld), and several of those read from spec .json sources the
 // content sweep never touches. The result is prose-derived metadata (FAQ answers,
 // article deks, dataset names) that still carries em dashes the visible page no
 // longer does — text that search engines and AI answerers read. Rather than patch

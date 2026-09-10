@@ -23,6 +23,7 @@ const footerSections = [
   {
     title: "Methodology",
     links: [
+      ["The program", "/program"],
       ["How limits are derived", "/program/structure"],
       ["Two remediation pathways", "/program/two-pathways"],
       ["Confidential Remediation Track", "/program/remediation"],
@@ -33,6 +34,7 @@ const footerSections = [
   {
     title: "Institute",
     links: [
+      ["About HMTc", "/about"],
       ["Institute of Contaminant Standards (ICS)", "https://contaminantstandards.com"],
       ["Heavy Metal Index", "https://heavymetalindex.com"],
       ["Paleo Foundation", "https://paleofoundation.com"],

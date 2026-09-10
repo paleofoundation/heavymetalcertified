@@ -17,6 +17,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { CERT_BASE, CERT_ORGANIZATION_ID, personEntity } from "./lib/entity-graph.mjs"
+import { isNoindex } from "./lib/built-html.mjs"
 
 const repoRoot = process.cwd()
 const SPEC_DIRS = [path.join(repoRoot, "data/articles/synthesis"), path.join(repoRoot, "data/articles/regulatory-watch")]
@@ -134,7 +135,38 @@ for (const dir of SPEC_DIRS) {
   injected++
  }
 }
+// Hand-authored articles (the chocolate analysis has no synthesis spec) and any
+// future article HTML that missed the spec loop still need Article + breadcrumbs.
+let gapFilled = 0
+if (fs.existsSync(PUBLIC)) {
+  for (const file of fs.readdirSync(PUBLIC).filter((name) => name.endsWith(".html") && name !== "index.html")) {
+    const slug = file.replace(/\.html$/, "")
+    const htmlPath = path.join(PUBLIC, file)
+    let html = fs.readFileSync(htmlPath, "utf8")
+    if (html.includes(`${CERT_BASE}/articles/${slug}#article`) || /"@type"\s*:\s*"Article"/.test(html)) {
+      continue
+    }
+    if (/"@type"\s*:\s*"CollectionPage"/.test(html)) continue
+    if (isNoindex(html)) continue
+    const title =
+      (html.match(/<title>([^<]+)<\/title>/i)?.[1] ?? slug)
+        .replace(/\s*\|\s*Heavy Metal Tested & Certified\s*$/i, "")
+        .trim()
+    const description =
+      html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i)?.[1] ?? title
+    const spec = { slug, title, description, published: undefined, date: undefined }
+    const graphs = [articleGraph(spec), breadcrumbGraph(spec)].filter(Boolean)
+    const tag = graphs
+      .map((g) => `<script type="application/ld+json">${JSON.stringify(g)}</script>`)
+      .join("")
+    html = html.replace("</head>", `${tag}</head>`)
+    fs.writeFileSync(htmlPath, html, "utf8")
+    gapFilled++
+  }
+}
+
 console.log(
   `postbuild-article-jsonld: injected Article + FAQPage JSON-LD into ${injected} article page(s)` +
-    (missing ? `; ${missing} spec(s) had no built HTML.` : "."),
+    (missing ? `; ${missing} spec(s) had no built HTML` : "") +
+    (gapFilled ? `; filled ${gapFilled} hand-authored gap(s).` : "."),
 )

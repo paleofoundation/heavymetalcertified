@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-// Generate a focused discovery sitemap for citable technical documents after
-// Quartz has emitted the final HTML and Scholar metadata.
+// Generate both crawler sitemaps declared in robots.txt from the built HTML.
 //
 // SCOPE (load-bearing). Every published standard row carries citation_* metadata,
 // so keying the scholarly sitemap on "has citation_title" swept ~150 per-row
@@ -13,86 +12,21 @@
 // The scholarly sitemap therefore carries only the document-shaped sections below.
 // Nothing is hidden by this: the standards rows stay in the main sitemap and
 // remain fully indexable by ordinary Googlebot.
+//
+// RELIABILITY. Quartz ContentIndex also writes public/sitemap.xml, but that file
+// has no XML prolog and is a second source of truth from the crawl audit. This
+// script overwrites BOTH declared sitemaps from the same HTML walk so a missing
+// or malformed file fails the build instead of shipping as an intermittent 500.
 
-import fs from "node:fs";
-import path from "node:path";
+import path from "node:path"
 
-const PUBLIC = path.join(process.cwd(), "public");
+import { SCHOLARLY_SECTIONS, writeSitemaps } from "./lib/sitemaps.mjs"
 
-function walk(dir) {
-  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    const full = path.join(dir, entry.name);
-    return entry.isDirectory() ? walk(full) : [full];
-  });
-}
+const PUBLIC = path.join(process.cwd(), "public")
 
-function attr(html, tag, attribute, value, result) {
-  const tags = html.match(new RegExp(`<${tag}\\b[^>]*>`, "gi")) ?? [];
-  for (const candidate of tags) {
-    const wanted = candidate.match(
-      new RegExp(`\\b${attribute}=["']${value}["']`, "i"),
-    );
-    if (!wanted) continue;
-    const match = candidate.match(
-      new RegExp(`\\b${result}=["']([^"']+)["']`, "i"),
-    );
-    if (match) return match[1];
-  }
-}
+const { indexable, scholarly } = writeSitemaps(PUBLIC)
 
-function escapeXml(value) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-// Sections whose pages are documents (research analyses, standards briefings,
-// program manuals) rather than specification rows.
-const SCHOLARLY_SECTIONS = ["articles/", "briefings/", "manuals/"]
-
-const skipped = []
-const urls = walk(PUBLIC)
-  .filter(
-    (file) => file.endsWith(".html") && path.basename(file) !== "404.html",
-  )
-  .flatMap((file) => {
-    const html = fs.readFileSync(file, "utf8");
-    const robots = attr(html, "meta", "name", "robots", "content") ?? "";
-    const title = attr(html, "meta", "name", "citation_title", "content");
-    const canonical = attr(html, "link", "rel", "canonical", "href");
-    if (!title || !canonical || /noindex/i.test(robots)) return [];
-    const rel = path.relative(PUBLIC, file).split(path.sep).join("/");
-    if (!SCHOLARLY_SECTIONS.some((section) => rel.startsWith(section))) {
-      skipped.push(rel);
-      return [];
-    }
-    return [canonical];
-  });
-
-const unique = [...new Set(urls)].sort();
-const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${unique
-  .map((url) => `  <url><loc>${escapeXml(url)}</loc></url>`)
-  .join("\n")}\n</urlset>\n`;
-
-fs.writeFileSync(path.join(PUBLIC, "sitemap-scholarly.xml"), body, "utf8");
-// Report the exclusions so a future section that should be scholarly, but is not
-// listed above, shows up in the build log instead of silently vanishing.
-const skippedSections = {}
-for (const rel of skipped) {
-  const section = rel.split("/")[0]
-  skippedSections[section] = (skippedSections[section] ?? 0) + 1
-}
 console.log(
-  `postbuild-cert-sitemaps: wrote ${unique.length} scholarly URLs ` +
-    `(sections: ${SCHOLARLY_SECTIONS.join(", ")})`,
+  `postbuild-cert-sitemaps: wrote sitemap.xml (${indexable.length} indexable URLs) ` +
+    `and sitemap-scholarly.xml (${scholarly.length} scholarly URLs; sections: ${SCHOLARLY_SECTIONS.join(", ")})`,
 )
-if (skipped.length) {
-  console.log(
-    `postbuild-cert-sitemaps: excluded ${skipped.length} citation-bearing page(s) ` +
-      `as non-scholarly — ${Object.entries(skippedSections)
-        .map(([k, v]) => `${k}: ${v}`)
-        .join(", ")} (still in sitemap.xml)`,
-  )
-}

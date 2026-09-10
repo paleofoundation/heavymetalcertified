@@ -6,6 +6,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { isWellFormedSitemap, scholarlyRel } from "./lib/sitemaps.mjs";
+
 const ROOT = process.cwd();
 const PUBLIC = path.join(ROOT, "public");
 const ORIGIN = "https://heavymetalcertified.com";
@@ -209,7 +211,8 @@ for (const file of htmlFiles) {
           `${route}: Scholar PDF does not exist (${pdfUrl.pathname})`,
         );
     }
-    if (canonical) scholarly.push(canonical);
+    const rel = path.relative(PUBLIC, file).split(path.sep).join("/");
+    if (canonical && scholarlyRel(rel)) scholarly.push(canonical);
   }
 
   const base = canonical ?? expectedCanonical(route);
@@ -239,8 +242,19 @@ for (const file of htmlFiles) {
 
 for (const item of brokenLinks) errors.push(`internal link: ${item}`);
 
-const mainSitemap = xmlLocations(path.join(PUBLIC, "sitemap.xml"));
-const scholarSitemap = xmlLocations(path.join(PUBLIC, "sitemap-scholarly.xml"));
+const mainSitemapPath = path.join(PUBLIC, "sitemap.xml");
+const scholarSitemapPath = path.join(PUBLIC, "sitemap-scholarly.xml");
+if (fs.existsSync(mainSitemapPath) && !isWellFormedSitemap(fs.readFileSync(mainSitemapPath, "utf8"))) {
+  errors.push("sitemap.xml: not a well-formed urlset");
+}
+if (
+  fs.existsSync(scholarSitemapPath) &&
+  !isWellFormedSitemap(fs.readFileSync(scholarSitemapPath, "utf8"))
+) {
+  errors.push("sitemap-scholarly.xml: not a well-formed urlset");
+}
+const mainSitemap = xmlLocations(mainSitemapPath);
+const scholarSitemap = xmlLocations(scholarSitemapPath);
 sameValues("sitemap.xml", mainSitemap, indexable);
 sameValues("sitemap-scholarly.xml", scholarSitemap, scholarly);
 

@@ -23,10 +23,12 @@ const PUBLIC = path.join(process.cwd(), "public")
 const CERT_BASE = "https://heavymetalcertified.com"
 const ORG_ID = `${CERT_BASE}/#organization`
 
-// Per-page Article specs. Slugs are root-relative (no leading slash, no .html).
+// Per-page specs. Slugs are root-relative (no leading slash). `file` overrides
+// the default `${slug}.html` when Quartz emits a folder index.
 const PAGES = [
   {
     slug: "compare",
+    type: "Article",
     headline: "Heavy-metal certification comparison",
     description:
       "How heavy-metal certifications compare on coverage: HMTc sets a published limit for all eight priority metals across consumer packaged goods, where conventional four-metal marks screen the big four and NSF/ANSI 173 reaches five.",
@@ -43,6 +45,50 @@ const PAGES = [
       "aluminium in food certification",
       "heavy metals in food",
       "HMTc",
+    ],
+    crumbs: [
+      { name: "Home", item: CERT_BASE },
+      { name: "Certification comparison", item: `${CERT_BASE}/compare` },
+    ],
+  },
+  {
+    slug: "about",
+    type: "AboutPage",
+    headline: "About Heavy Metal Tested & Certified (HMTc)",
+    description:
+      "Heavy Metal Tested & Certified (HMTc) is a voluntary third-party certification program that publishes numeric heavy-metal limits by product subcategory and certifies products against those published limits.",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    keywords: [
+      "about HMTc",
+      "Heavy Metal Tested & Certified",
+      "Institute of Contaminant Standards",
+      "ISO/IEC 17025",
+      "heavy metal certification",
+    ],
+    crumbs: [
+      { name: "Home", item: CERT_BASE },
+      { name: "About", item: `${CERT_BASE}/about` },
+    ],
+  },
+  {
+    slug: "program",
+    file: "program/index.html",
+    type: "WebPage",
+    headline: "The HMTc program",
+    description:
+      "How Heavy Metal Tested & Certified publishes subcategory limits, tests products against them, and handles readiness and corrective action when a lot falls short.",
+    datePublished: "2026-09-10",
+    dateModified: "2026-09-10",
+    keywords: [
+      "HMTc program",
+      "heavy metal certification program",
+      "readiness pathway",
+      "corrective action",
+    ],
+    crumbs: [
+      { name: "Home", item: CERT_BASE },
+      { name: "Program", item: `${CERT_BASE}/program` },
     ],
   },
 ]
@@ -98,13 +144,14 @@ function extractFaq(html) {
   return out
 }
 
-function articleGraph(page, url) {
+function pageGraph(page, url) {
+  const type = page.type ?? "Article"
   const headline = page.headline.slice(0, 110)
-  return {
+  const org = { "@type": "Organization", "@id": ORG_ID, name: "Heavy Metal Tested & Certified" }
+  const g = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `${url}#article`,
-    headline,
+    "@type": type,
+    "@id": type === "Article" ? `${url}#article` : `${url}#page`,
     name: page.headline,
     description: page.description,
     inLanguage: "en",
@@ -113,9 +160,33 @@ function articleGraph(page, url) {
     isAccessibleForFree: true,
     datePublished: page.datePublished,
     dateModified: page.dateModified ?? page.datePublished,
-    keywords: (page.keywords ?? []).join(", "),
-    author: { "@type": "Organization", "@id": ORG_ID, name: "Heavy Metal Tested & Certified" },
-    publisher: { "@type": "Organization", "@id": ORG_ID, name: "Heavy Metal Tested & Certified" },
+    publisher: org,
+  }
+  if (type === "Article") {
+    g.headline = headline
+    g.author = org
+    g.keywords = (page.keywords ?? []).join(", ")
+  } else {
+    g.about = { "@id": ORG_ID }
+    g.isPartOf = { "@type": "WebSite", url: CERT_BASE }
+    if (page.keywords?.length) g.keywords = page.keywords.join(", ")
+  }
+  return g
+}
+
+function breadcrumbGraph(page, url) {
+  const crumbs = page.crumbs
+  if (!Array.isArray(crumbs) || !crumbs.length) return null
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumbs`,
+    itemListElement: crumbs.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: crumb.item,
+    })),
   }
 }
 
@@ -135,21 +206,22 @@ function faqGraph(faq, url) {
 
 let injected = 0
 for (const page of PAGES) {
-  const file = path.join(PUBLIC, `${page.slug}.html`)
+  const file = path.join(PUBLIC, page.file ?? `${page.slug}.html`)
   if (!fs.existsSync(file)) {
-    console.error(`postbuild-cert-page-jsonld: ${page.slug}.html not found; skipping.`)
+    console.error(`postbuild-cert-page-jsonld: ${page.file ?? `${page.slug}.html`} not found; skipping.`)
     continue
   }
   let html = fs.readFileSync(file, "utf8")
   const url = `${CERT_BASE}/${page.slug}`
+  const marker = page.type && page.type !== "Article" ? `${url}#page` : `${url}#article`
 
-  if (html.includes(`${url}#article`)) {
+  if (html.includes(marker)) {
     console.log(`postbuild-cert-page-jsonld: ${page.slug} already has JSON-LD; skipping.`)
     continue
   }
 
   const faq = extractFaq(html)
-  const graphs = [articleGraph(page, url), faqGraph(faq, url)].filter(Boolean)
+  const graphs = [pageGraph(page, url), faqGraph(faq, url), breadcrumbGraph(page, url)].filter(Boolean)
   const tags = graphs
     .map((g) => `<script type="application/ld+json">${JSON.stringify(g)}</script>`)
     .join("")
@@ -157,8 +229,9 @@ for (const page of PAGES) {
   html = html.replace("</head>", `${tags}</head>`)
   fs.writeFileSync(file, html, "utf8")
   injected++
+  const kind = page.type ?? "Article"
   console.log(
-    `postbuild-cert-page-jsonld: injected Article${faq.length ? ` + FAQPage (${faq.length} Q)` : ""} into /${page.slug}.`,
+    `postbuild-cert-page-jsonld: injected ${kind}${faq.length ? ` + FAQPage (${faq.length} Q)` : ""} into /${page.slug}.`,
   )
 }
 

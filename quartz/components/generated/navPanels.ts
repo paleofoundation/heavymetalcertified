@@ -307,7 +307,7 @@ export const navPanels: NavPanel[] = [
     key: "program",
     label: "Program",
     panelLabel: "The program",
-    slug: "program/structure",
+    slug: "program",
     blurb:
       "How a limit is set, how a product is tested against it, and what happens when a lot falls short.",
     groups: [
@@ -331,6 +331,7 @@ export const navPanels: NavPanel[] = [
       {
         heading: "Choosing HMTc",
         children: [
+          { label: "About HMTc", slug: "about" },
           { label: "Certification comparison", slug: "compare" },
           { label: "For brands", slug: "for-brands" },
           { label: "For retailers", slug: "for-retailers" },
@@ -350,7 +351,7 @@ export const navPanels: NavPanel[] = [
         ],
       },
     ],
-    allLabel: "Program structure",
+    allLabel: "The program",
   },
   {
     key: "brands",

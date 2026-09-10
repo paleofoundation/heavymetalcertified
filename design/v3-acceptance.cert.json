@@ -116,6 +116,26 @@
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "the rationale prose carries no bold markup at all — the no-bold canon holds by construction (font-weight backstops above)." }
     ],
+    "/about": [
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "note": "the About page uses the canonical interior hero band." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the About KIND badge (type: about)." },
+      { "sel": ".hmtc-hb-title", "prop": "font-family", "want": "Lora", "match": "contains" },
+      { "sel": ".wiki-content h1", "prop": "count", "want": 0, "note": "NO hand-rolled hero h1; the title is the HeroBand's." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
+    "/program": [
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "note": "the program hub uses the canonical interior hero band, not a FolderPage stub." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the Program KIND badge (type: program)." },
+      { "sel": ".hmtc-hb-title", "prop": "font-family", "want": "Lora", "match": "contains" },
+      { "sel": ".wiki-content h1", "prop": "count", "want": 0, "note": "NO hand-rolled hero h1; the title is the HeroBand's." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 }
+    ],
     "/why-we-limit": [
       { "sel": "header", "prop": "height", "want": "68px" },
       { "sel": "header", "prop": "position", "want": "sticky" },
