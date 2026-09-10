@@ -6,7 +6,7 @@ import { navPanels, type NavPanel } from "./generated/navPanels"
 // Three properties this markup is built to guarantee, in order of importance:
 //
 // 1. **Crawlable.** Every panel is server-rendered in full on every page. All
-//    68 hrefs and their link text are in the initial HTML, and the panel is
+//    destination links and their text are in the initial HTML, and the panel is
 //    hidden with `visibility`, never `display:none` or `[hidden]`. Googlebot,
 //    GPTBot, ClaudeBot and PerplexityBot do not click, so a panel whose contents
 //    arrive on interaction is a panel they never see
@@ -23,9 +23,8 @@ import { navPanels, type NavPanel } from "./generated/navPanels"
 //    not `role="menu"`/`menuitem`, which makes screen readers announce
 //    navigation as an application command set.
 //
-// Contents come from quartz/components/generated/navPanels.ts, which is built
-// from the editorial seed by tools/build-nav-panels.mjs and fails the build if
-// any slug does not resolve.
+// Contents come from the hand-authored HMTc taxonomy in
+// quartz/components/generated/navPanels.ts (a legacy directory name).
 
 function Chevron() {
   return (

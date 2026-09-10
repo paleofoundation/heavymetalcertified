@@ -130,11 +130,8 @@
 .hmi-nav-list {
   display: flex;
   flex-direction: row;
-  // Wrap to a second row when the taxonomy outgrows one line (8 panels overflow
-  // a ~1200-1360px bar) so no top-level item is ever clipped off the right edge.
-  // At wide widths it stays a single row; the mega-menu drawer is positioned
-  // against the sticky shell, not these items, so wrapping never moves a panel.
-  flex-wrap: wrap;
+  // Five curated sections stay on one line; narrower viewports use the drawer.
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.35rem 1.1rem;
   list-style: none;
@@ -446,6 +443,10 @@ body:has(.hmi-topnav-shell) {
     top: 100%;
     left: 0;
     right: 0;
+    max-height: calc(100dvh - 58px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -526,6 +527,7 @@ body:has(.hmi-topnav-shell) {
     padding: 0.2rem 0 0.9rem 0.75rem;
   }
 
+  .hmi-nav-title,
   .hmi-nav-blurb {
     display: none;
   }

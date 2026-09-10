@@ -3,6 +3,13 @@
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
     "/": [
+      { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 2 },
+      { "sel": ".hmtc-home-action--primary[href=\"https://app.heavymetalcertified.com/hmt/get-started\"]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"/briefings/the-big-8\"]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-actions > a[href=\"/standards/finder\"]", "prop": "absent", "want": true },
+      { "sel": ".hmi-nav-list > .hmi-nav-item", "prop": "count", "want": 5 },
+      { "sel": ".hmi-nav-list", "prop": "flex-wrap", "want": "nowrap" },
+      { "sel": ".hmtc-nav", "prop": "flex-shrink", "want": "0" },
       { "sel": "body", "prop": "background-color", "want": "#faf7f4", "src": "design nesting: main > div[background:#faf7f4] is the content canvas that the analyte cards sit on" },
       { "sel": ".hmtc-panel-grid a", "prop": "background-color", "want": "#fffdfb", "note": "cards stay white on the cream canvas; #faf7f4/#fffdfb is ΔE 2.12 — if this ever equals body, the panel has lost its separation" },
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
@@ -48,6 +55,18 @@
       { "sel": ".wiki-content a[download]", "prop": "count", "want": 0 },
       { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the citable analysis exposes one PDF in the rail." },
       { "sel": "[data-cite-panel]", "prop": "count", "want": 1 }
+    ],
+    "/standards": [
+      { "sel": "header.hmi-topnav-shell", "prop": "height", "want": "68px" },
+      { "sel": ".hmi-nav-list > .hmi-nav-item", "prop": "count", "want": 5 },
+      { "sel": ".hmi-nav-list > .hmi-nav-item:nth-child(6)", "prop": "absent", "want": true },
+      { "sel": ".hmi-nav-list", "prop": "flex-wrap", "want": "nowrap" },
+      { "sel": ".hmtc-nav", "prop": "flex-shrink", "want": "0" },
+      { "sel": "#hmi-panel-standards .hmi-nav-col", "prop": "count", "want": 3 },
+      { "sel": "#hmi-panel-standards .hmi-nav-col a", "prop": "count", "want": 9 },
+      { "sel": "#hmi-navlabel-standards.active", "prop": "count", "want": 1 },
+      { "sel": "#hmi-panel-manuals, #hmi-panel-regulations, #hmi-panel-briefings", "prop": "absent", "want": true },
+      { "sel": "#subcats", "prop": "count", "want": 1 }
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },

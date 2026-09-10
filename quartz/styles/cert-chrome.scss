@@ -271,7 +271,7 @@ header.hmi-topnav-shell::after {
 .hmtc-nav {
   display: flex;
   align-items: stretch;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   min-width: 0;
   overflow: visible;
   gap: 2px;
@@ -418,22 +418,13 @@ header.hmi-topnav-shell::after {
 .hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
 .hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
 .hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
-// Groups lay out across the available width rather than in a fixed three, so a
-// panel with more groups than fit in one row is what makes the drawer tall.
-// Standards has five; at three per row it wrapped to a second row and that row
-// was the part that fell off the bottom of the window. `auto-fit` keeps every
-// group on one row wherever the width allows and drops to fewer columns when it
-// does not, with the panel's own max-height as the backstop.
+// Curated panels contain at most three groups. Keep one readable row, with
+// the independent panel scroll limit as a backstop on short viewports.
 .hmtc-nav .hmi-nav-cols {
   display: grid;
-  // 160px rather than 170px so the five Standards groups still fit on one row
-  // once the reserved scrollbar gutter is taken out of the available width.
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 28px 36px;
   align-items: start;
-  // topNav.scss caps this at 46rem for the index site's two-column panels.
-  // Left standing it holds the grid to three columns however wide the drawer
-  // is, which is what forced Standards' five groups onto a second row.
   max-width: none;
 }
 .hmtc-nav .hmi-nav-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }

@@ -7,8 +7,8 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
           <h1 class="hmtc-home-title">Published standards<br /><span>for heavy metals.</span></h1>
           <p class="hmtc-home-dek">Product-specific limits for eight priority metals. Independent laboratory testing and ongoing lot surveillance support every certification.</p>
           <nav class="hmtc-home-actions" aria-label="Explore certification">
-            <a class="hmtc-home-action hmtc-home-action--primary" href="/standards/finder">Find your standard <span aria-hidden="true">→</span></a>
-            <a class="hmtc-home-action" href="https://app.heavymetalcertified.com/hmt/get-started">Apply for certification <span aria-hidden="true">↗</span></a>
+            <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Get Started <span aria-hidden="true">↗</span></a>
+            <a class="hmtc-home-action" href="/briefings/the-big-8">The Big 8 <span aria-hidden="true">→</span></a>
           </nav>
         </div>
         <aside class="hmtc-home-sidebar" aria-label="Program snapshot">
