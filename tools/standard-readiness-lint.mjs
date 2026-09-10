@@ -1,75 +1,46 @@
 #!/usr/bin/env node
 // standard-readiness-lint.mjs — enforces the Certification-Readiness Ruling
-// (docs/governance/hmtc-governing-principles.md §"Certification-Readiness Ruling", ratified
-// 2026-08-25; CLAUDE.md Part 19).
+// (docs/governance/hmtc-governing-principles.md §"Certification-Readiness Ruling";
+// ORDER S-DOI-FORCE-1 / PANEL-CLAIM-1).
 //
 // A category/subcategory is CERTIFICATION-READY only when all three hold:
-//   COMPLETE   — every panel analyte carries a limit-of-record (firm number, species bounded
-//                by its parent total, or a baseline/LOQ screen). An empty cell (control /
-//                not-material with value:null) fails COMPLETE.
-//   REGISTERED — the standard carries a resolvable PRODUCTION DataCite DOI (a test/sandbox DOI
-//                does NOT satisfy this).
-//   CORRECTED  — reserved for the standards lint battery verdict (panel-coherence, method-drift,
-//                firewall, export drift-check). Tracked here as a pass-through flag; the battery
-//                runs as its own prebuild steps.
+//   COMPLETE   — every claim-surface analyte carries a firm numeric limit-of-record
+//                (gov floor or disclosed read-across, or an explicit numeric ceiling
+//                on the cell). type/provenance subsumed|monitored|control|not-material
+//                with value:null is EMPTY — never COMPLETE. Reflex speciation does
+//                not blank a claim. Rice / infant-cereal rows require numeric iAs.
+//   REGISTERED — the standard carries a resolvable PRODUCTION DataCite DOI (a
+//                test/sandbox DOI does NOT satisfy this).
+//   CORRECTED  — reserved for the standards lint battery verdict.
 //
 // Output:
-//   - data/standards/readiness-manifest.json — the single source of truth every "ready" claim
-//     reads from. No category may be presented as ready unless its manifest entry says ready.
-//   - a per-category report to stdout.
+//   - data/standards/readiness-manifest.json — the single source of truth every
+//     "ready" claim reads from.
+//   - data/standards/claim-surface-fail-list.json — honest empty-cell backlog.
 //
-// Rollout: WARN-ONLY by default while the empty-cell backlog drains (mirrors the contamination-
-// profile integrity lint pattern). Pass --strict to FAIL the build on any empty cell; the prebuild
-// flips to --strict once the backlog reaches zero. Regardless of mode, the lint ALWAYS fails if a
-// standard whose manifest marks it ready is not in fact COMPLETE (a ready standard can never have
-// an empty cell).
+// --strict (prebuild): fail-closed for rice/infant-cereal canary + any standard
+// marked ready + any standard that claims full completeness while claim-surface
+// is empty. The rest of the corpus is WARN-listed (WARN→STRICT rollout; see
+// docs/claim-surface-strict-rollout.md). --strict-corpus fails every empty cell.
 //
-// Usage: node tools/standard-readiness-lint.mjs [--strict] [--quiet]
+// Usage: node tools/standard-readiness-lint.mjs [--strict] [--strict-corpus] [--quiet]
 
 import fs from "node:fs"
 import path from "node:path"
+import {
+  evaluateClaimSurface, loadCompiledRecords, claimSurfaceFailReason,
+  isRiceCerealCanary,
+} from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const DATA = path.join(REPO, "data/standards")
 const CONTENT = path.join(REPO, "content/standards")
 const args = new Set(process.argv.slice(2))
-const STRICT = args.has("--strict")
+const STRICT = args.has("--strict") || args.has("--strict-corpus")
+const STRICT_CORPUS = args.has("--strict-corpus")
 const QUIET = args.has("--quiet")
 
-// A cell has a limit-of-record when it resolves to a firm value OR is a species bounded by its
-// parent total. An empty cell is control/not-material/null with no bound.
-function cellState(c) {
-  if (!c || typeof c !== "object") return "EMPTY"
-  const t = c.type || c.cell_kind || ""
-  const prov = c.provenance || c.provenance_tag || ""
-  if (c.value !== null && c.value !== undefined) return "firm"
-  if (t === "subsumed" || prov === "subsumed") return "bounded"
-  // screen cells normally carry a value; a null screen is empty
-  return "EMPTY"
-}
-
-// Compiled records come in two shapes: variant-keyed (`variants.default` / first variant) and
-// top-level `cells` (cat4, cat5, cat11, cat21, cat23 ... every category compiled by the generalized
-// pipeline). Both must be read, or the manifest silently omits the larger half of the corpus.
-function cellsOf(rec) {
-  if (rec.variants && typeof rec.variants === "object") {
-    const vs = rec.variants
-    return vs.default || Object.values(vs)[0] || {}
-  }
-  if (rec.cells && typeof rec.cells === "object") return rec.cells
-  return null
-}
-
-function panelOf(meta, rec) {
-  if (meta && Array.isArray(meta.panel) && meta.panel.length) return meta.panel
-  return Object.keys(cellsOf(rec) || {})
-}
-
-// A standard carries a PRODUCTION DOI if its content page frontmatter has a `cert_doi:` (the field
-// mint-dois.mjs writes; `doi:` accepted as a fallback) that is a real DOI (10.<prefix>/...) and is
-// NOT the DataCite test/sandbox prefix (10.5072 / 10.82XXX). The assigned production prefix is
-// configured via DATACITE_PREFIX; a test DOI never satisfies REGISTERED.
-const TEST_PREFIXES = ["10.5072", "10.82", "10.84435"] // datacite sandbox families + the issued sandbox prefix
+const TEST_PREFIXES = ["10.5072", "10.82", "10.84435"]
 function productionDoi(slug) {
   const f = path.join(CONTENT, `${slug}.md`)
   if (!fs.existsSync(f)) return null
@@ -81,43 +52,50 @@ function productionDoi(slug) {
   return doi
 }
 
-const records = []
-for (const dir of fs.readdirSync(DATA).filter((d) => d.endsWith("-compiled"))) {
-  const base = dir.replace("-compiled", "")
-  const pj = path.join(DATA, `${base}-pages.json`)
-  const meta = fs.existsSync(pj) ? (JSON.parse(fs.readFileSync(pj, "utf8"))._meta || {}) : {}
-  for (const f of fs.readdirSync(path.join(DATA, dir)).filter((x) => x.endsWith(".json") && !x.startsWith("derivation"))) {
-    let rec
-    try { rec = JSON.parse(fs.readFileSync(path.join(DATA, dir, f), "utf8")) } catch { continue }
-    const cells = cellsOf(rec)
-    if (!cells) continue
-    const slug = rec.slug || f.replace(/\.json$/, "")
-    const panel = panelOf(meta, rec)
-    const empties = panel.filter((a) => cellState(cells[a]) === "EMPTY")
-    const complete = empties.length === 0
-    const doi = productionDoi(slug)
-    const registered = !!doi
-    records.push({
-      category: rec.category ?? meta.category ?? base,
-      category_name: rec.category_name || meta.category_name || base,
-      compiled_dir: dir, slug, panel_size: panel.length,
-      complete, empty_cells: empties, registered, doi: doi || null,
-      // CORRECTED is asserted by the standards lint battery; a standard that is complete and has
-      // passed render + export drift-check is treated as corrected here (the battery blocks the
-      // build independently if it is not).
-      corrected: complete,
-      ready: complete && registered,
-    })
-  }
+function pageClaimsFullCompleteness(slug) {
+  const f = path.join(CONTENT, `${slug}.md`)
+  if (!fs.existsSync(f)) return false
+  const s = fs.readFileSync(f, "utf8")
+  if (/Every analyte carries a firm ceiling/i.test(s)) return true
+  if (/Analytes limited:\s*"?\s*(\d+)\s*\/\s*\1/i.test(s)) return true
+  const fm = s.match(/firm_analytes:\s*(\d+)/)
+  if (fm && /Every analyte carries a firm ceiling/i.test(s)) return true
+  return false
 }
 
-// --- readiness manifest ---------------------------------------------------------------------
+const compiled = loadCompiledRecords(DATA)
+const records = []
+for (const row of compiled) {
+  const ev = evaluateClaimSurface(row)
+  const doi = productionDoi(row.slug)
+  const registered = !!doi
+  records.push({
+    category: row.category,
+    category_name: row.category_name,
+    compiled_dir: row.compiled_dir,
+    slug: row.slug,
+    panel_size: ev.panel.length,
+    complete: ev.complete,
+    empty_cells: ev.empty_cells,
+    claim_empty: ev.claim_empty,
+    rice: ev.rice,
+    rice_missing_ias: ev.rice_missing_ias,
+    registered,
+    doi: doi || null,
+    corrected: ev.complete,
+    ready: ev.complete && registered,
+    claims_full: pageClaimsFullCompleteness(row.slug),
+    fail_reason: claimSurfaceFailReason(ev),
+  })
+}
+
 const byCat = {}
 for (const r of records) {
   const k = String(r.category)
   ;(byCat[k] ||= { category: r.category, category_name: r.category_name, records: [] }).records.push({
     slug: r.slug, complete: r.complete, registered: r.registered, corrected: r.corrected,
-    ready: r.ready, empty_cells: r.empty_cells, doi: r.doi,
+    ready: r.ready, empty_cells: r.empty_cells, claim_empty: r.claim_empty,
+    rice: r.rice, rice_missing_ias: r.rice_missing_ias, doi: r.doi,
   })
 }
 for (const k of Object.keys(byCat)) {
@@ -127,49 +105,108 @@ for (const k of Object.keys(byCat)) {
   byCat[k].ready = rs.every((r) => r.ready)
   byCat[k].incomplete_records = rs.filter((r) => !r.complete).length
   byCat[k].empty_cell_total = rs.reduce((n, r) => n + r.empty_cells.length, 0)
+  byCat[k].claim_empty_total = rs.reduce((n, r) => n + r.claim_empty.length, 0)
 }
+
+const incomplete = records.filter((r) => !r.complete)
+const emptyCellCount = records.reduce((n, r) => n + r.empty_cells.length, 0)
+const claimEmptyCount = records.reduce((n, r) => n + r.claim_empty.length, 0)
+const riceCanaryFail = records.filter((r) => {
+    const canary = isRiceCerealCanary(r.slug)
+    const iAsHole = r.rice && r.rice_missing_ias
+    return (canary && !r.complete) || iAsHole
+  })
+const readyButIncomplete = records.filter((r) => r.ready && !r.complete)
+const claimedFullButEmpty = records.filter((r) => r.claims_full && !r.complete)
+
 const manifest = {
-  _doc: "GENERATED by tools/standard-readiness-lint.mjs — do not hand-edit. The single source of truth for whether a category/standard is certification-ready (COMPLETE + REGISTERED + CORRECTED). Every 'ready' claim on the site must read from this file; no category may be presented as ready unless its entry says ready:true. Ruling: docs/governance/hmtc-governing-principles.md.",
-  ruling: "Certification-Readiness Ruling (2026-08-25): every analyte carries a limit-of-record; a category is ready only when COMPLETE + REGISTERED (production DOI) + CORRECTED.",
+  _doc: "GENERATED by tools/standard-readiness-lint.mjs — do not hand-edit. The single source of truth for whether a category/standard is certification-ready (COMPLETE + REGISTERED + CORRECTED). Every 'ready' claim on the site must read from this file; no category may be presented as ready unless its entry says ready:true. Ruling: docs/governance/hmtc-governing-principles.md. ORDER S-DOI-FORCE-1: subsumed/monitored/control/not-material with value:null is EMPTY.",
+  ruling: "Certification-Readiness Ruling + PANEL-CLAIM-1 (S-DOI-FORCE-1): every claim-surface analyte carries a firm numeric limit-of-record; subsumed+null is never COMPLETE; a category is ready only when COMPLETE + REGISTERED (production DOI) + CORRECTED.",
   totals: {
     records: records.length,
     complete: records.filter((r) => r.complete).length,
     registered: records.filter((r) => r.registered).length,
     ready: records.filter((r) => r.ready).length,
-    empty_cells: records.reduce((n, r) => n + r.empty_cells.length, 0),
+    empty_cells: emptyCellCount,
+    claim_empty_cells: claimEmptyCount,
+    incomplete_records: incomplete.length,
+    rice_canary_fail: riceCanaryFail.length,
   },
   categories: Object.values(byCat).sort((a, b) => String(a.category).localeCompare(String(b.category), undefined, { numeric: true })),
 }
 fs.writeFileSync(path.join(DATA, "readiness-manifest.json"), JSON.stringify(manifest, null, 2))
 
-// --- report ---------------------------------------------------------------------------------
-const incomplete = records.filter((r) => !r.complete)
+const failList = {
+  _doc: "GENERATED empty-cell backlog for the WARN→STRICT rollout (docs/claim-surface-strict-rollout.md). subsumed+null is listed here as EMPTY. Do not mint a DOI for any slug in incomplete.",
+  generated_by: "tools/standard-readiness-lint.mjs",
+  totals: manifest.totals,
+  incomplete: incomplete
+    .slice()
+    .sort((a, b) => (b.claim_empty.length - a.claim_empty.length) || (b.empty_cells.length - a.empty_cells.length) || a.slug.localeCompare(b.slug))
+    .map((r) => ({
+      slug: r.slug,
+      category: r.category,
+      rice: r.rice,
+      claim_empty: r.claim_empty,
+      empty_cells: r.empty_cells,
+      rice_missing_ias: r.rice_missing_ias,
+    })),
+}
+fs.writeFileSync(path.join(DATA, "claim-surface-fail-list.json"), JSON.stringify(failList, null, 2))
+
 if (!QUIET) {
-  console.log(`standard-readiness-lint: ${records.length} standards | ${manifest.totals.complete} COMPLETE | ${manifest.totals.registered} REGISTERED | ${manifest.totals.ready} READY | ${manifest.totals.empty_cells} empty cells`)
+  console.log(`standard-readiness-lint: ${records.length} standards | ${manifest.totals.complete} COMPLETE | ${manifest.totals.registered} REGISTERED | ${manifest.totals.ready} READY | ${emptyCellCount} empty cells (${claimEmptyCount} claim-surface)`)
   if (incomplete.length) {
     console.log(`\n  INCOMPLETE standards (empty analyte cells — not certification-ready):`)
-    for (const r of incomplete.sort((a, b) => b.empty_cells.length - a.empty_cells.length)) {
-      console.log(`    [${String(r.category).padStart(2)}] ${r.slug.padEnd(42)} empty: ${r.empty_cells.join(", ")}`)
+    for (const r of incomplete.sort((a, b) => b.empty_cells.length - a.empty_cells.length).slice(0, 80)) {
+      const extra = r.rice_missing_ias ? " [rice iAs missing]" : ""
+      console.log(`    [${String(r.category).padStart(2)}] ${r.slug.padEnd(42)} empty: ${r.empty_cells.join(", ") || "(claim)"}${extra}`)
     }
+    if (incomplete.length > 80) console.log(`    … ${incomplete.length - 80} more (see data/standards/claim-surface-fail-list.json)`)
   }
   if (manifest.totals.registered < records.length) {
     console.log(`\n  ${records.length - manifest.totals.registered} standards carry no production DOI (REGISTERED gate open — depends on DataCite membership approval + live prefix).`)
   }
   console.log(`\n  wrote data/standards/readiness-manifest.json`)
+  console.log(`  wrote data/standards/claim-surface-fail-list.json (${incomplete.length} incomplete)`)
 }
 
-// --- exit -----------------------------------------------------------------------------------
-// Hard failure regardless of mode: a standard the manifest marks ready must be COMPLETE.
-const readyButIncomplete = records.filter((r) => r.ready && !r.complete)
 if (readyButIncomplete.length) {
   console.error(`\n!! FAIL: ${readyButIncomplete.length} standard(s) marked ready but not COMPLETE — impossible state.`)
   process.exit(1)
 }
-if (STRICT && incomplete.length) {
-  console.error(`\n!! FAIL (--strict): ${incomplete.length} standard(s) have empty analyte cells. Every analyte must carry a limit-of-record before the build can pass. See docs/governance/hmtc-governing-principles.md §Certification-Readiness Ruling.`)
+
+const strictFails = []
+if (STRICT || STRICT_CORPUS) {
+  for (const r of riceCanaryFail) {
+    strictFails.push(`rice/infant-cereal canary ${r.slug}: ${r.fail_reason || r.empty_cells.join(", ")}`)
+  }
+  for (const r of claimedFullButEmpty) {
+    if (!strictFails.some((s) => s.includes(r.slug))) {
+      strictFails.push(`claims-full-completeness ${r.slug}: ${r.fail_reason || r.claim_empty.join(", ")}`)
+    }
+  }
+}
+if (STRICT_CORPUS && incomplete.length) {
+  for (const r of incomplete) {
+    if (!strictFails.some((s) => s.includes(r.slug))) {
+      strictFails.push(`corpus ${r.slug}: empty ${r.empty_cells.join(", ")}`)
+    }
+  }
+}
+
+if (strictFails.length) {
+  console.error(`\n!! FAIL (--strict${STRICT_CORPUS ? "-corpus" : ""}): ${strictFails.length} standard(s) fail the fail-closed claim-surface gate.`)
+  for (const s of strictFails.slice(0, 60)) console.error(`  ✗ ${s}`)
+  if (strictFails.length > 60) console.error(`  … ${strictFails.length - 60} more`)
+  console.error(`See docs/claim-surface-strict-rollout.md. subsumed+null is never COMPLETE.`)
   process.exit(1)
 }
+
 if (incomplete.length && !QUIET) {
-  console.log(`\n  (warn-only: ${incomplete.length} incomplete standards remain; lint flips to --strict when the backlog reaches zero.)`)
+  const mode = STRICT
+    ? `warn-listed backlog: ${incomplete.length} incomplete (not rice-canary / not claims-full); --strict-corpus to fail them all`
+    : `${incomplete.length} incomplete standards remain; prebuild uses --strict (canary + ready + claims-full). Destination is --strict-corpus`
+  console.log(`\n  (${mode}.)`)
 }
 process.exit(0)

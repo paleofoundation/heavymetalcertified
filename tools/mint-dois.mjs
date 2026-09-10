@@ -27,8 +27,10 @@
 //   * ELIGIBILITY: standards must be type:standard with a real category and must NOT be
 //     type:standard-in-development / standards-finder / scholar_eligible:false. Manuals/
 //     articles/briefings must be scholar_eligible:true.
-//   * COMPLETENESS: standards default to COMPLETE-only (per data/standards/readiness-manifest.json);
-//     `--include-incomplete` overrides. A scaffold is never minted (CLAUDE.md Part 19).
+//   * COMPLETENESS: standards default to COMPLETE-only (per data/standards/readiness-manifest.json).
+//     ORDER S-DOI-FORCE-1: claim-surface FAIL (blank/monitored/subsumed/null on the eight
+//     totals, or rice/infant cereal missing numeric iAs) is NEVER mintable.
+//     `--include-incomplete` cannot override a claim-surface FAIL. A scaffold is never minted.
 //   * DEPOSITED-EDITION SKIP is by the item's OWN frontmatter (zenodo_doi/deposited_doi/
 //     concept_doi), never a body substring — so a standard that merely CITES a Zenodo source
 //     paper is not false-skipped.
@@ -62,6 +64,7 @@ import fs from "node:fs"
 import path from "node:path"
 import crypto from "node:crypto"
 import matter from "gray-matter"
+import { evaluateClaimSurface, loadCompiledRecords, claimSurfaceFailReason } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content")
@@ -150,16 +153,34 @@ function brandHit(...strings) {
   return null
 }
 
-// --- completeness (standards) ------------------------------------------------------------------
+// --- completeness + claim-surface (standards) --------------------------------------------------
 const completeSlugs = new Set()
 const knownSlugs = new Set()
+const claimSurfaceFail = new Map() // slug -> reason
 try {
   const m = JSON.parse(fs.readFileSync(path.join(DATA, "readiness-manifest.json"), "utf8"))
   for (const cat of m.categories || []) for (const r of cat.records || []) {
     knownSlugs.add(r.slug)
     if (r.complete) completeSlugs.add(r.slug)
+    if (r.rice_missing_ias || (r.claim_empty && r.claim_empty.length) || r.complete === false) {
+      const why = r.rice_missing_ias
+        ? "rice/infant cereal missing numeric iAs"
+        : (r.claim_empty && r.claim_empty.length)
+          ? `claim-surface empty: ${r.claim_empty.join(", ")}`
+          : "INCOMPLETE (empty analyte cells)"
+      if (r.rice_missing_ias || (r.claim_empty && r.claim_empty.length)) claimSurfaceFail.set(r.slug, why)
+    }
   }
-} catch { /* manifest absent: completeness unknown; --include-incomplete required to mint standards */ }
+} catch { /* manifest absent: completeness unknown */ }
+
+try {
+  for (const row of loadCompiledRecords(DATA)) {
+    const ev = evaluateClaimSurface(row)
+    const why = claimSurfaceFailReason(ev)
+    if (why) claimSurfaceFail.set(row.slug, why)
+    knownSlugs.add(row.slug)
+  }
+} catch { /* compiled corpus unreadable: claim-surface gate still applies via manifest */ }
 
 // --- collect candidates ------------------------------------------------------------------------
 const candidates = []
@@ -191,6 +212,11 @@ for (const [typeName, t] of Object.entries(TYPES)) {
       if (!MINTABLE_STANDARD_TYPES.has(type)) { skips.push([rel, `type=${fm.type ?? "(none)"} not a mintable standard`]); continue }
       if (fm.category == null) { skips.push([rel, "no category"]); continue }
       if (onlyCategory && String(fm.category) !== String(onlyCategory)) continue
+      const csFail = claimSurfaceFail.get(slug)
+      if (csFail) {
+        skips.push([rel, `CLAIM-SURFACE FAIL (${csFail}) — not mintable`])
+        continue
+      }
       if (!includeIncomplete && !completeSlugs.has(slug)) {
         skips.push([rel, knownSlugs.has(slug) ? "INCOMPLETE (empty analyte cells)" : "uncompiled (completeness unknown)"])
         continue
@@ -276,7 +302,12 @@ if (stdBatch.length) {
 }
 if (skips.length) {
   const held = skips.filter(([, r]) => /INCOMPLETE|uncompiled/.test(r)).length
-  console.log(`  skipped: ${skips.length}  (${held} held for completeness; ${skips.length - held} ineligible/already-deposited)`)
+  const csHeld = skips.filter(([, r]) => /CLAIM-SURFACE FAIL/.test(r)).length
+  console.log(`  skipped: ${skips.length}  (${held} held for completeness; ${csHeld} claim-surface FAIL; ${skips.length - held - csHeld} ineligible/already-deposited)`)
+}
+if (batch.some((c) => c.typeName === "standards" && claimSurfaceFail.has(c.slug))) {
+  console.error(`\n!! ABORT: a claim-surface FAIL standard reached the mint batch. This is impossible — refusing to mint.`)
+  process.exit(1)
 }
 const gapped = batch.map((c) => ({ c, gaps: missingFields(c) })).filter((x) => x.gaps.length)
 if (gapped.length) {
@@ -316,6 +347,10 @@ if (!live) {
 
 // --- live deposit ------------------------------------------------------------------------------
 if (gapped.length) { console.error(`\n!! ABORT: ${gapped.length} item(s) fail the pre-mint gate (missing fields / brand hit). Resolve them first.`); process.exit(1) }
+if (batch.some((c) => c.typeName === "standards" && claimSurfaceFail.has(c.slug))) {
+  console.error(`\n!! ABORT: refusing to mint — claim-surface FAIL in the live batch (ORDER S-DOI-FORCE-1).`)
+  process.exit(1)
+}
 const persist = DATACITE_MODE === "live" // never stamp non-resolvable test DOIs into frontmatter
 if (!persist) console.log(`  (test mode: verifying round-trip only; DOIs are NOT written back to frontmatter.)`)
 

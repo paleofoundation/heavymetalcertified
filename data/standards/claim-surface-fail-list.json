@@ -1,0 +1,1086 @@
+{
+  "_doc": "GENERATED empty-cell backlog for the WARN→STRICT rollout (docs/claim-surface-strict-rollout.md). subsumed+null is listed here as EMPTY. Do not mint a DOI for any slug in incomplete.",
+  "generated_by": "tools/standard-readiness-lint.mjs",
+  "totals": {
+    "records": 323,
+    "complete": 265,
+    "registered": 0,
+    "ready": 0,
+    "empty_cells": 882,
+    "claim_empty_cells": 180,
+    "incomplete_records": 58,
+    "rice_canary_fail": 0
+  },
+  "incomplete": [
+    {
+      "slug": "chocolate",
+      "category": 33,
+      "rice": false,
+      "claim_empty": [
+        "Pb",
+        "tAs",
+        "Cd",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Pb",
+        "Cd",
+        "tAs",
+        "iAs",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "herbal-botanical-infusions",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "matcha",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "true-tea-camellia-sinensis",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "cocoa-beverage-mixes",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "Pb",
+        "tAs",
+        "tHg",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Pb",
+        "iAs",
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "confectionery-candy",
+      "category": 33,
+      "rice": false,
+      "claim_empty": [
+        "Cd",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Cd",
+        "iAs",
+        "tHg",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "gummies-jellies",
+      "category": 33,
+      "rice": false,
+      "claim_empty": [
+        "Cd",
+        "tHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Cd",
+        "iAs",
+        "tHg",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "spices",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Pb",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Pb",
+        "iAs",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "fermented-beverages-non-tea-based",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "fruit-juices-apple-containing",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "fruit-juices-non-apple",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "kombucha-tea-based",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "salt",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Pb",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "Pb",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "soft-drinks-carbonated-beverages",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "sports-energy-drinks",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "tHg",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "tHg",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "bouillon-seasoning-blends",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "dried-fruit",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "fresh-fruit",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "fruit-snacks",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "hot-chili-sauces",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "plant-milks-non-soy-non-rice",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "plant-milks-rice-based",
+      "category": 5,
+      "rice": true,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "plant-milks-soy-based",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "tAs",
+        "Cd",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "tAs",
+        "MeHg",
+        "Cd",
+        "Cr-VI",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "beef-product",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "bone-broth",
+      "category": 35,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "eggs-product",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "game-meats",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "lamb-mutton",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "pork-product",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "poultry-product",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "processed-meats",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "tattoo-inks",
+      "category": 13,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "canned-meats",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Ni",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "plant-based-meat-alternatives",
+      "category": 11,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "leafy-vegetables-other",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "mixed-meals-prepared-foods",
+      "category": 35,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn",
+        "Al",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "non-root-vegetables",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "pickled-fermented-vegetables",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "root-tuber-vegetables",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "soups-broths-stocks",
+      "category": 35,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn",
+        "Al",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "spinach",
+      "category": 4,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Sn",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "antiperspirant",
+      "category": 13,
+      "rice": false,
+      "claim_empty": [
+        "Al"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "bibs",
+      "category": 10,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "blankets-and-sleep-sacks",
+      "category": 10,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "dentifrices",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "floss-interdental-cleaners",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "infant-clothing",
+      "category": 10,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "mouthwash-oral-rinse",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "oral-irrigators-water-flossers",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "tongue-cleaners-scrapers",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "toothbrushes",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "vegetable-juices-non-root",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "vegetable-juices-root-vegetable-containing",
+      "category": 5,
+      "rice": false,
+      "claim_empty": [
+        "Al"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Cr-VI",
+        "Al"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "whitening-products",
+      "category": 20,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "bottled-drinking-water",
+      "category": 8,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "infant-nursery-water",
+      "category": 8,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "mineral-water",
+      "category": 8,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "sparkling-carbonated-water",
+      "category": 8,
+      "rice": false,
+      "claim_empty": [
+        "Sn"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Sn"
+      ],
+      "rice_missing_ias": false
+    }
+  ]
+}

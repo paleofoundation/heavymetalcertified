@@ -31,9 +31,12 @@ now fixed in the tooling:
   that merely CITE a Zenodo source paper (beef-product, baby-talcum-powder) are no longer false-skipped.
 - **Write-back is total** — inserts `cert_doi:` when absent; a no-op write hard-aborts (prevents minting
   an irreversible findable DOI that never gets persisted).
-- **Completeness gate** — default is **COMPLETE-only** (per `readiness-manifest.json`): **42 standards**
-  are complete and mint-ready now (c1:2, c3:11, c6:7, c15:10, c27:4, c28:6, c30:2). The rest mint as the
-  empty-cell backlog drains. `--include-incomplete` mints all 348 (REGISTERED is independent of COMPLETE).
+- **Completeness gate** — default is **COMPLETE-only** (per `readiness-manifest.json`).
+  ORDER S-DOI-FORCE-1 (2026-09-10): claim-surface FAIL (blank / monitored / subsumed / null
+  on the eight totals, or rice / infant-cereal missing numeric iAs) is **never mintable**.
+  `--include-incomplete` cannot override a claim-surface FAIL. See
+  `docs/claim-surface-strict-rollout.md`. Do not mint until the fail-closed canary is
+  green and the operator explicitly runs `--live` with credentials.
 - **Test-prefix guard** — a sandbox DOI is never written into `cert_doi`; `DATACITE_MODE=live` required to persist.
 - **Default is standards-only** — manuals/articles/briefings (`--types=all`) are held until their Zenodo
   reconciliation is recorded (see Open decisions), so the infant/seafood/grains Zenodo editions are not re-minted.
