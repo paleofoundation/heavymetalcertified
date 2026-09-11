@@ -2,19 +2,6 @@
   "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs \u2014 never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md \u00a73.5), including `absent: true` for markup that was removed.",
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
-    "/briefings/the-big-8": [
-      {"sel": "[data-cite-panel-records]", "prop": "count", "want": 1},
-      {"click": "sup.hmtc-cite[aria-label='Open source record 7']"},
-      {"sel": "[data-cite-panel].is-open", "prop": "count", "want": 1},
-      {"sel": ".hmtc-cite-panel-section", "prop": "count", "want": 3},
-      {"sel": ".hmtc-cite-panel-title", "prop": "font-family", "want": "Lora", "match": "contains"},
-      {"sel": ".hmtc-cite-panel-finding", "prop": "font-weight", "want": "400"},
-      {"sel": ".hmtc-cite-panel-finding", "prop": "font-size", "want": "15.5px"},
-      {"sel": ".hmtc-cite-panel-detail", "prop": "font-size", "want": "13.5px"},
-      {"sel": ".hmtc-cite-panel-go[href='https://doi.org/10.2903/j.efsa.2020.6268']", "prop": "count", "want": 1},
-      {"sel": ".hmtc-cite-panel", "prop": "background-color", "want": "#fffdfb"},
-      {"sel": ".hmtc-cite-panel-copy", "prop": "count", "want": 1}
-    ],
     "/": [
       {"sel": "header .search, header .search-button", "prop": "absent", "want": true},
       {"sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1},
@@ -221,7 +208,18 @@
       { "sel": ".hmtc-follow", "prop": "count", "want": 1 },
       { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 },
       { "sel": "aside.rail", "prop": "padding-left", "want": "28px" },
-      { "sel": "aside.snav", "prop": "padding-left", "want": "28px" }
+      { "sel": "aside.snav", "prop": "padding-left", "want": "28px" },
+      {"sel": "[data-cite-panel-records]", "prop": "count", "want": 1},
+      {"click": "sup.hmtc-cite[aria-label='Open source record 7']"},
+      {"sel": "[data-cite-panel].is-open", "prop": "count", "want": 1},
+      {"sel": ".hmtc-cite-panel-section", "prop": "count", "want": 3},
+      {"sel": ".hmtc-cite-panel-title", "prop": "font-family", "want": "Lora", "match": "contains"},
+      {"sel": ".hmtc-cite-panel-finding", "prop": "font-weight", "want": "400"},
+      {"sel": ".hmtc-cite-panel-finding", "prop": "font-size", "want": "15.5px"},
+      {"sel": ".hmtc-cite-panel-detail", "prop": "font-size", "want": "13.5px"},
+      {"sel": ".hmtc-cite-panel-go[href='https://doi.org/10.2903/j.efsa.2020.6268']", "prop": "count", "want": 1},
+      {"sel": ".hmtc-cite-panel", "prop": "background-color", "want": "#fffdfb"},
+      {"sel": ".hmtc-cite-panel-copy", "prop": "count", "want": 1}
     ],
     "/authors/karen-pendergrass": [
       { "sel": ".hmtc-profile-portrait img[src='/static/authors/karen-pendergrass-red.png']", "prop": "count", "want": 1 },

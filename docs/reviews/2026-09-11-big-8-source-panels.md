@@ -76,7 +76,7 @@ no standard, threshold or policy was changed.
 - Direct Quartz build: exit 0; 503 input pages, 856 emitted files.
 - `npm run check`: exit 0.
 - `node tools/design-lint.mjs`: exit 0 (existing table-canonicalization advisory).
-- `npm run check:v3`: exit 0; 304 rendered assertions, including the open nickel
+- `npm run check:v3`: exit 0; 314 rendered assertions, including the open nickel
   panel's sections, typography, source action and citation control.
 - All 15 records checked at 1440px and 390px: correct source/summary/finding/HMTc
   text, primary links, citation clipboard contents, close/focus return and no
