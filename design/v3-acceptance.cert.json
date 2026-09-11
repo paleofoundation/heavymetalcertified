@@ -35,11 +35,11 @@
       { "sel": ".hmtc-document-pdf", "prop": "color", "want": "#ffffff" },
       { "sel": ".hmtc-follow > summary", "prop": "background-color", "want": "#7f1f1f" },
       { "sel": ".hmtc-hb-snap-row", "prop": "display", "want": "grid" },
-      { "sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12.5px" },
-      { "sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12.5px" },
+      { "sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12px" },
+      { "sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12px" },
       { "sel": ".hmtc-hb-snap-v", "prop": "font-weight", "want": "400" },
       { "sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
-      { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "font-size", "want": "12.5px" },
+      { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "font-size", "want": "12px" },
       { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
       { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 }
     ],
@@ -208,6 +208,18 @@
       { "sel": ".hmtc-profile-portrait img", "prop": "width", "want": "236px" },
       { "sel": ".author-works > li", "prop": "count", "want": 7 }
     ],
+    "/brands": [
+      {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-top", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-bottom", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "column-gap", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4}
+    ],
     "/analytes/lead": [
       { "sel": ".hmtc-element-mark", "prop": "count", "want": 1 },
       { "sel": ".hmtc-element-symbol", "prop": "font-family", "want": "Lora", "match": "contains" },
@@ -224,7 +236,19 @@
     {
       "viewport": {"width": 1440, "height": 1000},
       "pages": {
-        "/analytes/lead": [
+        "/brands": [
+      {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-top", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-bottom", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "column-gap", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4}
+    ],
+    "/analytes/lead": [
           {"sel": "#why-limited table", "prop": "display", "want": "table"},
           {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
           {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
@@ -287,7 +311,19 @@
     {
       "viewport": {"width": 390, "height": 844},
       "pages": {
-        "/analytes/lead": [
+        "/brands": [
+      {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-top", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "padding-bottom", "want": "8px"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "column-gap", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-k", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "font-size", "want": "12px"},
+      {"sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right"},
+      {"sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4}
+    ],
+    "/analytes/lead": [
           {"sel": "#why-limited table", "prop": "display", "want": "table"},
           {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
           {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},

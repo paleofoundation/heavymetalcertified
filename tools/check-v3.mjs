@@ -25,7 +25,8 @@ function serve() {
     const server = createServer((req, res) => {
       let p = decodeURIComponent(req.url.split("?")[0])
       let f = join(ROOT, p)
-      if (existsSync(f) && statSync(f).isDirectory()) f = join(f, "index.html")
+      // Clean URLs can have both a page and child routes (brands.html + brands/).
+      if (existsSync(f) && statSync(f).isDirectory()) f = existsSync(f + ".html") ? f + ".html" : join(f, "index.html")
       else if (!existsSync(f) && existsSync(f + ".html")) f = f + ".html" // cleanUrls
       if (!existsSync(f)) { res.statusCode = 404; return res.end("404") }
       res.setHeader("content-type", TYPES[extname(f)] || "application/octet-stream")

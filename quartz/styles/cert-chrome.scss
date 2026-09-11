@@ -594,9 +594,9 @@ header.hmi-topnav-shell::after {
 
 .hmtc-hb-snap { border-top: 1px solid rgba(255,255,255,.25); width: 100%; margin-top: auto; }
 .hmtc-hb-snap-head {
-  padding: 18px 0 8px;
+  padding: 12px 0 6px;
   font-family: Lora, serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 .hmtc-hb-snap-body { padding: 0; }
@@ -604,13 +604,13 @@ header.hmi-topnav-shell::after {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
   align-items: start;
-  gap: 14px;
-  padding: 10px 0;
+  gap: 12px;
+  padding: 8px 0;
   line-height: 1.5;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.22);
 }
-.hmtc-hb-snap-k { min-width: 0; font-size: 12.5px; color: rgba(255, 255, 255, 0.84); }
-.hmtc-hb-snap-v { min-width: 0; font: 400 12.5px/1.5 "IBM Plex Mono", monospace; color: #fff; font-variant-numeric: tabular-nums; text-align: right; overflow-wrap: anywhere; }
+.hmtc-hb-snap-k { min-width: 0; font-size: 12px; color: rgba(255, 255, 255, 0.84); }
+.hmtc-hb-snap-v { min-width: 0; font: 400 12px/1.5 "IBM Plex Mono", monospace; color: #fff; font-variant-numeric: tabular-nums; text-align: right; overflow-wrap: anywhere; }
 
 @media (max-width: 1149px) {
   .hmtc-heroband-inner { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 0; }
