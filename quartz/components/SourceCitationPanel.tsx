@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 // @ts-ignore
 import script from "./scripts/citationPanel.inline"
 import style from "./styles/sourceCitationPanel.scss"
+import bigEightSources from "../../data/source-panels/briefings/the-big-8.json"
 
 // Citation-detail slide-over for the cert.
 //
@@ -25,7 +26,10 @@ export default (() => {
     if (slug === "index" || slug === "") return null
 
     return (
-      <div class="hmtc-cite-overlay">
+      <div
+        class="hmtc-cite-overlay"
+        data-cite-panel-records={slug === bigEightSources.page ? JSON.stringify(bigEightSources) : undefined}
+      >
         {/* Backdrop — click dismisses; decorative, so hidden from the a11y tree. */}
         <div class="hmtc-cite-scrim" data-cite-panel-scrim aria-hidden="true"></div>
         {/* The drawer. aria-labelledby points at the record title the script mints

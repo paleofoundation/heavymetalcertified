@@ -67,6 +67,12 @@ async function main() {
     const page = await browser.newPage({ viewport })
     await page.goto(`http://127.0.0.1:${PORT}${path}`, { waitUntil: "networkidle" }).catch(() => {})
     for (const a of assertions) {
+      // Interactive surfaces need an explicit opening action before reading their
+      // computed styles. The remaining assertions inspect that resulting state.
+      if (a.click) {
+        await page.locator(a.click).first().click()
+        continue
+      }
       checked++
       const got = await page.evaluate(({ sel, prop }) => {
         const els = document.querySelectorAll(sel)

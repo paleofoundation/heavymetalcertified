@@ -30,6 +30,39 @@ type CitationPanelRef = {
   detail: string
   citation: string
   kind: string
+  explanation?: CitationPanelExplanation
+}
+
+type CitationPanelExplanation = {
+  referenceTitle: string
+  citation: string
+  summary: string
+  establishes: string
+  relevance: string
+  links: { label: string; href: string }[]
+}
+
+// Reviewed explanations are emitted only with their own page. Match both number
+// and title so a reordered bibliography cannot silently acquire another source's
+// interpretation. Other pages retain their existing reference-row behaviour.
+function enrichCitationPanelReferences(refs: Map<string, CitationPanelRef>) {
+  const raw = document.querySelector<HTMLElement>("[data-cite-panel-records]")?.dataset.citePanelRecords
+  if (!raw) return
+  try {
+    const data = JSON.parse(raw) as { page: string; refs: Record<string, CitationPanelExplanation> }
+    const path = decodeURIComponent(location.pathname).replace(/^\/+|\/+$/g, "").replace(/\.html$/, "")
+    if (path !== data.page) return
+    const normalize = (text: string) => text.replace(/\s+/g, " ").trim()
+    for (const [num, explanation] of Object.entries(data.refs)) {
+      const ref = refs.get(num)
+      if (!ref || normalize(ref.title) !== normalize(explanation.referenceTitle)) continue
+      ref.explanation = explanation
+      ref.citation = explanation.citation
+      ref.href = explanation.links[0]?.href || ref.href
+    }
+  } catch {
+    // The original bibliography remains usable if enrichment cannot be read.
+  }
 }
 
 // The reference rows both generators emit share this exact grid signature. Keying
@@ -95,6 +128,7 @@ function indexCitationPanelReferences(content: Element): Map<string, CitationPan
 let lastTrigger: HTMLElement | null = null
 let savedScrollY = 0
 let globalsBound = false
+let disposeCitationMarkers = () => {}
 
 // Tier B — the DOI → Heavy Metal Index source-page map, fetched once per session
 // from the PUBLIC Index open-data surface. This is the one-way direction the
@@ -264,7 +298,12 @@ function citationCopyButton(copyText: string): HTMLButtonElement {
 function citationRenderActions(actions: HTMLElement, ref: CitationPanelRef, deepLink: string | null) {
   const kids: Node[] = []
   const hasExternal = !!ref.href && /^https?:\/\//.test(ref.href)
-  if (deepLink) {
+  if (ref.explanation) {
+    const label = ref.explanation.links.length > 1
+      ? `${ref.explanation.links[0].label} →`
+      : "Read the source →"
+    kids.push(citationActionLink(ref.href, label, "primary"))
+  } else if (deepLink) {
     kids.push(citationActionLink(deepLink, "View on the Heavy Metal Index →", "primary"))
     if (hasExternal) kids.push(citationActionLink(ref.href, citationGoLabel(ref.href), "alt"))
   } else if (hasExternal) {
@@ -309,7 +348,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   const title = document.createElement("div")
   title.className = "hmtc-cite-panel-title"
   title.id = "hmtc-cite-panel-title"
-  if (ref.href) {
+  if (ref.href && (!ref.explanation || ref.explanation.links.length === 1)) {
     const a = document.createElement("a")
     a.href = ref.href
     a.textContent = ref.title || ref.href
@@ -336,15 +375,42 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   // The finding, front and centre — what this source actually establishes, so the
   // reader can verify the claim without leaving. This is the substance; the title
   // above is only which document it came from.
-  if (ref.detail) {
+  const sections = ref.explanation
+    ? [
+        ["Source summary", ref.explanation.summary],
+        ["What it establishes", ref.explanation.establishes],
+        ["Why it matters to HMTc", ref.explanation.relevance],
+      ]
+    : ref.detail ? [["What it establishes", ref.detail]] : []
+  for (const [heading, text] of sections) {
+    const section = document.createElement("section")
+    section.className = "hmtc-cite-panel-section"
     const label = document.createElement("div")
     label.className = "hmtc-cite-panel-finding-label"
-    label.textContent = "What it establishes"
-    frag.appendChild(label)
+    label.textContent = heading
+    section.appendChild(label)
     const p = document.createElement("p")
     p.className = "hmtc-cite-panel-finding"
-    p.textContent = ref.detail
-    frag.appendChild(p)
+    p.textContent = text
+    section.appendChild(p)
+    frag.appendChild(section)
+  }
+
+  // Bundled references keep each constituent document available without turning
+  // the footer into a wall of buttons. Single-document records need only the CTA.
+  if (ref.explanation && ref.explanation.links.length > 1) {
+    const sources = document.createElement("nav")
+    sources.className = "hmtc-cite-panel-sources"
+    sources.setAttribute("aria-label", "Documents in this reference")
+    for (const link of ref.explanation.links) {
+      const a = document.createElement("a")
+      a.href = link.href
+      a.target = "_blank"
+      a.rel = "noopener noreferrer"
+      a.textContent = link.label
+      sources.appendChild(a)
+    }
+    frag.appendChild(sources)
   }
 
   // Actions: the primary way deeper + copy. Tier B — when the citation's DOI is in
@@ -358,7 +424,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   actions.className = "hmtc-cite-panel-actions"
   citationRenderActions(actions, ref, citationHmiDeepLink(sourcesMap, ref))
   frag.appendChild(actions)
-  if (!sourcesMap) {
+  if (!ref.explanation && !sourcesMap) {
     loadSourcesMap().then(() => {
       if (seq !== citationOpenSeq || !panel.classList.contains("is-open")) return
       const dl = citationHmiDeepLink(sourcesMap, ref)
@@ -367,6 +433,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   }
 
   body.replaceChildren(frag)
+  panel.scrollTop = 0
 
   // Remember what to return focus to, and lock the underlying page in place —
   // jump-free. This build scrolls <html>, and overflow:hidden on the root resets
@@ -400,11 +467,11 @@ function wireCitations(
   refs: Map<string, CitationPanelRef>,
   panel: HTMLElement,
 ) {
+  const listeners = new AbortController()
   const cites = content.querySelectorAll<HTMLElement>(
     'sup.cite > a[href^="#ref-"], sup.hmtc-cite',
   )
   cites.forEach((el) => {
-    if (el.dataset.citePanelWired === "1") return
     const isAnchor = el.tagName === "A"
     const num = isAnchor
       ? (el.getAttribute("href") || "").replace(/^#ref-/, "")
@@ -431,7 +498,7 @@ function wireCitations(
       e.preventDefault()
       e.stopPropagation()
       openPanel(panel, ref, el)
-    })
+    }, { signal: listeners.signal })
     if (!isAnchor) {
       el.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
@@ -439,9 +506,13 @@ function wireCitations(
           e.stopPropagation()
           openPanel(panel, ref, el)
         }
-      })
+      }, { signal: listeners.signal })
     }
   })
+  return () => {
+    listeners.abort()
+    cites.forEach((el) => delete el.dataset.citePanelWired)
+  }
 }
 
 function bindGlobals() {
@@ -491,6 +562,10 @@ function bindGlobals() {
 }
 
 function setupCitationPanel() {
+  // SPA morphs can reuse marker nodes while replacing their data attributes.
+  // Remove prior handlers explicitly so a click opens exactly one current record.
+  disposeCitationMarkers()
+  disposeCitationMarkers = () => {}
   const content = document.querySelector(".wiki-content")
   const panel = document.querySelector("[data-cite-panel]") as HTMLElement | null
   if (!content || !panel) return
@@ -516,8 +591,9 @@ function setupCitationPanel() {
   if (scrim) scrim.onclick = () => closePanel(panel)
 
   const refs = indexCitationPanelReferences(content)
+  enrichCitationPanelReferences(refs)
   if (refs.size > 0) {
-    wireCitations(content, refs, panel)
+    disposeCitationMarkers = wireCitations(content, refs, panel)
     // Warm the corpus deep-link map now so it is usually ready by the first open.
     void loadSourcesMap()
   }

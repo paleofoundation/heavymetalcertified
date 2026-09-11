@@ -123,6 +123,16 @@ mint a `values.jsonl` for the cert corpus and emit the `value_id` a marker annot
 a marker attribute. When that data lands, the value sections slot in above the meta line
 and nothing else moves. Until then, this is the complete, honest component.
 
+**Source-explanation pilot (11 September 2026, user requested).** The Big 8's
+15 citation drawers add three short prose sections: **Source summary**, **What it
+establishes**, and **Why it matters to HMTc**. Keep the bibliography distinct from
+these explanations and distinguish the source's conclusions from the program's
+application. The existing drawer typography, colours and spacing apply. Multiple
+documents under one reference get individually named links; never assign one DOI
+to an entire bundle. Reviewed copy is in `data/source-panels/briefings/the-big-8.json`,
+emitted only for that page and matched to both reference number and title. This
+is a page-scoped editorial layer, not a new corpus or extracted-value database.
+
 ---
 
 ## 3. Claim underline — *deferred, not cancelled*
