@@ -153,11 +153,12 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 // text-decoration. The more-specific source-citation superscript rule keeps its
 // dotted border, so citations are unaffected.
 .wiki-content a { color: var(--burg); text-decoration: none; border-bottom: none; }
-.wiki-content a:hover { text-decoration: underline; border-bottom: none; background: none; }
+// Search results are whole-row controls with their own red hover/focus outline.
+.wiki-content a:hover:not(:where(.hmtc-search-results a)) { text-decoration: underline; border-bottom: none; background: none; }
 /* in-article wikilinks read as plain burgundy text. Pill removal is handled by
    the global a.internal rule (with !important) above. No default underline; the
    `.wiki-content a:hover` rule above supplies underline-on-hover. */
-.wiki-content a.internal:hover { color: var(--burg-dark); }
+.wiki-content a.internal:hover:not(:where(.hmtc-search-results a)) { color: var(--burg-dark); }
 .wiki-content ul, .wiki-content ol { padding-left: 1.4em; margin: 0 0 1.05em; }
 .wiki-content li { margin-bottom: 0.45em; }
 .wiki-content blockquote { border-left: 3px solid var(--burg); margin: 0 0 1.1em; padding: 8px 18px; background: var(--burg-tint2); color: var(--body); }

@@ -122,15 +122,16 @@ article h3 {
 }
 
 // Content links are blue (#1c43ad); red is reserved for structural accents
-// (active nav, section-accent rules, hero grounds), per the v3 design.
-.wiki-content a,
-.wiki-content a.internal,
-.wiki-content a.external {
+// (active nav, section-accent rules, hero grounds), per the v3 design. Search
+// result cards own their colors and use a red outline instead of a text highlight.
+.wiki-content a:not(:where(.hmtc-search-results a)),
+.wiki-content a.internal:not(:where(.hmtc-search-results a)),
+.wiki-content a.external:not(:where(.hmtc-search-results a)) {
   color: #1c43ad;
 }
-.wiki-content a:hover,
-.wiki-content a.internal:hover,
-.wiki-content a.external:hover {
+.wiki-content a:hover:not(:where(.hmtc-search-results a)),
+.wiki-content a.internal:hover:not(:where(.hmtc-search-results a)),
+.wiki-content a.external:hover:not(:where(.hmtc-search-results a)) {
   color: #163a94;
 }
 
@@ -1096,7 +1097,7 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .hmtc-document-doi > a { color: #fff; font: 12px/1.5 "IBM Plex Mono",monospace; overflow-wrap: anywhere; }
 .hmtc-doi-note { font: 12px/1.65 var(--bodyFont); color: #fff2ee; margin: 12px 0 0; }
 
-.hmtc-home-hero a:focus-visible, .hmtc-hb-sidebar a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.hmtc-home-hero a:focus-visible:not(:where(.hmtc-search-results a)), .hmtc-hb-sidebar a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 @media (max-width: 1149px) {
   .hmtc-home-hero-grid { grid-template-columns: minmax(0,1fr); padding: 56px 24px; gap: 44px; }
   .wiki-content .hmtc-home-title { font-size: clamp(36px,5.5vw,56px); }

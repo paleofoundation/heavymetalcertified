@@ -34,6 +34,27 @@
       { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
     ],
+    "/?q=olive%20oil": [
+      { "hover": ".hmtc-search-results a" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "text-decoration-line", "want": "none", "note": "Search result cards use a red outline; prose-link blue underlines must not leak into the hero." },
+      { "sel": ".hmtc-search-results a:hover", "prop": "color", "want": "#2b1f1f" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "border-bottom-style", "want": "none" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "outline-color", "want": "#9f2727" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "outline-width", "want": "2px" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "outline-offset", "want": "-2px" },
+      { "sel": ".hmtc-search-results a:hover", "prop": "background-color", "want": "#f8efec" },
+      { "sel": ".hmtc-search-result-title", "prop": "font-weight", "want": "400" },
+      { "hover": ".hmtc-home-title" },
+      { "press": "#site-search-input", "key": "ArrowDown" },
+      { "sel": ".hmtc-search-results a:focus-visible", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-search-results a:focus-visible", "prop": "text-decoration-line", "want": "none" },
+      { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-color", "want": "#9f2727" },
+      { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-width", "want": "2px" },
+      { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-offset", "want": "-2px" },
+      { "hover": "#what p a" },
+      { "sel": "#what p a:hover", "prop": "color", "want": "#1c43ad", "note": "Ordinary prose links retain their existing blue text and underline." },
+      { "sel": "#what p a:hover", "prop": "text-decoration-line", "want": "underline" }
+    ],
     "/articles/aquaculture-vs-wild-contamination-differential": [
       { "sel": ".hmtc-author-card img[src='/static/authors/karen-pendergrass-red.png']", "prop": "count", "want": 2 },
       { "sel": "img[src='/static/authors/karen-pendergrass.webp']", "prop": "absent", "want": true },

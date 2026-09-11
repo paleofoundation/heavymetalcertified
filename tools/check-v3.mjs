@@ -73,6 +73,17 @@ async function main() {
         await page.locator(a.click).first().click()
         continue
       }
+      if (a.hover) {
+        const target = page.locator(a.hover).first()
+        await target.hover()
+        // Read the final hover colors, not the first frame of a CSS transition.
+        await target.evaluate(el => Promise.all(el.getAnimations().map(animation => animation.finished.catch(() => {}))))
+        continue
+      }
+      if (a.press) {
+        await page.locator(a.press).first().press(a.key)
+        continue
+      }
       checked++
       const got = await page.evaluate(({ sel, prop }) => {
         const els = document.querySelectorAll(sel)
