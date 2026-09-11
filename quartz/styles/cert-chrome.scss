@@ -1017,6 +1017,35 @@ sup.hmtc-cite {
 .wiki-content .hmtc-home-title { font: 400 clamp(48px,4.1vw,68px)/1.12 Lora,serif; letter-spacing: -.02em; color: #fff; margin: 0 0 28px; }
 .hmtc-home-title span { color: #f5d7cf; }
 .hmtc-home-dek { font: 18px/1.65 var(--bodyFont); color: #fff2ee; margin: 0 0 32px; max-width: 54ch; }
+.hmtc-hero-search { position: relative; max-width: 720px; margin: 0 0 24px; scroll-margin-top: 96px; }
+.hmtc-search-form { margin: 0; }
+.hmtc-search-field { display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 18px; min-height: 58px; box-sizing: border-box; background: #fffdfb; color: #7f1f1f; border: 1px solid #e8e1db; border-radius: 3px; }
+.hmtc-search-field:focus-within { outline: 2px solid #fffdfb; outline-offset: 4px; }
+.hmtc-search-field > svg { flex: 0 0 auto; }
+.hmtc-search-field input { min-width: 0; width: 100%; flex: 1; border: 0; outline: 0; padding: 6px 0; background: transparent; color: #2b1f1f; font: 400 16px/1.5 var(--bodyFont); }
+.hmtc-search-field input::placeholder { color: #736b6b; opacity: 1; }
+.hmtc-search-field button { flex: 0 0 auto; min-height: 44px; border: 0; border-radius: 2px; padding: 10px 18px; background: #7f1f1f; color: #fff; font: 400 14px/1.5 var(--bodyFont); cursor: pointer; }
+.hmtc-search-field button:hover { background: #651919; }
+.hmtc-search-field button:focus-visible { outline: 2px solid #7f1f1f; outline-offset: 2px; }
+.hmtc-search-response { position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40; border: 1px solid #e8e1db; border-radius: 3px; background: #fffdfb; color: #2b1f1f; box-shadow: 0 16px 32px #3c101026; }
+.hmtc-search-response[hidden], .hmtc-search-results[hidden] { display: none; }
+.hmtc-search-status { padding: 12px 18px; font: 400 13px/1.5 var(--bodyFont); color: #736b6b; }
+ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: min(26rem, 60vh); overflow-y: auto; overscroll-behavior: contain; }
+.hmtc-search-results > li { list-style: none; padding: 0; margin: 0; border-top: 1px solid #e8e1db; }
+.hmtc-search-results a { display: block; padding: 14px 18px; color: #2b1f1f; text-decoration: none; }
+.hmtc-search-results a:hover, .hmtc-search-results a:focus-visible { background: #f8efec; outline: 2px solid #9f2727; outline-offset: -2px; }
+.hmtc-search-result-section { display: block; margin-bottom: 4px; font: 400 10px/1.5 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; color: #736b6b; }
+.hmtc-search-result-title { display: block; font: 400 18px/1.35 Lora, serif; color: #9f2727; }
+.hmtc-search-result-description { display: block; margin-top: 5px; font: 400 13px/1.55 var(--bodyFont); color: #5f5555; overflow-wrap: anywhere; }
+.hmtc-search-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; min-width: 44px; color: #736b6b; font: 400 13px/1.5 var(--bodyFont); text-decoration: none; }
+.hmtc-search-link:hover { color: #9f2727; }
+.hmtc-search-link:focus-visible { outline: 2px solid #9f2727; outline-offset: 2px; }
+@media (max-width: 520px) {
+  .hmtc-search-link > span { display: none; }
+  .hmtc-search-field { gap: 8px; padding-left: 12px; }
+  .hmtc-search-field > svg { display: none; }
+  .hmtc-search-field button { padding: 10px 13px; }
+}
 .hmtc-home-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .wiki-content a.hmtc-home-action { display: inline-flex; align-items: center; gap: 18px; padding: 13px 18px; border: 1px solid rgba(255,255,255,.5); border-radius: 3px; color: #fff; font-size: 14px; font-weight: 400; text-decoration: none; }
 .wiki-content a.hmtc-home-action--primary { background: #fffdfb; color: #7f1f1f; border-color: #fffdfb; }

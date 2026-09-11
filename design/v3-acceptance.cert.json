@@ -3,6 +3,14 @@
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
     "/": [
+      {"sel": "header .search, header .search-button", "prop": "absent", "want": true},
+      {"sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1},
+      {"sel": "#site-search-input[type=search]", "prop": "count", "want": 1},
+      {"sel": ".hmtc-search-field", "prop": "min-height", "want": "58px"},
+      {"sel": ".hmtc-search-field input", "prop": "font-size", "want": "16px"},
+      {"sel": ".hmtc-search-field button", "prop": "background-color", "want": "#7f1f1f"},
+      {"sel": ".hmtc-search-response", "prop": "display", "want": "none"},
+      {"sel": "#site-search-results", "prop": "padding", "want": "0px"},
       { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 2 },
       { "sel": ".hmtc-home-action--primary[href=\"https://app.heavymetalcertified.com/hmt/get-started\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"/briefings/the-big-8\"]", "prop": "count", "want": 1 },
@@ -209,6 +217,9 @@
       { "sel": ".author-works > li", "prop": "count", "want": 7 }
     ],
     "/brands": [
+      {"sel": "header .search-button", "prop": "absent", "want": true},
+      {"sel": ".hmtc-search-link", "prop": "display", "want": "flex"},
+      {"sel": ".hmtc-search-link[href$=\"/#site-search\"]", "prop": "count", "want": 1},
       {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
@@ -237,6 +248,9 @@
       "viewport": {"width": 1440, "height": 1000},
       "pages": {
         "/brands": [
+          {"sel": "header .search-button", "prop": "absent", "want": true},
+          {"sel": ".hmtc-search-link", "prop": "display", "want": "flex"},
+          {"sel": ".hmtc-search-link[href$=\"/#site-search\"]", "prop": "count", "want": 1},
       {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
@@ -312,6 +326,9 @@
       "viewport": {"width": 390, "height": 844},
       "pages": {
         "/brands": [
+          {"sel": "header .search-button", "prop": "absent", "want": true},
+          {"sel": ".hmtc-search-link", "prop": "display", "want": "flex"},
+          {"sel": ".hmtc-search-link[href$=\"/#site-search\"]", "prop": "count", "want": 1},
       {"sel": ".hmtc-hb-snap-head", "prop": "font-size", "want": "14px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-top", "want": "12px"},
       {"sel": ".hmtc-hb-snap-head", "prop": "padding-bottom", "want": "6px"},
