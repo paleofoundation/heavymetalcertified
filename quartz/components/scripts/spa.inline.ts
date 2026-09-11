@@ -59,6 +59,16 @@ function startLoading() {
 
 let isNavigating = false
 let p: DOMParser
+
+function persistentStyles(doc: Document, base: string | URL): string {
+  return Array.from(doc.head.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"][data-persist]'))
+    // Loaded sheets retain their true URL after pushState changes document.baseURI.
+    // Parsed destination links have no sheet and resolve against the target URL.
+    .map((link) => new URL(link.sheet?.href || link.getAttribute("href") || "", base).href)
+    .sort()
+    .join("\n")
+}
+
 async function _navigate(url: URL, isBack: boolean = false) {
   isNavigating = true
   startLoading()
@@ -78,6 +88,17 @@ async function _navigate(url: URL, isBack: boolean = false) {
 
   if (!contents) return
 
+  const html = p.parseFromString(contents, "text/html")
+  // Persisted CSS and the running scripts belong to the current build. A newly
+  // published page can carry different markup, so do not morph it beneath an old
+  // stylesheet. Load the new document and its assets together, before any cleanup
+  // or DOM changes. Same-build navigation still uses the existing SPA behaviour.
+  if (persistentStyles(document, document.baseURI) !== persistentStyles(html, url)) {
+    if (isBack) window.location.reload()
+    else window.location.assign(url)
+    return
+  }
+
   // notify about to nav
   const event: CustomEventMap["prenav"] = new CustomEvent("prenav", { detail: {} })
   document.dispatchEvent(event)
@@ -86,7 +107,6 @@ async function _navigate(url: URL, isBack: boolean = false) {
   cleanupFns.forEach((fn) => fn())
   cleanupFns.clear()
 
-  const html = p.parseFromString(contents, "text/html")
   normalizeRelativeURLs(html, url)
 
   let title = html.querySelector("title")?.textContent

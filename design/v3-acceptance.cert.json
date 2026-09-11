@@ -3,6 +3,7 @@
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
     "/": [
+      { "sel": "head link[rel='stylesheet'][data-persist][href*='index.']", "prop": "count", "want": 1, "note": "The SPA release guard compares this build-specific stylesheet before morphing the page; cross-release behaviour is checked by check:spa-release." },
       {"sel": "header .search, header .search-button", "prop": "absent", "want": true},
       {"sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1},
       {"sel": "#site-search-input[type=search]", "prop": "count", "want": 1},

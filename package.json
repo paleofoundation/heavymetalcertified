@@ -34,6 +34,7 @@
     "test": "tsx --test",
     "check": "tsc --noEmit",
     "check:v3": "node tools/check-v3.mjs",
+    "check:spa-release": "node tools/check-spa-release.mjs",
     "format": "npx prettier . --write",
     "seo:audit": "node tools/audit-crawl-metadata.mjs",
     "release": "npm run build && npm run seo:audit",

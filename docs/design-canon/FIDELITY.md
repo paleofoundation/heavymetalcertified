@@ -66,6 +66,13 @@ passes.
 
 ## The principle
 
+Fresh-page checks alone also miss an open tab crossing a deployment. The September
+2026 hero-search failure retained a previous build's persistent stylesheet while
+the SPA router inserted new markup. `npm run check:spa-release` exercises that
+transition and Back/Forward navigation; the router must load the full destination
+document when persistent stylesheet URLs change. Keep this check alongside the
+computed-style gate when changing the router or asset persistence.
+
 Every gate this repo has responded to was mechanical — the DOI gate, the
 wiki-edit audit barrier, the idempotency guard, the n_studies signature. Each one
 replaced "I checked" with "it passes." Design fidelity is the last thing still
