@@ -389,7 +389,13 @@ for (const page of DOC.pages) {
   const firmCount = claimPanel.filter((a) => isFirm(variants[0].cells[a])).length
   const version = page.version || META.default_version
   const vshort = version.split(" ")[0]
-  const certDoi = page.cert_doi || null
+  // cert_doi is minted out-of-band (tools/mint-dois.mjs writes it into the rendered page's
+  // frontmatter) and is NOT carried in the pages manifest — so a rebuild must PRESERVE the
+  // existing page's cert_doi, never reset it to null (that reverts the cite to "registration
+  // pending" and drops the DOI meta). (S-DOI-OLIVE-DOI-SURFACE-1)
+  const existingMd = fs.existsSync(path.join(OUT, `${page.slug}.md`)) ? fs.readFileSync(path.join(OUT, `${page.slug}.md`), "utf8") : ""
+  const existingDoi = (existingMd.match(/^cert_doi:\s*["']?([^"'\n]+?)["']?\s*$/m) || [])[1]
+  const certDoi = page.cert_doi || (existingDoi && existingDoi.toLowerCase() !== "null" ? existingDoi : null)
   const otherNote = variants.length > 1
     ? `Variants on this page: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the Master Limit Table shows both; the derivation above is for ${variants[0].label}.`
     : ""

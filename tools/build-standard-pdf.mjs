@@ -119,6 +119,9 @@ async function build(slug) {
   const catName = pfm.category_name || rec.category_name || ""
   const version = pfm.standard_version || rec.standard_version || "1.0"
   const eff = pfm.effective_date || rec.effective_date || "2026"
+  // The minted DataCite DOI (written back to the page frontmatter by mint-dois) prints on the
+  // PDF face — both the scholarly "Cite as" block and the body citation. (S-DOI-OLIVE-DOI-SURFACE-1)
+  const certDoi = pfm.cert_doi && String(pfm.cert_doi).toLowerCase() !== "null" ? String(pfm.cert_doi) : null
 
   const limitRows = claimAnalytes.map((a) => cellRow(a, cells[a[0]])).join("\n")
   const derivRows = ANALYTES.map((a) => derivRow(a, cells[a[0]])).join("\n")
@@ -142,10 +145,10 @@ async function build(slug) {
     derivRows,
     ``,
     `## Cite this standard`,
-    `Pendergrass, K. "${title}." In Heavy Metal Tested & Certified (HMTc)${catName ? ` ${catName}` : ""} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026.`,
+    `Pendergrass, K. "${title}." In Heavy Metal Tested & Certified (HMTc)${catName ? ` ${catName}` : ""} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026.${certDoi ? ` DOI: https://doi.org/${certDoi}` : ""}`,
   ].join("\n")
 
-  const fm = { title: `${title}: HMTc Standard`, dek, updated: /^\d{4}-\d{2}/.test(eff) ? eff.slice(0, 7) : "2026-08" }
+  const fm = { title: `${title}: HMTc Standard`, dek, updated: /^\d{4}-\d{2}/.test(eff) ? eff.slice(0, 7) : "2026-08", ...(certDoi ? { cert_doi: certDoi } : {}) }
   fs.mkdirSync(OUT, { recursive: true })
   await renderScholarlyPdf({ fm, body, outPath: path.join(OUT, `${slug}.pdf`), cfg: { masthead: "Heavy Metal Certified  ·  Certification Standard", slug, pathSeg: "standards", references: references(cells) } })
   console.log(`standard-pdf: wrote content/static/standards/${slug}.pdf`)
