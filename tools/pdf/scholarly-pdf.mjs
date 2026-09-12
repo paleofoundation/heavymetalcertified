@@ -283,7 +283,10 @@ function buildModel(fm, body, cfg) {
   const updated = fm.updated || established || ""
   const year = (established || updated || "").slice(0, 4)
   const url = `${BASE}/${cfg.pathSeg}/${slug}`
-  const doi = fm.wiki_doi && fm.wiki_doi.toLowerCase() !== "null" ? fm.wiki_doi : null
+  // Certification standards carry `cert_doi`; the index carries `wiki_doi`. Accept either
+  // (plus a plain `doi`) so the minted DOI prints on the PDF face (Cite as). (S-DOI-OLIVE-DOI-SURFACE-1)
+  const rawDoi = fm.cert_doi || fm.wiki_doi || fm.doi
+  const doi = rawDoi && String(rawDoi).toLowerCase() !== "null" ? String(rawDoi) : null
   const grade = String(fm.grade || "").toUpperCase()
   const GRADE_LABEL = { A: "Established", B: "Well supported", C: "Provisional", D: "Contested" }
 
