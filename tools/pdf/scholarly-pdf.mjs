@@ -316,7 +316,8 @@ function buildModel(fm, body, cfg) {
 
   const references = cfg.references || parseRefs(sections.find((s) => /^references$/i.test(s.heading)))
 
-  const citeAs = `Pendergrass K. "${title}". Heavy Metal Certified${year ? ", " + year : ""}. ${url}${doi ? " (DOI: " + doi + ")" : ""}. CC BY 4.0.`
+  // APA 7th: Author, initial. (Year). Title. Publisher/Site. https://doi.org/… (URL if no DOI).
+  const citeAs = `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
 
   return {
     masthead: cfg.masthead,
