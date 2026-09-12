@@ -5,7 +5,7 @@
 import { chromium } from "playwright"
 import { createServer } from "node:http"
 import handler from "serve-handler"
-import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync } from "node:fs"
+import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync, existsSync, copyFileSync } from "node:fs"
 import { dirname, join } from "node:path"
 import { createHash } from "node:crypto"
 import { execFileSync } from "node:child_process"
@@ -71,6 +71,26 @@ try {
     await page.route("**/*", route => route.request().url().startsWith(`http://127.0.0.1:${port}/`) ? route.continue() : route.abort())
     while (queue.length) {
       const {slug,fm,source,file} = queue.shift()
+      // A standard ships a committed house @react-pdf edition (content/static/standards/<slug>.pdf).
+      // Serve that verbatim as the web-edition PDF instead of a Chromium browser print — a
+      // certification PDF, especially one bearing a DataCite DOI, must be the house scholarly
+      // template, never a headless-browser render. (S-DOI-OLIVE-SHIP-1: kills Chromium/Skia
+      // standard PDFs on Production; the pre-mint root failure lived exactly here.)
+      const stdBase = (fm.type === "standard" || fm.type === "standard-in-development") ? slug.split("/").pop() : null
+      const reactPdfSrc = stdBase ? join("content/static/standards", `${stdBase}.pdf`) : null
+      if (reactPdfSrc && existsSync(reactPdfSrc)) {
+        const dest = `public/${slug}.pdf`
+        mkdirSync(dirname(dest), {recursive:true})
+        copyFileSync(reactPdfSrc, dest)
+        const revision = createHash("sha256").update(source).digest("hex").slice(0,16)
+        const modified = new Date(gitDates.get(file) || fm.updated || fm.effective_date || "2026-01-01")
+        const url = `${BASE}/${slug}`
+        const feed = `public/feeds/${slug}.xml`
+        mkdirSync(dirname(feed),{recursive:true})
+        writeFileSync(feed,`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${esc(fm.title)} — page updates</title><link>${esc(url)}</link><description>Published revisions of this Heavy Metal Certified page.</description><atom:link href="${BASE}/feeds/${slug}.xml" rel="self" type="application/rss+xml"/><item><title>${esc(fm.title)}</title><link>${esc(url)}</link><guid isPermaLink="false">${esc(url)}#revision-${revision}</guid><pubDate>${modified.toUTCString()}</pubDate><description>${esc(fm.description ?? "The current published edition is available on the website.")}</description></item></channel></rss>`)
+        if (++complete % 50 === 0) console.log(`document-editions: ${complete}/${jobs.length}`)
+        continue
+      }
       const response = await page.goto(`http://127.0.0.1:${port}/${slug}`,{waitUntil:"networkidle"})
       if (!response?.ok()) throw new Error(`Unpublished document route: ${slug} (${response?.status()})`)
       const content = await page.evaluate(({base,slug}) => {
