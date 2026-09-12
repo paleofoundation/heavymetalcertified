@@ -196,7 +196,11 @@ export function analyteOccurrenceBlock(opts) {
     const rationale = nm.rationale || opts.notMaterialProse || ""
     const refMethod = nm.reference_method || opts.notMaterialMethod || null
     const method = refMethod ? ` The analyte is controlled by ${stripDot(refMethod)}, not a standalone number.` : ""
-    const contra = der.contradiction
+    // A bounded species (subsumed under a numeric parent total) is a hard arithmetic
+    // bound, not a rebuttable presumption — the "not-material determination" contradiction
+    // note never applies to it (Ruling S-DOI-OLIVE-FINISH-1 §1: parent-bound species are
+    // bounded-complete, not not-material).
+    const contra = der.contradiction && !opts.bounded
       ? ` A not-material determination is a rebuttable presumption; it is tested against the measured evidence above and rests on the chemistry, not on an absence of data.`
       : ""
     const body = rationale
@@ -353,7 +357,13 @@ export function descriptorFromCompiledCell(cell, analyte) {
     // inheriting the compiled label, so the manual reads correctly even for records not yet
     // recompiled: the total is MEASURED every lot (baseline), and the species is speciated only
     // on an ongoing total exceedance ("reflex" is the ongoing regime, never the baseline).
+    // A parent-bounded species is COMPLETE (bounded-complete), never a not-material
+    // determination: the parent-total ceiling IS the species ceiling (species <= parent),
+    // a hard arithmetic bound, not a rebuttable presumption. Mark it `bounded` so the
+    // renderer suppresses the not-material "rebuttable presumption" tail and a stale
+    // occurrence-ledger not_material row cannot reclassify a compiled bounded finding.
     d.isNotMaterial = true
+    d.bounded = true
     const total = cell.subsumed_by || "its parent total"
     d.notMaterialProse = `${analyte} is a component of ${total} and bounded by it (${analyte} <= ${total}), so the ${total} ceiling is the ${analyte} ceiling; no separate ${analyte} number is published. ${total} is measured on every lot, and ${analyte} is speciated only when ${total} exceeds its limit.`
     d.notMaterialMethod = cell.reference_method || null
