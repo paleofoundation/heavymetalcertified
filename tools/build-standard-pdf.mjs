@@ -145,7 +145,7 @@ async function build(slug) {
     derivRows,
     ``,
     `## Cite this standard`,
-    `Pendergrass, K. "${title}." In Heavy Metal Tested & Certified (HMTc)${catName ? ` ${catName}` : ""} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026.${certDoi ? ` DOI: https://doi.org/${certDoi}` : ""}`,
+    `Pendergrass, K. (2026). *${title}: HMTc standard* (Version ${version}). Institute of Contaminant Standards.${certDoi ? ` https://doi.org/${certDoi}` : ""}`,
   ].join("\n")
 
   const fm = { title: `${title}: HMTc Standard`, dek, updated: /^\d{4}-\d{2}/.test(eff) ? eff.slice(0, 7) : "2026-08", ...(certDoi ? { cert_doi: certDoi } : {}) }

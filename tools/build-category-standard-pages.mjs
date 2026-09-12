@@ -313,8 +313,9 @@ function childAnchorDerivation(primary, subName) {
 
 function citeSection(subName, version, hmiLink, doi, volume) {
   const hmi = hmiLink ? `<a href="${hmiLink}" style="color:${LINK}">Heavy Metal Index</a>` : "Heavy Metal Index"
-  const doiText = doi ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>` : "DOI: registration pending."
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${esc(volume)} standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  // APA 7th: Author, initial. (Year). *Title* (Version x.x). Publisher. https://doi.org/…
+  const doiText = doi ? ` <a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>` : ""
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. (2026). <em style="font-style:italic">${esc(subName)}: HMTc standard</em> (Version ${version}). Institute of Contaminant Standards.${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
 }
 
 // Binding derivation (Cat 33 Chocolate, Cat 34 Herbs/Spices/Salt): the compiler emits the
