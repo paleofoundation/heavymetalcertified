@@ -161,10 +161,12 @@ function citeSection(subName, version, hmiLink, doi) {
   // Crossref). The registration agency lives in the deposit config, not on the
   // public page. Standards are deposited as Crossref posted-content/reports; the
   // already-published Program Manual and Journal articles keep their real Zenodo DOIs.
-  const doiText = doi
-    ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>`
-    : "DOI: registration pending."
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  // APA "Standard No." form, network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1):
+  // Standard No. = cert_doi, URL = doi.org only (never the page URL, never "registration pending"),
+  // no licence glued onto the cite line. The licence line is a separate row below.
+  const stdNo = doi ? ` (Standard No. ${doi})` : ""
+  const doiUrl = doi ? ` <a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>` : ""
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 10px;max-width:84ch">Pendergrass, K. (2026). <em style="font-style:italic">${esc(subName)}: HMTc standard</em>${stdNo}. Institute of Contaminant Standards.${doiUrl}</p><p style="font-size:11px;line-height:1.6;color:#736b6b;max-width:84ch;margin:0 0 14px">&copy; 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
 }
 
 // --- drive --------------------------------------------------------------------
