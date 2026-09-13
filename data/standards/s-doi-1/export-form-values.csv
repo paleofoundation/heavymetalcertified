@@ -1,0 +1,19 @@
+page,variant,analyte,form,old_value,new_value,numeric_changed
+chocolate,all,Cd,chocolate and cocoa products with <40% cocoa (and >=30% total dry cocoa solids),200,200,False
+chocolate,all,Cd,"chocolate and cocoa products with >=40% cocoa (dark chocolate, chips, cocoa powder, cocoa paste)",300,300,False
+chocolate,all,Cd,milk chocolate with <30% total dry cocoa solids,100,100,False
+chocolate,all,Ni,cocoa powder / fat-reduced cocoa powder (drinking chocolate),15000,15000,False
+chocolate,all,Ni,milk chocolate with <30% total dry cocoa solids,2500,2500,False
+chocolate,all,Ni,"milk chocolate with >=30% total dry cocoa solids, and chocolate",7000,7000,False
+chocolate,all,Pb,"chocolate and cocoa products with <40% cocoa (e.g., milk chocolate)",200,200,False
+chocolate,all,Pb,"chocolate and cocoa products with >=40% cocoa (e.g., dark chocolate, chips, cocoa powder)",400,400,False
+chocolate,all,tAs,chocolate and cocoa products with <40% cocoa,200,200,False
+chocolate,all,tAs,chocolate and cocoa products with >=40% cocoa (incl. cocoa powder/paste),400,400,False
+salt,all,Pb,refined / general food-grade salt (table salt),1000,1000,False
+salt,all,Pb,"unrefined salt (fleur de sel, grey salt, manually harvested sea salt)",1000,2000,True
+spices,all,Pb,bark spices (cinnamon),2000,2000,False
+spices,all,Pb,bud spices (cloves),1000,1000,False
+spices,all,Pb,flower/pistil spices (saffron),1000,1000,False
+spices,all,Pb,"fruit spices (paprika, chili powder, black pepper, allspice)",600,600,False
+spices,all,Pb,"root and rhizome spices (turmeric, ginger)",1500,1500,False
+spices,all,Pb,"seed spices (cumin, coriander, fennel, mustard)",900,900,False

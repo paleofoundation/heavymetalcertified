@@ -1,0 +1,5 @@
+page_path,type,cert_doi,state,sha256_at_mint,mode,timestamp
+content/standards/olive-oil.md,standards,10.83138/hmtc.std.30.olive-oil,publish,75d71fe7bf1ffeba3605e48f120bb54084ddd8e6df0a6adb8902a2e36d3d0360,live,2026-09-12T13:27:41.621Z
+content/standards/menstrual-tampons.md,standards,10.83138/hmtc.std.15.menstrual-tampons,publish,4680bda05ce5191e413829179a45b4dd2a0f320c1290c2c8972e1a861fed283e,live,2026-09-12T17:49:03.777Z
+content/standards/infant-formula-powder.md,standards,10.83138/hmtc.std.1.infant-formula-powder,publish,71837189521b57c8a6da071fe1d169318d83a817bd473785982ed337e180608c,live,2026-09-12T17:49:05.293Z
+content/standards/non-root-vegetable-purees.md,standards,10.83138/hmtc.std.1.non-root-vegetable-purees,publish,eb503022c0c928a59034725c76e5cf922705217d159a3183ff664813b19944d3,live,2026-09-12T17:49:06.603Z
