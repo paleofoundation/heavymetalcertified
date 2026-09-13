@@ -19,11 +19,13 @@ import { renderScholarlyPdf } from "./pdf/scholarly-pdf.mjs"
 import {
   SPECIES, isTotalsOnlySlug, isFirmClaimCell, speciesParentViolations,
 } from "./lib/claim-surface.mjs"
+import { loadPageJoins } from "./lib/page-record-join.mjs"
 
 const REPO = process.cwd()
 const OUT = path.join(REPO, "content/static/standards")
 const CONTENT = path.join(REPO, "content/standards")
 const DATA = path.join(REPO, "data/standards")
+const JOINS = loadPageJoins(DATA)
 
 const ANALYTES = [
   ["Pb", "Lead (Pb)", 1], ["Cd", "Cadmium (Cd)", 1], ["tAs", "Total arsenic (tAs)", 2],
@@ -53,13 +55,17 @@ function cellsOf(rec) {
   if (rec.variants && typeof rec.variants === "object" && !rec.cells) return Object.assign({}, ...Object.values(rec.variants))
   return rec.cells || {}
 }
-function cellRow([k, label, tier], c) {
-  if (!c) return `| ${label} | Tier ${tier} | — | not compiled |`
+// limitOverride (optional): a precomputed HMTc-limit column string, used for an aggregate page
+// whose grouped variants disagree on this analyte (e.g. "5 cow / 10 soy"). When given it replaces
+// only the value column; the basis text still comes from the primary variant's cell.
+function cellRow([k, label, tier], c, limitOverride) {
+  if (!c) return `| ${label} | Tier ${tier} | ${limitOverride ?? "—"} | not compiled |`
   const t = c.type || ""
   if (c.value != null) {
     const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
-    return `| ${label} | Tier ${tier} | ${fmtNum(c.value)} | ${basis} |`
+    return `| ${label} | Tier ${tier} | ${limitOverride ?? fmtNum(c.value)} | ${basis} |`
   }
+  if (limitOverride) return `| ${label} | Tier ${tier} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
   if (t === "subsumed") {
     const n = c.value ?? c.binding_total
     if (n != null) return `| ${label} | Tier ${tier} | ${fmtNum(n)} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
@@ -97,15 +103,55 @@ function references(cells) {
   return [...seen.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([j, ks]) => ({ n: ++n, head: `${jl(j)} — human-food maximum levels`, meta: `Binds ${ks.join(", ")}. Strictest applicable human-food sovereign maximum for the nearest analog.`, tag: "Maximum level" }))
 }
 
+// Resolve a page slug to its rendered variant(s). Direct path: a compiled record whose slug equals
+// the page slug (the common case) — one variant built from its merged cells, unchanged behavior.
+// Aggregate path: no such record, but a *-pages.json join groups one or more records onto this page
+// (ORDER S-DOI-P0-AGG-1) — one variant per join entry, cells taken from that record's named variant.
+function resolveVariants(slug) {
+  const direct = findRecord(slug)
+  if (direct) return { variants: [{ label: null, cells: cellsOf(direct) }], primary: direct, aggregated: false }
+  const join = JOINS.get(slug)
+  if (!join) return null
+  const variants = join.variants.map((v) => {
+    const rec = findRecord(v.record)
+    if (!rec) throw new Error(`page "${slug}" joins record "${v.record}" but no compiled record exists`)
+    const cells = rec.variants && rec.variants[v.variant] ? rec.variants[v.variant] : cellsOf(rec)
+    return { label: v.label, cells, rec }
+  })
+  return { variants, primary: variants[0].rec, aggregated: true }
+}
+
+// For an aggregate page, collapse one analyte across variants into the page's display convention:
+// null when every variant agrees (caller uses the normal single-value row), else "X label1 / Y label2".
+function collapseLimitCell(variants, k) {
+  const show = (c) => {
+    if (!c) return "—"
+    if (c.value != null) return fmtNum(c.value)
+    if (c.type === "subsumed") { const n = c.value ?? c.binding_total; return n != null ? fmtNum(n) : `≤ ${c.subsumed_by || c.bounded_by || "parent"}` }
+    if (c.type === "control") return "control"
+    if (c.type === "not_material") return "n/m"
+    return "—"
+  }
+  const vals = variants.map((v) => show(v.cells[k]))
+  if (vals.every((x) => x === vals[0])) return null
+  return variants.map((v, i) => `${vals[i]} ${v.label}`).join(" / ")
+}
+
 async function build(slug) {
-  const rec = findRecord(slug)
-  if (!rec) throw new Error(`no compiled record for "${slug}"`)
+  const resolved = resolveVariants(slug)
+  if (!resolved) throw new Error(`no compiled record or page-join for "${slug}"`)
+  const { variants, primary: rec, aggregated } = resolved
   const pagePath = path.join(CONTENT, `${slug}.md`)
   const pfm = fs.existsSync(pagePath) ? readFm(fs.readFileSync(pagePath, "utf8")) : {}
-  const cells = cellsOf(rec)
-  const caps = speciesParentViolations(cells)
-  if (caps.length) {
-    throw new Error(`${slug} species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+  // The derivation table is rendered for the primary variant (matching the page renderer), but the
+  // species<=parent physics cap is checked on EVERY joined variant so a rice child cannot smuggle a
+  // species ceiling above its parent total onto the aggregate PDF.
+  const cells = variants[0].cells
+  for (const v of variants) {
+    const caps = speciesParentViolations(v.cells)
+    if (caps.length) {
+      throw new Error(`${slug}${v.label ? ` [${v.label}]` : ""} species>parent ${caps.map((h) => `${h.species}=${h.species_value} > ${h.parent}=${h.parent_value}`).join("; ")}`)
+    }
   }
   const claimAnalytes = ANALYTES.filter(([k]) => {
     if (!SPECIES.includes(k)) return true
@@ -123,15 +169,18 @@ async function build(slug) {
   // PDF face — both the scholarly "Cite as" block and the body citation. (S-DOI-OLIVE-DOI-SURFACE-1)
   const certDoi = pfm.cert_doi && String(pfm.cert_doi).toLowerCase() !== "null" ? String(pfm.cert_doi) : null
 
-  const limitRows = claimAnalytes.map((a) => cellRow(a, cells[a[0]])).join("\n")
+  const limitRows = claimAnalytes.map((a) => cellRow(a, cells[a[0]], variants.length > 1 ? collapseLimitCell(variants, a[0]) : null)).join("\n")
   const derivRows = ANALYTES.map((a) => derivRow(a, cells[a[0]])).join("\n")
+  const variantNote = variants.length > 1
+    ? `\nVariants on this standard: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the limit column shows both (value per variant); the derivation below is stated for ${variants[0].label}.`
+    : ""
 
   const body = [
     `## How every number on this standard is set`,
     (rec.feed_law_note || rec.method || `The standard for each analyte is the strictest maximum level a credible government sets for the nearest applicable product, converted into this product's ${basisLabel} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion, with an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.`).replace(/&mdash;/g, "—").replace(/&rsquo;/g, "'").replace(/&amp;/g, "&").replace(/&nbsp;/g, " "),
     ``,
     `## Master limit table`,
-    `All values in ppb (µg/kg), ${basisLabel} basis. A brand meeting every value qualifies for the mark.`,
+    `All values in ppb (µg/kg), ${basisLabel} basis. A brand meeting every value qualifies for the mark.${variantNote}`,
     ``,
     `| Analyte | Tier | HMTc limit | Basis |`,
     `| --- | --- | --- | --- |`,
@@ -156,7 +205,7 @@ async function build(slug) {
 
 const args = process.argv.slice(2)
 let targets = args.filter((a) => !a.startsWith("--"))
-if (args.includes("--all")) targets = fs.readdirSync(CONTENT).filter((f) => f.endsWith(".md") && f !== "index.md").map((f) => f.replace(/\.md$/, "")).filter((s) => findRecord(s))
+if (args.includes("--all")) targets = fs.readdirSync(CONTENT).filter((f) => f.endsWith(".md") && f !== "index.md").map((f) => f.replace(/\.md$/, "")).filter((s) => findRecord(s) || JOINS.has(s))
 let ok = 0; const failed = []
 for (const s of targets) { try { await build(s); ok++ } catch (e) { failed.push(s); console.error(`standard-pdf: FAILED ${s}: ${e.message}`) } }
 console.log(`standard-pdf: ${ok}/${targets.length} rendered${failed.length ? `; failed: ${failed.join(", ")}` : ""}`)
