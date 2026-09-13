@@ -1,0 +1,29 @@
+{
+  "old_standard_pages": 309,
+  "new_standard_pages": 321,
+  "old_cells": 3408,
+  "new_cells": 3577,
+  "counts": {
+    "existing": 3399,
+    "existing_numeric_changed": 1371,
+    "existing_control_basis_changed": 1773,
+    "existing_instrument_changed": 1577,
+    "existing_null_to_numeric": 1333,
+    "existing_status_changed": 967,
+    "added": 178,
+    "existing_numeric_to_numeric": 32,
+    "existing_numeric_to_null": 6,
+    "removed": 9
+  },
+  "changed_cell_records": 3584,
+  "compiled_files_numeric_checked": 323,
+  "compiled_source_numeric_deltas": 0,
+  "exporter_compliance_logic_changed": true,
+  "legacy_literature_baseline_occurrences_after": 0,
+  "form_values_total": 18,
+  "form_numeric_deltas": 1,
+  "form_delta": "salt / unrefined salt / Pb: 1000 -> 2000 (existing compiled form; no source edit)",
+  "firm_cell_count": 3156,
+  "blank_csv_limit_of_record": 0,
+  "regression_tests_passed": 20
+}

@@ -4,8 +4,8 @@
   "totals": {
     "records": 323,
     "complete": 265,
-    "registered": 0,
-    "ready": 0,
+    "registered": 4,
+    "ready": 4,
     "empty_cells": 882,
     "claim_empty_cells": 180,
     "incomplete_records": 58,
@@ -2119,9 +2119,9 @@
         {
           "slug": "menstrual-tampons",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2129,7 +2129,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.menstrual-tampons"
         },
         {
           "slug": "period-underwear-reusable-garments",
@@ -4876,14 +4876,14 @@
         {
           "slug": "olive-oil",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.30.olive-oil"
         }
       ],
       "complete": true,
@@ -5400,14 +5400,14 @@
         {
           "slug": "infant-formula-powder",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.1.infant-formula-powder"
         },
         {
           "slug": "infant-formula-rtf-liquid",
@@ -5448,14 +5448,14 @@
         {
           "slug": "non-root-vegetable-purees",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.1.non-root-vegetable-purees"
         },
         {
           "slug": "root-vegetable-purees-single-ingredient",
