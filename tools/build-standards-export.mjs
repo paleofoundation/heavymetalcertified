@@ -71,11 +71,14 @@ const SITE = "https://heavymetalcertified.com"
 const HMI = "https://heavymetalindex.com"
 const SCHEMA_VERSION = "1.0.0"
 
+// Network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1): no CC BY on any cert surface,
+// this compiled dataset included. Standards remain free to READ on the site; reuse of the dataset,
+// derivation methodology, and compiled values requires written permission.
 const LICENSE = {
   terms:
-    "The published HMTc standards are free to read and cite with attribution. The derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards.",
+    "© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved. The published HMTc standards are free to read on heavymetalcertified.com; the derivation methodology and this compiled dataset are the work of Paleo Certified, Inc., operating as the Institute of Contaminant Standards, and may not be reproduced or redistributed without written permission.",
   attribution:
-    "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite the standard's page_url and standard_version.",
+    "Heavy Metal Tested & Certified (HMTc), Institute of Contaminant Standards. Cite a standard by its Standard No. (cert_doi) at https://doi.org/<cert_doi>.",
   contact: "karen@paleofoundation.com",
 }
 

@@ -83,12 +83,13 @@ const CREATOR = {
   affiliation: [{ name: "Institute of Contaminant Standards" }],
 }
 const PUBLISHER = "Institute of Contaminant Standards"
+// Certification standards are network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1);
+// no CC BY on any cert surface, DataCite metadata included. NB: DOIs minted BEFORE this change
+// still carry cc-by-4.0 in their live DataCite record — updating those is a metadata re-deposit
+// (PUT), which is user-run.
 const RIGHTS = [{
-  rights: "Creative Commons Attribution 4.0 International",
-  rightsUri: "https://creativecommons.org/licenses/by/4.0/legalcode",
-  rightsIdentifier: "cc-by-4.0",
-  rightsIdentifierScheme: "SPDX",
-  schemeUri: "https://spdx.org/licenses/",
+  rights: "All rights reserved",
+  rightsUri: "https://heavymetalcertified.com/license",
 }]
 const TEST_PREFIXES = ["10.5072", "10.82"] // datacite sandbox families (must match standard-readiness-lint)
 
