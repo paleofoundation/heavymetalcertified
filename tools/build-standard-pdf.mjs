@@ -194,7 +194,12 @@ async function build(slug) {
     derivRows,
     ``,
     `## Cite this standard`,
-    `Pendergrass, K. (2026). *${title}: HMTc standard* (Version ${String(version).split(/[\s(]/)[0]}). Institute of Contaminant Standards.${certDoi ? ` https://doi.org/${certDoi}` : ""}`,
+    // APA "Standard No." form, network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1):
+    // Standard No. = cert_doi, URL = doi.org only, no version element, no licence on the cite line,
+    // never "registration pending". The licence line is separate, below.
+    `Pendergrass, K. (${String(eff).slice(0, 4) || "2026"}). *${title}: HMTc standard*${certDoi ? ` (Standard No. ${certDoi})` : ""}. Institute of Contaminant Standards.${certDoi ? ` https://doi.org/${certDoi}` : ""}`,
+    ``,
+    `© ${String(eff).slice(0, 4) || "2026"} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`,
   ].join("\n")
 
   const fm = { title: `${title}: HMTc Standard`, dek, updated: /^\d{4}-\d{2}/.test(eff) ? eff.slice(0, 7) : "2026-08", ...(certDoi ? { cert_doi: certDoi } : {}) }
