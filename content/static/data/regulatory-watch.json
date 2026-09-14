@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated": "2026-08-24",
+  "generated": "2026-09-14",
   "quarter": "2026-Q2",
   "quarter_start": "2026-04-01",
   "quarter_end": "2026-06-30",
   "canonical": "https://heavymetalcertified.com/articles/regulatory-watch",
   "source": "Heavy Metal Index firewall-clean snapshot",
-  "verified_event_count": 19,
+  "verified_event_count": 20,
   "comparison_count": 14,
   "comparisons": [
     {
@@ -24,7 +24,7 @@
       "hmtc_variant": "both",
       "hmtc_value_ug_kg": 100,
       "hmtc_cell_type": "gov",
-      "hmtc_basis": "edible portion, as consumed (wet weight)",
+      "hmtc_basis": "as_consumed",
       "basis_relation": "same-mass-fraction",
       "relation": "equal",
       "scope_note": "Representative comparison for non-listed marine finfish on wet-weight/as-consumed edible portion.",
@@ -45,7 +45,7 @@
       "hmtc_variant": "both",
       "hmtc_value_ug_kg": 50,
       "hmtc_cell_type": "gov",
-      "hmtc_basis": "edible portion, as consumed (wet weight)",
+      "hmtc_basis": "as_consumed",
       "basis_relation": "same-mass-fraction",
       "relation": "equal",
       "scope_note": "Cephalopod edible portion without viscera; wet-weight/as-consumed comparison.",
@@ -416,7 +416,7 @@
             "hmtc_variant": "both",
             "hmtc_value_ug_kg": 100,
             "hmtc_cell_type": "gov",
-            "hmtc_basis": "edible portion, as consumed (wet weight)",
+            "hmtc_basis": "as_consumed",
             "basis_relation": "same-mass-fraction",
             "relation": "equal",
             "scope_note": "Representative comparison for non-listed marine finfish on wet-weight/as-consumed edible portion.",
@@ -437,7 +437,7 @@
             "hmtc_variant": "both",
             "hmtc_value_ug_kg": 50,
             "hmtc_cell_type": "gov",
-            "hmtc_basis": "edible portion, as consumed (wet weight)",
+            "hmtc_basis": "as_consumed",
             "basis_relation": "same-mass-fraction",
             "relation": "equal",
             "scope_note": "Cephalopod edible portion without viscera; wet-weight/as-consumed comparison.",
@@ -478,6 +478,109 @@
           "priority": "confirm-compliance",
           "label": "Confirm the passed compliance date is implemented",
           "owner": "Quality and regulatory operations"
+        },
+        "governance_queue": true
+      }
+    },
+    {
+      "event_id": "rw-2026-22-au-nz-a1329-cd-blacklip",
+      "intake_id": "rw-intake-2026-09-14-reg-watch-pass",
+      "cluster": 1,
+      "title": "FSANZ A1329 / F2026L01125 varies Schedule 19 cadmium rules for NT-farmed Blacklip Rock oysters",
+      "instrument_ids": [
+        "au-nz-f2026l01125-a1329",
+        "au-nz-food-standards-code-schedule-19-contaminants"
+      ],
+      "jurisdictions": [
+        "Australia",
+        "New Zealand"
+      ],
+      "authorities": [
+        "Food Standards Australia New Zealand"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "Cd"
+      ],
+      "product_scopes": [
+        "NT-farmed Blacklip Rock oysters (Saccostrea spathulata)",
+        "molluscs (Schedule 19 cadmium row)"
+      ],
+      "event_type": "limit-change",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2026-08-28",
+        "published": "2026-09-01",
+        "effective": "2026-09-01",
+        "transition": "2028-09-02",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Food Standards (Application A1329 – Exclusion of Blacklip Rock oysters farmed in the Northern Territory from the ML for cadmium in molluscs) Variation (F2026L01125)",
+          "url": "https://www.legislation.gov.au/F2026L01125/asmade/2026-08-28/text/original/pdf",
+          "kind": "primary-law"
+        },
+        {
+          "title": "Federal Register of Legislation record F2026L01125",
+          "url": "https://www.legislation.gov.au/F2026L01125/latest/text",
+          "kind": "official-regulation-register"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters",
+          "regulations/au-nz-food-standards-code-schedule-19-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": [
+          "aunz_sch19_cd_molluscs_2000",
+          "aunz_sch19_cd_blacklip_rock_oyster_nt_3000"
+        ]
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-09-14",
+        "confidence": "high",
+        "notes": "Authorised Federal Register PDF deposited locally. Local primary PDF: /Volumes/HMI-Library/Regulatory documents/AustraliaNZ_F2026L01125_A1329_Cd-Blacklip-Rock-Oysters_2026.pdf SHA-256 59333106aeeee27490405c3f4bb978b83464b0ba11a004e787b653e3350567b6. Item [1] excludes NT-farmed Saccostrea spathulata from the general molluscs Cd row from gazettal day (2026-09-01 / FSC 192). Item [2] inserts a commodity-specific Cd ML of 3 (Schedule 19 units) commencing about 2028-09-02 (day after 24 months from gazettal). Register-update against existing Schedule 19 page only; shellfish corpus pages remain PARKED. Numerical ML not duplicated as an HMI regulatory_limit_id pending limit-row extraction. 2026-09-14: variation page regulations/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters created; Schedule 19 page mollusc Cd rows updated. Register rows added: general molluscs Cd 2000 ug/kg (amended exclusion, effective 2026-09-01) and NT-farmed Blacklip Rock oyster Cd 3000 ug/kg (Schedule 19 3 mg/kg, commences 2028-09-02, not yet in force)."
+      },
+      "disposition": "covered-existing",
+      "article_slugs": [],
+      "summary": "F2026L01125 (Application A1329) amends Australia New Zealand Food Standards Code Schedule 19 cadmium rules for Northern Territory-farmed Blacklip Rock oysters: exclusion from the general molluscs cadmium row from gazettal on 1 September 2026, with a commodity-specific cadmium maximum level of 3 (Schedule 19 units) commencing about 2 September 2028.",
+      "obligations": [
+        "maximum-level",
+        "register-update"
+      ],
+      "public_eligible": true,
+      "hmtc_impact": {
+        "event_id": "rw-2026-22-au-nz-a1329-cd-blacklip",
+        "impact_class": "current-binding-limit-change",
+        "affected_analytes": [
+          "Cd"
+        ],
+        "affected_product_categories": [],
+        "deadline": "2028-09-02",
+        "deadline_state": "upcoming",
+        "q2_relevance": "post-quarter-deadline",
+        "q2_date_fields": [],
+        "related_standard_urls": [],
+        "comparisons": [],
+        "comparison_summary": {
+          "mapped": 0,
+          "hmtc_stricter": 0,
+          "equal": 0,
+          "governance_review": 0,
+          "not_comparable": 0
+        },
+        "rationale": "0 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
+        "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+        "action": {
+          "priority": "prepare",
+          "label": "Complete readiness before the listed date",
+          "owner": "Regulatory and quality operations"
         },
         "governance_queue": true
       }
@@ -665,7 +768,7 @@
       "event_id": "rw-2026-03-china-gb2762-2025",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 3,
-      "title": "China publishes GB 2762-2025 with a September 2026 effective date",
+      "title": "China GB 2762-2025 contaminant maximum levels now in force",
       "instrument_ids": [
         "china-gb-2762-2025-contaminants"
       ],
@@ -695,49 +798,70 @@
         "foods placed on the Chinese market"
       ],
       "event_type": "limit-change",
-      "status": "adopted-not-effective",
+      "status": "in-force",
       "dates": {
         "adopted": "2025-09-25",
         "published": "2025-09-25",
         "effective": "2026-09-02",
         "transition": null,
         "consultation_close": null,
-        "next_review": "2026-09-03"
+        "next_review": null
       },
       "official_sources": [
         {
           "title": "NHC/SAMR Announcement No. 6 of 2025",
           "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
           "kind": "official-announcement"
+        },
+        {
+          "title": "State Council / NHC policy text for GB 2762-2025 Announcement No. 6 of 2025",
+          "url": "https://www.gov.cn/zhengce/zhengceku/202509/content_7042295.htm",
+          "kind": "official-announcement"
         }
       ],
       "hmi_routes": {
         "regulations": [
+          "regulations/china-gb-2762-2025-contaminants",
           "regulations/china-gb-2762-2022-contaminants"
         ],
         "sources": [],
-        "regulatory_limit_ids": []
+        "regulatory_limit_ids": [
+          "china_gb2762_2025_cr_milk_powder_2000",
+          "china_gb2762_2025_cr_liquid_milk_300",
+          "china_gb2762_2025_tas_milk_powder_500",
+          "cn_pb_fsmp-1-10yr_150_2025",
+          "china_gb2762_2025_crtotal_grains_1000",
+          "china_gb2762_2025_crtotal_beans_legumes_1000",
+          "china_gb2762_2025_pb_nuts_and_seeds_200",
+          "china_gb2762_2025_pb_condiments_excl_spices_1000",
+          "china_gb2762_2025_pb_spices_1500",
+          "china_gb2762_2025_ias_compound_condiment_100",
+          "china_gb2762_2025_cd_beans_legumes_200",
+          "china_gb2762_2025_cd_peanuts_500",
+          "china_gb2762_2025_pb_soy_milk_50"
+        ]
       },
       "verification": {
         "state": "verified-primary",
-        "verified_on": "2026-08-24",
+        "verified_on": "2026-09-14",
         "confidence": "high",
-        "notes": "Official announcement and preserved standard confirm publication and effective date. The existing 2022 HMI page records the scheduled supersession; no 2025 numerical value is duplicated here."
+        "notes": "Status transition to in-force as of 2026-09-02 confirmed on 2026-09-14 against the NHC/SAMR announcement chain and a preserved local primary PDF. Local primary PDF: /Volumes/HMI-Library/Regulatory documents/China_GB-2762-2025_2025_Contaminant-MLs.pdf SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80. Provenance: provincial OA PDF mirror matching NHC/SAMR title page (Elon accepted for now); CFSA dual-path re-pull preferred later. Instrument remains china-gb-2762-2025-contaminants (amendment of existing row; no second mint). No 2025 numerical values are recorded in this event ledger. 2026-09-14: successor page regulations/china-gb-2762-2025-contaminants created and GB 2762-2022 marked superseded (effective 2026-09-02). 13 GB 2762-2022 register rows superseded by value-identical china_gb2762_2025_* rows; dried-meat Pb/Cd/As/Cr change verified as an application-principle change (removal from the dehydration-conversion rule), not a numeric-cell change, so no new numeric ML row was invented. Metal delta: docs/regulatory-deltas/gb-2762-2025-vs-2022-metal-delta.md."
       },
       "disposition": "full-article",
       "article_slugs": [
         "worldwide-heavy-metal-regulatory-watch-2026",
-        "market-access-rules-gulf-asia"
+        "market-access-rules-gulf-asia",
+        "china-gb-2762-2025-food-contaminant-limits"
       ],
-      "summary": "GB 2762-2025 has been published and is scheduled to replace GB 2762-2022 on 2 September 2026; it is not treated as currently binding before that date.",
+      "summary": "GB 2762-2025 replaced GB 2762-2022 on 2 September 2026 and is now in force for foods placed on the Chinese market. Metal-relevant text changes include revised dried-meat-product rows for Pb, Cd, As, and Cr; numerical maximum levels are not duplicated here and remain queued for regulatory_limit row extraction.",
       "obligations": [
-        "future-maximum-level",
+        "maximum-level",
         "market-access"
       ],
       "public_eligible": true,
       "hmtc_impact": {
         "event_id": "rw-2026-03-china-gb2762-2025",
-        "impact_class": "future-binding-limit-candidate",
+        "impact_class": "current-binding-limit-change",
         "affected_analytes": [
           "Pb",
           "Cd",
@@ -751,7 +875,7 @@
         ],
         "affected_product_categories": [],
         "deadline": "2026-09-02",
-        "deadline_state": "upcoming",
+        "deadline_state": "passed",
         "q2_relevance": "post-quarter-deadline",
         "q2_date_fields": [],
         "related_standard_urls": [],
@@ -763,12 +887,12 @@
           "governance_review": 0,
           "not_comparable": 0
         },
-        "rationale": "Prepare for the adopted effective date. 0 mapped HMTc comparisons are available; no threshold changes automatically.",
+        "rationale": "0 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
         "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
         "action": {
-          "priority": "prepare",
-          "label": "Complete readiness before the effective date",
-          "owner": "Regulatory and laboratory operations"
+          "priority": "confirm-compliance",
+          "label": "Confirm the passed compliance date is implemented",
+          "owner": "Quality and regulatory operations"
         },
         "governance_queue": true
       }

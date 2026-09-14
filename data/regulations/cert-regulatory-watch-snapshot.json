@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated": "2026-08-24",
+  "generated": "2026-09-14",
   "source_repository": "Heavy Metal Index",
   "firewall": "Neutral verified facts and evidence links only. No certification impact or threshold recommendation.",
   "intakes": [
@@ -10,9 +10,16 @@
       "sha256": "c49959ee9cbe3e71f7cbd2e170a7cf32491bf36ba2e0c4bdbd1df85912bf3c2c",
       "cluster_count": 21,
       "fitness_classification": "Useful for discovery and prioritization; not independently sufficient to support a legal claim, legal status, date, numerical limit, or certification consequence."
+    },
+    {
+      "intake_id": "rw-intake-2026-09-14-reg-watch-pass",
+      "intake_date": "2026-09-14",
+      "sha256": "86a62ed62401a43e8e2ed17ce0984cb73aaeb9a5f4434b61b32a1dd8b62cc2dd",
+      "cluster_count": 1,
+      "fitness_classification": "Useful for discovery, deposit inventory, and STATUS prioritization; legal claims require the linked official primary sources and preserved PDFs. Not independently sufficient for certification or numerical limit minting."
     }
   ],
-  "event_count": 21,
+  "event_count": 22,
   "events": [
     {
       "event_id": "rw-2026-01-eu-ias-seafood",
@@ -173,7 +180,7 @@
       "event_id": "rw-2026-03-china-gb2762-2025",
       "intake_id": "rw-intake-2026-08-24-worldwide-roundup",
       "cluster": 3,
-      "title": "China publishes GB 2762-2025 with a September 2026 effective date",
+      "title": "China GB 2762-2025 contaminant maximum levels now in force",
       "instrument_ids": [
         "china-gb-2762-2025-contaminants"
       ],
@@ -203,46 +210,69 @@
         "foods placed on the Chinese market"
       ],
       "event_type": "limit-change",
-      "status": "adopted-not-effective",
+      "status": "in-force",
       "dates": {
         "adopted": "2025-09-25",
         "published": "2025-09-25",
         "effective": "2026-09-02",
         "transition": null,
         "consultation_close": null,
-        "next_review": "2026-09-03"
+        "next_review": null
       },
       "official_sources": [
         {
           "title": "NHC/SAMR Announcement No. 6 of 2025",
           "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
           "kind": "official-announcement"
+        },
+        {
+          "title": "State Council / NHC policy text for GB 2762-2025 Announcement No. 6 of 2025",
+          "url": "https://www.gov.cn/zhengce/zhengceku/202509/content_7042295.htm",
+          "kind": "official-announcement"
         }
       ],
       "hmi_routes": {
         "regulations": [
+          "regulations/china-gb-2762-2025-contaminants",
           "regulations/china-gb-2762-2022-contaminants"
         ],
         "sources": [],
-        "regulatory_limit_ids": []
+        "regulatory_limit_ids": [
+          "china_gb2762_2025_cr_milk_powder_2000",
+          "china_gb2762_2025_cr_liquid_milk_300",
+          "china_gb2762_2025_tas_milk_powder_500",
+          "cn_pb_fsmp-1-10yr_150_2025",
+          "china_gb2762_2025_crtotal_grains_1000",
+          "china_gb2762_2025_crtotal_beans_legumes_1000",
+          "china_gb2762_2025_pb_nuts_and_seeds_200",
+          "china_gb2762_2025_pb_condiments_excl_spices_1000",
+          "china_gb2762_2025_pb_spices_1500",
+          "china_gb2762_2025_ias_compound_condiment_100",
+          "china_gb2762_2025_cd_beans_legumes_200",
+          "china_gb2762_2025_cd_peanuts_500",
+          "china_gb2762_2025_pb_soy_milk_50"
+        ]
       },
       "verification": {
         "state": "verified-primary",
-        "verified_on": "2026-08-24",
+        "verified_on": "2026-09-14",
         "confidence": "high",
-        "notes": "Official announcement and preserved standard confirm publication and effective date. The existing 2022 HMI page records the scheduled supersession; no 2025 numerical value is duplicated here."
+        "notes": "Status transition to in-force as of 2026-09-02 confirmed on 2026-09-14 against the NHC/SAMR announcement chain and a preserved local primary PDF. Local primary PDF: /Volumes/HMI-Library/Regulatory documents/China_GB-2762-2025_2025_Contaminant-MLs.pdf SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80. Provenance: provincial OA PDF mirror matching NHC/SAMR title page (Elon accepted for now); CFSA dual-path re-pull preferred later. Instrument remains china-gb-2762-2025-contaminants (amendment of existing row; no second mint). No 2025 numerical values are recorded in this event ledger. 2026-09-14: successor page regulations/china-gb-2762-2025-contaminants created and GB 2762-2022 marked superseded (effective 2026-09-02). 13 GB 2762-2022 register rows superseded by value-identical china_gb2762_2025_* rows; dried-meat Pb/Cd/As/Cr change verified as an application-principle change (removal from the dehydration-conversion rule), not a numeric-cell change, so no new numeric ML row was invented. Metal delta: docs/regulatory-deltas/gb-2762-2025-vs-2022-metal-delta.md."
       },
       "disposition": "full-article",
       "article_slugs": [
         "worldwide-heavy-metal-regulatory-watch-2026",
-        "market-access-rules-gulf-asia"
+        "market-access-rules-gulf-asia",
+        "china-gb-2762-2025-food-contaminant-limits"
       ],
-      "summary": "GB 2762-2025 has been published and is scheduled to replace GB 2762-2022 on 2 September 2026; it is not treated as currently binding before that date.",
+      "summary": "GB 2762-2025 replaced GB 2762-2022 on 2 September 2026 and is now in force for foods placed on the Chinese market. Metal-relevant text changes include revised dried-meat-product rows for Pb, Cd, As, and Cr; numerical maximum levels are not duplicated here and remain queued for regulatory_limit row extraction.",
       "obligations": [
-        "future-maximum-level",
+        "maximum-level",
         "market-access"
       ],
-      "gaps": [],
+      "gaps": [
+        "Dried-meat-product Pb/Cd/As/Cr change resolved 2026-09-14: it is an application-principle change (dried meat products removed from the dehydration-conversion rule; the unchanged general meat-products category MLs now apply directly), not a new numeric cell. No invented ppb. Full-table numeric extraction beyond the HMI-bound rows remains an optional future enrichment."
+      ],
       "public_eligible": true
     },
     {
@@ -1597,9 +1627,86 @@
         "Re-check ECHA CHEM and the restriction-intentions registry at the next review date."
       ],
       "public_eligible": false
+    },
+    {
+      "event_id": "rw-2026-22-au-nz-a1329-cd-blacklip",
+      "intake_id": "rw-intake-2026-09-14-reg-watch-pass",
+      "cluster": 1,
+      "title": "FSANZ A1329 / F2026L01125 varies Schedule 19 cadmium rules for NT-farmed Blacklip Rock oysters",
+      "instrument_ids": [
+        "au-nz-f2026l01125-a1329",
+        "au-nz-food-standards-code-schedule-19-contaminants"
+      ],
+      "jurisdictions": [
+        "Australia",
+        "New Zealand"
+      ],
+      "authorities": [
+        "Food Standards Australia New Zealand"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "Cd"
+      ],
+      "product_scopes": [
+        "NT-farmed Blacklip Rock oysters (Saccostrea spathulata)",
+        "molluscs (Schedule 19 cadmium row)"
+      ],
+      "event_type": "limit-change",
+      "status": "in-force",
+      "dates": {
+        "adopted": "2026-08-28",
+        "published": "2026-09-01",
+        "effective": "2026-09-01",
+        "transition": "2028-09-02",
+        "consultation_close": null,
+        "next_review": null
+      },
+      "official_sources": [
+        {
+          "title": "Food Standards (Application A1329 – Exclusion of Blacklip Rock oysters farmed in the Northern Territory from the ML for cadmium in molluscs) Variation (F2026L01125)",
+          "url": "https://www.legislation.gov.au/F2026L01125/asmade/2026-08-28/text/original/pdf",
+          "kind": "primary-law"
+        },
+        {
+          "title": "Federal Register of Legislation record F2026L01125",
+          "url": "https://www.legislation.gov.au/F2026L01125/latest/text",
+          "kind": "official-regulation-register"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [
+          "regulations/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters",
+          "regulations/au-nz-food-standards-code-schedule-19-contaminants"
+        ],
+        "sources": [],
+        "regulatory_limit_ids": [
+          "aunz_sch19_cd_molluscs_2000",
+          "aunz_sch19_cd_blacklip_rock_oyster_nt_3000"
+        ]
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-09-14",
+        "confidence": "high",
+        "notes": "Authorised Federal Register PDF deposited locally. Local primary PDF: /Volumes/HMI-Library/Regulatory documents/AustraliaNZ_F2026L01125_A1329_Cd-Blacklip-Rock-Oysters_2026.pdf SHA-256 59333106aeeee27490405c3f4bb978b83464b0ba11a004e787b653e3350567b6. Item [1] excludes NT-farmed Saccostrea spathulata from the general molluscs Cd row from gazettal day (2026-09-01 / FSC 192). Item [2] inserts a commodity-specific Cd ML of 3 (Schedule 19 units) commencing about 2028-09-02 (day after 24 months from gazettal). Register-update against existing Schedule 19 page only; shellfish corpus pages remain PARKED. Numerical ML not duplicated as an HMI regulatory_limit_id pending limit-row extraction. 2026-09-14: variation page regulations/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters created; Schedule 19 page mollusc Cd rows updated. Register rows added: general molluscs Cd 2000 ug/kg (amended exclusion, effective 2026-09-01) and NT-farmed Blacklip Rock oyster Cd 3000 ug/kg (Schedule 19 3 mg/kg, commences 2028-09-02, not yet in force)."
+      },
+      "disposition": "covered-existing",
+      "article_slugs": [],
+      "summary": "F2026L01125 (Application A1329) amends Australia New Zealand Food Standards Code Schedule 19 cadmium rules for Northern Territory-farmed Blacklip Rock oysters: exclusion from the general molluscs cadmium row from gazettal on 1 September 2026, with a commodity-specific cadmium maximum level of 3 (Schedule 19 units) commencing about 2 September 2028.",
+      "obligations": [
+        "maximum-level",
+        "register-update"
+      ],
+      "gaps": [
+        "Commodity-specific Cd ML row for NT-farmed Blacklip Rock oysters extracted 2026-09-14 (aunz_sch19_cd_blacklip_rock_oyster_nt_3000, 3000 ug/kg from Schedule 19 3 mg/kg, commences 2028-09-02). Shellfish corpus / product pages remain PARKED; this event is regulatory ledger only."
+      ],
+      "public_eligible": true
     }
   ],
-  "regulatory_limit_count": 15,
+  "regulatory_limit_count": 30,
   "regulatory_limits": [
     {
       "regulatory_limit_id": "eu2024_ni_tree_nuts_3500",
@@ -1810,6 +1917,216 @@
       "regulation_route": "regulations/vietnam-qcvn-20-1-2024-health-supplements",
       "official_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
       "notes": "QCVN 20-1:2024/BYT Table 1; source value 0.5 mg/kg or mg/L."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_cr_milk_powder_2000",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cr",
+      "value_ug_kg": 2000,
+      "basis": "product as placed on market",
+      "basis_class": null,
+      "product_scope": "milk powder and modified milk powder (GB 2762-2022 Table 7, section 4.7); total Cr, not Cr-VI",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_cr_milk_powder_2000). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 7 (chromium), milk powder and modified milk powder, 2.0 mg/kg; total Cr not Cr-VI (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_cr_milk_powder_2000 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_cr_liquid_milk_300",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cr",
+      "value_ug_kg": 300,
+      "basis": "product as placed on market",
+      "basis_class": null,
+      "product_scope": "raw, pasteurized, sterilized, modified and fermented milk (GB 2762-2022 Table 7, section 4.7); total Cr, not Cr-VI",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_cr_liquid_milk_300). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 7 (chromium), raw/pasteurized/sterilized/modified/fermented milk, 0.3 mg/kg; total Cr not Cr-VI (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_cr_liquid_milk_300 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_tas_milk_powder_500",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "tAs",
+      "value_ug_kg": 500,
+      "basis": "product as placed on market",
+      "basis_class": null,
+      "product_scope": "milk powder and modified milk powder (GB 2762-2022 Table 4, sections 4.4.1-4.4.2); total arsenic",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_tas_milk_powder_500). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 4 (arsenic), milk powder and modified milk powder, 0.5 mg/kg total arsenic (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_tas_milk_powder_500 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "cn_pb_fsmp-1-10yr_150_2025",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 150,
+      "basis": "product as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "Formulas for special medical purposes (excl. infant FSMP), products for 1-10 year olds",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (cn_pb_fsmp-1-10yr_150). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 1 (lead), FSMP products for people aged 1-10 years, 0.15 mg/kg calculated as solid product (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row cn_pb_fsmp-1-10yr_150 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_crtotal_grains_1000",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cr",
+      "value_ug_kg": 1000,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "grains and grain products including cereals and milled grain products",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_crtotal_grains_1000). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 7 (chromium), cereals/grains, 1.0 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_crtotal_grains_1000 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_crtotal_beans_legumes_1000",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cr",
+      "value_ug_kg": 1000,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "beans and bean products (legumes, pulses)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_crtotal_beans_legumes_1000). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 7 (chromium), beans/legumes, 1.0 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_crtotal_beans_legumes_1000 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_pb_nuts_and_seeds_200",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 200,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "nuts and seeds (excluding raw and roasted coffee beans)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_pb_nuts_and_seeds_200). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 1 (lead), nuts and seeds excluding raw/roasted coffee beans, 0.2 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_pb_nuts_and_seeds_200 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_pb_condiments_excl_spices_1000",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 1000,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "condiments excluding spices (compound condiment, solid condiment, sauces, dressings)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_pb_condiments_excl_spices_1000). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 1 (lead), condiments excluding spices, 1.0 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_pb_condiments_excl_spices_1000 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_pb_spices_1500",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 1500,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "spices excluding peppercorn, cassia bark (cinnamon), mixed spices",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_pb_spices_1500). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 1 (lead), spices excluding Sichuan pepper/cassia/mixed spices, 1.5 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_pb_spices_1500 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_ias_compound_condiment_100",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "iAs",
+      "value_ug_kg": 100,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "compound condiment (mixed condiment, solid bouillon, fu he tiao wei liao)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_ias_compound_condiment_100). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 4 (arsenic), compound condiment, 0.1 mg/kg inorganic arsenic (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_ias_compound_condiment_100 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_cd_beans_legumes_200",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 200,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "beans and bean products (legumes, pulses)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_cd_beans_legumes_200). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 2 (cadmium), beans/legumes, 0.2 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_cd_beans_legumes_200 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_cd_peanuts_500",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 500,
+      "basis": "food as placed on market",
+      "basis_class": "as_sold",
+      "product_scope": "peanuts",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_cd_peanuts_500). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 2 (cadmium), peanuts, 0.5 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_cd_peanuts_500 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "china_gb2762_2025_pb_soy_milk_50",
+      "jurisdiction": "CN",
+      "authority": "National Health Commission (NHC) and SAMR",
+      "legal_status": "maximum level",
+      "analyte": "Pb",
+      "value_ug_kg": 50,
+      "basis": "food as placed on market",
+      "basis_class": "as_consumed",
+      "product_scope": "soy milk (soybean beverage)",
+      "regulation_route": "regulations/china-gb-2762-2025-contaminants",
+      "official_url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+      "notes": "GB 2762-2025 maximum level; value UNCHANGED from GB 2762-2022 (china_gb2762_pb_soy_milk_50). PRIMARY-VERIFIED 2026-09-14 against the preserved Chinese primary text Table 1 (lead), soy milk / soybean beverage, 0.05 mg/kg (raw/regulatory/cn/china-gb-2762-2025-effective-2026-09-02.pdf, SHA-256 85ed0aa521c66e622fa6af20351a348f8862778ae63d3de56f7cbe26a9f90f80). Supersedes register row china_gb2762_pb_soy_milk_50 (GB 2762-2022) as of the standard's 2026-09-02 effective date."
+    },
+    {
+      "regulatory_limit_id": "aunz_sch19_cd_molluscs_2000",
+      "jurisdiction": "AU-NZ",
+      "authority": "FSANZ",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 2000,
+      "basis": "portion ordinarily consumed",
+      "basis_class": "as_consumed",
+      "product_scope": "molluscs, excluding Blacklip Rock oysters (Saccostrea spathulata) farmed in the Northern Territory; dredge/bluff oysters; and queen scallops",
+      "regulation_route": "regulations/au-nz-food-standards-code-schedule-19-contaminants",
+      "official_url": "https://www.legislation.gov.au/F2026L01125/latest",
+      "notes": "Schedule 19 general molluscs cadmium maximum level (2 mg/kg), unchanged in value. Exclusion list amended by F2026L01125 (Application A1329) Item [1] to add Northern Territory-farmed Blacklip Rock oysters, effective 2026-09-01 (gazettal, Gazette FSC 192). PRIMARY-VERIFIED 2026-09-14 (raw/regulatory/au-nz/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters-2026.pdf, SHA-256 59333106aeeee27490405c3f4bb978b83464b0ba11a004e787b653e3350567b6)."
+    },
+    {
+      "regulatory_limit_id": "aunz_sch19_cd_blacklip_rock_oyster_nt_3000",
+      "jurisdiction": "AU-NZ",
+      "authority": "FSANZ",
+      "legal_status": "maximum level",
+      "analyte": "Cd",
+      "value_ug_kg": 3000,
+      "basis": "portion ordinarily consumed",
+      "basis_class": "as_consumed",
+      "product_scope": "Blacklip Rock oysters (Saccostrea spathulata) farmed in the Northern Territory",
+      "regulation_route": "regulations/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters",
+      "official_url": "https://www.legislation.gov.au/F2026L01125/latest",
+      "notes": "Commodity-specific cadmium maximum level (3 mg/kg) inserted by F2026L01125 (Application A1329) Item [2]. Commences 2028-09-02 (day after 24 months from gazettal); NOT YET IN FORCE as of 2026-09-14. PRIMARY-VERIFIED 2026-09-14 (raw/regulatory/au-nz/au-nz-f2026l01125-a1329-cd-blacklip-rock-oysters-2026.pdf, SHA-256 59333106aeeee27490405c3f4bb978b83464b0ba11a004e787b653e3350567b6)."
     }
   ]
 }

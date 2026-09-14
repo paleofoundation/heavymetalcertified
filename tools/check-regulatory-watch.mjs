@@ -10,11 +10,11 @@ const impact = read("data/regulations/cert-regulatory-watch-impact.json")
 const feed = read("content/static/data/regulatory-watch.json")
 const hub = fs.readFileSync(path.join(repo, "content/articles/regulatory-watch.md"), "utf8")
 const specDir = path.join(repo, "data/articles/regulatory-watch")
-const expectedSlugs = ["worldwide-heavy-metal-regulatory-watch-2026","us-baby-food-heavy-metal-laws-states-fda","eu-food-limits-arsenic-seafood-nickel-deadlines","hexavalent-chromium-four-regimes","market-access-rules-gulf-asia","testing-disclosure-packaging-rules"]
+const expectedSlugs = ["worldwide-heavy-metal-regulatory-watch-2026","us-baby-food-heavy-metal-laws-states-fda","eu-food-limits-arsenic-seafood-nickel-deadlines","hexavalent-chromium-four-regimes","market-access-rules-gulf-asia","testing-disclosure-packaging-rules","china-gb-2762-2025-food-contaminant-limits"]
 const publicEvents = snapshot.events.filter((event) => event.public_eligible && event.verification.state === "verified-primary")
 const excluded = snapshot.events.filter((event) => !event.public_eligible || event.verification.state !== "verified-primary")
 
-if (snapshot.event_count !== 21 || snapshot.events.length !== 21) errors.push(`private snapshot must reconcile 21 events, found ${snapshot.events.length}`)
+if (snapshot.event_count !== 22 || snapshot.events.length !== 22) errors.push(`private snapshot must reconcile 22 events, found ${snapshot.events.length}`)
 if (impact.impacts.length !== snapshot.events.length) errors.push("impact count does not match private snapshot")
 if (feed.events.length !== publicEvents.length) errors.push(`public feed must contain ${publicEvents.length} verified events, found ${feed.events.length}`)
 if (Object.hasOwn(feed, "excluded_unverified_count")) errors.push("public feed exposes private unverified-lead accounting")

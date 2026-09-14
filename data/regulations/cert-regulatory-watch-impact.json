@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated": "2026-08-24",
+  "generated": "2026-09-14",
   "quarter": "2026-Q2",
   "quarter_start": "2026-04-01",
   "quarter_end": "2026-06-30",
   "source_snapshot": "data/regulations/cert-regulatory-watch-snapshot.json",
   "crosswalk": "data/regulations/regulatory-watch-crosswalk.json",
-  "impact_count": 21,
+  "impact_count": 22,
   "comparison_count": 14,
   "impacts": [
     {
@@ -46,7 +46,7 @@
           "hmtc_variant": "both",
           "hmtc_value_ug_kg": 100,
           "hmtc_cell_type": "gov",
-          "hmtc_basis": "edible portion, as consumed (wet weight)",
+          "hmtc_basis": "as_consumed",
           "basis_relation": "same-mass-fraction",
           "relation": "equal",
           "scope_note": "Representative comparison for non-listed marine finfish on wet-weight/as-consumed edible portion.",
@@ -67,7 +67,7 @@
           "hmtc_variant": "both",
           "hmtc_value_ug_kg": 50,
           "hmtc_cell_type": "gov",
-          "hmtc_basis": "edible portion, as consumed (wet weight)",
+          "hmtc_basis": "as_consumed",
           "basis_relation": "same-mass-fraction",
           "relation": "equal",
           "scope_note": "Cephalopod edible portion without viscera; wet-weight/as-consumed comparison.",
@@ -214,7 +214,7 @@
     },
     {
       "event_id": "rw-2026-03-china-gb2762-2025",
-      "impact_class": "future-binding-limit-candidate",
+      "impact_class": "current-binding-limit-change",
       "affected_analytes": [
         "Pb",
         "Cd",
@@ -228,7 +228,7 @@
       ],
       "affected_product_categories": [],
       "deadline": "2026-09-02",
-      "deadline_state": "upcoming",
+      "deadline_state": "passed",
       "q2_relevance": "post-quarter-deadline",
       "q2_date_fields": [],
       "related_standard_urls": [],
@@ -240,12 +240,12 @@
         "governance_review": 0,
         "not_comparable": 0
       },
-      "rationale": "Prepare for the adopted effective date. 0 mapped HMTc comparisons are available; no threshold changes automatically.",
+      "rationale": "0 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
       "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
       "action": {
-        "priority": "prepare",
-        "label": "Complete readiness before the effective date",
-        "owner": "Regulatory and laboratory operations"
+        "priority": "confirm-compliance",
+        "label": "Confirm the passed compliance date is implemented",
+        "owner": "Quality and regulatory operations"
       },
       "governance_queue": true
     },
@@ -992,6 +992,35 @@
         "owner": "Evidence verification"
       },
       "governance_queue": false
+    },
+    {
+      "event_id": "rw-2026-22-au-nz-a1329-cd-blacklip",
+      "impact_class": "current-binding-limit-change",
+      "affected_analytes": [
+        "Cd"
+      ],
+      "affected_product_categories": [],
+      "deadline": "2028-09-02",
+      "deadline_state": "upcoming",
+      "q2_relevance": "post-quarter-deadline",
+      "q2_date_fields": [],
+      "related_standard_urls": [],
+      "comparisons": [],
+      "comparison_summary": {
+        "mapped": 0,
+        "hmtc_stricter": 0,
+        "equal": 0,
+        "governance_review": 0,
+        "not_comparable": 0
+      },
+      "rationale": "0 mapped comparisons show how the in-force legal ceiling relates to a published HMTc cell.",
+      "what_does_not_change": "No published HMTc threshold changes automatically. A legal ceiling tighter than a published cell opens governance review; all revisions still require the existing compiler and approval process.",
+      "action": {
+        "priority": "prepare",
+        "label": "Complete readiness before the listed date",
+        "owner": "Regulatory and quality operations"
+      },
+      "governance_queue": true
     }
   ]
 }
