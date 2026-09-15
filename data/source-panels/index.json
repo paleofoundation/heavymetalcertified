@@ -1,4 +1,209 @@
 {
+  "briefings/after-palmquist": {
+    "page": "briefings/after-palmquist",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), unanimous opinion by Justice Sotomayor, 24 February 2026.",
+        "summary": "The Court affirmed that erroneous dismissal of a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The manufacturer’s favorable federal judgment therefore could not stand.",
+        "establishes": "This procedural holding does not decide injury causation, product defects or certification. Properly curing a jurisdictional defect remains different from wrongly dismissing a party; the decision does not prohibit all retailer dismissals or require a jury trial after every remand.",
+        "relevance": "It supplies the legal event behind this briefing’s emphasis on records that can be examined in different courts. Predictions about widespread state-court trials, greater settlement pressure and certification’s economic value are the author’s analysis, not court findings.",
+        "links": [
+          {
+            "label": "Supreme Court opinion · 24 February 2026",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Palmquist v. Hain Celestial Group, Inc.",
+        "citation": "U.S. Court of Appeals for the Fifth Circuit. Palmquist v. Hain Celestial Group, Inc., No. 23-40197, opinion by Judge Carl E. Stewart, 28 May 2024.",
+        "summary": "The Fifth Circuit found that the pleaded claims against Whole Foods supported remand, vacated the federal judgment and directed return to state court. Its factual background also describes Hain’s testing history.",
+        "establishes": "The federal win was judgment as a matter of law under Rule 50 after the plaintiffs rested, not a defense jury verdict. The appellate court resolved jurisdiction and expressly did not decide whether the merits judgment was correct.",
+        "relevance": "It explains the procedural cost of litigating in a court without jurisdiction. Its account of Hain beginning finished-product testing in 2019 provides context for the briefing’s recordkeeping argument, but does not establish that a testing narrative replaces proof of causation.",
+        "links": [
+          {
+            "label": "Fifth Circuit opinion · 28 May 2024",
+            "href": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+        "summary": "Congressional staff reviewed manufacturers’ internal documents, identified testing concerns and recommended mandatory finished-product testing. Its Hain discussion describes an August 2019 presentation comparing finished rice foods with estimates based on ingredients.",
+        "establishes": "The report gives staff findings and recommendations, not a court’s liability determination. It does not independently establish the first-ever date of Hain’s finished-product testing or prove that any detectable quantity caused a particular child’s injury.",
+        "relevance": "It explains why the briefing emphasizes routine finished-product evidence. The specific 2019 start date is recited separately in the Fifth Circuit opinion at reference 2; the report itself does not establish litigation outcomes or HMTc effectiveness.",
+        "links": [
+          {
+            "label": "House staff report · 4 February 2021",
+            "href": "https://oversightdemocrats.house.gov/sites/evo-subsites/democrats-oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
+        "citation": "Pendergrass, Karen. The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction. Journal of Food Metallomics, preprint, 8 April 2026. doi: 10.5281/zenodo.19470572.",
+        "summary": "This preprint argues that public testing disclosures can generate litigation and discourage brands from joining improvement programs. Section V uses the Amazon rice lawsuit, baby-food litigation and a Proposition 65 settlement as examples.",
+        "establishes": "It is the program architect’s argument, explicitly not yet peer reviewed, rather than an original study of lawsuits or contamination outcomes. Its account of plaintiffs’ theories does not establish scientific causation or a universal rule that any detectable metal causes injury.",
+        "relevance": "It supplies the rationale for HMTc’s confidential remediation proposal. That rationale requires separation from legal privilege and demonstrated benefit: the paper does not show that confidentiality prevents discovery or that certification reduces claims.",
+        "links": [
+          {
+            "label": "Public exposé testing · April 2026 preprint",
+            "href": "https://doi.org/10.5281/zenodo.19470572"
+          },
+          {
+            "label": "Full deposited preprint (PDF)",
+            "href": "https://zenodo.org/api/records/19470572/files/Counterproductive_Consequences_Public_Expose_Testing.pdf/content"
+          }
+        ],
+        "kind": "Preprint"
+      },
+      "6": {
+        "referenceTitle": "California Assembly Bill 899",
+        "citation": "California Assembly Bill 899, Chapter 668, Statutes of 2023, adding California Health and Safety Code §§110962–110963.",
+        "summary": "AB 899 requires testing of specified baby foods for arsenic, cadmium, lead and mercury, followed by public disclosure of results. The enacted law phases testing in from January 2024 and disclosure from January 2025.",
+        "establishes": "These statutory duties concern defined foods for children under two and exclude infant formula. Testing, disclosure and applicable QR labeling are legal obligations within that scope; participation in HMTc is not required.",
+        "relevance": "It supports the briefing’s account of a more demanding documentation environment. HMTc may help organize testing records, but its own surveillance schedule and confidentiality arrangements cannot replace required public disclosure or statutory testing.",
+        "links": [
+          {
+            "label": "California AB 899 · enacted text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Action Levels for Lead in Food Intended for Babies and Young Children: Guidance for Industry",
+        "citation": "U.S. Food and Drug Administration, Human Foods Program. Action Levels for Lead in Processed Food Intended for Babies and Young Children: Guidance for Industry. January 2025.",
+        "summary": "FDA recommends lead action levels of 10 or 20 ppb for specified categories of packaged processed foods intended for children under two. The guidance explains exposure, achievability and enforcement considerations.",
+        "establishes": "These are nonbinding action levels that inform case-by-case adulteration and enforcement decisions under existing law, not a safe-exposure guarantee or universal limit for all children’s foods. Formula, beverages and snacks are excluded from this guidance.",
+        "relevance": "It supplies the published regulatory benchmark behind the briefing’s call for interpretable results. HMTc’s selected limits and decision rules remain program choices and do not create a liability safe harbor.",
+        "links": [
+          {
+            "label": "FDA final lead guidance · January 2025",
+            "href": "https://www.fda.gov/media/164684/download?attachment="
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "People v. Promix Nutrition",
+        "citation": "Matching monetary record: Keep America Safe and Beautiful and Promix Nutrition, Inc., Settlement and Release Agreement, fully executed 24 November 2024; California Attorney General Proposition 65 notice no. 2024-02424, recorded as KASB v. Promix Nutrition, Inc., out-of-court settlement. The bibliography’s People v. Promix Nutrition consent-judgment identification was not verified.",
+        "summary": "The official record matching the page’s $28,000 example is a private KASB v. Promix settlement over alleged lead-warning violations involving Lemon Pre-Workout. It is not identified as the People v. Promix consent judgment named in the bibliography.",
+        "establishes": "The agreement allocates $25,000 to claimant-side legal, expert and investigation costs and $3,000 to a penalty, with no admission of violation. It illustrates one resolved notice, not the defendant’s total costs or an unrestricted right for anyone to sue.",
+        "relevance": "It supplies a concrete fee-allocation example for the discussion of private enforcement. It does not establish typical baby-food settlements, legal liability, or protection from future litigation through HMTc enrollment.",
+        "links": [
+          {
+            "label": "Attorney General record · matching settlement",
+            "href": "https://oag.ca.gov/prop65/60-day-notice-2024-02424"
+          },
+          {
+            "label": "KASB–Promix settlement agreement · November 2024",
+            "href": "https://oag.ca.gov/system/files/prop65/settlements/2024-02424S4488.pdf"
+          }
+        ],
+        "kind": "Settlement"
+      },
+      "9": {
+        "referenceTitle": "Amazon.com Sued Over Alleged Sale of Contaminated Rice",
+        "citation": "Stempel, Jonathan. Amazon.com is sued over alleged sale of contaminated rice. Reuters, 23 May 2025, syndicated by Investing.com. Primary filing: Wright and Blum v. Amazon.com, Inc., No. 2:25-cv-00977 (W.D. Wash.), class action complaint, ECF No. 1, filed 23 May 2025.",
+        "summary": "Reuters reported a proposed consumer class action alleging that Amazon omitted information about heavy metals in rice products. The matching complaint invokes Washington consumer-protection and fraudulent-concealment theories and cites published third-party testing.",
+        "establishes": "The report and complaint establish the filing and allegations, not contamination findings, class certification or Amazon’s liability. The complaint requests relief; it does not impose a testing obligation or prove that a particular consumer’s purchase caused injury.",
+        "relevance": "This is a concrete example of public testing being used in a marketplace lawsuit, extending the briefing’s discussion beyond baby-food manufacturers. It does not show that HMTc would prevent the claim or establish a universal marketplace certification mandate.",
+        "links": [
+          {
+            "label": "Reuters report · syndicated May 2025 article",
+            "href": "https://www.investing.com/news/stock-market-news/amazoncom-is-sued-over-alleged-sale-of-contaminated-rice-4062390"
+          },
+          {
+            "label": "Original filed complaint · public copy",
+            "href": "https://www.classaction.org/media/wright-et-al-v-amazoncom-inc.pdf"
+          }
+        ],
+        "kind": "News report"
+      },
+      "10": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+        "summary": "The cited manual describes staged certification, scheduled testing, data requirements, measurement decision rules, confidential remediation and a process for tightening limits. Its introductory business case repeats the operator’s illustrative loss models.",
+        "establishes": "These are the operator’s specifications and arguments, not evidence of implementation, legal admissibility or reduced litigation. The cited v0 is superseded; it expressly acknowledges subpoena and privilege limits and permits direct comparison with the limit when measurement uncertainty is unreported.",
+        "relevance": "It is the primary source for the program proposed as the briefing’s response to Palmquist. Current rules and agreements must be checked separately; a program-valid record, confidentiality clause or passing result does not by itself determine courtroom admissibility or liability.",
+        "links": [
+          {
+            "label": "Cited manual · May 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "11": {
+        "referenceTitle": "Litigation Cost Survey of Major Companies",
+        "citation": "Lawyers for Civil Justice, Civil Justice Reform Group and U.S. Chamber Institute for Legal Reform. Litigation Cost Survey of Major Companies, May 2010. Survey administered by the Searle Center; submitted to the 2010 Conference on Civil Litigation.",
+        "summary": "This industry-sponsored survey reports major companies’ historical litigation costs, including 2008 company means of approximately $2.02 million in outside fees and $622,000 in discovery costs for major cases.",
+        "establishes": "The survey was published in May 2010, not authored by the Federal Judicial Center in 2008. Its selected large-company sample and case threshold limit generalization; mean discovery cost is not evidence of how frequently costs exceed $600,000.",
+        "relevance": "It supplies a historical expense benchmark for the briefing’s business case. It does not measure costs after Palmquist, state-versus-federal differences, or savings from HMTc testing and certification.",
+        "links": [
+          {
+            "label": "Original industry survey · May 2010",
+            "href": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010"
+          }
+        ],
+        "kind": "Industry survey"
+      },
+      "12": {
+        "referenceTitle": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "citation": "International Organization for Standardization and International Electrotechnical Commission. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories. Third edition, November 2017; confirmed in 2023.",
+        "summary": "ISO/IEC 17025 provides a general benchmark for laboratory competence, impartiality and consistent operation. Its official public overview describes testing and calibration laboratories and the role of accreditation.",
+        "establishes": "Only the official overview was reviewed, not the paid normative standard or a particular laboratory’s accreditation. Accreditation does not itself certify a food, prescribe HMTc’s sampling cadence, or guarantee acceptance of evidence in court.",
+        "relevance": "It supports the laboratory-competence requirement in the briefing’s independent-testing proposal. The sampling independence, custody consequences and continuing surveillance described here come from HMTc’s own program rules.",
+        "links": [
+          {
+            "label": "ISO/IEC 17025:2017 · official overview",
+            "href": "https://www.iso.org/standard/66912.html"
+          }
+        ]
+      },
+      "13": {
+        "referenceTitle": "Use of Uncertainty Information in Compliance Assessment",
+        "citation": "Williams, A., and Magnusson, B., editors. Eurachem/CITAC Guide: Use of uncertainty information in compliance assessment. Second edition, 2021. ISBN 978-0-948926-38-9. International Laboratory Accreditation Cooperation. Guidelines on Decision Rules and Statements of Conformity, ILAC-G8:09/2019.",
+        "summary": "These two guides explain how a measured result, its uncertainty and a specification limit can be combined in a documented conformity decision. They describe guard bands, which place acceptance boundaries away from the limit, and conditional or inconclusive outcomes.",
+        "establishes": "They provide analytical guidance, not rules of evidence or a universal HMTc formula. ILAC illustrates a nonbinary rule using expanded uncertainty, while both guides allow different rules suited to the application and acceptable decision risk.",
+        "relevance": "They support the measurement logic behind HMTc’s pass/fail/borderline scheme. HMTc’s exact rule and confirmatory process are program choices; following the guides does not itself establish legal admissibility, safety or a successful defense.",
+        "links": [
+          {
+            "label": "Eurachem/CITAC guide · second edition 2021",
+            "href": "https://www.eurachem.org/images/stories/Guides/pdf/MUC2021_P1_EN.pdf"
+          },
+          {
+            "label": "ILAC-G8:09/2019 · decision-rule guidance",
+            "href": "https://ilac.org/?ddownload=122722"
+          }
+        ],
+        "kind": "Guidance"
+      },
+      "14": {
+        "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026, pp. 1–6. doi: 10.5281/zenodo.18903738.",
+        "summary": "The preprint models one-year losses following a public heavy-metals event and compares expected losses with certification costs. Its mid-size example assumes a $15 million event loss, 3% annual event probability and 25% reduction through certification.",
+        "establishes": "Multiplying those assumptions gives $112,500 annual break-even. The paper does not measure HMTc’s effect on event probability, loss severity or insurance premiums; the assumed reduction and scenario totals are not guarantees.",
+        "relevance": "It supplies the briefing’s break-even calculation. Claims that carriers are repricing in real time or that certified suppliers consistently pay less require insurer-specific evidence beyond this model.",
+        "links": [
+          {
+            "label": "Business-cost preprint · March 2026",
+            "href": "https://doi.org/10.5281/zenodo.18903738"
+          },
+          {
+            "label": "Full deposited preprint (PDF)",
+            "href": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "briefings/brief-2-open-category": {
     "page": "briefings/brief-2-open-category",
     "reviewed": "2026-09-15",
@@ -669,6 +874,308 @@
           {
             "label": "House staff report · 2021",
             "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/brief-8-surveillance-protocol": {
+    "page": "briefings/brief-8-surveillance-protocol",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "In re: Baby Food Products Liability Litigation",
+        "citation": "U.S. Judicial Panel on Multidistrict Litigation. In re: Baby Food Products Liability Litigation, MDL No. 3101, Transfer Order, 11 April 2024. Transferred to the Northern District of California, No. 3:24-md-03101-JSC.",
+        "summary": "The Judicial Panel centralized related baby-food personal-injury actions in the Northern District of California for coordinated or consolidated pretrial proceedings before Judge Jacqueline Scott Corley.",
+        "establishes": "The transfer order establishes the litigation’s organization and common alleged factual issues. Centralization does not establish causation, product defect or liability, and this order contains no ruling excluding experts.",
+        "relevance": "It identifies the federal proceeding invoked in the briefing’s opening. HMTc’s proposed surveillance record is separate from the procedural decision to coordinate these cases, and its value as evidence still depends on the governing legal requirements.",
+        "links": [
+          {
+            "label": "MDL 3101 · official transfer order",
+            "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "In re: Baby Food Products Liability Litigation",
+        "citation": "U.S. District Court, Northern District of California. In re: Baby Food Products Liability Litigation, No. 3:24-md-03101-JSC, Document 710, Order re Defendants’ Motion to Exclude Plaintiffs’ Expert Witnesses, 27 February 2026 (Jacqueline Scott Corley, J.). This verified order differs from the December 2025 date stated in the bibliography.",
+        "summary": "After hearings in December 2025, the court excluded specified menu opinions, exposure calculations and epidemiology/toxicology causation opinions under Rule 702. It permitted Dr. Kevin Shapiro’s more limited opinions, which did not offer a general-causation conclusion.",
+        "establishes": "The order evaluates the reliability and fit of the offered opinions in the ASD/ADHD litigation. It neither holds all heavy-metal exposure harmless nor allows testing histories to replace required causation evidence. It resolves the identified expert motions, not a final judgment on every claim.",
+        "relevance": "It illustrates why scientifically supported exposure assumptions and an intelligible testing record can matter. The briefing’s claim that the case therefore shifts to a jury question answerable without a toxicologist is an HMTc litigation interpretation, not this order’s holding.",
+        "links": [
+          {
+            "label": "Verified expert order · 27 February 2026",
+            "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-md-03101/pdf/USCOURTS-cand-3_24-md-03101-16.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___, decided 24 February 2026 (Sotomayor, J., for a unanimous Court).",
+        "summary": "The Supreme Court considered whether a federal judgment could survive when a nondiverse retailer had been improperly dismissed from a removed baby-food case. It held that the dismissal did not cure the original jurisdictional defect.",
+        "establishes": "The Court affirmed the appellate judgment requiring the federal judgment to be vacated and the case returned to state court. It decided jurisdiction, not injury causation or liability, and did not mandate certification or a particular testing protocol.",
+        "relevance": "The case supplies the forum context for the briefing’s advice about preserving testing records. HMTc’s suggested defensive advantage is separate from the jurisdictional holding; the opinion does not show that documented compliance wins a case or removes the need for expert evidence.",
+        "links": [
+          {
+            "label": "Supreme Court · official opinion",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Palmer v. Hoffman",
+        "citation": "Supreme Court of the United States. Palmer v. Hoffman, 318 U.S. 109, 111–115 (1943), decided 1 February 1943 (Douglas, J.).",
+        "summary": "The Court upheld exclusion of a railroad engineer’s post-accident statement under the predecessor federal business-records statute. Regularly collecting such statements did not make this report a record of ordinary railroad operations.",
+        "establishes": "The Court focused on the report’s operational purpose and reliability, rather than routine creation alone. The decision predates the Federal Rules of Evidence and is not a rule that every post-dispute record is inadmissible or every pre-dispute record admissible.",
+        "relevance": "It supports examining why HMTc testing records were created and how they were used in routine quality operations. Timing can be relevant, but the briefing’s claim that before-versus-after litigation alone determines opposite admissibility outcomes is broader than the holding.",
+        "links": [
+          {
+            "label": "Palmer v. Hoffman · official U.S. Reports",
+            "href": "https://www.govinfo.gov/content/pkg/USREPORTS-318/pdf/USREPORTS-318-109.pdf"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Fed. R. Evid. 803(6)",
+        "citation": "Federal Rules of Evidence, Rule 803(6)(A)–(E), Records of a Regularly Conducted Activity; see also Rule 902(11)–(12). Official rules compilation, 1 December 2025.",
+        "summary": "Rule 803(6) provides a hearsay exception for qualifying records made near the event by a knowledgeable person, kept in a regularly conducted activity and routinely made. A qualified witness or prescribed certification must establish the required foundation.",
+        "establishes": "The opponent may show that the information source or preparation circumstances lack trustworthiness. A pre-existing testing schedule does not satisfy every condition by itself. The legal certification contemplated by Rule 902 is a records-foundation procedure, not an HMTc product seal.",
+        "relevance": "HMTc’s continuing records could help document routine preparation and informed recordkeeping. Counsel would still need the actual evidence, an adequate foundation and consideration of other objections; certification does not make a surveillance file automatically admissible or self-authenticating.",
+        "links": [
+          {
+            "label": "Rule 803(6) · official federal rules",
+            "href": "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Cal. Evid. Code § 1271",
+        "citation": "California Evidence Code §1271, Business Records (enacted by Stats. 1965, ch. 299), official codified text accessed 15 September 2026.",
+        "summary": "Section 1271 provides a hearsay exception for a qualifying business record made near the event in the regular course of business. A custodian or other qualified witness must identify the writing and explain its preparation, and its sources and preparation must indicate trustworthiness.",
+        "establishes": "All four statutory conditions matter. Routine surveillance can help establish some conditions, but neither an HMTc seal nor creation before litigation establishes the entire foundation. A California venue alone does not make this state rule govern a federal MDL.",
+        "relevance": "The provision is relevant when HMTc testing records are offered in a proceeding governed by California evidence law. It supports documenting the record’s origin and preparation without promising admission or assuming identical rules across state and federal cases.",
+        "links": [
+          {
+            "label": "California Evidence Code §1271",
+            "href": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=EVID&sectionNum=1271."
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Fed. R. Evid. 901",
+        "citation": "Federal Rules of Evidence, Rule 901(a), (b)(1), (b)(9); see Rule 902(11). Official compilation, 1 December 2025. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories, third edition, November 2017.",
+        "summary": "Rule 901 requires evidence sufficient to support that an item is what its proponent claims. Examples include a knowledgeable witness and evidence explaining an accurate process or system. ISO/IEC 17025 separately provides a laboratory-competence and impartiality benchmark.",
+        "establishes": "Laboratory accreditation and custody documentation may contribute to a foundation, but Rule 901 does not mandate that particular combination or guarantee admission. Authentication also does not establish the truth of every result, resolve hearsay objections or prevent cross-examination.",
+        "relevance": "The sources explain why HMTc should preserve sample identity, handling records and laboratory methods. Whether a particular report is authenticated remains a legal and factual question; the program’s rule invalidating a result after a custody break is not an automatic court exclusion rule.",
+        "links": [
+          {
+            "label": "Rule 901 · official federal rules",
+            "href": "https://www.uscourts.gov/sites/default/files/document/federal-rules-of-evidence.pdf"
+          },
+          {
+            "label": "ISO/IEC 17025 · official overview",
+            "href": "https://www.iso.org/standard/66912.html"
+          }
+        ],
+        "kind": "Evidence rule and standard"
+      },
+      "8": {
+        "referenceTitle": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "citation": "ISO and IEC. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories, third edition. ILAC. ILAC-G8:09/2019, Guidelines on Decision Rules and Statements of Conformity. Williams, Alex, and Bertil Magnusson, eds. Eurachem/CITAC Guide: Use of uncertainty information in compliance assessment, second edition, 2021, ISBN 978-0-948926-38-9.",
+        "summary": "ISO’s laboratory standard and the ILAC and Eurachem/CITAC guides address how measurement uncertainty is considered when reporting conformity with a limit. The guides discuss acceptance limits, guard bands, decision risks and rules allowing conditional or inconclusive outcomes.",
+        "establishes": "The guidance offers different decision rules and risk choices; it does not prescribe one universally neutral result-plus/minus-uncertainty rule. HMTc’s precise pass, fail and confirmatory-testing choices are program rules, and measurement guidance does not establish legal admissibility or immunity from expert criticism.",
+        "relevance": "These sources provide the measurement framework for the briefing’s discussion of borderline laboratory results. They support stating the chosen rule and its risks clearly, while leaving HMTc responsible for justifying its choice and applying the applicable edition consistently.",
+        "links": [
+          {
+            "label": "ISO/IEC 17025 · official overview",
+            "href": "https://www.iso.org/standard/66912.html"
+          },
+          {
+            "label": "ILAC-G8:09/2019 · decision-rule guidance",
+            "href": "https://ilac.org/?ddownload=122722"
+          },
+          {
+            "label": "Eurachem/CITAC · 2021 guide",
+            "href": "https://www.eurachem.org/images/stories/Guides/pdf/MUC2021_P1_EN.pdf"
+          }
+        ],
+        "kind": "Standard and guidance"
+      },
+      "9": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+        "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+        "establishes": "The report describes Hain's reliance on ingredient testing and an August 2019 presentation of finished-product results. It does not establish when finished-product testing first began.",
+        "relevance": "The report supports examining whether a manufacturer’s record consists of ingredient tests, finished-product tests or both. It does not establish that finished-product testing first began in 2019, nor that HMTc surveillance is the only adequate evidentiary response or guarantees a defense result.",
+        "links": [
+          {
+            "label": "House staff report · 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      },
+      "10": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual, 2026 edition, v0, including Part 4, Lot Testing Schedule. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This cited deposit is superseded.",
+        "summary": "The cited manual and its included Lot Testing Schedule specify baseline testing, surveillance linked to risk and status, laboratory requirements, custody controls, result reporting, corrective action and restrictions on claims. Part 2.6 defines pass/fail/borderline decisions and prohibits testing into compliance.",
+        "establishes": "These are requirements of the cited HMTc edition, not evidence that a brand follows them or that its records will be admitted in court. This edition permits direct comparison with the limit when uncertainty is not reported, so its rule is not uniformly uncertainty-based. Surveillance frequency depends on status as well as category risk.",
+        "relevance": "The manual supplies the concrete program procedures behind the briefing’s proposed evidence checklist. Counsel would need the applicable current edition and actual records to evaluate implementation; the old manual does not establish self-authentication, legal defensibility in every case or guaranteed litigation outcomes.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "11": {
+        "referenceTitle": "California Assembly Bill 899 (2023)",
+        "citation": "California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962; Maryland Rudy's Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4; U.S. FDA, Closer to Zero initiative and January 2025 final guidance on lead action levels in processed foods for babies and young children.",
+        "summary": "California and Maryland enacted baby-food testing and disclosure requirements for arsenic, cadmium, lead and mercury. The FDA's Closer to Zero initiative addresses dietary contaminant reduction, including its January 2025 guidance on lead in specified processed baby foods.",
+        "establishes": "California phased in testing in 2024 and disclosure in 2025; Maryland followed in 2025 and 2026. These state duties apply within their defined scope. FDA action levels are nonbinding guidance that can inform enforcement under existing food law; they are not certification requirements.",
+        "relevance": "The state duties explain why covered manufacturers need an organized testing and disclosure process. HMTc surveillance can structure additional program records, but statutory compliance and FDA guidance do not guarantee admissibility, establish every brand’s required testing cadence, or prove that pre-litigation certification is the only effective defense.",
+        "links": [
+          {
+            "label": "California AB 899, enacted text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          },
+          {
+            "label": "Maryland Rudy's Law, codified statute",
+            "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
+          },
+          {
+            "label": "FDA Closer to Zero initiative",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+          },
+          {
+            "label": "FDA lead action-level guidance, January 2025",
+            "href": "https://www.fda.gov/media/164684/download?attachment="
+          }
+        ]
+      }
+    }
+  },
+  "briefings/defense-counsel-briefing": {
+    "page": "briefings/defense-counsel-briefing",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "In re: Baby Food Products Liability Litigation",
+        "citation": "U.S. Judicial Panel on Multidistrict Litigation. In re: Baby Food Products Liability Litigation, MDL No. 3101, Transfer Order, 11 April 2024. Transferred to the Northern District of California, No. 3:24-md-03101-JSC.",
+        "summary": "The Judicial Panel centralized related baby-food personal-injury actions in the Northern District of California for coordinated or consolidated pretrial proceedings before Judge Jacqueline Scott Corley.",
+        "establishes": "The transfer order establishes the litigation’s organization and common alleged factual issues. Centralization does not establish causation, product defect or liability, and this order contains no ruling excluding experts.",
+        "relevance": "The order identifies the federal litigation discussed at the start of this counsel briefing. It establishes coordinated pretrial management, not the briefing’s prediction of more state-court trials or proof that HMTc records decide liability.",
+        "links": [
+          {
+            "label": "MDL 3101 · official transfer order",
+            "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Rule 702 / general-causation ruling, In re: Baby Food Products Liability Litigation",
+        "citation": "U.S. District Court, Northern District of California. In re: Baby Food Products Liability Litigation, No. 3:24-md-03101-JSC, Document 710, Order re Defendants’ Motion to Exclude Plaintiffs’ Expert Witnesses, 27 February 2026 (Jacqueline Scott Corley, J.). This verified order differs from the December 2025 date stated in the bibliography.",
+        "summary": "After hearings in December 2025, the court excluded specified menu opinions, exposure calculations and epidemiology/toxicology causation opinions under Rule 702. It permitted Dr. Kevin Shapiro’s more limited opinions, which did not offer a general-causation conclusion.",
+        "establishes": "The order evaluates the reliability and fit of the offered opinions in the ASD/ADHD litigation. It neither holds all heavy-metal exposure harmless nor allows testing histories to replace required causation evidence. It resolves the identified expert motions, not a final judgment on every claim.",
+        "relevance": "The order makes reliable exposure assumptions and fit to the claimed ASD/ADHD endpoints relevant to the briefing’s evidence discussion. HMTc records do not replace legally required causation proof, and the order does not establish the broader prediction that state juries will decide these cases principally from testing history.",
+        "links": [
+          {
+            "label": "Verified expert order · 27 February 2026",
+            "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-md-03101/pdf/USCOURTS-cand-3_24-md-03101-16.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___, decided 24 February 2026 (Sotomayor, J., for a unanimous Court). Justice Thomas filed a separate concurrence.",
+        "summary": "The Supreme Court considered whether a federal judgment could survive when a nondiverse retailer had been improperly dismissed from a removed baby-food case. It held that the dismissal did not cure the original jurisdictional defect.",
+        "establishes": "The Court affirmed the appellate judgment requiring the federal judgment to be vacated and the case returned to state court. It decided jurisdiction, not injury causation or liability, and did not mandate certification or a particular testing protocol.",
+        "relevance": "It supports counsel’s attention to the consequences of erroneous removal and dismissal of a nondiverse retailer. The briefing’s forecast of a general shift toward state juries, and its proposed HMTc response, are strategic interpretations rather than holdings about all cases, certification or admissibility.",
+        "links": [
+          {
+            "label": "Supreme Court · official opinion",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+        "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+        "establishes": "The report describes Hain's reliance on ingredient testing and an August 2019 presentation of finished-product results. It does not establish when finished-product testing first began.",
+        "relevance": "The report supports distinguishing ingredient testing from finished-product testing when examining a brand’s records. It does not establish that testing first began in 2019, that all later litigation followed from this single report, or that HMTc enrollment defeats a knowledge-or-due-care claim.",
+        "links": [
+          {
+            "label": "House staff report · 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "citation": "ISO and IEC. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories, third edition. ILAC. ILAC-G8:09/2019, Guidelines on Decision Rules and Statements of Conformity. Williams, Alex, and Bertil Magnusson, eds. Eurachem/CITAC Guide: Use of uncertainty information in compliance assessment, second edition, 2021, ISBN 978-0-948926-38-9.",
+        "summary": "ISO’s laboratory standard and the ILAC and Eurachem/CITAC guides address how measurement uncertainty is considered when reporting conformity with a limit. The guides discuss acceptance limits, guard bands, decision risks and rules allowing conditional or inconclusive outcomes.",
+        "establishes": "The guidance offers different decision rules and risk choices; it does not prescribe one universally neutral result-plus/minus-uncertainty rule. HMTc’s precise pass, fail and confirmatory-testing choices are program rules, and measurement guidance does not establish legal admissibility or immunity from expert criticism.",
+        "relevance": "The laboratory standard and measurement guides explain the competence and uncertainty issues in the briefing’s proposed testing record. HMTc must choose and disclose its own decision rule; laboratory accreditation and disciplined retesting do not by themselves establish admissibility, unbiased risk allocation or immunity from cross-examination.",
+        "links": [
+          {
+            "label": "ISO/IEC 17025 · official overview",
+            "href": "https://www.iso.org/standard/66912.html"
+          },
+          {
+            "label": "ILAC-G8:09/2019 · decision-rule guidance",
+            "href": "https://ilac.org/?ddownload=122722"
+          },
+          {
+            "label": "Eurachem/CITAC · 2021 guide",
+            "href": "https://www.eurachem.org/images/stories/Guides/pdf/MUC2021_P1_EN.pdf"
+          }
+        ],
+        "kind": "Standard and guidance"
+      },
+      "6": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual, 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. Includes Parts 1.3, 2.2, 2.4, 2.5, 2.6, 4 and 5.2. The cited deposit is superseded.",
+        "summary": "The manual defines HMTc’s testing, status, surveillance and remediation procedures, its analyte tiers and mark restrictions. It also presents aggregate-exposure and financial models and a program-authored review of possible criticisms. The Confidential Remediation Track states that it does not create privilege over testing data.",
+        "establishes": "These are the cited program edition’s requirements and interpretations, not independent proof of legal protection or commercial benefit. Its incident-cost scenarios differ from probability-weighted expected losses. The v0 edition permits Status B mark use and an uncertainty-absent decision fallback; later rules and the briefing differ, so current decisions require the current edition.",
+        "relevance": "The manual is the primary program source for this briefing’s proposed surveillance and confidential-remediation approach. It documents what the cited edition promises and models, while leaving counsel to evaluate actual records, applicable law and the current edition; the author’s own adversarial review does not independently establish litigation success or scientific validity.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "California Assembly Bill 899",
+        "citation": "California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962.",
+        "summary": "AB 899 requires manufacturers of covered baby foods to test representative samples of final products for arsenic, cadmium, lead and mercury at least monthly beginning in 2024. Public disclosure and applicable labeling duties began in 2025.",
+        "establishes": "The enacted provision has defined product and laboratory requirements and excludes infant formula. It does not require HMTc certification, prescribe the briefing’s exact result-plus/minus-uncertainty rule or establish courtroom admissibility.",
+        "relevance": "It explains part of the mandatory testing burden discussed for counsel’s clients. Its requirements must be checked against the actual product and sale circumstances; HMTc is an additional private framework, and certification cannot substitute for statutory disclosure.",
+        "links": [
+          {
+            "label": "AB 899 · enacted California text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "Maryland \"Rudy's Law\"",
+        "citation": "Maryland Rudy’s Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4; effective 1 October 2024, with later phased testing and disclosure duties.",
+        "summary": "Maryland’s law establishes testing and public-information duties for covered baby foods and addresses sale of products exceeding FDA-established limits. Testing begins in 2025, followed by disclosure and applicable labeling duties in 2026.",
+        "establishes": "The obligations apply within the statute’s defined scope, which excludes infant formula. The sale restriction and its manufacturing-date exception must be read separately from testing duties. This law does not require HMTc certification or create privilege for a private remediation program.",
+        "relevance": "It supplies the Maryland component of the briefing’s regulatory argument. Counsel must distinguish the manufacturer’s statutory duties from HMTc’s additional testing, confidentiality promises and claims about defensive value.",
+        "links": [
+          {
+            "label": "Rudy’s Law · codified Maryland statute",
+            "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
           }
         ]
       }
