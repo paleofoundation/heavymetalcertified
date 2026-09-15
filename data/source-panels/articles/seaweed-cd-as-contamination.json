@@ -1,0 +1,223 @@
+{
+  "page": "articles/seaweed-cd-as-contamination",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "High spatial and temporal variation in biomass composition of the novel aquaculture target Ecklonia radiata",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "cf2e34dfebbad1d603b8840f337c4d818abf7d57874731058c1dfaba52540a76",
+      "citation": "Nepper-Davidsen J, Glasson CRK, Lawton RJ, Magnusson M. Journal of Applied Phycology. 2023;35:1755–1768. Published 28 April 2023. doi:10.1007/s10811-023-02969-2.",
+      "summary": "The researchers collected wild Ecklonia radiata at 12 North Island sites and monthly at one site in 2019–2020. Metals were measured by ICP-MS in pooled samples. Spatial means were total arsenic 49 mg/kg and cadmium 1.2 mg/kg dry weight.",
+      "establishes": "This characterizes harvested kelp, not finished retail products. Inorganic arsenic was estimated using a literature-based 1% assumption, not measured. The study cannot establish an invariant inorganic fraction or isolate natural from anthropogenic contamination.",
+      "relevance": "It supports batch- and species-specific measurements. The page’s 2.45 µg serving calculation is hypothetical arithmetic, not an observed inorganic-arsenic dose.",
+      "links": [
+        {
+          "label": "Full publisher study",
+          "href": "https://link.springer.com/article/10.1007/s10811-023-02969-2"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s10811-023-02969-2",
+            "note": "Read sampling, pooled-sample ICP-MS methods, spatial/temporal results and discussion; visually checked Table 1 in publisher PDF, page 5. There were 138 individual specimens but 24 pooled spatial/temporal samples, with one shared collection. Editorial: mercury reaches 0.04 mg/kg in Table 1, so “below 0.04 at every site” is inaccurate. Temporal arsenic’s nominal p-value carries a violated-normality caveat."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Chemical contaminant levels in edible seaweeds of the Salish Sea and implications for their consumption",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "3111382bb2b9593f6a8bba0d664c2d73325a6dbbfc34c3614556e86a61bac6e7",
+      "citation": "Hahn JL, Van Alstyne KL, Gaydos JK, et al. PLOS ONE. 2022;17(9):e0269269. Published 23 September 2022. doi:10.1371/journal.pone.0269269.",
+      "summary": "Three brown-seaweed species were collected across 43 Salish Sea sites in summer 2015 and analyzed for metals by ICP-MS. Bull kelp averaged 5.69 mg/kg cadmium dry weight. Sites deliberately included locations with known or suspected contamination.",
+      "establishes": "Arsenic was not speciated. Cadmium exceeded selected international recommendations but remained below the authors’ US dose-based screening level and their moisture-adjusted EU comparison. These comparisons do not establish universal legal noncompliance.",
+      "relevance": "The study supports location- and species-specific screening; it cannot establish that sourcing is ineffective or that pollution is irrelevant.",
+      "links": [
+        {
+          "label": "Full publisher study",
+          "href": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269269"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269269",
+            "note": "Read methods, screening assumptions, results, discussion and conclusion; visually checked Table 3, PDF page 9. Editorial: 37 mg/kg arsenic and 13.2 mg/kg lead are F. distichus maxima; overall maxima are 98.9 and 13.4 respectively. No measured 100,000–1,000,000 concentration factor was found. Natural and industrial inputs both feature in discussion. Low observed lead does not prove absence of a biological uptake pathway. Samples were harvested algae, not retail products."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "EFSA scientific opinion on heavy metals and iodine in seaweeds and halophytes as food",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "299cc593d5f0630ebc85739bdf14fe67ce8bbd074d1c55525daa7e7bf54aca1f",
+      "citation": "EFSA, Dujardin B, Ferreira de Sousa R, Gómez Ruiz JA. Dietary exposure to heavy metals and iodine intake via consumption of seaweeds and halophytes in the European population. EFSA Journal. 2023;21(1):7798. doi:10.2903/j.efsa.2023.7798.",
+      "summary": "This exposure report combined 2011–2021 occurrence data, including 2,093 cadmium and 920 inorganic-arsenic results, with consumption records for 468 people. Seaweed consumption could contribute materially to exposure, with substantial differences among products and species.",
+      "establishes": "It is an EFSA scientific report, endorsed by CONTAM, not a new contaminant-limit regulation. Sparse consumption records, food coding, processing and sample representativeness constrain estimates. It identifies unresolved organic-arsenic toxicology as well as inorganic-arsenic concerns.",
+      "relevance": "It supports speciation and product-specific exposure assessment, while neither prescribing HMTc ceilings nor validating a certification program.",
+      "links": [
+        {
+          "label": "Official scientific report",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2023.7798"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2023.7798",
+            "note": "Read cover/summary, occurrence methods and Tables 2–6, processing, exposure Table 23, uncertainties and conclusions. Approved 14 December 2022; published 31 January 2023. Editorial: no supplement BMDL01-exceedance finding was located. The report discusses environmental and processing effects, contrary to their exclusion in the page. Dried-product concentrations reported as whole weight must not automatically receive another drying multiplier. Annex workbooks were not independently reanalyzed."
+          }
+        ]
+      },
+      "kind": "Scientific report"
+    },
+    "4": {
+      "referenceTitle": "Maximum levels for contaminants in food",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "fe90dac21bea2e909a4f796dd48b20a71058abb4ce5111a74fd99f485606bc5b",
+      "citation": "European Commission. Regulation (EU) 2023/915 of 25 April 2023. OJ L 119, 5 May 2023, pp. 103–157; effective 25 May 2023. Original act and consolidated text dated 19 August 2026.",
+      "summary": "The regulation sets category-specific food maxima. Cadmium is limited to 3 mg/kg in supplements containing at least 80% dried seaweed, seaweed-derived products or dried bivalves; other supplements have a 1 mg/kg limit. The reviewed text has no general whole-seaweed cadmium or inorganic-arsenic row.",
+      "establishes": "Articles 2–3 govern market placement, edible portions and processing factors. Supplement limits cannot be transferred automatically to whole seaweed, snacks, or animal feed. A scientific exposure report does not itself create a maximum.",
+      "relevance": "It supplies legal category benchmarks; selecting stricter occurrence-based HMTc limits remains a program decision, not a rule imposed by this regulation.",
+      "links": [
+        {
+          "label": "Original regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        },
+        {
+          "label": "Consolidated text, 19 August 2026",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Reused same-day original-act review of Articles 2–3; freshly checked Annex supplement rows 3.1.28, 3.2.21 and 3.3.2 for seaweed relevance. Original and consolidated versions remain distinguished."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Read official HTML header, Articles 2–3 and relevant Annex Sections 3.1–3.4. Cadmium seaweed-supplement exception remains 3 mg/kg; supplement lead/mercury rows are 3/0.1 mg/kg. Consolidated PDF returned 404; HTML supplied the reviewed text. Consolidation is a documentation aid."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "US FDA Closer to Zero action plan and inorganic-arsenic guidance",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "7adbc583daf649f8e97309dc01997f0dc7ab4c378c4cd74e290e7547d4c80461",
+      "citation": "US FDA. Closer to Zero action plan, launched April 2021; Inorganic Arsenic in Rice Cereals for Infants: Action Level, final guidance August 2020; FDA arsenic/cadmium regulatory-information pages.",
+      "summary": "Closer to Zero prioritizes foods consumed by babies and young children. The rice-cereal guidance recommends an inorganic-arsenic action level of 100 µg/kg. It is nonbinding guidance for infant rice cereal, not a seaweed standard.",
+      "establishes": "These documents do not set a seaweed-specific cadmium or arsenic maximum. Their limited scope cannot prove the absence of every federal control; FDA expressly retains authority to act when contaminated food is unsafe.",
+      "relevance": "The sources distinguish a published numerical action level from broader food-safety enforcement. They do not establish that Proposition 65 is the sole or dominant US control.",
+      "links": [
+        {
+          "label": "Closer to Zero",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        },
+        {
+          "label": "Infant rice-cereal guidance",
+          "href": "https://www.fda.gov/media/97234/download"
+        },
+        {
+          "label": "FDA arsenic information",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/arsenic-food"
+        },
+        {
+          "label": "FDA cadmium information",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/cadmium-food-and-foodwares"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Same-day review reused and refreshed: purpose, research/enforcement approach and action timeline. Editorial: the August 2020 cereal guidance predates the April 2021 plan."
+          },
+          {
+            "url": "https://www.fda.gov/media/97234/download",
+            "note": "Read scope, nonbinding status and action-level sections; same-day primary guidance review reused with fresh seaweed relevance."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/arsenic-food",
+            "note": "Read speciation, research and regulatory sections. FDA lists commercial-seaweed research and general enforcement powers; inorganic arsenic is not the only form under investigation."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/cadmium-food-and-foodwares",
+            "note": "Read testing, exposure-reference and regulatory sections. FDA describes action against unsafe food and lists US-market seaweed research. No seaweed numerical maximum appears here; this is not an exhaustive statutory search."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "California Proposition 65 exposure warnings for cadmium and arsenic",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "43ba74cf629367709fcb1289c796280b41d5190e6f69129662555757ac5bc34e",
+      "citation": "California OEHHA. Proposition 65 safe-harbor information and Title27 regulations compilation, April 2025; §§ 25501, 25709 and 25805.",
+      "summary": "Proposition 65 uses exposure-based warning rules rather than a universal seaweed concentration maximum. The reviewed regulations give an inorganic-arsenic cancer safe harbor of 10 µg/day except inhalation; OEHHA lists an oral cadmium reproductive-toxicity safe harbor of 4.1 µg/day.",
+      "establishes": "Exceeding a safe harbor is not automatically a product violation. Scientifically valid alternative exposure levels and particular settlements can matter. The naturally occurring-food provision has evidentiary and good-practice conditions; natural origin is not an automatic exemption.",
+      "relevance": "This supports distinguishing warning exposure from food maxima. It does not quantify seaweed enforcement or establish Proposition 65 as the main US regulatory pressure.",
+      "links": [
+        {
+          "label": "OEHHA safe-harbor information",
+          "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+        },
+        {
+          "label": "OEHHA regulations compilation, April 2025",
+          "href": "https://oehha.ca.gov/sites/default/files/media/2025-04/OEHHA%20P65%20Regulations%20042025_1.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls",
+            "note": "Read introductory safe-harbor, alternatives and settlement explanation and cadmium row; same-day source evidence reused and refreshed for this page."
+          },
+          {
+            "url": "https://oehha.ca.gov/sites/default/files/media/2025-04/OEHHA%20P65%20Regulations%20042025_1.pdf",
+            "note": "Read § 25501, printed pages 32–33, and § 25709, page 104. This official compilation is expressly informational and may lag the current code; no full 169-page review claimed. Editorial: the page’s natural-accumulation premise requires attention to § 25501, not an assumed enforcement conclusion."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — seaweed as a cadmium and arsenic pathway (synthesis with full anchor-source records)",
+      "pageDigest": "937042d105bbf8e9a7f130cfb8935d701c71a4f30cedfb39e8d085049fbf31ac",
+      "sourceDigest": "99d71c76b0b2f4ea32f48d7843c9042e8ff59d19c8b2fc8d579f3bd3dc4cc77d",
+      "citation": "Pendergrass K. Heavy Metal Index: seaweed cadmium/arsenic pathway synthesis. Last updated 16 May 2026. Page snapshot identifier 10.83376/hmi.seaweed-cd-as-contamination. Preprint; no external reviews listed at access.",
+      "summary": "This narrative synthesis connects the New Zealand field survey, Salish Sea study and EFSA exposure report. It argues for cadmium and inorganic-arsenic testing and acknowledges that its anchors do not provide a representative US commercial-retail survey.",
+      "establishes": "The synthesis adds interpretation, not an independent occurrence dataset. Its displayed review status is provisional. Author affiliation and the footer identify Institute of Contaminant Standards and Paleo Certified, Inc.; institutional independence is not established.",
+      "relevance": "It explains the article’s interpretive framework. Its source links must be assessed individually before using its causal, regulatory or certification conclusions.",
+      "links": [
+        {
+          "label": "HMI synthesis",
+          "href": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/seaweed-cd-as-contamination",
+            "note": "Read overview, anchor descriptions, mechanisms, regulatory discussion, limitations, author/footer and review state. Editorial: the synthesis repeats unsupported BMDL and pollution-exclusion claims and incorrectly suggests another drying conversion for EFSA’s already-dried Laver data. Its claimed missing US retail evidence is a corpus limitation, not proof no such studies exist. Source-record links were not treated as additional reviewed datasets; DOI identifier is reported as displayed, not independently resolved."
+          }
+        ]
+      },
+      "kind": "Preprint synthesis"
+    }
+  }
+}

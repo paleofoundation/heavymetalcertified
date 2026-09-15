@@ -1,0 +1,17 @@
+[
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "number": "2",
+    "referenceTitle": "FSIS Directive 7221.1 — Prior Labeling Approval",
+    "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
+    "sourceDigest": "94ccf5d6ac70c431194d3c2627e3393b0c147f35a5e73af988c7cb3c0a627fdb",
+    "reviewed": "2026-09-15",
+    "reason": "USDA’s official December 10 and 12, 2025 bulletins identify Directive 7221.1 Revision 4, Prior Labeling Approval. The current directive page and candidate official PDF returned 403 after repeated direct and web attempts. An exact Revision 3 (January 18, 2023) PDF is accessible on Spain’s agriculture ministry site, but it is superseded and was not silently substituted. Preserve pending for a readable Revision 4 text, especially current submission and inspection procedures.",
+    "attemptedUrls": [
+      "https://www.fsis.usda.gov/policy/fsis-directives/7221.1",
+      "https://www.fsis.usda.gov/sites/default/files/media_file/documents/7221.1.pdf",
+      "https://content.govdelivery.com/accounts/USFSIS/bulletins/3ff314a",
+      "https://content.govdelivery.com/accounts/USFSIS/bulletins/3ffa1ce"
+    ]
+  }
+]

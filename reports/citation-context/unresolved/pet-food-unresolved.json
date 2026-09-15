@@ -1,0 +1,59 @@
+[
+  {
+    "page": "briefings/heavy-metals-in-pet-food",
+    "number": "7",
+    "referenceTitle": "Commission Regulation (EU) 2023/915 and national human-food maximum levels",
+    "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+    "sourceDigest": "4f662e4263d5cdccaacbe5b3723e6bb369223c9f408a48e58ea8764822bb24f1",
+    "reviewed": "2026-09-15",
+    "reason": "Grouped citation only partly resolved: EU2023/915 is identified and reviewed, but “national human-food maximum levels compiled in the HMTc regulatory register” does not identify jurisdictions, instruments, version or frozen register. Do not replace the entire group with the EU component. Israel values cannot be marked verified from the available local register alone.",
+    "attempts": [
+      {
+        "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+        "note": "Same-day primary review reused from batch4-chocolate: original 25 April 2023 regulation, Articles 2–3 and Annex cadmium rows. Meat excluding offal is 0.05 mg/kg for listed livestock; pulses except proteins are 0.04 mg/kg. These human-food categories do not establish pet-feed limits or a universal comparative factor. Fresh relevance checked against pet page."
+      },
+      {
+        "url": "https://www.gov.il/BlobFolder/policy/fcs-reg-01022007/he/files_databases_fcs_regulations_Reg_01022007.pdf",
+        "note": "Official Israeli PDF linked by local register; access returned HTTP403/internal error. Contents and current status not verified."
+      },
+      {
+        "url": "https://www.health.gov.il/UnitsOffice/HD/PH/FCS/Documents/Regulations/Reg_01022007.pdf",
+        "note": "Legacy official HTTPS endpoint returned an empty response; no source text read."
+      }
+    ]
+  },
+  {
+    "page": "briefings/heavy-metals-in-pet-food",
+    "number": "8",
+    "referenceTitle": "AAFCO Official Publication — model regulations for pet food and specialty pet food",
+    "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+    "sourceDigest": "e869ceaa53dd325d96ddb51617012e1e9bc3e6127ae1f25f6226736f653f344a",
+    "reviewed": "2026-09-15",
+    "reason": "No edition or complete identifiable OP chapter is supplied. The 2026 Official Publication requires access not available here; the freely accessible model PDF contains omissions and labeling excerpts, insufficient to certify the asserted absence of limits throughout AAFCO/NRC materials.",
+    "attempts": [
+      {
+        "url": "https://www.aafco.org/resources/publications/",
+        "note": "Read official catalogue describing current 2026 OP and subscription access; no subscription content accessed."
+      },
+      {
+        "url": "https://www.aafco.org/wp-content/uploads/2023/01/Model_Regulations_for_Pet_Food_and_Specialty_Pet_Food_Under_the_Model_Bill.pdf",
+        "note": "Read 10-page official excerpt: adoption preamble, definitions, PF2/PF4 and labeling material. It contains ellipses and does not reproduce all OP chapters. The preamble requires state adoption under state law; AAFCO model text itself is not federal law. No blanket claim about missing contaminant rules follows."
+      }
+    ]
+  },
+  {
+    "page": "briefings/heavy-metals-in-pet-food",
+    "number": "9",
+    "referenceTitle": "Heavy Metal Index — pet-food and per-analyte literature baseline",
+    "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+    "sourceDigest": "c7e1192b0cefa6a4e5f0b5cecfa7bf86f644c0199eab8ba32b2c35babb96a7d7",
+    "reviewed": "2026-09-15",
+    "reason": "Homepage identifies a changing reference library, not a unique pet-food/per-analyte baseline with defined included documents, methods or version. No specific source can be matched to the bibliography without substituting an invented collection.",
+    "attempts": [
+      {
+        "url": "https://heavymetalindex.com",
+        "note": "Read homepage and library/navigation descriptions, marked updated 14 September 2026. It lists collection counts and source/synthesis entry points but not the specified pet-food baseline as a single identifiable cited document. No underlying baseline review claimed."
+      }
+    ]
+  }
+]

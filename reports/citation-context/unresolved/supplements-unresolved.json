@@ -1,0 +1,17 @@
+[
+  {
+    "page": "briefings/supplements-child-protective",
+    "number": "2",
+    "referenceTitle": "Sovereign dietary-supplement heavy-metal maximum levels (Thailand, GCC, Israel, Vietnam)",
+    "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+    "sourceDigest": "9ae9f07092ab3a262441bcfe605909b01922021b4c17f8d67bc23d1a6e5f7cdf",
+    "reviewed": "2026-09-15",
+    "reason": "Grouped reference remains unresolved: Thailand Notification 414 is identifiable and its FAO-hosted unofficial English translation gives supplement lead 1 mg/kg as prepared for consumption; GSO 193:2021 catalog identity was found but its paid numerical table was not read; Israel “FCS-2016” could not be tied to an exact primary instrument; the official Vietnamese QCVN 8-2:2011/BYT PDF could not be consistently retrieved for a verified numerical read. Do not silently replace the Israeli instrument or publish this four-country grouping as fully reviewed. None of the partial reads establishes a universal adult-body-weight premise.",
+    "attemptedUrls": [
+      "https://food.fda.moph.go.th/food-law/announ-moph-414",
+      "https://faolex.fao.org/docs/pdf/tha224748.pdf",
+      "https://www.gso.org.sa/store/standards/GSO%3A781074?lang=en",
+      "https://nifc.gov.vn/files/media/202205/qcvn82-2011.pdf"
+    ]
+  }
+]

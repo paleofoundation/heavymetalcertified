@@ -1,0 +1,15 @@
+{
+  "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+  "number": "6",
+  "referenceTitle": "WHO/FAO food and irrigation-water limits for lead, cadmium and chromium",
+  "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
+  "sourceDigest": "fbe2d0b57b7473dae2a5092f83862aa6f79c3cf2747808cdaae6c55ab788737b",
+  "reviewed": "2026-09-15",
+  "reason": "Grouped WHO/FAO citation has no document title, URL or edition identifying food and irrigation benchmarks. Secondary papers repeat inconsistent units/bases. The primary FAO irrigation table reviewed lists lead 5.0 mg/L, not the claimed 0.5 mg/L, and cannot identify or verify this entire grouped reference.",
+  "evidence": [
+    {
+      "url": "https://www.fao.org/4/t0234e/T0234E06.htm",
+      "note": "Read Table 21, trace-element irrigation guidelines and application-rate footnote. Lead row (misprinted Pd on the HTML page) is 5.0 mg/L; criteria protect irrigation use and do not establish a combined dry-food WHO standard."
+    }
+  ]
+}
