@@ -1,0 +1,214 @@
+{
+  "page": "articles/climate-fish-mehg-projections",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Global change effects on biogeochemical mercury cycling",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "41611617b2a2e76990c31b3a2523628240507d2e6a89b9c03c7da9e66ae47033",
+      "citation": "Sonke JE, Angot H, Zhang Y, Poulain A, Björn E, Schartup A. Global change effects on biogeochemical mercury cycling. Ambio. 2023;52:853–876. doi:10.1007/s13280-023-01855-y.",
+      "summary": "This review follows mercury from emissions through environmental cycling and food webs. Climate, land use, legacy mercury and emissions controls can produce different regional and species responses. It reports an estimated $117 billion annual burden from past and present anthropogenic mercury exposure.",
+      "establishes": "The review supports continuing environmental monitoring and improving models. Its examples include salmon increases, contrasting cod and dogfish responses, and opposing plankton changes across latitudes; it does not establish a universal 10–30% climate-only increase in commercial fish.",
+      "relevance": "It supports periodically reviewing HMTc source evidence as environmental conditions change. The article’s pooled 5–30% forecast and claim that fixed product ceilings necessarily lose stringency are not established by this review.",
+      "links": [
+        {
+          "label": "Full review",
+          "href": "https://link.springer.com/article/10.1007/s13280-023-01855-y"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s13280-023-01855-y",
+            "note": "Read publisher full text: abstract, Global change effects, MeHg formation, food-web accumulation, combined forcings, and Monitoring and research needs. Followed cited examples and uncertainty discussion, not their underlying papers independently. Editorial: no general 10–30% fish forecast or 5–15-year ceiling review interval was located; $117 billion concerns existing anthropogenic exposure, not an incremental climate forecast."
+          }
+        ]
+      },
+      "kind": "Scientific review"
+    },
+    "2": {
+      "referenceTitle": "Climate-driven changes of global marine mercury cycles in 2100",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "a0c8f6b534bf63cf518eb522e2fcb3a12820ed788ae20fb075e78fb507238073",
+      "citation": "Wang Y, Wu P, Zhang Y. Climate-driven changes of global marine mercury cycles in 2100. PNAS. 2023;120(2):e2202488120. Published 3 January 2023. doi:10.1073/pnas.2202488120.",
+      "summary": "The model compares 1991–2000 with 2091–2100 under RCP8.5, changing individual climate and ecosystem factors while holding atmospheric mercury inputs fixed. Warming, winds, particle export, light and plankton communities have competing effects. Reduced chlorophyll enhances photodemethylation, producing a 33% global surface-water methylmercury decrease in that sensitivity experiment.",
+      "establishes": "Outputs concern seawater, phytoplankton and zooplankton, not upper-trophic commercial fish. The study does not run the article’s RCP4.5 comparison or establish a 5–20% rise in fish. Model limitations include coastal resolution, riverine mercury and sediment processes.",
+      "relevance": "It offers mechanisms and uncertainty relevant to future monitoring, but cannot supply a tuna-lot forecast or validate HMTc ceilings. The article’s dominant deoxygenation mechanism and twofold high-latitude methylation claim are unsupported by this model.",
+      "links": [
+        {
+          "label": "Full PNAS paper",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9926249/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9926249/",
+            "note": "Read primary full text: significance, abstract, experiment design, inorganic Hg, methylmercury, plankton bioaccumulation, coastal results and uncertainty discussion; also original PNAS PDF from Tulane. The 33% decrease is a chlorophyll-only sensitivity, not a summed fish forecast. A factor-of-two regional change concerns plankton distributions/accumulation, not measured methylation rates. HMI’s anchor author list differs from the actual Wang Y/Wu P/Zhang Y paper."
+          }
+        ]
+      },
+      "kind": "Modeling study"
+    },
+    "3": {
+      "referenceTitle": "Mercury isotopic evidence for the importance of particles as a source of mercury to marine organisms",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "6d9f4dc9e3f00da1065eb6cd0df09c8229277842c21377ff20e4f5902566e290",
+      "citation": "Motta LC, Blum JD, Popp BN, et al. Mercury isotopic evidence for the importance of particles as a source of mercury to marine organisms. PNAS. 2022;119(44):e2208183119. doi:10.1073/pnas.2208183119.",
+      "summary": "Mercury and amino-acid nitrogen isotopes from particles and organisms support preferential methylation associated with small particles, 1–53 µm, in the upper 400 m of the North Pacific. The authors combine 2015 equatorial samples with earlier ocean observations and a statistical source-mixing model.",
+      "establishes": "This is regional mechanistic evidence, with uncertain source fractions and additional research needed across environments. It does not measure future fish concentrations, establish a rate-limiting step, or quantify how quickly climate effects reach commercial fillets.",
+      "relevance": "The study helps explain why source-water and food-web conditions matter to seafood contamination. The article’s shortened climate-response horizon and direct forecast for tuna, swordfish and marlin go beyond its results; no HMTc testing interval was evaluated.",
+      "links": [
+        {
+          "label": "Full PNAS paper",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636975/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636975/",
+            "note": "Read full primary abstract, introduction, Results and Discussion, source-mixing model/Table 1 discussion, conclusions and Materials and Methods. Sampling was August–September 2015 at 5°N and 8°N, 155°W, during strong El Niño, with comparisons to Station ALOHA and earlier data. Small-particle source contribution is an isotope-model inference, not a direct methylation-rate or climate intervention experiment."
+          }
+        ]
+      },
+      "kind": "Isotope study"
+    },
+    "4": {
+      "referenceTitle": "US FDA action level for mercury in fish",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "33682aa2be3570d7d8257d494a0907aadbddbd47fc11fe9041fb5bcfec77dc0b",
+      "citation": "US FDA. CPG Sec. 540.600: Fish, Shellfish, Crustaceans and other Aquatic Animals — Fresh, Frozen or Processed — Methyl Mercury. Issued 6 November 1984; updated 16 February 2007.",
+      "summary": "FDA’s guidance recommends legal action when methylmercury, expressed as mercury, exceeds 1 ppm in the specified edible portion of seafood. It describes composite sampling and analysis for enforcement.",
+      "establishes": "This is an enforcement action level, distinct from a health-based daily or weekly intake. The analyte is methylmercury expressed as mercury, not total mercury converted by a 70% factor.",
+      "relevance": "The article’s statement “1.0 ppm total mercury: roughly 0.7 ppm methylmercury” conflicts with the source. A rising occurrence distribution could increase exceedances, but does not change the concentration allowed by a fixed ceiling.",
+      "links": [
+        {
+          "label": "FDA action-level guidance",
+          "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl",
+            "note": "Reused the exact guidance read for the selenium–mercury article on 15 September 2026, with fresh climate-page relevance. Read entire regulatory-action guidance and issuance/revision history. Threshold is methylmercury expressed as mercury above1 ppm in the specified edible portion. No selenium offset is stated. Editorial: the page incorrectly groups PTWIs/RfDs with absolute food concentrations. The displayed history does not verify the article’s 1979 origin claim; this drawer preserves the guidance’s own dates."
+          }
+        ]
+      },
+      "kind": "Government guidance"
+    },
+    "5": {
+      "referenceTitle": "EFSA tolerable weekly intake for methylmercury",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "419e4cebe2db32b01dacb4642d131b62c080678ba2e7a57c90bf7870565a9ecd",
+      "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985; corrected 10 April 2018.",
+      "summary": "EFSA established a methylmercury tolerable weekly intake of 1.3 µg/kg body weight, expressed as mercury, using developmental neurotoxicity evidence and considering nutritional confounding. It separately assessed European dietary exposure.",
+      "establishes": "The TWI is a health-based intake benchmark. Occurrence data inform estimated exposure, but the TWI is not a fish concentration distribution calibrated to a particular climate year.",
+      "relevance": "HMTc can use this value when explaining exposure, provided intake and food concentration are kept distinct. The opinion does not establish that climate projections require lowering the TWI or provide a 5–15-year revision schedule.",
+      "links": [
+        {
+          "label": "EFSA corrected opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985",
+            "note": "Reused exact corrected primary opinion and sections reviewed on 15 September 2026 for the selenium–mercury and cooking pages. Read corrected cover/abstract, summary and section 7.3.4 (p80). EFSA sets TWI1.3 and explicitly discusses uncertain detoxification by selenium–mercury compounds; no numeric Se adjustment. Correction concerns a reference, not the TWI. Fresh relevance distinguishes toxicological derivation from occurrence-based exposure estimation."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "6": {
+      "referenceTitle": "US EPA reference dose for methylmercury",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "f748398a549b0995d22f4bad0c0159114d24570ebaa5f444d7e67f4683a1bd11",
+      "citation": "US EPA. IRIS Chemical Assessment Summary: Methylmercury (MeHg), CASRN 22967-92-6. Oral reference dose revised 27 July 2001.",
+      "summary": "EPA’s oral reference dose is 0.0001 mg/kg/day, equivalent to 0.1 µg/kg/day. The derivation uses developmental neuropsychological impairment, benchmark-dose estimates from prenatal exposure studies and an uncertainty factor of ten.",
+      "establishes": "This chronic intake benchmark carries uncertainty; it is not a fish ppm limit or a forecast tied to the mercury content of fish in 2001.",
+      "relevance": "The article correctly reports the numeric value and revision year. Climate-related exposure changes would affect how many consumers exceed it, without by themselves changing the toxicological basis of the reference dose.",
+      "links": [
+        {
+          "label": "EPA IRIS assessment",
+          "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://iris.epa.gov/static/pdfs/0073_summary.pdf",
+            "note": "Reused the exact EPA PDF read on 15 September 2026 for the selenium–mercury page; fresh relevance checked against the climate article. Read pp1–4: revision date, RfD, neurodevelopmental endpoint, uncertainty factor and dose-conversion rationale. 0.0001 mg/kg/day equals0.1 µg/kg/day. No selenium term appears in the stated derivation; this is an exposure benchmark, not a fish ppm limit."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "7": {
+      "referenceTitle": "WHO/FAO provisional tolerable weekly intake for methylmercury",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "c045ae9f7fd604c62f6665002d4fbe8eded36657ac88fac76b713d8eccaaae2e",
+      "citation": "Joint FAO/WHO Expert Committee on Food Additives. Methylmercury evaluation record: PTWI established in 2003 and retained at the 67th meeting (2006), database/report entry 2007.",
+      "summary": "JECFA’s official evaluation record retains a provisional tolerable weekly intake of 1.6 µg/kg body weight. The value addresses sensitive developmental effects and includes qualifications for adults, women of childbearing age and children.",
+      "establishes": "The record supports the benchmark and its history, not a universal seafood concentration ceiling. Its derivation concerns human exposure and developmental effects rather than a fixed present-day fish-occurrence baseline.",
+      "relevance": "It provides a distinct exposure reference for the article’s comparison. It does not show that warming changes the permissible dose or require HMTc to adopt a particular ceiling or revision cycle.",
+      "links": [
+        {
+          "label": "JECFA official evaluation record",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083",
+            "note": "Reused the exact official evaluation record read on 15 September 2026, with fresh page-specific relevance. Read full official chemical evaluation record: 2003 PTWI retained, 2007 entry for meeting67, developmental endpoint and subgroup qualifications. It notes nutrition and targeted advice. Full linked monograph was not reviewed; no selenium-adjusted value appears in this official evaluation summary. Access scope remains the complete official evaluation summary; the linked monograph was not independently read."
+          }
+        ]
+      },
+      "kind": "Risk evaluation"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — climate change and marine fish methylmercury projections (synthesis with full anchor-source records)",
+      "pageDigest": "e2cbf6f8b589b3b7274ae328c3a6e0a3f2fe5fa930ba665e461b11c88d90e828",
+      "sourceDigest": "f6cef4db458c4c0ed003a0c4dfae64e79c35f7aea4aa182682076b5e35df598b",
+      "citation": "Pendergrass K. Climate change is projected to increase methylmercury in marine fish, and present-day regulatory frameworks are calibrated against a shifting baseline. Heavy Metal Index. Updated 16 May 2026. Preprint.",
+      "summary": "The synthesis connects the Sonke review, Wang model and Motta isotope study to monitoring and threshold policy. It proposes a 5–30% increase in fish methylmercury and periodic reassessment, while identifying the need for further quantitative models.",
+      "establishes": "This is an editorial synthesis with no external review recorded. Its main quantitative interpretation is not supported by the reviewed anchors: Wang models lower food-web compartments under RCP8.5, and Motta does not estimate climate response times.",
+      "relevance": "It documents the argument reframed by the HMTc article, but provides no independent certification validation. The article should not treat its forecast range, 5–15-year schedule or declining-ceiling-stringency argument as established findings of the anchor papers.",
+      "links": [
+        {
+          "label": "HMI synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections",
+            "note": "Read synthesis body, author/date, anchor list, limitations, provisional status and peer-review state. No external reviews are listed and the page expressly calls itself a preprint. The named author is Karen Pendergrass, so this is not independent evidence for an article from the same author. Editorial: wrong Wang author list, unsupported 5–20% fish projection, and FDA total-Hg mislabel recur here; author-defined policy conclusions are kept separate from primary findings."
+          }
+        ]
+      },
+      "kind": "Editorial synthesis"
+    }
+  }
+}

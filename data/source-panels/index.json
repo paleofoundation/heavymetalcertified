@@ -315,6 +315,232 @@
       }
     }
   },
+  "articles/climate-fish-mehg-projections": {
+    "page": "articles/climate-fish-mehg-projections",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Global change effects on biogeochemical mercury cycling",
+        "citation": "Sonke JE, Angot H, Zhang Y, Poulain A, Björn E, Schartup A. Global change effects on biogeochemical mercury cycling. Ambio. 2023;52:853–876. doi:10.1007/s13280-023-01855-y.",
+        "summary": "This review follows mercury from emissions through environmental cycling and food webs. Climate, land use, legacy mercury and emissions controls can produce different regional and species responses. It reports an estimated $117 billion annual burden from past and present anthropogenic mercury exposure.",
+        "establishes": "The review supports continuing environmental monitoring and improving models. Its examples include salmon increases, contrasting cod and dogfish responses, and opposing plankton changes across latitudes; it does not establish a universal 10–30% climate-only increase in commercial fish.",
+        "relevance": "It supports periodically reviewing HMTc source evidence as environmental conditions change. The article’s pooled 5–30% forecast and claim that fixed product ceilings necessarily lose stringency are not established by this review.",
+        "links": [
+          {
+            "label": "Full review",
+            "href": "https://link.springer.com/article/10.1007/s13280-023-01855-y"
+          }
+        ],
+        "kind": "Scientific review"
+      },
+      "2": {
+        "referenceTitle": "Climate-driven changes of global marine mercury cycles in 2100",
+        "citation": "Wang Y, Wu P, Zhang Y. Climate-driven changes of global marine mercury cycles in 2100. PNAS. 2023;120(2):e2202488120. Published 3 January 2023. doi:10.1073/pnas.2202488120.",
+        "summary": "The model compares 1991–2000 with 2091–2100 under RCP8.5, changing individual climate and ecosystem factors while holding atmospheric mercury inputs fixed. Warming, winds, particle export, light and plankton communities have competing effects. Reduced chlorophyll enhances photodemethylation, producing a 33% global surface-water methylmercury decrease in that sensitivity experiment.",
+        "establishes": "Outputs concern seawater, phytoplankton and zooplankton, not upper-trophic commercial fish. The study does not run the article’s RCP4.5 comparison or establish a 5–20% rise in fish. Model limitations include coastal resolution, riverine mercury and sediment processes.",
+        "relevance": "It offers mechanisms and uncertainty relevant to future monitoring, but cannot supply a tuna-lot forecast or validate HMTc ceilings. The article’s dominant deoxygenation mechanism and twofold high-latitude methylation claim are unsupported by this model.",
+        "links": [
+          {
+            "label": "Full PNAS paper",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9926249/"
+          }
+        ],
+        "kind": "Modeling study"
+      },
+      "3": {
+        "referenceTitle": "Mercury isotopic evidence for the importance of particles as a source of mercury to marine organisms",
+        "citation": "Motta LC, Blum JD, Popp BN, et al. Mercury isotopic evidence for the importance of particles as a source of mercury to marine organisms. PNAS. 2022;119(44):e2208183119. doi:10.1073/pnas.2208183119.",
+        "summary": "Mercury and amino-acid nitrogen isotopes from particles and organisms support preferential methylation associated with small particles, 1–53 µm, in the upper 400 m of the North Pacific. The authors combine 2015 equatorial samples with earlier ocean observations and a statistical source-mixing model.",
+        "establishes": "This is regional mechanistic evidence, with uncertain source fractions and additional research needed across environments. It does not measure future fish concentrations, establish a rate-limiting step, or quantify how quickly climate effects reach commercial fillets.",
+        "relevance": "The study helps explain why source-water and food-web conditions matter to seafood contamination. The article’s shortened climate-response horizon and direct forecast for tuna, swordfish and marlin go beyond its results; no HMTc testing interval was evaluated.",
+        "links": [
+          {
+            "label": "Full PNAS paper",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9636975/"
+          }
+        ],
+        "kind": "Isotope study"
+      },
+      "4": {
+        "referenceTitle": "US FDA action level for mercury in fish",
+        "citation": "US FDA. CPG Sec. 540.600: Fish, Shellfish, Crustaceans and other Aquatic Animals — Fresh, Frozen or Processed — Methyl Mercury. Issued 6 November 1984; updated 16 February 2007.",
+        "summary": "FDA’s guidance recommends legal action when methylmercury, expressed as mercury, exceeds 1 ppm in the specified edible portion of seafood. It describes composite sampling and analysis for enforcement.",
+        "establishes": "This is an enforcement action level, distinct from a health-based daily or weekly intake. The analyte is methylmercury expressed as mercury, not total mercury converted by a 70% factor.",
+        "relevance": "The article’s statement “1.0 ppm total mercury: roughly 0.7 ppm methylmercury” conflicts with the source. A rising occurrence distribution could increase exceedances, but does not change the concentration allowed by a fixed ceiling.",
+        "links": [
+          {
+            "label": "FDA action-level guidance",
+            "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl"
+          }
+        ],
+        "kind": "Government guidance"
+      },
+      "5": {
+        "referenceTitle": "EFSA tolerable weekly intake for methylmercury",
+        "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985; corrected 10 April 2018.",
+        "summary": "EFSA established a methylmercury tolerable weekly intake of 1.3 µg/kg body weight, expressed as mercury, using developmental neurotoxicity evidence and considering nutritional confounding. It separately assessed European dietary exposure.",
+        "establishes": "The TWI is a health-based intake benchmark. Occurrence data inform estimated exposure, but the TWI is not a fish concentration distribution calibrated to a particular climate year.",
+        "relevance": "HMTc can use this value when explaining exposure, provided intake and food concentration are kept distinct. The opinion does not establish that climate projections require lowering the TWI or provide a 5–15-year revision schedule.",
+        "links": [
+          {
+            "label": "EFSA corrected opinion",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "6": {
+        "referenceTitle": "US EPA reference dose for methylmercury",
+        "citation": "US EPA. IRIS Chemical Assessment Summary: Methylmercury (MeHg), CASRN 22967-92-6. Oral reference dose revised 27 July 2001.",
+        "summary": "EPA’s oral reference dose is 0.0001 mg/kg/day, equivalent to 0.1 µg/kg/day. The derivation uses developmental neuropsychological impairment, benchmark-dose estimates from prenatal exposure studies and an uncertainty factor of ten.",
+        "establishes": "This chronic intake benchmark carries uncertainty; it is not a fish ppm limit or a forecast tied to the mercury content of fish in 2001.",
+        "relevance": "The article correctly reports the numeric value and revision year. Climate-related exposure changes would affect how many consumers exceed it, without by themselves changing the toxicological basis of the reference dose.",
+        "links": [
+          {
+            "label": "EPA IRIS assessment",
+            "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "7": {
+        "referenceTitle": "WHO/FAO provisional tolerable weekly intake for methylmercury",
+        "citation": "Joint FAO/WHO Expert Committee on Food Additives. Methylmercury evaluation record: PTWI established in 2003 and retained at the 67th meeting (2006), database/report entry 2007.",
+        "summary": "JECFA’s official evaluation record retains a provisional tolerable weekly intake of 1.6 µg/kg body weight. The value addresses sensitive developmental effects and includes qualifications for adults, women of childbearing age and children.",
+        "establishes": "The record supports the benchmark and its history, not a universal seafood concentration ceiling. Its derivation concerns human exposure and developmental effects rather than a fixed present-day fish-occurrence baseline.",
+        "relevance": "It provides a distinct exposure reference for the article’s comparison. It does not show that warming changes the permissible dose or require HMTc to adopt a particular ceiling or revision cycle.",
+        "links": [
+          {
+            "label": "JECFA official evaluation record",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083"
+          }
+        ],
+        "kind": "Risk evaluation"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — climate change and marine fish methylmercury projections (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Climate change is projected to increase methylmercury in marine fish, and present-day regulatory frameworks are calibrated against a shifting baseline. Heavy Metal Index. Updated 16 May 2026. Preprint.",
+        "summary": "The synthesis connects the Sonke review, Wang model and Motta isotope study to monitoring and threshold policy. It proposes a 5–30% increase in fish methylmercury and periodic reassessment, while identifying the need for further quantitative models.",
+        "establishes": "This is an editorial synthesis with no external review recorded. Its main quantitative interpretation is not supported by the reviewed anchors: Wang models lower food-web compartments under RCP8.5, and Motta does not estimate climate response times.",
+        "relevance": "It documents the argument reframed by the HMTc article, but provides no independent certification validation. The article should not treat its forecast range, 5–15-year schedule or declining-ceiling-stringency argument as established findings of the anchor papers.",
+        "links": [
+          {
+            "label": "HMI synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/climate-fish-mehg-projections"
+          }
+        ],
+        "kind": "Editorial synthesis"
+      }
+    }
+  },
+  "articles/climate-metals-tradeoffs": {
+    "page": "articles/climate-metals-tradeoffs",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Controlling exposure to As and Cd from rice via irrigation management",
+        "citation": "Limmer, M. A., and Seyfferth, A. L. (2024). Controlling exposure to As and Cd from rice via irrigation management. Environmental Geochemistry and Health, 46, article 339. Published July 29, 2024. https://doi.org/10.1007/s10653-024-02116-x.",
+        "summary": "In a two-year experiment with six irrigation regimes and three replicate paddies per regime, less flooding generally lowered grain arsenic and methane emissions while increasing cadmium. The response depended on arsenic species: inorganic arsenic fell by at most 33% relative to continuous flooding, while organic arsenic reductions were larger. The authors could not identify one irrigation regime that minimized both arsenic and cadmium.",
+        "establishes": "The study demonstrates an irrigation trade-off in one soil and rice cultivar. Soil chemistry and the degree of drying matter; the mild alternate wetting and drying treatment did not significantly reduce inorganic arsenic. Its combined index normalizes grain concentrations to Codex limits and is not a measured human health outcome or a universal irrigation prescription.",
+        "relevance": "This supports checking cadmium alongside arsenic when assessing rice grown under changing water management. HMTc can use that reasoning to motivate multiple-analyte testing, but the experiment does not establish certification performance, an optimal commercial growing method, or contamination levels in retail rice.",
+        "links": [
+          {
+            "label": "Full research article",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11286649/"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Concentrations and Health Implications of As, Hg, and Cd and Micronutrients in Rice and Emissions of CH4 From Variably Flooded Paddies",
+        "citation": "Seyfferth, A. L., Limmer, M. A., Jackson, B. P., and Runkle, B. R. K. (2025). Concentrations and Health Implications of As, Hg, and Cd and Micronutrients in Rice and Emissions of CH4 From Variably Flooded Paddies. GeoHealth, 9(8), e2025GH001410. Published August 13, 2025. https://doi.org/10.1029/2025GH001410.",
+        "summary": "Six experimental paddies followed across two growing seasons produced opposing arsenic and cadmium patterns along a flooding gradient. Drier conditions generally reduced methane emissions and grain inorganic arsenic but increased cadmium. The authors reported that the driest paddy exceeded the Codex cadmium maximum in both years, while inorganic arsenic remained below the corresponding Codex rice maximum.",
+        "establishes": "The experiment supports a soil- and management-dependent trade-off involving metals and methane. It used one location, one rice cultivar and six unlined paddies in 2016 and 2017. It did not measure commercial retail rice, human toxicity or digestive bioaccessibility, and its results do not imply that all alternate wetting and drying systems exceed food limits.",
+        "relevance": "This is evidence for considering unintended contaminant changes when HMTc evaluates rice sourcing or water-saving claims. It supports examining the tested product and relevant analytes; the selection of HMTc limits and claims that certification prevents these effects require separate evidence.",
+        "links": [
+          {
+            "label": "Full research article",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12344449/"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Codex maximum level for cadmium in polished rice",
+        "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995. Adopted 1995; edition amended through 2025. Cadmium schedule: polished rice, maximum level 0.4 mg/kg.",
+        "summary": "The Codex contaminant standard recommends a maximum cadmium concentration of 0.4 mg/kg for polished rice, applying to the whole commodity. Its inorganic arsenic schedule separately sets a 0.2 mg/kg maximum for polished rice. The schedules use defined contaminants, commodities and portions rather than a single limit for every food.",
+        "establishes": "These are international food-standard concentrations, not daily intake allowances or a finding that exposure below a concentration has zero risk. Codex recommendations have to be distinguished from the rules adopted by individual jurisdictions and from requirements for infant foods or other rice products.",
+        "relevance": "The cadmium row explains the comparison used in the cited paddy experiment. It lets readers understand how experimental grain could be below the arsenic benchmark while exceeding a separate cadmium benchmark, without treating the Codex value as an HMTc certification limit or a universal domestic legal rule.",
+        "links": [
+          {
+            "label": "Codex contaminant standard, 2025 edition",
+            "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+          }
+        ],
+        "kind": "International standard"
+      },
+      "4": {
+        "referenceTitle": "EU maximum level for cadmium in polished rice",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. Official Journal L 119, May 5, 2023. Original act, Annex I, point 3.2.12.3.",
+        "summary": "The cited original EU regulation sets a cadmium maximum of 0.15 mg/kg for the category containing rice, quinoa, wheat bran and wheat gluten. The neighboring 0.10 mg/kg cereal limit expressly excludes that separate category. Other rice uses and infant foods have distinct contaminant categories and conditions.",
+        "establishes": "This is a binding EU food-concentration requirement within the regulation’s commodity and application rules, rather than an exposure-dose benchmark. The reviewed document is the original 2023 act; this source-specific review does not certify that every later amendment or transitional condition has been checked for a particular product in 2026.",
+        "relevance": "The rule supplies an EU comparator for the irrigation experiments discussed on this page. Any HMTc comparison must use the correct rice category, measurement basis and applicable version before concluding that an irrigation regime or tested lot meets the market requirement.",
+        "links": [
+          {
+            "label": "Original EU Regulation 2023/915",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+        "citation": "Wu, M., Wu, X., Saiz-Lopez, A., Blanchfield, P. J., Ren, H., and Zhong, H. (2025). Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers. Proceedings of the National Academy of Sciences, 122(13), e2421921122. Published March 24, 2025. https://doi.org/10.1073/pnas.2421921122.",
+        "summary": "Using about 13,000 fish-mercury observations from 164 Chinese sites sampled during 2005–2020, the study found higher methylmercury concentrations in freshwater wild fish than farmed freshwater fish across trophic classes. A machine-learning model projected an approximately 60% national-average increase in wild freshwater fish methylmercury for 2031–2060 under two climate pathways, while holding mercury emissions constant.",
+        "establishes": "The historical comparisons are observational, and the future values are conditional model projections. The 2.9–6.2-fold comparison spans trophic classes, while the reported 30.9 µg/kg mean refers to the 40 ± 5 cm size group. Some methylmercury values were estimated from total mercury. Solar radiation was an important predictor, but several possible mechanisms were proposed rather than experimentally isolated.",
+        "relevance": "The findings support reassessing fish exposure data as environmental conditions change. They do not establish that a particular supplier or product already follows the projected trend, that photochemical methylation alone causes the increase, or that an HMTc testing program has demonstrated a reduction in the modeled health burden.",
+        "links": [
+          {
+            "label": "Full research article",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "FDA Closer to Zero action plan and EU maximum levels for toxic elements in foods for infants and young children",
+        "citation": "U.S. Food and Drug Administration. Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods, program overview, accessed September 15, 2026; and Inorganic Arsenic in Rice Cereals for Infants: Action Level, Guidance for Industry, August 2020. European Commission. Commission Regulation (EU) 2023/915, original act, Annex I infant-food and rice categories.",
+        "summary": "FDA’s Closer to Zero program addresses arsenic, lead, cadmium and mercury through research, monitoring and an iterative action-level process. Its separate 2020 guidance identifies a 100 µg/kg inorganic arsenic action level for infant rice cereal. The cited EU regulation imposes category-specific food maxima, including 0.040 mg/kg cadmium in baby food and processed cereal-based food for infants and young children, and 0.10 mg/kg inorganic arsenic in rice destined for infant-food production.",
+        "establishes": "FDA guidance and an EU legal maximum have different legal status and product scopes. The FDA program explicitly acknowledges that reducing one contaminant can increase another, and says action levels are not permissible contamination levels. Neither authority’s source establishes that the cited requirements are fixed to an unchanged early-2000s occurrence baseline or that a private certification scheme guarantees protection.",
+        "relevance": "These sources explain the regulatory setting for the page’s infant-rice example and preserve the distinction between rice ingredients and finished cereal. They support continued monitoring of multiple contaminants, while HMTc’s testing frequency, limits and claims about adapting faster than regulators remain program choices requiring their own evidence.",
+        "links": [
+          {
+            "label": "FDA Closer to Zero program",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+          },
+          {
+            "label": "FDA infant rice cereal guidance, 2020",
+            "href": "https://www.fda.gov/media/97234/download"
+          },
+          {
+            "label": "Original EU contaminant regulation",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          }
+        ],
+        "kind": "Government sources"
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Index — climate adaptation and heavy-metal trade-offs (synthesis with full anchor-source records)",
+        "citation": "Pendergrass, K. (2026). Climate adaptation creates new heavy-metal trade-offs. Heavy Metal Index. Updated May 13, 2026. https://doi.org/10.83376/hmi.climate-metals-tradeoffs. Synthesis preprint.",
+        "summary": "This synthesis connects two Delaware rice experiments with a Chinese fish-mercury modeling study to argue that changing irrigation and climate can alter contaminant profiles. It provides an anchor-source inventory, a discussion of evidence gaps and proposed downstream uses. The page identifies itself as a synthesis published before external review and records no completed external reviews.",
+        "establishes": "The source documents the author’s interpretation and source selection rather than adding an independent experiment or regulatory decision. The rice studies share a research facility and investigators, and the fish result includes conditional future projections. Its mechanism and policy extensions require separate support from the original studies and applicable rules.",
+        "relevance": "This is the immediate synthesis behind the HMTc article’s rice-and-fish argument. It helps readers trace the argument, but the empirical findings, legal maxima and HMTc commercial interpretation should be evaluated separately; the synthesis is not independent validation of certification effectiveness.",
+        "links": [
+          {
+            "label": "Heavy Metal Index synthesis preprint",
+            "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/combined-exposure-underprotection": {
     "page": "articles/combined-exposure-underprotection",
     "reviewed": "2026-09-15",
@@ -508,6 +734,222 @@
           {
             "label": "Read synthesis and review status",
             "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
+  "articles/cookware-utensil-metal-leaching-pathway": {
+    "page": "articles/cookware-utensil-metal-leaching-pathway",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Assessing Leaching of Potentially Hazardous Elements from Cookware during Cooking: A Serious Public Health Concern",
+        "citation": "Ali Sultan SA, Ahmed Khan F, Wahab A, et al. Assessing Leaching of Potentially Hazardous Elements from Cookware during Cooking: A Serious Public Health Concern. Toxics. 2023;11(7):640. doi:10.3390/toxics11070640.",
+        "summary": "Pakistani cookware released metals differently with medium, duration and surface treatment. New non-anodized aluminium released lead at 5.66 mg/L into 4% acetic acid after two hours, versus 0.005 mg/L into neutral water under the corresponding condition.",
+        "establishes": "The meat experiment analysed filtered cooking liquid, with a flask control, rather than directly reporting a solid-meat serving concentration. Its stated subtraction order is inconsistent with the intended correction. “Old” cookware had been used for two months; blood measurements do not isolate cookware as their source.",
+        "relevance": "It supports testing a defined vessel–food–contact condition. HMTc cannot convert leachate concentration directly into absorbed dose, infer universal superiority from a surface label, or attribute human illness to cookware from this design.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://mdpi-res.com/d_attachment/toxics/toxics-11-00640/article_deploy/toxics-11-00640.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "2": {
+        "referenceTitle": "Detection of some heavy metals in meat cooked in different utensils",
+        "citation": "Mahdi MS, Farhan NM, Mouhamad RS. Detection of some heavy metals in meat cooked in different utensils. Samarra Journal of Pure and Applied Science. 2024;6(3(2)):62–69. doi:10.54153/sjpas.2024.v6i3(2).870.",
+        "summary": "The study measured six elements in meat cooked using clay, iron, copper, aluminium, Teflon and glass vessels. Reported cadmium ranged from 0.005 ppm with iron to 0.4 ppm with Teflon; lead was highest with iron at 1.0 ppm.",
+        "establishes": "The brief methods do not report a raw-meat control, cooking time and temperature, replication, or a detailed statistical protocol. The reported between-vessel differences therefore do not establish that vessel material alone caused an exactly quantified increase.",
+        "relevance": "It is evidence of differing cooked-meat measurements under the reported setup. HMTc should treat absolute concentrations and causal attribution cautiously rather than using this small report to rank all cookware or quantify population risk.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://sjpas.com/index.php/sjpas/article/download/870/286"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "3": {
+        "referenceTitle": "INVESTIGATION OF METALS RELEASED FROM IMPORTED COOKWARE COLLECTED FROM A LOCAL MARKET IN RIYADH, SAUDI ARABIA",
+        "citation": "Mohammed Alrajhi I, Idriss H. Investigation of metals released from imported cookware collected from a local market in Riyadh, Saudi Arabia. Revista Internacional de Contaminación Ambiental. 2021;37:21–26. doi:10.20937/RICA.53561.",
+        "summary": "The researchers boiled 0.9 L of distilled water for 30 minutes in 46 aluminium cookware items and analysed ten elements by ICP-OES. Table II reports detected lead at 0.099–0.184 mg/L and arsenic at 0.012–0.164 mg/L.",
+        "establishes": "These are water-leachate values, not metal concentrations in a meal. Arsenic was not speciated. Numerical ranges in the narrative conflict with the tables, and neither this limited survey nor its broad safety conclusion establishes every product’s compliance or consumer dose.",
+        "relevance": "It supports considering migration even without added acid. HMTc should retain the measured medium and reported-data limitations; a drinking-water or food ceiling cannot be applied without matching the test and applicable rule.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://www.redalyc.org/journal/370/37072384035/37072384035.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "4": {
+        "referenceTitle": "Preliminary assessment of toxic metals in cookware, moulding materials and soils from manufacturing sites in southwest Nigeria, with evaluation of cookware leaching potential",
+        "citation": "Abdulrasheed ZA, Adie GU, Iniaghe PO. Preliminary assessment of toxic metals in cookware, moulding materials and soils from manufacturing sites in southwest Nigeria, with evaluation of cookware leaching potential. BMC Chemistry. 2026;20:23. doi:10.1186/s13065-026-01720-5.",
+        "summary": "Four informally produced cookware samples contained variable metals, with mean lead of 136 mg/kg. Boiling distilled water for one to three hours produced leachate below the reported 0.01 mg/L detection limit for all five measured elements.",
+        "establishes": "This separates total material content from detectable release under the tested neutral-water conditions. It does not establish zero migration, outcomes with acidic or salty foods, or human illness. Moulding-material and soil associations do not uniquely trace each pot’s metal source.",
+        "relevance": "For HMTc, it supports specifying both the material test and the contact test. A high bulk concentration alone cannot quantify consumer exposure, while a nondetect under one protocol cannot certify every use condition.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://link.springer.com/article/10.1186/s13065-026-01720-5"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "5": {
+        "referenceTitle": "Quantification of aluminum and heavy metal contents in cooked rice samples from Thailand markets using inductively coupled plasma mass spectrometry (ICP-MS) and potential health risk assessment",
+        "citation": "Rittirong A, Saenboonruang K. Quantification of aluminum and heavy metal contents in cooked rice samples from Thailand markets using inductively coupled plasma mass spectrometry (ICP-MS) and potential health risk assessment. Emirates Journal of Food and Agriculture. 2018;30(5):372–380. doi:10.9755/ejfa.2018.v30.i5.1680.",
+        "summary": "Rice was prepared in twenty combinations of five vessels and four water conditions, including pH 4 and pH 10. The authors found no statistically significant indication of substantial metal leaching relative to raw rice under their protocol.",
+        "establishes": "Both raw and cooked samples were oven-dried. The 76.83 mg/kg aluminium value is specifically new aluminium with tap water, not the overall cooked-rice mean. Modelled risks use assumed intake and toxicological benchmarks; total arsenic and chromium were not speciated.",
+        "relevance": "It provides a useful limited null result for HMTc’s preparation discussion. Dried-sample concentrations cannot silently become ready-to-eat serving values, and lack of statistical significance does not prove universal zero transfer.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://ejfa.me/index.php/journal/article/download/1680/1106"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — cookware and utensils as a metal-leaching pathway (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Cooking vessels are a post-harvest contamination pathway. Heavy Metal Index synthesis, updated 27 July 2026. doi:10.83376/hmi.cookware-utensil-metal-leaching-pathway.",
+        "summary": "The synthesis combines five studies to argue that cooking vessels can introduce metals after ingredient testing. It discusses positive migration results alongside neutral-water and rice experiments that found little or no detectable transfer.",
+        "establishes": "It is an unreviewed interpretive preprint, not another experiment. Its strong vessel-only attribution for the meat comparison exceeds the documented controls, and its single rice value does not represent all cooking conditions.",
+        "relevance": "It supplies the article’s source trail and proposed testing rationale. Shared authorship and Institute of Contaminant Standards affiliation do not add independent corroboration or demonstrate certification effectiveness.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
+  "articles/dietary-nickel-plant-staple-accumulation": {
+    "page": "articles/dietary-nickel-plant-staple-accumulation",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Scientific opinion on dietary nickel exposure in the European population",
+        "citation": "EFSA CONTAM Panel. Scientific Opinion on the risks to public health related to the presence of nickel in food and drinking water. EFSA Journal. 2015;13(2):4002. Supplemental context: EFSA 2020 update and Regulation (EU) 2024/1987.",
+        "summary": "The 2015 opinion assessed 18,885 food and 25,700 water results and derived a chronic tolerable daily intake of 2.8 µg/kg body weight. Cocoa, legumes and nuts had relatively high concentrations. Its sampling was geographically uneven, with about 80% from one country.",
+        "establishes": "EFSA explicitly recognizes natural and anthropogenic sources; the occurrence data do not establish that exposure occurred without pollution. The 2020 update raised the chronic TDI to 13 µg/kg body weight and separately assessed acute reactions in sensitized people. EU nickel food limits were subsequently adopted in 2024, applying from July 2025 or, for specified cereals, July 2026.",
+        "relevance": "The historical food ranking supports attention to ingredients, but not an invariant botanical baseline. Absence of EU limits in 2015 does not show that EFSA rejected limits because of plant physiology, and it is not the current legal position. Dietary intake benchmarks are distinct from product limits.",
+        "links": [
+          {
+            "label": "Original 2015 opinion, institutional repository",
+            "href": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/112301720/Nickelinfoodanddrinkingwater.pdf"
+          },
+          {
+            "label": "EFSA 2020 update",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268"
+          },
+          {
+            "label": "EU nickel maximum-level amendment",
+            "href": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf"
+          }
+        ],
+        "kind": "Scientific opinion"
+      },
+      "2": {
+        "referenceTitle": "Nickel content of food and estimation of dietary intake",
+        "citation": "Flyvholm MA, Nielsen GD, Andersen A. Nickel content of food and estimation of dietary intake. Zeitschrift für Lebensmittel-Untersuchung und -Forschung. 1984;179:427–431. doi:10.1007/BF01043419. Author abstract reviewed.",
+        "summary": "This review estimated average Danish dietary nickel intake at 150 µg per person daily and identified cocoa, chocolate, soybeans, oatmeal, nuts and legumes as high-nickel foods. It discussed possible dietary provocation of eczema in nickel-sensitive people.",
+        "establishes": "The accessible author abstract confirms that these foods were recognized sources decades ago. It does not verify the article’s 2,221-sample count, individual concentration means or exact commodity ranking. The full tables were not reviewed. Dietary estimates do not separate natural uptake from pollution or processing inputs.",
+        "relevance": "The historical comparison is useful context, but matching high-food categories is not proof of a fixed physiological concentration or a pollution-free supply chain. It also does not establish the performance of a certification threshold.",
+        "links": [
+          {
+            "label": "Indexed author abstract",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/6395539/"
+          }
+        ],
+        "kind": "Review"
+      },
+      "3": {
+        "referenceTitle": "Assessment of exposure to nickel intake with selected cereal grains and cereal-based products",
+        "citation": "Mania M, Rebeniak M, Orshulyak O, Postupolski J. Assessment of exposure to nickel intake with selected cereal grains and cereal-based products. Roczniki Państwowego Zakładu Higieny. 2020;71(4):371–376. doi:10.32394/rpzh.2020.0142.",
+        "summary": "The investigators tested 56 Polish-market cereal samples from 2019–2020. Grain nickel averaged 1.16 mg/kg; wholemeal flour and pasta had higher results than their refined counterparts in the sampled products.",
+        "establishes": "The study supports the reported concentration contrasts, including wholemeal flour up to 2.12 mg/kg and refined wheat flour below quantification. Its 13.4% TDI estimate concerns adults consuming cereal grains excluding rice under WHO cluster-diet assumptions. This was a market survey, not a controlled milling experiment or direct measurement of nickel partitioning into bran and germ.",
+        "relevance": "The results justify considering product composition and refinement. Calling the gradient conclusively a milling-physics effect overstates the design: different commodities, growing conditions and processing histories were not controlled. A result below quantification is not zero nickel, and a partial-diet calculation is not total exposure.",
+        "links": [
+          {
+            "label": "Original publisher PDF",
+            "href": "https://roczniki.pzh.gov.pl/pdf-182634-103130?filename=Assessment-of-exposure-to.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Cadmium, lead, chromium and nickel in nuts on the Polish market",
+        "citation": "Ćwieląg-Drabek M, Nieć-Leśniak J, Białek-Dratwa A. Evaluation of Cadmium, Lead, Chromium, and Nickel Content in Various Types of Nuts: Almonds, Cashews, Hazelnuts, Peanuts, and Walnuts – Health Risk of Polish Consumers. Biological Trace Element Research. 2025;203:3913–3930; online November 6, 2024. doi:10.1007/s12011-024-04438-4.",
+        "summary": "This is the identifiable paper behind the shortened bibliography title: it measured four elements in 69 nut samples sold in Poland. Mean nickel was highest in cashews at 6.434 mg/kg; the largest individual nickel result was 11.20 mg/kg in peanuts.",
+        "establishes": "The survey documents variability across sampled nuts, including some results below quantification. It does not identify the nickel sources or establish a universal natural baseline. Its modeled hazard indices depend on assumed intake and body weight, not observed adverse outcomes. The paper’s statement that EU nickel limits were absent describes its earlier context.",
+        "relevance": "The concentration pattern supports ingredient-informed screening. It cannot make an ingredient list a substitute for testing or show that a high result is necessarily ordinary physiology. The full original title and online-versus-issue dates are clarified here while preserving the reference binding.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12174183/fullTextXML"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Dietary exposure assessment to nickel through the consumption of poultry, beef, and pork meat for different age groups in the Italian population",
+        "citation": "Manfredi A, Varrà MO, Zanardi E, et al. Dietary exposure assessment to nickel through the consumption of poultry, beef, and pork meat for different age groups in the Italian population. Italian Journal of Food Safety. 2025;14(4):13840. doi:10.4081/ijfs.2025.13840.",
+        "summary": "The study measured 809 muscle-meat samples. Mean nickel was 0.016 mg/kg in poultry, 0.010 in beef and 0.009 in pork; between-meat differences were not statistically significant. Modeled contributions from each meat type were below 1% of the chronic TDI across age groups.",
+        "establishes": "This supports low average muscle-meat exposure under the study’s consumption assumptions. Individual concentrations were higher, reaching 0.606 mg/kg in beef. The authors explicitly lacked feed, farming and environmental data needed to attribute sources. The results do not cover all animal tissues, offal or total dietary exposure.",
+        "relevance": "The muscle-versus-plant comparison is informative, but it cannot prove that nickel enters food only through plant physiology or that animal tissues bypass plant-derived feed exposure. Low mean concentration is not evidence that contamination pathways are absent.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12679953/fullTextXML"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Occurrence and Exposure Assessment of Nickel in Zhejiang Province, China",
+        "citation": "Han J, Zhang R, Tang J, et al. Occurrence and Exposure Assessment of Nickel in Zhejiang Province, China. Toxics. 2024;12(3):169. doi:10.3390/toxics12030169.",
+        "summary": "The survey tested 2,628 food samples collected in 2018–2019. Five bean samples averaged 3.094 mg/kg. A joint high-consumption/high-concentration scenario estimated 21.57 µg/kg body weight daily for children aged 0–6, exceeding the 13 µg/kg chronic TDI.",
+        "establishes": "The high-end result is a modeled scenario, not measured individual intake or injury. The bean estimate rests on only five samples, including one soybean result of 9.21 mg/kg. The paper applies a 1 mg/kg regulatory comparator too broadly and later acknowledges that its category mismatch could overestimate exceedance rates.",
+        "relevance": "The article repeats the study’s mistaken classification of beans as exceeding a national nickel limit. Neither this market survey nor its modeled exposure isolates a pollution-free botanical baseline; the discussion recognizes environmental and processing sources. The relevant standard’s actual category scope is clarified in reference 7.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10975410/fullTextXML"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "National food safety standard: maximum levels of contaminants in food (GB 2762-2022)",
+        "citation": "National Health Commission and State Administration for Market Regulation, China. GB 2762-2022, National Food Safety Standard: Maximum Levels of Contaminants in Food. Issued June 30, 2022; effective June 30, 2023. Supersession context: GB 2762-2025, effective September 2, 2026.",
+        "summary": "Table 6 of the 2022 Chinese standard sets a nickel limit of 1 mg/kg for hydrogenated vegetable oils and oil/fat products containing hydrogenated or partially hydrogenated oils. It does not set that nickel limit for beans.",
+        "establishes": "The standard applies limits by named food category. Beans appear under a separate chromium provision, which must not be confused with nickel. The cited 2022 edition has since been replaced by the 2025 edition; the reviewed USDA translation reports the same narrow nickel category in that replacement.",
+        "relevance": "The claim that all five bean samples violated GB 2762-2022 is unsupported. It therefore cannot demonstrate that China set a bean limit below intrinsic nickel content. A cross-category numerical comparison is not a legal exceedance.",
+        "links": [
+          {
+            "label": "Original Chinese 2022 standard, public reproduction",
+            "href": "https://file4.foodmate.net/foodvip/biaozhun/2022/GB2762-2022.pdf"
+          },
+          {
+            "label": "USDA translation of the replacement 2025 standard",
+            "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+          }
+        ],
+        "kind": "Standard"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — dietary nickel as an intrinsic plant-staple trait (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Dietary nickel has an irreducible botanical floor in specific plant staples… Heavy Metal Index. Updated August 11, 2026. doi:10.83376/hmi.dietary-nickel-plant-staple-accumulation. Preprint.",
+        "summary": "The current synthesis describes natural plant uptake alongside soil and post-harvest inputs. Its August 11 revision expressly corrects earlier claims that nickel cannot signal contamination, that EU food limits were absent and that China’s 1 mg/kg nickel limit applied to beans.",
+        "establishes": "The displayed external-verdict log remains empty and labels the work a preprint, although the revision note mentions external review. The source acknowledges that its anchor studies do not directly establish the plant-essentiality mechanism or quantify an irreducible crop concentration.",
+        "relevance": "This article retains claims that the cited synthesis now explicitly retracts or qualifies. The updated synthesis supports a narrower interpretation: food identity can inform nickel expectations, while a measured concentration cannot alone identify its source. It does not independently validate the certification program or eliminate the need to investigate elevated results.",
+        "links": [
+          {
+            "label": "Current synthesis and review state",
+            "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation"
           }
         ],
         "kind": "Preprint"
@@ -1965,6 +2407,139 @@
           {
             "label": "Exact HMI synthesis and review state",
             "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
+  "articles/tea-multi-metal-bioaccumulation": {
+    "page": "articles/tea-multi-metal-bioaccumulation",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Monitoring of essential and heavy metals in green tea from different geographical origins",
+        "citation": "Brzezicha-Cirocka J, Grembecka M, Szefer P. Environmental Monitoring and Assessment. 2016;188:183. doi:10.1007/s10661-016-5157-y.",
+        "summary": "A study of 41 green-tea products measured leaves and filtered infusions prepared with 2 g in 200 mL water for five minutes. Transfer differed by element and sample origin.",
+        "establishes": "Table 3 reports Chinese-tea lead transfer of 16.9%, but cadmium transfer of 9.41%; 46.3% belongs to zinc. Indian and Japanese cadmium transfer was 43.8% and 17.6%. Aluminum was not measured. These small origin groups do not establish universal transfer factors.",
+        "relevance": "The article’s Chinese cadmium figure confuses zinc with cadmium. A lead mass-transfer fraction cannot by itself convert mg/kg of dry leaf to mg/L of infusion: leaf mass and water volume are also needed. This filtered-infusion experiment does not characterize products where the leaf is eaten.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4762913/fullTextXML"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "HEAVY METALS AND THEIR ADVERSE EFFECTS: SOURCES, RISKS, AND STRATEGIES TO REDUCE ACCUMULATION IN TEA HERB - A SYSTEMATIC REVIEW",
+        "citation": "Kazeminia M, Mehrabi A, Khorrami R, Rezaeifar M, Khedmati Morasa H, Mahmoudi R. Carpathian Journal of Food Science and Technology. 2023;15(4):25–42. doi:10.34302/crpjfst/2023.15.4.3.",
+        "summary": "This review describes metal exposure, toxicity and mitigation across literature published in 2000–2022. Its selection process retained 157 articles from 961 initial records; it is not a new paired leaf-and-infusion experiment.",
+        "establishes": "The authors discuss soil chemistry, growing conditions and brewing time as influences on contamination or transfer. Their mitigation section states that longer brewing can increase extraction. The accessed passages do not substantiate a uniform six-to-tenfold reduction or a two-to-threefold lead increase specifically between three and ten minutes.",
+        "relevance": "The review supplies general context for specifying a brewing protocol. The article’s precise multipliers need the original experiments, including units, leaf-to-water ratio and timing. Tables labeled tolerable intakes should not be treated as current regulatory limits; they calculate exposure from consumption assumptions.",
+        "links": [
+          {
+            "label": "Publisher PDF",
+            "href": "https://chimie-biologie.ubm.ro/carpathian_journal/Papers_15%284%29/CJFST15%284%293.pdf"
+          },
+          {
+            "label": "Author-uploaded original article",
+            "href": "https://www.researchgate.net/publication/377965544_HEAVY_METALS_AND_THEIR_ADVERSE_EFFECTS_SOURCES_RISKS_AND_STRATEGIES_TO_REDUCE_ACCUMULATION_IN_TEA_HERB_-_A_SYSTEMATIC_REVIEW"
+          }
+        ],
+        "kind": "Review"
+      },
+      "3": {
+        "referenceTitle": "Occurrence, accumulation, and risk assessment of trace metals in tea (Camellia sinensis): A national reconnaissance",
+        "citation": "Li W, Cheng H, Mu Y, et al. Science of the Total Environment. 2021;792:148354. doi:10.1016/j.scitotenv.2021.148354. Author abstract reviewed.",
+        "summary": "The author abstract describes 225 paired soil and tea-plant samples from 45 gardens in 15 Chinese provinces. It reports elevated concentrations of several metals relative to soil background, alongside generally compliant agricultural-soil risk-control comparisons.",
+        "establishes": "This establishes the geographic scope and a soil-and-plant survey. The accessible abstract reports ecological soil-risk indices, not consumer infusion measurements. Full methods and leaf-age results were not available in the material reviewed.",
+        "relevance": "The article’s young-leaf values, mature-leaf lead mean of 13.6 mg/kg, exceedance proportion and claim that grade matters more than region remain unverified by this abstract. Those figures should not be presented as independently checked, and ecological soil risk is not a measure of drinker risk.",
+        "links": [
+          {
+            "label": "Author abstract and bibliographic record",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&query=DOI%3A10.1016%2Fj.scitotenv.2021.148354"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Current Status and Health Risk Assessment of Heavy Metals Contamination in Tea across China",
+        "citation": "Hu C, Zhang X, Zhan N, Liu Y. Toxics. 2023;11(8):662. doi:10.3390/toxics11080662.",
+        "summary": "This synthesis collected 227 papers published in 1993–2021 on Chinese tea and plantation soils. Mean tea concentrations included lead 1.09, cadmium 0.14 and chromium 1.17 mg/kg. It modeled ingestion using consumption and literature-derived leaching factors.",
+        "establishes": "The modeled national noncancer hazard index was 0.04, but modeled cadmium cancer risks exceeded the authors’ acceptable range in some regions. Regional variation and uncertain brewing assumptions limit generalization. The approximately 80% young-leaf lead contribution from vehicle emissions is attributed to a cited earlier study, not newly estimated nationally.",
+        "relevance": "This supports separate assessment of occurrence and brewed exposure. It does not establish a uniform commodity baseline or universal origin ranking. The article should distinguish low mean concentrations from the study’s regional risk signals and should identify the scope of its atmospheric-source attribution.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10459165/fullTextXML"
+          }
+        ],
+        "kind": "Review"
+      },
+      "5": {
+        "referenceTitle": "A comparison of the potential health risk of aluminum and heavy metals in tea leaves and tea infusion of commercially available green tea in Jiangxi, China",
+        "citation": "Li L, Fu QL, Achal V, Liu Y. Environmental Monitoring and Assessment. 2015;187:228. doi:10.1007/s10661-015-4445-2. Publisher abstract reviewed.",
+        "summary": "The publisher abstract reports paired measurements of commercial green-tea leaves and infusions. Mean leaf aluminum was 487.57 mg/kg. Lead, cadmium, copper and aluminum largely remained in the leaf, and concentrations declined across successive infusions.",
+        "establishes": "The authors report infusion hazard indices below one under their model and recommend discarding the first infusion. That recommendation is not evidence of improved clinical outcomes. Comparisons with drinking-water limits are analytical benchmarks, not proof that those limits legally govern tea. The full subscription article was not reviewed.",
+        "relevance": "This supports the importance of an identified preparation method. It does not establish a universal reduction factor or certify safety for all tea. Aluminum was included in the risk assessment, so the page should not reduce the entire cited aluminum evidence to a mass-only observation.",
+        "links": [
+          {
+            "label": "Publisher abstract and article record",
+            "href": "https://link.springer.com/article/10.1007/s10661-015-4445-2"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Accumulation of Heavy Metals in Tea Leaves and Potential Health Risk Assessment: A Case Study from Puan County, Guizhou Province, China",
+        "citation": "Zhang J, Yang R, Chen R, et al. International Journal of Environmental Research and Public Health. 2018;15(1):133. doi:10.3390/ijerph15010133. Supplemental context: EFSA’s 2008 aluminum assessment announcement.",
+        "summary": "The Puan County study found aluminum of 4,300–10,400 mg/kg in mature leaves versus 250–660 mg/kg in young leaves. Five of 13 mature-leaf samples produced modeled hazard indices above one, primarily from manganese and aluminum.",
+        "establishes": "The investigators explicitly did not measure infusions. They applied transfer rates from previous studies, assuming 11.4 g dry tea daily and a 60 kg adult. A hazard index signals a modeled screening concern, not observed disease. Separately, EFSA established an all-diet aluminum tolerable weekly intake of 1 mg/kg body weight in 2008.",
+        "relevance": "The page’s description of measured mature-tea infusion hazards is too strong: these were modeled from leaves. The aluminum reference-value claim also needs correction; absence of a tea-specific concentration limit is different from absence of a dietary toxicological benchmark. Neither source creates an infusion compliance standard.",
+        "links": [
+          {
+            "label": "Original tea study full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5800232/fullTextXML"
+          },
+          {
+            "label": "EFSA 2008 aluminum assessment summary",
+            "href": "https://www.efsa.europa.eu/en/news/efsa-advises-safety-aluminium-food"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "The Control and Comprehensive Safety Assessment of Heavy Metal Impurities (As, Pb, and Cd) in Green Tea Camellia sinensis (L.) Samples (Infusions) Available in Poland",
+        "citation": "Jurowski K, Kondratowicz-Pietruszka E, Krośniak M. Biological Trace Element Research. 2024;202:387–396; online 2023. doi:10.1007/s12011-023-03665-5. Supplemental context: WHO/JECFA contaminant evaluations.",
+        "summary": "Twelve green-tea products purchased in Poland were brewed according to manufacturers’ instructions and tested for arsenic, lead and cadmium. Table 4 reports means of 0.325, 0.891 and 0.214 µg/L, respectively.",
+        "establishes": "The paper models 21–70 cups per week rather than following consumers clinically. Its comparison uses obsolete provisional weekly intakes: JECFA withdrew the lead and inorganic-arsenic values and replaced cadmium’s weekly value with a monthly one. Total arsenic was measured. Aluminum was not tested. Internal discrepancies between text and tables also warrant caution.",
+        "relevance": "The concentration measurements support a limited infusion dataset, but being below the paper’s historical benchmarks does not establish current safety. The article’s aluminum-governance claim is not supported by this three-analyte experiment, and the small product sample does not establish country-wide safety rankings.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10764562/fullTextXML"
+          },
+          {
+            "label": "WHO/JECFA lead evaluation",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511"
+          },
+          {
+            "label": "WHO/JECFA arsenic evaluation",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1863"
+          },
+          {
+            "label": "WHO/JECFA cadmium evaluation",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — tea multi-metal bioaccumulation (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Tea heavy-metal exposure is governed by the leaf-to-infusion transfer fraction, not the dry-leaf totals that surveillance reports. Heavy Metal Index. Updated June 4, 2026. doi:10.83376/hmi.tea-multi-metal-bioaccumulation. Preprint.",
+        "summary": "This author-produced synthesis argues for exposure assessment based on a defined infusion. It links leaf surveys, brewing studies and risk models while acknowledging sparse infusion measurements and unresolved speciation.",
+        "establishes": "The visible review log has no external verdicts and labels the work a preprint. It is an interpretation of cited literature, not an independent experiment or regulation. Its Chinese cadmium-transfer passage repeats 46.3%, while a later passage gives approximately 9%, an internal inconsistency resolved by the original study’s Table 3.",
+        "relevance": "The synthesis explains this article’s framing but cannot independently corroborate reused claims. The proposed testing approach must keep leaf compliance, brewed intake and absorbed dose distinct. The primary sources qualify its mature-infusion description, obsolete tolerable-intake comparisons and assertion that aluminum lacks a toxicological reference value.",
+        "links": [
+          {
+            "label": "Synthesis and visible review state",
+            "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation"
           }
         ],
         "kind": "Preprint"

@@ -1,0 +1,249 @@
+{
+  "page": "articles/tea-multi-metal-bioaccumulation",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Monitoring of essential and heavy metals in green tea from different geographical origins",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "2f99e2bd29b6d76c071fa92352e559e08d77cc623171f013c98a5f83adc216d5",
+      "citation": "Brzezicha-Cirocka J, Grembecka M, Szefer P. Environmental Monitoring and Assessment. 2016;188:183. doi:10.1007/s10661-016-5157-y.",
+      "summary": "A study of 41 green-tea products measured leaves and filtered infusions prepared with 2 g in 200 mL water for five minutes. Transfer differed by element and sample origin.",
+      "establishes": "Table 3 reports Chinese-tea lead transfer of 16.9%, but cadmium transfer of 9.41%; 46.3% belongs to zinc. Indian and Japanese cadmium transfer was 43.8% and 17.6%. Aluminum was not measured. These small origin groups do not establish universal transfer factors.",
+      "relevance": "The article’s Chinese cadmium figure confuses zinc with cadmium. A lead mass-transfer fraction cannot by itself convert mg/kg of dry leaf to mg/L of infusion: leaf mass and water volume are also needed. This filtered-infusion experiment does not characterize products where the leaf is eaten.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4762913/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4762913/fullTextXML",
+            "note": "Read sample design, brewing method, analytes, Table 3 and exposure discussion in original full-text XML. Confirmed units of mg/100 g in leaf tables and the zinc/cadmium column distinction."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "HEAVY METALS AND THEIR ADVERSE EFFECTS: SOURCES, RISKS, AND STRATEGIES TO REDUCE ACCUMULATION IN TEA HERB - A SYSTEMATIC REVIEW",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "2e76e1f758108d6ad50d08f77e80178efc3db917d7e4eeed6398e4083f9b5a13",
+      "citation": "Kazeminia M, Mehrabi A, Khorrami R, Rezaeifar M, Khedmati Morasa H, Mahmoudi R. Carpathian Journal of Food Science and Technology. 2023;15(4):25–42. doi:10.34302/crpjfst/2023.15.4.3.",
+      "summary": "This review describes metal exposure, toxicity and mitigation across literature published in 2000–2022. Its selection process retained 157 articles from 961 initial records; it is not a new paired leaf-and-infusion experiment.",
+      "establishes": "The authors discuss soil chemistry, growing conditions and brewing time as influences on contamination or transfer. Their mitigation section states that longer brewing can increase extraction. The accessed passages do not substantiate a uniform six-to-tenfold reduction or a two-to-threefold lead increase specifically between three and ten minutes.",
+      "relevance": "The review supplies general context for specifying a brewing protocol. The article’s precise multipliers need the original experiments, including units, leaf-to-water ratio and timing. Tables labeled tolerable intakes should not be treated as current regulatory limits; they calculate exposure from consumption assumptions.",
+      "links": [
+        {
+          "label": "Publisher PDF",
+          "href": "https://chimie-biologie.ubm.ro/carpathian_journal/Papers_15%284%29/CJFST15%284%293.pdf"
+        },
+        {
+          "label": "Author-uploaded original article",
+          "href": "https://www.researchgate.net/publication/377965544_HEAVY_METALS_AND_THEIR_ADVERSE_EFFECTS_SOURCES_RISKS_AND_STRATEGIES_TO_REDUCE_ACCUMULATION_IN_TEA_HERB_-_A_SYSTEMATIC_REVIEW"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://chimie-biologie.ubm.ro/carpathian_journal/Papers_15%284%29/CJFST15%284%293.pdf",
+            "note": "Read publisher PDF opening, methods, selection count and Tables 2–3; subsequent PDF requests timed out, so later targeted reading used the author copy."
+          },
+          {
+            "url": "https://www.researchgate.net/publication/377965544_HEAVY_METALS_AND_THEIR_ADVERSE_EFFECTS_SOURCES_RISKS_AND_STRATEGIES_TO_REDUCE_ACCUMULATION_IN_TEA_HERB_-_A_SYSTEMATIC_REVIEW",
+            "note": "Read author-uploaded full-text mitigation section and searched the quantitative brewing phrases; no matching support was located for the article’s stated multipliers."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "3": {
+      "referenceTitle": "Occurrence, accumulation, and risk assessment of trace metals in tea (Camellia sinensis): A national reconnaissance",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "c9882f3d56cb4cec294a10167cce7da5f93f0e489a8ea3d5a6090d881fb3949e",
+      "citation": "Li W, Cheng H, Mu Y, et al. Science of the Total Environment. 2021;792:148354. doi:10.1016/j.scitotenv.2021.148354. Author abstract reviewed.",
+      "summary": "The author abstract describes 225 paired soil and tea-plant samples from 45 gardens in 15 Chinese provinces. It reports elevated concentrations of several metals relative to soil background, alongside generally compliant agricultural-soil risk-control comparisons.",
+      "establishes": "This establishes the geographic scope and a soil-and-plant survey. The accessible abstract reports ecological soil-risk indices, not consumer infusion measurements. Full methods and leaf-age results were not available in the material reviewed.",
+      "relevance": "The article’s young-leaf values, mature-leaf lead mean of 13.6 mg/kg, exceedance proportion and claim that grade matters more than region remain unverified by this abstract. Those figures should not be presented as independently checked, and ecological soil risk is not a measure of drinker risk.",
+      "links": [
+        {
+          "label": "Author abstract and bibliographic record",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&query=DOI%3A10.1016%2Fj.scitotenv.2021.148354"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&query=DOI%3A10.1016%2Fj.scitotenv.2021.148354",
+            "note": "Read the original author abstract and publication metadata through Europe PMC’s core record for this exact DOI; no full-text leaf-age tables were reviewed."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Current Status and Health Risk Assessment of Heavy Metals Contamination in Tea across China",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "914f1515fac25b23e62c40f8cb158d6d4e6adcbd1f8d28302bda463045c3315e",
+      "citation": "Hu C, Zhang X, Zhan N, Liu Y. Toxics. 2023;11(8):662. doi:10.3390/toxics11080662.",
+      "summary": "This synthesis collected 227 papers published in 1993–2021 on Chinese tea and plantation soils. Mean tea concentrations included lead 1.09, cadmium 0.14 and chromium 1.17 mg/kg. It modeled ingestion using consumption and literature-derived leaching factors.",
+      "establishes": "The modeled national noncancer hazard index was 0.04, but modeled cadmium cancer risks exceeded the authors’ acceptable range in some regions. Regional variation and uncertain brewing assumptions limit generalization. The approximately 80% young-leaf lead contribution from vehicle emissions is attributed to a cited earlier study, not newly estimated nationally.",
+      "relevance": "This supports separate assessment of occurrence and brewed exposure. It does not establish a uniform commodity baseline or universal origin ranking. The article should distinguish low mean concentrations from the study’s regional risk signals and should identify the scope of its atmospheric-source attribution.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10459165/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10459165/fullTextXML",
+            "note": "Read abstract, literature-selection methods, ingestion equation, atmospheric-deposition discussion and uncertainty section; exposure uses average leaching after 30 minutes."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "5": {
+      "referenceTitle": "A comparison of the potential health risk of aluminum and heavy metals in tea leaves and tea infusion of commercially available green tea in Jiangxi, China",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "d988c655354f20f0d88359317fd9488d0a06950d2acf2d2765647d8689c20942",
+      "citation": "Li L, Fu QL, Achal V, Liu Y. Environmental Monitoring and Assessment. 2015;187:228. doi:10.1007/s10661-015-4445-2. Publisher abstract reviewed.",
+      "summary": "The publisher abstract reports paired measurements of commercial green-tea leaves and infusions. Mean leaf aluminum was 487.57 mg/kg. Lead, cadmium, copper and aluminum largely remained in the leaf, and concentrations declined across successive infusions.",
+      "establishes": "The authors report infusion hazard indices below one under their model and recommend discarding the first infusion. That recommendation is not evidence of improved clinical outcomes. Comparisons with drinking-water limits are analytical benchmarks, not proof that those limits legally govern tea. The full subscription article was not reviewed.",
+      "relevance": "This supports the importance of an identified preparation method. It does not establish a universal reduction factor or certify safety for all tea. Aluminum was included in the risk assessment, so the page should not reduce the entire cited aluminum evidence to a mass-only observation.",
+      "links": [
+        {
+          "label": "Publisher abstract and article record",
+          "href": "https://link.springer.com/article/10.1007/s10661-015-4445-2"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s10661-015-4445-2",
+            "note": "Read publisher abstract and subscription-access notice directly; numerical leaf means, successive-infusion findings and recommendation are in the abstract. Full methods and chemical-speciation assumptions were not accessible."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Accumulation of Heavy Metals in Tea Leaves and Potential Health Risk Assessment: A Case Study from Puan County, Guizhou Province, China",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "fedb2809f984f7a1f75550bc156b9a60bb796a62cfa2d14962254a2f7ad26060",
+      "citation": "Zhang J, Yang R, Chen R, et al. International Journal of Environmental Research and Public Health. 2018;15(1):133. doi:10.3390/ijerph15010133. Supplemental context: EFSA’s 2008 aluminum assessment announcement.",
+      "summary": "The Puan County study found aluminum of 4,300–10,400 mg/kg in mature leaves versus 250–660 mg/kg in young leaves. Five of 13 mature-leaf samples produced modeled hazard indices above one, primarily from manganese and aluminum.",
+      "establishes": "The investigators explicitly did not measure infusions. They applied transfer rates from previous studies, assuming 11.4 g dry tea daily and a 60 kg adult. A hazard index signals a modeled screening concern, not observed disease. Separately, EFSA established an all-diet aluminum tolerable weekly intake of 1 mg/kg body weight in 2008.",
+      "relevance": "The page’s description of measured mature-tea infusion hazards is too strong: these were modeled from leaves. The aluminum reference-value claim also needs correction; absence of a tea-specific concentration limit is different from absence of a dietary toxicological benchmark. Neither source creates an infusion compliance standard.",
+      "links": [
+        {
+          "label": "Original tea study full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5800232/fullTextXML"
+        },
+        {
+          "label": "EFSA 2008 aluminum assessment summary",
+          "href": "https://www.efsa.europa.eu/en/news/efsa-advises-safety-aluminium-food"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5800232/fullTextXML",
+            "note": "Read abstract, exposure assumptions, Table 6 and discussion explicitly stating that infusion concentrations were not measured and identifying borrowed transfer rates."
+          },
+          {
+            "url": "https://www.efsa.europa.eu/en/news/efsa-advises-safety-aluminium-food",
+            "note": "Read EFSA’s dated July 15, 2008 announcement of the all-source dietary TWI; this is a historical official summary, not a claim to have reviewed the complete opinion."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "The Control and Comprehensive Safety Assessment of Heavy Metal Impurities (As, Pb, and Cd) in Green Tea Camellia sinensis (L.) Samples (Infusions) Available in Poland",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "05979ca2546715559c74ba33f952a895d6b71aad1c666ffe30f30b9125590ffd",
+      "citation": "Jurowski K, Kondratowicz-Pietruszka E, Krośniak M. Biological Trace Element Research. 2024;202:387–396; online 2023. doi:10.1007/s12011-023-03665-5. Supplemental context: WHO/JECFA contaminant evaluations.",
+      "summary": "Twelve green-tea products purchased in Poland were brewed according to manufacturers’ instructions and tested for arsenic, lead and cadmium. Table 4 reports means of 0.325, 0.891 and 0.214 µg/L, respectively.",
+      "establishes": "The paper models 21–70 cups per week rather than following consumers clinically. Its comparison uses obsolete provisional weekly intakes: JECFA withdrew the lead and inorganic-arsenic values and replaced cadmium’s weekly value with a monthly one. Total arsenic was measured. Aluminum was not tested. Internal discrepancies between text and tables also warrant caution.",
+      "relevance": "The concentration measurements support a limited infusion dataset, but being below the paper’s historical benchmarks does not establish current safety. The article’s aluminum-governance claim is not supported by this three-analyte experiment, and the small product sample does not establish country-wide safety rankings.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10764562/fullTextXML"
+        },
+        {
+          "label": "WHO/JECFA lead evaluation",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511"
+        },
+        {
+          "label": "WHO/JECFA arsenic evaluation",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1863"
+        },
+        {
+          "label": "WHO/JECFA cadmium evaluation",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10764562/fullTextXML",
+            "note": "Read sampling, brewing, Table 4, exposure Tables 6–7 and benchmark discussion; noted inconsistent arsenic maxima and cadmium text versus table, so no blanket numerical validation is implied."
+          },
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511",
+            "note": "Read official evaluation explaining withdrawal of the 25 µg/kg weekly value and inability to establish a replacement protective threshold."
+          },
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1863",
+            "note": "Read official evaluation record explaining withdrawal of the former inorganic-arsenic weekly intake; this is distinct from a total-arsenic product limit."
+          },
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/1376",
+            "note": "Read official 2010 evaluation withdrawing 7 µg/kg per week and establishing 25 µg/kg per month."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — tea multi-metal bioaccumulation (synthesis with full anchor-source records)",
+      "pageDigest": "21340d9d4a622ed898791d31f08269d4c4517c5fbc2e286b8039e1f7849230c2",
+      "sourceDigest": "b83dec92a409944be4067d0f0e75860b0da8d819590f6cab0f0d3bb5db0da492",
+      "citation": "Pendergrass K. Tea heavy-metal exposure is governed by the leaf-to-infusion transfer fraction, not the dry-leaf totals that surveillance reports. Heavy Metal Index. Updated June 4, 2026. doi:10.83376/hmi.tea-multi-metal-bioaccumulation. Preprint.",
+      "summary": "This author-produced synthesis argues for exposure assessment based on a defined infusion. It links leaf surveys, brewing studies and risk models while acknowledging sparse infusion measurements and unresolved speciation.",
+      "establishes": "The visible review log has no external verdicts and labels the work a preprint. It is an interpretation of cited literature, not an independent experiment or regulation. Its Chinese cadmium-transfer passage repeats 46.3%, while a later passage gives approximately 9%, an internal inconsistency resolved by the original study’s Table 3.",
+      "relevance": "The synthesis explains this article’s framing but cannot independently corroborate reused claims. The proposed testing approach must keep leaf compliance, brewed intake and absorbed dose distinct. The primary sources qualify its mature-infusion description, obsolete tolerable-intake comparisons and assertion that aluminum lacks a toxicological reference value.",
+      "links": [
+        {
+          "label": "Synthesis and visible review state",
+          "href": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: direct original-source review, with accessible scope specified in evidence",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/tea-multi-metal-bioaccumulation",
+            "note": "Read author, update date, quantitative synthesis, limitations, reference list and empty external-review log; checked load-bearing claims against the separately reviewed numbered sources."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

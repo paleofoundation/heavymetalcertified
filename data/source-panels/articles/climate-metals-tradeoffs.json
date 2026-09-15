@@ -1,0 +1,200 @@
+{
+  "page": "articles/climate-metals-tradeoffs",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Controlling exposure to As and Cd from rice via irrigation management",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "d9839b53e3d6649323e72f01e251f19453e77e5b561724403e035836b17a4f67",
+      "citation": "Limmer, M. A., and Seyfferth, A. L. (2024). Controlling exposure to As and Cd from rice via irrigation management. Environmental Geochemistry and Health, 46, article 339. Published July 29, 2024. https://doi.org/10.1007/s10653-024-02116-x.",
+      "summary": "In a two-year experiment with six irrigation regimes and three replicate paddies per regime, less flooding generally lowered grain arsenic and methane emissions while increasing cadmium. The response depended on arsenic species: inorganic arsenic fell by at most 33% relative to continuous flooding, while organic arsenic reductions were larger. The authors could not identify one irrigation regime that minimized both arsenic and cadmium.",
+      "establishes": "The study demonstrates an irrigation trade-off in one soil and rice cultivar. Soil chemistry and the degree of drying matter; the mild alternate wetting and drying treatment did not significantly reduce inorganic arsenic. Its combined index normalizes grain concentrations to Codex limits and is not a measured human health outcome or a universal irrigation prescription.",
+      "relevance": "This supports checking cadmium alongside arsenic when assessing rice grown under changing water management. HMTc can use that reasoning to motivate multiple-analyte testing, but the experiment does not establish certification performance, an optimal commercial growing method, or contamination levels in retail rice.",
+      "links": [
+        {
+          "label": "Full research article",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11286649/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11286649/",
+            "note": "Read the primary full text: abstract, Experimental design, arsenic and cadmium analytical methods, Plant arsenic accumulation, Plant cadmium accumulation, Methane emissions, and the discussion of soil dependence and the normalized concentration index. The experiment used 18 lined paddies, six treatments, one clay-loam soil and CLXL745 rice over two years. Results distinguish organic arsenic reductions of 27–80% from inorganic arsenic reductions of at most 33%; AWD15LF was not significantly different from flooding for inorganic arsenic. Editorial contradiction: the page and bibliography describe a general 30–50% inorganic arsenic reduction. The approximate grain concentration ranges in the page were not independently reconstructed from supplementary Table S6 and are not reproduced here. The paper does not establish a universal best compromise or a certification benefit."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Concentrations and Health Implications of As, Hg, and Cd and Micronutrients in Rice and Emissions of CH4 From Variably Flooded Paddies",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "15b2f4d33f73b34d80580c00a38decdafab112feb3b4750aed259c686df4c2c0",
+      "citation": "Seyfferth, A. L., Limmer, M. A., Jackson, B. P., and Runkle, B. R. K. (2025). Concentrations and Health Implications of As, Hg, and Cd and Micronutrients in Rice and Emissions of CH4 From Variably Flooded Paddies. GeoHealth, 9(8), e2025GH001410. Published August 13, 2025. https://doi.org/10.1029/2025GH001410.",
+      "summary": "Six experimental paddies followed across two growing seasons produced opposing arsenic and cadmium patterns along a flooding gradient. Drier conditions generally reduced methane emissions and grain inorganic arsenic but increased cadmium. The authors reported that the driest paddy exceeded the Codex cadmium maximum in both years, while inorganic arsenic remained below the corresponding Codex rice maximum.",
+      "establishes": "The experiment supports a soil- and management-dependent trade-off involving metals and methane. It used one location, one rice cultivar and six unlined paddies in 2016 and 2017. It did not measure commercial retail rice, human toxicity or digestive bioaccessibility, and its results do not imply that all alternate wetting and drying systems exceed food limits.",
+      "relevance": "This is evidence for considering unintended contaminant changes when HMTc evaluates rice sourcing or water-saving claims. It supports examining the tested product and relevant analytes; the selection of HMTc limits and claims that certification prevents these effects require separate evidence.",
+      "links": [
+        {
+          "label": "Full research article",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12344449/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12344449/",
+            "note": "Read the primary full text: abstract, section 2.1 Experimental design, sections 3.1–3.2 and Table 1, methane results, discussion of cadmium sulfide oxidation and soil dependence, and section 5 Conclusions. Methods date the experiment to 2016–2017 and identify Jefferson rice and six paddies. The driest paddy, Paddy 6, exceeded 0.4 mg/kg cadmium in both years; inorganic arsenic remained below 0.2 mg/kg. Editorial issues: publication in 2025 does not make this an experiment five growing seasons after the 2024 paper; the stated 2016–2017 experiment dates contradict that chronology. Table 1 spans approximately −241 to +640 mV across both years; −177 and +623 mV are selected year-one paddy values, not the complete range. The proposed bioaccessibility work is future research, not a measured endpoint."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Codex maximum level for cadmium in polished rice",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "d0e0f1a2aed9aa9020c107598c9878db679ec483c14d5e16570e91ceb41aa3bd",
+      "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995. Adopted 1995; edition amended through 2025. Cadmium schedule: polished rice, maximum level 0.4 mg/kg.",
+      "summary": "The Codex contaminant standard recommends a maximum cadmium concentration of 0.4 mg/kg for polished rice, applying to the whole commodity. Its inorganic arsenic schedule separately sets a 0.2 mg/kg maximum for polished rice. The schedules use defined contaminants, commodities and portions rather than a single limit for every food.",
+      "establishes": "These are international food-standard concentrations, not daily intake allowances or a finding that exposure below a concentration has zero risk. Codex recommendations have to be distinguished from the rules adopted by individual jurisdictions and from requirements for infant foods or other rice products.",
+      "relevance": "The cadmium row explains the comparison used in the cited paddy experiment. It lets readers understand how experimental grain could be below the arsenic benchmark while exceeding a separate cadmium benchmark, without treating the Codex value as an HMTc certification limit or a universal domestic legal rule.",
+      "links": [
+        {
+          "label": "Codex contaminant standard, 2025 edition",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf",
+            "note": "Read the official 86-page PDF front matter and scope/definitions, printed pages 3–5, plus the arsenic and cadmium schedules on printed pages 57–59. The document identifies its amendments through 2025. The cadmium definition is total cadmium and the polished-rice row is 0.4 mg/kg, whole commodity; the inorganic-arsenic polished-rice row is 0.2 mg/kg. The general cereal cadmium row excludes the separately listed rice category. Scope describes recommended limits in international trade; the document alone does not prove adoption as binding law in every jurisdiction or establish product-certification performance."
+          }
+        ]
+      },
+      "kind": "International standard"
+    },
+    "4": {
+      "referenceTitle": "EU maximum level for cadmium in polished rice",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "f45b8161298f51a38aee33fa8de2d3dd386457e2b3983fe885f5295ab12d4149",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. Official Journal L 119, May 5, 2023. Original act, Annex I, point 3.2.12.3.",
+      "summary": "The cited original EU regulation sets a cadmium maximum of 0.15 mg/kg for the category containing rice, quinoa, wheat bran and wheat gluten. The neighboring 0.10 mg/kg cereal limit expressly excludes that separate category. Other rice uses and infant foods have distinct contaminant categories and conditions.",
+      "establishes": "This is a binding EU food-concentration requirement within the regulation’s commodity and application rules, rather than an exposure-dose benchmark. The reviewed document is the original 2023 act; this source-specific review does not certify that every later amendment or transitional condition has been checked for a particular product in 2026.",
+      "relevance": "The rule supplies an EU comparator for the irrigation experiments discussed on this page. Any HMTc comparison must use the correct rice category, measurement basis and applicable version before concluding that an irrigation regime or tested lot meets the market requirement.",
+      "links": [
+        {
+          "label": "Original EU Regulation 2023/915",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Read the official original act, Articles 2–3 and Annex I cadmium rows 3.2.12.1–3.2.12.5; reused the exact original act reviewed earlier in batch7-combined-exposure and checked the rice row again in the official PDF. Point 3.2.12.3 states 0.15 mg/kg for rice, quinoa, wheat bran and wheat gluten; the 0.10 mg/kg general cereal row excludes it. Editorial contradiction: the page and reference detail call 0.10 mg/kg, or 100 µg/kg, the EU polished-rice maximum. The cited original act instead gives 0.15 mg/kg, or 150 µg/kg, for rice. This record does not substitute an unexamined later consolidated version or claim universal current compliance."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "ec223a4f35738564bfc2fc44c7742a64007c6fa333530b7e9e0996bafda4f3dd",
+      "citation": "Wu, M., Wu, X., Saiz-Lopez, A., Blanchfield, P. J., Ren, H., and Zhong, H. (2025). Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers. Proceedings of the National Academy of Sciences, 122(13), e2421921122. Published March 24, 2025. https://doi.org/10.1073/pnas.2421921122.",
+      "summary": "Using about 13,000 fish-mercury observations from 164 Chinese sites sampled during 2005–2020, the study found higher methylmercury concentrations in freshwater wild fish than farmed freshwater fish across trophic classes. A machine-learning model projected an approximately 60% national-average increase in wild freshwater fish methylmercury for 2031–2060 under two climate pathways, while holding mercury emissions constant.",
+      "establishes": "The historical comparisons are observational, and the future values are conditional model projections. The 2.9–6.2-fold comparison spans trophic classes, while the reported 30.9 µg/kg mean refers to the 40 ± 5 cm size group. Some methylmercury values were estimated from total mercury. Solar radiation was an important predictor, but several possible mechanisms were proposed rather than experimentally isolated.",
+      "relevance": "The findings support reassessing fish exposure data as environmental conditions change. They do not establish that a particular supplier or product already follows the projected trend, that photochemical methylation alone causes the increase, or that an HMTc testing program has demonstrated a reduction in the modeled health burden.",
+      "links": [
+        {
+          "label": "Full research article",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/",
+            "note": "Read the primary full text: abstract and Significance, dataset description, fish-source and size/trophic comparisons, machine-learning results and climate projections, discussion of three possible solar-radiation mechanisms, limitations, and Data Collection methods. The dataset covers roughly 13,000 fish from 164 sites in China in 2005–2020. The approximately 60% near-future projection assumes constant mercury emissions under SSP2–4.5 and SSP5–8.5; it is not an observed present-day trend. The 2.9–6.2 ratios are comparisons across trophic groups, not a species-matched feeding experiment, and 30.9 µg/kg applies to the 40 ± 5 cm group. Editorial limitation: the page attributes the projection mainly to solar radiation enhancing photochemical methylation, but the paper offers three potential mechanisms and calls for mechanistic research. The assertion that an early-2000s regulatory baseline is already drifting is an interpretation, not a direct test of a specific regulatory baseline. Same exact article was also independently reviewed in batch7-aquaculture ref 1; relevance here was assessed afresh."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "FDA Closer to Zero action plan and EU maximum levels for toxic elements in foods for infants and young children",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "545c82115f3a75439a62573da0f3b01a094063c9886d22c177b42f5a9ca73944",
+      "citation": "U.S. Food and Drug Administration. Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods, program overview, accessed September 15, 2026; and Inorganic Arsenic in Rice Cereals for Infants: Action Level, Guidance for Industry, August 2020. European Commission. Commission Regulation (EU) 2023/915, original act, Annex I infant-food and rice categories.",
+      "summary": "FDA’s Closer to Zero program addresses arsenic, lead, cadmium and mercury through research, monitoring and an iterative action-level process. Its separate 2020 guidance identifies a 100 µg/kg inorganic arsenic action level for infant rice cereal. The cited EU regulation imposes category-specific food maxima, including 0.040 mg/kg cadmium in baby food and processed cereal-based food for infants and young children, and 0.10 mg/kg inorganic arsenic in rice destined for infant-food production.",
+      "establishes": "FDA guidance and an EU legal maximum have different legal status and product scopes. The FDA program explicitly acknowledges that reducing one contaminant can increase another, and says action levels are not permissible contamination levels. Neither authority’s source establishes that the cited requirements are fixed to an unchanged early-2000s occurrence baseline or that a private certification scheme guarantees protection.",
+      "relevance": "These sources explain the regulatory setting for the page’s infant-rice example and preserve the distinction between rice ingredients and finished cereal. They support continued monitoring of multiple contaminants, while HMTc’s testing frequency, limits and claims about adapting faster than regulators remain program choices requiring their own evidence.",
+      "links": [
+        {
+          "label": "FDA Closer to Zero program",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        },
+        {
+          "label": "FDA infant rice cereal guidance, 2020",
+          "href": "https://www.fda.gov/media/97234/download"
+        },
+        {
+          "label": "Original EU contaminant regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Read the official program overview, its four-element scope, research and iterative action-level descriptions, action-level interpretation, and discussion of contaminant trade-offs. FDA explicitly states that reducing one environmental contaminant can increase another and that action levels do not establish permissible contamination levels. Its listed target dates are not evidence that a proposed action level has been finalized. Editorial qualification: the source does not support an inference that regulators ignore such trade-offs or that program baselines have remained unchanged since the early 2000s."
+          },
+          {
+            "url": "https://www.fda.gov/media/97234/download",
+            "note": "Transparently reused the same-day exact primary-source review in batch5-seaweed.json ref 5, also carried into batch7-combined-exposure.json ref 5: the August 2020 guidance scope, nonbinding status and action-level sections. It applies 100 µg/kg inorganic arsenic to infant rice cereal made from any rice type; it is not a general rice or all-infant-food limit. Its publication predates the April 2021 launch of Closer to Zero. Fresh relevance here distinguishes the ingredient, finished cereal and program chronology."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Read the exact original act and checked Annex I points 3.2.20 (0.040 mg/kg cadmium, baby food and processed cereal-based food for infants and young children, as placed on the market), 3.4.1.5 (0.10 mg/kg inorganic arsenic, rice destined for infant-food production), 3.4.3 (0.020 mg/kg inorganic arsenic, baby food), and 3.1.26 (0.020 mg/kg lead, specified infant foods), together with Articles 2–3. Exact-document legal-scope research was reused from the earlier reviewed EU records and the relevant rows were checked again for this page. Ingredient and finished-food categories must not be merged. Review is of the cited original 2023 act, not an assertion that every later amendment or product-specific application has been audited."
+          }
+        ]
+      },
+      "kind": "Government sources"
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — climate adaptation and heavy-metal trade-offs (synthesis with full anchor-source records)",
+      "pageDigest": "12cacc25c42980cda8fec572b29aa27ea69e72471ebba48da3ec9dbdd232cf07",
+      "sourceDigest": "cf87c1609655cd99c28629fd4c713838dca66aca238bb030c3d5acd818b1ae4b",
+      "citation": "Pendergrass, K. (2026). Climate adaptation creates new heavy-metal trade-offs. Heavy Metal Index. Updated May 13, 2026. https://doi.org/10.83376/hmi.climate-metals-tradeoffs. Synthesis preprint.",
+      "summary": "This synthesis connects two Delaware rice experiments with a Chinese fish-mercury modeling study to argue that changing irrigation and climate can alter contaminant profiles. It provides an anchor-source inventory, a discussion of evidence gaps and proposed downstream uses. The page identifies itself as a synthesis published before external review and records no completed external reviews.",
+      "establishes": "The source documents the author’s interpretation and source selection rather than adding an independent experiment or regulatory decision. The rice studies share a research facility and investigators, and the fish result includes conditional future projections. Its mechanism and policy extensions require separate support from the original studies and applicable rules.",
+      "relevance": "This is the immediate synthesis behind the HMTc article’s rice-and-fish argument. It helps readers trace the argument, but the empirical findings, legal maxima and HMTc commercial interpretation should be evaluated separately; the synthesis is not independent validation of certification effectiveness.",
+      "links": [
+        {
+          "label": "Heavy Metal Index synthesis preprint",
+          "href": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/climate-metals-tradeoffs",
+            "note": "Read the live synthesis overview, rice trade-off and fish projection sections, limits of the evidence, anchor-source inventory, promotion criteria, peer-review state, author metadata, citation and footer. Author Karen Pendergrass, update May 13, 2026, DOI 10.83376/hmi.climate-metals-tradeoffs; no external review verdicts are recorded. The page says synthesis claims are published as preprints and is operated by the Institute of Contaminant Standards, with a Paleo Certified, Inc. footer. Editorial issues: it repeats the general 30–50% inorganic arsenic reduction and 100 µg/kg EU rice cadmium value that conflict with the original sources reviewed here; its Limmer anchor metadata incorrectly names Environmental Science & Technology and misstates the second author. It describes the rice experiments as 2016–2017 and 2021–2022, whereas the HMTc article reverses their chronology. Its phrase three independent studies should not obscure the shared rice facility and investigators. These issues were recorded for editorial follow-up; article prose was not changed."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "page": "articles/cookware-utensil-metal-leaching-pathway",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Assessing Leaching of Potentially Hazardous Elements from Cookware during Cooking: A Serious Public Health Concern",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "651a691905960d4f576978e6ca68628491a3434f4065a821aa5cb26364d57570",
+      "kind": "Journal",
+      "citation": "Ali Sultan SA, Ahmed Khan F, Wahab A, et al. Assessing Leaching of Potentially Hazardous Elements from Cookware during Cooking: A Serious Public Health Concern. Toxics. 2023;11(7):640. doi:10.3390/toxics11070640.",
+      "summary": "Pakistani cookware released metals differently with medium, duration and surface treatment. New non-anodized aluminium released lead at 5.66 mg/L into 4% acetic acid after two hours, versus 0.005 mg/L into neutral water under the corresponding condition.",
+      "establishes": "The meat experiment analysed filtered cooking liquid, with a flask control, rather than directly reporting a solid-meat serving concentration. Its stated subtraction order is inconsistent with the intended correction. “Old” cookware had been used for two months; blood measurements do not isolate cookware as their source.",
+      "relevance": "It supports testing a defined vessel–food–contact condition. HMTc cannot convert leachate concentration directly into absorbed dose, infer universal superiority from a surface label, or attribute human illness to cookware from this design.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://mdpi-res.com/d_attachment/toxics/toxics-11-00640/article_deploy/toxics-11-00640.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://mdpi-res.com/d_attachment/toxics/toxics-11-00640/article_deploy/toxics-11-00640.pdf",
+            "note": "Read original methods 2.2–2.6, tables 3/7/9/10 and discussion. Section 2.5 says A was subtracted from B, despite A being vessel filtrate. Table 9 calls results ppm; its reported 1.20 value should not silently become mg/kg of solid meat."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Detection of some heavy metals in meat cooked in different utensils",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "ddb5c39c0881cbe8b0b398337ee8b1453d278b562d2e059451f9b04e02db4dac",
+      "kind": "Journal",
+      "citation": "Mahdi MS, Farhan NM, Mouhamad RS. Detection of some heavy metals in meat cooked in different utensils. Samarra Journal of Pure and Applied Science. 2024;6(3(2)):62–69. doi:10.54153/sjpas.2024.v6i3(2).870.",
+      "summary": "The study measured six elements in meat cooked using clay, iron, copper, aluminium, Teflon and glass vessels. Reported cadmium ranged from 0.005 ppm with iron to 0.4 ppm with Teflon; lead was highest with iron at 1.0 ppm.",
+      "establishes": "The brief methods do not report a raw-meat control, cooking time and temperature, replication, or a detailed statistical protocol. The reported between-vessel differences therefore do not establish that vessel material alone caused an exactly quantified increase.",
+      "relevance": "It is evidence of differing cooked-meat measurements under the reported setup. HMTc should treat absolute concentrations and causal attribution cautiously rather than using this small report to rank all cookware or quantify population risk.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://sjpas.com/index.php/sjpas/article/download/870/286"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://sjpas.com/index.php/sjpas/article/download/870/286",
+            "note": "Read publisher PDF methods and all element-result sections via web extraction after direct download returned 403. Figures report concentrations, not uncertainty or before/after increments. Meat was procured from butcher shops; the source does not document the article’s tightly controlled one-batch design."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "INVESTIGATION OF METALS RELEASED FROM IMPORTED COOKWARE COLLECTED FROM A LOCAL MARKET IN RIYADH, SAUDI ARABIA",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "5ab9ad9a3e8d995ce46f6c08788d53e393a6699169bd08f6b50ae64f784c63eb",
+      "kind": "Journal",
+      "citation": "Mohammed Alrajhi I, Idriss H. Investigation of metals released from imported cookware collected from a local market in Riyadh, Saudi Arabia. Revista Internacional de Contaminación Ambiental. 2021;37:21–26. doi:10.20937/RICA.53561.",
+      "summary": "The researchers boiled 0.9 L of distilled water for 30 minutes in 46 aluminium cookware items and analysed ten elements by ICP-OES. Table II reports detected lead at 0.099–0.184 mg/L and arsenic at 0.012–0.164 mg/L.",
+      "establishes": "These are water-leachate values, not metal concentrations in a meal. Arsenic was not speciated. Numerical ranges in the narrative conflict with the tables, and neither this limited survey nor its broad safety conclusion establishes every product’s compliance or consumer dose.",
+      "relevance": "It supports considering migration even without added acid. HMTc should retain the measured medium and reported-data limitations; a drinking-water or food ceiling cannot be applied without matching the test and applicable rule.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://www.redalyc.org/journal/370/37072384035/37072384035.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.redalyc.org/journal/370/37072384035/37072384035.pdf",
+            "note": "Read original journal paper reproduced by Redalyc, methods, tables I–II and conclusion. Publication is 2021, not local bibliography’s 2020. Narrative Pb and As maxima differ from table II; sample-number listing skips 39. Do not present internally inconsistent summaries as precise universal exposure."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Preliminary assessment of toxic metals in cookware, moulding materials and soils from manufacturing sites in southwest Nigeria, with evaluation of cookware leaching potential",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "36f6286a612a3fb0a29e3ee58001869ee4f84dfca5ef6ec475c4526b2ca14f71",
+      "kind": "Journal",
+      "citation": "Abdulrasheed ZA, Adie GU, Iniaghe PO. Preliminary assessment of toxic metals in cookware, moulding materials and soils from manufacturing sites in southwest Nigeria, with evaluation of cookware leaching potential. BMC Chemistry. 2026;20:23. doi:10.1186/s13065-026-01720-5.",
+      "summary": "Four informally produced cookware samples contained variable metals, with mean lead of 136 mg/kg. Boiling distilled water for one to three hours produced leachate below the reported 0.01 mg/L detection limit for all five measured elements.",
+      "establishes": "This separates total material content from detectable release under the tested neutral-water conditions. It does not establish zero migration, outcomes with acidic or salty foods, or human illness. Moulding-material and soil associations do not uniquely trace each pot’s metal source.",
+      "relevance": "For HMTc, it supports specifying both the material test and the contact test. A high bulk concentration alone cannot quantify consumer exposure, while a nondetect under one protocol cannot certify every use condition.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://link.springer.com/article/10.1186/s13065-026-01720-5"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1186/s13065-026-01720-5",
+            "note": "Read publisher abstract, sampling/digestion, leaching protocol, results and correlation discussion. Four pots, six moulding materials and seventeen soils; duplicate analyses are not additional independent pots. Article food-contact-limit attributions and precise battery chemistry were not independently validated."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Quantification of aluminum and heavy metal contents in cooked rice samples from Thailand markets using inductively coupled plasma mass spectrometry (ICP-MS) and potential health risk assessment",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "3dd3b1c808186db414b686854b18658b728e354bae60fd751a6f7460dafac91a",
+      "kind": "Journal",
+      "citation": "Rittirong A, Saenboonruang K. Quantification of aluminum and heavy metal contents in cooked rice samples from Thailand markets using inductively coupled plasma mass spectrometry (ICP-MS) and potential health risk assessment. Emirates Journal of Food and Agriculture. 2018;30(5):372–380. doi:10.9755/ejfa.2018.v30.i5.1680.",
+      "summary": "Rice was prepared in twenty combinations of five vessels and four water conditions, including pH 4 and pH 10. The authors found no statistically significant indication of substantial metal leaching relative to raw rice under their protocol.",
+      "establishes": "Both raw and cooked samples were oven-dried. The 76.83 mg/kg aluminium value is specifically new aluminium with tap water, not the overall cooked-rice mean. Modelled risks use assumed intake and toxicological benchmarks; total arsenic and chromium were not speciated.",
+      "relevance": "It provides a useful limited null result for HMTc’s preparation discussion. Dried-sample concentrations cannot silently become ready-to-eat serving values, and lack of statistical significance does not prove universal zero transfer.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://ejfa.me/index.php/journal/article/download/1680/1106"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://ejfa.me/index.php/journal/article/download/1680/1106",
+            "note": "Read complete methods, tables 3–7 and conclusion. Table 4 raw Al is 76.49±19.72; the abstract rounds to 76.50. Individual cooked values vary widely. Exposure calculations need attention to moisture basis and withdrawn/derived benchmarks; they do not measure clinical outcomes."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — cookware and utensils as a metal-leaching pathway (synthesis with full anchor-source records)",
+      "pageDigest": "a88cf69b15f27f863230c8a20d92ac154ccb7a21a356c15425c32f293e3c0a70",
+      "sourceDigest": "9afdf0e81c28be251f771cb1a0005461b7d7e94099283c418b463f844ebb36f5",
+      "kind": "Preprint",
+      "citation": "Pendergrass K. Cooking vessels are a post-harvest contamination pathway. Heavy Metal Index synthesis, updated 27 July 2026. doi:10.83376/hmi.cookware-utensil-metal-leaching-pathway.",
+      "summary": "The synthesis combines five studies to argue that cooking vessels can introduce metals after ingredient testing. It discusses positive migration results alongside neutral-water and rice experiments that found little or no detectable transfer.",
+      "establishes": "It is an unreviewed interpretive preprint, not another experiment. Its strong vessel-only attribution for the meat comparison exceeds the documented controls, and its single rice value does not represent all cooking conditions.",
+      "relevance": "It supplies the article’s source trail and proposed testing rationale. Shared authorship and Institute of Contaminant Standards affiliation do not add independent corroboration or demonstrate certification effectiveness.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/cookware-utensil-metal-leaching-pathway",
+            "note": "Read full narrative, limitations, author/date and peer-review state. Source-specific corrections are in references 1–5. The studies do not establish a market-wide enforcement comparison or uniquely trace the stated lead-acid battery pathway."
+          }
+        ]
+      }
+    }
+  }
+}

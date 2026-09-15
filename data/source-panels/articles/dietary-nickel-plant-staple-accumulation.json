@@ -1,0 +1,234 @@
+{
+  "page": "articles/dietary-nickel-plant-staple-accumulation",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Scientific opinion on dietary nickel exposure in the European population",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "b74c88beac395eb45872fd0df006b81577c56b7857a97d5df651f40a2bc90c0f",
+      "citation": "EFSA CONTAM Panel. Scientific Opinion on the risks to public health related to the presence of nickel in food and drinking water. EFSA Journal. 2015;13(2):4002. Supplemental context: EFSA 2020 update and Regulation (EU) 2024/1987.",
+      "summary": "The 2015 opinion assessed 18,885 food and 25,700 water results and derived a chronic tolerable daily intake of 2.8 µg/kg body weight. Cocoa, legumes and nuts had relatively high concentrations. Its sampling was geographically uneven, with about 80% from one country.",
+      "establishes": "EFSA explicitly recognizes natural and anthropogenic sources; the occurrence data do not establish that exposure occurred without pollution. The 2020 update raised the chronic TDI to 13 µg/kg body weight and separately assessed acute reactions in sensitized people. EU nickel food limits were subsequently adopted in 2024, applying from July 2025 or, for specified cereals, July 2026.",
+      "relevance": "The historical food ranking supports attention to ingredients, but not an invariant botanical baseline. Absence of EU limits in 2015 does not show that EFSA rejected limits because of plant physiology, and it is not the current legal position. Dietary intake benchmarks are distinct from product limits.",
+      "links": [
+        {
+          "label": "Original 2015 opinion, institutional repository",
+          "href": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/112301720/Nickelinfoodanddrinkingwater.pdf"
+        },
+        {
+          "label": "EFSA 2020 update",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268"
+        },
+        {
+          "label": "EU nickel maximum-level amendment",
+          "href": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://backend.orbit.dtu.dk/ws/portalfiles/portal/112301720/Nickelinfoodanddrinkingwater.pdf",
+            "note": "Read original version-of-record abstract, summary, occurrence methods and p. 39 food concentrations. Confirmed geographic imbalance and explicit natural/anthropogenic-source distinction; did not review all 202 pages."
+          },
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268",
+            "note": "Reused exact publisher abstract, summary, section 3.4.1 and conclusions reviewed in batch4-prop65 ref 8 and batch5-supplements ref 8. Fresh context distinguishes the 2015 and 2020 values."
+          },
+          {
+            "url": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf",
+            "note": "Reused complete official seven-page amendment read in batch4-prop65 ref 7, including Articles 1–2 and Annex. Fresh relevance addresses the article’s use of the historical absence of EU limits."
+          }
+        ]
+      },
+      "kind": "Scientific opinion"
+    },
+    "2": {
+      "referenceTitle": "Nickel content of food and estimation of dietary intake",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "ddda4705378bbb5810e14c87960310d9d6f8e6b03acb9dbaac803d91348cffc1",
+      "citation": "Flyvholm MA, Nielsen GD, Andersen A. Nickel content of food and estimation of dietary intake. Zeitschrift für Lebensmittel-Untersuchung und -Forschung. 1984;179:427–431. doi:10.1007/BF01043419. Author abstract reviewed.",
+      "summary": "This review estimated average Danish dietary nickel intake at 150 µg per person daily and identified cocoa, chocolate, soybeans, oatmeal, nuts and legumes as high-nickel foods. It discussed possible dietary provocation of eczema in nickel-sensitive people.",
+      "establishes": "The accessible author abstract confirms that these foods were recognized sources decades ago. It does not verify the article’s 2,221-sample count, individual concentration means or exact commodity ranking. The full tables were not reviewed. Dietary estimates do not separate natural uptake from pollution or processing inputs.",
+      "relevance": "The historical comparison is useful context, but matching high-food categories is not proof of a fixed physiological concentration or a pollution-free supply chain. It also does not establish the performance of a certification threshold.",
+      "links": [
+        {
+          "label": "Indexed author abstract",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/6395539/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/6395539/",
+            "note": "Reused exact complete author-abstract review in batch4-four-eight ref 10, corroborated by a fresh Europe PMC core abstract for DOI 10.1007/BF01043419. No full-text tables were accessed."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "3": {
+      "referenceTitle": "Assessment of exposure to nickel intake with selected cereal grains and cereal-based products",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "842c7a8535d05ad822d94169e434e43dba571692aaaf5b3b42bdb9fa91a099f2",
+      "citation": "Mania M, Rebeniak M, Orshulyak O, Postupolski J. Assessment of exposure to nickel intake with selected cereal grains and cereal-based products. Roczniki Państwowego Zakładu Higieny. 2020;71(4):371–376. doi:10.32394/rpzh.2020.0142.",
+      "summary": "The investigators tested 56 Polish-market cereal samples from 2019–2020. Grain nickel averaged 1.16 mg/kg; wholemeal flour and pasta had higher results than their refined counterparts in the sampled products.",
+      "establishes": "The study supports the reported concentration contrasts, including wholemeal flour up to 2.12 mg/kg and refined wheat flour below quantification. Its 13.4% TDI estimate concerns adults consuming cereal grains excluding rice under WHO cluster-diet assumptions. This was a market survey, not a controlled milling experiment or direct measurement of nickel partitioning into bran and germ.",
+      "relevance": "The results justify considering product composition and refinement. Calling the gradient conclusively a milling-physics effect overstates the design: different commodities, growing conditions and processing histories were not controlled. A result below quantification is not zero nickel, and a partial-diet calculation is not total exposure.",
+      "links": [
+        {
+          "label": "Original publisher PDF",
+          "href": "https://roczniki.pzh.gov.pl/pdf-182634-103130?filename=Assessment-of-exposure-to.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://roczniki.pzh.gov.pl/pdf-182634-103130?filename=Assessment-of-exposure-to.pdf",
+            "note": "Read original PDF methods, product results and exposure discussion on pp. 372–375, including sample years, flour/pasta contrasts, exclusions and adult 13.4% calculation."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Cadmium, lead, chromium and nickel in nuts on the Polish market",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "bc20794f42bf1825bb706a2133c7f4efd40fbf567119ce69bac373d523b81947",
+      "citation": "Ćwieląg-Drabek M, Nieć-Leśniak J, Białek-Dratwa A. Evaluation of Cadmium, Lead, Chromium, and Nickel Content in Various Types of Nuts: Almonds, Cashews, Hazelnuts, Peanuts, and Walnuts – Health Risk of Polish Consumers. Biological Trace Element Research. 2025;203:3913–3930; online November 6, 2024. doi:10.1007/s12011-024-04438-4.",
+      "summary": "This is the identifiable paper behind the shortened bibliography title: it measured four elements in 69 nut samples sold in Poland. Mean nickel was highest in cashews at 6.434 mg/kg; the largest individual nickel result was 11.20 mg/kg in peanuts.",
+      "establishes": "The survey documents variability across sampled nuts, including some results below quantification. It does not identify the nickel sources or establish a universal natural baseline. Its modeled hazard indices depend on assumed intake and body weight, not observed adverse outcomes. The paper’s statement that EU nickel limits were absent describes its earlier context.",
+      "relevance": "The concentration pattern supports ingredient-informed screening. It cannot make an ingredient list a substitute for testing or show that a high result is necessarily ordinary physiology. The full original title and online-versus-issue dates are clarified here while preserving the reference binding.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12174183/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12174183/fullTextXML",
+            "note": "Read abstract, sample preparation, detection/quantification limits, concentration results and discussion of country variation; exact source identity matches authors, sample count and reported cashew/peanut values."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Dietary exposure assessment to nickel through the consumption of poultry, beef, and pork meat for different age groups in the Italian population",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "caed80cc2cc363e48f7767a1d4d03d3623a042d407f540c7d7d1efc05e6e8a5d",
+      "citation": "Manfredi A, Varrà MO, Zanardi E, et al. Dietary exposure assessment to nickel through the consumption of poultry, beef, and pork meat for different age groups in the Italian population. Italian Journal of Food Safety. 2025;14(4):13840. doi:10.4081/ijfs.2025.13840.",
+      "summary": "The study measured 809 muscle-meat samples. Mean nickel was 0.016 mg/kg in poultry, 0.010 in beef and 0.009 in pork; between-meat differences were not statistically significant. Modeled contributions from each meat type were below 1% of the chronic TDI across age groups.",
+      "establishes": "This supports low average muscle-meat exposure under the study’s consumption assumptions. Individual concentrations were higher, reaching 0.606 mg/kg in beef. The authors explicitly lacked feed, farming and environmental data needed to attribute sources. The results do not cover all animal tissues, offal or total dietary exposure.",
+      "relevance": "The muscle-versus-plant comparison is informative, but it cannot prove that nickel enters food only through plant physiology or that animal tissues bypass plant-derived feed exposure. Low mean concentration is not evidence that contamination pathways are absent.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12679953/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12679953/fullTextXML",
+            "note": "Read abstract, analytical and dietary-exposure methods, Table 1, population estimates and discussion explicitly limiting source attribution."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Occurrence and Exposure Assessment of Nickel in Zhejiang Province, China",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "e3ca011125758fecc35305f6c080071d6d7566254a8c33349dac0682dbd2b26c",
+      "citation": "Han J, Zhang R, Tang J, et al. Occurrence and Exposure Assessment of Nickel in Zhejiang Province, China. Toxics. 2024;12(3):169. doi:10.3390/toxics12030169.",
+      "summary": "The survey tested 2,628 food samples collected in 2018–2019. Five bean samples averaged 3.094 mg/kg. A joint high-consumption/high-concentration scenario estimated 21.57 µg/kg body weight daily for children aged 0–6, exceeding the 13 µg/kg chronic TDI.",
+      "establishes": "The high-end result is a modeled scenario, not measured individual intake or injury. The bean estimate rests on only five samples, including one soybean result of 9.21 mg/kg. The paper applies a 1 mg/kg regulatory comparator too broadly and later acknowledges that its category mismatch could overestimate exceedance rates.",
+      "relevance": "The article repeats the study’s mistaken classification of beans as exceeding a national nickel limit. Neither this market survey nor its modeled exposure isolates a pollution-free botanical baseline; the discussion recognizes environmental and processing sources. The relevant standard’s actual category scope is clarified in reference 7.",
+      "links": [
+        {
+          "label": "Original article full text",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10975410/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10975410/fullTextXML",
+            "note": "Read sampling years and category counts, Tables 1 and 3, exposure modes, regulatory-comparator paragraph, source discussion and limitations. The paper has inconsistent category counts and duplicated mode descriptions; the reported scenario is retained as the authors’ model, not independently validated."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "National food safety standard: maximum levels of contaminants in food (GB 2762-2022)",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "092c5846f6bab7d571e1453cabfca053949ca4ea4bf256e0ee8b2c0c85a229b6",
+      "citation": "National Health Commission and State Administration for Market Regulation, China. GB 2762-2022, National Food Safety Standard: Maximum Levels of Contaminants in Food. Issued June 30, 2022; effective June 30, 2023. Supersession context: GB 2762-2025, effective September 2, 2026.",
+      "summary": "Table 6 of the 2022 Chinese standard sets a nickel limit of 1 mg/kg for hydrogenated vegetable oils and oil/fat products containing hydrogenated or partially hydrogenated oils. It does not set that nickel limit for beans.",
+      "establishes": "The standard applies limits by named food category. Beans appear under a separate chromium provision, which must not be confused with nickel. The cited 2022 edition has since been replaced by the 2025 edition; the reviewed USDA translation reports the same narrow nickel category in that replacement.",
+      "relevance": "The claim that all five bean samples violated GB 2762-2022 is unsupported. It therefore cannot demonstrate that China set a bean limit below intrinsic nickel content. A cross-category numerical comparison is not a legal exceedance.",
+      "links": [
+        {
+          "label": "Original Chinese 2022 standard, public reproduction",
+          "href": "https://file4.foodmate.net/foodvip/biaozhun/2022/GB2762-2022.pdf"
+        },
+        {
+          "label": "USDA translation of the replacement 2025 standard",
+          "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://file4.foodmate.net/foodvip/biaozhun/2022/GB2762-2022.pdf",
+            "note": "Read original Chinese PDF cover, application principles and Table 6; confirmed the exact hydrogenated-oil category and distinguished the adjacent chromium table. This is a public reproduction of the standard, not an official-hosted copy."
+          },
+          {
+            "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf",
+            "note": "Reused exact CH2025-0202 review in batch4-four-eight ref 6: report highlights, replacement foreword and sections 4.5–4.7. USDA labels the translation unofficial; supplied for current status, not silently substituted for the cited 2022 edition."
+          }
+        ]
+      },
+      "kind": "Standard"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — dietary nickel as an intrinsic plant-staple trait (synthesis with full anchor-source records)",
+      "pageDigest": "ad58c428038228cafc65207df4473277ad53aec272aeda6557e8bbef79892b06",
+      "sourceDigest": "1eadcb57500cf1336d03c2027d6f776f3eb373e73dba342b9eafd8bcf017e8de",
+      "citation": "Pendergrass K. Dietary nickel has an irreducible botanical floor in specific plant staples… Heavy Metal Index. Updated August 11, 2026. doi:10.83376/hmi.dietary-nickel-plant-staple-accumulation. Preprint.",
+      "summary": "The current synthesis describes natural plant uptake alongside soil and post-harvest inputs. Its August 11 revision expressly corrects earlier claims that nickel cannot signal contamination, that EU food limits were absent and that China’s 1 mg/kg nickel limit applied to beans.",
+      "establishes": "The displayed external-verdict log remains empty and labels the work a preprint, although the revision note mentions external review. The source acknowledges that its anchor studies do not directly establish the plant-essentiality mechanism or quantify an irreducible crop concentration.",
+      "relevance": "This article retains claims that the cited synthesis now explicitly retracts or qualifies. The updated synthesis supports a narrower interpretation: food identity can inform nickel expectations, while a measured concentration cannot alone identify its source. It does not independently validate the certification program or eliminate the need to investigate elevated results.",
+      "links": [
+        {
+          "label": "Current synthesis and review state",
+          "href": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex: primary-source review and explicitly identified reuse with fresh page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/dietary-nickel-plant-staple-accumulation",
+            "note": "Read dated author record, revised overview, geographic-skew caveat, provisional-status correction list and empty external-verdict log. The article predates the source’s August 11 correction; no completed formal review is inferred."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}
