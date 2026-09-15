@@ -1,0 +1,21 @@
+[
+  {
+    "page": "articles/bivalve-cadmium-amplification",
+    "number": "1",
+    "referenceTitle": "Single-particle ICP-MS characterisation of cadmium nanoparticle forms in mussels",
+    "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+    "sourceDigest": "088c90a8a4ce4008111836412bfd734539a3e5333bc23cad5eb31bd9572f47f4",
+    "reviewed": "2026-09-15",
+    "reason": "Identifier mismatch: no unique Bao 2024 cadmium-nanoparticle mussel study was identified. The explicitly linked HMI anchor gives DOI 10.1093/jaoacint/qsae024, whose primary full text is a different article by Bruvold, Valdersnes, Loeschner and Bienfait on gold nanoparticle method validation. Do not publish that unrelated paper under the claimed Bao/cadmium title.",
+    "attempts": [
+      {
+        "url": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification",
+        "note": "Read Bao anchor and explicit DOI destination. HMI labels it cadmium nanoparticle characterization, but its cited identifier contradicts that description."
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11223760/",
+        "note": "Read primary full text, metadata, abstract, sample preparation, validation design and conclusion. Actual title: Validation of a Method for Surveillance of Nanoparticles in Mussels Using Single-Particle Inductively Coupled Plasma-Mass Spectrometry; Journal of AOAC International 107(4):608–616 (2024). Gold spikes and Ti/Cr/Cu demonstrations, not Cd. It cannot verify no-excretion, lifelong accumulation or sediment-porewater claims."
+      }
+    ]
+  }
+]

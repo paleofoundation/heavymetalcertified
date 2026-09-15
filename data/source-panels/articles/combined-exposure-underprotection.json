@@ -1,0 +1,168 @@
+{
+  "page": "articles/combined-exposure-underprotection",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Cumulative risk assessment of the dietary heavy metal and aluminum exposure of Finnish adults",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "b1c9dbf72d390e331ba463fa3018d711b1bb0e96eae4f6e02989f01bd6f27fab",
+      "citation": "Suomi J, Tuominen P. Cumulative risk assessment of the dietary heavy metal and aluminum exposure of Finnish adults. Environmental Monitoring and Assessment. 2023;195:809. DOI: 10.1007/s10661-023-11427-y.",
+      "summary": "This Finnish dietary model found average hazard indices above one for neurological and kidney effects across adult age groups. The six-chemical neurological model estimated an index above one for 99% of women aged 25–34 and 97% aged 35–44.",
+      "establishes": "An index above one flags concern under the model, not observed injury. Different endpoints use different chemical groups. The six-chemical pilot depends on uncertain potency factors spanning species and central versus peripheral nervous-system effects.",
+      "relevance": "It supports examining cumulative dietary exposure. It does not demonstrate that every individual exposure met its reference value, prove all compliant products unsafe, or validate HMTc’s eight-metal panel.",
+      "links": [
+        {
+          "label": "Original research PDF",
+          "href": "https://link.springer.com/content/pdf/10.1007/s10661-023-11427-y.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/s10661-023-11427-y.pdf",
+            "note": "Read abstract, methods pp. 1–3, Table 2 and results/Tables 3–5 pp. 6–9, and conclusions p. 11. Sample is 1,295 adults aged 25–64 plus 413 aged 65–74, not 1,295 across both groups. National monitoring can target higher-risk products; lower-bound nondetect treatment and speciation assumptions add uncertainty. Pregnant participants were insufficient for separate analysis. The paper calls the six-chemical pilot indicative. No comparative cleanest-diet ranking or demonstrated compliance with every individual benchmark was established."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Cadmium dietary exposure assessment, 91st meeting addendum",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "2a72a633b05e0d4b6e93e80c6c6a0d6e3e604a3b4a60d78e98ceccc1875a8c21",
+      "citation": "FAO/WHO JECFA. Cadmium: dietary exposure assessment. In: Safety evaluation of certain contaminants in food, ninety-first meeting. WHO Food Additives Series 82. Geneva: WHO and FAO; 2023, pp. 3–55. First draft by P Cressey, PE Boon and JC Leblanc. Running headers say 2022.",
+      "summary": "The assessment reviews dietary cadmium against the existing monthly intake benchmark of 25 µg/kg body weight. New national estimates included a mean of 96% of that benchmark in Chinese children aged 4–11. The benchmark itself was not reassessed.",
+      "establishes": "A separate 96% cocoa scenario for ages 0.5–12 appears as history from the 77th meeting and was considered likely overestimated. These are cadmium-only exposure estimates, not mixture hazard indices.",
+      "relevance": "This supports considering the whole diet, with correct population and scenario attribution. A cadmium ratio of 0.96 cannot alone establish a combined index above one; compatible endpoint data and other exposures are needed.",
+      "links": [
+        {
+          "label": "JECFA monograph PDF",
+          "href": "https://www.inchem.org/documents/jecfa/jecmono/v82je01.pdf"
+        },
+        {
+          "label": "WHO publication record",
+          "href": "https://www.who.int/publications/i/item/9789240060760"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.inchem.org/documents/jecfa/jecmono/v82je01.pdf",
+            "note": "Read title/copyright, chapter opening pp. 3–7, national summary p. 27 and evaluation pp. 43–45. The historical cocoa calculation on p. 5 combines a high cocoa estimate with whole-diet exposure that already includes cocoa, creating possible double counting; it is not the new 91st-meeting estimate. The new review includes 44 national studies and distinguishes chronic accumulation from brief childhood exceedance. Title/copyright date is 2023, running headers 2022; preface incorrectly gives November 2020, conflicting with WHO meeting metadata."
+          },
+          {
+            "url": "https://www.who.int/publications/i/item/9789240060760",
+            "note": "Read publication metadata and overview: WHO posted this 362-page volume on March 31, 2023 and identifies the 91st meeting as February 1–12, 2021. Direct IRIS download failed; the full primary monograph was obtained from the IPCS INCHEM archive."
+          }
+        ]
+      },
+      "kind": "Expert assessment"
+    },
+    "3": {
+      "referenceTitle": "Update of the risk assessment of inorganic arsenic in food",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "3d3a69156171f9f4dae9662b73e2801e95961dba82b54fdc0ea260e4bdccc303",
+      "citation": "EFSA CONTAM Panel. Update of the risk assessment of inorganic arsenic in food. EFSA Journal. 2024;22:e8488. Adopted November 28, 2023. DOI: 10.2903/j.efsa.2024.8488.",
+      "summary": "EFSA selected a skin-cancer reference point of 0.06 µg inorganic arsenic/kg body weight/day. Adult margins of exposure ranged from 2 to 0.4 for mean exposure and 0.9 to 0.2 for high exposure; the panel identified a health concern.",
+      "establishes": "The margin divides the reference point by estimated exposure. EFSA did not establish a low-concern margin or tolerable intake. This is an inorganic-arsenic assessment, not a multi-metal hazard-index calculation.",
+      "relevance": "It adds evidence of concern from dietary arsenic. Its cancer-based margins cannot simply be added to cadmium intake fractions or Finnish neurological indices to validate HMTc’s combined-risk claims.",
+      "links": [
+        {
+          "label": "Full EFSA opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2024.8488"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2024.8488",
+            "note": "Read p. 1, Table 34 and §3.6 on pp. 144–145, and conclusions §§4.10–4.12 on p. 156 of the 191-page PDF. Editorial contradictions: the range 2–0.4 is not entirely below one, and a positive ratio is not a negative safety margin. EFSA explicitly declines to define an MOE of low concern. MOE 1 corresponds to the reference point associated with a 5% relative increase in background skin-cancer incidence, not an established universal safe/unsafe threshold. Direct publisher HTML/download was blocked locally; web PDF supplied these sections."
+          }
+        ]
+      },
+      "kind": "Expert assessment"
+    },
+    "4": {
+      "referenceTitle": "Maximum levels for certain contaminants in food",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "b7ab00f1e6e8b7a680ee83fba7f104486be12cb9839b8d66f20b32f407679225",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L 119, May 5, 2023, pp. 103–157. Original act.",
+      "summary": "The regulation sets binding contaminant concentrations for specified food categories, including separate lead, cadmium, mercury and arsenic sections. Species, edible portions and processing conditions matter.",
+      "establishes": "Articles 2–3 prohibit covered foods above applicable maxima and address concentration, dilution and compound foods. These product limits are different from body-weight-based dietary exposure benchmarks and do not calculate a consumer’s mixture hazard index.",
+      "relevance": "It documents the category-specific legal framework the article critiques. Comparing HMTc with that framework requires matching foods and species; regulatory compliance alone does not measure a person’s total diet.",
+      "links": [
+        {
+          "label": "Original EU regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Reused exact original-act research in batch4-four-eight.json ref 16, then freshly read Articles 2–3 and Annex I lead infant-food rows, cadmium section opening, mercury section opening and arsenic rows on physical pp. 4–5, 30–31, 36, 38–39. This review addresses the cited original act, not every later amendment. Separate numerical rows do not by themselves establish how every regulatory risk assessment treated coexposure."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Action level for inorganic arsenic in infant rice cereal",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "750aa16ebcbdb34f20bf7b1cc3f42b67cddfa98a6aacaa7889b230666cc3081a",
+      "citation": "US Food and Drug Administration. Inorganic Arsenic in Rice Cereals for Infants: Action Level. Guidance for Industry. Final guidance, August 2020.",
+      "summary": "FDA recommends an action level of 100 µg/kg, equivalent to 100 ppb, for inorganic arsenic in infant rice cereal. The guidance covers infant cereal made from all rice types.",
+      "establishes": "This is nonbinding enforcement guidance for a defined food category and arsenic species, not a legal safe-intake allowance or a limit for every infant food. It predates the Closer to Zero action plan.",
+      "relevance": "It illustrates a product-specific control within the wider diet. Meeting this action level does not establish total exposure to other metals, while exceeding a mixture model does not prove this cereal guidance was violated.",
+      "links": [
+        {
+          "label": "FDA final guidance",
+          "href": "https://www.fda.gov/media/97234/download"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/97234/download",
+            "note": "Reused the exact same-day primary-source review in batch5-seaweed.json ref 5: scope, nonbinding status and action-level sections. Fresh relevance distinguishes food concentration from cumulative dietary intake. The original guidance is August 2020; Closer to Zero began in April 2021. No certification benefit or general absence of FDA enforcement authority follows from this source."
+          }
+        ]
+      },
+      "kind": "Guidance"
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — combined-exposure underprotection (synthesis with full anchor-source records)",
+      "pageDigest": "8c39881dddabeb33fc197ad41411eb1444960eea69cf431c703d100b67ae1a8b",
+      "sourceDigest": "e3c3a237ece7f52d191fcb2d6c317b4230ddcd90f86e80bb7d784a751c8e31e4",
+      "citation": "Pendergrass K. Single-metal regulatory limits systematically underprotect against dietary heavy-metal exposure. Heavy Metal Index. Updated May 13, 2026. DOI: 10.83376/hmi.combined-exposure-underprotection. Preprint synthesis.",
+      "summary": "The author brings together the Finnish mixture model, JECFA cadmium exposure review and EFSA inorganic-arsenic assessment to argue for cumulative regulation. The page explicitly reports no completed external peer review.",
+      "establishes": "This is an interpretive synthesis, not another independent exposure study. The three anchor sources use different populations, endpoints and metrics; their findings cannot be treated as one calculated mixture result.",
+      "relevance": "It supplies the article’s underlying argument and source trail. Its affiliation with the Institute of Contaminant Standards and Paleo Certified should remain visible when readers assess the related HMTc recommendation.",
+      "links": [
+        {
+          "label": "HMI synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection",
+            "note": "Read overview, all three anchor discussions, convergence/limitations, promotion and peer-review sections, source list, author metadata and operator footer. No external verdict is recorded; classified as Preprint. The synthesis misnames Suomi’s journal and omits the additional 413 older participants, treats all MOEs in a range starting at 2 as below 1, and incorrectly infers mixture HI >1 from cadmium at 96% of PTMI. Its cocoa claim conflates the historical 77th-meeting scenario with the new 91st assessment. These are editorial issues in the cited synthesis and article; no prose was edited."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

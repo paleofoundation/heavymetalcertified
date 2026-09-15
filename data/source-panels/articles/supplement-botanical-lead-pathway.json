@@ -1,0 +1,187 @@
+{
+  "page": "articles/supplement-botanical-lead-pathway",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "The quality and safety of Rhodiola rosea supplements on the U.S. market: An analysis of biomarkers, heavy metals, and pesticide residues",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "e632de88aa210340ed2a7c33e5a1e1669401230694dfb576ce1a2feaeabbf5af",
+      "citation": "Porwollik S, Jafari M. PLOS One. 2026;21(1):e0341070. doi:10.1371/journal.pone.0341070.",
+      "summary": "Ten Rhodiola products bought from Amazon in 2024 were tested: seven capsules and three tinctures. All capsules contained measurable arsenic, cobalt and lead; the tinctures were below the reported analytical thresholds.",
+      "establishes": "Capsule total arsenic ranged from 21–393 ppb and lead from 9–88 ppb; cobalt reached 733 ppb. Total arsenic was not speciated. The 500 mg serving estimate is product-specific. Below detection does not mean metal-free or universally “clean.”",
+      "relevance": "It supports a variable, measurable metal burden in this small product sample. It does not establish contamination prevalence across supplements, prove environmental uptake as the source, or rank supplement enforcement against food enforcement.",
+      "links": [
+        {
+          "label": "Original article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12810810/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12810810/fullTextXML",
+            "note": "Read original article methods, sampling rationale, Table 1 and metals discussion; selected by brand, price, availability and separate manufacturing sites. Read the product-specific 200 ng arsenic/360 ng cobalt estimate. Kept author replies appended in the XML distinct from the final article. No independent verification of “first-ever” survey priority or current market representativeness."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Comparison of Regulations for Arsenic and Heavy Metals in Herbal Medicines Using Pharmacopoeias of Nine Counties/Regions",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "da3771a0de1c3de77253ffc93690b78602b71499647314172885602b23aa34bb",
+      "citation": "Inada I, Kiuchi F, Urushihara H. Therapeutic Innovation & Regulatory Science. 2023;57(5):963–974. doi:10.1007/s43441-023-00532-2; associated correction doi:10.1007/s43441-023-00539-9. Supplementary US context: 21 CFR 111.70 (2025 edition) and FDA Import Alert 99-42 (August 26, 2026).",
+      "summary": "The study compared editions current in December 2021 for Brazil, China, Europe, Hong Kong, India, Japan, Korea, the US and Vietnam, plus WHO and ISO documents. Limits, analytical methods and monograph coverage differed.",
+      "establishes": "The article’s Taiwan/Britain list is incorrect. The Indian document was Indian Pharmacopoeia 2018; the Ayurvedic Pharmacopoeia was expressly excluded. WHO values were not a universally followed floor. The study compared written standards, not enforcement intensity or certification outcomes.",
+      "relevance": "It supports jurisdiction and matrix distinctions, not a category-wide regulatory void. Separately, US rules require manufacturers to establish finished-batch contaminant specifications, and FDA’s current import alert lists Ayurvedic supplements for lead/mercury detention. These are distinct primary sources limiting the article’s “nothing catches it” claim.",
+      "links": [
+        {
+          "label": "Original comparison, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400675/fullTextXML"
+        },
+        {
+          "label": "Published correction, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400671/fullTextXML"
+        },
+        {
+          "label": "Official 2025 CFR, section 111.70",
+          "href": "https://www.govinfo.gov/content/pkg/CFR-2025-title21-vol2/xml/CFR-2025-title21-vol2-sec111-70.xml"
+        },
+        {
+          "label": "FDA heavy-metal import alert",
+          "href": "https://www.accessdata.fda.gov/CMS_IA/importalert_1167.html"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400675/fullTextXML",
+            "note": "Read methods, Table 1, lead/cadmium limits, discussion and limitations. Most listed lead limits were no higher than WHO’s 10 ppm; several were 5 ppm. The study excluded separate Indian traditional-medicine pharmacopoeias and some non-pharmacopoeial standards. It is a historical standards comparison, not a current legal audit."
+          },
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400671/fullTextXML",
+            "note": "Read correction: changes one Discussion subheading from (B) to (2); does not change the jurisdiction list or substantive findings."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title21-vol2/xml/CFR-2025-title21-vol2-sec111-70.xml",
+            "note": "Read full section in the official April 1, 2025 annual edition, especially paragraph (e): manufacturer-established finished-batch specifications must include contamination that may adulterate the product. This is not a universal numerical FDA heavy-metal ceiling or a requirement for one particular private certification."
+          },
+          {
+            "url": "https://www.accessdata.fda.gov/CMS_IA/importalert_1167.html",
+            "note": "Read August 26, 2026 publication, opening detention guidance and named Baidyanath Ayurvedic supplement entries for lead and mercury. Documents a real enforcement mechanism, not proof of comprehensive screening. The guidance itself is nonbinding; its stated statutory basis concerns adulteration and import refusal."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Lead poisoning from Ayurvedic treatment: a further case.",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "725a591a1b724c11ff915f94a2c45f4a6112b92f81854d383c4a00ecf0008c63",
+      "citation": "Ciocan C, Mansour I, Beneduce A, et al. La Medicina del Lavoro. 2021;112(2):162–167. doi:10.23749/mdl.v112i2.10576.",
+      "summary": "An Indian sailor treated in Italy had blood lead reported at 102 µg/dL after Ayurvedic medicine use. Testing two preparations, including three mixtures of one preparation, found lead up to 23,043.02 mg/kg and mercury up to 145,710.64 mg/kg. He received three chelation cycles.",
+      "establishes": "This documents one severe poisoning episode, not population prevalence. The soil comparison is indirect: Table 3 uses Uttar Pradesh data for most elements and all-India mercury data. No product mercury speciation was performed; poor inorganic-mercury absorption was offered as a possible explanation, not established causation.",
+      "relevance": "It supports the existence of extremely contaminated preparations and the need to investigate product exposure. It does not prove intentional addition in every product, sulphide identity, universal absence of food analogues, or that testing is the only possible preventive measure.",
+      "links": [
+        {
+          "label": "Original case report, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8095331/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8095331/fullTextXML",
+            "note": "Read clinical history, occupational-source investigation, product ICP-MS methods, Table 3 and concluding interpretation. Distinguished initial 102 µg/dL result from later admission values. Recorded the soil-table geographic footnote and the authors’ tentative mercury explanation; source species were not measured."
+          }
+        ]
+      },
+      "kind": "Case report"
+    },
+    "4": {
+      "referenceTitle": "Case of lead poisoning secondary to intake of herbal medicine for diabetes mellitus in a tertiary care hospital in Kerala",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "1c53858069dbf66f0ee902c164e7863690b78fdc98ab7b9e0a28d9f147b19858",
+      "citation": "Thomas J, Sebastian R, Anil Kumar CR, Rafi AM. Endocrinology, Diabetes & Metabolism Case Reports. 2024;2024(2):23-0066. doi:10.1530/EDM-23-0066.",
+      "summary": "A 58-year-old woman in Kerala developed lead poisoning after about 1.5 months taking an internet-purchased herbal diabetes product. Blood lead was 121.20 µg/dL; the reported state drug-analyst result for the capsule was approximately 40,657 ppm lead.",
+      "establishes": "The case supports the clinical hazard of that tested product. It does not establish market prevalence, the manufacturer’s intent, a confirmed Rasa Shastra formulation, or equivalent mercury contamination. Comparison with 10 ppm is concentration-based, not a million-fold estimate of patient risk.",
+      "relevance": "This is a strong individual warning signal, but it cannot prove that all online products bypass enforcement. The original investigation itself involved a state drug analyst. The API comparator should be read with reference 5’s edition and applicability limits.",
+      "links": [
+        {
+          "label": "Original Kerala case report, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11227049/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11227049/fullTextXML",
+            "note": "Read case history, treatment, Table 2, product-testing statement and interpretation. Table 2 reports 40,657.71 ppm; prose rounds to 40,657 ppm. Original capsule was Sheopal’s Herbal Diabetes Care Capsule; no product mercury-speciation or intentional-addition test was described."
+          }
+        ]
+      },
+      "kind": "Case report"
+    },
+    "5": {
+      "referenceTitle": "Ayurvedic Pharmacopoeia of India permissible lead limit for herbal preparations",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "65443e99720c38dac37f2c34310c45a1cb43cdce02575dcdae029649e2b474d6",
+      "citation": "Government of India, Ministry of AYUSH / Pharmacopoeia Commission for Indian Medicine & Homoeopathy. Ayurvedic Pharmacopoeia of India, Part I, Volume IX, first edition, 2016. General Notices and Appendix 3.1.1, Table 1, p.117. Original text reviewed in a third-party reproduction.",
+      "summary": "The 2016 volume’s Appendix 3.1.1 gives permissible heavy-metal concentrations of lead 10 ppm, arsenic 3 ppm, cadmium 0.3 ppm and mercury 1 ppm. General Notices direct covered articles to monograph limits, or appendix limits where none are specified.",
+      "establishes": "The lead comparator is 10 mg/kg, not a daily exposure allowance. This review covers specified sections of the historical edition, not the entire pharmacopoeia, later amendments or legal applicability to every finished herbo-mineral preparation.",
+      "relevance": "It verifies the numerical benchmark behind the case report’s approximately 4,066-fold comparison. That calculation does not independently establish the Kerala product’s legal classification or a universal limit for all Ayurvedic products, and does not measure the increase in health risk.",
+      "links": [
+        {
+          "label": "API Volume IX: reproduced original text",
+          "href": "https://www.scribd.com/document/359600700/API-Vol-9-pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.scribd.com/document/359600700/API-Vol-9-pdf",
+            "note": "Read actual 2016 title/publisher pages, Legal/General Notices and Appendix 3.1.1 Table 1 on printed p.117, rather than Scribd’s generated description. Identity matches the government publication’s title pages also retrieved through a university mirror. Official PCIM&H endpoints failed; a separately retrieved commission RTI excerpt explicitly corroborates Part I Volume IX and the four numerical limits. Current amendments were not verified."
+          },
+          {
+            "url": "https://pcimh.gov.in/WriteReadData/RTF1984/FX-18-4.5.ii.RTI-Recived-info-provided-2021-22.pdf",
+            "note": "Read the search-retrieved official RTI table entries PCIMH/R/X/21/00003, /00004 and /00005, which name API Part I Volume IX and Pb10/As3/Cd0.3/Hg1 ppm. Direct PDF retrieval failed. Used solely to corroborate the identity and numerical statement; no claim of reading the complete RTI file or current pharmacopoeia."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — supplements and botanicals as a distinct heavy-metal pathway (synthesis with full anchor-source records)",
+      "pageDigest": "6006d1108444401d35f7f024ec4096f9936213377340c69fd8e2687de2bde0c6",
+      "sourceDigest": "0a1d82659ac6f3ebcc97669613fed433b00bbbfeed169601a70f4ef71962e53b",
+      "citation": "Pendergrass K. Dietary supplements and traditional herbal preparations are a distinct, under-surveilled heavy-metal exposure pathway whose contamination magnitudes reach thousands of times conventional food limits under materially weaker enforcement. Heavy Metal Index. Updated July 27, 2026. doi:10.83376/hmi.supplement-botanical-lead-pathway. Preprint.",
+      "summary": "This synthesis joins the same retail survey, pharmacopoeia comparison and two case reports. It acknowledges that the case reports cannot establish prevalence and that the small survey is not a market-wide occurrence distribution.",
+      "establishes": "The page reports no external reviews. It is an interpretive preprint by the article’s author, not independent corroboration. Its Inada journal attribution and jurisdiction list conflict with the original article; its enforcement ranking is not measured by these studies.",
+      "relevance": "Use it to trace the author’s argument, not to validate certification effectiveness, universal statutory gaps or an unmatched upper tail across all food literature. Primary-paper limitations and the distinct FDA enforcement context remain controlling qualifications.",
+      "links": [
+        {
+          "label": "Exact HMI synthesis and review state",
+          "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original texts and explicitly identified supplementary regulatory context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway",
+            "note": "Read author/date, overview, retail and regulatory sections, uncertainty section, references and peer-review state. July 27, 2026 page says no external reviews and explicitly labels unreviewed syntheses preprints. Original Inada paper is in Therapeutic Innovation & Regulatory Science, not the Journal of Natural Medicines stated here."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

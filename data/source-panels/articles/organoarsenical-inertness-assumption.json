@@ -1,0 +1,217 @@
+{
+  "page": "articles/organoarsenical-inertness-assumption",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Effects of Dietary Intake of Arsenosugars and Other Organic Arsenic Species on Studies of Arsenic Methylation Efficiency in Humans",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "67ed2b06dafefe9831b02c88bce191b493408b4ac895abd9c3a79a314ad8201f",
+      "citation": "Davydiuk T, Tao J, Lu X, Le XC. Effects of Dietary Intake of Arsenosugars and Other Organic Arsenic Species on Studies of Arsenic Methylation Efficiency in Humans. Environment & Health. 2023;1(4):236–248. Published 21 September 2023. doi:10.1021/envhealth.3c00090.",
+      "summary": "This critical review explains that urinary DMA can arise from dietary arsenosugars and arsenolipids as well as inorganic-arsenic metabolism. It examines how this complicates methylation indices and evaluates dietary restrictions, questionnaires and urinary markers used to reduce confounding.",
+      "establishes": "It identifies a biomarker-interpretation problem, without quantifying a universal error in inorganic-arsenic exposure or proving arsenobetaine toxicity. Methylation efficiency and exposure amount are different quantities.",
+      "relevance": "For HMTc, it supports careful chemical-species identification when interpreting biomonitoring. It does not itself set a food limit, validate HMTc certification or show that EFSA’s margins are systematically optimistic.",
+      "links": [
+        {
+          "label": "Read original article: Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10594586/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10594586/fullTextXML",
+            "note": "Read primary deposited full-text XML: methylation-index definitions, organic-arsenic confounding, mitigation approaches and concluding remarks. Publisher access was blocked and PMC landing displayed a challenge. Editorial: an uncorrected quantified EFSA bias or systematic exposure underestimation is not established here."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "2": {
+      "referenceTitle": "Transformation of arsenic species from seafood consumption during in vitro digestion",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "2f74a4ea5215192772f0dfcfc1a88e3f4dd710b73e46006723b71902f1ab3d79",
+      "citation": "Liu B, Sui J, Feng R, Lin H, Han X, Sun X, Cao L. Transformation of arsenic species from seafood consumption during in vitro digestion. Frontiers in Nutrition. 2023;10:1207732. Published 12 October 2023. doi:10.3389/fnut.2023.1207732.",
+      "summary": "Cooked crab, scallop, turbot and flounder underwent simulated digestion. HPLC-ICP-MS showed approximately two- to three-fold increases in As(V) amounts for crab and scallop, while inorganic arsenic was undetected in digested fish. Separate standards experiments explored conversion under acidic conditions.",
+      "establishes": "The results demonstrate changes within this laboratory protocol. They do not measure absorption, human body burden or clinical toxicity. The proposed radical mechanism and pH effects cannot establish the fraction converted inside a living person.",
+      "relevance": "HMTc can use this to explain why food speciation and absorbed dose are distinct. It does not establish a new numeric ceiling or certify the safety of all organic arsenic compounds.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1207732/full"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1207732/full",
+            "note": "Read cooked-sample preparation, UBM-style digestion, six-species analysis, Tables 1–2, standards/pH experiments and conclusion. Triplicate analyses are not population sampling. Authors also report conversion in nitric-acid extraction; analytical preparation matters. Editorial: fold changes concern measured As(V) amounts, not a demonstrated human absorbed fraction."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Elevated arsenic level in fasting serum via ingestion of fish meat increased the risk of hypertension in humans and mice",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "0998af9d9795572007f21dfc508311389a0780e8640205f276405d29d2a815c7",
+      "citation": "Kagawa T, Ohgami N, He T, et al. Elevated arsenic level in fasting serum via ingestion of fish meat increased the risk of hypertension in humans and mice. European Heart Journal Open. 2023;3(5):oead074. Published 4 September 2023. doi:10.1093/ehjopen/oead074.",
+      "summary": "Among 2,709 Japanese adults aged 39–75, this cross-sectional analysis associated fasting serum total arsenic with hypertension prevalence. A separate mouse experiment administered a mixture containing inorganic arsenic, DMA, arsenobetaine and trimethylarsine oxide.",
+      "establishes": "Human serum arsenic was not speciated. The design cannot establish temporal causation or attribute the association to arsenobetaine; the animal mixture also cannot isolate one species.",
+      "relevance": "For HMTc, the study motivates species-specific research but supplies no product threshold or evidence that an inorganic-arsenic-only limit resolves every organic-arsenic uncertainty.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10475452/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10475452/",
+            "note": "Read human/animal methods, Figures 2–6 and limitations. Editorial: this is not a prospective outcome study. No 98% serum arsenobetaine measurement is reported; Figure 2’s adjusted model does not include fish intake. Mouse doses used allometric scaling plus a tenfold factor, not a direct typical-diet human experiment. Supplementary methods were not independently reanalysed."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "First detection of an arsenosugar phospholipid in the microalga Chlamydomonas reinhardtii",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "789a83ed57c81346b45df523491f05829f487f0f8c9e35831b4107506ed707d0",
+      "citation": "Raab A, Zhang J, Ge Y, Fernández-Mendoza F, Feldmann J. Lipophilic arsenic compounds in the cultured green alga Chlamydomonas reinhardtii. Analytical and Bioanalytical Chemistry. 2024;416:2809–2818. Published 8 January 2024. doi:10.1007/s00216-023-05122-7.",
+      "summary": "Laboratory-grown C. reinhardtii exposed to 20 µg/L arsenate for seven days contained about 57% of its arsenic as arsenolipids. Fractionation and mass spectrometry identified abundant arsenoriboside-containing phytols and compared the profile with wild Saccharina latissima.",
+      "establishes": "This characterizes an exposed freshwater model organism. It does not measure commercial spirulina, chlorella or algae oils, establish human toxicity, or demonstrate failure of routine total-arsenic digestion.",
+      "relevance": "For HMTc, it supports checking whether a method characterizes the intended chemical fraction in a particular ingredient. Commercial-product assumptions require separate data.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://link.springer.com/article/10.1007/s00216-023-05122-7"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s00216-023-05122-7",
+            "note": "Read abstract, culture/acid-digestion/fractionation methods, results and conclusion. Identified by matching Raab, year, organism and 57% finding. Editorial: bibliography uses a descriptive title. AsSugPhytol is distinguished from phospholipids and had prior marine reports; novelty is freshwater occurrence, not first detection anywhere. Nitric-acid total-As digestion was used, not shown to under-recover."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Arsenobetaine amide: a novel arsenic species detected in several mushroom species",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "f5bbce43d7d08f2a975f671442429f5648daf7be4ca33f562c3f69722baa1fe0",
+      "citation": "Walenta M, Raab A, Braeuer S, Steiner L, Borovička J, Goessler W. Arsenobetaine amide: a novel arsenic species detected in several mushroom species. Analytical and Bioanalytical Chemistry. 2024;416:1399–1405. Published 16 January 2024. doi:10.1007/s00216-024-05132-z.",
+      "summary": "The authors examined eleven selected mushroom fruiting-body collections representing four species from Austria and the Czech Republic. They isolated arsenobetaine amide, confirmed its identity using synthesis and analytical comparison, and reported 0.15–9.6% of total arsenic in the studied samples.",
+      "establishes": "This discovery establishes chemical diversity in selected fungi, including collections from contaminated regions. It is not a representative edible-mushroom survey or a toxicological test of arsenobetaine amide.",
+      "relevance": "HMTc can use it to explain why unidentified organic species should remain explicit analytical uncertainties. Neither arsenobetaine toxicity nor a numerical food limit follows from identifying a related compound.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://link.springer.com/article/10.1007/s00216-024-05132-z"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s00216-024-05132-z",
+            "note": "Read abstract, collection/processing, analytical identification, results and conclusion. The species include Amanita muscaria, so findings must not be presented as a routine food-market prevalence estimate. Editorial: the study establishes a new natural compound, not biological activity or a clinical health effect."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Inorganic arsenic in seaweed: a fast HPLC-ICP-MS method without coelution of arsenosugars",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "53c27794f9fadbbb3a1799f4b07a908a0417b42034d0cc45eabb934e256eae7e",
+      "citation": "Sim R, Weyer M, Pétursdóttir ÁH. Inorganic arsenic in seaweed: a fast HPLC-ICP-MS method without coelution of arsenosugars. Analytical and Bioanalytical Chemistry. 2024;416:3033–3044. Published 23 March 2024. doi:10.1007/s00216-024-05250-8.",
+      "summary": "This single-laboratory validation developed acid/peroxide extraction and chromatographic separation for inorganic arsenic. Certified hijiki recovery was 99 ± 9%. Tested L. digitata meristem and reproductive tissue contained 2.6 and 54 mg/kg inorganic arsenic, with total arsenic of 130 and 210 mg/kg.",
+      "establishes": "The tested dried tissues therefore differed substantially. The method measures inorganic species together after oxidation; it does not fully characterize all arsenicals, and DMA quantification has stated limitations.",
+      "relevance": "For HMTc, it supports matrix-specific validation and selecting the sampled tissue. It does not establish that every Laminaria product contains predominantly inorganic arsenic.",
+      "links": [
+        {
+          "label": "Read original study PDF",
+          "href": "https://link.springer.com/content/pdf/10.1007/s00216-024-05250-8.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/content/pdf/10.1007/s00216-024-05250-8.pdf",
+            "note": "Read collection/extraction and validation sections, conclusion, and visually checked Table 5 on p3040. Editorial: the >50% statement cites earlier literature on p3034; this study’s meristem and sori are about 2% and 26%. Aqueous extraction recovery must not be confused with total-As acid-digestion recovery."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Maximum levels for inorganic arsenic in seaweed and other foods",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "5cf4d22c461baf462f5be7a19ed08e057c588111a0789dbcdb841be61b0a6f52",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157; entered into force 25 May 2023. Original text and consolidation dated 19 August 2026.",
+      "summary": "The regulation sets binding arsenic maxima for specified food categories. The original inorganic-arsenic section covers rice products, certain infant foods and juices. The current consolidation additionally covers specified fish, crustaceans, bivalves and cephalopods; salt has a total-arsenic limit.",
+      "establishes": "Neither reviewed version lists a seaweed-specific inorganic-arsenic maximum in Annex I section 3.4. The existence of arsenic limits for other foods does not create a generic seaweed limit or establish that organic arsenic is harmless.",
+      "relevance": "HMTc must identify the actual jurisdiction, instrument and product category supporting any seaweed ceiling. Its policy of choosing the strictest regulator is separate from what this EU instrument requires.",
+      "links": [
+        {
+          "label": "Original regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        },
+        {
+          "label": "Consolidation: 19 August 2026",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Reused same-day original official-text review; freshly checked arsenic section 3.4 against this page. Editorial: the cited claim that EU2023/915 sets seaweed-specific inorganic-arsenic maxima is unsupported."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Read cached official consolidated HTML retrieved during the same-day seaweed review, with version date confirmed from EUR-Lex metadata; freshly checked all 3.4.1–3.4.9 entries. Current additions concern animal seafood, not seaweed. Fresh web access displayed a challenge; no broader national-law review is implied."
+          }
+        ]
+      },
+      "kind": "Legislation"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — the organoarsenical inertness assumption (synthesis with full anchor-source records)",
+      "pageDigest": "cd2056a81d540584ff4148f33914d337a9dac30908c4d49f215489d3f4cb13e1",
+      "sourceDigest": "9b6b00cec95f0bcfa9619d60849b12e4f7986d0aaba9aecff1d45709472bef22",
+      "citation": "Pendergrass K. The organoarsenical inertness assumption. Heavy Metal Index. Updated 13 May 2026. Preprint synthesis. doi:10.83376/hmi.organoarsenical-inertness-assumption.",
+      "summary": "The synthesis combines biomonitoring, simulated-digestion, epidemiological and analytical papers to argue that organic arsenic needs species-specific interpretation. It acknowledges gaps in human absorption evidence and commercial-algae characterization.",
+      "establishes": "The page labels itself a preprint with no external reviews. It is an interpretive synthesis, not a new experiment or an independent validation of the linked records.",
+      "relevance": "It explains the narrative used by HMTc. Shared authorship and Institute of Contaminant Standards affiliation mean it should not serve as independent corroboration or proof of certification efficacy.",
+      "links": [
+        {
+          "label": "Read synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption",
+            "note": "Read narrative, limitations, anchors, author/date and review-state sections. Editorial: prospective Kagawa design, serum arsenobetaine attribution, acid-digestion under-recovery, Sim >50% attribution and EU seaweed-limit claims require correction against originals. No audit of the full underlying corpus or its record hashes is claimed."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

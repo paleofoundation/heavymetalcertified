@@ -96,6 +96,317 @@
       }
     }
   },
+  "articles/bivalve-cadmium-amplification": {
+    "page": "articles/bivalve-cadmium-amplification",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "2": {
+        "referenceTitle": "Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health",
+        "citation": "Bruno F, Nava V, Zappalà S, et al. Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health. Frontiers in Toxicology. 2024;6:1494977. Published 13 December 2024. doi:10.3389/ftox.2024.1494977.",
+        "summary": "The September 2023 Faro Lake survey collected 80 mussels and 80 clams and measured elements in soft tissue, water and sediment. Reported mean cadmium was 0.05 and 0.08 mg/kg respectively; lead was below quantification in mussels and 0.02 mg/kg in clams.",
+        "establishes": "This local, single-period survey establishes species-specific measurements, with cadmium below the EU bivalve ceiling. It includes no finfish comparison and does not establish a universal seafood differential.",
+        "relevance": "For HMTc, the study illustrates why a tested species and tissue must accompany a result. It does not validate the article’s claimed near-limit regional outliers or a certification threshold.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2024.1494977/full"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria",
+        "citation": "Dogruyol H, Mol S, Ulusoy Ş, Atanasoff A. Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria. Biological Trace Element Research. 2024;202:5177–5189. Published online 1 February 2024. doi:10.1007/s12011-024-04084-w.",
+        "summary": "Mussels from four farms were sampled quarterly in 2019–2020, using at least 100 animals per farm and season. ICP-MS measured cadmium, lead, mercury and selenium; average cadmium ranged 0.115–0.323 µg/g and lead 0.096–0.216 µg/g.",
+        "establishes": "The exposure model found low concern under assumed adult consumption: 9.61 g/week in Türkiye and 2.50 g/week in Bulgaria. Mercury speciation was assumed, and results do not represent every consumer or harvest.",
+        "relevance": "HMTc can use this as a defined farmed-mussel dataset. It cannot establish that shellfish lead is generally below fish, or validate HMTc’s testing frequency.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://link.springer.com/article/10.1007/s12011-024-04084-w"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada",
+        "citation": "Rohonczy J, Chételat J, Robinson SA, et al. Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada. Environmental Science and Pollution Research. 2024;31:20586–20600. Published 20 February 2024. doi:10.1007/s11356-024-32268-3.",
+        "summary": "This 2014–2017 community-based Arctic study measured cadmium in 345 tissue samples. Blue-mussel soft tissue and urchin gonads were compared with fish, eider and seal tissues. Cadmium declined with trophic position in the muscle-based analysis; mercury increased.",
+        "establishes": "Cadmium patterns depended strongly on tissue. High vertebrate liver burdens were interpreted as storage and detoxification. Concentrations were reported on a dry-weight basis; fish muscle was excluded from the cadmium model because many results were below detection.",
+        "relevance": "For HMTc, this supports distinguishing whole shellfish from finfish muscle and distinguishing cadmium from mercury. It supplies no scallop or oyster distribution or wet-weight compliance survey.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://link.springer.com/article/10.1007/s11356-024-32268-3"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment",
+        "citation": "Cardoso PG, Morais H, Crespo D, Tavares D, Pereira E, Pardal MÂ. Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment. Environmental Science and Pollution Research. 2023;30:101121–101132. Published 30 August 2023. doi:10.1007/s11356-023-29495-5.",
+        "summary": "The study sampled three Portuguese estuaries during 2019–2020, measuring total mercury in surface water, plants and benthic fauna. Water contamination varied by location and season; mercury in edible bivalves was below the historical 0.5 mg/kg comparison level used by the authors.",
+        "establishes": "This is mercury research with an exposure assessment for edible bivalves. It supplies neither cadmium measurements nor a finfish-muscle cadmium baseline.",
+        "relevance": "Its useful connection to HMTc is the need to specify analyte, habitat and sampling period. It cannot support the article’s 0.005–0.05 mg/kg fish-cadmium range or the claimed bivalve amplification factor.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://link.springer.com/article/10.1007/s11356-023-29495-5"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Maximum levels for cadmium in bivalve molluscs and cephalopods",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157; entered into force 25 May 2023. Original text and consolidation dated 19 August 2026.",
+        "summary": "Annex I sets wet-weight cadmium maxima of 1.0 mg/kg for bivalves and cephalopods without viscera, versus 0.050 mg/kg for fish muscle outside listed exceptions. For Pecten maximus, the bivalve maximum covers adductor muscle and gonad only.",
+        "establishes": "These are binding food-category ceilings, not measured background distributions. Listed fish exceptions have higher limits. Article 3 addresses processing and concentration factors. The regulation does not establish cephalopod tissue concentration ranges or a unique biological explanation for each limit.",
+        "relevance": "HMTc needs the exact species, edible tissue and preparation to select its EU comparator. Adopting the strictest international ceiling remains an HMTc policy decision, not a requirement established by this EU regulation.",
+        "links": [
+          {
+            "label": "Original regulation",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          },
+          {
+            "label": "Consolidation: 19 August 2026",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Index — bivalve cadmium amplification (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Bivalve cadmium amplification through filter feeding — why mussels and oysters carry an order-of-magnitude higher cadmium load than finfish. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.bivalve-cadmium-amplification.",
+        "summary": "This synthesis argues for species-specific seafood cadmium benchmarks and links underlying source records. It describes filter feeding, tissue differences and evidence gaps for oysters, scallops, nanoparticle bioavailability and farmed-versus-wild bivalves.",
+        "establishes": "The page identifies itself as a preprint with no external reviews. It is an interpretation of other sources, not a new sampling study or independent validation of its anchor descriptions.",
+        "relevance": "It explains the argument used by this HMTc article, but its shared author and Institute of Contaminant Standards affiliation preclude treating it as independent corroboration. HMTc policy efficacy is not established.",
+        "links": [
+          {
+            "label": "Read synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
+  "articles/breastmilk-heavy-metal-exposure-pathway": {
+    "page": "articles/breastmilk-heavy-metal-exposure-pathway",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Assessment of arsenic, cadmium, lead, mercury, and per- and polyfluoroalkyl substances concentrations in human milk and infant formula in the United States: a systematic review",
+        "citation": "Thoerig RC, O’Connor LE, Spill MK, et al. The American Journal of Clinical Nutrition. 2025;122(4):1006–1026. doi:10.1016/j.ajcnut.2025.07.039. Author abstract and institutional project summary reviewed.",
+        "summary": "The review included 14 US human-milk and 16 formula studies. Its abstract emphasizes small, unrepresentative samples and mostly pre-2000 evidence for arsenic, cadmium, lead and mercury.",
+        "establishes": "The accessible abstract does not establish the article’s general per-serving claim that human milk contains less of all four metals than reconstituted formula. The authors’ project summary says health outcomes were not assessed. Full article tables were not read.",
+        "relevance": "It supports treating human milk as an exposure matrix and identifies an important US evidence gap. It cannot establish current national concentrations or justify a feeding recommendation; its abstract reiterates that breastfeeding benefits outweigh potential contaminant risks.",
+        "links": [
+          {
+            "label": "Authors’ abstract and publication record",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/41043870/"
+          },
+          {
+            "label": "Authors’ institutional project summary",
+            "href": "https://evidencecenter.tamu.edu/our-work/potential-contaminants-in-human-milk-and-infant-formula/"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "The Association Between Maternal Dietary Intake and the Risk of Heavy Metals in Human Breast Milk in Korea",
+        "citation": "Moon N, Heo SJ, Park S, Im H, Kim JH. Toxics. 2025;13(5):381. doi:10.3390/toxics 13050381.",
+        "summary": "A cross-sectional study of 209 Korean lactating mothers in January–March 2023 detected cadmium in 99%, mercury 97%, total arsenic 89% and lead 79% of milk samples. Maternal food-group intake was associated with concentrations.",
+        "establishes": "The reported regressions link lead with legumes/seaweed, cadmium with vegetables/seaweed, mercury with sugar and arsenic with meat. Seafood’s modeled arsenic contribution is a different analysis. Total arsenic and mercury were not speciated; hazard quotients are modeled risk indicators, not observed infant illness.",
+        "relevance": "This supports measurable maternal-diet associations, not proof that specific foods caused milk contamination or that maternal burden alone determines infant dose. It does not test certification, dietary interventions or infant health outcomes.",
+        "links": [
+          {
+            "label": "Original article full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12115469/fullTextXML"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Human Milk as a Biomonitor of Toxic Metal Exposure: Sources, Transfer Mechanisms, and Implications for Infant Health—A Review",
+        "citation": "Katryńska D, Bzikowska-Jura A, Goc Z, Kogut Ł. Nutrients. 2026;18(10):1527. doi:10.3390/nu 18101527. Structured narrative review.",
+        "summary": "This narrative synthesis of 112 studies discusses maternal exposure, tissue stores, milk transfer and changing concentrations during lactation. It summarizes smoking, marine-food and amalgam associations and historical declines in milk lead.",
+        "establishes": "The authors expressly distinguish it from a formal systematic review: no registered protocol, formal risk-of-bias assessment or meta-analysis. Percentage differences and lactation trajectories come from particular underlying studies, not pooled universal effects. Milk composition and maternal physiology also affect concentrations.",
+        "relevance": "It supports the mechanism discussion but limits “rather than anything intrinsic to milk” and universal 75–90% decline claims. Environmental time trends do not quantify one intervention’s causal effect. The review says breastfeeding benefits outweigh potential risks in the general population and intervention evidence remains limited.",
+        "links": [
+          {
+            "label": "Original review full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13209597/fullTextXML"
+          }
+        ],
+        "kind": "Review"
+      },
+      "4": {
+        "referenceTitle": "Lead contamination in human milk affects infants’ language trajectory: results from a prospective cohort study",
+        "citation": "Naspolini NF, Vanzele PAR, Tótolo P, et al. Frontiers in Public Health. 2024;12:1450570. doi:10.3389/fpubh.2024.1450570.",
+        "summary": "In 185 São Paulo mother–infant pairs, milk lead measured at 3 months was associated with a less favorable subsequent language-score trajectory. Reported 10–16 month scores were 97.47 versus 102.96 in the study’s lead-classified groups.",
+        "establishes": "The authors explicitly say the study was not designed to establish causality, could not confirm infant lead absorption and could not assess dose response because measurements were dichotomized. Below quantification is not absence of exposure. Published lead thresholds and the Table 2 group placement of 8.67 µg/L contain reporting inconsistencies.",
+        "relevance": "This is observational evidence relevant to the article’s health-association section, not proof that breastmilk lead caused a developmental deficit at an established ordinary-exposure threshold. The 8.67 µg/L subgroup value should not be presented as an unambiguous overall mean.",
+        "links": [
+          {
+            "label": "Original cohort article full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11347280/fullTextXML"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Prenatal Exposure to Heavy Metals and Adverse Birth Outcomes: Evidence From an E‐Waste Area in China",
+        "citation": "Chen C, Ma C, Li Q, et al. GeoHealth. 2023;7(11):e 2023 GH 000897. doi:10.1029/2023 GH 000897.",
+        "summary": "This 102-pair study in a Chinese e-waste area used milk collected four weeks after delivery as a marker of prenatal exposure. Higher cadmium was associated with lower female birth weight; the corresponding male association was absent.",
+        "establishes": "Birth weight precedes milk sampling and postnatal feeding, so this is not evidence that drinking contaminated milk reduced birth weight. The 34.3% chromium comparison uses what the authors label WHO guidance, citing a 1991 WHO/IAEA milk-composition study; a binding or health-based WHO milk limit was not verified.",
+        "relevance": "The source supports an exposure association in a particular industrial setting. It cannot isolate e-waste as the causal source, generalize to all mothers, or convert a postpartum biomarker association into a demonstrated lactational health effect.",
+        "links": [
+          {
+            "label": "Original article full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10680130/fullTextXML"
+          },
+          {
+            "label": "Parr1991 author abstract: benchmark provenance",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/1711362/"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "FDA Total Diet Study and Closer to Zero infant-food action plan",
+        "citation": "US Food and Drug Administration. FDA Total Diet Study; Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods. Current official program descriptions. Supplement: FDA, Use of Donor Human Milk.",
+        "summary": "TDS measures foods bought at retail and prepared for consumption to estimate dietary exposure. Closer to Zero targets lead, cadmium, arsenic and mercury in foods consumed by babies and young children.",
+        "establishes": "These program descriptions do not establish that every surveillance system excludes human milk. Separately, FDA expressly regulates donor human milk as food, inspects milk banks under 21 CFR 117 and notes that some modified human-milk products can fall under exempt-infant-formula requirements.",
+        "relevance": "Distinguish a mother breastfeeding her infant from donor-milk products. Retail surveillance alone cannot characterize every mother’s milk, but “no food standard reaches” human milk is too broad. Neither program page validates the article’s private-certification claims.",
+        "links": [
+          {
+            "label": "FDA Total Diet Study",
+            "href": "https://www.fda.gov/food/reference-databases-and-monitoring-programs-food/fda-total-diet-study-tds"
+          },
+          {
+            "label": "FDA Closer to Zero",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+          },
+          {
+            "label": "FDA donor-human-milk regulation",
+            "href": "https://www.fda.gov/science-research/pediatrics/use-donor-human-milk"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Content in Breast Milk and Contributing Environmental and Maternal Factors: A Systematic Review",
+        "citation": "Aisyiah, Rahfiludin MZ, Agushybana F, Sutiningsih D. Jurnal Bidan Cerdas. 2025;7(2):212–222. doi:10.33860/jbc.v 7 i 2.4042.",
+        "summary": "This systematic review narratively synthesizes nine studies published in 2013–2023 on milk metals and maternal or environmental factors, including diet, water, smoking and place of residence.",
+        "establishes": "It is mostly cross-sectional evidence with substantial geographic and analytical heterogeneity. The authors acknowledge limited causal inference. A review is not an additional independent cohort, and its studies may overlap those in other reviews.",
+        "relevance": "It adds context for variable milk concentrations and possible exposure sources. It does not establish that all milk contamination originates independently of milk physiology, that no food-monitoring system covers human milk, or that certification of other foods reduces infant outcomes.",
+        "links": [
+          {
+            "label": "Original journal PDF",
+            "href": "https://ojs.polkespalupress.id/index.php/JBC/article/download/4042/1222"
+          }
+        ],
+        "kind": "Review"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — breastmilk as a heavy-metal exposure pathway (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Human breastmilk is a measurable infant heavy-metal exposure pathway distinct from infant formula, driven by maternal body burden and diet, and it is not captured by food-matrix surveillance. Heavy Metal Index. Updated July 27,2026. doi:10.83376/hmi.breastmilk-heavy-metal-exposure-pathway. Preprint.",
+        "summary": "The synthesis connects the same six review/cohort sources to maternal exposure and proposed surveillance implications. It is authored by Karen Pendergrass and explicitly reports no external reviews.",
+        "establishes": "It is an interpretive preprint, not new infant measurements or independent corroboration. Its universal monitoring exclusion and claimed per-serving US comparison require evidence beyond the accessible underlying materials reviewed here.",
+        "relevance": "This explains the article’s synthesis framework but does not validate certification benefits. Read it with the cohort causal limitations and FDA’s distinct donor-milk food-regulation statement in reference 6; repeated claims across the article and this synthesis do not add independent evidence.",
+        "links": [
+          {
+            "label": "Exact HMI synthesis and review state",
+            "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
+  "articles/combined-exposure-underprotection": {
+    "page": "articles/combined-exposure-underprotection",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Cumulative risk assessment of the dietary heavy metal and aluminum exposure of Finnish adults",
+        "citation": "Suomi J, Tuominen P. Cumulative risk assessment of the dietary heavy metal and aluminum exposure of Finnish adults. Environmental Monitoring and Assessment. 2023;195:809. DOI: 10.1007/s10661-023-11427-y.",
+        "summary": "This Finnish dietary model found average hazard indices above one for neurological and kidney effects across adult age groups. The six-chemical neurological model estimated an index above one for 99% of women aged 25–34 and 97% aged 35–44.",
+        "establishes": "An index above one flags concern under the model, not observed injury. Different endpoints use different chemical groups. The six-chemical pilot depends on uncertain potency factors spanning species and central versus peripheral nervous-system effects.",
+        "relevance": "It supports examining cumulative dietary exposure. It does not demonstrate that every individual exposure met its reference value, prove all compliant products unsafe, or validate HMTc’s eight-metal panel.",
+        "links": [
+          {
+            "label": "Original research PDF",
+            "href": "https://link.springer.com/content/pdf/10.1007/s10661-023-11427-y.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Cadmium dietary exposure assessment, 91st meeting addendum",
+        "citation": "FAO/WHO JECFA. Cadmium: dietary exposure assessment. In: Safety evaluation of certain contaminants in food, ninety-first meeting. WHO Food Additives Series 82. Geneva: WHO and FAO; 2023, pp. 3–55. First draft by P Cressey, PE Boon and JC Leblanc. Running headers say 2022.",
+        "summary": "The assessment reviews dietary cadmium against the existing monthly intake benchmark of 25 µg/kg body weight. New national estimates included a mean of 96% of that benchmark in Chinese children aged 4–11. The benchmark itself was not reassessed.",
+        "establishes": "A separate 96% cocoa scenario for ages 0.5–12 appears as history from the 77th meeting and was considered likely overestimated. These are cadmium-only exposure estimates, not mixture hazard indices.",
+        "relevance": "This supports considering the whole diet, with correct population and scenario attribution. A cadmium ratio of 0.96 cannot alone establish a combined index above one; compatible endpoint data and other exposures are needed.",
+        "links": [
+          {
+            "label": "JECFA monograph PDF",
+            "href": "https://www.inchem.org/documents/jecfa/jecmono/v82je01.pdf"
+          },
+          {
+            "label": "WHO publication record",
+            "href": "https://www.who.int/publications/i/item/9789240060760"
+          }
+        ],
+        "kind": "Expert assessment"
+      },
+      "3": {
+        "referenceTitle": "Update of the risk assessment of inorganic arsenic in food",
+        "citation": "EFSA CONTAM Panel. Update of the risk assessment of inorganic arsenic in food. EFSA Journal. 2024;22:e8488. Adopted November 28, 2023. DOI: 10.2903/j.efsa.2024.8488.",
+        "summary": "EFSA selected a skin-cancer reference point of 0.06 µg inorganic arsenic/kg body weight/day. Adult margins of exposure ranged from 2 to 0.4 for mean exposure and 0.9 to 0.2 for high exposure; the panel identified a health concern.",
+        "establishes": "The margin divides the reference point by estimated exposure. EFSA did not establish a low-concern margin or tolerable intake. This is an inorganic-arsenic assessment, not a multi-metal hazard-index calculation.",
+        "relevance": "It adds evidence of concern from dietary arsenic. Its cancer-based margins cannot simply be added to cadmium intake fractions or Finnish neurological indices to validate HMTc’s combined-risk claims.",
+        "links": [
+          {
+            "label": "Full EFSA opinion",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2024.8488"
+          }
+        ],
+        "kind": "Expert assessment"
+      },
+      "4": {
+        "referenceTitle": "Maximum levels for certain contaminants in food",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L 119, May 5, 2023, pp. 103–157. Original act.",
+        "summary": "The regulation sets binding contaminant concentrations for specified food categories, including separate lead, cadmium, mercury and arsenic sections. Species, edible portions and processing conditions matter.",
+        "establishes": "Articles 2–3 prohibit covered foods above applicable maxima and address concentration, dilution and compound foods. These product limits are different from body-weight-based dietary exposure benchmarks and do not calculate a consumer’s mixture hazard index.",
+        "relevance": "It documents the category-specific legal framework the article critiques. Comparing HMTc with that framework requires matching foods and species; regulatory compliance alone does not measure a person’s total diet.",
+        "links": [
+          {
+            "label": "Original EU regulation",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Action level for inorganic arsenic in infant rice cereal",
+        "citation": "US Food and Drug Administration. Inorganic Arsenic in Rice Cereals for Infants: Action Level. Guidance for Industry. Final guidance, August 2020.",
+        "summary": "FDA recommends an action level of 100 µg/kg, equivalent to 100 ppb, for inorganic arsenic in infant rice cereal. The guidance covers infant cereal made from all rice types.",
+        "establishes": "This is nonbinding enforcement guidance for a defined food category and arsenic species, not a legal safe-intake allowance or a limit for every infant food. It predates the Closer to Zero action plan.",
+        "relevance": "It illustrates a product-specific control within the wider diet. Meeting this action level does not establish total exposure to other metals, while exceeding a mixture model does not prove this cereal guidance was violated.",
+        "links": [
+          {
+            "label": "FDA final guidance",
+            "href": "https://www.fda.gov/media/97234/download"
+          }
+        ],
+        "kind": "Guidance"
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — combined-exposure underprotection (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Single-metal regulatory limits systematically underprotect against dietary heavy-metal exposure. Heavy Metal Index. Updated May 13, 2026. DOI: 10.83376/hmi.combined-exposure-underprotection. Preprint synthesis.",
+        "summary": "The author brings together the Finnish mixture model, JECFA cadmium exposure review and EFSA inorganic-arsenic assessment to argue for cumulative regulation. The page explicitly reports no completed external peer review.",
+        "establishes": "This is an interpretive synthesis, not another independent exposure study. The three anchor sources use different populations, endpoints and metrics; their findings cannot be treated as one calculated mixture result.",
+        "relevance": "It supplies the article’s underlying argument and source trail. Its affiliation with the Institute of Contaminant Standards and Paleo Certified should remain visible when readers assess the related HMTc recommendation.",
+        "links": [
+          {
+            "label": "HMI synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/combined-exposure-underprotection"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/eu-food-limits-arsenic-seafood-nickel-deadlines": {
     "page": "articles/eu-food-limits-arsenic-seafood-nickel-deadlines",
     "reviewed": "2026-09-15",
@@ -281,6 +592,111 @@
           }
         ],
         "kind": "Preprint synthesis"
+      }
+    }
+  },
+  "articles/hexavalent-chromium-four-regimes": {
+    "page": "articles/hexavalent-chromium-four-regimes",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "California SWRCB hexavalent chromium MCL regulation",
+        "citation": "California State Water Resources Control Board. Hexavalent Chromium MCL, SWRCB-DDW-21-003. Rulemaking completed 2024; effective October 1, 2024. Final regulation text,22 CCR §§ 64415,64431 and 64432.",
+        "summary": "The rule sets a chromium(VI) drinking-water MCL of 10 µg/L and a detection limit for reporting of 0.1 µg/L. Compliance dates are October 1 of 2026, 2027 or 2028 according to system size. Covered community and nontransient-noncommunity systems also have monitoring and compliance-planning duties.",
+        "establishes": "This is an enforceable, species-specific drinking-water rule. The final text uses a running annual average for MCL compliance, with provisions for an individual sample that would cause that average to exceed the limit. It is not a finished-food threshold.",
+        "relevance": "It identifies the water-system control that may matter to incoming process water. HMTc must preserve the water medium, system obligations and compliance timetable rather than convert the MCL into a food limit.",
+        "links": [
+          {
+            "label": "Official rulemaking hub",
+            "href": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html"
+          },
+          {
+            "label": "Final regulatory text linked by Board",
+            "href": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/docs/2024/cr6-mcl-final-regulation-text.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Heavy Metal Index — California hexavalent-chromium drinking-water MCL",
+        "citation": "Institute of Contaminant Standards. California hexavalent-chromium drinking-water MCL. Heavy Metal Index. Updated June 22, 2026; accessed September 15, 2026.",
+        "summary": "This index record organizes the California rule by species, medium, legal scope, dates, units and analytical approach. It also distinguishes the enforceable MCL from a public-health goal and from food or warning-label standards.",
+        "establishes": "It is a secondary regulatory reference, not the legal instrument. Its links and historical account help interpretation, but primary Board documents control the rule’s requirements.",
+        "relevance": "It supports tracing the article’s water-specific comparison to the underlying rule. It does not independently validate HMTc certification or authorize treating a water result as food compliance.",
+        "links": [
+          {
+            "label": "HMI regulation record",
+            "href": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl"
+          }
+        ],
+        "kind": "Regulatory reference index"
+      },
+      "3": {
+        "referenceTitle": "Australian Drinking Water Guidelines",
+        "citation": "National Health and Medical Research Council. Australian Drinking Water Guidelines, 2011, version 4.0 updated June 2025; Chromium chemical factsheet, endorsed 1996. Official publication/update overview and digital factsheet.",
+        "summary": "The factsheet gives a health-based chromium(VI) drinking-water guideline of 0.05 mg/L. It uses total chromium for screening and recommends separate species analysis when that concentration exceeds the guideline. NHMRC describes the national Guidelines as nonmandatory, with implementation determined by states and territories.",
+        "establishes": "This is national guidance rather than a uniform directly enforceable national MCL. The chromium factsheet retains a 1996 endorsement and older scientific discussion; current publication status does not mean every toxicological statement was newly reassessed.",
+        "relevance": "It supports water-risk review with the correct jurisdiction and species labels. HMTc should verify local implementation and avoid treating the Australian guideline as interchangeable with California’s enforceable rule or a food-product limit.",
+        "links": [
+          {
+            "label": "NHMRC publication and update status",
+            "href": "https://www.nhmrc.gov.au/about-us/publications/australian-drinking-water-guidelines"
+          },
+          {
+            "label": "Chromium guideline factsheet",
+            "href": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/chromium"
+          }
+        ],
+        "kind": "National drinking-water guideline"
+      },
+      "4": {
+        "referenceTitle": "OSHA 29 CFR 1910.1026, Chromium (VI)",
+        "citation": "US Occupational Safety and Health Administration.29 CFR 1910.1026, Chromium(VI). Current OSHA scope/limit text and official annual CFR edition revised July 1, 2024.",
+        "summary": "For covered general-industry operations, the standard sets a chromium(VI) airborne permissible exposure limit of 5 µg/m³ as an eight-hour time-weighted average and an action level of 2.5 µg/m³. Employers must determine exposure and apply required controls; the scope contains specific exclusions.",
+        "establishes": "The regulated quantity is employee airborne exposure over time, not metal concentration in a food or water sample. The standard also specifies monitoring-performance requirements and workplace protections rather than relying solely on a pass/fail chemical result.",
+        "relevance": "It belongs in workplace and supplier-control assessment where applicable. HMTc cannot substitute a food assay or drinking-water benchmark for an employer’s occupational duties.",
+        "links": [
+          {
+            "label": "OSHA standard page",
+            "href": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026"
+          },
+          {
+            "label": "Official2024 CFR text",
+            "href": "https://www.govinfo.gov/content/pkg/CFR-2024-title29-vol6/pdf/CFR-2024-title29-vol6-sec1910-1026.pdf"
+          }
+        ],
+        "kind": "US occupational regulation"
+      },
+      "5": {
+        "referenceTitle": "ECHA proposes restrictions on chromium(VI) substances",
+        "citation": "European Chemicals Agency. ECHA proposes restrictions on chromium(VI) substances to protect health. ECHA/NR/25/11, April 29, 2025. Supplementary process context:2026 SEAC draft-opinion consultation.",
+        "summary": "ECHA’s notice describes a proposed restriction of certain chromium(VI) substances, with exceptions for specified industrial uses meeting proposed exposure and emission conditions. It envisages replacing specified REACH authorization requirements, with a later decision by the Commission and Member States.",
+        "establishes": "The 2025 notice is a proposal, not an adopted general prohibition. A 2026 consultation on the socio-economic draft opinion documents a later procedural stage. The complete latest dossier and final adoption status were not independently audited here.",
+        "relevance": "The notice can inform substitution and supplier planning. It does not authorize describing every use as already banned or establish a finished-food chromium(VI) maximum.",
+        "links": [
+          {
+            "label": "ECHA original proposal notice",
+            "href": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health"
+          },
+          {
+            "label": "Norwegian Environment Agency2026 consultation notice",
+            "href": "https://www.miljodirektoratet.no/aktuelt/fagmeldinger/2026/juni-2026/oktokrilen-og-kromvi-sosiookonomiske-vurderinger/"
+          }
+        ],
+        "kind": "Regulatory proposal — official notice"
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — hexavalent chromium evidence review",
+        "citation": "Institute of Contaminant Standards. Chromium, Hexavalent(Cr-VI). Heavy Metal Index. Updated September 11, 2026; accessed September 15, 2026.",
+        "summary": "The review organizes chromium(VI) literature separately from total chromium and discusses occurrence, exposure routes, methods and regulatory context. Its speciation discussion identifies the limited ability of nonspeciated food measurements to characterize chromium(VI) occurrence.",
+        "establishes": "The page is a synthesis and source-routing resource. Its database counts and mechanistic summaries are not additional experiments or independently validated measurements. A source must actually distinguish species before its number can be treated as chromium(VI).",
+        "relevance": "It supports HMTc’s requirement to match an analyte claim to the measured species and matrix. Its institutional relationship to the certifier and its evidence gaps should remain visible.",
+        "links": [
+          {
+            "label": "HMI chromium(VI) evidence review",
+            "href": "https://heavymetalindex.com/metals/chromium-hexavalent"
+          }
+        ],
+        "kind": "Evidence synthesis index"
       }
     }
   },
@@ -744,6 +1160,123 @@
       }
     }
   },
+  "articles/organoarsenical-inertness-assumption": {
+    "page": "articles/organoarsenical-inertness-assumption",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Effects of Dietary Intake of Arsenosugars and Other Organic Arsenic Species on Studies of Arsenic Methylation Efficiency in Humans",
+        "citation": "Davydiuk T, Tao J, Lu X, Le XC. Effects of Dietary Intake of Arsenosugars and Other Organic Arsenic Species on Studies of Arsenic Methylation Efficiency in Humans. Environment & Health. 2023;1(4):236–248. Published 21 September 2023. doi:10.1021/envhealth.3c00090.",
+        "summary": "This critical review explains that urinary DMA can arise from dietary arsenosugars and arsenolipids as well as inorganic-arsenic metabolism. It examines how this complicates methylation indices and evaluates dietary restrictions, questionnaires and urinary markers used to reduce confounding.",
+        "establishes": "It identifies a biomarker-interpretation problem, without quantifying a universal error in inorganic-arsenic exposure or proving arsenobetaine toxicity. Methylation efficiency and exposure amount are different quantities.",
+        "relevance": "For HMTc, it supports careful chemical-species identification when interpreting biomonitoring. It does not itself set a food limit, validate HMTc certification or show that EFSA’s margins are systematically optimistic.",
+        "links": [
+          {
+            "label": "Read original article: Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10594586/fullTextXML"
+          }
+        ],
+        "kind": "Review"
+      },
+      "2": {
+        "referenceTitle": "Transformation of arsenic species from seafood consumption during in vitro digestion",
+        "citation": "Liu B, Sui J, Feng R, Lin H, Han X, Sun X, Cao L. Transformation of arsenic species from seafood consumption during in vitro digestion. Frontiers in Nutrition. 2023;10:1207732. Published 12 October 2023. doi:10.3389/fnut.2023.1207732.",
+        "summary": "Cooked crab, scallop, turbot and flounder underwent simulated digestion. HPLC-ICP-MS showed approximately two- to three-fold increases in As(V) amounts for crab and scallop, while inorganic arsenic was undetected in digested fish. Separate standards experiments explored conversion under acidic conditions.",
+        "establishes": "The results demonstrate changes within this laboratory protocol. They do not measure absorption, human body burden or clinical toxicity. The proposed radical mechanism and pH effects cannot establish the fraction converted inside a living person.",
+        "relevance": "HMTc can use this to explain why food speciation and absorbed dose are distinct. It does not establish a new numeric ceiling or certify the safety of all organic arsenic compounds.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2023.1207732/full"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Elevated arsenic level in fasting serum via ingestion of fish meat increased the risk of hypertension in humans and mice",
+        "citation": "Kagawa T, Ohgami N, He T, et al. Elevated arsenic level in fasting serum via ingestion of fish meat increased the risk of hypertension in humans and mice. European Heart Journal Open. 2023;3(5):oead074. Published 4 September 2023. doi:10.1093/ehjopen/oead074.",
+        "summary": "Among 2,709 Japanese adults aged 39–75, this cross-sectional analysis associated fasting serum total arsenic with hypertension prevalence. A separate mouse experiment administered a mixture containing inorganic arsenic, DMA, arsenobetaine and trimethylarsine oxide.",
+        "establishes": "Human serum arsenic was not speciated. The design cannot establish temporal causation or attribute the association to arsenobetaine; the animal mixture also cannot isolate one species.",
+        "relevance": "For HMTc, the study motivates species-specific research but supplies no product threshold or evidence that an inorganic-arsenic-only limit resolves every organic-arsenic uncertainty.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10475452/"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "First detection of an arsenosugar phospholipid in the microalga Chlamydomonas reinhardtii",
+        "citation": "Raab A, Zhang J, Ge Y, Fernández-Mendoza F, Feldmann J. Lipophilic arsenic compounds in the cultured green alga Chlamydomonas reinhardtii. Analytical and Bioanalytical Chemistry. 2024;416:2809–2818. Published 8 January 2024. doi:10.1007/s00216-023-05122-7.",
+        "summary": "Laboratory-grown C. reinhardtii exposed to 20 µg/L arsenate for seven days contained about 57% of its arsenic as arsenolipids. Fractionation and mass spectrometry identified abundant arsenoriboside-containing phytols and compared the profile with wild Saccharina latissima.",
+        "establishes": "This characterizes an exposed freshwater model organism. It does not measure commercial spirulina, chlorella or algae oils, establish human toxicity, or demonstrate failure of routine total-arsenic digestion.",
+        "relevance": "For HMTc, it supports checking whether a method characterizes the intended chemical fraction in a particular ingredient. Commercial-product assumptions require separate data.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://link.springer.com/article/10.1007/s00216-023-05122-7"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Arsenobetaine amide: a novel arsenic species detected in several mushroom species",
+        "citation": "Walenta M, Raab A, Braeuer S, Steiner L, Borovička J, Goessler W. Arsenobetaine amide: a novel arsenic species detected in several mushroom species. Analytical and Bioanalytical Chemistry. 2024;416:1399–1405. Published 16 January 2024. doi:10.1007/s00216-024-05132-z.",
+        "summary": "The authors examined eleven selected mushroom fruiting-body collections representing four species from Austria and the Czech Republic. They isolated arsenobetaine amide, confirmed its identity using synthesis and analytical comparison, and reported 0.15–9.6% of total arsenic in the studied samples.",
+        "establishes": "This discovery establishes chemical diversity in selected fungi, including collections from contaminated regions. It is not a representative edible-mushroom survey or a toxicological test of arsenobetaine amide.",
+        "relevance": "HMTc can use it to explain why unidentified organic species should remain explicit analytical uncertainties. Neither arsenobetaine toxicity nor a numerical food limit follows from identifying a related compound.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://link.springer.com/article/10.1007/s00216-024-05132-z"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Inorganic arsenic in seaweed: a fast HPLC-ICP-MS method without coelution of arsenosugars",
+        "citation": "Sim R, Weyer M, Pétursdóttir ÁH. Inorganic arsenic in seaweed: a fast HPLC-ICP-MS method without coelution of arsenosugars. Analytical and Bioanalytical Chemistry. 2024;416:3033–3044. Published 23 March 2024. doi:10.1007/s00216-024-05250-8.",
+        "summary": "This single-laboratory validation developed acid/peroxide extraction and chromatographic separation for inorganic arsenic. Certified hijiki recovery was 99 ± 9%. Tested L. digitata meristem and reproductive tissue contained 2.6 and 54 mg/kg inorganic arsenic, with total arsenic of 130 and 210 mg/kg.",
+        "establishes": "The tested dried tissues therefore differed substantially. The method measures inorganic species together after oxidation; it does not fully characterize all arsenicals, and DMA quantification has stated limitations.",
+        "relevance": "For HMTc, it supports matrix-specific validation and selecting the sampled tissue. It does not establish that every Laminaria product contains predominantly inorganic arsenic.",
+        "links": [
+          {
+            "label": "Read original study PDF",
+            "href": "https://link.springer.com/content/pdf/10.1007/s00216-024-05250-8.pdf"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Maximum levels for inorganic arsenic in seaweed and other foods",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157; entered into force 25 May 2023. Original text and consolidation dated 19 August 2026.",
+        "summary": "The regulation sets binding arsenic maxima for specified food categories. The original inorganic-arsenic section covers rice products, certain infant foods and juices. The current consolidation additionally covers specified fish, crustaceans, bivalves and cephalopods; salt has a total-arsenic limit.",
+        "establishes": "Neither reviewed version lists a seaweed-specific inorganic-arsenic maximum in Annex I section 3.4. The existence of arsenic limits for other foods does not create a generic seaweed limit or establish that organic arsenic is harmless.",
+        "relevance": "HMTc must identify the actual jurisdiction, instrument and product category supporting any seaweed ceiling. Its policy of choosing the strictest regulator is separate from what this EU instrument requires.",
+        "links": [
+          {
+            "label": "Original regulation",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          },
+          {
+            "label": "Consolidation: 19 August 2026",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — the organoarsenical inertness assumption (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. The organoarsenical inertness assumption. Heavy Metal Index. Updated 13 May 2026. Preprint synthesis. doi:10.83376/hmi.organoarsenical-inertness-assumption.",
+        "summary": "The synthesis combines biomonitoring, simulated-digestion, epidemiological and analytical papers to argue that organic arsenic needs species-specific interpretation. It acknowledges gaps in human absorption evidence and commercial-algae characterization.",
+        "establishes": "The page labels itself a preprint with no external reviews. It is an interpretive synthesis, not a new experiment or an independent validation of the linked records.",
+        "relevance": "It explains the narrative used by HMTc. Shared authorship and Institute of Contaminant Standards affiliation mean it should not serve as independent corroboration or proof of certification efficacy.",
+        "links": [
+          {
+            "label": "Read synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/organoarsenical-inertness-assumption"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/seaweed-cd-as-contamination": {
     "page": "articles/seaweed-cd-as-contamination",
     "reviewed": "2026-09-15",
@@ -860,6 +1393,105 @@
           }
         ],
         "kind": "Preprint synthesis"
+      }
+    }
+  },
+  "articles/supplement-botanical-lead-pathway": {
+    "page": "articles/supplement-botanical-lead-pathway",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "The quality and safety of Rhodiola rosea supplements on the U.S. market: An analysis of biomarkers, heavy metals, and pesticide residues",
+        "citation": "Porwollik S, Jafari M. PLOS One. 2026;21(1):e0341070. doi:10.1371/journal.pone.0341070.",
+        "summary": "Ten Rhodiola products bought from Amazon in 2024 were tested: seven capsules and three tinctures. All capsules contained measurable arsenic, cobalt and lead; the tinctures were below the reported analytical thresholds.",
+        "establishes": "Capsule total arsenic ranged from 21–393 ppb and lead from 9–88 ppb; cobalt reached 733 ppb. Total arsenic was not speciated. The 500 mg serving estimate is product-specific. Below detection does not mean metal-free or universally “clean.”",
+        "relevance": "It supports a variable, measurable metal burden in this small product sample. It does not establish contamination prevalence across supplements, prove environmental uptake as the source, or rank supplement enforcement against food enforcement.",
+        "links": [
+          {
+            "label": "Original article full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12810810/fullTextXML"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Comparison of Regulations for Arsenic and Heavy Metals in Herbal Medicines Using Pharmacopoeias of Nine Counties/Regions",
+        "citation": "Inada I, Kiuchi F, Urushihara H. Therapeutic Innovation & Regulatory Science. 2023;57(5):963–974. doi:10.1007/s43441-023-00532-2; associated correction doi:10.1007/s43441-023-00539-9. Supplementary US context: 21 CFR 111.70 (2025 edition) and FDA Import Alert 99-42 (August 26, 2026).",
+        "summary": "The study compared editions current in December 2021 for Brazil, China, Europe, Hong Kong, India, Japan, Korea, the US and Vietnam, plus WHO and ISO documents. Limits, analytical methods and monograph coverage differed.",
+        "establishes": "The article’s Taiwan/Britain list is incorrect. The Indian document was Indian Pharmacopoeia 2018; the Ayurvedic Pharmacopoeia was expressly excluded. WHO values were not a universally followed floor. The study compared written standards, not enforcement intensity or certification outcomes.",
+        "relevance": "It supports jurisdiction and matrix distinctions, not a category-wide regulatory void. Separately, US rules require manufacturers to establish finished-batch contaminant specifications, and FDA’s current import alert lists Ayurvedic supplements for lead/mercury detention. These are distinct primary sources limiting the article’s “nothing catches it” claim.",
+        "links": [
+          {
+            "label": "Original comparison, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400675/fullTextXML"
+          },
+          {
+            "label": "Published correction, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10400671/fullTextXML"
+          },
+          {
+            "label": "Official 2025 CFR, section 111.70",
+            "href": "https://www.govinfo.gov/content/pkg/CFR-2025-title21-vol2/xml/CFR-2025-title21-vol2-sec111-70.xml"
+          },
+          {
+            "label": "FDA heavy-metal import alert",
+            "href": "https://www.accessdata.fda.gov/CMS_IA/importalert_1167.html"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Lead poisoning from Ayurvedic treatment: a further case.",
+        "citation": "Ciocan C, Mansour I, Beneduce A, et al. La Medicina del Lavoro. 2021;112(2):162–167. doi:10.23749/mdl.v112i2.10576.",
+        "summary": "An Indian sailor treated in Italy had blood lead reported at 102 µg/dL after Ayurvedic medicine use. Testing two preparations, including three mixtures of one preparation, found lead up to 23,043.02 mg/kg and mercury up to 145,710.64 mg/kg. He received three chelation cycles.",
+        "establishes": "This documents one severe poisoning episode, not population prevalence. The soil comparison is indirect: Table 3 uses Uttar Pradesh data for most elements and all-India mercury data. No product mercury speciation was performed; poor inorganic-mercury absorption was offered as a possible explanation, not established causation.",
+        "relevance": "It supports the existence of extremely contaminated preparations and the need to investigate product exposure. It does not prove intentional addition in every product, sulphide identity, universal absence of food analogues, or that testing is the only possible preventive measure.",
+        "links": [
+          {
+            "label": "Original case report, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8095331/fullTextXML"
+          }
+        ],
+        "kind": "Case report"
+      },
+      "4": {
+        "referenceTitle": "Case of lead poisoning secondary to intake of herbal medicine for diabetes mellitus in a tertiary care hospital in Kerala",
+        "citation": "Thomas J, Sebastian R, Anil Kumar CR, Rafi AM. Endocrinology, Diabetes & Metabolism Case Reports. 2024;2024(2):23-0066. doi:10.1530/EDM-23-0066.",
+        "summary": "A 58-year-old woman in Kerala developed lead poisoning after about 1.5 months taking an internet-purchased herbal diabetes product. Blood lead was 121.20 µg/dL; the reported state drug-analyst result for the capsule was approximately 40,657 ppm lead.",
+        "establishes": "The case supports the clinical hazard of that tested product. It does not establish market prevalence, the manufacturer’s intent, a confirmed Rasa Shastra formulation, or equivalent mercury contamination. Comparison with 10 ppm is concentration-based, not a million-fold estimate of patient risk.",
+        "relevance": "This is a strong individual warning signal, but it cannot prove that all online products bypass enforcement. The original investigation itself involved a state drug analyst. The API comparator should be read with reference 5’s edition and applicability limits.",
+        "links": [
+          {
+            "label": "Original Kerala case report, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11227049/fullTextXML"
+          }
+        ],
+        "kind": "Case report"
+      },
+      "5": {
+        "referenceTitle": "Ayurvedic Pharmacopoeia of India permissible lead limit for herbal preparations",
+        "citation": "Government of India, Ministry of AYUSH / Pharmacopoeia Commission for Indian Medicine & Homoeopathy. Ayurvedic Pharmacopoeia of India, Part I, Volume IX, first edition, 2016. General Notices and Appendix 3.1.1, Table 1, p.117. Original text reviewed in a third-party reproduction.",
+        "summary": "The 2016 volume’s Appendix 3.1.1 gives permissible heavy-metal concentrations of lead 10 ppm, arsenic 3 ppm, cadmium 0.3 ppm and mercury 1 ppm. General Notices direct covered articles to monograph limits, or appendix limits where none are specified.",
+        "establishes": "The lead comparator is 10 mg/kg, not a daily exposure allowance. This review covers specified sections of the historical edition, not the entire pharmacopoeia, later amendments or legal applicability to every finished herbo-mineral preparation.",
+        "relevance": "It verifies the numerical benchmark behind the case report’s approximately 4,066-fold comparison. That calculation does not independently establish the Kerala product’s legal classification or a universal limit for all Ayurvedic products, and does not measure the increase in health risk.",
+        "links": [
+          {
+            "label": "API Volume IX: reproduced original text",
+            "href": "https://www.scribd.com/document/359600700/API-Vol-9-pdf"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — supplements and botanicals as a distinct heavy-metal pathway (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Dietary supplements and traditional herbal preparations are a distinct, under-surveilled heavy-metal exposure pathway whose contamination magnitudes reach thousands of times conventional food limits under materially weaker enforcement. Heavy Metal Index. Updated July 27, 2026. doi:10.83376/hmi.supplement-botanical-lead-pathway. Preprint.",
+        "summary": "This synthesis joins the same retail survey, pharmacopoeia comparison and two case reports. It acknowledges that the case reports cannot establish prevalence and that the small survey is not a market-wide occurrence distribution.",
+        "establishes": "The page reports no external reviews. It is an interpretive preprint by the article’s author, not independent corroboration. Its Inada journal attribution and jurisdiction list conflict with the original article; its enforcement ranking is not measured by these studies.",
+        "relevance": "Use it to trace the author’s argument, not to validate certification effectiveness, universal statutory gaps or an unmatched upper tail across all food literature. Primary-paper limitations and the distinct FDA enforcement context remain controlling qualifications.",
+        "links": [
+          {
+            "label": "Exact HMI synthesis and review state",
+            "href": "https://heavymetalindex.com/synthesis/supplement-botanical-lead-pathway"
+          }
+        ],
+        "kind": "Preprint"
       }
     }
   },

@@ -1,0 +1,193 @@
+{
+  "page": "articles/hexavalent-chromium-four-regimes",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "California SWRCB hexavalent chromium MCL regulation",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "254886c24aab50e1fdb71492380792e3fbfaaf4a9ee872ee268f3f555424facd",
+      "citation": "California State Water Resources Control Board. Hexavalent Chromium MCL, SWRCB-DDW-21-003. Rulemaking completed 2024; effective October 1, 2024. Final regulation text,22 CCR §§ 64415,64431 and 64432.",
+      "summary": "The rule sets a chromium(VI) drinking-water MCL of 10 µg/L and a detection limit for reporting of 0.1 µg/L. Compliance dates are October 1 of 2026, 2027 or 2028 according to system size. Covered community and nontransient-noncommunity systems also have monitoring and compliance-planning duties.",
+      "establishes": "This is an enforceable, species-specific drinking-water rule. The final text uses a running annual average for MCL compliance, with provisions for an individual sample that would cause that average to exceed the limit. It is not a finished-food threshold.",
+      "relevance": "It identifies the water-system control that may matter to incoming process water. HMTc must preserve the water medium, system obligations and compliance timetable rather than convert the MCL into a food limit.",
+      "links": [
+        {
+          "label": "Official rulemaking hub",
+          "href": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html"
+        },
+        {
+          "label": "Final regulatory text linked by Board",
+          "href": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/docs/2024/cr6-mcl-final-regulation-text.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html",
+            "note": "Fresh read of summary, completed status, adoption/approval history and compliance table. Same substantive hub was reviewed in batch4-four-eight ref8; fresh page context preserves system size and implementation. Adoption April17,2024; OAL approval July24; effective October1. Initial sampling deadline April1,2025. The10µg/L MCL differs from the0.1µg/L reporting limit."
+          },
+          {
+            "url": "https://waterboards.ca.gov/drinking_water/certlic/drinkingwater/docs/2024/cr6-mcl-final-regulation-text.pdf",
+            "note": "Read pp.1–6: incorporated EPA methods218.6/218.7, MCL table, monitoring, running annual average, phased dates and plans. The Board labels this Final Regulation Text although the PDF retains proposed/February2024 drafting headers; final status is corroborated by the completed rulemaking hub. No claim to have read all method protocols."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Heavy Metal Index — California hexavalent-chromium drinking-water MCL",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "9131dea5dc5081ad87c558c59bc6b560c6a79b7f6a8e23ba7e18ef0929834a87",
+      "citation": "Institute of Contaminant Standards. California hexavalent-chromium drinking-water MCL. Heavy Metal Index. Updated June 22, 2026; accessed September 15, 2026.",
+      "summary": "This index record organizes the California rule by species, medium, legal scope, dates, units and analytical approach. It also distinguishes the enforceable MCL from a public-health goal and from food or warning-label standards.",
+      "establishes": "It is a secondary regulatory reference, not the legal instrument. Its links and historical account help interpretation, but primary Board documents control the rule’s requirements.",
+      "relevance": "It supports tracing the article’s water-specific comparison to the underlying rule. It does not independently validate HMTc certification or authorize treating a water result as food compliance.",
+      "links": [
+        {
+          "label": "HMI regulation record",
+          "href": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations/ca-swrcb-hexavalent-chromium-mcl",
+            "note": "Read overview, scope, units, methods, enforcement, history, attribution and footer. Internal discrepancy: overview calls the MCL the first enforceable Cr(VI)-specific California limit, while history describes the2014 MCL, its2017 invalidation and2024 re-establishment. Do not repeat “first.” Index author/operator are connected to the Institute of Contaminant Standards/HMTc; editorial separation is not independent institutional validation."
+          }
+        ]
+      },
+      "kind": "Regulatory reference index"
+    },
+    "3": {
+      "referenceTitle": "Australian Drinking Water Guidelines",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "58f011aecc3d7ebcfef43ac127f2297e86f2c558fc0f71e3fb42ad078017f045",
+      "citation": "National Health and Medical Research Council. Australian Drinking Water Guidelines, 2011, version 4.0 updated June 2025; Chromium chemical factsheet, endorsed 1996. Official publication/update overview and digital factsheet.",
+      "summary": "The factsheet gives a health-based chromium(VI) drinking-water guideline of 0.05 mg/L. It uses total chromium for screening and recommends separate species analysis when that concentration exceeds the guideline. NHMRC describes the national Guidelines as nonmandatory, with implementation determined by states and territories.",
+      "establishes": "This is national guidance rather than a uniform directly enforceable national MCL. The chromium factsheet retains a 1996 endorsement and older scientific discussion; current publication status does not mean every toxicological statement was newly reassessed.",
+      "relevance": "It supports water-risk review with the correct jurisdiction and species labels. HMTc should verify local implementation and avoid treating the Australian guideline as interchangeable with California’s enforceable rule or a food-product limit.",
+      "links": [
+        {
+          "label": "NHMRC publication and update status",
+          "href": "https://www.nhmrc.gov.au/about-us/publications/australian-drinking-water-guidelines"
+        },
+        {
+          "label": "Chromium guideline factsheet",
+          "href": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/chromium"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nhmrc.gov.au/about-us/publications/australian-drinking-water-guidelines",
+            "note": "Read publication data, nonmandatory/legal implementation statement, version4.0 June2025 updates and April2026 consultation notice. The2026 notice concerns ammonia, nickel, chlorate and other edits; it does not establish a newly reviewed chromium value."
+          },
+          {
+            "url": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/chromium",
+            "note": "Read complete digital factsheet: endorsed1996;0.05mg/L value, total-screening trigger, measurement approaches and derivation. Its dated assertions concerning Cr(III) essentiality and absent oral-cancer evidence should not be reused as current consensus without newer evidence. It expressly discusses oxidation during water treatment, but is not validation of a food-matrix speciation method."
+          }
+        ]
+      },
+      "kind": "National drinking-water guideline"
+    },
+    "4": {
+      "referenceTitle": "OSHA 29 CFR 1910.1026, Chromium (VI)",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "ec08cf15955f81d8422d7da3d0ad6a3a9db2a4f4a592db80108a51c9f547b040",
+      "citation": "US Occupational Safety and Health Administration.29 CFR 1910.1026, Chromium(VI). Current OSHA scope/limit text and official annual CFR edition revised July 1, 2024.",
+      "summary": "For covered general-industry operations, the standard sets a chromium(VI) airborne permissible exposure limit of 5 µg/m³ as an eight-hour time-weighted average and an action level of 2.5 µg/m³. Employers must determine exposure and apply required controls; the scope contains specific exclusions.",
+      "establishes": "The regulated quantity is employee airborne exposure over time, not metal concentration in a food or water sample. The standard also specifies monitoring-performance requirements and workplace protections rather than relying solely on a pass/fail chemical result.",
+      "relevance": "It belongs in workplace and supplier-control assessment where applicable. HMTc cannot substitute a food assay or drinking-water benchmark for an employer’s occupational duties.",
+      "links": [
+        {
+          "label": "OSHA standard page",
+          "href": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026"
+        },
+        {
+          "label": "Official2024 CFR text",
+          "href": "https://www.govinfo.gov/content/pkg/CFR-2024-title29-vol6/pdf/CFR-2024-title29-vol6-sec1910-1026.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1026",
+            "note": "Read the official page’s indexed primary text through §§(a)–(d)(2)(i), including exclusions, definitions,5µg/m³ PEL,2.5 action level,8-hour basis and breathing-zone monitoring. Direct web and command retrieval returned403; the indexed text is the access actually used, not a full direct-page read."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CFR-2024-title29-vol6/pdf/CFR-2024-title29-vol6-sec1910-1026.pdf",
+            "note": "Read relevant scope/PEL passages, measurement-accuracy and engineering-control provisions, and medical-surveillance opening (PDF pp.1–5). This official annual copy includes adjacent text and appendix material; those were not all reviewed.2025 section retrieval returned a missing-page response, so2024 is identified explicitly. No unsupported claim that all workplaces fall within this general-industry standard."
+          }
+        ]
+      },
+      "kind": "US occupational regulation"
+    },
+    "5": {
+      "referenceTitle": "ECHA proposes restrictions on chromium(VI) substances",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "4fe990b0083967bb9cd08c571a015b7dc2ad9a41b0db9f251a8ff78bee3c4327",
+      "citation": "European Chemicals Agency. ECHA proposes restrictions on chromium(VI) substances to protect health. ECHA/NR/25/11, April 29, 2025. Supplementary process context:2026 SEAC draft-opinion consultation.",
+      "summary": "ECHA’s notice describes a proposed restriction of certain chromium(VI) substances, with exceptions for specified industrial uses meeting proposed exposure and emission conditions. It envisages replacing specified REACH authorization requirements, with a later decision by the Commission and Member States.",
+      "establishes": "The 2025 notice is a proposal, not an adopted general prohibition. A 2026 consultation on the socio-economic draft opinion documents a later procedural stage. The complete latest dossier and final adoption status were not independently audited here.",
+      "relevance": "The notice can inform substitution and supplier planning. It does not authorize describing every use as already banned or establish a finished-food chromium(VI) maximum.",
+      "links": [
+        {
+          "label": "ECHA original proposal notice",
+          "href": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health"
+        },
+        {
+          "label": "Norwegian Environment Agency2026 consultation notice",
+          "href": "https://www.miljodirektoratet.no/aktuelt/fagmeldinger/2026/juni-2026/oktokrilen-og-kromvi-sosiookonomiske-vurderinger/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health",
+            "note": "Read complete indexed text of the official April29,2025 notice: six exception categories, replacement of authorization, proposed benefits/costs, anticipated June2025 consultation and Commission decision step. Direct retrieval returned403. This is notice-level review, not review of the entire Annex XV dossier or committee opinions."
+          },
+          {
+            "url": "https://www.miljodirektoratet.no/aktuelt/fagmeldinger/2026/juni-2026/oktokrilen-og-kromvi-sosiookonomiske-vurderinger/",
+            "note": "Read complete official June22,2026 notice of ECHA’s draft socio-economic consultation for certain chromium(VI) oxides/oxyacids/salts and announced August17 deadline. ECHA’s indexed consultation table separately showed June17–August17,2026. Original2025 consultation is no longer the latest stage. Registry direct access failed, and no claim is made to have verified all post-consultation outcomes as of September15."
+          }
+        ]
+      },
+      "kind": "Regulatory proposal — official notice"
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — hexavalent chromium evidence review",
+      "pageDigest": "891e7c7454ea92f1a87ba2c4b58440e35063270d91bfe6ad6c5dd0d60c855c08",
+      "sourceDigest": "0691e723e256fdf67bfed1b456d6495fe52df29a614b707d4b4ee900355f4f63",
+      "citation": "Institute of Contaminant Standards. Chromium, Hexavalent(Cr-VI). Heavy Metal Index. Updated September 11, 2026; accessed September 15, 2026.",
+      "summary": "The review organizes chromium(VI) literature separately from total chromium and discusses occurrence, exposure routes, methods and regulatory context. Its speciation discussion identifies the limited ability of nonspeciated food measurements to characterize chromium(VI) occurrence.",
+      "establishes": "The page is a synthesis and source-routing resource. Its database counts and mechanistic summaries are not additional experiments or independently validated measurements. A source must actually distinguish species before its number can be treated as chromium(VI).",
+      "relevance": "It supports HMTc’s requirement to match an analyte claim to the measured species and matrix. Its institutional relationship to the certifier and its evidence gaps should remain visible.",
+      "links": [
+        {
+          "label": "HMI chromium(VI) evidence review",
+          "href": "https://heavymetalindex.com/metals/chromium-hexavalent"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/metals/chromium-hexavalent",
+            "note": "Read overview, species-routing rule, exposure/regulatory framing, speciation-gap discussion, source limitations, attribution and footer. The page distinguishes nonspeciated studies and a small market-specific dataset; counts were not independently audited. Do not turn its mechanistic narrative into measured food exposure or verified certification efficacy. Named author/operator links connect this index to the same Institute of Contaminant Standards ecosystem; “independent” requires qualification."
+          }
+        ]
+      },
+      "kind": "Evidence synthesis index"
+    }
+  }
+}

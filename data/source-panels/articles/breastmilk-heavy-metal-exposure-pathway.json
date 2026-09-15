@@ -1,0 +1,241 @@
+{
+  "page": "articles/breastmilk-heavy-metal-exposure-pathway",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Assessment of arsenic, cadmium, lead, mercury, and per- and polyfluoroalkyl substances concentrations in human milk and infant formula in the United States: a systematic review",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "edb5f2c69d7440c6f5ff9e0c731310916d0bc0840918d13ecf28b0b523272979",
+      "citation": "Thoerig RC, O’Connor LE, Spill MK, et al. The American Journal of Clinical Nutrition. 2025;122(4):1006–1026. doi:10.1016/j.ajcnut.2025.07.039. Author abstract and institutional project summary reviewed.",
+      "summary": "The review included 14 US human-milk and 16 formula studies. Its abstract emphasizes small, unrepresentative samples and mostly pre-2000 evidence for arsenic, cadmium, lead and mercury.",
+      "establishes": "The accessible abstract does not establish the article’s general per-serving claim that human milk contains less of all four metals than reconstituted formula. The authors’ project summary says health outcomes were not assessed. Full article tables were not read.",
+      "relevance": "It supports treating human milk as an exposure matrix and identifies an important US evidence gap. It cannot establish current national concentrations or justify a feeding recommendation; its abstract reiterates that breastfeeding benefits outweigh potential contaminant risks.",
+      "links": [
+        {
+          "label": "Authors’ abstract and publication record",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/41043870/"
+        },
+        {
+          "label": "Authors’ institutional project summary",
+          "href": "https://evidencecenter.tamu.edu/our-work/potential-contaminants-in-human-milk-and-infant-formula/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41043870/",
+            "note": "Read complete abstract, methods, findings, publication metadata and embargo notice. Full text was unavailable until the listed September23,2026 PMC release; no per-serving comparative tables reviewed."
+          },
+          {
+            "url": "https://evidencecenter.tamu.edu/our-work/potential-contaminants-in-human-milk-and-infant-formula/",
+            "note": "Read exact Thoerig review summary and project scope. US peer-reviewed studies, not unpublished government testing; FDA-funded project began2023. Distinct 2026 follow-up reviews on this page were not attributed to the 2025 article."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "The Association Between Maternal Dietary Intake and the Risk of Heavy Metals in Human Breast Milk in Korea",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "06251b9ece97dc90610df161743a4be5a15c1dce14f34b8da481f6589f1c839c",
+      "citation": "Moon N, Heo SJ, Park S, Im H, Kim JH. Toxics. 2025;13(5):381. doi:10.3390/toxics 13050381.",
+      "summary": "A cross-sectional study of 209 Korean lactating mothers in January–March 2023 detected cadmium in 99%, mercury 97%, total arsenic 89% and lead 79% of milk samples. Maternal food-group intake was associated with concentrations.",
+      "establishes": "The reported regressions link lead with legumes/seaweed, cadmium with vegetables/seaweed, mercury with sugar and arsenic with meat. Seafood’s modeled arsenic contribution is a different analysis. Total arsenic and mercury were not speciated; hazard quotients are modeled risk indicators, not observed infant illness.",
+      "relevance": "This supports measurable maternal-diet associations, not proof that specific foods caused milk contamination or that maternal burden alone determines infant dose. It does not test certification, dietary interventions or infant health outcomes.",
+      "links": [
+        {
+          "label": "Original article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12115469/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12115469/fullTextXML",
+            "note": "Read abstract, sample/methods, two nonconsecutive24-hour dietary recalls, concentration results, regression narrative/Table4 and limitations. QC paragraph retains “within X%” and “X to Y” placeholders; this reporting defect limits independent method appraisal. One milk sample per participant and observational diet associations cannot establish causal transfer."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Human Milk as a Biomonitor of Toxic Metal Exposure: Sources, Transfer Mechanisms, and Implications for Infant Health—A Review",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "3f86da728c683d850f5b1ad4391c98ed237364b6c1871be769cdc884ebe3aeec",
+      "citation": "Katryńska D, Bzikowska-Jura A, Goc Z, Kogut Ł. Nutrients. 2026;18(10):1527. doi:10.3390/nu 18101527. Structured narrative review.",
+      "summary": "This narrative synthesis of 112 studies discusses maternal exposure, tissue stores, milk transfer and changing concentrations during lactation. It summarizes smoking, marine-food and amalgam associations and historical declines in milk lead.",
+      "establishes": "The authors expressly distinguish it from a formal systematic review: no registered protocol, formal risk-of-bias assessment or meta-analysis. Percentage differences and lactation trajectories come from particular underlying studies, not pooled universal effects. Milk composition and maternal physiology also affect concentrations.",
+      "relevance": "It supports the mechanism discussion but limits “rather than anything intrinsic to milk” and universal 75–90% decline claims. Environmental time trends do not quantify one intervention’s causal effect. The review says breastfeeding benefits outweigh potential risks in the general population and intervention evidence remains limited.",
+      "links": [
+        {
+          "label": "Original review full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13209597/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13209597/fullTextXML",
+            "note": "Read methodology/112-study count, maternal reservoirs and diet/lifestyle sections, smoking37–300%, Norwegian marine-food42%, amalgam approximately3-fold, Taiwan75–90% early-lactation comparisons, historical lead trends and limitations/conclusion. These are the review’s summaries; underlying studies were not independently reread. Avoided generalizing them into a pooled causal effect."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "4": {
+      "referenceTitle": "Lead contamination in human milk affects infants’ language trajectory: results from a prospective cohort study",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "66acad7b18390960c7092df181b63b820e46c0d68690f8e2bf3ce3b90a45d08f",
+      "citation": "Naspolini NF, Vanzele PAR, Tótolo P, et al. Frontiers in Public Health. 2024;12:1450570. doi:10.3389/fpubh.2024.1450570.",
+      "summary": "In 185 São Paulo mother–infant pairs, milk lead measured at 3 months was associated with a less favorable subsequent language-score trajectory. Reported 10–16 month scores were 97.47 versus 102.96 in the study’s lead-classified groups.",
+      "establishes": "The authors explicitly say the study was not designed to establish causality, could not confirm infant lead absorption and could not assess dose response because measurements were dichotomized. Below quantification is not absence of exposure. Published lead thresholds and the Table 2 group placement of 8.67 µg/L contain reporting inconsistencies.",
+      "relevance": "This is observational evidence relevant to the article’s health-association section, not proof that breastmilk lead caused a developmental deficit at an established ordinary-exposure threshold. The 8.67 µg/L subgroup value should not be presented as an unambiguous overall mean.",
+      "links": [
+        {
+          "label": "Original cohort article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11347280/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11347280/fullTextXML",
+            "note": "Read sampling, analytical thresholds, Table2, longitudinal adjusted model and limitations. Table2 places8.67 under non-exposed and0.15 under exposed despite the intended grouping; text/Table1 also differ on quantification limits. Overall mean is2.09µg/L. Recorded source inconsistencies rather than silently repairing them."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Prenatal Exposure to Heavy Metals and Adverse Birth Outcomes: Evidence From an E‐Waste Area in China",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "3b066ee7654b24fe8dc6830cff1d8f1fe64158ddd8c481679e39e756b13da57a",
+      "citation": "Chen C, Ma C, Li Q, et al. GeoHealth. 2023;7(11):e 2023 GH 000897. doi:10.1029/2023 GH 000897.",
+      "summary": "This 102-pair study in a Chinese e-waste area used milk collected four weeks after delivery as a marker of prenatal exposure. Higher cadmium was associated with lower female birth weight; the corresponding male association was absent.",
+      "establishes": "Birth weight precedes milk sampling and postnatal feeding, so this is not evidence that drinking contaminated milk reduced birth weight. The 34.3% chromium comparison uses what the authors label WHO guidance, citing a 1991 WHO/IAEA milk-composition study; a binding or health-based WHO milk limit was not verified.",
+      "relevance": "The source supports an exposure association in a particular industrial setting. It cannot isolate e-waste as the causal source, generalize to all mothers, or convert a postpartum biomarker association into a demonstrated lactational health effect.",
+      "links": [
+        {
+          "label": "Original article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10680130/fullTextXML"
+        },
+        {
+          "label": "Parr1991 author abstract: benchmark provenance",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/1711362/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10680130/fullTextXML",
+            "note": "Read methods, concentrations, sex-specific regression, limitations and Parr1991 citation. Female birth-weight coefficient−162.72g,95%CI−303.16 to−22.25. Authors describe cross-sectional limitations; no chromium or copper birth-outcome association established."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1711362/",
+            "note": "Retrieved primary author abstract and bibliographic record identifying a comparative WHO/IAEA study of milk composition in six countries. Full1991 paper was not read; its designation as a current permissible safety limit remains unverified."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "FDA Total Diet Study and Closer to Zero infant-food action plan",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "10a6c3d8a20f5ce078c07059d690f6a7924ff4b2ddf433bbefba22a41d755c10",
+      "citation": "US Food and Drug Administration. FDA Total Diet Study; Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods. Current official program descriptions. Supplement: FDA, Use of Donor Human Milk.",
+      "summary": "TDS measures foods bought at retail and prepared for consumption to estimate dietary exposure. Closer to Zero targets lead, cadmium, arsenic and mercury in foods consumed by babies and young children.",
+      "establishes": "These program descriptions do not establish that every surveillance system excludes human milk. Separately, FDA expressly regulates donor human milk as food, inspects milk banks under 21 CFR 117 and notes that some modified human-milk products can fall under exempt-infant-formula requirements.",
+      "relevance": "Distinguish a mother breastfeeding her infant from donor-milk products. Retail surveillance alone cannot characterize every mother’s milk, but “no food standard reaches” human milk is too broad. Neither program page validates the article’s private-certification claims.",
+      "links": [
+        {
+          "label": "FDA Total Diet Study",
+          "href": "https://www.fda.gov/food/reference-databases-and-monitoring-programs-food/fda-total-diet-study-tds"
+        },
+        {
+          "label": "FDA Closer to Zero",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        },
+        {
+          "label": "FDA donor-human-milk regulation",
+          "href": "https://www.fda.gov/science-research/pediatrics/use-donor-human-milk"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/reference-databases-and-monitoring-programs-food/fda-total-diet-study-tds",
+            "note": "Fresh read of official current retail-food collection, preparation and exposure-estimation scope; did not infer global monitoring absence from one program."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Fresh read of About/Approach and four-element program scope. An initiative description is not a universal legal exclusion of human milk or a certification requirement."
+          },
+          {
+            "url": "https://www.fda.gov/science-research/pediatrics/use-donor-human-milk",
+            "note": "Fresh supplemental primary read, especially For Industry. FDA explicitly identifies food authority,21CFR117 inspections and possible exempt-formula status; donor banks have collection/testing standards. This is distinct regulatory context, not silently treated as part of the originally named two programs."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Content in Breast Milk and Contributing Environmental and Maternal Factors: A Systematic Review",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "149a8f60c02ec64c71ff5c50631642be3262f787eaf63e4900241698dfb1c912",
+      "citation": "Aisyiah, Rahfiludin MZ, Agushybana F, Sutiningsih D. Jurnal Bidan Cerdas. 2025;7(2):212–222. doi:10.33860/jbc.v 7 i 2.4042.",
+      "summary": "This systematic review narratively synthesizes nine studies published in 2013–2023 on milk metals and maternal or environmental factors, including diet, water, smoking and place of residence.",
+      "establishes": "It is mostly cross-sectional evidence with substantial geographic and analytical heterogeneity. The authors acknowledge limited causal inference. A review is not an additional independent cohort, and its studies may overlap those in other reviews.",
+      "relevance": "It adds context for variable milk concentrations and possible exposure sources. It does not establish that all milk contamination originates independently of milk physiology, that no food-monitoring system covers human milk, or that certification of other foods reduces infant outcomes.",
+      "links": [
+        {
+          "label": "Original journal PDF",
+          "href": "https://ojs.polkespalupress.id/index.php/JBC/article/download/4042/1222"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://ojs.polkespalupress.id/index.php/JBC/article/download/4042/1222",
+            "note": "Read pp212–215 methods/abstract, results tables, and pp219–220 discussion/limitations/conclusion. Registered review reported as CRD42024545030; English-only selection and heterogeneous methods limit coverage. The source’s broad “lipophilic” description of heavy metals was not adopted."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — breastmilk as a heavy-metal exposure pathway (synthesis with full anchor-source records)",
+      "pageDigest": "0a1725d9d0db5e66e14363fb7a3720cafd8edfc4c2516f8586cc9886d16df484",
+      "sourceDigest": "f2ea9bf3bfd477827e489c505ae39ac622cd6ab5381c42b9d6bfb599706d70b7",
+      "citation": "Pendergrass K. Human breastmilk is a measurable infant heavy-metal exposure pathway distinct from infant formula, driven by maternal body burden and diet, and it is not captured by food-matrix surveillance. Heavy Metal Index. Updated July 27,2026. doi:10.83376/hmi.breastmilk-heavy-metal-exposure-pathway. Preprint.",
+      "summary": "The synthesis connects the same six review/cohort sources to maternal exposure and proposed surveillance implications. It is authored by Karen Pendergrass and explicitly reports no external reviews.",
+      "establishes": "It is an interpretive preprint, not new infant measurements or independent corroboration. Its universal monitoring exclusion and claimed per-serving US comparison require evidence beyond the accessible underlying materials reviewed here.",
+      "relevance": "This explains the article’s synthesis framework but does not validate certification benefits. Read it with the cohort causal limitations and FDA’s distinct donor-milk food-regulation statement in reference 6; repeated claims across the article and this synthesis do not add independent evidence.",
+      "links": [
+        {
+          "label": "Exact HMI synthesis and review state",
+          "href": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted original full text or explicitly limited author abstract, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/breastmilk-heavy-metal-exposure-pathway",
+            "note": "Read author/date, overview, US/Korean-study interpretation, provisional status, peer-review state and citation. July27,2026 version says no external reviews and calls unreviewed syntheses preprints. Same author as the article; did not use source-record badges as substitutes for original-paper review."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}
