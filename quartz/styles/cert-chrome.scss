@@ -415,6 +415,9 @@ header.hmi-topnav-shell::after {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 56px;
+
+  // Network wayfinding uses the whole drawer for four equal faces.
+  &--ecosystem { grid-template-columns: minmax(0, 1fr); }
 }
 .hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
 .hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
@@ -427,6 +430,8 @@ header.hmi-topnav-shell::after {
   gap: 28px 36px;
   align-items: start;
   max-width: none;
+
+  &--ecosystem { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 .hmtc-nav .hmi-nav-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .hmtc-nav .hmi-nav-colhead {

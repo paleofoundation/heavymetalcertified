@@ -130,7 +130,7 @@
 .hmi-nav-list {
   display: flex;
   flex-direction: row;
-  // Five curated sections stay on one line; narrower viewports use the drawer.
+  // Program sections and ecosystem wayfinding stay on one line.
   flex-wrap: nowrap;
   align-items: center;
   gap: 0.35rem 1.1rem;
@@ -251,6 +251,13 @@
 
 .hmi-nav-col li {
   margin: 0;
+}
+
+.hmi-nav-group-blurb {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #736b6b;
 }
 
 .hmi-nav-colhead {
