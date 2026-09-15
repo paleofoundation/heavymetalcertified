@@ -1150,7 +1150,7 @@
     "refs": {
       "1": {
         "referenceTitle": "California SWRCB hexavalent chromium MCL regulation",
-        "citation": "California State Water Resources Control Board. Hexavalent Chromium MCL, SWRCB-DDW-21-003. Rulemaking completed 2024; effective October 1, 2024. Final regulation text,22 CCR §§ 64415,64431 and 64432.",
+        "citation": "California State Water Resources Control Board. Hexavalent Chromium MCL, SWRCB-DDW-21-003. Rulemaking completed 2024; effective October 1, 2024. Final regulation text, 22 CCR §§ 64415, 64431 and 64432.",
         "summary": "The rule sets a chromium(VI) drinking-water MCL of 10 µg/L and a detection limit for reporting of 0.1 µg/L. Compliance dates are October 1 of 2026, 2027 or 2028 according to system size. Covered community and nontransient-noncommunity systems also have monitoring and compliance-planning duties.",
         "establishes": "This is an enforceable, species-specific drinking-water rule. The final text uses a running annual average for MCL compliance, with provisions for an individual sample that would cause that average to exceed the limit. It is not a finished-food threshold.",
         "relevance": "It identifies the water-system control that may matter to incoming process water. HMTc must preserve the water medium, system obligations and compliance timetable rather than convert the MCL into a food limit.",
@@ -1720,6 +1720,243 @@
           }
         ],
         "kind": "Guidance"
+      }
+    }
+  },
+  "articles/mining-impacted-freshwater-fish": {
+    "page": "articles/mining-impacted-freshwater-fish",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Mercury in carnivorous freshwater fish from the gold-mining basin of La Mojana, Colombia",
+        "citation": "Fuentes-Lopez K, Olivero-Verbel J, Caballero-Gallardo K. Presence of Nematodes, Mercury Concentrations, and Liver Pathology in Carnivorous Freshwater Fish from La Mojana, Sucre, Colombia: Assessing Fish Health and Potential Human Health Risks. Archives of Environmental Contamination and Toxicology. 2025;88:189–209. doi:10.1007/s00244-025-01117-w.",
+        "summary": "The study sampled 326 fish from nine carnivorous species in San Marcos between September 2022 and April 2023. Fresh muscle total mercury averaged 0.31 ± 0.01 mg/kg wet weight. Species and seasonal differences accompanied modeled consumption risks and fish-health findings.",
+        "establishes": "Methylmercury was estimated as 90% of measured total mercury for exposure calculations. Hazard quotients used specified meal sizes and body weights; human outcomes were not measured. There was no matched unmined watershed or retail-fish control.",
+        "relevance": "This supports attention to local species and consumption patterns. It does not independently quantify a causal mining effect, a multi-metal fillet signature, or the performance of HMTc source screening.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://link.springer.com/article/10.1007/s00244-025-01117-w"
+          }
+        ],
+        "kind": "Observational study"
+      },
+      "2": {
+        "referenceTitle": "Assessment of total mercury (Hg) in soil, sediment, and tilapia fish (Oreochromis niloticus) and health risk assessment among residents of Kitwe mining area, Zambia",
+        "citation": "Chisanga M, M’kandawire E, Choongo K, Kalunga G, Yabe J. Assessment of total mercury (Hg) in soil, sediment, and tilapia fish (Oreochromis niloticus) and health risk assessment among residents of Kitwe mining area, Zambia. Environmental Science and Pollution Research. 2025;32:13904–13917. doi:10.1007/s11356-025-36506-0.",
+        "summary": "In October 2023, investigators compared 32 tilapia from Kitwe mining waters with 47 from a non-mining area in Northern Province. Mean muscle total mercury was 0.015 versus 0.007 mg/kg dry weight, a statistically significant difference. Their modeled intake and hazard quotients were low.",
+        "establishes": "This is a regional observational contrast in small tilapia, not a matched intervention or a methylmercury measurement. The controls were in a different region. Dry-weight results require a moisture conversion before comparison with wet-food limits.",
+        "relevance": "The findings support investigating watershed influences without implying that every mining-area fish exceeds a limit. HMTc should preserve analytical basis and species/size information; the study does not isolate artisanal gold mining from copper-mining and smelting sources.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://link.springer.com/article/10.1007/s11356-025-36506-0"
+          }
+        ],
+        "kind": "Observational study"
+      },
+      "3": {
+        "referenceTitle": "Hazardous effects of heavy metal pollution on Nile tilapia in the aquatic ecosystem of the Eastern Delta in Egypt",
+        "citation": "Shaalan WM. Hazardous effects of heavy metal pollution on Nile tilapia in the aquatic ecosystem of the Eastern Delta in Egypt. BMC Veterinary Research. 2024;20:585. doi:10.1186/s12917-024-04367-3.",
+        "summary": "The study collected 120 tilapia, 60 per site, from El-Rayah El-Tawfeeky canal and the Damietta branch in autumn 2022. It reports higher canal-muscle concentrations of several metals, tissue changes and altered gene expression. Table 2 lists lead 33.403, cadmium 2.286 and mercury 10.360 under mg/kg headings.",
+        "establishes": "The source has an unresolved unit/basis conflict: Methods says micrograms per kilogram dry weight, while Table 2 says mg/kg muscle weight. Chromium and mercury were elemental measurements, without Cr(VI) or methylmercury speciation. Dietary risks were modeled, not observed in people.",
+        "relevance": "The regional comparison supports considering multiple analytes, but the article’s precise 10–1000-fold exceedances and Cr(VI) tier inference cannot be validated from these inconsistently labeled data.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://link.springer.com/article/10.1186/s12917-024-04367-3"
+          }
+        ],
+        "kind": "Observational study"
+      },
+      "4": {
+        "referenceTitle": "A preliminary assessment of mercury, methylmercury and other potentially toxic elements in largemouth bass (Micropterus salmoides) from the Almadén mining district",
+        "citation": "Barquero JI, Hidalgo JJ, Esbrí JM, et al. A preliminary assessment of mercury, methylmercury and other potentially toxic elements in largemouth bass (Micropterus salmoides) from the Almadén mining district. Environmental Geochemistry and Health. 2025;47:27. Published online 23 December 2024. doi:10.1007/s10653-024-02326-3.",
+        "summary": "Among 28 bass from seven sites along a 34 km transect, muscle total mercury ranged from about 0.47 to 7.61 mg/kg wet weight. Measured methylmercury represented 79.7–92.1% of total mercury. The highest concentrations occurred in a decommissioned mine pit lake.",
+        "establishes": "The study supports persistent mercury contamination after mining and metallurgy ceased by 2008. Other measured potentially toxic elements were described as non-concerning; it does not establish a uniformly co-elevated lead–cadmium–chromium–nickel signature.",
+        "relevance": "It supports considering legacy watershed contamination when sourcing fish. Its selenium-based low-risk interpretation is not a human safety trial or a basis for offsetting HMTc mercury limits, and the study still recommends maintaining the consumption ban.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://link.springer.com/article/10.1007/s10653-024-02326-3"
+          }
+        ],
+        "kind": "Observational study"
+      },
+      "5": {
+        "referenceTitle": "Reservoir Stratification Modulates the Influence of Impoundments on Fish Mercury Concentrations along an Arid Land River System",
+        "citation": "Willacker JJ, Eagles-Smith CA, Chandler JA, Naymik J, Myers R, Krabbenhoft DP. Reservoir Stratification Modulates the Influence of Impoundments on Fish Mercury Concentrations along an Arid Land River System. Environmental Science & Technology. 2023;57:21313–21326. doi:10.1021/acs.est.3c04646.",
+        "summary": "The study analyzed 1,815 smallmouth bass from 25 Snake River reaches sampled in 2013, 2015 and 2020. Size-adjusted mercury averaged 76% higher in reservoirs and tailraces than free-flowing reaches. Reservoir stratification was strongly associated with concentrations and exceedances of the 0.3 mg/kg human-consumption benchmark.",
+        "establishes": "The 52–80% versus 6–17% contrast concerns stratifying reservoirs/tailraces versus settings without stratification, not a simple all-dams versus rivers comparison. The observational design does not show that impoundment alone causes every difference.",
+        "relevance": "This supports including hydrology, fish size and location in HMTc sourcing evidence. It does not establish a multi-metal signature or prove all impounded fisheries should be excluded.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10734268/"
+          }
+        ],
+        "kind": "Observational study"
+      },
+      "6": {
+        "referenceTitle": "Contaminants in fish from U.S. rivers: Probability-based national assessments",
+        "citation": "Stahl LL, Snyder BD, McCarty HB, Kincaid TM, Olsen AR, Cohen TR, Healey JC. Contaminants in fish from U.S. rivers: Probability-based national assessments. Science of the Total Environment. 2023;861:160557. doi:10.1016/j.scitotenv.2022.160557.",
+        "summary": "Probability surveys collected fish composites at 353 river sites in 2013–14 and 290 in 2018–19. Mercury was detected in every composite. Estimated river length containing sampled fish above 300 ng/g was 23.5% and 26.0%, with no statistically significant change.",
+        "establishes": "The denominator is the sampled population of eligible river kilometers, not all US rivers or one quarter of fish populations. The surveys covered larger flowing rivers in the contiguous US, excluding reservoirs; they measured mercury, PCBs and PFAS rather than a mining-specific metal panel.",
+        "relevance": "The results support local fish monitoring, but do not measure advisory effectiveness or attribute contamination to mining. The paper explicitly describes existing state advisories for locally caught fish, contradicting an unqualified claim that advisories only address commercial marine supplies.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9948096/"
+          }
+        ],
+        "kind": "National survey"
+      },
+      "7": {
+        "referenceTitle": "Maximum levels for heavy metals in fish (Codex CXS 193; Commission Regulation (EU) 2023/915)",
+        "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025. European Commission. Regulation (EU) 2023/915 of 25 April 2023; original and consolidation of 19 August 2026.",
+        "summary": "Codex recommends commodity-specific maximum levels and sampling procedures for international trade. The EU regulation imposes market limits for specified contaminants, species and edible tissues. These are product-compliance instruments distinct from daily or weekly intake guidance.",
+        "establishes": "Codex’s listed fish methylmercury limits cover six named categories, not all freshwater fish. It permits total-mercury screening followed by speciation when needed and recommends supplementary consumer advice. EU fish mercury limits vary by species; neither source supplies a universal five-metal freshwater panel.",
+        "relevance": "HMTc comparisons must match jurisdiction, analyte, species, tissue and moisture basis. These sources do not validate the article’s universal exceedance factors or prove provenance assessment ineffective within existing systems. Codex expressly supports source prevention and representative lot sampling.",
+        "links": [
+          {
+            "label": "Codex CXS 193, 2025 version",
+            "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+          },
+          {
+            "label": "EU regulation as adopted",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          },
+          {
+            "label": "EU consolidation, 19 August 2026",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ],
+        "kind": "International standard and EU regulation"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — mining-impacted freshwater fish (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Mining-impacted freshwater fish are a globally distributed multi-metal contamination pathway not addressed by commercial-market fish advisories. Heavy Metal Index. Updated 16 May 2026. Preprint.",
+        "summary": "This synthesis groups mining, industrial discharge and reservoir studies to argue for watershed-specific contamination assessment. It explicitly acknowledges missing multi-metal artisanal-mining evidence and the absence of a formal pooled analysis.",
+        "establishes": "It has no external reviews recorded. The claimed ten datasets across six continents are not established by this review: its geography misplaces Québec in Europe and Mexico in South America, while its multi-metal argument relies heavily on the Egyptian paper’s inconsistent units.",
+        "relevance": "It documents the argument reframed by HMTc, not independent certification evidence. Regional contamination findings should not become a universal comparison with store-bought fish or a claim that all local-consumption advisories are absent.",
+        "links": [
+          {
+            "label": "HMI synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish"
+          }
+        ],
+        "kind": "Editorial synthesis"
+      }
+    }
+  },
+  "articles/organ-meat-cadmium-lead-accumulation": {
+    "page": "articles/organ-meat-cadmium-lead-accumulation",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt",
+        "citation": "Rabeey MA, Sabala RF, Zakaria AI, Sallam KI. Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt. Scientific Reports. 2025;15:43828. doi:10.1038/s41598-025-29927-x. Supplemental context: Regulation (EU) 2023/915, consolidated August 19, 2026.",
+        "summary": "The survey tested 105 market samples each of bovine muscle, liver and kidney. Mean cadmium was 0.030, 0.056 and 0.073 mg/kg wet weight, respectively; tissue differences were statistically significant. Mean lead did not differ significantly, while total mercury was lower in kidney than muscle.",
+        "establishes": "The methods do not identify paired tissues from the same animals or establish lifetime storage mechanisms. Total mercury measurements cannot verify methylmercury as the cause of the observed distribution. The current EU cadmium limits for these tissues are 0.05, 0.50 and 1.0 mg/kg wet weight; its bovine-offal lead limit is 0.20, unlike the paper’s historical 0.50 comparator.",
+        "relevance": "The tissue means support distinct occurrence data and the article’s illustrative 100 g calculations. They do not establish a universal twofold multiplier for mixed products or exclude differences in animal histories. Low modeled hazard indices are separate from legal compliance. The supplemental EU text does not identify the unspecified reference 7.",
+        "links": [
+          {
+            "label": "Original study full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12706026/fullTextXML"
+          },
+          {
+            "label": "Current EU text, separate legal context",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Health risk assessment of metals in chicken meat and liver in Egypt",
+        "citation": "Kamaly HF, Sharkawy AA. Health risk assessment of metals in chicken meat and liver in Egypt. Environmental Monitoring and Assessment. 2023;195:802. doi:10.1007/s10661-023-11365-9.",
+        "summary": "This Assiut market survey analyzed 360 chicken tissue samples across six brands. Its brand-level means show liver cadmium of 0.027–0.104 µg/g versus chest-muscle cadmium of 0.014–0.054 µg/g. Lead showed the opposite ordering, with chest-muscle means above liver means.",
+        "establishes": "These are ranges of brand means, not the complete range of individual samples. The market-sampling design does not establish matched tissues from each bird or prove why lead was higher in chest muscle. Feed contamination is a possible pathway, not a directly demonstrated cause in these samples. Hazard calculations use assumed consumption and benchmarks.",
+        "relevance": "The results support analyte-specific interpretation rather than one tissue ranking for every metal. They do not make the bovine twofold ratio universal, validate a certification ceiling or establish that all tested products comply with current food law. The journal is Environmental Monitoring and Assessment, despite a different journal name on the HMI source list.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10238321/fullTextXML"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Heavy Metals Accumulation in Different Organs of Poultry and Hypothetical Risk Analysis: Evidence from Experimental Feeding with Assorted Metal Feed",
+        "citation": "Morshed AJM, Islam MSM, Hossain AHR, et al. Heavy Metals Accumulation in Different Organs of Poultry and Hypothetical Risk Analysis: Evidence from Experimental Feeding with Assorted Metal Feed. Research Square, version 1, posted April 8, 2024. doi:10.21203/rs.3.rs-4210575/v1. Preprint.",
+        "summary": "This 28-day feeding experiment used eight groups receiving feed with graded mixtures of cadmium, lead and chromium salts. The highest-dose cadmium table reports 43.36 mg/kg dry basis in liver and 6.57 in muscle, a ratio of about 6.6.",
+        "establishes": "The experiment supports tissue differences under deliberate mixed-metal exposure, not ordinary retail concentrations or an isolated cadmium mechanism. It is an unreviewed preprint. Reporting inconsistencies include a cadmium table headed as chromium and an abstract claiming bone had the highest cadmium despite the displayed liver value. Some modeled muscle hazard quotients exceeded one.",
+        "relevance": "The article correctly labels the high-dose evidence as a preprint, but calls its inference more robust than this reporting supports. Its blanket statement that anchor-study hazard quotients remained below one excludes this experiment’s own high-dose results. Dry-basis experimental values cannot be compared directly with wet-weight market limits.",
+        "links": [
+          {
+            "label": "Exact version 1 PDF",
+            "href": "https://assets-eu.researchsquare.com/files/rs-4210575/v1/7d5c7baf-a785-4a16-b115-0be56e8d783d.pdf"
+          },
+          {
+            "label": "Version and review-status record",
+            "href": "https://www.researchsquare.com/article/rs-4210575/v1"
+          }
+        ],
+        "kind": "Preprint"
+      },
+      "4": {
+        "referenceTitle": "Monitoring trace minerals and heavy metals in liver of free-living large herbivores in the Netherlands",
+        "citation": "Marcelino I, Monti G, Cornelissen P, et al. Monitoring trace minerals and heavy metals in liver of free-living large herbivores in the Netherlands. Frontiers in Veterinary Science. 2026;13:1751586. doi:10.3389/fvets.2026.1751586.",
+        "summary": "The Oostvaardersplassen monitoring programme analyzed liver samples from 346 cattle, horses and red deer during 2003–2023. Veterinary reference intervals were estimated from smaller subsets without evident disease. Concentrations were reported on a dry-weight basis.",
+        "establishes": "The approximately 4.6 mg/kg lead value for Heck cattle is a modeled upper reference limit, not an observed maximum or food-safety threshold. Table 3 gives a 4.57 upper reference limit from 22 lead observations, with an observed maximum of 1.50. Many cadmium results were below quantification, limiting interval estimation.",
+        "relevance": "This provides wildlife-health context for liver monitoring, not a representative retail-offal baseline or an organ-to-muscle comparison. The article correctly calls 4.6 an upper reference bound in its body; it must keep that distinction and avoid using dry-weight veterinary intervals as wet-weight food limits.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12971517/fullTextXML"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Lead, Cadmium and Chromium in Sheep Liver from a Tabriz Abattoir",
+        "citation": "Khatemeh S, Imani Baran A. Evaluation of bioaccumulation of some heavy metals in liver flukes (Fasciola hepatica and Dicrocoelium dendriticum) and liver samples of sheep. Veterinary Research Forum. 2022;13(4):611–614. doi:10.30466/vrf.2020.135702.3043. Supplemental context: current EU sheep-liver cadmium limit.",
+        "summary": "This is the identifiable study behind the shortened bibliography title. It compared liver flukes, infected sheep livers and uninfected livers collected at Tabriz abattoir in December 2019–February 2020. Uninfected-liver cadmium averaged 0.07 µg/g wet weight; infected groups had higher means.",
+        "establishes": "The study evaluated parasite bioindicators, not representative retail exposure or organ-to-muscle differences. Its uninfected-liver mean is numerically below the EU sheep-liver cadmium maximum of 0.50 mg/kg wet weight. That external comparison neither proves every sample compliant nor establishes Iranian legal compliance.",
+        "relevance": "The result supplies a small, context-specific liver observation. Infection status and study purpose matter: it cannot establish a universal organ baseline, lifetime accumulation factor or safety of a formulated product. The full title clarifies the actual source rather than silently treating the shortened title as a separate paper.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9840797/fullTextXML"
+          },
+          {
+            "label": "Current EU text, separate comparison",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Human health risk assessment of edible body parts of chicken through heavy metals and trace elements quantitative analysis",
+        "citation": "Hossain E, Nesha M, Chowdhury MAZ, Rahman SH. Human health risk assessment of edible body parts of chicken through heavy metals and trace elements quantitative analysis. PLOS ONE. 2023;18(3):e0279043. doi:10.1371/journal.pone.0279043.",
+        "summary": "The study analyzed six tissues from 18 broiler chickens bought across six Dhaka locations: 108 tissue samples, not 108 birds. It reported lead up to 4.6 mg/kg fresh weight and higher average cadmium in liver than muscle.",
+        "establishes": "The cadmium ranking was liver > gizzard > brain > muscle > kidney > heart: kidney averaged 0.015 mg/kg versus muscle 0.021. Tannery-derived feed was proposed as a possible explanation for chromium; the study did not trace lead to that source. Its claimed sixfold lead comparison is not established by the heterogeneous historical limits in Table 3.",
+        "relevance": "The kidney finding contradicts the article’s universal kidney-above-muscle statement. The paper supports tissue-specific measurements while requiring a distinction between source hypotheses, measured concentrations and modeled risk. A hazard quotient below one is not evidence that a food is legally compliant or risk-free.",
+        "links": [
+          {
+            "label": "Original article full text",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004613/fullTextXML"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Liver and kidney are physiological cadmium accumulation sinks that carry heavy-metal loads above skeletal muscle, making offal a distinct dietary exposure pathway that muscle-meat surveillance does not represent. Heavy Metal Index. Updated July 27, 2026. doi:10.83376/hmi.organ-meat-cadmium-lead-accumulation. Preprint.",
+        "summary": "This author-produced synthesis connects tissue surveys, a feeding preprint and veterinary liver-monitoring studies to argue for separate assessment of offal. It acknowledges weaker and variable lead patterns and limited market coverage.",
+        "establishes": "The displayed external-review log contains no verdicts and labels the synthesis a preprint. It does not independently establish the underlying data. Its assertion that the bovine survey compared tissues from the same carcasses is not reported in that survey’s methods, and its stated universal cadmium ordering overlooks the cited Bangladesh kidney result.",
+        "relevance": "The synthesis explains the article’s rationale, but its errors and heterogeneous study designs must remain visible. Tissue-specific testing is a defensible inference; a universal twofold multiplier, demonstrated mercury speciation, complete surveillance-coverage claim and validated certification benefit do not follow from this evidence.",
+        "links": [
+          {
+            "label": "Synthesis and visible review state",
+            "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation"
+          }
+        ],
+        "kind": "Preprint"
       }
     }
   },
@@ -2314,6 +2551,114 @@
       }
     }
   },
+  "articles/subsistence-fishing-mehg-disparity": {
+    "page": "articles/subsistence-fishing-mehg-disparity",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Global fishing patterns amplify human exposures to methylmercury",
+        "citation": "Li M-L, Thackray CP, Lam VWY, Cheung WWL, Sunderland EM. Global fishing patterns amplify human exposures to methylmercury. PNAS. 2024;121(40):e2405898121. Published 23 September 2024. doi:10.1073/pnas.2405898121.",
+        "summary": "The model combines 2001–2010 catches for 1,774 marine species with mercury estimates. At 170 g seafood/day, a central 97% of 173 subsistence fishing entities exceed EPA’s reference dose; the interquartile range is 84–99%. Regional body-weight distributions and catch composition inform the estimates.",
+        "establishes": "This is a screening model, not the percentage of individual people with measured overexposure. Its yellowfin-tuna validation does not validate every species or coastal community. The nutrient-to-mercury ratio tests whether a nutritional target and exposure benchmark can both be met, not direct physiological cancellation of toxicity.",
+        "relevance": "It supports investigating exposure inequalities and catch provenance, while calling for local intake and biomonitoring data. It does not show that regulatory advice excludes subsistence fishers or that HMTc certification reduces their exposure.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459155/"
+          }
+        ],
+        "kind": "Modeling study"
+      },
+      "2": {
+        "referenceTitle": "US EPA methylmercury Reference Dose",
+        "citation": "US EPA. IRIS Chemical Assessment Summary: Methylmercury (MeHg), CASRN 22967-92-6. Oral reference dose revised 27 July 2001.",
+        "summary": "EPA’s oral reference dose is 0.0001 mg/kg/day, equivalent to 0.1 µg/kg body weight/day. It derives from developmental neuropsychological effects, benchmark-dose modeling and an uncertainty factor of ten.",
+        "establishes": "This is a chronic exposure benchmark with uncertainty, not a fish concentration limit or a prediction of harm for each exceedance. It is not calibrated to a median retail shopper’s fish consumption and contains no omega-3 offset.",
+        "relevance": "It supplies the comparator used in the Li and Tapajós exposure calculations. The article’s claim that the nutrient ratio represents EPA’s own nutritional-risk framing goes beyond this assessment.",
+        "links": [
+          {
+            "label": "EPA IRIS assessment",
+            "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "3": {
+        "referenceTitle": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+        "citation": "Wu M, Wu X, Saiz-Lopez A, Blanchfield PJ, Ren H, Zhong H. Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers. PNAS. 2025;122(13):e2421921122. Published 24 March 2025. doi:10.1073/pnas.2421921122.",
+        "summary": "A compilation of about 13,000 Chinese fish samples finds higher methylmercury in freshwater wild fish across trophic classes. A random-forest model driven by one climate model projects an approximately 60% national increase in 2031–2060 relative to 2022 under two scenarios with mercury emissions held constant.",
+        "establishes": "The 2.9–6.2-fold wild/farmed difference is not a matched-species trial. The 30.9 µg/kg value concerns the 40 ± 5 cm subgroup. Solar radiation is a predictive factor with several proposed mechanisms; photochemical methylation was not directly established as the sole cause.",
+        "relevance": "The study supports source-sensitive monitoring and concern about unequal future exposure. It does not directly measure subsistence households’ intake or quantify their share of China’s exposure; the 51% freshwater contribution is cited from earlier work.",
+        "links": [
+          {
+            "label": "Full primary study",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/"
+          }
+        ],
+        "kind": "Observational compilation and model"
+      },
+      "4": {
+        "referenceTitle": "Systematic Review and Spatiotemporal Assessment of Mercury Concentration in Fish from the Tapajós River Basin: Implications for Environmental and Human Health",
+        "citation": "Auzier Guimarães KL, do Nascimento Andrade SJ, Liscano-Carreño AA, de Oliveira RB, Rodrigues LRR. Systematic Review and Spatiotemporal Assessment of Mercury Concentration in Fish from the Tapajós River Basin: Implications for Environmental and Human Health. ACS Environmental Au. 2025;5(1):86–100. Published online 30 October 2024. doi:10.1021/acsenvironau.4c00053.",
+        "summary": "The review compiles 36 documents, 735 mean mercury values, 143 species and 14,113 fish. Using 116.25 g/day and 70 kg adult body weight, 115 of 129 food-fish species had a hazard quotient of at least one in one or more sub-basins.",
+        "establishes": "The intake assumption is an average from earlier local studies, whose estimates ranged from 8 to 217 g/day. These modeled risks are not measured disease rates. Sampling is geographically uneven and often sparse; source eligibility includes total mercury or methylmercury.",
+        "relevance": "It supports locally informed monitoring and consumption guidance. It cannot establish a universal risk for every basin resident, attribute all mercury to mining, or validate an HMTc ceiling. The reported 67% exceedance uses the authors’ 0.5 mg/kg comparator, not a verified current universal WHO limit.",
+        "links": [
+          {
+            "label": "Full systematic review",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11741060/"
+          }
+        ],
+        "kind": "Systematic review and exposure model"
+      },
+      "5": {
+        "referenceTitle": "FDA-EPA advice about eating fish",
+        "citation": "US FDA and US EPA. Advice about Eating Fish, revised October 2021; supporting Technical Information on Development of FDA/EPA Advice, including June 2024 update.",
+        "summary": "The advice targets pregnancy, breastfeeding and children aged 1–11. It recommends lower-mercury fish with age-appropriate servings. For fish caught by family or friends, it directs readers to local advisories and gives a one-serving/no-other-fish fallback when no advisory exists.",
+        "establishes": "The species chart primarily uses commercial monitoring, but the advice is not limited to a median retail consumer. Its calculations use a 75 kg pregnant person, specified servings and EPA’s developmental reference dose; the technical update explicitly acknowledges higher subsistence-fisher intake.",
+        "relevance": "The article correctly identifies limits to applying a national species chart to a particular watershed, but its claim that FDA–EPA advice assumes all fish pass through retail is contradicted by the source. Neither the advice nor its existence proves effective protection for every community.",
+        "links": [
+          {
+            "label": "FDA–EPA fish advice",
+            "href": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+          },
+          {
+            "label": "How the advice was developed",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/technical-information-development-fdaepa-advice-about-eating-fish-those-who-might-become-or-are"
+          }
+        ],
+        "kind": "Government consumer advice"
+      },
+      "6": {
+        "referenceTitle": "EFSA opinion on chronic dietary exposure to methylmercury",
+        "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985; corrected 10 April 2018.",
+        "summary": "EFSA’s European exposure assessment considers different age groups, women of childbearing age, and high and frequent fish consumers. It sets a methylmercury TWI of 1.3 µg/kg body weight per week and reports that high fish consumers may exceed it by approximately sixfold.",
+        "establishes": "The opinion is a risk assessment, not a global consumption advisory. Its European survey coverage limits direct application to other communities, but it explicitly evaluates high intake and sensitive groups rather than assuming only ordinary retail consumption.",
+        "relevance": "The source supports the need to distinguish local exposure patterns. It contradicts the article’s statement that the disparity is invisible within regulatory documents; it does not itself establish the reach or effectiveness of certification.",
+        "links": [
+          {
+            "label": "EFSA corrected opinion",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Index — subsistence-fishing methylmercury disparity (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Subsistence fishing methylmercury is a global vulnerable-population pattern that regulatory fish-consumption advice does not address. Heavy Metal Index. Updated 13 May 2026. Preprint.",
+        "summary": "The synthesis brings together a global marine catch model, Chinese freshwater modeling and a Tapajós literature review. It argues that subsistence exposure deserves explicit attention and acknowledges that its anchors lack measured individual intake and linked biomonitoring.",
+        "establishes": "No external reviews are recorded. The population-level evidence is modeled or compiled, and the three studies do not independently audit every national advisory. Its blanket retail-only framing conflicts with FDA’s local-catch guidance and EFSA’s high-consumer assessment.",
+        "relevance": "It documents the argument adapted by HMTc and helps explain why a certificate for submitted commercial products cannot describe all community exposure. It is not independent evidence of HMTc efficacy, nor proof that every food-certification scheme has identical boundaries.",
+        "links": [
+          {
+            "label": "HMI synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity"
+          }
+        ],
+        "kind": "Editorial synthesis"
+      }
+    }
+  },
   "articles/supplement-botanical-lead-pathway": {
     "page": "articles/supplement-botanical-lead-pathway",
     "reviewed": "2026-09-15",
@@ -2675,7 +3020,11 @@
         "links": [
           {
             "label": "Read the source",
-            "href": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf"
+            "href": "https://doi.org/10.1016/S0278-6915(03)00217-5"
+          },
+          {
+            "label": "Abstract and publication record",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/14563390/"
           }
         ],
         "kind": "Journal"
@@ -4123,7 +4472,7 @@
       "5": {
         "referenceTitle": "Australia New Zealand Food Standards Code, Schedule 19 — Maximum levels of contaminants and natural toxicants",
         "citation": "Australia New Zealand Food Standards Code, Schedule 19—Maximum levels of contaminants and natural toxicants, instrument F2015L00454; compilation 13 September 2024, §§S19–3 and S19–4. FSANZ, Proposal P1028 implementation information.",
-        "summary": "Schedule 19 sets commodity-specific metal limits. The reviewed 2024 compilation lists aluminium at 0.5 mg/kg for specified infant formula products,1 mg/kg for soy-based formula and 0.2 mg/kg for preterm special-medical products; canned-food tin is 250 mg/kg.",
+        "summary": "Schedule 19 sets commodity-specific metal limits. The reviewed 2024 compilation lists aluminium at 0.5 mg/kg for specified infant formula products, 1 mg/kg for soy-based formula and 0.2 mg/kg for preterm special-medical products; canned-food tin is 250 mg/kg.",
         "establishes": "These are food concentration limits with defined product and preparation rules. The 2024 infant-formula revision applies in Australia, with a transition to 13 September 2029; New Zealand opted out of that revision.",
         "relevance": "The Code provides a concrete example of aluminium regulation beyond the familiar four metals. HMTc comparisons must identify jurisdiction, edition, formula class and concentration basis.",
         "links": [
@@ -5820,7 +6169,7 @@
       "6": {
         "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
         "citation": "European Commission. Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food. OJ L 119, May 5, 2023, pp. 103–157; consolidated text dated August 19, 2026 consulted.",
-        "summary": "Article2 bars listed foods exceeding applicable Annex I limits from the market and from ingredient use. The Annex sets category-specific limits for lead, cadmium, arsenic and inorganic tin; the amended framework also includes nickel.",
+        "summary": "Article 2 bars listed foods exceeding applicable Annex I limits from the market and from ingredient use. The Annex sets category-specific limits for lead, cadmium, arsenic and inorganic tin; the amended framework also includes nickel.",
         "establishes": "These are EU concentration limits with defined food categories and measurement bases. They are not automatically US law. The consolidated text is a documentation aid; authentic amending acts remain controlling.",
         "relevance": "This supports using EU limits as a distinct benchmark. It does not establish that HMTc adopts every strictest limit or applies the correct category in every lot decision.",
         "links": [

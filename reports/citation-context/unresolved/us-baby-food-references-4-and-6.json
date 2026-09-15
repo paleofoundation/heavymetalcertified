@@ -5,7 +5,7 @@
     "referenceTitle": "Vermont H.536 / Act 110 status",
     "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
     "sourceDigest": "404cdbe8498620024872a3eb5ee6f12a0d8edfc04b23f46317beab63df1e9068",
-    "reason": "Official status and enactedAct110 identified, but readable official enactment and effective-date text could not be retrieved after repeated timeouts/502 responses. Search excerpts were not accepted as a substitute for reading the law. Preserve pending until actual final text is read.",
+    "reason": "Official status and enacted Act 110 identified, but readable official enactment and effective-date text could not be retrieved after repeated timeouts/502 responses. Search excerpts were not accepted as a substitute for reading the law. Preserve pending until actual final text is read.",
     "attemptedUrls": [
       "https://legislature.vermont.gov/bill/status/2026/H.536",
       "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT110/ACT110%20As%20Enacted.pdf"
@@ -18,7 +18,7 @@
     "referenceTitle": "Heavy Metal Index — United States infant-food contaminant controls",
     "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
     "sourceDigest": "c5d15d6bba8351cc18cea9a9f9a620f890160059c16df568fea74daa4a98059b",
-    "reason": "Exact cited Heavy Metal Index page returnsHTTP404 via direct retrieval; web access and exact-site search did not recover this resource. Do not silently substitute FDA sources or another HMI page.",
+    "reason": "Exact cited Heavy Metal Index page returns HTTP 404 via direct retrieval; web access and exact-site search did not recover this resource. Do not silently substitute FDA sources or another HMI page.",
     "attemptedUrls": [
       "https://heavymetalindex.com/regulations/us-infant-food-contaminants"
     ],

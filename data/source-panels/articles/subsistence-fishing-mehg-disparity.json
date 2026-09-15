@@ -1,0 +1,196 @@
+{
+  "page": "articles/subsistence-fishing-mehg-disparity",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Global fishing patterns amplify human exposures to methylmercury",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "8f512fd6114cb4aa8efe47a472e01d54d27328f952b969e2379d76d578252969",
+      "citation": "Li M-L, Thackray CP, Lam VWY, Cheung WWL, Sunderland EM. Global fishing patterns amplify human exposures to methylmercury. PNAS. 2024;121(40):e2405898121. Published 23 September 2024. doi:10.1073/pnas.2405898121.",
+      "summary": "The model combines 2001–2010 catches for 1,774 marine species with mercury estimates. At 170 g seafood/day, a central 97% of 173 subsistence fishing entities exceed EPA’s reference dose; the interquartile range is 84–99%. Regional body-weight distributions and catch composition inform the estimates.",
+      "establishes": "This is a screening model, not the percentage of individual people with measured overexposure. Its yellowfin-tuna validation does not validate every species or coastal community. The nutrient-to-mercury ratio tests whether a nutritional target and exposure benchmark can both be met, not direct physiological cancellation of toxicity.",
+      "relevance": "It supports investigating exposure inequalities and catch provenance, while calling for local intake and biomonitoring data. It does not show that regulatory advice excludes subsistence fishers or that HMTc certification reduces their exposure.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459155/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459155/",
+            "note": "Reused exact full paper reviewed for aquaculture; freshly read subsistence results, Fig. 3 ratio definition, Fig. 4, exposure methods and uncertainties. The 84–99% range is the IQR around 97%, with 170 g/day assumed. The omega-3 screen uses 250 mg/day and a 60 kg example; it is not an EPA nutrient-offset determination."
+          }
+        ]
+      },
+      "kind": "Modeling study"
+    },
+    "2": {
+      "referenceTitle": "US EPA methylmercury Reference Dose",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "ffbf208b222beba19d1445acff13ca82b5853ebb2cac043c0956df9f455c0a54",
+      "citation": "US EPA. IRIS Chemical Assessment Summary: Methylmercury (MeHg), CASRN 22967-92-6. Oral reference dose revised 27 July 2001.",
+      "summary": "EPA’s oral reference dose is 0.0001 mg/kg/day, equivalent to 0.1 µg/kg body weight/day. It derives from developmental neuropsychological effects, benchmark-dose modeling and an uncertainty factor of ten.",
+      "establishes": "This is a chronic exposure benchmark with uncertainty, not a fish concentration limit or a prediction of harm for each exceedance. It is not calibrated to a median retail shopper’s fish consumption and contains no omega-3 offset.",
+      "relevance": "It supplies the comparator used in the Li and Tapajós exposure calculations. The article’s claim that the nutrient ratio represents EPA’s own nutritional-risk framing goes beyond this assessment.",
+      "links": [
+        {
+          "label": "EPA IRIS assessment",
+          "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://iris.epa.gov/static/pdfs/0073_summary.pdf",
+            "note": "Reused exact primary PDF pp1–4 read on 15 September 2026 for selenium–mercury and climate pages, with fresh subsistence-page relevance. Reviewed revision date, developmental endpoint, benchmark-dose basis and uncertainty factor. The RfD is a dose per body weight; source location and consumption rate determine exposure relative to it."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "3": {
+      "referenceTitle": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "99353ee481e552b91fd7ae6c739ad807e822fe7ec9b611140a96c0cf36a95292",
+      "citation": "Wu M, Wu X, Saiz-Lopez A, Blanchfield PJ, Ren H, Zhong H. Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers. PNAS. 2025;122(13):e2421921122. Published 24 March 2025. doi:10.1073/pnas.2421921122.",
+      "summary": "A compilation of about 13,000 Chinese fish samples finds higher methylmercury in freshwater wild fish across trophic classes. A random-forest model driven by one climate model projects an approximately 60% national increase in 2031–2060 relative to 2022 under two scenarios with mercury emissions held constant.",
+      "establishes": "The 2.9–6.2-fold wild/farmed difference is not a matched-species trial. The 30.9 µg/kg value concerns the 40 ± 5 cm subgroup. Solar radiation is a predictive factor with several proposed mechanisms; photochemical methylation was not directly established as the sole cause.",
+      "relevance": "The study supports source-sensitive monitoring and concern about unequal future exposure. It does not directly measure subsistence households’ intake or quantify their share of China’s exposure; the 51% freshwater contribution is cited from earlier work.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/",
+            "note": "Reused exact paper reviewed for aquaculture; freshly read climate projections, solar-radiation discussion, vulnerability discussion and prediction methods. Future model fixes 2022 nonclimate inputs and uses standardized piscivorous/omnivorous fish. Some MeHg data are estimated from THg; sparse regional data and unconfirmed mechanisms limit extrapolation."
+          }
+        ]
+      },
+      "kind": "Observational compilation and model"
+    },
+    "4": {
+      "referenceTitle": "Systematic Review and Spatiotemporal Assessment of Mercury Concentration in Fish from the Tapajós River Basin: Implications for Environmental and Human Health",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "748c4122782bd9c1a3c02d0ff383d6f1d2d406402862c41cdd87f3e4635413a0",
+      "citation": "Auzier Guimarães KL, do Nascimento Andrade SJ, Liscano-Carreño AA, de Oliveira RB, Rodrigues LRR. Systematic Review and Spatiotemporal Assessment of Mercury Concentration in Fish from the Tapajós River Basin: Implications for Environmental and Human Health. ACS Environmental Au. 2025;5(1):86–100. Published online 30 October 2024. doi:10.1021/acsenvironau.4c00053.",
+      "summary": "The review compiles 36 documents, 735 mean mercury values, 143 species and 14,113 fish. Using 116.25 g/day and 70 kg adult body weight, 115 of 129 food-fish species had a hazard quotient of at least one in one or more sub-basins.",
+      "establishes": "The intake assumption is an average from earlier local studies, whose estimates ranged from 8 to 217 g/day. These modeled risks are not measured disease rates. Sampling is geographically uneven and often sparse; source eligibility includes total mercury or methylmercury.",
+      "relevance": "It supports locally informed monitoring and consumption guidance. It cannot establish a universal risk for every basin resident, attribute all mercury to mining, or validate an HMTc ceiling. The reported 67% exceedance uses the authors’ 0.5 mg/kg comparator, not a verified current universal WHO limit.",
+      "links": [
+        {
+          "label": "Full systematic review",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11741060/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11741060/",
+            "note": "Read full primary abstract, search/inclusion methods, spatial and exposure methods, results, limitations and conclusions. Search ended 22 February 2023; documents span 1992–2022. The review explicitly cautions that assumed intake may misrepresent local groups and notes naturally mercury-rich soils and land-use mobilization. Publisher access returned 403; archived primary full text was retrieved."
+          }
+        ]
+      },
+      "kind": "Systematic review and exposure model"
+    },
+    "5": {
+      "referenceTitle": "FDA-EPA advice about eating fish",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "bca3a5323223b59d43213aa0d76712cd7c807472a7034ab59652c808451d0503",
+      "citation": "US FDA and US EPA. Advice about Eating Fish, revised October 2021; supporting Technical Information on Development of FDA/EPA Advice, including June 2024 update.",
+      "summary": "The advice targets pregnancy, breastfeeding and children aged 1–11. It recommends lower-mercury fish with age-appropriate servings. For fish caught by family or friends, it directs readers to local advisories and gives a one-serving/no-other-fish fallback when no advisory exists.",
+      "establishes": "The species chart primarily uses commercial monitoring, but the advice is not limited to a median retail consumer. Its calculations use a 75 kg pregnant person, specified servings and EPA’s developmental reference dose; the technical update explicitly acknowledges higher subsistence-fisher intake.",
+      "relevance": "The article correctly identifies limits to applying a national species chart to a particular watershed, but its claim that FDA–EPA advice assumes all fish pass through retail is contradicted by the source. Neither the advice nor its existence proves effective protection for every community.",
+      "links": [
+        {
+          "label": "FDA–EPA fish advice",
+          "href": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+        },
+        {
+          "label": "How the advice was developed",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/technical-information-development-fdaepa-advice-about-eating-fish-those-who-might-become-or-are"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+            "note": "Reread target audience, serving recommendations, local-catch paragraph and October 2021 revision label. Same exact advice was reviewed for cooking. Local fish guidance explicitly mentions larger carp, catfish, trout and perch and contamination beyond mercury."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/technical-information-development-fdaepa-advice-about-eating-fish-those-who-might-become-or-are",
+            "note": "Freshly read June 2024 update and derivation sections through monitoring-data selection. The update specifically identifies subsistence fishers and their families as higher-intake groups. Categories use RfD, 75 kg body weight and 113 g adult servings, with confidence-interval checks; they are not derived from the median shopper’s actual consumption frequency."
+          }
+        ]
+      },
+      "kind": "Government consumer advice"
+    },
+    "6": {
+      "referenceTitle": "EFSA opinion on chronic dietary exposure to methylmercury",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "ac551d841bd7062c74796f77f675c99e12b86642325bd267ea8fe8787e5b8aca",
+      "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985; corrected 10 April 2018.",
+      "summary": "EFSA’s European exposure assessment considers different age groups, women of childbearing age, and high and frequent fish consumers. It sets a methylmercury TWI of 1.3 µg/kg body weight per week and reports that high fish consumers may exceed it by approximately sixfold.",
+      "establishes": "The opinion is a risk assessment, not a global consumption advisory. Its European survey coverage limits direct application to other communities, but it explicitly evaluates high intake and sensitive groups rather than assuming only ordinary retail consumption.",
+      "relevance": "The source supports the need to distinguish local exposure patterns. It contradicts the article’s statement that the disparity is invisible within regulatory documents; it does not itself establish the reach or effectiveness of certification.",
+      "links": [
+        {
+          "label": "EFSA corrected opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985",
+            "note": "Reused corrected opinion previously reviewed the same day; freshly read §6.2.6.1–2 on p52, abstract/summary and risk-characterization statements. High-consumer estimates use 95th-percentile fish intake in 25 surveys, with a maximum middle-bound estimate of 7.48 µg/kg/week in children. The TWI’s toxicological basis is distinct from European occurrence data."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — subsistence-fishing methylmercury disparity (synthesis with full anchor-source records)",
+      "pageDigest": "42e0577f5ec562d69213666a92b47978dc9c030e3322dc62827c0decd2193c6f",
+      "sourceDigest": "012a44161f4c0dc7dad7124b290577119f12bd3a23534c0dce60fed32a1851f7",
+      "citation": "Pendergrass K. Subsistence fishing methylmercury is a global vulnerable-population pattern that regulatory fish-consumption advice does not address. Heavy Metal Index. Updated 13 May 2026. Preprint.",
+      "summary": "The synthesis brings together a global marine catch model, Chinese freshwater modeling and a Tapajós literature review. It argues that subsistence exposure deserves explicit attention and acknowledges that its anchors lack measured individual intake and linked biomonitoring.",
+      "establishes": "No external reviews are recorded. The population-level evidence is modeled or compiled, and the three studies do not independently audit every national advisory. Its blanket retail-only framing conflicts with FDA’s local-catch guidance and EFSA’s high-consumer assessment.",
+      "relevance": "It documents the argument adapted by HMTc and helps explain why a certificate for submitted commercial products cannot describe all community exposure. It is not independent evidence of HMTc efficacy, nor proof that every food-certification scheme has identical boundaries.",
+      "links": [
+        {
+          "label": "HMI synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/subsistence-fishing-mehg-disparity",
+            "note": "Read author/date, full synthesis, anchor descriptions, limitations, promotion history and peer-review state. Author is Karen Pendergrass and no external verdict is listed. Primary anchors were reviewed separately, with corrections for Li’s entity denominator, Wu’s modeled mechanism and Tapajós’ assumed intake. The source’s geographic and advisory generalizations remain editorial synthesis."
+          }
+        ]
+      },
+      "kind": "Editorial synthesis"
+    }
+  }
+}

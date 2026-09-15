@@ -1,0 +1,20 @@
+[
+  {
+    "page": "articles/organ-meat-cadmium-lead-accumulation",
+    "number": "7",
+    "referenceTitle": "Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal",
+    "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+    "sourceDigest": "fb7d92422c874739962109147079d0cf591298d75133caace0e45918d82ebe5d",
+    "reason": "The bibliography supplies a generic description, without a jurisdiction, issuing body, instrument number, date or link. No uniquely identifiable original source was recovered. EU 2023/915 contains relevant tissue-specific limits, but it cannot silently stand in for the unidentified citation.",
+    "review": {
+      "reviewer": "Codex: unresolved identity after bibliography and exact-title search",
+      "date": "2026-09-15",
+      "evidence": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+          "note": "Read relevant current EU lead and cadmium entries as separately named context for refs 1 and 5. This does not establish that EU 2023/915 was the intended source. Lead limits are not universally higher for offal: poultry offal and muscle both have 0.10 mg/kg wet-weight maxima."
+        }
+      ]
+    }
+  }
+]

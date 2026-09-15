@@ -6,7 +6,7 @@
     "pageDigest": "af0898e0ee871e4eb8f9064bd376ffe63df1ab02efe3acb2827766d0cb80db06",
     "sourceDigest": "1e856e0a713c8cf1a3542ca82732e532801e9d75b8314c8e2836e19fdc9b2776",
     "reviewed": "2026-09-15",
-    "reason": "The exact October31,2017 FDA In Brief announcement is identified by FDA’s current index and current SARMs page, but the original current slug returned404 and the old FDA URL did not expose readable content. Preserve this numbered source as pending rather than replace it silently with a later warning. Current primary FDA overview supports a limited description of SARMs as illegally marketed unapproved drugs, not dietary supplements, but does not verify the complete original announcement.",
+    "reason": "The exact October 31, 2017 FDA In Brief announcement is identified by FDA’s current index and current SARMs page, but the original current slug returned 404 and the old FDA URL did not expose readable content. Preserve this numbered source as pending rather than replace it silently with a later warning. Current primary FDA overview supports a limited description of SARMs as illegally marketed unapproved drugs, not dietary supplements, but does not verify the complete original announcement.",
     "attemptedUrls": [
       "https://www.fda.gov/news-events/fda-brief/fda-brief-fda-warns-against-using-sarms-body-building-products",
       "https://www.fda.gov/NewsEvents/Newsroom/FDAInBrief/ucm583021.htm"
@@ -17,11 +17,11 @@
       "evidence": [
         {
           "url": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more",
-          "note": "Read current FDA overview, safety/legal-status discussion, research-label warning, enforcement account and Previous SARMs alerts link identifying October31,2017. This current page is not the original2017 notice. It contradicts the article’s suggestion that FDA authority cannot reach products sold for human use as research material."
+          "note": "Read current FDA overview, safety/legal-status discussion, research-label warning, enforcement account and Previous SARMs alerts link identifying October 31, 2017. This current page is not the original2017 notice. It contradicts the article’s suggestion that FDA authority cannot reach products sold for human use as research material."
         },
         {
           "url": "https://www.fda.gov/news-events/fda-newsroom/fda-brief",
-          "note": "FDA’s official announcement index identifies the October31,2017 title, but a title listing alone is insufficient for a completed original-source review."
+          "note": "FDA’s official announcement index identifies the October 31, 2017 title, but a title listing alone is insufficient for a completed original-source review."
         }
       ]
     }

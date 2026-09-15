@@ -1,0 +1,230 @@
+{
+  "page": "articles/mining-impacted-freshwater-fish",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Mercury in carnivorous freshwater fish from the gold-mining basin of La Mojana, Colombia",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "f4264c35735d03cbda0fe3df84f2094e73c204ad3b15d40a9901181b50002784",
+      "citation": "Fuentes-Lopez K, Olivero-Verbel J, Caballero-Gallardo K. Presence of Nematodes, Mercury Concentrations, and Liver Pathology in Carnivorous Freshwater Fish from La Mojana, Sucre, Colombia: Assessing Fish Health and Potential Human Health Risks. Archives of Environmental Contamination and Toxicology. 2025;88:189–209. doi:10.1007/s00244-025-01117-w.",
+      "summary": "The study sampled 326 fish from nine carnivorous species in San Marcos between September 2022 and April 2023. Fresh muscle total mercury averaged 0.31 ± 0.01 mg/kg wet weight. Species and seasonal differences accompanied modeled consumption risks and fish-health findings.",
+      "establishes": "Methylmercury was estimated as 90% of measured total mercury for exposure calculations. Hazard quotients used specified meal sizes and body weights; human outcomes were not measured. There was no matched unmined watershed or retail-fish control.",
+      "relevance": "This supports attention to local species and consumption patterns. It does not independently quantify a causal mining effect, a multi-metal fillet signature, or the performance of HMTc source screening.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://link.springer.com/article/10.1007/s00244-025-01117-w"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s00244-025-01117-w",
+            "note": "Identified the generic citation by matching author, year, region, 326 specimens and mean concentration. Read publisher abstract, specimen collection, fresh-muscle DMA method, risk equations and species/season results. Publication: 20 February 2025. Overall seasonal Hg difference was not significant; species-specific differences were reported."
+          }
+        ]
+      },
+      "kind": "Observational study"
+    },
+    "2": {
+      "referenceTitle": "Assessment of total mercury (Hg) in soil, sediment, and tilapia fish (Oreochromis niloticus) and health risk assessment among residents of Kitwe mining area, Zambia",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "3472c53bf137125e0866b6d997ae3828b96c1ff906f3c3109b32132a6a9814b3",
+      "citation": "Chisanga M, M’kandawire E, Choongo K, Kalunga G, Yabe J. Assessment of total mercury (Hg) in soil, sediment, and tilapia fish (Oreochromis niloticus) and health risk assessment among residents of Kitwe mining area, Zambia. Environmental Science and Pollution Research. 2025;32:13904–13917. doi:10.1007/s11356-025-36506-0.",
+      "summary": "In October 2023, investigators compared 32 tilapia from Kitwe mining waters with 47 from a non-mining area in Northern Province. Mean muscle total mercury was 0.015 versus 0.007 mg/kg dry weight, a statistically significant difference. Their modeled intake and hazard quotients were low.",
+      "establishes": "This is a regional observational contrast in small tilapia, not a matched intervention or a methylmercury measurement. The controls were in a different region. Dry-weight results require a moisture conversion before comparison with wet-food limits.",
+      "relevance": "The findings support investigating watershed influences without implying that every mining-area fish exceeds a limit. HMTc should preserve analytical basis and species/size information; the study does not isolate artisanal gold mining from copper-mining and smelting sources.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://link.springer.com/article/10.1007/s11356-025-36506-0"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s11356-025-36506-0",
+            "note": "Read abstract, study areas, sample counts, collection/preparation, ICP-MS quality control, Table 2 description and dietary-risk assumptions. The Results heading and Table 2 explicitly specify dry weight. Risk assumptions: 25 g/day and 70 kg adults; 12 g/day and 18 kg children. Published 15 May 2025."
+          }
+        ]
+      },
+      "kind": "Observational study"
+    },
+    "3": {
+      "referenceTitle": "Hazardous effects of heavy metal pollution on Nile tilapia in the aquatic ecosystem of the Eastern Delta in Egypt",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "0482f900c21f4c7f3c9c8fdecf8c8aaed09bed8c5ebc6aaf4c2b53595ba2418d",
+      "citation": "Shaalan WM. Hazardous effects of heavy metal pollution on Nile tilapia in the aquatic ecosystem of the Eastern Delta in Egypt. BMC Veterinary Research. 2024;20:585. doi:10.1186/s12917-024-04367-3.",
+      "summary": "The study collected 120 tilapia, 60 per site, from El-Rayah El-Tawfeeky canal and the Damietta branch in autumn 2022. It reports higher canal-muscle concentrations of several metals, tissue changes and altered gene expression. Table 2 lists lead 33.403, cadmium 2.286 and mercury 10.360 under mg/kg headings.",
+      "establishes": "The source has an unresolved unit/basis conflict: Methods says micrograms per kilogram dry weight, while Table 2 says mg/kg muscle weight. Chromium and mercury were elemental measurements, without Cr(VI) or methylmercury speciation. Dietary risks were modeled, not observed in people.",
+      "relevance": "The regional comparison supports considering multiple analytes, but the article’s precise 10–1000-fold exceedances and Cr(VI) tier inference cannot be validated from these inconsistently labeled data.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://link.springer.com/article/10.1186/s12917-024-04367-3"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1186/s12917-024-04367-3",
+            "note": "Read full methods, muscle results, Table 2, discussion and conclusions; retrieved the primary PDF and visually verified Table 2 on p4. The table confirms the quoted values, but Methods’ dry-weight microgram units conflict. Results also contains a reversed site-comparison sentence. No universal food-safety exceedance multiplier is endorsed."
+          }
+        ]
+      },
+      "kind": "Observational study"
+    },
+    "4": {
+      "referenceTitle": "A preliminary assessment of mercury, methylmercury and other potentially toxic elements in largemouth bass (Micropterus salmoides) from the Almadén mining district",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "91c285f28bc6d47146bcff3a9289255c40783a676127fb7423b2375883c6ddfb",
+      "citation": "Barquero JI, Hidalgo JJ, Esbrí JM, et al. A preliminary assessment of mercury, methylmercury and other potentially toxic elements in largemouth bass (Micropterus salmoides) from the Almadén mining district. Environmental Geochemistry and Health. 2025;47:27. Published online 23 December 2024. doi:10.1007/s10653-024-02326-3.",
+      "summary": "Among 28 bass from seven sites along a 34 km transect, muscle total mercury ranged from about 0.47 to 7.61 mg/kg wet weight. Measured methylmercury represented 79.7–92.1% of total mercury. The highest concentrations occurred in a decommissioned mine pit lake.",
+      "establishes": "The study supports persistent mercury contamination after mining and metallurgy ceased by 2008. Other measured potentially toxic elements were described as non-concerning; it does not establish a uniformly co-elevated lead–cadmium–chromium–nickel signature.",
+      "relevance": "It supports considering legacy watershed contamination when sourcing fish. Its selenium-based low-risk interpretation is not a human safety trial or a basis for offsetting HMTc mercury limits, and the study still recommends maintaining the consumption ban.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://link.springer.com/article/10.1007/s10653-024-02326-3"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s10653-024-02326-3",
+            "note": "Read abstract, sampling, THg/MeHg analytical methods, source gradients and conclusions. Wet- and dry-weight results are separately reported; the 7.61 mg/kg maximum is wet weight. Editorial: the paper’s conclusion labels a quoted 500 ng/g food limit dry weight, so that comparison was not adopted. Sampling date was not established."
+          }
+        ]
+      },
+      "kind": "Observational study"
+    },
+    "5": {
+      "referenceTitle": "Reservoir Stratification Modulates the Influence of Impoundments on Fish Mercury Concentrations along an Arid Land River System",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "0dc4cbbc9d5d39b4faa895cd53f0f40bfb2bd2694e3e38622556021845678b08",
+      "citation": "Willacker JJ, Eagles-Smith CA, Chandler JA, Naymik J, Myers R, Krabbenhoft DP. Reservoir Stratification Modulates the Influence of Impoundments on Fish Mercury Concentrations along an Arid Land River System. Environmental Science & Technology. 2023;57:21313–21326. doi:10.1021/acs.est.3c04646.",
+      "summary": "The study analyzed 1,815 smallmouth bass from 25 Snake River reaches sampled in 2013, 2015 and 2020. Size-adjusted mercury averaged 76% higher in reservoirs and tailraces than free-flowing reaches. Reservoir stratification was strongly associated with concentrations and exceedances of the 0.3 mg/kg human-consumption benchmark.",
+      "establishes": "The 52–80% versus 6–17% contrast concerns stratifying reservoirs/tailraces versus settings without stratification, not a simple all-dams versus rivers comparison. The observational design does not show that impoundment alone causes every difference.",
+      "relevance": "This supports including hydrology, fish size and location in HMTc sourcing evidence. It does not establish a multi-metal signature or prove all impounded fisheries should be excluded.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10734268/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10734268/",
+            "note": "Read archived full primary abstract, Methods and relevant Results/Discussion. Concentrations were converted to wet-weight equivalents; some small whole fish and 2013 MeHg measurements required conversion to muscle THg equivalents. Methods says 853 km while abstract says 863 km, an internal discrepancy. PMC web preview challenged access; direct primary HTML retrieval succeeded."
+          }
+        ]
+      },
+      "kind": "Observational study"
+    },
+    "6": {
+      "referenceTitle": "Contaminants in fish from U.S. rivers: Probability-based national assessments",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "174265f6107bb9847b73b9a22888317942ecf793c594fa457b899b052b2bd044",
+      "citation": "Stahl LL, Snyder BD, McCarty HB, Kincaid TM, Olsen AR, Cohen TR, Healey JC. Contaminants in fish from U.S. rivers: Probability-based national assessments. Science of the Total Environment. 2023;861:160557. doi:10.1016/j.scitotenv.2022.160557.",
+      "summary": "Probability surveys collected fish composites at 353 river sites in 2013–14 and 290 in 2018–19. Mercury was detected in every composite. Estimated river length containing sampled fish above 300 ng/g was 23.5% and 26.0%, with no statistically significant change.",
+      "establishes": "The denominator is the sampled population of eligible river kilometers, not all US rivers or one quarter of fish populations. The surveys covered larger flowing rivers in the contiguous US, excluding reservoirs; they measured mercury, PCBs and PFAS rather than a mining-specific metal panel.",
+      "relevance": "The results support local fish monitoring, but do not measure advisory effectiveness or attribute contamination to mining. The paper explicitly describes existing state advisories for locally caught fish, contradicting an unqualified claim that advisories only address commercial marine supplies.",
+      "links": [
+        {
+          "label": "Full primary study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9948096/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9948096/",
+            "note": "Read primary abstract, introduction, probabilistic sampling/target population, composite preparation, mercury detection and screening results, temporal comparisons and conclusions. Sites had rivers of fifth order or larger. Samples were same-species, comparable-size skin-on fillet composites. PMC preview challenged access; direct primary HTML retrieval succeeded."
+          }
+        ]
+      },
+      "kind": "National survey"
+    },
+    "7": {
+      "referenceTitle": "Maximum levels for heavy metals in fish (Codex CXS 193; Commission Regulation (EU) 2023/915)",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "075e4c1670fb9593154549225bc9707e9addc73c040a4c5667b2d55079f1e6e6",
+      "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025. European Commission. Regulation (EU) 2023/915 of 25 April 2023; original and consolidation of 19 August 2026.",
+      "summary": "Codex recommends commodity-specific maximum levels and sampling procedures for international trade. The EU regulation imposes market limits for specified contaminants, species and edible tissues. These are product-compliance instruments distinct from daily or weekly intake guidance.",
+      "establishes": "Codex’s listed fish methylmercury limits cover six named categories, not all freshwater fish. It permits total-mercury screening followed by speciation when needed and recommends supplementary consumer advice. EU fish mercury limits vary by species; neither source supplies a universal five-metal freshwater panel.",
+      "relevance": "HMTc comparisons must match jurisdiction, analyte, species, tissue and moisture basis. These sources do not validate the article’s universal exceedance factors or prove provenance assessment ineffective within existing systems. Codex expressly supports source prevention and representative lot sampling.",
+      "links": [
+        {
+          "label": "Codex CXS 193, 2025 version",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+        },
+        {
+          "label": "EU regulation as adopted",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        },
+        {
+          "label": "EU consolidation, 19 August 2026",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf",
+            "note": "Freshly read Codex scope/principles pp3–5, lead fish row p64, mercury/MeHg pp67–68 and Annex IX pp69–72. Pb fish ML is 0.3 mg/kg; MeHg categories and screening note are specific. Codex recommendations are not automatically binding domestic law. Annex IX defines lots partly by origin and requires representative increments."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Reused original primary regulation read on 15 September 2026 for seaweed/chocolate and related seafood pages: Articles 2–3 and Annex I sections 3.1–3.3. Market limits apply to listed products and tissues, with processing factors where relevant; not every metal has a fish row."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Reused exact current official text read for aquaculture/bivalve pages the same day. Fish Hg rows 3.3.1.1–3.3.1.3 range from 0.3 to 1 mg/kg by species; fish-muscle Pb is 0.3 and default Cd 0.05 mg/kg with exceptions. Consolidation is informational; enacted legislation governs."
+          }
+        ]
+      },
+      "kind": "International standard and EU regulation"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — mining-impacted freshwater fish (synthesis with full anchor-source records)",
+      "pageDigest": "dd5b1797ae358257d9707b02622b70720e90f53ec9289755c6befe82c96ad6b2",
+      "sourceDigest": "c19180f7647dadff1024bae15fe6dfeae4caa56cec250cfe4417ec048c27acc2",
+      "citation": "Pendergrass K. Mining-impacted freshwater fish are a globally distributed multi-metal contamination pathway not addressed by commercial-market fish advisories. Heavy Metal Index. Updated 16 May 2026. Preprint.",
+      "summary": "This synthesis groups mining, industrial discharge and reservoir studies to argue for watershed-specific contamination assessment. It explicitly acknowledges missing multi-metal artisanal-mining evidence and the absence of a formal pooled analysis.",
+      "establishes": "It has no external reviews recorded. The claimed ten datasets across six continents are not established by this review: its geography misplaces Québec in Europe and Mexico in South America, while its multi-metal argument relies heavily on the Egyptian paper’s inconsistent units.",
+      "relevance": "It documents the argument reframed by HMTc, not independent certification evidence. Regional contamination findings should not become a universal comparison with store-bought fish or a claim that all local-consumption advisories are absent.",
+      "links": [
+        {
+          "label": "HMI synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/mining-impacted-freshwater-fish",
+            "note": "Read author/date, main synthesis, anchor descriptions, limitations, provisional status and peer-review statement. Named author is Karen Pendergrass. Six article-listed studies were independently reviewed; other HMI anchors were not read here. Editorial: Chisanga is mislabeled Shumba; Zambia dry basis, Egypt units, reservoir stratification and local-advisory scope need qualification."
+          }
+        ]
+      },
+      "kind": "Editorial synthesis"
+    }
+  }
+}

@@ -6,7 +6,7 @@
     "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
     "sourceDigest": "4f662e4263d5cdccaacbe5b3723e6bb369223c9f408a48e58ea8764822bb24f1",
     "reviewed": "2026-09-15",
-    "reason": "Grouped citation only partly resolved: EU2023/915 is identified and reviewed, but “national human-food maximum levels compiled in the HMTc regulatory register” does not identify jurisdictions, instruments, version or frozen register. Do not replace the entire group with the EU component. Israel values cannot be marked verified from the available local register alone.",
+    "reason": "Grouped citation only partly resolved: EU 2023/915 is identified and reviewed, but “national human-food maximum levels compiled in the HMTc regulatory register” does not identify jurisdictions, instruments, version or frozen register. Do not replace the entire group with the EU component. Israel values cannot be marked verified from the available local register alone.",
     "attempts": [
       {
         "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",

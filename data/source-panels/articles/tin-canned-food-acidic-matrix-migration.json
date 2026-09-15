@@ -14,7 +14,11 @@
       "links": [
         {
           "label": "Read the source",
-          "href": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf"
+          "href": "https://doi.org/10.1016/S0278-6915(03)00217-5"
+        },
+        {
+          "label": "Abstract and publication record",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/14563390/"
         }
       ],
       "review": {
@@ -24,6 +28,14 @@
           {
             "url": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf",
             "note": "Read university-hosted original PDF: occurrence, dissolution, clinical studies and conclusions. Historical industry affiliation is explicit. Underlying Biégo experiment was not independently reanalysed; the review also discusses chronic mineral interactions, so its acute emphasis is not proof of no chronic effects."
+          },
+          {
+            "url": "https://doi.org/10.1016/S0278-6915(03)00217-5",
+            "note": "DOI identity verified against the NLM publication record and original PDF. The original DOI is the durable reader link; the university mirror used for the full-text review has an expired TLS certificate."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14563390/",
+            "note": "Read publication metadata, author affiliation and abstract. This supplies a publicly accessible bibliographic/abstract route; full-text evidence remains the original PDF review above."
           }
         ]
       }

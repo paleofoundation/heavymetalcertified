@@ -1,0 +1,519 @@
+{
+  "generatedAt": "2026-09-15T18:08:18.113Z",
+  "totals": {
+    "pagesScanned": 509,
+    "pagesWithBibliography": 49,
+    "bibliographyRefs": 401,
+    "reviewedRefs": 388,
+    "pendingRefs": 13,
+    "citationUses": 571,
+    "unresolvedCitationUses": 0,
+    "outboundDoiOrHmiUses": 1082,
+    "pagesWithSupportGaps": 0,
+    "ambiguousTitleGroups": 19
+  },
+  "scope": "Reviewed coverage counts canonical numbered bibliography records. Outbound DOI/HMI source links outside those rows are a separate inventory and are not drawer coverage. Same-title rows without identical complete identifier sets are not automatically merged.",
+  "weeklyUsage": {
+    "baselineUsedPercent": 31,
+    "finalUsedPercent": 46,
+    "remainingPercent": 54,
+    "note": "Rounded account-wide meter; not a task-specific token measurement."
+  },
+  "pages": [
+    {
+      "page": "articles/aquaculture-vs-wild-contamination-differential",
+      "title": "Why Farmed Fish Carry Less Methylmercury Than Wild-Caught",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 6
+    },
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "title": "Why Mussels and Oysters Need a Different Cadmium Limit Than Fish",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 6,
+      "pendingRefs": [
+        "1"
+      ],
+      "citationUses": 8
+    },
+    {
+      "page": "articles/breastmilk-heavy-metal-exposure-pathway",
+      "title": "Breastmilk Is an Infant Metal Pathway No Food Standard Reaches",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 13
+    },
+    {
+      "page": "articles/climate-fish-mehg-projections",
+      "title": "Why Today's Fish Mercury Limits Are Calibrated to a Moving Baseline",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 11
+    },
+    {
+      "page": "articles/climate-metals-tradeoffs",
+      "title": "Cutting Arsenic in Rice Can Raise Cadmium: Why One Limit Fails",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 11
+    },
+    {
+      "page": "articles/combined-exposure-underprotection",
+      "title": "Why Single-Metal Limits Underprotect the Whole Diet",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 8
+    },
+    {
+      "page": "articles/cooking-does-not-reduce-mehg",
+      "title": "Why Cooking Never Lowers the Methylmercury in Fish",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "articles/cookware-utensil-metal-leaching-pathway",
+      "title": "How Cookware Leaches Lead and Cadmium Into Clean Food",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "articles/dietary-nickel-plant-staple-accumulation",
+      "title": "Dietary Nickel Is a Plant Trait, Not a Contamination Signal",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 11
+    },
+    {
+      "page": "articles/eu-food-limits-arsenic-seafood-nickel-deadlines",
+      "title": "EU Food Limits: Inorganic Arsenic in Seafood and Nickel Deadlines",
+      "bibliographyRefs": 4,
+      "reviewedRefs": 4,
+      "pendingRefs": [],
+      "citationUses": 3
+    },
+    {
+      "page": "articles/eu-regulatory-framework-timeline",
+      "title": "How EU Heavy-Metal Limits Evolved From 2001 to 2023/915",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 13
+    },
+    {
+      "page": "articles/hexavalent-chromium-four-regimes",
+      "title": "Hexavalent Chromium: Four Regulatory Regimes That Must Not Be Confused",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 5
+    },
+    {
+      "page": "articles/infant-formula-metal-amplification",
+      "title": "Why Infant Formula Carries an Aluminum-Dominated Metal Load",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 13
+    },
+    {
+      "page": "articles/lead-and-cadmium-in-dark-chocolate",
+      "title": "Lead and Cadmium in Dark Chocolate: A Decade of Divergence",
+      "bibliographyRefs": 12,
+      "reviewedRefs": 12,
+      "pendingRefs": [],
+      "citationUses": 14
+    },
+    {
+      "page": "articles/market-access-rules-gulf-asia",
+      "title": "New Market-Access Rules Across the Gulf and Asia",
+      "bibliographyRefs": 10,
+      "reviewedRefs": 10,
+      "pendingRefs": [],
+      "citationUses": 10
+    },
+    {
+      "page": "articles/mining-impacted-freshwater-fish",
+      "title": "Freshwater Fish From Mining Watersheds Need a Multi-Metal Standard",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 7
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "title": "Why Organ Meats Need Their Own Cadmium and Lead Limits",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 7,
+      "pendingRefs": [
+        "7"
+      ],
+      "citationUses": 13
+    },
+    {
+      "page": "articles/organic-certification-not-protective",
+      "title": "Why Organic Certification Is Not a Heavy-Metal Safety Signal",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 8
+    },
+    {
+      "page": "articles/organoarsenical-inertness-assumption",
+      "title": "Total Arsenic Is a Poor Proxy: Why Arsenic Speciation Matters",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 10
+    },
+    {
+      "page": "articles/se-hg-molar-ratio-certification-debate",
+      "title": "Should Selenium Relax the Mercury Limit on Predator Fish?",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "articles/seaweed-cd-as-contamination",
+      "title": "Why Seaweed Testing Must Measure Cadmium and Inorganic Arsenic",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 15
+    },
+    {
+      "page": "articles/spice-adulteration-lead-infants",
+      "title": "Lead Chromate in Turmeric: Why Lot Testing Catches Adulteration",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 11
+    },
+    {
+      "page": "articles/subsistence-fishing-mehg-disparity",
+      "title": "Why Fish-Consumption Advice Misses Subsistence Mercury Exposure",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 10
+    },
+    {
+      "page": "articles/supplement-botanical-lead-pathway",
+      "title": "Supplements Are the Least-Policed Heavy-Metal Exposure Pathway",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 20
+    },
+    {
+      "page": "articles/tea-multi-metal-bioaccumulation",
+      "title": "Why Tea Heavy-Metal Limits Must Measure the Cup, Not the Leaf",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 18
+    },
+    {
+      "page": "articles/testing-disclosure-packaging-rules",
+      "title": "Testing, Disclosure, and Packaging Rules Beyond Concentration Limits",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 6
+    },
+    {
+      "page": "articles/tin-canned-food-acidic-matrix-migration",
+      "title": "Why Tin in Canned Food Comes From the Can, Not the Crop",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 11
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "title": "US Baby-Food Heavy-Metal Laws: States Move Ahead of FDA",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 4,
+      "pendingRefs": [
+        "4",
+        "6"
+      ],
+      "citationUses": 5
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "title": "Why Wastewater Irrigation Co-Elevates Metals in One Crop",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 6,
+      "pendingRefs": [
+        "6"
+      ],
+      "citationUses": 10
+    },
+    {
+      "page": "articles/worldwide-heavy-metal-regulatory-watch-2026",
+      "title": "Worldwide Heavy Metal Regulatory Watch 2026",
+      "bibliographyRefs": 10,
+      "reviewedRefs": 10,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "briefings/after-palmquist",
+      "title": "After Palmquist",
+      "bibliographyRefs": 14,
+      "reviewedRefs": 13,
+      "pendingRefs": [
+        "4"
+      ],
+      "citationUses": 21
+    },
+    {
+      "page": "briefings/before-the-meat-label-prints",
+      "title": "Before the Meat Label Prints",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 6,
+      "pendingRefs": [
+        "2"
+      ],
+      "citationUses": 16
+    },
+    {
+      "page": "briefings/brief-2-open-category",
+      "title": "The Open Category",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 6,
+      "pendingRefs": [],
+      "citationUses": 14
+    },
+    {
+      "page": "briefings/brief-3-what-organic-doesnt-say",
+      "title": "What Organic Doesn't Say",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "briefings/brief-4-cost-of-being-uncertified",
+      "title": "The Cost of Being Uncertified",
+      "bibliographyRefs": 9,
+      "reviewedRefs": 9,
+      "pendingRefs": [],
+      "citationUses": 0
+    },
+    {
+      "page": "briefings/brief-5-retailer-as-anchor",
+      "title": "The Retailer as Anchor",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 8
+    },
+    {
+      "page": "briefings/brief-6-premium-promise",
+      "title": "The Premium Promise",
+      "bibliographyRefs": 7,
+      "reviewedRefs": 7,
+      "pendingRefs": [],
+      "citationUses": 12
+    },
+    {
+      "page": "briefings/brief-7-four-vs-eight",
+      "title": "Four Metals Is No Longer Enough",
+      "bibliographyRefs": 25,
+      "reviewedRefs": 25,
+      "pendingRefs": [],
+      "citationUses": 38
+    },
+    {
+      "page": "briefings/brief-8-surveillance-protocol",
+      "title": "The Surveillance Protocol",
+      "bibliographyRefs": 11,
+      "reviewedRefs": 11,
+      "pendingRefs": [],
+      "citationUses": 12
+    },
+    {
+      "page": "briefings/defense-counsel-briefing",
+      "title": "The Evidence a Jury Will See",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 17
+    },
+    {
+      "page": "briefings/heavy-metals-in-fertilizers",
+      "title": "Heavy Metals in Fertilizers, 1960–2025",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 8,
+      "pendingRefs": [],
+      "citationUses": 9
+    },
+    {
+      "page": "briefings/heavy-metals-in-peptides-and-sarms",
+      "title": "Heavy Metals in Peptides, SARMs, and Research Chemicals",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 7,
+      "pendingRefs": [
+        "4"
+      ],
+      "citationUses": 17
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "title": "Heavy Metals in Pet Food",
+      "bibliographyRefs": 9,
+      "reviewedRefs": 6,
+      "pendingRefs": [
+        "7",
+        "8",
+        "9"
+      ],
+      "citationUses": 11
+    },
+    {
+      "page": "briefings/hmtc-primer",
+      "title": "What HMTc Is",
+      "bibliographyRefs": 3,
+      "reviewedRefs": 3,
+      "pendingRefs": [],
+      "citationUses": 5
+    },
+    {
+      "page": "briefings/no-limit-is-not-no-standard",
+      "title": "No Limit Is Not No Standard",
+      "bibliographyRefs": 6,
+      "reviewedRefs": 5,
+      "pendingRefs": [
+        "3"
+      ],
+      "citationUses": 13
+    },
+    {
+      "page": "briefings/supplements-child-protective",
+      "title": "The Child Eats the Adult's Supplement",
+      "bibliographyRefs": 8,
+      "reviewedRefs": 7,
+      "pendingRefs": [
+        "2"
+      ],
+      "citationUses": 8
+    },
+    {
+      "page": "briefings/the-big-8",
+      "title": "The Big 8",
+      "bibliographyRefs": 15,
+      "reviewedRefs": 15,
+      "pendingRefs": [],
+      "citationUses": 32
+    },
+    {
+      "page": "briefings/the-mucosal-gap",
+      "title": "The Mucosal Gap",
+      "bibliographyRefs": 10,
+      "reviewedRefs": 10,
+      "pendingRefs": [],
+      "citationUses": 13
+    },
+    {
+      "page": "briefings/the-prop-65-gap",
+      "title": "Named as a Hazard, Left Unlimited",
+      "bibliographyRefs": 9,
+      "reviewedRefs": 9,
+      "pendingRefs": [],
+      "citationUses": 10
+    }
+  ],
+  "unresolved": [
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "number": "1",
+      "record": "reports/citation-context/unresolved/bivalves-bao-source-mismatch.json",
+      "reason": "Identifier mismatch: no unique Bao 2024 cadmium-nanoparticle mussel study was identified. The explicitly linked HMI anchor gives DOI 10.1093/jaoacint/qsae024, whose primary full text is a different article by Bruvold, Valdersnes, Loeschner and Bienfait on gold nanoparticle method validation. Do not publish that unrelated paper under the claimed Bao/cadmium title."
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "number": "7",
+      "record": "reports/citation-context/unresolved/organ-meat-reference-7.json",
+      "reason": "The bibliography supplies a generic description, without a jurisdiction, issuing body, instrument number, date or link. No uniquely identifiable original source was recovered. EU 2023/915 contains relevant tissue-specific limits, but it cannot silently stand in for the unidentified citation."
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": "4",
+      "record": "reports/citation-context/unresolved/us-baby-food-references-4-and-6.json",
+      "reason": "Official status and enacted Act 110 identified, but readable official enactment and effective-date text could not be retrieved after repeated timeouts/502 responses. Search excerpts were not accepted as a substitute for reading the law. Preserve pending until actual final text is read."
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": "6",
+      "record": "reports/citation-context/unresolved/us-baby-food-references-4-and-6.json",
+      "reason": "Exact cited Heavy Metal Index page returns HTTP 404 via direct retrieval; web access and exact-site search did not recover this resource. Do not silently substitute FDA sources or another HMI page."
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "number": "6",
+      "record": "reports/citation-context/unresolved/wastewater-reference-6.json",
+      "reason": "Grouped WHO/FAO citation has no document title, URL or edition identifying food and irrigation benchmarks. Secondary papers repeat inconsistent units/bases. The primary FAO irrigation table reviewed lists lead 5.0 mg/L, not the claimed 0.5 mg/L, and cannot identify or verify this entire grouped reference."
+    },
+    {
+      "page": "briefings/after-palmquist",
+      "number": "4",
+      "record": "reports/citation-context/unresolved/after-palmquist-reference-4.json",
+      "reason": "Grouped reference includes a 2025 Scheduling Order without a date or docket number. The underlying exposé preprint reference 23 says December 2025, still without a docket number. The intended scheduling document was not identified; do not substitute a different pretrial order or a docket-count report. The 2024 transfer order and dated counts are verified but do not complete this grouped source review."
+    },
+    {
+      "page": "briefings/before-the-meat-label-prints",
+      "number": "2",
+      "record": "reports/citation-context/unresolved/meat-label-reference-2.json",
+      "reason": "USDA’s official December 10 and 12, 2025 bulletins identify Directive 7221.1 Revision 4, Prior Labeling Approval. The current directive page and candidate official PDF returned 403 after repeated direct and web attempts. An exact Revision 3 (January 18, 2023) PDF is accessible on Spain’s agriculture ministry site, but it is superseded and was not silently substituted. Preserve pending for a readable Revision 4 text, especially current submission and inspection procedures."
+    },
+    {
+      "page": "briefings/heavy-metals-in-peptides-and-sarms",
+      "number": "4",
+      "record": "reports/citation-context/unresolved/peptides-fda-announcement.json",
+      "reason": "The exact October 31, 2017 FDA In Brief announcement is identified by FDA’s current index and current SARMs page, but the original current slug returned 404 and the old FDA URL did not expose readable content. Preserve this numbered source as pending rather than replace it silently with a later warning. Current primary FDA overview supports a limited description of SARMs as illegally marketed unapproved drugs, not dietary supplements, but does not verify the complete original announcement."
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "7",
+      "record": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "reason": "Grouped citation only partly resolved: EU 2023/915 is identified and reviewed, but “national human-food maximum levels compiled in the HMTc regulatory register” does not identify jurisdictions, instruments, version or frozen register. Do not replace the entire group with the EU component. Israel values cannot be marked verified from the available local register alone."
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "8",
+      "record": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "reason": "No edition or complete identifiable OP chapter is supplied. The 2026 Official Publication requires access not available here; the freely accessible model PDF contains omissions and labeling excerpts, insufficient to certify the asserted absence of limits throughout AAFCO/NRC materials."
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "9",
+      "record": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "reason": "Homepage identifies a changing reference library, not a unique pet-food/per-analyte baseline with defined included documents, methods or version. No specific source can be matched to the bibliography without substituting an invented collection."
+    },
+    {
+      "page": "briefings/no-limit-is-not-no-standard",
+      "number": "3",
+      "record": "reports/citation-context/unresolved/no-limit-fda-announcement.json",
+      "reason": "Exact-source access limitation reused from batch6-peptides-unresolved.json: the October 31, 2017 FDA In Brief announcement remains unavailable at its current 404 slug and old URL. FDA’s current primary overview was read and confirms the historical title and date, but is not substituted for the original. The page’s assertion that unapproved status places products beyond regulation is not supported by the current FDA overview."
+    },
+    {
+      "page": "briefings/supplements-child-protective",
+      "number": "2",
+      "record": "reports/citation-context/unresolved/supplements-unresolved.json",
+      "reason": "Grouped reference remains unresolved: Thailand Notification 414 is identifiable and its FAO-hosted unofficial English translation gives supplement lead 1 mg/kg as prepared for consumption; GSO 193:2021 catalog identity was found but its paid numerical table was not read; Israel “FCS-2016” could not be tied to an exact primary instrument; the official Vietnamese QCVN 8-2:2011/BYT PDF could not be consistently retrieved for a verified numerical read. Do not silently replace the Israeli instrument or publish this four-country grouping as fully reviewed. None of the partial reads establishes a universal adult-body-weight premise."
+    }
+  ]
+}

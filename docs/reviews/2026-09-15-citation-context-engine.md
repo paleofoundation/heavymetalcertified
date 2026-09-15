@@ -1,8 +1,11 @@
 # Citation context engine
 
+Current status: see the [numbered-source coverage report](2026-09-15-citation-context-coverage.md).
+The figures below document the original engine pilot.
+
 Follow-up: [The Premium Promise completion](2026-09-15-premium-promise-source-panels.md)
 extends that page from one pilot record to all seven. The coverage and checks
-below describe the original engine pilot; current coverage is recorded there.
+below describe the original engine pilot; that follow-up records the next checkpoint.
 
 ## Original task
 
