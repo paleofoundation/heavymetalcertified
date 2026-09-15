@@ -22,10 +22,9 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
           <div class="hmtc-home-copy">
             <h1 class="hmtc-home-title">You’re already paying for metals failure.</h1>
             <p class="hmtc-home-dek">We move that spend upstream to checkable proof.</p>
-            <p class="hmtc-home-house-line">Heavy metals in food aren’t a content problem. They’re a proof problem.</p>
             <nav class="hmtc-home-actions" aria-label="Choose your next step">
-              <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Start with your lot <span aria-hidden="true">↗</span></a>
-              <a class="hmtc-home-action" href="#buy-the-step">Buy the step where cash burns <span aria-hidden="true">↓</span></a>
+              <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Start with your lot</a>
+              <a class="hmtc-home-action" href="#buy-the-step">Buy the step where cash burns</a>
             </nav>
             <div id="site-search" class="hmtc-hero-search">
               <form class="hmtc-search-form" role="search" aria-label="Search the site" action="/" method="get">
@@ -58,7 +57,7 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
             <span class="hmtc-sell-label">{step.name}</span>
             <h3>{step.question}</h3>
             <p>{step.detail}</p>
-            <a href={step.href}>{step.action} <span aria-hidden="true">→</span></a>
+            <a href={step.href}>{step.action}</a>
           </li>)}
         </ol>
         <p class="hmtc-sell-note">A checkable lab result does not itself qualify a lot. A QUALIFIED input lot does not itself certify the finished goods. Each step answers its own question.</p>
@@ -72,19 +71,19 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
             <span class="hmtc-sell-label">Completing-lot</span>
             <h3>A missing result is holding the lot.</h3>
             <p>Bring the evidence you already have. Identify what can be used and buy the sampling and testing still needed to complete the lot’s evidence.</p>
-            <a href="https://app.heavymetalcertified.com/hmt/get-started">Complete your lot’s evidence <span aria-hidden="true">↗</span></a>
+            <a href="https://app.heavymetalcertified.com/hmt/get-started">Complete your lot’s evidence</a>
           </section>
           <section>
             <span class="hmtc-sell-label">Certification</span>
             <h3>Finished goods need a checkable claim.</h3>
             <p>Pay for evaluation against the published numbers and the certification process. The mark depends on the evidence meeting the applicable standard.</p>
-            <a href="/apply">See certification and fees <span aria-hidden="true">→</span></a>
+            <a href="/apply">See certification and fees</a>
           </section>
           <section>
             <span class="hmtc-sell-label">White-glove</span>
             <h3>Your team is carrying the coordination.</h3>
             <p>Scope hands-on help with lab handoffs, evidence completion, and retailer QA preparation. Start with the work consuming your team’s time.</p>
-            <a href="/apply#start">Scope hands-on support <span aria-hidden="true">→</span></a>
+            <a href="/apply#start">Scope hands-on support</a>
           </section>
         </div>
         <p class="hmtc-sell-note">Exploring the 10-Step Challenge? <a href="/challenge">Read the DRAFT overview</a>. Enrollment remains closed while the pending review gates are resolved.</p>
@@ -94,14 +93,14 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
         <div>
           <h2>The published numbers behind the decision.</h2>
           <p class="hmtc-sell-intro">Use the register to find the standard, analytes, basis, and edition that apply to your product. These are the reference facts behind the proof.</p>
-          <a href="/briefings/the-big-8">Read about the Big 8 <span aria-hidden="true">→</span></a>
+          <a href="/briefings/the-big-8">Read about the Big 8</a>
         </div>
         <section class="hmtc-home-snapshot" aria-label="Program snapshot">
           <div class="hmtc-home-snapshot-inner">
             <h2>Program at a glance</h2>
             <p class="hmtc-home-snapshot-date">As of {fm.home_snapshot_date}</p>
             <dl>{rows.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
-            <a href="/standards">Explore the standards register <span aria-hidden="true">→</span></a>
+            <a href="/standards">Explore the standards register</a>
           </div>
         </section>
       </section>
