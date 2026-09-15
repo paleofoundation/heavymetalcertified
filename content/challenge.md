@@ -5,7 +5,7 @@ description: Heavy metals in food aren’t a content problem. They’re a proof 
 updated: 2026-09-15
 noindex: true
 hero_meta:
-  - Draft for counsel review
+  - Draft for internal legal review
 breadcrumb_leaf: 10-Step Challenge
 snapshot:
   - { k: Enrollment, v: First 50 new enrollees }
@@ -20,8 +20,8 @@ connections:
 
 <div class="hmtc-challenge">
   <aside class="challenge-draft" aria-label="Draft status">
-    <span class="challenge-label">Draft · Amanda Bruss / Trestle review</span>
-    <p>This is a preview of the proposed Challenge, not live legal terms. Wording must be cleared before deployment. The unresolved requirements are flagged below.</p>
+    <span class="challenge-label">Draft · internal legal review</span>
+    <p>This is an informational preview of the proposed Challenge. Enrollment is not open on this page. Final terms are pending internal legal review, and unresolved requirements are flagged below.</p>
   </aside>
 
   <section id="how-it-works">
@@ -193,7 +193,7 @@ connections:
   <h2>Before enrollment opens</h2>
   <aside class="challenge-counsel" aria-label="Unresolved counsel review">
     <span class="challenge-label">Counsel review remains open</span>
-    <p>Draft for Amanda Bruss / Trestle review. Wording must be cleared before deployment. Treatment of actions 6 and 7 for nonqualifying participants, and action 10’s partial gate, remains unresolved.</p>
+    <p>Draft for internal legal review. This page explains the proposed Challenge; it does not open enrollment or establish final terms. Treatment of actions 6 and 7 for nonqualifying participants, and action 10’s partial gate, remains unresolved.</p>
   </aside>
   </section>
 </div>
