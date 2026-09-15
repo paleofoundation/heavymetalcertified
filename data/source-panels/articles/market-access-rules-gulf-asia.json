@@ -1,0 +1,286 @@
+{
+  "page": "articles/market-access-rules-gulf-asia",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "4840fad43e354b3a379ea8166ea6b5551afc3deca41bec63b4b9164542bfa012",
+      "citation": "National Health Commission and State Administration for Market Regulation, China. Announcement No. 6 of 2025, publishing GB 2762-2025 and other national food-safety standards. Dated September 2, 2025; posted September 25, 2025. Supplemented by USDA FAS report CH2025-0202.",
+      "summary": "The announcement formally publishes GB 2762-2025 among 32 standards and two amendments. The accompanying USDA translation identifies September 2, 2026 as the replacement standard’s effective date.",
+      "establishes": "The announcement verifies adoption and identity; it does not print the effective date or numerical tables in its HTML. The reviewed translation is expressly unofficial. The 2025 standard is effective by this review date.",
+      "relevance": "HMTc’s China comparison should now identify the 2025 edition and match its product rows. A publication notice alone cannot establish that a certification threshold meets each Chinese requirement.",
+      "links": [
+        {
+          "label": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+          "href": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml"
+        },
+        {
+          "label": "USDA translation of GB 2762-2025",
+          "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml",
+            "note": "Read title, publication metadata, announcement body and signed date. The HTML directs readers to the official standards platform but contains no effective-date statement. Distinguish the September 2 issue date from September 25 web publication."
+          },
+          {
+            "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf",
+            "note": "Reused same-day exact-document review in batch4-four-eight.json ref 6: report highlights, replacement foreword and relevant standard sections. USDA identifies September 2, 2026 implementation and replacement of GB 2762-2022 plus its first amendment; this is an unofficial translation, not a claim of direct access to the authoritative Chinese tables."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Heavy Metal Index — China GB 2762 contaminants",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "63ba637a5995be63572ca090fc8a98301a0e70b3ff47a35d253f3590e02aba86",
+      "citation": "Pendergrass K / Institute of Contaminant Standards. China GB 2762-2022—Maximum levels of contaminants in food. Heavy Metal Index. Updated May 18, 2026.",
+      "summary": "This index page describes the 2022 standard and records its planned replacement by GB 2762-2025 on September 2, 2026. Its active-status language is expressly dated May 18, 2026.",
+      "establishes": "It is a secondary instrument record, not a Chinese government standard. Its historical date qualification must be preserved: an active label for the 2022 edition is stale after the replacement date.",
+      "relevance": "It provides a source trail for HMTc’s market file. The current comparison needs the effective successor and cannot rely on this older status label as proof of present compliance.",
+      "links": [
+        {
+          "label": "Heavy Metal Index — China GB 2762 contaminants",
+          "href": "https://heavymetalindex.com/regulations/china-gb-2762-2022-contaminants"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations/china-gb-2762-2022-contaminants",
+            "note": "Read overview, scope, HMT&C interaction, sources, verification notes, update metadata and operator footer. It says scheduled replacement is after the current session date, meaning its May snapshot; today is September 15, 2026. The page links older official/USDA records but does not display the successor standard artifact claimed in the article. Operator is ICS/Paleo Certified, so this is not an independent regulator."
+          }
+        ]
+      },
+      "kind": "Reference"
+    },
+    "3": {
+      "referenceTitle": "China NHC public consultation register",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "e4798709cb55b574dd4467fb18c7216d885d6657263f7991d41b2dc767245c7f",
+      "citation": "National Health Commission, China. Public consultation register (征求意见). Register accessed September 15, 2026.",
+      "summary": "The register lists dated consultations, including a June 15, 2026 food-safety standards work plan and an April 17, 2026 package of 37 draft food-safety standards.",
+      "establishes": "It demonstrates a standards-development pipeline. A register entry does not establish adoption, an effective date, a particular proposed metal concentration, or that comments remain open today.",
+      "relevance": "It is a monitoring source for HMTc’s China market file. Any proposed product limit needs its own attachment and status review before becoming a specification.",
+      "links": [
+        {
+          "label": "China NHC public consultation register",
+          "href": "https://www.nhc.gov.cn/wjw/zqyj/list.shtml"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nhc.gov.cn/wjw/zqyj/list.shtml",
+            "note": "Read the complete visible first-page register, including dated 2026 and older entries. Web reader returned 412, but direct HTML retrieval succeeded. No consultation attachment was reviewed or used to assert a numerical contaminant change."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Korea MFDS Notice 2025-56",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "cb7ec88efe23e522a055265e9137132552eb92c4b3c8085b558eced33eb6a010",
+      "citation": "Ministry of Food and Drug Safety, Republic of Korea. Partial amendment to Food Standards and Specifications, Notice 2025-56, August 26, 2025.",
+      "summary": "The official notice identifies new cadmium criteria for cocoa powder and chocolate among broader food-code amendments. It gives the amendment number and adoption date and links the underlying HWPX files.",
+      "establishes": "The visible notice supports the existence and stated subject of the amendment. Its summary does not supply the complete numerical tiers or their commencement provisions.",
+      "relevance": "It justifies checking the applicable Korean cocoa or chocolate row in HMTc’s market file. A cataloged amendment is not itself a completed product-level compliance comparison.",
+      "links": [
+        {
+          "label": "Korea MFDS Notice 2025-56",
+          "href": "https://www.mfds.go.kr/law/board/boardDetail.do?brdId=data0008&menuKey=28&seq=15091"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.mfds.go.kr/law/board/boardDetail.do?brdId=data0008&menuKey=28&seq=15091",
+            "note": "Read Korean notice title, metadata, reasons and major changes, especially item 2(b) establishing cocoa/chocolate cadmium criteria, and the attachment list. The attached HWPX text was not inspected; no numerical maximum, uniform commencement date or exhaustive current Food Code claim is made here."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Taiwan FDA amended analytical method",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "931e9995fca81377eb39eac508c54942c9a7288c45e8433a127e3cb6bdf2be9b",
+      "citation": "Taiwan Food and Drug Administration. Method of Test for Heavy Metals in Edible Fat, Oil, Cream, Chocolate and Cocoa Powder. MOHWH0029.01, amended January 1, 2026. Six-page English method.",
+      "summary": "The method uses microwave acid digestion and ICP-MS for arsenic, mercury and lead in edible fats, oils and cream, and cadmium in chocolate and cocoa powder. It specifies preparation, calibration, blanks and quantification.",
+      "establishes": "Its quantification limits are 0.025 mg/kg for the named elements in fats/oils/cream and 0.02 mg/kg for cocoa/chocolate cadmium. These analytical capabilities are not legal contaminant maxima or arsenic-speciation results.",
+      "relevance": "It helps match an HMTc laboratory evidence package to the relevant Taiwanese food matrix and analyte. It does not impose this method on every food or prove acceptance of any certificate.",
+      "links": [
+        {
+          "label": "Taiwan FDA amended analytical method",
+          "href": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s",
+            "note": "Downloaded and read all six pages: identity and scope, digestion and ICP-MS procedures, calculation and final remarks requiring validation where interference occurs or alternative instruments are used. The article’s generic multi-element wording should retain these specific food/analyte restrictions; the method is not an all-food or inorganic-arsenic method."
+          }
+        ]
+      },
+      "kind": "Analytical method"
+    },
+    "6": {
+      "referenceTitle": "Hong Kong CFS metallic-contamination amendment hub",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "02f78d86610e303ab86f964ca1cc9ecaac6c70cf68df8e2f411b762cb9d6266a",
+      "citation": "Hong Kong Centre for Food Safety. Food Adulteration (Metallic Contamination) (Amendment) Regulation 2025: official implementation hub.",
+      "summary": "The hub states that the amendment began on September 5, 2025. During an 18-month grace period, any food may comply wholly with either the prior Cap. 132V requirements or the amendment; all food must meet the amendment from March 6, 2027.",
+      "establishes": "The grace period is an alternative complete-regime compliance provision. The hub also links the legal instrument, guidelines and testing presentations; those linked tables were not all reviewed here.",
+      "relevance": "HMTc’s Hong Kong comparison needs both the relevant schedule and transition status. The article’s restriction of the grace period to pre-existing foods is narrower than the official explanation.",
+      "links": [
+        {
+          "label": "Hong Kong CFS metallic-contamination amendment hub",
+          "href": "https://www.cfs.gov.hk/english/whatsnew/whatsnew_fstr/whatsnew_fstr_PA_Food_Adulteration_Metallic_Contamination_2.html"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.cfs.gov.hk/english/whatsnew/whatsnew_fstr/whatsnew_fstr_PA_Food_Adulteration_Metallic_Contamination_2.html",
+            "note": "Read the full hub, particularly introduction paragraphs on July 30 legislative approval, September 5 commencement and the March 6, 2027 deadline. The text explicitly says any food item may comply wholly with either regime; it does not limit this option to stock already present before commencement. No current individual product limit is inferred from the hub alone."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "GSO 2783:2025 official catalog record",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "2faf95b6575b51cdc97fa2665892f1eb444f9a5f11d597e78c364dab8881cbc9",
+      "citation": "GCC Standardization Organization. GSO 2783:2025, Maximum Residue Limits (MRLs) for Heavy Metals in Food. Gulf Technical Regulation, edition 1; catalog approval date October 29, 2025. Public catalog record.",
+      "summary": "The catalog identifies a current 22-page English technical regulation covering arsenic, inorganic arsenic, mercury, cadmium, lead and tin in food.",
+      "establishes": "The reviewed scope and edition metadata do not expose the licensed numerical tables or establish a common implementation date in every GCC member state. The displayed date is approval, not a verified national effective date.",
+      "relevance": "It is a starting point for HMTc’s Gulf market file. A member-state legal review and the applicable licensed product table are still needed before claiming market access.",
+      "links": [
+        {
+          "label": "GSO 2783:2025 official catalog record",
+          "href": "https://www.gso.org.sa/store/standards/GSO:990231/GSO%202783:2025?lang=en"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.gso.org.sa/store/standards/GSO:990231/GSO%202783:2025?lang=en",
+            "note": "Read the directly retrieved official catalog in full: current edition, approval date, page count and scope. Web reader failed but local HTML succeeded. Paid contents were not accessed. Scope names six analyte categories; no inference of universal GCC adoption or all-food limits is made."
+          }
+        ]
+      },
+      "kind": "Standards catalog"
+    },
+    "8": {
+      "referenceTitle": "FSSAI Amendment 17 official register",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "b26d670fac5e63ac131359c7d45a277294e6dd1177f7c996951fb1ab9833fbed",
+      "citation": "Food Safety and Standards Authority of India. Food Safety and Standards (Contaminants, Toxins and Residues) Amendment Regulations, 2026. Notification F. No. 01/SP-02/S&S/NotificationContaminants/2021-22, May 14, 2026. Gazette of India, Extraordinary, Part III, Section 4, No. 327; CG-DL-E-25052026-272840. Effective December 1, 2026.",
+      "summary": "The final amendment extends lead and cadmium pulse categories to pulse flours. For fish oils it applies an inorganic-arsenic maximum of 0.1 mg/kg: total arsenic below that value clears the screen; a value above it requires inorganic-arsenic testing.",
+      "establishes": "The amendment is adopted but takes effect December 1, 2026. The pulse changes expand product scope rather than publishing new numerical pulse limits. Total arsenic is a screen, not the regulated fish-oil species.",
+      "relevance": "It gives HMTc a fixed India readiness date and a specific laboratory decision sequence. Product classification and applicable base-regulation limits still matter; certification alone does not establish market access.",
+      "links": [
+        {
+          "label": "Final Gazette amendment",
+          "href": "https://egazette.gov.in/WriteReadData/2026/272840.pdf"
+        },
+        {
+          "label": "Official amendment register (legacy host)",
+          "href": "https://stg-old.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://egazette.gov.in/WriteReadData/2026/272840.pdf",
+            "note": "Retrieved the exact six-page government Gazette and read English notification and amendments on pp. 4–6, plus first-page identity. Notification is May 14; printed Gazette masthead is May 19, while document identifier, digital signature and register posting use May 25. Keep these dates distinct. §1(2) fixes December 1, 2026 effect; §2 gives pulse-flour substitutions and the fish-oil screening note. No rule is supplied for exact equality in the screening note."
+          },
+          {
+            "url": "https://stg-old.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php",
+            "note": "The complete indexed official register excerpt was read and lists Amendment 17 as May 25, 2026. Direct old-host retrieval timed out; the original www register returned a JavaScript shell. The substantive explanation therefore rests on the exact final government Gazette, not the index or secondary summaries."
+          }
+        ]
+      },
+      "kind": "Legislation"
+    },
+    "9": {
+      "referenceTitle": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "fa3956532ab9f9123bcb30db55d26a7b37676e546f3b9bbf669c14862fad9192",
+      "citation": "Ministry of Health, Vietnam. Circular 12/2024/TT-BYT of July 18, 2024, promulgating QCVN 20-1:2024/BYT on contaminant limits in health supplements/dietary supplements. Official Gazette 895–896, August 5, 2024; effective August 1, 2025.",
+      "summary": "Table 1 sets total arsenic 5, inorganic arsenic 1.5, lead 10 and mercury 0.5 mg/kg or mg/L. Cadmium is 3 for supplements containing seaweed or bivalve ingredients and 1 otherwise. Inorganic arsenic is checked when total arsenic exceeds 1.5.",
+      "establishes": "The binding supplement rule includes product scope, transition terms and a conditional cadmium tier. Registered products made before commencement can continue to expiry under stated conditions; this is not a limit for every food.",
+      "relevance": "It supplies a concrete Vietnamese comparator for HMTc supplement specifications. Claims that all mapped HMTc cells are stricter require a separate review of those cells, species and mass-versus-volume bases.",
+      "links": [
+        {
+          "label": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+          "href": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm"
+        },
+        {
+          "label": "Signed Gazette and attached QCVN",
+          "href": "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbRKYzXobIPU0yyY9K0PjAWB4dCIXS_hWcDey-YQeGUiixjL6Rv57HNivsLcIaj85cwsK77qmhPe76nffy0SFqGeQ~~&file_name=2024_895+%2b+896_12-2024-TT-BYT.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm",
+            "note": "Read official Gazette index metadata identifying enactment July 18, 2024 and effect August 1, 2025; followed its PDF link."
+          },
+          {
+            "url": "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbRKYzXobIPU0yyY9K0PjAWB4dCIXS_hWcDey-YQeGUiixjL6Rv57HNivsLcIaj85cwsK77qmhPe76nffy0SFqGeQ~~&file_name=2024_895+%2b+896_12-2024-TT-BYT.pdf",
+            "note": "Read Circular Articles 1–5 on PDF pp. 1–2, QCVN scope on p. 5 and Table 1 on p. 6 (Gazette pp. 2–3, 6–7). Excludes tonic wine declared as a health supplement. Transition covers registered products manufactured before effect and pending applications. The cadmium 3 mg/kg or mg/L tier applies to products containing the stated ingredients without an 80% threshold. No HMTc table comparison was independently validated from this legal source."
+          }
+        ]
+      },
+      "kind": "Legislation"
+    },
+    "10": {
+      "referenceTitle": "UK Government: SPS agreement, preparing your business",
+      "pageDigest": "6fffa887748eb4c18f41c8262d4f635c005c3656df0fada51f23f7e3e9a0abaf",
+      "sourceDigest": "21802aa8a57098ace3caa998c10a82843a7abdbac12b039f933fc32816b540e0",
+      "citation": "UK Department for Environment, Food & Rural Affairs. SPS agreement: preparing your business. Guidance updated July 30, 2026.",
+      "summary": "The guidance describes planned UK–EU sanitary and phytosanitary arrangements, with an intended mid-2027 start. Food/feed contaminants and food-contact materials are among the negotiating areas; timing and exceptions remain subject to negotiation.",
+      "establishes": "This is business-preparation guidance about a prospective agreement, not an adopted schedule of new contaminant limits or a guaranteed commencement date.",
+      "relevance": "HMTc can use it to prepare UK–EU product and evidence comparisons while preserving the pending status. Certification does not substitute for the final agreement or each applicable rule.",
+      "links": [
+        {
+          "label": "UK Government: SPS agreement, preparing your business",
+          "href": "https://www.gov.uk/government/publications/sps-agreement-preparing-your-business/sps-agreement-preparing-your-business"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.gov.uk/government/publications/sps-agreement-preparing-your-business/sps-agreement-preparing-your-business",
+            "note": "Read update date, introductory timing paragraphs, scope and exceptions, and digital-system sections. The government says intent and ongoing negotiations. No later agreement, final exceptions or precise future contaminant obligations were assumed from this guidance."
+          }
+        ]
+      },
+      "kind": "Guidance"
+    }
+  }
+}

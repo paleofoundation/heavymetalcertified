@@ -407,6 +407,113 @@
       }
     }
   },
+  "articles/cooking-does-not-reduce-mehg": {
+    "page": "articles/cooking-does-not-reduce-mehg",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+        "citation": "Farina M, Rocha JBT, Aschner M. Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies. Life Sciences. 2011;89(15–16):555–563. Published online 13 June 2011. doi:10.1016/j.lfs.2011.05.019.",
+        "summary": "This mini-review describes methylmercury transport and neurotoxicity, including cysteine complexes, interactions with thiol/selenol groups and high gastrointestinal absorption. It cites an approximately 90–95% absorption estimate and reviews cell and animal mechanisms.",
+        "establishes": "It is not a controlled cooking or canning experiment. A general absorption estimate does not measure the absorbed dose from every food preparation, and concentration alone is not a serving dose.",
+        "relevance": "For HMTc, it explains why methylmercury warrants attention in edible tissue. It cannot establish identical raw and cooked concentrations, universal thermal stability under all processes, or a certification sampling rule.",
+        "links": [
+          {
+            "label": "Read original author manuscript",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/"
+          }
+        ],
+        "kind": "Review"
+      },
+      "2": {
+        "referenceTitle": "Methylmercury versus total mercury across fish species and preparation forms in the BfR MEAL study",
+        "citation": "German Federal Institute for Risk Assessment (BfR). Methylmercury in fish and seafood – health risk assessment of new data from the BfR MEAL study. Opinion 023/2024, 28 May 2024. doi:10.17590/20240626-094256-0.",
+        "summary": "BfR measured total mercury and methylmercury separately in ready-to-eat seafood pools, usually combining 15–20 samples. It assessed dietary exposure and compared preparation categories with monitoring data. Species differences generally exceeded preparation differences.",
+        "establishes": "This is a pooled total-diet assessment, not matched before-and-after processing. BfR reports measurable preparation effects on concentration but no general conclusion without individual-sample studies; it distinguishes concentration changes from the methylmercury share of total mercury.",
+        "relevance": "HMTc should preserve product form, edible mass and sampling basis. These data cannot establish that a raw concentration equals the amount consumed or absorbed after cooking.",
+        "links": [
+          {
+            "label": "Read BfR opinion",
+            "href": "https://www.bfr.bund.de/cm/349/methylmercury-in-fish-and-seafood-health-risk-assessment-of-new-data-from-the-bfr-meal-study.pdf"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "3": {
+        "referenceTitle": "Total mercury exposure through canned tuna in water sold in Quito, Ecuador",
+        "citation": "Aguilar-Miranda A, Fernández L, Yánez-Jácome GS, et al. Total mercury exposure through canned tuna in water sold in Quito, Ecuador. Scientific Reports. 2024;14:27951. Published 14 November 2024. doi:10.1038/s 41598-024-79430-y.",
+        "summary": "The study purchased 60 cans across three brands during March 2022–March 2023. Drained tuna flesh was analysed for total mercury and reported on a wet-weight basis. Brand means were 0.14,0.41 and 0.25 mg/kg; the highest reported lot was 1.98 mg/kg.",
+        "establishes": "No raw-fish comparator or mercury speciation was measured. Exposure calculations conservatively treated total mercury as methylmercury. Brand differences cannot identify a causal effect of canning.",
+        "relevance": "For HMTc, the survey supports checking canned products and lot variability. It does not prove canning leaves a fixed methylmercury fraction or raw-to-canned concentration unchanged.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://www.nature.com/articles/s41598-024-79430-y"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "FDA–EPA advice about eating fish: Best Choices, Good Choices, and Choices to Avoid",
+        "citation": "US Food and Drug Administration and US Environmental Protection Agency. Advice about Eating Fish; accompanying Questions & Answers for those who might become or are pregnant or breastfeeding and children ages 1–11. Current official web guidance reviewed 15 September 2026.",
+        "summary": "The guidance combines lower-mercury species choices with serving frequency and age-appropriate portions. Adults in the target group are advised 2–3 weekly servings from Best Choices or one from Good Choices; children receive smaller portions.",
+        "establishes": "This is consumer advice, not a product maximum or certification scheme. The FAQ explicitly advises that cleaning or cooking does not reduce mercury, and differentiates canned light, albacore, yellowfin and bigeye tuna.",
+        "relevance": "For HMTc, it supports avoiding cooking-based reassurance and explaining species and portion size. It does not make a certificate a substitute for consumption advice or establish the article’s numerical substitution factors.",
+        "links": [
+          {
+            "label": "FDA–EPA advice",
+            "href": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+          },
+          {
+            "label": "Advice questions and answers",
+            "href": "https://www.fda.gov/food/consumers/questions-answers-fdaepa-advice-about-eating-fish-those-who-might-become-or-are-pregnant-or"
+          }
+        ],
+        "kind": "Guidance"
+      },
+      "5": {
+        "referenceTitle": "US EPA reference dose for methylmercury",
+        "citation": "US Environmental Protection Agency. Integrated Risk Information System: Methylmercury (CASRN 22967-92-6), Chemical Assessment Summary. Oral reference dose revised 27 July 2001.",
+        "summary": "EPA’s chronic oral reference dose is 0.0001 mg/kg body weight/day, equivalent to 0.1 µg/kg/day. It is based on developmental neuropsychological impairment, epidemiological benchmark modelling and an uncertainty factor of 10.",
+        "establishes": "The RfD is an intake benchmark with uncertainty, not a fish concentration ceiling or a sharp boundary between safe and harmful servings. It does not evaluate cooking efficacy.",
+        "relevance": "HMTc can use it to contextualize exposure once concentration, consumption and body weight are known. It cannot directly turn one raw-product test into an absorbed dose or define HMTc’s product limit.",
+        "links": [
+          {
+            "label": "Read EPA assessment",
+            "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "6": {
+        "referenceTitle": "EFSA provisional tolerable weekly intake for methylmercury",
+        "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985. Adopted 22 November 2012; published 20 December 2012; corrected version 10 April 2018. doi:10.2903/j.efsa.2012.2985.",
+        "summary": "EFSA established a tolerable weekly intake of 1.3 µg/kg body weight for methylmercury, expressed as mercury. The opinion considers developmental effects, dietary exposure and nutrients that may affect observational associations.",
+        "establishes": "This is a body-weight-based exposure benchmark, not a food maximum or measured cooking-loss factor. EFSA calls it a TWI; “provisional” belongs to JECFA’s differently valued PTWI.",
+        "relevance": "For HMTc, it supports attention to cumulative intake and sensitive populations. Choosing a product ceiling and sampling the product as sold remain separate program decisions.",
+        "links": [
+          {
+            "label": "Read corrected EFSA opinion",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+          }
+        ],
+        "kind": "Risk assessment"
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Index — cooking does not reduce methylmercury (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Cooking does not reduce methylmercury. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.cooking-does-not-reduce-mehg.",
+        "summary": "The synthesis links mechanism, prepared-seafood occurrence and consumption advice to argue against relying on cooking for mercury reduction. It identifies gaps for fermentation, extended heating and selenium interactions.",
+        "establishes": "The page is a preprint with no external reviews. It supplies an interpretation of source records, not a new controlled retention experiment.",
+        "relevance": "It explains the narrative HMTc applies but is not independent corroboration: both identify Karen Pendergrass and the Institute of Contaminant Standards. Certification effectiveness is not demonstrated.",
+        "links": [
+          {
+            "label": "Read synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/eu-food-limits-arsenic-seafood-nickel-deadlines": {
     "page": "articles/eu-food-limits-arsenic-seafood-nickel-deadlines",
     "reviewed": "2026-09-15",
@@ -1020,6 +1127,160 @@
       }
     }
   },
+  "articles/market-access-rules-gulf-asia": {
+    "page": "articles/market-access-rules-gulf-asia",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+        "citation": "National Health Commission and State Administration for Market Regulation, China. Announcement No. 6 of 2025, publishing GB 2762-2025 and other national food-safety standards. Dated September 2, 2025; posted September 25, 2025. Supplemented by USDA FAS report CH2025-0202.",
+        "summary": "The announcement formally publishes GB 2762-2025 among 32 standards and two amendments. The accompanying USDA translation identifies September 2, 2026 as the replacement standard’s effective date.",
+        "establishes": "The announcement verifies adoption and identity; it does not print the effective date or numerical tables in its HTML. The reviewed translation is expressly unofficial. The 2025 standard is effective by this review date.",
+        "relevance": "HMTc’s China comparison should now identify the 2025 edition and match its product rows. A publication notice alone cannot establish that a certification threshold meets each Chinese requirement.",
+        "links": [
+          {
+            "label": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+            "href": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml"
+          },
+          {
+            "label": "USDA translation of GB 2762-2025",
+            "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Heavy Metal Index — China GB 2762 contaminants",
+        "citation": "Pendergrass K / Institute of Contaminant Standards. China GB 2762-2022—Maximum levels of contaminants in food. Heavy Metal Index. Updated May 18, 2026.",
+        "summary": "This index page describes the 2022 standard and records its planned replacement by GB 2762-2025 on September 2, 2026. Its active-status language is expressly dated May 18, 2026.",
+        "establishes": "It is a secondary instrument record, not a Chinese government standard. Its historical date qualification must be preserved: an active label for the 2022 edition is stale after the replacement date.",
+        "relevance": "It provides a source trail for HMTc’s market file. The current comparison needs the effective successor and cannot rely on this older status label as proof of present compliance.",
+        "links": [
+          {
+            "label": "Heavy Metal Index — China GB 2762 contaminants",
+            "href": "https://heavymetalindex.com/regulations/china-gb-2762-2022-contaminants"
+          }
+        ],
+        "kind": "Reference"
+      },
+      "3": {
+        "referenceTitle": "China NHC public consultation register",
+        "citation": "National Health Commission, China. Public consultation register (征求意见). Register accessed September 15, 2026.",
+        "summary": "The register lists dated consultations, including a June 15, 2026 food-safety standards work plan and an April 17, 2026 package of 37 draft food-safety standards.",
+        "establishes": "It demonstrates a standards-development pipeline. A register entry does not establish adoption, an effective date, a particular proposed metal concentration, or that comments remain open today.",
+        "relevance": "It is a monitoring source for HMTc’s China market file. Any proposed product limit needs its own attachment and status review before becoming a specification.",
+        "links": [
+          {
+            "label": "China NHC public consultation register",
+            "href": "https://www.nhc.gov.cn/wjw/zqyj/list.shtml"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Korea MFDS Notice 2025-56",
+        "citation": "Ministry of Food and Drug Safety, Republic of Korea. Partial amendment to Food Standards and Specifications, Notice 2025-56, August 26, 2025.",
+        "summary": "The official notice identifies new cadmium criteria for cocoa powder and chocolate among broader food-code amendments. It gives the amendment number and adoption date and links the underlying HWPX files.",
+        "establishes": "The visible notice supports the existence and stated subject of the amendment. Its summary does not supply the complete numerical tiers or their commencement provisions.",
+        "relevance": "It justifies checking the applicable Korean cocoa or chocolate row in HMTc’s market file. A cataloged amendment is not itself a completed product-level compliance comparison.",
+        "links": [
+          {
+            "label": "Korea MFDS Notice 2025-56",
+            "href": "https://www.mfds.go.kr/law/board/boardDetail.do?brdId=data0008&menuKey=28&seq=15091"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Taiwan FDA amended analytical method",
+        "citation": "Taiwan Food and Drug Administration. Method of Test for Heavy Metals in Edible Fat, Oil, Cream, Chocolate and Cocoa Powder. MOHWH0029.01, amended January 1, 2026. Six-page English method.",
+        "summary": "The method uses microwave acid digestion and ICP-MS for arsenic, mercury and lead in edible fats, oils and cream, and cadmium in chocolate and cocoa powder. It specifies preparation, calibration, blanks and quantification.",
+        "establishes": "Its quantification limits are 0.025 mg/kg for the named elements in fats/oils/cream and 0.02 mg/kg for cocoa/chocolate cadmium. These analytical capabilities are not legal contaminant maxima or arsenic-speciation results.",
+        "relevance": "It helps match an HMTc laboratory evidence package to the relevant Taiwanese food matrix and analyte. It does not impose this method on every food or prove acceptance of any certificate.",
+        "links": [
+          {
+            "label": "Taiwan FDA amended analytical method",
+            "href": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s"
+          }
+        ],
+        "kind": "Analytical method"
+      },
+      "6": {
+        "referenceTitle": "Hong Kong CFS metallic-contamination amendment hub",
+        "citation": "Hong Kong Centre for Food Safety. Food Adulteration (Metallic Contamination) (Amendment) Regulation 2025: official implementation hub.",
+        "summary": "The hub states that the amendment began on September 5, 2025. During an 18-month grace period, any food may comply wholly with either the prior Cap. 132V requirements or the amendment; all food must meet the amendment from March 6, 2027.",
+        "establishes": "The grace period is an alternative complete-regime compliance provision. The hub also links the legal instrument, guidelines and testing presentations; those linked tables were not all reviewed here.",
+        "relevance": "HMTc’s Hong Kong comparison needs both the relevant schedule and transition status. The article’s restriction of the grace period to pre-existing foods is narrower than the official explanation.",
+        "links": [
+          {
+            "label": "Hong Kong CFS metallic-contamination amendment hub",
+            "href": "https://www.cfs.gov.hk/english/whatsnew/whatsnew_fstr/whatsnew_fstr_PA_Food_Adulteration_Metallic_Contamination_2.html"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "GSO 2783:2025 official catalog record",
+        "citation": "GCC Standardization Organization. GSO 2783:2025, Maximum Residue Limits (MRLs) for Heavy Metals in Food. Gulf Technical Regulation, edition 1; catalog approval date October 29, 2025. Public catalog record.",
+        "summary": "The catalog identifies a current 22-page English technical regulation covering arsenic, inorganic arsenic, mercury, cadmium, lead and tin in food.",
+        "establishes": "The reviewed scope and edition metadata do not expose the licensed numerical tables or establish a common implementation date in every GCC member state. The displayed date is approval, not a verified national effective date.",
+        "relevance": "It is a starting point for HMTc’s Gulf market file. A member-state legal review and the applicable licensed product table are still needed before claiming market access.",
+        "links": [
+          {
+            "label": "GSO 2783:2025 official catalog record",
+            "href": "https://www.gso.org.sa/store/standards/GSO:990231/GSO%202783:2025?lang=en"
+          }
+        ],
+        "kind": "Standards catalog"
+      },
+      "8": {
+        "referenceTitle": "FSSAI Amendment 17 official register",
+        "citation": "Food Safety and Standards Authority of India. Food Safety and Standards (Contaminants, Toxins and Residues) Amendment Regulations, 2026. Notification F. No. 01/SP-02/S&S/NotificationContaminants/2021-22, May 14, 2026. Gazette of India, Extraordinary, Part III, Section 4, No. 327; CG-DL-E-25052026-272840. Effective December 1, 2026.",
+        "summary": "The final amendment extends lead and cadmium pulse categories to pulse flours. For fish oils it applies an inorganic-arsenic maximum of 0.1 mg/kg: total arsenic below that value clears the screen; a value above it requires inorganic-arsenic testing.",
+        "establishes": "The amendment is adopted but takes effect December 1, 2026. The pulse changes expand product scope rather than publishing new numerical pulse limits. Total arsenic is a screen, not the regulated fish-oil species.",
+        "relevance": "It gives HMTc a fixed India readiness date and a specific laboratory decision sequence. Product classification and applicable base-regulation limits still matter; certification alone does not establish market access.",
+        "links": [
+          {
+            "label": "Final Gazette amendment",
+            "href": "https://egazette.gov.in/WriteReadData/2026/272840.pdf"
+          },
+          {
+            "label": "Official amendment register (legacy host)",
+            "href": "https://stg-old.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "9": {
+        "referenceTitle": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+        "citation": "Ministry of Health, Vietnam. Circular 12/2024/TT-BYT of July 18, 2024, promulgating QCVN 20-1:2024/BYT on contaminant limits in health supplements/dietary supplements. Official Gazette 895–896, August 5, 2024; effective August 1, 2025.",
+        "summary": "Table 1 sets total arsenic 5, inorganic arsenic 1.5, lead 10 and mercury 0.5 mg/kg or mg/L. Cadmium is 3 for supplements containing seaweed or bivalve ingredients and 1 otherwise. Inorganic arsenic is checked when total arsenic exceeds 1.5.",
+        "establishes": "The binding supplement rule includes product scope, transition terms and a conditional cadmium tier. Registered products made before commencement can continue to expiry under stated conditions; this is not a limit for every food.",
+        "relevance": "It supplies a concrete Vietnamese comparator for HMTc supplement specifications. Claims that all mapped HMTc cells are stricter require a separate review of those cells, species and mass-versus-volume bases.",
+        "links": [
+          {
+            "label": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+            "href": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm"
+          },
+          {
+            "label": "Signed Gazette and attached QCVN",
+            "href": "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbRKYzXobIPU0yyY9K0PjAWB4dCIXS_hWcDey-YQeGUiixjL6Rv57HNivsLcIaj85cwsK77qmhPe76nffy0SFqGeQ~~&file_name=2024_895+%2b+896_12-2024-TT-BYT.pdf"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "10": {
+        "referenceTitle": "UK Government: SPS agreement, preparing your business",
+        "citation": "UK Department for Environment, Food & Rural Affairs. SPS agreement: preparing your business. Guidance updated July 30, 2026.",
+        "summary": "The guidance describes planned UK–EU sanitary and phytosanitary arrangements, with an intended mid-2027 start. Food/feed contaminants and food-contact materials are among the negotiating areas; timing and exceptions remain subject to negotiation.",
+        "establishes": "This is business-preparation guidance about a prospective agreement, not an adopted schedule of new contaminant limits or a guaranteed commencement date.",
+        "relevance": "HMTc can use it to prepare UK–EU product and evidence comparisons while preserving the pending status. Certification does not substitute for the final agreement or each applicable rule.",
+        "links": [
+          {
+            "label": "UK Government: SPS agreement, preparing your business",
+            "href": "https://www.gov.uk/government/publications/sps-agreement-preparing-your-business/sps-agreement-preparing-your-business"
+          }
+        ],
+        "kind": "Guidance"
+      }
+    }
+  },
   "articles/organic-certification-not-protective": {
     "page": "articles/organic-certification-not-protective",
     "reviewed": "2026-09-15",
@@ -1277,6 +1538,106 @@
       }
     }
   },
+  "articles/se-hg-molar-ratio-certification-debate": {
+    "page": "articles/se-hg-molar-ratio-certification-debate",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Selenium Health Benefit Values: Updated Criteria for Mercury Risk Assessments",
+        "citation": "Ralston NVC, Ralston CR, Raymond LJ. Selenium Health Benefit Values: Updated Criteria for Mercury Risk Assessments. Biological Trace Element Research. 2016;171(2):262–269. Published online 13 October 2015. doi:10.1007/s12011-015-0516-z.",
+        "summary": "The paper revises the selenium health-benefit equation to avoid extreme values at low mercury concentrations. It compares index calculations using published ocean-fish and pilot-whale measurements and argues that selenium balance better predicts methylmercury toxicity.",
+        "establishes": "This is a proposed risk index supported by mechanistic reasoning and reused datasets, not a human trial establishing a regulatory ceiling adjustment. Its strong protective conclusions are the authors’ interpretation.",
+        "relevance": "For HMTc, it identifies the competing framework that would need validation before changing a methylmercury ceiling. A favorable computed value does not independently demonstrate a product’s safety.",
+        "links": [
+          {
+            "label": "Read original paper",
+            "href": "https://link.springer.com/article/10.1007/s12011-015-0516-z"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Health benefits of bluefin tuna consumption: (Thunnus thynnus) as a case study",
+        "citation": "Chamorro F, Cassani L, Garcia-Oliveira P, et al. Health benefits of bluefin tuna consumption: (Thunnus thynnus) as a case study. Frontiers in Nutrition. 2024;11:1340121. Published 2 April 2024. doi:10.3389/fnut.2024.1340121.",
+        "summary": "This narrative review combines tuna nutrition, contaminants and proposed protective nutrients. Its compiled table includes Atlantic bluefin selenium-to-mercury molar ratios above one alongside substantial variation in mercury and selenium health-benefit values.",
+        "establishes": "The table aggregates different studies and includes other tuna species. It is not a new representative bluefin survey, a controlled selenium-protection trial or validation of a higher allowable mercury concentration.",
+        "relevance": "For HMTc, these observations support retaining species, origin and individual variability when interpreting a ratio. They cannot certify every bluefin lot or justify substituting a ratio for methylmercury measurement.",
+        "links": [
+          {
+            "label": "Read original review",
+            "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1340121/full"
+          }
+        ],
+        "kind": "Review"
+      },
+      "3": {
+        "referenceTitle": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+        "citation": "Farina M, Rocha JBT, Aschner M. Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies. Life Sciences. 2011;89(15–16):555–563. Published online 13 June 2011; issue 10 October 2011. doi:10.1016/j.lfs.2011.05.019.",
+        "summary": "This mechanistic mini-review examines cell, tissue, mitochondrial and mainly rodent experiments. It connects methylmercury neurotoxicity with disrupted glutamate and calcium regulation, oxidative stress and effects on selenoproteins.",
+        "establishes": "It supports interacting biological mechanisms and possible protection by selenium compounds. It does not estimate human protection from a particular seafood molar ratio or compare certification thresholds.",
+        "relevance": "For HMTc, the review explains why one elemental ratio cannot capture every mechanism discussed. It does not establish which factor explains the Faroe–Seychelles difference.",
+        "links": [
+          {
+            "label": "Read original author manuscript",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/"
+          }
+        ],
+        "kind": "Review"
+      },
+      "4": {
+        "referenceTitle": "Absolute methylmercury reference values maintained by the major food-safety authorities",
+        "citation": "EFSA CONTAM Panel. Mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985, corrected 10 April 2018. JECFA. Methylmercury evaluation, 67th meeting (2006), report/database entry 2007. US EPA. IRIS Methylmercury Chemical Assessment Summary, oral RfD revised 27 July 2001. US FDA. CPG 540.600, issued 6 November 1984, updated 16 February 2007.",
+        "summary": "The reviewed documents provide four distinct values: EFSA’s methylmercury TWI of 1.3 µg/kg body weight/week; JECFA’s PTWI of 1.6 µg/kg/week; EPA’s oral RfD of 0.1 µg/kg/day; and FDA’s legal-action guidance for methylmercury above 1 ppm in edible seafood.",
+        "establishes": "The first three are health-based intake benchmarks, not food concentration limits. FDA’s action level is enforcement guidance. None of these formulations contains a selenium-ratio adjustment; this finding is limited to the identified documents, not an exhaustive worldwide policy audit.",
+        "relevance": "HMTc should compare like units and legal status before selecting a product ceiling. These sources support retaining the stated mercury measurement, but do not mandate HMTc’s strictest-government selection rule or a universal per-lot speciation protocol.",
+        "links": [
+          {
+            "label": "EFSA opinion, corrected version",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+          },
+          {
+            "label": "JECFA evaluation record",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083"
+          },
+          {
+            "label": "EPA IRIS assessment",
+            "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+          },
+          {
+            "label": "FDA action-level guidance",
+            "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl"
+          }
+        ],
+        "kind": "Risk assessments and guidance"
+      },
+      "5": {
+        "referenceTitle": "Stable isotopes unveil ocean transport of legacy mercury into Arctic food webs",
+        "citation": "Søndergaard J, Elberling B, Sonne C, Larsen MM, Dietz R. Stable isotopes unveil ocean transport of legacy mercury into Arctic food webs. Nature Communications. 2025;16:5135. Published 12 June 2025. doi:10.1038/s41467-025-60356-6.",
+        "summary": "The study measured total mercury and stable isotopes in Greenland peat and aquatic wildlife, including samples collected during 1983–2024. Geographic and temporal signatures support an important role for ocean transport of legacy mercury and environmental transformation.",
+        "establishes": "This is source-and-pathway research using ICP-MS and isotope analysis. It does not demonstrate different human toxicity for methylmercury from different origins, or test selenium protection.",
+        "relevance": "For HMTc, it provides context for geographic exposure patterns and source attribution. It offers no validated alternative to a product’s mercury concentration or a basis for a source-specific higher ceiling.",
+        "links": [
+          {
+            "label": "Read original study",
+            "href": "https://www.nature.com/articles/s41467-025-60356-6"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — selenium-mercury molar ratio and the case for relaxing methylmercury ceilings (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Selenium-mercury molar ratio and the case for relaxing methylmercury ceilings. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.se-hg-molar-ratio-certification-debate.",
+        "summary": "This synthesis presents arguments for a selenium-based mercury index and the unresolved step from that index to an adjusted ceiling. It also discusses cohort comparisons, analytical burden and possible category distinctions.",
+        "establishes": "The page identifies itself as a preprint without external reviews. It contributes interpretation rather than new experiments or an independently validated threshold model.",
+        "relevance": "It documents the reasoning HMTc adopts for retaining a mercury ceiling. Shared authorship and Institute of Contaminant Standards affiliation prevent treating it as independent corroboration of the program.",
+        "links": [
+          {
+            "label": "Read synthesis and review status",
+            "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/seaweed-cd-as-contamination": {
     "page": "articles/seaweed-cd-as-contamination",
     "reviewed": "2026-09-15",
@@ -1393,6 +1754,121 @@
           }
         ],
         "kind": "Preprint synthesis"
+      }
+    }
+  },
+  "articles/spice-adulteration-lead-infants": {
+    "page": "articles/spice-adulteration-lead-infants",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Turmeric means “yellow” in Bengali: Lead chromate pigments added to turmeric threaten public health across Bangladesh",
+        "citation": "Forsyth JE, Nurunnahar S, Islam SS, et al. Environmental Research. 2019;179:108722. doi:10.1016/j.envres.2019.108722.",
+        "summary": "The Bangladesh investigation combined 152 interviews with 524 turmeric, pigment, dust and soil samples. Evidence of pigment adulteration occurred in seven of nine major producing districts. Seven mill pigment samples had median lead of 20,024 µg/g and a maximum of 115,500 µg/g.",
+        "establishes": "These are distinct sample types: pigment concentrations are not turmeric-food concentrations. Interviews describe historical drivers and commercial incentives; they do not establish a universal causal history for all turmeric or all spice lead.",
+        "relevance": "The study supports deliberate pigment addition in investigated supply chains. Its observed control point and reports that export scrutiny changed corporate behavior do not support the article’s claim that sourcing, process controls and audits are inherently unable to address adulteration.",
+        "links": [
+          {
+            "label": "Original published paper, GiveWell-hosted copy",
+            "href": "https://files.givewell.org/files/DWDA%202009/Pure_Earth/Forsyth_et_al_2019a.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Evidence of turmeric adulteration with lead chromate across South Asia",
+        "citation": "Forsyth JE, Mistree D, Nash E, Angrish M, Luby SP. Science of the Total Environment. 2024;949:175003. doi:10.1016/j.scitotenv.2024.175003.",
+        "summary": "Among 356 turmeric samples collected in 23 South Asian cities in 2020–2021, high-lead samples had Pb:Cr molar ratios averaging 0.92, compared with 0.44 for lower-lead samples. Maximum lead was 2,935 µg/g in Karachi.",
+        "establishes": "The authors call the ratio suggestive of lead chromate, not a definitive standalone identification of chemical species or intent. Sampling was nonrandom and not weighted by market share. Patna’s 345–790 µg/L child blood-lead increase is a theoretical maximum from two models, not measured blood results.",
+        "relevance": "Paired measurements can inform investigation. They do not make every near-unity ratio proof of deliberate addition, establish a universal environmental ratio, or validate certification outcomes.",
+        "links": [
+          {
+            "label": "Original paper, publisher-formatted PDF mirror",
+            "href": "https://cibum.gr/wp-content/uploads/2024/12/1-s2.0-S0048969724051532-main-1.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Lead and chromium exposure after contaminated cinnamon applesauce, United States",
+        "citation": "Troeschel AN, Buser MC, Winquist A, et al. Investigation of Lead and Chromium Exposure After Consumption of Contaminated Cinnamon-Containing Applesauce — United States, November 2023–April 2024. MMWR. 2025;74:239–244. doi:10.15585/mmwr.mm7414a2. The cited shorthand refers to this April 24, 2025 report, not a 2024 publication.",
+        "summary": "CDC received 566 reports: 130 confirmed, 401 probable and 35 suspected cases. Fifty-five percent were under two years. The median within-person maximum venous blood lead among probable/confirmed cases was 7.2 µg/dL.",
+        "establishes": "The 1.9–3.0 ppm measurement was in applesauce pouches, not cinnamon. The 566 cases were people of any age, not all infants or all confirmed cases. Other exposure sources could not be completely excluded; long-term outcomes were unknown.",
+        "relevance": "This substantiates a serious food-associated outbreak while correcting the article’s matrix, date and denominator. Routine pediatric surveillance and home investigations identified the initial cases; the report does not evaluate private certification or show that testing alone prevents recurrence.",
+        "links": [
+          {
+            "label": "Original CDC report full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12021075/fullTextXML"
+          }
+        ],
+        "kind": "Government report"
+      },
+      "4": {
+        "referenceTitle": "A scoping review of turmeric adulteration based on data from six continents",
+        "citation": "Gafner S, Orhan N, Kahraman Ç, Blumenthal M. Pharmaceutical Biology. 2026;64(1):87–107. doi:10.1080/13880209.2025.2606229. Published online December 26, 2025.",
+        "summary": "The scoping review combined 48 publications covering 2,235 commercial turmeric samples. Its 20.0% overall adulteration rate includes dyes, bulking agents, botanical substitution and synthetic curcumin, not just lead chromate.",
+        "establishes": "The pooled percentage is not a representative global lead-adulteration prevalence. Methods, geography and product selection varied; nearly half the samples were Indian. Some lead-chromate datasets were excluded from its rate table because an adulterated-sample count was unavailable.",
+        "relevance": "The review also summarizes Bangladesh contamination declining from 47% to zero in sampled products after combined enforcement, screening and education. This supports a coordinated intervention, not proof that testing alone caused the decline or that the entire supply became permanently contamination-free.",
+        "links": [
+          {
+            "label": "Original review full text, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12777824/fullTextXML"
+          }
+        ],
+        "kind": "Review"
+      },
+      "5": {
+        "referenceTitle": "Ground Turmeric as a Source of Lead Exposure in the United States",
+        "citation": "Cowell W, Ireland T, Vorhees D, Heiger-Bernays W. Ground Turmeric as a Source of Lead Exposure in the United States. Public Health Reports. 2017;132(3):289–293. doi:10.1177/0033354917700109. Commentary including original sample analyses.",
+        "summary": "The authors tested 32 turmeric samples bought around Boston in 2011–2012. Median lead was 0.11 ppm, with a range of 0.03–99.50 ppm. Sixteen exceeded the 0.1 ppm candy comparator they selected.",
+        "establishes": "This conflicts with the article’s 127-product survey, 1.41 ppm mean and 7.59 ppm maximum. The paper expressly says FDA had no spice-specific lead guideline; its 100 ppb comparison was for candy, not a turmeric action level.",
+        "relevance": "It supports historical US availability of highly contaminated turmeric, while requiring correction of sample statistics and the legal comparison. It also describes existing inspection, testing, detention and import-alert powers, rather than complete regulatory absence.",
+        "links": [
+          {
+            "label": "Original article full text in PMC",
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5415259/"
+          }
+        ],
+        "kind": "Commentary"
+      },
+      "6": {
+        "referenceTitle": "Import Alert 99-42: detention of lead-contaminated spice imports",
+        "citation": "US Food and Drug Administration. Import Alert 99-42: Detention Without Physical Examination of Foods Due to Heavy Metal (Toxic Element) Contamination. Published August 26, 2026; substantive guidance revision April 21, 2025.",
+        "summary": "The alert gives FDA personnel guidance on detaining specified imports for toxic elements and obtaining evidence for shipment release or removal from the alert. Listed foods include turmeric and other spices.",
+        "establishes": "It is broader than spices and its guidance is nonbinding; the stated legal basis is adulteration and import refusal. It does not establish a universal 100 ppb spice limit or, in this reviewed version, verify the article’s claimed 1990s origin.",
+        "relevance": "This is direct evidence of an enforcement mechanism. It supports attention to imported spices but cannot show every shipment is tested or establish how effective a private lot-testing program would be.",
+        "links": [
+          {
+            "label": "FDA Import Alert 99-42",
+            "href": "https://www.accessdata.fda.gov/CMS_IA/importalert_1167.html"
+          }
+        ],
+        "kind": "Government guidance"
+      },
+      "7": {
+        "referenceTitle": "Blood Lead Levels in Children 5 to 7 Years of Age from the Republic of Georgia: A Feasibility Study on Lead Surveillance Using Volumetric Absorptive Microsampling",
+        "citation": "Rylander C, Anda EE, Cirtiu CM, et al. Environmental Health Perspectives. 2025;133(5):057003. doi:10.1289/EHP15788.",
+        "summary": "In a 2023–2024 surveillance pilot, 1,635 children from Adjara and Imereti, Georgia, were tested; 39.8% had blood lead ≥3.5 µg/dL. Weekly use of specified spices was associated with that threshold in Adjara: adjusted odds ratio 1.47, 95% CI 1.11–1.94.",
+        "establishes": "The spice association was not found in Imereti or for blood lead ≥10 µg/dL. The study did not test the consumed spices for lead; authors caution that spice use may instead mark a dietary pattern. Questionnaire and participation limitations remain.",
+        "relevance": "It supports a regional exposure hypothesis, not proof of lead-chromate ingestion or a nationwide causal spice effect. Its school-age population also differs from the article’s infant focus.",
+        "links": [
+          {
+            "label": "Original surveillance study, Europe PMC XML",
+            "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12052077/fullTextXML"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — spice adulteration with lead chromate reaching infants (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Spice adulteration with lead chromate is a distinct, non-agricultural contamination pathway reaching infants. Heavy Metal Index. Updated May 13, 2026. doi:10.83376/hmi.spice-adulteration-lead-infants. Preprint.",
+        "summary": "This synthesis links spice-adulteration studies, the applesauce outbreak and proposed risk controls. It explicitly reports that no external reviewers have evaluated it.",
+        "establishes": "It is an interpretation by the article’s author, not new measurements or independent validation. Its Cowell source metadata, outbreak year and several numerical claims conflict with the original records reviewed here.",
+        "relevance": "Use it to trace the argument, with the corrected matrix, sampling and model limits in references 2–7. Its framing does not validate every-lot certification as the sole effective control or a Pb:Cr ratio as definitive proof of intent.",
+        "links": [
+          {
+            "label": "Exact HMI synthesis and review state",
+            "href": "https://heavymetalindex.com/synthesis/spice-adulteration-lead-infants"
+          }
+        ],
+        "kind": "Preprint"
       }
     }
   },
@@ -1611,6 +2087,124 @@
       }
     }
   },
+  "articles/tin-canned-food-acidic-matrix-migration": {
+    "page": "articles/tin-canned-food-acidic-matrix-migration",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Tin in canned food: a review and understanding of occurrence and effect",
+        "citation": "Blunden S, Wallace T. Tin in canned food: a review and understanding of occurrence and effect. Food and Chemical Toxicology. 2003;41(12):1651–1662. doi:10.1016/S0278-6915(03)00217-5.",
+        "summary": "This narrative review discusses tin dissolution from packaging, food surveys and acute gastrointestinal effects. It attributes the fresh/lacquered/unlacquered food comparison to Biégo and colleagues, rather than reporting its own experiment.",
+        "establishes": "The authors are affiliated with ITRI, the tin-industry research organization. Their roughly 20% unlacquered-can estimate describes the period of publication, not the current market. The review acknowledges sparse human evidence and cannot exclude rare effects at 200 mg/kg.",
+        "relevance": "It supports considering packaging and storage when interpreting a finished-product result. It does not establish that the same food always gains a fixed multiple of tin or that every product below a ceiling is risk-free.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "2": {
+        "referenceTitle": "Tin and Iron Migration From Metallic Cans Into Foodstuffs During Storage",
+        "citation": "Buculei A, Gutt G, Amariei S, Dabija A, Constantinescu G. Study regarding the tin and iron migration from metallic cans into foodstuff during storage. Journal of Agroalimentary Processes and Technologies. 2012;18(4):299–303.",
+        "summary": "The experiment compared coatings on cans holding peas, tomato paste, pork and liver pâté. Figures over 1,080 days show tomato tin rising to roughly 9–23 mg/kg, with much lower values in the other foods.",
+        "establishes": "These were coated cans, not an experiment confined to bare tinplate. Numerical values are approximate figure readings; replication is unstated, and the abstract’s two-year duration conflicts with the three-year figures. Methods also describe inconsistent instruments.",
+        "relevance": "It supports a conditional packaging-and-storage pathway. It cannot establish a universal migration rate, isolate acidity from every other product difference, or validate a shelf-life testing frequency for HMTc.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://journal-of-agroalimentary.ro/admin/articole/21821L08_Buculei_Vol.18_4_2012_299-303.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "3": {
+        "referenceTitle": "The toxicity of tin in canned fruit juices and solid foods",
+        "citation": "Benoy CJ, Hooper PA, Schneider R. The toxicity of tin in canned fruit juices and solid foods. Food and Cosmetics Toxicology. 1971;9(5):645–656. doi:10.1016/0015-6264(71)90152-0.",
+        "summary": "The accessible abstract describes animal experiments and five human volunteers. None had symptoms after juice at 498–730 ppm tin; all had gastrointestinal disturbance at 1,370 ppm. Repeating the high-concentration exposure produced only mild symptoms in one volunteer.",
+        "establishes": "This small experiment does not establish a population-wide threshold. The 99% faecal recovery result concerns rats, not human absorption. Local irritation was the authors’ proposed mechanism; the complete paper was not accessible for this review.",
+        "relevance": "It helps distinguish acute concentration-dependent effects from a long-term intake benchmark. HMTc should not treat one small volunteer study as a universal safety margin or an infant threshold.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://www.sciencedirect.com/science/article/pii/0015626471901520/pdf?md5=3235213af30c111c8b1bae97da54f8a7&pid=1-s2.0-0015626471901520-main.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "4": {
+        "referenceTitle": "Opinion on Acute Risks Posed by Tin in Canned Foods",
+        "citation": "European Commission Scientific Committee on Food. Opinion on Acute Risks Posed by Tin in Canned Foods. SCF/CS/CNTM/OTH/18 Final, 8 January 2002; adopted 12 December 2001.",
+        "summary": "The committee assessed inorganic tin and agreed that 150 mg/kg in canned beverages or 250 mg/kg in other canned foods may cause gastric irritation in some individuals. It found insufficient data to determine a precise no-effect concentration.",
+        "establishes": "The opinion explicitly states that evidence could not determine whether infants were more sensitive. It does not derive the article’s 200/100/50 mg/kg legal maxima or a five-to-seven-fold safety factor.",
+        "relevance": "It provides toxicological context for HMTc, with uncertainty intact. Binding product limits must be sourced to the legal instrument; precautionary infant treatment should not be presented as a measured infant no-effect level.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://food.ec.europa.eu/document/download/8aa7f7d4-68da-46c8-ba87-a22bfd6433a3_en?filename=sci-com_scf_out110_en.pdf"
+          }
+        ],
+        "kind": "Government"
+      },
+      "5": {
+        "referenceTitle": "Maximum Levels for Inorganic Tin in Canned Food",
+        "citation": "European Commission. Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food. Annex I, section 3.5, original act.",
+        "summary": "Annex I specifies inorganic tin at 200 mg/kg for general canned food and 100 mg/kg for canned beverages, on a wet-weight basis. Specified canned infant and young-child products have a 50 mg/kg maximum as marketed.",
+        "establishes": "The infant entries exclude canned dried and powdered products. These are category-specific legal concentrations, not daily intake allowances or evidence that a particular safety factor was experimentally established.",
+        "relevance": "HMTc needs the exact product category, preparation and instrument when comparing results. A numerical difference from Codex is real, but a market-compliance decision also requires applicable sampling and measurement rules.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "6": {
+        "referenceTitle": "Recommended Maximum Level for Tin in Canned Solid Foods",
+        "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025. Tin, page 75.",
+        "summary": "The schedule sets tin at 250 mg/kg for canned foods other than beverages and 150 mg/kg for canned beverages. Specified cured-meat products in non-tinplate containers instead have 50 mg/kg entries.",
+        "establishes": "The contaminant definition defaults to total tin unless another specification is given. The schedule’s category and container exceptions matter. Codex recommendations do not themselves establish the law applying in every importing country.",
+        "relevance": "It verifies the article’s higher Codex comparator while showing why HMTc must identify the jurisdiction and food/container category. Matching only the metal name is insufficient for a compliance comparison.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+          }
+        ],
+        "kind": "Standard"
+      },
+      "7": {
+        "referenceTitle": "The content of lead, cadmium, arsenic, mercury and tin in fruit and their products based on monitoring studies – exposure assessment",
+        "citation": "Mania M, Rebeniak M, Chabros E, Orshulyak O, Postupolski J. The content of lead, cadmium, arsenic, mercury and tin in fruit and their products based on monitoring studies – exposure assessment. Roczniki Państwowego Zakładu Higieny. 2021;72(4):353–360. doi:10.32394/rpzh.2021.0188.",
+        "summary": "Poland’s 2015 monitoring program measured tin in 69 metal-packaged fruit samples. The reported mean was 69.7–70.1 mg/kg, the 90th percentile 140 mg/kg and the maximum 206 mg/kg in imported canned pears.",
+        "establishes": "This is historical market surveillance, not a storage experiment. The authors’ low-risk conclusion does not make every sample compliant with every legal comparator. Their detailed dietary calculations cover lead, cadmium, arsenic and mercury rather than a reported tin-intake model.",
+        "relevance": "It supports checking finished packaged products and the upper end of observed concentrations. It does not prove that all tin came from packaging or establish current US prevalence; measurement uncertainty matters before declaring an individual legal exceedance.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://roczniki.pzh.gov.pl/pdf-182685-103181?filename=The-content-of-lead--cadm.pdf"
+          }
+        ],
+        "kind": "Journal"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — tin as a can-format-and-acidity contaminant (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Inorganic tin in food is a can-format-and-acidity contaminant. Heavy Metal Index synthesis, updated 27 July 2026. doi:10.83376/hmi.tin-canned-food-acidic-matrix-migration.",
+        "summary": "The synthesis connects historical toxicity, canned-fruit surveillance and packaging studies to a proposal for testing finished canned products. It acknowledges small clinical samples, an industry-associated review and weaknesses in the storage experiment.",
+        "establishes": "It is an unreviewed preprint, not another independent experiment. Its account of the SCF opinion overstates both infant evidence and derivation of the legal maxima; the primary opinion should control those claims.",
+        "relevance": "It provides the argument underlying this HMTc article. Shared authorship and institutional affiliation do not supply independent corroboration, and the testing proposal has not been validated as a certification intervention.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "articles/us-baby-food-heavy-metal-laws-states-fda": {
     "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
     "reviewed": "2026-09-15",
@@ -1764,6 +2358,167 @@
           }
         ],
         "kind": "Preprint synthesis"
+      }
+    }
+  },
+  "articles/worldwide-heavy-metal-regulatory-watch-2026": {
+    "page": "articles/worldwide-heavy-metal-regulatory-watch-2026",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Commission Regulation (EU) 2025/1891 on inorganic arsenic in fish and seafood",
+        "citation": "European Commission. Regulation (EU) 2025/1891 of 17 September 2025 amending Regulation (EU) 2023/915 as regards maximum levels of inorganic arsenic in fish and other seafood. OJ L 2025/1891, 18 September 2025.",
+        "summary": "The amendment adds wet-weight inorganic-arsenic maxima for specified fish and seafood, defines inorganic arsenic as As(III) plus As(V), and preserves separate total-arsenic treatment for salt. Species and edible-portion rules vary.",
+        "establishes": "It entered into force on 8 October 2025. Covered seafood lawfully marketed earlier may remain until its durability or use-by date. The act sets legal values and scope; it does not itself prescribe a particular laboratory method in every case.",
+        "relevance": "This is a binding concentration-limit event in HMTc’s watch. Comparisons need the correct aquatic species, tissue and wet-weight basis; the legal instrument does not validate the article’s aggregate count of equal or stricter HMTc cells.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://eur-lex.europa.eu/eli/reg/2025/1891/oj"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "2": {
+        "referenceTitle": "Commission Regulation (EU) 2024/1987 on maximum levels of nickel in certain foodstuffs",
+        "citation": "European Commission. Regulation (EU) 2024/1987 of 30 July 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L 2024/1987, 31 July 2024.",
+        "summary": "The amendment sets nickel maxima by food category. Most apply from 1 July 2025; cereal rows 3.6.11.1–3.6.11.5 apply from 1 July 2026. Infant cereal-based food is a separate row with the earlier date.",
+        "establishes": "Food lawfully marketed before its applicable date can remain until its durability or use-by date. Therefore, the July 2026 application date does not end every transitional sale. Category, preparation, processing and dry/wet basis remain material.",
+        "relevance": "This gives HMTc distinct category application dates rather than one nickel deadline. The cereal date has passed by this review, while lawful earlier stock may still qualify for transitional sale. It does not by itself verify all HMTc comparison cells.",
+        "links": [
+          {
+            "label": "Read the source",
+            "href": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj/eng"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "3": {
+        "referenceTitle": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+        "citation": "National Health Commission and State Administration for Market Regulation, China. Announcement No. 6 of 2025, publishing GB 2762-2025 and other national food-safety standards. Dated September 2, 2025; posted September 25, 2025. Supplemented by USDA FAS report CH2025-0202.",
+        "summary": "The announcement formally publishes GB 2762-2025 among 32 standards and two amendments. The accompanying USDA translation identifies September 2, 2026 as the replacement standard’s effective date.",
+        "establishes": "The announcement verifies adoption and identity; it does not print the effective date or numerical tables in its HTML. The reviewed translation is expressly unofficial. The 2025 standard is effective by this review date.",
+        "relevance": "HMTc’s watch must now treat GB 2762-2025 as effective, with product-level comparisons to its own categories. The article’s future-tense and adopted-not-effective framing was tied to its August 2026 publication and is stale on September 15.",
+        "links": [
+          {
+            "label": "NHC/SAMR Announcement No. 6 of 2025 publishing GB 2762-2025",
+            "href": "https://www.nhc.gov.cn/sps/c100088/202509/5dc5e1e2b26d4d27a7913b9e71bbe931.shtml"
+          },
+          {
+            "label": "USDA translation of GB 2762-2025",
+            "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "ECHA proposes restrictions on chromium(VI) substances",
+        "citation": "European Chemicals Agency. ECHA proposes restrictions on chromium(VI) substances to protect health. ECHA/NR/25/11, April 29, 2025. Supplementary process context: 2026 SEAC draft-opinion consultation.",
+        "summary": "ECHA’s notice describes a proposed restriction of certain chromium(VI) substances, with exceptions for specified industrial uses meeting proposed exposure and emission conditions. It envisages replacing specified REACH authorization requirements, with a later decision by the Commission and Member States.",
+        "establishes": "The 2025 notice is a proposal, not an adopted general prohibition. A 2026 consultation on the socio-economic draft opinion documents a later procedural stage. The complete latest dossier and final adoption status were not independently audited here.",
+        "relevance": "This illustrates a proposal event in HMTc’s tracker. It supports monitoring substitution and supply-chain implications, not inserting a chromium(VI) food maximum or labeling all industrial uses already prohibited.",
+        "links": [
+          {
+            "label": "ECHA original proposal notice",
+            "href": "https://echa.europa.eu/-/echa-proposes-restrictions-on-chromium-vi-substances-to-protect-health"
+          },
+          {
+            "label": "Norwegian Environment Agency 2026 consultation notice",
+            "href": "https://www.miljodirektoratet.no/aktuelt/fagmeldinger/2026/juni-2026/oktokrilen-og-kromvi-sosiookonomiske-vurderinger/"
+          }
+        ],
+        "kind": "Regulatory proposal — official notice"
+      },
+      "5": {
+        "referenceTitle": "FDA infant-formula product testing results",
+        "citation": "US Food and Drug Administration. FDA’s Infant Formula Product Testing Results. FY 2023–2025 market-basket results, official results page accessed September 15, 2026.",
+        "summary": "FDA reports testing 312 formula samples for arsenic, cadmium, lead and mercury and presents concentrations as prepared for feeding. It describes market-basket testing as a snapshot and states that its findings affirm formula safety.",
+        "establishes": "Detecting a contaminant does not automatically establish harm. These monitoring results do not capture all variation among production lots and do not create new legal maxima; the page describes further testing and work toward action levels.",
+        "relevance": "This is surveillance evidence for HMTc’s watch, with a preparation basis that must match any comparison. It is neither a threshold change nor validation of every lot or HMTc’s commercial benefit.",
+        "links": [
+          {
+            "label": "FDA infant-formula product testing results",
+            "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"
+          }
+        ],
+        "kind": "Government monitoring"
+      },
+      "6": {
+        "referenceTitle": "FAO/WHO: Codex Alimentarius Commission adopts new standards at CAC48",
+        "citation": "FAO/WHO. FAO-WHO 48th Session of the Codex Alimentarius Commission adopts new standards. FAO Newsroom, November 10, 2025; session November 10–14, 2025.",
+        "summary": "The official adoption report identifies new lead maxima of 2.5 mg/kg for dried bark spices and 2.0 mg/kg for dried culinary herbs, to be added to CXS 193-1995.",
+        "establishes": "This verifies adoption by Codex for two defined food categories. It does not establish a separate national implementation date, a universal all-spice maximum, or a requirement that every country adopt these values.",
+        "relevance": "It supplies an international benchmark event for HMTc’s watch. Market-access comparisons still require the destination’s applicable law and precise commodity, and Codex adoption does not itself change a certification threshold.",
+        "links": [
+          {
+            "label": "FAO/WHO: Codex Alimentarius Commission adopts new standards at CAC48",
+            "href": "https://www.fao.org/newsroom/detail/fao-who-48th-session-of-the-codex-alimentarius-commission-adopts-new-standards/"
+          }
+        ],
+        "kind": "Official adoption report"
+      },
+      "7": {
+        "referenceTitle": "Heavy Metal Index — regulations and neutral regulatory-limit evidence",
+        "citation": "Pendergrass K / Institute of Contaminant Standards. Regulations. Heavy Metal Index. Index page dated May 3, 2026; accessed September 15, 2026.",
+        "summary": "The index organizes links to jurisdiction-specific thresholds, action levels and guidance, with views by country and chronology. It describes preserving source values and showing conversions.",
+        "establishes": "This is a secondary navigation and comparison resource operated by the Institute of Contaminant Standards/Paleo Certified. Its declared approach does not prove every linked value is current, correctly converted or independently reviewed.",
+        "relevance": "It can route readers from HMTc’s event tracker to individual source records. The article’s counts of 19 verified clusters and 14 HMTc comparisons require their own evidence and calculations; the index is not external validation of those totals.",
+        "links": [
+          {
+            "label": "Heavy Metal Index — regulations and neutral regulatory-limit evidence",
+            "href": "https://heavymetalindex.com/regulations"
+          }
+        ],
+        "kind": "Reference"
+      },
+      "8": {
+        "referenceTitle": "FSSAI Amendment 17 official register",
+        "citation": "Food Safety and Standards Authority of India. Food Safety and Standards (Contaminants, Toxins and Residues) Amendment Regulations, 2026. Notification F. No. 01/SP-02/S&S/NotificationContaminants/2021-22, May 14, 2026. Gazette of India, Extraordinary, Part III, Section 4, No. 327; CG-DL-E-25052026-272840. Effective December 1, 2026.",
+        "summary": "The final amendment extends lead and cadmium pulse categories to pulse flours. For fish oils it applies an inorganic-arsenic maximum of 0.1 mg/kg: total arsenic below that value clears the screen; a value above it requires inorganic-arsenic testing.",
+        "establishes": "The amendment is adopted but takes effect December 1, 2026. The pulse changes expand product scope rather than publishing new numerical pulse limits. Total arsenic is a screen, not the regulated fish-oil species.",
+        "relevance": "This provides a dated, adopted future rule in HMTc’s worldwide watch: December 1, 2026. Its species-specific fish-oil screen and pulse-flour scope expansion must be kept distinct from a generic reduction in all metal limits.",
+        "links": [
+          {
+            "label": "Final Gazette amendment",
+            "href": "https://egazette.gov.in/WriteReadData/2026/272840.pdf"
+          },
+          {
+            "label": "Official amendment register (legacy host)",
+            "href": "https://stg-old.fssai.gov.in/cms/amendment-fss-contaminants-toxins-and-residues.php"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "9": {
+        "referenceTitle": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+        "citation": "Ministry of Health, Vietnam. Circular 12/2024/TT-BYT of July 18, 2024, promulgating QCVN 20-1:2024/BYT on contaminant limits in health supplements/dietary supplements. Official Gazette 895–896, August 5, 2024; effective August 1, 2025.",
+        "summary": "Table 1 sets total arsenic 5, inorganic arsenic 1.5, lead 10 and mercury 0.5 mg/kg or mg/L. Cadmium is 3 for supplements containing seaweed or bivalve ingredients and 1 otherwise. Inorganic arsenic is checked when total arsenic exceeds 1.5.",
+        "establishes": "The binding supplement rule includes product scope, transition terms and a conditional cadmium tier. Registered products made before commencement can continue to expiry under stated conditions; this is not a limit for every food.",
+        "relevance": "This is an in-force supplement-limit event with transition terms and ingredient-dependent cadmium treatment. HMTc’s claimed stricter mapped cells need a separate comparison of the published program values against these exact species and mg/kg or mg/L bases.",
+        "links": [
+          {
+            "label": "Vietnam Circular 12/2024/TT-BYT and QCVN 20-1:2024/BYT",
+            "href": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-12-2024-tt-byt-42401/51106.htm"
+          },
+          {
+            "label": "Signed Gazette and attached QCVN",
+            "href": "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbRKYzXobIPU0yyY9K0PjAWB4dCIXS_hWcDey-YQeGUiixjL6Rv57HNivsLcIaj85cwsK77qmhPe76nffy0SFqGeQ~~&file_name=2024_895+%2b+896_12-2024-TT-BYT.pdf"
+          }
+        ],
+        "kind": "Legislation"
+      },
+      "10": {
+        "referenceTitle": "MERCOSUR SGT No. 3 Meeting Record 03/25",
+        "citation": "MERCOSUR Subgroup of Work No. 3. MERCOSUL/SGT N° 3/ATA Nº 03/25, 93rd ordinary meeting on Technical Regulations and Conformity Assessment, August 26–29, 2025. Portuguese official minutes, §2.3.",
+        "summary": "The minutes list Project Resolution 07/23 on metal and metalloid contaminants in food among proposals remaining in internal consultation. Argentina, Brazil, Paraguay and Uruguay were consulting at that meeting.",
+        "establishes": "This records a proposal’s status in August 2025, not adoption, a binding numerical schedule, or confirmed status throughout 2026. The intended repeal of earlier resolutions in the project title is not an operative repeal.",
+        "relevance": "It supports keeping this event separate from adopted Brazilian or regional law in HMTc’s watch. A current-status check is still needed before repeating that consultation remains open today or using a proposed value in certification comparisons.",
+        "links": [
+          {
+            "label": "MERCOSUR SGT No. 3 Meeting Record 03/25",
+            "href": "https://documentos.mercosur.int/simfiles/docreuniones/108594_SGT3_2025_ACTA03_PT.pdf"
+          }
+        ],
+        "kind": "Official meeting record"
       }
     }
   },

@@ -1,0 +1,184 @@
+{
+  "page": "articles/se-hg-molar-ratio-certification-debate",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Selenium Health Benefit Values: Updated Criteria for Mercury Risk Assessments",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "0cb5deb75455c1d7a16d4a42f449924976bd02bf5871dcf871ffccc181bf5415",
+      "citation": "Ralston NVC, Ralston CR, Raymond LJ. Selenium Health Benefit Values: Updated Criteria for Mercury Risk Assessments. Biological Trace Element Research. 2016;171(2):262–269. Published online 13 October 2015. doi:10.1007/s12011-015-0516-z.",
+      "summary": "The paper revises the selenium health-benefit equation to avoid extreme values at low mercury concentrations. It compares index calculations using published ocean-fish and pilot-whale measurements and argues that selenium balance better predicts methylmercury toxicity.",
+      "establishes": "This is a proposed risk index supported by mechanistic reasoning and reused datasets, not a human trial establishing a regulatory ceiling adjustment. Its strong protective conclusions are the authors’ interpretation.",
+      "relevance": "For HMTc, it identifies the competing framework that would need validation before changing a methylmercury ceiling. A favorable computed value does not independently demonstrate a product’s safety.",
+      "links": [
+        {
+          "label": "Read original paper",
+          "href": "https://link.springer.com/article/10.1007/s12011-015-0516-z"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s12011-015-0516-z",
+            "note": "Read equations, comparison methods, source-data provenance, results and conclusions. No new human developmental dose-response or laboratory cost analysis. Editorial: the paper distinguishes Hg sequestering Se from the simple inert-HgSe protection story; it does not establish the page’s doubled-testing-cost claim or isolate selenium as the cause of cohort differences."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Health benefits of bluefin tuna consumption: (Thunnus thynnus) as a case study",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "5ddcbb4ddad205f277d976be8de300f42955dbc7801313784bb201e8a85b9e93",
+      "citation": "Chamorro F, Cassani L, Garcia-Oliveira P, et al. Health benefits of bluefin tuna consumption: (Thunnus thynnus) as a case study. Frontiers in Nutrition. 2024;11:1340121. Published 2 April 2024. doi:10.3389/fnut.2024.1340121.",
+      "summary": "This narrative review combines tuna nutrition, contaminants and proposed protective nutrients. Its compiled table includes Atlantic bluefin selenium-to-mercury molar ratios above one alongside substantial variation in mercury and selenium health-benefit values.",
+      "establishes": "The table aggregates different studies and includes other tuna species. It is not a new representative bluefin survey, a controlled selenium-protection trial or validation of a higher allowable mercury concentration.",
+      "relevance": "For HMTc, these observations support retaining species, origin and individual variability when interpreting a ratio. They cannot certify every bluefin lot or justify substituting a ratio for methylmercury measurement.",
+      "links": [
+        {
+          "label": "Read original review",
+          "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1340121/full"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1340121/full",
+            "note": "Read article type, abstract, mercury/selenium risk-benefit discussion, Table 5 and conclusion. Reported bluefin HBV ranges include negative values even where aggregate ratios exceed one. Editorial: distinguish compiled study averages from a universal protective species trait; underlying table studies were not independently rereviewed."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "3": {
+      "referenceTitle": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "00f1911472911ffabaccd634fd4d147ec4bdc66bd31e45aed11675467d7fd0ba",
+      "citation": "Farina M, Rocha JBT, Aschner M. Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies. Life Sciences. 2011;89(15–16):555–563. Published online 13 June 2011; issue 10 October 2011. doi:10.1016/j.lfs.2011.05.019.",
+      "summary": "This mechanistic mini-review examines cell, tissue, mitochondrial and mainly rodent experiments. It connects methylmercury neurotoxicity with disrupted glutamate and calcium regulation, oxidative stress and effects on selenoproteins.",
+      "establishes": "It supports interacting biological mechanisms and possible protection by selenium compounds. It does not estimate human protection from a particular seafood molar ratio or compare certification thresholds.",
+      "relevance": "For HMTc, the review explains why one elemental ratio cannot capture every mechanism discussed. It does not establish which factor explains the Faroe–Seychelles difference.",
+      "links": [
+        {
+          "label": "Read original author manuscript",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/",
+            "note": "Read deposited primary manuscript abstract, glutamate/calcium/oxidative-stress and selenium sections, and concluding remarks. Publisher identifies it as a mini-review. Experimental mechanisms are not clinical validation of selenium adjustment; no original birth-cohort reanalysis or certification-cost evidence is supplied."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "4": {
+      "referenceTitle": "Absolute methylmercury reference values maintained by the major food-safety authorities",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "8f1cb46d7b70695be5a5bc572752f17b7e94b07542895e2f050dcc63645037f6",
+      "citation": "EFSA CONTAM Panel. Mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985, corrected 10 April 2018. JECFA. Methylmercury evaluation, 67th meeting (2006), report/database entry 2007. US EPA. IRIS Methylmercury Chemical Assessment Summary, oral RfD revised 27 July 2001. US FDA. CPG 540.600, issued 6 November 1984, updated 16 February 2007.",
+      "summary": "The reviewed documents provide four distinct values: EFSA’s methylmercury TWI of 1.3 µg/kg body weight/week; JECFA’s PTWI of 1.6 µg/kg/week; EPA’s oral RfD of 0.1 µg/kg/day; and FDA’s legal-action guidance for methylmercury above 1 ppm in edible seafood.",
+      "establishes": "The first three are health-based intake benchmarks, not food concentration limits. FDA’s action level is enforcement guidance. None of these formulations contains a selenium-ratio adjustment; this finding is limited to the identified documents, not an exhaustive worldwide policy audit.",
+      "relevance": "HMTc should compare like units and legal status before selecting a product ceiling. These sources support retaining the stated mercury measurement, but do not mandate HMTc’s strictest-government selection rule or a universal per-lot speciation protocol.",
+      "links": [
+        {
+          "label": "EFSA opinion, corrected version",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+        },
+        {
+          "label": "JECFA evaluation record",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083"
+        },
+        {
+          "label": "EPA IRIS assessment",
+          "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+        },
+        {
+          "label": "FDA action-level guidance",
+          "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985",
+            "note": "Read corrected cover/abstract, summary and section 7.3.4 (p80). EFSA sets TWI1.3 and explicitly discusses uncertain detoxification by selenium–mercury compounds; no numeric Se adjustment. Correction concerns a reference, not the TWI."
+          },
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3083",
+            "note": "Read full official chemical evaluation record: 2003 PTWI retained, 2007 entry for meeting67, developmental endpoint and subgroup qualifications. It notes nutrition and targeted advice. Full linked monograph was not reviewed; no selenium-adjusted value appears in this official evaluation summary."
+          },
+          {
+            "url": "https://iris.epa.gov/static/pdfs/0073_summary.pdf",
+            "note": "Read pp1–4: revision date, RfD, neurodevelopmental endpoint, uncertainty factor and dose-conversion rationale. 0.0001 mg/kg/day equals0.1 µg/kg/day. No selenium term appears in the stated derivation; this is an exposure benchmark, not a fish ppm limit."
+          },
+          {
+            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cpg-sec-540600-fish-shellfish-crustaceans-and-other-aquatic-animals-fresh-frozen-or-processed-methyl",
+            "note": "Read entire regulatory-action guidance and issuance/revision history. Threshold is methylmercury expressed as mercury above1 ppm in the specified edible portion. No selenium offset is stated. Editorial: the page incorrectly groups PTWIs/RfDs with absolute food concentrations."
+          }
+        ]
+      },
+      "kind": "Risk assessments and guidance"
+    },
+    "5": {
+      "referenceTitle": "Stable isotopes unveil ocean transport of legacy mercury into Arctic food webs",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "fc90865e0cd88bdabe2c8cf0afd105db659f1301cc72dec3289faef2697b1bb8",
+      "citation": "Søndergaard J, Elberling B, Sonne C, Larsen MM, Dietz R. Stable isotopes unveil ocean transport of legacy mercury into Arctic food webs. Nature Communications. 2025;16:5135. Published 12 June 2025. doi:10.1038/s41467-025-60356-6.",
+      "summary": "The study measured total mercury and stable isotopes in Greenland peat and aquatic wildlife, including samples collected during 1983–2024. Geographic and temporal signatures support an important role for ocean transport of legacy mercury and environmental transformation.",
+      "establishes": "This is source-and-pathway research using ICP-MS and isotope analysis. It does not demonstrate different human toxicity for methylmercury from different origins, or test selenium protection.",
+      "relevance": "For HMTc, it provides context for geographic exposure patterns and source attribution. It offers no validated alternative to a product’s mercury concentration or a basis for a source-specific higher ceiling.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://www.nature.com/articles/s41467-025-60356-6"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nature.com/articles/s41467-025-60356-6",
+            "note": "Read abstract, geographic/temporal results, synthesis, sampling and total-Hg/isotope methods. Muscle, liver, kidney, hair and peat are distinct matrices. Supplementary source data were not reanalysed. Editorial: isotope evidence of origin or transformation is not evidence of toxicological inequivalence at equal methylmercury dose."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — selenium-mercury molar ratio and the case for relaxing methylmercury ceilings (synthesis with full anchor-source records)",
+      "pageDigest": "ebc9535653e800b55daccc12515f88cd56ab82084a9553763d6e2269dc001bdd",
+      "sourceDigest": "f21dbe676337399c5991c48d5fd3238666ae31897cbcf38a252ecccd02cd9548",
+      "citation": "Pendergrass K. Selenium-mercury molar ratio and the case for relaxing methylmercury ceilings. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.se-hg-molar-ratio-certification-debate.",
+      "summary": "This synthesis presents arguments for a selenium-based mercury index and the unresolved step from that index to an adjusted ceiling. It also discusses cohort comparisons, analytical burden and possible category distinctions.",
+      "establishes": "The page identifies itself as a preprint without external reviews. It contributes interpretation rather than new experiments or an independently validated threshold model.",
+      "relevance": "It documents the reasoning HMTc adopts for retaining a mercury ceiling. Shared authorship and Institute of Contaminant Standards affiliation prevent treating it as independent corroboration of the program.",
+      "links": [
+        {
+          "label": "Read synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/se-hg-molar-ratio-certification-debate",
+            "note": "Read arguments, limitations, anchors, author/date and peer-review state. Editorial: body-weight intake benchmarks differ from food concentrations; doubled analytical cost and selenium as the established explanation of cohort divergence are not demonstrated by the reviewed anchors. Full underlying corpus and record hashes were not audited."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

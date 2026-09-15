@@ -2,6 +2,51 @@
   "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs \u2014 never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md \u00a73.5), including `absent: true` for markup that was removed.",
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
+    "/articles/se-hg-molar-ratio-certification-debate": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/cooking-does-not-reduce-mehg": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/market-access-rules-gulf-asia": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/spice-adulteration-lead-infants": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/tin-canned-food-acidic-matrix-migration": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
     "/articles/hexavalent-chromium-four-regimes": [
       {"sel":"[data-cite-panel-records]","prop":"count","want":1},
       {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
@@ -537,7 +582,14 @@
       { "sel": "[id^=\"ref-\"]", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains" },
       { "sel": ".wiki-content a[download]", "prop": "count", "want": 0 },
       { "sel": "aside.rail a[download]", "prop": "count", "want": 1, "note": "the citable analysis exposes one PDF in the rail." },
-      { "sel": "[data-cite-panel]", "prop": "count", "want": 1 }
+      { "sel": "[data-cite-panel]", "prop": "count", "want": 1 },
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/standards": [
       { "sel": "header.hmi-topnav-shell", "prop": "height", "want": "68px" },
@@ -793,6 +845,66 @@
     {
       "viewport": {"width": 390, "height": 844},
       "pages": {
+        "/articles/se-hg-molar-ratio-certification-debate": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/cooking-does-not-reduce-mehg": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/market-access-rules-gulf-asia": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/spice-adulteration-lead-infants": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/worldwide-heavy-metal-regulatory-watch-2026": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/tin-canned-food-acidic-matrix-migration": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
         "/articles/hexavalent-chromium-four-regimes": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
           {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},

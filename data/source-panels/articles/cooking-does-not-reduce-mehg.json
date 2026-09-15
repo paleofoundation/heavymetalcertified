@@ -1,0 +1,195 @@
+{
+  "page": "articles/cooking-does-not-reduce-mehg",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "8564918febfc1d11c51eeddc72d195b1c7ea808d0813c4886c843cb996def809",
+      "citation": "Farina M, Rocha JBT, Aschner M. Mechanisms of methylmercury-induced neurotoxicity: Evidence from experimental studies. Life Sciences. 2011;89(15–16):555–563. Published online 13 June 2011. doi:10.1016/j.lfs.2011.05.019.",
+      "summary": "This mini-review describes methylmercury transport and neurotoxicity, including cysteine complexes, interactions with thiol/selenol groups and high gastrointestinal absorption. It cites an approximately 90–95% absorption estimate and reviews cell and animal mechanisms.",
+      "establishes": "It is not a controlled cooking or canning experiment. A general absorption estimate does not measure the absorbed dose from every food preparation, and concentration alone is not a serving dose.",
+      "relevance": "For HMTc, it explains why methylmercury warrants attention in edible tissue. It cannot establish identical raw and cooked concentrations, universal thermal stability under all processes, or a certification sampling rule.",
+      "links": [
+        {
+          "label": "Read original author manuscript",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3183295/",
+            "note": "Reused same-day primary manuscript review from selenium article; freshly read toxicokinetics/absorption passage for this context. Editorial: 70 kcal/mol, unchanged concentration after every cooking method and no measurable removal are not established by this neurotoxicity review. Its cited absorption range is not a paired cooked-food measurement."
+          }
+        ]
+      },
+      "kind": "Review"
+    },
+    "2": {
+      "referenceTitle": "Methylmercury versus total mercury across fish species and preparation forms in the BfR MEAL study",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "3e3e3166de872f3dde4d24478b9b45c60001519fa7bf44a034fb7a1ccff6b491",
+      "citation": "German Federal Institute for Risk Assessment (BfR). Methylmercury in fish and seafood – health risk assessment of new data from the BfR MEAL study. Opinion 023/2024, 28 May 2024. doi:10.17590/20240626-094256-0.",
+      "summary": "BfR measured total mercury and methylmercury separately in ready-to-eat seafood pools, usually combining 15–20 samples. It assessed dietary exposure and compared preparation categories with monitoring data. Species differences generally exceeded preparation differences.",
+      "establishes": "This is a pooled total-diet assessment, not matched before-and-after processing. BfR reports measurable preparation effects on concentration but no general conclusion without individual-sample studies; it distinguishes concentration changes from the methylmercury share of total mercury.",
+      "relevance": "HMTc should preserve product form, edible mass and sampling basis. These data cannot establish that a raw concentration equals the amount consumed or absorbed after cooking.",
+      "links": [
+        {
+          "label": "Read BfR opinion",
+          "href": "https://www.bfr.bund.de/cm/349/methylmercury-in-fish-and-seafood-health-risk-assessment-of-new-data-from-the-bfr-meal-study.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.bfr.bund.de/cm/349/methylmercury-in-fish-and-seafood-health-risk-assessment-of-new-data-from-the-bfr-meal-study.pdf",
+            "note": "Read pp 1–3 and 10–14; visually checked Table 1 p 12. Editorial: no fresh herring fillet was analysed; “baked cod” is generic baked fish fillet. Ratios include values outside 76–113%. BfR attributes differences partly to preparation and different pooled fish, contradicting the page’s claim of exclusively lot variability."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "3": {
+      "referenceTitle": "Total mercury exposure through canned tuna in water sold in Quito, Ecuador",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "8989290a8ba266b7ba97f6ff2e8967dce697f14aa7437252f122d66ed0eaf153",
+      "citation": "Aguilar-Miranda A, Fernández L, Yánez-Jácome GS, et al. Total mercury exposure through canned tuna in water sold in Quito, Ecuador. Scientific Reports. 2024;14:27951. Published 14 November 2024. doi:10.1038/s 41598-024-79430-y.",
+      "summary": "The study purchased 60 cans across three brands during March 2022–March 2023. Drained tuna flesh was analysed for total mercury and reported on a wet-weight basis. Brand means were 0.14,0.41 and 0.25 mg/kg; the highest reported lot was 1.98 mg/kg.",
+      "establishes": "No raw-fish comparator or mercury speciation was measured. Exposure calculations conservatively treated total mercury as methylmercury. Brand differences cannot identify a causal effect of canning.",
+      "relevance": "For HMTc, the survey supports checking canned products and lot variability. It does not prove canning leaves a fixed methylmercury fraction or raw-to-canned concentration unchanged.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://www.nature.com/articles/s41598-024-79430-y"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nature.com/articles/s41598-024-79430-y",
+            "note": "Read collection, draining/drying, cold-vapour fluorescence methods, exposure assumptions, results and conclusion. Editorial: the >89% fraction comes from earlier tuna literature, not these cans. Risk model assumes 100%, and the paper did not test retention during canning. Regional literature ranges are not this sample’s range."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "FDA–EPA advice about eating fish: Best Choices, Good Choices, and Choices to Avoid",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "1404891e9bbe02e3ce90e76c36c531c38f77dab67b30bf581424f8d004c11104",
+      "citation": "US Food and Drug Administration and US Environmental Protection Agency. Advice about Eating Fish; accompanying Questions & Answers for those who might become or are pregnant or breastfeeding and children ages 1–11. Current official web guidance reviewed 15 September 2026.",
+      "summary": "The guidance combines lower-mercury species choices with serving frequency and age-appropriate portions. Adults in the target group are advised 2–3 weekly servings from Best Choices or one from Good Choices; children receive smaller portions.",
+      "establishes": "This is consumer advice, not a product maximum or certification scheme. The FAQ explicitly advises that cleaning or cooking does not reduce mercury, and differentiates canned light, albacore, yellowfin and bigeye tuna.",
+      "relevance": "For HMTc, it supports avoiding cooking-based reassurance and explaining species and portion size. It does not make a certificate a substitute for consumption advice or establish the article’s numerical substitution factors.",
+      "links": [
+        {
+          "label": "FDA–EPA advice",
+          "href": "https://www.fda.gov/food/consumers/advice-about-eating-fish"
+        },
+        {
+          "label": "Advice questions and answers",
+          "href": "https://www.fda.gov/food/consumers/questions-answers-fdaepa-advice-about-eating-fish-those-who-might-become-or-are-pregnant-or"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+            "note": "Read target population, serving chart, age-specific sizes and local-catch advice. Adult serving is 4 ounces; advice considers nutritional benefits as well as mercury."
+          },
+          {
+            "url": "https://www.fda.gov/food/consumers/questions-answers-fdaepa-advice-about-eating-fish-those-who-might-become-or-are-pregnant-or",
+            "note": "Read sectionsI–III, V andVI: species categories, pre-cooking portion weight and explicit no-removal advice. Editorial: skipjack/albacore/bluefin are different species; a universal 50–70% reduction or lead/cadmium trimming percentage is not established here. Consumer advice does not prove equal raw/cooked ppm or absorbed dose."
+          }
+        ]
+      },
+      "kind": "Guidance"
+    },
+    "5": {
+      "referenceTitle": "US EPA reference dose for methylmercury",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "1952f04db14e0404ca655b490e28ec2d7a49646bd855096566d03594f28075b4",
+      "citation": "US Environmental Protection Agency. Integrated Risk Information System: Methylmercury (CASRN 22967-92-6), Chemical Assessment Summary. Oral reference dose revised 27 July 2001.",
+      "summary": "EPA’s chronic oral reference dose is 0.0001 mg/kg body weight/day, equivalent to 0.1 µg/kg/day. It is based on developmental neuropsychological impairment, epidemiological benchmark modelling and an uncertainty factor of 10.",
+      "establishes": "The RfD is an intake benchmark with uncertainty, not a fish concentration ceiling or a sharp boundary between safe and harmful servings. It does not evaluate cooking efficacy.",
+      "relevance": "HMTc can use it to contextualize exposure once concentration, consumption and body weight are known. It cannot directly turn one raw-product test into an absorbed dose or define HMTc’s product limit.",
+      "links": [
+        {
+          "label": "Read EPA assessment",
+          "href": "https://iris.epa.gov/static/pdfs/0073_summary.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://iris.epa.gov/static/pdfs/0073_summary.pdf",
+            "note": "Same-day primary review reused from selenium group: pp 1–4, revision date, RfD table, endpoint and dose-conversion method. Fresh cooking-page relevance checked. Editorial: “safe upper bound” should not imply certainty or a food ppm limit; no thermal-processing conclusion comes from the RfD."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "6": {
+      "referenceTitle": "EFSA provisional tolerable weekly intake for methylmercury",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "feab8f5f87ecabff3a965cd0c3c960d18ac6a287dcb4168dd62852fbd6926fbe",
+      "citation": "EFSA CONTAM Panel. Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food. EFSA Journal. 2012;10(12):2985. Adopted 22 November 2012; published 20 December 2012; corrected version 10 April 2018. doi:10.2903/j.efsa.2012.2985.",
+      "summary": "EFSA established a tolerable weekly intake of 1.3 µg/kg body weight for methylmercury, expressed as mercury. The opinion considers developmental effects, dietary exposure and nutrients that may affect observational associations.",
+      "establishes": "This is a body-weight-based exposure benchmark, not a food maximum or measured cooking-loss factor. EFSA calls it a TWI; “provisional” belongs to JECFA’s differently valued PTWI.",
+      "relevance": "For HMTc, it supports attention to cumulative intake and sensitive populations. Choosing a product ceiling and sampling the product as sold remain separate program decisions.",
+      "links": [
+        {
+          "label": "Read corrected EFSA opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2012.2985",
+            "note": "Reused same-day primary reading of cover, abstract, summary and nutrient-protection section; freshly applied to cooking context. Correction concerns a reference. Editorial: the bibliography misnames the 1.3 value as a PTWI, and it does not establish identical raw and cooked exposure or a precise safety boundary."
+          }
+        ]
+      },
+      "kind": "Risk assessment"
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — cooking does not reduce methylmercury (synthesis with full anchor-source records)",
+      "pageDigest": "5a498c48e969ed2a411d8cad9bf45fdb9716b559c3fe79887478fef726858b52",
+      "sourceDigest": "adb831ca70c0772b5e21e223df4565b01a021616703b0bc0f4d3962c9c1d883a",
+      "citation": "Pendergrass K. Cooking does not reduce methylmercury. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.cooking-does-not-reduce-mehg.",
+      "summary": "The synthesis links mechanism, prepared-seafood occurrence and consumption advice to argue against relying on cooking for mercury reduction. It identifies gaps for fermentation, extended heating and selenium interactions.",
+      "establishes": "The page is a preprint with no external reviews. It supplies an interpretation of source records, not a new controlled retention experiment.",
+      "relevance": "It explains the narrative HMTc applies but is not independent corroboration: both identify Karen Pendergrass and the Institute of Contaminant Standards. Certification effectiveness is not demonstrated.",
+      "links": [
+        {
+          "label": "Read synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/cooking-does-not-reduce-mehg",
+            "note": "Read narrative, preparation table, limitations, anchors and review status. Editorial: BfR pools are not paired raw/cooked samples; Quito measures total mercury only. Unchanged methylmercury proportion does not establish unchanged concentration, serving amount or absorbed dose. Trimming percentages and specific heat-treatment invariance are not verified by these anchors."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

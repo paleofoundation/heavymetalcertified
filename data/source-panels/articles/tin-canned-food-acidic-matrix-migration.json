@@ -1,0 +1,214 @@
+{
+  "page": "articles/tin-canned-food-acidic-matrix-migration",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Tin in canned food: a review and understanding of occurrence and effect",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "5e0cbd6e41f9ac48c6140dccedeab5c5a46ba6b665ae9e257cdea7490918bfd9",
+      "kind": "Journal",
+      "citation": "Blunden S, Wallace T. Tin in canned food: a review and understanding of occurrence and effect. Food and Chemical Toxicology. 2003;41(12):1651–1662. doi:10.1016/S0278-6915(03)00217-5.",
+      "summary": "This narrative review discusses tin dissolution from packaging, food surveys and acute gastrointestinal effects. It attributes the fresh/lacquered/unlacquered food comparison to Biégo and colleagues, rather than reporting its own experiment.",
+      "establishes": "The authors are affiliated with ITRI, the tin-industry research organization. Their roughly 20% unlacquered-can estimate describes the period of publication, not the current market. The review acknowledges sparse human evidence and cannot exclude rare effects at 200 mg/kg.",
+      "relevance": "It supports considering packaging and storage when interpreting a finished-product result. It does not establish that the same food always gains a fixed multiple of tin or that every product below a ceiling is risk-free.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://higiene.unex.es/Bibliogr/EnvasPol/Blund03F.pdf",
+            "note": "Read university-hosted original PDF: occurrence, dissolution, clinical studies and conclusions. Historical industry affiliation is explicit. Underlying Biégo experiment was not independently reanalysed; the review also discusses chronic mineral interactions, so its acute emphasis is not proof of no chronic effects."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Tin and Iron Migration From Metallic Cans Into Foodstuffs During Storage",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "3a713241cbb2f1bc3e41c68c06d633ea5f5e7e33440fc8dd9741068bf05a5a72",
+      "kind": "Journal",
+      "citation": "Buculei A, Gutt G, Amariei S, Dabija A, Constantinescu G. Study regarding the tin and iron migration from metallic cans into foodstuff during storage. Journal of Agroalimentary Processes and Technologies. 2012;18(4):299–303.",
+      "summary": "The experiment compared coatings on cans holding peas, tomato paste, pork and liver pâté. Figures over 1,080 days show tomato tin rising to roughly 9–23 mg/kg, with much lower values in the other foods.",
+      "establishes": "These were coated cans, not an experiment confined to bare tinplate. Numerical values are approximate figure readings; replication is unstated, and the abstract’s two-year duration conflicts with the three-year figures. Methods also describe inconsistent instruments.",
+      "relevance": "It supports a conditional packaging-and-storage pathway. It cannot establish a universal migration rate, isolate acidity from every other product difference, or validate a shelf-life testing frequency for HMTc.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://journal-of-agroalimentary.ro/admin/articole/21821L08_Buculei_Vol.18_4_2012_299-303.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://journal-of-agroalimentary.ro/admin/articole/21821L08_Buculei_Vol.18_4_2012_299-303.pdf",
+            "note": "Read complete five-page paper and visually inspected figures 1–8. Tomato has three coating series, not just two. Pork reaches approximately 1.2 mg/kg; no statistical uncertainty or defensible universal below-LOQ starting claim is supplied."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "The toxicity of tin in canned fruit juices and solid foods",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "9b5c434a2c40a7c7c34ffb522b5103d6be74984437467ef180c458705c8266e8",
+      "kind": "Journal",
+      "citation": "Benoy CJ, Hooper PA, Schneider R. The toxicity of tin in canned fruit juices and solid foods. Food and Cosmetics Toxicology. 1971;9(5):645–656. doi:10.1016/0015-6264(71)90152-0.",
+      "summary": "The accessible abstract describes animal experiments and five human volunteers. None had symptoms after juice at 498–730 ppm tin; all had gastrointestinal disturbance at 1,370 ppm. Repeating the high-concentration exposure produced only mild symptoms in one volunteer.",
+      "establishes": "This small experiment does not establish a population-wide threshold. The 99% faecal recovery result concerns rats, not human absorption. Local irritation was the authors’ proposed mechanism; the complete paper was not accessible for this review.",
+      "relevance": "It helps distinguish acute concentration-dependent effects from a long-term intake benchmark. HMTc should not treat one small volunteer study as a universal safety margin or an infant threshold.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://www.sciencedirect.com/science/article/pii/0015626471901520/pdf?md5=3235213af30c111c8b1bae97da54f8a7&pid=1-s2.0-0015626471901520-main.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/0015626471901520/pdf?md5=3235213af30c111c8b1bae97da54f8a7&pid=1-s2.0-0015626471901520-main.pdf",
+            "note": "Read the publisher-indexed complete English abstract. Direct DOI and publisher full-text requests failed; no claim to full-text review. PubMed confirms identity and pages. The repeat response and animal-versus-human distinction materially limit the article’s framing."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Opinion on Acute Risks Posed by Tin in Canned Foods",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "db3a807f8f899e27565db37065ad38c6cf3ff101b30ce499649f9d4a4ff514fc",
+      "kind": "Government",
+      "citation": "European Commission Scientific Committee on Food. Opinion on Acute Risks Posed by Tin in Canned Foods. SCF/CS/CNTM/OTH/18 Final, 8 January 2002; adopted 12 December 2001.",
+      "summary": "The committee assessed inorganic tin and agreed that 150 mg/kg in canned beverages or 250 mg/kg in other canned foods may cause gastric irritation in some individuals. It found insufficient data to determine a precise no-effect concentration.",
+      "establishes": "The opinion explicitly states that evidence could not determine whether infants were more sensitive. It does not derive the article’s 200/100/50 mg/kg legal maxima or a five-to-seven-fold safety factor.",
+      "relevance": "It provides toxicological context for HMTc, with uncertainty intact. Binding product limits must be sourced to the legal instrument; precautionary infant treatment should not be presented as a measured infant no-effect level.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://food.ec.europa.eu/document/download/8aa7f7d4-68da-46c8-ba87-a22bfd6433a3_en?filename=sci-com_scf_out110_en.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://food.ec.europa.eu/document/download/8aa7f7d4-68da-46c8-ba87-a22bfd6433a3_en?filename=sci-com_scf_out110_en.pdf",
+            "note": "Read the complete two-page official opinion. Its final paragraph directly contradicts the claimed infant evidence and numerical regulatory derivation. It cites JECFA 2000/WHO 2001 as its assessment basis."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Maximum Levels for Inorganic Tin in Canned Food",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "f2ac8dcf3313384feeecaf81ad192c9b697fb1bd4663811feccd6cde3f7b6d42",
+      "kind": "Legislation",
+      "citation": "European Commission. Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food. Annex I, section 3.5, original act.",
+      "summary": "Annex I specifies inorganic tin at 200 mg/kg for general canned food and 100 mg/kg for canned beverages, on a wet-weight basis. Specified canned infant and young-child products have a 50 mg/kg maximum as marketed.",
+      "establishes": "The infant entries exclude canned dried and powdered products. These are category-specific legal concentrations, not daily intake allowances or evidence that a particular safety factor was experimentally established.",
+      "relevance": "HMTc needs the exact product category, preparation and instrument when comparing results. A numerical difference from Codex is real, but a market-compliance decision also requires applicable sampling and measurement rules.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Read original official PDF section 3.5.1–3.5.5; refreshed earlier review of Articles 2–3. This record describes the original act, not an independent audit of every later amendment."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Recommended Maximum Level for Tin in Canned Solid Foods",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "f3f8c6d3271dd4be645dc345804042ac24da5307bbf2546c95146e9a0ce566c7",
+      "kind": "Standard",
+      "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025. Tin, page 75.",
+      "summary": "The schedule sets tin at 250 mg/kg for canned foods other than beverages and 150 mg/kg for canned beverages. Specified cured-meat products in non-tinplate containers instead have 50 mg/kg entries.",
+      "establishes": "The contaminant definition defaults to total tin unless another specification is given. The schedule’s category and container exceptions matter. Codex recommendations do not themselves establish the law applying in every importing country.",
+      "relevance": "It verifies the article’s higher Codex comparator while showing why HMTc must identify the jurisdiction and food/container category. Matching only the metal name is insufficient for a compliance comparison.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/jp/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf",
+            "note": "Read 2025 edition, definition and complete page-75 tin table, including non-tinplate meat exceptions. Official standards list identifies 2025 as the current amendment year. No generic 50 mg/kg infant entry appears in this tin table."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "The content of lead, cadmium, arsenic, mercury and tin in fruit and their products based on monitoring studies – exposure assessment",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "77c797475f86620afe610f01194065e04dde8db1c5cc4518ee2ee8c9d24b6271",
+      "kind": "Journal",
+      "citation": "Mania M, Rebeniak M, Chabros E, Orshulyak O, Postupolski J. The content of lead, cadmium, arsenic, mercury and tin in fruit and their products based on monitoring studies – exposure assessment. Roczniki Państwowego Zakładu Higieny. 2021;72(4):353–360. doi:10.32394/rpzh.2021.0188.",
+      "summary": "Poland’s 2015 monitoring program measured tin in 69 metal-packaged fruit samples. The reported mean was 69.7–70.1 mg/kg, the 90th percentile 140 mg/kg and the maximum 206 mg/kg in imported canned pears.",
+      "establishes": "This is historical market surveillance, not a storage experiment. The authors’ low-risk conclusion does not make every sample compliant with every legal comparator. Their detailed dietary calculations cover lead, cadmium, arsenic and mercury rather than a reported tin-intake model.",
+      "relevance": "It supports checking finished packaged products and the upper end of observed concentrations. It does not prove that all tin came from packaging or establish current US prevalence; measurement uncertainty matters before declaring an individual legal exceedance.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://roczniki.pzh.gov.pl/pdf-182685-103181?filename=The-content-of-lead--cadm.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://roczniki.pzh.gov.pl/pdf-182685-103181?filename=The-content-of-lead--cadm.pdf",
+            "note": "Read original methods, results and exposure/conclusion sections. Tin was measured in 69 of 72 canned-fruit samples; 7% were below LOD/LOQ. The broad conclusion should not be converted into an unreported tin dose calculation."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — tin as a can-format-and-acidity contaminant (synthesis with full anchor-source records)",
+      "pageDigest": "f5ffccb59dd78df2011b84353fd6547a24789afa6aa01ca7d9c1fb2c4987daca",
+      "sourceDigest": "3ea2e6c48af7ef36fa8df0fc8397bf0decf0804161f97753c43f50085992426f",
+      "kind": "Preprint",
+      "citation": "Pendergrass K. Inorganic tin in food is a can-format-and-acidity contaminant. Heavy Metal Index synthesis, updated 27 July 2026. doi:10.83376/hmi.tin-canned-food-acidic-matrix-migration.",
+      "summary": "The synthesis connects historical toxicity, canned-fruit surveillance and packaging studies to a proposal for testing finished canned products. It acknowledges small clinical samples, an industry-associated review and weaknesses in the storage experiment.",
+      "establishes": "It is an unreviewed preprint, not another independent experiment. Its account of the SCF opinion overstates both infant evidence and derivation of the legal maxima; the primary opinion should control those claims.",
+      "relevance": "It provides the argument underlying this HMTc article. Shared authorship and institutional affiliation do not supply independent corroboration, and the testing proposal has not been validated as a certification intervention.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/tin-canned-food-acidic-matrix-migration",
+            "note": "Read full narrative, sources, author/date and no-external-review statement. Cross-checked SCF claims against the complete official opinion. The synthesis’s fixed symptomatic-threshold and safety-factor interpretations are not established by those sources."
+          }
+        ]
+      }
+    }
+  }
+}
