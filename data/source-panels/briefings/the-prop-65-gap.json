@@ -1,0 +1,261 @@
+{
+  "page": "briefings/the-prop-65-gap",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Proposition 65 List of Chemicals Known to the State to Cause Cancer or Reproductive Toxicity",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "2b0dc5a47ed6732ade496f28d84dabd3248fbc552c518e0bc76c88d755be78d3",
+      "citation": "California OEHHA. The Proposition 65 List. Current online chemical list, accessed September 15, 2026.",
+      "summary": "California lists particular chemical forms and endpoints, including lead, cadmium, inorganic arsenic, hexavalent chromium and nickel compounds. Soluble nickel compounds were listed for developmental and male reproductive toxicity on October 26, 2018.",
+      "establishes": "Listing identifies a statutory hazard; it supplies neither a food concentration limit nor proof that every exposure causes harm. Different forms of a metal have different listed endpoints.",
+      "relevance": "The list supports the briefing’s hazard-identification premise. HMTc’s decision to impose product limits remains a separate program choice.",
+      "links": [
+        {
+          "label": "OEHHA chemical list",
+          "href": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/proposition-65-list",
+            "note": "Read targeted entries for the five metals and their chemical forms, endpoints and listing dates. Inorganic arsenic compounds and inorganic oxides are distinct entries; soluble nickel compounds, rather than all nickel forms, received the October 2018 reproductive listing. The list cannot establish the absence of an oral safe harbor."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Safe Drinking Water and Toxic Enforcement Act of 1986 (Proposition 65)",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "ee4311e8c1c6d4c0eef754a00e86fba09835e9830fda738dea3879b330f63289",
+      "citation": "California Health and Safety Code §§25249.5–25249.14. Safe Drinking Water and Toxic Enforcement Act of 1986; operative January 1, 1987, as amended.",
+      "summary": "The Act requires qualifying businesses to warn before covered exposures and separately restricts releases into drinking-water sources. It provides exposure-based exemptions, enforcement and a chemical-listing process.",
+      "establishes": "Its warning provisions do not create general food-composition ceilings. Section 25249.13 preserves other legal obligations: a warning does not authorize sale of any concentration under all food laws.",
+      "relevance": "This supports a limited distinction between warning compliance and HMTc product specifications. The briefing’s claim that the Act does only one thing omits its discharge prohibition.",
+      "links": [
+        {
+          "label": "Current California statute",
+          "href": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=6.6.&division=20.&lawCode=HSC&part=&title="
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=6.6.&division=20.&lawCode=HSC&part=&title=",
+            "note": "Read §§25249.5–.6, .8–.11 and .13, including discharge prohibition, warning exemption at one-thousandth of the no-observable-effect exposure, under-ten-employee exclusion and preservation of other law. These provisions contradict the unrestricted-compliance wording. No comprehensive federal-law absence claim was established."
+          }
+        ]
+      },
+      "kind": "Law"
+    },
+    "3": {
+      "referenceTitle": "Proposition 65 Safe Harbor Levels — No Significant Risk Levels and Maximum Allowable Dose Levels",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "820116d1f86045935064ed79465cca0b2c8216712da01dafa4f28b73fc339452",
+      "citation": "California OEHHA. Proposition 65 No Significant Risk Levels (NSRLs) and Maximum Allowable Dose Levels (MADLs). Current online safe-harbor table, accessed September 15, 2026.",
+      "summary": "The table lists daily-exposure safe harbors. Lead has a 15 µg/day oral NSRL and 0.5 µg/day MADL; cadmium and hexavalent chromium have oral MADLs of 4.1 and 8.2 µg/day.",
+      "establishes": "Inorganic arsenic has a 10 µg/day NSRL except by inhalation, directly contradicting the briefing’s assertion that it has no oral safe harbor. These exposure values are not food concentrations or universal safety assurances.",
+      "relevance": "HMTc must distinguish a product’s concentration from the resulting daily exposure and the applicable chemical form and endpoint when comparing its limits with Proposition 65.",
+      "links": [
+        {
+          "label": "OEHHA safe-harbor table",
+          "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls",
+            "note": "Read introductory exemption/alternative-assessment explanation and arsenic, cadmium, chromium, lead and nickel rows. Arsenic is 0.06 µg/day inhalation and 10 except inhalation. Nickel rows list refinery dust0.8 and subsulfide0.4; no general oral nickel MADL appears. The table alone does not document the derivation endpoint of cadmium’s4.1 value. Editorial correction required for arsenic."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Nickel and Nickel Compounds — Proposition 65 Warnings Website fact sheet",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "2b876d13197faa464283bac73fe95e8206f902da275a8ae05b2ea5f5d061e068",
+      "citation": "California OEHHA. Nickel and Nickel Compounds. Proposition 65 Warnings Website fact sheet, posted February 2025.",
+      "summary": "The fact sheet explains nickel cancer listings and the developmental effects of soluble nickel compounds and nickel carbonyl. It also identifies male reproductive effects for soluble nickel compounds.",
+      "establishes": "This is a public hazard-and-exposure explanation, not an adopted oral dose limit. The separate safe-harbor table contains only the two specified nickel cancer entries and no general oral nickel MADL.",
+      "relevance": "It supports the briefing’s concern about dietary nickel while leaving any numerical HMTc product specification to a separately documented standard.",
+      "links": [
+        {
+          "label": "Nickel fact sheet",
+          "href": "https://www.p65warnings.ca.gov/fact-sheets/nickel-and-nickel-compounds"
+        },
+        {
+          "label": "Safe-harbor table",
+          "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.p65warnings.ca.gov/fact-sheets/nickel-and-nickel-compounds",
+            "note": "Read warning rationale, chemical-form distinctions and exposure examples, and February2025 footer. The fact sheet does not itself inventory safe harbors."
+          },
+          {
+            "url": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls",
+            "note": "Reused this page’s direct table review to check nickel entries; absence of an agency-adopted general oral nickel number does not remove statutory warning obligations or exclude a scientifically justified alternative assessment."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Evidence on the Developmental and Reproductive Toxicity of Nickel and Nickel Compounds",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "687e10654aafa38f0e4d781d26aed833d7f821ab1aa1f2bdd2234bd961902685",
+      "citation": "California OEHHA. Evidence on the Developmental and Reproductive Toxicity of Nickel and Nickel Compounds. Hazard identification document, July 2018.",
+      "summary": "The executive summary reviews human associations and animal evidence. Reduced offspring survival and body weight were common sensitive effects in prenatal animal studies, most of which used oral exposure.",
+      "establishes": "The review supports hazard identification; it does not adopt a dietary safe harbor, a food maximum or a finding that ordinary dietary nickel causes these outcomes in children.",
+      "relevance": "It explains the scientific concern underlying the briefing’s nickel discussion. Converting that concern into an HMTc concentration limit requires additional exposure assumptions and program rules.",
+      "links": [
+        {
+          "label": "OEHHA hazard review",
+          "href": "https://oehha.ca.gov/media/downloads/crnr/nihid072718.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/media/downloads/crnr/nihid072718.pdf",
+            "note": "Read preface and executive summary, printedpp1–2, plus developmental animal-study summary context printedpp120–123. Review is targeted, not a claim to have read all347physicalpages. The report preceded the later listing decision; it was not itself the October2018 listing act."
+          }
+        ]
+      },
+      "kind": "Scientific review"
+    },
+    "6": {
+      "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "6f8a9ffb2c6928415fe1700a21e7fb7e06c8bd69a719be09a2e5e7fbaa49b97f",
+      "citation": "European Commission. Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food. OJ L 119, May 5, 2023, pp. 103–157; consolidated text dated August 19, 2026 consulted.",
+      "summary": "Article2 bars listed foods exceeding applicable Annex I limits from the market and from ingredient use. The Annex sets category-specific limits for lead, cadmium, arsenic and inorganic tin; the amended framework also includes nickel.",
+      "establishes": "These are EU concentration limits with defined food categories and measurement bases. They are not automatically US law. The consolidated text is a documentation aid; authentic amending acts remain controlling.",
+      "relevance": "This supports using EU limits as a distinct benchmark. It does not establish that HMTc adopts every strictest limit or applies the correct category in every lot decision.",
+      "links": [
+        {
+          "label": "Original regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        },
+        {
+          "label": "Consolidated text consulted",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+            "note": "Read official act identity, publication and in-force/changed status. The bibliography’s original-act link was distinguished from its consolidated-text description; substantive provisions were reviewed in the separate current consolidation."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Read current displayed consolidation metadata and disclaimer; Articles2–3 and Annex I relevant lead, cadmium, arsenic and inorganic-tin rows. Verified categories and as-marketed/wet-weight/reconstitution distinctions. No complete cross-jurisdiction minimum comparison undertaken."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "7": {
+      "referenceTitle": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "28ebabf89884cfdc135bd062c3cbe1b5e800597b7ee98b2a18a1ab02324a57ed",
+      "citation": "European Commission. Regulation (EU) 2024/1987 of July 30, 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L2024/1987, July 31, 2024.",
+      "summary": "The amendment adds category-specific nickel maxima, including nuts, vegetables, cereals, chocolate, formula and baby food. It generally applies from July 1, 2025; specified cereal entries apply from July 1, 2026.",
+      "establishes": "The limits are binding EU rules, with product-specific measurement bases and protection for food lawfully marketed before the applicable dates until its durability/use-by date. They are not a single daily-intake limit.",
+      "relevance": "This supplies a concrete regulatory benchmark for HMTc’s nickel discussion, while requiring the correct food category and transition rule.",
+      "links": [
+        {
+          "label": "Official Journal amendment PDF",
+          "href": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf",
+            "note": "Read all7pages, especially Articles1–2 and Annex3.6.11–3.6.16. Entry3.6.11.1–.5 explicitly states July1,2026; formula and baby-food values apply as placed on market. Downloaded official PublicationsOffice PDF after ELI retrieval problems. Both application dates have passed as of review, but lawful earlier stock may remain."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "8": {
+      "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "4b74647c4f267be33ef5f961929f86d9ee2a3f7131db05faf7e283e79eefab9b",
+      "citation": "EFSA CONTAM Panel. Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
+      "summary": "EFSA derived a chronic tolerable daily intake of 13 µg/kg body weight from rat post-implantation loss, using a 100-fold uncertainty factor. Higher-percentile dietary exposure often exceeded it in young groups.",
+      "establishes": "Mean exposure was generally below or near the TDI; the study does not show all ordinary European diets exceed it. A TDI covers total intake per body weight, not the permitted concentration of one food.",
+      "relevance": "The assessment informs HMTc’s rationale for considering nickel, but cannot itself supply a product limit without assumptions about consumption and other sources.",
+      "links": [
+        {
+          "label": "EFSA nickel opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268",
+            "note": "Read abstract, summary, §3.4.1 and conclusion excerpts, not the entire opinion. Mean toddler exposure at/aroundTDI came from one small survey; high-percentile concerns were broader. The briefing overgeneralizes ordinary-diet exceedance and conflates intake guidance with food composition. Acute nickel-sensitive skin effects use a separate margin-of-exposure approach."
+          }
+        ]
+      },
+      "kind": "Scientific opinion"
+    },
+    "9": {
+      "referenceTitle": "Cadmium in food — Scientific Opinion of the Panel on Contaminants in the Food Chain",
+      "pageDigest": "ac4e2ab7b2f7cc1033d94d001a62a0e46b131e256035a4f3db54a94e50abb581",
+      "sourceDigest": "c490611f3204a9afa44901ae2b5914c355a72f7f953e284f1f332a3e185b5be6",
+      "citation": "EFSA CONTAM Panel. Cadmium in food. EFSA Journal. 2009;7(3):980,1–139. Adopted January 30, 2009; published March 20, 2009. doi:10.2903/j.efsa.2009.980.",
+      "summary": "EFSA established a tolerable weekly intake of 2.5 µg/kg body weight, using kidney-effect biomarkers and exposure modelling. Estimated adult European exposure was near this value, with some groups higher.",
+      "establishes": "The TWI is total weekly intake guidance, not a food-concentration ceiling. EFSA described individual kidney risk at estimated exposures as low while recommending population exposure reduction.",
+      "relevance": "This supports concern about cumulative cadmium intake. HMTc still needs category-specific limits and consumption assumptions; a weekly body-weight allowance cannot directly decide a product’s composition.",
+      "links": [
+        {
+          "label": "Original EFSA opinion PDF",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2009.980"
+        },
+        {
+          "label": "Publisher record",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.980"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted official text and fresh page-claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2009.980",
+            "note": "Read original opinion summary printedpp1–3 through publisher PDF, including exposure estimates, TWI derivation and individual/population-risk distinction. Did not review all139pages. An exact PDF copy was also downloaded from Czech food-safety authority; publisher PDF is the published link."
+          },
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.980",
+            "note": "Read bibliographic metadata confirming volume7issue3, adoptionJanuary30 and publicationMarch20,2009; page bibliography incorrectly gives7(10)."
+          }
+        ]
+      },
+      "kind": "Scientific opinion"
+    }
+  }
+}

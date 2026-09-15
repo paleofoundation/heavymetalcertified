@@ -137,6 +137,12 @@ layouts need a separate adapter before they count toward drawer coverage. The
 root `index` page does not render a drawer and is reserved; nested index pages can
 have their own records.
 
+The expansion normalized four older briefing bibliographies (meat-label approval,
+peptides/SARMs, pet food, and no-limit/no-standard) to the canonical rows. This
+added 30 queued references, bringing the numbered inventory to 401 across 49
+pages and resolving all 57 unsupported numbered uses. Their existing citation
+details and page prose were preserved; format support alone is not source review.
+
 Source identity is conservative. A reusable group requires the same normalized
 title and the complete same set of DOI/URL identities. DOI URLs normalize to their
 case-insensitive DOI; other URLs retain their paths, query strings and fragments.

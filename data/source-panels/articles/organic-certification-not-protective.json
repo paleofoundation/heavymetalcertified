@@ -1,0 +1,268 @@
+{
+  "page": "articles/organic-certification-not-protective",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Organic production standards without heavy-metal occurrence monitoring",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "ed03903d9a34f5feb9477814940866b3b80cdb4db8d9f0ec72c8d317d83d0c94",
+      "citation": "U.S. Department of Agriculture. National Organic Program, 7 CFR Part 205, current text reviewed September 15, 2026; European Parliament and Council. Regulation (EU) 2018/848 of May 30, 2018 on organic production and labelling of organic products. Official Journal L 150, June 14, 2018, pp. 1–92 (original act).",
+      "summary": "These U.S. and EU rules govern organic production, permitted substances, certification and controls. Neither is a general finished-food lead, cadmium, arsenic and mercury concentration specification.",
+      "establishes": "Organic certification is not proof that a particular product meets a separate metal specification. Both frameworks nevertheless require precautions and compliance controls; organic status does not exempt food from other food-safety law.",
+      "relevance": "This distinction supports HMTc requiring analytical evidence in addition to an organic label. It does not establish that organic certification ignores contamination or authorizes food above applicable legal limits.",
+      "links": [
+        {
+          "label": "USDA National Organic Program",
+          "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+        },
+        {
+          "label": "EU organic regulation · original 2018 act",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018R0848"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205",
+            "note": "Reused same-day primary review from brief-3: §§205.2, .105, .203(c), .670–.671. Section .203 expressly addresses heavy metals; .670 includes suspected-contact and periodic residue tests, at least 5% of operations annually, and reporting environmental-contaminant exceedances. Editorial: “no monitoring requirement” and “silent” are overbroad."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018R0848",
+            "note": "Read original act Articles 2(4), 24, 28–29 and 38. Separate food-safety law remains applicable; unauthorized-substance precautions, investigations and risk-based controls exist. Reviewed original text, not every later amendment; no claim of current exhaustive consolidation. Editorial: organic compliance alone cannot establish legality of an above-limit shipment."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Lead and cadmium contamination in a large sample of United States infant formulas and baby foods",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "60dc0e3e51e3d0eaf2efc166637cf693744ba2c6c88de2eaddb8e587da9c6926",
+      "citation": "Gardener H, Bowen J, Callan SP. Lead and cadmium contamination in a large sample of United States infant formulas and baby foods. Science of the Total Environment. 2019;651:822–827. Published online September 4, 2018. doi:10.1016/j.scitotenv.2018.09.026.",
+      "summary": "This convenience survey tested 564 U.S. retail and online infant-formula and baby-food products by ICP-MS. Label-based organic groups included 304 organic and 260 nonorganic products.",
+      "establishes": "Organic status was not significantly associated with cadmium (p=0.65) or lead (p=0.28). Grain ingredients, especially rice, were associated with higher concentrations. Each product was purchased and tested once; sampling was not nationally representative.",
+      "relevance": "The results support checking measured contamination rather than assuming an organic label predicts these metals. Statistical nulls in this sample do not prove equivalence or quantify the effect of choosing organic rice cereal.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.1016/j.scitotenv.2018.09.026"
+        },
+        {
+          "label": "Published paper · author/funder-hosted PDF",
+          "href": "https://cleanlabelproject.org/wp-content/uploads/STE-Complete-Study.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.1016/j.scitotenv.2018.09.026",
+            "note": "Publisher abstract and metadata verified; full paper reviewed at the linked Clean Label Project copy. Published in 2019 following 2018 online publication."
+          },
+          {
+            "url": "https://cleanlabelproject.org/wp-content/uploads/STE-Complete-Study.pdf",
+            "note": "Read pp. 822–826, methods, organic comparisons, limitations and disclosure. Non-detects were assigned zero; Wilcoxon comparisons were unadjusted. Clean Label Project funded the study. Editorial: no literature-wide “two largest” ranking or organic-by-rice interaction test is demonstrated; null results do not establish no predictive value in all populations."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Assessment of Essential Elements and Potentially Toxic Elements (PTEs) in Organic and Conventional Flaxseeds: Implications for Dietary Exposure and Food Safety",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "b4f45852ceb4ec936352309dd2646aea460f015c4c50e03c418a4f34f3af5008",
+      "citation": "Brum R de L, Siedzik K, Alejandro-Vega S, et al. Assessment of Essential Elements and Potentially Toxic Elements (PTEs) in Organic and Conventional Flaxseeds: Implications for Dietary Exposure and Food Safety. Applied Sciences. 2025;15(13):7004. Published June 21, 2025. doi:10.3390/app15137004.",
+      "summary": "The researchers measured 20 elements by ICP-OES in 52 commercially obtained European-market flaxseed samples, classified as 15 organic and 37 conventional.",
+      "establishes": "Lead and cadmium differences were not statistically significant. Organic samples had lower aluminium and nickel (p=0.0312 and 0.0142), while sodium was higher. These observational group comparisons did not isolate farming practice from origin or other supply-chain differences.",
+      "relevance": "The matrix-specific findings support HMTc measuring individual elements. They do not establish universal equivalence between farming systems or validate any HMTc limit or exposure-reduction claim.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.3390/app15137004"
+        },
+        {
+          "label": "Publisher full text PDF",
+          "href": "https://mdpi-res.com/d_attachment/applsci/applsci-15-07004/article_deploy/applsci-15-07004.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.3390/app15137004",
+            "note": "Publisher metadata/abstract and DOI printed in the full paper verified. Main HTML was blocked; the official MDPI PDF was successfully obtained and read."
+          },
+          {
+            "url": "https://mdpi-res.com/d_attachment/applsci/applsci-15-07004/article_deploy/applsci-15-07004.pdf",
+            "note": "Read pp. 1–5: sample selection, preparation, assay and statistics; visually checked Table 2. Cadmium means 0.116/0.127 mg/kg and lead 0.368/0.286 mg/kg (organic/conventional) lack significance markers. Editorial: absence of significance is not equivalence; “two largest” is unverified. Risk-model reference-dose choices were not independently validated and are not used to establish safety."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "2011d4991bac2d41b955b6f36258d2ede35b778ec273475608daa972d0a0f72f",
+      "citation": "Hands JM, Anderson ML, Cooperman T, Balsky JE, Frame LA. A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA. Frontiers in Nutrition. 2024;11:1366231. Published July 31, 2024. doi:10.3389/fnut.2024.1366231.",
+      "summary": "This observational ConsumerLab-derived survey measured 72 product observations across 2014, 2016, 2019 and 2022. The full-sample concentration medians were 50 µg/kg lead and 239 µg/kg cadmium.",
+      "establishes": "The organic cadmium comparison in Table 4 used 37 observations with daily-intake data: 15 organic and 22 nonorganic. Organic products were higher by a one-tailed Welch test (p≈0.02). Geography and blending were not measured explanations.",
+      "relevance": "This supports separate metal measurements for chocolate carrying organic claims. It does not show that certification caused the difference or that organic single-origin versus conventional West African blending explains it.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.3389/fnut.2024.1366231"
+        },
+        {
+          "label": "Publisher full text",
+          "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1366231/full"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.3389/fnut.2024.1366231",
+            "note": "DOI and publication metadata verified against the full publisher article."
+          },
+          {
+            "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1366231/full",
+            "note": "Read methods, Tables 1–5, discussion and limitations. Table 4 endpoint is cadmium µg/day, not the concentration median of all 72 observations. Higher-contamination products could be excluded from later cohorts. Editorial: source contains no empirical organic-origin/blending comparison, and the full-sample median does not locate the organic subgroup distribution."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Assessment of cadmium and lead content in tomatoes and tomato products",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "d734fa433fbe04aef6ccc90e97fc2626bba76fb9e1ed80c19c35595a15cfcfd2",
+      "citation": "Grochowska-Niedworok E, Nieć J, Baranowska R. Assessment of cadmium and lead content in tomatoes and tomato products. Roczniki Państwowego Zakładu Higieny. 2020;71(3):313–319. doi:10.32394/rpzh.2020.0126.",
+      "summary": "This Polish retail study used graphite-furnace atomic absorption spectrometry to measure lead and cadmium in different tomato varieties and processed products, reporting fresh- and dry-mass results.",
+      "establishes": "Several organic dry-mass samples had higher cadmium than some conventional varieties, but the study was not a matched or statistically adjusted farming-system comparison. An organic fresh Jawor tomato had both metals below quantification. The authors reported one canned concentrate above their chosen cadmium benchmark.",
+      "relevance": "The findings illustrate product variability relevant to HMTc testing. They cannot establish a general organic penalty or identify the concentrate exceedance as an organic product.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.32394/rpzh.2020.0126"
+        },
+        {
+          "label": "Publisher full text PDF",
+          "href": "https://roczniki.pzh.gov.pl/pdf-182624-103120?filename=Assessment-of-cadmium-and.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.32394/rpzh.2020.0126",
+            "note": "Publisher metadata and DOI in the paper verified; journal is Roczniki Państwowego Zakładu Higieny."
+          },
+          {
+            "url": "https://roczniki.pzh.gov.pl/pdf-182624-103120?filename=Assessment-of-cadmium-and.pdf",
+            "note": "Read pp. 313–317, especially Methods and Tables 1–3. Repeated fresh/dry entries are not independent brands. Table 2 concentrate is 0.064 mg/kg; organic status is not given. Authors converted dried results to fresh mass and found no exceedance there. Editorial: above-limit conclusion uses the authors’ tomato benchmark; processing-factor/legal classification was not independently established."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Chemical Composition and Nutritional Quality of Commercial Tahini",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "76d81f45d81979de8a22db764881720e0debc5892b3b309a534373d4f8e9f4b8",
+      "citation": "Potortì AG, Albergamo A, Nava V, Lo Turco V, Litrenta F, Spanò IM, Di Bella G. Chemical Composition and Nutritional Quality of Commercial Tahini. Applied Sciences. 2026;16(3):1400. Published January 29, 2026. doi:10.3390/app16031400.",
+      "summary": "The study examined seven Italian-market tahini brands purchased online in 2025, using three analytical replicates per product. Table 1 identifies two organic products: T-1 from Turkey and T-5 from Lebanon.",
+      "establishes": "T-1 contained cadmium 0.35, lead 0.50 and total arsenic 0.20 mg/kg; T-5 had cadmium 0.02, lead 0.01 and arsenic below quantification. Seven products cannot isolate an organic effect. The authors compared tahini to limits for other food categories.",
+      "relevance": "The contrast between these two organic products reinforces HMTc’s need for product-specific measurements. It does not establish that organic tahini is generally higher or independently prove a regulatory violation.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.3390/app16031400"
+        },
+        {
+          "label": "Publisher full text PDF",
+          "href": "https://mdpi-res.com/d_attachment/applsci/applsci-16-01400/article_deploy/applsci-16-01400.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.3390/app16031400",
+            "note": "DOI and publication metadata verified in publisher abstract and full paper. HTML access failed; official MDPI PDF was read."
+          },
+          {
+            "url": "https://mdpi-res.com/d_attachment/applsci/applsci-16-01400/article_deploy/applsci-16-01400.pdf",
+            "note": "Read pp. 1, 3, 6–7, 14–18; visually checked Table 6. Editorial: “single organic” is contradicted by Table 1’s T-5. Authors acknowledge no tahini-specific limit, then apply oilseed cadmium and fats/oils lead categories; those legal classifications are not established here. The 1 g/day hypothetical intake is not a typical-serving safety finding."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis.",
+      "citation": "Dearing, Chey; Ye, Zhijing; and Robertshaw, Glen. Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis. F1000Research 14:1461 (26 December 2025), version 1, awaiting peer review in the examined version. doi:10.12688/f1000research.175538.1.",
+      "summary": "This cross-sectional study tested 153 composite samples made from 736 vegetables bought at 14 Hawke’s Bay market gardens in February 2024. Its main analysis associated organic production with lower cadmium and nickel, and the authors reported four composite samples above their selected Codex limits.",
+      "establishes": "The observations are local and do not establish a fertilizer mechanism or certification guarantee. Lead and arsenic were excluded from comparative statistical analysis because most results were below detection limits. In a 37-sample sensitivity analysis restricted by vegetable type, only nickel retained a significant organic association.",
+      "relevance": "This local survey shows that measured metals can vary with production setting and vegetable mix. It supports HMTc seeking laboratory evidence, while its lower organic cadmium result and statistical limitations prevent a universal claim that organic certification cannot be protective.",
+      "links": [
+        {
+          "label": "Article DOI · cited version 1",
+          "href": "https://doi.org/10.12688/f1000research.175538.1"
+        },
+        {
+          "label": "Version 1 PDF · Massey University repository",
+          "href": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content"
+        }
+      ],
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "06ef9c8cd25c4a42c42b884d380bc6a629251cbae1f51c42c46b9c4f3729602c",
+      "review": {
+        "reviewer": "Codex, reused same-day primary-source review with fresh organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.12688/f1000research.175538.1",
+            "note": "The DOI/publisher landing page could not be read (publisher403); verified the exact DOI, authors, date and version on the publisher-formatted PDF deposited in author-affiliated Massey University’s repository. The examined v1 PDF is marked awaiting peer review and last updated5 January 2026. The kind label describes that examined version; no claim is made about subsequent review reports or later versions."
+          },
+          {
+            "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content",
+            "note": "Downloaded the exact 12-page publisher-formatted article from the author’s university repository; read pp. 1–9 (abstract, sampling/preparation, bias, analysis, Tables 1–6, results and discussion) and visually inspected p. 5/Table2. Methods: February 2024, markets within 50 km of Napier/Hastings; washed edible portions, 153 composites from 736 vegetables, 14 markets / 10 growing sites, ICP-MS in ISO 17025 laboratory. Main organic Cd p=.003 and Ni p<.001; no adjustment for market/growing site or vegetable type in primary ANOVA. Sensitivity n=37 broccoli/cabbage/lettuce: organic Cd p=.086, Ni p=.036. Only 12 lead and 2 arsenic samples above detection; the authors EXCLUDED these from further statistical analysis. Editorial contradiction: no organic effect on lead or arsenic was not demonstrated. The paper reports 3 lead and 1 cadmium Codex exceedances; its chosen Codex classification was not independently validated here and the narrative does not establish that these were organic samples. Soil/fertilizer history was not measured, so the briefing’s almost-certain fertilizer explanation is not demonstrated. Composite sampling masks individual extremes; regional, seasonal, observational limits apply."
+          },
+          {
+            "url": "https://doi.org/10.12688/f1000research.175538.1",
+            "note": "Fresh article-context editorial check: the examined version 1 was awaiting peer review, contrary to this page’s seven-peer-reviewed-datasets description. The main cadmium association became nonsignificant in the 37-sample vegetable-restricted analysis. Flood sediment dilution was speculative; the study did not show washout specifically favored organic farms."
+          }
+        ]
+      },
+      "kind": "Research article · awaiting peer review"
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — organic certification is not protective (synthesis with full anchor-source records)",
+      "pageDigest": "3dc20dc9931479e40a2615aeb7de1addaba5d16bd0e763c7713b433861989430",
+      "sourceDigest": "ba9a10a80f7e87088d6a24e6df296bb9cfcaccda726bb6208bc1b2e5a3a1e397",
+      "citation": "Pendergrass K. Organic certification is not protective against heavy-metal contamination, and in some food matrices is associated with higher loads. Heavy Metal Index. Updated June 11, 2026. Provisional synthesis; no external reviews recorded on the version examined.",
+      "summary": "This narrative synthesis assembles seven anchor sources and proposes matrix-specific explanations for organic/conventional differences. It explicitly reports no pooled effect estimate and identifies further evidence needed.",
+      "establishes": "It establishes the author’s interpretation of selected studies, not a new dataset or independently peer-reviewed meta-analysis. The page classifies itself as a preprint until external review is recorded.",
+      "relevance": "It provides a source map for this HMTc article. Its interpretations must be checked against the underlying studies; common authorship and Paleo-related operation mean a separate website alone does not establish independent corroboration.",
+      "links": [
+        {
+          "label": "Heavy Metal Index synthesis",
+          "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/organic-certification-not-protective",
+            "note": "Read main synthesis, source list, Provisional status, Peer review state and citation/footer. Author Karen Pendergrass; operator Institute of Contaminant Standards, copyright Paleo Certified, Inc.; no reviews yet. Editorial: the synthesis is provisional and some source summaries repeat errors identified in refs. 1, 4, 6 and 7. Its sourcing/fertilizer mechanisms are hypotheses, not measurements in the cited comparisons."
+          }
+        ]
+      },
+      "kind": "Preprint synthesis"
+    }
+  }
+}

@@ -1,4 +1,144 @@
 {
+  "articles/organic-certification-not-protective": {
+    "page": "articles/organic-certification-not-protective",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Organic production standards without heavy-metal occurrence monitoring",
+        "citation": "U.S. Department of Agriculture. National Organic Program, 7 CFR Part 205, current text reviewed September 15, 2026; European Parliament and Council. Regulation (EU) 2018/848 of May 30, 2018 on organic production and labelling of organic products. Official Journal L 150, June 14, 2018, pp. 1–92 (original act).",
+        "summary": "These U.S. and EU rules govern organic production, permitted substances, certification and controls. Neither is a general finished-food lead, cadmium, arsenic and mercury concentration specification.",
+        "establishes": "Organic certification is not proof that a particular product meets a separate metal specification. Both frameworks nevertheless require precautions and compliance controls; organic status does not exempt food from other food-safety law.",
+        "relevance": "This distinction supports HMTc requiring analytical evidence in addition to an organic label. It does not establish that organic certification ignores contamination or authorizes food above applicable legal limits.",
+        "links": [
+          {
+            "label": "USDA National Organic Program",
+            "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+          },
+          {
+            "label": "EU organic regulation · original 2018 act",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018R0848"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Lead and cadmium contamination in a large sample of United States infant formulas and baby foods",
+        "citation": "Gardener H, Bowen J, Callan SP. Lead and cadmium contamination in a large sample of United States infant formulas and baby foods. Science of the Total Environment. 2019;651:822–827. Published online September 4, 2018. doi:10.1016/j.scitotenv.2018.09.026.",
+        "summary": "This convenience survey tested 564 U.S. retail and online infant-formula and baby-food products by ICP-MS. Label-based organic groups included 304 organic and 260 nonorganic products.",
+        "establishes": "Organic status was not significantly associated with cadmium (p=0.65) or lead (p=0.28). Grain ingredients, especially rice, were associated with higher concentrations. Each product was purchased and tested once; sampling was not nationally representative.",
+        "relevance": "The results support checking measured contamination rather than assuming an organic label predicts these metals. Statistical nulls in this sample do not prove equivalence or quantify the effect of choosing organic rice cereal.",
+        "links": [
+          {
+            "label": "Journal article",
+            "href": "https://doi.org/10.1016/j.scitotenv.2018.09.026"
+          },
+          {
+            "label": "Published paper · author/funder-hosted PDF",
+            "href": "https://cleanlabelproject.org/wp-content/uploads/STE-Complete-Study.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Assessment of Essential Elements and Potentially Toxic Elements (PTEs) in Organic and Conventional Flaxseeds: Implications for Dietary Exposure and Food Safety",
+        "citation": "Brum R de L, Siedzik K, Alejandro-Vega S, et al. Assessment of Essential Elements and Potentially Toxic Elements (PTEs) in Organic and Conventional Flaxseeds: Implications for Dietary Exposure and Food Safety. Applied Sciences. 2025;15(13):7004. Published June 21, 2025. doi:10.3390/app15137004.",
+        "summary": "The researchers measured 20 elements by ICP-OES in 52 commercially obtained European-market flaxseed samples, classified as 15 organic and 37 conventional.",
+        "establishes": "Lead and cadmium differences were not statistically significant. Organic samples had lower aluminium and nickel (p=0.0312 and 0.0142), while sodium was higher. These observational group comparisons did not isolate farming practice from origin or other supply-chain differences.",
+        "relevance": "The matrix-specific findings support HMTc measuring individual elements. They do not establish universal equivalence between farming systems or validate any HMTc limit or exposure-reduction claim.",
+        "links": [
+          {
+            "label": "Journal article",
+            "href": "https://doi.org/10.3390/app15137004"
+          },
+          {
+            "label": "Publisher full text PDF",
+            "href": "https://mdpi-res.com/d_attachment/applsci/applsci-15-07004/article_deploy/applsci-15-07004.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA",
+        "citation": "Hands JM, Anderson ML, Cooperman T, Balsky JE, Frame LA. A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA. Frontiers in Nutrition. 2024;11:1366231. Published July 31, 2024. doi:10.3389/fnut.2024.1366231.",
+        "summary": "This observational ConsumerLab-derived survey measured 72 product observations across 2014, 2016, 2019 and 2022. The full-sample concentration medians were 50 µg/kg lead and 239 µg/kg cadmium.",
+        "establishes": "The organic cadmium comparison in Table 4 used 37 observations with daily-intake data: 15 organic and 22 nonorganic. Organic products were higher by a one-tailed Welch test (p≈0.02). Geography and blending were not measured explanations.",
+        "relevance": "This supports separate metal measurements for chocolate carrying organic claims. It does not show that certification caused the difference or that organic single-origin versus conventional West African blending explains it.",
+        "links": [
+          {
+            "label": "Journal article",
+            "href": "https://doi.org/10.3389/fnut.2024.1366231"
+          },
+          {
+            "label": "Publisher full text",
+            "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1366231/full"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Assessment of cadmium and lead content in tomatoes and tomato products",
+        "citation": "Grochowska-Niedworok E, Nieć J, Baranowska R. Assessment of cadmium and lead content in tomatoes and tomato products. Roczniki Państwowego Zakładu Higieny. 2020;71(3):313–319. doi:10.32394/rpzh.2020.0126.",
+        "summary": "This Polish retail study used graphite-furnace atomic absorption spectrometry to measure lead and cadmium in different tomato varieties and processed products, reporting fresh- and dry-mass results.",
+        "establishes": "Several organic dry-mass samples had higher cadmium than some conventional varieties, but the study was not a matched or statistically adjusted farming-system comparison. An organic fresh Jawor tomato had both metals below quantification. The authors reported one canned concentrate above their chosen cadmium benchmark.",
+        "relevance": "The findings illustrate product variability relevant to HMTc testing. They cannot establish a general organic penalty or identify the concentrate exceedance as an organic product.",
+        "links": [
+          {
+            "label": "Journal article",
+            "href": "https://doi.org/10.32394/rpzh.2020.0126"
+          },
+          {
+            "label": "Publisher full text PDF",
+            "href": "https://roczniki.pzh.gov.pl/pdf-182624-103120?filename=Assessment-of-cadmium-and.pdf"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Chemical Composition and Nutritional Quality of Commercial Tahini",
+        "citation": "Potortì AG, Albergamo A, Nava V, Lo Turco V, Litrenta F, Spanò IM, Di Bella G. Chemical Composition and Nutritional Quality of Commercial Tahini. Applied Sciences. 2026;16(3):1400. Published January 29, 2026. doi:10.3390/app16031400.",
+        "summary": "The study examined seven Italian-market tahini brands purchased online in 2025, using three analytical replicates per product. Table 1 identifies two organic products: T-1 from Turkey and T-5 from Lebanon.",
+        "establishes": "T-1 contained cadmium 0.35, lead 0.50 and total arsenic 0.20 mg/kg; T-5 had cadmium 0.02, lead 0.01 and arsenic below quantification. Seven products cannot isolate an organic effect. The authors compared tahini to limits for other food categories.",
+        "relevance": "The contrast between these two organic products reinforces HMTc’s need for product-specific measurements. It does not establish that organic tahini is generally higher or independently prove a regulatory violation.",
+        "links": [
+          {
+            "label": "Journal article",
+            "href": "https://doi.org/10.3390/app16031400"
+          },
+          {
+            "label": "Publisher full text PDF",
+            "href": "https://mdpi-res.com/d_attachment/applsci/applsci-16-01400/article_deploy/applsci-16-01400.pdf"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis.",
+        "citation": "Dearing, Chey; Ye, Zhijing; and Robertshaw, Glen. Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis. F1000Research 14:1461 (26 December 2025), version 1, awaiting peer review in the examined version. doi:10.12688/f1000research.175538.1.",
+        "summary": "This cross-sectional study tested 153 composite samples made from 736 vegetables bought at 14 Hawke’s Bay market gardens in February 2024. Its main analysis associated organic production with lower cadmium and nickel, and the authors reported four composite samples above their selected Codex limits.",
+        "establishes": "The observations are local and do not establish a fertilizer mechanism or certification guarantee. Lead and arsenic were excluded from comparative statistical analysis because most results were below detection limits. In a 37-sample sensitivity analysis restricted by vegetable type, only nickel retained a significant organic association.",
+        "relevance": "This local survey shows that measured metals can vary with production setting and vegetable mix. It supports HMTc seeking laboratory evidence, while its lower organic cadmium result and statistical limitations prevent a universal claim that organic certification cannot be protective.",
+        "links": [
+          {
+            "label": "Article DOI · cited version 1",
+            "href": "https://doi.org/10.12688/f1000research.175538.1"
+          },
+          {
+            "label": "Version 1 PDF · Massey University repository",
+            "href": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content"
+          }
+        ],
+        "kind": "Research article · awaiting peer review"
+      },
+      "8": {
+        "referenceTitle": "Heavy Metal Index — organic certification is not protective (synthesis with full anchor-source records)",
+        "citation": "Pendergrass K. Organic certification is not protective against heavy-metal contamination, and in some food matrices is associated with higher loads. Heavy Metal Index. Updated June 11, 2026. Provisional synthesis; no external reviews recorded on the version examined.",
+        "summary": "This narrative synthesis assembles seven anchor sources and proposes matrix-specific explanations for organic/conventional differences. It explicitly reports no pooled effect estimate and identifies further evidence needed.",
+        "establishes": "It establishes the author’s interpretation of selected studies, not a new dataset or independently peer-reviewed meta-analysis. The page classifies itself as a preprint until external review is recorded.",
+        "relevance": "It provides a source map for this HMTc article. Its interpretations must be checked against the underlying studies; common authorship and Paleo-related operation mean a separate website alone does not establish independent corroboration.",
+        "links": [
+          {
+            "label": "Heavy Metal Index synthesis",
+            "href": "https://heavymetalindex.com/synthesis/organic-certification-not-protective"
+          }
+        ],
+        "kind": "Preprint synthesis"
+      }
+    }
+  },
   "briefings/after-palmquist": {
     "page": "briefings/after-palmquist",
     "reviewed": "2026-09-15",
@@ -1477,6 +1617,147 @@
             "href": "https://www.usp.org/sites/default/files/usp/document/FAQs/ei-implementation-faq-2015-03-27.pdf"
           }
         ]
+      }
+    }
+  },
+  "briefings/the-prop-65-gap": {
+    "page": "briefings/the-prop-65-gap",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Proposition 65 List of Chemicals Known to the State to Cause Cancer or Reproductive Toxicity",
+        "citation": "California OEHHA. The Proposition 65 List. Current online chemical list, accessed September 15, 2026.",
+        "summary": "California lists particular chemical forms and endpoints, including lead, cadmium, inorganic arsenic, hexavalent chromium and nickel compounds. Soluble nickel compounds were listed for developmental and male reproductive toxicity on October 26, 2018.",
+        "establishes": "Listing identifies a statutory hazard; it supplies neither a food concentration limit nor proof that every exposure causes harm. Different forms of a metal have different listed endpoints.",
+        "relevance": "The list supports the briefing’s hazard-identification premise. HMTc’s decision to impose product limits remains a separate program choice.",
+        "links": [
+          {
+            "label": "OEHHA chemical list",
+            "href": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Safe Drinking Water and Toxic Enforcement Act of 1986 (Proposition 65)",
+        "citation": "California Health and Safety Code §§25249.5–25249.14. Safe Drinking Water and Toxic Enforcement Act of 1986; operative January 1, 1987, as amended.",
+        "summary": "The Act requires qualifying businesses to warn before covered exposures and separately restricts releases into drinking-water sources. It provides exposure-based exemptions, enforcement and a chemical-listing process.",
+        "establishes": "Its warning provisions do not create general food-composition ceilings. Section 25249.13 preserves other legal obligations: a warning does not authorize sale of any concentration under all food laws.",
+        "relevance": "This supports a limited distinction between warning compliance and HMTc product specifications. The briefing’s claim that the Act does only one thing omits its discharge prohibition.",
+        "links": [
+          {
+            "label": "Current California statute",
+            "href": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=6.6.&division=20.&lawCode=HSC&part=&title="
+          }
+        ],
+        "kind": "Law"
+      },
+      "3": {
+        "referenceTitle": "Proposition 65 Safe Harbor Levels — No Significant Risk Levels and Maximum Allowable Dose Levels",
+        "citation": "California OEHHA. Proposition 65 No Significant Risk Levels (NSRLs) and Maximum Allowable Dose Levels (MADLs). Current online safe-harbor table, accessed September 15, 2026.",
+        "summary": "The table lists daily-exposure safe harbors. Lead has a 15 µg/day oral NSRL and 0.5 µg/day MADL; cadmium and hexavalent chromium have oral MADLs of 4.1 and 8.2 µg/day.",
+        "establishes": "Inorganic arsenic has a 10 µg/day NSRL except by inhalation, directly contradicting the briefing’s assertion that it has no oral safe harbor. These exposure values are not food concentrations or universal safety assurances.",
+        "relevance": "HMTc must distinguish a product’s concentration from the resulting daily exposure and the applicable chemical form and endpoint when comparing its limits with Proposition 65.",
+        "links": [
+          {
+            "label": "OEHHA safe-harbor table",
+            "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Nickel and Nickel Compounds — Proposition 65 Warnings Website fact sheet",
+        "citation": "California OEHHA. Nickel and Nickel Compounds. Proposition 65 Warnings Website fact sheet, posted February 2025.",
+        "summary": "The fact sheet explains nickel cancer listings and the developmental effects of soluble nickel compounds and nickel carbonyl. It also identifies male reproductive effects for soluble nickel compounds.",
+        "establishes": "This is a public hazard-and-exposure explanation, not an adopted oral dose limit. The separate safe-harbor table contains only the two specified nickel cancer entries and no general oral nickel MADL.",
+        "relevance": "It supports the briefing’s concern about dietary nickel while leaving any numerical HMTc product specification to a separately documented standard.",
+        "links": [
+          {
+            "label": "Nickel fact sheet",
+            "href": "https://www.p65warnings.ca.gov/fact-sheets/nickel-and-nickel-compounds"
+          },
+          {
+            "label": "Safe-harbor table",
+            "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Evidence on the Developmental and Reproductive Toxicity of Nickel and Nickel Compounds",
+        "citation": "California OEHHA. Evidence on the Developmental and Reproductive Toxicity of Nickel and Nickel Compounds. Hazard identification document, July 2018.",
+        "summary": "The executive summary reviews human associations and animal evidence. Reduced offspring survival and body weight were common sensitive effects in prenatal animal studies, most of which used oral exposure.",
+        "establishes": "The review supports hazard identification; it does not adopt a dietary safe harbor, a food maximum or a finding that ordinary dietary nickel causes these outcomes in children.",
+        "relevance": "It explains the scientific concern underlying the briefing’s nickel discussion. Converting that concern into an HMTc concentration limit requires additional exposure assumptions and program rules.",
+        "links": [
+          {
+            "label": "OEHHA hazard review",
+            "href": "https://oehha.ca.gov/media/downloads/crnr/nihid072718.pdf"
+          }
+        ],
+        "kind": "Scientific review"
+      },
+      "6": {
+        "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+        "citation": "European Commission. Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food. OJ L 119, May 5, 2023, pp. 103–157; consolidated text dated August 19, 2026 consulted.",
+        "summary": "Article2 bars listed foods exceeding applicable Annex I limits from the market and from ingredient use. The Annex sets category-specific limits for lead, cadmium, arsenic and inorganic tin; the amended framework also includes nickel.",
+        "establishes": "These are EU concentration limits with defined food categories and measurement bases. They are not automatically US law. The consolidated text is a documentation aid; authentic amending acts remain controlling.",
+        "relevance": "This supports using EU limits as a distinct benchmark. It does not establish that HMTc adopts every strictest limit or applies the correct category in every lot decision.",
+        "links": [
+          {
+            "label": "Original regulation",
+            "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+          },
+          {
+            "label": "Consolidated text consulted",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ],
+        "kind": "Regulation"
+      },
+      "7": {
+        "referenceTitle": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
+        "citation": "European Commission. Regulation (EU) 2024/1987 of July 30, 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L2024/1987, July 31, 2024.",
+        "summary": "The amendment adds category-specific nickel maxima, including nuts, vegetables, cereals, chocolate, formula and baby food. It generally applies from July 1, 2025; specified cereal entries apply from July 1, 2026.",
+        "establishes": "The limits are binding EU rules, with product-specific measurement bases and protection for food lawfully marketed before the applicable dates until its durability/use-by date. They are not a single daily-intake limit.",
+        "relevance": "This supplies a concrete regulatory benchmark for HMTc’s nickel discussion, while requiring the correct food category and transition rule.",
+        "links": [
+          {
+            "label": "Official Journal amendment PDF",
+            "href": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf"
+          }
+        ],
+        "kind": "Regulation"
+      },
+      "8": {
+        "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+        "citation": "EFSA CONTAM Panel. Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
+        "summary": "EFSA derived a chronic tolerable daily intake of 13 µg/kg body weight from rat post-implantation loss, using a 100-fold uncertainty factor. Higher-percentile dietary exposure often exceeded it in young groups.",
+        "establishes": "Mean exposure was generally below or near the TDI; the study does not show all ordinary European diets exceed it. A TDI covers total intake per body weight, not the permitted concentration of one food.",
+        "relevance": "The assessment informs HMTc’s rationale for considering nickel, but cannot itself supply a product limit without assumptions about consumption and other sources.",
+        "links": [
+          {
+            "label": "EFSA nickel opinion",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268"
+          }
+        ],
+        "kind": "Scientific opinion"
+      },
+      "9": {
+        "referenceTitle": "Cadmium in food — Scientific Opinion of the Panel on Contaminants in the Food Chain",
+        "citation": "EFSA CONTAM Panel. Cadmium in food. EFSA Journal. 2009;7(3):980,1–139. Adopted January 30, 2009; published March 20, 2009. doi:10.2903/j.efsa.2009.980.",
+        "summary": "EFSA established a tolerable weekly intake of 2.5 µg/kg body weight, using kidney-effect biomarkers and exposure modelling. Estimated adult European exposure was near this value, with some groups higher.",
+        "establishes": "The TWI is total weekly intake guidance, not a food-concentration ceiling. EFSA described individual kidney risk at estimated exposures as low while recommending population exposure reduction.",
+        "relevance": "This supports concern about cumulative cadmium intake. HMTc still needs category-specific limits and consumption assumptions; a weekly body-weight allowance cannot directly decide a product’s composition.",
+        "links": [
+          {
+            "label": "Original EFSA opinion PDF",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2009.980"
+          },
+          {
+            "label": "Publisher record",
+            "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.980"
+          }
+        ],
+        "kind": "Scientific opinion"
       }
     }
   }
