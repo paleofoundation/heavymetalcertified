@@ -110,6 +110,12 @@ async function goto(page, pathname) {
   await page.locator(".hmi-nav--js").waitFor({ state: "attached" })
 }
 
+async function closePage(page) {
+  // Finish authenticated route.fetch requests before disposing their context.
+  await page.context().unrouteAll({ behavior: "wait" })
+  await page.context().close()
+}
+
 async function panelVisible(page, visible) {
   await page.locator(panelSelector).waitFor({ state: visible ? "visible" : "hidden" })
   assert.equal(await page.locator(`${itemSelector} .hmi-nav-toggle`).getAttribute("aria-expanded"), String(visible))
@@ -216,7 +222,7 @@ try {
       await page.locator(".hmtc-brand").click()
       await waitRoute(page, "/")
       await checkHero(page)
-    } finally { await page.context().close() }
+    } finally { await closePage(page) }
   })
 
   for (const width of [320, 390, 768, 1200, 1280]) {
@@ -266,7 +272,7 @@ try {
         else await hub.click()
         await waitRoute(page, "/ecosystem")
         await checkOverflow(page, `${width}px ecosystem index`)
-      } finally { await page.context().close() }
+      } finally { await closePage(page) }
     })
   }
 
@@ -292,7 +298,7 @@ try {
         }
         await checkOverflow(page, pathname)
         await page.screenshot({ path: join(output, `${pathname.slice(1).replaceAll("/", "-")}.png`), fullPage: true })
-      } finally { await page.context().close() }
+      } finally { await closePage(page) }
     })
   }
 
