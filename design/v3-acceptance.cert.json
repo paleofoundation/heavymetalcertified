@@ -16,8 +16,7 @@
       { "sel": ".hmtc-home-action--primary[href=\"https://app.heavymetalcertified.com/hmt/get-started\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"/briefings/the-big-8\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a:nth-child(3)[href=\"/challenge\"]", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-home-house-line", "prop": "color", "want": "#fff2ee" },
-      { "sel": ".hmtc-home-house-line", "prop": "font-weight", "want": "400" },
+      { "sel": ".hmtc-home-house-line", "prop": "absent", "want": true },
       { "sel": ".hmtc-home-actions > a[href=\"/standards/finder\"]", "prop": "absent", "want": true },
       { "sel": ".hmi-nav-list > .hmi-nav-item", "prop": "count", "want": 5 },
       { "sel": ".hmi-nav-list", "prop": "flex-wrap", "want": "nowrap" },
@@ -413,7 +412,7 @@
           { "sel": ".hmtc-home-actions", "prop": "flex-direction", "want": "column" },
           { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 3 },
           { "sel": ".hmtc-home-actions > a:nth-child(3)[href=\"/challenge\"]", "prop": "count", "want": 1 },
-          { "sel": ".hmtc-home-house-line", "prop": "font-weight", "want": "400" }
+          { "sel": ".hmtc-home-house-line", "prop": "absent", "want": true }
         ],
         "/challenge": [
           { "sel": ".hmtc-challenge .challenge-draft", "prop": "count", "want": 1 },

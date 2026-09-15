@@ -25,7 +25,6 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
             <a class="hmtc-home-action" href="/briefings/the-big-8">The Big 8 <span aria-hidden="true">→</span></a>
             <a class="hmtc-home-action" href="/challenge">10-Step Challenge <span aria-hidden="true">→</span></a>
           </nav>
-          <p class="hmtc-home-house-line">Heavy metals in food aren’t a content problem. They’re a proof problem.</p>
         </div>
         <aside class="hmtc-home-sidebar" aria-label="Program snapshot">
           <section class="hmtc-home-snapshot" aria-label="Program snapshot">

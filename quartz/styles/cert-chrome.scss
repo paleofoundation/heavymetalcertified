@@ -1051,7 +1051,6 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .wiki-content a.hmtc-home-action { display: inline-flex; align-items: center; gap: 18px; padding: 13px 18px; border: 1px solid rgba(255,255,255,.5); border-radius: 3px; color: #fff; font-size: 14px; font-weight: 400; text-decoration: none; }
 .wiki-content a.hmtc-home-action--primary { background: #fffdfb; color: #7f1f1f; border-color: #fffdfb; }
 .wiki-content a.hmtc-home-action:hover { background: #7f1f1f; color: #fff; }
-.hmtc-home-house-line { margin: 24px 0 0; max-width: 54ch; font: 400 15.5px/1.75 var(--bodyFont); color: #fff2ee; }
 .hmtc-home-sidebar { min-width: 0; }
 .hmtc-home-snapshot { position: relative; isolation: isolate; padding: 0; background: #fffdfb; border: 1px solid #e8e1db; border-top: 3px solid #d7bbb5; box-shadow: 0 24px 56px rgba(87,26,26,.2), 0 3px 10px rgba(87,26,26,.12); }
 .hmtc-home-snapshot::before, .hmtc-home-snapshot::after { content: ""; position: absolute; z-index: -1; pointer-events: none; border: 1px solid rgba(255,253,251,.35); background: #d7bbb5; }
