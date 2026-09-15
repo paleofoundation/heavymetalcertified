@@ -1,0 +1,281 @@
+{
+  "briefings/brief-6-premium-promise": {
+    "page": "briefings/brief-6-premium-promise",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "2": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+        "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+        "establishes": "The report describes Hain's reliance on ingredient testing and an August 2019 presentation of finished-product results. It does not establish when finished-product testing first began.",
+        "relevance": "It supports the briefing's distinction between brand trust and product verification. Its evidence is narrower than the claim that testing began only in 2019, and does not resolve whether a product caused an individual child's injury.",
+        "links": [
+          {
+            "label": "House staff report · 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/brief-7-four-vs-eight": {
+    "page": "briefings/brief-7-four-vs-eight",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+        "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+        "establishes": "It documents the investigation's four-metal scope. It does not establish a complete testing panel, industry-wide certification practice or subsequent litigation history.",
+        "relevance": "It grounds the briefing's opening discussion of the familiar four metals. The later claim about multidistrict litigation needs a separate court source; the case for testing additional elements rests on the other cited assessments and standards.",
+        "links": [
+          {
+            "label": "House staff report · 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/the-big-8": {
+    "page": "briefings/the-big-8",
+    "reviewed": "2026-09-11",
+    "refs": {
+      "1": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+        "summary": "Congressional staff reviewed manufacturers’ testing records and reported arsenic, lead, cadmium and mercury contamination in baby foods, alongside weaknesses in testing and internal company limits.",
+        "establishes": "The report recommended finished-product testing, regulatory limits and public disclosure. It was an investigation of company records, not an independent testing study or an enacted safety standard.",
+        "relevance": "It provides context for HMTc’s emphasis on finished-product verification and the familiar four-metal panel. Its scope does not establish that only those four elements warrant testing.",
+        "links": [
+          {
+            "label": "House staff report · 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+        "citation": "European Commission. Regulation (EU) 2023/915, 25 April 2023. Original act, OJ L 119, 5 May 2023; Annex I, section 3.5.",
+        "summary": "This regulation consolidates EU maximum contaminant levels for specified foods. Its metal provisions include inorganic tin in canned products, alongside lead, cadmium, arsenic and mercury.",
+        "establishes": "The original act sets binding tin limits that distinguish general canned foods, beverages and specified infant foods. The applicable food category and exclusions matter; it is not a universal limit for all foods.",
+        "relevance": "It provides a regulatory basis for including tin in HMTc’s coverage and matching limits to product and packaging. Applying a category’s limit elsewhere requires a separate, disclosed HMTc decision.",
+        "links": [
+          {
+            "label": "EU 2023/915 · original act",
+            "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj/eng"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Commission Regulation (EU) 2024/1987 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in food",
+        "citation": "European Commission. Regulation (EU) 2024/1987, 30 July 2024. Published 31 July 2024; Annex, section 3.6.",
+        "summary": "This amendment introduces nickel maximum levels for specified foods in response to EFSA’s assessment of dietary exposure and health risks.",
+        "establishes": "The legal limits distinguish food categories, including powdered formula, qualifying soy-isolate formula and liquid formula. Most apply from July 2025, with specified cereal provisions applying from July 2026.",
+        "relevance": "This is the concentration-limit source behind the briefing’s inclusion of nickel and its formula distinctions. EFSA’s assessment in reference 7 explains the health rationale; this regulation supplies the food-specific legal requirements.",
+        "links": [
+          {
+            "label": "EU 2024/1987 · nickel limits",
+            "href": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj/eng"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Australia New Zealand Food Standards Code — Schedule 19, Maximum levels of contaminants and natural toxicants",
+        "citation": "Food Standards Australia New Zealand. Schedule 19, compilation 6, 13 September 2024; infant-formula changes under Proposal P1028.",
+        "summary": "Schedule 19 includes tin limits for canned foods and separate aluminium limits for infant-formula categories, extending food-contaminant controls beyond the conventional four metals.",
+        "establishes": "The aluminium entries distinguish general, soy-based and specified preterm formula. The revised infant-formula rules apply in Australia with transition arrangements through September 2029; New Zealand opted out of those revisions.",
+        "relevance": "These provisions support considering aluminium and tin in HMTc’s panel. Any use of the formula benchmark in another category must identify the jurisdiction, edition, preparation basis and rationale for that application.",
+        "links": [
+          {
+            "label": "Schedule 19 · September 2024",
+            "href": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html"
+          },
+          {
+            "label": "FSANZ · formula transition",
+            "href": "https://www.foodstandards.gov.au/food-standards-code/proposals/P1028"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "California Assembly Bill 899",
+        "citation": "California Assembly Bill 899. Chapter 668, Statutes of 2023, approved 10 October 2023; Health and Safety Code sections 110962–110963.",
+        "summary": "AB 899 requires covered baby-food manufacturers to test finished products for arsenic, cadmium, lead and mercury at least monthly, and to disclose product results publicly.",
+        "establishes": "Testing began in January 2024 and public disclosure in January 2025. The law covers specified foods for children under two, excludes infant formula, and does not itself set numerical maximum metal concentrations.",
+        "relevance": "It is a concrete example of a mandatory four-element disclosure panel. HMTc’s broader testing scope is a program decision; the law’s four-element list does not establish that other metals are irrelevant.",
+        "links": [
+          {
+            "label": "California AB 899 · enacted text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Action Levels for Lead in Processed Food Intended for Babies and Young Children: Guidance for Industry",
+        "citation": "U.S. Food and Drug Administration. Final guidance for industry, January 2025, issued 6 January 2025.",
+        "summary": "FDA’s Closer to Zero guidance sets lead action levels for specified processed foods marketed for children under two, with different levels for different food categories.",
+        "establishes": "These action levels inform FDA’s decisions about adulteration alongside other evidence. They are nonbinding recommendations, not universal safety thresholds; infant formula, beverages and snacks such as puffs are outside this guidance’s scope.",
+        "relevance": "The guidance supports HMTc’s use of category-specific controls and careful identification of regulatory scope. It addresses lead in the named foods, rather than establishing a comprehensive metal-testing panel.",
+        "links": [
+          {
+            "label": "FDA · final lead guidance",
+            "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-action-levels-lead-processed-food-intended-babies-and-young-children"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+        "citation": "EFSA CONTAM Panel. EFSA Journal 2020;18(11):6268, published 5 November 2020. DOI: 10.2903/j.efsa.2020.6268.",
+        "summary": "EFSA reassessed dietary nickel using updated toxicology and food-occurrence data. It identified concerns for children with high exposure and for people already sensitized to nickel.",
+        "establishes": "The chronic intake benchmark rests on reproductive effects in rats. High dietary exposure raised concern in young age groups, while acute oral exposure can provoke eczema in sensitized people. These are distinct health endpoints, not interchangeable thresholds.",
+        "relevance": "This assessment provides the dietary-health rationale for including nickel in HMTc’s panel. The food concentration limits and formula distinctions discussed in the briefing come from the separate EU regulation in reference 3.",
+        "links": [
+          {
+            "label": "EFSA · nickel assessment",
+            "href": "https://doi.org/10.2903/j.efsa.2020.6268"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "IARC Monographs on the Identification of Carcinogenic Hazards to Humans",
+        "citation": "International Agency for Research on Cancer. Monographs, volume 49 (1990) and volume 100C (2012); nickel chapter, volume 100C, pp. 169–218.",
+        "summary": "IARC evaluates carcinogenic hazards using human, animal and mechanistic evidence. These volumes cover nickel compounds and other metals relevant to the briefing.",
+        "establishes": "Nickel compounds are classified as carcinogenic to humans. The human evidence concerns lung and nasal cancers in occupationally exposed populations; the classification does not quantify cancer risk from eating nickel-containing foods.",
+        "relevance": "The monographs provide hazard context for HMTc’s panel and show why chemical form and exposure route matter. Dietary nickel risk is addressed more directly by EFSA in reference 7; an IARC classification does not set a food limit.",
+        "links": [
+          {
+            "label": "Volume 100C · 2012",
+            "href": "https://publications.iarc.who.int/120"
+          },
+          {
+            "label": "Volume 49 · 1990",
+            "href": "https://publications.iarc.who.int/67"
+          }
+        ]
+      },
+      "9": {
+        "referenceTitle": "General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995), tin maximum levels",
+        "citation": "Codex Alimentarius Commission (FAO/WHO). General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025; tin provisions.",
+        "summary": "Codex’s general contaminant standard includes maximum tin levels for canned foods and canned beverages, with the two categories treated separately.",
+        "establishes": "Tin is an established food-contaminant concern in international standards. These are commodity-specific Codex levels; they do not automatically become domestic law or apply to every food.",
+        "relevance": "This supports HMTc’s inclusion of tin beyond the four-metal convention and its attention to packaging. HMTc must still compare applicable national requirements and select the correct product category when deriving a limit.",
+        "links": [
+          {
+            "label": "Codex CXS 193 · 2025 edition",
+            "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/fr/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXS+193-1995%2FCXS_193e.pdf"
+          }
+        ]
+      },
+      "10": {
+        "referenceTitle": "Evaluation of Certain Food Additives and Contaminants (aluminium; tin)",
+        "citation": "JECFA. Aluminium: 74th meeting, WHO TRS 966 (2011). Tin: 33rd meeting (1988), TRS 776 (1989); later clarification at the 64th meeting (2005), TRS 930 (2006).",
+        "summary": "This reference combines separate assessments. Aluminium is evaluated through cumulative dietary intake; tin’s principal canned-food concern is acute gastrointestinal irritation.",
+        "establishes": "The aluminium evaluation derives a provisional weekly intake benchmark. Later tin evaluations emphasize that irritation depends on the concentration and nature of tin in the product, and can occur around existing canned-product limits in some people.",
+        "relevance": "These assessments support treating aluminium exposure and tin contamination differently within HMTc. They do not independently establish HMTc’s aluminium limits for other food categories, or make an elevated tin result a definitive diagnosis of can failure.",
+        "links": [
+          {
+            "label": "JECFA · aluminium evaluation",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/6179"
+          },
+          {
+            "label": "Tin · 33rd meeting report",
+            "href": "https://www.who.int/publications/i/item/9241207760"
+          },
+          {
+            "label": "Tin · later evaluation",
+            "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/515"
+          }
+        ]
+      },
+      "11": {
+        "referenceTitle": "Scientific Opinion: Safety of Aluminium from Dietary Intake",
+        "citation": "EFSA AFC Panel. EFSA Journal 2008;6(7):754, pp. 1–34, published 15 July 2008. DOI: 10.2903/j.efsa.2008.754.",
+        "summary": "EFSA assessed aluminium exposure from food, accounting for its persistence in the body and adverse effects observed in animal studies. Estimated dietary exposure could exceed its tolerable intake in part of the European population.",
+        "establishes": "The opinion sets a health-based reference for total weekly dietary exposure. It addresses cumulative intake, rather than prescribing a maximum aluminium concentration for an individual food.",
+        "relevance": "It explains why aluminium warrants attention in HMTc’s broader panel. Deriving an HMTc product limit still requires a separate rationale that connects exposure, food category and the chosen regulatory benchmark.",
+        "links": [
+          {
+            "label": "EFSA · aluminium opinion",
+            "href": "https://doi.org/10.2903/j.efsa.2008.754"
+          }
+        ]
+      },
+      "12": {
+        "referenceTitle": "IRIS Toxicological Review of Hexavalent Chromium [Cr(VI)]",
+        "citation": "U.S. Environmental Protection Agency. EPA/635/R-24/164Fa, August 2024; released 12 August 2024.",
+        "summary": "EPA reviewed the cancer and noncancer effects of hexavalent chromium and concluded that it is likely to be carcinogenic to humans through oral exposure.",
+        "establishes": "The assessment characterizes hazards and dose-response relationships specifically for Cr(VI). Its oral noncancer reference dose rests on small-intestine effects in mice; it is not a food concentration limit or an assessment of total chromium as one substance.",
+        "relevance": "It supports distinguishing chromium species when HMTc interprets a total-chromium result. The choice of a screening trigger and the resulting certification decision remain HMTc program rules with their own justification.",
+        "links": [
+          {
+            "label": "EPA · full Cr(VI) review",
+            "href": "https://iris.epa.gov/static/pdfs/0144tr.pdf"
+          }
+        ]
+      },
+      "13": {
+        "referenceTitle": "EFSA CONTAM Panel scientific opinions on lead, arsenic, mercury, and cadmium in food",
+        "citation": "EFSA CONTAM Panel. Lead: 2010;8(4):1570. Arsenic: 2009;7(10):1351 and 2024;22(1):e8488. Mercury: 2012;10(12):2985. Cadmium: 2009;7(3):980.",
+        "summary": "These five opinions assess dietary exposure and critical health effects for lead, inorganic arsenic, mercury species and cadmium. They are separate assessments with different endpoints and methods.",
+        "establishes": "Lead and inorganic arsenic are assessed using benchmark reference points and exposure comparisons; mercury and cadmium have tolerable weekly intakes. Chemical form matters, particularly for arsenic and mercury.",
+        "relevance": "The opinions support retaining the original four contaminants within HMTc’s broader panel and identifying relevant chemical species. They provide the scientific basis for concern, while HMTc separately defines its tiers, product limits and certification rules.",
+        "links": [
+          {
+            "label": "Lead · 2010",
+            "href": "https://doi.org/10.2903/j.efsa.2010.1570"
+          },
+          {
+            "label": "Arsenic · 2009",
+            "href": "https://doi.org/10.2903/j.efsa.2009.1351"
+          },
+          {
+            "label": "Inorganic arsenic · 2024",
+            "href": "https://doi.org/10.2903/j.efsa.2024.8488"
+          },
+          {
+            "label": "Mercury · 2012",
+            "href": "https://doi.org/10.2903/j.efsa.2012.2985"
+          },
+          {
+            "label": "Cadmium · 2009",
+            "href": "https://doi.org/10.2903/j.efsa.2009.980"
+          }
+        ]
+      },
+      "14": {
+        "referenceTitle": "NSF/ANSI 173, Dietary Supplements",
+        "citation": "NSF/ANSI 173-2025, Dietary Supplements. NSF / American National Standards Institute.",
+        "summary": "NSF/ANSI 173 addresses dietary-supplement identity, declared composition and contaminants. NSF’s public certification description names lead, arsenic, cadmium, mercury and chromium(VI) among the toxic contaminants evaluated.",
+        "establishes": "This is a documented supplement-certification comparator whose published screening scope extends beyond the familiar four metals. The public scope description identifies contaminants, rather than supplying the full standard’s numerical requirements.",
+        "relevance": "It gives HMTc a specific basis for comparing the contaminants named by another program. Claims of unique or broader market coverage require a separate, current comparison of all relevant programs.",
+        "links": [
+          {
+            "label": "NSF · certification scope",
+            "href": "https://www.nsf.org/nutrition-wellness/product-and-ingredient-certification"
+          },
+          {
+            "label": "NSF/ANSI 173-2025 · catalog",
+            "href": "https://webstore.ansi.org/standards/nsf/nsfansi1732025"
+          }
+        ]
+      },
+      "15": {
+        "referenceTitle": "ICH Q3D Guideline for Elemental Impurities; USP General Chapter <232>",
+        "citation": "ICH Q3D(R2), adopted 26 April 2022. USP General Chapter <232>, Elemental Impurities—Limits; implementation FAQ, 27 March 2015 (chapter revision unspecified).",
+        "summary": "ICH Q3D provides a risk-based framework and permitted daily exposures for elemental impurities in drug products. USP chapter <232> addresses elemental-impurity limits in that pharmaceutical context.",
+        "establishes": "ICH’s table overlaps seven Big 8 element names and omits an aluminium exposure limit. Its default chromium assessment concerns Cr(III), with Cr(VI) requiring separate consideration; listed elements do not all require testing in every product.",
+        "relevance": "The pharmaceutical framework offers a comparison of scope and exposure-based limits. Its element-name overlap is not equivalent to HMTc’s chemical-species coverage, food standards or testing requirements.",
+        "links": [
+          {
+            "label": "ICH Q3D(R2) · 2022",
+            "href": "https://database.ich.org/sites/default/files/Q3D-R2_Guideline_Step4_2022_0308.pdf"
+          },
+          {
+            "label": "USP · implementation FAQ",
+            "href": "https://www.usp.org/sites/default/files/usp/document/FAQs/ei-implementation-faq-2015-03-27.pdf"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -8,3 +8,7 @@ tsconfig.tsbuildinfo
 .quartz-cache/
 .env*
 dist/
+
+# Regenerable citation inventories and research job working copies.
+# Archived prior reviews in reports/citation-context/archive/ remain trackable.
+/reports/citation-context/*.json

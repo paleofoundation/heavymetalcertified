@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "preparedAt": "2026-09-15",
+  "purpose": "Two page-specific appearances of one primary report, prepared as a pilot for the citation-context workflow.",
+  "reuseProvenance": {
+    "path": "data/source-panels/briefings/the-big-8.json",
+    "page": "briefings/the-big-8",
+    "referenceNumber": 1,
+    "existingReviewDate": "2026-09-11",
+    "note": "The existing record supplied the source identity and baseline interpretation. The primary report's relevant sections were accessed again for this pilot; each page's relevance and limitations were written separately. This does not re-review the report's underlying scientific literature."
+  },
+  "sourceAccess": {
+    "url": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
+    "accessedAt": "2026-09-15",
+    "level": "primary-report-targeted-sections",
+    "method": "Web PDF text extraction",
+    "sectionsRead": [
+      "Cover and executive summary, printed pages 1–6",
+      "Hain testing discussion, printed page 16",
+      "Section V.D and V.E, printed pages 53–57",
+      "Section VI recommendations, printed page 58"
+    ],
+    "scopeNote": "Targeted passages were read; underlying company exhibits and scientific studies cited by the report were not independently accessed or checked."
+  },
+  "records": [
+    {
+      "page": "briefings/brief-7-four-vs-eight",
+      "referenceNumber": 1,
+      "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+      "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+      "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+      "establishes": "It documents the investigation's four-metal scope. It does not establish a complete testing panel, industry-wide certification practice or subsequent litigation history.",
+      "relevance": "It grounds the briefing's opening discussion of the familiar four metals. The later claim about multidistrict litigation needs a separate court source; the case for testing additional elements rests on the other cited assessments and standards.",
+      "links": [
+        {
+          "label": "House staff report · 2021",
+          "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "evidenceNotes": {
+        "sourceAccessLevel": "primary-report-targeted-sections",
+        "sourceAccessDate": "2026-09-15",
+        "sourceUrls": [
+          "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        ],
+        "sourceLocators": [
+          "Cover, printed page 1: report title and date",
+          "Executive summary, printed pages 2–6: investigation scope and recommendations"
+        ],
+        "pageContexts": [
+          {
+            "path": "content/briefings/brief-7-four-vs-eight.md",
+            "line": 34,
+            "claim": "The opening identifies the report as a four-metal public-policy reference, then attributes subsequent industry and regulatory anchoring to that frame.",
+            "assessment": "Supports identifying the four named metals. Industry-wide adoption and causation require additional evidence."
+          },
+          {
+            "path": "content/briefings/brief-7-four-vs-eight.md",
+            "line": 64,
+            "claim": "The same reference is attached to a description of those four metals progressing into multidistrict litigation and exhibits.",
+            "assessment": "The later litigation narrative requires its own court records; the 2021 report cannot establish subsequent proceedings."
+          }
+        ],
+        "copyDecision": "Reuse the report identity and broad scope; tailor relevance to the briefing's argument about panel breadth. Do not infer that all certification programs test only four metals.",
+        "publicationStatus": "Draft ready for editorial review; page prose remains unchanged."
+      }
+    },
+    {
+      "page": "briefings/brief-6-premium-promise",
+      "referenceNumber": 2,
+      "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+      "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+      "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+      "establishes": "The report describes Hain's reliance on ingredient testing and an August 2019 presentation of finished-product results. It does not establish when finished-product testing first began.",
+      "relevance": "It supports the briefing's distinction between brand trust and product verification. Its evidence is narrower than the claim that testing began only in 2019, and does not resolve whether a product caused an individual child's injury.",
+      "links": [
+        {
+          "label": "House staff report · 2021",
+          "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "evidenceNotes": {
+        "sourceAccessLevel": "primary-report-targeted-sections",
+        "sourceAccessDate": "2026-09-15",
+        "sourceUrls": [
+          "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        ],
+        "sourceLocators": [
+          "Printed page 16: routine ingredient testing versus a small sample of finished products",
+          "Printed pages 53–55: August 2019 presentation and ingredient versus finished-product comparison",
+          "Printed pages 56–57: testing-policy discussion and supporting footnotes"
+        ],
+        "pageContexts": [
+          {
+            "path": "content/briefings/brief-6-premium-promise.md",
+            "line": 40,
+            "claim": "The page says Earth's Best had not tested its finished products for heavy metals until 2019, as an example of a gap between consumer trust and verification.",
+            "assessment": "Supports the distinction between routine ingredient testing and finished-product verification. The first-ever testing date is not established by the passages reviewed."
+          },
+          {
+            "path": "content/briefings/brief-6-premium-promise.md",
+            "line": 99,
+            "claim": "The bibliography repeats the assertion that a major manufacturer had not tested finished products until 2019.",
+            "assessment": "This repeats the same unsupported chronology; it is not independent corroboration."
+          }
+        ],
+        "copyDecision": "Use the same source summary, but connect relevance to verification and the specific scope of the testing evidence. Do not introduce numerical contamination results or conclusions about injury causation.",
+        "publicationStatus": "Draft ready for editorial review; page prose remains unchanged."
+      }
+    }
+  ]
+}

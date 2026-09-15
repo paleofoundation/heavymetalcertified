@@ -44,14 +44,16 @@ type CitationPanelExplanation = {
 
 // Reviewed explanations are emitted only with their own page. Match both number
 // and title so a reordered bibliography cannot silently acquire another source's
-// interpretation. Other pages retain their existing reference-row behaviour.
+// interpretation. Pages awaiting reviewed context retain their reference rows.
 function enrichCitationPanelReferences(refs: Map<string, CitationPanelRef>) {
   const raw = document.querySelector<HTMLElement>("[data-cite-panel-records]")?.dataset.citePanelRecords
   if (!raw) return
   try {
     const data = JSON.parse(raw) as { page: string; refs: Record<string, CitationPanelExplanation> }
-    const path = decodeURIComponent(location.pathname).replace(/^\/+|\/+$/g, "").replace(/\.html$/, "")
-    if (path !== data.page) return
+    const normalizePage = (value: string) =>
+      value.replace(/^\/+|\/+$/g, "").replace(/\.html$/, "").replace(/\/index$/, "")
+    // Quartz serves a nested index (briefings/index) at the clean /briefings URL.
+    if (normalizePage(decodeURIComponent(location.pathname)) !== normalizePage(data.page)) return
     const normalize = (text: string) => text.replace(/\s+/g, " ").trim()
     for (const [num, explanation] of Object.entries(data.refs)) {
       const ref = refs.get(num)

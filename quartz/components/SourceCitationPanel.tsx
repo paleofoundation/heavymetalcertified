@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 // @ts-ignore
 import script from "./scripts/citationPanel.inline"
 import style from "./styles/sourceCitationPanel.scss"
-import bigEightSources from "../../data/source-panels/briefings/the-big-8.json"
+import sourcePanels from "../../data/source-panels/index.json"
 
 // Citation-detail slide-over for the cert.
 //
@@ -24,11 +24,14 @@ export default (() => {
   const SourceCitationPanel: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     const slug = String(fileData.slug ?? "")
     if (slug === "index" || slug === "") return null
+    // The build validates the page identity and research records. Emit only this
+    // page's records; the complete source library stays out of the browser bundle.
+    const records = (sourcePanels as Record<string, unknown>)[slug]
 
     return (
       <div
         class="hmtc-cite-overlay"
-        data-cite-panel-records={slug === bigEightSources.page ? JSON.stringify(bigEightSources) : undefined}
+        data-cite-panel-records={records ? JSON.stringify(records) : undefined}
       >
         {/* Backdrop — click dismisses; decorative, so hidden from the a11y tree. */}
         <div class="hmtc-cite-scrim" data-cite-panel-scrim aria-hidden="true"></div>

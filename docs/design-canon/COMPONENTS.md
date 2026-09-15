@@ -133,6 +133,15 @@ to an entire bundle. Reviewed copy is in `data/source-panels/briefings/the-big-8
 emitted only for that page and matched to both reference number and title. This
 is a page-scoped editorial layer, not a new corpus or extracted-value database.
 
+**Sitewide context pipeline (15 September 2026).** Reviewed page files in
+`data/source-panels/` now compile into `index.json`; the same drawer emits only
+the current page's records. Source summary and scope can inform research on
+repeated sources, while HMTc relevance is reviewed against each page's own claims.
+The pipeline records source and page digests for new reviews, rejects stale or
+mismatched records, and inventories uncovered citations. Research instructions,
+evidence notes and incomplete drafts stay out of the rendered page. See
+`docs/citation-context-engine.md` for batch preparation and validation commands.
+
 ---
 
 ## 3. Claim underline — *deferred, not cancelled*
