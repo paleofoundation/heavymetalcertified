@@ -1,0 +1,226 @@
+{
+  "page": "briefings/heavy-metals-in-fertilizers",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "T-4-93 — Safety Standards for Fertilizers and Supplements",
+      "kind": "Government guidance",
+      "citation": "Canadian Food Inspection Agency. T-4-93: Safety standards for fertilizers and supplements. Modified 22 November 2024; section 3.1 and Table 1.",
+      "summary": "CFIA derives product metal concentrations from maximum annual application rates and acceptable additions to soil over 45 years. The standards cover total metal content in fertilizers and supplements, including processed sewage and compost.",
+      "establishes": "The cumulative cadmium allowance is 4 kg/ha; the example 20 mg/kg product concentration assumes 4,400 kg/ha annually. Application rate and concentration must use the same dry or as-is basis. This is not a universal food limit.",
+      "relevance": "It supports considering input history alongside HMTc product testing. The Canadian calculation does not establish that every jurisdiction uses a 45-year horizon or that a finished-product test cannot detect soil-derived contamination.",
+      "links": [
+        {
+          "label": "CFIA memorandum",
+          "href": "https://inspection.canada.ca/en/plant-health/fertilizers/trade-memoranda/t-4-93"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "bac5953ffcb5dae52b1124639f10b0a7010587e6145a83c34e19de549005d5dc",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://inspection.canada.ca/en/plant-health/fertilizers/trade-memoranda/t-4-93",
+            "note": "Read sections 3.1.1–3.1.2, Table 1, basis footnote and modified date. The original URL redirects here. Chromium is total; thallium/vanadium may be requested case by case. Editorial: do not generalize Canada’s horizon to all four jurisdictions or a fixed product limit."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Regulation (EU) 2019/1009 laying down rules on the making available on the market of EU fertilising products",
+      "kind": "Legislation",
+      "citation": "European Parliament and Council. Regulation (EU) 2019/1009 of 5 June 2019 laying down rules on the making available on the market of EU fertilising products. OJ L 170, 25 June 2019, pp. 1–114; original act.",
+      "summary": "The original act sets category-specific contaminant limits for EU fertilising products. Inorganic phosphate fertilizers with at least 5% phosphorus-pentoxide equivalent have a 60 mg/kg P₂O₅ cadmium limit; qualifying low-cadmium labeling uses 20 mg/kg P₂O₅.",
+      "establishes": "The act generally applies from 16 July 2022 and called for a review by July 2026, without automatically lowering the limit. These are composition rules with specified categories and bases, not a shared 45-year cumulative-loading formula.",
+      "relevance": "It supports examining fertilizer composition as an upstream input. It does not prove the source of a particular food result or validate HMTc’s testing frequency; current compliance also requires applicable amendments and national provisions.",
+      "links": [
+        {
+          "label": "Original EU regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1009"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "5829b88876b704efce4f3499d206fe2b39ae06d2ce8ca67dca21ae9abf7c9f75",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1009",
+            "note": "Read Article 3, Articles 49/53, Annex I PFC1(B)/1(C)(I), and Annex III low-cadmium labeling clauses. Original act reviewed; this record does not claim to verify completion of the 2026 review or every later amendment. Editorial: its composition limits contradict a uniform four-jurisdiction cumulative-horizon characterization."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "40 CFR Part 503 — Standards for the Use or Disposal of Sewage Sludge",
+      "kind": "Regulation",
+      "citation": "U.S. Environmental Protection Agency. 40 CFR Part 503, Standards for the Use or Disposal of Sewage Sludge, especially §§503.13, 503.23 and 503.43. July 2023 codification consulted alongside EPA’s regulatory-determinations overview, updated 12 November 2025.",
+      "summary": "The land-application rules set dry-weight ceilings, including cadmium 85, lead 840 and mercury 57 mg/kg. They also specify cumulative-loading and concentration-based compliance routes, with conditions depending on how sludge is used.",
+      "establishes": "The cumulative route is not mandatory in every case. Chromium was removed from land-application limits, but remains regulated for surface disposal and incineration. These are sewage-sludge rules, not universal fertilizer or crop limits.",
+      "relevance": "They support tracing biosolids inputs and application records. HMTc must keep these environmental controls separate from food specifications and cannot infer a particular field’s history or a food’s compliance from this rule alone.",
+      "links": [
+        {
+          "label": "40 CFR Part 503 · 2023",
+          "href": "https://www.govinfo.gov/content/pkg/CFR-2023-title40-vol32/pdf/CFR-2023-title40-vol32-part503.pdf"
+        },
+        {
+          "label": "EPA regulatory overview",
+          "href": "https://www.epa.gov/biosolids/regulatory-determinations-pollutants-biosolids"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "d397afbd48f1ee6dc543ae54c7133c39daafa0319a5118325c841a6eaec78848",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title40-vol32/pdf/CFR-2023-title40-vol32-part503.pdf",
+            "note": "Read §§503.1,503.10,503.13(a)–(b),503.23 and503.43 (printed pp.839–840,844–848,855,866–867). Current eCFR retrieval failed; dated codification is explicit. Section503.13(a)(2) allows an alternative to cumulative loading."
+          },
+          {
+            "url": "https://www.epa.gov/biosolids/regulatory-determinations-pollutants-biosolids",
+            "note": "Read all three disposal-route tables and the November2025 update stamp; confirms ceilings and continued chromium controls outside land application. Editorial: the page’s general “no longer among federal limits” wording is too broad."
+          },
+          {
+            "url": "https://www.epa.gov/sites/default/files/2018-11/documents/biennial-review-2005-summary.pdf",
+            "note": "EPA historical review table footnote identifies the1995 amendment removing land-application chromium limits. The removal was route-specific."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "GB 38400-2019 — Limits of Toxic and Harmful Substances in Fertilizers",
+      "kind": "Standard",
+      "citation": "State Administration for Market Regulation and Standardization Administration of China. GB 38400-2019, Limitation requirements of toxic and harmful substance in fertilizers (肥料中有毒有害物质的限量要求). Published 17 December 2019; effective 1 July 2020.",
+      "summary": "The official standards catalog identifies this mandatory national fertilizer standard and lists it as current on the record examined.",
+      "establishes": "This review confirms the document’s identity, classification and dates from the official catalog. The normative text was not accessed, so its numerical limits, detailed scope and calculation methods are not verified here.",
+      "relevance": "It establishes that China publishes a fertilizer-contaminant standard. It does not substantiate the briefing’s claim that all four jurisdictions use the same cumulative-loading approach or 45-year horizon.",
+      "links": [
+        {
+          "label": "Official Chinese standards record",
+          "href": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=76E30A68743B8F552A3EBE6334C7BC07"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "6030dd75c2f5939d464b00d2b03a5624b96f251a15b350744d60656f4ef5cb12",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=76E30A68743B8F552A3EBE6334C7BC07",
+            "note": "Read official catalog identity/status/date/publisher fields and mandatory-standard search listing. Full normative text not accessed. No threshold or cumulative-loading methodology inferred from its title."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Wastewater-Irrigation Multi-Metal Crop Pathway (evidence synthesis)",
+      "kind": "Preprint synthesis",
+      "citation": "Pendergrass, Karen. Wastewater and sewage-effluent irrigation is a single upstream pathway that co-elevates multiple metals in the same crop, concentrating in leafy greens on peri-urban plots across the Global South. Heavy Metal Index, updated 27 July 2026. Preprint synthesis; doi:10.83376/hmi.wastewater-irrigation-multimetal-crop-pathway.",
+      "summary": "The synthesis connects five sources on irrigation-related crop contamination, including a lead meta-analysis, field surveys and a controlled arsenic-irrigation experiment.",
+      "establishes": "It is an author’s interpretation, with no external review recorded on the examined page. The arsenic experiment models geogenic groundwater rather than sewage, and the evidence does not uniformly isolate irrigation from other inputs.",
+      "relevance": "It supplies a source map for HMTc’s upstream-risk argument. Shared authorship means the separate Index page is not independent corroboration; its mechanistic and surveillance claims require checking the underlying studies.",
+      "links": [
+        {
+          "label": "Read the synthesis",
+          "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "defb5555716c58dbbb8911624ecaa5395791bc982eb2042bbf96ce45cc5937ce",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway",
+            "note": "Read overview, source sections, uncertainty and peer-review status. No external verdicts recorded; classification is preprint. Underlying studies6–8 were reviewed separately here; the other two were not independently re-reviewed for this record."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Meta-Analysis of Public Health Risks of Lead Accumulation in the Wastewater, Irrigated Soil, and Crops Nexus",
+      "kind": "Systematic review",
+      "citation": "Ali, Adane Sirage; Bayih, Argaw Ambelu; and Gari, Sirak Robele. Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus. Frontiers in Public Health 10:977721, 18 October 2022. doi:10.3389/fpubh.2022.977721.",
+      "summary": "This review included 24 studies of lead in irrigation wastewater, soils and crops. It reported frequent exceedances of the authors’ selected benchmarks, with substantial differences across settings.",
+      "establishes": "Between-study heterogeneity was very high (I²=98%). The review concerns lead, not a pooled multi-metal effect; its modeled risk indices are not observations of illness or proof of a particular causal source.",
+      "relevance": "It supports attention to wastewater-linked sourcing risks. It does not demonstrate that every affected crop exceeds current law or that a four-metal finished-product test would miss the lead it measures.",
+      "links": [
+        {
+          "label": "Read the review",
+          "href": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.977721/full"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "ef9e14ddbd13d2259bfdbe91efec939178a5fea8167ca02843e1c6ab9d044618",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.977721/full",
+            "note": "Read abstract, inclusion methods, results and heterogeneity section. Source internally varies its crop count (44 in abstract,47 in results); no count is adopted here. Included studies and benchmark validity were not independently re-audited."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Levels of Heavy Metals and Their Health Risk Assessment from Wastewater-Irrigated Spinach, Bauchi, Nigeria",
+      "kind": "Research article",
+      "citation": "Adebayo RK, Hassan UF, Adamu HM, Hassan HF, Baba H, Ajiya DA. Levels of heavy metals and their health risk assessment from wastewater irrigated spinach in railway quarters, Bauchi, Bauchi state, Nigeria. International Journal of Advanced Chemistry Research 2(2):12–17, 21 July 2020. doi:10.33545/26646781.2020.v2.i2a.22.",
+      "summary": "The authors analyzed irrigation water and dried edible African spinach from one Bauchi farm. Reported spinach concentrations included lead 6.60, cadmium 1.00 and nickel 7.70 mg/kg.",
+      "establishes": "This is a limited site observation, without a matched irrigation control or chromium speciation. Lead exceeded the authors’ selected plant benchmark, while their calculated health-risk indices were below one; neither establishes observed clinical effects or universal safety.",
+      "relevance": "It illustrates several metals in the same crop. HMTc must retain the dried basis, sampling limitations and distinction between total chromium and Cr(VI) when using it to motivate broader testing.",
+      "links": [
+        {
+          "label": "Read the study",
+          "href": "https://www.chemistryjournals.net/archives/2020/vol2issue2/PartA/2-1-15-200.pdf"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "4ef09c950220c2e17a60e86866f191d90e7837870f2da327b6d7a3aae0739730",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.chemistryjournals.net/archives/2020/vol2issue2/PartA/2-1-15-200.pdf",
+            "note": "Read publisher PDF pp.12–15, methods and Tables1–3. Air-drying is explicit. A population sample count and composite design are not clearly documented. Risk indices depend on selected reference doses and dry-to-fresh conversion; no clinical endpoints measured."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Assessment of Heavy Metal Accumulation in Wastewater-Receiving Soil–Vegetable Systems, Blantyre, Malawi",
+      "kind": "Research article",
+      "citation": "Chiutula C, Mtewa AG, Abraham A, Mvula RLS, Maluwa A, Eregno FE, Njalam’mano J. Assessment of Heavy Metal Accumulation in Wastewater–Receiving Soil–Exotic and Indigenous Vegetable Systems and Its Potential Health Risks: A Case Study from Blantyre, Malawi. International Journal of Environmental Research and Public Health 22(11):1614, 23 October 2025. doi:10.3390/ijerph22111614.",
+      "summary": "This Soche wastewater-treatment-plant field study measured five metals in water, soil and six vegetable species. Water samples had nondetectable cadmium, chromium and lead, while vegetable results varied by species and tissue.",
+      "establishes": "The sampling provides a snapshot, not a measured history of decades of loading. The study used dried plant material and total-element analysis; its unit reporting and food-limit comparisons require care. It did not establish Cr(VI) concentrations.",
+      "relevance": "It supports measuring crops alongside environmental samples. The briefing’s definite attribution to years of accumulated soil loading exceeds what this cross-sectional design isolates; HMTc should treat that mechanism as an interpretation.",
+      "links": [
+        {
+          "label": "Read the study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652890/"
+        }
+      ],
+      "pageDigest": "81ddcf313b0c037f43c5f53e1d2d14cd27a4b06d4f50301a524ecff49f2a0856",
+      "sourceDigest": "2717e2dc3fbd8789deeca3bceea65afe987d269f69882841507edb806e935794",
+      "review": {
+        "reviewer": "Codex, primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652890/",
+            "note": "Read abstract, methods2.2–2.5, results3.1–3.3, tables and conclusion. Thirty-six vegetable samples; rainy-season water grab samples. Methods report final mg/L while tables use mg/kg, with dried preparation; no recalculation of food-limit exceedances adopted. Historical loading and speciation not measured."
+          }
+        ]
+      }
+    }
+  }
+}

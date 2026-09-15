@@ -1,0 +1,118 @@
+{
+  "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "FDA Human Foods Program 2026 priority deliverables",
+      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "sourceDigest": "90bd3b9f83610dedfa56cb5f621ea7f0d8a1ceca650a1a59f95fffd5661ef3b2",
+      "citation": "U.S. Food and Drug Administration. Human Foods Program 2026 Priority Deliverables. 2026 program work plan; accessed September 15, 2026.",
+      "summary": "FDA identifies work toward cadmium and inorganic-arsenic action levels for baby and toddler foods, alongside chemical-hazard guidance, surveillance and infant-formula initiatives.",
+      "establishes": "The page establishes planned agency work. It does not itself adopt numeric limits, establish a completion date or determine the legal effect of a future instrument.",
+      "relevance": "This supports the article’s separation of policy plans from operative state duties. HMTc should review an issued instrument before treating a planned action level as a standard input.",
+      "links": [
+        {
+          "label": "FDA2026 priorities",
+          "href": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
+            "note": "Read introduction, Food Chemical Safety/Closer to Zero and Infant Formula Safety priorities. Scope is the work plan, not a comprehensive verification that no subsequent instrument exists. The federal guidance/adulteration and preemption propositions require their own underlying instruments; this plan alone does not establish them."
+          }
+        ]
+      },
+      "kind": "Government work plan"
+    },
+    "2": {
+      "referenceTitle": "Virginia Code section 3.2-5125.1, Baby Food Protection Act",
+      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "sourceDigest": "6529d60ae250d6ac3fc54ff9b7de9dd8d406a17230eca47616c2c627f94a6a2a",
+      "citation": "Virginia Code §3.2-5125.1, Baby Food Protection Act; 2025 Virginia Acts chapter 693 (HB1844), approved May 2, 2025; substantive provisions effective January 1, 2026.",
+      "summary": "The law covers specified packaged foods sold for children under two and excludes infant formula. It requires representative production-aggregate testing at least monthly, qualified laboratories, public results for shelf life plus one month, and conditional package QR disclosures.",
+      "establishes": "It also restricts sales above FDA-established limits, preserving certain retailer inventory from before January 2026. The text supplies state duties, not a new numerical table for every metal or automatic certification compliance.",
+      "relevance": "HMTc evidence must map the product definition, four listed metals, sample identity, laboratory requirements and disclosure trigger. A passing certification result alone does not discharge these operational duties.",
+      "links": [
+        {
+          "label": "Virginia code provision",
+          "href": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/"
+        },
+        {
+          "label": "Chapter693 enacted PDF",
+          "href": "https://lis.blob.core.windows.net/files/1079923.PDF"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
+            "note": "Read complete subsectionsA–F: arsenic, cadmium, lead, mercury; ISO 17025:2017 accreditation plus method sensitivity and proficiency requirements; public website and conditional QR provisions. No assertion made that every FDA guidance number necessarily qualifies as a sale limit."
+          },
+          {
+            "url": "https://lis.blob.core.windows.net/files/1079923.PDF",
+            "note": "Read both pages of official chapter 693, matched title/HB1844 and approvalMay2, 2025. Enactment2 specifies January 1, 2026 for first-enactment provisions; §B preserves retailer inventory already in stock before that date. Separate work-group clause is not a product limit."
+          }
+        ]
+      },
+      "kind": "Law"
+    },
+    "3": {
+      "referenceTitle": "Illinois SB0073 bill status and Public Act record",
+      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "sourceDigest": "de5399694a413e00675be20cf85548318d01a146b65a6fa2b759760e2cbffc85",
+      "citation": "Illinois Public Act 104-0345 (SB0073), codified at 410 ILCS 620/11.7, Baby foods; toxic elements. Effective January 1, 2026; consumer disclosure begins January 1, 2027.",
+      "summary": "The enacted section requires representative testing of every production aggregate at least monthly by a proficient laboratory. It covers packaged foods for children under two, excludes formula, and sets later website and conditional QR-label disclosure duties.",
+      "establishes": "The sale restriction enforces compliance with this section; the final text does not reproduce the introduced bill’s blanket FDA-limit sale prohibition. January 2026 effectiveness must be separated from January 2027 disclosure.",
+      "relevance": "This supports the article’s state-specific evidence matrix. HMTc should preserve lot results and laboratory qualifications while scheduling the Illinois disclosure requirement separately.",
+      "links": [
+        {
+          "label": "Current Illinois statutory text",
+          "href": "https://ilga.gov/legislation/ilcs/fulltext?DocName=041006200K11.7"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://ilga.gov/legislation/ilcs/fulltext?DocName=041006200K11.7",
+            "note": "Read all of410 ILCS620/11.7(a)–(f) and source note identifying Public Act104-345 effective1-1-26. Source text includes four elements, ISO 17025:2017, EAM 4.7 sensitivity, proficiency z-score and sixµg/kg requirement, shelf life plus one month, and §e’s1-1-27 start. Original bill-status endpoint and enactedPDF retrieval failed; this is the exact enacted section with a Public Act source note, explicitly used instead. No claim that the inaccessible status page was read."
+          }
+        ]
+      },
+      "kind": "Law"
+    },
+    "5": {
+      "referenceTitle": "FDA infant-formula product testing results",
+      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "sourceDigest": "4bb04464829818eaa1368284e82e29a5cf9da9475212f472b1d266fca4c4a9f4",
+      "citation": "U.S. Food and Drug Administration. FDA’s Infant Formula Product Testing Results. 2026 release reporting the FY2023–2025 market-basket survey; accessed September 15, 2026.",
+      "summary": "FDA reports 312 samples across 16 brands, including powder and liquid formula. The page summarizes metals and other contaminants, expresses metal results as prepared for feeding, and describes follow-up testing.",
+      "establishes": "This is occurrence monitoring, not a new legal limit. FDA cautions that a retail snapshot cannot capture all variability among production lots and that detection alone does not establish an unsafe product.",
+      "relevance": "The source supports the article’s evidence-versus-law distinction. HMTc can use it for surveillance context while retaining separate lot-specific testing and jurisdictional requirements.",
+      "links": [
+        {
+          "label": "FDA formula results and survey explanation",
+          "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
+            "note": "Read introduction, Market Basket Survey, Understanding the Results, Testing Methods and2023–2025 results summary including metals. FDA calls this its largest examination; that is the agency’s characterization. Arsenic speciation was performed on a subset. No row-level audit of linked spreadsheets or universal safety certification was performed; links to those unreviewed files are omitted."
+          }
+        ]
+      },
+      "kind": "Government monitoring"
+    }
+  }
+}

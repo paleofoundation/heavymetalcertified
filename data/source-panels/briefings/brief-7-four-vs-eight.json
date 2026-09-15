@@ -26,6 +26,672 @@
           }
         ]
       }
+    },
+    "2": {
+      "referenceTitle": "Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "71493d6f9ea3fe672dcafe72aa1b68b924e8ba1b3eea0ac7bb74ceb3b33f4b56",
+      "citation": "U.S. Food and Drug Administration. Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods. Initiative launched 2021; living program page.",
+      "summary": "FDA’s Closer to Zero initiative addresses children’s dietary exposure to lead, arsenic, cadmium and mercury. Its process combines research, assessment, consultation and development of action levels.",
+      "establishes": "This establishes the initiative’s four-contaminant focus. It does not define all contaminants regulated by FDA or establish the scope of every commercial certification.",
+      "relevance": "The initiative explains the four-metal reference point used in this briefing. HMTc’s wider panel is a separate program choice, not a requirement imposed by Closer to Zero.",
+      "links": [
+        {
+          "label": "FDA initiative",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Transparent exact-source reuse from the same-day review in data/source-panels/briefings/brief-5-retailer-as-anchor. json ref 6: initiative approach and planned-action table were read, distinguishing research/guidance from existing enforcement authority. Relevance reassessed for this page; no source evidence here establishes industry-wide anchoring or all certification panel sizes."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Commission Recommendation (EU) 2024/907 of 22 March 2024 on the monitoring of nickel in food",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "d00987166b4e718b5fe9ccbc7d6c555051700a670ef2629f5afdfbd8e55e9afc",
+      "citation": "European Commission. Commission Recommendation (EU) 2024/907 of 22 March 2024 on the monitoring of nickel in food. OJ L, 26 March 2024.",
+      "summary": "The Commission recommends that Member States, working with food businesses, monitor nickel during 2025–2027 in named foods including cocoa, chocolate, cereals, soy products, pulses and nuts. It also recommends mitigation work and reporting occurrence data to EFSA.",
+      "establishes": "The recommendation responds to both chronic dietary exposure and acute reactions in nickel-sensitized people. It is a monitoring recommendation, distinct from a regulation setting binding commodity limits.",
+      "relevance": "It supports HMTc’s attention to nickel and identifies relevant food matrices. It does not require HMTc certification or a universal eight-metal panel.",
+      "links": [
+        {
+          "label": "Official recommendation",
+          "href": "https://eur-lex.europa.eu/eli/reco/2024/907/oj/eng"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reco/2024/907/oj/eng",
+            "note": "Read recitals 1–9 and operative recommendations 1–5, including 2025–2027 monitoring, food categories, mitigation, sampling and reporting. Official HTML was also retrieved from the equivalent CELEX text. Editorial issues: the briefing describes recommendations as directions and reverses the chronology of March 2024 monitoring and the later nickel maximum-level amendment. Dietary skin flare-ups are explicitly relevant, contrary to the page’s dismissal of that endpoint."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Update of the risk assessment of nickel in food and drinking water",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "8df4de99aec6b4ba2d3eb5ef168fe5fb73af58d6242214b6cae0b627ecab6ec2",
+      "citation": "EFSA Panel on Contaminants in the Food Chain (CONTAM). Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
+      "summary": "Using more than 47,000 occurrence results, EFSA set a chronic nickel tolerable daily intake of 13 µg/kg body weight, based on post-implantation loss in rats. It separately assessed acute oral exposure causing systemic contact dermatitis in nickel-sensitized people.",
+      "establishes": "High-percentile dietary estimates exceeded the chronic benchmark in many child surveys; average exposure was generally below it. These are population exposure benchmarks and modeled risks, not food concentration limits or proof of individual injury.",
+      "relevance": "The assessment supports including nickel in HMTc’s hazard review while requiring separate treatment of chronic intake, sensitized consumers and commodity limits.",
+      "links": [
+        {
+          "label": "Full EFSA opinion in PMC",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7643711/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7643711/",
+            "note": "Retrieved full article directly after web access errors; read abstract and Conclusions/Recommendations, including risk characterization. At 95 th-percentile lower bound,10/14 toddler and 11/19 other-child surveys exceeded TDI; average generally did not. EFSA says chronic assessment is conservative and the reproductive critical effect is not itself relevant to young age groups. Page language implying routine average exceedance and dismissing dietary skin endpoints overstates the findings."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Australia New Zealand Food Standards Code, Schedule 19 — Maximum levels of contaminants and natural toxicants",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "3b4f668e39c5bc71008e4e87613741ffa547b6f9e95cd80e89f8d68511e503a7",
+      "citation": "Australia New Zealand Food Standards Code, Schedule 19—Maximum levels of contaminants and natural toxicants, instrument F2015L00454; compilation 13 September 2024, §§S19–3 and S19–4. FSANZ, Proposal P1028 implementation information.",
+      "summary": "Schedule 19 sets commodity-specific metal limits. The reviewed 2024 compilation lists aluminium at 0.5 mg/kg for specified infant formula products,1 mg/kg for soy-based formula and 0.2 mg/kg for preterm special-medical products; canned-food tin is 250 mg/kg.",
+      "establishes": "These are food concentration limits with defined product and preparation rules. The 2024 infant-formula revision applies in Australia, with a transition to 13 September 2029; New Zealand opted out of that revision.",
+      "relevance": "The Code provides a concrete example of aluminium regulation beyond the familiar four metals. HMTc comparisons must identify jurisdiction, edition, formula class and concentration basis.",
+      "links": [
+        {
+          "label": "Schedule19, dated compilation",
+          "href": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html"
+        },
+        {
+          "label": "FSANZ P1028 implementation",
+          "href": "https://www.foodstandards.gov.au/food-standards-code/proposals/P1028"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html",
+            "note": "Read commencement and §§S19–3–4, including edible-portion/preparation rules and aluminium/tin table. This is the dated 13 September 2024 compilation, not a claim to have checked every later amendment. The table states tin, all canned foods 250 mg/kg; it does not provide a universal quarter-strength infant tin limit."
+          },
+          {
+            "url": "https://www.foodstandards.gov.au/food-standards-code/proposals/P1028",
+            "note": "Read approval, Australia-only application, New Zealand opt-out, and five-year transition inclusive of stock-in-trade from 13 September 2024 to 13 September 2029. The page’s combined Australia/New Zealand framing omits this important distinction."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "National Food Safety Standard — Maximum Levels of Contaminants in Foods, GB 2762-2022",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "997a11b33af1a97263dc63d41639b930080b7a50b731532ce69dacbb3f7ff47f",
+      "citation": "National Health Commission and State Administration for Market Regulation of China. GB 2762-2022, National Food Safety Standard—Maximum Levels of Contaminants in Foods. Issued 30 June 2022; effective 30 June 2023. Reviewed through USDA FAS unofficial translation CH2023-0040; supersession checked against GB 2762-2025 translation CH2025-0202.",
+      "summary": "The 2022 standard sets limits for named contaminants and food categories, including tin, nickel and total chromium. Tin limits apply to tinplate-packed foods; nickel limits concern hydrogenated vegetable oils and related products; chromium limits cover specified commodity groups.",
+      "establishes": "It supports the presence of these additional metals in Chinese food regulation, not a requirement to test every food for all of them. The 2022 edition has been replaced by GB 2762-2025, effective 2 September 2026.",
+      "relevance": "HMTc can use these rules as jurisdiction-specific context for a broader panel. It must distinguish total chromium from Cr(VI), and current law from the 2022 edition cited in this briefing.",
+      "links": [
+        {
+          "label": "USDA translation of GB2762-2022",
+          "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf"
+        },
+        {
+          "label": "USDA translation of replacement GB2762-2025",
+          "href": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=China+Releases+the+Standard+for+Maximum+Levels+of+Contaminants+in+Foods_Beijing_China+-+People%27s+Republic+of_CH2023-0040.pdf",
+            "note": "Read report cover/foreword, scope/application principles and §§4.5–4.7 tables 5–7. USDA explicitly labels this an unofficial translation, not authoritative Chinese text. Tin 250/150/50 mg/kg is restricted to tinplate containers; nickel 1 mg/kg to specified hydrogenated-oil products; chromium is expressed asCr. Do not turn category-specific rules into an all-food eight-metal mandate."
+          },
+          {
+            "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Revised+National+Food+Safety+Standard+on+Maximum+Levels+of+Contaminants+in+Foods+Released_Beijing_China+-+People%27s+Republic+of_CH2025-0202.pdf",
+            "note": "Read report highlights/summary, foreword explicitly replacing 2022 plus first amendment, and §§4.5–4.7 atprinted pp 12–13. Effective 2 September 2026; corresponding tin/nickel/chromium categories persist. This later edition is supplied only as dated status context, not silently substituted for the cited document. Chinese official notices were located but could not be retrieved."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Regulation in India of Heavy Metals in Food Items: A Critical Analysis",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "4945cf747e3e64ca34d10cc4e38a20f6802f2a1e29e3c2e88103aa2483f522b1",
+      "citation": "Sadhya M, Saha M. Regulation in India of Heavy Metals in Food Items: A Critical Analysis. Environmental Analysis & Ecology Studies. 2023;11(5):000771. Published 21 December 2023. doi:10.31031/EAES.2023.11.000771.",
+      "summary": "This legal review discusses India’s food-safety framework and reproduces selected contaminant limits from the 2011 regulations. Its table includes tin for specified canned foods, chromium for fishery products and nickel for specified processed vegetable oils and fats.",
+      "establishes": "The article establishes what its authors reported about those rules in 2023. It is not enacted law, a current consolidated regulatory schedule or an original exposure study.",
+      "relevance": "It provides context for HMTc’s comparison with Indian contaminant regulation. Any operational limits require checking the governing current instrument and exact food category.",
+      "links": [
+        {
+          "label": "Publisher article PDF",
+          "href": "https://crimsonpublishers.com/eaes/pdf/EAES.000771.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://crimsonpublishers.com/eaes/pdf/EAES.000771.pdf",
+            "note": "Read title/abstract, publication metadata, legal-instruments discussion and Table 1, then concluding policy argument. Publisher labels it Review Article; no independent peer-review claim made. Table 1 gives tin 250 mg/kg for listed canned foods, chromium 12 mg/kg for all fishery products and nickel 1.5 mg/kg for specified oils/fats. This is a selective reproduction, not proof that all foods must meet these limits today. Broader health claims in the article are not adopted."
+          }
+        ]
+      },
+      "kind": "Legal review"
+    },
+    "8": {
+      "referenceTitle": "Hexavalent Chromium Maximum Contaminant Level (10 µg/L)",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "4cbce941c9269176ddcbdeb6d5748c8a003c621caca5ab7611f416fb6f2efa59",
+      "citation": "California State Water Resources Control Board. Hexavalent Chromium MCL, rulemaking SWRCB-DDW-21-003, effective 1 October 2024. California OEHHA. Public Health Goal for Hexavalent Chromium in Drinking Water. July 2011.",
+      "summary": "California’s rule establishes a drinking-water maximum contaminant level of 10 µg/L for Cr(VI), with system-size compliance dates in 2026–2028. OEHHA’s separate 2011 public-health goal is 0.02 µg/L, based on cancer-risk assessment.",
+      "establishes": "The enforceable MCL and health goal have different legal roles. They concern drinking water, not chromium limits for packaged food; the health goal is not itself an enforceable standard.",
+      "relevance": "These sources illustrate why HMTc should distinguish chemical species and exposure routes. Neither value can be transferred directly to food or treated as a certification mandate.",
+      "links": [
+        {
+          "label": "Water Board rulemaking and compliance dates",
+          "href": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html"
+        },
+        {
+          "label": "OEHHA2011 technical support document",
+          "href": "https://oehha.ca.gov/sites/default/files/media/downloads/water/chemicals/phg/cr6phg072911.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/SWRCBDDW-21-003_hexavalent_chromium.html",
+            "note": "Read Summary of Rulemaking, compliance table and rulemaking status: effective 1 October 2024,10 µg/L MCL,0.1 µg/L reporting limit, compliance 1 October 2026/2027/2028 by system size. Does not establish a finished-food limit. The briefing’s first-ever-in 2024 wording needs historical qualification: the source’s linked Chromium 6 chronology records an earlier 2014 rule withdrawn 2017; that chronology was located in agency search results, not independently fully read here."
+          },
+          {
+            "url": "https://oehha.ca.gov/sites/default/files/media/downloads/water/chemicals/phg/cr6phg072911.pdf",
+            "note": "Read printed pp 1–2 Summary (physical 8–9):0.02 µg/L PHG, oral cancer slope from NTP mouse intestinal tumors, inhalation component, early-life adjustment and interconversion discussion. This is the 2011 risk-assessment document, not a claim of review of later PHG revisions or all 162 pages."
+          }
+        ]
+      }
+    },
+    "9": {
+      "referenceTitle": "Proposition 65 list (Safe Drinking Water and Toxic Enforcement Act of 1986)",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "7ab7e5816985bd614f2beda9ff03132c1c15e72ca9360de3d1df74df916a4b44",
+      "citation": "California Office of Environmental Health Hazard Assessment. The Proposition 65 List. Nickel and chromium entries, accessed 15 September 2026.",
+      "summary": "OEHHA lists metallic nickel and nickel compounds for cancer, soluble nickel compounds for developmental and male reproductive toxicity, and hexavalent chromium compounds for cancer and reproductive/developmental toxicity.",
+      "establishes": "The entries identify listed chemical forms, endpoints and listing dates. Listing alone does not supply a universal food concentration cap, prove an exposure is unlawful or show a particular food caused cancer.",
+      "relevance": "For HMTc’s panel discussion, the list is a reason to assess nickel and chromium species and applicable exposure duties. It does not replace food-specific risk assessment.",
+      "links": [
+        {
+          "label": "Official chemical list",
+          "href": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/proposition-65-list",
+            "note": "Read entries for metallic nickel(cancer 1 October 1989), nickel compounds(cancer 7 May 2004), soluble nickel compounds(developmental/male reproductive 26 October 2018), and hexavalent chromium(cancer 27 February 1987; reproductive/developmental 19 December 2008). Scoped to these entries; neither all nickel forms nor all exposure routes are interchangeable."
+          }
+        ]
+      }
+    },
+    "10": {
+      "referenceTitle": "Nickel Content of Food and Estimation of Dietary Intake",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "26671de6eb8c4bea31ad9def5316df6837b496720afb283703b9c0efa3517115",
+      "citation": "Flyvholm MA, Nielsen GD, Andersen A. Nickel content of food and estimation of dietary intake. Zeitschrift für Lebensmittel-Untersuchung und-Forschung. 1984;179(6):427–431. doi:10.1007/BF01043419.",
+      "summary": "This review identifies cocoa/chocolate, soybeans, oatmeal, nuts and legumes as foods with high nickel content, and discusses estimated Danish dietary intake and possible eczema flare-ups after oral exposure.",
+      "establishes": "The accessible abstract supports these foods as nickel sources. It does not establish a current global ranking with cocoa above every common food or oats near the top in all markets.",
+      "relevance": "It provides historical context for HMTc to consider nickel in relevant ingredient matrices. Current testing and newer occurrence assessments are needed for product-specific decisions.",
+      "links": [
+        {
+          "label": "Indexed author abstract and citation",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/6395539/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/6395539/",
+            "note": "Read the complete author abstract and metadata through the indexed NLM result; direct open returned no body and publisher DOI retrieval failed. Full article/tables were not accessed. Abstract explicitly calls itself a review and identifies high-nickel foods; no universal rank is established. NLM and EPA bibliographic records agree 427–431; DTU record instead gives 427–437, a metadata discrepancy not adopted."
+          }
+        ]
+      }
+    },
+    "11": {
+      "referenceTitle": "Association between nickel exposure and diabetes risk: an updated meta-analysis of observational studies",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "aa8d63c624492f111951adc3ea415a752e08e7cbf8a3258d45fe8a83b9e4b4b9",
+      "citation": "Lu H, Shi X, Han L, Liu X, Jiang Q. Association between nickel exposure and diabetes risk: an updated meta-analysis of observational studies. Frontiers in Public Health. 2024;12:1463880. Published 5 November 2024. doi:10.3389/fpubh.2024.1463880.",
+      "summary": "The meta-analysis pooled 19 observational studies involving 46,071 participants. Urinary nickel showed a weak positive association with diabetes; blood nickel did not show a significant overall association.",
+      "establishes": "This is biomarker-based observational evidence, largely cross-sectional. It does not establish that dietary nickel causes diabetes, quantify a food limit or show that certification prevents disease.",
+      "relevance": "It extends the research context for HMTc’s nickel review, while the briefing’s commercial argument must remain separate from the association and its uncertainties.",
+      "links": [
+        {
+          "label": "Full research article",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11574963/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11574963/",
+            "note": "Retrieved full PMC article directly; read abstract, Methods 2.1–2.5, Results 3.1–3.3 and Discussion. Nineteen eligible studies after quality exclusion; three cohort, two case-control, fourteen cross-sectional; urinary heterogeneityI²86%. Blood null result and call for prospective studies limit causal interpretation. Abstract urineCI upper bound 0.2 differs from Results 0.25; no CI repeated in drawer."
+          }
+        ]
+      }
+    },
+    "12": {
+      "referenceTitle": "Safety of aluminium from dietary intake — Scientific Opinion",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "1dffffdc829ff9428d092735f4d326dd5acc4c75c6406cb5982a233189c76a10",
+      "citation": "EFSA Panel on Food Additives, Flavourings, Processing Aids and Food Contact Materials (AFC). Safety of aluminium from dietary intake. EFSA Journal. 2008;754:1–34. Adopted 22 May 2008; published 15 July 2008. doi:10.2903/j.efsa.2008.754.",
+      "summary": "EFSA established a tolerable weekly aluminium intake of 1 mg/kg body weight from all dietary sources, drawing on animal neurodevelopmental and reproductive studies and aluminium’s persistence in the body. Estimated intake could exceed this benchmark for part of the European population.",
+      "establishes": "The benchmark is an aggregate weekly exposure value, not a universal aluminium concentration limit for formula. The assessment also states that available data did not show dietary aluminium to constitute an Alzheimer’s-disease risk.",
+      "relevance": "It supports considering aluminium in HMTc’s exposure review while preserving the difference between hazard assessment, an intake benchmark and a product pass/fail rule.",
+      "links": [
+        {
+          "label": "EFSA opinion and annex PDF",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2008.754"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2008.754",
+            "note": "Read opinion Summary printed pp 1–3 in the 122-page opinion-plus-annex PDF: sources/exposure variation, low oral bioavailability, persistence, animal effects,1 mg/kg/week derivation, and Alzheimer’s/carcinogenicity qualifications. Not a full 122-page review. The page’s sevenfold-cut chronology was not independently established by these reviewed pages; do not attribute the earlier benchmark or first reduction date to this 2008 opinion without further historical evidence."
+          }
+        ]
+      }
+    },
+    "13": {
+      "referenceTitle": "The Health Effects of Aluminum Exposure",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "4dbf6b7b885671b5497250f0c0dce7bad78b86309faeb742e6951b839d4fdedb",
+      "citation": "Klotz K, Weistenhöfer W, Neff F, Hartwig A, van Thriel C, Drexler H. The Health Effects of Aluminum Exposure. Deutsches Ärzteblatt International. 2017;114(39):653–659. doi:10.3238/arztebl.2017.0653.",
+      "summary": "This selective review evaluates aluminium exposure from environmental, occupational and therapeutic settings. It distinguishes demonstrated high-exposure neurotoxicity from unresolved claims about Alzheimer’s disease and breast cancer.",
+      "establishes": "Occupational biomarkers and dialysis exposure are not equivalent to ordinary dietary intake. The review does not establish that aluminium in any particular formula causes neurological disease.",
+      "relevance": "It gives HMTc’s aluminium discussion needed dose-and-route context. Monitoring rationale should not turn high-exposure evidence into an unqualified claim about all detectable food aluminium.",
+      "links": [
+        {
+          "label": "Full review in PMC",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5651828/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5651828/",
+            "note": "Retrieved full article directly; read abstract, Methods, exposure overview and Key Messages. Method is selective PubMed/SCOPUS review plus authors’ expertise, not systematic meta-analysis. Abstract distinguishes cause versus consequence for aluminium in Alzheimer brains; key messages find no established association with Alzheimer’s or breast cancer and identify demonstrated dialysis/workplace effects."
+          }
+        ]
+      }
+    },
+    "14": {
+      "referenceTitle": "Commission Regulation (EU) No 380/2012 of 3 May 2012 amending Annex II to Regulation (EC) No 1333/2008 as regards the conditions of use and the use levels for aluminium-containing food additives",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "93368063148c3f54d87e357658d145e051c8b71cdbeb09ed140317e4ef8be4f8",
+      "citation": "European Commission. Commission Regulation (EU)  No. 380/2012 of 3 May 2012 amending Annex II to Regulation (EC)  No 1333/2008 as regards conditions of use and use levels for aluminium-containing food additives. OJ L119, 4 May 2012.",
+      "summary": "This regulation narrowed permissions and levels for specified aluminium-containing food additives, including aluminium lakes, in response to EFSA’s dietary-intake assessment.",
+      "establishes": "It is a binding amendment to additive authorizations with specific application and transition dates. It is not a general contaminant ceiling for all aluminium in every food.",
+      "relevance": "It illustrates a regulatory response beyond the four-metal panel. HMTc should distinguish intentionally used additives and their authorized conditions from measured total aluminium contamination.",
+      "links": [
+        {
+          "label": "Official2012 regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2012/380/oj/eng"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2012/380/oj/eng",
+            "note": "Read recitals 1–6, Articles 1–3 and AnnexPart A aluminium-lake permissions plus selected food-category changes. Transition provisions distinguish 1 February 2014 and 1 August 2014; entry into force 20 days after publication. This review covers the original amending act, not current consolidated additive permissions. No blanket aluminium-food cap is established."
+          }
+        ]
+      }
+    },
+    "15": {
+      "referenceTitle": "Prescription Infant Formulas Are Contaminated with Aluminium",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "ae2b72f73b21e0b47fe6fd28a61933ad58c88bfd8ef6cd61d3111e02dbc34718",
+      "citation": "Redgrove J, Rodriguez I, Mahadevan-Bava S, Exley C. Prescription Infant Formulas Are Contaminated with Aluminium. International Journal of Environmental Research and Public Health. 2019;16(5):899. doi:10.3390/ijerph16050899.",
+      "summary": "The authors measured total aluminium in 24 prescription formula/nutrition products obtained from a UK pediatric clinic. Ready-to-drink concentrations ranged approximately 50–1,956 µg/L, and powdered products also varied.",
+      "establishes": "The roughly 39-fold ready-to-drink range supports variation among sampled products. This small product survey did not measure infant health outcomes or establish current market-wide levels; powders and liquids have different reporting bases.",
+      "relevance": "It supports HMTc’s interest in measuring aluminium in specialist nutrition products. It does not demonstrate a certification benefit, a universal infant dose threshold or that every sampled product served the same clinical purpose.",
+      "links": [
+        {
+          "label": "Full laboratory study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6427753/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6427753/",
+            "note": "Retrieved full article directly; read abstract, Methods, Tables 1–5, Results 3.1–3.4 and Discussion.24 unopened clinic-sourced products, microwave acid/peroxide digestion and THGFAAS; reported replicate variability is substantial in some liquids. Ready-to-drink range supports approximately 40-fold concentration variation, not necessarily dose variation or inter-batch consistency. Product categories include preterm formulas and weight-gain supplements."
+          }
+        ]
+      }
+    },
+    "16": {
+      "referenceTitle": "Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "056255ed7b6b94239fc74ef5d6f6e403a25c0a0e614914ed61a67489637028f9",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp 103–157; Annex I §3.5.",
+      "summary": "The original regulation sets inorganic-tin maxima of 200 mg/kg for covered canned foods and 100 mg/kg for covered canned beverages, with 50 mg/kg for specified canned infant/young-child and medical foods.",
+      "establishes": "These are category-specific binding limits. Infant provisions exclude canned dried/powdered products; general food and beverage limits use wet weight. They do not regulate all tin species or all food packaging identically.",
+      "relevance": "The rule supplies an actual tin benchmark for HMTc’s comparison. Its narrower infant categories and speciation prevent treating the page’s shorthand as a universal global standard.",
+      "links": [
+        {
+          "label": "Original regulation PDF",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Downloaded official 55-page original act and read Annex I §3.5.1–3.5.5 onOJpL 119/141(physical 39), including remarks and exclusions. This is the 2023 instrument, not an assertion that every later amendment was reviewed. EU infant 50 is one quarter of general-food 200 but not one quarter of beverage 100; other jurisdictions/Codex use different scopes."
+          }
+        ]
+      }
+    },
+    "17": {
+      "referenceTitle": "General Standard for Contaminants and Toxins in Food and Feed",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "7270319d49bc6cb8146e26ff23ff493e80b66286917eae3da30cdc29bbccda89",
+      "citation": "Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS193-1995. Adopted 1995; reviewed consolidated version last amended 2025, tin table, p75.",
+      "summary": "Codex recommends maximum tin levels of 250 mg/kg for canned foods other than beverages and 150 mg/kg for canned beverages, with additional provisions for specified meat products in non-tinplate containers.",
+      "establishes": "The standard’s scope expressly describes recommendations for international trade, not automatically binding national law. Its tin definition defaults to total tin unless otherwise specified; its table does not establish a general 50 mg/kg infant-food limit.",
+      "relevance": "Codex helps HMTc compare food-category rules and the reasons for tin surveillance. It does not establish complete global harmonization or mandate an eight-metal certificate.",
+      "links": [
+        {
+          "label": "Codex consolidated standard",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/fr/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXS+193-1995%2FCXS_193e.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/fr/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXS+193-1995%2FCXS_193e.pdf",
+            "note": "Read cover/version history,§1 scope,§2.4 definition ofML,§3 principles, and printed p 75 TIN table in 86-page 2025 version. Values 250/150 differ from EU 200/100;50 mg/kg rows are specified non-tinplate meats, not generic infant foods. Contaminant definition is Sn-total unless otherwise mentioned. The bibliography/page’s inorganic-tin shorthand and uniform quarter-infant statement need qualification."
+          }
+        ]
+      }
+    },
+    "18": {
+      "referenceTitle": "Occurrence of Tin in Foods and Dietary Exposure Assessment in Zhejiang Province, China",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "89560f33a95b8ed6839248076f159b91a2871720c753aad7d9210a9962fe177c",
+      "citation": "Ye S, Chen J, Zhang R, et al. Occurrence of Tin in Foods and Dietary Exposure Assessment in Zhejiang Province, China. Foods. 2026;15(6):982. Published 10 March 2026. doi:10.3390/foods15060982.",
+      "summary": "The study measured total tin in 2,014 samples from five food categories in Zhejiang and combined concentrations with dietary-survey data. Canned foods had higher concentrations than most fresh foods, while modeled total-tin hazard quotients remained below 1.",
+      "establishes": "It is regional occurrence and modeled-exposure evidence. Organotin risks were explored through assumed fractions and scenarios, not measured organotin speciation; it does not demonstrate universal high risk or causal leaching in each sample.",
+      "relevance": "It supports HMTc’s focus on packaging and product matrix when deciding tin surveillance. Its generally low total-tin estimates and modeling limitations belong alongside the briefing’s concern about canned foods.",
+      "links": [
+        {
+          "label": "Full2026 study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13025888/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13025888/",
+            "note": "Retrieved full article directly; read abstract, Results 3.1/Table 1, Conclusions and modeling description. Multistage sampling, n=2014, ICP-MS total Sn, half-LOD substitution and 2015–2017 dietaryrecalls. Organotin is a reverse/scenario assessment, not directly measured. Authors’ regulatory discussion is not used to override primary law; their generally low total Sn/THQ findings qualify the page’s alarming framing."
+          }
+        ]
+      }
+    },
+    "19": {
+      "referenceTitle": "Genetic and Epigenetic Mechanisms in Metal Carcinogenesis and Cocarcinogenesis: Nickel, Arsenic, and Chromium",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "0600677d31c216d4e1d1f1e492eccc2b070bbaf57d461da59e61f2cd22d00e84",
+      "citation": "Salnikow K, Zhitkovich A. Genetic and Epigenetic Mechanisms in Metal Carcinogenesis and Cocarcinogenesis: Nickel, Arsenic, and Chromium. Chemical Research in Toxicology. 2008;21(1):28–44. Online 30 October 2007. doi:10.1021/tx700198a.",
+      "summary": "This mechanistic review describes different carcinogenic processes for nickel, inorganic arsenic and Cr(VI). For chromium, cellular uptake and reduction explain why oxidation state and where reduction occurs matter.",
+      "establishes": "The reviewed chromium section describes sulfate-channel entry, extracellular reduction to poorly permeable Cr(III), and intracellular reduction that can generate genotoxic damage. Mechanistic evidence does not quantify risk from a particular food concentration.",
+      "relevance": "It supports HMTc’s attention to chromium speciation. A total-chromium result alone cannot identify oxidation state, but the review does not demonstrate the prevalence of Cr(VI) in food or validate an HMTc method.",
+      "links": [
+        {
+          "label": "Full author manuscript",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2602826/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2602826/",
+            "note": "Retrieved full PMC author manuscript; read abstract and chromium uptake/reduction discussion, including sulfate mimicry, extracellular detoxification versus intracellular activation and ascorbate/thiol reducers. These mechanistic experiments and review conclusions are not direct dietary human-outcome evidence. No blanket equivalence between chromium forms or unconditional risk at any detectable amount is adopted."
+          }
+        ]
+      }
+    },
+    "20": {
+      "referenceTitle": "Adverse Human Health Effects of Chromium by Exposure Route: A Comprehensive Review Based on Toxicogenomic Approach",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "ce89aed5fb568fa6e3cc0d9aaf65e1489f3c133cb2e9bc122665ac27ce95309d",
+      "citation": "Shin DY, Lee SM, Jang Y, Lee J, Lee CM, Cho EM, Seo YR. Adverse Human Health Effects of Chromium by Exposure Route: A Comprehensive Review Based on Toxicogenomic Approach. International Journal of Molecular Sciences. 2023;24(4):3410. doi:10.3390/ijms24043410.",
+      "summary": "The authors review dermal, inhalation and ingestion evidence and analyze public gene-expression datasets to propose route-related chromium toxicity pathways. The ingestion analysis uses Cr(VI)-exposed mouse duodenum data.",
+      "establishes": "The findings support route-specific assessment and mechanistic hypotheses. They do not establish that workplace lung-cancer evidence transfers directly to food ingestion or that predicted gene networks prove human disease.",
+      "relevance": "For HMTc, this helps explain why a chromium source drawer must distinguish skin, air, drinking water and food. It does not establish a finished-food limit or certify analytical performance.",
+      "links": [
+        {
+          "label": "Full review and bioinformatics analysis",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9963995/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9963995/",
+            "note": "Retrieved full article directly; read abstract,§2 dermal-data design,§4 gastrointestinal analysis and§6 Conclusions. Human oral evidence is described as limited; oral datasetGSE 120146 is mouse duodenum. Conclusions acknowledge analysis of only partial genomic data and call for integration of more data. Gene-network associations remain proposed mechanisms, not clinical effect estimates."
+          }
+        ]
+      }
+    },
+    "21": {
+      "referenceTitle": "Scientific Opinion on the risks to public health related to the presence of chromium in food and drinking water",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "702481cc8139e05200dbf5bcef2a35a120077e58061a9be5adb5d63b41916163",
+      "citation": "EFSA CONTAM Panel. Scientific Opinion on the risks to public health related to the presence of chromium in food and drinking water. EFSA Journal. 2014;12(3):3595. Adopted 27 February 2014; corrected 12 June 2014 version replacing 13 March 2014 publication. doi:10.2903/j.efsa.2014.3595.",
+      "summary": "EFSA treated reported food chromium as Cr(III) because oxidation-state occurrence data were unavailable and food is generally reducing. It evaluated drinking-water Cr(VI) separately and called for better species-specific data.",
+      "establishes": "The 2014 opinion reported no standardized Cr(VI) food method or proficiency scheme, while identifying chromatography with ICP-MS and species-specific isotope dilution as useful speciation tools. This is not evidence that Cr(VI) in food cannot be measured today.",
+      "relevance": "It supports HMTc’s requirement to justify speciation methods and matrices. It also limits the briefing’s present-tense claims about analytical impossibility and the absence of worldwide food rules.",
+      "links": [
+        {
+          "label": "EFSA publisher abstract and metadata",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3595"
+        },
+        {
+          "label": "Corrected EFSA opinion, municipal-government copy",
+          "href": "https://www.comune.brescia.it/s3/906/allegati/docpubbl/amb/osservatorio-acqua-bene-comune/efsa-journal-2014-studio-relativo-al-rischio-sulla-salute-umana-dovuto-alla-presenza-di-cromo-negli-alimenti-e-nelle-acque-destinate-al-consumo-umano.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2014.3595",
+            "note": "Read publisher abstract and metadata: Cr(III) TDI 0.3 mg/kg/day, food Cr(III)/water Cr(VI) assumptions, modeledMOEs and need for species data. Full-body publisher HTML was not available beyond abstract/references; PDF content was reviewed separately via government-hosted copy below."
+          },
+          {
+            "url": "https://www.comune.brescia.it/s3/906/allegati/docpubbl/amb/osservatorio-acqua-bene-comune/efsa-journal-2014-studio-relativo-al-rischio-sulla-salute-umana-dovuto-alla-presenza-di-cromo-negli-alimenti-e-nelle-acque-destinate-al-consumo-umano.pdf",
+            "note": "Downloaded exactEFSA 261-page corrected 12 June 2014 volume; readpp 1–3, analytical-methods discussionpp 30–31, andConclusionsp 121. Correction note is editorial, not substantive. Distinguishes no standardized method from suitable HPLC-ICP-MS/SID research methods correcting interconversion. Page’s “validated”/“cannot measure at scale” and worldwide-no-limit conclusions exceed this historical evidence."
+          }
+        ]
+      }
+    },
+    "22": {
+      "referenceTitle": "In re: Baby Food Products Liability Litigation",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "aa523bae52cc81c858ee407432095c5cfd0b1a6ef8617542c79f4256f7643b46",
+      "citation": "In re Baby Food Products Liability Litigation, No. 3:24-md-03101-JSC (N.D. Cal.), Doc 447, Amended Order re Defendants’ Motions to Dismiss and Motion to Strike, filed 2 April 2025, pp 29–32.",
+      "summary": "The court struck aluminium references from the master complaint after plaintiffs said they did not intend to pursue those claims and the court confirmed they would not be addressed in the MDL. The order separately discusses infant-formula scope.",
+      "establishes": "This is a pleading and litigation-scope ruling, not a finding that aluminium is safe or cannot cause injury. The infant-formula ruling in this document is expressly tentative and permits separate litigation or a request to the JPML.",
+      "relevance": "It demonstrates that HMTc’s chosen analyte scope need not match this MDL’s pleaded claims. It does not establish a toxicological standard or guarantee that certification changes legal outcomes.",
+      "links": [
+        {
+          "label": "Official Doc447",
+          "href": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-md-03101/pdf/USCOURTS-cand-3_24-md-03101-9.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_24-md-03101/pdf/USCOURTS-cand-3_24-md-03101-9.pdf",
+            "note": "Downloaded official 32-page order; read caption,§IVpp 29–31 andconclusionpp 31–32. Aluminium strike based on plaintiffs’ position/scope; text quotes possibility of future plaintiffs’ short-form allegations. Infant-formula strike repeatedly labelled tentative pendingMarch 2025 conference even though amended document filedApril 2; preserve the document’s actual wording rather than infer a later final ruling. No causation adjudication on aluminium."
+          }
+        ]
+      }
+    },
+    "23": {
+      "referenceTitle": "Proposition 65 industry-wide settlement on hexavalent chromium in chrome-tanned leather footwear and gloves",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "9f7525c541e3ae1a8a41e213cae3d0a9d5852b4d4f68f6d0cee156691977181e",
+      "citation": "Center for Environmental Health v. Bali Leathers, Inc., et al., lead case RG19-029736(Alameda County Superior Court). Consent judgment reported 21 February 2024; California Attorney General notice record 2020-03394. CEH settlement account, 7 March 2024.",
+      "summary": "An industry settlement addressed Cr(VI) exposure from chrome-tanned footwear and gloves. CEH describes sourcing requirements intended to prevent surface Cr(VI), including specified tannery protocols or qualifying Leather Working Group audits.",
+      "establishes": "The reviewed Attorney General record confirms a settlement-based judgment and warning/reformulation relief. This is a leather skin-contact matter, not a food regulation or a ruling validating HMTc.",
+      "relevance": "It illustrates a practical enforcement setting for chromium species, while the briefing’s food-panel argument remains an analogy across distinct products and exposure routes.",
+      "links": [
+        {
+          "label": "Attorney General judgment record",
+          "href": "https://oag.ca.gov/prop65/60-Day-Notice-2020-03394"
+        },
+        {
+          "label": "Settling plaintiff’s account",
+          "href": "https://ceh.org/ceh-reaches-agreement-with-leather-companies-to-eliminate-toxic-metal-known-as-hex-chrome/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oag.ca.gov/prop65/60-Day-Notice-2020-03394",
+            "note": "Read judgment metadata, case/party list and relief. Date is 21 February 2024, not citedApril 2024. Linked judgmentPDF 2020-03394 J 5176 could not be retrieved(timeout); do not claim detailed operative-order review. Public record confirms consent judgment and warning/reformulation relief."
+          },
+          {
+            "url": "https://ceh.org/ceh-reaches-agreement-with-leather-companies-to-eliminate-toxic-metal-known-as-hex-chrome/",
+            "note": "Read full indexed 7 March 2024 CEH account:28 companies, Februarycourt entry, tannery protocols or LWG Gold alternative, and opt-in context. This is a party’s description, not an independent efficacy finding or full consent-judgment text. Its skin-contact scope and date contradict treating the reference as anApril 2024 food precedent."
+          }
+        ]
+      }
+    },
+    "24": {
+      "referenceTitle": "People of the State of California v. McWane, Inc. (dba AB&I Foundry)",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "239269b6d6b6b8118a1b77f40f91daaec45654e9413af58153a834047e6fbaa8",
+      "citation": "People of the State of California v. McWane, Inc., dba AB&I, No. 22CV007067 (Alameda County Superior Court). Complaint for Injunctive Relief and Civil Penalties, filed 15 February 2022.",
+      "summary": "The Attorney General alleged that an East Oakland foundry emitted Cr(VI) into surrounding air without required warnings and sought relief under Proposition 65 and other state law.",
+      "establishes": "The complaint establishes allegations and requested remedies, not proven liability or food contamination. Its inhalation exposure and industrial-emission setting differ from dietary exposure.",
+      "relevance": "It provides a concrete chromium enforcement example relevant to HMTc’s broader hazard discussion. It cannot establish that a chromium result in food violates the same provisions or that certification prevents a lawsuit.",
+      "links": [
+        {
+          "label": "Filed complaint",
+          "href": "https://oag.ca.gov/system/files/attachments/press-docs/ABI%20Complaint.pdf"
+        },
+        {
+          "label": "Attorney General filing announcement",
+          "href": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-files-lawsuit-against-east-oakland-metal-foundry-over"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oag.ca.gov/system/files/attachments/press-docs/ABI%20Complaint.pdf",
+            "note": "Downloaded 11-page complaint; readcaption, introduction, allegations¶¶29–35 and claims/relief onpp 8–11. Allegations concern foundry emissions and unprovided warnings. This review is of the 2022 pleading only; no assertion about subsequent merits judgment or current case status."
+          },
+          {
+            "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-files-lawsuit-against-east-oakland-metal-foundry-over",
+            "note": "Read 15 February 2022 announcement and link to complaint. It identifies Prop 65, UCL andGovernmentCode 12607 theories as allegations. Its inhalation discussion is not used as a quantitative food-risk comparison."
+          }
+        ]
+      }
+    },
+    "25": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "bc154c11353f26c4d43712da92b08addd1951770b58ffb37b7f52f8340e834e9",
+      "citation": "Pendergrass K. HMTc Infant and Child Foods Program Manual. 2026 edition. Edition comparison: deposited v0, 18 May 2026, doi:10.5281/zenodo.20270512; Institute of Contaminant Standards, current 2026 web edition dated 6 August 2026, consolidated v2 PDF.",
+      "summary": "The manual defines HMTc’s private certification scope and testing rules. The earlier deposited edition describes eight elements and ten analytes; the current web volume uses total chromium with conditional Cr(VI) speciation and distinguishes its limit panel from reflex tests.",
+      "establishes": "This establishes stated program requirements, not independently demonstrated health protection or a government mandate. The citation does not pin an edition, and the program’s own current description differs from the briefing’s fixed ten-analyte wording.",
+      "relevance": "It is the primary source for HMTc’s proposed broader coverage. A defensible comparison must name the edition and distinguish core measurements from matrix- or pathway-triggered speciation.",
+      "links": [
+        {
+          "label": "Earlier deposited2026v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Manual edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        },
+        {
+          "label": "Current consolidated2026webvolume",
+          "href": "https://heavymetalcertified.com/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary documents and stated access scopes reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Transparent reuse of exact-document research in batch 2-open-category. json and prior premium review: v 0 May 18,2026,384 pages, printed p 58 eight metals/ten analytes. Publisher metadata and superseded status previously verified. This historical edition is supplied explicitly for comparison, not assumed to govern today."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Freshly read current landing page and version history: currentweb edition 6 August 2026; June 20 revision andMay 18 v 0 marked superseded. Generic 2026 bibliography does not uniquely identify an edition. This material is program-authored, not independent validation."
+          },
+          {
+            "url": "https://heavymetalcertified.com/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf",
+            "note": "Downloaded 34-page consolidated v2; readtitle/editionmetadata, Part 1 scope andPart 2.1 physical p 7, plusPart 4.6 table. Cover says nine analytes; operativepanel iseight limit analytes with mandatory reflexes forrice arsenic, fish mercury andcredible Cr(VI) pathways. This differs from page’s universaltenanalytes/Cr(VI)description. Neither manual assertion of Cr(III)essentiality nor safety/efficacy is independently adopted."
+          }
+        ]
+      },
+      "kind": "Program manual"
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "page": "briefings/brief-7-four-vs-eight",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+      "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+      "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+      "establishes": "It documents the investigation's four-metal scope. It does not establish a complete testing panel, industry-wide certification practice or subsequent litigation history.",
+      "relevance": "It grounds the briefing's opening discussion of the familiar four metals. The later claim about multidistrict litigation needs a separate court source; the case for testing additional elements rests on the other cited assessments and standards.",
+      "links": [
+        {
+          "label": "House staff report · 2021",
+          "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "pageDigest": "d780f660ca5864d7e7831098646727dd1c1878ff8e1a0681e0961a9768112213",
+      "sourceDigest": "fb4579bbbb7f4632da4dced9eaa27d5c310c6ca36c498055aad0cdec2ab48790",
+      "review": {
+        "reviewer": "Codex, primary-source review with page-context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
+            "note": "Cover, printed page 1: report title and date; Executive summary, printed pages 2–6: investigation scope and recommendations. Reuse the report identity and broad scope; tailor relevance to the briefing's argument about panel breadth. Do not infer that all certification programs test only four metals. Access: primary-report-targeted-sections. Targeted passages were read; underlying company exhibits and scientific studies cited by the report were not independently accessed or checked."
+          }
+        ]
+      }
+    }
+  }
+}

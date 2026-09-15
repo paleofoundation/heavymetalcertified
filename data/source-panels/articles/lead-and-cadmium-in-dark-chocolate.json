@@ -1,0 +1,396 @@
+{
+  "page": "articles/lead-and-cadmium-in-dark-chocolate",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Cadmium and Lead in Cocoa Powder and Chocolate Products in the U.S. Market",
+      "citation": "Abt, Eileen; Fong Sam, Jennifer; Gray, Patrick; and Posnick Robin, Lauren. Cadmium and lead in cocoa powder and chocolate products in the US Market. Food Additives & Contaminants: Part B, Surveillance 11(2):92–102 (2018). doi:10.1080/19393210.2017.1420700.",
+      "summary": "The authors’ abstract describes a convenience sample of U.S. retail cocoa powders, chocolate and cocoa nibs analyzed by ICP-MS. Cadmium and lead correlated with cocoa percentage; cadmium was higher in products with reported Latin American origins than African origins.",
+      "establishes": "The accessible abstract supports variation by composition and reported origin in the sampled products. It does not establish an organic-versus-conventional comparison, a soil mechanism in those products, or a guarantee for any origin or certification. This review is limited to the authors’ abstract and bibliographic record.",
+      "relevance": "This survey offers a historical U.S. retail comparator for HMTc’s discussion of cocoa variability. A convenience sample cannot by itself establish a representative market baseline or a subsequent enforcement effect; this abstract-limited review does not verify the page’s December 2015, 144-sample and 67-manufacturer details.",
+      "links": [
+        {
+          "label": "Article DOI",
+          "href": "https://doi.org/10.1080/19393210.2017.1420700"
+        },
+        {
+          "label": "Authors’ abstract · PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/29310543/"
+        }
+      ],
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "75c208cfaea04ee9eac2c14ef60224691265a3b5428ca28a6087200e1de84009",
+      "review": {
+        "reviewer": "Codex, reused same-day indexed author-abstract review with fresh chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.1080/19393210.2017.1420700",
+            "note": "Verified DOI/title/authors and journal citation against PubMed record 29310543 and Europe PMC’s matching MEDLINE core record. Publisher full-text and abstract endpoints returned403, and DOI web opening failed. Europe PMC marks full text subscription-required and lists no PMC article. Only the authors’ abstract, reproduced in these bibliographic services, was read; neither full methods nor tables were available. No sample count, organic-status result, sampling year or causal mechanism has been inferred."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29310543/",
+            "note": "Read the complete authors’ abstract and bibliographic fields exposed by the PubMed search result, corroborated by Europe PMC REST resultType=core for EXT_ID 29310543. The abstract specifies a convenience retail sample, ICP-MS, cocoa percentage and reported origin; Cd 0.004–3.15 mg/kg, Pb<LOD–0.38 mg/kg; Latin America versus Africa. Direct PubMed page access returned no readable article text, so provenance is the complete indexed author abstract plus matching MEDLINE abstract, not a full-text review. The abstract reports Latin American versus African origin associations and no organic comparison; it does not isolate soil causation."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29310543/",
+            "note": "Fresh editorial assessment: the full methods and tables remain inaccessible. The abstract identifies a convenience sample, not probability sampling. The page’s exact collection date, counts, most-cited ranking and pre-enforcement characterization are unverified here; no repeated-market or causal analysis is reported in the abstract."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "A Multi-Year Heavy Metal Analysis of 72 Dark Chocolate and Cocoa Products in the USA",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "0b03c95b79ebb3ea79c52bccaed9d309289651ed74bd791d878b73bea99b1b67",
+      "citation": "Hands JM, Anderson ML, Cooperman T, Balsky JE, Frame LA. A multi-year heavy metal analysis of 72 dark chocolate and cocoa products in the USA. Frontiers in Nutrition. 2024;11:1366231. Published July 31, 2024. doi:10.3389/fnut.2024.1366231.",
+      "summary": "This survey analyzed 72 product observations in four cohorts from 2014–2022. Lead exceeded the study’s Proposition 65 comparison in 31/72 observations; cadmium did so in 13/37 with applicable intake data. Organic products had higher cadmium in the reported comparisons.",
+      "establishes": "Concentration trends depended on the statistic: lead and cadmium means were lower in later cohorts, while cadmium medians changed little. Product selection changed, sometimes excluding previously high-contamination products. The study did not test an enforcement intervention against a counterfactual.",
+      "relevance": "This supports measuring both metals in HMTc chocolate verification. It does not establish that enforcement reduced lead while leaving cadmium unchanged, or prescribe testing every production lot.",
+      "links": [
+        {
+          "label": "Journal article",
+          "href": "https://doi.org/10.3389/fnut.2024.1366231"
+        },
+        {
+          "label": "Publisher full text and tables",
+          "href": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1366231/full"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.3389/fnut.2024.1366231",
+            "note": "Verified publication metadata and reused full-paper review completed for the organic article on the same date."
+          },
+          {
+            "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1366231/full",
+            "note": "Read methods, Tables 1–5, figures and limitations; fresh temporal assessment. Table 5 reports lower cadmium in 2022 versus 2014 (Bonferroni p=0.009); Table 1 means fall 0.512 to 0.208 µg/g while medians are 0.224/0.240. Editorial: categorical “cadmium untouched” and causal enforcement conclusions exceed this evidence. The 35% denominator is 37, not 72; no year-specific exceedance trend establishes the claimed contrast."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Toxic Metals and Metalloids in Food: Current Status, Health Risks, and Mitigation Strategies",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "dcd9f72d09bccfd5adda203e33661132ed5e0071104bddd76b25237780da5616",
+      "citation": "Zhao D, Wang P, Zhao F-J. Toxic Metals and Metalloids in Food: Current Status, Health Risks, and Mitigation Strategies. Current Environmental Health Reports. 2024;11(4):468–483. Published online October 1, 2024. doi:10.1007/s40572-024-00462-7.",
+      "summary": "This narrative review synthesizes food occurrence, dietary exposure and mitigation evidence for arsenic, cadmium and lead. It discusses naturally elevated soil cadmium in some South American cocoa regions and possible fertilizer contributions.",
+      "establishes": "The review supplies mechanistic context, not an independent longitudinal U.S. chocolate dataset. Its 1.8 mg/kg figure appears in a combined coffee/tea/cocoa category of national mean concentrations; it is not a universal cocoa maximum.",
+      "relevance": "It supports HMTc considering growing conditions and the whole diet. It does not demonstrate that Proposition 65 changed chocolate lead, or specifically establish the article’s post-harvest chocolate-lead mechanism.",
+      "links": [
+        {
+          "label": "Verified article DOI",
+          "href": "https://doi.org/10.1007/s40572-024-00462-7"
+        },
+        {
+          "label": "Full text · PubMed Central",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11588791/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.1007/s40572-024-00462-7",
+            "note": "Exact title and all three authors identify this paper; PubMed 39352604 and full publisher text confirm DOI. Editorial: the bibliography supplies 10.1007/s42247-024-00934-6, which did not resolve to the cited work. Correct destination is explicitly documented here; original referenceTitle/hash retained."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11588791/",
+            "note": "Read abstract, Table 1, Cadmium in Food, Lead in Food, exposure discussion, conclusion and data-availability statement. No new dataset was generated. Lead section discusses general uptake/deposition, not cocoa drying/transport experiments. Editorial: calling this a third independent dataset and assigning its grouped 1.8 mg/kg value specifically to cocoa overstates its scope."
+          }
+        ]
+      },
+      "kind": "Scientific review"
+    },
+    "4": {
+      "referenceTitle": "Proposition 65 Maximum Allowable Dose Levels (MADLs)",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "caac6d8c73eb0bfbaa18a21268fee040f566efcff4a313c794fe39a2fd2aa01a",
+      "citation": "California Office of Environmental Health Hazard Assessment. Proposition 65 No Significant Risk Levels (NSRLs) and Maximum Allowable Dose Levels (MADLs). Official safe-harbor table, referencing 27 CCR §§25705, 25709 and 25805; reviewed September 15, 2026.",
+      "summary": "OEHHA lists a lead reproductive-toxicity MADL of 0.5 µg/day and an oral cadmium MADL of 4.1 µg/day. These are exposure-based safe-harbor values under California’s warning framework.",
+      "establishes": "They are not concentration ceilings for chocolate or zero-risk boundaries. OEHHA explains that scientifically valid alternative levels can be used and that settlements may specify negotiated exposure levels.",
+      "relevance": "The table explains the studies’ comparison values and why HMTc must state dose assumptions. Exceeding a listed safe harbor alone does not prove an unlawful product or that a warning is automatically required in every case.",
+      "links": [
+        {
+          "label": "OEHHA safe-harbor table",
+          "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls",
+            "note": "Read explanatory paragraphs and lead/cadmium rows. Distinguish reproductive MADLs from cancer NSRLs and cadmium oral from inhalation values. Editorial: “above which a warning is required” omits alternative demonstrations and case-specific rules. This table does not document the chocolate settlement timeline, enforcement success or comparative “most conservative” ranking."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Evaluation of Lead — Withdrawal of the Provisional Tolerable Weekly Intake",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "8b0a1cc1927c50be9a742e8a0a346732e83baafab46141ef8e22e5d8ba8128a7",
+      "citation": "Joint FAO/WHO Expert Committee on Food Additives. Lead (addendum), Safety evaluation of certain food additives and contaminants, WHO Food Additives Series 64 (2011), section 10; 73rd meeting, June 8–17, 2010, summarized in WHO Technical Report Series 960 (2011).",
+      "summary": "JECFA reevaluated lead using human dose-response evidence, particularly childhood neurodevelopment and adult systolic blood pressure. It withdrew the former provisional tolerable weekly intake of 25 µg/kg body weight.",
+      "establishes": "The committee found no threshold supporting a new health-protective weekly intake. Its modeled effects describe population distributions and consider total exposure, not injury from a specified chocolate bar.",
+      "relevance": "This supports reducing avoidable lead exposure and avoiding a zero-risk claim in HMTc communications. It does not derive HMTc’s concentration ceiling or its lot-testing frequency.",
+      "links": [
+        {
+          "label": "JECFA lead evaluation",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511"
+        },
+        {
+          "label": "Full lead monograph",
+          "href": "https://apps.who.int/food-additives-contaminants-jecfa-database/Document/Index/9003"
+        },
+        {
+          "label": "73rd meeting report metadata",
+          "href": "https://www.who.int/publications-detail-redirect/9789241209601"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Home/Chemical/3511",
+            "note": "Read 2011 evaluation, withdrawn PTWI and pivotal-study fields; database uses report year."
+          },
+          {
+            "url": "https://apps.who.int/food-additives-contaminants-jecfa-database/Document/Index/9003",
+            "note": "Read section 10, printed pp. 479–480. Withdrawal rests on modeled IQ and blood-pressure effects; no protective threshold could be identified. Very low modeled risks are not the same as a demonstrated zero-effect threshold. No chocolate-specific intervention or certification was assessed."
+          },
+          {
+            "url": "https://www.who.int/publications-detail-redirect/9789241209601",
+            "note": "Official report record distinguishes meeting dates June 8–17, 2010 from publication January 16, 2011; TRS 960. It supplies chronology, not an additional food-occurrence dataset."
+          }
+        ]
+      },
+      "kind": "Expert risk assessment"
+    },
+    "6": {
+      "referenceTitle": "Scientific Opinion on Cadmium in Food",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "76f50e5f375d940f5ab53b7f81e93e8f829a58497b1dfba9b7f0bda173f467fd",
+      "citation": "EFSA Panel on Contaminants in the Food Chain. Cadmium in food. EFSA Journal. 2009;980:1–139. Adopted January 30, 2009; published March 20, 2009. doi:10.2903/j.efsa.2009.980.",
+      "summary": "EFSA assessed food occurrence, dietary intake and long-term cadmium toxicity. Its tolerable weekly intake is 2.5 µg/kg body weight, based on kidney tubular effects and modeling of accumulated exposure.",
+      "establishes": "The derivation linked urinary cadmium to a urinary protein marker, then modeled the diet-to-body-burden relationship. This diet-wide guidance value is not a chocolate concentration limit or an acute-poisoning threshold.",
+      "relevance": "It supports HMTc evaluating chocolate cadmium as part of cumulative exposure. It does not establish the article’s recent cardiovascular-evidence trend or require a particular certification program.",
+      "links": [
+        {
+          "label": "EFSA opinion DOI",
+          "href": "https://doi.org/10.2903/j.efsa.2009.980"
+        },
+        {
+          "label": "Full opinion PDF",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2009.980"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.2903/j.efsa.2009.980",
+            "note": "Verified EFSA publication and adoption dates through the official journal record."
+          },
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2009.980",
+            "note": "Read summary pp. 1–3: approximately 140,000 occurrence results; urinary beta-2-microglobulin dose-response; dietary model based on nonsmoking Swedish women; TWI derivation and exposure caveats. Editorial: a 2009 opinion cannot substantiate an unspecified strengthening trend in newer cardiovascular literature. High concentrations in offal/shellfish do not necessarily mean those foods dominate population intake."
+          }
+        ]
+      },
+      "kind": "Expert risk assessment"
+    },
+    "7": {
+      "referenceTitle": "Scientific Opinion on Lead in Food",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "faf54f230a3eec94749dd988a2ef510d555d0b95f5aea7625d3be03a4c497587",
+      "citation": "EFSA Panel on Contaminants in the Food Chain. Scientific Opinion on Lead in Food. EFSA Journal. 2010;8(4):1570, 151 pp. Adopted March 18, 2010; published April 20, 2010; corrected version published March 22, 2013. doi:10.2903/j.efsa.2010.1570.",
+      "summary": "EFSA evaluated dietary lead and identified developmental neurotoxicity in children, kidney effects and systolic blood-pressure effects as critical endpoints. It concluded that the former weekly intake was inappropriate because no threshold for these effects had been established.",
+      "establishes": "The opinion uses benchmark-dose reference points and margins of exposure. These are tools for population risk assessment, not safe product concentrations or proof of injury at every detectable dose.",
+      "relevance": "It provides a toxicological basis for HMTc’s focus on avoidable lead exposure. Converting that concern into a chocolate specification and verification schedule requires a separate program decision.",
+      "links": [
+        {
+          "label": "EFSA opinion DOI",
+          "href": "https://doi.org/10.2903/j.efsa.2010.1570"
+        },
+        {
+          "label": "Corrected full opinion PDF",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2010.1570"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.2903/j.efsa.2010.1570",
+            "note": "Read official journal abstract and metadata, confirming original 2010 publication."
+          },
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/pdf/10.2903/j.efsa.2010.1570",
+            "note": "Read pp. 1–3, abstract, correction footnote and exposure summary. The PDF explicitly replaces the original with March 22, 2013 editorial corrections; overall conclusions unchanged. Original version was not inspected. Childhood dietary benchmark 0.50 µg/kg/day is body-weight based and must not be confused with Proposition 65’s 0.5 µg/day safe harbor."
+          }
+        ]
+      },
+      "kind": "Expert risk assessment"
+    },
+    "8": {
+      "referenceTitle": "Maximum Levels for Cadmium in Chocolates and Cocoa-Derived Products",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "26f9c50a3a6ab3321c384e2a80c66177b72196feeddac36c63cc2102004a112e",
+      "citation": "Codex Alimentarius Commission. Cadmium maximum levels for chocolate, adopted July 2, 2018; General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, 2025 amended edition, p. 60. FAO official 2018 adoption notice and current standard reviewed separately.",
+      "summary": "Codex adopted chocolate cadmium levels of 0.8 and 0.9 mg/kg in 2018, differentiated by cocoa content. The 2025 standard lists these for 50–<70% and ≥70% cocoa solids, alongside other chocolate and cocoa-powder categories.",
+      "establishes": "These are international commodity-specific recommendations. They do not automatically become U.S. federal law and are distinct from California daily-exposure safe harbors or EU maxima.",
+      "relevance": "They give HMTc an international concentration benchmark while requiring correct category selection. A private limit or every-lot testing rule is not established merely by citing Codex.",
+      "links": [
+        {
+          "label": "FAO · 2018 adoption record",
+          "href": "https://www.fao.org/newsroom/detail/Codex-Alimentarius-Commission-02-06-July-2018/en"
+        },
+        {
+          "label": "Codex CXS 193 · 2025 edition",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/fr/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXS+193-1995%2FCXS_193e.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/newsroom/detail/Codex-Alimentarius-Commission-02-06-July-2018/en",
+            "note": "Read “Maximum level of cadmium in chocolate”: agreement dated July 2, 2018, 0.8/0.9 mg/kg and exposure rationale."
+          },
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/fr/?lnk=1&url=https%3A%2F%2Fworkspace.fao.org%2Fsites%2Fcodex%2FStandards%2FCXS+193-1995%2FCXS_193e.pdf",
+            "note": "Read cover/history, scope and maximum-level definition pp. 1–5 and cadmium table p. 60. Current edition includes additional lower-cocoa and powder categories; those are not all attributed to the 2018 adoption. Exact cocoa percentage ranges and whole-commodity basis checked. No domestic legal adoption or HMTc mandate is implied."
+          }
+        ]
+      }
+    },
+    "9": {
+      "referenceTitle": "Closer to Zero: Action Plan for Baby Foods",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "a5fb80eca9000d9136e3f4c1d9bf06dfa6382f7f85b4247925c156af3f0db01b",
+      "citation": "U.S. Food and Drug Administration. Closer to Zero: Reducing Childhood Exposure to Contaminants from Foods. FDA initiative webpage; reviewed September 15, 2026.",
+      "summary": "Closer to Zero describes FDA’s iterative work to reduce children’s dietary exposure to arsenic, lead, cadmium and mercury through scientific assessment, action-level development, stakeholder consultation and other measures.",
+      "establishes": "The initiative concerns foods eaten by babies and young children. Its roadmap is not itself a general-market chocolate concentration standard or a rule requiring private certification.",
+      "relevance": "It explains why this article distinguishes children’s-food policy from general chocolate benchmarks. It does not prove a federal regulatory vacuum, establish a comparative enforcement outcome, or endorse HMTc.",
+      "links": [
+        {
+          "label": "FDA Closer to Zero initiative",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Reused exact same-day primary initiative review recorded in brief-8-surveillance-protocol ref. 11, including approach and action table; official page destination rechecked. The initiative links separate final lead guidance and distinguishes its development work from existing enforcement authority. No general-market chocolate limit is supplied by this page."
+          }
+        ]
+      }
+    },
+    "10": {
+      "referenceTitle": "Lead and Cadmium in Dark Chocolate",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "027c08f27202d1f454e2b84750e06ff5746a3b1d6ead91ea347b84e84cd5c9bf",
+      "citation": "Loria K. Lead and Cadmium Could Be in Your Dark Chocolate. Consumer Reports. December 15, 2022; updated October 25, 2023. Accompanying methodology: Heavy Metals in Chocolate Bars, January 2023.",
+      "summary": "Consumer Reports tested 28 dark-chocolate models from 21 brands, using two or three samples and at least two lots per model. Most purchases occurred in April–May 2022. Its report compares one-ounce exposure estimates with selected benchmarks.",
+      "establishes": "It found 23 models above at least one selected lead/cadmium comparison and five above both. The report explicitly says these comparisons do not determine legal noncompliance. This is a consumer testing survey, not a controlled temporal intervention study.",
+      "relevance": "The measurements could broaden HMTc’s product-variability discussion. They do not independently confirm the article’s lead-decline/cadmium-nonresponse trajectory or establish the Index’s ingestion status.",
+      "links": [
+        {
+          "label": "Consumer Reports investigation",
+          "href": "https://www.consumerreports.org/health/food-safety/lead-and-cadmium-in-dark-chocolate-a8480295550/"
+        },
+        {
+          "label": "Consumer Reports methods · January 2023",
+          "href": "https://article.images.consumerreports.org/image/upload/v1672933163/prod/content/dam/CRO-Images-2022/Special%20Projects/Consumer_Reports_Test_Methodology_for_Heavy_Metals_in_Chocolate_Bars_-_January_2023.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.consumerreports.org/health/food-safety/lead-and-cadmium-in-dark-chocolate-a8480295550/",
+            "note": "Read full publisher report, product table and explanatory text from retrieved HTML. Original publication and later update distinguished. Its explicit legal-standard caveat is retained; consumer recommendations are not used as HMTc rules."
+          },
+          {
+            "url": "https://article.images.consumerreports.org/image/upload/v1672933163/prod/content/dam/CRO-Images-2022/Special%20Projects/Consumer_Reports_Test_Methodology_for_Heavy_Metals_in_Chocolate_Bars_-_January_2023.pdf",
+            "note": "Read both methods pages: online-survey selection, purchases, blinded independent accredited laboratory, AOAC 2015.01 mass spectrometry, multiple lots and exposure assumptions. One sampling window cannot establish enforcement causality or a time trend. This report is not peer-reviewed journal research."
+          }
+        ]
+      },
+      "kind": "Consumer testing report"
+    },
+    "11": {
+      "referenceTitle": "Maximum Levels for Cadmium in Cocoa and Chocolate Products",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "504eea4e372715d6bb4f030c70af07e73dfeae3908277c4796c757c6f8467662",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of April 25, 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L 119, May 5, 2023, pp. 103–157; Annex I, section 3.2.15. Original act, effective May 25, 2023.",
+      "summary": "The original act sets binding cadmium maxima for specified chocolate categories: 0.10 mg/kg for milk chocolate below 30% cocoa solids; 0.30 for other chocolate below 50% and milk chocolate at least 30%; 0.80 for chocolate at least 50%; 0.60 for specified consumer cocoa powder.",
+      "establishes": "These are food concentration limits, distinct from intake guidance. Articles 2–3 govern exceedances, mixing and processing factors; compliance depends on the product definition and applicable legal text.",
+      "relevance": "The regulation supplies a legal comparator for HMTc chocolate specifications. It does not establish that certification is more effective than litigation or require HMTc’s proposed lot-level cadence.",
+      "links": [
+        {
+          "label": "EU 2023/915 · original act PDF",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Read Articles 2–3, 9–11 and Annex I 3.2.15 (printed p. 136). Repeal of 1881/2006 and twentieth-day entry into force verified. Reviewed original 2023 text, not every subsequent amendment. Article 2 prohibits mixing compliant food with food exceeding its applicable maximum; “blending to dilute” is not a blanket legal permission. These maxima were retained provisions, not proof that cocoa regulation began in 2023."
+          }
+        ]
+      }
+    },
+    "12": {
+      "referenceTitle": "Toxicological Profiles for Lead and for Cadmium",
+      "pageDigest": "a7146dce2b75f11c90efced5943fe7186fb33ed26096285e3d4fe15ec57081b0",
+      "sourceDigest": "70308c783fb8288013dccebcfbe4807d5af991a845f7e7f50ff466f07f44b600",
+      "citation": "Agency for Toxic Substances and Disease Registry, U.S. Department of Health and Human Services. Toxicological Profile for Lead, August 2020; Toxicological Profile for Cadmium, September 2012. Separate final profiles.",
+      "summary": "These government profiles synthesize toxicology and epidemiology across exposure routes. Lead review describes childhood neurological effects without an identified safe threshold; cadmium review identifies kidney and bone as sensitive targets after oral exposure.",
+      "establishes": "They establish hazard and exposure-response context, with route, duration and population differences. Occupational inhalation findings should not be treated as direct evidence about dietary chocolate risk.",
+      "relevance": "The grouped reference supports the article’s broader concern about both metals. It does not measure chocolate, establish the claimed historical trend, or derive HMTc’s finished-product limits and testing frequency.",
+      "links": [
+        {
+          "label": "ATSDR lead profile · 2020",
+          "href": "https://stacks.cdc.gov/view/cdc/95222/cdc_95222_DS1.pdf"
+        },
+        {
+          "label": "ATSDR cadmium profile · 2012",
+          "href": "https://stacks.cdc.gov/view/cdc/12391/cdc_12391_DS1.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review and chocolate-article context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://stacks.cdc.gov/view/cdc/95222/cdc_95222_DS1.pdf",
+            "note": "Verified August 2020 final-profile metadata in CDC Stacks; read Relevance to Public Health, printed p. 5, childhood neurological effects and threshold discussion. Targeted sections only; the 583-page profile and underlying studies were not exhaustively reviewed."
+          },
+          {
+            "url": "https://stacks.cdc.gov/view/cdc/12391/cdc_12391_DS1.pdf",
+            "note": "Verified September 2012 final-profile metadata; read section 2.2, printed pp. 12–13, oral versus inhalation targets, kidney biomarkers and renal retention mechanism. Targeted review, not a new dietary risk calculation. This grouped bibliography item has no numbered inline claim on the article."
+          }
+        ]
+      },
+      "kind": "Government toxicological profiles"
+    }
+  }
+}

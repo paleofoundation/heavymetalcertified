@@ -1,0 +1,212 @@
+{
+  "page": "articles/testing-disclosure-packaging-rules",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Taiwan FDA amended analytical method",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "09ca5c46732b462c91be1a9804d51c95fd8199fdcd46b1fef9a1a7506a49c9b0",
+      "citation": "Taiwan Food and Drug Administration. Method of Test for Heavy Metals in Edible Fat, Oil, Cream, Chocolate and Cocoa Powder. MOHWH0029.01; amended January 1, 2026. English method document.",
+      "summary": "The method uses microwave acid digestion and ICP-MS for arsenic, mercury and lead in edible fat, oil and cream, and cadmium in chocolate and cocoa powder. It specifies preparation, blanks, calibration and quantification.",
+      "establishes": "This is a matrix-specific analytical method, not a universal food method or concentration limit. Its stated quantification limits measure analytical capability; the header establishes an amendment date, not a separately verified legal commencement notice.",
+      "relevance": "It supports HMTc’s need to retain the method and food matrix with each result. Applying this protocol or its quantification limits beyond its stated scope would require separate justification.",
+      "links": [
+        {
+          "label": "TFDA official method PDF",
+          "href": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=50131&mid=189&t=s",
+            "note": "Read six-page English method, including scope§1, digestion/ICP-MS§2 and final remarks. LOQs are0.025 mg/kg for the three metals in fats/oils/cream and0.02 mg/kg cadmium in chocolate/cocoa; these are not legal maxima. Remark3 permits other instruments with reference-material verification or validation. No prior version comparison or independent commencement instrument was reviewed; bibliography’s effective-in2026 description is broader than the header alone."
+          }
+        ]
+      },
+      "kind": "Analytical method"
+    },
+    "2": {
+      "referenceTitle": "FDA infant-formula product testing results",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "565100eec465049d5d4d1661608d20b448df12e180b725c9df29a87c5d62c70e",
+      "citation": "U.S. Food and Drug Administration. FDA’s Infant Formula Product Testing Results. 2026 release reporting the FY2023–2025 market-basket survey; accessed September 15, 2026.",
+      "summary": "FDA reports 312 samples across 16 brands, including powder and liquid formula. The page summarizes metals and other contaminants, expresses metal results as prepared for feeding, and describes follow-up testing.",
+      "establishes": "This is occurrence monitoring, not a new legal limit. FDA cautions that a retail snapshot cannot capture all variability among production lots and that detection alone does not establish an unsafe product.",
+      "relevance": "For this article, the survey illustrates why occurrence evidence, laboratory capability and lot identity belong beside legal obligations. It cannot certify a later batch or turn an observed concentration into a legal threshold.",
+      "links": [
+        {
+          "label": "FDA formula results and survey explanation",
+          "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex exact-source reuse from batch4-us-baby-laws reference5; freshly assessed for testing/disclosure article",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
+            "note": "Reused the direct September 15, 2026 review recorded in batch4-us-baby-laws reference 5: survey explanation, methods and metals summary read, not every spreadsheet row. Fresh relevance separates retail monitoring from a manufacturer’s sample-method record and legal testing duties."
+          }
+        ]
+      },
+      "kind": "Government monitoring"
+    },
+    "3": {
+      "referenceTitle": "EPA Lead and Copper Rule Improvements",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "755a440045329f3f5a45762363613e27e3ca7c7cac1301a0a898fa5140bad500",
+      "citation": "U.S. Environmental Protection Agency. Lead and Copper Rule Improvements; official rule hub and October 2024 general fact sheet. Final rule:89 FR 86418, October 30, 2024, effective December 30, 2024.",
+      "summary": "EPA describes service-line inventories and replacement, stronger tap sampling, public communication and corrosion-control requirements. The rule generally gives most systems ten years for lead-line replacement, with limited exceptions.",
+      "establishes": "These duties govern regulated drinking-water systems. Effective date and compliance deadlines differ; several revised provisions have a November 1, 2027 compliance date. They do not become food-manufacturer QR duties or food concentration limits.",
+      "relevance": "The article uses drinking water as an operational analogy. HMTc should identify the regulated actor and relevant water evidence before attaching any obligation to a brand.",
+      "links": [
+        {
+          "label": "EPA rule hub",
+          "href": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements"
+        },
+        {
+          "label": "EPA fact sheet",
+          "href": "https://www.epa.gov/system/files/documents/2024-10/final_lcri_fact-sheet_general_public.pdf"
+        },
+        {
+          "label": "Final rule in Federal Register",
+          "href": "https://www.govinfo.gov/content/pkg/FR-2024-10-30/pdf/2024-23549.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule-improvements",
+            "note": "Read Rule Summary and linked final-rule identity; hub describes testing, replacement and community communication."
+          },
+          {
+            "url": "https://www.epa.gov/system/files/documents/2024-10/final_lcri_fact-sheet_general_public.pdf",
+            "note": "Read key provisions onpp1–2: public inventories/plans, first-and-fifth-liter sampling, action-level change and enhanced outreach. Scope is agency explanation, not every system-specific exception."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/FR-2024-10-30/pdf/2024-23549.pdf",
+            "note": "Read original final-rule first page86418, including title, final status and DATES. EffectiveDecember30, 2024; specified changes have November 1, 2027 compliance dates, with others governed by cross-referenced sections. Did not review all 250 pages or claim every LCRI duty already applied in2025–2026."
+          }
+        ]
+      },
+      "kind": "Regulation and agency guidance"
+    },
+    "4": {
+      "referenceTitle": "European Commission — Packaging and Packaging Waste Regulation",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "5654154d05d046aaedad5fa528d5c143846d967b52b108b66b39a9f3658977f2",
+      "citation": "European Commission. Packaging waste: overview of Regulation (EU) 2025/40 on packaging and packaging waste. Regulation adopted December 19, 2024; entered into force February 11, 2025; generally applies August 12, 2026.",
+      "summary": "The Commission describes lifecycle requirements for packaging. The linked regulation separately addresses substances of concern, technical documentation and packaging composition; Article 5(4) sets a combined 100 mg/kg ceiling for lead, cadmium, mercury and hexavalent chromium in packaging or components.",
+      "establishes": "This is a packaging-composition rule, not a food or migration limit. General application does not mean every design requirement starts simultaneously, and preserved decisions and derogations require separate checks.",
+      "relevance": "It supports a distinct packaging evidence record alongside HMTc food results. Food testing alone cannot demonstrate packaging composition or satisfy its technical documentation.",
+      "links": [
+        {
+          "label": "Commission PPWR overview",
+          "href": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en"
+        },
+        {
+          "label": "Regulation(EU)2025/40",
+          "href": "https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en",
+            "note": "Read official overview status/date panel, scope and substances-of-concern description. Commission identifies February 11, 2025 entry and August 12, 2026 application."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2025/40/oj/eng",
+            "note": "Followed Commission link and verified canonical same act. Read Article 2 scope, Article 5(4)–(8), Article 70(3) preservation of decisions and Article 71. Technical documentation is required;100 mg/kg is the sum of four metals, not100mg/kg each. Targeted review only, not all provisions, delegated acts or packaging exemptions."
+          }
+        ]
+      },
+      "kind": "Regulation and agency overview"
+    },
+    "5": {
+      "referenceTitle": "Regulation (EU) 2024/1849 on mercury",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "a4d8fdfa233bc60cd6ef1546b9a7d4747f74b7402cb0677ca39e94945581c22a",
+      "citation": "European Parliament and Council. Regulation (EU) 2024/1849 of June 13, 2024 amending Regulation (EU) 2017/852 on mercury regarding dental amalgam and other mercury-added products. OJ L2024/1849, July 10, 2024.",
+      "summary": "The amendment generally ends dental-amalgam use and export from January 1, 2025, and import/manufacture from July 1, 2026, retaining specified medical exceptions. Its Annex sets separate December 2025 or December 2026 dates for listed lamp categories.",
+      "establishes": "The temporary qualifying Member-State use derogation ended June 30, 2026; specific medical exceptions remain. The lamp restrictions concern listed products and activities, not all mercury-containing objects or food concentrations.",
+      "relevance": "This illustrates why HMTc’s regulatory register must distinguish product bans and their timetables from food thresholds. The regulation does not independently create a duty for every food brand.",
+      "links": [
+        {
+          "label": "Official Journal text, ministry-hosted copy",
+          "href": "https://www.moew.government.bg/static/media/ups/articles/attachments/OJ_L_202401849_EN_TXT1f605d18bd176534013668968f57304c.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.moew.government.bg/static/media/ups/articles/attachments/OJ_L_202401849_EN_TXT1f605d18bd176534013668968f57304c.pdf",
+            "note": "Read enacted Articles 1–2 and complete Annex, printedpp3–6, including medical exceptions, temporary derogation, and lamp-specific dates. Exact English Official Journal PDF is hosted by Bulgaria’s Ministry of Environment and Water after EUR-Lex challenge responses. No claim to have reviewed every national derogation or the complete amended2017framework."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "6": {
+      "referenceTitle": "Health Canada Notice of Modification M-FAA-25-03",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "6a1caaedb24d44efd9b8eb13c4734e772cf4f2e2c80ab2117b340b75a120fbc4",
+      "citation": "Health Canada. Modification to the Lists of Permitted Food Additives to revise certain permitted uses of aluminum-containing food additives. Notice M-FAA-25-03, September 15, 2025.",
+      "summary": "The notice announces revised or removed additive permissions, generally effective October 20, 2025. Removal of potassium aluminum sulphate as a firming agent in pickles and relishes is delayed until January 1, 2028.",
+      "establishes": "The changes concern authorized uses and use levels. They are not a new across-food aluminum contaminant limit or a blanket additive ban; several uses were retained, and Health Canada reported no identified concern with expected dietary exposure.",
+      "relevance": "The article correctly treats this as a formulation and authorization issue. HMTc evidence should preserve additive identity, function, food category and the relevant transition date separately from contamination testing.",
+      "links": [
+        {
+          "label": "Health Canada modification notice",
+          "href": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.canada.ca/en/health-canada/services/food-nutrition/legislation-guidelines/acts-regulations/notices-proposal-notices-modification/permitted-food-additives-revise-certain-uses-aluminum-based-food-additives.html?wbdisable=true",
+            "note": "Read Summary, Background, Issue, Rationale, consultation outcomes and Implementation/enforcement. Notice states lists are incorporated by reference into Food and Drug Regulations Division16; October 20, 2025 and January 1, 2028 serve different uses. Targeted notice review, not a full audit of each revised list entry or current formula authorization. The article’s general reformulation language should retain that only the identified delayed use required reformulation according to the notice."
+          }
+        ]
+      },
+      "kind": "Regulatory notice"
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — regulations",
+      "pageDigest": "c45198d8728112219ef2c451b5dc80d3bb14600578fe03f80d06e682dbb1d206",
+      "sourceDigest": "1c2874b4a7ec89465a0db75f2a0e67c52b425540164736f6975801b11ecff1d4",
+      "citation": "Pendergrass, K. Regulations. Heavy Metal Index, Institute of Contaminant Standards. Directory page displaying last updated May 3, 2026; accessed September 15, 2026.",
+      "summary": "This publisher-maintained directory organizes regulatory thresholds, action levels and guidance by jurisdiction and topic, with links to instrument pages and comparison views.",
+      "establishes": "It establishes an available reference-navigation structure. Reading the directory does not verify each linked instrument, its present legal status, the publisher’s accuracy claims or a complete set of applicable duties.",
+      "relevance": "The directory can help HMTc find sources for the article’s proposed obligations register. Actual requirements still need their own official text and page-specific applicability assessment.",
+      "links": [
+        {
+          "label": "Heavy Metal Index regulations directory",
+          "href": "https://heavymetalindex.com/regulations"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted source text and fresh page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations",
+            "note": "Read page identity/author/date, Overview, cross-cut descriptions and curated FDA/EU/California entries. Did not audit all 180 listed pages. The neutral/independent descriptor is not independently established; this is a publisher-authored reference directory. The article’s uncited state-law and California chromium phase-in examples are not verified merely by this broad citation."
+          }
+        ]
+      },
+      "kind": "Reference directory"
+    }
+  }
+}
