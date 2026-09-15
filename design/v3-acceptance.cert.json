@@ -13,9 +13,11 @@
     ],
     "/briefings/brief-6-premium-promise": [
       {"sel":"[data-cite-panel-records]","prop":"count","want":1},
-      {"click":"sup.hmtc-cite[aria-label='Open source record 2']"},
+      {"click":"sup.hmtc-cite[aria-label='Open source record 1']"},
       {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-sources a","prop":"count","want":2},
+      {"sel":".hmtc-cite-panel-sources a[href='https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf']","prop":"count","want":1},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
@@ -511,9 +513,11 @@
         ],
         "/briefings/brief-6-premium-promise": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
-          {"click":"sup.hmtc-cite[aria-label='Open source record 2']"},
+          {"click":"sup.hmtc-cite[aria-label='Open source record 1']"},
           {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
           {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-sources a","prop":"count","want":2},
+          {"sel":".hmtc-cite-panel-sources a[href='https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf']","prop":"count","want":1},
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},

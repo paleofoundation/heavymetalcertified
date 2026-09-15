@@ -2,6 +2,43 @@
   "page": "briefings/brief-6-premium-promise",
   "reviewed": "2026-09-15",
   "refs": {
+    "1": {
+      "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+      "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), decided 24 February 2026. Opinion of Justice Sotomayor for a unanimous Court. Related HMTc commentary: K. Pendergrass, After Palmquist (2026).",
+      "summary": "The Supreme Court reviewed whether a federal judgment could stand after a retailer sharing the plaintiffs’ state citizenship had been wrongly dismissed from a baby-food lawsuit. The accompanying HMTc briefing discusses implications for manufacturers and retailers.",
+      "establishes": "The dismissal did not cure the federal court’s lack of jurisdiction, so the judgment in Hain’s favor could not stand. The decision resolved which court could hear the dispute; it did not establish that the food caused injury or that either company was liable.",
+      "relevance": "It provides the legal setting for this briefing’s discussion of brand trust and product evidence. HMTc’s case for verification is a program interpretation; the ruling does not require certification or show that certification prevents lawsuits.",
+      "links": [
+        {
+          "label": "Supreme Court opinion · 24 February 2026",
+          "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+        },
+        {
+          "label": "After Palmquist · HMTc commentary",
+          "href": "https://heavymetalcertified.com/briefings/after-palmquist"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary court-opinion review and page-context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf",
+            "note": "Read the official slip opinion: syllabus and Court opinion pp. 1–4 for allegations, removal and trial history; pp. 7–11 for the jurisdictional holding, treatment of the wrongly dismissed nondiverse defendant and disposition. Supreme Court affirmed the Fifth Circuit and remanded. The Supreme Court took the erroneous joinder dismissal and original absence of diversity jurisdiction as givens for the question presented; it did not decide product liability or independently establish toxicological causation. The district court’s causation judgment is procedural history, not a Supreme Court finding that the product caused harm. This opinion does not mandate HMTc testing, predict all future cases’ forums or demonstrate certification effectiveness."
+          },
+          {
+            "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-724.html",
+            "note": "Official case docket checked for case number, 24 February 2026 decision date, Sotomayor’s unanimous opinion and Thomas’s separate concurrence. The citation retains the official slip opinion’s 607 U.S. ___ form."
+          },
+          {
+            "url": "https://heavymetalcertified.com/briefings/after-palmquist",
+            "note": "Reviewed tracked local publisher source content/briefings/after-palmquist.md at commit ac08896, opening discussion and forum/retailer sections. Its opening explicitly identifies jurisdiction and civil procedure as the Court’s subject and distinguishes the unresolved injury claim. The commercial and verification implications are HMTc-authored commentary, not part of the judicial holding or independent evidence of program benefit. This secondary source was read locally; its live webpage was not independently compared."
+          }
+        ]
+      },
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "2d9e8c624f8e82651ef37fe8d5ff3b96ce5d078b75565399193e4fde7b3dccaf"
+    },
     "2": {
       "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
       "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
@@ -23,6 +60,179 @@
           {
             "url": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
             "note": "Printed page 16: routine ingredient testing versus a small sample of finished products; Printed pages 53–55: August 2019 presentation and ingredient versus finished-product comparison; Printed pages 56–57: testing-policy discussion and supporting footnotes. Use the same source summary, but connect relevance to verification and the specific scope of the testing evidence. Do not introduce numerical contamination results or conclusions about injury causation. Access: primary-report-targeted-sections. Targeted passages were read; underlying company exhibits and scientific studies cited by the report were not independently accessed or checked."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Total Diet Study, FY2018–2020",
+      "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+      "summary": "FDA measured nutrient and contaminant elements in retail foods, generally prepared for consumption. Its national monitoring results document detectable arsenic, cadmium, lead and mercury in parts of the food supply.",
+      "establishes": "These are food-surveillance data, not a comparison of organic and conventional farming or verification of a particular brand. A nondetect means below the analytical reporting limit, not demonstrated absence. FDA does not take regulatory action from these composited TDS results.",
+      "relevance": "The findings support this briefing's case for measured product evidence and carefully bounded claims. They cannot establish an organic label's scope, prove all foods contain detectable metals, or endorse HMTc certification.",
+      "links": [
+        {
+          "label": "FDA elements report · July 2022",
+          "href": "https://www.fda.gov/media/159745/download"
+        }
+      ],
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "6d2b8e25b54bdaf15c5e24906c061e01345f4035602c3bbc7af381810770df2f",
+      "review": {
+        "reviewer": "Codex, primary-source review with page-context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/159745/download",
+            "note": "Access: targeted report sections, printed pp. 4–5, 7, 14–17 and 20. Read monitoring design, compositing, reporting limits and toxic-element findings; underlying measurements were not reanalyzed. Editorial follow-up: p. 4 reports cadmium detection at 61% and mercury at 8%, conflicting with the bibliography's 33% and 10%. The report provides no organic-versus-conventional comparison; p. 20 also identifies cultivation practices among influences on cadmium. Page prose remains unchanged."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "2025 Food and Health Survey",
+      "citation": "International Food Information Council. 2025 IFIC Food & Health Survey: A Focus On Food & Ingredient Safety. July 2025. Also: Yi, Rachael. Trust in Government Assurance of Food Safety Hits Record Low. Gallup, 6 September 2024; Brenan, Megan. U.S. Confidence in Institutions Mostly Flat, but Police Up. Gallup, 15 July 2024.",
+      "summary": "IFIC's 2025 survey found declining food-safety confidence and heavy metals among consumers' concerns. Gallup's separate 2024 poll found 57% confident in federal food-safety assurance and 72% confident in grocery-store food safety; its institutional survey reported a 28% average across 14 institutions.",
+      "establishes": "These surveys measure reported attitudes using different questions and dates. IFIC's confidence rating and its separate question about improving confidence are distinct measures. None tests food contamination, quantifies premium-brand losses, or demonstrates that certification restores trust.",
+      "relevance": "They give the briefing context for explaining verification clearly to skeptical consumers. HMTc's proposed response is a program decision; these findings do not establish consumer preference for HMTc or a financial return from certification.",
+      "links": [
+        {
+          "label": "IFIC food and ingredient safety report · 2025",
+          "href": "https://ific.org/wp-content/uploads/2025/07/2025-IFIC-Food-Health-Survey-Food-Ingredient-Safety.pdf"
+        },
+        {
+          "label": "Gallup food-safety confidence · September 2024",
+          "href": "https://news.gallup.com/poll/650024/trust-government-assurance-food-safety-hits-record-low.aspx"
+        },
+        {
+          "label": "Gallup institutional confidence · July 2024",
+          "href": "https://news.gallup.com/poll/647303/confidence-institutions-mostly-flat-police.aspx"
+        }
+      ],
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "5250c305678d55d0c7e146c6f7a6450d0ff3ed6e45c26c5896e326d44fdbbda8",
+      "review": {
+        "reviewer": "Codex, primary-source review with page-context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://ific.org/wp-content/uploads/2025/07/2025-IFIC-Food-Health-Survey-Food-Ingredient-Safety.pdf",
+            "note": "Access: report methodology and selected findings, printed pp. 3, 6–7, 9, 13–14; no respondent-data reanalysis. Online survey of 3,000 adults ages 18–80, March 13–27, 2025, weighted to population demographics. Editorial follow-up: C1 has 44% somewhat and 11% very confident; 55% combines both, contradicting 'majority ... only somewhat.' C4's separate full-confidence option has 6%. C5 has 41% ranking heavy metals among their top three concerns. Preserve these question distinctions."
+          },
+          {
+            "url": "https://news.gallup.com/poll/650024/trust-government-assurance-food-safety-hits-record-low.aspx",
+            "note": "Access: full publisher article, including introduction and grocery-store safety section. The July 1–21, 2024 Consumption Habits poll reports 57% great-deal/fair-amount confidence in federal assurance, versus 68% in 2019; a separate question reports 72% very/somewhat confident in grocery-store food, versus 81% in 2019. These endpoints are not IFIC's question or a premium-brand trust measure. Underlying respondent data were not accessed."
+          },
+          {
+            "url": "https://news.gallup.com/poll/647303/confidence-institutions-mostly-flat-police.aspx",
+            "note": "Access: full publisher article, especially 'Average Confidence in 14 Institutions Remains Low'; also read linked official topline methodology and question 7 (pp. 1–2). June 3–23, 2024 telephone survey, 1,005 U.S. adults; 28% averages great-deal/quite-a-lot confidence across 14 tracked institutions. The bibliography does not name this institutional article; selected as the matching authoritative 2024 series, not evidence of a verified citation chain through reference [6]. It is separate from the food-safety survey."
+          }
+        ]
+      }
+    },
+    "5": {
+      "citation": "Pendergrass, Karen. The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction. Journal of Food Metallomics, preprint, 8 April 2026. doi: 10.5281/zenodo.19470572.",
+      "summary": "Pendergrass argues that selective public testing without category benchmarks, repeated sampling or measurement uncertainty can discourage disclosure and burden small brands investing in quality. The paper proposes supplier intelligence, structured testing and confidential remediation as alternatives.",
+      "establishes": "This is a preprint by the briefing’s author, explicitly marked as not yet peer reviewed. It develops an argument from existing literature and examples; it does not measure how often premium brands are targeted or establish a causal effect of exposés on contamination reduction.",
+      "relevance": "It supplies the reasoning behind this briefing’s account of unequal reputational exposure. HMTc’s proposed response is continuing verification with interpretable results and improvement pathways. The source does not prove that premium brands are always targeted first.",
+      "links": [
+        {
+          "label": "Read the preprint",
+          "href": "https://doi.org/10.5281/zenodo.19470572"
+        },
+        {
+          "label": "Open full text (PDF)",
+          "href": "https://zenodo.org/api/records/19470572/files/Counterproductive_Consequences_Public_Expose_Testing.pdf/content"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex — primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.19470572",
+            "note": "Verified title, author, DOI, publication date 2026-04-08 and preprint status through the official Zenodo record API at https://zenodo.org/api/records/19470572. Browser text retrieval of the landing page failed; the API and its linked complete PDF were accessible."
+          },
+          {
+            "url": "https://zenodo.org/api/records/19470572/files/Counterproductive_Consequences_Public_Expose_Testing.pdf/content",
+            "note": "Read the complete seven-page primary PDF. Page 1 explicitly says Preprint — Not Yet Peer Reviewed; sections II–IV (pp.2–4) develop methodological and incentive arguments, IV.C (p.4, also visually inspected) discusses vulnerability of small quality-focused brands, and VI (pp.5–6) proposes alternatives. No original comparative targeting dataset or causal contamination-outcome study is presented. Editorial follow-up: the briefing’s claim that testers, lawyers and journalists reach first for the brand promising most is stronger than the evidence established here. The paper’s p.4 small-brand example uses $0.5M–$5M and cites a different DOI; do not use it to independently verify the briefing’s $1.6M–$6.6M figure."
+          }
+        ]
+      },
+      "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "8c40544124c0eec97347ea1864ad2320cd12ee8ba12a2ac4c5effc47d3e5beb2"
+    },
+    "6": {
+      "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026, pp. 1–6. doi: 10.5281/zenodo.18903738.",
+      "summary": "This paper combines contamination, recall, litigation and retailer evidence in illustrative business-loss scenarios. Section 7.3 estimates first-year costs of $1.6M–$6.6M or more for a $5M-revenue brand experiencing a public heavy-metals event, including recall, legal, sales, distribution and remediation costs.",
+      "establishes": "These are modeled scenarios by the briefing’s author, not observed losses for a representative group of premium brands. The model assumes incident severity, sales disruption and certification benefits; it does not independently measure how much HMTc reduces event risk or establish a guaranteed return.",
+      "relevance": "It provides the scenario behind this briefing’s financial-exposure example and a framework for weighing verification costs against potential disruption. A brand would need its own incident probability, margins, channel exposure and program costs to assess the business case.",
+      "links": [
+        {
+          "label": "Read the preprint",
+          "href": "https://doi.org/10.5281/zenodo.18903738"
+        },
+        {
+          "label": "Open full text (PDF)",
+          "href": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex — primary-source review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.18903738",
+            "note": "Verified title, author, DOI, publication date 2026-03-07, Journal of Food Metallomics metadata and preprint resource type through https://zenodo.org/api/records/18903738. Browser retrieval of the landing page failed; the official API and its linked complete PDF were accessible. PDF has an unnumbered title page plus printed pages 1–6."
+          },
+          {
+            "url": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content",
+            "note": "Read complete seven-page primary PDF; visually inspected PDF p.5 (printed p.4). Section 7.3 supplies the $1.6M–$6.6M-or-more small-brand scenario. Section 7.2 assumes 40% gross margin, a 22% sales decline for four months and loss of 15% of annual revenue for six months from channel disruption. Section 7.4 assumes certification reduces modeled losses by 10–40%; this is an input, not a measured program effect. Section 6.3 summarizes IFIC/Gallup; those surveys require their own primary-source review. Editorial follow-up: abstract and introduction give $0.5M–$5M for a small brand, inconsistent with section 7.3. The sidebar locates the page’s quoted range specifically in section 7.3 without silently resolving that discrepancy. Underlying legal, survey and retailer claims were not independently reverified for this modeling record."
+          }
+        ]
+      },
+      "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "9f757d3f018746df6bb56b69a2f8a0f09161d24036a5873583cdf0ec9918de45"
+    },
+    "7": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+      "summary": "The manual specifies HMTc’s infant-food certification framework: product testing, surveillance, corrective action and restrictions on use of the certification mark. The cited edition also compares the program with USDA Organic, Non-GMO Project and other certification or testing programs.",
+      "establishes": "Parts 2.1 and 2.5 treat action levels as tools for managing contamination and prohibit claims of absolute safety, zero metals or zero risk. These are HMTc program requirements, not government law or independent evidence that certification prevents injury, litigation or loss of consumer trust.",
+      "relevance": "It supplies the program rules behind this briefing’s argument for making verifiable claims: describe testing against stated limits and continuing surveillance, while avoiding a promise of safety. Its comparison of certification scopes explains why an organic or non-GMO badge cannot stand in for verification of metal concentrations.",
+      "links": [
+        {
+          "label": "Cited manual · 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "b168dcc718afe0239d34a72751d6afdae29c1daeab0175827418faff33d4914b",
+      "review": {
+        "reviewer": "Codex, primary-source review of the version-pinned deposited manual",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Verified the cited identifier through Zenodo record API 20270512 (HTTP 200) and read its deposited HMTc-Program-Manual-2026-v0.pdf, not a substituted current edition. Title and publisher are printed on physical PDF pages 1–3; the publisher is The Paleo Foundation (Paleo Certified, Inc. dba The Paleo Foundation), although the briefing bibliography names ICS. Printed pages 53–54 (Part 2.1, sections 1.2–1.5) distinguish action levels from safety thresholds and preserve legal-compliance obligations. Printed pages 73–74 (Part 2.5, section 6.2) prohibit absolute safety, absence-of-metals and zero-risk claims and describe independent testing under ongoing surveillance. Printed page 73 was also visually inspected. Original landing-page access via web tool failed; API metadata and deposited PDF downloads succeeded."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512",
+            "note": "Record retrieved 2026-09-15, HTTP 200. Metadata identifies Karen Pendergrass, full manual title, publication_date 2026-05-18, version v0, status published and DOI 10.5281/zenodo.20270512; version relation is_last=false. File key HMTc-Program-Manual-2026-v0.pdf, 15,110,878 bytes, MD5 c8ec4609286104f7fc353e4486883ac1. Full citation uses the publisher named in the deposited title pages rather than importing the current site institutional label."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Downloaded and extracted the exact 384-page deposited PDF; reviewed complete physical pages 55–56 (printed 53–54), 75–76 (printed 73–74), 82 (printed 80), 366–370 (printed 364–368), and title/colophon pages. Printed p80 requires relevant ISO/IEC 17025 laboratory accreditation; pp364–368 present the author’s own certification comparison, not an independent validation. Editorial contradiction: the briefing broadly states that none of the leading clean-label certifications tests heavy metals, while this manual explicitly says Clean Label Project covers heavy metals and uses laboratory testing (p367; also matrix pp364–365). Organic/Non-GMO distinctions occur pp366–367, but no independent audit of those other programs was performed in this source review. Part 2.5 does not prescribe the briefing’s exact dose/population/limit claim formula; it prescribes restrained claims about testing and action levels. The manual establishes program design and obligations, not measured effects on consumer trust or a particular brand’s actual compliance. Do not apply this superseded edition’s numeric limits or mark-status eligibility as current policy."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Publisher’s current manual page and Version history were read on 2026-09-15. It lists the 18 May 2026 v0 deposit as superseded, a 20 June 2026 revision, and the current 6 August 2026 web edition with a newer consolidated PDF and DOI pending. This link is for version navigation only; this source record’s substantive review and section numbers refer specifically to the cited v0 deposit. Current web/PDF section numbering and program details differ, so those versions were not silently substituted."
           }
         ]
       }

@@ -1,5 +1,9 @@
 # Citation context engine
 
+Follow-up: [The Premium Promise completion](2026-09-15-premium-promise-source-panels.md)
+extends that page from one pilot record to all seven. The coverage and checks
+below describe the original engine pilot; current coverage is recorded there.
+
 ## Original task
 
 The original Codex task is **Update Heavy Metal Certified site**,

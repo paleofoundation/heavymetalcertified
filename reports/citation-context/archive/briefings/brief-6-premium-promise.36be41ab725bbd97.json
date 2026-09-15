@@ -1,0 +1,31 @@
+{
+  "page": "briefings/brief-6-premium-promise",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "2": {
+      "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+      "citation": "U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Staff report, 4 February 2021.",
+      "summary": "Congressional staff examined company testing records for arsenic, lead, cadmium and mercury in baby foods and recommended finished-product testing and public disclosure.",
+      "establishes": "The report describes Hain's reliance on ingredient testing and an August 2019 presentation of finished-product results. It does not establish when finished-product testing first began.",
+      "relevance": "It supports the briefing's distinction between brand trust and product verification. Its evidence is narrower than the claim that testing began only in 2019, and does not resolve whether a product caused an individual child's injury.",
+      "links": [
+        {
+          "label": "House staff report · 2021",
+          "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "pageDigest": "ae2c8920461c43bf6dc77f523bb9d0f8bcbec59047f5986e51f1ef16c6c22b11",
+      "sourceDigest": "d4acf388051cb4d2405ae76a2119e6b00fdc8ed693e88487d20236945d27235a",
+      "review": {
+        "reviewer": "Codex, primary-source review with page-context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
+            "note": "Printed page 16: routine ingredient testing versus a small sample of finished products; Printed pages 53–55: August 2019 presentation and ingredient versus finished-product comparison; Printed pages 56–57: testing-policy discussion and supporting footnotes. Use the same source summary, but connect relevance to verification and the specific scope of the testing evidence. Do not introduce numerical contamination results or conclusions about injury causation. Access: primary-report-targeted-sections. Targeted passages were read; underlying company exhibits and scientific studies cited by the report were not independently accessed or checked."
+          }
+        ]
+      }
+    }
+  }
+}
