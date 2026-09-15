@@ -1,0 +1,267 @@
+{
+  "page": "briefings/brief-3-what-organic-doesnt-say",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+      "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), decided 24 February 2026. Related factual and procedural history: Palmquist v. Hain Celestial Group, Inc., 103 F.4th 294 (5th Cir. 2024), No. 23-40197, decided 28 May 2024.",
+      "summary": "The Supreme Court held that the erroneous dismissal of a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The Fifth Circuit opinion records the parents’ allegation that their son consumed Earth’s Best Organic products bought from Whole Foods.",
+      "establishes": "These opinions establish the lawsuit’s procedural history and the allegations the courts considered. The Supreme Court’s holding concerns jurisdiction; it does not establish injury causation, product liability, or a failure of USDA organic certification.",
+      "relevance": "The case supplies the family and product setting for this briefing’s discussion of expectations about organic food. The proposed role for HMTc is the author’s response to that setting, not a remedy ordered or validated by the Court.",
+      "links": [
+        {
+          "label": "Supreme Court opinion · February 2026",
+          "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+        },
+        {
+          "label": "Fifth Circuit opinion · May 2024",
+          "href": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "cf9c6e7928da23663f91a0c17b8b8d8913ebd798224f50f81d569261d1ae5496",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf",
+            "note": "Reused the same-day primary-opinion review in Premium Promise reference 1 and reopened the official PDF. Read syllabus and Court opinion pp. 1–2 for the holding and background; prior review covers opinion pp. 7–11. This is the unanimous Sotomayor opinion, affirming the Fifth Circuit and remanding. The opinion identifies Hain baby food but does not itself name Earth’s Best or organic status. Causation was contested; the federal causation judgment could not stand because jurisdiction was absent. The briefing’s claims about the parents’ motivations, premium paid, and expectations of the organic seal are authorial interpretation, not findings established by this opinion."
+          },
+          {
+            "url": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf",
+            "note": "Read official Fifth Circuit PDF pp. 1–5, especially pp. 2–3: the court records allegations that the child consumed Earth’s Best Organic products purchased from Whole Foods, the parties’ conflicting causation accounts, and the litigation chronology. Page 1 verifies case number and 28 May 2024 date. This lower-court opinion supplies the organic-product identification missing from the cited Supreme Court opinion. Facts recounted at this procedural stage should not be presented as final determinations of causation or liability."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "National Organic Program; Organic Foods Production Act of 1990",
+      "citation": "United States. Organic Foods Production Act of 1990, Pub. L. 101-624, title XXI, 28 November 1990, 104 Stat. 3935, as amended, codified at 7 U.S.C. §§ 6501–6524 (2024 edition consulted). U.S. Department of Agriculture. National Organic Program, 7 C.F.R. Part 205, as amended (eCFR text current through 11 September 2026).",
+      "summary": "The statute establishes national organic production and marketing standards; USDA’s regulations implement certification of production and handling operations, permitted inputs, inspections and labeling. Synthetic inputs are generally restricted, with specified National List exceptions.",
+      "establishes": "These are legal requirements, but they do not provide a universal finished-food concentration certificate for lead, cadmium and arsenic. They do address contamination: § 205.203(c) expressly names heavy metals, and the statute and § 205.670 require residue testing and reporting of certain food-safety findings.",
+      "relevance": "The rules support distinguishing production certification from HMTc’s proposed measurement against product-specific limits. That distinction should acknowledge organic contamination controls; it does not establish that organic certification never tests products or is wholly silent on heavy metals.",
+      "links": [
+        {
+          "label": "Organic Foods Production Act · U.S. Code",
+          "href": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm"
+        },
+        {
+          "label": "National Organic Program · 7 CFR Part 205",
+          "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "689a37fc262e775fbfa0fa84fd6ef70c322469eba8dbb7913ad5adaff9209a9e",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm",
+            "note": "Read official 2024 U.S. Code chapter 94, §§6501,6503–6506,6511 and 6517, including source and amendment notes. OFPA was enacted 28 November 1990; the consolidated text includes subsequent amendments and is not the original 1990 text verbatim. §6506(a)(6) requires periodic testing for pesticide/nonorganic residues or natural toxicants and food-safety violation reporting; §6511(b) allows preharvest tissue testing on soil suspected of contamination. §§6504 and 6517 allow defined exceptions to general synthetic restrictions. These provisions contradict an interpretation that the original statutory scheme considered only additions and never contemplated contaminants already in soil."
+          },
+          {
+            "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205",
+            "note": "Read the eCFR Part205 page as displayed current through 2026-09-11, especially §§205.2,205.105,205.202–205.203,205.206 and 205.670–205.671. §205.203(c) explicitly requires managing plant/animal materials without contaminating crops, soil or water with heavy metals. §205.670 requires periodic residue testing, annually sampling at least 5% of certified operations (at least one for certifiers with fewer than 30); testing can include processed products, and certain FDA/EPA exceedances must be reported. This is not a requirement that every finished lot receive a heavy-metal panel, nor a generic NOP numerical heavy-metal ceiling. Editorial follow-up: the page’s absolute statements that organic excludes all synthetic pesticides/fertilizers, never tests, and is silent on metals or existing soil contamination exceed these rules. This legal source does not prove a child receives zero organophosphate residues or establish the asserted health/environmental benefits. No page prose was edited."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis",
+      "citation": "Dearing, Chey; Ye, Zhijing; and Robertshaw, Glen. Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis. F1000Research 14:1461 (26 December 2025), version 1, awaiting peer review in the examined version. doi:10.12688/f1000research.175538.1.",
+      "summary": "This cross-sectional study tested 153 composite samples made from 736 vegetables bought at 14 Hawke’s Bay market gardens in February 2024. Its main analysis associated organic production with lower cadmium and nickel, and the authors reported four composite samples above their selected Codex limits.",
+      "establishes": "The observations are local and do not establish a fertilizer mechanism or certification guarantee. Lead and arsenic were excluded from comparative statistical analysis because most results were below detection limits. In a 37-sample sensitivity analysis restricted by vegetable type, only nickel retained a significant organic association.",
+      "relevance": "It supports discussing measured crop concentrations alongside organic status. For HMTc, the relevant distinction is between an observed group association and verified concentrations in a finished product; this study does not test U.S. organic certification or HMTc performance.",
+      "links": [
+        {
+          "label": "Article DOI · cited version 1",
+          "href": "https://doi.org/10.12688/f1000research.175538.1"
+        },
+        {
+          "label": "Version 1 PDF · Massey University repository",
+          "href": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "55feba621547649a54a3b730443c7aa47c3bd907a2651010f528ee9e89b0f389",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.12688/f1000research.175538.1",
+            "note": "The DOI/publisher landing page could not be read (publisher403); verified the exact DOI, authors, date and version on the publisher-formatted PDF deposited in author-affiliated Massey University’s repository. The examined v1 PDF is marked awaiting peer review and last updated5 January 2026. The kind label describes that examined version; no claim is made about subsequent review reports or later versions."
+          },
+          {
+            "url": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content",
+            "note": "Downloaded the exact 12-page publisher-formatted article from the author’s university repository; read pp. 1–9 (abstract, sampling/preparation, bias, analysis, Tables 1–6, results and discussion) and visually inspected p. 5/Table2. Methods: February 2024, markets within 50 km of Napier/Hastings; washed edible portions, 153 composites from 736 vegetables, 14 markets / 10 growing sites, ICP-MS in ISO 17025 laboratory. Main organic Cd p=.003 and Ni p<.001; no adjustment for market/growing site or vegetable type in primary ANOVA. Sensitivity n=37 broccoli/cabbage/lettuce: organic Cd p=.086, Ni p=.036. Only 12 lead and 2 arsenic samples above detection; the authors EXCLUDED these from further statistical analysis. Editorial contradiction: no organic effect on lead or arsenic was not demonstrated. The paper reports 3 lead and 1 cadmium Codex exceedances; its chosen Codex classification was not independently validated here and the narrative does not establish that these were organic samples. Soil/fertilizer history was not measured, so the briefing’s almost-certain fertilizer explanation is not demonstrated. Composite sampling masks individual extremes; regional, seasonal, observational limits apply."
+          }
+        ]
+      },
+      "kind": "Research article · awaiting peer review"
+    },
+    "4": {
+      "referenceTitle": "Cadmium and Lead in Cocoa Powder and Chocolate Products in the U.S. Market",
+      "citation": "Abt, Eileen; Fong Sam, Jennifer; Gray, Patrick; and Posnick Robin, Lauren. Cadmium and lead in cocoa powder and chocolate products in the US Market. Food Additives & Contaminants: Part B, Surveillance 11(2):92–102 (2018). doi:10.1080/19393210.2017.1420700.",
+      "summary": "The authors’ abstract describes a convenience sample of U.S. retail cocoa powders, chocolate and cocoa nibs analyzed by ICP-MS. Cadmium and lead correlated with cocoa percentage; cadmium was higher in products with reported Latin American origins than African origins.",
+      "establishes": "The accessible abstract supports variation by composition and reported origin in the sampled products. It does not establish an organic-versus-conventional comparison, a soil mechanism in those products, or a guarantee for any origin or certification. This review is limited to the authors’ abstract and bibliographic record.",
+      "relevance": "The findings explain why product and sourcing evidence can matter when HMTc considers cocoa. They do not show that organic status is causally irrelevant or that HMTc certification reduces concentrations.",
+      "links": [
+        {
+          "label": "Article DOI",
+          "href": "https://doi.org/10.1080/19393210.2017.1420700"
+        },
+        {
+          "label": "Authors’ abstract · PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/29310543/"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "14c5c6e067198e1f1e97f747c3d8f91c7b9be1155bc03fe7bc946404e9287ad1",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.1080/19393210.2017.1420700",
+            "note": "Verified DOI/title/authors and journal citation against PubMed record 29310543 and Europe PMC’s matching MEDLINE core record. Publisher full-text and abstract endpoints returned403, and DOI web opening failed. Europe PMC marks full text subscription-required and lists no PMC article. Only the authors’ abstract, reproduced in these bibliographic services, was read; neither full methods nor tables were available. No sample count, organic-status result, sampling year or causal mechanism has been inferred."
+          },
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29310543/",
+            "note": "Read the complete authors’ abstract and bibliographic fields exposed by the PubMed search result, corroborated by Europe PMC REST resultType=core for EXT_ID 29310543. The abstract specifies a convenience retail sample, ICP-MS, cocoa percentage and reported origin; Cd 0.004–3.15 mg/kg, Pb<LOD–0.38 mg/kg; Latin America versus Africa. Direct PubMed page access returned no readable article text, so provenance is the complete indexed author abstract plus matching MEDLINE abstract, not a full-text review. Editorial limits: the briefing’s West Africa specificity and inference that the differences establish soil rather than certification are not established by this abstract. No organic comparison is reported in the abstract."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Arsenic in Rice and Rice Products Risk Assessment",
+      "citation": "U.S. Food and Drug Administration, Center for Food Safety and Applied Nutrition. Arsenic in Rice and Rice Products Risk Assessment Report, March 2016, version released for public comment. Related action-level document: Inorganic Arsenic in Rice Cereals for Infants: Action Level, Guidance for Industry, August 2020.",
+      "summary": "The 2016 assessment models lifetime lung and bladder cancer risk from inorganic arsenic in rice and reviews potential effects during pregnancy and early childhood. FDA’s separate 2020 guidance recommends a 100 µg/kg (100 ppb) inorganic-arsenic action level for all infant rice cereals, including organically grown cereals.",
+      "establishes": "The assessment explains rice uptake from soil and water under flooded conditions. It is a risk assessment, not itself the final action-level guidance. The 2020 recommendation is nonbinding and informs case-specific enforcement; its equal coverage of farming systems does not prove identical concentrations in them.",
+      "relevance": "Together, these sources connect the briefing’s rice example to measured inorganic arsenic and product-specific controls. They support evaluating organic rice cereal against a contaminant benchmark while leaving HMTc’s own limits and certification requirements as separate program decisions.",
+      "links": [
+        {
+          "label": "FDA risk assessment · March 2016",
+          "href": "https://www.fda.gov/media/96071/download"
+        },
+        {
+          "label": "FDA final guidance · August 2020",
+          "href": "https://www.fda.gov/media/97234/download"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "f8d490d5b0a4e7500ccff5f9702a3d022285f7c9b499f4c06d2814a57d14c20f",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/96071/download",
+            "note": "Downloaded official 284-page FDA report; read cover/version history, Executive Summary printedpp.1–4, and Hazard Identification§2.1.1 at printedp.14 (physicalp.29). The 2016 document explicitly models long-term lung/bladder cancer and reviews susceptible life stages; p. 14 explains flooded-soil arsenic mobilization and nutrient-uptake pathways. This was targeted review, not reanalysis of its model or all appendices. FDA landing page also dates the assessment March 2016 and links a separate August 2020 guidance resource. Editorial follow-up: saying the risk assessment includes the final 100 ppb action level conflates a risk-model document with subsequent guidance. Flooded agronomy supports uptake plausibility, not proof that organic/conventional concentration distributions are identical."
+          },
+          {
+            "url": "https://www.fda.gov/media/97234/download",
+            "note": "Read official August 2020 guidance PDFpp.3–7: Introduction states nonbinding status; Background identifies this as finalizing the April 2016 draft; Discussion covers flooded conditions, infant exposure and ingredient sourcing/testing;§IV states 100 µg/kg inorganic arsenic and explicitly includes white/brown, organically/conventionally grown infant rice cereals. §V says FDA considers action level plus other facts when assessing adulteration/enforcement. pp. 4–5 distinguish chemical organic arsenic from organically grown food. This is not a legally binding blanket tolerance or a safety guarantee, and its rationale includes risk assessment and achievability as well as rice agronomy."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Total Diet Study, FY2018–2020",
+      "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+      "summary": "FDA measured nutrient and contaminant elements in retail foods, generally prepared as consumed. The report documents detectable lead, arsenic, cadmium and mercury in portions of the sampled food supply, alongside many results below analytical detection limits.",
+      "establishes": "This is national food surveillance, not an organic-versus-conventional comparison or testing of a particular brand’s compliance. Detection is not equivalent to harm, and a nondetect is not proof of absence. FDA does not take regulatory action from these composited TDS results.",
+      "relevance": "The findings support the briefing’s restrained claims about measuring metals rather than promising their absence. They do not establish organic certification’s legal scope or show that every food contains detectable metals, and they do not validate HMTc’s effectiveness.",
+      "links": [
+        {
+          "label": "FDA elements report · July 2022",
+          "href": "https://www.fda.gov/media/159745/download"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "4e09a0696c8da76aac875547aad61d73d556452ed30004f02c5512a08e64f565",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/159745/download",
+            "note": "Reused Premium Promise reference 3 primary-report review of printedpp.4–5,7,14–17,20 and reopened the official PDF executive summarypp.4–5 in this pass. FDA reports 3241 food/beverage samples plus 35 water samples; composited surveillance does not establish individual brand compliance or population organic effects. Editorial contradiction: actual reported detections are lead 15%, arsenic 43%, cadmium 61%, mercury 8%; bibliography states 33% for cadmium and 10% for mercury. Prior review ofp.20 also records cultivation practices as an influence on cadmium, so the dataset does not show concentrations independent of farming practice. No raw-data reanalysis performed; prose unchanged."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This cited first deposit has been superseded.",
+      "summary": "The cited manual specifies HMTc’s product-testing and surveillance framework and restrictions on certification claims. Part 5.5 presents the program author’s comparison with USDA Organic and other schemes; Part 4 sets testing frequencies and laboratory requirements.",
+      "establishes": "Parts 2.1 and 2.5 distinguish action levels from safety thresholds and prohibit absolute-safety, zero-metals and zero-risk claims. These are HMTc’s stated program rules, not government law, independent validation of other schemes, or evidence of a participating product’s actual performance.",
+      "relevance": "It supplies the program specification for this briefing’s proposal to add measured heavy-metal evidence alongside organic certification. Whether a product meets that proposal requires its applicable current program requirements and testing records; the superseded manual alone supplies neither.",
+      "links": [
+        {
+          "label": "Cited manual · 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "4d9fdfcba056d947c1dc8ae71ab86a60b094321cbe8edeceed34350d0f4a6ef8",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Reused exact version-pinned primary PDF and Zenodo metadata review from Premium Promise reference 7 (same review date), including cover/colophon, printedpp.53–54,73–74,80 and 364–368. DOI 20270512 identifies 18 May 2026 v0, superseded. Deposited publisher is The Paleo Foundation, whereas bibliography says ICS; retained the cited edition’s publisher in the citation. The prior review verifies metadata and download, not a substituted current edition."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Read additional cached exact-PDF pages printed321–322,330–331 and366–368 (physical323–324,332–333,368–370). Part 4 uses status/risk-based frequencies and independent sampling;§10.3 requires relevant ISO/IEC17025 laboratory accreditation,§10.4 finished-product reports and§11 decision rules. These are specifications, not evidence that testing occurred or reduced harm. Part 5.5 states complementarity with organic but uses broad organic-scope claims; official USDA provisions reviewed in this page’s reference 2 provide the controlling legal qualification. Printedp.368 expressly says HMTc does not certify safety. Do not apply old numerical limits, status eligibility or frequencies as current policy."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Reused same-day publisher Version history review from Premium Promise reference 7: May 18 v0 is superseded, with 20 June 2026 revision and 6 August 2026 current web edition listed. This link is version navigation only; all substantive section references here remain tied to the cited v0 deposit. Current web/PDF contents were not substituted, and the live page was not independently reopened in this pass."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses",
+      "citation": "Barański, Marcin; Średnicka-Tober, Dominika; Volakakis, Nikolaos; et al. Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses. British Journal of Nutrition 112(5):794–811 (2014); first published online 15 July 2014. doi:10.1017/S0007114514001366.",
+      "summary": "This review synthesized 343 publications comparing organic and conventional crops and crop-based foods; 156 provided information for weighted analyses. Both weighted and unweighted analyses found lower cadmium in organic crops overall. The authors detected no significant overall lead or arsenic difference.",
+      "establishes": "These are pooled composition findings, not a metal-free guarantee or a test of human health outcomes. Results varied across crops and study methods. The authors discuss phosphorus fertilization, rotations and soil conditions as contributors, but could not quantify their relative contributions across the literature.",
+      "relevance": "The review supports the briefing’s acknowledgment that organic growing can be associated with lower cadmium while leaving a separate role for product measurement. It does not establish that organic practices cannot affect soil-derived metals or that adding HMTc provides a demonstrated health benefit.",
+      "links": [
+        {
+          "label": "Article DOI",
+          "href": "https://doi.org/10.1017/S0007114514001366"
+        },
+        {
+          "label": "Open-access publisher PDF",
+          "href": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33F09637EAE6C4ED119E0C4BFFE2D5B1/S0007114514001366a.pdf/higher-antioxidant-and-lower-cadmium-concentrations-and-lower-incidence-of-pesticide-residues-in-organically-grown-crops-a-systematic-literature-review-and-meta-analyses.pdf"
+        }
+      ],
+      "pageDigest": "21fa69996ac500d59220d80c26eaf57dc120cb00c7b582d62a7c7f578dc35e4f",
+      "sourceDigest": "09ab5d53a5a5abda4ca6a4b3def681182da87d55607f2657b421a1f9d554f5e9",
+      "review": {
+        "reviewer": "Codex, primary-source review and organic-briefing context verification",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.1017/S0007114514001366",
+            "note": "Verified DOI, full title, author list, journal112:794–811,2014 and first online 15 July 2014 from the publisher PDF title page. DOI landing-page web access failed, but the matching 18-page Cambridge University Press PDF downloaded successfully and was read. This is a peer-reviewed systematic literature review/meta-analysis ; 343 is total publications across outcomes, not 343 cadmium studies."
+          },
+          {
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33F09637EAE6C4ED119E0C4BFFE2D5B1/S0007114514001366a.pdf/higher-antioxidant-and-lower-cadmium-concentrations-and-lower-incidence-of-pesticide-residues-in-organically-grown-crops-a-systematic-literature-review-and-meta-analyses.pdf",
+            "note": "Read publisher PDF title/abstract, methods at printedpp. 796–797, toxic-metals results atp.802, heterogeneity/bias discussionp.803, and cadmium/limitations discussionpp. 806–807; inspected figure/table text while extracting and separately reread completepp. 802,806–807. Search chiefly 1992–2011 plus earlier studies from reference searches; matched-farm surveys, retail basket studies and field experiments were combined. Organic certification was not uniformly independently verified; study-defined organic methods/labels qualified. Overall Cd lower in weighted and unweighted analyses; crop-stratified significance was observed for cereals, not vegetables/fruits; As/Pb differences were nonsignificant. p. 806 discusses mineral phosphorus, rotation, pH and liming; p. 807 says relative genetic/environmental contributions cannot be quantified and identifies high heterogeneity/method sensitivity. The advertised 48% is an unweighted mean-percentage difference with wide uncertainty, not a universal reduction. Editorial follow-up: failure to detect a difference does not prove no effect or establish the briefing’s categorical fertilizer-versus-native-soil distinction. This review did not independently reanalyze study data or audit supplementary-only As/Pb estimates."
+          }
+        ]
+      }
+    }
+  }
+}

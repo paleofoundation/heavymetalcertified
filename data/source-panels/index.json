@@ -1,4 +1,416 @@
 {
+  "briefings/brief-2-open-category": {
+    "page": "briefings/brief-2-open-category",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "The Non-GMO Project and the Non-GMO Project Verified mark",
+        "citation": "The Non-GMO Project. About the Non-GMO Project: mission and history. Organization website, accessed 15 September 2026.",
+        "summary": "The organization describes its origins in two grocery stores, their joint founding of the Project in 2007, and the arrival of the first Butterfly-labeled products on shelves in 2010. It presents the mark as certification for GMO avoidance and describes its growth as rapid.",
+        "establishes": "This first-party history supports the launch date and the program’s stated purpose. Its growth description is promotional self-reporting; it does not supply an audited comparison with USDA Organic, establish why shoppers chose the mark, or show that the Butterfly alone caused its growth.",
+        "relevance": "The history supplies the concrete example behind this briefing’s analogy between a focused non-GMO mark and a focused heavy-metal mark. Applying that example to HMTc is a positioning argument, not evidence that HMTc will achieve similar recognition or that the heavy-metal category has no competing marks.",
+        "links": [
+          {
+            "label": "Non-GMO Project · mission and history",
+            "href": "https://www.nongmoproject.org/about/"
+          }
+        ],
+        "kind": "Program history"
+      },
+      "2": {
+        "referenceTitle": "National Organic Program",
+        "citation": "United States. Organic Foods Production Act of 1990, Pub. L. 101-624, title XXI, enacted 28 November 1990, codified at 7 U.S.C. §§6501–6524 (2024 edition). U.S. Department of Agriculture, National Organic Program, 7 C.F.R. Part 205. USDA Agricultural Marketing Service, The Organic Integrity Quarterly, October 2012, pp. 1–2.",
+        "summary": "The 1990 Act created a national framework for organic production and handling, certification and labeling. USDA’s implementing standards were fully implemented in October 2002. The rules govern farming and handling practices, allowed substances, inspections, residue testing and use of the organic label.",
+        "establishes": "Organic certification verifies compliance with this production-and-handling system; it is not a general guarantee that finished foods are free of metals. The system nevertheless expressly addresses heavy-metal contamination prevention in soil-fertility management and provides for residue testing and contaminant reporting. Its scope should not be described as wholly silent on metals.",
+        "relevance": "These sources establish the federal framework against which the briefing compares the later Non-GMO Project mark. They help distinguish an organic production claim from HMTc’s claim about measured concentrations, but do not establish universal shopper trust in 1990 or HMTc’s commercial ownership of a category.",
+        "links": [
+          {
+            "label": "Organic Foods Production Act · U.S. Code",
+            "href": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm"
+          },
+          {
+            "label": "National Organic Program · 7 CFR Part 205",
+            "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+          },
+          {
+            "label": "USDA history · October 2012",
+            "href": "https://www.ams.usda.gov/sites/default/files/media/2012-Organic-October-Newsletter.pdf"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Total Diet Study, FY2018–2020",
+        "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+        "summary": "FDA measured nutrient and contaminant elements in retail foods, generally prepared for consumption. Its national monitoring results document detectable arsenic, cadmium, lead and mercury in parts of the food supply.",
+        "establishes": "These are food-surveillance data, not a comparison of organic and conventional farming or verification of a particular brand. A nondetect means below the analytical reporting limit, not demonstrated absence. FDA does not take regulatory action from these composited TDS results.",
+        "relevance": "The occurrence data explain why an organic or non-GMO label cannot by itself report a product’s measured metal concentrations. They support the briefing’s rationale for concentration evidence, while providing no comparison of certification-market positions, no measure of demand for HMTc, and no finding that farming practices never influence contamination.",
+        "links": [
+          {
+            "label": "FDA elements report · July 2022",
+            "href": "https://www.fda.gov/media/159745/download"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___, decided 24 February 2026. California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962. Maryland Rudy’s Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4. U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+        "summary": "This grouped reference combines a unanimous Supreme Court ruling about federal jurisdiction in a baby-food lawsuit, California and Maryland baby-food testing and disclosure laws, and a congressional staff investigation of company testing records. Each addresses a different part of public scrutiny and accountability.",
+        "establishes": "Palmquist resolved jurisdiction rather than product injury or liability. California phased in testing in 2024 and disclosure in 2025; Maryland phased them in during 2025 and 2026, within each law’s defined scope. The House report makes findings and recommendations. None measures demand for a heavy-metal seal or requires HMTc certification.",
+        "relevance": "The materials explain the legal and public-information setting for the briefing’s proposed heavy-metal market position. Inferring that this creates an unoccupied category, willing buyers or a commercial advantage for HMTc is the author’s marketing interpretation, separate from the court holding and statutory obligations.",
+        "links": [
+          {
+            "label": "Supreme Court opinion · February 2026",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          },
+          {
+            "label": "California AB 899 · enacted text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          },
+          {
+            "label": "Maryland Rudy’s Law · codified statute",
+            "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
+          },
+          {
+            "label": "House staff report · February 2021",
+            "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ],
+        "kind": "Law and staff report"
+      },
+      "5": {
+        "referenceTitle": "Positioning: The Battle for Your Mind",
+        "citation": "Ries, Al, and Jack Trout. Positioning: The Battle for Your Mind, 20th Anniversary Edition. McGraw Hill, ©2001, published 28 December 2000, ISBN 9780071359160. Ries, Al, and Jack Trout. The 22 Immutable Laws of Marketing. Harper Business, electronic edition, 13 October 2009. Ries, Laura. Visual Hammer: Nail Your Brand Into the Mind With the Emotional Power of a Visual Hammer. Laura Ries, 12 March 2012. Review limited to publisher descriptions, bibliographic records and contents listings.",
+        "summary": "The publisher’s Positioning overview describes building a distinct place in a customer’s mind relative to competitors. The 22 Immutable Laws of Marketing draws practitioner lessons from campaigns judged successful or unsuccessful. Visual Hammer’s publisher description links a verbal brand position with a memorable visual. These are the three separate works grouped in this reference.",
+        "establishes": "These sources supply marketing frameworks, not legal rules or an empirical forecast for heavy-metal certification. The reviewed material is limited to publisher overviews and contents; it does not verify every chapter-level paraphrase, prove that categories always acquire one owner, or establish the briefing’s claims about memory and consumer demand.",
+        "relevance": "The briefing applies these frameworks to HMTc’s name, narrow subject and proposed visual identity. That application is the author’s strategy: the books do not evaluate HMTc, demonstrate that its market position is unclaimed, or establish that early adoption will generate a particular commercial return.",
+        "links": [
+          {
+            "label": "Positioning · publisher record",
+            "href": "https://www.mheducation.com/highered/mhp/product/positioning-battle-your-mind-20th-anniversary-edition.html"
+          },
+          {
+            "label": "Positioning · publisher overview",
+            "href": "https://www.mheducation.co.in/positioning-the-battle-of-your-mind-9780070533752-india"
+          },
+          {
+            "label": "22 Immutable Laws · publisher overview",
+            "href": "https://profilebooks.com/work/the-22-immutable-laws-of-marketing/"
+          },
+          {
+            "label": "22 Immutable Laws · electronic edition",
+            "href": "https://books.apple.com/us/book/the-22-immutable-laws-of-marketing/id360610255"
+          },
+          {
+            "label": "Visual Hammer · publisher description",
+            "href": "https://books.apple.com/us/book/visual-hammer/id503572827"
+          }
+        ],
+        "kind": "Marketing books"
+      },
+      "6": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+        "summary": "The cited 2026 v0 manual defines an infant-and-child-food program covering eight priority metals, with testing, surveillance, corrective action and certification-mark restrictions. Part 5.5 compares HMTc with USDA Organic, the Non-GMO Project, the Clean Label Project, EWG Healthy Living and Consumer Reports testing; this is the program author’s own comparison.",
+        "establishes": "The manual describes HMTc’s declared scope and requirements. Parts 2.1 and 2.5 distinguish action levels from safety thresholds and prohibit claims of absolute safety, no metals or zero risk. Its comparison acknowledges other programs’ metal testing. It does not independently validate competitors’ scope, establish market priority, or show consumer recognition of HMTc.",
+        "relevance": "It supplies the operational basis for the briefing’s focused claim: testing against published limits with ongoing surveillance. The analogy to the Butterfly, predictions of category ownership and assessment of HMTc’s visual identity remain positioning judgments. Because the cited deposit is superseded, current participation and mark-use decisions require the current manual.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/brief-3-what-organic-doesnt-say": {
+    "page": "briefings/brief-3-what-organic-doesnt-say",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), decided 24 February 2026. Related factual and procedural history: Palmquist v. Hain Celestial Group, Inc., 103 F.4th 294 (5th Cir. 2024), No. 23-40197, decided 28 May 2024.",
+        "summary": "The Supreme Court held that the erroneous dismissal of a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The Fifth Circuit opinion records the parents’ allegation that their son consumed Earth’s Best Organic products bought from Whole Foods.",
+        "establishes": "These opinions establish the lawsuit’s procedural history and the allegations the courts considered. The Supreme Court’s holding concerns jurisdiction; it does not establish injury causation, product liability, or a failure of USDA organic certification.",
+        "relevance": "The case supplies the family and product setting for this briefing’s discussion of expectations about organic food. The proposed role for HMTc is the author’s response to that setting, not a remedy ordered or validated by the Court.",
+        "links": [
+          {
+            "label": "Supreme Court opinion · February 2026",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          },
+          {
+            "label": "Fifth Circuit opinion · May 2024",
+            "href": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "National Organic Program; Organic Foods Production Act of 1990",
+        "citation": "United States. Organic Foods Production Act of 1990, Pub. L. 101-624, title XXI, 28 November 1990, 104 Stat. 3935, as amended, codified at 7 U.S.C. §§ 6501–6524 (2024 edition consulted). U.S. Department of Agriculture. National Organic Program, 7 C.F.R. Part 205, as amended (eCFR text current through 11 September 2026).",
+        "summary": "The statute establishes national organic production and marketing standards; USDA’s regulations implement certification of production and handling operations, permitted inputs, inspections and labeling. Synthetic inputs are generally restricted, with specified National List exceptions.",
+        "establishes": "These are legal requirements, but they do not provide a universal finished-food concentration certificate for lead, cadmium and arsenic. They do address contamination: § 205.203(c) expressly names heavy metals, and the statute and § 205.670 require residue testing and reporting of certain food-safety findings.",
+        "relevance": "The rules support distinguishing production certification from HMTc’s proposed measurement against product-specific limits. That distinction should acknowledge organic contamination controls; it does not establish that organic certification never tests products or is wholly silent on heavy metals.",
+        "links": [
+          {
+            "label": "Organic Foods Production Act · U.S. Code",
+            "href": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm"
+          },
+          {
+            "label": "National Organic Program · 7 CFR Part 205",
+            "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis",
+        "citation": "Dearing, Chey; Ye, Zhijing; and Robertshaw, Glen. Assessment of Heavy Metals in Organic and Non-Organic Vegetables Post Severe Tropical Cyclone Gabrielle: A cross-sectional comparative analysis. F1000Research 14:1461 (26 December 2025), version 1, awaiting peer review in the examined version. doi:10.12688/f1000research.175538.1.",
+        "summary": "This cross-sectional study tested 153 composite samples made from 736 vegetables bought at 14 Hawke’s Bay market gardens in February 2024. Its main analysis associated organic production with lower cadmium and nickel, and the authors reported four composite samples above their selected Codex limits.",
+        "establishes": "The observations are local and do not establish a fertilizer mechanism or certification guarantee. Lead and arsenic were excluded from comparative statistical analysis because most results were below detection limits. In a 37-sample sensitivity analysis restricted by vegetable type, only nickel retained a significant organic association.",
+        "relevance": "It supports discussing measured crop concentrations alongside organic status. For HMTc, the relevant distinction is between an observed group association and verified concentrations in a finished product; this study does not test U.S. organic certification or HMTc performance.",
+        "links": [
+          {
+            "label": "Article DOI · cited version 1",
+            "href": "https://doi.org/10.12688/f1000research.175538.1"
+          },
+          {
+            "label": "Version 1 PDF · Massey University repository",
+            "href": "https://mro.massey.ac.nz/server/api/core/bitstreams/d6874e0f-9d0b-4bbc-be7a-b36b70158aca/content"
+          }
+        ],
+        "kind": "Research article · awaiting peer review"
+      },
+      "4": {
+        "referenceTitle": "Cadmium and Lead in Cocoa Powder and Chocolate Products in the U.S. Market",
+        "citation": "Abt, Eileen; Fong Sam, Jennifer; Gray, Patrick; and Posnick Robin, Lauren. Cadmium and lead in cocoa powder and chocolate products in the US Market. Food Additives & Contaminants: Part B, Surveillance 11(2):92–102 (2018). doi:10.1080/19393210.2017.1420700.",
+        "summary": "The authors’ abstract describes a convenience sample of U.S. retail cocoa powders, chocolate and cocoa nibs analyzed by ICP-MS. Cadmium and lead correlated with cocoa percentage; cadmium was higher in products with reported Latin American origins than African origins.",
+        "establishes": "The accessible abstract supports variation by composition and reported origin in the sampled products. It does not establish an organic-versus-conventional comparison, a soil mechanism in those products, or a guarantee for any origin or certification. This review is limited to the authors’ abstract and bibliographic record.",
+        "relevance": "The findings explain why product and sourcing evidence can matter when HMTc considers cocoa. They do not show that organic status is causally irrelevant or that HMTc certification reduces concentrations.",
+        "links": [
+          {
+            "label": "Article DOI",
+            "href": "https://doi.org/10.1080/19393210.2017.1420700"
+          },
+          {
+            "label": "Authors’ abstract · PubMed",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/29310543/"
+          }
+        ]
+      },
+      "5": {
+        "referenceTitle": "Arsenic in Rice and Rice Products Risk Assessment",
+        "citation": "U.S. Food and Drug Administration, Center for Food Safety and Applied Nutrition. Arsenic in Rice and Rice Products Risk Assessment Report, March 2016, version released for public comment. Related action-level document: Inorganic Arsenic in Rice Cereals for Infants: Action Level, Guidance for Industry, August 2020.",
+        "summary": "The 2016 assessment models lifetime lung and bladder cancer risk from inorganic arsenic in rice and reviews potential effects during pregnancy and early childhood. FDA’s separate 2020 guidance recommends a 100 µg/kg (100 ppb) inorganic-arsenic action level for all infant rice cereals, including organically grown cereals.",
+        "establishes": "The assessment explains rice uptake from soil and water under flooded conditions. It is a risk assessment, not itself the final action-level guidance. The 2020 recommendation is nonbinding and informs case-specific enforcement; its equal coverage of farming systems does not prove identical concentrations in them.",
+        "relevance": "Together, these sources connect the briefing’s rice example to measured inorganic arsenic and product-specific controls. They support evaluating organic rice cereal against a contaminant benchmark while leaving HMTc’s own limits and certification requirements as separate program decisions.",
+        "links": [
+          {
+            "label": "FDA risk assessment · March 2016",
+            "href": "https://www.fda.gov/media/96071/download"
+          },
+          {
+            "label": "FDA final guidance · August 2020",
+            "href": "https://www.fda.gov/media/97234/download"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "Total Diet Study, FY2018–2020",
+        "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+        "summary": "FDA measured nutrient and contaminant elements in retail foods, generally prepared as consumed. The report documents detectable lead, arsenic, cadmium and mercury in portions of the sampled food supply, alongside many results below analytical detection limits.",
+        "establishes": "This is national food surveillance, not an organic-versus-conventional comparison or testing of a particular brand’s compliance. Detection is not equivalent to harm, and a nondetect is not proof of absence. FDA does not take regulatory action from these composited TDS results.",
+        "relevance": "The findings support the briefing’s restrained claims about measuring metals rather than promising their absence. They do not establish organic certification’s legal scope or show that every food contains detectable metals, and they do not validate HMTc’s effectiveness.",
+        "links": [
+          {
+            "label": "FDA elements report · July 2022",
+            "href": "https://www.fda.gov/media/159745/download"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This cited first deposit has been superseded.",
+        "summary": "The cited manual specifies HMTc’s product-testing and surveillance framework and restrictions on certification claims. Part 5.5 presents the program author’s comparison with USDA Organic and other schemes; Part 4 sets testing frequencies and laboratory requirements.",
+        "establishes": "Parts 2.1 and 2.5 distinguish action levels from safety thresholds and prohibit absolute-safety, zero-metals and zero-risk claims. These are HMTc’s stated program rules, not government law, independent validation of other schemes, or evidence of a participating product’s actual performance.",
+        "relevance": "It supplies the program specification for this briefing’s proposal to add measured heavy-metal evidence alongside organic certification. Whether a product meets that proposal requires its applicable current program requirements and testing records; the superseded manual alone supplies neither.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses",
+        "citation": "Barański, Marcin; Średnicka-Tober, Dominika; Volakakis, Nikolaos; et al. Higher antioxidant and lower cadmium concentrations and lower incidence of pesticide residues in organically grown crops: a systematic literature review and meta-analyses. British Journal of Nutrition 112(5):794–811 (2014); first published online 15 July 2014. doi:10.1017/S0007114514001366.",
+        "summary": "This review synthesized 343 publications comparing organic and conventional crops and crop-based foods; 156 provided information for weighted analyses. Both weighted and unweighted analyses found lower cadmium in organic crops overall. The authors detected no significant overall lead or arsenic difference.",
+        "establishes": "These are pooled composition findings, not a metal-free guarantee or a test of human health outcomes. Results varied across crops and study methods. The authors discuss phosphorus fertilization, rotations and soil conditions as contributors, but could not quantify their relative contributions across the literature.",
+        "relevance": "The review supports the briefing’s acknowledgment that organic growing can be associated with lower cadmium while leaving a separate role for product measurement. It does not establish that organic practices cannot affect soil-derived metals or that adding HMTc provides a demonstrated health benefit.",
+        "links": [
+          {
+            "label": "Article DOI",
+            "href": "https://doi.org/10.1017/S0007114514001366"
+          },
+          {
+            "label": "Open-access publisher PDF",
+            "href": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/33F09637EAE6C4ED119E0C4BFFE2D5B1/S0007114514001366a.pdf/higher-antioxidant-and-lower-cadmium-concentrations-and-lower-incidence-of-pesticide-residues-in-organically-grown-crops-a-systematic-literature-review-and-meta-analyses.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/brief-4-cost-of-being-uncertified": {
+    "page": "briefings/brief-4-cost-of-being-uncertified",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), unanimous opinion by Justice Sotomayor, 24 February 2026. Below: U.S. Court of Appeals for the Fifth Circuit, Palmquist v. Hain Celestial Group, Inc., No. 23-40197, opinion by Judge Stewart, 28 May 2024.",
+        "summary": "The Supreme Court affirmed that wrongly dismissing a retailer whose citizenship defeated federal diversity jurisdiction did not cure that defect. The manufacturer’s favorable federal judgment could not stand. The Fifth Circuit opinion supplies the underlying litigation and testing history.",
+        "establishes": "The holding concerns jurisdiction, not product liability or certification. It does not bar every retailer dismissal, change the plaintiff’s burden to prove causation, or measure increases in defense costs, settlements or insurance premiums.",
+        "relevance": "It explains why the briefing considers the financial consequences of losing a federal judgment. The five cost channels and proposed protection from HMTc are the author’s business analysis; they are not outcomes established by either court.",
+        "links": [
+          {
+            "label": "Supreme Court opinion · February 2026",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          },
+          {
+            "label": "Fifth Circuit opinion · May 2024",
+            "href": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Total Diet Study, FY2018–2020",
+        "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+        "summary": "FDA’s national food-surveillance report measures nutrient and contaminant elements in retail foods, generally prepared as consumed. It documents detectable toxic elements across portions of the sampled food supply.",
+        "establishes": "FDA reports detection in 15% of samples for lead, 43% for arsenic, 61% for cadmium and 8% for mercury. Composited surveillance results do not establish contamination in every product, an individual supplier’s violation, or any financial consequence.",
+        "relevance": "The data support measuring metals rather than assuming their absence. They do not establish that a particular brand’s product almost certainly contains a detectable metal or quantify the cost of being uncertified.",
+        "links": [
+          {
+            "label": "FDA elements report · July 2022",
+            "href": "https://www.fda.gov/media/159745/download"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "Litigation Cost Survey of Major Companies",
+        "citation": "Lawyers for Civil Justice, Civil Justice Reform Group and U.S. Chamber Institute for Legal Reform. Litigation Cost Survey of Major Companies, May 2010. Survey administered by the Searle Center; submitted to the 2010 Conference on Civil Litigation.",
+        "summary": "This industry-sponsored survey collected historical litigation expenses from major companies. It reports company averages for outside legal fees and discovery costs in major cases closed during 2004–2008.",
+        "establishes": "The 2008 figures are approximately $2.02 million in outside fees and $622,000 in discovery costs. The selected large-company sample and major-case threshold limit generalization; this is a May 2010 industry survey, not a 2008 Federal Judicial Center study.",
+        "relevance": "It supplies a historical benchmark for the briefing’s litigation model. It provides no estimate of post-Palmquist case frequency, settlement inflation or HMTc savings; annual expected cost still depends on separately justified probability and incremental-cost assumptions.",
+        "links": [
+          {
+            "label": "Original industry survey · May 2010",
+            "href": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010"
+          }
+        ],
+        "kind": "Industry survey"
+      },
+      "4": {
+        "referenceTitle": "People v. Promix Nutrition",
+        "citation": "Matching monetary record: Keep America Safe and Beautiful and Promix Nutrition, Inc., Settlement and Release Agreement, fully executed 24 November 2024; California Attorney General Proposition 65 notice no. 2024-02424, recorded as KASB v. Promix Nutrition, Inc., out-of-court settlement. The bibliography’s People v. Promix Nutrition consent-judgment identification was not verified.",
+        "summary": "The official record matching the cited company and exact $28,000 allocation is a private settlement over alleged lead-warning violations involving Promix Lemon Pre-Workout. It is recorded as KASB v. Promix, rather than the People v. Promix consent judgment named here.",
+        "establishes": "The agreement assigns $3,000 to a civil penalty and $25,000 to the claimant’s legal, expert and investigation costs. Promix denies violations. The agreement requires specified warnings for covered exposure levels; it does not establish liability, actual reformulation or the company’s total costs.",
+        "relevance": "It illustrates how a warning dispute can include substantial claimant-side fees. A single 2024 settlement involving a pre-workout product cannot establish baby-food settlement values, changes caused by Palmquist, or savings attributable to HMTc.",
+        "links": [
+          {
+            "label": "Attorney General record · matching $28,000 settlement",
+            "href": "https://oag.ca.gov/prop65/60-day-notice-2024-02424"
+          },
+          {
+            "label": "Settlement and Release Agreement · November 2024",
+            "href": "https://oag.ca.gov/system/files/prop65/settlements/2024-02424S4488.pdf"
+          }
+        ],
+        "kind": "Settlement"
+      },
+      "5": {
+        "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+        "citation": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+        "summary": "Congressional staff examined manufacturer documents and criticized ingredient-only testing. The report describes Hain’s 2019 presentation showing that finished rice products could contain more inorganic arsenic than estimates based on ingredient testing.",
+        "establishes": "It documents the staff’s findings and recommendations, rather than a judicial determination of negligence or causation. It does not measure how juries value testing records or how certification changes financial losses.",
+        "relevance": "The report supports the briefing’s concern about relying solely on ingredient records. HMTc’s case for finished-product verification draws on that concern; the proposed litigation advantage remains an inference.",
+        "links": [
+          {
+            "label": "House staff report · 4 February 2021",
+            "href": "https://oversightdemocrats.house.gov/sites/evo-subsites/democrats-oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      },
+      "6": {
+        "referenceTitle": "California Assembly Bill 899 (2023)",
+        "citation": "California Assembly Bill 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §§110962–110963. California Attorney General Rob Bonta, Assembly Bill 899 – Food Safety: Baby Food, enforcement advisory to manufacturers and retailers, 6 March 2026.",
+        "summary": "AB 899 requires testing and public disclosure for defined baby foods sold in California, with testing phased in during 2024 and disclosure in 2025. The March 2026 advisory explains those duties and warns manufacturers and retailers about enforcement.",
+        "establishes": "The statute creates legal obligations within its defined scope, excluding infant formula. The advisory communicates the Attorney General’s enforcement position; it does not create a new certification requirement or establish measured increases in litigation or insurance costs.",
+        "relevance": "These are concrete compliance costs behind the briefing’s balance-sheet argument. HMTc documentation can support compliance work, but a private certificate does not replace the manufacturer’s statutory testing, disclosure and applicable labeling duties.",
+        "links": [
+          {
+            "label": "AB 899 · enacted 2023 text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          },
+          {
+            "label": "Attorney General enforcement advisory · March 2026",
+            "href": "https://oag.ca.gov/system/files/attachments/press-docs/AB%20899%20Enforcement%20Advisory%5B1%5D.pdf"
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+        "citation": "International Organization for Standardization and International Electrotechnical Commission. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories. Third edition, November 2017; confirmed in 2023.",
+        "summary": "ISO/IEC 17025 describes general requirements for laboratory competence, impartiality and consistent operation. The official overview explains its use for testing and calibration laboratories and accreditation.",
+        "establishes": "This is a laboratory standard, not certification of a food product or a guarantee that testing will defeat a lawsuit. Only ISO’s public overview was reviewed; the paid normative standard and any individual laboratory’s accreditation scope were not accessed.",
+        "relevance": "It supports the competence and impartiality requirements behind the briefing’s proposed independent testing evidence. Appropriate laboratory scope, methods, sampling and product-specific decisions still need verification; the overview does not prove litigation savings.",
+        "links": [
+          {
+            "label": "ISO/IEC 17025:2017 · official overview",
+            "href": "https://www.iso.org/standard/66912.html"
+          }
+        ]
+      },
+      "8": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+        "summary": "The cited manual specifies the program’s testing, surveillance and mark-use rules. Part 5.6 describes revenue-tiered license fees and laboratory fees paid directly to accredited laboratories without a program markup.",
+        "establishes": "It establishes the operator’s published design, not actual prices, operating performance or measured financial protection. The v0 deposit is superseded, gives no all-in annual price guarantee, and prohibits safety-implying claims.",
+        "relevance": "It supports the cost structure and limited meaning of certification described here. A brand must obtain current license terms and laboratory quotes to compare costs with its own risk model; neither the manual nor the mark guarantees a financial return.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "9": {
+        "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026, pp. 1–6. doi: 10.5281/zenodo.18903738.",
+        "summary": "This author-produced preprint combines recall, litigation and market anchors into illustrative one-year loss scenarios: $1.6M–$6.6M+ at $5M revenue, $8M–$33M+ at $50M, and $57M–$187M+ at $500M, in section 7.3.",
+        "establishes": "The loss totals and certification benefits are model outputs, not observed HMTc results. The $112,500 annual break-even uses assumed $15M event loss, 3% annual event probability and 25% loss reduction from certification. It is not a quoted program price or guaranteed saving.",
+        "relevance": "It supplies the briefing’s three revenue tiers and break-even illustration. A brand must replace the assumptions with its own evidence and costs; the paper does not establish the briefing’s post-Palmquist settlement uplift, insurance repricing or near-certain retailer mandate.",
+        "links": [
+          {
+            "label": "Business-cost preprint · March 2026",
+            "href": "https://doi.org/10.5281/zenodo.18903738"
+          },
+          {
+            "label": "Full deposited preprint (PDF)",
+            "href": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content"
+          }
+        ],
+        "kind": "Preprint"
+      }
+    }
+  },
   "briefings/brief-5-retailer-as-anchor": {
     "page": "briefings/brief-5-retailer-as-anchor",
     "reviewed": "2026-09-15",

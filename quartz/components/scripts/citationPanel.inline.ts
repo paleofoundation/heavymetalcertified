@@ -474,8 +474,10 @@ function wireCitations(
   panel: HTMLElement,
 ) {
   const listeners = new AbortController()
+  // Bibliography numbers also open the drawer. Some pages list sources without
+  // inline markers, and readers may start from the References section directly.
   const cites = content.querySelectorAll<HTMLElement>(
-    'sup.cite > a[href^="#ref-"], sup.hmtc-cite',
+    `sup.cite > a[href^="#ref-"], sup.hmtc-cite, ${ROW_SELECTOR} > :first-child`,
   )
   cites.forEach((el) => {
     const isAnchor = el.tagName === "A"
@@ -487,7 +489,7 @@ function wireCitations(
     el.dataset.citePanelWired = "1"
     el.style.cursor = "pointer"
 
-    // The bracketed [N] marker is a plain <sup>: make it a real, focusable control
+    // Bracketed markers are plain sup/span elements: make each a focusable control
     // so keyboard readers can open it and focus can return here on close. The
     // anchor shape is already focusable and keyboard-activatable (Enter → click).
     if (!isAnchor) {

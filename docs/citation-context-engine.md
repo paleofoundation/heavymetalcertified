@@ -10,6 +10,10 @@ The original Big 8 explanations remain the reviewed seed. Additional records use
 the same reader-facing fields: full citation, source summary, what it establishes,
 page-specific relevance to HMTc, and one or more source links.
 
+Readers can open a source from either an inline citation or its bracketed number
+in the References list. Bibliography controls use the same drawer and keyboard
+behavior, including on pages without inline markers.
+
 ## Run a batch
 
 Run these commands from the repository root. Options use `--name=value`.

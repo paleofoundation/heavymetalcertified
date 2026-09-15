@@ -1,0 +1,259 @@
+{
+  "page": "briefings/brief-2-open-category",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "The Non-GMO Project and the Non-GMO Project Verified mark",
+      "citation": "The Non-GMO Project. About the Non-GMO Project: mission and history. Organization website, accessed 15 September 2026.",
+      "summary": "The organization describes its origins in two grocery stores, their joint founding of the Project in 2007, and the arrival of the first Butterfly-labeled products on shelves in 2010. It presents the mark as certification for GMO avoidance and describes its growth as rapid.",
+      "establishes": "This first-party history supports the launch date and the program’s stated purpose. Its growth description is promotional self-reporting; it does not supply an audited comparison with USDA Organic, establish why shoppers chose the mark, or show that the Butterfly alone caused its growth.",
+      "relevance": "The history supplies the concrete example behind this briefing’s analogy between a focused non-GMO mark and a focused heavy-metal mark. Applying that example to HMTc is a positioning argument, not evidence that HMTc will achieve similar recognition or that the heavy-metal category has no competing marks.",
+      "links": [
+        {
+          "label": "Non-GMO Project · mission and history",
+          "href": "https://www.nongmoproject.org/about/"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "f2299abc64150e3cfeb0a871530584d7a0e9d9eb221ec346387a62c5a87978da",
+      "review": {
+        "reviewer": "Codex, primary-source and publisher-overview review with page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.nongmoproject.org/about/",
+            "note": "Read the official About page, Our mission and Our history sections: the two retailers combined efforts in 2007; the first products bearing the Butterfly label reached shelves in 2010. The program itself calls the label one of the fastest-growing in retail. The page does not identify an original SPINS/Nielsen historical dataset or provide an audited comparison with organic; those underlying trackers were not independently accessed. The briefing’s five-year catch-up, consumer-preference priority, and category-ownership claims are not established by this history. No numerical sales or consumer-recognition claims have been imported."
+          }
+        ]
+      },
+      "kind": "Program history"
+    },
+    "2": {
+      "referenceTitle": "National Organic Program",
+      "citation": "United States. Organic Foods Production Act of 1990, Pub. L. 101-624, title XXI, enacted 28 November 1990, codified at 7 U.S.C. §§6501–6524 (2024 edition). U.S. Department of Agriculture, National Organic Program, 7 C.F.R. Part 205. USDA Agricultural Marketing Service, The Organic Integrity Quarterly, October 2012, pp. 1–2.",
+      "summary": "The 1990 Act created a national framework for organic production and handling, certification and labeling. USDA’s implementing standards were fully implemented in October 2002. The rules govern farming and handling practices, allowed substances, inspections, residue testing and use of the organic label.",
+      "establishes": "Organic certification verifies compliance with this production-and-handling system; it is not a general guarantee that finished foods are free of metals. The system nevertheless expressly addresses heavy-metal contamination prevention in soil-fertility management and provides for residue testing and contaminant reporting. Its scope should not be described as wholly silent on metals.",
+      "relevance": "These sources establish the federal framework against which the briefing compares the later Non-GMO Project mark. They help distinguish an organic production claim from HMTc’s claim about measured concentrations, but do not establish universal shopper trust in 1990 or HMTc’s commercial ownership of a category.",
+      "links": [
+        {
+          "label": "Organic Foods Production Act · U.S. Code",
+          "href": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm"
+        },
+        {
+          "label": "National Organic Program · 7 CFR Part 205",
+          "href": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205"
+        },
+        {
+          "label": "USDA history · October 2012",
+          "href": "https://www.ams.usda.gov/sites/default/files/media/2012-Organic-October-Newsletter.pdf"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "eca25fd984eb64adfa6e9c408e9a45214921bd763ba80f2a2fd85965e12572e0",
+      "review": {
+        "reviewer": "Codex, primary-source and publisher-overview review with page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title7/html/USCODE-2024-title7-chap94.htm",
+            "note": "Primary-law review performed by the collaborating organic-reference reviewer on 2026-09-15 and applied here to the distinct page context. Read official 2024 U.S. Code chapter 94, §§6501, 6503–6506, 6511, 6517 and historical notes. The Act was enacted 28 November 1990, Pub. L. 101-624, title XXI. Section 6506(a)(6) includes periodic residue testing including natural toxicants; §6511(b) addresses preharvest tissue testing where soil contamination is suspected. This statute establishes certification and labeling authority, not historical public-recognition measurements."
+          },
+          {
+            "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-I/subchapter-M/part-205",
+            "note": "Primary regulatory text reviewed by the collaborating organic-reference reviewer on 2026-09-15; eCFR displayed current through 2026-09-11. Read §§205.2, 205.105, 205.203(c), 205.670 and 205.671, including allowed-substance exceptions, certification scope, suspected-contact and periodic residue testing, the annual minimum share of certified operations tested, laboratory criteria, and reporting of environmental contaminants exceeding FDA/EPA tolerances or action levels. Editorial contradiction: §205.203(c) expressly addresses preventing heavy-metal contamination of crops, soil and water through plant/animal-material management. The briefing’s unqualified claim that organic is silent on metals is therefore too broad; the narrower distinction is absence of a general finished-food multi-metal certification ceiling within NOP. The rules also do not establish that every shopper trusted the word in 1990."
+          },
+          {
+            "url": "https://www.ams.usda.gov/sites/default/files/media/2012-Organic-October-Newsletter.pdf",
+            "note": "Read newsletter pp. 1–2, introductory history and Milestones timeline. It distinguishes OFPA in 1990, publication of the final rule in December 2000, accredited certifiers beginning work in April 2002, and full implementation in October 2002. Used only for historical timing, not as a current regulation or a consumer survey. The page’s thirty-year cultural head start and universal trust claim are not measured by this source."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Total Diet Study, FY2018–2020",
+      "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+      "summary": "FDA measured nutrient and contaminant elements in retail foods, generally prepared for consumption. Its national monitoring results document detectable arsenic, cadmium, lead and mercury in parts of the food supply.",
+      "establishes": "These are food-surveillance data, not a comparison of organic and conventional farming or verification of a particular brand. A nondetect means below the analytical reporting limit, not demonstrated absence. FDA does not take regulatory action from these composited TDS results.",
+      "relevance": "The occurrence data explain why an organic or non-GMO label cannot by itself report a product’s measured metal concentrations. They support the briefing’s rationale for concentration evidence, while providing no comparison of certification-market positions, no measure of demand for HMTc, and no finding that farming practices never influence contamination.",
+      "links": [
+        {
+          "label": "FDA elements report · July 2022",
+          "href": "https://www.fda.gov/media/159745/download"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "6d2b8e25b54bdaf15c5e24906c061e01345f4035602c3bbc7af381810770df2f",
+      "review": {
+        "reviewer": "Codex, reuse of same-document primary-source review with fresh page-context assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/159745/download",
+            "note": "Reused the 2026-09-15 primary-source review of the identical FDA document, with fresh review of this briefing’s use: Access: targeted report sections, printed pp. 4–5, 7, 14–17 and 20. Read monitoring design, compositing, reporting limits and toxic-element findings; underlying measurements were not reanalyzed. Editorial follow-up: p. 4 reports cadmium detection at 61% and mercury at 8%, conflicting with the bibliography's 33% and 10%. The report provides no organic-versus-conventional comparison; p. 20 also identifies cultivation practices among influences on cadmium. Page prose remains unchanged."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+      "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___, decided 24 February 2026. California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962. Maryland Rudy’s Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4. U.S. House Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+      "summary": "This grouped reference combines a unanimous Supreme Court ruling about federal jurisdiction in a baby-food lawsuit, California and Maryland baby-food testing and disclosure laws, and a congressional staff investigation of company testing records. Each addresses a different part of public scrutiny and accountability.",
+      "establishes": "Palmquist resolved jurisdiction rather than product injury or liability. California phased in testing in 2024 and disclosure in 2025; Maryland phased them in during 2025 and 2026, within each law’s defined scope. The House report makes findings and recommendations. None measures demand for a heavy-metal seal or requires HMTc certification.",
+      "relevance": "The materials explain the legal and public-information setting for the briefing’s proposed heavy-metal market position. Inferring that this creates an unoccupied category, willing buyers or a commercial advantage for HMTc is the author’s marketing interpretation, separate from the court holding and statutory obligations.",
+      "links": [
+        {
+          "label": "Supreme Court opinion · February 2026",
+          "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+        },
+        {
+          "label": "California AB 899 · enacted text",
+          "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+        },
+        {
+          "label": "Maryland Rudy’s Law · codified statute",
+          "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
+        },
+        {
+          "label": "House staff report · February 2021",
+          "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "0c676d2d9f7bfd3549a16b60a6388e32de7e7f4dda4d73a68a70211389a5e7c0",
+      "review": {
+        "reviewer": "Codex, primary-source and publisher-overview review with page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf",
+            "note": "Reused the same-document primary court review completed 2026-09-15, with fresh page-context assessment. Read the official slip opinion: syllabus and Court opinion pp. 1–4 for allegations, removal and trial history; pp. 7–11 for the jurisdictional holding, treatment of the wrongly dismissed nondiverse defendant and disposition. Supreme Court affirmed the Fifth Circuit and remanded. The Supreme Court took the erroneous joinder dismissal and original absence of diversity jurisdiction as givens for the question presented; it did not decide product liability or independently establish toxicological causation. The district court’s causation judgment is procedural history, not a Supreme Court finding that the product caused harm. This opinion does not mandate HMTc testing, predict all future cases’ forums or demonstrate certification effectiveness."
+          },
+          {
+            "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-724.html",
+            "note": "Reused the same-document primary court review completed 2026-09-15, with fresh page-context assessment. Official case docket checked for case number, 24 February 2026 decision date, Sotomayor’s unanimous opinion and Thomas’s separate concurrence. The citation retains the official slip opinion’s 607 U.S. ___ form."
+          },
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899",
+            "note": "Reused the same-document enacted-law review completed 2026-09-15, with fresh page-context assessment. Read chaptered AB 899, Chapter 668 (2023), §110962(a)–(c). Defined packaged baby foods for children under two exclude infant formula. Final product testing covers arsenic, cadmium, lead and mercury: representative samples of production aggregates, at least monthly from 1 January 2024; public results and applicable QR labeling from 1 January 2025. Laboratory criteria include ISO/IEC 17025:2017. The statutory scheme does not require a third-party certification program."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4",
+            "note": "Reused the same-document enacted-law review completed 2026-09-15, with fresh page-context assessment. Read codified Health–General §21-330.4(a)–(f), avoiding amendment strikeout ambiguity in chapter PDFs. Defined baby food excludes infant formula. Testing starts 1 January 2025; public results and conditional QR labeling start 1 January 2026. Subsection (b) separately addresses sale of foods exceeding FDA-established limits, with an exception for products manufactured before 1 January 2026. Do not collapse Maryland's statutory duties into FDA guidance or a universal infant-food certification mandate."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0723?ys=2024RS",
+            "note": "Reused the same-document enacted-law review completed 2026-09-15, with fresh page-context assessment. Official legislative history identifies cross-file HB 97, governor approval on 16 May 2024 as Chapter 954, and statutory effective date 1 October 2024, distinct from phased testing/disclosure dates."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0097?search=True&ys=2024RS",
+            "note": "Reused the same-document enacted-law review completed 2026-09-15, with fresh page-context assessment. Read official companion HB 97 legislative record to verify the grouped bibliography's House/Senate references describe Rudy's Law rather than separate unrelated requirements."
+          },
+          {
+            "url": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
+            "note": "Read the official 59-page staff report, title page and executive summary pp. 2–6, especially the scope of company-document requests, four responding companies, distinction between ingredient and finished-product tests, and recommendations for mandatory finished-product testing and labeling on p. 6. These are staff findings and policy recommendations, not a court judgment, enacted testing mandate, representative consumer-demand survey, or current statement of all FDA requirements. Underlying company exhibits and cited scientific studies were not independently reanalyzed. The bibliography’s assertion that these documents together establish growing consumer demand exceeds what these materials measure."
+          }
+        ]
+      },
+      "kind": "Law and staff report"
+    },
+    "5": {
+      "referenceTitle": "Positioning: The Battle for Your Mind",
+      "citation": "Ries, Al, and Jack Trout. Positioning: The Battle for Your Mind, 20th Anniversary Edition. McGraw Hill, ©2001, published 28 December 2000, ISBN 9780071359160. Ries, Al, and Jack Trout. The 22 Immutable Laws of Marketing. Harper Business, electronic edition, 13 October 2009. Ries, Laura. Visual Hammer: Nail Your Brand Into the Mind With the Emotional Power of a Visual Hammer. Laura Ries, 12 March 2012. Review limited to publisher descriptions, bibliographic records and contents listings.",
+      "summary": "The publisher’s Positioning overview describes building a distinct place in a customer’s mind relative to competitors. The 22 Immutable Laws of Marketing draws practitioner lessons from campaigns judged successful or unsuccessful. Visual Hammer’s publisher description links a verbal brand position with a memorable visual. These are the three separate works grouped in this reference.",
+      "establishes": "These sources supply marketing frameworks, not legal rules or an empirical forecast for heavy-metal certification. The reviewed material is limited to publisher overviews and contents; it does not verify every chapter-level paraphrase, prove that categories always acquire one owner, or establish the briefing’s claims about memory and consumer demand.",
+      "relevance": "The briefing applies these frameworks to HMTc’s name, narrow subject and proposed visual identity. That application is the author’s strategy: the books do not evaluate HMTc, demonstrate that its market position is unclaimed, or establish that early adoption will generate a particular commercial return.",
+      "links": [
+        {
+          "label": "Positioning · publisher record",
+          "href": "https://www.mheducation.com/highered/mhp/product/positioning-battle-your-mind-20th-anniversary-edition.html"
+        },
+        {
+          "label": "Positioning · publisher overview",
+          "href": "https://www.mheducation.co.in/positioning-the-battle-of-your-mind-9780070533752-india"
+        },
+        {
+          "label": "22 Immutable Laws · publisher overview",
+          "href": "https://profilebooks.com/work/the-22-immutable-laws-of-marketing/"
+        },
+        {
+          "label": "22 Immutable Laws · electronic edition",
+          "href": "https://books.apple.com/us/book/the-22-immutable-laws-of-marketing/id360610255"
+        },
+        {
+          "label": "Visual Hammer · publisher description",
+          "href": "https://books.apple.com/us/book/visual-hammer/id503572827"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "f7fca84f5970e66f3b2788152ba8b5f469e4ee7ab21289a2e4b4e44e30071ffc",
+      "review": {
+        "reviewer": "Codex, primary-source and publisher-overview review with page-specific assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.mheducation.com/highered/mhp/product/positioning-battle-your-mind-20th-anniversary-edition.html",
+            "note": "Read McGraw Hill’s product metadata and complete displayed table of contents: authors, twentieth-anniversary edition, ISBN 9780071359160, copyright 2001 and publication date 28 December 2000; chapters on leaders, followers, names and repositioning. Full book text was not accessible or read. The briefing does not identify an edition, so the citation identifies the verified publisher edition rather than claiming an unspecified first edition."
+          },
+          {
+            "url": "https://www.mheducation.co.in/positioning-the-battle-of-your-mind-9780070533752-india",
+            "note": "Read the Description and displayed contents on McGraw Hill India’s official listing, ISBN 9780070533752, published 24 April 2003. The description explains positioning in relation to competitors and a follower finding an unclaimed position. This is a publisher overview of a separately listed edition, used for a limited conceptual description, not a full-text or chapter-level review of the US anniversary edition. No claims from promotional testimonials were adopted."
+          },
+          {
+            "url": "https://profilebooks.com/work/the-22-immutable-laws-of-marketing/",
+            "note": "Read Profile Books’ official synopsis, authors and paperback metadata, ISBN 9781861976109. The overview identifies lessons drawn from successes and failures of marketing campaigns. Full text and the Look inside resource were not available; the page’s publication-date field is blank. The overview concerns the same named work as the separately verified Harper Business electronic edition; no claim of page-level edition equivalence is made. The named laws are a practitioner framework, not legislation or verified universal causal laws."
+          },
+          {
+            "url": "https://books.apple.com/us/book/the-22-immutable-laws-of-marketing/id360610255",
+            "note": "Read the publisher-supplied listing, authors, release date 13 October 2009, publisher Harper Business and seller HARPERCOLLINS PUBLISHERS. This supplies metadata for the explicitly cited electronic edition. Only the short Publisher Description and metadata were reviewed, not customer reviews or the full ebook. The detailed Law of Focus/Sacrifice/Leadership paraphrases on the briefing were not independently checked against full chapters."
+          },
+          {
+            "url": "https://books.apple.com/us/book/visual-hammer/id503572827",
+            "note": "Read the Publisher Description, title, author, publication date 12 March 2012, and publisher/seller Laura Ries on Apple Books. This is the author-publisher’s description of combining a verbal position with a visual; only this description and metadata were reviewed. The formerly indexed free chapter at ries.com returned 404 and was not used. The briefing’s claims about brain regions, the monarch’s ecological symbolism and the absence of a competing visual mark are not findings established by this limited review."
+          }
+        ]
+      },
+      "kind": "Marketing books"
+    },
+    "6": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+      "summary": "The cited 2026 v0 manual defines an infant-and-child-food program covering eight priority metals, with testing, surveillance, corrective action and certification-mark restrictions. Part 5.5 compares HMTc with USDA Organic, the Non-GMO Project, the Clean Label Project, EWG Healthy Living and Consumer Reports testing; this is the program author’s own comparison.",
+      "establishes": "The manual describes HMTc’s declared scope and requirements. Parts 2.1 and 2.5 distinguish action levels from safety thresholds and prohibit claims of absolute safety, no metals or zero risk. Its comparison acknowledges other programs’ metal testing. It does not independently validate competitors’ scope, establish market priority, or show consumer recognition of HMTc.",
+      "relevance": "It supplies the operational basis for the briefing’s focused claim: testing against published limits with ongoing surveillance. The analogy to the Butterfly, predictions of category ownership and assessment of HMTc’s visual identity remain positioning judgments. Because the cited deposit is superseded, current participation and mark-use decisions require the current manual.",
+      "links": [
+        {
+          "label": "Cited manual · 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "pageDigest": "e111a351e7385ddb33c2f3f09f8a84902e9d80b6007504ee67758dd63f817623",
+      "sourceDigest": "017e4eb0cdf6fdf9955f2bc18e6fb9ffb148ced6811929c564f538bc3b1d911d",
+      "review": {
+        "reviewer": "Codex, exact deposited-manual section review and reuse of verified deposit metadata",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Reused verified same-document metadata and edition review from 2026-09-15. Verified the cited identifier through Zenodo record API 20270512 (HTTP 200) and read its deposited HMTc-Program-Manual-2026-v0.pdf, not a substituted current edition. Title and publisher are printed on physical PDF pages 1–3; the publisher is The Paleo Foundation (Paleo Certified, Inc. dba The Paleo Foundation), although the briefing bibliography names ICS. Printed pages 53–54 (Part 2.1, sections 1.2–1.5) distinguish action levels from safety thresholds and preserve legal-compliance obligations. Printed pages 73–74 (Part 2.5, section 6.2) prohibit absolute safety, absence-of-metals and zero-risk claims and describe independent testing under ongoing surveillance. Printed page 73 was also visually inspected. Original landing-page access via web tool failed; API metadata and deposited PDF downloads succeeded."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512",
+            "note": "Reused verified same-document metadata and edition review from 2026-09-15. Record retrieved 2026-09-15, HTTP 200. Metadata identifies Karen Pendergrass, full manual title, publication_date 2026-05-18, version v0, status published and DOI 10.5281/zenodo.20270512; version relation is_last=false. File key HMTc-Program-Manual-2026-v0.pdf, 15,110,878 bytes, MD5 c8ec4609286104f7fc353e4486883ac1. Full citation uses the publisher named in the deposited title pages rather than importing the current site institutional label."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Reused verified same-document metadata and edition review from 2026-09-15. Publisher’s current manual page and Version history were read on 2026-09-15. It lists the 18 May 2026 v0 deposit as superseded, a 20 June 2026 revision, and the current 6 August 2026 web edition with a newer consolidated PDF and DOI pending. This link is for version navigation only; this source record’s substantive review and section numbers refer specifically to the cited v0 deposit. Current web/PDF section numbering and program details differ, so those versions were not silently substituted."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Read the retained exact deposited PDF’s extracted text in this review: physical pp. 1–3 for title/publisher; physical pp. 55–56 (printed 53–54) for Part 2.1; physical p. 60 (printed 58) for eight priority metals and ten-analyte panel; physical pp. 75–76 (printed 73–74) for mark restrictions; physical pp. 366–370 (printed 364–368) for the complete Part 5.5 comparison. The manual explicitly acknowledges Clean Label Project’s heavy-metal testing and cautions that each program has legitimate scope and that HMTc does not certify safety. It is the program author’s comparison, not an independent assessment or proof of market ownership. Editorial follow-up: the deposited publisher is The Paleo Foundation, while the bibliography names ICS. Part 5.5’s blanket organic no-heavy-metals characterization must also be read alongside the actual NOP contamination-prevention and residue-testing provisions identified in reference 2. Do not use this superseded edition’s numerical limits or mark eligibility as current policy."
+          }
+        ]
+      }
+    }
+  }
+}
