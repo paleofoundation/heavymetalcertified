@@ -93,6 +93,11 @@ Every published link needs a corresponding evidence note with the exact same URL
 Extra evidence URLs can document verification, limitations or contradictions with
 the page. Evidence notes are editorial provenance and are not sent to the browser.
 
+An optional `kind` string can correct the drawer's source category after review
+(for example, `Industry survey` or `Preprint`). Explain the classification in its
+evidence notes. Without an override the drawer retains the bibliography's label.
+This does not edit the bibliography itself or change its source digest.
+
 The importer checks the entire batch before writing any page. It rejects missing
 fields, invalid dates, unsafe URLs, missing review provenance, unmatched manifests,
 unknown pages or reference numbers, title changes, duplicate JSON keys, duplicate
@@ -106,6 +111,9 @@ The engine scans every `content/**/*.md` file through the Markdown and HTML synt
 tree (`remark-parse`, `remark-gfm`, `remark-rehype`, `rehype-raw`). It recognizes the
 same canonical reference-grid signature as the existing drawer, including rows
 without `id="ref-N"`, plus the site's plain bracket and superscript citation forms.
+Comma-separated groups such as `[4, 5]` contribute one use per number and render
+as individually operable source controls. Ranges and arbitrary bracketed text do
+not acquire inferred source numbers.
 
 Coverage means **reviewed numbered bibliography records**, not every link on the
 website. The audit separately reports:
@@ -133,6 +141,28 @@ not merge two grouped references whose other documents differ. Same-title rows
 with missing or different identifiers are flagged for research, never silently
 deduplicated. Reuse supplies suggested citation, summary and limitations only;
 page relevance is always reviewed afresh.
+
+DOI extraction separates adjacent HTML paragraphs and anchors while preserving
+inline formatting inside an identifier. This prevents following prose from
+becoming a false DOI suffix. Identifier cleanup alone does not resolve unlinked
+or ambiguous sources, and the exact-source group count is not a total of all
+unique documents on the site.
+
+## Usage-conscious review
+
+Read each page once alongside its pending references. Keep the immutable batch
+manifest on disk; do not repeatedly print every job's duplicated page body into
+the research context. For a previously reviewed exact document edition, reuse
+the retained primary-source evidence and cached document, inspect additional
+sections needed by the new page, and record that reuse explicitly. Reassess each
+page's interpretation and relevance; grouped citations still require every
+constituent document. An earlier edition cannot establish a current obligation.
+
+Measure account usage before a bounded batch and after validation. That meter is
+account-wide and rounded, so concurrent tasks and rounding prevent exact token
+attribution. A batch with many reused sources is not a reliable cost forecast
+for a batch of inaccessible papers or unlinked legal materials. Save the completed
+records and remaining queue before continuing within the user's usage reserve.
 
 ## Changes and refreshes
 
@@ -170,7 +200,7 @@ archives as editorial provenance according to the project's review workflow.
 ## Verification
 
 ```sh
-node --test tools/citation-context.test.mjs
+npm run citations:test
 npm run citations:build
 node tools/design-lint.mjs
 npm run check:v3

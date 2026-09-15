@@ -1,0 +1,118 @@
+{
+  "page": "briefings/hmtc-primer",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+      "summary": "The manual describes HMTc’s product certification rules, including testing, status changes, remediation, mark use, appeals and disclosure of conflicts. It is the program operator’s primary account of the obligations and limits discussed throughout this primer.",
+      "establishes": "It establishes what the cited edition says the program requires, rather than independently proving the program’s effectiveness. This May 2026 v0 deposit is superseded: its conditional permission for Status B mark use differs from the primer’s A-only description.",
+      "relevance": "It is the main source for assessing the program described here, including the distinction between action levels and safety guarantees and the limits of remediation confidentiality. Version-specific rules should be checked against the current manual and executed agreement before relying on eligibility or obligations.",
+      "links": [
+        {
+          "label": "Cited manual · 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, reused exact-source provenance with additional primer-specific manual review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Reused the previously verified exact-DOI metadata and v0 deposited-PDF review from Premium Promise source 7 on 2026-09-15. For this primer, additionally read complete deposited manual pages 63–66 (three-lot baseline and status rules), 68–71 (Confidential Remediation Track, including subpoena/privilege limitations), 74–76 (mark re-entry and measurement-uncertainty rules), 83–85 (CAPA and supplier intelligence), and 97–98 (appeals and independence requirements). These are the author/operator’s published program specifications, not independent evidence of successful implementation or measured public-health/legal outcomes."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512",
+            "note": "Record retrieved 2026-09-15, HTTP 200. Metadata identifies Karen Pendergrass, full manual title, publication_date 2026-05-18, version v0, status published and DOI 10.5281/zenodo.20270512; version relation is_last=false. File key HMTc-Program-Manual-2026-v0.pdf, 15,110,878 bytes, MD5 c8ec4609286104f7fc353e4486883ac1. Full citation uses the publisher named in the deposited title pages rather than importing the current site institutional label."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Exact cited v0 deposit, 384 physical pages. Editorial version conflict: printed p65 explicitly permits Status B mark usage with conditions and a transitional registry flag; printed pp69 and74 likewise allow qualification/re-entry at A or B. The primer instead describes A-only mark eligibility. Its bibliography names ICS while the deposited title pages name The Paleo Foundation. Do not silently substitute a later manual or treat the superseded v0 numeric limits/status rules as current policy. This targeted review does not verify every numeric limit, current legal claim or operational promise made throughout the primer."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Reused publisher edition-history verification recorded on 2026-09-15 in Premium Promise source 7: cited May 18 v0 is superseded, with June 20 revision and August 6 web edition listed. This link supplies version navigation; the source record’s substantive statements describe the cited deposited v0 and its limitations. Current edition details were not substituted for the deposited source."
+          }
+        ]
+      },
+      "pageDigest": "745a5796fb0d2a35b5d9c8fe8e8ed0880d7fed11302b5f77ef07c4dc36453da1",
+      "sourceDigest": "5d0a4dd6e5229636b5327a8cd952ae063b21b45b9dc5c66b98cebf35d862dcf9"
+    },
+    "2": {
+      "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing",
+      "citation": "Pendergrass, Karen. Three Journal of Food Metallomics preprints: The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction (8 April 2026), doi:10.5281/zenodo.19470572; The Cost of Operating Without Credible Third-Party Heavy-Metal Certification (7 March 2026), doi:10.5281/zenodo.18903738; and Certification as a Framework for Reducing Heavy Metal Exposure in Infant and Child Foods: Integrating Legal Defensibility, Scientific Rigor, and Commercial Viability (8 March 2026), doi:10.5281/zenodo.18905821.",
+      "summary": "These three preprints by the program’s architect argue for structured testing and remediation, model potential business losses, and propose staged certification with repeated measurement and progressively tighter standards. They provide the conceptual background for the program described in this primer.",
+      "establishes": "The papers present design arguments and illustrative scenarios, not independent trials measuring HMTc’s effect on exposure or litigation costs. Their deposit as preprints does not establish peer review or validate the current software that calculates program limits.",
+      "relevance": "They explain the reasoning behind combining testing, improvement pathways and commercial incentives. They should be read alongside the manual: the framework preprint describes an earlier limit-setting approach and does not independently establish the primer’s later calculation method.",
+      "links": [
+        {
+          "label": "Public exposé testing · April 2026 preprint",
+          "href": "https://doi.org/10.5281/zenodo.19470572"
+        },
+        {
+          "label": "Business-cost scenarios · March 2026 preprint",
+          "href": "https://doi.org/10.5281/zenodo.18903738"
+        },
+        {
+          "label": "Certification framework · March 2026 preprint",
+          "href": "https://doi.org/10.5281/zenodo.18905821"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact-source review reuse and new framework-paper review with primer-specific context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.19470572",
+            "note": "Reused 2026-09-15 primary-source review in Premium Promise source 5: verified official Zenodo API metadata and complete seven-page deposited PDF, explicitly marked not yet peer reviewed. Sections II–IV develop methodological/incentive arguments and VI proposes alternatives. Reassessed relevance here as conceptual background to certification design; no original program-outcome trial or validation of the current limit-derivation engine was reported."
+          },
+          {
+            "url": "https://doi.org/10.5281/zenodo.18903738",
+            "note": "Reused 2026-09-15 primary-source review in Premium Promise source 6: verified Zenodo API metadata and complete seven-page PDF (title page plus printed 1–6). Sections 7.2–7.4 are illustrative financial scenarios, including assumed certification benefit, not measured effectiveness. This primer does not quote the disputed small-brand range, so that earlier review’s internal $0.5M–$5M versus $1.6M–$6.6M discrepancy is not used here. These scenarios do not specify or validate the current standards-setting algorithm."
+          },
+          {
+            "url": "https://doi.org/10.5281/zenodo.18905821",
+            "note": "Official Zenodo API at https://zenodo.org/api/records/18905821 accessed 2026-09-15; metadata verifies Karen Pendergrass, title, publication_date 2026-03-08 and resource type preprint. Downloaded exact linked five-page PDF and read substantive text (printed 1–4), especially sections 4–11 and conclusion. Section 4 proposes approximately half of regulatory limits and the 80th percentile of industry achievability; section 11 repeats 80th percentile. This differs materially from the primer’s strictest-regulator/Tier1 occurrence approach and 97th/45th percentile description. Do not present this earlier design as validation of the later algorithm. No original HMTc intervention-outcome dataset or evaluated litigation-risk reduction is presented; underlying toxicology/legal references were not independently reverified for this design record."
+          },
+          {
+            "url": "https://zenodo.org/api/records/18905821/files/Certification%20as%20a%20Framework%20for%20Reducing%20Heavy%20Metal%20Exposure%20in%20Infant%20and%20Child%20Foods:%20Integrating%20Legal%20Defensibility,%20Scientific%20Rigor,%20and%20Commercial%20Viability.pdf/content",
+            "note": "Exact deposited PDF retrieved via official record API and text extracted with pypdf, five physical pages (cover plus printed 1–4). Section 8 offers a confidentiality/due-diligence rationale; it is the author’s legal-defensibility argument, not an adjudicated privilege ruling or empirical proof of protection. Later manual Part 2.4 expressly acknowledges subpoena and privilege limits. The grouped bibliography has three distinct documents and all three DOI links are preserved."
+          }
+        ]
+      },
+      "kind": "Preprints",
+      "pageDigest": "745a5796fb0d2a35b5d9c8fe8e8ed0880d7fed11302b5f77ef07c4dc36453da1",
+      "sourceDigest": "2e6973f0a5a09be2b1e88da3945f027066008a9b9384fff25e2065a5899c9918"
+    },
+    "3": {
+      "referenceTitle": "General Requirements for the Competence of Testing and Calibration Laboratories",
+      "citation": "International Organization for Standardization and International Electrotechnical Commission. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories. Third edition, November 2017; confirmed in 2023.",
+      "summary": "ISO/IEC 17025 sets a common benchmark for laboratory competence, impartiality and consistent operation. Accreditation bodies use the standard when assessing testing and calibration laboratories.",
+      "establishes": "The standard concerns laboratory performance; it does not itself certify a food product or establish HMTc’s contaminant limits. The public ISO description confirms its purpose, but does not show whether any particular laboratory holds suitable accreditation.",
+      "relevance": "It explains the laboratory competence requirement in HMTc’s testing lifecycle. Relevant accreditation and analytical methods still need checking for each laboratory; HMTc’s sampling schedule, certification statuses and chosen decision rule come from the program’s own requirements.",
+      "links": [
+        {
+          "label": "ISO/IEC 17025:2017 · official standard overview",
+          "href": "https://www.iso.org/standard/66912.html"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, official publisher overview review with access limits stated",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.iso.org/standard/66912.html",
+            "note": "Read official ISO publisher page on 2026-09-15, including public purpose/benefits, accreditation FAQ and edition metadata: edition 3, November 2017, confirmed 2023. Public description identifies competence, impartiality, consistent operation, testing/calibration and use by accreditation bodies. Access limited to publisher overview; paid full normative text was not accessed, so no clause-level interpretation or assertion that ISO mandates HMTc’s precise result-plus/minus-uncertainty rule is made. No individual laboratory certificate/accreditation scope or product compliance was verified. Prior exact-manual review located the program’s requirement for relevant laboratory accreditation at printed p. 80; the standard overview is not evidence that the program is actually operating to that requirement."
+          }
+        ]
+      },
+      "pageDigest": "745a5796fb0d2a35b5d9c8fe8e8ed0880d7fed11302b5f77ef07c4dc36453da1",
+      "sourceDigest": "28c3cb4c720dbb76da20612ba55e57af28c9f89f3b4189987aa12f2783421b97"
+    }
+  }
+}

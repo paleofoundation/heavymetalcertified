@@ -44,7 +44,7 @@
     "citations:batch": "node tools/citation-context.mjs batch",
     "citations:import": "node tools/citation-context.mjs import",
     "citations:build": "node tools/citation-context.mjs build",
-    "citations:test": "node --test tools/citation-context.test.mjs"
+    "citations:test": "node --test tools/citation-context.test.mjs && node --import tsx --test tools/citenumbers.test.ts"
   },
   "engines": {
     "npm": ">=10.9.2",

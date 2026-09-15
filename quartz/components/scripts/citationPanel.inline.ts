@@ -35,6 +35,7 @@ type CitationPanelRef = {
 
 type CitationPanelExplanation = {
   referenceTitle: string
+  kind?: string
   citation: string
   summary: string
   establishes: string
@@ -61,6 +62,9 @@ function enrichCitationPanelReferences(refs: Map<string, CitationPanelRef>) {
       ref.explanation = explanation
       ref.citation = explanation.citation
       ref.href = explanation.links[0]?.href || ref.href
+      if (typeof explanation.kind === "string" && normalize(explanation.kind)) {
+        ref.kind = normalize(explanation.kind)
+      }
     }
   } catch {
     // The original bibliography remains usable if enrichment cannot be read.
@@ -188,7 +192,7 @@ function closePanel(panel: HTMLElement) {
 }
 
 // The authority tell — how much weight a citation carries, at a glance. The row's
-// own kind label (Government, Journal, Preprint, Case, …) IS the signal; this maps
+// kind label (reviewed when available, otherwise from the row) is the signal; this maps
 // it to a broad tier class so the badge can read stronger for binding law / peer-
 // reviewed science than for a preprint, without inventing a rating the data lacks.
 function citationAuthorityTier(kind: string): string {
@@ -336,7 +340,7 @@ function openPanel(panel: HTMLElement, ref: CitationPanelRef, trigger: HTMLEleme
   frag.appendChild(kicker)
 
   // Authority badge — the "how much weight does this carry" tell, up top where a
-  // regulator or opposing expert looks first. The row's kind IS the label; the tier
+  // regulator or opposing expert looks first. The reviewed or row kind is the label; the tier
   // class weights the styling (binding law / peer-reviewed read stronger).
   if (ref.kind) {
     const authority = document.createElement("div")

@@ -3,7 +3,7 @@ import { visit } from "unist-util-visit"
 import { Root, Element, Text, Parent } from "hast"
 
 // Inline numeric citations across the site are authored as plain text markers
-// like `[1]`, `[12]`, `[140]`. This transformer wraps each *embedded* marker in
+// like `[1]`, `[12]`, `[140]`, or `[4, 5]`. This transformer wraps each number in
 // `<sup class="hmtc-cite">` so citations render superscripted sitewide, while
 // leaving reference-list markers, links, code, and opted-out regions untouched.
 
@@ -21,8 +21,8 @@ const SKIP_TAGS = new Set([
   "time",
 ])
 
-// A bracketed 1–3 digit number embedded in prose: the citation marker.
-const CITE_RE = /\[(\d{1,3})\]/g
+// A bracketed number or comma-separated group. Each source gets its own control.
+const CITE_RE = /\[(\d{1,3}(?:\s*,\s*\d{1,3})*)\]/g
 // A text node that is ONLY a bracketed number (e.g. the "[1]" cell of a
 // hand-authored reference list) — a marker, not an inline citation. Left alone.
 const STANDALONE_RE = /^\s*\[\d{1,3}\]\s*$/
@@ -66,12 +66,16 @@ export const SuperscriptCitations: QuartzTransformerPlugin = () => {
                 if (m.index > last) {
                   parts.push({ type: "text", value: value.slice(last, m.index) })
                 }
-                parts.push({
-                  type: "element",
-                  tagName: "sup",
-                  properties: { className: ["hmtc-cite"] },
-                  children: [{ type: "text", value: `[${m[1]}]` }],
-                })
+                const numbers = m[1].split(/\s*,\s*/)
+                for (const [numberIndex, number] of numbers.entries()) {
+                  if (numberIndex > 0) parts.push({ type: "text", value: " " })
+                  parts.push({
+                    type: "element",
+                    tagName: "sup",
+                    properties: { className: ["hmtc-cite"] },
+                    children: [{ type: "text", value: `[${number}]` }],
+                  })
+                }
                 last = m.index + m[0].length
               }
               if (last < value.length) {

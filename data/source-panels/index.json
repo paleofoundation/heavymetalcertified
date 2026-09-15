@@ -1,4 +1,127 @@
 {
+  "briefings/brief-5-retailer-as-anchor": {
+    "page": "briefings/brief-5-retailer-as-anchor",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+        "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), decided 24 February 2026. Unanimous opinion by Justice Sotomayor. Related program commentary: K. Pendergrass, After Palmquist (2026).",
+        "summary": "The Court held that wrongly dismissing a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The federal judgment in the manufacturer's favor therefore could not stand. HMTc's companion briefing discusses implications for retailer litigation strategy.",
+        "establishes": "This is a ruling about jurisdiction in the circumstances presented. It does not make every retailer a permanent defendant, bar all proper dismissals, or decide liability. The Court distinguishes a jurisdictional defect properly cured before judgment from the erroneous dismissal in this case.",
+        "relevance": "The decision supplies context for HMTc's proposed supplier-qualification response. It does not establish a tenfold increase in retailer exposure, inevitable state-court litigation, or the effectiveness of certification in reducing verdicts or insurance premiums.",
+        "links": [
+          {
+            "label": "Supreme Court opinion · 24 February 2026",
+            "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+          },
+          {
+            "label": "After Palmquist · HMTc commentary",
+            "href": "https://heavymetalcertified.com/briefings/after-palmquist"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "Total Diet Study, FY2018–2020",
+        "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+        "summary": "FDA measured nutrient and contaminant elements in foods collected from retail outlets, generally prepared as consumed. The results show detectable arsenic, cadmium, lead and mercury in portions of the sampled food supply and support continuing food surveillance.",
+        "establishes": "The study describes sampled foods and composited results. Detection alone does not establish a supplier's negligence or a product's regulatory violation, and a nondetect does not demonstrate absence. FDA does not take regulatory action from these composited TDS results.",
+        "relevance": "It supports the briefing's distinction between demanding absolute absence and obtaining measured supplier evidence. It does not prescribe HMTc qualification limits, validate a specific supplier or demonstrate that certification changes a retailer's litigation outcome.",
+        "links": [
+          {
+            "label": "FDA elements report · July 2022",
+            "href": "https://www.fda.gov/media/159745/download"
+          }
+        ]
+      },
+      "3": {
+        "referenceTitle": "In re: Baby Food Products Liability Litigation",
+        "citation": "U.S. Judicial Panel on Multidistrict Litigation. MDL No. 3101, transfer order, 11 April 2024; Pending MDL Dockets by Actions Pending, 2 December 2025. U.S. District Court for the Northern District of California, No. 3:24-md-03101.",
+        "summary": "The Judicial Panel centralized baby-food personal-injury actions in the Northern District of California for coordinated pretrial proceedings. Its December 2025 report recorded 385 pending actions in that litigation.",
+        "establishes": "The order establishes how related cases are managed, and the report gives a dated docket count. Neither establishes that the products caused injury or that defendants are liable. Pending actions are not a count of proven injuries or individual claims.",
+        "relevance": "It documents the litigation setting behind the briefing's supplier-qualification argument. The cited court records do not verify the briefing's approximate count of 345 or demonstrate that certification reduces lawsuits, insurance costs or verdicts.",
+        "links": [
+          {
+            "label": "JPML transfer order, April 2024",
+            "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+          },
+          {
+            "label": "JPML pending actions, December 2025",
+            "href": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-December-2-2025.pdf"
+          }
+        ]
+      },
+      "4": {
+        "referenceTitle": "Litigation Cost Survey of Major Companies",
+        "citation": "Lawyers for Civil Justice, Civil Justice Reform Group and U.S. Chamber Institute for Legal Reform. Litigation Cost Survey of Major Companies, May 2010. Survey administered by the Searle Center; submitted to the 2010 Conference on Civil Litigation.",
+        "summary": "A survey of large corporations collected historical litigation expenses, including outside legal fees and discovery costs for major cases closed during 2004–2008.",
+        "establishes": "Reported company averages show substantial litigation costs. The sample and cost threshold limit generalization; this is an industry-sponsored survey hosted by U.S. Courts, not a Federal Judicial Center study from 2008.",
+        "relevance": "It supplies a historical cost benchmark for the briefing's supplier-risk discussion. It does not measure present insurance pricing or demonstrate that HMTc certification reduces claims, premiums or verdicts.",
+        "links": [
+          {
+            "label": "Read the original survey",
+            "href": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010"
+          }
+        ],
+        "kind": "Industry survey"
+      },
+      "5": {
+        "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+        "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026. doi:10.5281/zenodo.18903738.",
+        "summary": "This preprint discusses retailer and marketplace testing requirements alongside illustrative loss scenarios. Its channel-disruption scenario assumes loss of a channel representing 15% of annual revenue for six months, alongside recall, legal and other commercial costs.",
+        "establishes": "The channel loss and certification benefit are modeling assumptions, not measured effects across retailers. The paper's cited testing examples concern dietary supplements and do not establish universal baby-food supplier requirements. It does not measure insurance repricing following Palmquist.",
+        "relevance": "It offers a framework for considering documentation and distribution exposure when designing supplier qualification. HMTc's proposed role remains a business-case argument; current buyer terms, insurer decisions and any reduction in claims would require separate evidence.",
+        "links": [
+          {
+            "label": "Read the preprint",
+            "href": "https://doi.org/10.5281/zenodo.18903738"
+          }
+        ],
+        "kind": "Preprint"
+      },
+      "6": {
+        "referenceTitle": "California Assembly Bill 899",
+        "citation": "California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962; Maryland Rudy's Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4; U.S. FDA, Closer to Zero initiative and January 2025 final guidance on lead action levels in processed foods for babies and young children.",
+        "summary": "California and Maryland enacted baby-food testing and disclosure requirements for arsenic, cadmium, lead and mercury. The FDA's Closer to Zero initiative addresses dietary contaminant reduction, including its January 2025 guidance on lead in specified processed baby foods.",
+        "establishes": "California phased in testing in 2024 and disclosure in 2025; Maryland followed in 2025 and 2026. These state duties apply within their defined scope. FDA action levels are nonbinding guidance that can inform enforcement under existing food law; they are not certification requirements.",
+        "relevance": "These sources explain why retailers may request documented testing from baby-food suppliers. HMTc can organize verification around applicable requirements, but certification does not replace manufacturers' testing, disclosure or labeling duties, and the sources do not mandate HMTc participation.",
+        "links": [
+          {
+            "label": "California AB 899, enacted text",
+            "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+          },
+          {
+            "label": "Maryland Rudy's Law, codified statute",
+            "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
+          },
+          {
+            "label": "FDA Closer to Zero initiative",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+          },
+          {
+            "label": "FDA lead action-level guidance, January 2025",
+            "href": "https://www.fda.gov/media/164684/download?attachment="
+          }
+        ]
+      },
+      "7": {
+        "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. Includes the Lot Testing Schedule (Part 4) and Supplier Intelligence Sharing (Part 2.9). The cited deposit is superseded.",
+        "summary": "The manual describes the program's certification status framework, baseline and continuing testing, laboratory and chain-of-custody requirements, and supplier intelligence alerts. The Lot Testing Schedule and supplier-sharing rules are included within the cited manual.",
+        "establishes": "These are requirements and design claims of the cited HMTc edition. Supplier alerts are discretionary, and the manual acknowledges limits to anonymization. It does not demonstrate that the system is operating for a particular supplier or that participation reduces verdicts, premiums or contamination.",
+        "relevance": "It supplies the program specification behind this briefing's proposed qualification and monitoring approach. A retailer would need the applicable current edition, supplier status and actual testing records to evaluate a supplier; the manual alone does not provide those assurances.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      }
+    }
+  },
   "briefings/brief-6-premium-promise": {
     "page": "briefings/brief-6-premium-promise",
     "reviewed": "2026-09-15",
@@ -134,6 +257,64 @@
           {
             "label": "House staff report · 2021",
             "href": "https://oversightdemocrats.house.gov/imo/media/doc/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "briefings/hmtc-primer": {
+    "page": "briefings/hmtc-primer",
+    "reviewed": "2026-09-15",
+    "refs": {
+      "1": {
+        "referenceTitle": "Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual",
+        "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+        "summary": "The manual describes HMTc’s product certification rules, including testing, status changes, remediation, mark use, appeals and disclosure of conflicts. It is the program operator’s primary account of the obligations and limits discussed throughout this primer.",
+        "establishes": "It establishes what the cited edition says the program requires, rather than independently proving the program’s effectiveness. This May 2026 v0 deposit is superseded: its conditional permission for Status B mark use differs from the primer’s A-only description.",
+        "relevance": "It is the main source for assessing the program described here, including the distinction between action levels and safety guarantees and the limits of remediation confidentiality. Version-specific rules should be checked against the current manual and executed agreement before relying on eligibility or obligations.",
+        "links": [
+          {
+            "label": "Cited manual · 2026 v0",
+            "href": "https://doi.org/10.5281/zenodo.20270512"
+          },
+          {
+            "label": "Current manual and edition history",
+            "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+          }
+        ]
+      },
+      "2": {
+        "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing",
+        "citation": "Pendergrass, Karen. Three Journal of Food Metallomics preprints: The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction (8 April 2026), doi:10.5281/zenodo.19470572; The Cost of Operating Without Credible Third-Party Heavy-Metal Certification (7 March 2026), doi:10.5281/zenodo.18903738; and Certification as a Framework for Reducing Heavy Metal Exposure in Infant and Child Foods: Integrating Legal Defensibility, Scientific Rigor, and Commercial Viability (8 March 2026), doi:10.5281/zenodo.18905821.",
+        "summary": "These three preprints by the program’s architect argue for structured testing and remediation, model potential business losses, and propose staged certification with repeated measurement and progressively tighter standards. They provide the conceptual background for the program described in this primer.",
+        "establishes": "The papers present design arguments and illustrative scenarios, not independent trials measuring HMTc’s effect on exposure or litigation costs. Their deposit as preprints does not establish peer review or validate the current software that calculates program limits.",
+        "relevance": "They explain the reasoning behind combining testing, improvement pathways and commercial incentives. They should be read alongside the manual: the framework preprint describes an earlier limit-setting approach and does not independently establish the primer’s later calculation method.",
+        "links": [
+          {
+            "label": "Public exposé testing · April 2026 preprint",
+            "href": "https://doi.org/10.5281/zenodo.19470572"
+          },
+          {
+            "label": "Business-cost scenarios · March 2026 preprint",
+            "href": "https://doi.org/10.5281/zenodo.18903738"
+          },
+          {
+            "label": "Certification framework · March 2026 preprint",
+            "href": "https://doi.org/10.5281/zenodo.18905821"
+          }
+        ],
+        "kind": "Preprints"
+      },
+      "3": {
+        "referenceTitle": "General Requirements for the Competence of Testing and Calibration Laboratories",
+        "citation": "International Organization for Standardization and International Electrotechnical Commission. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories. Third edition, November 2017; confirmed in 2023.",
+        "summary": "ISO/IEC 17025 sets a common benchmark for laboratory competence, impartiality and consistent operation. Accreditation bodies use the standard when assessing testing and calibration laboratories.",
+        "establishes": "The standard concerns laboratory performance; it does not itself certify a food product or establish HMTc’s contaminant limits. The public ISO description confirms its purpose, but does not show whether any particular laboratory holds suitable accreditation.",
+        "relevance": "It explains the laboratory competence requirement in HMTc’s testing lifecycle. Relevant accreditation and analytical methods still need checking for each laboratory; HMTc’s sampling schedule, certification statuses and chosen decision rule come from the program’s own requirements.",
+        "links": [
+          {
+            "label": "ISO/IEC 17025:2017 · official standard overview",
+            "href": "https://www.iso.org/standard/66912.html"
           }
         ]
       }

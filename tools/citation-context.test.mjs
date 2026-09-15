@@ -42,6 +42,14 @@ test("audit separates unresolved citations, standalone source links and unsuppor
   assert.equal(report.pages[0].unresolvedCitations[0].number, "9")
 })
 
+test("comma-separated citation groups share context without interpreting ranges or skipped text", () => {
+  const page = extractPage(markdown('Grouped evidence [4, 5]. Ranges [4-5] and labels [source 4, 5] stay prose.\n\n[1]\n\n`Code [6, 7]` and [linked [8, 9]](https://example.org).\n\n<span data-no-cite>Skipped [10, 11].</span>'), "example")
+  assert.deepEqual(page.citations.map((citation) => citation.number), ["4", "5"])
+  assert.equal(page.citations[0].context, "Grouped evidence [4, 5]. Ranges [4-5] and labels [source 4, 5] stay prose.")
+  assert.equal(page.citations[1].context, page.citations[0].context)
+  assert.equal(page.citations[1].line, page.citations[0].line)
+})
+
 test("any page prose change or source identity change invalidates reviewed content", () => {
   const original = extractPage(markdown(), "example")
   const record = recordFor(original)
@@ -68,6 +76,9 @@ test("title, number, URL, reviewer and evidence validation fail closed", () => {
   assert.throws(() => validateRecord(noEvidence, cleanPage), /evidence notes/)
   const unmatched = recordFor(cleanPage); unmatched.refs[1].review.evidence[0].url = "https://example.org/different"
   assert.throws(() => validateRecord(unmatched, cleanPage), /matching evidence/)
+  for (const kind of ["", " \n ", null, undefined, 42, false, [], {}]) {
+    assert.throws(change((record) => { record.refs[1].kind = kind }), /kind must be a nonempty string/)
+  }
 })
 
 test("grouped records retain all documents and same-title incomplete identity is ambiguous", () => {
@@ -80,15 +91,47 @@ test("grouped records retain all documents and same-title incomplete identity is
   assert.equal(a.refs[0].sourceKey, b.refs[0].sourceKey)
   assert.notEqual(a.refs[0].sourceKey, c.refs[0].sourceKey)
   const reviewed = recordFor(a)
+  reviewed.refs[1].kind = "Industry survey"
   const batch = makeBatch([a, b, c, d], [reviewed], { limit: 3 })
   assert.equal(batch.jobs[0].page, "b")
   assert.equal(batch.jobs[0].suggestions.length, 1)
   assert.equal(batch.jobs[0].suggestions[0].relevance, undefined)
+  assert.equal(batch.jobs[0].suggestions[0].kind, "Industry survey")
   assert.equal(batch.jobs[1].suggestions.length, 0)
   assert.equal(batch.jobs[2].suggestions.length, 0)
   const audit = auditPages([a, b, c, d], [reviewed])
   assert.equal(audit.ambiguousTitles.length, 1)
   assert.equal(audit.exactSourceGroups.find((group) => group.uses.length === 2).uses.length, 2)
+})
+
+test("DOI extraction separates adjacent paragraphs, links and line breaks from following prose", () => {
+  const doi = "10.1073/pnas.2421921122"
+  for (const markup of [
+    `<p>doi:${doi}</p><p>Analysis of fish samples.</p>`,
+    `<a href="https://doi.org/${doi}">doi:${doi}</a>Analysis of fish samples.`,
+    `<p>doi:${doi}<br>Analysis of fish samples.</p>`,
+    `<div>doi:${doi}</div><div>Analysis of fish samples.</div>`,
+  ]) {
+    const page = extractPage(row("1", "Source", []).replace('<p style="font-family:monospace">Authors. Journal, 2025.</p>', markup), "example")
+    assert.deepEqual(page.refs[0].identifiers, [`doi:${doi}`], markup)
+  }
+})
+
+test("grouped adjacent DOI links retain both identities without merging their labels", () => {
+  const a = "10.1234/first"
+  const b = "10.1234/second"
+  const source = (details) => extractPage(row("1", "Grouped documents", []).replace("Authors. Journal, 2025.", details), "example").refs[0]
+  const grouped = source(`<a href="https://doi.org/${a}">${a}</a><a href="https://doi.org/${b}">${b}</a>`)
+  const plain = source(`${a}<br>${b}`)
+  const partial = source(`<a href="https://doi.org/${a}">${a}</a>`)
+  assert.deepEqual(grouped.identifiers, [`doi:${a}`, `doi:${b}`])
+  assert.equal(grouped.sourceKey, plain.sourceKey)
+  assert.notEqual(grouped.sourceKey, partial.sourceKey)
+})
+
+test("DOI text split by inline formatting preserves suffix punctuation and parentheses", () => {
+  const page = extractPage(row("1", "Source", []).replace("Authors. Journal, 2025.", 'doi:10.1234/<em>Ab_c-(2025)</em><span>.v2;Part:3/foo</span>. doi:10.1016/<span>S0168-3659(00)</span>00370-5.'), "example")
+  assert.deepEqual(page.refs[0].identifiers, ["doi:10.1016/s0168-3659(00)00370-5", "doi:10.1234/ab_c-(2025).v2;part:3/foo"])
 })
 
 test("duplicate bibliography numbers and JSON keys fail, including escaped duplicate keys", () => {
@@ -107,11 +150,15 @@ test("dry-run/import/build roundtrip publishes only compact reviewed context and
   const pages = await inventory(root)
   const batch = makeBatch(pages, [], { limit: 1 })
   batch.records = [recordFor(pages[0])]
+  batch.records[0].refs[1].kind = "Preprint"
   const dryRun = await importBatch(root, batch)
   assert.equal(dryRun.write, false)
   await assert.rejects(fs.stat(path.join(root, "data/source-panels/articles/example.json")), /ENOENT/)
   await importBatch(root, batch, { write: true })
   const index = await buildIndex(root)
+  assert.equal((await readRecords(root))[0].refs[1].kind, "Preprint")
+  assert.equal(index["articles/example"].refs[1].kind, "Preprint")
+  assert.equal(pages[0].refs[0].kind, "Journal")
   assert.equal(index["articles/example"].refs[1].summary, batch.records[0].refs[1].summary)
   assert.equal(index["articles/example"].refs[1].review, undefined)
   assert.equal(index["articles/example"].refs[1].pageDigest, undefined)
@@ -179,6 +226,7 @@ test("nested index pages roundtrip; only the root generated index is excluded", 
   await importBatch(root, batch, { write: true })
   const index = await buildIndex(root)
   assert.equal(Object.keys(index["briefings/index"].refs).length, 1)
+  assert.equal(Object.hasOwn(index["briefings/index"].refs[1], "kind"), false)
   assert.equal((await readRecords(root)).length, 1)
   const rootIndex = extractPage(markdown(), "index")
   assert.throws(() => validateRecord(recordFor(rootIndex), rootIndex), /reserved/)

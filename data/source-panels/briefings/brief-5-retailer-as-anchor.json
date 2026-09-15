@@ -1,0 +1,251 @@
+{
+  "page": "briefings/brief-5-retailer-as-anchor",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+      "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), decided 24 February 2026. Unanimous opinion by Justice Sotomayor. Related program commentary: K. Pendergrass, After Palmquist (2026).",
+      "summary": "The Court held that wrongly dismissing a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The federal judgment in the manufacturer's favor therefore could not stand. HMTc's companion briefing discusses implications for retailer litigation strategy.",
+      "establishes": "This is a ruling about jurisdiction in the circumstances presented. It does not make every retailer a permanent defendant, bar all proper dismissals, or decide liability. The Court distinguishes a jurisdictional defect properly cured before judgment from the erroneous dismissal in this case.",
+      "relevance": "The decision supplies context for HMTc's proposed supplier-qualification response. It does not establish a tenfold increase in retailer exposure, inevitable state-court litigation, or the effectiveness of certification in reducing verdicts or insurance premiums.",
+      "links": [
+        {
+          "label": "Supreme Court opinion · 24 February 2026",
+          "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+        },
+        {
+          "label": "After Palmquist · HMTc commentary",
+          "href": "https://heavymetalcertified.com/briefings/after-palmquist"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, reuse of verified primary source with fresh retailer-page review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf",
+            "note": "Reused the primary-opinion review recorded for Premium Promise reference 1 and reopened the official PDF. Court opinion pp. 5–10 distinguishes a properly cured jurisdictional defect (including consent dismissal in Caterpillar) from wrongful dismissal of Whole Foods and the requested Rule 21 dismissal over consistent plaintiff objection. The holding does not preclude every exit from litigation, make a retailer liable or quantify costs. Editorial follow-up: this page's permanent-defendant, removed-the-exit, no-counter-move and 10X claims exceed the judgment's scope."
+          },
+          {
+            "url": "https://heavymetalcertified.com/briefings/after-palmquist",
+            "note": "Reused same-day review of tracked local publisher source content/briefings/after-palmquist.md, opening and forum/retailer sections (review initially recorded at ac08896). The secondary briefing discusses retailer/forum strategy as HMTc-authored analysis. It does not convert the commercial predictions in The Retailer as Anchor into court findings. Live page was not separately compared."
+          }
+        ]
+      },
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "badcfac437f5a7383e705dd591a9d272222152727cb381d2d94407a6b45aeb35"
+    },
+    "2": {
+      "referenceTitle": "Total Diet Study, FY2018–2020",
+      "citation": "U.S. Food and Drug Administration. Total Diet Study Report: Fiscal Years 2018–2020 Elements Data. July 2022.",
+      "summary": "FDA measured nutrient and contaminant elements in foods collected from retail outlets, generally prepared as consumed. The results show detectable arsenic, cadmium, lead and mercury in portions of the sampled food supply and support continuing food surveillance.",
+      "establishes": "The study describes sampled foods and composited results. Detection alone does not establish a supplier's negligence or a product's regulatory violation, and a nondetect does not demonstrate absence. FDA does not take regulatory action from these composited TDS results.",
+      "relevance": "It supports the briefing's distinction between demanding absolute absence and obtaining measured supplier evidence. It does not prescribe HMTc qualification limits, validate a specific supplier or demonstrate that certification changes a retailer's litigation outcome.",
+      "links": [
+        {
+          "label": "FDA elements report · July 2022",
+          "href": "https://www.fda.gov/media/159745/download"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, reuse of verified FDA report with fresh retailer-page review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/159745/download",
+            "note": "Reused Premium Promise reference 3 review of methodology, compositing and element results; reopened the official report's executive summary (printed pp. 4–5) and introduction (p. 7). FDA explains that these composited surveillance results inform monitoring rather than individual regulatory actions. Editorial follow-up: the retailer bibliography repeats cadmium 33% and mercury 10%, whereas the report gives 61% and 8%; lead 15% and arsenic 43% match. No negligence classification or test of HMTc supplier qualification appears in this study."
+          }
+        ]
+      },
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "afcdf6b93914b486981b16f7019c88fb7874b817aaaf5ae26aadee49101a458c"
+    },
+    "3": {
+      "referenceTitle": "In re: Baby Food Products Liability Litigation",
+      "citation": "U.S. Judicial Panel on Multidistrict Litigation. MDL No. 3101, transfer order, 11 April 2024; Pending MDL Dockets by Actions Pending, 2 December 2025. U.S. District Court for the Northern District of California, No. 3:24-md-03101.",
+      "summary": "The Judicial Panel centralized baby-food personal-injury actions in the Northern District of California for coordinated pretrial proceedings. Its December 2025 report recorded 385 pending actions in that litigation.",
+      "establishes": "The order establishes how related cases are managed, and the report gives a dated docket count. Neither establishes that the products caused injury or that defendants are liable. Pending actions are not a count of proven injuries or individual claims.",
+      "relevance": "It documents the litigation setting behind the briefing's supplier-qualification argument. The cited court records do not verify the briefing's approximate count of 345 or demonstrate that certification reduces lawsuits, insurance costs or verdicts.",
+      "links": [
+        {
+          "label": "JPML transfer order, April 2024",
+          "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+        },
+        {
+          "label": "JPML pending actions, December 2025",
+          "href": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-December-2-2025.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary court order and dated docket reports reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf",
+            "note": "Read 11 April 2024 transfer order, pp. 1–3. Allegations are described as allegations; the order concerns centralization under 28 U.S.C. 1407 and assigns coordinated or consolidated pretrial proceedings to Judge Jacqueline Scott Corley. It does not adjudicate causation or liability."
+          },
+          {
+            "url": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-December-2-2025.pdf",
+            "note": "Read dated 2 December 2025 report, first-page MDL 3101 row: 385 actions pending, 395 total actions. The sidebar labels this historical snapshot; it is not represented as the current September 2026 count. The bibliography's approximately 345 pending claims as of late 2025 is not verified by this report."
+          },
+          {
+            "url": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-November-3-2025.pdf",
+            "note": "Cross-check of preceding monthly report, first-page MDL 3101 row: 272 actions pending, 279 total actions on 3 November 2025. Neither monthly snapshot verifies 345; do not assume that number is a fixed late-2025 total or conflate actions with claims."
+          }
+        ]
+      },
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "bdfadaab41e809bdb7f00661c07f3ce2404f2e7e42312445d1fcf3f6f67f5fe4"
+    },
+    "4": {
+      "referenceTitle": "Litigation Cost Survey of Major Companies",
+      "citation": "Lawyers for Civil Justice, Civil Justice Reform Group and U.S. Chamber Institute for Legal Reform. Litigation Cost Survey of Major Companies, May 2010. Survey administered by the Searle Center; submitted to the 2010 Conference on Civil Litigation.",
+      "summary": "A survey of large corporations collected historical litigation expenses, including outside legal fees and discovery costs for major cases closed during 2004–2008.",
+      "establishes": "Reported company averages show substantial litigation costs. The sample and cost threshold limit generalization; this is an industry-sponsored survey hosted by U.S. Courts, not a Federal Judicial Center study from 2008.",
+      "relevance": "It supplies a historical cost benchmark for the briefing's supplier-risk discussion. It does not measure present insurance pricing or demonstrate that HMTc certification reduces claims, premiums or verdicts.",
+      "links": [
+        {
+          "label": "Read the original survey",
+          "href": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original survey provenance and methodology reviewed",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010",
+            "note": "Cover verifies sponsors and May 2010 date; appendix pp. 4–6 discusses sample limitations; pp. 14–15 reports 2008 company means of $2,019,248 in outside legal fees and $621,880 in discovery costs. Bibliography misattributes authorship/date; its Government tag is also misleading."
+          }
+        ]
+      },
+      "kind": "Industry survey",
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "db8bd404424c2570778dbe119a0df75fb950a31809b6a05761dbfa4635b025b0"
+    },
+    "5": {
+      "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+      "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026. doi:10.5281/zenodo.18903738.",
+      "summary": "This preprint discusses retailer and marketplace testing requirements alongside illustrative loss scenarios. Its channel-disruption scenario assumes loss of a channel representing 15% of annual revenue for six months, alongside recall, legal and other commercial costs.",
+      "establishes": "The channel loss and certification benefit are modeling assumptions, not measured effects across retailers. The paper's cited testing examples concern dietary supplements and do not establish universal baby-food supplier requirements. It does not measure insurance repricing following Palmquist.",
+      "relevance": "It offers a framework for considering documentation and distribution exposure when designing supplier qualification. HMTc's proposed role remains a business-case argument; current buyer terms, insurer decisions and any reduction in claims would require separate evidence.",
+      "links": [
+        {
+          "label": "Read the preprint",
+          "href": "https://doi.org/10.5281/zenodo.18903738"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, reuse of verified preprint with fresh retailer-page review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.18903738",
+            "note": "Reused same-day verified Zenodo metadata and complete primary PDF review from Premium Promise reference 6. Re-read cached original /tmp/premium-sources-5-6/ref6.txt sections 6.1–6.2 and 7.2–7.4. The official record API confirmed preprint status and publication date; the sidebar identifies that status although the existing bibliography badge says Journal. The 15% channel assumption applies for six months (about 7.5% annual revenue in the scenario), not a measured industry-wide loss."
+          },
+          {
+            "url": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content",
+            "note": "Cached primary full text originally retrieved through this official PDF link. Section 6.1 cites CVS and Amazon/ANAB dietary-supplement examples; 7.4 assumes 10–40% modeled loss reduction from certification. No insurer-pricing dataset or post-Palmquist causal estimate supports this page's assertion of real-time repricing. Current retailer requirements were not independently rechecked for this modeling-source record and are not presented as current obligations."
+          }
+        ]
+      },
+      "kind": "Preprint",
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "e5f867735b180105378aef4d4d1576cea372a5df7d4d3d76e290a0dd48f218b8"
+    },
+    "6": {
+      "referenceTitle": "California Assembly Bill 899",
+      "citation": "California AB 899, Chapter 668, Statutes of 2023, adding Health and Safety Code §110962; Maryland Rudy's Law, HB 97 / SB 723 (2024), codified at Health–General §21-330.4; U.S. FDA, Closer to Zero initiative and January 2025 final guidance on lead action levels in processed foods for babies and young children.",
+      "summary": "California and Maryland enacted baby-food testing and disclosure requirements for arsenic, cadmium, lead and mercury. The FDA's Closer to Zero initiative addresses dietary contaminant reduction, including its January 2025 guidance on lead in specified processed baby foods.",
+      "establishes": "California phased in testing in 2024 and disclosure in 2025; Maryland followed in 2025 and 2026. These state duties apply within their defined scope. FDA action levels are nonbinding guidance that can inform enforcement under existing food law; they are not certification requirements.",
+      "relevance": "These sources explain why retailers may request documented testing from baby-food suppliers. HMTc can organize verification around applicable requirements, but certification does not replace manufacturers' testing, disclosure or labeling duties, and the sources do not mandate HMTc participation.",
+      "links": [
+        {
+          "label": "California AB 899, enacted text",
+          "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+        },
+        {
+          "label": "Maryland Rudy's Law, codified statute",
+          "href": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4"
+        },
+        {
+          "label": "FDA Closer to Zero initiative",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        },
+        {
+          "label": "FDA lead action-level guidance, January 2025",
+          "href": "https://www.fda.gov/media/164684/download?attachment="
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, enacted state provisions and FDA guidance reviewed separately",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899",
+            "note": "Read chaptered AB 899, Chapter 668 (2023), §110962(a)–(c). Defined packaged baby foods for children under two exclude infant formula. Final product testing covers arsenic, cadmium, lead and mercury: representative samples of production aggregates, at least monthly from 1 January 2024; public results and applicable QR labeling from 1 January 2025. Laboratory criteria include ISO/IEC 17025:2017. The statutory scheme does not require a third-party certification program."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=ghg&enactments=false&section=21-330.4",
+            "note": "Read codified Health–General §21-330.4(a)–(f), avoiding amendment strikeout ambiguity in chapter PDFs. Defined baby food excludes infant formula. Testing starts 1 January 2025; public results and conditional QR labeling start 1 January 2026. Subsection (b) separately addresses sale of foods exceeding FDA-established limits, with an exception for products manufactured before 1 January 2026. Do not collapse Maryland's statutory duties into FDA guidance or a universal infant-food certification mandate."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0723?ys=2024RS",
+            "note": "Official legislative history identifies cross-file HB 97, governor approval on 16 May 2024 as Chapter 954, and statutory effective date 1 October 2024, distinct from phased testing/disclosure dates."
+          },
+          {
+            "url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0097?search=True&ys=2024RS",
+            "note": "Read official companion HB 97 legislative record to verify the grouped bibliography's House/Senate references describe Rudy's Law rather than separate unrelated requirements."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Read initiative approach and planned-action table. The program iterates assessment, proposed action levels, consultation and final guidance across contaminants. The page distinguishes this work from existing food-safety enforcement authority and links the January 2025 final lead guidance."
+          },
+          {
+            "url": "https://www.fda.gov/media/164684/download?attachment=",
+            "note": "Read January 2025 final guidance, pp. 3–4 and 11–12. Explicitly nonbinding; action levels inform adulteration/enforcement decisions case by case. Guidance addresses specified packaged processed foods for children under two, with 10/20 ppb lead categories and exclusions including formula, beverages and snacks. It does not prescribe a general testing cadence or private certification."
+          }
+        ]
+      },
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "386fdb4865d702cbf4ed52d1ee497bac677b02f5b13afa25ea74e0dea921b816"
+    },
+    "7": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. Includes the Lot Testing Schedule (Part 4) and Supplier Intelligence Sharing (Part 2.9). The cited deposit is superseded.",
+      "summary": "The manual describes the program's certification status framework, baseline and continuing testing, laboratory and chain-of-custody requirements, and supplier intelligence alerts. The Lot Testing Schedule and supplier-sharing rules are included within the cited manual.",
+      "establishes": "These are requirements and design claims of the cited HMTc edition. Supplier alerts are discretionary, and the manual acknowledges limits to anonymization. It does not demonstrate that the system is operating for a particular supplier or that participation reduces verdicts, premiums or contamination.",
+      "relevance": "It supplies the program specification behind this briefing's proposed qualification and monitoring approach. A retailer would need the applicable current edition, supplier status and actual testing records to evaluate a supplier; the manual alone does not provide those assurances.",
+      "links": [
+        {
+          "label": "Cited manual · 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, reuse of verified deposited manual with targeted retailer-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Reused the exact deposited v0 PDF and verified Zenodo metadata from Premium Promise reference 7. The manual's front matter identifies Part 4 as the reproduced Lot Testing Schedule. Supplier Intelligence Sharing is Part 2.9, printed pp. 84–86; chain-of-custody, laboratory and structured-result requirements appear at printed pp. 329–330. Relevant status/baseline requirements are in Part 2.3. These establish a program's specified procedures, not independently measured efficacy or a supplier's actual compliance."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Read cached exact 384-page primary PDF text (/tmp/premium-ref7-manual-v0.txt), physical pages 86–88 and 331–333 in this pass. Part 2.9 says the operator may issue alerts; it does not guarantee that every other participant receives an alert every time testing flags an ingredient. Pages 85–86 explicitly acknowledge possible inference of the reporting brand and provide mitigation controls. Editorial follow-up: the page's categorical alerts and reduced-recovery/verdict claims exceed this evidence."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Reused same-day publisher Version history review from Premium Promise reference 7: the May 18 v0 deposit is superseded by later editions. Link is for current-version navigation; the substantive review and section numbers in this record remain tied to the cited v0 deposit. Current numeric limits, eligibility and supplier status are not inferred from that old edition."
+          }
+        ]
+      },
+      "pageDigest": "51a9489ce98d7f3cbc21ff9d73255e7021a9a3441d8f8ee8be55a85782e69b05",
+      "sourceDigest": "06f30febd67f0c77f5cb81a78958ea2984be828509f9f34139ab493076d8e03c"
+    }
+  }
+}

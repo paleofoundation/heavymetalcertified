@@ -2,6 +2,28 @@
   "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs \u2014 never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md \u00a73.5), including `absent: true` for markup that was removed.",
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
+    "/briefings/brief-5-retailer-as-anchor": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"sup.hmtc-cite[aria-label='Open source record 4']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-authority.tier-industry","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-authority.tier-law","prop":"absent","want":true},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/briefings/hmtc-primer": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"sup.hmtc-cite[aria-label='Open source record 2']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-sources a","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-authority.tier-preprint","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
     "/briefings/brief-7-four-vs-eight": [
       {"sel":"[data-cite-panel-records]","prop":"count","want":1},
       {"click":"sup.hmtc-cite[aria-label='Open source record 1']"},
@@ -501,6 +523,30 @@
     {
       "viewport": {"width": 390, "height": 844},
       "pages": {
+        "/briefings/brief-5-retailer-as-anchor": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"sup.hmtc-cite[aria-label='Open source record 4']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-authority.tier-industry","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-authority.tier-law","prop":"absent","want":true},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/briefings/hmtc-primer": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"sup.hmtc-cite[aria-label='Open source record 2']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-sources a","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-authority.tier-preprint","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
         "/briefings/brief-7-four-vs-eight": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
           {"click":"sup.hmtc-cite[aria-label='Open source record 1']"},
