@@ -1,17 +1,17 @@
-// Curated HMTc navigation: five sections with compact, hub-led panels.
+// Curated HMTc navigation: program sections plus network wayfinding.
 // This module is hand-authored despite its legacy directory name.
 // The Index's tools/build-nav-panels.mjs uses a different corpus and must not
 // overwrite it. All destinations resolve against this site's content/.
 
-export interface NavChild {
+export type NavChild = {
   label: string
-  slug: string
   anchor?: string
   count?: number
-}
+} & ({ slug: string; href?: never } | { href: `https://${string}`; slug?: never })
 
 export interface NavGroup {
   heading: string
+  blurb?: string
   children: NavChild[]
 }
 
@@ -22,6 +22,7 @@ export interface NavPanel {
   slug: string
   blurb: string
   extraPrefixes?: string[]
+  layout?: "ecosystem"
   groups: NavGroup[]
   allLabel: string
 }
@@ -375,5 +376,50 @@ export const navPanels: NavPanel[] = [
       "mark",
       "apply"
     ]
+  },
+  {
+    key: "ecosystem",
+    label: "Ecosystem",
+    panelLabel: "Heavy Metal network",
+    slug: "ecosystem",
+    blurb: "Public knowledge, checkable evidence, qualified lots, and finished-product certification.",
+    layout: "ecosystem",
+    allLabel: "Explore the ecosystem",
+    groups: [
+      {
+        heading: "HMI",
+        blurb: "Public knowledge, government floors, and occurrence evidence behind the requirements.",
+        children: [
+          { label: "Explore Heavy Metal Index", href: "https://heavymetalindex.com" },
+          { label: "Read the HMI paper", slug: "ecosystem/hmi" },
+        ],
+      },
+      {
+        heading: "TECRID",
+        blurb: "Checkable lab evidence: issuer, measurements, version, and current status. Free core trust.",
+        children: [
+          { label: "Explore TECRID", href: "https://tecrid.com" },
+          { label: "Read the TECRID paper", slug: "ecosystem/tecrid" },
+        ],
+      },
+      {
+        heading: "VLE",
+        blurb: "QUALIFIED lots before the floor. A bounded quantity, a frozen purchasing profile, and checkable proof.",
+        children: [
+          { label: "Explore Verified Lot Exchange", href: "https://vle.exchange" },
+          { label: "Read the VLE paper", slug: "ecosystem/vle" },
+        ],
+      },
+      {
+        heading: "HMTc",
+        blurb: "You are here: published numeric standards, finished-product certification, and a mark you can verify.",
+        children: [
+          { label: "Standards register", slug: "standards" },
+          { label: "Apply for certification", slug: "apply" },
+          { label: "Verify the mark", slug: "verify" },
+          { label: "Read the HMTc paper", slug: "ecosystem/hmtc" },
+        ],
+      },
+    ],
   }
 ]

@@ -82,27 +82,29 @@ export function MegaMenu({ slug }: { slug: FullSlug }) {
             </button>
 
             <div class="hmi-nav-panel" id={panelId} aria-labelledby={labelId}>
-              <div class="hmi-nav-panel-inner">
-                <div class="hmi-nav-lead">
+              <div class={panel.layout === "ecosystem" ? "hmi-nav-panel-inner hmi-nav-panel-inner--ecosystem" : "hmi-nav-panel-inner"}>
+                {panel.layout !== "ecosystem" && <div class="hmi-nav-lead">
                   <div class="hmi-nav-title">{panel.panelLabel}</div>
                   <p class="hmi-nav-blurb">{panel.blurb}</p>
                   <a class="hmi-nav-all" href={resolveRelative(slug, panel.slug as SimpleSlug)}>
                     {panel.allLabel} <span aria-hidden="true">→</span>
                   </a>
-                </div>
-                <div class="hmi-nav-cols">
+                </div>}
+                <div class={panel.layout === "ecosystem" ? "hmi-nav-cols hmi-nav-cols--ecosystem" : "hmi-nav-cols"}>
                   {panel.groups.map((group) => (
                     <div class="hmi-nav-col">
                       <p class="hmi-nav-colhead">{group.heading}</p>
+                      {group.blurb && <p class="hmi-nav-group-blurb">{group.blurb}</p>}
                       <ul>
                         {group.children.map((child) => {
                           const href =
-                            resolveRelative(slug, child.slug as SimpleSlug) +
+                            (child.href ?? resolveRelative(slug, child.slug as SimpleSlug)) +
                             (child.anchor ? `#${child.anchor}` : "")
                           return (
                             <li>
                               <a href={href}>
                                 <span class="hmi-nav-childlabel">{child.label}</span>
+                                {child.href && <span aria-hidden="true">↗</span>}
                                 {child.count ? (
                                   <span class="hmi-nav-count">
                                     {child.count.toLocaleString("en-US")}

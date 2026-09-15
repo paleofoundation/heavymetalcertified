@@ -80,6 +80,7 @@ const KIND: Record<string, string> = {
 
 // First slug segment → breadcrumb section label + hub slug.
 const SECTION: Record<string, string> = {
+  ecosystem: "Ecosystem",
   standards: "Standards",
   analytes: "Analytes",
   "why-we-limit": "Why we limit",
