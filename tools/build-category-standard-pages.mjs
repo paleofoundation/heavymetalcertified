@@ -326,7 +326,7 @@ function citeSection(subName, version, hmiLink, doi, volume) {
 // some analytes carry a form-specific limit (cocoa content, refined vs unrefined salt, spice
 // botanical part). Show the binding value/jurisdiction per analyte, then break out every
 // form-specific limit so a certifier can read the exact ceiling for the product's sub-form.
-function cellsBindingDerivation(primary, subName) {
+function cellsBindingDerivation(primary, subName, leadOverride) {
   const splits = []
   let anyFirm = false
   const body = PANEL.map((a) => {
@@ -367,7 +367,12 @@ function cellsBindingDerivation(primary, subName) {
   const splitSection = splitBlocks
     ? `<h3 style="font-family:Lora,serif;font-weight:400;font-size:19px;color:#2b1f1f;margin:26px 0 12px">Form-specific limits</h3><p style="font-size:13px;line-height:1.65;color:#736b6b;max-width:84ch;margin:0 0 16px">Where a government sets the maximum by product sub-form, the HMTc column above shows the range and the exact ceiling for each form is listed here. A certified product meets the ceiling for its own form.</p>${splitBlocks}`
     : ""
-  return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">${anyFirm ? "Derivation" : "Derivation"}</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">${anyFirm ? `For ${esc(subName)}, each HMTc limit is the strictest maximum level any credible government sets for the product, named in the Binding column with the count of jurisdictions that concur at that value. Where no government regulates the analyte, the cell is a mandatory control or a not-material determination, never an invented number.` : `No government sets a heavy-metal content limit for ${esc(subName)}. Every analyte on the panel is held under mandatory control &mdash; measured on every lot and escalated against route-appropriate toxicological anchors &mdash; or, where the chemistry rules it out of the matrix, recorded as a substantiated not-material determination. No number is invented.`}</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:44rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binding</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Basis</th></tr></thead><tbody>${body}</tbody></table></div>${splitSection}</section>`
+  const lead = leadOverride
+    ? String(leadOverride).replace(/\{name\}/g, esc(subName))
+    : anyFirm
+      ? `For ${esc(subName)}, each HMTc limit is the strictest maximum level any credible government sets for the product, named in the Binding column with the count of jurisdictions that concur at that value. Where no government regulates the analyte, the cell is a mandatory control or a not-material determination, never an invented number.`
+      : `No government sets a heavy-metal content limit for ${esc(subName)}. Every analyte on the panel is held under mandatory control &mdash; measured on every lot and escalated against route-appropriate toxicological anchors &mdash; or, where the chemistry rules it out of the matrix, recorded as a substantiated not-material determination. No number is invented.`
+  return `<section id="derivation" style="margin-bottom:52px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">${anyFirm ? "Derivation" : "Derivation"}</h2><p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">${lead}</p><div style="overflow-x:auto"><table style="width:100%;font-size:12.5px;border:1px solid #e8e1db;min-width:44rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;background:#7d1f1f">HMTc</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Binding</th><th style="text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">Basis</th></tr></thead><tbody>${body}</tbody></table></div>${splitSection}</section>`
 }
 
 // --- drive --------------------------------------------------------------------
@@ -450,7 +455,7 @@ for (const page of DOC.pages) {
   const derivation = META.derivation_mode === "child_anchor"
     ? childAnchorDerivation(variants[0], page.name)
     : META.derivation_mode === "cells_binding"
-      ? cellsBindingDerivation(variants[0], page.name)
+      ? cellsBindingDerivation(variants[0], page.name, META.derivation_lead)
       : derivationTable(variants[0], basisWord, page.name, otherNote, META.reconstitution_note)
   const riskFlag = renderRiskFlagForStandard({
     slug: page.variants[0].record, name: page.name, cells: variants[0].cells,
