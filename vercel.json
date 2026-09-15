@@ -27,6 +27,7 @@
   ],
   "git": {
     "deploymentEnabled": {
+      "codex/challenge-draft-page": false,
       "main": true
     }
   }
