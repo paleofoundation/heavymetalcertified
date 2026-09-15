@@ -1,0 +1,110 @@
+{
+  "page": "articles/eu-food-limits-arsenic-seafood-nickel-deadlines",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Commission Regulation (EU) 2025/1891",
+      "pageDigest": "08f81218967e5c69f81cf4798b7f964322d37da7c2357e08c0b34c085a2c7751",
+      "sourceDigest": "c2fc628363bc99dd18e4630308f74ddbdc35b5b455e81e2f7a7cdaba8a518244",
+      "kind": "Legislation",
+      "citation": "European Commission. Regulation (EU) 2025/1891 of 17 September 2025 amending Regulation (EU) 2023/915 as regards maximum levels of inorganic arsenic in fish and other seafood. OJ L 2025/1891, 18 September 2025.",
+      "summary": "The amendment adds wet-weight inorganic-arsenic maxima for specified fish and seafood, defines inorganic arsenic as As(III) plus As(V), and preserves separate total-arsenic treatment for salt. Species and edible-portion rules vary.",
+      "establishes": "It entered into force on 8 October 2025. Covered seafood lawfully marketed earlier may remain until its durability or use-by date. The act sets legal values and scope; it does not itself prescribe a particular laboratory method in every case.",
+      "relevance": "It supports keeping species, edible tissue and basis attached to HMTc comparisons. Operational assay and release requirements must also account for applicable sampling and analysis rules rather than being attributed entirely to this amendment.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://eur-lex.europa.eu/eli/reg/2025/1891/oj"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2025/1891/oj",
+            "note": "Read complete act, Articles 1–2 and Annex 3.4.5–3.4.9. Fish eaten whole use whole-fish results; Pecten maximus uses adductor and gonad; crustacean cephalothorax is excluded. Analytical workflow recommendations in the article are separate interpretation."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Heavy Metal Index — EU 2025/1891 inorganic arsenic in fish and seafood",
+      "pageDigest": "08f81218967e5c69f81cf4798b7f964322d37da7c2357e08c0b34c085a2c7751",
+      "sourceDigest": "7c7134cc41ec69bcd6407a9d61b1aab6f86280555707935f4fb1c21c9bae9d19",
+      "kind": "Regulatory summary",
+      "citation": "Pendergrass K; Institute of Contaminant Standards. EU 2025/1891 – inorganic arsenic in fish and other seafood. Heavy Metal Index, updated 6 August 2026.",
+      "summary": "This Index record transcribes aquatic-food categories, wet-weight limits and edible-portion notes, with a separate total-arsenic salt row. It links the amendment and underlying contaminants framework.",
+      "establishes": "The displayed rows and transition date match the reviewed original amendment. This is a secondary regulatory summary, not an issuing authority or an independent validation of the certification system.",
+      "relevance": "It is a useful navigation and comparison aid. A certification record should retain the binding instrument and exact category; the Index’s shared author and affiliation do not make it independent corroboration.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://heavymetalindex.com/regulations/eu-2025-1891-inorganic-arsenic-fish-seafood"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations/eu-2025-1891-inorganic-arsenic-fish-seafood",
+            "note": "Read author/date, full table, methods, transition and source sections; compared displayed rows with the original act reviewed for reference 1. This reviews the visible page, not the separate structured-register export or compiler."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Commission Regulation (EU) 2024/1987",
+      "pageDigest": "08f81218967e5c69f81cf4798b7f964322d37da7c2357e08c0b34c085a2c7751",
+      "sourceDigest": "0c7f2738449cf94151f9b34b6af9805d62170cfca49e6994d86b02deda9d9baf",
+      "kind": "Legislation",
+      "citation": "European Commission. Regulation (EU) 2024/1987 of 30 July 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L 2024/1987, 31 July 2024.",
+      "summary": "The amendment sets nickel maxima by food category. Most apply from 1 July 2025; cereal rows 3.6.11.1–3.6.11.5 apply from 1 July 2026. Infant cereal-based food is a separate row with the earlier date.",
+      "establishes": "Food lawfully marketed before its applicable date can remain until its durability or use-by date. Therefore, the July 2026 application date does not end every transitional sale. Category, preparation, processing and dry/wet basis remain material.",
+      "relevance": "It supports product-specific dates and comparison rules. HMTc tracking should distinguish adoption, entry into force, application and remaining stock provisions; an article’s calendar alone does not determine a lot’s legal status.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj/eng"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2024/1987/oj/eng",
+            "note": "Read original Articles 1–2 and full Annex, refreshing same-day prior amendment research. Entry into force is the twentieth day after July 31 publication, distinct from adoption and application. Article 1 retains the durability/use-by exception. Editorial: “transition ended” is too absolute."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Heavy Metal Index — EU nickel maximum levels",
+      "pageDigest": "08f81218967e5c69f81cf4798b7f964322d37da7c2357e08c0b34c085a2c7751",
+      "sourceDigest": "b13f5afabbbf38a78fb6efa839a99b5d4126c178c5b9147b5d59e1bb3e47e940",
+      "kind": "Regulatory summary",
+      "citation": "Pendergrass K; Institute of Contaminant Standards. Commission Regulation (EU) 2024/1987 — maximum levels of nickel in certain foodstuffs. Heavy Metal Index, updated 22 June 2026.",
+      "summary": "The page explains the nickel amendment and displays selected limits, unit conversions and application dates. It distinguishes the binding maxima from the separate monitoring recommendation.",
+      "establishes": "This is a selected table rather than the complete legal schedule. Its body identifies the two application dates correctly, but the header labels the adoption date, 30 July 2024, as “Effective,” which is misleading.",
+      "relevance": "It can help locate source rows, but HMTc should verify legal dates and scope against the act. This example supports the article’s need for explicit status fields and source-backed date handling.",
+      "links": [
+        {
+          "label": "Read the source",
+          "href": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations/eu-2024-1987-nickel-maximum-levels",
+            "note": "Read author/date, overview, selected table, transition and references; compared with original amendment. Header confuses adoption with effectiveness. Review covers visible records, not an audit of the linked ingestion receipt or every underlying risk-assessment claim."
+          }
+        ]
+      }
+    }
+  }
+}

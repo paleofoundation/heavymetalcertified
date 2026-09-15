@@ -2,6 +2,33 @@
   "_comment": "HMTc computed-style acceptance spec. Values are the design canon (docs/design-canon/) adapted to the cert palette (#9f2727 accent, not the Index's #8b2a4a). Assertions run on the RENDERED page via tools/check-v3.mjs \u2014 never against source SCSS. Grow this file whenever a page's presentation changes (CONTENT-RULES.md \u00a73.5), including `absent: true` for markup that was removed.",
   "viewport": { "width": 1440, "height": 1000 },
   "pages": {
+    "/articles/infant-formula-metal-amplification": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/eu-food-limits-arsenic-seafood-nickel-deadlines": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
+    "/articles/eu-regulatory-framework-timeline": [
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
+    ],
     "/articles/seaweed-cd-as-contamination": [
       {"sel":"[data-cite-panel-records]","prop":"count","want":1},
       {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
@@ -98,7 +125,7 @@
       {"sel":".wiki-content div[style*=\"grid-template-columns:28px\"]","prop":"absent","want":true},
       {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
       {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
-      {"sel":".hmtc-cite-panel-section","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
@@ -118,7 +145,7 @@
       {"sel":".wiki-content div[style*=\"grid-template-columns:28px\"]","prop":"absent","want":true},
       {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
       {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
-      {"sel":".hmtc-cite-panel-section","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
@@ -411,7 +438,14 @@
       { "sel": ".hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
       { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "font-size", "want": "12px" },
       { "sel": ".hmtc-hb-snap-row:nth-child(3) .hmtc-hb-snap-v", "prop": "text-align", "want": "right" },
-      { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 }
+      { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 },
+      {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+      {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/articles/lead-and-cadmium-in-dark-chocolate": [
       { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
@@ -705,6 +739,46 @@
     {
       "viewport": {"width": 390, "height": 844},
       "pages": {
+        "/articles/aquaculture-vs-wild-contamination-differential": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/infant-formula-metal-amplification": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/eu-food-limits-arsenic-seafood-nickel-deadlines": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
+        "/articles/eu-regulatory-framework-timeline": [
+          {"sel":"[data-cite-panel-records]","prop":"count","want":1},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
+          {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+        ],
         "/articles/seaweed-cd-as-contamination": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
           {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
@@ -821,7 +895,7 @@
           {"sel":".wiki-content div[style*=\"grid-template-columns:28px\"]","prop":"absent","want":true},
           {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
           {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel-section","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
@@ -843,7 +917,7 @@
           {"sel":".wiki-content div[style*=\"grid-template-columns:28px\"]","prop":"absent","want":true},
           {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
           {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel-section","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},

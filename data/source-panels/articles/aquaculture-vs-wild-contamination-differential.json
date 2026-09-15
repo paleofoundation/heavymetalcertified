@@ -1,0 +1,181 @@
+{
+  "page": "articles/aquaculture-vs-wild-contamination-differential",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Climate change amplifies neurotoxic methylmercury threat to Asian fish consumers",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "c9bd5ae97a20d927adaa2a5eed57fc6f75e282022b942fbd88b3a3c79cc9dbee",
+      "citation": "Wu M, Wu X, Saiz-Lopez A, Blanchfield PJ, Ren H, Zhong H. PNAS. 2025;122(13):e2421921122. Published 24 March 2025. doi:10.1073/pnas.2421921122.",
+      "summary": "The authors compiled approximately 13,000 fish-mercury samples from 164 Chinese sites during 2005–2020. Wild freshwater fish had 2.9–6.2 times the methylmercury concentrations of farmed fish across trophic classes. Climate effects were explored using machine-learning models.",
+      "establishes": "Trophic-class and length-standardized comparisons are not matched experiments for every species. Some methylmercury values were estimated from total mercury. The largest length group showed no significant wild/farmed difference. Feed composition and harvest age were not experimentally isolated.",
+      "relevance": "The study supports considering production source and size alongside measurements. It does not validate the page’s species-specific ranges, guaranteed low-mercury feed, or a universal same-species ratio.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002180/",
+            "note": "Read results/Figure 1, data collection, preprocessing, length adjustment, model methods and limitations. The 30.9 µg/kg value concerns the 40±5 cm wild group; it should not be combined with trophic-class ratios as a measured farmed range. Editorial: feed dominance, universal young harvest and methylmercury-free plant ingredients are not findings of this analysis. Supplementary datasets were not reanalyzed."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Global fishing patterns amplify human exposures to methylmercury",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "a38e38cea2269743c3695d42c51e52ff4809670f3e2e2a705c4afe6664895f0d",
+      "citation": "Li M-L, Thackray CP, Lam VWY, Cheung WWL, Sunderland EM. PNAS. 2024;121(40):e2405898121. Published 23 September 2024. doi:10.1073/pnas.2405898121.",
+      "summary": "This global marine-fisheries model combined 2001–2010 catch reconstructions for 1,774 species with seafood-mercury observations, trophic relationships and modeled seawater methylmercury. Large pelagic harvests and lower-latitude fishing grounds dominated estimated mercury extraction for human consumption.",
+      "establishes": "These are modeled marine-capture exposures, not 1,774 directly measured species or a farmed-versus-wild experiment. The model used assumed methylmercury fractions for total-mercury observations and had weaker performance in some coastal regions.",
+      "relevance": "It supports accounting for species and catch origin. It cannot independently establish controlled-feed reductions or farmed salmon/trout concentration ranges.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459155/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11459155/",
+            "note": "Read results and model validation, fisheries-catch methods, global/regional concentration estimation and uncertainty discussion. Measurements from 90 seafood categories constrained estimates; total mercury was converted using 95% for finfish and 40% for shellfish. Editorial: the fisheries finding is not direct evidence about aquaculture husbandry, harvest age or changes in other metals. Supplementary model inputs were not independently reproduced."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Risk-benefit assessment of mercury, lead, cadmium and arsenic in inland fish from Latvian lakes",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "f2cdf0a06057a712678bcb0acb47ac41000e8fee1ea4de13f4683624fd560a0e",
+      "citation": "Rusko J, Murniece E, Sibule S, Lazda I, Zacs D, Medne R, Siksna I. Deterministic Pilot Risk–Benefit Assessment of Latvian Inland Fish: Safe Weekly Consumption Guidance. Foods. 2026;15(5):901. Published 5 March 2026. doi:10.3390/foods15050901.",
+      "summary": "The pilot combined 460 fish from five Latvian lakes into 134 pooled composites. Six species were represented; seven had been targeted. It modeled weekly consumption using mercury, PFAS and nutrient measurements, with substantial lake- and species-specific differences.",
+      "establishes": "Methylmercury was estimated as 95% of measured total mercury, not speciated directly. Pooling and median estimates obscure individual extremes. No farmed comparison was included. Species-specific legal maxima and health-based weekly intake values answer different questions.",
+      "relevance": "This supports lake, species and size context for wild fish. It cannot show that farmed equivalents would remain below a given ceiling.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12984848/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12984848/",
+            "note": "Identified the paraphrased bibliography entry by author, year, location and distinctive 460-fish cohort. Read methods, mercury/PFAS results, Figure 6 discussion and limitations. Editorial: carp was absent from final composites; methylmercury dominance was assumed, not measured. The authors report median strata below relevant EU maxima, not blanket exceedance of an applicable 0.5 mg/kg ceiling. The title retained above is the page’s original referenceTitle."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "European Union maximum level for mercury in fish",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "842d68094d4ed6c1894ef53a090309824a158143458625f311ae8f12fd04c047",
+      "citation": "European Commission. Regulation (EU) 2023/915, Annex I Section 3.3.1; consolidated text dated 19 August 2026.",
+      "summary": "The fishery-product mercury rules use wet-weight maxima of 0.5 mg/kg for the residual category, 1 mg/kg for listed species including pike, and 0.3 mg/kg for another list including most salmon/trout and Cyprinidae. They are mercury concentration limits, not methylmercury intake guidance.",
+      "establishes": "The correct species and edible portion determine the legal comparison. Neither farmed status nor wild capture creates a separate limit in these rows. Processing adjustments apply where relevant.",
+      "relevance": "This qualifies the page’s 0.5 mg/kg shorthand and separates governmental limits from HMTc’s proposed production-source categories.",
+      "links": [
+        {
+          "label": "Current consolidated regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Reused same-day original/current-version verification from batch5-seaweed; freshly read all fishery mercury rows 3.3.1.1–3.3.1.3 and Article 3 for this article. Pike is in the 1 mg/kg list; Cyprinidae and most salmon/trout in the 0.3 mg/kg list. Total-mercury maximum comparisons must not be presented as speciated methylmercury measurements. Consolidation is informational; source legislation governs."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Aquaculture chain-of-custody certification frameworks (ASC, BAP, GlobalG.A.P. Aquaculture)",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "3b7032b5ad4b4955bf28201077ad616b38f08c20ab928bf30aa6570c763eab95",
+      "citation": "Aquaculture Stewardship Council CoC Module v1.1, 15 May 2023; BAP Farm Standard issue 3.1, effective 7 March 2023; GLOBALG.A.P. IFA Aquaculture v6.0_Aug24 and CoC v6.1 overview.",
+      "summary": "These distinct voluntary frameworks maintain certified product identity and traceability. ASC links to MSC custody requirements; BAP records production units, feed lots and harvest deliveries; GLOBALG.A.P. links outgoing batches to certified production and suppliers.",
+      "establishes": "Traceability documents a claimed origin and production process. The reviewed clauses do not establish uniform feed-speciation testing, a shared methylmercury ceiling, or a verified low-mercury distribution.",
+      "relevance": "They offer infrastructure for source documentation. HMTc’s proposed feed and product-testing requirements must be specified separately.",
+      "links": [
+        {
+          "label": "ASC custody module v1.1",
+          "href": "https://asc-aqua.org/wp-content/uploads/2023/05/ASC-CoC-Module-v1.1-FINAL-15-May-2023.pdf"
+        },
+        {
+          "label": "BAP Farm Standard 3.1",
+          "href": "https://bap.bapcertification.org/Downloadables/pdf/BAP%20-%20BAP%20Farm%20Standard%20-%20Issue%203.1%20-%2007-February-2023.pdf"
+        },
+        {
+          "label": "GLOBALG.A.P. IFA aquaculture v6.0_Aug24",
+          "href": "https://documents.globalgap.org/documents/240902_IFA_Smart_GFS_P_Cs_AQ_v6_0_Aug24_en.pdf"
+        },
+        {
+          "label": "GLOBALG.A.P. custody overview",
+          "href": "https://globalgap.org/what-we-offer/solutions/chain-of-custody/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://asc-aqua.org/wp-content/uploads/2023/05/ASC-CoC-Module-v1.1-FINAL-15-May-2023.pdf",
+            "note": "Read version, scope and Principle 4, printed page 9: volume, species, buyer/supplier records. This is the ASC addition; full MSC baseline was not audited."
+          },
+          {
+            "url": "https://bap.bapcertification.org/Downloadables/pdf/BAP%20-%20BAP%20Farm%20Standard%20-%20Issue%203.1%20-%2007-February-2023.pdf",
+            "note": "Read title/effective date and traceability T7–T12 plus implementation, pages 61–62: feed lots, production cycles and harvest records. Filename February date differs from printed March effective date."
+          },
+          {
+            "url": "https://documents.globalgap.org/documents/240902_IFA_Smart_GFS_P_Cs_AQ_v6_0_Aug24_en.pdf",
+            "note": "Read version header and AQ 28.03 traceability/recall criteria, pages 97–98. No full 124-page certification audit claimed."
+          },
+          {
+            "url": "https://globalgap.org/what-we-offer/solutions/chain-of-custody/",
+            "note": "Read CoC v6.1 scope, segregation, identification, audit and verification descriptions. The grouped citation is a comparison of frameworks, not one interchangeable standard."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — aquaculture vs wild contamination differential (synthesis with full anchor-source records)",
+      "pageDigest": "e2e2cb86c5db576ebd6f13cfd927dc503ed1063f50adc02cdbc6910a811f08ff",
+      "sourceDigest": "207a900d5cd313cadf7f24890827c5b8a61d1dafddc4bf88fbbb430991bde507",
+      "citation": "Pendergrass K. Heavy Metal Index: aquaculture versus wild contamination differential. Updated 18 May 2026. Preprint synthesis; no external reviews listed at access.",
+      "summary": "This narrative combines the Chinese mercury comparison, marine-capture model and Latvian pilot, then proposes production-source distinctions. It acknowledges limited non-Chinese aquaculture evidence and potential differences in other contaminants.",
+      "establishes": "It is an interpretation of existing studies, not another independent comparison. The page is an unreviewed preprint under the same author/operator context; institutional independence is not established.",
+      "relevance": "It explains the certification article’s reasoning, but its species ranges and feed claims require underlying primary support.",
+      "links": [
+        {
+          "label": "HMI synthesis",
+          "href": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/aquaculture-vs-wild-contamination-differential",
+            "note": "Read narrative evidence, mechanism, traceability, limitations, author/update information and review state. Editorial: farmed 5–10 µg/kg is inferred by mixing a length-group mean with trophic ratios; cited anchors do not verify every species range, feed guarantee or other-metal comparison. The stated farmed Latvian counterfactual is acknowledged inference. Operator is Institute of Contaminant Standards/Paleo Certified, Inc.; source-record links were not treated as additional reviewed datasets."
+          }
+        ]
+      },
+      "kind": "Preprint synthesis"
+    }
+  }
+}

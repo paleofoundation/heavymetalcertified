@@ -1,0 +1,208 @@
+{
+  "page": "articles/infant-formula-metal-amplification",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "There is (still) too much aluminium in infant formulas",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "1e3073bc106e70ba149e19995f4fda804e878361cdd3c37061cef80dd55cbcbb",
+      "citation": "Burrell SAM, Exley C. There is (still) too much aluminium in infant formulas. BMC Pediatrics. 2010;10:63. doi:10.1186/1471-2431-10-63.",
+      "summary": "This UK product survey found ready-made formula means of 175.5–700.4 µg/L and prepared-powder estimates of 333.3–629.0 µg/L. Manufacturer feeding instructions yielded modeled six-month intake of 206–592 µg/day.",
+      "establishes": "The study measured products, not infant absorption or clinical outcomes. Its breastmilk comparison came from earlier literature rather than matched milk samples. Analytical replicates are not independent manufacturing lots.",
+      "relevance": "It supports including aluminium and stating preparation and consumption assumptions. It does not establish a universal current formula-to-breastmilk ratio, prove harm, or determine HMTc’s required lot-sampling frequency.",
+      "links": [
+        {
+          "label": "Archived original article",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2939626/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2939626/",
+            "note": "Read methods, Tables1–3, exposure calculations and discussion. The authors describe 15 branded products, while the tables list eight entries per format. Prepared-powder concentrations and daily intakes are calculated; source hypotheses and infant-health concerns are not measured outcomes."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "The aluminium content of infant formulas remains too high",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "879f4111c89f0c266cdbaeab4db0f2deb5a1ae4fbb6996437b8760cc86570122",
+      "citation": "Chuchu N, Patel B, Sebastian B, Exley C. The aluminium content of infant formulas remains too high. BMC Pediatrics. 2013;13:162. doi:10.1186/1471-2431-13-162.",
+      "summary": "Thirty UK products included two soy powders with prepared estimates of 656 and 756 µg/L. The authors saw no clear evidence of reduced contamination after their earlier survey.",
+      "establishes": "Ready-to-drink and powder means were similar, about 250 and 246 µg/L. This contradicts treating every survey as evidence of a powder-high gradient. The studies share a senior author and are not independent laboratory replications.",
+      "relevance": "The study supports product-specific monitoring. It is a historical market snapshot, not a longitudinal test of every unchanged formulation, proof of processing causation or evidence that present formula causes infant injury.",
+      "links": [
+        {
+          "label": "Article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3851493/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3851493/fullTextXML",
+            "note": "Read archived original abstract, powder results/Table2 and discussion directly in full-text XML after PMC browser challenge. Same-method follow-up, five analytical replicates per product; discussion explicitly describes similar format averages and potential method-blank effects. Source numbers support soy-product maxima, not universal powder amplification."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Lead, cadmium and aluminum in Canadian infant formulae, oral electrolytes and glucose solutions",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "e43804187984aed67e8737c9345648f8bfa7c07876a65128b95b51b62b664784",
+      "citation": "Dabeka R, Fouquet A, Belisle S, Turcotte S. Lead, cadmium and aluminum in Canadian infant formulae, oral electrolytes and glucose solutions. Food Additives & Contaminants: Part A. 2011;28(6):744–753. doi:10.1080/19393210.2011.571795.",
+      "summary": "Canadian products collected in January–May 1999 showed substantial differences by formula type. Table 1 gives as-consumed powder aluminium means of 733 ng/g for soy and 177 ng/g for milk; low-aluminium milk products demonstrated achievable reductions.",
+      "establishes": "Aluminium increased from powder to concentrate to ready-to-use, contradicting a universal powder-high pattern. Glass-associated differences did not definitively identify the source: containers, lids and filling processes remained candidates.",
+      "relevance": "This supports distinguishing protein source, format, sampling period and preparation basis. It is historical occurrence evidence, not a regulatory limit, proof of a single contamination mechanism, or validation of HMTc’s lot-testing frequency.",
+      "links": [
+        {
+          "label": "Article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3118527/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3118527/fullTextXML",
+            "note": "Read abstract, sampling/preparation methods, Table1 and aluminium discussion including glass packaging and sub-50ng/g feasibility. Sampling was in1999, despite2011 publication. Read discussion retains container/lid/filling possibilities; page’s categorical exclusion of packaging overstates it. “Plain milk-based” feasibility does not establish every specialty formula can meet the same value."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Determination of toxic elements in infant formulae by using electrothermal atomic absorption spectrometer",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "b09d91676bc87d4b840325ac5454f78ce23c0f585fb9226949bcfb3c08906b7d",
+      "citation": "Kazi TG, Jalbani N, Baig JA, et al. Determination of toxic elements in infant formulae by using electrothermal atomic absorption spectrometer. Food and Chemical Toxicology. 2009;47(7):1425–1429. doi:10.1016/j.fct.2009.03.025.",
+      "summary": "The authors’ abstract reports testing 17 imported milk- and soy-based formula samples, with higher aluminium, cadmium and lead in the soy products. It also reports modeled intakes below the tolerable levels used in that assessment.",
+      "establishes": "This review accessed the abstract, not full tables. The abstract’s age notation is “>1 year”; it does not establish the article’s under-twelve-month risk framing, current-product prevalence or clinical harm.",
+      "relevance": "The source supports a soy-versus-milk pattern in a small historical sample. Dry-product versus prepared-feed basis and exposure assumptions must be verified before pooling its numbers with Canadian or UK estimates.",
+      "links": [
+        {
+          "label": "Authors’ abstract in PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/19328832/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19328832/",
+            "note": "Read full author abstract and bibliographic record from the retrieved NLM source text; later direct requests met a browser challenge. Full article was not read. Preserved the authors’ below-tolerable-level result and >1year notation; did not infer a definitive feeding recommendation or measurement basis from secondary synthesis."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Concentrations of Heavy Metals in Processed Baby Foods and Infant Formulas Worldwide: A Scoping Review",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "663ead3fcd00a630accebf3b084e73f52dd04a0518fbf96b388f22a3fa1c2417",
+      "citation": "Collado-López S, Rodríguez Hernández MF, Mariscal-Moreno RM, et al. Concentrations of Heavy Metals in Processed Baby Foods and Infant Formulas Worldwide: A Scoping Review. Nutrition Reviews. 2026;84(2):448–461; first published September 16, 2025. doi:10.1093/nutrit/nuaf138.",
+      "summary": "The review included 75 studies and 251 formula items. Detection frequencies were lead 74%, cadmium 61%, arsenic 63% and mercury 42%, with different denominators. Soy-item cadmium detection was 91% versus 44% for cow-based items.",
+      "establishes": "Detection is not concentration, toxicity or current-market prevalence. Reporting heterogeneity, incomplete product descriptions and publication bias limit comparisons; the review does not identify contamination sources or assess aluminium.",
+      "relevance": "It supports a multi-metal monitoring rationale while requiring the correct denominator, category and exposure basis. It cannot establish an aluminium-dominated mass profile, an invariant soy/powder gradient or HMTc’s optimal sampling schedule.",
+      "links": [
+        {
+          "label": "Review full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12793581/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12793581/fullTextXML",
+            "note": "Read metadata, eligibility/search methods, formula-detection results, protein-source comparisons and limitations. Searches were October15–18,2024, covering2014–2024 evidence. Formula detections: Pb160/215, Cd119/195, As90/142, Hg42/101; soy/cow Cd20/22 versus39/89. These are heterogeneous literature items, not a uniform251-lot random sample."
+          }
+        ]
+      },
+      "kind": "Scoping review"
+    },
+    "6": {
+      "referenceTitle": "Trace Elements in Soy-Based Beverages: A Comprehensive Study of Total Content and In Vitro Bioaccessibility",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "74e3e6778e145d97c848e85e3d4ae5bb250e1588b1a0ec19730cd563947582d9",
+      "citation": "Milani RF, Mauri AA, Sanches VL, Morgano MA, Cadore S. Trace Elements in Soy-Based Beverages: A Comprehensive Study of Total Content and In Vitro Bioaccessibility. International Journal of Environmental Research and Public Health. 2023;20(6):4986. doi:10.3390/ijerph20064986.",
+      "summary": "Eighteen Brazilian soy beverages were grouped by isolate protein, soluble extract or whole beans. Table 3 reports aluminium means of 758, 609 and 176 µg/L, respectively, but labels all three with the same statistical comparison letter.",
+      "establishes": "The aluminium differences were not statistically significant in that table. These were flavored soy beverages, not infant formula, and the study did not track the same raw material through processing.",
+      "relevance": "The result suggests a question about ingredients and processing; it does not demonstrate that fractionation caused the difference or quantify an infant-formula processing increment.",
+      "links": [
+        {
+          "label": "Article full text, Europe PMC XML",
+          "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10048851/fullTextXML"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10048851/fullTextXML",
+            "note": "Read sampling, ingredient Table1, concentration Table3 and its Tukey-test footnote, bioaccessibility discussion and conclusion. Eighteen samples represented two batches and three flavors across soy-source groups. Page omits the shared Al significance letter and conflates an observational beverage comparison with causal processing evidence."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Aluminium in infant foods: Total content, effect of in vitro digestion on bioaccessible fraction and preliminary exposure assessment",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "0d39ad110c10783f76f1866172c8a067e214cd77947998ac4b2afc6541146d7a",
+      "citation": "de Paiva EL, Medeiros C, Andrekowisk Fioravanti MI, et al. Aluminium in infant foods: Total content, effect of in vitro digestion on bioaccessible fraction and preliminary exposure assessment. Journal of Food Composition and Analysis. 2020;90:103493. doi:10.1016/j.jfca.2020.103493.",
+      "summary": "The author abstract describes 95 baby-food samples, aluminium bioaccessibility of 0.5–48%, and a soy-drink maximum of 2860 µg/kg. The publisher highlights an exposure scenario involving three daily soy-drink portions across a week.",
+      "establishes": "In vitro bioaccessibility is not measured absorption in infants. The study does not compare absorbed formula and breastmilk doses; the article’s claim that their absorbed-dose ratio is necessarily smaller and in the same direction is unverified.",
+      "relevance": "The source supports distinguishing total content from potential gastrointestinal release. Its soy drinks and mixed infant foods do not establish formula-specific absorption or an infant-specific legal limit.",
+      "links": [
+        {
+          "label": "Publisher abstract and highlights",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0889157520303045"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S0889157520303045",
+            "note": "Read the publisher’s retrieved abstract/highlights and citation; direct full-page retrieval later returned403. Full methods, portion/body-weight assumptions and exposure tables were not read. The highlight references a1mg/kg-body-weight TWI; the article’s “full infant PTWI” wording is more specific than the accessible evidence."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — infant formula metal amplification (synthesis with full anchor-source records)",
+      "pageDigest": "a91a8fe595005d0fd20570d5a606f2a65c9b5346d591d7576abad461d90739d3",
+      "sourceDigest": "fc413f1bf2bfd9f2feb0e23dd8cba7462e935dc168764541c4b623f8a78529b6",
+      "citation": "Pendergrass K. Manufactured infant formula delivers an aluminium-dominated metal load, many-fold above breastmilk and amplified in soy-based and powdered formats, to the most vulnerable consuming population. Heavy Metal Index synthesis, updated July 27, 2026. doi:10.83376/hmi.infant-formula-metal-amplification.",
+      "summary": "This synthesis assembles seven cited sources and proposes monitoring implications. Its public review section says no external verdict has been recorded and identifies the work as a preprint.",
+      "establishes": "It is a synthesis by the same author as this article, not independent empirical confirmation. It acknowledges unquantified mixing-water contributions and inferred formula bioaccessibility; its regulatory and powder-gradient claims need separate correction.",
+      "relevance": "It provides the article’s interpretive provenance, not evidence that HMTc certification improves outcomes. The underlying studies, their dates, product bases and uncertainty remain controlling.",
+      "links": [
+        {
+          "label": "HMI synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; exact article text or explicitly limited abstract scope, with fresh page assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/infant-formula-metal-amplification",
+            "note": "Read author/update metadata, study synthesis, mechanistic/monitoring sections, limitations, review-state statement and references. No external reviews recorded. Editorial: powder-gradient and absorbed-dose claims exceed the reviewed primary sources; no-formula-Al-maximum claim conflicts with separately reviewed FSANZ Schedule19 in batch5-supplements ref7. Do not describe this same-author preprint as independent validation."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

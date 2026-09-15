@@ -1,0 +1,230 @@
+{
+  "page": "articles/eu-regulatory-framework-timeline",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Commission Regulation (EC) No 466/2001 — original EU contaminants framework",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "11748f89517959fe6709a672020c86a4142ff4635060bf2ca9ff9f4bd5a12c13",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulation (EC) No 466/2001 of 8 March 2001 setting maximum levels for certain contaminants in foodstuffs. OJ L 77, 16 March 2001, pp.1–13.",
+      "summary": "This recast established category-specific contaminant maxima, including lead, cadmium and mercury, with edible-part, processing and transition rules. It replaced the earlier Regulation 194/97, so it was not the beginning of all EU contaminants legislation.",
+      "establishes": "Entry into force was 5 April 2001; general application began 5 April 2002. The instrument remained valid through 28 February 2007. These dates differ from the article’s March 2001 and December 2006 account.",
+      "relevance": "It supplies historical comparison context. HMTc should retain both the instrument version and application date; a recast does not prove that every category became stricter.",
+      "links": [
+        {
+          "label": "Original 2001 regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32001R0466"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32001R0466",
+            "note": "Read recitals 1–6 and 18–20, Articles 1–2 and 6–7, and Annex metal headings. EUR-Lex status confirms end of validity February 28, 2007. Article 7 distinguishes entry into force, application and previously marketed products."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Commission Regulation (EC) No 1881/2006 — omnibus contaminants regulation",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "832e8ccc5f2151c6173e4cdc83295503450363492922554cd520c1511cbbe51c",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulation (EC) No 1881/2006 of 19 December 2006 setting maximum levels for certain contaminants in foodstuffs. OJ L 364, 20 December 2006, pp.5–24; original act.",
+      "summary": "The regulation replaced Regulation 466/2001 and organized food contaminant maxima, including lead, cadmium, mercury and inorganic tin. Articles 1–2 tied limits to edible portions and specified treatment of dried, diluted and composite foods.",
+      "establishes": "It entered into force twenty days after publication and applied from 1 March 2007. Later amendments changed its schedule; the original 2006 text is not a substitute for the version applicable to a later study.",
+      "relevance": "It supports preserving historical regulatory context. It does not establish that every amendment lowered every maximum or demonstrate HMTc’s current implementation.",
+      "links": [
+        {
+          "label": "Original 2006 regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32006R1881"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32006R1881",
+            "note": "Read original Articles 1–2 and 10–12 and Annex metal structure. This is the original OJ PDF, not a later consolidation; no exhaustive numerical comparison across all amendments was performed."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Commission Regulation (EU) 2023/915 — current consolidated maximum levels",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "d8783660d674b84c68f440e1581b20714534bc34a8014562899e23e7b746da1d",
+      "kind": "Legislation",
+      "citation": "European Commission. Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L 119, 5 May 2023, pp.103–157.",
+      "summary": "The replacement framework took effect on 25 May 2023 and reorganized the amended contaminant rules. Its Annex I includes seafood mercury maxima, alongside other metals; fish mercury was not excluded from the recast.",
+      "establishes": "The original act and the current amended consolidation are different versions. Article 9 repeals 1881/2006, and Annex II maps the old structure. A claim that most values were unchanged requires a systematic comparison beyond this targeted review.",
+      "relevance": "It supports maintaining versioned legal references and exact category mappings. HMTc’s threshold-update process remains its own governance decision; this act does not prove automatic program updates.",
+      "links": [
+        {
+          "label": "2023 framework regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+            "note": "Read original recitals 1–3, Articles 2–3 and 9–11, Annex I mercury 3.3.1.1–3.3.1.3 and correlation table. Refreshed same-day original-act research. EUR-Lex identifies an August 19, 2026 consolidation; this drawer explains the 2023 recast, not every later change."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Commission Regulation (EU) No 488/2014 — cadmium maximum levels amendment",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "50452748ca473ca97b8fc0a108ac4835daed5b09ddd907a2b0a853172a9ea2bb",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulation (EU) No 488/2014 of 12 May 2014 amending Regulation (EC) No 1881/2006 as regards maximum levels of cadmium in foodstuffs. OJ L 138, 13 May 2014, pp.75–79.",
+      "summary": "This amendment added cadmium limits for cocoa, chocolate and infant foods and revised existing categories. Formula limits applied from January 2015; chocolate and cocoa limits from January 2019. Cow-milk or hydrolysate formula powder used 0.010 mg/kg.",
+      "establishes": "The change was not uniformly downward. Recitals 13 and 16 expressly justify raising limits for certain vegetables and fish. New limits, lower limits and higher limits therefore need separate treatment.",
+      "relevance": "It supports tracking category-specific changes, while directly contradicting the article’s claim that EU limits never loosen. HMTc cannot derive a universal downward-only update rule from this history.",
+      "links": [
+        {
+          "label": "2014 cadmium amendment",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R0488"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R0488",
+            "note": "Read complete five-page act and Annex. Recital 6 says cocoa and infant-food limits were newly established; 13 raises selected vegetables and 16 sardine/bichique limits. Articles 2–3 and Annex preserve staged application and existing-stock provisions."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Commission Regulation (EU) 2015/1006 — inorganic arsenic in rice",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "11ed2f684a90d66f138156468018560676e0ba08da1442dad1f3686e3ff34875",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulation (EU) 2015/1006 of 25 June 2015 amending Regulation (EC) No 1881/2006 as regards maximum levels of inorganic arsenic in foodstuffs. OJ L 161, 26 June 2015, pp.14–16.",
+      "summary": "The act inserted rice-related inorganic-arsenic limits, defined as As(III) plus As(V): 0.20 mg/kg for non-parboiled milled rice, 0.25 for parboiled or husked rice, 0.30 for listed rice snacks, and 0.10 for rice destined for infant foods.",
+      "establishes": "These applied from 1 January 2016, with an existing-stock exception. The 0.10 value concerns the rice ingredient, not every finished infant food. This act alone cannot prove the absence of every earlier arsenic-related EU provision.",
+      "relevance": "It supports species-specific measurements and historically correct comparisons. HMTc must check later amendments before using these original values as current ceilings.",
+      "links": [
+        {
+          "label": "2015 arsenic amendment",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32015R1006"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32015R1006",
+            "note": "Read complete three-page act, especially Article 2 and Annex footnotes. The article omits the parboiled/husked category; its broader historical absence claim was not established by an exhaustive prior-law search."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Commission Regulation (EU) 2021/1317 — lead maximum levels amendment",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "f44b85647c9a03f22e9d3588c30a4ad2e51ac4122f8a0ca3e39e3f14acce274c",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulations (EU) 2021/1317 of 9 August 2021 (lead) and 2021/1323 of 10 August 2021 (cadmium), amending Regulation (EC) No 1881/2006. OJ L 286, pp.1–4; OJ L 288, pp.13–18.",
+      "summary": "The lead amendment lowered or added selected food maxima, including 0.020 mg/kg for processed cereal-based infant foods and baby foods. The companion cadmium amendment revised many categories, including differentiated cereal rows.",
+      "establishes": "The lead act did not amend drinking-water standards, and replacement of a whole schedule does not mean every listed food value decreased. Both acts allowed qualifying previously marketed foods only through 28 February 2022.",
+      "relevance": "They illustrate targeted changes and finite transitions. HMTc should record the changed category and operative date rather than treating every schedule row as newly tightened.",
+      "links": [
+        {
+          "label": "2021 lead amendment",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R1317"
+        },
+        {
+          "label": "2021 cadmium amendment",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R1323"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R1317",
+            "note": "Read recitals, Articles 1–3 and complete replacement lead table. Drinking water is not a schedule category. Published August 10, 2021; entry into force twenty days later."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R1323",
+            "note": "Read recitals, Articles 1–3 and Annex cereal/vegetable categories. Published August 11, 2021; separate instrument and entry date. Cereal rows are differentiated, not one general infant-food rule."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Commission Regulation (EU) 2022/617 — mercury in fishery products",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "7a4af0f3d9e468b8ac7ad2353635da8157d48b31ed55402b1f56d563f5919dfb",
+      "kind": "Historical legislation",
+      "citation": "European Commission. Regulation (EU) 2022/617 of 12 April 2022 amending Regulation (EC) No 1881/2006 as regards maximum levels of mercury in fish and salt. OJ L 115, 13 April 2022, pp.60–63.",
+      "summary": "The amendment introduced a three-level seafood mercury schedule: a 0.50 mg/kg default, 1.0 for listed fish, and 0.30 for another list including cephalopods and specified salmon/trout. It also set a salt value.",
+      "establishes": "The article omits the 0.30 tier. These mercury rules were incorporated into Annex I 3.3 of Regulation 2023/915; the 2022 amendment did not remain a separate exception outside the recast.",
+      "relevance": "It supports exact species and edible-portion mapping. HMTc should cite the current framework for a current comparison while retaining this amendment as historical provenance.",
+      "links": [
+        {
+          "label": "2022 mercury amendment",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0617"
+        },
+        {
+          "label": "2023 mercury schedule",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32022R0617",
+            "note": "Read complete four-page act and all Annex tiers. Entry into force May 3, 2022, with an existing-stock exception. The heading regulates mercury, not a separately measured methylmercury-only maximum."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+            "note": "Read Annex I 3.3.1.1–3.3.1.3 and Article 9, confirming mercury is included in the replacement framework; original 2023 text is distinguished from later consolidation."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "Heavy Metal Index — EU regulatory framework timeline (synthesis with full anchor-source records)",
+      "pageDigest": "fa742150c3e76e7e4125819072ad252b770d9143d7181dce3785141ce80aca5c",
+      "sourceDigest": "c26e1a874ecf0ad664fd519b0b860f9d0ab6af34bc11f7799be9c21439d85360",
+      "kind": "Preprint synthesis",
+      "citation": "Pendergrass K. EU heavy-metals regulatory framework timeline (2001–2023 and beyond). Heavy Metal Index, updated 18 May 2026. doi:10.83376/hmi.eu-regulatory-framework-timeline. Preprint synthesis.",
+      "summary": "This narrative maps selected EU contaminant regulations and argues for separating a study’s historical comparison from current law. It links regulation records rather than supplying a complete comparison of every historical value.",
+      "establishes": "No external reviews are listed. Its account repeats incorrect early dates and the seafood-mercury exception; the claimed six-instrument framing is a selected narrative, not a complete legislative inventory.",
+      "relevance": "It can help locate sources, but HMTc should check original acts before adopting its chronology or downward-only interpretation. Shared authorship and affiliation do not supply independent corroboration.",
+      "links": [
+        {
+          "label": "Index timeline synthesis",
+          "href": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, original-instrument and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/eu-regulatory-framework-timeline",
+            "note": "Read author/date, overview, instrument sections, limitations, anchor list and peer-review state. Compared key assertions with the acts reviewed for references 1–7. This is a source-map review, not a claim that every linked downstream record was audited."
+          }
+        ]
+      }
+    }
+  }
+}
