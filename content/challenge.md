@@ -2,7 +2,7 @@
 title: Win-Your-Money-Back Challenge
 type: program
 description: Heavy metals in food aren’t a content problem. They’re a proof problem.
-updated: 2026-09-14
+updated: 2026-09-15
 noindex: true
 hero_meta:
   - Draft for counsel review
@@ -36,11 +36,12 @@ connections:
     <div><dt>Earned rebate</dt><dd>Full licensing fee</dd></div>
   </dl>
   <p>Grandfathered Paleo licensees are excluded. Product purchases, testing, shipping and handling are outside the licensing-fee rebate.</p>
+  <p><a href="#challenge-faq">New to the program? Read the terms and Challenge questions below →</a></p>
   <p>The rebate has no metals pass/fail requirement. Certification and mark use are separate from the rebate, and certification does not itself authorize mark use. Actions involving the mark still need counsel resolution for participants whose products do not qualify.</p>
 
   </section>
   <section id="choose-your-track">
-  <h2>Preview your enrollment track</h2>
+  <h2>Explore the two tracks</h2>
   <p>Choose Brand for finished goods or Supplier for ingredients and lots. Participants can switch tracks without losing their history. Choosing the wrong track is not a failure.</p>
   <div class="challenge-controls">
     <fieldset>
@@ -50,25 +51,7 @@ connections:
         <label for="challenge-supplier"><input type="radio" id="challenge-supplier" name="challenge-track" value="supplier" aria-controls="challenge-supplier-path"> <span>Supplier <small>Ingredients and lots</small></span></label>
       </div>
     </fieldset>
-    <label class="challenge-revenue-label" for="challenge-revenue">Annual revenue band</label>
-    <select id="challenge-revenue" name="annual-revenue-band" aria-describedby="challenge-revenue-help">
-      <option value="">Select your annual revenue</option>
-      <option value="under-250k">Under $250k</option>
-      <option value="250k-499k">$250k to $499k</option>
-      <option value="500k-999k">$500k to $999k</option>
-      <option value="1m-4m">$1M to $4.99M</option>
-      <option value="5m-9m">$5M to $9.99M</option>
-      <option value="10m-19m">$10M to $19.99M</option>
-      <option value="20m-49m">$20M to $49.99M</option>
-      <option value="50m-74m">$50M to $74.99M</option>
-      <option value="75m-99m">$75M to $99.99M</option>
-      <option value="100m-199m">$100M to $199.99M</option>
-      <option value="200m-499m">$200M to $499.99M</option>
-      <option value="500m-749m">$500M to $749.99M</option>
-      <option value="750m-999m">$750M to $999.99M</option>
-      <option value="1b-plus">$1B and above</option>
-    </select>
-    <p id="challenge-revenue-help">Licensing is based on annual revenue. These preview selections do not enroll you, reserve a place, or submit information. Your revenue selection stays in place when you switch tracks.</p>
+    <p>Choose a track to explore its requirements. This does not enroll you, submit information, create an account or reserve a place.</p>
   </div>
 
   </section>
@@ -80,12 +63,12 @@ connections:
     <ol class="challenge-actions" role="list">
       <li>
         <span class="challenge-action-number" aria-hidden="true">01</span>
-        <div class="challenge-action-body"><h3>Authenticated evidence</h3><p>TECRID on a sealed finished SKU sample.</p><span class="challenge-tag">Required</span></div>
+        <div class="challenge-action-body"><h3>Authenticated evidence</h3><p><a href="https://tecrid.com">TECRID</a> on a sealed finished SKU sample.</p><span class="challenge-tag">Required</span></div>
         <div class="challenge-evidence"><span class="challenge-label">Evidence</span><p>Verified system event · URL · file</p></div>
       </li>
       <li>
         <span class="challenge-action-number" aria-hidden="true">02</span>
-        <div class="challenge-action-body"><h3>Real inventory</h3><p>Completing-lot retail buy-and-test or a second TECRID’d SKU.</p><span class="challenge-tag">Required</span></div>
+        <div class="challenge-action-body"><h3>Real inventory</h3><p>Completing-lot retail buy-and-test or a second <a href="https://tecrid.com">TECRID’d</a> SKU.</p><span class="challenge-tag">Required</span></div>
         <div class="challenge-evidence"><span class="challenge-label">Evidence</span><p>Verified system event · file · attestation</p></div>
       </li>
       <li>
@@ -100,7 +83,7 @@ connections:
       </li>
       <li>
         <span class="challenge-action-number" aria-hidden="true">05</span>
-        <div class="challenge-action-body"><h3>Lab spine</h3><p>Your contract lab completes a TECRID sandbox issue.</p><span class="challenge-tag">Required</span></div>
+        <div class="challenge-action-body"><h3>Lab spine</h3><p>Your contract lab completes a <a href="https://tecrid.com">TECRID</a> sandbox issue.</p><span class="challenge-tag">Required</span></div>
         <div class="challenge-evidence"><span class="challenge-label">Evidence</span><p>Verified system event · URL · file</p></div>
       </li>
       <li>
@@ -133,9 +116,9 @@ connections:
 
   <div id="challenge-supplier-path" aria-labelledby="supplier-actions-heading">
     <p id="supplier-actions-heading" class="challenge-path-label">Supplier · ingredients and lots</p>
-    <div class="challenge-supplier-note"><p>Supplier track details: same 10-step physics adapted to lot nomination / TECRID / buyer pull.</p><p>The detailed Supplier checklist is pending. The shared eligibility, completion window, rebate and counsel conditions on this page apply to both tracks.</p></div>
+    <div class="challenge-supplier-note"><p>Supplier track details: same 10-step physics adapted to lot nomination / <a href="https://tecrid.com">TECRID</a> / buyer pull.</p><p>The detailed Supplier checklist is pending. The shared eligibility, completion window, rebate and counsel conditions on this page apply to both tracks.</p></div>
     <!-- TODO: Add counsel-reviewed Supplier action text when the complete source is available. Do not invent alternate rebate conditions. -->
-    <p class="challenge-supplier-sequence" aria-label="Supplier pathway">VLE nominate → sample → TECRID → QUALIFIED</p>
+    <p class="challenge-supplier-sequence" aria-label="Supplier pathway"><a href="https://vle.exchange">VLE</a>: nominate a lot → freeze its Compliance Profile → sample → <a href="https://tecrid.com">TECRID</a> → QUALIFIED → reserve</p>
     <p>The ingredient and lot path connects nominated inventory, authenticated evidence and buyer demand. QUALIFIED status and any mark authorization remain separate from earning the licensing-fee rebate.</p>
   </div>
   </section>
@@ -145,7 +128,7 @@ connections:
   <p>Action four rewards enrollment intent. It does not require the referred organization to qualify or certify.</p>
   <div class="challenge-referrals">
     <section aria-labelledby="referred-brand"><h3 id="referred-brand">Referred brand</h3><ol><li>Account created and first authenticated login completed.</li><li>Organization and contact profile complete.</li><li>Intake application submitted with the HMTc-8 panel selected and completing-lot intent recorded.</li></ol></section>
-    <section aria-labelledby="referred-supplier"><h3 id="referred-supplier">Referred supplier</h3><ol><li>Account created and first authenticated login completed.</li><li>Organization and contact profile complete.</li><li>Lot-nomination intent recorded or TECRID sandbox started.</li></ol></section>
+    <section aria-labelledby="referred-supplier"><h3 id="referred-supplier">Referred supplier</h3><ol><li>Account created and first authenticated login completed.</li><li>Organization and contact profile complete.</li><li>Lot-nomination intent recorded or <a href="https://tecrid.com">TECRID</a> sandbox started.</li></ol></section>
   </div>
 
   </section>
@@ -160,6 +143,52 @@ connections:
   <p>LinkedIn posts, webinars, logo-only placements without product context, briefing quizzes and newsletter signups do not replace any required action. Insurance and counsel or story remain required.</p>
 
   </section>
+  <section id="challenge-faq">
+  <h2>Challenge questions and useful definitions</h2>
+  <div class="hmtc-faq-list">
+    <details class="hmtc-faq" id="faq-first-50">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What does “first 50” mean, and who is excluded?</span></summary>
+      <div class="hmtc-faq-a"><p>The proposed offer is limited to the first 50 eligible new Challenge enrollees. Grandfathered Paleo licensees are excluded. Viewing this draft, choosing a track or creating an account does not by itself confirm a Challenge place. Final enrollment terms must define when enrollment counts, how a place is confirmed and when the twelve-month clock starts. This draft does not show a live count of remaining places.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-step-evidence">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What happens if I fail or cannot complete a step?</span></summary>
+      <div class="hmtc-faq-a"><p>An action without the required evidence remains incomplete. Ask ICS which requirement or evidence is missing. All ten actions must be completed within twelve months to earn the rebate. Final terms must explain evidence corrections, resubmission and missed deadlines. A failing metals result does not by itself decide the rebate; the treatment of mark-related actions for nonqualifying participants remains unresolved with counsel.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-rebate">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What is rebated, and when do I choose how to receive it?</span></summary>
+      <div class="hmtc-faq-a"><p>The earned rebate covers the full licensing fee paid. It does not cover product purchases, testing, shipping or handling. Only after completing the Challenge do you choose credit toward year two, credit toward a three-year certification option, or cash back. There is no reward selection at enrollment.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-lab-evidence">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">How is lab evidence authenticated?</span></summary>
+      <div class="hmtc-faq-a"><p><a href="https://tecrid.com">TECRID</a> connects a lab result to its sample and source records so the evidence can be checked and shared as an authenticated record. It is the lab-evidence foundation of this ecosystem. The core service is free. An authenticated record is evidence, not a certification, and does not authorize an HMTc mark.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-vle">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What is VLE, and how does an ingredient lot qualify?</span></summary>
+      <div class="hmtc-faq-a"><p><a href="https://vle.exchange">Verified Lot Exchange (VLE)</a> connects ingredient lots with buyers looking for evidence that those lots meet defined requirements. The path is: nominate a lot → freeze its Compliance Profile → sample → <a href="https://tecrid.com">TECRID</a> → QUALIFIED → reserve. The Compliance Profile fixes the requirements before sampling. Lab evidence is then checked against that profile. QUALIFIED describes the lot’s status against those requirements; reserving the lot is a separate next step. Neither status certifies a finished product.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-hmtc">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What does HMTc publish, and what does it certify?</span></summary>
+      <div class="hmtc-faq-a"><p>Heavy Metal Tested &amp; Certified (HMTc) publishes <a href="/standards">numeric heavy-metal limits for product categories</a> and runs a finished-product certification program against the applicable standards. A published standard tells you which limits apply. Certification is a separate decision supported by product evidence and ongoing testing. Reading a standard or holding an authenticated lab record does not certify a product.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-hmi">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What is HMI’s role?</span></summary>
+      <div class="hmtc-faq-a"><p>The <a href="https://heavymetalindex.com">Heavy Metal Index (HMI)</a> is the public knowledge resource for research and evidence about heavy metals. It helps brands, retailers and the public inspect the literature behind the standards. Making that evidence accessible gives published standards a common reference point. HMI is a knowledge resource; finished-product certification belongs to HMTc.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-standard-version">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What is a pinned StandardVersion?</span></summary>
+      <div class="hmtc-faq-a"><p>A StandardVersion identifies the exact edition of a <a href="/standards">published standard</a>. “Pinned” means your terms cite that specific edition, so a buyer, supplier or reviewer can tell which requirements apply. It avoids an ambiguous reference to whichever version happens to be on the website later.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-completing-lot">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">What is a completing lot?</span></summary>
+      <div class="hmtc-faq-a"><p>The completing lot is the new, independently sampled production lot tested across the full program panel to complete a product’s three-lot baseline. Up to two prior production lots can count when their results meet the program’s evidence requirements. It is not simply any third uploaded report. The <a href="/program/structure#surveillance">baseline rules</a> explain how qualifying prior results and the new full-panel lot fit together.</p></div>
+    </details>
+    <details class="hmtc-faq" id="faq-mark-authorization">
+      <summary><span class="hmtc-faq-sign" aria-hidden="true"></span><span class="hmtc-faq-q">How are qualification and mark authorization different?</span></summary>
+      <div class="hmtc-faq-a"><p>Qualification means the relevant product or lot evidence meets the applicable requirements. Mark authorization is separate permission to use the HMTc mark for the authorized product and context. Qualification, or a certification decision alone, does not grant that permission. Actions six and seven require qualification and mark authorization. Counsel still needs to resolve the route for nonqualifying participants and action ten’s partial certification gate.</p></div>
+    </details>
+  </div>
+  </section>
+
   <section id="counsel-review">
   <h2>Before enrollment opens</h2>
   <aside class="challenge-counsel" aria-label="Unresolved counsel review">
