@@ -5,7 +5,7 @@
     "/": [
       { "sel": "head link[rel='stylesheet'][data-persist][href*='index.']", "prop": "count", "want": 1, "note": "The SPA release guard compares this build-specific stylesheet before morphing the page; cross-release behaviour is checked by check:spa-release." },
       {"sel": "header .search, header .search-button", "prop": "absent", "want": true},
-      {"sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1},
+      {"sel": ".hmtc-home-actions + #site-search", "prop": "count", "want": 1},
       {"sel": "#site-search-input[type=search]", "prop": "count", "want": 1},
       {"sel": ".hmtc-search-field", "prop": "min-height", "want": "58px"},
       {"sel": ".hmtc-search-field input", "prop": "font-size", "want": "16px"},
@@ -14,7 +14,7 @@
       {"sel": "#site-search-results", "prop": "padding", "want": "0px"},
       { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 2 },
       { "sel": ".hmtc-home-action--primary[href=\"https://app.heavymetalcertified.com/hmt/get-started\"]", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"/briefings/the-big-8\"]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"#buy-the-step\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a[href=\"/standards/finder\"]", "prop": "absent", "want": true },
       { "sel": ".hmi-nav-list > .hmi-nav-item", "prop": "count", "want": 5 },
       { "sel": ".hmi-nav-list", "prop": "flex-wrap", "want": "nowrap" },
@@ -28,11 +28,37 @@
       { "sel": ".hmtc-home-title", "prop": "color", "want": "#ffffff" },
       { "sel": "header.hmi-topnav-shell", "prop": "margin", "want": "0px" },
       { "sel": ".hmtc-home-snapshot", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": ".hmtc-home-hero .hmtc-home-snapshot", "prop": "absent", "want": true },
+      { "sel": "#buy-the-step + #register-facts .hmtc-home-snapshot", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-house-line, footer .hmtc-marketing-house-line", "prop": "count", "want": 2 },
+      { "sel": ".hmtc-cash-burn dl > div", "prop": "count", "want": 5 },
+      { "sel": ".hmtc-proof-chain > li", "prop": "count", "want": 4 },
+      { "sel": ".hmtc-proof-chain", "prop": "gap", "want": "1px" },
+      { "sel": ".hmtc-proof-chain", "prop": "padding", "want": "0px" },
+      { "sel": ".hmtc-proof-chain > li", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": ".hmtc-buy-grid > section", "prop": "count", "want": 3 },
+      { "sel": ".hmtc-sell-label", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains" },
+      { "sel": "#buy-the-step a[href='/challenge']", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-evidence, .hmtc-home-masthead", "prop": "count", "want": 0 },
       { "sel": ".hmtc-home-h1", "prop": "absent", "want": true },
       { "sel": ".hmtc-home-hero .hmtc-author-card", "prop": "count", "want": 0 },
       { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
+    ],
+    "/challenge": [
+      { "sel": "#challenge-draft", "prop": "count", "want": 1 },
+      { "sel": "#challenge-draft", "prop": "display", "want": "block" },
+      { "sel": "#challenge-draft", "prop": "border-left-width", "want": "3px" },
+      { "sel": "#challenge-draft", "prop": "border-left-color", "want": "#9f2727" },
+      { "sel": "#challenge-pending-review", "prop": "count", "want": 1 },
+      { "sel": "article form, article input", "prop": "absent", "want": true },
+      { "sel": "footer .hmtc-marketing-house-line", "prop": "count", "want": 1 }
+    ],
+    "/for-brands": [
+      { "sel": "footer .hmtc-marketing-house-line", "prop": "count", "want": 1 }
+    ],
+    "/for-retailers": [
+      { "sel": "footer .hmtc-marketing-house-line", "prop": "count", "want": 1 }
     ],
     "/?q=olive%20oil": [
       { "hover": ".hmtc-search-results a" },
@@ -358,6 +384,16 @@
     {
       "viewport": {"width": 390, "height": 844},
       "pages": {
+        "/": [
+          { "sel": ".hmtc-home-actions", "prop": "flex-direction", "want": "column" },
+          { "sel": ".hmtc-proof-chain", "prop": "grid-template-columns", "want": "340px" },
+          { "sel": ".hmtc-buy-grid", "prop": "grid-template-columns", "want": "340px" },
+          { "sel": ".hmtc-home-hero .hmtc-home-snapshot", "prop": "absent", "want": true }
+        ],
+        "/challenge": [
+          { "sel": "#challenge-draft", "prop": "display", "want": "block" },
+          { "sel": "#challenge-pending-review", "prop": "count", "want": 1 }
+        ],
         "/brands": [
           {"sel": "header .search-button", "prop": "absent", "want": true},
           {"sel": ".hmtc-search-link", "prop": "display", "want": "flex"},

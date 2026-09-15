@@ -159,7 +159,7 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
    the global a.internal rule (with !important) above. No default underline; the
    `.wiki-content a:hover` rule above supplies underline-on-hover. */
 .wiki-content a.internal:hover:not(:where(.hmtc-search-results a)) { color: var(--burg-dark); }
-.wiki-content ul, .wiki-content ol { padding-left: 1.4em; margin: 0 0 1.05em; }
+.wiki-content ul, .wiki-content ol:not(:where(.hmtc-proof-chain)) { padding-left: 1.4em; margin: 0 0 1.05em; }
 .wiki-content li { margin-bottom: 0.45em; }
 .wiki-content blockquote { border-left: 3px solid var(--burg); margin: 0 0 1.1em; padding: 8px 18px; background: var(--burg-tint2); color: var(--body); }
 .wiki-content code { font-family: "IBM Plex Mono", monospace; font-size: 0.88em; background: var(--shade); padding: 1px 5px; border-radius: 4px; }

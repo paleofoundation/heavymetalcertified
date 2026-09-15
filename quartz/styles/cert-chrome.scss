@@ -1010,15 +1010,15 @@ sup.hmtc-cite {
 }
 
 
-// Minimal HMI reference: open homepage, one ledger, compact interior attribution.
+// Marketing homepage: lead with the cost of missing proof; register facts follow the sell.
 .hmtc-home-hero { position: relative; isolation: isolate; background: radial-gradient(ellipse at 72% 28%, rgba(255,253,251,.16), transparent 64%), #9f2727; color: #fff; }
 .hmtc-home-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: repeating-radial-gradient(circle at 83% 42%, transparent 0 91px, rgba(255,253,251,.065) 92px 93px, transparent 94px 148px); mask-image: linear-gradient(90deg, transparent 24%, #000 78%); }
 .hmtc-home-hero-grid { max-width: 1760px; box-sizing: border-box; margin: auto; padding: 80px 48px 84px; display: grid; grid-template-columns: minmax(0,1.35fr) 400px; gap: 80px; align-items: center; }
 .hmtc-home-copy { min-width: 0; }
 .wiki-content .hmtc-home-title { font: 400 clamp(48px,4.1vw,68px)/1.12 Lora,serif; letter-spacing: -.02em; color: #fff; margin: 0 0 28px; }
-.hmtc-home-title span { color: #f5d7cf; }
-.hmtc-home-dek { font: 18px/1.65 var(--bodyFont); color: #fff2ee; margin: 0 0 32px; max-width: 54ch; }
-.hmtc-hero-search { position: relative; max-width: 720px; margin: 0 0 24px; scroll-margin-top: 96px; }
+.hmtc-home-dek { font: 24px/1.5 var(--bodyFont); color: #fff2ee; margin: 0 0 24px; max-width: 36ch; }
+.hmtc-home-house-line { font: 16px/1.65 var(--bodyFont); color: #fff2ee; margin: 0 0 28px; max-width: 52ch; }
+.hmtc-hero-search { position: relative; max-width: 720px; margin: 28px 0 0; scroll-margin-top: 96px; }
 .hmtc-search-form { margin: 0; }
 .hmtc-search-field { display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 18px; min-height: 58px; box-sizing: border-box; background: #fffdfb; color: #7f1f1f; border: 1px solid #e8e1db; border-radius: 3px; }
 .hmtc-search-field:focus-within { outline: 2px solid #fffdfb; outline-offset: 4px; }
@@ -1065,6 +1065,35 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .hmtc-home-snapshot dd { margin: 0; font: 15px/1.5 "IBM Plex Mono",monospace; color: #9f2727; }
 .wiki-content .hmtc-home-snapshot-inner > a { color: #9f2727; font-size: 13px; text-decoration: none; }
 .wiki-content .hmtc-home-snapshot-inner > a:hover { text-decoration: underline; }
+// The cost list is commercial copy; measured facts retain the canonical snapshot below it.
+.hmtc-cash-burn { padding: 28px; border: 1px solid #e8e1db; background: #fffdfb; color: #3f3a3f; }
+.wiki-content .hmtc-cash-burn h2 { font: 400 24px/1.3 Lora,serif; color: #2b1f1f; margin: 0 0 12px; border: 0; padding: 0; }
+.hmtc-cash-burn > p { font: 14px/1.65 var(--bodyFont); margin: 0 0 14px; }
+.hmtc-cash-burn dl { margin: 0; }
+.hmtc-cash-burn dl > div { padding: 14px 0; border-bottom: 1px dotted #e8e1db; }
+.hmtc-cash-burn dt { font: 400 12px/1.5 "IBM Plex Mono",monospace; color: #9f2727; }
+.hmtc-cash-burn dd { font: 14px/1.6 var(--bodyFont); margin: 5px 0 0; }
+.hmtc-sell-section { max-width: 1760px; box-sizing: border-box; margin: 0 auto; padding: 64px 48px 0; scroll-margin-top: 96px; }
+.wiki-content .hmtc-sell-section h2 { font: 400 30px/1.2 Lora,serif; color: #2b1f1f; border-bottom: 1px solid #e8e1db; padding-bottom: 10px; margin: 0 0 20px; }
+.hmtc-sell-intro { max-width: 76ch; font: 16.5px/1.78 var(--bodyFont); color: #3f3a3f; margin: 0 0 24px; }
+.hmtc-proof-chain, .hmtc-buy-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; background: #e8e1db; border: 1px solid #e8e1db; margin: 0; padding: 0; }
+.hmtc-proof-chain > li, .hmtc-buy-grid > section { list-style: none; margin: 0; padding: 24px; background: #fffdfb; min-width: 0; }
+.hmtc-buy-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.hmtc-sell-label { font: 400 11px/1.5 "IBM Plex Mono",monospace; letter-spacing: .08em; text-transform: uppercase; color: #9f2727; }
+.wiki-content .hmtc-sell-section h3 { font: 400 22px/1.3 Lora,serif; color: #2b1f1f; margin: 12px 0; }
+.hmtc-proof-chain p, .hmtc-buy-grid p { font: 14px/1.7 var(--bodyFont); color: #3f3a3f; margin: 0 0 18px; }
+.hmtc-proof-chain a, .hmtc-buy-grid a { font-size: 13px; }
+.hmtc-sell-note { font: 13px/1.65 var(--bodyFont); color: #736b6b; margin: 18px 0 0; max-width: 90ch; }
+.hmtc-register-facts { display: grid; grid-template-columns: minmax(0,1fr) 400px; gap: 80px; align-items: start; }
+@media (max-width: 1149px) {
+  .hmtc-sell-section { padding: 48px 24px 0; }
+  .hmtc-proof-chain, .hmtc-buy-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .hmtc-register-facts { grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .hmtc-register-facts .hmtc-home-snapshot { max-width: 500px; margin-right: 14px; }
+}
+@media (max-width: 600px) {
+  .hmtc-proof-chain, .hmtc-buy-grid { grid-template-columns: minmax(0,1fr); }
+}
 .hmtc-hb-sidebar { display: flex; flex-direction: column; gap: 32px; min-width: 0; padding: 48px 28px 32px; }
 .hmtc-author-card { color: #fff; }
 .hmtc-author-hover { position: relative; width: 72px; margin-bottom: 22px; }
@@ -1101,7 +1130,7 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 @media (max-width: 1149px) {
   .hmtc-home-hero-grid { grid-template-columns: minmax(0,1fr); padding: 56px 24px; gap: 44px; }
   .wiki-content .hmtc-home-title { font-size: clamp(36px,5.5vw,56px); }
-  .hmtc-home-dek { font-size: 16px; }
+  .hmtc-home-dek { font-size: 21px; }
   .hmtc-home-sidebar { max-width: 500px; margin-right: 14px; }
   .hmtc-home-hero::before { opacity: .5; }
   .hmtc-author-popover { left: 0; right: auto; }

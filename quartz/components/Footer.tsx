@@ -50,8 +50,10 @@ const footerSections = [
 ]
 
 export default (() => {
-  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
+    const marketingRoute = ["home", "guide", "apply", "comparison"].includes(String(fileData.frontmatter?.type ?? "")) ||
+      ["challenge", "for-brands", "for-retailers", "for-legal-qa", "program/readiness", "program/remediation", "program/corrective-action"].includes(String(fileData.slug))
     return (
       <footer id="site-footer" class={`site-footer ${displayClass ?? ""}`}>
         <div class="site-footer-inner">
@@ -59,10 +61,14 @@ export default (() => {
             <a class="site-footer-logo" href="/">
               Heavy Metal Certified
             </a>
-            <p>
-              Published heavy-metal standards, set per subcategory in each product's native basis,
-              and derived from a pooled distribution of the peer-reviewed and agency literature.
-            </p>
+            {marketingRoute ? (
+              <p class="hmtc-marketing-house-line">Heavy metals in food aren’t a content problem. They’re a proof problem.</p>
+            ) : (
+              <p>
+                Published heavy-metal standards, set per subcategory in each product's native basis,
+                and derived from a pooled distribution of the peer-reviewed and agency literature.
+              </p>
+            )}
           </section>
           <nav class="site-footer-nav" aria-label="Footer">
             {footerSections.map((section) => (
