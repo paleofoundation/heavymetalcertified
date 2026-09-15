@@ -397,7 +397,7 @@
       }
     }
   },
-  "method": "HMTc Method v2.0 (government-limit default). Device forms carry no sovereign heavy-metal content limit, so every panel cell resolves to a mandatory analytical control or a substantiated not-material determination; no occurrence percentile is computed and no number is invented. Cosmetic forms read across the strictest sovereign mucosal-contact cosmetic contaminant limit. Two basis families (device content, cosmetic content) are never conflated, and neither is a leachate/migration number. Provenance vocabulary: {regulatory-alignment, read-across, not-material, control, ratchet}.",
+  "method": "HMTc Method v2.0 (government-limit default). Device forms carry no sovereign heavy-metal content limit, so every panel cell is a disclosed read-across by analogy to the strictest health-based limit a government sets for an article in comparable prolonged mucosal contact; no occurrence percentile is computed and no number is originated by HMTc. Cosmetic forms read across the strictest sovereign mucosal-contact cosmetic contaminant limit. Two basis families (device content, cosmetic content) are never conflated, and neither is a leachate/migration number. Provenance vocabulary: {regulatory-alignment, read-across, not-material, control, ratchet}.",
   "provenance_vocabulary": [
     "regulatory-alignment",
     "read-across",
