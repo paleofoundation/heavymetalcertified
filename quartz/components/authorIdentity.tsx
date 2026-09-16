@@ -1,7 +1,10 @@
-// Shared identity, verified in HMI's September 9 author-profile record.
+import identity from "../../data/researcher-identity.json"
+
+// Shared identity with DataCite and structured-data emitters.
 export const KAREN = {
-  name: "Karen Pendergrass",
-  orcid: "0000-0002-2348-7259",
+  name: identity.name,
+  orcid: identity.orcid,
+  profiles: identity.profiles,
   profile: "/authors/karen-pendergrass",
   portrait: "/static/authors/karen-pendergrass-red.png",
   affiliations: [
@@ -10,7 +13,7 @@ export const KAREN = {
     { name: "Microbiome Medicine", url: "https://microbiomemedicine.com/" },
     { name: "WikiBiome", url: "https://www.wikibiome.com/" },
   ],
-  bio: "Standards architect and microbiome researcher connecting contaminant evidence, food exposure, and microbial metallomics.",
+  bio: identity.description,
 }
 
 export function isKarenAuthor(fm: Record<string, unknown>, slug = ""): boolean {

@@ -1,0 +1,36 @@
+{
+  "name": "Karen Pendergrass",
+  "citationName": "Pendergrass, Karen",
+  "givenName": "Karen",
+  "familyName": "Pendergrass",
+  "orcid": "0000-0002-2348-7259",
+  "personId": "https://contaminantstandards.com/people/karen-pendergrass#person",
+  "profileUrl": "https://contaminantstandards.com/people/karen-pendergrass",
+  "jobTitle": "Standards Architect & Independent Researcher",
+  "description": "A standards architect and independent researcher working on dietary heavy metal exposure, microbial metallomics, and traceable toxicological data systems.",
+  "researchTopics": [
+    "Dietary heavy metal exposure",
+    "Microbial metallomics",
+    "Systems architecture",
+    "Toxicological data architecture"
+  ],
+  "profiles": {
+    "orcid": "https://orcid.org/0000-0002-2348-7259",
+    "scholar": "https://scholar.google.com/citations?user=xnzAh-wAAAAJ",
+    "linkedin": "https://www.linkedin.com/in/karenpendergras/",
+    "heavyMetalIndex": "https://heavymetalindex.com/authors/karen-pendergrass",
+    "heavyMetalCertified": "https://heavymetalcertified.com/authors/karen-pendergrass"
+  },
+  "affiliations": [
+    {
+      "name": "Institute of Contaminant Standards",
+      "id": "https://contaminantstandards.com/#organization",
+      "url": "https://contaminantstandards.com"
+    },
+    {
+      "name": "The Paleo Foundation",
+      "id": "https://paleofoundation.com/#organization",
+      "url": "https://paleofoundation.com"
+    }
+  ]
+}

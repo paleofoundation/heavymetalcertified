@@ -13,8 +13,8 @@
 // node), not the site Organization, because a briefing carries a personal byline.
 // Publisher is the Institute of Contaminant Standards (the editorial/operator entity;
 // see CLAUDE.md Part 14 entity naming). datePublished is parsed from the briefing's
-// own `briefing_date`/`updated` frontmatter, with a robust fallback that simply omits
-// the field rather than guessing when the date is unparseable.
+// own publication frontmatter. `updated` supplies only dateModified. Missing or
+// unparseable dates are omitted instead of guessed.
 //
 // Marker-bounded (CERT-BRIEFING-JSONLD-START/END) and idempotent: a page that already
 // carries an Article node (e.g. a future spec-driven one) is left untouched, and a
@@ -22,11 +22,12 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import matter from "gray-matter"
+import { jsonLdScript, publicationMetadata } from "./lib/publication-jsonld.mjs"
 import {
   CERT_BASE,
   CERT_WEBSITE_ID,
   ICS_ORGANIZATION_ID,
-  personEntity,
 } from "./lib/entity-graph.mjs"
 
 const REPO = process.cwd()
@@ -45,27 +46,7 @@ if (!fs.existsSync(PUBLIC)) {
   process.exit(0)
 }
 
-const MONTHS = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" }
-
-// Parse "August 2026" -> "2026-08", "2026-06-18" -> "2026-06-18". Returns null if unparseable.
-function isoDate(s) {
-  const v = (s || "").trim().replace(/^["']|["']$/g, "")
-  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return v
-  if (/^\d{4}-\d{2}$/.test(v)) return v
-  const m = v.match(/^([A-Za-z]+)\s+(\d{4})$/)
-  if (m && MONTHS[m[1].toLowerCase()]) return `${m[2]}-${MONTHS[m[1].toLowerCase()]}`
-  if (/^\d{4}$/.test(v)) return v
-  return null
-}
-
-function fmValue(fm, key) {
-  const m = fm.match(new RegExp(`^${key}:\\s*(.+)$`, "m"))
-  if (!m) return null
-  return m[1].trim().replace(/^["']|["']$/g, "")
-}
-
-function articleGraph({ url, title, description, author, orcid, datePublished }) {
-  const person = personEntity(author, orcid)
+function articleGraph({ url, title, description, frontmatter }) {
   const g = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -77,11 +58,10 @@ function articleGraph({ url, title, description, author, orcid, datePublished })
     url,
     mainEntityOfPage: url,
     isAccessibleForFree: true,
-    author: person,
+    ...publicationMetadata(frontmatter),
     publisher: PUBLISHER,
     isPartOf: { "@id": CERT_WEBSITE_ID },
   }
-  if (datePublished) { g.datePublished = datePublished; g.dateModified = datePublished }
   return g
 }
 
@@ -89,12 +69,10 @@ let injected = 0, skipped = 0
 for (const file of fs.readdirSync(CONTENT)) {
   if (!file.endsWith(".md") || file === "index.md") continue
   const src = fs.readFileSync(path.join(CONTENT, file), "utf8")
-  const fmMatch = src.match(/^---\n([\s\S]*?)\n---/)
-  if (!fmMatch) continue
-  const fm = fmMatch[1]
-  if (fmValue(fm, "type") !== "public-briefing") continue
+  const fm = matter(src).data
+  if (fm.type !== "public-briefing") continue
 
-  const slug = fmValue(fm, "briefing_slug") || file.replace(/\.md$/, "")
+  const slug = fm.briefing_slug || file.replace(/\.md$/, "")
   const htmlPath = path.join(PUBLIC, `${slug}.html`)
   if (!fs.existsSync(htmlPath)) { console.error(`postbuild-cert-briefing-jsonld: ${slug}.html not found; skipping.`); continue }
 
@@ -105,14 +83,11 @@ for (const file of fs.readdirSync(CONTENT)) {
     html = html.replace(new RegExp(`${START}[\\s\\S]*?${END}\\n?`), "")
   } else if (/"@type"\s*:\s*"Article"/.test(html)) { skipped++; continue }
 
-  const title = fmValue(fm, "title") || slug
-  const description = fmValue(fm, "description") || ""
-  const author = fmValue(fm, "author") || "Karen Pendergrass"
-  const orcid = fmValue(fm, "orcid")
-  const datePublished = isoDate(fmValue(fm, "briefing_date")) || isoDate(fmValue(fm, "updated"))
+  const title = fm.title || slug
+  const description = fm.description || ""
 
-  const graph = articleGraph({ url, title, description, author, orcid, datePublished })
-  const block = `${START}\n<script type="application/ld+json">${JSON.stringify(graph)}</script>\n${END}`
+  const graph = articleGraph({ url, title, description, frontmatter: fm })
+  const block = `${START}\n${jsonLdScript(graph)}\n${END}`
   html = html.includes("</head>") ? html.replace("</head>", `${block}\n</head>`) : `${html}\n${block}\n`
   fs.writeFileSync(htmlPath, html, "utf8")
   injected++

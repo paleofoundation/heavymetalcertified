@@ -1,0 +1,135 @@
+{
+  "data": {
+    "id": "10.83138/hmtc.std.15.menstrual-tampons",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.83138/hmtc.std.15.menstrual-tampons",
+      "prefix": "10.83138",
+      "suffix": "hmtc.std.15.menstrual-tampons",
+      "identifiers": [],
+      "alternateIdentifiers": [],
+      "creators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "titles": [
+        {
+          "title": "Menstrual tampons: HMTc Standard"
+        }
+      ],
+      "publisher": "Institute of Contaminant Standards",
+      "container": {},
+      "publicationYear": 2026,
+      "subjects": [],
+      "contributors": [],
+      "dates": [],
+      "language": null,
+      "types": {
+        "ris": "GEN",
+        "bibtex": "misc",
+        "citeproc": "article",
+        "schemaOrg": "CreativeWork",
+        "resourceType": "Certification Standard",
+        "resourceTypeGeneral": "Standard"
+      },
+      "relatedIdentifiers": [],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": "1.0",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual tampons (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis; the applicator is tested as a distinct component). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuODMxMzgvSE1UQy5TVEQuMTUuTUVOU1RSVUFMLVRBTVBPTlM8L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlBlbmRlcmdyYXNzLCBLYXJlbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S2FyZW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+UGVuZGVyZ3Jhc3M8L2ZhbWlseU5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iT1JDSUQiIHNjaGVtZVVSST0iaHR0cHM6Ly9vcmNpZC5vcmciPmh0dHBzOi8vb3JjaWQub3JnLzAwMDAtMDAwMi0yMzQ4LTcyNTk8L25hbWVJZGVudGlmaWVyPgogICAgICA8YWZmaWxpYXRpb24+SW5zdGl0dXRlIG9mIENvbnRhbWluYW50IFN0YW5kYXJkczwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPk1lbnN0cnVhbCB0YW1wb25zOiBITVRjIFN0YW5kYXJkPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPkluc3RpdHV0ZSBvZiBDb250YW1pbmFudCBTdGFuZGFyZHM8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjY8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlN0YW5kYXJkIj5DZXJ0aWZpY2F0aW9uIFN0YW5kYXJkPC9yZXNvdXJjZVR5cGU+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24+MS4wPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvbGVnYWxjb2RlIiByaWdodHNJZGVudGlmaWVyPSJjYy1ieS00LjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHNjaGVtZVVSST0iaHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy8iPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgSGVhdnkgTWV0YWwgVGVzdGVkICZhbXA7IENlcnRpZmllZCBoZWF2eS1tZXRhbC1zYWZldHkgc3RhbmRhcmQgZm9yIG1lbnN0cnVhbCB0YW1wb25zIChGZW1pbmluZSBDYXJlKSwgZXZhbHVhdGVkIG9uIHRoZSB0b3RhbCBoZWF2eS1tZXRhbCBjb250ZW50IG9mIHRoZSBmaW5pc2hlZCBhcnRpY2xlIGFzIHBsYWNlZCBvbiBtYXJrZXQgKG11Y29zYWwgYmFzaXM7IHRoZSBhcHBsaWNhdG9yIGlzIHRlc3RlZCBhcyBhIGRpc3RpbmN0IGNvbXBvbmVudCkuIE5vIGdvdmVybm1lbnQgc2V0cyBhIG51bWVyaWMgaGVhdnktbWV0YWwgY29udGVudCBsaW1pdCBmb3IgdGhpcyBkZXZpY2UgZm9ybSwgc28gZXZlcnkgYW5hbHl0ZSBpcyBoZWxkIHVuZGVyIG1hbmRhdG9yeSBhbmFseXRpY2FsIGNvbnRyb2wgb3IgYSBzdWJzdGFudGlhdGVkIG5vdC1tYXRlcmlhbCBkZXRlcm1pbmF0aW9uLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg==",
+      "url": "https://heavymetalcertified.com/standards/menstrual-tampons",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": null,
+      "source": "api",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2026-09-12T17:49:03.000Z",
+      "registered": "2026-09-12T17:49:03.000Z",
+      "published": "2026",
+      "updated": "2026-09-12T17:49:03.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "vaju.hdawai",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "vaju",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.83138/hmtc.std.15.menstrual-tampons",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

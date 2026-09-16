@@ -803,6 +803,9 @@
       {"sel": ".hmtc-cite-panel-copy", "prop": "count", "want": 1}
     ],
     "/authors/karen-pendergrass": [
+      { "sel": "head script[data-researcher-profile]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-profile-links a[href='https://scholar.google.com/citations?user=xnzAh-wAAAAJ']", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-profile-links a[href='https://www.linkedin.com/in/karenpendergras/']", "prop": "count", "want": 1 },
       { "sel": ".hmtc-profile-portrait img[src='/static/authors/karen-pendergrass-red.png']", "prop": "count", "want": 1 },
       { "sel": "img[src='/static/authors/karen-pendergrass.webp']", "prop": "absent", "want": true },
       { "sel": ".hmtc-profile-portrait img", "prop": "width", "want": "236px" },

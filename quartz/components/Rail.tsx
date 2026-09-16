@@ -107,6 +107,8 @@ export default (() => {
     // absolute href resolves the same locally and in production.
     if (fm.type === "author-profile") return <section class="hmtc-profile-links" aria-label="Research profiles"><h2>Research profiles</h2>
       <a href={`https://orcid.org/${KAREN.orcid}`}>ORCID record ↗</a>
+      <a href={KAREN.profiles.scholar}>Karen Pendergrass on Google Scholar ↗</a>
+      <a href={KAREN.profiles.linkedin}>Karen Pendergrass on LinkedIn ↗</a>
       <a href={`https://www.wikibiome.com/researchers/${KAREN.orcid}`}>WikiBiome researcher profile ↗</a>
       <a href="#public-works">Selected public works</a>
       <a href="#heavy-metal-index-syntheses">Heavy Metal Index syntheses</a>

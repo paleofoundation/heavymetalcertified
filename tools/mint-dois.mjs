@@ -65,6 +65,8 @@ import fs from "node:fs"
 import path from "node:path"
 import crypto from "node:crypto"
 import matter from "gray-matter"
+import { buildCreators, buildResearcherCreator, creatorDigest } from "./lib/datacite-creators.mjs"
+import { publicationDate } from "./lib/publication-jsonld.mjs"
 import { evaluateClaimSurface, loadCompiledRecords, claimSurfaceFailReason } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
@@ -72,15 +74,9 @@ const CONTENT = path.join(REPO, "content")
 const DATA = path.join(REPO, "data/standards")
 const today = new Date().toISOString().slice(0, 10)
 const BASE_URL = "https://heavymetalcertified.com"
-const ORCID = "0000-0002-2348-7259" // K. Pendergrass
-const CREATOR = {
-  name: "Pendergrass, Karen",
-  nameType: "Personal",
-  givenName: "Karen",
-  familyName: "Pendergrass",
-  nameIdentifiers: [{ nameIdentifier: `https://orcid.org/${ORCID}`, nameIdentifierScheme: "ORCID", schemeUri: "https://orcid.org" }],
-  affiliation: [{ name: "Institute of Contaminant Standards" }],
-}
+const RESEARCHER = JSON.parse(fs.readFileSync(path.join(REPO, "data/researcher-identity.json"), "utf8"))
+const CREATOR = JSON.parse(fs.readFileSync(path.join(REPO, "data/datacite-creator.json"), "utf8"))
+if (creatorDigest(CREATOR) !== creatorDigest(buildResearcherCreator(RESEARCHER))) throw new Error("DataCite creator template is stale; run node tools/update-doi-creators.mjs --template")
 const PUBLISHER = "Institute of Contaminant Standards"
 const RIGHTS = [{
   rights: "Creative Commons Attribution 4.0 International",
@@ -140,13 +136,12 @@ const isTestPrefix = (doi) => TEST_PREFIXES.some((p) => String(doi).startsWith(p
 const TYPES = {
   standards: { dir: "standards", landing: "standards", rtGeneral: "Standard", rtText: "Certification Standard", suffix: "std", priority: 1 },
   manuals:   { dir: "manuals",    landing: "manuals",   rtGeneral: "Report",   rtText: "Program Manual",         suffix: "manual", priority: 2 },
-  articles:  { dir: "articles",   landing: "articles",  rtGeneral: "JournalArticle", rtText: null,               suffix: "article", priority: 3 },
+  articles:  { dir: "articles",   landing: "articles",  rtGeneral: "Report", rtText: "Research analysis",          suffix: "article", priority: 3 },
   briefings: { dir: "briefings",  landing: "briefings", rtGeneral: "Text",     rtText: "Briefing",               suffix: "brief", priority: 4 },
 }
 
 function valOf(a) { return a ? a.split("=").slice(1).join("=") : "" }
 function num(a) { const v = a ? Number(a.split("=")[1]) : NaN; return Number.isFinite(v) ? v : Infinity }
-function year(v) { const m = String(v ?? "").match(/\d{4}/); return m ? Number(m[0]) : null }
 function brandHit(...strings) {
   const hay = strings.filter(Boolean).join("  ").toLowerCase()
   for (const b of [...BRAND_DENYLIST, ...FIREWALL_VOCAB]) {
@@ -228,9 +223,11 @@ for (const [typeName, t] of Object.entries(TYPES)) {
       if (fm.scholar_eligible !== true) { skips.push([rel, "scholar_eligible!=true"]); continue }
     }
 
-    const pubYear = year(fm.effective_date || fm.date || fm.updated)
+    const published = ["published", "date", "briefing_date", "effective_date"].map((key) => publicationDate(fm[key])).find(Boolean)
+    const pubYear = published ? Number(published.slice(0, 4)) : null
     candidates.push({
       typeName, t, filePath, raw, slug,
+      creators: buildCreators(fm, RESEARCHER, { fallback: [CREATOR] }),
       title: fm.title || slug,
       version: fm.standard_version || null,
       pubYear, pubYearDefaulted: pubYear == null,
@@ -264,7 +261,7 @@ function buildPayload(c) {
 
   const attributes = {
     ...(DATACITE_PREFIX ? { doi: `${DATACITE_PREFIX}/${suffix}`, prefix: DATACITE_PREFIX, suffix } : {}),
-    creators: [CREATOR],
+    creators: c.creators,
     titles: [{ title: c.title }],
     publisher: PUBLISHER,
     ...(c.pubYear ? { publicationYear: c.pubYear } : {}),
@@ -283,7 +280,7 @@ function buildPayload(c) {
 function missingFields(c) {
   const gaps = []
   if (!c.title) gaps.push("title")
-  if (c.pubYearDefaulted) gaps.push("publicationYear (no effective_date/date/updated)")
+  if (c.pubYearDefaulted) gaps.push("publicationYear (no valid published/date/briefing_date/effective_date)")
   if (!c.t.rtGeneral) gaps.push("resourceTypeGeneral")
   const brand = brandHit(c.title, c.description, c.slug)
   if (brand) gaps.push(`BRAND/FIREWALL hit: "${brand}"`)

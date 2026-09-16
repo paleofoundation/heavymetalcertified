@@ -1,0 +1,300 @@
+{
+  "format": "datacite-creators-v1",
+  "createdAt": "2026-09-16T05:31:11.130Z",
+  "api": "https://api.datacite.org",
+  "clientId": "vaju.hdawai",
+  "identityDigest": "d41743632db3f648a88a0b0aadc868f4340ed4813a07ee26b3211f97dd8d8dc1",
+  "scope": "Existing owned DOI records named in local frontmatter, cross-checked with public client inventory. Creator metadata only; no edition or content revision implied. Private/unlisted drafts require a separate authorized inventory.",
+  "entries": [
+    {
+      "doi": "10.83138/hmtc.std.1.infant-formula-powder",
+      "clientId": "vaju.hdawai",
+      "metadata": {
+        "titles": [
+          {
+            "title": "Infant formula (powder): HMTc Standard"
+          }
+        ],
+        "publicationYear": 2026,
+        "version": "3.1",
+        "url": "https://heavymetalcertified.com/standards/infant-formula-powder",
+        "state": "findable",
+        "registered": "2026-09-12T17:49:05.000Z",
+        "updated": "2026-09-12T17:49:05.000Z"
+      },
+      "beforeDigest": "ab9e11261557d8311eea3d365ea472afd26508d3712fcc62f58cc193764763ab",
+      "afterDigest": "ef3c428897d5ec72ac6934fd38fc31e50fa368080f733ebc134b2e9876d541a1",
+      "beforeCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "afterCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            {
+              "name": "Institute of Contaminant Standards"
+            },
+            {
+              "name": "The Paleo Foundation"
+            }
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "status": "update",
+      "pages": [
+        {
+          "page": "content/standards/infant-formula-powder.md",
+          "field": "cert_doi"
+        }
+      ],
+      "snapshot": "reports/datacite/public-records/10.83138_hmtc.std.1.infant-formula-powder.json"
+    },
+    {
+      "doi": "10.83138/hmtc.std.15.menstrual-tampons",
+      "clientId": "vaju.hdawai",
+      "metadata": {
+        "titles": [
+          {
+            "title": "Menstrual tampons: HMTc Standard"
+          }
+        ],
+        "publicationYear": 2026,
+        "version": "1.0",
+        "url": "https://heavymetalcertified.com/standards/menstrual-tampons",
+        "state": "findable",
+        "registered": "2026-09-12T17:49:03.000Z",
+        "updated": "2026-09-12T17:49:03.000Z"
+      },
+      "beforeDigest": "ab9e11261557d8311eea3d365ea472afd26508d3712fcc62f58cc193764763ab",
+      "afterDigest": "ef3c428897d5ec72ac6934fd38fc31e50fa368080f733ebc134b2e9876d541a1",
+      "beforeCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "afterCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            {
+              "name": "Institute of Contaminant Standards"
+            },
+            {
+              "name": "The Paleo Foundation"
+            }
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "status": "update",
+      "pages": [
+        {
+          "page": "content/standards/menstrual-tampons.md",
+          "field": "cert_doi"
+        }
+      ],
+      "snapshot": "reports/datacite/public-records/10.83138_hmtc.std.15.menstrual-tampons.json"
+    },
+    {
+      "doi": "10.83138/hmtc.std.1.non-root-vegetable-purees",
+      "clientId": "vaju.hdawai",
+      "metadata": {
+        "titles": [
+          {
+            "title": "Non-root vegetable purées: HMTc Standard"
+          }
+        ],
+        "publicationYear": 2026,
+        "version": "1.0",
+        "url": "https://heavymetalcertified.com/standards/non-root-vegetable-purees",
+        "state": "findable",
+        "registered": "2026-09-12T17:49:06.000Z",
+        "updated": "2026-09-12T17:49:06.000Z"
+      },
+      "beforeDigest": "ab9e11261557d8311eea3d365ea472afd26508d3712fcc62f58cc193764763ab",
+      "afterDigest": "ef3c428897d5ec72ac6934fd38fc31e50fa368080f733ebc134b2e9876d541a1",
+      "beforeCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "afterCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            {
+              "name": "Institute of Contaminant Standards"
+            },
+            {
+              "name": "The Paleo Foundation"
+            }
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "status": "update",
+      "pages": [
+        {
+          "page": "content/standards/non-root-vegetable-purees.md",
+          "field": "cert_doi"
+        }
+      ],
+      "snapshot": "reports/datacite/public-records/10.83138_hmtc.std.1.non-root-vegetable-purees.json"
+    },
+    {
+      "doi": "10.83138/hmtc.std.30.olive-oil",
+      "clientId": "vaju.hdawai",
+      "metadata": {
+        "titles": [
+          {
+            "title": "Olive oil (virgin, refined, pomace) — HMTc Standard"
+          }
+        ],
+        "publicationYear": 2026,
+        "version": "1.0",
+        "url": "https://heavymetalcertified.com/standards/olive-oil",
+        "state": "findable",
+        "registered": "2026-09-12T13:27:41.000Z",
+        "updated": "2026-09-12T13:27:41.000Z"
+      },
+      "beforeDigest": "ab9e11261557d8311eea3d365ea472afd26508d3712fcc62f58cc193764763ab",
+      "afterDigest": "ef3c428897d5ec72ac6934fd38fc31e50fa368080f733ebc134b2e9876d541a1",
+      "beforeCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "afterCreators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            {
+              "name": "Institute of Contaminant Standards"
+            },
+            {
+              "name": "The Paleo Foundation"
+            }
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "status": "update",
+      "pages": [
+        {
+          "page": "content/standards/olive-oil.md",
+          "field": "cert_doi"
+        }
+      ],
+      "snapshot": "reports/datacite/public-records/10.83138_hmtc.std.30.olive-oil.json"
+    }
+  ],
+  "held": [
+    {
+      "doi": "10.5281/zenodo.20771543",
+      "pages": [
+        {
+          "page": "content/manuals/infant-and-child-foods.md",
+          "field": "cert_doi"
+        }
+      ],
+      "reason": "External/legacy repository DOI; do not update through this account"
+    }
+  ],
+  "publicInventory": {
+    "queriedAt": "2026-09-16T05:31:12.416Z",
+    "total": 4,
+    "snapshot": "reports/datacite/hmtc-creator-update-plan.public-client-inventory.json",
+    "unmapped": []
+  }
+}

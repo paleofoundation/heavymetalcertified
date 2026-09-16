@@ -1,0 +1,141 @@
+{
+  "data": {
+    "id": "10.83138/hmtc.std.30.olive-oil",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.83138/hmtc.std.30.olive-oil",
+      "prefix": "10.83138",
+      "suffix": "hmtc.std.30.olive-oil",
+      "identifiers": [],
+      "alternateIdentifiers": [],
+      "creators": [
+        {
+          "name": "Pendergrass, Karen",
+          "nameType": "Personal",
+          "givenName": "Karen",
+          "familyName": "Pendergrass",
+          "affiliation": [
+            "Institute of Contaminant Standards"
+          ],
+          "nameIdentifiers": [
+            {
+              "schemeUri": "https://orcid.org",
+              "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+              "nameIdentifierScheme": "ORCID"
+            }
+          ]
+        }
+      ],
+      "titles": [
+        {
+          "title": "Olive oil (virgin, refined, pomace) — HMTc Standard"
+        }
+      ],
+      "publisher": "Institute of Contaminant Standards",
+      "container": {},
+      "publicationYear": 2026,
+      "subjects": [],
+      "contributors": [],
+      "dates": [],
+      "language": null,
+      "types": {
+        "ris": "GEN",
+        "bibtex": "misc",
+        "citeproc": "article",
+        "schemaOrg": "CreativeWork",
+        "resourceType": "Certification Standard",
+        "resourceTypeGeneral": "Standard"
+      },
+      "relatedIdentifiers": [
+        {
+          "relationType": "References",
+          "relatedIdentifier": "https://heavymetalindex.com/products/olive-oil",
+          "relatedIdentifierType": "URL"
+        }
+      ],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [],
+      "version": "1.0",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "The Heavy Metal Tested & Certified standard for Olive oil (virgin, refined, pomace) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuODMxMzgvSE1UQy5TVEQuMzAuT0xJVkUtT0lMPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5QZW5kZXJncmFzcywgS2FyZW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkthcmVuPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlBlbmRlcmdyYXNzPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Ik9SQ0lEIiBzY2hlbWVVUkk9Imh0dHBzOi8vb3JjaWQub3JnIj5odHRwczovL29yY2lkLm9yZy8wMDAwLTAwMDItMjM0OC03MjU5PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPGFmZmlsaWF0aW9uPkluc3RpdHV0ZSBvZiBDb250YW1pbmFudCBTdGFuZGFyZHM8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5PbGl2ZSBvaWwgKHZpcmdpbiwgcmVmaW5lZCwgcG9tYWNlKSDigJQgSE1UYyBTdGFuZGFyZDwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5JbnN0aXR1dGUgb2YgQ29udGFtaW5hbnQgU3RhbmRhcmRzPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJTdGFuZGFyZCI+Q2VydGlmaWNhdGlvbiBTdGFuZGFyZDwvcmVzb3VyY2VUeXBlPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJVUkwiIHJlbGF0aW9uVHlwZT0iUmVmZXJlbmNlcyI+aHR0cHM6Ly9oZWF2eW1ldGFsaW5kZXguY29tL3Byb2R1Y3RzL29saXZlLW9pbDwvcmVsYXRlZElkZW50aWZpZXI+CiAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24+MS4wPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvbGVnYWxjb2RlIiByaWdodHNJZGVudGlmaWVyPSJjYy1ieS00LjAiIHJpZ2h0c0lkZW50aWZpZXJTY2hlbWU9IlNQRFgiIHNjaGVtZVVSST0iaHR0cHM6Ly9zcGR4Lm9yZy9saWNlbnNlcy8iPkNyZWF0aXZlIENvbW1vbnMgQXR0cmlidXRpb24gNC4wIEludGVybmF0aW9uYWw8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgSGVhdnkgTWV0YWwgVGVzdGVkICZhbXA7IENlcnRpZmllZCBzdGFuZGFyZCBmb3IgT2xpdmUgb2lsICh2aXJnaW4sIHJlZmluZWQsIHBvbWFjZSkgKEN1bGluYXJ5IE9pbHMgYW5kIEZhdHMpLCBzdGF0ZWQgYXMgc29sZC4gRWFjaCBhbmFseXRlIGNhcnJpZXMgdGhlIHN0cmljdGVzdCBhcHBsaWNhYmxlIGdvdmVybm1lbnQgbWF4aW11bSBsZXZlbCBpbiB0aGUgcHJvZHVjdCdzIG5hdGl2ZSBiYXNpcywgd2l0aCBhIGRpc2Nsb3NlZCByZWFkLWFjcm9zcyBvciBhIG1hbmRhdG9yeSBjb250cm9sIHdoZXJlIG5vIGdvdmVybm1lbnQgcmVndWxhdGVzIHRoZSBleGFjdCBwcm9kdWN0LjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg==",
+      "url": "https://heavymetalcertified.com/standards/olive-oil",
+      "contentUrl": null,
+      "metadataVersion": 0,
+      "schemaVersion": null,
+      "source": "api",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 0,
+      "viewsOverTime": [],
+      "downloadCount": 0,
+      "downloadsOverTime": [],
+      "referenceCount": 0,
+      "citationCount": 0,
+      "citationsOverTime": [],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2026-09-12T13:27:40.000Z",
+      "registered": "2026-09-12T13:27:41.000Z",
+      "published": "2026",
+      "updated": "2026-09-12T13:27:41.000Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "vaju.hdawai",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "vaju",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.83138/hmtc.std.30.olive-oil",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": []
+      },
+      "citations": {
+        "data": []
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

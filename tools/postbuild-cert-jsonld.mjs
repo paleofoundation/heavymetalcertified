@@ -2,12 +2,8 @@
 // postbuild-cert-jsonld.mjs — inject the cross-site Organization graph into the
 // cert homepage (plan 6.B / Step 7).
 //
-// The cert program declares parentOrganization: ICS — the REVERSE edge of the
-// parent's subOrganization declaration. With one stable @id per entity referenced
-// from both sites, Google fuses them into one cluster and reads "the program
-// (child) and the body behind it (parent)" — structurally child-#1 / parent-#2 on
-// the transactional term. The cert site uses its OWN @id (heavymetalcertified.com
-// /#organization) — the same @id the parent points its subOrganization edge at.
+// Shared stable IDs express the author/operator relationships. These statements
+// do not guarantee indexing, Knowledge Graph inclusion, or ranking outcomes.
 
 import fs from "node:fs"
 import path from "node:path"
@@ -20,6 +16,11 @@ import {
   CERT_WEBSITE_ID,
   ICS_ORGANIZATION,
   KAREN_PERSON,
+  KAREN_PERSON_ID,
+  PALEO_ORGANIZATION,
+  HMI_BASE,
+  HMI_WEBSITE_ID,
+  ICS_ORGANIZATION_ID,
 } from "./lib/entity-graph.mjs"
 
 const PUBLIC = path.join(process.cwd(), "public")
@@ -30,6 +31,16 @@ const orgGraph = {
     ICS_ORGANIZATION,
     CERT_ORGANIZATION,
     KAREN_PERSON,
+    PALEO_ORGANIZATION,
+    {
+      "@type": "WebSite",
+      "@id": HMI_WEBSITE_ID,
+      name: "Heavy Metal Index",
+      url: HMI_BASE,
+      description: "A public evidence system for heavy metal occurrence, exposure pathways, and regulatory sources.",
+      creator: { "@id": KAREN_PERSON_ID },
+      publisher: { "@id": ICS_ORGANIZATION_ID },
+    },
     // WebSite node names the entity + head terms for the search/AI graph and lets
     // Google treat the domain as one site rather than a bag of pages.
     {
@@ -66,14 +77,16 @@ if (!fs.existsSync(homepage)) {
 }
 
 let html = fs.readFileSync(homepage, "utf8")
-const tag = `<script type="application/ld+json">${JSON.stringify(orgGraph)}</script>`
-
-if (html.includes(CERT_WEBSITE_ID)) {
-  console.log("postbuild-cert-jsonld: homepage graph already present; skipping.")
-} else {
-  html = html.replace("</head>", `${tag}</head>`)
-  fs.writeFileSync(homepage, html, "utf8")
-  console.log(
-    "postbuild-cert-jsonld: injected Organization + WebSite + Service graph into homepage.",
-  )
-}
+const tag = `<script type="application/ld+json" data-cert-entity-graph>${JSON.stringify(orgGraph).replace(/</g, "\\u003c")}</script>`
+// Refresh the owned graph, including legacy unmarked output. Preserve unrelated
+// JSON-LD blocks and make reruns update changed identity data without duplication.
+html = html.replace(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, (block, json) => {
+  try {
+    const graph = JSON.parse(json)
+    return graph["@graph"]?.some(node => node["@id"] === CERT_WEBSITE_ID) ? "" : block
+  } catch { return block }
+})
+if (!html.includes("</head>")) throw new Error("Homepage has no head for entity metadata")
+html = html.replace("</head>", `${tag}</head>`)
+fs.writeFileSync(homepage, html, "utf8")
+console.log("postbuild-cert-jsonld: refreshed author, organization and website graph.")

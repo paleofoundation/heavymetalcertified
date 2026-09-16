@@ -9,45 +9,30 @@
 // with the homepage Organization graph (postbuild-cert-jsonld.mjs) rather than
 // minting a second, disconnected publisher entity.
 //
-// Source of truth is the article spec (data/articles/synthesis/<slug>.json), the
-// same file build-cert-articles.mjs renders from — so the visible page and the
-// structured data never diverge. The hand-authored chocolate article has no spec;
+// Specs supply article relationships; actual page frontmatter supplies authors
+// and publication dates. The hand-authored chocolate article has no spec;
 // it is skipped (it can carry its own JSON-LD later if wanted).
 
 import fs from "node:fs"
 import path from "node:path"
-import { CERT_BASE, CERT_ORGANIZATION_ID, personEntity } from "./lib/entity-graph.mjs"
+import matter from "gray-matter"
+import { CERT_BASE, CERT_ORGANIZATION_ID } from "./lib/entity-graph.mjs"
+import { publicationMetadata, replacePublicationGraphs } from "./lib/publication-jsonld.mjs"
 
 const repoRoot = process.cwd()
 const SPEC_DIRS = [path.join(repoRoot, "data/articles/synthesis"), path.join(repoRoot, "data/articles/regulatory-watch")]
 const PUBLIC = path.join(repoRoot, "public/articles")
+const CONTENT = path.join(repoRoot, "content/articles")
 
 if (!SPEC_DIRS.some((dir) => fs.existsSync(dir))) {
   console.log("postbuild-article-jsonld: no spec dir; skipping.")
   process.exit(0)
 }
 
-// "August 2026" -> "2026-08-01"; passes ISO through. Best-effort; a schema date
-// only needs to be a valid ISO 8601 date.
-const MONTHS = {
-  january: "01", february: "02", march: "03", april: "04", may: "05", june: "06",
-  july: "07", august: "08", september: "09", october: "10", november: "11", december: "12",
-}
-function isoDate(s) {
-  if (!s) return undefined
-  const t = String(s).trim()
-  if (/^\d{4}-\d{2}-\d{2}$/.test(t)) return t
-  const m = t.match(/^([A-Za-z]+)\s+(\d{4})$/)
-  if (m && MONTHS[m[1].toLowerCase()]) return `${m[2]}-${MONTHS[m[1].toLowerCase()]}-01`
-  const y = t.match(/^\d{4}$/)
-  return y ? `${t}-01-01` : undefined
-}
 const strip = (s) => String(s || "").replace(/<[^>]+>/g, "").replace(/[_*]([^_*\n]+)[_*]/g, "$1").replace(/\s+/g, " ").trim()
 
-function articleGraph(spec) {
+function articleGraph(spec, frontmatter) {
   const url = `${CERT_BASE}/articles/${spec.slug}`
-  const date = isoDate(spec.published || spec.date)
-  const modified = isoDate(spec.modified || spec.date)
   const g = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -58,7 +43,7 @@ function articleGraph(spec) {
     inLanguage: "en",
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    author: personEntity(),
+    ...publicationMetadata(frontmatter),
     publisher: {
       "@type": "Organization",
       "@id": CERT_ORGANIZATION_ID,
@@ -67,8 +52,6 @@ function articleGraph(spec) {
     license: "https://creativecommons.org/licenses/by/4.0/",
     isAccessibleForFree: true,
   }
-  if (date) g.datePublished = date
-  if (modified) g.dateModified = modified
   if (Array.isArray(spec.keywords) && spec.keywords.length) g.keywords = spec.keywords.join(", ")
   // The one-way provenance edge: this analysis is based on the independent Index
   // synthesis finding. isBasedOn is the schema.org way to say so.
@@ -120,16 +103,11 @@ for (const dir of SPEC_DIRS) {
     missing++
     continue
   }
-  let html = fs.readFileSync(htmlPath, "utf8")
-  if (html.includes(`${CERT_BASE}/articles/${spec.slug}#article`)) {
-    // already injected (idempotent re-run)
-    continue
-  }
-  const graphs = [articleGraph(spec), faqGraph(spec), breadcrumbGraph(spec)].filter(Boolean)
-  const tag = graphs
-    .map((g) => `<script type="application/ld+json">${JSON.stringify(g)}</script>`)
-    .join("")
-  html = html.replace("</head>", `${tag}</head>`)
+  const frontmatter = matter(fs.readFileSync(path.join(CONTENT, `${spec.slug}.md`), "utf8")).data
+  const graphs = [articleGraph(spec, frontmatter), faqGraph(spec), breadcrumbGraph(spec)]
+  const url = `${CERT_BASE}/articles/${spec.slug}`
+  const html = replacePublicationGraphs(fs.readFileSync(htmlPath, "utf8"), graphs,
+    [`${url}#article`, `${url}#faq`, `${url}#breadcrumbs`])
   fs.writeFileSync(htmlPath, html, "utf8")
   injected++
  }

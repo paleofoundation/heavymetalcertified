@@ -1,0 +1,828 @@
+{
+  "queriedAt": "2026-09-16T05:31:12.416Z",
+  "clientId": "vaju.hdawai",
+  "total": 4,
+  "pages": [
+    {
+      "url": "https://api.datacite.org/dois?client-id=vaju.hdawai&page%5Bsize%5D=1000",
+      "response": {
+        "data": [
+          {
+            "id": "10.83138/hmtc.std.1.non-root-vegetable-purees",
+            "type": "dois",
+            "attributes": {
+              "doi": "10.83138/hmtc.std.1.non-root-vegetable-purees",
+              "identifiers": [],
+              "creators": [
+                {
+                  "nameType": "Personal",
+                  "affiliation": [
+                    "Institute of Contaminant Standards"
+                  ],
+                  "givenName": "Karen",
+                  "familyName": "Pendergrass",
+                  "name": "Pendergrass, Karen",
+                  "nameIdentifiers": [
+                    {
+                      "nameIdentifierScheme": "ORCID",
+                      "schemeUri": "https://orcid.org",
+                      "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+                    }
+                  ]
+                }
+              ],
+              "titles": [
+                {
+                  "title": "Non-root vegetable purées: HMTc Standard"
+                }
+              ],
+              "publisher": "Institute of Contaminant Standards",
+              "container": {},
+              "publicationYear": 2026,
+              "subjects": [],
+              "contributors": [],
+              "dates": [],
+              "language": null,
+              "types": {
+                "schemaOrg": "CreativeWork",
+                "resourceTypeGeneral": "Standard",
+                "citeproc": "article",
+                "bibtex": "misc",
+                "ris": "GEN",
+                "resourceType": "Certification Standard"
+              },
+              "relatedIdentifiers": [
+                {
+                  "relationType": "References",
+                  "relatedIdentifier": "https://heavymetalindex.com/products/non-root-vegetable-purees",
+                  "relatedIdentifierType": "URL"
+                }
+              ],
+              "relatedItems": [],
+              "sizes": [],
+              "formats": [],
+              "version": "1.0",
+              "rightsList": [
+                {
+                  "rightsIdentifierScheme": "SPDX",
+                  "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "schemeUri": "https://spdx.org/licenses/",
+                  "rights": "Creative Commons Attribution 4.0 International",
+                  "rightsIdentifier": "cc-by-4.0"
+                }
+              ],
+              "descriptions": [
+                {
+                  "descriptionType": "Abstract",
+                  "description": "The Heavy Metal Tested & Certified standard for non-root vegetable purées for infants and young children, stated as-consumed. Every limit is the strictest maximum level any credible government sets, converted to the as-consumed basis, with read-across where no government regulates the exact product."
+                }
+              ],
+              "geoLocations": [],
+              "fundingReferences": [],
+              "url": "https://heavymetalcertified.com/standards/non-root-vegetable-purees",
+              "contentUrl": null,
+              "metadataVersion": 0,
+              "schemaVersion": null,
+              "source": "api",
+              "isActive": true,
+              "state": "findable",
+              "reason": null,
+              "viewCount": 0,
+              "downloadCount": 0,
+              "referenceCount": 0,
+              "citationCount": 0,
+              "partCount": 0,
+              "partOfCount": 0,
+              "versionCount": 0,
+              "versionOfCount": 0,
+              "created": "2026-09-12T17:49:06Z",
+              "registered": "2026-09-12T17:49:06Z",
+              "published": null,
+              "updated": "2026-09-12T17:49:06Z"
+            },
+            "relationships": {
+              "client": {
+                "data": {
+                  "id": "vaju.hdawai",
+                  "type": "clients"
+                }
+              }
+            }
+          },
+          {
+            "id": "10.83138/hmtc.std.1.infant-formula-powder",
+            "type": "dois",
+            "attributes": {
+              "doi": "10.83138/hmtc.std.1.infant-formula-powder",
+              "identifiers": [],
+              "creators": [
+                {
+                  "nameType": "Personal",
+                  "affiliation": [
+                    "Institute of Contaminant Standards"
+                  ],
+                  "givenName": "Karen",
+                  "familyName": "Pendergrass",
+                  "name": "Pendergrass, Karen",
+                  "nameIdentifiers": [
+                    {
+                      "nameIdentifierScheme": "ORCID",
+                      "schemeUri": "https://orcid.org",
+                      "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+                    }
+                  ]
+                }
+              ],
+              "titles": [
+                {
+                  "title": "Infant formula (powder): HMTc Standard"
+                }
+              ],
+              "publisher": "Institute of Contaminant Standards",
+              "container": {},
+              "publicationYear": 2026,
+              "subjects": [],
+              "contributors": [],
+              "dates": [],
+              "language": null,
+              "types": {
+                "schemaOrg": "CreativeWork",
+                "resourceTypeGeneral": "Standard",
+                "citeproc": "article",
+                "bibtex": "misc",
+                "ris": "GEN",
+                "resourceType": "Certification Standard"
+              },
+              "relatedIdentifiers": [
+                {
+                  "relationType": "References",
+                  "relatedIdentifier": "https://heavymetalindex.com/products/infant-formula-powder",
+                  "relatedIdentifierType": "URL"
+                }
+              ],
+              "relatedItems": [],
+              "sizes": [],
+              "formats": [],
+              "version": "3.1",
+              "rightsList": [
+                {
+                  "rightsIdentifierScheme": "SPDX",
+                  "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "schemeUri": "https://spdx.org/licenses/",
+                  "rights": "Creative Commons Attribution 4.0 International",
+                  "rightsIdentifier": "cc-by-4.0"
+                }
+              ],
+              "descriptions": [
+                {
+                  "descriptionType": "Abstract",
+                  "description": "The Heavy Metal Tested & Certified standard for infant formula in powder form, stated as-sold. Every limit is the strictest maximum level any credible government sets, converted to the as-sold basis; where no government regulates the exact product, the limit is read across from the nearest government value."
+                }
+              ],
+              "geoLocations": [],
+              "fundingReferences": [],
+              "url": "https://heavymetalcertified.com/standards/infant-formula-powder",
+              "contentUrl": null,
+              "metadataVersion": 0,
+              "schemaVersion": null,
+              "source": "api",
+              "isActive": true,
+              "state": "findable",
+              "reason": null,
+              "viewCount": 0,
+              "downloadCount": 0,
+              "referenceCount": 0,
+              "citationCount": 0,
+              "partCount": 0,
+              "partOfCount": 0,
+              "versionCount": 0,
+              "versionOfCount": 0,
+              "created": "2026-09-12T17:49:04Z",
+              "registered": "2026-09-12T17:49:05Z",
+              "published": null,
+              "updated": "2026-09-12T17:49:05Z"
+            },
+            "relationships": {
+              "client": {
+                "data": {
+                  "id": "vaju.hdawai",
+                  "type": "clients"
+                }
+              }
+            }
+          },
+          {
+            "id": "10.83138/hmtc.std.15.menstrual-tampons",
+            "type": "dois",
+            "attributes": {
+              "doi": "10.83138/hmtc.std.15.menstrual-tampons",
+              "identifiers": [],
+              "creators": [
+                {
+                  "nameType": "Personal",
+                  "affiliation": [
+                    "Institute of Contaminant Standards"
+                  ],
+                  "givenName": "Karen",
+                  "familyName": "Pendergrass",
+                  "name": "Pendergrass, Karen",
+                  "nameIdentifiers": [
+                    {
+                      "nameIdentifierScheme": "ORCID",
+                      "schemeUri": "https://orcid.org",
+                      "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+                    }
+                  ]
+                }
+              ],
+              "titles": [
+                {
+                  "title": "Menstrual tampons: HMTc Standard"
+                }
+              ],
+              "publisher": "Institute of Contaminant Standards",
+              "container": {},
+              "publicationYear": 2026,
+              "subjects": [],
+              "contributors": [],
+              "dates": [],
+              "language": null,
+              "types": {
+                "schemaOrg": "CreativeWork",
+                "resourceTypeGeneral": "Standard",
+                "citeproc": "article",
+                "bibtex": "misc",
+                "ris": "GEN",
+                "resourceType": "Certification Standard"
+              },
+              "relatedIdentifiers": [],
+              "relatedItems": [],
+              "sizes": [],
+              "formats": [],
+              "version": "1.0",
+              "rightsList": [
+                {
+                  "rightsIdentifierScheme": "SPDX",
+                  "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "schemeUri": "https://spdx.org/licenses/",
+                  "rights": "Creative Commons Attribution 4.0 International",
+                  "rightsIdentifier": "cc-by-4.0"
+                }
+              ],
+              "descriptions": [
+                {
+                  "descriptionType": "Abstract",
+                  "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual tampons (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis; the applicator is tested as a distinct component). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination."
+                }
+              ],
+              "geoLocations": [],
+              "fundingReferences": [],
+              "url": "https://heavymetalcertified.com/standards/menstrual-tampons",
+              "contentUrl": null,
+              "metadataVersion": 0,
+              "schemaVersion": null,
+              "source": "api",
+              "isActive": true,
+              "state": "findable",
+              "reason": null,
+              "viewCount": 0,
+              "downloadCount": 0,
+              "referenceCount": 0,
+              "citationCount": 0,
+              "partCount": 0,
+              "partOfCount": 0,
+              "versionCount": 0,
+              "versionOfCount": 0,
+              "created": "2026-09-12T17:49:03Z",
+              "registered": "2026-09-12T17:49:03Z",
+              "published": null,
+              "updated": "2026-09-12T17:49:03Z"
+            },
+            "relationships": {
+              "client": {
+                "data": {
+                  "id": "vaju.hdawai",
+                  "type": "clients"
+                }
+              }
+            }
+          },
+          {
+            "id": "10.83138/hmtc.std.30.olive-oil",
+            "type": "dois",
+            "attributes": {
+              "doi": "10.83138/hmtc.std.30.olive-oil",
+              "identifiers": [],
+              "creators": [
+                {
+                  "nameType": "Personal",
+                  "affiliation": [
+                    "Institute of Contaminant Standards"
+                  ],
+                  "givenName": "Karen",
+                  "familyName": "Pendergrass",
+                  "name": "Pendergrass, Karen",
+                  "nameIdentifiers": [
+                    {
+                      "nameIdentifierScheme": "ORCID",
+                      "schemeUri": "https://orcid.org",
+                      "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+                    }
+                  ]
+                }
+              ],
+              "titles": [
+                {
+                  "title": "Olive oil (virgin, refined, pomace) — HMTc Standard"
+                }
+              ],
+              "publisher": "Institute of Contaminant Standards",
+              "container": {},
+              "publicationYear": 2026,
+              "subjects": [],
+              "contributors": [],
+              "dates": [],
+              "language": null,
+              "types": {
+                "schemaOrg": "CreativeWork",
+                "resourceTypeGeneral": "Standard",
+                "citeproc": "article",
+                "bibtex": "misc",
+                "ris": "GEN",
+                "resourceType": "Certification Standard"
+              },
+              "relatedIdentifiers": [
+                {
+                  "relationType": "References",
+                  "relatedIdentifier": "https://heavymetalindex.com/products/olive-oil",
+                  "relatedIdentifierType": "URL"
+                }
+              ],
+              "relatedItems": [],
+              "sizes": [],
+              "formats": [],
+              "version": "1.0",
+              "rightsList": [
+                {
+                  "rightsIdentifierScheme": "SPDX",
+                  "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                  "schemeUri": "https://spdx.org/licenses/",
+                  "rights": "Creative Commons Attribution 4.0 International",
+                  "rightsIdentifier": "cc-by-4.0"
+                }
+              ],
+              "descriptions": [
+                {
+                  "descriptionType": "Abstract",
+                  "description": "The Heavy Metal Tested & Certified standard for Olive oil (virgin, refined, pomace) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product."
+                }
+              ],
+              "geoLocations": [],
+              "fundingReferences": [],
+              "url": "https://heavymetalcertified.com/standards/olive-oil",
+              "contentUrl": null,
+              "metadataVersion": 0,
+              "schemaVersion": null,
+              "source": "api",
+              "isActive": true,
+              "state": "findable",
+              "reason": null,
+              "viewCount": 0,
+              "downloadCount": 0,
+              "referenceCount": 0,
+              "citationCount": 0,
+              "partCount": 0,
+              "partOfCount": 0,
+              "versionCount": 0,
+              "versionOfCount": 0,
+              "created": "2026-09-12T13:27:40Z",
+              "registered": "2026-09-12T13:27:41Z",
+              "published": null,
+              "updated": "2026-09-12T13:27:41Z"
+            },
+            "relationships": {
+              "client": {
+                "data": {
+                  "id": "vaju.hdawai",
+                  "type": "clients"
+                }
+              }
+            }
+          }
+        ],
+        "meta": {
+          "total": 4,
+          "totalPages": 1,
+          "page": 1
+        },
+        "links": {
+          "self": "https://api.datacite.org/dois?client-id=vaju.hdawai&page%5Bsize%5D=1000"
+        }
+      }
+    }
+  ],
+  "records": [
+    {
+      "id": "10.83138/hmtc.std.1.non-root-vegetable-purees",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.83138/hmtc.std.1.non-root-vegetable-purees",
+        "identifiers": [],
+        "creators": [
+          {
+            "nameType": "Personal",
+            "affiliation": [
+              "Institute of Contaminant Standards"
+            ],
+            "givenName": "Karen",
+            "familyName": "Pendergrass",
+            "name": "Pendergrass, Karen",
+            "nameIdentifiers": [
+              {
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+              }
+            ]
+          }
+        ],
+        "titles": [
+          {
+            "title": "Non-root vegetable purées: HMTc Standard"
+          }
+        ],
+        "publisher": "Institute of Contaminant Standards",
+        "container": {},
+        "publicationYear": 2026,
+        "subjects": [],
+        "contributors": [],
+        "dates": [],
+        "language": null,
+        "types": {
+          "schemaOrg": "CreativeWork",
+          "resourceTypeGeneral": "Standard",
+          "citeproc": "article",
+          "bibtex": "misc",
+          "ris": "GEN",
+          "resourceType": "Certification Standard"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "References",
+            "relatedIdentifier": "https://heavymetalindex.com/products/non-root-vegetable-purees",
+            "relatedIdentifierType": "URL"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": "1.0",
+        "rightsList": [
+          {
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0"
+          }
+        ],
+        "descriptions": [
+          {
+            "descriptionType": "Abstract",
+            "description": "The Heavy Metal Tested & Certified standard for non-root vegetable purées for infants and young children, stated as-consumed. Every limit is the strictest maximum level any credible government sets, converted to the as-consumed basis, with read-across where no government regulates the exact product."
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "url": "https://heavymetalcertified.com/standards/non-root-vegetable-purees",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": null,
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "downloadCount": 0,
+        "referenceCount": 0,
+        "citationCount": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2026-09-12T17:49:06Z",
+        "registered": "2026-09-12T17:49:06Z",
+        "published": null,
+        "updated": "2026-09-12T17:49:06Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "vaju.hdawai",
+            "type": "clients"
+          }
+        }
+      }
+    },
+    {
+      "id": "10.83138/hmtc.std.1.infant-formula-powder",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.83138/hmtc.std.1.infant-formula-powder",
+        "identifiers": [],
+        "creators": [
+          {
+            "nameType": "Personal",
+            "affiliation": [
+              "Institute of Contaminant Standards"
+            ],
+            "givenName": "Karen",
+            "familyName": "Pendergrass",
+            "name": "Pendergrass, Karen",
+            "nameIdentifiers": [
+              {
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+              }
+            ]
+          }
+        ],
+        "titles": [
+          {
+            "title": "Infant formula (powder): HMTc Standard"
+          }
+        ],
+        "publisher": "Institute of Contaminant Standards",
+        "container": {},
+        "publicationYear": 2026,
+        "subjects": [],
+        "contributors": [],
+        "dates": [],
+        "language": null,
+        "types": {
+          "schemaOrg": "CreativeWork",
+          "resourceTypeGeneral": "Standard",
+          "citeproc": "article",
+          "bibtex": "misc",
+          "ris": "GEN",
+          "resourceType": "Certification Standard"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "References",
+            "relatedIdentifier": "https://heavymetalindex.com/products/infant-formula-powder",
+            "relatedIdentifierType": "URL"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": "3.1",
+        "rightsList": [
+          {
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0"
+          }
+        ],
+        "descriptions": [
+          {
+            "descriptionType": "Abstract",
+            "description": "The Heavy Metal Tested & Certified standard for infant formula in powder form, stated as-sold. Every limit is the strictest maximum level any credible government sets, converted to the as-sold basis; where no government regulates the exact product, the limit is read across from the nearest government value."
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "url": "https://heavymetalcertified.com/standards/infant-formula-powder",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": null,
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "downloadCount": 0,
+        "referenceCount": 0,
+        "citationCount": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2026-09-12T17:49:04Z",
+        "registered": "2026-09-12T17:49:05Z",
+        "published": null,
+        "updated": "2026-09-12T17:49:05Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "vaju.hdawai",
+            "type": "clients"
+          }
+        }
+      }
+    },
+    {
+      "id": "10.83138/hmtc.std.15.menstrual-tampons",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.83138/hmtc.std.15.menstrual-tampons",
+        "identifiers": [],
+        "creators": [
+          {
+            "nameType": "Personal",
+            "affiliation": [
+              "Institute of Contaminant Standards"
+            ],
+            "givenName": "Karen",
+            "familyName": "Pendergrass",
+            "name": "Pendergrass, Karen",
+            "nameIdentifiers": [
+              {
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+              }
+            ]
+          }
+        ],
+        "titles": [
+          {
+            "title": "Menstrual tampons: HMTc Standard"
+          }
+        ],
+        "publisher": "Institute of Contaminant Standards",
+        "container": {},
+        "publicationYear": 2026,
+        "subjects": [],
+        "contributors": [],
+        "dates": [],
+        "language": null,
+        "types": {
+          "schemaOrg": "CreativeWork",
+          "resourceTypeGeneral": "Standard",
+          "citeproc": "article",
+          "bibtex": "misc",
+          "ris": "GEN",
+          "resourceType": "Certification Standard"
+        },
+        "relatedIdentifiers": [],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": "1.0",
+        "rightsList": [
+          {
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0"
+          }
+        ],
+        "descriptions": [
+          {
+            "descriptionType": "Abstract",
+            "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for menstrual tampons (Feminine Care), evaluated on the total heavy-metal content of the finished article as placed on market (mucosal basis; the applicator is tested as a distinct component). No government sets a numeric heavy-metal content limit for this device form, so every analyte is held under mandatory analytical control or a substantiated not-material determination."
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "url": "https://heavymetalcertified.com/standards/menstrual-tampons",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": null,
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "downloadCount": 0,
+        "referenceCount": 0,
+        "citationCount": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2026-09-12T17:49:03Z",
+        "registered": "2026-09-12T17:49:03Z",
+        "published": null,
+        "updated": "2026-09-12T17:49:03Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "vaju.hdawai",
+            "type": "clients"
+          }
+        }
+      }
+    },
+    {
+      "id": "10.83138/hmtc.std.30.olive-oil",
+      "type": "dois",
+      "attributes": {
+        "doi": "10.83138/hmtc.std.30.olive-oil",
+        "identifiers": [],
+        "creators": [
+          {
+            "nameType": "Personal",
+            "affiliation": [
+              "Institute of Contaminant Standards"
+            ],
+            "givenName": "Karen",
+            "familyName": "Pendergrass",
+            "name": "Pendergrass, Karen",
+            "nameIdentifiers": [
+              {
+                "nameIdentifierScheme": "ORCID",
+                "schemeUri": "https://orcid.org",
+                "nameIdentifier": "https://orcid.org/0000-0002-2348-7259"
+              }
+            ]
+          }
+        ],
+        "titles": [
+          {
+            "title": "Olive oil (virgin, refined, pomace) — HMTc Standard"
+          }
+        ],
+        "publisher": "Institute of Contaminant Standards",
+        "container": {},
+        "publicationYear": 2026,
+        "subjects": [],
+        "contributors": [],
+        "dates": [],
+        "language": null,
+        "types": {
+          "schemaOrg": "CreativeWork",
+          "resourceTypeGeneral": "Standard",
+          "citeproc": "article",
+          "bibtex": "misc",
+          "ris": "GEN",
+          "resourceType": "Certification Standard"
+        },
+        "relatedIdentifiers": [
+          {
+            "relationType": "References",
+            "relatedIdentifier": "https://heavymetalindex.com/products/olive-oil",
+            "relatedIdentifierType": "URL"
+          }
+        ],
+        "relatedItems": [],
+        "sizes": [],
+        "formats": [],
+        "version": "1.0",
+        "rightsList": [
+          {
+            "rightsIdentifierScheme": "SPDX",
+            "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "schemeUri": "https://spdx.org/licenses/",
+            "rights": "Creative Commons Attribution 4.0 International",
+            "rightsIdentifier": "cc-by-4.0"
+          }
+        ],
+        "descriptions": [
+          {
+            "descriptionType": "Abstract",
+            "description": "The Heavy Metal Tested & Certified standard for Olive oil (virgin, refined, pomace) (Culinary Oils and Fats), stated as sold. Each analyte carries the strictest applicable government maximum level in the product's native basis, with a disclosed read-across or a mandatory control where no government regulates the exact product."
+          }
+        ],
+        "geoLocations": [],
+        "fundingReferences": [],
+        "url": "https://heavymetalcertified.com/standards/olive-oil",
+        "contentUrl": null,
+        "metadataVersion": 0,
+        "schemaVersion": null,
+        "source": "api",
+        "isActive": true,
+        "state": "findable",
+        "reason": null,
+        "viewCount": 0,
+        "downloadCount": 0,
+        "referenceCount": 0,
+        "citationCount": 0,
+        "partCount": 0,
+        "partOfCount": 0,
+        "versionCount": 0,
+        "versionOfCount": 0,
+        "created": "2026-09-12T13:27:40Z",
+        "registered": "2026-09-12T13:27:41Z",
+        "published": null,
+        "updated": "2026-09-12T13:27:41Z"
+      },
+      "relationships": {
+        "client": {
+          "data": {
+            "id": "vaju.hdawai",
+            "type": "clients"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,19 +1,21 @@
 ---
 title: Karen Pendergrass
-description: Standards architect and microbiome researcher connecting contaminant evidence, food exposure, and microbial metallomics. Biography, affiliations, work history, and public works.
+description: Karen Pendergrass, standards architect and independent researcher at the Institute of Contaminant Standards, works on heavy metals, microbial metallomics, and systems architecture.
 type: author-profile
 cssclasses: [author-profile]
 audience: [researcher, regulator, educator, consumer]
-updated: 2026-09-09
+updated: 2026-09-16
 ---
 
 ## Biography
 
-Karen Pendergrass develops research and evidence systems at the intersection of food contaminants, trace metals, and the microbiome. She is the founder and standards architect of the Institute of Contaminant Standards and the architect of the Heavy Metal Index.
+Karen Pendergrass is a standards architect and independent researcher at the Institute of Contaminant Standards. Her work connects dietary heavy metal exposure, microbial metallomics, and the architecture of traceable research and standards systems.
+
+Building on a decade of establishing global standards at the Paleo Foundation, Karen Pendergrass designed the Heavy Metal Index to address toxicological exposure limits through a traceable evidence system. She co-founded the Paleo Foundation and is the founder and standards architect of the Institute of Contaminant Standards.
 
 Her work on the Index brings together contaminant-occurrence literature, exposure pathways, regulatory evidence, and research synthesis. The aim is to make findings traceable to their sources and revisions, so readers can inspect both the evidence and its limits.
 
-She also founded Paleo Foundation, Microbiome Medicine, and WikiBiome. Her broader research examines how metal availability and microbial ecology interact, connecting food exposure with questions in microbiome medicine. [Public researcher record ↗](https://orcid.org/0000-0002-2348-7259)
+She also founded Microbiome Medicine and WikiBiome. Her broader research examines how metal availability and microbial ecology interact, connecting food exposure with questions in microbiome medicine. [Public researcher record ↗](https://orcid.org/0000-0002-2348-7259)
 
 ## Research focus
 
@@ -23,7 +25,7 @@ She also founded Paleo Foundation, Microbiome Medicine, and WikiBiome. Her broad
 <li>Infant & child food research</li>
 <li>Regulatory evidence</li>
 <li>Evidence synthesis</li>
-<li>Traceable research systems</li>
+<li>Systems architecture & traceable research</li>
 </ul>
 
 ## Work history
@@ -31,7 +33,7 @@ She also founded Paleo Foundation, Microbiome Medicine, and WikiBiome. Her broad
 <div class="author-career">
 <article><p class="author-career-date">2026–present</p><h3>Institute of Contaminant Standards</h3><p>Founder & Chief Executive Officer · Standards Architect · Research Lead</p></article>
 <article><p class="author-career-date">November 2023–present</p><h3>Microbiome Medicine</h3><p>Researcher · Founder</p></article>
-<article><p class="author-career-date">January 2010–present</p><h3>Paleo Foundation</h3><p>Founder</p></article>
+<article><p class="author-career-date">January 2010–present</p><h3>Paleo Foundation</h3><p>Co-Founder</p></article>
 <article><p class="author-career-date">Current affiliation</p><h3>WikiBiome</h3><p>Founder & Scientific Editor</p></article>
 </div>
 

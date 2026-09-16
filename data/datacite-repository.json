@@ -1,0 +1,7 @@
+{
+  "clientId": "vaju.hdawai",
+  "prefixes": ["10.83138"],
+  "contentRoot": "content",
+  "directories": ["standards", "manuals", "articles", "briefings"],
+  "doiFields": ["cert_doi", "cert_version_doi", "zenodo_doi", "deposited_doi", "concept_doi", "doi"]
+}

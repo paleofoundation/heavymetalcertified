@@ -1,5 +1,5 @@
-import { documentPdf } from "./documentMetadata"
-import { currentDocumentDoi } from "./DocumentDoi"
+import { CitationMetadata, frontmatterBoolean, frontmatterString } from "./citationMetadata"
+import ResearcherProfileMetadata from "./ResearcherProfileMetadata"
 import { i18n } from "../i18n"
 import { canonicalUrl, FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
@@ -7,61 +7,6 @@ import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
 import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
-
-function frontmatterString(value: unknown): string | undefined {
-  if (value === undefined || value === null) return undefined
-  const normalized = String(value).trim()
-  return normalized.length > 0 ? normalized : undefined
-}
-
-function frontmatterStringArray(value: unknown): string[] {
-  if (Array.isArray(value)) {
-    return value.flatMap((item) => {
-      const normalized = frontmatterString(item)
-      return normalized ? [normalized] : []
-    })
-  }
-
-  const normalized = frontmatterString(value)
-  return normalized ? [normalized] : []
-}
-
-function frontmatterBoolean(value: unknown): boolean {
-  if (typeof value === "boolean") return value
-  if (typeof value === "string") return ["true", "yes", "1"].includes(value.trim().toLowerCase())
-  return false
-}
-
-// Scholar accepts a year or a complete date, not display dates such as
-// "May 2026". Preserve a full source date; otherwise emit its known year.
-function normalizeCitationDate(value: unknown): string | undefined {
-  const raw = frontmatterString(value)
-  if (!raw) return undefined
-  if (/^\d{4}$/.test(raw)) return raw
-
-  const iso = raw.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})$/)
-  if (iso) return `${iso[1]}/${iso[2].padStart(2, "0")}/${iso[3].padStart(2, "0")}`
-
-  const monthDay = raw.match(
-    /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})$/i,
-  )
-  if (monthDay) {
-    const month = new Date(`${monthDay[1]} 1, 2000`).getMonth() + 1
-    return `${monthDay[3]}/${String(month).padStart(2, "0")}/${monthDay[2].padStart(2, "0")}`
-  }
-
-  // "August 2026" -> "2026". Scholar's inclusion guidelines document exactly two
-  // forms for citation_publication_date: YYYY/MM/DD, or a bare YYYY when the full
-  // date is unknown. "YYYY/MM" is not one of them (the release audit rejects it),
-  // and inventing a day we do not know would be worse than a bare year.
-  const monthYear = raw.match(
-    /^(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})$/i,
-  )
-  if (monthYear) return monthYear[2]
-
-  const year = raw.match(/\b(19|20)\d{2}\b/)
-  return year?.[0]
-}
 
 // og:type — "article" for substantive documents (briefings, standards,
 // regulations, source pages, single metal/analyte pages…) so social cards render
@@ -113,129 +58,6 @@ function isArticlePage(frontmatter: Record<string, unknown> | undefined, slug: s
   return OG_ARTICLE_PREFIXES.some((p) => slug.startsWith(p))
 }
 
-function CitationMetadata({
-  frontmatter,
-  slug,
-  title,
-  socialUrl,
-}: {
-  frontmatter: Record<string, unknown> | undefined
-  slug: FullSlug | undefined
-  title: string
-  socialUrl: string
-}) {
-  if (!frontmatter) return null
-  const slugStr = (slug ?? "") as string
-
-  // Source pages represent the underlying paper — emit its real bibliographic
-  // record (author, journal, the paper's own DOI).
-  const isSourcePage = frontmatter.type === "source" || slugStr.startsWith("sources/")
-  if (isSourcePage) {
-    const citationTitle = frontmatterString(frontmatter.title) ?? title
-    const authors = frontmatterStringArray(frontmatter.authors)
-    const publicationDate = normalizeCitationDate(
-      frontmatterString(frontmatter.year) ??
-      frontmatterString(frontmatter.published) ??
-      frontmatterString(frontmatter.created),
-    )
-    const publication = frontmatterString(frontmatter.publication)
-    const doi = frontmatterString(frontmatter.doi)
-    const canonicalSourceUrl = frontmatterString(frontmatter.access_url)
-    return (
-      <>
-        <meta name="citation_title" content={citationTitle} />
-        {authors.map((author, index) => (
-          <meta key={`citation-author-${index}`} name="citation_author" content={author} />
-        ))}
-        {publicationDate && <meta name="citation_publication_date" content={publicationDate} />}
-        {publication && <meta name="citation_journal_title" content={publication} />}
-        {doi && <meta name="citation_doi" content={doi} />}
-        <meta name="citation_abstract_html_url" content={socialUrl} />
-        {canonicalSourceUrl && <meta name="citation_fulltext_html_url" content={canonicalSourceUrl} />}
-      </>
-    )
-  }
-
-  // The cert site emits Highwire / Google Scholar metadata for its citable
-  // technical documents: PUBLISHED standards (a firm limit is in force) and the
-  // article-length Standards Briefings. Both are framed as technical
-  // reports / specifications — never citation_journal_title — because a
-  // certifier claiming peer-reviewed-journal status on the documents justifying
-  // its own paid certifications is the overclaim the firewall exists to deny
-  // (plan 6.D). Eligibility is gated on the generator-set `scholar_eligible`
-  // flag, so a standard still in development emits NO citation_* (no overclaim
-  // on a non-published cell). The load-bearing citation_pdf_url is emitted only
-  // once the PDF emitter exists (Step 7) and sets `scholar_pdf`.
-  const isScholarEligible = frontmatterBoolean(frontmatter.scholar_eligible)
-  if (isScholarEligible) {
-    const citationTitle = frontmatterString(frontmatter.title) ?? title
-    const pubDate = normalizeCitationDate(
-      frontmatterString(frontmatter.published) ??
-      frontmatterString(frontmatter.effective_date) ??
-      frontmatterString(frontmatter.briefing_date) ??
-      frontmatterString(frontmatter.updated) ??
-      frontmatterString(frontmatter.created),
-    )
-    const certDoi = currentDocumentDoi(slugStr, frontmatter)
-    const author = frontmatterString(frontmatter.author) ?? "Pendergrass, Karen"
-    const abstract = frontmatterString(frontmatter.scholar_abstract) ??
-      frontmatterString(frontmatter.socialDescription) ??
-      frontmatterString(frontmatter.description)
-    const keywordList = frontmatterStringArray(frontmatter.keywords)
-    const keywords = keywordList.length ? keywordList.join(", ") : undefined
-    const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
-    const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
-    const currentPdf = documentPdf(frontmatter, slugStr)
-    const pdfUrl = currentPdf ? `https://heavymetalcertified.com${currentPdf}` : configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined)
-    // A URL path is not a report number; emitting one as `citation_technical_
-    // report_number` publishes malformed bibliographic metadata. Every
-    // scholar-eligible page is tagged as a technical report of the Institute
-    // (citation_technical_report_institution below), and Scholar treats a
-    // technical report without a number as a malformed record, so when no
-    // explicit identifier is set the page gets a stable series number in the
-    // same scheme the DOI manifest and the manuals use: hmtc.<section>.<slug>
-    // (e.g. hmtc.articles.tea-multi-metal-bioaccumulation). It never changes
-    // across editions; the edition is carried by citation_publication_date.
-    const slugParts = slugStr.split("/").filter(Boolean)
-    const seriesNumber =
-      slugParts.length >= 2 ? `hmtc.${slugParts[0]}.${slugParts[slugParts.length - 1]}` : undefined
-    const reportNumber =
-      frontmatterString(frontmatter.report_number) ??
-      frontmatterString(frontmatter.standard_version) ??
-      frontmatterString(frontmatter.edition) ??
-      seriesNumber
-    return (
-      <>
-        <meta name="citation_title" content={citationTitle} />
-        <meta name="citation_author" content={author} />
-        <meta
-          name="citation_author_institution"
-          content="Heavy Metal Tested & Certified, Institute of Contaminant Standards (ICS)"
-        />
-        <meta name="citation_publisher" content="Institute of Contaminant Standards (ICS)" />
-        <meta
-          name="citation_technical_report_institution"
-          content="Heavy Metal Tested & Certified, Institute of Contaminant Standards (ICS)"
-        />
-        {pubDate && <meta name="citation_publication_date" content={pubDate} />}
-        {reportNumber && <meta name="citation_technical_report_number" content={reportNumber} />}
-        <meta name="citation_language" content="en" />
-        {abstract && <meta name="citation_abstract" content={abstract} />}
-        {keywords && <meta name="citation_keywords" content={keywords} />}
-        <meta name="citation_abstract_html_url" content={socialUrl} />
-        <meta name="citation_fulltext_html_url" content={socialUrl} />
-        {/* Every scholar-eligible document is free to read in full — no paywall,
-            no registration. Scholar treats this as an inclusion signal. */}
-        <meta name="citation_fulltext_world_readable" content="true" />
-        {pdfUrl && <meta name="citation_pdf_url" content={pdfUrl} />}
-        {pdfUrl && <link rel="alternate" type="application/pdf" href={pdfUrl} />}
-        {certDoi && <meta name="citation_doi" content={certDoi} />}
-      </>
-    )
-  }
-
-  return null
-}
 
 export default (() => {
   const Head: QuartzComponent = ({
@@ -366,6 +188,7 @@ export default (() => {
           title={title}
           socialUrl={socialUrl}
         />
+        <ResearcherProfileMetadata frontmatter={fileData.frontmatter} slug={fileData.slug} />
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}

@@ -1,0 +1,21 @@
+{
+  "name": "Pendergrass, Karen",
+  "nameType": "Personal",
+  "givenName": "Karen",
+  "familyName": "Pendergrass",
+  "nameIdentifiers": [
+    {
+      "nameIdentifier": "https://orcid.org/0000-0002-2348-7259",
+      "nameIdentifierScheme": "ORCID",
+      "schemeUri": "https://orcid.org"
+    }
+  ],
+  "affiliation": [
+    {
+      "name": "Institute of Contaminant Standards"
+    },
+    {
+      "name": "The Paleo Foundation"
+    }
+  ]
+}

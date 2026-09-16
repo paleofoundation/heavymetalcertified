@@ -12,36 +12,25 @@
 // rationale is built on the independent Index metal page. `about` names the metal
 // as the DefinedTerm the page is about.
 //
-// Source of truth is the per-metal spec (data/why-limited/<slug>.json), the same
-// file build-why-limited-pages.mjs renders from — so the visible page and the
-// structured data never diverge.
+// Per-metal specs supply relationships; actual page frontmatter supplies
+// author credit and publication dates at their known precision.
 
 import fs from "node:fs"
 import path from "node:path"
-import { CERT_BASE, CERT_ORGANIZATION_ID, personEntity } from "./lib/entity-graph.mjs"
+import matter from "gray-matter"
+import { CERT_BASE, CERT_ORGANIZATION_ID } from "./lib/entity-graph.mjs"
+import { publicationMetadata, replacePublicationGraphs } from "./lib/publication-jsonld.mjs"
 
 const repoRoot = process.cwd()
 const SPEC_DIR = path.join(repoRoot, "data/why-limited")
 const PUBLIC = path.join(repoRoot, "public/why-we-limit")
+const CONTENT = path.join(repoRoot, "content/why-we-limit")
 
 if (!fs.existsSync(SPEC_DIR)) {
   console.log("postbuild-why-limited-jsonld: no spec dir; skipping.")
   process.exit(0)
 }
 
-const MONTHS = {
-  january: "01", february: "02", march: "03", april: "04", may: "05", june: "06",
-  july: "07", august: "08", september: "09", october: "10", november: "11", december: "12",
-}
-function isoDate(s) {
-  if (!s) return undefined
-  const t = String(s).trim()
-  if (/^\d{4}-\d{2}-\d{2}$/.test(t)) return t
-  const m = t.match(/^([A-Za-z]+)\s+(\d{4})$/)
-  if (m && MONTHS[m[1].toLowerCase()]) return `${m[2]}-${MONTHS[m[1].toLowerCase()]}-01`
-  const y = t.match(/^\d{4}$/)
-  return y ? `${t}-01-01` : undefined
-}
 const strip = (s) =>
   String(s || "")
     .replace(/<[^>]+>/g, "")
@@ -52,9 +41,8 @@ const strip = (s) =>
     .replace(/\s+/g, " ")
     .trim()
 
-function articleGraph(spec) {
+function articleGraph(spec, frontmatter) {
   const url = `${CERT_BASE}/why-we-limit/${spec.slug}`
-  const date = isoDate(spec.date)
   const g = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -65,7 +53,7 @@ function articleGraph(spec) {
     inLanguage: "en",
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    author: personEntity(),
+    ...publicationMetadata(frontmatter),
     publisher: {
       "@type": "Organization",
       "@id": CERT_ORGANIZATION_ID,
@@ -73,10 +61,6 @@ function articleGraph(spec) {
     },
     license: "https://creativecommons.org/licenses/by/4.0/",
     isAccessibleForFree: true,
-  }
-  if (date) {
-    g.datePublished = date
-    g.dateModified = date
   }
   if (Array.isArray(spec.keywords) && spec.keywords.length) g.keywords = spec.keywords.join(", ")
   if (spec.name) {
@@ -115,16 +99,11 @@ for (const f of fs.readdirSync(SPEC_DIR).filter((x) => x.endsWith(".json"))) {
     missing++
     continue
   }
-  let html = fs.readFileSync(htmlPath, "utf8")
-  if (html.includes(`${CERT_BASE}/why-we-limit/${spec.slug}#article`)) {
-    // already injected (idempotent re-run)
-    continue
-  }
-  const graphs = [articleGraph(spec), faqGraph(spec)].filter(Boolean)
-  const tag = graphs
-    .map((g) => `<script type="application/ld+json">${JSON.stringify(g)}</script>`)
-    .join("")
-  html = html.replace("</head>", `${tag}</head>`)
+  const frontmatter = matter(fs.readFileSync(path.join(CONTENT, `${spec.slug}.md`), "utf8")).data
+  const graphs = [articleGraph(spec, frontmatter), faqGraph(spec)]
+  const url = `${CERT_BASE}/why-we-limit/${spec.slug}`
+  const html = replacePublicationGraphs(fs.readFileSync(htmlPath, "utf8"), graphs,
+    [`${url}#article`, `${url}#faq`])
   fs.writeFileSync(htmlPath, html, "utf8")
   injected++
 }
