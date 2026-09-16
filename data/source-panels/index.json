@@ -6124,14 +6124,14 @@
   },
   "briefings/the-mucosal-gap": {
     "page": "briefings/the-mucosal-gap",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Tampons as a source of exposure to metal(loid)s",
         "citation": "Shearston JA, Upson K, Gordon M, et al. Tampons as a source of exposure to metal(loid)s. Environment International. 2024;190:108849. doi:10.1016/j.envint.2024.108849.",
         "summary": "The researchers analyzed acid-digested portions of 30 tampons from 14 brands and 18 product lines. Among 60 subsamples, lead and cadmium were detected in every sample and arsenic in 57. Lead had a median of 173 ng/g and a maximum of 468 ng/g. Organic products had lower lead but higher arsenic; no category consistently had the lowest concentrations across metals.",
         "establishes": "The study establishes metal content in the sampled absorbent materials. It did not measure release during use, vaginal absorption, clinical effects, or inorganic arsenic and methylmercury separately.",
-        "relevance": "It supports investigating contamination beyond organic labeling. HMTc’s certification panel, component sampling rules, and safety claims require additional justification beyond these occurrence measurements.",
+        "relevance": "It supports investigating contamination beyond organic labeling. The occurrence measurements do not derive the briefing’s newly described read-across ceilings, validate transfer from another contact category, or justify HMTc’s component sampling and safety claims on their own.",
         "links": [
           {
             "label": "Full research article",
@@ -6144,7 +6144,7 @@
         "citation": "International Consulting Associates, Inc. Contaminants in Vaginal Tampons: A Systematic Literature Review (SLR). Final report, version 5.0, December 5, 2024. Prepared for the US Food and Drug Administration, Center for Devices and Radiological Health.",
         "summary": "This FDA-commissioned review assessed nine articles covering contaminants, biomarkers, and health outcomes. It found limited, heterogeneous evidence, including the Shearston metal-content study. Small samples, self-reported use, and confounding limited interpretation. The evidence did not establish a metal-related health risk from tampon use.",
         "establishes": "The report distinguishes laboratory detection from tissue uptake and harm. It is a commissioned systematic review, not an independent replication of the tampon metal survey, and predates FDA’s 2026 laboratory research.",
-        "relevance": "It helps define what a testing program can document and what remains a separate exposure assessment. Its December 2024 evidence window should be clear when used in an August 2026 briefing.",
+        "relevance": "It helps separate what product testing can document from exposure and risk assessment. The review does not select HMTc’s read-across ceilings or establish that the governmental rulebook and research are empty. Its December 2024 evidence window and FDA’s subsequent 2026 research matter to this briefing’s claims.",
         "links": [
           {
             "label": "FDA-hosted final report",
@@ -6166,7 +6166,7 @@
         "citation": "Ellison CA, Doyle PR, Haven CA, McClenathan DM, Obringer CM, Woeller KE. Integrating experimental data and mechanistic modeling to assess potential lead exposure from tampon use. Toxicological Sciences. 2026;209(5):kfag052. doi:10.1093/toxsci/kfag052.",
         "summary": "This study combined lead partitioning experiments with a compartment model of release, menstrual-fluid binding, reabsorption by the tampon, and possible tissue uptake. Its four-hour scenario predicted less than 1 ng of uptake, under 0.3% of the modeled tampon lead content.",
         "establishes": "These are model estimates, not observed vaginal absorption. The calculation assumes complete lead release over four hours and uses a conservative permeability proxy from an intestinal cell model because lead-specific vaginal permeability data were unavailable. All authors disclosed employment by Procter & Gamble.",
-        "relevance": "It illustrates why bulk content alone cannot determine exposure. It does not validate HMTc content limits or establish that tampon lead has been measured entering human tissue.",
+        "relevance": "It illustrates why bulk content alone cannot determine exposure. The model does not validate HMTc’s adopted content ceilings, establish comparable exposure across product categories, or show that tampon lead has been measured entering human tissue.",
         "links": [
           {
             "label": "Full modeling study",
@@ -6179,7 +6179,7 @@
         "citation": "Hussain A, Ahsan F. The vagina as a route for systemic drug delivery. Journal of Controlled Release. 2005;103(2):301–313. doi:10.1016/j.jconrel.2004.11.034.",
         "summary": "This review discusses vaginal delivery of medicines, including vascular supply, avoidance of hepatic first-pass metabolism, and formulation-dependent absorption. It also describes barriers to delivery, particularly for larger molecules, and the effects of physiology and the menstrual cycle.",
         "establishes": "The article supports the possibility of systemic delivery for suitable drugs. It is not a metal-absorption study and does not establish a universal permeability ranking among vaginal mucosa, oral mucosa, and skin.",
-        "relevance": "It provides background for considering exposure route. Transferring drug-delivery observations to metal species or to a certification claim requires substance-specific evidence.",
+        "relevance": "It provides background for considering exposure route. It does not establish that another product’s limit represents comparable prolonged mucosal exposure for a given metal. That transfer and the briefing’s permeability comparisons require substance-specific evidence.",
         "links": [
           {
             "label": "Publisher abstract and metadata",
@@ -6196,7 +6196,7 @@
         "citation": "US Food and Drug Administration. 21 CFR Part 884, Obstetrical and Gynecological Devices, §§884.5400, 884.5425, 884.5435, 884.5460 and 884.5470. Official annual edition revised April 1, 2025; accompanied by FDA’s July 2026 regulatory overview.",
         "summary": "These provisions identify menstrual devices and assign regulatory classes. Cups and tampons are Class II; unscented menstrual pads are Class I. Some exemptions from premarket notification depend on product characteristics and the limitations in §884.9.",
         "establishes": "Classification determines the applicable regulatory framework; the cited classification sections do not specify a finished-product numerical metal ceiling. That does not remove material safety, manufacturing, labeling, or other applicable requirements.",
-        "relevance": "HMTc’s proposed lot testing would operate alongside the relevant device obligations. Regulatory category and exemption status must be determined for each product rather than assumed from a single menstrual-products label.",
+        "relevance": "HMTc’s lot testing and adopted ceilings operate alongside the relevant device obligations. These classification provisions neither supply the read-across values nor validate their safety; the regulatory category and exemption status must be established for each product.",
         "links": [
           {
             "label": "Official CFR text, 2025 edition",
@@ -6214,7 +6214,7 @@
         "citation": "European Parliament and Council. Regulation (EU) 2017/745 of 5 April 2017 on medical devices. OJ L 117, 5 May 2017, pp.1–175. Articles 1–2, Annex I §10.4 and Annex XVI; original enacted text. Product-scope context: European Commission JRC, JRC134703 (2023), and Regulation (EU) 2023/988, Articles 50–52.",
         "summary": "The MDR applies according to a product’s intended medical purpose and specified scope extensions. Its safety requirements address released substances and certain hazardous constituents; Annex I includes a 0.1% weight threshold triggering justification for specified substances in specified devices. This is not a general table of trace-metal limits for all intimate products.",
         "establishes": "The regulation does not classify every menstrual product as a medical device. JRC’s 2023 assessment places ordinary menstrual cups under general product safety legislation; the General Product Safety Regulation replaced the earlier directive from December 13, 2024.",
-        "relevance": "The EU legal basis for a menstrual-product certification claim must be established before applying device standards. HMTc’s monitoring requirements and adopted numerical values remain program decisions unless a specific applicable law supplies them.",
+        "relevance": "The EU legal basis must be established product by product before applying device standards. HMTc’s read-across ceilings remain program decisions unless a specific applicable law supplies them; these texts do not establish that the chosen cross-category values are the strictest health-based limits or validate their transfer.",
         "links": [
           {
             "label": "Original MDR text",
@@ -6236,7 +6236,7 @@
         "citation": "International Organization for Standardization. ISO 10993-1:2025. Biological evaluation of medical devices — Part 1: Requirements and general principles for the evaluation of biological safety within a risk management process. Sixth edition, November 2025. Official scope and edition overview.",
         "summary": "ISO’s current overview presents a framework for evaluating biological safety over a device’s life cycle, taking account of materials, design, tissue contact, and duration of exposure. It connects evaluation to risk management rather than offering a universal pass/fail metal concentration table.",
         "establishes": "The public scope establishes the framework’s purpose. The complete paid standard was not accessed, so this drawer does not verify individual testing clauses or claim that every product must undergo an identical set of tests. The 2025 edition replaces the 2018 edition.",
-        "relevance": "It supports distinguishing biological evaluation from HMTc’s proposed chemical surveillance. Compliance with a biological-evaluation framework alone does not independently validate HMTc’s metal panel or certification claims.",
+        "relevance": "It supports distinguishing biological evaluation from HMTc’s chemical surveillance. The public scope does not independently validate the briefing’s metal panel, read-across ceilings, comparable-contact assumptions, or certification safety claims.",
         "links": [
           {
             "label": "ISO official scope and edition history",
@@ -6250,7 +6250,7 @@
         "citation": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL). Technically avoidable heavy metal contents in cosmetic products. Journal of Consumer Protection and Food Safety. 2017;12:51–53. Published online October 6, 2016. doi:10.1007/s00003-016-1044-2.",
         "summary": "BVL used German monitoring data and achievable manufacturing practice to derive orientation values for technically avoidable metal contamination. The lead values include 2 mg/kg for most cosmetics, 5 mg/kg for specified makeup, and 0.5 mg/kg for toothpaste. These values describe manufacturing attainability rather than a toxicological boundary between safe and unsafe exposure.",
         "establishes": "The report explains that technically unavoidable traces require case-specific safety assessment under the cosmetics framework. It does not establish a general mucosal threshold or validate applying the toothpaste value to vaginal products.",
-        "relevance": "It supplies the provenance of HMTc’s proposed read-across value. Applying that value to another product category is a separate program judgment requiring exposure and safety justification.",
+        "relevance": "It identifies the toothpaste value adopted by the briefing. Describing it as a government-established mucosal-contact or health-based safety tier exceeds this source: it is an orientation value for technically avoidable contamination. Applying it to vaginal products remains a program judgment requiring separate exposure and safety justification.",
         "links": [
           {
             "label": "Full BVL article",
@@ -6264,7 +6264,7 @@
         "citation": "Ministry of Food and Drug Safety, Republic of Korea. Regulations on Safety Standards for Cosmetics (화장품 안전기준 등에 관한 규정), Notice No.2025-63, September 2, 2025, Article 6(2). Compared with the later consolidated Notice No.2026-19, March 18, 2026, Article 6(2).",
         "summary": "The cited notice sets allowable levels for specified substances when unintended contamination is documented and complete technical removal is impossible. Nickel limits are 35 µg/g for eye cosmetics, 30 µg/g for color cosmetics, and 10 µg/g for other cosmetics. The March 2026 consolidated notice retains those values.",
         "establishes": "These are Korean cosmetics provisions with conditions and category-specific exceptions. They are not general vaginal-device limits and do not establish that Korea has the only sovereign nickel limit worldwide.",
-        "relevance": "The rule identifies the origin and scope of the nickel value used in the briefing. HMTc adoption for other product categories should remain distinguishable from direct Korean legal compliance.",
+        "relevance": "It identifies the origin and legal scope of the nickel value used in the briefing. Applying a cosmetics value to another product category is a separate HMTc choice; the notice does not validate a device ceiling, comparable mucosal exposure, or the claim that this is the world’s only sovereign nickel limit.",
         "links": [
           {
             "label": "Cited 2025 notice, official PDF",
@@ -6282,7 +6282,7 @@
         "citation": "Marcelis Q. Development of a generic safety assessment strategy for feminine intimate products. Doctoral thesis, Vrije Universiteit Brussel, 2024. Chapter 2, particularly §§2.3.4–2.5 and Table 2-10.",
         "summary": "The thesis develops chemical characterization using extraction, simulated-use migration, and analytical screening. A pilot metal study analyzed vaginal or menstrual fluid simulants exposed to adult novelties, Kegel devices, menstrual sea sponges, and menstrual cups. Its panel included aluminum, chromium, nickel, antimony, and tin as well as lead, cadmium, arsenic, and mercury.",
         "establishes": "The metal results are concentrations leached into simulants, not total product content or measured human uptake. This pilot component did not test the same complete product range as the thesis’s broader organic-chemical survey.",
-        "relevance": "It supports examining materials and analytes beyond a four-metal panel and separating content from release. It does not prove that polyester explains antimony in every applicator or cup, or validate HMTc’s particular per-lot rules.",
+        "relevance": "It supports considering additional analytes and separating measured release from total content. The pilot does not derive the governmental content ceilings now attributed to read-across in the briefing, validate their transfer between contact categories, prove polyester explains antimony in every applicator or cup, or justify HMTc’s per-lot rules.",
         "links": [
           {
             "label": "University-hosted doctoral thesis",
