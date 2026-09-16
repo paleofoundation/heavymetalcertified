@@ -71,7 +71,7 @@ For a brand, the gap is a liability that testing converts into a differentiator.
 
 ### Does the HMTc mark mean a menstrual or intimate-care product is free of heavy metals?
 
-No. No analytical method can certify the absence of an element, and the program does not claim to. The mark means the product was tested, lot by lot, and that every metal was either below the strictest limit its exposure route warrants or, where no lawful limit exists, held under a mandatory control that measures it every lot and drives it down. It is a statement about testing and limits, not about zero.
+No. No analytical method can certify the absence of an element, and the program does not claim to. The mark means the product was tested, lot by lot, and that every metal was below the strictest limit its exposure route warrants: a cosmetic contaminant limit where one applies to the product, or, for the device forms, a limit read across by analogy from the closest health-based article limit, since no government sets a content limit for the device itself. It is a statement about testing and limits, not about zero.
 
 ### Does this briefing say tampons are dangerous?
 
