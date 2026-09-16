@@ -149,6 +149,20 @@ connections:
         <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">August 2026</span>
       </span>
     </a>
+    <a href="/briefings/first-feminine-care-standard" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 12</span>
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">The First Feminine-Care Standard</span>
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">The first standard to place per-analyte heavy-metal limits on menstrual and intimate-care products, by reading across the strictest mucosal-contact health limit any government has drawn.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
+        </span>
+      </span>
+      <span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#2b1f1f">&mdash;</span>
+        <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">August 2026</span>
+      </span>
+    </a>
     <a href="/briefings/the-mucosal-gap" style="display:grid;grid-template-columns:52px minmax(0,1fr) 190px;gap:22px;align-items:start;padding:30px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 11</span>
       <span style="min-width:0">
