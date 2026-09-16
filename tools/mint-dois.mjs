@@ -68,6 +68,7 @@ import matter from "gray-matter"
 import { buildCreators, buildResearcherCreator, creatorDigest } from "./lib/datacite-creators.mjs"
 import { publicationDate } from "./lib/publication-jsonld.mjs"
 import { evaluateClaimSurface, loadCompiledRecords, claimSurfaceFailReason } from "./lib/claim-surface.mjs"
+import { loadPageJoins } from "./lib/page-record-join.mjs"
 
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content")
@@ -78,12 +79,13 @@ const RESEARCHER = JSON.parse(fs.readFileSync(path.join(REPO, "data/researcher-i
 const CREATOR = JSON.parse(fs.readFileSync(path.join(REPO, "data/datacite-creator.json"), "utf8"))
 if (creatorDigest(CREATOR) !== creatorDigest(buildResearcherCreator(RESEARCHER))) throw new Error("DataCite creator template is stale; run node tools/update-doi-creators.mjs --template")
 const PUBLISHER = "Institute of Contaminant Standards"
+// Certification standards are network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1);
+// no CC BY on any cert surface, DataCite metadata included. NB: DOIs minted BEFORE this change
+// still carry cc-by-4.0 in their live DataCite record — updating those is a metadata re-deposit
+// (PUT), which is user-run.
 const RIGHTS = [{
-  rights: "Creative Commons Attribution 4.0 International",
-  rightsUri: "https://creativecommons.org/licenses/by/4.0/legalcode",
-  rightsIdentifier: "cc-by-4.0",
-  rightsIdentifierScheme: "SPDX",
-  schemeUri: "https://spdx.org/licenses/",
+  rights: "All rights reserved",
+  rightsUri: "https://heavymetalcertified.com/license",
 }]
 const TEST_PREFIXES = ["10.5072", "10.82"] // datacite sandbox families (must match standard-readiness-lint)
 
@@ -178,6 +180,24 @@ try {
     knownSlugs.add(row.slug)
   }
 } catch { /* compiled corpus unreadable: claim-surface gate still applies via manifest */ }
+
+// AGGREGATE pages (ORDER S-DOI-P0-AGG-1): a taxonomy-row page whose slug is not itself a compiled
+// record, but groups one or more child records via a *-pages.json join. It mints one DOI on the
+// PAGE url and resolves COMPLETE only when EVERY child record is COMPLETE; it inherits a child's
+// claim-surface FAIL (so a rice child missing numeric iAs blocks the whole aggregate page). Pages
+// whose slug already equals a compiled record are handled by the direct path above and skipped here.
+try {
+  for (const [pageSlug, join] of loadPageJoins(DATA)) {
+    if (knownSlugs.has(pageSlug)) continue // has its own compiled record — direct path owns it
+    const children = [...new Set(join.variants.map((v) => v.record))]
+    knownSlugs.add(pageSlug)
+    const failedChild = children.find((r) => claimSurfaceFail.has(r))
+    if (failedChild) { claimSurfaceFail.set(pageSlug, `child ${failedChild} — ${claimSurfaceFail.get(failedChild)}`); continue }
+    const unknownChild = children.find((r) => !completeSlugs.has(r) && !knownSlugs.has(r))
+    if (unknownChild) continue // a child is uncompiled/unknown — leave the page held, never force complete
+    if (children.every((r) => completeSlugs.has(r))) completeSlugs.add(pageSlug)
+  }
+} catch { /* join files unreadable: aggregate pages simply stay held (uncompiled) */ }
 
 // --- collect candidates ------------------------------------------------------------------------
 const candidates = []

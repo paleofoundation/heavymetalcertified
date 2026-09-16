@@ -891,7 +891,7 @@
   {
     "slug": "the-mucosal-gap",
     "series": "Brief 11",
-    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, one of the body's most permeable surfaces, and the internal ones stay there for hours at a time. That surface absorbs more readily than skin and drains part of what crosses it into the bloodstream without the liver's first pass. A 2024 peer-reviewed study measured lead, cadmium, and arsenic in every brand of tampon it tested. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction.</p><p>HMTc closes that gap without inventing a number. For device forms with no sovereign content limit, it requires per-lot mass-spectrometry testing of the full analyte panel, sampled component by component with the tampon applicator tested distinctly, and holds every metal the literature has measured under a mandatory analytical control. For cosmetic forms it reads across the strictest sovereign contaminant limit, adopting the mucosal-contact tier for lead because the vaginal mucosa is more permeable than the oral mucosa that tier was written for. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, one of the body's most permeable surfaces, and the internal ones stay there for hours at a time. That surface absorbs more readily than skin and drains part of what crosses it into the bloodstream without the liver's first pass. A 2024 peer-reviewed study measured lead, cadmium, and arsenic in every brand of tampon it tested. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction.</p><p>HMTc closes that gap without inventing a number. For device forms, where no government sets a content limit, it reads a ceiling across by analogy from the strictest health-based limit a government has drawn for an article in comparable prolonged mucosal contact, and enforces it every lot by mass-spectrometry testing of the full analyte panel, sampled component by component with the tampon applicator tested distinctly. For cosmetic forms it reads across the strictest sovereign contaminant limit, adopting the mucosal-contact tier for lead because the vaginal mucosa is more permeable than the oral mucosa that tier was written for. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
     "references": [
       {
         "n": 1,
@@ -959,9 +959,100 @@
       {
         "n": 10,
         "title": "Development of a generic safety assessment strategy for feminine intimate products",
-        "meta_html": "Marcelis Q. PhD thesis, Vrije Universiteit Brussel, 2024. Full-panel metal screen across tampons, pads, cups, and other intimate products, extending the measured panel to aluminium, tin, and antimony; the basis for holding those metals under mandatory control on the device rows.",
+        "meta_html": "Marcelis Q. PhD thesis, Vrije Universiteit Brussel, 2024. Full-panel metal screen across tampons, pads, cups, and other intimate products, extending the measured panel to aluminium, tin, and antimony; the basis for holding those metals under the read-across ceilings on the device rows.",
         "href": "",
         "type": "Peer-reviewed"
+      }
+    ]
+  },
+  {
+    "slug": "first-feminine-care-standard",
+    "series": "Brief 12",
+    "abstract_html": "<p>Heavy Metal Tested and Certified has published a heavy-metal-safety standard for menstrual and intimate-care products, tampons, pads, cups, discs, and period underwear, and the intimate cosmetics alongside them, douches, washes, wipes, and deodorants. To our knowledge it is the first standard anywhere to place per-analyte heavy-metal limits on this category. No government sets a heavy-metal content limit for a menstrual device in any jurisdiction, because device law asks whether a material is biocompatible, not how much lead it contains; and the cosmetic limits that do exist were written for skin, not for the vulvovaginal mucosa these products actually contact. In 2024 a peer-reviewed study measured lead, cadmium, and arsenic in every tampon it tested.</p><p>The standard is written on a mucosal basis and reads across the strictest mucosal-contact health limit a government has drawn, never inventing a number of its own. Cosmetic forms bind sovereign cosmetic contaminant limits directly; device forms, for which no government sets a content limit, carry the same values by disclosed, conservative read-across by analogy. Every analyte on the panel carries an enforceable ceiling, nine firm read-across limits plus inorganic arsenic and methylmercury bounded by their parent totals, and every certified lot is tested for the full panel by mass spectrometry. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "references": [
+      {
+        "n": 1,
+        "title": "Tampons as a source of exposure to metal(loid)s",
+        "meta_html": "Shearston JA, Upson K, Gordon M, et al. Environment International, 2024. Sixteen metals and metalloids in 30 tampons (14 brands, 18 product lines; US/EU/UK) by ICP-MS. Lead in 60/60 subsamples (geometric mean about 120 µg/kg; median 173; maximum 468); cadmium 60/60; total arsenic 57/60. Reports total content, not exposure; arsenic and mercury not speciated.",
+        "href": "https://doi.org/10.1016/j.envint.2024.108849",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 2,
+        "title": "Contaminants in Vaginal Tampons: A Systematic Literature Review",
+        "meta_html": "International Consulting Associates, Inc., final report prepared for the U.S. FDA Center for Devices and Radiological Health (CDRH), Version 5.0, December 2024. Systematic review corroborating the presence of lead, cadmium, arsenic, and other metals in vaginal tampons across the published literature.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 3,
+        "title": "Integrating experimental data and mechanistic modeling to assess potential lead exposure from tampon use",
+        "meta_html": "Ellison CA, et al. Toxicological Sciences, 2026. Mass-balance model of lead released from a worn tampon across menstrual-fluid fractions and vaginal tissue; the baseline scenario estimates that only a small fraction of product lead reaches tissue.",
+        "href": "https://doi.org/10.1093/toxsci/kfag052",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 4,
+        "title": "The vagina as a route for systemic drug delivery",
+        "meta_html": "Hussain A, Ahsan F. Journal of Controlled Release, 2005. Review establishing the vaginal mucosa as a high-permeability route used clinically for systemic drug delivery, with partial avoidance of hepatic first-pass metabolism.",
+        "href": "",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 5,
+        "title": "Development of a generic safety assessment strategy for feminine intimate products",
+        "meta_html": "Marcelis Q. PhD thesis, Vrije Universiteit Brussel, 2024. Full-panel metal screen across tampons, pads, cups, and other intimate products; extends the measured panel to aluminium and tin and anchors those cells.",
+        "href": "",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 6,
+        "title": "Leaching of lead and total arsenic from menstrual products into simulated vaginal fluid",
+        "meta_html": "Nic Corcráin, 2025. Measures lead and arsenic migrating out of tampons, pads, cups, and period underwear into a vaginal-fluid surrogate; the step from measured content toward exposure. Full citation to be confirmed at publication.",
+        "href": "",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 7,
+        "title": "Tampon metal chemistry (lead, cadmium, mercury, chromium, arsenic, nickel)",
+        "meta_html": "Carlin, 2020. Corroborating measurement of the toxic-metal panel across the tampon form. Full citation to be confirmed at publication.",
+        "href": "",
+        "type": "Peer-reviewed"
+      },
+      {
+        "n": 8,
+        "title": "Technically avoidable heavy-metal contents in cosmetics (BVL, 2017)",
+        "meta_html": "German Federal Office of Consumer Protection and Food Safety (BVL). Technically-avoidable-contaminant guidance for cosmetics: lead 2000 µg/kg for general cosmetics but 500 for toothpaste, a mucosal-contact product; cadmium 100, total arsenic 500, total mercury 100.",
+        "href": "https://www.openagrar.de/servlets/MCRFileNodeServlet/openagrar_derivate_00027138/Bund2017_Article_TechnicallyAvoidableHeavyMetal.pdf",
+        "type": "Government"
+      },
+      {
+        "n": 9,
+        "title": "Korea MFDS cosmetics safety standards (trace metals)",
+        "meta_html": "Republic of Korea Ministry of Food and Drug Safety. Sets the only sovereign cosmetic nickel content allowance (10000 µg/kg) used as the read-across anchor for cosmetic nickel.",
+        "href": "",
+        "type": "Government"
+      },
+      {
+        "n": 10,
+        "title": "Directive 2009/48/EC on the safety of toys (Toy Safety Directive)",
+        "meta_html": "European Parliament and Council, 2009. Health-based migration limits for metals in articles children place in the mouth, derived from tolerable intakes; the read-across anchor for hexavalent chromium, tin, and aluminium.",
+        "href": "https://eur-lex.europa.eu/eli/dir/2009/48/oj",
+        "type": "Regulation"
+      },
+      {
+        "n": 11,
+        "title": "21 CFR Part 884; Regulation (EU) 2017/745 on medical devices; ISO 10993-1",
+        "meta_html": "U.S. FDA, European Parliament and Council, and the International Organization for Standardization. The device-law basis on which menstrual devices are evaluated for biocompatibility rather than heavy-metal content, and on which no numeric content limit for the finished device exists.",
+        "href": "",
+        "type": "Regulation"
+      },
+      {
+        "n": 12,
+        "title": "Australian total-chromium limit",
+        "meta_html": "Australian government total-chromium limit (total Cr 50 µg/kg); the read-across anchor for total chromium. The specific instrument is named in the live standard page derivation table (binding column AU). Full citation to be confirmed at publication.",
+        "href": "",
+        "type": "Government"
       }
     ]
   }

@@ -316,10 +316,24 @@ function buildModel(fm, body, cfg) {
 
   const references = cfg.references || parseRefs(sections.find((s) => /^references$/i.test(s.heading)))
 
-  // APA 7th: Author, initial. (Year). Title. Publisher/Site. https://doi.org/… (URL if no DOI).
-  const citeAs = `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
+  // Certification standards are network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1):
+  // the Cite-as face uses the APA "Standard No." form with the doi.org URL only (never the page URL,
+  // never "registration pending"), carries no CC BY, and never glues the licence onto the cite line.
+  // Other scholarly PDFs (briefings) keep their APA prose cite + CC BY.
+  const isStandard = cfg.pathSeg === "standards"
+  const yr = year || "2026"
+  const citeAs = isStandard
+    ? `Pendergrass, K. (${yr}). ${title}${doi ? ` (Standard No. ${doi})` : ""}. Institute of Contaminant Standards.${doi ? ` https://doi.org/${doi}` : ""}`
+    : `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
+  const licenseLine = isStandard
+    ? `© ${yr} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`
+    : "CC BY 4.0"
+  const footerLicense = isStandard ? "© All rights reserved" : "CC BY 4.0"
 
   return {
+    isStandard,
+    licenseLine,
+    footerLicense,
     masthead: cfg.masthead,
     dateLabel: monthYear(updated || established),
     title,
@@ -512,6 +526,7 @@ function FrontMatter(m) {
     h(View, { key: "cite", style: s.frontBlock }, [
       h(Text, { key: "l", style: s.label }, "Cite as"),
       h(Text, { key: "t", style: s.frontText }, m.citeAs),
+      ...(m.isStandard ? [h(Text, { key: "lic", style: [s.frontText, { marginTop: 4 }] }, m.licenseLine)] : []),
     ]),
     h(View, { key: "corr", style: s.frontBlock }, [
       h(Text, { key: "l", style: s.label }, "Correspondence"),
@@ -548,7 +563,9 @@ function FrontMatter(m) {
 function BackMatter(m) {
   const finding = m.pathSeg === "synthesis" ? "finding" : m.pathSeg === "briefings" ? "briefing" : "reference"
   const blocks = [
-    ["Status and licence", `Editorially reviewed in-house; no external peer review has been completed on this ${finding}. Published as a preprint with its review state tracked on the article page. Released under CC BY 4.0.`],
+    ["Status and licence", m.isStandard
+      ? `A normative certification standard, editorially reviewed and version-controlled in-house; every value traces to a named sovereign maximum level, disclosed in the derivation. ${m.licenseLine}`
+      : `Editorially reviewed in-house; no external peer review has been completed on this ${finding}. Published as a preprint with its review state tracked on the article page. Released under CC BY 4.0.`],
     ["Competing interests", "This briefing is published by the Heavy Metal Tested & Certified (HMTc) program, operated by the Institute of Contaminant Standards. Its statements about government regulations, toxicology, and occurrence are sourced to the cited primary and expert-body records and to the independently maintained Heavy Metal Index; the program's own certification thresholds are not used as evidence for any factual claim made here."],
     ["Data availability", `The works this ${finding} draws on are listed in full in the references above and on the briefing page at ${m.url}. Primary legal instruments and expert-body assessments are named with their public identifiers; the underlying occurrence and toxicology corpus is maintained on the Heavy Metal Index.`],
     ["Publication history", `${m.firstPublished ? "First published " + m.firstPublished + ". " : ""}${m.revision ? "This revision " + m.revision + ". " : ""}The full dated record is maintained at ${m.url}.`],
@@ -650,7 +667,7 @@ function ScholarlyDocument(m) {
       // callback (the only way to print "page N / M") triggers a Yoga NaN crash
       // on the longer documents (cadmium, ~11 pages), so page numbers are
       // omitted in favour of a footer that never fails the build.
-      h(Text, { key: "footer", style: s.footer, fixed: true }, `Heavy Metal Certified  ·  ${m.url}  ·  CC BY 4.0`),
+      h(Text, { key: "footer", style: s.footer, fixed: true }, `Heavy Metal Certified  ·  ${m.url}  ·  ${m.footerLicense}`),
     ]),
   )
 }

@@ -44,6 +44,7 @@ const SCHOLARLY_BRIEFINGS = new Set([
   "heavy-metals-in-pet-food",
   "heavy-metals-in-peptides-and-sarms",
   "the-mucosal-gap",
+  "first-feminine-care-standard",
   "the-big-8",
   "the-prop-65-gap",
   "supplements-child-protective",
@@ -65,6 +66,7 @@ const MAP = {
   "the-prop-65-gap": { title: "Named as a Hazard, Left Unlimited", section: "Scope & standards" },
   "supplements-child-protective": { title: "The Child Eats the Adult's Supplement", section: "Scope & standards" },
   "the-mucosal-gap": { title: "The Mucosal Gap", section: "Scope & standards" },
+  "first-feminine-care-standard": { title: "The First Feminine-Care Standard", section: "Scope & standards" },
 }
 
 // Parsed per-briefing metadata (abstract, references, series). Keyed by slug.
