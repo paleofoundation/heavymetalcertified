@@ -18,6 +18,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 7']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/articles/subsistence-fishing-mehg-disparity": [
@@ -144,6 +149,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/articles/organoarsenical-inertness-assumption": [
@@ -216,6 +226,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 2']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/the-mucosal-gap": [
@@ -234,6 +249,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 6']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/articles/us-baby-food-heavy-metal-laws-states-fda": [
@@ -243,6 +263,16 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 6']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/articles/testing-disclosure-packaging-rules": [
@@ -289,6 +319,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 2']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/heavy-metals-in-peptides-and-sarms": [
@@ -299,6 +334,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/heavy-metals-in-pet-food": [
@@ -309,6 +349,21 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 7']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 8']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 9']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/no-limit-is-not-no-standard": [
@@ -319,6 +374,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 3']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/after-palmquist": [
@@ -328,6 +388,11 @@
       {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
       {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
+      {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+      {"click":"[aria-label='Close source record']"},
+      {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+      {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+      {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/briefings/brief-8-surveillance-protocol": [
@@ -938,7 +1003,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 7']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/articles/subsistence-fishing-mehg-disparity": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1088,7 +1158,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 1']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/articles/organoarsenical-inertness-assumption": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1178,7 +1253,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 2']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/the-mucosal-gap": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1198,7 +1278,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 6']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/articles/lead-and-cadmium-in-dark-chocolate": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1218,7 +1303,17 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 6']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/articles/testing-disclosure-packaging-rules": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1269,7 +1364,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 2']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/heavy-metals-in-peptides-and-sarms": [
           {"sel":".wiki-content div[id^=\"ref-\"]","prop":"count","want":8},
@@ -1280,7 +1380,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/heavy-metals-in-pet-food": [
           {"sel":".wiki-content div[id^=\"ref-\"]","prop":"count","want":9},
@@ -1291,7 +1396,22 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 7']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 8']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 9']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/no-limit-is-not-no-standard": [
           {"sel":".wiki-content div[id^=\"ref-\"]","prop":"count","want":6},
@@ -1302,7 +1422,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 3']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/after-palmquist": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},
@@ -1312,7 +1437,12 @@
           {"sel":".hmtc-cite-panel-finding","prop":"font-weight","want":"400"},
           {"sel":".hmtc-cite-panel-title","prop":"font-family","want":"Lora","match":"contains"},
           {"sel":".hmtc-cite-panel-copy","prop":"count","want":1},
-          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
+          {"sel":".hmtc-cite-panel","prop":"width","want":"390px"},
+          {"click":"[aria-label='Close source record']"},
+          {"click":"[data-cite-panel-wired][aria-label='Open source record 4']"},
+          {"sel":"[data-cite-panel].is-open","prop":"count","want":1},
+          {"sel":".hmtc-cite-panel-section","prop":"count","want":3},
+          {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
         ],
         "/briefings/brief-8-surveillance-protocol": [
           {"sel":"[data-cite-panel-records]","prop":"count","want":1},

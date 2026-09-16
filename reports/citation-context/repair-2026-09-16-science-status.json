@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-16",
+  "resolvedReferences": 3,
+  "refreshedReferences": 22,
+  "pendingAssignedReferences": 0,
+  "scope": "Three source-identity repairs and directly affected claims; broader retained article limitations are documented in the review and source drawers.",
+  "reviewDocument": "docs/reviews/2026-09-16-citation-repair-science.md",
+  "pages": [
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "number": "1",
+      "status": "resolved-by-explicit-replacement",
+      "originalIdentityRecovered": false,
+      "priorUnresolvedReport": "reports/citation-context/batch7-bivalves-unresolved.json",
+      "reviewedBatch": "reports/citation-context/repair-2026-09-16-science-bivalve.json",
+      "replacementTitle": "Cadmium bioaccumulation and retention kinetics in the Chilean blue mussel Mytilus chilensis: seawater and food exposure pathways",
+      "refreshedReferences": 7,
+      "pageDigest": "03458733fea2af95f49f507256926acce94649d0b4786077e6463df3d3764c2c",
+      "sourceDigest": "954b3a04290157fbce869f101aa4c414cdf05ecf7297804366d17c44cc821336"
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "number": "6",
+      "status": "resolved-by-explicit-replacement",
+      "originalIdentityRecovered": false,
+      "priorUnresolvedReport": "reports/citation-context/unresolved/wastewater-reference-6.json",
+      "reviewedBatch": "reports/citation-context/repair-2026-09-16-science-wastewater.json",
+      "replacementTitle": "FAO Water Quality for Agriculture, Table 21; Codex General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995)",
+      "refreshedReferences": 7,
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
+      "sourceDigest": "ddeeb1f8bfa46d5f2242777ec512847d40abdf72328462ddaacf19346c69ca7e"
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "number": "7",
+      "status": "resolved-by-explicit-replacement",
+      "originalIdentityRecovered": false,
+      "priorUnresolvedReport": "reports/citation-context/batch8-organ-meat-unresolved.json",
+      "reviewedBatch": "reports/citation-context/repair-2026-09-16-science-organ.json",
+      "replacementTitle": "Commission Regulation (EU) 2023/915: lead and cadmium maximum levels for meat and offal",
+      "refreshedReferences": 8,
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
+      "sourceDigest": "f974a54534901d915a39ab22ce8b16a9420e190d109fc87c1b99d7c3ef1055bd"
+    }
+  ],
+  "validation": {
+    "dryRunImports": "passed all three batches",
+    "writeImports": "passed all three batches; zero stale refs retired",
+    "savedRecordsMatchBatches": true,
+    "publicationDatesPreserved": true,
+    "designLint": "passed; 466 reading pages; 399 advisory table-style backlog",
+    "independentReview": "no new finding",
+    "globalIndexBuild": "root-owned; not run by this subtask"
+  },
+  "usage": {
+    "weeklyUsedBeforePercent": 50,
+    "weeklyUsedAfterPercent": 52,
+    "scope": "account-wide rounded meter"
+  }
+}

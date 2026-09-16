@@ -1,0 +1,220 @@
+{
+  "page": "briefings/no-limit-is-not-no-standard",
+  "reviewed": "2026-09-16",
+  "refs": {
+    "1": {
+      "referenceTitle": "Lead Astray? The Hidden Contaminants in the Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact",
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "9fb5b33e213c59cdca122e0cd1712aa057c7eb69e445956bddc67828c249587b",
+      "citation": "Craven A, Ferris J, Nielsen S, Piatkowski T. Lead Astray? The Hidden Contaminants in Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact. Drug and Alcohol Review. 2025. doi:10.1111/dar.70007. Version of record, seven-page brief report.",
+      "summary": "Researchers tested 28 anonymously donated anabolic-steroid products reportedly purchased in Australia during 2022–2024: 16 injectable oils, 10 oral products and two powders. Fifteen were mislabeled or missold; four of 21 with stated expected doses were within ±5%. ICP-OES testing found metals in all three product classes.",
+      "establishes": "This small convenience sample establishes composition problems in the tested AAS products, not market-wide rates for peptides or SARMs. Metal concentration must be combined with product dose to estimate daily exposure; the study did not measure patient injury or manufacturing practices.",
+      "relevance": "The sample motivates examining illicit AAS metal content. Correcting the legal-exemption claim does not validate the page’s separate universal non-detect derivation or extrapolation across Category26.",
+      "links": [
+        {
+          "label": "University-hosted version of record",
+          "href": "https://research-repository.griffith.edu.au/server/api/core/bitstreams/bb561ea2-3421-4b95-bfa4-9abfe96bb1ab/content"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://research-repository.griffith.edu.au/server/api/core/bitstreams/bb561ea2-3421-4b95-bfa4-9abfe96bb1ab/content",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 1, September 15, 2026. Read abstract, methods, results/Tables 1–2, discussion, limitations and disclosure, article pp.1–6 (PDF pp.2–7). Table 2 averages/ranges use detectable values only. Oral nickel 27.48 µg/g is in the text; reaching 200 µg/day at that mean would require about 7.28 g/day, so realistic exposure is not established without dose data. Oral aluminum mean651.34/max1220 µg/g is confirmed, but calcium and magnesium means are higher, contradicting “heaviest load of all.” Paper text/table have copper and PDE inconsistencies; use Q3D directly for limits. PEDTest funded testing and its CEO is an author. No peptide/SARM samples or purification-process observations. Fresh page review: the study does not establish the proposed zero-threshold list or a target below an unspecified instrument detection limit. It studied AAS rather than the whole Category 26 range, and offers no experimental comparison of certification versus abstention."
+          },
+          {
+            "url": "https://research-repository.griffith.edu.au/server/api/core/bitstreams/bb561ea2-3421-4b95-bfa4-9abfe96bb1ab/content",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The sample motivates examining illicit AAS metal content. Correcting the legal-exemption claim does not validate the page’s separate universal non-detect derivation or extrapolation across Category26."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "ICH Q3D(R2) Guideline for Elemental Impurities",
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "c6dd3d29c2b4c46a7920839f6be66a650aec892a28c17f42b76f68f3fd2000ae",
+      "citation": "International Council for Harmonisation. Guideline for Elemental Impurities Q3D(R2). Step 4, 2022; document history includes April 2022 corrections. Sections 2–6 and Appendix 2, Table A.2.1.",
+      "summary": "Q3D provides permitted daily exposures and risk-based controls for specified finished drug products. Section 7 explicitly describes converting a daily exposure budget into a concentration using the maximum daily product intake, with assumptions and contributions from product components documented.",
+      "establishes": "A concentration derived from a stated exposure model is a recognized assessment tool. Q3D supplies finite PDEs, not a universal non-detect requirement. Product intake, source contributions and analytical capability cannot be omitted merely by calling a result non-detect.",
+      "relevance": "It remains the basis for route-specific toxicological reference points. The legal correction does not supply the absent numerical derivation, dose assumptions or analyte-specific reporting limits claimed elsewhere on the page.",
+      "links": [
+        {
+          "label": "Official ICH guideline",
+          "href": "https://database.ich.org/sites/default/files/Q3D-R2_Guideline_Step4_2022_0308.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://database.ich.org/sites/default/files/Q3D-R2_Guideline_Step4_2022_0308.pdf",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 2, September 15, 2026. Read history; scope, risk assessment and control discussion (PDF pp.5–14); and Appendix 2 Table A.2.1 (PDF p.26). §4 explains that omitted elements such as aluminum may be addressed by other regional requirements or patient-specific considerations; omission is not an absence of toxicology. The 30% control threshold allows no additional controls with a justified consistently low result and adequate existing controls. Editorial issues: route limits are not universally progressively tighter; “every licensed medicine must pass” overstates a risk-based framework with exclusions, and unapproved status is not a legal exemption created by this guideline. Newly read §7, printed pp.11–12/PDF pp.14–15: PDEs refer to exposure from the drug product; concentration conversion depends on known or assumed daily intake. The guideline does not prescribe the page’s subtraction of an ordinary dietary budget, stacking model, vulnerable-user multiplier, or universal collapse to non-detect. No numerical derivation or analyte-specific detection limits are supplied in the page. The listed cadmium/mercury/etc “zero-threshold” grouping is not established by this source. HMTc choosing a stricter rule is distinct from deriving that rule from Q3D."
+          },
+          {
+            "url": "https://database.ich.org/sites/default/files/Q3D-R2_Guideline_Step4_2022_0308.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. It remains the basis for route-specific toxicological reference points. The legal correction does not supply the absent numerical derivation, dose assumptions or analyte-specific reporting limits claimed elsewhere on the page."
+          }
+        ]
+      },
+      "kind": "International scientific guideline"
+    },
+    "3": {
+      "referenceTitle": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more",
+      "citation": "U.S. Food and Drug Administration. Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more. Current safety overview, accessed September 16, 2026. Explicit replacement for the unavailable October 31, 2017 FDA In Brief announcement.",
+      "summary": "FDA warns against bodybuilding products marketed as SARMs, identifies them as unapproved drugs, and describes health risks and enforcement.",
+      "establishes": "A research-use label does not remove oversight of products sold for human use. This warning supplies no metal measurements or certification standard.",
+      "relevance": "The revised briefing distinguishes uncertain quality assurance from regulatory exemption. Testing cannot establish lawful drug marketing or broader safety.",
+      "links": [
+        {
+          "label": "FDA safety overview",
+          "href": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more"
+        }
+      ],
+      "kind": "Government safety warning",
+      "review": {
+        "reviewer": "Codex primary-source review and explicit citation repair",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more",
+            "note": "Read full substantive warning, consumer information, FDA Actions and Previous SARMs alerts. The historic link identifies the 2017 announcement but remains unavailable. This later overview is deliberately substituted in the bibliography, not represented as recovered 2017 text."
+          },
+          {
+            "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/titan-sarms-llc-719645-12122025",
+            "note": "Read December 12, 2025 letter, intended-use assessment and conclusion. FDA applied drug law despite research labeling. This concrete enforcement example corroborates the jurisdiction correction; it is not evidence of measured metals or a final court judgment."
+          }
+        ]
+      },
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "29e873f730d0dd6a03bcb18d65f035f4f457d7db0869034e551abe8ef34a9794"
+    },
+    "4": {
+      "referenceTitle": "Warnings on counterfeit and compounded semaglutide and tirzepatide",
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "8256b65a3ced262c3e21ca51f63999dc7f60152ebfe2cd40e4c625fb1fe9ee10",
+      "citation": "US Food and Drug Administration. FDA Warns Consumers Not to Use Counterfeit Ozempic (semaglutide) Found in U.S. Drug Supply Chain, MedWatch bulletin, December 21, 2023; FDA Warns Patients and Health Care Professionals Not to Use Compounded Drugs from Fullerton Wellness, November 1, 2024. Current context: FDA’s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss.",
+      "summary": "The 2023 warning describes counterfeit Ozempic and needles found in the legitimate supply chain and seizure of thousands of units. The 2024 Fullerton warning concerns nonsterile compounded semaglutide and tirzepatide injections. These documents address distinct counterfeit and compounding failures.",
+      "establishes": "They establish specific FDA enforcement and safety concerns, not measured heavy-metal contamination. Compounded products are not FDA-approved, but compounding has legal conditions and oversight; it is not synonymous with counterfeiting or with an absence of regulation.",
+      "relevance": "The revised opening now treats these as distinct counterfeit and compounding events under existing oversight. They do not establish metal contamination or prove that certificate wording prevents endorsement effects.",
+      "links": [
+        {
+          "label": "FDA December2023 bulletin",
+          "href": "https://content.govdelivery.com/accounts/USFDA/bulletins/3813bc8"
+        },
+        {
+          "label": "FDA November2024 compounding warning",
+          "href": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-patients-and-health-care-professionals-not-use-compounded-drugs-fullerton-wellness"
+        },
+        {
+          "label": "FDA current GLP-1 context",
+          "href": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3813bc8",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 5, September 15, 2026. Read complete dated FDA MedWatch bulletin, including seizure, counterfeit needles, unknown drug identity/quality and recommendations. The counterfeit was found in the legitimate supply chain, contrary to treating every cited event as exclusively outside it. No elemental-impurity result is reported. Fresh page issue: this bulletin documents counterfeit semaglutide in the legitimate supply chain; it does not document a seizure of counterfeit tirzepatide. Grouping both drug names must not convert the separate compounding warning into a counterfeit-seizure finding."
+          },
+          {
+            "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-patients-and-health-care-professionals-not-use-compounded-drugs-fullerton-wellness",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 5, September 15, 2026. Read entire dated warning: semaglutide and tirzepatide; state inspection, FDA collaboration, nonsterile ingredients and absent sterilization. This identifies an actual2024 warning encompassing both drugs, without implying every compounder shares these findings. It explicitly discusses state oversight."
+          },
+          {
+            "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 5, September 15, 2026. Read opening discussion of unapproved products and FDA recommendations on compounding and licensed pharmacies. It distinguishes medical needs not met by an approved product from categorical endorsement of all compounding. This current page supplements the identified2023–2024 notices, rather than silently substituting for them. Editorial issue: lack of FDA approval is not lack of FDA authority."
+          },
+          {
+            "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3813bc8",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The revised opening now treats these as distinct counterfeit and compounding events under existing oversight. They do not establish metal contamination or prove that certificate wording prevents endorsement effects."
+          },
+          {
+            "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/3813bc8",
+            "note": "September16 retrieval repeated: read complete December21,2023 bulletin again and confirmed legitimate-supply-chain counterfeit Ozempic incident. Also reopened the Fullerton warning, which redirects to FDA drug-alerts-and-statements and confirms November1,2024, semaglutide/tirzepatide and FDA-state collaboration."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "General Chapters <232> Elemental Impurities: Limits and <233> Elemental Impurities: Procedures",
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "ca6fc5241d55c727f0da9d16503667a8fc610249c2d4017fc1f161bcac1c74ad",
+      "citation": "United States Pharmacopeia. General Chapter <232>, Elemental Impurities—Limits, First Supplement to USP 40–NF 35 (official December 1, 2017); General Chapter <233>, Elemental Impurities—Procedures, Second Supplement to USP 38–NF 33; and USP Elemental Impurities Updates (updated January 17, 2023). Public historical texts and revision overview; current complete USP-NF text not accessed.",
+      "summary": "Chapter 232 describes impurity limits and risk-based assurance of compliance in drug products, with exclusions and component-data options. Chapter 233 describes ICP-OES and ICP-MS procedures and validation criteria for alternatives. The reviewed public texts are historical editions; USP’s update page documents subsequent revisions.",
+      "establishes": "The reviewed texts distinguish impurity limits, risk-based control and validated measurement. Chapter 233 allows ICP-OES, ICP-MS and validated alternatives; its quantitation criteria do not establish a single immutable instrument floor or prove that non-detect means zero contamination. Current full USP-NF text was not accessed.",
+      "relevance": "The chapters support method documentation and capability assessment. Their retained limitations still apply to the page’s differing investigation-versus-failure rules for detected results.",
+      "links": [
+        {
+          "label": "USP Chapter232, historical official text",
+          "href": "https://www.usp.org/sites/default/files/usp/document/our-work/chemical-medicines/key-issues/232-40-35-1s.pdf"
+        },
+        {
+          "label": "USP Chapter233, historical text",
+          "href": "https://www.usp.org/sites/default/files/usp/document/our-work/chemical-medicines/key-issues/c233.pdf"
+        },
+        {
+          "label": "USP revision overview",
+          "href": "https://www.usp.org/chemical-medicines/elemental-impurities-updates"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://www.usp.org/sites/default/files/usp/document/our-work/chemical-medicines/key-issues/232-40-35-1s.pdf",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 3, September 15, 2026. Read introduction/scope, pp.8065–8066: risk-based control, minimum consideration of As/Cd/Pb/Hg, exclusions including TPN and dietary supplements, and use of supplier/component data. This is explicitly the December2017 edition, not a verified current numerical table. Current complete text was not available through the public portal."
+          },
+          {
+            "url": "https://www.usp.org/sites/default/files/usp/document/our-work/chemical-medicines/key-issues/c233.pdf",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 3, September 15, 2026. Read pp.1–2 of the Second Supplement to USP38–NF33 text: two instrument approaches, suitability/validation, alternatives, and sample preparation. Speciation procedures are expressly outside the chapter. Historical edition is disclosed rather than treated as current. Newly read p.4 quantitation/accuracy discussion and appendix target-limit definition. These do not derive the page’s universal non-detect target. Fresh internal page contradiction: earlier and concluding sections investigate any detection and fail at a PDE-derived dose, while the derivation section says every detection fails. Those are materially different decision rules; source drawers do not resolve that prose conflict."
+          },
+          {
+            "url": "https://www.usp.org/chemical-medicines/elemental-impurities-updates",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 3, September 15, 2026. Read January17,2023 update and chapter-specific revision briefs covering both232 and233. It discusses alignment with Q3D(R2) and later method harmonization. Proposed changes are not treated as enacted current text. This limited access supports the chapters’ roles, not a complete current USP compliance determination."
+          },
+          {
+            "url": "https://www.usp.org/sites/default/files/usp/document/our-work/chemical-medicines/key-issues/232-40-35-1s.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The chapters support method documentation and capability assessment. Their retained limitations still apply to the page’s differing investigation-versus-failure rules for detected results."
+          }
+        ]
+      },
+      "kind": "Compendial standards — historical texts and overview"
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index: peptides / SARMs / research-chemicals literature baseline",
+      "pageDigest": "15ce7a1528353880c6c005e314dcefe4b7e24da93eef95795590ea504288eaec",
+      "sourceDigest": "14f73bea349693d77d32618ca146e1a787ef979b27f55f1491319166b10f906a",
+      "citation": "Institute of Contaminant Standards. Research Chemicals, Peptides & SARMs (HMTc Category 26 master). Heavy Metal Index. Updated June 8, 2026; accessed September 15, 2026.",
+      "summary": "The category page organizes a developing literature corpus across injectable peptides, oral SARMs, anabolic steroids and raw powders. It links primary studies and explicitly describes thin coverage and incomplete synthesis. It separates literature summaries from unpublished certification-threshold decisions.",
+      "establishes": "This is an index and synthesis resource, not another experiment. Its author and operator are connected to the Institute of Contaminant Standards and HMTc; editorial separation does not establish independent institutional validation.",
+      "relevance": "The index provides literature context, not independent verification of the internal non-detect derivation. The legal-status correction does not resolve the remaining methodological evidence gap.",
+      "links": [
+        {
+          "label": "Category literature baseline",
+          "href": "https://heavymetalindex.com/products/research-chemicals-peptides-sarms"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/products/research-chemicals-peptides-sarms",
+            "note": "Exact-document review reused from batch6-peptides.json, reference 8, September 15, 2026. Read overview, literature scope, source inventory, update history, attribution and footer. The page says June8,2026, thin corpus and pending synthesis; its inventory includes Craven2025 and Janvier2018. The reported source-count badge and displayed inventory are not treated as an independently audited count. Karen Pendergrass is the named author; Institute of Contaminant Standards operator/Paleo Certified copyright and HMTc link are disclosed. This source does not validate commercial certification outcomes. Fresh page relevance: the index says candidate values/synthesis are incomplete and does not expose the asserted universal non-detect derivation. The claimed eleven-analyte governance rule is a program statement, not independently validated by this index."
+          },
+          {
+            "url": "https://heavymetalindex.com/products/research-chemicals-peptides-sarms",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The index provides literature context, not independent verification of the internal non-detect derivation. The legal-status correction does not resolve the remaining methodological evidence gap."
+          }
+        ]
+      },
+      "kind": "Evidence index"
+    }
+  }
+}

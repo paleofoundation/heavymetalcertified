@@ -1,15 +1,15 @@
 {
   "page": "briefings/heavy-metals-in-pet-food",
-  "reviewed": "2026-09-15",
+  "reviewed": "2026-09-16",
   "refs": {
     "1": {
       "referenceTitle": "Lead concentrations in commercial dogfood containing pheasant in the UK",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "b5a559b6cdbcdc697075d555529dbd28a76d51f9bf0935222b2c180d88703ad6",
       "citation": "Pain DJ, Green RE, Bates N, Guiu M, Taggart MA. Ambio. 2023;52:1339–1349. Published 3 May 2023. doi:10.1007/s13280-023-01856-x.",
       "summary": "The UK study tested 185 packages across eight game-meat and chicken dog-food products using X-rays and ICP-OES. Raw pheasant products had highly variable lead; the weighted mean after excluding known whole-shot samples was about 221 mg/kg dry weight.",
       "establishes": "The 34-fold comparison is with pheasant sold for human consumption, not background contamination. The three raw-product exceedance rates of 63–100% concern applicable feed maxima. This retail study did not test health outcomes or all raw diets.",
-      "relevance": "It supports ingredient-specific testing of game-based pet food. Human-food comparisons need the correct matrix, moisture basis and legal scope; neither a comparison nor certification demonstrates veterinary benefit.",
+      "relevance": "The corrected briefing uses the human-pheasant comparator and feed exceedance benchmark accurately. The study supports ingredient-specific testing; it does not show health outcomes or validate a human-food benchmark for every pet.",
       "links": [
         {
           "label": "Full study",
@@ -17,24 +17,28 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10272007/",
             "note": "Read full primary article, particularly sampling, digestion, Table 1 and shot-free comparison. Editorial: the page misidentifies the 34-fold comparator and feed exceedance benchmark. The 69% human-pheasant result uses the domesticated-meat comparator, which is not a binding game-meat limit. Radio-dense particles were not all chemically identified as lead; mincing as a cause was proposed, not experimentally isolated."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10272007/",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
     },
     "2": {
       "referenceTitle": "Individual and combined contamination of the toxic metals in commercial cat and dog food",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "9991d51153cc812aa24a88aa2b133100f13d27f80d286fff1469f60c4bcc0125",
       "citation": "Du J, Zhou K, Jiang H, Hu S, Zhang W, Zheng Q, Zhou G, Zhang N. Scientific Reports. 2025;15:13237. Published 17 April 2025. doi:10.1038/s41598-025-98066-0.",
       "summary": "This survey tested 93 imported products produced in 2021–2022 and purchased in three Chinese cities: 45 cat foods and 48 dog foods. Atomic absorption and fluorescence assays measured five total metals. Chromium and arsenic were detected in every sample; detection frequencies differed for the others.",
       "establishes": "Cat-food lead and cadmium means were higher among positive samples. The hazard indices used maximum concentrations and human toxicological reference values because pet-specific values were unavailable; they are modeling results, not observed illness or species-specific risk thresholds.",
-      "relevance": "The study supports measuring multiple metals, with detection limits and chemical species stated. Its cited Chinese limits are the authors’ regulatory comparison, not an independently verified current legal instrument. It does not establish a universal lower human-fish mercury limit.",
+      "relevance": "The corrected page distinguishes assayed metals from detections and attributes Chinese legal comparisons to the authors. HMTc should state detection limits, chemical species and the uncertainty of models using human reference doses.",
       "links": [
         {
           "label": "Full study",
@@ -42,24 +46,28 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12006530/",
             "note": "Read final published paper, methods, Tables 1–5 and exposure-model assumptions. Editorial: all five were assayed, not detected in every food; lead/cadmium averages exclude negatives. Total chromium and arsenic measurements cannot establish oxidation state or inorganic fraction. The paper’s acute-index terminology and borrowed reference doses require caution; Chinese source legislation was not separately reviewed."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12006530/",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
     },
     "3": {
       "referenceTitle": "Pet food safety at risk? Investigating toxic metal contamination in Lebanon and the UAE",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "03082eebfa55fbb76e92749a6ccab916f43151d410dae50827a602f039af0a1b",
       "citation": "Haydous F, Hassan HF, Shehab A, Alwan N, Serhan M, Dimassi H, Akoury E. RSC Advances. 2025;15:22629–22640. Published 2 July 2025. doi:10.1039/d5ra02790j.",
       "summary": "The authors screened 196 commercial products in Lebanon and the UAE in fall 2021, comprising 147 cat and 49 dog foods. ICP-MS measured nine elements. Table 6 reports mean cadmium of 0.251 mg/kg in cat food and 0.112 mg/kg in dog food.",
       "establishes": "These are product-group observations, not an ingredient-controlled experiment or clinical study. The study’s threshold comparisons combine disparate reference values and do not independently establish violations of binding pet-feed limits.",
-      "relevance": "It supports regional surveillance and reporting product format and intended animal. Marine or organ ingredients as the cause of the cadmium difference remain a hypothesis. Human-meat maxima are comparators, not automatically applicable limits for compound pet foods.",
+      "relevance": "The corrected page presents the cat/dog cadmium difference as an observation, with no ingredient-causation or binding-law inference. It supports regional surveillance and product-format reporting rather than automatic transfer of human-meat limits.",
       "links": [
         {
           "label": "Full study",
@@ -67,24 +75,28 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219634/",
             "note": "Read methods, product counts, Tables 3–7 and discussion. Editorial: Table 7 uses cadmium 0.1 mg/kg as an EU comparator, unlike the reviewed complete-pet-feed limit of 2 mg/kg. Its mercury summaries also differ markedly from individual-product values; no mercury estimate is adopted here. Regulatory exceedance language is attributed to the authors rather than treated as verified law."
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219634/",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
     },
     "4": {
       "referenceTitle": "Evaluation of selected ultra-trace minerals in commercially available dry dog foods",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "15d9239d0d782a084124243c565b0276f19853894f18649b5cf3722cc8e11020",
       "citation": "Kim HT, Loftus JP, Gagné JW, Rutzke MA, Glahn RP, Wakshlag JJ. Veterinary Medicine: Research and Reports. 2018;9:43–51. Published 26 June 2018. doi:10.2147/VMRR.S165890.",
       "summary": "The authors measured chromium, nickel, molybdenum, silica and aluminum in 49 maintenance dry dog foods bought around Ithaca, New York, using ICP-AES. Estimated intake per 1,000 kcal exceeded average human intake for aluminum, chromium and molybdenum.",
       "establishes": "Average human intake is not a toxicity threshold. The authors found no evidence of potential chronic toxic exposure under their extrapolated intake comparisons, while calling for bioavailability research and dog-specific allowances. This was not a feeding trial.",
-      "relevance": "The paper supports examining additional elements and expressing exposure on a defined intake basis. It does not demonstrate harm from these foods or validate human concentration limits as optimal pet standards. Its 2018 description of missing standards is not a current legal survey.",
+      "relevance": "The corrected briefing includes the authors’ reassuring modeled-toxicity interpretation and dates their standards-gap observation to 2018. The study supports additional-element monitoring, not a present-day survey of AAFCO/NRC requirements or veterinary validation of HMTc.",
       "links": [
         {
           "label": "Full publisher article",
@@ -92,24 +104,28 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.dovepress.com/evaluation-of-selected-ultra-trace-minerals-in-commercially-available--peer-reviewed-fulltext-article-VMRR",
             "note": "Read abstract, sampling and analytical methods, results, discussion and conclusion. Editorial: the page omits the authors’ reassuring modeled-toxicity finding when emphasizing higher human-relative intake. Ingredient and metabolic explanations were not experimentally resolved. NRC recommendations should not be described as legislation, and total chromium measurement does not identify chromium(VI)."
+          },
+          {
+            "url": "https://www.dovepress.com/evaluation-of-selected-ultra-trace-minerals-in-commercially-available--peer-reviewed-fulltext-article-VMRR",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
     },
     "5": {
       "referenceTitle": "Chemical Composition and Palatability of Nutraceutical Dog Snacks",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "1ba5eae1e4f50e0bba0e91b8984c37a533976a969c7a587cf1ee975b26db3439",
       "citation": "Kępińska-Pacelik J, Biel W, Mizielińska M, Iwański R. Applied Sciences. 2023;13(5):2806. Published 22 February 2023. doi:10.3390/app13052806.",
       "summary": "This formulation experiment assessed four self-produced dog-snack prototypes, two extruded and two baked, including chemical composition and palatability. Table 5 reports cadmium, lead, chromium and nickel as not detected in all four snacks.",
       "establishes": "The experiment does not establish contamination prevalence in retail treats. Nondetection is bounded by analytical sensitivity and does not mean absolute absence; analyte-specific detection limits were not found in the reviewed methods. Palatability does not establish long-term health benefit.",
-      "relevance": "The paper illustrates that treats can be included in analytical assessment, but directly contradicts the page’s claim that these finished snacks carried detected cadmium, lead, chromium and nickel. It offers no validation of a certification program.",
+      "relevance": "The corrected briefing reports nondetection in four laboratory prototypes rather than detected contamination in retail treats. It illustrates analytical assessment of treats, with method sensitivity and product scope retained; it does not validate a certification program.",
       "links": [
         {
           "label": "Full publisher PDF",
@@ -117,24 +133,28 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://mdpi-res.com/d_attachment/applsci/applsci-13-02806/article_deploy/applsci-13-02806.pdf",
             "note": "Read abstract, formulation and mineral methods, results and Table 5; visually checked PDF page 7 to confirm every Cd/Pb/Cr/Ni entry is “nd.” Editorial: these were laboratory-made extruded and baked prototypes, not a retail-market survey or a comparison with dried treats. The page’s positive-contamination characterization needs correction."
+          },
+          {
+            "url": "https://mdpi-res.com/d_attachment/applsci/applsci-13-02806/article_deploy/applsci-13-02806.pdf",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
     },
     "6": {
       "referenceTitle": "Directive 2002/32/EC on undesirable substances in animal feed",
-      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
       "sourceDigest": "fd12f1afddc9546d38762c8a53b809061a8f635e768dd87b1e7220ffae11248e",
       "citation": "European Parliament and Council. Directive 2002/32/EC of 7 May 2002 on undesirable substances in animal feed. OJ L 140, 30 May 2002, p. 10. Consolidated text dated 28 November 2019.",
       "summary": "Annex I sets maxima on a 12%-moisture basis: complete-feed lead 5 mg/kg; complete-pet-feed cadmium 2 mg/kg; total arsenic generally 2 mg/kg, but 10 mg/kg for specified marine-containing pet feeds. Compound feed for dogs and cats has a total-mercury maximum of 0.3 mg/kg.",
       "establishes": "The marine arsenic exception requires operators, on authority request, to demonstrate inorganic arsenic below 2 mg/kg. Articles 3–6 include general health protection, source investigation and a ban on dilution of noncompliant feed. Complementary-feed rules differ.",
-      "relevance": "This establishes feed-specific comparators, not human-food legality or veterinary safety of every concentration below a maximum. The page’s universal 2 mg/kg pet-feed arsenic statement omits an exception relevant to fish and seaweed ingredients.",
+      "relevance": "The corrected page names the dated consolidation, marine arsenic exception, moisture basis and general safeguards. It uses feed maxima as legal context, while keeping HMTc’s voluntary human-food comparison separate from a demonstrated safety threshold.",
       "links": [
         {
           "label": "Official consolidated directive",
@@ -142,15 +162,101 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source and page-context review",
-        "date": "2026-09-15",
+        "reviewer": "Codex; explicit reuse of retained 15 September primary-source evidence, with complete corrected-page relevance reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02002L0032-20191128",
             "note": "Read version header, Articles 2–7 and Annex I Section I arsenic/cadmium/lead/mercury rows and footnotes, PDF pages 3–5 and 9–14. Official PDF obtained after browser challenge. Consolidation is a documentation aid; binding acts are the original directive and amendments. Editorial: numeric omissions do not remove Article 3’s general health requirement; human/animal comparisons require moisture and category alignment."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02002L0032-20191128",
+            "note": "16 September 2026: retained exact-source evidence above was reused, not represented as a new full-source read. Read the complete revised page and bibliography and reassessed this reference. The corrected public explanation is recorded in the relevance field; older editorial notes describe the pre-correction page."
           }
         ]
       }
+    },
+    "7": {
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157. Original act; selected Annex I cadmium categories.",
+      "summary": "The original regulation sets cadmium maxima of 0.05 mg/kg for listed livestock meat excluding offal and 0.04 mg/kg for pulses excluding proteins.",
+      "establishes": "These are category-specific human-food maxima. Articles 2–3 govern listed foods and relevant processing factors; the act does not turn those values into compound-pet-food limits.",
+      "relevance": "The corrected bibliography replaces the unspecified national-register grouping with this exact EU source. The page removes unverified Israeli examples and universal comparison factors. HMTc’s use of a human-food value for pet food remains a voluntary choice.",
+      "links": [
+        {
+          "label": "Original EU regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and complete corrected-page review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+            "note": "Reused exact original-act identity and scope review retained in the existing 15 September EU source panels, including the supplements page ref5; fresh whole-page comparison. EUR-Lex returned a browser challenge on 16 September, so no new full-text access is claimed."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Explicitly reused the 15 September primary read recorded in reports/citation-context/unresolved/pet-food-unresolved.json ref7: original Articles 2–3 and Annex cadmium meat/pulses rows. Corrected scope excludes the unidentified national register and unavailable Israeli source. Review covers the cited original act, not an audit of every later amendment."
+          }
+        ]
+      },
+      "kind": "Regulation",
+      "referenceTitle": "Commission Regulation (EU) 2023/915: selected human-food cadmium categories",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
+      "sourceDigest": "f23bbb111874db5858eb1198660a40288d1e6bf8bc5f1457c423e54f7202ea19"
+    },
+    "8": {
+      "citation": "US Food and Drug Administration. Pet Food. Official animal-food overview; accessed 16 September 2026.",
+      "summary": "FDA describes federal pet-food safety and labeling requirements and state labeling rules, many based on AAFCO models.",
+      "establishes": "General animal-food safeguards continue to apply even where this overview supplies no metal-specific number. This page is not the AAFCO Official Publication or an NRC nutrient standard.",
+      "relevance": "The corrected reference openly replaces an unidentified AAFCO edition. It supports the page’s distinction between general law, model rules and dated research observations, rather than asserting that only a certifier can impose a limit.",
+      "links": [
+        {
+          "label": "FDA pet-food overview",
+          "href": "https://www.fda.gov/animal-veterinary/animal-foods-feeds/pet-food"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and complete corrected-page review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/animal-veterinary/animal-foods-feeds/pet-food",
+            "note": "Read introduction, Ingredients, Labeling, and Inspections and Compliance sections on 16 September 2026. Corrected citation names the source actually reviewed. This official overview describes federal safety duties and state use of AAFCO models; no exhaustive absence-of-metal-limits finding is inferred."
+          }
+        ]
+      },
+      "kind": "Government",
+      "referenceTitle": "FDA: Pet Food: federal safety requirements",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
+      "sourceDigest": "5cbcfef49601de0648a289a784ede6da67d40dfcd560598c5e6eec42ffab3bd9"
+    },
+    "9": {
+      "citation": "Heavy Metal Index. Reference-library homepage. Accessed 16 September 2026; displayed collection update: 14 September 2026.",
+      "summary": "The homepage offers navigation to metal, product, regulation, source and evidence-method pages in a changing reference library.",
+      "establishes": "A dated homepage citation identifies the library entry point. It is not a frozen pet-food dataset, systematic-review result or proof of the completeness of any baseline.",
+      "relevance": "The corrected page uses HMI only as a discovery resource and attributes occurrence findings to individually named studies. This replaces the unidentifiable pet-food/per-analyte collection without claiming that collection was verified.",
+      "links": [
+        {
+          "label": "HMI reference-library homepage",
+          "href": "https://heavymetalindex.com/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and complete corrected-page review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/",
+            "note": "Read homepage headings, navigation, library-at-a-glance update date and What this reference is section on 16 September 2026. Review is limited to the exact homepage. No full-library review or independent validation of HMTc is claimed."
+          }
+        ]
+      },
+      "kind": "Reference library",
+      "referenceTitle": "Heavy Metal Index: reference-library homepage (accessed 16 September 2026)",
+      "pageDigest": "d80be6bbfe51cf4fc939f01a5666ae2207e4c5816be7a4403bca1b4890c2fd2e",
+      "sourceDigest": "545123b56d67b25c00f880396a607889781079d032d7deb87c324c3f93da8e18"
     }
   }
 }

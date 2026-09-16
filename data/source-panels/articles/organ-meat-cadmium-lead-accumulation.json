@@ -1,15 +1,15 @@
 {
   "page": "articles/organ-meat-cadmium-lead-accumulation",
-  "reviewed": "2026-09-15",
+  "reviewed": "2026-09-16",
   "refs": {
     "1": {
       "referenceTitle": "Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "74161288bf22ff681b54aa97206d9ff81639191ea27f454bf1a5d0b4e615aef9",
       "citation": "Rabeey MA, Sabala RF, Zakaria AI, Sallam KI. Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt. Scientific Reports. 2025;15:43828. doi:10.1038/s41598-025-29927-x. Supplemental context: Regulation (EU) 2023/915, consolidated August 19, 2026.",
       "summary": "The survey tested 105 market samples each of bovine muscle, liver and kidney. Mean cadmium was 0.030, 0.056 and 0.073 mg/kg wet weight, respectively; tissue differences were statistically significant. Mean lead did not differ significantly, while total mercury was lower in kidney than muscle.",
       "establishes": "The methods do not identify paired tissues from the same animals or establish lifetime storage mechanisms. Total mercury measurements cannot verify methylmercury as the cause of the observed distribution. The current EU cadmium limits for these tissues are 0.05, 0.50 and 1.0 mg/kg wet weight; its bovine-offal lead limit is 0.20, unlike the paper’s historical 0.50 comparator.",
-      "relevance": "The tissue means support distinct occurrence data and the article’s illustrative 100 g calculations. They do not establish a universal twofold multiplier for mixed products or exclude differences in animal histories. Low modeled hazard indices are separate from legal compliance. The supplemental EU text does not identify the unspecified reference 7.",
+      "relevance": "The tissue means support distinct occurrence data and the article’s illustrative 100 g calculations. They do not establish a universal twofold multiplier for mixed products or exclude differences in animal histories. Low modeled hazard indices are separate from legal compliance. The current EU comparison is now explicitly identified in replacement reference 7.",
       "links": [
         {
           "label": "Original study full text",
@@ -21,23 +21,23 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12706026/fullTextXML",
-            "note": "Read sampling and analytical methods, Table 1, statistical comparisons and risk assessment. No within-animal pairing or mercury speciation is reported. Abstract/body and Table 1 give inconsistent standard errors; only matching means are used."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read sampling and analytical methods, Table 1, statistical comparisons and risk assessment. No within-animal pairing or mercury speciation is reported. Abstract/body and Table 1 give inconsistent standard errors; only matching means are used."
           },
           {
             "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
-            "note": "Read current consolidation status and Annex 3.1.13–3.1.14 and 3.2.13, including species, tissue and wet-weight basis. Current lead maxima are species-specific; poultry offal and muscle both have 0.10 mg/kg limits, so offal lead limits are not universally looser."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read current consolidation status and Annex 3.1.13–3.1.14 and 3.2.13, including species, tissue and wet-weight basis. Current lead maxima are species-specific; poultry offal and muscle both have 0.10 mg/kg limits, so offal lead limits are not universally looser. Fresh 2026-09-16 reread of the same exact consolidated version supports replacement reference 7; this is not a claim that the former generic source identity was recovered."
           }
         ]
       }
     },
     "2": {
       "referenceTitle": "Health risk assessment of metals in chicken meat and liver in Egypt",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "62d8f4176aa14b41672403d48fa96e636101cc02b17125930d3b1dc65932106f",
       "citation": "Kamaly HF, Sharkawy AA. Health risk assessment of metals in chicken meat and liver in Egypt. Environmental Monitoring and Assessment. 2023;195:802. doi:10.1007/s10661-023-11365-9.",
       "summary": "This Assiut market survey analyzed 360 chicken tissue samples across six brands. Its brand-level means show liver cadmium of 0.027–0.104 µg/g versus chest-muscle cadmium of 0.014–0.054 µg/g. Lead showed the opposite ordering, with chest-muscle means above liver means.",
@@ -50,19 +50,19 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10238321/fullTextXML",
-            "note": "Read sample collection/preparation, Table 1 tissue-by-brand results, analytical quality control and hazard-model summary. The paper describes ICP-MS but names an iCAP 6000 series instrument; this review does not independently validate that instrumentation description."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read sample collection/preparation, Table 1 tissue-by-brand results, analytical quality control and hazard-model summary. The paper describes ICP-MS but names an iCAP 6000 series instrument; this review does not independently validate that instrumentation description."
           }
         ]
       }
     },
     "3": {
       "referenceTitle": "Heavy Metals Accumulation in Different Organs of Poultry and Hypothetical Risk Analysis: Evidence from Experimental Feeding with Assorted Metal Feed",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "ad65081bb90eadca986829499a1065238491ee908ca1ea5d0f34b9ced99a4ee1",
       "citation": "Morshed AJM, Islam MSM, Hossain AHR, et al. Heavy Metals Accumulation in Different Organs of Poultry and Hypothetical Risk Analysis: Evidence from Experimental Feeding with Assorted Metal Feed. Research Square, version 1, posted April 8, 2024. doi:10.21203/rs.3.rs-4210575/v1. Preprint.",
       "summary": "This 28-day feeding experiment used eight groups receiving feed with graded mixtures of cadmium, lead and chromium salts. The highest-dose cadmium table reports 43.36 mg/kg dry basis in liver and 6.57 in muscle, a ratio of about 6.6.",
@@ -79,16 +79,16 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://assets-eu.researchsquare.com/files/rs-4210575/v1/7d5c7baf-a785-4a16-b115-0be56e8d783d.pdf",
-            "note": "Read posted-date page, mixture preparation, 28-day feeding description, dry-basis tissue tables and hypothetical risk results; no later version was substituted."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read posted-date page, mixture preparation, 28-day feeding description, dry-basis tissue tables and hypothetical risk results; no later version was substituted."
           },
           {
             "url": "https://www.researchsquare.com/article/rs-4210575/v1",
-            "note": "Read version 1 status and explicit notice that the work has not been peer reviewed by a journal."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read version 1 status and explicit notice that the work has not been peer reviewed by a journal."
           }
         ]
       },
@@ -96,7 +96,7 @@
     },
     "4": {
       "referenceTitle": "Monitoring trace minerals and heavy metals in liver of free-living large herbivores in the Netherlands",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "963024550803bfba24e77270a39873c44adc15890cd882414181f318262d5472",
       "citation": "Marcelino I, Monti G, Cornelissen P, et al. Monitoring trace minerals and heavy metals in liver of free-living large herbivores in the Netherlands. Frontiers in Veterinary Science. 2026;13:1751586. doi:10.3389/fvets.2026.1751586.",
       "summary": "The Oostvaardersplassen monitoring programme analyzed liver samples from 346 cattle, horses and red deer during 2003–2023. Veterinary reference intervals were estimated from smaller subsets without evident disease. Concentrations were reported on a dry-weight basis.",
@@ -109,19 +109,19 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12971517/fullTextXML",
-            "note": "Read sampling, disease classification, reference-interval methods, Tables 3–5 and limitations. Confirmed 2003–2023 scope, element-specific sample sizes and dry-weight basis; reference intervals are not diagnostic or dietary safety guarantees."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read sampling, disease classification, reference-interval methods, Tables 3–5 and limitations. Confirmed 2003–2023 scope, element-specific sample sizes and dry-weight basis; reference intervals are not diagnostic or dietary safety guarantees."
           }
         ]
       }
     },
     "5": {
       "referenceTitle": "Lead, Cadmium and Chromium in Sheep Liver from a Tabriz Abattoir",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "485717af5fe35f5cd43e7a1150b9c585ac41858bbdf22effa0a91b3918a1c5d5",
       "citation": "Khatemeh S, Imani Baran A. Evaluation of bioaccumulation of some heavy metals in liver flukes (Fasciola hepatica and Dicrocoelium dendriticum) and liver samples of sheep. Veterinary Research Forum. 2022;13(4):611–614. doi:10.30466/vrf.2020.135702.3043. Supplemental context: current EU sheep-liver cadmium limit.",
       "summary": "This is the identifiable study behind the shortened bibliography title. It compared liver flukes, infected sheep livers and uninfected livers collected at Tabriz abattoir in December 2019–February 2020. Uninfected-liver cadmium averaged 0.07 µg/g wet weight; infected groups had higher means.",
@@ -138,23 +138,23 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9840797/fullTextXML",
-            "note": "Read full four-page article through XML, including sampling, wet-weight reporting, Table 1 and parasite-bioindicator conclusions. Source identity matches authors, location, year and uninfected cadmium result."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read full four-page article through XML, including sampling, wet-weight reporting, Table 1 and parasite-bioindicator conclusions. Source identity matches authors, location, year and uninfected cadmium result."
           },
           {
             "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
-            "note": "Read Annex 3.2.13.3: 0.50 mg/kg wet weight applies to liver of the specified species, including sheep. The EU comparison is supplemental and does not recover reference 7."
+            "note": "Retained 2026-09-15 targeted read, freshly checked on 2026-09-16 against the same consolidated text: Annex 3.2.13.3 sets 0.50 mg/kg wet weight for liver of the specified species, including sheep. This is an EU comparator, not proof of Iranian law. The current article explicitly adopts this EU instrument as replacement reference 7 rather than claiming recovery of the old generic citation."
           }
         ]
       }
     },
     "6": {
       "referenceTitle": "Human health risk assessment of edible body parts of chicken through heavy metals and trace elements quantitative analysis",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "04844be15a7177db1038642048c8f9aa0b80c6856d91b59096c850ca1063edcd",
       "citation": "Hossain E, Nesha M, Chowdhury MAZ, Rahman SH. Human health risk assessment of edible body parts of chicken through heavy metals and trace elements quantitative analysis. PLOS ONE. 2023;18(3):e0279043. doi:10.1371/journal.pone.0279043.",
       "summary": "The study analyzed six tissues from 18 broiler chickens bought across six Dhaka locations: 108 tissue samples, not 108 birds. It reported lead up to 4.6 mg/kg fresh weight and higher average cadmium in liver than muscle.",
@@ -167,19 +167,45 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004613/fullTextXML",
-            "note": "Read sample design, fresh-weight results, cadmium and chromium discussions, Table 3 regulatory comparisons and risk-model conclusions. Did not adopt the article’s attribution of lead to tannery feed or treat its secondary historical limits as current law."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read sample design, fresh-weight results, cadmium and chromium discussions, Table 3 regulatory comparisons and risk-model conclusions. Did not adopt the article’s attribution of lead to tannery feed or treat its secondary historical limits as current law."
           }
         ]
       }
     },
+    "7": {
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. Consolidated text of 19 August 2026. Annex I, entries 3.1.13–3.1.14 (lead) and 3.2.13 (cadmium). Explicit replacement for the unidentified generic offal-limit reference.",
+      "summary": "The regulation sets distinct maximum levels for specified meat and offal categories. The reviewed entries differentiate the metal, animal species and tissue and express these meat/offal values on a wet-weight basis.",
+      "establishes": "Cadmium maxima are 0.050 mg/kg for bovine, sheep, pig and poultry meat excluding offal; 0.50 mg/kg for liver and 1.0 mg/kg for kidney of those species and horses. Horse meat excluding offal has a separate 0.20 mg/kg cadmium maximum. Lead maxima are 0.10 mg/kg for the listed muscle meats, 0.20 mg/kg for bovine/sheep offal, 0.15 mg/kg for pig offal and 0.10 mg/kg for poultry offal. Thus poultry offal and muscle share the same lead maximum. These are legal maxima, not measured tissue distributions or an experimentally established physiological explanation.",
+      "relevance": "The replacement supports the article’s corrected species- and tissue-specific legal comparison. It prevents a universal claim that offal lead limits are looser than muscle limits. It does not establish that offal always contains more cadmium, validate a universal organ-to-muscle ratio or determine an HMTc certification ceiling.",
+      "links": [
+        {
+          "label": "Read official consolidated regulation and Annex I",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "kind": "Legislation",
+      "review": {
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Fresh 2026-09-16 targeted review of official EUR-Lex consolidation dated 19 August 2026, Annex I 3.1.13–3.1.14 and 3.2.13. Verified each species/tissue row and wet-weight qualifier, including equal poultry muscle/offal lead maxima and distinct horse muscle cadmium. The generic former reference did not identify a recoverable instrument; this precise EU instrument is an authorized explicit replacement, not a silent reconstruction of that source. No claim to comprehensive review of all annex categories or global food law."
+          }
+        ]
+      },
+      "referenceTitle": "Commission Regulation (EU) 2023/915: lead and cadmium maximum levels for meat and offal",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
+      "sourceDigest": "f974a54534901d915a39ab22ce8b16a9420e190d109fc87c1b99d7c3ef1055bd"
+    },
     "8": {
       "referenceTitle": "Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)",
-      "pageDigest": "3c3331714767c0acfb9c37485ad5f0e96d39e995afc809b82ed66b06c95f836d",
+      "pageDigest": "00e354898f95a1a0514759bf477c6ea4a292450e130eec955f797a4d58ddcb02",
       "sourceDigest": "4a7eeb14da276655059bcbe3ab68b8fae23e5ad607a900d9bb50672bc5c02ab4",
       "citation": "Pendergrass K. Liver and kidney are physiological cadmium accumulation sinks that carry heavy-metal loads above skeletal muscle, making offal a distinct dietary exposure pathway that muscle-meat surveillance does not represent. Heavy Metal Index. Updated July 27, 2026. doi:10.83376/hmi.organ-meat-cadmium-lead-accumulation. Preprint.",
       "summary": "This author-produced synthesis connects tissue surveys, a feeding preprint and veterinary liver-monitoring studies to argue for separate assessment of offal. It acknowledges weaker and variable lead patterns and limited market coverage.",
@@ -192,12 +218,12 @@
         }
       ],
       "review": {
-        "reviewer": "Codex: original full-text targeted review; supplemental legal source separately identified",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation",
-            "note": "Read author/date, overview, tissue-comparison claims, provisional limitations, references and empty review log. Assessed fresh against the original sources; source-list journal metadata for Kamaly is incorrect."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read author/date, overview, tissue-comparison claims, provisional limitations, references and empty review log. Assessed fresh against the original sources; source-list journal metadata for Kamaly is incorrect."
           }
         ]
       },

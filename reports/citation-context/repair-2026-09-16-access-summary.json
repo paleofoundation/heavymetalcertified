@@ -1,0 +1,70 @@
+{
+  "reviewed": "2026-09-16",
+  "assignedUnresolved": 5,
+  "recoveredOriginals": 2,
+  "explicitReplacements": 3,
+  "importedRecords": 27,
+  "revalidatedExisting": 22,
+  "remainingAssignedUnresolved": 0,
+  "pages": {
+    "briefings/heavy-metals-in-peptides-and-sarms": {
+      "reviewed": 8,
+      "pending": 0,
+      "new": [
+        "4"
+      ]
+    },
+    "briefings/no-limit-is-not-no-standard": {
+      "reviewed": 6,
+      "pending": 0,
+      "new": [
+        "3"
+      ]
+    },
+    "briefings/before-the-meat-label-prints": {
+      "reviewed": 7,
+      "pending": 0,
+      "new": [
+        "2"
+      ]
+    },
+    "articles/us-baby-food-heavy-metal-laws-states-fda": {
+      "reviewed": 6,
+      "pending": 0,
+      "new": [
+        "4",
+        "6"
+      ]
+    }
+  },
+  "batches": [
+    "reports/citation-context/repair-2026-09-16-access-peptides.json",
+    "reports/citation-context/repair-2026-09-16-access-no-limit.json",
+    "reports/citation-context/repair-2026-09-16-access-meat-label.json",
+    "reports/citation-context/repair-2026-09-16-access-baby-food.json",
+    "reports/citation-context/repair-2026-09-16-access-no-limit-followup.json"
+  ],
+  "review": "docs/reviews/2026-09-16-citation-context-repair-access.md",
+  "checks": {
+    "dryRunImports": 0,
+    "writeImports": 0,
+    "scopedAudits": 0,
+    "designLint": 0,
+    "gitDiffCheck": 0
+  },
+  "scope": "Reviewed bibliography coverage; prior source limitations and unresolved broader methodological assertions retained. No global build or browser claim.",
+  "followup": {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "targetedWordingCorrections": 10,
+    "revalidatedReferences": 6,
+    "newSources": 0,
+    "checks": {
+      "dryRunImport": 0,
+      "writeImport": 0,
+      "scopedAudit": 0,
+      "designLint": 0,
+      "gitDiffCheck": 0
+    },
+    "scope": "Residual absolute-absence phrases narrowed to HMTc identified-sources finding; analytical controls and lot decision rules unchanged."
+  }
+}

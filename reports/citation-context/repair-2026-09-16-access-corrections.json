@@ -1,0 +1,277 @@
+[
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Gray-market peptides, SARMs, and anabolic steroids are made outside every framework that controls elemental impurities in medicines, and the published record shows what ends up in the vial. The case for heavy-metal testing, with or without certification, for a class the safety system never reaches.",
+    "after": "Gray-market peptides, SARMs, and anabolic steroids lack the assurance of an approved drug supply chain. Published contamination findings support examining their metal content, while testing does not establish approval or broader safety."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "The products are made outside every framework that controls elemental impurities in medicines, and the published record shows what ends up in the vial.",
+    "after": "Products sold outside an approved drug supply chain lack verified quality assurance; metal testing addresses one part of that gap."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "A licensed injectable must prove its elemental impurities sit under a permitted daily exposure before it reaches a patient. A gray-market peptide proves nothing to anyone. Heavy-metal testing is the one safety step available to a product the regulatory system does not touch, and it is available whether or not a company ever seeks a mark.",
+    "after": "An unapproved product does not carry the assurance of an approved drug supply chain. Metal testing can address a specific quality question, but cannot establish the product’s identity, sterility, efficacy, broader safety, or legal status."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Injectable peptides, oral selective androgen receptor modulators, anabolic-androgenic steroids, and the raw powders they are reconstituted from occupy a gap that no product-safety framework fills. In the eyes of the United States Food and Drug Administration they are unapproved or misbranded drugs, so the elemental-impurity controls that every licensed medicine must pass never apply to them; they are not foods or dietary supplements, so the limits that govern those never apply either.",
+    "after": "Gray-market injectable peptides, oral selective androgen receptor modulators, anabolic-androgenic steroids, and raw powders raise quality-assurance concerns. Unapproved status does not place a product beyond drug law, and a research-use label does not itself remove FDA authority. A product sold outside an approved supply chain cannot be assumed to have demonstrated pharmaceutical quality controls."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "## A class the safety system never reaches",
+    "after": "## A gap in quality assurance"
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Every medicine sold lawfully in a regulated market carries a control the buyer never sees. Before a licensed drug reaches a patient, its manufacturer must show that the trace metals left behind by synthesis, catalyst residues, reagent contamination, leachables from equipment, sit below a permitted daily exposure derived from toxicology. That control is the International Council for Harmonisation's Q3D guideline, adopted in the United States Pharmacopeia as General Chapters &lt;232&gt; and &lt;233&gt;, and it sets an explicit daily limit for two dozen elements, route by route: one ceiling for a drug you swallow, a tighter one for a drug you inject, a tighter one still for a drug you inhale [2][3].",
+    "after": "ICH Q3D describes risk-based elemental-impurity controls for drug products within its scope, using permitted daily exposures for oral, parenteral, and inhalation routes. USP General Chapters &lt;232&gt; and &lt;233&gt; address impurity limits and analytical procedures. These frameworks have defined scopes and do not universally require testing every lot; HMTc’s proposed testing controls are separate program decisions [2][3]."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Peptides, SARMs, and research chemicals never meet that control, because they are never licensed drugs. The Food and Drug Administration treats selective androgen receptor modulators as unapproved drugs and has warned both companies and the public against selling and using them in body-building products [4]. It treats the gray-market and counterfeit versions of injectable peptide hormones, the semaglutide and tirzepatide analogs sold outside the approved supply chain, as unapproved and, in the counterfeit case, as a direct danger, seizing product and warning consumers not to use it [5]. Anabolic-androgenic steroids sold for muscle growth are controlled substances and unapproved drugs at once. None of these products passes through a new-drug application, so none is ever assessed for elemental impurities under Q3D. They are also, by the same legal status, not dietary supplements and not foods, so the contaminant limits that govern those categories do not reach them either.",
+    "after": "FDA identifies SARMs marketed for bodybuilding as unapproved drugs and warns consumers against their use [4]. Its warnings also address products advertised for research while being sold for human use. Lack of approval is a quality-assurance problem, not a legal exemption. FDA’s separate notices describe counterfeit Ozempic and nonsterile compounded semaglutide and tirzepatide; counterfeiting and compounding are distinct issues, and lawful compounding operates under specific conditions [5]."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "The result is a class defined by absence. There is no lawful product heavy-metal content limit for a gray-market peptide anywhere in the world, and no certification framework has previously addressed it. The framework built to keep metal out of an injection, the one that would matter most here, because injection is the dominant route, applies only to the licensed products these are sold as alternatives to. The absence is not a technicality. It is the reason the buyer of an unregulated injectable has no assurance that a regulated patient is given as a matter of course.",
+    "after": "HMTc has not identified a category-specific government concentration limit to adopt for this grouping of gray-market products. That program finding does not establish that the products are exempt from drug law, that no quality requirements apply, or that testing makes them lawful. The question addressed here is whether the metal content has been measured reliably."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "The manufacturing sits in facilities under no good-manufacturing-practice obligation and no elemental-impurity testing requirement, frequently offshore of the market that consumes the product.",
+    "after": "Illicit manufacture may evade quality controls required for lawful drug supply; the cited product survey did not audit manufacturing facilities or establish their legal obligations."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Each of those stages is a place a licensed manufacturer is required to control and a gray-market one is not.",
+    "after": "Those possible contamination pathways require investigation; unapproved status does not excuse failures to comply with applicable drug law."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "The framework that would flag it exists; it simply does not apply to a product sold as research material rather than as medicine.",
+    "after": "That regulation concerns specified total-parenteral-nutrition products; a research-use label does not itself decide which drug laws apply."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "The third risk is regulatory timing. Oversight of this market is not a question of whether but when; the counterfeit-semaglutide seizures and the SARM warnings are the leading edge of it [4][5]. A company that already tests, and can document that it tested, is positioned for a regulatory environment that has not yet arrived rather than exposed by it.",
+    "after": "Existing FDA warnings and enforcement already apply to this market [4][5]. Testing records can document one quality attribute, but cannot remedy an unlawful drug sale."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "and the gray-market peptide trade has grown around the licensed weight-loss drugs faster than enforcement has followed [4][5][6].",
+    "after": "and FDA’s warnings document sales of unapproved products and specific quality failures [4][5][6]."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Because no lawful product limit exists for this class, the certification cannot take the form it takes for a food or a cosmetic, where the standard is the strictest maximum level a credible government has set. There is no government maximum to adopt. The program's method resolves that absence honestly rather than inventing a number to fill it.",
+    "after": "For this grouping, HMTc has not identified a category-specific government concentration limit to adopt. The program therefore describes its own testing control and toxicological reference points. That choice does not establish an exemption from drug regulation."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "For a class the safety system does not otherwise reach, that is the floor worth holding.",
+    "after": "For products with uncertain quality assurance, that is the limited measurement this briefing advocates."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "Because no government sets one. These products are unapproved or misbranded drugs, so the elemental-impurity limits that govern licensed medicines never apply to them, and they are not foods or supplements either. With no lawful product limit to adopt, the standard uses a control, mandatory per-lot testing, a published method, and an escalation rule anchored to the route-appropriate permitted daily exposure from pharmacopeial toxicology, rather than a fabricated concentration cap.",
+    "after": "HMTc has not identified a category-specific government concentration limit to adopt for this grouping. It instead describes per-lot testing, a published method, and a route-specific toxicological reference. Unapproved products remain subject to applicable drug law, and a metal result cannot establish lawful marketing."
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "FDA In Brief: FDA warns against using SARMs in body-building products",
+    "after": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more"
+  },
+  {
+    "page": "briefings/heavy-metals-in-peptides-and-sarms",
+    "before": "U.S. Food and Drug Administration (2017). Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more.",
+    "after": "U.S. Food and Drug Administration. Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more. Current safety overview, accessed 16 September 2026. <a href=\"https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more\">FDA source</a>."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "No government sets a heavy-metal limit for peptides, SARMs, or research chemicals, so HMTc sets a standard with no numbers: mandatory testing of every lot, a published method, and escalation against a route-appropriate toxicological anchor that flags a lot but never caps it. The case for why an all-control standard is the correct instrument for a regulatory vacuum, why it is set now, and why the vacuum's persistence, not the standard, is the hazard.",
+    "after": "HMTc describes a testing control for peptides, SARMs, and research chemicals where it has not identified a category-specific government concentration limit. The control is a program decision; unapproved products remain subject to applicable drug law."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "For a class no government regulates, there is nothing to adopt,",
+    "after": "Where HMTc has not identified a category-specific government concentration limit,"
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "a class for which no government anywhere sets a product heavy-metal content limit.",
+    "after": "a grouping for which HMTc has not identified a category-specific government concentration limit to adopt."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "Category 26 completes the program's first set of ten published standards, and it is the only one where the derivation returns nothing. Every other HMTc standard begins by finding the strictest limit a credible government has set for the analyte and adopting it; the work is a lookup and a defense of the choice. For peptides, SARMs, and research chemicals that lookup is empty. In the eyes of the United States Food and Drug Administration these are unapproved or misbranded drugs: the agency treats SARMs sold in body-building products as unapproved and has warned against them [3], and treats the gray-market and counterfeit versions of injectable peptide hormones the same way, seizing counterfeit semaglutide and tirzepatide outside the approved supply chain [4]. Because they are drugs the agency has not approved, the elemental-impurity controls that every licensed medicine must clear never attach to them; because they are legally drugs, the food and supplement contaminant limits do not reach them either. There is no product heavy-metal limit to adopt because no government has written one.",
+    "after": "Category 26 completes the program's first set of ten published standards and uses a testing control where HMTc has not identified a category-specific government concentration limit. FDA treats SARMs marketed for bodybuilding as unapproved drugs and has warned against them [3]. FDA has also reported counterfeit Ozempic and a separate incident involving nonsterile compounded semaglutide and tirzepatide [4]. These are examples of existing oversight. Lack of approval does not exempt a product from drug law, and describing a product as research material does not itself place it beyond FDA authority."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "The first is that the vacuum is structural, not temporary. It is not that regulators have not yet gotten to this class; it is that the class is defined by sitting outside the frameworks that would regulate it, and nothing about its legal status is trending toward a product limit. Waiting for a number that the regulatory architecture is not built to produce is waiting for something that does not arrive.",
+    "after": "The first is the present gap in demonstrated quality assurance. It is not necessary to predict future regulatory policy to argue for measuring a product’s metal content now. Such testing remains separate from the legal conditions for selling the product."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "Faced with a category the law leaves blank,",
+    "after": "Faced with a missing category-specific concentration value,"
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "No government limit means no mandatory testing, which means the metal content of a gray-market vial is unknown to everyone in the chain: the synthesiser, the seller, and the person who reconstitutes a raw powder at a kitchen table and injects it.",
+    "after": "An absent category-specific concentration value does not establish that testing is legally optional. In an unverified supply chain, the buyer may lack reliable information about the metal content of a vial."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "For a class the safety system does not otherwise reach,",
+    "after": "For products with uncertain quality assurance,"
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "Because the vacuum is structural, not a queue these products are waiting in. The class is defined by sitting outside the drug-approval and supplement frameworks that would produce a limit, so there is no number on its way. Meanwhile the evidence has crossed from inference to measurement:",
+    "after": "Testing need not wait for a new category-specific concentration value. Existing drug law still applies, and future regulatory action cannot be predicted from unapproved status. Meanwhile the evidence includes measurements:"
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "FDA In Brief: FDA warns against using SARMs in body-building products",
+    "after": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more"
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "U.S. Food and Drug Administration (2017). Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more.",
+    "after": "U.S. Food and Drug Administration. Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more. Current safety overview, accessed 16 September 2026. <a href=\"https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more\">FDA source</a>."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "USDA approves every meat, poultry, and egg label in advance, and treats a third-party seal as a claim it must review. A purity word draws the objection; a published, verifiable measurement is what the review asks for. Why the HMTc mark is built to pass the review that a 'clean' seal fails.",
+    "after": "FSIS label rules distinguish generic approval from labels requiring submission. A certification claim needs clear scope and supporting records; no HMTc approval is established by this briefing."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "USDA Approves Every Meat, Poultry, and Egg Label in Advance. A Purity Word Draws the Objection; A Published Measurement Is What the Review Asks For.",
+    "after": "FSIS label approval depends on the claim and the applicable approval route. Defined claims need supporting evidence."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "A meat, poultry, or egg product cannot carry a label the federal government has not seen. Under the Federal Meat Inspection Act and the Poultry Products Inspection Act, any label bearing a special statement or claim must be submitted to the USDA Food Safety and Inspection Service for prior approval before it is printed, and a third-party certification seal is such a claim [1][2].",
+    "after": "FSIS permits compliant generically approved labels without individual agency review. Labels requiring submission, including special claims within the rule, must receive the appropriate approval before use [1][2]. A certification mark’s wording and context determine the applicable route."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "The moment a label carries a special statement or claim, generic approval is withdrawn and the label must be submitted as a sketch for evaluation by the Labeling and Program Delivery Staff before it can be used [1][2].",
+    "after": "A label with a special statement or claim requiring evaluation must be submitted as a sketch to the Labeling and Program Delivery Staff before use [1][2]. The directive addresses meat and poultry inspection and points to separate instructions for egg-product verification."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "A third-party certification is, in the language of the rule, a special claim. It is an assertion about the product beyond its identity and its ingredients, made by a party other than the manufacturer, and it is exactly the category the sketch-approval requirement exists to examine. The submission is made through the agency's Label Submission and Approval System, and what is submitted is not a description of the certification program but the finished label as it will appear, with the seal in place [2][5]. Approval is granted against the label, not against the certifier. There is no register of pre-cleared certifiers and no blanket endorsement to be obtained; each label is judged on its own face.",
+    "after": "Certification claims can require sketch approval, but the applicable rule and guidance must be checked for the particular wording and any generic or previously approved use [1][6]. When submission is required, the establishment sends a sketch label, Form 7234-1, and supporting documentation through LSAS or by mail [2][5]. The sketch need not be the finished printed label. An approval for one use does not establish blanket FDA or USDA endorsement of a certifier."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "A brand placing the mark on a regulated product submits the finished label sketch, the printer's proof, with the mark and its scope line shown as they will print, through the Label Submission and Approval System [2][5]. Alongside it, and retained at the establishment for verification during inspection, the file holds five things:",
+    "after": "Where submission is required, a brand supplies the sketch label, Form 7234-1 and supporting documentation through LSAS or by mail. The establishment retains the final label, formulation, processing procedure, supporting evidence and applicable approval record [2][5]. For the HMTc claim, this briefing proposes five supporting items:"
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "Each of the five answers a question the reviewer is entitled to ask, and together they are the difference between a seal the review passes and an adjective it stops.",
+    "after": "These proposed items support assessment of the claim; they are not an agency-prescribed five-document checklist or a guarantee of approval."
+  },
+  {
+    "page": "briefings/before-the-meat-label-prints",
+    "before": "USDA FSIS Directive 7221.1, <em>Prior Labeling Approval</em>. Procedures for submitting sketch labels and the treatment of special claims.",
+    "after": "USDA FSIS Directive 7221.1, Revision 4 (10 December 2025), <em>Prior Labeling Approval</em>. Federal text reproduced after Maine’s separate state cover sheet. <a href=\"https://www.maine.gov/tools/whatsnew/attach.php?an=1&amp;id=12605503\">Government-hosted copy</a>."
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "before": "https://heavymetalindex.com/regulations/us-infant-food-contaminants",
+    "after": "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "before": "Heavy Metal Index — US infant-food controls",
+    "after": "Heavy Metal Index — FDA Closer to Zero overview"
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "before": "Heavy Metal Index — United States infant-food contaminant controls",
+    "after": "Heavy Metal Index — FDA Closer to Zero: Program Overview"
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "before": "Neutral federal regulatory and species/basis reference.",
+    "after": "Secondary overview of selected federal action levels; not a complete state-law or infant-formula register."
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "before": "Vermont's H.536 record became Act 110 and requires close attention to product definitions, including when infant formula is within the pathway",
+    "after": "Vermont Act 110 begins its baby-food provisions on 1 January 2027 and initially excludes infant formula. Formula enters only after the Attorney General provides the written confirmation specified by the act; the law also allows suspension for inadequate supply"
+  },
+  {
+    "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+    "after": "Brands should maintain one controlled state-law register per SKU family, not one national baby-food checklist. The register should cite the official statute, show current status and date, record the operative product definition, list metals and method requirements, identify the disclosure URL or QR destination, and name the owner who rechecks the rule. It should point to the certification record rather than copying test results into unmanaged spreadsheets. The register also needs a negative statement: what the rule does not do. Virginia does not become federal law; Vermont's product definition does not automatically apply in Illinois; and FDA's planned cadmium or inorganic-arsenic work is not binding until the agency issues an instrument with legal effect. That negative control prevents a fast-moving state landscape from becoming an internally inconsistent set of claims. The Heavy Metal Index’s Closer to Zero overview provides background on selected federal action levels; it is a secondary reference, not the state-law register itself <sup class=\"cite\"><a href=\"#ref-6\">6</a></sup>.",
+    "before": "Brands should maintain one controlled state-law register per SKU family, not one national baby-food checklist. The register should cite the official statute, show current status and date, record the operative product definition, list metals and method requirements, identify the disclosure URL or QR destination, and name the owner who rechecks the rule. It should point to the certification record rather than copying test results into unmanaged spreadsheets. The register also needs a negative statement: what the rule does not do. Virginia does not become federal law; Vermont's product definition does not automatically apply in Illinois; and FDA's planned cadmium or inorganic-arsenic work is not binding until the agency issues an instrument with legal effect. That negative control prevents a fast-moving state landscape from becoming an internally inconsistent set of claims."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "a standard for a class with no lawful ceiling",
+    "after": "a standard for a class where HMTc has not identified a category-specific government concentration limit",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "It is the accurate statement that no lawful product limit exists, printed honestly, and paired with a control",
+    "after": "It reports that HMTc has not identified a category-specific government concentration limit to adopt, and pairs that finding with a control",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "It simply refuses to pretend a number exists where one does not.",
+    "after": "It does not present an unidentified government concentration limit as an adopted value.",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "because no government has set one and inventing one would be unfalsifiable",
+    "after": "because HMTc has not identified a category-specific government concentration limit to adopt",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "Zero firm numbers on the page is an honest statement that no lawful limit exists, not an absence of a standard.",
+    "after": "Zero firm numbers on the page records that finding within HMTc’s reviewed sources; it does not establish that no applicable law exists.",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "For this class there is none, and the honest response",
+    "after": "For this class HMTc has not identified a category-specific government concentration limit, and the honest response",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "Faced with no government limit, a program",
+    "after": "Without an identified category-specific government concentration limit, a program",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "where no sovereign limit exists, HMTc does not fill the gap",
+    "after": "where HMTc has not identified a category-specific government concentration limit, it does not fill the gap",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "to look at a class with no legal limit and conclude",
+    "after": "to look at a class without an identified category-specific government concentration limit and conclude",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  },
+  {
+    "page": "briefings/no-limit-is-not-no-standard",
+    "before": "### With no government limit, how can a lot actually pass or fail?",
+    "after": "### Without an identified government concentration limit, how can a lot actually pass or fail?",
+    "reason": "Independent review follow-up: align residual global-absence wording with HMTc’s identified-sources finding; no decision-rule change."
+  }
+]

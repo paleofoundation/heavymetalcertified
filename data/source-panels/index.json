@@ -98,14 +98,28 @@
   },
   "articles/bivalve-cadmium-amplification": {
     "page": "articles/bivalve-cadmium-amplification",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
+      "1": {
+        "referenceTitle": "Cadmium bioaccumulation and retention kinetics in the Chilean blue mussel Mytilus chilensis: seawater and food exposure pathways",
+        "citation": "Hervé-Fernández P, Houlbrèque F, Boisson F, Mulsow S, Teyssié JL, Oberhaënsli F, Azemard S, Jeffree R. Cadmium bioaccumulation and retention kinetics in the Chilean blue mussel Mytilus chilensis: seawater and food exposure pathways. Aquatic Toxicology. 2010;99(4):448–456. doi:10.1016/j.aquatox.2010.06.004. Explicit replacement for the unidentifiable Bao/cadmium-nanoparticle reference.",
+        "summary": "This controlled radiotracer study followed cadmium uptake by Chilean blue mussels from seawater and algae, then measured elimination. The original abstract reports slower loss after seawater exposure than after dietary exposure.",
+        "establishes": "Mussels can eliminate cadmium. Following seawater exposure, about 21% was lost over 52 days and the long-lived retention component had an estimated half-life above six months. About 20% of the food-derived tracer remained after ten days. These are experiment- and route-specific results, not proof of zero excretion, lifelong accumulation or a universal shellfish-to-fish ratio. Review was limited to the original abstract and bibliographic record.",
+        "relevance": "It supports the revised article’s narrower claim that cadmium retention depends on exposure route. It does not support an oyster or clam mechanism, a filtration-rate generalization, an age effect or a certification threshold. The source was selected as a transparent replacement; the purported Bao study was not recovered.",
+        "links": [
+          {
+            "label": "Read original abstract and study record",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/20638735/"
+          }
+        ],
+        "kind": "Journal article"
+      },
       "2": {
         "referenceTitle": "Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health",
         "citation": "Bruno F, Nava V, Zappalà S, et al. Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health. Frontiers in Toxicology. 2024;6:1494977. Published 13 December 2024. doi:10.3389/ftox.2024.1494977.",
         "summary": "The September 2023 Faro Lake survey collected 80 mussels and 80 clams and measured elements in soft tissue, water and sediment. Reported mean cadmium was 0.05 and 0.08 mg/kg respectively; lead was below quantification in mussels and 0.02 mg/kg in clams.",
         "establishes": "This local, single-period survey establishes species-specific measurements, with cadmium below the EU bivalve ceiling. It includes no finfish comparison and does not establish a universal seafood differential.",
-        "relevance": "For HMTc, the study illustrates why a tested species and tissue must accompany a result. It does not validate the article’s claimed near-limit regional outliers or a certification threshold.",
+        "relevance": "The revised article uses the actual Faro Lake means as local species-specific observations. These results support retaining the species and sampled tissue with each result; they supply neither a matched finfish multiplier nor a basis for HMTc’s numeric ceiling.",
         "links": [
           {
             "label": "Read original study",
@@ -118,7 +132,7 @@
         "citation": "Dogruyol H, Mol S, Ulusoy Ş, Atanasoff A. Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria. Biological Trace Element Research. 2024;202:5177–5189. Published online 1 February 2024. doi:10.1007/s12011-024-04084-w.",
         "summary": "Mussels from four farms were sampled quarterly in 2019–2020, using at least 100 animals per farm and season. ICP-MS measured cadmium, lead, mercury and selenium; average cadmium ranged 0.115–0.323 µg/g and lead 0.096–0.216 µg/g.",
         "establishes": "The exposure model found low concern under assumed adult consumption: 9.61 g/week in Türkiye and 2.50 g/week in Bulgaria. Mercury speciation was assumed, and results do not represent every consumer or harvest.",
-        "relevance": "HMTc can use this as a defined farmed-mussel dataset. It cannot establish that shellfish lead is generally below fish, or validate HMTc’s testing frequency.",
+        "relevance": "The revised article uses this defined farmed-mussel dataset for separate cadmium and lead measurements. It does not establish that shellfish lead is generally below fish, a lead-excretion mechanism or HMTc’s testing frequency.",
         "links": [
           {
             "label": "Read original study",
@@ -131,7 +145,7 @@
         "citation": "Rohonczy J, Chételat J, Robinson SA, et al. Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada. Environmental Science and Pollution Research. 2024;31:20586–20600. Published 20 February 2024. doi:10.1007/s11356-024-32268-3.",
         "summary": "This 2014–2017 community-based Arctic study measured cadmium in 345 tissue samples. Blue-mussel soft tissue and urchin gonads were compared with fish, eider and seal tissues. Cadmium declined with trophic position in the muscle-based analysis; mercury increased.",
         "establishes": "Cadmium patterns depended strongly on tissue. High vertebrate liver burdens were interpreted as storage and detoxification. Concentrations were reported on a dry-weight basis; fish muscle was excluded from the cadmium model because many results were below detection.",
-        "relevance": "For HMTc, this supports distinguishing whole shellfish from finfish muscle and distinguishing cadmium from mercury. It supplies no scallop or oyster distribution or wet-weight compliance survey.",
+        "relevance": "The revised article uses this Arctic study to distinguish tissue, analyte and dry-weight reporting. It supplies no scallop or oyster distribution and cannot be treated as a wet-weight compliance survey or a universal bivalve-to-fish ratio.",
         "links": [
           {
             "label": "Read original study",
@@ -144,7 +158,7 @@
         "citation": "Cardoso PG, Morais H, Crespo D, Tavares D, Pereira E, Pardal MÂ. Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment. Environmental Science and Pollution Research. 2023;30:101121–101132. Published 30 August 2023. doi:10.1007/s11356-023-29495-5.",
         "summary": "The study sampled three Portuguese estuaries during 2019–2020, measuring total mercury in surface water, plants and benthic fauna. Water contamination varied by location and season; mercury in edible bivalves was below the historical 0.5 mg/kg comparison level used by the authors.",
         "establishes": "This is mercury research with an exposure assessment for edible bivalves. It supplies neither cadmium measurements nor a finfish-muscle cadmium baseline.",
-        "relevance": "Its useful connection to HMTc is the need to specify analyte, habitat and sampling period. It cannot support the article’s 0.005–0.05 mg/kg fish-cadmium range or the claimed bivalve amplification factor.",
+        "relevance": "The revised article uses this mercury study only as analyte- and habitat-specific context. It cannot establish a finfish cadmium baseline, a bivalve cadmium amplification factor or a cadmium certification ceiling.",
         "links": [
           {
             "label": "Read original study",
@@ -157,7 +171,7 @@
         "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157; entered into force 25 May 2023. Original text and consolidation dated 19 August 2026.",
         "summary": "Annex I sets wet-weight cadmium maxima of 1.0 mg/kg for bivalves and cephalopods without viscera, versus 0.050 mg/kg for fish muscle outside listed exceptions. For Pecten maximus, the bivalve maximum covers adductor muscle and gonad only.",
         "establishes": "These are binding food-category ceilings, not measured background distributions. Listed fish exceptions have higher limits. Article 3 addresses processing and concentration factors. The regulation does not establish cephalopod tissue concentration ranges or a unique biological explanation for each limit.",
-        "relevance": "HMTc needs the exact species, edible tissue and preparation to select its EU comparator. Adopting the strictest international ceiling remains an HMTc policy decision, not a requirement established by this EU regulation.",
+        "relevance": "The article’s twentyfold comparison is between the 1.0 mg/kg bivalve cadmium ceiling and the 0.050 mg/kg default fish-muscle ceiling, not measured biological accumulation. HMTc must preserve the species exceptions, edible-tissue and wet-weight qualifications. The EU law does not itself validate HMTc’s ceiling or require its strictest-international-limit policy.",
         "links": [
           {
             "label": "Original regulation",
@@ -175,7 +189,7 @@
         "citation": "Pendergrass K. Bivalve cadmium amplification through filter feeding — why mussels and oysters carry an order-of-magnitude higher cadmium load than finfish. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.bivalve-cadmium-amplification.",
         "summary": "This synthesis argues for species-specific seafood cadmium benchmarks and links underlying source records. It describes filter feeding, tissue differences and evidence gaps for oysters, scallops, nanoparticle bioavailability and farmed-versus-wild bivalves.",
         "establishes": "The page identifies itself as a preprint with no external reviews. It is an interpretation of other sources, not a new sampling study or independent validation of its anchor descriptions.",
-        "relevance": "It explains the argument used by this HMTc article, but its shared author and Institute of Contaminant Standards affiliation preclude treating it as independent corroboration. HMTc policy efficacy is not established.",
+        "relevance": "This author-produced synthesis explains the article’s origin, but shared authorship and Institute of Contaminant Standards affiliation prevent treating it as independent corroboration. The revised article relies on the original studies to correct the synthesis’s Bao identity, near-cap cadmium and mercury-versus-cadmium errors. Certification efficacy is not established.",
         "links": [
           {
             "label": "Read synthesis and review status",
@@ -1851,14 +1865,14 @@
   },
   "articles/organ-meat-cadmium-lead-accumulation": {
     "page": "articles/organ-meat-cadmium-lead-accumulation",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt",
         "citation": "Rabeey MA, Sabala RF, Zakaria AI, Sallam KI. Health risk assessment of heavy metals in imported frozen bovine meat and organs marketed in Sohag, Egypt. Scientific Reports. 2025;15:43828. doi:10.1038/s41598-025-29927-x. Supplemental context: Regulation (EU) 2023/915, consolidated August 19, 2026.",
         "summary": "The survey tested 105 market samples each of bovine muscle, liver and kidney. Mean cadmium was 0.030, 0.056 and 0.073 mg/kg wet weight, respectively; tissue differences were statistically significant. Mean lead did not differ significantly, while total mercury was lower in kidney than muscle.",
         "establishes": "The methods do not identify paired tissues from the same animals or establish lifetime storage mechanisms. Total mercury measurements cannot verify methylmercury as the cause of the observed distribution. The current EU cadmium limits for these tissues are 0.05, 0.50 and 1.0 mg/kg wet weight; its bovine-offal lead limit is 0.20, unlike the paper’s historical 0.50 comparator.",
-        "relevance": "The tissue means support distinct occurrence data and the article’s illustrative 100 g calculations. They do not establish a universal twofold multiplier for mixed products or exclude differences in animal histories. Low modeled hazard indices are separate from legal compliance. The supplemental EU text does not identify the unspecified reference 7.",
+        "relevance": "The tissue means support distinct occurrence data and the article’s illustrative 100 g calculations. They do not establish a universal twofold multiplier for mixed products or exclude differences in animal histories. Low modeled hazard indices are separate from legal compliance. The current EU comparison is now explicitly identified in replacement reference 7.",
         "links": [
           {
             "label": "Original study full text",
@@ -1943,6 +1957,20 @@
             "href": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004613/fullTextXML"
           }
         ]
+      },
+      "7": {
+        "referenceTitle": "Commission Regulation (EU) 2023/915: lead and cadmium maximum levels for meat and offal",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. Consolidated text of 19 August 2026. Annex I, entries 3.1.13–3.1.14 (lead) and 3.2.13 (cadmium). Explicit replacement for the unidentified generic offal-limit reference.",
+        "summary": "The regulation sets distinct maximum levels for specified meat and offal categories. The reviewed entries differentiate the metal, animal species and tissue and express these meat/offal values on a wet-weight basis.",
+        "establishes": "Cadmium maxima are 0.050 mg/kg for bovine, sheep, pig and poultry meat excluding offal; 0.50 mg/kg for liver and 1.0 mg/kg for kidney of those species and horses. Horse meat excluding offal has a separate 0.20 mg/kg cadmium maximum. Lead maxima are 0.10 mg/kg for the listed muscle meats, 0.20 mg/kg for bovine/sheep offal, 0.15 mg/kg for pig offal and 0.10 mg/kg for poultry offal. Thus poultry offal and muscle share the same lead maximum. These are legal maxima, not measured tissue distributions or an experimentally established physiological explanation.",
+        "relevance": "The replacement supports the article’s corrected species- and tissue-specific legal comparison. It prevents a universal claim that offal lead limits are looser than muscle limits. It does not establish that offal always contains more cadmium, validate a universal organ-to-muscle ratio or determine an HMTc certification ceiling.",
+        "links": [
+          {
+            "label": "Read official consolidated regulation and Annex I",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+          }
+        ],
+        "kind": "Legislation"
       },
       "8": {
         "referenceTitle": "Heavy Metal Index — organ-meat cadmium and lead accumulation (synthesis with full anchor-source records)",
@@ -3131,14 +3159,14 @@
   },
   "articles/us-baby-food-heavy-metal-laws-states-fda": {
     "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "FDA Human Foods Program 2026 priority deliverables",
         "citation": "U.S. Food and Drug Administration. Human Foods Program 2026 Priority Deliverables. 2026 program work plan; accessed September 15, 2026.",
         "summary": "FDA identifies work toward cadmium and inorganic-arsenic action levels for baby and toddler foods, alongside chemical-hazard guidance, surveillance and infant-formula initiatives.",
         "establishes": "The page establishes planned agency work. It does not itself adopt numeric limits, establish a completion date or determine the legal effect of a future instrument.",
-        "relevance": "This supports the article’s separation of policy plans from operative state duties. HMTc should review an issued instrument before treating a planned action level as a standard input.",
+        "relevance": "The work plan remains evidence of planned agency activity, separate from the newly clarified Vermont commencement date. The HMI replacement is background and does not upgrade planned action levels into operative limits.",
         "links": [
           {
             "label": "FDA2026 priorities",
@@ -3152,7 +3180,7 @@
         "citation": "Virginia Code §3.2-5125.1, Baby Food Protection Act; 2025 Virginia Acts chapter 693 (HB1844), approved May 2, 2025; substantive provisions effective January 1, 2026.",
         "summary": "The law covers specified packaged foods sold for children under two and excludes infant formula. It requires representative production-aggregate testing at least monthly, qualified laboratories, public results for shelf life plus one month, and conditional package QR disclosures.",
         "establishes": "It also restricts sales above FDA-established limits, preserving certain retailer inventory from before January 2026. The text supplies state duties, not a new numerical table for every metal or automatic certification compliance.",
-        "relevance": "HMTc evidence must map the product definition, four listed metals, sample identity, laboratory requirements and disclosure trigger. A passing certification result alone does not discharge these operational duties.",
+        "relevance": "Virginia’s own product definition and operational duties remain necessary to the article’s state-specific register. The clarified Vermont formula trigger does not change Virginia’s exclusion of formula.",
         "links": [
           {
             "label": "Virginia code provision",
@@ -3170,7 +3198,7 @@
         "citation": "Illinois Public Act 104-0345 (SB0073), codified at 410 ILCS 620/11.7, Baby foods; toxic elements. Effective January 1, 2026; consumer disclosure begins January 1, 2027.",
         "summary": "The enacted section requires representative testing of every production aggregate at least monthly by a proficient laboratory. It covers packaged foods for children under two, excludes formula, and sets later website and conditional QR-label disclosure duties.",
         "establishes": "The sale restriction enforces compliance with this section; the final text does not reproduce the introduced bill’s blanket FDA-limit sale prohibition. January 2026 effectiveness must be separated from January 2027 disclosure.",
-        "relevance": "This supports the article’s state-specific evidence matrix. HMTc should preserve lot results and laboratory qualifications while scheduling the Illinois disclosure requirement separately.",
+        "relevance": "Illinois’s testing and later disclosure dates remain separate from Vermont’s January2027 commencement. Certification evidence must preserve each jurisdiction’s scope and timing.",
         "links": [
           {
             "label": "Current Illinois statutory text",
@@ -3179,12 +3207,30 @@
         ],
         "kind": "Law"
       },
+      "4": {
+        "referenceTitle": "Vermont H.536 / Act 110 status",
+        "citation": "Vermont General Assembly. 2026 Act No.110 (H.536), An act relating to toxic heavy metals in baby food products. Signed May26,2026; enacted text, §§1–4.",
+        "summary": "Act110 creates baby-food testing, disclosure and sale provisions beginning January1,2027. The initial definition excludes formula; a later amendment adds it after a specified Attorney General confirmation.",
+        "establishes": "Formula inclusion depends on comparable laws taking effect elsewhere and written confirmation; supply shortages can trigger suspension. The act specifies laboratory and testing duties without publishing a new metal-limit table.",
+        "relevance": "The article must distinguish enactment, commencement and conditional product scope. A formula SKU cannot be mapped using the initial baby-food definition alone.",
+        "links": [
+          {
+            "label": "Enacted Act110",
+            "href": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT110/ACT110%20As%20Enacted.pdf"
+          },
+          {
+            "label": "Official bill and act status",
+            "href": "https://legislature.vermont.gov/bill/status/2026/H.536"
+          }
+        ],
+        "kind": "Enacted law with staged commencement"
+      },
       "5": {
         "referenceTitle": "FDA infant-formula product testing results",
         "citation": "U.S. Food and Drug Administration. FDA’s Infant Formula Product Testing Results. 2026 release reporting the FY2023–2025 market-basket survey; accessed September 15, 2026.",
         "summary": "FDA reports 312 samples across 16 brands, including powder and liquid formula. The page summarizes metals and other contaminants, expresses metal results as prepared for feeding, and describes follow-up testing.",
         "establishes": "This is occurrence monitoring, not a new legal limit. FDA cautions that a retail snapshot cannot capture all variability among production lots and that detection alone does not establish an unsafe product.",
-        "relevance": "The source supports the article’s evidence-versus-law distinction. HMTc can use it for surveillance context while retaining separate lot-specific testing and jurisdictional requirements.",
+        "relevance": "The FDA survey remains occurrence evidence, not a limit or state compliance assessment. Vermont’s staged formula scope and the HMI overview replacement do not change that distinction.",
         "links": [
           {
             "label": "FDA formula results and survey explanation",
@@ -3192,19 +3238,37 @@
           }
         ],
         "kind": "Government monitoring"
+      },
+      "6": {
+        "referenceTitle": "Heavy Metal Index — FDA Closer to Zero: Program Overview",
+        "citation": "Institute of Contaminant Standards. FDA Closer to Zero — Program Overview. Heavy Metal Index. Page dated May2,2026; accessed September16,2026. Explicit replacement for the unavailable United States infant-food contaminant controls page.",
+        "summary": "This secondary overview links selected federal lead-action-level records and describes FDA’s iterative program. It identifies incomplete ingestion of other guidance and jurisdictional comparisons.",
+        "establishes": "It is a navigation and synthesis resource, not an enacted law or a complete state/formula compliance register. Its narrow Scope section must not be generalized to all FDA contaminant work.",
+        "relevance": "The article now cites it only for federal background. State duties and product definitions remain grounded in official laws, with no automatic HMTc threshold change.",
+        "links": [
+          {
+            "label": "HMI Closer to Zero overview",
+            "href": "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+          },
+          {
+            "label": "FDA primary program explanation",
+            "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+          }
+        ],
+        "kind": "Secondary regulatory overview"
       }
     }
   },
   "articles/wastewater-irrigation-multimetal-crop-pathway": {
     "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus",
         "citation": "Ali, Adane Sirage; Bayih, Argaw Ambelu; and Gari, Sirak Robele. Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus. Frontiers in Public Health 10:977721, 18 October 2022. doi:10.3389/fpubh.2022.977721.",
         "summary": "This review included 24 studies of lead in irrigation wastewater, soils and crops. It reported frequent exceedances of the authors’ selected benchmarks, with substantial differences across settings.",
         "establishes": "Between-study heterogeneity was very high (I²=98%). The review concerns lead, not a pooled multi-metal effect; its modeled risk indices are not observations of illness or proof of a particular causal source.",
-        "relevance": "It supports screening wastewater-linked supply chains for lead. It does not verify current WHO/FAO legal limits, a uniform effect size, or the article’s broader claim that several metals always rise together.",
+        "relevance": "The review supports screening wastewater-linked supply chains for lead. The revised article attributes its selected benchmarks to the authors and separates them from the primary FAO/Codex texts. It does not establish current legal non-compliance, one uniform effect size or the broader claim that several metals always rise together.",
         "links": [
           {
             "label": "Read the review",
@@ -3232,7 +3296,7 @@
         "citation": "Chiutula C, Mtewa AG, Abraham A, Mvula RLS, Maluwa A, Eregno FE, Njalam’mano J. Assessment of Heavy Metal Accumulation in Wastewater–Receiving Soil–Exotic and Indigenous Vegetable Systems and Its Potential Health Risks: A Case Study from Blantyre, Malawi. International Journal of Environmental Research and Public Health 22(11):1614, 23 October 2025. doi:10.3390/ijerph22111614.",
         "summary": "This Soche wastewater-treatment-plant field study measured five metals in water, soil and six vegetable species. Water samples had nondetectable cadmium, chromium and lead, while vegetable results varied by species and tissue.",
         "establishes": "The sampling provides a snapshot, not a measured history of decades of loading. The study used dried plant material and total-element analysis; its unit reporting and food-limit comparisons require care. It did not establish Cr(VI) concentrations.",
-        "relevance": "It supports measuring crops as well as water. The article’s definite attribution to historical soil loading remains an interpretation; unit inconsistencies and exposure-model assumptions prevent adopting every stated exceedance as a verified food-law breach.",
+        "relevance": "It supports measuring crops as well as water. The revised article no longer treats historical soil loading as directly measured or every reported exceedance as verified food-law non-compliance. Unit inconsistencies, dried preparation and exposure-model assumptions remain important when interpreting the plant results.",
         "links": [
           {
             "label": "Read the study",
@@ -3246,7 +3310,7 @@
         "citation": "Clair-Caliot G, Marks SJ, Hug SJ, Bretzler A, N’guessan ND, Tihe SFK, Lalanne F. Uptake of Arsenic by Irrigated Vegetables and Cooked Food Products in Burkina Faso. Frontiers in Water 3:667308, 26 July 2021. doi:10.3389/frwa.2021.667308.",
         "summary": "A greenhouse experiment grew seven vegetables in 168 pots with arsenate-spiked irrigation water at 0–1,000 µg/L. Average dry-mass arsenic was higher in leafy edible parts than roots or fruits; cooking-water contamination also changed food arsenic.",
         "establishes": "The experiment models geogenic groundwater, not municipal sewage or retail prevalence. Species differed, and incomplete organ sampling limits some transfer comparisons. Its health indices use exposure assumptions rather than measured illness.",
-        "relevance": "It supports considering crop type and water quality. HMTc cannot generalize this arsenic-specific controlled experiment into proof that wastewater raises every metal or that one crop hierarchy applies across all contaminants.",
+        "relevance": "This supplies a controlled arsenic-transfer example that the article distinguishes from sewage exposure. HMTc cannot generalize it into proof that wastewater raises every metal or that one crop hierarchy applies across all contaminants.",
         "links": [
           {
             "label": "Read the study",
@@ -3260,7 +3324,7 @@
         "citation": "Pal J, Bishnoi M, Kaur M. Heavy metals in soil and vegetables and their effect on health. International Journal of Engineering Science Technologies 2(1):17–27, September 2017. doi:10.29121/IJOEST.v2.i1.2017.03.",
         "summary": "This Hisar field survey measured six metals in six vegetables and environmental samples from three wastewater-irrigated locations. Uptake varied by vegetable, element and location; cadmium and nickel transfer were relatively high in spinach.",
         "establishes": "Dried samples and atomic absorption establish total-element concentrations, not chromium species. The authors’ modeled health indices were below one, but their reference values and limited exposure pathways do not establish universal safety or observed disease.",
-        "relevance": "It supports retaining crop-specific measurements within broader panels. It does not prove that leafy vegetables always rank highest for every metal, or validate HMTc’s thresholds and testing frequency.",
+        "relevance": "It supports retaining crop-specific measurements within broader panels. It does not prove that leafy vegetables always rank highest for every metal, or validate HMTc’s thresholds and testing frequency. The original is dated 2017; the bibliography’s 2019 date remains a metadata discrepancy.",
         "links": [
           {
             "label": "Read the study",
@@ -3269,12 +3333,30 @@
         ],
         "kind": "Research article"
       },
+      "6": {
+        "referenceTitle": "FAO Water Quality for Agriculture, Table 21; Codex General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995)",
+        "citation": "Ayers RS, Westcot DW. Water Quality for Agriculture. FAO Irrigation and Drainage Paper 29 Rev. 1. Rome: Food and Agriculture Organization; 1985, reprinted 1994. Sections 5.5.1–5.5.3 and Table 21. Grouped with Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025; cadmium and lead commodity schedules. These identified texts explicitly replace the former unspecified WHO/FAO label.",
+        "summary": "FAO provides recommended long-term trace-element concentrations for irrigation water, considering accumulation and crop toxicity. Codex provides commodity-specific contaminant maximum levels for food and feed, including cadmium and lead in leafy vegetables. They address different media and uses.",
+        "establishes": "FAO Table 21 recommends lead at 5.0 mg/L, not 0.5 mg/L; its other entries include cadmium 0.01, chromium 0.10 and nickel 0.20 mg/L, with irrigation-rate qualifications. Codex lists leafy-vegetable cadmium at 0.2 mg/kg and lead at 0.3 mg/kg, excluding spinach from that lead category. The specified commodity is assessed as usually marketed after removing decomposed or withered leaves, not on a generic dry-weight basis. The reviewed Codex schedule does not supply the cited 2.3 mg/kg total-chromium food limit. Neither text alone establishes domestic legal applicability.",
+        "relevance": "The replacement clarifies why the papers’ selected comparison values cannot be labeled current WHO/FAO legal limits or directly applied to dried plant results. HMTc needs the correct water-versus-food matrix, commodity, concentration basis and jurisdiction; these documents do not establish the program’s strictest-government rule or its own testing schedule.",
+        "links": [
+          {
+            "label": "Read FAO irrigation-water guidance and Table 21",
+            "href": "https://www.fao.org/4/t0234e/T0234E06.htm"
+          },
+          {
+            "label": "Read Codex contaminant standard (2025)",
+            "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ro/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+          }
+        ],
+        "kind": "Guidance and standard"
+      },
       "7": {
         "referenceTitle": "Heavy Metal Index — wastewater-irrigation multi-metal crop pathway (synthesis with full anchor-source records)",
         "citation": "Pendergrass, Karen. Wastewater and sewage-effluent irrigation is a single upstream pathway that co-elevates multiple metals in the same crop, concentrating in leafy greens on peri-urban plots across the Global South. Heavy Metal Index, updated 27 July 2026. Preprint synthesis; doi:10.83376/hmi.wastewater-irrigation-multimetal-crop-pathway.",
         "summary": "The synthesis connects five sources on irrigation-related crop contamination, including a lead meta-analysis, field surveys and a controlled arsenic-irrigation experiment.",
         "establishes": "It is an author’s interpretation, with no external review recorded on the examined page. The arsenic experiment models geogenic groundwater rather than sewage, and the evidence does not uniformly isolate irrigation from other inputs.",
-        "relevance": "It maps the studies behind this article’s broader testing argument. HMTc’s panel and surveillance schedule remain program decisions; a separate Index page with shared authorship is not independent corroboration.",
+        "relevance": "The synthesis maps the studies behind the article’s broader testing argument. Its shared authorship does not provide independent corroboration. The revised article checks benchmark identity and concentration basis against separately identified FAO/Codex documents; HMTc’s panel and surveillance schedule remain program decisions.",
         "links": [
           {
             "label": "Read the synthesis",
@@ -3448,7 +3530,7 @@
   },
   "briefings/after-palmquist": {
     "page": "briefings/after-palmquist",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
@@ -3488,6 +3570,24 @@
             "href": "https://oversightdemocrats.house.gov/sites/evo-subsites/democrats-oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
           }
         ]
+      },
+      "4": {
+        "referenceTitle": "In re: Baby Food Products Liability Litigation — transfer order and December 2025 docket statistics",
+        "citation": "U.S. Judicial Panel on Multidistrict Litigation. In re: Baby Food Products Liability Litigation, MDL No. 3101, Transfer Order, Document 127, 11 April 2024; MDL Statistics Report: Distribution of Pending MDL Dockets by Actions Pending, 2 December 2025, p. 1.",
+        "summary": "The transfer order centralized related baby-food injury cases in the Northern District of California for coordinated or consolidated pretrial proceedings. The Panel's December 2025 report lists 385 pending actions and 395 historical total actions in MDL 3101.",
+        "establishes": "The order establishes procedural coordination; the report establishes docket counts on 2 December 2025. Neither decides causation, product liability or the validity of individual allegations. Pending actions are distinct from historical total actions and from counts of injured people.",
+        "relevance": "These records support this briefing's description of the federal litigation's organization and dated scale. They do not establish that Palmquist moved all heavy-metal cases to state court or that HMTc certification changes litigation outcomes.",
+        "links": [
+          {
+            "label": "JPML transfer order · 11 April 2024",
+            "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+          },
+          {
+            "label": "JPML docket statistics · 2 December 2025",
+            "href": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-December-2-2025.pdf"
+          }
+        ],
+        "kind": "Court records"
       },
       "5": {
         "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
@@ -3653,14 +3753,14 @@
   },
   "briefings/before-the-meat-label-prints": {
     "page": "briefings/before-the-meat-label-prints",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
-        "referenceTitle": "9 CFR 412.1 — Label approval",
+        "referenceTitle": "9 CFR 412.1: Label approval",
         "citation": "9 CFR §412.1, Label approval, January 1, 2025 annual edition, pp 551–552, including adjacent §412.2. USDA, Submission for OMB Review; Comment Request, 91 FR 10582, March 4, 2026, corroborates the generic-approval exception.",
         "summary": "Section 412.1 requires submission for specified labels, including special claims, while expressly excepting generic labels. A sketch may be a printer’s proof, hand drawing or computer-generated equivalent showing final features and placement.",
-        "establishes": "The opening claim that government must have seen every label is incorrect. Special claims include undefined logos and trademarks, but the rule has defined exclusions. It governs approval before use; it does not demand a finished printer’s proof in every application.",
-        "relevance": "This supports assessing the HMTc seal under the special-claim rules, not a guarantee of approval. The application needs Form 7234–1 and supporting records; the briefing’s five-item package is not an exhaustive checklist established here.",
+        "establishes": "The rule expressly permits generic approval without agency evaluation and allows several forms of sketch. Special claims have defined inclusions and exclusions; approval is required before use where submission applies.",
+        "relevance": "It supports the revised generic-approval distinction and the need to evaluate the particular HMTc claim. The proposed five supporting items are now identified as the briefing’s proposal, not an exhaustive regulatory checklist.",
         "links": [
           {
             "label": "CFR text, 2025 edition",
@@ -3673,12 +3773,26 @@
         ],
         "kind": "Regulation"
       },
+      "2": {
+        "referenceTitle": "FSIS Directive 7221.1: Prior Labeling Approval",
+        "citation": "USDA Food Safety and Inspection Service. Directive 7221.1, Revision 4: Prior Labeling Approval. December 10, 2025. Federal text reproduced on PDF pages 2–6 of the Maine DACF file; page 1 is a separate Maine implementation cover sheet.",
+        "summary": "The directive instructs inspectors to verify label approval and records. It distinguishes generic labels from those requiring LPDS evaluation and adds U.S.-origin-claim verification.",
+        "establishes": "Submission requires a sketch, Form 7234-1 and supporting evidence; LSAS and mail are permitted. Final-label records remain necessary. Egg-product inspection follows separate instructions.",
+        "relevance": "It supports the corrected filing explanation. It neither guarantees HMTc approval nor prescribes the briefing’s proposed five supporting items.",
+        "links": [
+          {
+            "label": "Federal directive in Maine government file",
+            "href": "https://www.maine.gov/tools/whatsnew/attach.php?an=1&id=12605503"
+          }
+        ],
+        "kind": "Agency inspection directive"
+      },
       "3": {
-        "referenceTitle": "9 CFR 317.8 and 9 CFR 381.129 — False or misleading labeling or containers",
+        "referenceTitle": "9 CFR 317.8 and 9 CFR 381.129: False or misleading labeling or containers",
         "citation": "9 CFR §§317.8 and 381.129, January 1, 2025 annual edition. Meat: false or misleading labeling and practices; poultry: false or misleading labeling or containers.",
         "summary": "Both provisions prohibit false or misleading labeling. Section 317.8(b)(34) specifically restricts “all,” “pure” and “100%” ingredient-content claims unless the product consists of a single ingredient.",
         "establishes": "The rules address context and accuracy rather than categorically banning the word “pure.” These two sections cover meat and poultry; they do not themselves supply the egg-product labeling provisions.",
-        "relevance": "They support defining and substantiating a certification claim. They do not establish that HMTc will pass review, that every purity-related claim fails, or that named competitors had to redesign their seals.",
+        "relevance": "The prohibition supports truthful, substantiated claims. The unchanged comparative assertions about purity seals still require evidence; neither provision guarantees HMTc approval.",
         "links": [
           {
             "label": "Meat labeling rule",
@@ -3696,7 +3810,7 @@
         "citation": "USDA FSIS. Food Standards and Labeling Policy Book, revised September 8, 2025. Agency document reproduced by Penn State Agricultural Law.",
         "summary": "The policy book aims to help manufacturers create truthful labels. Its poultry and beef-patty entries describe circumstances allowing “all,” “pure” or “100 percent” claims. Its preface says compliance does not guarantee authorization.",
         "establishes": "The cited source supports specific composition qualifications, not a general ban on purity language. The reviewed entries do not document rejection of a heavy-metal certification seal or prove that a measured claim must be accepted.",
-        "relevance": "The briefing should present its expected advantage as an inference. The source expressly limits any claim that preparing the described documentation ensures approval.",
+        "relevance": "The policy book still qualifies the briefing’s predictions about acceptance and purity language. Correcting the filing route does not establish a comparative approval advantage for HMTc.",
         "links": [
           {
             "label": "2025 policy book, agency PDF mirror",
@@ -3710,7 +3824,7 @@
         "citation": "USDA FSIS. Label Submission and Approval System (LSAS), public system information and contact page; FSIS overview last updated March 8, 2022.",
         "summary": "LSAS is FSIS’s electronic label-submission system. Its public portal identifies the Labeling and Program Delivery Staff and directs users to application support and the industry guide.",
         "establishes": "This establishes the system and its administrative purpose. A portal description does not prescribe HMTc’s exact certificate, licence, laboratory report and verification-address package, or guarantee a label decision.",
-        "relevance": "LSAS is a supported route for submitting a label. The source does not show that the system requires the precise five documents proposed by this briefing or that a certifier receives blanket endorsement.",
+        "relevance": "LSAS remains a supported electronic submission route. The recovered directive additionally permits mail; the briefing now distinguishes the regulatory record from its proposed certification documents.",
         "links": [
           {
             "label": "FSIS LSAS overview",
@@ -3728,7 +3842,7 @@
         "citation": "USDA FSIS. FSIS Guideline for Label Approval, FSIS-GD-2025-0006, December 2025, replacing March 2024. Agency PDF reproduced by Penn State; issuance confirmed by USDA’s December 12, 2025 bulletin.",
         "summary": "The guidance distinguishes special claims from generic claims and allows blanket product-line approvals and some reuse after initial approval. It lists certified claims for review, but also includes some certification wording and qualified “pure” claims among generic examples.",
         "establishes": "This is nonbinding guidance. It does not document the briefing’s unnamed certifiers being forced to redraw purity seals. A claim’s actual content and the applicable approval route matter; certification wording alone does not settle every case.",
-        "relevance": "It supports substantiation and label records, but qualifies the briefing’s assertion that each label always receives individual review. It supplies no approval, comparative success evidence or guaranteed filing recipe for HMTc.",
+        "relevance": "The corrected approval-route discussion now recognizes generic and previously approved uses. The guideline still does not establish the remaining unnamed purity-seal redesign anecdote or guarantee HMTc acceptance.",
         "links": [
           {
             "label": "December 2025 guideline, agency PDF mirror",
@@ -3742,11 +3856,11 @@
         "kind": "Guidance"
       },
       "7": {
-        "referenceTitle": "Heavy Metal Tested and Certified — Using the mark",
+        "referenceTitle": "Heavy Metal Tested and Certified: Using the mark",
         "citation": "Heavy Metal Tested & Certified. Using the mark. Program-publisher webpage, accessed September 15, 2026.",
         "summary": "The page describes a product-specific mark based on a ten-analyte panel, native measurement basis, accredited laboratory testing, a three-lot baseline and ongoing surveillance. It requires scope information and rejects absolute-safety and zero-metal claims.",
         "establishes": "This is the program’s own representation of its rules. It is not independent verification that those rules are implemented, that a particular lot passes, or that FSIS has approved the mark or any label bearing it.",
-        "relevance": "The source supports the intended meaning of the HMTc claim. The briefing’s prediction that this architecture will pass federal review remains an inference requiring an actual label and substantiation assessment.",
+        "relevance": "The source supports the program’s intended mark meaning. The filing correction does not provide an actual FSIS decision or verify the program’s commercial implementation.",
         "links": [
           {
             "label": "HMTc mark rules",
@@ -5204,14 +5318,14 @@
   },
   "briefings/heavy-metals-in-peptides-and-sarms": {
     "page": "briefings/heavy-metals-in-peptides-and-sarms",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Lead Astray? The Hidden Contaminants in the Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact",
         "citation": "Craven A, Ferris J, Nielsen S, Piatkowski T. Lead Astray? The Hidden Contaminants in Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact. Drug and Alcohol Review. 2025. doi:10.1111/dar.70007. Version of record, seven-page brief report.",
         "summary": "Researchers tested 28 anonymously donated anabolic-steroid products reportedly purchased in Australia during 2022–2024: 16 injectable oils, 10 oral products and two powders. Fifteen were mislabeled or missold; four of 21 with stated expected doses were within ±5%. ICP-OES testing found metals in all three product classes.",
         "establishes": "This small convenience sample establishes composition problems in the tested AAS products, not market-wide rates for peptides or SARMs. Metal concentration must be combined with product dose to estimate daily exposure; the study did not measure patient injury or manufacturing practices.",
-        "relevance": "It supports investigating an additional source of risk in AAS. Extending its findings to other synthetic products, or claiming that HMTc certification reduces clinical harm, requires additional evidence.",
+        "relevance": "It still motivates metal-content investigation in illicit AAS. The revised legal discussion does not expand this sample to peptides or SARMs, establish manufacturing practices, or prove that certification reduces clinical harm.",
         "links": [
           {
             "label": "University-hosted version of record",
@@ -5224,7 +5338,7 @@
         "citation": "International Council for Harmonisation. Guideline for Elemental Impurities Q3D(R2). Step 4, 2022; document history includes April 2022 corrections. Sections 2–6 and Appendix 2, Table A.2.1.",
         "summary": "Q3D supplies route-specific permitted daily exposures and a risk-based strategy for controlling elemental impurities in finished drug products. Its scope includes specified protein and synthetic-polypeptide drug products, with listed exclusions. Testing is one possible control rather than a universal requirement for every component or batch.",
         "establishes": "Daily exposure values are not standalone concentration limits. Oral/parenteral PDEs include cadmium 5/2, mercury 30/3 and nickel 200/20 µg/day; lead is 5/5 and arsenic 15/15. A lower parenteral value is therefore not universal. The guideline does not provide an aluminum PDE.",
-        "relevance": "It supplies toxicological reference points for HMTc’s proposed dose-based assessment. Every-lot testing and a particular rule for nasal, sublingual or troche products are HMTc decisions, not blanket Q3D requirements.",
+        "relevance": "It supports the revised distinction between pharmaceutical risk-based controls and HMTc’s own testing decisions. Remaining route and dose claims must be checked against the listed PDEs; this source does not establish a universal non-detect rule.",
         "links": [
           {
             "label": "Official ICH guideline",
@@ -5238,7 +5352,7 @@
         "citation": "United States Pharmacopeia. General Chapter <232>, Elemental Impurities—Limits, First Supplement to USP 40–NF 35 (official December 1, 2017); General Chapter <233>, Elemental Impurities—Procedures, Second Supplement to USP 38–NF 33; and USP Elemental Impurities Updates (updated January 17, 2023). Public historical texts and revision overview; current complete USP-NF text not accessed.",
         "summary": "Chapter 232 describes impurity limits and risk-based assurance of compliance in drug products, with exclusions and component-data options. Chapter 233 describes ICP-OES and ICP-MS procedures and validation criteria for alternatives. The reviewed public texts are historical editions; USP’s update page documents subsequent revisions.",
         "establishes": "The chapters distinguish limits from analytical procedures. The reviewed Chapter 233 does not supply speciation procedures. These sources do not establish that ICP-MS alone, reflex speciation, or full-panel testing of every lot is universally required by the pharmacopeia.",
-        "relevance": "They explain the analytical framework invoked by HMTc. A program should identify the exact current edition and validate methods for its matrices before claiming compliance with these chapters.",
+        "relevance": "The chapters explain the analytical framework invoked by HMTc, with historical-edition access limits unchanged. The revised opening no longer treats every-lot ICP-MS as a universal pharmaceutical requirement.",
         "links": [
           {
             "label": "USP Chapter232, historical official text",
@@ -5255,12 +5369,26 @@
         ],
         "kind": "Compendial standards — historical texts and overview"
       },
+      "4": {
+        "referenceTitle": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more",
+        "citation": "U.S. Food and Drug Administration. Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more. Current safety overview, accessed September 16, 2026. Explicit replacement for the unavailable October 31, 2017 FDA In Brief announcement.",
+        "summary": "FDA warns against bodybuilding products marketed as SARMs, identifies them as unapproved drugs, and describes health risks and enforcement.",
+        "establishes": "A research-use label does not remove oversight of products sold for human use. This warning supplies no metal measurements or certification standard.",
+        "relevance": "The revised briefing distinguishes uncertain quality assurance from regulatory exemption. Testing cannot establish lawful drug marketing or broader safety.",
+        "links": [
+          {
+            "label": "FDA safety overview",
+            "href": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more"
+          }
+        ],
+        "kind": "Government safety warning"
+      },
       "5": {
         "referenceTitle": "Warnings on counterfeit and compounded semaglutide and tirzepatide",
         "citation": "US Food and Drug Administration. FDA Warns Consumers Not to Use Counterfeit Ozempic (semaglutide) Found in U.S. Drug Supply Chain, MedWatch bulletin, December 21, 2023; FDA Warns Patients and Health Care Professionals Not to Use Compounded Drugs from Fullerton Wellness, November 1, 2024. Current context: FDA’s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss.",
         "summary": "The 2023 warning describes counterfeit Ozempic and needles found in the legitimate supply chain and seizure of thousands of units. The 2024 Fullerton warning concerns nonsterile compounded semaglutide and tirzepatide injections. These documents address distinct counterfeit and compounding failures.",
         "establishes": "They establish specific FDA enforcement and safety concerns, not measured heavy-metal contamination. Compounded products are not FDA-approved, but compounding has legal conditions and oversight; it is not synonymous with counterfeiting or with an absence of regulation.",
-        "relevance": "The warnings show why a metal result cannot establish drug identity, sterility, efficacy or lawful supply. They do not independently validate HMTc’s certification or a claim that regulators cannot reach the category.",
+        "relevance": "The corrected discussion distinguishes counterfeit semaglutide from nonsterile compounded products and recognizes existing oversight. The warnings remain evidence of specific quality failures, not heavy-metal measurements or certification effectiveness.",
         "links": [
           {
             "label": "FDA December2023 bulletin",
@@ -5281,7 +5409,7 @@
         "citation": "Sagoe D, Molde H, Andreassen CS, Torsheim T, Pallesen S. The global epidemiology of anabolic-androgenic steroid use: a meta-analysis and meta-regression analysis. Annals of Epidemiology. 2014;24(5):383–398. doi:10.1016/j.annepidem.2014.01.009. Review limited to the original abstract and bibliographic record.",
         "summary": "This meta-analysis pooled 187 studies reporting 271 lifetime prevalence estimates. The pooled AAS-use estimate was 3.3% (95% CI 2.8–3.8), with very high heterogeneity. Estimates varied with population and study methods.",
         "establishes": "It supports the existence of substantial nonmedical anabolic-steroid use in the older literature. It is a lifetime-use estimate, not a 2026 current-use count, a peptide/SARM prevalence estimate, or evidence of exposure to metals.",
-        "relevance": "It provides background for the briefing’s harm-reduction argument. It cannot show that testing or certification changes behavior or health outcomes.",
+        "relevance": "The lifetime prevalence estimate provides background for the harm-reduction argument; the revised page does not turn it into a current peptide-market growth rate. It cannot show health benefits from testing or certification.",
         "links": [
           {
             "label": "Original abstract and bibliographic record",
@@ -5294,7 +5422,7 @@
         "citation": "US Food and Drug Administration. 21 CFR 201.323, Aluminum in large and small volume parenterals used in total parenteral nutrition. Official annual edition revised April 1, 2025, pp.92–93.",
         "summary": "The rule caps aluminum in large-volume parenteral products used in total parenteral nutrition at 25 µg/L. Small-volume products and pharmacy bulk packages used to prepare TPN must disclose maximum aluminum content, with additional warnings and validated-assay requirements.",
         "establishes": "The 25 µg/L cap is specific to large-volume TPN products. It is not a universal ceiling for every injection, nor the same requirement as the labeling rules for small-volume ingredients. The warning identifies particular risks with impaired kidney function and premature neonates.",
-        "relevance": "It provides a concrete example of route- and product-specific aluminum regulation. Applying its number to a peptide vial would require a separate, justified program decision.",
+        "relevance": "It remains a product-specific regulatory example. The revised paragraph recognizes that a research label does not decide legal applicability; the25µg/L limit remains specific to large-volume TPN products.",
         "links": [
           {
             "label": "Official CFR section",
@@ -5304,11 +5432,11 @@
         "kind": "US regulation"
       },
       "8": {
-        "referenceTitle": "Heavy Metal Index — peptides / SARMs / research-chemicals literature baseline",
+        "referenceTitle": "Heavy Metal Index: peptides / SARMs / research-chemicals literature baseline",
         "citation": "Institute of Contaminant Standards. Research Chemicals, Peptides & SARMs (HMTc Category 26 master). Heavy Metal Index. Updated June 8, 2026; accessed September 15, 2026.",
         "summary": "The category page organizes a developing literature corpus across injectable peptides, oral SARMs, anabolic steroids and raw powders. It links primary studies and explicitly describes thin coverage and incomplete synthesis. It separates literature summaries from unpublished certification-threshold decisions.",
         "establishes": "This is an index and synthesis resource, not another experiment. Its author and operator are connected to the Institute of Contaminant Standards and HMTc; editorial separation does not establish independent institutional validation.",
-        "relevance": "It gives readers a route from the briefing to the underlying literature while making the evidence gaps visible. HMTc’s commercial claims must still be assessed against the individual studies and applicable rules.",
+        "relevance": "The index remains a route to primary literature and evidence gaps. The corrected legal discussion does not make it independent validation of HMTc rules or outcomes.",
         "links": [
           {
             "label": "Category literature baseline",
@@ -5321,14 +5449,14 @@
   },
   "briefings/heavy-metals-in-pet-food": {
     "page": "briefings/heavy-metals-in-pet-food",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Lead concentrations in commercial dogfood containing pheasant in the UK",
         "citation": "Pain DJ, Green RE, Bates N, Guiu M, Taggart MA. Ambio. 2023;52:1339–1349. Published 3 May 2023. doi:10.1007/s13280-023-01856-x.",
         "summary": "The UK study tested 185 packages across eight game-meat and chicken dog-food products using X-rays and ICP-OES. Raw pheasant products had highly variable lead; the weighted mean after excluding known whole-shot samples was about 221 mg/kg dry weight.",
         "establishes": "The 34-fold comparison is with pheasant sold for human consumption, not background contamination. The three raw-product exceedance rates of 63–100% concern applicable feed maxima. This retail study did not test health outcomes or all raw diets.",
-        "relevance": "It supports ingredient-specific testing of game-based pet food. Human-food comparisons need the correct matrix, moisture basis and legal scope; neither a comparison nor certification demonstrates veterinary benefit.",
+        "relevance": "The corrected briefing uses the human-pheasant comparator and feed exceedance benchmark accurately. The study supports ingredient-specific testing; it does not show health outcomes or validate a human-food benchmark for every pet.",
         "links": [
           {
             "label": "Full study",
@@ -5341,7 +5469,7 @@
         "citation": "Du J, Zhou K, Jiang H, Hu S, Zhang W, Zheng Q, Zhou G, Zhang N. Scientific Reports. 2025;15:13237. Published 17 April 2025. doi:10.1038/s41598-025-98066-0.",
         "summary": "This survey tested 93 imported products produced in 2021–2022 and purchased in three Chinese cities: 45 cat foods and 48 dog foods. Atomic absorption and fluorescence assays measured five total metals. Chromium and arsenic were detected in every sample; detection frequencies differed for the others.",
         "establishes": "Cat-food lead and cadmium means were higher among positive samples. The hazard indices used maximum concentrations and human toxicological reference values because pet-specific values were unavailable; they are modeling results, not observed illness or species-specific risk thresholds.",
-        "relevance": "The study supports measuring multiple metals, with detection limits and chemical species stated. Its cited Chinese limits are the authors’ regulatory comparison, not an independently verified current legal instrument. It does not establish a universal lower human-fish mercury limit.",
+        "relevance": "The corrected page distinguishes assayed metals from detections and attributes Chinese legal comparisons to the authors. HMTc should state detection limits, chemical species and the uncertainty of models using human reference doses.",
         "links": [
           {
             "label": "Full study",
@@ -5354,7 +5482,7 @@
         "citation": "Haydous F, Hassan HF, Shehab A, Alwan N, Serhan M, Dimassi H, Akoury E. RSC Advances. 2025;15:22629–22640. Published 2 July 2025. doi:10.1039/d5ra02790j.",
         "summary": "The authors screened 196 commercial products in Lebanon and the UAE in fall 2021, comprising 147 cat and 49 dog foods. ICP-MS measured nine elements. Table 6 reports mean cadmium of 0.251 mg/kg in cat food and 0.112 mg/kg in dog food.",
         "establishes": "These are product-group observations, not an ingredient-controlled experiment or clinical study. The study’s threshold comparisons combine disparate reference values and do not independently establish violations of binding pet-feed limits.",
-        "relevance": "It supports regional surveillance and reporting product format and intended animal. Marine or organ ingredients as the cause of the cadmium difference remain a hypothesis. Human-meat maxima are comparators, not automatically applicable limits for compound pet foods.",
+        "relevance": "The corrected page presents the cat/dog cadmium difference as an observation, with no ingredient-causation or binding-law inference. It supports regional surveillance and product-format reporting rather than automatic transfer of human-meat limits.",
         "links": [
           {
             "label": "Full study",
@@ -5367,7 +5495,7 @@
         "citation": "Kim HT, Loftus JP, Gagné JW, Rutzke MA, Glahn RP, Wakshlag JJ. Veterinary Medicine: Research and Reports. 2018;9:43–51. Published 26 June 2018. doi:10.2147/VMRR.S165890.",
         "summary": "The authors measured chromium, nickel, molybdenum, silica and aluminum in 49 maintenance dry dog foods bought around Ithaca, New York, using ICP-AES. Estimated intake per 1,000 kcal exceeded average human intake for aluminum, chromium and molybdenum.",
         "establishes": "Average human intake is not a toxicity threshold. The authors found no evidence of potential chronic toxic exposure under their extrapolated intake comparisons, while calling for bioavailability research and dog-specific allowances. This was not a feeding trial.",
-        "relevance": "The paper supports examining additional elements and expressing exposure on a defined intake basis. It does not demonstrate harm from these foods or validate human concentration limits as optimal pet standards. Its 2018 description of missing standards is not a current legal survey.",
+        "relevance": "The corrected briefing includes the authors’ reassuring modeled-toxicity interpretation and dates their standards-gap observation to 2018. The study supports additional-element monitoring, not a present-day survey of AAFCO/NRC requirements or veterinary validation of HMTc.",
         "links": [
           {
             "label": "Full publisher article",
@@ -5380,7 +5508,7 @@
         "citation": "Kępińska-Pacelik J, Biel W, Mizielińska M, Iwański R. Applied Sciences. 2023;13(5):2806. Published 22 February 2023. doi:10.3390/app13052806.",
         "summary": "This formulation experiment assessed four self-produced dog-snack prototypes, two extruded and two baked, including chemical composition and palatability. Table 5 reports cadmium, lead, chromium and nickel as not detected in all four snacks.",
         "establishes": "The experiment does not establish contamination prevalence in retail treats. Nondetection is bounded by analytical sensitivity and does not mean absolute absence; analyte-specific detection limits were not found in the reviewed methods. Palatability does not establish long-term health benefit.",
-        "relevance": "The paper illustrates that treats can be included in analytical assessment, but directly contradicts the page’s claim that these finished snacks carried detected cadmium, lead, chromium and nickel. It offers no validation of a certification program.",
+        "relevance": "The corrected briefing reports nondetection in four laboratory prototypes rather than detected contamination in retail treats. It illustrates analytical assessment of treats, with method sensitivity and product scope retained; it does not validate a certification program.",
         "links": [
           {
             "label": "Full publisher PDF",
@@ -5393,13 +5521,55 @@
         "citation": "European Parliament and Council. Directive 2002/32/EC of 7 May 2002 on undesirable substances in animal feed. OJ L 140, 30 May 2002, p. 10. Consolidated text dated 28 November 2019.",
         "summary": "Annex I sets maxima on a 12%-moisture basis: complete-feed lead 5 mg/kg; complete-pet-feed cadmium 2 mg/kg; total arsenic generally 2 mg/kg, but 10 mg/kg for specified marine-containing pet feeds. Compound feed for dogs and cats has a total-mercury maximum of 0.3 mg/kg.",
         "establishes": "The marine arsenic exception requires operators, on authority request, to demonstrate inorganic arsenic below 2 mg/kg. Articles 3–6 include general health protection, source investigation and a ban on dilution of noncompliant feed. Complementary-feed rules differ.",
-        "relevance": "This establishes feed-specific comparators, not human-food legality or veterinary safety of every concentration below a maximum. The page’s universal 2 mg/kg pet-feed arsenic statement omits an exception relevant to fish and seaweed ingredients.",
+        "relevance": "The corrected page names the dated consolidation, marine arsenic exception, moisture basis and general safeguards. It uses feed maxima as legal context, while keeping HMTc’s voluntary human-food comparison separate from a demonstrated safety threshold.",
         "links": [
           {
             "label": "Official consolidated directive",
             "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02002L0032-20191128"
           }
         ]
+      },
+      "7": {
+        "referenceTitle": "Commission Regulation (EU) 2023/915: selected human-food cadmium categories",
+        "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157. Original act; selected Annex I cadmium categories.",
+        "summary": "The original regulation sets cadmium maxima of 0.05 mg/kg for listed livestock meat excluding offal and 0.04 mg/kg for pulses excluding proteins.",
+        "establishes": "These are category-specific human-food maxima. Articles 2–3 govern listed foods and relevant processing factors; the act does not turn those values into compound-pet-food limits.",
+        "relevance": "The corrected bibliography replaces the unspecified national-register grouping with this exact EU source. The page removes unverified Israeli examples and universal comparison factors. HMTc’s use of a human-food value for pet food remains a voluntary choice.",
+        "links": [
+          {
+            "label": "Original EU regulation",
+            "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+          }
+        ],
+        "kind": "Regulation"
+      },
+      "8": {
+        "referenceTitle": "FDA: Pet Food: federal safety requirements",
+        "citation": "US Food and Drug Administration. Pet Food. Official animal-food overview; accessed 16 September 2026.",
+        "summary": "FDA describes federal pet-food safety and labeling requirements and state labeling rules, many based on AAFCO models.",
+        "establishes": "General animal-food safeguards continue to apply even where this overview supplies no metal-specific number. This page is not the AAFCO Official Publication or an NRC nutrient standard.",
+        "relevance": "The corrected reference openly replaces an unidentified AAFCO edition. It supports the page’s distinction between general law, model rules and dated research observations, rather than asserting that only a certifier can impose a limit.",
+        "links": [
+          {
+            "label": "FDA pet-food overview",
+            "href": "https://www.fda.gov/animal-veterinary/animal-foods-feeds/pet-food"
+          }
+        ],
+        "kind": "Government"
+      },
+      "9": {
+        "referenceTitle": "Heavy Metal Index: reference-library homepage (accessed 16 September 2026)",
+        "citation": "Heavy Metal Index. Reference-library homepage. Accessed 16 September 2026; displayed collection update: 14 September 2026.",
+        "summary": "The homepage offers navigation to metal, product, regulation, source and evidence-method pages in a changing reference library.",
+        "establishes": "A dated homepage citation identifies the library entry point. It is not a frozen pet-food dataset, systematic-review result or proof of the completeness of any baseline.",
+        "relevance": "The corrected page uses HMI only as a discovery resource and attributes occurrence findings to individually named studies. This replaces the unidentifiable pet-food/per-analyte collection without claiming that collection was verified.",
+        "links": [
+          {
+            "label": "HMI reference-library homepage",
+            "href": "https://heavymetalindex.com/"
+          }
+        ],
+        "kind": "Reference library"
       }
     }
   },
@@ -5463,14 +5633,14 @@
   },
   "briefings/no-limit-is-not-no-standard": {
     "page": "briefings/no-limit-is-not-no-standard",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "Lead Astray? The Hidden Contaminants in the Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact",
         "citation": "Craven A, Ferris J, Nielsen S, Piatkowski T. Lead Astray? The Hidden Contaminants in Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact. Drug and Alcohol Review. 2025. doi:10.1111/dar.70007. Version of record, seven-page brief report.",
         "summary": "Researchers tested 28 anonymously donated anabolic-steroid products reportedly purchased in Australia during 2022–2024: 16 injectable oils, 10 oral products and two powders. Fifteen were mislabeled or missold; four of 21 with stated expected doses were within ±5%. ICP-OES testing found metals in all three product classes.",
         "establishes": "This small convenience sample establishes composition problems in the tested AAS products, not market-wide rates for peptides or SARMs. Metal concentration must be combined with product dose to estimate daily exposure; the study did not measure patient injury or manufacturing practices.",
-        "relevance": "The survey motivates examining metal content in illicit AAS, but it does not compare certification policies, derive a universal non-detect target, or show that every detection represents a demonstrated clinical harm.",
+        "relevance": "The sample motivates examining illicit AAS metal content. It does not establish a global absence of legal limits, a universal non-detect target, or contamination rates across Category 26.",
         "links": [
           {
             "label": "University-hosted version of record",
@@ -5483,7 +5653,7 @@
         "citation": "International Council for Harmonisation. Guideline for Elemental Impurities Q3D(R2). Step 4, 2022; document history includes April 2022 corrections. Sections 2–6 and Appendix 2, Table A.2.1.",
         "summary": "Q3D provides permitted daily exposures and risk-based controls for specified finished drug products. Section 7 explicitly describes converting a daily exposure budget into a concentration using the maximum daily product intake, with assumptions and contributions from product components documented.",
         "establishes": "A concentration derived from a stated exposure model is a recognized assessment tool. Q3D supplies finite PDEs, not a universal non-detect requirement. Product intake, source contributions and analytical capability cannot be omitted merely by calling a result non-detect.",
-        "relevance": "It supports HMTc’s use of route-specific toxicology while requiring the derivation and decision rule to be explicit. The source does not validate the page’s claim that every proposed analyte target necessarily falls below detection.",
+        "relevance": "It supplies route-specific exposure references. The page now distinguishes HMTc’s unidentified category-specific concentration value from those references; its separate numerical derivation and dose assumptions remain unverified.",
         "links": [
           {
             "label": "Official ICH guideline",
@@ -5492,12 +5662,26 @@
         ],
         "kind": "International scientific guideline"
       },
+      "3": {
+        "referenceTitle": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more",
+        "citation": "U.S. Food and Drug Administration. Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more. Current safety overview, accessed September 16, 2026. Explicit replacement for the unavailable October 31, 2017 FDA In Brief announcement.",
+        "summary": "FDA warns against bodybuilding products marketed as SARMs, identifies them as unapproved drugs, and describes health risks and enforcement.",
+        "establishes": "A research-use label does not remove oversight of products sold for human use. This warning supplies no metal measurements or certification standard.",
+        "relevance": "The warning supports existing FDA oversight. The page now consistently limits its absence finding to a concentration value HMTc has not identified; testing still cannot establish lawful drug marketing or broader safety.",
+        "links": [
+          {
+            "label": "FDA safety overview",
+            "href": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more"
+          }
+        ],
+        "kind": "Government safety warning"
+      },
       "4": {
         "referenceTitle": "Warnings on counterfeit and compounded semaglutide and tirzepatide",
         "citation": "US Food and Drug Administration. FDA Warns Consumers Not to Use Counterfeit Ozempic (semaglutide) Found in U.S. Drug Supply Chain, MedWatch bulletin, December 21, 2023; FDA Warns Patients and Health Care Professionals Not to Use Compounded Drugs from Fullerton Wellness, November 1, 2024. Current context: FDA’s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss.",
         "summary": "The 2023 warning describes counterfeit Ozempic and needles found in the legitimate supply chain and seizure of thousands of units. The 2024 Fullerton warning concerns nonsterile compounded semaglutide and tirzepatide injections. These documents address distinct counterfeit and compounding failures.",
         "establishes": "They establish specific FDA enforcement and safety concerns, not measured heavy-metal contamination. Compounded products are not FDA-approved, but compounding has legal conditions and oversight; it is not synonymous with counterfeiting or with an absence of regulation.",
-        "relevance": "These warnings demonstrate existing regulatory oversight and several safety attributes that a metal-only result cannot establish. They do not supply evidence that clear certificate wording eliminates endorsement effects or that the category lies beyond government authority.",
+        "relevance": "These distinct counterfeit and compounding events document existing oversight. They do not establish the absence of category-specific legal limits or prove that certificate wording prevents endorsement effects.",
         "links": [
           {
             "label": "FDA December2023 bulletin",
@@ -5518,7 +5702,7 @@
         "citation": "United States Pharmacopeia. General Chapter <232>, Elemental Impurities—Limits, First Supplement to USP 40–NF 35 (official December 1, 2017); General Chapter <233>, Elemental Impurities—Procedures, Second Supplement to USP 38–NF 33; and USP Elemental Impurities Updates (updated January 17, 2023). Public historical texts and revision overview; current complete USP-NF text not accessed.",
         "summary": "Chapter 232 describes impurity limits and risk-based assurance of compliance in drug products, with exclusions and component-data options. Chapter 233 describes ICP-OES and ICP-MS procedures and validation criteria for alternatives. The reviewed public texts are historical editions; USP’s update page documents subsequent revisions.",
         "establishes": "The reviewed texts distinguish impurity limits, risk-based control and validated measurement. Chapter 233 allows ICP-OES, ICP-MS and validated alternatives; its quantitation criteria do not establish a single immutable instrument floor or prove that non-detect means zero contamination. Current full USP-NF text was not accessed.",
-        "relevance": "They support documenting an analytical method and its capability. HMTc must separately specify reporting limits, matrices and the disposition of a detected result before a reader can reproduce its decision rule.",
+        "relevance": "The chapters support method documentation and capability assessment. Narrowing the legal-absence wording does not resolve the page’s differing investigation-versus-failure rules for detected results or the limitations of historical USP access.",
         "links": [
           {
             "label": "USP Chapter232, historical official text",
@@ -5536,11 +5720,11 @@
         "kind": "Compendial standards — historical texts and overview"
       },
       "6": {
-        "referenceTitle": "Heavy Metal Index — peptides / SARMs / research-chemicals literature baseline",
+        "referenceTitle": "Heavy Metal Index: peptides / SARMs / research-chemicals literature baseline",
         "citation": "Institute of Contaminant Standards. Research Chemicals, Peptides & SARMs (HMTc Category 26 master). Heavy Metal Index. Updated June 8, 2026; accessed September 15, 2026.",
         "summary": "The category page organizes a developing literature corpus across injectable peptides, oral SARMs, anabolic steroids and raw powders. It links primary studies and explicitly describes thin coverage and incomplete synthesis. It separates literature summaries from unpublished certification-threshold decisions.",
         "establishes": "This is an index and synthesis resource, not another experiment. Its author and operator are connected to the Institute of Contaminant Standards and HMTc; editorial separation does not establish independent institutional validation.",
-        "relevance": "The index separates a developing literature corpus from certification decisions. It does not publish or independently verify the internal derivation claimed here, so it cannot supply the missing dose assumptions, reporting limits or evidence that certification prevents harm.",
+        "relevance": "The index provides literature context, not an exhaustive legal survey or independent verification of the internal non-detect derivation. The narrowed identified-sources finding does not resolve that methodological evidence gap.",
         "links": [
           {
             "label": "Category literature baseline",
@@ -5553,14 +5737,14 @@
   },
   "briefings/supplements-child-protective": {
     "page": "briefings/supplements-child-protective",
-    "reviewed": "2026-09-15",
+    "reviewed": "2026-09-16",
     "refs": {
       "1": {
         "referenceTitle": "USP General Chapter <2232>: Elemental Contaminants in Dietary Supplements",
         "citation": "United States Pharmacopeia. General Chapter <2232>, Elemental Contaminants in Dietary Supplements. USP–NF (2022); public publisher preview, doi:10.31003/USPNF_M5291_02_01.",
         "summary": "The public preview describes limits for finished supplement dosage forms labeled as conforming to USP or NF. Ingredient limits instead belong in individual monographs.",
-        "establishes": "This review establishes the chapter’s identity and stated scope only. The subscription text, numerical exposure table, alleged adult assumptions, ten-gram option and claimed absence of other metals were not verified.",
-        "relevance": "The briefing’s 500 µg/kg calculation is conditional on the unverified 5 µg/day and 10 g/day inputs. This preview cannot establish that the standard ignores children or that HMTc’s alternative protects them.",
+        "establishes": "This review establishes the chapter’s identity and public scope. The subscription text, numerical table, body-weight derivation and ten-gram option were not verified.",
+        "relevance": "The corrected briefing limits this citation to chapter scope and removes its unsupported numerical conversion and universal adult-only premise. It does not use the preview to substantiate child-protection claims.",
         "links": [
           {
             "label": "USP chapter preview",
@@ -5569,12 +5753,30 @@
         ],
         "kind": "Standard"
       },
+      "2": {
+        "referenceTitle": "Thailand MOPH Notification No. 414 (2020) — Standards for Contaminants in Food",
+        "citation": "Thailand Ministry of Public Health. Notification No. 414 B.E. 2563 (2020), Standards for Contaminants in Food. Notified 20 March 2020; Government Gazette Vol. 137, Special Part 118 Ngor, 20 May 2020. Officially hosted unofficial English translation; Thai text controls.",
+        "summary": "Annex 1 gives a food-supplement lead maximum of 1 mg/kg for the product as prepared for consumption.",
+        "establishes": "The stated basis is product concentration. The instrument does not establish the briefing’s former universal adult-body-weight premise. This review covers the identified 2020 notification and its relevant provisions, not a four-country legal survey.",
+        "relevance": "The corrected bibliography explicitly replaces the former Thailand/GCC/Israel/Vietnam grouping with this Thai source. The page removes the other three jurisdictions’ unverified values and distinguishes a concentration comparison from proof of child safety.",
+        "links": [
+          {
+            "label": "Thai FDA instrument page",
+            "href": "https://food.fda.moph.go.th/food-law/announ-moph-414"
+          },
+          {
+            "label": "Thai FDA English PDF",
+            "href": "https://food.fda.moph.go.th/media.php?id=509427551085666304&name=P414_E.pdf"
+          }
+        ],
+        "kind": "Government"
+      },
       "3": {
         "referenceTitle": "ASEAN and Singapore health-supplement contaminant guidelines",
         "citation": "ASEAN. Guidelines on Limits of Contaminants for Health Supplements, version 2.0, adopted and endorsed June 2015. Singapore HSA. Health supplements overview, accessed September 15, 2026.",
         "summary": "Both sources give a lead limit of 10 ppm. ASEAN version 2.0 also lists arsenic 5, mercury 0.5 and cadmium 0.3 ppm, with a Philippines arsenic exception. HSA publishes the same general four-metal values.",
         "establishes": "HSA additionally requires safety for recommended use and target users, even when numerical limits are met. Its adult vitamin/mineral table is separate. The ASEAN PDF carries an information-only disclaimer pending finalization of its regulatory agreement; that historical disclaimer does not establish the agreement’s current status.",
-        "relevance": "The lead comparison is supported. These texts do not establish that the limits are the world’s laxest, that all supplement regulation assumes adults, or that sharing adult products with children is prevalent or safe.",
+        "relevance": "The corrected briefing retains the supported lead figures, distinguishes historical ASEAN guidance from national law, and includes HSA’s target-user safety requirement. It removes global rankings and the claim that these texts ignore children.",
         "links": [
           {
             "label": "ASEAN version 2.0",
@@ -5591,8 +5793,8 @@
         "referenceTitle": "Proposition 65 Safe Harbor Levels — Maximum Allowable Dose Levels",
         "citation": "California OEHHA. Proposition 65 safe-harbor table, lead MADL. California Health and Safety Code §25249.10(c), reproductive-toxicity exemption.",
         "summary": "OEHHA lists a lead MADL of 0.5 µg/day. The statute’s reproductive-toxicity exemption concerns exposure producing no observable effect at 1,000 times the exposure in question.",
-        "establishes": "This is a daily-exposure safe harbor, not a food concentration or a general assurance of safety for children. The briefing’s phrase “observed-effect” misstates the statutory no-observable-effect criterion.",
-        "relevance": "Comparisons with supplement concentrations require dose and frequency. The tenfold comparison to USP remains conditional on the full USP table, which this review did not access.",
+        "establishes": "The 0.5 µg/day MADL is a daily-exposure safe harbor. The statutory criterion is no observable effect at 1,000 times the exposure, not an observed-effect level or a general child-safety threshold.",
+        "relevance": "The corrected briefing keeps the daily-exposure basis explicit and removes its unverified numerical comparison to USP. A supplement concentration requires serving and frequency assumptions before comparison.",
         "links": [
           {
             "label": "OEHHA safe-harbor table",
@@ -5610,7 +5812,7 @@
         "citation": "European Commission. Regulation (EU) 2023/915, April 25, 2023; original act and consolidated text dated August 19, 2026, Annex I §§3.2.17 and 3.4.2.",
         "summary": "The 5 µg/kg cadmium limit applies to specified liquid formula made from cow-milk proteins or protein hydrolysates. The 10 µg/kg inorganic-arsenic limit applies to liquid formula. Powder and soy categories have different limits.",
         "establishes": "These values apply to specified products as marketed. They are not universal infant-food limits or supplement requirements; transferring a liquid-food value to powder or tablets changes the exposure basis. The consolidation is a documentation aid.",
-        "relevance": "The law identifies the selected benchmarks but does not validate HMTc’s supplement limits, implementation or child-protection claim. Consumption and preparation assumptions remain necessary.",
+        "relevance": "The corrected briefing identifies the liquid-formula categories underlying its chosen cadmium and inorganic-arsenic benchmarks. It explicitly separates those legal food limits from HMTc’s voluntary supplement criteria and from evidence of equivalent intake or child safety.",
         "links": [
           {
             "label": "Original regulation",
@@ -5628,7 +5830,7 @@
         "citation": "European Commission. Regulation (EU) 2024/1987 of July 30, 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L2024/1987, July 31, 2024.",
         "summary": "The amendment sets nickel maxima of 0.10 mg/kg for liquid formula, 0.25 for powder and 0.40 for soy-based powder, as placed on the market. The formula provisions apply from July 1, 2025.",
         "establishes": "The 100 µg/kg figure belongs to a liquid-formula category, not all supplements. Specified cereal provisions apply from July 1, 2026; lawfully marketed earlier food may remain until its durability or use-by date.",
-        "relevance": "This supports the provenance of HMTc’s selected nickel number, but does not establish equivalent intake or safety when applied to a different product type.",
+        "relevance": "The corrected briefing identifies the liquid-formula origin of HMTc’s selected nickel number and notes different powder values. The amendment establishes provenance, not equivalent exposure or safety in supplement users.",
         "links": [
           {
             "label": "Official Journal amendment PDF",
@@ -5642,7 +5844,7 @@
         "citation": "FSANZ. Standard 1.4.1, instrument F2015L00408; related Schedule 19, September 13, 2024 compilation, §§S19–3–4; P1028 consequential amendment, F2024L01151, items 22–23.",
         "summary": "The dated Schedule 19 table gives formula lead 0.01 mg/kg and aluminium 0.5 mg/kg for specified formula, 1 for soy formula and 0.2 for preterm special-medical products. The amending instrument confirms the 0.01 lead entry.",
         "establishes": "These are category-specific limits with preparation/concentration rules. FSANZ describes the revised framework as Australia-only, with New Zealand opting out and a transition through September 13, 2029. The reviewed dated compilation is not a complete later-amendment audit.",
-        "relevance": "The selected lead and aluminium numbers exist, but 500 µg/kg is not the lowest aluminium entry even within this table. Neither global uniqueness nor transferring these formula limits to every supplement is established.",
+        "relevance": "The corrected briefing gives the selected lead and aluminium values with category and transition limitations, includes the lower preterm aluminium entry, and removes global-minimum or global-uniqueness assertions. Program transfer remains a separate policy choice.",
         "links": [
           {
             "label": "Standard 1.4.1 identity",
@@ -5667,8 +5869,8 @@
         "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
         "citation": "EFSA CONTAM Panel. Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
         "summary": "EFSA derived a chronic tolerable daily intake of 13 µg nickel/kg body weight using rat post-implantation loss and a 100-fold uncertainty factor. High-percentile exposure exceeded it in many young population groups.",
-        "establishes": "Mean exposure was generally below or near the TDI, with a small toddler survey around it. The briefing overstates this as general mean-exposure exceedance. The TDI concerns total intake, not a supplement concentration.",
-        "relevance": "The opinion supports considering children’s body weight and nickel exposure. It does not show that a 100 µg/kg supplement limit ensures safety, or document routine sharing of supplement bottles.",
+        "establishes": "Mean exposure was generally below or near the TDI, with a small toddler survey around it. High-percentile exceedances concern total dietary intake, not a supplement concentration or demonstrated harm in each child.",
+        "relevance": "The corrected briefing distinguishes high-percentile exposure from general mean exposure and explains that body weight and total intake matter. The opinion does not validate HMTc’s 100 µg/kg supplement criterion or the suitability of adult supplements for children.",
         "links": [
           {
             "label": "EFSA nickel opinion",

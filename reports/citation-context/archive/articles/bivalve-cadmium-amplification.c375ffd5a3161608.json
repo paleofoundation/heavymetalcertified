@@ -1,0 +1,166 @@
+{
+  "page": "articles/bivalve-cadmium-amplification",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "2": {
+      "referenceTitle": "Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "ed440f9647749bcd1e94ae513dc9050e75fdb7a2d78d100ff6aaf789d251155d",
+      "citation": "Bruno F, Nava V, Zappalà S, et al. Mineral composition in mussel Mytilus galloprovincialis and clam Tapes decussatus from Faro Lake of Messina: risk assessment for human health. Frontiers in Toxicology. 2024;6:1494977. Published 13 December 2024. doi:10.3389/ftox.2024.1494977.",
+      "summary": "The September 2023 Faro Lake survey collected 80 mussels and 80 clams and measured elements in soft tissue, water and sediment. Reported mean cadmium was 0.05 and 0.08 mg/kg respectively; lead was below quantification in mussels and 0.02 mg/kg in clams.",
+      "establishes": "This local, single-period survey establishes species-specific measurements, with cadmium below the EU bivalve ceiling. It includes no finfish comparison and does not establish a universal seafood differential.",
+      "relevance": "For HMTc, the study illustrates why a tested species and tissue must accompany a result. It does not validate the article’s claimed near-limit regional outliers or a certification threshold.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2024.1494977/full"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2024.1494977/full",
+            "note": "Read abstract, sampling/digestion methods, Table 3, results and conclusion. Editorial: means are well below 1 mg/kg, contrary to the page’s near-cap claim; sampling sites were combined, not reported as separate near-cap locations. No matched fish or all-season sample."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "01c6d3a709a21201bb6f2ba0c7023693c10bd03396ed503bfd37c131194d8f43",
+      "citation": "Dogruyol H, Mol S, Ulusoy Ş, Atanasoff A. Evaluation of Health Risks Attributed to Toxic Trace Elements and Selenium in Farmed Mediterranean Mussels from Türkiye and Bulgaria. Biological Trace Element Research. 2024;202:5177–5189. Published online 1 February 2024. doi:10.1007/s12011-024-04084-w.",
+      "summary": "Mussels from four farms were sampled quarterly in 2019–2020, using at least 100 animals per farm and season. ICP-MS measured cadmium, lead, mercury and selenium; average cadmium ranged 0.115–0.323 µg/g and lead 0.096–0.216 µg/g.",
+      "establishes": "The exposure model found low concern under assumed adult consumption: 9.61 g/week in Türkiye and 2.50 g/week in Bulgaria. Mercury speciation was assumed, and results do not represent every consumer or harvest.",
+      "relevance": "HMTc can use this as a defined farmed-mussel dataset. It cannot establish that shellfish lead is generally below fish, or validate HMTc’s testing frequency.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://link.springer.com/article/10.1007/s12011-024-04084-w"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s12011-024-04084-w",
+            "note": "Read full-text sampling, ICP-MS and exposure methods, results and conclusion. No finfish comparator or experiment on lead excretion/phytoplankton adsorption. Editorial: the page’s lead mechanism and category-wide comparison are unsupported; cited 0.50 mg/kg in the paper concerns mercury, not bivalve lead."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "b2d9a915aacbb71d2376639b96820c8756f142bacc3e3c64f5c535d3f57c925f",
+      "citation": "Rohonczy J, Chételat J, Robinson SA, et al. Contrasting trophic transfer patterns of cadmium and mercury in the Arctic marine food web of east Hudson Bay, Canada. Environmental Science and Pollution Research. 2024;31:20586–20600. Published 20 February 2024. doi:10.1007/s11356-024-32268-3.",
+      "summary": "This 2014–2017 community-based Arctic study measured cadmium in 345 tissue samples. Blue-mussel soft tissue and urchin gonads were compared with fish, eider and seal tissues. Cadmium declined with trophic position in the muscle-based analysis; mercury increased.",
+      "establishes": "Cadmium patterns depended strongly on tissue. High vertebrate liver burdens were interpreted as storage and detoxification. Concentrations were reported on a dry-weight basis; fish muscle was excluded from the cadmium model because many results were below detection.",
+      "relevance": "For HMTc, this supports distinguishing whole shellfish from finfish muscle and distinguishing cadmium from mercury. It supplies no scallop or oyster distribution or wet-weight compliance survey.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://link.springer.com/article/10.1007/s11356-024-32268-3"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s11356-024-32268-3",
+            "note": "Read sampling/analytical methods, tissue-model definitions, results, Tables 1/3/5 captions, discussion and conclusions. Supplementary data were not reanalysed. Editorial: the cited claim that scallops/oysters routinely reach 1 mg/kg is not tested; neither taxon was sampled."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "7a1bc2e2e7e814632e28dd22bc3b88644b9f776b1a2962de4b5e31488714feae",
+      "citation": "Cardoso PG, Morais H, Crespo D, Tavares D, Pereira E, Pardal MÂ. Seasonal characterization of mercury contamination along the Portuguese coast: human health and environmental risk assessment. Environmental Science and Pollution Research. 2023;30:101121–101132. Published 30 August 2023. doi:10.1007/s11356-023-29495-5.",
+      "summary": "The study sampled three Portuguese estuaries during 2019–2020, measuring total mercury in surface water, plants and benthic fauna. Water contamination varied by location and season; mercury in edible bivalves was below the historical 0.5 mg/kg comparison level used by the authors.",
+      "establishes": "This is mercury research with an exposure assessment for edible bivalves. It supplies neither cadmium measurements nor a finfish-muscle cadmium baseline.",
+      "relevance": "Its useful connection to HMTc is the need to specify analyte, habitat and sampling period. It cannot support the article’s 0.005–0.05 mg/kg fish-cadmium range or the claimed bivalve amplification factor.",
+      "links": [
+        {
+          "label": "Read original study",
+          "href": "https://link.springer.com/article/10.1007/s11356-023-29495-5"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://link.springer.com/article/10.1007/s11356-023-29495-5",
+            "note": "Read study-area/sampling methods, mercury analytical procedures, health-risk methods, results, discussion and conclusions. Editorial: reference 5 is attached to a cadmium-in-fish assertion that this mercury study does not establish. Its historical legal comparator is not a review of all current seafood limits."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Maximum levels for cadmium in bivalve molluscs and cephalopods",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "cf82b0c69a95514296a72d2078b7b2dd8c5a746ad8a0cca5587205c4736f7d33",
+      "citation": "European Commission. Commission Regulation (EU) 2023/915 of 25 April 2023 on maximum levels for certain contaminants in food and repealing Regulation (EC) No 1881/2006. OJ L119, 5 May 2023, pp. 103–157; entered into force 25 May 2023. Original text and consolidation dated 19 August 2026.",
+      "summary": "Annex I sets wet-weight cadmium maxima of 1.0 mg/kg for bivalves and cephalopods without viscera, versus 0.050 mg/kg for fish muscle outside listed exceptions. For Pecten maximus, the bivalve maximum covers adductor muscle and gonad only.",
+      "establishes": "These are binding food-category ceilings, not measured background distributions. Listed fish exceptions have higher limits. Article 3 addresses processing and concentration factors. The regulation does not establish cephalopod tissue concentration ranges or a unique biological explanation for each limit.",
+      "relevance": "HMTc needs the exact species, edible tissue and preparation to select its EU comparator. Adopting the strictest international ceiling remains an HMTc policy decision, not a requirement established by this EU regulation.",
+      "links": [
+        {
+          "label": "Original regulation",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915"
+        },
+        {
+          "label": "Consolidation: 19 August 2026",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0915",
+            "note": "Same-day official-text review reused for Articles 2–3; freshly checked Annex 3.2.14.1–7 and 3.1.15.1–4 for this page. The 20-fold comparison holds only against default fish cadmium. Law supplies no mantle/digestive-gland empirical range."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Read matching cadmium and lead rows in official consolidated HTML, using the consolidation date identified in EUR-Lex metadata. Relevant values remain unchanged. Editorial: bivalve lead is 1.50 mg/kg and cephalopod lead 0.30, not the page’s 0.50. Pecten tissue limitation must be retained."
+          }
+        ]
+      },
+      "kind": "Legislation"
+    },
+    "7": {
+      "referenceTitle": "Heavy Metal Index — bivalve cadmium amplification (synthesis with full anchor-source records)",
+      "pageDigest": "75d5529fe3058947c4fd91ec858d1db1164255dc9ff04e5e01ebed31eae3de4e",
+      "sourceDigest": "722c820b04de42cf6a19fbac13293290298c93f00e19cf35add301aa16bbafa0",
+      "citation": "Pendergrass K. Bivalve cadmium amplification through filter feeding — why mussels and oysters carry an order-of-magnitude higher cadmium load than finfish. Heavy Metal Index. Updated 18 May 2026. Preprint synthesis. doi:10.83376/hmi.bivalve-cadmium-amplification.",
+      "summary": "This synthesis argues for species-specific seafood cadmium benchmarks and links underlying source records. It describes filter feeding, tissue differences and evidence gaps for oysters, scallops, nanoparticle bioavailability and farmed-versus-wild bivalves.",
+      "establishes": "The page identifies itself as a preprint with no external reviews. It is an interpretation of other sources, not a new sampling study or independent validation of its anchor descriptions.",
+      "relevance": "It explains the argument used by this HMTc article, but its shared author and Institute of Contaminant Standards affiliation preclude treating it as independent corroboration. HMTc policy efficacy is not established.",
+      "links": [
+        {
+          "label": "Read synthesis and review status",
+          "href": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/synthesis/bivalve-cadmium-amplification",
+            "note": "Read main sections, anchors, author/date and peer-review state. Editorial: Bruno near-cap and Cardoso cadmium descriptions conflict with the originals. Its Bao anchor DOI qsae024 identifies Bruvold et al.’s gold-nanoparticle method, not the claimed cadmium study. Underlying corpus and source-record hashes were not independently audited."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

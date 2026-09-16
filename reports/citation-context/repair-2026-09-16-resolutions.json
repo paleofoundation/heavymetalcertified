@@ -1,0 +1,236 @@
+{
+  "date": "2026-09-16",
+  "scope": "The 13 historical unresolved numbered bibliography records; does not claim verification of every page assertion or standalone source link.",
+  "originalsRecovered": 2,
+  "citationsCorrectedOrScopeNarrowed": 11,
+  "records": [
+    {
+      "page": "briefings/after-palmquist",
+      "number": "4",
+      "previousReferenceTitle": "In re: Baby Food Products Liability Litigation",
+      "referenceTitle": "In re: Baby Food Products Liability Litigation — transfer order and December 2025 docket statistics",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/after-palmquist-reference-4.json",
+      "sourcePanel": "data/source-panels/briefings/after-palmquist.json",
+      "links": [
+        {
+          "label": "JPML transfer order · 11 April 2024",
+          "href": "https://www.cand.uscourts.gov/wp-content/uploads/2024/05/3_24-md-03101-JSC_1.pdf"
+        },
+        {
+          "label": "JPML docket statistics · 2 December 2025",
+          "href": "https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-December-2-2025.pdf"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "number": "1",
+      "previousReferenceTitle": "Single-particle ICP-MS characterisation of cadmium nanoparticle forms in mussels",
+      "referenceTitle": "Cadmium bioaccumulation and retention kinetics in the Chilean blue mussel Mytilus chilensis: seawater and food exposure pathways",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/bivalves-bao-source-mismatch.json",
+      "sourcePanel": "data/source-panels/articles/bivalve-cadmium-amplification.json",
+      "links": [
+        {
+          "label": "Read original abstract and study record",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20638735/"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/before-the-meat-label-prints",
+      "number": "2",
+      "previousReferenceTitle": "FSIS Directive 7221.1 — Prior Labeling Approval",
+      "referenceTitle": "FSIS Directive 7221.1: Prior Labeling Approval",
+      "outcome": "original-recovered",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/meat-label-reference-2.json",
+      "sourcePanel": "data/source-panels/briefings/before-the-meat-label-prints.json",
+      "links": [
+        {
+          "label": "Federal directive in Maine government file",
+          "href": "https://www.maine.gov/tools/whatsnew/attach.php?an=1&id=12605503"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/no-limit-is-not-no-standard",
+      "number": "3",
+      "previousReferenceTitle": "FDA In Brief: FDA warns against using SARMs in body-building products",
+      "referenceTitle": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/no-limit-fda-announcement.json",
+      "sourcePanel": "data/source-panels/briefings/no-limit-is-not-no-standard.json",
+      "links": [
+        {
+          "label": "FDA safety overview",
+          "href": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "number": "7",
+      "previousReferenceTitle": "Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal",
+      "referenceTitle": "Commission Regulation (EU) 2023/915: lead and cadmium maximum levels for meat and offal",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/organ-meat-reference-7.json",
+      "sourcePanel": "data/source-panels/articles/organ-meat-cadmium-lead-accumulation.json",
+      "links": [
+        {
+          "label": "Read official consolidated regulation and Annex I",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/heavy-metals-in-peptides-and-sarms",
+      "number": "4",
+      "previousReferenceTitle": "FDA In Brief: FDA warns against using SARMs in body-building products",
+      "referenceTitle": "Certain bodybuilding products put consumers at risk for heart attack, stroke, serious liver damage and more",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/peptides-fda-announcement.json",
+      "sourcePanel": "data/source-panels/briefings/heavy-metals-in-peptides-and-sarms.json",
+      "links": [
+        {
+          "label": "FDA safety overview",
+          "href": "https://www.fda.gov/drugs/fraudulent-products/certain-bodybuilding-products-put-consumers-risk-heart-attack-stroke-serious-liver-damage-and-more"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "7",
+      "previousReferenceTitle": "Commission Regulation (EU) 2023/915 and national human-food maximum levels",
+      "referenceTitle": "Commission Regulation (EU) 2023/915: selected human-food cadmium categories",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "sourcePanel": "data/source-panels/briefings/heavy-metals-in-pet-food.json",
+      "links": [
+        {
+          "label": "Original EU regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "8",
+      "previousReferenceTitle": "AAFCO Official Publication — model regulations for pet food and specialty pet food",
+      "referenceTitle": "FDA: Pet Food: federal safety requirements",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "sourcePanel": "data/source-panels/briefings/heavy-metals-in-pet-food.json",
+      "links": [
+        {
+          "label": "FDA pet-food overview",
+          "href": "https://www.fda.gov/animal-veterinary/animal-foods-feeds/pet-food"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": "9",
+      "previousReferenceTitle": "Heavy Metal Index — pet-food and per-analyte literature baseline",
+      "referenceTitle": "Heavy Metal Index: reference-library homepage (accessed 16 September 2026)",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/pet-food-unresolved.json",
+      "sourcePanel": "data/source-panels/briefings/heavy-metals-in-pet-food.json",
+      "links": [
+        {
+          "label": "HMI reference-library homepage",
+          "href": "https://heavymetalindex.com/"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "briefings/supplements-child-protective",
+      "number": "2",
+      "previousReferenceTitle": "Sovereign dietary-supplement heavy-metal maximum levels (Thailand, GCC, Israel, Vietnam)",
+      "referenceTitle": "Thailand MOPH Notification No. 414 (2020) — Standards for Contaminants in Food",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/supplements-unresolved.json",
+      "sourcePanel": "data/source-panels/briefings/supplements-child-protective.json",
+      "links": [
+        {
+          "label": "Thai FDA instrument page",
+          "href": "https://food.fda.moph.go.th/food-law/announ-moph-414"
+        },
+        {
+          "label": "Thai FDA English PDF",
+          "href": "https://food.fda.moph.go.th/media.php?id=509427551085666304&name=P414_E.pdf"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": "4",
+      "previousReferenceTitle": "Vermont H.536 / Act 110 status",
+      "referenceTitle": "Vermont H.536 / Act 110 status",
+      "outcome": "original-recovered",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/us-baby-food-references-4-and-6.json",
+      "sourcePanel": "data/source-panels/articles/us-baby-food-heavy-metal-laws-states-fda.json",
+      "links": [
+        {
+          "label": "Enacted Act110",
+          "href": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT110/ACT110%20As%20Enacted.pdf"
+        },
+        {
+          "label": "Official bill and act status",
+          "href": "https://legislature.vermont.gov/bill/status/2026/H.536"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": "6",
+      "previousReferenceTitle": "Heavy Metal Index — United States infant-food contaminant controls",
+      "referenceTitle": "Heavy Metal Index — FDA Closer to Zero: Program Overview",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/us-baby-food-references-4-and-6.json",
+      "sourcePanel": "data/source-panels/articles/us-baby-food-heavy-metal-laws-states-fda.json",
+      "links": [
+        {
+          "label": "HMI Closer to Zero overview",
+          "href": "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+        },
+        {
+          "label": "FDA primary program explanation",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "number": "6",
+      "previousReferenceTitle": "WHO/FAO food and irrigation-water limits for lead, cadmium and chromium",
+      "referenceTitle": "FAO Water Quality for Agriculture, Table 21; Codex General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995)",
+      "outcome": "citation-corrected-or-scope-narrowed",
+      "historicalUnresolvedRecord": "reports/citation-context/unresolved/wastewater-reference-6.json",
+      "sourcePanel": "data/source-panels/articles/wastewater-irrigation-multimetal-crop-pathway.json",
+      "links": [
+        {
+          "label": "Read FAO irrigation-water guidance and Table 21",
+          "href": "https://www.fao.org/4/t0234e/T0234E06.htm"
+        },
+        {
+          "label": "Read Codex contaminant standard (2025)",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ro/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+        }
+      ],
+      "reviewDate": "2026-09-16"
+    }
+  ]
+}

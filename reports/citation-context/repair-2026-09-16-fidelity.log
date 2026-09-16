@@ -1,0 +1,5 @@
+
+> heavymetalcertified@0.1.0 check:v3
+> node tools/check-v3.mjs
+
+check-v3: OK — 1196 assertions pass against the rendered build

@@ -248,7 +248,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     fm.author ? `author: "${fm.author.replace(/"/g, '\\"')}"` : `author: "Karen Pendergrass"`,
     "orcid: 0000-0002-2348-7259",
     fm.date ? `briefing_date: "${fm.date}"` : null,
-    fm.date ? `updated: "${fm.date}"` : null,
+    fm.updated || fm.date ? `updated: "${fm.updated || fm.date}"` : null,
     // scholar_eligible is editorial (SCHOLARLY_BRIEFINGS above), not PDF-gated.
     `scholar_eligible: ${isScholar}`,
     isScholar ? "scholar_pdf: true" : null,

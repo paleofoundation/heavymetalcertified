@@ -10,11 +10,12 @@ The original Big 8 explanations remain the reviewed seed. Additional records use
 the same reader-facing fields: full citation, source summary, what it establishes,
 page-specific relevance to HMTc, and one or more source links.
 
-Current checkpoint (15 September 2026): 388 of 401 numbered records reviewed
-across 49 pages, with 13 unresolved sources documented. See the
-[coverage report](reviews/2026-09-15-citation-context-coverage.md) for scope,
-remaining evidence, validation and usage. Later counts below describe the
-original inventory baseline.
+Current checkpoint (16 September 2026): all 401 numbered records reviewed
+across 49 pages, with zero pending records and all 581 numbered citation uses
+resolved. The final 13 required two original-document recoveries and eleven
+explicit citation corrections or scope reductions. See the
+[repair review](reviews/2026-09-16-citation-context-repair.md) for evidence,
+limits and validation. Later counts below describe the original inventory baseline.
 
 Readers can open a source from either an inline citation or its bracketed number
 in the References list. Bibliography controls use the same drawer and keyboard

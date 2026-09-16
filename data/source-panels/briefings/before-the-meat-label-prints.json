@@ -1,15 +1,15 @@
 {
   "page": "briefings/before-the-meat-label-prints",
-  "reviewed": "2026-09-15",
+  "reviewed": "2026-09-16",
   "refs": {
     "1": {
-      "referenceTitle": "9 CFR 412.1 — Label approval",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
-      "sourceDigest": "72e0cf1b216001504dd88a3ddd1d5cb3f2d7e934c38ac3517209816a5c0809ea",
+      "referenceTitle": "9 CFR 412.1: Label approval",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
+      "sourceDigest": "549a35edbd6e3782121336f9e2db33cc38554fa7c1d42a652bb0c6e6c1a35fa8",
       "citation": "9 CFR §412.1, Label approval, January 1, 2025 annual edition, pp 551–552, including adjacent §412.2. USDA, Submission for OMB Review; Comment Request, 91 FR 10582, March 4, 2026, corroborates the generic-approval exception.",
       "summary": "Section 412.1 requires submission for specified labels, including special claims, while expressly excepting generic labels. A sketch may be a printer’s proof, hand drawing or computer-generated equivalent showing final features and placement.",
-      "establishes": "The opening claim that government must have seen every label is incorrect. Special claims include undefined logos and trademarks, but the rule has defined exclusions. It governs approval before use; it does not demand a finished printer’s proof in every application.",
-      "relevance": "This supports assessing the HMTc seal under the special-claim rules, not a guarantee of approval. The application needs Form 7234–1 and supporting records; the briefing’s five-item package is not an exhaustive checklist established here.",
+      "establishes": "The rule expressly permits generic approval without agency evaluation and allows several forms of sketch. Special claims have defined inclusions and exclusions; approval is required before use where submission applies.",
+      "relevance": "It supports the revised generic-approval distinction and the need to evaluate the particular HMTc claim. The proposed five supporting items are now identified as the briefing’s proposal, not an exhaustive regulatory checklist.",
       "links": [
         {
           "label": "CFR text, 2025 edition",
@@ -21,8 +21,8 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title9-vol2/pdf/CFR-2025-title9-vol2-sec412-1.pdf",
@@ -31,19 +31,57 @@
           {
             "url": "https://www.govinfo.gov/content/pkg/FR-2026-03-04/pdf/2026-04211.pdf",
             "note": "Read the FSIS information-collection portion of the official one-page notice. It expressly restates generic approval, Form 7234–1 and label/formulation/processing/support records. This notice corroborates those practices; it is not an amending regulation."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title9-vol2/pdf/CFR-2025-title9-vol2-sec412-1.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. It supports the revised generic-approval distinction and the need to evaluate the particular HMTc claim. The proposed five supporting items are now identified as the briefing’s proposal, not an exhaustive regulatory checklist."
           }
         ]
       },
       "kind": "Regulation"
     },
+    "2": {
+      "referenceTitle": "FSIS Directive 7221.1: Prior Labeling Approval",
+      "citation": "USDA Food Safety and Inspection Service. Directive 7221.1, Revision 4: Prior Labeling Approval. December 10, 2025. Federal text reproduced on PDF pages 2–6 of the Maine DACF file; page 1 is a separate Maine implementation cover sheet.",
+      "summary": "The directive instructs inspectors to verify label approval and records. It distinguishes generic labels from those requiring LPDS evaluation and adds U.S.-origin-claim verification.",
+      "establishes": "Submission requires a sketch, Form 7234-1 and supporting evidence; LSAS and mail are permitted. Final-label records remain necessary. Egg-product inspection follows separate instructions.",
+      "relevance": "It supports the corrected filing explanation. It neither guarantees HMTc approval nor prescribes the briefing’s proposed five supporting items.",
+      "links": [
+        {
+          "label": "Federal directive in Maine government file",
+          "href": "https://www.maine.gov/tools/whatsnew/attach.php?an=1&id=12605503"
+        }
+      ],
+      "kind": "Agency inspection directive",
+      "review": {
+        "reviewer": "Codex primary-document recovery and page-context review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://www.maine.gov/tools/whatsnew/attach.php?an=1&id=12605503",
+            "note": "Read complete file, separating Maine cover instructions (PDF p1) from federal Revision4, dated12/10/25 (PDF pp2–6). Federal §§III.C–E, IV.B, V.B and VI establish the approval categories, submissions, record contents and enforcement. Maine-specific substitutions, including deletion of LSAS, were not imported into the federal explanation. SectionII expressly cancels Revision3."
+          },
+          {
+            "url": "https://www.maine.gov/dacf/qar/inspection_programs/mmpi-directives.shtml",
+            "note": "Read directive register entry identifying7221.1 Revision4, issued December10,2025, and followed its linked PDF. The file includes the federal directive rather than only a state paraphrase."
+          },
+          {
+            "url": "https://content.govdelivery.com/accounts/USFSIS/bulletins/3ffa1ce",
+            "note": "Read December12,2025 issuance announcement and Policy Update naming Revision4. USDA primary-host directive returned403; the government-hosted reproduction supplied readable exact-edition text."
+          }
+        ]
+      },
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
+      "sourceDigest": "3172c52c0c17f1c8bef8a3bb1e0b2d6cbce642cf679eb54c266771fdb2375741"
+    },
     "3": {
-      "referenceTitle": "9 CFR 317.8 and 9 CFR 381.129 — False or misleading labeling or containers",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
-      "sourceDigest": "c2f9112cc6997c83495985d7eeab1b734ceb1680bcd2ff43b26e386de32c6d68",
+      "referenceTitle": "9 CFR 317.8 and 9 CFR 381.129: False or misleading labeling or containers",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
+      "sourceDigest": "76e3b21eeebf1c65d8c4e2a9a2ffba622d842e315d99c2598ea758cf1f9a3f7a",
       "citation": "9 CFR §§317.8 and 381.129, January 1, 2025 annual edition. Meat: false or misleading labeling and practices; poultry: false or misleading labeling or containers.",
       "summary": "Both provisions prohibit false or misleading labeling. Section 317.8(b)(34) specifically restricts “all,” “pure” and “100%” ingredient-content claims unless the product consists of a single ingredient.",
       "establishes": "The rules address context and accuracy rather than categorically banning the word “pure.” These two sections cover meat and poultry; they do not themselves supply the egg-product labeling provisions.",
-      "relevance": "They support defining and substantiating a certification claim. They do not establish that HMTc will pass review, that every purity-related claim fails, or that named competitors had to redesign their seals.",
+      "relevance": "The prohibition supports truthful, substantiated claims. The unchanged comparative assertions about purity seals still require evidence; neither provision guarantees HMTc approval.",
       "links": [
         {
           "label": "Meat labeling rule",
@@ -55,8 +93,8 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title9-vol2/pdf/CFR-2025-title9-vol2-sec317-8.pdf",
@@ -65,6 +103,10 @@
           {
             "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title9-vol2/pdf/CFR-2025-title9-vol2-sec381-129.pdf",
             "note": "Read §381.129(a) general prohibition and permitted nonmisleading trade-name qualification in the official 2025 annual edition. The grouped reference preserves both provisions; neither is an egg-product rule."
+          },
+          {
+            "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title9-vol2/pdf/CFR-2025-title9-vol2-sec317-8.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The prohibition supports truthful, substantiated claims. The unchanged comparative assertions about purity seals still require evidence; neither provision guarantees HMTc approval."
           }
         ]
       },
@@ -72,12 +114,12 @@
     },
     "4": {
       "referenceTitle": "Food Standards and Labeling Policy Book",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
       "sourceDigest": "9dfaef6503f8d95e256be996cfccf2fee014d62f892d262ba587ebad8e747c98",
       "citation": "USDA FSIS. Food Standards and Labeling Policy Book, revised September 8, 2025. Agency document reproduced by Penn State Agricultural Law.",
       "summary": "The policy book aims to help manufacturers create truthful labels. Its poultry and beef-patty entries describe circumstances allowing “all,” “pure” or “100 percent” claims. Its preface says compliance does not guarantee authorization.",
       "establishes": "The cited source supports specific composition qualifications, not a general ban on purity language. The reviewed entries do not document rejection of a heavy-metal certification seal or prove that a measured claim must be accepted.",
-      "relevance": "The briefing should present its expected advantage as an inference. The source expressly limits any claim that preparing the described documentation ensures approval.",
+      "relevance": "The policy book still qualifies the briefing’s predictions about acceptance and purity language. Correcting the filing route does not establish a comparative approval advantage for HMTc.",
       "links": [
         {
           "label": "2025 policy book, agency PDF mirror",
@@ -85,12 +127,16 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://aglaw.psu.edu/wp-content/uploads/2025/12/Food-Standards-and-Labeling-Policy-Book.pdf",
             "note": "FSIS-hosted PDF returned 403. Read the same-titled USDA document via Penn State: dated cover, preface and “ALL, PURE, AND 100 PERCENT” poultry/beef-patty entries. Targeted review only, not all 188 pages. The mirror’s 2025 publication date was checked against the document’s own September 8, 2025 revision date."
+          },
+          {
+            "url": "https://aglaw.psu.edu/wp-content/uploads/2025/12/Food-Standards-and-Labeling-Policy-Book.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The policy book still qualifies the briefing’s predictions about acceptance and purity language. Correcting the filing route does not establish a comparative approval advantage for HMTc."
           }
         ]
       },
@@ -98,12 +144,12 @@
     },
     "5": {
       "referenceTitle": "Label Submission and Approval System (LSAS)",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
       "sourceDigest": "4759669f29a46a4a06cce2785ceba377e2e35365d6678ea313b3f01553cbb962",
       "citation": "USDA FSIS. Label Submission and Approval System (LSAS), public system information and contact page; FSIS overview last updated March 8, 2022.",
       "summary": "LSAS is FSIS’s electronic label-submission system. Its public portal identifies the Labeling and Program Delivery Staff and directs users to application support and the industry guide.",
       "establishes": "This establishes the system and its administrative purpose. A portal description does not prescribe HMTc’s exact certificate, licence, laboratory report and verification-address package, or guarantee a label decision.",
-      "relevance": "LSAS is a supported route for submitting a label. The source does not show that the system requires the precise five documents proposed by this briefing or that a certifier receives blanket endorsement.",
+      "relevance": "LSAS remains a supported electronic submission route. The recovered directive additionally permits mail; the briefing now distinguishes the regulatory record from its proposed certification documents.",
       "links": [
         {
           "label": "FSIS LSAS overview",
@@ -115,8 +161,8 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.fsis.usda.gov/inspection/compliance-guidance/labeling/label-submission-and-approval-system-lsas",
@@ -125,6 +171,10 @@
           {
             "url": "https://lsas.fsis.usda.gov/LSAS/ContactUs",
             "note": "Directly read the public LSAS contact page, which identifies the system, LPDS, assistance for submissions and the user guide. No login, submission or communication performed."
+          },
+          {
+            "url": "https://www.fsis.usda.gov/inspection/compliance-guidance/labeling/label-submission-and-approval-system-lsas",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. LSAS remains a supported electronic submission route. The recovered directive additionally permits mail; the briefing now distinguishes the regulatory record from its proposed certification documents."
           }
         ]
       },
@@ -132,12 +182,12 @@
     },
     "6": {
       "referenceTitle": "Compliance Guideline for Label Approval",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
       "sourceDigest": "e6578f4f6d8a9ad1c27157f99a69a139b966e268da58c455aa0e9e789fd7a8ad",
       "citation": "USDA FSIS. FSIS Guideline for Label Approval, FSIS-GD-2025-0006, December 2025, replacing March 2024. Agency PDF reproduced by Penn State; issuance confirmed by USDA’s December 12, 2025 bulletin.",
       "summary": "The guidance distinguishes special claims from generic claims and allows blanket product-line approvals and some reuse after initial approval. It lists certified claims for review, but also includes some certification wording and qualified “pure” claims among generic examples.",
       "establishes": "This is nonbinding guidance. It does not document the briefing’s unnamed certifiers being forced to redraw purity seals. A claim’s actual content and the applicable approval route matter; certification wording alone does not settle every case.",
-      "relevance": "It supports substantiation and label records, but qualifies the briefing’s assertion that each label always receives individual review. It supplies no approval, comparative success evidence or guaranteed filing recipe for HMTc.",
+      "relevance": "The corrected approval-route discussion now recognizes generic and previously approved uses. The guideline still does not establish the remaining unnamed purity-seal redesign anecdote or guarantee HMTc acceptance.",
       "links": [
         {
           "label": "December 2025 guideline, agency PDF mirror",
@@ -149,8 +199,8 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://aglaw.psu.edu/wp-content/uploads/2025/12/1-FSIS-GD-2025-0006-12.10.25.pdf",
@@ -159,19 +209,23 @@
           {
             "url": "https://content.govdelivery.com/accounts/USFSIS/bulletins/3ffa1ce",
             "note": "Read the official December 12, 2025 bulletin’s opening and policy-update list naming FSIS-GD-2025-0006 and Directive 7221.1 Revision 4. Used to verify issuance of the exact agency document read through its mirror, not as a substitute for its substantive text."
+          },
+          {
+            "url": "https://aglaw.psu.edu/wp-content/uploads/2025/12/1-FSIS-GD-2025-0006-12.10.25.pdf",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The corrected approval-route discussion now recognizes generic and previously approved uses. The guideline still does not establish the remaining unnamed purity-seal redesign anecdote or guarantee HMTc acceptance."
           }
         ]
       },
       "kind": "Guidance"
     },
     "7": {
-      "referenceTitle": "Heavy Metal Tested and Certified — Using the mark",
-      "pageDigest": "9cd4c3fe821dbde37f7664c07fae927c6c3ba9fd78f2e6443f72a07ce10ed3ba",
-      "sourceDigest": "0da8299f33814284d528ab149a2041e993a3159751e72661648d3f5cb4e2cb16",
+      "referenceTitle": "Heavy Metal Tested and Certified: Using the mark",
+      "pageDigest": "bfdd4848ea468164767dacf53969083a7100c3cdc9fdb461349d4d35e5561f39",
+      "sourceDigest": "b17828a919e48736831c9339ce25e757a4298f64b6d58d52d154b830c8a8163f",
       "citation": "Heavy Metal Tested & Certified. Using the mark. Program-publisher webpage, accessed September 15, 2026.",
       "summary": "The page describes a product-specific mark based on a ten-analyte panel, native measurement basis, accredited laboratory testing, a three-lot baseline and ongoing surveillance. It requires scope information and rejects absolute-safety and zero-metal claims.",
       "establishes": "This is the program’s own representation of its rules. It is not independent verification that those rules are implemented, that a particular lot passes, or that FSIS has approved the mark or any label bearing it.",
-      "relevance": "The source supports the intended meaning of the HMTc claim. The briefing’s prediction that this architecture will pass federal review remains an inference requiring an actual label and substantiation assessment.",
+      "relevance": "The source supports the program’s intended mark meaning. The filing correction does not provide an actual FSIS decision or verify the program’s commercial implementation.",
       "links": [
         {
           "label": "HMTc mark rules",
@@ -179,12 +233,16 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-document review; exact editions and access limitations stated, with page-specific claim assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://heavymetalcertified.com/mark",
             "note": "Read public “What the mark asserts,” status restrictions, prohibited claims, scope-line snapshot and related limits. The same page notes absent reproduction specifications and proposed governance commitments; these are publisher statements, not a reviewed trademark licence, certificate or FSIS decision."
+          },
+          {
+            "url": "https://heavymetalcertified.com/mark",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The source supports the program’s intended mark meaning. The filing correction does not provide an actual FSIS decision or verify the program’s commercial implementation."
           }
         ]
       },

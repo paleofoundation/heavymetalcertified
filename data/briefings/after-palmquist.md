@@ -7,6 +7,7 @@ overline: "A Standards Briefing · The Institute of Contaminant Standards (ICS)"
 author: "Karen Pendergrass"
 author_title: "Standards Architect, the Institute of Contaminant Standards (ICS), Heavy Metal Tested & Certified (HMTc) Program"
 date: "May 2026"
+updated: "2026-09-16"
 audience: [brand-legal, retailer-compliance, regulator]
 ---
 
@@ -36,7 +37,7 @@ Heavy-metal cases will increasingly be tried in state courts, under state law, b
 
 *Palmquist* did not create the heavy-metal litigation wave. It removed one of the few procedural instruments defendants had for managing it.
 
-The trigger was the 2021 staff report of a subcommittee of the U.S. House Committee on Oversight and Reform, which found elevated levels of arsenic, lead, cadmium, and mercury in baby foods (including Hain's) and noted that Hain had not tested its finished products for heavy metals until 2019 [3]. The cases that followed have been centralized as multidistrict litigation, *In re: Baby Food Products Liability Litigation*, MDL No. 3101, in the Northern District of California, a proceeding that had grown to roughly 345 pending claims by late 2025 [4]. The plaintiffs' theory is deliberately expansive: that any detectable quantity of a heavy metal can contribute to injury, a framing available precisely because there is no agreed-upon safe threshold for the metals at issue [5].
+The trigger was the 2021 staff report of a subcommittee of the U.S. House Committee on Oversight and Reform, which found elevated levels of arsenic, lead, cadmium, and mercury in baby foods (including Hain's) and noted that Hain had not tested its finished products for heavy metals until 2019 [3]. The Judicial Panel on Multidistrict Litigation centralized related cases in the Northern District of California for coordinated or consolidated pretrial proceedings on April 11, 2024. In its December 2, 2025 statistics report, the Panel listed 385 pending actions and 395 historical total actions in *In re: Baby Food Products Liability Litigation*, MDL No. 3101 [4]. These are dated docket counts, not findings that the alleged injuries were caused by the products. The plaintiffs' theory is deliberately expansive: that any detectable quantity of a heavy metal can contribute to injury, a framing available precisely because there is no agreed-upon safe threshold for the metals at issue [5].
 
 The broader enforcement environment has hardened in parallel. California's Assembly Bill 899 requires baby-food manufacturers to test for arsenic, cadmium, lead, and mercury and to disclose results publicly [6]. The FDA has issued action levels for lead in foods for babies and young children [7]. California's Proposition 65 permits any private party to bring an exposure claim with no government enforcement action behind it; one published settlement allocated $25,000 of a $28,000 total to attorneys' fees and $3,000 to civil penalties [8]. A proposed class action has been brought against a major online marketplace over arsenic in rice products [9]. Independent "exposé" testing feeds the cycle directly by handing plaintiffs' counsel ready-made factual predicates [5].
 
@@ -118,7 +119,7 @@ If you are general counsel or chief compliance officer at a brand or a retailer 
 
 [3]  U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy, "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury," Staff Report, Feb. 4, 2021.
 
-[4]  *In re: Baby Food Products Liability Litigation*, MDL No. 3101, U.S. District Court for the Northern District of California (Transfer Order, J.P.M.L., 2024; Scheduling Order, 2025).
+[4]  U.S. Judicial Panel on Multidistrict Litigation. *In re: Baby Food Products Liability Litigation*, MDL No. 3101, Transfer Order, Document 127, April 11, 2024; *MDL Statistics Report — Distribution of Pending MDL Dockets by Actions Pending*, December 2, 2025, p. 1 (385 pending; 395 historical total actions).
 
 [5]  K. Pendergrass, "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction," *Journal of Food Metallomics*, 2026. doi: [10.5281/zenodo.19470572](https://doi.org/10.5281/zenodo.19470572).
 

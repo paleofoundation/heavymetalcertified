@@ -1,0 +1,236 @@
+{
+  "page": "briefings/supplements-child-protective",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "USP General Chapter <2232>: Elemental Contaminants in Dietary Supplements",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "6aa5fd608667ebd174ecdf5ff25d7308b938607e7e3401a530ae4c0c33cfd384",
+      "citation": "United States Pharmacopeia. General Chapter <2232>, Elemental Contaminants in Dietary Supplements. USP–NF (2022); public publisher preview, doi:10.31003/USPNF_M5291_02_01.",
+      "summary": "The public preview describes limits for finished supplement dosage forms labeled as conforming to USP or NF. Ingredient limits instead belong in individual monographs.",
+      "establishes": "This review establishes the chapter’s identity and stated scope only. The subscription text, numerical exposure table, alleged adult assumptions, ten-gram option and claimed absence of other metals were not verified.",
+      "relevance": "The briefing’s 500 µg/kg calculation is conditional on the unverified 5 µg/day and 10 g/day inputs. This preview cannot establish that the standard ignores children or that HMTc’s alternative protects them.",
+      "links": [
+        {
+          "label": "USP chapter preview",
+          "href": "https://doi.usp.org/USPNF/USPNF_M5291_02_01.html"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted reads and fresh page-specific claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.usp.org/USPNF/USPNF_M5291_02_01.html",
+            "note": "Read the complete public preview and publisher citation. Full chapter requires subscription; no numerical table or adult-body-weight derivation was visible."
+          }
+        ]
+      },
+      "kind": "Standard"
+    },
+    "3": {
+      "referenceTitle": "ASEAN and Singapore health-supplement contaminant guidelines",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "075287b736ff5ee4ee9a7fb91d2f23d9620dff9164217997d1f1803f30236689",
+      "citation": "ASEAN. Guidelines on Limits of Contaminants for Health Supplements, version 2.0, adopted and endorsed June 2015. Singapore HSA. Health supplements overview, accessed September 15, 2026.",
+      "summary": "Both sources give a lead limit of 10 ppm. ASEAN version 2.0 also lists arsenic 5, mercury 0.5 and cadmium 0.3 ppm, with a Philippines arsenic exception. HSA publishes the same general four-metal values.",
+      "establishes": "HSA additionally requires safety for recommended use and target users, even when numerical limits are met. Its adult vitamin/mineral table is separate. The ASEAN PDF carries an information-only disclaimer pending finalization of its regulatory agreement; that historical disclaimer does not establish the agreement’s current status.",
+      "relevance": "The lead comparison is supported. These texts do not establish that the limits are the world’s laxest, that all supplement regulation assumes adults, or that sharing adult products with children is prevalent or safe.",
+      "links": [
+        {
+          "label": "ASEAN version 2.0",
+          "href": "https://asean.org/wp-content/uploads/2017/09/ASEAN-Guidelines-on-Limts-of-contaminants-HS-V2.0-with-disclaimer.pdf"
+        },
+        {
+          "label": "HSA supplement controls",
+          "href": "https://www.hsa.gov.sg/health-supplements/overview/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted reads and fresh page-specific claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://asean.org/wp-content/uploads/2017/09/ASEAN-Guidelines-on-Limts-of-contaminants-HS-V2.0-with-disclaimer.pdf",
+            "note": "Read cover disclaimer, adoption/version history, objective and heavy-metal table on printed pages 3–4, including Philippines arsenic exception. Did not infer current national adoption from this guidance."
+          },
+          {
+            "url": "https://www.hsa.gov.sg/health-supplements/overview/",
+            "note": "Read controls, safety obligations, heavy-metal table, target-user qualification and separate adult vitamin/mineral headings. This is official Singapore guidance, not evidence for global rankings."
+          }
+        ]
+      },
+      "kind": "Guidance"
+    },
+    "4": {
+      "referenceTitle": "Proposition 65 Safe Harbor Levels — Maximum Allowable Dose Levels",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "7087fe4b8b1e62c674bec2c19383df7ce9b181bbda2c6e725661636e00ba5548",
+      "citation": "California OEHHA. Proposition 65 safe-harbor table, lead MADL. California Health and Safety Code §25249.10(c), reproductive-toxicity exemption.",
+      "summary": "OEHHA lists a lead MADL of 0.5 µg/day. The statute’s reproductive-toxicity exemption concerns exposure producing no observable effect at 1,000 times the exposure in question.",
+      "establishes": "This is a daily-exposure safe harbor, not a food concentration or a general assurance of safety for children. The briefing’s phrase “observed-effect” misstates the statutory no-observable-effect criterion.",
+      "relevance": "Comparisons with supplement concentrations require dose and frequency. The tenfold comparison to USP remains conditional on the full USP table, which this review did not access.",
+      "links": [
+        {
+          "label": "OEHHA safe-harbor table",
+          "href": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls"
+        },
+        {
+          "label": "Statutory exemption",
+          "href": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=6.6.&division=20.&lawCode=HSC&part=&title="
+        }
+      ],
+      "review": {
+        "reviewer": "Codex; explicit reuse of exact primary reads in batch4-prop65 refs2–3, with new page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oehha.ca.gov/proposition-65/general-info/proposition-65-no-significant-risk-levels-nsrls-and-maximum-allowable-dose-levels-madls",
+            "note": "Reused exact primary-table read recorded in batch4-prop65 ref3, including introductory exemption explanation and lead row; fresh supplement-page assessment. Canonical URL includes final “-madls”."
+          },
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=&chapter=6.6.&division=20.&lawCode=HSC&part=&title=",
+            "note": "Reused exact official statutory read in batch4-prop65 ref2, especially §25249.10(c); reassessed observed/no-observable-effect wording for this page."
+          }
+        ]
+      },
+      "kind": "Government"
+    },
+    "5": {
+      "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "286bb025f0dfa7d9c0f6eaefa83248a88b45cae9491bab26475d939d98a65cbe",
+      "citation": "European Commission. Regulation (EU) 2023/915, April 25, 2023; original act and consolidated text dated August 19, 2026, Annex I §§3.2.17 and 3.4.2.",
+      "summary": "The 5 µg/kg cadmium limit applies to specified liquid formula made from cow-milk proteins or protein hydrolysates. The 10 µg/kg inorganic-arsenic limit applies to liquid formula. Powder and soy categories have different limits.",
+      "establishes": "These values apply to specified products as marketed. They are not universal infant-food limits or supplement requirements; transferring a liquid-food value to powder or tablets changes the exposure basis. The consolidation is a documentation aid.",
+      "relevance": "The law identifies the selected benchmarks but does not validate HMTc’s supplement limits, implementation or child-protection claim. Consumption and preparation assumptions remain necessary.",
+      "links": [
+        {
+          "label": "Original regulation",
+          "href": "https://eur-lex.europa.eu/eli/reg/2023/915/oj"
+        },
+        {
+          "label": "Consolidation consulted",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex; reused exact official act and consolidation reads in batch4-prop65 ref6, with new page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/eli/reg/2023/915/oj",
+            "note": "Reused exact official act identity/publication/status read from batch4-prop65 ref6."
+          },
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+            "note": "Reused targeted Articles 2–3 and Annex I read in batch4-prop65 ref6. Formula cadmium: cow/protein-hydrolysate powder 0.010 versus liquid 0.005 mg/kg; soy powder 0.020 versus liquid 0.010. Inorganic arsenic: powder 0.020 versus liquid 0.010 mg/kg. Fresh supplement comparison; no global minimum survey."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "6": {
+      "referenceTitle": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "8afb61934ce19ebfa712b158d600e73f3f29a206b1f927313aa1b77d5d31e013",
+      "citation": "European Commission. Regulation (EU) 2024/1987 of July 30, 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L2024/1987, July 31, 2024.",
+      "summary": "The amendment sets nickel maxima of 0.10 mg/kg for liquid formula, 0.25 for powder and 0.40 for soy-based powder, as placed on the market. The formula provisions apply from July 1, 2025.",
+      "establishes": "The 100 µg/kg figure belongs to a liquid-formula category, not all supplements. Specified cereal provisions apply from July 1, 2026; lawfully marketed earlier food may remain until its durability or use-by date.",
+      "relevance": "This supports the provenance of HMTc’s selected nickel number, but does not establish equivalent intake or safety when applied to a different product type.",
+      "links": [
+        {
+          "label": "Official Journal amendment PDF",
+          "href": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex; reused exact complete primary amendment read in batch4-prop65 ref7, with new page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://publications.europa.eu/resource/oj/L_202401987.ENG.pdfa2a.L_202401987EN.pdf",
+            "note": "Reused complete seven-page official PDF read in batch4-prop65 ref7, especially Articles 1–2 and Annex 3.6.13. Formula limits are as placed on market. Reassessed the liquid-to-supplement comparison."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "7": {
+      "referenceTitle": "Australia New Zealand Food Standards Code, Standard 1.4.1 — Contaminants and Natural Toxicants",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "2e8b1fb54451b749a8aeb088f56365edc61b8e647937cc83dfbad78fe46e4508",
+      "citation": "FSANZ. Standard 1.4.1, instrument F2015L00408; related Schedule 19, September 13, 2024 compilation, §§S19–3–4; P1028 consequential amendment, F2024L01151, items 22–23.",
+      "summary": "The dated Schedule 19 table gives formula lead 0.01 mg/kg and aluminium 0.5 mg/kg for specified formula, 1 for soy formula and 0.2 for preterm special-medical products. The amending instrument confirms the 0.01 lead entry.",
+      "establishes": "These are category-specific limits with preparation/concentration rules. FSANZ describes the revised framework as Australia-only, with New Zealand opting out and a transition through September 13, 2029. The reviewed dated compilation is not a complete later-amendment audit.",
+      "relevance": "The selected lead and aluminium numbers exist, but 500 µg/kg is not the lowest aluminium entry even within this table. Neither global uniqueness nor transferring these formula limits to every supplement is established.",
+      "links": [
+        {
+          "label": "Standard 1.4.1 identity",
+          "href": "https://www.legislation.gov.au/F2015L00408"
+        },
+        {
+          "label": "Dated Schedule 19",
+          "href": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html"
+        },
+        {
+          "label": "P1028 operative amendment",
+          "href": "https://www.legislation.gov.au/F2024L01151/asmade/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html"
+        },
+        {
+          "label": "FSANZ P1028 implementation",
+          "href": "https://www.foodstandards.gov.au/food-standards-code/proposals/P1028"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex primary-source review; targeted reads and fresh page-specific claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.legislation.gov.au/F2015L00408",
+            "note": "Read official instrument identity only; substantive numerical limits were reviewed in the separately identified Schedule 19 and amendment."
+          },
+          {
+            "url": "https://www.legislation.gov.au/F2015L00454/2024-09-13/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html",
+            "note": "Reused exact §§S19–3–4 aluminium/preparation read in batch4-four-eight ref5 and directly read the lead row and transition text. Lead table says 0.01 mg/kg; endnote describes direction inconsistently, so the operative amendment was checked separately."
+          },
+          {
+            "url": "https://www.legislation.gov.au/F2024L01151/asmade/2024-09-13/text/original/epub/OEBPS/document_1/document_1.html",
+            "note": "Directly read items 22–23: aluminium entries and substitution of formula lead 0.01 mg/kg. This resolves the dated compilation endnote’s inconsistent description."
+          },
+          {
+            "url": "https://www.foodstandards.gov.au/food-standards-code/proposals/P1028",
+            "note": "Reused exact primary implementation-page read in batch4-four-eight ref5: Australia-only revision, New Zealand opt-out and transition through September 13, 2029. Fresh supplement relevance."
+          }
+        ]
+      },
+      "kind": "Regulation"
+    },
+    "8": {
+      "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
+      "pageDigest": "0de5ddbc95676dc0084056b3de5441d6b3b60ec085282c410592e43eb8c3d079",
+      "sourceDigest": "9c042661450df938b0f8021de7738c9cd2c4342cb10e677809831773a31e2185",
+      "citation": "EFSA CONTAM Panel. Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
+      "summary": "EFSA derived a chronic tolerable daily intake of 13 µg nickel/kg body weight using rat post-implantation loss and a 100-fold uncertainty factor. High-percentile exposure exceeded it in many young population groups.",
+      "establishes": "Mean exposure was generally below or near the TDI, with a small toddler survey around it. The briefing overstates this as general mean-exposure exceedance. The TDI concerns total intake, not a supplement concentration.",
+      "relevance": "The opinion supports considering children’s body weight and nickel exposure. It does not show that a 100 µg/kg supplement limit ensures safety, or document routine sharing of supplement bottles.",
+      "links": [
+        {
+          "label": "EFSA nickel opinion",
+          "href": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex; reused targeted primary EFSA reads in batch4-prop65 ref8, with new page relevance",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6268",
+            "note": "Reused exact publisher abstract, summary, §3.4.1 and conclusion reads in batch4-prop65 ref8, not the whole paper. Fresh assessment of the page’s mean-exposure and child-protection claims; acute nickel-sensitive skin reactions use a separate approach."
+          }
+        ]
+      },
+      "kind": "Scientific opinion"
+    }
+  }
+}

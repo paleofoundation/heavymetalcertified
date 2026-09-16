@@ -1,5 +1,10 @@
 # Rich citation context: numbered-source coverage
 
+> Update, 16 September 2026: the remaining 13 were repaired. Current coverage is
+> 401/401 numbered records across 49 pages, with zero pending records. See the
+> [repair review](2026-09-16-citation-context-repair.md). The checkpoint below is
+> preserved as the historical 15 September result.
+
 ## Result
 
 As of 15 September 2026, 388 of 401 numbered bibliography records (96.8%) have

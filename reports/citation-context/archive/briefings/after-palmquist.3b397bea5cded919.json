@@ -1,0 +1,393 @@
+{
+  "page": "briefings/after-palmquist",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Hain Celestial Group, Inc. v. Palmquist",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "1916778004fb2cbd703972bc5b2e58b069707081d0b768f1ec3a2f80fcb34f95",
+      "citation": "Supreme Court of the United States. Hain Celestial Group, Inc. v. Palmquist, No. 24-724, 607 U.S. ___ (2026), unanimous opinion by Justice Sotomayor, 24 February 2026.",
+      "summary": "The Court affirmed that erroneous dismissal of a retailer whose citizenship defeated federal diversity jurisdiction did not cure the jurisdictional defect. The manufacturer’s favorable federal judgment therefore could not stand.",
+      "establishes": "This procedural holding does not decide injury causation, product defects or certification. Properly curing a jurisdictional defect remains different from wrongly dismissing a party; the decision does not prohibit all retailer dismissals or require a jury trial after every remand.",
+      "relevance": "It supplies the legal event behind this briefing’s emphasis on records that can be examined in different courts. Predictions about widespread state-court trials, greater settlement pressure and certification’s economic value are the author’s analysis, not court findings.",
+      "links": [
+        {
+          "label": "Supreme Court opinion · 24 February 2026",
+          "href": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified Supreme Court review reuse with fresh After Palmquist context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.supremecourt.gov/opinions/25pdf/24-724_igdj.pdf",
+            "note": "Reused exact primary-opinion review in Cost of Being Uncertified reference 1 and Retailer as Anchor reference 1, dated 2026-09-15; official opinion pp. 5–10 distinguishes proper cure from wrongful dismissal. Fresh editorial assessment: the page’s retailer-locked-in, instrument-removed and inevitable-retrial language exceeds the holding. The Supreme Court affirmed the Fifth Circuit’s vacatur; it did not make new toxicology or liability findings. No premium or litigation-cost study appears in the opinion."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Palmquist v. Hain Celestial Group, Inc.",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "30e2f8ba9ec8ecff8b299dfd352232ddb8b3ae354a5971d7dc8288ee8ba5f437",
+      "citation": "U.S. Court of Appeals for the Fifth Circuit. Palmquist v. Hain Celestial Group, Inc., No. 23-40197, opinion by Judge Carl E. Stewart, 28 May 2024.",
+      "summary": "The Fifth Circuit found that the pleaded claims against Whole Foods supported remand, vacated the federal judgment and directed return to state court. Its factual background also describes Hain’s testing history.",
+      "establishes": "The federal win was judgment as a matter of law under Rule 50 after the plaintiffs rested, not a defense jury verdict. The appellate court resolved jurisdiction and expressly did not decide whether the merits judgment was correct.",
+      "relevance": "It explains the procedural cost of litigating in a court without jurisdiction. Its account of Hain beginning finished-product testing in 2019 provides context for the briefing’s recordkeeping argument, but does not establish that a testing narrative replaces proof of causation.",
+      "links": [
+        {
+          "label": "Fifth Circuit opinion · 28 May 2024",
+          "href": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact Fifth Circuit review reuse with fresh procedural-context assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.ca5.uscourts.gov/opinions/pub/23/23-40197-CV0.pdf",
+            "note": "Reused original 20-page official opinion review performed for Cost of Being Uncertified reference 1 on 2026-09-15, especially pp. 1–5 and 15–20. Page 3 recites 2014–2019 ingredient testing and 2019 finished-product testing as factual background, not an adjudicated merits finding. Page 5 describes Rule 50 judgment after plaintiffs rested; pp. 19–20 order remand and leave the merits appeal undecided. Editorial follow-up: calling this a jury verdict or an unavoidable new Texas jury trial overstates the record."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "e39823b8a7af69f0cf62c258f5748d4b1531b60691673e44f9cc89c816b1dfa1",
+      "citation": "U.S. House of Representatives, Committee on Oversight and Reform, Subcommittee on Economic and Consumer Policy. Baby Foods Are Tainted with Dangerous Levels of Arsenic, Lead, Cadmium, and Mercury. Staff report, 4 February 2021.",
+      "summary": "Congressional staff reviewed manufacturers’ internal documents, identified testing concerns and recommended mandatory finished-product testing. Its Hain discussion describes an August 2019 presentation comparing finished rice foods with estimates based on ingredients.",
+      "establishes": "The report gives staff findings and recommendations, not a court’s liability determination. It does not independently establish the first-ever date of Hain’s finished-product testing or prove that any detectable quantity caused a particular child’s injury.",
+      "relevance": "It explains why the briefing emphasizes routine finished-product evidence. The specific 2019 start date is recited separately in the Fifth Circuit opinion at reference 2; the report itself does not establish litigation outcomes or HMTc effectiveness.",
+      "links": [
+        {
+          "label": "House staff report · 4 February 2021",
+          "href": "https://oversightdemocrats.house.gov/sites/evo-subsites/democrats-oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified House report review reuse with fresh attribution assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oversightdemocrats.house.gov/sites/evo-subsites/democrats-oversight.house.gov/files/2021-02-04%20ECP%20Baby%20Food%20Staff%20Report.pdf",
+            "note": "Reused exact official PDF review in Cost of Being Uncertified reference 5, dated 2026-09-15: printed pp. 53–58, sections V.D–V.E and VI. Read Hain’s 2019 presentation, ingredient-versus-finished testing discussion and recommendations. Editorial follow-up: this page attributes the precise first-testing date to this report, while that date is recited in the separate Fifth Circuit factual background; this attribution issue does not prove the date false. No merits liability finding is supplied."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "76ba9f35abfdb98e3e52a3527370a511adce14ab09a4bfa42d87b2810fdde607",
+      "citation": "Pendergrass, Karen. The Counterproductive Consequences of Public Exposé Testing: How Unstructured Disclosure Undermines Heavy Metal Contamination Reduction. Journal of Food Metallomics, preprint, 8 April 2026. doi: 10.5281/zenodo.19470572.",
+      "summary": "This preprint argues that public testing disclosures can generate litigation and discourage brands from joining improvement programs. Section V uses the Amazon rice lawsuit, baby-food litigation and a Proposition 65 settlement as examples.",
+      "establishes": "It is the program architect’s argument, explicitly not yet peer reviewed, rather than an original study of lawsuits or contamination outcomes. Its account of plaintiffs’ theories does not establish scientific causation or a universal rule that any detectable metal causes injury.",
+      "relevance": "It supplies the rationale for HMTc’s confidential remediation proposal. That rationale requires separation from legal privilege and demonstrated benefit: the paper does not show that confidentiality prevents discovery or that certification reduces claims.",
+      "links": [
+        {
+          "label": "Public exposé testing · April 2026 preprint",
+          "href": "https://doi.org/10.5281/zenodo.19470572"
+        },
+        {
+          "label": "Full deposited preprint (PDF)",
+          "href": "https://zenodo.org/api/records/19470572/files/Counterproductive_Consequences_Public_Expose_Testing.pdf/content"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact preprint review reuse plus litigation-section reread",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.19470572",
+            "note": "Reused exact Zenodo metadata/full-text provenance from Premium Promise reference 5, dated 2026-09-15: Karen Pendergrass, 2026-04-08, preprint, expressly not yet peer reviewed. Same deposited version; no later paper substituted. The drawer category identifies this verified preprint status rather than the bibliography’s Journal label."
+          },
+          {
+            "url": "https://zenodo.org/api/records/19470572/files/Counterproductive_Consequences_Public_Expose_Testing.pdf/content",
+            "note": "Re-read cached original section V and references 21–25. It cites Reuters, the MDL transfer and unspecified December 2025 scheduling order, and a misnamed Promix consent judgment. These are author-summarized legal examples, not a comparative causal study. Reference 23 does not identify a docket document; ref25 actually provides identifier 2024-02424S4488 for the KASB private settlement. No measured HMTc benefit or validated any-detectable-dose causation conclusion is established."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    },
+    "6": {
+      "referenceTitle": "California Assembly Bill 899",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "e551223859456e80b82ce3f364ec84572e110b4435737899c77f6306b499e7ad",
+      "citation": "California Assembly Bill 899, Chapter 668, Statutes of 2023, adding California Health and Safety Code §§110962–110963.",
+      "summary": "AB 899 requires testing of specified baby foods for arsenic, cadmium, lead and mercury, followed by public disclosure of results. The enacted law phases testing in from January 2024 and disclosure from January 2025.",
+      "establishes": "These statutory duties concern defined foods for children under two and exclude infant formula. Testing, disclosure and applicable QR labeling are legal obligations within that scope; participation in HMTc is not required.",
+      "relevance": "It supports the briefing’s account of a more demanding documentation environment. HMTc may help organize testing records, but its own surveillance schedule and confidentiality arrangements cannot replace required public disclosure or statutory testing.",
+      "links": [
+        {
+          "label": "California AB 899 · enacted text",
+          "href": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact enacted-law review reuse with fresh disclosure/cadence context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB899",
+            "note": "Reused exact chaptered-statute review from Cost of Being Uncertified reference 6 and Retailer as Anchor reference 6, dated 2026-09-15. Read §§110962–110963: representative samples of production aggregates, at least monthly final-product testing from 2024-01-01, disclosure and conditional QR labels from 2025-01-01, laboratory criteria. The page’s quarterly HMTc cadence describes program design and is not evidence that quarterly testing meets every applicable California obligation."
+          }
+        ]
+      }
+    },
+    "7": {
+      "referenceTitle": "Action Levels for Lead in Food Intended for Babies and Young Children: Guidance for Industry",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "9f17c563618387afe24dfc97a34e3897c5f397b63dcba7362f0040393e05b0ac",
+      "citation": "U.S. Food and Drug Administration, Human Foods Program. Action Levels for Lead in Processed Food Intended for Babies and Young Children: Guidance for Industry. January 2025.",
+      "summary": "FDA recommends lead action levels of 10 or 20 ppb for specified categories of packaged processed foods intended for children under two. The guidance explains exposure, achievability and enforcement considerations.",
+      "establishes": "These are nonbinding action levels that inform case-by-case adulteration and enforcement decisions under existing law, not a safe-exposure guarantee or universal limit for all children’s foods. Formula, beverages and snacks are excluded from this guidance.",
+      "relevance": "It supplies the published regulatory benchmark behind the briefing’s call for interpretable results. HMTc’s selected limits and decision rules remain program choices and do not create a liability safe harbor.",
+      "links": [
+        {
+          "label": "FDA final lead guidance · January 2025",
+          "href": "https://www.fda.gov/media/164684/download?attachment="
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified FDA review reuse and exact guidance title/scope check",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.fda.gov/media/164684/download?attachment=",
+            "note": "Reused exact guidance review in Retailer as Anchor reference 6 and reopened official PDF, reading title and printed pp. 3–6. The full title includes Processed Food, omitted from this page’s referenceTitle. Pages 3–4 define scope, 10/20 ppb categories and nonbinding status; FDA considers analytical confidence and other case-specific factors. The report does not endorse HMTc, require certification or establish that meeting an action level prevents civil claims."
+          }
+        ]
+      }
+    },
+    "8": {
+      "referenceTitle": "People v. Promix Nutrition",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "540cc1b5a12ea935ab9517d606585d9e92c154b1d357d4698dfe0e02b1dd3682",
+      "citation": "Matching monetary record: Keep America Safe and Beautiful and Promix Nutrition, Inc., Settlement and Release Agreement, fully executed 24 November 2024; California Attorney General Proposition 65 notice no. 2024-02424, recorded as KASB v. Promix Nutrition, Inc., out-of-court settlement. The bibliography’s People v. Promix Nutrition consent-judgment identification was not verified.",
+      "summary": "The official record matching the page’s $28,000 example is a private KASB v. Promix settlement over alleged lead-warning violations involving Lemon Pre-Workout. It is not identified as the People v. Promix consent judgment named in the bibliography.",
+      "establishes": "The agreement allocates $25,000 to claimant-side legal, expert and investigation costs and $3,000 to a penalty, with no admission of violation. It illustrates one resolved notice, not the defendant’s total costs or an unrestricted right for anyone to sue.",
+      "relevance": "It supplies a concrete fee-allocation example for the discussion of private enforcement. It does not establish typical baby-food settlements, legal liability, or protection from future litigation through HMTc enrollment.",
+      "links": [
+        {
+          "label": "Attorney General record · matching settlement",
+          "href": "https://oag.ca.gov/prop65/60-day-notice-2024-02424"
+        },
+        {
+          "label": "KASB–Promix settlement agreement · November 2024",
+          "href": "https://oag.ca.gov/system/files/prop65/settlements/2024-02424S4488.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact primary settlement review reuse with named-case mismatch preserved",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://oag.ca.gov/prop65/60-day-notice-2024-02424",
+            "note": "Explicit reuse of official AG entry read for Cost of Being Uncertified reference 4 on 2026-09-15: notice 2024-02424; KASB v. Promix Nutrition, Inc.; court None; out-of-court settlement dated 2024-11-24; exact $28,000/$25,000/$3,000 amounts. Named People action and consent judgment remain unverified and are explicitly distinguished."
+          },
+          {
+            "url": "https://oag.ca.gov/system/files/prop65/settlements/2024-02424S4488.pdf",
+            "note": "Reused complete nine-page official agreement review from Cost of Being Uncertified reference 4. §§1.4–1.5 record notice, no diligent public prosecution to parties’ knowledge, and Promix’s denial; §§2–5 define warning duties and payment allocation. Source is a private agreement concerning a pre-workout product, not a court finding or an HMTc certification requirement."
+          }
+        ]
+      },
+      "kind": "Settlement"
+    },
+    "9": {
+      "referenceTitle": "Amazon.com Sued Over Alleged Sale of Contaminated Rice",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "bcd92c79bfbf65a785fdc4de3c4110bc774fab581aa59684d915998b35cee1c0",
+      "citation": "Stempel, Jonathan. Amazon.com is sued over alleged sale of contaminated rice. Reuters, 23 May 2025, syndicated by Investing.com. Primary filing: Wright and Blum v. Amazon.com, Inc., No. 2:25-cv-00977 (W.D. Wash.), class action complaint, ECF No. 1, filed 23 May 2025.",
+      "summary": "Reuters reported a proposed consumer class action alleging that Amazon omitted information about heavy metals in rice products. The matching complaint invokes Washington consumer-protection and fraudulent-concealment theories and cites published third-party testing.",
+      "establishes": "The report and complaint establish the filing and allegations, not contamination findings, class certification or Amazon’s liability. The complaint requests relief; it does not impose a testing obligation or prove that a particular consumer’s purchase caused injury.",
+      "relevance": "This is a concrete example of public testing being used in a marketplace lawsuit, extending the briefing’s discussion beyond baby-food manufacturers. It does not show that HMTc would prevent the claim or establish a universal marketplace certification mandate.",
+      "links": [
+        {
+          "label": "Reuters report · syndicated May 2025 article",
+          "href": "https://www.investing.com/news/stock-market-news/amazoncom-is-sued-over-alleged-sale-of-contaminated-rice-4062390"
+        },
+        {
+          "label": "Original filed complaint · public copy",
+          "href": "https://www.classaction.org/media/wright-et-al-v-amazoncom-inc.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review with After Palmquist claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.investing.com/news/stock-market-news/amazoncom-is-sued-over-alleged-sale-of-contaminated-rice-4062390",
+            "note": "Read complete syndicated Reuters article, byline Jonathan Stempel, 2025-05-23, and case identification Wright et al v Amazon.com Inc., W.D. Washington No. 25-00977. This is the actual cited news report, not an unrelated Amazon case. Published link is transparently labeled as syndication; Reuters origin is identified by the host."
+          },
+          {
+            "url": "https://www.classaction.org/media/wright-et-al-v-amazoncom-inc.pdf",
+            "note": "Read court-stamped original complaint through web PDF text, ECF 1 filed 2025-05-23, especially printed pp. 1–3, 10–11, 27–29: allegations, HBBF 2025 report citation, consumer-protection/fraud counts and requested class/injunctive relief. Public mirror at ClassAction.org, not an official docket host; direct download failed 403 but web text was accessible. Same parties, docket and date match Reuters. Original filing only; no assertion of present case status."
+          }
+        ]
+      },
+      "kind": "News report"
+    },
+    "10": {
+      "referenceTitle": "HMTc Infant and Child Foods Program Manual",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "1362b9761311ccd54133bfb732f9cda05f081baa5f5ca129593d93c7ee90106d",
+      "citation": "Pendergrass, Karen. Heavy Metal Tested & Certified (HMTc) Infant and Child Foods Program Manual. 2026 edition, v0. The Paleo Foundation, 18 May 2026. doi:10.5281/zenodo.20270512. This is the cited first deposit; later editions supersede it.",
+      "summary": "The cited manual describes staged certification, scheduled testing, data requirements, measurement decision rules, confidential remediation and a process for tightening limits. Its introductory business case repeats the operator’s illustrative loss models.",
+      "establishes": "These are the operator’s specifications and arguments, not evidence of implementation, legal admissibility or reduced litigation. The cited v0 is superseded; it expressly acknowledges subpoena and privilege limits and permits direct comparison with the limit when measurement uncertainty is unreported.",
+      "relevance": "It is the primary source for the program proposed as the briefing’s response to Palmquist. Current rules and agreements must be checked separately; a program-valid record, confidentiality clause or passing result does not by itself determine courtroom admissibility or liability.",
+      "links": [
+        {
+          "label": "Cited manual · May 2026 v0",
+          "href": "https://doi.org/10.5281/zenodo.20270512"
+        },
+        {
+          "label": "Current manual and edition history",
+          "href": "https://heavymetalcertified.com/manuals/infant-and-child-foods"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, exact manual review reuse plus After Palmquist protocol-section review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.20270512",
+            "note": "Reused exact-DOI/title-page/version review in Premium Promise reference 7 and Cost of Being Uncertified reference 8: Karen Pendergrass, 2026-05-18 v0, The Paleo Foundation, not the bibliography’s ICS publisher label. This first deposit is superseded. The manuscript’s own historical and financial claims are not independent validation."
+          },
+          {
+            "url": "https://zenodo.org/api/records/20270512/files/HMTc-Program-Manual-2026-v0.pdf/content",
+            "note": "Reused exact cached 384-page deposit and primer review of printed pp. 68–71 (confidentiality, subpoena/privilege limits). Newly read printed pp. 76–79 (MU, retesting, structured data), 88–91 (ratchet triggers and step cap), 321–322 (risk/status cadence), 326–329 (probation, reflex testing, custody). Editorial qualification: §7.4 allows direct result comparison when MU is absent; cadence varies by status as well as risk. Custody invalidation is a program rule, not automatic evidentiary exclusion. Legal-defensibility and financial benefits remain operator arguments."
+          },
+          {
+            "url": "https://heavymetalcertified.com/manuals/infant-and-child-foods",
+            "note": "Reused same-day official publisher version-history review in Premium Promise reference 7: May 18 v0 superseded, June 20 revision and August 6 web edition listed. Link provides edition navigation only; later rules have not been substituted for the exact cited v0. No claim that all current program obligations were verified."
+          }
+        ]
+      }
+    },
+    "11": {
+      "referenceTitle": "Litigation Cost Survey of Major Companies",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "7be9a14d74d83bbb61d0124eb6027aa52c113cd2a4c693450eeae9983dad6ba4",
+      "citation": "Lawyers for Civil Justice, Civil Justice Reform Group and U.S. Chamber Institute for Legal Reform. Litigation Cost Survey of Major Companies, May 2010. Survey administered by the Searle Center; submitted to the 2010 Conference on Civil Litigation.",
+      "summary": "This industry-sponsored survey reports major companies’ historical litigation costs, including 2008 company means of approximately $2.02 million in outside fees and $622,000 in discovery costs for major cases.",
+      "establishes": "The survey was published in May 2010, not authored by the Federal Judicial Center in 2008. Its selected large-company sample and case threshold limit generalization; mean discovery cost is not evidence of how frequently costs exceed $600,000.",
+      "relevance": "It supplies a historical expense benchmark for the briefing’s business case. It does not measure costs after Palmquist, state-versus-federal differences, or savings from HMTc testing and certification.",
+      "links": [
+        {
+          "label": "Original industry survey · May 2010",
+          "href": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified survey review reuse with fresh After Palmquist financial context",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.uscourts.gov/file/document/lawyers-civil-justice-et-al-survey-litigation-costs-major-companies-2010",
+            "note": "Reused exact-source methodology and table review in Cost of Being Uncertified reference 3 and Retailer as Anchor reference 4, dated 2026-09-15. Cover identifies sponsors/year; appendix pp. 4–6 discusses sample limitations; pp. 14–15 gives means. Editorial issues: authorship/date and Government badge are incorrect; the $621,880 average does not establish the page’s frequently-exceeding frequency claim."
+          }
+        ]
+      },
+      "kind": "Industry survey"
+    },
+    "12": {
+      "referenceTitle": "ISO/IEC 17025:2017, General Requirements for the Competence of Testing and Calibration Laboratories",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "113b0e8bd3d54c8feacffd6521748360479b3370b11706f40c83a9314756b264",
+      "citation": "International Organization for Standardization and International Electrotechnical Commission. ISO/IEC 17025:2017, General requirements for the competence of testing and calibration laboratories. Third edition, November 2017; confirmed in 2023.",
+      "summary": "ISO/IEC 17025 provides a general benchmark for laboratory competence, impartiality and consistent operation. Its official public overview describes testing and calibration laboratories and the role of accreditation.",
+      "establishes": "Only the official overview was reviewed, not the paid normative standard or a particular laboratory’s accreditation. Accreditation does not itself certify a food, prescribe HMTc’s sampling cadence, or guarantee acceptance of evidence in court.",
+      "relevance": "It supports the laboratory-competence requirement in the briefing’s independent-testing proposal. The sampling independence, custody consequences and continuing surveillance described here come from HMTc’s own program rules.",
+      "links": [
+        {
+          "label": "ISO/IEC 17025:2017 · official overview",
+          "href": "https://www.iso.org/standard/66912.html"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified ISO overview reuse with access limits stated",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.iso.org/standard/66912.html",
+            "note": "Reused exact official-overview review from HMTc Primer reference 3 and Cost of Being Uncertified reference 7, dated 2026-09-15: third edition November 2017, confirmed 2023. Access limited to publisher overview. No individual laboratory scope/certificate or clause-level normative text was checked; no automatic legal-admissibility inference is drawn."
+          }
+        ]
+      }
+    },
+    "13": {
+      "referenceTitle": "Use of Uncertainty Information in Compliance Assessment",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "7a6b2306a85a0418208f1e2084f13c1eb31bb3d175fe46272225a3afe8eb6a83",
+      "citation": "Williams, A., and Magnusson, B., editors. Eurachem/CITAC Guide: Use of uncertainty information in compliance assessment. Second edition, 2021. ISBN 978-0-948926-38-9. International Laboratory Accreditation Cooperation. Guidelines on Decision Rules and Statements of Conformity, ILAC-G8:09/2019.",
+      "summary": "These two guides explain how a measured result, its uncertainty and a specification limit can be combined in a documented conformity decision. They describe guard bands, which place acceptance boundaries away from the limit, and conditional or inconclusive outcomes.",
+      "establishes": "They provide analytical guidance, not rules of evidence or a universal HMTc formula. ILAC illustrates a nonbinary rule using expanded uncertainty, while both guides allow different rules suited to the application and acceptable decision risk.",
+      "relevance": "They support the measurement logic behind HMTc’s pass/fail/borderline scheme. HMTc’s exact rule and confirmatory process are program choices; following the guides does not itself establish legal admissibility, safety or a successful defense.",
+      "links": [
+        {
+          "label": "Eurachem/CITAC guide · second edition 2021",
+          "href": "https://www.eurachem.org/images/stories/Guides/pdf/MUC2021_P1_EN.pdf"
+        },
+        {
+          "label": "ILAC-G8:09/2019 · decision-rule guidance",
+          "href": "https://ilac.org/?ddownload=122722"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source review with After Palmquist claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eurachem.org/index.php/publications/guides/uncertcompliance",
+            "note": "Read official publisher page: title, A. Williams/B. Magnusson editors, second edition 2021, ISBN 978-0-948926-38-9, web publication 2021-04-29. Distinguishes this guide from Quantifying Uncertainty in Analytical Measurement. Both grouped works are guidance documents, so the Standard badge is clarified as Guidance."
+          },
+          {
+            "url": "https://www.eurachem.org/images/stories/Guides/pdf/MUC2021_P1_EN.pdf",
+            "note": "Downloaded exact official 38-page PDF and read printed pp. 5 and 7–10 (physical pp. 11 and 13–16): scope and §§4.1–4.5 cover documented decision rules, simple acceptance, guard bands, conditional outcomes and two-stage testing. Sampling uncertainty must be included when the measurand entails sampling; multiple measurands are outside the guide’s scope. These sections do not validate HMTc’s entire multi-analyte certification or court admissibility."
+          },
+          {
+            "url": "https://ilac.org/?ddownload=122722",
+            "note": "Retrieved from the official ILAC guidance-series link; downloaded 20-page PDF. Read pp. 4–7 (purpose, ISO context), 8–10 (§4 guard bands, including §4.2.3 nonbinary example with w=U), and 15–16 (documentation/summary). No single rule fits all testing; rules must match applicable requirements and be agreed/documented. Measurement decision risk is distinct from general laboratory or litigation risk. No full ISO standard review is implied."
+          }
+        ]
+      },
+      "kind": "Guidance"
+    },
+    "14": {
+      "referenceTitle": "The Cost of Operating Without Credible Third-Party Heavy-Metal Certification",
+      "pageDigest": "95ee03d2f735a2e2dc742636e8ae6b1f6b805590a70a5f71421a0c48c3884307",
+      "sourceDigest": "1d1da5f78226026467769811d31946322594de8d3b857e9463c1c3256edf5f51",
+      "citation": "Pendergrass, Karen. The Cost of Operating Without Credible Third-Party Heavy-Metal Certification. Journal of Food Metallomics, preprint, 7 March 2026, pp. 1–6. doi: 10.5281/zenodo.18903738.",
+      "summary": "The preprint models one-year losses following a public heavy-metals event and compares expected losses with certification costs. Its mid-size example assumes a $15 million event loss, 3% annual event probability and 25% reduction through certification.",
+      "establishes": "Multiplying those assumptions gives $112,500 annual break-even. The paper does not measure HMTc’s effect on event probability, loss severity or insurance premiums; the assumed reduction and scenario totals are not guarantees.",
+      "relevance": "It supplies the briefing’s break-even calculation. Claims that carriers are repricing in real time or that certified suppliers consistently pay less require insurer-specific evidence beyond this model.",
+      "links": [
+        {
+          "label": "Business-cost preprint · March 2026",
+          "href": "https://doi.org/10.5281/zenodo.18903738"
+        },
+        {
+          "label": "Full deposited preprint (PDF)",
+          "href": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, verified cost-model review reuse with fresh insurance/channel claim assessment",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://doi.org/10.5281/zenodo.18903738",
+            "note": "Explicit reuse of exact metadata/full-text review in Cost of Being Uncertified reference 9 and Premium Promise reference 6, dated 2026-09-15: Karen Pendergrass, 2026-03-07, preprint, same deposited version. The drawer category identifies this verified preprint status rather than the bibliography’s Journal label."
+          },
+          {
+            "url": "https://zenodo.org/api/records/18903738/files/The%20Cost%20of%20Operating%20Without%20Credible%20Third-Party%20Heavy-Metal%20Certification.pdf/content",
+            "note": "Reused reread of original §§7.2–7.4: assumed 10–40% certification loss reduction, and $15M × 3% × 25% = $112,500 mid-size example. Editorial concerns carried forward for this page: abstract/introduction and §7.3 give inconsistent scenario ranges; costs mix revenue and gross-profit effects. No insurer-pricing dataset, verified reduced-premium endorsement or universal retailer mandate supports this page’s categorical economic claims."
+          }
+        ]
+      },
+      "kind": "Preprint"
+    }
+  }
+}

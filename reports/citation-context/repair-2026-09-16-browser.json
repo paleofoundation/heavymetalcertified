@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-16",
+  "surface": "In-app browser; desktop viewport; current build verified with revision query",
+  "records": [
+    {
+      "page": "briefings/after-palmquist",
+      "number": 4,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 3
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": 4,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 3
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "number": 6,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 3
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": 7,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": 8,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "number": 9,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "briefings/supplements-child-protective",
+      "number": 2,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 3
+    },
+    {
+      "page": "briefings/before-the-meat-label-prints",
+      "number": 2,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "number": 6,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 3
+    },
+    {
+      "page": "briefings/heavy-metals-in-peptides-and-sarms",
+      "number": 4,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "briefings/no-limit-is-not-no-standard",
+      "number": 3,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "number": 1,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "number": 7,
+      "copy": true,
+      "fits": true,
+      "sections": true,
+      "sourceLinks": 2
+    }
+  ]
+}

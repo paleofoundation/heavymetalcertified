@@ -7,34 +7,97 @@
   "socialDescription": "A legal-operational comparison of state baby-food heavy-metal laws and FDA's federal guidance, monitoring and planned action-level work.",
   "dek": "State baby-food laws are building a compliance layer around testing frequency, public disclosure and product scope while FDA continues to use guidance, monitoring and staged action-level development.",
   "claim": "A baby-food company can no longer treat federal FDA guidance as the whole United States compliance map. State testing, disclosure and product-scope laws operate as separate obligations, and the strictest operational duty may come from a state even when the federal concentration framework has not changed.",
-  "metals": ["Lead", "Cadmium", "Arsenic", "Mercury"],
+  "metals": [
+    "Lead",
+    "Cadmium",
+    "Arsenic",
+    "Mercury"
+  ],
   "section": "Regulatory Watch",
   "date": "August 2026",
   "published": "2026-08-24",
   "report_number": "HMTc-RW-2026-002",
-  "modified": "2026-08-24",
+  "modified": "2026-09-16",
   "evidence_verified": "2026-08-24",
   "series": "Regulatory Watch",
   "series_url": "/articles/regulatory-watch",
   "scholar_eligible": true,
   "scholar_pdf": true,
-  "keywords": ["baby food heavy metal laws", "state baby food testing laws", "FDA Closer to Zero", "baby food QR code law", "infant formula heavy metals", "Virginia baby food law", "Illinois baby food law", "Vermont baby food law"],
-  "jurisdictions": ["United States", "Virginia", "Illinois", "Vermont"],
-  "instruments": ["Virginia Code 3.2-5125.1", "Illinois SB0073 / Public Act", "Vermont H.536 / Act 110", "FDA Closer to Zero", "FDA 2026 Human Foods Program priorities"],
-  "event_ids": ["rw-2026-05-us-state-baby-food", "rw-2026-13-fda-closer-to-zero"],
-  "isBasedOn": [
-    {"name": "Virginia Code 3.2-5125.1", "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/"},
-    {"name": "Illinois SB0073", "url": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html"},
-    {"name": "Vermont H.536 / Act 110", "url": "https://legislature.vermont.gov/bill/status/2026/H.536"},
-    {"name": "FDA infant formula testing results", "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"}
+  "keywords": [
+    "baby food heavy metal laws",
+    "state baby food testing laws",
+    "FDA Closer to Zero",
+    "baby food QR code law",
+    "infant formula heavy metals",
+    "Virginia baby food law",
+    "Illinois baby food law",
+    "Vermont baby food law"
   ],
-  "citation": ["https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/", "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html", "https://legislature.vermont.gov/bill/status/2026/H.536", "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables", "https://heavymetalindex.com/regulations/us-infant-food-contaminants"],
-  "related_standard_urls": ["/standards/baby-cereals-dry", "/standards/infant-formula-powder", "/standards/infant-formula-ready-to-feed", "/standards/teething-and-snacks"],
+  "jurisdictions": [
+    "United States",
+    "Virginia",
+    "Illinois",
+    "Vermont"
+  ],
+  "instruments": [
+    "Virginia Code 3.2-5125.1",
+    "Illinois SB0073 / Public Act",
+    "Vermont H.536 / Act 110",
+    "FDA Closer to Zero",
+    "FDA 2026 Human Foods Program priorities"
+  ],
+  "event_ids": [
+    "rw-2026-05-us-state-baby-food",
+    "rw-2026-13-fda-closer-to-zero"
+  ],
+  "isBasedOn": [
+    {
+      "name": "Virginia Code 3.2-5125.1",
+      "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/"
+    },
+    {
+      "name": "Illinois SB0073",
+      "url": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html"
+    },
+    {
+      "name": "Vermont H.536 / Act 110",
+      "url": "https://legislature.vermont.gov/bill/status/2026/H.536"
+    },
+    {
+      "name": "FDA infant formula testing results",
+      "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results"
+    }
+  ],
+  "citation": [
+    "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
+    "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html",
+    "https://legislature.vermont.gov/bill/status/2026/H.536",
+    "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
+    "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+  ],
+  "related_standard_urls": [
+    "/standards/baby-cereals-dry",
+    "/standards/infant-formula-powder",
+    "/standards/infant-formula-ready-to-feed",
+    "/standards/teething-and-snacks"
+  ],
   "connections": [
-    {"label": "Regulatory Watch — living tracker", "href": "/articles/regulatory-watch"},
-    {"label": "Baby cereals standard", "href": "/standards/baby-cereals-dry"},
-    {"label": "Infant formula powder standard", "href": "/standards/infant-formula-powder"},
-    {"label": "Heavy Metal Index — US infant-food controls", "href": "https://heavymetalindex.com/regulations/us-infant-food-contaminants"}
+    {
+      "label": "Regulatory Watch — living tracker",
+      "href": "/articles/regulatory-watch"
+    },
+    {
+      "label": "Baby cereals standard",
+      "href": "/standards/baby-cereals-dry"
+    },
+    {
+      "label": "Infant formula powder standard",
+      "href": "/standards/infant-formula-powder"
+    },
+    {
+      "label": "Heavy Metal Index — FDA Closer to Zero overview",
+      "href": "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+    }
   ],
   "abstract": "Virginia, Illinois and Vermont now provide official state-law records for baby-food heavy-metal testing, disclosure or sale requirements, while FDA continues to operate through federal guidance, monitoring results and planned action-level work. These layers are related but not interchangeable. A state can require testing records, consumer-facing disclosure or a QR pathway even when the underlying federal action level is nonbinding guidance. FDA's 2026 infant-formula testing release and program priorities provide important evidence and policy direction, but they do not themselves create a new binding federal maximum level. This analysis compares the legal mechanisms, explains why product definitions and effective dates must be resolved state by state, and maps the consequences for a certification evidence package without converting state duties into universal HMTc thresholds.",
   "sections": [
@@ -44,7 +107,7 @@
     },
     {
       "h2": "Virginia, Illinois and Vermont Use Different Legal Levers",
-      "body": "Virginia's official code creates a Baby Food Protection Act section with testing and consumer-access provisions tied to covered baby food <sup class=\"cite\"><a href=\"#ref-2\">2</a></sup>. Illinois's official legislative record shows SB0073 becoming a Public Act with a 1 January 2026 effective date and a structure that combines sale requirements with testing obligations <sup class=\"cite\"><a href=\"#ref-3\">3</a></sup>. Vermont's H.536 record became Act 110 and requires close attention to product definitions, including when infant formula is within the pathway <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. The useful comparison is not a red-or-green state map. It is a matrix with at least six fields: covered product definition, covered analytes, concentration or sale condition, testing cadence and laboratory requirements, disclosure mechanism, and effective or transition date. A company that normalizes only metal numbers will miss the operational duties most likely to produce a state compliance failure."
+      "body": "Virginia's official code creates a Baby Food Protection Act section with testing and consumer-access provisions tied to covered baby food <sup class=\"cite\"><a href=\"#ref-2\">2</a></sup>. Illinois's official legislative record shows SB0073 becoming a Public Act with a 1 January 2026 effective date and a structure that combines sale requirements with testing obligations <sup class=\"cite\"><a href=\"#ref-3\">3</a></sup>. Vermont Act 110 begins its baby-food provisions on 1 January 2027 and initially excludes infant formula. Formula enters only after the Attorney General provides the written confirmation specified by the act; the law also allows suspension for inadequate supply <sup class=\"cite\"><a href=\"#ref-4\">4</a></sup>. The useful comparison is not a red-or-green state map. It is a matrix with at least six fields: covered product definition, covered analytes, concentration or sale condition, testing cadence and laboratory requirements, disclosure mechanism, and effective or transition date. A company that normalizes only metal numbers will miss the operational duties most likely to produce a state compliance failure."
     },
     {
       "h2": "FDA Testing Adds Evidence, Not a New Limit",
@@ -56,21 +119,74 @@
     },
     {
       "h2": "A Practical Multi-State Control",
-      "body": "Brands should maintain one controlled state-law register per SKU family, not one national baby-food checklist. The register should cite the official statute, show current status and date, record the operative product definition, list metals and method requirements, identify the disclosure URL or QR destination, and name the owner who rechecks the rule. It should point to the certification record rather than copying test results into unmanaged spreadsheets. The register also needs a negative statement: what the rule does not do. Virginia does not become federal law; Vermont's product definition does not automatically apply in Illinois; and FDA's planned cadmium or inorganic-arsenic work is not binding until the agency issues an instrument with legal effect. That negative control prevents a fast-moving state landscape from becoming an internally inconsistent set of claims."
+      "body": "Brands should maintain one controlled state-law register per SKU family, not one national baby-food checklist. The register should cite the official statute, show current status and date, record the operative product definition, list metals and method requirements, identify the disclosure URL or QR destination, and name the owner who rechecks the rule. It should point to the certification record rather than copying test results into unmanaged spreadsheets. The register also needs a negative statement: what the rule does not do. Virginia does not become federal law; Vermont's product definition does not automatically apply in Illinois; and FDA's planned cadmium or inorganic-arsenic work is not binding until the agency issues an instrument with legal effect. That negative control prevents a fast-moving state landscape from becoming an internally inconsistent set of claims. The Heavy Metal Index’s Closer to Zero overview provides background on selected federal action levels; it is a secondary reference, not the state-law register itself <sup class=\"cite\"><a href=\"#ref-6\">6</a></sup>."
     }
   ],
   "faq": [
-    {"q": "Do state baby-food heavy-metal laws apply in addition to FDA guidance?", "a": "Yes. State testing, disclosure and sale duties can operate alongside FDA guidance. A product may need to satisfy both the federal framework and the operational requirements of every state where it is sold."},
-    {"q": "Did FDA's 2026 infant-formula testing create new federal limits?", "a": "No. The testing release is monitoring evidence. FDA's 2026 priorities describe planned work on cadmium and inorganic-arsenic action levels, but the plan and dataset are not themselves new binding limits."},
-    {"q": "Can one QR code satisfy every state?", "a": "Possibly as an implementation tool, but only after comparing each state's required content, product scope, timing and accessibility rules. A common destination should be designed from verified duties, not assumed to comply everywhere."},
-    {"q": "Does HMTc certification replace state legal compliance?", "a": "No. Certification can supply controlled testing and evidence, but the brand remains responsible for state product definitions, sale conditions, disclosures, records and effective dates."}
+    {
+      "q": "Do state baby-food heavy-metal laws apply in addition to FDA guidance?",
+      "a": "Yes. State testing, disclosure and sale duties can operate alongside FDA guidance. A product may need to satisfy both the federal framework and the operational requirements of every state where it is sold."
+    },
+    {
+      "q": "Did FDA's 2026 infant-formula testing create new federal limits?",
+      "a": "No. The testing release is monitoring evidence. FDA's 2026 priorities describe planned work on cadmium and inorganic-arsenic action levels, but the plan and dataset are not themselves new binding limits."
+    },
+    {
+      "q": "Can one QR code satisfy every state?",
+      "a": "Possibly as an implementation tool, but only after comparing each state's required content, product scope, timing and accessibility rules. A common destination should be designed from verified duties, not assumed to comply everywhere."
+    },
+    {
+      "q": "Does HMTc certification replace state legal compliance?",
+      "a": "No. Certification can supply controlled testing and evidence, but the brand remains responsible for state product definitions, sale conditions, disclosures, records and effective dates."
+    }
   ],
   "references": [
-    {"n": 1, "title": "FDA Human Foods Program 2026 priority deliverables", "href": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables", "meta": "Official FDA work plan, including planned cadmium and inorganic-arsenic action-level activity.", "type": "Government", "official": true},
-    {"n": 2, "title": "Virginia Code section 3.2-5125.1, Baby Food Protection Act", "href": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/", "meta": "Official Virginia code update with testing and disclosure provisions.", "type": "Legislation", "official": true},
-    {"n": 3, "title": "Illinois SB0073 bill status and Public Act record", "href": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html", "meta": "Official Illinois legislative history and enactment record.", "type": "Legislation", "official": true},
-    {"n": 4, "title": "Vermont H.536 / Act 110 status", "href": "https://legislature.vermont.gov/bill/status/2026/H.536", "meta": "Official Vermont bill and act record, including enacted text links.", "type": "Legislation", "official": true},
-    {"n": 5, "title": "FDA infant-formula product testing results", "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results", "meta": "Official FDA results page for the 2026 infant-formula testing release.", "type": "Government", "official": true},
-    {"n": 6, "title": "Heavy Metal Index — United States infant-food contaminant controls", "href": "https://heavymetalindex.com/regulations/us-infant-food-contaminants", "meta": "Neutral federal regulatory and species/basis reference.", "type": "Reference"}
+    {
+      "n": 1,
+      "title": "FDA Human Foods Program 2026 priority deliverables",
+      "href": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
+      "meta": "Official FDA work plan, including planned cadmium and inorganic-arsenic action-level activity.",
+      "type": "Government",
+      "official": true
+    },
+    {
+      "n": 2,
+      "title": "Virginia Code section 3.2-5125.1, Baby Food Protection Act",
+      "href": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
+      "meta": "Official Virginia code update with testing and disclosure provisions.",
+      "type": "Legislation",
+      "official": true
+    },
+    {
+      "n": 3,
+      "title": "Illinois SB0073 bill status and Public Act record",
+      "href": "https://www.ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB0073.html",
+      "meta": "Official Illinois legislative history and enactment record.",
+      "type": "Legislation",
+      "official": true
+    },
+    {
+      "n": 4,
+      "title": "Vermont H.536 / Act 110 status",
+      "href": "https://legislature.vermont.gov/bill/status/2026/H.536",
+      "meta": "Official Vermont bill and act record, including enacted text links.",
+      "type": "Legislation",
+      "official": true
+    },
+    {
+      "n": 5,
+      "title": "FDA infant-formula product testing results",
+      "href": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
+      "meta": "Official FDA results page for the 2026 infant-formula testing release.",
+      "type": "Government",
+      "official": true
+    },
+    {
+      "n": 6,
+      "title": "Heavy Metal Index — FDA Closer to Zero: Program Overview",
+      "href": "https://heavymetalindex.com/regulations/fda-closer-to-zero",
+      "meta": "Secondary overview of selected federal action levels; not a complete state-law or infant-formula register.",
+      "type": "Reference"
+    }
   ]
 }

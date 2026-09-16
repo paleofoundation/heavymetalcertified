@@ -1,6 +1,6 @@
 {
   "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
-  "reviewed": "2026-09-15",
+  "reviewed": "2026-09-16",
   "refs": {
     "1": {
       "referenceTitle": "Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus",
@@ -8,22 +8,22 @@
       "citation": "Ali, Adane Sirage; Bayih, Argaw Ambelu; and Gari, Sirak Robele. Meta-analysis of public health risks of lead accumulation in wastewater, irrigated soil, and crops nexus. Frontiers in Public Health 10:977721, 18 October 2022. doi:10.3389/fpubh.2022.977721.",
       "summary": "This review included 24 studies of lead in irrigation wastewater, soils and crops. It reported frequent exceedances of the authors’ selected benchmarks, with substantial differences across settings.",
       "establishes": "Between-study heterogeneity was very high (I²=98%). The review concerns lead, not a pooled multi-metal effect; its modeled risk indices are not observations of illness or proof of a particular causal source.",
-      "relevance": "It supports screening wastewater-linked supply chains for lead. It does not verify current WHO/FAO legal limits, a uniform effect size, or the article’s broader claim that several metals always rise together.",
+      "relevance": "The review supports screening wastewater-linked supply chains for lead. The revised article attributes its selected benchmarks to the authors and separates them from the primary FAO/Codex texts. It does not establish current legal non-compliance, one uniform effect size or the broader claim that several metals always rise together.",
       "links": [
         {
           "label": "Read the review",
           "href": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.977721/full"
         }
       ],
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
-      "sourceDigest": "af70f697edd2c3c658301e458e7a4daeda2850ba68ab7e1c1c12b724a8fddd44",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
+      "sourceDigest": "9ebdb40077d505f1a39163db7117eef79844d5207d9f129bc264e037898ac7ae",
       "review": {
-        "reviewer": "Codex, primary-source review with reused source research and new page-context assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.977721/full",
-            "note": "Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read abstract, inclusion methods, results and heterogeneity section. Source internally varies its crop count (44 in abstract,47 in results); no count is adopted here. Included studies and benchmark validity were not independently re-audited."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read abstract, inclusion methods, results and heterogeneity section. Source internally varies its crop count (44 in abstract,47 in results); no count is adopted here. Included studies and benchmark validity were not independently re-audited."
           }
         ]
       }
@@ -41,15 +41,15 @@
           "href": "https://www.chemistryjournals.net/archives/2020/vol2issue2/PartA/2-1-15-200.pdf"
         }
       ],
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
       "sourceDigest": "eb94558d2fff15e08ec51083af704fa659f94ce088dc8222031683e821c9db63",
       "review": {
-        "reviewer": "Codex, primary-source review with reused source research and new page-context assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.chemistryjournals.net/archives/2020/vol2issue2/PartA/2-1-15-200.pdf",
-            "note": "Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read publisher PDF pp.12–15, methods and Tables1–3. Air-drying is explicit. A population sample count and composite design are not clearly documented. Risk indices depend on selected reference doses and dry-to-fresh conversion; no clinical endpoints measured."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read publisher PDF pp.12–15, methods and Tables1–3. Air-drying is explicit. A population sample count and composite design are not clearly documented. Risk indices depend on selected reference doses and dry-to-fresh conversion; no clinical endpoints measured."
           }
         ]
       }
@@ -60,35 +60,35 @@
       "citation": "Chiutula C, Mtewa AG, Abraham A, Mvula RLS, Maluwa A, Eregno FE, Njalam’mano J. Assessment of Heavy Metal Accumulation in Wastewater–Receiving Soil–Exotic and Indigenous Vegetable Systems and Its Potential Health Risks: A Case Study from Blantyre, Malawi. International Journal of Environmental Research and Public Health 22(11):1614, 23 October 2025. doi:10.3390/ijerph22111614.",
       "summary": "This Soche wastewater-treatment-plant field study measured five metals in water, soil and six vegetable species. Water samples had nondetectable cadmium, chromium and lead, while vegetable results varied by species and tissue.",
       "establishes": "The sampling provides a snapshot, not a measured history of decades of loading. The study used dried plant material and total-element analysis; its unit reporting and food-limit comparisons require care. It did not establish Cr(VI) concentrations.",
-      "relevance": "It supports measuring crops as well as water. The article’s definite attribution to historical soil loading remains an interpretation; unit inconsistencies and exposure-model assumptions prevent adopting every stated exceedance as a verified food-law breach.",
+      "relevance": "It supports measuring crops as well as water. The revised article no longer treats historical soil loading as directly measured or every reported exceedance as verified food-law non-compliance. Unit inconsistencies, dried preparation and exposure-model assumptions remain important when interpreting the plant results.",
       "links": [
         {
           "label": "Read the study",
           "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652890/"
         }
       ],
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
-      "sourceDigest": "bbc7502a02c85f4c759955557936b3d3ba465069213a2b5cf0d6cda6071e7e34",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
+      "sourceDigest": "17062444aa7d1fc3c1b578c7801a43ccc4004d8f4e1107a72e0084437056140d",
       "review": {
-        "reviewer": "Codex, primary-source review with reused source research and new page-context assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652890/",
-            "note": "Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read abstract, methods2.2–2.5, results3.1–3.3, tables and conclusion. Thirty-six vegetable samples; rainy-season water grab samples. Methods report final mg/L while tables use mg/kg, with dried preparation; no recalculation of food-limit exceedances adopted. Historical loading and speciation not measured."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Reused direct primary-source reading from the fertilizer review, reassessed against this article. Read abstract, methods2.2–2.5, results3.1–3.3, tables and conclusion. Thirty-six vegetable samples; rainy-season water grab samples. Methods report final mg/L while tables use mg/kg, with dried preparation; no recalculation of food-limit exceedances adopted. Historical loading and speciation not measured."
           }
         ]
       }
     },
     "4": {
       "referenceTitle": "Uptake of Arsenic by Irrigated Vegetables and Cooked Food Products in Burkina Faso",
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
       "sourceDigest": "66ad231dbe1a3d4fa8a4d0b16eb540f8066619a9159acb05a4ffd81071164ec4",
       "kind": "Research article",
       "citation": "Clair-Caliot G, Marks SJ, Hug SJ, Bretzler A, N’guessan ND, Tihe SFK, Lalanne F. Uptake of Arsenic by Irrigated Vegetables and Cooked Food Products in Burkina Faso. Frontiers in Water 3:667308, 26 July 2021. doi:10.3389/frwa.2021.667308.",
       "summary": "A greenhouse experiment grew seven vegetables in 168 pots with arsenate-spiked irrigation water at 0–1,000 µg/L. Average dry-mass arsenic was higher in leafy edible parts than roots or fruits; cooking-water contamination also changed food arsenic.",
       "establishes": "The experiment models geogenic groundwater, not municipal sewage or retail prevalence. Species differed, and incomplete organ sampling limits some transfer comparisons. Its health indices use exposure assumptions rather than measured illness.",
-      "relevance": "It supports considering crop type and water quality. HMTc cannot generalize this arsenic-specific controlled experiment into proof that wastewater raises every metal or that one crop hierarchy applies across all contaminants.",
+      "relevance": "This supplies a controlled arsenic-transfer example that the article distinguishes from sewage exposure. HMTc cannot generalize it into proof that wastewater raises every metal or that one crop hierarchy applies across all contaminants.",
       "links": [
         {
           "label": "Read the study",
@@ -96,25 +96,25 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source review",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2021.667308/full",
-            "note": "Read abstract, greenhouse methods, results and Tables 2–4. Six replicates per treatment/species; dry versus fresh mass distinguished. Original publication is July 2021. This source supplies a mechanism analogy, not wastewater field evidence."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read abstract, greenhouse methods, results and Tables 2–4. Six replicates per treatment/species; dry versus fresh mass distinguished. Original publication is July 2021. This source supplies a mechanism analogy, not wastewater field evidence."
           }
         ]
       }
     },
     "5": {
       "referenceTitle": "HEAVY METALS IN SOIL AND VEGETABLES AND THEIR EFFECT ON HEALTH",
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
       "sourceDigest": "27f7e973f19dbbc056ffc891e0821bd421ddf6ef8ed668debf39caf8ec29a8e6",
       "kind": "Research article",
       "citation": "Pal J, Bishnoi M, Kaur M. Heavy metals in soil and vegetables and their effect on health. International Journal of Engineering Science Technologies 2(1):17–27, September 2017. doi:10.29121/IJOEST.v2.i1.2017.03.",
       "summary": "This Hisar field survey measured six metals in six vegetables and environmental samples from three wastewater-irrigated locations. Uptake varied by vegetable, element and location; cadmium and nickel transfer were relatively high in spinach.",
       "establishes": "Dried samples and atomic absorption establish total-element concentrations, not chromium species. The authors’ modeled health indices were below one, but their reference values and limited exposure pathways do not establish universal safety or observed disease.",
-      "relevance": "It supports retaining crop-specific measurements within broader panels. It does not prove that leafy vegetables always rank highest for every metal, or validate HMTc’s thresholds and testing frequency.",
+      "relevance": "It supports retaining crop-specific measurements within broader panels. It does not prove that leafy vegetables always rank highest for every metal, or validate HMTc’s thresholds and testing frequency. The original is dated 2017; the bibliography’s 2019 date remains a metadata discrepancy.",
       "links": [
         {
           "label": "Read the study",
@@ -122,15 +122,53 @@
         }
       ],
       "review": {
-        "reviewer": "Codex, primary-source review",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://granthaalayahpublication.org/ojs-sys/ijoest/article/download/03_IJOEST16_A09_15/IJOEST16_A09_15/241",
-            "note": "Read publisher PDF pp.17–25, methods and Tables 1–2. Publisher landing page and PDF date this September 2017, unlike the local 2019 citation. Comparative concentration and transfer rankings differ by metal; no clinical outcomes measured."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Read publisher PDF pp.17–25, methods and Tables 1–2. Publisher landing page and PDF date this September 2017, unlike the local 2019 citation. Comparative concentration and transfer rankings differ by metal; no clinical outcomes measured."
           }
         ]
       }
+    },
+    "6": {
+      "citation": "Ayers RS, Westcot DW. Water Quality for Agriculture. FAO Irrigation and Drainage Paper 29 Rev. 1. Rome: Food and Agriculture Organization; 1985, reprinted 1994. Sections 5.5.1–5.5.3 and Table 21. Grouped with Codex Alimentarius Commission. General Standard for Contaminants and Toxins in Food and Feed, CXS 193-1995, amended 2025; cadmium and lead commodity schedules. These identified texts explicitly replace the former unspecified WHO/FAO label.",
+      "summary": "FAO provides recommended long-term trace-element concentrations for irrigation water, considering accumulation and crop toxicity. Codex provides commodity-specific contaminant maximum levels for food and feed, including cadmium and lead in leafy vegetables. They address different media and uses.",
+      "establishes": "FAO Table 21 recommends lead at 5.0 mg/L, not 0.5 mg/L; its other entries include cadmium 0.01, chromium 0.10 and nickel 0.20 mg/L, with irrigation-rate qualifications. Codex lists leafy-vegetable cadmium at 0.2 mg/kg and lead at 0.3 mg/kg, excluding spinach from that lead category. The specified commodity is assessed as usually marketed after removing decomposed or withered leaves, not on a generic dry-weight basis. The reviewed Codex schedule does not supply the cited 2.3 mg/kg total-chromium food limit. Neither text alone establishes domestic legal applicability.",
+      "relevance": "The replacement clarifies why the papers’ selected comparison values cannot be labeled current WHO/FAO legal limits or directly applied to dried plant results. HMTc needs the correct water-versus-food matrix, commodity, concentration basis and jurisdiction; these documents do not establish the program’s strictest-government rule or its own testing schedule.",
+      "links": [
+        {
+          "label": "Read FAO irrigation-water guidance and Table 21",
+          "href": "https://www.fao.org/4/t0234e/T0234E06.htm"
+        },
+        {
+          "label": "Read Codex contaminant standard (2025)",
+          "href": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ro/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+        }
+      ],
+      "kind": "Guidance and standard",
+      "review": {
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://www.fao.org/4/t0234e/T0234E06.htm",
+            "note": "Fresh targeted read of official FAO chapter 5, sections 5.5.1–5.5.3, Table 21 and footnotes. Table labels lead (with an apparent Pd symbol typo) at 5.0 mg/L; Cd 0.01, Cr 0.10, Ni 0.20. Recommended maxima are long-term average continuous-use concentrations at one site based on 10,000 cubic metres/ha/year, with downward adjustment for higher application volumes. These are irrigation guidance, not food maximum levels."
+          },
+          {
+            "url": "https://www.fao.org/4/t0234e/t0234e00.htm",
+            "note": "Read official title/frontmatter for authors, FAO Irrigation and Drainage Paper 29 Rev. 1, 1985 publication and 1989/1994 reprints. The linked online text identifies the 1994 reprint. No review of every chapter is claimed."
+          },
+          {
+            "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ro/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf",
+            "note": "Fresh targeted read of the official 86-page PDF: cover amendment history through 2025; scope and maximum-level definition; cadmium schedule printed p.58 (PDF page 58), leafy vegetables 0.2 mg/kg; lead schedule printed p.62 (PDF page 62), leafy vegetables 0.3 mg/kg including leafy Brassica but excluding spinach; commodity-as-marketed portion notes. Checked contaminant schedule for absence of the claimed total-chromium 2.3 mg/kg food entry. International Codex recommendations are not silently treated as automatically binding domestic law. This is a targeted text review, not a claim to have reviewed every scheduled commodity."
+          }
+        ]
+      },
+      "referenceTitle": "FAO Water Quality for Agriculture, Table 21; Codex General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995)",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
+      "sourceDigest": "ddeeb1f8bfa46d5f2242777ec512847d40abdf72328462ddaacf19346c69ca7e"
     },
     "7": {
       "referenceTitle": "Heavy Metal Index — wastewater-irrigation multi-metal crop pathway (synthesis with full anchor-source records)",
@@ -138,22 +176,22 @@
       "citation": "Pendergrass, Karen. Wastewater and sewage-effluent irrigation is a single upstream pathway that co-elevates multiple metals in the same crop, concentrating in leafy greens on peri-urban plots across the Global South. Heavy Metal Index, updated 27 July 2026. Preprint synthesis; doi:10.83376/hmi.wastewater-irrigation-multimetal-crop-pathway.",
       "summary": "The synthesis connects five sources on irrigation-related crop contamination, including a lead meta-analysis, field surveys and a controlled arsenic-irrigation experiment.",
       "establishes": "It is an author’s interpretation, with no external review recorded on the examined page. The arsenic experiment models geogenic groundwater rather than sewage, and the evidence does not uniformly isolate irrigation from other inputs.",
-      "relevance": "It maps the studies behind this article’s broader testing argument. HMTc’s panel and surveillance schedule remain program decisions; a separate Index page with shared authorship is not independent corroboration.",
+      "relevance": "The synthesis maps the studies behind the article’s broader testing argument. Its shared authorship does not provide independent corroboration. The revised article checks benchmark identity and concentration basis against separately identified FAO/Codex documents; HMTc’s panel and surveillance schedule remain program decisions.",
       "links": [
         {
           "label": "Read the synthesis",
           "href": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway"
         }
       ],
-      "pageDigest": "177f8e3d1551f813de223f9395c8962040f44899f4eb2b633b586545b6a2077a",
+      "pageDigest": "e3376b9ba12ff4e9e48d94da7362f10e849951e540e4b1887d20ab9297e6dd0f",
       "sourceDigest": "8cc710db17d62886550d3b9efa59690a4f9595cd8e431d8650507f8642057d8a",
       "review": {
-        "reviewer": "Codex, primary-source review with reused source research and new page-context assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex science citation repair; primary-source review and page reassessment",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://heavymetalindex.com/synthesis/wastewater-irrigation-multimetal-crop-pathway",
-            "note": "Reused direct synthesis review of overview, five source sections, uncertainty and peer-review status. All five anchor studies are now separately reviewed for this article. Geogenic arsenic is not sewage exposure; common authorship prevents independent corroboration."
+            "note": "Retained primary-source reading documented on 2026-09-15; page relevance reassessed against the revised 2026-09-16 article. Prior review: Reused direct synthesis review of overview, five source sections, uncertainty and peer-review status. All five anchor studies are now separately reviewed for this article. Geogenic arsenic is not sewage exposure; common authorship prevents independent corroboration."
           }
         ]
       }

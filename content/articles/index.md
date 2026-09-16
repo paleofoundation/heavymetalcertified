@@ -167,7 +167,7 @@ Analysis from the certification program, grounded in the independent evidence ba
     <a href="/articles/bivalve-cadmium-amplification" style="display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:22px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why Mussels and Oysters Need a Different Cadmium Limit Than Fish</span>
-        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Bivalves carry cadmium at 10 to 100 times the level of fish muscle because filter feeding concentrates it. That is why a single seafood cadmium limit fails and shellfish need their own ceiling.</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Cadmium measurements in shellfish need species and edible-tissue context. Mussel uptake and elimination studies and EU food categories explain why fish-muscle results cannot stand in for bivalve testing.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;text-align:right">Cadmium &middot; Lead</span>
     </a>

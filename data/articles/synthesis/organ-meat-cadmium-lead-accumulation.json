@@ -4,7 +4,11 @@
   "description": "Liver and kidney concentrate cadmium far above skeletal muscle, so offal is a distinct exposure pathway. Muscle-meat data cannot set a safe organ-meat limit.",
   "dek": "Cadmium is stored in the _liver_ and _kidney_ across an animal's lifetime, so offal carries a heavier cadmium load than muscle-meat surveillance ever records.",
   "claim": "Because the liver and kidney store cadmium across an animal's lifetime, offal carries cadmium &mdash; and, in some supply chains, lead &mdash; well above skeletal muscle, so muscle-meat surveillance cannot bound an organ-meat product, and offal has to be certified against its own cadmium and lead ceilings.",
-  "metals": ["Cadmium", "Lead", "Mercury"],
+  "metals": [
+    "Cadmium",
+    "Lead",
+    "Mercury"
+  ],
   "section": "Analysis",
   "date": "August 2026",
   "published": "2026-08-10",
@@ -52,7 +56,7 @@
     },
     {
       "h2": "Muscle Surveillance Cannot Bound Offal",
-      "body": "National residue-monitoring programmes and most published meat surveys report muscle values, because muscle is the dominant edible fraction by mass. Offal enters these datasets inconsistently: liver appears in veterinary and environmental monitoring but is under-represented in retail food-safety surveys relative to how often it is eaten, and kidney, gizzard, heart, and brain are rarer still. The tissue with the higher cadmium concentration is thus the tissue least likely to appear in a routine surveillance stream.\n\nThe regulatory architecture partly acknowledges this: maximum levels for cadmium and lead in liver and kidney are set separately from, and looser than, the muscle limits, precisely because the offal baseline is understood to be higher.<sup class=\"cite\"><a href=\"#ref-7\">7</a></sup> But a looser category-specific limit is not the same as characterisation, and it can be actively misleading. In the bovine survey no liver or kidney sample exceeded its cadmium limit (0.50 mg/kg for liver, 1.0 mg/kg for kidney), while 22.9 percent of muscle samples exceeded the tighter 0.05 mg/kg muscle limit — so limit-compliance data on offal can read as reassuring even though absolute cadmium per gram is higher.<sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>\n\nA formulator who applies a muscle occurrence value to an offal-containing product — liverwurst, pâté, mixed-organ purées, or blended [mixed-meal](/standards/mixed-meals) meat products — inherits the muscle distribution rather than the offal distribution and understates cadmium exposure by roughly two to two-and-a-half times at the mean. Using the bovine means, a 100 g serving of kidney carries about 7.3 µg of cadmium and a serving of liver about 5.6 µg, against about 3.0 µg for muscle.<sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>"
+      "body": "National residue-monitoring programmes and most published meat surveys report muscle values, because muscle is the dominant edible fraction by mass. Offal enters these datasets inconsistently: liver appears in veterinary and environmental monitoring but is under-represented in retail food-safety surveys relative to how often it is eaten, and kidney, gizzard, heart, and brain are rarer still. The tissue with the higher cadmium concentration is thus the tissue least likely to appear in a routine surveillance stream.\n\nEU Regulation 2023/915 distinguishes tissue and species. On a wet-weight basis, cadmium maxima are 0.050 mg/kg for bovine, sheep, pig and poultry meat excluding offal, 0.50 mg/kg for liver and 1.0 mg/kg for kidney of the listed species. Lead limits do not follow one universal offal multiplier: bovine and sheep offal have a 0.20 mg/kg maximum, pig offal 0.15 mg/kg and poultry offal 0.10 mg/kg; the listed muscle meats also have a 0.10 mg/kg maximum. These are legal food-category limits, not measurements of physiological accumulation.<sup class=\"cite\"><a href=\"#ref-7\">7</a></sup> A category-specific limit is not the same as characterisation. In the bovine survey no liver or kidney sample exceeded its cadmium limit (0.50 mg/kg for liver, 1.0 mg/kg for kidney), while 22.9 percent of muscle samples exceeded the tighter 0.05 mg/kg muscle limit — so limit-compliance data on offal can read as reassuring even though absolute cadmium per gram is higher.<sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>\n\nA formulator who applies a muscle occurrence value to an offal-containing product — liverwurst, pâté, mixed-organ purées, or blended [mixed-meal](/standards/mixed-meals) meat products — inherits the muscle distribution rather than the offal distribution and understates cadmium exposure by roughly two to two-and-a-half times at the mean. Using the bovine means, a 100 g serving of kidney carries about 7.3 µg of cadmium and a serving of liver about 5.6 µg, against about 3.0 µg for muscle.<sup class=\"cite\"><a href=\"#ref-1\">1</a></sup>"
     },
     {
       "h2": "What this means for certification",
@@ -171,9 +175,11 @@
     },
     {
       "n": 7,
-      "title": "Category-Specific Maximum Levels for Cadmium and Lead in Edible Offal",
-      "meta": "Category-specific maximum levels set cadmium and lead ceilings for liver and kidney separately from, and looser than, the muscle limits, on the understanding that the offal baseline is higher.",
-      "type": "Standard"
+      "title": "Commission Regulation (EU) 2023/915: lead and cadmium maximum levels for meat and offal",
+      "meta": "European Commission. Consolidated 19 August 2026, Annex I, entries 3.1.13–3.1.14 and 3.2.13. Species- and tissue-specific wet-weight maxima; poultry offal and muscle share the same lead maximum. Explicit replacement of the unidentified generic offal-standard citation.",
+      "type": "Legislation",
+      "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02023R0915-20260819",
+      "official": true
     },
     {
       "n": 8,
@@ -182,5 +188,6 @@
       "type": "Reference",
       "href": "https://heavymetalindex.com/synthesis/organ-meat-cadmium-lead-accumulation"
     }
-  ]
+  ],
+  "modified": "2026-09-16"
 }

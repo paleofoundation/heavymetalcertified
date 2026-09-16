@@ -1,0 +1,156 @@
+{
+  "page": "briefings/heavy-metals-in-pet-food",
+  "reviewed": "2026-09-15",
+  "refs": {
+    "1": {
+      "referenceTitle": "Lead concentrations in commercial dogfood containing pheasant in the UK",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "b5a559b6cdbcdc697075d555529dbd28a76d51f9bf0935222b2c180d88703ad6",
+      "citation": "Pain DJ, Green RE, Bates N, Guiu M, Taggart MA. Ambio. 2023;52:1339–1349. Published 3 May 2023. doi:10.1007/s13280-023-01856-x.",
+      "summary": "The UK study tested 185 packages across eight game-meat and chicken dog-food products using X-rays and ICP-OES. Raw pheasant products had highly variable lead; the weighted mean after excluding known whole-shot samples was about 221 mg/kg dry weight.",
+      "establishes": "The 34-fold comparison is with pheasant sold for human consumption, not background contamination. The three raw-product exceedance rates of 63–100% concern applicable feed maxima. This retail study did not test health outcomes or all raw diets.",
+      "relevance": "It supports ingredient-specific testing of game-based pet food. Human-food comparisons need the correct matrix, moisture basis and legal scope; neither a comparison nor certification demonstrates veterinary benefit.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10272007/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10272007/",
+            "note": "Read full primary article, particularly sampling, digestion, Table 1 and shot-free comparison. Editorial: the page misidentifies the 34-fold comparator and feed exceedance benchmark. The 69% human-pheasant result uses the domesticated-meat comparator, which is not a binding game-meat limit. Radio-dense particles were not all chemically identified as lead; mincing as a cause was proposed, not experimentally isolated."
+          }
+        ]
+      }
+    },
+    "2": {
+      "referenceTitle": "Individual and combined contamination of the toxic metals in commercial cat and dog food",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "9991d51153cc812aa24a88aa2b133100f13d27f80d286fff1469f60c4bcc0125",
+      "citation": "Du J, Zhou K, Jiang H, Hu S, Zhang W, Zheng Q, Zhou G, Zhang N. Scientific Reports. 2025;15:13237. Published 17 April 2025. doi:10.1038/s41598-025-98066-0.",
+      "summary": "This survey tested 93 imported products produced in 2021–2022 and purchased in three Chinese cities: 45 cat foods and 48 dog foods. Atomic absorption and fluorescence assays measured five total metals. Chromium and arsenic were detected in every sample; detection frequencies differed for the others.",
+      "establishes": "Cat-food lead and cadmium means were higher among positive samples. The hazard indices used maximum concentrations and human toxicological reference values because pet-specific values were unavailable; they are modeling results, not observed illness or species-specific risk thresholds.",
+      "relevance": "The study supports measuring multiple metals, with detection limits and chemical species stated. Its cited Chinese limits are the authors’ regulatory comparison, not an independently verified current legal instrument. It does not establish a universal lower human-fish mercury limit.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12006530/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12006530/",
+            "note": "Read final published paper, methods, Tables 1–5 and exposure-model assumptions. Editorial: all five were assayed, not detected in every food; lead/cadmium averages exclude negatives. Total chromium and arsenic measurements cannot establish oxidation state or inorganic fraction. The paper’s acute-index terminology and borrowed reference doses require caution; Chinese source legislation was not separately reviewed."
+          }
+        ]
+      }
+    },
+    "3": {
+      "referenceTitle": "Pet food safety at risk? Investigating toxic metal contamination in Lebanon and the UAE",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "03082eebfa55fbb76e92749a6ccab916f43151d410dae50827a602f039af0a1b",
+      "citation": "Haydous F, Hassan HF, Shehab A, Alwan N, Serhan M, Dimassi H, Akoury E. RSC Advances. 2025;15:22629–22640. Published 2 July 2025. doi:10.1039/d5ra02790j.",
+      "summary": "The authors screened 196 commercial products in Lebanon and the UAE in fall 2021, comprising 147 cat and 49 dog foods. ICP-MS measured nine elements. Table 6 reports mean cadmium of 0.251 mg/kg in cat food and 0.112 mg/kg in dog food.",
+      "establishes": "These are product-group observations, not an ingredient-controlled experiment or clinical study. The study’s threshold comparisons combine disparate reference values and do not independently establish violations of binding pet-feed limits.",
+      "relevance": "It supports regional surveillance and reporting product format and intended animal. Marine or organ ingredients as the cause of the cadmium difference remain a hypothesis. Human-meat maxima are comparators, not automatically applicable limits for compound pet foods.",
+      "links": [
+        {
+          "label": "Full study",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219634/"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219634/",
+            "note": "Read methods, product counts, Tables 3–7 and discussion. Editorial: Table 7 uses cadmium 0.1 mg/kg as an EU comparator, unlike the reviewed complete-pet-feed limit of 2 mg/kg. Its mercury summaries also differ markedly from individual-product values; no mercury estimate is adopted here. Regulatory exceedance language is attributed to the authors rather than treated as verified law."
+          }
+        ]
+      }
+    },
+    "4": {
+      "referenceTitle": "Evaluation of selected ultra-trace minerals in commercially available dry dog foods",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "15d9239d0d782a084124243c565b0276f19853894f18649b5cf3722cc8e11020",
+      "citation": "Kim HT, Loftus JP, Gagné JW, Rutzke MA, Glahn RP, Wakshlag JJ. Veterinary Medicine: Research and Reports. 2018;9:43–51. Published 26 June 2018. doi:10.2147/VMRR.S165890.",
+      "summary": "The authors measured chromium, nickel, molybdenum, silica and aluminum in 49 maintenance dry dog foods bought around Ithaca, New York, using ICP-AES. Estimated intake per 1,000 kcal exceeded average human intake for aluminum, chromium and molybdenum.",
+      "establishes": "Average human intake is not a toxicity threshold. The authors found no evidence of potential chronic toxic exposure under their extrapolated intake comparisons, while calling for bioavailability research and dog-specific allowances. This was not a feeding trial.",
+      "relevance": "The paper supports examining additional elements and expressing exposure on a defined intake basis. It does not demonstrate harm from these foods or validate human concentration limits as optimal pet standards. Its 2018 description of missing standards is not a current legal survey.",
+      "links": [
+        {
+          "label": "Full publisher article",
+          "href": "https://www.dovepress.com/evaluation-of-selected-ultra-trace-minerals-in-commercially-available--peer-reviewed-fulltext-article-VMRR"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://www.dovepress.com/evaluation-of-selected-ultra-trace-minerals-in-commercially-available--peer-reviewed-fulltext-article-VMRR",
+            "note": "Read abstract, sampling and analytical methods, results, discussion and conclusion. Editorial: the page omits the authors’ reassuring modeled-toxicity finding when emphasizing higher human-relative intake. Ingredient and metabolic explanations were not experimentally resolved. NRC recommendations should not be described as legislation, and total chromium measurement does not identify chromium(VI)."
+          }
+        ]
+      }
+    },
+    "5": {
+      "referenceTitle": "Chemical Composition and Palatability of Nutraceutical Dog Snacks",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "1ba5eae1e4f50e0bba0e91b8984c37a533976a969c7a587cf1ee975b26db3439",
+      "citation": "Kępińska-Pacelik J, Biel W, Mizielińska M, Iwański R. Applied Sciences. 2023;13(5):2806. Published 22 February 2023. doi:10.3390/app13052806.",
+      "summary": "This formulation experiment assessed four self-produced dog-snack prototypes, two extruded and two baked, including chemical composition and palatability. Table 5 reports cadmium, lead, chromium and nickel as not detected in all four snacks.",
+      "establishes": "The experiment does not establish contamination prevalence in retail treats. Nondetection is bounded by analytical sensitivity and does not mean absolute absence; analyte-specific detection limits were not found in the reviewed methods. Palatability does not establish long-term health benefit.",
+      "relevance": "The paper illustrates that treats can be included in analytical assessment, but directly contradicts the page’s claim that these finished snacks carried detected cadmium, lead, chromium and nickel. It offers no validation of a certification program.",
+      "links": [
+        {
+          "label": "Full publisher PDF",
+          "href": "https://mdpi-res.com/d_attachment/applsci/applsci-13-02806/article_deploy/applsci-13-02806.pdf"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://mdpi-res.com/d_attachment/applsci/applsci-13-02806/article_deploy/applsci-13-02806.pdf",
+            "note": "Read abstract, formulation and mineral methods, results and Table 5; visually checked PDF page 7 to confirm every Cd/Pb/Cr/Ni entry is “nd.” Editorial: these were laboratory-made extruded and baked prototypes, not a retail-market survey or a comparison with dried treats. The page’s positive-contamination characterization needs correction."
+          }
+        ]
+      }
+    },
+    "6": {
+      "referenceTitle": "Directive 2002/32/EC on undesirable substances in animal feed",
+      "pageDigest": "ad1c8bed419e92b3cc96f76d7df416f9328e8075789f3204130926b94f047a30",
+      "sourceDigest": "fd12f1afddc9546d38762c8a53b809061a8f635e768dd87b1e7220ffae11248e",
+      "citation": "European Parliament and Council. Directive 2002/32/EC of 7 May 2002 on undesirable substances in animal feed. OJ L 140, 30 May 2002, p. 10. Consolidated text dated 28 November 2019.",
+      "summary": "Annex I sets maxima on a 12%-moisture basis: complete-feed lead 5 mg/kg; complete-pet-feed cadmium 2 mg/kg; total arsenic generally 2 mg/kg, but 10 mg/kg for specified marine-containing pet feeds. Compound feed for dogs and cats has a total-mercury maximum of 0.3 mg/kg.",
+      "establishes": "The marine arsenic exception requires operators, on authority request, to demonstrate inorganic arsenic below 2 mg/kg. Articles 3–6 include general health protection, source investigation and a ban on dilution of noncompliant feed. Complementary-feed rules differ.",
+      "relevance": "This establishes feed-specific comparators, not human-food legality or veterinary safety of every concentration below a maximum. The page’s universal 2 mg/kg pet-feed arsenic statement omits an exception relevant to fish and seaweed ingredients.",
+      "links": [
+        {
+          "label": "Official consolidated directive",
+          "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02002L0032-20191128"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex, primary-source and page-context review",
+        "date": "2026-09-15",
+        "evidence": [
+          {
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02002L0032-20191128",
+            "note": "Read version header, Articles 2–7 and Annex I Section I arsenic/cadmium/lead/mercury rows and footnotes, PDF pages 3–5 and 9–14. Official PDF obtained after browser challenge. Consolidation is a documentation aid; binding acts are the original directive and amendments. Editorial: numeric omissions do not remove Article 3’s general health requirement; human/animal comparisons require moisture and category alignment."
+          }
+        ]
+      }
+    }
+  }
+}

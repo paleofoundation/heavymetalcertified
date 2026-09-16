@@ -1,15 +1,15 @@
 {
   "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
-  "reviewed": "2026-09-15",
+  "reviewed": "2026-09-16",
   "refs": {
     "1": {
       "referenceTitle": "FDA Human Foods Program 2026 priority deliverables",
-      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
       "sourceDigest": "90bd3b9f83610dedfa56cb5f621ea7f0d8a1ceca650a1a59f95fffd5661ef3b2",
       "citation": "U.S. Food and Drug Administration. Human Foods Program 2026 Priority Deliverables. 2026 program work plan; accessed September 15, 2026.",
       "summary": "FDA identifies work toward cadmium and inorganic-arsenic action levels for baby and toddler foods, alongside chemical-hazard guidance, surveillance and infant-formula initiatives.",
       "establishes": "The page establishes planned agency work. It does not itself adopt numeric limits, establish a completion date or determine the legal effect of a future instrument.",
-      "relevance": "This supports the article’s separation of policy plans from operative state duties. HMTc should review an issued instrument before treating a planned action level as a standard input.",
+      "relevance": "The work plan remains evidence of planned agency activity, separate from the newly clarified Vermont commencement date. The HMI replacement is background and does not upgrade planned action levels into operative limits.",
       "links": [
         {
           "label": "FDA2026 priorities",
@@ -17,12 +17,16 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
             "note": "Read introduction, Food Chemical Safety/Closer to Zero and Infant Formula Safety priorities. Scope is the work plan, not a comprehensive verification that no subsequent instrument exists. The federal guidance/adulteration and preemption propositions require their own underlying instruments; this plan alone does not establish them."
+          },
+          {
+            "url": "https://www.fda.gov/about-fda/human-foods-program/human-foods-program-2026-priority-deliverables",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The work plan remains evidence of planned agency activity, separate from the newly clarified Vermont commencement date. The HMI replacement is background and does not upgrade planned action levels into operative limits."
           }
         ]
       },
@@ -30,12 +34,12 @@
     },
     "2": {
       "referenceTitle": "Virginia Code section 3.2-5125.1, Baby Food Protection Act",
-      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
       "sourceDigest": "6529d60ae250d6ac3fc54ff9b7de9dd8d406a17230eca47616c2c627f94a6a2a",
       "citation": "Virginia Code §3.2-5125.1, Baby Food Protection Act; 2025 Virginia Acts chapter 693 (HB1844), approved May 2, 2025; substantive provisions effective January 1, 2026.",
       "summary": "The law covers specified packaged foods sold for children under two and excludes infant formula. It requires representative production-aggregate testing at least monthly, qualified laboratories, public results for shelf life plus one month, and conditional package QR disclosures.",
       "establishes": "It also restricts sales above FDA-established limits, preserving certain retailer inventory from before January 2026. The text supplies state duties, not a new numerical table for every metal or automatic certification compliance.",
-      "relevance": "HMTc evidence must map the product definition, four listed metals, sample identity, laboratory requirements and disclosure trigger. A passing certification result alone does not discharge these operational duties.",
+      "relevance": "Virginia’s own product definition and operational duties remain necessary to the article’s state-specific register. The clarified Vermont formula trigger does not change Virginia’s exclusion of formula.",
       "links": [
         {
           "label": "Virginia code provision",
@@ -47,8 +51,8 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
@@ -57,6 +61,10 @@
           {
             "url": "https://lis.blob.core.windows.net/files/1079923.PDF",
             "note": "Read both pages of official chapter 693, matched title/HB1844 and approvalMay2, 2025. Enactment2 specifies January 1, 2026 for first-enactment provisions; §B preserves retailer inventory already in stock before that date. Separate work-group clause is not a product limit."
+          },
+          {
+            "url": "https://law.lis.virginia.gov/vacodeupdates/title3.2/section3.2-5125.1/",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. Virginia’s own product definition and operational duties remain necessary to the article’s state-specific register. The clarified Vermont formula trigger does not change Virginia’s exclusion of formula."
           }
         ]
       },
@@ -64,12 +72,12 @@
     },
     "3": {
       "referenceTitle": "Illinois SB0073 bill status and Public Act record",
-      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
       "sourceDigest": "de5399694a413e00675be20cf85548318d01a146b65a6fa2b759760e2cbffc85",
       "citation": "Illinois Public Act 104-0345 (SB0073), codified at 410 ILCS 620/11.7, Baby foods; toxic elements. Effective January 1, 2026; consumer disclosure begins January 1, 2027.",
       "summary": "The enacted section requires representative testing of every production aggregate at least monthly by a proficient laboratory. It covers packaged foods for children under two, excludes formula, and sets later website and conditional QR-label disclosure duties.",
       "establishes": "The sale restriction enforces compliance with this section; the final text does not reproduce the introduced bill’s blanket FDA-limit sale prohibition. January 2026 effectiveness must be separated from January 2027 disclosure.",
-      "relevance": "This supports the article’s state-specific evidence matrix. HMTc should preserve lot results and laboratory qualifications while scheduling the Illinois disclosure requirement separately.",
+      "relevance": "Illinois’s testing and later disclosure dates remain separate from Vermont’s January2027 commencement. Certification evidence must preserve each jurisdiction’s scope and timing.",
       "links": [
         {
           "label": "Current Illinois statutory text",
@@ -77,25 +85,63 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://ilga.gov/legislation/ilcs/fulltext?DocName=041006200K11.7",
             "note": "Read all of410 ILCS620/11.7(a)–(f) and source note identifying Public Act104-345 effective1-1-26. Source text includes four elements, ISO 17025:2017, EAM 4.7 sensitivity, proficiency z-score and sixµg/kg requirement, shelf life plus one month, and §e’s1-1-27 start. Original bill-status endpoint and enactedPDF retrieval failed; this is the exact enacted section with a Public Act source note, explicitly used instead. No claim that the inaccessible status page was read."
+          },
+          {
+            "url": "https://ilga.gov/legislation/ilcs/fulltext?DocName=041006200K11.7",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. Illinois’s testing and later disclosure dates remain separate from Vermont’s January2027 commencement. Certification evidence must preserve each jurisdiction’s scope and timing."
           }
         ]
       },
       "kind": "Law"
     },
+    "4": {
+      "referenceTitle": "Vermont H.536 / Act 110 status",
+      "citation": "Vermont General Assembly. 2026 Act No.110 (H.536), An act relating to toxic heavy metals in baby food products. Signed May26,2026; enacted text, §§1–4.",
+      "summary": "Act110 creates baby-food testing, disclosure and sale provisions beginning January1,2027. The initial definition excludes formula; a later amendment adds it after a specified Attorney General confirmation.",
+      "establishes": "Formula inclusion depends on comparable laws taking effect elsewhere and written confirmation; supply shortages can trigger suspension. The act specifies laboratory and testing duties without publishing a new metal-limit table.",
+      "relevance": "The article must distinguish enactment, commencement and conditional product scope. A formula SKU cannot be mapped using the initial baby-food definition alone.",
+      "links": [
+        {
+          "label": "Enacted Act110",
+          "href": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT110/ACT110%20As%20Enacted.pdf"
+        },
+        {
+          "label": "Official bill and act status",
+          "href": "https://legislature.vermont.gov/bill/status/2026/H.536"
+        }
+      ],
+      "kind": "Enacted law with staged commencement",
+      "review": {
+        "reviewer": "Codex primary-law recovery and page-context review",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://legislature.vermont.gov/Documents/2026/Docs/ACTS/ACT110/ACT110%20As%20Enacted.pdf",
+            "note": "Read all7pages. §1 defines products, four metals, proficient laboratory, monthly aggregate sampling and public/conditional QR disclosure. §§2–4 govern formula inclusion, supply-related suspension, inventory and effective dates. §4(b) requires written AG confirmation concerning California or two other states. No claim was made that that future trigger has occurred. Retrieved by following status-page AsEnacted link after direct502."
+          },
+          {
+            "url": "https://legislature.vermont.gov/bill/status/2026/H.536",
+            "note": "Read title, Act110 designation and May26,2026 approval action; followed AsEnacted to the complete statute. Earlier unresolved report retained as historical access record."
+          }
+        ]
+      },
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
+      "sourceDigest": "404cdbe8498620024872a3eb5ee6f12a0d8edfc04b23f46317beab63df1e9068"
+    },
     "5": {
       "referenceTitle": "FDA infant-formula product testing results",
-      "pageDigest": "40001a80519dd214611dc73cd1fe0c5beeb3fbb7246c94fa35fd17f90778a245",
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
       "sourceDigest": "4bb04464829818eaa1368284e82e29a5cf9da9475212f472b1d266fca4c4a9f4",
       "citation": "U.S. Food and Drug Administration. FDA’s Infant Formula Product Testing Results. 2026 release reporting the FY2023–2025 market-basket survey; accessed September 15, 2026.",
       "summary": "FDA reports 312 samples across 16 brands, including powder and liquid formula. The page summarizes metals and other contaminants, expresses metal results as prepared for feeding, and describes follow-up testing.",
       "establishes": "This is occurrence monitoring, not a new legal limit. FDA cautions that a retail snapshot cannot capture all variability among production lots and that detection alone does not establish an unsafe product.",
-      "relevance": "The source supports the article’s evidence-versus-law distinction. HMTc can use it for surveillance context while retaining separate lot-specific testing and jurisdictional requirements.",
+      "relevance": "The FDA survey remains occurrence evidence, not a limit or state compliance assessment. Vermont’s staged formula scope and the HMI overview replacement do not change that distinction.",
       "links": [
         {
           "label": "FDA formula results and survey explanation",
@@ -103,16 +149,58 @@
         }
       ],
       "review": {
-        "reviewer": "Codex primary-source review; official text read and page-specific legal-status assessment",
-        "date": "2026-09-15",
+        "reviewer": "Codex page-context revalidation, retaining the documented prior primary-source review",
+        "date": "2026-09-16",
         "evidence": [
           {
             "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
             "note": "Read introduction, Market Basket Survey, Understanding the Results, Testing Methods and2023–2025 results summary including metals. FDA calls this its largest examination; that is the agency’s characterization. Arsenic speciation was performed on a subset. No row-level audit of linked spreadsheets or universal safety certification was performed; links to those unreviewed files are omitted."
+          },
+          {
+            "url": "https://www.fda.gov/food/infant-formula-homepage/fdas-infant-formula-product-testing-results",
+            "note": "September16,2026 context revalidation: reread the full affected briefing/article and the retained September15 source record. Reassessed relevance for the explicit citation repair and associated legal/filing/scope corrections. Prior source evidence, access limitations and unresolved scientific/editorial qualifications remain in the preceding notes; this is not a claim that every source was newly retrieved. The FDA survey remains occurrence evidence, not a limit or state compliance assessment. Vermont’s staged formula scope and the HMI overview replacement do not change that distinction."
           }
         ]
       },
       "kind": "Government monitoring"
+    },
+    "6": {
+      "referenceTitle": "Heavy Metal Index — FDA Closer to Zero: Program Overview",
+      "citation": "Institute of Contaminant Standards. FDA Closer to Zero — Program Overview. Heavy Metal Index. Page dated May2,2026; accessed September16,2026. Explicit replacement for the unavailable United States infant-food contaminant controls page.",
+      "summary": "This secondary overview links selected federal lead-action-level records and describes FDA’s iterative program. It identifies incomplete ingestion of other guidance and jurisdictional comparisons.",
+      "establishes": "It is a navigation and synthesis resource, not an enacted law or a complete state/formula compliance register. Its narrow Scope section must not be generalized to all FDA contaminant work.",
+      "relevance": "The article now cites it only for federal background. State duties and product definitions remain grounded in official laws, with no automatic HMTc threshold change.",
+      "links": [
+        {
+          "label": "HMI Closer to Zero overview",
+          "href": "https://heavymetalindex.com/regulations/fda-closer-to-zero"
+        },
+        {
+          "label": "FDA primary program explanation",
+          "href": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods"
+        }
+      ],
+      "kind": "Secondary regulatory overview",
+      "review": {
+        "reviewer": "Codex publisher-page review with independent primary-source check",
+        "date": "2026-09-16",
+        "evidence": [
+          {
+            "url": "https://heavymetalindex.com/regulations/fda-closer-to-zero",
+            "note": "Read overview, scope, ingested-rules list, history, comparison limitations, attribution and footer. Located through actual HMI homepage link. This is a distinct, narrower page, not an asserted redirect or recovery of the missing source. Its author/operator are associated with HMTc; no independent institutional validation is inferred."
+          },
+          {
+            "url": "https://www.fda.gov/food/environmental-contaminants-food/closer-zero-reducing-childhood-exposure-contaminants-foods",
+            "note": "Read About, Understanding the FDA Approach, action-level explanation, staged process and enforcement discussion. FDA states action levels inform adulteration/enforcement and do not create permissible contamination. This primary check supports the limited federal-background use; no complete later-guidance census was performed."
+          },
+          {
+            "url": "https://heavymetalindex.com/regulations/us-infant-food-contaminants",
+            "note": "Original cited page remained unavailable. Earlier direct404 and current failed web retrieval are retained in the unresolved history; replacement is documented in bibliography, connections and source-panel citation."
+          }
+        ]
+      },
+      "pageDigest": "d18d372d3c989eb5075dcb4f9f6726308ab62147742b7111da74480c66915beb",
+      "sourceDigest": "ca26c86552d8be2186ff4154beec8da0c2b6b3231850d9e018dd7d717873d0e4"
     }
   }
 }

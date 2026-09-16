@@ -1,0 +1,57 @@
+{
+  "count": 10,
+  "generatedCorpusPdfs": 54,
+  "tableRowsPreserved": true,
+  "repairedPages": [
+    {
+      "page": "articles/bivalve-cadmium-amplification",
+      "bytes": 205859,
+      "pdf": "public/articles/bivalve-cadmium-amplification.pdf"
+    },
+    {
+      "page": "articles/organ-meat-cadmium-lead-accumulation",
+      "bytes": 223254,
+      "pdf": "public/articles/organ-meat-cadmium-lead-accumulation.pdf"
+    },
+    {
+      "page": "articles/us-baby-food-heavy-metal-laws-states-fda",
+      "bytes": 199613,
+      "pdf": "public/articles/us-baby-food-heavy-metal-laws-states-fda.pdf"
+    },
+    {
+      "page": "articles/wastewater-irrigation-multimetal-crop-pathway",
+      "bytes": 246591,
+      "pdf": "public/articles/wastewater-irrigation-multimetal-crop-pathway.pdf"
+    },
+    {
+      "page": "briefings/after-palmquist",
+      "bytes": 324443,
+      "pdf": "public/briefings/after-palmquist.pdf"
+    },
+    {
+      "page": "briefings/before-the-meat-label-prints",
+      "bytes": 154905,
+      "pdf": "public/briefings/before-the-meat-label-prints.pdf"
+    },
+    {
+      "page": "briefings/heavy-metals-in-peptides-and-sarms",
+      "bytes": 205329,
+      "pdf": "public/briefings/heavy-metals-in-peptides-and-sarms.pdf"
+    },
+    {
+      "page": "briefings/heavy-metals-in-pet-food",
+      "bytes": 191176,
+      "pdf": "public/briefings/heavy-metals-in-pet-food.pdf"
+    },
+    {
+      "page": "briefings/no-limit-is-not-no-standard",
+      "bytes": 207828,
+      "pdf": "public/briefings/no-limit-is-not-no-standard.pdf"
+    },
+    {
+      "page": "briefings/supplements-child-protective",
+      "bytes": 246652,
+      "pdf": "public/briefings/supplements-child-protective.pdf"
+    }
+  ]
+}
