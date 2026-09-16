@@ -238,7 +238,8 @@ ${occSection}
   <div style="border:1px solid #e8e1db;background:#fffdfb">
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this page</div>
     <div style="padding:14px 15px">
-      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. &ldquo;${subj}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) ${row.vertical.category_name} standard, version ${row.standard_version}. Institute of Contaminant Standards (ICS), 2026.</p>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 10px">Pendergrass, K. (2026). <em style="font-style:italic">${subj}: HMTc standard</em>${(row.cert_doi && String(row.cert_doi).toLowerCase() !== "null") ? ` (Standard No. ${row.cert_doi}). Institute of Contaminant Standards. <a href="https://doi.org/${row.cert_doi}" style="color:#1c43ad">https://doi.org/${row.cert_doi}</a>` : `. Institute of Contaminant Standards.`}</p>
+      <p style="font-size:11px;line-height:1.6;color:#736b6b;margin:0 0 14px">&copy; 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.</p>
       <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;margin:0">The evidence each limit is applied to lives on the independent <a href="${row.hmi_literature_link}" style="color:#1c43ad">Heavy Metal Index</a>; HMTc cites it one way and never the reverse. HMTc standards are living, versioned documents; this page reflects ${row.standard_version} and superseded versions remain at stable URLs so prior citations resolve. The threshold-setting methodology is described in <a href="/program/structure" style="color:#1c43ad">Program structure</a>.</p>
     </div>
   </div>

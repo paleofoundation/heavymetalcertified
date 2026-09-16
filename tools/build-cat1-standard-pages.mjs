@@ -59,6 +59,25 @@ const ACCENT = "#9f2727", LINK = "#1c43ad"
 const reg = (j) => JUR2REG[j] ? `/regulations/${JUR2REG[j]}` : null
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 
+// Self-heal against the regen-wipe landmine: mint-dois.mjs writes the minted production `cert_doi`
+// into the rendered page's frontmatter, but this generator rewrites that page from cat1-pages.json
+// on every prebuild. If cat1-pages.json has not also been updated, a plain regen would silently
+// erase a live, already-deposited DOI. So the minted cert_doi already on the page is read back as a
+// fallback, and a committed static PDF turns the inline download button on even when page.pdf is
+// unset — the generator reflects committed reality instead of clobbering it. A production DOI only;
+// test/sandbox prefixes are ignored so a non-resolvable DOI can never be re-stamped onto a page.
+const TEST_PREFIXES = ["10.5072", "10.82", "10.84435"]
+function existingCertDoi(slug) {
+  const f = path.join(OUT, `${slug}.md`)
+  if (!fs.existsSync(f)) return null
+  const m = fs.readFileSync(f, "utf8").match(/^cert_doi:\s*"?(10\.\d{4,9}\/[^\s"']+)"?/mi)
+  if (!m) return null
+  return TEST_PREFIXES.some((p) => m[1].startsWith(p)) ? null : m[1]
+}
+function committedPdfHref(slug) {
+  return fs.existsSync(path.join(REPO, "content/static/standards", `${slug}.pdf`)) ? `/static/standards/${slug}.pdf` : null
+}
+
 // --- binding-basis label per cell ---------------------------------------------
 function bindingLabel(cell) {
   if (cell.type === "gov") {
@@ -142,10 +161,12 @@ function citeSection(subName, version, hmiLink, doi) {
   // Crossref). The registration agency lives in the deposit config, not on the
   // public page. Standards are deposited as Crossref posted-content/reports; the
   // already-published Program Manual and Journal articles keep their real Zenodo DOIs.
-  const doiText = doi
-    ? `<a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>`
-    : "DOI: registration pending."
-  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px;max-width:84ch">Pendergrass, K. &ldquo;${esc(subName)}.&rdquo; In Heavy Metal Tested &amp; Certified (HMTc) Infant and Child Foods standard, version ${version}. Institute of Contaminant Standards (ICS), 2026. ${doiText}</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
+  // APA "Standard No." form, network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1):
+  // Standard No. = cert_doi, URL = doi.org only (never the page URL, never "registration pending"),
+  // no licence glued onto the cite line. The licence line is a separate row below.
+  const stdNo = doi ? ` (Standard No. ${doi})` : ""
+  const doiUrl = doi ? ` <a href="https://doi.org/${doi}" style="color:${LINK}">https://doi.org/${doi}</a>` : ""
+  return `<section id="cite" style="margin-bottom:20px"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Cite this standard</h2><p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 10px;max-width:84ch">Pendergrass, K. (2026). <em style="font-style:italic">${esc(subName)}: HMTc standard</em>${stdNo}. Institute of Contaminant Standards.${doiUrl}</p><p style="font-size:11px;line-height:1.6;color:#736b6b;max-width:84ch;margin:0 0 14px">&copy; 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.</p><p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;max-width:84ch;margin:0">The literature baseline for every analyte is maintained independently at the ${hmi}. This certification standard applies those findings; the two are kept editorially separate by design.</p></section>`
 }
 
 // --- drive --------------------------------------------------------------------
@@ -159,11 +180,11 @@ for (const page of PAGES.pages) {
   const basisWord = variants[0].native_basis === "as_sold" ? "as-sold" : "as-consumed"
   const version = page.version || "1.0 (2026-08-06)"
   const vshort = version.split(" ")[0]
-  const pdfHref = page.pdf || null
-  // Real DOI once deposited (Crossref, per the standards' go-forward plan);
-  // set per page in cat1-pages.json when assigned. Flows into both the citation
-  // <meta> (via cert_doi frontmatter → Head.tsx) and the visible cite line.
-  const certDoi = page.cert_doi || null
+  const pdfHref = page.pdf || committedPdfHref(page.slug)
+  // Real DOI once deposited; set per page in cat1-pages.json when assigned, else read back from the
+  // minted page frontmatter (see existingCertDoi above — this is the regen-wipe guard). Flows into
+  // both the citation <meta> (via cert_doi frontmatter → Head.tsx) and the visible cite line.
+  const certDoi = page.cert_doi || existingCertDoi(page.slug) || null
 
   const otherNote = variants.length > 1
     ? `Variants on this page: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the Master Limit Table shows both; the derivation above is for ${variants[0].label}.`

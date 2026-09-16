@@ -24,6 +24,7 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { SPECIES, isTotalsOnlySlug, isFirmClaimCell } from "./lib/claim-surface.mjs"
 
 const REPO = process.cwd()
 const DATA = path.join(REPO, "data/standards")
@@ -58,12 +59,13 @@ for (const f of fs.readdirSync(DATA).filter((x) => x.endsWith("-pages.json")).so
 
   for (const page of spec.pages || []) {
     const compiled = new Set()
+    const compiledCells = {}
     for (const v of page.variants || []) {
       const rec = path.join(dir, `${v.record}.json`)
       if (!fs.existsSync(rec)) continue
       const j = JSON.parse(fs.readFileSync(rec, "utf8"))
       const cells = j.variants ? j.variants[v.variant] || j.variants[Object.keys(j.variants)[0]] : j.cells
-      if (cells) Object.keys(cells).forEach((k) => compiled.add(k))
+      if (cells) for (const [k, c] of Object.entries(cells)) { compiled.add(k); if (compiledCells[k] == null) compiledCells[k] = c }
     }
     if (!compiled.size) continue
 
@@ -72,7 +74,19 @@ for (const f of fs.readdirSync(DATA).filter((x) => x.endsWith("-pages.json")).so
 
     pagesChecked++
     cellsChecked += compiled.size
-    const dropped = [...compiled].filter((k) => !shown.has(k))
+    const dropped = [...compiled].filter((k) => {
+      if (shown.has(k)) return false
+      // Totals-only standards (locked doctrine: culinary oils — olive-oil, cooking-oils-other) set
+      // the eight totals as the claim surface; species (iAs/MeHg/Cr-VI) are REFLEX speciation and are
+      // legitimately absent from the claim table UNLESS they carry a firm published ceiling. This
+      // mirrors claimTableAnalytes() in the renderers, so the lint agrees with what the page renders
+      // instead of forcing a reflex species row (which would mean inventing an iAs/MeHg number).
+      // Rice/infant slugs are NOT totals-only, so their iAs/MeHg stay required. A firm species cell
+      // (e.g. olive-oil Cr-VI read-across) is NOT exempt — it must still reach the page.
+      // (ORDER S-DOI-PANEL-TOTALS-1)
+      if (isTotalsOnlySlug(page.slug) && SPECIES.includes(k) && !isFirmClaimCell(compiledCells[k])) return false
+      return true
+    })
     if (dropped.length) {
       fail.push(`${label} / ${page.slug}: compiled cell(s) ${dropped.join(", ")} never render — the limit is published in the compiled record but absent from the page`)
     }

@@ -73,6 +73,10 @@ export function registerFonts() {
   // genuinely over-wide machine tokens (page slugs, DOI URLs) are broken, where
   // an added hyphen is tolerable and a crash is not.
   Font.registerHyphenationCallback((word) => {
+    // Never hyphenate a URL or a DOI (ORDER S-DOI-CITE-LICENSE-1: "No mid-URL hyphenation").
+    // A DOI URL like https://doi.org/10.83138/hmtc.std.30.olive-oil must print as one unbroken
+    // token on the Cite-as face; it fits the cite column whole, so return it intact.
+    if (/:\/\/|doi\.org|(^|\/)10\.\d{4,9}\//.test(word)) return [word]
     if (word.length < 20) return [word]
     const parts = word.split(/(?<=[/_\-.,;:])/)
     const out = []
