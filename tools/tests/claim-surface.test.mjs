@@ -22,6 +22,23 @@ test("firm numeric value is COMPLETE; parent-only inheritance is not", () => {
   assert.equal(numericCeiling({ type: "subsumed", value: null, subsumed_by: "tAs" }), null)
 })
 
+test("form_split strictest_form_value is a disclosed government ceiling, not EMPTY", () => {
+  const split = {
+    cell_kind: "form_split",
+    provenance: "regulatory-alignment",
+    value: null,
+    strictest_form_value: 200,
+    forms: [
+      { form: "low cocoa", value: 200 },
+      { form: "high cocoa", value: 400 },
+    ],
+  }
+  assert.equal(numericCeiling(split), 200)
+  assert.equal(cellState(split), "firm")
+  assert.equal(numericCeiling({ cell_kind: "form_split", value: null, forms: [{ value: 600 }, { value: 900 }] }), 600)
+  assert.equal(numericCeiling({ type: "control", value: null }), null)
+})
+
 test("rice / baby-cereal detection excludes non-rice and non-cereal infant goods", () => {
   assert.equal(isRiceInfantCereal("rice-bulk-grain"), true)
   assert.equal(isRiceInfantCereal("baby-cereals-dry-rice-based"), true)

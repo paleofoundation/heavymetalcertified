@@ -58,21 +58,22 @@ node tools/standard-readiness-lint.mjs --strict
 ```
 
 The lint rewrites `data/standards/readiness-manifest.json` and
-`data/standards/claim-surface-fail-list.json`. Counts after this change
-(2026-09-10):
+`data/standards/claim-surface-fail-list.json`. Counts after MINT-FINISH-ALL-1
+(2026-09-18):
 
 | Metric | Count |
 |---|---:|
 | Compiled standards | 323 |
 | COMPLETE (claim-surface numeric) | 265 |
 | Incomplete (claim-surface empty) | 58 |
-| Empty cells (full panel, incl. species) | 882 |
-| Empty claim-surface cells (8 totals ± required iAs) | 180 |
+| Empty cells (full panel, incl. species) | 876 |
+| Empty claim-surface cells (8 totals ± required iAs) | 174 |
 | Rice / infant-cereal canary FAIL | 0 |
-| REGISTERED / READY | 0 |
+| REGISTERED / READY | 4 |
 
 `--strict` (prebuild) **passes**. `--strict-corpus` would fail all 58 incomplete
-standards / 882 empty cells. Do not flip until the fail list is empty.
+standards / 876 empty cells. Do not flip until the fail list is empty. Living
+SCORECARD: `reports/SCORECARD.md`. True gaps: `docs/HARD-BLOCKERS.md`.
 
 ## How to verify
 

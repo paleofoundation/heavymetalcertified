@@ -6,39 +6,12 @@
     "complete": 265,
     "registered": 4,
     "ready": 4,
-    "empty_cells": 882,
-    "claim_empty_cells": 180,
+    "empty_cells": 876,
+    "claim_empty_cells": 174,
     "incomplete_records": 58,
     "rice_canary_fail": 0
   },
   "incomplete": [
-    {
-      "slug": "chocolate",
-      "category": 33,
-      "rice": false,
-      "claim_empty": [
-        "Pb",
-        "tAs",
-        "Cd",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr"
-      ],
-      "empty_cells": [
-        "Pb",
-        "Cd",
-        "tAs",
-        "iAs",
-        "MeHg",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr",
-        "Cr-VI"
-      ],
-      "rice_missing_ias": false
-    },
     {
       "slug": "herbal-botanical-infusions",
       "category": 5,
@@ -196,29 +169,6 @@
       "rice_missing_ias": false
     },
     {
-      "slug": "spices",
-      "category": 34,
-      "rice": false,
-      "claim_empty": [
-        "Pb",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr"
-      ],
-      "empty_cells": [
-        "Pb",
-        "iAs",
-        "MeHg",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr",
-        "Cr-VI"
-      ],
-      "rice_missing_ias": false
-    },
-    {
       "slug": "fermented-beverages-non-tea-based",
       "category": 5,
       "rice": false,
@@ -307,28 +257,6 @@
       "rice_missing_ias": false
     },
     {
-      "slug": "salt",
-      "category": 34,
-      "rice": false,
-      "claim_empty": [
-        "Pb",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr"
-      ],
-      "empty_cells": [
-        "Pb",
-        "MeHg",
-        "Ni",
-        "Sn",
-        "Al",
-        "Cr",
-        "Cr-VI"
-      ],
-      "rice_missing_ias": false
-    },
-    {
       "slug": "soft-drinks-carbonated-beverages",
       "category": 5,
       "rice": false,
@@ -369,6 +297,27 @@
         "Cr-VI",
         "Al",
         "Cr"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "spices",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
       ],
       "rice_missing_ias": false
     },
@@ -533,6 +482,26 @@
       "rice_missing_ias": false
     },
     {
+      "slug": "salt",
+      "category": 34,
+      "rice": false,
+      "claim_empty": [
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "MeHg",
+        "Ni",
+        "Sn",
+        "Al",
+        "Cr",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
       "slug": "beef-product",
       "category": 11,
       "rice": false,
@@ -566,6 +535,25 @@
         "Ni",
         "Sn",
         "Al",
+        "Cr-VI"
+      ],
+      "rice_missing_ias": false
+    },
+    {
+      "slug": "chocolate",
+      "category": 33,
+      "rice": false,
+      "claim_empty": [
+        "Sn",
+        "Al",
+        "Cr"
+      ],
+      "empty_cells": [
+        "iAs",
+        "MeHg",
+        "Sn",
+        "Al",
+        "Cr",
         "Cr-VI"
       ],
       "rice_missing_ias": false

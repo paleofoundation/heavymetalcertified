@@ -58,12 +58,23 @@ function cellsOf(rec) {
 // limitOverride (optional): a precomputed HMTc-limit column string, used for an aggregate page
 // whose grouped variants disagree on this analyte (e.g. "5 cow / 10 soy"). When given it replaces
 // only the value column; the basis text still comes from the primary variant's cell.
+function publishedValue(c) {
+  if (!c) return null
+  if (c.value != null) return c.value
+  if (c.strictest_form_value != null) return c.strictest_form_value
+  const vals = (c.forms || []).map((f) => f && f.value).filter((v) => v != null)
+  return vals.length ? Math.min(...vals) : null
+}
+function cellKindOf(c) {
+  return String((c && (c.type || c.cell_kind)) || "").toLowerCase()
+}
 function cellRow([k, label, tier], c, limitOverride) {
   if (!c) return `| ${label} | Tier ${tier} | ${limitOverride ?? "—"} | not compiled |`
-  const t = c.type || ""
-  if (c.value != null) {
-    const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
-    return `| ${label} | Tier ${tier} | ${limitOverride ?? fmtNum(c.value)} | ${basis} |`
+  const t = cellKindOf(c)
+  const published = publishedValue(c)
+  if (published != null) {
+    const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "form_split" ? "strictest government ML, set by product form" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
+    return `| ${label} | Tier ${tier} | ${limitOverride ?? fmtNum(published)} | ${basis} |`
   }
   if (limitOverride) return `| ${label} | Tier ${tier} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
   if (t === "subsumed") {
@@ -72,14 +83,16 @@ function cellRow([k, label, tier], c, limitOverride) {
     return `| ${label} | Tier ${tier} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
   }
   if (t === "control") return `| ${label} | Tier ${tier} | control | measured every lot; no human-food maximum |`
-  if (t === "not_material") return `| ${label} | Tier ${tier} | n/m | not material in this matrix |`
+  if (t === "not_material" || t === "not-material") return `| ${label} | Tier ${tier} | n/m | not material in this matrix |`
   return `| ${label} | Tier ${tier} | — | — |`
 }
 function derivRow([k, label, tier], c) {
   if (!c) return `| ${label} | — | not compiled |`
-  if (c.value != null) {
-    const src = c.type === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : "government maximum level"
-    return `| ${label} | ${fmtNum(c.value)} | ${src} |`
+  const published = publishedValue(c)
+  if (published != null) {
+    const t = cellKindOf(c)
+    const src = t === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : t === "form_split" ? "strictest government ML, set by product form" : "government maximum level"
+    return `| ${label} | ${fmtNum(published)} | ${src} |`
   }
   if (c.type === "subsumed") {
     const n = c.value ?? c.binding_total
@@ -126,7 +139,7 @@ function resolveVariants(slug) {
 function collapseLimitCell(variants, k) {
   const show = (c) => {
     if (!c) return "—"
-    if (c.value != null) return fmtNum(c.value)
+    if (publishedValue(c) != null) return fmtNum(publishedValue(c))
     if (c.type === "subsumed") { const n = c.value ?? c.binding_total; return n != null ? fmtNum(n) : `≤ ${c.subsumed_by || c.bounded_by || "parent"}` }
     if (c.type === "control") return "control"
     if (c.type === "not_material") return "n/m"

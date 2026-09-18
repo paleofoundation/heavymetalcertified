@@ -62,7 +62,9 @@
       ],
       "strictest_form_value": 200,
       "stricter_unselected": [],
-      "value": null
+      "value": 200,
+      "type": "form_split",
+      "value_exact": 200
     },
     "Cd": {
       "analyte": "Cd",
@@ -155,7 +157,9 @@
       ],
       "strictest_form_value": 100,
       "stricter_unselected": [],
-      "value": null
+      "value": 100,
+      "type": "form_split",
+      "value_exact": 100
     },
     "tAs": {
       "analyte": "tAs",
@@ -211,7 +215,9 @@
       ],
       "strictest_form_value": 200,
       "stricter_unselected": [],
-      "value": null
+      "value": 200,
+      "type": "form_split",
+      "value_exact": 200
     },
     "iAs": {
       "analyte": "iAs",
@@ -314,7 +320,9 @@
       ],
       "strictest_form_value": 2500,
       "stricter_unselected": [],
-      "value": null
+      "value": 2500,
+      "type": "form_split",
+      "value_exact": 2500
     },
     "Sn": {
       "analyte": "Sn",
