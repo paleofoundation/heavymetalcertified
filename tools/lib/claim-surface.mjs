@@ -50,6 +50,15 @@ export function numericCeiling(c) {
   if (!c || typeof c !== "object") return null
   if (isFirmNumeric(c.value)) return Number(c.value)
   if (isFirmNumeric(c.binding_total)) return Number(c.binding_total)
+  // Form-split cells publish the government number on the cell as
+  // strictest_form_value (and on forms[].value). That is a disclosed
+  // sovereign ceiling, not parent-total inheritance.
+  if (isFirmNumeric(c.strictest_form_value)) return Number(c.strictest_form_value)
+  const kind = cellKind(c)
+  if (kind === "form_split" && Array.isArray(c.forms)) {
+    const vals = c.forms.map((f) => f && f.value).filter(isFirmNumeric).map(Number)
+    if (vals.length) return Math.min(...vals)
+  }
   return null
 }
 

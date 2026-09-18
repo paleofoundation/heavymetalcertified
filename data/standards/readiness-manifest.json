@@ -6,8 +6,8 @@
     "complete": 265,
     "registered": 4,
     "ready": 4,
-    "empty_cells": 882,
-    "claim_empty_cells": 180,
+    "empty_cells": 876,
+    "claim_empty_cells": 174,
     "incomplete_records": 58,
     "rice_canary_fail": 0
   },
@@ -5067,22 +5067,14 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "Pb",
-            "Cd",
-            "tAs",
             "iAs",
             "MeHg",
-            "Ni",
             "Sn",
             "Al",
             "Cr",
             "Cr-VI"
           ],
           "claim_empty": [
-            "Pb",
-            "tAs",
-            "Cd",
-            "Ni",
             "Sn",
             "Al",
             "Cr"
@@ -5154,8 +5146,8 @@
       "registered": false,
       "ready": false,
       "incomplete_records": 3,
-      "empty_cell_total": 28,
-      "claim_empty_total": 19
+      "empty_cell_total": 24,
+      "claim_empty_total": 15
     },
     {
       "category": 34,
@@ -5216,7 +5208,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "Pb",
             "MeHg",
             "Ni",
             "Sn",
@@ -5225,7 +5216,6 @@
             "Cr-VI"
           ],
           "claim_empty": [
-            "Pb",
             "Ni",
             "Sn",
             "Al",
@@ -5242,7 +5232,6 @@
           "corrected": false,
           "ready": false,
           "empty_cells": [
-            "Pb",
             "iAs",
             "MeHg",
             "Ni",
@@ -5252,7 +5241,6 @@
             "Cr-VI"
           ],
           "claim_empty": [
-            "Pb",
             "Ni",
             "Sn",
             "Al",
@@ -5267,8 +5255,8 @@
       "registered": false,
       "ready": false,
       "incomplete_records": 4,
-      "empty_cell_total": 27,
-      "claim_empty_total": 18
+      "empty_cell_total": 25,
+      "claim_empty_total": 16
     },
     {
       "category": 35,

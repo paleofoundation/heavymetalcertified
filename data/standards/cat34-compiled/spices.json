@@ -128,7 +128,9 @@
           "scope": "Spices (xiang xin liao), except cinnamon, Sichuan pepper, and spice mixtures (GB 2762-2022 Table 1, Lead)"
         }
       ],
-      "value": null
+      "value": 600,
+      "type": "form_split",
+      "value_exact": 600
     },
     "Cd": {
       "analyte": "Cd",

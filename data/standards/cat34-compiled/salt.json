@@ -67,7 +67,9 @@
       ],
       "strictest_form_value": 1000,
       "stricter_unselected": [],
-      "value": null
+      "value": 1000,
+      "type": "form_split",
+      "value_exact": 1000
     },
     "Cd": {
       "analyte": "Cd",
