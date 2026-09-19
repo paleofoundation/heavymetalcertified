@@ -14,7 +14,7 @@ methodology_version: "Method v2.0: human-grade over-compliance (CLAUDE.md Part 1
 variant_type: whole_row_platform
 effective_date: 2026-08-13
 scholar_eligible: false
-cert_doi: null
+cert_doi: "10.83138/hmtc.std.17.pet-food-fermentation-derived-protein"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"

@@ -14,7 +14,7 @@ methodology_version: "Method v2.1: ICH Q3D(R2) route-based elemental-impurity ce
 variant_type: whole_row_platform
 effective_date: 2026-09-02
 scholar_eligible: false
-cert_doi: null
+cert_doi: "10.83138/hmtc.std.26.research-chem-raw-powders"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"

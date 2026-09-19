@@ -15,7 +15,7 @@ variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/infant-formula-ready-to-feed
 effective_date: 2026-08-06
 scholar_eligible: false
-cert_doi: null
+cert_doi: "10.83138/hmtc.std.1.infant-formula-ready-to-feed"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"

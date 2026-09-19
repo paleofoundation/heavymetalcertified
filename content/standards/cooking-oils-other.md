@@ -15,7 +15,7 @@ variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/cooking-oils-other
 effective_date: 2026-08-14
 scholar_eligible: false
-cert_doi: null
+cert_doi: "10.83138/hmtc.std.30.cooking-oils-other"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"

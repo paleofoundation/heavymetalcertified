@@ -15,7 +15,7 @@ variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/pet-food-semi-moist
 effective_date: 2026-08-13
 scholar_eligible: false
-cert_doi: null
+cert_doi: "10.83138/hmtc.std.17.pet-food-semi-moist"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 rail_box:
   title: "Document versions"
