@@ -46,7 +46,9 @@ function versionBlock(rec) {
         : `| ${label} | ${v.date} | ${status} | ${esc(v.summary || "")} |`
     })
     .join("\n")
-  const conceptNote = rec.concept_doi
+  const conceptNote = rec.concept_doi_note
+    ? `\n\n${rec.concept_doi_note}`
+    : rec.concept_doi
     ? `\n\nThe concept DOI [${rec.concept_doi}](https://doi.org/${rec.concept_doi}) always resolves to the latest deposited edition.`
     : ""
   return `${BEGIN}

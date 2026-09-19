@@ -143,6 +143,7 @@ export function renderManualFrontmatter({
   certDoi = null,
   manualSlug = null,
   reportNumber = null,
+  extraFm = [],
 }) {
   // Google Scholar indexes these pages as technical reports
   // (citation_technical_report_institution), and a technical report needs a
@@ -171,6 +172,7 @@ export function renderManualFrontmatter({
     `author: ${yq(author)}`,
     `orcid: ${yq(orcid)}`,
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
+    ...extraFm,
   ]
   if (pdfHref) {
     lines.push(`pdf: ${yq(pdfHref)}`)

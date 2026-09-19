@@ -245,17 +245,25 @@ for (const [typeName, t] of Object.entries(TYPES)) {
 
     const published = ["published", "date", "briefing_date", "effective_date"].map((key) => publicationDate(fm[key])).find(Boolean)
     const pubYear = published ? Number(published.slice(0, 4)) : null
+    const doiSuffix = typeof fm.doi_suffix === "string" && fm.doi_suffix.trim()
+      ? fm.doi_suffix.trim().toLowerCase().replace(/[^a-z0-9._-]+/g, "-").replace(/-+/g, "-").replace(/(^-|-$)/g, "")
+      : null
+    const earlierEdition = typeof fm.earlier_edition_doi === "string" && HAS_DOI.test(fm.earlier_edition_doi)
+      ? String(fm.earlier_edition_doi).trim()
+      : null
     candidates.push({
       typeName, t, filePath, raw, slug,
       creators: buildCreators(fm, RESEARCHER, { fallback: [CREATOR] }),
       title: fm.title || slug,
-      version: fm.standard_version || null,
+      version: fm.standard_version || fm.edition || null,
       pubYear, pubYearDefaulted: pubYear == null,
       category: fm.category ?? null,
       hmiLink: fm.hmi_literature_link || null,
       description: fm.description || fm.scholar_abstract || null,
       hasCertDoiLine: /^cert_doi:\s*.*$/m.test(raw),
       complete: completeSlugs.has(slug),
+      doiSuffix,
+      earlierEdition,
     })
   }
 }
@@ -268,13 +276,20 @@ const batch = candidates.slice(0, limit === Infinity ? candidates.length : limit
 
 // --- build one DataCite JSON:API payload -------------------------------------------------------
 function buildPayload(c) {
-  const suffix = `hmtc.${c.t.suffix}.${c.category != null ? `${c.category}.` : ""}${c.slug}`
+  const suffix = (c.doiSuffix || `hmtc.${c.t.suffix}.${c.category != null ? `${c.category}.` : ""}${c.slug}`)
     .toLowerCase().replace(/[^a-z0-9._-]+/g, "-").replace(/-+/g, "-").replace(/(^-|-$)/g, "")
   const url = `${BASE_URL}/${c.t.landing}/${c.slug}`
   const related = []
   if (c.hmiLink) {
     const u = String(c.hmiLink)
     related.push({ relatedIdentifier: u, relatedIdentifierType: /^10\.\d/.test(u) ? "DOI" : "URL", relationType: "References" })
+  }
+  if (c.earlierEdition) {
+    related.push({
+      relatedIdentifier: c.earlierEdition,
+      relatedIdentifierType: "DOI",
+      relationType: "IsNewVersionOf",
+    })
   }
   const types = { resourceTypeGeneral: c.t.rtGeneral }
   if (c.t.rtText) types.resourceType = c.t.rtText
@@ -294,6 +309,32 @@ function buildPayload(c) {
     ...(state === "draft" ? {} : { event: state }), // register | publish; draft omits event
   }
   return { data: { type: "dois", attributes }, _suffix: suffix }
+}
+
+// After a live house mint, persist the DOI where the Cat-1 generator will re-read
+// it (manifest + version-history). Never invent a DOI; this only writes the DOI
+// DataCite just returned. Zenodo stays earlier_edition_doi / superseded rows.
+function persistManualWriteback(slug, doi) {
+  if (!/^10\.83138\//.test(doi)) return
+  const manPath = path.join(REPO, "data/manuals/manifest.json")
+  if (fs.existsSync(manPath)) {
+    const man = JSON.parse(fs.readFileSync(manPath, "utf8"))
+    const row = (man.manuals || []).find((m) => m.slug === slug)
+    if (row) {
+      row.doi = doi
+      fs.writeFileSync(manPath, JSON.stringify(man, null, 2) + "\n")
+    }
+  }
+  const vhPath = path.join(REPO, "data/standards/version-history", `${slug}.json`)
+  if (fs.existsSync(vhPath)) {
+    const vh = JSON.parse(fs.readFileSync(vhPath, "utf8"))
+    const cur = (vh.versions || []).find((v) => v.status === "current")
+    if (cur) {
+      cur.doi = doi
+      delete cur.doi_pending
+    }
+    fs.writeFileSync(vhPath, JSON.stringify(vh, null, 2) + "\n")
+  }
 }
 
 // Fields a *findable* DOI must carry (real gaps, not silently defaulted).
@@ -398,6 +439,7 @@ for (const c of batch) {
       else newRaw = c.raw.replace(/^---\n/, `---\ncert_doi: "${doi}"\n`) // INSERT after opening fence
       if (newRaw === c.raw) { console.error(`  ABORT ${c.typeName}/${c.slug}: write-back changed nothing — DOI ${doi} minted but unpersistable. Stopping.`); failed += 1; break }
       fs.writeFileSync(c.filePath, newRaw, "utf8")
+      if (c.typeName === "manuals") persistManualWriteback(c.slug, doi)
       const sha = crypto.createHash("sha256").update(newRaw).digest("hex")
       fs.appendFileSync(auditPath, `${path.relative(REPO, c.filePath)},${c.typeName},${doi},${state},${sha},${DATACITE_MODE},${new Date().toISOString()}\n`)
     } else {
