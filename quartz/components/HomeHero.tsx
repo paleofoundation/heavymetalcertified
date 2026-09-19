@@ -1,5 +1,10 @@
+import { homeStats } from "./generated/home-stats"
+
 export function HomeHero({ fm }: { fm: Record<string, any> }) {
-  const rows: string[][] = Array.isArray(fm.home_snapshot) ? fm.home_snapshot : []
+  const generated = Array.isArray(homeStats.snapshot_rows) ? homeStats.snapshot_rows : []
+  const rows: readonly (readonly string[])[] = generated.length
+    ? generated
+    : (Array.isArray(fm.home_snapshot) ? fm.home_snapshot : [])
   return (
     <section class="hmtc-home-hero" aria-label="Heavy Metal Certified" data-no-cite>
       <div class="hmtc-home-hero-grid">
@@ -29,7 +34,6 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
         <aside class="hmtc-home-sidebar" aria-label="Program snapshot">
           <section class="hmtc-home-snapshot" aria-label="Program snapshot">
             <div class="hmtc-home-snapshot-inner"><h2>Program at a glance</h2>
-            <p class="hmtc-home-snapshot-date">As of {fm.home_snapshot_date}</p>
             <dl>{rows.map(([label,value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <a href="/standards">Explore the standards register <span aria-hidden="true">→</span></a></div>
           </section>
