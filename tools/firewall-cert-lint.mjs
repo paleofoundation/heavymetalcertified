@@ -8,10 +8,11 @@
 //   1. NO CORPUS. The cert site must never re-host the literature index's
 //      content (the WikiBiome / paleofoundation cannibalization lesson). No
 //      `type: source` pages, no metals/ingredients/sources content trees.
-//   2. NO JOURNAL OVERCLAIM. Standards + briefings are Scholar-eligible as
-//      TECHNICAL REPORTS only; `citation_journal_title` must never appear (plan
-//      6.D / B4 — a certifier's own documents are not peer-reviewed journal
-//      articles).
+//   2. NO JOURNAL OVERCLAIM in CONTENT. Head.tsx SSR emits Highwire
+//      `citation_journal_title` on `/standards/{slug}` only (locked house
+//      series "Heavy Metal Tested & Certified Standards", HMTC-SCHOLAR-META-1).
+//      Content markdown still must never contain the tag — a certifier's body
+//      is not a peer-reviewed journal article (plan 6.D / B4).
 //   3. FIRM-VALUE INTEGRITY. A bold firm "N ppb" limit may render on a standards
 //      page only for an analyte cell the catalog marks status:published. The
 //      generator enforces this; this lint is the regression guard.

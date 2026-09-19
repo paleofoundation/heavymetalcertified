@@ -14,6 +14,7 @@ methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 1
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/olive-oil
 effective_date: 2026-08-14
+author: "Karen Pendergrass"
 scholar_eligible: false
 cert_doi: "10.83138/hmtc.std.30.olive-oil"
 audience: [regulator, brand-legal, retailer-compliance, certifier]

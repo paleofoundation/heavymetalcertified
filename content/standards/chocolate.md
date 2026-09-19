@@ -13,6 +13,7 @@ standard_version: "1.0 (2026-08-14)"
 methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"
 variant_type: whole_row_platform
 effective_date: 2026-08-14
+author: "Karen Pendergrass"
 scholar_eligible: false
 cert_doi: null
 audience: [regulator, brand-legal, retailer-compliance, certifier]

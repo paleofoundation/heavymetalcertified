@@ -13,6 +13,7 @@ standard_version: "1.0 (2026-08-14)"
 methodology_version: "Method v2.0: government-limit default, mucosal basis (CLAUDE.md Part 19)"
 variant_type: whole_row_platform
 effective_date: 2026-08-14
+author: "Karen Pendergrass"
 scholar_eligible: false
 cert_doi: "10.83138/hmtc.std.15.menstrual-tampons"
 audience: [regulator, brand-legal, retailer-compliance, certifier]

@@ -1,7 +1,25 @@
 import researcherIdentity from "../../data/researcher-identity.json"
+import { KAREN_PERSON } from "../../tools/lib/researcher-schema.mjs"
 import { Fragment } from "preact"
 import { documentPdf } from "./documentMetadata"
 import { currentDocumentDoi } from "./DocumentDoi"
+
+export const STANDARD_SERIES_TITLE = "Heavy Metal Tested & Certified Standards"
+export const ICS_PUBLISHER_NAME = "Institute of Contaminant Standards"
+const ICS_PUBLISHER = {
+  "@type": "Organization",
+  "@id": "https://contaminantstandards.com/#organization",
+  name: ICS_PUBLISHER_NAME,
+}
+const STANDARD_RIGHTS =
+  "© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved."
+
+export function isStandardDocument(fm: Record<string, unknown>, slug = ""): boolean {
+  if (String(fm.type) === "standard-in-development") return false
+  if (!slug.startsWith("standards/")) return false
+  if (slug === "standards/index" || slug.endsWith("/index")) return false
+  return String(fm.type) === "standard"
+}
 
 export function frontmatterString(value: unknown): string | undefined {
   if (typeof value !== "string" && typeof value !== "number") return undefined
@@ -113,16 +131,39 @@ export function citationPublicationDate(
   return undefined
 }
 
-export function citationAuthors(fm: Record<string, unknown>, source = false): string[] {
+export function citationAuthors(
+  fm: Record<string, unknown>,
+  source = false,
+  slug = "",
+): string[] {
   const list = frontmatterStringArray(fm.authors)
   const authors = list.length ? list : frontmatterStringArray(fm.author)
   if (source) return authors
   const names = new Set(
     [researcherIdentity.name, researcherIdentity.citationName].map((name) => name.toLowerCase()),
   )
-  return authors.map((author) =>
+  const normalized = authors.map((author) =>
     names.has(author.replace(/\s+/g, " ").toLowerCase()) ? researcherIdentity.citationName : author,
   )
+  if (!normalized.length && isStandardDocument(fm, slug)) return [researcherIdentity.citationName]
+  return normalized
+}
+
+function isoDateFromCitationDate(value: string): string {
+  return value.includes("/") ? value.replaceAll("/", "-") : value
+}
+
+function citationOnlineDate(fm: Record<string, unknown>, publicationDate?: string): string | undefined {
+  const online = normalizeCitationDate(fm.online_date ?? fm.date_online)
+  return online && online !== publicationDate ? online : undefined
+}
+
+export function standardPdfUrl(fm: Record<string, unknown>, slug: string, socialUrl: string): string {
+  const currentPdf = documentPdf(fm, slug)
+  if (currentPdf) return `https://heavymetalcertified.com${currentPdf}`
+  const configured = frontmatterString(fm.scholar_pdf_url)
+  if (configured) return configured
+  return `${socialUrl.replace(/\/$/, "")}.pdf`
 }
 
 export interface CitationMetadataIssue {
@@ -144,7 +185,8 @@ export function citationMetadataIssues(
 ): CitationMetadataIssue[] {
   if (fm.type === "source" || slug.startsWith("sources/")) return []
   const issues: CitationMetadataIssue[] = []
-  const eligible = frontmatterBoolean(fm.scholar_eligible)
+  const isStandard = isStandardDocument(fm, slug)
+  const eligible = frontmatterBoolean(fm.scholar_eligible) || isStandard
   const declaredDoi = frontmatterString(fm.cert_doi)
   const currentDoi = currentDocumentDoi(slug, fm)
   if (currentDoi && !eligible) {
@@ -170,7 +212,7 @@ export function citationMetadataIssues(
         "This DOI is not valid for current-document metadata (invalid/test DOI or no published current manual DOI in the edition manifest). Do not reuse an earlier edition DOI.",
     })
   }
-  if (eligible && !citationAuthors(fm).length)
+  if (eligible && !citationAuthors(fm, false, slug).length)
     issues.push({
       slug,
       code: "missing-authors",
@@ -229,22 +271,17 @@ export function CitationMetadata({
     )
   }
 
-  // The cert site emits Highwire / Google Scholar metadata for its citable
-  // technical documents: PUBLISHED standards (a firm limit is in force) and the
-  // article-length Standards Briefings. Both are framed as technical
-  // reports / specifications — never citation_journal_title — because a
-  // certifier claiming peer-reviewed-journal status on the documents justifying
-  // its own paid certifications is the overclaim the firewall exists to deny
-  // (plan 6.D). Eligibility is gated on the generator-set `scholar_eligible`
-  // flag, so a standard still in development emits NO citation_* (no overclaim
-  // on a non-published cell). PDF links point to the current document export,
-  // using an explicitly configured PDF only outside that document pipeline.
-  const isScholarEligible = frontmatterBoolean(frontmatter.scholar_eligible)
+  // Standards emit Highwire + ScholarlyArticle on every `/standards/{slug}`
+  // page (ORDER HMTC-SCHOLAR-META-1). Articles/briefings stay on the
+  // scholar_eligible gate and remain technical reports — no journal title.
+  // standard-in-development pages still emit nothing.
+  const isStandard = isStandardDocument(frontmatter, slugStr)
+  const isScholarEligible = frontmatterBoolean(frontmatter.scholar_eligible) || isStandard
   if (isScholarEligible) {
     const citationTitle = frontmatterString(frontmatter.title) ?? title
     const pubDate = citationPublicationDate(frontmatter)
     const certDoi = currentDocumentDoi(slugStr, frontmatter)
-    const authors = citationAuthors(frontmatter)
+    const authors = citationAuthors(frontmatter, false, slugStr)
     // Missing authors or publication dates cannot form a Scholar citation.
     // The read-only metadata audit reports these gaps without inventing values.
     if (!authors.length || !pubDate) return null
@@ -257,9 +294,83 @@ export function CitationMetadata({
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
     const currentPdf = documentPdf(frontmatter, slugStr)
-    const pdfUrl = currentPdf
-      ? `https://heavymetalcertified.com${currentPdf}`
-      : (configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined))
+    const pdfUrl = isStandard
+      ? standardPdfUrl(frontmatter, slugStr, socialUrl)
+      : currentPdf
+        ? `https://heavymetalcertified.com${currentPdf}`
+        : (configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined))
+    const onlineDate = citationOnlineDate(frontmatter, pubDate)
+    if (isStandard) {
+      const doiUrl = certDoi ? `https://doi.org/${certDoi}` : undefined
+      const pdfMedia = {
+        "@type": "MediaObject",
+        encodingFormat: "application/pdf",
+        contentUrl: pdfUrl,
+      }
+      const scholarlyArticle = {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "@id": `${socialUrl}#scholarly-article`,
+        name: citationTitle,
+        headline: citationTitle,
+        author: authors.map((author) =>
+          author === researcherIdentity.citationName || author === researcherIdentity.name
+            ? KAREN_PERSON
+            : { "@type": "Person", name: author },
+        ),
+        datePublished: isoDateFromCitationDate(pubDate),
+        publisher: ICS_PUBLISHER,
+        inLanguage: "en",
+        url: socialUrl,
+        isAccessibleForFree: true,
+        copyrightNotice: STANDARD_RIGHTS,
+        isPartOf: { "@type": "Periodical", name: STANDARD_SERIES_TITLE, publisher: ICS_PUBLISHER },
+        encoding: pdfMedia,
+        associatedMedia: pdfMedia,
+        ...(certDoi
+          ? {
+              identifier: {
+                "@type": "PropertyValue",
+                propertyID: "DOI",
+                value: certDoi,
+                url: doiUrl,
+              },
+              sameAs: doiUrl,
+            }
+          : {}),
+        ...(abstract ? { description: abstract } : {}),
+      }
+      return (
+        <>
+          <meta name="citation_title" content={citationTitle} />
+          {authors.map((author, index) => (
+            <Fragment key={`citation-author-${index}`}>
+              <meta name="citation_author" content={author} />
+              {author === researcherIdentity.citationName && (
+                <meta name="citation_author_institution" content={ICS_PUBLISHER_NAME} />
+              )}
+            </Fragment>
+          ))}
+          <meta name="citation_publication_date" content={pubDate} />
+          {onlineDate && <meta name="citation_online_date" content={onlineDate} />}
+          <meta name="citation_journal_title" content={STANDARD_SERIES_TITLE} />
+          <meta name="citation_publisher" content={ICS_PUBLISHER_NAME} />
+          {certDoi && <meta name="citation_doi" content={certDoi} />}
+          <meta name="citation_fulltext_html_url" content={socialUrl} />
+          <meta name="citation_pdf_url" content={pdfUrl} />
+          <link rel="alternate" type="application/pdf" href={pdfUrl} />
+          <meta name="citation_language" content="en" />
+          {abstract && <meta name="citation_abstract" content={abstract} />}
+          <script
+            type="application/ld+json"
+            data-standard-scholarly
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(scholarlyArticle).replace(/</g, "\\u003c"),
+            }}
+          />
+        </>
+      )
+    }
     // A URL path is not a report number; emitting one as `citation_technical_
     // report_number` publishes malformed bibliographic metadata. Every
     // scholar-eligible page is tagged as a technical report of the Institute.
