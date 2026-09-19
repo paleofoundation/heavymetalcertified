@@ -21,9 +21,9 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
             </div>
           </div>
           <nav class="hmtc-home-actions" aria-label="Explore certification">
-            <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Get Started <span aria-hidden="true">↗</span></a>
-            <a class="hmtc-home-action" href="/briefings/the-big-8">The Big 8 <span aria-hidden="true">→</span></a>
-            <a class="hmtc-home-action" href="/challenge">10-Step Challenge <span aria-hidden="true">→</span></a>
+            <a class="hmtc-home-action hmtc-home-action--primary" href="https://app.heavymetalcertified.com/hmt/get-started">Get Started</a>
+            <a class="hmtc-home-action" href="/briefings/the-big-8">The Big 8</a>
+            <a class="hmtc-home-action" href="/challenge">10-Step Challenge</a>
           </nav>
         </div>
         <aside class="hmtc-home-sidebar" aria-label="Program snapshot">

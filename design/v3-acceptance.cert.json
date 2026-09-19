@@ -483,6 +483,8 @@
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/": [
+      { "sel": "#what h2 + div", "prop": "absent", "want": true, "note": "Remove the redundant short red rule beneath the heading; retain the heading's gray divider." },
+      { "sel": "#questions h2 + div", "prop": "absent", "want": true, "note": "Common questions keeps only the gray heading divider, with no second red rule." },
       { "sel": "head link[rel='stylesheet'][data-persist][href*='index.']", "prop": "count", "want": 1, "note": "The SPA release guard compares this build-specific stylesheet before morphing the page; cross-release behaviour is checked by check:spa-release." },
       {"sel": "header .search, header .search-button", "prop": "absent", "want": true},
       {"sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1},
@@ -493,6 +495,7 @@
       {"sel": ".hmtc-search-response", "prop": "display", "want": "none"},
       {"sel": "#site-search-results", "prop": "padding", "want": "0px"},
       { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 3 },
+      { "sel": ".hmtc-home-action > span[aria-hidden]", "prop": "absent", "want": true },
       { "sel": ".hmtc-home-action--primary[href=\"https://app.heavymetalcertified.com/hmt/get-started\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a:nth-child(2)[href=\"/briefings/the-big-8\"]", "prop": "count", "want": 1 },
       { "sel": ".hmtc-home-actions > a:nth-child(3)[href=\"/challenge\"]", "prop": "count", "want": 1 },
@@ -1561,6 +1564,7 @@
           { "sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1 },
           { "sel": ".hmtc-home-actions", "prop": "flex-direction", "want": "column" },
           { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 3 },
+          { "sel": ".hmtc-home-action > span[aria-hidden]", "prop": "absent", "want": true },
           { "sel": ".hmtc-home-actions > a:nth-child(3)[href=\"/challenge\"]", "prop": "count", "want": 1 },
           { "sel": ".hmtc-home-house-line", "prop": "absent", "want": true },
           {"click":".hmi-topnav-burger"},

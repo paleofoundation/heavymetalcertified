@@ -20,7 +20,6 @@ home_snapshot:
   <div style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:96px;align-items:start" class="hmtc-prose-grid">
     <div>
       <h2 style="font-family:Lora,serif;font-weight:400;font-size:40px;line-height:1.15;letter-spacing:-.015em;color:#2b1f1f;margin:0">What this<br />certification is</h2>
-      <div style="width:80px;height:1px;background:#9f2727;margin-top:22px"></div>
     </div>
     <div style="min-width:0">
       <p style="font-size:16.5px;line-height:1.78;color:#3f3a3f;margin:0;max-width:72ch">Heavy Metal Tested &amp; Certified publishes numeric heavy-metal limits and certifies products against them. Limits are set per product subcategory, stated in each product&rsquo;s native basis, and default to the strictest applicable government maximum: tightened by a pooled distribution of peer-reviewed and government occurrence data for the four Tier-1 toxics and the analytes no government regulates. The program is operated and governed by the <a href="https://contaminantstandards.com" style="color:#1c43ad">Institute of Contaminant Standards (ICS)</a>. The peer-reviewed occurrence and toxicology evidence behind those limits is compiled openly at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>, a public reference to the published literature on heavy metals in food that ICS also maintains, so a reader can trace any limit back to its sources.</p>
@@ -48,7 +47,6 @@ home_snapshot:
   <div style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:96px;align-items:start" class="hmtc-prose-grid">
     <div>
       <h2 style="font-family:Lora,serif;font-weight:400;font-size:40px;line-height:1.15;letter-spacing:-.015em;color:#2b1f1f;margin:0">Common<br />questions</h2>
-      <div style="width:80px;height:1px;background:#9f2727;margin-top:22px"></div>
     </div>
     <div style="min-width:0" class="hmtc-faq-list">
       <details class="hmtc-faq" data-hmi-faq="home"><summary><span class="hmtc-faq-sign"></span><span class="hmtc-faq-q">What products can be certified today?</span></summary><div class="hmtc-faq-a" data-hmi-faq-answer><p>Today 348 subcategory standards are in force as published pages, and 320 of them already carry at least one firm analyte limit. A firm limit is published for each analyte as it clears the five shipping gates, and the standard widens as the evidence base and governance review clear more cells. A product is eligible the moment a standard exists for its subcategory: a brand does not wait for the rest of its category.</p><a class="hmtc-faq-link" href="/standards">See the register &rarr;</a></div></details>
