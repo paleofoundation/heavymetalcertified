@@ -8,12 +8,8 @@ audience: [regulator, brand-legal, retailer-compliance, certifier]
 updated: 2026-09-10
 home_snapshot:
   - ["Subcategory standards in force", "349"]
-  - ["Carrying a firm limit", "262"]
-  - ["Firm analyte limits", "2,516"]
-  - ["Certified analyte panel", "8"]
-  - ["Priority metals", "8"]
   - ["Live DOIs", "262"]
-  - ["Current edition", "2026"]
+  - ["Priority metals", "8"]
 ---
 
 <section id="what" style="max-width:1760px;margin:0 auto;padding:72px 48px 72px" data-no-cite>

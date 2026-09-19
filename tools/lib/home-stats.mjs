@@ -129,17 +129,27 @@ export function formatCount(n) {
   return Number(n).toLocaleString("en-US")
 }
 
+// Homepage glance lock (HMTC-HOME-GLANCE-THIN-1). Cut metrics stay in
+// `metrics` for SCORECARD/tests and must never appear in snapshot_rows.
+export const GLANCE_ROW_LABELS = Object.freeze([
+  "Subcategory standards in force",
+  "Live DOIs",
+  "Priority metals",
+])
+
+export const CUT_GLANCE_LABELS = Object.freeze([
+  "Certified analyte panel",
+  "Firm analyte limits",
+  "Current edition",
+  "Carrying a firm limit",
+])
+
 export function snapshotRows(metrics) {
-  const rows = [
+  return [
     ["Subcategory standards in force", formatCount(metrics.subcategory_standards_in_force)],
-    ["Carrying a firm limit", formatCount(metrics.carrying_firm_limit)],
-    ["Firm analyte limits", formatCount(metrics.firm_analyte_limits)],
-    ["Certified analyte panel", formatCount(metrics.certified_analyte_panel)],
+    ["Live DOIs", formatCount(metrics.live_dois)],
     ["Priority metals", formatCount(metrics.priority_metals)],
   ]
-  if (metrics.live_dois > 0) rows.push(["Live DOIs", formatCount(metrics.live_dois)])
-  rows.push(["Current edition", String(metrics.current_edition)])
-  return rows
 }
 
 export const METRIC_DEFINITIONS = Object.freeze({
@@ -235,6 +245,15 @@ export function assertHomeStats(stats) {
   }
   if (m.carrying_firm_limit > m.subcategory_standards_in_force) {
     throw new Error("home-stats: carrying_firm_limit cannot exceed standards in force")
+  }
+  const labels = Array.isArray(stats.snapshot_rows) ? stats.snapshot_rows.map(([k]) => k) : []
+  if (labels.length !== GLANCE_ROW_LABELS.length || labels.join("\0") !== GLANCE_ROW_LABELS.join("\0")) {
+    throw new Error(
+      `home-stats: glance must be exactly ${GLANCE_ROW_LABELS.join(" | ")} (got ${labels.join(" | ") || "none"})`,
+    )
+  }
+  if (labels.some((k) => CUT_GLANCE_LABELS.includes(k) || /^As of\b/i.test(String(k)))) {
+    throw new Error("home-stats: cut metrics must not appear in snapshot_rows")
   }
   return true
 }

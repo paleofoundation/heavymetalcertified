@@ -9,6 +9,8 @@ import {
   evaluateClaimSurface,
 } from "../lib/claim-surface.mjs"
 import {
+  CUT_GLANCE_LABELS,
+  GLANCE_ROW_LABELS,
   assertHomeStats,
   computeHomeStats,
   countFirmAnalyteLimits,
@@ -16,6 +18,7 @@ import {
   isGovFloorOrReadAcross,
   isInForcePage,
   productionDoi,
+  snapshotRows,
 } from "../lib/home-stats.mjs"
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
@@ -134,8 +137,35 @@ test("fixture corpus: incomplete chocolate-style row is not carrying a firm limi
   assert.ok(stats.metrics.subcategory_standards_in_force >= 0)
   assert.ok(stats.metrics.carrying_firm_limit >= 0)
   assert.ok(stats.metrics.firm_analyte_limits >= 0)
+  assert.deepEqual(stats.snapshot_rows, [
+    ["Subcategory standards in force", "2"],
+    ["Live DOIs", "1"],
+    ["Priority metals", "8"],
+  ])
   assertHomeStats(stats)
   fs.rmSync(root, { recursive: true, force: true })
+})
+
+test("glance snapshot is exactly three locked rows; cut metrics stay internal", () => {
+  const rows = snapshotRows({
+    subcategory_standards_in_force: 349,
+    carrying_firm_limit: 262,
+    firm_analyte_limits: 2516,
+    certified_analyte_panel: 8,
+    priority_metals: 8,
+    current_edition: "2026",
+    live_dois: 262,
+  })
+  assert.deepEqual(rows.map(([k]) => k), [...GLANCE_ROW_LABELS])
+  assert.equal(rows.length, 3)
+  const labels = rows.map(([k]) => k).join("\n")
+  for (const cut of CUT_GLANCE_LABELS) assert.equal(labels.includes(cut), false)
+  assert.equal(/As of/i.test(labels), false)
+  assert.deepEqual(rows, [
+    ["Subcategory standards in force", "349"],
+    ["Live DOIs", "262"],
+    ["Priority metals", "8"],
+  ])
 })
 
 test("live corpus: counts are non-negative and chocolate is not carrying a firm limit", () => {
@@ -151,5 +181,8 @@ test("live corpus: counts are non-negative and chocolate is not carrying a firm 
   assert.ok(stats.metrics.live_dois >= 0)
   assert.equal(stats.metrics.certified_analyte_panel, CLAIM_TOTALS.length)
   assert.notEqual(stats.metrics.certified_analyte_panel, 10)
+  assert.equal(stats.metrics.priority_metals, 8)
+  assert.deepEqual(stats.snapshot_rows.map(([k]) => k), [...GLANCE_ROW_LABELS])
+  assert.equal(stats.snapshot_rows.length, 3)
   assert.equal(stats.exclusions.chocolate_carrying_firm_limit, false)
 })

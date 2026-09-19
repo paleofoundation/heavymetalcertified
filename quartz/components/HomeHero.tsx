@@ -1,10 +1,31 @@
 import { homeStats } from "./generated/home-stats"
 
+// HMTC-HOME-GLANCE-THIN-1: homepage glance is these three live rows only.
+const GLANCE_LABELS = [
+  "Subcategory standards in force",
+  "Live DOIs",
+  "Priority metals",
+] as const
+
+function glanceKey(label: string) {
+  return label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+}
+
+function glanceRows(candidates: readonly (readonly string[])[]): [string, string][] {
+  const byLabel = new Map<string, string>()
+  for (const row of candidates) {
+    if (Array.isArray(row) && row.length >= 2) byLabel.set(String(row[0]), String(row[1]))
+  }
+  return GLANCE_LABELS.flatMap((label) => {
+    const value = byLabel.get(label)
+    return value == null ? [] : [[label, value]]
+  })
+}
+
 export function HomeHero({ fm }: { fm: Record<string, any> }) {
   const generated = Array.isArray(homeStats.snapshot_rows) ? homeStats.snapshot_rows : []
-  const rows: readonly (readonly string[])[] = generated.length
-    ? generated
-    : (Array.isArray(fm.home_snapshot) ? fm.home_snapshot : [])
+  const fallback = Array.isArray(fm.home_snapshot) ? fm.home_snapshot : []
+  const rows = glanceRows(generated.length ? generated : fallback)
   return (
     <section class="hmtc-home-hero" aria-label="Heavy Metal Certified" data-no-cite>
       <div class="hmtc-home-hero-grid">
@@ -34,7 +55,7 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
         <aside class="hmtc-home-sidebar" aria-label="Program snapshot">
           <section class="hmtc-home-snapshot" aria-label="Program snapshot">
             <div class="hmtc-home-snapshot-inner"><h2>Program at a glance</h2>
-            <dl>{rows.map(([label,value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+            <dl>{rows.map(([label,value]) => <div key={label} data-glance-row={glanceKey(label)}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <a href="/standards">Explore the standards register <span aria-hidden="true">→</span></a></div>
           </section>
         </aside>
