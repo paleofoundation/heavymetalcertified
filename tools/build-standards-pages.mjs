@@ -124,7 +124,10 @@ for (const row of catalog.rows) {
     `variant_type: ${row.variant_type}`,
     `hmi_literature_link: ${row.hmi_literature_link}`,
     `effective_date: ${today}`,
-    // Normative certification specification; never a scholarly work (2026-08-17).
+    'author: "Karen Pendergrass"',
+    // Highwire + ScholarlyArticle emit for type:standard on /standards/{slug}
+    // regardless of this flag (HMTC-SCHOLAR-META-1). scholar_eligible stays
+    // false so articles/briefings remain the Scholar-eligible subset.
     "scholar_eligible: false",
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "snapshot:",

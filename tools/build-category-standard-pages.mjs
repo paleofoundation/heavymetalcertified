@@ -426,8 +426,10 @@ for (const page of DOC.pages) {
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
     `effective_date: ${META.effective_date}`,
-    // Normative certification specification, not a scholarly work; carries no
-    // Highwire citation_* metadata (settled 2026-08-17, CLAUDE.md Part 2).
+    'author: "Karen Pendergrass"',
+    // Highwire + ScholarlyArticle emit for type:standard on /standards/{slug}
+    // regardless of this flag (HMTC-SCHOLAR-META-1). scholar_eligible stays
+    // false so articles/briefings remain the Scholar-eligible subset.
     "scholar_eligible: false",
     `cert_doi: ${certDoi ? JSON.stringify(certDoi) : "null"}`,
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",

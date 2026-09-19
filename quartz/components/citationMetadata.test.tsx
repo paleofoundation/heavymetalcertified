@@ -159,29 +159,66 @@ test("a superseded manual DOI cannot become the current web edition DOI", () => 
   )
 })
 
-test("DOI eligibility audit flags the olive-oil hold without emitting scholarly metadata", () => {
+test("every /standards/{slug} page emits Highwire + ScholarlyArticle even when scholar_eligible is false", () => {
   const fm = {
-    ...publication,
     type: "standard",
     scholar_eligible: false,
+    title: "Olive oil (virgin, refined, pomace) — HMTc Standard",
+    effective_date: "2026-08-14",
     cert_doi: "10.83138/hmtc.std.30.olive-oil",
   }
-  assert.equal(render(fm, "standards/olive-oil"), "")
-  assert.deepEqual(
-    citationMetadataIssues("standards/olive-oil", fm).map(({ code, severity, doi }) => ({
-      code,
-      severity,
-      doi,
-    })),
-    [
-      {
-        code: "declared-doi-scholar-hold",
-        severity: "warning",
-        doi: "10.83138/hmtc.std.30.olive-oil",
-      },
-    ],
+  const html = render(fm, "standards/olive-oil")
+  assert.match(html, /name="citation_title" content="Olive oil \(virgin, refined, pomace\) — HMTc Standard"/)
+  assert.match(html, /name="citation_author" content="Pendergrass, Karen"/)
+  assert.match(html, /name="citation_publication_date" content="2026\/08\/14"/)
+  assert.match(html, /name="citation_journal_title" content="Heavy Metal Tested &amp; Certified Standards"/)
+  assert.match(html, /name="citation_publisher" content="Institute of Contaminant Standards"/)
+  assert.match(html, /name="citation_doi" content="10.83138\/hmtc.std.30.olive-oil"/)
+  assert.match(
+    html,
+    /name="citation_fulltext_html_url" content="https:\/\/heavymetalcertified.com\/standards\/olive-oil"/,
   )
+  assert.match(
+    html,
+    /name="citation_pdf_url" content="https:\/\/heavymetalcertified.com\/standards\/olive-oil.pdf"/,
+  )
+  assert.match(html, /name="citation_language" content="en"/)
+  assert.doesNotMatch(html, /Paleo Certified|citation_online_date|creativecommons.org/)
+  const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(json["@type"], "ScholarlyArticle")
+  assert.equal(json.name, fm.title)
+  assert.equal(json.publisher.name, "Institute of Contaminant Standards")
+  assert.equal(json.identifier.value, "10.83138/hmtc.std.30.olive-oil")
+  assert.equal(json.sameAs, "https://doi.org/10.83138/hmtc.std.30.olive-oil")
+  assert.equal(json.encoding.contentUrl, "https://heavymetalcertified.com/standards/olive-oil.pdf")
+  assert.equal(json.associatedMedia.contentUrl, json.encoding.contentUrl)
+  assert.match(json.copyrightNotice, /All rights reserved/)
+  assert.equal(citationMetadataIssues("standards/olive-oil", fm).length, 0)
   assert.equal(fm.scholar_eligible, false)
+})
+
+test("unminted standards emit Highwire without inventing a DOI", () => {
+  const html = render(
+    {
+      type: "standard",
+      scholar_eligible: false,
+      title: "Cocoa and chocolate products (cocoa powder, dark, milk, chips) — HMTc Standard",
+      effective_date: "2026-08-14",
+      cert_doi: null,
+    },
+    "standards/chocolate",
+  )
+  assert.match(html, /name="citation_title"/)
+  assert.match(html, /name="citation_author" content="Pendergrass, Karen"/)
+  assert.match(html, /name="citation_pdf_url" content="https:\/\/heavymetalcertified.com\/standards\/chocolate.pdf"/)
+  assert.doesNotMatch(html, /citation_doi/)
+  const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(json["@type"], "ScholarlyArticle")
+  assert.equal(json.identifier, undefined)
+  assert.equal(json.sameAs, undefined)
+})
+
+test("marketing pages, manuals, and in-development standards still emit no Scholar chrome", () => {
   assert.equal(
     render(
       {
@@ -194,4 +231,27 @@ test("DOI eligibility audit flags the olive-oil hold without emitting scholarly 
     ),
     "",
   )
+  assert.equal(
+    render(
+      {
+        type: "standard-in-development",
+        title: "Not yet a standard",
+        author: "Karen Pendergrass",
+        effective_date: "2026-08-14",
+      },
+      "standards/example-in-development",
+    ),
+    "",
+  )
+  const manual = render(
+    {
+      type: "standard",
+      scholar_eligible: false,
+      title: "Infant and Child Foods — Program Manual",
+      effective_date: "2026-08-06",
+    },
+    "manuals/infant-and-child-foods",
+  )
+  assert.equal(manual, "")
+  assert.doesNotMatch(manual, /citation_journal_title|data-standard-scholarly/)
 })

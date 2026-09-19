@@ -67,3 +67,21 @@ OPEN / FLAGS:
   now deposits All-rights-reserved for future mints, but updating the existing records is a metadata
   re-deposit (PUT), Karen-run.
 - Branch p0-mint-live is ahead 2 / behind 2 vs origin/main (diverged). Landing this = Karen's call.
+
+## ELON→CLAUDE ORDER · HMTC-SCHOLAR-META-1 · 2026-09-19
+
+CLAUDE→ELON STATUS (one PR; no live DataCite mint):
+
+- Highwire `citation_*` + ScholarlyArticle JSON-LD now emit SSR on every
+  `/standards/{slug}` (`type: standard`), independent of `scholar_eligible`.
+  Publisher = Institute of Contaminant Standards. Series title = Heavy Metal
+  Tested & Certified Standards. PDF SoT = `https://heavymetalcertified.com/{slug}.pdf`.
+  Rights = All rights reserved. No CC BY. No Paleo Certified Inc in Scholar chrome.
+- Chocolate: **STATUS HOLD**. `cert_doi` remains null. Slug is not in any
+  `data/standards/doi-audit/dois-minted-*.csv`. readiness-manifest
+  `chocolate.complete=false`, `registered=false`, `doi=null`,
+  `claim_empty=[Sn, Al, Cr]` (claim-surface FAIL). No write-back. No live mint.
+- Leftover minted Cite without doi.org (small batch): `infant-formula-powder` and
+  `non-root-vegetable-purees` (minted 2026-09-12) rewritten to locked APA +
+  doi.org. Remaining "DOI: registration pending" pages are unminted
+  (`cert_doi: null`) — not invented.

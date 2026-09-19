@@ -14,6 +14,7 @@ methodology_version: "Method v2.0: government-limit default (CLAUDE.md Part 19, 
 variant_type: whole_row_platform
 hmi_literature_link: https://heavymetalindex.com/products/fruit-purees
 effective_date: 2026-08-06
+author: "Karen Pendergrass"
 scholar_eligible: false
 cert_doi: "10.83138/hmtc.std.1.fruit-purees"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
