@@ -4,21 +4,20 @@
 // scholarly design (Lora headings, IBM Plex Mono for measured values, burgundy
 // #9f2727), at content/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf.
 //
-// This is the FULL five-part manual, not a standards-only extract:
+// Manual v3, thin TOC (not the retired V1 Zenodo dump):
 //   Cover · Contents
-//   Part 1  Why HMTc Exists              (prose)        data/manuals/cat1-manual/part1-why.md
-//   Part 2  The HMTc Program (governance)(prose+tables) data/manuals/cat1-manual/part2-program.md
-//   Part 3  The Standards                (matrix+deriv) tools/lib/cat1-manual-data.mjs  ← the numbers
-//   Part 4  The Lot-Testing Schedule     (prose+tables) data/manuals/cat1-manual/part4-lot-testing.md
-//   Part 5  Reference & back-matter      (prose+glossary) data/manuals/cat1-manual/part5-backmatter.md
+//   Part 1  Governing Principles         data/manuals/cat1-manual/part1-why.md
+//   Part 2  Lifecycle + instruments      data/manuals/cat1-manual/part2-program.md
+//   Part 3  Cat-1 Standards Register     tools/lib/cat1-manual-v3.mjs  ← live SoT
+//   Part 4  Lot Testing Schedule         data/manuals/cat1-manual/part4-lot-testing.md
+//   Part 5  Method + glossary            data/manuals/cat1-manual/part5-backmatter.md
 //   Edition record
+// No per-analyte master-table walls. No CC BY. react-pdf only.
 //
-// HOW IT CANNOT DRIFT. Part 3's every number — the master matrix and every
-// government-by-government derivation — comes from tools/lib/cat1-manual-data.mjs,
-// the exact module the web renderers read; the two are the same arrays. Parts 1/2/4/5
-// are authored, reconciled cert-plane content (data/manuals/cat1-manual/*.md) whose
-// governance/lot-testing values are checked by tools/audit-cat1-manual-consistency.mjs
-// against the /program pages and the governance source. FIREWALL: government-limit
+// HOW IT CANNOT DRIFT. Part 3 is the live Cat-1 Standards Register from
+// tools/lib/cat1-manual-v3.mjs (same module the web page reads). Parts 1/2/4/5
+// are authored, reconciled cert-plane content (data/manuals/cat1-manual/*.md)
+// checked by tools/audit-cat1-manual-consistency.mjs. FIREWALL: government-limit
 // only — no percentile-selection arithmetic anywhere (audited).
 //
 // LOCAL-ONLY, COMMITTED ARTIFACT. Like build-briefing-pdf.mjs, this needs
@@ -33,14 +32,14 @@ import path from "node:path"
 import React from "react"
 import { Document, Page, View, Text, StyleSheet, renderToFile } from "@react-pdf/renderer"
 import { registerFonts } from "./pdf/fonts.mjs"
-import { ANALYTES, masterMatrix, allDerivations, JUR_LABEL } from "./lib/cat1-manual-data.mjs"
+import { buildRegister, snapshotFromRegister, apaCite, COPYRIGHT, ZENODO_VERSION_DOI, DOI_SUFFIX } from "./lib/cat1-manual-v3.mjs"
 
 registerFonts()
 const h = React.createElement
 const REPO = process.cwd()
 
 const OUT_DIR = path.join(REPO, "content/static/manuals")
-const OUT_FILE = "HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf"
+const OUT_FILE = "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf"
 const OUT = path.join(OUT_DIR, OUT_FILE)
 const CONTENT_DIR = path.join(REPO, "data/manuals/cat1-manual")
 const VH = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/version-history/infant-and-child-foods.json"), "utf8"))
@@ -124,7 +123,7 @@ function Cell(content, width, align, textStyle, key) {
   return h(
     View,
     { key, style: { width, paddingVertical: 3.2, paddingHorizontal: 6, flexDirection: "row", justifyContent: alignFor(align) } },
-    Array.isArray(content) ? content : h(Text, { style: [textStyle, { textAlign: align || "left" }] }, content),
+    Array.isArray(content) ? content : h(Text, { style: [textStyle, { textAlign: align || "left" }], hyphenationCallback: (w) => [w] }, content),
   )
 }
 function Row(cells, widths, rowStyle, key) {
@@ -251,83 +250,33 @@ function AuthoredPart(file, partLabel) {
   return { head, body: body.map((b, i) => Block(b, i)), sections: body.filter((b) => b.type === "h2").map((b) => b.text), title }
 }
 
-// ── Part 3 (the numbers) — master matrix + derivations, landscape ────────────
-const SUP = { conv: "¹", read: "²", nm: "³" }
-const MATRIX = masterMatrix()
-const DERIV = allDerivations()
+// ── Part 3 — live Cat-1 Standards Register (same SoT as the web page) ────────
+const REGISTER = buildRegister()
+const SNAP = snapshotFromRegister(REGISTER)
 
-function MasterMatrix() {
-  const widths = pct([3.1, 1, 1, 1, 1, 1, 1.35, 1, 1.35, 1.5])
-  const header = [
-    { t: "Subcategory", a: "left", s: s.th },
-    ...ANALYTES.map((a) => ({ t: a.col, a: "right", s: s.th })),
-    { t: "Basis", a: "left", s: s.th },
-  ]
-  const rows = MATRIX.map((row, ri) => {
-    const cells = [
-      { t: row.name, a: "left", s: s.tdText },
-      ...ANALYTES.map((a) => ({ t: row.cells[a.key], a: "right", s: s.tdMono })),
-      { t: row.basis, a: "left", s: s.tdMonoMute },
-    ]
-    return Row(cells, widths, ri % 2 ? s.tdRowZebra : s.tdRow, `r${ri}`)
-  })
-  return h(View, { key: "mm" }, [
-    h(Text, { key: "hd", style: s.h2, bookmark: { title: "3.1 Master limit matrix", fit: true } }, "3.1 Master limit matrix — all nine subcategories"),
-    h(Text, { key: "cap", style: s.caption },
-      "All values in µg/kg (ppb) in each row's native basis. Split cells show the formulation or matrix variants (cow/soy, rice/non-rice); n/m marks a not-material analyte controlled by reflex speciation. Each subcategory's full derivation follows."),
-    h(View, { key: "t", style: s.table }, [Row(header, widths, s.thRow, "h"), ...rows]),
-  ])
-}
-
-function Derivation(d, idx) {
-  const widths = pct([2.5, ...d.cols.map(() => 1), 1.1, 1.5])
-  const header = [
-    { t: "Analyte", a: "left", s: s.th },
-    ...d.cols.map((j) => ({ t: JUR_LABEL[j] || j, a: "right", s: s.th })),
-    { t: "HMTc", a: "right", s: s.th },
-    { t: "Binds", a: "left", s: s.th },
-  ]
-  const bodyRows = d.rows.map((row, ri) => {
-    const jurCells = d.cols.map((j) => {
-      const pc = row.perCountry[j]
-      if (!pc) return { t: "—", a: "right", s: s.tdMonoFaint }
-      const strict = row.type === "gov" && row.bindingJur === j
-      return { t: pc.value + (pc.converted ? SUP.conv : ""), a: "right", s: strict ? [s.tdMono, { color: BURGUNDY }] : s.tdMonoMute }
-    })
-    const mark = row.type === "read_across" ? SUP.read : row.type === "not_material" ? SUP.nm : ""
-    const cells = [
-      { t: row.analyte, a: "left", s: s.tdText },
-      ...jurCells,
-      { t: (row.type === "not_material" ? "n/m" : String(row.hmtc)) + mark, a: "right", s: [s.tdHmtc, { backgroundColor: ZEBRA }] },
-      { t: row.binds, a: "left", s: s.tdMonoMute },
-    ]
-    return Row(cells, widths, ri % 2 ? s.tdRowZebra : s.tdRow, `r${ri}`)
-  })
-  const children = [
-    h(View, { key: "hdg", wrap: false }, [
-      h(Text, { key: "hd", style: s.h3 }, `3.${idx + 2}  ${d.name}  (${d.basisWord})`),
-      h(Text, { key: "cap", style: s.caption },
-        `Every government maximum in force worldwide, in the ${d.basisWord} basis; the HMTc limit is the strictest and the Binds column names the law that sets it. A blank cell means that government sets no limit for this analyte in this product.`),
-    ]),
-    h(View, { key: "t", style: s.table }, [Row(header, widths, s.thRow, "h"), ...bodyRows]),
-  ]
-  if (d.variantNote) children.push(h(Text, { key: "vn", style: [s.caption, { fontStyle: "italic" }] }, d.variantNote))
-  return h(View, { key: `d${idx}`, wrap: false, style: { marginBottom: 16 } }, children)
+function RegisterEntry(r, i) {
+  return h(
+    View,
+    { key: r.slug, wrap: false, style: { borderBottomWidth: 0.5, borderBottomColor: "#f2ece7", paddingVertical: 8, backgroundColor: i % 2 ? ZEBRA : undefined } },
+    [
+      h(Text, { key: "n", style: s.tdText }, r.name),
+      h(Text, { key: "s", style: s.tdMonoMute }, r.href ? `${r.href} · ${r.slug}` : r.slug),
+      h(Text, { key: "st", style: r.cert_ready ? s.tdHmtc : s.tdMonoMute }, r.cert_ready ? `cert-ready · ${r.cert_doi}` : `HOLD · ${r.hold_reason || "not cert-ready"}`),
+    ],
+  )
 }
 
 function PartThree() {
   return [
-    h(View, { key: "hd", wrap: false, bookmark: { title: "Part 3: The Standards", fit: true } }, [
+    h(View, { key: "hd", wrap: false, bookmark: { title: "Part 3: Cat-1 Standards Register", fit: true } }, [
       h(Text, { key: "n", style: s.partNum }, "Part 3"),
-      h(Text, { key: "t", style: s.partTitle }, "The Standards"),
+      h(Text, { key: "t", style: s.partTitle }, "Cat-1 Standards Register"),
       h(View, { key: "r", style: s.partRule }),
-      h(Text, { key: "lede", style: [s.para, { maxWidth: 720 }] },
-        "The certification limits for all nine subcategories, as one master matrix, with each subcategory's full government-by-government derivation. Every limit is the strictest maximum level set by any credible government worldwide, in the product's native basis, with a disclosed read-across where no government regulates the exact product. Nothing is selected from measured data; every value traces to a named sovereign limit."),
+      h(Text, { key: "lede", style: s.para },
+        `Every Cat-1 compiled record and every live subcategory page. Cert-ready means the live page carries a house DOI under prefix 10.83138 and every joined compiled variant has a complete claim-surface. Incomplete cells stay listed as not cert-ready. Live pages ${SNAP.live_pages}; cert-ready ${SNAP.cert_ready} of ${SNAP.live_pages}; HOLD ${SNAP.hold}.`),
     ]),
-    MasterMatrix(),
-    ...DERIV.map((d, i) => Derivation(d, i)),
-    h(Text, { key: "foot", style: [s.caption, { marginTop: 4 }] },
-      `${SUP.conv} basis-converted at the 8:1 powder-to-liquid ratio (China GB 2762). ${SUP.read} read-across from the nearest government value for an analogous product. ${SUP.nm} not material in this matrix; controlled by reflex speciation, not a number.`),
+    h(View, { key: "t", style: { borderTopWidth: 1.3, borderTopColor: BURGUNDY, borderBottomWidth: 1.3, borderBottomColor: BURGUNDY, marginTop: 6, marginBottom: 10 } },
+      REGISTER.rows.map((r, i) => RegisterEntry(r, i))),
   ]
 }
 
@@ -337,25 +286,26 @@ function Cover() {
     h(Text, { key: "m", style: s.masthead }, "Heavy Metal Tested & Certified  ·  Program Manual"),
     h(View, { key: "r", style: s.ruleBurgundy }),
     h(Text, { key: "t", style: s.coverTitle }, "Infant and Child Foods"),
-    h(Text, { key: "sub", style: s.coverSub }, "Category 1 · Ages 0–5 · 2026 Edition"),
-    h(Text, { key: "meth", style: s.coverMethod }, "Government-limit default — Method v2.0"),
+    h(Text, { key: "sub", style: s.coverSub }, "Category 1 · Ages 0–5 · Manual v3"),
+    h(Text, { key: "meth", style: s.coverMethod }, "Method v2.0 — government-limit default (gov_floor | disclosed read_across)"),
     h(View, { key: "auth", style: s.coverBlock }, [
       h(Text, { key: "l", style: s.label }, "Author & publisher"),
       h(Text, { key: "t", style: s.coverText }, "Karen Pendergrass · ORCID 0000-0002-2348-7259\nInstitute of Contaminant Standards (ICS) · Heavy Metal Tested & Certified"),
     ]),
     h(View, { key: "ed", style: s.coverBlock }, [
       h(Text, { key: "l", style: s.label }, "Edition"),
-      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE} · five parts · nine subcategories · nine analytes (Pb, iAs, tAs, Hg, Cd, Cr, Ni, Sn, Al)`),
+      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE} · live standard pages ${SNAP.live_pages} · cert-ready ${SNAP.cert_ready} of ${SNAP.live_pages}`),
     ]),
     h(View, { key: "ab", style: s.abstractBox }, [
       h(Text, { key: "l", style: s.abstractLabel }, "About this manual"),
       h(
         Text,
         { key: "b", style: s.abstractBody },
-        "The complete Heavy Metal Tested & Certified standard for Category 1, Infant and Child Foods, as one citable volume: why the program exists (Part 1), its governance and certification-status framework (Part 2), the standards themselves — all nine subcategories with their full derivations (Part 3), the lot-testing and surveillance schedule (Part 4), and the methodology, adversarial read, and glossary (Part 5). Every limit traces to a named sovereign government maximum; nothing is selected from measured data. Part 3's numbers are identical to the web edition at heavymetalcertified.com/manuals/infant-and-child-foods.",
+        "Manual v3 is the Method v2 governing instrument for Category 1. Thin table of contents: the five Governing Principles; program lifecycle and statuses; mark, measurement uncertainty, CAPA, remediation, and the standards ratchet; the Lot Testing Schedule (lab-informed assignment and the 90% stay-in-program gate); and the live Cat-1 Standards Register. It does not reprint per-analyte master-table walls. The earlier Zenodo deposit is an earlier deposited edition only. V1 never certified a brand and is retired.",
       ),
     ]),
-    h(Text, { key: "cite", style: [s.coverText, { marginTop: 10 }] }, `Cite as: Pendergrass, K. HMTc Infant and Child Foods Program Manual. ${EDITION_LABEL}. Institute of Contaminant Standards (ICS), 2026. ${BASE_URL}. CC BY 4.0 (prose).`),
+    h(Text, { key: "cite", style: [s.coverText, { marginTop: 10 }] }, apaCite(null)),
+    h(Text, { key: "cpr", style: [s.coverText, { marginTop: 6 }] }, COPYRIGHT),
   ]
 }
 
@@ -388,18 +338,20 @@ function EditionRecord() {
       h(View, { key: "r", style: s.partRule }),
     ]),
     h(Text, { key: "cap", style: s.caption },
-      "The dated editions of this manual, each kept at a stable permalink. This 2026 web edition is the current standard set; the 384-page deposited editions are prior, superseded volumes and are not served against it."),
+      "The dated editions of this manual, each kept at a stable permalink. Manual v3 is current. Zenodo deposits are earlier deposited editions only."),
     h(View, { key: "t", style: s.table }, [Row(header, widths, s.thRow, "h"), ...rows]),
   ]
   if (VH.concept_doi)
-    children.push(h(Text, { key: "cd", style: s.caption }, `The concept DOI ${VH.concept_doi} always resolves to the latest deposited edition. The current 2026 web edition has no DOI yet (Crossref deposit pending); this manual is citable by its permalink in the meantime.`))
-  children.push(h(Text, { key: "cite", style: [s.para, { marginTop: 10 }] }, `Cite as: Pendergrass, K. HMTc Infant and Child Foods Program Manual. ${EDITION_LABEL}. Institute of Contaminant Standards (ICS), 2026. ${BASE_URL}. CC BY 4.0 (prose).`))
+    children.push(h(Text, { key: "cd", style: s.caption }, `The Zenodo concept DOI ${VH.concept_doi} resolves to the latest Zenodo deposited edition, which is retired. It is not the current Manual v3 identifier. House mint uses suffix ${DOI_SUFFIX} under prefix 10.83138 after CEO PASS.`))
+  children.push(h(Text, { key: "cite", style: [s.para, { marginTop: 10 }] }, apaCite(null)))
+  children.push(h(Text, { key: "cpr", style: s.caption }, COPYRIGHT))
+  children.push(h(Text, { key: "zen", style: s.caption }, `Earlier deposited edition (retired): ${ZENODO_VERSION_DOI}.`))
   return children
 }
 
 // ── document ──────────────────────────────────────────────────────────────────
 function ManualDocument() {
-  const footerText = `Heavy Metal Certified  ·  Infant and Child Foods Program Manual  ·  ${EDITION_LABEL}  ·  ${BASE_URL}  ·  CC BY 4.0`
+  const footerText = `Heavy Metal Certified  ·  Infant and Child Foods Program Manual  ·  ${EDITION_LABEL}  ·  ${BASE_URL}  ·  All rights reserved`
   const p1 = AuthoredPart("part1-why.md", "Part 1")
   const p2 = AuthoredPart("part2-program.md", "Part 2")
   const p4 = AuthoredPart("part4-lot-testing.md", "Part 4")
@@ -407,35 +359,26 @@ function ManualDocument() {
   const toc = [
     { label: "Part 1", title: p1.title, sections: p1.sections },
     { label: "Part 2", title: p2.title, sections: p2.sections },
-    { label: "Part 3", title: "The Standards", sections: ["3.1 Master limit matrix", "3.2–3.10 Per-subcategory derivations"] },
+    { label: "Part 3", title: "Cat-1 Standards Register", sections: ["Live pages and compiled records", "cert_doi or HOLD reason"] },
     { label: "Part 4", title: p4.title, sections: p4.sections },
     { label: "Part 5", title: p5.title, sections: p5.sections },
   ]
-  const foot = (portrait) => h(Text, { key: "f", style: portrait ? s.footerP : s.footer, fixed: true }, footerText)
+  const foot = () => h(Text, { key: "f", style: s.footerP, fixed: true }, footerText)
 
   return h(
     Document,
-    { title: "HMTc Infant and Child Foods Program Manual", author: "Karen Pendergrass", subject: "Heavy Metal Certified", creator: "Heavy Metal Certified" },
+    { title: "Infant and Child Foods: HMTc Program Manual", author: "Karen Pendergrass", subject: "Heavy Metal Certified", creator: "Heavy Metal Certified" },
     [
-      // Portrait: cover · contents · Part 1 · Part 2 (prose + narrow governance tables)
-      h(Page, { key: "front", size: "LETTER", style: s.pagePortrait }, [
+      h(Page, { key: "doc", size: "LETTER", style: s.pagePortrait }, [
         ...Cover(),
         h(View, { key: "toc", break: true }, Contents(toc)),
         h(View, { key: "p1", break: true }, [p1.head, ...p1.body]),
         h(View, { key: "p2", break: true }, [p2.head, ...p2.body]),
-        foot(true),
-      ]),
-      // Landscape: Part 3 · Part 4 (the wide tabular core)
-      h(Page, { key: "core", size: "LETTER", orientation: "landscape", style: s.pageLand }, [
-        h(View, { key: "p3" }, PartThree()),
+        h(View, { key: "p3", break: true }, PartThree()),
         h(View, { key: "p4", break: true }, [p4.head, ...p4.body]),
-        foot(false),
-      ]),
-      // Portrait: Part 5 · edition record
-      h(Page, { key: "back", size: "LETTER", style: s.pagePortrait }, [
-        h(View, { key: "p5" }, [p5.head, ...p5.body]),
+        h(View, { key: "p5", break: true }, [p5.head, ...p5.body]),
         h(View, { key: "er", break: true }, EditionRecord()),
-        foot(true),
+        foot(),
       ]),
     ],
   )
@@ -444,7 +387,7 @@ function ManualDocument() {
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true })
   await renderToFile(h(ManualDocument), OUT)
-  console.log(`build-cat1-manual-pdf: wrote ${path.relative(REPO, OUT)} (5 parts; ${MATRIX.length} subcategories, ${DERIV.length} derivations)`)
+  console.log(`build-cat1-manual-pdf: wrote ${path.relative(REPO, OUT)} (Manual v3; ${REGISTER.pages.length} live pages, ${SNAP.cert_ready} cert-ready, ${REGISTER.orphans.length} orphan HOLD)`)
 }
 
 main().catch((err) => {

@@ -8,11 +8,20 @@ const earlierManualEdition = infantManualHistory.versions.find(
 )
 const manualSlug = "manuals/infant-and-child-foods"
 
+function houseDoi(value: unknown): string | null {
+  const doi = normalizeDoi(value)
+  return doi && doi.startsWith("10.83138/") ? doi : null
+}
+
 export function currentDocumentDoi(slug: string, fm: Record<string, unknown>): string | null {
   if (slug.startsWith("manuals/")) {
+    // Write-back path: a live house DOI on the page or in the manifest is current.
+    // Zenodo 10.5281 deposits are earlier editions only and never become citation_doi.
+    const fromFm = houseDoi(fm.cert_doi) || houseDoi(fm.manual_doi)
+    if (fromFm) return fromFm
     const manual = manualManifest.manuals.find((item) => `manuals/${item.slug}` === slug)
     if (!manual || manual.status !== "published") return null
-    return normalizeDoi(manual.doi)
+    return houseDoi(manual.doi)
   }
   // A source document's doi is not the DOI of our analysis of that document.
   return normalizeDoi(fm.cert_doi)
@@ -31,7 +40,7 @@ export function DocumentDoi({ slug, fm }: { slug: string; fm: Record<string, unk
     <section class="hmtc-document-doi" aria-label={historical ? "Earlier deposited edition" : "Document DOI"}>
       <p class="hmtc-doi-label">{historical ? "Earlier deposited edition" : "Document DOI"}</p>
       <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer">{doi}</a>
-      {historical && <p class="hmtc-doi-note">{historical.date} · Superseded. This DOI cites the earlier deposited manual; the current web edition has no DOI.</p>}
+      {historical && <p class="hmtc-doi-note">{historical.date} · Earlier deposited edition only. V1 never certified a brand and is retired. The current Manual v3 is minted under prefix 10.83138 after CEO PASS; this page does not invent that DOI.</p>}
     </section>
   )
 }

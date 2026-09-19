@@ -124,8 +124,12 @@ if (fs.existsSync(MANUALS)) {
     for (const key of ["description:", "snapshot:", "connections:"]) {
       if (!new RegExp(`(^|\\n)${key}`).test(fm)) blocking.push(`${rel}  frontmatter missing \`${key}\` (canonical manual hero/rail contract; regenerate via tools/lib/manual-page.mjs)`)
     }
-    // The canonical body sections, each an <h2> carrying the anchor id.
-    for (const id of ["scope", "matrix", "hard", "edition"]) {
+    // Cat-1 Manual v3 uses the locked thin TOC. Other category manuals keep the
+    // shared matrix landing until they are rewritten the same way.
+    const v3Ids = ["principles", "lifecycle", "instruments", "lot-testing", "register", "edition"]
+    const v2Ids = ["scope", "matrix", "hard", "edition"]
+    const ids = f === "infant-and-child-foods.md" ? v3Ids : v2Ids
+    for (const id of ids) {
       if (!new RegExp(`<h2 id="${id}"`).test(body)) blocking.push(`${rel}  missing canonical section <h2 id="${id}"> (regenerate via tools/lib/manual-page.mjs)`)
     }
   }

@@ -63,6 +63,11 @@ const GOLD = [
   ["part5-backmatter.md", "government-limit default method", /government-limit default/i],
   ["part5-backmatter.md", "glossary MaxPoL", /MaxPoL/],
   ["part1-why.md", "limits do not derive from the Index", /Limits do not derive from the Heavy Metal Index|traces to a named sovereign/i],
+  ["part1-why.md", "90% remain-in-program gate", /90% confidence the brand can remain/],
+  ["part4-lot-testing.md", "totals every completing lot", /Totals are run on every completing lot/],
+  ["part4-lot-testing.md", "Lab-informed schedule", /Lab-informed schedule/],
+  ["part4-lot-testing.md", "90% stay-in-program gate", /90% stay-in-program certification gate|90% confidence the brand can remain/],
+  ["part4-lot-testing.md", "decision owner Program Operator", /Decision owner:\s*Program Operator/],
 ]
 for (const [file, label, re] of GOLD) {
   if (!re.test(norm(content[file] || ""))) fail.push(`GOLDEN MISSING [${file}] ${label}`)

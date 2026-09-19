@@ -21,6 +21,14 @@ export function isStandardDocument(fm: Record<string, unknown>, slug = ""): bool
   return String(fm.type) === "standard"
 }
 
+export const MANUAL_SERIES_TITLE = "Heavy Metal Tested & Certified Program Manuals"
+
+export function isManualDocument(fm: Record<string, unknown>, slug = ""): boolean {
+  if (!slug.startsWith("manuals/")) return false
+  if (slug === "manuals/index" || slug.endsWith("/index")) return false
+  return frontmatterBoolean(fm.scholar_eligible) || String(fm.type) === "standard" || String(fm.type) === "manual"
+}
+
 export function frontmatterString(value: unknown): string | undefined {
   if (typeof value !== "string" && typeof value !== "number") return undefined
   const normalized = String(value).trim()
@@ -272,10 +280,12 @@ export function CitationMetadata({
   }
 
   // Standards emit Highwire + ScholarlyArticle on every `/standards/{slug}`
-  // page (ORDER HMTC-SCHOLAR-META-1). Articles/briefings stay on the
+  // page (ORDER HMTC-SCHOLAR-META-1). Manuals use the same chrome when
+  // scholar_eligible (Manual v3). Articles/briefings stay on the
   // scholar_eligible gate and remain technical reports — no journal title.
   // standard-in-development pages still emit nothing.
   const isStandard = isStandardDocument(frontmatter, slugStr)
+  const isManual = isManualDocument(frontmatter, slugStr)
   const isScholarEligible = frontmatterBoolean(frontmatter.scholar_eligible) || isStandard
   if (isScholarEligible) {
     const citationTitle = frontmatterString(frontmatter.title) ?? title
@@ -294,13 +304,16 @@ export function CitationMetadata({
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
     const currentPdf = documentPdf(frontmatter, slugStr)
-    const pdfUrl = isStandard
-      ? standardPdfUrl(frontmatter, slugStr, socialUrl)
+    const pdfUrl = isStandard || isManual
+      ? (frontmatterString(frontmatter.pdf)
+          ? `https://heavymetalcertified.com${frontmatterString(frontmatter.pdf)}`
+          : standardPdfUrl(frontmatter, slugStr, socialUrl))
       : currentPdf
         ? `https://heavymetalcertified.com${currentPdf}`
         : (configuredPdf ?? (hasPdf ? `${socialUrl}.pdf` : undefined))
     const onlineDate = citationOnlineDate(frontmatter, pubDate)
-    if (isStandard) {
+    if (isStandard || isManual) {
+      const seriesTitle = isManual ? MANUAL_SERIES_TITLE : STANDARD_SERIES_TITLE
       const doiUrl = certDoi ? `https://doi.org/${certDoi}` : undefined
       const pdfMedia = {
         "@type": "MediaObject",
@@ -324,7 +337,7 @@ export function CitationMetadata({
         url: socialUrl,
         isAccessibleForFree: true,
         copyrightNotice: STANDARD_RIGHTS,
-        isPartOf: { "@type": "Periodical", name: STANDARD_SERIES_TITLE, publisher: ICS_PUBLISHER },
+        isPartOf: { "@type": "Periodical", name: seriesTitle, publisher: ICS_PUBLISHER },
         encoding: pdfMedia,
         associatedMedia: pdfMedia,
         ...(certDoi
@@ -353,7 +366,7 @@ export function CitationMetadata({
           ))}
           <meta name="citation_publication_date" content={pubDate} />
           {onlineDate && <meta name="citation_online_date" content={onlineDate} />}
-          <meta name="citation_journal_title" content={STANDARD_SERIES_TITLE} />
+          <meta name="citation_journal_title" content={seriesTitle} />
           <meta name="citation_publisher" content={ICS_PUBLISHER_NAME} />
           {certDoi && <meta name="citation_doi" content={certDoi} />}
           <meta name="citation_fulltext_html_url" content={socialUrl} />

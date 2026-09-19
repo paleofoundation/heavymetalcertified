@@ -11,11 +11,11 @@ followed**: one renderer produces every manual, and the build blocks on any devi
 
 ## One renderer, no exceptions
 
-Every Program Manual page is emitted by **`tools/lib/manual-page.mjs`** (`renderManualPage(data)`).
-Both generators call it, so all manuals are byte-identical in design and only the data differs:
+Category manuals other than Cat-1 still use **`tools/lib/manual-page.mjs`** (`renderManualPage(data)`):
 
-- `tools/build-cat1-manual.mjs` — Infant and Child Foods (Cat 1), data from `tools/lib/cat1-manual-data.mjs`.
-- `tools/build-category-manual.mjs --pages=data/standards/<cat>-pages.json` — every other category, data from the pages file's `_meta` block.
+- `tools/build-category-manual.mjs --pages=data/standards/<cat>-pages.json` — every non-Cat-1 category, data from the pages file's `_meta` block.
+
+**Cat-1 Manual v3** is a different document class (the Method v2 governing instrument, not a matrix landing). It is emitted by **`tools/lib/manual-v3-page.mjs`** via `tools/build-cat1-manual.mjs`, with the live register from `tools/lib/cat1-manual-v3.mjs`. It does not reprint the master-limit matrix or the struggle accordion.
 
 The "What is likely to struggle" section is the shared `tools/lib/struggle-section.mjs`. Version
 history is appended by `tools/build-cert-version-history.mjs` from
@@ -37,7 +37,7 @@ in the body is the old duplicate-title defect — the hero title is the HeroBand
 | `type: standard` | Hero KIND badge → "Standard" | matches the canvas chip; no side-effects |
 | `breadcrumb_leaf` | Hero breadcrumb leaf | the short category name |
 | `description` | Hero dek (one sentence) | never leave to auto-derivation |
-| `snapshot` | Hero page-snapshot card | `[{k,v}]`, ≤4 rows (Subcategories · Analyte panel · Method · Web edition) |
+| `snapshot` | Hero page-snapshot card | `[{k,v}]`, ≤4 rows. Cat-1 v3: Live standard pages · Cert-ready · Method · Edition. Other manuals: Subcategories · Analyte panel · Method · Web edition |
 | `author` + `orcid` | Hero byline + ORCID iD | Karen Pendergrass · 0000-0002-2348-7259 |
 | `pdf` | **Rail** PdfCard (the single canonical download) | absolute `/static/manuals/…`; omit when no PDF is served |
 | `hero_action` | Hero download link | mirrors the PDF when served |
@@ -53,17 +53,29 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 `<section>`, so `snavScrollSpy` also lists the markdown-injected `## Version history` — a complete
 "On this page" rail):
 
+**Other category manuals (v2 landing):**
+
 1. `<h2 id="scope">` **Scope and method** — the universal government-limit lead + the category method note.
 2. `<h2 id="matrix">` **Master limit matrix** — one row per subcategory × analyte panel + Basis. Sticky first column, canonical burgundy head (from `.wiki-content thead`, not inline), right-aligned IBM Plex Mono values, and a **Tier 1 / Tier 2** legend.
 3. `<h2 id="hard">` **What is likely to struggle to meet this standard** — a no-JS `<details>` accordion per analyte (`.hmtc-mhard*`, styled in `cert-chrome.scss`), from `struggle-section.mjs`.
 4. `<h2 id="edition">` **About this edition** — prose + the Heavy Metal Index callout (`border-left:3px #9f2727` on `#fdf4f3`).
 5. `## Version history` — markdown table, injected by `build-cert-version-history.mjs` (only when a version record exists).
 
+**Cat-1 Manual v3 (locked thin TOC):**
+
+1. `<h2 id="principles">` **Governing Principles** — the five co-equal objectives (`docs/governance/hmtc-governing-principles.md`).
+2. `<h2 id="lifecycle">` **Program lifecycle and statuses** — A–E, MaxPoL, baseline.
+3. `<h2 id="instruments">` **Mark, MU, CAPA, remediation, ratchet** — current SoT, short.
+4. `<h2 id="lot-testing">` **Lot Testing Schedule** — risk tiers, baseline, reflex, speciation, sampling, lab-informed schedule, 90% stay-in-program gate.
+5. `<h2 id="register">` **Cat-1 Standards Register** — generated from compiled corpus + page `cert_doi` + claim-surface. Incomplete cells are HOLD, not cert-ready.
+6. `<h2 id="edition">` **About this edition** — supersedes Zenodo 10.5281/zenodo.20771543 as an earlier deposited edition only.
+7. `## Version history` — injected as above.
+
 ## Enforcement (always followed)
 
 - **`tools/design-lint.mjs`** (wired into `prebuild`, build-blocking) scans `content/manuals/`:
   no inline bold / `<strong>` / `<b>`; and structural conformance — no body `<h1>`; frontmatter
-  carries `description` / `snapshot` / `connections`; the body carries `<h2 id="scope|matrix|hard|edition">`.
+  carries `description` / `snapshot` / `connections`; the body carries `<h2 id="scope|matrix|hard|edition">` except Cat-1 v3, which carries `<h2 id="principles|lifecycle|instruments|lot-testing|register|edition">`.
 - **`design/v3-acceptance.cert.json`** + `npm run check:v3` (Playwright, release path) assert the
   rendered chrome, the canonical table head, no-bold, and the rail-only download.
 

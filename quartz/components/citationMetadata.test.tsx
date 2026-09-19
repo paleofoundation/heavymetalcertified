@@ -255,3 +255,40 @@ test("marketing pages, manuals, and in-development standards still emit no Schol
   assert.equal(manual, "")
   assert.doesNotMatch(manual, /citation_journal_title|data-standard-scholarly/)
 })
+
+test("scholar_eligible manuals emit Highwire + ScholarlyArticle without inventing a DOI", () => {
+  const fm = {
+    type: "standard",
+    scholar_eligible: true,
+    title: "Infant and Child Foods: HMTc Program Manual",
+    effective_date: "2026-09-19",
+    author: "Karen Pendergrass",
+    scholar_pdf: true,
+    pdf: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf",
+  }
+  const html = render(fm, "manuals/infant-and-child-foods")
+  assert.match(html, /name="citation_title" content="Infant and Child Foods: HMTc Program Manual"/)
+  assert.match(html, /name="citation_author" content="Pendergrass, Karen"/)
+  assert.match(html, /name="citation_journal_title" content="Heavy Metal Tested &amp; Certified Program Manuals"/)
+  assert.match(html, /name="citation_pdf_url"/)
+  assert.doesNotMatch(html, /citation_doi/)
+  const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(json["@type"], "ScholarlyArticle")
+  assert.equal(json.identifier, undefined)
+  assert.match(json.copyrightNotice, /All rights reserved/)
+})
+
+test("a house-minted manual DOI becomes citation_doi after write-back", () => {
+  const html = render(
+    {
+      type: "standard",
+      scholar_eligible: true,
+      title: "Infant and Child Foods: HMTc Program Manual",
+      effective_date: "2026-09-19",
+      author: "Karen Pendergrass",
+      cert_doi: "10.83138/hmtc.manual.infant-and-child-foods",
+    },
+    "manuals/infant-and-child-foods",
+  )
+  assert.match(html, /name="citation_doi" content="10.83138\/hmtc.manual.infant-and-child-foods"/)
+})
