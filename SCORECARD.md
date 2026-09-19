@@ -93,4 +93,5 @@ Live USER-RUN steps: `docs/mint-manual-v3-user-run.md`
 | `node tools/audit-cat1-manual-pdf.mjs` | 0 |
 | `node --test tools/tests/cat1-manual-v3.test.mjs` | 0 |
 | citationMetadata manuals ScholarlyArticle tests | 0 |
-| `npm run check:v3` | run after first push (needs `public/` build) |
+| `npm run check:v3` (full site) | 1 — crashed on unrelated `/` hover (`#what p a` intercepted by search overlay). Not a Manual v3 assertion. |
+| Focused rendered gate `/manuals/infant-and-child-foods` | 0 — 30/30 v3-acceptance assertions pass, including thin-TOC ids, retired `#scope/#matrix/#hard` absent, Zenodo earlier-edition only, `citation_doi` absent |

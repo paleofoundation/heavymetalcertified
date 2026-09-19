@@ -17,7 +17,7 @@ scholar_pdf: true
 doi_suffix: "hmtc.manual.infant-and-child-foods"
 earlier_edition_doi: "10.5281/zenodo.20771543"
 edition: "Manual v3"
-methodology_version: "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"
+methodology_version: "Method v2.0: government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"
 pdf: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf"
 hero_action: { label: "Download PDF · Manual v3", href: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf" }
 snapshot:
@@ -132,12 +132,12 @@ rail_box:
 <!-- BEGIN: hmtc-version-history -->
 ## Version history
 
-The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date — the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date: the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
 
 | Version | Date | Status | DOI | What changed |
 | --- | --- | --- | --- | --- |
 | [Manual v3](/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf) | 2026-09-19 | **current** | USER-RUN live deposit under 10.83138/hmtc.manual.infant-and-child-foods | Method v2 governing instrument. Thin TOC: five Governing Principles; program lifecycle; mark/MU/CAPA/remediation/ratchet; Lot Testing Schedule with lab-informed assignment and the 90% stay-in-program gate; live Cat-1 Standards Register. V1 Zenodo edition retired as an earlier deposited edition only. |
-| [2026 web edition](/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf) | 2026-08-06 | superseded | — | Nine-subcategory web reorganization under Method v2.0. Superseded by Manual v3. Did not mint a house DOI. |
+| [2026 web edition](/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-2026-v2.pdf) | 2026-08-06 | superseded | - | Nine-subcategory web reorganization under Method v2.0. Superseded by Manual v3. Did not mint a house DOI. |
 | 2026 deposit (rev.) | 2026-06-20 | superseded | [10.5281/zenodo.20771543](https://doi.org/10.5281/zenodo.20771543) | Earlier deposited 384-page volume. Never certified a brand. Retired; citable only as an earlier deposited edition. |
 | 2026 deposit (v0) | 2026-05-18 | superseded | [10.5281/zenodo.20270512](https://doi.org/10.5281/zenodo.20270512) | First public Zenodo deposit of the standalone 384-page volume. Retired. |
 

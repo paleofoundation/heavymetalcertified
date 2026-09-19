@@ -61,7 +61,7 @@ const page = renderManualV3Page({
     `doi_suffix: "${DOI_SUFFIX}"`,
     `earlier_edition_doi: "${ZENODO_VERSION_DOI}"`,
     `edition: "${EDITION}"`,
-    "methodology_version: \"Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)\"",
+    "methodology_version: \"Method v2.0: government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)\"",
   ],
   register,
 })

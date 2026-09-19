@@ -40,7 +40,7 @@ function versionBlock(rec) {
       const base = v.label || `v${v.version}`
       const label = v.pdf ? `[${base}](${v.pdf})` : base
       const status = v.status === "current" ? "**current**" : v.status || "superseded"
-      const doiCell = v.doi ? `[${v.doi}](https://doi.org/${v.doi})` : v.doi_pending || "—"
+      const doiCell = v.doi ? `[${v.doi}](https://doi.org/${v.doi})` : v.doi_pending || "-"
       return hasDoi
         ? `| ${label} | ${v.date} | ${status} | ${doiCell} | ${esc(v.summary || "")} |`
         : `| ${label} | ${v.date} | ${status} | ${esc(v.summary || "")} |`
@@ -54,7 +54,7 @@ function versionBlock(rec) {
   return `${BEGIN}
 ## Version history
 
-The dated editions of this ${noun}. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the ${noun} required on any date — the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+The dated editions of this ${noun}. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the ${noun} required on any date: the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
 
 ${head}
 ${rows}${conceptNote}

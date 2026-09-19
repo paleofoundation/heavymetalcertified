@@ -173,7 +173,7 @@ const idxFront = [
   'title: "Program Manuals"',
   "type: manuals-index",
   "audience: [regulator, brand-legal, retailer-compliance, certifier]",
-  `description: "The bound, citable edition of a category's standards. Each manual carries a DOI, a named author, a revision date, and the full derivation of every limit it publishes — so a limit can be cited in a filing years after the web page has moved on."`,
+  `description: "The bound, citable edition of a category's standards. Each manual carries a DOI, a named author, a revision date, and the full derivation of every limit it publishes, so a limit can be cited in a filing years after the web page has moved on."`,
   "snapshot:",
   `  - { k: "Published manuals", v: "${num(pubCount)}" }`,
   `  - { k: "Subcategory standards", v: "${num(totalSubcats)}" }`,
