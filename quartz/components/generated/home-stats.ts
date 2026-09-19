@@ -28,28 +28,12 @@ export const homeStats = {
       "349"
     ],
     [
-      "Carrying a firm limit",
-      "262"
-    ],
-    [
-      "Firm analyte limits",
-      "2,516"
-    ],
-    [
-      "Certified analyte panel",
-      "8"
-    ],
-    [
-      "Priority metals",
-      "8"
-    ],
-    [
       "Live DOIs",
       "262"
     ],
     [
-      "Current edition",
-      "2026"
+      "Priority metals",
+      "8"
     ]
   ],
   "exclusions": {
