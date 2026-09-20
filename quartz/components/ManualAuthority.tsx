@@ -22,7 +22,7 @@ export function manualEditionChip(fm: Record<string, unknown>): string {
   )
 }
 
-/** Governing-instrument strip: label, edition chip, Download PDF + Cite. */
+/** Governing-instrument strip: plain edition metadata and the PDF download button. */
 export function ManualAuthorityStrip({ fm }: { fm: Record<string, unknown> }) {
   const pdfHref = frontmatterString(fm.pdf)
   const editionChip = manualEditionChip(fm)
@@ -30,16 +30,13 @@ export function ManualAuthorityStrip({ fm }: { fm: Record<string, unknown> }) {
   return (
     <div class="hmtc-manual-authority" data-manual-authority="1">
       <div class="hmtc-manual-authority-label">Governing instrument</div>
-      {editionChip ? <div class="hmtc-edition-chip">{editionChip}</div> : null}
+      {editionChip ? <div class="hmtc-manual-edition">{editionChip}</div> : null}
       <div class="hmtc-manual-authority-actions">
         {pdfHref ? (
           <a class="hmtc-manual-dl" href={pdfHref} download>
             Download PDF
           </a>
         ) : null}
-        <a class="hmtc-manual-cite" href="#hmtc-page-citation">
-          Cite
-        </a>
       </div>
     </div>
   )

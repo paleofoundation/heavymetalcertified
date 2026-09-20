@@ -805,14 +805,20 @@
       { "sel": "aside.snav .hmtc-manual-authority", "prop": "absent", "want": true, "note": "content left rail must not duplicate the Governing Instrument block." },
       { "sel": "aside.snav .hmtc-hb-cover", "prop": "absent", "want": true, "note": "content left rail must not duplicate the portrait cover." },
       { "sel": ".hmtc-manual-authority .hmtc-manual-cover", "prop": "absent", "want": true, "note": "authority strip no longer carries its own cover." },
-      { "sel": ".hmtc-edition-chip", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-edition-chip", "prop": "background-color", "want": "#fdf4f3", "note": "cream chip on burgundy hero — not cream-on-cream." },
-      { "sel": ".hmtc-edition-chip", "prop": "color", "want": "#9f2727" },
-      { "sel": ".hmtc-manual-authority-label", "prop": "color", "want": "#ffffff", "note": "toHex drops alpha; label is rgba(255,255,255,.65) on #9f2727." },
-      { "sel": ".hmtc-heroband a.hmtc-manual-dl", "prop": "count", "want": 1, "note": "Download PDF lives in the hero left-column authority strip." },
-      { "sel": ".hmtc-heroband a.hmtc-manual-dl", "prop": "color", "want": "#ffffff", "note": "burgundy-on-burgundy would fail; links are white on the red hero." },
-      { "sel": ".hmtc-heroband a.hmtc-manual-cite", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-heroband a.hmtc-manual-cite", "prop": "color", "want": "#ffffff" },
+      { "sel": ".hmtc-edition-chip", "prop": "absent", "want": true },
+      { "sel": ".hmtc-manual-edition", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-manual-edition", "prop": "background-color", "want": "rgba(0, 0, 0, 0)" },
+      { "sel": ".hmtc-manual-edition", "prop": "border-top-width", "want": "0px" },
+      { "sel": ".hmtc-manual-edition", "prop": "padding", "want": "0px" },
+      { "sel": ".hmtc-manual-edition", "prop": "color", "want": "#ffffff" },
+      { "sel": ".hmtc-manual-authority-label", "prop": "color", "want": "#ffffff" },
+      { "sel": ".hmtc-manual-dl[download]", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-manual-dl", "prop": "color", "want": "#9f2727" },
+      { "sel": ".hmtc-manual-dl", "prop": "background-color", "want": "#ffffff" },
+      { "sel": ".hmtc-manual-dl", "prop": "border-radius", "want": "2px" },
+      { "sel": ".hmtc-manual-cite", "prop": "absent", "want": true },
+      { "sel": ".hmtc-manual-authority a[href=\"#hmtc-page-citation\"]", "prop": "absent", "want": true },
+      { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 },
       { "sel": "aside.snav a[download]", "prop": "count", "want": 0, "note": "Download PDF moved out of the left rail." },
       { "sel": "#principles", "prop": "count", "want": 1, "note": "Manual v3 thin TOC: Governing Principles." },
       { "sel": "#lifecycle", "prop": "count", "want": 1 },
@@ -972,6 +978,18 @@
     ]
   },
   "responsive": [
+    {
+      "viewport": { "width": 390, "height": 844 },
+      "pages": {
+        "/manuals/infant-and-child-foods": [
+          { "sel": ".hmtc-manual-edition", "prop": "background-color", "want": "rgba(0, 0, 0, 0)" },
+          { "sel": ".hmtc-manual-edition", "prop": "border-top-width", "want": "0px" },
+          { "sel": ".hmtc-manual-dl", "prop": "background-color", "want": "#ffffff" },
+          { "sel": ".hmtc-manual-dl", "prop": "color", "want": "#9f2727" },
+          { "sel": ".hmtc-manual-cite", "prop": "absent", "want": true }
+        ]
+      }
+    },
     {
       "viewport": {"width": 1440, "height": 1000},
       "pages": {
