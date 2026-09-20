@@ -581,7 +581,7 @@ header.hmi-topnav-shell::after {
 .hmtc-hb-left { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 48px 28px; background: rgba(255, 255, 255, 0.09); }
 .hmtc-hb-context { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 12px; padding: 52px 28px 40px; font-size: 14px; }
 .hmtc-hb-context--cover,
-.hmtc-hb-context--authority { justify-content: center; padding: 40px 28px; }
+.hmtc-hb-context--authority { justify-content: flex-start; gap: var(--space-3); padding: var(--space-4) 28px; }
 .hmtc-hb-cover {
   display: block;
   width: 100%;
@@ -593,21 +593,13 @@ header.hmi-topnav-shell::after {
 }
 .hmtc-hb-cover img { display: block; width: 100%; height: auto; }
 
-// Governing Instrument strip sits under the portrait cover in the 264px
+// Edition and download strip sits under the portrait cover in the 264px
 // hero left column. Editions are plain metadata; the PDF is the filled action.
 .hmtc-manual-authority {
   width: 100%;
   max-width: 188px;
   margin: 0;
   padding: 0;
-}
-.hmtc-manual-authority-label {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 9.5px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: var(--space-2);
 }
 .hmtc-manual-edition {
   font-family: "IBM Plex Mono", monospace;
@@ -624,7 +616,11 @@ header.hmi-topnav-shell::after {
   align-items: baseline;
 }
 .hmtc-manual-dl {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 44px;
   font-family: "IBM Plex Mono", monospace;
   font-size: 10.5px;
   letter-spacing: 0.08em;
@@ -634,7 +630,7 @@ header.hmi-topnav-shell::after {
   background: #fff;
   border: 1px solid #fff;
   border-radius: 2px;
-  padding: 5px 11px;
+  padding: var(--space-1) var(--space-2);
 }
 .hmtc-manual-dl:hover { color: #9f2727; background: #fdf4f3; }
 .hmtc-manual-dl:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
@@ -745,7 +741,7 @@ header.hmi-topnav-shell::after {
   .hmtc-heroband-inner { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 0; }
   .hmtc-hb-context:not(.hmtc-hb-context--cover):not(.hmtc-hb-context--authority) { display: none; }
   .hmtc-hb-context--cover,
-  .hmtc-hb-context--authority { display: flex; padding: 28px 24px 0; align-items: flex-start; }
+  .hmtc-hb-context--authority { display: flex; padding: var(--space-3); align-items: flex-start; }
   .hmtc-hb-cover { max-width: 160px; }
   .hmtc-manual-authority { max-width: 160px; }
   .hmtc-hb-title { font-size: 34px !important; }
@@ -1213,6 +1209,7 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .hmtc-author-byline a { text-decoration: none; }
 .hmtc-author-name:hover { text-decoration: underline; }
 .hmtc-author-orcid { display: inline-flex; }
+.hmtc-author-bio { font: 13px/1.65 var(--bodyFont); color: rgba(255,255,255,.84); margin: var(--space-2) 0 0; }
 .hmtc-author-updated { font: 12px/1.6 var(--bodyFont); color: rgba(255,255,255,.75); margin: 14px 0 0; }
  .hmtc-author-popover { position: absolute; top: 100%; right: 0; z-index: 70; width: min(340px,calc(100vw - 48px)); box-sizing: border-box; padding: 22px; background: #fffdfb; color: #392b2b; border: 1px solid #e7ceca; border-top: 5px solid #f2dcda; border-radius: 14px 14px 32px 14px; box-shadow: 0 16px 40px #3c101033; visibility: hidden; opacity: 0; transition: opacity 120ms ease; font: 14px/1.55 var(--bodyFont); }
 .hmtc-author-hover:focus-within:not([data-dismissed]) .hmtc-author-popover { visibility: visible; opacity: 1; }

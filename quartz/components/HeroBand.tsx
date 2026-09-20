@@ -133,7 +133,7 @@ export default (() => {
     const element = pageElement(String(slug))
     const isManualPage = String(slug).startsWith("manuals/") && String(slug) !== "manuals" && String(slug) !== "manuals/index"
     const showAuthority = isManualAuthorityPage(String(slug), fm)
-    const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/") && !isManualPage
+    const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/")
 
     const author = fm.author ? String(fm.author) : undefined
     const orcid = fm.orcid ? String(fm.orcid) : undefined
@@ -206,7 +206,7 @@ export default (() => {
             ) : dek ? (
               <p class="hmtc-hb-dek">{dek}</p>
             ) : null}
-            {heroMeta.length || author || updated || (heroAction && heroAction.label) ? (
+            {heroMeta.length || (!hasAuthorCard && (author || updated)) || (heroAction && heroAction.label) ? (
               <div class="hmtc-hb-meta">
                 {heroMeta.length ? (
                   heroMeta.map((s) => <span class="hmtc-hb-stamp">{s}</span>)
@@ -245,7 +245,7 @@ export default (() => {
             {isManualPage ? null : <DocumentActions fm={fm} slug={String(slug)} />}
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
-          {hasAuthorCard && <AuthorCard updated={updated} />}
+          {hasAuthorCard && <AuthorCard updated={updated} showBio={isManualPage} />}
           {hasSnapshot ? (
             <div class="hmtc-hb-snap">
               <div class="hmtc-hb-snap-head">{snapTitle}</div>

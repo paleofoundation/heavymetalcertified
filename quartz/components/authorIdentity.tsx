@@ -32,7 +32,7 @@ export const OrcidIcon = () => (
   </svg>
 )
 
-export function AuthorCard({ updated }: { updated?: string }) {
+export function AuthorCard({ updated, showBio = false }: { updated?: string; showBio?: boolean }) {
   return (
     <section class="hmtc-author-card" aria-label="Author">
       <div class="hmtc-author-hover" data-author-card>
@@ -56,6 +56,7 @@ export function AuthorCard({ updated }: { updated?: string }) {
           <a class="hmtc-author-name" href={KAREN.profile}>{KAREN.name}</a>
           <a class="hmtc-author-orcid" href={`https://orcid.org/${KAREN.orcid}`} target="_blank" rel="noopener noreferrer" aria-label={`ORCID iD ${KAREN.orcid}`} title={`ORCID iD ${KAREN.orcid}`}><OrcidIcon /></a>
         </div>
+        {showBio && <p class="hmtc-author-bio">{KAREN.bio}</p>}
         {updated && <p class="hmtc-author-updated">Last updated: {updated}</p>}
       </div>
     </section>

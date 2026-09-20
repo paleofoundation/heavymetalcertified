@@ -29,7 +29,6 @@ export function ManualAuthorityStrip({ fm }: { fm: Record<string, unknown> }) {
 
   return (
     <div class="hmtc-manual-authority" data-manual-authority="1">
-      <div class="hmtc-manual-authority-label">Governing instrument</div>
       {editionChip ? <div class="hmtc-manual-edition">{editionChip}</div> : null}
       <div class="hmtc-manual-authority-actions">
         {pdfHref ? (
