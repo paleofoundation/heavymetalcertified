@@ -26,10 +26,6 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const canonicalUrl = `https://heavymetalcertified.com/${slug}`
   const today = todayIsoDate()
 
-  const citationLine = certDoi
-    ? `${author}. "${title}". ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
-    : `${author}. "${title}". ${canonicalUrl}. Retrieved ${today}.`
-
   // Year for reference-manager records: prefer the page's updated/established
   // year, fall back to the retrieval year.
   const updated = frontmatter
@@ -37,6 +33,14 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     : undefined
   const year = (updated ?? today).match(/\b(19|20)\d{2}\b/)?.[0] ?? today.slice(0, 4)
   const shareText = `${title}, Heavy Metal Certified`
+  const isManual = String(slug).startsWith("manuals/") && String(slug) !== "manuals/index"
+  const apaAuthor = author === "Karen Pendergrass" ? "Pendergrass, K." : author
+  const citationLine =
+    isManual && certDoi
+      ? `${apaAuthor} (${year}). ${title}. Institute of Contaminant Standards. https://doi.org/${certDoi}`
+      : certDoi
+        ? `${author}. "${title}". ${canonicalUrl} (DOI: ${certDoi}). Retrieved ${today}.`
+        : `${author}. "${title}". ${canonicalUrl}. Retrieved ${today}.`
 
   return (
     <aside
@@ -71,6 +75,9 @@ const CiteThisPage: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
       </div>
       <div data-hmi-cite-detail>
         <p data-hmi-cite-text>{citationLine}</p>
+        {isManual ? (
+          <p class="hmi-cite-rights">© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.</p>
+        ) : null}
         <div class="hmi-cite-detail-copy">
           <button type="button" data-hmi-cite-copy>Copy citation</button>
           <button type="button" data-hmi-cite-bibtex title="Download a BibTeX record for Zotero, Mendeley, EndNote, or LaTeX.">

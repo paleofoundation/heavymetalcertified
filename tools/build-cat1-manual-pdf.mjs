@@ -32,7 +32,7 @@ import path from "node:path"
 import React from "react"
 import { Document, Page, View, Text, StyleSheet, renderToFile } from "@react-pdf/renderer"
 import { registerFonts } from "./pdf/fonts.mjs"
-import { buildRegister, snapshotFromRegister, apaCite, COPYRIGHT, ZENODO_VERSION_DOI, DOI_SUFFIX } from "./lib/cat1-manual-v3.mjs"
+import { buildRegister, snapshotFromRegister, apaCite, COPYRIGHT, ZENODO_VERSION_DOI, DOI_SUFFIX, readExistingHouseDoi } from "./lib/cat1-manual-v3.mjs"
 
 registerFonts()
 const h = React.createElement
@@ -43,6 +43,7 @@ const OUT_FILE = "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf"
 const OUT = path.join(OUT_DIR, OUT_FILE)
 const CONTENT_DIR = path.join(REPO, "data/manuals/cat1-manual")
 const VH = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/version-history/infant-and-child-foods.json"), "utf8"))
+const HOUSE_DOI = readExistingHouseDoi()
 const BASE_URL = "https://heavymetalcertified.com/manuals/infant-and-child-foods"
 
 // ── colours (the approved scholarly palette, HMTc red) ───────────────────────
@@ -304,7 +305,7 @@ function Cover() {
         "Manual v3 is the Method v2 governing instrument for Category 1. Thin table of contents: the five Governing Principles; program lifecycle and statuses; mark, measurement uncertainty, CAPA, remediation, and the standards ratchet; the Lot Testing Schedule (lab-informed assignment and the 90% stay-in-program gate); and the live Cat-1 Standards Register. It does not reprint per-analyte master-table walls. The earlier Zenodo deposit is an earlier deposited edition only. V1 never certified a brand and is retired.",
       ),
     ]),
-    h(Text, { key: "cite", style: [s.coverText, { marginTop: 10 }] }, apaCite(null)),
+    h(Text, { key: "cite", style: [s.coverText, { marginTop: 10 }] }, apaCite(HOUSE_DOI)),
     h(Text, { key: "cpr", style: [s.coverText, { marginTop: 6 }] }, COPYRIGHT),
   ]
 }
@@ -343,7 +344,7 @@ function EditionRecord() {
   ]
   if (VH.concept_doi)
     children.push(h(Text, { key: "cd", style: s.caption }, `The Zenodo concept DOI ${VH.concept_doi} resolves to the latest Zenodo deposited edition, which is retired. It is not the current Manual v3 identifier. House mint uses suffix ${DOI_SUFFIX} under prefix 10.83138 after CEO PASS.`))
-  children.push(h(Text, { key: "cite", style: [s.para, { marginTop: 10 }] }, apaCite(null)))
+  children.push(h(Text, { key: "cite", style: [s.para, { marginTop: 10 }] }, apaCite(HOUSE_DOI)))
   children.push(h(Text, { key: "cpr", style: s.caption }, COPYRIGHT))
   children.push(h(Text, { key: "zen", style: s.caption }, `Earlier deposited edition (retired): ${ZENODO_VERSION_DOI}.`))
   return children

@@ -277,13 +277,18 @@ function registerHtml(reg) {
 }
 
 function editionHtml(doi) {
+  const mintPara = doi
+    ? p(
+        `The current edition is identified by house DOI <a href="https://doi.org/${esc(doi)}" style="color:${LINK}">${esc(doi)}</a> (<a href="https://doi.org/${esc(doi)}" style="color:${LINK}">https://doi.org/${esc(doi)}</a>). The earlier Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> remains citable only as an earlier deposited edition.`,
+      )
+    : p(
+        `House mint, when the CEO deposits live, uses suffix <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:${ACCENT}">hmtc.manual.infant-and-child-foods</span> under prefix 10.83138 (Fabrica VAJU.HDAWAI). This page does not invent that DOI.`,
+      )
   return (
     p(
       `This is Manual v3, the Method v2 governing instrument for Category 1. It supersedes the earlier deposited Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> (concept DOI <a href="https://doi.org/${ZENODO_CONCEPT_DOI}" style="color:${LINK}">${ZENODO_CONCEPT_DOI}</a>). That earlier deposited edition never certified a brand. V1 is retired. It remains citable only as an earlier deposited edition.`,
     ) +
-    p(
-      `House mint, when the CEO deposits live, uses suffix <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:${ACCENT}">hmtc.manual.infant-and-child-foods</span> under prefix 10.83138 (Fabrica VAJU.HDAWAI). This page does not invent that DOI.`,
-    ) +
+    mintPara +
     `<div style="${CALL}"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0 0 12px;max-width:74ch">${apaCite(doi)}</p><p style="font-size:13.5px;line-height:1.7;color:#5a4141;margin:0">${COPYRIGHT}</p></div>`
   )
 }

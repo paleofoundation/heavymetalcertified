@@ -17,7 +17,7 @@ import {
 
 const root = fileURLToPath(new URL("../../", import.meta.url))
 
-test("Cat-1 rail cover stays the tall v3 PNG", () => {
+test("Cat-1 hero cover stays the tall v3 PNG", () => {
   const cover = resolveCover({ typeName: "manuals", slug: "infant-and-child-foods", repo: root })
   assert.ok(cover)
   assert.equal(cover.rel, "/static/manuals/covers/infant-and-child-foods-v3.png")
@@ -59,15 +59,16 @@ test("mergeCoverRelatedIdentifiers is idempotent on the OG URL", () => {
 })
 
 test("mint dry-run for infant-and-child-foods prints HasPart URL Image 1200×630 OG", () => {
-  const result = spawnSync(process.execPath, [path.join(root, "tools/mint-dois.mjs"), "--types=manuals", "--slug=infant-and-child-foods"], {
+  const result = spawnSync(process.execPath, [path.join(root, "tools/mint-dois.mjs"), "--update-covers", "--types=manuals", "--slug=infant-and-child-foods"], {
     cwd: root,
     encoding: "utf8",
     env: { PATH: process.env.PATH, DATACITE_MODE: "test" },
   })
   assert.equal(result.status, 0, result.stdout + result.stderr)
   assert.match(result.stdout, /DRY-RUN/)
-  assert.match(result.stdout, /manuals\/infant-and-child-foods: HasPart URL Image https:\/\/heavymetalcertified\.com\/static\/manuals\/covers\/infant-and-child-foods-v3-og\.png/)
-  assert.doesNotMatch(result.stdout, /covers\/infant-and-child-foods-v3\.png/)
+  assert.match(result.stdout, /already-deposited/)
+  assert.match(result.stdout, /manuals\/infant-and-child-foods  10\.83138\/hmtc\.manual\.infant-and-child-foods  HasPart URL Image https:\/\/heavymetalcertified\.com\/static\/manuals\/covers\/infant-and-child-foods-v3-og\.png/)
+  assert.doesNotMatch(result.stdout, /covers\/infant-and-child-foods-v3\.png[^-]/)
   assert.doesNotMatch(result.stdout, /LIVE/)
 })
 

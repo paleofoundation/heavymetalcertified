@@ -60,3 +60,11 @@ test("Cat-1 body is lead + airy principles; no invented DOI; no MaxPoL ladder", 
   assert.ok(wordCount(dek) <= HERO_DEK_MAX_WORDS)
   assert.equal(sentenceCount(dek), 1)
 })
+
+test("house write-back cite is APA with doi.org and All rights reserved", () => {
+  const doi = `${HOUSE_PREFIX}/${DOI_SUFFIX}`
+  const html = renderManualV3Body({ certDoi: doi })
+  assert.match(html, new RegExp(`https://doi.org/${doi.replace(/\//g, "\\/")}`))
+  assert.match(html, /All rights reserved/)
+  assert.doesNotMatch(html, /CC BY|registration pending|does not invent that DOI/i)
+})

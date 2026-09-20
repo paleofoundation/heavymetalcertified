@@ -1,7 +1,7 @@
 // Shared cover-image contract for landing-page OG tags and DataCite deposits.
 //
 // Two rasters per manual (Karen lock 2026-09-20):
-//   Rail (ManualAuthority):  tall first-page PNG  /static/manuals/covers/<stem>.png
+//   Hero left panel:         tall first-page PNG  /static/manuals/covers/<stem>.png
 //   Unfurl / DataCite:       1200×630 letterbox   /static/manuals/covers/<stem>-og.png
 // og:image / twitter:image MUST be landscape summary_large_image. The tall PDF
 // page is never the social card.

@@ -150,13 +150,8 @@ test("a superseded manual DOI cannot become the current web edition DOI", () => 
     { ...publication, type: "standard", cert_doi: "10.5281/zenodo.20771543" },
     "manuals/infant-and-child-foods",
   )
-  assert.doesNotMatch(html, /citation_doi/)
-  assert.ok(
-    citationMetadataIssues("manuals/infant-and-child-foods", {
-      ...publication,
-      cert_doi: "10.5281/zenodo.20771543",
-    }).some((issue) => issue.code === "excluded-document-doi"),
-  )
+  assert.doesNotMatch(html, /citation_doi" content="10.5281/)
+  assert.match(html, /citation_doi" content="10.83138\/hmtc.manual.infant-and-child-foods"/)
 })
 
 test("every /standards/{slug} page emits Highwire + ScholarlyArticle even when scholar_eligible is false", () => {
@@ -260,17 +255,15 @@ test("scholar_eligible manuals emit Highwire + ScholarlyArticle without inventin
   const fm = {
     type: "standard",
     scholar_eligible: true,
-    title: "Infant and Child Foods: HMTc Program Manual",
-    effective_date: "2026-09-19",
+    title: "Seafood: HMTc Program Manual",
+    effective_date: "2026-08-06",
     author: "Karen Pendergrass",
     scholar_pdf: true,
-    pdf: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf",
   }
-  const html = render(fm, "manuals/infant-and-child-foods")
-  assert.match(html, /name="citation_title" content="Infant and Child Foods: HMTc Program Manual"/)
+  const html = render(fm, "manuals/seafood")
+  assert.match(html, /name="citation_title" content="Seafood: HMTc Program Manual"/)
   assert.match(html, /name="citation_author" content="Pendergrass, Karen"/)
   assert.match(html, /name="citation_journal_title" content="Heavy Metal Tested &amp; Certified Program Manuals"/)
-  assert.match(html, /name="citation_pdf_url"/)
   assert.doesNotMatch(html, /citation_doi/)
   const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
   assert.equal(json["@type"], "ScholarlyArticle")

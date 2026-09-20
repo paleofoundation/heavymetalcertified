@@ -46,8 +46,9 @@ export const defaultContentPageLayout: PageLayout = {
   // 3-column shell; the home page opts out (it carries its own hero in content).
   beforeBody: [Component.HeroBand()],
   // Proof's curated left rail (.snav): manuals open with the authority
-  // register (PDF cover + download + cite + edition chip). Other pages
-  // keep section nav. ManualAuthority self-gates to /manuals/<slug>.
+  // register (download + cite + edition chip). The portrait cover lives
+  // in the hero left panel. Other pages keep section nav. ManualAuthority
+  // self-gates to /manuals/<slug>.
   left: [
     Component.ManualAuthority(),
     Component.Snav(),
