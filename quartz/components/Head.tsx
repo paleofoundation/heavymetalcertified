@@ -1,6 +1,14 @@
 import { CitationMetadata, frontmatterBoolean, frontmatterString } from "./citationMetadata"
 import ResearcherProfileMetadata from "./ResearcherProfileMetadata"
 import { i18n } from "../i18n"
+import {
+  absoluteHttpsAsset,
+  DEFAULT_OG_HEIGHT,
+  DEFAULT_OG_IMAGE,
+  DEFAULT_OG_WIDTH,
+  pageCoverDims,
+  pageCoverSrc,
+} from "../util/documentCover"
 import { canonicalUrl, FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
@@ -110,7 +118,15 @@ export default (() => {
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
     )
-    const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const coverSrc = pageCoverSrc(fileData.frontmatter as Record<string, unknown> | undefined)
+    const ogImageDefaultPath = absoluteHttpsAsset(DEFAULT_OG_IMAGE, cfg.baseUrl ?? "example.com")
+    const ogImagePath = coverSrc
+      ? absoluteHttpsAsset(coverSrc, cfg.baseUrl ?? "example.com")
+      : ogImageDefaultPath
+    const coverDims = coverSrc ? pageCoverDims(fileData.frontmatter as Record<string, unknown> | undefined) : {}
+    const ogImageWidth = coverSrc ? coverDims.width : String(DEFAULT_OG_WIDTH)
+    const ogImageHeight = coverSrc ? coverDims.height : String(DEFAULT_OG_HEIGHT)
+    const ogImageAlt = coverSrc ? `Cover of ${baseTitle}` : socialDescription
     const ogType = isArticlePage(fileData.frontmatter, fileData.slug) ? "article" : "website"
 
     return (
@@ -143,22 +159,23 @@ export default (() => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={socialDescription} />
         <meta property="og:description" content={socialDescription} />
-        <meta property="og:image:alt" content={socialDescription} />
+        <meta property="og:image:alt" content={ogImageAlt} />
+        <meta name="twitter:image:alt" content={ogImageAlt} />
 
         {!usesCustomOgImage && (
           <>
-            <meta property="og:image" content={ogImageDefaultPath} />
-            <meta property="og:image:url" content={ogImageDefaultPath} />
-            <meta name="twitter:image" content={ogImageDefaultPath} />
-            {/* Explicit dimensions of the branded default card (static/og-image.png,
-                built by tools/build-cert-brand-assets.mjs). Scrapers that require
-                og:image:width/height — LinkedIn, Slack — need these to render the
-                preview at all rather than dropping to a bare-URL card. */}
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
+            <meta property="og:image" content={ogImagePath} />
+            <meta property="og:image:url" content={ogImagePath} />
+            <meta name="twitter:image" content={ogImagePath} />
+            {/* Cover PNGs (pdf_cover) win over the branded default card. Dimensions
+                come from frontmatter when a cover exists; default card is 1200x630
+                (tools/build-cert-brand-assets.mjs). Scrapers that require
+                og:image:width/height — LinkedIn, Slack, ReadCube — need these. */}
+            {ogImageWidth && <meta property="og:image:width" content={ogImageWidth} />}
+            {ogImageHeight && <meta property="og:image:height" content={ogImageHeight} />}
             <meta
               property="og:image:type"
-              content={`image/${(getFileExtension(ogImageDefaultPath) ?? "png").replace(/^\./, "")}`}
+              content={`image/${(getFileExtension(ogImagePath) ?? "png").replace(/^\./, "")}`}
             />
           </>
         )}

@@ -21,6 +21,7 @@ import {
   readExistingHouseDoi,
 } from "./lib/cat1-manual-v3.mjs"
 import { renderManualV3Page } from "./lib/manual-v3-page.mjs"
+import { resolveCover } from "./lib/document-cover.mjs"
 
 const REPO = process.cwd()
 const OUT = path.join(REPO, "content/manuals/infant-and-child-foods.md")
@@ -34,13 +35,17 @@ const railBody = pdfServed
   ? `${EDITION} current (${EDITION_DATE}, Method v2.0). Live pages ${snap.live_pages}; cert-ready ${snap.cert_ready}. The v3 PDF is downloadable here. House DOI is minted under prefix 10.83138 after CEO PASS. The earlier Zenodo deposit ${ZENODO_VERSION_DOI} is an earlier deposited edition only.`
   : `${EDITION} current (${EDITION_DATE}, Method v2.0). Live pages ${snap.live_pages}; cert-ready ${snap.cert_ready}. The v3 PDF is in preparation. House DOI is minted under prefix 10.83138 after CEO PASS. The earlier Zenodo deposit ${ZENODO_VERSION_DOI} is an earlier deposited edition only.`
 
+const cover = pdfServed ? resolveCover({ typeName: "manuals", slug: "infant-and-child-foods" }) : null
+
 const page = renderManualV3Page({
   title: CITATION_TITLE,
   category: 1,
   manualSlug: "infant-and-child-foods",
   categoryName: "Infant and Child Foods",
   description: "The Method v2 governing instrument for Category 1.",
-  pdfCover: pdfServed ? "/static/manuals/covers/infant-and-child-foods-v3.png" : null,
+  pdfCover: cover?.rel ?? null,
+  ogImageWidth: cover?.width,
+  ogImageHeight: cover?.height,
   editionChip: "Manual v3 · Method v2",
   snapshot: snap.snapshot,
   connections: [

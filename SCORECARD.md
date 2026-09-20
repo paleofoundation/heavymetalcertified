@@ -1,67 +1,106 @@
-# SCORECARD — CAT1-STATUS-V2-KILL-MAXPOL-1
+# SCORECARD — HMTC-OG-COVER-DATACITE-1
 
-Program-wide replacement of the MaxPoL **A–E certification ladder** with the Method v2
-status lifecycle. **HOLD:** no DataCite mint runs until CEO/Elon PASS on the live page + this scorecard.
+Landing-page `og:image` / `twitter:image` for Program Manuals (P0) now point at the
+PR #99 cover PNGs. DataCite deposit metadata gains the same absolute HTTPS URL as
+`relatedIdentifiers` `HasPart` + `Image`. **No live mint. No live PATCH. No new DOI
+invented.** Rights stay All rights reserved.
 
-## Explicit supersession (not a surprise)
+## Before → after: `/manuals/infant-and-child-foods` (curl meta)
 
-The prior **PR #96** (`SCORECARD — CAT1-MANUAL-V3-BUILD-MINT-1`) deliberately **KEPT**
-"statuses A–E, MaxPoL, baseline." **This order reverses that decision.** MaxPoL % bands
-(101–150 Transitional, 151–200 Probation, >200 Suspension-by-%) are **RETIRED**. A brand is
-Certified only at ≤100% of every published limit; no certification and no mark above the limit.
+Before: `curl -sL https://heavymetalcertified.com/manuals/infant-and-child-foods`.
+After: `./quartz/bootstrap-cli.mjs build` then the same tags in
+`public/manuals/infant-and-child-foods.html`.
 
-## Before → after: the status model
-
-| | Before (MaxPoL ladder — retired) | After (Method v2) |
+| Tag | Before (live 2026-09-20) | After (this branch, local Quartz emit) |
 |---|---|---|
-| Metric | `MaxPoL` = max percent-of-limit drives status | No status metric; **Certified = every analyte ≤ 100% of its published limit** (gov_floor \| disclosed read_across), under the MU decision rule |
-| A | Certified — MaxPoL ≤ 100% | **Certified** — mark permitted |
-| B | Transitional (mark withheld) — 101–150%, Tier 2 only | folded into **Remediation** — *no mark, not certified* |
-| C | Probation — 151–200% (Low 151–175 / High 176–200) | folded into **Remediation** — reaction severity by tier, not by % band |
-| D | Suspension — >200% MaxPoL or hard-stop | **Suspension** — hard-stop only (legal-limit violation, data-integrity failure, directive failure) |
-| E | Revocation | **Revocation** — willful / concealment / persistent |
-| Tiering | Tier 2 "carries a 150% transitional allowance" (permission to exceed) | Tier 1/Tier 2 set **reaction severity only** — never permission to exceed a limit and keep the mark |
-| Confidential Remediation Track | ambiguous vs. status | **explicitly NON-certified, unmarked** (kept) |
+| `og:image` | `https://heavymetalcertified.com/static/og-image.png` | `https://heavymetalcertified.com/static/manuals/covers/infant-and-child-foods-v3.png` |
+| `og:image:url` | same generic card | same cover URL |
+| `twitter:image` | same generic card | same cover URL |
+| `og:image:width` / `height` | 1200 × 630 | 1020 × 1320 (PNG IHDR) |
+| `og:image:alt` | hero dek | `Cover of Infant and Child Foods: HMTc Program Manual` |
+| Generic site OG on Cat-1 | **yes (defect)** | **gone** when `pdf_cover` exists |
 
-## What was kept (per order)
+## Fallback (standards / manuals without a cover)
 
-- **Method v2** limit-setting: government floor \| disclosed read-across. No new ppb invented. No Zenodo reprint.
-- **Certified = 100% of published claim limits** under the **MU decision rule** (Result ± MU vs limit).
-- **Lot Testing**: risk tiers, **lab-informed schedule assignment** (§4.9), **90% stay-in-program gate** (§4.10), totals-always, pathway speciation (species ≤ parent), reflex triggers.
-- **Suspension / Revocation** keep their teeth — reworded off MaxPoL onto hard-stop / willful / concealment.
-- **Confidential Remediation Track** — retained, restated as expressly non-certified (mark withheld).
+Production `/standards/olive-oil` already uses the generic card. This PR does **not**
+generate 320 standard cover rasters (not cheap). No `content/static/standards/covers/`
+assets. Head keeps `/static/og-image.png` + 1200×630 when `pdf_cover` / `socialImage`
+are absent.
 
-## Files flipped (407 tracked files vs `origin/main`)
+| Page | Cover asset | Expected `og:image` |
+|---|---|---|
+| `/manuals/infant-and-child-foods` | `covers/infant-and-child-foods-v3.png` (1020×1320) | cover HTTPS URL |
+| `/manuals/pet-foods` | `covers/pet-foods-2026.png` (993×1404) | cover HTTPS URL |
+| `/manuals/seafood` (and grains, dairy) | none | generic `/static/og-image.png` |
+| `/standards/olive-oil` (minted; scholarly PDF exists) | none | generic `/static/og-image.png` |
 
-**Authored source (manual):** `data/manuals/cat1-manual/part2-program.md`, `part4-lot-testing.md`, `part5-backmatter.md` (part1 was already clean).
-**Cornerstone / content:** `content/program/structure.md` (A–E table → four statuses; "Variance to 150%" → "Overage allowed: none"), `content/mark.md`, `content/portal.md`, `content/program/corrective-action.md`, `content/index.md`.
-**Generators (fixed → regenerated):** `tools/lib/manual-v3-page.mjs`, `tools/lib/manual-page.mjs`, `tools/build-category-standard-pages.mjs`, `tools/build-cat1-standard-pages.mjs`, `tools/build-cert-analyte-pages.mjs`, `tools/build-manuals-page.mjs`, `tools/build-cat17-manual-pdf.mjs`.
-**Audit tool (flipped to enforce v2):** `tools/audit-cat1-manual-consistency.mjs` — GOLDEN now asserts the four-status model; FORBIDDEN now rejects `MaxPoL`, `Status A–E`, `150% transitional`, `101–150 / 151–175 / 176–200`, `Transitional (mark withheld)`, `probation`, plus a cross-source check on `structure.md` + `hmtc-primer.md`.
-**Data:** `data/method/method-v2.json`, `data/analytes/analytes.json` (8 per-metal treatments), `data/why-limited/nickel.json`, `aluminum.json`, `data/standards/{cat17-manual,cat24-pages,grains-pages,seafood-pages}.json`.
-**Briefings:** `data/briefings/hmtc-primer.md`, `defense-counsel-briefing.md`.
-**PDF:** `content/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf` regenerated from the rewritten parts (verified: v2 language, no retired ladder).
-**Regenerated output:** 351 `content/standards/*.md`, 9 `content/analytes/*.md`, 6 `content/manuals/*.md`, 2 `content/briefings/*.md`, 2 `content/why-we-limit/*.md`, plus `content/static/data/*.json` exports and home-stats.
-**Docs:** `docs/design-canon/MANUAL-PAGE.md`.
+A later standards cover is cheap to add: drop `content/static/standards/covers/<slug>.png`
+and set `pdf_cover` / `socialImage`. Mint then emits the Image relatedIdentifier.
+On-page `.hmtc-manual-cover` remains banned on standards (PR #99 density lint).
 
-## MaxPoL residual count
+## mint-dois dry-run (no `--live`)
 
-`MaxPoL` / `Status A–E` / `150% transitional` / `transitional allowance` / `Transitional (mark withheld)` / `101–150|151–175|176–200` / cert-ladder `probation` in rendered surfaces + authored source: **0**.
+```
+node tools/mint-dois.mjs --types=manuals --slug=infant-and-child-foods
+```
 
-- One retained string: `data/source-panels/briefings/after-palmquist.json` — a **historical citation-provenance note** ("printed pp. 326–329 (probation, reflex testing, custody)") describing which pages of the earlier printed manual were read. It is a citation trail, **not a cert-ladder assertion**; rewording it would misstate the citation. Flagged, intentionally kept.
-- `tools/audit-cat1-manual-consistency.mjs` contains these terms **as its forbidden-pattern list** (that is the guard, by design).
+```
+mint-dois (cert): DRY-RUN  mode=test  prefix=<unset>
+  relatedIdentifiers.Image (HasPart URL — landing-page cover; IsSupplementTo would invert A→B):
+     manuals/infant-and-child-foods: HasPart URL Image https://heavymetalcertified.com/static/manuals/covers/infant-and-child-foods-v3.png
+```
 
-## Remediation is still NON-certified
+Seafood (no cover): `manuals/seafood: (none)`.
 
-Confirmed in `part2-program.md §2.4/§2.7`, `structure.md`, `mark.md`, `portal.md`, `content/manuals/infant-and-child-foods.md`: Remediation (incl. the Confidential Remediation Track) carries **no mark**, is **not listed as certified**, at any margin, on any metal.
+`--update-covers --types=standards --slug=olive-oil` (already minted, no cover):
+`olive-oil: no cover asset (or not already-deposited) — no PATCH`. No DOI invented.
 
-## No mint
+`--live` was **not** run. `--update-covers --live` is documented and gated
+(`DATACITE_MODE=live` + credentials + Elon gate). It PUTs existing records only.
 
-`tools/mint-dois.mjs` / `tools/mint-queue.mjs` **NOT run**. No DataCite deposit, no ledger write. Held for PASS on the live page + this scorecard.
+## DataCite relationType
 
-## PR mechanics
+**HasPart**, not IsSupplementTo. Schema 4.x: relationType is A (deposited work) → B
+(related URL). The manual HasPart the cover image. IsSupplementTo would mean the
+manual is a supplement *to the image*. `resourceTypeGeneral=Image`.
+Rights: All rights reserved. No CC BY. No test prefix.
 
-Branch `cat1-status-v2-kill-maxpol` is cut from **`origin/main`** (the true live tip, which already contains the 258-standard DataCite mint write-backs and the prior v3 work). `mint-live-run` was **not** used as the base — it is 10 commits behind `origin/main`, so a PR from it would have reverted the mint write-backs + PR #93–96. The diff is therefore **only this status rewrite and its regeneration** — no local WIP is uploaded.
+PATCH existing (after Elon gate):
+
+```
+DATACITE_MODE=live node tools/mint-dois.mjs --update-covers --live --types=manuals --slug=<already-minted>
+```
+
+## Files
+
+- `quartz/components/Head.tsx` — `pdf_cover` / `socialImage` win over generic OG
+- `quartz/util/documentCover.ts` + test — URL / frontmatter contract
+- `quartz/plugins/transformers/frontmatter.ts` — `pdf_cover` aliases to `socialImage`
+- `tools/lib/document-cover.mjs` + `tools/tests/document-cover.test.mjs` — cover SoT + mint dry-run gates
+- `tools/lib/manual-page.mjs` — emits `socialImage` + `og_image_width/height` with `pdf_cover`
+- `tools/build-cat1-manual.mjs`, `tools/build-category-manual.mjs` — resolve cover via SoT
+- `tools/render-manual-pdf-cover.mjs` — jobs imported from SoT (OG + rail)
+- `tools/mint-dois.mjs` — HasPart Image on deposit; gated `--update-covers` PATCH
+- `content/manuals/infant-and-child-foods.md`, `content/manuals/pet-foods.md` — socialImage + dims
+- `docs/DOI-MINTING-LEDGER.md` — cover + PATCH section
+- `package.json` — `metadata:test` includes the new tests
+
+Cover rasters themselves are unchanged (PR #99):
+`content/static/manuals/covers/infant-and-child-foods-v3.png`,
+`content/static/manuals/covers/pet-foods-2026.png`.
 
 ## Validation
 
-`audit-cat1-manual-consistency` PASS · `npm run prebuild` PASS (terminology-lint, method-drift-lint, firewall-cert-lint, claim-discipline-lint, panel-coherence-lint, pdf-producer-lint, design-lint, dedash `--check`) · all edited JSON valid.
+- `node --test tools/tests/document-cover.test.mjs` — 6/6 pass
+- `node --import tsx --test quartz/util/documentCover.test.ts` — 2/2 pass
+- `node --test tools/tests/datacite-mint-adapter.test.mjs` — pass
+- `node --test tools/tests/cat1-manual-v3.test.mjs` — 4/4 pass
+- `node tools/design-lint.mjs` — exit 0
+- `npm run build` / `prebuild` **not** used for this scorecard (prebuild regenerates
+  the corpus and currently dies on a stale `defense-counsel-briefing` citation-context
+  record on `main`). Quartz emit is `./quartz/bootstrap-cli.mjs build` only.
+
+## HOLD
+
+No DataCite POST. No mass PATCH. House DOI for Manual v3 remains unminted
+(`cert_doi: null`). Do not `--live` until SCORECARD + Elon PASS.

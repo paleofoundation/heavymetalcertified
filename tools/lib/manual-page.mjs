@@ -148,6 +148,8 @@ export function renderManualFrontmatter({
   extraFm = [],
   pdfCover = null,
   editionChip = null,
+  ogImageWidth = null,
+  ogImageHeight = null,
 }) {
   // Google Scholar indexes these pages as technical reports
   // (citation_technical_report_institution), and a technical report needs a
@@ -178,7 +180,15 @@ export function renderManualFrontmatter({
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     ...extraFm,
   ]
-  if (pdfCover) lines.push(`pdf_cover: ${yq(pdfCover)}`)
+  if (pdfCover) {
+    lines.push(`pdf_cover: ${yq(pdfCover)}`)
+    // Same asset as the left-rail cover. Head.tsx reads pdf_cover | socialImage
+    // for og:image / twitter:image so ReadCube and social unfurlers get the
+    // document cover, not the generic site card.
+    lines.push(`socialImage: ${yq(pdfCover)}`)
+    if (ogImageWidth) lines.push(`og_image_width: ${Number(ogImageWidth)}`)
+    if (ogImageHeight) lines.push(`og_image_height: ${Number(ogImageHeight)}`)
+  }
   if (editionChip) lines.push(`edition_chip: ${yq(editionChip)}`)
   if (pdfHref) {
     lines.push(`pdf: ${yq(pdfHref)}`)

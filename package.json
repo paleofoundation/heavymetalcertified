@@ -41,7 +41,7 @@
     "seo:audit": "node tools/audit-crawl-metadata.mjs",
     "metadata:audit": "node tools/audit-researcher-identity.mjs && node --import tsx tools/audit-citation-metadata.ts",
     "doi:creators:plan": "node tools/update-doi-creators.mjs",
-    "metadata:test": "node --test tools/researcher-schema.test.mjs tools/tests/datacite-creators.test.mjs tools/tests/datacite-mint-adapter.test.mjs tools/tests/publication-jsonld.test.mjs && node --import tsx --test quartz/components/citationMetadata.test.tsx",
+    "metadata:test": "node --test tools/researcher-schema.test.mjs tools/tests/datacite-creators.test.mjs tools/tests/datacite-mint-adapter.test.mjs tools/tests/publication-jsonld.test.mjs tools/tests/document-cover.test.mjs && node --import tsx --test quartz/components/citationMetadata.test.tsx quartz/util/documentCover.test.ts",
     "release": "npm run build && npm run seo:audit",
     "publish": "npm run release && npx vercel@latest --prod --yes",
     "build:design-review": "./quartz/bootstrap-cli.mjs build -d content -o public && npm run postbuild",

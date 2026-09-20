@@ -98,7 +98,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             const cssclasses = coerceToArray(coalesceAliases(data, ["cssclasses", "cssclass"]))
             if (cssclasses) data.cssclasses = cssclasses
 
-            const socialImage = coalesceAliases(data, ["socialImage", "image", "cover"])
+            const socialImage = coalesceAliases(data, ["socialImage", "image", "cover", "pdf_cover"])
 
             const created = coalesceAliases(data, ["created", "date"])
             if (created) {

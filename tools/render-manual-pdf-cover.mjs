@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 // Render page 1 of each served Program Manual PDF to a static cover preview.
-// Used by the manuals left-rail authority register. Not a PDF viewer mock —
-// a first-page raster. Standards pages never consume these assets.
+// Used by the manuals left-rail authority register AND as og:image / twitter:image
+// on the landing page (Head.tsx via pdf_cover). DataCite gets the same HTTPS URL
+// as relatedIdentifiers HasPart + Image (tools/lib/document-cover.mjs).
+// Not a PDF viewer mock — a first-page raster. Standards pages never consume
+// these as on-page chrome; a standards cover PNG is OG-only if one is added later.
 
 import { execFileSync } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { MANUAL_COVER_JOBS } from "./lib/document-cover.mjs"
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const PDF_DIR = path.join(REPO, "content/static/manuals")
 const OUT_DIR = path.join(PDF_DIR, "covers")
-
-const JOBS = [
-  { slug: "infant-and-child-foods", pdf: "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf", stem: "infant-and-child-foods-v3" },
-  { slug: "pet-foods", pdf: "HMTc-Pet-Foods-Program-Manual-2026.pdf", stem: "pet-foods-2026" },
-]
+const JOBS = MANUAL_COVER_JOBS
 
 function havePdftoppm() {
   try {

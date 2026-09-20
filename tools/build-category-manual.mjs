@@ -14,6 +14,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { renderStruggleSection } from "./lib/struggle-section.mjs"
 import { renderManualPage } from "./lib/manual-page.mjs"
+import { resolveCover } from "./lib/document-cover.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -62,6 +63,7 @@ const struggleHtml = renderStruggleSection({
 // happened yet. Manuals without a download_pdf keep the "in preparation" language.
 const pdfFile = META.download_pdf && fs.existsSync(path.join(REPO, "content/static/manuals", META.download_pdf)) ? META.download_pdf : null
 const pdfHref = pdfFile ? `/static/manuals/${pdfFile}` : null
+const cover = pdfFile ? resolveCover({ typeName: "manuals", slug: META.manual_slug }) : null
 
 const n = rows.length
 const numWord = { 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve" }[n] || String(n)
@@ -93,7 +95,9 @@ const page = renderManualPage({
     { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" },
   ],
   pdfHref,
-  pdfCover: pdfFile && META.manual_slug === "pet-foods" ? "/static/manuals/covers/pet-foods-2026.png" : null,
+  pdfCover: cover?.rel ?? null,
+  ogImageWidth: cover?.width,
+  ogImageHeight: cover?.height,
   editionChip: "2026 edition · Method v2",
   manualSlug: META.manual_slug,
   pdfLabel: `Download PDF · ${META.effective_date}`,
