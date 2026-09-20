@@ -154,7 +154,7 @@ Required/recommended fields, derivable from front-matter + program constants:
 DataCite Metadata Schema 4.x has **no `og:image`**. ReadCube and social unfurlers read `og:image` /
 `twitter:image` on the **landing page**. Those tags — and the DOI Image URL — are the
 **1200×630 letterbox** (`<stem>-og.png`). The tall first-page PNG (`<stem>.png`, e.g. 1020×1320)
-is the left-rail ManualAuthority only and is never `og:image`.
+is the hero left-column cover only and is never `og:image`.
 
 | Field | Value |
 |---|---|

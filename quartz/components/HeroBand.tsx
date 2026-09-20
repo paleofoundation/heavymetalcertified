@@ -6,6 +6,7 @@ import documentActionsScript from "./scripts/documentActions.inline"
 import authorCardScript from "./scripts/authorCard.inline"
 import { AuthorCard, AuthorProfileHero, isKarenAuthor } from "./authorIdentity"
 import { DocumentDoi } from "./DocumentDoi"
+import { ManualAuthorityStrip, isManualAuthorityPage } from "./ManualAuthority"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { pathToRoot, type FullSlug } from "../util/path"
 
@@ -131,6 +132,7 @@ export default (() => {
     const snapshot = pageSnapshot(fm, String(slug), badge)
     const element = pageElement(String(slug))
     const isManualPage = String(slug).startsWith("manuals/") && String(slug) !== "manuals" && String(slug) !== "manuals/index"
+    const showAuthority = isManualAuthorityPage(String(slug), fm)
     const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/") && !isManualPage
 
     const author = fm.author ? String(fm.author) : undefined
@@ -164,7 +166,7 @@ export default (() => {
     return (
       <section class="hmtc-heroband">
         <div class="hmtc-heroband-inner">
-          <div class={hasCover ? "hmtc-hb-context hmtc-hb-context--cover" : "hmtc-hb-context"}>
+          <div class={["hmtc-hb-context", hasCover && "hmtc-hb-context--cover", showAuthority && "hmtc-hb-context--authority"].filter(Boolean).join(" ")}>
             {hasCover ? (
               pdfHref ? (
                 <a class="hmtc-hb-cover" href={pdfHref} aria-label={`Open PDF: ${title}`}>
@@ -181,6 +183,7 @@ export default (() => {
                 <div class="hmtc-subject-caption"><span>Heavy Metal Certified</span><span>{element?.name ?? sectionLabel ?? badge}</span></div>
               </>
             )}
+            {showAuthority ? <ManualAuthorityStrip fm={fm} /> : null}
           </div>
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">

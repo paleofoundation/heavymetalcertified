@@ -45,12 +45,10 @@ export const defaultContentPageLayout: PageLayout = {
   // snapshot). renderPage.tsx lifts beforeBody into a full-width band above the
   // 3-column shell; the home page opts out (it carries its own hero in content).
   beforeBody: [Component.HeroBand()],
-  // Proof's curated left rail (.snav): manuals open with the authority
-  // register (download + cite + edition chip). The portrait cover lives
-  // in the hero left panel. Other pages keep section nav. ManualAuthority
-  // self-gates to /manuals/<slug>.
+  // Proof's curated left rail (.snav): section nav only. Manuals put the
+  // portrait cover and Governing Instrument strip in the hero left column
+  // (HeroBand + ManualAuthorityStrip). Do not remount ManualAuthority here.
   left: [
-    Component.ManualAuthority(),
     Component.Snav(),
     Component.DedicatedPages(),
   ],
