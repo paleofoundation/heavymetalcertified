@@ -1,5 +1,5 @@
 ---
-title: "Seafood — HMTc Program Manual"
+title: "Seafood: HMTc Program Manual"
 type: standard
 custom_page: true
 category: 6
@@ -24,10 +24,10 @@ connections:
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Verify a certificate", href: "/verify" }
   - { label: "All Program Manuals", href: "/manuals" }
-  - { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index: literature baseline", href: "https://heavymetalindex.com" }
 rail_box:
   title: "Document versions"
-  body: "Web edition current — seven subcategories, 2026-08-07 (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below."
+  body: "Web edition current: seven subcategories, 2026-08-07 (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below."
 ---
 
 <section class="hmtc-section">
@@ -50,11 +50,11 @@ rail_box:
 </tbody></table></div><div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px 12px;margin-top:16px;padding-top:15px;border-top:1px solid #e8e1db"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;white-space:nowrap">Tier 1</span><span style="font-size:12.5px;line-height:1.6;color:#736b6b">Pb, iAs, Hg, MeHg and Cd are zero-tolerance: any value above the limit removes the mark, at the most severe reaction.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;white-space:nowrap">Tier 2</span><span style="font-size:12.5px;line-height:1.6;color:#736b6b">tAs, Ni, Cr, Cr-VI, Sn and Al are held to the same government limit; tiering sets the reaction to an exceedance, not permission to exceed it. Above the limit, on any metal, the product is not certified and carries no mark.</span></div>
 </section>
 
-<section class="hmtc-section"><h2 id="hard" class="hmtc-h2" style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Risk Flag</h2><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 22px">These subcategories carry a natural or process background that runs above the limit &mdash; the limit being the strictest government maximum for the product, never a percentile of market data (Method v2.0). A product is not disqualified by this: only its own tested result decides certification, and a well-sourced lot can sit well below the market. What the pooled occurrence literature shows is where the work is &mdash; which ingredients demand exceptional sourcing.</p><div class="hmtc-mhard-list"><details class="hmtc-mhard" open>
+<section class="hmtc-section"><h2 id="hard" class="hmtc-h2" style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Risk Flag</h2><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 22px">These subcategories carry a natural or process background that runs above the limit: the limit being the strictest government maximum for the product, never a percentile of market data (Method v2.0). A product is not disqualified by this: only its own tested result decides certification, and a well-sourced lot can sit well below the market. What the pooled occurrence literature shows is where the work is: which ingredients demand exceptional sourcing.</p><div class="hmtc-mhard-list"><details class="hmtc-mhard" open>
 <summary class="hmtc-mhard-sum"><span class="hmtc-mhard-sign" aria-hidden="true"></span><span class="hmtc-mhard-name">Inorganic arsenic</span></summary>
 <div class="hmtc-mhard-panel">
 <p style="font-size:15.5px;line-height:1.76;color:#3f3a3a;margin:0 0 16px;max-width:78ch">Inorganic arsenic is taken up from soil, irrigation water, and seawater; rice and rice-derived ingredients, and some seaweeds, carry it far above the strictest sovereign limits.</p>
-<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:7px 16px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap;font-variant-numeric:tabular-nums">~4.3&times;</span><span style="font-size:13.5px;line-height:1.55;color:#736b6b">Seaweed / kelp foods (nori, wakame, kombu, dulse — dried, as sold) <span style="color:#a9a1a1">(the 1000 ppb limit)</span></span></div><a href="/analytes/arsenic" style="display:inline-block;margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#1c43ad;text-decoration:none">Analyte page &rarr;</a>
+<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:7px 16px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap;font-variant-numeric:tabular-nums">~4.3&times;</span><span style="font-size:13.5px;line-height:1.55;color:#736b6b">Seaweed / kelp foods (nori, wakame, kombu, dulse: dried, as sold) <span style="color:#a9a1a1">(the 1000 ppb limit)</span></span></div><a href="/analytes/arsenic" style="display:inline-block;margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#1c43ad;text-decoration:none">Analyte page &rarr;</a>
 </div>
 </details>
 <details class="hmtc-mhard">
@@ -79,3 +79,13 @@ rail_box:
 <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0;max-width:74ch">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p>
 </div>
 </section>
+
+<!-- BEGIN: hmtc-version-history -->
+## Version history
+
+The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date: the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+
+| Version | Date | Status | DOI | What changed |
+| --- | --- | --- | --- | --- |
+| 2026 web edition | 2026-08-07 | **current** | pending (Crossref) | Initial publication of the seven-subcategory Seafood standard (marine predatory, marine non-predatory, freshwater, shellfish, cephalopods, seaweed & kelp foods, canned seafood) under the government-limit default (Method v2.0), with species-specific dual-mercury limits and adversarial-audit verification. Consolidated PDF in preparation; a DOI is minted on deposit. |
+<!-- END: hmtc-version-history -->
