@@ -32,7 +32,8 @@ import path from "node:path"
 import React from "react"
 import { Document, Page, View, Text, StyleSheet, renderToFile } from "@react-pdf/renderer"
 import { registerFonts } from "./pdf/fonts.mjs"
-import { buildRegister, snapshotFromRegister, apaCite, COPYRIGHT, ZENODO_VERSION_DOI, DOI_SUFFIX, readExistingHouseDoi } from "./lib/cat1-manual-v3.mjs"
+import { buildRegister, snapshotFromRegister, apaCite, COPYRIGHT, ZENODO_VERSION_DOI, readExistingHouseDoi } from "./lib/cat1-manual-v3.mjs"
+import { houseFooterCite } from "./lib/house-cite.mjs"
 
 registerFonts()
 const h = React.createElement
@@ -44,7 +45,6 @@ const OUT = path.join(OUT_DIR, OUT_FILE)
 const CONTENT_DIR = path.join(REPO, "data/manuals/cat1-manual")
 const VH = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/version-history/infant-and-child-foods.json"), "utf8"))
 const HOUSE_DOI = readExistingHouseDoi()
-const BASE_URL = "https://heavymetalcertified.com/manuals/infant-and-child-foods"
 
 // ── colours (the approved scholarly palette, HMTc red) ───────────────────────
 const INK_TITLE = "#1e1418"
@@ -295,7 +295,7 @@ function Cover() {
     ]),
     h(View, { key: "ed", style: s.coverBlock }, [
       h(Text, { key: "l", style: s.label }, "Edition"),
-      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE} · live standard pages ${SNAP.live_pages} · cert-ready ${SNAP.cert_ready} of ${SNAP.live_pages}`),
+      h(Text, { key: "t", style: s.coverText }, `${EDITION_LABEL} · ${EDITION_DATE}`),
     ]),
     h(View, { key: "ab", style: s.abstractBox }, [
       h(Text, { key: "l", style: s.abstractLabel }, "About this manual"),
@@ -342,8 +342,10 @@ function EditionRecord() {
       "The dated editions of this manual, each kept at a stable permalink. Manual v3 is current. Zenodo deposits are earlier deposited editions only."),
     h(View, { key: "t", style: s.table }, [Row(header, widths, s.thRow, "h"), ...rows]),
   ]
-  if (VH.concept_doi)
-    children.push(h(Text, { key: "cd", style: s.caption }, `The Zenodo concept DOI ${VH.concept_doi} resolves to the latest Zenodo deposited edition, which is retired. It is not the current Manual v3 identifier. House mint uses suffix ${DOI_SUFFIX} under prefix 10.83138 after CEO PASS.`))
+  if (VH.concept_doi) {
+    const currentId = HOUSE_DOI ? ` The current house DOI is ${HOUSE_DOI}.` : ""
+    children.push(h(Text, { key: "cd", style: s.caption }, `The Zenodo concept DOI ${VH.concept_doi} resolves to the latest Zenodo deposited edition, which is retired. It is not the current Manual v3 identifier.${currentId}`))
+  }
   children.push(h(Text, { key: "cite", style: [s.para, { marginTop: 10 }] }, apaCite(HOUSE_DOI)))
   children.push(h(Text, { key: "cpr", style: s.caption }, COPYRIGHT))
   children.push(h(Text, { key: "zen", style: s.caption }, `Earlier deposited edition (retired): ${ZENODO_VERSION_DOI}.`))
@@ -352,7 +354,11 @@ function EditionRecord() {
 
 // ── document ──────────────────────────────────────────────────────────────────
 function ManualDocument() {
-  const footerText = `Heavy Metal Certified  ·  Infant and Child Foods Program Manual  ·  ${EDITION_LABEL}  ·  ${BASE_URL}  ·  All rights reserved`
+  const footerText = houseFooterCite({
+    label: "Heavy Metal Certified  ·  Infant and Child Foods Program Manual",
+    edition: EDITION_LABEL,
+    doi: HOUSE_DOI,
+  })
   const p1 = AuthoredPart("part1-why.md", "Part 1")
   const p2 = AuthoredPart("part2-program.md", "Part 2")
   const p4 = AuthoredPart("part4-lot-testing.md", "Part 4")

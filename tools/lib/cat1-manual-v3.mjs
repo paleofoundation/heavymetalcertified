@@ -17,6 +17,7 @@ import {
   cellMaps,
   CLAIM_TOTALS,
 } from "./claim-surface.mjs"
+import { houseApaCite, HOUSE_COPYRIGHT } from "./house-cite.mjs"
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..")
 const COMPILED = path.join(REPO, "data/standards/cat1-compiled")
@@ -172,9 +173,7 @@ export function snapshotFromRegister(reg = buildRegister()) {
 }
 
 export function apaCite(doi) {
-  const year = EDITION_DATE.slice(0, 4)
-  const doiBit = doi ? ` https://doi.org/${doi}` : ""
-  return `Pendergrass, K. (${year}). ${CITATION_TITLE}. Institute of Contaminant Standards.${doiBit}`
+  return houseApaCite({ title: CITATION_TITLE, year: EDITION_DATE.slice(0, 4), doi })
 }
 
 export function readExistingHouseDoi() {
@@ -200,7 +199,7 @@ export function readExistingHouseDoi() {
   return null
 }
 
-export const COPYRIGHT = "© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved."
+export const COPYRIGHT = HOUSE_COPYRIGHT
 
 export const PANEL_NOTE = `Claim-surface panel: the eight totals (${CLAIM_TOTALS.join(", ")}). Species (iAs, MeHg, Cr-VI) are pathway reflexes and never replace the parent. Rice and rice-derived infant cereals require numeric iAs. A blank claim-surface cell is HOLD, not cert-ready.`
 

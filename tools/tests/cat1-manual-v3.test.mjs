@@ -63,13 +63,18 @@ test("Cat-1 Manual v3 frontmatter omits the hero page snapshot", () => {
   assert.match(page, /10\.83138\/hmtc\.manual\.infant-and-child-foods/)
 })
 
-test("house suffix is descriptive; APA cite does not invent a DOI", () => {
+test("house suffix is descriptive; APA cite uses Standard No. + doi.org when cert_doi is set", () => {
   assert.equal(DOI_SUFFIX, "hmtc.manual.infant-and-child-foods")
   const bare = apaCite(null)
   assert.match(bare, new RegExp(CITATION_TITLE.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")))
-  assert.doesNotMatch(bare, /doi\.org/)
-  const withDoi = apaCite(`${HOUSE_PREFIX}/${DOI_SUFFIX}`)
-  assert.match(withDoi, new RegExp(`https://doi.org/${HOUSE_PREFIX}/${DOI_SUFFIX}`))
+  assert.doesNotMatch(bare, /doi\.org|Standard No\.|heavymetalcertified\.com/)
+  const doi = `${HOUSE_PREFIX}/${DOI_SUFFIX}`
+  const withDoi = apaCite(doi)
+  assert.equal(
+    withDoi,
+    `Pendergrass, K. (2026). ${CITATION_TITLE} (Standard No. ${doi}). Institute of Contaminant Standards. https://doi.org/${doi}`,
+  )
+  assert.doesNotMatch(withDoi, /heavymetalcertified\.com|registration pending|CC BY/i)
   assert.equal(ZENODO_VERSION_DOI.startsWith("10.83138"), false)
   const existing = readExistingHouseDoi()
   if (existing) assert.match(existing, /^10\.83138\//)
@@ -105,10 +110,12 @@ test("Scholar abstract is 150–250 words and does not name MaxPoL", () => {
   assert.doesNotMatch(SCHOLAR_ABSTRACT, /MaxPoL|CC BY/i)
 })
 
-test("house write-back cite is APA with doi.org and All rights reserved", () => {
+test("house write-back cite is APA Standard No. with doi.org and All rights reserved", () => {
   const doi = `${HOUSE_PREFIX}/${DOI_SUFFIX}`
   const html = renderManualV3Body({ certDoi: doi })
+  assert.match(html, new RegExp(`Standard No\\. ${doi.replace(/\//g, "\\/")}`))
   assert.match(html, new RegExp(`https://doi.org/${doi.replace(/\//g, "\\/")}`))
   assert.match(html, /All rights reserved/)
-  assert.doesNotMatch(html, /CC BY|registration pending|does not invent that DOI/i)
+  assert.doesNotMatch(html, /CC BY|registration pending|does not invent that DOI|after CEO PASS/i)
+  assert.doesNotMatch(html, /heavymetalcertified\.com\/manuals\//)
 })
