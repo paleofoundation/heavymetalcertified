@@ -11,7 +11,7 @@ import {
   CITATION_TITLE,
   SCHOLAR_ABSTRACT,
 } from "../lib/cat1-manual-v3.mjs"
-import { renderManualV3Body } from "../lib/manual-v3-page.mjs"
+import { renderManualV3Body, renderManualV3Page } from "../lib/manual-v3-page.mjs"
 import { wordCount, sentenceCount, HERO_DEK_MAX_WORDS } from "../lib/design-tokens.mjs"
 
 test("Cat-1 register enumerates every live page and compiled orphan", () => {
@@ -30,12 +30,37 @@ test("Cat-1 register enumerates every live page and compiled orphan", () => {
   }
 })
 
-test("snapshot is Method v2 / live pages, not the stale 9-analyte Strictest-ML card", () => {
+test("register counts stay available for the register and PDF, not the hero snapshot", () => {
   const snap = snapshotFromRegister()
+  assert.equal(snap.live_pages, 9)
+  assert.ok(snap.cert_ready <= snap.live_pages)
   const joined = snap.snapshot.map((r) => `${r.k}:${r.v}`).join(" | ")
   assert.match(joined, /Live standard pages/)
   assert.match(joined, /v2\.0 gov_floor/)
   assert.doesNotMatch(joined, /9 analytes|Strictest government ML|2026-08-06/)
+})
+
+test("Cat-1 Manual v3 frontmatter omits the hero page snapshot", () => {
+  const page = renderManualV3Page({
+    title: "Infant and Child Foods: HMTc Program Manual",
+    category: 1,
+    manualSlug: "infant-and-child-foods",
+    categoryName: "Infant and Child Foods",
+    description: "The Method v2 governing instrument for Category 1.",
+    heroSnapshot: false,
+    snapshot: [{ k: "Live standard pages", v: "9" }],
+    connections: [{ label: "The standards register", href: "/standards" }],
+    railBody: "Manual v3 current.",
+    effectiveDate: "2026-09-19",
+    updated: "2026-09-19",
+    certDoi: "10.83138/hmtc.manual.infant-and-child-foods",
+  })
+  const fm = page.slice(0, page.indexOf("\n---", 3) + 4)
+  assert.match(fm, /^hero_snapshot: false$/m)
+  assert.doesNotMatch(fm, /^snapshot:/m)
+  assert.doesNotMatch(fm, /Live standard pages/)
+  assert.doesNotMatch(fm, /Cert-ready/)
+  assert.match(page, /10\.83138\/hmtc\.manual\.infant-and-child-foods/)
 })
 
 test("house suffix is descriptive; APA cite does not invent a DOI", () => {

@@ -38,11 +38,7 @@ og_image_height: 630
 edition_chip: "Manual v3 · Method v2"
 pdf: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf"
 hero_action: { label: "Download PDF · Manual v3", href: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf" }
-snapshot:
-  - { k: "Live standard pages", v: "9" }
-  - { k: "Cert-ready", v: "9 of 9" }
-  - { k: "Method", v: "v2.0 gov_floor | read_across" }
-  - { k: "Edition", v: "Manual v3 · 2026-09-19" }
+hero_snapshot: false
 connections:
   - { label: "The standards register", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }

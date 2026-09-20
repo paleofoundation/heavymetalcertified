@@ -56,7 +56,7 @@ const page = renderManualV3Page({
   ogImageWidth: og?.width ?? 1200,
   ogImageHeight: og?.height ?? 630,
   editionChip: "Manual v3 · Method v2",
-  snapshot: snap.snapshot,
+  heroSnapshot: false,
   connections: [
     { label: "The standards register", href: "/standards" },
     { label: "How limits are derived", href: "/program/structure" },

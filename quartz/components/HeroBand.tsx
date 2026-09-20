@@ -146,10 +146,11 @@ export default (() => {
     const coverHref = fm.pdf_cover ? String(fm.pdf_cover) : undefined
     const pdfHref = fm.pdf ? String(fm.pdf) : undefined
     const hasCover = Boolean(isManualPage && coverHref)
-    const hasSnapshot = snapshot.length > 0
+    const hasSnapshot = snapshot.length > 0 && fm.hero_snapshot !== false
     const hasSidebar = hasSnapshot || hasAuthorCard || Boolean(fm.cert_doi) || String(slug) === "manuals/infant-and-child-foods"
     // The snapshot box title. Defaults to "Page snapshot"; a regulation detail
-    // page overrides it with "Instrument".
+    // page overrides it with "Instrument". Cat-1 Manual v3 sets hero_snapshot:
+    // false — live-page / cert-ready counts are register chrome, not hero chrome.
     const snapTitle = fm.snapshot_title ? String(fm.snapshot_title) : "Page snapshot"
     // Explicit meta stamps (e.g. "PRIMARY-VERIFIED · 2022-06-30"). When present
     // they replace the derived author/updated row. A single optional action link
