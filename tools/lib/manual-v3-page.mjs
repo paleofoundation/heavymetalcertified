@@ -4,6 +4,13 @@
 
 import { renderManualFrontmatter } from "./manual-page.mjs"
 import {
+  SECTION_CLASS,
+  H2_CLASS,
+  PROSE_CLASS,
+  LEAD_CLASS,
+  PRINCIPLE_CARD_CLASS,
+} from "./design-tokens.mjs"
+import {
   PRINCIPLES,
   PANEL_NOTE,
   apaCite,
@@ -21,11 +28,11 @@ const MUTE = "#736b6b"
 const FAINT = "#a9a1a1"
 const BORDER = "#e8e1db"
 const TINT = "#fdf4f3"
-const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:${INK};border-bottom:1px solid ${BORDER};padding-bottom:10px;margin:0 0 20px`
+const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:${INK};border-bottom:1px solid ${BORDER};padding-bottom:10px`
 const H3 = `font-family:Lora,serif;font-weight:400;font-size:20px;line-height:1.3;color:${INK};margin:28px 0 12px`
-const P = `font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 18px;max-width:74ch`
-const CAP = `font-size:13.5px;line-height:1.7;color:${MUTE};margin:0 0 20px;max-width:84ch`
-const CALL = `border-left:3px solid ${ACCENT};background:${TINT};padding:18px 22px`
+const P = `font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 18px`
+const CAP = `font-size:13.5px;line-height:1.7;color:${MUTE};margin:0 0 var(--space-3, 24px)`
+const CALL = `border-left:3px solid ${ACCENT};background:${TINT};padding:var(--space-3, 24px)`
 
 const esc = (s) => String(s == null ? "" : s)
   .replace(/&(?![a-z#0-9]+;)/gi, "&amp;")
@@ -33,18 +40,18 @@ const esc = (s) => String(s == null ? "" : s)
   .replace(/>/g, "&gt;")
 
 function section(id, title, inner) {
-  return `<section style="margin-bottom:52px">
-<h2 id="${id}" style="${H2}">${title}</h2>
+  return `<section class="${SECTION_CLASS}">
+<h2 id="${id}" class="${H2_CLASS}" style="${H2}">${title}</h2>
 ${inner}
 </section>`
 }
 
 function p(html) {
-  return `<p style="${P}">${html}</p>`
+  return `<p class="${PROSE_CLASS}" style="${P}">${html}</p>`
 }
 
 function cap(html) {
-  return `<p style="${CAP}">${html}</p>`
+  return `<p class="hmtc-cap" style="${CAP}">${html}</p>`
 }
 
 function h3(id, title) {
@@ -68,24 +75,24 @@ function table(headers, rows, caption) {
   const body = rows
     .map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`)
     .join("\n")
-  return `${caption ? cap(caption) : ""}<div style="overflow-x:auto;border:1px solid ${BORDER}"><table style="width:100%;border-collapse:collapse;min-width:36rem"><thead><tr>${th}</tr></thead><tbody>
+  return `${caption ? cap(caption) : ""}<div class="hmtc-table-wrap"><table style="width:100%;border-collapse:collapse;min-width:36rem"><thead><tr>${th}</tr></thead><tbody>
 ${body}
 </tbody></table></div>`
 }
 
 function principlesHtml() {
   const cards = PRINCIPLES.map(
-    (pr, i) => `<div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
-<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:${ACCENT};white-space:nowrap">${i + 1}</span><span style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:${INK}">${esc(pr.k)}</span></div>
-<p style="font-size:14px;line-height:1.7;color:${BODY};margin:0;max-width:74ch">${esc(pr.v)}</p>
-</div>`,
+    (pr, i) => `<article class="${PRINCIPLE_CARD_CLASS}">
+<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px"><span class="hmtc-principle-n">${i + 1}</span><span class="hmtc-principle-k">${esc(pr.k)}</span></div>
+<p>${esc(pr.v)}</p>
+</article>`,
   ).join("")
   return (
     cap(
       `The five objectives are co-equal. None may be sacrificed to advance another. Cited from <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:${ACCENT}">docs/governance/hmtc-governing-principles.md</span> (the ruling named in the readiness manifest).`,
     ) +
-    `<div style="border:1px solid ${BORDER};background:#fffdfb">${cards}</div>` +
-    `<div style="${CALL};margin-top:20px"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0;max-width:74ch">Method v2.0 (CLAUDE.md Part 19): every cert-ready cell is a government floor or a disclosed read-across. Species never replace the parent total. Limits do not derive from the Heavy Metal Index; every number traces to a named sovereign instrument. The Index is cited one way, outbound only.</p></div>`
+    `<div class="hmtc-principle-grid">${cards}</div>` +
+    `<div style="${CALL};margin-top:var(--space-3, 24px)"><p class="${PROSE_CLASS}" style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Method v2.0 (CLAUDE.md Part 19): every cert-ready cell is a government floor or a disclosed read-across. Species never replace the parent total. Limits do not derive from the Heavy Metal Index; every number traces to a named sovereign instrument. The Index is cited one way, outbound only.</p></div>`
   )
 }
 
@@ -281,9 +288,14 @@ function editionHtml(doi) {
   )
 }
 
+function leadHtml() {
+  return `<p class="${LEAD_CLASS}">This Manual is the Method v2 governing instrument for Category 1, Infant and Child Foods. It binds the live subcategory pages; they remain the derivation of each cell.</p>`
+}
+
 export function renderManualV3Body({ register, certDoi = null } = {}) {
   const reg = register || buildRegister()
   return [
+    leadHtml(),
     section("principles", "Governing Principles", principlesHtml()),
     section("lifecycle", "Program lifecycle and statuses", lifecycleHtml()),
     section("instruments", "Mark, measurement uncertainty, CAPA, remediation, ratchet", instrumentsHtml()),

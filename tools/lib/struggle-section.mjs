@@ -102,10 +102,10 @@ export function renderStruggleSection({ compiledDir, occurrence, categoryDirName
   // v3 canonical section chrome (canvas isManual #hard). Lora 400 30px h2 with the
   // hairline underline; the section id feeds the "On this page" rail. NO bold — the
   // analyte name is a Lora accordion heading, never a font-weight lead-in.
-  const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
+  const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px`
   // id kept as "hard" (design-lint enforces the canonical manual section id); only the
   // visible heading text is shortened to "Risk Flag" per the program owner (rail space).
-  const head = `<section style="margin-bottom:52px"><h2 id="hard" style="${H2}">Risk Flag</h2>`
+  const head = `<section class="hmtc-section"><h2 id="hard" class="hmtc-h2" style="${H2}">Risk Flag</h2>`
 
   if (byAnalyte.size === 0) {
     return `${head}<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px">On the published occurrence literature to date, no subcategory in ${esc(categoryName)} shows a systematic gap between typical market levels and the limit &mdash; the limit being the strictest government maximum for each product (Method v2.0). Certification is decided on a product&rsquo;s own tested result, not on a distribution; individual lots or suppliers can still exceed a limit.</p><p style="font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0">See <a href="/hard-to-meet" style="color:${LINK}">the cross-category summary</a> of the ingredients that most often struggle.</p></section>`
@@ -159,8 +159,8 @@ const CURATED_PROCESS_RISK = {
 }
 
 export function renderRiskFlagForStandard({ slug, name, cells, occurrence, categoryDirName, LINK = "#1c43ad", ACCENT = "#9f2727" }) {
-  const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
-  const head = `<section style="margin-bottom:52px"><h2 id="risk-flag" style="${H2}">Risk Flag</h2>`
+  const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px`
+  const head = `<section class="hmtc-section"><h2 id="risk-flag" class="hmtc-h2" style="${H2}">Risk Flag</h2>`
   const screen = SCREEN_ANALYTES[categoryDirName] || new Set()
   const occCells = (occurrence && occurrence.cells) || occurrence || {}
   const ANALYTE_PAGE = { iAs: "/analytes/arsenic", tAs: "/analytes/arsenic", Al: "/analytes/aluminum", tHg: "/analytes/mercury", MeHg: "/analytes/mercury", Cd: "/analytes/cadmium", Pb: "/analytes/lead", Ni: "/analytes/nickel", Sn: "/analytes/tin" }

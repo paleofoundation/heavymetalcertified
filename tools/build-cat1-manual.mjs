@@ -39,8 +39,9 @@ const page = renderManualV3Page({
   category: 1,
   manualSlug: "infant-and-child-foods",
   categoryName: "Infant and Child Foods",
-  description:
-    "Manual v3: the Method v2 governing instrument for Category 1, Infant and Child Foods (ages 0–5). Standards register, lot-testing schedule, and the five Governing Principles.",
+  description: "The Method v2 governing instrument for Category 1.",
+  pdfCover: pdfServed ? "/static/manuals/covers/infant-and-child-foods-v3.png" : null,
+  editionChip: "Manual v3 · Method v2",
   snapshot: snap.snapshot,
   connections: [
     { label: "The standards register", href: "/standards" },

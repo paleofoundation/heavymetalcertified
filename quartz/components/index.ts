@@ -36,6 +36,7 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TopNav from "./TopNav"
 import Snav from "./Snav"
+import ManualAuthority from "./ManualAuthority"
 import Rail from "./Rail"
 import DedicatedPages from "./DedicatedPages"
 import HeroBand from "./HeroBand"
@@ -79,6 +80,7 @@ export {
   ConditionalRender,
   TopNav,
   Snav,
+  ManualAuthority,
   Rail,
   DedicatedPages,
   HeroBand,

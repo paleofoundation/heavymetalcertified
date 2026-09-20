@@ -53,7 +53,7 @@ function rangeText(r) {
 // #e8e1db, pb 10px, mb 20px, top:0 — the 52px space ABOVE the heading comes from
 // the preceding section's `margin-bottom:52px` wrapper, not the heading itself.
 const S = {
-  h2: "font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px",
+  h2: "font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px",
   lede: "font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 22px",
   block: "margin:0 0 26px;padding:2px 0 2px 16px;border-left:2px solid #e4dcd5",
   label: "font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#9a8f8f;margin:0 0 8px",
@@ -413,7 +413,7 @@ export function occurrenceRationaleSection(opts) {
     if (block) blocks.push(block)
   }
   if (!blocks.length) return ""
-  return `<section id="occurrence-derivation" style="margin-bottom:52px">`
+  return `<section id="occurrence-derivation" class="hmtc-section">`
     + `<h2 style="${S.h2}">Occurrence and derivation rationale</h2>`
     + `<p style="${S.lede}">For each analyte on the panel: what the peer-reviewed and survey literature measured in this category, cited one way to the Heavy Metal Index, and the Method v2.0 reasoning behind the certification limit — including, where no government sets a number, why the program sets one anyway. Occurrence figures are literature findings; the derivation is the certifier's.</p>`
     + blocks.join("")

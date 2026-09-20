@@ -18,7 +18,7 @@ rail_box:
   title: "Cite the manual"
   body: "Pendergrass, K. (2026). Infant and Child Foods: HMTc Program Manual. Institute of Contaminant Standards."
 ---
-<section id="published" style="margin-bottom:52px">
+<section id="published" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Published editions</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">The Infant and Child Foods manual is the first category volume in force for the Manual v3 edition, carrying 9 subcategory standards. The manual is the bound, citable volume for its category; the web pages carry the same content per subcategory.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:20px">
@@ -41,7 +41,7 @@ rail_box:
   </div>
 </section>
 
-<section id="forthcoming" style="margin-bottom:52px">
+<section id="forthcoming" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Forthcoming</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A manual publishes when every subcategory in its category has a defensible standard. Categories in progress publish subcategory by subcategory on the web first.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
@@ -77,7 +77,7 @@ rail_box:
   </div>
 </section>
 
-<section id="inside" style="margin-bottom:52px">
+<section id="inside" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">What is inside</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Manual v3 is the Method v2 governing instrument. The locked thin table of contents replaces the retired V1 Zenodo dump (exposé essays, audience reading guides, and reprinted per-analyte master-table walls).</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb">
@@ -89,7 +89,7 @@ rail_box:
   </div>
 </section>
 
-<section id="relation" style="margin-bottom:52px">
+<section id="relation" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Manual and web page</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">These are the same content at two granularities, not two sources of truth. The web pages are per subcategory and always reflect the current edition. The manual is the bound category volume, fixed at its revision date and citable as a single object.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:20px">
@@ -113,7 +113,7 @@ rail_box:
   </div>
 </section>
 
-<section id="versioning" style="margin-bottom:52px">
+<section id="versioning" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Editions and revisions</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited the Manual v3 edition must still be able to reach exactly what it cited.</p>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit go through the Standards Ratchet Mechanism, which caps how far a limit can move in one step and requires a stated trigger. Limits tighten as the evidence base and analytical feasibility improve; they do not loosen because a brand found them inconvenient.</p>

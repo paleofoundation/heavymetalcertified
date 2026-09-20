@@ -18,6 +18,8 @@
 // Version history is appended separately by build-cert-version-history.mjs.
 
 // ── v3 tokens (verbatim from the canvas) ──────────────────────────────────────
+import { SECTION_CLASS, H2_CLASS, PROSE_CLASS } from "./design-tokens.mjs"
+
 const ACCENT = "#9f2727"
 const LINK = "#1c43ad"
 const INK = "#2b1f1f"
@@ -29,8 +31,8 @@ const ROWB = "#f2ece7"
 const CELLB = "#f4eee9"
 const TINT = "#fdf4f3"
 
-// Section H2 — verbatim from the canvas (Lora 400 30px, hairline underline).
-const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:${INK};border-bottom:1px solid ${BORDER};padding-bottom:10px;margin:0 0 20px`
+// Colour/type only — spacing lives on .hmtc-h2 / tokens.scss.
+const H2 = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:${INK};border-bottom:1px solid ${BORDER};padding-bottom:10px`
 
 const esc = (s) => String(s == null ? "" : s).replace(/&(?![a-z#0-9]+;)/gi, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
 // YAML double-quoted scalar: escape backslashes and quotes only (entities/dashes pass through).
@@ -87,9 +89,9 @@ export function renderMatrix({ analytes, rows, tier1Labels = [], tier2Labels = [
     : ""
 
   const defaultNote = `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix: measured but with no standalone number, controlled by the total-metal screen or packaging control, not an invented value.`
-  return `<section style="margin-bottom:52px">
-<h2 id="matrix" style="${H2}">Master limit matrix</h2>
-<p style="font-size:13.5px;line-height:1.7;color:${MUTE};margin:0 0 20px;max-width:84ch">${note || defaultNote}</p>
+  return `<section class="${SECTION_CLASS}">
+<h2 id="matrix" class="${H2_CLASS}" style="${H2}">Master limit matrix</h2>
+<p class="${PROSE_CLASS}" style="font-size:13.5px;line-height:1.7;color:${MUTE};margin:0 0 20px">${note || defaultNote}</p>
 <div style="overflow-x:auto;border:1px solid ${BORDER}"><table style="width:100%;border-collapse:collapse;min-width:60rem"><thead>${head}</thead><tbody>
 ${bodyRows}
 </tbody></table></div>${legend}
@@ -103,18 +105,18 @@ export function renderScope({ methodNoteHtml, scopeLeadHtml }) {
   const lead =
     scopeLeadHtml ||
     `Every limit on every subcategory is the strictest maximum level set by any credible government worldwide, converted to the product&rsquo;s native basis, with a disclosed read-across from the nearest government value where no government regulates the exact product. Nothing is invented; every number traces to a named sovereign limit in the <a href="/regulations" style="color:${LINK}">regulation references</a>.`
-  return `<section style="margin-bottom:52px">
-<h2 id="scope" style="${H2}">Scope and method</h2>
-<p style="font-size:17.5px;line-height:1.72;color:${INK};margin:0 0 18px;max-width:74ch">${lead}</p>
-<p style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 4px;max-width:74ch">Method: <a href="/program/structure" style="color:${LINK}">government-limit default (Method v2.0)</a>. ${methodNoteHtml}</p>
+  return `<section class="${SECTION_CLASS}">
+<h2 id="scope" class="${H2_CLASS}" style="${H2}">Scope and method</h2>
+<p class="${PROSE_CLASS}" style="font-size:17.5px;line-height:1.72;color:${INK};margin:0 0 18px">${lead}</p>
+<p class="${PROSE_CLASS}" style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 4px">Method: <a href="/program/structure" style="color:${LINK}">government-limit default (Method v2.0)</a>. ${methodNoteHtml}</p>
 </section>`
 }
 
 // ── about this edition (canvas #edition) ──────────────────────────────────────
 export function renderEdition({ editionPdfLine }) {
-  return `<section style="margin-bottom:52px">
-<h2 id="edition" style="${H2}">About this edition</h2>
-<p style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 18px;max-width:74ch">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. ${editionPdfLine}</p>
+  return `<section class="${SECTION_CLASS}">
+<h2 id="edition" class="${H2_CLASS}" style="${H2}">About this edition</h2>
+<p class="${PROSE_CLASS}" style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 18px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. ${editionPdfLine}</p>
 <div style="border-left:3px solid ${ACCENT};background:${TINT};padding:18px 22px">
 <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0;max-width:74ch">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p>
 </div>
@@ -144,6 +146,8 @@ export function renderManualFrontmatter({
   manualSlug = null,
   reportNumber = null,
   extraFm = [],
+  pdfCover = null,
+  editionChip = null,
 }) {
   // Google Scholar indexes these pages as technical reports
   // (citation_technical_report_institution), and a technical report needs a
@@ -174,6 +178,8 @@ export function renderManualFrontmatter({
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     ...extraFm,
   ]
+  if (pdfCover) lines.push(`pdf_cover: ${yq(pdfCover)}`)
+  if (editionChip) lines.push(`edition_chip: ${yq(editionChip)}`)
   if (pdfHref) {
     lines.push(`pdf: ${yq(pdfHref)}`)
     lines.push(`hero_action: { label: ${yq(pdfLabel)}, href: ${yq(pdfHref)} }`)

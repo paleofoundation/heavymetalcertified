@@ -178,7 +178,7 @@ function citedSection(inst, citeMap) {
   const byStd = citeMap[inst.slug]
   const head = `<h2 style="${H2}">Where HMTc cites it</h2>`
   if (!byStd || byStd.size === 0) {
-    return `<section id="cited" style="margin-bottom:52px">${head}` +
+    return `<section id="cited" class="hmtc-section">${head}` +
       `<p style="${PSUB}">Cells where this instrument holds the strictest government value in force among credible regulators, and therefore binds a published HMTc limit.</p>` +
       `<div style="border:1px dotted #e8e1db;background:#faf7f4;padding:16px 18px">` +
       `<div style="${MONO};font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No published standard is bound by this instrument yet</div>` +
@@ -195,7 +195,7 @@ function citedSection(inst, citeMap) {
     })
     .join("")
   const nStd = byStd.size
-  return `<section id="cited" style="margin-bottom:52px">${head}` +
+  return `<section id="cited" class="hmtc-section">${head}` +
     `<p style="${PSUB}">Cells where this instrument holds the strictest government value in force among credible regulators, and therefore binds a published HMTc limit. ${nStd} published standard${nStd === 1 ? "" : "s"} cite${nStd === 1 ? "s" : ""} it.</p>` +
     `<div style="${CARD}">${rows}</div>` +
     `<p style="font-size:12.5px;line-height:1.65;color:#a9a1a1;margin:14px 0 0;max-width:84ch">Rows appear here only once the citing standard is published. A limit recorded above that binds nothing today may still bind later, as other jurisdictions relax or as a new subcategory is published.</p>` +
@@ -251,7 +251,7 @@ function page(inst, citeMap, generated) {
 
   const issued = [esc(inst.authority), inst.year].filter(Boolean).join(", ")
   const instrumentSec =
-    `<section id="instrument" style="margin-bottom:52px"><h2 style="${H2}">The instrument</h2>` +
+    `<section id="instrument" class="hmtc-section"><h2 style="${H2}">The instrument</h2>` +
     `<p style="${P}">This page records the heavy-metal maximum levels set by ${esc(inst.name)}${issued ? `, the instrument of ${issued}` : ""}. Every value below is transcribed into the Heavy Metal Index register from the primary text and is the value an HMTc standard cites when this jurisdiction binds a certification limit. It is a record of law, not an HMTc threshold.</p>` +
     (inst.url
       ? `<div style="${CARD};padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap"><div style="min-width:0"><div style="font-family:Lora,serif;font-size:17px;line-height:1.35;color:#2b1f1f">${esc(shortHandle(inst.name, inst.jurisdiction))}, official text</div><div style="font-size:12.5px;line-height:1.6;color:#a9a1a1;margin-top:3px">Published by ${esc(inst.authority || "the issuing authority")}.</div></div><a href="${esc(inst.url)}" style="${MONO};font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#9f2727;border:1px solid #9f2727;border-radius:2px;padding:8px 15px;text-decoration:none;white-space:nowrap" target="_blank" rel="noopener">Primary source &nearr;</a></div>`
@@ -262,7 +262,7 @@ function page(inst, citeMap, generated) {
     ? `<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 12px;margin-top:18px;padding-top:16px;border-top:1px solid #e8e1db"><span style="${MONO};font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;white-space:nowrap">Basis</span><span style="font-size:12.5px;line-height:1.6;color:#736b6b">Values appear in the basis the instrument states; no conversion is applied on this page. A standard citing a value in a different basis discloses the conversion on its own derivation table.</span></div>`
     : ""
   const limitsSec =
-    `<section id="reglimits" style="margin-bottom:52px"><h2 style="${H2}">Maximum levels</h2>` +
+    `<section id="reglimits" class="hmtc-section"><h2 style="${H2}">Maximum levels</h2>` +
     `<p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values &micro;g/kg (ppb), in the basis the instrument states. ${nLimits} maximum level${nLimits === 1 ? "" : "s"} across ${nMetals} analyte${nMetals === 1 ? "" : "s"} and ${nCats} product ${nCats === 1 ? "category" : "categories"}, grouped by analyte and ordered by limit.</p>` +
     `${limitsTable(inst.limits)}${basisNote}</section>`
 
@@ -315,7 +315,7 @@ function indexPage(instruments, citeMap, generated) {
 
   // #what
   const whatSec =
-    `<section id="what" style="margin-bottom:52px"><h2 style="${H2}">What this collection records</h2>` +
+    `<section id="what" class="hmtc-section"><h2 style="${H2}">What this collection records</h2>` +
     `<p style="${P}">An HMTc standard adopts the strictest existing maximum level set by any credible government, applied cell-by-cell. That claim is only checkable if the underlying government values are published in one place, in the basis each instrument states, with the provision that carries them. These pages are that place.</p>` +
     `<p style="${P}">${esc(String(nInstruments))} instruments are tracked, spanning national and supranational food-contaminant law across every product matrix. ${esc(String(nCited))} are currently cited by a published HMTc standard; the rest are recorded for register completeness, available as the program expands to new categories and jurisdictions. California Proposition 65 lists several of the eight metals as hazards but, as a right-to-know warning statute, sets no maximum level in food, and is recorded <a href="/regulations/ca-prop65" style="color:#1c43ad;text-decoration:none">for that gap alone</a>.</p>` +
     `<div style="${CALLOUT}"><p style="${CALLOUT_P}">A reference page is a record of law, not an HMTc threshold. It states what a government requires; the standard page states what the program requires, and names which of these instruments binds each cell.</p></div></section>`
@@ -333,7 +333,7 @@ function indexPage(instruments, citeMap, generated) {
       `</div>`
   }
   const instrumentsSec =
-    `<section id="instruments" style="margin-bottom:52px"><h2 style="${H2}">The instruments</h2>` +
+    `<section id="instruments" class="hmtc-section"><h2 style="${H2}">The instruments</h2>` +
     `<p style="${PSUB}">Official titles are given in full, as cited. The count is the number of heavy-metal maximum levels the instrument sets across all its product categories.</p>` +
     `<div style="${MONO};font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9f2727;margin:0 0 10px">Cited by HMTc standards</div>` +
     `<div style="${CARD};margin-bottom:26px">${curated.map(instRow).join("")}</div>` +
@@ -350,7 +350,7 @@ function indexPage(instruments, citeMap, generated) {
     })
     .join("")
   const coverageSec =
-    `<section id="coverage" style="margin-bottom:52px"><h2 style="${H2}">Limits recorded, by instrument</h2>` +
+    `<section id="coverage" class="hmtc-section"><h2 style="${H2}">Limits recorded, by instrument</h2>` +
     `<p style="${PSUB}">${totalLimits} heavy-metal maximum levels across ${nInstruments} instruments. A high count is breadth of product categories covered, not strictness; a single value from a narrow instrument can still be the strictest existing limit for a cell and bind the HMTc value.</p>` +
     `<div style="${CARD};padding:8px 18px 14px">${bars}</div></section>`
 

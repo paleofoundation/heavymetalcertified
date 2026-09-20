@@ -33,6 +33,16 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import {
+  lintHeroDek,
+  lintManualLead,
+  lintManualSections,
+  lintTokenCss,
+  lintStandardsHaveNoManualCover,
+  lintCat1ManualShape,
+  parseFrontmatterDescription,
+  CAT1_MANUAL,
+} from "./lib/manual-density-lint.mjs"
 
 const repoRoot = process.cwd()
 const CONTENT = path.join(repoRoot, "content")
@@ -132,6 +142,28 @@ if (fs.existsSync(MANUALS)) {
     for (const id of ids) {
       if (!new RegExp(`<h2 id="${id}"`).test(body)) blocking.push(`${rel}  missing canonical section <h2 id="${id}"> (regenerate via tools/lib/manual-page.mjs)`)
     }
+    const dek = parseFrontmatterDescription(fm)
+    blocking.push(...lintHeroDek(dek, rel))
+    blocking.push(...lintManualSections(body, rel))
+    blocking.push(...lintManualLead(body, rel, { required: f === `${CAT1_MANUAL}.md` }))
+    if (f === `${CAT1_MANUAL}.md`) blocking.push(...lintCat1ManualShape(body, rel))
+  }
+}
+
+const TOKENS_SCSS = path.join(repoRoot, "quartz/styles/tokens.scss")
+if (fs.existsSync(TOKENS_SCSS)) {
+  blocking.push(...lintTokenCss(fs.readFileSync(TOKENS_SCSS, "utf8")))
+} else {
+  blocking.push("quartz/styles/tokens.scss  missing — spacing scale 8/16/24/48/72 must be locked in the shared design system")
+}
+
+const STANDARDS = path.join(CONTENT, "standards")
+if (fs.existsSync(STANDARDS)) {
+  for (const f of fs.readdirSync(STANDARDS)) {
+    if (!f.endsWith(".md")) continue
+    const rel = path.relative(repoRoot, path.join(STANDARDS, f))
+    const raw = fs.readFileSync(path.join(STANDARDS, f), "utf8")
+    blocking.push(...lintStandardsHaveNoManualCover(raw, rel))
   }
 }
 
@@ -168,7 +200,7 @@ if (tableBacklog) {
 if (blocking.length) {
   console.error(`design-lint: ${blocking.length} BLOCKING no-bold violation(s):`)
   for (const b of blocking) console.error(`  ✗ ${b}`)
-  console.error(`\ndesign-lint: the reading surface carries no bold. Fix the source, or set a value to\n  font-weight:400 (or 500 for a mono label/measured value). See docs/design-canon/CONTENT-RULES.md.`)
+  console.error(`\ndesign-lint: fix the source (no bold; manuals section gap ≥ token floor; hero/lead not a word pile).`)
   if (!WARN_ONLY) process.exit(1)
   console.error("design-lint: (--warn-only) not failing the build.")
 }

@@ -20,9 +20,9 @@ rail_box:
   cta_href: "/apply"
 ---
 
-<section id="tiers" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Analyte tiering</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Eight priority metals, tested as ten analytes because arsenic and chromium are speciated to the toxic form; methylmercury is a conditional eleventh, speciated by reflex on trigger and bounded by the total-mercury limit. Each metal is assigned to a tier by its toxicological profile, and the tier determines whether any exceedance can ever be tolerated.</p>
+<section id="tiers" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Analyte tiering</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Eight priority metals, tested as ten analytes because arsenic and chromium are speciated to the toxic form; methylmercury is a conditional eleventh, speciated by reflex on trigger and bounded by the total-mercury limit. Each metal is assigned to a tier by its toxicological profile, and the tier determines whether any exceedance can ever be tolerated.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
     <div style="background:#fffdfb;padding:19px">
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
@@ -44,10 +44,10 @@ rail_box:
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Speciation upgrades chromium to Tier&nbsp;1 treatment when a credible hexavalent pathway exists. Cr(III) is an essential nutrient and is assumed in food; Cr(VI) is an IARC Group&nbsp;1 carcinogen by ingestion.</p>
 </section>
 
-<section id="calibration" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">How a limit is set</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The default limit for any analyte is the strictest maximum level set by a credible government regulator, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it. The percentile machinery below runs only where the program sets a number itself: the four Tier&nbsp;1 toxics, floored against the government maximum so the published value is the stricter of the two, and the cells no government regulates.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">For those occurrence-set cells, subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other: rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
+<section id="calibration" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">How a limit is set</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">The default limit for any analyte is the strictest maximum level set by a credible government regulator, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the row&rsquo;s native basis. It is a lookup, not a computation: it carries the Tier&nbsp;2 metals directly, and where the law splits a limit by formulation the standard adopts the law&rsquo;s own split and cites it. The percentile machinery below runs only where the program sets a number itself: the four Tier&nbsp;1 toxics, floored against the government maximum so the published value is the stricter of the two, and the cells no government regulates.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">For those occurrence-set cells, subcategories are paired. Within a pair, one form carries a structurally higher contamination burden than the other: rice cereal against non-rice, soy formula against cow-milk, root vegetables against above-ground. Pooling the pair would raise the clean limit and flatter the dirty one in the same move, so they are separated.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
@@ -82,14 +82,14 @@ rail_box:
   </div>
 </section>
 
-<section id="basis" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Native basis</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Every standard is published in the form the product is actually sold in: powder as placed on market, ready-to-feed as consumed, dry cereal as sold, pur&eacute;e as consumed. A brand ships and tests in one form, and the mark matches that form.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Sources reporting in another basis are converted inward during pooling, using documented factors: never the reverse. Where a cross-basis equivalent is shown next to a published value it is a reading convenience for audiences working in other units, not a second standard a brand may choose between.</p>
+<section id="basis" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Native basis</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Every standard is published in the form the product is actually sold in: powder as placed on market, ready-to-feed as consumed, dry cereal as sold, pur&eacute;e as consumed. A brand ships and tests in one form, and the mark matches that form.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Sources reporting in another basis are converted inward during pooling, using documented factors: never the reverse. Where a cross-basis equivalent is shown next to a published value it is a reading convenience for audiences working in other units, not a second standard a brand may choose between.</p>
 </section>
 
-<section id="gates" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Publication gates</h2>
+<section id="gates" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Publication gates</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A per-analyte value publishes only when it clears every gate below. A cell that fails any one of them stays unpublished rather than shipping with a caveat.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="padding:16px 19px;border-bottom:1px solid #f2ece7">
@@ -134,8 +134,8 @@ rail_box:
   </div>
 </section>
 
-<section id="statuses" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The four statuses</h2>
+<section id="statuses" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">The four statuses</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Defined in Program Manual Part 2. A status attaches to a product, not to a brand, and it is visible on the certificate. Certified is the only status that carries the mark.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:42rem;border-collapse:collapse">
@@ -176,9 +176,9 @@ rail_box:
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">The mark is never displayed above the published limit, on any metal, at any margin. There is no transitional band and no allowed overage: a product above any published limit is not Certified and carries no mark. Tiering sets how hard and fast the program reacts to an exceedance, not permission to exceed it: a Tier&nbsp;1 exceedance draws the most severe reaction, a Tier&nbsp;2 exceedance an elevated one.</p>
 </section>
 
-<section id="surveillance" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Lot surveillance</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Certification is continuous. Every SKU entering the program is tested across a minimum of three production lots to establish a baseline before any status is assigned at all: a single passing lot certifies nothing.</p>
+<section id="surveillance" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Lot surveillance</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Certification is continuous. Every SKU entering the program is tested across a minimum of three production lots to establish a baseline before any status is assigned at all: a single passing lot certifies nothing.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Baseline before any status</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">3 lots minimum</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Qualifying prior accredited data</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">credits up to 2 lots</span></div>
@@ -188,16 +188,16 @@ rail_box:
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Speciation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">on reflex trigger</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Chain of custody</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">documented per lot</span></div>
   </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand that already runs a mature, accredited lot-testing program does not repeat work it has already done. Up to two of the three baseline lots may be credited to qualifying prior results, and the baseline is completed with a single new full-panel lot that the program sizes and runs. This is the expedited baseline. Prior results qualify only where they come from an ISO/IEC 17025-accredited laboratory, are quantified at or below the program's reporting limit, were produced within the preceding twelve months, are supplied as structured data under chain of custody, are expressed in or convertible to the product's native basis, and are credited only for the analytes they actually measured. The completing lot is sampled independently and run across the full panel, including every analyte the prior data did not cover, so no analyte enters the baseline on a brand's word alone; where a single analyte rests on that one completing lot, the next two routine surveillance lots confirm it. The credit is available at ordinary program entry, not on the confidential remediation track.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Surveillance intensity follows status: routine while Certified; in Remediation it intensifies with the tier of the exceedance: elevated for a Tier 2 exceedance, every-lot with mandatory hold-and-release for a Tier 1 exceedance. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">A brand that already runs a mature, accredited lot-testing program does not repeat work it has already done. Up to two of the three baseline lots may be credited to qualifying prior results, and the baseline is completed with a single new full-panel lot that the program sizes and runs. This is the expedited baseline. Prior results qualify only where they come from an ISO/IEC 17025-accredited laboratory, are quantified at or below the program's reporting limit, were produced within the preceding twelve months, are supplied as structured data under chain of custody, are expressed in or convertible to the product's native basis, and are credited only for the analytes they actually measured. The completing lot is sampled independently and run across the full panel, including every analyte the prior data did not cover, so no analyte enters the baseline on a brand's word alone; where a single analyte rests on that one completing lot, the next two routine surveillance lots confirm it. The credit is available at ordinary program entry, not on the confidential remediation track.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Surveillance intensity follows status: routine while Certified; in Remediation it intensifies with the tier of the exceedance: elevated for a Tier 2 exceedance, every-lot with mandatory hold-and-release for a Tier 1 exceedance. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The readiness and corrective-action pathways exist so a brand that finds a problem is better off reporting it than concealing it. While a self-reported item is open and on schedule, its register visibility and retailer disclosure follow the published status rules; a released lot confirmed above its applicable limit on product represented as certified is never shielded from a required register status change or from retailer, withdrawal, or recall action. A brand that conceals a known exceedance loses its certificate.</p>
   </div>
 </section>
 
-<section id="pathways" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Two remediation pathways</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">When a lot falls short, a brand chooses how the correction is handled. Both routes require the same corrective action and the same re-testing; what differs is who sees it, and what the brand gets in return for that visibility.</p>
+<section id="pathways" class="hmtc-section">
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Two remediation pathways</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">When a lot falls short, a brand chooses how the correction is handled. Both routes require the same corrective action and the same re-testing; what differs is who sees it, and what the brand gets in return for that visibility.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db;margin-bottom:16px">
     <div style="background:#fffdfb;padding:19px">
       <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px">
@@ -233,8 +233,8 @@ rail_box:
 </section>
 
 <section id="governance">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Governance</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The program is operated and governed by the <a href="https://contaminantstandards.com" style="color:#1c43ad">Institute of Contaminant Standards (ICS)</a>, which sets how limits are established without testing products or selling marks itself.</p>
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Governance</h2>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">The program is operated and governed by the <a href="https://contaminantstandards.com" style="color:#1c43ad">Institute of Contaminant Standards (ICS)</a>, which sets how limits are established without testing products or selling marks itself.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="padding:17px 19px;border-bottom:1px solid #f2ece7">
       <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f;margin-bottom:8px">The Institute of Contaminant Standards</div>
@@ -249,5 +249,5 @@ rail_box:
       <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0;max-width:74ch">Holds binding review authority on contested certification decisions. The Program Operator retains final authority on classification and methodology, subject to that review.</p>
     </div>
   </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit run through the Standards Ratchet Mechanism, which requires a stated trigger and caps how far a limit may move in a single step. Limits tighten as evidence and analytical feasibility improve.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">Substantive changes to a published limit run through the Standards Ratchet Mechanism, which requires a stated trigger and caps how far a limit may move in a single step. Limits tighten as evidence and analytical feasibility improve.</p>
 </section>
