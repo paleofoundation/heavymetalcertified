@@ -60,6 +60,28 @@
 //   node tools/mint-dois.mjs --include-incomplete    # also mint standards with empty analyte cells
 //   node tools/mint-dois.mjs --live                  # deposit (requires credentials in env)
 //   node tools/mint-dois.mjs --live --state=register # deposit as Registered (not yet Findable) for QC
+//   node tools/mint-dois.mjs --update-covers         # DRY-RUN PATCH plan for already-minted records
+//   node tools/mint-dois.mjs --update-covers --live  # PATCH existing DOIs (Elon gate; not a new mint)
+//
+// Cover images (ORDER HMTC-OG-COVER-DATACITE-1 / Elon FAIL fix):
+//   Landing pages set og:image to the 1200×630 letterbox, never the tall rail PNG.
+//   DataCite has no og:image field, so the deposit carries the unfurl URL:
+//     relatedIdentifierType=URL
+//     relatedIdentifier=https://heavymetalcertified.com/static/manuals/covers/<stem>-og.png
+//     relationType=HasPart          ← A (the work) HasPart B (the 1200×630 image)
+//     resourceTypeGeneral=Image
+//   The tall /covers/<stem>.png stays on the left rail only.
+//   HasPart is the DataCite-correct direction. IsSupplementTo would mean the
+//   deposited work is a supplement to the image (inverted). See
+//   tools/lib/document-cover.mjs and docs/DOI-MINTING-LEDGER.md §Cover images.
+//   Rights stay All rights reserved. No CC BY. No test prefix. Do not invent DOIs.
+//
+// PATCH already-minted records (optional, gated):
+//   --update-covers never POSTs a new DOI. Dry-run prints the merged
+//   relatedIdentifiers. --live --update-covers GETs the live record, merges the
+//   Image URL if absent, and PUTs. Requires SCORECARD + Elon gate before any
+//   mass live PATCH. Default --live without --update-covers still only mints
+//   new (cert_doi-null) items.
 
 import fs from "node:fs"
 import path from "node:path"
@@ -69,6 +91,12 @@ import { buildCreators, buildResearcherCreator, creatorDigest } from "./lib/data
 import { publicationDate } from "./lib/publication-jsonld.mjs"
 import { evaluateClaimSurface, loadCompiledRecords, claimSurfaceFailReason } from "./lib/claim-surface.mjs"
 import { loadPageJoins } from "./lib/page-record-join.mjs"
+import {
+  coverRelatedIdentifier,
+  isCoverRelatedIdentifier,
+  mergeCoverRelatedIdentifiers,
+  resolveOgImage,
+} from "./lib/document-cover.mjs"
 
 const REPO = process.cwd()
 const CONTENT = path.join(REPO, "content")
@@ -108,6 +136,7 @@ const wantLive = args.includes("--live")
 const doEmit = args.includes("--emit")
 const doManifest = args.includes("--manifest")
 const includeIncomplete = args.includes("--include-incomplete")
+const wantUpdateCovers = args.includes("--update-covers")
 const limit = num(args.find((a) => a.startsWith("--limit=")))
 const onlyCategory = valOf(args.find((a) => a.startsWith("--category=")))
 const onlySlug = valOf(args.find((a) => a.startsWith("--slug=")))
@@ -201,6 +230,7 @@ try {
 
 // --- collect candidates ------------------------------------------------------------------------
 const candidates = []
+const coverUpdates = []
 const skips = []
 for (const [typeName, t] of Object.entries(TYPES)) {
   if (onlyTypes.length && !onlyTypes.includes(typeName)) continue
@@ -218,7 +248,21 @@ for (const [typeName, t] of Object.entries(TYPES)) {
 
     // Already deposited (its own record carries a DOI) → keep, never re-mint.
     const ownDoi = OWN_DEPOSIT_FIELDS.map((k) => fm[k]).find((v) => v && HAS_DOI.test(String(v)))
-    if (ownDoi) { skips.push([rel, `already-deposited (${ownDoi})`]); continue }
+    if (ownDoi) {
+      if (wantUpdateCovers) {
+        const cover = resolveOgImage({ typeName, slug, frontmatter: fm })
+        if (cover) {
+          coverUpdates.push({
+            typeName, slug, existingDoi: String(ownDoi).trim(),
+            title: fm.title || slug,
+            cover,
+            coverId: coverRelatedIdentifier(cover),
+          })
+        }
+      }
+      skips.push([rel, `already-deposited (${ownDoi})`])
+      continue
+    }
 
     if (typeName === "standards") {
       // The `type` field is the real publish gate: only `type: standard` mints. This correctly
@@ -264,6 +308,7 @@ for (const [typeName, t] of Object.entries(TYPES)) {
       complete: completeSlugs.has(slug),
       doiSuffix,
       earlierEdition,
+      cover: resolveOgImage({ typeName, slug, frontmatter: fm }),
     })
   }
 }
@@ -291,6 +336,8 @@ function buildPayload(c) {
       relationType: "IsNewVersionOf",
     })
   }
+  const coverId = coverRelatedIdentifier(c.cover)
+  if (coverId) related.push(coverId)
   const types = { resourceTypeGeneral: c.t.rtGeneral }
   if (c.t.rtText) types.resourceType = c.t.rtText
 
@@ -376,6 +423,34 @@ if (gapped.length) {
   for (const { c, gaps } of gapped.slice(0, 30)) console.log(`     ${c.typeName}/${c.slug}: ${gaps.join("; ")}`)
 }
 
+function coverRelLine(related) {
+  const img = (related || []).find((r) => r.resourceTypeGeneral === "Image")
+  if (!img) return "(none)"
+  return `${img.relationType} ${img.relatedIdentifierType} ${img.resourceTypeGeneral} ${img.relatedIdentifier}`
+}
+
+const coverPreview = onlySlug ? batch : batch.filter((c) => c.cover)
+if (coverPreview.length || onlySlug) {
+  console.log(`\n  relatedIdentifiers.Image (HasPart URL — landing-page cover; IsSupplementTo would invert A→B):`)
+  const shown = onlySlug ? batch : coverPreview
+  for (const c of shown.slice(0, 40)) {
+    const p = buildPayload(c)
+    console.log(`     ${c.typeName}/${c.slug}: ${coverRelLine(p.data.attributes.relatedIdentifiers)}`)
+  }
+  if (!onlySlug && coverPreview.length > 40) console.log(`     … +${coverPreview.length - 40} more with covers`)
+}
+
+if (wantUpdateCovers) {
+  console.log(`\n  --update-covers: ${coverUpdates.length} already-minted record(s) with a cover PNG (PATCH plan, no new DOI)`)
+  for (const u of coverUpdates.slice(0, 40)) {
+    console.log(`     ${u.typeName}/${u.slug}  ${u.existingDoi}  ${coverRelLine([u.coverId])}`)
+  }
+  if (coverUpdates.length > 40) console.log(`     … +${coverUpdates.length - 40} more`)
+  if (!coverUpdates.length && onlySlug) {
+    console.log(`     ${onlySlug}: no cover asset (or not already-deposited) — no PATCH`)
+  }
+}
+
 if (doManifest) {
   fs.mkdirSync(DATA, { recursive: true })
   const rows = ["type,category,slug,suffix,url,resourceTypeGeneral,version,complete,publicationYear,title"]
@@ -401,9 +476,53 @@ if (doEmit) {
 
 if (!live) {
   if (gapped.length) console.log(`\n  (dry-run: ${gapped.length} blocked item(s) above must be resolved before --live.)`)
+  if (wantUpdateCovers) console.log(`\n  (--update-covers dry-run only. Pass --live --update-covers after SCORECARD + Elon gate to PATCH existing records. Does not mint new DOIs.)`)
   if (!credentialsReady) console.log(`\n  (no live credentials in env — planning report. Set DATACITE_USER/PASSWORD/PREFIX, then --live to deposit.)`)
   else if (!wantLive) console.log(`\n  (credentials present; pass --live to deposit.)`)
   process.exit(0)
+}
+
+if (wantUpdateCovers) {
+  // PATCH already-minted records only. Never POST a new DOI in this path.
+  if (DATACITE_MODE !== "live") {
+    console.error(`\n!! ABORT: --update-covers --live requires DATACITE_MODE=live (no test-prefix writes).`)
+    process.exit(1)
+  }
+  const auth = { "Content-Type": "application/vnd.api+json", Authorization: `Basic ${Buffer.from(`${DATACITE_USER}:${DATACITE_PASSWORD}`).toString("base64")}` }
+  let patched = 0, unchanged = 0, failedPatch = 0
+  for (const u of coverUpdates) {
+    if (isTestPrefix(u.existingDoi)) {
+      console.error(`  FAIL ${u.typeName}/${u.slug}: refusing to PATCH test-prefix DOI ${u.existingDoi}`)
+      failedPatch += 1
+      continue
+    }
+    const url = `${DATACITE_API}/${encodeURIComponent(u.existingDoi)}`
+    try {
+      const got = await fetch(url, { headers: auth })
+      if (!got.ok) { console.error(`  FAIL GET ${u.typeName}/${u.slug}: ${got.status} ${(await got.text()).slice(0, 240)}`); failedPatch += 1; continue }
+      const body = await got.json()
+      const current = body?.data?.attributes?.relatedIdentifiers || []
+      if (current.some((row) => isCoverRelatedIdentifier(row) && String(row.relatedIdentifier) === String(u.coverId.relatedIdentifier))) {
+        unchanged += 1
+        continue
+      }
+      const merged = mergeCoverRelatedIdentifiers(current, u.coverId)
+      const put = await fetch(url, {
+        method: "PUT",
+        headers: auth,
+        body: JSON.stringify({ data: { type: "dois", attributes: { relatedIdentifiers: merged } } }),
+      })
+      if (!put.ok) { console.error(`  FAIL PUT ${u.typeName}/${u.slug}: ${put.status} ${(await put.text()).slice(0, 240)}`); failedPatch += 1; continue }
+      patched += 1
+      console.log(`  PATCH ${u.typeName}/${u.slug}  ${u.existingDoi}  +HasPart Image ${u.cover.url}`)
+    } catch (err) {
+      console.error(`  ERROR ${u.typeName}/${u.slug}: ${err.message}`)
+      failedPatch += 1
+    }
+  }
+  console.log(`\n  update-covers: patched=${patched}  already-had-cover=${unchanged}  failed=${failedPatch}`)
+  console.log(`  next: no new DOI was minted. Confirm Fabrica relatedIdentifiers, then rebuild landing pages if OG tags changed.`)
+  process.exit(failedPatch ? 1 : 0)
 }
 
 // --- live deposit ------------------------------------------------------------------------------

@@ -19,6 +19,9 @@ earlier_edition_doi: "10.5281/zenodo.20771543"
 edition: "Manual v3"
 methodology_version: "Method v2.0: government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)"
 pdf_cover: "/static/manuals/covers/infant-and-child-foods-v3.png"
+socialImage: "/static/manuals/covers/infant-and-child-foods-v3-og.png"
+og_image_width: 1200
+og_image_height: 630
 edition_chip: "Manual v3 · Method v2"
 pdf: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf"
 hero_action: { label: "Download PDF · Manual v3", href: "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf" }

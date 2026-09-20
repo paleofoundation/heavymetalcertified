@@ -14,6 +14,9 @@ author: "Karen Pendergrass"
 orcid: "0000-0002-2348-7259"
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 pdf_cover: "/static/manuals/covers/pet-foods-2026.png"
+socialImage: "/static/manuals/covers/pet-foods-2026-og.png"
+og_image_width: 1200
+og_image_height: 630
 edition_chip: "2026 edition · Method v2"
 pdf: "/static/manuals/HMTc-Pet-Foods-Program-Manual-2026.pdf"
 hero_action: { label: "Download PDF · 2026-08-13", href: "/static/manuals/HMTc-Pet-Foods-Program-Manual-2026.pdf" }
