@@ -667,6 +667,7 @@
       { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-color", "want": "#9f2727" },
       { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-width", "want": "2px" },
       { "sel": ".hmtc-search-results a:focus-visible", "prop": "outline-offset", "want": "-2px" },
+      { "press": "#site-search-input", "key": "Escape" },
       { "hover": "#what p a" },
       { "sel": "#what p a:hover", "prop": "color", "want": "#1c43ad", "note": "Ordinary prose links retain their existing blue text and underline." },
       { "sel": "#what p a:hover", "prop": "text-decoration-line", "want": "underline" }
