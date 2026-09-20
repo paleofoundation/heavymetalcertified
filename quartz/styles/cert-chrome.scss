@@ -20,6 +20,19 @@
 // Quartz config's googleFonts pipeline.
 :root {
   --bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, system-ui, sans-serif !important;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 48px;
+  --space-5: 72px;
+  --section-gap: var(--space-4);
+  --section-gap-manual: var(--space-5);
+  --table-cell-pad-y: 16px;
+  --table-cell-pad-x: 16px;
+  --prose-max: 70ch;
+  --h2-margin-top: var(--space-4);
+  --h2-margin-bottom: var(--space-2);
+  --table-margin-y: var(--space-3);
 }
 
 // ============================================================
@@ -76,14 +89,65 @@ article h3 {
 // folds the preceding paragraph's own bottom margin into the 52px rather than
 // adding to it. This matches the index site's proof-design.scss, which already
 // carries `margin: 52px 0 20px` for the same reason.
-.proof:not(.proof-home) .wiki-content h2 {
+.proof:not(.proof-home) .wiki-content h2,
+.proof:not(.proof-home) .wiki-content .hmtc-h2 {
   font-size: 30px;
   line-height: 1.2;
   border-bottom: 1px solid #e8e1db;
   padding-bottom: 10px;
-  margin: 52px 0 20px;
+  margin: var(--h2-margin-top) 0 var(--h2-margin-bottom);
 }
-.proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; }
+.proof:not(.proof-home) .wiki-content h3 { font-size: 21px; line-height: 1.25; margin-top: var(--space-3); }
+
+.hmtc-section {
+  margin-bottom: var(--section-gap);
+}
+body[data-slug^="manuals/"] .hmtc-section {
+  margin-bottom: var(--section-gap-manual);
+}
+body[data-slug^="manuals/"] .wiki-content .hmtc-section > h2:first-child,
+body[data-slug^="manuals/"] .wiki-content .hmtc-section > .hmtc-h2:first-child {
+  margin-top: var(--space-3);
+}
+.hmtc-manual-lead {
+  font-size: 17.5px;
+  line-height: 1.7;
+  color: #2b1f1f;
+  max-width: var(--prose-max);
+  margin: 0 0 var(--space-4);
+}
+.hmtc-principle-grid {
+  display: grid;
+  gap: var(--space-2);
+}
+.hmtc-principle-card {
+  padding: var(--space-3);
+  background: #fffdfb;
+  border: 1px solid #e8e1db;
+}
+.hmtc-principle-card .hmtc-principle-k {
+  font-family: Lora, serif;
+  font-size: 19px;
+  line-height: 1.3;
+  color: #2b1f1f;
+}
+.hmtc-principle-card .hmtc-principle-n {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: #9f2727;
+}
+.hmtc-principle-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3f3a3a;
+  margin: var(--space-1) 0 0;
+  max-width: var(--prose-max);
+}
+.hmtc-table-wrap {
+  overflow-x: auto;
+  margin: var(--table-margin-y) 0;
+  border: 1px solid #e8e1db;
+}
 
 // Breathing room below the hero band AND three-column top-line alignment.
 //
@@ -105,7 +169,7 @@ article h3 {
 // manuals, regulations, analytes, ...), which is the point. Home is full-bleed
 // and keeps its own `.proof-home .proof-layout { padding: 0 }` override.
 .proof:not(.proof-home) .proof-layout {
-  padding-top: 52px;
+  padding-top: var(--space-4);
 }
 
 // Markdown pages whose center opens with a heading (not a raw <section>, not a
@@ -744,6 +808,63 @@ footer.site-footer .site-footer-bottom p {
 //  v3 LEFT RAIL — "On this page" numbered rails (585/641 in v3)
 // ============================================================
 aside.snav { position: sticky; top: 92px; padding: 34px 28px 48px; }
+
+.hmtc-manual-authority {
+  margin: 0 0 var(--space-4);
+  padding: 0 0 var(--space-3);
+  border-bottom: 1px solid #e8e1db;
+}
+.hmtc-manual-authority-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a9a1a1;
+  margin-bottom: var(--space-2);
+}
+.hmtc-manual-cover {
+  display: block;
+  margin: 0 0 var(--space-2);
+  border: 1px solid #e8e1db;
+  background: #fffdfb;
+  line-height: 0;
+}
+.hmtc-manual-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hmtc-edition-chip {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9f2727;
+  border: 1px solid #f2dcda;
+  background: #fdf4f3;
+  padding: 6px 10px;
+  margin: 0 0 var(--space-2);
+}
+.hmtc-manual-authority-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+.hmtc-manual-dl,
+.hmtc-manual-cite {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9f2727;
+  text-decoration: none;
+  background: none !important;
+}
+.hmtc-manual-dl:hover,
+.hmtc-manual-cite:hover { text-decoration: underline; }
+
 .hmtc-onpage { margin-bottom: 30px; }
 .hmtc-onpage-head {
   display: flex;
@@ -856,6 +977,9 @@ aside.rail { position: sticky; top: 92px; padding: 38px 28px 48px; display: bloc
   line-height: 1.78 !important;
   color: #3f3a3a !important;
 }
+.proof:not(.proof-home) .wiki-content p:not(.author-profile p, .hmtc-challenge p, .hmtc-cap) {
+  max-width: var(--prose-max);
+}
 .proof:not(.proof-home) .wiki-content { color: #3f3a3a !important; }
 .wiki-content ul, .wiki-content ol { color: #3f3a3a; }
 // SITEWIDE no-bold rule (design canon: CONTENT-RULES.md §"No bold"). The reading
@@ -872,13 +996,13 @@ strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
   font-size: 13.5px;
   border: 1px solid #e8e1db;
   border-collapse: collapse;
-  margin: 12px 0 22px;
+  margin: var(--table-margin-y) 0;
 }
 .wiki-content thead tr { background: #9f2727; }
 .wiki-content thead th {
   color: #fff !important;
   text-align: left;
-  padding: 11px 15px !important;
+  padding: var(--table-cell-pad-y) var(--table-cell-pad-x) !important;
   font-family: "IBM Plex Mono", monospace !important;
   font-size: 10px !important;
   font-weight: 500 !important;
@@ -887,7 +1011,7 @@ strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
   line-height: 1.4;
 }
 .wiki-content tbody td {
-  padding: 13px 15px !important;
+  padding: var(--table-cell-pad-y) var(--table-cell-pad-x) !important;
   vertical-align: top;
   border-bottom: 1px solid #f2ece7;
   font-size: 13.5px !important;

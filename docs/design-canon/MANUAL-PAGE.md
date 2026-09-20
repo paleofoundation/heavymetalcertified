@@ -45,7 +45,9 @@ in the body is the old duplicate-title defect — the hero title is the HeroBand
 | `rail_box` | Rail "Document versions" box | `{title, body}` — **no cta** (the PdfCard is the download) |
 | `effective_date` / `updated` | Hero "UPDATED" stamp + snapshot | |
 
-The PDF lives **only in the rail** (`aside.rail a[download]` == 1; `.wiki-content a[download]` == 0).
+On **manuals**, the bound-document identity lives in the **left rail** (`aside.snav .hmtc-manual-authority`): first-page PDF cover, Download PDF, Cite, edition chip (`Manual v3 · Method v2`). The right rail keeps Connections and does **not** duplicate the download. `.wiki-content a[download]` stays 0. **Standards pages never carry a PDF cover** — the claim surface stays the hero there.
+
+Spacing is the locked scale **8 / 16 / 24 / 48 / 72** (`quartz/styles/tokens.scss`, `tools/lib/design-tokens.mjs`). Manuals sections use `.hmtc-section` (`margin-bottom: var(--section-gap-manual)` = 72). Table cells use `--table-cell-pad-y/x` ≥ 12px. Hero dek and the body lead are a kill-gate: ≤2 sentences, not a word pile.
 
 ### Body sections (raw HTML, v3 inline styles)
 
@@ -63,7 +65,8 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 
 **Cat-1 Manual v3 (locked thin TOC):**
 
-1. `<h2 id="principles">` **Governing Principles** — the five co-equal objectives (`docs/governance/hmtc-governing-principles.md`).
+0. `.hmtc-manual-lead` — two sentences. Job: Method v2 governing instrument for Cat-1.
+1. `<h2 id="principles">` **Governing Principles** — the five co-equal objectives as airy `.hmtc-principle-card`s (`docs/governance/hmtc-governing-principles.md`).
 2. `<h2 id="lifecycle">` **Program lifecycle and statuses** — Certified | Remediation | Suspension | Revocation, baseline.
 3. `<h2 id="instruments">` **Mark, MU, CAPA, remediation, ratchet** — current SoT, short.
 4. `<h2 id="lot-testing">` **Lot Testing Schedule** — risk tiers, baseline, reflex, speciation, sampling, lab-informed schedule, 90% stay-in-program gate.
@@ -74,8 +77,9 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 ## Enforcement (always followed)
 
 - **`tools/design-lint.mjs`** (wired into `prebuild`, build-blocking) scans `content/manuals/`:
-  no inline bold / `<strong>` / `<b>`; and structural conformance — no body `<h1>`; frontmatter
+  no inline bold / `<strong>` / `<b>`; structural conformance — no body `<h1>`; frontmatter
   carries `description` / `snapshot` / `connections`; the body carries `<h2 id="scope|matrix|hard|edition">` except Cat-1 v3, which carries `<h2 id="principles|lifecycle|instruments|lot-testing|register|edition">`.
+  Density gate: every manuals `<section>` uses `.hmtc-section` and any inline `margin-bottom` is ≥ the token floor (48). Hero dek ≤ 2 sentences / 32 words; Cat-1 lead ≤ 2 sentences / 50 words. Tokens file must lock `--space-1`…`--space-5` to 8/16/24/48/72. Standards pages fail if a PDF cover / `.hmtc-manual-authority` appears.
 - **`design/v3-acceptance.cert.json`** + `npm run check:v3` (Playwright, release path) assert the
   rendered chrome, the canonical table head, no-bold, and the rail-only download.
 

@@ -194,7 +194,7 @@ for (const row of catalog.rows) {
     analytes: PANEL.map((a) => descriptorFromCatalogAnalyte(analytes[a], a)),
   })
 
-  const body = `<section id="audiences" style="margin-bottom:52px">
+  const body = `<section id="audiences" class="hmtc-section">
   <h2 ${H2S}>Who this standard is for</h2>
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Four audiences read this page differently. Each has a route through it.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1px;background:#e8e1db;border:1px solid #e8e1db">
@@ -205,7 +205,7 @@ for (const row of catalog.rows) {
   </div>
 </section>
 
-<section id="limits" style="margin-bottom:52px">
+<section id="limits" class="hmtc-section">
   <h2 ${H2S}>Master Limit Table</h2>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb, ${basisLabel(row.native_basis)}. A firm limit renders only for an analyte that has cleared all five shipping gates; every other analyte shows its honest evidence state and no number. The pooled column shows the program&rsquo;s occurrence figure for the analyte; the HMTc limit is the stricter of the applicable government maximum and &mdash; for Tier-1 toxics and cells no government regulates &mdash; that pooled figure, so the derivation stays re-derivable and the rationale tag names which bound. A brand meeting every firm value on a like-for-like basis qualifies for the mark for this subcategory.</p>
   <div style="overflow-x:auto">
@@ -224,7 +224,7 @@ ${rowsHtml}
 ${devNote}
 </section>
 
-<section id="scope" style="margin-bottom:52px">
+<section id="scope" class="hmtc-section">
   <h2 ${H2S}>Analyte scope</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">This disclosure travels with the mark so a certified product is never silently uncontrolled on an analyte. The panel is ${PANEL.join(", ")}.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px">
@@ -408,7 +408,7 @@ const idxFront = [
   "",
 ].join("\n")
 
-const idxBody = `<section id="edition" style="margin-bottom:52px">
+const idxBody = `<section id="edition" class="hmtc-section">
   <h2 ${H2}>The bound editions</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The web standards below and the Program Manuals are the same content at two granularities. The pages are per subcategory and always current; each manual is the citable bound edition of one category, carrying the governance policy, the lot testing schedule and the full derivation of every limit it publishes.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">

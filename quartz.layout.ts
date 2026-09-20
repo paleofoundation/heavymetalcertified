@@ -45,9 +45,11 @@ export const defaultContentPageLayout: PageLayout = {
   // snapshot). renderPage.tsx lifts beforeBody into a full-width band above the
   // 3-column shell; the home page opts out (it carries its own hero in content).
   beforeBody: [Component.HeroBand()],
-  // Proof's curated left rail (.snav): per-page section nav + a compact
-  // cross-reference count group. Global navigation now lives in the TopNav.
+  // Proof's curated left rail (.snav): manuals open with the authority
+  // register (PDF cover + download + cite + edition chip). Other pages
+  // keep section nav. ManualAuthority self-gates to /manuals/<slug>.
   left: [
+    Component.ManualAuthority(),
     Component.Snav(),
     Component.DedicatedPages(),
   ],

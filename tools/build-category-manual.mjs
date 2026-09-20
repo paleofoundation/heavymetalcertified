@@ -93,6 +93,8 @@ const page = renderManualPage({
     { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" },
   ],
   pdfHref,
+  pdfCover: pdfFile && META.manual_slug === "pet-foods" ? "/static/manuals/covers/pet-foods-2026.png" : null,
+  editionChip: "2026 edition · Method v2",
   manualSlug: META.manual_slug,
   pdfLabel: `Download PDF · ${META.effective_date}`,
   railBody,

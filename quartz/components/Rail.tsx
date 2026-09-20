@@ -114,7 +114,8 @@ export default (() => {
       <a href="#heavy-metal-index-syntheses">Heavy Metal Index syntheses</a>
       <a href="https://heavymetalindex.com/contact">Contact the Index</a>
     </section>
-    const pdfHref = documentPdf(fm, String(slug))
+    const isManualPage = String(slug).startsWith("manuals/") && String(slug) !== "manuals" && String(slug) !== "manuals/index"
+    const pdfHref = isManualPage ? "" : documentPdf(fm, String(slug))
     const enc = encodeURIComponent
     const shareHrefs: Record<string, string> = {
       x: `https://twitter.com/intent/tweet?url=${enc(canonical)}&text=${enc(shareTitle)}`,

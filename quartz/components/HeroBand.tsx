@@ -130,7 +130,8 @@ export default (() => {
     const eff = iso(fm.effective_date)
     const snapshot = pageSnapshot(fm, String(slug), badge)
     const element = pageElement(String(slug))
-    const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/")
+    const isManualPage = String(slug).startsWith("manuals/") && String(slug) !== "manuals" && String(slug) !== "manuals/index"
+    const hasAuthorCard = isKarenAuthor(fm, String(slug)) && !String(slug).startsWith("authors/") && !isManualPage
 
     const author = fm.author ? String(fm.author) : undefined
     const orcid = fm.orcid ? String(fm.orcid) : undefined
@@ -221,7 +222,7 @@ export default (() => {
                 ) : null}
               </div>
             ) : null}
-            <DocumentActions fm={fm} slug={String(slug)} />
+            {isManualPage ? null : <DocumentActions fm={fm} slug={String(slug)} />}
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
           {hasAuthorCard && <AuthorCard updated={updated} />}
