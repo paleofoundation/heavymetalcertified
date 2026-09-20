@@ -194,6 +194,8 @@ meta row    margin-top 26px · display: flex; flex-wrap: wrap; gap: 12px 28px;
             order:   Cite this page (ghost) · Version history (ghost) · Download PDF (solid)
 ```
 
+**HMTc document actions (20 September 2026).** The cert site's canonical hero buttons use the shared `.hmtc-document-actions` component in the **center pane**: dark red `#7f1f1f`, white system-sans text at 13px/1.45, 13px 15px padding, and 3px corners. This applies to manual downloads too; do not create a white button under a manual cover. Labels are plain text with **no plus glyph**, including Follow. Manual heroes omit the redundant Cite action; their citation block remains in the page footer.
+
 **Right column — page snapshot** (omit only where a screen has no counts):
 
 ```

@@ -593,8 +593,8 @@ header.hmi-topnav-shell::after {
 }
 .hmtc-hb-cover img { display: block; width: 100%; height: auto; }
 
-// Edition and download strip sits under the portrait cover in the 264px
-// hero left column. Editions are plain metadata; the PDF is the filled action.
+// Plain edition metadata sits under the portrait cover in the hero left column.
+// Download uses the shared document actions in the center pane.
 .hmtc-manual-authority {
   width: 100%;
   max-width: 188px;
@@ -607,34 +607,8 @@ header.hmi-topnav-shell::after {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
-  margin: 0 0 var(--space-2);
+  margin: 0;
 }
-.hmtc-manual-authority-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  align-items: baseline;
-}
-.hmtc-manual-dl {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  min-height: 44px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9f2727;
-  text-decoration: none;
-  background: #fff;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  padding: var(--space-1) var(--space-2);
-}
-.hmtc-manual-dl:hover { color: #9f2727; background: #fdf4f3; }
-.hmtc-manual-dl:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
-
 .hmtc-subject-caption > span:first-child { font: 10px/1.6 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.65); }
 
 .hmtc-hb-crumb {

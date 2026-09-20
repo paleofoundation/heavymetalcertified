@@ -243,7 +243,7 @@ export default (() => {
                 ) : null}
               </div>
             ) : null}
-            {isManualPage ? null : <DocumentActions fm={fm} slug={String(slug)} />}
+            <DocumentActions fm={fm} slug={String(slug)} downloadOnly={isManualPage} pdfHref={isManualPage ? pdfHref : undefined} />
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
           {hasAuthorCard && <AuthorCard updated={updated} />}

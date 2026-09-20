@@ -22,21 +22,13 @@ export function manualEditionChip(fm: Record<string, unknown>): string {
   )
 }
 
-/** Governing-instrument strip: plain edition metadata and the PDF download button. */
+/** Plain edition metadata beneath the manual cover. Actions live in the center hero pane. */
 export function ManualAuthorityStrip({ fm }: { fm: Record<string, unknown> }) {
-  const pdfHref = frontmatterString(fm.pdf)
   const editionChip = manualEditionChip(fm)
 
   return (
     <div class="hmtc-manual-authority" data-manual-authority="1">
       {editionChip ? <div class="hmtc-manual-edition">{editionChip}</div> : null}
-      <div class="hmtc-manual-authority-actions">
-        {pdfHref ? (
-          <a class="hmtc-manual-dl" href={pdfHref} download>
-            Download PDF
-          </a>
-        ) : null}
-      </div>
     </div>
   )
 }
