@@ -842,8 +842,7 @@
       { "sel": "aside.snav", "prop": "position", "want": "sticky", "note": "the 'On this page' rail sticks below the top-bar." },
       { "sel": "aside.snav", "prop": "top", "want": "92px" },
       { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
-      { "sel": ".hmtc-hb-sidebar .hmtc-author-bio", "prop": "visibility", "want": "visible" },
-      { "sel": ".hmtc-hb-sidebar .hmtc-author-bio", "prop": "font-size", "want": "13px" },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-bio", "prop": "absent", "want": true },
       { "sel": ".hmtc-hb-context--authority", "prop": "row-gap", "want": "24px" },
       { "sel": ".hmtc-hb-context--authority", "prop": "justify-content", "want": "flex-start" },
       { "sel": ".hmtc-manual-edition", "prop": "margin-bottom", "want": "16px" },
@@ -997,7 +996,7 @@
           { "sel": ".hmtc-hb-context--authority", "prop": "row-gap", "want": "24px" },
           { "sel": ".hmtc-manual-dl", "prop": "min-height", "want": "44px" },
           { "sel": ".hmtc-manual-authority-label", "prop": "absent", "want": true },
-          { "sel": ".hmtc-hb-sidebar .hmtc-author-bio", "prop": "visibility", "want": "visible" },
+          { "sel": ".hmtc-hb-sidebar .hmtc-author-bio", "prop": "absent", "want": true },
           { "sel": ".hmtc-manual-cite", "prop": "absent", "want": true }
         ]
       }

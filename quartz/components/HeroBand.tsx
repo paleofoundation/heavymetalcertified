@@ -245,7 +245,7 @@ export default (() => {
             {isManualPage ? null : <DocumentActions fm={fm} slug={String(slug)} />}
           </div>
           {hasSidebar && <aside class="hmtc-hb-sidebar" aria-label="Author and document details">
-          {hasAuthorCard && <AuthorCard updated={updated} showBio={isManualPage} />}
+          {hasAuthorCard && <AuthorCard updated={updated} />}
           {hasSnapshot ? (
             <div class="hmtc-hb-snap">
               <div class="hmtc-hb-snap-head">{snapTitle}</div>

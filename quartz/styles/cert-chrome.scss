@@ -1209,7 +1209,6 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .hmtc-author-byline a { text-decoration: none; }
 .hmtc-author-name:hover { text-decoration: underline; }
 .hmtc-author-orcid { display: inline-flex; }
-.hmtc-author-bio { font: 13px/1.65 var(--bodyFont); color: rgba(255,255,255,.84); margin: var(--space-2) 0 0; }
 .hmtc-author-updated { font: 12px/1.6 var(--bodyFont); color: rgba(255,255,255,.75); margin: 14px 0 0; }
  .hmtc-author-popover { position: absolute; top: 100%; right: 0; z-index: 70; width: min(340px,calc(100vw - 48px)); box-sizing: border-box; padding: 22px; background: #fffdfb; color: #392b2b; border: 1px solid #e7ceca; border-top: 5px solid #f2dcda; border-radius: 14px 14px 32px 14px; box-shadow: 0 16px 40px #3c101033; visibility: hidden; opacity: 0; transition: opacity 120ms ease; font: 14px/1.55 var(--bodyFont); }
 .hmtc-author-hover:focus-within:not([data-dismissed]) .hmtc-author-popover { visibility: visible; opacity: 1; }
