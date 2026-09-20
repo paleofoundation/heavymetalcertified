@@ -151,6 +151,8 @@ export function renderManualFrontmatter({
   editionChip = null,
   ogImageWidth = null,
   ogImageHeight = null,
+  scholarAbstract = null,
+  keywords = [],
 }) {
   // Google Scholar indexes these pages as technical reports
   // (citation_technical_report_institution), and a technical report needs a
@@ -171,6 +173,12 @@ export function renderManualFrontmatter({
     `category: ${category}`,
     `breadcrumb_leaf: ${yq(categoryName)}`,
     `description: ${yq(description)}`,
+    ...(scholarAbstract
+      ? [`scholar_abstract: ${yq(scholarAbstract)}`, `socialDescription: ${yq(scholarAbstract)}`]
+      : []),
+    ...(keywords.length
+      ? ["keywords:", ...keywords.map((k) => `  - ${yq(k)}`)]
+      : []),
     "scholar_eligible: true",
     `cert_doi: ${certDoi == null ? "null" : yq(certDoi)}`,
     `effective_date: ${yq(effectiveDate)}`,

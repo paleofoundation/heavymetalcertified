@@ -840,6 +840,11 @@
       { "sel": ".hmtc-document-doi[aria-label=\"Earlier deposited edition\"]", "prop": "absent", "want": true, "note": "Zenodo earlier-edition block is not a hero snapshot row after house mint." },
       { "sel": ".hmtc-hb-sidebar .hmtc-document-doi[aria-label=\"Document DOI\"] a[href=\"https://doi.org/10.83138/hmtc.manual.infant-and-child-foods\"]", "prop": "count", "want": 1, "note": "Hero snapshot shows the live Manual v3 house DOI." },
       { "sel": "meta[name=\"citation_doi\"][content=\"10.83138/hmtc.manual.infant-and-child-foods\"]", "prop": "count", "want": 1, "note": "Highwire citation_doi is the minted house DOI, never a superseded Zenodo deposit." },
+      { "sel": "meta[name=\"citation_abstract\"]", "prop": "count", "want": 1, "note": "dense Scholar abstract, not the one-line hero dek." },
+      { "sel": "meta[property=\"og:description\"]", "prop": "count", "want": 1 },
+      { "sel": "meta[name=\"twitter:description\"]", "prop": "count", "want": 1 },
+      { "sel": "script[data-standard-scholarly]", "prop": "count", "want": 1, "note": "ScholarlyArticle with image, abstract, dateModified, about, keywords, All rights reserved." },
+      { "sel": "script[data-manual-breadcrumbs]", "prop": "count", "want": 1, "note": "BreadcrumbList HMTc → Manuals → Infant and Child Foods." },
       { "sel": "[data-hmi-cite-text]", "prop": "count", "want": 1, "note": "Cite this page emits after write-back." }
     ],
     "/analytes": [

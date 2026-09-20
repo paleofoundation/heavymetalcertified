@@ -88,17 +88,22 @@ export default (() => {
     const titleAlreadyBranded = /heavy metal (tested|certified)|hmtc/i.test(baseTitle)
     const title =
       seoTitleOverride ?? (titleAlreadyBranded ? baseTitle : baseTitle + titleSuffix)
-    // Two descriptions, deliberately:
-    //   metaDescription  → the SERP snippet (<meta name="description">). Prefer the
-    //     page's own `description`, which we keep ~150–160 chars and keyword-forward.
-    //   socialDescription → OG / Twitter cards, where a longer, richer line reads
-    //     well. Falls back to `description` so single-field pages are unchanged.
-    const socialDescription =
-      frontmatterString(fileData.frontmatter?.socialDescription) ??
+    // Three description slots, deliberately:
+    //   scholar_abstract → Scholar citation_abstract + JSON-LD abstract, and when
+    //     present it also fills OG / Twitter / <meta name="description"> so the
+    //     SERP snippet is the dense abstract (manuals). The hero dek still reads
+    //     frontmatter `description` and stays the slim one-liner.
+    //   socialDescription → OG / Twitter when no scholar_abstract.
+    //   description      → hero dek, and the fallback SERP/OG line.
+    const scholarAbstract = frontmatterString(fileData.frontmatter?.scholar_abstract)
+    const fallbackDescription =
       frontmatterString(fileData.frontmatter?.description) ??
       unescapeHTML(fileData.description?.trim() ?? i18n(cfg.locale).propertyDefaults.description)
-    const metaDescription =
-      frontmatterString(fileData.frontmatter?.description) ?? socialDescription
+    const socialDescription =
+      scholarAbstract ??
+      frontmatterString(fileData.frontmatter?.socialDescription) ??
+      fallbackDescription
+    const metaDescription = scholarAbstract ?? fallbackDescription
 
     const { css, js, additionalHead } = externalResources
 

@@ -301,6 +301,13 @@ export function CitationMetadata({
       frontmatterString(frontmatter.description)
     const keywordList = frontmatterStringArray(frontmatter.keywords)
     const keywords = keywordList.length ? keywordList.join(", ") : undefined
+    const ogSrc = frontmatterString(frontmatter.socialImage)
+    const imageUrl = ogSrc
+      ? `https://heavymetalcertified.com${ogSrc.startsWith("/") ? ogSrc : `/${ogSrc}`}`
+      : undefined
+    const dateModifiedRaw = normalizeCitationDate(frontmatter.updated) ?? pubDate
+    const aboutLeaf = frontmatterString(frontmatter.breadcrumb_leaf)
+    const aboutCategory = frontmatter.category != null ? String(frontmatter.category) : undefined
     const hasPdf = frontmatterBoolean(frontmatter.scholar_pdf)
     const configuredPdf = frontmatterString(frontmatter.scholar_pdf_url)
     const currentPdf = documentPdf(frontmatter, slugStr)
@@ -337,6 +344,8 @@ export function CitationMetadata({
         url: socialUrl,
         isAccessibleForFree: true,
         copyrightNotice: STANDARD_RIGHTS,
+        license: "https://heavymetalcertified.com/license",
+        dateModified: isoDateFromCitationDate(dateModifiedRaw),
         isPartOf: { "@type": "Periodical", name: seriesTitle, publisher: ICS_PUBLISHER },
         encoding: pdfMedia,
         associatedMedia: pdfMedia,
@@ -351,8 +360,33 @@ export function CitationMetadata({
               sameAs: doiUrl,
             }
           : {}),
-        ...(abstract ? { description: abstract } : {}),
+        ...(abstract ? { abstract, description: abstract } : {}),
+        ...(imageUrl ? { image: imageUrl } : {}),
+        ...(keywords ? { keywords } : {}),
+        ...(aboutLeaf || aboutCategory
+          ? {
+              about: {
+                "@type": "Thing",
+                name: aboutCategory
+                  ? `Category ${aboutCategory}${aboutLeaf ? ` ${aboutLeaf}` : ""}`
+                  : aboutLeaf,
+              },
+            }
+          : {}),
       }
+      const breadcrumbLeaf = aboutLeaf || citationTitle
+      const breadcrumbList = isManual
+        ? {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": `${socialUrl}#breadcrumbs`,
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "HMTc", item: "https://heavymetalcertified.com" },
+              { "@type": "ListItem", position: 2, name: "Manuals", item: "https://heavymetalcertified.com/manuals" },
+              { "@type": "ListItem", position: 3, name: breadcrumbLeaf, item: socialUrl },
+            ],
+          }
+        : null
       return (
         <>
           <meta name="citation_title" content={citationTitle} />
@@ -374,6 +408,7 @@ export function CitationMetadata({
           <link rel="alternate" type="application/pdf" href={pdfUrl} />
           <meta name="citation_language" content="en" />
           {abstract && <meta name="citation_abstract" content={abstract} />}
+          {keywords && isManual ? <meta name="citation_keywords" content={keywords} /> : null}
           <script
             type="application/ld+json"
             data-standard-scholarly
@@ -381,6 +416,15 @@ export function CitationMetadata({
               __html: JSON.stringify(scholarlyArticle).replace(/</g, "\\u003c"),
             }}
           />
+          {breadcrumbList ? (
+            <script
+              type="application/ld+json"
+              data-manual-breadcrumbs
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(breadcrumbList).replace(/</g, "\\u003c"),
+              }}
+            />
+          ) : null}
         </>
       )
     }

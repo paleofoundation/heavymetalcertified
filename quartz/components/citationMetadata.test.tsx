@@ -271,6 +271,48 @@ test("scholar_eligible manuals emit Highwire + ScholarlyArticle without inventin
   assert.match(json.copyrightNotice, /All rights reserved/)
 })
 
+test("Cat-1 Manual v3 ScholarlyArticle carries abstract, image, dateModified, about, keywords, license, and BreadcrumbList", () => {
+  const abstract =
+    "Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods. ".repeat(8).trim()
+  const html = render(
+    {
+      type: "standard",
+      scholar_eligible: true,
+      title: "Infant and Child Foods: HMTc Program Manual",
+      breadcrumb_leaf: "Infant and Child Foods",
+      category: 1,
+      effective_date: "2026-09-19",
+      updated: "2026-09-19",
+      author: "Karen Pendergrass",
+      cert_doi: "10.83138/hmtc.manual.infant-and-child-foods",
+      scholar_abstract: abstract,
+      socialImage: "/static/manuals/covers/infant-and-child-foods-v3-og.png",
+      keywords: ["Infant and Child Foods", "Manual v3"],
+    },
+    "manuals/infant-and-child-foods",
+  )
+  assert.match(html, /name="citation_abstract"/)
+  assert.match(html, /name="citation_keywords"/)
+  const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(json["@type"], "ScholarlyArticle")
+  assert.equal(json.abstract, abstract)
+  assert.equal(json.description, abstract)
+  assert.equal(json.dateModified, "2026-09-19")
+  assert.equal(json.image, "https://heavymetalcertified.com/static/manuals/covers/infant-and-child-foods-v3-og.png")
+  assert.equal(json.about.name, "Category 1 Infant and Child Foods")
+  assert.match(json.keywords, /Manual v3/)
+  assert.match(json.license, /heavymetalcertified.com\/license/)
+  assert.match(json.copyrightNotice, /All rights reserved/)
+  assert.equal(json.identifier.value, "10.83138/hmtc.manual.infant-and-child-foods")
+  assert.equal(json.sameAs, "https://doi.org/10.83138/hmtc.manual.infant-and-child-foods")
+  const crumbs = JSON.parse(html.match(/data-manual-breadcrumbs[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(crumbs["@type"], "BreadcrumbList")
+  assert.deepEqual(
+    crumbs.itemListElement.map((i: { name: string }) => i.name),
+    ["HMTc", "Manuals", "Infant and Child Foods"],
+  )
+})
+
 test("a house-minted manual DOI becomes citation_doi after write-back", () => {
   const html = render(
     {

@@ -9,6 +9,7 @@ import {
   ZENODO_VERSION_DOI,
   readExistingHouseDoi,
   CITATION_TITLE,
+  SCHOLAR_ABSTRACT,
 } from "../lib/cat1-manual-v3.mjs"
 import { renderManualV3Body } from "../lib/manual-v3-page.mjs"
 import { wordCount, sentenceCount, HERO_DEK_MAX_WORDS } from "../lib/design-tokens.mjs"
@@ -59,6 +60,24 @@ test("Cat-1 body is lead + airy principles; no invented DOI; no MaxPoL ladder", 
   const dek = "The Method v2 governing instrument for Category 1."
   assert.ok(wordCount(dek) <= HERO_DEK_MAX_WORDS)
   assert.equal(sentenceCount(dek), 1)
+})
+
+test("Scholar abstract is 150–250 words and does not name MaxPoL", () => {
+  const words = wordCount(SCHOLAR_ABSTRACT)
+  assert.ok(words >= 150, `scholar abstract ${words} words < 150`)
+  assert.ok(words <= 250, `scholar abstract ${words} words > 250`)
+  assert.match(SCHOLAR_ABSTRACT, /Manual v3/)
+  assert.match(SCHOLAR_ABSTRACT, /Method v2/)
+  assert.match(SCHOLAR_ABSTRACT, /Category 1/)
+  assert.match(SCHOLAR_ABSTRACT, /Institute of Contaminant Standards/)
+  assert.match(SCHOLAR_ABSTRACT, /10\.83138\/hmtc\.manual\.infant-and-child-foods/)
+  assert.match(SCHOLAR_ABSTRACT, /100 percent/)
+  assert.match(SCHOLAR_ABSTRACT, /government floor/)
+  assert.match(SCHOLAR_ABSTRACT, /read-across/)
+  assert.match(SCHOLAR_ABSTRACT, /Lot Testing Schedule/)
+  assert.match(SCHOLAR_ABSTRACT, /90 percent/)
+  assert.match(SCHOLAR_ABSTRACT, /Standards Register/)
+  assert.doesNotMatch(SCHOLAR_ABSTRACT, /MaxPoL|CC BY/i)
 })
 
 test("house write-back cite is APA with doi.org and All rights reserved", () => {
