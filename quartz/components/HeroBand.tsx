@@ -141,6 +141,9 @@ export default (() => {
     // Falls back to the plain description. Both are author-generated, so the
     // dangerouslySetInnerHTML is on trusted content only.
     const dekHtml = fm.dek_html ? String(fm.dek_html) : undefined
+    const coverHref = fm.pdf_cover ? String(fm.pdf_cover) : undefined
+    const pdfHref = fm.pdf ? String(fm.pdf) : undefined
+    const hasCover = Boolean(isManualPage && coverHref)
     const hasSnapshot = snapshot.length > 0
     const hasSidebar = hasSnapshot || hasAuthorCard || Boolean(fm.cert_doi) || String(slug) === "manuals/infant-and-child-foods"
     // The snapshot box title. Defaults to "Page snapshot"; a regulation detail
@@ -161,9 +164,23 @@ export default (() => {
     return (
       <section class="hmtc-heroband">
         <div class="hmtc-heroband-inner">
-          <div class="hmtc-hb-context">
-            {element && <div class="hmtc-element-mark" role="img" aria-label={`${element.name}, ${element.symbol}, atomic number ${element.number}`}><span class="hmtc-element-symbol">{element.symbol}</span><span class="hmtc-element-number">{element.number}</span></div>}
-            <div class="hmtc-subject-caption"><span>Heavy Metal Certified</span><span>{element?.name ?? sectionLabel ?? badge}</span></div>
+          <div class={hasCover ? "hmtc-hb-context hmtc-hb-context--cover" : "hmtc-hb-context"}>
+            {hasCover ? (
+              pdfHref ? (
+                <a class="hmtc-hb-cover" href={pdfHref} aria-label={`Open PDF: ${title}`}>
+                  <img src={coverHref} alt={`Cover of ${title}`} width="720" height="1018" />
+                </a>
+              ) : (
+                <div class="hmtc-hb-cover">
+                  <img src={coverHref} alt={`Cover of ${title}`} width="720" height="1018" />
+                </div>
+              )
+            ) : (
+              <>
+                {element && <div class="hmtc-element-mark" role="img" aria-label={`${element.name}, ${element.symbol}, atomic number ${element.number}`}><span class="hmtc-element-symbol">{element.symbol}</span><span class="hmtc-element-number">{element.number}</span></div>}
+                <div class="hmtc-subject-caption"><span>Heavy Metal Certified</span><span>{element?.name ?? sectionLabel ?? badge}</span></div>
+              </>
+            )}
           </div>
           <div class="hmtc-hb-left">
             <nav class="hmtc-hb-crumb" aria-label="Breadcrumb">

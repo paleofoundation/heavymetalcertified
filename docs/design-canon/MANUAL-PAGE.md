@@ -45,7 +45,7 @@ in the body is the old duplicate-title defect — the hero title is the HeroBand
 | `rail_box` | Rail "Document versions" box | `{title, body}` — **no cta** (the PdfCard is the download) |
 | `effective_date` / `updated` | Hero "UPDATED" stamp + snapshot | |
 
-On **manuals**, the bound-document identity lives in the **left rail** (`aside.snav .hmtc-manual-authority`): first-page PDF cover, Download PDF, Cite, edition chip (`Manual v3 · Method v2`). The right rail keeps Connections and does **not** duplicate the download. `.wiki-content a[download]` stays 0. **Standards pages never carry a PDF cover** — the claim surface stays the hero there.
+On **manuals**, the portrait first-page PDF cover (`pdf_cover`) lives in the **hero left panel** (`.hmtc-hb-context .hmtc-hb-cover`), the empty 264px column next to the title. The left rail (`aside.snav .hmtc-manual-authority`) keeps Download PDF, Cite, and the edition chip (`Manual v3 · Method v2`) and does **not** duplicate the cover. The right rail keeps Connections and does **not** duplicate the download. `.wiki-content a[download]` stays 0. `socialImage` remains the 1200×630 letterbox for `og:image`; `pdf_cover` is never the social card. **Standards pages never carry a PDF cover** — the claim surface stays the hero there. The hero snapshot shows the current house DOI when minted; an earlier Zenodo edition is not a hero snapshot row.
 
 Spacing is the locked scale **8 / 16 / 24 / 48 / 72** (`quartz/styles/tokens.scss`, `tools/lib/design-tokens.mjs`). Manuals sections use `.hmtc-section` (`margin-bottom: var(--section-gap-manual)` = 72). Table cells use `--table-cell-pad-y/x` ≥ 12px. Hero dek and the body lead are a kill-gate: ≤2 sentences, not a word pile.
 

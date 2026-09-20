@@ -799,8 +799,9 @@
       { "sel": ".wiki-content h1", "prop": "count", "want": 0, "note": "NO hand-rolled hero <h1> in the body — the title is the HeroBand's. A body <h1> is the old duplicate-title defect (design-lint blocks it; this is the rendered backstop)." },
       { "sel": ".hmtc-manual-lead", "prop": "count", "want": 1, "note": "≤2-sentence lead above Governing Principles." },
       { "sel": ".hmtc-principle-card", "prop": "count", "want": 5, "note": "Governing Principles as airy cards, not a stacked hairline list." },
-      { "sel": ".hmtc-manual-authority", "prop": "count", "want": 1, "note": "left-rail authority register: cover + download + cite + edition chip." },
-      { "sel": ".hmtc-manual-cover img", "prop": "count", "want": 1, "note": "first page of Manual v3 PDF as a static preview. Not a PDF viewer mock." },
+      { "sel": ".hmtc-manual-authority", "prop": "count", "want": 1, "note": "left-rail authority register: download + cite + edition chip. Cover lives in the hero left panel." },
+      { "sel": ".hmtc-hb-context .hmtc-hb-cover img", "prop": "count", "want": 1, "note": "portrait Manual v3 cover sits in the hero left column next to the title. Not a PDF viewer mock." },
+      { "sel": ".hmtc-manual-authority .hmtc-manual-cover", "prop": "absent", "want": true, "note": "left rail must not duplicate the hero cover." },
       { "sel": ".hmtc-edition-chip", "prop": "count", "want": 1 },
       { "sel": "aside.snav a[download]", "prop": "count", "want": 1, "note": "Download PDF lives in the manuals left-rail authority register." },
       { "sel": "#principles", "prop": "count", "want": 1, "note": "Manual v3 thin TOC: Governing Principles." },
@@ -826,8 +827,10 @@
       { "sel": "aside.snav", "prop": "top", "want": "92px" },
       { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "absent", "want": true, "note": "manuals hero is not a word pile; Cite lives in the left-rail authority register." },
       { "sel": ".hmtc-document-actions", "prop": "absent", "want": true, "note": "Cite + Download moved to the manuals left rail." },
-      { "sel": ".hmtc-document-doi[aria-label=\"Earlier deposited edition\"] a[href=\"https://doi.org/10.5281/zenodo.20771543\"]", "prop": "count", "want": 1 },
-      { "sel": "meta[name=\"citation_doi\"]", "prop": "absent", "want": true, "note": "The current web edition must not inherit a superseded deposit DOI." }
+      { "sel": ".hmtc-document-doi[aria-label=\"Earlier deposited edition\"]", "prop": "absent", "want": true, "note": "Zenodo earlier-edition block is not a hero snapshot row after house mint." },
+      { "sel": ".hmtc-hb-sidebar .hmtc-document-doi[aria-label=\"Document DOI\"] a[href=\"https://doi.org/10.83138/hmtc.manual.infant-and-child-foods\"]", "prop": "count", "want": 1, "note": "Hero snapshot shows the live Manual v3 house DOI." },
+      { "sel": "meta[name=\"citation_doi\"][content=\"10.83138/hmtc.manual.infant-and-child-foods\"]", "prop": "count", "want": 1, "note": "Highwire citation_doi is the minted house DOI, never a superseded Zenodo deposit." },
+      { "sel": "[data-hmi-cite-text]", "prop": "count", "want": 1, "note": "Cite this page emits after write-back." }
     ],
     "/analytes": [
       { "sel": "header", "prop": "height", "want": "68px", "note": "the analyte panel page carries the same sitewide chrome as every content page." },
