@@ -147,6 +147,7 @@ export function renderManualFrontmatter({
   reportNumber = null,
   extraFm = [],
   pdfCover = null,
+  socialImage = null,
   editionChip = null,
   ogImageWidth = null,
   ogImageHeight = null,
@@ -180,12 +181,11 @@ export function renderManualFrontmatter({
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     ...extraFm,
   ]
-  if (pdfCover) {
-    lines.push(`pdf_cover: ${yq(pdfCover)}`)
-    // Same asset as the left-rail cover. Head.tsx reads pdf_cover | socialImage
-    // for og:image / twitter:image so ReadCube and social unfurlers get the
-    // document cover, not the generic site card.
-    lines.push(`socialImage: ${yq(pdfCover)}`)
+  if (pdfCover) lines.push(`pdf_cover: ${yq(pdfCover)}`)
+  // socialImage is the 1200×630 letterbox for og:image / twitter:image.
+  // pdf_cover stays the tall rail raster and is never copied here.
+  if (socialImage) {
+    lines.push(`socialImage: ${yq(socialImage)}`)
     if (ogImageWidth) lines.push(`og_image_width: ${Number(ogImageWidth)}`)
     if (ogImageHeight) lines.push(`og_image_height: ${Number(ogImageHeight)}`)
   }

@@ -1,8 +1,8 @@
 // Landing-page OG cover helper. Mirrors tools/lib/document-cover.mjs
 // (URL + frontmatter contract only — no filesystem, so Head stays isomorphic).
 //
-// Prefer pdf_cover (PR #99 rail asset) then socialImage. Pages without a cover
-// keep the branded /static/og-image.png fallback.
+// socialImage is the 1200×630 letterbox. pdf_cover is the tall rail raster and
+// must never become og:image (Karen lock: summary_large_image landscape).
 
 export const DEFAULT_OG_IMAGE = "/static/og-image.png"
 export const DEFAULT_OG_WIDTH = 1200
@@ -22,11 +22,16 @@ export function absoluteHttpsAsset(src: string, baseUrl: string): string {
 }
 
 export function pageCoverSrc(frontmatter: Record<string, unknown> | undefined): string | undefined {
-  return (
-    frontmatterString(frontmatter?.pdf_cover) ||
-    frontmatterString(frontmatter?.socialImage) ||
-    frontmatterString(frontmatter?.cover)
-  )
+  // Never pdf_cover — that asset is portrait and is the left-rail only.
+  return frontmatterString(frontmatter?.socialImage) || frontmatterString(frontmatter?.cover)
+}
+
+export function isLandscapeOg(width?: string, height?: string): boolean {
+  if (!width || !height) return true
+  const w = Number(width)
+  const h = Number(height)
+  if (!Number.isFinite(w) || !Number.isFinite(h) || w <= 0 || h <= 0) return true
+  return w >= h
 }
 
 export function pageCoverDims(frontmatter: Record<string, unknown> | undefined): {

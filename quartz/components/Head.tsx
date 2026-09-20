@@ -6,6 +6,7 @@ import {
   DEFAULT_OG_HEIGHT,
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_WIDTH,
+  isLandscapeOg,
   pageCoverDims,
   pageCoverSrc,
 } from "../util/documentCover"
@@ -119,14 +120,19 @@ export default (() => {
       (e) => e.name === CustomOgImagesEmitterName,
     )
     const coverSrc = pageCoverSrc(fileData.frontmatter as Record<string, unknown> | undefined)
+    const coverDims = pageCoverDims(fileData.frontmatter as Record<string, unknown> | undefined)
+    const useDocumentOg = Boolean(coverSrc) && isLandscapeOg(coverDims.width, coverDims.height)
     const ogImageDefaultPath = absoluteHttpsAsset(DEFAULT_OG_IMAGE, cfg.baseUrl ?? "example.com")
-    const ogImagePath = coverSrc
-      ? absoluteHttpsAsset(coverSrc, cfg.baseUrl ?? "example.com")
+    const ogImagePath = useDocumentOg
+      ? absoluteHttpsAsset(coverSrc!, cfg.baseUrl ?? "example.com")
       : ogImageDefaultPath
-    const coverDims = coverSrc ? pageCoverDims(fileData.frontmatter as Record<string, unknown> | undefined) : {}
-    const ogImageWidth = coverSrc ? coverDims.width : String(DEFAULT_OG_WIDTH)
-    const ogImageHeight = coverSrc ? coverDims.height : String(DEFAULT_OG_HEIGHT)
-    const ogImageAlt = coverSrc ? `Cover of ${baseTitle}` : socialDescription
+    const ogImageWidth = useDocumentOg
+      ? (coverDims.width ?? String(DEFAULT_OG_WIDTH))
+      : String(DEFAULT_OG_WIDTH)
+    const ogImageHeight = useDocumentOg
+      ? (coverDims.height ?? String(DEFAULT_OG_HEIGHT))
+      : String(DEFAULT_OG_HEIGHT)
+    const ogImageAlt = useDocumentOg ? `Cover of ${baseTitle}` : socialDescription
     const ogType = isArticlePage(fileData.frontmatter, fileData.slug) ? "article" : "website"
 
     return (
@@ -167,10 +173,10 @@ export default (() => {
             <meta property="og:image" content={ogImagePath} />
             <meta property="og:image:url" content={ogImagePath} />
             <meta name="twitter:image" content={ogImagePath} />
-            {/* Cover PNGs (pdf_cover) win over the branded default card. Dimensions
-                come from frontmatter when a cover exists; default card is 1200x630
-                (tools/build-cert-brand-assets.mjs). Scrapers that require
-                og:image:width/height — LinkedIn, Slack, ReadCube — need these. */}
+            {/* Document OG is the 1200×630 letterbox (socialImage), never the
+                tall pdf_cover rail raster. Default card is also 1200×630.
+                Scrapers that require og:image:width/height — LinkedIn, Slack,
+                ReadCube — need these. */}
             {ogImageWidth && <meta property="og:image:width" content={ogImageWidth} />}
             {ogImageHeight && <meta property="og:image:height" content={ogImageHeight} />}
             <meta

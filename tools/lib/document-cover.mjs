@@ -1,23 +1,25 @@
 // Shared cover-image contract for landing-page OG tags and DataCite deposits.
 //
-// DataCite has no og:image field. The landing page carries og:image / twitter:image;
-// the DOI record points at the same absolute HTTPS PNG via relatedIdentifiers.
+// Two rasters per manual (Karen lock 2026-09-20):
+//   Rail (ManualAuthority):  tall first-page PNG  /static/manuals/covers/<stem>.png
+//   Unfurl / DataCite:       1200×630 letterbox   /static/manuals/covers/<stem>-og.png
+// og:image / twitter:image MUST be landscape summary_large_image. The tall PDF
+// page is never the social card.
+//
+// DataCite has no og:image field. The DOI record points at the same 1200×630
+// HTTPS URL via relatedIdentifiers (HasPart + Image).
 //
 // relationType is HasPart, not IsSupplementTo:
 //   DataCite 4.x: relationType describes resource A (the deposited work) → related B.
-//   A HasPart B = the manual/standard includes the cover image as a part.
+//   A HasPart B = the manual includes the cover image as a part.
 //   A IsSupplementTo B would mean the work is a supplement to the image (inverted).
-//   resourceTypeGeneral=Image names B.
 //
 // Rights on the DOI stay All rights reserved (mint-dois RIGHTS). No CC BY.
-// Covers are committed rasters from tools/render-manual-pdf-cover.mjs (PR #99).
-// Standards covers are optional: content/static/standards/covers/<slug>.png when
-// present; pages without a cover fall back to /static/og-image.png and omit the
-// Image relatedIdentifier. Do not generate hundreds of standard covers here.
 
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import sharp from "sharp"
 
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 export const REPO_ROOT = path.resolve(HERE, "../..")
@@ -25,6 +27,7 @@ export const BASE_URL = "https://heavymetalcertified.com"
 export const DEFAULT_OG_IMAGE = "/static/og-image.png"
 export const DEFAULT_OG_WIDTH = 1200
 export const DEFAULT_OG_HEIGHT = 630
+export const OG_LETTERBOX = { r: 255, g: 253, b: 251, alpha: 1 } // canon paper #fffdfb
 
 export const MANUAL_COVER_JOBS = [
   { slug: "infant-and-child-foods", pdf: "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf", stem: "infant-and-child-foods-v3" },
@@ -60,9 +63,13 @@ export function absoluteHttpsAsset(src, baseUrl = BASE_URL) {
   return `https://${host}${pathname}`
 }
 
-function frontmatterCoverPath(fm) {
+function isOgName(name) {
+  return /(?:^|\/|-)og\.png$/i.test(name)
+}
+
+function frontmatterField(fm, keys) {
   if (!fm || typeof fm !== "object") return null
-  for (const key of ["pdf_cover", "socialImage", "cover"]) {
+  for (const key of keys) {
     const v = fm[key]
     if (v == null) continue
     const s = String(v).trim()
@@ -71,30 +78,7 @@ function frontmatterCoverPath(fm) {
   return null
 }
 
-function manualCoverRel(slug, repo = REPO_ROOT) {
-  const job = MANUAL_COVER_JOBS.find((j) => j.slug === slug)
-  const dir = path.join(repo, "content/static/manuals/covers")
-  if (job) {
-    const abs = path.join(dir, `${job.stem}.png`)
-    if (fs.existsSync(abs)) return `/static/manuals/covers/${job.stem}.png`
-  }
-  if (!fs.existsSync(dir)) return null
-  const names = fs.readdirSync(dir).filter((n) => n.endsWith(".png"))
-  const hit = names.find((n) => n === `${slug}.png`) || names.find((n) => n.startsWith(`${slug}-`))
-  return hit ? `/static/manuals/covers/${hit}` : null
-}
-
-function standardCoverRel(slug, repo = REPO_ROOT) {
-  const abs = path.join(repo, "content/static/standards/covers", `${slug}.png`)
-  return fs.existsSync(abs) ? `/static/standards/covers/${slug}.png` : null
-}
-
-export function resolveCover(opts = {}) {
-  const { typeName, slug, frontmatter, repo = REPO_ROOT, baseUrl = BASE_URL } = opts
-  const fromFm = frontmatterCoverPath(frontmatter)
-  let rel = fromFm
-  if (!rel && typeName === "manuals" && slug) rel = manualCoverRel(slug, repo)
-  if (!rel && typeName === "standards" && slug) rel = standardCoverRel(slug, repo)
+function assetFromRel(rel, repo, baseUrl) {
   if (!rel) return null
   const url = absoluteHttpsAsset(rel, baseUrl)
   if (!url) return null
@@ -112,6 +96,80 @@ export function resolveCover(opts = {}) {
     height: size?.height ?? null,
     abs: abs ?? null,
   }
+}
+
+function manualRailRel(slug, repo = REPO_ROOT) {
+  const job = MANUAL_COVER_JOBS.find((j) => j.slug === slug)
+  const dir = path.join(repo, "content/static/manuals/covers")
+  if (job) {
+    const abs = path.join(dir, `${job.stem}.png`)
+    if (fs.existsSync(abs)) return `/static/manuals/covers/${job.stem}.png`
+  }
+  if (!fs.existsSync(dir)) return null
+  const names = fs.readdirSync(dir).filter((n) => n.endsWith(".png") && !isOgName(n))
+  const hit = names.find((n) => n === `${slug}.png`) || names.find((n) => n.startsWith(`${slug}-`))
+  return hit ? `/static/manuals/covers/${hit}` : null
+}
+
+function manualOgRel(slug, repo = REPO_ROOT) {
+  const job = MANUAL_COVER_JOBS.find((j) => j.slug === slug)
+  const dir = path.join(repo, "content/static/manuals/covers")
+  if (job) {
+    const abs = path.join(dir, `${job.stem}-og.png`)
+    if (fs.existsSync(abs)) return `/static/manuals/covers/${job.stem}-og.png`
+  }
+  if (!fs.existsSync(dir)) return null
+  const names = fs.readdirSync(dir).filter((n) => isOgName(n))
+  const hit = names.find((n) => n === `${slug}-og.png`) || names.find((n) => n.startsWith(`${slug}-`) && isOgName(n))
+  return hit ? `/static/manuals/covers/${hit}` : null
+}
+
+function standardOgRel(slug, repo = REPO_ROOT) {
+  const og = path.join(repo, "content/static/standards/covers", `${slug}-og.png`)
+  if (fs.existsSync(og)) return `/static/standards/covers/${slug}-og.png`
+  return null
+}
+
+/** Tall first-page PNG for the left-rail ManualAuthority. Never the social card. */
+export function resolveCover(opts = {}) {
+  const { typeName, slug, frontmatter, repo = REPO_ROOT, baseUrl = BASE_URL } = opts
+  const fromFm = frontmatterField(frontmatter, ["pdf_cover"])
+  let rel = fromFm
+  if (rel && isOgName(rel)) rel = null
+  if (!rel && typeName === "manuals" && slug) rel = manualRailRel(slug, repo)
+  if (!rel && typeName === "standards" && slug) {
+    const tall = path.join(repo, "content/static/standards/covers", `${slug}.png`)
+    if (fs.existsSync(tall)) rel = `/static/standards/covers/${slug}.png`
+  }
+  return assetFromRel(rel, repo, baseUrl)
+}
+
+/** 1200×630 letterbox used for og:image / twitter:image and DataCite Image URL. */
+export function resolveOgImage(opts = {}) {
+  const { typeName, slug, frontmatter, repo = REPO_ROOT, baseUrl = BASE_URL } = opts
+  const fromFm = frontmatterField(frontmatter, ["socialImage", "cover"])
+  let rel = fromFm && isOgName(fromFm) ? fromFm : null
+  if (!rel && typeName === "manuals" && slug) rel = manualOgRel(slug, repo)
+  if (!rel && typeName === "standards" && slug) rel = standardOgRel(slug, repo)
+  const asset = assetFromRel(rel, repo, baseUrl)
+  if (!asset) return null
+  if (asset.width && asset.height && asset.height > asset.width) return null
+  return asset
+}
+
+export async function writeLetterboxOg(srcPng, destPng) {
+  await sharp(srcPng)
+    .resize(DEFAULT_OG_WIDTH, DEFAULT_OG_HEIGHT, {
+      fit: "contain",
+      background: OG_LETTERBOX,
+    })
+    .png()
+    .toFile(destPng)
+  const size = pngSize(destPng)
+  if (!size || size.width !== DEFAULT_OG_WIDTH || size.height !== DEFAULT_OG_HEIGHT) {
+    throw new Error(`writeLetterboxOg: expected ${DEFAULT_OG_WIDTH}x${DEFAULT_OG_HEIGHT}, got ${size?.width}x${size?.height}`)
+  }
+  return size
 }
 
 export function coverRelatedIdentifier(cover) {

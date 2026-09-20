@@ -63,13 +63,14 @@
 //   node tools/mint-dois.mjs --update-covers         # DRY-RUN PATCH plan for already-minted records
 //   node tools/mint-dois.mjs --update-covers --live  # PATCH existing DOIs (Elon gate; not a new mint)
 //
-// Cover images (ORDER HMTC-OG-COVER-DATACITE-1):
-//   Landing pages set og:image to the absolute HTTPS cover PNG. DataCite has no
-//   og:image field, so the deposit carries the same URL as a relatedIdentifier:
+// Cover images (ORDER HMTC-OG-COVER-DATACITE-1 / Elon FAIL fix):
+//   Landing pages set og:image to the 1200×630 letterbox, never the tall rail PNG.
+//   DataCite has no og:image field, so the deposit carries the unfurl URL:
 //     relatedIdentifierType=URL
-//     relatedIdentifier=https://heavymetalcertified.com/static/manuals/covers/<stem>.png
-//     relationType=HasPart          ← A (the work) HasPart B (the cover image)
+//     relatedIdentifier=https://heavymetalcertified.com/static/manuals/covers/<stem>-og.png
+//     relationType=HasPart          ← A (the work) HasPart B (the 1200×630 image)
 //     resourceTypeGeneral=Image
+//   The tall /covers/<stem>.png stays on the left rail only.
 //   HasPart is the DataCite-correct direction. IsSupplementTo would mean the
 //   deposited work is a supplement to the image (inverted). See
 //   tools/lib/document-cover.mjs and docs/DOI-MINTING-LEDGER.md §Cover images.
@@ -94,7 +95,7 @@ import {
   coverRelatedIdentifier,
   isCoverRelatedIdentifier,
   mergeCoverRelatedIdentifiers,
-  resolveCover,
+  resolveOgImage,
 } from "./lib/document-cover.mjs"
 
 const REPO = process.cwd()
@@ -249,7 +250,7 @@ for (const [typeName, t] of Object.entries(TYPES)) {
     const ownDoi = OWN_DEPOSIT_FIELDS.map((k) => fm[k]).find((v) => v && HAS_DOI.test(String(v)))
     if (ownDoi) {
       if (wantUpdateCovers) {
-        const cover = resolveCover({ typeName, slug, frontmatter: fm })
+        const cover = resolveOgImage({ typeName, slug, frontmatter: fm })
         if (cover) {
           coverUpdates.push({
             typeName, slug, existingDoi: String(ownDoi).trim(),
@@ -307,7 +308,7 @@ for (const [typeName, t] of Object.entries(TYPES)) {
       complete: completeSlugs.has(slug),
       doiSuffix,
       earlierEdition,
-      cover: resolveCover({ typeName, slug, frontmatter: fm }),
+      cover: resolveOgImage({ typeName, slug, frontmatter: fm }),
     })
   }
 }

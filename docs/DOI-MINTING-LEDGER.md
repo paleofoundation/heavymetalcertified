@@ -152,12 +152,14 @@ Required/recommended fields, derivable from front-matter + program constants:
 ## Cover images (ORDER HMTC-OG-COVER-DATACITE-1)
 
 DataCite Metadata Schema 4.x has **no `og:image`**. ReadCube and social unfurlers read `og:image` /
-`twitter:image` on the **landing page**. The DOI record links the same absolute HTTPS PNG:
+`twitter:image` on the **landing page**. Those tags — and the DOI Image URL — are the
+**1200×630 letterbox** (`<stem>-og.png`). The tall first-page PNG (`<stem>.png`, e.g. 1020×1320)
+is the left-rail ManualAuthority only and is never `og:image`.
 
 | Field | Value |
 |---|---|
 | `relatedIdentifierType` | `URL` |
-| `relatedIdentifier` | `https://heavymetalcertified.com/static/manuals/covers/<stem>.png` |
+| `relatedIdentifier` | `https://heavymetalcertified.com/static/manuals/covers/<stem>-og.png` (1200×630) |
 | `relationType` | **`HasPart`** |
 | `resourceTypeGeneral` | `Image` |
 
@@ -167,9 +169,10 @@ as a part. `A IsSupplementTo B` would mean the manual is a supplement *to the im
 `IsSupplementedBy` would treat the cover as supplementary material; the cover is page 1 of the
 PDF, so HasPart is the tighter description.
 
-Landing-page wiring: `pdf_cover` / `socialImage` frontmatter → `Head.tsx` `og:image` +
-`twitter:image` (+ width/height/alt). Generic `/static/og-image.png` remains the fallback when
-no cover PNG exists (most standards; manuals still in preparation).
+Landing-page wiring: `socialImage` (`<stem>-og.png`) → `Head.tsx` `og:image` + `twitter:image`
+(1200×630, `summary_large_image`). `pdf_cover` (`<stem>.png`) stays on the rail and is not
+aliased into OG. Generic `/static/og-image.png` remains the fallback when no OG derivative
+exists (most standards; manuals still in preparation).
 
 **PATCH already-minted records** (optional, gated — does not mint a new DOI):
 
