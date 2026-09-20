@@ -58,8 +58,9 @@ node tools/standard-readiness-lint.mjs --strict
 ```
 
 The lint rewrites `data/standards/readiness-manifest.json` and
-`data/standards/claim-surface-fail-list.json`. Counts after MINT-FINISH-ALL-1
-(2026-09-18):
+`data/standards/claim-surface-fail-list.json`. Counts after the
+MINT-FINISH-ALL-1 drain (Ada pack 2026-09-20) — claim-surface unchanged
+from PR #92; registered count is the live COMPLETE-only mint:
 
 | Metric | Count |
 |---|---:|
@@ -68,8 +69,9 @@ The lint rewrites `data/standards/readiness-manifest.json` and
 | Incomplete (claim-surface empty) | 58 |
 | Empty cells (full panel, incl. species) | 876 |
 | Empty claim-surface cells (8 totals ± required iAs) | 174 |
+| Convertible leftovers on empty claim cells | 0 |
 | Rice / infant-cereal canary FAIL | 0 |
-| REGISTERED / READY | 4 |
+| REGISTERED / READY (compiled slugs with production `cert_doi`) | 255 |
 
 `--strict` (prebuild) **passes**. `--strict-corpus` would fail all 58 incomplete
 standards / 876 empty cells. Do not flip until the fail list is empty. Living

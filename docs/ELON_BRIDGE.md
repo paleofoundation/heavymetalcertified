@@ -85,3 +85,29 @@ CLAUDE→ELON STATUS (one PR; no live DataCite mint):
   `non-root-vegetable-purees` (minted 2026-09-12) rewritten to locked APA +
   doi.org. Remaining "DOI: registration pending" pages are unminted
   (`cert_doi: null`) — not invented.
+
+## ELON→CLOUD ORDER · MINT-FINISH-ALL-1 DRAIN · Ada pack 2026-09-20
+
+CLOUD→ELON STATUS (one PR; no live DataCite mint; **mint=HOLD**):
+
+- Inventory vs `origin/main`: **323** compiled / **265** COMPLETE / **58**
+  incomplete (claim-surface FAIL) / **174** empty claim-surface cells /
+  **174** HARD-BLOCKERS. `--strict` still passes. `--strict-corpus` would fail
+  all 58. Living list: `data/standards/claim-surface-fail-list.json`.
+- Next convertible batch: **0**. Every empty claim cell was scanned for
+  disclosed `gov_floor` / `read_across` leftovers (`value`, `binding_total`,
+  `strictest_form_value`, `forms[].value`). None remain. Completing any of the
+  174 would invent ppb. HARD-BLOCKERS file stayed honest (same 174 / 58).
+- DONE delta: COMPLETE +0 · WARN 58 remaining · minted this session 0.
+  Registered count on COMPLETE compiled slugs corrected from the stale
+  SCORECARD figure of 4 to **255** (2026-09-19 COMPLETE-only live mint, not
+  this run). Incomplete minted: **0**.
+- Chocolate: **STATUS HOLD**. `cert_doi` remains null. Not in any
+  `dois-minted-*.csv`. `claim_empty=[Sn, Al, Cr]`. Sn and Al are
+  `not_material` (no tinplate pathway; no Al contaminant ML / TWI-managed).
+  Cr is `control` (no food total-Cr ML). Species ≤ parent holds (reflexes
+  empty, not published > parent). House chocolate PDF is `@react-pdf/renderer`
+  (not Chromium / Skia). Needed before mint: disclosed numeric provenance on
+  Sn, Al, and Cr — none exists on the cell.
+- **mint=HOLD.** No DataCite deposit. No ALL-CAPS TODO scaffolding. No
+  MaxPoL ladder. Scorecard: `reports/SCORECARD.md`.
