@@ -293,19 +293,19 @@ function indexPage() {
 
   const glance = `<section style="margin-bottom:52px">
 <h2 id="panel" style="${H2S}">The panel at a glance</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Tier&nbsp;1 analytes are zero-tolerance; Tier&nbsp;2 analytes are capped to the government limit and carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Tier&nbsp;1 analytes are zero-tolerance; Tier&nbsp;2 analytes are held to the same government limit. Tiering sets how the program reacts to an exceedance, not any permission to exceed it: a product is certified only when every analyte is at or below 100% of its published limit.</p>
 <div style="overflow-x:auto;border:1px solid #e8e1db"><table style="width:100%;border-collapse:collapse;min-width:44rem"><thead><tr><th>Analyte</th><th>Symbol</th><th>Reported as</th><th>Tier</th></tr></thead><tbody>${tblRows}</tbody></table></div>
 </section>`
 
   const t1 = `<section style="margin-bottom:52px">
 <h2 id="tier1" style="${H2S}">Tier 1 &mdash; zero-tolerance toxics</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">No transitional allowance applies to these four analytes. A lot that exceeds the limit cannot be certified while that result stands.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are zero-tolerance. A lot that exceeds the limit cannot be certified while that result stands.</p>
 <div class="hmtc-mhard-list">${analyteAccordion(tier1, false)}</div>
 </section>`
 
   const t2 = `<section style="margin-bottom:20px">
 <h2 id="tier2" style="${H2S}">Tier 2 &mdash; capped to the government limit</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are held to the strictest sovereign maximum level for the product, and carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are held to the strictest sovereign maximum level for the product. Tiering sets how the program reacts to an exceedance, not permission to exceed it: above the limit, on any metal, the product is not certified and carries no mark.</p>
 <div class="hmtc-mhard-list">${analyteAccordion(tier2, true)}</div>
 </section>`
 

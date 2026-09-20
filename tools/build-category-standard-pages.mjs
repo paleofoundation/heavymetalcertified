@@ -378,7 +378,7 @@ function cellsBindingDerivation(primary, subName, leadOverride) {
 // --- drive --------------------------------------------------------------------
 const tier1Names = (META.tier1 || []).map((a) => (a === "tHg" ? "Hg" : a)).filter((v, i, arr) => arr.indexOf(v) === i).join(", ")
 const tier2Names = (META.tier2 || []).join(", ")
-const tierNote = `Tier 1 (${tier1Names}) are zero-tolerance toxics with no established safe threshold. Tier 2 (${tier2Names}) carry a 150% transitional allowance under the program&rsquo;s Status A&ndash;E framework. ${META.tier_footnote || ""}`.trim()
+const tierNote = `Tier 1 (${tier1Names}) are zero-tolerance toxics with no established safe threshold. Tier 2 (${tier2Names}) are held to the same government limit &mdash; tiering sets how the program reacts to an exceedance, not any permission to exceed it. A product is certified only when every analyte is at or below 100% of its published limit; above the limit, on any metal, it is not certified and carries no mark. ${META.tier_footnote || ""}`.trim()
 
 let n = 0
 for (const page of DOC.pages) {

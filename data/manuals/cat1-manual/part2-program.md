@@ -2,44 +2,45 @@
 
 This Part is the current source of truth for how a Category 1 SKU enters, is assigned a status, and is held to the mark. Except where a defined term states otherwise, every requirement is normative.
 
-## 2.1 The governing metric
+## 2.1 The governing rule
 
-For each of the eight limit analytes, Percent-of-Limit (PoL) = (measured result ÷ applicable limit) × 100. MaxPoL is the highest PoL in a lot. Status is a function of MaxPoL only. The applicable limit is the published government floor or disclosed read-across. Limits do not derive from a distribution of measured values.
+Certification is limit-relative and binary at the limit. For every claim-surface analyte the applicable limit is the published government floor or disclosed read-across (Method v2.0); limits do not derive from a distribution of measured values. A product is Certified only when every analyte is at or below 100% of its published limit, confirmed under the measurement-uncertainty decision rule (§2.5). There is no band above the limit that still earns the mark: at or below the limit is Certified; above the limit is not.
 
 The eight limit analytes are lead (Pb), total arsenic (tAs), cadmium (Cd), mercury (tHg, total), nickel (Ni), tin (Sn), aluminium (Al), and chromium (Cr, total). Inorganic arsenic, methylmercury, and hexavalent chromium are pathway species. They never replace the parent total.
 
 ## 2.2 Program flow
 
-1. Baseline (three lots). Every SKU is tested across a minimum of three production lots, on the full eight-total panel and required pathway speciation, before any status is assigned. A single passing lot certifies nothing. The three lots are evaluated collectively, and initial status is assigned from the worst-performing lot.
+1. Baseline (three lots). Every SKU is tested across a minimum of three production lots, on the full eight-total panel and required pathway speciation, before any status is assigned. A single passing lot certifies nothing. The three lots are evaluated collectively, and the entry decision is taken from the worst-performing lot.
 2. Expedited baseline (prior-data credit), optional. Qualifying ISO/IEC 17025 results from the preceding twelve months may credit up to two lots, per analyte actually measured. Not available on the Confidential Remediation Track.
-3. Entry gate. A lot testing above 200% MaxPoL, or violating an applicable regulatory limit, is Not Eligible.
-4. Status assignment. Status A–E is assigned from the baseline, then maintained through surveillance.
+3. Entry. A lot that violates an applicable government legal limit is a hard stop and cannot be certified. A lot at or below every published limit (under §2.5) is eligible to be Certified; a lot above any published limit is not certified and enters Remediation.
+4. Status assignment. The product is assigned Certified or Remediation from the baseline, then maintained through surveillance; Suspension and Revocation follow the rules in §2.4.
 5. Schedule assignment. Risk tier and lot-testing frequency are assigned after application, from the brand laboratory's stated panel, LOQ, MU, and capability (Part 4).
 
 ## 2.3 Analyte tiering
 
-| Tier | Metals | Rule |
+Tiering sets how hard and how fast the program reacts to an exceedance. It is never permission to exceed a limit and keep the mark: no metal has a transitional band or an allowed overage.
+
+| Tier | Metals | Reaction to an exceedance |
 |---|---|---|
-| Tier 1 — Zero Tolerance | Lead (Pb), Cadmium (Cd), Inorganic arsenic (iAs), Mercury (tHg, total) | No transitional variance. Any confirmed result above 100% of the applicable limit escalates the SKU to Status C or higher. |
-| Tier 2 — Transitional | Nickel (Ni), Aluminium (Al), Tin (Sn), Chromium (Cr, total) | A transitional exceedance above 100% and up to 150% may qualify for Status B. |
+| Tier 1 — Zero tolerance | Lead (Pb), Cadmium (Cd), Inorganic arsenic (iAs), Mercury (tHg, total) | Most severe reaction. Any confirmed result above 100% of the applicable limit removes the mark and moves the SKU to Remediation at once, with every-lot testing and mandatory hold-and-release; a legal-limit violation or data-integrity failure is a hard stop to Suspension. |
+| Tier 2 — Elevated | Nickel (Ni), Aluminium (Al), Tin (Sn), Chromium (Cr, total) | Elevated reaction. An exceedance still bars the mark and moves the SKU to Remediation, but surveillance is elevated rather than an immediate hard stop, and the brand's own accredited lab may sample subject to audit. |
 
 Any quantifiable hexavalent chromium [Cr(VI)] on a credible pathway is a hard fail, evaluated as a Tier 1 exceedance.
 
-## 2.4 Certification Status Framework (A–E)
+## 2.4 Certification status framework
 
-| Status | Designation | MaxPoL / trigger | Mark use |
+Four statuses. Status attaches to the product, not the brand. The mark is permitted only while the product is Certified.
+
+| Status | Meaning | Mark | Condition |
 |---|---|---|---|
-| A | Certified — Full Compliance | MaxPoL ≤ 100% for all analytes | Permitted, unrestricted |
-| B | Transitional (mark withheld) | 101–150%, exceedance limited to Tier 2 only, no Tier 1 above 100% | Withheld until Status A |
-| C | Probation | 151–200% for any analyte; or any Tier 1 above 100%; or unmet transitional conditions | Not on new production; lot-by-lot release only where that lot tests at Status A |
-| D | Suspension | Above 200% MaxPoL for any analyte; or any hard-stop | Prohibited; mark removed immediately |
-| E | Revocation | Persistent suspension; willful misconduct; concealment | Permanently prohibited |
+| Certified | Full compliance | Permitted | Every analyte at or below 100% of its published limit, all eight totals, native basis, confirmed under §2.5. |
+| Remediation | Not certified — applicant or corrective | Withheld / removed | The product does not meet every published limit, or is a new applicant not yet at 100%. This is not a softer certification and not an allowed overage. Corrective action applies, with elevated (Tier 2) or every-lot hold-and-release (Tier 1) surveillance; the SKU is not listed as certified and the mark is not displayed. The Confidential Remediation Track (§2.7) is the confidential form of this status and is likewise non-certified and unmarked. |
+| Suspension | Certification halted — hard stop | Removed | A government legal-limit violation, a data-integrity failure, or failure to execute testing, CAPA, or directives. The mark is removed from all units and marketing immediately. |
+| Revocation | Permanent termination | Removed | Willful misconduct, data fraud, concealment of a known exceedance, or persistent unremediated suspension. Re-entry by full re-application only. |
 
-Status C Low band is 151–175%. Status C High band is 176–200%. High Probation adds Operator-directed third-party sampling.
+The Certification Mark shall not be used on any product, packaging, or marketing unless the product is Certified. A product above any published limit — at any margin, on any metal — is not Certified and does not display the mark.
 
-The Certification Mark shall not be used on any product, packaging, or marketing until the SKU achieves Status A.
-
-Status D reinstatement does not require a fresh baseline. It requires a completed CAPA with verification of effectiveness, a run of consecutive compliant lots set by the Program Operator, restored data integrity, and formal Operator approval.
+Suspension reinstatement does not require a fresh baseline. It requires a completed CAPA with verification of effectiveness, a run of consecutive compliant lots set by the Program Operator, restored data integrity, and formal Operator approval.
 
 ## 2.5 Measurement uncertainty
 
@@ -47,17 +48,19 @@ Every result is evaluated with expanded measurement uncertainty at coverage fact
 
 ## 2.6 CAPA
 
-| Status | CAPA initiation | Full plan due | Containment |
-|---|---|---|---|
-| B | 10 business days | 30 calendar days | As needed |
-| C | 5 business days | 15 business days | Within 48 hours |
-| D | 2 business days | 10 business days | Immediate (within 48 hours) |
+CAPA windows scale with the severity of the reaction, not with any percent-of-limit band.
 
-For Status B, a 12-month default period to return to Status A applies. As an early-warning control distinct from the 50% reflex-speciation trigger, any Tier 1 result reaching or exceeding 80% of its applicable limit shall trigger a confirmatory test on the next lot.
+| Reaction | CAPA initiation | Full plan due | Containment |
+|---|---|---|---|
+| Tier 2 exceedance (Remediation) | 10 business days | 30 calendar days | As needed |
+| Tier 1 exceedance (Remediation) | 5 business days | 15 business days | Within 48 hours |
+| Suspension (hard stop) | 2 business days | 10 business days | Immediate (within 48 hours) |
+
+A product in Remediation for a Tier 2 exceedance has a 12-month default period to return to Certified; failure to show an improving trend escalates the reaction. As an early-warning control distinct from the 50% reflex-speciation trigger, any Tier 1 result reaching or exceeding 80% of its applicable limit shall trigger a confirmatory test on the next lot.
 
 ## 2.7 Remediation and ratchet
 
-Before certification, readiness awards no mark. After certification, corrective action follows the published status rules. Concealment of a known exceedance is grounds for revocation.
+Before certification, readiness awards no mark. After certification, corrective action follows the published status rules. The Confidential Remediation Track is a confidential entry-and-support pathway for products not yet at 100% of every published limit; it is expressly not a certified status, and no mark is displayed while a product is on it. Confidentiality never delays a recall, never overrides a reporting duty, and never withholds evidence from a regulator who asks. Concealment of a known exceedance is grounds for revocation.
 
 A published limit tightens only through the Standards Ratchet: a stated trigger and a capped step. Limits do not loosen because a brand found them inconvenient.
 

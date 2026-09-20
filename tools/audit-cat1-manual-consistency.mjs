@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 // audit-cat1-manual-consistency.mjs — the standing INCONSISTENCY GATE for the full
 // Infant & Child Foods Program Manual (Parts 1/2/4/5, the authored governance +
-// lot-testing content in data/manuals/cat1-manual/). Part 3's numbers are audited
-// separately, cell-for-cell against the web edition, by audit-cat1-manual-pdf.mjs.
+// lot-testing content in data/manuals/cat1-manual/), under the Method v2 status
+// model: Certified | Remediation (non-certified) | Suspension | Revocation.
+// Part 3's numbers are audited separately, cell-for-cell, by audit-cat1-manual-pdf.mjs.
 //
 // This is a Daubert artifact: a governance manual that contradicts itself, the
-// reconciled source, or the live /program pages is a self-inflicted impeachment. So
-// this asserts, hard:
-//   A. GOLDEN VALUES present — the load-bearing governance/lot-testing facts appear,
-//      in their reconciled form (status bands, CAPA windows, tiers, baseline, triggers).
-//   B. FORBIDDEN variants absent — no superseded value, wrong governing body, retired
-//      remediation mechanism, or stale count anywhere in the manual content.
-//   C. FIREWALL — no percentile-selection arithmetic (government-limit only).
-//   D. CROSS-PART agreement — the values that appear in more than one Part agree.
-//   E. CROSS-SOURCE — the live /program pages agree with the manual on the same facts
-//      (no "fifteen subcategories", no Status-D "fresh baseline" error).
+// reconciled source, or the live /program pages is a self-inflicted impeachment. It
+// asserts, hard:
+//   A. GOLDEN present — the four-status model + load-bearing lot-testing facts.
+//   B. FORBIDDEN absent — the RETIRED MaxPoL % bands / Status A–E certification
+//      ladder / "150% transitional allowance", in any form, anywhere in the manual.
+//   C. FIREWALL — no percentile-selection arithmetic in the manual (gov-limit only).
+//   D. CROSS-PART — CAPA/containment facts that appear in more than one Part agree.
+//   E. CROSS-SOURCE — the live /program + briefing pages carry no retired ladder either.
 //
 // Exit non-zero on any failure. Run before regenerating/serving the manual PDF.
 
@@ -37,31 +36,33 @@ const allN = norm(all)
 for (const f of FILES) if (!content[f]) fail.push(`missing content file: data/manuals/cat1-manual/${f}`)
 
 // ── A. golden values (present in the named file) ─────────────────────────────
-// Each: [file, human label, RegExp on the normalized text]
+// Method v2 status model + the load-bearing lot-testing facts that must survive.
 const GOLD = [
-  ["part2-program.md", "Status A ≤100%", /MaxPoL\s*[≤<]=?\s*100%/],
-  ["part2-program.md", "Status B band 101-150%, Tier 2 only", /101-150%/],
-  ["part2-program.md", "Status C Low band 151-175%", /151-175%/],
-  ["part2-program.md", "Status C High band 176-200%", /176-200%/],
-  ["part2-program.md", "Status D >200%", /200% MaxPoL|Above 200%|>\s*200%/],
+  ["part2-program.md", "Certified = at/below 100% of every published limit", /at or below 100% of its published limit/i],
+  ["part2-program.md", "status: Certified", /\bCertified\b/],
+  ["part2-program.md", "status: Remediation (not certified)", /Remediation[\s\S]{0,90}(not certified|Not certified)/i],
+  ["part2-program.md", "status: Suspension", /\bSuspension\b/],
+  ["part2-program.md", "status: Revocation", /\bRevocation\b/],
+  ["part2-program.md", "tiering is not permission to exceed", /permission to exceed/i],
+  ["part2-program.md", "no allowed overage / transitional band", /allowed overage|transitional band/i],
   ["part2-program.md", "Tier 1 = Pb, Cd, iAs, mercury", /Tier 1[\s\S]{0,120}(Lead|Pb)[\s\S]{0,80}(Cadmium|Cd)[\s\S]{0,80}(arsenic|iAs)/i],
-  ["part2-program.md", "Tier 2 = Ni, Al, Sn, Cr", /Tier 2[\s\S]{0,120}(Nickel|Ni)[\s\S]{0,80}(Aluminium|Al)[\s\S]{0,80}(Tin|Sn)/i],
-  ["part2-program.md", "CAPA B 10 business days / 30 calendar days", /10 business days[\s\S]{0,60}30 calendar days/],
-  ["part2-program.md", "CAPA C 5 / 15 business days", /5 business days[\s\S]{0,60}15 business days/],
-  ["part2-program.md", "CAPA D 2 / 10 business days", /2 business days[\s\S]{0,60}10 business days/],
-  ["part2-program.md", "12-month default to Status A", /12[ -]month/],
+  ["part2-program.md", "Tier 2 = Ni, Al, Sn, Cr", /Tier 2[\s\S]{0,140}(Nickel|Ni)[\s\S]{0,80}(Aluminium|Al)[\s\S]{0,80}(Tin|Sn)/i],
+  ["part2-program.md", "CAPA 10 business days / 30 calendar days", /10 business days[\s\S]{0,60}30 calendar days/],
+  ["part2-program.md", "CAPA 5 / 15 business days", /5 business days[\s\S]{0,60}15 business days/],
+  ["part2-program.md", "CAPA 2 / 10 business days", /2 business days[\s\S]{0,60}10 business days/],
+  ["part2-program.md", "12-month default to Certified", /12[ -]month/],
   ["part2-program.md", "three-lot baseline, worst-performing lot", /worst-performing lot/],
   ["part2-program.md", "eight limit analytes", /eight limit analytes/i],
   ["part2-program.md", "50% reflex speciation trigger", /50%/],
-  ["part2-program.md", "80% PoL Tier-1 warning", /80%/],
-  ["part2-program.md", "Status D reinstatement — no fresh baseline", /does not require a fresh baseline/],
-  ["part2-program.md", "Confidential Remediation Track — mark-gated to Status A", /Mark[\s\S]{0,140}(not be used|shall not be used)[\s\S]{0,140}Status A\b/i],
+  ["part2-program.md", "80% Tier-1 early warning", /80%/],
+  ["part2-program.md", "Suspension reinstatement — no fresh baseline", /does not require a fresh baseline/],
+  ["part2-program.md", "Confidential Remediation Track — not a certified status", /Confidential Remediation Track[\s\S]{0,160}(not a certified status|non-certified)/i],
   ["part4-lot-testing.md", "nine subcategories", /nine subcategor/i],
-  ["part4-lot-testing.md", "frequency matrix present", /Testing-Frequency Matrix|Certification Status/i],
-  ["part4-lot-testing.md", "C-Low brand's own sampling", /Low[\s\S]{0,120}own accredited/i],
-  ["part4-lot-testing.md", "C-High third-party sampling", /High[\s\S]{0,120}third-party sampling/i],
+  ["part4-lot-testing.md", "frequency matrix present", /Testing-Frequency Matrix|Certification status/i],
+  ["part4-lot-testing.md", "Remediation — Tier 2 row", /Remediation[\s\S]{0,40}Tier 2/i],
+  ["part4-lot-testing.md", "Remediation — Tier 1 row", /Remediation[\s\S]{0,40}Tier 1/i],
   ["part5-backmatter.md", "government-limit default method", /government-limit default/i],
-  ["part5-backmatter.md", "glossary MaxPoL", /MaxPoL/],
+  ["part5-backmatter.md", "glossary — four-status lifecycle", /Certified, Remediation, Suspension, Revocation/],
   ["part1-why.md", "limits do not derive from the Index", /Limits do not derive from the Heavy Metal Index|traces to a named sovereign/i],
   ["part1-why.md", "90% remain-in-program gate", /90% confidence the brand can remain/],
   ["part4-lot-testing.md", "totals every completing lot", /Totals are run on every completing lot/],
@@ -72,23 +73,30 @@ const GOLD = [
 for (const [file, label, re] of GOLD) {
   if (!re.test(norm(content[file] || ""))) fail.push(`GOLDEN MISSING [${file}] ${label}`)
 }
-ok(`A. golden values: ${GOLD.length} required governance/lot-testing facts checked`)
+ok(`A. golden values: ${GOLD.length} required Method v2 governance/lot-testing facts checked`)
 
-// ── B/C. forbidden variants + firewall (absent in ALL content) ───────────────
+// ── B/C. forbidden variants (the RETIRED MaxPoL ladder) + firewall ───────────
+// Absent in ALL manual content. These are the cert-ladder constructs the v2 status
+// rewrite retired; leaving any of them is the FAIL condition of the rewrite order.
 const FORBIDDEN = [
+  ["RETIRED MaxPoL metric", /MaxPoL/i],
+  ["RETIRED Status A–E ladder", /Status A-E|statuses A through E|status ladder/i],
+  ["RETIRED 150% figure", /150\s*%/],
+  ["RETIRED 'transitional allowance'", /transitional allowance/i],
+  ["RETIRED 'Transitional (mark withheld)'", /Transitional \(mark withheld\)/i],
+  ["RETIRED probation status", /\bprobation\b/i],
+  ["RETIRED % band 101-150", /\b101\s*-\s*150\b/],
+  ["RETIRED % band 151-175", /\b151\s*-\s*175\b/],
+  ["RETIRED % band 176-200", /\b176\s*-\s*200\b/],
+  ["RETIRED % band 151-200", /\b151\s*-\s*200\b/],
+  ["RETIRED >200% band", /200%\s*MaxPoL|above 200%|>\s*200%/i],
   ["FIREWALL percentile-selection", /percentile|\bP97\b|\bP45\b|\bpooled\b|\bP\d{2}\b/i],
-  ["FIREWALL pass-rate arithmetic", /\b9[04]\/[34]0\b|\b94%\b.*\b42%\b/],
   ["stale 'fifteen subcategories'", /fifteen subcategor/i],
-  ["miscounted 'ten-analyte' panel", /ten-analyte|eleven analyte|eleventh/i],
   ["wrong governing body 'Paleo Foundation'", /Paleo Foundation/],
   ["informal 'Rudy's Law'", /Rudy'?s Law/i],
-  ["retired 'certificate held' remediation", /certificate (is )?held|certificate unaffected/i],
-  ["overlapping band 150-175", /150-175%/],
-  ["overlapping band 175-200", /175-200%/],
 ]
 for (const [label, re] of FORBIDDEN) {
   const hit = allN.match(re)
-  // "fresh baseline" is allowed only inside the negation, handled as a golden value; not scanned here.
   if (hit) fail.push(`FORBIDDEN present: ${label} → "${hit[0]}"`)
 }
 // bare "fresh baseline" not part of the required negation
@@ -96,44 +104,35 @@ for (const m of all.matchAll(/fresh baseline/gi)) {
   const ctx = all.slice(Math.max(0, m.index - 22), m.index)
   if (!/does not require a /i.test(ctx)) fail.push(`FORBIDDEN: bare "fresh baseline" (must be "does not require a fresh baseline")`)
 }
-ok(`B/C. forbidden variants + firewall: ${FORBIDDEN.length} patterns clean; government-limit only`)
+ok(`B/C. forbidden variants + firewall: ${FORBIDDEN.length} patterns clean; retired MaxPoL ladder absent; government-limit only`)
 
 // ── D. cross-part agreement (a fact stated in >1 Part must match) ────────────
-// Band correctness (the 151-175 / 176-200 integers) is enforced by the forbidden
-// overlapping-variant check in B. Here we catch the remaining cross-part drift risk:
-// every Part that carries a Status-C probation band must use the SAME integer pair,
-// and containment timing must not swap between Parts.
-const bandParts = { part2: content["part2-program.md"], part4: content["part4-lot-testing.md"], part5: content["part5-backmatter.md"] }
-for (const [name, t] of Object.entries(bandParts)) {
-  const tn = norm(t || "")
-  if (/probation|Status C/i.test(tn)) {
-    if (/\b1[0-9][0-9]-175%/.test(tn) && !/151-175%/.test(tn)) fail.push(`CROSS-PART: ${name} states a Status C Low band other than 151-175%`)
-    if (/\b1[0-9][0-9]-200%/.test(tn) && !/176-200%/.test(tn)) fail.push(`CROSS-PART: ${name} states a Status C High band other than 176-200%`)
-  }
-}
-// containment must not be swapped: Status C = "within 48 hours"; Status D = "immediate".
+// Suspension containment is "immediate (within 48 hours)" in both Parts that carry it.
 for (const [name, t] of [["part2", content["part2-program.md"]], ["part4", content["part4-lot-testing.md"]]]) {
-  if (!/Immediate \(within 48 hours\)/i.test(norm(t || ""))) fail.push(`CROSS-PART: ${name} is missing the Status D "immediate (within 48 hours)" containment`)
+  if (!/Immediate \(within 48 hours\)/i.test(norm(t || ""))) fail.push(`CROSS-PART: ${name} is missing the Suspension "Immediate (within 48 hours)" containment`)
 }
-ok(`D. cross-part agreement: Status-C bands and containment timing consistent across Parts 2/4/5`)
+ok(`D. cross-part agreement: Suspension containment timing consistent across Parts 2/4`)
 
 // ── E. cross-source: live /program + briefing pages agree with the manual ────
-// NOTE on scope: structure.md's "fifteen subcategory standards … across eight
-// categories" is a correct PROGRAM-WIDE count (15 catalog rows / 8 categories), NOT
-// the Cat-1 taxonomy (nine) — so it is deliberately NOT flagged here. remediation.md's
-// post-certification self-report track ("certificate held" for an ALREADY-certified
-// brand that self-reports) is a distinct, real feature, not a contradiction of the
-// manual's §4.3 pre-certification entry track — also not flagged. What IS checked are
-// the genuine factual defects the reconciliation confirmed against the Governance Policy.
+// The retired ladder must be gone from the cornerstone and the primer too. NOTE:
+// structure.md legitimately retains the percentile limit-SETTING methodology (P97/P45),
+// which is a distinct axis from the status model and is deliberately NOT flagged here.
 const structure = read(path.join(PROG, "structure.md"))
 const primer = read(path.join(REPO, "data/briefings/hmtc-primer.md"))
+const CROSS_FORBIDDEN = [
+  ["MaxPoL", /MaxPoL/i],
+  ["Status A–E ladder", /Status A-E|statuses A through E/i],
+  ["150% transitional / transitional allowance", /150\s*%\s*transitional|transitional allowance/i],
+  ["Transitional (mark withheld)", /Transitional \(mark withheld\)/i],
+]
 if (structure) {
-  if (/reinstatement requires a fresh baseline/i.test(norm(structure))) fail.push(`CROSS-SOURCE: content/program/structure.md still asserts Status-D reinstatement "requires a fresh baseline" (contradicts Governance Policy §5.5 + the manual)`)
-  if (/and governed under the Institute of Contaminant Standards,/i.test(norm(structure))) fail.push(`CROSS-SOURCE: content/program/structure.md still has the corrupted double-ICS governing sentence`)
+  if (/reinstatement requires a fresh baseline/i.test(norm(structure))) fail.push(`CROSS-SOURCE: content/program/structure.md still asserts reinstatement "requires a fresh baseline" (contradicts the manual)`)
+  for (const [label, re] of CROSS_FORBIDDEN) if (re.test(norm(structure))) fail.push(`CROSS-SOURCE: content/program/structure.md still carries retired "${label}"`)
 } else fail.push("CROSS-SOURCE: content/program/structure.md not found")
-if (primer && /ten-analyte panel is the eight total-metal measurements plus three speciated/i.test(norm(primer)))
-  fail.push(`CROSS-SOURCE: data/briefings/hmtc-primer.md still carries the "eight + three speciated = ten" miscount`)
-ok(`E. cross-source: /program + briefing pages checked against the manual (genuine defects only)`)
+if (primer) {
+  for (const [label, re] of CROSS_FORBIDDEN) if (re.test(norm(primer))) fail.push(`CROSS-SOURCE: data/briefings/hmtc-primer.md still carries retired "${label}"`)
+}
+ok(`E. cross-source: /program + briefing pages carry no retired MaxPoL ladder`)
 
 // ── verdict ──────────────────────────────────────────────────────────────────
 if (fail.length) {
@@ -141,5 +140,5 @@ if (fail.length) {
   for (const f of fail) console.error(`  ✗ ${f}`)
   process.exit(1)
 }
-console.log(`\naudit-cat1-manual-consistency: OK — the manual is internally consistent, matches the reconciled governance/lot-testing source, is firewall-clean, and agrees with the live /program pages.`)
+console.log(`\naudit-cat1-manual-consistency: OK — the manual is internally consistent, states the Method v2 four-status model (Certified | Remediation | Suspension | Revocation), is firewall-clean, carries no retired MaxPoL certification ladder, and agrees with the live /program pages.`)
 process.exit(0)

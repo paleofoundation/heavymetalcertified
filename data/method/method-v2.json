@@ -13,7 +13,7 @@
     "occurrence_calibration": "Where an occurrence cell is computed, a cleaner subcategory sits near P97 and a more contaminated one near P45; targets ~90% clean / ~40% dirty row-pass (measured 94% / 42% on FDA 2026 lot data), rolling up to ~80% program-monitored average.",
     "pool": "The pool is the certification-relevant market: regulatory-equivalence, not geography.",
     "instrument": "Certify against the subcategory split, never the element-wise-max envelope.",
-    "unchanged_downstream": "The 150% Tier-2 transitional allowance, Status A-E, the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged."
+    "unchanged_downstream": "The four-status lifecycle (Certified, Remediation, Suspension, Revocation), the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged. Certification requires every analyte at or below 100% of its published limit; there is no transitional overage band, and tiering sets only the severity of the reaction to an exceedance."
   },
   "tier1_analytes": ["Pb", "Cd", "iAs", "MeHg"],
   "tier2_analytes": ["Ni", "Sn", "Al", "Cr-VI"],

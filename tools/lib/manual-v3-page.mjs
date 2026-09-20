@@ -92,27 +92,26 @@ function principlesHtml() {
 function lifecycleHtml() {
   return (
     p(
-      `A SKU enters by baseline testing, is assigned a status from MaxPoL, and stays under surveillance for as long as the mark is used. Status attaches to the product, not the brand. MaxPoL is the highest percent-of-limit among the eight limit analytes in a lot. The applicable limit is the published government floor or disclosed read-across for that cell.`,
+      `A SKU enters by baseline testing, is assigned a status, and stays under surveillance for as long as the mark is used. Status attaches to the product, not the brand. A product is Certified only when every one of the eight limit analytes is at or below 100% of its published limit — the government floor or disclosed read-across for that cell — confirmed under the measurement-uncertainty rule. There is no band above the limit that still earns the mark.`,
     ) +
     table(
-      ["Status", "Meaning", "Mark", "Trigger"],
+      ["Status", "Meaning", "Mark", "Condition"],
       [
-        ["A", "Certified, full compliance", "permitted", "MaxPoL ≤ 100% on every analyte"],
-        ["B", "Transitional", "withheld until A", "101–150%, Tier 2 only, no Tier 1 above 100%"],
-        ["C", "Probation (Low 151–175% / High 176–200%)", "not on new production", "151–200%, or any Tier 1 above 100%, or unmet transitional conditions"],
-        ["D", "Suspension", "prohibited; mark removed", "Above 200% MaxPoL, or a hard-stop"],
-        ["E", "Revocation", "permanently prohibited", "Persistent suspension, willful misconduct, or concealment"],
+        ["Certified", "Full compliance", "permitted", "every analyte at or below 100% of its published limit"],
+        ["Remediation", "Not certified — applicant or corrective", "withheld / removed", "any analyte above its published limit, or a new applicant not yet at 100%; corrective action and intensified surveillance"],
+        ["Suspension", "Certification halted — hard stop", "removed", "a government legal-limit violation, a data-integrity failure, or failure to execute directives"],
+        ["Revocation", "Permanent termination", "removed", "willful misconduct, data fraud, concealment, or persistent unremediated suspension"],
       ],
-      "Status bands are integer and non-overlapping. A lot above 200% MaxPoL, or in violation of a legal limit at entry, is Not Eligible.",
+      "Certified is the only status that carries the mark. A lot in violation of a government legal limit at entry is a hard stop; a lot above any published HMTc limit is not certified and enters Remediation.",
     ) +
     cap(
-      `Tier 1 (Pb, Cd, iAs, mercury as tHg) is zero-tolerance. Tier 2 (Ni, Al, Sn, Cr) may use the 150% transitional band under Status B. Any quantifiable Cr(VI) on a credible pathway is a hard fail, treated as Tier 1.`,
+      `Tiering sets how hard and fast the program reacts to an exceedance, never permission to exceed a limit and keep the mark. Tier 1 (Pb, Cd, iAs, mercury as tHg) is zero-tolerance — the most severe reaction. Tier 2 (Ni, Al, Sn, Cr) still bars the mark and enters Remediation, at an elevated rather than immediate hard-stop reaction. Any quantifiable Cr(VI) on a credible pathway is a hard fail, treated as Tier 1. No metal has a transitional band or an allowed overage.`,
     ) +
     kvGrid([
       ["Baseline before any status", "3 lots, worst-performing lot"],
       ["Prior accredited data", "credits up to 2 lots"],
-      ["Entry hard-stop", "above 200% MaxPoL, or a legal-limit violation"],
-      ["Status D reinstatement", "does not require a fresh baseline"],
+      ["Entry hard-stop", "a government legal-limit violation"],
+      ["Suspension reinstatement", "does not require a fresh baseline"],
     ])
   )
 }
@@ -121,7 +120,7 @@ function instrumentsHtml() {
   return (
     h3("mark", "The mark") +
     p(
-      `The mark may be used only on Status A product. Status B is tracked as transitional and does not display the mark. Status C may release a lot only when that lot itself tests at Status A. Status D and E prohibit the mark. Claims of heavy-metal free, no toxic metals, or 100% safe are prohibited. The mark certifies testing against published limits under ongoing surveillance; it does not certify safety.`,
+      `The mark may be used only on Certified product — every analyte at or below 100% of its published limit. A product in Remediation carries no mark, at any margin and on any metal, and is not listed as certified while any analyte is above its limit. Suspension and Revocation remove the mark. Claims of heavy-metal free, no toxic metals, or 100% safe are prohibited. The mark certifies testing against published limits under ongoing surveillance; it does not certify safety.`,
     ) +
     h3("mu", "Measurement uncertainty") +
     p(
@@ -129,17 +128,17 @@ function instrumentsHtml() {
     ) +
     h3("capa", "CAPA") +
     table(
-      ["Status", "Initiate", "Full plan", "Containment"],
+      ["Reaction", "Initiate", "Full plan", "Containment"],
       [
-        ["B", "10 business days", "30 calendar days", "as needed"],
-        ["C", "5 business days", "15 business days", "within 48 hours"],
-        ["D", "2 business days", "10 business days", "Immediate (within 48 hours)"],
+        ["Tier 2 exceedance (Remediation)", "10 business days", "30 calendar days", "as needed"],
+        ["Tier 1 exceedance (Remediation)", "5 business days", "15 business days", "within 48 hours"],
+        ["Suspension (hard stop)", "2 business days", "10 business days", "Immediate (within 48 hours)"],
       ],
-      "Status B has a 12-month default to return to Status A. A CAPA closes only after verification of effectiveness and Operator approval.",
+      "A Tier 2 exceedance in Remediation has a 12-month default to return to Certified. A CAPA closes only after verification of effectiveness and Operator approval.",
     ) +
     h3("remediation", "Remediation") +
     p(
-      `Before certification, the Readiness Pathway is nonpublic and awards no mark. After certification, Corrective Action follows the published status rules. Concealment of a known exceedance is grounds for revocation. Confidentiality never delays a recall, never overrides a reporting duty, and never withholds evidence from a regulator who asks.`,
+      `The Confidential Remediation Track is a confidential entry-and-support pathway for products not yet at 100% of every published limit. It is expressly not a certified status and displays no mark. After certification, Corrective Action follows the published status rules. Concealment of a known exceedance is grounds for revocation. Confidentiality never delays a recall, never overrides a reporting duty, and never withholds evidence from a regulator who asks.`,
     ) +
     h3("ratchet", "Standards ratchet") +
     p(
@@ -167,12 +166,11 @@ function lotTestingHtml() {
     table(
       ["Status", "High", "Moderate", "Lower", "Hold and release", "Independent sampling"],
       [
-        ["A", "Monthly", "Quarterly", "Quarterly", "not required", "yes, per schedule"],
-        ["B", "Every lot or monthly (more frequent)", "Monthly", "Monthly", "recommended", "yes, monthly"],
-        ["C Low (151–175%)", "Every lot", "Every lot", "Every lot", "mandatory", "brand's own accredited lab, subject to audit"],
-        ["C High (176–200%)", "Every lot", "Every lot", "Every lot", "mandatory", "Operator-directed third-party sampling"],
+        ["Certified", "Monthly", "Quarterly", "Quarterly", "not required", "yes, per schedule"],
+        ["Remediation — Tier 2 exceedance", "Every lot or monthly (more frequent)", "Monthly", "Monthly", "mandatory", "brand's own accredited lab, subject to audit"],
+        ["Remediation — Tier 1 exceedance", "Every lot", "Every lot", "Every lot", "mandatory", "Operator-directed third-party sampling"],
       ],
-      "This grid is the starting point, not the assigned schedule. A lot at MaxPoL 101–150% that carries any Tier 1 metal above 100% is Status C: every lot, mandatory hold-and-release, independent sampling.",
+      "This grid is the starting point, not the assigned schedule. Certified is the only status that carries the mark; Remediation carries none. Reaction severity follows the tier of the exceedance and the brand's conduct, never an allowed overage — any Tier 1 exceedance, any quantifiable Cr(VI), or a concealment concern takes the every-lot, Operator-directed row regardless of risk tier.",
     ) +
     h3("baseline", "Baseline") +
     p(
@@ -230,7 +228,7 @@ function lotTestingHtml() {
       ["Input", "Read as"],
       [
         ["Baseline lots", "three-lot record, worst lot, not the best lot"],
-        ["MaxPoL", "headroom to 100%, not a knife-edge pass"],
+        ["Headroom", "distance to the published limit, not a knife-edge pass"],
         ["Lab capability", "the lab-informed schedule inputs above"],
         ["Pathway risk", "rice, marine, hexavalent, or other documented pathways"],
         ["Schedule feasibility", "can the brand actually run the assigned frequency and hold-and-release?"],
@@ -243,7 +241,7 @@ function lotTestingHtml() {
       ["Fail: knife-edge baseline", "do not certify"],
       ["Fail: lab cannot support the schedule", "do not certify"],
       ["Fail: would enter only to be suspended", "do not certify"],
-      ["Fail: concealment or data-integrity doubt", "do not certify; Status D / E path"],
+      ["Fail: concealment or data-integrity doubt", "do not certify; Suspension / Revocation path"],
     ])
   )
 }
