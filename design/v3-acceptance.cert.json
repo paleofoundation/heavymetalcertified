@@ -769,20 +769,20 @@
       { "sel": "meta[name=\"citation_publisher\"][content=\"Institute of Contaminant Standards\"]", "prop": "count", "want": 1 },
       { "sel": "meta[name=\"citation_doi\"][content=\"10.83138/hmtc.std.30.olive-oil\"]", "prop": "count", "want": 1 },
       { "sel": "meta[name=\"citation_fulltext_html_url\"][content=\"https://heavymetalcertified.com/standards/olive-oil\"]", "prop": "count", "want": 1 },
-      { "sel": "meta[name=\"citation_pdf_url\"][content=\"https://heavymetalcertified.com/standards/olive-oil.pdf\"]", "prop": "count", "want": 1 },
+      { "sel": "meta[name=\"citation_pdf_url\"][content=\"https://heavymetalcertified.com/static/standards/olive-oil.pdf\"]", "prop": "count", "want": 1 },
       { "sel": "meta[name=\"citation_language\"][content=\"en\"]", "prop": "count", "want": 1 },
       { "sel": "script[data-standard-scholarly]", "prop": "count", "want": 1, "note": "SSR ScholarlyArticle JSON-LD with ICS publisher + PDF encoding." }
     ],
     "/standards/chocolate": [
       { "sel": "meta[name=\"citation_title\"]", "prop": "count", "want": 1, "note": "HMTC-SCHOLAR-META-1: unminted standards still emit Highwire without inventing a DOI." },
       { "sel": "meta[name=\"citation_author\"][content=\"Pendergrass, Karen\"]", "prop": "count", "want": 1 },
-      { "sel": "meta[name=\"citation_pdf_url\"][content=\"https://heavymetalcertified.com/standards/chocolate.pdf\"]", "prop": "count", "want": 1 },
+      { "sel": "meta[name=\"citation_pdf_url\"][content=\"https://heavymetalcertified.com/static/standards/chocolate.pdf\"]", "prop": "count", "want": 1 },
       { "sel": "meta[name=\"citation_doi\"]", "prop": "absent", "want": true, "note": "HOLD: chocolate is not in the mint ledger (claim-surface FAIL Sn/Al/Cr). Do not invent a DOI." },
       { "sel": "script[data-standard-scholarly]", "prop": "count", "want": 1 }
     ],
     "/standards/infant-formula-powder": [
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "src": "COMPONENTS §1 / AGENTS §3", "note": "canonical burgundy table head. If not burgundy, a duplicate .wiki-content table rule is winning — delete the loser (FIDELITY §1), never out-specify." },
-      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "The published source has no strong tags. Assert absence; generated prose is outside this design review." },
+      { "sel": ".wiki-content strong", "prop": "font-weight", "want": "400", "note": "The current version-history marker uses semantic strong; it must render at normal weight per CONTENT-RULES §7." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface. tools/design-lint.mjs blocks this at build; this is the rendered backstop." },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
