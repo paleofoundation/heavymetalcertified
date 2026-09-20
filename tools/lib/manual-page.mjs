@@ -125,15 +125,17 @@ export function renderEdition({ editionPdfLine }) {
 
 // ── frontmatter (drives HeroBand + Rail + Snav) ───────────────────────────────
 // The canonical manual frontmatter contract. Every field here maps to a v3
-// component: description→hero dek, snapshot→hero card, author/orcid→hero byline,
-// hero_action + pdf→download (hero link + rail card), connections→rail, rail_box
-// →rail "Document versions" box, type:manual→"Program manual" badge.
+// component: description→hero dek, snapshot→hero card (omitted on Cat-1 v3),
+// author/orcid→hero byline, hero_action + pdf→download (hero link + rail card),
+// connections→rail, rail_box→rail "Document versions" box, type:manual→"Program
+// manual" badge. Cat-1 Manual v3 emits hero_snapshot: false instead of snapshot.
 export function renderManualFrontmatter({
   title,
   category,
   categoryName,
   description,
   snapshot = [],
+  heroSnapshot = true,
   connections = [],
   author = "Karen Pendergrass",
   orcid = "0000-0002-2348-7259",
@@ -202,7 +204,11 @@ export function renderManualFrontmatter({
     lines.push(`pdf: ${yq(pdfHref)}`)
     lines.push(`hero_action: { label: ${yq(pdfLabel)}, href: ${yq(pdfHref)} }`)
   }
-  if (snapshot.length) {
+  // Cat-1 Manual v3 is a governing instrument: register counts (live pages /
+  // cert-ready) are not hero chrome. Cover chip + Document DOI carry edition.
+  if (heroSnapshot === false) {
+    lines.push("hero_snapshot: false")
+  } else if (snapshot.length) {
     lines.push("snapshot:")
     for (const r of snapshot) lines.push(`  - { k: ${yq(r.k)}, v: ${yq(r.v)} }`)
   }

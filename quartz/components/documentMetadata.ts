@@ -27,6 +27,9 @@ export function pageElement(slug: string) {
   return /^(analytes|why-we-limit)\//.test(slug) ? ELEMENTS[slug.split("/")[1]] : undefined
 }
 export function pageSnapshot(fm: Record<string, any>, slug: string, kind: string): [string, string][] {
+  // Governing-instrument pages opt out of register-chrome snapshot rows.
+  // An omitted `snapshot` must not fall through to the type:standard defaults.
+  if (fm.hero_snapshot === false) return []
   const rows: [string, string][] = []
   if (Array.isArray(fm.snapshot)) {
     for (const row of fm.snapshot) {

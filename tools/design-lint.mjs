@@ -130,9 +130,17 @@ if (fs.existsSync(MANUALS)) {
     // The hero title is the HeroBand (frontmatter `title`); a body <h1> is the old
     // duplicate-title defect.
     if (/<h1[\s>]/i.test(body)) blocking.push(`${rel}  hand-rolled <h1> in body — the manual hero is the HeroBand (frontmatter title); remove it (regenerate via tools/lib/manual-page.mjs)`)
-    // Frontmatter must drive the hero dek, the page-snapshot card, and the rail.
-    for (const key of ["description:", "snapshot:", "connections:"]) {
+    // Frontmatter must drive the hero dek, the page-snapshot card (other manuals),
+    // and the rail. Cat-1 Manual v3 is a governing instrument: no hero snapshot.
+    const requiredFm = f === `${CAT1_MANUAL}.md`
+      ? ["description:", "hero_snapshot:", "connections:"]
+      : ["description:", "snapshot:", "connections:"]
+    for (const key of requiredFm) {
       if (!new RegExp(`(^|\\n)${key}`).test(fm)) blocking.push(`${rel}  frontmatter missing \`${key}\` (canonical manual hero/rail contract; regenerate via tools/lib/manual-page.mjs)`)
+    }
+    if (f === `${CAT1_MANUAL}.md`) {
+      if (/(^|\n)snapshot:/.test(fm)) blocking.push(`${rel}  Cat-1 Manual v3 must not emit a hero page-snapshot (register chrome on a governing-instrument page); regenerate via tools/build-cat1-manual.mjs`)
+      if (!/(^|\n)hero_snapshot:\s*false\b/.test(fm)) blocking.push(`${rel}  Cat-1 Manual v3 must set \`hero_snapshot: false\` so Document DOI is the right-column authority signal`)
     }
     // Cat-1 Manual v3 uses the locked thin TOC. Other category manuals keep the
     // shared matrix landing until they are rewritten the same way.
