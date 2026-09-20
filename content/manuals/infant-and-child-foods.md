@@ -5,6 +5,19 @@ custom_page: true
 category: 1
 breadcrumb_leaf: "Infant and Child Foods"
 description: "The Method v2 governing instrument for Category 1."
+scholar_abstract: "Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.infant-and-child-foods. The Manual binds the live subcategory standard pages; those pages remain the derivation of each cell. Certification requires every published limit analyte to sit at or below 100 percent of its government floor or disclosed read-across. There is no band above a published limit that still earns the mark. The five Governing Principles are co-equal: drive down contamination, protect consumers, protect brands who enter, remain legally defensible, and become the de facto standard. None may be sacrificed to advance another. Totals are run on every completing lot. Speciation is a pathway reflex. After application, the Program Operator writes a lab-informed Lot Testing Schedule from the brand's laboratory capability. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. The live Cat-1 Standards Register lists every subcategory page with its house DOI when cert-ready, or a HOLD reason when the claim-surface is incomplete. Incomplete cells are not cert-ready. All rights reserved."
+socialDescription: "Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.infant-and-child-foods. The Manual binds the live subcategory standard pages; those pages remain the derivation of each cell. Certification requires every published limit analyte to sit at or below 100 percent of its government floor or disclosed read-across. There is no band above a published limit that still earns the mark. The five Governing Principles are co-equal: drive down contamination, protect consumers, protect brands who enter, remain legally defensible, and become the de facto standard. None may be sacrificed to advance another. Totals are run on every completing lot. Speciation is a pathway reflex. After application, the Program Operator writes a lab-informed Lot Testing Schedule from the brand's laboratory capability. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. The live Cat-1 Standards Register lists every subcategory page with its house DOI when cert-ready, or a HOLD reason when the claim-surface is incomplete. Incomplete cells are not cert-ready. All rights reserved."
+keywords:
+  - "Infant and Child Foods"
+  - "Category 1"
+  - "Manual v3"
+  - "Method v2"
+  - "Heavy Metal Certified"
+  - "Institute of Contaminant Standards"
+  - "government floor"
+  - "read-across"
+  - "Lot Testing Schedule"
+  - "10.83138/hmtc.manual.infant-and-child-foods"
 scholar_eligible: true
 cert_doi: "10.83138/hmtc.manual.infant-and-child-foods"
 effective_date: "2026-09-19"

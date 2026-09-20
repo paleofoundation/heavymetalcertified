@@ -42,6 +42,15 @@ directly.
 - Regulatory Watch verified JSON (includes impact classes and comparison records): https://heavymetalcertified.com/static/data/regulatory-watch.json
 - Regulatory Watch verified CSV (operational action register): https://heavymetalcertified.com/static/data/regulatory-watch.csv
 
+## Manuals
+
+Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods.
+Cite the landing page and the house DOI; do not treat the retired Zenodo deposit as current.
+
+- Infant and Child Foods Program Manual: https://heavymetalcertified.com/manuals/infant-and-child-foods
+- DOI: https://doi.org/10.83138/hmtc.manual.infant-and-child-foods
+- All Program Manuals: https://heavymetalcertified.com/manuals
+
 ## Guides (what heavy metals mean in a product, and how testing and certification work)
 
 - What heavy metal testing is: https://heavymetalcertified.com/heavy-metal-testing

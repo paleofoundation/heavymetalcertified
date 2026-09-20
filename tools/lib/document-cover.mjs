@@ -130,7 +130,7 @@ function standardOgRel(slug, repo = REPO_ROOT) {
   return null
 }
 
-/** Tall first-page PNG for the left-rail ManualAuthority. Never the social card. */
+/** Tall first-page PNG for the hero left-column cover. Never the social card. */
 export function resolveCover(opts = {}) {
   const { typeName, slug, frontmatter, repo = REPO_ROOT, baseUrl = BASE_URL } = opts
   const fromFm = frontmatterField(frontmatter, ["pdf_cover"])

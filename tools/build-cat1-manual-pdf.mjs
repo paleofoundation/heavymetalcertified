@@ -368,7 +368,19 @@ function ManualDocument() {
 
   return h(
     Document,
-    { title: "Infant and Child Foods: HMTc Program Manual", author: "Karen Pendergrass", subject: "Heavy Metal Certified", creator: "Heavy Metal Certified" },
+    {
+      title: "Infant and Child Foods: HMTc Program Manual",
+      author: "Karen Pendergrass",
+      subject: HOUSE_DOI
+        ? `DOI ${HOUSE_DOI}`
+        : "Heavy Metal Certified Category 1 Infant and Child Foods Program Manual",
+      keywords: HOUSE_DOI
+        ? `${HOUSE_DOI}, Infant and Child Foods, Manual v3, Method v2`
+        : "Infant and Child Foods, Manual v3, Method v2",
+      creator: "Institute of Contaminant Standards / Heavy Metal Certified",
+      producer: "Heavy Metal Certified",
+      language: "en-US",
+    },
     [
       h(Page, { key: "doc", size: "LETTER", style: s.pagePortrait }, [
         ...Cover(),

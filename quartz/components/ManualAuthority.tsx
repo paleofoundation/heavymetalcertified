@@ -7,23 +7,25 @@ function frontmatterString(value: unknown): string | undefined {
   return s && s.toLowerCase() !== "null" ? s : undefined
 }
 
-function isManualPage(slug: string, fm: Record<string, unknown>): boolean {
+export function isManualAuthorityPage(slug: string, fm: Record<string, unknown>): boolean {
   if (!slug.startsWith("manuals/") || slug === "manuals/index") return false
   return fm.type === "standard" || fm.type === "manual" || Boolean(fm.pdf || fm.edition)
 }
 
-const ManualAuthority: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-  const slug = String((fileData.slug ?? "") as FullSlug)
-  const fm = (fileData.frontmatter ?? {}) as Record<string, unknown>
-  if (!isManualPage(slug, fm)) return null
-
-  const pdfHref = frontmatterString(fm.pdf)
-  const editionChip =
+export function manualEditionChip(fm: Record<string, unknown>): string {
+  return (
     frontmatterString(fm.edition_chip) ||
     [frontmatterString(fm.edition), /v2/i.test(String(fm.methodology_version ?? "")) ? "Method v2" : null]
       .filter(Boolean)
       .join(" · ") ||
     "Program Manual"
+  )
+}
+
+/** Governing-instrument strip: label, edition chip, Download PDF + Cite. */
+export function ManualAuthorityStrip({ fm }: { fm: Record<string, unknown> }) {
+  const pdfHref = frontmatterString(fm.pdf)
+  const editionChip = manualEditionChip(fm)
 
   return (
     <div class="hmtc-manual-authority" data-manual-authority="1">
@@ -41,6 +43,13 @@ const ManualAuthority: QuartzComponent = ({ fileData }: QuartzComponentProps) =>
       </div>
     </div>
   )
+}
+
+const ManualAuthority: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+  const slug = String((fileData.slug ?? "") as FullSlug)
+  const fm = (fileData.frontmatter ?? {}) as Record<string, unknown>
+  if (!isManualAuthorityPage(slug, fm)) return null
+  return <ManualAuthorityStrip fm={fm} />
 }
 
 export default (() => ManualAuthority) satisfies QuartzComponentConstructor

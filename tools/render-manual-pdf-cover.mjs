@@ -2,7 +2,7 @@
 // Render page 1 of each served Program Manual PDF to a static cover preview,
 // plus a 1200×630 letterboxed OG derivative for unfurlers.
 //
-//   <stem>.png     — tall first page. Left-rail ManualAuthority only.
+//   <stem>.png     — tall first page. Hero left-column cover only.
 //   <stem>-og.png  — 1200×630 letterbox on #fffdfb. og:image / twitter:image
 //                    and DataCite relatedIdentifiers Image URL.
 //

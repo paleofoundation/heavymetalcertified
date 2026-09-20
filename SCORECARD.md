@@ -22,9 +22,9 @@ After: `./quartz/bootstrap-cli.mjs build` → `public/manuals/infant-and-child-f
 
 | Asset | Path | Size | Used by |
 |---|---|---|---|
-| Rail cover | `/static/manuals/covers/infant-and-child-foods-v3.png` | 1020×1320 | `ManualAuthority` only |
+| Hero cover | `/static/manuals/covers/infant-and-child-foods-v3.png` | 1020×1320 | hero left-column cover only |
 | OG derivative | `/static/manuals/covers/infant-and-child-foods-v3-og.png` | 1200×630 letterbox on `#fffdfb` | `og:image`, `twitter:image`, DataCite Image URL |
-| Rail cover | `/static/manuals/covers/pet-foods-2026.png` | 993×1404 | rail only |
+| Hero cover | `/static/manuals/covers/pet-foods-2026.png` | 993×1404 | hero left-column cover only |
 | OG derivative | `/static/manuals/covers/pet-foods-2026-og.png` | 1200×630 | unfurl + DataCite |
 
 Letterbox (not crop) so the cover title stays readable.

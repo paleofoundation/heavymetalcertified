@@ -45,7 +45,7 @@ in the body is the old duplicate-title defect — the hero title is the HeroBand
 | `rail_box` | Rail "Document versions" box | `{title, body}` — **no cta** (the PdfCard is the download) |
 | `effective_date` / `updated` | Hero "UPDATED" stamp + snapshot | |
 
-On **manuals**, the portrait first-page PDF cover (`pdf_cover`) lives in the **hero left panel** (`.hmtc-hb-context .hmtc-hb-cover`), the empty 264px column next to the title. The left rail (`aside.snav .hmtc-manual-authority`) keeps Download PDF, Cite, and the edition chip (`Manual v3 · Method v2`) and does **not** duplicate the cover. The right rail keeps Connections and does **not** duplicate the download. `.wiki-content a[download]` stays 0. `socialImage` remains the 1200×630 letterbox for `og:image`; `pdf_cover` is never the social card. **Standards pages never carry a PDF cover** — the claim surface stays the hero there. The hero snapshot shows the current house DOI when minted; an earlier Zenodo edition is not a hero snapshot row.
+On **manuals**, the portrait first-page PDF cover (`pdf_cover`) and the Governing Instrument strip live in the **hero left column** (`.hmtc-hb-context`): cover → label → edition chip (`Manual v3 · Method v2`) → Download PDF + Cite. The content left rail is **On this page** only — it must not duplicate the cover or the authority strip. The right rail keeps Connections and does **not** duplicate the download. `.wiki-content a[download]` stays 0. `socialImage` remains the 1200×630 letterbox for `og:image`; `pdf_cover` is never the social card. **Standards pages never carry a PDF cover** — the claim surface stays the hero there. The hero snapshot shows the current house DOI when minted; an earlier Zenodo edition is not a hero snapshot row.
 
 Spacing is the locked scale **8 / 16 / 24 / 48 / 72** (`quartz/styles/tokens.scss`, `tools/lib/design-tokens.mjs`). Manuals sections use `.hmtc-section` (`margin-bottom: var(--section-gap-manual)` = 72). Table cells use `--table-cell-pad-y/x` ≥ 12px. Hero dek and the body lead are a kill-gate: ≤2 sentences, not a word pile.
 
@@ -81,7 +81,7 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
   carries `description` / `snapshot` / `connections`; the body carries `<h2 id="scope|matrix|hard|edition">` except Cat-1 v3, which carries `<h2 id="principles|lifecycle|instruments|lot-testing|register|edition">`.
   Density gate: every manuals `<section>` uses `.hmtc-section` and any inline `margin-bottom` is ≥ the token floor (48). Hero dek ≤ 2 sentences / 32 words; Cat-1 lead ≤ 2 sentences / 50 words. Tokens file must lock `--space-1`…`--space-5` to 8/16/24/48/72. Standards pages fail if a PDF cover / `.hmtc-manual-authority` appears.
 - **`design/v3-acceptance.cert.json`** + `npm run check:v3` (Playwright, release path) assert the
-  rendered chrome, the canonical table head, no-bold, and the rail-only download.
+  rendered chrome, the canonical table head, no-bold, and the hero-column download.
 
 If you add a new category manual, add its `--pages=<cat>-pages.json` invocation to `prebuild` (with a
 `_meta` block: `category`, `category_name`, `panel`, `tier1`, `tier2`, `manual_slug`,

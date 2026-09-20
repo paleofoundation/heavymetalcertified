@@ -18,6 +18,8 @@ import {
   PDF_FILE,
   PDF_HREF,
   CITATION_TITLE,
+  SCHOLAR_ABSTRACT,
+  SCHOLAR_KEYWORDS,
   readExistingHouseDoi,
 } from "./lib/cat1-manual-v3.mjs"
 import { renderManualV3Page } from "./lib/manual-v3-page.mjs"
@@ -47,6 +49,8 @@ const page = renderManualV3Page({
   manualSlug: "infant-and-child-foods",
   categoryName: "Infant and Child Foods",
   description: "The Method v2 governing instrument for Category 1.",
+  scholarAbstract: SCHOLAR_ABSTRACT,
+  keywords: SCHOLAR_KEYWORDS,
   pdfCover: cover?.rel ?? null,
   socialImage: og?.rel ?? null,
   ogImageWidth: og?.width ?? 1200,
