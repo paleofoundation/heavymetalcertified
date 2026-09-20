@@ -29,6 +29,7 @@ import {
   renderToFile,
 } from "@react-pdf/renderer"
 import { registerFonts } from "./fonts.mjs"
+import { houseApaCite, houseFooterCite } from "../lib/house-cite.mjs"
 
 registerFonts()
 
@@ -316,19 +317,24 @@ function buildModel(fm, body, cfg) {
 
   const references = cfg.references || parseRefs(sections.find((s) => /^references$/i.test(s.heading)))
 
-  // Certification standards are network-locked to All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1):
-  // the Cite-as face uses the APA "Standard No." form with the doi.org URL only (never the page URL,
-  // never "registration pending"), carries no CC BY, and never glues the licence onto the cite line.
+  // Certification standards and Program Manuals are network-locked to
+  // All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1 / S-DOI-CITE-APA-1):
+  // the Cite-as face uses the APA "Standard No." form with the doi.org URL only
+  // (never the page URL, never "registration pending"), carries no CC BY, and
+  // never glues the licence onto the cite line.
   // Other scholarly PDFs (briefings) keep their APA prose cite + CC BY.
-  const isStandard = cfg.pathSeg === "standards"
+  const isStandard = cfg.pathSeg === "standards" || cfg.pathSeg === "manuals"
   const yr = year || "2026"
   const citeAs = isStandard
-    ? `Pendergrass, K. (${yr}). ${title}${doi ? ` (Standard No. ${doi})` : ""}. Institute of Contaminant Standards.${doi ? ` https://doi.org/${doi}` : ""}`
+    ? houseApaCite({ title, year: yr, doi })
     : `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
   const licenseLine = isStandard
     ? `© ${yr} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`
     : "CC BY 4.0"
   const footerLicense = isStandard ? "© All rights reserved" : "CC BY 4.0"
+  const footerCite = cfg.pathSeg === "manuals"
+    ? houseFooterCite({ label: "Heavy Metal Certified", edition: title, doi, reserved: footerLicense })
+    : `Heavy Metal Certified  ·  ${url}  ·  ${footerLicense}`
 
   return {
     isStandard,
@@ -347,6 +353,7 @@ function buildModel(fm, body, cfg) {
     },
     gradeLine: grade && GRADE_LABEL[grade] ? `Confidence grade ${grade} — ${GRADE_LABEL[grade]} (preprint)` : null,
     citeAs,
+    footerCite,
     keywords,
     firstPublished: established,
     revision: updated && updated !== established ? updated : null,
@@ -667,7 +674,7 @@ function ScholarlyDocument(m) {
       // callback (the only way to print "page N / M") triggers a Yoga NaN crash
       // on the longer documents (cadmium, ~11 pages), so page numbers are
       // omitted in favour of a footer that never fails the build.
-      h(Text, { key: "footer", style: s.footer, fixed: true }, `Heavy Metal Certified  ·  ${m.url}  ·  ${m.footerLicense}`),
+      h(Text, { key: "footer", style: s.footer, fixed: true }, m.footerCite || `Heavy Metal Certified  ·  ${m.url}  ·  ${m.footerLicense}`),
     ]),
   )
 }

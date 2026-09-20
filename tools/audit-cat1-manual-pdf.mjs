@@ -14,7 +14,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { execSync, spawnSync } from "node:child_process"
-import { buildRegister, snapshotFromRegister, PDF_FILE, COPYRIGHT, ZENODO_VERSION_DOI } from "./lib/cat1-manual-v3.mjs"
+import { buildRegister, snapshotFromRegister, PDF_FILE, ZENODO_VERSION_DOI, apaCite, readExistingHouseDoi, CITATION_TITLE } from "./lib/cat1-manual-v3.mjs"
 
 const REPO = process.cwd()
 const MANUAL_MD = path.join(REPO, "content/manuals/infant-and-child-foods.md")
@@ -86,6 +86,14 @@ if (pdfText) {
   if (/NaN/.test(pdfText)) fail.push(`PDF text contains "NaN"`)
   if (/CC BY|Creative Commons/i.test(pdfText)) fail.push(`PDF carries CC BY (must be All rights reserved)`)
   if (!norm.includes("All rights reserved")) fail.push(`PDF missing All rights reserved`)
+  if (/after CEO PASS|does not invent that DOI/i.test(norm)) fail.push(`PDF still carries a mint-pending hedge`)
+  const houseDoi = readExistingHouseDoi()
+  if (houseDoi) {
+    const wantCite = apaCite(houseDoi)
+    if (!compact(pdfText).includes(compact(wantCite))) fail.push(`PDF missing APA Standard No. cite: ${wantCite}`)
+    if (!norm.includes(`https://doi.org/${houseDoi}`)) fail.push(`PDF missing doi.org URL for ${houseDoi}`)
+    if (!norm.includes(`Standard No. ${houseDoi}`)) fail.push(`PDF missing Standard No. ${houseDoi}`)
+  }
   if (!norm.includes("90%") || !/remain in the program/i.test(norm)) fail.push(`PDF missing 90% stay-in-program gate`)
   if (!/Lab-informed schedule/i.test(norm)) fail.push(`PDF missing Lab-informed schedule`)
   if (/Master limit matrix/i.test(norm)) fail.push(`PDF still reprints a master limit matrix (CUT for Manual v3)`)
@@ -97,6 +105,19 @@ if (pdfText) {
     if (row.cert_doi && !compact(pdfText).includes(compact(row.cert_doi))) fail.push(`PDF missing house cert_doi ${row.cert_doi}`)
   }
   if (!norm.includes(ZENODO_VERSION_DOI)) fail.push(`PDF missing earlier-edition Zenodo ${ZENODO_VERSION_DOI}`)
+  const page1 = spawnSync("pdftotext", ["-f", "1", "-l", "1", "-layout", PDF, "-"], { encoding: "utf8" })
+  if (page1.status === 0 && page1.stdout) {
+    const p1 = page1.stdout.replace(/[\s\u00AD\u200B]+/g, " ")
+    if (houseDoi) {
+      if (!p1.includes(`https://doi.org/${houseDoi}`)) fail.push(`PDF page 1 missing doi.org URL`)
+      if (!p1.includes(`Standard No. ${houseDoi}`)) fail.push(`PDF page 1 missing Standard No.`)
+      if (!p1.includes(CITATION_TITLE)) fail.push(`PDF page 1 missing citation title`)
+    }
+    if (!/All rights reserved/i.test(p1)) fail.push(`PDF page 1 missing All rights reserved`)
+    if (/live standard pages|cert-ready \d+ of \d+/i.test(p1)) fail.push(`PDF page 1 still shows live-pages / cert-ready cover chrome`)
+    if (/registration pending|CC BY/i.test(p1)) fail.push(`PDF page 1 has registration-pending or CC BY`)
+    note(`B2. PDF page 1: APA Standard No. cite + All rights reserved; no live-pages chrome`)
+  }
   note(`B. PDF text: register names + house DOIs present; no CC BY; no master-matrix reprint`)
 } else if (fs.existsSync(PDF)) {
   note(`B. PDF text check skipped (pdftotext not available)`)

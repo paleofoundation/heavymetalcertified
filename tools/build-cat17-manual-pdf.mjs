@@ -25,6 +25,8 @@ import path from "node:path"
 import React from "react"
 import { Document, Page, View, Text, StyleSheet, renderToFile } from "@react-pdf/renderer"
 import { registerFonts } from "./pdf/fonts.mjs"
+import matter from "gray-matter"
+import { houseApaCite, houseFooterCite, HOUSE_COPYRIGHT, normalizeHouseDoi } from "./lib/house-cite.mjs"
 
 registerFonts()
 const h = React.createElement
@@ -37,6 +39,19 @@ const OUT_DIR = path.join(REPO, "content/static/manuals")
 const OUT = path.join(OUT_DIR, "HMTc-Pet-Foods-Program-Manual-2026.pdf")
 const BASE_URL = "https://heavymetalcertified.com/manuals/pet-foods"
 const EDITION_DATE = META.effective_date || "2026"
+const PET_PAGE = path.join(REPO, "content/manuals/pet-foods.md")
+const CERT_DOI = (() => {
+  if (!fs.existsSync(PET_PAGE)) return null
+  try {
+    return normalizeHouseDoi(matter(fs.readFileSync(PET_PAGE, "utf8")).data.cert_doi)
+  } catch {
+    return null
+  }
+})()
+const CITE_LINE = CERT_DOI
+  ? houseApaCite({ title: "Pet Foods: HMTc Program Manual", year: "2026", doi: CERT_DOI })
+  : `Cite as: Pendergrass, K. HMTc Pet Foods Program Manual (provisional edition). Institute of Contaminant Standards (ICS), 2026. ${BASE_URL}. CC BY 4.0.`
+const FOOTER_URL = CERT_DOI ? `https://doi.org/${CERT_DOI}` : BASE_URL
 
 const recFor = (slug) => JSON.parse(fs.readFileSync(path.join(COMPILED, `${slug}.json`), "utf8"))
 const PAGES = CFG.pages.map((p) => ({ slug: p.slug, name: p.name, rec: recFor(p.variants[0].record), variant: p.variants[0].variant }))
@@ -132,11 +147,11 @@ const Cover = () => [
   h(Text, { key: "t", style: s.coverTitle }, "Pet Foods"),
   h(Text, { key: "sub", style: s.coverSub }, "Category 17 · 2026 Edition · 10 subcategories"),
   h(Text, { key: "meth", style: s.coverMethod }, "Human-grade over-compliance — Method v2.0"),
-  h(View, { key: "prov", style: s.provBox }, [
+  ...(CERT_DOI ? [] : [h(View, { key: "prov", style: s.provBox }, [
     h(Text, { key: "l", style: s.provLabel }, "Provisional edition — not yet DOI-registered"),
     h(Text, { key: "t", style: s.provText },
       "This is a provisional edition issued ahead of formal registration. Every limit is current and identical to the live standard at heavymetalcertified.com/manuals/pet-foods and to the per-subcategory standard pages; a version-pinned edition with a registered DOI is in preparation. Cite the URL, not a DOI, until the registered edition is released."),
-  ]),
+  ])]),
   h(View, { key: "auth", style: s.coverBlock }, [
     h(Text, { key: "l", style: s.label }, "Author & publisher"),
     h(Text, { key: "t", style: s.coverText }, "Karen Pendergrass · ORCID 0000-0002-2348-7259\nInstitute of Contaminant Standards (ICS) · Heavy Metal Tested & Certified"),
@@ -150,7 +165,8 @@ const Cover = () => [
     h(Text, { key: "b", style: s.abstractBody },
       "The Heavy Metal Tested & Certified standard for Category 17, Pet Foods. Pet food is legally feed, whose heavy-metal ceilings run well above human food; HMTc does not certify to that feed floor. Each limit is the strictest human-food sovereign maximum for the nearest analog, adopted as a voluntary human-grade over-compliance — the pet-feed floor is disclosed on every analyte and never selects the number. This volume states the methodology, the master limit matrix for all ten subcategories, and each subcategory's per-analyte derivation. Every number is identical to the web edition; nothing is selected from measured data."),
   ]),
-  h(Text, { key: "cite", style: [s.coverText, { marginTop: 8 }] }, `Cite as: Pendergrass, K. HMTc Pet Foods Program Manual (provisional edition). Institute of Contaminant Standards (ICS), 2026. ${BASE_URL}. CC BY 4.0.`),
+  h(Text, { key: "cite", style: [s.coverText, { marginTop: 8 }] }, CITE_LINE),
+  ...(CERT_DOI ? [h(Text, { key: "cpr", style: [s.coverText, { marginTop: 6 }] }, HOUSE_COPYRIGHT)] : []),
 ]
 
 // ── methodology + how-to-read ────────────────────────────────────────────────
@@ -220,7 +236,9 @@ const PartThreeHead = () => h(View, { key: "p3", wrap: false }, [
 ])
 
 // ── document ─────────────────────────────────────────────────────────────────
-const footer = (label) => h(Text, { key: "footer", style: s.footer, fixed: true, render: ({ pageNumber, totalPages }) => `${label}   ·   ${pageNumber} / ${totalPages}   ·   ${BASE_URL}` })
+const footer = (label) => h(Text, { key: "footer", style: s.footer, fixed: true, render: ({ pageNumber, totalPages }) => CERT_DOI
+  ? houseFooterCite({ label, edition: `${pageNumber} / ${totalPages}`, doi: CERT_DOI })
+  : `${label}   ·   ${pageNumber} / ${totalPages}   ·   ${FOOTER_URL}` })
 
 const doc = h(Document, { title: "HMTc Pet Foods Program Manual (provisional)", author: "Karen Pendergrass", subject: "Heavy Metal Certified", creator: "Heavy Metal Certified" }, [
   h(Page, { key: "cover", size: "A4", style: s.pagePortrait }, [...Cover(), footer("HMTc Pet Foods · Provisional edition")]),

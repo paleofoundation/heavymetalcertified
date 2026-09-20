@@ -33,9 +33,7 @@ const register = buildRegister()
 const snap = snapshotFromRegister(register)
 const certDoi = readExistingHouseDoi()
 
-const houseDoiLine = certDoi
-  ? ` Current house DOI ${certDoi}.`
-  : " House DOI is minted under prefix 10.83138 after CEO PASS."
+const houseDoiLine = certDoi ? ` Current house DOI ${certDoi}.` : ""
 const railBody = pdfServed
   ? `${EDITION} current (${EDITION_DATE}, Method v2.0). Live pages ${snap.live_pages}; cert-ready ${snap.cert_ready}. The v3 PDF is downloadable here.${houseDoiLine} The earlier Zenodo deposit ${ZENODO_VERSION_DOI} is an earlier deposited edition only.`
   : `${EDITION} current (${EDITION_DATE}, Method v2.0). Live pages ${snap.live_pages}; cert-ready ${snap.cert_ready}. The v3 PDF is in preparation.${houseDoiLine} The earlier Zenodo deposit ${ZENODO_VERSION_DOI} is an earlier deposited edition only.`
