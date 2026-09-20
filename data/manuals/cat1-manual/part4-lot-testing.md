@@ -18,16 +18,15 @@ The Program Operator may raise a specific product's risk tier on documented rati
 
 ## 4.2 The Testing-Frequency Matrix
 
-This is the starting grid. The assigned schedule is written after the lab-informed review in §4.9.
+This is the starting grid. The assigned schedule is written after the lab-informed review in §4.9. Certified is the only status that carries the mark; Remediation carries no mark and is not listed as certified while any analyte is above its published limit.
 
-| Certification Status | High-Risk | Moderate-Risk | Lower-Risk | Hold & Release | Independent Sampling |
+| Certification status | High-Risk | Moderate-Risk | Lower-Risk | Hold & Release | Independent Sampling |
 |---|---|---|---|---|---|
-| Status A | Monthly | Quarterly | Quarterly | Not required | Yes (per schedule) |
-| Status B | Every lot or monthly (more frequent) | Monthly | Monthly | Recommended | Yes, monthly |
-| Status C — Low (151–175%) | Every lot | Every lot | Every lot | Mandatory | Brand's own accredited lab permitted, subject to audit |
-| Status C — High (176–200%) | Every lot | Every lot | Every lot | Mandatory | Operator-directed third-party sampling |
+| Certified | Monthly | Quarterly | Quarterly | Not required | Yes (per schedule) |
+| Remediation — Tier 2 exceedance | Every lot or monthly (more frequent) | Monthly | Monthly | Mandatory | Brand's own accredited lab permitted, subject to audit |
+| Remediation — Tier 1 exceedance | Every lot | Every lot | Every lot | Mandatory | Operator-directed third-party sampling |
 
-A lot at MaxPoL 101–150% that carries any Tier 1 metal above 100% is Status C: every lot, mandatory hold-and-release, independent sampling.
+Reaction severity follows the toxicological tier of the exceedance and the brand's conduct, never an allowed overage. Any Tier 1 exceedance, any quantifiable Cr(VI), or a data-integrity or concealment concern takes the every-lot, Operator-directed row regardless of risk tier.
 
 ## 4.3 Baseline
 
@@ -37,13 +36,11 @@ Qualifying prior ISO/IEC 17025 data from the preceding twelve months may credit 
 
 ## 4.4 Surveillance by status
 
-Status A: High-Risk monthly with independent sampling; Moderate- and Lower-Risk quarterly. A Tier 1 result at or above 80% PoL triggers confirmatory testing, Operator notice, and speciation where applicable.
+Certified: High-Risk monthly with independent sampling; Moderate- and Lower-Risk quarterly. A Tier 1 result at or above 80% of its applicable limit triggers confirmatory testing, Operator notice, and speciation where applicable.
 
-Status B: High-Risk every lot or monthly, whichever is more frequent; Moderate- and Lower-Risk monthly with independent sampling.
+Remediation: the product carries no mark and is not listed as certified. Corrective action is mandatory and surveillance is intensified. A Tier 2 exceedance takes elevated surveillance — every lot or monthly, whichever is more frequent, with mandatory hold-and-release; the brand's own accredited sampling is permitted, subject to audit. A Tier 1 exceedance, any quantifiable Cr(VI), or a concealment or data-integrity concern takes every-lot testing, mandatory hold-and-release, and Operator-directed third-party sampling. Return to Certified requires the product to meet 100% of every published limit across a run of consecutive lots set by the Program Operator, plus completed CAPA with verification of effectiveness.
 
-Status C: every lot, all risk tiers, mandatory hold-and-release. Low band: the brand's own accredited sampling is permitted, subject to audit. High band: Operator-directed third-party sampling. Exit requires five consecutive lots at A/B level and completed CAPA with verification of effectiveness.
-
-Status D: stop-ship, mark removal, CAPA within two business days, containment Immediate (within 48 hours). Reinstatement does not require a fresh baseline.
+Suspension: stop-ship, mark removal, CAPA within two business days, containment Immediate (within 48 hours). Reinstatement does not require a fresh baseline.
 
 ## 4.5 Reflex testing
 
@@ -67,7 +64,7 @@ Composite sampling on a lot basis, with a complete custody record. A custody bre
 
 ## 4.8 Decision rules
 
-Pass: (Result + MU) ≤ Limit. Fail: (Result − MU) > Limit. Borderline requires confirmatory action. Testing into compliance is prohibited.
+Pass: (Result + MU) ≤ Limit. Fail: (Result − MU) > Limit. Borderline requires confirmatory action before any status. A result at or below 100% of every published limit is eligible to be Certified; a result above any published limit is not certified and enters Remediation; a result above an applicable government legal limit, or a data-integrity failure, is a hard stop to Suspension. No percent-of-limit band above the limit keeps the mark. Testing into compliance is prohibited.
 
 ## 4.9 Lab-informed schedule
 
@@ -83,8 +80,8 @@ Fail conditions: LOQ above the published limit; missing Big-8 total; no required
 
 The program certifies only if there is at least 90% confidence the brand can remain in the program.
 
-Inputs: the three-lot baseline (worst lot, not the best); MaxPoL headroom; the lab-informed schedule inputs; documented pathway risk; whether the brand can actually run the assigned frequency; whether the brand can open and close CAPA on the published windows.
+Inputs: the three-lot baseline (worst lot, not the best); headroom to the published limit (not a knife-edge pass); the lab-informed schedule inputs; documented pathway risk; whether the brand can actually run the assigned frequency; whether the brand can open and close CAPA on the published windows.
 
 Decision owner: Program Operator.
 
-Fail conditions: a knife-edge baseline; a laboratory that cannot support the assigned schedule; a product that would enter only to be suspended; concealment or data-integrity doubt (Status D / E path). A one-lot pass that will fail the next surveillance cycle is not a certification.
+Fail conditions: a knife-edge baseline; a laboratory that cannot support the assigned schedule; a product that would enter only to be suspended; concealment or data-integrity doubt (Suspension / Revocation path). A one-lot pass that will fail the next surveillance cycle is not a certification.

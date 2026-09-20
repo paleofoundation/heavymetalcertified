@@ -55,7 +55,7 @@ The per-category occurrence figures and the derivation behind each limit are on 
 
 When mean intake already exceeds the tolerable value, the useful response is not another safe-dose claim but a push on the controllable sources, and nickel is largely controllable through sourcing and process control. The EU set its first binding nickel maximum levels in food in 2024, a risk-management response to the EFSA exceedance finding, with category limits ranging from 0.10 mg/kg for liquid infant formula to higher values for cereals and seaweed.
 
-HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computing an occurrence value only where no government sets one, and applies the program's 150% transitional allowance so a category can move onto the standard on a defined path to the firm limit. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure).
+HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computing an occurrence value only where no government sets one. Tiering sets how the program reacts to an exceedance, not any permission to exceed the limit; a product is certified only at or below its published limit, and above it, on any metal, it is not certified and carries no mark. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure).
 
 ## Findings that bear on Nickel
 
@@ -87,7 +87,7 @@ Nickel compounds are classified by IARC as Group 1 and by the US National Toxico
 
 ### How does HMTc set its nickel limit?
 
-HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computes an occurrence value only where no government regulates the cell, and applies a 150% transitional allowance so a category can move onto the standard on a defined path. A regulatory hard-stop blocks any product over a legal limit.
+HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computes an occurrence value only where no government regulates the cell. Tiering sets the reaction to an exceedance, not permission to exceed the limit; a product is certified only at or below its published limit. A regulatory hard-stop blocks any product over a legal limit.
 
 
 ## Evidence and sources

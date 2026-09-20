@@ -76,11 +76,11 @@ export function renderMatrix({ analytes, rows, tier1Labels = [], tier2Labels = [
   const legendRows = []
   if (tier1Labels.length)
     legendRows.push(
-      `<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:${ACCENT};white-space:nowrap">Tier 1</span><span style="font-size:12.5px;line-height:1.6;color:${MUTE}">${andList(tier1Labels)} are zero-tolerance: no transitional allowance applies to any value in those columns.</span>`,
+      `<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:${ACCENT};white-space:nowrap">Tier 1</span><span style="font-size:12.5px;line-height:1.6;color:${MUTE}">${andList(tier1Labels)} are zero-tolerance: any value above the limit removes the mark, at the most severe reaction.</span>`,
     )
   if (tier2Labels.length)
     legendRows.push(
-      `<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:${ACCENT};white-space:nowrap">Tier 2</span><span style="font-size:12.5px;line-height:1.6;color:${MUTE}">${andList(tier2Labels)} carry the program&rsquo;s 150% transitional allowance under a stated remediation plan.</span>`,
+      `<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:${ACCENT};white-space:nowrap">Tier 2</span><span style="font-size:12.5px;line-height:1.6;color:${MUTE}">${andList(tier2Labels)} are held to the same government limit; tiering sets the reaction to an exceedance, not permission to exceed it. Above the limit, on any metal, the product is not certified and carries no mark.</span>`,
     )
   const legend = legendRows.length
     ? `<div style="display:grid;grid-template-columns:auto minmax(0,1fr);gap:9px 12px;margin-top:16px;padding-top:15px;border-top:1px solid ${BORDER}">${legendRows.join("")}</div>`

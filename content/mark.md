@@ -11,7 +11,7 @@ snapshot:
 connections:
   - { label: "The standards a mark refers to", href: "/standards" }
   - { label: "Verify a mark on a pack", href: "/verify" }
-  - { label: "The five certification statuses", href: "/program/structure" }
+  - { label: "The certification statuses", href: "/program/structure" }
   - { label: "Apply for certification", href: "/apply" }
 rail_box:
   title: "Report a misuse"
@@ -72,15 +72,14 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Who may display it</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Mark usage is gated on certification status, per SKU. It is not a brand-level entitlement, and it does not survive a status change.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status A: Certified (Full)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status B: Transitional (mark withheld)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not, until Status A</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status C: Probation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status D: Suspension</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status E: Revocation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certified</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may display</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Remediation (applicant or corrective)</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Suspension</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Revocation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">In Confidential Remediation Track</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">may not</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Granted per</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">SKU, not brand</span></div>
   </div>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand must hold at least one SKU at Status&nbsp;A before any use of the mark is permitted. A product in the transitional band (Status&nbsp;B) does not display the mark until it returns to Status&nbsp;A, and products inside the Confidential Remediation Track may not display it: the Track protects the record, not the right to advertise.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand must hold at least one Certified SKU before any use of the mark is permitted. A product in Remediation does not display the mark, at any margin, on any metal, until it is Certified, and products inside the Confidential Remediation Track may not display it: the Track protects the record, not the right to advertise.</p>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Program Manual Part 2.5 &sect;6.1.</p>
 </section>
 
@@ -113,7 +112,7 @@ rail_box:
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Dropping and re-entry</h2>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand that pulls the mark during a bad period cannot quietly restore it on the first good lot. Without this rule, selective display would let a brand hide an exceedance and then present an unbroken certification record: the mark would signal luck rather than sustained compliance.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px;margin-bottom:16px">
-    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Re-entry to mark usage requires <strong style="font-weight:600">three consecutive passing lot results</strong> at Status&nbsp;A or&nbsp;B levels, and closure of any open CAPA associated with that SKU. This applies whether the mark came off voluntarily or by enforcement.</p>
+    <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Re-entry to mark usage requires <strong style="font-weight:600">three consecutive passing lot results</strong> at Certified levels, at or below every published limit, and closure of any open CAPA associated with that SKU. This applies whether the mark came off voluntarily or by enforcement.</p>
   </div>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Program Manual Part 2.5 &sect;6.3: anti-arbitrage.</p>
 </section>

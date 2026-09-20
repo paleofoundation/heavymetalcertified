@@ -6,7 +6,7 @@ description: "How a limit is set, how a product is tested against it, and what h
 snapshot:
   - { k: "Priority metals", v: "8" }
   - { k: "Analytes tested", v: "10" }
-  - { k: "Certification statuses", v: "5" }
+  - { k: "Certification statuses", v: "4" }
   - { k: "Baseline lots required", v: "3" }
 connections:
   - { label: "The subcategory standards register", href: "/standards" }
@@ -30,15 +30,15 @@ rail_box:
         <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Pb &middot; Cd &middot; iAs &middot; MeHg</span>
       </div>
       <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px">Carcinogenic with no established safe threshold, neurotoxic with no established safe threshold, or bioaccumulative with long biological half-lives in children. Any confirmed result above 100% of the limit escalates immediately.</p>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Variance available</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none</span></div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Overage allowed</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none</span></div>
     </div>
     <div style="background:#fffdfb;padding:19px">
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:10px">
         <span style="font-family:Lora,serif;font-size:20px;color:#2b1f1f">Tier 2</span>
         <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;background:#fdf4f3;border:1px solid #f2dcda;border-radius:2px;padding:3px 8px;white-space:nowrap">Ni &middot; Sn &middot; Al &middot; Cr</span>
       </div>
-      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px">Established tolerable daily intakes, shorter biological half-lives, or primarily acute rather than chronic toxicity. Controllable through sourcing and process.</p>
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Variance available</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">to 150%</span></div>
+      <p style="font-size:14px;line-height:1.7;color:#3f3a3a;margin:0 0 12px">Established tolerable daily intakes, shorter biological half-lives, or primarily acute rather than chronic toxicity. Controllable through sourcing and process. An exceedance still bars the mark and enters Remediation, at an elevated rather than immediate hard-stop reaction; the tier sets the reaction, never a permission to exceed a limit.</p>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Overage allowed</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">none</span></div>
     </div>
   </div>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch">Speciation upgrades chromium to Tier&nbsp;1 treatment when a credible hexavalent pathway exists. Cr(III) is an essential nutrient and is assumed in food; Cr(VI) is an IARC Group&nbsp;1 carcinogen by ingestion.</p>
@@ -135,8 +135,8 @@ rail_box:
 </section>
 
 <section id="statuses" style="margin-bottom:52px">
-  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The five statuses</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Defined in Program Manual Part 2.3. A status attaches to a product, not to a brand, and it is visible on the certificate.</p>
+  <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">The four statuses</h2>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Defined in Program Manual Part 2. A status attaches to a product, not to a brand, and it is visible on the certificate. Certified is the only status that carries the mark.</p>
   <div style="overflow-x:auto">
   <table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:42rem;border-collapse:collapse">
     <thead><tr style="background:#9f2727;color:#fff">
@@ -147,39 +147,33 @@ rail_box:
     </tr></thead>
     <tbody>
       <tr>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">A</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Certified (Full Compliance)</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Certified</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Full compliance</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">yes</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">At or below every value in the Master Limit Table, all ten analytes, native basis.</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">At or below every value in the Master Limit Table, all ten analytes, native basis, confirmed under the measurement-uncertainty rule.</td>
       </tr>
       <tr>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">B</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Transitional (mark withheld)</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no, until Status A</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">A Tier 2 metal up to 150% of limit, under Part 2.3 conditions, with a defined end date and corrective action. Tracked and flagged transitional in the register; the mark is not displayed until the product returns to Status A.</td>
-      </tr>
-      <tr>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">C</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Probation</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">suspended</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Confirmed Tier 1 exceedance, or transitional conditions unmet. Elevated surveillance applies.</td>
-      </tr>
-      <tr>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">D</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Suspension</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Remediation</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Not certified: applicant or corrective</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Mark usage withdrawn pending remediation. Reinstatement requires a completed CAPA with verified effectiveness, a run of consecutive compliant lots set by the Program Operator, and restored data integrity: not a fresh baseline.</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Any analyte above its published limit, or a new applicant not yet at 100%. Not a softer certification and not an allowed overage: no mark, not listed as certified. Corrective action and intensified surveillance apply: a Tier 1 exceedance draws the most severe reaction, a Tier 2 exceedance an elevated one. The Confidential Remediation Track is the confidential form of this status and is likewise unmarked.</td>
       </tr>
       <tr>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">E</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Revocation</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Suspension</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Certification halted: hard stop</td>
         <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
-        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Certification terminated. Concealment of a known exceedance is grounds.</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">A government legal-limit violation, a data-integrity failure, or failure to execute testing, CAPA, or directives. The mark is removed from all units and marketing. Reinstatement requires a completed CAPA with verified effectiveness, a run of consecutive compliant lots set by the Program Operator, and restored data integrity: not a fresh baseline.</td>
+      </tr>
+      <tr>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;white-space:nowrap;color:#2b1f1f;font-family:'IBM Plex Mono',monospace">Revocation</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#2b1f1f">Permanent termination</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#3f3a3a">no</td>
+        <td style="padding:13px 15px;vertical-align:top;border-bottom:1px solid #f2ece7;color:#736b6b;line-height:1.55">Willful misconduct, data fraud, concealment of a known exceedance, or persistent unremediated suspension. Re-entry by full re-application only.</td>
       </tr>
     </tbody>
   </table>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Transitional handling is available on Tier&nbsp;2 metals only, up to 150% of the applicable limit, under the conditions in Part 2.3; during it the product is tracked and flagged transitional in the register, and the mark is withheld until the product returns to Status A. The mark is never displayed above the published limit. No transitional exceedance exists for a Tier&nbsp;1 metal at any margin.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">The mark is never displayed above the published limit, on any metal, at any margin. There is no transitional band and no allowed overage: a product above any published limit is not Certified and carries no mark. Tiering sets how hard and fast the program reacts to an exceedance, not permission to exceed it: a Tier&nbsp;1 exceedance draws the most severe reaction, a Tier&nbsp;2 exceedance an elevated one.</p>
 </section>
 
 <section id="surveillance" style="margin-bottom:52px">
@@ -188,14 +182,14 @@ rail_box:
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:16px">
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Baseline before any status</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">3 lots minimum</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Qualifying prior accredited data</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">credits up to 2 lots</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status A</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">routine protocol</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status B</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">elevated protocol</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Status C</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">probation protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Certified</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">routine protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Remediation: Tier 2 exceedance</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">elevated protocol</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Remediation: Tier 1 exceedance</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">every-lot, hold-and-release</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Speciation</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">on reflex trigger</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px dotted #f2ece7"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">Chain of custody</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;white-space:nowrap">documented per lot</span></div>
   </div>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A brand that already runs a mature, accredited lot-testing program does not repeat work it has already done. Up to two of the three baseline lots may be credited to qualifying prior results, and the baseline is completed with a single new full-panel lot that the program sizes and runs. This is the expedited baseline. Prior results qualify only where they come from an ISO/IEC 17025-accredited laboratory, are quantified at or below the program's reporting limit, were produced within the preceding twelve months, are supplied as structured data under chain of custody, are expressed in or convertible to the product's native basis, and are credited only for the analytes they actually measured. The completing lot is sampled independently and run across the full panel, including every analyte the prior data did not cover, so no analyte enters the baseline on a brand's word alone; where a single analyte rests on that one completing lot, the next two routine surveillance lots confirm it. The credit is available at ordinary program entry, not on the confidential remediation track.</p>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Surveillance intensity follows status: routine for A, elevated for B, probation protocol for C. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Surveillance intensity follows status: routine while Certified; in Remediation it intensifies with the tier of the exceedance: elevated for a Tier 2 exceedance, every-lot with mandatory hold-and-release for a Tier 1 exceedance. Reflex testing triggers add speciation when a result or a formulation change indicates a credible pathway, and sampling follows a documented chain of custody so a result can survive challenge years later.</p>
   <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
     <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">The readiness and corrective-action pathways exist so a brand that finds a problem is better off reporting it than concealing it. While a self-reported item is open and on schedule, its register visibility and retailer disclosure follow the published status rules; a released lot confirmed above its applicable limit on product represented as certified is never shielded from a required register status change or from retailer, withdrawal, or recall action. A brand that conceals a known exceedance loses its certificate.</p>
   </div>

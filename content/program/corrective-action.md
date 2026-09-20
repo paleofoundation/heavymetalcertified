@@ -13,7 +13,7 @@ snapshot:
   - { k: "Concealment", v: "revocation" }
 connections:
   - { label: "Readiness (pre-certification)", href: "/program/readiness" }
-  - { label: "The five certification statuses", href: "/program/structure" }
+  - { label: "The certification statuses", href: "/program/structure" }
   - { label: "What happens to your data", href: "/what-happens-to-your-data" }
   - { label: "Brand portal", href: "/portal" }
 rail_box:
@@ -38,7 +38,7 @@ The effect of a nonconformity on the certificate and the mark is not one blanket
 | Yes, a released lot is confirmed above its applicable published limit | Yes, the affected product is represented as certified | The mark may not represent that product as conforming: the affected certificate and mark are handled under the published status rules, and any required legal, regulatory, retailer, withdrawal, or recall action remains fully applicable. |
 | Yes, a released lot is confirmed above its applicable published limit | No, the product is no longer represented as certified | The withdrawal has already occurred for representation purposes; the corrective-action record documents the cause and the verified correction, and any required withdrawal or recall action still applies. |
 
-The applicable published limit, and how any transitional handling for a Tier-2 metal is treated, are defined by the five certification statuses and the status rules under [how limits are derived](/program/structure). Corrective action follows those rules; it does not create an exception to them, and it does not hold the mark on a product represented as conforming while it is confirmed above the limit that applies to it.
+The applicable published limit, and how a Tier-2 exceedance is handled in Remediation, are defined by the certification statuses and the status rules under [how limits are derived](/program/structure). Corrective action follows those rules; it does not create an exception to them, and it does not hold the mark on a product represented as conforming while it is confirmed above the limit that applies to it.
 
 ## What qualifies
 
@@ -48,7 +48,7 @@ The process is for findings a brand brings forward, and for trends that have not
 |---|---|---|
 | Brand identifies a trend before any exceedance | Yes | The intended case, caught by the brand's own surveillance before a limit was crossed |
 | Brand identifies a Tier-2 finding and reports it | Yes | Handled under the published status rules while the corrective action runs |
-| Brand identifies a Tier-1 exceedance and reports it | Partial | The process governs the record and the correction; the mark is still handled under the status rules, since Tier-1 toxics carry no transitional allowance |
+| Brand identifies a Tier-1 exceedance and reports it | Partial | The process governs the record and the correction; the mark is still handled under the status rules: a Tier-1 exceedance draws the most severe reaction, and no metal has an allowed overage |
 | Supplier or process change with a known contamination risk | Yes | Reportable before a result exists; opening early is cheaper than opening after a failed lot |
 | Program surveillance finds the exceedance first | No | The process rewards disclosure; a finding the program made is handled through the standard status process |
 | A known exceedance is not reported | No | Grounds for revocation; this is the behavior the process exists to make irrational |

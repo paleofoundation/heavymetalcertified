@@ -64,7 +64,7 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 **Cat-1 Manual v3 (locked thin TOC):**
 
 1. `<h2 id="principles">` **Governing Principles** — the five co-equal objectives (`docs/governance/hmtc-governing-principles.md`).
-2. `<h2 id="lifecycle">` **Program lifecycle and statuses** — A–E, MaxPoL, baseline.
+2. `<h2 id="lifecycle">` **Program lifecycle and statuses** — Certified | Remediation | Suspension | Revocation, baseline.
 3. `<h2 id="instruments">` **Mark, MU, CAPA, remediation, ratchet** — current SoT, short.
 4. `<h2 id="lot-testing">` **Lot Testing Schedule** — risk tiers, baseline, reflex, speciation, sampling, lab-informed schedule, 90% stay-in-program gate.
 5. `<h2 id="register">` **Cat-1 Standards Register** — generated from compiled corpus + page `cert_doi` + claim-surface. Incomplete cells are HOLD, not cert-ready.

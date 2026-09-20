@@ -1,97 +1,67 @@
-# SCORECARD — CAT1-MANUAL-V3-BUILD-MINT-1
+# SCORECARD — CAT1-STATUS-V2-KILL-MAXPOL-1
 
-Manual v3 for `/manuals/infant-and-child-foods`. Method v2 governing instrument.
-House mint is **USER-RUN** after CEO PASS. This PR does not invent or live-deposit a DOI.
+Program-wide replacement of the MaxPoL **A–E certification ladder** with the Method v2
+status lifecycle. **HOLD:** no DataCite mint runs until CEO/Elon PASS on the live page + this scorecard.
 
-Governing Principles cited from `docs/governance/hmtc-governing-principles.md`
-(cert-side mirror; the HMI path 404'd and no org copy was found). Five co-equal
-objectives: drive down contamination; protect consumers; protect brands who enter;
-remain legally defensible; become the de facto standard.
+## Explicit supersession (not a surprise)
 
-## KEEP / CUT
+The prior **PR #96** (`SCORECARD — CAT1-MANUAL-V3-BUILD-MINT-1`) deliberately **KEPT**
+"statuses A–E, MaxPoL, baseline." **This order reverses that decision.** MaxPoL % bands
+(101–150 Transitional, 151–200 Probation, >200 Suspension-by-%) are **RETIRED**. A brand is
+Certified only at ≤100% of every published limit; no certification and no mark above the limit.
 
-| Item | Decision |
-|---|---|
-| Five Governing Principles | KEEP — Part 1 / `#principles` |
-| Program lifecycle / statuses A–E, MaxPoL, baseline | KEEP — `#lifecycle` |
-| Mark / MU / CAPA / remediation / ratchet (short, current SoT) | KEEP — `#instruments` |
-| Lot Testing Schedule rewrite (tiers × status, baseline, reflex, speciation, CoC) | KEEP — `#lot-testing` |
-| Lab-informed schedule (panel / LOQ / MU / capability) | KEEP — hard section, Karen 2026-09-19 |
-| 90% stay-in-program certification gate | KEEP — hard section, Karen 2026-09-19 |
-| Cat-1 Standards Register (live pages + compiled orphans) | KEEP — generated from SoT, `#register` |
-| Method v2 / CLAUDE.md Part 19 locks | KEEP — gov_floor \| disclosed read_across; species ≤ parent; Big-8 totals; pathway speciation; blank = HOLD |
-| Exposé / ROI / scenario essays | CUT |
-| Long audience reading guides | CUT |
-| Part 2.5 HMI how-to nest | CUT |
-| Recognition fluff | CUT |
-| Reprint of 15× per-analyte master-table walls | CUT — subcategory pages remain the live derivation |
-| V1 Zenodo dump as current | CUT — retired; earlier deposited edition only |
-| CC BY | CUT — © All rights reserved (ICS / Heavy Metal Certified) |
-| Chromium / Skia PDF | CUT — `@react-pdf/renderer` only |
-| Stale hero “9 subcategories / 9 analytes / Strictest government ML / 2026-08-06” | CUT — snapshot is Live pages / Cert-ready / Method v2.0 / Edition v3 · 2026-09-19 |
+## Before → after: the status model
 
-## Cat-1 DOI inventory
-
-Live `/standards/` pages (262-batch house prefix). All nine are cert-ready
-(complete claim-surface + house `cert_doi`). Incomplete cells are not counted.
-
-| Standard | Status | cert_doi |
+| | Before (MaxPoL ladder — retired) | After (Method v2) |
 |---|---|---|
-| Infant formula (powder) | cert-ready | `10.83138/hmtc.std.1.infant-formula-powder` |
-| Infant formula (ready-to-feed, liquid) | cert-ready | `10.83138/hmtc.std.1.infant-formula-ready-to-feed` |
-| Baby cereals & dry grain products | cert-ready | `10.83138/hmtc.std.1.baby-cereals-dry` |
-| Fruit purées | cert-ready | `10.83138/hmtc.std.1.fruit-purees` |
-| Non-root vegetable purées | cert-ready | `10.83138/hmtc.std.1.non-root-vegetable-purees` |
-| Root-vegetable purées | cert-ready | `10.83138/hmtc.std.1.root-vegetable-purees` |
-| Mixed meals (meat & grain combinations) | cert-ready | `10.83138/hmtc.std.1.mixed-meals` |
-| Fruit juice (not canned) | cert-ready | `10.83138/hmtc.std.1.fruit-juice-not-canned` |
-| Teething biscuits & finger snacks | cert-ready | `10.83138/hmtc.std.1.teething-and-snacks` |
-| mixed-meals-rice-containing (compiled only) | HOLD | — compiled record not joined to a live `/standards/` page |
+| Metric | `MaxPoL` = max percent-of-limit drives status | No status metric; **Certified = every analyte ≤ 100% of its published limit** (gov_floor \| disclosed read_across), under the MU decision rule |
+| A | Certified — MaxPoL ≤ 100% | **Certified** — mark permitted |
+| B | Transitional (mark withheld) — 101–150%, Tier 2 only | folded into **Remediation** — *no mark, not certified* |
+| C | Probation — 151–200% (Low 151–175 / High 176–200) | folded into **Remediation** — reaction severity by tier, not by % band |
+| D | Suspension — >200% MaxPoL or hard-stop | **Suspension** — hard-stop only (legal-limit violation, data-integrity failure, directive failure) |
+| E | Revocation | **Revocation** — willful / concealment / persistent |
+| Tiering | Tier 2 "carries a 150% transitional allowance" (permission to exceed) | Tier 1/Tier 2 set **reaction severity only** — never permission to exceed a limit and keep the mark |
+| Confidential Remediation Track | ambiguous vs. status | **explicitly NON-certified, unmarked** (kept) |
 
-Manual v3 current DOI: **not minted**. `cert_doi: null`.
-Suffix locked: `hmtc.manual.infant-and-child-foods`.
-Earlier deposited edition (retired): `10.5281/zenodo.20771543`
-(concept `10.5281/zenodo.20270511`). V1 never certified a brand.
+## What was kept (per order)
 
-## Mint readiness
+- **Method v2** limit-setting: government floor \| disclosed read-across. No new ppb invented. No Zenodo reprint.
+- **Certified = 100% of published claim limits** under the **MU decision rule** (Result ± MU vs limit).
+- **Lot Testing**: risk tiers, **lab-informed schedule assignment** (§4.9), **90% stay-in-program gate** (§4.10), totals-always, pathway speciation (species ≤ parent), reflex triggers.
+- **Suspension / Revocation** keep their teeth — reworded off MaxPoL onto hard-stop / willful / concealment.
+- **Confidential Remediation Track** — retained, restated as expressly non-certified (mark withheld).
 
-| Gate | Result |
-|---|---|
-| No ALL-CAPS TODO / scaffolding | PASS |
-| © All rights reserved (ICS / Heavy Metal Certified) | PASS |
-| APA cite; `doi.org` only when a house DOI is set | PASS (`apaCite(null)` has no doi.org) |
-| react-pdf scholarly PDF, never Chromium | PASS (`react-pdf` producer; no Skia/Chromium) |
-| Descriptive suffix from citation_title/slug | PASS `hmtc.manual.infant-and-child-foods` |
-| No invented house DOI | PASS |
-| Zenodo not in `OWN_DEPOSIT_FIELDS` on the current page | PASS (`earlier_edition_doi` only) |
-| Write-back path (page + manifest + version-history; generator re-reads `10.83138/`) | PASS |
-| Live credentials in this environment | FAIL — absent |
-| **Mint status** | **USER-RUN** after content PASS |
+## Files flipped (407 tracked files vs `origin/main`)
 
-### Dry-run notes
+**Authored source (manual):** `data/manuals/cat1-manual/part2-program.md`, `part4-lot-testing.md`, `part5-backmatter.md` (part1 was already clean).
+**Cornerstone / content:** `content/program/structure.md` (A–E table → four statuses; "Variance to 150%" → "Overage allowed: none"), `content/mark.md`, `content/portal.md`, `content/program/corrective-action.md`, `content/index.md`.
+**Generators (fixed → regenerated):** `tools/lib/manual-v3-page.mjs`, `tools/lib/manual-page.mjs`, `tools/build-category-standard-pages.mjs`, `tools/build-cat1-standard-pages.mjs`, `tools/build-cert-analyte-pages.mjs`, `tools/build-manuals-page.mjs`, `tools/build-cat17-manual-pdf.mjs`.
+**Audit tool (flipped to enforce v2):** `tools/audit-cat1-manual-consistency.mjs` — GOLDEN now asserts the four-status model; FORBIDDEN now rejects `MaxPoL`, `Status A–E`, `150% transitional`, `101–150 / 151–175 / 176–200`, `Transitional (mark withheld)`, `probation`, plus a cross-source check on `structure.md` + `hmtc-primer.md`.
+**Data:** `data/method/method-v2.json`, `data/analytes/analytes.json` (8 per-metal treatments), `data/why-limited/nickel.json`, `aluminum.json`, `data/standards/{cat17-manual,cat24-pages,grains-pages,seafood-pages}.json`.
+**Briefings:** `data/briefings/hmtc-primer.md`, `defense-counsel-briefing.md`.
+**PDF:** `content/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf` regenerated from the rewritten parts (verified: v2 language, no retired ladder).
+**Regenerated output:** 351 `content/standards/*.md`, 9 `content/analytes/*.md`, 6 `content/manuals/*.md`, 2 `content/briefings/*.md`, 2 `content/why-we-limit/*.md`, plus `content/static/data/*.json` exports and home-stats.
+**Docs:** `docs/design-canon/MANUAL-PAGE.md`.
 
-```
-node tools/mint-dois.mjs --types=manuals --slug=infant-and-child-foods
-```
+## MaxPoL residual count
 
-Ran: eligible total 1 (`manuals=1`). `--emit` with prefix only (not live)
-produced `10.83138/hmtc.manual.infant-and-child-foods`, title from
-`citation_title`, rights All rights reserved, `IsNewVersionOf`
-`10.5281/zenodo.20771543`. Payload deleted; not committed. No credentials →
-no deposit.
+`MaxPoL` / `Status A–E` / `150% transitional` / `transitional allowance` / `Transitional (mark withheld)` / `101–150|151–175|176–200` / cert-ladder `probation` in rendered surfaces + authored source: **0**.
 
-Live USER-RUN steps: `docs/mint-manual-v3-user-run.md`
-(`DATACITE_USER` / `DATACITE_PASSWORD` / `DATACITE_PREFIX=10.83138` /
-`DATACITE_MODE=live` / Fabrica `VAJU.HDAWAI`).
+- One retained string: `data/source-panels/briefings/after-palmquist.json` — a **historical citation-provenance note** ("printed pp. 326–329 (probation, reflex testing, custody)") describing which pages of the earlier printed manual were read. It is a citation trail, **not a cert-ladder assertion**; rewording it would misstate the citation. Flagged, intentionally kept.
+- `tools/audit-cat1-manual-consistency.mjs` contains these terms **as its forbidden-pattern list** (that is the guard, by design).
 
-## Gates run in this PR
+## Remediation is still NON-certified
 
-| Gate | Exit |
-|---|---|
-| `node tools/design-lint.mjs` | 0 |
-| `node tools/audit-cat1-manual-consistency.mjs` | 0 |
-| `node tools/audit-cat1-manual-pdf.mjs` | 0 |
-| `node --test tools/tests/cat1-manual-v3.test.mjs` | 0 |
-| citationMetadata manuals ScholarlyArticle tests | 0 |
-| `npm run check:v3` (full site) | 1 — crashed on unrelated `/` hover (`#what p a` intercepted by search overlay). Not a Manual v3 assertion. |
-| Focused rendered gate `/manuals/infant-and-child-foods` | 0 — 30/30 v3-acceptance assertions pass, including thin-TOC ids, retired `#scope/#matrix/#hard` absent, Zenodo earlier-edition only, `citation_doi` absent |
+Confirmed in `part2-program.md §2.4/§2.7`, `structure.md`, `mark.md`, `portal.md`, `content/manuals/infant-and-child-foods.md`: Remediation (incl. the Confidential Remediation Track) carries **no mark**, is **not listed as certified**, at any margin, on any metal.
+
+## No mint
+
+`tools/mint-dois.mjs` / `tools/mint-queue.mjs` **NOT run**. No DataCite deposit, no ledger write. Held for PASS on the live page + this scorecard.
+
+## PR mechanics
+
+Branch `cat1-status-v2-kill-maxpol` is cut from **`origin/main`** (the true live tip, which already contains the 258-standard DataCite mint write-backs and the prior v3 work). `mint-live-run` was **not** used as the base — it is 10 commits behind `origin/main`, so a PR from it would have reverted the mint write-backs + PR #93–96. The diff is therefore **only this status rewrite and its regeneration** — no local WIP is uploaded.
+
+## Validation
+
+`audit-cat1-manual-consistency` PASS · `npm run prebuild` PASS (terminology-lint, method-drift-lint, firewall-cert-lint, claim-discipline-lint, panel-coherence-lint, pdf-producer-lint, design-lint, dedash `--check`) · all edited JSON valid.

@@ -4,8 +4,8 @@
   "totals": {
     "records": 323,
     "complete": 265,
-    "registered": 4,
-    "ready": 4,
+    "registered": 255,
+    "ready": 255,
     "empty_cells": 876,
     "claim_empty_cells": 174,
     "incomplete_records": 58,
@@ -19,9 +19,9 @@
         {
           "slug": "baby-lotion-cream",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -29,14 +29,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-lotion-cream"
         },
         {
           "slug": "baby-oil",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -44,14 +44,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-oil"
         },
         {
           "slug": "baby-powder-cornstarch",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -59,14 +59,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-powder-cornstarch"
         },
         {
           "slug": "baby-shampoo-body-wash",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -74,14 +74,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-shampoo-body-wash"
         },
         {
           "slug": "baby-sunscreen-chemical",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -89,14 +89,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-sunscreen-chemical"
         },
         {
           "slug": "baby-sunscreen-mineral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -104,14 +104,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-sunscreen-mineral"
         },
         {
           "slug": "baby-talcum-powder",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -119,14 +119,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-talcum-powder"
         },
         {
           "slug": "baby-wipes",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -134,14 +134,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.baby-wipes"
         },
         {
           "slug": "childrens-lip-balm-mineral-bearing",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -149,14 +149,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.childrens-lip-balm-mineral-bearing"
         },
         {
           "slug": "childrens-lip-balm-plain",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -164,14 +164,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.childrens-lip-balm-plain"
         },
         {
           "slug": "childrens-makeup",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -179,14 +179,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.childrens-makeup"
         },
         {
           "slug": "childrens-nail-polish",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -194,14 +194,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.childrens-nail-polish"
         },
         {
           "slug": "diaper-cream-non-zno",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -209,14 +209,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.diaper-cream-non-zno"
         },
         {
           "slug": "diaper-cream-zno",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -224,14 +224,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.diaper-cream-zno"
         },
         {
           "slug": "face-paint",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -239,14 +239,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.face-paint"
         },
         {
           "slug": "toothpaste",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -254,12 +254,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.2.toothpaste"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 32,
       "claim_empty_total": 0
@@ -484,9 +484,9 @@
         {
           "slug": "coffee-ready-to-drink",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -494,14 +494,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.5.coffee-ready-to-drink"
         },
         {
           "slug": "coffee",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -510,7 +510,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.5.coffee"
         },
         {
           "slug": "fermented-beverages-non-tea-based",
@@ -541,9 +541,9 @@
         {
           "slug": "flavored-waters",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -552,7 +552,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.5.flavored-waters"
         },
         {
           "slug": "fruit-juices-apple-containing",
@@ -900,99 +900,99 @@
         {
           "slug": "canned-seafood",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.canned-seafood"
         },
         {
           "slug": "cephalopods",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg"
           ],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.cephalopods"
         },
         {
           "slug": "fish-freshwater",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg"
           ],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.fish-freshwater"
         },
         {
           "slug": "fish-marine-non-predatory",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg"
           ],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.fish-marine-non-predatory"
         },
         {
           "slug": "fish-marine-predatory",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.fish-marine-predatory"
         },
         {
           "slug": "seaweed-kelp-foods",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg"
           ],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.seaweed-kelp-foods"
         },
         {
           "slug": "shellfish",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.6.shellfish"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 4,
       "claim_empty_total": 0
@@ -1120,9 +1120,9 @@
         {
           "slug": "car-seats",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1130,14 +1130,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.car-seats"
         },
         {
           "slug": "clasps-fasteners-infant-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1145,14 +1145,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.clasps-fasteners-infant-products"
         },
         {
           "slug": "cribs-and-bassinets",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1160,14 +1160,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.cribs-and-bassinets"
         },
         {
           "slug": "high-chairs-and-booster-seats",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1175,14 +1175,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.high-chairs-and-booster-seats"
         },
         {
           "slug": "infant-carriers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1190,7 +1190,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.infant-carriers"
         },
         {
           "slug": "infant-clothing",
@@ -1213,9 +1213,9 @@
         {
           "slug": "play-yards-and-gates",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1223,14 +1223,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.play-yards-and-gates"
         },
         {
           "slug": "strollers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1238,14 +1238,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.strollers"
         },
         {
           "slug": "swings-and-bouncers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1253,14 +1253,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.swings-and-bouncers"
         },
         {
           "slug": "walkers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1268,7 +1268,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.10.walkers"
         }
       ],
       "complete": false,
@@ -1518,9 +1518,9 @@
         {
           "slug": "body-hand-leave-on-skin-care",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1528,14 +1528,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.body-hand-leave-on-skin-care"
         },
         {
           "slug": "deodorants",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1543,14 +1543,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.deodorants"
         },
         {
           "slug": "dusting-powder-cornstarch-adult",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1558,14 +1558,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.dusting-powder-cornstarch-adult"
         },
         {
           "slug": "dusting-talc-powders-adult",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1573,14 +1573,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.dusting-talc-powders-adult"
         },
         {
           "slug": "eye-makeup",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1588,14 +1588,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.eye-makeup"
         },
         {
           "slug": "face-neck-leave-on-skin-care",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1603,14 +1603,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.face-neck-leave-on-skin-care"
         },
         {
           "slug": "fragrance-preparations",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1618,14 +1618,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.fragrance-preparations"
         },
         {
           "slug": "leave-on-hair-preparations",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1633,14 +1633,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.leave-on-hair-preparations"
         },
         {
           "slug": "leave-on-preparations-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1648,14 +1648,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.leave-on-preparations-other"
         },
         {
           "slug": "lipstick",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1663,14 +1663,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.lipstick"
         },
         {
           "slug": "makeup-body-paints-bases-fixatives",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1678,14 +1678,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.makeup-body-paints-bases-fixatives"
         },
         {
           "slug": "makeup-foundation-powders-blush",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1693,14 +1693,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.makeup-foundation-powders-blush"
         },
         {
           "slug": "manicuring-preparations-leave-on",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1708,14 +1708,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.manicuring-preparations-leave-on"
         },
         {
           "slug": "permanent-hair-dyes-tints",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1723,14 +1723,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.permanent-hair-dyes-tints"
         },
         {
           "slug": "sun-suntan-mineral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1738,14 +1738,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.sun-suntan-mineral"
         },
         {
           "slug": "sun-suntan-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1753,7 +1753,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.sun-suntan-products"
         },
         {
           "slug": "tattoo-inks",
@@ -1780,9 +1780,9 @@
         {
           "slug": "traditional-eye-cosmetics",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1790,7 +1790,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.13.traditional-eye-cosmetics"
         }
       ],
       "complete": false,
@@ -1807,9 +1807,9 @@
         {
           "slug": "bar-bath-soap",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1817,14 +1817,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.bar-bath-soap"
         },
         {
           "slug": "body-wash-shower-gel",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1832,14 +1832,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.body-wash-shower-gel"
         },
         {
           "slug": "conditioner-adult-rinse-out",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1847,14 +1847,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.conditioner-adult-rinse-out"
         },
         {
           "slug": "deep-conditioning-treatments-rinse-off",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1862,14 +1862,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.deep-conditioning-treatments-rinse-off"
         },
         {
           "slug": "exfoliants-scrubs",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1877,14 +1877,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.exfoliants-scrubs"
         },
         {
           "slug": "facial-cleansers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1892,14 +1892,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.facial-cleansers"
         },
         {
           "slug": "hair-dye-rinse-off",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1907,14 +1907,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.hair-dye-rinse-off"
         },
         {
           "slug": "hair-removal-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1922,14 +1922,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.hair-removal-products"
         },
         {
           "slug": "hand-soap",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1937,14 +1937,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.hand-soap"
         },
         {
           "slug": "rinse-off-preparations-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1952,14 +1952,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.rinse-off-preparations-other"
         },
         {
           "slug": "shampoo-adult",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1967,14 +1967,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.shampoo-adult"
         },
         {
           "slug": "shaving-cream-gel-foam",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -1982,12 +1982,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.14.shaving-cream-gel-foam"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 24,
       "claim_empty_total": 0
@@ -1999,9 +1999,9 @@
         {
           "slug": "douches-vaginal-irrigation",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2009,14 +2009,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.douches-vaginal-irrigation"
         },
         {
           "slug": "feminine-deodorants",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2024,14 +2024,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.feminine-deodorants"
         },
         {
           "slug": "feminine-wipes",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2039,14 +2039,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.feminine-wipes"
         },
         {
           "slug": "intimate-washes-cleansers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2054,14 +2054,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.intimate-washes-cleansers"
         },
         {
           "slug": "menstrual-cups",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2069,14 +2069,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.menstrual-cups"
         },
         {
           "slug": "menstrual-discs",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2084,14 +2084,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.menstrual-discs"
         },
         {
           "slug": "menstrual-intimate-products-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2099,14 +2099,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.menstrual-intimate-products-other"
         },
         {
           "slug": "menstrual-pads",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2114,7 +2114,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.menstrual-pads"
         },
         {
           "slug": "menstrual-tampons",
@@ -2134,9 +2134,9 @@
         {
           "slug": "period-underwear-reusable-garments",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2144,12 +2144,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.15.period-underwear-reusable-garments"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 20,
       "claim_empty_total": 0
@@ -2161,9 +2161,9 @@
         {
           "slug": "supplements-algae-seaweed-based",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2171,14 +2171,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-algae-seaweed-based"
         },
         {
           "slug": "supplements-amino-acids-isolates",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2186,14 +2186,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-amino-acids-isolates"
         },
         {
           "slug": "supplements-bars-labeled",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2201,14 +2201,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-bars-labeled"
         },
         {
           "slug": "supplements-botanicals-herbs",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2216,14 +2216,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-botanicals-herbs"
         },
         {
           "slug": "supplements-clay-mineral-earth",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2231,14 +2231,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-clay-mineral-earth"
         },
         {
           "slug": "supplements-enzymes",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2246,14 +2246,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-enzymes"
         },
         {
           "slug": "supplements-greens-superfood",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2261,14 +2261,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-greens-superfood"
         },
         {
           "slug": "supplements-mushroom-fungal",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2276,14 +2276,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-mushroom-fungal"
         },
         {
           "slug": "supplements-oil-based",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2291,14 +2291,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oil-based"
         },
         {
           "slug": "supplements-oral-liquids-droppers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2306,14 +2306,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-liquids-droppers"
         },
         {
           "slug": "supplements-oral-liquids-shots",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2321,14 +2321,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-liquids-shots"
         },
         {
           "slug": "supplements-oral-liquids-syrups",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2336,14 +2336,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-liquids-syrups"
         },
         {
           "slug": "supplements-oral-liquids-tinctures",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2351,14 +2351,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-liquids-tinctures"
         },
         {
           "slug": "supplements-oral-solids-capsules",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2366,14 +2366,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-capsules"
         },
         {
           "slug": "supplements-oral-solids-effervescent",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2381,14 +2381,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-effervescent"
         },
         {
           "slug": "supplements-oral-solids-gummies",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2396,14 +2396,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-gummies"
         },
         {
           "slug": "supplements-oral-solids-lozenges",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2411,14 +2411,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-lozenges"
         },
         {
           "slug": "supplements-oral-solids-powders",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2426,14 +2426,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-powders"
         },
         {
           "slug": "supplements-oral-solids-softgels",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2441,14 +2441,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-softgels"
         },
         {
           "slug": "supplements-oral-solids-tablets",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2456,14 +2456,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-oral-solids-tablets"
         },
         {
           "slug": "supplements-probiotics",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2471,14 +2471,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-probiotics"
         },
         {
           "slug": "supplements-protein-collagen-powders",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2486,14 +2486,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-protein-collagen-powders"
         },
         {
           "slug": "supplements-teas-labeled",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2501,14 +2501,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-teas-labeled"
         },
         {
           "slug": "supplements-vitamin-mineral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2516,12 +2516,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.16.supplements-vitamin-mineral"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 48,
       "claim_empty_total": 0
@@ -2533,9 +2533,9 @@
         {
           "slug": "pet-chews-dental",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2543,14 +2543,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-chews-dental"
         },
         {
           "slug": "pet-food-canned-wet",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2558,14 +2558,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-canned-wet"
         },
         {
           "slug": "pet-food-dry-kibble",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2573,14 +2573,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-dry-kibble"
         },
         {
           "slug": "pet-food-fermentation-derived-protein",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2588,14 +2588,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-fermentation-derived-protein"
         },
         {
           "slug": "pet-food-fish-marine-protein",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2603,14 +2603,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-fish-marine-protein"
         },
         {
           "slug": "pet-food-freeze-dried",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2618,14 +2618,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-freeze-dried"
         },
         {
           "slug": "pet-food-raw",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2633,14 +2633,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-raw"
         },
         {
           "slug": "pet-food-semi-moist",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2648,14 +2648,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-food-semi-moist"
         },
         {
           "slug": "pet-milk-replacers-specialty-liquids",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -2664,14 +2664,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-milk-replacers-specialty-liquids"
         },
         {
           "slug": "pet-toppers-mixers-broths",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2679,14 +2679,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-toppers-mixers-broths"
         },
         {
           "slug": "pet-treats-snacks",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2694,12 +2694,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.17.pet-treats-snacks"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 23,
       "claim_empty_total": 0
@@ -2711,9 +2711,9 @@
         {
           "slug": "pet-supplements-botanical-herbal",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2721,14 +2721,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-botanical-herbal"
         },
         {
           "slug": "pet-supplements-calming-behavioral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2736,14 +2736,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-calming-behavioral"
         },
         {
           "slug": "pet-supplements-functional-blends",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2751,14 +2751,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-functional-blends"
         },
         {
           "slug": "pet-supplements-oils",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2766,14 +2766,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-oils"
         },
         {
           "slug": "pet-supplements-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2781,14 +2781,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-other"
         },
         {
           "slug": "pet-supplements-probiotics-digestive",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2796,14 +2796,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-probiotics-digestive"
         },
         {
           "slug": "pet-supplements-vitamin-mineral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -2811,12 +2811,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.18.pet-supplements-vitamin-mineral"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 14,
       "claim_empty_total": 0
@@ -2828,9 +2828,9 @@
         {
           "slug": "anti-static-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2838,14 +2838,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.anti-static-products"
         },
         {
           "slug": "anti-wrinkle-wrinkle-release-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2853,14 +2853,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.anti-wrinkle-wrinkle-release-products"
         },
         {
           "slug": "bleaching-whitening-additives",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2868,14 +2868,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.bleaching-whitening-additives"
         },
         {
           "slug": "fabric-contact-combination-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2883,14 +2883,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.fabric-contact-combination-products"
         },
         {
           "slug": "fabric-contact-products-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2898,14 +2898,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.fabric-contact-products-other"
         },
         {
           "slug": "fabric-protectants",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2913,14 +2913,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.fabric-protectants"
         },
         {
           "slug": "fabric-refresher-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2928,14 +2928,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.fabric-refresher-products"
         },
         {
           "slug": "fabric-softeners",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2943,14 +2943,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.fabric-softeners"
         },
         {
           "slug": "laundry-detergent-boosters-additives",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2958,14 +2958,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.laundry-detergent-boosters-additives"
         },
         {
           "slug": "laundry-detergents",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2973,14 +2973,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.laundry-detergents"
         },
         {
           "slug": "laundry-prewash-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -2988,14 +2988,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.laundry-prewash-products"
         },
         {
           "slug": "laundry-starch-sizing-fabric-finish",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3003,14 +3003,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.laundry-starch-sizing-fabric-finish"
         },
         {
           "slug": "pre-treaters-stain-removers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3018,12 +3018,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.19.pre-treaters-stain-removers"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 26,
       "claim_empty_total": 0
@@ -3035,9 +3035,9 @@
         {
           "slug": "breath-fresheners",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3045,7 +3045,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.20.breath-fresheners"
         },
         {
           "slug": "dentifrices",
@@ -3068,9 +3068,9 @@
         {
           "slug": "denture-orthodontic-care",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3078,7 +3078,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.20.denture-orthodontic-care"
         },
         {
           "slug": "floss-interdental-cleaners",
@@ -3137,9 +3137,9 @@
         {
           "slug": "oral-products-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3147,7 +3147,7 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.20.oral-products-other"
         },
         {
           "slug": "tongue-cleaners-scrapers",
@@ -3218,9 +3218,9 @@
         {
           "slug": "art-craft-materials",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3228,14 +3228,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.art-craft-materials"
         },
         {
           "slug": "toy-chests",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3243,14 +3243,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toy-chests"
         },
         {
           "slug": "toy-pacifiers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3258,14 +3258,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toy-pacifiers"
         },
         {
           "slug": "toys-attached-cribs-playpens",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3273,14 +3273,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-attached-cribs-playpens"
         },
         {
           "slug": "toys-balloons",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3288,14 +3288,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-balloons"
         },
         {
           "slug": "toys-balls",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3303,14 +3303,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-balls"
         },
         {
           "slug": "toys-battery-electronic",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3318,14 +3318,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-battery-electronic"
         },
         {
           "slug": "toys-crafts-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3333,14 +3333,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-crafts-other"
         },
         {
           "slug": "toys-marbles",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3348,14 +3348,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-marbles"
         },
         {
           "slug": "toys-painted",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3363,14 +3363,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-painted"
         },
         {
           "slug": "toys-pompoms-fibrous-craft",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3378,14 +3378,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-pompoms-fibrous-craft"
         },
         {
           "slug": "toys-projectile-guns",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3393,14 +3393,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-projectile-guns"
         },
         {
           "slug": "toys-rattles",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3408,14 +3408,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-rattles"
         },
         {
           "slug": "toys-sound-producing",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3423,14 +3423,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-sound-producing"
         },
         {
           "slug": "toys-squeeze",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3438,14 +3438,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-squeeze"
         },
         {
           "slug": "toys-stroller-carriage",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3453,14 +3453,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-stroller-carriage"
         },
         {
           "slug": "toys-stuffed-bean-bag",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3468,14 +3468,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-stuffed-bean-bag"
         },
         {
           "slug": "toys-stuffing-materials",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3483,14 +3483,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-stuffing-materials"
         },
         {
           "slug": "toys-substrate-materials",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3498,14 +3498,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-substrate-materials"
         },
         {
           "slug": "toys-with-magnets",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3513,14 +3513,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-with-magnets"
         },
         {
           "slug": "toys-yo-yo-elastic-tether",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3528,12 +3528,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.21.toys-yo-yo-elastic-tether"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 42,
       "claim_empty_total": 0
@@ -3545,9 +3545,9 @@
         {
           "slug": "air-product-refill-materials",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3556,14 +3556,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.air-product-refill-materials"
         },
         {
           "slug": "automatic-puff-releasers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3572,14 +3572,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.automatic-puff-releasers"
         },
         {
           "slug": "capillary-reed-wood-diffusers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3588,14 +3588,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.capillary-reed-wood-diffusers"
         },
         {
           "slug": "electric-plug-in-evaporators",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3604,14 +3604,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.electric-plug-in-evaporators"
         },
         {
           "slug": "gel-diffusers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3620,14 +3620,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.gel-diffusers"
         },
         {
           "slug": "heated-oil-diffusers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3636,14 +3636,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.heated-oil-diffusers"
         },
         {
           "slug": "home-air-emission-products-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3652,14 +3652,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.home-air-emission-products-other"
         },
         {
           "slug": "incense-sticks-cones",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3668,14 +3668,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.incense-sticks-cones"
         },
         {
           "slug": "instant-air-refreshment-sprays",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3684,14 +3684,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.instant-air-refreshment-sprays"
         },
         {
           "slug": "nebula-diffusers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3700,14 +3700,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.nebula-diffusers"
         },
         {
           "slug": "potpourri-sachets",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3716,14 +3716,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.potpourri-sachets"
         },
         {
           "slug": "scented-candles",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3732,14 +3732,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.scented-candles"
         },
         {
           "slug": "scented-wax-blocks-melts",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3748,14 +3748,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.scented-wax-blocks-melts"
         },
         {
           "slug": "sensor-puff-releasers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3764,14 +3764,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.sensor-puff-releasers"
         },
         {
           "slug": "vacuum-cleaner-fragrance-additives",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3780,12 +3780,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.22.vacuum-cleaner-fragrance-additives"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 45,
       "claim_empty_total": 0
@@ -3797,9 +3797,9 @@
         {
           "slug": "bakeware",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3808,14 +3808,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.bakeware"
         },
         {
           "slug": "cookware-ceramic-coated",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3824,14 +3824,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.cookware-ceramic-coated"
         },
         {
           "slug": "cookware-metal-alloy",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3840,14 +3840,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.cookware-metal-alloy"
         },
         {
           "slug": "cookware-nonstick-coated",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3856,14 +3856,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.cookware-nonstick-coated"
         },
         {
           "slug": "cookware-specialty-alloy",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3872,14 +3872,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.cookware-specialty-alloy"
         },
         {
           "slug": "cutting-boards",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3888,14 +3888,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.cutting-boards"
         },
         {
           "slug": "filter-media-and-housings",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -3903,14 +3903,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.filter-media-and-housings"
         },
         {
           "slug": "food-packaging-cans-lids",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3919,14 +3919,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-cans-lids"
         },
         {
           "slug": "food-packaging-caps-closures",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3935,14 +3935,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-caps-closures"
         },
         {
           "slug": "food-packaging-flexible-pouches-films",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3951,14 +3951,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-flexible-pouches-films"
         },
         {
           "slug": "food-packaging-foils-wraps",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3967,14 +3967,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-foils-wraps"
         },
         {
           "slug": "food-packaging-glass-jars",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3983,14 +3983,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-glass-jars"
         },
         {
           "slug": "food-packaging-paperboard-cartons",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -3999,14 +3999,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-paperboard-cartons"
         },
         {
           "slug": "food-packaging-plastic-tubs",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4015,14 +4015,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-packaging-plastic-tubs"
         },
         {
           "slug": "food-prep-blender-jars",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4031,14 +4031,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-prep-blender-jars"
         },
         {
           "slug": "food-prep-coffee-maker-pathways",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4047,14 +4047,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-prep-coffee-maker-pathways"
         },
         {
           "slug": "food-prep-kettle-interiors",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4063,14 +4063,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-prep-kettle-interiors"
         },
         {
           "slug": "food-prep-processor-bowls",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4079,14 +4079,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-prep-processor-bowls"
         },
         {
           "slug": "food-storage-glass-containers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4095,14 +4095,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-storage-glass-containers"
         },
         {
           "slug": "food-storage-lids-gaskets",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4111,14 +4111,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-storage-lids-gaskets"
         },
         {
           "slug": "food-storage-plastic-containers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4127,14 +4127,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-storage-plastic-containers"
         },
         {
           "slug": "food-storage-silicone",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4143,14 +4143,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.food-storage-silicone"
         },
         {
           "slug": "tableware-ceramicware",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4159,14 +4159,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.tableware-ceramicware"
         },
         {
           "slug": "tableware-decorative-decals-coatings",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4175,14 +4175,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.tableware-decorative-decals-coatings"
         },
         {
           "slug": "tableware-glassware",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4191,14 +4191,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.tableware-glassware"
         },
         {
           "slug": "tableware-metal-bottles-tumblers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4207,14 +4207,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.tableware-metal-bottles-tumblers"
         },
         {
           "slug": "tableware-plastic-drinkware",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4223,14 +4223,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.tableware-plastic-drinkware"
         },
         {
           "slug": "utensils-metal",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4239,14 +4239,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.utensils-metal"
         },
         {
           "slug": "utensils-plastic-silicone-tools",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4255,14 +4255,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.utensils-plastic-silicone-tools"
         },
         {
           "slug": "water-filters",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg"
@@ -4270,12 +4270,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.23.water-filters"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 88,
       "claim_empty_total": 0
@@ -4287,9 +4287,9 @@
         {
           "slug": "dairy-cheese",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4298,14 +4298,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-cheese"
         },
         {
           "slug": "dairy-condensed-evaporated",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4314,14 +4314,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-condensed-evaporated"
         },
         {
           "slug": "dairy-cream",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4330,14 +4330,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-cream"
         },
         {
           "slug": "dairy-milk-camel",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4346,14 +4346,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-milk-camel"
         },
         {
           "slug": "dairy-milk-cow",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4362,14 +4362,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-milk-cow"
         },
         {
           "slug": "dairy-milk-goat-sheep",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4378,14 +4378,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-milk-goat-sheep"
         },
         {
           "slug": "dairy-milk-powders",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4394,14 +4394,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-milk-powders"
         },
         {
           "slug": "dairy-yogurt-cultured",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4410,12 +4410,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.24.dairy-yogurt-cultured"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 24,
       "claim_empty_total": 0
@@ -4427,9 +4427,9 @@
         {
           "slug": "cannabis-concentrates",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4438,14 +4438,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-concentrates"
         },
         {
           "slug": "cannabis-edibles",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4454,14 +4454,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-edibles"
         },
         {
           "slug": "cannabis-flower",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4470,14 +4470,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-flower"
         },
         {
           "slug": "cannabis-tinctures-oils",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4486,14 +4486,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-tinctures-oils"
         },
         {
           "slug": "cannabis-topicals",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4502,14 +4502,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-topicals"
         },
         {
           "slug": "cannabis-vape-cartridge-fill",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4518,12 +4518,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.25.cannabis-vape-cartridge-fill"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 18,
       "claim_empty_total": 0
@@ -4535,9 +4535,9 @@
         {
           "slug": "aas-injectable",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4546,14 +4546,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.26.aas-injectable"
         },
         {
           "slug": "peptides-injectable-hormones",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4562,14 +4562,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.26.peptides-injectable-hormones"
         },
         {
           "slug": "peptides-nasal-sublingual",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4578,14 +4578,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.26.peptides-nasal-sublingual"
         },
         {
           "slug": "research-chem-raw-powders",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4594,14 +4594,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.26.research-chem-raw-powders"
         },
         {
           "slug": "sarms-oral",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4610,12 +4610,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.26.sarms-oral"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 15,
       "claim_empty_total": 0
@@ -4627,9 +4627,9 @@
         {
           "slug": "legumes-pulses-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4637,14 +4637,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.27.legumes-pulses-other"
         },
         {
           "slug": "peanut-butter",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4652,14 +4652,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.27.peanut-butter"
         },
         {
           "slug": "peanuts",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4667,14 +4667,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.27.peanuts"
         },
         {
           "slug": "soy-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4682,12 +4682,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.27.soy-products"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 8,
       "claim_empty_total": 0
@@ -4699,9 +4699,9 @@
         {
           "slug": "cashews",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4710,14 +4710,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.cashews"
         },
         {
           "slug": "nut-seed-butters-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4726,14 +4726,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.nut-seed-butters-other"
         },
         {
           "slug": "nuts-seeds-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4742,14 +4742,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.nuts-seeds-other"
         },
         {
           "slug": "sunflower-seed-butter",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4758,14 +4758,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.sunflower-seed-butter"
         },
         {
           "slug": "sunflower-seeds",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4774,14 +4774,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.sunflower-seeds"
         },
         {
           "slug": "tree-nuts-high-nickel",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4790,12 +4790,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.28.tree-nuts-high-nickel"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 18,
       "claim_empty_total": 0
@@ -4807,9 +4807,9 @@
         {
           "slug": "cultivated-mushrooms-oyster-shiitake",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4817,14 +4817,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.29.cultivated-mushrooms-oyster-shiitake"
         },
         {
           "slug": "cultivated-mushrooms",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4832,14 +4832,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.29.cultivated-mushrooms"
         },
         {
           "slug": "wild-mushrooms",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4847,12 +4847,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.29.wild-mushrooms"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 6,
       "claim_empty_total": 0
@@ -4864,14 +4864,14 @@
         {
           "slug": "cooking-oils-other",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.30.cooking-oils-other"
         },
         {
           "slug": "olive-oil",
@@ -4887,8 +4887,8 @@
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 0,
       "claim_empty_total": 0
@@ -4900,9 +4900,9 @@
         {
           "slug": "honey",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4911,14 +4911,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.31.honey"
         },
         {
           "slug": "refined-sugar",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4926,14 +4926,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.31.refined-sugar"
         },
         {
           "slug": "rice-grain-syrup",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4941,14 +4941,14 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.31.rice-grain-syrup"
         },
         {
           "slug": "syrups-maple-agave-molasses",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -4956,12 +4956,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.31.syrups-maple-agave-molasses"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 9,
       "claim_empty_total": 0
@@ -4973,23 +4973,23 @@
         {
           "slug": "fish-sauce",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "Cr-VI"
           ],
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.32.fish-sauce"
         },
         {
           "slug": "mustard-mayo-dressings",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -4998,14 +4998,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.32.mustard-mayo-dressings"
         },
         {
           "slug": "soy-sauce-fermented",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5014,14 +5014,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.32.soy-sauce-fermented"
         },
         {
           "slug": "tomato-condiments",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5030,14 +5030,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.32.tomato-condiments"
         },
         {
           "slug": "vinegar",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5046,12 +5046,12 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.32.vinegar"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 13,
       "claim_empty_total": 0
@@ -5496,9 +5496,9 @@
         {
           "slug": "bread-and-baked-goods",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5507,14 +5507,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.bread-and-baked-goods"
         },
         {
           "slug": "breakfast-cereal-non-rice",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5523,14 +5523,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.breakfast-cereal-non-rice"
         },
         {
           "slug": "breakfast-cereal-rice-based",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -5538,14 +5538,14 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.breakfast-cereal-rice-based"
         },
         {
           "slug": "flour-non-rice",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5554,14 +5554,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.flour-non-rice"
         },
         {
           "slug": "grain-based-snacks",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5570,14 +5570,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.grain-based-snacks"
         },
         {
           "slug": "other-grain-products",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5586,14 +5586,14 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.other-grain-products"
         },
         {
           "slug": "pasta-rice-based",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -5601,14 +5601,14 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.pasta-rice-based"
         },
         {
           "slug": "pasta-wheat-based",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "iAs",
             "MeHg",
@@ -5617,28 +5617,28 @@
           "claim_empty": [],
           "rice": false,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.pasta-wheat-based"
         },
         {
           "slug": "rice-beverages-rice-milk",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg"
           ],
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.rice-beverages-rice-milk"
         },
         {
           "slug": "rice-bulk-grain",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -5646,14 +5646,14 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.rice-bulk-grain"
         },
         {
           "slug": "rice-noodles",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -5661,14 +5661,14 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.rice-noodles"
         },
         {
           "slug": "rice-snacks-crackers",
           "complete": true,
-          "registered": false,
+          "registered": true,
           "corrected": true,
-          "ready": false,
+          "ready": true,
           "empty_cells": [
             "MeHg",
             "Cr-VI"
@@ -5676,12 +5676,12 @@
           "claim_empty": [],
           "rice": true,
           "rice_missing_ias": false,
-          "doi": null
+          "doi": "10.83138/hmtc.std.3.rice-snacks-crackers"
         }
       ],
       "complete": true,
-      "registered": false,
-      "ready": false,
+      "registered": true,
+      "ready": true,
       "incomplete_records": 0,
       "empty_cell_total": 29,
       "claim_empty_total": 0

@@ -4,8 +4,8 @@
   "totals": {
     "records": 323,
     "complete": 265,
-    "registered": 4,
-    "ready": 4,
+    "registered": 255,
+    "ready": 255,
     "empty_cells": 876,
     "claim_empty_cells": 174,
     "incomplete_records": 58,

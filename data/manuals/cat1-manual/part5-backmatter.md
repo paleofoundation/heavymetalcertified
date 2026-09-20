@@ -12,13 +12,11 @@ Species (iAs, MeHg, Cr(VI)) are pathway reflexes. Species ≤ parent. The specie
 
 ## 5.2 Glossary
 
-PoL (percent-of-limit) — A single analyte's measured value divided by its applicable limit, as a percentage.
+percent of limit — A single analyte's measured value divided by its applicable limit, as a percentage. Used only as an operational testing trigger (for example the 50% reflex-speciation trigger and the 80% early-warning trigger); it is not a certification ladder.
 
-MaxPoL (maximum percent-of-limit) — The highest PoL among the eight limit analytes in a lot. The value that drives Status.
+Certification status — The product-level lifecycle: Certified, Remediation, Suspension, Revocation. Certified means every analyte is at or below 100% of its published limit under the measurement-uncertainty rule; the mark is permitted only then. Remediation is non-certified (applicant or corrective) and carries no mark. Suspension halts certification for a hard stop. Revocation is permanent. No percent-of-limit band above the limit keeps the mark.
 
-Status A–E — The product-level status ladder. A: MaxPoL ≤ 100%. B: 101–150%, Tier 2 only. C: 151–200%, or any Tier 1 above 100% (Low 151–175%, High 176–200%). D: above 200% MaxPoL or a hard-stop. E: revocation.
-
-Tier 1 / Tier 2 — Tier 1 is Pb, Cd, iAs, and mercury (tHg). Tier 2 is Ni, Al, Sn, Cr. Any quantifiable Cr(VI) is a hard fail treated as Tier 1.
+Tier 1 / Tier 2 — Tier 1 is Pb, Cd, iAs, and mercury (tHg); Tier 2 is Ni, Al, Sn, Cr. Tiering sets how hard and fast the program reacts to an exceedance, never permission to exceed a limit and keep the mark. Any quantifiable Cr(VI) is a hard fail treated as Tier 1.
 
 CAPA — Corrective and preventive action. Windows scale with status.
 

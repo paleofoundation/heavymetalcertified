@@ -55,7 +55,7 @@ The per-category occurrence figures and the derivation behind each limit are on 
 
 Because a meaningful share of the dietary load is added during processing rather than inherent to the crop, aluminium is controllable: reformulating additives and controlling contact materials moves the number. Where a government sets a maximum level, that ceiling is the reference; where it does not, occurrence data carry the determination.
 
-HMTc treats aluminium as a Tier-2 metal and adopts the strictest existing government maximum level directly, computing an occurrence value only where no government regulates the cell, and applies the program's 150% transitional allowance so a category can move onto the standard on a defined path to the firm limit. A regulatory hard-stop blocks certification of any product over an applicable legal limit. For infant foods, where intake sits closest to the tolerable value, verifying the number lot by lot is the point of a certificate. How the limit is derived is set out under [how limits are derived](/program/structure).
+HMTc treats aluminium as a Tier-2 metal and adopts the strictest existing government maximum level directly, computing an occurrence value only where no government regulates the cell. Tiering sets how the program reacts to an exceedance, not any permission to exceed the limit; a product is certified only at or below its published limit, and above it, on any metal, it is not certified and carries no mark. A regulatory hard-stop blocks certification of any product over an applicable legal limit. For infant foods, where intake sits closest to the tolerable value, verifying the number lot by lot is the point of a certificate. How the limit is derived is set out under [how limits are derived](/program/structure).
 
 ## Findings that bear on Aluminium
 
@@ -86,7 +86,7 @@ EFSA set a tolerable weekly intake of 1 mg aluminium/kg body weight in 2008; JEC
 
 ### How does HMTc set its aluminium limit?
 
-HMTc treats aluminium as a Tier-2 metal and adopts the strictest existing government maximum level directly, computing an occurrence value only where no government regulates the cell, and applies a 150% transitional allowance. A regulatory hard-stop blocks any product over an applicable legal limit.
+HMTc treats aluminium as a Tier-2 metal and adopts the strictest existing government maximum level directly, computing an occurrence value only where no government regulates the cell. Tiering sets the reaction to an exceedance, not permission to exceed the limit; a product is certified only at or below its published limit. A regulatory hard-stop blocks any product over an applicable legal limit.
 
 
 ## Evidence and sources
