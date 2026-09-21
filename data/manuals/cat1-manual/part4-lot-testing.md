@@ -2,7 +2,7 @@
 
 Companion to the HMTc governance rules for Infant and Child Foods. Certification is a standing obligation, verified lot by lot, for as long as the mark appears on a product.
 
-Totals are run on every completing lot. Speciation is a pathway reflex. Risk tier and the surveillance schedule are assigned after application, from what the brand's laboratory states, not from the frequency grid alone.
+Totals are run on every completing lot. Speciation is a pathway reflex. Product risk tier and the surveillance schedule are assigned after application, from what the brand's laboratory states, not from the frequency grid alone.
 
 ## 4.1 Product risk tiers
 
@@ -18,15 +18,14 @@ The Program Operator may raise a specific product's risk tier on documented rati
 
 ## 4.2 The Testing-Frequency Matrix
 
-This is the starting grid. The assigned schedule is written after the lab-informed review in §4.9. Certified is the only status that carries the mark; Remediation carries no mark and is not listed as certified while any analyte is above its published limit.
+This is the starting grid. The assigned schedule is written after the lab-informed review in §4.9. Certified is the only status that carries the mark; Remediation carries no mark and is not listed as certified while any analyte is above its published limit. Every claim analyte is equal at the gate.
 
 | Certification status | High-Risk | Moderate-Risk | Lower-Risk | Hold & Release | Independent Sampling |
 |---|---|---|---|---|---|
 | Certified | Monthly | Quarterly | Quarterly | Not required | Yes (per schedule) |
-| Remediation — Tier 2 exceedance | Every lot or monthly (more frequent) | Monthly | Monthly | Mandatory | Brand's own accredited lab permitted, subject to audit |
-| Remediation — Tier 1 exceedance | Every lot | Every lot | Every lot | Mandatory | Operator-directed third-party sampling |
+| Remediation | Every lot | Every lot | Every lot | Mandatory | Operator-directed third-party sampling |
 
-Reaction severity follows the toxicological tier of the exceedance and the brand's conduct, never an allowed overage. Any Tier 1 exceedance, any quantifiable Cr(VI), or a data-integrity or concealment concern takes the every-lot, Operator-directed row regardless of risk tier.
+Any claim-analyte exceedance, any quantifiable Cr(VI), or a data-integrity or concealment concern takes the Remediation row — every-lot, Operator-directed — regardless of product risk tier. There is no transitional overage and no analyte-class exception.
 
 ## 4.3 Baseline
 
@@ -36,9 +35,9 @@ Qualifying prior ISO/IEC 17025 data from the preceding twelve months may credit 
 
 ## 4.4 Surveillance by status
 
-Certified: High-Risk monthly with independent sampling; Moderate- and Lower-Risk quarterly. A Tier 1 result at or above 80% of its applicable limit triggers confirmatory testing, Operator notice, and speciation where applicable.
+Certified: High-Risk monthly with independent sampling; Moderate- and Lower-Risk quarterly. A claim-analyte result at or above 80% of its applicable limit triggers confirmatory testing, Operator notice, and speciation where applicable.
 
-Remediation: the product carries no mark and is not listed as certified. Corrective action is mandatory and surveillance is intensified. A Tier 2 exceedance takes elevated surveillance — every lot or monthly, whichever is more frequent, with mandatory hold-and-release; the brand's own accredited sampling is permitted, subject to audit. A Tier 1 exceedance, any quantifiable Cr(VI), or a concealment or data-integrity concern takes every-lot testing, mandatory hold-and-release, and Operator-directed third-party sampling. Return to Certified requires the product to meet 100% of every published limit across a run of consecutive lots set by the Program Operator, plus completed CAPA with verification of effectiveness.
+Remediation: the product carries no mark and is not listed as certified. Corrective action is mandatory and surveillance is intensified: every-lot testing, mandatory hold-and-release, and Operator-directed third-party sampling. Return to Certified requires the product to meet 100% of every published limit across a run of consecutive lots set by the Program Operator, plus completed CAPA with verification of effectiveness.
 
 Suspension: stop-ship, mark removal, CAPA within two business days, containment Immediate (within 48 hours). Reinstatement does not require a fresh baseline.
 

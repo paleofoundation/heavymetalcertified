@@ -37,8 +37,7 @@ const CHECK = args.has("check")
 const EFFECTIVE = args.get("effective") || "2026-08-17"
 const VERSION = args.get("version") || `1.0 (${EFFECTIVE})`
 
-// HMTc analyte tiering (CLAUDE.md Part 14 / the status-and-tier framework): Tier 1 are the
-// zero-tolerance toxics, Tier 2 the remainder. Same split every live category uses.
+// Optional leftover panel-grouping lists on category _meta. Not status architecture.
 const TIER1 = ["Pb", "iAs", "tHg", "MeHg", "Cd"]
 const PANEL_ORDER = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr-VI", "Ni", "Sn", "Al", "Cr"]
 

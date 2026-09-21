@@ -2,7 +2,7 @@
 // claim-discipline-lint.mjs — build-blocking guard on superiority claims.
 //
 // WHY: HMTc adopts the strictest EXISTING government limit cell-by-cell and only
-// goes below a government floor on the four Tier-1 toxics. So an UNQUALIFIED
+// goes below a government floor on the four priority toxics. So an UNQUALIFIED
 // "strictest limits in the world" / "stricter than any government" claim is
 // provably false on the large majority of cells (0 of 112 Cat-1 cells sit below
 // the applicable law) and becomes the plaintiff's-expert exhibit that a certified
@@ -28,7 +28,7 @@ const ROOT = path.join(process.cwd(), "content")
 const BANNED = [
   { rx: /world'?s\s+(strictest|toughest|most\s+stringent|lowest)\b/i, why: "\"world's strictest/toughest\" — unqualified world-superiority superlative" },
   { rx: /\b(strictest|toughest|lowest|most\s+stringent)\s+(heavy[- ]metal\s+)?(limits?|standards?|thresholds?)\s+(in\s+the\s+world|worldwide|on\s+earth|on\s+the\s+planet|anywhere)\b/i, why: "\"strictest limits in the world/worldwide\" — unqualified superiority claim" },
-  { rx: /\bstricter\s+than\s+(any|every|all)\s+(government|governments|regulator|regulators|country|countries|agency|agencies)\b/i, why: "\"stricter than any/every government\" — false on all non-Tier-1 cells" },
+  { rx: /\bstricter\s+than\s+(any|every|all)\s+(government|governments|regulator|regulators|country|countries|agency|agencies)\b/i, why: "\"stricter than any/every government\" — false on cells that sit at the government floor" },
   { rx: /\blower\s+than\s+every\s+(government|regulator|country|agency)\b/i, why: "\"lower than every government\" — false; HMTc matches the strictest existing floor" },
   { rx: /\bthe\s+strictest\s+(heavy[- ]metal\s+)?(certification|standard|program|limits?)\s+(in\s+existence|ever\s+created|that\s+exists)\b/i, why: "absolute-existence superiority claim" },
 ]

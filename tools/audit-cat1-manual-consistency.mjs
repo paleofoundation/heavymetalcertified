@@ -19,6 +19,7 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { lintAnalyteTierStatus } from "./lib/analyte-tier-status-lint.mjs"
 
 const REPO = process.cwd()
 const CDIR = path.join(REPO, "data/manuals/cat1-manual")
@@ -43,24 +44,21 @@ const GOLD = [
   ["part2-program.md", "status: Remediation (not certified)", /Remediation[\s\S]{0,90}(not certified|Not certified)/i],
   ["part2-program.md", "status: Suspension", /\bSuspension\b/],
   ["part2-program.md", "status: Revocation", /\bRevocation\b/],
-  ["part2-program.md", "tiering is not permission to exceed", /permission to exceed/i],
+  ["part2-program.md", "all claim analytes equal at the gate", /equal at the gate/i],
   ["part2-program.md", "no allowed overage / transitional band", /allowed overage|transitional band/i],
-  ["part2-program.md", "Tier 1 = Pb, Cd, iAs, mercury", /Tier 1[\s\S]{0,120}(Lead|Pb)[\s\S]{0,80}(Cadmium|Cd)[\s\S]{0,80}(arsenic|iAs)/i],
-  ["part2-program.md", "Tier 2 = Ni, Al, Sn, Cr", /Tier 2[\s\S]{0,140}(Nickel|Ni)[\s\S]{0,80}(Aluminium|Al)[\s\S]{0,80}(Tin|Sn)/i],
+  ["part2-program.md", "eight limit analytes", /eight limit analytes/i],
+  ["part2-program.md", "pathway species never replace the parent", /never replace the parent/i],
   ["part2-program.md", "CAPA 10 business days / 30 calendar days", /10 business days[\s\S]{0,60}30 calendar days/],
-  ["part2-program.md", "CAPA 5 / 15 business days", /5 business days[\s\S]{0,60}15 business days/],
   ["part2-program.md", "CAPA 2 / 10 business days", /2 business days[\s\S]{0,60}10 business days/],
   ["part2-program.md", "12-month default to Certified", /12[ -]month/],
   ["part2-program.md", "three-lot baseline, worst-performing lot", /worst-performing lot/],
-  ["part2-program.md", "eight limit analytes", /eight limit analytes/i],
   ["part2-program.md", "50% reflex speciation trigger", /50%/],
-  ["part2-program.md", "80% Tier-1 early warning", /80%/],
+  ["part2-program.md", "80% early warning", /80%/],
   ["part2-program.md", "Suspension reinstatement — no fresh baseline", /does not require a fresh baseline/],
   ["part2-program.md", "Confidential Remediation Track — not a certified status", /Confidential Remediation Track[\s\S]{0,160}(not a certified status|non-certified)/i],
   ["part4-lot-testing.md", "nine subcategories", /nine subcategor/i],
   ["part4-lot-testing.md", "frequency matrix present", /Testing-Frequency Matrix|Certification status/i],
-  ["part4-lot-testing.md", "Remediation — Tier 2 row", /Remediation[\s\S]{0,40}Tier 2/i],
-  ["part4-lot-testing.md", "Remediation — Tier 1 row", /Remediation[\s\S]{0,40}Tier 1/i],
+  ["part4-lot-testing.md", "single Remediation row", /Remediation[\s\S]{0,80}(Every lot|every lot)/i],
   ["part5-backmatter.md", "government-limit default method", /government-limit default/i],
   ["part5-backmatter.md", "glossary — four-status lifecycle", /Certified, Remediation, Suspension, Revocation/],
   ["part1-why.md", "limits do not derive from the Index", /Limits do not derive from the Heavy Metal Index|traces to a named sovereign/i],
@@ -80,7 +78,7 @@ ok(`A. golden values: ${GOLD.length} required Method v2 governance/lot-testing f
 // rewrite retired; leaving any of them is the FAIL condition of the rewrite order.
 const FORBIDDEN = [
   ["RETIRED MaxPoL metric", /MaxPoL/i],
-  ["RETIRED Status A–E ladder", /Status A-E|statuses A through E|status ladder/i],
+  ["RETIRED Status A–E ladder", /Status A-E|statuses A through E/i],
   ["RETIRED 150% figure", /150\s*%/],
   ["RETIRED 'transitional allowance'", /transitional allowance/i],
   ["RETIRED 'Transitional (mark withheld)'", /Transitional \(mark withheld\)/i],
@@ -134,11 +132,30 @@ if (primer) {
 }
 ok(`E. cross-source: /program + briefing pages carry no retired MaxPoL ladder`)
 
+// ── F. analyte Tier 1/2 must not drive status ────────────────────────────────
+// Product risk tiers and the appeals committee tiers are different axes.
+const STATUS_SURFACES = [
+  ...FILES.map((f) => [path.join(CDIR, f), `data/manuals/cat1-manual/${f}`]),
+  [path.join(PROG, "structure.md"), "content/program/structure.md"],
+  [path.join(PROG, "corrective-action.md"), "content/program/corrective-action.md"],
+  [path.join(REPO, "tools/lib/manual-v3-page.mjs"), "tools/lib/manual-v3-page.mjs"],
+  [path.join(REPO, "data/briefings/hmtc-primer.md"), "data/briefings/hmtc-primer.md"],
+]
+for (const [abs, rel] of STATUS_SURFACES) {
+  const text = read(abs)
+  if (!text) {
+    fail.push(`TIER-STATUS: missing ${rel}`)
+    continue
+  }
+  for (const hit of lintAnalyteTierStatus(text, rel)) fail.push(`TIER-STATUS ${hit}`)
+}
+ok(`F. analyte Tier 1/2 does not drive certification status on Manual v3 / program / primer surfaces`)
+
 // ── verdict ──────────────────────────────────────────────────────────────────
 if (fail.length) {
   console.error(`\naudit-cat1-manual-consistency: ${fail.length} INCONSISTENCY(IES):`)
   for (const f of fail) console.error(`  ✗ ${f}`)
   process.exit(1)
 }
-console.log(`\naudit-cat1-manual-consistency: OK — the manual is internally consistent, states the Method v2 four-status model (Certified | Remediation | Suspension | Revocation), is firewall-clean, carries no retired MaxPoL certification ladder, and agrees with the live /program pages.`)
+console.log(`\naudit-cat1-manual-consistency: OK — the manual is internally consistent, states the Method v2 four-status model (Certified | Remediation | Suspension | Revocation), treats every claim analyte as equal at the gate, is firewall-clean, carries no retired MaxPoL or analyte-tier status ladder, and agrees with the live /program pages.`)
 process.exit(0)

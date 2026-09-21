@@ -14,9 +14,9 @@ Species (iAs, MeHg, Cr(VI)) are pathway reflexes. Species ≤ parent. The specie
 
 percent of limit — A single analyte's measured value divided by its applicable limit, as a percentage. Used only as an operational testing trigger (for example the 50% reflex-speciation trigger and the 80% early-warning trigger); it is not a certification ladder.
 
-Certification status — The product-level lifecycle: Certified, Remediation, Suspension, Revocation. Certified means every analyte is at or below 100% of its published limit under the measurement-uncertainty rule; the mark is permitted only then. Remediation is non-certified (applicant or corrective) and carries no mark. Suspension halts certification for a hard stop. Revocation is permanent. No percent-of-limit band above the limit keeps the mark.
+Certification status — The product-level lifecycle: Certified, Remediation, Suspension, Revocation. Certified means every analyte is at or below 100% of its published limit under the measurement-uncertainty rule; the mark is permitted only then. Remediation is non-certified (applicant or corrective) and carries no mark. Suspension halts certification for a hard stop. Revocation is permanent. No percent-of-limit band above the limit keeps the mark. All claim analytes are equal at the gate.
 
-Tier 1 / Tier 2 — Tier 1 is Pb, Cd, iAs, and mercury (tHg); Tier 2 is Ni, Al, Sn, Cr. Tiering sets how hard and fast the program reacts to an exceedance, never permission to exceed a limit and keep the mark. Any quantifiable Cr(VI) is a hard fail treated as Tier 1.
+priority toxics — Plain-language name for lead, cadmium, inorganic arsenic, and mercury, used only for toxicological clarity. It is not a status ladder and does not change the certification gate.
 
 CAPA — Corrective and preventive action. Windows scale with status.
 

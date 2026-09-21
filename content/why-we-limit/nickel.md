@@ -1,7 +1,7 @@
 ---
 title: "Why is nickel limited in food? The certification rationale"
 description: "Why HMTc limits nickel in food: mean dietary intake already exceeds EFSA's tolerable daily intake, the most-exposed young children exceed it further, and sensitized people react well below it."
-dek_html: "Nickel is the metal where ordinary diets already run over the tolerable intake, and the most-exposed children run over it further."
+dek_html: "Nickel is the metal where ordinary diets already run over the tolerable intake — and the most-exposed children run over it further."
 type: rationale
 custom_page: true
 section: "Why we limit"
@@ -14,21 +14,21 @@ snapshot:
   - { k: "Critical endpoint", v: "Reproductive/developmental; contact allergy" }
   - { k: "EFSA 2020 TDI", v: "13 µg/kg bw/day" }
   - { k: "Exposure status", v: "Mean intake exceeds the TDI" }
-  - { k: "HMTc tier", v: "Tier 2" }
+  - { k: "Panel role", v: "Claim analyte" }
 connections:
-  - { label: "Nickel: the analyte reference", href: "/analytes/nickel" }
-  - { label: "Grain products: the standard", href: "/standards/other-grain-products" }
+  - { label: "Nickel — the analyte reference", href: "/analytes/nickel" }
+  - { label: "Grain products — the standard", href: "/standards/other-grain-products" }
   - { label: "Why we limit each metal", href: "/why-we-limit" }
   - { label: "How limits are derived", href: "/program/structure" }
-  - { label: "Heavy Metal Index: nickel literature", href: "https://heavymetalindex.com/metals/nickel" }
+  - { label: "Heavy Metal Index — nickel literature", href: "https://heavymetalindex.com/metals/nickel" }
 rail_box:
   title: "Why we limit each metal"
-  body: "One page per metal on the panel, each answering why HMTc limits it in food: the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index."
+  body: "One page per metal on the panel, each answering why HMTc limits it in food — the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index."
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE RATIONALE</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Certification rationale &middot; Heavy Metal Certified &middot; August 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">HMTc limits nickel because EFSA's 2020 reassessment set a chronic tolerable daily intake of 13 µg/kg body weight per day on a reproductive-developmental endpoint that mean dietary intake already exceeds, the most-exposed young children exceed it further, and nickel-sensitized people react to oral doses well below it, and the contamination is largely controllable through sourcing.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">HMTc limits nickel because EFSA's 2020 reassessment set a chronic tolerable daily intake of 13 µg/kg body weight per day on a reproductive-developmental endpoint that mean dietary intake already exceeds, the most-exposed young children exceed it further, and nickel-sensitized people react to oral doses well below it — and the contamination is largely controllable through sourcing.</p>
 </div>
 
 ## In brief
@@ -37,9 +37,9 @@ Nickel is limited in food because exposure has already overtaken the guidance va
 
 ## The health basis for limiting nickel
 
-Nickel's dietary regulation rests on two distinct endpoints. For chronic exposure, EFSA's 2020 CONTAM opinion established a tolerable daily intake of 13 µg nickel/kg body weight per day, anchored on a BMDL10 of 1.3 mg/kg body weight per day for increased post-implantation loss in animal studies: a reproductive and developmental endpoint. The finding that made this a live regulatory concern is the exposure comparison: mean dietary intake in Europe already exceeds the tolerable intake, and the most-exposed young children exceed it further. For acute exposure, EFSA identified eczematous flare-up reactions in nickel-sensitized people, systemic contact dermatitis, as the critical effect, with a reference point (a LOAEL of 4.3 µg/kg body weight) far below the chronic value, which matters because nickel sensitization is common.
+Nickel's dietary regulation rests on two distinct endpoints. For chronic exposure, EFSA's 2020 CONTAM opinion established a tolerable daily intake of 13 µg nickel/kg body weight per day, anchored on a BMDL10 of 1.3 mg/kg body weight per day for increased post-implantation loss in animal studies — a reproductive and developmental endpoint. The finding that made this a live regulatory concern is the exposure comparison: mean dietary intake in Europe already exceeds the tolerable intake, and the most-exposed young children exceed it further. For acute exposure, EFSA identified eczematous flare-up reactions in nickel-sensitized people — systemic contact dermatitis — as the critical effect, with a reference point (a LOAEL of 4.3 µg/kg body weight) far below the chronic value, which matters because nickel sensitization is common.
 
-Nickel compounds are also classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, on inhalation evidence for lung and nasal cancer: a route distinct from the dietary endpoints. The full agency record is on [the nickel analyte reference](/analytes/nickel).
+Nickel compounds are also classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, on inhalation evidence for lung and nasal cancer — a route distinct from the dietary endpoints. The full agency record is on [the nickel analyte reference](/analytes/nickel).
 
 ## Who the exposure reaches
 
@@ -53,9 +53,9 @@ The per-category occurrence figures and the derivation behind each limit are on 
 
 ## Why a certification limit is warranted
 
-When mean intake already exceeds the tolerable value, the useful response is not another safe-dose claim but a push on the controllable sources, and nickel is largely controllable through sourcing and process control. The EU set its first binding nickel maximum levels in food in 2024, a risk-management response to the EFSA exceedance finding, with category limits ranging from 0.10 mg/kg for liquid infant formula to higher values for cereals and seaweed.
+When mean intake already exceeds the tolerable value, the useful response is not another safe-dose claim but a push on the controllable sources — and nickel is largely controllable through sourcing and process control. The EU set its first binding nickel maximum levels in food in 2024, a risk-management response to the EFSA exceedance finding, with category limits ranging from 0.10 mg/kg for liquid infant formula to higher values for cereals and seaweed.
 
-HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computing an occurrence value only where no government sets one. Tiering sets how the program reacts to an exceedance, not any permission to exceed the limit; a product is certified only at or below its published limit, and above it, on any metal, it is not certified and carries no mark. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure).
+HMTc treats nickel as a claim analyte: it adopts the strictest existing government maximum level directly, computing an occurrence value only where no government sets one. Every claim analyte is equal at the gate; a product is certified only at or below its published limit, and above it, on any metal, it is not certified and carries no mark. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure).
 
 ## Findings that bear on Nickel
 
@@ -83,22 +83,22 @@ Nickel-sensitized people can experience a systemic contact dermatitis flare from
 
 ### Is nickel a carcinogen?
 
-Nickel compounds are classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, but on inhalation evidence for lung and nasal cancer: an occupational route distinct from the reproductive-developmental and contact-allergy endpoints that drive its regulation in food.
+Nickel compounds are classified by IARC as Group 1 and by the US National Toxicology Program as known human carcinogens, but on inhalation evidence for lung and nasal cancer — an occupational route distinct from the reproductive-developmental and contact-allergy endpoints that drive its regulation in food.
 
 ### How does HMTc set its nickel limit?
 
-HMTc treats nickel as a Tier-2 metal: it adopts the strictest existing government maximum level directly, computes an occurrence value only where no government regulates the cell. Tiering sets the reaction to an exceedance, not permission to exceed the limit; a product is certified only at or below its published limit. A regulatory hard-stop blocks any product over a legal limit.
+HMTc treats nickel as a claim analyte: it adopts the strictest existing government maximum level directly, computes an occurrence value only where no government regulates the cell. Every claim analyte is equal at the gate; a product is certified only at or below its published limit. A regulatory hard-stop blocks any product over a legal limit.
 
 
 ## Evidence and sources
 
   <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 12px;max-width:84ch">This page synthesises three surfaces that carry the underlying evidence, and links to them rather than re-hosting them:</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb">
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The government and expert-body assessments, agency by agency, with the toxicological reference points: <a href="/analytes/nickel" style="color:#1c43ad">the Nickel analyte reference</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Reference</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The certification limits in force, and the Method v2.0 derivation behind each: <a href="/standards" style="color:#1c43ad">the HMTc standards register</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Standard</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus: <a href="https://heavymetalindex.com/metals/nickel" style="color:#1c43ad">Nickel on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The government and expert-body assessments, agency by agency, with the toxicological reference points — <a href="/analytes/nickel" style="color:#1c43ad">the Nickel analyte reference</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Reference</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The certification limits in force, and the Method v2.0 derivation behind each — <a href="/standards" style="color:#1c43ad">the HMTc standards register</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Standard</span></div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus — <a href="https://heavymetalindex.com/metals/nickel" style="color:#1c43ad">Nickel on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
   </div>
-  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:12px 0 0">The Heavy Metal Index is an independent literature reference; this certification site cites it one way and applies its evidence to the certification question. The Index never cites back: that is what keeps it a disinterested source.</p>
+  <p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:12px 0 0">The Heavy Metal Index is an independent literature reference; this certification site cites it one way and applies its evidence to the certification question. The Index never cites back — that is what keeps it a disinterested source.</p>
 
 
 ## Cite this page

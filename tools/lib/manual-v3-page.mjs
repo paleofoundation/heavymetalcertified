@@ -112,7 +112,7 @@ function lifecycleHtml() {
       "Certified is the only status that carries the mark. A lot in violation of a government legal limit at entry is a hard stop; a lot above any published HMTc limit is not certified and enters Remediation.",
     ) +
     cap(
-      `Tiering sets how hard and fast the program reacts to an exceedance, never permission to exceed a limit and keep the mark. Tier 1 (Pb, Cd, iAs, mercury as tHg) is zero-tolerance — the most severe reaction. Tier 2 (Ni, Al, Sn, Cr) still bars the mark and enters Remediation, at an elevated rather than immediate hard-stop reaction. Any quantifiable Cr(VI) on a credible pathway is a hard fail, treated as Tier 1. No metal has a transitional band or an allowed overage.`,
+      `Every claim analyte is equal at the gate. A product is Certified only at or below 100% of every published government floor or disclosed read-across. An exceedance on any metal enters Remediation and carries no mark. Lead, cadmium, inorganic arsenic, and mercury may be named as priority toxics for toxicological clarity; that label is not a status ladder. Any quantifiable Cr(VI) on a credible pathway is a hard fail. No metal has a transitional band or an allowed overage.`,
     ) +
     kvGrid([
       ["Baseline before any status", "3 lots, worst-performing lot"],
@@ -135,13 +135,12 @@ function instrumentsHtml() {
     ) +
     h3("capa", "CAPA") +
     table(
-      ["Reaction", "Initiate", "Full plan", "Containment"],
+      ["Status", "Initiate", "Full plan", "Containment"],
       [
-        ["Tier 2 exceedance (Remediation)", "10 business days", "30 calendar days", "as needed"],
-        ["Tier 1 exceedance (Remediation)", "5 business days", "15 business days", "within 48 hours"],
+        ["Remediation", "10 business days", "30 calendar days", "as needed"],
         ["Suspension (hard stop)", "2 business days", "10 business days", "Immediate (within 48 hours)"],
       ],
-      "A Tier 2 exceedance in Remediation has a 12-month default to return to Certified. A CAPA closes only after verification of effectiveness and Operator approval.",
+      "CAPA windows scale with certification status, not with analyte class. A product in Remediation has a 12-month default to return to Certified. A CAPA closes only after verification of effectiveness and Operator approval.",
     ) +
     h3("remediation", "Remediation") +
     p(
@@ -161,7 +160,7 @@ function lotTestingHtml() {
     ) +
     h3("risk-tiers", "Product risk tiers") +
     table(
-      ["Tier", "Subcategories"],
+      ["Risk class", "Subcategories"],
       [
         ["High", "Infant formula (powder); infant formula (ready-to-feed); baby cereals and dry grain products"],
         ["Moderate", "Fruit purées; non-root vegetable purées; root-vegetable purées; mixed meals"],
@@ -174,10 +173,9 @@ function lotTestingHtml() {
       ["Status", "High", "Moderate", "Lower", "Hold and release", "Independent sampling"],
       [
         ["Certified", "Monthly", "Quarterly", "Quarterly", "not required", "yes, per schedule"],
-        ["Remediation — Tier 2 exceedance", "Every lot or monthly (more frequent)", "Monthly", "Monthly", "mandatory", "brand's own accredited lab, subject to audit"],
-        ["Remediation — Tier 1 exceedance", "Every lot", "Every lot", "Every lot", "mandatory", "Operator-directed third-party sampling"],
+        ["Remediation", "Every lot", "Every lot", "Every lot", "mandatory", "Operator-directed third-party sampling"],
       ],
-      "This grid is the starting point, not the assigned schedule. Certified is the only status that carries the mark; Remediation carries none. Reaction severity follows the tier of the exceedance and the brand's conduct, never an allowed overage — any Tier 1 exceedance, any quantifiable Cr(VI), or a concealment concern takes the every-lot, Operator-directed row regardless of risk tier.",
+      "This grid is the starting point, not the assigned schedule. Certified is the only status that carries the mark; Remediation carries none. Every claim analyte is equal at the gate — any exceedance, any quantifiable Cr(VI), or a concealment concern takes the every-lot, Operator-directed row regardless of product risk tier.",
     ) +
     h3("baseline", "Baseline") +
     p(
@@ -185,7 +183,7 @@ function lotTestingHtml() {
     ) +
     h3("reflex", "Reflex") +
     p(
-      `A new ingredient, supplier, origin, water source, product-contact equipment, packaging, formulation, or process change triggers a full-panel reflex on the next one or two lots. A Tier 1 result at or above 80% of its limit triggers confirmatory testing, Operator notice, and speciation where a speciated form applies.`,
+      `A new ingredient, supplier, origin, water source, product-contact equipment, packaging, formulation, or process change triggers a full-panel reflex on the next one or two lots. A claim-analyte result at or above 80% of its limit triggers confirmatory testing, Operator notice, and speciation where a speciated form applies.`,
     ) +
     h3("speciation", "Speciation") +
     table(

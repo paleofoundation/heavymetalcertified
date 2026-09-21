@@ -158,8 +158,8 @@ test("olive-oil totals-only: omit non-firm iAs/MeHg; keep numeric Cr-VI; eight t
 
 test("Master Limit Table parser reads the HMTc limit column", () => {
   const html = `<section id="limits"><p>9 of 11 analytes carry a firm ceiling</p>
-    <table><tr><td>Lead (Pb)</td><td>Tier 1</td><td>200</td><td>gov</td></tr>
-    <tr><td>Inorganic arsenic (iAs)</td><td>Tier 1</td><td>bounded</td><td>subsumed</td></tr></table></section>`
+    <table><tr><td>Lead (Pb)</td><td>200</td><td>gov</td></tr>
+    <tr><td>Inorganic arsenic (iAs)</td><td>bounded</td><td>subsumed</td></tr></table></section>`
   const { header, rows } = parseMasterLimitRows(html)
   assert.match(header, /9 of 11/)
   assert.equal(analyteKeyFromLabel("Lead (Pb)"), "Pb")

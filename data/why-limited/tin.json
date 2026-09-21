@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Acute gastrointestinal irritation" },
     { "k": "Chronic / cancer basis", "v": "None; not IARC-evaluated" },
     { "k": "Function of the limit", "v": "Can-lining integrity sentinel" },
-    { "k": "HMTc tier", "v": "Tier 2" }
+    { "k": "Panel role", "v": "Claim analyte" }
   ],
   "sections": [
     {
@@ -26,7 +26,7 @@
     },
     {
       "h2": "Who the exposure reaches",
-      "body": "Because the effect is an acute gastrointestinal irritation rather than a developmental or carcinogenic one, tin does not single out the fetus or the young child in the way the Tier-1 toxics do. Anyone eating a canned food in which the tin concentration has climbed high enough can experience the effect. The infant-food case is handled by a tighter regulatory figure — the EU caps canned infant formula and baby food at 50 mg/kg, well below the general canned-food limit — recognising both the smaller body and the expectation that foods for infants carry a wider safety margin."
+      "body": "Because the effect is an acute gastrointestinal irritation rather than a developmental or carcinogenic one, tin does not single out the fetus or the young child in the way the priority toxics do. Anyone eating a canned food in which the tin concentration has climbed high enough can experience the effect. The infant-food case is handled by a tighter regulatory figure — the EU caps canned infant formula and baby food at 50 mg/kg, well below the general canned-food limit — recognising both the smaller body and the expectation that foods for infants carry a wider safety margin."
     },
     {
       "h2": "Where tin shows up in food",
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "The value of a tin limit is diagnostic. Because tin in food comes from the can rather than the crop, a reading near the regulatory cap is direct evidence that a can's protective lining has failed and the food is in prolonged contact with bare tinplate — a defect that often travels with other migration and spoilage problems. Governments set the caps for the acute effect: Codex allows 250 mg/kg in canned foods other than beverages and 150 mg/kg in canned beverages; the EU sets the stricter figures of 200 mg/kg, 100 mg/kg for beverages, and 50 mg/kg for canned infant and baby foods.\n\nHMTc treats tin as a Tier-2 metal and adopts the strictest existing government maximum level directly, so a certified canned product is verified to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "The value of a tin limit is diagnostic. Because tin in food comes from the can rather than the crop, a reading near the regulatory cap is direct evidence that a can's protective lining has failed and the food is in prolonged contact with bare tinplate — a defect that often travels with other migration and spoilage problems. Governments set the caps for the acute effect: Codex allows 250 mg/kg in canned foods other than beverages and 150 mg/kg in canned beverages; the EU sets the stricter figures of 200 mg/kg, 100 mg/kg for beverages, and 50 mg/kg for canned infant and baby foods.\n\nHMTc treats tin as a claim analyte and adopts the strictest existing government maximum level directly, so a certified canned product is verified to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -59,7 +59,7 @@
     },
     {
       "q": "How does HMTc set its tin limit?",
-      "a": "HMTc treats tin as a Tier-2 metal and adopts the strictest existing government maximum level directly, verified by lot testing. A certified canned product is confirmed to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact."
+      "a": "HMTc treats tin as a claim analyte and adopts the strictest existing government maximum level directly, verified by lot testing. A certified canned product is confirmed to sit under the acute-effect ceiling and, in doing so, to have kept its can lining intact."
     }
   ],
   "connections": [

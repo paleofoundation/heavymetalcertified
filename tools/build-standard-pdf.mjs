@@ -28,10 +28,10 @@ const DATA = path.join(REPO, "data/standards")
 const JOINS = loadPageJoins(DATA)
 
 const ANALYTES = [
-  ["Pb", "Lead (Pb)", 1], ["Cd", "Cadmium (Cd)", 1], ["tAs", "Total arsenic (tAs)", 2],
-  ["iAs", "Inorganic arsenic (iAs)", 1], ["tHg", "Mercury, total (tHg)", 1],
-  ["MeHg", "Methylmercury (MeHg)", 1], ["Ni", "Nickel (Ni)", 2], ["Sn", "Tin (Sn)", 2],
-  ["Al", "Aluminium (Al)", 2], ["Cr", "Total chromium (Cr)", 2], ["Cr-VI", "Hexavalent chromium (Cr-VI)", 2],
+  ["Pb", "Lead (Pb)"], ["Cd", "Cadmium (Cd)"], ["tAs", "Total arsenic (tAs)"],
+  ["iAs", "Inorganic arsenic (iAs)"], ["tHg", "Mercury, total (tHg)"],
+  ["MeHg", "Methylmercury (MeHg)"], ["Ni", "Nickel (Ni)"], ["Sn", "Tin (Sn)"],
+  ["Al", "Aluminium (Al)"], ["Cr", "Total chromium (Cr)"], ["Cr-VI", "Hexavalent chromium (Cr-VI)"],
 ]
 const JUR = { EU: "European Union", UK: "United Kingdom", CODEX: "Codex Alimentarius", US: "US FDA", CA: "Canada", "AU-NZ": "Australia / New Zealand", CN: "China", IN: "India", BR: "Brazil", GSO: "Gulf (GSO)", KR: "South Korea", MX: "Mexico", TR: "Türkiye", PY: "Paraguay", MERCOSUR: "Mercosur", IL: "Israel", TH: "Thailand", VN: "Vietnam", PH: "Philippines", SG: "Singapore", CL: "Chile", CO: "Colombia", PA: "Panama", HK: "Hong Kong", MA: "Morocco", international: "Codex / international" }
 const jl = (j) => JUR[j] || j || ""
@@ -68,25 +68,25 @@ function publishedValue(c) {
 function cellKindOf(c) {
   return String((c && (c.type || c.cell_kind)) || "").toLowerCase()
 }
-function cellRow([k, label, tier], c, limitOverride) {
-  if (!c) return `| ${label} | Tier ${tier} | ${limitOverride ?? "—"} | not compiled |`
+function cellRow([k, label], c, limitOverride) {
+  if (!c) return `| ${label} | ${limitOverride ?? "—"} | not compiled |`
   const t = cellKindOf(c)
   const published = publishedValue(c)
   if (published != null) {
     const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "form_split" ? "strictest government ML, set by product form" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
-    return `| ${label} | Tier ${tier} | ${limitOverride ?? fmtNum(published)} | ${basis} |`
+    return `| ${label} | ${limitOverride ?? fmtNum(published)} | ${basis} |`
   }
-  if (limitOverride) return `| ${label} | Tier ${tier} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
+  if (limitOverride) return `| ${label} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
   if (t === "subsumed") {
     const n = c.value ?? c.binding_total
-    if (n != null) return `| ${label} | Tier ${tier} | ${fmtNum(n)} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
-    return `| ${label} | Tier ${tier} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
+    if (n != null) return `| ${label} | ${fmtNum(n)} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
+    return `| ${label} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
   }
-  if (t === "control") return `| ${label} | Tier ${tier} | control | measured every lot; no human-food maximum |`
-  if (t === "not_material" || t === "not-material") return `| ${label} | Tier ${tier} | n/m | not material in this matrix |`
-  return `| ${label} | Tier ${tier} | — | — |`
+  if (t === "control") return `| ${label} | control | measured every lot; no human-food maximum |`
+  if (t === "not_material" || t === "not-material") return `| ${label} | n/m | not material in this matrix |`
+  return `| ${label} | — | — |`
 }
-function derivRow([k, label, tier], c) {
+function derivRow([k, label], c) {
   if (!c) return `| ${label} | — | not compiled |`
   const published = publishedValue(c)
   if (published != null) {
@@ -195,8 +195,8 @@ async function build(slug) {
     `## Master limit table`,
     `All values in ppb (µg/kg), ${basisLabel} basis. A brand meeting every value qualifies for the mark.${variantNote}`,
     ``,
-    `| Analyte | Tier | HMTc limit | Basis |`,
-    `| --- | --- | --- | --- |`,
+    `| Analyte | HMTc limit | Basis |`,
+    `| --- | --- | --- |`,
     limitRows,
     ``,
     `## Derivation — where each number comes from`,

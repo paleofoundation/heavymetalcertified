@@ -120,7 +120,6 @@ const Para = (str, key) => Inline(str, s.para, key)
 // ── cell semantics from a compiled record ────────────────────────────────────
 const SHORT = { Pb: "Pb", iAs: "iAs", tAs: "tAs", tHg: "Hg", MeHg: "MeHg", Cd: "Cd", Cr: "Cr", "Cr-VI": "Cr-VI", Ni: "Ni", Sn: "Sn", Al: "Al" }
 const PANEL = META.panel
-const TIER1 = new Set(META.tier1 || []), TIER2 = new Set(META.tier2 || [])
 const basisWord = (b) => (b === "as_sold" ? "as sold" : "as consumed")
 const cellVal = (c) => (c == null ? "—" : c.value == null ? (c.type === "not_material" ? "n/m" : c.type === "control" ? "ctrl" : "—") : String(c.value))
 function feedFloor(c) {
@@ -179,7 +178,7 @@ const Methodology = () => [
   Para(META.manual_method_note.replace(/&mdash;/g, "—").replace(/&rsquo;/g, "’").replace(/&nbsp;/g, " "), "mn"),
   h(Text, { key: "h-read", style: s.h3 }, "How to read this standard"),
   Para("Every limit is a **maximum level for the finished product** in that subcategory's **native basis** — dry products as sold, wet products as consumed. A limit is not an ingredient specification: an ingredient (including a novel protein such as a precision-fermented, yeast-expressed animal-protein equivalent) is assessed by its **contribution to the finished product** at its inclusion rate. A supplier can back-calculate a defensible ingredient ceiling from the finished-product limit and the intended inclusion rate, and should control the heavy-metal load of its own feedstock and fermentation media accordingly.", "read1"),
-  Para("**Tier 1 toxics (Pb, Cd, iAs, Hg)** are zero-tolerance — there is no safe threshold, so the limit is the compliance line. **Tier 2 (tAs, Ni, Cr, Al, Sn)** are held to the same government limit; tiering sets the reaction to an exceedance, not permission to exceed it. A product is certified only at or below 100% of every published limit. **iAs** and **Cr-VI** are reflex speciation screens bounded by total arsenic and total chromium; **MeHg** has no terrestrial pathway and is bounded by total mercury; **tin** is material only for canned product, where it migrates from the tin-coated can. In the tables that follow, **n/m** marks a not-material analyte (controlled by reflex speciation, not a number) and **ctrl** a measured surveillance control for which no government sets a ceiling.", "read2"),
+  Para("Every claim analyte is equal at the gate. A product is certified only at or below 100% of every published government floor or disclosed read-across. An exceedance on any metal enters Remediation and carries no mark. **iAs** and **Cr-VI** are reflex speciation screens bounded by total arsenic and total chromium; **MeHg** has no terrestrial pathway and is bounded by total mercury; **tin** is material only for canned product, where it migrates from the tin-coated can. In the tables that follow, **n/m** marks a not-material analyte (controlled by reflex speciation, not a number) and **ctrl** a measured surveillance control for which no government sets a ceiling.", "read2"),
 ]
 
 // ── master matrix (landscape) ────────────────────────────────────────────────
@@ -205,17 +204,16 @@ function MasterMatrix() {
 // ── per-subcategory derivations (landscape) ──────────────────────────────────
 function SubDeriv(p, idx) {
   const v = p.rec.variants[p.variant] || p.rec.variants[Object.keys(p.rec.variants)[0]]
-  const widths = pct([1.25, 0.7, 0.95, 3.4, 1.25])
+  const widths = pct([1.4, 1.1, 3.6, 1.4])
   const header = [
-    { t: "Analyte", a: "left", s: s.th }, { t: "Tier", a: "left", s: s.th },
+    { t: "Analyte", a: "left", s: s.th },
     { t: "HMTc limit", a: "right", s: s.th }, { t: "Human-food basis of the limit (read-across analog)", a: "left", s: s.th },
     { t: "Pet-feed floor", a: "right", s: s.th },
   ]
   const rows = PANEL.map((a, ri) => {
     const c = v[a]
-    const tier = TIER1.has(a) ? "1" : TIER2.has(a) ? "2" : ""
     const cells = [
-      { t: `${SHORT[a] || a}`, a: "left", s: s.tdText }, { t: tier, a: "left", s: s.tdMonoMute },
+      { t: `${SHORT[a] || a}`, a: "left", s: s.tdText },
       { t: cellVal(c), a: "right", s: s.tdHmtc }, { t: derivBasis(c), a: "left", s: s.tdText },
       { t: feedFloor(c), a: "right", s: s.tdMonoMute },
     ]

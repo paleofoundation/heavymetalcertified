@@ -1,15 +1,15 @@
 ---
 title: "The Two Pathways"
-description: "The default HMTc limit is the strictest applicable government maximum. Where the program sets a number itself, the Tier-1 toxics and the cells no government regulates, it uses two pathways: a clean-subcategory limit near P97 (~90% pass) and a dirty-subcategory limit near P45 (~40% pass)."
+description: "The default HMTc limit is the strictest applicable government maximum. Where the program sets a number itself, the priority toxics and the cells no government regulates, it uses two pathways: a clean-subcategory limit near P97 (~90% pass) and a dirty-subcategory limit near P45 (~40% pass)."
 type: program
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 ---
 
 # The Two Pathways
 
-Most HMTc limits are not calibrated at all. The default standard for any subcategory and analyte is **the strictest maximum level set by a credible government regulator**, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the product's native basis. That is a lookup against sovereign law, not a computation, and it is where most of the panel lands: the Tier-2 metals (nickel, tin, aluminium, hexavalent chromium) adopt the government limit directly, and where the law itself splits a limit by formulation, nickel and aluminium in infant formula, the standard adopts the law's own split and cites it.
+Most HMTc limits are not calibrated at all. The default standard for any subcategory and analyte is **the strictest maximum level set by a credible government regulator**, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the product's native basis. That is a lookup against sovereign law, not a computation, and it is where most of the panel lands: nickel, tin, aluminium, and hexavalent chromium adopt the government limit directly, and where the law itself splits a limit by formulation, nickel and aluminium in infant formula, the standard adopts the law's own split and cites it.
 
-The two pathways describe what the program does in the space the government limit leaves open: the four Tier-1 toxics, where a clean market can beat the law, and the cells that no government regulates at all. In those cells the program sets the number from the occurrence distribution, and the question every category asks differently returns: *how clean is achievable here, today, without certifying nothing or certifying everything?* The choice between the two pathways is the most consequential decision in setting one of those numbers, so it is worth being explicit about both the intent and the mechanism.
+The two pathways describe what the program does in the space the government limit leaves open: the four priority toxics, where a clean market can beat the law, and the cells that no government regulates at all. In those cells the program sets the number from the occurrence distribution, and the question every category asks differently returns: *how clean is achievable here, today, without certifying nothing or certifying everything?* The choice between the two pathways is the most consequential decision in setting one of those numbers, so it is worth being explicit about both the intent and the mechanism. It is how a number is set. It is not a second certification track: every claim analyte is equal at the gate.
 
 ## Lead with the pass rate, not the percentile
 
@@ -18,7 +18,7 @@ Where the program sets an occurrence-based number, the pathways are easiest to u
 - A **clean** subcategory is one where good product is the norm and contamination is the exception. The standard should pass roughly the cleanest **90%** of the market and exclude the dirtiest tail. The mechanism that delivers that is the **97th percentile (P97)** of the subcategory's occurrence distribution.
 - A **dirty** subcategory is one where contamination is endemic, to the soil, the commodity, or the process, so that demanding near-zero on day one would certify almost nothing. The standard should pass roughly the cleaner **40%** of the market and put the rest on notice. The mechanism is the **45th percentile (P45)**.
 
-The percentile is not the goal; the pass rate is. P97 and P45 are the levers calibrated to hit ~90% and ~40% against real occurrence distributions: targets confirmed at 94% and 42% against FDA per-sample lot data. For a Tier-1 toxic the occurrence value is floored against the government maximum, so the published limit is the *stricter* of the two: where the market cannot beat the law, the law governs; where it can, the tighter market value governs and the ratchet keeps room to work.
+The percentile is not the goal; the pass rate is. P97 and P45 are the levers calibrated to hit ~90% and ~40% against real occurrence distributions: targets confirmed at 94% and 42% against FDA per-sample lot data. For a priority toxic the occurrence value is floored against the government maximum, so the published limit is the *stricter* of the two: where the market cannot beat the law, the law governs; where it can, the tighter market value governs and the ratchet keeps room to work.
 
 ## Why a dirty pathway is not a loophole
 

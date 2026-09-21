@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Developmental neurotoxicity" },
     { "k": "Crosses", "v": "Placenta; blood-brain barrier" },
     { "k": "Most exposed", "v": "The fetus; young children" },
-    { "k": "HMTc tier", "v": "Tier 1 (zero-tolerance)" }
+    { "k": "Panel role", "v": "Priority toxic" }
   ],
   "sections": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "The concentration of the exposure in a few high-trophic species is what makes a certification limit effective: a limit does not have to touch most of the diet to remove most of the risk, because most of the methylmercury is in a small set of fish categories. Governments set maximum levels — the EU and Codex cap mercury in fish, with tighter figures for species destined for infant and child foods — but a maximum level is a ceiling, not a verified statement about a specific lot.\n\nHMTc classifies methylmercury as one of four Tier-1 zero-tolerance toxics, speciates total mercury to methylmercury where a total figure could overstate the load, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked lot by lot. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "The concentration of the exposure in a few high-trophic species is what makes a certification limit effective: a limit does not have to touch most of the diet to remove most of the risk, because most of the methylmercury is in a small set of fish categories. Governments set maximum levels — the EU and Codex cap mercury in fish, with tighter figures for species destined for infant and child foods — but a maximum level is a ceiling, not a verified statement about a specific lot.\n\nHMTc classifies methylmercury as a priority toxic, speciates total mercury to methylmercury where a total figure could overstate the load, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked lot by lot. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -63,7 +63,7 @@
     },
     {
       "q": "How does HMTc set its mercury limit?",
-      "a": "HMTc treats methylmercury as a Tier-1 zero-tolerance toxic, speciates total mercury to methylmercury where needed, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing."
+      "a": "HMTc treats methylmercury as a priority toxic, speciates total mercury to methylmercury where needed, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing."
     }
   ],
   "connections": [

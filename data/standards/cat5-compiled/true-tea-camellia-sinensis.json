@@ -72,7 +72,7 @@
       "type": "control",
       "value": null,
       "provenance": "control",
-      "rationale": "No credible sovereign sets an inorganic-arsenic maximum level for tea leaf. Every sovereign inorganic-arsenic cell is scoped either to rice and rice-based products, to a ready-to-drink beverage (EU fruit juices 20 ug/kg, EU non-alcoholic rice-based drinks 30 ug/kg, US FDA apple juice 10 ug/kg), to seafood, or to packaged and public drinking water. None of those is applicable to this dry commodity, and applying a ready-to-drink beverage cell to a dry leaf, bean or powder would be a basis conflation. Inorganic arsenic is a Tier-1 analyte, so it is speciated whenever the total-arsenic screen is elevated.",
+      "rationale": "No credible sovereign sets an inorganic-arsenic maximum level for tea leaf. Every sovereign inorganic-arsenic cell is scoped either to rice and rice-based products, to a ready-to-drink beverage (EU fruit juices 20 ug/kg, EU non-alcoholic rice-based drinks 30 ug/kg, US FDA apple juice 10 ug/kg), to seafood, or to packaged and public drinking water. None of those is applicable to this dry commodity, and applying a ready-to-drink beverage cell to a dry leaf, bean or powder would be a basis conflation. Inorganic arsenic is a claim analyte, so it is speciated whenever the total-arsenic screen is elevated.",
       "reference_method": "Inorganic arsenic by HPLC-ICP-MS, reflexed whenever total arsenic on the lot exceeds 100 ug/kg in the as-sold dry basis; a confirmed inorganic-arsenic result escalates to an origin and irrigation-water investigation. Inorganic arsenic never substitutes for the total-arsenic report.",
       "bounded_by": "tAs",
       "companion_ml": null
@@ -102,7 +102,7 @@
       "type": "control",
       "value": null,
       "provenance": "control",
-      "rationale": "No credible sovereign sets a nickel maximum level for tea leaf. EU 2024/1987 is the only comprehensive sovereign nickel instrument; its cells cover cereals, pulses, oilseeds, tree nuts, vegetables, cocoa and chocolate, infant formula, baby food and fruit and vegetable juices, and none of them covers this commodity. The juice and nectar cell (250 ug/kg) is written in a ready-to-drink basis and cannot be applied to a dry commodity, and the dry-commodity cells that do exist are written for other plant families. Nickel is a Tier-2 analyte on the mandatory eight-total panel.",
+      "rationale": "No credible sovereign sets a nickel maximum level for tea leaf. EU 2024/1987 is the only comprehensive sovereign nickel instrument; its cells cover cereals, pulses, oilseeds, tree nuts, vegetables, cocoa and chocolate, infant formula, baby food and fruit and vegetable juices, and none of them covers this commodity. The juice and nectar cell (250 ug/kg) is written in a ready-to-drink basis and cannot be applied to a dry commodity, and the dry-commodity cells that do exist are written for other plant families. Nickel is a claim analyte on the mandatory eight-total panel.",
       "reference_method": "Total nickel by ICP-MS on every certified lot in the as-sold dry basis, reported on the certificate. An elevated result escalates to a soil, cultivar and stainless-equipment investigation.",
       "bounded_by": null,
       "companion_ml": null

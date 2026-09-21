@@ -21,21 +21,21 @@ const PAGES = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/cat1-pa
 
 // ── analyte panel ────────────────────────────────────────────────────────────
 // Order and column labels are the web master matrix's (build-cat1-manual.mjs).
-// `full`/`tier` are the derivation renderer's (build-cat1-standard-pages.mjs).
+// `full` is the derivation renderer's (build-cat1-standard-pages.mjs).
 // Nine cells: the eight-total laboratory panel required by the canonical analyte contract
 // (Pb, Cd, tAs, tHg, Ni, Sn, Al, total Cr) plus iAs, Cat 1's core species cell. A species
 // cell is additional to its parent total and never substitutes for it, so tAs and iAs both
 // appear. This array must stay in step with PANEL in build-cat1-standard-pages.mjs.
 export const ANALYTES = [
-  { key: "Pb", col: "Lead", full: "Lead (Pb)", tier: "Tier 1" },
-  { key: "iAs", col: "iAs", full: "Inorganic arsenic (iAs)", tier: "Tier 1" },
-  { key: "tAs", col: "tAs", full: "Total arsenic (tAs)", tier: "Tier 2" },
-  { key: "tHg", col: "Hg", full: "Mercury (tHg)", tier: "Tier 1" },
-  { key: "Cd", col: "Cd", full: "Cadmium (Cd)", tier: "Tier 1" },
-  { key: "Cr", col: "Cr", full: "Total chromium (Cr)", tier: "Tier 2" },
-  { key: "Ni", col: "Ni", full: "Nickel (Ni)", tier: "Tier 2" },
-  { key: "Sn", col: "Sn", full: "Tin (Sn)", tier: "Tier 2" },
-  { key: "Al", col: "Al", full: "Aluminium (Al)", tier: "Tier 2" },
+  { key: "Pb", col: "Lead", full: "Lead (Pb)" },
+  { key: "iAs", col: "iAs", full: "Inorganic arsenic (iAs)" },
+  { key: "tAs", col: "tAs", full: "Total arsenic (tAs)" },
+  { key: "tHg", col: "Hg", full: "Mercury (tHg)" },
+  { key: "Cd", col: "Cd", full: "Cadmium (Cd)" },
+  { key: "Cr", col: "Cr", full: "Total chromium (Cr)" },
+  { key: "Ni", col: "Ni", full: "Nickel (Ni)" },
+  { key: "Sn", col: "Sn", full: "Tin (Sn)" },
+  { key: "Al", col: "Al", full: "Aluminium (Al)" },
 ]
 export const PANEL = ANALYTES.map((a) => a.key)
 
@@ -129,7 +129,7 @@ export function pageDerivation(pageSlug) {
     if (c && c.type === "read_across") { hmtc = String(c.value); binds = "read-across"; type = "read_across"; usesReadAcross = true }
     else if (c && c.type === "not_material") { hmtc = "n/m"; binds = "controlled"; type = "not_material"; usesNotMaterial = true }
     else { hmtc = String(c.value); binds = JUR_LABEL[c.binding_jurisdiction] || c.binding_jurisdiction; type = "gov" }
-    return { key: meta.key, analyte: meta.full, tier: meta.tier, perCountry, hmtc, binds, type, bindingJur: c ? c.binding_jurisdiction : null }
+    return { key: meta.key, analyte: meta.full, perCountry, hmtc, binds, type, bindingJur: c ? c.binding_jurisdiction : null }
   })
 
   const variantNote = variants.length > 1

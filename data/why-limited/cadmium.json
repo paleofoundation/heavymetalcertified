@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Renal tubular dysfunction; cancer" },
     { "k": "Biological half-life", "v": "10–30 years" },
     { "k": "IARC classification", "v": "Group 1 (carcinogenic)" },
-    { "k": "HMTc tier", "v": "Tier 1 (zero-tolerance)" }
+    { "k": "Panel role", "v": "Priority toxic" }
   ],
   "sections": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "For a cumulative toxicant, the arithmetic favours acting on every source rather than any one meal: a diet that runs a little above the guidance value for years is the exposure that matters, and no single lot looks alarming on its own. Governments set binding maximum levels — the EU regulates cadmium tightly in baby food, chocolate, cereals and vegetables — but those are ceilings a product must not exceed, not a verified statement that a specific lot is below them.\n\nHMTc classifies cadmium as one of four Tier-1 zero-tolerance toxics and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked by lot testing, with a regulatory hard-stop that blocks certification of any product over an applicable legal limit. Where the cleaner half of a category already beats the government ceiling, the certificate holds products to that tighter number rather than the law's floor. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "For a cumulative toxicant, the arithmetic favours acting on every source rather than any one meal: a diet that runs a little above the guidance value for years is the exposure that matters, and no single lot looks alarming on its own. Governments set binding maximum levels — the EU regulates cadmium tightly in baby food, chocolate, cereals and vegetables — but those are ceilings a product must not exceed, not a verified statement that a specific lot is below them.\n\nHMTc classifies cadmium as a priority toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked by lot testing, with a regulatory hard-stop that blocks certification of any product over an applicable legal limit. Where the cleaner half of a category already beats the government ceiling, the certificate holds products to that tighter number rather than the law's floor. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -63,7 +63,7 @@
     },
     {
       "q": "How does HMTc set its cadmium limit?",
-      "a": "HMTc treats cadmium as a Tier-1 zero-tolerance toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing. Where the cleaner part of a category already beats the government ceiling, the certificate holds to that tighter number."
+      "a": "HMTc treats cadmium as a priority toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing. Where the cleaner part of a category already beats the government ceiling, the certificate holds to that tighter number."
     }
   ],
   "connections": [

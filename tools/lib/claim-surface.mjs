@@ -290,7 +290,8 @@ export function analyteKeyFromLabel(label) {
   return null
 }
 
-// Master Limit Table: Analyte | Tier | HMTc limit | Binding basis
+// Master Limit Table: Analyte | HMTc limit | Binding basis
+// (older pages may still carry a retired Analyte | Tier | limit | basis column.)
 export function parseMasterLimitRows(html) {
   const start = html.indexOf('id="limits"')
   if (start < 0) return { header: "", rows: [] }
@@ -302,10 +303,11 @@ export function parseMasterLimitRows(html) {
   const rows = []
   for (const tr of sec.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
     const tds = [...tr[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((m) => decodeEntities(m[1]))
-    if (tds.length < 3) continue
+    if (tds.length < 2) continue
     const key = analyteKeyFromLabel(tds[0])
     if (!key) continue
-    rows.push({ key, label: tds[0], limit: tds[2], raw: tds })
+    const limit = /^\s*Tier[\s-]*[12]\s*$/i.test(tds[1]) ? tds[2] : tds[1]
+    rows.push({ key, label: tds[0], limit, raw: tds })
   }
   return { header, rows, section: sec }
 }
