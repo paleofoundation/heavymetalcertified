@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Cancer (skin, lung, bladder)" },
     { "k": "IARC classification", "v": "Group 1 (carcinogenic)" },
     { "k": "Threshold", "v": "None; genotoxic" },
-    { "k": "HMTc tier", "v": "Tier 1 (zero-tolerance)" }
+    { "k": "Panel role", "v": "Priority toxic" }
   ],
   "sections": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "When the assessment bodies decline to name a safe intake and current exposure already reaches the cancer reference point, there is no margin to certify against — the objective is to hold the number as low as the supply chain can reach. Governments have moved: the EU and Codex set maximum levels for inorganic arsenic in rice and rice destined for infant food, and the FDA has proposed action levels for infant rice cereal. These are ceilings; they do not verify a given lot.\n\nHMTc classifies inorganic arsenic as one of four Tier-1 zero-tolerance toxics, applies its speciation reflex where total arsenic could otherwise overstate the inorganic load, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked lot by lot. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "When the assessment bodies decline to name a safe intake and current exposure already reaches the cancer reference point, there is no margin to certify against — the objective is to hold the number as low as the supply chain can reach. Governments have moved: the EU and Codex set maximum levels for inorganic arsenic in rice and rice destined for infant food, and the FDA has proposed action levels for infant rice cereal. These are ceilings; they do not verify a given lot.\n\nHMTc classifies inorganic arsenic as a priority toxic, applies its speciation reflex where total arsenic could otherwise overstate the inorganic load, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, checked lot by lot. A regulatory hard-stop blocks certification of any product over an applicable legal limit. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -62,7 +62,7 @@
     },
     {
       "q": "How does HMTc set its arsenic limit?",
-      "a": "HMTc treats inorganic arsenic as a Tier-1 zero-tolerance toxic, speciates total arsenic to inorganic where needed, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing."
+      "a": "HMTc treats inorganic arsenic as a priority toxic, speciates total arsenic to inorganic where needed, and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing."
     }
   ],
   "connections": [

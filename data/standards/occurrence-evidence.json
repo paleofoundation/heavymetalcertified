@@ -2,7 +2,7 @@
   "schema": "hmtc.cert-occurrence-evidence.v1",
   "generated_from_commit": "02df62441",
   "source_commit_date": "2026-08-10T20:25:50+03:00",
-  "method": "HMTc Method v2.0 (government-limit default; selective occurrence pooling for Tier-1 toxics and no-ML cells)",
+  "method": "HMTc Method v2.0 (government-limit default; selective occurrence pooling for priority toxics and no-ML cells)",
   "firewall_note": "HMT&C occurrence + derivation asset. Renders on heavymetalcertified.com only. The derivation (pooled percentile -> limit -> rationale) must never appear on a heavymetalindex.com URL. Occurrence findings are literature, cited one-way to the index source pages.",
   "counts": {
     "cells": 757,
@@ -60560,7 +60560,7 @@
           "value_ppb": 180000000,
           "source_id": "eu_2009_48_cat3_sn_toy_migration",
           "jurisdiction": "EU",
-          "label": "EN 71-3 / 2009/48 Cat III tin migration limit (180000 mg/kg — very permissive; Tier-2 screen), applied via EN 1400",
+          "label": "EN 71-3 / 2009/48 Cat III tin migration limit (180000 mg/kg — very permissive; claim-analyte screen), applied via EN 1400",
           "basis_kind": "read-across"
         },
         "percentile": null,

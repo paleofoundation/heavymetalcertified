@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Developmental neurotoxicity" },
     { "k": "Threshold", "v": "None established" },
     { "k": "Most exposed", "v": "Infants, children, the fetus" },
-    { "k": "HMTc tier", "v": "Tier 1 (zero-tolerance)" }
+    { "k": "Panel role", "v": "Priority toxic" }
   ],
   "sections": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "When no body will name a safe intake, the maximum levels in force are minimize-exposure ceilings — the FDA's Closer to Zero action levels of 10 ppb for fruits, most vegetables and mixtures and 20 ppb for single-ingredient root vegetables and dry infant cereals; the EU's binding 20 µg/kg for baby food and 10 µg/kg for liquid formula. These are floors that push exposure down, not certificates that a product is safe. A certification limit does something a government ceiling and a label claim cannot: it verifies, lot by lot, that a specific product sits at or below the number.\n\nHMTc classifies lead as one of four Tier-1 zero-tolerance toxics and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value — so a certified product is never passed above a limit some credible government sets, and where the market can already do better, the certificate requires it. A regulatory hard-stop blocks certification of any product that violates an actual legal lead limit regardless of HMTc status. For the foods most eaten by the population that absorbs the most and can tolerate the least, a skewed distribution with no safe floor is the entire case for testing lead lot by lot rather than trusting a category mean. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "When no body will name a safe intake, the maximum levels in force are minimize-exposure ceilings — the FDA's Closer to Zero action levels of 10 ppb for fruits, most vegetables and mixtures and 20 ppb for single-ingredient root vegetables and dry infant cereals; the EU's binding 20 µg/kg for baby food and 10 µg/kg for liquid formula. These are floors that push exposure down, not certificates that a product is safe. A certification limit does something a government ceiling and a label claim cannot: it verifies, lot by lot, that a specific product sits at or below the number.\n\nHMTc classifies lead as a priority toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value — so a certified product is never passed above a limit some credible government sets, and where the market can already do better, the certificate requires it. A regulatory hard-stop blocks certification of any product that violates an actual legal lead limit regardless of HMTc status. For the foods most eaten by the population that absorbs the most and can tolerate the least, a skewed distribution with no safe floor is the entire case for testing lead lot by lot rather than trusting a category mean. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -63,7 +63,7 @@
     },
     {
       "q": "How does HMTc set its lead limit?",
-      "a": "HMTc treats lead as a Tier-1 zero-tolerance toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing. A certified product is never passed above a limit a credible government sets, and where the market can do better the certificate requires it."
+      "a": "HMTc treats lead as a priority toxic and sets its certification limit to the lower of the strictest existing government maximum level and the certified-market occurrence value, verified by lot testing. A certified product is never passed above a limit a credible government sets, and where the market can do better the certificate requires it."
     }
   ],
   "connections": [

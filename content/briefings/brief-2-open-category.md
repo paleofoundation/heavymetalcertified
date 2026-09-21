@@ -21,17 +21,17 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "All Standards Briefings", href: "/briefings" }
-  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing &middot; June 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The heavy-metals category will be owned the way non-GMO was: by whoever plants the word and the picture first. Right now the word is unclaimed, the visual is empty, and the demand is already standing in the aisle.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The heavy-metals category will be owned the way non-GMO was &mdash; by whoever plants the word and the picture first. Right now the word is unclaimed, the visual is empty, and the demand is already standing in the aisle.</p>
 </div>
 
 ## Abstract
 
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>In 2009 there was no seal for the question shoppers most wanted answered about their food. A nonprofit with a butterfly changed that in about five years, and in doing so beat a thirty-year-old federal seal at a game the federal seal was never set up to play. This briefing is about how that happened, why it was not luck, and why the same opening is sitting wide open in heavy metals right now: the word unclaimed, the visual undefined, the demand already standing in the aisle.</em></p>
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch"><em>In 2009 there was no seal for the question shoppers most wanted answered about their food. A nonprofit with a butterfly changed that in about five years, and in doing so beat a thirty-year-old federal seal at a game the federal seal was never set up to play. This briefing is about how that happened, why it was not luck, and why the same opening is sitting wide open in heavy metals right now — the word unclaimed, the visual undefined, the demand already standing in the aisle.</em></p>
 
 ## The word Organic never owned
 
@@ -43,15 +43,15 @@ The Non-GMO Project had a butterfly. It verified its first products in 2010. Wit
 
 How does a butterfly catch a thirty-year head start in five years?
 
-It does not: not if it fights on the leader's ground. The Non-GMO Project never tried to be a better organic. It did the thing Al Ries and Jack Trout named decades earlier and called positioning: rather than fight for a word someone already owned, find a word no one owns, and take it [5]. Organic owned "organic." It never owned "non-GMO." And in the decade when the question shoppers most wanted answered on a label was the GMO question, the word Organic never owned turned out to be the word that mattered.
+It does not — not if it fights on the leader's ground. The Non-GMO Project never tried to be a better organic. It did the thing Al Ries and Jack Trout named decades earlier and called positioning: rather than fight for a word someone already owned, find a word no one owns, and take it [5]. Organic owned "organic." It never owned "non-GMO." And in the decade when the question shoppers most wanted answered on a label was the GMO question, the word Organic never owned turned out to be the word that mattered.
 
 ## How a butterfly caught a thirty-year head start
 
 Ries spent a career reducing this to laws, and three of them explain the butterfly.
 
-The first is the Law of the Category: if you cannot be first in an existing category, make a new one you can be first in [5]. Organic was unbeatable as organic, so the Project did not enter the organic category at all. It drew a new line on the shelf, the GMO question, and stood first across it. You do not take the hill the leader is holding. You find the hill no one is standing on.
+The first is the Law of the Category: if you cannot be first in an existing category, make a new one you can be first in [5]. Organic was unbeatable as organic, so the Project did not enter the organic category at all. It drew a new line on the shelf — the GMO question — and stood first across it. You do not take the hill the leader is holding. You find the hill no one is standing on.
 
-The second is the Law of Focus, which Ries called the most powerful idea in marketing: own a word in the customer's mind [5]. The Project owned one. Not "natural," not "clean," not "wholesome": words too broad for any single seal to own. One word, narrow enough to belong to one mark: non-GMO.
+The second is the Law of Focus, which Ries called the most powerful idea in marketing: own a word in the customer's mind [5]. The Project owned one. Not "natural," not "clean," not "wholesome" — words too broad for any single seal to own. One word, narrow enough to belong to one mark: non-GMO.
 
 The third is the Law of Sacrifice, the one most brands cannot bring themselves to obey. To own the word, the Project gave up everything that was not the word. It promised nothing about nutrition, pesticides, animal welfare, or carbon. It said one thing. A brand that says one thing is remembered for it. A brand that says ten things is remembered for none.
 
@@ -59,9 +59,9 @@ The third is the Law of Sacrifice, the one most brands cannot bring themselves t
 
 A word in the mind is a nail. A nail needs a hammer.
 
-That is Laura Ries's idea, and it is the second half of why the butterfly won [5]. A verbal position, non-GMO, is abstract, and abstractions live in the part of the mind that forgets. A visual is concrete, and lives in the part that does not. The image drives the word in and holds it there.
+That is Laura Ries's idea, and it is the second half of why the butterfly won [5]. A verbal position — non-GMO — is abstract, and abstractions live in the part of the mind that forgets. A visual is concrete, and lives in the part that does not. The image drives the word in and holds it there.
 
-The butterfly is close to a perfect hammer. It is a single, specific image, a monarch, not a generic insect, so it is ownable; no one else can use it without summoning the Project. It is simple enough to read at thumbnail size on a crowded package. It is emotional: delicate, natural, faintly endangered, which is precisely the register the GMO concern trades in. And it is not arbitrary: the monarch is a creature whose own decline has been tied to the herbicide-tolerant agriculture the label exists to flag. The picture carries the argument. Laura Ries's point is that the brands that win are rarely the ones with the best words. They are the ones whose word arrives fastened to an image you cannot put down.
+The butterfly is close to a perfect hammer. It is a single, specific image — a monarch, not a generic insect — so it is ownable; no one else can use it without summoning the Project. It is simple enough to read at thumbnail size on a crowded package. It is emotional: delicate, natural, faintly endangered, which is precisely the register the GMO concern trades in. And it is not arbitrary — the monarch is a creature whose own decline has been tied to the herbicide-tolerant agriculture the label exists to flag. The picture carries the argument. Laura Ries's point is that the brands that win are rarely the ones with the best words. They are the ones whose word arrives fastened to an image you cannot put down.
 
 ## The empty position in heavy metals
 
@@ -69,21 +69,21 @@ Now look at heavy metals, and look at it the way Ries would.
 
 The demand is already there. Demand is the part of a new category that normally has to be manufactured, and here it has manufactured itself. A unanimous Supreme Court has put baby-food heavy metals on the front page. California and Maryland now require testing and public disclosure, and the exposés arrive on a schedule [4]. A parent at the shelf is already carrying the heavy-metals question in her head. What she does not have is a seal that answers it.
 
-Because no one owns the word. Look at what is actually on the package. Organic owns production methods and is silent on metals: organic cocoa, organic rice, and organic root vegetables carry them like everything else, because the metals come from soil and water, not from farming method [3], [6]. Non-GMO owns the gene and is silent on metals. The broad "clean label" marks do test for metals, but they test for metals among a dozen other things, and a mark about everything cannot own one word. That is the Law of Focus running in reverse [6]. And there is no butterfly. The category has no visual hammer at all. The verbal position is open. The visual position is empty. The demand is standing in the aisle with nowhere to land.
+Because no one owns the word. Look at what is actually on the package. Organic owns production methods and is silent on metals — organic cocoa, organic rice, and organic root vegetables carry them like everything else, because the metals come from soil and water, not from farming method [3], [6]. Non-GMO owns the gene and is silent on metals. The broad "clean label" marks do test for metals — but they test for metals among a dozen other things, and a mark about everything cannot own one word. That is the Law of Focus running in reverse [6]. And there is no butterfly. The category has no visual hammer at all. The verbal position is open. The visual position is empty. The demand is standing in the aisle with nowhere to land.
 
 This is the 2009 of heavy metals. The category already exists in the customer's mind and not yet on the shelf. That gap between the two is the most valuable thing in marketing, and it never stays open for long.
 
 ## The standard built to own it
 
-A position does not occupy itself. Someone steps into it, or it sits empty until someone does. The Heavy Metal Tested & Certified program was built to step into this one, and it was built, deliberately or not, along Ries's lines.
+A position does not occupy itself. Someone steps into it, or it sits empty until someone does. The Heavy Metal Tested & Certified program was built to step into this one, and it was built — deliberately or not — along Ries's lines.
 
 It owns the words. The name is not a brand laid on top of a category; it is the category. *Heavy Metal Tested & Certified.* There is no translation step between what the seal is called and what the shopper wants to know. Ries's ideal name is the one that vanishes into the category it names, and this one does [5].
 
-It is focused. It certifies one thing, eight metals in infant and child food, and claims nothing about the hundred other things a food can be. It says only that a product was independently tested against published limits under ongoing surveillance; it is forbidden from saying "safe," and does not [6]. By the Law of Focus, that narrowness is not the limitation it looks like. It is the entire asset.
+It is focused. It certifies one thing — eight metals in infant and child food — and claims nothing about the hundred other things a food can be. It says only that a product was independently tested against published limits under ongoing surveillance; it is forbidden from saying "safe," and does not [6]. By the Law of Focus, that narrowness is not the limitation it looks like. It is the entire asset.
 
-It is first in the way that counts. Ries's Law of Leadership holds that it is better to be first than better, and the first that decides a category is first in the mind, not first in the factory [5]. The position goes to the first credible, defensible, methodology-published standard that a brand and a regulator can both stand behind, and that is the race actually under way [6].
+It is first in the way that counts. Ries's Law of Leadership holds that it is better to be first than better, and the first that decides a category is first in the mind, not first in the factory [5]. The position goes to the first credible, defensible, methodology-published standard that a brand and a regulator can both stand behind — and that is the race actually under way [6].
 
-And it has a hammer, though the hammer is young. The mark is the category's own name rendered as a heavy, black, unmistakable wordmark: heavy metal set in the literal weight of the words, carrying the double meaning that makes a thing stick. It owns the word on the page the way the butterfly owns it in the air. The pictorial hammer for this category, the heavy-metals equivalent of the butterfly, has not been claimed by anyone yet. That, too, is a position sitting open, and the standard that owns the word is the one in line to claim it.
+And it has a hammer, though the hammer is young. The mark is the category's own name rendered as a heavy, black, unmistakable wordmark — heavy metal set in the literal weight of the words, carrying the double meaning that makes a thing stick. It owns the word on the page the way the butterfly owns it in the air. The pictorial hammer for this category — the heavy-metals equivalent of the butterfly — has not been claimed by anyone yet. That, too, is a position sitting open, and the standard that owns the word is the one in line to claim it.
 
 ## Who owns it
 
@@ -93,7 +93,7 @@ Heavy metals will be owned the same way. The concern is too real, and now too pe
 
 So the question this briefing leaves you with is not whether the heavy-metals category will be owned. It will. The question is the one Seth Godin tends to ask at the end of things: now that you can see it, what are you going to do about it?
 
-The category of heavy metals will be owned. The only question is by whom, and which side of that sentence your brand is standing on.
+The category of heavy metals will be owned. The only question is by whom — and which side of that sentence your brand is standing on.
 
 ---
 
@@ -130,7 +130,7 @@ The category of heavy metals will be owned. The only question is by whom, and wh
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change: worth doing for the documents most likely to be cited.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>
   </div>
 
 ## Cite this briefing

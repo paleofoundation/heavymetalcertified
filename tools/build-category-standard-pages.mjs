@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Generalized renderer: compiled per-category standard records -> canonical cert standard pages.
 // Category-driven successor to build-cat1-standard-pages.mjs (which stays as-is for Cat-1). Every
-// category-specific fact (panel, analyte tiering, jurisdictions, native basis, cite volume, whether
+// category-specific fact (panel, jurisdictions, native basis, cite volume, whether
 // an 8:1 reconstitution note applies) comes from the `_meta` block of the category's pages.json, so
 // one renderer serves Category 6 (Seafood) now and the remaining categories later.
 //
@@ -33,7 +33,6 @@ const TOX = loadToxAnchors(path.join(REPO, "data/standards"))
 
 const ACCENT = "#9f2727", LINK = "#1c43ad"
 const PANEL = META.panel
-const TIER1 = new Set(META.tier1 || [])
 
 // Full analyte label bank (superset; only PANEL entries render).
 const ANALYTE = {
@@ -42,7 +41,7 @@ const ANALYTE = {
   Cr: "Total chromium (Cr)", "Cr-VI": "Hexavalent chromium (Cr-VI)", Ni: "Nickel (Ni)",
   Sn: "Tin (Sn)", Al: "Aluminium (Al)", U: "Uranium (U)", Sb: "Antimony (Sb)",
 }
-const tierOf = (a) => (TIER1.has(a) ? "Tier 1" : "Tier 2")
+const GATE_NOTE = `Every claim analyte is equal at the gate. A product is certified only when every analyte is at or below 100% of its published government floor or disclosed read-across; above the limit, on any metal, it is not certified and carries no mark. ${META.tier_footnote || ""}`.trim()
 
 // A cell is "firm" (carries a standalone published ceiling) only when it resolves to a
 // number via a sovereign lookup, a disclosed read-across, or a special-basis limit.
@@ -194,7 +193,7 @@ function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
   const rows = claimPanel.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
-    return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${tierOf(a)}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
+    return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
   // Honest cap note: a fully-numeric category (seafood, grains) states every analyte carries a
   // firm ceiling. Otherwise the remainder splits into two distinct, non-interchangeable kinds, and
@@ -210,7 +209,7 @@ function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
     : controlCount === 0
     ? `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
     : `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
-  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
+  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------
@@ -376,10 +375,6 @@ function cellsBindingDerivation(primary, subName, leadOverride) {
 }
 
 // --- drive --------------------------------------------------------------------
-const tier1Names = (META.tier1 || []).map((a) => (a === "tHg" ? "Hg" : a)).filter((v, i, arr) => arr.indexOf(v) === i).join(", ")
-const tier2Names = (META.tier2 || []).join(", ")
-const tierNote = `Tier 1 (${tier1Names}) are zero-tolerance toxics with no established safe threshold. Tier 2 (${tier2Names}) are held to the same government limit &mdash; tiering sets how the program reacts to an exceedance, not any permission to exceed it. A product is certified only when every analyte is at or below 100% of its published limit; above the limit, on any metal, it is not certified and carries no mark. ${META.tier_footnote || ""}`.trim()
-
 let n = 0
 for (const page of DOC.pages) {
   const variants = page.variants.map((v) => {
@@ -465,7 +460,7 @@ for (const page of DOC.pages) {
   })
   const body = [
     methodSection(page.name, basisWord, META.method_prose),
-    masterTable(variants, basisWord, tierNote, firmCount, claimPanel),
+    masterTable(variants, basisWord, GATE_NOTE, firmCount, claimPanel),
     derivation,
     occSection,
     riskFlag,

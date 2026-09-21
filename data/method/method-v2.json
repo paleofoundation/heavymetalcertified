@@ -1,22 +1,22 @@
 {
   "_purpose": "Canonical machine-readable statement of HMTc Method v2.0 — the SINGLE SOURCE OF TRUTH for how the program's method is described across heavymetalcertified.com. When the method changes, edit THIS file. The drift lint (tools/method-drift-lint.mjs, build-blocking in prebuild) fails the build if any page's prose regresses to a retired framing or asserts pooling as the universal method without the government-limit-default anchor. This is the sibling of the Part-2 'silent threshold deviation' guard, for prose.",
   "version": "v2.0",
-  "label": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for Tier-1 toxics and unregulated cells (CLAUDE.md Part 19)",
+  "label": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for priority toxics and unregulated cells (CLAUDE.md Part 19)",
   "ratified": "2026-08-03",
   "authority": "CLAUDE.md Part 19",
   "statement": {
     "default": "The default limit for any (product, analyte) is the strictest maximum level set by a credible government regulator (EU, Codex, FDA, WHO/JECFA, FSANZ, Health Canada), converted to the row's native basis — a lookup, not a computation.",
     "formulation_split": "Where the law splits a limit by formulation, the standard adopts the law's own split and cites it.",
-    "selective_occurrence_tier1": "The four Tier-1 toxics (Pb, Cd, iAs, MeHg) are set to min(occurrence percentile, strictest government ML).",
+    "selective_occurrence_tier1": "The four priority toxics (Pb, Cd, iAs, MeHg) are set to min(occurrence percentile, strictest government ML). That is limit-setting, not a status ladder.",
     "selective_occurrence_no_ml": "Cells no government regulates use the occurrence value (or a not-material / process-screen determination) as the sole basis.",
-    "tier2": "Tier-2 metals (Ni, Sn, Al, Cr-VI) adopt the government limit directly; occurrence is not computed unless no ML exists.",
+    "tier2": "Other claim analytes (Ni, Sn, Al, Cr-VI) adopt the government limit directly; occurrence is not computed unless no ML exists.",
     "occurrence_calibration": "Where an occurrence cell is computed, a cleaner subcategory sits near P97 and a more contaminated one near P45; targets ~90% clean / ~40% dirty row-pass (measured 94% / 42% on FDA 2026 lot data), rolling up to ~80% program-monitored average.",
     "pool": "The pool is the certification-relevant market: regulatory-equivalence, not geography.",
     "instrument": "Certify against the subcategory split, never the element-wise-max envelope.",
-    "unchanged_downstream": "The four-status lifecycle (Certified, Remediation, Suspension, Revocation), the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged. Certification requires every analyte at or below 100% of its published limit; there is no transitional overage band, and tiering sets only the severity of the reaction to an exceedance."
+    "unchanged_downstream": "The four-status lifecycle (Certified, Remediation, Suspension, Revocation), the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged. Certification requires every analyte at or below 100% of its published limit; there is no transitional overage band. All claim analytes are equal at the gate. An exceedance on any claim analyte enters Remediation unmarked."
   },
-  "tier1_analytes": ["Pb", "Cd", "iAs", "MeHg"],
-  "tier2_analytes": ["Ni", "Sn", "Al", "Cr-VI"],
+  "priority_toxics": ["Pb", "Cd", "iAs", "MeHg"],
+  "other_claim_analytes": ["Ni", "Sn", "Al", "Cr-VI"],
   "rationale_tags": ["literature-baseline", "regulatory-alignment", "precautionary", "feasibility-driven"],
   "lint": {
     "forbidden": [
@@ -43,10 +43,10 @@
         "from the published-literature occurrence"
       ],
       "anchors": [
-        "government", "strictest", "lookup", "Tier-1", "Tier 1", "Tier 1",
+        "government", "strictest", "lookup", "priority toxic", "priority toxics",
         "selective", "no government", "unregulated", "regulates",
         "tighten", "tightens", "tightened", "beats the law", "beat the law",
-        "occurrence-set", "occurrence-based", "sets a number itself", "the program sets", "the four Tier"
+        "occurrence-set", "occurrence-based", "sets a number itself", "the program sets", "the four priority"
       ],
       "why": "a pooling/percentile phrase with no government-limit-default anchor within the window reads as the retired v1.0 universal method (this is exactly how the homepage drifted); either the claim is wrong, or it needs its v2.0 scoping stated close enough that a hostile reader cannot quote it out of context"
     }

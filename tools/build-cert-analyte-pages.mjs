@@ -215,25 +215,17 @@ for (const a of DATA.analytes) {
   n++
 }
 
-// The /analytes index — "the analyte panel" page, ported VERBATIM from the approved
-// Claude Design canvas `isAnalytes` screen (Heavy Metal Certified v3.dc.html). The
-// hero band, "On this page" rail, and Connections/rail are driven by frontmatter
-// (HeroBand / Snav / Rail) — no hand-rolled hero. Body = four sections: Scope of the
-// panel, The panel at a glance (Analyte·Symbol·Reported-as·Tier table), Tier 1
-// (accordion), Tier 2 (accordion). The Tier accordions reuse the .hmtc-mhard
-// component in cert-chrome.scss. See [[project_manual_v3_canonical_design]].
+// The /analytes index — the analyte panel. Hero band, "On this page" rail, and
+// Connections/rail are driven by frontmatter. Body = scope, glance table, and
+// one accordion for the eight metals. Accordion reuses .hmtc-mhard.
 const H2S = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
-// Tier per metal (the toxic-species tier the canvas assigns): Pb·Cd·As·Hg = Tier 1,
-// Ni·Sn·Al·Cr = Tier 2.
-const ANALYTE_TIER = { lead: 1, cadmium: 1, arsenic: 1, mercury: 1, nickel: 2, tin: 2, aluminum: 2, chromium: 2 }
+const PRIORITY = new Set(["lead", "cadmium", "arsenic", "mercury"])
 
-function tierPill(t) {
-  return t === 1
-    ? `<span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 7px">Tier 1</span>`
-    : `<span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#8a7f7f;border:1px solid #e8e1db;background:#faf7f4;border-radius:2px;padding:3px 7px">Tier 2</span>`
+function roleLabel(slug) {
+  return PRIORITY.has(slug) ? "Priority toxic" : "Claim analyte"
 }
 
-// One <details> accordion per analyte (canvas tier1Rows/tier2Rows). Reuses the
+// One <details> accordion per analyte. Reuses the
 // .hmtc-mhard component: a +/− sign + Lora name summary, then meta · why · Reference.
 function analyteAccordion(list, openState) {
   return list
@@ -251,14 +243,10 @@ function analyteAccordion(list, openState) {
 }
 
 function indexPage() {
-  const tier1 = DATA.analytes.filter((a) => ANALYTE_TIER[a.slug] === 1)
-  const tier2 = DATA.analytes.filter((a) => ANALYTE_TIER[a.slug] === 2)
-  // "The panel at a glance" table — canonical burgundy head (from .wiki-content
-  // thead, not inline), first column tinted, symbol mono-red, tier pill.
   const tblRows = DATA.analytes
     .map(
       (a) =>
-        `<tr><td style="background:#fdf4f3;white-space:nowrap"><a href="/analytes/${a.slug}" style="color:${LINK};text-decoration:none">${esc(a.name)}</a></td><td style="font-family:'IBM Plex Mono',monospace;color:#9f2727;border-left:1px solid #f4eee9">${esc(a.sym)}</td><td style="border-left:1px solid #f4eee9">${esc(a.species)}</td><td style="border-left:1px solid #f4eee9;white-space:nowrap">${tierPill(ANALYTE_TIER[a.slug])}</td></tr>`,
+        `<tr><td style="background:#fdf4f3;white-space:nowrap"><a href="/analytes/${a.slug}" style="color:${LINK};text-decoration:none">${esc(a.name)}</a></td><td style="font-family:'IBM Plex Mono',monospace;color:#9f2727;border-left:1px solid #f4eee9">${esc(a.sym)}</td><td style="border-left:1px solid #f4eee9">${esc(a.species)}</td><td style="border-left:1px solid #f4eee9;white-space:nowrap">${esc(roleLabel(a.slug))}</td></tr>`,
     )
     .join("")
 
@@ -275,7 +263,7 @@ function indexPage() {
     "snapshot:",
     '  - { k: "Metals", v: "8" }',
     '  - { k: "Analytes quantified", v: "10" }',
-    '  - { k: "Tier 1 — zero-tolerance", v: "4" }',
+    '  - { k: "Pathway species", v: "3" }',
     '  - { k: "Reference pages", v: "8" }',
     "connections:",
     '  - { label: "The standards register", href: "/standards" }',
@@ -293,23 +281,17 @@ function indexPage() {
 
   const glance = `<section style="margin-bottom:52px">
 <h2 id="panel" style="${H2S}">The panel at a glance</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Tier&nbsp;1 analytes are zero-tolerance; Tier&nbsp;2 analytes are held to the same government limit. Tiering sets how the program reacts to an exceedance, not any permission to exceed it: a product is certified only when every analyte is at or below 100% of its published limit.</p>
-<div style="overflow-x:auto;border:1px solid #e8e1db"><table style="width:100%;border-collapse:collapse;min-width:44rem"><thead><tr><th>Analyte</th><th>Symbol</th><th>Reported as</th><th>Tier</th></tr></thead><tbody>${tblRows}</tbody></table></div>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Every claim analyte is equal at the gate: a product is certified only when every analyte is at or below 100% of its published government floor or disclosed read-across. Lead, cadmium, arsenic, and mercury may be named as priority toxics for toxicological clarity; that label is not a status ladder.</p>
+<div style="overflow-x:auto;border:1px solid #e8e1db"><table style="width:100%;border-collapse:collapse;min-width:44rem"><thead><tr><th>Analyte</th><th>Symbol</th><th>Reported as</th><th>Panel role</th></tr></thead><tbody>${tblRows}</tbody></table></div>
 </section>`
 
-  const t1 = `<section style="margin-bottom:52px">
-<h2 id="tier1" style="${H2S}">Tier 1 &mdash; zero-tolerance toxics</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are zero-tolerance. A lot that exceeds the limit cannot be certified while that result stands.</p>
-<div class="hmtc-mhard-list">${analyteAccordion(tier1, false)}</div>
+  const metals = `<section style="margin-bottom:20px">
+<h2 id="metals" style="${H2S}">The eight metals</h2>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A lot that exceeds any published limit cannot be certified while that result stands. Speciation is a pathway reflex and never replaces the parent total.</p>
+<div class="hmtc-mhard-list">${analyteAccordion(DATA.analytes, false)}</div>
 </section>`
 
-  const t2 = `<section style="margin-bottom:20px">
-<h2 id="tier2" style="${H2S}">Tier 2 &mdash; capped to the government limit</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">These four are held to the strictest sovereign maximum level for the product. Tiering sets how the program reacts to an exceedance, not permission to exceed it: above the limit, on any metal, the product is not certified and carries no mark.</p>
-<div class="hmtc-mhard-list">${analyteAccordion(tier2, true)}</div>
-</section>`
-
-  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${scope}\n${glance}\n${t1}\n${t2}\n`, "utf8")
+  fs.writeFileSync(path.join(OUT, "index.md"), `${fm}\n${scope}\n${glance}\n${metals}\n`, "utf8")
 }
 indexPage()
 

@@ -27,11 +27,11 @@ const JUR2REG = { EU: "eu-2023-915", UK: "uk-1881-2006", CODEX: "codex-cxs-193",
 const JUR_LABEL = { EU: "EU", UK: "UK", CODEX: "Codex", CA: "Canada", CN: "China", IN: "India", BR: "Brazil", GSO: "GSO", "AU-NZ": "AU/NZ", US: "FDA", "US-CA": "US-CA", "US-WA": "US-WA", EC: "Ecuador", MX: "Mexico", TR: "Türkiye", international: "Intl" }
 const JUR_ORDER = ["EU", "UK", "CODEX", "CA", "CN", "IN", "BR", "GSO", "AU-NZ", "US"]
 const ANALYTE = {
-  Pb: { label: "Lead (Pb)", tier: "Tier 1" }, iAs: { label: "Inorganic arsenic (iAs)", tier: "Tier 1" },
-  tHg: { label: "Mercury (tHg)", tier: "Tier 1" }, Cd: { label: "Cadmium (Cd)", tier: "Tier 1" },
-  Cr: { label: "Total chromium (Cr)", tier: "Tier 2" }, Ni: { label: "Nickel (Ni)", tier: "Tier 2" },
-  Sn: { label: "Tin (Sn)", tier: "Tier 2" }, Al: { label: "Aluminium (Al)", tier: "Tier 2" },
-  tAs: { label: "Total arsenic (tAs)", tier: "Tier 2" },
+  Pb: { label: "Lead (Pb)" }, iAs: { label: "Inorganic arsenic (iAs)" },
+  tHg: { label: "Mercury (tHg)" }, Cd: { label: "Cadmium (Cd)" },
+  Cr: { label: "Total chromium (Cr)" }, Ni: { label: "Nickel (Ni)" },
+  Sn: { label: "Tin (Sn)" }, Al: { label: "Aluminium (Al)" },
+  tAs: { label: "Total arsenic (tAs)" },
 }
 // The canonical analyte contract (heavy-metal-index docs/governance/hmtc-governing-principles.md,
 // "Canonical analyte contract"; CLAUDE.md Part 19) requires the eight-total laboratory panel — Pb,
@@ -43,8 +43,8 @@ const ANALYTE = {
 // tAs was previously missing from this array while every compiled Cat-1 record carried a tAs cell,
 // so a published ceiling (India FSSAI tAs 50, row in_tas_infant-milk-substitute-and-infant-foods_50)
 // was silently dropped from all nine standard pages at render time. Ordering keeps the two arsenic
-// cells adjacent, matching seafood / grains / cat16 / cat27-29; the tier follows every other
-// category's _meta, where tAs is Tier 2 and iAs is Tier 1.
+// cells adjacent, matching seafood / grains / cat16 / cat27-29. Every claim analyte
+// is equal at the gate.
 const PANEL = ["Pb", "iAs", "tAs", "tHg", "Cd", "Cr", "Ni", "Sn", "Al"]
 
 // A cell is "firm" (carries a standalone published ceiling) only when it resolves to a number via a
@@ -108,7 +108,7 @@ function masterTable(variants, basisWord, firmCount) {
   const rows = PANEL.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
-    return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a].label}</td><td style="padding:10px 15px;color:#736b6b;font-size:12px">${ANALYTE[a].tier}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
+    return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a].label}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
   }).join("")
   // Honest cap note: only a fully-numeric subcategory may state that every analyte carries a firm
   // ceiling. A partially-numeric one states the firm count and that the remainder are governed
@@ -117,7 +117,7 @@ function masterTable(variants, basisWord, firmCount) {
   const capNote = firmCount >= PANEL.length
     ? "Every analyte carries a firm ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark."
     : `${firmCount} of ${PANEL.length} analytes carry a firm ceiling; the remainder are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
-  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Tier</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Tier 1 (Pb, Cd, iAs, Hg) are zero-tolerance toxics with no established safe threshold. Tier 2 (tAs, Ni, Al, Sn, Cr) are held to the same government limit &mdash; tiering sets how the program reacts to an exceedance, not any permission to exceed it. A product is certified only when every analyte is at or below 100% of its published limit; above the limit, on any metal, it is not certified and carries no mark. Arsenic is limited in both forms: total arsenic (tAs) and inorganic arsenic (iAs) are separate ceilings that must both be met, and the species result never replaces the parent total. Total chromium is limited as shown; hexavalent chromium is controlled through it &mdash; mandatory Cr-VI speciation on any total-chromium result above 100 ppb, and any quantifiable Cr-VI fails.</p></section>`
+  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">Every claim analyte is equal at the gate. A product is certified only when every analyte is at or below 100% of its published government floor or disclosed read-across; above the limit, on any metal, it is not certified and carries no mark. Arsenic is limited in both forms: total arsenic (tAs) and inorganic arsenic (iAs) are separate ceilings that must both be met, and the species result never replaces the parent total. Total chromium is limited as shown; hexavalent chromium is controlled through it &mdash; mandatory Cr-VI speciation on any total-chromium result above 100 ppb, and any quantifiable Cr-VI fails.</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------

@@ -21,12 +21,12 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "All Standards Briefings", href: "/briefings" }
-  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 2 &middot; May 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">A manufacturer won a heavy-metal case at trial, and the win was erased: not on the science, but on the courthouse. After Palmquist these cases are tried before state juries, with the retailer anchored in the room.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">A manufacturer won a heavy-metal case at trial, and the win was erased &mdash; not on the science, but on the courthouse. After Palmquist these cases are tried before state juries, with the retailer anchored in the room.</p>
 </div>
 
 ## Abstract
@@ -170,7 +170,7 @@ If you are general counsel or chief compliance officer at a brand or a retailer 
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change: worth doing for the documents most likely to be cited.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>
   </div>
 
 ## Cite this briefing

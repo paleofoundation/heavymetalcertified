@@ -39,11 +39,14 @@ read in full; the rest swept for the high-risk staleness vectors (methodology
 framework language, percentile framing, category/metal/analyte counts, banned
 superlatives, non-profit misstatements, entity naming).
 
-**Clean bill — current and internally consistent:**
-- Methodology matches Method v2.0 (government-limit default; Tier-1 "stricter-of"
-  occurrence; P97/P45). No stale P90/P10/80th-percentile/"30 percent" framing anywhere.
-- 8 metals / 10 analytes; Tier 1 = Pb, Cd, iAs, MeHg; Tier 2 = Ni, Sn, Al, Cr-VI;
-  statuses A–E; 150% Tier-2 allowance — all correct and consistent across briefings.
+**Clean bill — current and internally consistent (as of 2026-08-08; analyte-tier
+status architecture later retired — see 2026-09-21):**
+- Methodology matches Method v2.0 (government-limit default; priority-toxic
+  "stricter-of" occurrence; P97/P45). No stale P90/P10/80th-percentile/"30 percent"
+  framing anywhere.
+- 8 metals / 10 analytes. Analyte Tier 1 / Tier 2 is no longer load-bearing for
+  certification status: every claim analyte is equal at the gate (100% of published
+  gov_floor | read_across). The 150% Tier-2 transitional allowance is retired.
 - No banned superlatives ("first and only", etc.). The only "nonprofit" strings refer
   to the Non-GMO Project (a factual historical reference), not to ICS/HMTc.
 - Entity naming, DOI (`zenodo.20270512` = 2026 Edition), USPTO serial, ISO 17025 —

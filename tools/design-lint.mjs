@@ -43,6 +43,7 @@ import {
   parseFrontmatterDescription,
   CAT1_MANUAL,
 } from "./lib/manual-density-lint.mjs"
+import { lintAnalyteTierStatus } from "./lib/analyte-tier-status-lint.mjs"
 
 const repoRoot = process.cwd()
 const CONTENT = path.join(repoRoot, "content")
@@ -109,6 +110,47 @@ function walk(dir, cb) {
 }
 
 walk(CONTENT, lint)
+
+// ---- Analyte Tier 1/2 must not drive certification status -------------------
+// Method v2: every claim analyte is equal at the gate. A leftover "Tier 1
+// exceedance vs Tier 2 exceedance" branch, a Tier column on the claim surface,
+// or a reaction-ladder footnote is a blocking defect. Product risk tiers and
+// the appeals committee tiers are different axes and are not flagged.
+function walkTierStatus(dir, cb) {
+  if (!fs.existsSync(dir)) return
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, e.name)
+    if (e.isDirectory()) walkTierStatus(full, cb)
+    else if (/\.(md|mjs|json)$/.test(e.name)) cb(full)
+  }
+}
+const TIER_STATUS_ROOTS = [
+  path.join(CONTENT, "program"),
+  path.join(CONTENT, "manuals"),
+  path.join(CONTENT, "analytes"),
+  path.join(CONTENT, "why-we-limit"),
+  path.join(CONTENT, "briefings"),
+  path.join(CONTENT, "standards"),
+  path.join(CONTENT, "mark.md"),
+  path.join(repoRoot, "data/manuals/cat1-manual"),
+  path.join(repoRoot, "data/briefings"),
+  path.join(repoRoot, "data/analytes"),
+  path.join(repoRoot, "data/why-limited"),
+  path.join(repoRoot, "data/method/method-v2.json"),
+  path.join(repoRoot, "tools/lib/manual-v3-page.mjs"),
+  path.join(repoRoot, "tools/lib/manual-page.mjs"),
+]
+let tierStatusScanned = 0
+for (const root of TIER_STATUS_ROOTS) {
+  const files = []
+  if (fs.existsSync(root) && fs.statSync(root).isFile()) files.push(root)
+  else walkTierStatus(root, (f) => files.push(f))
+  for (const file of files) {
+    tierStatusScanned++
+    const rel = path.relative(repoRoot, file)
+    blocking.push(...lintAnalyteTierStatus(fs.readFileSync(file, "utf8"), rel))
+  }
+}
 
 // ---- Program-manual structural conformance ---------------------------------
 // Every Program Manual page must be the canonical v3 shape emitted by
@@ -216,6 +258,7 @@ if (blocking.length) {
 console.log(
   `design-lint: OK — ${scanned} reading-surface page(s) scanned, no bold in ${BLOCKING_DIRS.join("/")}` +
     `; ${manualsChecked} program manual(s) conform to the canonical v3 shape` +
+    `; ${tierStatusScanned} surface(s) clean of analyte-tier status architecture` +
     (navPanelsChecked ? `; nav copy clean of em dashes` : "") +
     (advisory.length ? ` (${advisory.length} advisory)` : "") +
     ".",

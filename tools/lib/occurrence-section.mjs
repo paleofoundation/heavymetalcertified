@@ -241,8 +241,8 @@ export function analyteOccurrenceBlock(opts) {
       `<p style="${S.p}">No government sets a maximum level for ${esc(nameLc)} in ${esc(category)}. It is the program's role to set a limit where no government has, because ${esc((tox && tox.tox_anchor) || "the analyte carries a toxicological basis for control")}. `
       + `HMTc sets ${esc(fmtLimit(opts, der))} from the certified-market occurrence distribution — ${pathway} (${twoPath}).${prov}${whyLink}</p>`
   } else if (govMl) {
-    // Method v2.0: government-limit default, with selective occurrence for the
-    // Tier-1 toxics and no-ML cells. The LEAD is driven by the authoritative
+    // Method v2.0: government-limit default, with selective occurrence for
+    // priority toxics and no-ML cells. The LEAD is driven by the authoritative
     // rationale tag; the pool-vs-ceiling clause is driven by the ACTUAL numbers,
     // so a "binds" verb never contradicts the arithmetic (the compiled cell and
     // the pooled aggregate can disagree — state both, claim only what is true).

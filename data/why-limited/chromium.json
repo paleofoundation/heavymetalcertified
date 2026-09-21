@@ -17,7 +17,7 @@
     { "k": "Critical endpoint", "v": "Cancer (hexavalent form)" },
     { "k": "Cr(VI) — IARC", "v": "Group 1 (carcinogenic)" },
     { "k": "Cr(III)", "v": "Low toxicity; essential trace" },
-    { "k": "HMTc tier", "v": "Tier 2 (Cr-VI on trigger)" }
+    { "k": "Panel role", "v": "Claim analyte (Cr-VI on reflex)" }
   ],
   "sections": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "h2": "Why a certification limit is warranted",
-      "body": "The certification value of chromium is precision, not blanket coverage: a limit is worth setting where a credible hexavalent pathway exists, and worth withholding where the evidence says the chromium present is the benign trivalent form. Applying a firm number indiscriminately would either chase a nutrient or, worse, imply a false precision about a species that was never measured.\n\nHMTc treats hexavalent chromium as a Tier-2 analyte carried on a trigger: total chromium is measured, and a hexavalent determination is applied where a credible pathway makes it material, adopting the strictest existing government maximum level where one exists. A regulatory hard-stop blocks certification of any product over an applicable legal limit. This is the same speciation discipline the program applies to arsenic and mercury — measure the total, act on the toxic fraction. How the limit is derived is set out under [how limits are derived](/program/structure)."
+      "body": "The certification value of chromium is precision, not blanket coverage: a limit is worth setting where a credible hexavalent pathway exists, and worth withholding where the evidence says the chromium present is the benign trivalent form. Applying a firm number indiscriminately would either chase a nutrient or, worse, imply a false precision about a species that was never measured.\n\nHMTc treats hexavalent chromium as a claim analyte carried on a trigger: total chromium is measured, and a hexavalent determination is applied where a credible pathway makes it material, adopting the strictest existing government maximum level where one exists. A regulatory hard-stop blocks certification of any product over an applicable legal limit. This is the same speciation discipline the program applies to arsenic and mercury — measure the total, act on the toxic fraction. How the limit is derived is set out under [how limits are derived](/program/structure)."
     }
   ],
   "related_findings": [
@@ -61,7 +61,7 @@
     },
     {
       "q": "How does HMTc set its chromium limit?",
-      "a": "HMTc treats hexavalent chromium as a Tier-2 analyte carried on a trigger: total chromium is measured, and a hexavalent determination is applied where a credible pathway makes it material, adopting the strictest existing government maximum level where one exists. A regulatory hard-stop blocks any product over a legal limit."
+      "a": "HMTc treats hexavalent chromium as a claim analyte carried on a trigger: total chromium is measured, and a hexavalent determination is applied where a credible pathway makes it material, adopting the strictest existing government maximum level where one exists. A regulatory hard-stop blocks any product over a legal limit."
     }
   ],
   "connections": [

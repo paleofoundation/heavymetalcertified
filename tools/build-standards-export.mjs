@@ -155,7 +155,7 @@ const standardsDoc = {
   dataset: "hmtc-standards",
   title: "Heavy Metal Tested & Certified — published standards",
   description:
-    "The HMTc certification limits per product subcategory, variant, and analyte: the published limit in ppb on the row's native basis, the control basis (government-limit default, government read-across, or controlled screen), the controlling jurisdiction and instrument, and — for government-limit cells — the per-country table of sovereign limits the value was selected from. Values are set by Method v2.0 (strictest applicable government maximum level, selective occurrence for Tier-1 toxics and unregulated cells).",
+    "The HMTc certification limits per product subcategory, variant, and analyte: the published limit in ppb on the row's native basis, the control basis (government-limit default, government read-across, or controlled screen), the controlling jurisdiction and instrument, and — for government-limit cells — the per-country table of sovereign limits the value was selected from. Values are set by Method v2.0 (strictest applicable government maximum level, selective occurrence for priority toxics and unregulated cells).",
   unit: "ppb (µg/kg)",
   methodology_version: METHODOLOGY_VERSION,
   standard_version: catalog.standard_version ?? null,

@@ -23,7 +23,7 @@ connections:
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "All Standards Briefings", href: "/briefings" }
-  - { label: "Heavy Metal Index: evidence base", href: "https://heavymetalindex.com" }
+  - { label: "Heavy Metal Index — evidence base", href: "https://heavymetalindex.com" }
 ---
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
@@ -144,7 +144,7 @@ Because it is the conservative direction. A migration limit describes how much m
   </div>
   <div style="border:1px dotted #e8e1db;background:#faf7f4;padding:15px 18px">
     <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#a9a1a1;margin-bottom:7px">No DOI on this series</div>
-    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change: worth doing for the documents most likely to be cited.</p>
+    <p style="font-size:13px;line-height:1.65;color:#a9a1a1;margin:0">The three peer-track preprints are deposited with DOIs; the briefing series is not. Depositing the briefings would make each independently resolvable after any URL change &mdash; worth doing for the documents most likely to be cited.</p>
   </div>
 
 ## Cite this briefing

@@ -195,7 +195,7 @@ function build(spec) {
 
 // content/why-we-limit/index.md — GENERATED here so every per-metal page is linked
 // (the section can never orphan its own pages) and the directory never goes stale.
-// Ordered by the panel's own order (Tier-1 toxics first), bold-free, a real body
+// Ordered by the panel's own order (priority toxics first), bold-free, a real body
 // <a> per row for the internal link graph.
 function card(a) {
   return `    <a href="/why-we-limit/${a.slug}" style="display:grid;grid-template-columns:64px minmax(0,1fr) 150px;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
@@ -229,7 +229,7 @@ function writeIndex(built) {
 
 <section style="margin:36px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">The panel, metal by metal</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${built.length} metals, ordered as the program tiers them: the four zero-tolerance toxics first, then the four that adopt the strictest government limit directly.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${built.length} metals, ordered as the panel is listed: the four priority toxics first, then the four additional claim analytes. Every claim analyte is equal at the gate.</p>
   <div style="display:flex;flex-direction:column">
 ${rows}
   </div>
@@ -256,5 +256,5 @@ for (const f of specs) {
 }
 writeIndex(built)
 console.log(
-  `build-why-limited-pages: stamped ${built.length} per-metal rationale page(s) + generated index.md (Tier-1 toxics first; the section cannot orphan its own pages).`,
+  `build-why-limited-pages: stamped ${built.length} per-metal rationale page(s) + generated index.md (priority toxics first; the section cannot orphan its own pages).`,
 )

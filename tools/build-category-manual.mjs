@@ -49,10 +49,6 @@ const rows = DOC.pages.map((page) => {
   return { slug: page.slug, name: page.name, cells: out, basis }
 })
 
-const sym = (key) => SHORT[key] || key
-const tier1Labels = Array.isArray(META.tier1) ? META.tier1.map(sym) : []
-const tier2Labels = Array.isArray(META.tier2) ? META.tier2.map(sym) : []
-
 const struggleHtml = renderStruggleSection({
   compiledDir: COMPILED, occurrence: OCC, categoryDirName: META.compiled_dir,
   categoryName: META.category_name, LINK, ACCENT,
@@ -110,8 +106,6 @@ const page = renderManualPage({
   matrix: {
     analytes: PANEL.map((a) => ({ key: a, col: SHORT[a] || a })),
     rows,
-    tier1Labels,
-    tier2Labels,
     note: `All values ppb (&micro;g/kg) in each row&rsquo;s native basis. Click any subcategory for its full government-by-government derivation. n/m = not material in the matrix; controlled by screen or reflex speciation, not a number.`,
   },
   struggleHtml,

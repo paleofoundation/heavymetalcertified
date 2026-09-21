@@ -172,7 +172,7 @@
       ],
       "stricter_unselected": [],
       "label": "EU 2024/1987 sets nickel in fruit and vegetable juices and nectars generally at 250 ug/kg and in juices and nectars from passion fruit, cocoa fruit, small fruits and berries, and coconut water at 1000 ug/kg. Both cells are named; the general cell at 250 ug/kg is the strictest applicable and binds the row.",
-      "substantiation": "Direct sovereign maximum level for this exact product form, applying from 1 July 2025. Both government-written formulation bands are disclosed. As with lead, the single row ceiling is the strictest applicable across the forms in scope, so a berry or passion-fruit juice is held to 250 ug/kg rather than to its own 1000 ug/kg band; that over-compliance is stated rather than hidden. Nickel is a Tier-2 analyte."
+      "substantiation": "Direct sovereign maximum level for this exact product form, applying from 1 July 2025. Both government-written formulation bands are disclosed. As with lead, the single row ceiling is the strictest applicable across the forms in scope, so a berry or passion-fruit juice is held to 250 ug/kg rather than to its own 1000 ug/kg band; that over-compliance is stated rather than hidden. Nickel is a claim analyte."
     },
     "Sn": {
       "type": "gov",
@@ -197,7 +197,7 @@
       ],
       "stricter_unselected": [],
       "label": "EU 2023/915 Annex I section 3.5.2 sets inorganic tin in canned beverages, including canned fruit and vegetable juices, at 100 mg/kg = 100000 ug/kg; Hong Kong Cap 132V sets canned beverages at 150000 ug/kg. The EU value is the strictest applicable and binds. This is a direct sovereign maximum level on the beverage-in-a-can form, not a read-across.",
-      "substantiation": "Tin in a beverage is a tinplate and can-lining migration pathway, so the government instruments are written on the canned form and the canned form is where the hazard sits. The EU cell (100000 ug/kg) directly governs every canned or tinplate-packaged product in this row and is adopted as the row ceiling for all packaging formats; a carton, PET, glass or pouch format has no tin source and complies trivially, so no separate non-canned cell is published. The looser Hong Kong canned-beverage cell (150000) and the canned-foods cells for solid foods (EU 200000; Codex, FSANZ and Hong Kong 250000) are disclosed and deliberately not adopted: EU writes a stricter cell specifically for beverages and HMTc preserves that product-form split. Tin is a Tier-2 analyte; an elevated result in a non-canned format is a packaging-integrity signal."
+      "substantiation": "Tin in a beverage is a tinplate and can-lining migration pathway, so the government instruments are written on the canned form and the canned form is where the hazard sits. The EU cell (100000 ug/kg) directly governs every canned or tinplate-packaged product in this row and is adopted as the row ceiling for all packaging formats; a carton, PET, glass or pouch format has no tin source and complies trivially, so no separate non-canned cell is published. The looser Hong Kong canned-beverage cell (150000) and the canned-foods cells for solid foods (EU 200000; Codex, FSANZ and Hong Kong 250000) are disclosed and deliberately not adopted: EU writes a stricter cell specifically for beverages and HMTc preserves that product-form split. Tin is a claim analyte; an elevated result in a non-canned format is a packaging-integrity signal."
     },
     "Al": {
       "type": "control",

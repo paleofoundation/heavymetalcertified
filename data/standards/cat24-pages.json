@@ -47,7 +47,7 @@
       }
     },
     "manual_slug": "dairy-and-milk-products",
-    "manual_method_note": "Dairy limits are taken at face value in each product's native basis; there is no reconstitution conversion (dairy has no legislated reconstitution ratio, unlike infant formula). Product forms — liquid milk, cheese, powder, condensed, butterfat — are kept distinct: non-concentrated liquid forms share the general fluid-milk sovereign pool, while concentrated forms carry their own higher form-specific government maximums. Tier 1 toxics (Pb, Cd, iAs, Hg) are zero-tolerance; Tier 2 (tAs, Ni, Sn, Al, Cr, Cr-VI) are held to the same government limit; tiering sets the reaction to an exceedance, not any permission to exceed it. Inorganic arsenic and hexavalent chromium are reflex speciation screens; methylmercury has no pathway in dairy; tin is material only for canned product."
+    "manual_method_note": "Dairy limits are taken at face value in each product's native basis; there is no reconstitution conversion (dairy has no legislated reconstitution ratio, unlike infant formula). Product forms — liquid milk, cheese, powder, condensed, butterfat — are kept distinct: non-concentrated liquid forms share the general fluid-milk sovereign pool, while concentrated forms carry their own higher form-specific government maximums. Every claim analyte is equal at the gate: a product is certified only at or below 100% of each published government floor or disclosed read-across. An exceedance on any metal enters Remediation unmarked; there is no transitional overage. Inorganic arsenic and hexavalent chromium are reflex speciation screens; methylmercury has no pathway in dairy; tin is material only for canned product."
   },
   "pages": [
     {

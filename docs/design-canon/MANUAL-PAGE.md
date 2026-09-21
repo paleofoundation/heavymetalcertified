@@ -59,7 +59,7 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 **Other category manuals (v2 landing):**
 
 1. `<h2 id="scope">` **Scope and method** — the universal government-limit lead + the category method note.
-2. `<h2 id="matrix">` **Master limit matrix** — one row per subcategory × analyte panel + Basis. Sticky first column, canonical burgundy head (from `.wiki-content thead`, not inline), right-aligned IBM Plex Mono values, and a **Tier 1 / Tier 2** legend.
+2. `<h2 id="matrix">` **Master limit matrix** — one row per subcategory × analyte panel + Basis. Sticky first column, canonical burgundy head (from `.wiki-content thead`, not inline), right-aligned IBM Plex Mono values, and a single equal-at-the-gate legend (every claim analyte meets 100% of its published government floor or disclosed read-across).
 3. `<h2 id="hard">` **What is likely to struggle to meet this standard** — a no-JS `<details>` accordion per analyte (`.hmtc-mhard*`, styled in `cert-chrome.scss`), from `struggle-section.mjs`.
 4. `<h2 id="edition">` **About this edition** — prose + the Heavy Metal Index callout (`border-left:3px #9f2727` on `#fdf4f3`).
 5. `## Version history` — markdown table, injected by `build-cert-version-history.mjs` (only when a version record exists).
@@ -86,5 +86,5 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
   rendered chrome, the canonical table head, no-bold, and the hero-column download.
 
 If you add a new category manual, add its `--pages=<cat>-pages.json` invocation to `prebuild` (with a
-`_meta` block: `category`, `category_name`, `panel`, `tier1`, `tier2`, `manual_slug`,
+`_meta` block: `category`, `category_name`, `panel`, optional leftover `tier1`/`tier2` lists (not status architecture), `manual_slug`,
 `manual_method_note`, `effective_date`, optional `download_pdf`). The design comes for free.

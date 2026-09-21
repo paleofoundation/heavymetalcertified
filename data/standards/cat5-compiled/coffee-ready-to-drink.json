@@ -122,7 +122,7 @@
       "source_scope": "water intended for human consumption",
       "label": "Nickel 20 ug/kg is a disclosed read-across from EU 2020/2184 drinking water (0.020 mg/L), the strictest applicable as-consumed nickel value for a water-based beverage.",
       "stricter_unselected": [],
-      "substantiation": "Disclosed read-across, not direct governance. No sovereign sets a nickel limit for coffee beverages; the drinking-water nickel ceiling is the nearest applicable as-consumed instrument. EU 2020/2184's 0.020 mg/L binds. Nickel is a Tier-2 analyte. Register-sourced, not occurrence-derived."
+      "substantiation": "Disclosed read-across, not direct governance. No sovereign sets a nickel limit for coffee beverages; the drinking-water nickel ceiling is the nearest applicable as-consumed instrument. EU 2020/2184's 0.020 mg/L binds. Nickel is a claim analyte. Register-sourced, not occurrence-derived."
     },
     "Sn": {
       "type": "read_across",
@@ -136,7 +136,7 @@
       "source_scope": "canned beverages, including canned fruit and vegetable juices, except canned dried and canned powdered products",
       "label": "Tin 100000 ug/kg (100 mg/kg) is a disclosed read-across from EU 2023/915 canned beverages, the direct sovereign inorganic-tin ceiling for the packaging pathway that produces tin in this form. Tin in a ready-to-drink coffee is a can and can-lining migration pathway; a non-canned bottled coffee has no tin source and complies trivially.",
       "stricter_unselected": [],
-      "substantiation": "Disclosed read-across from the sovereign canned-beverage tin cell, which governs the tinplate-can form directly and is the only tin source in a ready-to-drink coffee. EU 2023/915's 100 mg/kg binds; the looser Hong Kong canned-beverage cell (150 mg/kg) is disclosed and not adopted. Tin is a Tier-2 analyte. Register-sourced, not occurrence-derived."
+      "substantiation": "Disclosed read-across from the sovereign canned-beverage tin cell, which governs the tinplate-can form directly and is the only tin source in a ready-to-drink coffee. EU 2023/915's 100 mg/kg binds; the looser Hong Kong canned-beverage cell (150 mg/kg) is disclosed and not adopted. Tin is a claim analyte. Register-sourced, not occurrence-derived."
     },
     "Al": {
       "type": "read_across",
@@ -150,7 +150,7 @@
       "source_scope": "water intended for human consumption",
       "label": "Aluminium 200 ug/kg is a disclosed read-across from EU 2020/2184 drinking water (0.200 mg/L), the strictest applicable as-consumed aluminium value for a water-based beverage; the US bottled-water and Australian drinking-water aluminium limits converge on the same 200. The dry coffee commodity is held to the far higher dry-food aluminium ceiling (100000 ug/kg) in its own as-sold basis; the two bases are never mixed.",
       "stricter_unselected": [],
-      "substantiation": "Disclosed read-across, not direct governance. No sovereign sets an aluminium limit for coffee beverages; the drinking-water aluminium ceiling is the nearest applicable as-consumed instrument, and EU 2020/2184, US bottled water and NHMRC all set 200. Aluminium is a Tier-2 analyte with both an agronomic and an aluminium-can packaging pathway in this form. Register-sourced, not occurrence-derived."
+      "substantiation": "Disclosed read-across, not direct governance. No sovereign sets an aluminium limit for coffee beverages; the drinking-water aluminium ceiling is the nearest applicable as-consumed instrument, and EU 2020/2184, US bottled water and NHMRC all set 200. Aluminium is a claim analyte with both an agronomic and an aluminium-can packaging pathway in this form. Register-sourced, not occurrence-derived."
     },
     "Cr": {
       "type": "read_across",
