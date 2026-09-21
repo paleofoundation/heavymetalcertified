@@ -891,7 +891,7 @@
   {
     "slug": "the-mucosal-gap",
     "series": "Brief 11",
-    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, one of the body's most permeable surfaces, and the internal ones stay there for hours at a time. That surface absorbs more readily than skin and drains part of what crosses it into the bloodstream without the liver's first pass. A 2024 peer-reviewed study measured lead, cadmium, and arsenic in every brand of tampon it tested. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction.</p><p>HMTc closes that gap without inventing a number. For device forms, where no government sets a content limit, it reads a ceiling across by analogy from the strictest health-based limit a government has drawn for an article in comparable prolonged mucosal contact, and enforces it every lot by mass-spectrometry testing of the full analyte panel, sampled component by component with the tampon applicator tested distinctly. For cosmetic forms it reads across the strictest sovereign contaminant limit, adopting the mucosal-contact tier for lead because the vaginal mucosa is more permeable than the oral mucosa that tier was written for. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, markedly more permeable than skin, and the internal ones stay there for hours at a time. That surface drains part of what crosses it into the bloodstream without the liver's first pass. A growing peer-reviewed literature has measured lead, cadmium, and arsenic in tampons across brands and markets. No government imposes a mandatory heavy-metal content limit these products must meet to be sold: the numeric limits that exist, the EU Ecolabel and OEKO-TEX, are voluntary, and the FDA's 2025 draft guidance recognises the mucosal, cumulative exposure route without setting a number.</p><p>An honest account weighs the whole record, including the FDA's own 2026 assessment, which measured metal release in vitro, assumed complete absorption, and found negligible concern: reassuring for what it tested, but not a measurement of absorbed dose and no guarantee for the next production lot. HMTc closes the gap without inventing a number: for device forms it reads a ceiling across by analogy from the strictest health-based limit a government has drawn for a comparable mucosal contact, for cosmetic forms it reads across the strictest sovereign contaminant limit, and both are enforced every lot by full-panel mass spectrometry. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
     "references": [
       {
         "n": 1,
@@ -962,13 +962,34 @@
         "meta_html": "Marcelis Q. PhD thesis, Vrije Universiteit Brussel, 2024. Full-panel metal screen across tampons, pads, cups, and other intimate products, extending the measured panel to aluminium, tin, and antimony; the basis for holding those metals under the read-across ceilings on the device rows.",
         "href": "",
         "type": "Peer-reviewed"
+      },
+      {
+        "n": 11,
+        "title": "Commission Decision (EU) 2023/1809: EU Ecolabel criteria for absorbent hygiene products",
+        "meta_html": "European Commission, 14 September 2023 (OJ L 234). Annex I, criterion 7.3.8 sets voluntary EU Ecolabel content limits for impurities in tampons and pads: lead <0.2, cadmium <0.1, mercury <0.02, chromium <1, antimony <30 mg/kg, verified by annual finished-product testing. A voluntary label, not a condition of sale.",
+        "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023D1809",
+        "type": "Government"
+      },
+      {
+        "n": 12,
+        "title": "Menstrual Products: Performance Testing and Labeling Recommendations (FDA draft guidance)",
+        "meta_html": "U.S. Food and Drug Administration, draft guidance, 2025 (docket FDA-2025-D-5107). Describes menstrual products as surface devices in long-term mucosal-membrane contact whose repeated lifetime use produces cumulative exposure, and evaluates contaminants through ISO 10993 biocompatibility. Nonbinding, and sets no numeric heavy-metal content limit.",
+        "href": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/menstrual-products-performance-testing-and-labeling-recommendations",
+        "type": "Government"
+      },
+      {
+        "n": 13,
+        "title": "Do metals in tampons pose a health risk? A toxicological risk assessment study",
+        "meta_html": "Jin Y, Eppihimer M, Alam MS, et al. Toxicological Sciences, 2026;209(6):kfag065. FDA device-centre assessment of eleven tampon products: metal release measured under exaggerated extraction (ISO 10993-18) and evaluated (ISO 10993-17 / ICH Q3D) assuming complete absorption; all margins of safety indicated negligible toxicological concern. A benchtop release measurement with a worst-case absorption assumption, not a measurement of absorbed dose in vivo.",
+        "href": "https://doi.org/10.1093/toxsci/kfag065",
+        "type": "Peer-reviewed"
       }
     ]
   },
   {
     "slug": "first-feminine-care-standard",
     "series": "Brief 12",
-    "abstract_html": "<p>Heavy Metal Tested and Certified has published a heavy-metal-safety standard for menstrual and intimate-care products, tampons, pads, cups, discs, and period underwear, and the intimate cosmetics alongside them, douches, washes, wipes, and deodorants. To our knowledge it is the first standard anywhere to place per-analyte heavy-metal limits on this category. No government sets a heavy-metal content limit for a menstrual device in any jurisdiction, because device law asks whether a material is biocompatible, not how much lead it contains; and the cosmetic limits that do exist were written for skin, not for the vulvovaginal mucosa these products actually contact. In 2024 a peer-reviewed study measured lead, cadmium, and arsenic in every tampon it tested.</p><p>The standard is written on a mucosal basis and reads across the strictest mucosal-contact health limit a government has drawn, never inventing a number of its own. Cosmetic forms bind sovereign cosmetic contaminant limits directly; device forms, for which no government sets a content limit, carry the same values by disclosed, conservative read-across by analogy. Every analyte on the panel carries an enforceable ceiling, nine firm read-across limits plus inorganic arsenic and methylmercury bounded by their parent totals, and every certified lot is tested for the full panel by mass spectrometry. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "abstract_html": "<p>Heavy Metal Tested and Certified has published a heavy-metal-safety standard for menstrual and intimate-care products, tampons, pads, cups, discs, and period underwear, and the intimate cosmetics alongside them, douches, washes, wipes, and deodorants. No government requires these products to meet a heavy-metal content limit before they are sold: device law asks whether a material is biocompatible, not how much lead it contains, and the cosmetic limits that exist were written for skin, not for the vulvovaginal mucosa these products actually contact. The voluntary numbers that do exist, the EU Ecolabel and OEKO-TEX, do not bind every product. A growing literature has measured lead, cadmium, and arsenic in tampons across brands and markets.</p><p>The standard is written on a mucosal basis and reads across the strictest mucosal-contact health limit a government has drawn, never inventing a number of its own. Cosmetic forms bind sovereign cosmetic contaminant limits directly; device forms, for which no government sets a content limit, carry the same values by disclosed, conservative read-across by analogy. Every analyte carries an enforceable ceiling, and every certified lot is tested for the full panel by mass spectrometry. It is not the first standard to put a number on a metal in a tampon; it is, to our knowledge, the first to hold the full panel to per-analyte ceilings on a mucosal-contact health basis and verify them every lot. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
     "references": [
       {
         "n": 1,
@@ -1053,6 +1074,20 @@
         "meta_html": "Australian government total-chromium limit (total Cr 50 µg/kg); the read-across anchor for total chromium. The specific instrument is named in the live standard page derivation table (binding column AU). Full citation to be confirmed at publication.",
         "href": "",
         "type": "Government"
+      },
+      {
+        "n": 13,
+        "title": "Commission Decision (EU) 2023/1809: EU Ecolabel criteria for absorbent hygiene products",
+        "meta_html": "European Commission, 14 September 2023 (OJ L 234). Annex I, criterion 7.3.8 sets voluntary EU Ecolabel content limits for impurities in tampons and pads: lead <0.2, cadmium <0.1, mercury <0.02, chromium <1, antimony <30 mg/kg. A voluntary label, not a condition of sale; the scheme has covered this product group since 2014.",
+        "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023D1809",
+        "type": "Government"
+      },
+      {
+        "n": 14,
+        "title": "Do metals in tampons pose a health risk? A toxicological risk assessment study",
+        "meta_html": "Jin Y, Eppihimer M, Alam MS, et al. Toxicological Sciences, 2026;209(6):kfag065. FDA device-centre assessment of eleven tampon products: metal release under exaggerated extraction (ISO 10993-18), evaluated (ISO 10993-17 / ICH Q3D) assuming complete absorption; concluded negligible toxicological concern. A benchtop release measurement with a worst-case absorption assumption, not a measurement of absorbed dose in vivo.",
+        "href": "https://doi.org/10.1093/toxsci/kfag065",
+        "type": "Peer-reviewed"
       }
     ]
   }
