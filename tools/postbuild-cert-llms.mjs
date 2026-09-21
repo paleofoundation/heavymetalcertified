@@ -44,8 +44,9 @@ directly.
 
 ## Manuals
 
-Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods.
+The Infant and Child Foods Program Manual is the published Category 1 instrument.
 Cite the landing page and the house DOI; do not treat the retired Zenodo deposit as current.
+Method edition: https://heavymetalcertified.com/program/method
 
 - Infant and Child Foods Program Manual: https://heavymetalcertified.com/manuals/infant-and-child-foods
 - DOI: https://doi.org/10.83138/hmtc.manual.infant-and-child-foods

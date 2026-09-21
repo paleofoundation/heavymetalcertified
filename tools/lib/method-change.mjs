@@ -2,6 +2,7 @@
 // The essay lives on /program/method. Other surfaces link; they do not reprint it.
 
 export const METHOD_PAGE_HREF = "/program/method"
+export const METHOD_PAGE_URL = "https://heavymetalcertified.com/program/method"
 export const METHOD_PAGE_LABEL = "Method v1 to Method v2"
 
 export const METHOD_CONN = Object.freeze({

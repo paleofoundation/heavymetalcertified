@@ -18,12 +18,14 @@ import {
   PDF_FILE,
   PDF_HREF,
   CITATION_TITLE,
+  HERO_DEK,
   SCHOLAR_ABSTRACT,
   SCHOLAR_KEYWORDS,
   readExistingHouseDoi,
 } from "./lib/cat1-manual-v3.mjs"
 import { renderManualV3Page } from "./lib/manual-v3-page.mjs"
 import { resolveCover, resolveOgImage } from "./lib/document-cover.mjs"
+import { withMethodConn } from "./lib/method-change.mjs"
 
 const REPO = process.cwd()
 const OUT = path.join(REPO, "content/manuals/infant-and-child-foods.md")
@@ -46,7 +48,7 @@ const page = renderManualV3Page({
   category: 1,
   manualSlug: "infant-and-child-foods",
   categoryName: "Infant and Child Foods",
-  description: "The Method v2 governing instrument for Category 1.",
+  description: HERO_DEK,
   scholarAbstract: SCHOLAR_ABSTRACT,
   keywords: SCHOLAR_KEYWORDS,
   pdfCover: cover?.rel ?? null,
@@ -55,14 +57,13 @@ const page = renderManualV3Page({
   ogImageHeight: og?.height ?? 630,
   editionChip: "Manual v3 · Method v2",
   heroSnapshot: false,
-  connections: [
+  connections: withMethodConn([
     { label: "The standards register", href: "/standards" },
-    { label: "Method v1 to Method v2", href: "/program/method" },
     { label: "How limits are derived", href: "/program/structure" },
     { label: "Verify a certificate", href: "/verify" },
     { label: "All Program Manuals", href: "/manuals" },
     { label: "Heavy Metal Index: literature baseline", href: "https://heavymetalindex.com" },
-  ],
+  ]),
   pdfHref: pdfServed ? PDF_HREF : null,
   pdfLabel: `Download PDF · ${EDITION}`,
   railBody,

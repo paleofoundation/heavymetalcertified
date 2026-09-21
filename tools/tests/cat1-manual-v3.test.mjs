@@ -9,6 +9,8 @@ import {
   ZENODO_VERSION_DOI,
   readExistingHouseDoi,
   CITATION_TITLE,
+  HERO_DEK,
+  LEAD,
   SCHOLAR_ABSTRACT,
 } from "../lib/cat1-manual-v3.mjs"
 import { renderManualV3Body, renderManualV3Page } from "../lib/manual-v3-page.mjs"
@@ -46,7 +48,7 @@ test("Cat-1 Manual v3 frontmatter omits the hero page snapshot", () => {
     category: 1,
     manualSlug: "infant-and-child-foods",
     categoryName: "Infant and Child Foods",
-    description: "The Method v2 governing instrument for Category 1.",
+    description: HERO_DEK,
     heroSnapshot: false,
     snapshot: [{ k: "Live standard pages", v: "9" }],
     connections: [{ label: "The standards register", href: "/standards" }],
@@ -87,17 +89,24 @@ test("Cat-1 body is lead + airy principles; no invented DOI; no MaxPoL ladder", 
   assert.match(html, /class="hmtc-section"/)
   assert.doesNotMatch(html, /10\.83138\/hmtc\.manual/)
   assert.doesNotMatch(html, /MaxPoL|A–E ladder|A-E ladder/)
-  const dek = "The Method v2 governing instrument for Category 1."
-  assert.ok(wordCount(dek) <= HERO_DEK_MAX_WORDS)
-  assert.equal(sentenceCount(dek), 1)
+  assert.ok(wordCount(HERO_DEK) <= HERO_DEK_MAX_WORDS)
+  assert.equal(sentenceCount(HERO_DEK), 1)
+  assert.doesNotMatch(HERO_DEK, /Method v2 governing instrument/i)
+  assert.match(html, /Infant and Child Foods|Category 1/)
+  assert.doesNotMatch(html, /Method v2 governing instrument/i)
+  assert.match(LEAD, /Category 1 infant and child foods/)
+  assert.doesNotMatch(LEAD, /Method v2 governing instrument/i)
 })
 
 test("Scholar abstract is 150–250 words and does not name MaxPoL", () => {
   const words = wordCount(SCHOLAR_ABSTRACT)
   assert.ok(words >= 150, `scholar abstract ${words} words < 150`)
   assert.ok(words <= 250, `scholar abstract ${words} words > 250`)
+  assert.match(SCHOLAR_ABSTRACT, /^The Infant and Child Foods Program Manual/)
+  assert.doesNotMatch(SCHOLAR_ABSTRACT, /Method v2 governing instrument/i)
   assert.match(SCHOLAR_ABSTRACT, /Manual v3/)
   assert.match(SCHOLAR_ABSTRACT, /Method v2/)
+  assert.match(SCHOLAR_ABSTRACT, /heavymetalcertified\.com\/program\/method/)
   assert.match(SCHOLAR_ABSTRACT, /Category 1/)
   assert.match(SCHOLAR_ABSTRACT, /Institute of Contaminant Standards/)
   assert.match(SCHOLAR_ABSTRACT, /10\.83138\/hmtc\.manual\.infant-and-child-foods/)

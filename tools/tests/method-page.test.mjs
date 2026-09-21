@@ -52,6 +52,6 @@ test("structure and manuals generators link instead of reprinting the autopsy", 
   assert.match(manualsGen, /\/program\/method/)
   assert.doesNotMatch(manualsGen, /retired V1 Zenodo dump/)
   const edition = fs.readFileSync(path.join(REPO, "tools/lib/manual-v3-page.mjs"), "utf8")
-  assert.match(edition, /\/program\/method/)
+  assert.match(edition, /METHOD_PAGE_HREF/)
   assert.doesNotMatch(edition, /V1 is retired/)
 })

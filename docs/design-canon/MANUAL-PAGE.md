@@ -15,7 +15,7 @@ Category manuals other than Cat-1 still use **`tools/lib/manual-page.mjs`** (`re
 
 - `tools/build-category-manual.mjs --pages=data/standards/<cat>-pages.json` — every non-Cat-1 category, data from the pages file's `_meta` block.
 
-**Cat-1 Manual v3** is a different document class (the Method v2 governing instrument, not a matrix landing). It is emitted by **`tools/lib/manual-v3-page.mjs`** via `tools/build-cat1-manual.mjs`, with the live register from `tools/lib/cat1-manual-v3.mjs`. It does not reprint the master-limit matrix or the struggle accordion.
+**Cat-1 Manual v3** is a different document class (the Infant and Child Foods Program Manual for Category 1, not a matrix landing). Method version is secondary and lives at `/program/method`. It is emitted by **`tools/lib/manual-v3-page.mjs`** via `tools/build-cat1-manual.mjs`, with the live register from `tools/lib/cat1-manual-v3.mjs`. It does not reprint the master-limit matrix or the struggle accordion.
 
 The "What is likely to struggle" section is the shared `tools/lib/struggle-section.mjs`. Version
 history is appended by `tools/build-cert-version-history.mjs` from
@@ -66,7 +66,7 @@ Each is a `<section>` whose `<h2>` carries the anchor `id` (the id is on the `<h
 
 **Cat-1 Manual v3 (locked thin TOC):**
 
-0. `.hmtc-manual-lead` — two sentences. Job: Method v2 governing instrument for Cat-1.
+0. `.hmtc-manual-lead` — two sentences. Job: what the Manual does for Category 1 infant and child foods. Method version is a pointer to `/program/method`, not the lead subject.
 1. `<h2 id="principles">` **Governing Principles** — the five co-equal objectives as airy `.hmtc-principle-card`s (`docs/governance/hmtc-governing-principles.md`).
 2. `<h2 id="lifecycle">` **Program lifecycle and statuses** — Certified | Remediation | Suspension | Revocation, baseline.
 3. `<h2 id="instruments">` **Mark, MU, CAPA, remediation, ratchet** — current SoT, short.

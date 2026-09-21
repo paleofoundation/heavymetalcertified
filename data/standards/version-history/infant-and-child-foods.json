@@ -4,7 +4,7 @@
   "current_version": "Manual v3",
   "concept_doi": "10.5281/zenodo.20270511",
   "concept_doi_note": "The Zenodo concept DOI [10.5281/zenodo.20270511](https://doi.org/10.5281/zenodo.20270511) resolves to the latest Zenodo deposited edition, which is retired. It is not the current Manual v3 identifier. The current house DOI is 10.83138/hmtc.manual.infant-and-child-foods.",
-  "_note": "Manual v3 (2026-09-19) is the current Method v2 governing instrument. House DOI 10.83138/hmtc.manual.infant-and-child-foods is minted and findable. Zenodo 10.5281/zenodo.20771543 and concept 10.5281/zenodo.20270511 are earlier deposited editions only. V1 never certified a brand and is retired.",
+  "_note": "Manual v3 (2026-09-19) is the current Infant and Child Foods Program Manual for Category 1. House DOI 10.83138/hmtc.manual.infant-and-child-foods is minted and findable. Zenodo 10.5281/zenodo.20771543 and concept 10.5281/zenodo.20270511 are earlier deposited editions only. Method edition is at /program/method.",
   "versions": [
     {
       "version": "Manual v3",
@@ -14,7 +14,7 @@
       "doi": "10.83138/hmtc.manual.infant-and-child-foods",
       "pdf": "/static/manuals/HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf",
       "permalink": "/manuals/infant-and-child-foods",
-      "summary": "Method v2 governing instrument. Thin TOC: five Governing Principles; program lifecycle; mark/MU/CAPA/remediation/ratchet; Lot Testing Schedule with lab-informed assignment and the 90% stay-in-program gate; live Cat-1 Standards Register. V1 Zenodo edition retired as an earlier deposited edition only."
+      "summary": "Infant and Child Foods Program Manual for Category 1. Thin TOC: five Governing Principles; program lifecycle; mark/MU/CAPA/remediation/ratchet; Lot Testing Schedule with lab-informed assignment and the 90% stay-in-program gate; live Cat-1 Standards Register. Method edition at /program/method. Earlier Zenodo edition retired as an earlier deposited edition only."
     },
     {
       "version": "2026 web edition",
