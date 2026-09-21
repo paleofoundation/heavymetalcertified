@@ -20,7 +20,9 @@ import {
   lintManualSections,
   lintTokenCss,
   lintStandardsHaveNoManualCover,
+  lintCat1EntityFirst,
 } from "../lib/manual-density-lint.mjs"
+import { HERO_DEK, MANUAL_LEAD } from "../lib/cat1-manual-v3.mjs"
 
 test("spacing scale is locked 8/16/24/48/72", () => {
   assert.deepEqual(SPACE_SCALE, [8, 16, 24, 48, 72])
@@ -36,20 +38,31 @@ test("tokens.scss matches the JS scale", () => {
 })
 
 test("hero kill-gate: current Cat-1 dek passes; a pile fails", () => {
-  const ok = "The Method v2 governing instrument for Category 1."
-  assert.ok(wordCount(ok) <= HERO_DEK_MAX_WORDS)
-  assert.ok(sentenceCount(ok) <= HERO_DEK_MAX_SENTENCES)
-  assert.equal(lintHeroDek(ok, "ok.md").length, 0)
+  assert.ok(wordCount(HERO_DEK) <= HERO_DEK_MAX_WORDS)
+  assert.ok(sentenceCount(HERO_DEK) <= HERO_DEK_MAX_SENTENCES)
+  assert.equal(lintHeroDek(HERO_DEK, "ok.md").length, 0)
   const pile = "Manual v3: the Method v2 governing instrument for Category 1, Infant and Child Foods (ages 0–5). Standards register, lot-testing schedule, and the five Governing Principles. Also a third sentence of contents."
   assert.ok(lintHeroDek(pile, "pile.md").length >= 1)
 })
 
 test("lead kill-gate: two sentences pass; three fail", () => {
-  const ok = "This Manual is the Method v2 governing instrument for Category 1, Infant and Child Foods. It binds the live subcategory pages; they remain the derivation of each cell."
-  const html = `<p class="hmtc-manual-lead">${ok}</p>`
+  const html = `<p class="hmtc-manual-lead">${MANUAL_LEAD}</p>`
   assert.equal(lintManualLead(html, "ok.md", { required: true }).length, 0)
   const pile = `<p class="hmtc-manual-lead">One. Two. Three extra.</p>`
   assert.ok(lintManualLead(pile, "pile.md").length >= 1)
+})
+
+test("Cat-1 entity-first: dek/lead/abstract must not open as Method v2", () => {
+  assert.equal(lintCat1EntityFirst({
+    description: HERO_DEK,
+    lead: MANUAL_LEAD,
+    scholarAbstract: "The Infant and Child Foods Program Manual is the Category 1 governing document. Manual v3 uses Method v2 as its methodology.",
+  }, "ok.md").length, 0)
+  assert.ok(lintCat1EntityFirst({
+    description: "The Method v2 governing instrument for Category 1.",
+    lead: MANUAL_LEAD,
+    scholarAbstract: "The Infant and Child Foods Program Manual is the Category 1 governing document.",
+  }, "fail.md").length >= 1)
 })
 
 test("manuals sections fail below the token floor", () => {

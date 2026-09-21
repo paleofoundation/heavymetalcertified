@@ -799,7 +799,7 @@
       { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "src": "docs/design-canon/MANUAL-PAGE.md", "note": "the burgundy manual hero band — the frontmatter-driven HeroBand, ported from the canvas isManual screen." },
       { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Standard' KIND badge (type: standard), matching the approved canvas isManual chip." },
       { "sel": ".hmtc-hb-title", "prop": "font-family", "want": "Lora", "match": "contains", "note": "hero title is the Lora display serif." },
-      { "sel": ".hmtc-hb-dek", "prop": "count", "want": 1, "note": "slim hero dek — one job: Method v2 governing instrument for Cat-1. Not a word pile." },
+      { "sel": ".hmtc-hb-dek", "prop": "count", "want": 1, "note": "slim hero dek — one job: infant/child foods Category 1 certification. Not Method v2. Not a word pile." },
       { "sel": ".wiki-content h1", "prop": "count", "want": 0, "note": "NO hand-rolled hero <h1> in the body — the title is the HeroBand's. A body <h1> is the old duplicate-title defect (design-lint blocks it; this is the rendered backstop)." },
       { "sel": ".hmtc-manual-lead", "prop": "count", "want": 1, "note": "≤2-sentence lead above Governing Principles." },
       { "sel": ".hmtc-principle-card", "prop": "count", "want": 5, "note": "Governing Principles as airy cards, not a stacked hairline list." },

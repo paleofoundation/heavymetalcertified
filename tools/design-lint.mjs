@@ -40,7 +40,10 @@ import {
   lintTokenCss,
   lintStandardsHaveNoManualCover,
   lintCat1ManualShape,
+  lintCat1EntityFirst,
   parseFrontmatterDescription,
+  parseFrontmatterScholarAbstract,
+  extractLeadHtml,
   CAT1_MANUAL,
 } from "./lib/manual-density-lint.mjs"
 import { lintAnalyteTierStatus } from "./lib/analyte-tier-status-lint.mjs"
@@ -196,7 +199,14 @@ if (fs.existsSync(MANUALS)) {
     blocking.push(...lintHeroDek(dek, rel))
     blocking.push(...lintManualSections(body, rel))
     blocking.push(...lintManualLead(body, rel, { required: f === `${CAT1_MANUAL}.md` }))
-    if (f === `${CAT1_MANUAL}.md`) blocking.push(...lintCat1ManualShape(body, rel))
+    if (f === `${CAT1_MANUAL}.md`) {
+      blocking.push(...lintCat1ManualShape(body, rel))
+      blocking.push(...lintCat1EntityFirst({
+        description: dek,
+        lead: extractLeadHtml(body),
+        scholarAbstract: parseFrontmatterScholarAbstract(fm),
+      }, rel))
+    }
   }
 }
 

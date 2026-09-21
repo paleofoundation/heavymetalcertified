@@ -43,7 +43,7 @@ export function lintHeroDek(description, rel) {
     return findings
   }
   if (sentences > HERO_DEK_MAX_SENTENCES) {
-    findings.push(`${rel}  hero dek word-pile — ${sentences} sentences (max ${HERO_DEK_MAX_SENTENCES}). One job: the governing instrument, not a contents list.`)
+    findings.push(`${rel}  hero dek word-pile — ${sentences} sentences (max ${HERO_DEK_MAX_SENTENCES}). One job: the category program, not a contents list.`)
   }
   if (words > HERO_DEK_MAX_WORDS) {
     findings.push(`${rel}  hero dek word-pile — ${words} words (max ${HERO_DEK_MAX_WORDS}). Aligns with the network hero kill-gate.`)
@@ -131,6 +131,40 @@ export function lintCat1ManualShape(body, rel) {
   }
   if (!/hmtc-principle-card/.test(body)) {
     findings.push(`${rel}  Cat-1 Manual v3 missing airy .hmtc-principle-card grid`)
+  }
+  return findings
+}
+
+const METHOD_OPEN = /^(the\s+)?method\s+v[12]/i
+const METHOD_INSTRUMENT = /method\s+v2\s+governing\s+instrument/i
+const MANUAL_V3_METHOD_OPEN = /^manual\s+v3\s+is\s+the\s+method/i
+
+function plainOpen(s) {
+  return String(s || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;|&#\d+;/gi, " ")
+    .trim()
+}
+
+export function parseFrontmatterScholarAbstract(fm) {
+  const m = String(fm || "").match(/(?:^|\n)scholar_abstract:\s*(?:"([^"]*)"|'([^']*)'|(.+))/)
+  return (m && (m[1] || m[2] || m[3] || "")).trim()
+}
+
+/** Cat-1 SEO/LLMO: dek, lead, and Scholar abstract must not open as Method v2. */
+export function lintCat1EntityFirst({ description, lead, scholarAbstract }, rel) {
+  const findings = []
+  const dek = plainOpen(description)
+  const leadPlain = plainOpen(lead)
+  const abs = plainOpen(scholarAbstract)
+  if (METHOD_OPEN.test(dek) || METHOD_INSTRUMENT.test(dek)) {
+    findings.push(`${rel}  hero dek opens with Method version — entity-first: Infant/Child Foods / Category 1`)
+  }
+  if (METHOD_OPEN.test(leadPlain) || METHOD_INSTRUMENT.test(leadPlain)) {
+    findings.push(`${rel}  lead opens as Method v2 — entity-first: what this Manual does for Category 1 brands, labs, and retailers`)
+  }
+  if (METHOD_OPEN.test(abs) || MANUAL_V3_METHOD_OPEN.test(abs) || METHOD_INSTRUMENT.test(abs.split(/[.?!]/)[0] || "")) {
+    findings.push(`${rel}  scholar abstract opens with Method version — subject is Infant and Child Foods Manual / Cat-1 program`)
   }
   return findings
 }

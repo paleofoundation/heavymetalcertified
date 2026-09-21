@@ -4,7 +4,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { lintAnalyteTierStatus } from "../lib/analyte-tier-status-lint.mjs"
 import { wordCount, sentenceCount, HERO_DEK_MAX_WORDS, HERO_DEK_MAX_SENTENCES } from "../lib/design-tokens.mjs"
-import { METHOD_PAGE_HREF, METHOD_POINTER_HTML, withMethodConn } from "../lib/method-change.mjs"
+import { METHOD_PAGE_HREF, METHOD_POINTER_HTML, METHOD_EDITION_POINTER_HTML, withMethodConn } from "../lib/method-change.mjs"
 
 const REPO = process.cwd()
 const PAGE = path.join(REPO, "content/program/method.md")
@@ -40,6 +40,8 @@ test("method page does not revive analyte-class status architecture", () => {
 test("pointer helper is one sentence and one URL", () => {
   assert.equal(METHOD_PAGE_HREF, "/program/method")
   assert.match(METHOD_POINTER_HTML, /href="\/program\/method"/)
+  assert.match(METHOD_EDITION_POINTER_HTML, /href="\/program\/method"/)
+  assert.match(METHOD_EDITION_POINTER_HTML, /This edition uses Method v2/)
   assert.equal(withMethodConn([]).length, 1)
   assert.equal(withMethodConn([{ label: "x", href: "/program/method" }]).length, 1)
 })
@@ -52,6 +54,7 @@ test("structure and manuals generators link instead of reprinting the autopsy", 
   assert.match(manualsGen, /\/program\/method/)
   assert.doesNotMatch(manualsGen, /retired V1 Zenodo dump/)
   const edition = fs.readFileSync(path.join(REPO, "tools/lib/manual-v3-page.mjs"), "utf8")
-  assert.match(edition, /\/program\/method/)
+  assert.match(edition, /METHOD_EDITION_POINTER_HTML/)
   assert.doesNotMatch(edition, /V1 is retired/)
+  assert.doesNotMatch(edition, /Method v2 governing instrument/)
 })

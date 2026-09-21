@@ -273,7 +273,7 @@ test("scholar_eligible manuals emit Highwire + ScholarlyArticle without inventin
 
 test("Cat-1 Manual v3 ScholarlyArticle carries abstract, image, dateModified, about, keywords, license, and BreadcrumbList", () => {
   const abstract =
-    "Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods. ".repeat(8).trim()
+    "The Infant and Child Foods Program Manual is the Category 1 governing document for Heavy Metal Certified. ".repeat(8).trim()
   const html = render(
     {
       type: "standard",

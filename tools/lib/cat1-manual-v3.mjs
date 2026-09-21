@@ -37,9 +37,17 @@ export const PDF_HREF = `/static/manuals/${PDF_FILE}`
 export const BASE_URL = "https://heavymetalcertified.com/manuals/infant-and-child-foods"
 export const CITATION_TITLE = "Infant and Child Foods: HMTc Program Manual"
 
+/** Hero dek (`description`). Entity-first: Cat-1 program, not Method version. */
+export const HERO_DEK =
+  "Heavy metals certification for infant and child foods: limits, lot testing, and the Category 1 program."
+
+/** Body lead. What this Manual does for Category 1 brands, labs, and retailers. */
+export const MANUAL_LEAD =
+  "This Manual governs Heavy Metal Certified for Category 1 infant and child foods. It binds brands, laboratories, and retailers to published limits, lot testing, the 90% stay-in-program gate, and the live Cat-1 Standards Register."
+
 /** Dense Scholar / OG / JSON-LD abstract. Not the hero dek (`description`). */
 export const SCHOLAR_ABSTRACT =
-  "Manual v3 is the Method v2 governing instrument for Category 1, Infant and Child Foods. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.infant-and-child-foods. The Manual binds the live subcategory standard pages; those pages remain the derivation of each cell. Certification requires every published limit analyte to sit at or below 100 percent of its government floor or disclosed read-across. There is no band above a published limit that still earns the mark. The five Governing Principles are co-equal: drive down contamination, protect consumers, protect brands who enter, remain legally defensible, and become the de facto standard. None may be sacrificed to advance another. Totals are run on every completing lot. Speciation is a pathway reflex. After application, the Program Operator writes a lab-informed Lot Testing Schedule from the brand's laboratory capability. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. The live Cat-1 Standards Register lists every subcategory page with its house DOI when cert-ready, or a HOLD reason when the claim-surface is incomplete. Incomplete cells are not cert-ready. All rights reserved."
+  "The Infant and Child Foods Program Manual is the Category 1 governing document for Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.infant-and-child-foods. The Manual binds the live subcategory standard pages; those pages remain the derivation of each cell. Certification requires every published limit analyte to sit at or below 100 percent of its government floor or disclosed read-across. There is no band above a published limit that still earns the mark. The five Governing Principles are co-equal: drive down contamination, protect consumers, protect brands who enter, remain legally defensible, and become the de facto standard. None may be sacrificed to advance another. Totals are run on every completing lot. Speciation is a pathway reflex. After application, the Program Operator writes a lab-informed Lot Testing Schedule from the brand's laboratory capability. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. The live Cat-1 Standards Register lists every subcategory page with its house DOI when cert-ready, or a HOLD reason when the claim-surface is incomplete. Incomplete cells are not cert-ready. Manual v3 uses Method v2 as its methodology; the v1 to v2 record is at https://heavymetalcertified.com/program/method. All rights reserved."
 
 export const SCHOLAR_KEYWORDS = [
   "Infant and Child Foods",

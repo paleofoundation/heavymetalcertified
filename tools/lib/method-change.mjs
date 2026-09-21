@@ -14,6 +14,10 @@ const LINK = "#1c43ad"
 export const METHOD_POINTER_HTML =
   `This is Method v2. Why Method v1 was retired is on <a href="${METHOD_PAGE_HREF}" style="color:${LINK}">the method page</a>.`
 
+/** Manuals / category volumes: Method is an edition pointer, not the subject. */
+export const METHOD_EDITION_POINTER_HTML =
+  `This edition uses Method v2. The v1 to v2 autopsy is on <a href="${METHOD_PAGE_HREF}" style="color:${LINK}">the method page</a>.`
+
 export function withMethodConn(conns = []) {
   const list = Array.isArray(conns) ? conns.slice() : []
   if (list.some((c) => c && c.href === METHOD_PAGE_HREF)) return list

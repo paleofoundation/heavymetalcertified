@@ -77,6 +77,7 @@ const page = renderManualPage({
   title: `${META.category_name} — HMTc Program Manual`,
   category: META.category,
   categoryName: META.category_name,
+  // Entity-first dek: the category program, never "Method v2 governing instrument".
   description: `The complete Heavy Metal Tested & Certified standard for Category ${META.category}, ${META.category_name}, edition 2026.`,
   snapshot: [
     { k: "Subcategories", v: String(n) },
