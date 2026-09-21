@@ -48,6 +48,9 @@ export function lintHeroDek(description, rel) {
   if (words > HERO_DEK_MAX_WORDS) {
     findings.push(`${rel}  hero dek word-pile — ${words} words (max ${HERO_DEK_MAX_WORDS}). Aligns with the network hero kill-gate.`)
   }
+  if (/Method v2 governing instrument/i.test(description)) {
+    findings.push(`${rel}  hero dek treats Method as the page subject — manuals are entity-first (category / infant-child foods). Method lives at /program/method.`)
+  }
   return findings
 }
 
@@ -65,6 +68,9 @@ export function lintManualLead(body, rel, { required = false } = {}) {
   }
   if (words > LEAD_MAX_WORDS) {
     findings.push(`${rel}  lead word-pile — ${words} words (max ${LEAD_MAX_WORDS})`)
+  }
+  if (/Method v2 governing instrument/i.test(lead)) {
+    findings.push(`${rel}  lead treats Method as the page subject — open with what the Manual does for the category. Method lives at /program/method.`)
   }
   return findings
 }
@@ -131,6 +137,13 @@ export function lintCat1ManualShape(body, rel) {
   }
   if (!/hmtc-principle-card/.test(body)) {
     findings.push(`${rel}  Cat-1 Manual v3 missing airy .hmtc-principle-card grid`)
+  }
+  const abs = String(body || "").match(/(?:^|\n)scholar_abstract:\s*"([^"]+)"/)
+  if (abs && /^(Manual v3 is the Method|The Method v2)/i.test(abs[1])) {
+    findings.push(`${rel}  scholar_abstract opens with Method as subject — entity is the Infant and Child Foods Program Manual`)
+  }
+  if (/Method v2 governing instrument/i.test(String(body || ""))) {
+    findings.push(`${rel}  Method v2 governing instrument leftover — Method essay lives at /program/method`)
   }
   return findings
 }

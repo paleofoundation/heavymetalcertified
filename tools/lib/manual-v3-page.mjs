@@ -18,7 +18,9 @@ import {
   ZENODO_VERSION_DOI,
   ZENODO_CONCEPT_DOI,
   buildRegister,
+  LEAD,
 } from "./cat1-manual-v3.mjs"
+import { METHOD_PAGE_HREF } from "./method-change.mjs"
 
 const ACCENT = "#9f2727"
 const LINK = "#1c43ad"
@@ -92,7 +94,7 @@ function principlesHtml() {
       `The five objectives are co-equal. None may be sacrificed to advance another. Cited from <span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:${ACCENT}">docs/governance/hmtc-governing-principles.md</span> (the ruling named in the readiness manifest).`,
     ) +
     `<div class="hmtc-principle-grid">${cards}</div>` +
-    `<div style="${CALL};margin-top:var(--space-3, 24px)"><p class="${PROSE_CLASS}" style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Method v2.0 (CLAUDE.md Part 19): every cert-ready cell is a government floor or a disclosed read-across. Species never replace the parent total. Limits do not derive from the Heavy Metal Index; every number traces to a named sovereign instrument. The Index is cited one way, outbound only.</p></div>`
+    `<div style="${CALL};margin-top:var(--space-3, 24px)"><p class="${PROSE_CLASS}" style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0">Every cert-ready cell is a government floor or a disclosed read-across. Species never replace the parent total. Limits do not derive from the Heavy Metal Index; every number traces to a named sovereign instrument. The Index is cited one way, outbound only. Method edition is recorded as v2 on <a href="${METHOD_PAGE_HREF}" style="color:${LINK}">the method page</a>.</p></div>`
   )
 }
 
@@ -282,7 +284,7 @@ function editionHtml(doi) {
     : ""
   return (
     p(
-      `This is Manual v3, the Method v2 governing instrument for Category 1. It supersedes the earlier deposited Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> (concept DOI <a href="https://doi.org/${ZENODO_CONCEPT_DOI}" style="color:${LINK}">${ZENODO_CONCEPT_DOI}</a>). That earlier deposited edition never certified a brand. Why Method v1 was retired is on <a href="/program/method" style="color:${LINK}">the method page</a>.`,
+      `This Infant and Child Foods Program Manual (Manual v3) is the current Category 1 edition. It supersedes the earlier deposited Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> (concept DOI <a href="https://doi.org/${ZENODO_CONCEPT_DOI}" style="color:${LINK}">${ZENODO_CONCEPT_DOI}</a>). That earlier deposited edition never certified a brand. Method edition is recorded as v2 on <a href="${METHOD_PAGE_HREF}" style="color:${LINK}">the method page</a>.`,
     ) +
     mintPara +
     `<div style="${CALL}"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0 0 12px;max-width:74ch">${apaCite(doi)}</p><p style="font-size:13.5px;line-height:1.7;color:#5a4141;margin:0">${COPYRIGHT}</p></div>`
@@ -290,7 +292,7 @@ function editionHtml(doi) {
 }
 
 function leadHtml() {
-  return `<p class="${LEAD_CLASS}">This Manual is the Method v2 governing instrument for Category 1, Infant and Child Foods. It binds the live subcategory pages; they remain the derivation of each cell.</p>`
+  return `<p class="${LEAD_CLASS}">${LEAD}</p>`
 }
 
 export function renderManualV3Body({ register, certDoi = null } = {}) {

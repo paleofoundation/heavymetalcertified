@@ -196,7 +196,7 @@ if (fs.existsSync(MANUALS)) {
     blocking.push(...lintHeroDek(dek, rel))
     blocking.push(...lintManualSections(body, rel))
     blocking.push(...lintManualLead(body, rel, { required: f === `${CAT1_MANUAL}.md` }))
-    if (f === `${CAT1_MANUAL}.md`) blocking.push(...lintCat1ManualShape(body, rel))
+    if (f === `${CAT1_MANUAL}.md`) blocking.push(...lintCat1ManualShape(raw, rel))
   }
 }
 

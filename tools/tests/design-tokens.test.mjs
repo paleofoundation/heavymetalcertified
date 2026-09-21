@@ -36,16 +36,18 @@ test("tokens.scss matches the JS scale", () => {
 })
 
 test("hero kill-gate: current Cat-1 dek passes; a pile fails", () => {
-  const ok = "The Method v2 governing instrument for Category 1."
+  const ok = "The Infant and Child Foods Program Manual for Category 1: published limits, lot testing, and the Cat-1 register."
   assert.ok(wordCount(ok) <= HERO_DEK_MAX_WORDS)
   assert.ok(sentenceCount(ok) <= HERO_DEK_MAX_SENTENCES)
   assert.equal(lintHeroDek(ok, "ok.md").length, 0)
+  const methodFirst = "The Method v2 governing instrument for Category 1."
+  assert.ok(lintHeroDek(methodFirst, "method.md").length >= 1)
   const pile = "Manual v3: the Method v2 governing instrument for Category 1, Infant and Child Foods (ages 0–5). Standards register, lot-testing schedule, and the five Governing Principles. Also a third sentence of contents."
   assert.ok(lintHeroDek(pile, "pile.md").length >= 1)
 })
 
 test("lead kill-gate: two sentences pass; three fail", () => {
-  const ok = "This Manual is the Method v2 governing instrument for Category 1, Infant and Child Foods. It binds the live subcategory pages; they remain the derivation of each cell."
+  const ok = "This Manual states how Category 1 infant and child foods are certified: published limits, lot testing, and the stay-in-program gate. It binds the live subcategory pages; they remain the derivation of each cell."
   const html = `<p class="hmtc-manual-lead">${ok}</p>`
   assert.equal(lintManualLead(html, "ok.md", { required: true }).length, 0)
   const pile = `<p class="hmtc-manual-lead">One. Two. Three extra.</p>`
