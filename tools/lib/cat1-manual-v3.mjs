@@ -181,7 +181,7 @@ export function snapshotFromRegister(reg = buildRegister()) {
 }
 
 export function apaCite(doi) {
-  return houseApaCite({ title: CITATION_TITLE, year: EDITION_DATE.slice(0, 4), doi })
+  return houseApaCite({ title: CITATION_TITLE, year: EDITION_DATE.slice(0, 4), doi, kind: "manual" })
 }
 
 export function readExistingHouseDoi() {

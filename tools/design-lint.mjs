@@ -197,6 +197,9 @@ if (fs.existsSync(MANUALS)) {
     blocking.push(...lintManualSections(body, rel))
     blocking.push(...lintManualLead(body, rel, { required: f === `${CAT1_MANUAL}.md` }))
     if (f === `${CAT1_MANUAL}.md`) blocking.push(...lintCat1ManualShape(raw, rel))
+    if (/\bStandard No\.|\bManual No\./.test(body)) {
+      blocking.push(`${rel}  Program Manual must not emit Standard No. / Manual No. on the cite (standards-only label)`)
+    }
   }
 }
 

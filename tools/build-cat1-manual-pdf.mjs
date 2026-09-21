@@ -358,6 +358,7 @@ function ManualDocument() {
     label: "Heavy Metal Certified  ·  Infant and Child Foods Program Manual",
     edition: EDITION_LABEL,
     doi: HOUSE_DOI,
+    kind: "manual",
   })
   const p1 = AuthoredPart("part1-why.md", "Part 1")
   const p2 = AuthoredPart("part2-program.md", "Part 2")
