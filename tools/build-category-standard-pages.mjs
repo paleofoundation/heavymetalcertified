@@ -18,6 +18,7 @@ import path from "node:path"
 import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCompiledCell, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
 import { renderRiskFlagForStandard } from "./lib/struggle-section.mjs"
 import { SPECIES, speciesParentViolations } from "./lib/claim-surface.mjs"
+import { METHOD_POINTER_HTML, withMethodConn } from "./lib/method-change.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -271,9 +272,9 @@ function methodSection(subName, basisWord, methodProse) {
   // child-protective over-compliance) supplies its own prose via META.method_prose.
   if (Array.isArray(methodProse) && methodProse.length) {
     const paras = methodProse.map((p) => `<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">${p}</p>`).join("")
-    return `<section id="method" class="hmtc-section">${H}${paras}</section>`
+    return `<section id="method" class="hmtc-section">${H}${paras}<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">${METHOD_POINTER_HTML}</p></section>`
   }
-  return `<section id="method" class="hmtc-section">${H}<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; among them the European Union, Codex Alimentarius, the US FDA, Australia/New Zealand, the Gulf states (GSO), and the national authorities of every jurisdiction that regulates the product &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p></section>`
+  return `<section id="method" class="hmtc-section">${H}<p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">The standard for each analyte is the strictest maximum level set by any credible government regulator &mdash; among them the European Union, Codex Alimentarius, the US FDA, Australia/New Zealand, the Gulf states (GSO), and the national authorities of every jurisdiction that regulates the product &mdash; converted into ${esc(subName)}&rsquo;s own ${basisWord} basis. It is a lookup of sovereign law, carrying at most one disclosed basis conversion where the law is written in another basis, and an explicit read-across where no government regulates the exact product. A certified product sits at or below every applicable sovereign limit at once.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Where <em>no</em> government regulates the exact product for an analyte, the standard does not go blank or invent a number: the limit is read across from the nearest government value for an analogous product, so a certified product still sits at or below a real sovereign limit. The ratchet tightens these after publication as surveillance warrants.</p><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">${METHOD_POINTER_HTML}</p></section>`
 }
 
 // Child-protective anchor derivation (Cat 16): no government regulates a supplement to a
@@ -437,7 +438,7 @@ for (const page of DOC.pages) {
     `  - { k: "Native basis", v: "${basisWord}" }`,
     `  - { k: "Standard version", v: "${version}" }`,
     "connections:",
-    ...(page.connections || []).map((c) => `  - { label: "${c.label}", href: "${c.href}" }`),
+    ...withMethodConn(page.connections || []).map((c) => `  - { label: "${c.label}", href: "${c.href}" }`),
     "---",
   ].join("\n")
 

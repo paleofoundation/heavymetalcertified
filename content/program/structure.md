@@ -9,6 +9,7 @@ snapshot:
   - { k: "Certification statuses", v: "4" }
   - { k: "Baseline lots required", v: "3" }
 connections:
+  - { label: "Method v1 to Method v2", href: "/program/method" }
   - { label: "The subcategory standards register", href: "/standards" }
   - { label: "Program Manual, 2026 Edition", href: "/manuals" }
   - { label: "Verify a certificate", href: "/verify" }
@@ -19,6 +20,10 @@ rail_box:
   cta_label: "Start an application"
   cta_href: "/apply"
 ---
+
+<section id="method-edition" class="hmtc-section">
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:var(--prose-max)">This is Method v2. Why Method v1 was retired is on <a href="/program/method" style="color:#1c43ad">the method page</a>.</p>
+</section>
 
 <section id="panel" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">The analyte panel</h2>

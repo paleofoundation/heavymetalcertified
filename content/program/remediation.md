@@ -12,6 +12,7 @@ snapshot:
   - { k: "After certification", v: "corrective action" }
   - { k: "Concealment", v: "revocation" }
 connections:
+  - { label: "Method v1 to Method v2", href: "/program/method" }
   - { label: "Readiness (pre-certification)", href: "/program/readiness" }
   - { label: "Corrective action (post-certification)", href: "/program/corrective-action" }
   - { label: "What happens to your data", href: "/what-happens-to-your-data" }

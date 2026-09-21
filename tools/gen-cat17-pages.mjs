@@ -22,6 +22,7 @@ for (const rf of records) {
     version: f.standard_version || "1.0 (2026-08-13)",
     hmi_link: f.hmi_literature_link || undefined,
     connections: [
+      { label: "Method v1 to Method v2", href: "/program/method" },
       { label: "How limits are derived", href: "/program/structure" },
       { label: "Regulation references (source documents)", href: "/regulations" },
       { label: "All HMTc standards", href: "/standards" },

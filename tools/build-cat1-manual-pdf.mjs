@@ -302,7 +302,7 @@ function Cover() {
       h(
         Text,
         { key: "b", style: s.abstractBody },
-        "Manual v3 is the Method v2 governing instrument for Category 1. Thin table of contents: the five Governing Principles; program lifecycle and statuses; mark, measurement uncertainty, CAPA, remediation, and the standards ratchet; the Lot Testing Schedule (lab-informed assignment and the 90% stay-in-program gate); and the live Cat-1 Standards Register. It does not reprint per-analyte master-table walls. The earlier Zenodo deposit is an earlier deposited edition only. V1 never certified a brand and is retired.",
+        "Manual v3 is the Method v2 governing instrument for Category 1. Thin table of contents: the five Governing Principles; program lifecycle and statuses; mark, measurement uncertainty, CAPA, remediation, and the standards ratchet; the Lot Testing Schedule (lab-informed assignment and the 90% stay-in-program gate); and the live Cat-1 Standards Register. It does not reprint per-analyte master-table walls. The earlier Zenodo deposit is an earlier deposited edition only. Why Method v1 was retired is on /program/method.",
       ),
     ]),
     h(Text, { key: "cite", style: [s.coverText, { marginTop: 10 }] }, apaCite(HOUSE_DOI)),

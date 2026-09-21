@@ -137,6 +137,7 @@ export default (() => {
         conns.push({ label: "Heavy Metal Index: literature baseline", href: String(fm.hmi_literature_link) })
       }
       conns.push({ label: "The standards register", href: `${base}/standards` })
+      conns.push({ label: "Method v1 to Method v2", href: `${base}/program/method` })
       conns.push({ label: "How limits are derived", href: `${base}/program/structure` })
       conns.push({ label: "Verify a certificate", href: `${base}/verify` })
     }

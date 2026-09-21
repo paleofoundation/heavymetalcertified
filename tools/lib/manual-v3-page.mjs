@@ -282,7 +282,7 @@ function editionHtml(doi) {
     : ""
   return (
     p(
-      `This is Manual v3, the Method v2 governing instrument for Category 1. It supersedes the earlier deposited Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> (concept DOI <a href="https://doi.org/${ZENODO_CONCEPT_DOI}" style="color:${LINK}">${ZENODO_CONCEPT_DOI}</a>). That earlier deposited edition never certified a brand. V1 is retired. It remains citable only as an earlier deposited edition.`,
+      `This is Manual v3, the Method v2 governing instrument for Category 1. It supersedes the earlier deposited Zenodo edition <a href="https://doi.org/${ZENODO_VERSION_DOI}" style="color:${LINK}">${ZENODO_VERSION_DOI}</a> (concept DOI <a href="https://doi.org/${ZENODO_CONCEPT_DOI}" style="color:${LINK}">${ZENODO_CONCEPT_DOI}</a>). That earlier deposited edition never certified a brand. Why Method v1 was retired is on <a href="/program/method" style="color:${LINK}">the method page</a>.`,
     ) +
     mintPara +
     `<div style="${CALL}"><p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0 0 12px;max-width:74ch">${apaCite(doi)}</p><p style="font-size:13.5px;line-height:1.7;color:#5a4141;margin:0">${COPYRIGHT}</p></div>`
