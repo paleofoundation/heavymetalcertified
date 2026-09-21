@@ -23,6 +23,7 @@ const footerSections = [
   {
     title: "Methodology",
     links: [
+      ["Method v1 to Method v2", "/program/method"],
       ["How limits are derived", "/program/structure"],
       ["Two remediation pathways", "/program/two-pathways"],
       ["Confidential Remediation Track", "/program/remediation"],
@@ -60,8 +61,8 @@ export default (() => {
               Heavy Metal Certified
             </a>
             <p>
-              Published heavy-metal standards, set per subcategory in each product's native basis,
-              and derived from a pooled distribution of the peer-reviewed and agency literature.
+              Published heavy-metal standards, set per subcategory in each product's native basis.
+              Claim limits are a government floor or a disclosed read-across.
             </p>
           </section>
           <nav class="site-footer-nav" aria-label="Footer">

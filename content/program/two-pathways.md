@@ -3,9 +3,15 @@ title: "The Two Pathways"
 description: "The default HMTc limit is the strictest applicable government maximum. Where the program sets a number itself, the priority toxics and the cells no government regulates, it uses two pathways: a clean-subcategory limit near P97 (~90% pass) and a dirty-subcategory limit near P45 (~40% pass)."
 type: program
 audience: [regulator, brand-legal, retailer-compliance, certifier]
+connections:
+  - { label: "Method v1 to Method v2", href: "/program/method" }
+  - { label: "How limits are derived", href: "/program/structure" }
+  - { label: "The subcategory standards register", href: "/standards" }
 ---
 
 # The Two Pathways
+
+This is Method v2. Why Method v1 was retired is on [the method page](/program/method). Occurrence characterises the market here. It does not invent a claim cell.
 
 Most HMTc limits are not calibrated at all. The default standard for any subcategory and analyte is **the strictest maximum level set by a credible government regulator**, the EU, Codex, the FDA, WHO/JECFA, FSANZ, or Health Canada, converted to the product's native basis. That is a lookup against sovereign law, not a computation, and it is where most of the panel lands: nickel, tin, aluminium, and hexavalent chromium adopt the government limit directly, and where the law itself splits a limit by formulation, nickel and aluminium in infant formula, the standard adopts the law's own split and cites it.
 

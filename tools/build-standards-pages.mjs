@@ -27,6 +27,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { loadOccurrenceEvidence, loadToxAnchors, descriptorFromCatalogAnalyte, occurrenceRationaleSection } from "./lib/occurrence-section.mjs"
+import { METHOD_CONN } from "./lib/method-change.mjs"
 
 const repoRoot = process.cwd()
 const CATALOG = path.join(repoRoot, "data/standards/hmtc_standards_catalog.json")
@@ -132,6 +133,7 @@ for (const row of catalog.rows) {
     `  - { k: "Native basis", v: "${basisLabel(row.native_basis)}" }`,
     `  - { k: "Standard version", v: "${row.standard_version}" }`,
     "connections:",
+    `  - { label: "${METHOD_CONN.label}", href: "${METHOD_CONN.href}" }`,
     '  - { label: "How limits are derived", href: "/program/structure" }',
     '  - { label: "Program Manuals", href: "/manuals" }',
     '  - { label: "Verify a certificate", href: "/verify" }',
@@ -390,6 +392,7 @@ const idxFront = [
   `  - { k: "Published manuals", v: "${publishedManuals.length}" }`,
   "connections:",
   '  - { label: "Standards Briefings", href: "/briefings" }',
+  `  - { label: "${METHOD_CONN.label}", href: "${METHOD_CONN.href}" }`,
   '  - { label: "How limits are derived", href: "/program/structure" }',
   '  - { label: "Program Manuals", href: "/manuals" }',
   '  - { label: "Verify a certificate", href: "/verify" }',

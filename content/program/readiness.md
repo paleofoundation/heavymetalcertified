@@ -12,6 +12,7 @@ snapshot:
   - { k: "Mark", v: "not awarded" }
   - { k: "Results to your team", v: "quantitative" }
 connections:
+  - { label: "Method v1 to Method v2", href: "/program/method" }
   - { label: "For brands", href: "/for-brands" }
   - { label: "Corrective action (post-certification)", href: "/program/corrective-action" }
   - { label: "What happens to your data", href: "/what-happens-to-your-data" }

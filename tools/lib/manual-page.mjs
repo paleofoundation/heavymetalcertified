@@ -99,7 +99,7 @@ export function renderScope({ methodNoteHtml, scopeLeadHtml }) {
   return `<section class="${SECTION_CLASS}">
 <h2 id="scope" class="${H2_CLASS}" style="${H2}">Scope and method</h2>
 <p class="${PROSE_CLASS}" style="font-size:17.5px;line-height:1.72;color:${INK};margin:0 0 18px">${lead}</p>
-<p class="${PROSE_CLASS}" style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 4px">Method: <a href="/program/structure" style="color:${LINK}">government-limit default (Method v2.0)</a>. ${methodNoteHtml}</p>
+<p class="${PROSE_CLASS}" style="font-size:16.5px;line-height:1.78;color:${BODY};margin:0 0 4px">Method: <a href="/program/structure" style="color:${LINK}">government-limit default (Method v2.0)</a>. Why Method v1 was retired is on <a href="/program/method" style="color:${LINK}">the method page</a>. ${methodNoteHtml}</p>
 </section>`
 }
 

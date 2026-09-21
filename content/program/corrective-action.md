@@ -12,6 +12,7 @@ snapshot:
   - { k: "Self-reported finding", v: "defined process" }
   - { k: "Concealment", v: "revocation" }
 connections:
+  - { label: "Method v1 to Method v2", href: "/program/method" }
   - { label: "Readiness (pre-certification)", href: "/program/readiness" }
   - { label: "The certification statuses", href: "/program/structure" }
   - { label: "What happens to your data", href: "/what-happens-to-your-data" }

@@ -86,6 +86,7 @@ const page = renderManualPage({
   ],
   connections: [
     { label: "The standards register", href: "/standards" },
+    { label: "Method v1 to Method v2", href: "/program/method" },
     { label: "How limits are derived", href: "/program/structure" },
     { label: "Verify a certificate", href: "/verify" },
     { label: "All Program Manuals", href: "/manuals" },

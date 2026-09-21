@@ -98,6 +98,7 @@ const meta = {
 }
 
 const CONNECTIONS = [
+  { label: "Method v1 to Method v2", href: "/program/method" },
   { label: "How limits are derived", href: "/program/structure" },
   { label: "Regulation references (source documents)", href: "/regulations" },
   { label: "All HMTc standards", href: "/standards" },

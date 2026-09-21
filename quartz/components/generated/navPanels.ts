@@ -74,6 +74,10 @@ export const navPanels: NavPanel[] = [
         "heading": "How limits are set",
         "children": [
           {
+            "label": "Method v1 to Method v2",
+            "slug": "program/method"
+          },
+          {
             "label": "Regulation references",
             "slug": "regulations"
           },
@@ -249,6 +253,10 @@ export const navPanels: NavPanel[] = [
           {
             "label": "What heavy metal certification is",
             "slug": "heavy-metal-certification"
+          },
+          {
+            "label": "Method v1 to Method v2",
+            "slug": "program/method"
           },
           {
             "label": "Program structure & gates",
