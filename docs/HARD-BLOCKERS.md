@@ -6,6 +6,24 @@ rice / infant cereal) whose compiled record does **not** already carry a
 disclosed government number. Do not fill these with guessed ppb.
 
 Count: **174** claim cells across **58** standards.
+Convertible leftovers: **0**.
+
+## What unlocks the next convertible batch
+
+No empty claim-surface cell already carries a disclosed `gov_floor` or
+`read_across` number. Completing any cell below from this tree would invent
+ppb. The next convertible batch appears only when the compiler writes a
+**government maximum level** (same product / same basis) or a **disclosed
+same-basis read_across** onto the compiled cell itself.
+
+These classes do not convert and must not be invented:
+
+- **89** — nearest sovereign is a disclosed wrong-basis companion; read-across rejected
+- **66** — compiler: no sovereign ML and no supportable read-across
+- **9** — compiler not_material with value:null
+- **4** — analyte is a permitted active or additive, not a contaminant ceiling
+- **3** — empty claim cell with no disclosed numeric
+- **3** — compiler control with value:null
 
 ## nearest sovereign is a disclosed wrong-basis companion; read-across rejected
 
