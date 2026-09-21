@@ -90,9 +90,9 @@ if (pdfText) {
   const houseDoi = readExistingHouseDoi()
   if (houseDoi) {
     const wantCite = apaCite(houseDoi)
-    if (!compact(pdfText).includes(compact(wantCite))) fail.push(`PDF missing APA Standard No. cite: ${wantCite}`)
+    if (!compact(pdfText).includes(compact(wantCite))) fail.push(`PDF missing APA program-manual cite: ${wantCite}`)
     if (!norm.includes(`https://doi.org/${houseDoi}`)) fail.push(`PDF missing doi.org URL for ${houseDoi}`)
-    if (!norm.includes(`Standard No. ${houseDoi}`)) fail.push(`PDF missing Standard No. ${houseDoi}`)
+    if (/Standard No\.|Manual No\./.test(norm)) fail.push(`PDF must not emit Standard No. / Manual No. on a Program Manual`)
   }
   if (!norm.includes("90%") || !/remain in the program/i.test(norm)) fail.push(`PDF missing 90% stay-in-program gate`)
   if (!/Lab-informed schedule/i.test(norm)) fail.push(`PDF missing Lab-informed schedule`)
@@ -110,13 +110,13 @@ if (pdfText) {
     const p1 = page1.stdout.replace(/[\s\u00AD\u200B]+/g, " ")
     if (houseDoi) {
       if (!p1.includes(`https://doi.org/${houseDoi}`)) fail.push(`PDF page 1 missing doi.org URL`)
-      if (!p1.includes(`Standard No. ${houseDoi}`)) fail.push(`PDF page 1 missing Standard No.`)
+      if (/Standard No\.|Manual No\./.test(p1)) fail.push(`PDF page 1 must not emit Standard No. / Manual No.`)
       if (!p1.includes(CITATION_TITLE)) fail.push(`PDF page 1 missing citation title`)
     }
     if (!/All rights reserved/i.test(p1)) fail.push(`PDF page 1 missing All rights reserved`)
     if (/live standard pages|cert-ready \d+ of \d+/i.test(p1)) fail.push(`PDF page 1 still shows live-pages / cert-ready cover chrome`)
     if (/registration pending|CC BY/i.test(p1)) fail.push(`PDF page 1 has registration-pending or CC BY`)
-    note(`B2. PDF page 1: APA Standard No. cite + All rights reserved; no live-pages chrome`)
+    note(`B2. PDF page 1: APA program-manual cite + All rights reserved; no Standard No.; no live-pages chrome`)
   }
   note(`B. PDF text: register names + house DOIs present; no CC BY; no master-matrix reprint`)
 } else if (fs.existsSync(PDF)) {

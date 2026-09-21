@@ -49,7 +49,7 @@ const CERT_DOI = (() => {
   }
 })()
 const CITE_LINE = CERT_DOI
-  ? houseApaCite({ title: "Pet Foods: HMTc Program Manual", year: "2026", doi: CERT_DOI })
+  ? houseApaCite({ title: "Pet Foods: HMTc Program Manual", year: "2026", doi: CERT_DOI, kind: "manual" })
   : `Cite as: Pendergrass, K. HMTc Pet Foods Program Manual (provisional edition). Institute of Contaminant Standards (ICS), 2026. ${BASE_URL}. CC BY 4.0.`
 const FOOTER_URL = CERT_DOI ? `https://doi.org/${CERT_DOI}` : BASE_URL
 
@@ -235,7 +235,7 @@ const PartThreeHead = () => h(View, { key: "p3", wrap: false }, [
 
 // ── document ─────────────────────────────────────────────────────────────────
 const footer = (label) => h(Text, { key: "footer", style: s.footer, fixed: true, render: ({ pageNumber, totalPages }) => CERT_DOI
-  ? houseFooterCite({ label, edition: `${pageNumber} / ${totalPages}`, doi: CERT_DOI })
+  ? houseFooterCite({ label, edition: `${pageNumber} / ${totalPages}`, doi: CERT_DOI, kind: "manual" })
   : `${label}   ·   ${pageNumber} / ${totalPages}   ·   ${FOOTER_URL}` })
 
 const doc = h(Document, { title: "HMTc Pet Foods Program Manual (provisional)", author: "Karen Pendergrass", subject: "Heavy Metal Certified", creator: "Heavy Metal Certified" }, [

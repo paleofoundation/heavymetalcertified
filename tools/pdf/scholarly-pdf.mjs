@@ -317,23 +317,26 @@ function buildModel(fm, body, cfg) {
 
   const references = cfg.references || parseRefs(sections.find((s) => /^references$/i.test(s.heading)))
 
-  // Certification standards and Program Manuals are network-locked to
-  // All-rights-reserved (ORDER S-DOI-CITE-LICENSE-1 / S-DOI-CITE-APA-1):
-  // the Cite-as face uses the APA "Standard No." form with the doi.org URL only
-  // (never the page URL, never "registration pending"), carries no CC BY, and
-  // never glues the licence onto the cite line.
+  // Certification standards are network-locked to All-rights-reserved
+  // (ORDER S-DOI-CITE-LICENSE-1 / S-DOI-CITE-APA-1): Cite-as uses the APA
+  // "Standard No." form with the doi.org URL only (never the page URL, never
+  // "registration pending"), carries no CC BY, and never glues the licence
+  // onto the cite line.
+  // Program Manuals (HMTC-MANUAL-CITE-NO-STANDARD-NO-1): APA title + publisher
+  // + doi.org. Never Standard No. / Manual No. Never page URL as cite URL.
   // Other scholarly PDFs (briefings) keep their APA prose cite + CC BY.
-  const isStandard = cfg.pathSeg === "standards" || cfg.pathSeg === "manuals"
+  const isManual = cfg.pathSeg === "manuals"
+  const isStandard = cfg.pathSeg === "standards" || isManual
   const yr = year || "2026"
   const citeAs = isStandard
-    ? houseApaCite({ title, year: yr, doi })
+    ? houseApaCite({ title, year: yr, doi, kind: isManual ? "manual" : "standard" })
     : `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
   const licenseLine = isStandard
     ? `© ${yr} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`
     : "CC BY 4.0"
   const footerLicense = isStandard ? "© All rights reserved" : "CC BY 4.0"
-  const footerCite = cfg.pathSeg === "manuals"
-    ? houseFooterCite({ label: "Heavy Metal Certified", edition: title, doi, reserved: footerLicense })
+  const footerCite = isManual
+    ? houseFooterCite({ label: "Heavy Metal Certified", edition: title, doi, reserved: footerLicense, kind: "manual" })
     : `Heavy Metal Certified  ·  ${url}  ·  ${footerLicense}`
 
   return {

@@ -145,6 +145,9 @@ export function lintCat1ManualShape(body, rel) {
   if (/Method v2 governing instrument/i.test(String(body || ""))) {
     findings.push(`${rel}  Method v2 governing instrument leftover — Method essay lives at /program/method`)
   }
+  if (/\bStandard No\.|\bManual No\./.test(String(body || ""))) {
+    findings.push(`${rel}  Program Manual cite must not emit Standard No. / Manual No. — that label is standards-only`)
+  }
   return findings
 }
 
