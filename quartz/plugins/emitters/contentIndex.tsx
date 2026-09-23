@@ -7,6 +7,7 @@ import { QuartzEmitterPlugin } from "../types"
 import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
+import { HMTC_SEAL_ALT, HMTC_SEAL_SITEMAP_SLUGS, HMTC_SEAL_SRC } from "../../util/hmtcSeal"
 
 export type ContentIndexMap = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
@@ -40,17 +41,25 @@ const defaultOptions: Options = {
   includeEmptyFiles: true,
 }
 
+function sealImageBlock(base: string): string {
+  return `<image:image>
+      <image:loc>${canonicalUrl(base, HMTC_SEAL_SRC)}</image:loc>
+      <image:title>${escapeHTML(HMTC_SEAL_ALT)}</image:title>
+    </image:image>`
+}
+
 function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndexMap): string {
   const base = cfg.baseUrl ?? ""
   const createURLEntry = (slug: SimpleSlug, content: ContentDetails): string => `<url>
     <loc>${canonicalUrl(base, encodeURI(slug))}</loc>
     ${content.date && `<lastmod>${content.date.toISOString()}</lastmod>`}
+    ${HMTC_SEAL_SITEMAP_SLUGS.has(slug) ? sealImageBlock(base) : ""}
   </url>`
   const urls = Array.from(idx)
     .filter(([_, content]) => !content.noindex)
     .map(([slug, content]) => createURLEntry(simplifySlug(slug), content))
     .join("")
-  return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`
+  return `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${urls}</urlset>`
 }
 
 function generateRSSFeed(cfg: GlobalConfiguration, idx: ContentIndexMap, limit?: number): string {

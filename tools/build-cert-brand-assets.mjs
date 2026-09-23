@@ -10,6 +10,10 @@
 //   quartz/static/og-image.png  1200x630 — the default social card: white mark +
 //                                           wordmark on the brand red, so an
 //                                           unfurled link reads as HMTc.
+//   content/static/heavy-metal-tested-certified-seal.png
+//                               1200x1200 — the red mark on paper, for on-page
+//                                           <img> and the image sitemap. Pass
+//                                           `seal` to regenerate only this file.
 //
 // One-off / manual (NOT in the prebuild chain). Re-run after the mark or wordmark
 // changes:  node tools/build-cert-brand-assets.mjs
@@ -148,6 +152,29 @@ async function buildOgImage() {
   console.log("wrote quartz/static/og-image.png (1200x630, content-forward, subtle mark)")
 }
 
-await buildIcon()
-await buildOgImage()
+// Square Images asset: the existing red mark (content/static/hmtc-mark-red.svg)
+// on the paper ground it is drawn for. Not a new brand. 1200×1200 so Google
+// Images has a raster larger than the CSS display size.
+const PAPER = { r: 255, g: 253, b: 251, alpha: 1 }
+
+async function buildSeal() {
+  const size = 1200
+  const raw = await readFile(p("content/static/hmtc-mark-red.svg"))
+  const mark = await sharp(raw, { density: 192 })
+    .resize({ height: 1040, fit: "inside", background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toBuffer()
+  await sharp({
+    create: { width: size, height: size, channels: 4, background: PAPER },
+  })
+    .composite([{ input: mark, gravity: "centre" }])
+    .png({ compressionLevel: 9 })
+    .toFile(p("content/static/heavy-metal-tested-certified-seal.png"))
+  console.log("wrote content/static/heavy-metal-tested-certified-seal.png (1200x1200, red mark on paper)")
+}
+
+const only = process.argv[2]
+if (!only || only === "icon") await buildIcon()
+if (!only || only === "og") await buildOgImage()
+if (!only || only === "seal") await buildSeal()
 console.log("done — cert brand assets regenerated")

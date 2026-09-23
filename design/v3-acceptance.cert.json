@@ -541,7 +541,15 @@
       { "sel": ".hmtc-home-h1", "prop": "absent", "want": true },
       { "sel": ".hmtc-home-hero .hmtc-author-card", "prop": "count", "want": 0 },
       { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
-      { "sel": ".hmtc-document-doi", "prop": "absent", "want": true }
+      { "sel": ".hmtc-document-doi", "prop": "absent", "want": true },
+      { "sel": ".hmtc-home-copy > img.hmtc-seal[src='/static/heavy-metal-tested-certified-seal.png'][alt='Heavy Metal Tested & Certified seal']", "prop": "count", "want": 1, "note": "HMTc-IMAGES-SEAL-1: visible raster seal in the homepage hero." },
+      { "sel": ".hmtc-seal", "prop": "display", "want": "block" },
+      { "sel": ".hmtc-seal", "prop": "width", "want": "200px" }
+    ],
+    "/heavy-metal-certification": [
+      { "sel": ".hmtc-hb-left > img.hmtc-seal[src='/static/heavy-metal-tested-certified-seal.png'][alt='Heavy Metal Tested & Certified seal']", "prop": "count", "want": 1, "note": "HMTc-IMAGES-SEAL-1: same seal in the certification hero, which stays visible when the left context column collapses." },
+      { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "display", "want": "block" },
+      { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "width", "want": "200px" }
     ],
     "/ecosystem": [
       {"sel":".hmtc-heroband","prop":"background-color","want":"#9f2727"},
@@ -1666,6 +1674,8 @@
           {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
         ],
         "/": [
+          { "sel": ".hmtc-home-copy > img.hmtc-seal", "prop": "count", "want": 1 },
+          { "sel": ".hmtc-seal", "prop": "display", "want": "block" },
           { "sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1 },
           { "sel": ".hmtc-home-actions", "prop": "flex-direction", "want": "column" },
           { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 3 },
@@ -1679,6 +1689,11 @@
           {"sel":".hmi-nav-group-blurb","prop":"display","want":"block"},
           {"sel":".hmi-nav-cols--ecosystem","prop":"grid-template-columns","want":"346px"},
           {"click":".hmi-topnav-burger"}
+        ],
+        "/heavy-metal-certification": [
+          { "sel": ".hmtc-hb-left > img.hmtc-seal", "prop": "count", "want": 1 },
+          { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "display", "want": "block" },
+          { "sel": ".hmtc-hb-context", "prop": "display", "want": "none" }
         ],
         "/challenge": [
           { "sel": ".hmtc-challenge .challenge-draft", "prop": "count", "want": 1 },

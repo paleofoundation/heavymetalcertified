@@ -1121,6 +1121,18 @@ sup.hmtc-cite {
 .hmtc-home-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: repeating-radial-gradient(circle at 83% 42%, transparent 0 91px, rgba(255,253,251,.065) 92px 93px, transparent 94px 148px); mask-image: linear-gradient(90deg, transparent 24%, #000 78%); }
 .hmtc-home-hero-grid { max-width: 1760px; box-sizing: border-box; margin: auto; padding: 80px 48px 84px; display: grid; grid-template-columns: minmax(0,1.35fr) 400px; gap: 80px; align-items: center; }
 .hmtc-home-copy { min-width: 0; }
+// Raster of the existing red mark. Sized as a brand stamp in the hero, not a
+// brochure illustration. Overrides the sitewide img margin / radius / content-visibility.
+.hmtc-seal {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 0 28px;
+  border-radius: 0;
+  background: #fffdfb;
+  content-visibility: visible;
+}
+.hmtc-hb-left > .hmtc-seal { margin: 0 0 22px; }
 .wiki-content .hmtc-home-title { font: 400 clamp(48px,4.1vw,68px)/1.12 Lora,serif; letter-spacing: -.02em; color: #fff; margin: 0 0 28px; }
 .hmtc-home-title span { color: #f5d7cf; }
 .hmtc-home-dek { font: 18px/1.65 var(--bodyFont); color: #fff2ee; margin: 0 0 32px; max-width: 54ch; }
