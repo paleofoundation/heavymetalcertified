@@ -244,6 +244,52 @@ const scholarSitemap = xmlLocations(path.join(PUBLIC, "sitemap-scholarly.xml"));
 sameValues("sitemap.xml", mainSitemap, indexable);
 sameValues("sitemap-scholarly.xml", scholarSitemap, scholarly);
 
+const sitemapXml = fs.readFileSync(path.join(PUBLIC, "sitemap.xml"), "utf8");
+const sealUrl = `${ORIGIN}/static/heavy-metal-tested-certified-seal.png`;
+if (
+  !sitemapXml.includes(
+    'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"',
+  )
+) {
+  errors.push("sitemap.xml: missing xmlns:image");
+}
+if (!publicTargetExists("/static/heavy-metal-tested-certified-seal.png")) {
+  errors.push("sitemap.xml: seal PNG is not in the build output");
+}
+for (const page of [`${ORIGIN}/`, `${ORIGIN}/heavy-metal-certification`]) {
+  const block = sitemapXml
+    .split("<url>")
+    .slice(1)
+    .map((part) => part.split("</url>")[0])
+    .find((part) => part.includes(`<loc>${page}</loc>`));
+  if (!block) {
+    errors.push(`sitemap.xml: missing page ${page}`);
+    continue;
+  }
+  if (!block.includes(`<image:loc>${sealUrl}</image:loc>`)) {
+    errors.push(`sitemap.xml: ${page} missing image:loc for the seal`);
+  }
+}
+for (const route of ["/", "/heavy-metal-certification"]) {
+  const file =
+    route === "/"
+      ? path.join(PUBLIC, "index.html")
+      : path.join(PUBLIC, "heavy-metal-certification.html");
+  const html = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+  const imgs = tags(html, "img").filter((tag) => {
+    const alt = attribute(tag, "alt")?.replaceAll("&amp;", "&");
+    return (
+      attribute(tag, "src") === "/static/heavy-metal-tested-certified-seal.png" &&
+      alt === "Heavy Metal Tested & Certified seal"
+    );
+  });
+  if (imgs.length !== 1) {
+    errors.push(
+      `${route}: expected one visible seal <img>, found ${imgs.length}`,
+    );
+  }
+}
+
 for (const url of mainSitemap) {
   if (!url.startsWith(`${ORIGIN}/`))
     errors.push(`sitemap.xml: wrong origin ${url}`);
