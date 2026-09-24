@@ -891,7 +891,7 @@
   {
     "slug": "the-mucosal-gap",
     "series": "Brief 11",
-    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, one of the body's most permeable surfaces, and the internal ones stay there for hours at a time. That surface absorbs more readily than skin and drains part of what crosses it into the bloodstream without the liver's first pass. A 2024 peer-reviewed study measured lead, cadmium, and arsenic in every brand of tampon it tested. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction.</p><p>HMTc closes that gap without inventing a number. For device forms, where no government sets a content limit, it reads a ceiling across by analogy from the strictest health-based limit a government has drawn for an article in comparable prolonged mucosal contact, and enforces it every lot by mass-spectrometry testing of the full analyte panel, sampled component by component with the tampon applicator tested distinctly. For cosmetic forms it reads across the strictest sovereign contaminant limit, adopting the mucosal-contact tier for lead because the vaginal mucosa is more permeable than the oral mucosa that tier was written for. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "abstract_html": "<p>Menstrual and intimate-care products contact the vulvovaginal mucosa, one of the body's most permeable surfaces, and the internal ones stay there for hours at a time. That surface absorbs more readily than skin and drains part of what crosses it into the bloodstream without the liver's first pass. A 2024 peer-reviewed study measured lead and cadmium in all 60 tampon samples it tested, and arsenic in 57 of 60. No government sets a heavy-metal content limit for any menstrual or intimate-care product in any jurisdiction.</p><p>HMTc closes that gap without inventing a number. For device forms, where no government sets a content limit, it reads a ceiling across by analogy from the strictest health-based limit a government has drawn for an article in comparable prolonged mucosal contact, and enforces it every lot by mass-spectrometry testing of the full analyte panel, sampled component by component with the tampon applicator tested distinctly. For cosmetic forms it reads across the strictest sovereign contaminant limit, adopting the mucosal-contact tier for lead because the vaginal mucosa is more permeable than the oral mucosa that tier was written for. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
     "references": [
       {
         "n": 1,
@@ -968,7 +968,7 @@
   {
     "slug": "first-feminine-care-standard",
     "series": "Brief 12",
-    "abstract_html": "<p>Heavy Metal Tested and Certified has published a heavy-metal-safety standard for menstrual and intimate-care products, tampons, pads, cups, discs, and period underwear, and the intimate cosmetics alongside them, douches, washes, wipes, and deodorants. To our knowledge it is the first standard anywhere to place per-analyte heavy-metal limits on this category. No government sets a heavy-metal content limit for a menstrual device in any jurisdiction, because device law asks whether a material is biocompatible, not how much lead it contains; and the cosmetic limits that do exist were written for skin, not for the vulvovaginal mucosa these products actually contact. In 2024 a peer-reviewed study measured lead, cadmium, and arsenic in every tampon it tested.</p><p>The standard is written on a mucosal basis and reads across the strictest mucosal-contact health limit a government has drawn, never inventing a number of its own. Cosmetic forms bind sovereign cosmetic contaminant limits directly; device forms, for which no government sets a content limit, carry the same values by disclosed, conservative read-across by analogy. Every analyte on the panel carries an enforceable ceiling, nine firm read-across limits plus inorganic arsenic and methylmercury bounded by their parent totals, and every certified lot is tested for the full panel by mass spectrometry. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
+    "abstract_html": "<p>Heavy Metal Tested and Certified has published a heavy-metal-safety standard for menstrual and intimate-care products, tampons, pads, cups, discs, and period underwear, and the intimate cosmetics alongside them, douches, washes, wipes, and deodorants. To our knowledge it is the first standard anywhere to place per-analyte heavy-metal limits on this category. No government sets a heavy-metal content limit for a menstrual device in any jurisdiction, because device law asks whether a material is biocompatible, not how much lead it contains; and the cosmetic limits that do exist were written for skin, not for the vulvovaginal mucosa these products actually contact. In 2024 a peer-reviewed study measured lead and cadmium in all 60 tampon samples it tested, and arsenic in 57 of 60.</p><p>The standard is written on a mucosal basis and reads across the strictest mucosal-contact health limit a government has drawn, never inventing a number of its own. Cosmetic forms bind sovereign cosmetic contaminant limits directly; device forms, for which no government sets a content limit, carry the same values by disclosed, conservative read-across by analogy. Every analyte on the panel carries an enforceable ceiling, nine firm read-across limits plus inorganic arsenic and methylmercury bounded by their parent totals, and every certified lot is tested for the full panel by mass spectrometry. The mark certifies heavy-metal safety only, and states the presence-versus-dose evidence honestly rather than as alarm.</p>",
     "references": [
       {
         "n": 1,
@@ -1007,51 +1007,44 @@
       },
       {
         "n": 6,
-        "title": "Leaching of lead and total arsenic from menstrual products into simulated vaginal fluid",
-        "meta_html": "Nic Corcráin, 2025. Measures lead and arsenic migrating out of tampons, pads, cups, and period underwear into a vaginal-fluid surrogate; the step from measured content toward exposure. Full citation to be confirmed at publication.",
-        "href": "",
-        "type": "Peer-reviewed"
+        "title": "Investigating links between heavy metals in menstrual hygiene products and reproductive hormonal health",
+        "meta_html": "Nic Corcráin N. F1000Research, 2026, 15:81 (poster; not peer reviewed). Four menstrual products incubated in synthetic vaginal fluid and measured for lead and arsenic at 3, 5, and 7 hours. Lead left tampons at 0.66-6.35 ppb and cups at under 1 ppb. Arsenic detection was compromised by background contamination.",
+        "href": "https://doi.org/10.7490/f1000research.1120429.1",
+        "type": "Poster"
       },
       {
         "n": 7,
-        "title": "Tampon metal chemistry (lead, cadmium, mercury, chromium, arsenic, nickel)",
-        "meta_html": "Carlin, 2020. Corroborating measurement of the toxic-metal panel across the tampon form. Full citation to be confirmed at publication.",
-        "href": "",
-        "type": "Peer-reviewed"
-      },
-      {
-        "n": 8,
         "title": "Technically avoidable heavy-metal contents in cosmetics (BVL, 2017)",
         "meta_html": "German Federal Office of Consumer Protection and Food Safety (BVL). Technically-avoidable-contaminant guidance for cosmetics: lead 2000 µg/kg for general cosmetics but 500 for toothpaste, a mucosal-contact product; cadmium 100, total arsenic 500, total mercury 100.",
         "href": "https://www.openagrar.de/servlets/MCRFileNodeServlet/openagrar_derivate_00027138/Bund2017_Article_TechnicallyAvoidableHeavyMetal.pdf",
         "type": "Government"
       },
       {
-        "n": 9,
+        "n": 8,
         "title": "Korea MFDS cosmetics safety standards (trace metals)",
         "meta_html": "Republic of Korea Ministry of Food and Drug Safety. Sets the only sovereign cosmetic nickel content allowance (10000 µg/kg) used as the read-across anchor for cosmetic nickel.",
         "href": "",
         "type": "Government"
       },
       {
-        "n": 10,
+        "n": 9,
         "title": "Directive 2009/48/EC on the safety of toys (Toy Safety Directive)",
         "meta_html": "European Parliament and Council, 2009. Health-based migration limits for metals in articles children place in the mouth, derived from tolerable intakes; the read-across anchor for hexavalent chromium, tin, and aluminium.",
         "href": "https://eur-lex.europa.eu/eli/dir/2009/48/oj",
         "type": "Regulation"
       },
       {
-        "n": 11,
+        "n": 10,
         "title": "21 CFR Part 884; Regulation (EU) 2017/745 on medical devices; ISO 10993-1",
         "meta_html": "U.S. FDA, European Parliament and Council, and the International Organization for Standardization. The device-law basis on which menstrual devices are evaluated for biocompatibility rather than heavy-metal content, and on which no numeric content limit for the finished device exists.",
         "href": "",
         "type": "Regulation"
       },
       {
-        "n": 12,
-        "title": "Australian total-chromium limit",
-        "meta_html": "Australian government total-chromium limit (total Cr 50 µg/kg); the read-across anchor for total chromium. The specific instrument is named in the live standard page derivation table (binding column AU). Full citation to be confirmed at publication.",
-        "href": "",
+        "n": 11,
+        "title": "Australian Drinking Water Guidelines: chromium",
+        "meta_html": "National Health and Medical Research Council. Chromium fact sheet, Australian Drinking Water Guidelines (endorsed 1996). Health-based guideline: hexavalent chromium in drinking water should not exceed 0.05 mg/L. The guideline value is applied to total chromium, with separate hexavalent-chromium analysis if total chromium exceeds it. Read across here as a 50 µg/kg total-chromium content ceiling.",
+        "href": "https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/chromium",
         "type": "Government"
       }
     ]
