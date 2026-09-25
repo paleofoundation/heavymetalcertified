@@ -272,7 +272,7 @@
       "filled_by": "completeness-sweep"
     },
     "Sb": {
-      "comment": "The cell unit is ug/kg, so an Ecolabel-based value of 30 mg/kg would be entered as 30000.",
+      "comment": "The cell unit is ug/kg. A total-content value from Decision (EU) 2023/1809 of less than 30 mg/kg in the final product would be entered as 30000. Migration and extractable limits measure different things and are not entered by that conversion.",
       "type": "pending",
       "value": null,
       "value_exact": null,
@@ -286,15 +286,45 @@
       "limit_value_field": "cells.Sb.value",
       "candidates": [
         {
-          "id": "eu_ecolabel_ahp_sb_30mgkg",
+          "id": "eu_2023_1809_ahp_7_3_8",
           "value": null,
-          "note": "EU Ecolabel absorbent hygiene products, Sb <30 mg/kg. Candidate basis. Not selected.",
-          "unit_note": "mg/kg"
+          "note": "Decision (EU) 2023/1809, Annex I criterion 7.3.8, EU Ecolabel absorbent hygiene products: less than 30 mg/kg total content in the final product. Voluntary. Not selected.",
+          "unit_note": "mg/kg total content"
         },
         {
-          "id": "who_dw_sb_20ugl",
+          "id": "kr_mfds_2026_23_diaper_sb",
           "value": null,
-          "note": "WHO drinking-water guideline 20 ug/L. Orientation only. Not transferable to a sheet total. Not selected.",
+          "note": "Korea MFDS Notice 2026-23 (adopted 2018) for diapers: Sb 60 mg/kg or less by migration, topsheet and backsheet. Not selected.",
+          "unit_note": "mg/kg migration"
+        },
+        {
+          "id": "eu_2014_350_textile_polyester_total",
+          "value": null,
+          "note": "EU Ecolabel textiles 2014/350/EU: 260 ppm total in polyester fibre. Not selected.",
+          "unit_note": "ppm total"
+        },
+        {
+          "id": "eu_2014_350_textile_extractable",
+          "value": null,
+          "note": "EU Ecolabel textiles 2014/350/EU: 30.0 mg/kg extractable in acid sweat (EN ISO 105-E04). Not selected.",
+          "unit_note": "mg/kg extractable"
+        },
+        {
+          "id": "us_no_federal_sb_diaper_wipe_textile",
+          "value": null,
+          "note": "US: no federal limit for antimony in diapers, wipes or textiles.",
+          "unit_note": null
+        },
+        {
+          "id": "us_dw_mcl_sb",
+          "value": null,
+          "note": "US drinking-water MCL 0.006 mg/L. Orientation only. Not selected.",
+          "unit_note": "mg/L"
+        },
+        {
+          "id": "eu_2020_2184_sb",
+          "value": null,
+          "note": "EU Drinking Water Directive 2020/2184: 10 ug/L. Orientation only. Not selected.",
           "unit_note": "ug/L"
         }
       ]
