@@ -156,6 +156,32 @@ test("olive-oil totals-only: omit non-firm iAs/MeHg; keep numeric Cr-VI; eight t
   assert.ok(!ev.required.includes("MeHg"))
 })
 
+test("a pending antimony cell stays off the baby-wipes claim surface", () => {
+  const panel = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr-VI", "Ni", "Sn", "Al", "Cr"]
+  const cells = {
+    Pb: { type: "gov", value: 1000 },
+    iAs: { type: "subsumed", value: null, binding_total: 500, subsumed_by: "tAs" },
+    tAs: { type: "gov", value: 500 },
+    tHg: { type: "gov", value: 100 },
+    MeHg: { type: "subsumed", value: null, binding_total: 100, subsumed_by: "tHg" },
+    Cd: { type: "gov", value: 100 },
+    "Cr-VI": { type: "read_across", value: 5 },
+    Ni: { type: "gov", value: 10000 },
+    Sn: { type: "read_across", value: 3750000 },
+    Al: { type: "read_across", value: 560000 },
+    Cr: { type: "read_across", value: 50 },
+    Sb: { type: "pending", pending: true, pass_fail: false, value: null, value_exact: null, pending_marker: "PENDING CEO DECISION" },
+  }
+  const ev = evaluateClaimSurface({ slug: "baby-wipes", name: "Baby wipes", cells, panel })
+  assert.equal(ev.complete, true)
+  assert.deepEqual(ev.claim_empty, [])
+  assert.ok(!ev.panel.includes("Sb"))
+  assert.ok(!ev.required.includes("Sb"))
+  assert.equal(isFirmClaimCell(cells.Sb), false)
+  assert.equal(cellState(cells.Sb), "EMPTY")
+  assert.equal(isBannedLimitText("PENDING CEO DECISION"), null)
+})
+
 test("Master Limit Table parser reads the HMTc limit column", () => {
   const html = `<section id="limits"><p>9 of 11 analytes carry a firm ceiling</p>
     <table><tr><td>Lead (Pb)</td><td>200</td><td>gov</td></tr>

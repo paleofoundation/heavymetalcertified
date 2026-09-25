@@ -270,10 +270,38 @@
       "label": "Cr-VI 5 ug/kg: disclosed read-across from EU eu_2009_48_cat2_crvi_toy_migration (toys (accessible toy material); pacifiers/soothe). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
       "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_crvi_toy_migration). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
       "filled_by": "completeness-sweep"
+    },
+    "Sb": {
+      "type": "pending",
+      "value": null,
+      "value_exact": null,
+      "provenance": "pending",
+      "pass_fail": false,
+      "pending": true,
+      "pending_marker": "PENDING CEO DECISION",
+      "unit": "ug/kg",
+      "basis": "finished cosmetic as placed on market (total content, ug/kg of product as sold)",
+      "label": "PENDING CEO DECISION. Antimony is on the baby-wipes panel as a placeholder. No numeric limit is published. Excluded from pass/fail until a value is set.",
+      "limit_value_field": "cells.Sb.value",
+      "candidates": [
+        {
+          "id": "eu_ecolabel_ahp_sb_30mgkg",
+          "value": null,
+          "note": "EU Ecolabel absorbent hygiene products, Sb <30 mg/kg. Candidate basis. Not selected.",
+          "unit_note": "mg/kg"
+        },
+        {
+          "id": "who_dw_sb_20ugl",
+          "value": null,
+          "note": "WHO drinking-water guideline 20 ug/L. Orientation only. Not transferable to a sheet total. Not selected.",
+          "unit_note": "ug/L"
+        }
+      ]
     }
   },
+  "revision_note": "Draft edition 2.0 adds an antimony placeholder. cells.Sb.value and cells.Sb.value_exact stay null, and pass_fail stays false, until a CEO decision. No other numeric cell is changed. No new DOI is deposited.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat2-config.json",
-  "version": "cat2-v1.0 (2026-08-17)",
+  "version": "cat2-v2.0 (2026-09-25)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }
