@@ -272,6 +272,7 @@
       "filled_by": "completeness-sweep"
     },
     "Sb": {
+      "comment": "The cell unit is ug/kg, so an Ecolabel-based value of 30 mg/kg would be entered as 30000.",
       "type": "pending",
       "value": null,
       "value_exact": null,
