@@ -141,6 +141,10 @@ const jlabel = (j) => JUR_LABEL[j] || j
 
 // --- binding-basis label per cell ---------------------------------------------
 function bindingLabel(cell) {
+  if (cell.type === "gov" && cell.source_url) {
+    const txt = esc(cell.binding_short || "voluntary government floor, disclosed")
+    return `<a href="${esc(cell.source_url)}" style="color:${LINK};text-decoration:none">${txt}</a>`
+  }
   if (cell.type === "gov") {
     const href = regForCell(cell, cell.binding_jurisdiction)
     const txt = `strictest government ML (${jlabel(cell.binding_jurisdiction)})`
@@ -170,6 +174,29 @@ function isPendingCell(c) {
 function extraPending(cells) {
   if (!cells) return []
   return Object.keys(cells).filter((a) => isPendingCell(cells[a]) && !PANEL.includes(a))
+}
+
+// Compiled analytes outside the category panel still have to reach the page.
+// A pending extra stays out of pass/fail. A numeric extra (antimony on baby wipes)
+// prints its ceiling and stays additional to the 9-of-11 count.
+function extraAnalytes(cells) {
+  if (!cells) return []
+  return Object.keys(cells).filter((a) => cells[a] && !PANEL.includes(a))
+}
+
+function extraNote(cells, extras) {
+  const bits = []
+  for (const a of extras) {
+    const c = cells[a]
+    const name = ANALYTE[a] || a
+    if (isPendingCell(c)) {
+      bits.push(`${name} is listed pending a decision and is excluded from pass/fail until a numeric limit is set. It is not included in the analyte count above.`)
+    } else if (c && c.value != null) {
+      const cmp = c.comparator_note ? ` ${c.comparator_note}` : ""
+      bits.push(`${name} carries the published ceiling ${c.value}.${cmp} It is included in pass/fail and is additional to the analyte count above.`)
+    }
+  }
+  return bits.length ? ` ${bits.join(" ")}` : ""
 }
 
 // Collapse one analyte across variants into a single display value ("X" or "X lab1 / Y lab2").
@@ -204,7 +231,7 @@ function claimPanelOf(cells) {
 }
 
 function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
-  const extras = extraPending(variants[0].cells).filter((a) => !claimPanel.includes(a))
+  const extras = extraAnalytes(variants[0].cells).filter((a) => !claimPanel.includes(a))
   const rowsPanel = [...claimPanel, ...extras]
   const rows = rowsPanel.map((a, i) => {
     const cell0 = variants[0].cells[a]
@@ -225,9 +252,7 @@ function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
     : controlCount === 0
     ? `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
     : `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
-  const pendingNote = extras.length
-    ? ` ${extras.map((a) => ANALYTE[a] || a).join(", ")} is listed as PENDING CEO DECISION and is excluded from pass/fail until a numeric limit is set. ${extras.length === 1 ? "It is" : "They are"} not included in the analyte count above.`
-    : ""
+  const pendingNote = extraNote(variants[0].cells, extras)
   return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}${pendingNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
@@ -238,7 +263,7 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
   const cols = JUR_ORDER.filter((j) => present.has(j)).concat([...present].filter((j) => !JUR_ORDER.includes(j)))
   const th = cols.map((j) => { const h = reg(j); const lbl = jlabel(j); return `<th style="text-align:right;padding:9px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">${h ? `<a href="${h}" style="color:#fff;text-decoration:underline;text-underline-offset:2px">${lbl}</a>` : lbl}</th>` }).join("")
   let anyConv = false, anyControl = false, anySubsumed = false
-  const analytes = PANEL.concat(extraPending(primary.cells))
+  const analytes = PANEL.concat(extraAnalytes(primary.cells))
   const body = analytes.map((a) => {
     const c = primary.cells[a]
     const tds = cols.map((j) => {
@@ -276,7 +301,11 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       hmtc = `${c.value}&sup2;`; binds = "read-across"
     }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
-    else { hmtc = String(c.value); const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    else {
+      hmtc = String(c.value)
+      if (c.source_url) binds = `<a href="${esc(c.source_url)}" style="color:${LINK};text-decoration:none">${esc(c.binding_short || "voluntary government floor")}</a>`
+      else { const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""

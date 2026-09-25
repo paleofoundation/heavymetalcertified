@@ -156,6 +156,27 @@ test("olive-oil totals-only: omit non-firm iAs/MeHg; keep numeric Cr-VI; eight t
   assert.ok(!ev.required.includes("MeHg"))
 })
 
+test("a locked antimony government floor stays off the eleven-analyte claim panel", () => {
+  const panel = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr-VI", "Ni", "Sn", "Al", "Cr"]
+  const cells = {
+    Pb: { type: "gov", value: 1000 },
+    tAs: { type: "gov", value: 500 },
+    Sb: {
+      type: "gov",
+      disposition: "government-floor",
+      value: 30000,
+      value_exact: 30000,
+      pass_fail: true,
+      unit: "ug/kg",
+    },
+  }
+  const ev = evaluateClaimSurface({ slug: "baby-wipes", name: "Baby wipes", cells, panel })
+  assert.ok(!ev.panel.includes("Sb"))
+  assert.ok(!ev.required.includes("Sb"))
+  assert.equal(isFirmClaimCell(cells.Sb), true)
+  assert.equal(numericCeiling(cells.Sb), 30000)
+})
+
 test("a pending antimony cell stays off the baby-wipes claim surface", () => {
   const panel = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr-VI", "Ni", "Sn", "Al", "Cr"]
   const cells = {

@@ -81,6 +81,27 @@ test("descriptive cell basis preserves the vetted record unit; baseline screens 
   assert.equal(isFirmExportCell(normalize({ type: "baseline_screen", value: 2, reference_method: "Named source method", loq_source_id: "source-1" }, "as_sold")), true)
 })
 
+test("the locked antimony cell exports 30000 ug/kg as a government floor", () => {
+  const c = normalize({
+    type: "gov",
+    disposition: "government-floor",
+    value: 30000,
+    value_exact: 30000,
+    pass_fail: true,
+    unit: "ug/kg",
+    voluntary: true,
+    binding_jurisdiction: "EU",
+    binding_id: "eu_2023_1809_ahp_7_3_8",
+    provenance: "regulatory-alignment. Antimony < 30 mg/kg. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1809",
+  }, "finished product, total antimony content, measurable directly on a wipe (ug/kg)", {}, "Sb")
+  assert.equal(c.status, "published")
+  assert.equal(c.value_ppb, 30000)
+  assert.equal(c.value_exact_ppb, 30000)
+  assert.equal(c.control_basis, "government-limit")
+  assert.equal(c.controlling_instrument, "eu_2023_1809_ahp_7_3_8")
+  assert.equal(isFirmExportCell(c), true)
+})
+
 test("a pending cell exports no ceiling and cannot pass or fail", () => {
   const c = normalize({
     type: "pending",
