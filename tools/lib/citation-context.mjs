@@ -17,7 +17,7 @@ const CONTEXT = new Set(["p", "li", "td", "th", "blockquote"])
 const LEGACY = {
   page: "briefings/the-big-8",
   record: "2ce154268e244516dad1c154b3b95080b624080725df9dea76098021d7abdb1f",
-  body: "55636374d9a5c2ec2627deb09f2a573522ce014bfa89b79a516b656db443de2f",
+  body: "3d9a1a614359c23d675ece80f7a12912212deeac2bd59b7067aeb005d6670f6d",
 }
 export const normalize = (value) => String(value ?? "").replace(/\s+/g, " ").trim()
 export const digest = (value) => createHash("sha256").update(value).digest("hex")
