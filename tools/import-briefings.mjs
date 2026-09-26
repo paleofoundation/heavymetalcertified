@@ -303,7 +303,7 @@ for (const file of fs.readdirSync(SRC).filter((f) => f.endsWith(".md"))) {
     recordRow("Language", "en"),
     recordRow("DOI", "not yet assigned"),
   ].filter(Boolean).join("\n")
-  const licenseRowLast = `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">CC BY 4.0 (prose)</span></div>`
+  const licenseRowLast = `    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:10px 0"><span style="font-size:13px;line-height:1.5;color:#3f3a3a">License</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#9f2727;text-align:right">© All rights reserved</span></div>`
 
   const citeStr =`Pendergrass, K. (${year}). <em style="font-style:normal">${title}${subtitle ? ": " + subtitleHtml : ""}</em> (${seriesName}). Institute of Contaminant Standards (ICS).`
 
@@ -335,7 +335,7 @@ ${licenseRowLast}
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Reuse this briefing</div>
     <div style="padding:14px 15px">
       <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">${citeStr}</p>
-      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose CC BY 4.0. Direct reproduction of substantial portions requires written permission from Institute of Contaminant Standards (ICS)</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.</p>
     </div>
   </div>
 `
