@@ -1568,7 +1568,7 @@
           "agency": "US ATSDR",
           "year": "2019",
           "document": "Toxicological Profile for Antimony and Compounds (October 2019)",
-          "finding": "Named the respiratory tract, heart, gastrointestinal tract, serum glucose, and the developing animal as sensitive targets. Derived an acute oral minimal risk level (MRL) of 1 mg Sb/kg/day and an intermediate oral MRL of 0.0006 mg Sb/kg/day, from decreased serum glucose in female rats given antimony potassium tartrate; chronic oral data were inadequate for an MRL. Inhalation MRLs are 0.001 mg Sb/m3 (acute and intermediate) and 0.0003 mg Sb/m3 (chronic). Gastrointestinal absorption is poor and depends on the form.",
+          "finding": "Named the respiratory tract, heart, gastrointestinal tract, serum glucose, and the developing animal as sensitive targets. Derived an acute oral minimal risk level (MRL) of 1 mg Sb/kg/day from forestomach ulceration in mice given antimony potassium tartrate, and an intermediate oral MRL of 0.0006 mg Sb/kg/day from decreased serum glucose in female rats given antimony potassium tartrate; chronic oral data were inadequate for an MRL. Inhalation MRLs are 0.001 mg Sb/m3 (acute and intermediate) and 0.0003 mg Sb/m3 (chronic). Gastrointestinal absorption is poor and depends on the form.",
           "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Toxicokinetics and Toxicology sections; Index source record atsdr2019-toxprofile-antimony (Table 1-1, PDF p.21)."
         },
         {
@@ -1595,7 +1595,7 @@
         {
           "agency": "Korea MFDS (Ministry of Food and Drug Safety)",
           "year": "2026",
-          "document": "Notice No. 2026-23, Standards and Specifications for Hygiene Products (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018)",
+          "document": "Notice No. 2026-23, Standards and specifications for sanitary products (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018)",
           "finding": "For children's disposable diapers only, set antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer. This is the government precedent in baby products. It is a migration test, and migration and total content measure different things.",
           "source_trace": "cert briefing why-baby-wipes-standard-adds-antimony.md on heavymetalcertified PR #114: abstract, The decision section and reference [2]; Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Government limits table, MFDS 2026-23 row."
         }
