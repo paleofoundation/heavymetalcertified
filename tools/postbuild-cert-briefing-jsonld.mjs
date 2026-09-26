@@ -58,6 +58,8 @@ function articleGraph({ url, title, description, frontmatter }) {
     url,
     mainEntityOfPage: url,
     isAccessibleForFree: true,
+    copyrightNotice: "© All rights reserved",
+    license: "© All rights reserved",
     ...publicationMetadata(frontmatter),
     publisher: PUBLISHER,
     isPartOf: { "@id": CERT_WEBSITE_ID },
