@@ -23,6 +23,13 @@ export const AUTOLINK_ENTRIES: AutolinkEntry[] = [
   },
   {
     type: "analyte",
+    slug: "analytes/antimony",
+    terms: [
+      "antimony"
+    ]
+  },
+  {
+    type: "analyte",
     slug: "analytes/arsenic",
     terms: [
       "inorganic arsenic",
@@ -285,6 +292,7 @@ export const AUTOLINK_ENTRIES: AutolinkEntry[] = [
 export const GENERATED_TERMS: Record<string, string> = {
   "aluminum": "analytes/aluminum",
   "aluminium": "analytes/aluminum",
+  "antimony": "analytes/antimony",
   "inorganic arsenic": "analytes/arsenic",
   "arsenic": "analytes/arsenic",
   "cadmium": "analytes/cadmium",

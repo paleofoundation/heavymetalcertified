@@ -905,7 +905,7 @@
       { "sel": ".wiki-content thead tr", "prop": "background-color", "want": "#9f2727", "note": "the 'panel at a glance' table uses the canonical burgundy head (from .wiki-content thead, not inline)." },
       { "sel": ".wiki-content thead th", "prop": "color", "want": "#ffffff" },
       { "sel": ".wiki-content thead th", "prop": "font-family", "want": "IBM Plex Mono", "match": "contains" },
-      { "sel": "details.hmtc-mhard", "prop": "count", "want": 8, "note": "the eight-metal analyte accordions, rendered as no-JS <details>." },
+      { "sel": "details.hmtc-mhard", "prop": "count", "want": 9, "note": "the nine-metal analyte accordions (antimony: baby wipes only), rendered as no-JS <details>." },
       { "sel": ".wiki-content td span", "prop": "absent", "want": true, "note": "analyte Tier 1/2 status pills removed from the glance table; panel role is plain text, not a status stamp." },
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface." },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
@@ -949,6 +949,18 @@
       { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface (design-lint blocks this; rendered backstop)." },
       { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
       { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "the rationale prose carries no bold markup at all — the no-bold canon holds by construction (font-weight backstops above)." }
+    ],
+    "/why-we-limit/antimony": [
+      { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
+      { "sel": "header", "prop": "position", "want": "sticky" },
+      { "sel": "header", "prop": "background-color", "want": "#fffdfb" },
+      { "sel": ".hmtc-heroband", "prop": "background-color", "want": "#9f2727", "src": "CHROME-SPEC §1.4", "note": "the burgundy interior hero band; a rationale page carries the same chrome as every content page." },
+      { "sel": ".hmtc-hb-badge", "prop": "count", "want": 1, "note": "the 'Rationale' KIND badge (HeroBand, type: rationale)." },
+      { "sel": ".hmtc-hb-title", "prop": "font-family", "want": "Lora", "match": "contains", "note": "hero title is the Lora display serif." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0, "note": "no inline bold on the reading surface (design-lint blocks this; rendered backstop)." },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0, "note": "the rationale prose carries no bold markup at all; the no-bold canon holds by construction (font-weight backstops above)." },
+      { "sel": ".hmtc-element-mark", "prop": "count", "want": 1, "note": "the element mark for Sb, from the ELEMENTS entry in documentMetadata.ts." }
     ],
     "/why-we-limit": [
       { "sel": "header", "prop": "height", "want": "68px" },
@@ -1014,6 +1026,19 @@
       { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 },
       { "sel": ".hmtc-document-actions a[download]", "prop": "count", "want": 1 },
       { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 }
+    ],
+    "/analytes/antimony": [
+      { "sel": ".hmtc-element-mark", "prop": "count", "want": 1, "note": "antimony carries the same element mark as the other analyte pages (ELEMENTS entry in documentMetadata.ts)." },
+      { "sel": ".hmtc-element-symbol", "prop": "font-family", "want": "Lora", "match": "contains" },
+      { "sel": ".hmtc-hb-sidebar .hmtc-author-card", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-hb-snap-row", "prop": "count", "want": 4 },
+      { "sel": ".hmtc-document-actions a[download]", "prop": "count", "want": 1 },
+      { "sel": "#hmtc-page-citation", "prop": "count", "want": 1 },
+      { "sel": "#why-limited thead tr", "prop": "background-color", "want": "#9f2727", "note": "the same burgundy evidence-table head as every analyte page." },
+      { "sel": "#occurrence table", "prop": "count", "want": 2, "note": "product occurrence table plus the reference-values table." },
+      { "sel": ".wiki-content [style*=\"font-weight:700\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content [style*=\"font-weight:600\"]", "prop": "count", "want": 0 },
+      { "sel": ".wiki-content strong", "prop": "count", "want": 0 }
     ],
     "/compare": [
       { "sel": ".hmtc-author-card", "prop": "count", "want": 1 }
@@ -1098,6 +1123,12 @@
           {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
         ],
         "/analytes/chromium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/antimony": [
           {"sel": "#why-limited table", "prop": "display", "want": "table"},
           {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
           {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
@@ -1790,6 +1821,12 @@
           {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
         ],
         "/analytes/chromium": [
+          {"sel": "#why-limited table", "prop": "display", "want": "table"},
+          {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
+          {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},
+          {"sel": "#why-limited thead th:first-child", "prop": "position", "want": "static"}
+        ],
+        "/analytes/antimony": [
           {"sel": "#why-limited table", "prop": "display", "want": "table"},
           {"sel": "#why-limited table", "prop": "padding", "want": "0px"},
           {"sel": "#why-limited tbody td:first-child", "prop": "white-space", "want": "normal"},

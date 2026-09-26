@@ -59,7 +59,10 @@ function articleGraph(spec, frontmatter) {
       "@id": CERT_ORGANIZATION_ID,
       name: "Heavy Metal Tested & Certified",
     },
-    license: "https://creativecommons.org/licenses/by/4.0/",
+    // A spec marked all-rights-reserved carries the house notice, never CC BY.
+    ...(spec.rights === "all-rights-reserved"
+      ? { copyrightNotice: "© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved." }
+      : { license: "https://creativecommons.org/licenses/by/4.0/" }),
     isAccessibleForFree: true,
   }
   if (Array.isArray(spec.keywords) && spec.keywords.length) g.keywords = spec.keywords.join(", ")

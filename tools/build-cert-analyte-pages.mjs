@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// build-cert-analyte-pages.mjs — dedicated reference pages for the 8 HMTc analytes.
+// build-cert-analyte-pages.mjs — dedicated reference pages for the HMTc analytes.
 //
-// Purpose: the homepage "analyte panel" advertises eight metals with real
+// Purpose: the homepage "analyte panel" advertises the panel metals with real
 // toxicological/regulatory substance, and every card used to dead-end. These are
 // the destinations: one page per analyte explaining, from the government/agency
 // assessments, WHY the metal is limited — the regulatory rationale a regulator or
@@ -38,14 +38,21 @@ const esc = (s) =>
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
 
-// Linkify the known cross-references the prose carries (Index URLs, and cert
-// /regulations//standards//analytes paths) into <a>, on already-escaped text.
+// Linkify the known cross-references the prose carries (Index URLs, doi.org
+// links, and cert /regulations//standards//analytes paths) into <a>, on
+// already-escaped text.
 function linkify(s) {
   let t = esc(s)
   t = t.replace(
     /https?:\/\/heavymetalindex\.com\/[^\s)]+/g,
     (m) => `<a href="${m}" style="color:${LINK}">${m.replace(/^https?:\/\//, "")}</a>`,
   )
+  // A DOI is always printed as its full https://doi.org/ link. Sentence
+  // punctuation that follows the DOI stays outside the anchor.
+  t = t.replace(/https:\/\/doi\.org\/[^\s)<]+/g, (m) => {
+    const url = m.replace(/[.,;:]+$/, "")
+    return `<a href="${url}" style="color:${LINK}">${url}</a>${m.slice(url.length)}`
+  })
   t = t.replace(
     /(^|[\s(])(\/(?:regulations|standards|analytes)\/[a-z0-9-]+)/g,
     (_m, pre, url) => `${pre}<a href="${url}" style="color:${LINK}">${url}</a>`,
@@ -150,7 +157,12 @@ function pageBody(a) {
   // shared three-column line the way a section heading does on standards pages.
   const header = `<section style="margin-bottom:40px"><div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE ANALYTE</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.04em;color:#b7aeae">${a.z} &middot; ${esc(a.sym)} &middot; ${esc(a.species)}</span></div><p style="font-size:17px;line-height:1.7;color:#3f3a3a;margin:0;max-width:80ch">${linkify(a.thesis)}</p></section>`
 
-  const why = `<section id="why-limited" style="margin-bottom:52px">${H2("Why it is limited")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">The government and expert-body assessments that underpin limiting ${esc(a.name.toLowerCase())} in food, and what each concluded. The maximum levels in force apply these findings; this page is the rationale, not the certification threshold.</p>${whyLimitedTable(a.why_limited || [])}</section>`
+  // `why_limited_intro` overrides the food framing for an analyte the program
+  // limits only in a non-food standard (antimony: baby wipes).
+  const whyIntro = a.why_limited_intro
+    ? linkify(a.why_limited_intro)
+    : `The government and expert-body assessments that underpin limiting ${esc(a.name.toLowerCase())} in food, and what each concluded. The maximum levels in force apply these findings; this page is the rationale, not the certification threshold.`
+  const why = `<section id="why-limited" style="margin-bottom:52px">${H2("Why it is limited")}<p style="font-size:13.5px;line-height:1.7;color:#736b6b;max-width:84ch;margin:0 0 16px">${whyIntro}</p>${whyLimitedTable(a.why_limited || [])}</section>`
 
   // Toxicological basis: a deep `toxicology` array (paragraphs — the case for WHY
   // the science warrants regulation) when present; otherwise the legacy one-line
@@ -178,7 +190,9 @@ function pageBody(a) {
 }
 
 function frontmatter(a) {
-  const desc = `Why ${a.name} (${a.sym}) is limited in infant and child foods: the government and expert-body assessments behind the maximum levels, the toxicological basis, and how the Heavy Metal Tested & Certified program treats the analyte. Reference page; the literature baseline is maintained independently at the Heavy Metal Index.`
+  const desc =
+    a.description ||
+    `Why ${a.name} (${a.sym}) is limited in infant and child foods: the government and expert-body assessments behind the maximum levels, the toxicological basis, and how the Heavy Metal Tested & Certified program treats the analyte. Reference page; the literature baseline is maintained independently at the Heavy Metal Index.`
   return [
     "---",
     `title: "${a.name} (${a.sym}) — HMTc analyte"`,
@@ -203,7 +217,7 @@ function frontmatter(a) {
     `  - { label: "Heavy Metal Index — ${a.name} literature", href: "https://heavymetalindex.com/metals/${a.index_link_slug}" }`,
     "rail_box:",
     '  title: "The analyte panel"',
-    '  body: "Eight metals, ten analytes. Each page states why the metal is limited from the government record; the maximum levels themselves live on the standards, and the deep literature on the Heavy Metal Index."',
+    '  body: "Nine metals, eleven analytes. Each page states why the metal is limited from the government record; the maximum levels themselves live on the standards, and the deep literature on the Heavy Metal Index."',
     "---",
   ].join("\n")
 }
@@ -217,11 +231,16 @@ for (const a of DATA.analytes) {
 
 // The /analytes index — the analyte panel. Hero band, "On this page" rail, and
 // Connections/rail are driven by frontmatter. Body = scope, glance table, and
-// one accordion for the eight metals. Accordion reuses .hmtc-mhard.
+// one accordion for the nine metals. Accordion reuses .hmtc-mhard.
 const H2S = `font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px`
 const PRIORITY = new Set(["lead", "cadmium", "arsenic", "mercury"])
 
+// Antimony is limited only in the baby wipes standard (a non-food product), as
+// an additional pass/fail row outside the eight-total claim-surface panel.
+const PRODUCT_SPECIFIC = { antimony: "Baby wipes standard only" }
+
 function roleLabel(slug) {
+  if (PRODUCT_SPECIFIC[slug]) return PRODUCT_SPECIFIC[slug]
   return PRIORITY.has(slug) ? "Priority toxic" : "Claim analyte"
 }
 
@@ -256,15 +275,15 @@ function indexPage() {
     "type: analyte",
     "custom_page: true",
     'breadcrumb_leaf: "Analytes"',
-    'description: "The ten analytes the Heavy Metal Tested & Certified program quantifies, and why each is limited — one reference page per metal, drawn from the government and expert-body record."',
-    "updated: 2026-08-18",
+    'description: "The eleven analytes the Heavy Metal Tested & Certified program quantifies, and why each is limited: one reference page per metal, drawn from the government and expert-body record."',
+    "updated: 2026-09-26",
     "audience: [regulator, brand-legal, retailer-compliance, certifier, educator]",
     'hero_action: { label: "Maximum levels in force", href: "/standards" }',
     "snapshot:",
-    '  - { k: "Metals", v: "8" }',
-    '  - { k: "Analytes quantified", v: "10" }',
+    '  - { k: "Metals", v: "9" }',
+    '  - { k: "Analytes quantified", v: "11" }',
     '  - { k: "Pathway species", v: "3" }',
-    '  - { k: "Reference pages", v: "8" }',
+    '  - { k: "Reference pages", v: "9" }',
     "connections:",
     '  - { label: "The standards register", href: "/standards" }',
     '  - { label: "How limits are derived", href: "/program/structure" }',
@@ -275,18 +294,18 @@ function indexPage() {
 
   const scope = `<section style="margin-bottom:52px">
 <h2 id="scope-panel" style="${H2S}">Scope of the panel</h2>
-<p style="font-size:17.5px;line-height:1.72;color:#2b1f1f;margin:0 0 18px;max-width:74ch">Eight metals, ten analytes: <a href="/analytes/arsenic" style="color:${LINK}">arsenic</a> and <a href="/analytes/mercury" style="color:${LINK}">mercury</a> are each reported in total and speciated form. Each page states, from the government and expert-body record, why the metal is limited.</p>
+<p style="font-size:17.5px;line-height:1.72;color:#2b1f1f;margin:0 0 18px;max-width:74ch">Nine metals, eleven analytes: <a href="/analytes/arsenic" style="color:${LINK}">arsenic</a> and <a href="/analytes/mercury" style="color:${LINK}">mercury</a> are each reported in total and speciated form. Eight of the metals are limited across the HMTc standards; <a href="/analytes/antimony" style="color:${LINK}">antimony</a> is limited only in the <a href="/standards/baby-wipes" style="color:${LINK}">baby wipes standard</a>, a non-food product. Each page states, from the government and expert-body record, why the metal is limited.</p>
 <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 4px;max-width:74ch">For the plain-language rationale &mdash; the toxicological basis, the exposure reality, and the case for a certification limit, metal by metal &mdash; see <a href="/why-we-limit" style="color:${LINK}">why we limit each metal</a>. The maximum levels in force are on the <a href="/standards" style="color:${LINK}">standards</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:${LINK}">Heavy Metal Index</a>.</p>
 </section>`
 
   const glance = `<section style="margin-bottom:52px">
 <h2 id="panel" style="${H2S}">The panel at a glance</h2>
-<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Eight metals, ten analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Every claim analyte is equal at the gate: a product is certified only when every analyte is at or below 100% of its published government floor or disclosed read-across. Lead, cadmium, arsenic, and mercury may be named as priority toxics for toxicological clarity; that label is not a status ladder.</p>
+<p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">Nine metals, eleven analytes. Arsenic is reported as total arsenic and inorganic arsenic; mercury as total mercury and methylmercury. Antimony is limited only in the baby wipes standard, as an additional pass/fail row outside the eight-total claim-surface panel; no HMTc food standard limits it. Every claim analyte is equal at the gate: a product is certified only when every analyte is at or below 100% of its published government floor or disclosed read-across. Lead, cadmium, arsenic, and mercury may be named as priority toxics for toxicological clarity; that label is not a status ladder.</p>
 <div style="overflow-x:auto;border:1px solid #e8e1db"><table style="width:100%;border-collapse:collapse;min-width:44rem"><thead><tr><th>Analyte</th><th>Symbol</th><th>Reported as</th><th>Panel role</th></tr></thead><tbody>${tblRows}</tbody></table></div>
 </section>`
 
   const metals = `<section style="margin-bottom:20px">
-<h2 id="metals" style="${H2S}">The eight metals</h2>
+<h2 id="metals" style="${H2S}">The nine metals</h2>
 <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">A lot that exceeds any published limit cannot be certified while that result stands. Speciation is a pathway reflex and never replaces the parent total.</p>
 <div class="hmtc-mhard-list">${analyteAccordion(DATA.analytes, false)}</div>
 </section>`

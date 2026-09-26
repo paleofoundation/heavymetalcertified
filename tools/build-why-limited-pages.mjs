@@ -116,14 +116,23 @@ function renderSources(spec) {
 `
 }
 
-function renderCite(title, year, url) {
+// Rights line for the cite box. A spec with `rights: "all-rights-reserved"`
+// prints the house All-rights-reserved notice instead of the CC BY prose line.
+const ARR_NOTICE = "© 2026 Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved."
+function rightsLine(spec) {
+  return spec.rights === "all-rights-reserved"
+    ? `${ARR_NOTICE} The underlying evidence base is the independent Heavy Metal Index, cited one way; this page applies that evidence to the certification question.`
+    : "Prose under CC BY 4.0. The underlying evidence base is the independent Heavy Metal Index, cited one way; this page applies that evidence to the certification question."
+}
+
+function renderCite(title, year, url, spec) {
   return `## Cite this page
 
   <div style="border:1px solid #e8e1db;background:#fffdfb">
     <div style="padding:11px 15px;border-bottom:1px solid #e8e1db;background:#fdf4f3;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:${ACCENT}">Reuse this analysis</div>
     <div style="padding:14px 15px">
       <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.75;color:#5a4141;margin:0 0 14px">Pendergrass, K. (${year}). <em style="font-style:normal">${title}</em>. Heavy Metal Certified, Institute of Contaminant Standards (ICS). ${url}</p>
-      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">Prose under CC BY 4.0. The underlying evidence base is the independent Heavy Metal Index, cited one way; this page applies that evidence to the certification question.</p>
+      <p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0">${rightsLine(spec)}</p>
     </div>
   </div>
 `
@@ -156,7 +165,9 @@ function build(spec) {
     ...(spec.connections || []).map((c) => `  - { label: "${q(c.label)}", href: "${q(c.href)}" }`),
     "rail_box:",
     `  title: "Why we limit each metal"`,
-    `  body: "One page per metal on the panel, each answering why HMTc limits it in food — the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index."`,
+    // `rail_body` lets a metal limited outside food (antimony: baby wipes) state
+    // its own scope instead of the food framing.
+    `  body: "${q(spec.rail_body || "One page per metal on the panel, each answering why HMTc limits it in food — the toxicological basis, the exposure reality, and the case for a certification ceiling. The numeric limits live on the standards; the full literature on the Heavy Metal Index.")}"`,
     "---",
     "",
   ].filter((l) => l !== null)
@@ -177,7 +188,7 @@ function build(spec) {
     renderFindings(spec.related_findings, spec.name),
     renderFaq(spec.faq),
     renderSources(spec),
-    renderCite(title, year, url),
+    renderCite(title, year, url, spec),
   ].join("\n")
 
   fs.writeFileSync(path.join(OUT, `${slug}.md`), front.join("\n") + "\n" + body, "utf8")
@@ -190,6 +201,7 @@ function build(spec) {
     dek: plain(spec.dek || spec.description || ""),
     metals: Array.isArray(spec.metals) ? spec.metals : [],
     order: spec.order ?? 99,
+    productSpecific: spec.product_specific || null,
   }
 }
 
@@ -210,12 +222,18 @@ function card(a) {
 
 function writeIndex(built) {
   const rows = [...built].sort((a, b) => a.order - b.order).map(card).join("\n")
+  // Metals limited only in a named non-food standard (antimony: baby wipes) are
+  // listed after the claim analytes, with their scope stated.
+  const specific = built.filter((a) => a.productSpecific)
+  const specificNote = specific.length
+    ? `, then ${specific.map((a) => `${a.name.toLowerCase()}, limited only in the ${a.productSpecific}`).join(" and ")}`
+    : ""
   const front = [
     "---",
     'title: "Why we limit each metal"',
     "type: rationale-index",
     "custom_page: true",
-    'description: "Why the Heavy Metal Tested & Certified program limits each metal on its panel in food — one synthesis page per metal, tying the toxicological basis, the exposure reality, and the vulnerable populations to the case for a certification limit."',
+    'description: "Why the Heavy Metal Tested & Certified program limits each metal on its panel, in food and, for antimony, in baby wipes: one synthesis page per metal, tying the toxicological basis, the exposure reality, and the vulnerable populations to the case for a certification limit."',
     "audience: [consumer, regulator, brand-legal, retailer-compliance, educator]",
     "connections:",
     '  - { label: "The analyte panel (agency reference)", href: "/analytes" }',
@@ -229,7 +247,7 @@ function writeIndex(built) {
 
 <section style="margin:36px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">The panel, metal by metal</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${built.length} metals, ordered as the panel is listed: the four priority toxics first, then the four additional claim analytes. Every claim analyte is equal at the gate.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">${built.length} metals, ordered as the panel is listed: the four priority toxics first, then the four additional claim analytes${specificNote}. Every claim analyte is equal at the gate.</p>
   <div style="display:flex;flex-direction:column">
 ${rows}
   </div>
