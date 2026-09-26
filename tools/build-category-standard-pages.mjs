@@ -193,7 +193,7 @@ function extraNote(cells, extras) {
       bits.push(`${name} is listed pending a decision and is excluded from pass/fail until a numeric limit is set. It is not included in the analyte count above.`)
     } else if (c && c.value != null) {
       const cmp = c.comparator_note ? ` ${c.comparator_note}` : ""
-      bits.push(`${name} carries the published ceiling ${c.value}.${cmp} It is included in pass/fail and is additional to the analyte count above.`)
+      bits.push(`${name} is also limited, at ${c.value}.${cmp} It counts toward pass/fail in addition to the analyte count above.`)
     }
   }
   return bits.length ? ` ${bits.join(" ")}` : ""

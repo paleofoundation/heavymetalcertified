@@ -29,30 +29,34 @@ connections:
 
 <div style="border:1px solid #f2dcda;background:#fdf4f3;padding:24px 26px;margin-bottom:52px">
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:15px;color:#fff;background:#9f2727;border-radius:3px;padding:7px 13px">THE CLAIM</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#9f2727">Technical report &middot; HMTc Standards Briefing 13 &middot; September 2026</span></div>
-  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">Version 2 of the baby-wipes standard sets antimony (Sb) at 30000 ug/kg. The basis is total antimony content under 30 mg/kg in the finished product, measurable directly on a wipe.</p>
+  <p style="font-family:Lora,serif;font-size:24px;line-height:1.45;color:#2b1f1f;margin:0">The HMTc baby-wipes standard now limits antimony. Version 2 sets antimony (Sb) at 30000 ug/kg, the voluntary EU Ecolabel ceiling of under 30 mg/kg total content in the finished product, a figure that can be measured directly on a wipe.</p>
 </div>
 
 ## Abstract
 
-<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Version 2 of the Heavy Metal Tested &amp; Certified standard for baby wipes sets antimony (Sb) at 30000 ug/kg. The basis is the EU Ecolabel for absorbent hygiene products, Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8: total antimony content under 30 mg/kg in the finished product, measurable directly on a wipe [1]. The Ecolabel is voluntary, and the cell discloses that. Korea MFDS Notice No. 2026-23, revised 24 March 2026, is government precedent in baby products. The standards were first enacted as Notice No. 2018-19 on 21 March 2018. For children's disposable diapers the notice sets antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer [2]. That test is migration, not total content. Total-content limits and migration limits measure different things.</p><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Version 2 adds Sb. No products had been certified under the prior version. The prior DOI stays live and is linked as the previous version: <a href="https://doi.org/10.83138/hmtc.std.2.baby-wipes">10.83138/hmtc.std.2.baby-wipes</a>, version 1.0 (2026-08-17) [3]. No new DOI is deposited for version 2.</p>
+<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Version 2 of the Heavy Metal Tested &amp; Certified standard for baby wipes adds antimony (Sb) and sets it at 30000 ug/kg. The limit comes from the EU Ecolabel for absorbent hygiene products, Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, which holds total antimony content in the finished product under 30 mg/kg, a figure that can be measured directly on a wipe [1]. The Ecolabel is voluntary, and the limit cell says so.</p><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">The nearest government precedent in baby products is Korean. MFDS Notice No. 2026-23, revised 24 March 2026, continues standards first enacted as Notice No. 2018-19 on 21 March 2018, and for children's disposable diapers it sets antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer [2]. A migration limit and a total-content limit measure different things, so the Korean figure is recorded as precedent rather than adopted.</p><p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">No products had been certified under the prior version. Its DOI stays live and is linked as the previous version: <a href="https://doi.org/10.83138/hmtc.std.2.baby-wipes">10.83138/hmtc.std.2.baby-wipes</a>, version 1.0 (2026-08-17) [3]. No new DOI is deposited for version 2.</p>
 
-## Version note
+## What changed in version 2
 
-Version 2 adds Sb. No products had been certified under the prior version. The prior DOI stays live and is the previous version, not a withdrawn one. It remains resolvable at [https://doi.org/10.83138/hmtc.std.2.baby-wipes](https://doi.org/10.83138/hmtc.std.2.baby-wipes) [3]. DataCite records that DOI as version 1.0, publication year 2026, registered 19 September 2026, with no separate print date and no volume or pages. The house version history dates edition 1.0 to 2026-08-17. The current text of the standard is the [baby wipes standard](/standards/baby-wipes). Version 2 does not replace that DOI with a new one.
+Version 2 adds one analyte, antimony (Sb), to the baby-wipes standard. No products had been certified under the prior version. The prior DOI stays live as the previous version, not a withdrawn one, and it remains resolvable at [https://doi.org/10.83138/hmtc.std.2.baby-wipes](https://doi.org/10.83138/hmtc.std.2.baby-wipes) [3]. DataCite records that DOI as version 1.0, publication year 2026, registered 19 September 2026, with no separate print date and no volume or pages; the house version history dates edition 1.0 to 2026-08-17. Version 2 does not replace that DOI with a new one.
 
-The antimony cell on that page is 30000 ug/kg and is included in pass/fail. The source comparator is strictly less than 30 mg/kg.
+The current text of the standard is the [baby wipes standard](/standards/baby-wipes). Its antimony cell is 30000 ug/kg and is included in pass/fail, so it counts toward whether a product can be certified. The source comparator is strictly less than 30 mg/kg.
 
-## What the measurements show
+## What has been measured in wipes
 
-The certification ceiling is 30000 ug/kg. The figures in this section are the evidence summary. None of them is the ceiling.
+The limit is 30000 ug/kg. The figures in this section are the evidence that put antimony on the panel, and none of them is the limit.
 
-Washington State Department of Ecology Publication 14-04-014, revised June 2021, measured total elemental antimony in baby-wipe components and in moist baby-wipes packaging [5]. Components were prioritized by X-ray fluorescence and confirmed by ICP-MS. The design is an upper-tail screen of products bought for that study, not a random sample of the category. The analyte is total elemental antimony. The report does not speciate Sb(III) and Sb(V). These results are occurrence. Occurrence does not set a live certification cell.
+The first set of measurements comes from Washington State. Department of Ecology Publication 14-04-014, revised June 2021, measured total elemental antimony in baby-wipe components and in moist baby-wipes packaging [5]. The agency prioritized components by X-ray fluorescence and confirmed them by ICP-MS, which makes the study an upper-tail screen of products bought for that study rather than a random sample of the category. The analyte is total elemental antimony, and the report does not speciate Sb(III) and Sb(V). These results describe occurrence, and occurrence does not set a live certification cell.
 
-Choi, Song, and Kim 2016 digested approximately 0.2 g and diluted with 25 mL of water, not made up to 25 mL [6]. Table 5 prints an antimony range for wet-wipe nonwovens. The paper prints neither sheet figure in mg/kg. The conversion to a sheet estimate is uncertain, because the methods do not state a made-up final volume. Treating the final volume as 25 mL gives µg/L × 0.125, from mg/kg ≈ (µg/L × 0.025 L / 0.0002 kg) / 1,000, or about 23.48 to 2,444.79 mg/kg. The division by 1,000 is required because the quotient of those inputs is micrograms per kilogram. Treating the digest as 8 mL of acid plus 25 mL of water gives µg/L × 0.165, and a higher top of about 3,227.13 mg/kg. The paper prints neither figure. Neither reading is the certification ceiling. The authors' attribution of the result to antimony trioxide or antimony glycolate catalyst is their inference. The highest sheet in Table 5 is labeled rayon only, and several polyester-labeled sheets were not detected, so the polyester-catalyst explanation is a hypothesis for wipes, not a finding.
+The second study reports its results in a unit that has to be converted before it can be read as a sheet concentration. Choi, Song, and Kim 2016 digested approximately 0.2 g of sample and diluted it with 25 mL of water, not made up to 25 mL [6]. Their Table 5 prints an antimony range for wet-wipe nonwovens, and the paper prints no sheet figure in mg/kg. Any conversion is uncertain, because the methods do not state a made-up final volume.
 
-The China Association for Quality Promotion of Consumer Products Safety page dated 2 April 2026 reports a detection count for total antimony in online baby wipes, and the annex results table prints the detected row in µg/L [7]. That unit is the one printed on the table. It is not a sheet concentration in milligrams per kilogram, and it is not a candidate limit. Brands named on that page are not repeated here.
+Treating the final volume as 25 mL gives µg/L × 0.125, from mg/kg ≈ (µg/L × 0.025 L / 0.0002 kg) / 1,000, or about 23.48 to 2,444.79 mg/kg. The division by 1,000 is required because the quotient of those inputs is micrograms per kilogram. Treating the digest as 8 mL of acid plus 25 mL of water gives µg/L × 0.165, and a higher top of about 3,227.13 mg/kg. The paper prints neither figure, and neither reading is the certification limit.
 
-Biver, Turner, and Filella 2021 measured artificial-sweat release from polyester textiles, not from wipes [8]. The extract row is a simulant result under ISO 105-E04. It is not absorption, and it is not a wipe-sheet total.
+The authors attribute the result to an antimony trioxide or antimony glycolate catalyst. That is their inference. The highest sheet in Table 5 is labeled rayon only, and several polyester-labeled sheets were not detected, so the polyester-catalyst explanation is a hypothesis for wipes, not a finding.
+
+A monitoring page from the China Association for Quality Promotion of Consumer Products Safety, dated 2 April 2026, reports a detection count for total antimony in baby wipes sold online, and its annex results table prints the detected results in µg/L [7]. That is the unit printed on the table. It is not a sheet concentration in milligrams per kilogram, and it is not a candidate limit. The page names brands, and this briefing does not repeat them.
+
+The last source concerns textiles, not wipes. Biver, Turner, and Filella 2021 measured how much antimony artificial sweat releases from polyester textiles [8]. The extract row is a simulant result under ISO 105-E04: release into a sweat substitute, not absorption through skin, and not a wipe-sheet total.
 
 | Source | Figure, as printed or as derived | What the figure is |
 |---|---|---|
@@ -65,15 +69,19 @@ Biver, Turner, and Filella 2021 measured artificial-sweat release from polyester
 | Biver, Turner, and Filella 2021, six polyester textiles, totals | 125 to 471 µg/g | Textiles, not wipes. Not a wipe-sheet total. |
 | Biver, Turner, and Filella 2021, artificial-sweat extracts, ISO 105-E04 | 0.402 ± 0.128 to 2.572 ± 0.031 µg/g | Simulant. Not absorption. Not a wipe-sheet total. |
 
-## The decision
+## How the limit was chosen
 
 Antimony is on the baby-wipes standard at 30000 ug/kg, and the cell is included in pass/fail. The basis is EU total content, measurable directly on a wipe.
 
-Commission Decision (EU) 2023/1809 is the EU Ecolabel for absorbent hygiene products. Annex I criterion 7.3.8 applies to impurities in the final product. The criterion text states that the listed chemicals shall not be present in the final product in a concentration higher than Table 9, and Table 9 prints Antimony &lt; 30 mg/kg [1]. The Ecolabel is voluntary. The cell discloses that voluntary anchor. It is the government floor for this analyte. The assessment in the decision accepts analysis of the final product, so the limit is measurable directly on a wipe. 30 mg/kg is 30000 ug/kg. The source comparator is strictly less than 30 mg/kg. The compiled record has no comparator field, so that inequality is written in the cell provenance.
+Commission Decision (EU) 2023/1809 is the EU Ecolabel for absorbent hygiene products. Its Annex I criterion 7.3.8 applies to impurities in the final product: the criterion text states that the listed chemicals shall not be present in the final product in a concentration higher than Table 9, and Table 9 prints Antimony &lt; 30 mg/kg [1]. The assessment in the decision accepts analysis of the final product, which is why the limit can be measured directly on a wipe. The Ecolabel is voluntary, and the cell discloses that voluntary anchor. It is the government floor for this analyte.
 
-The cells already published for the other analytes keep their own basis: total content of the impregnating cosmetic liquid, in ug/kg of that liquid as sold. The antimony cell does not use that liquid basis. It uses total content in the finished product.
+The conversion is exact: 30 mg/kg is 30000 ug/kg. The source comparator is strictly less than 30 mg/kg. The compiled record has no comparator field, so that inequality is written in the cell provenance.
 
-Korea MFDS Notice No. 2026-23 is government precedent in baby products. For children's disposable diapers it sets antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer [2]. That is a migration test. This ceiling is a total-content test. The two measure different things, and the Korea figure is not the baby-wipes number.
+The antimony cell also sits on a different basis from the rest of the standard. The cells already published for the other analytes keep their own basis, total content of the impregnating cosmetic liquid, in ug/kg of that liquid as sold. The antimony cell does not use that liquid basis; it uses total content in the finished product.
+
+Korea's diaper limit was weighed and recorded as precedent. MFDS Notice No. 2026-23 is government precedent in baby products, and for children's disposable diapers it sets antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer [2]. That is a migration test, and this ceiling is a total-content test. The two measure different things, and the Korea figure is not the baby-wipes number.
+
+The table sets out each basis that was weighed. The EU textile Ecolabel figures were not selected [9]. No US federal limit for antimony in diapers, wipes, or textiles was identified, and the two drinking-water values are shown for orientation only [10][11].
 
 | Basis | Figure, as printed | Status |
 |---|---|---|
@@ -87,7 +95,7 @@ Korea MFDS Notice No. 2026-23 is government precedent in baby products. For chil
 
 ## Where the decision sits
 
-The decision is a standards decision on this side of the program. The measurements above are why antimony is on the panel. They are not the certification ceiling. The ceiling is the EU Ecolabel total-content figure [1]. The Heavy Metal Index remains the literature base and is cited one way; it does not set this ceiling [4]. This briefing names no brand.
+This is a standards decision, made on the certification side of the program. The measurements above explain why antimony is on the panel; they do not set the ceiling, which is the EU Ecolabel total-content figure [1]. The Heavy Metal Index remains the literature base and is cited one way. It does not set this ceiling [4]. This briefing names no brand.
 
 ## References
 
