@@ -22,6 +22,7 @@ export const ELEMENTS: Record<string, { symbol: string; number: number; name: st
   tin: { symbol: "Sn", number: 50, name: "Tin" },
   aluminum: { symbol: "Al", number: 13, name: "Aluminum" },
   chromium: { symbol: "Cr", number: 24, name: "Chromium" },
+  antimony: { symbol: "Sb", number: 51, name: "Antimony" },
 }
 export function pageElement(slug: string) {
   return /^(analytes|why-we-limit)\//.test(slug) ? ELEMENTS[slug.split("/")[1]] : undefined

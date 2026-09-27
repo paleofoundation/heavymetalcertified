@@ -105,7 +105,7 @@ export const navPanels: NavPanel[] = [
     "label": "Analytes",
     "panelLabel": "The analyte panel",
     "slug": "analytes",
-    "blurb": "Eight metals, ten analytes. Each page states, from the government and expert-body record and the occurrence data, why the metal is limited and why the program monitors it.",
+    "blurb": "Nine metals, eleven analytes. Each page states, from the government and expert-body record and the occurrence data, why the metal is limited and why the program monitors it.",
     "groups": [
       {
         "heading": "Tier 1: zero-tolerance toxics",
@@ -148,9 +148,18 @@ export const navPanels: NavPanel[] = [
             "slug": "analytes/chromium"
           }
         ]
+      },
+      {
+        "heading": "Baby wipes standard only",
+        "children": [
+          {
+            "label": "Antimony",
+            "slug": "analytes/antimony"
+          }
+        ]
       }
     ],
-    "allLabel": "All ten analytes"
+    "allLabel": "All eleven analytes"
   },
   {
     "key": "research",

@@ -2,7 +2,7 @@
 title: "Why we limit each metal"
 type: rationale-index
 custom_page: true
-description: "Why the Heavy Metal Tested & Certified program limits each metal on its panel in food — one synthesis page per metal, tying the toxicological basis, the exposure reality, and the vulnerable populations to the case for a certification limit."
+description: "Why the Heavy Metal Tested & Certified program limits each metal on its panel, in food and, for antimony, in baby wipes: one synthesis page per metal, tying the toxicological basis, the exposure reality, and the vulnerable populations to the case for a certification limit."
 audience: [consumer, regulator, brand-legal, retailer-compliance, educator]
 connections:
   - { label: "The analyte panel (agency reference)", href: "/analytes" }
@@ -10,11 +10,11 @@ connections:
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Heavy Metal Index — the evidence base", href: "https://heavymetalindex.com" }
 ---
-<section style="margin-bottom:8px"><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Every metal on the HMTc panel is limited for a reason that can be stated from the government and expert-body record. These pages give that reason, one metal at a time: the toxicological endpoint and the authoritative basis, which foods carry the metal and roughly how much, the people the exposure reaches, and why a certification limit is warranted where a label claim is not. The agency-by-agency assessments are on the <a href="/analytes" style="color:#1c43ad">analyte panel</a>; the numeric limits are on the <a href="/standards" style="color:#1c43ad">standards register</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>.</p></section>
+<section style="margin-bottom:8px"><p style="font-size:16px;line-height:1.7;color:#3f3a3a;max-width:80ch;margin:0 0 8px">Every metal on the HMTc panel is limited for a reason that can be stated from the government and expert-body record. These pages give that reason, one metal at a time: the toxicological endpoint and the authoritative basis, which foods, and one non-food product (baby wipes), carry the metal and roughly how much, the people the exposure reaches, and why a certification limit is warranted where a label claim is not. The agency-by-agency assessments are on the <a href="/analytes" style="color:#1c43ad">analyte panel</a>; the numeric limits are on the <a href="/standards" style="color:#1c43ad">standards register</a>; the complete literature is on the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>.</p></section>
 
 <section style="margin:36px 0 8px">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 8px">The panel, metal by metal</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">8 metals, ordered as the panel is listed: the four priority toxics first, then the four additional claim analytes. Every claim analyte is equal at the gate.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 14px;max-width:84ch">9 metals, ordered as the panel is listed: the four priority toxics first, then the four additional claim analytes, then antimony, limited only in the baby wipes standard. Every claim analyte is equal at the gate.</p>
   <div style="display:flex;flex-direction:column">
     <a href="/why-we-limit/lead" style="display:grid;grid-template-columns:64px minmax(0,1fr) 150px;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
       <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:8px 0;text-align:center">Pb</span>
@@ -79,6 +79,14 @@ connections:
         <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Chromium is a tale of two forms: the trivalent one is a nutrient, the hexavalent one is a carcinogen — so the whole discipline is telling them apart.</span>
       </span>
       <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;text-align:right">Total chromium; Cr(VI) on trigger</span>
+    </a>
+    <a href="/why-we-limit/antimony" style="display:grid;grid-template-columns:64px minmax(0,1fr) 150px;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid #f2ece7;text-decoration:none">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:8px 0;text-align:center">Sb</span>
+      <span style="min-width:0">
+        <span style="display:block;font-family:Lora,serif;font-size:20px;line-height:1.3;color:#9f2727">Why we limit antimony</span>
+        <span style="display:block;font-size:14px;line-height:1.6;color:#3f3a3a;max-width:66ch;margin-top:7px">Antimony is limited in one HMTc standard, baby wipes, and in no food. The ceiling is total antimony in the finished wipe, taken from a voluntary EU Ecolabel criterion.</span>
+      </span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;text-align:right">Total elemental antimony</span>
     </a>
   </div>
 </section>

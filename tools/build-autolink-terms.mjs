@@ -58,9 +58,10 @@ const existing = new Set([
 // ── Curated vocabulary. [type, slug, [phrasings], guardKey?] ────────────────
 // guardKey names a disambiguation guard implemented in autolink.ts (only "lead").
 const CURATED = [
-  // Analytes — the eight certified metals. Multiword forms first so "inorganic
+  // Analytes — the panel metals (antimony: baby wipes only). Multiword forms first so "inorganic
   // arsenic" wins over "arsenic", "hexavalent chromium" over "chromium".
   ["analyte", "analytes/aluminum", ["aluminum", "aluminium"]],
+  ["analyte", "analytes/antimony", ["antimony"]],
   ["analyte", "analytes/arsenic", ["inorganic arsenic", "arsenic"]],
   ["analyte", "analytes/cadmium", ["cadmium"]],
   ["analyte", "analytes/chromium", ["hexavalent chromium", "chromium"]],

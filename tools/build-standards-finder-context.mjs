@@ -48,7 +48,7 @@ const OUT = path.join(DATA_DIR, "standards-finder-context.json")
 // analytes from the app that consumes this projection (the 2026-08-25 defect: MeHg and Cr-VI
 // were omitted, so the readiness portal showed no hexavalent-chromium limit even though the
 // standard sets one).
-const ANALYTE_ORDER = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr", "Cr-VI", "Ni", "Sn", "Al"]
+const ANALYTE_ORDER = ["Pb", "iAs", "tAs", "tHg", "MeHg", "Cd", "Cr", "Cr-VI", "Ni", "Sn", "Al", "Sb"]
 const ANALYTE_LABELS = {
   Pb: "Lead",
   iAs: "Inorganic arsenic",
@@ -61,6 +61,7 @@ const ANALYTE_LABELS = {
   Ni: "Nickel",
   Sn: "Tin",
   Al: "Aluminium",
+  Sb: "Antimony",
 }
 // The per-metal reference pages the Finder links out to (never a fabricated claim).
 const ANALYTE_PAGE = {
@@ -75,6 +76,7 @@ const ANALYTE_PAGE = {
   Ni: "/analytes/nickel",
   Sn: "/analytes/tin",
   Al: "/analytes/aluminum",
+  Sb: "/analytes/antimony",
 }
 
 // Friendly market names for the per_country jurisdiction codes that appear in the

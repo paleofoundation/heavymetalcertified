@@ -1532,6 +1532,221 @@
       },
       "prop65_note": "Hexavalent chromium (Cr-VI) specifically — not total or trivalent chromium — is listed under California Proposition 65 as a carcinogen (February 27, 1987) and separately as a developmental and male and female reproductive toxicant (December 19, 2008). Associated safe-harbor levels are an oral Maximum Allowable Dose Level of 8.2 µg/day (reproductive toxicity) and an inhalation cancer No Significant Risk Level of 0.001 µg/day. Both are warning thresholds, not food maximum levels, and neither sets a permitted concentration in any food. Trivalent chromium is not Prop 65-listed.",
       "index_link_slug": "chromium"
+    },
+    {
+      "slug": "antimony",
+      "name": "Antimony",
+      "sym": "Sb",
+      "z": 51,
+      "species": "Total elemental antimony",
+      "description": "Why Antimony (Sb) is limited in baby wipes, a non-food product and the only HMTc standard that carries an antimony limit: the government and expert-body assessments, the toxicological basis, and how the Heavy Metal Tested & Certified program treats the analyte. Reference page; the literature baseline is maintained independently at the Heavy Metal Index.",
+      "thesis": "Antimony is limited in one HMTc standard, baby wipes, which is a non-food product; no HMTc food standard limits it. Trivalent antimony is classified by IARC as probably carcinogenic to humans, screening surveys have measured total antimony in baby-wipe materials and packaging, and a voluntary EU Ecolabel criterion sets a total-content ceiling of below 30 mg/kg that can be measured directly on the finished wipe.",
+      "why_limited_intro": "The government and expert-body assessments that characterize antimony's hazard, and the product criteria that bear on a baby wipe. No food maximum level underpins an HMTc antimony limit: the program limits antimony only in the baby wipes standard, a non-food product. This page is the rationale, not the certification threshold.",
+      "why_limited": [
+        {
+          "agency": "IARC",
+          "year": "2023",
+          "document": "IARC Monographs Volume 131, trivalent and pentavalent antimony (evaluation announced 5 May 2023)",
+          "finding": "Classified trivalent antimony as probably carcinogenic to humans (Group 2A), on limited evidence in humans (lung cancer in three smelter cohorts, with arsenic confounding not ruled out), sufficient evidence in experimental animals for antimony(III) oxide, and strong mechanistic evidence in human primary cells. Classified pentavalent antimony as not classifiable (Group 3). Antimony trioxide had been evaluated as Group 2B in 1989; as a trivalent compound it sits inside the 2023 trivalent class.",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Overview and Carcinogenicity classification table; Index source record iarc2023-monograph-131-antimony (evaluation, PDF p.160)."
+        },
+        {
+          "agency": "US NTP (National Toxicology Program)",
+          "year": "2017",
+          "document": "Technical Report 590, antimony trioxide inhalation studies in Wistar Han rats and B6C3F1/N mice",
+          "finding": "In the two-year inhalation bioassay of antimony trioxide, found some evidence of carcinogenic activity in male and female rats (lung, and pheochromocytoma of the adrenal medulla) and clear evidence in male and female mice (lung, and malignant lymphoma in females). These are inhalation findings in rodents, not an oral or dermal potency. https://doi.org/10.22427/ntp-tr-590",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Carcinogenicity classification, TR-590 paragraph; Index source record ntp2017-tr590-antimony-trioxide (conclusions, PDF p.20-21)."
+        },
+        {
+          "agency": "US NTP (National Toxicology Program)",
+          "year": "2018",
+          "document": "Report on Carcinogens Monograph 13, antimony trioxide",
+          "finding": "Recommended listing antimony trioxide as reasonably anticipated to be a human carcinogen, on sufficient evidence in experimental animals and supporting mechanistic evidence, and stated that the human studies are inadequate to evaluate cancer from antimony trioxide or from antimony in general. https://doi.org/10.22427/roc-mgraph-13",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Carcinogenicity classification table, NTP RoC row; Index source record ntp2018-roc-monograph-antimony-trioxide (PDF p.15)."
+        },
+        {
+          "agency": "US ATSDR",
+          "year": "2019",
+          "document": "Toxicological Profile for Antimony and Compounds (October 2019)",
+          "finding": "Named the respiratory tract, heart, gastrointestinal tract, serum glucose, and the developing animal as sensitive targets. Derived an acute oral minimal risk level (MRL) of 1 mg Sb/kg/day from forestomach ulceration in mice given antimony potassium tartrate, and an intermediate oral MRL of 0.0006 mg Sb/kg/day from decreased serum glucose in female rats given antimony potassium tartrate; chronic oral data were inadequate for an MRL. Inhalation MRLs are 0.001 mg Sb/m3 (acute and intermediate) and 0.0003 mg Sb/m3 (chronic). Gastrointestinal absorption is poor and depends on the form.",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Toxicokinetics and Toxicology sections; Index source record atsdr2019-toxprofile-antimony (Table 1-1, PDF p.21)."
+        },
+        {
+          "agency": "WHO",
+          "year": "2003",
+          "document": "Antimony in Drinking-water, background document WHO/SDE/WSH/03.04/74, and chemical fact sheet",
+          "finding": "Set a tolerable daily intake of 6 µg/kg body weight, from a NOAEL of 6.0 mg/kg body weight per day in a 90-day rat drinking-water study of potassium antimony tartrate and an uncertainty factor of 1000, and a drinking-water guideline of 0.02 mg/L. The background document states that the value could be highly conservative. WHO states that there are no data to indicate carcinogenicity by the oral route.",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Reference values section (WHO TDI paragraph) and Carcinogenicity classification prose."
+        },
+        {
+          "agency": "California OEHHA",
+          "year": "2016",
+          "document": "Public Health Goal for Antimony in Drinking Water (September 2016)",
+          "finding": "Replaced the 1997 public health goal of 20 ppb with 1 ppb, from a BMDL10 of 0.14 mg/kg-day for liver nuclear anisokaryosis in male rats (Poon et al. 1998) and an uncertainty factor of 1,000. A California drinking-water goal, not a product limit.",
+          "source_trace": "Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Reference values section, OEHHA paragraph."
+        },
+        {
+          "agency": "European Commission (EU Ecolabel)",
+          "year": "2023",
+          "document": "Commission Decision (EU) 2023/1809, EU Ecolabel for absorbent hygiene products, Annex I criterion 7.3.8",
+          "finding": "Criterion 7.3.8 applies to impurities in the final product: the listed chemicals shall not be present in the final product in a concentration higher than Table 9, which prints Antimony < 30 mg/kg. The Ecolabel is voluntary; it is a label criterion, not a market ban. The test is total content in the finished product, not migration.",
+          "source_trace": "cert briefing why-baby-wipes-standard-adds-antimony.md on heavymetalcertified PR #114: The decision section and reference [1]; Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Government limits table, Decision (EU) 2023/1809 row."
+        },
+        {
+          "agency": "Korea MFDS (Ministry of Food and Drug Safety)",
+          "year": "2026",
+          "document": "Notice No. 2026-23, Standards and specifications for sanitary products (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018)",
+          "finding": "For children's disposable diapers only, set antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer. This is the government precedent in baby products. It is a migration test, and migration and total content measure different things.",
+          "source_trace": "cert briefing why-baby-wipes-standard-adds-antimony.md on heavymetalcertified PR #114: abstract, The decision section and reference [2]; Index metal page antimony.md on heavymetalindex PR #154 (branch cursor/antimony-baby-products-reference-5d9b): Government limits table, MFDS 2026-23 row."
+        }
+      ],
+      "toxicology_summary": "Antimony's hazard depends on its form. IARC (2023) classifies trivalent antimony as Group 2A and pentavalent antimony as Group 3; the human and animal cancer evidence comes from inhalation, and WHO states that there are no data to indicate carcinogenicity by the oral route. Oral reference values (WHO TDI 6 µg/kg body weight; ATSDR intermediate oral MRL 0.0006 mg Sb/kg/day) rest on antimony potassium tartrate in rats. No study opened by the Heavy Metal Index measures dermal absorption from a wipe.",
+      "toxicology_intro": "What the assessment bodies found when they examined antimony, and why the evidence supports a limit on a product that is used on infant skin: the difference between the trivalent and pentavalent forms, the carcinogenicity stated with route precision, the oral reference values, and what is not known about skin contact.",
+      "toxicology": [
+        "Antimony is a metalloid, and the assessment bodies treat its two common oxidation states as different hazards. Trivalent antimony, Sb(III), includes antimony trioxide and antimony potassium tartrate; pentavalent antimony, Sb(V), includes the compounds used to treat leishmaniasis and the oxo-anion that WHO describes as the less toxic form in drinking water. IARC's 2023 evaluation in Monograph Volume 131 classified the two separately: trivalent antimony in Group 2A, probably carcinogenic to humans, and pentavalent antimony in Group 3, not classifiable. The Working Group recorded interconversion between the two forms as an evidence gap rather than a reason to merge the evaluations. Within the trivalent class, antimony trioxide, the insoluble oxide of the inhalation studies, and antimony potassium tartrate, the soluble salt of the oral studies, are not interchangeable doses.",
+        "The cancer evidence in people and in animals comes from inhalation, and stating that precisely is a matter of credibility. IARC's Group 2A classification rests on limited evidence in humans from three smelter cohorts, where arsenic confounding was not ruled out, sufficient evidence in experimental animals for antimony(III) oxide, and strong mechanistic evidence in human primary cells, including DNA damage, chromosomal aberrations, and micronuclei. The animal evidence comes largely from the National Toxicology Program's two-year inhalation bioassay of antimony trioxide, which found some evidence of carcinogenic activity in rats and clear evidence in mice. NTP's Report on Carcinogens monograph recommends listing antimony trioxide as reasonably anticipated to be a human carcinogen and states that the human studies are inadequate. By mouth the picture is different: ATSDR notes no tumor increase in lifetime oral studies of antimony potassium tartrate, and WHO states that there are no data to indicate carcinogenicity by the oral route. An inhalation classification is not an oral or dermal cancer potency, and this page does not treat it as one.",
+        "For oral exposure the bodies have set reference values without agreeing on one. WHO's tolerable daily intake is 6 µg/kg body weight per day, from a 90-day rat drinking-water study of potassium antimony tartrate and an uncertainty factor of 1000. ATSDR's intermediate oral minimal risk level is 0.0006 mg Sb/kg/day, lower than the WHO value, because ATSDR selected a lower no-observed-adverse-effect level from the same study (0.06 rather than 6.0 mg/kg body weight per day) and applied an uncertainty factor of 100; ATSDR found the chronic oral data inadequate for a minimal risk level. California's 2016 public health goal for drinking water rests on liver changes in male rats in that same study. These values answer different questions and are not averaged. None of them is scaled here to an infant's body weight, and none is a wipe limit.",
+        "What is not known matters as much for a baby product. The consumer studies opened by the Heavy Metal Index do not measure antimony absorbed through the skin from a wipe or a textile. The only numeric percutaneous fractions are OECD's and OEHHA's summaries of an in vitro study of antimony trioxide on adult human skin (0.26 percent, and in OEHHA also 0.14 percent at a higher dose), which is neither a wipe-lotion measurement nor infant skin. ATSDR reads occluded application of antimony trioxide that killed rabbits as evidence that at least some forms can cross skin. The program therefore claims no dermal dose. It limits total antimony in the finished wipe because a hazard classified for the whole trivalent class is present in wipe materials, the product is used repeatedly on infant skin, and a total-content test can be run directly on the wipe."
+      ],
+      "occurrence": {
+        "intro": "How much antimony baby wipes and related materials carry, as measured, and the reference values those measurements should not be confused with. The program limits antimony only in baby wipes, so this section reports product occurrence rather than dietary occurrence; the complete corpus, including the food and water records, is maintained on the Heavy Metal Index.",
+        "tables": [
+          {
+            "caption": "Antimony measured in baby wipes, wipe materials, and related articles, as printed in each source. Units differ by study and are not converted here: ppm is mg/kg of the component; µg/L is the concentration of the measured digest or solution, not a sheet concentration in mg/kg; µg/g is per gram of textile. These are screening and survey results, not candidate limits and not safety thresholds.",
+            "columns": [
+              "Source",
+              "What was measured",
+              "Antimony, as printed",
+              "What the figure is"
+            ],
+            "mono": [
+              2
+            ],
+            "right": [
+              2
+            ],
+            "rows": [
+              [
+                "Washington State Department of Ecology, Publication 14-04-014 (revised June 2021)",
+                "Baby-wipe components, three",
+                "70.6, 61.3, 40.6 ppm",
+                "Total elemental antimony. Components prioritized by X-ray fluorescence, then confirmed by ICP-MS; an upper-tail screen, not a random sample."
+              ],
+              [
+                "Washington State Department of Ecology, Publication 14-04-014 (revised June 2021)",
+                "Moist baby-wipes packaging",
+                "95.8 ppm",
+                "Total elemental antimony, same screening design."
+              ],
+              [
+                "Choi, Song and Kim 2016, Table 5",
+                "Wet-wipe nonwovens, antimony detected in 12 of 24",
+                "187.86 to 19,558.35 µg/L",
+                "Digest concentration. The paper prints no sheet concentration in mg/kg."
+              ],
+              [
+                "China Association for Quality Promotion of Consumer Products Safety, 2 April 2026",
+                "Baby wet wipes bought online, detected in 20 of 21",
+                "15.02 to 450.45 µg/L",
+                "Total antimony in the unit the annex prints. Not a sheet concentration; an association monitoring report."
+              ],
+              [
+                "Biver, Turner and Filella 2021",
+                "Polyester textiles, six, not wipes: total",
+                "125 to 471 µg/g",
+                "Total antimony in the fabric."
+              ],
+              [
+                "Biver, Turner and Filella 2021",
+                "Same textiles: artificial-sweat extract (ISO 105-E04)",
+                "0.402 to 2.572 µg/g",
+                "Release into a simulant. Not absorption."
+              ]
+            ]
+          },
+          {
+            "caption": "Antimony reference values and limits, each in its own unit and on its own basis. They are not averaged and are not interchangeable: an oral intake value, a drinking-water value, a toy-migration value, a diaper-migration value, and a finished-product content criterion answer different questions. Only the EU Ecolabel criterion 7.3.8 is a total-content value set for absorbent hygiene products.",
+            "columns": [
+              "Reference value or limit",
+              "Value",
+              "Basis"
+            ],
+            "mono": [
+              1
+            ],
+            "right": [
+              1
+            ],
+            "minWidth": "34rem",
+            "rows": [
+              [
+                "WHO tolerable daily intake (2003)",
+                "6 µg/kg bw/day",
+                "oral intake"
+              ],
+              [
+                "ATSDR intermediate oral minimal risk level (2019)",
+                "0.0006 mg/kg/day",
+                "oral intake; no chronic oral MRL"
+              ],
+              [
+                "WHO drinking-water guideline",
+                "0.02 mg/L",
+                "drinking water"
+              ],
+              [
+                "US EPA maximum contaminant level, 40 CFR 141.62(b)(11)",
+                "0.006 mg/L",
+                "drinking water"
+              ],
+              [
+                "EU Directive (EU) 2020/2184, Annex I, Part B",
+                "10 µg/L",
+                "drinking water, parametric value"
+              ],
+              [
+                "California OEHHA public health goal (2016)",
+                "1 ppb",
+                "drinking-water goal"
+              ],
+              [
+                "EU Toy Safety Directive 2009/48/EC, Categories I / II / III",
+                "45 / 11.3 / 560 mg/kg",
+                "migration from toy material"
+              ],
+              [
+                "Korea MFDS Notice No. 2026-23, children's disposable diapers",
+                "60 mg/kg or less",
+                "migration; inner lining and waterproof layer, each"
+              ],
+              [
+                "EU Ecolabel textiles, Decision 2014/350/EU, criterion 7(a)",
+                "260 ppm",
+                "total in polyester fibres; voluntary"
+              ],
+              [
+                "EU Ecolabel textiles, Decision 2014/350/EU, Appendix 1 (iv)",
+                "30.0 mg/kg",
+                "extractable in acid sweat; voluntary"
+              ],
+              [
+                "EU Ecolabel absorbent hygiene products, Decision (EU) 2023/1809, criterion 7.3.8",
+                "< 30 mg/kg",
+                "total content in the final product; voluntary"
+              ]
+            ]
+          }
+        ],
+        "prose": [
+          "Every antimony figure measured on a baby wipe so far comes from a screen or a survey rather than a random sample of the market, and the studies report on different bases. Washington Ecology prioritized components by X-ray fluorescence before confirming them by ICP-MS, so its tens-of-ppm results describe the upper tail of what it screened. Choi and colleagues and the 2026 Chinese monitoring report print concentrations in the measured solution, in µg/L, not in milligrams per kilogram of sheet, and the Choi methods do not state a made-up final volume, so no sheet concentration is printed here. The textile study measures release into artificial sweat, which is not absorption. Together the measurements show that antimony is present in wipe materials and packaging. They are why antimony is on the wipes standard; they are not the certification ceiling.",
+          "The pathway the Heavy Metal Index names for wipes is catalyst residue from the manufacture of polyester and PET. For wipes, that pathway is a hypothesis rather than a finding: in the Choi study the highest sheet was labeled rayon only, and several polyester-labeled sheets had no detected antimony. In PET bottles, X-ray absorption spectroscopy by Borca and colleagues (2025, https://doi.org/10.1016/j.jes.2024.02.006) found organically bound antimony, consistent with antimony glycolate or antimony acetate. The program does not need to settle the source to limit the result, because a total-content test on the finished wipe measures the antimony whichever material carried it in.",
+          "Skin contact is the route that matters for a wipe, and it is the least measured. No study opened by the Heavy Metal Index measures antimony absorbed from a wipe or a wipe lotion into infant skin. Infants also meet antimony, where they meet it, through water used to prepare feeds and through PET and polyester articles against the skin or in the mouth, and body weight makes the same ingested mass a larger dose in an infant than in the 60 kg adult that the WHO drinking-water derivation assumes. Those facts support measuring antimony on an infant-contact product. They do not supply a dermal dose, and this page does not calculate one."
+        ],
+        "source_note": "Occurrence sources: Washington State Department of Ecology, Publication 14-04-014 (revised June 2021), a government screening survey; Choi, Song and Kim 2016, Journal of the Korean Oil Chemists' Society 33(1):195-203, https://doi.org/10.12925/jkocs.2016.33.1.195; China Association for Quality Promotion of Consumer Products Safety, monitoring report of 2 April 2026; Biver, Turner and Filella 2021, Regulatory Toxicology and Pharmacology 119:104824, https://doi.org/10.1016/j.yrtph.2020.104824. Reference values: WHO 2003, ATSDR 2019, 40 CFR 141.62(b)(11), Directive (EU) 2020/2184, OEHHA 2016, Directive 2009/48/EC, Korea MFDS Notice No. 2026-23, and Commission Decisions 2014/350/EU and (EU) 2023/1809."
+      },
+      "how_regulated": "The sources behind this page identify no government maximum level for antimony in baby wipes, and no HMTc food standard carries an antimony limit. The limits that exist sit on different bases. The EU Ecolabel for absorbent hygiene products, Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, applies to impurities in the final product and prints Antimony < 30 mg/kg in Table 9; the Ecolabel is voluntary, a label criterion rather than a market ban. Korea MFDS Notice No. 2026-23 (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018) is the government precedent in baby products: for children's disposable diapers only, it sets antimony at 60 mg/kg or less by migration, applied separately to the inner lining and the waterproof layer. Migration and total content measure different things, so the Korean figure is not converted into a wipe ceiling. The EU Ecolabel for textiles (Decision 2014/350/EU) limits antimony at 260 ppm in polyester fibres and at 30.0 mg/kg extractable in acid sweat, both voluntary; the EU Toy Safety Directive 2009/48/EC sets migration limits from toy material; and drinking water is regulated at 0.006 mg/L in the United States (40 CFR 141.62(b)(11)) and 10 µg/L in the EU (Directive (EU) 2020/2184). No US federal limit for antimony in diapers, wipes, or textiles was identified. None of these values is interchangeable with another, and none is averaged. The full cross-instrument table is maintained independently at the Index (https://heavymetalindex.com/metals/antimony).",
+      "hmtc_treatment": "Antimony is limited in one HMTc standard: version 2 of the baby wipes standard (/standards/baby-wipes), a non-food product. No HMTc food standard, and no other product standard, limits antimony, and nothing on this page implies a food limit. The limit is total antimony below 30 mg/kg in the finished product, entered on the standard as 30000 µg/kg with a strictly-less-than comparator, and it is included in pass/fail. Its basis is criterion 7.3.8 of the EU Ecolabel for absorbent hygiene products, Commission Decision (EU) 2023/1809, disclosed on the standard as a voluntary anchor. The test is total content measured directly on the wipe, not migration, and it does not use the impregnating-liquid basis of the standard's other analytes. Antimony is an additional pass/fail row, outside the eight-total claim-surface panel that every HMTc standard carries. It is measured and limited as total elemental antimony; no speciation reflex applies. The regulatory hard-stop still applies: a product that violates an actual legal limit cannot be certified regardless of HMTc status.",
+      "index_link_slug": "antimony"
     }
   ]
 }
