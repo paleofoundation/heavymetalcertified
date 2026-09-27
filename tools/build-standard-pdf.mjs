@@ -33,6 +33,7 @@ const ANALYTES = [
   ["MeHg", "Methylmercury (MeHg)"], ["Ni", "Nickel (Ni)"], ["Sn", "Tin (Sn)"],
   ["Al", "Aluminium (Al)"], ["Cr", "Total chromium (Cr)"], ["Cr-VI", "Hexavalent chromium (Cr-VI)"],
 ]
+const EXTRA_LABELS = { Sb: "Antimony (Sb)" }
 const JUR = { EU: "European Union", UK: "United Kingdom", CODEX: "Codex Alimentarius", US: "US FDA", CA: "Canada", "AU-NZ": "Australia / New Zealand", CN: "China", IN: "India", BR: "Brazil", GSO: "Gulf (GSO)", KR: "South Korea", MX: "Mexico", TR: "Türkiye", PY: "Paraguay", MERCOSUR: "Mercosur", IL: "Israel", TH: "Thailand", VN: "Vietnam", PH: "Philippines", SG: "Singapore", CL: "Chile", CO: "Colombia", PA: "Panama", HK: "Hong Kong", MA: "Morocco", international: "Codex / international" }
 const jl = (j) => JUR[j] || j || ""
 const fmtNum = (v) => (typeof v === "number" && Number.isFinite(v) ? v.toLocaleString("en-US") : String(v))
@@ -68,12 +69,15 @@ function publishedValue(c) {
 function cellKindOf(c) {
   return String((c && (c.type || c.cell_kind)) || "").toLowerCase()
 }
+function disclosedBasis(c) {
+  return c && c.binding_short ? String(c.binding_short).replace(/\|/g, "/") : ""
+}
 function cellRow([k, label], c, limitOverride) {
   if (!c) return `| ${label} | ${limitOverride ?? "—"} | not compiled |`
   const t = cellKindOf(c)
   const published = publishedValue(c)
   if (published != null) {
-    const basis = t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "form_split" ? "strictest government ML, set by product form" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level"
+    const basis = disclosedBasis(c) || (t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "form_split" ? "strictest government ML, set by product form" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level")
     return `| ${label} | ${limitOverride ?? fmtNum(published)} | ${basis} |`
   }
   if (limitOverride) return `| ${label} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
@@ -91,7 +95,7 @@ function derivRow([k, label], c) {
   const published = publishedValue(c)
   if (published != null) {
     const t = cellKindOf(c)
-    const src = t === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : t === "form_split" ? "strictest government ML, set by product form" : "government maximum level"
+    const src = disclosedBasis(c) || (t === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : t === "form_split" ? "strictest government ML, set by product form" : "government maximum level")
     return `| ${label} | ${fmtNum(published)} | ${src} |`
   }
   if (c.type === "subsumed") {
@@ -171,6 +175,12 @@ async function build(slug) {
     if (isTotalsOnlySlug(slug)) return isFirmClaimCell(cells[k])
     return true
   })
+  const known = new Set(ANALYTES.map(([k]) => k))
+  const extraAnalytes = Object.keys(cells)
+    .filter((k) => !known.has(k) && publishedValue(cells[k]) != null)
+    .map((k) => [k, EXTRA_LABELS[k] || k])
+  const tableAnalytes = claimAnalytes.concat(extraAnalytes)
+  const derivAnalytes = ANALYTES.concat(extraAnalytes)
   const title = (pfm.title || `${rec.name || slug}: HMTc Standard`).replace(/\s*[—–\-:]*\s*HMTc Standard.*$/i, "").trim()
   const basisRaw = String(pfm.native_basis || rec.native_basis || "as placed on market").toLowerCase().replace(/[_-]/g, " ")
   const basisLabel = /\bsold\b/.test(basisRaw) ? "as sold" : /\bconsumed\b/.test(basisRaw) ? "as consumed" : (basisRaw || "as placed on market")
@@ -182,8 +192,8 @@ async function build(slug) {
   // PDF face — both the scholarly "Cite as" block and the body citation. (S-DOI-OLIVE-DOI-SURFACE-1)
   const certDoi = pfm.cert_doi && String(pfm.cert_doi).toLowerCase() !== "null" ? String(pfm.cert_doi) : null
 
-  const limitRows = claimAnalytes.map((a) => cellRow(a, cells[a[0]], variants.length > 1 ? collapseLimitCell(variants, a[0]) : null)).join("\n")
-  const derivRows = ANALYTES.map((a) => derivRow(a, cells[a[0]])).join("\n")
+  const limitRows = tableAnalytes.map((a) => cellRow(a, cells[a[0]], variants.length > 1 ? collapseLimitCell(variants, a[0]) : null)).join("\n")
+  const derivRows = derivAnalytes.map((a) => derivRow(a, cells[a[0]])).join("\n")
   const variantNote = variants.length > 1
     ? `\nVariants on this standard: ${variants.map((v) => v.label).join(" and ")}. Where a cell differs between them the limit column shows both (value per variant); the derivation below is stated for ${variants[0].label}.`
     : ""

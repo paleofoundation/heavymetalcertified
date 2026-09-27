@@ -270,10 +270,83 @@
       "label": "Cr-VI 5 ug/kg: disclosed read-across from EU eu_2009_48_cat2_crvi_toy_migration (toys (accessible toy material); pacifiers/soothe). Direct species limit stricter than the parent-total bound; filled by the completeness sweep.",
       "substantiation": "Disclosed read-across, register-verified (eu_2009_48_cat2_crvi_toy_migration). Direct sovereign limit for this species, stricter than bounding it to its parent total. Not occurrence-derived.",
       "filled_by": "completeness-sweep"
+    },
+    "Sb": {
+      "comment": "ORDER SB-LIMIT-LOCK-1. The cell unit is ug/kg. Decision (EU) 2023/1809, Annex I criterion 7.3.8, less than 30 mg/kg total content in the final product, is entered as 30000. The source comparator is strictly less than. Migration and extractable limits measure different things and are not entered by that conversion.",
+      "type": "gov",
+      "disposition": "government-floor",
+      "value": 30000,
+      "value_exact": 30000,
+      "provenance": "regulatory-alignment. The compiled schema has no comparator field. The source comparator is strictly less than 30 mg/kg: Table 9 prints Antimony < 30 mg/kg, so 30000 ug/kg is not a less-than-or-equal ceiling. Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, Other chemicals of concern: This sub-criterion applies to impurities in the final product. The following chemicals shall not be present in the final product in a concentration higher than what indicated in Table 9. Antimony < 30 mg/kg. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1809",
+      "pass_fail": true,
+      "voluntary": true,
+      "unit": "ug/kg",
+      "binding_jurisdiction": "EU",
+      "binding_id": "eu_2023_1809_ahp_7_3_8",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1809",
+      "binding_short": "voluntary EU Ecolabel government floor, disclosed (Decision (EU) 2023/1809, criterion 7.3.8); strictly less than 30 mg/kg",
+      "comparator_note": "The source comparator is strictly less than 30 mg/kg total content.",
+      "criterion_text": "7.3.8. Other chemicals of concern. This sub-criterion applies to impurities in the final product. The following chemicals shall not be present in the final product in a concentration higher than what indicated in Table 9. Antimony < 30 mg/kg.",
+      "basis": "finished product, total antimony content, measurable directly on a wipe (ug/kg). Voluntary EU Ecolabel anchor, disclosed as such. Not a migration limit.",
+      "label": "Voluntary EU Ecolabel government floor, disclosed as such. Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8: total antimony in the final product strictly less than 30 mg/kg, entered as 30000 ug/kg. Measurable directly on a wipe.",
+      "substantiation": "The CEO decision adopts Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, as the antimony anchor for baby wipes. The EU Ecolabel is voluntary, and this cell discloses that. The criterion applies to impurities in the final product and prints Antimony < 30 mg/kg. That total-content figure is measurable directly on a wipe. Korea MFDS Notice No. 2026-23 (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018) is government precedent in baby products. For children's disposable diapers, harmful-element migration of antimony is 60 mg/kg or less, applied separately to the inner lining and the waterproof layer. Migration is a different test and is not this ceiling.",
+      "limit_value_field": "cells.Sb.value",
+      "candidates": [
+        {
+          "id": "eu_2023_1809_ahp_7_3_8",
+          "value": 30000,
+          "selected": true,
+          "note": "Decision (EU) 2023/1809, Annex I criterion 7.3.8, EU Ecolabel absorbent hygiene products: less than 30 mg/kg total content in the final product. Voluntary. Selected. Entered as 30000 ug/kg. Comparator is strictly less than.",
+          "unit_note": "mg/kg total content"
+        },
+        {
+          "id": "kr_mfds_2026_23_diaper_sb",
+          "value": null,
+          "selected": false,
+          "note": "Korea MFDS Notice No. 2026-23 (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018), section 13, children's disposable diapers: Sb 60 mg/kg or less by migration, inner lining and waterproof layer, each. Government precedent in baby products. Different test: migration, not total. Not selected.",
+          "unit_note": "mg/kg migration"
+        },
+        {
+          "id": "eu_2014_350_textile_polyester_total",
+          "value": null,
+          "selected": false,
+          "note": "Commission Decision 2014/350/EU, criterion 7(a): the level of antimony present in the polyester fibres shall not exceed 260 ppm. Recycled PET bottles are derogated. Not selected.",
+          "unit_note": "ppm total"
+        },
+        {
+          "id": "eu_2014_350_textile_extractable",
+          "value": null,
+          "selected": false,
+          "note": "Commission Decision 2014/350/EU, criterion 13, Appendix 1, point (iv) Extractable metals: antimony 30,0 mg/kg, extraction EN ISO 105-E04:2013 (acid sweat). Decision (EU) 2017/1392 left that antimony figure unchanged. Not selected.",
+          "unit_note": "mg/kg extractable"
+        },
+        {
+          "id": "us_no_federal_sb_diaper_wipe_textile",
+          "value": null,
+          "selected": false,
+          "note": "US: no federal limit for antimony in diapers, wipes or textiles.",
+          "unit_note": null
+        },
+        {
+          "id": "us_dw_mcl_sb",
+          "value": null,
+          "selected": false,
+          "note": "40 CFR 141.62(b)(11): antimony MCL 0.006 mg/L. Orientation only. Not selected.",
+          "unit_note": "mg/L"
+        },
+        {
+          "id": "eu_2020_2184_sb",
+          "value": null,
+          "selected": false,
+          "note": "Directive (EU) 2020/2184, Annex I, Part B: antimony parametric value 10 ug/L. Orientation only. Not selected.",
+          "unit_note": "ug/L"
+        }
+      ]
     }
   },
+  "revision_note": "ORDER SB-LIMIT-LOCK-1. Edition 2.0 sets cells.Sb.value and cells.Sb.value_exact to 30000 ug/kg, pass_fail true, on the voluntary EU Ecolabel government floor (Decision (EU) 2023/1809, Annex I criterion 7.3.8), disclosed as such. The source comparator is strictly less than 30 mg/kg. No other numeric cell is changed. No new DOI is deposited.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat2-config.json",
-  "version": "cat2-v1.0 (2026-08-17)",
+  "version": "cat2-v2.0 (2026-09-25)",
   "generated_at_note": "run date recorded in git commit; Date.now() intentionally not embedded"
 }

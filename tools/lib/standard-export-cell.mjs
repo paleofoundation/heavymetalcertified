@@ -22,7 +22,10 @@ export function normalizeCompiledCell(cell, nativeBasis, siblings = {}, analyte 
   const common = { value_record: numeric(cell.value), value_exact_record: numeric(cell.value_exact) ?? numeric(cell.value), unit, value_unit: unit || "compiled normalized units; see source basis", source_native_basis: nativeBasis, value_ppb: isPpbUnit(unit) ? numeric(cell.value) : null, value_exact_ppb: isPpbUnit(unit) ? numeric(cell.value_exact) ?? numeric(cell.value) : null, native_basis: nativeBasis, basis_note: cell.basis_note || cell.basis || null }
   const citation = { controlling_jurisdiction: cell.binding_jurisdiction || cell.source_jurisdiction || null, controlling_instrument: cell.binding_id || cell.source_id || null }
   let result
-  if (type === "precautionary" || cell.provenance === "precautionary") {
+  if (type === "pending" || cell.pending === true) {
+    if (cell.pass_fail === true) throw new Error(`Pending cell cannot be included in pass/fail: ${analyte || "cell"}`)
+    result = { ...common, value_record: null, value_exact_record: null, value_ppb: null, value_exact_ppb: null, status: "pending", control_basis: "excluded-from-pass-fail", rationale_tag: "pending", pass_fail: false, rationale: clean(cell.label || cell.pending_marker) || "PENDING CEO DECISION. Excluded from pass/fail until a numeric limit is set." }
+  } else if (type === "precautionary" || cell.provenance === "precautionary") {
     result = { ...common, status: "precautionary", control_basis: "precautionary", rationale_tag: "precautionary", sovereign_floor: cell.sovereign_floor || null, rationale: clean(cell.rationale || cell.label), ...citation }
   } else if (type === "subsumed" || cell.provenance === "subsumed") {
     const parent = cell.subsumed_by || cell.bounded_by

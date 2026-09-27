@@ -225,6 +225,17 @@ function buildCompiledStandard(page, compiledSubdir, extra) {
 }
 
 function normalizeCompiledCell(cell, nativeBasis) {
+  if (cell.type === "pending" || cell.pending === true) {
+    return {
+      status: "pending",
+      value_ppb: null,
+      value_exact_ppb: null,
+      pass_fail: false,
+      native_basis: nativeBasis,
+      control_basis: "excluded-from-pass-fail",
+      rationale: trimText(cell.label) || trimText(cell.pending_marker) || "PENDING CEO DECISION. Excluded from pass/fail until a numeric limit is set.",
+    }
+  }
   if (cell.type === "subsumed") {
     return {
       status: "bounded_by_parent",

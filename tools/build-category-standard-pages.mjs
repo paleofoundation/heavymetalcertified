@@ -141,6 +141,10 @@ const jlabel = (j) => JUR_LABEL[j] || j
 
 // --- binding-basis label per cell ---------------------------------------------
 function bindingLabel(cell) {
+  if (cell.type === "gov" && cell.source_url) {
+    const txt = esc(cell.binding_short || "voluntary government floor, disclosed")
+    return `<a href="${esc(cell.source_url)}" style="color:${LINK};text-decoration:none">${txt}</a>`
+  }
   if (cell.type === "gov") {
     const href = regForCell(cell, cell.binding_jurisdiction)
     const txt = `strictest government ML (${jlabel(cell.binding_jurisdiction)})`
@@ -157,7 +161,42 @@ function bindingLabel(cell) {
   if (cell.type === "screen") return "screening ceiling — Cr(VI) is the binding health control (see note)"
   if (cell.type === "subsumed") return `&le; total ${esc(cell.subsumed_by || "parent total")}, measured every lot (see note)`
   if (cell.type === "form_split") return "strictest government ML, set by product form (see derivation)"
+  if (isPendingCell(cell)) return "PENDING CEO DECISION; excluded from pass/fail until a value is set"
   return "&mdash;"
+}
+
+// A placeholder cell (type pending, pass_fail not true) is visible and is not a
+// certification ceiling. It stays out of firm, control, and claim-surface counts.
+function isPendingCell(c) {
+  return !!(c && (c.type === "pending" || c.pending === true) && c.pass_fail !== true)
+}
+
+function extraPending(cells) {
+  if (!cells) return []
+  return Object.keys(cells).filter((a) => isPendingCell(cells[a]) && !PANEL.includes(a))
+}
+
+// Compiled analytes outside the category panel still have to reach the page.
+// A pending extra stays out of pass/fail. A numeric extra (antimony on baby wipes)
+// prints its ceiling and stays additional to the 9-of-11 count.
+function extraAnalytes(cells) {
+  if (!cells) return []
+  return Object.keys(cells).filter((a) => cells[a] && !PANEL.includes(a))
+}
+
+function extraNote(cells, extras) {
+  const bits = []
+  for (const a of extras) {
+    const c = cells[a]
+    const name = ANALYTE[a] || a
+    if (isPendingCell(c)) {
+      bits.push(`${name} is listed pending a decision and is excluded from pass/fail until a numeric limit is set. It is not included in the analyte count above.`)
+    } else if (c && c.value != null) {
+      const cmp = c.comparator_note ? ` ${c.comparator_note}` : ""
+      bits.push(`${name} carries the published ceiling ${c.value}.${cmp} It is included in pass/fail and is additional to the analyte count above.`)
+    }
+  }
+  return bits.length ? ` ${bits.join(" ")}` : ""
 }
 
 // Collapse one analyte across variants into a single display value ("X" or "X lab1 / Y lab2").
@@ -167,6 +206,7 @@ function limitDisplay(analyte, variants) {
     if (!p.val) return "&mdash;"
     if (p.val.type === "form_split") return formRange(p.val)
     if (p.val.type === "screen") return "screen"
+    if (isPendingCell(p.val)) return "PENDING CEO DECISION"
     if (p.val.value == null) {
       if (p.val.type === "not_material") return "n/m"
       if (p.val.type === "control") return "control"
@@ -191,7 +231,9 @@ function claimPanelOf(cells) {
 }
 
 function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
-  const rows = claimPanel.map((a, i) => {
+  const extras = extraAnalytes(variants[0].cells).filter((a) => !claimPanel.includes(a))
+  const rowsPanel = [...claimPanel, ...extras]
+  const rows = rowsPanel.map((a, i) => {
     const cell0 = variants[0].cells[a]
     const zebra = i % 2 === 1 ? ";background:#fbf7f5" : ""
     return `<tr style="border-bottom:1px solid #f2ece7${zebra}"><td style="padding:10px 15px;color:#2b1f1f">${ANALYTE[a] || a}</td><td style="padding:10px 15px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f">${limitDisplay(a, variants)}</td><td style="padding:10px 15px;color:#736b6b;font-size:12.5px">${bindingLabel(cell0)}</td></tr>`
@@ -210,7 +252,8 @@ function masterTable(variants, basisWord, tierNote, firmCount, claimPanel) {
     : controlCount === 0
     ? `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; the remaining ${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), so every analyte carries an enforceable ceiling. A brand meeting every value on a like-for-like basis qualifies for the mark.`
     : `${firmCount} of ${claimPanel.length} analytes carry a firm ceiling; ${boundedCount ? `${boundedCount} are toxic species bounded by their parent totals (species &le; total, measured on every lot), and ` : ""}the remaining ${controlCount} are governed by mandatory control or the total-metal screen with no standalone number, itemised in the derivation below. A brand meeting every firm value on a like-for-like basis, and passing every control, qualifies for the mark.`
-  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
+  const pendingNote = extraNote(variants[0].cells, extras)
+  return `<section id="limits" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">Master Limit Table</h2><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:0 0 14px">All values in ppb (&micro;g/kg), ${basisWord} basis. ${capNote}${pendingNote}</p><div style="overflow-x:auto"><table style="width:100%;font-size:13.5px;border:1px solid #e8e1db;min-width:48rem;border-collapse:collapse"><thead><tr style="background:${ACCENT};color:#fff"><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Analyte</th><th style="text-align:right;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">HMTc limit</th><th style="text-align:left;padding:11px 15px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase">Binding basis</th></tr></thead><tbody>${rows}</tbody></table></div><p style="font-size:11.5px;line-height:1.55;color:#a9a1a1;max-width:84ch;margin:14px 0 0">${tierNote}</p></section>`
 }
 
 // --- Derivation (per-country) table -------------------------------------------
@@ -220,7 +263,8 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
   const cols = JUR_ORDER.filter((j) => present.has(j)).concat([...present].filter((j) => !JUR_ORDER.includes(j)))
   const th = cols.map((j) => { const h = reg(j); const lbl = jlabel(j); return `<th style="text-align:right;padding:9px 10px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500">${h ? `<a href="${h}" style="color:#fff;text-decoration:underline;text-underline-offset:2px">${lbl}</a>` : lbl}</th>` }).join("")
   let anyConv = false, anyControl = false, anySubsumed = false
-  const body = PANEL.map((a) => {
+  const analytes = PANEL.concat(extraAnalytes(primary.cells))
+  const body = analytes.map((a) => {
     const c = primary.cells[a]
     const tds = cols.map((j) => {
       const pc = c && c.per_country && c.per_country[j]
@@ -244,6 +288,7 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       binds = `species &le; ${esc(c.subsumed_by || "total")}`
       anySubsumed = true
     }
+    else if (isPendingCell(c)) { hmtc = "PENDING CEO DECISION"; binds = "excluded from pass/fail" }
     else if (c.value == null && c.type !== "not_material") { hmtc = "&mdash;"; binds = "&mdash;" }
     else if (c.type === "read_across") {
       // Method v2.0 retired the occurrence-selected and precautionary numeric pathways. A record
@@ -256,7 +301,11 @@ function derivationTable(primary, basisWord, subName, otherNote, reconNote) {
       hmtc = `${c.value}&sup2;`; binds = "read-across"
     }
     else if (c.type === "not_material") { hmtc = "n/m&sup3;"; binds = "controlled" }
-    else { hmtc = String(c.value); const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    else {
+      hmtc = String(c.value)
+      if (c.source_url) binds = `<a href="${esc(c.source_url)}" style="color:${LINK};text-decoration:none">${esc(c.binding_short || "voluntary government floor")}</a>`
+      else { const h = regForCell(c, c.binding_jurisdiction); binds = h ? `<a href="${h}" style="color:${LINK};text-decoration:none">${jlabel(c.binding_jurisdiction)}</a>` : jlabel(c.binding_jurisdiction) }
+    }
     return `<tr style="border-bottom:1px solid #f2ece7"><td style="padding:9px 12px;color:#2b1f1f">${ANALYTE[a] || a}</td>${tds}<td style="padding:9px 12px;text-align:right;font-family:'IBM Plex Mono',monospace;color:#2b1f1f;font-weight:500;background:#fbf7f5">${hmtc}</td><td style="padding:9px 12px;color:#736b6b;font-size:11.5px">${binds}</td></tr>`
   }).join("")
   const convNote = (anyConv && reconNote) ? "&sup1; basis-converted at the 8:1 powder-to-liquid ratio &mdash; the only such ratio a government legislates (China GB 2762 footnote c). " : ""
@@ -421,7 +470,7 @@ for (const page of DOC.pages) {
     `methodology_version: "${META.methodology_version}"`,
     `variant_type: ${page.variant_type || "whole_row_platform"}`,
     ...(page.hmi_link ? [`hmi_literature_link: ${page.hmi_link}`] : []),
-    `effective_date: ${META.effective_date}`,
+    `effective_date: ${page.effective_date || META.effective_date}`,
     'author: "Karen Pendergrass"',
     // Highwire + ScholarlyArticle emit for type:standard on /standards/{slug}
     // regardless of this flag (HMTC-SCHOLAR-META-1). scholar_eligible stays
@@ -431,7 +480,7 @@ for (const page of DOC.pages) {
     "audience: [regulator, brand-legal, retailer-compliance, certifier]",
     "rail_box:",
     '  title: "Document versions"',
-    `  body: "v${vshort} · ${META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
+    `  body: "v${vshort} · ${page.effective_date || META.effective_date} · current. Every edition is dated and kept at a stable permalink; earlier editions and their DOIs appear here as the standard revises. Full change history below."`,
     "snapshot:",
     `  - { k: "Analytes limited", v: "${firmCount} / ${claimPanel.length}" }`,
     `  - { k: "Method", v: "${META.method_label || "Strictest government ML"}" }`,
@@ -460,7 +509,9 @@ for (const page of DOC.pages) {
     occurrence: OCC, categoryDirName: META.compiled_dir, LINK, ACCENT,
   })
   const body = [
-    methodSection(page.name, basisWord, META.method_prose),
+    // A page may carry its own method_prose (baby wipes, restyled to the briefing
+    // house voice); every other page keeps the shared category prose.
+    methodSection(page.name, basisWord, page.method_prose || META.method_prose),
     masterTable(variants, basisWord, GATE_NOTE, firmCount, claimPanel),
     derivation,
     occSection,

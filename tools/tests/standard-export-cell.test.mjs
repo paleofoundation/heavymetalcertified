@@ -81,6 +81,50 @@ test("descriptive cell basis preserves the vetted record unit; baseline screens 
   assert.equal(isFirmExportCell(normalize({ type: "baseline_screen", value: 2, reference_method: "Named source method", loq_source_id: "source-1" }, "as_sold")), true)
 })
 
+test("the locked antimony cell exports 30000 ug/kg as a government floor", () => {
+  const c = normalize({
+    type: "gov",
+    disposition: "government-floor",
+    value: 30000,
+    value_exact: 30000,
+    pass_fail: true,
+    unit: "ug/kg",
+    voluntary: true,
+    binding_jurisdiction: "EU",
+    binding_id: "eu_2023_1809_ahp_7_3_8",
+    provenance: "regulatory-alignment. Antimony < 30 mg/kg. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1809",
+  }, "finished product, total antimony content, measurable directly on a wipe (ug/kg)", {}, "Sb")
+  assert.equal(c.status, "published")
+  assert.equal(c.value_ppb, 30000)
+  assert.equal(c.value_exact_ppb, 30000)
+  assert.equal(c.control_basis, "government-limit")
+  assert.equal(c.controlling_instrument, "eu_2023_1809_ahp_7_3_8")
+  assert.equal(isFirmExportCell(c), true)
+})
+
+test("a pending cell exports no ceiling and cannot pass or fail", () => {
+  const c = normalize({
+    type: "pending",
+    pending: true,
+    pass_fail: false,
+    value: null,
+    value_exact: null,
+    unit: "ug/kg",
+    pending_marker: "PENDING CEO DECISION",
+    label: "PENDING CEO DECISION. Excluded from pass/fail until a value is set.",
+  }, "finished cosmetic as placed on market (total content, ug/kg of product as sold)", {}, "Sb")
+  assert.equal(c.status, "pending")
+  assert.equal(c.value_ppb, null)
+  assert.equal(c.value_record, null)
+  assert.equal(c.pass_fail, false)
+  assert.equal(c.control_basis, "excluded-from-pass-fail")
+  assert.equal(isFirmExportCell(c), false)
+  const leaked = normalize({ type: "pending", pending: true, pass_fail: false, value: 30, unit: "ug/kg" }, "as_sold", {}, "Sb")
+  assert.equal(leaked.value_ppb, null)
+  assert.equal(isFirmExportCell(leaked), false)
+  assert.throws(() => normalize({ type: "pending", pass_fail: true, value: 30 }, "as_sold", {}, "Sb"), /cannot be included in pass\/fail/)
+})
+
 test("the screen flag preserves screening even in a provenance-schema record", () => {
   const c = normalize({ provenance: "regulatory-alignment", screen: true, value: 50 }, "as_sold")
   assert.equal(c.status, "screen")

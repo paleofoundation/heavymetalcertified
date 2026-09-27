@@ -23,8 +23,6 @@ import {
   View,
   Text,
   Link,
-  Svg,
-  Path,
   StyleSheet,
   renderToFile,
 } from "@react-pdf/renderer"
@@ -317,24 +315,21 @@ function buildModel(fm, body, cfg) {
 
   const references = cfg.references || parseRefs(sections.find((s) => /^references$/i.test(s.heading)))
 
-  // Certification standards are network-locked to All-rights-reserved
-  // (ORDER S-DOI-CITE-LICENSE-1 / S-DOI-CITE-APA-1): Cite-as uses the APA
-  // "Standard No." form with the doi.org URL only (never the page URL, never
-  // "registration pending"), carries no CC BY, and never glues the licence
-  // onto the cite line.
-  // Program Manuals (HMTC-MANUAL-CITE-NO-STANDARD-NO-1): APA title + publisher
-  // + doi.org. Never Standard No. / Manual No. Never page URL as cite URL.
-  // Other scholarly PDFs (briefings) keep their APA prose cite + CC BY.
+  // Standards, manuals, and briefings are All-rights-reserved
+  // (ORDER S-DOI-CITE-LICENSE-1 / S-DOI-CITE-APA-1 / LICENCE-LOCK-HMTC-1).
+  // Cite-as for a standard uses the APA "Standard No." form with the doi.org
+  // URL only (never the page URL, never "registration pending"). A manual uses
+  // APA title + publisher + doi.org (HMTC-MANUAL-CITE-NO-STANDARD-NO-1): never
+  // Standard No. / Manual No., never the page URL as the cite URL. A briefing
+  // keeps its APA prose cite. The licence is never glued onto the cite line.
   const isManual = cfg.pathSeg === "manuals"
   const isStandard = cfg.pathSeg === "standards" || isManual
   const yr = year || "2026"
   const citeAs = isStandard
     ? houseApaCite({ title, year: yr, doi, kind: isManual ? "manual" : "standard" })
-    : `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")} CC BY 4.0.`
-  const licenseLine = isStandard
-    ? `© ${yr} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`
-    : "CC BY 4.0"
-  const footerLicense = isStandard ? "© All rights reserved" : "CC BY 4.0"
+    : `Pendergrass, K.${year ? " (" + year + ")." : ""} ${title}. Heavy Metal Certified.${doi ? " https://doi.org/" + doi : (url ? " " + url : "")}`
+  const licenseLine = `© ${yr} Institute of Contaminant Standards / Heavy Metal Certified. All rights reserved.`
+  const footerLicense = "© All rights reserved"
   const footerCite = isManual
     ? houseFooterCite({ label: "Heavy Metal Certified", edition: title, doi, reserved: footerLicense, kind: "manual" })
     : `Heavy Metal Certified  ·  ${url}  ·  ${footerLicense}`
@@ -346,9 +341,9 @@ function buildModel(fm, body, cfg) {
     masthead: cfg.masthead,
     dateLabel: monthYear(updated || established),
     title,
-    // The ORCID iD is shown as the official green iD glyph linked to the record
-    // (the journal-byline convention), not the spelled-out number; the
-    // identifier lives on the link target. Rendered as a row in ScholarlyDocument.
+    // The ORCID iD is printed as text between the name and the affiliation so
+    // extracted PDF text never has an empty token (two separators in a row).
+    // The identifier is also the link target.
     authorLine: {
       name: "Karen Pendergrass",
       affil: "Heavy Metal Tested & Certified, Institute of Contaminant Standards",
@@ -536,7 +531,7 @@ function FrontMatter(m) {
     h(View, { key: "cite", style: s.frontBlock }, [
       h(Text, { key: "l", style: s.label }, "Cite as"),
       h(Text, { key: "t", style: s.frontText }, m.citeAs),
-      ...(m.isStandard ? [h(Text, { key: "lic", style: [s.frontText, { marginTop: 4 }] }, m.licenseLine)] : []),
+      h(Text, { key: "lic", style: [s.frontText, { marginTop: 4 }] }, m.licenseLine),
     ]),
     h(View, { key: "corr", style: s.frontBlock }, [
       h(Text, { key: "l", style: s.label }, "Correspondence"),
@@ -575,7 +570,7 @@ function BackMatter(m) {
   const blocks = [
     ["Status and licence", m.isStandard
       ? `A normative certification standard, editorially reviewed and version-controlled in-house; every value traces to a named sovereign maximum level, disclosed in the derivation. ${m.licenseLine}`
-      : `Editorially reviewed in-house; no external peer review has been completed on this ${finding}. Published as a preprint with its review state tracked on the article page. Released under CC BY 4.0.`],
+      : `Editorially reviewed in-house; no external peer review has been completed on this ${finding}. Published as a preprint with its review state tracked on the article page. ${m.licenseLine}`],
     ["Competing interests", "This briefing is published by the Heavy Metal Tested & Certified (HMTc) program, operated by the Institute of Contaminant Standards. Its statements about government regulations, toxicology, and occurrence are sourced to the cited primary and expert-body records and to the independently maintained Heavy Metal Index; the program's own certification thresholds are not used as evidence for any factual claim made here."],
     ["Data availability", `The works this ${finding} draws on are listed in full in the references above and on the briefing page at ${m.url}. Primary legal instruments and expert-body assessments are named with their public identifiers; the underlying occurrence and toxicology corpus is maintained on the Heavy Metal Index.`],
     ["Publication history", `${m.firstPublished ? "First published " + m.firstPublished + ". " : ""}${m.revision ? "This revision " + m.revision + ". " : ""}The full dated record is maintained at ${m.url}.`],
@@ -595,36 +590,6 @@ function BackMatter(m) {
   ])
 }
 
-// The official ORCID iD icon (green disc + "iD") drawn with react-pdf vector
-// primitives and wrapped in a Link to the record, so a reader clicks the glyph
-// to reach the ORCID profile — the customary journal-PDF treatment, replacing
-// the spelled-out identifier.
-function OrcidBadge(orcid, key) {
-  const SIZE = 8.5
-  return h(
-    Link,
-    { key, src: `https://orcid.org/${orcid}`, style: s.orcidBadge },
-    h(Svg, { width: SIZE, height: SIZE, viewBox: "0 0 256 256" }, [
-      h(Path, {
-        key: "disc",
-        fill: "#A6CE39",
-        d: "M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z",
-      }),
-      h(Path, { key: "i", fill: "#FFFFFF", d: "M86.3,186.2H70.9V79.1h15.4v48.4V186.2z" }),
-      h(Path, {
-        key: "d",
-        fill: "#FFFFFF",
-        d: "M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z",
-      }),
-      h(Path, {
-        key: "dot",
-        fill: "#FFFFFF",
-        d: "M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1C84.2,46.7,88.7,51.3,88.7,56.8z",
-      }),
-    ]),
-  )
-}
-
 function ScholarlyDocument(m) {
   const children = [
     h(View, { key: "mr", style: s.mastheadRow }, [
@@ -632,10 +597,14 @@ function ScholarlyDocument(m) {
       m.dateLabel ? h(Text, { key: "d", style: s.mastheadDate }, m.dateLabel) : null,
     ]),
     h(Text, { key: "t", style: s.title }, m.title),
-    h(View, { key: "a", style: s.authorRow }, [
-      h(Text, { key: "n", style: s.authorText }, `${m.authorLine.name} ·`),
-      OrcidBadge(m.authorLine.orcid, "orcid"),
-      h(Text, { key: "aff", style: s.authorText }, `· ${m.authorLine.affil}`),
+    h(Text, { key: "a", style: s.authorLine }, [
+      `${m.authorLine.name} · `,
+      h(
+        Link,
+        { key: "orcid", src: `https://orcid.org/${m.authorLine.orcid}`, style: s.authorText },
+        m.authorLine.orcid,
+      ),
+      ` · ${m.authorLine.affil}`,
     ]),
     m.gradeLine ? h(Text, { key: "g", style: s.gradeLine }, m.gradeLine) : null,
     h(View, { key: "rule", style: s.ruleBurgundy }),
