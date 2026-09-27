@@ -509,7 +509,9 @@ for (const page of DOC.pages) {
     occurrence: OCC, categoryDirName: META.compiled_dir, LINK, ACCENT,
   })
   const body = [
-    methodSection(page.name, basisWord, META.method_prose),
+    // A page may carry its own method_prose (baby wipes, restyled to the briefing
+    // house voice); every other page keeps the shared category prose.
+    methodSection(page.name, basisWord, page.method_prose || META.method_prose),
     masterTable(variants, basisWord, GATE_NOTE, firmCount, claimPanel),
     derivation,
     occSection,

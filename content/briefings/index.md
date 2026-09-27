@@ -153,7 +153,7 @@ connections:
       <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:4px 0;text-align:center">Brief 13</span>
       <span style="min-width:0">
         <span style="display:block;font-family:Lora,serif;font-size:21px;line-height:1.3;color:#9f2727">Why the Baby-Wipes Standard Adds Antimony</span>
-        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Version 2 adds antimony to the baby-wipes standard, held below the voluntary EU Ecolabel floor of 30 mg/kg total content in the finished product and included in pass/fail on every certified lot.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+        <span style="display:block;font-size:14px;line-height:1.65;color:#3f3a3a;max-width:60ch;margin-top:8px">Version 2 adds antimony to the baby-wipes standard, held below the voluntary EU Ecolabel floor of 30 mg/kg total content in the finished product and included in pass/fail.</span><span style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Scope</span>
           <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:3px 8px;white-space:nowrap">Regulatory</span>
         </span>
