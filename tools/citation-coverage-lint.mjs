@@ -83,17 +83,18 @@ const BACKLOG = new Set([
   "why-we-limit/aluminum.md", "why-we-limit/arsenic.md", "why-we-limit/cadmium.md", "why-we-limit/chromium.md",
   "why-we-limit/lead.md", "why-we-limit/mercury.md", "why-we-limit/nickel.md", "why-we-limit/tin.md",
   "requirements/baby-food-heavy-metals.md", "requirements/california-baby-food-testing.md",
-  "requirements/maryland-baby-food-testing.md", "requirements/private-label-manufacturers.md",
-  "requirements/retailers.md", "requirements/supplements-heavy-metals.md",
+  "requirements/maryland-baby-food-testing.md", "requirements/supplements-heavy-metals.md",
 ])
 
-// Pure-process / how-we-work program pages describe the program's own process, not
-// external measured claims, so they are exempt (same class as index/nav) per the
-// locked scope. "program" stays in the cite rule so a future claim-bearing program
-// page is still caught.
-const PROCESS_EXEMPT = new Set([
+// Pages out of the cite scope: pure-process / how-we-work program pages (the program's
+// own process, not external measured claims) and audience-landing requirement pages
+// (who-needs-certification positioning) — same class as index/nav. The "program" and
+// "requirements" types stay in the cite rule so a future claim-bearing page of either
+// is still caught.
+const SCOPE_EXEMPT = new Set([
   "program/corrective-action.md", "program/readiness.md", "program/remediation.md",
   "program/structure.md", "program/two-pathways.md",
+  "requirements/private-label-manufacturers.md", "requirements/retailers.md",
 ])
 
 const APPARATUS = /href="#ref-|<sup[^>]*class="[^"]*cite|^##\s*references\b/im
@@ -122,7 +123,7 @@ function fmType(fm) {
 }
 
 function isExemptPage(slug, base, fm) {
-  if (PROCESS_EXEMPT.has(slug)) return true
+  if (SCOPE_EXEMPT.has(slug)) return true
   if (base === "index.md") return true
   if (/(^|\/)index\.md$/.test(slug)) return true
   if (/-index$|^index$/.test(fmType(fm))) return true
