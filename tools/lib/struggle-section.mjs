@@ -181,6 +181,12 @@ export function renderRiskFlagForStandard({ slug, name, cells, occurrence, categ
   const curated = CURATED_PROCESS_RISK[slug]
 
   if (!flags.length && !curated) {
+    // Baby wipes: the post-ingest screens are real, and they are not on the
+    // finished-product total-content basis the antimony cell uses. Do not print
+    // the generic "no systematic gap" sentence over datasets that cannot be scored.
+    if (slug === "baby-wipes") {
+      return `${head}<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px">The published wipe measurements are not on the finished-product total-content basis this antimony ceiling uses, so they are not scored as a gap between typical market levels and the limit. Screened component totals, digest concentrations, an annex read in micrograms per litre, and a split of lotion, fiber, and packaging are recorded in the <a href="/briefings/why-baby-wipes-standard-adds-antimony" style="color:${LINK}">companion briefing</a>. A concentration in one of those datasets is not a dose. Certification is decided on a product&rsquo;s own tested result, not on a distribution, so an individual lot can still exceed a limit.</p><p style="font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0">See <a href="/hard-to-meet" style="color:${LINK}">the cross-category summary</a> of the ingredients that most often struggle.</p></section>`
+    }
     return `${head}<p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px">On the published occurrence literature to date, ${esc(name)} shows no systematic gap between typical market levels and the limit &mdash; the limit being the strictest government maximum for the product (Method v2.0). Certification is decided on a product&rsquo;s own tested result, not on a distribution; an individual lot or supplier can still exceed a limit.</p><p style="font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0">See <a href="/hard-to-meet" style="color:${LINK}">the cross-category summary</a> of the ingredients that most often struggle.</p></section>`
   }
 

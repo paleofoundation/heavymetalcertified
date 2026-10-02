@@ -5,8 +5,8 @@
   "method": "HMTc Method v2.0 (government-limit default; selective occurrence pooling for priority toxics and no-ML cells)",
   "firewall_note": "HMT&C occurrence + derivation asset. Renders on heavymetalcertified.com only. The derivation (pooled percentile -> limit -> rationale) must never appear on a heavymetalindex.com URL. Occurrence findings are literature, cited one-way to the index source pages.",
   "counts": {
-    "cells": 757,
-    "with_occurrence": 603,
+    "cells": 758,
+    "with_occurrence": 604,
     "not_material": 50,
     "not_material_with_contradiction": 22
   },
@@ -2187,6 +2187,62 @@
           "value_ppb": 3000,
           "source_id": "hc_cosmetic_cd_3ppm",
           "jurisdiction": null
+        },
+        "percentile": null,
+        "rationale_tag": "regulatory-alignment",
+        "not_material": null,
+        "contradiction": null
+      }
+    },
+    "baby-wipes|Sb": {
+      "row_slug": "baby-wipes",
+      "analyte": "Sb",
+      "row_label": "Baby Wipes",
+      "occurrence": {
+        "has_data": true,
+        "n_studies": 4,
+        "n_samples": null,
+        "unit": "mixed",
+        "sources": [
+          {
+            "id": "stone2021-wa-metals-childrens-consumer-products",
+            "cite": "Stone 2021",
+            "title": "Metals in children's and consumer products and packaging, Publication 14-04-014, revised June 2021. Total elemental antimony at 40.6, 61.3, and 70.6 ppm in three screened baby-wipe components, and 95.8 ppm in moist baby-wipes packaging. Not a candidate limit.",
+            "year": 2021,
+            "source_url": "https://heavymetalindex.com/sources/stone2021-wa-metals-childrens-consumer-products"
+          },
+          {
+            "id": "choi2016-wet-wipes-nonwoven-heavy-metals",
+            "cite": "Choi 2016",
+            "title": "Determination of heavy metals on the non-woven in wet wipes using ICP-MS. Digest concentrations in µg/L, not a sheet total in mg/kg. Not a candidate limit.",
+            "year": 2016,
+            "doi": "10.12925/jkocs.2016.33.1.195",
+            "doi_url": "https://doi.org/10.12925/jkocs.2016.33.1.195",
+            "source_url": "https://heavymetalindex.com/sources/choi2016-wet-wipes-nonwoven-heavy-metals"
+          },
+          {
+            "id": "cpqs2026-online-baby-wipes-quality-monitoring",
+            "cite": "CPQS 2026",
+            "title": "Quality monitoring results for baby wet wipes sold online, 2 April 2026. Preferred annex reads 15.02 to 450.45 µg/L. Not a sheet concentration. Not a candidate limit.",
+            "year": 2026,
+            "source_url": "https://heavymetalindex.com/sources/cpqs2026-online-baby-wipes-quality-monitoring"
+          },
+          {
+            "id": "gocer2025-baby-wet-wipes-solution-fiber-packaging",
+            "cite": "Göçer 2025",
+            "title": "Evaluation of the liquid, fiber and packaging content of baby wet wipes for heavy metal contamination. Instrument ppb for lotion, fiber, and packaging. Not a sheet concentration. Not a candidate limit.",
+            "year": 2025,
+            "source_url": "https://heavymetalindex.com/sources/gocer2025-baby-wet-wipes-solution-fiber-packaging"
+          }
+        ],
+        "note": "Four bases. Not pooled. Not a candidate limit.",
+        "n_samples_basis": "not pooled; units are not interchangeable"
+      },
+      "derivation": {
+        "government_ml": {
+          "value_ppb": 30000,
+          "source_id": "eu_2023_1809_ahp_7_3_8",
+          "jurisdiction": "EU"
         },
         "percentile": null,
         "rationale_tag": "regulatory-alignment",

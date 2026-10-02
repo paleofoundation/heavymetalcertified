@@ -251,6 +251,7 @@
       "description": "The Heavy Metal Tested & Certified heavy-metal-safety standard for baby wipes in Infant and Child Personal Care (Ages 0-5). Version 2 adds antimony at 30000 µg/kg, strictly less than 30 mg/kg total content in the finished product, anchored on the voluntary EU Ecolabel in Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, and disclosed as such.",
       "version": "2.0 (2026-09-25)",
       "effective_date": "2026-09-25",
+      "hmi_link": "https://heavymetalindex.com/synthesis/heavy-metals-in-baby-wipes",
       "connections": [
         {
           "label": "How limits are derived",
@@ -259,6 +260,14 @@
         {
           "label": "Why antimony is on this standard",
           "href": "/briefings/why-baby-wipes-standard-adds-antimony"
+        },
+        {
+          "label": "Heavy Metal Index: heavy metals in baby wipes",
+          "href": "https://heavymetalindex.com/synthesis/heavy-metals-in-baby-wipes"
+        },
+        {
+          "label": "Heavy Metal Index: antimony in baby products",
+          "href": "https://heavymetalindex.com/synthesis/antimony-in-baby-products"
         },
         {
           "label": "Regulation references (source documents)",
@@ -281,7 +290,10 @@
         "The register does not support a number for every cell. Five of the eleven panel cells have no sovereign finished-cosmetic maximum anywhere in the register, and they are published as controls rather than as invented ceilings: inorganic arsenic (no jurisdiction speciates arsenic in a cosmetic, so it is bounded by the binding total-arsenic ceiling), tin, aluminium, total chromium and hexavalent chromium. The only hexavalent-chromium number in the cosmetic instrument family is EU REACH entry 2020/2081 at 500 µg/kg, which is scoped to mixtures injected intradermally for tattooing and permanent make-up, a different exposure route, a different product class and a different risk basis, and it is not read across onto surface-applied children's cosmetics.",
         "The only total-chromium, tin and aluminium numbers are EU Toy Safety Directive 2009/48 and ASTM F963 element-migration limits, which are numerically incomparable to a total-content cosmetic limit. Control is the correct fail-safe for all five: testing is mandatory, the analytical method and the escalation rule are published, and no ceiling is fabricated.",
         "One register gap is worth recording. Sri Lanka SLS 187:2025 is the only child-scoped cosmetic instrument in the register (skin powder for children, talc-base and starch-base), but every one of its rows carries the status 'draft guidance; not for implementation' and is gated out by the compiler, so it anchors nothing here.",
-        "Its published values (lead 10 mg/kg, cadmium 3 mg/kg, arsenic 1.5 mg/kg, mercury 1 mg/kg) are in every case looser than the German BVL general-cosmetic tier this standard binds, so no protection is lost by its exclusion; it is recorded as a register gap for verified re-ingest, not as a missed stricter anchor. The US FDA draft cosmetic lead guidance (10 mg/kg) is gated for the same reason and is likewise looser."
+        "Its published values (lead 10 mg/kg, cadmium 3 mg/kg, arsenic 1.5 mg/kg, mercury 1 mg/kg) are in every case looser than the German BVL general-cosmetic tier this standard binds, so no protection is lost by its exclusion; it is recorded as a register gap for verified re-ingest, not as a missed stricter anchor. The US FDA draft cosmetic lead guidance (10 mg/kg) is gated for the same reason and is likewise looser.",
+        "An evidence note dated 2 October 2026 brings this page current with the Heavy Metal Index record ingested after 26 September 2026. The antimony ceiling is unchanged: 30000 µg/kg, strictly less than 30 mg/kg total content in the finished product, from Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, Table 9. The legal instrument text has not changed. No new DOI is deposited. Occurrence figures do not set the cell.",
+        "Four datasets measure antimony in wipes, each on its own basis, and none is a candidate limit. Washington Publication 14-04-014 reports 40.6, 61.3, and 70.6 ppm in three screened baby-wipe components and 95.8 ppm in moist baby-wipes packaging. Choi, Song, and Kim 2016 print digest concentrations in µg/L, not a sheet total in mg/kg. The 2 April 2026 China annex preferred reads run from 15.02 to 450.45 µg/L. Göçer 2025 separates lotion, fiber, and packaging and prints instrument ppb, including solution antimony of 695.40 ppb, with no made-up final volume. A concentration is not a dose, and the Index ranks no brands.",
+        "Three impurity figures are on the record and are not selected. Health Canada guidance treats antimony above 5 ppm in a finished cosmetic as technically avoidable. It is guidance, and the indexed text does not name wipes. Korea's cosmetic safety standard sets antimony at or below 10 µg/g and gives no wet-wipe-specific figure for the metal. Germany's BVL 2017 orientation value is 0.5 mg/kg antimony for cosmetics in general. That monitoring set was decorative cosmetics, baby powder, and toothpaste, not wipes. Table 9 remains the selected basis because it is written on total content in the final product, and the cell discloses that the Ecolabel is voluntary."
       ],
       "variants": [
         {
