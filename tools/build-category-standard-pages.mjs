@@ -494,9 +494,13 @@ for (const page of DOC.pages) {
   // Occurrence is keyed by the compiled RECORD slug (== aggregate product_slug),
   // which for a multi-variant page differs from the grouped page slug. Use the
   // primary variant's record, matching the derivation table above it.
+  const occAnalytes = PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a))
+  for (const a of extraAnalytes(variants[0].cells)) {
+    if (!occAnalytes.some((d) => d.analyte === a)) occAnalytes.push(descriptorFromCompiledCell(variants[0].cells[a], a))
+  }
   const occSection = occurrenceRationaleSection({
     evidence: OCC, toxAnchors: TOX, rowSlug: page.variants[0].record,
-    analytes: PANEL.map((a) => descriptorFromCompiledCell(variants[0].cells[a], a)),
+    analytes: occAnalytes,
   })
 
   const derivation = META.derivation_mode === "child_anchor"

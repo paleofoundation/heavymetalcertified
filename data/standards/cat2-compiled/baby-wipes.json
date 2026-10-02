@@ -284,12 +284,12 @@
       "binding_jurisdiction": "EU",
       "binding_id": "eu_2023_1809_ahp_7_3_8",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023D1809",
-      "binding_short": "voluntary EU Ecolabel government floor, disclosed (Decision (EU) 2023/1809, criterion 7.3.8); strictly less than 30 mg/kg",
+      "binding_short": "voluntary EU Ecolabel government floor, disclosed (Decision (EU) 2023/1809, criterion 7.3.8, Table 9); strictly less than 30 mg/kg",
       "comparator_note": "The source comparator is strictly less than 30 mg/kg total content.",
       "criterion_text": "7.3.8. Other chemicals of concern. This sub-criterion applies to impurities in the final product. The following chemicals shall not be present in the final product in a concentration higher than what indicated in Table 9. Antimony < 30 mg/kg.",
       "basis": "finished product, total antimony content, measurable directly on a wipe (ug/kg). Voluntary EU Ecolabel anchor, disclosed as such. Not a migration limit.",
       "label": "Voluntary EU Ecolabel government floor, disclosed as such. Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8: total antimony in the final product strictly less than 30 mg/kg, entered as 30000 ug/kg. Measurable directly on a wipe.",
-      "substantiation": "The CEO decision adopts Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, as the antimony anchor for baby wipes. The EU Ecolabel is voluntary, and this cell discloses that. The criterion applies to impurities in the final product and prints Antimony < 30 mg/kg. That total-content figure is measurable directly on a wipe. Korea MFDS Notice No. 2026-23 (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018) is government precedent in baby products. For children's disposable diapers, harmful-element migration of antimony is 60 mg/kg or less, applied separately to the inner lining and the waterproof layer. Migration is a different test and is not this ceiling.",
+      "substantiation": "The CEO decision adopts Commission Decision (EU) 2023/1809, Annex I criterion 7.3.8, Table 9, as the antimony anchor for baby wipes. The EU Ecolabel is voluntary, and this cell discloses that. The criterion applies to impurities in the final product and prints Antimony < 30 mg/kg. That total-content figure is measurable directly on a wipe. The legal instrument text is unchanged as of the 2 October 2026 evidence note. Korea MFDS Notice No. 2026-23 (revised 24 March 2026; first enacted as Notice No. 2018-19 on 21 March 2018) is government precedent in baby products. For children's disposable diapers, harmful-element migration of antimony is 60 mg/kg or less, applied separately to the inner lining and the waterproof layer. Migration is a different test and is not this ceiling. Health Canada cosmetic guidance (antimony above 5 ppm treated as technically avoidable), Korea cosmetic Article 6(2) (antimony at or below 10 µg/g), and the BVL 2017 orientation value (0.5 mg/kg antimony for cosmetics in general) are recorded and not selected: guidance or an orientation value, not Table 9, and not written as a wet-wipe total. Occurrence after the 26 September 2026 Index ingest, including Washington component ppm, Choi digest µg/L, the 2 April 2026 annex preferred µg/L reads, and the Göçer 2025 lotion, fiber, and packaging split, does not set this cell. A concentration is not a dose.",
       "limit_value_field": "cells.Sb.value",
       "candidates": [
         {
@@ -340,11 +340,32 @@
           "selected": false,
           "note": "Directive (EU) 2020/2184, Annex I, Part B: antimony parametric value 10 ug/L. Orientation only. Not selected.",
           "unit_note": "ug/L"
+        },
+        {
+          "id": "hc_cosmetic_sb_guidance_5ppm",
+          "value": null,
+          "selected": false,
+          "note": "Health Canada guidance on heavy metal impurities in cosmetics, section 4: antimony above 5 ppm in a finished cosmetic treated as technically avoidable. Guidance, not a regulation. The indexed text does not name wipes. Not selected.",
+          "unit_note": "ppm guidance"
+        },
+        {
+          "id": "kr_cosmetic_sb_10ug_g",
+          "value": null,
+          "selected": false,
+          "note": "Korea cosmetic safety standard, Article 6(2): antimony at or below 10 µg/g where a substance was not intentionally added. No wet-wipe-specific metal figure. Not selected.",
+          "unit_note": "ug/g content"
+        },
+        {
+          "id": "de_bvl2017_sb_cosmetics_general_0_5",
+          "value": null,
+          "selected": false,
+          "note": "BVL 2017 orientation value: 0.5 mg/kg antimony for cosmetics in general. Orientation value, not a statute. The monitoring set was decorative cosmetics, baby powder, and toothpaste, not wipes. Not selected.",
+          "unit_note": "mg/kg orientation"
         }
       ]
     }
   },
-  "revision_note": "ORDER SB-LIMIT-LOCK-1. Edition 2.0 sets cells.Sb.value and cells.Sb.value_exact to 30000 ug/kg, pass_fail true, on the voluntary EU Ecolabel government floor (Decision (EU) 2023/1809, Annex I criterion 7.3.8), disclosed as such. The source comparator is strictly less than 30 mg/kg. No other numeric cell is changed. No new DOI is deposited.",
+  "revision_note": "ORDER SB-LIMIT-LOCK-1. Edition 2.0 sets cells.Sb.value and cells.Sb.value_exact to 30000 ug/kg, pass_fail true, on the voluntary EU Ecolabel government floor (Decision (EU) 2023/1809, Annex I criterion 7.3.8, Table 9), disclosed as such. The source comparator is strictly less than 30 mg/kg. No other numeric cell is changed. No new DOI is deposited. Evidence note 2026-10-02: post-ingest occurrence and the Health Canada, Korea cosmetic, and BVL antimony impurity figures are recorded as not selected. The ceiling is unchanged.",
   "generated_from": "data/evidence/regulatory_limits.csv",
   "config": "tools/standards/cat2-config.json",
   "version": "cat2-v2.0 (2026-09-25)",
