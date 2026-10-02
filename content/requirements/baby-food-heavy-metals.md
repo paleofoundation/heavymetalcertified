@@ -30,7 +30,7 @@ A baby-food brand faces heavy-metal obligations from two directions at once: a f
 
 ## The federal layer: action levels, not a testing mandate
 
-On January 6, 2025, the FDA finalized action levels for lead in processed food intended for babies and young children, the first such guidance and part of its Closer to Zero initiative. The action levels are:
+On January 6, 2025, the FDA finalized action levels for lead in processed food intended for babies and young children, the first such guidance and part of its [Closer to Zero](/regulations/us-fda-c2z) initiative. The action levels are:
 
 - 20 ppb for dry infant cereals;
 - 20 ppb for single-ingredient root vegetables;

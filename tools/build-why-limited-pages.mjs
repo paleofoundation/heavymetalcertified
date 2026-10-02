@@ -97,6 +97,30 @@ ${rows}
 `
 }
 
+// Oxford-style join for a short list of rendered link fragments.
+function joinLinks(parts) {
+  if (parts.length <= 1) return parts.join("")
+  if (parts.length === 2) return `${parts[0]} and ${parts[1]}`
+  return `${parts.slice(0, -1).join(", ")}, and ${parts[parts.length - 1]}`
+}
+
+// The per-metal governing regulation(s): the sovereign maximum level(s) the
+// certification floor is measured against, linked to the on-site /regulations/ page.
+// Source is the metal's own rationale prose where it names an instrument (lead, arsenic,
+// cadmium, mercury, nickel, tin), or the standards claim-surface
+// (data/standards/*-compiled) for a metal whose prose names only intake bodies
+// (aluminium -> AU-NZ + China; chromium -> China + Hong Kong). It links EXISTING
+// /regulations/ pages only and invents no reference and no µg/kg value. Rendered as one
+// row of the "Evidence and sources" table, it is also the citation-coverage gate's
+// accepted no-invent claim-surface cite for these pages (HMTC-BIG8-DRAIN-27).
+function renderRegRow(spec) {
+  const regs = Array.isArray(spec.governing_regulations) ? spec.governing_regulations : []
+  if (!regs.length) return ""
+  const links = joinLinks(regs.map((r) => `<a href="${r.href}" style="color:${LINK}">${r.label}</a>`))
+  return `    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The sovereign maximum levels the certification floor is measured against — ${links}</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Regulation</span></div>
+`
+}
+
 // The light provenance note — no numbered references grid (that is the /articles
 // apparatus; these pages carry no fabricated DOIs). Instead: where the evidence
 // lives and the one-way firewall stated plainly.
@@ -109,7 +133,7 @@ function renderSources(spec) {
   <div style="border:1px solid #e8e1db;background:#fffdfb">
     <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The government and expert-body assessments, agency by agency, with the toxicological reference points — <a href="${analyte}" style="color:${LINK}">the ${spec.name} analyte reference</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Reference</span></div>
     <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px;border-bottom:1px dotted #f2ece7"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The certification limits in force, and the Method v2.0 derivation behind each — <a href="/standards" style="color:${LINK}">the HMTc standards register</a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Standard</span></div>
-    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus — <a href="${idx}" style="color:${LINK}">${spec.name} on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
+${renderRegRow(spec)}    <div style="display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:16px;align-items:baseline;padding:13px 16px"><span style="font-size:14px;line-height:1.55;color:#3f3a3a">The complete peer-reviewed and regulatory literature and the occurrence corpus — <a href="${idx}" style="color:${LINK}">${spec.name} on the Heavy Metal Index<span style="font-family:'IBM Plex Mono',monospace;font-size:10px;vertical-align:super">&#8599;</span></a></span><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#a9a1a1;text-align:right">Index &middot; one-way</span></div>
   </div>
   <p style="font-size:11.5px;line-height:1.55;color:#a9a1a2;max-width:84ch;margin:12px 0 0">The Heavy Metal Index is an independent literature reference; this certification site cites it one way and applies its evidence to the certification question. The Index never cites back — that is what keeps it a disinterested source.</p>
 

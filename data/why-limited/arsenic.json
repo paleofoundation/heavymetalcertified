@@ -7,6 +7,11 @@
   "metals": ["Arsenic"],
   "index_slug": "arsenic",
   "analyte_slug": "arsenic",
+  "governing_regulations": [
+    { "href": "/regulations/eu-2023-915", "label": "EU Regulation 2023/915" },
+    { "href": "/regulations/us-fda-c2z", "label": "the FDA Closer to Zero action levels" },
+    { "href": "/regulations/codex-cxs-193", "label": "the Codex contaminants standard (CXS 193)" }
+  ],
   "date": "August 2026",
   "title": "Why is arsenic limited in food? The certification rationale",
   "description": "Why HMTc limits inorganic arsenic in food: a human carcinogen with no safe intake, whose dietary exposure already sits at the cancer reference point — and which rice delivers straight to the infant plate.",

@@ -7,6 +7,10 @@
   "metals": ["Chromium"],
   "index_slug": "chromium",
   "analyte_slug": "chromium",
+  "governing_regulations": [
+    { "href": "/regulations/china-gb-2762", "label": "China GB 2762" },
+    { "href": "/regulations/hong-kong-cap-132v-metallic-contamination", "label": "Hong Kong Cap. 132V" }
+  ],
   "date": "August 2026",
   "title": "Why is chromium limited in food? The certification rationale",
   "description": "Why HMTc limits chromium in food: one form, hexavalent chromium, is a human carcinogen while the trivalent form is benign — so chromium is limited only where a credible hexavalent pathway exists.",

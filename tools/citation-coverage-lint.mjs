@@ -71,20 +71,14 @@ const RULES = {
   static: "exempt",
 }
 
-// Pre-existing in-scope gaps (slug relative to content/) still awaiting a citation.
-// HMTC-BIG8-DRAIN-27 drains these via build-standards-reg-links (a /regulations/ link
-// from existing claim-surface data; no invented refs, no µg/kg). A slug stays here
-// only if its prose names no resolvable sovereign instrument to link. Drain to empty,
-// then remove the set.
-const BACKLOG = new Set([
-  // analytes/* drained via build-standards-reg-links (/regulations/ links). Remaining:
-  // why-we-limit/* (prose names bodies like EFSA/JECFA, not resolvable instruments) and
-  // requirements/* (mixed nav + claim) — follow-up increment.
-  "why-we-limit/aluminum.md", "why-we-limit/arsenic.md", "why-we-limit/cadmium.md", "why-we-limit/chromium.md",
-  "why-we-limit/lead.md", "why-we-limit/mercury.md", "why-we-limit/nickel.md", "why-we-limit/tin.md",
-  "requirements/baby-food-heavy-metals.md", "requirements/california-baby-food-testing.md",
-  "requirements/maryland-baby-food-testing.md", "requirements/supplements-heavy-metals.md",
-])
+// Pre-existing in-scope gaps (slug relative to content/) awaiting a citation.
+// HMTC-BIG8-DRAIN-27 drained every grandfathered gap: analytes/* and why-we-limit/*
+// via /regulations/ links (an instrument the prose names, or the per-metal governing
+// regulation read from the standards claim-surface for the two metals whose prose
+// names only intake bodies), and the two claim-bearing requirement pages (baby-food,
+// supplements) via their own named sovereign instruments. No invented refs, no µg/kg.
+// The set is empty: the citation-coverage gate is now fail-closed with no backlog.
+const BACKLOG = new Set([])
 
 // Pages out of the cite scope: pure-process / how-we-work program pages (the program's
 // own process, not external measured claims) and audience-landing requirement pages
@@ -95,6 +89,11 @@ const SCOPE_EXEMPT = new Set([
   "program/corrective-action.md", "program/readiness.md", "program/remediation.md",
   "program/structure.md", "program/two-pathways.md",
   "requirements/private-label-manufacturers.md", "requirements/retailers.md",
+  // State baby-food testing laws (CA AB 899, MD Rudy's Law) are explained here as guides
+  // to a state testing-and-disclosure mandate, not contaminant-limit claim surfaces, so
+  // they carry no µg/kg claim to cite. Exempt as guides (GATE ANSWER 2026-10-03); the
+  // "requirements" type stays in the cite rule so a future claim-bearing page is caught.
+  "requirements/california-baby-food-testing.md", "requirements/maryland-baby-food-testing.md",
 ])
 
 const APPARATUS = /href="#ref-|<sup[^>]*class="[^"]*cite|^##\s*references\b/im
