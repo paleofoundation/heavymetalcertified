@@ -71,27 +71,37 @@ const RULES = {
   static: "exempt",
 }
 
-// Pre-existing, known gaps (slug relative to content/). Drain to empty, then remove.
-// Populated from the first clean run so the gate ships blocking for new pages only.
-// These 27 in-scope pages carry no citation form yet; drain via the house citation
-// generator (claim-surface / bibliography data) or source them by hand. The 5
-// program/* process pages are flagged for a scope decision (process vs claim pages).
+// Pre-existing in-scope gaps (slug relative to content/) still awaiting a citation.
+// HMTC-BIG8-DRAIN-27 drains these via build-standards-reg-links (a /regulations/ link
+// from existing claim-surface data; no invented refs, no µg/kg). A slug stays here
+// only if its prose names no resolvable sovereign instrument to link. Drain to empty,
+// then remove the set.
 const BACKLOG = new Set([
-  "analytes/aluminum.md", "analytes/arsenic.md", "analytes/cadmium.md", "analytes/chromium.md",
-  "analytes/lead.md", "analytes/mercury.md", "analytes/nickel.md", "analytes/tin.md",
+  // analytes/* drained via build-standards-reg-links (/regulations/ links). Remaining:
+  // why-we-limit/* (prose names bodies like EFSA/JECFA, not resolvable instruments) and
+  // requirements/* (mixed nav + claim) — follow-up increment.
   "why-we-limit/aluminum.md", "why-we-limit/arsenic.md", "why-we-limit/cadmium.md", "why-we-limit/chromium.md",
   "why-we-limit/lead.md", "why-we-limit/mercury.md", "why-we-limit/nickel.md", "why-we-limit/tin.md",
   "requirements/baby-food-heavy-metals.md", "requirements/california-baby-food-testing.md",
   "requirements/maryland-baby-food-testing.md", "requirements/private-label-manufacturers.md",
   "requirements/retailers.md", "requirements/supplements-heavy-metals.md",
+])
+
+// Pure-process / how-we-work program pages describe the program's own process, not
+// external measured claims, so they are exempt (same class as index/nav) per the
+// locked scope. "program" stays in the cite rule so a future claim-bearing program
+// page is still caught.
+const PROCESS_EXEMPT = new Set([
   "program/corrective-action.md", "program/readiness.md", "program/remediation.md",
   "program/structure.md", "program/two-pathways.md",
 ])
 
 const APPARATUS = /href="#ref-|<sup[^>]*class="[^"]*cite|^##\s*references\b/im
 const DOI = /\bdoi\.org\//i
-const REG_LINK = /\[\[regulations\//i.source + "|" + /\]\(\/regulations\//i.source
-const REG_LINK_RE = new RegExp(REG_LINK, "i")
+// A /regulations/ link — wiki-link [[regulations/…]], root-relative ](/regulations/…),
+// or an absolute heavymetalindex.com/regulations/… one-way cite — is a valid
+// claim-surface citation for cite-rule pages.
+const REG_LINK_RE = /\[\[regulations\/|\/regulations\//i
 const HTTP = /https?:\/\//i
 
 function splitFrontmatter(text) {
@@ -112,6 +122,7 @@ function fmType(fm) {
 }
 
 function isExemptPage(slug, base, fm) {
+  if (PROCESS_EXEMPT.has(slug)) return true
   if (base === "index.md") return true
   if (/(^|\/)index\.md$/.test(slug)) return true
   if (/-index$|^index$/.test(fmType(fm))) return true

@@ -24,25 +24,33 @@ import path from "node:path"
 import { linkifyStandardsContent } from "./lib/regulatory-instruments.mjs"
 
 const repoRoot = process.cwd()
-const STD_DIR = path.join(repoRoot, "content", "standards")
 
-if (!fs.existsSync(STD_DIR)) {
-  console.log("build-standards-reg-links: no content/standards/ — nothing to do.")
-  process.exit(0)
-}
+// Linkify regulatory-instrument citations in the prose of the standards pages AND of
+// the other claim-bearing reading surfaces whose rationale names sovereign instruments
+// (analytes, why-we-limit, requirements). One resolver, one pass. For analytes /
+// why-we-limit / requirements this doubles as the HMTC-BIG8-DRAIN-27 citation drain:
+// a /regulations/ link the resolver emits is the citation-coverage gate's accepted
+// no-invent claim-surface cite for those pages. It only links instruments the prose
+// already names, so no reference is invented and no µg/kg value is touched.
+const LINK_DIRS = ["standards", "analytes", "why-we-limit", "requirements"].map((d) =>
+  path.join(repoRoot, "content", d),
+)
 
 let pages = 0
 let links = 0
-for (const f of fs.readdirSync(STD_DIR)) {
-  if (!f.endsWith(".md") || f === "index.md") continue
-  const abs = path.join(STD_DIR, f)
-  const raw = fs.readFileSync(abs, "utf8")
-  const { content, count } = linkifyStandardsContent(raw, repoRoot)
-  if (content !== raw) {
-    fs.writeFileSync(abs, content, "utf8")
-    pages++
-    links += count
+for (const dir of LINK_DIRS) {
+  if (!fs.existsSync(dir)) continue
+  for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith(".md") || f === "index.md") continue
+    const abs = path.join(dir, f)
+    const raw = fs.readFileSync(abs, "utf8")
+    const { content, count } = linkifyStandardsContent(raw, repoRoot)
+    if (content !== raw) {
+      fs.writeFileSync(abs, content, "utf8")
+      pages++
+      links += count
+    }
   }
 }
 
-console.log(`build-standards-reg-links: linked ${links} prose instrument citation(s) across ${pages} standards page(s).`)
+console.log(`build-standards-reg-links: linked ${links} prose instrument citation(s) across ${pages} page(s) (standards + analytes + why-we-limit + requirements).`)
