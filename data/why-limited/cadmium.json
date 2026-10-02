@@ -7,6 +7,9 @@
   "metals": ["Cadmium"],
   "index_slug": "cadmium",
   "analyte_slug": "cadmium",
+  "governing_regulations": [
+    { "href": "/regulations/eu-2023-915", "label": "EU Regulation 2023/915" }
+  ],
   "date": "August 2026",
   "title": "Why is cadmium limited in food? The certification rationale",
   "description": "Why HMTc limits cadmium in food: a cumulative kidney toxicant with a decades-long half-life and no clinical treatment, classified a human carcinogen, whose intake builds across a lifetime.",

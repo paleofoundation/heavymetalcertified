@@ -7,6 +7,10 @@
   "metals": ["Lead"],
   "index_slug": "lead",
   "analyte_slug": "lead",
+  "governing_regulations": [
+    { "href": "/regulations/us-fda-c2z", "label": "the FDA Closer to Zero action levels" },
+    { "href": "/regulations/eu-2023-915", "label": "EU Regulation 2023/915" }
+  ],
   "date": "August 2026",
   "title": "Why is lead limited in baby food? The certification rationale",
   "description": "Why HMTc limits lead in food: no agency can name a safe level for a developing child, exposure runs through everyday plant foods, and infants and the fetus absorb the most.",

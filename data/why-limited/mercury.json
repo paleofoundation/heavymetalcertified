@@ -7,6 +7,10 @@
   "metals": ["Mercury"],
   "index_slug": "mercury",
   "analyte_slug": "mercury",
+  "governing_regulations": [
+    { "href": "/regulations/eu-reg-2022-617-mercury-fish", "label": "the EU maximum levels for mercury in fish (2022/617)" },
+    { "href": "/regulations/codex-cxs-193", "label": "the Codex contaminants standard (CXS 193)" }
+  ],
   "date": "August 2026",
   "title": "Why is mercury limited in food? The certification rationale",
   "description": "Why HMTc limits methylmercury in food: it crosses the placenta into the developing brain with no safe threshold, and it concentrates in one place — predatory fish, where cooking does not remove it.",

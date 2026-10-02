@@ -7,6 +7,9 @@
   "metals": ["Nickel"],
   "index_slug": "nickel",
   "analyte_slug": "nickel",
+  "governing_regulations": [
+    { "href": "/regulations/eu-2023-915", "label": "EU Regulation 2023/915" }
+  ],
   "date": "August 2026",
   "title": "Why is nickel limited in food? The certification rationale",
   "description": "Why HMTc limits nickel in food: mean dietary intake already exceeds EFSA's tolerable daily intake, the most-exposed young children exceed it further, and sensitized people react well below it.",

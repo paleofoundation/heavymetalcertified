@@ -7,6 +7,10 @@
   "metals": ["Tin"],
   "index_slug": "tin",
   "analyte_slug": "tin",
+  "governing_regulations": [
+    { "href": "/regulations/codex-cxs-193", "label": "the Codex contaminants standard (CXS 193)" },
+    { "href": "/regulations/eu-2023-915", "label": "EU Regulation 2023/915" }
+  ],
   "date": "August 2026",
   "title": "Why is tin limited in food? The certification rationale",
   "description": "Why HMTc limits tin in food: inorganic tin from can linings causes an acute gastrointestinal effect, not chronic harm — so its limit works chiefly as a sentinel for can-lining integrity.",

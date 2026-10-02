@@ -7,6 +7,10 @@
   "metals": ["Aluminium"],
   "index_slug": "aluminum",
   "analyte_slug": "aluminum",
+  "governing_regulations": [
+    { "href": "/regulations/china-gb-2762", "label": "China GB 2762" },
+    { "href": "/regulations/au-nz-fsanz", "label": "the Australia and New Zealand Food Standards Code" }
+  ],
   "date": "August 2026",
   "title": "Why is aluminium limited in food? The certification rationale",
   "description": "Why HMTc limits aluminium in food: it accumulates against a low tolerable weekly intake that high-consuming infants can exceed, with human disease documented in the renally impaired.",
