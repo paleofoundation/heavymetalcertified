@@ -17,9 +17,16 @@
       "sha256": "01c4e33b2e7c2688515462d6a45734a1a9e0fe7307b8d07058b3113085928fcd",
       "cluster_count": 2,
       "fitness_classification": "Primary PDFs support instrument identity, draft status, dates, printed analyte labels, and the figures quoted in the verification notes. Those figures are not regulatory_limit rows. Discovery notes and MANIFEST labels are candidate information and are not authority."
+    },
+    {
+      "intake_id": "rw-intake-2026-10-06-kr-motir-wto",
+      "intake_date": "2026-10-06",
+      "sha256": "01c4e33b2e7c2688515462d6a45734a1a9e0fe7307b8d07058b3113085928fcd",
+      "cluster_count": 1,
+      "fitness_classification": "Primary PDFs support instrument identity, draft status, dates, printed analyte labels, and the figures quoted in the verification note. Those figures are not regulatory_limit rows. Discovery notes and MANIFEST labels are candidate information and are not authority."
     }
   ],
-  "event_count": 23,
+  "event_count": 24,
   "events": [
     {
       "event_id": "rw-2026-01-eu-ias-seafood",
@@ -1759,6 +1766,97 @@
       ],
       "gaps": [
         "Mercury is printed as Thủy ngân (Hg) with no species word. It is not recorded as methylmercury or as total mercury. Printed figures stay in the verification note and are not regulatory_limit rows."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-10-06-kor-1384-toy-safety",
+      "intake_id": "rw-intake-2026-10-06-kr-motir-wto",
+      "cluster": 1,
+      "title": "Korea notifies a draft amendment of toy safety criteria for children's products",
+      "instrument_ids": [
+        "g-tbt-n-kor-1384",
+        "motir-public-notice-2026-597"
+      ],
+      "jurisdictions": [
+        "Republic of Korea"
+      ],
+      "authorities": [
+        "Ministry of Trade, Industry and Resources",
+        "Korean Agency for Technology and Standards"
+      ],
+      "domains": [
+        "consumer-products"
+      ],
+      "analytes": [
+        "Pb",
+        "Al",
+        "Cd",
+        "Hg-species-not-stated",
+        "Cr-VI"
+      ],
+      "product_scopes": [
+        "toys (toy materials; element-migration categories 1/2/3 per draft Annex 6 Part 4)",
+        "toys designed for oral use by infants under 18 months, e.g. teethers (draft new Part 13), rubber and synthetic-resin materials"
+      ],
+      "event_type": "limit-change",
+      "status": "consultation",
+      "dates": {
+        "adopted": null,
+        "published": "2026-10-02",
+        "effective": null,
+        "transition": null,
+        "consultation_close": "2026-12-01",
+        "next_review": "2026-12-02"
+      },
+      "official_sources": [
+        {
+          "title": "G/TBT/N/KOR/1384",
+          "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/G/TBTN26/KOR1384.pdf",
+          "kind": "wto-notification"
+        },
+        {
+          "title": "MOTIR Public Notice No. 2026-597 cover",
+          "url": "https://members.wto.org/crnattachments/2026/TBT/KOR/26_05178_00_x.pdf",
+          "kind": "official-announcement"
+        },
+        {
+          "title": "Draft Annex 6 Part 4, hazardous substances, comparison text",
+          "url": "https://members.wto.org/crnattachments/2026/TBT/KOR/26_05178_05_x.pdf",
+          "kind": "draft-standard"
+        },
+        {
+          "title": "Draft Annex 6 Part 13, toys designed for oral use",
+          "url": "https://members.wto.org/crnattachments/2026/TBT/KOR/26_05178_14_x.pdf",
+          "kind": "draft-standard"
+        },
+        {
+          "title": "Consolidated draft Annex 6 (Toys)",
+          "url": "https://members.wto.org/crnattachments/2026/TBT/KOR/26_05178_01_x.pdf",
+          "kind": "draft-standard"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-10-06",
+        "confidence": "high",
+        "notes": "MOTIR Public Notice No. 2026-597, dated 30 September 2026. Draft amendment of Annex 6 (Toys). Part 4 cl. 4.1.2 Table 4-2, heading 완구 재질에 따른 유해원소 용출 허용기준, unit line 단위 : mg/kg, migration (용출). Draft column, categories 1/2/3, with the current struck-through values in parentheses from the comparison text: 납(Pb) 2.0 (13.5) / 0.5 (3.4) / 23 (160); 알루미늄(Al) 2 250 (5 625) / 560 (1 406) / 28 130 (70 000). Unchanged context, not new rows: 비소(As) 3.8 / 0.9 / 47 (species not stated; not coded iAs or tAs); 카드뮴(Cd) 1.3 / 0.3 / 17; 수은(Hg) 7.5 / 1.9 / 94 (species not stated); 6가 크로뮴 (Cr (Ⅵ)) 0.02 / 0.005 / 0.2. 3가 크로뮴 (Cr (Ⅲ)) 37.5 / 9.4 / 460 is also unchanged and is not total chromium. Clause 4.2 still prints total lead 100 mg/kg, and paint and surface coating 90 mg/kg. Clause 4.3 still prints total cadmium 75 mg/kg. New Part 13 Table 13-1, toys designed for oral use by infants under 18 months: footnote (1) rubber materials, 총 납(Pb) 10 ㎎/㎏ 이하; 총 카드뮴(Cd) 10 ㎎/㎏ 이하. Footnote (5) synthetic resin materials: 총 납(Pb), 총 카드뮴(Cd), 수은, 6가 크로뮴, printed 총 합 100 mg/kg 이하. The sum line prints 수은 with no total label and no methyl label. Consolidated draft page 184 matches the Table 4-2 draft column. Consolidated draft page 525 matches Table 13-1, and its clause 4.3.3 says 표 13-1. The Part 13 comparison file's clause line says 표 1 while its caption says 표 13-1. WTO circulation 2 October 2026. WTO comments close 1 December 2026. The MOTIR notice asks for comments by 30 November 2026. Proposed adoption is November 2027 or later. Proposed application is November 2028 or later. Re-downloaded SHA-256: notification 3e3ce11e08d99b43da789536282ccd33bb87028360d573d63670a7c9f56d1222; Part 4 13a5e01310ef28fe798bb0e6521feaa42df3a602757da1581b7733274220a2d5; Part 13 eeabdbac47f282a38c21ae089aed2eeb021ff8e55f89422a2cde46b1e1c7940f; notice cover 1fa2429ecc705b1656d360dddd9cc95f11928059268c893a591c7933725a4c45; consolidated ad8081cbd3600498104e8dfd1483996c506ed42e22e2927140827b9f08b4c254. No regulatory_limit_id is assigned. Separate from rw-2026-07-korea-taiwan-hong-kong."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [],
+      "summary": "G/TBT/N/KOR/1384 circulates a draft amendment of Annex 6 (Toys) of the safety criteria for safety-confirmation children's products, MOTIR Public Notice No. 2026-597. Part 4 Table 4-2 revises element-migration levels for lead and aluminium. New Part 13 adds requirements for toys designed for oral use. The notice is dated 30 September 2026. The WTO notification is dated 2 October 2026. WTO comments close on 1 December 2026. The MOTIR notice asks for comments by 30 November 2026. Proposed adoption is November 2027 or later. Proposed application is November 2028 or later. The text is a draft. It is a MOTIR and KATS consumer-product instrument and is separate from the MFDS food-code event already on the ledger.",
+      "obligations": [
+        "draft-limit"
+      ],
+      "gaps": [
+        "The discovery note says an old finger-paint metal table was deleted and moved under Part 4. The preserved Part 4 and Part 13 text layers do not show that deleted table, so the deletion is not recorded as a verified claim.",
+        "Table 13-1 also prints phthalate, bisphenol A, volatile, and nitrosamine rows. Those are not metal analytes and are not regulatory_limit rows.",
+        "Unchanged Table 4-2 lines and the unchanged total-lead and total-cadmium clauses are quoted as context in the verification note and are not regulatory_limit rows."
       ],
       "public_eligible": true
     }

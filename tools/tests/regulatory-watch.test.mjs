@@ -12,11 +12,12 @@ const impacts = new Map(impact.impacts.map((item) => [item.event_id, item]))
 const octoberDraftIds = [
   "rw-2026-10-05-vnm-451-fresh-rice-noodles",
   "rw-2026-10-05-vnm-452-snack-products",
+  "rw-2026-10-06-kor-1384-toy-safety",
 ]
 
 test("all intake events have one audited disposition", () => {
-  assert.equal(snapshot.event_count, 23)
-  assert.equal(snapshot.events.length, 23)
+  assert.equal(snapshot.event_count, 24)
+  assert.equal(snapshot.events.length, 24)
   for (const event of snapshot.events) assert.match(event.disposition, /^(full-article|hub-only|covered-existing|unverified-gap)$/)
   const prior = snapshot.events.filter((event) => !octoberDraftIds.includes(event.event_id))
   assert.equal(prior.length, 21)
@@ -25,7 +26,7 @@ test("all intake events have one audited disposition", () => {
 
 test("only primary-verified events are eligible for public output", () => {
   const publicEvents = snapshot.events.filter((event) => event.public_eligible)
-  assert.equal(publicEvents.length, 21)
+  assert.equal(publicEvents.length, 22)
   for (const event of publicEvents) assert.equal(event.verification.state, "verified-primary")
   assert.deepEqual(snapshot.events.filter((event) => !event.public_eligible).map((event) => event.event_id), [
     "rw-2026-20-thailand-food-contact",
@@ -76,7 +77,7 @@ test("proposal and consultation events remain non-binding", () => {
   assert.equal(impacts.get(event.event_id).impact_class, "context-with-no-direct-hmtc-change")
 })
 
-test("October 2026 Viet Nam drafts stay hub-only with no comparison", () => {
+test("October 2026 drafts stay hub-only with no comparison", () => {
   for (const id of octoberDraftIds) {
     const event = events.get(id)
     assert.equal(event.status, "consultation")
@@ -90,6 +91,11 @@ test("October 2026 Viet Nam drafts stay hub-only with no comparison", () => {
     assert.equal(item.comparisons.length, 0)
     assert.equal(item.impact_class.includes("binding-limit"), false)
   }
+  const korea = events.get("rw-2026-10-06-kor-1384-toy-safety")
+  assert.equal(korea.dates.consultation_close, "2026-12-01")
+  assert.equal(korea.dates.effective, null)
+  assert.notEqual(korea.event_id, "rw-2026-07-korea-taiwan-hong-kong")
+  assert.equal(impacts.get("rw-2026-07-korea-taiwan-hong-kong").impact_class, "testing-panel-or-analytical-method-change")
 })
 
 test("testing and non-food events cannot become food concentration changes", () => {
