@@ -14,7 +14,7 @@ const expectedSlugs = ["worldwide-heavy-metal-regulatory-watch-2026","us-baby-fo
 const publicEvents = snapshot.events.filter((event) => event.public_eligible && event.verification.state === "verified-primary")
 const excluded = snapshot.events.filter((event) => !event.public_eligible || event.verification.state !== "verified-primary")
 
-if (snapshot.event_count !== 21 || snapshot.events.length !== 21) errors.push(`private snapshot must reconcile 21 events, found ${snapshot.events.length}`)
+if (snapshot.event_count !== 23 || snapshot.events.length !== 23) errors.push(`private snapshot must reconcile 23 events, found ${snapshot.events.length}`)
 if (impact.impacts.length !== snapshot.events.length) errors.push("impact count does not match private snapshot")
 if (feed.events.length !== publicEvents.length) errors.push(`public feed must contain ${publicEvents.length} verified events, found ${feed.events.length}`)
 if (Object.hasOwn(feed, "excluded_unverified_count")) errors.push("public feed exposes private unverified-lead accounting")
@@ -71,4 +71,4 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`)
   process.exit(1)
 }
-console.log(`regulatory:watch:check ok: 21 leads reconciled privately, ${publicEvents.length} verified public events, ${impact.comparison_count} direct comparisons, 6 citable analyses`)
+console.log(`regulatory:watch:check ok: 23 leads reconciled privately, ${publicEvents.length} verified public events, ${impact.comparison_count} direct comparisons, 6 citable analyses`)
