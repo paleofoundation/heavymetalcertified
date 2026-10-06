@@ -9,15 +9,23 @@ const impact = JSON.parse(fs.readFileSync(path.join(repo, "data/regulations/cert
 const events = new Map(snapshot.events.map((event) => [event.event_id, event]))
 const impacts = new Map(impact.impacts.map((item) => [item.event_id, item]))
 
-test("all 21 intake clusters have one audited disposition", () => {
-  assert.equal(snapshot.events.length, 21)
-  assert.deepEqual([...new Set(snapshot.events.map((event) => event.cluster))].sort((a, b) => a - b), Array.from({ length: 21 }, (_, index) => index + 1))
+const octoberDraftIds = [
+  "rw-2026-10-05-vnm-451-fresh-rice-noodles",
+  "rw-2026-10-05-vnm-452-snack-products",
+]
+
+test("all intake events have one audited disposition", () => {
+  assert.equal(snapshot.event_count, 23)
+  assert.equal(snapshot.events.length, 23)
   for (const event of snapshot.events) assert.match(event.disposition, /^(full-article|hub-only|covered-existing|unverified-gap)$/)
+  const prior = snapshot.events.filter((event) => !octoberDraftIds.includes(event.event_id))
+  assert.equal(prior.length, 21)
+  assert.deepEqual([...new Set(prior.map((event) => event.cluster))].sort((a, b) => a - b), Array.from({ length: 21 }, (_, index) => index + 1))
 })
 
 test("only primary-verified events are eligible for public output", () => {
   const publicEvents = snapshot.events.filter((event) => event.public_eligible)
-  assert.equal(publicEvents.length, 19)
+  assert.equal(publicEvents.length, 21)
   for (const event of publicEvents) assert.equal(event.verification.state, "verified-primary")
   assert.deepEqual(snapshot.events.filter((event) => !event.public_eligible).map((event) => event.event_id), [
     "rw-2026-20-thailand-food-contact",
@@ -66,6 +74,22 @@ test("proposal and consultation events remain non-binding", () => {
   const event = events.get("rw-2026-12-echa-crvi-restriction")
   assert.equal(event.status, "consultation")
   assert.equal(impacts.get(event.event_id).impact_class, "context-with-no-direct-hmtc-change")
+})
+
+test("October 2026 Viet Nam drafts stay hub-only with no comparison", () => {
+  for (const id of octoberDraftIds) {
+    const event = events.get(id)
+    assert.equal(event.status, "consultation")
+    assert.equal(event.disposition, "hub-only")
+    assert.equal(event.public_eligible, true)
+    assert.equal(event.verification.state, "verified-primary")
+    assert.deepEqual(event.article_slugs, [])
+    assert.deepEqual(event.hmi_routes.regulatory_limit_ids, [])
+    const item = impacts.get(id)
+    assert.equal(item.impact_class, "context-with-no-direct-hmtc-change")
+    assert.equal(item.comparisons.length, 0)
+    assert.equal(item.impact_class.includes("binding-limit"), false)
+  }
 })
 
 test("testing and non-food events cannot become food concentration changes", () => {

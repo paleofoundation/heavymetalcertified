@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated": "2026-08-24",
+  "generated": "2026-10-06",
   "source_repository": "Heavy Metal Index",
   "firewall": "Neutral verified facts and evidence links only. No certification impact or threshold recommendation.",
   "intakes": [
@@ -10,9 +10,16 @@
       "sha256": "c49959ee9cbe3e71f7cbd2e170a7cf32491bf36ba2e0c4bdbd1df85912bf3c2c",
       "cluster_count": 21,
       "fitness_classification": "Useful for discovery and prioritization; not independently sufficient to support a legal claim, legal status, date, numerical limit, or certification consequence."
+    },
+    {
+      "intake_id": "rw-intake-2026-10-05-vn-moit-wto",
+      "intake_date": "2026-10-06",
+      "sha256": "01c4e33b2e7c2688515462d6a45734a1a9e0fe7307b8d07058b3113085928fcd",
+      "cluster_count": 2,
+      "fitness_classification": "Primary PDFs support instrument identity, draft status, dates, printed analyte labels, and the figures quoted in the verification notes. Those figures are not regulatory_limit rows. Discovery notes and MANIFEST labels are candidate information and are not authority."
     }
   ],
-  "event_count": 21,
+  "event_count": 23,
   "events": [
     {
       "event_id": "rw-2026-01-eu-ias-seafood",
@@ -1597,6 +1604,163 @@
         "Re-check ECHA CHEM and the restriction-intentions registry at the next review date."
       ],
       "public_eligible": false
+    },
+    {
+      "event_id": "rw-2026-10-05-vnm-451-fresh-rice-noodles",
+      "intake_id": "rw-intake-2026-10-05-vn-moit-wto",
+      "cluster": 1,
+      "title": "Viet Nam notifies a draft national technical regulation for fresh rice noodle products",
+      "instrument_ids": [
+        "g-tbt-n-vnm-451",
+        "qcvn-xx-2026-bct-fresh-rice-noodles"
+      ],
+      "jurisdictions": [
+        "Viet Nam"
+      ],
+      "authorities": [
+        "Ministry of Industry and Trade",
+        "Vietnam Industry Agency"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "Pb",
+        "As-species-not-stated",
+        "Cd",
+        "Hg-species-not-stated"
+      ],
+      "product_scopes": [
+        "fresh rice vermicelli (bún tươi)",
+        "fresh flat rice noodles (phở tươi)",
+        "similar high-moisture short-shelf-life rice-based products (fresh hủ tiếu, bánh canh, phở cuốn, bánh hỏi, unfilled bánh cuốn)",
+        "excludes dried rice vermicelli/noodles and instant dried noodles"
+      ],
+      "event_type": "limit-change",
+      "status": "consultation",
+      "dates": {
+        "adopted": null,
+        "published": "2026-10-01",
+        "effective": null,
+        "transition": null,
+        "consultation_close": "2026-11-30",
+        "next_review": "2026-12-01"
+      },
+      "official_sources": [
+        {
+          "title": "G/TBT/N/VNM/451",
+          "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/G/TBTN26/VNM451.pdf",
+          "kind": "wto-notification"
+        },
+        {
+          "title": "MOIT consultation page for the fresh rice noodle draft",
+          "url": "https://moit.gov.vn/du-thao-van-ban/lay-y-kien-ho-so-thong-tu-ban-hanh-qcvn-doi-voi-bun-pho-tuoi.html",
+          "kind": "official-announcement"
+        },
+        {
+          "title": "MOIT consultation archive containing the draft QCVN PDF",
+          "url": "https://moit.gov.vn/upload/2005517/20260915/Ho_so_Du_thao_QCVN_bun_pho_tuoi_xin_y_kien_9488a.rar",
+          "kind": "official-archive"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-10-06",
+        "confidence": "high",
+        "notes": "Draft QCVN xx:2026/BCT, Part II cl. 3, Bảng 2, column Giới hạn tối đa, unit mg/kg. Printed: Chì (Pb) 0,2; Asen (As) 0,5; Cadmi (Cd) 0,2; Thủy ngân (Hg) 0,02. Basis is the product as specified; a moisture basis is not further stated. Asen (As) does not state a species and is coded As-species-not-stated, not iAs and not tAs. Thủy ngân (Hg) does not state a species and is coded Hg-species-not-stated, not MeHg and not tHg. WTO circulation 1 October 2026. Comments close 30 November 2026. Proposed adoption and application are to be determined. The draft cover names Circular XX/2026/TT-BCT and a blank day in November 2026. The archive path contains 20260915. Re-downloaded on 2026-10-06: notification SHA-256 e993d8ffe17d3fd23dfcf9989a28026cd71bb28109bc2eb657103a3652efebb4; archive SHA-256 30c3e18963835c2822fb04298069a51a78a6879af3ef8467e698cd1b62829df8; inner PDF 3. Du thao QCVN bun pho tuoi xin y kien.pdf SHA-256 db2f61ea1ddeafc82909057c379b630e7833be301d524c36eda405e881a35747. The notification names no members.wto.org attachment. No regulatory_limit_id is assigned."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [],
+      "summary": "G/TBT/N/VNM/451 circulates draft QCVN xx:2026/BCT for fresh rice noodle products. Part II clause 3, Bảng 2, prints maximum levels for lead, arsenic, cadmium, and mercury. Arsenic is printed as Asen (As) and mercury as Thủy ngân (Hg); neither line states a species. The notification is dated 1 October 2026 and comments close on 30 November 2026. Proposed adoption and application are to be determined. The text is a draft.",
+      "obligations": [
+        "draft-limit"
+      ],
+      "gaps": [
+        "The WTO notification does not name a members.wto.org attachment. The draft text is the PDF inside the MOIT consultation archive. Printed figures stay in the verification note and are not regulatory_limit rows."
+      ],
+      "public_eligible": true
+    },
+    {
+      "event_id": "rw-2026-10-05-vnm-452-snack-products",
+      "intake_id": "rw-intake-2026-10-05-vn-moit-wto",
+      "cluster": 2,
+      "title": "Viet Nam notifies a draft national technical regulation for snack products",
+      "instrument_ids": [
+        "g-tbt-n-vnm-452",
+        "qcvn-xx-2026-bct-snack-products"
+      ],
+      "jurisdictions": [
+        "Viet Nam"
+      ],
+      "authorities": [
+        "Ministry of Industry and Trade",
+        "Vietnam Industry Agency"
+      ],
+      "domains": [
+        "food-contaminants"
+      ],
+      "analytes": [
+        "Pb",
+        "tAs",
+        "Cd",
+        "Hg-species-not-stated"
+      ],
+      "product_scopes": [
+        "flour- and starch-based snack products (with or without oil/fat)"
+      ],
+      "event_type": "limit-change",
+      "status": "consultation",
+      "dates": {
+        "adopted": null,
+        "published": "2026-10-01",
+        "effective": null,
+        "transition": null,
+        "consultation_close": "2026-11-30",
+        "next_review": "2026-12-01"
+      },
+      "official_sources": [
+        {
+          "title": "G/TBT/N/VNM/452",
+          "url": "https://docs.wto.org/dol2fe/Pages/SS/directdoc.aspx?filename=q:/G/TBTN26/VNM452.pdf",
+          "kind": "wto-notification"
+        },
+        {
+          "title": "Draft QCVN xx:2026/BCT for snack products",
+          "url": "https://members.wto.org/crnattachments/2026/TBT/VNM/26_05152_00_x.pdf",
+          "kind": "draft-standard"
+        },
+        {
+          "title": "MOIT consultation page for the snack-product draft",
+          "url": "https://moit.gov.vn/du-thao-van-ban/lay-y-kien-ho-so-thong-tu-ban-hanh-qcvn-doi-voi-banh-snack.html",
+          "kind": "official-announcement"
+        }
+      ],
+      "hmi_routes": {
+        "regulations": [],
+        "sources": [],
+        "regulatory_limit_ids": []
+      },
+      "verification": {
+        "state": "verified-primary",
+        "verified_on": "2026-10-06",
+        "confidence": "high",
+        "notes": "Draft QCVN xx:2026/BCT, Part II cl. 4, Bảng 3, column Mức giới hạn tối đa, unit mg/kg. Printed: Chì (Pb) 0,2; Asen tổng số (As) 0,5; Cadmi (Cd) 0,2; Thủy ngân (Hg) 0,02. Basis is the product as specified; a moisture basis is not further stated. Asen tổng số (As) is total arsenic and is coded tAs, not iAs. Thủy ngân (Hg) does not state a species and is coded Hg-species-not-stated, not MeHg and not tHg. WTO circulation 1 October 2026. Comments close 30 November 2026. Proposed adoption and application are to be determined. The draft cover names Circular XX/2026/TT-BCT and a blank day in November 2026. Re-downloaded on 2026-10-06: notification SHA-256 df3b09a3e1c84d85680f266f1ee97e4877b5c6f4da349e320c15a00e0df0c73d; draft PDF SHA-256 550bad42365141d15e61100c0250ed020942e0c52885449fe52392e5029cae56. No regulatory_limit_id is assigned."
+      },
+      "disposition": "hub-only",
+      "article_slugs": [],
+      "summary": "G/TBT/N/VNM/452 circulates draft QCVN xx:2026/BCT for snack products. Part II clause 4, Bảng 3, prints maximum levels for lead, total arsenic, cadmium, and mercury. Arsenic is printed as Asen tổng số (As) and is recorded as total arsenic, not inorganic arsenic. Mercury is printed as Thủy ngân (Hg) and does not state a species. The notification is dated 1 October 2026 and comments close on 30 November 2026. Proposed adoption and application are to be determined. The text is a draft.",
+      "obligations": [
+        "draft-limit"
+      ],
+      "gaps": [
+        "Mercury is printed as Thủy ngân (Hg) with no species word. It is not recorded as methylmercury or as total mercury. Printed figures stay in the verification note and are not regulatory_limit rows."
+      ],
+      "public_eligible": true
     }
   ],
   "regulatory_limit_count": 15,
