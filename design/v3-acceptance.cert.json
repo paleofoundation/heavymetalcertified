@@ -542,14 +542,10 @@
       { "sel": ".hmtc-home-hero .hmtc-author-card", "prop": "count", "want": 0 },
       { "sel": ".hmtc-home-hero a[href*=\"orcid.org\"]", "prop": "count", "want": 0 },
       { "sel": ".hmtc-document-doi", "prop": "absent", "want": true },
-      { "sel": ".hmtc-home-copy > img.hmtc-seal[src='/static/heavy-metal-tested-certified-seal.png'][alt='Heavy Metal Tested & Certified seal']", "prop": "count", "want": 1, "note": "HMTc-IMAGES-SEAL-1: visible raster seal in the homepage hero." },
-      { "sel": ".hmtc-seal", "prop": "display", "want": "block" },
-      { "sel": ".hmtc-seal", "prop": "width", "want": "200px" }
+      { "sel": ".hmtc-home-hero .hmtc-seal, .hmtc-heroband .hmtc-seal, .hmtc-home-hero img[src*='heavy-metal-tested-certified-seal'], .hmtc-heroband img[src*='heavy-metal-tested-certified-seal']", "prop": "absent", "want": true, "note": "Certification logos must not appear in hero sections." }
     ],
     "/heavy-metal-certification": [
-      { "sel": ".hmtc-hb-left > img.hmtc-seal[src='/static/heavy-metal-tested-certified-seal.png'][alt='Heavy Metal Tested & Certified seal']", "prop": "count", "want": 1, "note": "HMTc-IMAGES-SEAL-1: same seal in the certification hero, which stays visible when the left context column collapses." },
-      { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "display", "want": "block" },
-      { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "width", "want": "200px" }
+      { "sel": ".hmtc-home-hero .hmtc-seal, .hmtc-heroband .hmtc-seal, .hmtc-home-hero img[src*='heavy-metal-tested-certified-seal'], .hmtc-heroband img[src*='heavy-metal-tested-certified-seal']", "prop": "absent", "want": true, "note": "Certification logos must not appear in hero sections." }
     ],
     "/ecosystem": [
       {"sel":".hmtc-heroband","prop":"background-color","want":"#9f2727"},
@@ -1705,8 +1701,7 @@
           {"sel":".hmtc-cite-panel","prop":"width","want":"390px"}
         ],
         "/": [
-          { "sel": ".hmtc-home-copy > img.hmtc-seal", "prop": "count", "want": 1 },
-          { "sel": ".hmtc-seal", "prop": "display", "want": "block" },
+          { "sel": ".hmtc-home-hero .hmtc-seal, .hmtc-heroband .hmtc-seal, .hmtc-home-hero img[src*='heavy-metal-tested-certified-seal'], .hmtc-heroband img[src*='heavy-metal-tested-certified-seal']", "prop": "absent", "want": true, "note": "Certification logos must not appear in hero sections." },
           { "sel": ".hmtc-home-dek + #site-search", "prop": "count", "want": 1 },
           { "sel": ".hmtc-home-actions", "prop": "flex-direction", "want": "column" },
           { "sel": ".hmtc-home-actions > a", "prop": "count", "want": 3 },
@@ -1722,8 +1717,7 @@
           {"click":".hmi-topnav-burger"}
         ],
         "/heavy-metal-certification": [
-          { "sel": ".hmtc-hb-left > img.hmtc-seal", "prop": "count", "want": 1 },
-          { "sel": ".hmtc-hb-left > .hmtc-seal", "prop": "display", "want": "block" },
+          { "sel": ".hmtc-home-hero .hmtc-seal, .hmtc-heroband .hmtc-seal, .hmtc-home-hero img[src*='heavy-metal-tested-certified-seal'], .hmtc-heroband img[src*='heavy-metal-tested-certified-seal']", "prop": "absent", "want": true, "note": "Certification logos must not appear in hero sections." },
           { "sel": ".hmtc-hb-context", "prop": "display", "want": "none" }
         ],
         "/challenge": [

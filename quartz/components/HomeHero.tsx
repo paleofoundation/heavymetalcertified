@@ -1,4 +1,3 @@
-import { HmtcSeal } from "./HmtcSeal"
 import { homeStats } from "./generated/home-stats"
 
 // HMTC-HOME-GLANCE-THIN-1: homepage glance is these three live rows only.
@@ -31,7 +30,6 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
     <section class="hmtc-home-hero" aria-label="Heavy Metal Certified" data-no-cite>
       <div class="hmtc-home-hero-grid">
         <div class="hmtc-home-copy">
-          <HmtcSeal />
           <h1 class="hmtc-home-title">Published standards<br /><span>for heavy metals.</span></h1>
           <p class="hmtc-home-dek">Product-specific limits for eight priority metals. Independent laboratory testing and ongoing lot surveillance support every certification.</p>
           <div id="site-search" class="hmtc-hero-search">

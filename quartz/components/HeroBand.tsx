@@ -9,7 +9,6 @@ import { DocumentDoi } from "./DocumentDoi"
 import { ManualAuthorityStrip, isManualAuthorityPage } from "./ManualAuthority"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { pathToRoot, type FullSlug } from "../util/path"
-import { HmtcSeal } from "./HmtcSeal"
 
 // The official ORCID iD icon (green disc + "iD"). This is the customary way an
 // ORCID iD is surfaced in a journal-article byline worldwide: the icon stands
@@ -199,7 +198,6 @@ export default (() => {
               <span>/</span>
               <span class="hmtc-hb-leaf">{leaf}</span>
             </nav>
-            {String(slug) === "heavy-metal-certification" ? <HmtcSeal /> : null}
             <div class="hmtc-hb-titlerow">
               <h1 class="hmtc-hb-title">{title}</h1>
               <span class="hmtc-hb-badge">{badge}</span>
