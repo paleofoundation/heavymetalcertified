@@ -78,6 +78,12 @@ if (pdfText) {
   if (!/ICH Q3D/i.test(norm)) fail.push("PDF missing ICH Q3D")
   if (!/tested on every lot/i.test(norm)) fail.push("PDF missing species tested on every lot")
   if (!/90%/.test(norm)) fail.push("PDF missing 90% stay-in-program gate")
+  if (!/Remediation testing row/.test(norm)) fail.push("PDF missing the Part 4 testing-row label")
+  if (!/data-integrity failure is Suspension/.test(norm)) fail.push("PDF Part 4 does not send a data-integrity failure to Suspension")
+  if (!/Concealment of a known exceedance is Revocation/.test(norm)) fail.push("PDF Part 4 does not send concealment to Revocation")
+  if (/data-integrity or concealment concern takes the Remediation/.test(norm)) {
+    fail.push("PDF still routes data-integrity and concealment to the Remediation row")
+  }
   for (const row of lib.rows) {
     if (!compact(pdfText).includes(compact(row.slug))) fail.push(`PDF missing slug ${row.slug}`)
     if (!compact(pdfText).includes(compact(row.cert_doi))) fail.push(`PDF missing DOI ${row.cert_doi}`)

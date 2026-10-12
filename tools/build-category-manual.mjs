@@ -15,13 +15,52 @@ import path from "node:path"
 import { renderStruggleSection } from "./lib/struggle-section.mjs"
 import { renderManualPage } from "./lib/manual-page.mjs"
 import { resolveCover, resolveOgImage } from "./lib/document-cover.mjs"
+import { resolveManualCertDoi, depositedCopy } from "./lib/manual-doi.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
-const DOC = JSON.parse(fs.readFileSync(path.join(REPO, args.get("pages")), "utf8"))
+const argPath = (key) => {
+  const v = args.get(key)
+  if (!v || v === true) return null
+  return path.resolve(REPO, v)
+}
+const pagesFile = argPath("pages")
+if (!pagesFile) {
+  console.error("build-category-manual: --pages= is required")
+  process.exit(1)
+}
+const DOC = JSON.parse(fs.readFileSync(pagesFile, "utf8"))
 const META = DOC._meta
 const COMPILED = path.join(REPO, "data/standards", META.compiled_dir)
-const OUT = path.join(REPO, `content/manuals/${META.manual_slug}.md`)
+const OUT = argPath("out") || path.join(REPO, `content/manuals/${META.manual_slug}.md`)
+const EXISTING = argPath("existing") || path.join(REPO, `content/manuals/${META.manual_slug}.md`)
+const MANIFEST = argPath("manifest") || path.join(REPO, "data/manuals/manifest.json")
+const VERSION_HISTORY = argPath("version-history") || path.join(REPO, "data/standards/version-history", `${META.manual_slug}.json`)
+
+function readPageCertDoi(file) {
+  if (!file || !fs.existsSync(file)) return null
+  const m = fs.readFileSync(file, "utf8").match(/^cert_doi:\s*(.+)\s*$/m)
+  return m ? m[1] : null
+}
+function readManifestDoi(file, slug) {
+  if (!file || !fs.existsSync(file)) return null
+  const man = JSON.parse(fs.readFileSync(file, "utf8"))
+  const row = (man.manuals || []).find((m) => m.slug === slug)
+  return row ? row.doi : null
+}
+function readVersionDoi(file) {
+  if (!file || !fs.existsSync(file)) return null
+  const vh = JSON.parse(fs.readFileSync(file, "utf8"))
+  const cur = (vh.versions || []).find((v) => v.status === "current") || (vh.versions || [])[0]
+  return cur ? cur.doi : null
+}
+
+const certDoi = resolveManualCertDoi({
+  pageDoi: readPageCertDoi(EXISTING),
+  configDoi: META.cert_doi,
+  manifestDoi: readManifestDoi(MANIFEST, META.manual_slug),
+  versionDoi: readVersionDoi(VERSION_HISTORY),
+})
 const OCC = JSON.parse(fs.readFileSync(path.join(REPO, "data/standards/occurrence-evidence.json"), "utf8"))
 const LINK = "#1c43ad", ACCENT = "#9f2727"
 
@@ -75,13 +114,15 @@ const og = pdfFile ? resolveOgImage({ typeName: "manuals", slug: META.manual_slu
 const n = rows.length
 const numWord = { 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve" }[n] || String(n)
 
-const railBody = META.rail_body || (pdfFile
+const railBody = depositedCopy(META.rail_body || (pdfFile
   ? `Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A provisional PDF edition (values current, DOI pending) is downloadable here; a version-pinned, DOI-registered edition follows. Full edition history below.`
-  : `Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below.`)
+  : `Web edition current — ${numWord} subcategories, ${META.effective_date} (Method v2.0). A consolidated, version-pinned PDF is in preparation and a DOI is minted on deposit. Full edition history below.`), certDoi)
 
-const editionPdfLine = META.edition_pdf_line || (pdfFile
+const editionPdfLine = depositedCopy(META.edition_pdf_line || (pdfFile
   ? `A provisional PDF edition of the full manual is available in the rail — its values are current and identical to these pages; a version-pinned, DOI-registered edition is in preparation.`
-  : `A consolidated, version-pinned PDF of the full manual is in preparation and will be linked here on release; until then each subcategory page is individually citable.`)
+  : `A consolidated, version-pinned PDF of the full manual is in preparation and will be linked here on release; until then each subcategory page is individually citable.`), certDoi)
+
+const scholarAbstract = depositedCopy(META.scholar_abstract || null, certDoi)
 
 const extraFm = []
 if (typeof META.doi_suffix === "string" && META.doi_suffix.trim()) {
@@ -96,7 +137,7 @@ const page = renderManualPage({
   category: META.category,
   categoryName: META.category_name,
   description: META.description || `The complete Heavy Metal Tested & Certified standard for Category ${META.category}, ${META.category_name}, edition 2026.`,
-  scholarAbstract: META.scholar_abstract || null,
+  scholarAbstract,
   keywords: Array.isArray(META.keywords) ? META.keywords : [],
   snapshot: [
     { k: "Subcategories", v: String(n) },
@@ -112,6 +153,7 @@ const page = renderManualPage({
     { label: "All Program Manuals", href: "/manuals" },
     { label: "Heavy Metal Index — literature baseline", href: "https://heavymetalindex.com" },
   ],
+  certDoi,
   reportNumber: (typeof META.doi_suffix === "string" && META.doi_suffix.trim()) ? META.doi_suffix.trim() : undefined,
   extraFm,
   scopeLeadHtml: META.scope_lead_html,
@@ -138,4 +180,4 @@ const page = renderManualPage({
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true })
 fs.writeFileSync(OUT, page)
-console.log(`build-category-manual [${META.category_name}]: wrote ${path.relative(REPO, OUT)} (${n} subcategories, pdf ${pdfFile ? "served" : "pending"})`)
+console.log(`build-category-manual [${META.category_name}]: wrote ${path.relative(REPO, OUT)} (${n} subcategories, pdf ${pdfFile ? "served" : "pending"}, doi ${certDoi || "null"})`)

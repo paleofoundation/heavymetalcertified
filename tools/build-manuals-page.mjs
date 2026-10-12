@@ -94,7 +94,8 @@ const pubCount = published.length
 const totalSubcats = published.reduce((s, m) => s + (m.subcategories || 0), 0)
 const totalPages = published.reduce((s, m) => s + (m.pages || 0), 0)
 const primary = published[0] || null
-const edition = primary ? primary.edition : "2026"
+const editions = [...new Set(published.map((m) => m.edition).filter(Boolean))]
+const sharedEdition = editions.length === 1 ? editions[0] : null
 
 // Published-editions rows + the shared bibliographic record (from the primary
 // published manual). Empty-state if nothing is published yet.
@@ -165,8 +166,8 @@ const forthcomingCards = pending
 
 const pubIntro =
   pubCount === 1
-    ? `The ${primary.title} manual is the first category volume in force for the ${edition} edition, carrying ${num(totalSubcats)} subcategory standards. The manual is the bound, citable volume for its category; the web pages carry the same content per subcategory.`
-    : `${num(pubCount)} categories are in force for the ${edition} edition, carrying ${num(totalSubcats)} subcategory standards between them. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.`
+    ? `The ${primary.title} manual is the first category volume in force for the ${sharedEdition || primary.edition} edition, carrying ${num(totalSubcats)} subcategory standards. The manual is the bound, citable volume for its category; the web pages carry the same content per subcategory.`
+    : `${num(pubCount)} categories are in force, carrying ${num(totalSubcats)} subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.`
 
 const idxFront = [
   "---",
@@ -177,7 +178,9 @@ const idxFront = [
   "snapshot:",
   `  - { k: "Published manuals", v: "${num(pubCount)}" }`,
   `  - { k: "Subcategory standards", v: "${num(totalSubcats)}" }`,
-  `  - { k: "Current edition", v: "${edition}" }`,
+  sharedEdition
+    ? `  - { k: "Current edition", v: "${sharedEdition}" }`
+    : `  - { k: "Editions", v: "named on each row" }`,
   `  - { k: "Method", v: "v2.0 gov_floor | read_across" }`,
   "connections:",
   '  - { label: "The subcategory standards register", href: "/standards" }',
@@ -252,7 +255,7 @@ ${forthcomingCards}
 
 <section id="versioning" class="hmtc-section">
   <h2 ${H2}>Editions and revisions</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited the ${edition} edition must still be able to reach exactly what it cited.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited ${sharedEdition ? `the ${sharedEdition} edition` : "one edition"} must still be able to reach exactly what it cited.</p>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit go through the Standards Ratchet Mechanism, which caps how far a limit can move in one step and requires a stated trigger. Limits tighten as the evidence base and analytical feasibility improve; they do not loosen because a brand found them inconvenient.</p>
 </section>
 `
