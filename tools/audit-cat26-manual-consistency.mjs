@@ -48,12 +48,20 @@ const GOLD = [
   ["part4-lot-testing.md", "Lab-informed schedule", /Lab-informed schedule/],
   ["part4-lot-testing.md", "90% gate", /90% stay-in-program certification gate/],
   ["part4-lot-testing.md", "Decision owner", /Decision owner: Program Operator/],
+  ["part4-lot-testing.md", "testing row is not the status", /Remediation testing row/],
+  ["part4-lot-testing.md", "data-integrity is Suspension", /data-integrity failure is Suspension under section 2\.4/],
+  ["part4-lot-testing.md", "concealment is Revocation", /Concealment of a known exceedance is Revocation under section 2\.4/],
+  ["part4-lot-testing.md", "Suspension deadlines match Part 2", /2 business days[\s\S]{0,80}10 business days[\s\S]{0,40}48 hours/],
+  ["part4-lot-testing.md", "revocation is not a testing row", /does not keep a revoked product in Remediation/],
   ["part5-backmatter.md", "ICH Q3D", /ICH Q3D elemental-impurity limits/],
   ["part5-backmatter.md", "scope line", /metal safety only/i],
   ["part5-backmatter.md", "four-status glossary", /Certified, Remediation, Suspension, Revocation/],
 ]
 for (const [file, label, re] of GOLD) {
   if (!re.test(content[file] || "")) fail.push(`GOLDEN MISSING [${file}] ${label}`)
+}
+if (/data-integrity or concealment concern takes the Remediation/.test(content["part4-lot-testing.md"] || "")) {
+  fail.push("Part 4 still sends data-integrity and concealment to the Remediation row")
 }
 ok(`A. golden: ${GOLD.length} required facts`)
 

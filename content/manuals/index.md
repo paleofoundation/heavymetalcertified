@@ -6,7 +6,7 @@ description: "The bound, citable edition of a category's standards. Each manual 
 snapshot:
   - { k: "Published manuals", v: "2" }
   - { k: "Subcategory standards", v: "14" }
-  - { k: "Current edition", v: "Manual v3" }
+  - { k: "Editions", v: "named on each row" }
   - { k: "Method", v: "v2.0 gov_floor | read_across" }
 connections:
   - { label: "The subcategory standards register", href: "/standards" }
@@ -21,7 +21,7 @@ rail_box:
 ---
 <section id="published" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Published editions</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">2 categories are in force for the Manual v3 edition, carrying 14 subcategory standards between them. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">2 categories are in force, carrying 14 subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:20px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0">
@@ -124,6 +124,6 @@ rail_box:
 
 <section id="versioning" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Editions and revisions</h2>
-  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited the Manual v3 edition must still be able to reach exactly what it cited.</p>
+  <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">A manual is superseded, never quietly corrected. A new edition gets a new DOI and the prior edition stays resolvable, because a filing that cited one edition must still be able to reach exactly what it cited.</p>
   <p style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px;max-width:72ch">Substantive changes to a published limit go through the Standards Ratchet Mechanism, which caps how far a limit can move in one step and requires a stated trigger. Limits tighten as the evidence base and analytical feasibility improve; they do not loosen because a brand found them inconvenient.</p>
 </section>

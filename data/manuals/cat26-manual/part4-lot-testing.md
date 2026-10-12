@@ -16,14 +16,14 @@ The Program Operator may add hold-and-release or third-party sampling on documen
 
 ## 4.2 The Testing-Frequency Matrix
 
-This is the starting grid. The assigned schedule is written after the lab-informed review in section 4.7. Certified is the only status that carries the mark. Remediation carries no mark. Every claim analyte is equal at the gate.
+This is the starting grid. The assigned schedule is written after the lab-informed review in section 4.7. Certified is the only status that carries the mark. Remediation carries no mark. Every claim analyte is equal at the gate. These rows set the testing regime. They do not override the status decisions or deadlines in Part 2.
 
 | Certification status | Testing | Hold and release | Independent sampling |
 |---|---|---|---|
 | Certified | Every lot | not required | yes, per schedule |
 | Remediation | Every lot | mandatory | Operator-directed third-party sampling |
 
-Any exceedance, any species above its parent total, or a data-integrity or concealment concern takes the Remediation row. There is no transitional overage and no analyte-class exception.
+Any exceedance, or any species above its parent total, takes the Remediation testing row. There is no transitional overage and no analyte-class exception. A data-integrity failure is Suspension under section 2.4, not a stay on the Remediation row. Concealment of a known exceedance is Revocation under section 2.4.
 
 ## 4.3 Baseline
 
@@ -36,6 +36,10 @@ Qualifying prior ISO/IEC 17025 data from the preceding 12 months may credit up t
 Certified: every lot, with independent sampling on the assigned schedule. A numeric result at or above 80% of its published ceiling triggers confirmatory testing and Operator notice.
 
 Remediation: the product carries no mark and is not listed as certified. Corrective action is mandatory. Surveillance is every lot, with mandatory hold-and-release and Operator-directed third-party sampling. Return to Certified requires the product to meet 100% of every published ceiling, and every species at or below its parent, across a run of consecutive lots set by the Program Operator, plus completed CAPA with verification of effectiveness.
+
+Suspension: a data-integrity failure, or a failure to execute testing, CAPA, or directives. Stop-ship and mark removal are immediate. CAPA is initiated within 2 business days, with a full plan within 10 business days, and containment Immediate (within 48 hours). Reinstatement does not require a fresh baseline. It requires a completed CAPA with verification of effectiveness, a run of consecutive compliant lots set by the Program Operator, restored data integrity, and formal Operator approval.
+
+Revocation: willful misconduct, data fraud, concealment of a known exceedance, or persistent unremediated suspension. Re-entry is by full re-application only. The testing row does not keep a revoked product in Remediation.
 
 ## 4.5 Species
 
