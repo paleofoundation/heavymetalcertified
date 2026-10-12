@@ -61,3 +61,54 @@ node tools/build-cat1-manual-pdf.mjs
 
 `readExistingHouseDoi()` re-reads a `10.83138/` value so a later generate does
 not wipe the mint.
+
+## Cat 26 (Peptides, SARMs, and Research Chemicals), Manual v1
+
+Same deposit path. Suffix is locked:
+
+`hmtc.manual.peptides-sarms-and-research-chemicals`
+
+Do not invent a DOI. There is no earlier Zenodo edition for this manual.
+`cert_doi` and the manifest `doi` stay empty until the live deposit.
+
+Dry-run (no credentials; planning report only):
+
+```bash
+node tools/mint-dois.mjs --types=manuals --slug=peptides-sarms-and-research-chemicals
+```
+
+Payload inspect (does not deposit):
+
+```bash
+DATACITE_PREFIX=10.83138 DATACITE_MODE=test \
+  node tools/mint-dois.mjs --types=manuals --slug=peptides-sarms-and-research-chemicals --emit
+```
+
+Inspect `tools/.doi-deposit/manuals.peptides-sarms-and-research-chemicals.json`. Do not commit it.
+
+Live deposit (USER / CEO after PASS). Credentials stay out of the repo.
+
+```bash
+DATACITE_USER=<Fabrica VAJU.HDAWAI repo id> \
+DATACITE_PASSWORD=<repo password> \
+DATACITE_PREFIX=10.83138 \
+DATACITE_MODE=live \
+  node tools/mint-dois.mjs --types=manuals --slug=peptides-sarms-and-research-chemicals --live
+```
+
+`--live` without those env vars is a no-op (dry-run / planning report).
+
+Write-back on persist:
+
+1. `content/manuals/peptides-sarms-and-research-chemicals.md` → `cert_doi: "10.83138/hmtc.manual.peptides-sarms-and-research-chemicals"`
+2. `data/manuals/manifest.json` → matching `doi`
+3. `data/standards/version-history/peptides-sarms-and-research-chemicals.json` → current edition `doi`, `doi_pending` removed
+
+Then regenerate so the Cite line, Highwire `citation_doi`, and the PDF pick up the house DOI:
+
+```bash
+node tools/build-category-manual.mjs --pages=data/standards/cat26-manual.json
+node tools/build-cert-version-history.mjs
+node tools/build-manuals-page.mjs
+node tools/build-cat26-manual-pdf.mjs
+```

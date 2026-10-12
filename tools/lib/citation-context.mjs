@@ -13,11 +13,14 @@ const FIELDS = ["referenceTitle", "citation", "summary", "establishes", "relevan
 const SKIP = new Set(["code", "pre", "a", "sup", "sub", "script", "style", "kbd", "samp", "time"])
 const CONTEXT = new Set(["p", "li", "td", "th", "blockquote"])
 // The original reviewed seed is pinned, including its page context. This is the
-// only record allowed to predate the evidence/reviewer schema.
+// only record allowed to predate the evidence/reviewer schema. The body pin is
+// the current briefing (tier-status wording no longer treats analyte tiers as a
+// certification ladder). The record hash is unchanged, so this page stays on the
+// legacy path until it is re-reviewed under the evidence schema.
 const LEGACY = {
   page: "briefings/the-big-8",
   record: "2ce154268e244516dad1c154b3b95080b624080725df9dea76098021d7abdb1f",
-  body: "55636374d9a5c2ec2627deb09f2a573522ce014bfa89b79a516b656db443de2f",
+  body: "3ce452cef2bbd981c6c911ea5f7853d10e11a586bb48f89223aae88af267a739",
 }
 export const normalize = (value) => String(value ?? "").replace(/\s+/g, " ").trim()
 export const digest = (value) => createHash("sha256").update(value).digest("hex")

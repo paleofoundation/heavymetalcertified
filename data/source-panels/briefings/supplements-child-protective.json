@@ -4,7 +4,7 @@
   "refs": {
     "1": {
       "referenceTitle": "USP General Chapter <2232>: Elemental Contaminants in Dietary Supplements",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "81b189797c162120859c31ff0f90527e164ac73372b54b2ebb0855d5e55410c6",
       "citation": "United States Pharmacopeia. General Chapter <2232>, Elemental Contaminants in Dietary Supplements. USP–NF (2022); public publisher preview, doi:10.31003/USPNF_M5291_02_01.",
       "summary": "The public preview describes limits for finished supplement dosage forms labeled as conforming to USP or NF. Ingredient limits instead belong in individual monographs.",
@@ -63,12 +63,12 @@
       },
       "kind": "Government",
       "referenceTitle": "Thailand MOPH Notification No. 414 (2020) — Standards for Contaminants in Food",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "13143e0cbe585e5db9573cbec484ac08da15efbb464c79acffc5d97c589e36af"
     },
     "3": {
       "referenceTitle": "ASEAN and Singapore health-supplement contaminant guidelines",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "7d7717c92b9bb66ae0b92554b4649b3c2a65421fe7539d8fc87ca24d4c0e6fca",
       "citation": "ASEAN. Guidelines on Limits of Contaminants for Health Supplements, version 2.0, adopted and endorsed June 2015. Singapore HSA. Health supplements overview, accessed September 15, 2026.",
       "summary": "Both sources give a lead limit of 10 ppm. ASEAN version 2.0 also lists arsenic 5, mercury 0.5 and cadmium 0.3 ppm, with a Philippines arsenic exception. HSA publishes the same general four-metal values.",
@@ -106,7 +106,7 @@
     },
     "4": {
       "referenceTitle": "Proposition 65 Safe Harbor Levels — Maximum Allowable Dose Levels",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "46451fb71951d2a7bc63bf153b74ab26e1bb9b235d010e6a2eecaa08976ad144",
       "citation": "California OEHHA. Proposition 65 safe-harbor table, lead MADL. California Health and Safety Code §25249.10(c), reproductive-toxicity exemption.",
       "summary": "OEHHA lists a lead MADL of 0.5 µg/day. The statute’s reproductive-toxicity exemption concerns exposure producing no observable effect at 1,000 times the exposure in question.",
@@ -144,7 +144,7 @@
     },
     "5": {
       "referenceTitle": "Commission Regulation (EU) 2023/915 on maximum levels for certain contaminants in food",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "4d188d753eb503d7a51c0d28df0d4bef8d60aba58a0637bc42e06033c3a22293",
       "citation": "European Commission. Regulation (EU) 2023/915, April 25, 2023; original act and consolidated text dated August 19, 2026, Annex I §§3.2.17 and 3.4.2.",
       "summary": "The 5 µg/kg cadmium limit applies to specified liquid formula made from cow-milk proteins or protein hydrolysates. The 10 µg/kg inorganic-arsenic limit applies to liquid formula. Powder and soy categories have different limits.",
@@ -182,7 +182,7 @@
     },
     "6": {
       "referenceTitle": "Commission Regulation (EU) 2024/1987 amending (EU) 2023/915 as regards maximum levels of nickel in food",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "d62c2491a7aa787855e3cb9c7cb1da711f3cebb67841d8bbd601361ea10452a5",
       "citation": "European Commission. Regulation (EU) 2024/1987 of July 30, 2024 amending Regulation (EU) 2023/915 as regards maximum levels of nickel in certain foodstuffs. OJ L2024/1987, July 31, 2024.",
       "summary": "The amendment sets nickel maxima of 0.10 mg/kg for liquid formula, 0.25 for powder and 0.40 for soy-based powder, as placed on the market. The formula provisions apply from July 1, 2025.",
@@ -212,7 +212,7 @@
     },
     "7": {
       "referenceTitle": "Australia New Zealand Food Standards Code, Standard 1.4.1 — Contaminants and Natural Toxicants",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "3431b0edd61b078c456ebdefc27d0050f3c4ef6b0a638c5597f9450e84886d83",
       "citation": "FSANZ. Standard 1.4.1, instrument F2015L00408; related Schedule 19, September 13, 2024 compilation, §§S19–3–4; P1028 consequential amendment, F2024L01151, items 22–23.",
       "summary": "The dated Schedule 19 table gives formula lead 0.01 mg/kg and aluminium 0.5 mg/kg for specified formula, 1 for soy formula and 0.2 for preterm special-medical products. The amending instrument confirms the 0.01 lead entry.",
@@ -266,7 +266,7 @@
     },
     "8": {
       "referenceTitle": "Update of the Risk Assessment of Nickel in Food and Drinking Water",
-      "pageDigest": "0b805df6d123a0969f8f597c03c5c0587c843a850da20351c6ffc759b2e9941b",
+      "pageDigest": "98fe18f876217d405f1c520df944e64b804ae5b0d0f8608bbec5c7395893d0a3",
       "sourceDigest": "14327ca0d170069c7c34697f7cefe38a12d693dff6a74095749c65fb998a52ec",
       "citation": "EFSA CONTAM Panel. Update of the risk assessment of nickel in food and drinking water. EFSA Journal. 2020;18(11):6268. doi:10.2903/j.efsa.2020.6268.",
       "summary": "EFSA derived a chronic tolerable daily intake of 13 µg nickel/kg body weight using rat post-implantation loss and a 100-fold uncertainty factor. High-percentile exposure exceeded it in many young population groups.",

@@ -6,8 +6,8 @@
   "category_name": "Peptides, SARMs, and Research Chemicals",
   "route": "parenteral",
   "route_label": "parenteral",
-  "method": "HMTc Method v2.0 — no-regulatory-anchor (control) form. Government-limit lookup returns nothing for this class, so cells resolve to `control` or a substantiated `not_material`; ICH Q3D / USP <232> route-appropriate PDEs are toxicological anchors only, never product-content limits.",
-  "governing_basis": "No lawful product heavy-metal content limit exists for this unapproved-drug class; the Method v2.0 ceiling term is absent and the occurrence term is firewalled staff-only. Every cell is `control` (test + method + toxicology-anchored escalation, no number) or a substantiated `not_material`. ICH Q3D / USP <232> route-appropriate PDEs are toxicological anchors only, never product-content limits.",
+  "method": "HMTc Method v2.1. Lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium are read across from the ICH Q3D(R2) Table A.2.2 Option 1 parenteral concentration limits. Aluminium is read across from the FDA large-volume parenteral limit, 21 CFR 201.323, at 25 ug/kg. Inorganic arsenic, methylmercury, and hexavalent chromium do not carry a separate numeric ceiling. Each is capped at its parent total and tested on every lot.",
+  "governing_basis": "The published cells are disclosed read-across ceilings. Seven metals (Pb, Cd, tAs, tHg, Ni, Sn, Cr) take the ICH Q3D(R2) Table A.2.2 Option 1 parenteral concentrations. Aluminium takes the FDA injectable limit of 25 ug/kg (21 CFR 201.323). Inorganic arsenic is capped at total arsenic, methylmercury at total mercury, and hexavalent chromium at total chromium, and each species is tested on every lot. Certification is metal safety only. It does not speak to efficacy, legality, or approval status.",
   "scope_note": "Gray-market injectable peptide hormones sold outside the drug-approval and supplement frameworks: GLP-1 receptor-agonist analogs, growth-hormone secretagogues, and other synthetic peptides supplied as lyophilised powder for reconstitution or as ready-to-inject solution. The injected route bypasses gut absorption, so per microgram it is the most severe pathway in the taxonomy and the escalation anchor is the parenteral ICH Q3D PDE. Collagen and protein-hydrolysate peptides with a Supplement Facts panel route to Category 16, not here.",
   "certification_scope": "Heavy-metal SAFETY only. HMTc does not endorse, approve, or vouch for the efficacy or legality of these products.",
   "reference_method": "ICP-MS per USP General Chapter <233> (or an equivalently validated ICP-MS / ICP-OES elemental method) on the finished product in its as-sold form: total-element quantitation for the eight totals (Pb, Cd, tAs, tHg, Ni, Sn, Al, total Cr), with reflex inorganic-arsenic speciation (HPLC-ICP-MS) on an elevated total-arsenic result and reflex hexavalent-chromium speciation on an elevated total-chromium result.",
@@ -25,8 +25,8 @@
   },
   "seed_evidence_disclaimer": "Occurrence measurements (e.g. Craven 2025) are recorded as category-opening context and to justify that each analyte is material; per the Part 2 / Part 19 firewall they are NOT converted into a published product-content limit for this class.",
   "provenance_tags_used": [
-    "control",
-    "not-material"
+    "read-across",
+    "subsumed"
   ],
   "cells": {
     "Pb": {
@@ -170,9 +170,10 @@
   "firewall": "Numeric/derivation outputs are STAFF/HMTc content (data/workbench/standards/); the public heavymetalindex.com product pages remain literature-native scaffolds with no threshold.",
   "generated_from": "tools/standards/cat26-config.json + ICH Q3D R1 / USP <232> PDE constants",
   "config": "tools/standards/cat26-config.json",
-  "method_tag": "HMTc Method v2.0 (no-regulatory-anchor / control form)",
+  "method_tag": "HMTc Method v2.1 (ICH Q3D route-based read-across)",
   "verify": {
     "defects": [],
     "clean": true
-  }
+  },
+  "native_basis": "as_sold"
 }

@@ -90,6 +90,23 @@
       "status": "pending_refresh",
       "doi": null,
       "evidence_note": "Web edition current (8 subcategories, Method v2.0 government-limit default; 2026-08-13). Every value matches the live /standards/dairy-* pages cell-for-cell. Consolidated version-pinned PDF in preparation."
+    },
+    {
+      "category": 26,
+      "title": "Peptides, SARMs, and Research Chemicals",
+      "slug": "peptides-sarms-and-research-chemicals",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.peptides-sarms-and-research-chemicals",
+      "subcategories": 5,
+      "pages": 13,
+      "published_date": "2026-10-12",
+      "evidence_note": "Manual v1 (2026-10-12) is the Peptides, SARMs, and Research Chemicals Program Manual for Category 26. Five live standards (aas-injectable, peptides-injectable-hormones, peptides-nasal-sublingual, research-chem-raw-powders, sarms-oral), each already minted at 10.83138/hmtc.std.26.<slug>. Seven metals are read across from ICH Q3D. Aluminium is the FDA injectable limit (25) on injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Species are capped at the parent total and tested every lot. Scope is metal safety only. Served PDF is tools/build-cat26-manual-pdf.mjs (react-pdf). The manual DOI is left empty for Karen's live deposit. This change does not touch content/static/standards/aas-injectable.pdf (open PR 115).",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-12, Method v2.1). House DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
