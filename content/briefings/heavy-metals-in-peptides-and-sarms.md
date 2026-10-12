@@ -20,6 +20,12 @@ snapshot:
   - { k: "Document type", v: "Report" }
   - { k: "References", v: "8" }
 connections:
+  - { label: "Injectable anabolic-androgenic steroids", href: "/standards/aas-injectable" }
+  - { label: "Injectable peptide hormones", href: "/standards/peptides-injectable-hormones" }
+  - { label: "Nasal and sublingual peptides", href: "/standards/peptides-nasal-sublingual" }
+  - { label: "Raw powders", href: "/standards/research-chem-raw-powders" }
+  - { label: "Oral SARMs", href: "/standards/sarms-oral" }
+  - { label: "Category 26 Program Manual", href: "/manuals/peptides-sarms-and-research-chemicals" }
   - { label: "HMTc Standards register", href: "/standards" }
   - { label: "The analyte panel", href: "/analytes" }
   - { label: "All Standards Briefings", href: "/briefings" }
@@ -75,9 +81,22 @@ The counter-case is harm reduction, and it rests on a fact the objection cannot 
 
 The way through the tension is to be exact about what is certified and what is not. The Heavy Metal Tested &amp; Certified program certifies heavy-metal safety, and nothing else. It does not test or vouch for whether a compound is what its label says, whether it works, whether it is safe to use in any broader sense, or whether it is legal to sell or possess. It makes no claim that a certified product is a good idea. It draws the line at a single, measurable, consequential attribute, the toxic-metal content, and it protects the public by ensuring that attribute is measured to a published standard for people who are going to use these products anyway. That is the position: not endorsement, not efficacy, not legality, but the reduction of one specific and documented harm.
 
+## Published standards
+
+The current Category 26 instruments are the five standards and the program manual. Each standard carries a house DOI.
+
+- [Injectable anabolic-androgenic steroids (AAS)](/standards/aas-injectable)
+- [Injectable peptide hormones](/standards/peptides-injectable-hormones)
+- [Nasal and sublingual peptides](/standards/peptides-nasal-sublingual)
+- [Raw powders](/standards/research-chem-raw-powders)
+- [Oral SARMs](/standards/sarms-oral)
+- [Peptides, SARMs, and Research Chemicals Program Manual](/manuals/peptides-sarms-and-research-chemicals)
+
+Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits [2][3]. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs [7]. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on every lot. The program certifies metal safety only. It does not certify efficacy, legality, or approval status.
+
 ## What HMTc actually certifies
 
-For this grouping, HMTc has not identified a category-specific government concentration limit to adopt. The program therefore describes its own testing control and toxicological reference points. That choice does not establish an exemption from drug regulation.
+The five standards linked above are the current ceilings. The paragraphs that follow record the August 2026 control-only position this briefing first set out. For this grouping, HMTc has not identified a category-specific government concentration limit to adopt. The program therefore describes its own testing control and toxicological reference points. That choice does not establish an exemption from drug regulation.
 
 Every metal in the panel is placed under a control rather than a published concentration cap. The control has three parts: mandatory testing of every certified lot by inductively coupled plasma mass spectrometry to the pharmacopeial procedure, with reflex speciation for inorganic arsenic and hexavalent chromium; a published analytical method, so the measurement is reproducible and auditable; and an escalation rule anchored not to a made-up product limit but to the route-appropriate permitted daily exposure that toxicology already provides: the parenteral limit for injectables, the oral limit for oral products, the most protective of the parenteral and inhalation limits for nasal and sublingual preparations. A result that would deliver a daily dose reaching that toxicological ceiling fails certification; any detection at all triggers a source investigation, because a contaminant present in a synthetic product signals an uncontrolled input. Methylmercury is treated as not material to a class made by chemical synthesis, which has no biological methylation pathway, and any mercury contamination is captured by the total-mercury measurement instead. The permitted daily exposures are used as toxicological reference points, never republished as if they were product-content limits, because they are not.
 

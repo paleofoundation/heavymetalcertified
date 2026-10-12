@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 26 (Peptides, SARMs, and Research Chemicals) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The five /standards/ pages are rendered from data/standards/cat26-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 26,
+    "category_name": "Peptides, SARMs, and Research Chemicals",
+    "volume_name": "Peptides, SARMs, and Research Chemicals",
+    "panel": ["Pb", "Cd", "tAs", "iAs", "tHg", "MeHg", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "tier1": ["Pb", "iAs", "tHg", "MeHg", "Cd"],
+    "tier2": ["tAs", "Ni", "Sn", "Al", "Cr", "Cr-VI"],
+    "compiled_dir": "cat26-compiled",
+    "methodology_version": "Method v2.1: ICH Q3D route-based elemental-impurity read-across (oral vs parenteral), FDA injectable aluminium on injectable and nasal standards, EU drinking-water aluminium on raw powders and oral SARMs",
+    "effective_date": "2026-10-12",
+    "default_version": "1.0 (2026-10-12)",
+    "manual_slug": "peptides-sarms-and-research-chemicals",
+    "doi_suffix": "hmtc.manual.peptides-sarms-and-research-chemicals",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.1",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Peptides, SARMs, and Research Chemicals: HMTc Program Manual",
+    "download_pdf": "HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf",
+    "description": "The Peptides, SARMs, and Research Chemicals Program Manual for Category 26: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "ICH Q3D read-across",
+    "scholar_abstract": "The Peptides, SARMs, and Research Chemicals Program Manual is the Category 26 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved for deposit and is not yet assigned. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on every lot. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Peptides, SARMs, and Research Chemicals",
+      "Category 26",
+      "Manual v1",
+      "ICH Q3D",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "read-across",
+      "Lot Testing Schedule",
+      "hmtc.manual.peptides-sarms-and-research-chemicals"
+    ],
+    "scope_lead_html": "This manual states how Category 26 peptides, SARMs, and research chemicals are certified for metal safety. It does not certify efficacy, legality, or approval status. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on every lot. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The five live standards remain the derivation of each cell. Injectable anabolic-androgenic steroids, injectable peptide hormones, and nasal or sublingual preparations take the parenteral ICH Q3D concentrations, with aluminium at the FDA injectable limit. Raw powders and oral SARMs take the oral ICH Q3D concentrations, with aluminium at the EU drinking-water limit. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), as sold. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on every lot. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Published market surveys for this category are not keyed to these five standard records in the occurrence corpus this section scores, so no median-to-limit ratio is computed here. Certification is decided on the product's own tested lot against the published read-across ceiling. The limit is that ceiling (Method v2.1), not a percentile of market data. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a> of the ingredients that most often struggle, and the <a href=\"/briefings/heavy-metals-in-peptides-and-sarms\" style=\"color:#1c43ad\">Category 26 briefing</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-12, Method v2.1). Five subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      { "label": "Injectable anabolic-androgenic steroids", "href": "/standards/aas-injectable" },
+      { "label": "Injectable peptide hormones", "href": "/standards/peptides-injectable-hormones" },
+      { "label": "Nasal and sublingual peptides", "href": "/standards/peptides-nasal-sublingual" },
+      { "label": "Raw powders", "href": "/standards/research-chem-raw-powders" },
+      { "label": "Oral SARMs", "href": "/standards/sarms-oral" },
+      { "label": "Category 26 briefing", "href": "/briefings/heavy-metals-in-peptides-and-sarms" },
+      { "label": "How limits are derived", "href": "/program/structure" },
+      { "label": "Method v1 to Method v2", "href": "/program/method" },
+      { "label": "All Program Manuals", "href": "/manuals" },
+      { "label": "Heavy Metal Index: literature baseline", "href": "https://heavymetalindex.com" }
+    ]
+  },
+  "pages": [
+    { "slug": "aas-injectable", "name": "Injectable anabolic-androgenic steroids (AAS)", "variants": [{ "label": "all", "variant": "both", "record": "aas-injectable" }] },
+    { "slug": "peptides-injectable-hormones", "name": "Injectable peptide hormones (GLP-1 analogs, GH secretagogues, synthetic peptides)", "variants": [{ "label": "all", "variant": "both", "record": "peptides-injectable-hormones" }] },
+    { "slug": "peptides-nasal-sublingual", "name": "Nasal/sublingual/troche peptide preparations (mucosal route)", "variants": [{ "label": "all", "variant": "both", "record": "peptides-nasal-sublingual" }] },
+    { "slug": "research-chem-raw-powders", "name": "Raw AAS / peptide powders (pre-formulation)", "variants": [{ "label": "all", "variant": "both", "record": "research-chem-raw-powders" }] },
+    { "slug": "sarms-oral", "name": "Oral SARMs", "variants": [{ "label": "all", "variant": "both", "record": "sarms-oral" }] }
+  ]
+}

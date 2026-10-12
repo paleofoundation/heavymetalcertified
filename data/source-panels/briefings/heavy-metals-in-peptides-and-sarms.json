@@ -4,7 +4,7 @@
   "refs": {
     "1": {
       "referenceTitle": "Lead Astray? The Hidden Contaminants in the Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "9fb5b33e213c59cdca122e0cd1712aa057c7eb69e445956bddc67828c249587b",
       "citation": "Craven A, Ferris J, Nielsen S, Piatkowski T. Lead Astray? The Hidden Contaminants in Australian Anabolic–Androgenic Steroid Market and Their Potential Health Impact. Drug and Alcohol Review. 2025. doi:10.1111/dar.70007. Version of record, seven-page brief report.",
       "summary": "Researchers tested 28 anonymously donated anabolic-steroid products reportedly purchased in Australia during 2022–2024: 16 injectable oils, 10 oral products and two powders. Fifteen were mislabeled or missold; four of 21 with stated expected doses were within ±5%. ICP-OES testing found metals in all three product classes.",
@@ -33,7 +33,7 @@
     },
     "2": {
       "referenceTitle": "ICH Q3D(R2) Guideline for Elemental Impurities",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "c6dd3d29c2b4c46a7920839f6be66a650aec892a28c17f42b76f68f3fd2000ae",
       "citation": "International Council for Harmonisation. Guideline for Elemental Impurities Q3D(R2). Step 4, 2022; document history includes April 2022 corrections. Sections 2–6 and Appendix 2, Table A.2.1.",
       "summary": "Q3D supplies route-specific permitted daily exposures and a risk-based strategy for controlling elemental impurities in finished drug products. Its scope includes specified protein and synthetic-polypeptide drug products, with listed exclusions. Testing is one possible control rather than a universal requirement for every component or batch.",
@@ -63,7 +63,7 @@
     },
     "3": {
       "referenceTitle": "General Chapters <232> Elemental Impurities: Limits and <233> Elemental Impurities: Procedures",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "b0e1a08e64a8c2fa718a46e428cbb3bae2439ccb674da0bf5631aa8664c4251a",
       "citation": "United States Pharmacopeia. General Chapter <232>, Elemental Impurities—Limits, First Supplement to USP 40–NF 35 (official December 1, 2017); General Chapter <233>, Elemental Impurities—Procedures, Second Supplement to USP 38–NF 33; and USP Elemental Impurities Updates (updated January 17, 2023). Public historical texts and revision overview; current complete USP-NF text not accessed.",
       "summary": "Chapter 232 describes impurity limits and risk-based assurance of compliance in drug products, with exclusions and component-data options. Chapter 233 describes ICP-OES and ICP-MS procedures and validation criteria for alternatives. The reviewed public texts are historical editions; USP’s update page documents subsequent revisions.",
@@ -134,12 +134,12 @@
           }
         ]
       },
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "e40f0d664ff214315b32545d0c929cd0e1f20af5e1bea0029a1a4c3dd9757a92"
     },
     "5": {
       "referenceTitle": "Warnings on counterfeit and compounded semaglutide and tirzepatide",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "0dffd88a72bee42e9188b206da7b438366ab4c355551071856cc96f122e66a97",
       "citation": "US Food and Drug Administration. FDA Warns Consumers Not to Use Counterfeit Ozempic (semaglutide) Found in U.S. Drug Supply Chain, MedWatch bulletin, December 21, 2023; FDA Warns Patients and Health Care Professionals Not to Use Compounded Drugs from Fullerton Wellness, November 1, 2024. Current context: FDA’s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss.",
       "summary": "The 2023 warning describes counterfeit Ozempic and needles found in the legitimate supply chain and seizure of thousands of units. The 2024 Fullerton warning concerns nonsterile compounded semaglutide and tirzepatide injections. These documents address distinct counterfeit and compounding failures.",
@@ -188,7 +188,7 @@
     },
     "6": {
       "referenceTitle": "The global epidemiology of anabolic-androgenic steroid use: a meta-analysis and meta-regression analysis",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "4e0cee867644cf6dab31faf1d657b95771d5dd06cf957a8ff7bd626883711596",
       "citation": "Sagoe D, Molde H, Andreassen CS, Torsheim T, Pallesen S. The global epidemiology of anabolic-androgenic steroid use: a meta-analysis and meta-regression analysis. Annals of Epidemiology. 2014;24(5):383–398. doi:10.1016/j.annepidem.2014.01.009. Review limited to the original abstract and bibliographic record.",
       "summary": "This meta-analysis pooled 187 studies reporting 271 lifetime prevalence estimates. The pooled AAS-use estimate was 3.3% (95% CI 2.8–3.8), with very high heterogeneity. Estimates varied with population and study methods.",
@@ -217,7 +217,7 @@
     },
     "7": {
       "referenceTitle": "21 CFR 201.323: Aluminum in large and small volume parenterals used in total parenteral nutrition",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "34d5ba8e42640dbe25a6fd02fb81bd532ad4ea9a81717069afcc404c76350e6a",
       "citation": "US Food and Drug Administration. 21 CFR 201.323, Aluminum in large and small volume parenterals used in total parenteral nutrition. Official annual edition revised April 1, 2025, pp.92–93.",
       "summary": "The rule caps aluminum in large-volume parenteral products used in total parenteral nutrition at 25 µg/L. Small-volume products and pharmacy bulk packages used to prepare TPN must disclose maximum aluminum content, with additional warnings and validated-assay requirements.",
@@ -247,7 +247,7 @@
     },
     "8": {
       "referenceTitle": "Heavy Metal Index: peptides / SARMs / research-chemicals literature baseline",
-      "pageDigest": "24345d6c995c2fc3b82448e37aeaf0dddbec91d38486e21a9ed8473609f46478",
+      "pageDigest": "6ca0bae590faa5b69962c7f917e0b230dd99f333759e6bc02052a91c8a3ef36b",
       "sourceDigest": "32996417b197bc0be3a0401496493258e986d3e5b1394e68c650507a0fdcc632",
       "citation": "Institute of Contaminant Standards. Research Chemicals, Peptides & SARMs (HMTc Category 26 master). Heavy Metal Index. Updated June 8, 2026; accessed September 15, 2026.",
       "summary": "The category page organizes a developing literature corpus across injectable peptides, oral SARMs, anabolic steroids and raw powders. It links primary studies and explicitly describes thin coverage and incomplete synthesis. It separates literature summaries from unpublished certification-threshold decisions.",

@@ -32,6 +32,7 @@ export const OG_LETTERBOX = { r: 255, g: 253, b: 251, alpha: 1 } // canon paper 
 export const MANUAL_COVER_JOBS = [
   { slug: "infant-and-child-foods", pdf: "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf", stem: "infant-and-child-foods-v3" },
   { slug: "pet-foods", pdf: "HMTc-Pet-Foods-Program-Manual-2026.pdf", stem: "pet-foods-2026" },
+  { slug: "peptides-sarms-and-research-chemicals", pdf: "HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf", stem: "peptides-sarms-and-research-chemicals-v1" },
 ]
 
 export const COVER_RELATION = {
