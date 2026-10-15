@@ -20,7 +20,7 @@ A brand that enters in good faith, tests honestly, and stays inside the publishe
 
 ## 1.4 Remain legally defensible
 
-Published ceilings are the numbers already on the live standard records [1]. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on every lot. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. Nothing is invented.
+Published ceilings are the numbers already on the live standard records [1]. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on the program retest schedule. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Nothing is invented.
 
 ## 1.5 Become the de facto standard
 

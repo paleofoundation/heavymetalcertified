@@ -8,6 +8,7 @@ import path from "node:path"
 import { spawnSync } from "node:child_process"
 import { checkPdfProducer } from "./pdf-producer-lint.mjs"
 import { loadCategory, PROGRAM_INTEGERS, editionDateIntegers, HOUSE_PREFIX } from "./lib/category-program-manual.mjs"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 
 const REPO = process.cwd()
 const arg = process.argv.slice(2).find((a) => a.startsWith("--cat="))
@@ -61,6 +62,9 @@ if (pdfText) {
   if (/10\.83138\/hmtc\.manual\./.test(norm)) fail.push("PDF prints the manual DOI as if it were deposited")
   if (/\b(ORDER|HOLD|Elon|Claude|adjudication|Daubert|canary)\b/.test(norm)) fail.push("PDF contains internal process language")
   if (/[—–]/.test(pdfText)) fail.push("PDF contains an em dash or en dash")
+  for (const hit of routineEveryLotHits(norm)) {
+    fail.push(`PDF routine every-lot claim "${hit.phrase}"`)
+  }
   for (const row of facts.pages) {
     if (!compact(pdfText).includes(compact(row.slug))) fail.push(`PDF missing slug ${row.slug}`)
     if (!compact(pdfText).includes(compact(row.cert_doi))) fail.push(`PDF missing DOI ${row.cert_doi}`)

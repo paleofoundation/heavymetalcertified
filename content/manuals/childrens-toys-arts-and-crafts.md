@@ -113,13 +113,3 @@ rail_box:
 <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0;max-width:74ch">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p>
 </div>
 </section>
-
-<!-- BEGIN: hmtc-version-history -->
-## Version history
-
-The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date: the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
-
-| Version | Date | Status | DOI | What changed |
-| --- | --- | --- | --- | --- |
-| [Manual v1](/static/manuals/HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf) | 2026-10-15 | **current** | not yet deposited | First Category 21 Program Manual. Twenty-one live standards. Numeric ceilings are the values on those standards. Species with no separate number are capped at the parent total and tested on every lot. Metal safety only. |
-<!-- END: hmtc-version-history -->

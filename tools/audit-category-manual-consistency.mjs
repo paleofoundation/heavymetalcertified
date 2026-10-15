@@ -11,6 +11,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { loadCategory, PROGRAM_INTEGERS, partFiles } from "./lib/category-program-manual.mjs"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 
 const REPO = process.cwd()
 const arg = process.argv.slice(2).find((a) => a.startsWith("--cat="))
@@ -50,7 +51,7 @@ const GOLD = [
   ["part2-program.md", /does not require a fresh baseline/],
   ["part2-program.md", /Confidential Remediation Track[\s\S]{0,160}not a certified status/],
   ["part4-lot-testing.md", new RegExp(`${facts.countWord} subcategory standards`)],
-  ["part4-lot-testing.md", /tested on every lot/],
+  ["part4-lot-testing.md", /tested on the program retest schedule/],
   ["part4-lot-testing.md", /90% stay-in-program rule/],
   ["part4-lot-testing.md", /Decision owner: Program Operator/],
   ["part4-lot-testing.md", /Remediation testing row/],
@@ -86,6 +87,22 @@ function PARENT_OF_SAFE(info) {
   return info && info.name && ["capped", "not_material", "numeric", "mixed"].includes(info.mode) && info.parentName
 }
 ok(`A. golden facts for Category ${facts.category}`)
+
+function reportEveryLot(label, text) {
+  for (const hit of routineEveryLotHits(text)) {
+    fail.push(`routine every-lot claim in ${label}:${hit.line} "${hit.phrase}"`)
+  }
+}
+for (const f of FILES) reportEveryLot(f, content[f])
+const manualJson = path.join(REPO, "data/standards", `cat${facts.category}-manual.json`)
+const versionJson = path.join(REPO, "data/standards/version-history", `${facts.slug}.json`)
+if (fs.existsSync(manualJson)) reportEveryLot(`cat${facts.category}-manual.json`, fs.readFileSync(manualJson, "utf8"))
+else fail.push("manual json missing")
+if (fs.existsSync(versionJson)) reportEveryLot(`${facts.slug} version history`, fs.readFileSync(versionJson, "utf8"))
+else fail.push("version history missing")
+reportEveryLot("category-program-manual.mjs", fs.readFileSync(path.join(REPO, "tools/lib/category-program-manual.mjs"), "utf8"))
+reportEveryLot("build-category-program-manual-pdf.mjs", fs.readFileSync(path.join(REPO, "tools/build-category-program-manual-pdf.mjs"), "utf8"))
+ok("A2. no routine every-lot testing claim outside remediation")
 
 const FORBIDDEN = [
   ["em dash", /—|&mdash;/],
@@ -133,6 +150,7 @@ const landing = path.join(REPO, "content/manuals", `${facts.slug}.md`)
 if (!fs.existsSync(landing)) fail.push("landing page missing")
 else {
   const html = fs.readFileSync(landing, "utf8")
+  reportEveryLot("landing", html)
   const rows = [...html.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((m) => m[1])
   let checked = 0
   for (const page of facts.pages) {

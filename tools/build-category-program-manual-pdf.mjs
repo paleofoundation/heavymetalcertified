@@ -242,7 +242,7 @@ function Cover() {
     h(View, { key: "ab", style: s.abstractBox }, [
       h(Text, { key: "l", style: s.abstractLabel }, "About this manual"),
       h(Text, { key: "b", style: s.abstractBody },
-        `The Category ${facts.category} program manual. Every numeric ceiling is the value on the live standard. A species with no separate number is capped at its parent total and tested on every lot. Scope: metal safety only, not efficacy, legality, or approval status. The manual DOI is not deposited in this edition.`),
+        `The Category ${facts.category} program manual. Every numeric ceiling is the value on the live standard. A species with no separate number is capped at its parent total and tested on the program retest schedule. Scope: metal safety only, not efficacy, legality, or approval status. The manual DOI is not deposited in this edition.`),
     ]),
     h(Text, { key: "cite", style: [s.coverText, { marginTop: 8 }] }, apaCite()),
     h(Text, { key: "cpr", style: [s.coverText, { marginTop: 4 }] }, HOUSE_COPYRIGHT),

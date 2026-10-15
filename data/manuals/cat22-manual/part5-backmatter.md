@@ -4,7 +4,7 @@
 
 The method is the ceiling already published on the live standard, not an invented ceiling.
 
-Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent.
+Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent.
 
 Every figure above is the value already published on the standard record. This manual does not add a ceiling. Occurrence data carry no compliance weight [2]. The instrument for each cell is named on the live standard [1].
 

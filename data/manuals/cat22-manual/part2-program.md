@@ -6,7 +6,7 @@ This Part is how a Category 22 SKU enters, is assigned a status, and is held to 
 
 Certification is limit-relative and binary at the limit. For every numeric ceiling the applicable limit is the value published on the live standard (Method v2.0). Limits do not derive from a distribution of measured values. A product is Certified only when every numeric ceiling is met at or below 100% of its published limit, confirmed under the measurement-uncertainty decision rule (section 2.5). There is no band above the limit that still earns the mark.
 
-Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent.
+Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent.
 
 Certification is metal safety only. It does not certify efficacy, legality, or approval status.
 
@@ -20,7 +20,7 @@ Certification is metal safety only. It does not certify efficacy, legality, or a
 
 ## 2.3 The analyte panel
 
-The panel is the panel on the live standards. Every cell that publishes a number is a numeric ceiling. Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. All claim analytes are equal for certification: at or below 100% of a published ceiling, or, for a capped species, at or below its parent total. An exceedance on any metal removes the mark and moves the SKU to Remediation. No metal has a transitional band or an allowed overage.
+The panel is the panel on the live standards. Every cell that publishes a number is a numeric ceiling. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. All claim analytes are equal for certification: at or below 100% of a published ceiling, or, for a capped species, at or below its parent total. An exceedance on any metal removes the mark and moves the SKU to Remediation. No metal has a transitional band or an allowed overage.
 
 ## 2.4 Certification status framework
 
