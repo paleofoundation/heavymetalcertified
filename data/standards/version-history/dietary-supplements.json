@@ -1,0 +1,19 @@
+{
+  "product_slug": "dietary-supplements",
+  "document_noun": "manual",
+  "current_version": "Manual v1",
+  "_note": "Manual v1 (2026-10-15) is the current Dietary Supplements (Human) Program Manual for Category 16. The house DOI suffix hmtc.manual.dietary-supplements is reserved for deposit. cert_doi stays empty until that deposit. Method edition is at /program/method.",
+  "versions": [
+    {
+      "version": "Manual v1",
+      "label": "Manual v1",
+      "date": "2026-10-15",
+      "status": "current",
+      "doi": null,
+      "doi_pending": "not yet deposited",
+      "pdf": "/static/manuals/HMTc-Dietary-Supplements-Human-Program-Manual-v1.pdf",
+      "permalink": "/manuals/dietary-supplements",
+      "summary": "First Category 16 Program Manual. Twenty-four live standards. Numeric ceilings are the values on those standards. Species with no separate number are capped at the parent total and tested on every lot. Metal safety only."
+    }
+  ]
+}
