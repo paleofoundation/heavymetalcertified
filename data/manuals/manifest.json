@@ -294,6 +294,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Legumes and Pulses Program Manual for Category 27. Four live standards, each already minted under 10.83138/hmtc.std.27. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.legumes-and-pulses is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 28,
+      "title": "Nuts, Seeds, and Their Butters",
+      "slug": "nuts-seeds-and-their-butters",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Nuts-Seeds-and-Their-Butters-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Nuts-Seeds-and-Their-Butters-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.nuts-seeds-and-their-butters",
+      "subcategories": 6,
+      "pages": 13,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Nuts, Seeds, and Their Butters Program Manual for Category 28. Six live standards, each already minted under 10.83138/hmtc.std.28. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.nuts-seeds-and-their-butters is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
