@@ -141,6 +141,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Cosmetics and Personal Care, Rinse-off Program Manual for Category 14. Twelve live standards, each already minted under 10.83138/hmtc.std.14. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.cosmetics-and-personal-care-rinse-off is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 15,
+      "title": "Feminine Care",
+      "slug": "feminine-care",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Feminine-Care-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Feminine-Care-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.feminine-care",
+      "subcategories": 10,
+      "pages": 13,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Feminine Care Program Manual for Category 15. Ten live standards, each already minted under 10.83138/hmtc.std.15. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.feminine-care is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
