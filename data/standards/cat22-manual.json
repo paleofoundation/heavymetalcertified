@@ -1,0 +1,310 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 22 (Home Air and Inhalation-Adjacent Products) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat22-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 22,
+    "category_name": "Home Air and Inhalation-Adjacent Products",
+    "volume_name": "Home Air and Inhalation-Adjacent Products",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat22-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "home-air-and-inhalation-adjacent-products",
+    "doi_suffix": "hmtc.manual.home-air-and-inhalation-adjacent-products",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Home Air and Inhalation-Adjacent Products: HMTc Program Manual",
+    "download_pdf": "HMTc-Home-Air-and-Inhalation-Adjacent-Products-Program-Manual-v1.pdf",
+    "description": "The Home Air and Inhalation-Adjacent Products Program Manual for Category 22: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Home Air and Inhalation-Adjacent Products Program Manual is the Category 22 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.home-air-and-inhalation-adjacent-products is reserved for deposit and is not yet assigned. The Manual binds the fifteen live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Home Air and Inhalation-Adjacent Products",
+      "Category 22",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.home-air-and-inhalation-adjacent-products"
+    ],
+    "scope_lead_html": "This manual states how Category 22 Home Air and Inhalation-Adjacent Products is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The fifteen live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on every lot. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Fifteen subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.home-air-and-inhalation-adjacent-products is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Replacement/refill materials for any dispensing system (oil refills, gel refills, spray refills)",
+        "href": "/standards/air-product-refill-materials"
+      },
+      {
+        "label": "Automatic puff releasers",
+        "href": "/standards/automatic-puff-releasers"
+      },
+      {
+        "label": "Capillary reed/wood diffusers",
+        "href": "/standards/capillary-reed-wood-diffusers"
+      },
+      {
+        "label": "Electric plug-in evaporators",
+        "href": "/standards/electric-plug-in-evaporators"
+      },
+      {
+        "label": "Gel diffusers",
+        "href": "/standards/gel-diffusers"
+      },
+      {
+        "label": "Heated oil diffusers",
+        "href": "/standards/heated-oil-diffusers"
+      },
+      {
+        "label": "Other home-air emission products (case-by-case, inhalation prioritized)",
+        "href": "/standards/home-air-emission-products-other"
+      },
+      {
+        "label": "Incense sticks/cones",
+        "href": "/standards/incense-sticks-cones"
+      },
+      {
+        "label": "Instant air refreshment sprays (aerosol cans, trigger sprays)",
+        "href": "/standards/instant-air-refreshment-sprays"
+      },
+      {
+        "label": "Nebula diffusers",
+        "href": "/standards/nebula-diffusers"
+      },
+      {
+        "label": "Potpourri/sachets",
+        "href": "/standards/potpourri-sachets"
+      },
+      {
+        "label": "Scented candles",
+        "href": "/standards/scented-candles"
+      },
+      {
+        "label": "Scented wax blocks/wax melts",
+        "href": "/standards/scented-wax-blocks-melts"
+      },
+      {
+        "label": "Sensor puff releasers",
+        "href": "/standards/sensor-puff-releasers"
+      },
+      {
+        "label": "Vacuum cleaner fragrance additives",
+        "href": "/standards/vacuum-cleaner-fragrance-additives"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "air-product-refill-materials",
+      "name": "Replacement/refill materials for any dispensing system (oil refills, gel refills, spray refills)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "air-product-refill-materials"
+        }
+      ]
+    },
+    {
+      "slug": "automatic-puff-releasers",
+      "name": "Automatic puff releasers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "automatic-puff-releasers"
+        }
+      ]
+    },
+    {
+      "slug": "capillary-reed-wood-diffusers",
+      "name": "Capillary reed/wood diffusers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "capillary-reed-wood-diffusers"
+        }
+      ]
+    },
+    {
+      "slug": "electric-plug-in-evaporators",
+      "name": "Electric plug-in evaporators",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "electric-plug-in-evaporators"
+        }
+      ]
+    },
+    {
+      "slug": "gel-diffusers",
+      "name": "Gel diffusers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "gel-diffusers"
+        }
+      ]
+    },
+    {
+      "slug": "heated-oil-diffusers",
+      "name": "Heated oil diffusers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "heated-oil-diffusers"
+        }
+      ]
+    },
+    {
+      "slug": "home-air-emission-products-other",
+      "name": "Other home-air emission products (case-by-case, inhalation prioritized)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "home-air-emission-products-other"
+        }
+      ]
+    },
+    {
+      "slug": "incense-sticks-cones",
+      "name": "Incense sticks/cones",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "incense-sticks-cones"
+        }
+      ]
+    },
+    {
+      "slug": "instant-air-refreshment-sprays",
+      "name": "Instant air refreshment sprays (aerosol cans, trigger sprays)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "instant-air-refreshment-sprays"
+        }
+      ]
+    },
+    {
+      "slug": "nebula-diffusers",
+      "name": "Nebula diffusers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "nebula-diffusers"
+        }
+      ]
+    },
+    {
+      "slug": "potpourri-sachets",
+      "name": "Potpourri/sachets",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "potpourri-sachets"
+        }
+      ]
+    },
+    {
+      "slug": "scented-candles",
+      "name": "Scented candles",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "scented-candles"
+        }
+      ]
+    },
+    {
+      "slug": "scented-wax-blocks-melts",
+      "name": "Scented wax blocks/wax melts",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "scented-wax-blocks-melts"
+        }
+      ]
+    },
+    {
+      "slug": "sensor-puff-releasers",
+      "name": "Sensor puff releasers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "sensor-puff-releasers"
+        }
+      ]
+    },
+    {
+      "slug": "vacuum-cleaner-fragrance-additives",
+      "name": "Vacuum cleaner fragrance additives",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "vacuum-cleaner-fragrance-additives"
+        }
+      ]
+    }
+  ]
+}

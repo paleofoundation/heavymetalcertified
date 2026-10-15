@@ -35,6 +35,8 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat22-compiled",
+    "manual_slug": "home-air-and-inhalation-adjacent-products",
+    "download_pdf": "HMTc-Home-Air-and-Inhalation-Adjacent-Products-Program-Manual-v1.pdf",
     "method_label": "HMTc Method v2.0 (government-limit-only initial setting: the strictest applicable sovereign maximum for this exact product form in its native basis; disclosed read-across where the exact cell is unregulated; control where neither a sovereign number nor a supportable near-neighbour analogue exists; never occurrence-derived)",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
     "basis_family": "as sold, micrograms of element per kilogram of the emitting material (the fragrance concentrate, wax, gel, botanical mass or refill charge that is aerosolised, evaporated or combusted), with component-level screening of the article's non-emitting parts; a content screen on the article and its refill, never an emission rate, a per-actuation dose or an indoor-air concentration",

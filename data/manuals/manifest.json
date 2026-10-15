@@ -226,6 +226,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Children's Toys, Arts, and Crafts Program Manual for Category 21. Twenty-one live standards, each already minted under 10.83138/hmtc.std.21. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.childrens-toys-arts-and-crafts is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 22,
+      "title": "Home Air and Inhalation-Adjacent Products",
+      "slug": "home-air-and-inhalation-adjacent-products",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Home-Air-and-Inhalation-Adjacent-Products-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Home-Air-and-Inhalation-Adjacent-Products-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.home-air-and-inhalation-adjacent-products",
+      "subcategories": 15,
+      "pages": 14,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Home Air and Inhalation-Adjacent Products Program Manual for Category 22. Fifteen live standards, each already minted under 10.83138/hmtc.std.22. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.home-air-and-inhalation-adjacent-products is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
