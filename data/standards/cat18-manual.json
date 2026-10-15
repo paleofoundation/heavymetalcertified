@@ -1,0 +1,190 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 18 (Pet Supplements) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat18-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 18,
+    "category_name": "Pet Supplements",
+    "volume_name": "Pet Supplements",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat18-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "pet-supplements",
+    "doi_suffix": "hmtc.manual.pet-supplements",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Pet Supplements: HMTc Program Manual",
+    "download_pdf": "HMTc-Pet-Supplements-Program-Manual-v1.pdf",
+    "description": "The Pet Supplements Program Manual for Category 18: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Pet Supplements Program Manual is the Category 18 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.pet-supplements is reserved for deposit and is not yet assigned. The Manual binds the seven live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic publishes the number already on the live standard. That number does not replace total arsenic. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Pet Supplements",
+      "Category 18",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.pet-supplements"
+    ],
+    "scope_lead_html": "This manual states how Category 18 Pet Supplements is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic publishes the number already on the live standard. That number does not replace total arsenic. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on every lot. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The seven live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (methylmercury at total mercury, hexavalent chromium at total chromium) and tested on every lot. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Seven subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.pet-supplements is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Botanical/herbal blends",
+        "href": "/standards/pet-supplements-botanical-herbal"
+      },
+      {
+        "label": "Calming/behavioral supplements",
+        "href": "/standards/pet-supplements-calming-behavioral"
+      },
+      {
+        "label": "Joint/skin/coat functional blends",
+        "href": "/standards/pet-supplements-functional-blends"
+      },
+      {
+        "label": "Oils (omega-3, fish oil, coconut oil)",
+        "href": "/standards/pet-supplements-oils"
+      },
+      {
+        "label": "Other pet ingestibles (case-by-case)",
+        "href": "/standards/pet-supplements-other"
+      },
+      {
+        "label": "Probiotics/digestive aids",
+        "href": "/standards/pet-supplements-probiotics-digestive"
+      },
+      {
+        "label": "Vitamin/mineral supplements",
+        "href": "/standards/pet-supplements-vitamin-mineral"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "pet-supplements-botanical-herbal",
+      "name": "Botanical/herbal blends",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-botanical-herbal"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-calming-behavioral",
+      "name": "Calming/behavioral supplements",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-calming-behavioral"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-functional-blends",
+      "name": "Joint/skin/coat functional blends",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-functional-blends"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-oils",
+      "name": "Oils (omega-3, fish oil, coconut oil)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-oils"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-other",
+      "name": "Other pet ingestibles (case-by-case)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-other"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-probiotics-digestive",
+      "name": "Probiotics/digestive aids",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-probiotics-digestive"
+        }
+      ]
+    },
+    {
+      "slug": "pet-supplements-vitamin-mineral",
+      "name": "Vitamin/mineral supplements",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pet-supplements-vitamin-mineral"
+        }
+      ]
+    }
+  ]
+}

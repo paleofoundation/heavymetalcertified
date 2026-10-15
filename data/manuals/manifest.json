@@ -175,6 +175,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Dietary Supplements (Human) Program Manual for Category 16. Twenty-four live standards, each already minted under 10.83138/hmtc.std.16. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.dietary-supplements is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 18,
+      "title": "Pet Supplements",
+      "slug": "pet-supplements",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Pet-Supplements-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Pet-Supplements-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.pet-supplements",
+      "subcategories": 7,
+      "pages": 13,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Pet Supplements Program Manual for Category 18. Seven live standards, each already minted under 10.83138/hmtc.std.18. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.pet-supplements is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
