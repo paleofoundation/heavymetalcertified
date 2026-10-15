@@ -4,8 +4,8 @@ type: manuals-index
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 description: "The bound, citable edition of a category's standards. Each manual carries a DOI, a named author, a revision date, and the full derivation of every limit it publishes, so a limit can be cited in a filing years after the web page has moved on."
 snapshot:
-  - { k: "Published manuals", v: "15" }
-  - { k: "Subcategory standards", v: "181" }
+  - { k: "Published manuals", v: "16" }
+  - { k: "Subcategory standards", v: "185" }
   - { k: "Editions", v: "named on each row" }
   - { k: "Method", v: "v2.0 gov_floor | read_across" }
 connections:
@@ -21,7 +21,7 @@ rail_box:
 ---
 <section id="published" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Published editions</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">15 categories are in force, carrying 181 subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">16 categories are in force, carrying 185 subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:20px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0">
@@ -127,6 +127,13 @@ rail_box:
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 3 subcategories &middot; 13 pp</div>
       </div>
       <a href="/static/manuals/HMTc-Edible-Fungi-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/sweeteners-and-syrups" style="color:#2b1f1f;text-decoration:none">Sweeteners and Syrups</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 4 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Sweeteners-and-Syrups-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
     </div>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">
