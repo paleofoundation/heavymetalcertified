@@ -107,6 +107,23 @@
       "evidence_note": "Manual v1 (2026-10-12) is the Peptides, SARMs, and Research Chemicals Program Manual for Category 26. Five live standards (aas-injectable, peptides-injectable-hormones, peptides-nasal-sublingual, research-chem-raw-powders, sarms-oral), each already minted at 10.83138/hmtc.std.26.<slug>. Seven metals are read across from ICH Q3D. Aluminium is the FDA injectable limit (25) on injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Species are capped at the parent total and tested every lot. Scope is metal safety only. Served PDF is tools/build-cat26-manual-pdf.mjs (react-pdf). The manual DOI is left empty for Karen's live deposit. This change does not touch content/static/standards/aas-injectable.pdf (open PR 115).",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-12, Method v2.1). House DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 2,
+      "title": "Infant and Child Personal Care (Ages 0-5)",
+      "slug": "infant-and-child-personal-care",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Infant-and-Child-Personal-Care-Ages-0-5-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Infant-and-Child-Personal-Care-Ages-0-5-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.infant-and-child-personal-care",
+      "subcategories": 16,
+      "pages": 14,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Infant and Child Personal Care (Ages 0-5) Program Manual for Category 2. Sixteen live standards, each already minted under 10.83138/hmtc.std.2. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.infant-and-child-personal-care is reserved. cert_doi stays empty until deposit."
     }
   ]
 }

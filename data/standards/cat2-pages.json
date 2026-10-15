@@ -35,6 +35,8 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat2-compiled",
+    "manual_slug": "infant-and-child-personal-care",
+    "download_pdf": "HMTc-Infant-and-Child-Personal-Care-Ages-0-5-Program-Manual-v1.pdf",
     "method_label": "HMTc Method v2.0 (government-limit default) as applied to a child-scoped cosmetic category: every numeric cell is the strictest applicable sovereign finished-cosmetic maximum in the row's native total-content basis, or a disclosed read-across of a stricter sovereign tier from the same instrument where that instrument writes an adult-market loosening carve-out that HMTc declines to adopt for a product marketed to ages 0-5. No cell is occurrence-derived.",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
     "basis_family": "finished cosmetic product as placed on market, total heavy-metal content in ug/kg; never a migration or leachate basis, never a colour-additive or raw-material purity specification, never a dietary basis",
