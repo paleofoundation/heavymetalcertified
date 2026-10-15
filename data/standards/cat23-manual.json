@@ -1,0 +1,535 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 23 (Food-Contact Consumer Goods and Kitchenware) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat23-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 23,
+    "category_name": "Food-Contact Consumer Goods and Kitchenware",
+    "volume_name": "Food-Contact Consumer Goods and Kitchenware",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat23-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "food-contact-consumer-goods-and-kitchenware",
+    "doi_suffix": "hmtc.manual.food-contact-consumer-goods-and-kitchenware",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Food-Contact Consumer Goods and Kitchenware: HMTc Program Manual",
+    "download_pdf": "HMTc-Food-Contact-Consumer-Goods-and-Kitchenware-Program-Manual-v1.pdf",
+    "description": "The Food-Contact Consumer Goods and Kitchenware Program Manual for Category 23: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Food-Contact Consumer Goods and Kitchenware Program Manual is the Category 23 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.food-contact-consumer-goods-and-kitchenware is reserved for deposit and is not yet assigned. The Manual binds the thirty live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Where hexavalent chromium has no separate number, it is capped at total chromium and tested on every lot. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Food-Contact Consumer Goods and Kitchenware",
+      "Category 23",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.food-contact-consumer-goods-and-kitchenware"
+    ],
+    "scope_lead_html": "This manual states how Category 23 Food-Contact Consumer Goods and Kitchenware is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is capped at total arsenic and tested on every lot. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on every lot. It does not carry a separate number, and it never replaces the parent. Where hexavalent chromium has no separate number, it is capped at total chromium and tested on every lot. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The thirty live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on every lot. It is not an empty cell and not an invented number. A printed number on hexavalent chromium is the ceiling on that row.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Thirty subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.food-contact-consumer-goods-and-kitchenware is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Bakeware",
+        "href": "/standards/bakeware"
+      },
+      {
+        "label": "Ceramic-coated cookware",
+        "href": "/standards/cookware-ceramic-coated"
+      },
+      {
+        "label": "Metal and alloy cookware (cast iron, stainless steel, aluminum)",
+        "href": "/standards/cookware-metal-alloy"
+      },
+      {
+        "label": "Nonstick-coated cookware",
+        "href": "/standards/cookware-nonstick-coated"
+      },
+      {
+        "label": "Specialty alloy cookware (copper, carbon steel)",
+        "href": "/standards/cookware-specialty-alloy"
+      },
+      {
+        "label": "Cutting boards (wood, plastic)",
+        "href": "/standards/cutting-boards"
+      },
+      {
+        "label": "Filter media and housings",
+        "href": "/standards/filter-media-and-housings"
+      },
+      {
+        "label": "Cans/lids",
+        "href": "/standards/food-packaging-cans-lids"
+      },
+      {
+        "label": "Caps/closures",
+        "href": "/standards/food-packaging-caps-closures"
+      },
+      {
+        "label": "Flexible pouches/films",
+        "href": "/standards/food-packaging-flexible-pouches-films"
+      },
+      {
+        "label": "Foils/wraps",
+        "href": "/standards/food-packaging-foils-wraps"
+      },
+      {
+        "label": "Glass jars",
+        "href": "/standards/food-packaging-glass-jars"
+      },
+      {
+        "label": "Paperboard cartons",
+        "href": "/standards/food-packaging-paperboard-cartons"
+      },
+      {
+        "label": "Plastic tubs",
+        "href": "/standards/food-packaging-plastic-tubs"
+      },
+      {
+        "label": "Blender jars",
+        "href": "/standards/food-prep-blender-jars"
+      },
+      {
+        "label": "Coffee-maker pathways",
+        "href": "/standards/food-prep-coffee-maker-pathways"
+      },
+      {
+        "label": "Kettle interiors",
+        "href": "/standards/food-prep-kettle-interiors"
+      },
+      {
+        "label": "Food processor bowls",
+        "href": "/standards/food-prep-processor-bowls"
+      },
+      {
+        "label": "Glass food storage containers",
+        "href": "/standards/food-storage-glass-containers"
+      },
+      {
+        "label": "Lids/gaskets",
+        "href": "/standards/food-storage-lids-gaskets"
+      },
+      {
+        "label": "Plastic food storage containers",
+        "href": "/standards/food-storage-plastic-containers"
+      },
+      {
+        "label": "Silicone food storage",
+        "href": "/standards/food-storage-silicone"
+      },
+      {
+        "label": "Ceramicware",
+        "href": "/standards/tableware-ceramicware"
+      },
+      {
+        "label": "Decorative decals/coatings on tableware",
+        "href": "/standards/tableware-decorative-decals-coatings"
+      },
+      {
+        "label": "Glassware",
+        "href": "/standards/tableware-glassware"
+      },
+      {
+        "label": "Metal bottles/tumblers",
+        "href": "/standards/tableware-metal-bottles-tumblers"
+      },
+      {
+        "label": "Plastic drinkware",
+        "href": "/standards/tableware-plastic-drinkware"
+      },
+      {
+        "label": "Metal utensils",
+        "href": "/standards/utensils-metal"
+      },
+      {
+        "label": "Plastic/silicone tools",
+        "href": "/standards/utensils-plastic-silicone-tools"
+      },
+      {
+        "label": "Water filters",
+        "href": "/standards/water-filters"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "bakeware",
+      "name": "Bakeware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "bakeware"
+        }
+      ]
+    },
+    {
+      "slug": "cookware-ceramic-coated",
+      "name": "Ceramic-coated cookware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cookware-ceramic-coated"
+        }
+      ]
+    },
+    {
+      "slug": "cookware-metal-alloy",
+      "name": "Metal and alloy cookware (cast iron, stainless steel, aluminum)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cookware-metal-alloy"
+        }
+      ]
+    },
+    {
+      "slug": "cookware-nonstick-coated",
+      "name": "Nonstick-coated cookware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cookware-nonstick-coated"
+        }
+      ]
+    },
+    {
+      "slug": "cookware-specialty-alloy",
+      "name": "Specialty alloy cookware (copper, carbon steel)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cookware-specialty-alloy"
+        }
+      ]
+    },
+    {
+      "slug": "cutting-boards",
+      "name": "Cutting boards (wood, plastic)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "cutting-boards"
+        }
+      ]
+    },
+    {
+      "slug": "filter-media-and-housings",
+      "name": "Filter media and housings",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "filter-media-and-housings"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-cans-lids",
+      "name": "Cans/lids",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-cans-lids"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-caps-closures",
+      "name": "Caps/closures",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-caps-closures"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-flexible-pouches-films",
+      "name": "Flexible pouches/films",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-flexible-pouches-films"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-foils-wraps",
+      "name": "Foils/wraps",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-foils-wraps"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-glass-jars",
+      "name": "Glass jars",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-glass-jars"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-paperboard-cartons",
+      "name": "Paperboard cartons",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-paperboard-cartons"
+        }
+      ]
+    },
+    {
+      "slug": "food-packaging-plastic-tubs",
+      "name": "Plastic tubs",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-packaging-plastic-tubs"
+        }
+      ]
+    },
+    {
+      "slug": "food-prep-blender-jars",
+      "name": "Blender jars",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-prep-blender-jars"
+        }
+      ]
+    },
+    {
+      "slug": "food-prep-coffee-maker-pathways",
+      "name": "Coffee-maker pathways",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-prep-coffee-maker-pathways"
+        }
+      ]
+    },
+    {
+      "slug": "food-prep-kettle-interiors",
+      "name": "Kettle interiors",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-prep-kettle-interiors"
+        }
+      ]
+    },
+    {
+      "slug": "food-prep-processor-bowls",
+      "name": "Food processor bowls",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-prep-processor-bowls"
+        }
+      ]
+    },
+    {
+      "slug": "food-storage-glass-containers",
+      "name": "Glass food storage containers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-storage-glass-containers"
+        }
+      ]
+    },
+    {
+      "slug": "food-storage-lids-gaskets",
+      "name": "Lids/gaskets",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-storage-lids-gaskets"
+        }
+      ]
+    },
+    {
+      "slug": "food-storage-plastic-containers",
+      "name": "Plastic food storage containers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-storage-plastic-containers"
+        }
+      ]
+    },
+    {
+      "slug": "food-storage-silicone",
+      "name": "Silicone food storage",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "food-storage-silicone"
+        }
+      ]
+    },
+    {
+      "slug": "tableware-ceramicware",
+      "name": "Ceramicware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tableware-ceramicware"
+        }
+      ]
+    },
+    {
+      "slug": "tableware-decorative-decals-coatings",
+      "name": "Decorative decals/coatings on tableware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tableware-decorative-decals-coatings"
+        }
+      ]
+    },
+    {
+      "slug": "tableware-glassware",
+      "name": "Glassware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tableware-glassware"
+        }
+      ]
+    },
+    {
+      "slug": "tableware-metal-bottles-tumblers",
+      "name": "Metal bottles/tumblers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tableware-metal-bottles-tumblers"
+        }
+      ]
+    },
+    {
+      "slug": "tableware-plastic-drinkware",
+      "name": "Plastic drinkware",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tableware-plastic-drinkware"
+        }
+      ]
+    },
+    {
+      "slug": "utensils-metal",
+      "name": "Metal utensils",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "utensils-metal"
+        }
+      ]
+    },
+    {
+      "slug": "utensils-plastic-silicone-tools",
+      "name": "Plastic/silicone tools",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "utensils-plastic-silicone-tools"
+        }
+      ]
+    },
+    {
+      "slug": "water-filters",
+      "name": "Water filters",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "water-filters"
+        }
+      ]
+    }
+  ]
+}
