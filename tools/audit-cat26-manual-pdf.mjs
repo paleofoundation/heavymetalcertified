@@ -12,6 +12,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { spawnSync } from "node:child_process"
 import { checkPdfProducer } from "./pdf-producer-lint.mjs"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 import {
   buildRegister,
   limitGroups,
@@ -76,7 +77,8 @@ if (pdfText) {
     fail.push("PDF missing aluminium figures from the compiled records")
   }
   if (!/ICH Q3D/i.test(norm)) fail.push("PDF missing ICH Q3D")
-  if (!/tested on every lot/i.test(norm)) fail.push("PDF missing species tested on every lot")
+  if (!/tested on the program retest schedule/i.test(norm)) fail.push("PDF missing species tested on the program retest schedule")
+  for (const hit of routineEveryLotHits(norm)) fail.push(`PDF routine every-lot claim "${hit.phrase}"`)
   if (!/90%/.test(norm)) fail.push("PDF missing 90% stay-in-program gate")
   if (!/Remediation testing row/.test(norm)) fail.push("PDF missing the Part 4 testing-row label")
   if (!/data-integrity failure is Suspension/.test(norm)) fail.push("PDF Part 4 does not send a data-integrity failure to Suspension")

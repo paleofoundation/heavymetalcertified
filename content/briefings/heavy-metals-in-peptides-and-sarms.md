@@ -92,7 +92,7 @@ The current Category 26 instruments are the five standards and the program manua
 - [Oral SARMs](/standards/sarms-oral)
 - [Peptides, SARMs, and Research Chemicals Program Manual](/manuals/peptides-sarms-and-research-chemicals)
 
-Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits [2][3]. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs [7]. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on every lot. The program certifies metal safety only. It does not certify efficacy, legality, or approval status.
+Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits [2][3]. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs [7]. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. The program certifies metal safety only. It does not certify efficacy, legality, or approval status.
 
 ## What HMTc actually certifies
 

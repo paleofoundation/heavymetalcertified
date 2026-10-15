@@ -10,6 +10,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { limitGroups, SLUG_ORDER, readRec } from "./lib/cat26-manual.mjs"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 
 const REPO = process.cwd()
 const CDIR = path.join(REPO, "data/manuals/cat26-manual")
@@ -35,7 +36,7 @@ const GOLD = [
   ["part2-program.md", "equal at the gate", /equal at the gate/i],
   ["part2-program.md", "no allowed overage", /allowed overage/i],
   ["part2-program.md", "eight numeric ceilings", /eight numeric ceilings/],
-  ["part2-program.md", "species tested every lot", /tested on every lot/],
+  ["part2-program.md", "species tested on the program retest schedule", /tested on the program retest schedule/],
   ["part2-program.md", "never replace the parent", /never replace the parent/],
   ["part2-program.md", "CAPA 10 / 30", /10 business days[\s\S]{0,40}30 calendar days/],
   ["part2-program.md", "CAPA 2 / 10", /2 business days[\s\S]{0,40}10 business days/],
@@ -44,7 +45,7 @@ const GOLD = [
   ["part2-program.md", "no fresh baseline", /does not require a fresh baseline/],
   ["part2-program.md", "Confidential Remediation Track", /Confidential Remediation Track[\s\S]{0,120}not a certified status/],
   ["part4-lot-testing.md", "five standards", /five subcategory standards/],
-  ["part4-lot-testing.md", "every lot", /tested on every lot/],
+  ["part4-lot-testing.md", "program retest schedule", /tested on the program retest schedule/],
   ["part4-lot-testing.md", "Lab-informed schedule", /Lab-informed schedule/],
   ["part4-lot-testing.md", "90% gate", /90% stay-in-program certification gate/],
   ["part4-lot-testing.md", "Decision owner", /Decision owner: Program Operator/],
@@ -64,6 +65,19 @@ if (/data-integrity or concealment concern takes the Remediation/.test(content["
   fail.push("Part 4 still sends data-integrity and concealment to the Remediation row")
 }
 ok(`A. golden: ${GOLD.length} required facts`)
+
+function reportEveryLot(label, text) {
+  for (const hit of routineEveryLotHits(text)) {
+    fail.push(`routine every-lot claim in ${label}:${hit.line} "${hit.phrase}"`)
+  }
+}
+for (const f of FILES) reportEveryLot(f, content[f])
+reportEveryLot("cat26-manual.json", read(path.join(REPO, "data/standards/cat26-manual.json")))
+reportEveryLot("version history", read(path.join(REPO, "data/standards/version-history/peptides-sarms-and-research-chemicals.json")))
+reportEveryLot("manifest", read(path.join(REPO, "data/manuals/manifest.json")))
+reportEveryLot("landing", read(path.join(REPO, "content/manuals/peptides-sarms-and-research-chemicals.md")))
+reportEveryLot("pdf builder", read(path.join(REPO, "tools/build-cat26-manual-pdf.mjs")))
+ok("A2. no routine every-lot testing claim outside remediation")
 
 const FORBIDDEN = [
   ["em dash", /—|&mdash;/],

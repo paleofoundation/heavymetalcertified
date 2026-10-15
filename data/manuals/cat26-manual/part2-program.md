@@ -6,7 +6,7 @@ This Part is how a Category 26 SKU enters, is assigned a status, and is held to 
 
 Certification is limit-relative and binary at the limit. For every numeric ceiling the applicable limit is the disclosed read-across on the live standard (Method v2.1). Limits do not derive from a distribution of measured values. A product is Certified only when every numeric ceiling is met at or below 100% of its published limit, confirmed under the measurement-uncertainty decision rule (section 2.5). There is no band above the limit that still earns the mark.
 
-The eight numeric ceilings are lead (Pb), cadmium (Cd), total arsenic (tAs), total mercury (tHg), nickel (Ni), tin (Sn), aluminium (Al), and total chromium (Cr). Inorganic arsenic, methylmercury, and hexavalent chromium do not carry a separate numeric ceiling. Each is capped at its parent total and tested on every lot. They never replace the parent total. All claim analytes are equal at the gate.
+The eight numeric ceilings are lead (Pb), cadmium (Cd), total arsenic (tAs), total mercury (tHg), nickel (Ni), tin (Sn), aluminium (Al), and total chromium (Cr). Inorganic arsenic, methylmercury, and hexavalent chromium do not carry a separate numeric ceiling. Each is capped at its parent total and tested on the program retest schedule. They never replace the parent total. All claim analytes are equal at the gate.
 
 Certification is metal safety only. It does not certify efficacy, legality, or approval status.
 
@@ -22,7 +22,7 @@ Certification is metal safety only. It does not certify efficacy, legality, or a
 
 The panel is eight numeric ceilings plus three species. Lead, cadmium, inorganic arsenic, and mercury may be named as priority toxics for toxicological clarity. That label is not a status ladder. Every claim analyte is equal at the gate: at or below 100% of its published ceiling, or, for a species, at or below its parent total. An exceedance on any metal removes the mark and moves the SKU to Remediation. No metal has a transitional band or an allowed overage.
 
-Inorganic arsenic, methylmercury, and hexavalent chromium are capped at total arsenic, total mercury, and total chromium. Each species is tested on every lot. The species result never replaces the parent total. Both must be met.
+Inorganic arsenic, methylmercury, and hexavalent chromium are capped at total arsenic, total mercury, and total chromium. Each species is tested on the program retest schedule. The species result never replaces the parent total. Both must be met.
 
 ## 2.4 Certification status framework
 

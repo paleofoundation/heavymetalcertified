@@ -20,6 +20,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { lintAnalyteTierStatus } from "./lib/analyte-tier-status-lint.mjs"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 
 const REPO = process.cwd()
 const CDIR = path.join(REPO, "data/manuals/cat1-manual")
@@ -150,6 +151,17 @@ for (const [abs, rel] of STATUS_SURFACES) {
   for (const hit of lintAnalyteTierStatus(text, rel)) fail.push(`TIER-STATUS ${hit}`)
 }
 ok(`F. analyte Tier 1/2 does not drive certification status on Manual v3 / program / primer surfaces`)
+
+for (const f of FILES) {
+  for (const hit of routineEveryLotHits(content[f] || "")) {
+    fail.push(`routine every-lot claim in ${f}:${hit.line} "${hit.phrase}"`)
+  }
+}
+const cat1Landing = read(path.join(REPO, "content/manuals/infant-and-child-foods.md"))
+for (const hit of routineEveryLotHits(cat1Landing)) {
+  fail.push(`routine every-lot claim in infant-and-child-foods.md:${hit.line} "${hit.phrase}"`)
+}
+ok("G. no routine every-lot species-testing claim outside remediation")
 
 // ── verdict ──────────────────────────────────────────────────────────────────
 if (fail.length) {
