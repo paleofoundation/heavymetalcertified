@@ -1,0 +1,19 @@
+{
+  "product_slug": "cosmetics-and-personal-care-rinse-off",
+  "document_noun": "manual",
+  "current_version": "Manual v1",
+  "_note": "Manual v1 (2026-10-15) is the current Cosmetics and Personal Care, Rinse-off Program Manual for Category 14. The house DOI suffix hmtc.manual.cosmetics-and-personal-care-rinse-off is reserved for deposit. cert_doi stays empty until that deposit. Method edition is at /program/method.",
+  "versions": [
+    {
+      "version": "Manual v1",
+      "label": "Manual v1",
+      "date": "2026-10-15",
+      "status": "current",
+      "doi": null,
+      "doi_pending": "not yet deposited",
+      "pdf": "/static/manuals/HMTc-Cosmetics-and-Personal-Care-Rinse-off-Program-Manual-v1.pdf",
+      "permalink": "/manuals/cosmetics-and-personal-care-rinse-off",
+      "summary": "First Category 14 Program Manual. Twelve live standards. Numeric ceilings are the values on those standards. Species with no separate number are capped at the parent total and tested on every lot. Metal safety only."
+    }
+  ]
+}

@@ -35,6 +35,8 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat14-compiled",
+    "manual_slug": "cosmetics-and-personal-care-rinse-off",
+    "download_pdf": "HMTc-Cosmetics-and-Personal-Care-Rinse-off-Program-Manual-v1.pdf",
     "method_label": "HMTc Method v2.0 (government-limit default): each numeric cell is the strictest applicable sovereign finished-cosmetic maximum for the product as placed on market, selected by minimum over a named multi-jurisdiction candidate set; unregulated cells are controls with a mandatory method and escalation rule, never invented numbers; never occurrence-derived.",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
     "basis_family": "finished cosmetic total content, as placed on market (µg/kg of undiluted product as sold; not dietary, not migration, no use-pattern dilution credit)",
