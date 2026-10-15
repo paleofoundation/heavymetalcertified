@@ -35,6 +35,8 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat19-compiled",
+    "manual_slug": "laundry-and-fabric-contact-home-products",
+    "download_pdf": "HMTc-Laundry-and-Fabric-Contact-Home-Products-Program-Manual-v1.pdf",
     "method_label": "HMTc Method v2.0 (government-limit default; no sovereign sets a contaminant maximum for a laundry or fabric-care product, so each toxic-panel cell is a disclosed read-across from the nearest applicable sovereign consumer-chemical maximum level in the product's native as-sold content basis, and each remaining unregulated cell is a control with a published method and escalation rule; never occurrence-derived)",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
     "basis_family": "total heavy-metal content of the finished product as placed on the market (as-sold consumer-chemical product-content basis). Never a dietary wet-weight or as-consumed basis, never the textile homogeneous-material-after-extraction basis of the EU consumer-textile restriction, never an article migration or leachate basis, and never a percent-by-weight deliberate-use article restriction. Every row carries a basis_guard that enforces this in the compiler.",
