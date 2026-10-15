@@ -1,0 +1,19 @@
+{
+  "product_slug": "nuts-seeds-and-their-butters",
+  "document_noun": "manual",
+  "current_version": "Manual v1",
+  "_note": "Manual v1 (2026-10-15) is the current Nuts, Seeds, and Their Butters Program Manual for Category 28. The house DOI suffix hmtc.manual.nuts-seeds-and-their-butters is reserved for deposit. cert_doi stays empty until that deposit. Method edition is at /program/method.",
+  "versions": [
+    {
+      "version": "Manual v1",
+      "label": "Manual v1",
+      "date": "2026-10-15",
+      "status": "current",
+      "doi": null,
+      "doi_pending": "not yet deposited",
+      "pdf": "/static/manuals/HMTc-Nuts-Seeds-and-Their-Butters-Program-Manual-v1.pdf",
+      "permalink": "/manuals/nuts-seeds-and-their-butters",
+      "summary": "First Category 28 Program Manual. Six live standards. Numeric ceilings are the values on those standards. Species with no separate number are capped at the parent total and tested on the program retest schedule. Metal safety only."
+    }
+  ]
+}

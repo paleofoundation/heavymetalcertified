@@ -1,0 +1,280 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 19 (Laundry and Fabric-Contact Home Products) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat19-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 19,
+    "category_name": "Laundry and Fabric-Contact Home Products",
+    "volume_name": "Laundry and Fabric-Contact Home Products",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat19-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "laundry-and-fabric-contact-home-products",
+    "doi_suffix": "hmtc.manual.laundry-and-fabric-contact-home-products",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Laundry and Fabric-Contact Home Products: HMTc Program Manual",
+    "download_pdf": "HMTc-Laundry-and-Fabric-Contact-Home-Products-Program-Manual-v1.pdf",
+    "description": "The Laundry and Fabric-Contact Home Products Program Manual for Category 19: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Laundry and Fabric-Contact Home Products Program Manual is the Category 19 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.laundry-and-fabric-contact-home-products is reserved for deposit and is not yet assigned. The Manual binds the thirteen live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Laundry and Fabric-Contact Home Products",
+      "Category 19",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.laundry-and-fabric-contact-home-products"
+    ],
+    "scope_lead_html": "This manual states how Category 19 Laundry and Fabric-Contact Home Products is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The thirteen live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury) and tested on the program retest schedule. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Thirteen subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.laundry-and-fabric-contact-home-products is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Anti-static products (liquid and sheets)",
+        "href": "/standards/anti-static-products"
+      },
+      {
+        "label": "Anti-wrinkle/wrinkle-release products",
+        "href": "/standards/anti-wrinkle-wrinkle-release-products"
+      },
+      {
+        "label": "Bleaching/whitening additives",
+        "href": "/standards/bleaching-whitening-additives"
+      },
+      {
+        "label": "Combination products serving multiple functions",
+        "href": "/standards/fabric-contact-combination-products"
+      },
+      {
+        "label": "Other fabric-contact home products (case-by-case)",
+        "href": "/standards/fabric-contact-products-other"
+      },
+      {
+        "label": "Fabric protectants (excluding waterproofing/flame-retardant per GS-48 boundaries)",
+        "href": "/standards/fabric-protectants"
+      },
+      {
+        "label": "Fabric refresher products",
+        "href": "/standards/fabric-refresher-products"
+      },
+      {
+        "label": "Fabric softeners (liquids and sheets)",
+        "href": "/standards/fabric-softeners"
+      },
+      {
+        "label": "Laundry detergent boosters/additives",
+        "href": "/standards/laundry-detergent-boosters-additives"
+      },
+      {
+        "label": "Laundry detergents (liquid, powder, pods/sheets, delicates)",
+        "href": "/standards/laundry-detergents"
+      },
+      {
+        "label": "Laundry prewash products",
+        "href": "/standards/laundry-prewash-products"
+      },
+      {
+        "label": "Laundry starch/sizing/fabric finish products",
+        "href": "/standards/laundry-starch-sizing-fabric-finish"
+      },
+      {
+        "label": "Pre-treaters (spray/gel/stick) and stand-alone stain/spot removers",
+        "href": "/standards/pre-treaters-stain-removers"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "anti-static-products",
+      "name": "Anti-static products (liquid and sheets)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "anti-static-products"
+        }
+      ]
+    },
+    {
+      "slug": "anti-wrinkle-wrinkle-release-products",
+      "name": "Anti-wrinkle/wrinkle-release products",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "anti-wrinkle-wrinkle-release-products"
+        }
+      ]
+    },
+    {
+      "slug": "bleaching-whitening-additives",
+      "name": "Bleaching/whitening additives",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "bleaching-whitening-additives"
+        }
+      ]
+    },
+    {
+      "slug": "fabric-contact-combination-products",
+      "name": "Combination products serving multiple functions",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fabric-contact-combination-products"
+        }
+      ]
+    },
+    {
+      "slug": "fabric-contact-products-other",
+      "name": "Other fabric-contact home products (case-by-case)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fabric-contact-products-other"
+        }
+      ]
+    },
+    {
+      "slug": "fabric-protectants",
+      "name": "Fabric protectants (excluding waterproofing/flame-retardant per GS-48 boundaries)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fabric-protectants"
+        }
+      ]
+    },
+    {
+      "slug": "fabric-refresher-products",
+      "name": "Fabric refresher products",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fabric-refresher-products"
+        }
+      ]
+    },
+    {
+      "slug": "fabric-softeners",
+      "name": "Fabric softeners (liquids and sheets)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fabric-softeners"
+        }
+      ]
+    },
+    {
+      "slug": "laundry-detergent-boosters-additives",
+      "name": "Laundry detergent boosters/additives",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "laundry-detergent-boosters-additives"
+        }
+      ]
+    },
+    {
+      "slug": "laundry-detergents",
+      "name": "Laundry detergents (liquid, powder, pods/sheets, delicates)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "laundry-detergents"
+        }
+      ]
+    },
+    {
+      "slug": "laundry-prewash-products",
+      "name": "Laundry prewash products",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "laundry-prewash-products"
+        }
+      ]
+    },
+    {
+      "slug": "laundry-starch-sizing-fabric-finish",
+      "name": "Laundry starch/sizing/fabric finish products",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "laundry-starch-sizing-fabric-finish"
+        }
+      ]
+    },
+    {
+      "slug": "pre-treaters-stain-removers",
+      "name": "Pre-treaters (spray/gel/stick) and stand-alone stain/spot removers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "pre-treaters-stain-removers"
+        }
+      ]
+    }
+  ]
+}

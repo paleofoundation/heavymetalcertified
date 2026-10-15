@@ -1,0 +1,329 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 2 (Infant and Child Personal Care (Ages 0-5)) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat2-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 2,
+    "category_name": "Infant and Child Personal Care (Ages 0-5)",
+    "volume_name": "Infant and Child Personal Care (Ages 0-5)",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat2-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "infant-and-child-personal-care",
+    "doi_suffix": "hmtc.manual.infant-and-child-personal-care",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Infant and Child Personal Care (Ages 0-5): HMTc Program Manual",
+    "download_pdf": "HMTc-Infant-and-Child-Personal-Care-Ages-0-5-Program-Manual-v1.pdf",
+    "description": "The Infant and Child Personal Care (Ages 0-5) Program Manual for Category 2: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Infant and Child Personal Care (Ages 0-5) Program Manual is the Category 2 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.infant-and-child-personal-care is reserved for deposit and is not yet assigned. The Manual binds the sixteen live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Infant and Child Personal Care (Ages 0-5)",
+      "Category 2",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.infant-and-child-personal-care"
+    ],
+    "scope_lead_html": "This manual states how Category 2 Infant and Child Personal Care (Ages 0-5) is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The sixteen live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury) and tested on the program retest schedule. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>, and the <a href=\"/briefings/why-baby-wipes-standard-adds-antimony\" style=\"color:#1c43ad\">why the baby-wipes standard adds antimony</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Sixteen subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.infant-and-child-personal-care is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Baby lotion and cream",
+        "href": "/standards/baby-lotion-cream"
+      },
+      {
+        "label": "Baby oil",
+        "href": "/standards/baby-oil"
+      },
+      {
+        "label": "Baby powder, cornstarch base (clean counterpart)",
+        "href": "/standards/baby-powder-cornstarch"
+      },
+      {
+        "label": "Baby shampoo and body wash",
+        "href": "/standards/baby-shampoo-body-wash"
+      },
+      {
+        "label": "Baby sunscreen, chemical UV filters (clean)",
+        "href": "/standards/baby-sunscreen-chemical"
+      },
+      {
+        "label": "Baby sunscreen, mineral UV filters (dirty)",
+        "href": "/standards/baby-sunscreen-mineral"
+      },
+      {
+        "label": "Baby talcum powder (talc, dirty)",
+        "href": "/standards/baby-talcum-powder"
+      },
+      {
+        "label": "Baby wipes",
+        "href": "/standards/baby-wipes"
+      },
+      {
+        "label": "Children's lip balm, mineral-bearing",
+        "href": "/standards/childrens-lip-balm-mineral-bearing"
+      },
+      {
+        "label": "Children's lip balm, plain",
+        "href": "/standards/childrens-lip-balm-plain"
+      },
+      {
+        "label": "Children's makeup",
+        "href": "/standards/childrens-makeup"
+      },
+      {
+        "label": "Children's nail polish",
+        "href": "/standards/childrens-nail-polish"
+      },
+      {
+        "label": "Diaper cream, non-ZnO",
+        "href": "/standards/diaper-cream-non-zno"
+      },
+      {
+        "label": "Diaper cream, ZnO-based",
+        "href": "/standards/diaper-cream-zno"
+      },
+      {
+        "label": "Children's face paint",
+        "href": "/standards/face-paint"
+      },
+      {
+        "label": "Children's toothpaste",
+        "href": "/standards/toothpaste"
+      },
+      {
+        "label": "Why the baby-wipes standard adds antimony",
+        "href": "/briefings/why-baby-wipes-standard-adds-antimony"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "baby-lotion-cream",
+      "name": "Baby lotion and cream",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-lotion-cream"
+        }
+      ]
+    },
+    {
+      "slug": "baby-oil",
+      "name": "Baby oil",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-oil"
+        }
+      ]
+    },
+    {
+      "slug": "baby-powder-cornstarch",
+      "name": "Baby powder, cornstarch base (clean counterpart)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-powder-cornstarch"
+        }
+      ]
+    },
+    {
+      "slug": "baby-shampoo-body-wash",
+      "name": "Baby shampoo and body wash",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-shampoo-body-wash"
+        }
+      ]
+    },
+    {
+      "slug": "baby-sunscreen-chemical",
+      "name": "Baby sunscreen, chemical UV filters (clean)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-sunscreen-chemical"
+        }
+      ]
+    },
+    {
+      "slug": "baby-sunscreen-mineral",
+      "name": "Baby sunscreen, mineral UV filters (dirty)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-sunscreen-mineral"
+        }
+      ]
+    },
+    {
+      "slug": "baby-talcum-powder",
+      "name": "Baby talcum powder (talc, dirty)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-talcum-powder"
+        }
+      ]
+    },
+    {
+      "slug": "baby-wipes",
+      "name": "Baby wipes",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "baby-wipes"
+        }
+      ]
+    },
+    {
+      "slug": "childrens-lip-balm-mineral-bearing",
+      "name": "Children's lip balm, mineral-bearing",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "childrens-lip-balm-mineral-bearing"
+        }
+      ]
+    },
+    {
+      "slug": "childrens-lip-balm-plain",
+      "name": "Children's lip balm, plain",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "childrens-lip-balm-plain"
+        }
+      ]
+    },
+    {
+      "slug": "childrens-makeup",
+      "name": "Children's makeup",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "childrens-makeup"
+        }
+      ]
+    },
+    {
+      "slug": "childrens-nail-polish",
+      "name": "Children's nail polish",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "childrens-nail-polish"
+        }
+      ]
+    },
+    {
+      "slug": "diaper-cream-non-zno",
+      "name": "Diaper cream, non-ZnO",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "diaper-cream-non-zno"
+        }
+      ]
+    },
+    {
+      "slug": "diaper-cream-zno",
+      "name": "Diaper cream, ZnO-based",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "diaper-cream-zno"
+        }
+      ]
+    },
+    {
+      "slug": "face-paint",
+      "name": "Children's face paint",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "face-paint"
+        }
+      ]
+    },
+    {
+      "slug": "toothpaste",
+      "name": "Children's toothpaste",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toothpaste"
+        }
+      ]
+    }
+  ]
+}

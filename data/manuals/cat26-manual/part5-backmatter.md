@@ -8,7 +8,7 @@ Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and tota
 
 Aluminium is not an ICH Q3D analyte. It uses the FDA injectable limit (25) on the injectable and nasal standards [3]. It uses the EU drinking-water limit (200) on raw powders and oral SARMs [4].
 
-Inorganic arsenic, methylmercury, and hexavalent chromium do not carry a separate numeric ceiling. Each is capped at its parent total and tested on every lot. The species never replaces the parent.
+Inorganic arsenic, methylmercury, and hexavalent chromium do not carry a separate numeric ceiling. Each is capped at its parent total and tested on the program retest schedule. The species never replaces the parent.
 
 Every figure above is the value already published on the standard record. This manual does not add a ceiling. Occurrence data carry no compliance weight [5].
 

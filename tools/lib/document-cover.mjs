@@ -29,11 +29,28 @@ export const DEFAULT_OG_WIDTH = 1200
 export const DEFAULT_OG_HEIGHT = 630
 export const OG_LETTERBOX = { r: 255, g: 253, b: 251, alpha: 1 } // canon paper #fffdfb
 
-export const MANUAL_COVER_JOBS = [
+const MANUAL_COVER_JOBS_STATIC = [
   { slug: "infant-and-child-foods", pdf: "HMTc-Infant-and-Child-Foods-Program-Manual-v3.pdf", stem: "infant-and-child-foods-v3" },
   { slug: "pet-foods", pdf: "HMTc-Pet-Foods-Program-Manual-2026.pdf", stem: "pet-foods-2026" },
   { slug: "peptides-sarms-and-research-chemicals", pdf: "HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf", stem: "peptides-sarms-and-research-chemicals-v1" },
 ]
+
+function manifestCoverJobs() {
+  const manPath = path.join(REPO_ROOT, "data/manuals/manifest.json")
+  if (!fs.existsSync(manPath)) return []
+  let manuals = []
+  try { manuals = JSON.parse(fs.readFileSync(manPath, "utf8")).manuals || [] } catch { return [] }
+  const have = new Set(MANUAL_COVER_JOBS_STATIC.map((j) => j.slug))
+  const extra = []
+  for (const m of manuals) {
+    if (!m || have.has(m.slug) || m.status !== "published" || !m.download_pdf) continue
+    const ver = String(m.download_pdf).match(/-v(\d+)\.pdf$/)
+    extra.push({ slug: m.slug, pdf: m.download_pdf, stem: `${m.slug}-v${ver ? ver[1] : "1"}` })
+  }
+  return extra
+}
+
+export const MANUAL_COVER_JOBS = [...MANUAL_COVER_JOBS_STATIC, ...manifestCoverJobs()]
 
 export const COVER_RELATION = {
   relatedIdentifierType: "URL",

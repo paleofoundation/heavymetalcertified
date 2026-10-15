@@ -1,0 +1,160 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 32 (Condiments, Sauces and Dressings) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat32-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 32,
+    "category_name": "Condiments, Sauces and Dressings",
+    "volume_name": "Condiments, Sauces and Dressings",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "compiled_dir": "cat32-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "condiments-sauces-and-dressings",
+    "doi_suffix": "hmtc.manual.condiments-sauces-and-dressings",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Condiments, Sauces and Dressings: HMTc Program Manual",
+    "download_pdf": "HMTc-Condiments-Sauces-and-Dressings-Program-Manual-v1.pdf",
+    "description": "The Condiments, Sauces and Dressings Program Manual for Category 32: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Condiments, Sauces and Dressings Program Manual is the Category 32 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.condiments-sauces-and-dressings is reserved for deposit and is not yet assigned. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on the program retest schedule. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Condiments, Sauces and Dressings",
+      "Category 32",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.condiments-sauces-and-dressings"
+    ],
+    "scope_lead_html": "This manual states how Category 32 Condiments, Sauces and Dressings is certified for metal safety. It does not certify efficacy, legality, or approval status. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on the program retest schedule. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The five live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on the program retest schedule. It is not an empty cell and not an invented number. A printed number on inorganic arsenic is the ceiling on that row.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Five subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.condiments-sauces-and-dressings is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Fish sauce (fermented anchovy/marine sauce)",
+        "href": "/standards/fish-sauce"
+      },
+      {
+        "label": "Prepared mustard, mayonnaise and salad dressings",
+        "href": "/standards/mustard-mayo-dressings"
+      },
+      {
+        "label": "Soy sauce and fermented seasoning sauces",
+        "href": "/standards/soy-sauce-fermented"
+      },
+      {
+        "label": "Tomato condiments (ketchup, salsa)",
+        "href": "/standards/tomato-condiments"
+      },
+      {
+        "label": "Vinegar (distilled, wine, balsamic, cider, rice)",
+        "href": "/standards/vinegar"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "fish-sauce",
+      "name": "Fish sauce (fermented anchovy/marine sauce)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "fish-sauce"
+        }
+      ]
+    },
+    {
+      "slug": "mustard-mayo-dressings",
+      "name": "Prepared mustard, mayonnaise and salad dressings",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "mustard-mayo-dressings"
+        }
+      ]
+    },
+    {
+      "slug": "soy-sauce-fermented",
+      "name": "Soy sauce and fermented seasoning sauces",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "soy-sauce-fermented"
+        }
+      ]
+    },
+    {
+      "slug": "tomato-condiments",
+      "name": "Tomato condiments (ketchup, salsa)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "tomato-condiments"
+        }
+      ]
+    },
+    {
+      "slug": "vinegar",
+      "name": "Vinegar (distilled, wine, balsamic, cider, rice)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "vinegar"
+        }
+      ]
+    }
+  ]
+}

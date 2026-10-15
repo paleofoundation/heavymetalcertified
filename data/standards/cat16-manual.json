@@ -1,0 +1,449 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 16 (Dietary Supplements (Human)) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat16-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 16,
+    "category_name": "Dietary Supplements (Human)",
+    "volume_name": "Dietary Supplements (Human)",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat16-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "dietary-supplements",
+    "doi_suffix": "hmtc.manual.dietary-supplements",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Dietary Supplements (Human): HMTc Program Manual",
+    "download_pdf": "HMTc-Dietary-Supplements-Human-Program-Manual-v1.pdf",
+    "description": "The Dietary Supplements (Human) Program Manual for Category 16: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Dietary Supplements (Human) Program Manual is the Category 16 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.dietary-supplements is reserved for deposit and is not yet assigned. The Manual binds the twenty-four live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic publishes the number already on the live standard. That number does not replace total arsenic. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Dietary Supplements (Human)",
+      "Category 16",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.dietary-supplements"
+    ],
+    "scope_lead_html": "This manual states how Category 16 Dietary Supplements (Human) is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic publishes the number already on the live standard. That number does not replace total arsenic. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The twenty-four live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (methylmercury at total mercury, hexavalent chromium at total chromium) and tested on the program retest schedule. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>, and the <a href=\"/briefings/supplements-child-protective\" style=\"color:#1c43ad\">the child eats the adult's supplement</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Twenty-four subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.dietary-supplements is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Oral solids: tablets/caplets",
+        "href": "/standards/supplements-oral-solids-tablets"
+      },
+      {
+        "label": "Oral solids: capsules",
+        "href": "/standards/supplements-oral-solids-capsules"
+      },
+      {
+        "label": "Oral solids: softgels/gelcaps",
+        "href": "/standards/supplements-oral-solids-softgels"
+      },
+      {
+        "label": "Oral solids: gummies/chewables",
+        "href": "/standards/supplements-oral-solids-gummies"
+      },
+      {
+        "label": "Oral solids: lozenges",
+        "href": "/standards/supplements-oral-solids-lozenges"
+      },
+      {
+        "label": "Oral solids: powders (bulk tubs, sachets, stick packs)",
+        "href": "/standards/supplements-oral-solids-powders"
+      },
+      {
+        "label": "Oral solids: effervescent tablets",
+        "href": "/standards/supplements-oral-solids-effervescent"
+      },
+      {
+        "label": "Oral liquids: tinctures/drops",
+        "href": "/standards/supplements-oral-liquids-tinctures"
+      },
+      {
+        "label": "Oral liquids: syrups",
+        "href": "/standards/supplements-oral-liquids-syrups"
+      },
+      {
+        "label": "Oral liquids: liquid shots",
+        "href": "/standards/supplements-oral-liquids-shots"
+      },
+      {
+        "label": "Oral liquids: droppers",
+        "href": "/standards/supplements-oral-liquids-droppers"
+      },
+      {
+        "label": "Food-like forms: teas (when labeled as supplement)",
+        "href": "/standards/supplements-teas-labeled"
+      },
+      {
+        "label": "Food-like forms: bars (when labeled as supplement)",
+        "href": "/standards/supplements-bars-labeled"
+      },
+      {
+        "label": "Ingredient class: vitamin/mineral (single, multi-mineral, multi-vitamin/mineral)",
+        "href": "/standards/supplements-vitamin-mineral"
+      },
+      {
+        "label": "Ingredient class: botanicals/herbs/traditional formulas",
+        "href": "/standards/supplements-botanicals-herbs"
+      },
+      {
+        "label": "Ingredient class: amino acids & isolates",
+        "href": "/standards/supplements-amino-acids-isolates"
+      },
+      {
+        "label": "Ingredient class: enzymes",
+        "href": "/standards/supplements-enzymes"
+      },
+      {
+        "label": "Ingredient class: live microbials/probiotics",
+        "href": "/standards/supplements-probiotics"
+      },
+      {
+        "label": "Ingredient class: algae/seaweed-based",
+        "href": "/standards/supplements-algae-seaweed-based"
+      },
+      {
+        "label": "Ingredient class: protein/collagen powders",
+        "href": "/standards/supplements-protein-collagen-powders"
+      },
+      {
+        "label": "Ingredient class: oil-based supplements (fish oil/omega-3 and similar)",
+        "href": "/standards/supplements-oil-based"
+      },
+      {
+        "label": "Ingredient class: clay/mineral/earth-derived (bentonite, diatomaceous earth, zeolite, shilajit)",
+        "href": "/standards/supplements-clay-mineral-earth"
+      },
+      {
+        "label": "Ingredient class: mushroom/fungal extracts (lion's mane, reishi, cordyceps, chaga)",
+        "href": "/standards/supplements-mushroom-fungal"
+      },
+      {
+        "label": "Ingredient class: greens/superfood blends",
+        "href": "/standards/supplements-greens-superfood"
+      },
+      {
+        "label": "The child eats the adult's supplement",
+        "href": "/briefings/supplements-child-protective"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "supplements-oral-solids-tablets",
+      "name": "Oral solids: tablets/caplets",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-tablets"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-capsules",
+      "name": "Oral solids: capsules",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-capsules"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-softgels",
+      "name": "Oral solids: softgels/gelcaps",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-softgels"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-gummies",
+      "name": "Oral solids: gummies/chewables",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-gummies"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-lozenges",
+      "name": "Oral solids: lozenges",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-lozenges"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-powders",
+      "name": "Oral solids: powders (bulk tubs, sachets, stick packs)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-powders"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-solids-effervescent",
+      "name": "Oral solids: effervescent tablets",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-solids-effervescent"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-tinctures",
+      "name": "Oral liquids: tinctures/drops",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-tinctures"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-syrups",
+      "name": "Oral liquids: syrups",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-syrups"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-shots",
+      "name": "Oral liquids: liquid shots",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-shots"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oral-liquids-droppers",
+      "name": "Oral liquids: droppers",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oral-liquids-droppers"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-teas-labeled",
+      "name": "Food-like forms: teas (when labeled as supplement)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-teas-labeled"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-bars-labeled",
+      "name": "Food-like forms: bars (when labeled as supplement)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-bars-labeled"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-vitamin-mineral",
+      "name": "Ingredient class: vitamin/mineral (single, multi-mineral, multi-vitamin/mineral)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-vitamin-mineral"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-botanicals-herbs",
+      "name": "Ingredient class: botanicals/herbs/traditional formulas",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-botanicals-herbs"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-amino-acids-isolates",
+      "name": "Ingredient class: amino acids & isolates",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-amino-acids-isolates"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-enzymes",
+      "name": "Ingredient class: enzymes",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-enzymes"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-probiotics",
+      "name": "Ingredient class: live microbials/probiotics",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-probiotics"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-algae-seaweed-based",
+      "name": "Ingredient class: algae/seaweed-based",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-algae-seaweed-based"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-protein-collagen-powders",
+      "name": "Ingredient class: protein/collagen powders",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-protein-collagen-powders"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-oil-based",
+      "name": "Ingredient class: oil-based supplements (fish oil/omega-3 and similar)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-oil-based"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-clay-mineral-earth",
+      "name": "Ingredient class: clay/mineral/earth-derived (bentonite, diatomaceous earth, zeolite, shilajit)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-clay-mineral-earth"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-mushroom-fungal",
+      "name": "Ingredient class: mushroom/fungal extracts (lion's mane, reishi, cordyceps, chaga)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-mushroom-fungal"
+        }
+      ]
+    },
+    {
+      "slug": "supplements-greens-superfood",
+      "name": "Ingredient class: greens/superfood blends",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "supplements-greens-superfood"
+        }
+      ]
+    }
+  ]
+}

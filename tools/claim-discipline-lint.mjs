@@ -20,6 +20,7 @@
 
 import fs from "node:fs"
 import path from "node:path"
+import { routineEveryLotHits } from "./lib/every-lot-claim.mjs"
 
 const ROOT = path.join(process.cwd(), "content")
 
@@ -61,13 +62,25 @@ function main() {
       }
     })
   }
+  const everyLot = []
+  for (const f of files) {
+    const text = fs.readFileSync(f, "utf8")
+    for (const hit of routineEveryLotHits(text)) {
+      everyLot.push({ file: path.relative(process.cwd(), f), line: hit.line, hit: hit.phrase })
+    }
+  }
   if (violations.length) {
     console.error(`claim-discipline-lint: ${violations.length} unqualified superiority claim(s) — these are false on most cells and are a Lanham/FTC/Daubert liability:`)
     for (const v of violations) console.error(`  ✗ ${v.file}:${v.line}  "${v.hit}"  — ${v.why}`)
     console.error(`\nUse the composite claim instead: "the strictest EXISTING limit any credible government sets, applied cell-by-cell across every metal and category — no single government is this strict across the whole matrix." See docs (project_hmtc_marketing_repositioning).`)
     process.exit(1)
   }
-  console.log(`claim-discipline-lint: ${files.length} pages clean — no unqualified superiority claims.`)
+  if (everyLot.length) {
+    console.error(`claim-discipline-lint: ${everyLot.length} routine every-lot testing claim(s). Licensees retest on the program retest schedule. Every-lot testing is allowed only in an explicit Remediation sentence or table row:`)
+    for (const v of everyLot) console.error(`  ✗ ${v.file}:${v.line}  "${v.hit}"`)
+    process.exit(1)
+  }
+  console.log(`claim-discipline-lint: ${files.length} pages clean — no unqualified superiority claims, no routine every-lot testing claims.`)
 }
 
 main()

@@ -1,0 +1,145 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 31 (Sweeteners and Syrups) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat31-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 31,
+    "category_name": "Sweeteners and Syrups",
+    "volume_name": "Sweeteners and Syrups",
+    "panel": [
+      "Pb",
+      "Cd",
+      "tAs",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Ni",
+      "Cr",
+      "Cr-VI",
+      "Sn",
+      "Al"
+    ],
+    "compiled_dir": "cat31-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "sweeteners-and-syrups",
+    "doi_suffix": "hmtc.manual.sweeteners-and-syrups",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Sweeteners and Syrups: HMTc Program Manual",
+    "download_pdf": "HMTc-Sweeteners-and-Syrups-Program-Manual-v1.pdf",
+    "description": "The Sweeteners and Syrups Program Manual for Category 31: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Sweeteners and Syrups Program Manual is the Category 31 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.sweeteners-and-syrups is reserved for deposit and is not yet assigned. The Manual binds the four live subcategory standard pages; those pages remain the derivation of each cell. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on the program retest schedule. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Sweeteners and Syrups",
+      "Category 31",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.sweeteners-and-syrups"
+    ],
+    "scope_lead_html": "This manual states how Category 31 Sweeteners and Syrups is certified for metal safety. It does not certify efficacy, legality, or approval status. Where inorganic arsenic has no separate number, it is capped at total arsenic and tested on the program retest schedule. Where the live standard publishes a number, that number is the ceiling, and it does not replace the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The four live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on the program retest schedule. It is not an empty cell and not an invented number. A printed number on inorganic arsenic is the ceiling on that row.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Four subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.sweeteners-and-syrups is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Honey",
+        "href": "/standards/honey"
+      },
+      {
+        "label": "Refined sugar (white, dextrose)",
+        "href": "/standards/refined-sugar"
+      },
+      {
+        "label": "Rice and grain syrup (brown rice syrup, glucose/malt syrup)",
+        "href": "/standards/rice-grain-syrup"
+      },
+      {
+        "label": "Syrups (maple, agave, molasses)",
+        "href": "/standards/syrups-maple-agave-molasses"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "honey",
+      "name": "Honey",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "honey"
+        }
+      ]
+    },
+    {
+      "slug": "refined-sugar",
+      "name": "Refined sugar (white, dextrose)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "refined-sugar"
+        }
+      ]
+    },
+    {
+      "slug": "rice-grain-syrup",
+      "name": "Rice and grain syrup (brown rice syrup, glucose/malt syrup)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "rice-grain-syrup"
+        }
+      ]
+    },
+    {
+      "slug": "syrups-maple-agave-molasses",
+      "name": "Syrups (maple, agave, molasses)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "syrups-maple-agave-molasses"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 28 (Nuts, Seeds, and Their Butters) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat28-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 28,
+    "category_name": "Nuts, Seeds, and Their Butters",
+    "volume_name": "Nuts, Seeds, and Their Butters",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat28-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "nuts-seeds-and-their-butters",
+    "doi_suffix": "hmtc.manual.nuts-seeds-and-their-butters",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Nuts, Seeds, and Their Butters: HMTc Program Manual",
+    "download_pdf": "HMTc-Nuts-Seeds-and-Their-Butters-Program-Manual-v1.pdf",
+    "description": "The Nuts, Seeds, and Their Butters Program Manual for Category 28: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Nuts, Seeds, and Their Butters Program Manual is the Category 28 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.nuts-seeds-and-their-butters is reserved for deposit and is not yet assigned. The Manual binds the six live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Nuts, Seeds, and Their Butters",
+      "Category 28",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.nuts-seeds-and-their-butters"
+    ],
+    "scope_lead_html": "This manual states how Category 28 Nuts, Seeds, and Their Butters is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is capped at total arsenic and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Methylmercury is capped at total mercury and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Hexavalent chromium is capped at total chromium and tested on the program retest schedule. It does not carry a separate number, and it never replaces the parent. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The six live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. A dash is a species capped at its parent total (inorganic arsenic at total arsenic, methylmercury at total mercury, hexavalent chromium at total chromium) and tested on the program retest schedule. It is not an empty cell and not an invented number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Six subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.nuts-seeds-and-their-butters is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Cashews (cashew nuts, whole and pieces)",
+        "href": "/standards/cashews"
+      },
+      {
+        "label": "Nut and seed butters (almond, cashew, tahini/sesame, and other non-sunflower non-peanut butters)",
+        "href": "/standards/nut-seed-butters-other"
+      },
+      {
+        "label": "Nuts and seeds (general tree nuts and non-sunflower oilseeds: almonds, pistachios, hazelnuts, pecans, macadamias, sesame, flax, pumpkin, other)",
+        "href": "/standards/nuts-seeds-other"
+      },
+      {
+        "label": "Sunflower seed butter (ground sunflower seeds)",
+        "href": "/standards/sunflower-seed-butter"
+      },
+      {
+        "label": "Sunflower seeds (a known cadmium accumulator)",
+        "href": "/standards/sunflower-seeds"
+      },
+      {
+        "label": "High-nickel tree nuts (walnuts, pine nuts, Brazil nuts, chestnuts)",
+        "href": "/standards/tree-nuts-high-nickel"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "cashews",
+      "name": "Cashews (cashew nuts, whole and pieces)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "cashews"
+        }
+      ]
+    },
+    {
+      "slug": "nut-seed-butters-other",
+      "name": "Nut and seed butters (almond, cashew, tahini/sesame, and other non-sunflower non-peanut butters)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "nut-seed-butters-other"
+        }
+      ]
+    },
+    {
+      "slug": "nuts-seeds-other",
+      "name": "Nuts and seeds (general tree nuts and non-sunflower oilseeds: almonds, pistachios, hazelnuts, pecans, macadamias, sesame, flax, pumpkin, other)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "nuts-seeds-other"
+        }
+      ]
+    },
+    {
+      "slug": "sunflower-seed-butter",
+      "name": "Sunflower seed butter (ground sunflower seeds)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "sunflower-seed-butter"
+        }
+      ]
+    },
+    {
+      "slug": "sunflower-seeds",
+      "name": "Sunflower seeds (a known cadmium accumulator)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "sunflower-seeds"
+        }
+      ]
+    },
+    {
+      "slug": "tree-nuts-high-nickel",
+      "name": "High-nickel tree nuts (walnuts, pine nuts, Brazil nuts, chestnuts)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "both",
+          "record": "tree-nuts-high-nickel"
+        }
+      ]
+    }
+  ]
+}

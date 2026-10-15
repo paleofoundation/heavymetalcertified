@@ -4,8 +4,8 @@ type: manuals-index
 audience: [regulator, brand-legal, retailer-compliance, certifier]
 description: "The bound, citable edition of a category's standards. Each manual carries a DOI, a named author, a revision date, and the full derivation of every limit it publishes, so a limit can be cited in a filing years after the web page has moved on."
 snapshot:
-  - { k: "Published manuals", v: "2" }
-  - { k: "Subcategory standards", v: "14" }
+  - { k: "Published manuals", v: "17" }
+  - { k: "Subcategory standards", v: "190" }
   - { k: "Editions", v: "named on each row" }
   - { k: "Method", v: "v2.0 gov_floor | read_across" }
 connections:
@@ -21,7 +21,7 @@ rail_box:
 ---
 <section id="published" class="hmtc-section">
   <h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px;margin:0 0 20px">Published editions</h2>
-  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">2 categories are in force, carrying 14 subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
+  <p style="font-size:13.5px;line-height:1.7;color:#736b6b;margin:0 0 20px;max-width:84ch">17 categories are in force, carrying 190 subcategory standards between them. Each row names that volume's edition. Each manual is the bound, citable volume for its category; the web pages are the same content per subcategory.</p>
   <div style="border:1px solid #e8e1db;background:#fffdfb;margin-bottom:20px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
       <div style="min-width:0">
@@ -36,6 +36,111 @@ rail_box:
         <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 5 subcategories &middot; 13 pp</div>
       </div>
       <a href="/static/manuals/HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/infant-and-child-personal-care" style="color:#2b1f1f;text-decoration:none">Infant and Child Personal Care (Ages 0-5)</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 16 subcategories &middot; 14 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Infant-and-Child-Personal-Care-Ages-0-5-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/cosmetics-and-personal-care-rinse-off" style="color:#2b1f1f;text-decoration:none">Cosmetics and Personal Care, Rinse-off</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 12 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Cosmetics-and-Personal-Care-Rinse-off-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/feminine-care" style="color:#2b1f1f;text-decoration:none">Feminine Care</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 10 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Feminine-Care-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/dietary-supplements" style="color:#2b1f1f;text-decoration:none">Dietary Supplements (Human)</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 24 subcategories &middot; 14 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Dietary-Supplements-Human-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/pet-supplements" style="color:#2b1f1f;text-decoration:none">Pet Supplements</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 7 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Pet-Supplements-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/laundry-and-fabric-contact-home-products" style="color:#2b1f1f;text-decoration:none">Laundry and Fabric-Contact Home Products</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 13 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Laundry-and-Fabric-Contact-Home-Products-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/childrens-toys-arts-and-crafts" style="color:#2b1f1f;text-decoration:none">Children's Toys, Arts, and Crafts</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 21 subcategories &middot; 14 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/home-air-and-inhalation-adjacent-products" style="color:#2b1f1f;text-decoration:none">Home Air and Inhalation-Adjacent Products</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 15 subcategories &middot; 14 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Home-Air-and-Inhalation-Adjacent-Products-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/food-contact-consumer-goods-and-kitchenware" style="color:#2b1f1f;text-decoration:none">Food-Contact Consumer Goods and Kitchenware</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 30 subcategories &middot; 15 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Food-Contact-Consumer-Goods-and-Kitchenware-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/cannabis-hemp-and-cbd-products" style="color:#2b1f1f;text-decoration:none">Cannabis, Hemp, and CBD Products</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 6 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Cannabis-Hemp-and-CBD-Products-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/legumes-and-pulses" style="color:#2b1f1f;text-decoration:none">Legumes and Pulses</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 4 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Legumes-and-Pulses-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/nuts-seeds-and-their-butters" style="color:#2b1f1f;text-decoration:none">Nuts, Seeds, and Their Butters</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 6 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Nuts-Seeds-and-Their-Butters-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/edible-fungi" style="color:#2b1f1f;text-decoration:none">Edible Fungi</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 3 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Edible-Fungi-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/sweeteners-and-syrups" style="color:#2b1f1f;text-decoration:none">Sweeteners and Syrups</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 4 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Sweeteners-and-Syrups-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid #f2ece7">
+      <div style="min-width:0">
+        <div style="font-family:Lora,serif;font-size:19px;line-height:1.3;color:#2b1f1f"><a href="/manuals/condiments-sauces-and-dressings" style="color:#2b1f1f;text-decoration:none">Condiments, Sauces and Dressings</a></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#a9a1a1;margin-top:4px">Manual v1 &middot; 5 subcategories &middot; 13 pp</div>
+      </div>
+      <a href="/static/manuals/HMTc-Condiments-Sauces-and-Dressings-Program-Manual-v1.pdf" download="download" style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#9f2727;border:1px solid #f2dcda;background:#fdf4f3;border-radius:2px;padding:5px 10px;text-decoration:none;white-space:nowrap">Download PDF</a>
     </div>
   </div>
   <div style="border:1px solid #e8e1db;background:#fffdfb;padding:16px 18px;margin-bottom:16px">

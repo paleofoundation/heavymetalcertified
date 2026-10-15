@@ -252,7 +252,7 @@ function Cover() {
     h(View, { key: "ab", style: s.abstractBox }, [
       h(Text, { key: "l", style: s.abstractLabel }, "About this manual"),
       h(Text, { key: "b", style: s.abstractBody },
-        `The Category 26 program manual. Seven metals (Pb, Cd, tAs, tHg, Ni, Sn, Cr) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (${LIMITS.parenteralAl}) for the injectable and nasal standards and the EU drinking-water limit (${LIMITS.oralAl}) for raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on every lot. Scope: metal safety only, not efficacy, legality, or approval status. The manual DOI is not deposited in this edition.`),
+        `The Category 26 program manual. Seven metals (Pb, Cd, tAs, tHg, Ni, Sn, Cr) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (${LIMITS.parenteralAl}) for the injectable and nasal standards and the EU drinking-water limit (${LIMITS.oralAl}) for raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. Scope: metal safety only, not efficacy, legality, or approval status. The manual DOI is not deposited in this edition.`),
     ]),
     h(Text, { key: "cite", style: [s.coverText, { marginTop: 8 }] }, cite),
     h(Text, { key: "cpr", style: [s.coverText, { marginTop: 4 }] }, COPYRIGHT),

@@ -16,6 +16,7 @@ import { renderStruggleSection } from "./lib/struggle-section.mjs"
 import { renderManualPage } from "./lib/manual-page.mjs"
 import { resolveCover, resolveOgImage } from "./lib/document-cover.mjs"
 import { resolveManualCertDoi, depositedCopy } from "./lib/manual-doi.mjs"
+import { basisLabel } from "./lib/category-program-manual.mjs"
 
 const REPO = process.cwd()
 const args = new Map((process.argv.slice(2)).map((a) => { const [k, v] = a.replace(/^--/, "").split("="); return [k, v ?? true] }))
@@ -87,7 +88,7 @@ function valuesFor(page) {
     const uniq = [...new Set(vals.map((x) => x.v))]
     out[a] = uniq.length === 1 ? uniq[0] : vals.map((x) => `${x.v} ${x.label}`).join(" / ")
   }
-  const basis = parts[0].native === "as_sold" ? "as sold" : "as consumed"
+  const basis = basisLabel(parts[0].native)
   return { out, basis }
 }
 
