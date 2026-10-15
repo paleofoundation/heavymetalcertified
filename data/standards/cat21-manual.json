@@ -1,0 +1,400 @@
+{
+  "_meta": {
+    "_doc": "MANUAL-ONLY config for the Category 21 (Children's Toys, Arts, and Crafts) Program Manual landing page, consumed by tools/build-category-manual.mjs. Deliberately NOT named '*-pages.json' so tools/render-all-standard-pages.mjs does NOT pick it up. The subcategory pages are rendered from data/standards/cat21-pages.json. This manual re-presents the SAME numbers already live on those pages. cert_doi stays empty until the house deposit.",
+    "category": 21,
+    "category_name": "Children's Toys, Arts, and Crafts",
+    "volume_name": "Children's Toys, Arts, and Crafts",
+    "panel": [
+      "Pb",
+      "iAs",
+      "tAs",
+      "tHg",
+      "MeHg",
+      "Cd",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "tier1": [
+      "Pb",
+      "iAs",
+      "tHg",
+      "MeHg",
+      "Cd"
+    ],
+    "tier2": [
+      "tAs",
+      "Cr-VI",
+      "Ni",
+      "Sn",
+      "Al",
+      "Cr"
+    ],
+    "compiled_dir": "cat21-compiled",
+    "methodology_version": "Method v2.0",
+    "effective_date": "2026-10-15",
+    "default_version": "1.0 (2026-10-15)",
+    "manual_slug": "childrens-toys-arts-and-crafts",
+    "doi_suffix": "hmtc.manual.childrens-toys-arts-and-crafts",
+    "edition": "Manual v1",
+    "edition_chip": "Manual v1 · Method v2.0",
+    "pdf_label": "Download PDF · Manual v1",
+    "page_title": "Children's Toys, Arts, and Crafts: HMTc Program Manual",
+    "download_pdf": "HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf",
+    "description": "The Children's Toys, Arts, and Crafts Program Manual for Category 21: metal-safety limits, lot testing, and the standards register.",
+    "method_snapshot": "Method v2.0",
+    "scholar_abstract": "The Children's Toys, Arts, and Crafts Program Manual is the Category 21 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.childrens-toys-arts-and-crafts is reserved for deposit and is not yet assigned. The Manual binds the twenty-one live subcategory standard pages; those pages remain the derivation of each cell. Inorganic arsenic is not material on these standards. The cell is not a number. Methylmercury is not material on these standards. The cell is not a number. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved.",
+    "keywords": [
+      "Children's Toys, Arts, and Crafts",
+      "Category 21",
+      "Manual v1",
+      "Heavy Metal Certified",
+      "Institute of Contaminant Standards",
+      "Lot Testing Schedule",
+      "hmtc.manual.childrens-toys-arts-and-crafts"
+    ],
+    "scope_lead_html": "This manual states how Category 21 Children's Toys, Arts, and Crafts is certified for metal safety. It does not certify efficacy, legality, or approval status. Inorganic arsenic is not material on these standards. The cell is not a number. Methylmercury is not material on these standards. The cell is not a number. Hexavalent chromium publishes the number already on the live standard. That number does not replace total chromium. Every figure in the matrix is read from the live standard record. Nothing in this manual invents a ceiling.",
+    "manual_method_note": "The twenty-one live standards remain the derivation of each cell. A product is certified only at or below 100% of every published ceiling. The v1 PDF carries the program rules and the standards register, including each house DOI.",
+    "matrix_note": "All values are ppb (&micro;g/kg), in the row's basis. Click any subcategory for its derivation. n/m means not material (inorganic arsenic, methylmercury). It is not a number.",
+    "risk_note_html": "<p style=\"font-size:16.5px;line-height:1.78;color:#3f3a3a;max-width:74ch;margin:0 0 14px\">Certification is decided on the product's own tested lot against the published ceiling. The limit is that ceiling on the live standard. Occurrence data do not set it. An individual lot can still exceed a limit.</p><p style=\"font-size:12.5px;line-height:1.7;color:#a9a1a1;max-width:84ch;margin:0\">See <a href=\"/hard-to-meet\" style=\"color:#1c43ad\">the cross-category summary</a>.</p>",
+    "rail_body": "Manual v1 current (2026-10-15, Method v2.0). Twenty-one subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.childrens-toys-arts-and-crafts is reserved for deposit. cert_doi on this page stays empty until that deposit.",
+    "edition_pdf_line": "The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.",
+    "connections": [
+      {
+        "label": "Art & craft materials (paints, markers, crayons, colored pencils, inks, adhesives/glues, modeling clay, putties/gels/slimes, glitter/pigments, jewelry/craft kits)",
+        "href": "/standards/art-craft-materials"
+      },
+      {
+        "label": "Toy chests",
+        "href": "/standards/toy-chests"
+      },
+      {
+        "label": "Toy pacifiers (toy-designated)",
+        "href": "/standards/toy-pacifiers"
+      },
+      {
+        "label": "Toys attached to cribs/playpens",
+        "href": "/standards/toys-attached-cribs-playpens"
+      },
+      {
+        "label": "Balloons",
+        "href": "/standards/toys-balloons"
+      },
+      {
+        "label": "Balls",
+        "href": "/standards/toys-balls"
+      },
+      {
+        "label": "Battery-operated/electronic toys",
+        "href": "/standards/toys-battery-electronic"
+      },
+      {
+        "label": "Other toys/crafts (case-by-case)",
+        "href": "/standards/toys-crafts-other"
+      },
+      {
+        "label": "Marbles",
+        "href": "/standards/toys-marbles"
+      },
+      {
+        "label": "General toys with paint/surface coatings",
+        "href": "/standards/toys-painted"
+      },
+      {
+        "label": "Pompoms and similar small fibrous craft items",
+        "href": "/standards/toys-pompoms-fibrous-craft"
+      },
+      {
+        "label": "Projectile toys and toy guns",
+        "href": "/standards/toys-projectile-guns"
+      },
+      {
+        "label": "Rattles",
+        "href": "/standards/toys-rattles"
+      },
+      {
+        "label": "Sound-producing toys",
+        "href": "/standards/toys-sound-producing"
+      },
+      {
+        "label": "Squeeze toys",
+        "href": "/standards/toys-squeeze"
+      },
+      {
+        "label": "Stroller/carriage toys",
+        "href": "/standards/toys-stroller-carriage"
+      },
+      {
+        "label": "Stuffed toys and bean bag-type toys",
+        "href": "/standards/toys-stuffed-bean-bag"
+      },
+      {
+        "label": "Stuffing materials",
+        "href": "/standards/toys-stuffing-materials"
+      },
+      {
+        "label": "Toy substrate materials (accessible plastics/metals/woods/rubbers)",
+        "href": "/standards/toys-substrate-materials"
+      },
+      {
+        "label": "Toys with magnets",
+        "href": "/standards/toys-with-magnets"
+      },
+      {
+        "label": "Yo-yo elastic tether toys",
+        "href": "/standards/toys-yo-yo-elastic-tether"
+      },
+      {
+        "label": "How limits are derived",
+        "href": "/program/structure"
+      },
+      {
+        "label": "Method v1 to Method v2",
+        "href": "/program/method"
+      },
+      {
+        "label": "All Program Manuals",
+        "href": "/manuals"
+      },
+      {
+        "label": "Heavy Metal Index: literature baseline",
+        "href": "https://heavymetalindex.com"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "slug": "art-craft-materials",
+      "name": "Art & craft materials (paints, markers, crayons, colored pencils, inks, adhesives/glues, modeling clay, putties/gels/slimes, glitter/pigments, jewelry/craft kits)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "art-craft-materials"
+        }
+      ]
+    },
+    {
+      "slug": "toy-chests",
+      "name": "Toy chests",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toy-chests"
+        }
+      ]
+    },
+    {
+      "slug": "toy-pacifiers",
+      "name": "Toy pacifiers (toy-designated)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toy-pacifiers"
+        }
+      ]
+    },
+    {
+      "slug": "toys-attached-cribs-playpens",
+      "name": "Toys attached to cribs/playpens",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-attached-cribs-playpens"
+        }
+      ]
+    },
+    {
+      "slug": "toys-balloons",
+      "name": "Balloons",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-balloons"
+        }
+      ]
+    },
+    {
+      "slug": "toys-balls",
+      "name": "Balls",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-balls"
+        }
+      ]
+    },
+    {
+      "slug": "toys-battery-electronic",
+      "name": "Battery-operated/electronic toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-battery-electronic"
+        }
+      ]
+    },
+    {
+      "slug": "toys-crafts-other",
+      "name": "Other toys/crafts (case-by-case)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-crafts-other"
+        }
+      ]
+    },
+    {
+      "slug": "toys-marbles",
+      "name": "Marbles",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-marbles"
+        }
+      ]
+    },
+    {
+      "slug": "toys-painted",
+      "name": "General toys with paint/surface coatings",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-painted"
+        }
+      ]
+    },
+    {
+      "slug": "toys-pompoms-fibrous-craft",
+      "name": "Pompoms and similar small fibrous craft items",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-pompoms-fibrous-craft"
+        }
+      ]
+    },
+    {
+      "slug": "toys-projectile-guns",
+      "name": "Projectile toys and toy guns",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-projectile-guns"
+        }
+      ]
+    },
+    {
+      "slug": "toys-rattles",
+      "name": "Rattles",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-rattles"
+        }
+      ]
+    },
+    {
+      "slug": "toys-sound-producing",
+      "name": "Sound-producing toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-sound-producing"
+        }
+      ]
+    },
+    {
+      "slug": "toys-squeeze",
+      "name": "Squeeze toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-squeeze"
+        }
+      ]
+    },
+    {
+      "slug": "toys-stroller-carriage",
+      "name": "Stroller/carriage toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-stroller-carriage"
+        }
+      ]
+    },
+    {
+      "slug": "toys-stuffed-bean-bag",
+      "name": "Stuffed toys and bean bag-type toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-stuffed-bean-bag"
+        }
+      ]
+    },
+    {
+      "slug": "toys-stuffing-materials",
+      "name": "Stuffing materials",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-stuffing-materials"
+        }
+      ]
+    },
+    {
+      "slug": "toys-substrate-materials",
+      "name": "Toy substrate materials (accessible plastics/metals/woods/rubbers)",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-substrate-materials"
+        }
+      ]
+    },
+    {
+      "slug": "toys-with-magnets",
+      "name": "Toys with magnets",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-with-magnets"
+        }
+      ]
+    },
+    {
+      "slug": "toys-yo-yo-elastic-tether",
+      "name": "Yo-yo elastic tether toys",
+      "variants": [
+        {
+          "label": "all",
+          "variant": "default",
+          "record": "toys-yo-yo-elastic-tether"
+        }
+      ]
+    }
+  ]
+}

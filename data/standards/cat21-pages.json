@@ -35,6 +35,8 @@
     "tier_footnote": "",
     "reconstitution_note": false,
     "compiled_dir": "cat21-compiled",
+    "manual_slug": "childrens-toys-arts-and-crafts",
+    "download_pdf": "HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf",
     "method_label": "HMTc Method v2.0 (government-limit default; strictest applicable sovereign maximum in the row's native basis, disclosed read-across where the exact cell is unregulated; never occurrence-derived). Category 21 publishes on the element-migration basis only, with each row pinned to its own EN 71-3 material category.",
     "methodology_version": "Method v2.0 — government-limit default (CLAUDE.md Part 19, Governing Principles v2.0)",
     "basis_family": "Element MIGRATION from accessible toy material (EN 71-3 / ISO 8124-3 0.07 M HCl, 37 C), expressed in mg/kg of toy material and split by the Directive's three material categories. This is never conflated with total element CONTENT of the material (CPSIA s.101 lead, RoHS homogeneous material, REACH Annex XVII cadmium and organotin, the consumer-textile restriction), which is a different measured quantity; content instruments appear only as companion obligations in substantiation and are excluded from every cell by a per-row basis_guard.",

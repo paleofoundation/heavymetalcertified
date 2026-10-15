@@ -209,6 +209,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Laundry and Fabric-Contact Home Products Program Manual for Category 19. Thirteen live standards, each already minted under 10.83138/hmtc.std.19. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.laundry-and-fabric-contact-home-products is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 21,
+      "title": "Children's Toys, Arts, and Crafts",
+      "slug": "childrens-toys-arts-and-crafts",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Childrens-Toys-Arts-and-Crafts-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.childrens-toys-arts-and-crafts",
+      "subcategories": 21,
+      "pages": 14,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Children's Toys, Arts, and Crafts Program Manual for Category 21. Twenty-one live standards, each already minted under 10.83138/hmtc.std.21. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.childrens-toys-arts-and-crafts is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
