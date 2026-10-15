@@ -345,6 +345,23 @@
       "evidence_note": "Manual v1 (2026-10-15) is the Sweeteners and Syrups Program Manual for Category 31. Four live standards, each already minted under 10.83138/hmtc.std.31. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
       "custom_landing": true,
       "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.sweeteners-and-syrups is reserved. cert_doi stays empty until deposit."
+    },
+    {
+      "category": 32,
+      "title": "Condiments, Sauces and Dressings",
+      "slug": "condiments-sauces-and-dressings",
+      "edition": "Manual v1",
+      "pdf": "HMTc-Condiments-Sauces-and-Dressings-Program-Manual-v1.pdf",
+      "download_pdf": "HMTc-Condiments-Sauces-and-Dressings-Program-Manual-v1.pdf",
+      "status": "published",
+      "doi": null,
+      "doi_suffix": "hmtc.manual.condiments-sauces-and-dressings",
+      "subcategories": 5,
+      "pages": 13,
+      "published_date": "2026-10-15",
+      "evidence_note": "Manual v1 (2026-10-15) is the Condiments, Sauces and Dressings Program Manual for Category 32. Five live standards, each already minted under 10.83138/hmtc.std.32. Numeric ceilings are the values on those live standards. Species with no separate number are capped at the parent total. Scope is metal safety only. Served PDF is tools/build-category-program-manual-pdf.mjs (react-pdf). The manual DOI is left empty.",
+      "custom_landing": true,
+      "landing_note": "Manual v1 current (2026-10-15, Method v2.0). House DOI suffix hmtc.manual.condiments-sauces-and-dressings is reserved. cert_doi stays empty until deposit."
     }
   ]
 }
