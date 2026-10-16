@@ -8,9 +8,9 @@
 // are the cert brand system, not Examine's purple.
 //
 // Canon-clean: NO BOLD anywhere — emphasis is Lora (serif titles) + IBM Plex Mono
-// (mono kickers/labels) + colour, never font-weight. #9f2727 accent (kicker, marker,
-// close-hover), #6f2139 filled-action hover, #1c43ad outbound link, warm near-white
-// ground (#fffdfb), #e8e1db borders, #fdf4f3 header tint.
+// (mono kickers/labels) + colour, never font-weight. var(--hmtc-navy) accent (kicker, marker,
+// close-hover), var(--hmtc-navy) filled-action hover, var(--hmtc-slate) outbound link, warm near-white
+// ground (var(--hmtc-paper)), var(--hmtc-line) borders, var(--hmtc-tint) header tint.
 //
 // The box-shadow is the ONE sanctioned exception to the no-box-shadow assertion:
 // CHROME-SPEC.md §1.2 (lines 111–113) exempts modals and the source drawer, echoed
@@ -27,7 +27,7 @@
   position: fixed;
   inset: 0;
   z-index: 1200;
-  background: rgba(45, 15, 26, 0.42);
+  background: rgba(13, 27, 42, 0.42);
   opacity: 0;
   visibility: hidden;
   transition:
@@ -51,9 +51,9 @@
   height: 100vh;
   width: min(550px, 100vw);
   overflow-y: auto;
-  background: #fffdfb;
-  border-left: 1px solid #e8e1db;
-  box-shadow: -10px 0 44px rgba(74, 21, 38, 0.24);
+  background: var(--hmtc-paper);
+  border-left: 1px solid var(--hmtc-line);
+  box-shadow: -10px 0 44px rgba(13, 27, 42, 0.24);
   transform: translateX(100%);
   visibility: hidden;
   transition:
@@ -95,8 +95,8 @@
   align-items: center;
   justify-content: flex-end;
   padding: 12px 16px 12px 26px;
-  border-bottom: 1px solid #e8e1db;
-  background: #fdf4f3;
+  border-bottom: 1px solid var(--hmtc-line);
+  background: var(--hmtc-tint);
 }
 .hmtc-cite-panel-close {
   appearance: none;
@@ -106,12 +106,12 @@
   line-height: 1;
   font-size: 22px;
   padding: 0 4px;
-  color: #a9a1a1;
+  color: var(--hmtc-slate);
   transition: color 0.2s ease;
 }
 .hmtc-cite-panel-close:hover,
 .hmtc-cite-panel-close:focus-visible {
-  color: #9f2727;
+  color: var(--hmtc-navy);
 }
 
 // Body — the honest document record: kicker · title · meta+blurb · type · actions.
@@ -126,20 +126,20 @@
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   margin: 0 0 12px;
 }
 .hmtc-cite-panel-title {
   font-family: Lora, serif;
   font-size: 21px;
   line-height: 1.3;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
   margin: 0 0 12px;
 }
-// Title-as-outbound-link is the #1c43ad blue; scoped two-class so it beats the
+// Title-as-outbound-link is the var(--hmtc-slate) blue; scoped two-class so it beats the
 // global `article a` / `a` cascade under main. No border-bottom.
 .hmtc-cite-panel-body .hmtc-cite-panel-title a {
-  color: #1c43ad;
+  color: var(--hmtc-slate);
   text-decoration: none;
   border-bottom: none;
 }
@@ -149,7 +149,7 @@
 .hmtc-cite-panel-detail {
   font-size: 13.5px;
   line-height: 1.7;
-  color: #736b6b;
+  color: var(--hmtc-slate);
   margin: 0 0 14px;
 }
 .hmtc-cite-panel-kind {
@@ -157,7 +157,7 @@
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #a9a1a1;
+  color: var(--hmtc-slate);
   margin: 0 0 22px;
 }
 
@@ -171,9 +171,9 @@
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #9f2727;
-  border: 1px solid #f2dcda;
-  background: #fdf4f3;
+  color: var(--hmtc-navy);
+  border: 1px solid var(--hmtc-line);
+  background: var(--hmtc-tint);
   border-radius: 2px;
   padding: 4px 9px;
   margin: 0 0 16px;
@@ -181,9 +181,9 @@
 .hmtc-cite-panel-authority.tier-preprint,
 .hmtc-cite-panel-authority.tier-industry,
 .hmtc-cite-panel-authority.tier-data {
-  color: #8a7f7f;
-  border-color: #e8e1db;
-  background: #faf7f4;
+  color: var(--hmtc-slate);
+  border-color: var(--hmtc-line);
+  background: var(--hmtc-tint);
 }
 
 // The finding, framed and front-and-centre — the substance the reader clicked to
@@ -193,13 +193,13 @@
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #a9a1a1;
+  color: var(--hmtc-slate);
   margin: 0 0 7px;
 }
 .hmtc-cite-panel-finding {
   font-size: 15.5px;
   line-height: 1.7;
-  color: #3f3a3a;
+  color: var(--hmtc-ink);
   margin: 0 0 22px;
 }
 
@@ -218,7 +218,7 @@
   gap: 10px;
   align-items: center;
 }
-// Filled primary action — route to the source record. #9f2727 → #6f2139 hover,
+// Filled primary action — route to the source record. var(--hmtc-navy) → var(--hmtc-navy) hover,
 // white mono label. Two-class scope + explicit resets so no global `a` rule wins.
 .hmtc-cite-panel-body .hmtc-cite-panel-go {
   display: inline-block;
@@ -227,9 +227,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background: #9f2727;
+  background: var(--hmtc-navy);
   padding: 9px 15px;
-  border: 1px solid #9f2727;
+  border: 1px solid var(--hmtc-navy);
   border-radius: 3px;
   text-decoration: none;
   transition:
@@ -238,8 +238,8 @@
 }
 .hmtc-cite-panel-body .hmtc-cite-panel-go:hover,
 .hmtc-cite-panel-body .hmtc-cite-panel-go:focus-visible {
-  background: #6f2139;
-  border-color: #6f2139;
+  background: var(--hmtc-navy);
+  border-color: var(--hmtc-navy);
   color: #ffffff;
 }
 // Outlined secondary link — the original document, when the filled action has been
@@ -252,10 +252,10 @@
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   background: none;
   padding: 9px 15px;
-  border: 1px solid #e8e1db;
+  border: 1px solid var(--hmtc-line);
   border-radius: 3px;
   text-decoration: none;
   transition:
@@ -264,11 +264,11 @@
 }
 .hmtc-cite-panel-body .hmtc-cite-panel-alt:hover,
 .hmtc-cite-panel-body .hmtc-cite-panel-alt:focus-visible {
-  background: #fdf4f3;
-  border-color: #9f2727;
-  color: #9f2727;
+  background: var(--hmtc-tint);
+  border-color: var(--hmtc-navy);
+  color: var(--hmtc-navy);
 }
-// Outlined secondary action — copy the citation. #9f2727 on a hairline, tint on hover.
+// Outlined secondary action — copy the citation. var(--hmtc-navy) on a hairline, tint on hover.
 .hmtc-cite-panel-copy {
   appearance: none;
   cursor: pointer;
@@ -276,10 +276,10 @@
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   background: none;
   padding: 9px 15px;
-  border: 1px solid #e8e1db;
+  border: 1px solid var(--hmtc-line);
   border-radius: 3px;
   transition:
     background 0.2s ease,
@@ -287,8 +287,8 @@
 }
 .hmtc-cite-panel-copy:hover,
 .hmtc-cite-panel-copy:focus-visible {
-  background: #fdf4f3;
-  border-color: #9f2727;
+  background: var(--hmtc-tint);
+  border-color: var(--hmtc-navy);
 }
 
 // The wired inline citation reads as interactive at every width.

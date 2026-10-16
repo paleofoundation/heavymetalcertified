@@ -52,42 +52,16 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        // Palette derived from answerthis.io. Cool near-white background,
-        // dark cool-gray body text, verification-green accent (#176b43) used sparingly
-        // on links, active states, and the citation tier pill. Replaces the
-        // previous warm coffee/sienna palette.
+        // Mirrors direction-01.scss; validated by the Direction 01 palette audit.
         lightMode: {
-          light: "#fdfdfc",
-          lightgray: "#e8e6e1",
-          // Darkened from #9c9890 (2.82:1 on --light, failed WCAG AA) to
-          // #767067 (4.82:1). --gray drives all secondary text — content
-          // meta, TOC, breadcrumbs, table headers, captions — so this one
-          // token lifts every muted-text surface to AA.
-          gray: "#767067",
-          darkgray: "#2a2d34",
-          dark: "#1a1d24",
-          // HMTc red (#9f2727) — the v3 design accent, replacing the earlier
-          // verification-green. Drives links, active nav and component accents
-          // through var(--secondary); the theme-stable brand grounds (hero,
-          // footer, table heads) ride on proof-design.scss --burg.
-          secondary: "#9f2727",
-          tertiary: "#6b6b6b",
-          highlight: "rgba(159, 39, 39, 0.06)",
-          textHighlight: "#f0e68c55",
+          light: "#F7F3E9", lightgray: "#415A773D", gray: "#415A77",
+          darkgray: "#1B263B", dark: "#0D1B2A", secondary: "#1B263B",
+          tertiary: "#415A77", highlight: "#415A770D", textHighlight: "#415A7726",
         },
         darkMode: {
-          light: "#141414",
-          lightgray: "#2d2d2d",
-          // Lightened from #6a6a6a (3.41:1 on dark --light, failed WCAG AA)
-          // to #848484 (4.93:1). Mirrors the light-mode --gray lift.
-          gray: "#848484",
-          darkgray: "#cfcfcf",
-          dark: "#e8e6e1",
-          // Lightened HMTc red for dark-mode AA on the near-black --light.
-          secondary: "#e08a8a",
-          tertiary: "#9aa0a8",
-          highlight: "rgba(224, 138, 138, 0.12)",
-          textHighlight: "#b3aa0255",
+          light: "#0D1B2A", lightgray: "#415A77", gray: "#F7F3E9",
+          darkgray: "#F7F3E9", dark: "#F7F3E9", secondary: "#F7F3E9",
+          tertiary: "#F7F3E9", highlight: "#415A7726", textHighlight: "#415A774D",
         },
       },
     },

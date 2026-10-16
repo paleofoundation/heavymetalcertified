@@ -56,7 +56,7 @@
 
 .hmi-product-facts {
   background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(139, 42, 74, 0.12);
+  border: 1px solid rgba(13, 27, 42, 0.12);
   border-radius: var(--radius-sm);
   display: grid;
   gap: 0;
@@ -66,7 +66,7 @@
 }
 
 .hmi-product-facts div {
-  border-bottom: 1px solid rgba(139, 42, 74, 0.12);
+  border-bottom: 1px solid rgba(13, 27, 42, 0.12);
   padding: 0.58rem 0;
 }
 
@@ -114,7 +114,7 @@
 
 .hmi-product-chip {
   background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(139, 42, 74, 0.18);
+  border: 1px solid rgba(13, 27, 42, 0.18);
   border-radius: 999px;
   color: var(--darkgray);
   font-size: 0.78rem;
@@ -129,7 +129,7 @@
 }
 
 .hmi-product-brief-links {
-  border-top: 1px solid rgba(139, 42, 74, 0.12);
+  border-top: 1px solid rgba(13, 27, 42, 0.12);
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem 0.7rem;
@@ -138,8 +138,8 @@
 }
 
 .hmi-product-brief-links a {
-  background: rgba(139, 42, 74, 0.06);
-  border: 1px solid rgba(139, 42, 74, 0.18);
+  background: rgba(13, 27, 42, 0.06);
+  border: 1px solid rgba(13, 27, 42, 0.18);
   border-radius: var(--radius-sm);
   color: var(--secondary);
   font-size: 0.82rem;
@@ -149,7 +149,7 @@
 }
 
 .hmi-product-brief-links a:hover {
-  background: rgba(139, 42, 74, 0.1);
+  background: rgba(13, 27, 42, 0.1);
 }
 
 body[data-slug^="products/"] article > p:first-of-type {

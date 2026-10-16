@@ -78,7 +78,7 @@
     color: var(--gray);
 
     &[data-state="ok"] { color: var(--secondary); }
-    &[data-state="error"] { color: #b3261e; }
+    &[data-state="error"] { color: var(--hmtc-navy); }
   }
 
   .hmi-cite-note {

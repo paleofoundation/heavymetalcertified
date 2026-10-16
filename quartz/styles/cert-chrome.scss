@@ -38,25 +38,25 @@
 // ============================================================
 //  PAGE GROUND — the design's warm near-white surface
 // ============================================================
-// The design stacks two near-whites: the content canvas is #faf7f4 (cream),
-// and cards, panels and the analyte-panel cells sit ON that canvas at #fffdfb
+// The design stacks two near-whites: the content canvas is var(--hmtc-tint) (cream),
+// and cards, panels and the analyte-panel cells sit ON that canvas at var(--hmtc-paper)
 // (white). Walking the design's nesting, the ground directly behind the
-// analyte-panel cards is `main > div[background:#faf7f4]`; the cards are
-// #fffdfb. That #faf7f4-behind-#fffdfb pairing is ΔE 2.12 — the visible
+// analyte-panel cards is `main > div[background:var(--hmtc-tint)]`; the cards are
+// var(--hmtc-paper). That var(--hmtc-tint)-behind-var(--hmtc-paper) pairing is ΔE 2.12 — the visible
 // separation that makes the panel read as cards on a surface.
 //
-// An earlier revision of this rule read the palette by frequency (#fffdfb has
-// the most uses, because there are many cards) and concluded #fffdfb was the
-// page ground, forcing the whole body to #fffdfb. That collapsed the design's
-// two levels into one: canvas #fffdfb == card #fffdfb, ΔE 0, and the analyte
-// panel stopped standing out from its background. The canvas is #faf7f4, not
-// #fffdfb; the cards keep their own explicit #fffdfb and now separate from it.
+// An earlier revision of this rule read the palette by frequency (var(--hmtc-paper) has
+// the most uses, because there are many cards) and concluded var(--hmtc-paper) was the
+// page ground, forcing the whole body to var(--hmtc-paper). That collapsed the design's
+// two levels into one: canvas var(--hmtc-paper) == card var(--hmtc-paper), ΔE 0, and the analyte
+// panel stopped standing out from its background. The canvas is var(--hmtc-tint), not
+// var(--hmtc-paper); the cards keep their own explicit var(--hmtc-paper) and now separate from it.
 //
-// (#ede7e2 is the design's outermost body, mostly covered by the #faf7f4
-// canvas wrapper; #faf7f4 is what content actually sits on.) !important beats
+// (var(--hmtc-line) is the design's outermost body, mostly covered by the var(--hmtc-tint)
+// canvas wrapper; var(--hmtc-tint) is what content actually sits on.) !important beats
 // base.scss's var(--light); dropping it in favour of the --light token is the
 // architectural follow-up tracked in OI-20260817-cert-two-color-systems.
-body { background: #faf7f4 !important; }
+body { background: var(--hmtc-tint) !important; }
 
 // ============================================================
 //  CONTENT TYPOGRAPHY — match the v3 body treatment
@@ -74,7 +74,7 @@ article h2,
 article h3 {
   font-family: Lora, serif;
   font-weight: 400 !important;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
 }
 // The v3 section-heading treatment (30px Lora with an underline rule) — interior
 // pages only. The home carries its own inline-styled section headings.
@@ -93,7 +93,7 @@ article h3 {
 .proof:not(.proof-home) .wiki-content .hmtc-h2 {
   font-size: 30px;
   line-height: 1.2;
-  border-bottom: 1px solid #e8e1db;
+  border-bottom: 1px solid var(--hmtc-line);
   padding-bottom: 10px;
   margin: var(--h2-margin-top) 0 var(--h2-margin-bottom);
 }
@@ -112,7 +112,7 @@ body[data-slug^="manuals/"] .wiki-content .hmtc-section > .hmtc-h2:first-child {
 .hmtc-manual-lead {
   font-size: 17.5px;
   line-height: 1.7;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
   max-width: var(--prose-max);
   margin: 0 0 var(--space-4);
 }
@@ -122,31 +122,31 @@ body[data-slug^="manuals/"] .wiki-content .hmtc-section > .hmtc-h2:first-child {
 }
 .hmtc-principle-card {
   padding: var(--space-3);
-  background: #fffdfb;
-  border: 1px solid #e8e1db;
+  background: var(--hmtc-paper);
+  border: 1px solid var(--hmtc-line);
 }
 .hmtc-principle-card .hmtc-principle-k {
   font-family: Lora, serif;
   font-size: 19px;
   line-height: 1.3;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
 }
 .hmtc-principle-card .hmtc-principle-n {
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
-  color: #9f2727;
+  color: var(--hmtc-navy);
 }
 .hmtc-principle-card p {
   font-size: 14px;
   line-height: 1.7;
-  color: #3f3a3a;
+  color: var(--hmtc-ink);
   margin: var(--space-1) 0 0;
   max-width: var(--prose-max);
 }
 .hmtc-table-wrap {
   overflow-x: auto;
   margin: var(--table-margin-y) 0;
-  border: 1px solid #e8e1db;
+  border: 1px solid var(--hmtc-line);
 }
 
 // Breathing room below the hero band AND three-column top-line alignment.
@@ -185,18 +185,18 @@ body[data-slug^="manuals/"] .wiki-content .hmtc-section > .hmtc-h2:first-child {
   margin-top: 0;
 }
 
-// Content links are blue (#1c43ad); red is reserved for structural accents
+// Content links are blue (var(--hmtc-slate)); red is reserved for structural accents
 // (active nav, section-accent rules, hero grounds), per the v3 design. Search
 // result cards own their colors and use a red outline instead of a text highlight.
 .wiki-content a:not(:where(.hmtc-search-results a)),
 .wiki-content a.internal:not(:where(.hmtc-search-results a)),
 .wiki-content a.external:not(:where(.hmtc-search-results a)) {
-  color: #1c43ad;
+  color: var(--hmtc-slate);
 }
 .wiki-content a:hover:not(:where(.hmtc-search-results a)),
 .wiki-content a.internal:hover:not(:where(.hmtc-search-results a)),
 .wiki-content a.external:hover:not(:where(.hmtc-search-results a)) {
-  color: #163a94;
+  color: var(--hmtc-slate);
 }
 
 // ---- Home: let the full-bleed v3 sections span the viewport ----
@@ -217,7 +217,7 @@ body[data-slug^="manuals/"] .wiki-content .hmtc-section > .hmtc-h2:first-child {
 
 // ---- Hero CTA hover (v3 style-hover) ----
 a.hmtc-hero-btn { transition: background 0.12s ease; }
-a.hmtc-hero-btn--solid:hover { background: #fbeceb !important; color: #7f1f1f; text-decoration: none; }
+a.hmtc-hero-btn--solid:hover { background: var(--hmtc-tint) !important; color: var(--hmtc-navy); text-decoration: none; }
 a.hmtc-hero-btn:not(.hmtc-hero-btn--solid):hover { background: rgba(255, 255, 255, 0.14); text-decoration: none; color: #fff; }
 
 // ---- Narrow-viewport collapses for the home grids (< 1150px) ----
@@ -277,8 +277,8 @@ header.hmi-topnav-shell {
   position: sticky;
   top: 0;
   z-index: 80;
-  background: #fffdfb;
-  border-bottom: 1px solid #e8e1db;
+  background: var(--hmtc-paper);
+  border-bottom: 1px solid var(--hmtc-line);
   // Very subtle depth: the sticky bar lifts off the page once you scroll (a
   // restrained take on refinedesign.ai's darker-band-behind-the-header). The
   // `.scrolled` class is toggled on <body> by scrolltotop.inline.ts. Flat at
@@ -286,7 +286,7 @@ header.hmi-topnav-shell {
   transition: box-shadow 0.25s ease;
 }
 body.scrolled header.hmi-topnav-shell {
-  box-shadow: 0 1px 0 rgba(159, 39, 39, 0.06), 0 6px 16px rgba(26, 29, 36, 0.08);
+  box-shadow: 0 1px 0 rgba(13, 27, 42, 0.06), 0 6px 16px rgba(26, 29, 36, 0.08);
 }
 header.hmi-topnav-shell::after {
   // v3's 2px progress rule under the header
@@ -296,7 +296,7 @@ header.hmi-topnav-shell::after {
   right: 0;
   bottom: 0;
   height: 2px;
-  background: #f2ece7;
+  background: var(--hmtc-line-soft);
 }
 
 .hmtc-bar {
@@ -325,7 +325,7 @@ header.hmi-topnav-shell::after {
   font-family: Lora, serif;
   font-size: 22px;
   line-height: 1.15;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
   letter-spacing: -0.015em;
 }
 
@@ -358,14 +358,14 @@ header.hmi-topnav-shell::after {
   text-decoration: none;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
-  color: #3f3a3a;
+  color: var(--hmtc-ink);
   background: none !important;
 }
 .hmtc-nav .hmi-nav-top:hover,
 .hmtc-nav .hmi-nav-item:hover .hmi-nav-top,
 .hmtc-nav .hmi-nav-top.active {
-  color: #9f2727;
-  border-bottom-color: #9f2727;
+  color: var(--hmtc-navy);
+  border-bottom-color: var(--hmtc-navy);
 }
 // No chevron — the 2px underline is the whole affordance (v3).
 .hmtc-nav .hmi-nav-toggle { display: none; }
@@ -386,31 +386,31 @@ header.hmi-topnav-shell::after {
   gap: 9px;
   height: 36px;
   padding: 0 13px;
-  border: 1px solid #e6ded8;
+  border: 1px solid var(--hmtc-line);
   border-radius: 3px;
-  background: #fbf8f5 !important;
+  background: var(--hmtc-paper) !important;
   flex: 0 1 320px;
   min-width: 60px;
   overflow: hidden;
   text-decoration: none;
 }
-.hmtc-search:hover { border-color: #c9bdb8; background: #fdfaf8 !important; }
-.hmtc-search-glyph { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #b7aeae; flex: 0 0 auto; }
-.hmtc-search-label { font-size: 12.5px; color: #a9a1a1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
-.hmtc-search-kbd { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: #b7aeae; border: 1px solid #ebe4de; border-radius: 2px; padding: 1px 4px; }
-.hmtc-login { font-size: 12.5px; color: #736b6b; flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
-.hmtc-login:hover { color: #9f2727; }
+.hmtc-search:hover { border-color: var(--hmtc-line); background: var(--hmtc-paper) !important; }
+.hmtc-search-glyph { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--hmtc-slate); flex: 0 0 auto; }
+.hmtc-search-label { font-size: 12.5px; color: var(--hmtc-slate); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.hmtc-search-kbd { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--hmtc-slate); border: 1px solid var(--hmtc-line); border-radius: 2px; padding: 1px 4px; }
+.hmtc-login { font-size: 12.5px; color: var(--hmtc-slate); flex: 0 0 auto; white-space: nowrap; text-decoration: none; background: none !important; }
+.hmtc-login:hover { color: var(--hmtc-navy); }
 .hmtc-apply {
   font-size: 12.5px;
   color: #fff !important;
-  background: #9f2727 !important;
+  background: var(--hmtc-navy) !important;
   border-radius: 3px;
   padding: 8px 15px;
   flex: 0 0 auto;
   white-space: nowrap;
   text-decoration: none;
 }
-.hmtc-apply:hover { background: #7f1f1f !important; }
+.hmtc-apply:hover { background: var(--hmtc-navy) !important; }
 
 @media (min-width: 1200px) {
   .hmtc-burger { display: none; }
@@ -443,8 +443,8 @@ header.hmi-topnav-shell::after {
   // enough to need the scrollbar. Both states are self-consistent, so which one
   // renders comes down to layout order.
   scrollbar-gutter: stable;
-  background: #fffdfb;
-  border-bottom: 1px solid #e8e1db;
+  background: var(--hmtc-paper);
+  border-bottom: 1px solid var(--hmtc-line);
   box-shadow: 0 22px 44px -24px rgba(120, 30, 30, 0.26);
   visibility: hidden;
   z-index: 79;
@@ -483,9 +483,9 @@ header.hmi-topnav-shell::after {
   // Network wayfinding uses the whole drawer for four equal faces.
   &--ecosystem { grid-template-columns: minmax(0, 1fr); }
 }
-.hmtc-nav .hmi-nav-lead { border-right: 1px solid #efe9e3; padding-right: 40px; }
-.hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: #9f2727; margin-bottom: 10px; }
-.hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: #736b6b; }
+.hmtc-nav .hmi-nav-lead { border-right: 1px solid var(--hmtc-line); padding-right: 40px; }
+.hmtc-nav .hmi-nav-title { font-family: Lora, serif; font-size: 20px; color: var(--hmtc-navy); margin-bottom: 10px; }
+.hmtc-nav .hmi-nav-blurb { margin: 0 0 16px; font-size: 13px; line-height: 1.65; color: var(--hmtc-slate); }
 // Curated panels contain at most three groups. Keep one readable row, with
 // the independent panel scroll limit as a backstop on short viewports.
 .hmtc-nav .hmi-nav-cols {
@@ -503,10 +503,10 @@ header.hmi-topnav-shell::after {
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #a9a1a1;
+  color: var(--hmtc-slate);
   margin: 0 0 11px;
   padding-bottom: 9px;
-  border-bottom: 1px solid #efe9e3;
+  border-bottom: 1px solid var(--hmtc-line);
 }
 .hmtc-nav .hmi-nav-col li a {
   display: flex;
@@ -515,13 +515,13 @@ header.hmi-topnav-shell::after {
   gap: 12px;
   padding: 6px 0;
   font-size: 13.5px;
-  color: #3f3a3a;
+  color: var(--hmtc-ink);
   text-decoration: none;
-  border-bottom: 1px dotted #f2ece7;
+  border-bottom: 1px dotted var(--hmtc-line-soft);
   background: none !important;
 }
-.hmtc-nav .hmi-nav-col li a:hover { color: #9f2727; }
-.hmtc-nav .hmi-nav-count { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: #b7aeae; flex: 0 0 auto; }
+.hmtc-nav .hmi-nav-col li a:hover { color: var(--hmtc-navy); }
+.hmtc-nav .hmi-nav-count { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--hmtc-slate); flex: 0 0 auto; }
 .hmtc-nav .hmi-nav-all {
   display: inline-block;
   margin-top: 0;
@@ -529,7 +529,7 @@ header.hmi-topnav-shell::after {
   font-size: 11px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   text-decoration: none;
   background: none !important;
 }
@@ -566,7 +566,7 @@ header.hmi-topnav-shell::after {
 //  v3 INTERIOR HERO BAND (Heavy Metal Certified v3.dc.html 331–367)
 // ============================================================
 .hmtc-heroband-shell { width: 100%; }
-.hmtc-heroband { background: #9f2727; color: #fff; width: 100%; }
+.hmtc-heroband { background: var(--hmtc-navy); color: #fff; width: 100%; }
 .hmtc-heroband-inner {
   max-width: 1760px;
   margin: 0 auto;
@@ -588,7 +588,7 @@ header.hmi-topnav-shell::after {
   max-width: 188px;
   margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.28);
-  background: #fffdfb;
+  background: var(--hmtc-paper);
   line-height: 0;
 }
 .hmtc-hb-cover img { display: block; width: 100%; height: auto; }
@@ -725,7 +725,7 @@ header.hmi-topnav-shell::after {
 // ============================================================
 //  v3 FOOTER (Heavy Metal Certified v3.dc.html 2573–2597)
 // ============================================================
-footer.site-footer { background: var(--burg-dark, #7f1f1f) !important; color: rgba(255, 255, 255, 0.76); margin-top: 0; }
+footer.site-footer { background: var(--burg-dark, var(--hmtc-navy)) !important; color: rgba(255, 255, 255, 0.76); margin-top: 0; }
 footer.site-footer .site-footer-inner {
   max-width: 1900px;
   margin: 0 auto;
@@ -799,7 +799,7 @@ footer.site-footer .site-footer-bottom p {
 // ============================================================
 //  HOME FAQ — native <details> accordion (v3 collapsed rows, +/− sign)
 // ============================================================
-.hmtc-faq-list .hmtc-faq { border-top: 1px solid #e8e1db; }
+.hmtc-faq-list .hmtc-faq { border-top: 1px solid var(--hmtc-line); }
 .hmtc-faq > summary {
   list-style: none;
   display: flex;
@@ -811,16 +811,16 @@ footer.site-footer .site-footer-bottom p {
 .hmtc-faq > summary::-webkit-details-marker { display: none; }
 .hmtc-faq > summary::marker { content: ""; }
 .hmtc-faq > summary:hover { opacity: 0.72; }
-.hmtc-faq-sign { font-family: "IBM Plex Mono", monospace; font-size: 15px; line-height: 1.35; color: #9f2727; flex: 0 0 14px; }
+.hmtc-faq-sign { font-family: "IBM Plex Mono", monospace; font-size: 15px; line-height: 1.35; color: var(--hmtc-navy); flex: 0 0 14px; }
 .hmtc-faq-sign::before { content: "+"; }
 .hmtc-faq[open] .hmtc-faq-sign::before { content: "\2212"; }
-.hmtc-faq-q { font-family: Lora, serif !important; font-weight: 400 !important; font-size: 20px; line-height: 1.35; color: #9f2727; flex: 1; }
+.hmtc-faq-q { font-family: Lora, serif !important; font-weight: 400 !important; font-size: 20px; line-height: 1.35; color: var(--hmtc-navy); flex: 1; }
 .hmtc-faq-a { padding: 2px 0 22px 30px; }
-.hmtc-faq-a p { font-size: 15.5px; line-height: 1.75; color: #3f3a3f; margin: 0; max-width: 70ch; }
-.wiki-content .hmtc-faq-a p a { color: #1c43ad; }
-.wiki-content .hmtc-faq-link { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #9f2727; margin-top: 13px; text-decoration: none; }
+.hmtc-faq-a p { font-size: 15.5px; line-height: 1.75; color: var(--hmtc-ink); margin: 0; max-width: 70ch; }
+.wiki-content .hmtc-faq-a p a { color: var(--hmtc-slate); }
+.wiki-content .hmtc-faq-link { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--hmtc-navy); margin-top: 13px; text-decoration: none; }
 .wiki-content .hmtc-faq-link:hover { text-decoration: underline; }
-.hmtc-faq-end { border-top: 1px solid #e8e1db; }
+.hmtc-faq-end { border-top: 1px solid var(--hmtc-line); }
 
 // ============================================================
 //  QUARTZ BLEED — hide the auto-appended heading anchor glyphs
@@ -848,11 +848,11 @@ aside.snav { position: sticky; top: 92px; padding: 34px 28px 48px; }
   align-items: baseline;
   justify-content: space-between;
   padding-bottom: 9px;
-  border-bottom: 1px solid #e8e1db;
+  border-bottom: 1px solid var(--hmtc-line);
   margin-bottom: 4px;
 }
-.hmtc-onpage-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; }
-.hmtc-onpage-count { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #c3b9b9; }
+.hmtc-onpage-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hmtc-slate); }
+.hmtc-onpage-count { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--hmtc-slate); }
 .hmtc-onpage-nav { display: flex; flex-direction: column; }
 .hmtc-rail {
   display: flex;
@@ -862,14 +862,14 @@ aside.snav { position: sticky; top: 92px; padding: 34px 28px 48px; }
   font-size: 13px;
   line-height: 1.4;
   text-decoration: none;
-  border-left: 2px solid #e8e1db;
-  color: #3f3a3a;
+  border-left: 2px solid var(--hmtc-line);
+  color: var(--hmtc-ink);
   background: none !important;
 }
-.hmtc-rail:hover { color: #9f2727; }
-.hmtc-rail.active { border-left-color: #9f2727; color: #9f2727; }
-.hmtc-rail-num { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.04em; color: #c3b9b9; flex: 0 0 auto; }
-.hmtc-rail.active .hmtc-rail-num { color: #9f2727; }
+.hmtc-rail:hover { color: var(--hmtc-navy); }
+.hmtc-rail.active { border-left-color: var(--hmtc-navy); color: var(--hmtc-navy); }
+.hmtc-rail-num { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.04em; color: var(--hmtc-slate); flex: 0 0 auto; }
+.hmtc-rail.active .hmtc-rail-num { color: var(--hmtc-navy); }
 .hmtc-rail-label { flex: 1; }
 
 // ============================================================
@@ -895,32 +895,32 @@ aside.rail { position: sticky; top: 92px; padding: 38px 28px 48px; display: bloc
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #a9a1a1;
+  color: var(--hmtc-slate);
   padding-bottom: 9px;
-  border-bottom: 1px solid #e8e1db;
+  border-bottom: 1px solid var(--hmtc-line);
   margin-bottom: 12px;
 }
 .hmtc-conn-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 30px; }
-.hmtc-conn-link { font-size: 13.5px; color: #1c43ad; line-height: 1.45; text-decoration: none; background: none !important; }
+.hmtc-conn-link { font-size: 13.5px; color: var(--hmtc-slate); line-height: 1.45; text-decoration: none; background: none !important; }
 .hmtc-conn-link:hover { text-decoration: underline; }
-.hmtc-verify { border: 1px solid #f2dcda; background: #fbeceb; padding: 16px; }
-.hmtc-verify-title { font-family: Lora, serif; font-size: 17px; color: #9f2727; margin-bottom: 8px; }
-.hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: #5a4141; }
-.hmtc-verify-cta { display: inline-block; background: #9f2727; color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
-.hmtc-verify-cta:hover { background: #7f1f1f; }
+.hmtc-verify { border: 1px solid var(--hmtc-line); background: var(--hmtc-tint); padding: 16px; }
+.hmtc-verify-title { font-family: Lora, serif; font-size: 17px; color: var(--hmtc-navy); margin-bottom: 8px; }
+.hmtc-verify-body { margin: 0 0 13px; font-size: 12.5px; line-height: 1.65; color: var(--hmtc-slate); }
+.hmtc-verify-cta { display: inline-block; background: var(--hmtc-navy); color: #fff !important; font-size: 12px; padding: 8px 13px; border-radius: 3px; text-decoration: none; }
+.hmtc-verify-cta:hover { background: var(--hmtc-navy); }
 // PDF-edition card (Rail.tsx PdfCard) — the single home for the download
 // affordance, driven by the page's `pdf` frontmatter; no inline body copy.
 // Discreet on purpose: a mono label + a red download link, not a second solid
-// CTA competing with Verify. Canon-clean (no bold, #9f2727 accent).
-.hmtc-pdf { border: 1px solid #e8e1db; background: #fffdfb; padding: 14px 16px; margin-bottom: 30px; }
-.hmtc-pdf-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 10px; }
-.hmtc-pdf-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: #9f2727; text-decoration: none; background: none !important; }
-.hmtc-pdf-link:hover { color: #7f1f1f; text-decoration: underline; }
+// CTA competing with Verify. Canon-clean (no bold, var(--hmtc-navy) accent).
+.hmtc-pdf { border: 1px solid var(--hmtc-line); background: var(--hmtc-paper); padding: 14px 16px; margin-bottom: 30px; }
+.hmtc-pdf-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hmtc-slate); margin-bottom: 10px; }
+.hmtc-pdf-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--hmtc-navy); text-decoration: none; background: none !important; }
+.hmtc-pdf-link:hover { color: var(--hmtc-navy); text-decoration: underline; }
 .hmtc-pdf-link svg { width: 14px; height: 14px; display: block; flex: 0 0 auto; }
 // Muted dotted advisory box (rail_box variant: note) — e.g. "Needs confirmation".
-.hmtc-railnote { border: 1px dotted #e8e1db; background: #faf7f4; padding: 15px 18px; }
-.hmtc-railnote-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: #a9a1a1; margin-bottom: 7px; }
-.hmtc-railnote-body { font-size: 13px; line-height: 1.65; color: #a9a1a1; margin: 0; }
+.hmtc-railnote { border: 1px dotted var(--hmtc-line); background: var(--hmtc-tint); padding: 15px 18px; }
+.hmtc-railnote-label { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--hmtc-slate); margin-bottom: 7px; }
+.hmtc-railnote-body { font-size: 13px; line-height: 1.65; color: var(--hmtc-slate); margin: 0; }
 
 // Discreet inline share icons (X · LinkedIn · Reddit · Facebook · Email) — a
 // small row of monochrome brand glyphs tinted to the site red, sitting below the
@@ -929,36 +929,36 @@ aside.rail { position: sticky; top: 92px; padding: 38px 28px 48px; display: bloc
 // balloon if this stylesheet is slow to apply.
 .hmtc-share {
   display: flex; align-items: center; flex-wrap: wrap; gap: 13px;
-  margin-top: 22px; padding-top: 16px; border-top: 1px solid #e8e1db;
+  margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--hmtc-line);
 }
 .hmtc-share-label {
   font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.14em;
-  text-transform: uppercase; color: #a9a1a1;
+  text-transform: uppercase; color: var(--hmtc-slate);
 }
 .hmtc-share-link {
   display: inline-flex; align-items: center; line-height: 0;
-  color: #9f2727; background: none !important;
+  color: var(--hmtc-navy); background: none !important;
 }
-.hmtc-share-link:hover { color: #7f1f1f; text-decoration: none; }
+.hmtc-share-link:hover { color: var(--hmtc-navy); text-decoration: none; }
 .hmtc-share-link svg { width: 16px; height: 16px; display: block; }
 
 // ============================================================
 //  v3 BODY CONTENT — kill Quartz's default prose/table bleed
-//  Quartz base renders body at 1.1rem/#1a1d24 and table heads in the header
-//  font; the comp uses 16.5px/#3f3a3a body and IBM Plex Mono table heads.
+//  Quartz base renders body at 1.1rem/var(--hmtc-ink) and table heads in the header
+//  font; the comp uses 16.5px/var(--hmtc-ink) body and IBM Plex Mono table heads.
 // ============================================================
-.proof:not(.proof-home) .wiki-content { color: #3f3a3a; }
+.proof:not(.proof-home) .wiki-content { color: var(--hmtc-ink); }
 .proof:not(.proof-home) .wiki-content p:not(.author-profile p, .hmtc-challenge p),
 .proof:not(.proof-home) .wiki-content li:not(.author-profile li, .hmtc-challenge li) {
   font-size: 16.5px !important;
   line-height: 1.78 !important;
-  color: #3f3a3a !important;
+  color: var(--hmtc-ink) !important;
 }
 .proof:not(.proof-home) .wiki-content p:not(.author-profile p, .hmtc-challenge p, .hmtc-cap) {
   max-width: var(--prose-max);
 }
-.proof:not(.proof-home) .wiki-content { color: #3f3a3a !important; }
-.wiki-content ul, .wiki-content ol { color: #3f3a3a; }
+.proof:not(.proof-home) .wiki-content { color: var(--hmtc-ink) !important; }
+.wiki-content ul, .wiki-content ol { color: var(--hmtc-ink); }
 // SITEWIDE no-bold rule (design canon: CONTENT-RULES.md §"No bold"). The reading
 // surface carries no bold: emphasis is the type system's job (Lora headings, IBM Plex
 // Mono labels), never font-weight. Semantic <strong>/<b> and markdown **…** render at
@@ -971,11 +971,11 @@ strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
 .wiki-content table {
   width: 100%;
   font-size: 13.5px;
-  border: 1px solid #e8e1db;
+  border: 1px solid var(--hmtc-line);
   border-collapse: collapse;
   margin: var(--table-margin-y) 0;
 }
-.wiki-content thead tr { background: #9f2727; }
+.wiki-content thead tr { background: var(--hmtc-navy); }
 .wiki-content thead th {
   color: #fff !important;
   text-align: left;
@@ -990,15 +990,15 @@ strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
 .wiki-content tbody td {
   padding: var(--table-cell-pad-y) var(--table-cell-pad-x) !important;
   vertical-align: top;
-  border-bottom: 1px solid #f2ece7;
+  border-bottom: 1px solid var(--hmtc-line-soft);
   font-size: 13.5px !important;
   line-height: 1.6 !important;
-  color: #3f3a3a;
+  color: var(--hmtc-ink);
 }
 // No global zebra or hover. The canonical design has neither — its tables sit
 // on the plain page ground with only the per-row bottom rule for separation.
 // The one table that IS shaded (the standards Master Limit Table) sets its
-// #fdfaf8 zebra inline in build-standards-pages.mjs, so it keeps its look
+// var(--hmtc-paper) zebra inline in build-standards-pages.mjs, so it keeps its look
 // without a global rule painting a pink "pill" onto every other table.
 //
 // Quartz base (custom.scss) and the ported proof-design.scss each add a table
@@ -1010,7 +1010,7 @@ strong, b, .wiki-content strong, .wiki-content b { font-weight: 400; }
 article tbody tr:hover { background: none; }
 
 // Lead-in / caption copy (mono-adjacent) stays muted.
-.wiki-content blockquote { border-left: 3px solid #9f2727; background: #fbf5f7; padding: 18px 22px; margin: 0 0 28px; color: #5a4148; }
+.wiki-content blockquote { border-left: 3px solid var(--hmtc-navy); background: var(--hmtc-tint); padding: 18px 22px; margin: 0 0 28px; color: var(--hmtc-slate); }
 
 // ============================================================
 //  v3 REFERENCES — style the flat "[N] citation" paragraphs as a
@@ -1022,11 +1022,11 @@ article tbody tr:hover { background: none; }
 .proof:not(.proof-home) .wiki-content h2[id="sources"] ~ p {
   padding: 18px 0 18px 46px !important;
   text-indent: -46px;
-  border-bottom: 1px solid #f2ece7;
+  border-bottom: 1px solid var(--hmtc-line-soft);
   margin: 0 !important;
   font-size: 14px !important;
   line-height: 1.65 !important;
-  color: #736b6b !important;
+  color: var(--hmtc-slate) !important;
   max-width: none;
 }
 .proof:not(.proof-home) .wiki-content h2[id="references"] ~ p em,
@@ -1034,10 +1034,10 @@ article tbody tr:hover { background: none; }
   font-style: normal;
   font-family: Lora, serif;
   font-size: 16px;
-  color: #2b1f1f;
+  color: var(--hmtc-ink);
 }
 .proof:not(.proof-home) .wiki-content h2[id="references"] ~ p a,
-.proof:not(.proof-home) .wiki-content h2[id="sources"] ~ p a { color: #1c43ad !important; }
+.proof:not(.proof-home) .wiki-content h2[id="sources"] ~ p a { color: var(--hmtc-slate) !important; }
 
 // ============================================================
 //  MEGA-MENU FONT PINNING — kill Lora bleed into the panel
@@ -1075,7 +1075,7 @@ sup.hmtc-cite {
   font-size: 0.66em;
   font-weight: 400;
   line-height: 0;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   white-space: nowrap;
   margin-left: 0.5px;
 }
@@ -1089,8 +1089,8 @@ sup.hmtc-cite {
 //  Claude Design canvas; the sign flips on [open]. No bold — the analyte name
 //  is Lora, not a font-weight lead-in.
 // ============================================================
-.hmtc-mhard-list { border-bottom: 1px solid #e8e1db; margin: 0 0 4px; }
-.hmtc-mhard { border-top: 1px solid #e8e1db; }
+.hmtc-mhard-list { border-bottom: 1px solid var(--hmtc-line); margin: 0 0 4px; }
+.hmtc-mhard { border-top: 1px solid var(--hmtc-line); }
 .hmtc-mhard-sum {
   list-style: none;
   cursor: pointer;
@@ -1102,7 +1102,7 @@ sup.hmtc-cite {
 }
 .hmtc-mhard-sum::-webkit-details-marker { display: none; }
 .hmtc-mhard-sign,
-.hmtc-mhard-name { font-family: Lora, serif; font-size: 22px; color: #9f2727; }
+.hmtc-mhard-name { font-family: Lora, serif; font-size: 22px; color: var(--hmtc-navy); }
 .hmtc-mhard-sign { line-height: 1.3; }
 .hmtc-mhard-name { line-height: 1.34; }
 .hmtc-mhard-sign::before { content: "+"; }
@@ -1117,36 +1117,36 @@ sup.hmtc-cite {
 
 
 // Minimal HMI reference: open homepage, one ledger, compact interior attribution.
-.hmtc-home-hero { position: relative; isolation: isolate; background: radial-gradient(ellipse at 72% 28%, rgba(255,253,251,.16), transparent 64%), #9f2727; color: #fff; }
+.hmtc-home-hero { position: relative; isolation: isolate; background: radial-gradient(ellipse at 72% 28%, rgba(255,253,251,.16), transparent 64%), var(--hmtc-navy); color: #fff; }
 .hmtc-home-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: repeating-radial-gradient(circle at 83% 42%, transparent 0 91px, rgba(255,253,251,.065) 92px 93px, transparent 94px 148px); mask-image: linear-gradient(90deg, transparent 24%, #000 78%); }
 .hmtc-home-hero-grid { max-width: 1760px; box-sizing: border-box; margin: auto; padding: 80px 48px 84px; display: grid; grid-template-columns: minmax(0,1.35fr) 400px; gap: 80px; align-items: center; }
 .hmtc-home-copy { min-width: 0; }
 .wiki-content .hmtc-home-title { font: 400 clamp(48px,4.1vw,68px)/1.12 Lora,serif; letter-spacing: -.02em; color: #fff; margin: 0 0 28px; }
-.hmtc-home-title span { color: #f5d7cf; }
-.hmtc-home-dek { font: 18px/1.65 var(--bodyFont); color: #fff2ee; margin: 0 0 32px; max-width: 54ch; }
+.hmtc-home-title span { color: var(--hmtc-paper); }
+.hmtc-home-dek { font: 18px/1.65 var(--bodyFont); color: var(--hmtc-paper); margin: 0 0 32px; max-width: 54ch; }
 .hmtc-hero-search { position: relative; max-width: 720px; margin: 0 0 24px; scroll-margin-top: 96px; }
 .hmtc-search-form { margin: 0; }
-.hmtc-search-field { display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 18px; min-height: 58px; box-sizing: border-box; background: #fffdfb; color: #7f1f1f; border: 1px solid #e8e1db; border-radius: 3px; }
-.hmtc-search-field:focus-within { outline: 2px solid #fffdfb; outline-offset: 4px; }
+.hmtc-search-field { display: flex; align-items: center; gap: 12px; padding: 6px 6px 6px 18px; min-height: 58px; box-sizing: border-box; background: var(--hmtc-paper); color: var(--hmtc-navy); border: 1px solid var(--hmtc-line); border-radius: 3px; }
+.hmtc-search-field:focus-within { outline: 2px solid var(--hmtc-paper); outline-offset: 4px; }
 .hmtc-search-field > svg { flex: 0 0 auto; }
-.hmtc-search-field input { min-width: 0; width: 100%; flex: 1; border: 0; outline: 0; padding: 6px 0; background: transparent; color: #2b1f1f; font: 400 16px/1.5 var(--bodyFont); }
-.hmtc-search-field input::placeholder { color: #736b6b; opacity: 1; }
-.hmtc-search-field button { flex: 0 0 auto; min-height: 44px; border: 0; border-radius: 2px; padding: 10px 18px; background: #7f1f1f; color: #fff; font: 400 14px/1.5 var(--bodyFont); cursor: pointer; }
-.hmtc-search-field button:hover { background: #651919; }
-.hmtc-search-field button:focus-visible { outline: 2px solid #7f1f1f; outline-offset: 2px; }
-.hmtc-search-response { position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40; border: 1px solid #e8e1db; border-radius: 3px; background: #fffdfb; color: #2b1f1f; box-shadow: 0 16px 32px #3c101026; }
+.hmtc-search-field input { min-width: 0; width: 100%; flex: 1; border: 0; outline: 0; padding: 6px 0; background: transparent; color: var(--hmtc-ink); font: 400 16px/1.5 var(--bodyFont); }
+.hmtc-search-field input::placeholder { color: var(--hmtc-slate); opacity: 1; }
+.hmtc-search-field button { flex: 0 0 auto; min-height: 44px; border: 0; border-radius: 2px; padding: 10px 18px; background: var(--hmtc-navy); color: #fff; font: 400 14px/1.5 var(--bodyFont); cursor: pointer; }
+.hmtc-search-field button:hover { background: var(--hmtc-navy); }
+.hmtc-search-field button:focus-visible { outline: 2px solid var(--hmtc-navy); outline-offset: 2px; }
+.hmtc-search-response { position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 40; border: 1px solid var(--hmtc-line); border-radius: 3px; background: var(--hmtc-paper); color: var(--hmtc-ink); box-shadow: 0 16px 32px #3c101026; }
 .hmtc-search-response[hidden], .hmtc-search-results[hidden] { display: none; }
-.hmtc-search-status { padding: 12px 18px; font: 400 13px/1.5 var(--bodyFont); color: #736b6b; }
+.hmtc-search-status { padding: 12px 18px; font: 400 13px/1.5 var(--bodyFont); color: var(--hmtc-slate); }
 ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: min(26rem, 60vh); overflow-y: auto; overscroll-behavior: contain; }
-.hmtc-search-results > li { list-style: none; padding: 0; margin: 0; border-top: 1px solid #e8e1db; }
-.hmtc-search-results a { display: block; padding: 14px 18px; color: #2b1f1f; text-decoration: none; }
-.hmtc-search-results a:hover, .hmtc-search-results a:focus-visible { background: #f8efec; outline: 2px solid #9f2727; outline-offset: -2px; }
-.hmtc-search-result-section { display: block; margin-bottom: 4px; font: 400 10px/1.5 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; color: #736b6b; }
-.hmtc-search-result-title { display: block; font: 400 18px/1.35 Lora, serif; color: #9f2727; }
-.hmtc-search-result-description { display: block; margin-top: 5px; font: 400 13px/1.55 var(--bodyFont); color: #5f5555; overflow-wrap: anywhere; }
-.hmtc-search-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; min-width: 44px; color: #736b6b; font: 400 13px/1.5 var(--bodyFont); text-decoration: none; }
-.hmtc-search-link:hover { color: #9f2727; }
-.hmtc-search-link:focus-visible { outline: 2px solid #9f2727; outline-offset: 2px; }
+.hmtc-search-results > li { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--hmtc-line); }
+.hmtc-search-results a { display: block; padding: 14px 18px; color: var(--hmtc-ink); text-decoration: none; }
+.hmtc-search-results a:hover, .hmtc-search-results a:focus-visible { background: var(--hmtc-tint); outline: 2px solid var(--hmtc-navy); outline-offset: -2px; }
+.hmtc-search-result-section { display: block; margin-bottom: 4px; font: 400 10px/1.5 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--hmtc-slate); }
+.hmtc-search-result-title { display: block; font: 400 18px/1.35 Lora, serif; color: var(--hmtc-navy); }
+.hmtc-search-result-description { display: block; margin-top: 5px; font: 400 13px/1.55 var(--bodyFont); color: var(--hmtc-slate); overflow-wrap: anywhere; }
+.hmtc-search-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; min-width: 44px; color: var(--hmtc-slate); font: 400 13px/1.5 var(--bodyFont); text-decoration: none; }
+.hmtc-search-link:hover { color: var(--hmtc-navy); }
+.hmtc-search-link:focus-visible { outline: 2px solid var(--hmtc-navy); outline-offset: 2px; }
 @media (max-width: 520px) {
   .hmtc-search-link > span { display: none; }
   .hmtc-search-field { gap: 8px; padding-left: 12px; }
@@ -1155,21 +1155,21 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 }
 .hmtc-home-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .wiki-content a.hmtc-home-action { display: inline-flex; align-items: center; gap: 18px; padding: 13px 18px; border: 1px solid rgba(255,255,255,.5); border-radius: 3px; color: #fff; font-size: 14px; font-weight: 400; text-decoration: none; }
-.wiki-content a.hmtc-home-action--primary { background: #fffdfb; color: #7f1f1f; border-color: #fffdfb; }
-.wiki-content a.hmtc-home-action:hover { background: #7f1f1f; color: #fff; }
+.wiki-content a.hmtc-home-action--primary { background: var(--hmtc-gold); color: var(--hmtc-ink); border-color: var(--hmtc-gold); }
+.wiki-content a.hmtc-home-action:hover { background: var(--hmtc-navy); color: #fff; }
 .hmtc-home-sidebar { min-width: 0; }
-.hmtc-home-snapshot { position: relative; isolation: isolate; padding: 0; background: #fffdfb; border: 1px solid #e8e1db; border-top: 3px solid #d7bbb5; box-shadow: 0 24px 56px rgba(87,26,26,.2), 0 3px 10px rgba(87,26,26,.12); }
-.hmtc-home-snapshot::before, .hmtc-home-snapshot::after { content: ""; position: absolute; z-index: -1; pointer-events: none; border: 1px solid rgba(255,253,251,.35); background: #d7bbb5; }
-.hmtc-home-snapshot-inner { position: relative; padding: 28px; background: #fffdfb; }
+.hmtc-home-snapshot { position: relative; isolation: isolate; padding: 0; background: var(--hmtc-paper); border: 1px solid var(--hmtc-line); border-top: 3px solid var(--hmtc-line); box-shadow: 0 24px 56px rgba(13, 27, 42,.2), 0 3px 10px rgba(13, 27, 42,.12); }
+.hmtc-home-snapshot::before, .hmtc-home-snapshot::after { content: ""; position: absolute; z-index: -1; pointer-events: none; border: 1px solid rgba(255,253,251,.35); background: var(--hmtc-line); }
+.hmtc-home-snapshot-inner { position: relative; padding: 28px; background: var(--hmtc-paper); }
 .hmtc-home-snapshot::before { inset: 6px -7px -8px 7px; opacity: .55; }
 .hmtc-home-snapshot::after { inset: 13px -14px -15px 14px; opacity: .25; z-index: -2; }
-.wiki-content .hmtc-home-snapshot h2 { font: 400 21px/1.3 Lora,serif; color: #2b1f1f; margin: 0 0 8px; padding: 0; border: 0; }
-.hmtc-home-snapshot-date { font: 11px/1.5 "IBM Plex Mono",monospace; color: #736b6b; margin: 0 0 18px; }
+.wiki-content .hmtc-home-snapshot h2 { font: 400 21px/1.3 Lora,serif; color: var(--hmtc-ink); margin: 0 0 8px; padding: 0; border: 0; }
+.hmtc-home-snapshot-date { font: 11px/1.5 "IBM Plex Mono",monospace; color: var(--hmtc-slate); margin: 0 0 18px; }
 .hmtc-home-snapshot dl { margin: 0 0 22px; }
-.hmtc-home-snapshot dl > div { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 16px; padding: 12px 0; border-bottom: 1px dotted #e8e1db; }
-.hmtc-home-snapshot dt { font-size: 13px; line-height: 1.5; color: #3f3a3f; }
-.hmtc-home-snapshot dd { margin: 0; font: 15px/1.5 "IBM Plex Mono",monospace; color: #9f2727; }
-.wiki-content .hmtc-home-snapshot-inner > a { color: #9f2727; font-size: 13px; text-decoration: none; }
+.hmtc-home-snapshot dl > div { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 16px; padding: 12px 0; border-bottom: 1px dotted var(--hmtc-line); }
+.hmtc-home-snapshot dt { font-size: 13px; line-height: 1.5; color: var(--hmtc-ink); }
+.hmtc-home-snapshot dd { margin: 0; font: 15px/1.5 "IBM Plex Mono",monospace; color: var(--hmtc-navy); }
+.wiki-content .hmtc-home-snapshot-inner > a { color: var(--hmtc-navy); font-size: 13px; text-decoration: none; }
 .wiki-content .hmtc-home-snapshot-inner > a:hover { text-decoration: underline; }
 .hmtc-hb-sidebar { display: flex; flex-direction: column; gap: 32px; min-width: 0; padding: 48px 28px 32px; }
 .hmtc-author-card { color: #fff; }
@@ -1184,25 +1184,25 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 .hmtc-author-name:hover { text-decoration: underline; }
 .hmtc-author-orcid { display: inline-flex; }
 .hmtc-author-updated { font: 12px/1.6 var(--bodyFont); color: rgba(255,255,255,.75); margin: 14px 0 0; }
- .hmtc-author-popover { position: absolute; top: 100%; right: 0; z-index: 70; width: min(340px,calc(100vw - 48px)); box-sizing: border-box; padding: 22px; background: #fffdfb; color: #392b2b; border: 1px solid #e7ceca; border-top: 5px solid #f2dcda; border-radius: 14px 14px 32px 14px; box-shadow: 0 16px 40px #3c101033; visibility: hidden; opacity: 0; transition: opacity 120ms ease; font: 14px/1.55 var(--bodyFont); }
+ .hmtc-author-popover { position: absolute; top: 100%; right: 0; z-index: 70; width: min(340px,calc(100vw - 48px)); box-sizing: border-box; padding: 22px; background: var(--hmtc-paper); color: var(--hmtc-ink); border: 1px solid var(--hmtc-line); border-top: 5px solid var(--hmtc-line); border-radius: 14px 14px 32px 14px; box-shadow: 0 16px 40px #3c101033; visibility: hidden; opacity: 0; transition: opacity 120ms ease; font: 14px/1.55 var(--bodyFont); }
 .hmtc-author-hover:focus-within:not([data-dismissed]) .hmtc-author-popover { visibility: visible; opacity: 1; }
 @media (hover: hover) { .hmtc-author-hover:hover:not([data-dismissed]) .hmtc-author-popover { visibility: visible; opacity: 1; } }
-.hmtc-author-popover a { color: #9f2727; text-decoration: none; }
-.hmtc-author-popover a:hover { color: #7f1f1f; text-decoration: underline; }
+.hmtc-author-popover a { color: var(--hmtc-navy); text-decoration: none; }
+.hmtc-author-popover a:hover { color: var(--hmtc-navy); text-decoration: underline; }
 .hmtc-author-popover-heading { display: flex; gap: 12px; align-items: center; }
 .hmtc-author-popover-heading img { width: 56px; height: 56px; border-radius: 12px; margin: 0; }
 .hmtc-author-popover-heading > div { display: flex; flex-direction: column; gap: 3px; }
-.hmtc-author-eyebrow { font: 10px/1.55 var(--bodyFont); text-transform: uppercase; letter-spacing: .09em; color: #705b59; }
+.hmtc-author-eyebrow { font: 10px/1.55 var(--bodyFont); text-transform: uppercase; letter-spacing: .09em; color: var(--hmtc-slate); }
 .hmtc-author-popover-name { font: 400 17px/1.55 Lora,serif; }
 .hmtc-author-popover p { font: 14px/1.55 var(--bodyFont); margin: 14px 0; }
-.hmtc-author-popover .hmtc-author-affiliations { font-size: 12px; color: #705b59; }
+.hmtc-author-popover .hmtc-author-affiliations { font-size: 12px; color: var(--hmtc-slate); }
 .hmtc-author-popover-orcid { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; }
-.hmtc-author-more { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid #eedfdd; font-size: 14px; }
+.hmtc-author-more { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--hmtc-line); font-size: 14px; }
 .hmtc-document-doi { padding: 0; }
 .hmtc-hb-snap + .hmtc-document-doi { padding: 18px 0 0; border-top: 1px solid rgba(255,255,255,.25); }
 .hmtc-doi-label { margin: 0 0 10px; font: 11px/1.5 "IBM Plex Mono",monospace; text-transform: uppercase; letter-spacing: .04em; color: rgba(255,255,255,.75); }
 .hmtc-document-doi > a { color: #fff; font: 12px/1.5 "IBM Plex Mono",monospace; overflow-wrap: anywhere; }
-.hmtc-doi-note { font: 12px/1.65 var(--bodyFont); color: #fff2ee; margin: 12px 0 0; }
+.hmtc-doi-note { font: 12px/1.65 var(--bodyFont); color: var(--hmtc-paper); margin: 12px 0 0; }
 
 .hmtc-home-hero a:focus-visible:not(:where(.hmtc-search-results a)), .hmtc-hb-sidebar a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
 @media (max-width: 1149px) {
@@ -1226,19 +1226,19 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 }
 
 .hmtc-subject-caption { display: flex; flex-direction: column; gap: 12px; align-self: stretch; margin-top: auto; }
-.hmtc-element-mark { width: 180px; height: 180px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; box-shadow: 0 0 0 14px #ffffff05, 0 0 0 28px #ffffff04; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; color: #fff1eb; }
+.hmtc-element-mark { width: 180px; height: 180px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; box-shadow: 0 0 0 14px #ffffff05, 0 0 0 28px #ffffff04; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; color: var(--hmtc-paper); }
 .hmtc-element-symbol { font: 400 88px/1 Lora,serif; letter-spacing: -.06em; }
 .hmtc-element-number { font: 12px/1.6 "IBM Plex Mono",monospace; color: #ffffffaa; }
 .hmtc-document-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 42px; }
-.hmtc-document-actions > a, .hmtc-follow > summary { box-sizing: border-box; display: inline-flex; align-items: center; gap: 16px; border: 0; border-radius: 3px; padding: 13px 15px; background: #7f1f1f; color: #fff; font: 400 13px/1.45 var(--bodyFont); text-decoration: none; cursor: pointer; }
+.hmtc-document-actions > a, .hmtc-follow > summary { box-sizing: border-box; display: inline-flex; align-items: center; gap: 16px; border: 0; border-radius: 3px; padding: 13px 15px; background: var(--hmtc-navy); color: #fff; font: 400 13px/1.45 var(--bodyFont); text-decoration: none; cursor: pointer; }
 .hmtc-document-actions > a:hover, .hmtc-follow > summary:hover { box-shadow: inset 0 0 0 1px #ffffff66; }
 .hmtc-document-actions a:focus-visible, .hmtc-follow summary:focus-visible, .hmtc-follow button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .hmtc-follow { position: relative; }
 .hmtc-follow > summary { list-style: none; }
 .hmtc-follow > summary::-webkit-details-marker { display: none; }
-.hmtc-follow-panel { position: absolute; left: 0; top: calc(100% + 8px); z-index: 80; padding: 20px; width: min(290px,calc(100vw - 48px)); box-sizing: border-box; border: 1px solid #e8e1db; border-radius: 3px; background: #fffdfb; color: #3f3a3a; box-shadow: 0 16px 40px #3c101033; }
+.hmtc-follow-panel { position: absolute; left: 0; top: calc(100% + 8px); z-index: 80; padding: 20px; width: min(290px,calc(100vw - 48px)); box-sizing: border-box; border: 1px solid var(--hmtc-line); border-radius: 3px; background: var(--hmtc-paper); color: var(--hmtc-ink); box-shadow: 0 16px 40px #3c101033; }
 .hmtc-follow-panel p { margin: 0 0 16px; font: 14px/1.55 var(--bodyFont); }
-.hmtc-follow-panel a, .hmtc-follow-panel button { color: #9f2727; background: none; font: 14px/1.6 var(--bodyFont); padding: 0; border: 0; display: block; margin-top: 12px; text-decoration: underline; cursor: pointer; }
+.hmtc-follow-panel a, .hmtc-follow-panel button { color: var(--hmtc-navy); background: none; font: 14px/1.6 var(--bodyFont); padding: 0; border: 0; display: block; margin-top: 12px; text-decoration: underline; cursor: pointer; }
 .hmtc-follow-panel [role="status"] { display: block; font-size: 12px; margin-top: 10px; }
 @media (max-width: 1149px) { .hmtc-document-actions { position: relative; } .hmtc-follow { position: static; } .hmtc-follow-panel { left: 0; right: auto; } }
 @media (prefers-reduced-motion: reduce) { .hmtc-author-popover { transition: none; } }

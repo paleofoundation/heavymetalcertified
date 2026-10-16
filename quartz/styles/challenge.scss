@@ -1,13 +1,13 @@
 // Marketing-only draft. Components port the findings, caveat, key-value and
 // grid-of-records specifications in docs/design-canon/COMPONENTS.md.
 .hmtc-challenge {
-  --challenge-accent: #9f2727;
-  --challenge-line: #e8e1db;
-  --challenge-tint: #fdf4f3;
-  --challenge-paper: #fffdfb;
-  --challenge-copy: #3f3a3a;
-  --challenge-muted: #736b6b;
-  --challenge-note: #5a4141;
+  --challenge-accent: var(--hmtc-navy);
+  --challenge-line: var(--hmtc-line);
+  --challenge-tint: var(--hmtc-tint);
+  --challenge-paper: var(--hmtc-paper);
+  --challenge-copy: var(--hmtc-ink);
+  --challenge-muted: var(--hmtc-slate);
+  --challenge-note: var(--hmtc-slate);
   color: var(--challenge-copy);
   > section, details[id] { scroll-margin-top: 100px; }
   > section > p { font-size: 16.5px; line-height: 1.78; color: var(--challenge-copy); }
@@ -30,7 +30,7 @@
   }
 
   .challenge-promise {
-    border: 1px solid #f2dcda;
+    border: 1px solid var(--hmtc-line);
     background: var(--challenge-tint);
     padding: 24px 26px;
     margin-bottom: 44px;
@@ -39,7 +39,7 @@
 
   .challenge-facts {
     margin: 0 0 24px;
-    > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 8px 0; border-bottom: 1px dotted #f2ece7; }
+    > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; padding: 8px 0; border-bottom: 1px dotted var(--hmtc-line-soft); }
     dt { font-size: 13px; line-height: 1.5; }
     dd { margin: 0; font: 400 12.5px/1.5 "IBM Plex Mono", monospace; color: var(--challenge-accent); }
   }
@@ -78,7 +78,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    > li { display: grid; grid-template-columns: 52px minmax(0, 1fr) 190px; gap: 22px; align-items: start; padding: 22px 0; border-bottom: 1px solid #f2ece7; margin: 0; }
+    > li { display: grid; grid-template-columns: 52px minmax(0, 1fr) 190px; gap: 22px; align-items: start; padding: 22px 0; border-bottom: 1px solid var(--hmtc-line-soft); margin: 0; }
     h3 { margin: 0 0 10px; color: var(--challenge-accent); }
     .challenge-action-body > p { font-size: 14px; line-height: 1.7; margin: 0 0 12px; color: var(--challenge-copy); }
     .challenge-action-body > a { font-size: 14px; }
@@ -86,7 +86,7 @@
 
   .challenge-action-number { font: 400 22px/1.3 "IBM Plex Mono", monospace; color: var(--challenge-accent); }
   .challenge-evidence p { font: 400 12.5px/1.7 "IBM Plex Mono", monospace; color: var(--challenge-copy); margin: 6px 0 0; }
-  .challenge-tag { display: inline-block; font: 400 9.5px/1.6 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--challenge-accent); border: 1px solid #f2dcda; background: var(--challenge-tint); border-radius: 2px; padding: 3px 8px; margin-top: 8px; }
+  .challenge-tag { display: inline-block; font: 400 9.5px/1.6 "IBM Plex Mono", monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--challenge-accent); border: 1px solid var(--hmtc-line); background: var(--challenge-tint); border-radius: 2px; padding: 3px 8px; margin-top: 8px; }
   .challenge-open-question { margin-top: 16px; }
   .challenge-counsel { margin-top: 44px; }
   .challenge-supplier-sequence { font: 400 14px/1.8 "IBM Plex Mono", monospace; color: var(--challenge-accent); margin: 24px 0; }
@@ -122,11 +122,11 @@
   }
 }
 :root[saved-theme="dark"] .hmtc-challenge {
-  --challenge-accent: #e08a8a;
-  --challenge-line: #4b4744;
-  --challenge-tint: #352524;
-  --challenge-paper: #201c1b;
-  --challenge-copy: #e8e6e1;
+  --challenge-accent: var(--hmtc-navy);
+  --challenge-line: var(--hmtc-slate);
+  --challenge-tint: var(--hmtc-ink);
+  --challenge-paper: var(--hmtc-ink);
+  --challenge-copy: var(--hmtc-line);
   --challenge-muted: #bcb4b0;
-  --challenge-note: #e8ceca;
+  --challenge-note: var(--hmtc-line);
 }

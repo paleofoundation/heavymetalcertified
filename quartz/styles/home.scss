@@ -8,9 +8,9 @@
 // custom.scss. Invent nothing; a third scale is how the homepage drifted onto
 // its own visual system in the first place.
 //
-// Specifically NOT `--secondary`: it is the same #8B2A4A in light mode but
-// flips to #C76B8E in dark, which is the bug custom.scss patches by hard-coding
-// #6e213a for the footer. `--burg` has no dark override, so a burgundy band
+// Specifically NOT `--secondary`: it is the same var(--hmtc-navy) in light mode but
+// flips to var(--hmtc-navy) in dark, which is the bug custom.scss patches by hard-coding
+// var(--hmtc-navy) for the footer. `--burg` has no dark override, so a burgundy band
 // built on it is theme-stable by construction.
 //
 // FULL BLEED, without `100vw`: `100vw` includes the scrollbar and overflows on
@@ -112,12 +112,12 @@ body[data-slug="index"] .hmi-topnav-shell {
 }
 .hmi-hero-actions a.hmi-hero-btn--solid {
   background: #fff;
-  color: #9f2727;
+  color: var(--hmtc-navy);
   border-color: #fff;
 }
 .hmi-hero-actions a.hmi-hero-btn--solid:hover {
-  background: #f6ecec;
-  color: #9f2727;
+  background: var(--hmtc-tint);
+  color: var(--hmtc-navy);
 }
 
 // The hero search reuses Quartz's own .search / .search-button / .search-bar
