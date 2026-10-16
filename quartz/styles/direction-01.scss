@@ -1,0 +1,13 @@
+// HMTC-DESIGN-1, Direction 01. Approved palette, 16 October 2026.
+// Gold is reserved for the certification seal, primary action and focus accents.
+// Never use gold for body text, ordinary links, table values or large backgrounds.
+:root {
+  --hmtc-ink: #0D1B2A;
+  --hmtc-navy: #1B263B;
+  --hmtc-slate: #415A77;
+  --hmtc-gold: #D4AF37;
+  --hmtc-paper: #F7F3E9;
+  --hmtc-line: color-mix(in srgb, var(--hmtc-slate) 24%, var(--hmtc-paper));
+  --hmtc-line-soft: color-mix(in srgb, var(--hmtc-slate) 12%, var(--hmtc-paper));
+  --hmtc-tint: color-mix(in srgb, var(--hmtc-slate) 5%, var(--hmtc-paper));
+}
