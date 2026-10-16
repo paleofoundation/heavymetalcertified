@@ -26,7 +26,7 @@
        components a consistent shade scale, type scale, radii,
        and shadows without re-tuning every selector.
      - Where the two overlap (e.g. --color-primary == --secondary
-       == #8B2A4A), keep both: Quartz vars stay the canonical
+       == var(--hmtc-navy)), keep both: Quartz vars stay the canonical
        theming surface; Refine tokens are component-level tools.
    ============================================================ */
 
@@ -41,27 +41,27 @@
 
 :root {
   /* Brand colors */
-  --color-primary: #9f2727;
-  --color-secondary: #78716c;
+  --color-primary: var(--hmtc-navy);
+  --color-secondary: var(--hmtc-slate);
   --color-accent: #aab8be;
-  --color-background: #fdfdfc;
-  --color-text: #1a1d24;
+  --color-background: var(--hmtc-paper);
+  --color-text: var(--hmtc-ink);
   --color-text-secondary: rgba(26, 29, 36, 0.7);
   --color-text-muted: rgba(26, 29, 36, 0.5);
-  --color-border: rgba(139, 42, 74, 0.15);
+  --color-border: rgba(13, 27, 42, 0.15);
 
   /* Primary scale (burgundy) */
-  --color-primary-50: #fdf4f3;
-  --color-primary-100: #fbeceb;
-  --color-primary-200: #f2dcda;
-  --color-primary-300: #e3a9a5;
-  --color-primary-400: #cf736d;
-  --color-primary-500: #b84640;
-  --color-primary-600: #9f2727;
-  --color-primary-700: #7f1f1f;
-  --color-primary-800: #631818;
-  --color-primary-900: #4a1212;
-  --color-primary-950: #2b0c0c;
+  --color-primary-50: var(--hmtc-tint);
+  --color-primary-100: var(--hmtc-tint);
+  --color-primary-200: var(--hmtc-line);
+  --color-primary-300: var(--hmtc-line);
+  --color-primary-400: var(--hmtc-navy);
+  --color-primary-500: var(--hmtc-navy);
+  --color-primary-600: var(--hmtc-navy);
+  --color-primary-700: var(--hmtc-navy);
+  --color-primary-800: var(--hmtc-navy);
+  --color-primary-900: var(--hmtc-navy);
+  --color-primary-950: var(--hmtc-ink);
 
   /* Secondary scale (warm gray) */
   --color-secondary-50: #f5f5f5;
@@ -71,7 +71,7 @@
   --color-secondary-400: #9a938e;
   --color-secondary-500: #7b746f;
   --color-secondary-600: #615b57;
-  --color-secondary-700: #4b4744;
+  --color-secondary-700: var(--hmtc-slate);
   --color-secondary-800: #363330;
   --color-secondary-900: #262322;
   --color-secondary-950: #151414;
@@ -125,9 +125,9 @@
   --radius-xl: 16px;
 
   /* Shadows — burgundy-tinted, low contrast */
-  --shadow-sm: 0 2px 8px rgba(139, 42, 74, 0.06);
-  --shadow-md: 0 4px 16px rgba(139, 42, 74, 0.08);
-  --shadow-lg: 0 8px 32px rgba(139, 42, 74, 0.1);
+  --shadow-sm: 0 2px 8px rgba(13, 27, 42, 0.06);
+  --shadow-md: 0 4px 16px rgba(13, 27, 42, 0.08);
+  --shadow-lg: 0 8px 32px rgba(13, 27, 42, 0.1);
 
   /* Motion — Refine doesn't export these, so we declare a small
      hand-built vocabulary. Used on cards, links, search pill,
@@ -145,9 +145,9 @@
    text-on-dark contrast holds. */
 
 :root[saved-theme="dark"] {
-  --color-primary: #e08a8a;
+  --color-primary: var(--hmtc-navy);
   --color-background: #141414;
-  --color-text: #e8e6e1;
+  --color-text: var(--hmtc-line);
   --color-text-secondary: rgba(232, 230, 225, 0.72);
   --color-text-muted: rgba(232, 230, 225, 0.5);
   --color-border: rgba(199, 107, 142, 0.22);
@@ -747,7 +747,7 @@ a.hmi-meth-card:hover {
 }
 
 .hmi-stakeholder-guide {
-  background: rgba(139, 42, 74, 0.04);
+  background: rgba(13, 27, 42, 0.04);
   border: 1px solid var(--lightgray);
   border-left: 3px solid var(--secondary);
   border-radius: var(--radius-md);
@@ -1952,14 +1952,14 @@ article > table {
    The footer and corpus counter paint white text on
    var(--secondary). In light mode that is a dark burgundy (white
    text ~7:1). In dark mode --secondary flips to a light pink
-   (#C76B8E) where white text drops to 3.55:1 and the low-alpha
+   (var(--hmtc-navy)) where white text drops to 3.55:1 and the low-alpha
    sub-labels fall well below AA. Pin these panels to a dark
    burgundy in dark mode so the white text stays legible.
    ----------------------------------------------------------- */
 
 :root[saved-theme="dark"] footer.site-footer,
 :root[saved-theme="dark"] .hmi-home-corpus-counter {
-  background: #7f1f1f;
+  background: var(--hmtc-navy);
 }
 
 /* -----------------------------------------------------------

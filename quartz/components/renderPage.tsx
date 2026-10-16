@@ -1,3 +1,4 @@
+import { applyDirection01 } from "../util/direction01"
 import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import BodyConstructor from "./Body"
@@ -231,6 +232,7 @@ export function renderPage(
   renderTranscludes(root, cfg, slug, componentData, visited)
 
   // set componentData.tree to the edited html that has transclusions rendered
+  applyDirection01(root)
   componentData.tree = root
 
   const {

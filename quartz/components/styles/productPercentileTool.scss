@@ -7,7 +7,7 @@
 }
 
 .hmi-brand-pre-screen {
-  background: linear-gradient(180deg, rgba(139, 42, 74, 0.04), rgba(255, 255, 255, 0.62));
+  background: linear-gradient(180deg, rgba(13, 27, 42, 0.04), rgba(255, 255, 255, 0.62));
 }
 
 .hmi-percentile-heading {
@@ -151,7 +151,7 @@
 }
 
 .hmi-context-row dl div {
-  background: rgba(139, 42, 74, 0.05);
+  background: rgba(13, 27, 42, 0.05);
   border-radius: var(--radius-sm);
   padding: 0.55rem;
 }
@@ -222,7 +222,7 @@
 }
 
 .hmi-percentile-category-note {
-  background: rgba(139, 42, 74, 0.05);
+  background: rgba(13, 27, 42, 0.05);
   border-left: 3px solid var(--secondary);
   border-radius: var(--radius-sm);
   font-size: 0.84rem;
@@ -357,7 +357,7 @@
 }
 
 .hmi-percentile-result-card.good {
-  background: rgba(139, 42, 74, 0.06);
+  background: rgba(13, 27, 42, 0.06);
 }
 
 .hmi-percentile-result-card.caution,
@@ -530,7 +530,7 @@
 
 .hmi-comparator-confidence.hmi-comparator-confidence-data-gap {
   background: rgba(189, 50, 50, 0.12);
-  color: #a83232;
+  color: var(--hmtc-navy);
 }
 
 .hmi-comparator-facts {
@@ -576,7 +576,7 @@
 }
 
 .hmi-comparator-rangebar-literature {
-  background: rgba(139, 42, 74, 0.4);
+  background: rgba(13, 27, 42, 0.4);
   border-radius: 999px;
   height: 100%;
   position: absolute;
@@ -657,7 +657,7 @@
 }
 
 .hmi-comparator-result-card {
-  background: rgba(139, 42, 74, 0.05);
+  background: rgba(13, 27, 42, 0.05);
   border-left: 3px solid var(--secondary);
   border-radius: var(--radius-sm);
   display: grid;
@@ -689,7 +689,7 @@
 
 .hmi-comparator-coverage-note {
   background: rgba(189, 50, 50, 0.08);
-  border-left: 3px solid #c2474a;
+  border-left: 3px solid var(--hmtc-navy);
   border-radius: var(--radius-sm);
   color: var(--darkgray);
   font-size: 0.78rem;

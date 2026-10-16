@@ -1,6 +1,6 @@
 // Standards Finder — the guided lookup on /standards/finder.
 //
-// Cert design canon (docs/design-canon): #9f2727 accent via --secondary, Lora /
+// Cert design canon (docs/design-canon): var(--hmtc-navy) accent via --secondary, Lora /
 // IBM Plex Mono / system sans, no bold on the reading surface (weights 400, or 500
 // for mono labels and measured values only), no gradient, radius 2-3px, no shadow
 // outside modals. Colours are theme tokens so the tool is dark-mode aware. The
@@ -218,7 +218,7 @@
 // Panel table. The Finder mounts in the afterBody slot, which renders outside
 // .wiki-content, so the canonical burgundy-header table rule (cert-chrome.scss
 // .wiki-content table) does not reach it. These declarations reproduce that exact
-// canon here, scoped to the Finder: #9f2727 head, IBM Plex Mono 10px/500 uppercase,
+// canon here, scoped to the Finder: var(--hmtc-navy) head, IBM Plex Mono 10px/500 uppercase,
 // per-row rule, no zebra, no hover, no bold. This is not a second `.wiki-content
 // table` block, so it does not violate the one-canonical-table rule.
 .hmtc-finder-panel {

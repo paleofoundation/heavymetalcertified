@@ -10,14 +10,14 @@
 
 // Heavy Metal Certified red family (v3 design artifact — theme-stable brand
 // grounds). --burg drives the hero band, active nav, table heads and snav
-// actives; --burg-dark (#7f1f1f) is the footer ground and button-hover; the two
+// actives; --burg-dark (var(--hmtc-navy)) is the footer ground and button-hover; the two
 // tints are the verify/reuse-card surfaces. Recolored from the index burgundy
-// (#8b2a4a) per the "cert must read distinct from the index" decision.
+// (var(--hmtc-navy)) per the "cert must read distinct from the index" decision.
 :root {
-  --burg: #9f2727; --burg-dark: #7f1f1f; --burg-tint: #fbeceb; --burg-tint2: #fdf4f3;
-  --ink: #2b1f1f; --body: #3f3a3a; --muted: #736b6b; --faint: #a9a1a1;
-  --line: #e8e1db; --line2: #f2ece7; --shade: #faf7f4;
-  --a: #9f2727; --b: #7f1f1f; --c: #a9a1a1; --d: #9f2727;
+  --burg: var(--hmtc-navy); --burg-dark: var(--hmtc-navy); --burg-tint: var(--hmtc-tint); --burg-tint2: var(--hmtc-tint);
+  --ink: var(--hmtc-ink); --body: var(--hmtc-ink); --muted: var(--hmtc-slate); --faint: var(--hmtc-slate);
+  --line: var(--hmtc-line); --line2: var(--hmtc-line-soft); --shade: var(--hmtc-tint);
+  --a: var(--hmtc-navy); --b: var(--hmtc-navy); --c: var(--hmtc-slate); --d: var(--hmtc-navy);
   --radius: 3px; --radius-lg: 3px; --maxw: 1760px;
 }
 
@@ -115,7 +115,7 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 /* ---------- main content ---------- */
 .proof-main { min-width: 0; }
 .proof-main .breadcrumb { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
-.proof-main .page-h { display: flex; align-items: center; gap: 12px; border-bottom: 1px dotted #cfcabf; padding-bottom: 14px; margin: 6px 0 4px; }
+.proof-main .page-h { display: flex; align-items: center; gap: 12px; border-bottom: 1px dotted var(--hmtc-line); padding-bottom: 14px; margin: 6px 0 4px; }
 .proof-main .page-h .chev { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; }
 .proof-main .page-h h1 { font-family: Lora, serif; font-size: 34px; margin: 0; color: var(--ink); font-weight: 600; }
 .proof-main .page-h .sym { color: var(--muted); font-weight: 400; }
@@ -132,16 +132,16 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 .rail .card .meta { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--muted); margin-top: 4px; padding-top: 13px; border-top: 1px solid var(--line); line-height: 1.7; }
 
 /* Certificate-verify box (cert-only): the signature right-rail affordance. */
-.rail .rail-verify { border: 1px solid #f2dcda; background: var(--burg-tint); padding: 16px; border-radius: var(--radius); }
+.rail .rail-verify { border: 1px solid var(--hmtc-line); background: var(--burg-tint); padding: 16px; border-radius: var(--radius); }
 .rail .rail-verify h4 { font-family: Lora, serif; font-size: 17px; color: var(--burg); margin: 0 0 8px; font-weight: 600; }
-.rail .rail-verify p { font-size: 12.5px; color: #5a4141; line-height: 1.65; margin: 0 0 13px; }
+.rail .rail-verify p { font-size: 12.5px; color: var(--hmtc-slate); line-height: 1.65; margin: 0 0 13px; }
 .rail .rail-verify-cta { display: inline-block; background: var(--burg); color: #fff; font-size: 12px; font-weight: 500; padding: 8px 13px; border-radius: var(--radius); }
 .rail .rail-verify-cta:hover { background: var(--burg-dark); text-decoration: none; color: #fff; }
 
 /* ---------- the article body, re-skinned ---------- */
 .wiki-content { font-size: 16px; color: var(--body); line-height: 1.72; }
 .wiki-content > *:first-child { margin-top: 0; }
-.wiki-content h2 { font-family: Lora, serif; font-size: 24px; color: var(--ink); font-weight: 600; margin: 42px 0 14px; padding-bottom: 8px; border-bottom: 1px dotted #cfcabf; scroll-margin-top: 86px; }
+.wiki-content h2 { font-family: Lora, serif; font-size: 24px; color: var(--ink); font-weight: 600; margin: 42px 0 14px; padding-bottom: 8px; border-bottom: 1px dotted var(--hmtc-line); scroll-margin-top: 86px; }
 .wiki-content h3 { font-family: Lora, serif; font-size: 19px; color: var(--ink); font-weight: 600; margin: 28px 0 10px; scroll-margin-top: 86px; }
 .wiki-content h4 { font-family: Lora, serif; font-size: 16.5px; color: var(--ink); font-weight: 600; margin: 22px 0 8px; }
 .wiki-content h2 a, .wiki-content h3 a { color: inherit; }
@@ -165,12 +165,12 @@ a.internal.tag-link:not(.hmi-chip):not(.hmi-hero-btn):not(.hmtc-hero-btn):hover 
 .wiki-content code { font-family: "IBM Plex Mono", monospace; font-size: 0.88em; background: var(--shade); padding: 1px 5px; border-radius: 4px; }
 .wiki-content hr { border: 0; border-top: 1px solid var(--line); margin: 28px 0; }
 // Table styling is CANONICAL in cert-chrome.scss (.wiki-content table — burgundy
-// #9f2727 head, IBM Plex Mono 10px/500 uppercase, per-row rule, no zebra/hover).
+// var(--hmtc-navy) head, IBM Plex Mono 10px/500 uppercase, per-row rule, no zebra/hover).
 // This block was a duplicate that lost the cascade (its thead th at weight 600 was
 // overridden). Removed per AGENTS.md §2 — delete the losing rule, do not out-specify.
 // Do not re-add table rules here; edit the canonical block in cert-chrome.scss.
 
-.hmi-quick-read { background: var(--burg-tint2); border: 1px solid #f2dcda; border-left: 4px solid var(--burg); border-radius: 0 3px 3px 0; padding: 18px 22px; margin: 0 0 28px; }
+.hmi-quick-read { background: var(--burg-tint2); border: 1px solid var(--hmtc-line); border-left: 4px solid var(--burg); border-radius: 0 3px 3px 0; padding: 18px 22px; margin: 0 0 28px; }
 .hmi-quick-read-label { font-family: Inter, sans-serif; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.09em; color: var(--burg); margin-bottom: 9px; }
 .hmi-quick-read p { margin: 0 0 10px; }
 .hmi-quick-read ul { margin: 0 0 12px; }
@@ -210,7 +210,7 @@ section.hmi-evidence-header .hmi-evidence-row { display: flex; gap: 10px; margin
 section.hmi-evidence-header .hmi-evidence-key { color: var(--muted); min-width: 90px; font-weight: 600; font-size: 12px; }
 
 /* accordion overview (Q&A) — the v3 FAQ accordion, recoloured to the cert
-   palette (#9f2727 = var(--burg); the index ships the same rules at #8b2a4a).
+   palette (var(--hmtc-navy) = var(--burg); the index ships the same rules at var(--hmtc-navy)).
    Emitted by CollapsibleQuestions: a Lora question at weight 400 (NO bold —
    design canon) baseline-aligned against a mono "+" marker that flips to "−"
    when open, and a left-ruled answer. Replaces the pre-v3 bold-600 summary +
@@ -231,7 +231,7 @@ section.hmi-evidence-header .hmi-evidence-key { color: var(--muted); min-width: 
 .qa summary a[role="anchor"] { opacity: 0; transition: opacity 0.15s ease; }
 .qa summary:hover a[role="anchor"],
 .qa summary a[role="anchor"]:focus-visible { opacity: 0.5; }
-.qa .ans { margin: 12px 0 20px 30px; padding: 0 2px 0 16px; border-left: 2px solid #f2dcda; color: var(--body); font-size: 15.5px; line-height: 1.72; }
+.qa .ans { margin: 12px 0 20px 30px; padding: 0 2px 0 16px; border-left: 2px solid var(--hmtc-line); color: var(--body); font-size: 15.5px; line-height: 1.72; }
 .qa .ans p { margin: 0 0 0.8em; }
 .qa .qa-sub { border-bottom: 1px solid var(--line2); margin: 8px 0 0 6px; border-left: 2px solid var(--burg-tint); padding-left: 14px; }
 .qa .qa-sub > summary { font-size: 15.5px; padding: 11px 2px; color: var(--burg); }
@@ -240,7 +240,7 @@ section.hmi-evidence-header .hmi-evidence-key { color: var(--muted); min-width: 
 
 /* collapsible references */
 details.disclose, details.hmi-references { margin: 38px 0 0; border: 0; }
-details.disclose > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: Lora, serif; font-size: 23px; font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px dotted #cfcabf; }
+details.disclose > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; font-family: Lora, serif; font-size: 23px; font-weight: 600; color: var(--ink); padding-bottom: 8px; border-bottom: 1px dotted var(--hmtc-line); }
 details.disclose > summary::-webkit-details-marker { display: none; }
 details.disclose > summary .mk { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; color: var(--burg); flex: 0 0 auto; font-size: 15px; transition: transform 0.2s; }
 details.disclose[open] > summary .mk { transform: rotate(180deg); }
