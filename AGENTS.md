@@ -48,16 +48,19 @@ cascade, and the browser disagrees. So:
   (`FIDELITY.md` §1). Quartz emits component CSS after `custom.scss`, so old rules win on
   equal specificity.
 
-## 3. Cert palette (this site, not the Index)
+## 3. Approved Direction 01 palette
 
-The canon was authored against the Index (`#8b2a4a` accent). **This site substitutes the
-HMTc palette** — do not copy the Index hex values:
+The owner approved Direction 01 on 2026-10-16. This supersedes legacy red/burgundy
+color examples in the design canon; retain its component and evidence rules.
+The canonical style file is `quartz/styles/direction-01.scss`.
 
-- Accent / burgundy: **`#9f2727`** (`--secondary`; dark-mode `#e08a8a`)
-- Paper: `#fffdfb` · Footer ground: `#4a1526` · Line: `#e8e1db`
-- Type: **Lora** (headings/titles), **IBM Plex Mono** (labels, stamps, measured values),
-  system sans (body). Measured values are mono; a number inside a prose sentence is a
-  defect, not a style choice (`COMPONENTS.md` atom).
+- Ink: `#0D1B2A`; navy: `#1B263B`; slate: `#415A77`.
+- Gold: `#D4AF37`, for the seal and key action/focus accents only.
+- Paper: `#F7F3E9`. Borders and subtle surfaces mix slate with paper.
+- No gold body text, ordinary links, measured values or large gold backgrounds.
+- Lora headings, IBM Plex Mono labels/values, system sans body; no bold reading surface.
+- Reuse only subject-matched Heavy Metal Index heroes. Keep the mapping in presentation
+  code, never modify page prose, DOIs, frontmatter, canonicals or structured data.
 
 ## 4. Authority (from `CONTENT-RULES.md` §5)
 
