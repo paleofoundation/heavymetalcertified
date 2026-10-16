@@ -483,6 +483,8 @@
       {"sel":".hmtc-cite-panel-copy","prop":"count","want":1}
     ],
     "/": [
+      { "sel": ".hmtc-home-hero > .hmtc-hero-image", "prop": "count", "want": 1 },
+      { "sel": ".hmtc-home-action--primary", "prop": "background-color", "want": "#d4af37" },
       { "sel": "#what h2 + div", "prop": "absent", "want": true, "note": "Remove the redundant short red rule beneath the heading; retain the heading's gray divider." },
       { "sel": "#questions h2 + div", "prop": "absent", "want": true, "note": "Common questions keeps only the gray heading divider, with no second red rule." },
       { "sel": "head link[rel='stylesheet'][data-persist][href*='index.']", "prop": "count", "want": 1, "note": "The SPA release guard compares this build-specific stylesheet before morphing the page; cross-release behaviour is checked by check:spa-release." },
@@ -522,11 +524,11 @@
       { "sel": ".hmtc-panel-grid a", "prop": "background-color", "want": "#f7f3e9", "note": "cards stay white on the cream canvas; #faf7f4/#fffdfb is ΔE 2.12 — if this ever equals body, the panel has lost its separation" },
       { "sel": "header", "prop": "height", "want": "68px", "src": "CHROME-SPEC §1.1" },
       { "sel": "header", "prop": "position", "want": "sticky" },
-      { "sel": ".hmtc-home-hero", "prop": "background-color", "want": "#1b263b" },
+      { "sel": ".hmtc-home-hero", "prop": "background-color", "want": "#0d1b2a" },
       { "sel": ".hmtc-home-copy", "prop": "border-width", "want": "0px" },
       { "sel": ".hmtc-home-title", "prop": "color", "want": "#ffffff" },
       { "sel": "header.hmi-topnav-shell", "prop": "margin", "want": "0px" },
-      { "sel": ".hmtc-home-snapshot", "prop": "background-color", "want": "#f7f3e9" },
+      { "sel": ".hmtc-home-snapshot", "prop": "background-color", "want": "#1b263b" },
       { "sel": ".hmtc-home-snapshot-date", "prop": "absent", "want": true, "note": "live-at-build snapshot; no frozen August As-of date." },
       { "sel": ".hmtc-home-snapshot a[href='/standards']", "prop": "count", "want": 1, "note": "Explore the standards register remains the snapshot exit." },
       { "sel": ".hmtc-home-snapshot dt", "prop": "count", "want": 3, "note": "HMTC-HOME-GLANCE-THIN-1: Subcategory standards in force, Live DOIs, Priority metals only." },
@@ -1038,7 +1040,13 @@
     ],
     "/compare": [
       { "sel": ".hmtc-author-card", "prop": "count", "want": 1 }
-    ]
+    ],
+    "/standards/rice-bulk-grain": [{"sel":".hmtc-heroband--photographic > .hmtc-hero-image","prop":"count","want":1}],
+    "/standards/fish-marine-predatory": [{"sel":".hmtc-heroband--photographic > .hmtc-hero-image","prop":"count","want":1}],
+    "/standards/shellfish": [{"sel":".hmtc-heroband--photographic > .hmtc-hero-image","prop":"count","want":1}],
+    "/manuals/seafood": [{"sel":".hmtc-heroband--photographic > .hmtc-hero-image","prop":"count","want":1}],
+    "/analytes/arsenic": [{"sel":".hmtc-heroband--photographic > .hmtc-hero-image","prop":"count","want":1}],
+    "/standards/fruit-purees": [{"sel":".hmtc-hero-image","prop":"absent","want":true}]
   },
   "responsive": [
     {

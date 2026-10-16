@@ -1,3 +1,4 @@
+import { categoryHeroImage } from "./categoryHeroImages"
 import { homeStats } from "./generated/home-stats"
 
 // HMTC-HOME-GLANCE-THIN-1: homepage glance is these three live rows only.
@@ -28,6 +29,7 @@ export function HomeHero({ fm }: { fm: Record<string, any> }) {
   const rows = glanceRows(generated.length ? generated : fallback)
   return (
     <section class="hmtc-home-hero" aria-label="Heavy Metal Certified" data-no-cite>
+      <img class="hmtc-hero-image" src={categoryHeroImage("index")} alt="" aria-hidden="true" width="2164" height="727" fetchPriority="high" decoding="async" />
       <div class="hmtc-home-hero-grid">
         <div class="hmtc-home-copy">
           <h1 class="hmtc-home-title">Published standards<br /><span>for heavy metals.</span></h1>

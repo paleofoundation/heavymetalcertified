@@ -17,7 +17,7 @@ import { join, extname } from "node:path"
 
 const SPEC = "design/v3-acceptance.cert.json"
 const ROOT = "public"
-const PORT = 8123
+const PORT = Number(process.env.HMTC_CHECK_PORT || 8123)
 const TYPES = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".pdf": "application/pdf", ".png": "image/png", ".woff2": "font/woff2" }
 
 function serve() {
@@ -37,6 +37,9 @@ function serve() {
 }
 
 function toHex(v) {
+  // CSS color-mix() serializes as color(srgb ...), not rgb(), in current browsers.
+  const srgb = String(v).match(/^color\(srgb\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)/)
+  if (srgb) return "#" + srgb.slice(1, 4).map(x => Math.round(Number(x) * 255).toString(16).padStart(2, "0")).join("")
   const m = String(v).match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/i)
   if (!m) return String(v).toLowerCase()
   return "#" + [1, 2, 3].map((i) => Number(m[i]).toString(16).padStart(2, "0")).join("")

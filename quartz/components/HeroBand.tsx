@@ -1,3 +1,4 @@
+import { categoryHeroImage } from "./categoryHeroImages"
 import { pageElement, pageSnapshot } from "./documentMetadata"
 import { DocumentActions } from "./DocumentActions"
 // @ts-ignore Quartz bundles the browser script as text.
@@ -109,6 +110,7 @@ export default (() => {
   const HeroBand: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
     const slug = (fileData.slug ?? "index") as FullSlug
     const base = pathToRoot(slug)
+    const heroImage = categoryHeroImage(String(slug))
     const fm = (fileData.frontmatter ?? {}) as Record<string, any>
     const title = fm.title ?? "Heavy Metal Certified"
     const type = String(fm.type ?? "")
@@ -165,7 +167,8 @@ export default (() => {
         : null
 
     return (
-      <section class="hmtc-heroband">
+      <section class={["hmtc-heroband", heroImage && "hmtc-heroband--photographic", (hasCover || showAuthority) && "hmtc-heroband--document"].filter(Boolean).join(" ")}>
+        {heroImage && <img class="hmtc-hero-image" src={`${base}${heroImage}`} alt="" aria-hidden="true" width="2164" height="727" fetchPriority="high" decoding="async" />}
         <div class="hmtc-heroband-inner">
           <div class={["hmtc-hb-context", hasCover && "hmtc-hb-context--cover", showAuthority && "hmtc-hb-context--authority"].filter(Boolean).join(" ")}>
             {hasCover ? (
