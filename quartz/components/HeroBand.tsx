@@ -167,7 +167,7 @@ export default (() => {
         : null
 
     return (
-      <section class={heroImage ? "hmtc-heroband hmtc-heroband--photographic" : "hmtc-heroband"}>
+      <section class={["hmtc-heroband", heroImage && "hmtc-heroband--photographic", (hasCover || showAuthority) && "hmtc-heroband--document"].filter(Boolean).join(" ")}>
         {heroImage && <img class="hmtc-hero-image" src={`${base}${heroImage}`} alt="" aria-hidden="true" width="2164" height="727" fetchPriority="high" decoding="async" />}
         <div class="hmtc-heroband-inner">
           <div class={["hmtc-hb-context", hasCover && "hmtc-hb-context--cover", showAuthority && "hmtc-hb-context--authority"].filter(Boolean).join(" ")}>

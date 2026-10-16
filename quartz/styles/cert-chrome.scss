@@ -711,6 +711,13 @@ header.hmi-topnav-shell::after {
 .hmtc-hb-snap-k { min-width: 0; font-size: 12px; color: rgba(255, 255, 255, 0.84); }
 .hmtc-hb-snap-v { min-width: 0; font: 400 12px/1.5 "IBM Plex Mono", monospace; color: #fff; font-variant-numeric: tabular-nums; text-align: right; overflow-wrap: anywhere; }
 
+@media (min-width: 1150px) {
+  .hmtc-heroband--document .hmtc-heroband-inner { grid-template-columns: 230px minmax(0, 1fr) 300px; }
+  .hmtc-heroband--document .hmtc-hb-context { grid-column: 1; grid-row: 1; padding: 56px 24px 40px 0; }
+  .hmtc-heroband--document .hmtc-hb-left { grid-column: 2; grid-row: 1; }
+  .hmtc-heroband--document .hmtc-hb-sidebar { grid-column: 3; grid-row: 1; }
+}
+
 @media (max-width: 1149px) {
   .hmtc-heroband-inner { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 0; }
   .hmtc-hb-context:not(.hmtc-hb-context--cover):not(.hmtc-hb-context--authority) { display: none; }
@@ -1248,4 +1255,7 @@ ul.hmtc-search-results { list-style: none; padding: 0; margin: 0; max-height: mi
 
 @media (max-width: 1149px) {
   .hmtc-hb-left, .hmtc-hb-context, .hmtc-hb-sidebar { grid-column: auto; grid-row: auto; }
+  .hmtc-hb-left { order: 1; }
+  .hmtc-hb-context { order: 2; }
+  .hmtc-hb-sidebar { order: 3; }
 }
