@@ -5,8 +5,8 @@ custom_page: true
 category: 26
 breadcrumb_leaf: "Peptides, SARMs, and Research Chemicals"
 description: "The Peptides, SARMs, and Research Chemicals Program Manual for Category 26: metal-safety limits, lot testing, and the standards register."
-scholar_abstract: "The Peptides, SARMs, and Research Chemicals Program Manual is the Category 26 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved for deposit and is not yet assigned. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved."
-socialDescription: "The Peptides, SARMs, and Research Chemicals Program Manual is the Category 26 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. The house DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved for deposit and is not yet assigned. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved."
+scholar_abstract: "The Peptides, SARMs, and Research Chemicals Program Manual is the Category 26 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.peptides-sarms-and-research-chemicals. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved."
+socialDescription: "The Peptides, SARMs, and Research Chemicals Program Manual is the Category 26 instrument of Heavy Metal Certified. The publisher is the Institute of Contaminant Standards. This edition is identified by DOI 10.83138/hmtc.manual.peptides-sarms-and-research-chemicals. The Manual binds the five live subcategory standard pages; those pages remain the derivation of each cell. Seven metals (lead, cadmium, total arsenic, total mercury, nickel, tin, and total chromium) are read across from the ICH Q3D elemental-impurity limits. Aluminium uses the FDA injectable limit (25) on the injectable and nasal standards and the EU drinking-water limit (200) on raw powders and oral SARMs. Inorganic arsenic, methylmercury, and hexavalent chromium are capped at their parent totals and tested on the program retest schedule. Certification is metal safety only. It does not certify efficacy, legality, or approval status. A product is certified only when every published limit is met at or below 100 percent. The program certifies only when there is at least 90 percent confidence the brand can remain in the program. All rights reserved."
 keywords:
   - "Peptides, SARMs, and Research Chemicals"
   - "Category 26"
@@ -18,7 +18,7 @@ keywords:
   - "Lot Testing Schedule"
   - "hmtc.manual.peptides-sarms-and-research-chemicals"
 scholar_eligible: true
-cert_doi: null
+cert_doi: "10.83138/hmtc.manual.peptides-sarms-and-research-chemicals"
 effective_date: "2026-10-12"
 report_number: "hmtc.manual.peptides-sarms-and-research-chemicals"
 updated: "2026-10-12"
@@ -54,7 +54,7 @@ connections:
   - { label: "Heavy Metal Index: literature baseline", href: "https://heavymetalindex.com" }
 rail_box:
   title: "Document versions"
-  body: "Manual v1 current (2026-10-12, Method v2.1). Five subcategory standards, each with a house DOI. The v1 PDF is downloadable here. The manual DOI suffix hmtc.manual.peptides-sarms-and-research-chemicals is reserved for deposit. cert_doi on this page stays empty until that deposit."
+  body: "Manual v1 current (2026-10-12, Method v2.1). Five subcategory standards, each with a house DOI. The v1 PDF is downloadable here. House DOI 10.83138/hmtc.manual.peptides-sarms-and-research-chemicals."
 ---
 
 <section class="hmtc-section">
@@ -79,8 +79,18 @@ rail_box:
 
 <section class="hmtc-section">
 <h2 id="edition" class="hmtc-h2" style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">About this edition</h2>
-<p class="hmtc-prose" style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. The manual DOI is not deposited yet.</p>
+<p class="hmtc-prose" style="font-size:16.5px;line-height:1.78;color:#3f3a3a;margin:0 0 18px">Standards are living, versioned documents; each subcategory page carries its own version history and dated change log. This is the current web edition. The Manual v1 PDF is downloadable from the rail. Its program text and standards register match this page. The live subcategory pages remain the derivation of each cell. House DOI 10.83138/hmtc.manual.peptides-sarms-and-research-chemicals.</p>
 <div style="border-left:3px solid #9f2727;background:#fdf4f3;padding:18px 22px">
 <p style="font-size:15.5px;line-height:1.75;color:#5a4141;margin:0;max-width:74ch">The literature baseline underlying these certification limits is maintained independently at the <a href="https://heavymetalindex.com" style="color:#1c43ad">Heavy Metal Index</a>. This certification standard applies those findings; the two are kept editorially separate by design.</p>
 </div>
 </section>
+
+<!-- BEGIN: hmtc-version-history -->
+## Version history
+
+The dated editions of this manual. Each is kept at a stable permalink, so a regulator or brand can reconstruct exactly what the manual required on any date: the edition record, not an editorial commit trail. Version-pinned DOIs link here once each edition is deposited.
+
+| Version | Date | Status | DOI | What changed |
+| --- | --- | --- | --- | --- |
+| [Manual v1](/static/manuals/HMTc-Peptides-SARMs-and-Research-Chemicals-Program-Manual-v1.pdf) | 2026-10-12 | **current** | [10.83138/hmtc.manual.peptides-sarms-and-research-chemicals](https://doi.org/10.83138/hmtc.manual.peptides-sarms-and-research-chemicals) | First Category 26 Program Manual. Five standards, ICH Q3D read-across for seven metals, FDA injectable aluminium (25) on injectable and nasal standards, EU drinking-water aluminium (200) on raw powders and oral SARMs. Species capped at the parent total and tested on the program retest schedule. Metal safety only. |
+<!-- END: hmtc-version-history -->

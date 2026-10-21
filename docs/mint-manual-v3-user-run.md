@@ -29,7 +29,7 @@ DATACITE_PREFIX=10.83138 DATACITE_MODE=test \
 
 Inspect `tools/.doi-deposit/manuals.infant-and-child-foods.json`. Do not commit it.
 
-## Live deposit (USER / CEO after PASS)
+## Live deposit (Elon runs it after PASS; no separate CEO step)
 
 Same path as the Cat-1 standards mint. Credentials stay out of the repo.
 
@@ -86,7 +86,7 @@ DATACITE_PREFIX=10.83138 DATACITE_MODE=test \
 
 Inspect `tools/.doi-deposit/manuals.peptides-sarms-and-research-chemicals.json`. Do not commit it.
 
-Live deposit (USER / CEO after PASS). Credentials stay out of the repo.
+Live deposit (Elon runs it after PASS; no separate CEO step). Credentials stay out of the repo.
 
 ```bash
 DATACITE_USER=<Fabrica VAJU.HDAWAI repo id> \
