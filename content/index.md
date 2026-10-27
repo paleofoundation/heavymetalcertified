@@ -1,7 +1,7 @@
 ---
 title: "Heavy Metal Certified"
-seoTitle: "Heavy Metal Tested & Certified | Testing & Certification Standards"
-description: "Heavy Metal Tested & Certified (HMTc) publishes numeric heavy-metal testing limits for the Big 8 and certifies food and supply-chain products against them."
+seoTitle: "Heavy Metal Tested & Certified | Published Limits for 8 Metals"
+description: "HMTc publishes numeric limits for eight priority heavy metals per product subcategory and certifies products tested by ISO/IEC 17025 accredited laboratories."
 socialDescription: "The published standards and certification authority for the Heavy Metal Tested & Certified (HMTc) program: numeric heavy-metal limits set to the strictest applicable government maximum and tightened by the peer-reviewed literature for the toxics that beat it, published per subcategory in each product's native basis."
 type: home
 audience: [regulator, brand-legal, retailer-compliance, certifier]
