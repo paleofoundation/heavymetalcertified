@@ -9,6 +9,7 @@ import { DocumentDoi } from "./DocumentDoi"
 import { ManualAuthorityStrip, isManualAuthorityPage } from "./ManualAuthority"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { pathToRoot, type FullSlug } from "../util/path"
+import { standardThumbAlt } from "../util/documentCover"
 
 // The official ORCID iD icon (green disc + "iD"). This is the customary way an
 // ORCID iD is surfaced in a journal-article byline worldwide: the icon stands
@@ -145,7 +146,16 @@ export default (() => {
     const dekHtml = fm.dek_html ? String(fm.dek_html) : undefined
     const coverHref = fm.pdf_cover ? String(fm.pdf_cover) : undefined
     const pdfHref = fm.pdf ? String(fm.pdf) : undefined
-    const hasCover = Boolean(isManualPage && coverHref)
+    const isStandardPage = type === "standard" && String(slug).startsWith("standards/") && !String(slug).endsWith("/index")
+    const thumbSrc = isStandardPage && fm.pdf_thumb ? String(fm.pdf_thumb) : undefined
+    const standardPdf = isStandardPage
+      ? (pdfHref || `/static/standards/${String(slug).split("/").pop()}.pdf`)
+      : undefined
+    const showThumb = Boolean(thumbSrc && standardPdf)
+    const thumbAlt = showThumb ? standardThumbAlt(String(title)) : ""
+    const thumbW = fm.pdf_thumb_width != null ? String(fm.pdf_thumb_width) : undefined
+    const thumbH = fm.pdf_thumb_height != null ? String(fm.pdf_thumb_height) : undefined
+    const hasCover = Boolean((isManualPage && coverHref) || showThumb)
     const hasSnapshot = snapshot.length > 0 && fm.hero_snapshot !== false
     const hasSidebar = hasSnapshot || hasAuthorCard || Boolean(fm.cert_doi) || String(slug) === "manuals/infant-and-child-foods"
     // The snapshot box title. Defaults to "Page snapshot"; a regulation detail
@@ -168,7 +178,12 @@ export default (() => {
       <section class="hmtc-heroband">
         <div class="hmtc-heroband-inner">
           <div class={["hmtc-hb-context", hasCover && "hmtc-hb-context--cover", showAuthority && "hmtc-hb-context--authority"].filter(Boolean).join(" ")}>
-            {hasCover ? (
+            {showThumb ? (
+              <a class="hmtc-hb-cover" href={standardPdf} target="_blank" rel="noopener" aria-label={thumbAlt}>
+                {/* Above the fold in the hero, so this image is not lazy. */}
+                <img src={thumbSrc} alt={thumbAlt} width={thumbW} height={thumbH} />
+              </a>
+            ) : hasCover ? (
               pdfHref ? (
                 <a class="hmtc-hb-cover" href={pdfHref} aria-label={`Open PDF: ${title}`}>
                   <img src={coverHref} alt={`Cover of ${title}`} width="720" height="1018" />

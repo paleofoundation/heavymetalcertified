@@ -1,0 +1,1282 @@
+{
+  "aas-injectable": {
+    "width": 480,
+    "height": 621
+  },
+  "air-product-refill-materials": {
+    "width": 480,
+    "height": 621
+  },
+  "anti-static-products": {
+    "width": 480,
+    "height": 621
+  },
+  "anti-wrinkle-wrinkle-release-products": {
+    "width": 480,
+    "height": 621
+  },
+  "antiperspirant": {
+    "width": 480,
+    "height": 621
+  },
+  "art-craft-materials": {
+    "width": 480,
+    "height": 621
+  },
+  "automatic-puff-releasers": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-cereals-dry": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-lotion-cream": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-oil": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-powder-cornstarch": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-shampoo-body-wash": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-sunscreen-chemical": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-sunscreen-mineral": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-talcum-powder": {
+    "width": 480,
+    "height": 621
+  },
+  "baby-wipes": {
+    "width": 480,
+    "height": 621
+  },
+  "bakeware": {
+    "width": 480,
+    "height": 621
+  },
+  "bar-bath-soap": {
+    "width": 480,
+    "height": 621
+  },
+  "beef-product": {
+    "width": 480,
+    "height": 621
+  },
+  "bibs": {
+    "width": 480,
+    "height": 621
+  },
+  "blankets-and-sleep-sacks": {
+    "width": 480,
+    "height": 621
+  },
+  "bleaching-whitening-additives": {
+    "width": 480,
+    "height": 621
+  },
+  "body-hand-leave-on-skin-care": {
+    "width": 480,
+    "height": 621
+  },
+  "body-wash-shower-gel": {
+    "width": 480,
+    "height": 621
+  },
+  "bone-broth": {
+    "width": 480,
+    "height": 621
+  },
+  "bottled-drinking-water": {
+    "width": 480,
+    "height": 621
+  },
+  "bouillon-seasoning-blends": {
+    "width": 480,
+    "height": 621
+  },
+  "bread-and-baked-goods": {
+    "width": 480,
+    "height": 621
+  },
+  "breakfast-cereal-non-rice": {
+    "width": 480,
+    "height": 621
+  },
+  "breakfast-cereal-rice-based": {
+    "width": 480,
+    "height": 621
+  },
+  "breath-fresheners": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-concentrates": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-edibles": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-flower": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-tinctures-oils": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-topicals": {
+    "width": 480,
+    "height": 621
+  },
+  "cannabis-vape-cartridge-fill": {
+    "width": 480,
+    "height": 621
+  },
+  "canned-meats": {
+    "width": 480,
+    "height": 621
+  },
+  "canned-seafood": {
+    "width": 480,
+    "height": 621
+  },
+  "capillary-reed-wood-diffusers": {
+    "width": 480,
+    "height": 621
+  },
+  "car-seats": {
+    "width": 480,
+    "height": 621
+  },
+  "cashews": {
+    "width": 480,
+    "height": 621
+  },
+  "cephalopods": {
+    "width": 480,
+    "height": 621
+  },
+  "childrens-lip-balm-mineral-bearing": {
+    "width": 480,
+    "height": 621
+  },
+  "childrens-lip-balm-plain": {
+    "width": 480,
+    "height": 621
+  },
+  "childrens-makeup": {
+    "width": 480,
+    "height": 621
+  },
+  "childrens-nail-polish": {
+    "width": 480,
+    "height": 621
+  },
+  "chocolate": {
+    "width": 480,
+    "height": 621
+  },
+  "clasps-fasteners-infant-products": {
+    "width": 480,
+    "height": 621
+  },
+  "cocoa-beverage-mixes": {
+    "width": 480,
+    "height": 621
+  },
+  "coffee-ready-to-drink": {
+    "width": 480,
+    "height": 621
+  },
+  "coffee": {
+    "width": 480,
+    "height": 621
+  },
+  "conditioner-adult-rinse-out": {
+    "width": 480,
+    "height": 621
+  },
+  "confectionery-candy": {
+    "width": 480,
+    "height": 621
+  },
+  "cooking-oils-other": {
+    "width": 480,
+    "height": 621
+  },
+  "cookware-ceramic-coated": {
+    "width": 480,
+    "height": 621
+  },
+  "cookware-metal-alloy": {
+    "width": 480,
+    "height": 621
+  },
+  "cookware-nonstick-coated": {
+    "width": 480,
+    "height": 621
+  },
+  "cookware-specialty-alloy": {
+    "width": 480,
+    "height": 621
+  },
+  "cribs-and-bassinets": {
+    "width": 480,
+    "height": 621
+  },
+  "cultivated-mushrooms-oyster-shiitake": {
+    "width": 480,
+    "height": 621
+  },
+  "cultivated-mushrooms": {
+    "width": 480,
+    "height": 621
+  },
+  "cutting-boards": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-cheese": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-condensed-evaporated": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-cream": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-milk-camel": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-milk-cow": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-milk-goat-sheep": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-milk-powders": {
+    "width": 480,
+    "height": 621
+  },
+  "dairy-yogurt-cultured": {
+    "width": 480,
+    "height": 621
+  },
+  "deep-conditioning-treatments-rinse-off": {
+    "width": 480,
+    "height": 621
+  },
+  "dentifrices": {
+    "width": 480,
+    "height": 621
+  },
+  "denture-orthodontic-care": {
+    "width": 480,
+    "height": 621
+  },
+  "deodorants": {
+    "width": 480,
+    "height": 621
+  },
+  "diaper-cream-non-zno": {
+    "width": 480,
+    "height": 621
+  },
+  "diaper-cream-zno": {
+    "width": 480,
+    "height": 621
+  },
+  "douches-vaginal-irrigation": {
+    "width": 480,
+    "height": 621
+  },
+  "dried-fruit": {
+    "width": 480,
+    "height": 621
+  },
+  "dusting-powder-cornstarch-adult": {
+    "width": 480,
+    "height": 621
+  },
+  "dusting-talc-powders-adult": {
+    "width": 480,
+    "height": 621
+  },
+  "eggs-product": {
+    "width": 480,
+    "height": 621
+  },
+  "electric-plug-in-evaporators": {
+    "width": 480,
+    "height": 621
+  },
+  "exfoliants-scrubs": {
+    "width": 480,
+    "height": 621
+  },
+  "eye-makeup": {
+    "width": 480,
+    "height": 621
+  },
+  "fabric-contact-combination-products": {
+    "width": 480,
+    "height": 621
+  },
+  "fabric-contact-products-other": {
+    "width": 480,
+    "height": 621
+  },
+  "fabric-protectants": {
+    "width": 480,
+    "height": 621
+  },
+  "fabric-refresher-products": {
+    "width": 480,
+    "height": 621
+  },
+  "fabric-softeners": {
+    "width": 480,
+    "height": 621
+  },
+  "face-neck-leave-on-skin-care": {
+    "width": 480,
+    "height": 621
+  },
+  "face-paint": {
+    "width": 480,
+    "height": 621
+  },
+  "facial-cleansers": {
+    "width": 480,
+    "height": 621
+  },
+  "feminine-deodorants": {
+    "width": 480,
+    "height": 621
+  },
+  "feminine-wipes": {
+    "width": 480,
+    "height": 621
+  },
+  "fermented-beverages-non-tea-based": {
+    "width": 480,
+    "height": 621
+  },
+  "filter-media-and-housings": {
+    "width": 480,
+    "height": 621
+  },
+  "fish-freshwater": {
+    "width": 480,
+    "height": 621
+  },
+  "fish-marine-non-predatory": {
+    "width": 480,
+    "height": 621
+  },
+  "fish-marine-predatory": {
+    "width": 480,
+    "height": 621
+  },
+  "fish-sauce": {
+    "width": 480,
+    "height": 621
+  },
+  "flavored-waters": {
+    "width": 480,
+    "height": 621
+  },
+  "floss-interdental-cleaners": {
+    "width": 480,
+    "height": 621
+  },
+  "flour-non-rice": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-cans-lids": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-caps-closures": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-flexible-pouches-films": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-foils-wraps": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-glass-jars": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-paperboard-cartons": {
+    "width": 480,
+    "height": 621
+  },
+  "food-packaging-plastic-tubs": {
+    "width": 480,
+    "height": 621
+  },
+  "food-prep-blender-jars": {
+    "width": 480,
+    "height": 621
+  },
+  "food-prep-coffee-maker-pathways": {
+    "width": 480,
+    "height": 621
+  },
+  "food-prep-kettle-interiors": {
+    "width": 480,
+    "height": 621
+  },
+  "food-prep-processor-bowls": {
+    "width": 480,
+    "height": 621
+  },
+  "food-storage-glass-containers": {
+    "width": 480,
+    "height": 621
+  },
+  "food-storage-lids-gaskets": {
+    "width": 480,
+    "height": 621
+  },
+  "food-storage-plastic-containers": {
+    "width": 480,
+    "height": 621
+  },
+  "food-storage-silicone": {
+    "width": 480,
+    "height": 621
+  },
+  "fragrance-preparations": {
+    "width": 480,
+    "height": 621
+  },
+  "fresh-fruit": {
+    "width": 480,
+    "height": 621
+  },
+  "fruit-juice-not-canned": {
+    "width": 480,
+    "height": 621
+  },
+  "fruit-juices-apple-containing": {
+    "width": 480,
+    "height": 621
+  },
+  "fruit-juices-non-apple": {
+    "width": 480,
+    "height": 621
+  },
+  "fruit-purees": {
+    "width": 480,
+    "height": 621
+  },
+  "fruit-snacks": {
+    "width": 480,
+    "height": 621
+  },
+  "game-meats": {
+    "width": 480,
+    "height": 621
+  },
+  "gel-diffusers": {
+    "width": 480,
+    "height": 621
+  },
+  "grain-based-snacks": {
+    "width": 480,
+    "height": 621
+  },
+  "gummies-jellies": {
+    "width": 480,
+    "height": 621
+  },
+  "hair-dye-rinse-off": {
+    "width": 480,
+    "height": 621
+  },
+  "hair-removal-products": {
+    "width": 480,
+    "height": 621
+  },
+  "hand-soap": {
+    "width": 480,
+    "height": 621
+  },
+  "heated-oil-diffusers": {
+    "width": 480,
+    "height": 621
+  },
+  "herbal-botanical-infusions": {
+    "width": 480,
+    "height": 621
+  },
+  "high-chairs-and-booster-seats": {
+    "width": 480,
+    "height": 621
+  },
+  "home-air-emission-products-other": {
+    "width": 480,
+    "height": 621
+  },
+  "honey": {
+    "width": 480,
+    "height": 621
+  },
+  "hot-chili-sauces": {
+    "width": 480,
+    "height": 621
+  },
+  "incense-sticks-cones": {
+    "width": 480,
+    "height": 621
+  },
+  "infant-carriers": {
+    "width": 480,
+    "height": 621
+  },
+  "infant-clothing": {
+    "width": 480,
+    "height": 621
+  },
+  "infant-formula-powder": {
+    "width": 480,
+    "height": 621
+  },
+  "infant-formula-ready-to-feed": {
+    "width": 480,
+    "height": 621
+  },
+  "infant-nursery-water": {
+    "width": 480,
+    "height": 621
+  },
+  "instant-air-refreshment-sprays": {
+    "width": 480,
+    "height": 621
+  },
+  "intimate-washes-cleansers": {
+    "width": 480,
+    "height": 621
+  },
+  "kombucha-tea-based": {
+    "width": 480,
+    "height": 621
+  },
+  "lamb-mutton": {
+    "width": 480,
+    "height": 621
+  },
+  "laundry-detergent-boosters-additives": {
+    "width": 480,
+    "height": 621
+  },
+  "laundry-detergents": {
+    "width": 480,
+    "height": 621
+  },
+  "laundry-prewash-products": {
+    "width": 480,
+    "height": 621
+  },
+  "laundry-starch-sizing-fabric-finish": {
+    "width": 480,
+    "height": 621
+  },
+  "leafy-vegetables-other": {
+    "width": 480,
+    "height": 621
+  },
+  "leave-on-hair-preparations": {
+    "width": 480,
+    "height": 621
+  },
+  "leave-on-preparations-other": {
+    "width": 480,
+    "height": 621
+  },
+  "legumes-pulses-other": {
+    "width": 480,
+    "height": 621
+  },
+  "lipstick": {
+    "width": 480,
+    "height": 621
+  },
+  "makeup-body-paints-bases-fixatives": {
+    "width": 480,
+    "height": 621
+  },
+  "makeup-foundation-powders-blush": {
+    "width": 480,
+    "height": 621
+  },
+  "manicuring-preparations-leave-on": {
+    "width": 480,
+    "height": 621
+  },
+  "matcha": {
+    "width": 480,
+    "height": 621
+  },
+  "menstrual-cups": {
+    "width": 480,
+    "height": 621
+  },
+  "menstrual-discs": {
+    "width": 480,
+    "height": 621
+  },
+  "menstrual-intimate-products-other": {
+    "width": 480,
+    "height": 621
+  },
+  "menstrual-pads": {
+    "width": 480,
+    "height": 621
+  },
+  "menstrual-tampons": {
+    "width": 480,
+    "height": 621
+  },
+  "mineral-water": {
+    "width": 480,
+    "height": 621
+  },
+  "mixed-meals-prepared-foods": {
+    "width": 480,
+    "height": 621
+  },
+  "mixed-meals": {
+    "width": 480,
+    "height": 621
+  },
+  "mouthwash-oral-rinse": {
+    "width": 480,
+    "height": 621
+  },
+  "mustard-mayo-dressings": {
+    "width": 480,
+    "height": 621
+  },
+  "nebula-diffusers": {
+    "width": 480,
+    "height": 621
+  },
+  "non-root-vegetable-purees": {
+    "width": 480,
+    "height": 621
+  },
+  "non-root-vegetables": {
+    "width": 480,
+    "height": 621
+  },
+  "nut-seed-butters-other": {
+    "width": 480,
+    "height": 621
+  },
+  "nuts-seeds-other": {
+    "width": 480,
+    "height": 621
+  },
+  "olive-oil": {
+    "width": 480,
+    "height": 621
+  },
+  "oral-irrigators-water-flossers": {
+    "width": 480,
+    "height": 621
+  },
+  "oral-products-other": {
+    "width": 480,
+    "height": 621
+  },
+  "other-grain-products": {
+    "width": 480,
+    "height": 621
+  },
+  "pasta-rice-based": {
+    "width": 480,
+    "height": 621
+  },
+  "pasta-wheat-based": {
+    "width": 480,
+    "height": 621
+  },
+  "peanut-butter": {
+    "width": 480,
+    "height": 621
+  },
+  "peanuts": {
+    "width": 480,
+    "height": 621
+  },
+  "peptides-injectable-hormones": {
+    "width": 480,
+    "height": 621
+  },
+  "peptides-nasal-sublingual": {
+    "width": 480,
+    "height": 621
+  },
+  "period-underwear-reusable-garments": {
+    "width": 480,
+    "height": 621
+  },
+  "permanent-hair-dyes-tints": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-chews-dental": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-canned-wet": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-dry-kibble": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-fermentation-derived-protein": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-fish-marine-protein": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-freeze-dried": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-raw": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-food-semi-moist": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-milk-replacers-specialty-liquids": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-botanical-herbal": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-calming-behavioral": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-functional-blends": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-oils": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-other": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-probiotics-digestive": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-supplements-vitamin-mineral": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-toppers-mixers-broths": {
+    "width": 480,
+    "height": 621
+  },
+  "pet-treats-snacks": {
+    "width": 480,
+    "height": 621
+  },
+  "pickled-fermented-vegetables": {
+    "width": 480,
+    "height": 621
+  },
+  "plant-based-meat-alternatives": {
+    "width": 480,
+    "height": 621
+  },
+  "plant-milks-non-soy-non-rice": {
+    "width": 480,
+    "height": 621
+  },
+  "plant-milks-rice-based": {
+    "width": 480,
+    "height": 621
+  },
+  "plant-milks-soy-based": {
+    "width": 480,
+    "height": 621
+  },
+  "play-yards-and-gates": {
+    "width": 480,
+    "height": 621
+  },
+  "pork-product": {
+    "width": 480,
+    "height": 621
+  },
+  "potpourri-sachets": {
+    "width": 480,
+    "height": 621
+  },
+  "poultry-product": {
+    "width": 480,
+    "height": 621
+  },
+  "pre-treaters-stain-removers": {
+    "width": 480,
+    "height": 621
+  },
+  "processed-meats": {
+    "width": 480,
+    "height": 621
+  },
+  "refined-sugar": {
+    "width": 480,
+    "height": 621
+  },
+  "research-chem-raw-powders": {
+    "width": 480,
+    "height": 621
+  },
+  "rice-beverages-rice-milk": {
+    "width": 480,
+    "height": 621
+  },
+  "rice-bulk-grain": {
+    "width": 480,
+    "height": 621
+  },
+  "rice-grain-syrup": {
+    "width": 480,
+    "height": 621
+  },
+  "rice-noodles": {
+    "width": 480,
+    "height": 621
+  },
+  "rice-snacks-crackers": {
+    "width": 480,
+    "height": 621
+  },
+  "rinse-off-preparations-other": {
+    "width": 480,
+    "height": 621
+  },
+  "root-tuber-vegetables": {
+    "width": 480,
+    "height": 621
+  },
+  "root-vegetable-purees": {
+    "width": 480,
+    "height": 621
+  },
+  "salt": {
+    "width": 480,
+    "height": 621
+  },
+  "sarms-oral": {
+    "width": 480,
+    "height": 621
+  },
+  "scented-candles": {
+    "width": 480,
+    "height": 621
+  },
+  "scented-wax-blocks-melts": {
+    "width": 480,
+    "height": 621
+  },
+  "seaweed-kelp-foods": {
+    "width": 480,
+    "height": 621
+  },
+  "sensor-puff-releasers": {
+    "width": 480,
+    "height": 621
+  },
+  "shampoo-adult": {
+    "width": 480,
+    "height": 621
+  },
+  "shaving-cream-gel-foam": {
+    "width": 480,
+    "height": 621
+  },
+  "shellfish": {
+    "width": 480,
+    "height": 621
+  },
+  "soft-drinks-carbonated-beverages": {
+    "width": 480,
+    "height": 621
+  },
+  "soups-broths-stocks": {
+    "width": 480,
+    "height": 621
+  },
+  "soy-products": {
+    "width": 480,
+    "height": 621
+  },
+  "soy-sauce-fermented": {
+    "width": 480,
+    "height": 621
+  },
+  "sparkling-carbonated-water": {
+    "width": 480,
+    "height": 621
+  },
+  "spices": {
+    "width": 480,
+    "height": 621
+  },
+  "spinach": {
+    "width": 480,
+    "height": 621
+  },
+  "sports-energy-drinks": {
+    "width": 480,
+    "height": 621
+  },
+  "strollers": {
+    "width": 480,
+    "height": 621
+  },
+  "sun-suntan-mineral": {
+    "width": 480,
+    "height": 621
+  },
+  "sun-suntan-products": {
+    "width": 480,
+    "height": 621
+  },
+  "sunflower-seed-butter": {
+    "width": 480,
+    "height": 621
+  },
+  "sunflower-seeds": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-algae-seaweed-based": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-amino-acids-isolates": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-bars-labeled": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-botanicals-herbs": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-clay-mineral-earth": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-enzymes": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-greens-superfood": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-mushroom-fungal": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oil-based": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-liquids-droppers": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-liquids-shots": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-liquids-syrups": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-liquids-tinctures": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-capsules": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-effervescent": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-gummies": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-lozenges": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-powders": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-softgels": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-oral-solids-tablets": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-probiotics": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-protein-collagen-powders": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-teas-labeled": {
+    "width": 480,
+    "height": 621
+  },
+  "supplements-vitamin-mineral": {
+    "width": 480,
+    "height": 621
+  },
+  "swings-and-bouncers": {
+    "width": 480,
+    "height": 621
+  },
+  "syrups-maple-agave-molasses": {
+    "width": 480,
+    "height": 621
+  },
+  "tableware-ceramicware": {
+    "width": 480,
+    "height": 621
+  },
+  "tableware-decorative-decals-coatings": {
+    "width": 480,
+    "height": 621
+  },
+  "tableware-glassware": {
+    "width": 480,
+    "height": 621
+  },
+  "tableware-metal-bottles-tumblers": {
+    "width": 480,
+    "height": 621
+  },
+  "tableware-plastic-drinkware": {
+    "width": 480,
+    "height": 621
+  },
+  "tattoo-inks": {
+    "width": 480,
+    "height": 621
+  },
+  "teething-and-snacks": {
+    "width": 480,
+    "height": 621
+  },
+  "tomato-condiments": {
+    "width": 480,
+    "height": 621
+  },
+  "tongue-cleaners-scrapers": {
+    "width": 480,
+    "height": 621
+  },
+  "toothbrushes": {
+    "width": 480,
+    "height": 621
+  },
+  "toothpaste": {
+    "width": 480,
+    "height": 621
+  },
+  "toy-chests": {
+    "width": 480,
+    "height": 621
+  },
+  "toy-pacifiers": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-attached-cribs-playpens": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-balloons": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-balls": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-battery-electronic": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-crafts-other": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-marbles": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-painted": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-pompoms-fibrous-craft": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-projectile-guns": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-rattles": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-sound-producing": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-squeeze": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-stroller-carriage": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-stuffed-bean-bag": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-stuffing-materials": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-substrate-materials": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-with-magnets": {
+    "width": 480,
+    "height": 621
+  },
+  "toys-yo-yo-elastic-tether": {
+    "width": 480,
+    "height": 621
+  },
+  "traditional-eye-cosmetics": {
+    "width": 480,
+    "height": 621
+  },
+  "tree-nuts-high-nickel": {
+    "width": 480,
+    "height": 621
+  },
+  "true-tea-camellia-sinensis": {
+    "width": 480,
+    "height": 621
+  },
+  "utensils-metal": {
+    "width": 480,
+    "height": 621
+  },
+  "utensils-plastic-silicone-tools": {
+    "width": 480,
+    "height": 621
+  },
+  "vacuum-cleaner-fragrance-additives": {
+    "width": 480,
+    "height": 621
+  },
+  "vegetable-juices-non-root": {
+    "width": 480,
+    "height": 621
+  },
+  "vegetable-juices-root-vegetable-containing": {
+    "width": 480,
+    "height": 621
+  },
+  "vinegar": {
+    "width": 480,
+    "height": 621
+  },
+  "walkers": {
+    "width": 480,
+    "height": 621
+  },
+  "water-filters": {
+    "width": 480,
+    "height": 621
+  },
+  "whitening-products": {
+    "width": 480,
+    "height": 621
+  },
+  "wild-mushrooms": {
+    "width": 480,
+    "height": 621
+  }
+}

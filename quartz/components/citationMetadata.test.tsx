@@ -313,6 +313,30 @@ test("Cat-1 Manual v3 ScholarlyArticle carries abstract, image, dateModified, ab
   )
 })
 
+test("a standard thumbnail is an ImageObject with the caption, license, and DOI", () => {
+  const html = render(
+    {
+      type: "standard",
+      title: "Olive oil (virgin, refined, pomace) — HMTc Standard",
+      effective_date: "2026-08-14",
+      author: "Karen Pendergrass",
+      cert_doi: "10.83138/hmtc.std.30.olive-oil",
+      pdf: "/static/standards/olive-oil.pdf",
+      pdf_thumb: "/static/standards/thumbs/olive-oil.webp",
+      pdf_thumb_width: 480,
+      pdf_thumb_height: 622,
+    },
+    "standards/olive-oil",
+  )
+  const json = JSON.parse(html.match(/data-standard-scholarly[^>]*>([\s\S]*?)<\/script>/)![1])
+  assert.equal(json.image["@type"], "ImageObject")
+  assert.equal(json.image.contentUrl, "https://heavymetalcertified.com/static/standards/thumbs/olive-oil.webp")
+  assert.equal(json.image.caption, "Olive oil (virgin, refined, pomace) HMTc heavy metal standard, first page")
+  assert.equal(json.image.license, "https://heavymetalcertified.com/license")
+  assert.equal(json.image.identifier.propertyID, "DOI")
+  assert.equal(json.image.identifier.value, "10.83138/hmtc.std.30.olive-oil")
+})
+
 test("a house-minted manual DOI becomes citation_doi after write-back", () => {
   const html = render(
     {

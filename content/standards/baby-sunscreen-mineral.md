@@ -29,6 +29,15 @@ connections:
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "All HMTc standards", href: "/standards" }
+pdf: "/static/standards/baby-sunscreen-mineral.pdf"
+scholar_pdf: true
+scholar_pdf_url: "https://heavymetalcertified.com/static/standards/baby-sunscreen-mineral.pdf"
+pdf_thumb: "/static/standards/thumbs/baby-sunscreen-mineral.webp"
+pdf_thumb_width: 480
+pdf_thumb_height: 621
+socialImage: "/static/standards/thumbs/baby-sunscreen-mineral.webp"
+og_image_width: 480
+og_image_height: 621
 ---
 <section id="method" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">How limits are set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Category 2 is the child-scoped personal-care category (ages 0-5). Three category-specific rules govern every row and are stated here once.
 

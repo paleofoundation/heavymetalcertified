@@ -27,6 +27,18 @@ export function pageCoverSrc(frontmatter: Record<string, unknown> | undefined): 
   return frontmatterString(frontmatter?.socialImage) || frontmatterString(frontmatter?.cover)
 }
 
+export function isStandardThumb(src: string | undefined): boolean {
+  return Boolean(src && src.includes("/static/standards/thumbs/"))
+}
+
+export function standardThumbAlt(title: string): string {
+  const name = title
+    .replace(/\s*[—–:\-]+\s*HMTc Standard.*$/i, "")
+    .replace(/\s+HMTc Standard.*$/i, "")
+    .trim()
+  return `${name || title} HMTc heavy metal standard, first page`
+}
+
 export function isLandscapeOg(width?: string, height?: string): boolean {
   if (!width || !height) return true
   const w = Number(width)
