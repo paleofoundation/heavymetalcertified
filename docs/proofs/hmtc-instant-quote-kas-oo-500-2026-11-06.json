@@ -1,0 +1,102 @@
+{
+  "proofAtAsiaNicosia": "11/6/2026, 5:19:57 PM",
+  "proofAtUtc": "2026-11-06T15:19:57.624Z",
+  "productionPortalUrl": "https://app.heavymetalcertified.com/portal/application",
+  "productionDeploySha": "fda7f67",
+  "includesQuotePr7": true,
+  "sku": "KAS-OO-500",
+  "standardDoi": "10.83138/hmtc.std.30.olive-oil",
+  "paymentAllowed": false,
+  "paymentBlockers": [
+    "Sampling and shipping still use program assumptions. Payment stays off until those rates are published."
+  ],
+  "labNotInFeeCopy": "Laboratory analysis is not included in the certification licensing fee. It is billed as its own line.",
+  "paymentRefusalCopy": "Payment is refused while a rate on this quote is still a placeholder.",
+  "totalsCents": {
+    "certificationDue": 1250000,
+    "laboratory": 110000,
+    "sampling": 40396
+  },
+  "lines": [
+    {
+      "key": "certification_fee",
+      "group": "certification",
+      "label": "Certification licensing fee, 1 year",
+      "cents": 1250000,
+      "isPlaceholder": false,
+      "detail": "Laboratory analysis is not included in the certification licensing fee. It is billed as its own line. Annual published fee for a 1 year term."
+    },
+    {
+      "key": "volume_discount",
+      "group": "certification",
+      "label": "Volume discount",
+      "cents": 0,
+      "isPlaceholder": false,
+      "detail": "Tier v1: no volume discount."
+    },
+    {
+      "key": "rush",
+      "group": "certification",
+      "label": "Standard turnaround",
+      "cents": 0,
+      "isPlaceholder": false,
+      "detail": "No rush charge."
+    },
+    {
+      "key": "lab:KAS-OO-500:eight_metal_panel",
+      "group": "laboratory",
+      "label": "8-metal panel (lead, cadmium, total arsenic, mercury, nickel, aluminum, total chromium, tin), Kasandrinos Extra Virgin Olive Oil 500ml",
+      "cents": 110000,
+      "isPlaceholder": false,
+      "detail": "Glass. Standard 10.83138/hmtc.std.30.olive-oil. 5-day turnaround. 4 lots per SKU under the surveillance assumption. Priced as one unit per sample across 4 samples. Not divided by metal. Laboratory analysis is not included in the certification licensing fee. It is billed as its own line."
+    },
+    {
+      "key": "contingent:10.83138/hmtc.std.30.olive-oil|glass|iAs|contingent",
+      "group": "contingent",
+      "label": "Inorganic arsenic, Kasandrinos Extra Virgin Olive Oil 500ml",
+      "cents": null,
+      "isPlaceholder": false,
+      "detail": "if total arsenic is high. Not included in this quote. Published add-on is $495 per sample if it is ordered later. 5 to 7 day turnaround"
+    },
+    {
+      "key": "contingent:10.83138/hmtc.std.30.olive-oil|glass|CrVI|contingent",
+      "group": "contingent",
+      "label": "Hexavalent chromium, Kasandrinos Extra Virgin Olive Oil 500ml",
+      "cents": null,
+      "isPlaceholder": false,
+      "detail": "if total chromium is high. Not available at this lab. Not included in this quote."
+    },
+    {
+      "key": "handling",
+      "group": "sampling",
+      "label": "Sample handling",
+      "cents": 10000,
+      "isPlaceholder": true,
+      "detail": "Program assumption, not a published rate. We label it so it is not mistaken for the laboratory price. Surveillance cadence, 4 lots per SKU per year (program assumption)."
+    },
+    {
+      "key": "ship_to_lab",
+      "group": "sampling",
+      "label": "Shipping to the laboratory",
+      "cents": 18000,
+      "isPlaceholder": true,
+      "detail": "Program assumption, not a published rate. We label it so it is not mistaken for the laboratory price. 4 samples."
+    },
+    {
+      "key": "inbound_shipping",
+      "group": "sampling",
+      "label": "Shipping the product to HMTc",
+      "cents": 4800,
+      "isPlaceholder": true,
+      "detail": "Program assumption, not a published rate. We label it so it is not mistaken for the laboratory price. 4 samples."
+    },
+    {
+      "key": "product_purchase",
+      "group": "sampling",
+      "label": "Product purchase at the retail price you reported",
+      "cents": 7596,
+      "isPlaceholder": false,
+      "detail": "One retail unit per lot. This is the price you entered, not a laboratory rate."
+    }
+  ]
+}
