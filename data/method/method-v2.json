@@ -1,16 +1,16 @@
 {
   "_purpose": "Canonical machine-readable statement of HMTc Method v2.0 — the SINGLE SOURCE OF TRUTH for how the program's method is described across heavymetalcertified.com. When the method changes, edit THIS file. The drift lint (tools/method-drift-lint.mjs, build-blocking in prebuild) fails the build if any page's prose regresses to a retired framing or asserts pooling as the universal method without the government-limit-default anchor. This is the sibling of the Part-2 'silent threshold deviation' guard, for prose.",
   "version": "v2.0",
-  "label": "HMTc-10 / Method v2.0 — government-limit default, selective occurrence for priority toxics and unregulated cells (CLAUDE.md Part 19)",
+  "label": "HMTc-10 / Method v2.0 — government-limit default; an unregulated cell is a disclosed read-across, control, or not-material determination, not an occurrence percentile (CLAUDE.md Part 19)",
   "ratified": "2026-08-03",
   "authority": "CLAUDE.md Part 19",
   "statement": {
     "default": "The default limit for any (product, analyte) is the strictest maximum level set by a credible government regulator (EU, Codex, FDA, WHO/JECFA, FSANZ, Health Canada), converted to the row's native basis — a lookup, not a computation.",
     "formulation_split": "Where the law splits a limit by formulation, the standard adopts the law's own split and cites it.",
-    "selective_occurrence_tier1": "The four priority toxics (Pb, Cd, iAs, MeHg) are set to min(occurrence percentile, strictest government ML). That is limit-setting, not a status ladder.",
-    "selective_occurrence_no_ml": "Cells no government regulates use the occurrence value (or a not-material / process-screen determination) as the sole basis.",
-    "tier2": "Other claim analytes (Ni, Sn, Al, Cr-VI) adopt the government limit directly; occurrence is not computed unless no ML exists.",
-    "occurrence_calibration": "Where an occurrence cell is computed, a cleaner subcategory sits near P97 and a more contaminated one near P45; targets ~90% clean / ~40% dirty row-pass (measured 94% / 42% on FDA 2026 lot data), rolling up to ~80% program-monitored average.",
+    "selective_occurrence_tier1": "Not live. Pb, Cd, iAs, and MeHg are not set to the minimum of an occurrence percentile and a government maximum. Each published ceiling is the strictest applicable government maximum, or a disclosed read-across. A species with no ceiling of its own is bounded by its parent total. Occurrence does not select the value.",
+    "selective_occurrence_no_ml": "Not live. A cell no government regulates is a disclosed read-across to a named sovereign instrument, a control, or not-material. Occurrence is not the basis of the ceiling.",
+    "tier2": "Ni, Sn, Al, Cr, and Cr-VI adopt the named sovereign maximum or disclosed read-across directly. Occurrence is not computed into the certification value.",
+    "occurrence_calibration": "Not live as a limit-setting rule. Percentile targets and clean/dirty row-pass rates do not choose a certification ceiling. Occurrence literature may be reported as evidence and carries no compliance weight.",
     "pool": "The pool is the certification-relevant market: regulatory-equivalence, not geography.",
     "instrument": "Certify against the subcategory split, never the element-wise-max envelope.",
     "unchanged_downstream": "The four-status lifecycle (Certified, Remediation, Suspension, Revocation), the 3-lot baseline lot testing, the regulatory hard-stop, basis conversion, ALARA + the 80th-percentile ratchet, and the four rationale tags are unchanged. Certification requires every analyte at or below 100% of its published limit; there is no transitional overage band. All claim analytes are equal at the gate. An exceedance on any claim analyte enters Remediation unmarked."
@@ -20,9 +20,9 @@
   "rationale_tags": ["literature-baseline", "regulatory-alignment", "precautionary", "feasibility-driven"],
   "lint": {
     "forbidden": [
-      { "re": "P97-clean\\s*/\\s*P45-dirty", "why": "v1.0 universal-method label; occurrence is now selective (edit data/method/method-v2.json label)" },
-      { "re": "Clean\\s*[\\u00b7.]\\s*P97", "why": "pins a whole subcategory to P97; under v2.0 the percentile mechanism is selective" },
-      { "re": "Dirty\\s*[\\u00b7.]\\s*P45", "why": "pins a whole subcategory to P45; under v2.0 the percentile mechanism is selective" },
+      { "re": "P97-clean\\s*/\\s*P45-dirty", "why": "v1.0 universal-method label; occurrence percentiles do not set a certification value (edit data/method/method-v2.json label)" },
+      { "re": "Clean\\s*[\\u00b7.]\\s*P97", "why": "pins a whole subcategory to P97; percentile selection is not a live limit" },
+      { "re": "Dirty\\s*[\\u00b7.]\\s*P45", "why": "pins a whole subcategory to P45; percentile selection is not a live limit" },
       { "re": "monitored,?\\s+not\\s+limited", "why": "retired framing — every analyte has a limit" },
       { "re": "\\b30%[^.<]{0,70}(dirty|dirty-subcategory)", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },
       { "re": "(dirty|dirty-subcategory)[^.<]{0,70}\\b30%", "why": "legacy dirty pass rate; the target is ~40% (measured 42%)" },

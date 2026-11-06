@@ -15,11 +15,13 @@
 //        node tools/build-standard-pdf.mjs --all
 import fs from "node:fs"
 import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { renderScholarlyPdf } from "./pdf/scholarly-pdf.mjs"
 import {
   SPECIES, isTotalsOnlySlug, isFirmClaimCell, speciesParentViolations,
 } from "./lib/claim-surface.mjs"
 import { loadPageJoins } from "./lib/page-record-join.mjs"
+import { cellRow, derivRow, references, collapseLimitCell, cellKindOf, publishedValue } from "./lib/standard-pdf-rows.mjs"
 
 const REPO = process.cwd()
 const OUT = path.join(REPO, "content/static/standards")
@@ -34,9 +36,6 @@ const ANALYTES = [
   ["Al", "Aluminium (Al)"], ["Cr", "Total chromium (Cr)"], ["Cr-VI", "Hexavalent chromium (Cr-VI)"],
 ]
 const EXTRA_LABELS = { Sb: "Antimony (Sb)" }
-const JUR = { EU: "European Union", UK: "United Kingdom", CODEX: "Codex Alimentarius", US: "US FDA", CA: "Canada", "AU-NZ": "Australia / New Zealand", CN: "China", IN: "India", BR: "Brazil", GSO: "Gulf (GSO)", KR: "South Korea", MX: "Mexico", TR: "Türkiye", PY: "Paraguay", MERCOSUR: "Mercosur", IL: "Israel", TH: "Thailand", VN: "Vietnam", PH: "Philippines", SG: "Singapore", CL: "Chile", CO: "Colombia", PA: "Panama", HK: "Hong Kong", MA: "Morocco", international: "Codex / international" }
-const jl = (j) => JUR[j] || j || ""
-const fmtNum = (v) => (typeof v === "number" && Number.isFinite(v) ? v.toLocaleString("en-US") : String(v))
 
 function readFm(md) {
   const m = md.match(/^---\n([\s\S]*?)\n---/)
@@ -55,69 +54,6 @@ function findRecord(slug) {
 function cellsOf(rec) {
   if (rec.variants && typeof rec.variants === "object" && !rec.cells) return Object.assign({}, ...Object.values(rec.variants))
   return rec.cells || {}
-}
-// limitOverride (optional): a precomputed HMTc-limit column string, used for an aggregate page
-// whose grouped variants disagree on this analyte (e.g. "5 cow / 10 soy"). When given it replaces
-// only the value column; the basis text still comes from the primary variant's cell.
-function publishedValue(c) {
-  if (!c) return null
-  if (c.value != null) return c.value
-  if (c.strictest_form_value != null) return c.strictest_form_value
-  const vals = (c.forms || []).map((f) => f && f.value).filter((v) => v != null)
-  return vals.length ? Math.min(...vals) : null
-}
-function cellKindOf(c) {
-  return String((c && (c.type || c.cell_kind)) || "").toLowerCase()
-}
-function disclosedBasis(c) {
-  return c && c.binding_short ? String(c.binding_short).replace(/\|/g, "/") : ""
-}
-function cellRow([k, label], c, limitOverride) {
-  if (!c) return `| ${label} | ${limitOverride ?? "—"} | not compiled |`
-  const t = cellKindOf(c)
-  const published = publishedValue(c)
-  if (published != null) {
-    const basis = disclosedBasis(c) || (t === "read_across" ? `human-grade read-across (${jl(c.source_jurisdiction)})` : t === "gov" ? "government maximum level" : t === "form_split" ? "strictest government ML, set by product form" : t === "screen" ? `screening ceiling (${jl(c.binding_jurisdiction || c.source_jurisdiction)})` : "sovereign maximum level")
-    return `| ${label} | ${limitOverride ?? fmtNum(published)} | ${basis} |`
-  }
-  if (limitOverride) return `| ${label} | ${limitOverride} | bounded by parent / per-variant (see derivation) |`
-  if (t === "subsumed") {
-    const n = c.value ?? c.binding_total
-    if (n != null) return `| ${label} | ${fmtNum(n)} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
-    return `| ${label} | ≤ ${c.subsumed_by || c.bounded_by || "parent total"} | bounded by ${c.subsumed_by || c.bounded_by || "parent"} (reflex speciation) |`
-  }
-  if (t === "control") return `| ${label} | control | measured every lot; no human-food maximum |`
-  if (t === "not_material" || t === "not-material") return `| ${label} | n/m | not material in this matrix |`
-  return `| ${label} | — | — |`
-}
-function derivRow([k, label], c) {
-  if (!c) return `| ${label} | — | not compiled |`
-  const published = publishedValue(c)
-  if (published != null) {
-    const t = cellKindOf(c)
-    const src = disclosedBasis(c) || (t === "read_across" ? `${jl(c.source_jurisdiction)} — ${(c.analog_scope || c.analog_label || "human-food analog")}` : t === "form_split" ? "strictest government ML, set by product form" : "government maximum level")
-    return `| ${label} | ${fmtNum(published)} | ${src} |`
-  }
-  if (c.type === "subsumed") {
-    const n = c.value ?? c.binding_total
-    const shown = n != null ? fmtNum(n) : `≤ ${c.subsumed_by || c.bounded_by}`
-    return `| ${label} | ${shown} | ${(c.label || c.rationale || "bounded by parent total").replace(/\|/g, "/")} |`
-  }
-  if (c.type === "control") return `| ${label} | control | ${(c.control || c.rationale || "mandatory surveillance control").replace(/\|/g, "/")} |`
-  if (c.type === "not_material") return `| ${label} | n/m | ${(c.control || c.rationale || "not material").replace(/\|/g, "/")} |`
-  return `| ${label} | — | — |`
-}
-function references(cells) {
-  const seen = new Map()
-  for (const [k] of ANALYTES) {
-    const c = cells[k]
-    if (c && c.type === "read_across" && c.source_jurisdiction) {
-      if (!seen.has(c.source_jurisdiction)) seen.set(c.source_jurisdiction, [])
-      seen.get(c.source_jurisdiction).push(k)
-    }
-  }
-  let n = 0
-  return [...seen.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([j, ks]) => ({ n: ++n, head: `${jl(j)} — human-food maximum levels`, meta: `Binds ${ks.join(", ")}. Strictest applicable human-food sovereign maximum for the nearest analog.`, tag: "Maximum level" }))
 }
 
 // Resolve a page slug to its rendered variant(s). Direct path: a compiled record whose slug equals
@@ -138,21 +74,6 @@ function resolveVariants(slug) {
   return { variants, primary: variants[0].rec, aggregated: true }
 }
 
-// For an aggregate page, collapse one analyte across variants into the page's display convention:
-// null when every variant agrees (caller uses the normal single-value row), else "X label1 / Y label2".
-function collapseLimitCell(variants, k) {
-  const show = (c) => {
-    if (!c) return "—"
-    if (publishedValue(c) != null) return fmtNum(publishedValue(c))
-    if (c.type === "subsumed") { const n = c.value ?? c.binding_total; return n != null ? fmtNum(n) : `≤ ${c.subsumed_by || c.bounded_by || "parent"}` }
-    if (c.type === "control") return "control"
-    if (c.type === "not_material") return "n/m"
-    return "—"
-  }
-  const vals = variants.map((v) => show(v.cells[k]))
-  if (vals.every((x) => x === vals[0])) return null
-  return variants.map((v, i) => `${vals[i]} ${v.label}`).join(" / ")
-}
 
 async function build(slug) {
   const resolved = resolveVariants(slug)
@@ -172,7 +93,13 @@ async function build(slug) {
   }
   const claimAnalytes = ANALYTES.filter(([k]) => {
     if (!SPECIES.includes(k)) return true
-    if (isTotalsOnlySlug(slug)) return isFirmClaimCell(cells[k])
+    if (isTotalsOnlySlug(slug)) {
+      if (isFirmClaimCell(cells[k])) return true
+      // Totals-only pages omit a blank species cell. A subsumed species with no
+      // number of its own still prints, as the parent inequality (iAs ≤ tAs).
+      const c = cells[k]
+      return !!(c && cellKindOf(c) === "subsumed" && c.value == null && (c.subsumed_by || c.bounded_by))
+    }
     return true
   })
   const known = new Set(ANALYTES.map(([k]) => k))
@@ -231,10 +158,13 @@ async function build(slug) {
   console.log(`standard-pdf: wrote content/static/standards/${slug}.pdf`)
 }
 
-const args = process.argv.slice(2)
-let targets = args.filter((a) => !a.startsWith("--"))
-if (args.includes("--all")) targets = fs.readdirSync(CONTENT).filter((f) => f.endsWith(".md") && f !== "index.md").map((f) => f.replace(/\.md$/, "")).filter((s) => findRecord(s) || JOINS.has(s))
-let ok = 0; const failed = []
-for (const s of targets) { try { await build(s); ok++ } catch (e) { failed.push(s); console.error(`standard-pdf: FAILED ${s}: ${e.message}`) } }
-console.log(`standard-pdf: ${ok}/${targets.length} rendered${failed.length ? `; failed: ${failed.join(", ")}` : ""}`)
-if (failed.length) process.exitCode = 1
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))
+if (isMain) {
+  const args = process.argv.slice(2)
+  let targets = args.filter((a) => !a.startsWith("--"))
+  if (args.includes("--all")) targets = fs.readdirSync(CONTENT).filter((f) => f.endsWith(".md") && f !== "index.md").map((f) => f.replace(/\.md$/, "")).filter((s) => findRecord(s) || JOINS.has(s))
+  let ok = 0; const failed = []
+  for (const s of targets) { try { await build(s); ok++ } catch (e) { failed.push(s); console.error(`standard-pdf: FAILED ${s}: ${e.message}`) } }
+  console.log(`standard-pdf: ${ok}/${targets.length} rendered${failed.length ? `; failed: ${failed.join(", ")}` : ""}`)
+  if (failed.length) process.exitCode = 1
+}
