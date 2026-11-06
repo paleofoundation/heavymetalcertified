@@ -3,6 +3,7 @@ import { KAREN_PERSON } from "../../tools/lib/researcher-schema.mjs"
 import { Fragment } from "preact"
 import { documentPdf } from "./documentMetadata"
 import { currentDocumentDoi } from "./DocumentDoi"
+import { standardThumbAlt } from "../util/documentCover"
 
 export const STANDARD_SERIES_TITLE = "Heavy Metal Tested & Certified Standards"
 export const ICS_PUBLISHER_NAME = "Institute of Contaminant Standards"
@@ -305,6 +306,28 @@ export function CitationMetadata({
     const imageUrl = ogSrc
       ? `https://heavymetalcertified.com${ogSrc.startsWith("/") ? ogSrc : `/${ogSrc}`}`
       : undefined
+    const thumbSrc = isStandard ? frontmatterString(frontmatter.pdf_thumb) : undefined
+    const thumbUrl = thumbSrc
+      ? `https://heavymetalcertified.com${thumbSrc.startsWith("/") ? thumbSrc : `/${thumbSrc}`}`
+      : undefined
+    const imageNode = thumbUrl
+      ? {
+          "@type": "ImageObject",
+          contentUrl: thumbUrl,
+          caption: standardThumbAlt(citationTitle),
+          license: "https://heavymetalcertified.com/license",
+          ...(certDoi
+            ? {
+                identifier: {
+                  "@type": "PropertyValue",
+                  propertyID: "DOI",
+                  value: certDoi,
+                  url: `https://doi.org/${certDoi}`,
+                },
+              }
+            : {}),
+        }
+      : undefined
     const dateModifiedRaw = normalizeCitationDate(frontmatter.updated) ?? pubDate
     const aboutLeaf = frontmatterString(frontmatter.breadcrumb_leaf)
     const aboutCategory = frontmatter.category != null ? String(frontmatter.category) : undefined
@@ -361,7 +384,7 @@ export function CitationMetadata({
             }
           : {}),
         ...(abstract ? { abstract, description: abstract } : {}),
-        ...(imageUrl ? { image: imageUrl } : {}),
+        ...(imageNode ? { image: imageNode } : imageUrl ? { image: imageUrl } : {}),
         ...(keywords ? { keywords } : {}),
         ...(aboutLeaf || aboutCategory
           ? {

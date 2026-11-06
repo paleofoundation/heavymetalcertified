@@ -29,6 +29,15 @@ connections:
   - { label: "How limits are derived", href: "/program/structure" }
   - { label: "Regulation references (source documents)", href: "/regulations" }
   - { label: "All HMTc standards", href: "/standards" }
+pdf: "/static/standards/antiperspirant.pdf"
+scholar_pdf: true
+scholar_pdf_url: "https://heavymetalcertified.com/static/standards/antiperspirant.pdf"
+pdf_thumb: "/static/standards/thumbs/antiperspirant.webp"
+pdf_thumb_width: 480
+pdf_thumb_height: 621
+socialImage: "/static/standards/thumbs/antiperspirant.webp"
+og_image_width: 480
+og_image_height: 621
 ---
 <section id="method" class="hmtc-section"><h2 style="font-family:Lora,serif;font-weight:400;font-size:30px;line-height:1.2;color:#2b1f1f;border-bottom:1px solid #e8e1db;padding-bottom:10px">How limits are set</h2><p style="font-size:15.5px;line-height:1.75;color:#3f3a3a;margin:0 0 16px;max-width:84ch">Five method points govern this category and each is visible in the records.
 

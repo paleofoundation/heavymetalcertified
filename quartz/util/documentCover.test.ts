@@ -6,8 +6,10 @@ import {
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_WIDTH,
   isLandscapeOg,
+  isStandardThumb,
   pageCoverDims,
   pageCoverSrc,
+  standardThumbAlt,
 } from "./documentCover"
 
 test("pageCoverSrc uses socialImage and never pdf_cover", () => {
@@ -44,4 +46,17 @@ test("portrait dims are rejected for summary_large_image", () => {
   )
   assert.equal(DEFAULT_OG_WIDTH, 1200)
   assert.equal(DEFAULT_OG_HEIGHT, 630)
+})
+
+test("a standard first-page thumbnail keeps its own alt and is eligible as og:image", () => {
+  assert.equal(isStandardThumb("/static/standards/thumbs/olive-oil.webp"), true)
+  assert.equal(isStandardThumb("/static/manuals/covers/infant-and-child-foods-v3.png"), false)
+  assert.equal(
+    standardThumbAlt("Olive oil (virgin, refined, pomace) — HMTc Standard"),
+    "Olive oil (virgin, refined, pomace) HMTc heavy metal standard, first page",
+  )
+  assert.equal(
+    standardThumbAlt("Baby wipes: HMTc Standard"),
+    "Baby wipes HMTc heavy metal standard, first page",
+  )
 })

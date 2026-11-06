@@ -7,8 +7,10 @@ import {
   DEFAULT_OG_IMAGE,
   DEFAULT_OG_WIDTH,
   isLandscapeOg,
+  isStandardThumb,
   pageCoverDims,
   pageCoverSrc,
+  standardThumbAlt,
 } from "../util/documentCover"
 import { canonicalUrl, FullSlug, getFileExtension, joinSegments, pathToRoot, simplifySlug } from "../util/path"
 import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
@@ -126,7 +128,10 @@ export default (() => {
     )
     const coverSrc = pageCoverSrc(fileData.frontmatter as Record<string, unknown> | undefined)
     const coverDims = pageCoverDims(fileData.frontmatter as Record<string, unknown> | undefined)
-    const useDocumentOg = Boolean(coverSrc) && isLandscapeOg(coverDims.width, coverDims.height)
+    const standardThumb = isStandardThumb(coverSrc)
+    // Standard first-page thumbnails are portrait. They are still the og:image
+    // for that page. Other portrait assets stay off the social card.
+    const useDocumentOg = Boolean(coverSrc) && (standardThumb || isLandscapeOg(coverDims.width, coverDims.height))
     const ogImageDefaultPath = absoluteHttpsAsset(DEFAULT_OG_IMAGE, cfg.baseUrl ?? "example.com")
     const ogImagePath = useDocumentOg
       ? absoluteHttpsAsset(coverSrc!, cfg.baseUrl ?? "example.com")
@@ -137,7 +142,11 @@ export default (() => {
     const ogImageHeight = useDocumentOg
       ? (coverDims.height ?? String(DEFAULT_OG_HEIGHT))
       : String(DEFAULT_OG_HEIGHT)
-    const ogImageAlt = useDocumentOg ? `Cover of ${baseTitle}` : socialDescription
+    const ogImageAlt = standardThumb
+      ? standardThumbAlt(baseTitle)
+      : useDocumentOg
+        ? `Cover of ${baseTitle}`
+        : socialDescription
     const ogType = isArticlePage(fileData.frontmatter, fileData.slug) ? "article" : "website"
 
     return (
